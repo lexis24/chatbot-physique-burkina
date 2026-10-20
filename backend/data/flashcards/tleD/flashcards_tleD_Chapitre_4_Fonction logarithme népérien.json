@@ -1,0 +1,323 @@
+{
+  "niveau": "Terminale D",
+  "chapitre": "Chapitre 4 : Fonction logarithme népérien",
+  "source": "maths/tleD/Chapitre_4_Logarithme_neperien",
+  "nombre_cartes": 35,
+  "cartes": [
+    {
+      "id": "TD-CH04-001",
+      "lecon": "Définition et propriétés algébriques de $\\ln$",
+      "type": "definition",
+      "recto": "Comment définit-on la fonction logarithme népérien ?",
+      "verso": "Comme la primitive de $x\\mapsto\\dfrac1x$ sur $]0\\,;+\\infty[$ qui s'annule en $1$. Il en découle trois faits : $\\ln$ est définie sur $]0\\,;+\\infty[$, $\\ln'(x)=\\dfrac1x$ pour tout $x>0$, et $\\ln 1=0$.",
+      "difficulte": 1,
+      "tags": ["logarithme-neperien", "definition", "primitive"]
+    },
+    {
+      "id": "TD-CH04-002",
+      "lecon": "Définition et propriétés algébriques de $\\ln$",
+      "type": "definition",
+      "recto": "Quelle condition détermine l'ensemble de définition d'une fonction du type $\\ln u$ ?",
+      "verso": "La quantité écrite sous le logarithme doit être strictement positive : on résout l'inéquation $u(x)>0$, au besoin par un tableau de signes, en n'oubliant pas que $x$ doit aussi appartenir au domaine de $u$.",
+      "difficulte": 2,
+      "tags": ["condition-dexistence", "ensemble-de-definition"]
+    },
+    {
+      "id": "TD-CH04-003",
+      "lecon": "Définition et propriétés algébriques de $\\ln$",
+      "type": "formule",
+      "recto": "Que vaut $\\ln(a\\times b)$ pour deux réels $a$ et $b$ strictement positifs ?",
+      "verso": "$\\ln(a\\times b)=\\ln a+\\ln b$. C'est la relation fonctionnelle du logarithme, celle dont découlent toutes les autres propriétés algébriques : le produit devient une somme.",
+      "difficulte": 1,
+      "tags": ["relation-fonctionnelle", "produit"]
+    },
+    {
+      "id": "TD-CH04-004",
+      "lecon": "Définition et propriétés algébriques de $\\ln$",
+      "type": "formule",
+      "recto": "Que valent $\\ln\\dfrac1b$ et $\\ln\\dfrac ab$ pour $a$ et $b$ strictement positifs ?",
+      "verso": "$\\ln\\dfrac1b=-\\ln b$ et $\\ln\\dfrac ab=\\ln a-\\ln b$ : l'inverse change le signe et le quotient devient une différence.",
+      "difficulte": 2,
+      "tags": ["quotient", "inverse", "proprietes"]
+    },
+    {
+      "id": "TD-CH04-005",
+      "lecon": "Définition et propriétés algébriques de $\\ln$",
+      "type": "formule",
+      "recto": "Comment déduit-on $\\ln\\dfrac1b=-\\ln b$ de la relation fonctionnelle ?",
+      "verso": "En écrivant $b\\times\\dfrac1b=1$ : la relation fonctionnelle donne $\\ln b+\\ln\\dfrac1b=\\ln 1=0$, d'où le résultat. On ramène ainsi toute situation nouvelle à un produit.",
+      "difficulte": 2,
+      "tags": ["demonstration", "relation-fonctionnelle", "inverse"]
+    },
+    {
+      "id": "TD-CH04-006",
+      "lecon": "Définition et propriétés algébriques de $\\ln$",
+      "type": "formule",
+      "recto": "Que vaut $\\ln(a^n)$ pour $a>0$ et $n$ entier relatif ?",
+      "verso": "$\\ln(a^n)=n\\,\\ln a$ : la puissance devient un produit. Ainsi $\\ln 8=\\ln(2^3)=3\\ln 2$.",
+      "difficulte": 1,
+      "tags": ["puissance", "proprietes"]
+    },
+    {
+      "id": "TD-CH04-007",
+      "lecon": "Définition et propriétés algébriques de $\\ln$",
+      "type": "formule",
+      "recto": "Que valent $\\ln\\sqrt a$ et $\\ln\\sqrt[n]{a}$ pour $a>0$ ?",
+      "verso": "$\\ln\\sqrt a=\\dfrac12\\ln a$ et $\\ln\\sqrt[n]{a}=\\dfrac1n\\ln a$ : la racine devient un quotient. Le premier résultat vient de $\\sqrt a\\times\\sqrt a=a$, qui donne $2\\ln\\sqrt a=\\ln a$.",
+      "difficulte": 2,
+      "tags": ["racine", "proprietes"]
+    },
+    {
+      "id": "TD-CH04-008",
+      "lecon": "Définition et propriétés algébriques de $\\ln$",
+      "type": "formule",
+      "recto": "Quel raisonnement démontre $\\ln(a^n)=n\\,\\ln a$ pour tout entier $n\\ge 1$ ?",
+      "verso": "Une récurrence : $\\ln(a^1)=1\\times\\ln a$ initialise, et si $\\ln(a^n)=n\\ln a$, alors $a^{n+1}=a^n\\times a$ donne $\\ln(a^{n+1})=n\\ln a+\\ln a=(n+1)\\ln a$. Les exposants négatifs suivent, puisque $\\ln(a^{-n})=-\\ln(a^n)$.",
+      "difficulte": 2,
+      "tags": ["recurrence", "demonstration", "puissance"]
+    },
+    {
+      "id": "TD-CH04-009",
+      "lecon": "Définition et propriétés algébriques de $\\ln$",
+      "type": "formule",
+      "recto": "Comment démontre-t-on la relation fonctionnelle $\\ln(ax)=\\ln a+\\ln x$ ?",
+      "verso": "On fixe $a>0$ et l'on pose $\\varphi(x)=\\ln(ax)-\\ln x$ sur $]0\\,;+\\infty[$. Sa dérivée $\\dfrac{a}{ax}-\\dfrac1x$ est nulle, donc $\\varphi$ est constante sur cet intervalle ; comme $\\varphi(1)=\\ln a$, on conclut.",
+      "difficulte": 3,
+      "tags": ["demonstration", "fonction-auxiliaire", "derivee-nulle"]
+    },
+    {
+      "id": "TD-CH04-010",
+      "lecon": "Définition et propriétés algébriques de $\\ln$",
+      "type": "formule",
+      "recto": "Pourquoi $\\ln(a+b)$ n'est-il pas égal à $\\ln a+\\ln b$ ?",
+      "verso": "Parce que c'est le produit, et non la somme, que le logarithme transforme en somme : $\\ln a+\\ln b=\\ln(ab)$. Ainsi $\\ln(2+3)=\\ln 5\\approx 1{,}61$, alors que $\\ln 2+\\ln 3=\\ln 6\\approx 1{,}79$.",
+      "difficulte": 3,
+      "tags": ["piege", "somme", "relation-fonctionnelle"]
+    },
+    {
+      "id": "TD-CH04-011",
+      "lecon": "Définition et propriétés algébriques de $\\ln$",
+      "type": "definition",
+      "recto": "Quelle différence y a-t-il entre $\\ln(a^2)$ et $\\left(\\ln a\\right)^2$ ?",
+      "verso": "Dans $\\ln(a^2)$, le carré porte sur le nombre $a$, à l'intérieur du logarithme, et l'expression vaut $2\\ln a$. Dans $\\left(\\ln a\\right)^2$, il porte sur le résultat. Avec $a=3$ : $2\\ln 3\\approx 2{,}198$ contre $\\left(\\ln 3\\right)^2\\approx 1{,}208$.",
+      "difficulte": 3,
+      "tags": ["piege", "notation", "puissance"]
+    },
+    {
+      "id": "TD-CH04-012",
+      "lecon": "Etude de la fonction $\\ln$",
+      "type": "formule",
+      "recto": "Quel est le sens de variation de la fonction $\\ln$, et pour quelle raison ?",
+      "verso": "Elle est strictement croissante sur $]0\\,;+\\infty[$, car sa dérivée $\\ln'(x)=\\dfrac1x$ y est strictement positive.",
+      "difficulte": 1,
+      "tags": ["variations", "croissance"]
+    },
+    {
+      "id": "TD-CH04-013",
+      "lecon": "Etude de la fonction $\\ln$",
+      "type": "formule",
+      "recto": "Quel est le signe de $\\ln x$ selon la position de $x$ par rapport à $1$ ?",
+      "verso": "$\\ln x>0$ si et seulement si $x>1$, $\\ln x<0$ si et seulement si $0<x<1$, et $\\ln 1=0$. La courbe coupe l'axe des abscisses au seul point d'abscisse $1$.",
+      "difficulte": 1,
+      "tags": ["signe", "variations"]
+    },
+    {
+      "id": "TD-CH04-014",
+      "lecon": "Etude de la fonction $\\ln$",
+      "type": "formule",
+      "recto": "Quelles équivalences la stricte croissance de $\\ln$ fournit-elle pour $a>0$ et $b>0$ ?",
+      "verso": "$\\ln a=\\ln b\\iff a=b$ et $\\ln a<\\ln b\\iff a<b$. On a donc le droit de supprimer les logarithmes des deux membres, et le sens d'une inégalité est conservé.",
+      "difficulte": 2,
+      "tags": ["equivalences", "resolution", "croissance"]
+    },
+    {
+      "id": "TD-CH04-015",
+      "lecon": "Etude de la fonction $\\ln$",
+      "type": "formule",
+      "recto": "Pourquoi l'équation $\\ln x=k$ admet-elle une solution et une seule pour tout réel $k$ ?",
+      "verso": "Parce que $\\ln$ est continue et strictement croissante sur $]0\\,;+\\infty[$, de limites $-\\infty$ en $0^+$ et $+\\infty$ en $+\\infty$ : elle réalise une bijection de $]0\\,;+\\infty[$ sur $\\mathbb{R}$. L'existence vient des limites et de la continuité, l'unicité de la stricte croissance.",
+      "difficulte": 2,
+      "tags": ["bijection", "existence", "unicite"]
+    },
+    {
+      "id": "TD-CH04-016",
+      "lecon": "Etude de la fonction $\\ln$",
+      "type": "definition",
+      "recto": "Comment définit-on le nombre $e$, appelé aussi nombre de Neper ?",
+      "verso": "C'est l'unique réel dont le logarithme népérien vaut $1$, autrement dit la solution de $\\ln x=1$. On retient $2<e<3$ et $e\\approx 2{,}718$ ; il en découle $\\ln(e^n)=n$ pour tout entier relatif $n$.",
+      "difficulte": 1,
+      "tags": ["nombre-e", "definition"]
+    },
+    {
+      "id": "TD-CH04-017",
+      "lecon": "Etude de la fonction $\\ln$",
+      "type": "formule",
+      "recto": "Comment s'écrit la solution de l'équation $\\ln x=k$ ?",
+      "verso": "$\\ln x=k\\iff x=e^k$, avec $x>0$. Ainsi $\\ln x=3$ donne $x=e^3$, ce qui se contrôle en écrivant $3=3\\ln e=\\ln(e^3)$.",
+      "difficulte": 2,
+      "tags": ["resolution", "nombre-e", "equation"]
+    },
+    {
+      "id": "TD-CH04-018",
+      "lecon": "Etude de la fonction $\\ln$",
+      "type": "definition",
+      "recto": "Dans l'écriture $\\ln(3-x)$, quelle quantité doit être strictement positive ?",
+      "verso": "La quantité placée sous le logarithme, c'est-à-dire $3-x$, ce qui impose $x<3$ et non $x>0$. Oublier cette condition d'existence, ou la faire porter sur la mauvaise quantité, conduit à annoncer des solutions qui n'en sont pas.",
+      "difficulte": 3,
+      "tags": ["condition-dexistence", "piege"]
+    },
+    {
+      "id": "TD-CH04-019",
+      "lecon": "Etude de la fonction $\\ln$",
+      "type": "formule",
+      "recto": "Quelle est la dérivée de $\\ln u$, et sous quelle condition ?",
+      "verso": "$\\left(\\ln u\\right)'=\\dfrac{u'}{u}$, sur tout intervalle où $u$ est dérivable et strictement positive. Comme $u>0$, ce quotient a le signe de $u'$ : la fonction $\\ln u$ varie exactement dans le même sens que $u$.",
+      "difficulte": 2,
+      "tags": ["derivee", "composee", "signe"]
+    },
+    {
+      "id": "TD-CH04-020",
+      "lecon": "Etude de la fonction $\\ln$",
+      "type": "formule",
+      "recto": "Que valent les limites de $\\ln x$ en $0^+$ et en $+\\infty$ ?",
+      "verso": "$\\displaystyle\\lim_{x\\to 0^+}\\ln x=-\\infty$, ce qui fait de l'axe des ordonnées une asymptote verticale à la courbe, et $\\displaystyle\\lim_{x\\to+\\infty}\\ln x=+\\infty$.",
+      "difficulte": 1,
+      "tags": ["limites", "asymptote-verticale"]
+    },
+    {
+      "id": "TD-CH04-021",
+      "lecon": "Etude de la fonction $\\ln$",
+      "type": "formule",
+      "recto": "Pourquoi la courbe de $\\ln$ n'admet-elle aucune asymptote horizontale en $+\\infty$ ?",
+      "verso": "Parce que $\\ln x$ tend vers $+\\infty$ : la croissance est lente, mais elle n'a aucun plafond. Comme $\\dfrac{\\ln x}{x}$ tend vers $0$, la courbe admet une branche parabolique de direction $(Ox)$.",
+      "difficulte": 3,
+      "tags": ["branche-parabolique", "piege", "limites"]
+    },
+    {
+      "id": "TD-CH04-022",
+      "lecon": "Etude de la fonction $\\ln$",
+      "type": "formule",
+      "recto": "Quelle approximation de $\\ln(1+x)$ vaut au voisinage de $0$ ?",
+      "verso": "$\\ln(1+x)\\approx x$, ce qui s'écrit $\\displaystyle\\lim_{x\\to 0}\\dfrac{\\ln(1+x)}{x}=1$. Cette limite n'est autre que le nombre dérivé de $\\ln$ en $1$. Ainsi $\\ln(1{,}02)\\approx 0{,}02$.",
+      "difficulte": 2,
+      "tags": ["approximation-affine", "limite-de-reference"]
+    },
+    {
+      "id": "TD-CH04-023",
+      "lecon": "Etude de la fonction $\\ln$",
+      "type": "formule",
+      "recto": "Quelles sont les tangentes remarquables à la courbe de $\\ln$ aux points d'abscisses $1$ et $e$ ?",
+      "verso": "En $1$ : $y=x-1$, car $\\ln 1=0$ et $\\ln'(1)=1$. En $e$ : $y=\\dfrac{x}{e}$, car $\\ln e=1$ et $\\ln'(e)=\\dfrac1e$ ; cette seconde tangente passe par l'origine.",
+      "difficulte": 2,
+      "tags": ["tangente", "courbe"]
+    },
+    {
+      "id": "TD-CH04-024",
+      "lecon": "Etude de la fonction $\\ln$",
+      "type": "formule",
+      "recto": "Que disent les croissances comparées de $\\ln x$ et des puissances de $x$ ?",
+      "verso": "$\\displaystyle\\lim_{x\\to+\\infty}\\dfrac{\\ln x}{x^n}=0$ pour tout entier $n\\ge 1$, et $\\displaystyle\\lim_{x\\to 0^+}x\\ln x=0$. Dans une compétition entre le logarithme et une puissance de $x$, la puissance l'emporte toujours.",
+      "difficulte": 2,
+      "tags": ["croissances-comparees", "limites"]
+    },
+    {
+      "id": "TD-CH04-025",
+      "lecon": "Etude de la fonction $\\ln$",
+      "type": "formule",
+      "recto": "Quelle inégalité compare $\\ln x$ et $x$ pour tout réel $x>0$ ?",
+      "verso": "$\\ln x\\le x-1<x$, l'égalité $\\ln x=x-1$ n'ayant lieu que pour $x=1$. Elle s'établit en étudiant $x\\mapsto x-\\ln x$, dont le minimum vaut $1$ en $x=1$, et signifie que la courbe de $\\ln$ reste sous la première bissectrice.",
+      "difficulte": 2,
+      "tags": ["inegalite", "comparaison"]
+    },
+    {
+      "id": "TD-CH04-026",
+      "lecon": "Logarithme décimal et applications",
+      "type": "definition",
+      "recto": "Comment définit-on le logarithme décimal $\\log$ ?",
+      "verso": "Par $\\log x=\\dfrac{\\ln x}{\\ln 10}$ sur $]0\\,;+\\infty[$. Comme $\\ln 10>0$, c'est le produit de $\\ln$ par une constante strictement positive : $\\log$ possède donc les mêmes propriétés algébriques et le même sens de variation que $\\ln$.",
+      "difficulte": 1,
+      "tags": ["logarithme-decimal", "definition"]
+    },
+    {
+      "id": "TD-CH04-027",
+      "lecon": "Logarithme décimal et applications",
+      "type": "formule",
+      "recto": "Que valent $\\log 1$, $\\log 10$ et $\\log(10^n)$ ?",
+      "verso": "$\\log 1=0$, $\\log 10=1$ et $\\log(10^n)=n$ pour tout entier relatif $n$. Le logarithme décimal compte donc les zéros : $\\log 1000=3$ et $\\log 0{,}01=-2$.",
+      "difficulte": 1,
+      "tags": ["logarithme-decimal", "valeurs-remarquables"]
+    },
+    {
+      "id": "TD-CH04-028",
+      "lecon": "Logarithme décimal et applications",
+      "type": "formule",
+      "recto": "Comment s'écrit la solution de l'équation $\\log x=k$ ?",
+      "verso": "$\\log x=k\\iff x=10^k$, avec $x>0$. Ainsi $\\log x=3$ donne $x=1000$, et $\\log x=-2$ donne $x=0{,}01$.",
+      "difficulte": 2,
+      "tags": ["logarithme-decimal", "resolution"]
+    },
+    {
+      "id": "TD-CH04-029",
+      "lecon": "Logarithme décimal et applications",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on une échelle logarithmique ?",
+      "verso": "Un axe gradué où les distances mesurent des rapports et non des différences : chaque pas d'une unité correspond à une multiplication par $10$ de la grandeur. C'est ce qui rend lisibles côte à côte des valeurs allant de $1$ à un million.",
+      "difficulte": 2,
+      "tags": ["echelle-logarithmique", "representation"]
+    },
+    {
+      "id": "TD-CH04-030",
+      "lecon": "Logarithme décimal et applications",
+      "type": "formule",
+      "recto": "Comment le pH d'une solution se calcule-t-il à partir de sa concentration ?",
+      "verso": "Par $\\text{pH}=-\\log\\left[\\mathrm{H_3O^+}\\right]$, la concentration étant exprimée en mol/L. Un pH inférieur à $7$ signale un milieu acide, $7$ étant la valeur de la neutralité.",
+      "difficulte": 2,
+      "tags": ["ph", "chimie", "application"]
+    },
+    {
+      "id": "TD-CH04-031",
+      "lecon": "Logarithme décimal et applications",
+      "type": "formule",
+      "recto": "De combien l'amplitude d'un séisme est-elle multipliée lorsque la magnitude augmente de $1$ ?",
+      "verso": "Par $10$, puisque $M=\\log\\dfrac{A}{A_0}$ et qu'ajouter $1$ à un logarithme décimal revient à multiplier la grandeur par $10$. De même, une hausse de $10$ décibels du niveau sonore $L=10\\log\\dfrac{I}{I_0}$ correspond à une intensité décuplée.",
+      "difficulte": 2,
+      "tags": ["magnitude", "decibels", "application"]
+    },
+    {
+      "id": "TD-CH04-032",
+      "lecon": "Logarithme décimal et applications",
+      "type": "formule",
+      "recto": "Comment compte-t-on les chiffres d'un entier naturel $N$ non nul ?",
+      "verso": "On encadre $\\log N$ par deux entiers consécutifs : si $p\\le\\log N<p+1$, alors $10^p\\le N<10^{p+1}$ et $N$ possède exactement $p+1$ chiffres. On compte ainsi les chiffres d'un nombre sans jamais l'écrire.",
+      "difficulte": 2,
+      "tags": ["nombre-de-chiffres", "logarithme-decimal"]
+    },
+    {
+      "id": "TD-CH04-033",
+      "lecon": "Logarithme décimal et applications",
+      "type": "formule",
+      "recto": "Comment résout-on une inéquation du type $t^n\\ge k$, avec $t>1$ et $k>0$ ?",
+      "verso": "On applique $\\ln$ aux deux membres, ce qui conserve le sens puisque $\\ln$ est croissante, puis on fait descendre l'exposant : $n\\ln t\\ge\\ln k$. Comme $\\ln t>0$, la division donne $n\\ge\\dfrac{\\ln k}{\\ln t}$, et l'on retient le plus petit entier convenable.",
+      "difficulte": 2,
+      "tags": ["inequation", "croissance", "seuil"]
+    },
+    {
+      "id": "TD-CH04-034",
+      "lecon": "Logarithme décimal et applications",
+      "type": "formule",
+      "recto": "Pourquoi le sens de l'inéquation $t^n<k$ change-t-il lorsque $0<t<1$ ?",
+      "verso": "Non pas à cause du logarithme, qui est croissant et conserve le sens, mais parce que $\\ln t$ est alors négatif : diviser $n\\ln t<\\ln k$ par ce nombre négatif retourne l'inégalité et donne $n>\\dfrac{\\ln k}{\\ln t}$.",
+      "difficulte": 3,
+      "tags": ["inequation", "decroissance", "piege"]
+    },
+    {
+      "id": "TD-CH04-035",
+      "lecon": "Logarithme décimal et applications",
+      "type": "definition",
+      "recto": "Quelle différence y a-t-il entre $\\log$ et $\\ln$ dans un calcul d'échelle ?",
+      "verso": "Ce sont deux fonctions distinctes, liées par $\\log x=\\dfrac{\\ln x}{\\ln 10}$ : les confondre fausse tout calcul de pH, de décibels ou de magnitude. Dans un quotient comme $\\dfrac{\\ln k}{\\ln t}$, en revanche, remplacer partout $\\ln$ par $\\log$ ne change rien.",
+      "difficulte": 3,
+      "tags": ["logarithme-decimal", "piege", "notation"]
+    }
+  ]
+}

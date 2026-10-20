@@ -1,0 +1,314 @@
+{
+  "niveau": "5ème",
+  "chapitre": "Chapitre 0 : Bien continuer en 5ème",
+  "source": "maths/5eme/Chapitre_0_Bien_continuer",
+  "nombre_cartes": 34,
+  "cartes": [
+    {
+      "id": "5E-CH00-001",
+      "lecon": "Test de positionnement : que sais-tu déjà de la 6ème ?",
+      "type": "definition",
+      "recto": "A quoi sert le test de positionnement proposé au début de la 5ème ?",
+      "verso": "Il n'est pas noté. Il montre à l'élève et au professeur ce qui est déjà acquis depuis la 6ème et ce qui demandera du travail. Il se fait sans calculatrice.",
+      "difficulte": 1,
+      "tags": ["test-de-positionnement", "methode"]
+    },
+    {
+      "id": "5E-CH00-002",
+      "lecon": "Je révise l'essentiel de la 6ème",
+      "type": "formule",
+      "recto": "Dans un calcul qui mêle des parenthèses, des multiplications et des additions, dans quel ordre effectue-t-on les opérations ?",
+      "verso": "D'abord les parenthèses, ensuite les $\\times$ et les $\\div$, enfin les $+$ et les $-$. Ainsi $5 + 2 \\times 4 = 5 + 8 = 13$.",
+      "difficulte": 1,
+      "tags": ["priorites", "calcul"]
+    },
+    {
+      "id": "5E-CH00-003",
+      "lecon": "Je révise l'essentiel de la 6ème",
+      "type": "formule",
+      "recto": "Où place-t-on la virgule dans le résultat d'une multiplication de nombres décimaux ?",
+      "verso": "On calcule d'abord sans les virgules, puis le résultat reçoit autant de chiffres après la virgule que les deux facteurs réunis. Ainsi $2{,}4 \\times 3 = 7{,}2$.",
+      "difficulte": 2,
+      "tags": ["decimaux", "multiplication"]
+    },
+    {
+      "id": "5E-CH00-004",
+      "lecon": "Je révise l'essentiel de la 6ème",
+      "type": "formule",
+      "recto": "A quoi reconnaît-on qu'un nombre entier est divisible par $2$, puis qu'il est divisible par $5$ ?",
+      "verso": "Il est divisible par $2$ s'il finit par $0$, $2$, $4$, $6$ ou $8$. Il est divisible par $5$ s'il finit par $0$ ou par $5$.",
+      "difficulte": 1,
+      "tags": ["divisibilite", "criteres"]
+    },
+    {
+      "id": "5E-CH00-005",
+      "lecon": "Je révise l'essentiel de la 6ème",
+      "type": "formule",
+      "recto": "A quoi reconnaît-on qu'un nombre entier est divisible par $3$, puis qu'il est divisible par $9$ ?",
+      "verso": "On additionne ses chiffres : il est divisible par $3$ si cette somme est divisible par $3$, et par $9$ si cette somme est divisible par $9$. Dans $372$, $3 + 7 + 2 = 12$, divisible par $3$.",
+      "difficulte": 2,
+      "tags": ["divisibilite", "criteres"]
+    },
+    {
+      "id": "5E-CH00-006",
+      "lecon": "Je révise l'essentiel de la 6ème",
+      "type": "formule",
+      "recto": "Quelle égalité relie le dividende, le diviseur, le quotient et le reste d'une division euclidienne ?",
+      "verso": "dividende $=$ (diviseur $\\times$ quotient) $+$ reste, et le reste est toujours plus petit que le diviseur. Ainsi $47 = 6 \\times 7 + 5$.",
+      "difficulte": 2,
+      "tags": ["division-euclidienne", "reste"]
+    },
+    {
+      "id": "5E-CH00-007",
+      "lecon": "Je révise l'essentiel de la 6ème",
+      "type": "formule",
+      "recto": "Pour calculer une fraction d'une quantité, dans quel ordre effectue-t-on les deux opérations ?",
+      "verso": "On divise la quantité par le dénominateur, puis on multiplie par le numérateur. Les $\\dfrac{3}{5}$ de $200$ FCFA font $(200 \\div 5) \\times 3 = 120$ FCFA.",
+      "difficulte": 2,
+      "tags": ["fraction", "quantite"]
+    },
+    {
+      "id": "5E-CH00-008",
+      "lecon": "Je révise l'essentiel de la 6ème",
+      "type": "formule",
+      "recto": "Comment additionne-t-on deux nombres relatifs de même signe ?",
+      "verso": "On additionne les deux nombres et on garde leur signe commun. Ainsi $(-3) + (-4) = -7$.",
+      "difficulte": 2,
+      "tags": ["relatifs", "addition"]
+    },
+    {
+      "id": "5E-CH00-009",
+      "lecon": "Je révise l'essentiel de la 6ème",
+      "type": "formule",
+      "recto": "Comment additionne-t-on deux nombres relatifs de signes contraires ?",
+      "verso": "On soustrait le plus petit nombre du plus grand, puis on garde le signe du plus grand. Ainsi $(+5) + (-8) = -3$.",
+      "difficulte": 2,
+      "tags": ["relatifs", "addition"]
+    },
+    {
+      "id": "5E-CH00-010",
+      "lecon": "Je révise l'essentiel de la 6ème",
+      "type": "definition",
+      "recto": "A quoi reconnaît-on un tableau de proportionnalité ?",
+      "verso": "On passe d'une ligne à l'autre en multipliant toujours par le même nombre, appelé coefficient. Si une seule colonne ne suit pas ce coefficient, le tableau n'est pas proportionnel.",
+      "difficulte": 2,
+      "tags": ["proportionnalite", "coefficient"]
+    },
+    {
+      "id": "5E-CH00-011",
+      "lecon": "Je révise l'essentiel de la 6ème",
+      "type": "formule",
+      "recto": "Comment calcule-t-on $x\\ \\%$ d'une quantité ?",
+      "verso": "On divise la quantité par $100$, puis on multiplie par $x$. Ainsi $20\\ \\%$ de $500$ valent $(500 \\div 100) \\times 20 = 100$.",
+      "difficulte": 2,
+      "tags": ["pourcentage", "calcul"]
+    },
+    {
+      "id": "5E-CH00-012",
+      "lecon": "Je révise l'essentiel de la 6ème",
+      "type": "formule",
+      "recto": "Quel outil permet de trouver le nombre manquant dans une égalité à trou ?",
+      "verso": "L'opération inverse : l'inverse de $+$ est $-$, l'inverse de $\\times$ est $\\div$. Ainsi $4 \\times \\ldots = 28$ donne $\\ldots = 28 \\div 4 = 7$.",
+      "difficulte": 2,
+      "tags": ["egalite-a-trous", "operation-inverse"]
+    },
+    {
+      "id": "5E-CH00-013",
+      "lecon": "Mes instruments de géométrie",
+      "type": "formule",
+      "recto": "Comment reporte-t-on une longueur au compas ?",
+      "verso": "On écarte le compas à cette longueur, pointe sèche sur une extrémité et mine sur l'autre. Puis, sans toucher à la vis, on pose la pointe sèche où l'on veut et on trace un arc.",
+      "difficulte": 2,
+      "tags": ["compas", "report-de-longueur"]
+    },
+    {
+      "id": "5E-CH00-014",
+      "lecon": "Mes instruments de géométrie",
+      "type": "definition",
+      "recto": "Comment tient-on un compas pendant un tracé ?",
+      "verso": "Par la tête, jamais par les branches. On plante la pointe sèche fermement, puis on tourne d'un geste régulier.",
+      "difficulte": 1,
+      "tags": ["compas", "geste"]
+    },
+    {
+      "id": "5E-CH00-015",
+      "lecon": "Mes instruments de géométrie",
+      "type": "definition",
+      "recto": "A quoi sert l'équerre en géométrie ?",
+      "verso": "A vérifier et à tracer des angles droits de $90^{\\circ}$, donc à tracer des droites perpendiculaires et des droites parallèles.",
+      "difficulte": 1,
+      "tags": ["equerre", "angle-droit"]
+    },
+    {
+      "id": "5E-CH00-016",
+      "lecon": "Mes instruments de géométrie",
+      "type": "formule",
+      "recto": "Comment choisit-on la bonne graduation sur un rapporteur qui en porte deux ?",
+      "verso": "On regarde la forme de l'angle : plus fermé qu'un angle droit, il mesure moins de $90^{\\circ}$ ; plus ouvert qu'un angle droit, il mesure plus de $90^{\\circ}$.",
+      "difficulte": 3,
+      "tags": ["rapporteur", "piege"]
+    },
+    {
+      "id": "5E-CH00-017",
+      "lecon": "Mes instruments de géométrie",
+      "type": "definition",
+      "recto": "Que veut dire coder un dessin de géométrie ?",
+      "verso": "C'est marquer sur le dessin ce que l'on sait sans l'avoir mesuré : des petits traits identiques pour des longueurs égales, un petit carré pour un angle droit, des flèches de même sens pour des droites parallèles.",
+      "difficulte": 2,
+      "tags": ["codage", "geometrie"]
+    },
+    {
+      "id": "5E-CH00-018",
+      "lecon": "Apprendre à justifier",
+      "type": "definition",
+      "recto": "Quelle différence y a-t-il entre constater un résultat et le justifier ?",
+      "verso": "Constater, c'est s'appuyer sur une mesure ou sur ce que l'on croit voir. Justifier, c'est s'appuyer sur une raison sûre : une donnée de l'énoncé ou une propriété du cours.",
+      "difficulte": 2,
+      "tags": ["justification", "constater"]
+    },
+    {
+      "id": "5E-CH00-019",
+      "lecon": "Apprendre à justifier",
+      "type": "definition",
+      "recto": "Pourquoi une mesure relevée sur un dessin ne suffit-elle pas à établir un résultat ?",
+      "verso": "Parce qu'un instrument n'est jamais parfait, qu'un dessin peut être imprécis et que l'œil se trompe. Seule une propriété donne une raison sûre.",
+      "difficulte": 2,
+      "tags": ["justification", "mesure", "piege"]
+    },
+    {
+      "id": "5E-CH00-020",
+      "lecon": "Apprendre à justifier",
+      "type": "formule",
+      "recto": "Quels sont les trois temps du modèle de rédaction d'une justification ?",
+      "verso": "« On sait que… » : les données de l'énoncé. « Or… » : la propriété du cours utilisée. « Donc… » : ce que l'on en conclut.",
+      "difficulte": 1,
+      "tags": ["justification", "on-sait-que-or-donc"]
+    },
+    {
+      "id": "5E-CH00-021",
+      "lecon": "Apprendre à justifier",
+      "type": "definition",
+      "recto": "Dans une justification rédigée, d'où vient ce que l'on écrit après le mot « Or » ?",
+      "verso": "Du cours : c'est la propriété que l'on utilise. Ce n'est ni une donnée de l'énoncé, ni une mesure relevée sur le dessin.",
+      "difficulte": 2,
+      "tags": ["justification", "propriete"]
+    },
+    {
+      "id": "5E-CH00-022",
+      "lecon": "Apprendre à justifier",
+      "type": "formule",
+      "recto": "Combien de contre-exemples faut-il pour montrer qu'une affirmation est fausse ?",
+      "verso": "Un seul suffit. « Tous les nombres impairs sont premiers » tombe parce que $9$ est impair et que $9 = 3 \\times 3$ n'est pas premier.",
+      "difficulte": 2,
+      "tags": ["contre-exemple", "logique"]
+    },
+    {
+      "id": "5E-CH00-023",
+      "lecon": "Apprendre à justifier",
+      "type": "formule",
+      "recto": "Que prouve une affirmation vérifiée sur plusieurs exemples qui marchent ?",
+      "verso": "Rien. Les cas non testés restent en nombre infini : des exemples donnent confiance, mais seul un raisonnement prouve qu'une affirmation est vraie.",
+      "difficulte": 3,
+      "tags": ["logique", "preuve", "piege"]
+    },
+    {
+      "id": "5E-CH00-024",
+      "lecon": "Apprendre à justifier",
+      "type": "definition",
+      "recto": "Que demande une consigne qui commence par « Montre que », « Démontre que » ou « Prouve que » ?",
+      "verso": "Elle demande d'établir le résultat par un raisonnement. Elle ne demande pas de le mesurer.",
+      "difficulte": 2,
+      "tags": ["consignes", "vocabulaire"]
+    },
+    {
+      "id": "5E-CH00-025",
+      "lecon": "Apprendre à justifier",
+      "type": "definition",
+      "recto": "Que demande la consigne « Justifie » ou « Explique pourquoi » ?",
+      "verso": "Elle demande de donner la raison de la réponse : une propriété du cours ou une donnée de l'énoncé.",
+      "difficulte": 1,
+      "tags": ["consignes", "vocabulaire"]
+    },
+    {
+      "id": "5E-CH00-026",
+      "lecon": "Apprendre à justifier",
+      "type": "definition",
+      "recto": "Quelle différence y a-t-il entre la consigne « Calcule » et la consigne « Détermine » ?",
+      "verso": "« Calcule » demande d'effectuer le calcul et de donner le résultat. « Détermine » demande de trouver la réponse à l'aide de ses connaissances, par le moyen de son choix.",
+      "difficulte": 3,
+      "tags": ["consignes", "vocabulaire"]
+    },
+    {
+      "id": "5E-CH00-027",
+      "lecon": "Ma méthode de travail",
+      "type": "definition",
+      "recto": "Quel est le rôle de chacun des deux cahiers de mathématiques ?",
+      "verso": "Le cahier de cours reçoit la date, le titre, les définitions, les propriétés et les exemples, et reste propre. Le cahier d'exercices reçoit la recherche, où l'on a le droit de raturer.",
+      "difficulte": 1,
+      "tags": ["cahiers", "organisation"]
+    },
+    {
+      "id": "5E-CH00-028",
+      "lecon": "Ma méthode de travail",
+      "type": "definition",
+      "recto": "Quelle nouvelle habitude prend-on en 5ème dans le cahier de cours ?",
+      "verso": "On souligne en couleur le nom de chaque propriété. Ce sont elles que l'on cite dans les justifications, et il faut pouvoir les retrouver d'un coup d'œil.",
+      "difficulte": 2,
+      "tags": ["cahiers", "propriete"]
+    },
+    {
+      "id": "5E-CH00-029",
+      "lecon": "Ma méthode de travail",
+      "type": "definition",
+      "recto": "Pourquoi une propriété doit-elle être sue mot pour mot en 5ème ?",
+      "verso": "Parce qu'on va la citer dans une justification. « Le milieu partage en deux » ne suffit pas ; il faut « le milieu d'un segment le partage en deux parties de même longueur ».",
+      "difficulte": 2,
+      "tags": ["propriete", "apprentissage"]
+    },
+    {
+      "id": "5E-CH00-030",
+      "lecon": "Ma méthode de travail",
+      "type": "definition",
+      "recto": "Pourquoi recopier un corrigé ne prouve-t-il pas que l'on a compris ?",
+      "verso": "Parce que relire donne seulement l'impression de comprendre, et cette illusion se paie le jour du devoir. La preuve, c'est de savoir refaire seul, cahier fermé.",
+      "difficulte": 3,
+      "tags": ["corrige", "piege", "methode"]
+    },
+    {
+      "id": "5E-CH00-031",
+      "lecon": "Ma méthode de travail",
+      "type": "formule",
+      "recto": "Comment termine-t-on la rédaction d'une réponse sur une copie de mathématiques ?",
+      "verso": "On encadre le résultat, puis on écrit une phrase de réponse contenant l'unité.",
+      "difficulte": 2,
+      "tags": ["copie", "presentation"]
+    },
+    {
+      "id": "5E-CH00-032",
+      "lecon": "Comment lire ce manuel",
+      "type": "definition",
+      "recto": "Que contient l'encadré « Ce qu'il faut retenir » d'une leçon du manuel ?",
+      "verso": "Les définitions, les propriétés et les notations. C'est la partie qui s'apprend par cœur.",
+      "difficulte": 1,
+      "tags": ["manuel", "rubriques"]
+    },
+    {
+      "id": "5E-CH00-033",
+      "lecon": "Comment lire ce manuel",
+      "type": "definition",
+      "recto": "Que signifient les cotes une étoile, deux étoiles et trois étoiles portées par les exercices ?",
+      "verso": "Une étoile : application directe d'une seule notion. Deux étoiles : deux étapes à enchaîner, ou une justification à rédiger. Trois étoiles : il faut prendre une initiative et choisir soi-même la démarche.",
+      "difficulte": 2,
+      "tags": ["manuel", "difficulte"]
+    },
+    {
+      "id": "5E-CH00-034",
+      "lecon": "Comment lire ce manuel",
+      "type": "definition",
+      "recto": "Comment se présente un « Exemple résolu » du manuel ?",
+      "verso": "En deux colonnes : à gauche ce que l'on fait, à droite ce que l'on écrit.",
+      "difficulte": 1,
+      "tags": ["manuel", "exemple-resolu"]
+    }
+  ]
+}

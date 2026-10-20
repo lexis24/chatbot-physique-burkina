@@ -1,0 +1,332 @@
+{
+  "niveau": "3ème",
+  "chapitre": "Chapitre 17 : Applications linéaires et applications affines",
+  "source": "maths/3eme/Chapitre_17_Applications_lineaires_affines",
+  "nombre_cartes": 36,
+  "cartes": [
+    {
+      "id": "3E-CH17-001",
+      "lecon": "L'application linéaire",
+      "type": "definition",
+      "recto": "Quelle est la forme générale d'une application linéaire ?",
+      "verso": "Elle s'écrit $f(x) = ax$, où $a$ est un nombre réel fixé appelé coefficient de l'application. Aucun terme constant n'est ajouté à $ax$.",
+      "difficulte": 1,
+      "tags": ["application-lineaire", "definition", "coefficient"]
+    },
+    {
+      "id": "3E-CH17-002",
+      "lecon": "L'application linéaire",
+      "type": "formule",
+      "recto": "Quelle situation numérique une application linéaire traduit-elle ?",
+      "verso": "Une proportionnalité : $f(x)$ est proportionnel à $x$, et le coefficient $a$ est le coefficient de proportionnalité.",
+      "difficulte": 1,
+      "tags": ["application-lineaire", "proportionnalite"]
+    },
+    {
+      "id": "3E-CH17-003",
+      "lecon": "L'application linéaire",
+      "type": "formule",
+      "recto": "Par quel point particulier passe toujours la représentation graphique d'une application linéaire ?",
+      "verso": "Par l'origine du repère, de coordonnées $\\left(0\\,;\\,0\\right)$, car toute application linéaire vérifie $f(0) = 0$.",
+      "difficulte": 1,
+      "tags": ["application-lineaire", "graphique", "origine"]
+    },
+    {
+      "id": "3E-CH17-004",
+      "lecon": "L'application linéaire",
+      "type": "formule",
+      "recto": "Comment retrouve-t-on le coefficient d'une application linéaire quand on connaît un nombre non nul et son image ?",
+      "verso": "On divise l'image par le nombre de départ : $a = \\dfrac{f(x)}{x}$. L'ordre compte, c'est bien l'image divisée par le nombre de départ et jamais l'inverse.",
+      "difficulte": 2,
+      "tags": ["application-lineaire", "coefficient", "calcul"]
+    },
+    {
+      "id": "3E-CH17-005",
+      "lecon": "L'application linéaire",
+      "type": "definition",
+      "recto": "Pourquoi l'application définie par $f(x) = 2x + 3$ n'est-elle pas linéaire ?",
+      "verso": "Parce que l'image de $0$ y vaut $3$ et non $0$ : sa représentation ne passe pas par l'origine. Un terme constant, même petit, change la nature de l'application, qui est alors affine.",
+      "difficulte": 3,
+      "tags": ["application-lineaire", "piege", "terme-constant"]
+    },
+    {
+      "id": "3E-CH17-006",
+      "lecon": "L'application linéaire",
+      "type": "definition",
+      "recto": "Dans le tarif $f(x) = 350x$ donnant le prix de $x$ kilos de mil, que représente le nombre $350$ ?",
+      "verso": "C'est le coefficient, c'est-à-dire le prix d'un seul kilo. Ce n'est ni le prix total payé, ni la masse achetée.",
+      "difficulte": 2,
+      "tags": ["application-lineaire", "coefficient", "interpretation"]
+    },
+    {
+      "id": "3E-CH17-007",
+      "lecon": "Les propriétés de l'application linéaire",
+      "type": "formule",
+      "recto": "Pour une application linéaire $f$, à quoi est égale l'image d'une somme $f(x + y)$ ?",
+      "verso": "A la somme des images : $f(x + y) = f(x) + f(y)$. Acheter en deux fois ou en une seule fois revient au même prix.",
+      "difficulte": 1,
+      "tags": ["application-lineaire", "image-somme", "propriete"]
+    },
+    {
+      "id": "3E-CH17-008",
+      "lecon": "Les propriétés de l'application linéaire",
+      "type": "formule",
+      "recto": "Pour une application linéaire $f$, que devient l'image lorsque le nombre de départ est multiplié par $k$ ?",
+      "verso": "Elle est multipliée par ce même nombre : $f(kx) = k \\times f(x)$. Doubler le nombre de départ double l'image, le tripler la triple.",
+      "difficulte": 1,
+      "tags": ["application-lineaire", "multiple", "propriete"]
+    },
+    {
+      "id": "3E-CH17-009",
+      "lecon": "Les propriétés de l'application linéaire",
+      "type": "formule",
+      "recto": "Pourquoi l'image d'une somme est-elle la somme des images pour une application linéaire ?",
+      "verso": "Parce que $f(x) = ax$ et que la multiplication est distributive sur l'addition : $f(x + y) = a(x + y) = ax + ay = f(x) + f(y)$.",
+      "difficulte": 3,
+      "tags": ["application-lineaire", "demonstration", "distributivite"]
+    },
+    {
+      "id": "3E-CH17-010",
+      "lecon": "Les propriétés de l'application linéaire",
+      "type": "formule",
+      "recto": "Comment calcule-t-on $f(6)$ quand on sait seulement que $f$ est linéaire et que $f(3) = -12$ ?",
+      "verso": "On utilise la propriété du multiple : $6 = 2 \\times 3$, donc $f(6) = 2 \\times f(3) = -24$. Il n'est pas nécessaire de connaître le coefficient.",
+      "difficulte": 2,
+      "tags": ["application-lineaire", "multiple", "image"]
+    },
+    {
+      "id": "3E-CH17-011",
+      "lecon": "Les propriétés de l'application linéaire",
+      "type": "definition",
+      "recto": "Pourquoi $f(2 + 3)$ n'est-il pas égal à $f(2) \\times f(3)$ pour une application linéaire ?",
+      "verso": "Parce que l'image d'une somme est la somme des images, jamais leur produit. Avec $f(x) = 5x$ : $f(5) = 25$, alors que $f(2) \\times f(3) = 10 \\times 15 = 150$.",
+      "difficulte": 3,
+      "tags": ["application-lineaire", "piege", "image-somme"]
+    },
+    {
+      "id": "3E-CH17-012",
+      "lecon": "Les propriétés de l'application linéaire",
+      "type": "formule",
+      "recto": "A quelles applications les propriétés $f(x + y) = f(x) + f(y)$ et $f(kx) = k \\times f(x)$ sont-elles réservées ?",
+      "verso": "Aux seules applications linéaires. Avec $g(x) = 2x + 3$, on trouve $g(3) = 9$ alors que $g(1) + g(2) = 12$, car la part fixe serait comptée deux fois.",
+      "difficulte": 2,
+      "tags": ["application-lineaire", "condition", "part-fixe"]
+    },
+    {
+      "id": "3E-CH17-013",
+      "lecon": "L'application affine et son sens de variation",
+      "type": "definition",
+      "recto": "Quelle est la forme générale d'une application affine ?",
+      "verso": "Elle s'écrit $f(x) = ax + b$, où $a$ et $b$ sont deux nombres réels fixés. Le nombre $a$ est le coefficient directeur, le nombre $b$ est la part fixe.",
+      "difficulte": 1,
+      "tags": ["application-affine", "definition", "part-fixe"]
+    },
+    {
+      "id": "3E-CH17-014",
+      "lecon": "L'application affine et son sens de variation",
+      "type": "definition",
+      "recto": "Dans l'écriture $f(x) = ax + b$, à quelle image la part fixe $b$ est-elle égale ?",
+      "verso": "A l'image de zéro : $b = f(0)$. Dans un tarif, c'est ce que l'on paie même sans rien consommer, comme un abonnement.",
+      "difficulte": 2,
+      "tags": ["application-affine", "part-fixe", "image"]
+    },
+    {
+      "id": "3E-CH17-015",
+      "lecon": "L'application affine et son sens de variation",
+      "type": "formule",
+      "recto": "Quel nombre décide du sens de variation d'une application affine $f(x) = ax + b$ ?",
+      "verso": "Le seul coefficient directeur $a$ : si $a > 0$ l'application est croissante, si $a < 0$ elle est décroissante, si $a = 0$ elle est constante et toutes les images valent $b$.",
+      "difficulte": 2,
+      "tags": ["application-affine", "sens-de-variation", "signe"]
+    },
+    {
+      "id": "3E-CH17-016",
+      "lecon": "L'application affine et son sens de variation",
+      "type": "definition",
+      "recto": "Pourquoi une application linéaire est-elle un cas particulier d'application affine ?",
+      "verso": "Parce que $f(x) = ax$ s'écrit $ax + b$ avec $b = 0$. Toute application linéaire est donc affine, mais une application affine de part fixe non nulle n'est pas linéaire.",
+      "difficulte": 2,
+      "tags": ["application-affine", "application-lineaire", "inclusion"]
+    },
+    {
+      "id": "3E-CH17-017",
+      "lecon": "L'application affine et son sens de variation",
+      "type": "formule",
+      "recto": "Comment sont rangées les images de deux nombres $x_1 < x_2$ par une application décroissante ?",
+      "verso": "L'ordre est inversé : $f(x_1) > f(x_2)$. Le plus petit nombre de départ donne la plus grande image. Pour une application croissante, l'ordre est au contraire conservé.",
+      "difficulte": 2,
+      "tags": ["sens-de-variation", "ordre", "rangement"]
+    },
+    {
+      "id": "3E-CH17-018",
+      "lecon": "L'application affine et son sens de variation",
+      "type": "definition",
+      "recto": "Pourquoi est-il faux d'affirmer que $f(x) = -3x + 10$ est croissante parce que $10$ est positif ?",
+      "verso": "Parce que la part fixe ne joue aucun rôle dans le sens de variation : elle s'ajoute de la même façon à toutes les images. Seul le signe de $a = -3$ compte, donc $f$ est décroissante.",
+      "difficulte": 3,
+      "tags": ["application-affine", "piege", "sens-de-variation"]
+    },
+    {
+      "id": "3E-CH17-019",
+      "lecon": "La représentation graphique d'une application affine",
+      "type": "formule",
+      "recto": "Quelle est la nature de la représentation graphique d'une application affine ?",
+      "verso": "C'est une droite. Deux points suffisent donc à la tracer entièrement.",
+      "difficulte": 1,
+      "tags": ["application-affine", "graphique", "droite"]
+    },
+    {
+      "id": "3E-CH17-020",
+      "lecon": "La représentation graphique d'une application affine",
+      "type": "formule",
+      "recto": "En quel point la représentation graphique de $f(x) = ax + b$ coupe-t-elle l'axe des ordonnées ?",
+      "verso": "Au point de coordonnées $\\left(0\\,;\\,b\\right)$. C'est pour cette raison que la part fixe $b$ s'appelle aussi l'ordonnée à l'origine.",
+      "difficulte": 2,
+      "tags": ["application-affine", "ordonnee-a-l-origine"]
+    },
+    {
+      "id": "3E-CH17-021",
+      "lecon": "La représentation graphique d'une application affine",
+      "type": "formule",
+      "recto": "Que représente le coefficient directeur $a$ sur la droite d'une application affine ?",
+      "verso": "C'est la pente : quand $x$ augmente de $1$, $f(x)$ augmente de $a$. Si $a$ est négatif, la droite descend d'autant.",
+      "difficulte": 2,
+      "tags": ["coefficient-directeur", "pente", "graphique"]
+    },
+    {
+      "id": "3E-CH17-022",
+      "lecon": "La représentation graphique d'une application affine",
+      "type": "formule",
+      "recto": "Que peut-on dire des représentations graphiques de deux applications affines qui ont le même coefficient directeur ?",
+      "verso": "Ce sont deux droites parallèles. Seule la part fixe les distingue, et elle décale la droite vers le haut ou vers le bas.",
+      "difficulte": 2,
+      "tags": ["graphique", "parallele", "coefficient-directeur"]
+    },
+    {
+      "id": "3E-CH17-023",
+      "lecon": "La représentation graphique d'une application affine",
+      "type": "formule",
+      "recto": "Comment résout-on graphiquement l'équation $f(x) = m$ lorsque la droite de $f$ est tracée ?",
+      "verso": "On trace la droite horizontale d'ordonnée $m$, on repère son point d'intersection avec la droite de $f$, puis on lit l'abscisse de ce point.",
+      "difficulte": 2,
+      "tags": ["graphique", "equation", "lecture"]
+    },
+    {
+      "id": "3E-CH17-024",
+      "lecon": "La représentation graphique d'une application affine",
+      "type": "definition",
+      "recto": "Quelle erreur guette l'élève qui résout graphiquement l'équation $f(x) = 5$ ?",
+      "verso": "Partir de $5$ sur l'axe des abscisses. Il faut partir de $5$ sur l'axe des ordonnées, puis chercher l'abscisse correspondante : partir des abscisses reviendrait à calculer $f(5)$, la question inverse.",
+      "difficulte": 3,
+      "tags": ["graphique", "piege", "lecture"]
+    },
+    {
+      "id": "3E-CH17-025",
+      "lecon": "L'application affine par intervalles",
+      "type": "definition",
+      "recto": "Qu'est-ce qu'une application affine par intervalles ?",
+      "verso": "C'est une application définie par une expression affine différente sur chacun de plusieurs intervalles qui se suivent, comme un tarif par tranches.",
+      "difficulte": 1,
+      "tags": ["affine-par-intervalles", "definition"]
+    },
+    {
+      "id": "3E-CH17-026",
+      "lecon": "L'application affine par intervalles",
+      "type": "formule",
+      "recto": "Que faut-il faire avant de calculer une image par une application affine par intervalles ?",
+      "verso": "Repérer d'abord l'intervalle auquel appartient le nombre de départ, puis utiliser l'expression qui correspond à cet intervalle.",
+      "difficulte": 2,
+      "tags": ["affine-par-intervalles", "image", "methode"]
+    },
+    {
+      "id": "3E-CH17-027",
+      "lecon": "L'application affine par intervalles",
+      "type": "formule",
+      "recto": "De quoi est formée la représentation graphique d'une application affine par intervalles ?",
+      "verso": "De morceaux de droites, un par intervalle. Chaque morceau n'est tracé que sur son propre intervalle, sans être prolongé au-delà.",
+      "difficulte": 2,
+      "tags": ["affine-par-intervalles", "graphique"]
+    },
+    {
+      "id": "3E-CH17-028",
+      "lecon": "L'application affine par intervalles",
+      "type": "formule",
+      "recto": "Comment donne-t-on le sens de variation d'une application affine par intervalles ?",
+      "verso": "Morceau par morceau, d'après le signe du coefficient directeur de chaque expression. Une même application peut être croissante sur un intervalle et décroissante sur un autre.",
+      "difficulte": 2,
+      "tags": ["affine-par-intervalles", "sens-de-variation"]
+    },
+    {
+      "id": "3E-CH17-029",
+      "lecon": "L'application affine par intervalles",
+      "type": "formule",
+      "recto": "Comment une expression contenant une valeur absolue se ramène-t-elle à une application affine par intervalles ?",
+      "verso": "On cherche la valeur critique, le nombre qui annule l'expression entre les barres. Au-delà, $|A| = A$ ; en deçà, $|A| = -A$. Pour $|2x - 3|$, cette valeur critique est $\\dfrac{3}{2}$.",
+      "difficulte": 2,
+      "tags": ["valeur-absolue", "valeur-critique", "intervalles"]
+    },
+    {
+      "id": "3E-CH17-030",
+      "lecon": "L'application affine par intervalles",
+      "type": "definition",
+      "recto": "Pourquoi est-il faux d'écrire $|2x - 3| = 2x - 3$ pour tout nombre $x$ ?",
+      "verso": "Parce qu'une valeur absolue n'est jamais négative, alors que l'expression entre les barres peut l'être. Pour $x = 0$, le premier membre vaut $3$ et le second $-3$.",
+      "difficulte": 3,
+      "tags": ["valeur-absolue", "piege"]
+    },
+    {
+      "id": "3E-CH17-031",
+      "lecon": "Déterminer une application affine et résoudre des problèmes",
+      "type": "formule",
+      "recto": "Combien d'images connues suffisent à déterminer entièrement une application affine ?",
+      "verso": "Deux, à condition qu'elles soient les images de deux nombres de départ différents.",
+      "difficulte": 2,
+      "tags": ["application-affine", "determination"]
+    },
+    {
+      "id": "3E-CH17-032",
+      "lecon": "Déterminer une application affine et résoudre des problèmes",
+      "type": "formule",
+      "recto": "Comment calcule-t-on le coefficient directeur d'une application affine connaissant $f(x_1)$ et $f(x_2)$ ?",
+      "verso": "Par $a = \\dfrac{f(x_2) - f(x_1)}{x_2 - x_1}$, c'est-à-dire la différence des images divisée par la différence des nombres de départ, avec $x_1 \\ne x_2$.",
+      "difficulte": 2,
+      "tags": ["coefficient-directeur", "formule", "determination"]
+    },
+    {
+      "id": "3E-CH17-033",
+      "lecon": "Déterminer une application affine et résoudre des problèmes",
+      "type": "formule",
+      "recto": "Une fois le coefficient directeur trouvé, comment obtient-on la part fixe $b$ ?",
+      "verso": "On remplace $x$ et $f(x)$ par l'un des deux couples connus dans l'égalité $f(x) = ax + b$, puis on résout l'équation en $b$. L'autre couple sert ensuite de vérification.",
+      "difficulte": 2,
+      "tags": ["part-fixe", "determination", "methode"]
+    },
+    {
+      "id": "3E-CH17-034",
+      "lecon": "Déterminer une application affine et résoudre des problèmes",
+      "type": "formule",
+      "recto": "Pourquoi la différence $f(x_2) - f(x_1)$ fait-elle apparaître le coefficient directeur ?",
+      "verso": "Parce que $f(x_2) - f(x_1) = (ax_2 + b) - (ax_1 + b) = a(x_2 - x_1)$ : la part fixe disparaît par soustraction. Comme $x_2 - x_1$ n'est pas nul, on peut ensuite diviser pour isoler $a$.",
+      "difficulte": 3,
+      "tags": ["coefficient-directeur", "demonstration"]
+    },
+    {
+      "id": "3E-CH17-035",
+      "lecon": "Déterminer une application affine et résoudre des problèmes",
+      "type": "formule",
+      "recto": "Dans la formule du coefficient directeur, dans quel ordre prend-on les deux différences ?",
+      "verso": "Dans le même ordre en haut et en bas : si le numérateur est $f(x_2) - f(x_1)$, le dénominateur doit être $x_2 - x_1$. En inversant l'un des deux, on obtient l'opposé du bon coefficient.",
+      "difficulte": 3,
+      "tags": ["coefficient-directeur", "piege", "ordre"]
+    },
+    {
+      "id": "3E-CH17-036",
+      "lecon": "Déterminer une application affine et résoudre des problèmes",
+      "type": "formule",
+      "recto": "Comment compare-t-on graphiquement deux tarifs représentés par deux droites ?",
+      "verso": "Le point d'intersection des deux droites donne la valeur pour laquelle les deux tarifs sont égaux. De part et d'autre, la droite la plus basse correspond au tarif le plus avantageux.",
+      "difficulte": 2,
+      "tags": ["comparaison-tarifs", "graphique", "intersection"]
+    }
+  ]
+}

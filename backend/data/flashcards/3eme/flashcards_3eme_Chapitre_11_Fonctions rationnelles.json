@@ -1,0 +1,260 @@
+{
+  "niveau": "3ème",
+  "chapitre": "Chapitre 11 : Fonctions rationnelles",
+  "source": "maths/3eme/Chapitre_11_Fonctions_rationnelles",
+  "nombre_cartes": 28,
+  "cartes": [
+    {
+      "id": "3E-CH11-001",
+      "lecon": "Définition, ensemble de définition, image et antécédents",
+      "type": "definition",
+      "recto": "Qu'est-ce qu'une fonction rationnelle ?",
+      "verso": "C'est une fonction qui s'écrit comme le quotient de deux polynômes : $f(x) = \\dfrac{P(x)}{Q(x)}$, où $P$ est le numérateur et $Q$ le dénominateur.",
+      "difficulte": 1,
+      "tags": ["fonction-rationnelle", "definition"]
+    },
+    {
+      "id": "3E-CH11-002",
+      "lecon": "Définition, ensemble de définition, image et antécédents",
+      "type": "definition",
+      "recto": "Pourquoi ces fonctions sont-elles dites rationnelles ?",
+      "verso": "Parce que le mot latin ratio signifie rapport, ou quotient. Une fonction rationnelle est un rapport de deux polynômes, exactement comme un nombre rationnel est un rapport de deux entiers.",
+      "difficulte": 2,
+      "tags": ["fonction-rationnelle", "vocabulaire"]
+    },
+    {
+      "id": "3E-CH11-003",
+      "lecon": "Définition, ensemble de définition, image et antécédents",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on une valeur interdite d'une fonction rationnelle ?",
+      "verso": "C'est une valeur de $x$ qui annule le dénominateur. Pour cette valeur, le quotient n'existe pas, car on ne divise jamais par zéro.",
+      "difficulte": 1,
+      "tags": ["valeur-interdite", "definition"]
+    },
+    {
+      "id": "3E-CH11-004",
+      "lecon": "Définition, ensemble de définition, image et antécédents",
+      "type": "definition",
+      "recto": "Pourquoi la division par zéro n'a-t-elle aucun sens ?",
+      "verso": "Parce qu'aucun nombre multiplié par zéro ne redonne un nombre non nul, et que partager une quantité en zéro part ne veut rien dire.",
+      "difficulte": 2,
+      "tags": ["division-par-zero", "valeur-interdite"]
+    },
+    {
+      "id": "3E-CH11-005",
+      "lecon": "Définition, ensemble de définition, image et antécédents",
+      "type": "definition",
+      "recto": "Qu'est-ce que l'ensemble de définition d'une fonction rationnelle ?",
+      "verso": "C'est l'ensemble de tous les réels sauf les valeurs interdites. On le note $D$ et on l'écrit $D = \\mathbb{R} \\setminus \\{ \\ldots \\}$, ce qui se lit « $\\mathbb{R}$ privé de ».",
+      "difficulte": 2,
+      "tags": ["ensemble-de-definition", "notation"]
+    },
+    {
+      "id": "3E-CH11-006",
+      "lecon": "Définition, ensemble de définition, image et antécédents",
+      "type": "formule",
+      "recto": "Quelle équation résout-on pour trouver les valeurs interdites d'une fonction rationnelle ?",
+      "verso": "On résout $Q(x) = 0$, où $Q$ est le dénominateur, puis on retire ses solutions de $\\mathbb{R}$. Le numérateur, lui, n'interdit rien : il peut valoir zéro sans problème.",
+      "difficulte": 2,
+      "tags": ["valeur-interdite", "ensemble-de-definition"]
+    },
+    {
+      "id": "3E-CH11-007",
+      "lecon": "Définition, ensemble de définition, image et antécédents",
+      "type": "formule",
+      "recto": "Combien de valeurs interdites donne un dénominateur écrit en produit, comme $(x - 1)(x + 2)$ ?",
+      "verso": "Une par facteur : un produit est nul dès que l'un de ses facteurs est nul. Ici les valeurs interdites sont $1$ et $-2$.",
+      "difficulte": 2,
+      "tags": ["valeur-interdite", "produit-nul"]
+    },
+    {
+      "id": "3E-CH11-008",
+      "lecon": "Définition, ensemble de définition, image et antécédents",
+      "type": "formule",
+      "recto": "Que fait-on d'un dénominateur qui n'est ni du premier degré ni déjà écrit en produit ?",
+      "verso": "On le factorise d'abord. Pour $\\dfrac{x - 1}{x^{2} - 4}$, on écrit $x^{2} - 4 = (x - 2)(x + 2)$ : les valeurs interdites sont $2$ et $-2$.",
+      "difficulte": 2,
+      "tags": ["valeur-interdite", "factorisation"]
+    },
+    {
+      "id": "3E-CH11-009",
+      "lecon": "Définition, ensemble de définition, image et antécédents",
+      "type": "formule",
+      "recto": "Pourquoi la fonction $\\dfrac{x}{x^{2} + 1}$ n'a-t-elle aucune valeur interdite ?",
+      "verso": "Parce que son dénominateur $x^{2} + 1$ est toujours strictement positif : un carré est positif ou nul, donc $x^{2} + 1$ ne s'annule jamais. Cette fonction est définie sur $\\mathbb{R}$ tout entier.",
+      "difficulte": 3,
+      "tags": ["valeur-interdite", "cas-particulier"]
+    },
+    {
+      "id": "3E-CH11-010",
+      "lecon": "Définition, ensemble de définition, image et antécédents",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on l'image d'un nombre $a$ par une fonction $f$ ?",
+      "verso": "C'est le nombre $f(a)$ obtenu en remplaçant $x$ par $a$, à condition que $a$ appartienne à l'ensemble de définition. Une image, quand elle existe, est unique.",
+      "difficulte": 1,
+      "tags": ["image", "definition"]
+    },
+    {
+      "id": "3E-CH11-011",
+      "lecon": "Définition, ensemble de définition, image et antécédents",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on un antécédent d'un nombre $y$ par une fonction $f$ ?",
+      "verso": "C'est un nombre $x$ de l'ensemble de définition tel que $f(x) = y$. On le cherche en résolvant une équation : on connaît l'arrivée et on remonte au départ.",
+      "difficulte": 2,
+      "tags": ["antecedent", "definition"]
+    },
+    {
+      "id": "3E-CH11-012",
+      "lecon": "Définition, ensemble de définition, image et antécédents",
+      "type": "formule",
+      "recto": "A quelle condition un quotient est-il nul ?",
+      "verso": "Si et seulement si son numérateur est nul, le dénominateur ne l'étant pas. C'est ainsi qu'on trouve l'antécédent de zéro.",
+      "difficulte": 2,
+      "tags": ["quotient-nul", "antecedent"]
+    },
+    {
+      "id": "3E-CH11-013",
+      "lecon": "Définition, ensemble de définition, image et antécédents",
+      "type": "formule",
+      "recto": "Pourquoi aucun nombre n'a-t-il $0$ pour image par la fonction $\\dfrac{4}{x - 1}$ ?",
+      "verso": "Parce qu'un quotient est nul seulement quand son numérateur l'est, et ce numérateur vaut toujours $4$. Une image existe toujours sur $D$, mais un antécédent peut manquer.",
+      "difficulte": 3,
+      "tags": ["antecedent", "quotient-nul", "piege"]
+    },
+    {
+      "id": "3E-CH11-014",
+      "lecon": "Définition, ensemble de définition, image et antécédents",
+      "type": "formule",
+      "recto": "Quelle différence de rôle sépare un numérateur nul d'un dénominateur nul ?",
+      "verso": "Un numérateur nul donne une image nulle, ce qui est parfaitement autorisé. Un dénominateur nul, lui, rend le calcul impossible : la valeur est interdite.",
+      "difficulte": 3,
+      "tags": ["numerateur", "denominateur", "piege"]
+    },
+    {
+      "id": "3E-CH11-015",
+      "lecon": "Définition, ensemble de définition, image et antécédents",
+      "type": "formule",
+      "recto": "Que vérifie-t-on avant de calculer l'image d'un nombre par une fonction rationnelle ?",
+      "verso": "Que ce nombre appartient bien à l'ensemble de définition. Pour $f(x) = \\dfrac{5x + 1}{3x - 2}$, calculer $f\\left(\\dfrac{2}{3}\\right)$ serait une faute grave, car cela reviendrait à diviser par zéro.",
+      "difficulte": 2,
+      "tags": ["image", "ensemble-de-definition", "methode"]
+    },
+    {
+      "id": "3E-CH11-016",
+      "lecon": "Simplification d'une fonction rationnelle",
+      "type": "formule",
+      "recto": "Comment simplifie-t-on une fonction rationnelle ?",
+      "verso": "On factorise le numérateur et le dénominateur, puis on supprime les facteurs communs aux deux.",
+      "difficulte": 2,
+      "tags": ["simplification", "factorisation"]
+    },
+    {
+      "id": "3E-CH11-017",
+      "lecon": "Simplification d'une fonction rationnelle",
+      "type": "formule",
+      "recto": "Quelles expressions a-t-on le droit de supprimer en simplifiant un quotient ?",
+      "verso": "Uniquement des facteurs, c'est-à-dire des expressions multipliées entre elles. On ne supprime jamais les termes d'une somme : $\\dfrac{x + 2}{x + 3}$ ne se simplifie pas.",
+      "difficulte": 2,
+      "tags": ["simplification", "facteur", "somme"]
+    },
+    {
+      "id": "3E-CH11-018",
+      "lecon": "Simplification d'une fonction rationnelle",
+      "type": "formule",
+      "recto": "Pourquoi $\\dfrac{x + 2}{x + 3}$ ne vaut-il pas $\\dfrac{2}{3}$ ?",
+      "verso": "Parce que le $x$ y est un terme d'une somme et non un facteur : le barrer revient à soustraire $x$ en haut et en bas, ce qui change la valeur. Pour $x = 1$, le quotient vaut $\\dfrac{3}{4}$.",
+      "difficulte": 3,
+      "tags": ["simplification", "piege", "somme"]
+    },
+    {
+      "id": "3E-CH11-019",
+      "lecon": "Simplification d'une fonction rationnelle",
+      "type": "formule",
+      "recto": "A quel moment détermine-t-on l'ensemble de définition d'une fonction rationnelle à simplifier ?",
+      "verso": "Avant de simplifier, et sur l'écriture de départ. La simplification n'est valable que sur cet ensemble.",
+      "difficulte": 2,
+      "tags": ["simplification", "ensemble-de-definition", "ordre"]
+    },
+    {
+      "id": "3E-CH11-020",
+      "lecon": "Simplification d'une fonction rationnelle",
+      "type": "formule",
+      "recto": "Que deviennent les valeurs interdites après une simplification ?",
+      "verso": "Elles restent exclues : l'ensemble de définition ne change pas, même si le nouveau dénominateur ne les fait plus apparaître.",
+      "difficulte": 2,
+      "tags": ["simplification", "valeur-interdite"]
+    },
+    {
+      "id": "3E-CH11-021",
+      "lecon": "Simplification d'une fonction rationnelle",
+      "type": "formule",
+      "recto": "Quelle mention accompagne toujours l'écriture simplifiée d'une fonction rationnelle ?",
+      "verso": "La mention « sur $D$ ». Sans elle, l'égalité entre les deux écritures serait fausse aux valeurs interdites, où le facteur simplifié s'annule.",
+      "difficulte": 2,
+      "tags": ["simplification", "redaction", "ensemble-de-definition"]
+    },
+    {
+      "id": "3E-CH11-022",
+      "lecon": "Simplification d'une fonction rationnelle",
+      "type": "formule",
+      "recto": "Que vaut le quotient $\\dfrac{x - 5}{5 - x}$ sur son ensemble de définition ?",
+      "verso": "Il vaut $-1$, et non $1$, car $5 - x = -(x - 5)$ : deux facteurs opposés se simplifient en $-1$.",
+      "difficulte": 3,
+      "tags": ["simplification", "facteurs-opposes", "piege"]
+    },
+    {
+      "id": "3E-CH11-023",
+      "lecon": "Simplification d'une fonction rationnelle",
+      "type": "formule",
+      "recto": "Pourquoi $\\dfrac{x^{2} + 9}{x + 3}$ ne se simplifie-t-il pas ?",
+      "verso": "Parce que $x^{2} + 9$ est une somme de deux carrés, qu'aucune identité remarquable du programme ne factorise. Sans factorisation, aucun facteur commun n'apparaît.",
+      "difficulte": 2,
+      "tags": ["simplification", "somme-de-carres", "piege"]
+    },
+    {
+      "id": "3E-CH11-024",
+      "lecon": "Simplification d'une fonction rationnelle",
+      "type": "formule",
+      "recto": "Que devient $\\dfrac{x^{2} - 4}{x - 2}$ une fois simplifié ?",
+      "verso": "Cette expression vaut $x + 2$ pour tout $x$ de $D = \\mathbb{R} \\setminus \\{ 2 \\}$, car $x^{2} - 4 = (x - 2)(x + 2)$ et le facteur $x - 2$ n'est pas nul sur $D$.",
+      "difficulte": 2,
+      "tags": ["simplification", "identite-remarquable"]
+    },
+    {
+      "id": "3E-CH11-025",
+      "lecon": "Simplification d'une fonction rationnelle",
+      "type": "formule",
+      "recto": "Pourquoi la forme simplifiée $x + 2$ de $f(x) = \\dfrac{x^{2} - 4}{x - 2}$ ne permet-elle pas d'écrire $f(2) = 4$ ?",
+      "verso": "Parce que $2$ reste une valeur interdite : $f(2)$ n'existe pas, alors que $x + 2$ vaut $4$ en $2$. Les deux écritures ne sont donc pas interchangeables en ce point.",
+      "difficulte": 3,
+      "tags": ["simplification", "valeur-interdite", "piege"]
+    },
+    {
+      "id": "3E-CH11-026",
+      "lecon": "Simplification d'une fonction rationnelle",
+      "type": "formule",
+      "recto": "Comment contrôle-t-on qu'une simplification est juste ?",
+      "verso": "On remplace la lettre par une valeur autorisée dans les deux écritures : elles doivent donner le même nombre.",
+      "difficulte": 2,
+      "tags": ["simplification", "verification"]
+    },
+    {
+      "id": "3E-CH11-027",
+      "lecon": "Simplification d'une fonction rationnelle",
+      "type": "formule",
+      "recto": "En quoi simplifier une fonction rationnelle ressemble-t-il à simplifier une fraction de nombres ?",
+      "verso": "C'est le même geste : on divise en haut et en bas par un même facteur non nul, $6$ dans $\\dfrac{12}{18}$, un facteur comme $(x - 1)$ dans un quotient de polynômes. La seule nouveauté est qu'une lettre peut valoir zéro.",
+      "difficulte": 2,
+      "tags": ["simplification", "fraction", "analogie"]
+    },
+    {
+      "id": "3E-CH11-028",
+      "lecon": "Simplification d'une fonction rationnelle",
+      "type": "formule",
+      "recto": "Quel avantage la forme simplifiée offre-t-elle pour calculer une image ?",
+      "verso": "Elle donne le même résultat sur $D$ tout en étant bien plus rapide : $\\dfrac{4x^{2} - 100}{2x - 10}$ se simplifie en $2(x + 5)$, et l'image de $9$ s'obtient alors par $2 \\times 14 = 28$.",
+      "difficulte": 2,
+      "tags": ["simplification", "image", "calcul"]
+    }
+  ]
+}

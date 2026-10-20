@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Fiche de revision - 6eme - Chapitre 7 : Comparaison et rangement de nombres</title>
+<style>
+/* ===================================================================
+   FICHE DE REVISION, Collection Hakili Lab, Edition 2026
+   Feuille de style autonome, format A4 pret a imprimer.
+   Bleu #005CB9 · Vert #49A145
+   =================================================================== */
+:root{
+  --bleu:#005CB9; --bleu-fonce:#00429A; --bleu-pale:#E8F1FB; --bleu-bord:#B7D2EE;
+  --vert:#49A145; --vert-fonce:#2F7A2C; --vert-pale:#EDF7EC; --vert-bord:#BCE0B9;
+  --gris:#4A4A4A; --gris-clair:#E4E4E4; --rouge:#B3261E;
+}
+@page{
+  size:A4; margin:15mm;
+  @bottom-center{
+    content:"Collection Hakili Lab, Edition 2026  ·  Fiche de revision  ·  " counter(page) "/" counter(pages);
+    font-family:"Segoe UI",Calibri,Arial,sans-serif; font-size:6.6pt; color:#8A8A8A;
+  }
+}
+*{box-sizing:border-box;}
+body{
+  margin:0; font-family:"Segoe UI",Calibri,Arial,sans-serif;
+  font-size:8.4pt; line-height:1.26; color:#1B1B1B;
+}
+p{margin:0 0 3pt;}
+ul{margin:0 0 3pt; padding-left:11pt;}
+li{margin:0 0 1.2pt;}
+b,strong{color:var(--bleu-fonce);}
+
+/* ------------------------------ ENTETE ---------------------------- */
+.entete{
+  display:flex; align-items:stretch; border:1.6pt solid var(--bleu);
+  border-radius:2.5pt; overflow:hidden; margin-bottom:6pt;
+}
+.entete .num{
+  background:var(--bleu); color:#fff; font-size:20pt; font-weight:700;
+  padding:0 8pt; display:flex; align-items:center; justify-content:center; min-width:34pt;
+}
+.entete .txt{padding:3.5pt 8pt; flex:1;}
+.entete .niveau{
+  font-size:7pt; font-weight:700; letter-spacing:.9pt; color:var(--vert-fonce);
+}
+.entete h1{margin:0; font-size:13.5pt; line-height:1.12; color:var(--bleu-fonce); font-weight:700;}
+.entete .sous{font-size:7pt; color:var(--gris); margin-top:1pt;}
+
+/* --------------------------- BANDEAUX ----------------------------- */
+.bandeau{
+  color:#fff; font-weight:700; font-size:9pt; letter-spacing:1pt;
+  padding:2.4pt 7pt; border-radius:2pt; margin:3pt 0 4pt; break-after:avoid; page-break-after:avoid;
+}
+.bandeau.bleu{background:var(--bleu);}
+.bandeau.vert{background:var(--vert);}
+
+/* --------------------------- COLONNES ----------------------------- */
+.cols{column-count:2; column-gap:7mm; column-fill:balance;}
+
+.cols.bal{column-fill:balance;}
+.bloc{margin-bottom:5pt;}
+.keep{break-inside:avoid; page-break-inside:avoid;}
+
+/* --------------------------- LECONS ------------------------------- */
+h2.lecon{
+  margin:0 0 3pt; font-size:8.6pt; font-weight:700; color:#fff; background:var(--bleu-fonce);
+  padding:1.8pt 5pt; border-radius:1.5pt; break-after:avoid; page-break-after:avoid;
+}
+h3.rub{
+  margin:3.5pt 0 1.5pt; font-size:8.2pt; font-weight:700; color:var(--vert-fonce);
+  border-bottom:.7pt solid var(--vert-bord); padding-bottom:.8pt;
+  break-after:avoid; page-break-after:avoid;
+}
+
+/* --------------------------- ENCADRES ----------------------------- */
+.form{
+  background:var(--bleu-pale); border:.8pt solid var(--bleu-bord); border-left:2.6pt solid var(--bleu);
+  border-radius:2pt; padding:2.4pt 5pt; margin:2.2pt 0 3.4pt;
+  break-inside:avoid; page-break-inside:avoid;
+}
+.form .t{
+  display:block; font-size:6.8pt; font-weight:700; letter-spacing:.6pt;
+  color:var(--bleu); margin-bottom:1.5pt;
+}
+.form .c{text-align:center; font-size:9.1pt; margin:1.6pt 0;}
+.note{background:var(--vert-pale); border-left:2.4pt solid var(--vert); padding:2.4pt 5pt; border-radius:1.5pt; margin:2.5pt 0 4pt; break-inside:avoid;}
+
+/* --------------------------- TABLEAUX ----------------------------- */
+table{width:100%; border-collapse:collapse; font-size:7.6pt; margin:2pt 0 4pt; break-inside:avoid;}
+th{background:var(--bleu); color:#fff; font-weight:700; text-align:left; padding:1.8pt 4pt; font-size:7.2pt;}
+td{border:.6pt solid var(--gris-clair); padding:1.8pt 4pt; vertical-align:top;}
+tr{break-inside:avoid;}
+table.var td{text-align:center; font-size:8pt;}
+table.var td.lab{text-align:left; font-weight:700; color:var(--bleu-fonce); background:var(--bleu-pale);}
+
+/* ----------------------------- PIEGES ----------------------------- */
+table.pieges th:first-child{width:44%;}
+table.pieges td:first-child{color:var(--rouge); background:#FDF1F0;}
+.x{font-weight:700;}
+.v{color:var(--vert-fonce); font-weight:700;}
+
+/* ---------------------------- RECAP ------------------------------- */
+ol.recap{margin:0; padding-left:0; list-style:none; counter-reset:r;}
+ol.recap li{
+  counter-increment:r; position:relative; padding-left:13pt; margin-bottom:1.8pt;
+  break-inside:avoid;
+}
+ol.recap li::before{
+  content:counter(r); position:absolute; left:0; top:.3pt;
+  width:10pt; height:10pt; border-radius:50%; background:var(--vert); color:#fff;
+  font-size:6.6pt; font-weight:700; text-align:center; line-height:10pt;
+}
+
+/* --------------------------- MATHS -------------------------------- */
+.m{font-family:Cambria,Georgia,"Times New Roman",serif;}
+i,var{font-family:Cambria,Georgia,"Times New Roman",serif; font-style:italic;}
+.op{font-family:Cambria,Georgia,"Times New Roman",serif; font-style:normal;}
+.f{display:inline-block; vertical-align:middle; text-align:center;
+   margin:0 .12em; line-height:1.06; font-family:Cambria,Georgia,"Times New Roman",serif;}
+.f>span{display:block; padding:0 .2em;}
+.f>span:first-child{border-bottom:.6pt solid currentColor; padding-bottom:.08em;}
+.f>span:last-child{padding-top:.04em;}
+.rad{border-top:.6pt solid currentColor; padding-top:.12em;}
+/* line-height:0 evite que l'exposant n'ecarte les lignes ; position:relative le
+   repositionne sans qu'il heurte la barre de fraction ni le trait du radical. */
+sup,sub{font-size:.68em; line-height:0; position:relative; vertical-align:baseline;}
+sup{top:-.42em;}
+sub{bottom:-.22em;}
+.pt{white-space:nowrap;}
+/* Les fleches n'ont qu'un glyphe atrophie dans la fonte serif : on les force
+   en sans-serif, ou elles sont franches meme a 8 pt. */
+.ar{font-family:"Segoe UI",Calibri,Arial,"DejaVu Sans",sans-serif; font-style:normal;}
+
+/* ------------------- PIEGES : blocs erreur / correction ------------- */
+.pg{font-size:8.1pt; border-left:2.4pt solid var(--rouge); background:#FDF1F0; border-radius:1.5pt;
+    padding:2pt 5pt; margin:0 0 2.8pt; break-inside:avoid; page-break-inside:avoid;}
+.pg .err{color:var(--rouge); font-weight:600;}
+.pg .cor{color:#1B1B1B; margin-top:.8pt;}
+.pg .cor b{color:var(--bleu-fonce);}
+.v{color:var(--vert-fonce); font-weight:700;}
+
+</style>
+</head>
+<body>
+<header class="entete">
+  <div class="num">7</div>
+  <div class="txt">
+    <div class="niveau">6EME &middot; MATHEMATIQUES</div>
+    <h1>Comparaison et rangement de nombres</h1>
+    <div class="sous">Leçon 1 : comparer deux nombres décimaux &middot; Leçon 2 : ranger des nombres décimaux &middot; Leçon 3 : encadrer et intercaler &middot; Leçon 4 : donner une valeur approchée</div>
+  </div>
+</header>
+
+<div class="bandeau bleu" style="margin-top:0">L'ESSENTIEL</div>
+<div class="cols">
+
+<!-- ================= LECON 1 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 1&nbsp;: Comparer deux nombres décimaux</h2>
+<p><b>Egalité des écritures décimales.</b> Des <b>zéros inutiles à la fin</b> de la partie décimale ne changent pas le nombre : 2,75&#8239;=&#8239;2,750 ; 3,5&#8239;=&#8239;3,50. Un zéro placé <b>ailleurs</b> décale les chiffres de rang : 2,05 et 2,5 sont différents.</p></div>
+<p><b>Les symboles.</b> <span class="pt m">&lt;</span> « est inférieur à » &middot; <span class="pt m">&gt;</span> « est supérieur à » &middot; <span class="pt m">=</span> « est égal à » &middot; <span class="pt m">&#8804;</span> « est inférieur <b>ou</b> égal à » &middot; <span class="pt m">&#8805;</span> « est supérieur <b>ou</b> égal à ». Ces deux derniers sont vrais dans <b>deux cas</b> : inégalité stricte <b>ou</b> égalité ; 3&#8239;&#8804;&#8239;5 est vrai, et 5&#8239;&#8804;&#8239;5 aussi.</p>
+<div class="form">
+  <span class="t">REGLE DE COMPARAISON&nbsp;: RANG PAR RANG</span>
+  <div class="c m">parties entières, puis dixièmes, puis centièmes, millièmes&#8230;</div>
+  <div class="c m">on s'arrête au <b>premier chiffre qui diffère</b></div>
+</div>
+<p>La <b>pointe</b> du signe est toujours tournée vers le <b>plus petit</b> nombre : 2,8&#8239;&gt;&#8239;2,75 et 2,75&#8239;&lt;&#8239;2,8 disent la même chose. Sur une droite graduée, le plus petit est le plus <b>à gauche</b>.</p>
+</div>
+
+<!-- ================= LECON 2 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 2&nbsp;: Ranger des nombres décimaux</h2>
+<p><b>Ordre croissant</b> : du plus petit au plus grand, signe <span class="pt m">&lt;</span> entre les nombres. <b>Ordre décroissant</b> : l'inverse, signe <span class="pt m">&gt;</span>. On compare les nombres <b>deux à deux</b> ; deux nombres égaux se relient par <span class="pt m">=</span> : 1,1&#8239;=&#8239;1,100.</p></div>
+<div class="form">
+  <span class="t">ASTUCE DE RANGEMENT</span>
+  <div class="c m">écrire tous les nombres avec le <b>même nombre de décimales</b></div>
+  <div class="c m">7,2&#8239;=&#8239;7,200 &nbsp;&middot;&nbsp; 7,205 &nbsp;&middot;&nbsp; 7,250</div>
+</div>
+<p><b>Demi-droite graduée.</b> On choisit une <b>origine</b> (le point 0) et une <b>unité</b> ; chaque grand intervalle est partagé en <b>10 parts égales</b>, donc une part vaut un <b>dixième</b>. Si un petit trait vaut 0,1, on place 0,55 à la moitié entre 0,5 et 0,6.</p>
+</div>
+
+<!-- ================= LECON 3 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 3&nbsp;: Encadrer et intercaler</h2>
+<p><b>Encadrer</b> un nombre, c'est l'écrire <b>entre deux valeurs</b>, une plus petite et une plus grande ; les bornes s'écrivent au <b>rang demandé</b>.</p></div>
+<div class="form">
+  <span class="t">ENCADREMENTS DE 287,05</span>
+  <div class="c m">entiers consécutifs : 287&#8239;&lt;&#8239;287,05&#8239;&lt;&#8239;288</div>
+  <div class="c m">au dixième : 287,0&#8239;&lt;&#8239;287,05&#8239;&lt;&#8239;287,1</div>
+  <div class="c m">au centième : 287,05&#8239;&#8804;&#8239;287,05&#8239;&lt;&#8239;287,06</div>
+</div>
+<p>Plus les bornes sont <b>proches</b>, plus l'encadrement est <b>serré</b> et précis. <b>Intercaler</b>, c'est trouver un nombre <b>compris entre</b> deux autres : on ajoute des chiffres après la virgule. Entre 5,2 et 5,3 : 5,25 ; 5,27 ; 5,21&#8230;</p>
+<div class="note"><b>Fini ou infini ?</b> Entre deux décimaux, une <b>infinité de décimaux</b>, mais un nombre <b>fini d'entiers</b>, parfois aucun : quatre entiers entre 25,4 et 29,17 (26 ; 27 ; 28 ; 29), aucun entre 4 et 5.</div>
+</div>
+
+<!-- ================= LECON 4 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 4&nbsp;: Donner une valeur approchée</h2>
+<p>Donner une <b>valeur approchée</b>, c'est remplacer le nombre par un nombre <b>proche et plus simple</b>, à <b>n'importe quel rang</b> : dixième, centième, millième, mais aussi unité, dizaine, millier.</p></div>
+<div class="form">
+  <span class="t">PAR DEFAUT ET PAR EXCES</span>
+  <div class="c m"><b>par défaut</b> : la valeur juste <b>en dessous</b> (on coupe)</div>
+  <div class="c m"><b>par excès</b> : la valeur juste <b>au-dessus</b> (on ajoute 1)</div>
+  <div class="c m">2&#8239;847,367 à l'unité : 2&#8239;847 et 2&#8239;848</div>
+  <div class="c m">43&#8239;728 au millier : 43&#8239;000 et 44&#8239;000</div>
+</div>
+<p>Le nombre exact est <b>toujours compris</b> entre les deux. La plus proche est celle du côté où il tombe : 2&#8239;847,367 est à 0,367 de 2&#8239;847 et à 0,633 de 2&#8239;848, donc 2&#8239;847.</p>
+<div class="note"><b>Ordre de grandeur.</b> Valeur approchée très simple qui sert à <b>vérifier un calcul</b> : 49&#8239;&#215;&#8239;5,1 a pour ordre de grandeur 50&#8239;&#215;&#8239;5&#8239;=&#8239;250.</div>
+</div>
+
+</div>
+
+<div class="bandeau vert">PIEGES ET ERREURS FREQUENTES</div>
+<div class="cols">
+<div class="pg"><div class="err"><span class="x">&#10007;</span> 2,750&#8239;&gt;&#8239;2,8 parce qu'il y a plus de chiffres &nbsp;&middot;&nbsp; 2,8&#8239;&lt;&#8239;2,75 car 8&#8239;&lt;&#8239;75</div><div class="cor"><span class="v">&#10003;</span> Le nombre de décimales ne décide de rien, et la partie décimale ne se lit pas comme un entier : on compare <b>rang par rang</b>, 8&#8239;&gt;&#8239;7 aux dixièmes, donc 2,8&#8239;&gt;&#8239;2,750 et 2,8&#8239;&gt;&#8239;2,75.</div></div>
+<div class="pg"><div class="err"><span class="x">&#10007;</span> 0,5&#8239;=&#8239;0,05 &nbsp;&middot;&nbsp; 2,750&#8239;&gt;&#8239;2,75</div><div class="cor"><span class="v">&#10003;</span> Seuls les zéros <b>à la fin</b> ne changent rien : 2,750&#8239;=&#8239;2,75. Ailleurs le zéro décale tout : 0,5&#8239;=&#8239;0,50, dix fois plus grand que 0,05.</div></div>
+<div class="pg"><div class="err"><span class="x">&#10007;</span> Rendre une liste décroissante quand la consigne demandait l'ordre croissant</div><div class="cor"><span class="v">&#10003;</span> Relire la consigne, puis vérifier les signes écrits : en ordre croissant, chaque nombre est plus grand que le précédent.</div></div>
+<div class="pg"><div class="err"><span class="x">&#10007;</span> « Il n'y a aucun nombre entre 0,2 et 0,3 »</div><div class="cor"><span class="v">&#10003;</span> Il y en a une <b>infinité</b> : 0,21 ; 0,25 ; 0,29&#8230; Ne confonds pas avec « aucun <b>entier</b> entre 0,2 et 0,3 », qui est vrai.</div></div>
+<div class="pg"><div class="err"><span class="x">&#10007;</span> Encadrer 287,05 <b>au dixième</b> par 287&#8239;&lt;&#8239;287,05&#8239;&lt;&#8239;288</div><div class="cor"><span class="v">&#10003;</span> Les bornes s'écrivent au <b>rang demandé</b> : au dixième, 287,0&#8239;&lt;&#8239;287,05&#8239;&lt;&#8239;287,1.</div></div>
+<div class="pg"><div class="err"><span class="x">&#10007;</span> La valeur approchée <b>par excès</b> au dixième de 8,74 est 8,7</div><div class="cor"><span class="v">&#10003;</span> Par défaut 8,7 ; par excès 8,8. Les deux ne sont jamais égales, sauf si le nombre tombe pile sur la graduation.</div></div>
+
+</div>
+
+<div class="bandeau bleu">A SAVOIR PAR COEUR AVANT LE DEVOIR</div>
+<div class="cols">
+<ol class="recap">
+<li>On compare les <b>parties entières</b>, puis les dixièmes, puis les centièmes&#8230; ; on s'arrête au premier chiffre qui diffère.</li>
+<li>La <b>pointe</b> du signe (<span class="pt m">&lt;</span>, <span class="pt m">&gt;</span>) est tournée vers le <b>plus petit</b> nombre ; sur une droite graduée, il est le plus à gauche.</li>
+<li>Des zéros inutiles <b>à la fin</b> ne changent rien : 2,75&#8239;=&#8239;2,750. Ailleurs, le zéro décale les rangs : 0,05 et 0,5 diffèrent.</li>
+<li>Ordre <b>croissant</b> : du plus petit au plus grand (<span class="pt m">&lt;</span>) ; <b>décroissant</b> : l'inverse (<span class="pt m">&gt;</span>).</li>
+<li><b>Encadrer</b> : deux bornes au rang demandé. <b>Intercaler</b> : entre deux décimaux, une <b>infinité</b> de décimaux, mais un nombre fini d'entiers, parfois aucun.</li>
+<li><b>Par défaut</b> : juste en dessous (on coupe) ; <b>par excès</b> : juste au-dessus (on ajoute 1) ; l'exact est entre les deux. L'<b>ordre de grandeur</b> vérifie un calcul : 49&#8239;&#215;&#8239;5,1&#8239;&#8776;&#8239;50&#8239;&#215;&#8239;5&#8239;=&#8239;250.</li>
+</ol>
+</div>
+
+</body>
+</html>

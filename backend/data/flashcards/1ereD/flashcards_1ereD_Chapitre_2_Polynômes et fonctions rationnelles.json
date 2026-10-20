@@ -1,0 +1,350 @@
+{
+  "niveau": "1ère D",
+  "chapitre": "Chapitre 2 : Polynômes et fonctions rationnelles",
+  "source": "maths/1ereD/Chapitre_2_Polynomes_fonctions_rationnelles",
+  "nombre_cartes": 38,
+  "cartes": [
+    {
+      "id": "1D-CH02-001",
+      "lecon": "Polynômes : degré et opérations",
+      "type": "definition",
+      "recto": "Comment obtient-on l'écriture réduite d'un polynôme ?",
+      "verso": "En regroupant les termes de même degré et en additionnant leurs coefficients, puis en ordonnant le résultat suivant les puissances décroissantes de $x$. Un polynôme est une somme de termes de la forme $a_k\\,x^{k}$, où $k$ est un entier naturel.",
+      "difficulte": 1,
+      "tags": ["polynome", "ecriture-reduite"]
+    },
+    {
+      "id": "1D-CH02-002",
+      "lecon": "Polynômes : degré et opérations",
+      "type": "definition",
+      "recto": "Comment définit-on le degré d'un polynôme et son coefficient dominant ?",
+      "verso": "Le degré est le plus grand exposant dont le coefficient est non nul dans l'écriture réduite ; le coefficient de ce terme est le coefficient dominant. Le terme sans $x$ s'appelle le terme constant.",
+      "difficulte": 1,
+      "tags": ["degre", "coefficient-dominant"]
+    },
+    {
+      "id": "1D-CH02-003",
+      "lecon": "Polynômes : degré et opérations",
+      "type": "definition",
+      "recto": "Pourquoi $\\sqrt{x}$, $\\dfrac{1}{x}$ et $\\sin x$ ne sont-ils pas des termes de polynôme ?",
+      "verso": "Parce que seules sont autorisées les puissances de $x$ à exposant entier positif ou nul : le premier a un exposant fractionnaire, le deuxième un exposant négatif, le troisième n'est pas une puissance. En revanche $5$ est un polynôme, de degré $0$.",
+      "difficulte": 2,
+      "tags": ["polynome", "definition", "piege"]
+    },
+    {
+      "id": "1D-CH02-004",
+      "lecon": "Polynômes : degré et opérations",
+      "type": "definition",
+      "recto": "Qu'est-ce que le polynôme nul ?",
+      "verso": "Celui dont tous les coefficients sont nuls ; on convient qu'il n'a pas de degré. On admet le résultat suivant : si un polynôme prend la valeur $0$ pour tout réel $x$, alors tous ses coefficients sont nuls.",
+      "difficulte": 2,
+      "tags": ["polynome-nul", "definition"]
+    },
+    {
+      "id": "1D-CH02-005",
+      "lecon": "Polynômes : degré et opérations",
+      "type": "formule",
+      "recto": "A quelle condition deux polynômes sont-ils égaux ?",
+      "verso": "Lorsque leurs coefficients de même degré sont égaux deux à deux : c'est l'identification des coefficients. Pour trouver des coefficients inconnus dans une égalité valable pour tout $x$, on développe, on réduit les deux membres, puis on écrit une équation par degré.",
+      "difficulte": 2,
+      "tags": ["identification", "egalite", "coefficients"]
+    },
+    {
+      "id": "1D-CH02-006",
+      "lecon": "Polynômes : degré et opérations",
+      "type": "formule",
+      "recto": "Que vaut le degré du produit de deux polynômes ?",
+      "verso": "$\\deg(A\\times B)=\\deg A+\\deg B$, et cela toujours, car les termes dominants se multiplient sans jamais pouvoir s'annuler. Ce contrôle repère immédiatement un terme oublié dans un développement.",
+      "difficulte": 1,
+      "tags": ["degre", "produit"]
+    },
+    {
+      "id": "1D-CH02-007",
+      "lecon": "Polynômes : degré et opérations",
+      "type": "formule",
+      "recto": "Pourquoi le degré d'une somme n'est-il pas la somme des degrés ?",
+      "verso": "On a seulement $\\deg(A+B)\\le\\max(\\deg A,\\deg B)$, et le degré peut même baisser si les termes dominants s'annulent : $(x^{2}+1)+(-x^{2}+x)=x+1$ est de degré $1$. On ne lit d'ailleurs jamais un degré sur une écriture non réduite.",
+      "difficulte": 3,
+      "tags": ["degre", "somme", "piege"]
+    },
+    {
+      "id": "1D-CH02-008",
+      "lecon": "Polynômes : degré et opérations",
+      "type": "definition",
+      "recto": "Sur quel ensemble une fonction polynôme est-elle définie ?",
+      "verso": "Sur $\\mathbb{R}$ tout entier. A chaque polynôme $P$ correspond la fonction polynôme $x\\mapsto P(x)$, dont le calcul est possible pour n'importe quel réel, sans aucune valeur interdite.",
+      "difficulte": 1,
+      "tags": ["fonction-polynome", "ensemble-de-definition"]
+    },
+    {
+      "id": "1D-CH02-009",
+      "lecon": "Racines, factorisation et division euclidienne",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on une racine d'un polynôme $P$ ?",
+      "verso": "Un réel $a$ tel que $P(a)=0$ ; on dit aussi un zéro. C'est l'abscisse d'un point où la courbe de la fonction polynôme coupe l'axe des abscisses.",
+      "difficulte": 1,
+      "tags": ["racine", "definition"]
+    },
+    {
+      "id": "1D-CH02-010",
+      "lecon": "Racines, factorisation et division euclidienne",
+      "type": "formule",
+      "recto": "Quelle équivalence relie une racine $a$ du polynôme $P$ et une factorisation de $P$ ?",
+      "verso": "$P(a)=0\\iff P(x)=(x-a)\\,Q(x)$, où $Q$ est un polynôme de degré $\\deg P-1$. Une racine connue fait donc tomber le degré d'une unité, ce qui ramène souvent un problème de degré $3$ à un second degré.",
+      "difficulte": 1,
+      "tags": ["racine", "factorisation"]
+    },
+    {
+      "id": "1D-CH02-011",
+      "lecon": "Racines, factorisation et division euclidienne",
+      "type": "formule",
+      "recto": "Quel facteur met-on en évidence lorsque la racine trouvée vaut $-1$ ?",
+      "verso": "Le facteur $\\big(x-(-1)\\big)$, c'est-à-dire $(x+1)$, et non $(x-1)$ : le signe s'inverse. Relire l'écriture $(x-a)$ chaque fois que la racine est négative évite cette erreur classique.",
+      "difficulte": 3,
+      "tags": ["factorisation", "signe", "piege"]
+    },
+    {
+      "id": "1D-CH02-012",
+      "lecon": "Racines, factorisation et division euclidienne",
+      "type": "formule",
+      "recto": "Combien de racines réelles un polynôme de degré $n$ possède-t-il au plus ?",
+      "verso": "Au plus $n$, et il peut en avoir moins : la factorisation s'arrête dès qu'un facteur du second degré a un discriminant négatif. Un polynôme de degré $3$ peut ainsi n'avoir qu'une seule racine réelle.",
+      "difficulte": 2,
+      "tags": ["racine", "degre"]
+    },
+    {
+      "id": "1D-CH02-013",
+      "lecon": "Racines, factorisation et division euclidienne",
+      "type": "definition",
+      "recto": "Quelles deux méthodes donnent le facteur $Q$ une fois une racine $a$ connue ?",
+      "verso": "La méthode des coefficients indéterminés, où l'on pose $Q$ avec des coefficients inconnus, on développe et on identifie ; ou la division euclidienne de $P$ par $(x-a)$. Les deux sont au programme et donnent le même résultat.",
+      "difficulte": 2,
+      "tags": ["factorisation", "coefficients-indetermines", "division-euclidienne"]
+    },
+    {
+      "id": "1D-CH02-014",
+      "lecon": "Racines, factorisation et division euclidienne",
+      "type": "formule",
+      "recto": "En quoi consiste la division euclidienne d'un polynôme $P$ par un polynôme non nul $D$ ?",
+      "verso": "A trouver deux polynômes, le quotient $Q$ et le reste $R$, tels que $P=D\\times Q+R$ avec $\\deg R<\\deg D$ ; cette écriture est unique. Lorsque $R=0$, on dit que $D$ divise $P$, et $P=D\\times Q$ est une factorisation.",
+      "difficulte": 1,
+      "tags": ["division-euclidienne", "quotient", "reste"]
+    },
+    {
+      "id": "1D-CH02-015",
+      "lecon": "Racines, factorisation et division euclidienne",
+      "type": "formule",
+      "recto": "Que vaut le reste de la division euclidienne d'un polynôme $P$ par $(x-a)$ ?",
+      "verso": "Il vaut $P(a)$. Le reste est en effet de degré strictement inférieur à $1$, donc constant, et remplacer $x$ par $a$ dans $P(x)=(x-a)Q(x)+R$ efface le premier terme.",
+      "difficulte": 2,
+      "tags": ["division-euclidienne", "reste", "racine"]
+    },
+    {
+      "id": "1D-CH02-016",
+      "lecon": "Racines, factorisation et division euclidienne",
+      "type": "formule",
+      "recto": "Où cherche-t-on une racine évidente d'un polynôme à coefficients entiers de coefficient dominant $1$ ?",
+      "verso": "Parmi les diviseurs du terme constant, en essayant d'abord $1$, $-1$, $2$, $-2$, $3$, $-3$. Un raccourci utile : la somme des coefficients vaut $P(1)$, donc si cette somme est nulle, $1$ est racine.",
+      "difficulte": 2,
+      "tags": ["racine-evidente", "methode"]
+    },
+    {
+      "id": "1D-CH02-017",
+      "lecon": "Racines, factorisation et division euclidienne",
+      "type": "definition",
+      "recto": "Pourquoi faut-il écrire le calcul de $P(a)$ avant de factoriser par $(x-a)$ ?",
+      "verso": "Parce que c'est l'hypothèse $P(a)=0$ qui autorise la factorisation. Sinon la division laisse un reste non nul égal à $P(a)$ : pour $P(x)=x^{3}-x^{2}+x+3$, on a $P(1)=4$ et $P(x)=(x-1)(x^{2}+1)+4$.",
+      "difficulte": 2,
+      "tags": ["factorisation", "verification", "piege"]
+    },
+    {
+      "id": "1D-CH02-018",
+      "lecon": "Racines, factorisation et division euclidienne",
+      "type": "formule",
+      "recto": "Pourquoi cherche-t-on toujours à factoriser un polynôme avant de résoudre une équation ?",
+      "verso": "Parce qu'un produit est nul si et seulement si l'un au moins de ses facteurs est nul : $A\\times B=0\\iff A=0$ ou $B=0$. Une fois le polynôme écrit en produit, toutes les solutions se lisent d'un coup.",
+      "difficulte": 1,
+      "tags": ["produit-nul", "equation", "factorisation"]
+    },
+    {
+      "id": "1D-CH02-019",
+      "lecon": "Trinôme du second degré : somme et produit des racines",
+      "type": "formule",
+      "recto": "Comment un trinôme $ax^{2}+bx+c$ se factorise-t-il selon son discriminant ?",
+      "verso": "Si $\\Delta>0$, il s'écrit $a(x-x_1)(x-x_2)$ ; si $\\Delta=0$, il s'écrit $a(x-x_0)^{2}$ avec $x_0=-\\dfrac{b}{2a}$ ; si $\\Delta<0$, il n'a aucune racine réelle et ne se factorise pas dans $\\mathbb{R}$.",
+      "difficulte": 2,
+      "tags": ["trinome", "factorisation", "discriminant"]
+    },
+    {
+      "id": "1D-CH02-020",
+      "lecon": "Trinôme du second degré : somme et produit des racines",
+      "type": "formule",
+      "recto": "Pourquoi la factorisation de $2x^{2}-6x+4$ n'est-elle pas $(x-1)(x-2)$ ?",
+      "verso": "Parce que le coefficient dominant ne disparaît jamais du produit : il faut écrire $2(x-1)(x-2)$. Sans ce facteur $2$, le développement ne redonne pas le trinôme de départ.",
+      "difficulte": 3,
+      "tags": ["trinome", "factorisation", "piege"]
+    },
+    {
+      "id": "1D-CH02-021",
+      "lecon": "Trinôme du second degré : somme et produit des racines",
+      "type": "formule",
+      "recto": "Que valent la somme et le produit des racines d'un trinôme $ax^{2}+bx+c$ ?",
+      "verso": "$S=x_1+x_2=-\\dfrac{b}{a}$ et $P=x_1x_2=\\dfrac{c}{a}$. Ces relations ne valent que si le trinôme a des racines, donc si $\\Delta\\ge 0$, et il ne faut pas oublier de diviser par $a$.",
+      "difficulte": 1,
+      "tags": ["somme-produit", "trinome"]
+    },
+    {
+      "id": "1D-CH02-022",
+      "lecon": "Trinôme du second degré : somme et produit des racines",
+      "type": "formule",
+      "recto": "De quelle équation deux nombres de somme $S$ et de produit $P$ sont-ils les solutions ?",
+      "verso": "De l'équation $t^{2}-S\\,t+P=0$ : signe moins devant $S$, signe plus devant $P$. C'est ainsi que se résolvent les problèmes où l'on connaît un total et un produit, comme un périmètre et une aire.",
+      "difficulte": 1,
+      "tags": ["somme-produit", "equation"]
+    },
+    {
+      "id": "1D-CH02-023",
+      "lecon": "Trinôme du second degré : somme et produit des racines",
+      "type": "formule",
+      "recto": "A quelle condition deux nombres réels de somme $S$ et de produit $P$ existent-ils ?",
+      "verso": "Si et seulement si $S^{2}-4P\\ge 0$, car $S^{2}-4P$ est le discriminant de l'équation $t^{2}-S\\,t+P=0$. Pour $S=3$ et $P=5$, il vaut $-11$ : ces deux nombres n'existent pas.",
+      "difficulte": 2,
+      "tags": ["somme-produit", "existence", "discriminant"]
+    },
+    {
+      "id": "1D-CH02-024",
+      "lecon": "Trinôme du second degré : somme et produit des racines",
+      "type": "formule",
+      "recto": "Comment obtient-on la seconde racine d'un trinôme dont on connaît déjà une racine $x_1$ ?",
+      "verso": "Par le produit, $x_2=\\dfrac{c}{a\\,x_1}$, ou par la somme, $x_2=-\\dfrac{b}{a}-x_1$. Aucun discriminant n'est nécessaire : $x^{2}-7x+10=0$ admet $2$ pour racine, donc l'autre vaut $\\dfrac{10}{2}=5$.",
+      "difficulte": 2,
+      "tags": ["somme-produit", "racine"]
+    },
+    {
+      "id": "1D-CH02-025",
+      "lecon": "Trinôme du second degré : somme et produit des racines",
+      "type": "formule",
+      "recto": "Comment calcule-t-on $x_1^{2}+x_2^{2}$ sans connaître les racines du trinôme ?",
+      "verso": "Par l'identité $x_1^{2}+x_2^{2}=S^{2}-2P$, où $S$ et $P$ sont la somme et le produit des racines, lus directement sur les coefficients.",
+      "difficulte": 2,
+      "tags": ["somme-produit", "identite"]
+    },
+    {
+      "id": "1D-CH02-026",
+      "lecon": "Trinôme du second degré : somme et produit des racines",
+      "type": "formule",
+      "recto": "Quel est le signe d'un trinôme $ax^{2}+bx+c$ selon son discriminant ?",
+      "verso": "Si $\\Delta<0$, il est du signe de $a$ pour tout réel $x$ ; si $\\Delta=0$, du signe de $a$ partout, sauf en la racine double où il s'annule ; si $\\Delta>0$, du signe de $a$ à l'extérieur des racines et du signe contraire entre elles.",
+      "difficulte": 2,
+      "tags": ["trinome", "signe"]
+    },
+    {
+      "id": "1D-CH02-027",
+      "lecon": "Trinôme du second degré : somme et produit des racines",
+      "type": "formule",
+      "recto": "Où se situe le sommet de la parabole d'équation $y=ax^{2}+bx+c$ ?",
+      "verso": "A l'abscisse $x=-\\dfrac{b}{2a}$, sur l'axe de symétrie vertical de la parabole, c'est-à-dire au milieu des deux racines lorsqu'elles existent. C'est un maximum si $a<0$, un minimum si $a>0$.",
+      "difficulte": 1,
+      "tags": ["parabole", "sommet"]
+    },
+    {
+      "id": "1D-CH02-028",
+      "lecon": "Trinôme du second degré : somme et produit des racines",
+      "type": "formule",
+      "recto": "Comment lit-on le signe d'un polynôme écrit comme produit de facteurs du premier degré ?",
+      "verso": "Facteur par facteur : chacun est négatif avant sa racine, nul en sa racine, positif après. On range les racines dans l'ordre croissant, on consacre une ligne à chaque facteur, puis on multiplie les signes colonne par colonne.",
+      "difficulte": 2,
+      "tags": ["tableau-de-signes", "produit"]
+    },
+    {
+      "id": "1D-CH02-029",
+      "lecon": "Trinôme du second degré : somme et produit des racines",
+      "type": "formule",
+      "recto": "Comment résout-on une équation bicarrée comme $x^{4}-10x^{2}+9=0$ ?",
+      "verso": "En posant $X=x^{2}$, ce qui donne $X^{2}-10X+9=0$, puis en revenant à $x$ : $X=9$ donne $x=3$ ou $x=-3$, et $X=1$ donne $x=1$ ou $x=-1$. Une valeur négative de $X$ ne fournirait aucune solution.",
+      "difficulte": 2,
+      "tags": ["equation-bicarree", "changement-dinconnue"]
+    },
+    {
+      "id": "1D-CH02-030",
+      "lecon": "Fractions rationnelles",
+      "type": "definition",
+      "recto": "Qu'est-ce qu'une fraction rationnelle ?",
+      "verso": "Un quotient $F(x)=\\dfrac{P(x)}{Q(x)}$ de deux polynômes, le dénominateur $Q$ n'étant pas le polynôme nul. Elle n'existe que là où $Q(x)\\ne 0$.",
+      "difficulte": 1,
+      "tags": ["fraction-rationnelle", "definition"]
+    },
+    {
+      "id": "1D-CH02-031",
+      "lecon": "Fractions rationnelles",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on les valeurs interdites d'une fraction rationnelle ?",
+      "verso": "Les réels qui annulent le dénominateur. L'ensemble de définition est l'ensemble des réels privé de ces valeurs, par exemple $D_F=\\mathbb{R}\\setminus\\{0\\,;1\\}$. Une valeur interdite est une racine du dénominateur, jamais du numérateur.",
+      "difficulte": 2,
+      "tags": ["valeur-interdite", "ensemble-de-definition"]
+    },
+    {
+      "id": "1D-CH02-032",
+      "lecon": "Fractions rationnelles",
+      "type": "formule",
+      "recto": "Quel est l'ensemble de définition de $\\dfrac{x+1}{x^{2}+1}$ ?",
+      "verso": "$\\mathbb{R}$ tout entier, car $x^{2}+1$ ne s'annule jamais : ce trinôme a un discriminant négatif. Il n'y a donc aucune valeur interdite.",
+      "difficulte": 2,
+      "tags": ["ensemble-de-definition", "fraction-rationnelle"]
+    },
+    {
+      "id": "1D-CH02-033",
+      "lecon": "Fractions rationnelles",
+      "type": "definition",
+      "recto": "Pourquoi détermine-t-on l'ensemble de définition avant de simplifier une fraction rationnelle ?",
+      "verso": "Parce que la simplification transforme l'écriture, jamais l'ensemble de définition : celui-ci est fixé une fois pour toutes par l'expression de départ. On écrit donc le résultat simplifié en précisant « pour $x\\in D_F$ ».",
+      "difficulte": 2,
+      "tags": ["simplification", "ensemble-de-definition"]
+    },
+    {
+      "id": "1D-CH02-034",
+      "lecon": "Fractions rationnelles",
+      "type": "formule",
+      "recto": "Pourquoi l'égalité $\\dfrac{x^{2}-1}{x-1}=x+1$ n'est-elle pas vraie pour tout réel $x$ ?",
+      "verso": "Parce qu'elle est en défaut en $x=1$ : le premier membre n'existe pas, tandis que le second vaut $2$. Elle n'est valable que pour $x\\ne 1$, et cette mention est exigée dans une copie.",
+      "difficulte": 3,
+      "tags": ["simplification", "valeur-interdite", "piege"]
+    },
+    {
+      "id": "1D-CH02-035",
+      "lecon": "Fractions rationnelles",
+      "type": "formule",
+      "recto": "Pourquoi l'écriture $\\dfrac{x+2}{x}=2$ est-elle fausse ?",
+      "verso": "Parce qu'on ne simplifie que des facteurs communs à tout le numérateur et à tout le dénominateur, jamais un terme d'une somme. Ici $\\dfrac{x+2}{x}=1+\\dfrac{2}{x}$, tout comme $\\dfrac{2+3}{2}$ vaut $\\dfrac{5}{2}$ et non $3$.",
+      "difficulte": 3,
+      "tags": ["simplification", "piege"]
+    },
+    {
+      "id": "1D-CH02-036",
+      "lecon": "Fractions rationnelles",
+      "type": "formule",
+      "recto": "Comment résout-on une équation de la forme $\\dfrac{A(x)}{B(x)}=0$ ?",
+      "verso": "Un quotient est nul lorsque son numérateur l'est : on résout $A(x)=0$, puis on ne conserve que les solutions appartenant à l'ensemble de définition.",
+      "difficulte": 1,
+      "tags": ["quotient-nul", "equation"]
+    },
+    {
+      "id": "1D-CH02-037",
+      "lecon": "Fractions rationnelles",
+      "type": "formule",
+      "recto": "Comment marque-t-on une valeur interdite dans un tableau de signes ?",
+      "verso": "Par une double barre, et l'intervalle reste ouvert en cette valeur, même si l'inégalité est large. Le tableau contient les racines du numérateur et celles du dénominateur, rangées dans l'ordre croissant.",
+      "difficulte": 2,
+      "tags": ["tableau-de-signes", "valeur-interdite", "inequation"]
+    },
+    {
+      "id": "1D-CH02-038",
+      "lecon": "Fractions rationnelles",
+      "type": "formule",
+      "recto": "Comment détermine-t-on $a$ et $b$ tels que $\\dfrac{1}{x(x+2)}=\\dfrac{a}{x}+\\dfrac{b}{x+2}$ ?",
+      "verso": "On réduit le membre de droite au même dénominateur, ce qui donne $\\dfrac{(a+b)x+2a}{x(x+2)}$, puis on identifie les numérateurs : $a+b=0$ et $2a=1$, d'où $a=\\dfrac{1}{2}$ et $b=-\\dfrac{1}{2}$.",
+      "difficulte": 3,
+      "tags": ["identification", "fraction-rationnelle", "decomposition"]
+    }
+  ]
+}

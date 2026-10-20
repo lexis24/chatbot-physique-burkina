@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Fiche de revision - 6eme - Chapitre 8 : Le triangle</title>
+<style>
+/* ===================================================================
+   FICHE DE REVISION, Collection Hakili Lab, Edition 2026
+   Feuille de style autonome, format A4 pret a imprimer.
+   Bleu #005CB9 · Vert #49A145
+   =================================================================== */
+:root{
+  --bleu:#005CB9; --bleu-fonce:#00429A; --bleu-pale:#E8F1FB; --bleu-bord:#B7D2EE;
+  --vert:#49A145; --vert-fonce:#2F7A2C; --vert-pale:#EDF7EC; --vert-bord:#BCE0B9;
+  --gris:#4A4A4A; --gris-clair:#E4E4E4; --rouge:#B3261E;
+}
+@page{
+  size:A4; margin:15mm;
+  @bottom-center{
+    content:"Collection Hakili Lab, Edition 2026  ·  Fiche de revision  ·  " counter(page) "/" counter(pages);
+    font-family:"Segoe UI",Calibri,Arial,sans-serif; font-size:6.6pt; color:#8A8A8A;
+  }
+}
+*{box-sizing:border-box;}
+body{
+  margin:0; font-family:"Segoe UI",Calibri,Arial,sans-serif;
+  font-size:8.4pt; line-height:1.26; color:#1B1B1B;
+}
+p{margin:0 0 3pt;}
+ul{margin:0 0 3pt; padding-left:11pt;}
+li{margin:0 0 1.2pt;}
+b,strong{color:var(--bleu-fonce);}
+
+/* ------------------------------ ENTETE ---------------------------- */
+.entete{
+  display:flex; align-items:stretch; border:1.6pt solid var(--bleu);
+  border-radius:2.5pt; overflow:hidden; margin-bottom:6pt;
+}
+.entete .num{
+  background:var(--bleu); color:#fff; font-size:20pt; font-weight:700;
+  padding:0 8pt; display:flex; align-items:center; justify-content:center; min-width:34pt;
+}
+.entete .txt{padding:3.5pt 8pt; flex:1;}
+.entete .niveau{
+  font-size:7pt; font-weight:700; letter-spacing:.9pt; color:var(--vert-fonce);
+}
+.entete h1{margin:0; font-size:13.5pt; line-height:1.12; color:var(--bleu-fonce); font-weight:700;}
+.entete .sous{font-size:7pt; color:var(--gris); margin-top:1pt;}
+
+/* --------------------------- BANDEAUX ----------------------------- */
+.bandeau{
+  color:#fff; font-weight:700; font-size:9pt; letter-spacing:1pt;
+  padding:2.4pt 7pt; border-radius:2pt; margin:3pt 0 4pt; break-after:avoid; page-break-after:avoid;
+}
+.bandeau.bleu{background:var(--bleu);}
+.bandeau.vert{background:var(--vert);}
+
+/* --------------------------- COLONNES ----------------------------- */
+.cols{column-count:2; column-gap:7mm; column-fill:balance;}
+
+.cols.bal{column-fill:balance;}
+.bloc{margin-bottom:5pt;}
+.keep{break-inside:avoid; page-break-inside:avoid;}
+
+/* --------------------------- LECONS ------------------------------- */
+h2.lecon{
+  margin:0 0 3pt; font-size:8.6pt; font-weight:700; color:#fff; background:var(--bleu-fonce);
+  padding:1.8pt 5pt; border-radius:1.5pt; break-after:avoid; page-break-after:avoid;
+}
+h3.rub{
+  margin:3.5pt 0 1.5pt; font-size:8.2pt; font-weight:700; color:var(--vert-fonce);
+  border-bottom:.7pt solid var(--vert-bord); padding-bottom:.8pt;
+  break-after:avoid; page-break-after:avoid;
+}
+
+/* --------------------------- ENCADRES ----------------------------- */
+.form{
+  background:var(--bleu-pale); border:.8pt solid var(--bleu-bord); border-left:2.6pt solid var(--bleu);
+  border-radius:2pt; padding:2.4pt 5pt; margin:2.2pt 0 3.4pt;
+  break-inside:avoid; page-break-inside:avoid;
+}
+.form .t{
+  display:block; font-size:6.8pt; font-weight:700; letter-spacing:.6pt;
+  color:var(--bleu); margin-bottom:1.5pt;
+}
+.form .c{text-align:center; font-size:9.1pt; margin:1.6pt 0;}
+.note{background:var(--vert-pale); border-left:2.4pt solid var(--vert); padding:2.4pt 5pt; border-radius:1.5pt; margin:2.5pt 0 4pt; break-inside:avoid;}
+
+/* --------------------------- TABLEAUX ----------------------------- */
+table{width:100%; border-collapse:collapse; font-size:7.6pt; margin:2pt 0 4pt; break-inside:avoid;}
+th{background:var(--bleu); color:#fff; font-weight:700; text-align:left; padding:1.8pt 4pt; font-size:7.2pt;}
+td{border:.6pt solid var(--gris-clair); padding:1.8pt 4pt; vertical-align:top;}
+tr{break-inside:avoid;}
+table.var td{text-align:center; font-size:8pt;}
+table.var td.lab{text-align:left; font-weight:700; color:var(--bleu-fonce); background:var(--bleu-pale);}
+
+/* ----------------------------- PIEGES ----------------------------- */
+table.pieges th:first-child{width:44%;}
+table.pieges td:first-child{color:var(--rouge); background:#FDF1F0;}
+.x{font-weight:700;}
+.v{color:var(--vert-fonce); font-weight:700;}
+
+/* ---------------------------- RECAP ------------------------------- */
+ol.recap{margin:0; padding-left:0; list-style:none; counter-reset:r;}
+ol.recap li{
+  counter-increment:r; position:relative; padding-left:13pt; margin-bottom:1.8pt;
+  break-inside:avoid;
+}
+ol.recap li::before{
+  content:counter(r); position:absolute; left:0; top:.3pt;
+  width:10pt; height:10pt; border-radius:50%; background:var(--vert); color:#fff;
+  font-size:6.6pt; font-weight:700; text-align:center; line-height:10pt;
+}
+
+/* --------------------------- MATHS -------------------------------- */
+.m{font-family:Cambria,Georgia,"Times New Roman",serif;}
+i,var{font-family:Cambria,Georgia,"Times New Roman",serif; font-style:italic;}
+.op{font-family:Cambria,Georgia,"Times New Roman",serif; font-style:normal;}
+.f{display:inline-block; vertical-align:middle; text-align:center;
+   margin:0 .12em; line-height:1.06; font-family:Cambria,Georgia,"Times New Roman",serif;}
+.f>span{display:block; padding:0 .2em;}
+.f>span:first-child{border-bottom:.6pt solid currentColor; padding-bottom:.08em;}
+.f>span:last-child{padding-top:.04em;}
+.rad{border-top:.6pt solid currentColor; padding-top:.12em;}
+/* line-height:0 evite que l'exposant n'ecarte les lignes ; position:relative le
+   repositionne sans qu'il heurte la barre de fraction ni le trait du radical. */
+sup,sub{font-size:.68em; line-height:0; position:relative; vertical-align:baseline;}
+sup{top:-.42em;}
+sub{bottom:-.22em;}
+.pt{white-space:nowrap;}
+/* Les fleches n'ont qu'un glyphe atrophie dans la fonte serif : on les force
+   en sans-serif, ou elles sont franches meme a 8 pt. */
+.ar{font-family:"Segoe UI",Calibri,Arial,"DejaVu Sans",sans-serif; font-style:normal;}
+
+/* ------------------- PIEGES : blocs erreur / correction ------------- */
+.pg{font-size:8.1pt; border-left:2.4pt solid var(--rouge); background:#FDF1F0; border-radius:1.5pt;
+    padding:2pt 5pt; margin:0 0 2.8pt; break-inside:avoid; page-break-inside:avoid;}
+.pg .err{color:var(--rouge); font-weight:600;}
+.pg .cor{color:#1B1B1B; margin-top:.8pt;}
+.pg .cor b{color:var(--bleu-fonce);}
+.v{color:var(--vert-fonce); font-weight:700;}
+
+</style>
+</head>
+<body>
+<header class="entete">
+  <div class="num">8</div>
+  <div class="txt">
+    <div class="niveau">6EME &middot; MATHEMATIQUES</div>
+    <h1>Le triangle</h1>
+    <div class="sous">Leçon 1 : le triangle et ses types &middot; Leçon 2 : construire un triangle &middot; Leçon 3 : hauteurs et médianes &middot; Leçon 4 : périmètre et aire du triangle</div>
+  </div>
+</header>
+
+<div class="bandeau bleu" style="margin-top:0">L'ESSENTIEL</div>
+<div class="cols">
+
+<!-- ================= LECON 1 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 1&nbsp;: Le triangle et ses types</h2>
+<p>Un <b>triangle</b> est une figure formée par <b>trois segments</b> qui relient trois points <b>non alignés</b> (alignés, ils ne donneraient qu'un trait) : ces points sont les <b>sommets</b>, les segments sont les <b>côtés</b>, et aux sommets se forment les <b>angles</b>. Le triangle <b>ABC</b> a pour côtés [AB], [AC] et [BC] ; [BC] est le <b>côté opposé</b> au sommet A, car il est en face de A.</p></div>
+<p><b>Notation d'un angle.</b> L'angle de sommet B se note <span style="display:inline-block;position:relative;line-height:1"><i>ABC</i><span style="position:absolute;left:0;right:0;top:-.52em;font-size:.8em;font-style:normal;text-align:center">&#710;</span></span>, ou plus court <span style="display:inline-block;position:relative;line-height:1"><i>B</i><span style="position:absolute;left:0;right:0;top:-.52em;font-size:.8em;font-style:normal;text-align:center">&#710;</span></span> : la lettre du <b>milieu</b> est toujours celle du <b>sommet</b>.</p>
+<ul>
+<li><b>Quelconque</b> : aucun côté égal, aucun angle égal.</li>
+<li><b>Isocèle</b> : deux côtés égaux, et les deux angles de la base égaux.</li>
+<li><b>Equilatéral</b> : trois côtés égaux, et trois angles de 60&#176;.</li>
+<li><b>Rectangle</b> : un angle droit (90&#176;). Ces noms ne s'excluent pas : un triangle peut être à la fois rectangle et isocèle.</li>
+<li><b>Codage</b> : des côtés portant le <b>même nombre de petits traits</b> ont la même longueur ; un <b>petit carré</b> signale un angle droit.</li>
+</ul>
+<div class="form">
+  <span class="t">SOMME DES ANGLES&nbsp;: dans TOUT triangle</span>
+  <div class="c m"><span style="display:inline-block;position:relative;line-height:1"><i>A</i><span style="position:absolute;left:0;right:0;top:-.52em;font-size:.8em;font-style:normal;text-align:center">&#710;</span></span>&#8239;+&#8239;<span style="display:inline-block;position:relative;line-height:1"><i>B</i><span style="position:absolute;left:0;right:0;top:-.52em;font-size:.8em;font-style:normal;text-align:center">&#710;</span></span>&#8239;+&#8239;<span style="display:inline-block;position:relative;line-height:1"><i>C</i><span style="position:absolute;left:0;right:0;top:-.52em;font-size:.8em;font-style:normal;text-align:center">&#710;</span></span>&#8239;=&#8239;180&#176;</div>
+</div>
+</div>
+
+<!-- ================= LECON 2 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 2&nbsp;: Construire un triangle</h2>
+<p>On peut construire un triangle si l'on connaît :</p></div>
+<ul>
+<li>ses <b>trois côtés</b> (règle et <b>compas</b>) : trace [BC], puis l'arc de centre B et de rayon AB, et l'arc de centre C et de rayon AC ; ils se coupent en A ;</li>
+<li>un <b>côté et les deux angles</b> placés à ses extrémités (règle et <b>rapporteur</b>) ;</li>
+<li><b>deux côtés et l'angle</b> compris entre eux (règle et <b>rapporteur</b>).</li>
+</ul>
+<div class="form">
+  <span class="t">CONDITION D'EXISTENCE&nbsp;: INEGALITE DU TRIANGLE</span>
+  <div class="c m">chaque côté&#8239;&lt;&#8239;somme des deux autres</div>
+</div>
+<p>Il suffit de vérifier le <b>plus grand côté</b> : si les deux petits ne le couvrent pas, les arcs ne se croisent pas (2, 3 et 10 : 2&#8239;+&#8239;3&#8239;=&#8239;5 et 5&#8239;&lt;&#8239;10). <b>Cas limite :</b> somme <b>exactement</b> égale au grand (3, 4 et 7), les points sont alignés : un trait, pas un triangle.</p>
+</div>
+
+<!-- ================= LECON 3 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 3&nbsp;: Hauteurs et médianes</h2>
+<p>Une <b>hauteur</b> est le segment (ou la droite) issu d'un sommet et <b>perpendiculaire au côté opposé</b> ; le point où elle rencontre ce côté est le <b>pied</b>. Une <b>médiane</b> est le segment qui relie un sommet au <b>milieu du côté opposé</b>. Un triangle a <b>trois</b> hauteurs et <b>trois</b> médianes.</p></div>
+<div class="form">
+  <span class="t">POINTS DE CONCOURS</span>
+  <div class="c m">3 hauteurs <span class="ar">&#8594;</span> H, l'<b>orthocentre</b></div>
+  <div class="c m">3 médianes <span class="ar">&#8594;</span> G, le <b>centre de gravité</b></div>
+</div>
+<ul>
+<li>Angle <b>obtus</b> (plus grand que 90&#176;) : le pied tombe <b>en dehors</b> du côté, qu'on prolonge en pointillés ; l'orthocentre est à l'extérieur.</li>
+<li>Triangle <b>rectangle</b> : les côtés de l'angle droit sont deux hauteurs, donc H est le <b>sommet de l'angle droit</b>.</li>
+<li>Triangle <b>isocèle</b> : hauteur et médiane issues du sommet principal sont <b>confondues</b> ; dans un <b>équilatéral</b>, c'est vrai aux trois sommets et H et G sont un seul point.</li>
+</ul>
+</div>
+
+<!-- ================= LECON 4 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 4&nbsp;: Périmètre et aire du triangle</h2>
+<div class="form">
+  <span class="t">PERIMETRE ET AIRE</span>
+  <div class="c m"><i>P</i>&#8239;=&#8239;<i>a</i>&#8239;+&#8239;<i>b</i>&#8239;+&#8239;<i>c</i> &nbsp;<span style="font-size:7.5pt">(cm, m, km)</span></div>
+  <div class="c m"><i>A</i>&#8239;=&#8239;(base&#8239;&#215;&#8239;hauteur)&#8239;&#247;&#8239;2 &nbsp;<span style="font-size:7.5pt">(cm<sup>2</sup>, m<sup>2</sup>)</span></div>
+</div></div>
+<ul>
+<li>La hauteur va toujours <b>avec sa base</b> : elle doit lui être <b>perpendiculaire</b>. Un triangle a trois bases possibles, donc trois couples base-hauteur, qui donnent la <b>même aire</b>.</li>
+<li>Deux triangles identiques accolés forment un <b>parallélogramme</b> de même base et de même hauteur : l'aire du triangle en est la <b>moitié</b>.</li>
+<li><b>Triangle rectangle</b> : les deux côtés de l'angle droit servent de base et de hauteur, et l'aire vaut leur produit divisé par 2.</li>
+</ul>
+<div class="form">
+  <span class="t">RETROUVER UNE LONGUEUR MANQUANTE</span>
+  <div class="c m">hauteur&#8239;=&#8239;(<i>A</i>&#8239;&#215;&#8239;2)&#8239;&#247;&#8239;base &nbsp;&nbsp; base&#8239;=&#8239;(<i>A</i>&#8239;&#215;&#8239;2)&#8239;&#247;&#8239;hauteur</div>
+</div>
+</div>
+
+</div>
+
+<div class="bandeau vert">PIEGES ET ERREURS FREQUENTES</div>
+<div class="cols">
+<div class="pg"><div class="err"><span class="x">&#10007;</span> « Un triangle isocèle est toujours équilatéral. »</div><div class="cor"><span class="v">&#10003;</span> C'est l'inverse : un triangle <b>équilatéral</b> est un cas particulier d'isocèle (il a même trois côtés égaux), mais un isocèle n'a que <b>deux</b> côtés égaux.</div></div>
+<div class="pg"><div class="err"><span class="x">&#10007;</span> « Un triangle peut avoir deux angles droits. »</div><div class="cor"><span class="v">&#10003;</span> Deux angles droits font déjà 180&#176; à eux seuls : il ne resterait rien pour le troisième. Un triangle a <b>au plus un</b> angle droit.</div></div>
+<div class="pg"><div class="err"><span class="x">&#10007;</span> Un triangle de côtés 2 cm, 3 cm et 7 cm existe &nbsp;&middot;&nbsp; on construit 3 cm, 4 cm et 9 cm</div><div class="cor"><span class="v">&#10003;</span> 2&#8239;+&#8239;3&#8239;=&#8239;5 et 5&#8239;&lt;&#8239;7 ; 3&#8239;+&#8239;4&#8239;=&#8239;7 et 7&#8239;&lt;&#8239;9. Chaque côté doit être <b>plus petit que la somme des deux autres</b> : ces triangles n'existent pas.</div></div>
+<div class="pg"><div class="err"><span class="x">&#10007;</span> « La hauteur va toujours au milieu du côté opposé. » &nbsp;&middot;&nbsp; « Elle est toujours à l'intérieur du triangle. »</div><div class="cor"><span class="v">&#10003;</span> La <b>MEDIANE</b> va au milieu ; la <b>HAUTEUR</b> tombe perpendiculairement, et elles ne coïncident que dans un isocèle, depuis le sommet principal. Si un angle est <b>obtus</b>, le pied tombe hors du côté, sur son prolongement.</div></div>
+<div class="pg"><div class="err"><span class="x">&#10007;</span> Aire&#8239;=&#8239;base&#8239;&#215;&#8239;hauteur &nbsp;&middot;&nbsp; n'importe quel côté sert de hauteur &nbsp;&middot;&nbsp; une aire écrite en cm</div><div class="cor"><span class="v">&#10003;</span> <i>A</i>&#8239;=&#8239;(base&#8239;&#215;&#8239;hauteur)&#8239;&#247;&#8239;2 : sans la division par 2, on obtient l'aire du <b>parallélogramme</b>, deux fois trop. La hauteur doit être <b>perpendiculaire à la base choisie</b> et n'est un côté que dans un triangle rectangle. Une aire s'écrit en unités <b>carrées</b> : cm<sup>2</sup>, m<sup>2</sup>.</div></div>
+
+</div>
+
+<div class="bandeau bleu">A SAVOIR PAR COEUR AVANT LE DEVOIR</div>
+<div class="cols">
+<ol class="recap">
+<li>Trois points <b>non alignés</b> : trois sommets, trois côtés, trois angles ; [BC] est opposé à A, et dans <span style="display:inline-block;position:relative;line-height:1"><i>ABC</i><span style="position:absolute;left:0;right:0;top:-.52em;font-size:.8em;font-style:normal;text-align:center">&#710;</span></span> la lettre du milieu est le sommet.</li>
+<li>Dans tout triangle, <span style="display:inline-block;position:relative;line-height:1"><i>A</i><span style="position:absolute;left:0;right:0;top:-.52em;font-size:.8em;font-style:normal;text-align:center">&#710;</span></span>&#8239;+&#8239;<span style="display:inline-block;position:relative;line-height:1"><i>B</i><span style="position:absolute;left:0;right:0;top:-.52em;font-size:.8em;font-style:normal;text-align:center">&#710;</span></span>&#8239;+&#8239;<span style="display:inline-block;position:relative;line-height:1"><i>C</i><span style="position:absolute;left:0;right:0;top:-.52em;font-size:.8em;font-style:normal;text-align:center">&#710;</span></span>&#8239;=&#8239;180&#176; : deux angles connus donnent le troisième.</li>
+<li>Isocèle : 2 côtés égaux. Equilatéral : 3 côtés égaux et 3 angles de 60&#176;. Rectangle : 1 angle droit. Codage : mêmes traits, même longueur ; petit carré, angle droit.</li>
+<li><b>Inégalité du triangle</b> : chaque côté est plus petit que la somme des deux autres, à vérifier <b>avant</b> de construire. Au compas pour trois côtés, au rapporteur dès qu'un angle est donné.</li>
+<li><b>Hauteur</b> : d'un sommet, <b>perpendiculaire</b> au côté opposé <span class="ar">&#8594;</span> les trois se coupent en H, l'orthocentre. <b>Médiane</b> : d'un sommet au <b>milieu</b> du côté opposé <span class="ar">&#8594;</span> les trois se coupent en G, le centre de gravité.</li>
+<li><i>P</i>&#8239;=&#8239;<i>a</i>&#8239;+&#8239;<i>b</i>&#8239;+&#8239;<i>c</i> en cm ou m ; <i>A</i>&#8239;=&#8239;(base&#8239;&#215;&#8239;hauteur)&#8239;&#247;&#8239;2 en cm<sup>2</sup> ou m<sup>2</sup> ; hauteur&#8239;=&#8239;(<i>A</i>&#8239;&#215;&#8239;2)&#8239;&#247;&#8239;base.</li>
+</ol>
+</div>
+
+</body>
+</html>

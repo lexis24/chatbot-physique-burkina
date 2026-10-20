@@ -1,0 +1,350 @@
+{
+  "niveau": "2nde C",
+  "chapitre": "Chapitre 8 : Produit scalaire dans le plan",
+  "source": "maths/2ndc/Chapitre_8_Produit_scalaire",
+  "nombre_cartes": 38,
+  "cartes": [
+    {
+      "id": "2C-CH08-001",
+      "lecon": "Définition du produit scalaire et orthogonalité",
+      "type": "formule",
+      "recto": "Comment calcule-t-on le produit scalaire de deux vecteurs non nuls à partir de leurs normes et de leur angle ?",
+      "verso": "$\\vec{u}\\cdot\\vec{v} = \\|\\vec{u}\\|\\cdot\\|\\vec{v}\\|\\cdot\\cos\\theta$, où $\\theta$ est l'angle formé par les deux vecteurs, compris entre $0$ et $\\pi$. Le résultat est un nombre réel, jamais un vecteur.",
+      "difficulte": 1,
+      "tags": ["produit-scalaire", "definition", "cosinus"]
+    },
+    {
+      "id": "2C-CH08-002",
+      "lecon": "Définition du produit scalaire et orthogonalité",
+      "type": "formule",
+      "recto": "Comment s'exprime $\\overrightarrow{OA}\\cdot\\overrightarrow{OB}$ à l'aide du projeté orthogonal $H$ de $B$ sur la droite $(OA)$ ?",
+      "verso": "On a $\\overrightarrow{OA}\\cdot\\overrightarrow{OB} = \\overrightarrow{OA}\\cdot\\overrightarrow{OH}$, c'est-à-dire $OA \\times OH$ lorsque $\\overrightarrow{OA}$ et $\\overrightarrow{OH}$ sont de même sens, et $-OA \\times OH$ lorsqu'ils sont de sens contraires.",
+      "difficulte": 2,
+      "tags": ["produit-scalaire", "projete-orthogonal"]
+    },
+    {
+      "id": "2C-CH08-003",
+      "lecon": "Définition du produit scalaire et orthogonalité",
+      "type": "definition",
+      "recto": "Que vaut le produit scalaire d'un vecteur par lui-même ?",
+      "verso": "C'est le carré scalaire : $\\vec{u}\\cdot\\vec{u} = \\vec{u}^{2} = \\|\\vec{u}\\|^{2}$, donc $\\|\\vec{u}\\| = \\sqrt{\\vec{u}\\cdot\\vec{u}}$. Pour deux points, $\\overrightarrow{AB}\\cdot\\overrightarrow{AB} = AB^{2}$.",
+      "difficulte": 1,
+      "tags": ["carre-scalaire", "norme"]
+    },
+    {
+      "id": "2C-CH08-004",
+      "lecon": "Définition du produit scalaire et orthogonalité",
+      "type": "formule",
+      "recto": "Que révèle le signe du produit scalaire de deux vecteurs non nuls ?",
+      "verso": "La nature de leur angle : le produit est positif si l'angle est aigu, nul s'il est droit, négatif s'il est obtus. Les deux normes étant positives, ce signe est celui de $\\cos\\theta$.",
+      "difficulte": 2,
+      "tags": ["produit-scalaire", "signe", "angle"]
+    },
+    {
+      "id": "2C-CH08-005",
+      "lecon": "Définition du produit scalaire et orthogonalité",
+      "type": "formule",
+      "recto": "Que vaut le produit scalaire de deux vecteurs colinéaires ?",
+      "verso": "S'ils sont de même sens, $\\theta = 0$ et $\\vec{u}\\cdot\\vec{v} = \\|\\vec{u}\\|\\times\\|\\vec{v}\\|$. S'ils sont de sens contraires, $\\theta = \\pi$ et $\\vec{u}\\cdot\\vec{v} = -\\|\\vec{u}\\|\\times\\|\\vec{v}\\|$.",
+      "difficulte": 2,
+      "tags": ["produit-scalaire", "colineaires"]
+    },
+    {
+      "id": "2C-CH08-006",
+      "lecon": "Définition du produit scalaire et orthogonalité",
+      "type": "formule",
+      "recto": "Quelle égalité caractérise l'orthogonalité de deux vecteurs ?",
+      "verso": "$\\vec{u} \\perp \\vec{v}$ si et seulement si $\\vec{u}\\cdot\\vec{v} = 0$. Pour deux vecteurs non nuls, seul $\\cos\\theta$ peut s'annuler, ce qui impose $\\theta = \\dfrac{\\pi}{2}$. Par convention, le vecteur nul est orthogonal à tout vecteur.",
+      "difficulte": 1,
+      "tags": ["orthogonalite", "produit-scalaire"]
+    },
+    {
+      "id": "2C-CH08-007",
+      "lecon": "Définition du produit scalaire et orthogonalité",
+      "type": "formule",
+      "recto": "Comment démontre-t-on par le calcul que deux droites $(AB)$ et $(CD)$ sont perpendiculaires ?",
+      "verso": "En établissant que $\\overrightarrow{AB}\\cdot\\overrightarrow{CD} = 0$. L'équivalence sert dans les deux sens : une perpendicularité donnée par l'énoncé permet aussi d'annuler un produit scalaire au cours d'un calcul.",
+      "difficulte": 2,
+      "tags": ["orthogonalite", "droites-perpendiculaires"]
+    },
+    {
+      "id": "2C-CH08-008",
+      "lecon": "Définition du produit scalaire et orthogonalité",
+      "type": "definition",
+      "recto": "Pourquoi $\\vec{u}\\cdot\\vec{v} = 0$ n'entraîne-t-il pas que l'un des deux vecteurs soit nul ?",
+      "verso": "Parce qu'un troisième facteur intervient dans le produit, $\\cos\\theta$, et c'est lui qui peut s'annuler. Deux vecteurs non nuls ont un produit scalaire nul dès qu'ils sont orthogonaux.",
+      "difficulte": 3,
+      "tags": ["orthogonalite", "piege"]
+    },
+    {
+      "id": "2C-CH08-009",
+      "lecon": "Définition du produit scalaire et orthogonalité",
+      "type": "definition",
+      "recto": "Pourquoi faut-il ramener les deux vecteurs d'un produit scalaire à une même origine ?",
+      "verso": "Parce que l'angle $\\theta$ qui figure dans la formule n'a de sens que si les deux vecteurs partent du même point. Lorsque l'énoncé les donne ailleurs, on commence par en reporter un.",
+      "difficulte": 2,
+      "tags": ["produit-scalaire", "angle"]
+    },
+    {
+      "id": "2C-CH08-010",
+      "lecon": "Définition du produit scalaire et orthogonalité",
+      "type": "definition",
+      "recto": "Quel sens donner à l'écriture $\\vec{u}\\cdot\\vec{v}\\cdot\\vec{w}$ ?",
+      "verso": "Aucun : deux vecteurs entrent dans un produit scalaire, un nombre en sort, donc on n'en enchaîne jamais trois. En revanche $\\left(\\vec{u}\\cdot\\vec{v}\\right)\\vec{w}$ a un sens : c'est un nombre multiplié par un vecteur, donc un vecteur.",
+      "difficulte": 3,
+      "tags": ["produit-scalaire", "notation", "piege"]
+    },
+    {
+      "id": "2C-CH08-011",
+      "lecon": "Propriétés, expression analytique et norme",
+      "type": "formule",
+      "recto": "Quelles règles de calcul font du produit scalaire une opération bilinéaire ?",
+      "verso": "La symétrie, $\\vec{u}\\cdot\\vec{v} = \\vec{v}\\cdot\\vec{u}$, et la linéarité : $\\left(k\\vec{u}\\right)\\cdot\\vec{v} = k\\left(\\vec{u}\\cdot\\vec{v}\\right)$ et $\\vec{u}\\cdot\\left(\\vec{v} + \\vec{w}\\right) = \\vec{u}\\cdot\\vec{v} + \\vec{u}\\cdot\\vec{w}$. La symétrie étend la linéarité au premier facteur.",
+      "difficulte": 2,
+      "tags": ["produit-scalaire", "proprietes", "bilinearite"]
+    },
+    {
+      "id": "2C-CH08-012",
+      "lecon": "Propriétés, expression analytique et norme",
+      "type": "formule",
+      "recto": "Comment développe-t-on $\\left(\\vec{u} + \\vec{v}\\right)^{2}$ ?",
+      "verso": "$\\left(\\vec{u} + \\vec{v}\\right)^{2} = \\vec{u}^{2} + 2\\,\\vec{u}\\cdot\\vec{v} + \\vec{v}^{2}$, ce qui s'écrit aussi $\\|\\vec{u} + \\vec{v}\\|^{2} = \\|\\vec{u}\\|^{2} + 2\\,\\vec{u}\\cdot\\vec{v} + \\|\\vec{v}\\|^{2}$. Le carré d'un vecteur est un carré scalaire, donc le carré d'une longueur.",
+      "difficulte": 2,
+      "tags": ["identite-remarquable", "carre-scalaire"]
+    },
+    {
+      "id": "2C-CH08-013",
+      "lecon": "Propriétés, expression analytique et norme",
+      "type": "formule",
+      "recto": "Que vaut $\\left(\\vec{u} + \\vec{v}\\right)\\cdot\\left(\\vec{u} - \\vec{v}\\right)$ ?",
+      "verso": "Cela vaut $\\vec{u}^{2} - \\vec{v}^{2}$, c'est-à-dire $\\|\\vec{u}\\|^{2} - \\|\\vec{v}\\|^{2}$. Le produit scalaire étant bilinéaire, les identités remarquables du calcul sur les nombres se transposent aux vecteurs.",
+      "difficulte": 2,
+      "tags": ["identite-remarquable", "produit-scalaire"]
+    },
+    {
+      "id": "2C-CH08-014",
+      "lecon": "Propriétés, expression analytique et norme",
+      "type": "formule",
+      "recto": "Quelle est l'expression du produit scalaire à partir des coordonnées, dans un repère orthonormé ?",
+      "verso": "Pour $\\vec{u}\\left(x\\,;y\\right)$ et $\\vec{v}\\left(x'\\,;y'\\right)$ : $\\vec{u}\\cdot\\vec{v} = xx' + yy'$. Cette formule exige une base orthonormée, c'est-à-dire deux vecteurs de base perpendiculaires et de longueur $1$ ; dans un repère quelconque, elle est fausse.",
+      "difficulte": 1,
+      "tags": ["expression-analytique", "base-orthonormee"]
+    },
+    {
+      "id": "2C-CH08-015",
+      "lecon": "Propriétés, expression analytique et norme",
+      "type": "formule",
+      "recto": "Comment calcule-t-on la norme d'un vecteur $\\vec{u}\\left(x\\,;y\\right)$ dans un repère orthonormé ?",
+      "verso": "$\\|\\vec{u}\\| = \\sqrt{x^{2} + y^{2}}$, car $\\|\\vec{u}\\|^{2} = \\vec{u}\\cdot\\vec{u} = x^{2} + y^{2}$. Sans la racine carrée, on n'a calculé que le carré scalaire.",
+      "difficulte": 1,
+      "tags": ["norme", "expression-analytique"]
+    },
+    {
+      "id": "2C-CH08-016",
+      "lecon": "Propriétés, expression analytique et norme",
+      "type": "formule",
+      "recto": "Comment calcule-t-on la distance de deux points $A$ et $B$ dans un repère orthonormé ?",
+      "verso": "$AB = \\|\\overrightarrow{AB}\\| = \\sqrt{\\left(x_B - x_A\\right)^{2} + \\left(y_B - y_A\\right)^{2}}$ : c'est la norme du vecteur $\\overrightarrow{AB}$, dont les coordonnées s'obtiennent par arrivée moins départ.",
+      "difficulte": 1,
+      "tags": ["distance", "expression-analytique"]
+    },
+    {
+      "id": "2C-CH08-017",
+      "lecon": "Propriétés, expression analytique et norme",
+      "type": "formule",
+      "recto": "Quelle différence y a-t-il entre les expressions $xx' + yy'$ et $xy' - x'y$ ?",
+      "verso": "$xx' + yy'$ est le produit scalaire : il s'annule quand les deux vecteurs sont orthogonaux. $xy' - x'y$ est le déterminant : il s'annule quand ils sont colinéaires. Plus et en ligne pour l'un, moins et en croix pour l'autre.",
+      "difficulte": 3,
+      "tags": ["expression-analytique", "determinant", "piege"]
+    },
+    {
+      "id": "2C-CH08-018",
+      "lecon": "Propriétés, expression analytique et norme",
+      "type": "definition",
+      "recto": "Qu'est-ce qu'un vecteur normal à une droite ?",
+      "verso": "C'est un vecteur non nul orthogonal à un vecteur directeur de cette droite. Si $\\vec{u}\\left(x\\,;y\\right)$ dirige la droite, alors $\\vec{n}\\left(-y\\,;x\\right)$ lui est normal : on échange les coordonnées et l'on change un signe.",
+      "difficulte": 2,
+      "tags": ["vecteur-normal", "definition"]
+    },
+    {
+      "id": "2C-CH08-019",
+      "lecon": "Propriétés, expression analytique et norme",
+      "type": "formule",
+      "recto": "Comment décrit-on, avec un produit scalaire, la droite passant par $A$ et de vecteur normal $\\vec{n}$ ?",
+      "verso": "C'est l'ensemble des points $M$ tels que $\\overrightarrow{AM}\\cdot\\vec{n} = 0$. Deux droites sont d'ailleurs perpendiculaires si et seulement si un vecteur directeur de l'une est orthogonal à un vecteur directeur de l'autre.",
+      "difficulte": 2,
+      "tags": ["vecteur-normal", "droite"]
+    },
+    {
+      "id": "2C-CH08-020",
+      "lecon": "Propriétés, expression analytique et norme",
+      "type": "formule",
+      "recto": "Pourquoi l'expression $xx' + yy'$ suppose-t-elle une base orthonormée ?",
+      "verso": "En développant $\\left(x\\vec{i} + y\\vec{j}\\right)\\cdot\\left(x'\\vec{i} + y'\\vec{j}\\right)$, les termes croisés portent $\\vec{i}\\cdot\\vec{j}$, nul seulement si les axes sont perpendiculaires ; les termes extrêmes portent $\\vec{i}\\cdot\\vec{i}$ et $\\vec{j}\\cdot\\vec{j}$, égaux à $1$ seulement si les vecteurs de base sont unitaires.",
+      "difficulte": 3,
+      "tags": ["expression-analytique", "base-orthonormee", "demonstration"]
+    },
+    {
+      "id": "2C-CH08-021",
+      "lecon": "Applications : distances, angles, relation métrique",
+      "type": "formule",
+      "recto": "Comment retrouve-t-on l'angle formé par deux vecteurs à partir de leur produit scalaire ?",
+      "verso": "Par $\\cos\\theta = \\dfrac{\\vec{u}\\cdot\\vec{v}}{\\|\\vec{u}\\|\\cdot\\|\\vec{v}\\|}$, obtenue en isolant $\\cos\\theta$ dans la définition. Le nombre trouvé est toujours compris entre $-1$ et $1$ ; sinon, il y a une erreur de calcul.",
+      "difficulte": 2,
+      "tags": ["angle", "cosinus", "produit-scalaire"]
+    },
+    {
+      "id": "2C-CH08-022",
+      "lecon": "Applications : distances, angles, relation métrique",
+      "type": "formule",
+      "recto": "Une fois $\\cos\\theta$ calculé, comment obtient-on la mesure de l'angle sans aucun instrument ?",
+      "verso": "On reconnaît la valeur parmi les valeurs remarquables : $\\dfrac{1}{2}$ donne $\\dfrac{\\pi}{3}$, $\\dfrac{\\sqrt{2}}{2}$ donne $\\dfrac{\\pi}{4}$, $\\dfrac{\\sqrt{3}}{2}$ donne $\\dfrac{\\pi}{6}$, et les opposés donnent les angles associés. Entre $0$ et $\\pi$, un cosinus détermine un seul angle.",
+      "difficulte": 2,
+      "tags": ["angle", "valeurs-remarquables"]
+    },
+    {
+      "id": "2C-CH08-023",
+      "lecon": "Applications : distances, angles, relation métrique",
+      "type": "formule",
+      "recto": "Qu'affirme la relation métrique dans un triangle $ABC$ où $a = BC$, $b = AC$ et $c = AB$ ?",
+      "verso": "Elle affirme que $a^{2} = b^{2} + c^{2} - 2bc\\cdot\\cos\\hat{A}$, et ceci dans tout triangle. Le côté $a$ est celui qui est opposé à l'angle $\\hat{A}$, tandis que $b$ et $c$ sont les deux côtés qui encadrent cet angle.",
+      "difficulte": 2,
+      "tags": ["relation-metrique", "triangle"]
+    },
+    {
+      "id": "2C-CH08-024",
+      "lecon": "Applications : distances, angles, relation métrique",
+      "type": "formule",
+      "recto": "Que devient la relation métrique lorsque l'angle $\\hat{A}$ est droit ?",
+      "verso": "Son cosinus est nul, le terme correctif disparaît et il reste $a^{2} = b^{2} + c^{2}$ : on retrouve le théorème de Pythagore. La relation métrique est donc Pythagore étendu à tous les triangles.",
+      "difficulte": 2,
+      "tags": ["relation-metrique", "pythagore"]
+    },
+    {
+      "id": "2C-CH08-025",
+      "lecon": "Applications : distances, angles, relation métrique",
+      "type": "formule",
+      "recto": "Comment calcule-t-on le cosinus d'un angle d'un triangle dont on connaît les trois côtés ?",
+      "verso": "Par $\\cos\\hat{A} = \\dfrac{b^{2} + c^{2} - a^{2}}{2bc}$ : au numérateur, la somme des carrés des deux côtés qui touchent l'angle, moins le carré du côté opposé ; au dénominateur, le double de leur produit.",
+      "difficulte": 2,
+      "tags": ["relation-metrique", "angle"]
+    },
+    {
+      "id": "2C-CH08-026",
+      "lecon": "Applications : distances, angles, relation métrique",
+      "type": "formule",
+      "recto": "Quelle est l'erreur la plus fréquente dans l'emploi de la relation métrique ?",
+      "verso": "Oublier le terme $-2bc\\cdot\\cos\\hat{A}$ et écrire Pythagore dans un triangle qui n'est pas rectangle. Il faut aussi surveiller le signe : si l'angle est obtus, son cosinus est négatif et ce terme devient une addition.",
+      "difficulte": 3,
+      "tags": ["relation-metrique", "piege"]
+    },
+    {
+      "id": "2C-CH08-027",
+      "lecon": "Applications : distances, angles, relation métrique",
+      "type": "formule",
+      "recto": "Quelles longueurs doivent multiplier le cosinus dans la relation métrique ?",
+      "verso": "Celles des deux côtés qui partent du sommet de l'angle utilisé ; le côté qui figure seul, au premier membre, est celui qui lui est opposé. Avec l'angle $\\hat{B}$, on écrit donc $b^{2} = a^{2} + c^{2} - 2ac\\cdot\\cos\\hat{B}$.",
+      "difficulte": 3,
+      "tags": ["relation-metrique", "piege"]
+    },
+    {
+      "id": "2C-CH08-028",
+      "lecon": "Applications : distances, angles, relation métrique",
+      "type": "formule",
+      "recto": "Comment le produit scalaire exprime-t-il le travail d'une force en physique ?",
+      "verso": "Une force d'intensité $F$ qui déplace un objet sur une distance $d$, en faisant l'angle $\\theta$ avec le déplacement, produit le travail $W = F \\times d \\times \\cos\\theta$, en joules. Il est maximal pour $\\theta = 0$, nul si la force est perpendiculaire, négatif si elle s'oppose au déplacement.",
+      "difficulte": 2,
+      "tags": ["travail", "physique", "produit-scalaire"]
+    },
+    {
+      "id": "2C-CH08-029",
+      "lecon": "Applications : distances, angles, relation métrique",
+      "type": "formule",
+      "recto": "Comment contrôle-t-on la longueur d'un côté obtenue par la relation métrique ?",
+      "verso": "Par l'inégalité triangulaire : le côté $a$ doit être compris entre $\\left|b - c\\right|$ et $b + c$. On compare aussi à Pythagore, un angle aigu donnant un côté plus court et un angle obtus un côté plus long.",
+      "difficulte": 2,
+      "tags": ["relation-metrique", "controle"]
+    },
+    {
+      "id": "2C-CH08-030",
+      "lecon": "Ensembles de points",
+      "type": "formule",
+      "recto": "Quel est l'ensemble des points $M$ tels que $\\overrightarrow{AB}\\cdot\\overrightarrow{AM} = k$ ?",
+      "verso": "C'est la droite perpendiculaire à $(AB)$ passant par le point $H$ de $(AB)$ tel que $\\overrightarrow{AB}\\cdot\\overrightarrow{AH} = k$. Fixer ce produit scalaire revient en effet à fixer le projeté orthogonal de $M$ sur $(AB)$.",
+      "difficulte": 2,
+      "tags": ["ensemble-de-points", "droite"]
+    },
+    {
+      "id": "2C-CH08-031",
+      "lecon": "Ensembles de points",
+      "type": "formule",
+      "recto": "Quel est l'ensemble des points $M$ tels que $MA^{2} - MB^{2} = k$ ?",
+      "verso": "C'est une droite perpendiculaire à $(AB)$. Pour $k = 0$, la condition devient $MA = MB$ et cette droite est la médiatrice de $[AB]$.",
+      "difficulte": 2,
+      "tags": ["ensemble-de-points", "droite", "mediatrice"]
+    },
+    {
+      "id": "2C-CH08-032",
+      "lecon": "Ensembles de points",
+      "type": "formule",
+      "recto": "Quel est l'ensemble des points $M$ tels que $MA^{2} = k$ ?",
+      "verso": "Pour $k > 0$, c'est le cercle de centre $A$ et de rayon $\\sqrt{k}$. Pour $k = 0$, il se réduit au point $A$, et pour $k < 0$ il est vide.",
+      "difficulte": 2,
+      "tags": ["ensemble-de-points", "cercle"]
+    },
+    {
+      "id": "2C-CH08-033",
+      "lecon": "Ensembles de points",
+      "type": "formule",
+      "recto": "Quel est l'ensemble des points $M$ tels que $MA^{2} + MB^{2} = k$ ?",
+      "verso": "C'est un cercle centré au milieu $I$ de $[AB]$, que l'on obtient en appliquant le théorème de la médiane. Selon la valeur de $k$, il peut se réduire au point $I$ ou être vide.",
+      "difficulte": 2,
+      "tags": ["ensemble-de-points", "cercle", "milieu"]
+    },
+    {
+      "id": "2C-CH08-034",
+      "lecon": "Ensembles de points",
+      "type": "formule",
+      "recto": "Quel est l'ensemble des points $M$ tels que $\\overrightarrow{MA}\\cdot\\overrightarrow{MB} = 0$ ?",
+      "verso": "C'est le cercle de diamètre $[AB]$. La condition dit en effet que $\\overrightarrow{MA}$ et $\\overrightarrow{MB}$ sont orthogonaux, donc que l'angle $\\widehat{AMB}$ est droit.",
+      "difficulte": 2,
+      "tags": ["ensemble-de-points", "cercle", "diametre"]
+    },
+    {
+      "id": "2C-CH08-035",
+      "lecon": "Ensembles de points",
+      "type": "formule",
+      "recto": "Qu'affirme le théorème de la médiane, pour $I$ milieu de $[AB]$ et $M$ quelconque ?",
+      "verso": "Que $MA^{2} + MB^{2} = 2\\,MI^{2} + \\dfrac{AB^{2}}{2}$ et que $MA^{2} - MB^{2} = 2\\,\\overrightarrow{IM}\\cdot\\overrightarrow{AB}$. La première égalité ramène deux distances à une seule, la seconde ramène une différence de carrés à un produit scalaire.",
+      "difficulte": 3,
+      "tags": ["theoreme-de-la-mediane", "milieu"]
+    },
+    {
+      "id": "2C-CH08-036",
+      "lecon": "Ensembles de points",
+      "type": "formule",
+      "recto": "Quelle équation caractérise, dans un repère orthonormé, le cercle de diamètre $[AB]$ ?",
+      "verso": "$\\left(x - x_A\\right)\\left(x - x_B\\right) + \\left(y - y_A\\right)\\left(y - y_B\\right) = 0$. C'est la traduction en coordonnées de la condition $\\overrightarrow{MA}\\cdot\\overrightarrow{MB} = 0$.",
+      "difficulte": 2,
+      "tags": ["cercle", "equation", "diametre"]
+    },
+    {
+      "id": "2C-CH08-037",
+      "lecon": "Ensembles de points",
+      "type": "formule",
+      "recto": "Pourquoi une condition du type $MI^{2} = c$ ne donne-t-elle pas toujours un cercle ?",
+      "verso": "Il faut discuter le signe de $c$ : pour $c > 0$, c'est le cercle de centre $I$ et de rayon $\\sqrt{c}$ ; pour $c = 0$, l'ensemble se réduit au seul point $I$ ; pour $c < 0$, il est vide, car un carré de longueur n'est jamais négatif.",
+      "difficulte": 3,
+      "tags": ["ensemble-de-points", "piege", "discussion"]
+    },
+    {
+      "id": "2C-CH08-038",
+      "lecon": "Ensembles de points",
+      "type": "definition",
+      "recto": "Comment reconnaît-on, avant tout calcul, si un ensemble de points sera une droite ou un cercle ?",
+      "verso": "On regarde le degré en $M$ de la condition : un produit scalaire où $M$ n'apparaît qu'une fois, ou une différence $MA^{2} - MB^{2}$, annonce une droite ; une somme de carrés ou un carré seul annonce un cercle.",
+      "difficulte": 2,
+      "tags": ["ensemble-de-points", "droite", "cercle"]
+    }
+  ]
+}

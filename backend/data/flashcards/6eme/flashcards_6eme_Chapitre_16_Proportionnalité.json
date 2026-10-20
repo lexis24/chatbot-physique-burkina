@@ -1,0 +1,296 @@
+{
+  "niveau": "6ème",
+  "chapitre": "Chapitre 16 : Proportionnalité",
+  "source": "maths/6eme/Chapitre_16_Proportionnalite",
+  "nombre_cartes": 32,
+  "cartes": [
+    {
+      "id": "6E-CH16-001",
+      "lecon": "Reconnaître une situation de proportionnalité",
+      "type": "definition",
+      "recto": "Quand dit-on que deux grandeurs sont proportionnelles ?",
+      "verso": "Quand on passe de l'une à l'autre en multipliant toujours par le même nombre. Ce nombre est appelé le coefficient de proportionnalité.",
+      "difficulte": 1,
+      "tags": ["proportionnalite", "definition", "grandeurs"]
+    },
+    {
+      "id": "6E-CH16-002",
+      "lecon": "Reconnaître une situation de proportionnalité",
+      "type": "definition",
+      "recto": "Qu'est-ce que le coefficient de proportionnalité ?",
+      "verso": "C'est le nombre unique par lequel on multiplie une grandeur pour obtenir l'autre. On l'écrit avec son unité, par exemple $500$ FCFA par sac.",
+      "difficulte": 1,
+      "tags": ["proportionnalite", "coefficient"]
+    },
+    {
+      "id": "6E-CH16-003",
+      "lecon": "Reconnaître une situation de proportionnalité",
+      "type": "formule",
+      "recto": "En quoi consiste le test des rapports pour savoir si un tableau est proportionnel ?",
+      "verso": "On divise, colonne par colonne, une grandeur par l'autre, toujours dans le même sens. Si tous les résultats sont égaux, il y a proportionnalité, et ce résultat commun est le coefficient.",
+      "difficulte": 2,
+      "tags": ["proportionnalite", "test-des-rapports"]
+    },
+    {
+      "id": "6E-CH16-004",
+      "lecon": "Reconnaître une situation de proportionnalité",
+      "type": "formule",
+      "recto": "Combien de rapports différents suffisent à prouver qu'un tableau n'est pas proportionnel ?",
+      "verso": "Deux. Une seule colonne dont le rapport diffère des autres fait tout tomber : $2\\,000 \\div 1 = 2\\,000$ mais $3\\,500 \\div 2 = 1\\,750$, on peut s'arrêter là.",
+      "difficulte": 2,
+      "tags": ["test-des-rapports", "contre-exemple"]
+    },
+    {
+      "id": "6E-CH16-005",
+      "lecon": "Reconnaître une situation de proportionnalité",
+      "type": "formule",
+      "recto": "A quoi reconnaît-on une situation de proportionnalité sur un graphique ?",
+      "verso": "Les points sont alignés, et l'alignement passe par l'origine $O$ du repère.",
+      "difficulte": 2,
+      "tags": ["proportionnalite", "graphique"]
+    },
+    {
+      "id": "6E-CH16-006",
+      "lecon": "Reconnaître une situation de proportionnalité",
+      "type": "formule",
+      "recto": "Pourquoi des points alignés ne suffisent-ils pas à conclure à la proportionnalité ?",
+      "verso": "Parce que la droite peut démarrer plus haut que l'origine. Chez un tailleur qui compte $500$ FCFA de fil une seule fois, les points sont alignés sans que le prix soit proportionnel.",
+      "difficulte": 3,
+      "tags": ["graphique", "piege", "origine"]
+    },
+    {
+      "id": "6E-CH16-007",
+      "lecon": "Reconnaître une situation de proportionnalité",
+      "type": "formule",
+      "recto": "Pourquoi la droite d'une situation de proportionnalité passe-t-elle par l'origine ?",
+      "verso": "Parce qu'à une quantité nulle correspond toujours une valeur nulle : zéro sac de mil coûte zéro franc. Le couple $\\left(0\\,;\\,0\\right)$ fait donc partie de la relation.",
+      "difficulte": 2,
+      "tags": ["graphique", "origine"]
+    },
+    {
+      "id": "6E-CH16-008",
+      "lecon": "Reconnaître une situation de proportionnalité",
+      "type": "formule",
+      "recto": "Dans une situation de proportionnalité, que devient une grandeur quand l'autre est multipliée par $3$ ?",
+      "verso": "Elle est multipliée par $3$ elle aussi. Ce qui arrive à l'une arrive à l'autre : le double donne le double, le triple donne le triple.",
+      "difficulte": 1,
+      "tags": ["proportionnalite", "propriete"]
+    },
+    {
+      "id": "6E-CH16-009",
+      "lecon": "Reconnaître une situation de proportionnalité",
+      "type": "definition",
+      "recto": "Pourquoi l'âge que l'on aura dans $5$ ans n'est-il pas proportionnel à l'âge actuel ?",
+      "verso": "Parce que les rapports ne sont pas égaux : $15 \\div 10 = 1{,}5$ alors que $25 \\div 20 = 1{,}25$. Ajouter le même nombre n'est pas multiplier par le même nombre.",
+      "difficulte": 3,
+      "tags": ["piege", "test-des-rapports"]
+    },
+    {
+      "id": "6E-CH16-010",
+      "lecon": "Calculer une quatrième proportionnelle",
+      "type": "definition",
+      "recto": "Dans un tableau de proportionnalité, comment appelle-t-on le nombre manquant que l'on cherche ?",
+      "verso": "La quatrième proportionnelle : on connaît trois nombres et l'on en cherche un quatrième. On parlait autrefois de règle de trois.",
+      "difficulte": 1,
+      "tags": ["quatrieme-proportionnelle", "vocabulaire"]
+    },
+    {
+      "id": "6E-CH16-011",
+      "lecon": "Calculer une quatrième proportionnelle",
+      "type": "formule",
+      "recto": "En quoi consiste le passage à l'unité ?",
+      "verso": "On calcule d'abord la valeur pour $1$, puis on multiplie par la quantité cherchée : $600 \\div 8 = 75$ FCFA par cahier, puis $75 \\times 12 = 900$ FCFA.",
+      "difficulte": 1,
+      "tags": ["quatrieme-proportionnelle", "passage-a-l-unite"]
+    },
+    {
+      "id": "6E-CH16-012",
+      "lecon": "Calculer une quatrième proportionnelle",
+      "type": "formule",
+      "recto": "Quelles sont les trois méthodes qui donnent une quatrième proportionnelle ?",
+      "verso": "Le passage à l'unité, la multiplication par le coefficient de proportionnalité et le produit en croix. Les trois donnent le même résultat.",
+      "difficulte": 1,
+      "tags": ["quatrieme-proportionnelle", "methodes"]
+    },
+    {
+      "id": "6E-CH16-013",
+      "lecon": "Calculer une quatrième proportionnelle",
+      "type": "formule",
+      "recto": "Dans un tableau où $8$ correspond à $600$, quel calcul donne par produit en croix la valeur associée à $12$ ?",
+      "verso": "$\\left(12 \\times 600\\right) \\div 8 = 900$ : on multiplie les deux nombres placés en diagonale, puis on divise par le troisième.",
+      "difficulte": 2,
+      "tags": ["produit-en-croix"]
+    },
+    {
+      "id": "6E-CH16-014",
+      "lecon": "Calculer une quatrième proportionnelle",
+      "type": "formule",
+      "recto": "Pourquoi « quatre cahiers de plus » ne signifie-t-il pas « quatre francs de plus » ?",
+      "verso": "Parce qu'en proportionnalité on multiplie, on n'additionne pas. Si un cahier coûte $75$ FCFA, quatre cahiers de plus coûtent $4 \\times 75 = 300$ FCFA de plus.",
+      "difficulte": 3,
+      "tags": ["piege", "addition"]
+    },
+    {
+      "id": "6E-CH16-015",
+      "lecon": "Calculer une quatrième proportionnelle",
+      "type": "formule",
+      "recto": "Pourquoi le produit en croix donne-t-il le même résultat que le passage à l'unité ?",
+      "verso": "Parce que c'est le même calcul écrit dans un autre ordre : $600 \\div 8 \\times 12$ et $\\left(12 \\times 600\\right) \\div 8$ donnent la même chose, car on peut multiplier avant de diviser.",
+      "difficulte": 3,
+      "tags": ["produit-en-croix", "passage-a-l-unite"]
+    },
+    {
+      "id": "6E-CH16-016",
+      "lecon": "Calculer une quatrième proportionnelle",
+      "type": "formule",
+      "recto": "Quel contrôle rapide permet de repérer une quatrième proportionnelle fausse ?",
+      "verso": "On regarde si le résultat va dans le bon sens : plus de cahiers, donc plus cher. Un prix plus petit pour une quantité plus grande signale une erreur.",
+      "difficulte": 2,
+      "tags": ["quatrieme-proportionnelle", "verification"]
+    },
+    {
+      "id": "6E-CH16-017",
+      "lecon": "Proportionnalité et pourcentages",
+      "type": "formule",
+      "recto": "Comment calcule-t-on $p\\ \\%$ d'une quantité dans le cas général ?",
+      "verso": "On multiplie la quantité par $p$, puis on divise par $100$. Pour $15\\ \\%$ de $2\\,000$ FCFA : $2\\,000 \\div 100 \\times 15 = 300$ FCFA.",
+      "difficulte": 1,
+      "tags": ["pourcentage", "calcul"]
+    },
+    {
+      "id": "6E-CH16-018",
+      "lecon": "Proportionnalité et pourcentages",
+      "type": "formule",
+      "recto": "A quelles fractions simples correspondent $25\\ \\%$, $50\\ \\%$, $10\\ \\%$ et $20\\ \\%$ ?",
+      "verso": "$25\\ \\% = \\dfrac{1}{4}$, $50\\ \\% = \\dfrac{1}{2}$, $10\\ \\% = \\dfrac{1}{10}$ et $20\\ \\% = \\dfrac{1}{5}$. Passer par la fraction évite bien des calculs.",
+      "difficulte": 1,
+      "tags": ["pourcentage", "fractions-usuelles"]
+    },
+    {
+      "id": "6E-CH16-019",
+      "lecon": "Proportionnalité et pourcentages",
+      "type": "formule",
+      "recto": "Comment obtient-on le prix à payer après une réduction de $p\\ \\%$ ?",
+      "verso": "En deux temps : on calcule $p\\ \\%$ du prix, puis on soustrait ce montant du prix de départ. Une remise de $25\\ \\%$ sur $2\\,000$ FCFA donne $500$ FCFA de remise, donc $1\\,500$ FCFA à payer.",
+      "difficulte": 2,
+      "tags": ["pourcentage", "reduction"]
+    },
+    {
+      "id": "6E-CH16-020",
+      "lecon": "Proportionnalité et pourcentages",
+      "type": "formule",
+      "recto": "Comment obtient-on le nouveau prix après une augmentation de $p\\ \\%$ ?",
+      "verso": "En deux temps : on calcule $p\\ \\%$ du prix, puis on ajoute ce montant au prix de départ. Sur $2\\,000$ FCFA, une hausse de $15\\ \\%$ donne $300$ FCFA, donc $2\\,300$ FCFA.",
+      "difficulte": 2,
+      "tags": ["pourcentage", "augmentation"]
+    },
+    {
+      "id": "6E-CH16-021",
+      "lecon": "Proportionnalité et pourcentages",
+      "type": "formule",
+      "recto": "Pourquoi une remise de $25\\ \\%$ sur un article à $2\\,000$ FCFA ne donne-t-elle pas $500$ FCFA à payer ?",
+      "verso": "Parce que $500$ FCFA est le montant de la remise, et non le prix à payer. Il faut encore retirer ce montant du prix affiché : $2\\,000 - 500 = 1\\,500$ FCFA.",
+      "difficulte": 3,
+      "tags": ["pourcentage", "reduction", "piege"]
+    },
+    {
+      "id": "6E-CH16-022",
+      "lecon": "Proportionnalité et pourcentages",
+      "type": "definition",
+      "recto": "Pourquoi un pourcentage ne veut-il rien dire tant qu'on ne précise pas de quoi il est la part ?",
+      "verso": "Parce qu'il exprime une part d'une quantité précise : $25\\ \\%$ de $2\\,000$ FCFA font $500$ FCFA, mais $25\\ \\%$ de $8\\,000$ FCFA font $2\\,000$ FCFA. Le pourcentage est le même, le montant non.",
+      "difficulte": 2,
+      "tags": ["pourcentage", "sens"]
+    },
+    {
+      "id": "6E-CH16-023",
+      "lecon": "Proportionnalité et pourcentages",
+      "type": "formule",
+      "recto": "Pourquoi prendre $25\\ \\%$ d'une quantité revient-il à la diviser par $4$ ?",
+      "verso": "Parce que « pour cent » veut dire « par centaine », et que $25$ est le quart de $100$ : sur chaque centaine on prend le quart, donc on prend le quart de la quantité entière.",
+      "difficulte": 2,
+      "tags": ["pourcentage", "fractions-usuelles"]
+    },
+    {
+      "id": "6E-CH16-024",
+      "lecon": "Proportionnalité et pourcentages",
+      "type": "definition",
+      "recto": "En quoi un pourcentage se comporte-t-il comme un coefficient de proportionnalité ?",
+      "verso": "Sur chaque centaine de francs, on prélève toujours la même part, quelle que soit la somme. C'est pourquoi une remise de $25\\ \\%$ rapporte davantage sur un article cher tout en restant la même remise.",
+      "difficulte": 2,
+      "tags": ["pourcentage", "proportionnalite"]
+    },
+    {
+      "id": "6E-CH16-025",
+      "lecon": "Echelles et plans",
+      "type": "definition",
+      "recto": "Qu'indique l'échelle d'une carte ou d'un plan ?",
+      "verso": "Elle indique combien de distance réelle représente une distance mesurée sur le plan, par exemple « $1$ cm pour $50$ km ».",
+      "difficulte": 1,
+      "tags": ["echelle", "definition"]
+    },
+    {
+      "id": "6E-CH16-026",
+      "lecon": "Echelles et plans",
+      "type": "formule",
+      "recto": "Comment calcule-t-on une distance réelle à partir d'une mesure faite sur le plan ?",
+      "verso": "Distance réelle $=$ distance sur le plan $\\times$ valeur de l'échelle. A l'échelle « $1$ cm pour $50$ km », $3$ cm représentent $3 \\times 50 = 150$ km.",
+      "difficulte": 1,
+      "tags": ["echelle", "distance-reelle"]
+    },
+    {
+      "id": "6E-CH16-027",
+      "lecon": "Echelles et plans",
+      "type": "formule",
+      "recto": "Comment calcule-t-on la longueur à reporter sur le plan quand la distance réelle est connue ?",
+      "verso": "Distance sur le plan $=$ distance réelle $\\div$ valeur de l'échelle. A l'échelle « $1$ cm pour $20$ km », une distance de $100$ km donne $100 \\div 20 = 5$ cm.",
+      "difficulte": 2,
+      "tags": ["echelle", "distance-plan"]
+    },
+    {
+      "id": "6E-CH16-028",
+      "lecon": "Echelles et plans",
+      "type": "definition",
+      "recto": "Pourquoi une échelle est-elle une situation de proportionnalité ?",
+      "verso": "Parce que toutes les distances du terrain y sont réduites par le même nombre : la distance réelle est proportionnelle à la distance mesurée, et l'échelle en est le coefficient.",
+      "difficulte": 2,
+      "tags": ["echelle", "proportionnalite"]
+    },
+    {
+      "id": "6E-CH16-029",
+      "lecon": "Echelles et plans",
+      "type": "formule",
+      "recto": "Pourquoi $4$ cm mesurés sur une carte ne représentent-ils pas $4$ km sur le terrain ?",
+      "verso": "Parce qu'il faut multiplier la mesure par la valeur de l'échelle. A « $1$ cm pour $50$ km », $4$ cm représentent $4 \\times 50 = 200$ km.",
+      "difficulte": 3,
+      "tags": ["echelle", "piege", "unites"]
+    },
+    {
+      "id": "6E-CH16-030",
+      "lecon": "Echelles et plans",
+      "type": "formule",
+      "recto": "Quelles unités emploie-t-on pour mesurer le plan et pour exprimer la réalité ?",
+      "verso": "Le plan se mesure en centimètres, la réalité s'exprime en mètres ou en kilomètres. On écrit toujours l'unité à côté du résultat, sinon on confond le papier et le terrain.",
+      "difficulte": 2,
+      "tags": ["echelle", "unites"]
+    },
+    {
+      "id": "6E-CH16-031",
+      "lecon": "Echelles et plans",
+      "type": "formule",
+      "recto": "Comment choisit-on l'échelle d'un dessin représentant un objet réel ?",
+      "verso": "On prend celle qui fait tenir le dessin sur la feuille : plus l'objet est grand, plus la valeur de l'échelle doit être grande.",
+      "difficulte": 2,
+      "tags": ["echelle", "choix"]
+    },
+    {
+      "id": "6E-CH16-032",
+      "lecon": "Echelles et plans",
+      "type": "formule",
+      "recto": "Pourquoi une carte conserve-t-elle les formes du terrain ?",
+      "verso": "Parce que toutes les distances y sont réduites par le même nombre. Les rapports entre les longueurs ne changent pas : un champ deux fois plus long qu'un autre le reste sur la carte.",
+      "difficulte": 3,
+      "tags": ["echelle", "formes"]
+    }
+  ]
+}

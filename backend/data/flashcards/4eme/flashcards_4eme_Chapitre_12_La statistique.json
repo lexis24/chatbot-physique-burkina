@@ -1,0 +1,332 @@
+{
+  "niveau": "4ème",
+  "chapitre": "Chapitre 12 : La statistique",
+  "source": "maths/4eme/Chapitre_12_La_statistique",
+  "nombre_cartes": 36,
+  "cartes": [
+    {
+      "id": "4E-CH12-001",
+      "lecon": "Le vocabulaire de la statistique",
+      "type": "definition",
+      "recto": "Dans une étude statistique, qu'appelle-t-on la population ?",
+      "verso": "C'est l'ensemble des individus que l'on étudie, chaque élément de cet ensemble étant un individu. Une population n'est pas forcément faite de personnes : ce peut être un ensemble de champs, de sacs ou de villages.",
+      "difficulte": 1,
+      "tags": ["vocabulaire", "population"]
+    },
+    {
+      "id": "4E-CH12-002",
+      "lecon": "Le vocabulaire de la statistique",
+      "type": "definition",
+      "recto": "Dans une étude statistique, qu'appelle-t-on le caractère étudié ?",
+      "verso": "C'est ce que l'on observe ou mesure sur chaque individu : l'âge, le nombre d'enfants, le prix, la couleur. Ses réponses possibles sont ses valeurs, notées $x_1$, $x_2$, et plus simplement $x_i$.",
+      "difficulte": 1,
+      "tags": ["vocabulaire", "caractere", "valeur"]
+    },
+    {
+      "id": "4E-CH12-003",
+      "lecon": "Le vocabulaire de la statistique",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on l'effectif d'une valeur d'un caractère ?",
+      "verso": "C'est le nombre d'individus qui présentent cette valeur. On le note $n_i$.",
+      "difficulte": 1,
+      "tags": ["vocabulaire", "effectif"]
+    },
+    {
+      "id": "4E-CH12-004",
+      "lecon": "Le vocabulaire de la statistique",
+      "type": "formule",
+      "recto": "Comment obtient-on l'effectif total $N$ d'une série statistique ?",
+      "verso": "On additionne les effectifs de toutes les valeurs : $N = n_1 + n_2 + \\dots + n_p$. C'est aussi le nombre total d'individus, et la colonne « Total » du tableau doit donner ce nombre.",
+      "difficulte": 1,
+      "tags": ["effectif-total", "tableau"]
+    },
+    {
+      "id": "4E-CH12-005",
+      "lecon": "Le vocabulaire de la statistique",
+      "type": "definition",
+      "recto": "Quelle différence y a-t-il entre un caractère quantitatif et un caractère qualitatif ?",
+      "verso": "Un caractère est quantitatif quand ses valeurs sont des nombres, comme un âge ou un prix. Il est qualitatif quand elles n'en sont pas, comme une couleur, une culture ou un moyen de transport.",
+      "difficulte": 2,
+      "tags": ["caractere", "quantitatif", "qualitatif"]
+    },
+    {
+      "id": "4E-CH12-006",
+      "lecon": "Le vocabulaire de la statistique",
+      "type": "definition",
+      "recto": "Pourquoi ne calcule-t-on jamais de moyenne sur un caractère qualitatif ?",
+      "verso": "Parce que ses valeurs ne sont pas des nombres : « la moyenne du vélo et du taxi-moto » n'aurait aucun sens. On peut en revanche toujours compter des effectifs et calculer des fréquences, quel que soit le caractère.",
+      "difficulte": 2,
+      "tags": ["qualitatif", "moyenne", "condition"]
+    },
+    {
+      "id": "4E-CH12-007",
+      "lecon": "Le vocabulaire de la statistique",
+      "type": "definition",
+      "recto": "Dans la phrase « dix élèves ont treize ans », lequel des deux nombres est la valeur du caractère ?",
+      "verso": "C'est $13$, l'âge mesuré sur chaque élève. Le nombre $10$ est l'effectif de cette valeur, c'est-à-dire le nombre d'élèves concernés : les deux nombres ne jouent pas du tout le même rôle.",
+      "difficulte": 3,
+      "tags": ["valeur", "effectif", "piege"]
+    },
+    {
+      "id": "4E-CH12-008",
+      "lecon": "Fréquence et moyenne",
+      "type": "formule",
+      "recto": "Comment calcule-t-on la fréquence $f_i$ d'une valeur d'une série statistique ?",
+      "verso": "On divise son effectif par l'effectif total : $f_i = \\dfrac{n_i}{N}$. Le résultat est compris entre $0$ et $1$ ; on l'exprime souvent en pourcentage en le multipliant par $100$.",
+      "difficulte": 1,
+      "tags": ["frequence", "formule"]
+    },
+    {
+      "id": "4E-CH12-009",
+      "lecon": "Fréquence et moyenne",
+      "type": "formule",
+      "recto": "Que vaut la somme de toutes les fréquences d'une série statistique ?",
+      "verso": "Elle vaut toujours $1$, c'est-à-dire $100\\ \\%$. C'est le contrôle à faire à la fin de chaque tableau de fréquences.",
+      "difficulte": 1,
+      "tags": ["frequence", "controle"]
+    },
+    {
+      "id": "4E-CH12-010",
+      "lecon": "Fréquence et moyenne",
+      "type": "formule",
+      "recto": "Pourquoi la somme des fréquences d'une série vaut-elle toujours $1$ ?",
+      "verso": "Parce que chaque individu est compté dans un effectif et un seul, donc $n_1 + \\dots + n_p = N$. Or toutes les fréquences ont le même dénominateur $N$, donc leur somme vaut $\\dfrac{N}{N} = 1$.",
+      "difficulte": 2,
+      "tags": ["frequence", "demonstration"]
+    },
+    {
+      "id": "4E-CH12-011",
+      "lecon": "Fréquence et moyenne",
+      "type": "definition",
+      "recto": "Pourquoi une fréquence permet-elle de comparer deux groupes qui n'ont pas le même effectif total ?",
+      "verso": "Parce qu'elle n'a pas d'unité. La division par l'effectif total transforme un comptage en une part, ce qui ramène les deux groupes à une même échelle : $\\dfrac{10}{25} = 40\\ \\%$ se compare bien à $\\dfrac{14}{40} = 35\\ \\%$.",
+      "difficulte": 2,
+      "tags": ["frequence", "comparaison"]
+    },
+    {
+      "id": "4E-CH12-012",
+      "lecon": "Fréquence et moyenne",
+      "type": "formule",
+      "recto": "Comment calcule-t-on la moyenne $\\overline{x}$ d'une série donnée par un tableau d'effectifs ?",
+      "verso": "On multiplie chaque valeur par son effectif, on additionne tous ces produits, puis on divise par l'effectif total : $\\overline{x} = \\dfrac{n_1 x_1 + n_2 x_2 + \\dots + n_p x_p}{N}$.",
+      "difficulte": 2,
+      "tags": ["moyenne", "formule"]
+    },
+    {
+      "id": "4E-CH12-013",
+      "lecon": "Fréquence et moyenne",
+      "type": "definition",
+      "recto": "Que veut dire que la moyenne est le point d'équilibre d'une série ?",
+      "verso": "Cela veut dire que ce qui dépasse au-dessus de la moyenne compense exactement ce qui manque en dessous. En posant sur une règle, à chaque valeur, un poids égal à son effectif, la règle tient en équilibre à la moyenne.",
+      "difficulte": 2,
+      "tags": ["moyenne", "equilibre"]
+    },
+    {
+      "id": "4E-CH12-014",
+      "lecon": "Fréquence et moyenne",
+      "type": "formule",
+      "recto": "Quel contrôle simple permet de repérer une moyenne visiblement fausse ?",
+      "verso": "La moyenne doit toujours tomber entre la plus petite et la plus grande valeur de la série. Un résultat en dehors de cet encadrement signale une erreur de calcul.",
+      "difficulte": 2,
+      "tags": ["moyenne", "controle"]
+    },
+    {
+      "id": "4E-CH12-015",
+      "lecon": "Fréquence et moyenne",
+      "type": "definition",
+      "recto": "Pourquoi une moyenne peut-elle décrire très mal le groupe dont elle est tirée ?",
+      "verso": "Parce qu'elle est sensible aux valeurs extrêmes. Cinq salaires de $40$, $45$, $50$, $55$ et $60$ milliers de FCFA donnent une moyenne de $50$ ; un sixième salaire de $250$ la porte à environ $83$, que cinq employés sur six n'atteignent pas.",
+      "difficulte": 3,
+      "tags": ["moyenne", "valeur-extreme", "piege"]
+    },
+    {
+      "id": "4E-CH12-016",
+      "lecon": "Fréquence et moyenne",
+      "type": "definition",
+      "recto": "Quelle différence y a-t-il entre l'effectif d'une valeur et sa fréquence ?",
+      "verso": "L'effectif est un nombre d'individus, par exemple $10$ élèves : c'est un entier qui peut dépasser $1$. La fréquence est une proportion, par exemple $0{,}4$ ou $40\\ \\%$, toujours comprise entre $0$ et $1$.",
+      "difficulte": 2,
+      "tags": ["effectif", "frequence", "distinction"]
+    },
+    {
+      "id": "4E-CH12-017",
+      "lecon": "Le diagramme en bâtons",
+      "type": "definition",
+      "recto": "Quel type de données un diagramme en bâtons représente-t-il ?",
+      "verso": "Les effectifs, ou les fréquences, d'un caractère dont les valeurs sont séparées : nombre d'enfants, âge en années entières, note, ou encore un caractère qualitatif comme une céréale.",
+      "difficulte": 1,
+      "tags": ["diagramme-en-batons", "valeurs-separees"]
+    },
+    {
+      "id": "4E-CH12-018",
+      "lecon": "Le diagramme en bâtons",
+      "type": "formule",
+      "recto": "Comment gradue-t-on les deux axes d'un diagramme en bâtons ?",
+      "verso": "L'axe horizontal porte les valeurs du caractère, placées à intervalles réguliers. L'axe vertical porte les effectifs, avec une échelle régulière qui commence à zéro.",
+      "difficulte": 1,
+      "tags": ["diagramme-en-batons", "axes", "echelle"]
+    },
+    {
+      "id": "4E-CH12-019",
+      "lecon": "Le diagramme en bâtons",
+      "type": "formule",
+      "recto": "A quoi la hauteur d'un bâton doit-elle être proportionnelle ?",
+      "verso": "A l'effectif de la valeur qu'il représente. Si $4$ sacs sont représentés par $1$ cm, alors $20$ sacs le sont par $5$ cm, et non par « à peu près le double » de $12$ sacs.",
+      "difficulte": 2,
+      "tags": ["diagramme-en-batons", "proportionnalite"]
+    },
+    {
+      "id": "4E-CH12-020",
+      "lecon": "Le diagramme en bâtons",
+      "type": "definition",
+      "recto": "Pourquoi les bâtons d'un diagramme en bâtons ne se touchent-ils pas ?",
+      "verso": "Parce que chaque bâton représente une valeur isolée, un point précis de l'axe, et non un intervalle. C'est ce qui le distingue de l'histogramme, dont les rectangles sont accolés.",
+      "difficulte": 2,
+      "tags": ["diagramme-en-batons", "histogramme", "distinction"]
+    },
+    {
+      "id": "4E-CH12-021",
+      "lecon": "Le diagramme en bâtons",
+      "type": "definition",
+      "recto": "Dans une série statistique, qu'appelle-t-on le mode ?",
+      "verso": "C'est la valeur de plus grand effectif. Sur un diagramme en bâtons, c'est celle dont le bâton s'élève le plus.",
+      "difficulte": 1,
+      "tags": ["mode", "effectif"]
+    },
+    {
+      "id": "4E-CH12-022",
+      "lecon": "Le diagramme en bâtons",
+      "type": "formule",
+      "recto": "Quelle erreur de tracé rend trompeuse la lecture d'un diagramme en bâtons ?",
+      "verso": "Couper le bas de l'axe vertical. Si l'axe ne commence pas à zéro, les écarts entre les bâtons paraissent bien plus grands qu'ils ne le sont réellement.",
+      "difficulte": 3,
+      "tags": ["diagramme-en-batons", "echelle", "piege"]
+    },
+    {
+      "id": "4E-CH12-023",
+      "lecon": "L'histogramme",
+      "type": "definition",
+      "recto": "Dans quel cas regroupe-t-on les valeurs d'un caractère en classes ?",
+      "verso": "Quand elles sont trop nombreuses ou trop dispersées pour être traitées une à une. On les range alors dans des intervalles qui se suivent, comme $\\left[8\\,;\\,12\\right[$.",
+      "difficulte": 1,
+      "tags": ["classe", "regroupement"]
+    },
+    {
+      "id": "4E-CH12-024",
+      "lecon": "L'histogramme",
+      "type": "definition",
+      "recto": "Que signifie exactement la notation $\\left[8\\,;\\,12\\right[$ pour une classe ?",
+      "verso": "Elle signifie « de $8$ inclus à $12$ exclu ». Une valeur égale à $12$ est comptée dans la classe suivante, et jamais deux fois : sans cette convention, un individu situé pile sur une borne serait compté deux fois.",
+      "difficulte": 2,
+      "tags": ["classe", "borne", "notation"]
+    },
+    {
+      "id": "4E-CH12-025",
+      "lecon": "L'histogramme",
+      "type": "formule",
+      "recto": "Comment calcule-t-on l'amplitude d'une classe ?",
+      "verso": "C'est la largeur de la classe, donc la différence de ses deux bornes. L'amplitude de $\\left[8\\,;\\,12\\right[$ vaut $12 - 8 = 4$.",
+      "difficulte": 1,
+      "tags": ["classe", "amplitude"]
+    },
+    {
+      "id": "4E-CH12-026",
+      "lecon": "L'histogramme",
+      "type": "formule",
+      "recto": "A quoi sert le centre d'une classe quand on calcule une moyenne ?",
+      "verso": "Il sert de valeur représentative de toute la classe, puisque les valeurs exactes ne sont plus connues. Le centre est le milieu de l'intervalle : celui de $\\left[8\\,;\\,12\\right[$ vaut $\\dfrac{8 + 12}{2} = 10$.",
+      "difficulte": 2,
+      "tags": ["classe", "centre", "moyenne"]
+    },
+    {
+      "id": "4E-CH12-027",
+      "lecon": "L'histogramme",
+      "type": "formule",
+      "recto": "Dans un histogramme, que représentent la largeur et la hauteur d'un rectangle ?",
+      "verso": "La largeur est l'amplitude de la classe ; la hauteur est proportionnelle à l'effectif lorsque toutes les classes ont la même amplitude. Les rectangles se touchent, car les classes se suivent sans interruption.",
+      "difficulte": 2,
+      "tags": ["histogramme", "rectangle", "amplitude"]
+    },
+    {
+      "id": "4E-CH12-028",
+      "lecon": "L'histogramme",
+      "type": "definition",
+      "recto": "Dans une série rangée en classes, qu'appelle-t-on la classe modale ?",
+      "verso": "C'est la classe de plus grand effectif. Sur l'histogramme, c'est celle dont le rectangle s'élève le plus.",
+      "difficulte": 1,
+      "tags": ["classe-modale", "histogramme"]
+    },
+    {
+      "id": "4E-CH12-029",
+      "lecon": "L'histogramme",
+      "type": "definition",
+      "recto": "Pourquoi la moyenne tirée d'un tableau de classes n'est-elle qu'une valeur approchée ?",
+      "verso": "Parce qu'on remplace chaque individu par le centre de sa classe, alors que sa valeur exacte a été perdue lors du regroupement. On échange de la précision contre de la lisibilité.",
+      "difficulte": 3,
+      "tags": ["classe", "moyenne", "piege"]
+    },
+    {
+      "id": "4E-CH12-030",
+      "lecon": "Le diagramme circulaire",
+      "type": "definition",
+      "recto": "Que montre un diagramme circulaire ?",
+      "verso": "Il montre la répartition d'un effectif total entre plusieurs valeurs, chacune représentée par un secteur du disque. Il convient à tous les caractères, y compris qualitatifs, dès lors qu'on veut montrer des parts d'un tout.",
+      "difficulte": 1,
+      "tags": ["diagramme-circulaire", "secteur"]
+    },
+    {
+      "id": "4E-CH12-031",
+      "lecon": "Le diagramme circulaire",
+      "type": "formule",
+      "recto": "Comment calcule-t-on l'angle du secteur d'une valeur dans un diagramme circulaire ?",
+      "verso": "L'angle est proportionnel à l'effectif : $\\text{angle} = f_i \\times 360^{\\circ}$, c'est-à-dire $\\text{angle} = \\dfrac{n_i}{N} \\times 360^{\\circ}$.",
+      "difficulte": 1,
+      "tags": ["diagramme-circulaire", "angle", "formule"]
+    },
+    {
+      "id": "4E-CH12-032",
+      "lecon": "Le diagramme circulaire",
+      "type": "formule",
+      "recto": "Que doit valoir la somme des angles des secteurs d'un diagramme circulaire ?",
+      "verso": "Toujours $360^{\\circ}$, puisque la somme des fréquences vaut $1$. Si la somme ne tombe pas sur $360^{\\circ}$, une ligne du tableau est fausse.",
+      "difficulte": 2,
+      "tags": ["diagramme-circulaire", "angle", "controle"]
+    },
+    {
+      "id": "4E-CH12-033",
+      "lecon": "Le diagramme circulaire",
+      "type": "formule",
+      "recto": "Quel raccourci évite de recalculer une fraction à chaque secteur d'un diagramme circulaire ?",
+      "verso": "On calcule une fois pour toutes le nombre de degrés que vaut un seul individu, $\\dfrac{360}{N}$, puis on le multiplie par chaque effectif. Avec $60$ élèves, un élève vaut $6^{\\circ}$, donc $25$ élèves valent $150^{\\circ}$.",
+      "difficulte": 2,
+      "tags": ["diagramme-circulaire", "angle", "methode-rapide"]
+    },
+    {
+      "id": "4E-CH12-034",
+      "lecon": "Le diagramme circulaire",
+      "type": "formule",
+      "recto": "Comment retrouve-t-on l'effectif d'un secteur dont on connaît l'angle ?",
+      "verso": "On divise l'angle par $\\dfrac{360}{N}$, le nombre de degrés que vaut un individu. Sur $120$ personnes, un individu vaut $3^{\\circ}$, donc un secteur de $90^{\\circ}$ représente $90 \\div 3 = 30$ personnes.",
+      "difficulte": 2,
+      "tags": ["diagramme-circulaire", "lecture", "effectif"]
+    },
+    {
+      "id": "4E-CH12-035",
+      "lecon": "Le diagramme circulaire",
+      "type": "formule",
+      "recto": "Quelle formule donne l'angle d'un secteur dans un diagramme semi-circulaire ?",
+      "verso": "On remplace le tour complet par le demi-tour : $\\text{angle} = f_i \\times 180^{\\circ}$. Le dessin est le même, tracé dans un demi-disque, et la somme des angles vaut alors $180^{\\circ}$.",
+      "difficulte": 2,
+      "tags": ["diagramme-semi-circulaire", "angle"]
+    },
+    {
+      "id": "4E-CH12-036",
+      "lecon": "Le diagramme circulaire",
+      "type": "formule",
+      "recto": "Pourquoi $25$ élèves sur $60$ ne donnent-ils pas un secteur de $25^{\\circ}$ ?",
+      "verso": "Parce que l'angle ne se recopie pas depuis l'effectif : il se calcule. Ici $\\dfrac{25}{60} \\times 360^{\\circ} = 150^{\\circ}$, et c'est la somme des angles, non celle des effectifs, qui doit faire $360^{\\circ}$.",
+      "difficulte": 3,
+      "tags": ["diagramme-circulaire", "angle", "piege"]
+    }
+  ]
+}

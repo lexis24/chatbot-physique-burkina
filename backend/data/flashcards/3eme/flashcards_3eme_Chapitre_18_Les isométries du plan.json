@@ -1,0 +1,296 @@
+{
+  "niveau": "3ème",
+  "chapitre": "Chapitre 18 : Les isométries du plan",
+  "source": "maths/3eme/Chapitre_18_Isometries",
+  "nombre_cartes": 32,
+  "cartes": [
+    {
+      "id": "3E-CH18-001",
+      "lecon": "Qu'est-ce qu'une isométrie ?",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on une transformation du plan ?",
+      "verso": "C'est un procédé qui associe à chaque point $M$ du plan un point $M'$, appelé image de $M$.",
+      "difficulte": 1,
+      "tags": ["transformation", "definition", "image"]
+    },
+    {
+      "id": "3E-CH18-002",
+      "lecon": "Qu'est-ce qu'une isométrie ?",
+      "type": "definition",
+      "recto": "Qu'est-ce qu'une isométrie du plan ?",
+      "verso": "C'est une transformation du plan qui conserve les distances : si $A$ et $B$ ont pour images $A'$ et $B'$, alors $A'B' = AB$, quels que soient les points $A$ et $B$.",
+      "difficulte": 1,
+      "tags": ["isometrie", "definition", "distances"]
+    },
+    {
+      "id": "3E-CH18-003",
+      "lecon": "Qu'est-ce qu'une isométrie ?",
+      "type": "definition",
+      "recto": "Quelles sont les quatre isométries usuelles du plan ?",
+      "verso": "La symétrie centrale, la symétrie orthogonale, la translation et la rotation.",
+      "difficulte": 1,
+      "tags": ["isometrie", "isometries-usuelles"]
+    },
+    {
+      "id": "3E-CH18-004",
+      "lecon": "Qu'est-ce qu'une isométrie ?",
+      "type": "formule",
+      "recto": "Quel lien y a-t-il entre une figure et son image par une isométrie ?",
+      "verso": "Elles sont superposables : même forme et même taille. La figure découpée recouvre exactement son image.",
+      "difficulte": 2,
+      "tags": ["isometrie", "superposable"]
+    },
+    {
+      "id": "3E-CH18-005",
+      "lecon": "Qu'est-ce qu'une isométrie ?",
+      "type": "formule",
+      "recto": "Pourquoi un agrandissement de rapport différent de $1$ n'est-il pas une isométrie ?",
+      "verso": "Parce qu'il multiplie toutes les longueurs par ce rapport : les distances ne sont donc pas conservées. Il en va de même pour une réduction.",
+      "difficulte": 2,
+      "tags": ["agrandissement", "reduction", "isometrie"]
+    },
+    {
+      "id": "3E-CH18-006",
+      "lecon": "Qu'est-ce qu'une isométrie ?",
+      "type": "definition",
+      "recto": "De quels mots grecs le terme isométrie est-il formé ?",
+      "verso": "De isos, qui veut dire égal, et de metron, qui veut dire mesure. Une isométrie est donc une transformation à mesures égales.",
+      "difficulte": 1,
+      "tags": ["isometrie", "etymologie"]
+    },
+    {
+      "id": "3E-CH18-007",
+      "lecon": "Qu'est-ce qu'une isométrie ?",
+      "type": "formule",
+      "recto": "Que signifient les mots « quels que soient les points » dans la définition d'une isométrie ?",
+      "verso": "Qu'il ne suffit pas de conserver une seule longueur : la transformation doit conserver toutes les distances, pour tous les couples de points du plan.",
+      "difficulte": 3,
+      "tags": ["isometrie", "definition", "condition"]
+    },
+    {
+      "id": "3E-CH18-008",
+      "lecon": "Qu'est-ce qu'une isométrie ?",
+      "type": "formule",
+      "recto": "Comment prouve-t-on qu'une transformation n'est pas une isométrie ?",
+      "verso": "Un seul contre-exemple suffit : il suffit d'exhiber deux points dont les images se sont éloignées ou rapprochées, donc tels que $A'B'$ diffère de $AB$.",
+      "difficulte": 2,
+      "tags": ["isometrie", "contre-exemple", "methode"]
+    },
+    {
+      "id": "3E-CH18-009",
+      "lecon": "Qu'est-ce qu'une isométrie ?",
+      "type": "definition",
+      "recto": "Pourquoi une transformation qui garde la forme d'une figure n'est-elle pas forcément une isométrie ?",
+      "verso": "Parce qu'un agrandissement garde la forme tout en changeant la taille. La transformation $M\\left(x\\,;\\,y\\right) \\mapsto M'\\left(2x\\,;\\,2y\\right)$ double toutes les distances : ce n'est pas une isométrie.",
+      "difficulte": 3,
+      "tags": ["isometrie", "piege", "forme"]
+    },
+    {
+      "id": "3E-CH18-010",
+      "lecon": "Qu'est-ce qu'une isométrie ?",
+      "type": "definition",
+      "recto": "Pourquoi est-il faux de dire qu'une isométrie ne bouge pas la figure ?",
+      "verso": "Parce qu'elle la bouge bel et bien : elle la fait glisser, tourner ou se retourner. Ce qu'une isométrie ne fait jamais, c'est la déformer.",
+      "difficulte": 3,
+      "tags": ["isometrie", "piege"]
+    },
+    {
+      "id": "3E-CH18-011",
+      "lecon": "Les isométries usuelles et la construction d'images",
+      "type": "definition",
+      "recto": "Comment définit-on l'image d'un point $A$ par la symétrie centrale de centre $O$ ?",
+      "verso": "C'est le point $A'$ tel que $O$ est le milieu du segment $\\left[AA'\\right]$. Le centre $O$ est son propre image.",
+      "difficulte": 1,
+      "tags": ["symetrie-centrale", "centre", "definition"]
+    },
+    {
+      "id": "3E-CH18-012",
+      "lecon": "Les isométries usuelles et la construction d'images",
+      "type": "definition",
+      "recto": "Comment définit-on l'image d'un point $A$ par la symétrie orthogonale d'axe $\\left(d\\right)$, lorsque $A$ n'est pas sur l'axe ?",
+      "verso": "C'est le point $A'$ tel que la droite $\\left(d\\right)$ est la médiatrice du segment $\\left[AA'\\right]$.",
+      "difficulte": 2,
+      "tags": ["symetrie-orthogonale", "axe", "mediatrice"]
+    },
+    {
+      "id": "3E-CH18-013",
+      "lecon": "Les isométries usuelles et la construction d'images",
+      "type": "formule",
+      "recto": "Quels sont les points qui ne bougent pas par une symétrie orthogonale d'axe $\\left(d\\right)$ ?",
+      "verso": "Les points de l'axe, et eux seuls : si $A$ appartient à $\\left(d\\right)$, son image est $A$ lui-même.",
+      "difficulte": 2,
+      "tags": ["symetrie-orthogonale", "points-invariants"]
+    },
+    {
+      "id": "3E-CH18-014",
+      "lecon": "Les isométries usuelles et la construction d'images",
+      "type": "definition",
+      "recto": "Comment définit-on l'image d'un point $A$ par la translation de vecteur $\\vec{u}$ ?",
+      "verso": "C'est le point $A'$ tel que $\\overrightarrow{AA'} = \\vec{u}$. Tous les points glissent de la même façon, dans la même direction et sur la même longueur.",
+      "difficulte": 1,
+      "tags": ["translation", "vecteur", "definition"]
+    },
+    {
+      "id": "3E-CH18-015",
+      "lecon": "Les isométries usuelles et la construction d'images",
+      "type": "definition",
+      "recto": "Comment définit-on l'image d'un point $A$ distinct de $O$ par la rotation de centre $O$ et d'angle $\\alpha$ ?",
+      "verso": "C'est le point $A'$ tel que $OA' = OA$ et tel que l'angle $\\widehat{AOA'}$ mesure $\\alpha$, dans le sens indiqué. Le centre $O$ est son propre image.",
+      "difficulte": 2,
+      "tags": ["rotation", "centre", "angle"]
+    },
+    {
+      "id": "3E-CH18-016",
+      "lecon": "Les isométries usuelles et la construction d'images",
+      "type": "formule",
+      "recto": "Quelle donnée faut-il connaître pour appliquer chacune des quatre isométries usuelles ?",
+      "verso": "Un point pour la symétrie centrale et pour la rotation, une droite pour la symétrie orthogonale, un vecteur pour la translation. La rotation demande en plus un angle et son sens.",
+      "difficulte": 2,
+      "tags": ["isometries-usuelles", "element-caracteristique"]
+    },
+    {
+      "id": "3E-CH18-017",
+      "lecon": "Les isométries usuelles et la construction d'images",
+      "type": "formule",
+      "recto": "Comment construit-on l'image d'une figure par une isométrie ?",
+      "verso": "On construit l'image de chacun de ses points caractéristiques, sommets ou centre d'un cercle, puis on relie ces images dans le même ordre que la figure de départ.",
+      "difficulte": 2,
+      "tags": ["construction", "points-caracteristiques"]
+    },
+    {
+      "id": "3E-CH18-018",
+      "lecon": "Les isométries usuelles et la construction d'images",
+      "type": "formule",
+      "recto": "Quels gestes permettent de construire le symétrique d'un point $A$ par rapport à un point $O$ ?",
+      "verso": "On trace la demi-droite $\\left[AO\\right)$, puis on reporte la longueur $OA$ au-delà de $O$ : le point obtenu est $A'$, et $O$ est bien le milieu de $\\left[AA'\\right]$.",
+      "difficulte": 2,
+      "tags": ["symetrie-centrale", "construction"]
+    },
+    {
+      "id": "3E-CH18-019",
+      "lecon": "Les isométries usuelles et la construction d'images",
+      "type": "definition",
+      "recto": "Pourquoi ne suffit-il pas de reporter la même distance à l'axe pour construire le symétrique d'un point par rapport à une droite ?",
+      "verso": "Parce qu'il faut d'abord tracer la perpendiculaire à l'axe passant par ce point. Sans cette perpendiculaire, on obtient un point situé à la bonne distance de la droite, mais pas au bon endroit.",
+      "difficulte": 3,
+      "tags": ["symetrie-orthogonale", "construction", "piege"]
+    },
+    {
+      "id": "3E-CH18-020",
+      "lecon": "Les isométries usuelles et la construction d'images",
+      "type": "formule",
+      "recto": "Dans un repère, comment obtient-on les coordonnées de l'image d'un point par la translation de vecteur $\\vec{u}\\left(a\\,;\\,b\\right)$ ?",
+      "verso": "On ajoute $a$ à l'abscisse et $b$ à l'ordonnée. Ainsi $A\\left(1\\,;\\,1\\right)$ a pour image $A'\\left(3\\,;\\,4\\right)$ par la translation de vecteur $\\vec{u}\\left(2\\,;\\,3\\right)$.",
+      "difficulte": 2,
+      "tags": ["translation", "repere", "coordonnees"]
+    },
+    {
+      "id": "3E-CH18-021",
+      "lecon": "Les isométries usuelles et la construction d'images",
+      "type": "formule",
+      "recto": "Dans un repère, quelles sont les coordonnées de l'image de $M\\left(x\\,;\\,y\\right)$ par la symétrie de centre l'origine ?",
+      "verso": "Ce sont $M'\\left(-x\\,;\\,-y\\right)$ : les deux coordonnées changent de signe, car l'origine doit être le milieu de $\\left[MM'\\right]$.",
+      "difficulte": 2,
+      "tags": ["symetrie-centrale", "repere", "coordonnees"]
+    },
+    {
+      "id": "3E-CH18-022",
+      "lecon": "Les propriétés des isométries et leur emploi dans une démonstration",
+      "type": "formule",
+      "recto": "Que devient la mesure d'un angle par une isométrie ?",
+      "verso": "Elle ne change pas : une isométrie conserve les mesures d'angles. L'image d'un angle de $75^{\\circ}$ mesure encore $75^{\\circ}$.",
+      "difficulte": 1,
+      "tags": ["conservation", "angles"]
+    },
+    {
+      "id": "3E-CH18-023",
+      "lecon": "Les propriétés des isométries et leur emploi dans une démonstration",
+      "type": "formule",
+      "recto": "Que deviennent l'aire et le périmètre d'une figure transformée par une isométrie ?",
+      "verso": "Ils sont inchangés : une isométrie conserve les aires et les périmètres. Un motif d'aire $600$ cm$^{2}$ a pour image un motif d'aire $600$ cm$^{2}$.",
+      "difficulte": 1,
+      "tags": ["conservation", "aire", "perimetre"]
+    },
+    {
+      "id": "3E-CH18-024",
+      "lecon": "Les propriétés des isométries et leur emploi dans une démonstration",
+      "type": "formule",
+      "recto": "Que peut-on dire des images de trois points alignés par une isométrie ?",
+      "verso": "Ce sont trois points alignés : une isométrie conserve l'alignement, et l'image d'une droite est une droite.",
+      "difficulte": 2,
+      "tags": ["conservation", "alignement"]
+    },
+    {
+      "id": "3E-CH18-025",
+      "lecon": "Les propriétés des isométries et leur emploi dans une démonstration",
+      "type": "formule",
+      "recto": "Que devient le milieu d'un segment par une isométrie ?",
+      "verso": "Son image est le milieu du segment image : une isométrie conserve les milieux.",
+      "difficulte": 2,
+      "tags": ["conservation", "milieu"]
+    },
+    {
+      "id": "3E-CH18-026",
+      "lecon": "Les propriétés des isométries et leur emploi dans une démonstration",
+      "type": "formule",
+      "recto": "Que deviennent deux droites perpendiculaires par une isométrie ?",
+      "verso": "Leurs images sont deux droites perpendiculaires : une isométrie conserve l'orthogonalité, tout comme elle conserve le parallélisme.",
+      "difficulte": 2,
+      "tags": ["conservation", "orthogonalite", "parallelisme"]
+    },
+    {
+      "id": "3E-CH18-027",
+      "lecon": "Les propriétés des isométries et leur emploi dans une démonstration",
+      "type": "formule",
+      "recto": "Quelle est l'image d'un cercle de rayon $r$ par une isométrie ?",
+      "verso": "Un cercle de rayon $r$. L'image d'une figure usuelle est une figure de même nature et de mêmes dimensions : un rectangle donne un rectangle de mêmes dimensions.",
+      "difficulte": 2,
+      "tags": ["conservation", "cercle", "nature"]
+    },
+    {
+      "id": "3E-CH18-028",
+      "lecon": "Les propriétés des isométries et leur emploi dans une démonstration",
+      "type": "formule",
+      "recto": "Pourquoi l'image d'un triangle rectangle par une isométrie est-elle un triangle rectangle ?",
+      "verso": "Parce qu'une isométrie conserve les mesures d'angles : l'image de l'angle droit mesure encore $90^{\\circ}$, donc le triangle image est rectangle au sommet correspondant.",
+      "difficulte": 2,
+      "tags": ["conservation", "angle-droit", "demonstration"]
+    },
+    {
+      "id": "3E-CH18-029",
+      "lecon": "Les propriétés des isométries et leur emploi dans une démonstration",
+      "type": "formule",
+      "recto": "Comment rédige-t-on une justification qui s'appuie sur une isométrie ?",
+      "verso": "En trois temps : on nomme la transformation en disant que c'est une isométrie, on cite la propriété de conservation qui porte sur la grandeur demandée, puis on conclut. Aucune mesure n'est nécessaire.",
+      "difficulte": 2,
+      "tags": ["demonstration", "redaction", "methode"]
+    },
+    {
+      "id": "3E-CH18-030",
+      "lecon": "Les propriétés des isométries et leur emploi dans une démonstration",
+      "type": "definition",
+      "recto": "Pourquoi mesurer au rapporteur ne suffit-il pas à prouver qu'un angle image mesure $50^{\\circ}$ ?",
+      "verso": "Parce qu'une mesure n'est qu'une observation, toujours entachée d'une imprécision de tracé. La preuve attendue cite la propriété : une isométrie conserve les mesures d'angles.",
+      "difficulte": 3,
+      "tags": ["demonstration", "piege", "mesure"]
+    },
+    {
+      "id": "3E-CH18-031",
+      "lecon": "Les propriétés des isométries et leur emploi dans une démonstration",
+      "type": "formule",
+      "recto": "Une figure d'aire $30$ cm$^{2}$ a pour image une figure d'aire $120$ cm$^{2}$ : que peut-on conclure sur la transformation employée ?",
+      "verso": "Que ce n'est pas une isométrie, puisqu'une isométrie conserve les aires. La transformation employée est un agrandissement.",
+      "difficulte": 2,
+      "tags": ["conservation", "aire", "isometrie"]
+    },
+    {
+      "id": "3E-CH18-032",
+      "lecon": "Les propriétés des isométries et leur emploi dans une démonstration",
+      "type": "formule",
+      "recto": "Par quoi commence-t-on pour justifier une égalité de longueurs entre deux figures sans rien mesurer ?",
+      "verso": "On cherche l'isométrie qui relie les deux figures. Une fois cette transformation nommée, la propriété de conservation des distances fait le reste du travail.",
+      "difficulte": 2,
+      "tags": ["demonstration", "methode", "longueurs"]
+    }
+  ]
+}

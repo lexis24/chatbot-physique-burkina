@@ -1,0 +1,296 @@
+{
+  "niveau": "4ème",
+  "chapitre": "Chapitre 1 : Droites du plan : parallélisme et perpendicularité",
+  "source": "maths/4eme/Chapitre_1_Droites_du_plan",
+  "nombre_cartes": 32,
+  "cartes": [
+    {
+      "id": "4E-CH01-001",
+      "lecon": "Droites sécantes, droites parallèles ; l'axiome d'Euclide",
+      "type": "definition",
+      "recto": "Quand dit-on que deux droites d'un même plan sont sécantes ?",
+      "verso": "Lorsqu'elles ont un seul point commun. Ce point s'appelle leur point d'intersection.",
+      "difficulte": 1,
+      "tags": ["droites", "secantes", "vocabulaire"]
+    },
+    {
+      "id": "4E-CH01-002",
+      "lecon": "Droites sécantes, droites parallèles ; l'axiome d'Euclide",
+      "type": "definition",
+      "recto": "Quand dit-on que deux droites d'un même plan sont parallèles ?",
+      "verso": "Lorsqu'elles n'ont aucun point commun, ou lorsqu'elles sont confondues. On note $\\left(d\\right) \\parallel \\left(d'\\right)$.",
+      "difficulte": 1,
+      "tags": ["droites", "paralleles", "notation"]
+    },
+    {
+      "id": "4E-CH01-003",
+      "lecon": "Droites sécantes, droites parallèles ; l'axiome d'Euclide",
+      "type": "definition",
+      "recto": "Pourquoi deux droites confondues sont-elles rangées parmi les droites parallèles ?",
+      "verso": "Parce que ce sont deux noms pour une seule et même droite : tous leurs points sont communs. En particulier, une droite est toujours parallèle à elle-même.",
+      "difficulte": 2,
+      "tags": ["droites-confondues", "paralleles"]
+    },
+    {
+      "id": "4E-CH01-004",
+      "lecon": "Droites sécantes, droites parallèles ; l'axiome d'Euclide",
+      "type": "formule",
+      "recto": "Combien de positions relatives deux droites d'un même plan peuvent-elles occuper ?",
+      "verso": "Deux seulement : elles sont soit sécantes, soit parallèles. Il n'y a pas d'autre cas possible dans le plan.",
+      "difficulte": 2,
+      "tags": ["droites", "position-relative"]
+    },
+    {
+      "id": "4E-CH01-005",
+      "lecon": "Droites sécantes, droites parallèles ; l'axiome d'Euclide",
+      "type": "formule",
+      "recto": "Que dit l'axiome d'Euclide ?",
+      "verso": "Par un point A n'appartenant pas à une droite $\\left(d\\right)$, il passe une seule droite parallèle à $\\left(d\\right)$.",
+      "difficulte": 1,
+      "tags": ["axiome-d-euclide", "paralleles", "unicite"]
+    },
+    {
+      "id": "4E-CH01-006",
+      "lecon": "Droites sécantes, droites parallèles ; l'axiome d'Euclide",
+      "type": "definition",
+      "recto": "Qu'est-ce qu'un axiome en mathématiques ?",
+      "verso": "C'est un fait que les mathématiciens admettent sans le démontrer, parce qu'aucune expérience ne pourrait le prouver. Il sert ensuite à démontrer d'autres propriétés.",
+      "difficulte": 2,
+      "tags": ["axiome", "vocabulaire"]
+    },
+    {
+      "id": "4E-CH01-007",
+      "lecon": "Droites sécantes, droites parallèles ; l'axiome d'Euclide",
+      "type": "formule",
+      "recto": "Que peut-on dire d'une droite sécante à l'une de deux droites parallèles ?",
+      "verso": "Elle est sécante à l'autre : si $\\left(d\\right) \\parallel \\left(d'\\right)$ et si $\\left(\\Delta\\right)$ coupe $\\left(d\\right)$, alors $\\left(\\Delta\\right)$ coupe aussi $\\left(d'\\right)$.",
+      "difficulte": 2,
+      "tags": ["paralleles", "secante", "propriete"]
+    },
+    {
+      "id": "4E-CH01-008",
+      "lecon": "Droites sécantes, droites parallèles ; l'axiome d'Euclide",
+      "type": "definition",
+      "recto": "Pourquoi ne peut-on pas décider à l'œil nu que deux droites tracées sont parallèles ?",
+      "verso": "Parce que le parallélisme se définit par l'absence de point commun : il faudrait prolonger les deux droites à l'infini. Deux droites qui ne se coupent pas sur la feuille peuvent très bien se couper trois mètres plus loin.",
+      "difficulte": 3,
+      "tags": ["paralleles", "piege", "demonstration"]
+    },
+    {
+      "id": "4E-CH01-009",
+      "lecon": "Droites sécantes, droites parallèles ; l'axiome d'Euclide",
+      "type": "formule",
+      "recto": "Comment calcule-t-on la distance entre le premier et le dernier de plusieurs traits parallèles régulièrement espacés ?",
+      "verso": "On compte les intervalles, qui sont un de moins que le nombre de traits, puis on multiplie par l'écart. Avec $9$ traits espacés de $6$ cm, il y a $8$ intervalles, soit $8 \\times 6 = 48$ cm.",
+      "difficulte": 2,
+      "tags": ["intervalles", "calcul", "paralleles"]
+    },
+    {
+      "id": "4E-CH01-010",
+      "lecon": "Le parallélisme et ses propriétés",
+      "type": "formule",
+      "recto": "Que dit la propriété de transitivité du parallélisme ?",
+      "verso": "Si $\\left(d\\right) \\parallel \\left(d'\\right)$ et $\\left(d'\\right) \\parallel \\left(d''\\right)$, alors $\\left(d\\right) \\parallel \\left(d''\\right)$ : deux droites parallèles à une même droite sont parallèles entre elles.",
+      "difficulte": 1,
+      "tags": ["transitivite", "paralleles", "propriete"]
+    },
+    {
+      "id": "4E-CH01-011",
+      "lecon": "Le parallélisme et ses propriétés",
+      "type": "formule",
+      "recto": "Que cherche-t-on dans un énoncé pour démontrer un parallélisme par transitivité ?",
+      "verso": "Une troisième droite parallèle à chacune des deux droites de la question. Cette droite intermédiaire apparaît dans les deux données, puis disparaît de la conclusion.",
+      "difficulte": 2,
+      "tags": ["transitivite", "droite-intermediaire", "demonstration"]
+    },
+    {
+      "id": "4E-CH01-012",
+      "lecon": "Le parallélisme et ses propriétés",
+      "type": "formule",
+      "recto": "Que peut-on dire de plusieurs droites dont chacune a été tracée parallèlement à la précédente ?",
+      "verso": "Elles sont toutes parallèles deux à deux : la transitivité se chaîne de proche en proche, sans qu'il soit nécessaire de comparer la première à la dernière.",
+      "difficulte": 2,
+      "tags": ["transitivite", "chainage", "paralleles"]
+    },
+    {
+      "id": "4E-CH01-013",
+      "lecon": "Le parallélisme et ses propriétés",
+      "type": "formule",
+      "recto": "Pourquoi deux droites parallèles à une même droite ne peuvent-elles pas se couper ?",
+      "verso": "Si elles se coupaient en un point P, il passerait par P deux parallèles à cette même droite. Or l'axiome d'Euclide affirme qu'il n'en passe qu'une seule : c'est donc impossible.",
+      "difficulte": 3,
+      "tags": ["transitivite", "axiome-d-euclide", "demonstration"]
+    },
+    {
+      "id": "4E-CH01-014",
+      "lecon": "Le parallélisme et ses propriétés",
+      "type": "formule",
+      "recto": "Quel renseignement donne la reconnaissance d'un parallélogramme dans une figure ?",
+      "verso": "Ses côtés opposés sont portés par des droites parallèles : le reconnaître, c'est disposer de deux parallélismes d'un seul coup.",
+      "difficulte": 2,
+      "tags": ["parallelogramme", "paralleles"]
+    },
+    {
+      "id": "4E-CH01-015",
+      "lecon": "Le parallélisme et ses propriétés",
+      "type": "formule",
+      "recto": "Pourquoi la transitivité ne s'applique-t-elle pas à la perpendicularité ?",
+      "verso": "Si $\\left(d\\right) \\perp \\left(d'\\right)$ et $\\left(d'\\right) \\perp \\left(d''\\right)$, alors $\\left(d\\right)$ et $\\left(d''\\right)$ ne sont pas perpendiculaires : elles sont parallèles. Le parallélisme se transmet, l'angle droit, lui, s'échange.",
+      "difficulte": 3,
+      "tags": ["transitivite", "perpendicularite", "piege"]
+    },
+    {
+      "id": "4E-CH01-016",
+      "lecon": "La perpendicularité ; perpendiculaire à une droite par un point",
+      "type": "definition",
+      "recto": "Quand dit-on que deux droites sont perpendiculaires ?",
+      "verso": "Lorsqu'elles se coupent en formant un angle droit. On note $\\left(d\\right) \\perp \\left(d'\\right)$.",
+      "difficulte": 1,
+      "tags": ["perpendicularite", "notation", "angle-droit"]
+    },
+    {
+      "id": "4E-CH01-017",
+      "lecon": "La perpendicularité ; perpendiculaire à une droite par un point",
+      "type": "definition",
+      "recto": "Pourquoi deux droites perpendiculaires sont-elles d'abord des droites sécantes ?",
+      "verso": "Parce qu'elles se coupent en un point : la perpendicularité est un cas particulier de la sécance, avec en plus un angle droit.",
+      "difficulte": 2,
+      "tags": ["perpendicularite", "secantes", "distinction"]
+    },
+    {
+      "id": "4E-CH01-018",
+      "lecon": "La perpendicularité ; perpendiculaire à une droite par un point",
+      "type": "formule",
+      "recto": "Combien de droites perpendiculaires à une droite $\\left(d\\right)$ passent par un point A donné ?",
+      "verso": "Une seule, que le point A appartienne à $\\left(d\\right)$ ou qu'il soit en dehors : c'est la propriété d'existence et d'unicité de la perpendiculaire.",
+      "difficulte": 1,
+      "tags": ["perpendicularite", "unicite", "propriete"]
+    },
+    {
+      "id": "4E-CH01-019",
+      "lecon": "La perpendicularité ; perpendiculaire à une droite par un point",
+      "type": "definition",
+      "recto": "Quelle différence d'usage y a-t-il entre l'existence et l'unicité de la perpendiculaire passant par un point ?",
+      "verso": "L'existence garantit qu'on peut toujours la tracer : elle sert dans les constructions. L'unicité sert à prouver que deux droites décrites de deux façons différentes sont en réalité la même.",
+      "difficulte": 3,
+      "tags": ["existence", "unicite", "distinction"]
+    },
+    {
+      "id": "4E-CH01-020",
+      "lecon": "La perpendicularité ; perpendiculaire à une droite par un point",
+      "type": "definition",
+      "recto": "Comment appelle-t-on le point où la perpendiculaire à $\\left(d\\right)$ passant par A coupe la droite $\\left(d\\right)$ ?",
+      "verso": "Le pied de la perpendiculaire. On le note souvent H.",
+      "difficulte": 1,
+      "tags": ["pied", "perpendicularite", "vocabulaire"]
+    },
+    {
+      "id": "4E-CH01-021",
+      "lecon": "La perpendicularité ; perpendiculaire à une droite par un point",
+      "type": "formule",
+      "recto": "Parmi tous les segments joignant un point A à une droite $\\left(d\\right)$, lequel est le plus court ?",
+      "verso": "Celui qui aboutit au pied H de la perpendiculaire à $\\left(d\\right)$ passant par A. Tout autre point M de $\\left(d\\right)$ donne une longueur $AM$ plus grande que $AH$.",
+      "difficulte": 2,
+      "tags": ["distance", "perpendicularite", "plus-court-chemin"]
+    },
+    {
+      "id": "4E-CH01-022",
+      "lecon": "La perpendicularité ; perpendiculaire à une droite par un point",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on distance d'un point A à une droite $\\left(d\\right)$ ?",
+      "verso": "La longueur $AH$, où H est le pied de la perpendiculaire à $\\left(d\\right)$ passant par A. Si le point A appartient à $\\left(d\\right)$, cette distance est nulle.",
+      "difficulte": 2,
+      "tags": ["distance", "point-droite", "definition"]
+    },
+    {
+      "id": "4E-CH01-023",
+      "lecon": "La perpendicularité ; perpendiculaire à une droite par un point",
+      "type": "definition",
+      "recto": "Pourquoi est-il faux d'écrire que la distance de A à $\\left(d\\right)$ vaut $AM$, pour un point M quelconque de $\\left(d\\right)$ ?",
+      "verso": "Parce que la distance d'un point à une droite se mesure toujours sur la perpendiculaire. Cette écriture n'a de sens que si M est le pied H de cette perpendiculaire.",
+      "difficulte": 3,
+      "tags": ["distance", "piege", "point-droite"]
+    },
+    {
+      "id": "4E-CH01-024",
+      "lecon": "La perpendicularité ; perpendiculaire à une droite par un point",
+      "type": "definition",
+      "recto": "Qu'est-ce que la médiatrice d'un segment [AB] ?",
+      "verso": "C'est la perpendiculaire à la droite (AB) qui passe par le milieu de [AB].",
+      "difficulte": 1,
+      "tags": ["mediatrice", "definition", "perpendicularite"]
+    },
+    {
+      "id": "4E-CH01-025",
+      "lecon": "La perpendicularité ; perpendiculaire à une droite par un point",
+      "type": "formule",
+      "recto": "A quelle condition un point M appartient-il à la médiatrice d'un segment [AB] ?",
+      "verso": "Lorsque $MA = MB$, et seulement dans ce cas : les points de la médiatrice sont exactement ceux qui sont à égale distance de A et de B.",
+      "difficulte": 2,
+      "tags": ["mediatrice", "equidistance", "propriete"]
+    },
+    {
+      "id": "4E-CH01-026",
+      "lecon": "La perpendicularité ; perpendiculaire à une droite par un point",
+      "type": "definition",
+      "recto": "Qu'est-ce que la hauteur issue de A dans un triangle ABC ?",
+      "verso": "C'est la droite qui passe par le point A et qui est perpendiculaire à la droite (BC).",
+      "difficulte": 2,
+      "tags": ["hauteur", "triangle", "perpendicularite"]
+    },
+    {
+      "id": "4E-CH01-027",
+      "lecon": "Propriétés reliant parallélisme et perpendicularité",
+      "type": "formule",
+      "recto": "Que peut-on dire de deux droites perpendiculaires à une même droite ?",
+      "verso": "Elles sont parallèles entre elles : si $\\left(d\\right) \\perp \\left(\\Delta\\right)$ et $\\left(d'\\right) \\perp \\left(\\Delta\\right)$, alors $\\left(d\\right) \\parallel \\left(d'\\right)$.",
+      "difficulte": 1,
+      "tags": ["perpendicularite", "paralleles", "propriete"]
+    },
+    {
+      "id": "4E-CH01-028",
+      "lecon": "Propriétés reliant parallélisme et perpendicularité",
+      "type": "formule",
+      "recto": "Que devient une droite perpendiculaire à l'une de deux droites parallèles ?",
+      "verso": "Elle est perpendiculaire à l'autre : si $\\left(d\\right) \\parallel \\left(d'\\right)$ et $\\left(\\Delta\\right) \\perp \\left(d\\right)$, alors $\\left(\\Delta\\right) \\perp \\left(d'\\right)$.",
+      "difficulte": 1,
+      "tags": ["perpendicularite", "paralleles", "propriete"]
+    },
+    {
+      "id": "4E-CH01-029",
+      "lecon": "Propriétés reliant parallélisme et perpendicularité",
+      "type": "formule",
+      "recto": "Comment choisit-on entre les deux propriétés qui relient parallélisme et perpendicularité ?",
+      "verso": "On compte les angles droits donnés. Deux angles droits vers une même droite donnent un parallélisme ; un seul angle droit accompagné d'un parallélisme donne un second angle droit.",
+      "difficulte": 2,
+      "tags": ["perpendicularite", "paralleles", "choisir-la-propriete"]
+    },
+    {
+      "id": "4E-CH01-030",
+      "lecon": "Propriétés reliant parallélisme et perpendicularité",
+      "type": "formule",
+      "recto": "Pourquoi les côtés opposés d'un rectangle sont-ils parallèles ?",
+      "verso": "Parce qu'un rectangle a quatre angles droits : deux côtés opposés sont perpendiculaires à un même côté, et deux droites perpendiculaires à une même droite sont parallèles.",
+      "difficulte": 2,
+      "tags": ["rectangle", "paralleles", "perpendicularite"]
+    },
+    {
+      "id": "4E-CH01-031",
+      "lecon": "Propriétés reliant parallélisme et perpendicularité",
+      "type": "formule",
+      "recto": "Comment construit-on à l'équerre la parallèle à $\\left(d\\right)$ passant par un point A ?",
+      "verso": "On trace la perpendiculaire $\\left(p\\right)$ à $\\left(d\\right)$ passant par A, puis la perpendiculaire à $\\left(p\\right)$ passant par A. Cette dernière est perpendiculaire à $\\left(p\\right)$ comme $\\left(d\\right)$, donc parallèle à $\\left(d\\right)$.",
+      "difficulte": 2,
+      "tags": ["construction", "equerre", "paralleles"]
+    },
+    {
+      "id": "4E-CH01-032",
+      "lecon": "Propriétés reliant parallélisme et perpendicularité",
+      "type": "definition",
+      "recto": "Que fait-on lorsque aucune propriété ne permet de conclure d'un seul coup ?",
+      "verso": "On avance par étapes : on conclut d'abord sur deux droites, puis on se sert de ce résultat comme d'une donnée toute neuve pour l'étape suivante.",
+      "difficulte": 2,
+      "tags": ["demonstration", "etapes", "methode"]
+    }
+  ]
+}

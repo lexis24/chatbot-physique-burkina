@@ -1,0 +1,305 @@
+{
+  "niveau": "5ème",
+  "chapitre": "Chapitre 8 : Valeur absolue et comparaison de nombres relatifs",
+  "source": "maths/5eme/Chapitre_8_Valeur_absolue_comparaison",
+  "nombre_cartes": 33,
+  "cartes": [
+    {
+      "id": "5E-CH08-001",
+      "lecon": "La valeur absolue d'un nombre",
+      "type": "definition",
+      "recto": "Qu'est-ce que la valeur absolue d'un nombre relatif ?",
+      "verso": "C'est sa distance à zéro sur la droite graduée. Elle est toujours positive ou nulle et se note entre deux barres : $|a|$. Ainsi $|-9{,}2| = 9{,}2$.",
+      "difficulte": 1,
+      "tags": ["valeur-absolue", "definition", "distance-a-zero"]
+    },
+    {
+      "id": "5E-CH08-002",
+      "lecon": "La valeur absolue d'un nombre",
+      "type": "formule",
+      "recto": "Comment obtient-on la valeur absolue d'un nombre selon son signe ?",
+      "verso": "Si le nombre est positif ou nul, sa valeur absolue est le nombre lui-même. S'il est négatif, sa valeur absolue est son opposé : on efface le signe $-$.",
+      "difficulte": 1,
+      "tags": ["valeur-absolue", "regle", "signe"]
+    },
+    {
+      "id": "5E-CH08-003",
+      "lecon": "La valeur absolue d'un nombre",
+      "type": "formule",
+      "recto": "Que peut-on dire des valeurs absolues de deux nombres opposés ?",
+      "verso": "Elles sont égales : $|+5| = |-5| = 5$. Les deux nombres sont à la même distance de $0$, de part et d'autre.",
+      "difficulte": 2,
+      "tags": ["valeur-absolue", "opposes", "propriete"]
+    },
+    {
+      "id": "5E-CH08-004",
+      "lecon": "La valeur absolue d'un nombre",
+      "type": "definition",
+      "recto": "Combien vaut $|0|$ ?",
+      "verso": "$|0| = 0$ : le zéro n'est ni à droite ni à gauche, sa distance à lui-même est nulle. C'est la seule valeur absolue qui ne soit pas strictement positive.",
+      "difficulte": 2,
+      "tags": ["valeur-absolue", "zero", "cas-particulier"]
+    },
+    {
+      "id": "5E-CH08-005",
+      "lecon": "La valeur absolue d'un nombre",
+      "type": "formule",
+      "recto": "Pourquoi une valeur absolue ne peut-elle jamais être négative ?",
+      "verso": "Parce que c'est une longueur : celle du morceau de droite qui va de $0$ jusqu'au point. Une longueur se compte en avançant, jamais en reculant.",
+      "difficulte": 2,
+      "tags": ["valeur-absolue", "justification", "longueur"]
+    },
+    {
+      "id": "5E-CH08-006",
+      "lecon": "La valeur absolue d'un nombre",
+      "type": "formule",
+      "recto": "Quels sont les nombres dont la valeur absolue vaut $3$ ?",
+      "verso": "Il y en a deux, $+3$ et $-3$ : ce sont les points situés à $3$ unités de $0$, un de chaque côté. De façon générale, si $a$ est strictement positif, $|x| = a$ a pour solutions $+a$ et $-a$.",
+      "difficulte": 2,
+      "tags": ["valeur-absolue", "deux-solutions"]
+    },
+    {
+      "id": "5E-CH08-007",
+      "lecon": "La valeur absolue d'un nombre",
+      "type": "formule",
+      "recto": "Quel est le seul cas où l'égalité $|x| = a$ n'admet qu'une seule solution ?",
+      "verso": "Le cas $a = 0$. L'égalité $|x| = 0$ donne uniquement $x = 0$, parce que le point et son symétrique par rapport à zéro sont alors confondus.",
+      "difficulte": 3,
+      "tags": ["valeur-absolue", "cas-particulier", "zero"]
+    },
+    {
+      "id": "5E-CH08-008",
+      "lecon": "La valeur absolue d'un nombre",
+      "type": "definition",
+      "recto": "Pourquoi $-a$ n'est-il pas toujours un nombre négatif ?",
+      "verso": "Parce que le signe $-$ devant une lettre veut dire « l'opposé de », et l'opposé d'un nombre négatif est positif. Si $a = -3$, alors $-a = +3$.",
+      "difficulte": 3,
+      "tags": ["oppose", "piege", "signe"]
+    },
+    {
+      "id": "5E-CH08-009",
+      "lecon": "La valeur absolue d'un nombre",
+      "type": "formule",
+      "recto": "Quand un calcul est écrit entre les deux barres d'une valeur absolue, que fait-on en premier ?",
+      "verso": "On effectue d'abord le calcul intérieur : les barres jouent le rôle de parenthèses. Ainsi $|-1{,}8 + 0{,}7| = |-1{,}1| = 1{,}1$.",
+      "difficulte": 2,
+      "tags": ["valeur-absolue", "calcul", "ordre-des-operations"]
+    },
+    {
+      "id": "5E-CH08-010",
+      "lecon": "La valeur absolue d'un nombre",
+      "type": "definition",
+      "recto": "Que change la valeur absolue à un nombre déjà positif ?",
+      "verso": "Elle ne le change pas : écrire $|+7|$ ou écrire $7$, c'est écrire deux fois le même nombre.",
+      "difficulte": 2,
+      "tags": ["valeur-absolue", "nombre-positif"]
+    },
+    {
+      "id": "5E-CH08-011",
+      "lecon": "La valeur absolue d'un nombre",
+      "type": "definition",
+      "recto": "Quelle différence de rôle y a-t-il entre le signe d'un nombre relatif et sa valeur absolue ?",
+      "verso": "Le signe dit de quel côté de zéro on se trouve, la valeur absolue dit de combien on s'en éloigne.",
+      "difficulte": 2,
+      "tags": ["valeur-absolue", "signe", "sens"]
+    },
+    {
+      "id": "5E-CH08-012",
+      "lecon": "Comparer deux nombres relatifs",
+      "type": "formule",
+      "recto": "Sur une droite graduée, comment reconnaît-on le plus petit de deux nombres relatifs ?",
+      "verso": "C'est celui qui est situé le plus à gauche. Ainsi $-8 < -7{,}6$, car $-8$ est plus à gauche que $-7{,}6$.",
+      "difficulte": 1,
+      "tags": ["comparaison", "droite-graduee", "regle"]
+    },
+    {
+      "id": "5E-CH08-013",
+      "lecon": "Comparer deux nombres relatifs",
+      "type": "formule",
+      "recto": "Comment se comparent un nombre positif et un nombre négatif ?",
+      "verso": "Tout nombre positif est plus grand que tout nombre négatif, quelles que soient leurs valeurs absolues : $-14 < +2$.",
+      "difficulte": 1,
+      "tags": ["comparaison", "signes-contraires"]
+    },
+    {
+      "id": "5E-CH08-014",
+      "lecon": "Comparer deux nombres relatifs",
+      "type": "formule",
+      "recto": "Comment le zéro se situe-t-il par rapport aux autres nombres relatifs ?",
+      "verso": "Le zéro est plus grand que tout nombre négatif et plus petit que tout nombre positif. On n'a donc jamais $0 > +1$.",
+      "difficulte": 2,
+      "tags": ["comparaison", "zero"]
+    },
+    {
+      "id": "5E-CH08-015",
+      "lecon": "Comparer deux nombres relatifs",
+      "type": "formule",
+      "recto": "Entre deux nombres négatifs, lequel est le plus grand ?",
+      "verso": "Celui qui a la plus petite valeur absolue, c'est-à-dire le plus proche de $0$. Ainsi $-2{,}8 > -3{,}5$.",
+      "difficulte": 2,
+      "tags": ["comparaison", "nombres-negatifs"]
+    },
+    {
+      "id": "5E-CH08-016",
+      "lecon": "Comparer deux nombres relatifs",
+      "type": "formule",
+      "recto": "Entre deux nombres positifs, lequel est le plus grand ?",
+      "verso": "Celui qui a la plus grande valeur absolue : on les compare comme des nombres ordinaires. Ainsi $+12{,}1 > +12$.",
+      "difficulte": 1,
+      "tags": ["comparaison", "nombres-positifs"]
+    },
+    {
+      "id": "5E-CH08-017",
+      "lecon": "Comparer deux nombres relatifs",
+      "type": "formule",
+      "recto": "Pourquoi l'inégalité $-3{,}5 > -2{,}8$ est-elle fausse, alors que $3{,}5 > 2{,}8$ est vraie ?",
+      "verso": "Parce que chez les négatifs l'ordre se retourne : la plus grande valeur absolue donne le plus petit nombre. La bonne écriture est $-3{,}5 < -2{,}8$.",
+      "difficulte": 3,
+      "tags": ["comparaison", "piege", "nombres-negatifs"]
+    },
+    {
+      "id": "5E-CH08-018",
+      "lecon": "Comparer deux nombres relatifs",
+      "type": "formule",
+      "recto": "Pourquoi s'éloigner de zéro n'a-t-il pas le même effet chez les positifs et chez les négatifs ?",
+      "verso": "Chez les positifs, s'éloigner de $0$ va vers la droite et fait grandir le nombre. Chez les négatifs, s'éloigner de $0$ va vers la gauche et fait diminuer le nombre.",
+      "difficulte": 3,
+      "tags": ["comparaison", "justification", "distance-a-zero"]
+    },
+    {
+      "id": "5E-CH08-019",
+      "lecon": "Comparer deux nombres relatifs",
+      "type": "definition",
+      "recto": "Que signifie le symbole $\\le$ ?",
+      "verso": "Il se lit « inférieur ou égal ». C'est un symbole large : il autorise le cas où les deux nombres sont égaux, donc $7 \\le 7$ est vrai.",
+      "difficulte": 1,
+      "tags": ["symboles", "inegalite-large"]
+    },
+    {
+      "id": "5E-CH08-020",
+      "lecon": "Comparer deux nombres relatifs",
+      "type": "definition",
+      "recto": "Pourquoi l'écriture $7 < 7$ est-elle fausse ?",
+      "verso": "Parce que $<$ est un symbole strict : il interdit l'égalité. Pour comparer $7$ à lui-même, il faut le symbole large et écrire $7 \\le 7$.",
+      "difficulte": 2,
+      "tags": ["symboles", "inegalite-stricte", "piege"]
+    },
+    {
+      "id": "5E-CH08-021",
+      "lecon": "Comparer deux nombres relatifs",
+      "type": "formule",
+      "recto": "De quel côté le symbole $<$ ou $>$ s'ouvre-t-il dans une comparaison ?",
+      "verso": "Il s'ouvre toujours du côté du plus grand nombre, et sa pointe désigne le plus petit. Dans $-8 < -7{,}6$, l'ouverture est tournée vers $-7{,}6$.",
+      "difficulte": 2,
+      "tags": ["symboles", "ecriture"]
+    },
+    {
+      "id": "5E-CH08-022",
+      "lecon": "Comparer deux nombres relatifs",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on un encadrement d'un nombre $a$ ?",
+      "verso": "C'est une écriture du type $-3 \\le a \\le -1$, qui donne d'un seul coup une borne en dessous et une borne au-dessus. Elle se coupe en deux morceaux : $-3 \\le a$ d'une part, $a \\le -1$ d'autre part.",
+      "difficulte": 2,
+      "tags": ["encadrement", "definition"]
+    },
+    {
+      "id": "5E-CH08-023",
+      "lecon": "Comparer deux nombres relatifs",
+      "type": "formule",
+      "recto": "Quelle conséquence a le remplacement des symboles larges par des symboles stricts dans l'encadrement $-3 \\le a \\le -1$ ?",
+      "verso": "Les bornes ne sont plus autorisées. Avec $-3 \\le a \\le -1$, les entiers sont $-3$, $-2$ et $-1$ ; avec $-3 < a < -1$, il ne reste que $-2$.",
+      "difficulte": 3,
+      "tags": ["encadrement", "bornes", "symboles"]
+    },
+    {
+      "id": "5E-CH08-024",
+      "lecon": "Ranger des nombres relatifs",
+      "type": "definition",
+      "recto": "Quelle différence y a-t-il entre l'ordre croissant et l'ordre décroissant ?",
+      "verso": "L'ordre croissant va du plus petit au plus grand : on lit l'axe dans le sens de la flèche. L'ordre décroissant va du plus grand au plus petit : on lit l'axe à l'envers.",
+      "difficulte": 1,
+      "tags": ["rangement", "croissant", "decroissant"]
+    },
+    {
+      "id": "5E-CH08-025",
+      "lecon": "Ranger des nombres relatifs",
+      "type": "formule",
+      "recto": "En quels paquets sépare-t-on une liste de relatifs pour la ranger plus vite ?",
+      "verso": "En trois paquets : les négatifs, le zéro s'il y est, les positifs. Le premier est entièrement à gauche du deuxième, qui est entièrement à gauche du troisième.",
+      "difficulte": 2,
+      "tags": ["rangement", "methode"]
+    },
+    {
+      "id": "5E-CH08-026",
+      "lecon": "Ranger des nombres relatifs",
+      "type": "formule",
+      "recto": "Quelle règle d'écriture faut-il respecter dans une chaîne d'inégalités qui range plusieurs nombres ?",
+      "verso": "On garde le même symbole du début à la fin, comme dans $-9{,}2 < -2{,}3 < 0 < +1{,}4$. On ne mélange jamais $<$ et $>$ sur la même ligne.",
+      "difficulte": 2,
+      "tags": ["rangement", "ecriture", "chaine-d-inegalites"]
+    },
+    {
+      "id": "5E-CH08-027",
+      "lecon": "Ranger des nombres relatifs",
+      "type": "formule",
+      "recto": "Quel contrôle simple permet de vérifier qu'aucun nombre n'a été oublié dans un rangement ?",
+      "verso": "On recompte les nombres de la chaîne obtenue et on compare ce total à celui de la liste de départ.",
+      "difficulte": 1,
+      "tags": ["rangement", "verification"]
+    },
+    {
+      "id": "5E-CH08-028",
+      "lecon": "Ranger des nombres relatifs",
+      "type": "definition",
+      "recto": "Que signifie encadrer un nombre par deux entiers consécutifs ?",
+      "verso": "C'est trouver l'entier juste avant et l'entier juste après ce nombre. Par exemple $-5 < -4{,}2 < -4$.",
+      "difficulte": 2,
+      "tags": ["encadrement", "entiers-consecutifs"]
+    },
+    {
+      "id": "5E-CH08-029",
+      "lecon": "Ranger des nombres relatifs",
+      "type": "formule",
+      "recto": "Pourquoi $-4{,}2$ est-il compris entre $-5$ et $-4$, et non entre $-4$ et $-3$ ?",
+      "verso": "Parce que chez les négatifs le mouvement se fait dans l'autre sens : $-4{,}2$ est plus à gauche que $-4$. L'encadrement correct est $-5 < -4{,}2 < -4$.",
+      "difficulte": 3,
+      "tags": ["encadrement", "piege", "nombres-negatifs"]
+    },
+    {
+      "id": "5E-CH08-030",
+      "lecon": "Ranger des nombres relatifs",
+      "type": "definition",
+      "recto": "Que veut dire intercaler des nombres entre deux autres ?",
+      "verso": "C'est chercher les nombres qui tiennent entre eux. Entre $-4{,}2$ et $-1{,}8$, on peut placer les entiers $-4$, $-3$ et $-2$.",
+      "difficulte": 2,
+      "tags": ["intercaler", "definition"]
+    },
+    {
+      "id": "5E-CH08-031",
+      "lecon": "Ranger des nombres relatifs",
+      "type": "formule",
+      "recto": "Comment encadre-t-on $-5{,}583$ par deux décimaux à deux chiffres après la virgule ?",
+      "verso": "On cherche les deux nombres à deux décimales qui l'entourent, ce qui donne $-5{,}59 < -5{,}583 < -5{,}58$.",
+      "difficulte": 3,
+      "tags": ["encadrement", "decimaux"]
+    },
+    {
+      "id": "5E-CH08-032",
+      "lecon": "Ranger des nombres relatifs",
+      "type": "formule",
+      "recto": "Comment calcule-t-on la distance entre deux points situés du même côté de zéro ?",
+      "verso": "On retranche la plus petite des deux distances à zéro de la plus grande. Un plongeur qui passe de $-12$ m à $-4$ m remonte de $12 - 4 = 8$ m.",
+      "difficulte": 2,
+      "tags": ["distance", "meme-cote"]
+    },
+    {
+      "id": "5E-CH08-033",
+      "lecon": "Ranger des nombres relatifs",
+      "type": "formule",
+      "recto": "Comment calcule-t-on la distance entre deux points situés de part et d'autre de zéro ?",
+      "verso": "On ajoute leurs deux distances à zéro, car elles se suivent sans se chevaucher. Entre $-3$ et $+4$, l'écart vaut $3 + 4 = 7$, et non $1$.",
+      "difficulte": 2,
+      "tags": ["distance", "part-et-d-autre", "piege"]
+    }
+  ]
+}

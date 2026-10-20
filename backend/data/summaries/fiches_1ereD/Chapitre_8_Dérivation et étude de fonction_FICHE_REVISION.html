@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Fiche de revision - 1ere D - Chapitre 8 : Derivation et etude de fonction</title>
+<style>
+/* ===================================================================
+   FICHE DE REVISION, Collection Hakili Lab, Edition 2026
+   Feuille de style autonome, format A4 pret a imprimer.
+   Bleu #005CB9 · Vert #49A145
+   =================================================================== */
+:root{
+  --bleu:#005CB9; --bleu-fonce:#00429A; --bleu-pale:#E8F1FB; --bleu-bord:#B7D2EE;
+  --vert:#49A145; --vert-fonce:#2F7A2C; --vert-pale:#EDF7EC; --vert-bord:#BCE0B9;
+  --gris:#4A4A4A; --gris-clair:#E4E4E4; --rouge:#B3261E;
+}
+@page{
+  size:A4; margin:15mm;
+  @bottom-center{
+    content:"Collection Hakili Lab, Edition 2026  ·  Fiche de revision  ·  " counter(page) "/" counter(pages);
+    font-family:"Segoe UI",Calibri,Arial,sans-serif; font-size:6.6pt; color:#8A8A8A;
+  }
+}
+*{box-sizing:border-box;}
+body{
+  margin:0; font-family:"Segoe UI",Calibri,Arial,sans-serif;
+  font-size:8.4pt; line-height:1.26; color:#1B1B1B;
+}
+p{margin:0 0 3pt;}
+ul{margin:0 0 3pt; padding-left:11pt;}
+li{margin:0 0 1.2pt;}
+b,strong{color:var(--bleu-fonce);}
+
+/* ------------------------------ ENTETE ---------------------------- */
+.entete{
+  display:flex; align-items:stretch; border:1.6pt solid var(--bleu);
+  border-radius:2.5pt; overflow:hidden; margin-bottom:6pt;
+}
+.entete .num{
+  background:var(--bleu); color:#fff; font-size:20pt; font-weight:700;
+  padding:0 8pt; display:flex; align-items:center; justify-content:center; min-width:34pt;
+}
+.entete .txt{padding:3.5pt 8pt; flex:1;}
+.entete .niveau{
+  font-size:7pt; font-weight:700; letter-spacing:.9pt; color:var(--vert-fonce);
+}
+.entete h1{margin:0; font-size:13.5pt; line-height:1.12; color:var(--bleu-fonce); font-weight:700;}
+.entete .sous{font-size:7pt; color:var(--gris); margin-top:1pt;}
+
+/* --------------------------- BANDEAUX ----------------------------- */
+.bandeau{
+  color:#fff; font-weight:700; font-size:9pt; letter-spacing:1pt;
+  padding:2.4pt 7pt; border-radius:2pt; margin:3pt 0 4pt; break-after:avoid; page-break-after:avoid;
+}
+.bandeau.bleu{background:var(--bleu);}
+.bandeau.vert{background:var(--vert);}
+
+/* --------------------------- COLONNES ----------------------------- */
+.cols{column-count:2; column-gap:7mm; column-fill:balance;}
+
+.cols.bal{column-fill:balance;}
+.bloc{margin-bottom:5pt;}
+.keep{break-inside:avoid; page-break-inside:avoid;}
+
+/* --------------------------- LECONS ------------------------------- */
+h2.lecon{
+  margin:0 0 3pt; font-size:8.6pt; font-weight:700; color:#fff; background:var(--bleu-fonce);
+  padding:1.8pt 5pt; border-radius:1.5pt; break-after:avoid; page-break-after:avoid;
+}
+h3.rub{
+  margin:3.5pt 0 1.5pt; font-size:8.2pt; font-weight:700; color:var(--vert-fonce);
+  border-bottom:.7pt solid var(--vert-bord); padding-bottom:.8pt;
+  break-after:avoid; page-break-after:avoid;
+}
+
+/* --------------------------- ENCADRES ----------------------------- */
+.form{
+  background:var(--bleu-pale); border:.8pt solid var(--bleu-bord); border-left:2.6pt solid var(--bleu);
+  border-radius:2pt; padding:2.4pt 5pt; margin:2.2pt 0 3.4pt;
+  break-inside:avoid; page-break-inside:avoid;
+}
+.form .t{
+  display:block; font-size:6.8pt; font-weight:700; letter-spacing:.6pt;
+  color:var(--bleu); margin-bottom:1.5pt;
+}
+.form .c{text-align:center; font-size:9.1pt; margin:1.6pt 0;}
+.note{background:var(--vert-pale); border-left:2.4pt solid var(--vert); padding:2.4pt 5pt; border-radius:1.5pt; margin:2.5pt 0 4pt; break-inside:avoid;}
+
+/* --------------------------- TABLEAUX ----------------------------- */
+table{width:100%; border-collapse:collapse; font-size:7.6pt; margin:2pt 0 4pt; break-inside:avoid;}
+th{background:var(--bleu); color:#fff; font-weight:700; text-align:left; padding:1.8pt 4pt; font-size:7.2pt;}
+td{border:.6pt solid var(--gris-clair); padding:1.8pt 4pt; vertical-align:top;}
+tr{break-inside:avoid;}
+table.var td{text-align:center; font-size:8pt;}
+table.var td.lab{text-align:left; font-weight:700; color:var(--bleu-fonce); background:var(--bleu-pale);}
+
+/* ----------------------------- PIEGES ----------------------------- */
+table.pieges th:first-child{width:44%;}
+table.pieges td:first-child{color:var(--rouge); background:#FDF1F0;}
+.x{font-weight:700;}
+.v{color:var(--vert-fonce); font-weight:700;}
+
+/* ---------------------------- RECAP ------------------------------- */
+ol.recap{margin:0; padding-left:0; list-style:none; counter-reset:r;}
+ol.recap li{
+  counter-increment:r; position:relative; padding-left:13pt; margin-bottom:1.8pt;
+  break-inside:avoid;
+}
+ol.recap li::before{
+  content:counter(r); position:absolute; left:0; top:.3pt;
+  width:10pt; height:10pt; border-radius:50%; background:var(--vert); color:#fff;
+  font-size:6.6pt; font-weight:700; text-align:center; line-height:10pt;
+}
+
+/* --------------------------- MATHS -------------------------------- */
+.m{font-family:Cambria,Georgia,"Times New Roman",serif;}
+i,var{font-family:Cambria,Georgia,"Times New Roman",serif; font-style:italic;}
+.op{font-family:Cambria,Georgia,"Times New Roman",serif; font-style:normal;}
+.f{display:inline-block; vertical-align:middle; text-align:center;
+   margin:0 .12em; line-height:1.06; font-family:Cambria,Georgia,"Times New Roman",serif;}
+.f>span{display:block; padding:0 .2em;}
+.f>span:first-child{border-bottom:.6pt solid currentColor; padding-bottom:.08em;}
+.f>span:last-child{padding-top:.04em;}
+.rad{border-top:.6pt solid currentColor; padding-top:.12em;}
+/* line-height:0 evite que l'exposant n'ecarte les lignes ; position:relative le
+   repositionne sans qu'il heurte la barre de fraction ni le trait du radical. */
+sup,sub{font-size:.68em; line-height:0; position:relative; vertical-align:baseline;}
+sup{top:-.42em;}
+sub{bottom:-.22em;}
+.pt{white-space:nowrap;}
+/* Les fleches n'ont qu'un glyphe atrophie dans la fonte serif : on les force
+   en sans-serif, ou elles sont franches meme a 8 pt. */
+.ar{font-family:"Segoe UI",Calibri,Arial,"DejaVu Sans",sans-serif; font-style:normal;}
+
+/* ------------------- PIEGES : blocs erreur / correction ------------- */
+.pg{font-size:8.1pt; border-left:2.4pt solid var(--rouge); background:#FDF1F0; border-radius:1.5pt;
+    padding:2pt 5pt; margin:0 0 2.8pt; break-inside:avoid; page-break-inside:avoid;}
+.pg .err{color:var(--rouge); font-weight:600;}
+.pg .cor{color:#1B1B1B; margin-top:.8pt;}
+.pg .cor b{color:var(--bleu-fonce);}
+.v{color:var(--vert-fonce); font-weight:700;}
+
+</style>
+</head>
+<body>
+<header class="entete">
+  <div class="num">8</div>
+  <div class="txt">
+    <div class="niveau">1ERE D &middot; MATHEMATIQUES</div>
+    <h1>Dérivation et étude de fonction</h1>
+    <div class="sous">Leçon 1 : dérivation en un point &middot; Leçon 2 : équation de la tangente &middot; Leçon 3 : fonction dérivée &middot; Leçon 4 : application à l'étude des variations &middot; Leçon 5 : étude complète et fonctions associées</div>
+  </div>
+</header>
+
+<div class="bandeau bleu" style="margin-top:0">L'ESSENTIEL</div>
+<div class="cols">
+
+<!-- ================= LECON 1 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 1&nbsp;: Dérivation en un point</h2>
+<p>Soit <i>f</i> définie sur un intervalle contenant <i>a</i>. Le <b>taux de variation</b> de <i>f</i> entre <i>a</i> et <i>a</i>&#8239;+&#8239;<i>h</i> (pour <i>h</i>&#8239;&#8800;&#8239;0) est <span class="pt"><i>T</i>(<i>h</i>)&#8239;=&#8239;<span class="f"><span><i>f</i>(<i>a</i>&#8239;+&#8239;<i>h</i>)&#8239;&#8722;&#8239;<i>f</i>(<i>a</i>)</span><span><i>h</i></span></span></span>.</p></div>
+<div class="form">
+  <span class="t">NOMBRE DERIVE&nbsp;: LIMITE FINIE EXIGEE</span>
+  <div class="c m"><i>f</i>&#8242;(<i>a</i>)&#8239;=&#8239;<span class="pt">lim<sub><i>h</i><span class="ar">&#8594;</span>0</sub>&#8239;<span class="f"><span><i>f</i>(<i>a</i>&#8239;+&#8239;<i>h</i>)&#8239;&#8722;&#8239;<i>f</i>(<i>a</i>)</span><span><i>h</i></span></span></span>&#8239;=&#8239;<span class="pt">lim<sub><i>x</i><span class="ar">&#8594;</span><i>a</i></sub>&#8239;<span class="f"><span><i>f</i>(<i>x</i>)&#8239;&#8722;&#8239;<i>f</i>(<i>a</i>)</span><span><i>x</i>&#8239;&#8722;&#8239;<i>a</i></span></span></span></div>
+</div>
+<p><i>f</i> est <b>dérivable en <i>a</i></b> si ce taux admet une limite <b>finie</b> ; cette limite est le <b>nombre dérivé</b> <i>f</i>&#8242;(<i>a</i>). Les deux écritures coïncident (poser <i>x</i>&#8239;=&#8239;<i>a</i>&#8239;+&#8239;<i>h</i>). On <b>simplifie par <i>h</i></b> (licite car <i>h</i>&#8239;&#8800;&#8239;0) <b>avant</b> de faire tendre <i>h</i> vers 0.</p>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Les deux lectures de <span class="m"><i>f</i>&#8242;(<i>a</i>)</span></h3>
+<ul>
+<li><b>Géométrique</b> : <i>f</i>&#8242;(<i>a</i>) est la <b>pente</b> (coefficient directeur) de la <b>tangente</b> au point d'abscisse <i>a</i>, position limite des sécantes.</li>
+<li><b>Cinématique</b> : si <i>f</i>(<i>t</i>) est la position d'un mobile, <i>f</i>&#8242;(<i>a</i>) est la <b>vitesse instantanée</b> en <i>a</i> ; la dérivée de <i>f</i>&#8242; décrit l'<b>accélération</b>.</li>
+<li>La fonction qui, à chaque <i>x</i> <b>où <i>f</i> est dérivable</b>, associe <i>f</i>&#8242;(<i>x</i>) est la <b>fonction dérivée</b> <i>f</i>&#8242;.</li>
+</ul>
+<div class="form">
+  <span class="t">APPROXIMATION AFFINE&nbsp;: POUR <i>h</i> PROCHE DE 0</span>
+  <div class="c m"><i>f</i>(<i>a</i>&#8239;+&#8239;<i>h</i>)&#8239;&#8776;&#8239;<i>f</i>(<i>a</i>)&#8239;+&#8239;<i>h</i>&#8239;<i>f</i>&#8242;(<i>a</i>)</div>
+  <div class="c m">(1&#8239;+&#8239;<i>h</i>)<sup>2</sup>&#8239;&#8776;&#8239;1&#8239;+&#8239;2<i>h</i> &nbsp;&nbsp; (1&#8239;+&#8239;<i>h</i>)<sup>3</sup>&#8239;&#8776;&#8239;1&#8239;+&#8239;3<i>h</i> &nbsp;&nbsp; (1&#8239;+&#8239;<i>h</i>)<sup><i>n</i></sup>&#8239;&#8776;&#8239;1&#8239;+&#8239;<i>nh</i></div>
+</div>
+<p><b>Non-dérivabilité</b>, deux cas. <b>Tangente verticale</b> : pour &#8730;<span class="rad"><i>x</i></span> en 0, le taux <span class="pt"><span class="f"><span>1</span><span>&#8730;<span class="rad"><i>h</i></span></span></span></span> tend vers +&#8734; : limite <b>infinie</b>, demi-tangente verticale. <b>Point anguleux</b> : pour |<i>x</i>| en 0, le taux <span class="pt"><span class="f"><span>|<i>h</i>|</span><span><i>h</i></span></span></span> vaut 1 si <i>h</i>&#8239;&gt;&#8239;0 et &#8722;1 si <i>h</i>&#8239;&lt;&#8239;0, les nombres dérivés <b>à droite et à gauche diffèrent</b> (un <b>coin</b>).</p>
+</div>
+
+<!-- ================= LECON 2 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 2&nbsp;: Equation de la tangente</h2>
+<p>Soit <i>f</i> dérivable en <i>a</i>. La <b>tangente</b> à sa courbe (<i>C</i>) au point <span class="pt">A(<i>a</i>&#8239;;&#8239;<i>f</i>(<i>a</i>))</span> a pour coefficient directeur <i>f</i>&#8242;(<i>a</i>).</p></div>
+<div class="form">
+  <span class="t">EQUATION DE LA TANGENTE AU POINT D'ABSCISSE <i>a</i></span>
+  <div class="c m"><i>y</i>&#8239;=&#8239;<i>f</i>&#8242;(<i>a</i>)&#8239;(<i>x</i>&#8239;&#8722;&#8239;<i>a</i>)&#8239;+&#8239;<i>f</i>(<i>a</i>)</div>
+</div>
+<p>La <b>pente <i>f</i>&#8242;(<i>a</i>) multiplie</b> la parenthèse, l'<b>ordonnée <i>f</i>(<i>a</i>) s'ajoute</b>. Tangente <b>horizontale</b> si <i>f</i>&#8242;(<i>a</i>)&#8239;=&#8239;0 : son équation est alors <i>y</i>&#8239;=&#8239;<i>f</i>(<i>a</i>).</p>
+<p>Dans un repère orthonormé, face à la droite <i>y</i>&#8239;=&#8239;<i>mx</i>&#8239;+&#8239;<i>p</i> : <b>parallèle</b> <span class="ar">&#8660;</span> <span class="pt"><i>f</i>&#8242;(<i>a</i>)&#8239;=&#8239;<i>m</i></span> &nbsp;&middot;&nbsp; <b>perpendiculaire</b> <span class="ar">&#8660;</span> <span class="pt"><i>f</i>&#8242;(<i>a</i>)&#8239;&#215;&#8239;<i>m</i>&#8239;=&#8239;&#8722;1</span>, soit <span class="pt"><i>f</i>&#8242;(<i>a</i>)&#8239;=&#8239;&#8722;<span class="f"><span>1</span><span><i>m</i></span></span></span>. Chercher ces points, c'est <b>résoudre une équation</b> d'inconnue <i>a</i> puis calculer <i>f</i>(<i>a</i>). Si la tangente doit seulement <b>passer par</b> un point B extérieur à (<i>C</i>), le contact est <b>inconnu</b> : le nommer <i>a</i>, écrire (<i>T<sub>a</sub></i>), y reporter B.</p>
+</div>
+
+<!-- ================= LECON 3 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 3&nbsp;: Fonction dérivée</h2>
+<h3 class="rub">Dérivées usuelles</h3>
+<table>
+<tr><th><span class="m"><i>f</i>(<i>x</i>)</span></th><th><span class="m"><i>f</i>&#8242;(<i>x</i>)</span></th><th>Valable pour</th></tr>
+<tr><td class="m"><i>c</i> (constante)</td><td class="m">0</td><td><i>x</i>&#8239;&#8712;&#8239;&#8477;</td></tr>
+<tr><td class="m"><i>x</i></td><td class="m">1</td><td><i>x</i>&#8239;&#8712;&#8239;&#8477;</td></tr>
+<tr><td class="m"><i>x</i><sup><i>n</i></sup>, <i>n</i> entier &#8805;&#8239;1</td><td class="m"><i>n</i>&#8239;<i>x</i><sup><i>n</i>&#8722;1</sup></td><td><i>x</i>&#8239;&#8712;&#8239;&#8477;</td></tr>
+<tr><td class="m"><span class="f"><span>1</span><span><i>x</i></span></span></td><td class="m">&#8722;<span class="f"><span>1</span><span><i>x</i><sup>2</sup></span></span></td><td><i>x</i>&#8239;&#8800;&#8239;0</td></tr>
+<tr><td class="m"><span class="f"><span>1</span><span><i>x</i><sup><i>n</i></sup></span></span></td><td class="m">&#8722;<span class="f"><span><i>n</i></span><span><i>x</i><sup><i>n</i>+1</sup></span></span></td><td><i>x</i>&#8239;&#8800;&#8239;0</td></tr>
+<tr><td class="m">&#8730;<span class="rad"><i>x</i></span></td><td class="m"><span class="f"><span>1</span><span>2&#8730;<span class="rad"><i>x</i></span></span></span></td><td><i>x</i>&#8239;&gt;&#8239;0</td></tr>
+<tr><td class="m"><span class="op">sin</span>&#8239;<i>x</i></td><td class="m"><span class="op">cos</span>&#8239;<i>x</i></td><td><i>x</i>&#8239;&#8712;&#8239;&#8477;</td></tr>
+<tr><td class="m"><span class="op">cos</span>&#8239;<i>x</i></td><td class="m">&#8722;<span class="op">sin</span>&#8239;<i>x</i></td><td><i>x</i>&#8239;&#8712;&#8239;&#8477;</td></tr>
+<tr><td class="m"><span class="op">tan</span>&#8239;<i>x</i></td><td class="m">1&#8239;+&#8239;<span class="op">tan</span><sup>2</sup><i>x</i>&#8239;=&#8239;<span class="f"><span>1</span><span><span class="op">cos</span><sup>2</sup><i>x</i></span></span></td><td><span class="op">cos</span>&#8239;<i>x</i>&#8239;&#8800;&#8239;0</td></tr>
+</table></div>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Opérations&nbsp;: <span class="m"><i>u</i></span>, <span class="m"><i>v</i></span> dérivables sur un même intervalle, <span class="m">&#955;</span> réel</h3>
+<div class="form">
+  <span class="t">OPERATIONS SUR LES DERIVEES</span>
+  <div class="c m">(<i>u</i>&#8239;+&#8239;<i>v</i>)&#8242;&#8239;=&#8239;<i>u</i>&#8242;&#8239;+&#8239;<i>v</i>&#8242; &nbsp;&nbsp;&nbsp; (&#955;<i>u</i>)&#8242;&#8239;=&#8239;&#955;<i>u</i>&#8242; &nbsp;&nbsp;&nbsp; (<i>uv</i>)&#8242;&#8239;=&#8239;<i>u</i>&#8242;<i>v</i>&#8239;+&#8239;<i>uv</i>&#8242;</div>
+  <div class="c m">(<span class="pt"><span class="f"><span>1</span><span><i>v</i></span></span></span>)&#8242;&#8239;=&#8239;&#8722;<span class="f"><span><i>v</i>&#8242;</span><span><i>v</i><sup>2</sup></span></span> &nbsp;&nbsp;&nbsp; (<span class="pt"><span class="f"><span><i>u</i></span><span><i>v</i></span></span></span>)&#8242;&#8239;=&#8239;<span class="f"><span><i>u</i>&#8242;<i>v</i>&#8239;&#8722;&#8239;<i>uv</i>&#8242;</span><span><i>v</i><sup>2</sup></span></span> &nbsp;&nbsp;(<i>v</i>&#8239;&#8800;&#8239;0)</div>
+</div>
+<p>Au numérateur du quotient, c'est <b><i>u</i>&#8242;<i>v</i> moins <i>uv</i>&#8242;</b> : l'ordre n'est <b>pas</b> interchangeable, l'échanger change le <b>signe</b> de la dérivée. Le dénominateur est <b>au carré</b>.</p>
+<div class="form">
+  <span class="t">COMPOSEES&nbsp;: <i>a</i>, <i>b</i> REELS ET <i>u</i>&#8239;&gt;&#8239;0 POUR LA RACINE</span>
+  <div class="c m">(<i>f</i>(<i>ax</i>&#8239;+&#8239;<i>b</i>))&#8242;&#8239;=&#8239;<i>a</i>&#8239;<i>f</i>&#8242;(<i>ax</i>&#8239;+&#8239;<i>b</i>)</div>
+  <div class="c m">(<i>u</i><sup><i>n</i></sup>)&#8242;&#8239;=&#8239;<i>n</i>&#8239;<i>u</i>&#8242;&#8239;<i>u</i><sup><i>n</i>&#8722;1</sup> &nbsp;&nbsp;&nbsp; (&#8730;<span class="rad"><i>u</i></span>)&#8242;&#8239;=&#8239;<span class="f"><span><i>u</i>&#8242;</span><span>2&#8730;<span class="rad"><i>u</i></span></span></span></div>
+</div>
+<p>On dérive comme d'habitude, puis on <b>multiplie par <i>a</i></b> (ou par <i>u</i>&#8242;) : <span class="pt">(<span class="op">sin</span>(<i>ax</i>&#8239;+&#8239;<i>b</i>))&#8242;&#8239;=&#8239;<i>a</i>&#8239;<span class="op">cos</span>(<i>ax</i>&#8239;+&#8239;<i>b</i>)</span> &middot; <span class="pt">(<span class="op">cos</span>(<i>ax</i>&#8239;+&#8239;<i>b</i>))&#8242;&#8239;=&#8239;&#8722;<i>a</i>&#8239;<span class="op">sin</span>(<i>ax</i>&#8239;+&#8239;<i>b</i>)</span> &middot; <span class="pt">(&#8730;<span class="rad"><i>ax</i>&#8239;+&#8239;<i>b</i></span>)&#8242;&#8239;=&#8239;<span class="f"><span><i>a</i></span><span>2&#8730;<span class="rad"><i>ax</i>&#8239;+&#8239;<i>b</i></span></span></span></span> &middot; <span class="pt">(<span class="op">tan</span>(<i>ax</i>&#8239;+&#8239;<i>b</i>))&#8242;&#8239;=&#8239;<i>a</i>(1&#8239;+&#8239;<span class="op">tan</span><sup>2</sup>(<i>ax</i>&#8239;+&#8239;<i>b</i>))</span>. <b>Préciser l'ensemble de dérivabilité</b> avant tout calcul : retirer les valeurs qui annulent un dénominateur ou la quantité sous une racine. Laisser <b>factorisée</b> une dérivée dont on étudiera le signe.</p>
+</div>
+
+<!-- ================= LECON 4 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 4&nbsp;: Application à l'étude des variations</h2>
+<div class="form">
+  <span class="t">SIGNE DE <i>f</i>&#8242; ET SENS DE VARIATION&nbsp;: SUR UN INTERVALLE <i>I</i></span>
+  <div class="c m"><i>f</i>&#8242;&#8239;&#8805;&#8239;0 <span class="ar">&#8658;</span> croissante &nbsp;&middot;&nbsp; <i>f</i>&#8242;&#8239;&gt;&#8239;0 <span class="ar">&#8658;</span> strictement croissante</div>
+  <div class="c m"><i>f</i>&#8242;&#8239;&#8804;&#8239;0 <span class="ar">&#8658;</span> décroissante &nbsp;&middot;&nbsp; <i>f</i>&#8242;&#8239;&lt;&#8239;0 <span class="ar">&#8658;</span> strictement décroissante</div>
+  <div class="c m"><i>f</i>&#8242;&#8239;=&#8239;0 sur <i>I</i> tout entier <span class="ar">&#8658;</span> <i>f</i> constante sur <i>I</i></div>
+</div></div>
+<p>Le mot <b>intervalle</b> est indispensable : si le domaine est une <b>réunion</b> d'intervalles, on conclut <b>intervalle par intervalle</b>, une <b>double barre</b> marquant la coupure qu'aucune flèche ne traverse.</p>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Extremum local</h3>
+<ul>
+<li>Soit <i>f</i> dérivable sur un intervalle <b>ouvert</b> contenant <i>a</i>. Si <i>f</i> admet un <b>extremum local</b> en <i>a</i>, alors <i>f</i>&#8242;(<i>a</i>)&#8239;=&#8239;0 : la tangente y est <b>horizontale</b>.</li>
+<li><b>Réciproque à manier avec soin</b> : <i>f</i>&#8242;(<i>a</i>)&#8239;=&#8239;0 <b>ne suffit pas</b>. Il y a extremum en <i>a</i> <b>si et seulement si <i>f</i>&#8242; change de signe</b> en <i>a</i>&nbsp;: de &#8722; à + pour un <b>minimum</b>, de + à &#8722; pour un <b>maximum</b>.</li>
+<li>Si <i>f</i>&#8242; s'annule <b>sans changer de signe</b>, <b>pas d'extremum</b> : ainsi <i>x</i><sup>3</sup> en 0, où la courbe <b>traverse</b> sa tangente horizontale : c'est un <b>point d'inflexion</b>. Toute courbe du <b>troisième degré</b> en possède un, et ce point est aussi son <b>centre de symétrie</b>.</li>
+</ul>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Stricte monotonie, bijection, unicité</h3>
+<p>Soit <i>f</i> dérivable sur un intervalle <i>I</i>, avec <i>f</i>&#8242;&#8239;&gt;&#8239;0 sur <i>I</i> (ou <i>f</i>&#8242;&#8239;&lt;&#8239;0 sur <i>I</i>). Alors <i>f</i> est <b>strictement monotone</b> et réalise une <b>bijection</b> de <i>I</i> sur l'intervalle image <i>f</i>(<i>I</i>) : l'équation <i>f</i>(<i>x</i>)&#8239;=&#8239;&#955; admet <b>au plus une</b> solution dans <i>I</i>, et <b>exactement une</b> lorsque &#955;&#8239;&#8712;&#8239;<i>f</i>(<i>I</i>). Sur <span class="pt">[&#945;&#8239;;&#8239;&#946;]</span> où <i>f</i> croît strictement, <span class="pt"><i>f</i>([&#945;&#8239;;&#8239;&#946;])&#8239;=&#8239;[<i>f</i>(&#945;)&#8239;;&#8239;<i>f</i>(&#946;)]</span> : il suffit que &#955; soit compris entre <i>f</i>(&#945;) et <i>f</i>(&#946;). La <b>monotonie donne l'unicité</b>, l'<b>appartenance à <i>f</i>(<i>I</i>) l'existence</b>.</p>
+</div>
+
+<!-- ================= LECON 5 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 5&nbsp;: Etude complète et fonctions associées</h2>
+<h3 class="rub">Plan d'une étude complète</h3>
+<p><b>1.</b> <b>Ensemble de définition</b> <i>D<sub>f</sub></i>, puis <b>ensemble d'étude</b> <i>D<sub>E</sub></i> si une parité, une périodicité ou une symétrie le réduit. &nbsp;<b>2.</b> <b>Limites aux bornes</b> de <i>D<sub>E</sub></i> et <b>asymptotes</b>, avec la <b>position</b> de la courbe. &nbsp;<b>3.</b> <b>Dérivée</b> <i>f</i>&#8242; et son <b>signe</b> après factorisation. &nbsp;<b>4.</b> <b>Tableau de variation</b> : limites aux bornes, <b>extremums chiffrés</b>. &nbsp;<b>5.</b> <b>Points particuliers</b> : intersections avec les axes, quelques images, tangentes remarquables. &nbsp;<b>6.</b> <b>Tracé</b> : asymptotes en pointillés, points remarquables, courbe conforme au tableau, puis symétrie.</p></div>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Ensemble d'étude et symétries</h3>
+<p>Soit <i>D<sub>f</sub></i> <b>symétrique par rapport à 0</b>. <i>f</i> est <b>paire</b> si <span class="pt"><i>f</i>(&#8722;<i>x</i>)&#8239;=&#8239;<i>f</i>(<i>x</i>)</span> pour tout <i>x</i> de <i>D<sub>f</sub></i> : l'<b>axe des ordonnées</b> est axe de symétrie ; <b>impaire</b> si <span class="pt"><i>f</i>(&#8722;<i>x</i>)&#8239;=&#8239;&#8722;<i>f</i>(<i>x</i>)</span> : l'<b>origine</b> O est centre de symétrie. On étudie alors <i>f</i> sur <span class="pt"><i>D<sub>f</sub></i>&#8239;&#8745;&#8239;[0&#8239;;&#8239;+&#8734;[</span>, puis on complète par symétrie. Si <span class="pt"><i>f</i>(<i>x</i>&#8239;+&#8239;<i>T</i>)&#8239;=&#8239;<i>f</i>(<i>x</i>)</span> pour tout <i>x</i>, <i>f</i> est <b>périodique de période <i>T</i></b> : on l'étudie sur un intervalle de longueur <i>T</i>, puis on reproduit le motif par translations de vecteur <span style="border-top:.6pt solid;padding-top:.5pt"><i>T</i>&#8239;<i>i</i></span>.</p>
+<div class="form">
+  <span class="t">ELEMENTS DE SYMETRIE&nbsp;: POUR TOUT <i>h</i> TEL QUE <span class="pt"><i>a</i>&#8239;+&#8239;<i>h</i></span> ET <span class="pt"><i>a</i>&#8239;&#8722;&#8239;<i>h</i></span> SOIENT DANS <i>D<sub>f</sub></i></span>
+  <div class="c m">I(<i>a</i>&#8239;;&#8239;<i>b</i>) centre : &nbsp;<i>f</i>(<i>a</i>&#8239;+&#8239;<i>h</i>)&#8239;+&#8239;<i>f</i>(<i>a</i>&#8239;&#8722;&#8239;<i>h</i>)&#8239;=&#8239;2<i>b</i></div>
+  <div class="c m">droite <i>x</i>&#8239;=&#8239;<i>a</i> axe : &nbsp;<i>f</i>(<i>a</i>&#8239;+&#8239;<i>h</i>)&#8239;=&#8239;<i>f</i>(<i>a</i>&#8239;&#8722;&#8239;<i>h</i>)</div>
+</div>
+<p>Parité et imparité en sont les cas <i>a</i>&#8239;=&#8239;0.</p>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Asymptotes</h3>
+<p><b>Verticale</b> <i>x</i>&#8239;=&#8239;<i>x</i><sub>0</sub> si <span class="pt">lim<sub><i>x</i><span class="ar">&#8594;</span><i>x</i><sub>0</sub></sub>&#8239;<i>f</i>(<i>x</i>)&#8239;=&#8239;&#177;&#8734;</span> &nbsp;&middot;&nbsp; <b>horizontale</b> <i>y</i>&#8239;=&#8239;&#8467; si <span class="pt">lim<sub><i>x</i><span class="ar">&#8594;</span>&#177;&#8734;</sub>&#8239;<i>f</i>(<i>x</i>)&#8239;=&#8239;&#8467;</span>.</p>
+<div class="form">
+  <span class="t">ASYMPTOTE OBLIQUE EN +&#8734; OU EN &#8722;&#8734;&nbsp;: <i>a</i>&#8239;&#8800;&#8239;0</span>
+  <div class="c m">(&#916;) : <i>y</i>&#8239;=&#8239;<i>ax</i>&#8239;+&#8239;<i>b</i> <span class="ar">&#8660;</span> <span class="pt">lim&#8239;(<i>f</i>(<i>x</i>)&#8239;&#8722;&#8239;(<i>ax</i>&#8239;+&#8239;<i>b</i>))&#8239;=&#8239;0</span></div>
+  <div class="c m"><i>f</i>(<i>x</i>)&#8239;=&#8239;<i>ax</i>&#8239;+&#8239;<i>b</i>&#8239;+&#8239;&#949;(<i>x</i>) &nbsp;avec&nbsp; <span class="pt">lim<sub><i>x</i><span class="ar">&#8594;</span>&#177;&#8734;</sub>&#8239;&#949;(<i>x</i>)&#8239;=&#8239;0</span></div>
+</div>
+<p><b>Position relative</b> : le <b>signe</b> de &#949;(<i>x</i>). Positif, la courbe est <b>au-dessus</b> de (&#916;) ; négatif, <b>en dessous</b> ; nul, elle <b>coupe</b> (&#916;). Quand le degré du numérateur dépasse de 1 celui du dénominateur, la division donne cette écriture : <span class="pt"><span class="f"><span><i>x</i><sup>2</sup>&#8239;+&#8239;1</span><span><i>x</i></span></span>&#8239;=&#8239;<i>x</i>&#8239;+&#8239;<span class="f"><span>1</span><span><i>x</i></span></span></span>.</p>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Fonctions associées&nbsp;: sans nouveau calcul</h3>
+<table>
+<tr><th>Fonction</th><th>Effet sur la courbe (<i>C</i>) de <span class="m"><i>f</i></span></th></tr>
+<tr><td class="m"><i>f</i>(<i>x</i>)&#8239;+&#8239;&#955;</td><td>translation <b>verticale</b> de vecteur <span style="border-top:.6pt solid;padding-top:.5pt">&#955;&#8239;<i>j</i></span> ; vers le <b>haut</b> si &#955;&#8239;&gt;&#8239;0.</td></tr>
+<tr><td class="m"><i>f</i>(<i>x</i>&#8239;+&#8239;&#955;)</td><td>translation <b>horizontale</b> de vecteur <span style="border-top:.6pt solid;padding-top:.5pt">&#8722;&#955;&#8239;<i>i</i></span> : <i>f</i>(<i>x</i>&#8239;+&#8239;2) décale de 2 vers la <b>gauche</b>.</td></tr>
+<tr><td class="m">&#955;&#8239;<i>f</i>(<i>x</i>)</td><td><b>dilatation verticale</b> de rapport &#955; ; si &#955;&#8239;&lt;&#8239;0, symétrie d'axe (O<i>x</i>) en plus.</td></tr>
+<tr><td class="m">|<i>f</i>(<i>x</i>)|</td><td>on <b>conserve</b> la partie au-dessus de (O<i>x</i>), on <b>replie vers le haut</b> celle du dessous.</td></tr>
+<tr><td class="m"><i>f</i>(&#8722;<i>x</i>) &middot; &#8722;<i>f</i>(<i>x</i>) &middot; &#8722;<i>f</i>(&#8722;<i>x</i>)</td><td>symétrie d'axe (O<i>y</i>) &middot; d'axe (O<i>x</i>) &middot; de centre O.</td></tr>
+</table>
+<p><b>Lecture graphique.</b> Les solutions de <span class="pt"><i>f</i>(<i>x</i>)&#8239;=&#8239;&#955;</span> sont les <b>abscisses</b> des intersections avec la droite <i>y</i>&#8239;=&#8239;&#955; ; les valeurs de &#955; où leur nombre change sont les <b>extremums locaux</b>. <span class="pt"><i>f</i>(<i>x</i>)&#8239;&gt;&#8239;&#955;</span> : portions <b>au-dessus</b> de cette droite ; un maximum <i>M</i> <b>majore</b> <i>f</i> sur tout l'intervalle.</p>
+</div>
+
+</div>
+
+<div class="bandeau vert">PIEGES ET ERREURS FREQUENTES</div>
+<div class="cols">
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> (<i>uv</i>)&#8242;&#8239;=&#8239;<i>u</i>&#8242;<i>v</i>&#8242; &nbsp;&middot;&nbsp; (<span class="pt"><span class="f"><span><i>u</i></span><span><i>v</i></span></span></span>)&#8242;&#8239;=&#8239;<span class="f"><span><i>uv</i>&#8242;&#8239;&#8722;&#8239;<i>u</i>&#8242;<i>v</i></span><span><i>v</i><sup>2</sup></span></span></div><div class="cor"><span class="v">&#10003;</span> <span class="pt">(<i>uv</i>)&#8242;&#8239;=&#8239;<i>u</i>&#8242;<i>v</i>&#8239;+&#8239;<i>uv</i>&#8242;</span> ; contrôle : <span class="pt">(<i>x</i>&#8239;&#215;&#8239;<i>x</i>)&#8242;&#8239;=&#8239;2<i>x</i></span>, et non 1&#8239;&#215;&#8239;1. Au numérateur du quotient, c'est <span class="pt"><i>u</i>&#8242;<i>v</i>&#8239;&#8722;&#8239;<i>uv</i>&#8242;</span> : l'échanger inverse toutes les variations.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> <i>y</i>&#8239;=&#8239;<i>f</i>(<i>a</i>)(<i>x</i>&#8239;&#8722;&#8239;<i>a</i>)&#8239;+&#8239;<i>f</i>&#8242;(<i>a</i>) &nbsp;&middot;&nbsp; <i>f</i>(2)&#8239;=&#8239;3 donc la tangente en 2 a pour pente 3</div><div class="cor"><span class="v">&#10003;</span> <span class="pt"><i>y</i>&#8239;=&#8239;<i>f</i>&#8242;(<i>a</i>)(<i>x</i>&#8239;&#8722;&#8239;<i>a</i>)&#8239;+&#8239;<i>f</i>(<i>a</i>)</span> : la <b>pente multiplie</b> la parenthèse, l'<b>ordonnée s'ajoute</b>. La pente en 2 est <i>f</i>&#8242;(2), jamais <i>f</i>(2) : l'un est une <b>hauteur</b>, l'autre une <b>inclinaison</b>.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> (<span class="op">sin</span>(3<i>x</i>))&#8242;&#8239;=&#8239;<span class="op">cos</span>(3<i>x</i>)</div><div class="cor"><span class="v">&#10003;</span> La règle est <span class="pt">(<i>f</i>(<i>ax</i>&#8239;+&#8239;<i>b</i>))&#8242;&#8239;=&#8239;<i>a</i>&#8239;<i>f</i>&#8242;(<i>ax</i>&#8239;+&#8239;<i>b</i>)</span> : le facteur <i>a</i> ne s'oublie <b>jamais</b>, donc <span class="pt">(<span class="op">sin</span>(3<i>x</i>))&#8242;&#8239;=&#8239;3&#8239;<span class="op">cos</span>(3<i>x</i>)</span>. Poser <i>t</i>&#8239;=&#8239;3<i>x</i>, c'est aller <b>trois fois plus vite</b> : les pentes sont triplées.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> <i>f</i>&#8242;(<i>a</i>)&#8239;=&#8239;0 donc extremum en <i>a</i> &nbsp;&middot;&nbsp; <i>f</i>&#8242;&#8239;&lt;&#8239;0 sur &#8477;<sup>*</sup> donc <i>f</i> décroissante sur &#8477;<sup>*</sup></div><div class="cor"><span class="v">&#10003;</span> <i>f</i>&#8242;(<i>a</i>)&#8239;=&#8239;0 est <b>nécessaire</b>, pas suffisant : il faut que <i>f</i>&#8242; <b>change de signe</b>. Pour <i>x</i><sup>3</sup>, 3<i>x</i><sup>2</sup> s'annule en 0 en restant positive : point d'inflexion, pas d'extremum. Et le lien signe/variation ne vaut que <b>sur un intervalle</b> : <span class="pt"><span class="f"><span>1</span><span><i>x</i></span></span></span> décroît sur <span class="pt">]&#8722;&#8734;&#8239;;&#8239;0[</span> <b>et</b> sur <span class="pt">]0&#8239;;&#8239;+&#8734;[</span>, jamais sur la réunion (<span class="pt"><i>f</i>(&#8722;1)&#8239;=&#8239;&#8722;1&#8239;&lt;&#8239;<i>f</i>(1)&#8239;=&#8239;1</span>).</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> <i>f</i> est négative, donc <i>f</i> est décroissante</div><div class="cor"><span class="v">&#10003;</span> Le signe de <i>f</i> situe la courbe par rapport à (O<i>x</i>) ; celui de <i>f</i>&#8242; donne son <b>inclinaison</b>. Deux études distinctes : <span class="pt"><i>f</i>(<i>x</i>)&#8239;=&#8239;<i>x</i>&#8239;&#8722;&#8239;5</span> est négative <b>et</b> croissante en <i>x</i>&#8239;=&#8239;1.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> La courbe admet <i>y</i>&#8239;=&#8239;<i>x</i> pour asymptote, donc elle est au-dessus &nbsp;&middot;&nbsp; <i>f</i>(<i>x</i>&#8239;+&#8239;2) décale vers la droite</div><div class="cor"><span class="v">&#10003;</span> La <b>limite</b> de <span class="pt"><i>f</i>(<i>x</i>)&#8239;&#8722;&#8239;<i>x</i></span> donne l'asymptote, mais c'est son <b>signe</b> qui donne la <b>position</b> : une courbe peut <b>couper</b> son asymptote. Et <i>g</i>(<i>x</i>)&#8239;=&#8239;<i>f</i>(<i>x</i>&#8239;+&#8239;2) donne <span class="pt"><i>g</i>(&#8722;2)&#8239;=&#8239;<i>f</i>(0)</span> : décalage de 2 vers la <b>gauche</b> ; c'est <span class="pt"><i>f</i>(<i>x</i>)&#8239;+&#8239;2</span> qui décale vers le <b>haut</b>.</div></div>
+
+</div>
+
+<div class="bandeau bleu">A SAVOIR PAR COEUR AVANT LE DEVOIR</div>
+<div class="cols">
+<ol class="recap">
+<li><span class="pt"><i>f</i>&#8242;(<i>a</i>)&#8239;=&#8239;lim<sub><i>h</i><span class="ar">&#8594;</span>0</sub>&#8239;<span class="f"><span><i>f</i>(<i>a</i>&#8239;+&#8239;<i>h</i>)&#8239;&#8722;&#8239;<i>f</i>(<i>a</i>)</span><span><i>h</i></span></span></span> = <b>pente de la tangente</b> = <b>vitesse instantanée</b>. Pas de dérivabilité si la limite est <b>infinie</b> (&#8730;<span class="rad"><i>x</i></span> en 0) ou si celles de droite et de gauche <b>diffèrent</b> (|<i>x</i>| en 0).</li>
+<li><b>Tangente</b> : <span class="pt"><i>y</i>&#8239;=&#8239;<i>f</i>&#8242;(<i>a</i>)(<i>x</i>&#8239;&#8722;&#8239;<i>a</i>)&#8239;+&#8239;<i>f</i>(<i>a</i>)</span> ; horizontale si <i>f</i>&#8242;(<i>a</i>)&#8239;=&#8239;0, parallèle à <i>y</i>&#8239;=&#8239;<i>mx</i>&#8239;+&#8239;<i>p</i> si <i>f</i>&#8242;(<i>a</i>)&#8239;=&#8239;<i>m</i>, perpendiculaire si <span class="pt"><i>f</i>&#8242;(<i>a</i>)&#8239;=&#8239;&#8722;<span class="f"><span>1</span><span><i>m</i></span></span></span>. <b>Approximation affine</b> : <span class="pt"><i>f</i>(<i>a</i>&#8239;+&#8239;<i>h</i>)&#8239;&#8776;&#8239;<i>f</i>(<i>a</i>)&#8239;+&#8239;<i>hf</i>&#8242;(<i>a</i>)</span>, <span class="pt">(1&#8239;+&#8239;<i>h</i>)<sup><i>n</i></sup>&#8239;&#8776;&#8239;1&#8239;+&#8239;<i>nh</i></span>.</li>
+<li><b>Dérivées</b> : <span class="pt">(<i>x</i><sup><i>n</i></sup>)&#8242;&#8239;=&#8239;<i>nx</i><sup><i>n</i>&#8722;1</sup></span>, <span class="pt">(&#8730;<span class="rad"><i>x</i></span>)&#8242;&#8239;=&#8239;<span class="f"><span>1</span><span>2&#8730;<span class="rad"><i>x</i></span></span></span></span>, <span class="pt">(<span class="f"><span>1</span><span><i>x</i></span></span>)&#8242;&#8239;=&#8239;&#8722;<span class="f"><span>1</span><span><i>x</i><sup>2</sup></span></span></span>, <span class="pt">(<span class="op">sin</span>)&#8242;&#8239;=&#8239;<span class="op">cos</span></span>, <span class="pt">(<span class="op">cos</span>)&#8242;&#8239;=&#8239;&#8722;<span class="op">sin</span></span>, <span class="pt">(<span class="op">tan</span>)&#8242;&#8239;=&#8239;1&#8239;+&#8239;<span class="op">tan</span><sup>2</sup></span>.</li>
+<li><b>Opérations</b> : <span class="pt">(<i>uv</i>)&#8242;&#8239;=&#8239;<i>u</i>&#8242;<i>v</i>&#8239;+&#8239;<i>uv</i>&#8242;</span>, <span class="pt">(<span class="f"><span><i>u</i></span><span><i>v</i></span></span>)&#8242;&#8239;=&#8239;<span class="f"><span><i>u</i>&#8242;<i>v</i>&#8239;&#8722;&#8239;<i>uv</i>&#8242;</span><span><i>v</i><sup>2</sup></span></span></span>, <span class="pt">(&#955;<i>u</i>)&#8242;&#8239;=&#8239;&#955;<i>u</i>&#8242;</span>, <span class="pt">(<i>f</i>(<i>ax</i>&#8239;+&#8239;<i>b</i>))&#8242;&#8239;=&#8239;<i>af</i>&#8242;(<i>ax</i>&#8239;+&#8239;<i>b</i>)</span>, <span class="pt">(<i>u</i><sup><i>n</i></sup>)&#8242;&#8239;=&#8239;<i>nu</i>&#8242;<i>u</i><sup><i>n</i>&#8722;1</sup></span>, <span class="pt">(&#8730;<span class="rad"><i>u</i></span>)&#8242;&#8239;=&#8239;<span class="f"><span><i>u</i>&#8242;</span><span>2&#8730;<span class="rad"><i>u</i></span></span></span></span>.</li>
+<li>Le <b>signe de <i>f</i>&#8242;</b> donne les variations, <b>sur un intervalle</b> ; <b>extremum là où <i>f</i>&#8242; change de signe</b> ; toujours <b>factoriser <i>f</i>&#8242;</b> d'abord. <b>Bijection</b> : <i>f</i>&#8242;&#8239;&gt;&#8239;0 sur <i>I</i> <span class="ar">&#8658;</span> <span class="pt"><i>f</i>(<i>x</i>)&#8239;=&#8239;&#955;</span> a une solution <b>unique</b> dès que &#955;&#8239;&#8712;&#8239;<i>f</i>(<i>I</i>).</li>
+<li><b>Etude complète</b> : domaine &middot; ensemble d'étude &middot; limites &middot; asymptotes &middot; dérivée factorisée et signe &middot; tableau &middot; points particuliers &middot; tracé. <b>Asymptote oblique</b> : <span class="pt"><i>f</i>(<i>x</i>)&#8239;=&#8239;<i>ax</i>&#8239;+&#8239;<i>b</i>&#8239;+&#8239;&#949;(<i>x</i>)</span>, &#949;&#8239;<span class="ar">&#8594;</span>&#8239;0 ; <b>position par le signe</b> de &#949;(<i>x</i>). <b>Symétries</b> : I(<i>a</i>&#8239;;&#8239;<i>b</i>) centre si <span class="pt"><i>f</i>(<i>a</i>&#8239;+&#8239;<i>h</i>)&#8239;+&#8239;<i>f</i>(<i>a</i>&#8239;&#8722;&#8239;<i>h</i>)&#8239;=&#8239;2<i>b</i></span>, <i>x</i>&#8239;=&#8239;<i>a</i> axe si <span class="pt"><i>f</i>(<i>a</i>&#8239;+&#8239;<i>h</i>)&#8239;=&#8239;<i>f</i>(<i>a</i>&#8239;&#8722;&#8239;<i>h</i>)</span>. <b>Associées</b> : pour &#955;&#8239;&gt;&#8239;0, <i>f</i>(<i>x</i>&#8239;+&#8239;&#955;) va vers la <b>gauche</b> et <i>f</i>&#8239;+&#8239;&#955; vers le <b>haut</b> ; |<i>f</i>| se replie vers le haut.</li>
+</ol>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Fiche de revision - 3eme - Chapitre 1 : Les nombres reels : intervalles, encadrement, valeur absolue</title>
+<style>
+/* ===================================================================
+   FICHE DE REVISION, Collection Hakili Lab, Edition 2026
+   Feuille de style autonome, format A4 pret a imprimer.
+   Bleu #005CB9 · Vert #49A145
+   =================================================================== */
+:root{
+  --bleu:#005CB9; --bleu-fonce:#00429A; --bleu-pale:#E8F1FB; --bleu-bord:#B7D2EE;
+  --vert:#49A145; --vert-fonce:#2F7A2C; --vert-pale:#EDF7EC; --vert-bord:#BCE0B9;
+  --gris:#4A4A4A; --gris-clair:#E4E4E4; --rouge:#B3261E;
+}
+@page{
+  size:A4; margin:15mm;
+  @bottom-center{
+    content:"Collection Hakili Lab, Edition 2026  ·  Fiche de revision  ·  " counter(page) "/" counter(pages);
+    font-family:"Segoe UI",Calibri,Arial,sans-serif; font-size:6.6pt; color:#8A8A8A;
+  }
+}
+*{box-sizing:border-box;}
+body{
+  margin:0; font-family:"Segoe UI",Calibri,Arial,sans-serif;
+  font-size:8.4pt; line-height:1.26; color:#1B1B1B;
+}
+p{margin:0 0 3pt;}
+ul{margin:0 0 3pt; padding-left:11pt;}
+li{margin:0 0 1.2pt;}
+b,strong{color:var(--bleu-fonce);}
+
+/* ------------------------------ ENTETE ---------------------------- */
+.entete{
+  display:flex; align-items:stretch; border:1.6pt solid var(--bleu);
+  border-radius:2.5pt; overflow:hidden; margin-bottom:6pt;
+}
+.entete .num{
+  background:var(--bleu); color:#fff; font-size:20pt; font-weight:700;
+  padding:0 8pt; display:flex; align-items:center; justify-content:center; min-width:34pt;
+}
+.entete .txt{padding:3.5pt 8pt; flex:1;}
+.entete .niveau{
+  font-size:7pt; font-weight:700; letter-spacing:.9pt; color:var(--vert-fonce);
+}
+.entete h1{margin:0; font-size:13.5pt; line-height:1.12; color:var(--bleu-fonce); font-weight:700;}
+.entete .sous{font-size:7pt; color:var(--gris); margin-top:1pt;}
+
+/* --------------------------- BANDEAUX ----------------------------- */
+.bandeau{
+  color:#fff; font-weight:700; font-size:9pt; letter-spacing:1pt;
+  padding:2.4pt 7pt; border-radius:2pt; margin:3pt 0 4pt; break-after:avoid; page-break-after:avoid;
+}
+.bandeau.bleu{background:var(--bleu);}
+.bandeau.vert{background:var(--vert);}
+
+/* --------------------------- COLONNES ----------------------------- */
+.cols{column-count:2; column-gap:7mm; column-fill:balance;}
+
+.cols.bal{column-fill:balance;}
+.bloc{margin-bottom:5pt;}
+.keep{break-inside:avoid; page-break-inside:avoid;}
+
+/* --------------------------- LECONS ------------------------------- */
+h2.lecon{
+  margin:0 0 3pt; font-size:8.6pt; font-weight:700; color:#fff; background:var(--bleu-fonce);
+  padding:1.8pt 5pt; border-radius:1.5pt; break-after:avoid; page-break-after:avoid;
+}
+h3.rub{
+  margin:3.5pt 0 1.5pt; font-size:8.2pt; font-weight:700; color:var(--vert-fonce);
+  border-bottom:.7pt solid var(--vert-bord); padding-bottom:.8pt;
+  break-after:avoid; page-break-after:avoid;
+}
+
+/* --------------------------- ENCADRES ----------------------------- */
+.form{
+  background:var(--bleu-pale); border:.8pt solid var(--bleu-bord); border-left:2.6pt solid var(--bleu);
+  border-radius:2pt; padding:2.4pt 5pt; margin:2.2pt 0 3.4pt;
+  break-inside:avoid; page-break-inside:avoid;
+}
+.form .t{
+  display:block; font-size:6.8pt; font-weight:700; letter-spacing:.6pt;
+  color:var(--bleu); margin-bottom:1.5pt;
+}
+.form .c{text-align:center; font-size:9.1pt; margin:1.6pt 0;}
+.note{background:var(--vert-pale); border-left:2.4pt solid var(--vert); padding:2.4pt 5pt; border-radius:1.5pt; margin:2.5pt 0 4pt; break-inside:avoid;}
+
+/* --------------------------- TABLEAUX ----------------------------- */
+table{width:100%; border-collapse:collapse; font-size:7.6pt; margin:2pt 0 4pt; break-inside:avoid;}
+th{background:var(--bleu); color:#fff; font-weight:700; text-align:left; padding:1.8pt 4pt; font-size:7.2pt;}
+td{border:.6pt solid var(--gris-clair); padding:1.8pt 4pt; vertical-align:top;}
+tr{break-inside:avoid;}
+table.var td{text-align:center; font-size:8pt;}
+table.var td.lab{text-align:left; font-weight:700; color:var(--bleu-fonce); background:var(--bleu-pale);}
+
+/* ----------------------------- PIEGES ----------------------------- */
+table.pieges th:first-child{width:44%;}
+table.pieges td:first-child{color:var(--rouge); background:#FDF1F0;}
+.x{font-weight:700;}
+.v{color:var(--vert-fonce); font-weight:700;}
+
+/* ---------------------------- RECAP ------------------------------- */
+ol.recap{margin:0; padding-left:0; list-style:none; counter-reset:r;}
+ol.recap li{
+  counter-increment:r; position:relative; padding-left:13pt; margin-bottom:1.8pt;
+  break-inside:avoid;
+}
+ol.recap li::before{
+  content:counter(r); position:absolute; left:0; top:.3pt;
+  width:10pt; height:10pt; border-radius:50%; background:var(--vert); color:#fff;
+  font-size:6.6pt; font-weight:700; text-align:center; line-height:10pt;
+}
+
+/* --------------------------- MATHS -------------------------------- */
+.m{font-family:Cambria,Georgia,"Times New Roman",serif;}
+i,var{font-family:Cambria,Georgia,"Times New Roman",serif; font-style:italic;}
+.op{font-family:Cambria,Georgia,"Times New Roman",serif; font-style:normal;}
+.f{display:inline-block; vertical-align:middle; text-align:center;
+   margin:0 .12em; line-height:1.06; font-family:Cambria,Georgia,"Times New Roman",serif;}
+.f>span{display:block; padding:0 .2em;}
+.f>span:first-child{border-bottom:.6pt solid currentColor; padding-bottom:.08em;}
+.f>span:last-child{padding-top:.04em;}
+.rad{border-top:.6pt solid currentColor; padding-top:.12em;}
+/* line-height:0 evite que l'exposant n'ecarte les lignes ; position:relative le
+   repositionne sans qu'il heurte la barre de fraction ni le trait du radical. */
+sup,sub{font-size:.68em; line-height:0; position:relative; vertical-align:baseline;}
+sup{top:-.42em;}
+sub{bottom:-.22em;}
+.pt{white-space:nowrap;}
+/* Les fleches n'ont qu'un glyphe atrophie dans la fonte serif : on les force
+   en sans-serif, ou elles sont franches meme a 8 pt. */
+.ar{font-family:"Segoe UI",Calibri,Arial,"DejaVu Sans",sans-serif; font-style:normal;}
+
+/* ------------------- PIEGES : blocs erreur / correction ------------- */
+.pg{font-size:8.1pt; border-left:2.4pt solid var(--rouge); background:#FDF1F0; border-radius:1.5pt;
+    padding:2pt 5pt; margin:0 0 2.8pt; break-inside:avoid; page-break-inside:avoid;}
+.pg .err{color:var(--rouge); font-weight:600;}
+.pg .cor{color:#1B1B1B; margin-top:.8pt;}
+.pg .cor b{color:var(--bleu-fonce);}
+.v{color:var(--vert-fonce); font-weight:700;}
+
+</style>
+</head>
+<body>
+<header class="entete">
+  <div class="num">1</div>
+  <div class="txt">
+    <div class="niveau">3EME &middot; MATHEMATIQUES</div>
+    <h1>Les nombres réels : intervalles, encadrement, valeur absolue</h1>
+    <div class="sous">Leçon 1 : les intervalles de &#8477; &middot; Leçon 2 : encadrement d'une somme et d'un produit &middot; Leçon 3 : valeur absolue et distance de deux réels</div>
+  </div>
+</header>
+
+<div class="bandeau bleu" style="margin-top:0">L'ESSENTIEL</div>
+<div class="cols">
+
+<!-- ================= LECON 1 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 1&nbsp;: Les intervalles de &#8477;</h2>
+<p>Un <b>intervalle</b> est l'ensemble de tous les réels compris entre deux bornes <i>a</i> et <i>b</i>, avec <span class="pt"><i>a</i>&#8239;&#8804;&#8239;<i>b</i></span>. Un crochet <b>tourné vers l'intérieur</b> de l'intervalle <b>inclut</b> la borne ; un crochet <b>tourné vers l'extérieur</b> l'<b>exclut</b>.</p></div>
+<table>
+<tr><th>Notation</th><th>Ensemble des réels <i>x</i> tels que</th></tr>
+<tr><td class="m">[<i>a</i>&#8239;;&#8239;<i>b</i>]</td><td><span class="pt m"><i>a</i>&#8239;&#8804;&#8239;<i>x</i>&#8239;&#8804;&#8239;<i>b</i></span> (bornes incluses)</td></tr>
+<tr><td class="m">]<i>a</i>&#8239;;&#8239;<i>b</i>[</td><td><span class="pt m"><i>a</i>&#8239;&lt;&#8239;<i>x</i>&#8239;&lt;&#8239;<i>b</i></span> (bornes exclues)</td></tr>
+<tr><td class="m">[<i>a</i>&#8239;;&#8239;<i>b</i>[</td><td><span class="pt m"><i>a</i>&#8239;&#8804;&#8239;<i>x</i>&#8239;&lt;&#8239;<i>b</i></span> (<i>a</i> inclus, <i>b</i> exclu)</td></tr>
+<tr><td class="m">]<i>a</i>&#8239;;&#8239;<i>b</i>]</td><td><span class="pt m"><i>a</i>&#8239;&lt;&#8239;<i>x</i>&#8239;&#8804;&#8239;<i>b</i></span> (<i>a</i> exclu, <i>b</i> inclus)</td></tr>
+<tr><td class="m">[<i>a</i>&#8239;;&#8239;+&#8734;[</td><td><span class="pt m"><i>x</i>&#8239;&#8805;&#8239;<i>a</i></span> (de <i>a</i> à l'infini)</td></tr>
+<tr><td class="m">]&#8722;&#8734;&#8239;;&#8239;<i>b</i>]</td><td><span class="pt m"><i>x</i>&#8239;&#8804;&#8239;<i>b</i></span> (de l'infini à <i>b</i>)</td></tr>
+</table>
+<ul>
+<li>Le symbole &#8734;, qui se lit « infini », n'est <b>pas un nombre</b> : la borne infinie est <b>toujours ouverte</b>.</li>
+<li><b>Ecrire un intervalle à partir d'une inégalité</b> : repère les bornes, place la plus petite à gauche, puis mets un crochet <b>fermé</b> pour une borne incluse (&#8804; ou &#8805;), <b>ouvert</b> pour une borne exclue (&lt; ou &gt;) et pour l'infini.</li>
+<li><b>Sur la droite graduée</b> : place les deux bornes, colorie la portion comprise entre elles et dessine sur chaque borne le crochet dans le bon sens. Un intervalle non borné se prolonge par une <b>flèche</b>.</li>
+</ul>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Intersection et réunion de deux intervalles</h3>
+<div class="form">
+  <span class="t">INTER ET UNION</span>
+  <div class="c m"><i>E</i>&#8239;&#8745;&#8239;<i>F</i> : les réels qui appartiennent <b>aux deux</b></div>
+  <div class="c m"><i>E</i>&#8239;&#8746;&#8239;<i>F</i> : les réels qui appartiennent <b>à au moins un</b></div>
+</div>
+<ul>
+<li><b>Méthode.</b> Représente les deux intervalles sur une <b>même droite graduée</b>, un trait au-dessus, l'autre au-dessous. L'<b>intersection</b> est la zone couverte par <b>les deux</b> traits, la <b>réunion</b> celle couverte par <b>au moins un</b>.</li>
+<li>Une borne appartient à l'intersection seulement si elle appartient <b>aux deux</b> intervalles.</li>
+</ul>
+<div class="note">Deux intervalles sans réel commun ont une intersection <b>vide</b>, notée &#8709; : <span class="pt m">[5&#8239;;&#8239;8]&#8239;&#8745;&#8239;[0&#8239;;&#8239;2]&#8239;=&#8239;&#8709;</span>. Leur réunion n'est alors <b>pas un intervalle</b> : on garde l'écriture <span class="pt m">[0&#8239;;&#8239;2]&#8239;&#8746;&#8239;[5&#8239;;&#8239;8]</span>.</div>
+</div>
+
+<!-- ================= LECON 2 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 2&nbsp;: Encadrement d'une somme et d'un produit</h2>
+<p><b>Encadrer</b> un nombre, c'est l'enfermer entre deux valeurs : <span class="pt m"><i>a</i>&#8239;&#8804;&#8239;<i>x</i>&#8239;&#8804;&#8239;<i>b</i></span>.</p></div>
+<div class="form">
+  <span class="t">SOMME&nbsp;: si <i>a</i><sub>1</sub>&#8239;&#8804;&#8239;<i>x</i>&#8239;&#8804;&#8239;<i>a</i><sub>2</sub> et <i>b</i><sub>1</sub>&#8239;&#8804;&#8239;<i>y</i>&#8239;&#8804;&#8239;<i>b</i><sub>2</sub></span>
+  <div class="c m"><i>a</i><sub>1</sub>&#8239;+&#8239;<i>b</i><sub>1</sub>&#8239;&#8804;&#8239;<i>x</i>&#8239;+&#8239;<i>y</i>&#8239;&#8804;&#8239;<i>a</i><sub>2</sub>&#8239;+&#8239;<i>b</i><sub>2</sub></div>
+</div>
+<div class="form">
+  <span class="t">PRODUIT&nbsp;: SEULEMENT POUR DES REELS POSITIFS</span>
+  <div class="c m">si 0&#8239;&#8804;&#8239;<i>a</i><sub>1</sub>&#8239;&#8804;&#8239;<i>x</i>&#8239;&#8804;&#8239;<i>a</i><sub>2</sub> et 0&#8239;&#8804;&#8239;<i>b</i><sub>1</sub>&#8239;&#8804;&#8239;<i>y</i>&#8239;&#8804;&#8239;<i>b</i><sub>2</sub></div>
+  <div class="c m"><i>a</i><sub>1</sub>&#8239;&#215;&#8239;<i>b</i><sub>1</sub>&#8239;&#8804;&#8239;<i>x</i>&#8239;&#215;&#8239;<i>y</i>&#8239;&#8804;&#8239;<i>a</i><sub>2</sub>&#8239;&#215;&#8239;<i>b</i><sub>2</sub></div>
+</div>
+<p>On <b>additionne</b> les bornes de même côté ; pour des nombres <b>positifs</b>, on <b>multiplie</b> les bornes de même côté.</p>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Agir sur un encadrement</h3>
+<div class="form">
+  <span class="t">POUR <i>a</i>&#8239;&#8804;&#8239;<i>x</i>&#8239;&#8804;&#8239;<i>b</i></span>
+  <div class="c m"><i>a</i>&#8239;+&#8239;<i>c</i>&#8239;&#8804;&#8239;<i>x</i>&#8239;+&#8239;<i>c</i>&#8239;&#8804;&#8239;<i>b</i>&#8239;+&#8239;<i>c</i> &nbsp;<span style="font-size:7.5pt">(ajouter <i>c</i>)</span></div>
+  <div class="c m">si <i>k</i>&#8239;&gt;&#8239;0 : <i>ka</i>&#8239;&#8804;&#8239;<i>kx</i>&#8239;&#8804;&#8239;<i>kb</i> &nbsp;<span style="font-size:7.5pt">(ordre conservé)</span></div>
+  <div class="c m">si <i>k</i>&#8239;&lt;&#8239;0 : <i>kb</i>&#8239;&#8804;&#8239;<i>kx</i>&#8239;&#8804;&#8239;<i>ka</i> &nbsp;<span style="font-size:7.5pt">(ordre retourné)</span></div>
+  <div class="c m">en particulier : &#8722;<i>b</i>&#8239;&#8804;&#8239;&#8722;<i>x</i>&#8239;&#8804;&#8239;&#8722;<i>a</i></div>
+</div>
+<h3 class="rub">Encadrer une différence</h3>
+<p>Une différence se ramène à une somme, puisque <span class="pt m"><i>x</i>&#8239;&#8722;&#8239;<i>y</i>&#8239;=&#8239;<i>x</i>&#8239;+&#8239;(&#8722;<i>y</i>)</span> : on <b>retourne d'abord</b> l'encadrement de <i>y</i>, puis on additionne.</p>
+<div class="form">
+  <span class="t">DIFFERENCE</span>
+  <div class="c m">si <i>b</i><sub>1</sub>&#8239;&#8804;&#8239;<i>y</i>&#8239;&#8804;&#8239;<i>b</i><sub>2</sub>, alors &#8722;<i>b</i><sub>2</sub>&#8239;&#8804;&#8239;&#8722;<i>y</i>&#8239;&#8804;&#8239;&#8722;<i>b</i><sub>1</sub></div>
+  <div class="c m"><i>a</i><sub>1</sub>&#8239;&#8722;&#8239;<i>b</i><sub>2</sub>&#8239;&#8804;&#8239;<i>x</i>&#8239;&#8722;&#8239;<i>y</i>&#8239;&#8804;&#8239;<i>a</i><sub>2</sub>&#8239;&#8722;&#8239;<i>b</i><sub>1</sub></div>
+</div>
+<p>A gauche, le <b>plus petit</b> <i>x</i> moins le <b>plus grand</b> <i>y</i> ; à droite, le plus grand <i>x</i> moins le plus petit <i>y</i>.</p>
+<div class="note"><b>Méthode.</b> Ecris les encadrements l'un sous l'autre, bornes alignées. Somme : additionne les bornes de gauche, puis celles de droite. Différence : retourne l'encadrement de la quantité retranchée, puis additionne. Produit de positifs : multiplie les bornes de même côté. Termine par une phrase de réponse avec l'unité.</div>
+</div>
+
+<!-- ================= LECON 3 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 3&nbsp;: Valeur absolue et distance de deux réels</h2>
+<p>La <b>valeur absolue</b> d'un réel <i>x</i>, notée <span class="pt m">|<i>x</i>|</span>, est sa <b>distance à zéro</b>. Elle est toujours <b>positive ou nulle</b>.</p></div>
+<div class="form">
+  <span class="t">DEFINITION EN DEUX CAS</span>
+  <div class="c m">si <i>x</i>&#8239;&#8805;&#8239;0 : |<i>x</i>|&#8239;=&#8239;<i>x</i></div>
+  <div class="c m">si <i>x</i>&#8239;&lt;&#8239;0 : |<i>x</i>|&#8239;=&#8239;&#8722;<i>x</i>, son opposé, qui est <b>positif</b></div>
+</div>
+<ul>
+<li>Deux nombres <b>opposés</b> ont la même valeur absolue : <span class="pt m">|&#8722;5|&#8239;=&#8239;|5|&#8239;=&#8239;5</span>.</li>
+<li>Pour tous réels <i>k</i> et <i>x</i> : <span class="pt m">|<i>kx</i>|&#8239;=&#8239;|<i>k</i>|&#8239;&#215;&#8239;|<i>x</i>|</span>. Un facteur ne sort de la valeur absolue qu'en <b>valeur absolue</b>.</li>
+<li><b>Ecrire une expression sans valeur absolue</b> : étudie le <b>signe</b> du contenu des barres. S'il est positif ou nul, enlève simplement les barres ; s'il est négatif, enlève les barres et prends l'<b>opposé de tout le contenu</b>.</li>
+</ul>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Distance de deux réels</h3>
+<div class="form">
+  <span class="t">DISTANCE DE DEUX POINTS D'UNE DROITE GRADUEE</span>
+  <div class="c m"><i>AB</i>&#8239;=&#8239;|<i>x</i><sub><i>B</i></sub>&#8239;&#8722;&#8239;<i>x</i><sub><i>A</i></sub>|&#8239;=&#8239;|<i>x</i><sub><i>A</i></sub>&#8239;&#8722;&#8239;<i>x</i><sub><i>B</i></sub>|</div>
+</div>
+<p>La distance ne dépend pas du sens de parcours : soustraire dans l'autre ordre donne l'opposé, et la valeur absolue rend le même résultat. De &#8722;40 à 80 : <span class="pt m">|80&#8239;&#8722;&#8239;(&#8722;40)|&#8239;=&#8239;|120|&#8239;=&#8239;120</span>.</p>
+<h3 class="rub">Valeur absolue et intervalle centré</h3>
+<div class="form">
+  <span class="t">POUR UN RAYON <i>r</i>&#8239;&gt;&#8239;0</span>
+  <div class="c m">|<i>x</i>&#8239;&#8722;&#8239;<i>a</i>|&#8239;&lt;&#8239;<i>r</i> signifie <i>x</i>&#8239;&#8712;&#8239;]<i>a</i>&#8239;&#8722;&#8239;<i>r</i>&#8239;;&#8239;<i>a</i>&#8239;+&#8239;<i>r</i>[</div>
+</div>
+<p>C'est l'intervalle <b>centré en <i>a</i></b>, de rayon <i>r</i> : « <i>x</i> est à moins de 0,5 de 2 » s'écrit <span class="pt m">|<i>x</i>&#8239;&#8722;&#8239;2|&#8239;&lt;&#8239;0,5</span> et donne <span class="pt m">]1,5&#8239;;&#8239;2,5[</span>. C'est ainsi que s'exprime une <b>tolérance</b> de fabrication ou une marge d'erreur.</p>
+</div>
+
+</div>
+
+<div class="bandeau vert">PIEGES ET ERREURS FREQUENTES</div>
+<div class="cols">
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> <span class="m">[3&#8239;;&#8239;+&#8734;]</span> &nbsp;&middot;&nbsp; « <span class="m">[2&#8239;;&#8239;5]</span> et <span class="m">[2&#8239;;&#8239;5[</span> contiennent les mêmes nombres. »</div><div class="cor"><span class="v">&#10003;</span> Du côté de l'infini, le crochet est <b>toujours ouvert</b> : on écrit <span class="pt m">[3&#8239;;&#8239;+&#8734;[</span>, car &#8734; n'est pas un nombre. Et le sens du crochet change l'ensemble : 5 appartient à <span class="pt m">[2&#8239;;&#8239;5]</span>, mais pas à <span class="pt m">[2&#8239;;&#8239;5[</span>.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> <span class="m">[0&#8239;;&#8239;4]&#8239;&#8745;&#8239;[2&#8239;;&#8239;7]&#8239;=&#8239;[0&#8239;;&#8239;7]</span> &nbsp;&middot;&nbsp; <span class="m">[5&#8239;;&#8239;8]&#8239;&#8746;&#8239;[0&#8239;;&#8239;2]&#8239;=&#8239;[0&#8239;;&#8239;8]</span></div><div class="cor"><span class="v">&#10003;</span> L'<b>intersection</b> ne garde que les réels communs : <span class="pt m">[0&#8239;;&#8239;4]&#8239;&#8745;&#8239;[2&#8239;;&#8239;7]&#8239;=&#8239;[2&#8239;;&#8239;4]</span> ; c'est la <b>réunion</b> qui vaut <span class="pt m">[0&#8239;;&#8239;7]</span>. Et 3 n'appartenant à aucun des deux intervalles, la réunion de <span class="pt m">[0&#8239;;&#8239;2]</span> et <span class="pt m">[5&#8239;;&#8239;8]</span> ne se recolle pas : elle s'écrit avec le symbole &#8746;.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> Si <span class="pt m">3&#8239;&#8804;&#8239;<i>x</i>&#8239;&#8804;&#8239;5</span> et <span class="pt m">2&#8239;&#8804;&#8239;<i>y</i>&#8239;&#8804;&#8239;4</span>, alors <span class="pt m">1&#8239;&#8804;&#8239;<i>x</i>&#8239;&#8722;&#8239;<i>y</i>&#8239;&#8804;&#8239;1</span>.</div><div class="cor"><span class="v">&#10003;</span> Ne soustrais <b>jamais</b> les bornes de même côté. On retourne d'abord l'encadrement de <i>y</i> : <span class="pt m">&#8722;4&#8239;&#8804;&#8239;&#8722;<i>y</i>&#8239;&#8804;&#8239;&#8722;2</span>, puis on additionne : <span class="pt m">&#8722;1&#8239;&#8804;&#8239;<i>x</i>&#8239;&#8722;&#8239;<i>y</i>&#8239;&#8804;&#8239;3</span>.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> Si <span class="pt m">&#8722;3&#8239;&#8804;&#8239;<i>x</i>&#8239;&#8804;&#8239;5</span>, alors <span class="pt m">&#8722;6&#8239;&#8804;&#8239;&#8722;2<i>x</i>&#8239;&#8804;&#8239;10</span>.</div><div class="cor"><span class="v">&#10003;</span> Multiplier par un nombre <b>négatif retourne l'ordre</b> : <span class="pt m">&#8722;10&#8239;&#8804;&#8239;&#8722;2<i>x</i>&#8239;&#8804;&#8239;6</span>. Contrôle avec <i>x</i>&#8239;=&#8239;5 : &#8722;2<i>x</i>&#8239;=&#8239;&#8722;10, qui est bien la borne de gauche.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> Si <span class="pt m">&#8722;3&#8239;&#8804;&#8239;<i>x</i>&#8239;&#8804;&#8239;2</span> et <span class="pt m">1&#8239;&#8804;&#8239;<i>y</i>&#8239;&#8804;&#8239;4</span>, alors <span class="pt m">&#8722;3&#8239;&#8804;&#8239;<i>xy</i>&#8239;&#8804;&#8239;8</span>.</div><div class="cor"><span class="v">&#10003;</span> La règle « bornes de gauche entre elles, bornes de droite entre elles&#8239;» n'est valable que si <b>toutes les bornes sont positives</b> : elle exige <span class="pt m">0&#8239;&#8804;&#8239;<i>a</i><sub>1</sub></span> et <span class="pt m">0&#8239;&#8804;&#8239;<i>b</i><sub>1</sub></span>. Ici <i>x</i> peut valoir &#8722;3 et <i>y</i> valoir 4, d'où <i>xy</i>&#8239;=&#8239;&#8722;12 : la conclusion est fausse.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> <span class="m">|<i>x</i>|&#8239;=&#8239;&#8722;3</span> donne <i>x</i>&#8239;=&#8239;3 &nbsp;&middot;&nbsp; « Pour <i>x</i>&#8239;=&#8239;&#8722;7, |<i>x</i>|&#8239;=&#8239;&#8722;<i>x</i> est négatif. »</div><div class="cor"><span class="v">&#10003;</span> Une valeur absolue est une <b>distance</b> : elle n'est <b>jamais négative</b>, donc <span class="pt m">|<i>x</i>|&#8239;=&#8239;&#8722;3</span> n'a <b>aucune solution</b>. Le signe moins de &#8722;<i>x</i> <b>inverse</b> le signe, il ne rend pas négatif : <span class="pt m">|&#8722;7|&#8239;=&#8239;&#8722;(&#8722;7)&#8239;=&#8239;7</span>.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> La distance de <i>a</i> à <i>b</i> vaut <i>a</i>&#8239;&#8722;&#8239;<i>b</i> &nbsp;&middot;&nbsp; <span class="m">|<i>a</i>&#8239;+&#8239;<i>b</i>|&#8239;=&#8239;|<i>a</i>|&#8239;+&#8239;|<i>b</i>|</span></div><div class="cor"><span class="v">&#10003;</span> La distance s'écrit toujours avec des barres, sinon elle peut sortir négative : <span class="pt m"><i>AB</i>&#8239;=&#8239;|<i>a</i>&#8239;&#8722;&#8239;<i>b</i>|&#8239;=&#8239;|<i>b</i>&#8239;&#8722;&#8239;<i>a</i>|</span>. Et seul le <b>produit</b> traverse les barres, avec <span class="pt m">|<i>kx</i>|&#8239;=&#8239;|<i>k</i>|&#8239;&#215;&#8239;|<i>x</i>|</span> : <span class="pt m">|&#8722;3&#8239;+&#8239;5|&#8239;=&#8239;2</span>, alors que <span class="pt m">|&#8722;3|&#8239;+&#8239;|5|&#8239;=&#8239;8</span>.</div></div>
+
+</div>
+
+<div class="bandeau bleu">A SAVOIR PAR COEUR AVANT LE DEVOIR</div>
+<div class="cols">
+<ol class="recap">
+<li>Crochet <b>fermé</b> : borne incluse ; crochet <b>ouvert</b> : borne exclue. <span class="pt m">[<i>a</i>&#8239;;&#8239;<i>b</i>]</span>, <span class="pt m">]<i>a</i>&#8239;;&#8239;<i>b</i>[</span>, <span class="pt m">[<i>a</i>&#8239;;&#8239;<i>b</i>[</span>, <span class="pt m">]<i>a</i>&#8239;;&#8239;<i>b</i>]</span>. Du côté de l'infini, le crochet est <b>toujours ouvert</b>.</li>
+<li><span class="m">&#8745;</span> : les réels qui sont dans <b>les deux</b> ; <span class="m">&#8746;</span> : ceux qui sont dans <b>au moins un</b>. Sans réel commun, l'intersection est vide, notée &#8709;. Trace les deux intervalles sur une même droite graduée.</li>
+<li><b>Somme</b> : <span class="pt m"><i>a</i><sub>1</sub>&#8239;+&#8239;<i>b</i><sub>1</sub>&#8239;&#8804;&#8239;<i>x</i>&#8239;+&#8239;<i>y</i>&#8239;&#8804;&#8239;<i>a</i><sub>2</sub>&#8239;+&#8239;<i>b</i><sub>2</sub></span>. <b>Produit</b>, pour des réels <b>positifs</b> seulement : <span class="pt m"><i>a</i><sub>1</sub><i>b</i><sub>1</sub>&#8239;&#8804;&#8239;<i>xy</i>&#8239;&#8804;&#8239;<i>a</i><sub>2</sub><i>b</i><sub>2</sub></span>.</li>
+<li><b>Différence</b> : retourne l'encadrement de la quantité retranchée, puis additionne : <span class="pt m"><i>a</i><sub>1</sub>&#8239;&#8722;&#8239;<i>b</i><sub>2</sub>&#8239;&#8804;&#8239;<i>x</i>&#8239;&#8722;&#8239;<i>y</i>&#8239;&#8804;&#8239;<i>a</i><sub>2</sub>&#8239;&#8722;&#8239;<i>b</i><sub>1</sub></span>.</li>
+<li>Ajouter un nombre ou multiplier par <span class="pt m"><i>k</i>&#8239;&gt;&#8239;0</span> <b>conserve</b> l'ordre ; multiplier par <span class="pt m"><i>k</i>&#8239;&lt;&#8239;0</span> le <b>retourne</b> : <span class="pt m"><i>kb</i>&#8239;&#8804;&#8239;<i>kx</i>&#8239;&#8804;&#8239;<i>ka</i></span>, et <span class="pt m">&#8722;<i>b</i>&#8239;&#8804;&#8239;&#8722;<i>x</i>&#8239;&#8804;&#8239;&#8722;<i>a</i></span>.</li>
+<li><span class="pt m">|<i>x</i>|&#8239;=&#8239;<i>x</i></span> si <span class="pt m"><i>x</i>&#8239;&#8805;&#8239;0</span> ; <span class="pt m">|<i>x</i>|&#8239;=&#8239;&#8722;<i>x</i></span> si <span class="pt m"><i>x</i>&#8239;&lt;&#8239;0</span>. Une valeur absolue est <b>toujours positive ou nulle</b>, et deux opposés ont la même : <span class="pt m">|&#8722;5|&#8239;=&#8239;|5|&#8239;=&#8239;5</span>.</li>
+<li><b>Distance</b> de deux réels : <span class="pt m"><i>AB</i>&#8239;=&#8239;|<i>x</i><sub><i>B</i></sub>&#8239;&#8722;&#8239;<i>x</i><sub><i>A</i></sub>|&#8239;=&#8239;|<i>x</i><sub><i>A</i></sub>&#8239;&#8722;&#8239;<i>x</i><sub><i>B</i></sub>|</span>. Et <span class="pt m">|<i>kx</i>|&#8239;=&#8239;|<i>k</i>|&#8239;&#215;&#8239;|<i>x</i>|</span>.</li>
+<li>Pour <span class="pt m"><i>r</i>&#8239;&gt;&#8239;0</span> : <span class="pt m">|<i>x</i>&#8239;&#8722;&#8239;<i>a</i>|&#8239;&lt;&#8239;<i>r</i></span> décrit l'intervalle <span class="pt m">]<i>a</i>&#8239;&#8722;&#8239;<i>r</i>&#8239;;&#8239;<i>a</i>&#8239;+&#8239;<i>r</i>[</span>, centré en <i>a</i>.</li>
+</ol>
+</div>
+
+</body>
+</html>

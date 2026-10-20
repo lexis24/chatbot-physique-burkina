@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Fiche de revision - 2nde C - Chapitre 6 : Fonctions de reference</title>
+<style>
+/* ===================================================================
+   FICHE DE REVISION, Collection Hakili Lab, Edition 2026
+   Feuille de style autonome, format A4 pret a imprimer.
+   Bleu #005CB9 · Vert #49A145
+   =================================================================== */
+:root{
+  --bleu:#005CB9; --bleu-fonce:#00429A; --bleu-pale:#E8F1FB; --bleu-bord:#B7D2EE;
+  --vert:#49A145; --vert-fonce:#2F7A2C; --vert-pale:#EDF7EC; --vert-bord:#BCE0B9;
+  --gris:#4A4A4A; --gris-clair:#E4E4E4; --rouge:#B3261E;
+}
+@page{
+  size:A4; margin:15mm;
+  @bottom-center{
+    content:"Collection Hakili Lab, Edition 2026  ·  Fiche de revision  ·  " counter(page) "/" counter(pages);
+    font-family:"Segoe UI",Calibri,Arial,sans-serif; font-size:6.6pt; color:#8A8A8A;
+  }
+}
+*{box-sizing:border-box;}
+body{
+  margin:0; font-family:"Segoe UI",Calibri,Arial,sans-serif;
+  font-size:8.4pt; line-height:1.26; color:#1B1B1B;
+}
+p{margin:0 0 3pt;}
+ul{margin:0 0 3pt; padding-left:11pt;}
+li{margin:0 0 1.2pt;}
+b,strong{color:var(--bleu-fonce);}
+
+/* ------------------------------ ENTETE ---------------------------- */
+.entete{
+  display:flex; align-items:stretch; border:1.6pt solid var(--bleu);
+  border-radius:2.5pt; overflow:hidden; margin-bottom:6pt;
+}
+.entete .num{
+  background:var(--bleu); color:#fff; font-size:20pt; font-weight:700;
+  padding:0 8pt; display:flex; align-items:center; justify-content:center; min-width:34pt;
+}
+.entete .txt{padding:3.5pt 8pt; flex:1;}
+.entete .niveau{
+  font-size:7pt; font-weight:700; letter-spacing:.9pt; color:var(--vert-fonce);
+}
+.entete h1{margin:0; font-size:13.5pt; line-height:1.12; color:var(--bleu-fonce); font-weight:700;}
+.entete .sous{font-size:7pt; color:var(--gris); margin-top:1pt;}
+
+/* --------------------------- BANDEAUX ----------------------------- */
+.bandeau{
+  color:#fff; font-weight:700; font-size:9pt; letter-spacing:1pt;
+  padding:2.4pt 7pt; border-radius:2pt; margin:3pt 0 4pt; break-after:avoid; page-break-after:avoid;
+}
+.bandeau.bleu{background:var(--bleu);}
+.bandeau.vert{background:var(--vert);}
+
+/* --------------------------- COLONNES ----------------------------- */
+.cols{column-count:2; column-gap:7mm; column-fill:balance;}
+
+.cols.bal{column-fill:balance;}
+.bloc{margin-bottom:5pt;}
+.keep{break-inside:avoid; page-break-inside:avoid;}
+
+/* --------------------------- LECONS ------------------------------- */
+h2.lecon{
+  margin:0 0 3pt; font-size:8.6pt; font-weight:700; color:#fff; background:var(--bleu-fonce);
+  padding:1.8pt 5pt; border-radius:1.5pt; break-after:avoid; page-break-after:avoid;
+}
+h3.rub{
+  margin:3.5pt 0 1.5pt; font-size:8.2pt; font-weight:700; color:var(--vert-fonce);
+  border-bottom:.7pt solid var(--vert-bord); padding-bottom:.8pt;
+  break-after:avoid; page-break-after:avoid;
+}
+
+/* --------------------------- ENCADRES ----------------------------- */
+.form{
+  background:var(--bleu-pale); border:.8pt solid var(--bleu-bord); border-left:2.6pt solid var(--bleu);
+  border-radius:2pt; padding:2.4pt 5pt; margin:2.2pt 0 3.4pt;
+  break-inside:avoid; page-break-inside:avoid;
+}
+.form .t{
+  display:block; font-size:6.8pt; font-weight:700; letter-spacing:.6pt;
+  color:var(--bleu); margin-bottom:1.5pt;
+}
+.form .c{text-align:center; font-size:9.1pt; margin:1.6pt 0;}
+.note{background:var(--vert-pale); border-left:2.4pt solid var(--vert); padding:2.4pt 5pt; border-radius:1.5pt; margin:2.5pt 0 4pt; break-inside:avoid;}
+
+/* --------------------------- TABLEAUX ----------------------------- */
+table{width:100%; border-collapse:collapse; font-size:7.6pt; margin:2pt 0 4pt; break-inside:avoid;}
+th{background:var(--bleu); color:#fff; font-weight:700; text-align:left; padding:1.8pt 4pt; font-size:7.2pt;}
+td{border:.6pt solid var(--gris-clair); padding:1.8pt 4pt; vertical-align:top;}
+tr{break-inside:avoid;}
+table.var td{text-align:center; font-size:8pt;}
+table.var td.lab{text-align:left; font-weight:700; color:var(--bleu-fonce); background:var(--bleu-pale);}
+
+/* ----------------------------- PIEGES ----------------------------- */
+table.pieges th:first-child{width:44%;}
+table.pieges td:first-child{color:var(--rouge); background:#FDF1F0;}
+.x{font-weight:700;}
+.v{color:var(--vert-fonce); font-weight:700;}
+
+/* ---------------------------- RECAP ------------------------------- */
+ol.recap{margin:0; padding-left:0; list-style:none; counter-reset:r;}
+ol.recap li{
+  counter-increment:r; position:relative; padding-left:13pt; margin-bottom:1.8pt;
+  break-inside:avoid;
+}
+ol.recap li::before{
+  content:counter(r); position:absolute; left:0; top:.3pt;
+  width:10pt; height:10pt; border-radius:50%; background:var(--vert); color:#fff;
+  font-size:6.6pt; font-weight:700; text-align:center; line-height:10pt;
+}
+
+/* --------------------------- MATHS -------------------------------- */
+.m{font-family:Cambria,Georgia,"Times New Roman",serif;}
+i,var{font-family:Cambria,Georgia,"Times New Roman",serif; font-style:italic;}
+.op{font-family:Cambria,Georgia,"Times New Roman",serif; font-style:normal;}
+.f{display:inline-block; vertical-align:middle; text-align:center;
+   margin:0 .12em; line-height:1.06; font-family:Cambria,Georgia,"Times New Roman",serif;}
+.f>span{display:block; padding:0 .2em;}
+.f>span:first-child{border-bottom:.6pt solid currentColor; padding-bottom:.08em;}
+.f>span:last-child{padding-top:.04em;}
+.rad{border-top:.6pt solid currentColor; padding-top:.12em;}
+/* line-height:0 evite que l'exposant n'ecarte les lignes ; position:relative le
+   repositionne sans qu'il heurte la barre de fraction ni le trait du radical. */
+sup,sub{font-size:.68em; line-height:0; position:relative; vertical-align:baseline;}
+sup{top:-.42em;}
+sub{bottom:-.22em;}
+.pt{white-space:nowrap;}
+/* Les fleches n'ont qu'un glyphe atrophie dans la fonte serif : on les force
+   en sans-serif, ou elles sont franches meme a 8 pt. */
+.ar{font-family:"Segoe UI",Calibri,Arial,"DejaVu Sans",sans-serif; font-style:normal;}
+
+/* ------------------- PIEGES : blocs erreur / correction ------------- */
+.pg{font-size:8.1pt; border-left:2.4pt solid var(--rouge); background:#FDF1F0; border-radius:1.5pt;
+    padding:2pt 5pt; margin:0 0 2.8pt; break-inside:avoid; page-break-inside:avoid;}
+.pg .err{color:var(--rouge); font-weight:600;}
+.pg .cor{color:#1B1B1B; margin-top:.8pt;}
+.pg .cor b{color:var(--bleu-fonce);}
+.v{color:var(--vert-fonce); font-weight:700;}
+
+</style>
+</head>
+<body>
+<header class="entete">
+  <div class="num">6</div>
+  <div class="txt">
+    <div class="niveau">2NDE C &middot; MATHEMATIQUES</div>
+    <h1>Fonctions de référence</h1>
+    <div class="sous">Leçon 1 : fonctions affines et proportionnalité &middot; Leçon 2 : fonctions <i>x</i>&#8239;<span class="ar">&#8614;</span>&#8239;<i>x</i><sup>2</sup> et <i>x</i>&#8239;<span class="ar">&#8614;</span>&#8239;<i>x</i><sup>3</sup> &middot; Leçon 3 : fonctions <i>x</i>&#8239;<span class="ar">&#8614;</span>&#8239;<span class="f"><span>1</span><span><i>x</i></span></span> et <i>x</i>&#8239;<span class="ar">&#8614;</span>&#8239;&#8730;<span class="rad"><i>x</i></span> &middot; Leçon 4 : fonction valeur absolue &middot; Leçon 5 : fonctions se ramenant aux fonctions de référence</div>
+  </div>
+</header>
+
+<div class="bandeau bleu" style="margin-top:0">L'ESSENTIEL</div>
+<div class="cols">
+
+<!-- ================= LECON 1 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 1&nbsp;: Fonctions affines et proportionnalité</h2>
+<div class="form">
+  <span class="t">DEFINITION&nbsp;: <i>a</i> ET <i>b</i> REELS FIXES</span>
+  <div class="c m"><i>f</i> affine sur &#8477; : &nbsp;<i>f</i>(<i>x</i>)&#8239;=&#8239;<i>ax</i>&#8239;+&#8239;<i>b</i></div>
+</div></div>
+<ul>
+<li><i>a</i> est le <b>coefficient directeur</b>, <i>b</i> l'<b>ordonnée à l'origine</b>, car <i>f</i>(0)&#8239;=&#8239;<i>b</i>.</li>
+<li><b>Linéaire</b> si <i>b</i>&#8239;=&#8239;0 : <i>f</i>(<i>x</i>)&#8239;=&#8239;<i>ax</i>. C'est le <b>seul</b> cas de <b>proportionnalité</b>, de coefficient <i>a</i>. <b>Constante</b> si <i>a</i>&#8239;=&#8239;0.</li>
+<li>Toute fonction linéaire est affine ; une fonction affine n'est linéaire que si son ordonnée à l'origine est nulle.</li>
+<li><b>Courbe</b> : une <b>droite</b>, donc deux points suffisent. Elle coupe l'axe des ordonnées en <span class="pt">(0&#8239;;&#8239;<i>b</i>)</span> et passe par l'<b>origine</b> si et seulement si <i>b</i>&#8239;=&#8239;0. Quand <i>x</i> augmente de 1, l'ordonnée augmente de <i>a</i>.</li>
+<li><b>Variation sur &#8477;</b> : strictement <b>croissante si <i>a</i>&#8239;&gt;&#8239;0</b>, strictement <b>décroissante si <i>a</i>&#8239;&lt;&#8239;0</b>, <b>constante si <i>a</i>&#8239;=&#8239;0</b>.</li>
+</ul>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Proportionnalité et détermination</h3>
+<p>Il y a <b>proportionnalité</b> lorsque l'une des trois conditions <b>équivalentes</b> est remplie : on passe de <i>x</i> à <i>y</i> en multipliant toujours par le <b>même nombre</b> <i>a</i> ; la fonction s'écrit <i>y</i>&#8239;=&#8239;<i>ax</i>, <b>sans terme constant</b> ; la droite <b>passe par l'origine</b>. <b>Test</b> : les quotients <span class="f"><span><i>y</i></span><span><i>x</i></span></span> (<i>x</i>&#8239;&#8800;&#8239;0) sont tous égaux, et ce quotient commun est le coefficient.</p>
+<div class="form">
+  <span class="t">DEUX IMAGES CONNUES&nbsp;: <i>f</i>(<i>x</i><sub>1</sub>)&#8239;=&#8239;<i>y</i><sub>1</sub>, <i>f</i>(<i>x</i><sub>2</sub>)&#8239;=&#8239;<i>y</i><sub>2</sub>, <i>x</i><sub>1</sub>&#8239;&#8800;&#8239;<i>x</i><sub>2</sub></span>
+  <div class="c m"><i>a</i>&#8239;=&#8239;<span class="f"><span><i>y</i><sub>2</sub>&#8239;&#8722;&#8239;<i>y</i><sub>1</sub></span><span><i>x</i><sub>2</sub>&#8239;&#8722;&#8239;<i>x</i><sub>1</sub></span></span></div>
+</div>
+<p>On obtient <i>b</i> en remplaçant <i>x</i> et <i>f</i>(<i>x</i>) par l'un des couples, puis on <b>vérifie</b> avec l'autre. Ce quotient est le <b>taux de variation</b> de <i>f</i> ; pour une fonction affine seulement, il ne dépend pas des deux points choisis.</p>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Fonctions affines par intervalles</h3>
+<p>Le domaine se découpe en plusieurs intervalles, sur chacun desquels la fonction est donnée par une expression affine, en général <b>différente</b> d'un intervalle à l'autre : la courbe est faite de <b>morceaux de droites</b> (tarifs par tranches).</p>
+<ul>
+<li>Pour calculer <i>f</i>(<i>c</i>) : chercher <b>d'abord</b> l'intervalle qui contient <i>c</i>, puis appliquer <b>la formule de cet intervalle</b>, et elle seule. Surveiller les <b>bornes</b> : le symbole &#8805; ou &gt; décide.</li>
+<li>Le sens de variation se donne <b>sur chaque intervalle</b>, jamais sur &#8477; tout entier. Aux bornes, <b>contrôler le recollement</b> : si les deux formules y donnent la même valeur, la courbe est d'un seul tenant.</li>
+</ul>
+</div>
+
+<!-- ================= LECON 2 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 2&nbsp;: Fonctions <i>x</i>&#8239;<span class="ar">&#8614;</span>&#8239;<i>x</i><sup>2</sup> et <i>x</i>&#8239;<span class="ar">&#8614;</span>&#8239;<i>x</i><sup>3</sup></h2>
+<table>
+<tr><th>Carré <span class="m"><i>f</i>(<i>x</i>)&#8239;=&#8239;<i>x</i><sup>2</sup></span></th><th>Cube <span class="m"><i>g</i>(<i>x</i>)&#8239;=&#8239;<i>x</i><sup>3</sup></span></th></tr>
+<tr>
+<td>Définie sur <b>&#8477;</b>. <span class="pt">(&#8722;<i>x</i>)<sup>2</sup>&#8239;=&#8239;<i>x</i><sup>2</sup></span> : <b>paire</b>, courbe symétrique par rapport à l'<b>axe des ordonnées</b> ; c'est une <b>parabole</b>.</td>
+<td>Définie sur <b>&#8477;</b>. <span class="pt">(&#8722;<i>x</i>)<sup>3</sup>&#8239;=&#8239;&#8722;<i>x</i><sup>3</sup></span> : <b>impaire</b>, courbe symétrique par rapport à l'<b>origine</b>.</td>
+</tr>
+<tr>
+<td><i>x</i><sup>2</sup>&#8239;&#8805;&#8239;0 pour tout réel <i>x</i>, et <i>x</i><sup>2</sup>&#8239;=&#8239;0 seulement pour <i>x</i>&#8239;=&#8239;0.</td>
+<td>Le cube <b>garde le signe</b> de <i>x</i> : négatif si <i>x</i>&#8239;&lt;&#8239;0, nul en 0, positif si <i>x</i>&#8239;&gt;&#8239;0.</td>
+</tr>
+<tr>
+<td><b>Strictement décroissante</b> sur <span class="pt">]&#8722;&#8734;&#8239;;&#8239;0]</span>, <b>strictement croissante</b> sur <span class="pt">[0&#8239;;&#8239;+&#8734;[</span> : <b>minimum 0</b> atteint en 0.</td>
+<td><b>Strictement croissante sur &#8477;</b> tout entier : ni maximum ni minimum.</td>
+</tr>
+</table></div>
+<div class="form">
+  <span class="t">COMPARER&nbsp;: CONSEQUENCE DU SENS DE VARIATION</span>
+  <div class="c m">0&#8239;&#8804;&#8239;<i>u</i>&#8239;&lt;&#8239;<i>v</i> donne <i>u</i><sup>2</sup>&#8239;&lt;&#8239;<i>v</i><sup>2</sup> &nbsp;&nbsp; <i>u</i>&#8239;&lt;&#8239;<i>v</i>&#8239;&#8804;&#8239;0 donne <i>u</i><sup>2</sup>&#8239;&gt;&#8239;<i>v</i><sup>2</sup></div>
+  <div class="c m"><i>u</i>&#8239;&lt;&#8239;<i>v</i> donne <i>u</i><sup>3</sup>&#8239;&lt;&#8239;<i>v</i><sup>3</sup>, quels que soient les signes</div>
+</div>
+<p><b>Comportement numérique</b>, lu sur un tableau de valeurs et sans aucun calcul de limite : quand |<i>x</i>| devient grand, <i>x</i><sup>2</sup> et |<i>x</i><sup>3</sup>| deviennent <b>très grands</b>, bien plus vite que <i>x</i> ; quand <i>x</i> est proche de 0, ils sont <b>plus petits</b> que <i>x</i>. Le nombre 1 est la frontière entre les deux comportements.</p>
+</div>
+
+<!-- ================= LECON 3 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 3&nbsp;: Fonctions <i>x</i>&#8239;<span class="ar">&#8614;</span>&#8239;<span class="f"><span>1</span><span><i>x</i></span></span> et <i>x</i>&#8239;<span class="ar">&#8614;</span>&#8239;&#8730;<span class="rad"><i>x</i></span></h2>
+<table>
+<tr><th>Inverse <span class="m"><i>f</i>(<i>x</i>)&#8239;=&#8239;<span class="f"><span>1</span><span><i>x</i></span></span></span></th><th>Racine carrée <span class="m"><i>g</i>(<i>x</i>)&#8239;=&#8239;&#8730;<span class="rad"><i>x</i></span></span></th></tr>
+<tr>
+<td>La division par 0 est impossible : <b>0 est une valeur interdite</b>, le domaine est <span class="pt">&#8477;<sup>*</sup>&#8239;=&#8239;]&#8722;&#8734;&#8239;;&#8239;0[&#8239;&#8746;&#8239;]0&#8239;;&#8239;+&#8734;[</span>.</td>
+<td>&#8730;<span class="rad"><i>x</i></span> est le nombre <b>positif</b> dont le carré vaut <i>x</i> ; un carré n'étant jamais <b>strictement</b> négatif, le domaine est <span class="pt">[0&#8239;;&#8239;+&#8734;[</span>.</td>
+</tr>
+<tr>
+<td><span class="pt"><span class="f"><span>1</span><span>&#8722;<i>x</i></span></span>&#8239;=&#8239;&#8722;<span class="f"><span>1</span><span><i>x</i></span></span></span> : <b>impaire</b>, symétrique par rapport à l'<b>origine</b> ; sa courbe est une <b>hyperbole</b> à <b>deux branches</b> séparées.</td>
+<td><b>Ni paire ni impaire</b> : le domaine n'est pas symétrique par rapport à 0, puisque &#8730;<span class="rad">4</span> existe alors que &#8730;<span class="rad">&#8722;4</span> n'existe pas.</td>
+</tr>
+<tr>
+<td>L'inverse <b>garde le signe</b> de <i>x</i>. <b>Strictement décroissante sur</b> <span class="pt">]&#8722;&#8734;&#8239;;&#8239;0[</span> <b>et sur</b> <span class="pt">]0&#8239;;&#8239;+&#8734;[</span>, <b>jamais sur &#8477;<sup>*</sup> entier</b>.</td>
+<td><b>Strictement croissante</b> sur <span class="pt">[0&#8239;;&#8239;+&#8734;[</span> : <b>minimum 0</b> atteint en 0, pas de maximum.</td>
+</tr>
+<tr>
+<td>si 0&#8239;&lt;&#8239;<i>u</i>&#8239;&lt;&#8239;<i>v</i> ou si <i>u</i>&#8239;&lt;&#8239;<i>v</i>&#8239;&lt;&#8239;0 : <span class="pt"><span class="f"><span>1</span><span><i>u</i></span></span>&#8239;&gt;&#8239;<span class="f"><span>1</span><span><i>v</i></span></span></span> ; si <i>u</i>&#8239;&lt;&#8239;0&#8239;&lt;&#8239;<i>v</i>, conclure par le <b>signe</b> : <span class="pt"><span class="f"><span>1</span><span><i>u</i></span></span>&#8239;&lt;&#8239;0&#8239;&lt;&#8239;<span class="f"><span>1</span><span><i>v</i></span></span></span>.</td>
+<td>si 0&#8239;&#8804;&#8239;<i>u</i>&#8239;&lt;&#8239;<i>v</i>, alors &#8730;<span class="rad"><i>u</i></span>&#8239;&lt;&#8239;&#8730;<span class="rad"><i>v</i></span> : la racine carrée <b>conserve l'ordre</b>.</td>
+</tr>
+</table></div>
+<div class="form">
+  <span class="t">ENSEMBLE DE DEFINITION&nbsp;: DEUX SEULES INTERDICTIONS</span>
+  <div class="c m">tout dénominateur &#8239;&#8800;&#8239;0 &nbsp;&nbsp;&middot;&nbsp;&nbsp; toute quantité sous un radical &#8239;&#8805;&#8239;0</div>
+</div>
+<p>Une condition par quotient, une par radical ; le domaine rassemble les réels qui les vérifient <b>toutes en même temps</b>, et la réponse s'écrit avec des intervalles.</p>
+</div>
+
+<div class="bloc">
+<div class="form">
+  <span class="t">LE NOMBRE 1 SEPARE DEUX COMPORTEMENTS&nbsp;: POUR <i>a</i>&#8239;&gt;&#8239;0</span>
+  <div class="c m"><i>a</i>&#8239;&gt;&#8239;1 : &nbsp;<span class="f"><span>1</span><span><i>a</i></span></span>&#8239;&lt;&#8239;1&#8239;&lt;&#8239;&#8730;<span class="rad"><i>a</i></span>&#8239;&lt;&#8239;<i>a</i>&#8239;&lt;&#8239;<i>a</i><sup>2</sup>&#8239;&lt;&#8239;<i>a</i><sup>3</sup></div>
+  <div class="c m">0&#8239;&lt;&#8239;<i>a</i>&#8239;&lt;&#8239;1 : &nbsp;<i>a</i><sup>3</sup>&#8239;&lt;&#8239;<i>a</i><sup>2</sup>&#8239;&lt;&#8239;<i>a</i>&#8239;&lt;&#8239;&#8730;<span class="rad"><i>a</i></span>&#8239;&lt;&#8239;1&#8239;&lt;&#8239;<span class="f"><span>1</span><span><i>a</i></span></span></div>
+  <div class="c m"><i>a</i>&#8239;=&#8239;1 : toutes ces quantités valent 1</div>
+</div>
+<p>Multiplier un nombre par lui-même l'<b>agrandit</b> s'il est plus grand que 1, mais le <b>rapetisse</b> s'il est compris entre 0 et 1. Toutes ces courbes se rencontrent au point <span class="pt">(1&#8239;;&#8239;1)</span>, où l'ordre se retourne.</p>
+</div>
+
+<!-- ================= LECON 4 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 4&nbsp;: Fonction valeur absolue <i>x</i>&#8239;<span class="ar">&#8614;</span>&#8239;|<i>x</i>|</h2>
+<div class="form">
+  <span class="t">DEFINITION&nbsp;: SUR &#8477; TOUT ENTIER</span>
+  <div class="c m">|<i>x</i>|&#8239;=&#8239;<i>x</i> si <i>x</i>&#8239;&#8805;&#8239;0 &nbsp;&nbsp;&nbsp; |<i>x</i>|&#8239;=&#8239;&#8722;<i>x</i> si <i>x</i>&#8239;&lt;&#8239;0</div>
+</div></div>
+<ul>
+<li>&#8722;<i>x</i> désigne l'<b>opposé</b> de <i>x</i> : pour <i>x</i> négatif, cet opposé est positif. Ainsi <span class="pt">|&#8722;5|&#8239;=&#8239;&#8722;(&#8722;5)&#8239;=&#8239;5</span>.</li>
+<li>|<i>x</i>|&#8239;&#8805;&#8239;0 pour tout réel <i>x</i>, et |<i>x</i>|&#8239;=&#8239;0 <b>seulement</b> pour <i>x</i>&#8239;=&#8239;0. Comme |&#8722;<i>x</i>|&#8239;=&#8239;|<i>x</i>|, la fonction est <b>paire</b> : courbe symétrique par rapport à l'axe des ordonnées.</li>
+<li>|<i>x</i>| est la <b>distance de <i>x</i> à zéro</b> sur la droite graduée ; |<i>x</i>&#8239;&#8722;&#8239;<i>a</i>| est la <b>distance entre <i>x</i> et <i>a</i></b>.</li>
+<li><b>Strictement décroissante</b> sur <span class="pt">]&#8722;&#8734;&#8239;;&#8239;0]</span>, <b>strictement croissante</b> sur <span class="pt">[0&#8239;;&#8239;+&#8734;[</span> : <b>minimum 0</b> en 0, pas de maximum. La courbe est faite de <b>deux demi-droites</b> issues de l'origine, <i>y</i>&#8239;=&#8239;&#8722;<i>x</i> pour <i>x</i>&#8239;&lt;&#8239;0 et <i>y</i>&#8239;=&#8239;<i>x</i> pour <i>x</i>&#8239;&#8805;&#8239;0 : un <b>V</b> de sommet l'origine.</li>
+</ul>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Equation |<i>x</i>| = <i>k</i> et suppression des barres</h3>
+<table>
+<tr><th>Signe de <i>k</i></th><th>Solutions de <span class="m">|<i>x</i>|&#8239;=&#8239;<i>k</i></span></th></tr>
+<tr><td class="m"><i>k</i>&#8239;&gt;&#8239;0</td><td><b>deux</b> solutions opposées : <span class="pt"><i>x</i>&#8239;=&#8239;<i>k</i></span> ou <span class="pt"><i>x</i>&#8239;=&#8239;&#8722;<i>k</i></span></td></tr>
+<tr><td class="m"><i>k</i>&#8239;=&#8239;0</td><td>une <b>seule</b> solution : <i>x</i>&#8239;=&#8239;0</td></tr>
+<tr><td class="m"><i>k</i>&#8239;&lt;&#8239;0</td><td><b>aucune</b> solution : une valeur absolue n'est jamais <b>strictement</b> négative</td></tr>
+</table>
+<p>Pour <i>k</i>&#8239;&gt;&#8239;0, l'équation <span class="pt">|<i>x</i>&#8239;&#8722;&#8239;<i>a</i>|&#8239;=&#8239;<i>k</i></span> a pour solutions les deux nombres situés à la <b>distance <i>k</i> de <i>a</i></b> : <span class="pt"><i>a</i>&#8239;&#8722;&#8239;<i>k</i></span> et <span class="pt"><i>a</i>&#8239;+&#8239;<i>k</i></span>.</p>
+<p>Pour <b>supprimer les barres</b> de |<i>ax</i>&#8239;+&#8239;<i>b</i>|, on sépare deux cas : <span class="pt">|<i>ax</i>&#8239;+&#8239;<i>b</i>|&#8239;=&#8239;<i>ax</i>&#8239;+&#8239;<i>b</i></span> là où <i>ax</i>&#8239;+&#8239;<i>b</i>&#8239;&#8805;&#8239;0, et <span class="pt">|<i>ax</i>&#8239;+&#8239;<i>b</i>|&#8239;=&#8239;&#8722;(<i>ax</i>&#8239;+&#8239;<i>b</i>)</span> là où <i>ax</i>&#8239;+&#8239;<i>b</i>&#8239;&lt;&#8239;0. La <b>valeur charnière</b> est la solution de <i>ax</i>&#8239;+&#8239;<i>b</i>&#8239;=&#8239;0, repérée par un tableau de signes. La fonction <span class="pt"><i>x</i>&#8239;<span class="ar">&#8614;</span>&#8239;|<i>ax</i>&#8239;+&#8239;<i>b</i>|</span> est donc <b>affine par intervalles</b>, et sa courbe est un <b>V</b> dont le sommet a pour abscisse cette valeur charnière.</p>
+</div>
+
+<!-- ================= LECON 5 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 5&nbsp;: Fonctions se ramenant aux fonctions de référence</h2>
+<div class="form">
+  <span class="t">PARABOLE DEPLACEE&nbsp;: <i>h</i>, <i>k</i> REELS ET <i>a</i>&#8239;&#8800;&#8239;0</span>
+  <div class="c m"><i>f</i>(<i>x</i>)&#8239;=&#8239;<i>a</i>(<i>x</i>&#8239;&#8722;&#8239;<i>h</i>)<sup>2</sup>&#8239;+&#8239;<i>k</i> &nbsp;&nbsp; sommet (<i>h</i>&#8239;;&#8239;<i>k</i>)</div>
+</div></div>
+<ul>
+<li>Pour <i>a</i>&#8239;=&#8239;1 : <b>décroissante</b> sur <span class="pt">]&#8722;&#8734;&#8239;;&#8239;<i>h</i>]</span>, <b>croissante</b> sur <span class="pt">[<i>h</i>&#8239;;&#8239;+&#8734;[</span>, <b>minimum <i>k</i> atteint en <i>x</i>&#8239;=&#8239;<i>h</i></b> ; courbe symétrique par rapport à la droite d'équation <i>x</i>&#8239;=&#8239;<i>h</i>.</li>
+<li>Si <i>a</i>&#8239;&gt;&#8239;0 : parabole tournée vers le <b>haut</b>, la fonction décroît puis croît et <i>k</i> est un <b>minimum</b>. Si <i>a</i>&#8239;&lt;&#8239;0 : parabole <b>retournée vers le bas</b>, la fonction croît puis décroît et <i>k</i> est un <b>maximum</b>.</li>
+<li>Si |<i>a</i>|&#8239;&gt;&#8239;1 elle est <b>resserrée</b> ; si 0&#8239;&lt;&#8239;|<i>a</i>|&#8239;&lt;&#8239;1 elle est <b>aplatie</b>. Dans tous les cas le sommet reste <span class="pt">(<i>h</i>&#8239;;&#8239;<i>k</i>)</span>.</li>
+</ul>
+<div class="note"><b>Le décalage horizontal se lit à l'envers.</b> Dans (<i>x</i>&#8239;&#8722;&#8239;2)<sup>2</sup> la courbe se déplace de 2 vers la <b>droite</b> ; dans <span class="pt">(<i>x</i>&#8239;+&#8239;3)<sup>2</sup>&#8239;=&#8239;(<i>x</i>&#8239;&#8722;&#8239;(&#8722;3))<sup>2</sup></span>, de 3 vers la <b>gauche</b>. Réflexe : chercher la valeur de <i>x</i> qui <b>annule</b> la quantité mise au carré.</div>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Forme canonique</h3>
+<p>Toute expression <span class="pt"><i>x</i><sup>2</sup>&#8239;+&#8239;<i>px</i>&#8239;+&#8239;<i>q</i></span> se réécrit <span class="pt">(<i>x</i>&#8239;&#8722;&#8239;<i>h</i>)<sup>2</sup>&#8239;+&#8239;<i>k</i></span> à l'aide de <span class="pt">(<i>x</i>&#8239;&#8722;&#8239;<i>h</i>)<sup>2</sup>&#8239;=&#8239;<i>x</i><sup>2</sup>&#8239;&#8722;&#8239;2<i>hx</i>&#8239;+&#8239;<i>h</i><sup>2</sup></span> lue de droite à gauche : <i>h</i> est la <b>moitié du coefficient de <i>x</i>, changée de signe</b>, puis on corrige la constante. En pratique, l'énoncé donne la forme cherchée et il suffit de la <b>vérifier en développant</b>.</p>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Même principe pour toutes les références</h3>
+<p>Remplacer <i>x</i> par <i>x</i>&#8239;&#8722;&#8239;<i>h</i> décale la courbe de <i>h</i> horizontalement, ajouter <i>k</i> la décale de <i>k</i> verticalement. Le sens de variation ne change pas : il est seulement <b>déplacé</b>.</p>
+<table>
+<tr><th>Fonction</th><th>Ce qu'il faut en dire</th></tr>
+<tr><td class="m"><i>x</i>&#8239;<span class="ar">&#8614;</span>&#8239;|<i>x</i>&#8239;&#8722;&#8239;<i>h</i>|&#8239;+&#8239;<i>k</i></td><td>courbe en <b>V</b> de sommet (<i>h</i>&#8239;;&#8239;<i>k</i>) ; minimum <i>k</i> atteint en <i>h</i>.</td></tr>
+<tr><td class="m"><i>x</i>&#8239;<span class="ar">&#8614;</span>&#8239;(<i>x</i>&#8239;&#8722;&#8239;<i>h</i>)<sup>3</sup></td><td>croissante sur &#8477; ; centre de symétrie déplacé en (<i>h</i>&#8239;;&#8239;0).</td></tr>
+<tr><td class="m"><i>x</i>&#8239;<span class="ar">&#8614;</span>&#8239;&#8730;<span class="rad"><i>x</i>&#8239;&#8722;&#8239;<i>h</i></span>&#8239;+&#8239;<i>k</i></td><td>définie pour <i>x</i>&#8239;&#8805;&#8239;<i>h</i> ; croissante ; minimum <i>k</i> atteint en <i>h</i>.</td></tr>
+<tr><td class="m"><i>x</i>&#8239;<span class="ar">&#8614;</span>&#8239;<span class="f"><span>1</span><span><i>x</i>&#8239;&#8722;&#8239;<i>h</i></span></span>&#8239;+&#8239;<i>k</i></td><td>définie pour <i>x</i>&#8239;&#8800;&#8239;<i>h</i> ; décroissante sur <b>chacun</b> des deux intervalles.</td></tr>
+</table>
+<p>Certains quotients se réécrivent <span class="pt"><i>f</i>(<i>x</i>)&#8239;=&#8239;<i>a</i>&#8239;+&#8239;<span class="f"><span><i>b</i></span><span><i>x</i>&#8239;&#8722;&#8239;<i>h</i></span></span></span> : c'est la fonction <b>inverse</b> décalée, définie pour <i>x</i>&#8239;&#8800;&#8239;<i>h</i>, <b>décroissante</b> sur chaque intervalle si <i>b</i>&#8239;&gt;&#8239;0 et <b>croissante</b> si <i>b</i>&#8239;&lt;&#8239;0. Aucun exposé général n'est au programme : l'énoncé fournit la forme à obtenir.</p>
+<p><b>Résoudre graphiquement <i>f</i>(<i>x</i>)&#8239;=&#8239;<i>g</i>(<i>x</i>)</b> : tracer les deux courbes dans le <b>même repère</b> ; le nombre de <b>points d'intersection</b> donne le nombre de solutions ; lire leurs <b>abscisses</b>, jamais leurs ordonnées ; <b>vérifier</b> ensuite par le calcul, une lecture graphique restant approximative.</p>
+</div>
+
+</div>
+
+<div class="bandeau vert">PIEGES ET ERREURS FREQUENTES</div>
+<div class="cols">
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> <i>x</i>&#8239;<span class="ar">&#8614;</span>&#8239;2<i>x</i>&#8239;+&#8239;3 traduit une proportionnalité &nbsp;&middot;&nbsp; on calcule <i>f</i>(5) avec la formule écrite en premier</div><div class="cor"><span class="v">&#10003;</span> Seule une fonction <b>linéaire</b> <i>x</i>&#8239;<span class="ar">&#8614;</span>&#8239;<i>ax</i>, <b>sans constante ajoutée</b>, traduit une proportionnalité : ici <i>f</i>(0)&#8239;=&#8239;3&#8239;&#8800;&#8239;0, la droite ne passe pas par l'origine. Et pour une fonction par morceaux, la première question est « <b>dans quel intervalle</b> se trouve mon nombre ? » ; avec <i>x</i>&#8239;&#8805;&#8239;2, la valeur 2 relève de la seconde formule.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> <i>x</i>&#8239;<span class="ar">&#8614;</span>&#8239;<i>x</i><sup>2</sup> est croissante sur &#8477; &nbsp;&middot;&nbsp; (&#8722;2)<sup>2</sup>&#8239;=&#8239;&#8722;4 &nbsp;&middot;&nbsp; (&#8722;2)<sup>3</sup>&#8239;=&#8239;8</div><div class="cor"><span class="v">&#10003;</span> Le carré <b>décroît</b> sur <span class="pt">]&#8722;&#8734;&#8239;;&#8239;0]</span> puis <b>croît</b> sur <span class="pt">[0&#8239;;&#8239;+&#8734;[</span> ; contre-exemple : &#8722;3&#8239;&lt;&#8239;1 et pourtant 9&#8239;&gt;&#8239;1. <span class="pt">(&#8722;2)<sup>2</sup>&#8239;=&#8239;4</span> car un carré est positif, tandis que <span class="pt">(&#8722;2)<sup>3</sup>&#8239;=&#8239;&#8722;8</span> car le cube <b>garde le signe</b>. Le carré est <b>pair</b>, le cube <b>impair</b> : tester <i>f</i>(&#8722;2) et <i>f</i>(2).</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> Pour <i>f</i>(<i>x</i>)&#8239;=&#8239;<span class="f"><span>1</span><span><i>x</i></span></span>, on a <i>f</i>(0)&#8239;=&#8239;0 &nbsp;&middot;&nbsp; <i>g</i>(<i>x</i>)&#8239;=&#8239;&#8730;<span class="rad"><i>x</i></span> est définie pour tout <i>x</i></div><div class="cor"><span class="v">&#10003;</span> 0 est une <b>valeur interdite</b> pour l'inverse : aucun nombre multiplié par 0 ne donne 1, donc <i>f</i>(0) n'existe pas. Et la racine carrée n'existe que pour <i>x</i>&#8239;&#8805;&#8239;0, aucun carré n'étant strictement négatif : son domaine est <span class="pt">[0&#8239;;&#8239;+&#8734;[</span>, ce qui la rend <b>ni paire ni impaire</b>.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> &#8722;1&#8239;&lt;&#8239;2, donc par décroissance <span class="f"><span>1</span><span>&#8722;1</span></span>&#8239;&gt;&#8239;<span class="f"><span>1</span><span>2</span></span></div><div class="cor"><span class="v">&#10003;</span> La décroissance de l'inverse vaut <b>sur chaque intervalle séparément</b>, jamais en franchissant 0 : ici <span class="pt"><span class="f"><span>1</span><span>&#8722;1</span></span>&#8239;=&#8239;&#8722;1&#8239;&lt;&#8239;0,5</span>. Quand les deux nombres sont de signes contraires, on compare par le <b>signe</b> des images.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> |&#8722;3|&#8239;=&#8239;&#8722;3 &nbsp;&middot;&nbsp; |<i>x</i>|&#8239;=&#8239;&#8722;<i>x</i> toujours &nbsp;&middot;&nbsp; |<i>x</i>|&#8239;=&#8239;&#8722;5 a pour solutions 5 et &#8722;5</div><div class="cor"><span class="v">&#10003;</span> Une valeur absolue mesure une <b>distance</b> à zéro : jamais négative, donc |&#8722;3|&#8239;=&#8239;3. L'écriture |<i>x</i>|&#8239;=&#8239;&#8722;<i>x</i> n'est correcte que <b>si <i>x</i> est négatif</b> ; pour <i>x</i>&#8239;=&#8239;3 elle donnerait 3&#8239;=&#8239;&#8722;3. Enfin <span class="pt">|<i>x</i>|&#8239;=&#8239;&#8722;5</span> n'a <b>aucune</b> solution : regarder le signe de <i>k</i> avant tout calcul.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> Le minimum de (<i>x</i>&#8239;+&#8239;4)<sup>2</sup>&#8239;&#8722;&#8239;1 est atteint en <i>x</i>&#8239;=&#8239;4 &nbsp;&middot;&nbsp; (<i>x</i>&#8239;+&#8239;3)<sup>2</sup> décale la courbe vers la droite</div><div class="cor"><span class="v">&#10003;</span> Le carré s'annule quand <i>x</i>&#8239;+&#8239;4&#8239;=&#8239;0, donc en <b><i>x</i>&#8239;=&#8239;&#8722;4</b>, où le minimum vaut &#8722;1. De même <span class="pt">(<i>x</i>&#8239;+&#8239;3)<sup>2</sup>&#8239;=&#8239;(<i>x</i>&#8239;&#8722;&#8239;(&#8722;3))<sup>2</sup></span> : le décalage vaut &#8722;3, donc vers la <b>gauche</b>.</div></div>
+
+</div>
+
+<div class="bandeau bleu">A SAVOIR PAR COEUR AVANT LE DEVOIR</div>
+<div class="cols">
+<ol class="recap">
+<li><b>Affine</b> <i>x</i>&#8239;<span class="ar">&#8614;</span>&#8239;<i>ax</i>&#8239;+&#8239;<i>b</i> : courbe = <b>droite</b> ; <i>a</i> coefficient directeur, <i>b</i> ordonnée à l'origine ; <b>croissante si <i>a</i>&#8239;&gt;&#8239;0</b>, décroissante si <i>a</i>&#8239;&lt;&#8239;0. <b>Linéaire</b> (proportionnalité) si <i>b</i>&#8239;=&#8239;0. Détermination : <span class="pt"><i>a</i>&#8239;=&#8239;<span class="f"><span><i>y</i><sub>2</sub>&#8239;&#8722;&#8239;<i>y</i><sub>1</sub></span><span><i>x</i><sub>2</sub>&#8239;&#8722;&#8239;<i>x</i><sub>1</sub></span></span></span>, puis <i>b</i> par remplacement.</li>
+<li><b>Affine par intervalles</b> : une formule par intervalle ; pour une image, chercher <b>d'abord</b> l'intervalle ; variation donnée <b>sur chaque intervalle</b>.</li>
+<li><b>Carré</b> : paire, parabole, minimum 0 en 0, décroît sur <span class="pt">]&#8722;&#8734;&#8239;;&#8239;0]</span> puis croît sur <span class="pt">[0&#8239;;&#8239;+&#8734;[</span>. <b>Cube</b> : impaire, croissante sur &#8477;, garde le signe.</li>
+<li><b>Inverse</b> : impaire, hyperbole, <b>0 interdit</b>, décroissante sur chaque branche, jamais de l'une à l'autre. <b>Racine</b> : domaine <span class="pt">[0&#8239;;&#8239;+&#8734;[</span>, croissante, ni paire ni impaire.</li>
+<li><b>Valeur absolue</b> : paire, courbe en <b>V</b>, minimum 0 en 0 ; |<i>x</i>|&#8239;=&#8239;<i>x</i> si <i>x</i>&#8239;&#8805;&#8239;0 et &#8722;<i>x</i> si <i>x</i>&#8239;&lt;&#8239;0 ; |<i>x</i>&#8239;&#8722;&#8239;<i>a</i>| = <b>distance</b> de <i>x</i> à <i>a</i>. L'équation |<i>x</i>|&#8239;=&#8239;<i>k</i> a deux solutions si <i>k</i>&#8239;&gt;&#8239;0, une si <i>k</i>&#8239;=&#8239;0, aucune si <i>k</i>&#8239;&lt;&#8239;0.</li>
+<li><b>Comparaison</b> : pour <i>a</i>&#8239;&gt;&#8239;1, <span class="pt"><span class="f"><span>1</span><span><i>a</i></span></span>&#8239;&lt;&#8239;1&#8239;&lt;&#8239;&#8730;<span class="rad"><i>a</i></span>&#8239;&lt;&#8239;<i>a</i>&#8239;&lt;&#8239;<i>a</i><sup>2</sup>&#8239;&lt;&#8239;<i>a</i><sup>3</sup></span> ; pour 0&#8239;&lt;&#8239;<i>a</i>&#8239;&lt;&#8239;1, tout s'inverse.</li>
+<li><b>Fonction décalée</b> <span class="pt"><i>a</i>(<i>x</i>&#8239;&#8722;&#8239;<i>h</i>)<sup>2</sup>&#8239;+&#8239;<i>k</i></span> : sommet <span class="pt">(<i>h</i>&#8239;;&#8239;<i>k</i>)</span>, extremum <i>k</i> en <i>x</i>&#8239;=&#8239;<i>h</i> ; minimum si <i>a</i>&#8239;&gt;&#8239;0, maximum si <i>a</i>&#8239;&lt;&#8239;0. Même principe pour <span class="pt">|<i>x</i>&#8239;&#8722;&#8239;<i>h</i>|&#8239;+&#8239;<i>k</i></span>, <span class="pt">&#8730;<span class="rad"><i>x</i>&#8239;&#8722;&#8239;<i>h</i></span>&#8239;+&#8239;<i>k</i></span>, <span class="pt"><span class="f"><span>1</span><span><i>x</i>&#8239;&#8722;&#8239;<i>h</i></span></span>&#8239;+&#8239;<i>k</i></span>.</li>
+<li><b>Réflexes.</b> Domaine&nbsp;: dénominateur &#8800;&#8239;0, quantité sous le radical &#8805;&#8239;0. Parité&nbsp;: tester <i>f</i>(&#8722;<i>x</i>). Ne jamais annoncer un sens de variation sans dire <b>sur quel intervalle</b> ; un contre-exemple suffit à réfuter.</li>
+</ol>
+</div>
+
+</body>
+</html>

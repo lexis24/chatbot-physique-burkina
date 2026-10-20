@@ -1,0 +1,332 @@
+{
+  "niveau": "4ème",
+  "chapitre": "Chapitre 0 : Bien continuer en 4ème",
+  "source": "maths/4eme/Chapitre_0_Bien_continuer",
+  "nombre_cartes": 36,
+  "cartes": [
+    {
+      "id": "4E-CH00-001",
+      "lecon": "Test de positionnement : que sais-tu déjà de la 5ème ?",
+      "type": "definition",
+      "recto": "A quoi sert le test de positionnement proposé au début de la 4ème ?",
+      "verso": "Il n'est pas une note. Il indique thème par thème ce qui est déjà acquis de la 5ème et ce qui demandera encore un peu de travail.",
+      "difficulte": 1,
+      "tags": ["test-de-positionnement", "evaluation"]
+    },
+    {
+      "id": "4E-CH00-002",
+      "lecon": "Test de positionnement : que sais-tu déjà de la 5ème ?",
+      "type": "definition",
+      "recto": "Avec quel outil effectue-t-on les calculs pendant toute l'année de 4ème ?",
+      "verso": "Aucun : on ne se sert pas de calculatrice. Les calculs se font de tête, au brouillon ou posés dans le cahier.",
+      "difficulte": 1,
+      "tags": ["calcul", "regle-de-travail"]
+    },
+    {
+      "id": "4E-CH00-003",
+      "lecon": "Je révise l'essentiel de la 5ème",
+      "type": "formule",
+      "recto": "Comment additionne-t-on deux nombres relatifs ?",
+      "verso": "S'ils sont de même signe, on additionne les distances à zéro et on garde le signe commun : $\\left(-6\\right) + \\left(-5\\right) = -11$. S'ils sont de signes contraires, on soustrait la plus petite distance de la plus grande et on garde le signe du nombre le plus éloigné de zéro : $\\left(+8\\right) + \\left(-3\\right) = +5$.",
+      "difficulte": 2,
+      "tags": ["relatifs", "addition"]
+    },
+    {
+      "id": "4E-CH00-004",
+      "lecon": "Je révise l'essentiel de la 5ème",
+      "type": "formule",
+      "recto": "Comment transforme-t-on une soustraction de nombres relatifs en addition ?",
+      "verso": "Soustraire un nombre, c'est ajouter son opposé. Ainsi $\\left(-2\\right) - \\left(-7\\right) = \\left(-2\\right) + \\left(+7\\right) = +5$.",
+      "difficulte": 2,
+      "tags": ["relatifs", "soustraction", "oppose"]
+    },
+    {
+      "id": "4E-CH00-005",
+      "lecon": "Je révise l'essentiel de la 5ème",
+      "type": "formule",
+      "recto": "Quelle est la règle des signes pour le produit de deux nombres relatifs ?",
+      "verso": "Deux nombres de même signe donnent un produit positif, deux nombres de signes contraires un produit négatif. On multiplie d'abord les distances à zéro, puis on place le signe : $\\left(-4\\right) \\times \\left(-6\\right) = +24$.",
+      "difficulte": 1,
+      "tags": ["relatifs", "multiplication", "regle-des-signes"]
+    },
+    {
+      "id": "4E-CH00-006",
+      "lecon": "Je révise l'essentiel de la 5ème",
+      "type": "definition",
+      "recto": "Qu'est-ce que l'opposé d'un nombre relatif ?",
+      "verso": "C'est le nombre situé à la même distance de zéro, mais de l'autre côté : l'opposé de $+5$ est $-5$, l'opposé de $-3$ est $+3$.",
+      "difficulte": 1,
+      "tags": ["relatifs", "oppose"]
+    },
+    {
+      "id": "4E-CH00-007",
+      "lecon": "Je révise l'essentiel de la 5ème",
+      "type": "definition",
+      "recto": "Qu'est-ce que la valeur absolue d'un nombre relatif ?",
+      "verso": "C'est sa distance à zéro ; elle est donc toujours positive ou nulle. On la note entre deux barres : la valeur absolue de $-8$ vaut $8$.",
+      "difficulte": 1,
+      "tags": ["relatifs", "valeur-absolue"]
+    },
+    {
+      "id": "4E-CH00-008",
+      "lecon": "Je révise l'essentiel de la 5ème",
+      "type": "formule",
+      "recto": "Quel nombre permet de simplifier une fraction en une seule étape ?",
+      "verso": "Le PGCD du numérateur et du dénominateur : on divise les deux par ce nombre. Ainsi $\\dfrac{12}{18} = \\dfrac{2}{3}$, en divisant par $6$.",
+      "difficulte": 2,
+      "tags": ["fractions", "simplification", "pgcd"]
+    },
+    {
+      "id": "4E-CH00-009",
+      "lecon": "Je révise l'essentiel de la 5ème",
+      "type": "formule",
+      "recto": "Comment additionne-t-on deux fractions de dénominateurs différents ?",
+      "verso": "On les réduit d'abord au même dénominateur, puis on additionne les numérateurs : $\\dfrac{1}{2} + \\dfrac{1}{3} = \\dfrac{3}{6} + \\dfrac{2}{6} = \\dfrac{5}{6}$.",
+      "difficulte": 2,
+      "tags": ["fractions", "addition", "meme-denominateur"]
+    },
+    {
+      "id": "4E-CH00-010",
+      "lecon": "Je révise l'essentiel de la 5ème",
+      "type": "formule",
+      "recto": "Comment multiplie-t-on deux fractions ?",
+      "verso": "On multiplie les numérateurs entre eux et les dénominateurs entre eux, puis on simplifie : $\\dfrac{2}{3} \\times \\dfrac{3}{4} = \\dfrac{6}{12} = \\dfrac{1}{2}$.",
+      "difficulte": 1,
+      "tags": ["fractions", "multiplication"]
+    },
+    {
+      "id": "4E-CH00-011",
+      "lecon": "Je révise l'essentiel de la 5ème",
+      "type": "definition",
+      "recto": "Que représente l'écriture $a^{n}$, où $n$ est un entier positif ?",
+      "verso": "Un produit de $n$ facteurs tous égaux à $a$ : $2^{4} = 2 \\times 2 \\times 2 \\times 2 = 16$.",
+      "difficulte": 1,
+      "tags": ["puissances", "definition"]
+    },
+    {
+      "id": "4E-CH00-012",
+      "lecon": "Je révise l'essentiel de la 5ème",
+      "type": "formule",
+      "recto": "Que deviennent les exposants quand on multiplie, puis quand on divise, deux puissances de $10$ ?",
+      "verso": "Ils s'ajoutent pour un produit et se soustraient pour un quotient : $10^{2} \\times 10^{4} = 10^{6}$ et $10^{6} \\div 10^{2} = 10^{4}$.",
+      "difficulte": 2,
+      "tags": ["puissances-de-dix", "exposants"]
+    },
+    {
+      "id": "4E-CH00-013",
+      "lecon": "Je révise l'essentiel de la 5ème",
+      "type": "formule",
+      "recto": "Que dit la distributivité de la multiplication sur l'addition ?",
+      "verso": "$k \\times \\left(a + b\\right) = k \\times a + k \\times b$. Elle sert à développer : $5 \\times \\left(x + 2\\right) = 5x + 10$.",
+      "difficulte": 1,
+      "tags": ["distributivite", "developpement"]
+    },
+    {
+      "id": "4E-CH00-014",
+      "lecon": "Je révise l'essentiel de la 5ème",
+      "type": "formule",
+      "recto": "Comment trouve-t-on le nombre qui manque dans une égalité comme $x + 6 = 13$ ?",
+      "verso": "On utilise l'opération inverse : l'inverse de $+$ est $-$, donc $x = 13 - 6 = 7$. De même, $4x = 28$ donne $x = 28 \\div 4 = 7$.",
+      "difficulte": 2,
+      "tags": ["egalite-a-trous", "operation-inverse"]
+    },
+    {
+      "id": "4E-CH00-015",
+      "lecon": "Je révise l'essentiel de la 5ème",
+      "type": "formule",
+      "recto": "Quelles propriétés doit-on connaître par cœur sur le parallélogramme ?",
+      "verso": "Les côtés opposés sont parallèles et de même longueur, et les diagonales se coupent en leur milieu. Si ABCD est un parallélogramme, alors $AB = DC$ et $AD = BC$.",
+      "difficulte": 2,
+      "tags": ["parallelogramme", "proprietes"]
+    },
+    {
+      "id": "4E-CH00-016",
+      "lecon": "Je révise l'essentiel de la 5ème",
+      "type": "definition",
+      "recto": "Comment la symétrie de centre O transforme-t-elle un point A ?",
+      "verso": "Elle lui associe le point A' tel que O est le milieu du segment [AA'] : A et A' sont alignés avec O, de part et d'autre de O et à la même distance.",
+      "difficulte": 2,
+      "tags": ["symetrie-centrale", "milieu"]
+    },
+    {
+      "id": "4E-CH00-017",
+      "lecon": "Mes instruments de géométrie",
+      "type": "formule",
+      "recto": "Comment trace-t-on à l'équerre une droite perpendiculaire à une droite donnée ?",
+      "verso": "On place un côté de l'angle droit de l'équerre le long de la droite, puis on trace le long de l'autre côté.",
+      "difficulte": 1,
+      "tags": ["equerre", "perpendiculaire", "construction"]
+    },
+    {
+      "id": "4E-CH00-018",
+      "lecon": "Mes instruments de géométrie",
+      "type": "formule",
+      "recto": "Comment trace-t-on deux droites parallèles avec la règle et l'équerre ?",
+      "verso": "On pose une règle qui sert de guide, on appuie l'équerre contre elle et on trace un premier trait, puis on fait glisser l'équerre le long de la règle sans la faire tourner et on trace le second.",
+      "difficulte": 2,
+      "tags": ["equerre", "parallele", "construction"]
+    },
+    {
+      "id": "4E-CH00-019",
+      "lecon": "Mes instruments de géométrie",
+      "type": "formule",
+      "recto": "Comment reporte-t-on une longueur au compas ?",
+      "verso": "On écarte le compas jusqu'à la longueur voulue, puis, sans toucher à la vis, on pose la pointe sèche à l'endroit choisi et on trace un arc. Cela sert à construire des figures et à vérifier des égalités de distances.",
+      "difficulte": 2,
+      "tags": ["compas", "report-de-longueur"]
+    },
+    {
+      "id": "4E-CH00-020",
+      "lecon": "Mes instruments de géométrie",
+      "type": "definition",
+      "recto": "Quelle précaution prend-on avant de lire une mesure d'angle sur le rapporteur ?",
+      "verso": "Le rapporteur porte deux graduations : on regarde d'abord la forme de l'angle pour savoir laquelle lire. On centre le rapporteur sur le sommet et on pose sa ligne de base sur un côté.",
+      "difficulte": 2,
+      "tags": ["rapporteur", "angle", "piege"]
+    },
+    {
+      "id": "4E-CH00-021",
+      "lecon": "Mes instruments de géométrie",
+      "type": "definition",
+      "recto": "Que veut dire coder une figure ?",
+      "verso": "C'est marquer sur le dessin ce que l'on sait par l'énoncé, sans l'avoir mesuré.",
+      "difficulte": 1,
+      "tags": ["codage", "figure"]
+    },
+    {
+      "id": "4E-CH00-022",
+      "lecon": "Mes instruments de géométrie",
+      "type": "definition",
+      "recto": "Quels sont les trois codages qui suffisent presque toujours sur une figure ?",
+      "verso": "Des petits traits identiques pour des longueurs égales, un petit carré pour un angle droit, des flèches de même sens pour des droites parallèles.",
+      "difficulte": 2,
+      "tags": ["codage", "figure", "vocabulaire"]
+    },
+    {
+      "id": "4E-CH00-023",
+      "lecon": "Apprendre à démontrer",
+      "type": "definition",
+      "recto": "Que veut dire démontrer, en 4ème ?",
+      "verso": "C'est rédiger un raisonnement complet et organisé, qui part uniquement des données de l'énoncé, nomme la propriété employée et en déduit la conclusion, sans rien mesurer.",
+      "difficulte": 1,
+      "tags": ["demonstration", "definition"]
+    },
+    {
+      "id": "4E-CH00-024",
+      "lecon": "Apprendre à démontrer",
+      "type": "definition",
+      "recto": "Quelle différence y a-t-il entre justifier, comme en 5ème, et démontrer, en 4ème ?",
+      "verso": "Justifier, c'est appuyer une affirmation sur une raison sûre, en une phrase courte. Démontrer, c'est écrire une chaîne déductive complète et organisée, qui n'utilise que les données et des propriétés clairement énoncées dans le cours.",
+      "difficulte": 2,
+      "tags": ["demonstration", "justification", "distinction"]
+    },
+    {
+      "id": "4E-CH00-025",
+      "lecon": "Apprendre à démontrer",
+      "type": "definition",
+      "recto": "Quelles sont les trois étapes du modèle de rédaction d'une démonstration ?",
+      "verso": "Hypothèse, outil, conclusion, que l'on écrit « On sait que ... », « Or, si ... alors ... », « Donc ... ».",
+      "difficulte": 2,
+      "tags": ["demonstration", "hypothese-outil-conclusion"]
+    },
+    {
+      "id": "4E-CH00-026",
+      "lecon": "Apprendre à démontrer",
+      "type": "definition",
+      "recto": "Que doit contenir la partie « outil » d'une démonstration ?",
+      "verso": "La propriété ou la définition du cours qui s'applique à la situation, énoncée en entier sous la forme « si ... alors ... ».",
+      "difficulte": 2,
+      "tags": ["demonstration", "outil", "propriete"]
+    },
+    {
+      "id": "4E-CH00-027",
+      "lecon": "Apprendre à démontrer",
+      "type": "definition",
+      "recto": "Pourquoi un beau dessin ne prouve-t-il jamais un résultat de géométrie ?",
+      "verso": "Parce qu'il peut être imprécis : deux longueurs qui semblent égales à l'œil peuvent ne pas l'être. Un dessin aide à conjecturer, c'est-à-dire à deviner ce qui est sans doute vrai ; seule une démonstration établit que c'est vrai.",
+      "difficulte": 2,
+      "tags": ["demonstration", "conjecture", "piege"]
+    },
+    {
+      "id": "4E-CH00-028",
+      "lecon": "Apprendre à démontrer",
+      "type": "formule",
+      "recto": "Combien de contre-exemples faut-il pour établir qu'une affirmation est fausse ?",
+      "verso": "Un seul suffit : il montre un cas où l'affirmation ne tient pas, et cela suffit à la rejeter.",
+      "difficulte": 2,
+      "tags": ["logique", "contre-exemple"]
+    },
+    {
+      "id": "4E-CH00-029",
+      "lecon": "Apprendre à démontrer",
+      "type": "formule",
+      "recto": "Pourquoi des exemples, même nombreux, ne prouvent-ils pas qu'une affirmation est vraie ?",
+      "verso": "Parce qu'on n'a pas testé tous les cas, et il y en a une infinité. Vérifier que $3 + 5 = 8$ et $7 + 9 = 16$ ne prouve pas que la somme de deux nombres impairs est toujours paire : il faut une démonstration générale.",
+      "difficulte": 3,
+      "tags": ["logique", "exemples", "piege"]
+    },
+    {
+      "id": "4E-CH00-030",
+      "lecon": "Apprendre à démontrer",
+      "type": "definition",
+      "recto": "Quels symboles logiques n'écrit-on jamais dans une démonstration de 4ème ?",
+      "verso": "Les symboles $\\Rightarrow$ et $\\iff$, qui ne sont pas au programme de 4ème. On écrit l'implication en toutes lettres, « si ... alors ... ».",
+      "difficulte": 3,
+      "tags": ["logique", "implication", "notation"]
+    },
+    {
+      "id": "4E-CH00-031",
+      "lecon": "Apprendre à démontrer",
+      "type": "definition",
+      "recto": "A quels signes reconnaît-on qu'une démonstration est fausse ?",
+      "verso": "Elle utilise une mesure prise sur le dessin au lieu d'une donnée, elle invoque une propriété qui n'existe pas, ou elle saute une étape du raisonnement.",
+      "difficulte": 3,
+      "tags": ["demonstration", "critique", "erreur"]
+    },
+    {
+      "id": "4E-CH00-032",
+      "lecon": "Ma méthode de travail",
+      "type": "definition",
+      "recto": "Quelle différence y a-t-il entre le cahier de cours et le cahier d'exercices ?",
+      "verso": "Le cahier de cours reçoit la date, le titre, les définitions, les propriétés et les exemples : il doit rester propre. Le cahier d'exercices reçoit la recherche : on peut y raturer.",
+      "difficulte": 1,
+      "tags": ["organisation", "cahiers"]
+    },
+    {
+      "id": "4E-CH00-033",
+      "lecon": "Ma méthode de travail",
+      "type": "definition",
+      "recto": "Pourquoi tient-on en 4ème une liste des propriétés à la fin de son cahier de cours ?",
+      "verso": "Parce que ce sont les outils de démonstration : chaque propriété y est écrite en entier sous la forme « si ... alors ... », prête à être recopiée dans un raisonnement.",
+      "difficulte": 2,
+      "tags": ["organisation", "propriete", "demonstration"]
+    },
+    {
+      "id": "4E-CH00-034",
+      "lecon": "Ma méthode de travail",
+      "type": "definition",
+      "recto": "Pourquoi recopier un corrigé ne prouve-t-il pas que l'on a compris ?",
+      "verso": "Parce que savoir relire n'est pas savoir refaire. La preuve de la compréhension, c'est de refaire seul, cahier fermé, ce que l'on a travaillé.",
+      "difficulte": 3,
+      "tags": ["methode", "corrige", "piege"]
+    },
+    {
+      "id": "4E-CH00-035",
+      "lecon": "Comment lire ce manuel",
+      "type": "definition",
+      "recto": "Que signifient les une, deux ou trois étoiles portées par chaque exercice ?",
+      "verso": "Une étoile : application directe d'une seule notion. Deux étoiles : deux étapes à enchaîner. Trois étoiles : il faut prendre une initiative et choisir soi-même la démarche.",
+      "difficulte": 1,
+      "tags": ["manuel", "etoiles", "difficulte"]
+    },
+    {
+      "id": "4E-CH00-036",
+      "lecon": "Comment lire ce manuel",
+      "type": "definition",
+      "recto": "Quelle rubrique du manuel rassemble ce qui doit être appris par cœur ?",
+      "verso": "L'encadré « Ce qu'il faut retenir » : il contient les définitions, les propriétés et les notations.",
+      "difficulte": 1,
+      "tags": ["manuel", "rubriques"]
+    }
+  ]
+}

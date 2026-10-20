@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Fiche de revision - 5eme - Chapitre 1 : La symetrie centrale (1) : construction</title>
+<style>
+/* ===================================================================
+   FICHE DE REVISION, Collection Hakili Lab, Edition 2026
+   Feuille de style autonome, format A4 pret a imprimer.
+   Bleu #005CB9 · Vert #49A145
+   =================================================================== */
+:root{
+  --bleu:#005CB9; --bleu-fonce:#00429A; --bleu-pale:#E8F1FB; --bleu-bord:#B7D2EE;
+  --vert:#49A145; --vert-fonce:#2F7A2C; --vert-pale:#EDF7EC; --vert-bord:#BCE0B9;
+  --gris:#4A4A4A; --gris-clair:#E4E4E4; --rouge:#B3261E;
+}
+@page{
+  size:A4; margin:15mm;
+  @bottom-center{
+    content:"Collection Hakili Lab, Edition 2026  ·  Fiche de revision  ·  " counter(page) "/" counter(pages);
+    font-family:"Segoe UI",Calibri,Arial,sans-serif; font-size:6.6pt; color:#8A8A8A;
+  }
+}
+*{box-sizing:border-box;}
+body{
+  margin:0; font-family:"Segoe UI",Calibri,Arial,sans-serif;
+  font-size:8.4pt; line-height:1.26; color:#1B1B1B;
+}
+p{margin:0 0 3pt;}
+ul{margin:0 0 3pt; padding-left:11pt;}
+li{margin:0 0 1.2pt;}
+b,strong{color:var(--bleu-fonce);}
+
+/* ------------------------------ ENTETE ---------------------------- */
+.entete{
+  display:flex; align-items:stretch; border:1.6pt solid var(--bleu);
+  border-radius:2.5pt; overflow:hidden; margin-bottom:6pt;
+}
+.entete .num{
+  background:var(--bleu); color:#fff; font-size:20pt; font-weight:700;
+  padding:0 8pt; display:flex; align-items:center; justify-content:center; min-width:34pt;
+}
+.entete .txt{padding:3.5pt 8pt; flex:1;}
+.entete .niveau{
+  font-size:7pt; font-weight:700; letter-spacing:.9pt; color:var(--vert-fonce);
+}
+.entete h1{margin:0; font-size:13.5pt; line-height:1.12; color:var(--bleu-fonce); font-weight:700;}
+.entete .sous{font-size:7pt; color:var(--gris); margin-top:1pt;}
+
+/* --------------------------- BANDEAUX ----------------------------- */
+.bandeau{
+  color:#fff; font-weight:700; font-size:9pt; letter-spacing:1pt;
+  padding:2.4pt 7pt; border-radius:2pt; margin:3pt 0 4pt; break-after:avoid; page-break-after:avoid;
+}
+.bandeau.bleu{background:var(--bleu);}
+.bandeau.vert{background:var(--vert);}
+
+/* --------------------------- COLONNES ----------------------------- */
+.cols{column-count:2; column-gap:7mm; column-fill:balance;}
+
+.cols.bal{column-fill:balance;}
+.bloc{margin-bottom:5pt;}
+.keep{break-inside:avoid; page-break-inside:avoid;}
+
+/* --------------------------- LECONS ------------------------------- */
+h2.lecon{
+  margin:0 0 3pt; font-size:8.6pt; font-weight:700; color:#fff; background:var(--bleu-fonce);
+  padding:1.8pt 5pt; border-radius:1.5pt; break-after:avoid; page-break-after:avoid;
+}
+h3.rub{
+  margin:3.5pt 0 1.5pt; font-size:8.2pt; font-weight:700; color:var(--vert-fonce);
+  border-bottom:.7pt solid var(--vert-bord); padding-bottom:.8pt;
+  break-after:avoid; page-break-after:avoid;
+}
+
+/* --------------------------- ENCADRES ----------------------------- */
+.form{
+  background:var(--bleu-pale); border:.8pt solid var(--bleu-bord); border-left:2.6pt solid var(--bleu);
+  border-radius:2pt; padding:2.4pt 5pt; margin:2.2pt 0 3.4pt;
+  break-inside:avoid; page-break-inside:avoid;
+}
+.form .t{
+  display:block; font-size:6.8pt; font-weight:700; letter-spacing:.6pt;
+  color:var(--bleu); margin-bottom:1.5pt;
+}
+.form .c{text-align:center; font-size:9.1pt; margin:1.6pt 0;}
+.note{background:var(--vert-pale); border-left:2.4pt solid var(--vert); padding:2.4pt 5pt; border-radius:1.5pt; margin:2.5pt 0 4pt; break-inside:avoid;}
+
+/* --------------------------- TABLEAUX ----------------------------- */
+table{width:100%; border-collapse:collapse; font-size:7.6pt; margin:2pt 0 4pt; break-inside:avoid;}
+th{background:var(--bleu); color:#fff; font-weight:700; text-align:left; padding:1.8pt 4pt; font-size:7.2pt;}
+td{border:.6pt solid var(--gris-clair); padding:1.8pt 4pt; vertical-align:top;}
+tr{break-inside:avoid;}
+table.var td{text-align:center; font-size:8pt;}
+table.var td.lab{text-align:left; font-weight:700; color:var(--bleu-fonce); background:var(--bleu-pale);}
+
+/* ----------------------------- PIEGES ----------------------------- */
+table.pieges th:first-child{width:44%;}
+table.pieges td:first-child{color:var(--rouge); background:#FDF1F0;}
+.x{font-weight:700;}
+.v{color:var(--vert-fonce); font-weight:700;}
+
+/* ---------------------------- RECAP ------------------------------- */
+ol.recap{margin:0; padding-left:0; list-style:none; counter-reset:r;}
+ol.recap li{
+  counter-increment:r; position:relative; padding-left:13pt; margin-bottom:1.8pt;
+  break-inside:avoid;
+}
+ol.recap li::before{
+  content:counter(r); position:absolute; left:0; top:.3pt;
+  width:10pt; height:10pt; border-radius:50%; background:var(--vert); color:#fff;
+  font-size:6.6pt; font-weight:700; text-align:center; line-height:10pt;
+}
+
+/* --------------------------- MATHS -------------------------------- */
+.m{font-family:Cambria,Georgia,"Times New Roman",serif;}
+i,var{font-family:Cambria,Georgia,"Times New Roman",serif; font-style:italic;}
+.op{font-family:Cambria,Georgia,"Times New Roman",serif; font-style:normal;}
+.f{display:inline-block; vertical-align:middle; text-align:center;
+   margin:0 .12em; line-height:1.06; font-family:Cambria,Georgia,"Times New Roman",serif;}
+.f>span{display:block; padding:0 .2em;}
+.f>span:first-child{border-bottom:.6pt solid currentColor; padding-bottom:.08em;}
+.f>span:last-child{padding-top:.04em;}
+.rad{border-top:.6pt solid currentColor; padding-top:.12em;}
+/* line-height:0 evite que l'exposant n'ecarte les lignes ; position:relative le
+   repositionne sans qu'il heurte la barre de fraction ni le trait du radical. */
+sup,sub{font-size:.68em; line-height:0; position:relative; vertical-align:baseline;}
+sup{top:-.42em;}
+sub{bottom:-.22em;}
+.pt{white-space:nowrap;}
+/* Les fleches n'ont qu'un glyphe atrophie dans la fonte serif : on les force
+   en sans-serif, ou elles sont franches meme a 8 pt. */
+.ar{font-family:"Segoe UI",Calibri,Arial,"DejaVu Sans",sans-serif; font-style:normal;}
+
+/* ------------------- PIEGES : blocs erreur / correction ------------- */
+.pg{font-size:8.1pt; border-left:2.4pt solid var(--rouge); background:#FDF1F0; border-radius:1.5pt;
+    padding:2pt 5pt; margin:0 0 2.8pt; break-inside:avoid; page-break-inside:avoid;}
+.pg .err{color:var(--rouge); font-weight:600;}
+.pg .cor{color:#1B1B1B; margin-top:.8pt;}
+.pg .cor b{color:var(--bleu-fonce);}
+.v{color:var(--vert-fonce); font-weight:700;}
+
+</style>
+</head>
+<body>
+<header class="entete">
+  <div class="num">1</div>
+  <div class="txt">
+    <div class="niveau">5EME &middot; MATHEMATIQUES</div>
+    <h1>La symétrie centrale (1) : construction</h1>
+    <div class="sous">Leçon 1 : symétrique d'un point par rapport à un point &middot; Leçon 2 : symétrique d'une figure par rapport à un point</div>
+  </div>
+</header>
+
+<div class="bandeau bleu" style="margin-top:0">L'ESSENTIEL</div>
+<div class="cols">
+
+<!-- ================= LECON 1 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 1&nbsp;: Symétrique d'un point par rapport à un point</h2>
+<p>Deux points A et A&#8242; sont <b>symétriques par rapport à un point O</b> lorsque O est le <b>milieu</b> du segment [AA&#8242;]. Le point O s'appelle le <b>centre de symétrie</b>.</p></div>
+<p>La relation joue <b>dans les deux sens</b> : si A&#8242; est le symétrique de A par rapport à O, alors A est le symétrique de A&#8242; par rapport à O. Il n'y a pas un point de départ et un point d'arrivée, mais deux points qui se partagent le même milieu.</p>
+<div class="form">
+  <span class="t">LES TROIS CONDITIONS&nbsp;: ELLES VONT ENSEMBLE</span>
+  <div class="c m">A, O et A&#8242; <b>alignés</b> &nbsp;&middot;&nbsp; O <b>entre</b> A et A&#8242; &nbsp;&middot;&nbsp; OA&#8239;=&#8239;OA&#8242;</div>
+  <div class="c m">AA&#8242;&#8239;=&#8239;2&#8239;&#215;&#8239;OA &nbsp;&nbsp;&nbsp; OA&#8239;=&#8239;<span class="f"><span>AA&#8242;</span><span>2</span></span></div>
+</div>
+<p><b>Cas particulier.</b> Le symétrique de O par rapport à O est O lui-même : c'est le <b>seul</b> point qui ne bouge pas dans le demi-tour.</p>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Construire le symétrique A&#8242; d'un point A</h3>
+<ul>
+<li><b>A la règle graduée.</b> Trace la demi-droite [AO) et prolonge-la <b>au-delà de O</b> ; mesure OA ; place A&#8242; sur ce prolongement tel que OA&#8242;&#8239;=&#8239;OA.</li>
+<li><b>A la règle non graduée et au compas.</b> Trace la droite (AO) ; pointe le compas en O avec l'écartement OA ; l'arc coupe (AO) <b>de l'autre côté de O</b> : c'est A&#8242;. Aucune mesure, le compas garde la longueur.</li>
+</ul>
+<div class="note"><b>Retrouver le centre.</b> Si A et A&#8242; sont donnés et que O est cherché, O est le <b>milieu</b> de [AA&#8242;] : on trace [AA&#8242;], on mesure, on divise par 2. Il n'y a qu'un seul centre possible, car le milieu d'un segment est unique.</div>
+</div>
+
+<!-- ================= LECON 2 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 2&nbsp;: Symétrique d'une figure par rapport à un point</h2>
+<p>Construire le symétrique d'une figure par rapport à O, c'est construire le symétrique de <b>chacun de ses points clés</b> par rapport à O, puis <b>relier</b> ces symétriques <b>dans le même ordre</b>.</p></div>
+<div class="form">
+  <span class="t">PROGRAMME DE CONSTRUCTION</span>
+  <div class="c m">1. repérer les points clés &nbsp;<span class="ar">&#8594;</span>&nbsp; 2. construire leur symétrique par rapport à O</div>
+  <div class="c m">3. relier dans le même ordre &nbsp;<span class="ar">&#8594;</span>&nbsp; 4. vérifier forme et taille</div>
+</div>
+<p>Principe d'économie : on ne construit <b>jamais plus de points qu'il n'en faut</b>. Avant de commencer, demande-toi de combien de points tu as besoin pour retracer la figure.</p>
+</div>
+
+<div class="bloc">
+<table>
+<tr><th>Figure de départ</th><th>Son symétrique</th><th>Points clés</th></tr>
+<tr><td>Segment [AB]</td><td>le segment [A&#8242;B&#8242;], de <b>même longueur</b></td><td>2 : les extrémités</td></tr>
+<tr><td>Droite (d)</td><td>une droite (d&#8242;) <b>parallèle</b> à (d)</td><td>2 : deux points suffisent</td></tr>
+<tr><td>Cercle de centre C et de rayon <i>r</i></td><td>le cercle de centre C&#8242; et de <b>même rayon</b> <i>r</i></td><td>1 : le centre</td></tr>
+<tr><td>Triangle ABC</td><td>le triangle A&#8242;B&#8242;C&#8242;</td><td>3 : les sommets</td></tr>
+<tr><td>Polygone</td><td>un polygone de <b>même nature</b></td><td>autant que de sommets</td></tr>
+</table>
+<p>Un demi-tour se fait <b>en bloc</b> : la figure obtenue a la même forme et la <b>même taille</b>, seulement retournée d'un demi-tour, soit 180&#176;, autour de O.</p>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Figures qui sont leur propre symétrique</h3>
+<p>Pour certaines figures, il existe un point O tel que le symétrique de la figure par rapport à O soit <b>la figure elle-même</b> : on dit alors que O est un <b>centre de symétrie</b> de la figure.</p>
+<ul>
+<li>Le <b>cercle</b> : son centre convient.</li>
+<li>Le <b>parallélogramme</b> : le croisement de ses diagonales.</li>
+<li>Un <b>triangle quelconque</b> n'en a <b>aucun</b> : aucun point ne le ramène sur lui-même.</li>
+</ul>
+</div>
+
+</div>
+
+<div class="bandeau vert">PIEGES ET ERREURS FREQUENTES</div>
+<div class="cols">
+<div class="pg"><div class="err"><span class="x">&#10007;</span> A&#8242; est sur la demi-droite [OA), <b>du même côté</b> que A</div><div class="cor"><span class="v">&#10003;</span> A&#8242; est de <b>l'autre côté</b> de O, sur la droite (OA), avec OA&#8242;&#8239;=&#8239;OA : O doit être <b>entre</b> A et A&#8242; pour en être le milieu.</div></div>
+<div class="pg"><div class="err"><span class="x">&#10007;</span> On plie le long d'une droite pour trouver le symétrique</div><div class="cor"><span class="v">&#10003;</span> Le pliage le long d'une droite est la symétrie <b>axiale</b>, vue en 6ème. La symétrie <b>centrale</b> est un <b>demi-tour autour d'un point</b> : ce qui compte n'est pas l'angle droit avec un axe, mais l'alignement avec le centre.</div></div>
+<div class="pg"><div class="err"><span class="x">&#10007;</span> OA&#8239;=&#8239;3 cm, donc AA&#8242;&#8239;=&#8239;3 cm</div><div class="cor"><span class="v">&#10003;</span> O est le <b>milieu</b> de [AA&#8242;] : OA n'est que la <b>moitié</b> du chemin, donc AA&#8242;&#8239;=&#8239;2&#8239;&#215;&#8239;3&#8239;=&#8239;6 cm.</div></div>
+<div class="pg"><div class="err"><span class="x">&#10007;</span> Le symétrique d'un cercle de rayon 3 cm est un cercle de rayon 6 cm</div><div class="cor"><span class="v">&#10003;</span> Un demi-tour ne change <b>aucune longueur</b> : le rayon reste 3 cm. Seul le <b>centre</b> change de place.</div></div>
+<div class="pg"><div class="err"><span class="x">&#10007;</span> On construit le symétrique de chaque sommet avec un centre différent</div><div class="cor"><span class="v">&#10003;</span> Le centre O est le <b>même</b> pour tous les points de la figure : un seul demi-tour, un seul pivot.</div></div>
+<div class="pg"><div class="err"><span class="x">&#10007;</span> On relie les points obtenus dans n'importe quel ordre</div><div class="cor"><span class="v">&#10003;</span> On relie dans le <b>même ordre</b> que la figure de départ : pour le triangle ABC, on relie A&#8242; à B&#8242;, B&#8242; à C&#8242;, puis C&#8242; à A&#8242;.</div></div>
+<div class="pg"><div class="err"><span class="x">&#10007;</span> La figure symétrique est plus petite, parce qu'elle paraît plus loin</div><div class="cor"><span class="v">&#10003;</span> Le demi-tour se fait en bloc, sans étirer ni plier : longueurs, angles et nature de la figure sont <b>conservés</b>.</div></div>
+
+</div>
+
+<div class="bandeau bleu">A SAVOIR PAR COEUR AVANT LE DEVOIR</div>
+<div class="cols">
+<ol class="recap">
+<li>A et A&#8242; sont symétriques par rapport à O signifie : <b>O est le milieu de [AA&#8242;]</b> (A, O, A&#8242; alignés, O entre les deux, OA&#8239;=&#8239;OA&#8242;).</li>
+<li>AA&#8242;&#8239;=&#8239;2&#8239;&#215;&#8239;OA, et donc OA&#8239;=&#8239;AA&#8242;&#8239;&#247;&#8239;2.</li>
+<li>Construire A&#8242; : tracer la droite (AO), prolonger <b>au-delà de O</b>, reporter la longueur OA de l'autre côté (à la règle graduée, ou au compas sans rien mesurer).</li>
+<li>Retrouver le centre quand A et A&#8242; sont connus : c'est le <b>milieu</b> de [AA&#8242;], et il est unique.</li>
+<li>Symétrique d'une figure : symétrique de chaque <b>point clé</b> avec le <b>même</b> centre O, puis on relie dans le <b>même ordre</b>.</li>
+<li>Segment <span class="ar">&#8594;</span> segment de <b>même longueur</b> ; droite <span class="ar">&#8594;</span> droite <b>parallèle</b> ; cercle <span class="ar">&#8594;</span> cercle de <b>même rayon</b> (seul le centre se construit) ; polygone <span class="ar">&#8594;</span> polygone de même nature.</li>
+<li>Un demi-tour de 180&#176; ne change <b>ni la forme ni les longueurs</b> ; le seul point qui ne bouge pas est le centre O.</li>
+<li>Ne pas confondre : symétrie <b>axiale</b> (6ème), pliage le long d'une <b>droite</b> ; symétrie <b>centrale</b> (5ème), demi-tour autour d'un <b>point</b>.</li>
+</ol>
+</div>
+
+</body>
+</html>

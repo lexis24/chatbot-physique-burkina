@@ -1,0 +1,305 @@
+{
+  "niveau": "4ème",
+  "chapitre": "Chapitre 11 : Les vecteurs (2) : propriétés de l'addition et caractérisations",
+  "source": "maths/4eme/Chapitre_11_Les_vecteurs_2",
+  "nombre_cartes": 33,
+  "cartes": [
+    {
+      "id": "4E-CH11-001",
+      "lecon": "Les propriétés de l'addition vectorielle",
+      "type": "formule",
+      "recto": "Que dit la commutativité de l'addition vectorielle ?",
+      "verso": "Pour tous vecteurs $\\vec{u}$ et $\\vec{v}$, on a $\\vec{u} + \\vec{v} = \\vec{v} + \\vec{u}$ : l'ordre dans lequel on enchaîne deux déplacements ne change pas le déplacement total.",
+      "difficulte": 1,
+      "tags": ["commutativite", "addition-vectorielle"]
+    },
+    {
+      "id": "4E-CH11-002",
+      "lecon": "Les propriétés de l'addition vectorielle",
+      "type": "formule",
+      "recto": "Que dit l'associativité de l'addition vectorielle ?",
+      "verso": "Pour tous vecteurs $\\vec{u}$, $\\vec{v}$ et $\\vec{w}$, on a $\\left(\\vec{u} + \\vec{v}\\right) + \\vec{w} = \\vec{u} + \\left(\\vec{v} + \\vec{w}\\right)$ : on peut grouper les termes d'une somme comme on veut.",
+      "difficulte": 2,
+      "tags": ["associativite", "addition-vectorielle"]
+    },
+    {
+      "id": "4E-CH11-003",
+      "lecon": "Les propriétés de l'addition vectorielle",
+      "type": "formule",
+      "recto": "A quoi servent la commutativité et l'associativité dans un calcul vectoriel ?",
+      "verso": "A réorganiser une somme pour rapprocher deux vecteurs qui se suivent, c'est-à-dire dont l'extrémité de l'un est l'origine de l'autre. La relation de Chasles fait ensuite le reste du travail.",
+      "difficulte": 2,
+      "tags": ["reorganiser", "somme", "chasles"]
+    },
+    {
+      "id": "4E-CH11-004",
+      "lecon": "Les propriétés de l'addition vectorielle",
+      "type": "formule",
+      "recto": "Comment simplifie-t-on $\\overrightarrow{AC} + \\overrightarrow{BA}$, dont les deux termes ne s'enchaînent pas ?",
+      "verso": "On échange les deux termes, ce que la commutativité autorise : $\\overrightarrow{BA} + \\overrightarrow{AC}$. Le point A est alors commun, et la relation de Chasles donne $\\overrightarrow{BC}$.",
+      "difficulte": 2,
+      "tags": ["reorganiser", "commutativite", "simplification"]
+    },
+    {
+      "id": "4E-CH11-005",
+      "lecon": "Les propriétés de l'addition vectorielle",
+      "type": "formule",
+      "recto": "Pourquoi peut-on échanger deux termes d'une somme de vecteurs, mais pas les deux lettres d'un même vecteur ?",
+      "verso": "Parce que la commutativité déplace les vecteurs entiers sans les modifier. Echanger les deux lettres change le vecteur en son opposé : $\\overrightarrow{AB}$ n'est pas égal à $\\overrightarrow{BA}$.",
+      "difficulte": 3,
+      "tags": ["commutativite", "ordre-des-lettres", "piege"]
+    },
+    {
+      "id": "4E-CH11-006",
+      "lecon": "Les propriétés de l'addition vectorielle",
+      "type": "formule",
+      "recto": "Quelle erreur commet l'élève qui écrit $\\overrightarrow{AB} + \\overrightarrow{CB} = \\overrightarrow{AC}$ ?",
+      "verso": "Il garde la première origine et la dernière extrémité alors que les deux vecteurs ne s'enchaînent pas : tous deux arrivent en B. Une somme correcte serait $\\overrightarrow{AB} + \\overrightarrow{BC} = \\overrightarrow{AC}$.",
+      "difficulte": 3,
+      "tags": ["chasles", "erreur", "piege"]
+    },
+    {
+      "id": "4E-CH11-007",
+      "lecon": "Les propriétés de l'addition vectorielle",
+      "type": "formule",
+      "recto": "Quelle figure apparaît quand on enchaîne $\\vec{u}$ et $\\vec{v}$ dans les deux ordres à partir d'un même point ?",
+      "verso": "Un parallélogramme : les deux chemins partent du même point et aboutissent au sommet opposé. C'est la traduction géométrique de la commutativité.",
+      "difficulte": 2,
+      "tags": ["commutativite", "parallelogramme"]
+    },
+    {
+      "id": "4E-CH11-008",
+      "lecon": "Le vecteur nul et les vecteurs opposés",
+      "type": "formule",
+      "recto": "Pourquoi peut-on écrire $\\vec{0} = \\overrightarrow{AA} = \\overrightarrow{BB} = \\overrightarrow{MM}$ ?",
+      "verso": "Parce que le vecteur nul est le vecteur d'un déplacement de longueur nulle : quel que soit le point choisi, en partir et y arriver donne le même vecteur. Il n'a ni direction ni sens.",
+      "difficulte": 2,
+      "tags": ["vecteur-nul", "notation"]
+    },
+    {
+      "id": "4E-CH11-009",
+      "lecon": "Le vecteur nul et les vecteurs opposés",
+      "type": "formule",
+      "recto": "Pourquoi le vecteur nul est-il l'élément neutre de l'addition vectorielle ?",
+      "verso": "Parce que l'ajouter ne change rien : pour tout vecteur $\\vec{u}$, on a $\\vec{u} + \\vec{0} = \\vec{0} + \\vec{u} = \\vec{u}$.",
+      "difficulte": 1,
+      "tags": ["vecteur-nul", "element-neutre"]
+    },
+    {
+      "id": "4E-CH11-010",
+      "lecon": "Le vecteur nul et les vecteurs opposés",
+      "type": "formule",
+      "recto": "Que vaut la somme d'un vecteur et de son opposé ?",
+      "verso": "Le vecteur nul : $\\vec{u} + \\left(-\\vec{u}\\right) = \\vec{0}$, ce qui s'écrit aussi $\\overrightarrow{AB} + \\overrightarrow{BA} = \\overrightarrow{AA} = \\vec{0}$.",
+      "difficulte": 2,
+      "tags": ["vecteur-oppose", "vecteur-nul"]
+    },
+    {
+      "id": "4E-CH11-011",
+      "lecon": "Le vecteur nul et les vecteurs opposés",
+      "type": "formule",
+      "recto": "Que peut-on dire de deux vecteurs dont la somme est le vecteur nul ?",
+      "verso": "Ils sont opposés : chacun est l'opposé de l'autre. De $\\vec{u} + \\vec{v} = \\vec{0}$ on tire $\\vec{v} = -\\vec{u}$.",
+      "difficulte": 2,
+      "tags": ["vecteur-oppose", "somme-nulle"]
+    },
+    {
+      "id": "4E-CH11-012",
+      "lecon": "Le vecteur nul et les vecteurs opposés",
+      "type": "formule",
+      "recto": "Quel est l'opposé de l'opposé d'un vecteur $\\vec{u}$ ?",
+      "verso": "C'est $\\vec{u}$ lui-même : retourner deux fois la même flèche la remet dans son sens de départ.",
+      "difficulte": 2,
+      "tags": ["vecteur-oppose", "propriete"]
+    },
+    {
+      "id": "4E-CH11-013",
+      "lecon": "Le vecteur nul et les vecteurs opposés",
+      "type": "formule",
+      "recto": "Pourquoi ne faut-il jamais écrire $\\overrightarrow{AB} + \\overrightarrow{BA} = 0$ avec le nombre zéro ?",
+      "verso": "Parce qu'une somme de vecteurs donne un vecteur, et non un nombre. On écrit $\\overrightarrow{AB} + \\overrightarrow{BA} = \\vec{0}$, avec la flèche : le vecteur nul est un déplacement, le nombre $0$ est un nombre.",
+      "difficulte": 3,
+      "tags": ["vecteur-nul", "notation", "piege"]
+    },
+    {
+      "id": "4E-CH11-014",
+      "lecon": "Le vecteur nul et les vecteurs opposés",
+      "type": "formule",
+      "recto": "Comment simplifie-t-on la différence $\\overrightarrow{OB} - \\overrightarrow{OA}$ de deux vecteurs de même origine ?",
+      "verso": "On retourne la flèche soustraite : $\\overrightarrow{OB} + \\overrightarrow{AO}$, puis on réorganise en $\\overrightarrow{AO} + \\overrightarrow{OB} = \\overrightarrow{AB}$. La différence joint les deux extrémités, de celle du vecteur soustrait vers l'autre.",
+      "difficulte": 2,
+      "tags": ["difference", "meme-origine", "chasles"]
+    },
+    {
+      "id": "4E-CH11-015",
+      "lecon": "Le vecteur nul et les vecteurs opposés",
+      "type": "formule",
+      "recto": "Comment contrôle-t-on qu'on n'a pas retourné la flèche du mauvais côté dans $\\overrightarrow{OB} - \\overrightarrow{OA} = \\overrightarrow{AB}$ ?",
+      "verso": "On relit l'égalité à l'envers : $\\overrightarrow{OA} + \\overrightarrow{AB}$ doit redonner $\\overrightarrow{OB}$. Si ce contrôle ne tombe pas juste, la flèche a été retournée dans le mauvais sens.",
+      "difficulte": 3,
+      "tags": ["difference", "controle", "piege"]
+    },
+    {
+      "id": "4E-CH11-016",
+      "lecon": "La caractérisation vectorielle du milieu",
+      "type": "formule",
+      "recto": "Quelle égalité de vecteurs caractérise le milieu M du segment [AB] ?",
+      "verso": "L'égalité $\\overrightarrow{AM} = \\overrightarrow{MB}$ : le point M est le milieu de [AB] si et seulement si elle est vraie.",
+      "difficulte": 1,
+      "tags": ["milieu", "caracterisation"]
+    },
+    {
+      "id": "4E-CH11-017",
+      "lecon": "La caractérisation vectorielle du milieu",
+      "type": "formule",
+      "recto": "Quelle seconde écriture vectorielle caractérise le milieu M du segment [AB] ?",
+      "verso": "L'égalité $\\overrightarrow{MA} + \\overrightarrow{MB} = \\vec{0}$ : les deux vecteurs partent de M et sont opposés.",
+      "difficulte": 2,
+      "tags": ["milieu", "caracterisation", "vecteur-nul"]
+    },
+    {
+      "id": "4E-CH11-018",
+      "lecon": "La caractérisation vectorielle du milieu",
+      "type": "definition",
+      "recto": "Que signifie le mot caractérisation dans « caractérisation vectorielle du milieu » ?",
+      "verso": "Que la propriété fonctionne dans les deux sens : si M est le milieu, l'égalité est vraie, et si l'égalité est vraie, M est le milieu. C'est ce double sens qui en fait un outil de démonstration.",
+      "difficulte": 2,
+      "tags": ["caracterisation", "vocabulaire", "demonstration"]
+    },
+    {
+      "id": "4E-CH11-019",
+      "lecon": "La caractérisation vectorielle du milieu",
+      "type": "formule",
+      "recto": "Quels renseignements l'égalité $\\overrightarrow{AM} = \\overrightarrow{MB}$ contient-elle à elle seule ?",
+      "verso": "L'alignement des points A, M et B, puisque les deux vecteurs ont la même direction, et l'égalité des longueurs $AM$ et $MB$. Une seule ligne remplace ainsi deux vérifications.",
+      "difficulte": 2,
+      "tags": ["milieu", "alignement", "longueur"]
+    },
+    {
+      "id": "4E-CH11-020",
+      "lecon": "La caractérisation vectorielle du milieu",
+      "type": "formule",
+      "recto": "Pourquoi $\\overrightarrow{AM} = \\overrightarrow{BM}$ ne caractérise-t-il pas le milieu de [AB] ?",
+      "verso": "Parce que $\\overrightarrow{BM}$ est l'opposé de $\\overrightarrow{MB}$. L'écriture correcte est $\\overrightarrow{AM} = \\overrightarrow{MB}$, où M se trouve à l'arrivée du premier vecteur et au départ du second.",
+      "difficulte": 3,
+      "tags": ["milieu", "ordre-des-lettres", "piege"]
+    },
+    {
+      "id": "4E-CH11-021",
+      "lecon": "La caractérisation vectorielle du milieu",
+      "type": "formule",
+      "recto": "Pourquoi l'égalité des longueurs $AM$ et $MB$ ne suffit-elle pas à faire de M le milieu de [AB] ?",
+      "verso": "Parce qu'il manque l'alignement. Tout point situé hors de la droite (AB) et à égale distance de A et de B vérifie $AM = MB$ sans être le milieu du segment.",
+      "difficulte": 3,
+      "tags": ["milieu", "alignement", "piege"]
+    },
+    {
+      "id": "4E-CH11-022",
+      "lecon": "La caractérisation vectorielle du milieu",
+      "type": "formule",
+      "recto": "Comment démontre-t-on que $\\overrightarrow{MA} + \\overrightarrow{MB} = \\vec{0}$ entraîne que M est le milieu de [AB] ?",
+      "verso": "Deux vecteurs de somme nulle sont opposés, donc $\\overrightarrow{MB} = -\\overrightarrow{MA} = \\overrightarrow{AM}$. On obtient $\\overrightarrow{AM} = \\overrightarrow{MB}$, qui caractérise le milieu.",
+      "difficulte": 3,
+      "tags": ["milieu", "demonstration", "vecteur-oppose"]
+    },
+    {
+      "id": "4E-CH11-023",
+      "lecon": "La caractérisation vectorielle du milieu",
+      "type": "formule",
+      "recto": "Comment exploite-t-on une égalité comme $\\overrightarrow{AP} + \\overrightarrow{BP} = \\vec{0}$, où les vecteurs ne partent pas de P ?",
+      "verso": "On retourne les deux flèches : $-\\overrightarrow{PA} - \\overrightarrow{PB} = \\vec{0}$, donc $\\overrightarrow{PA} + \\overrightarrow{PB} = \\vec{0}$. On reconnaît alors la caractérisation du milieu, et P est le milieu de [AB].",
+      "difficulte": 3,
+      "tags": ["milieu", "vecteur-oppose", "demonstration"]
+    },
+    {
+      "id": "4E-CH11-024",
+      "lecon": "La caractérisation vectorielle du parallélogramme",
+      "type": "formule",
+      "recto": "Quelle égalité de vecteurs caractérise le parallélogramme ABCD ?",
+      "verso": "L'égalité $\\overrightarrow{AB} = \\overrightarrow{DC}$ : le quadrilatère ABCD est un parallélogramme si et seulement si elle est vraie.",
+      "difficulte": 1,
+      "tags": ["parallelogramme", "caracterisation"]
+    },
+    {
+      "id": "4E-CH11-025",
+      "lecon": "La caractérisation vectorielle du parallélogramme",
+      "type": "formule",
+      "recto": "Quelle autre paire de côtés opposés permet de caractériser le parallélogramme ABCD ?",
+      "verso": "La paire [AD] et [BC] : le quadrilatère ABCD est un parallélogramme si et seulement si $\\overrightarrow{AD} = \\overrightarrow{BC}$. On travaille avec l'une ou l'autre paire, au choix.",
+      "difficulte": 2,
+      "tags": ["parallelogramme", "caracterisation", "cotes-opposes"]
+    },
+    {
+      "id": "4E-CH11-026",
+      "lecon": "La caractérisation vectorielle du parallélogramme",
+      "type": "formule",
+      "recto": "Comment vérifie-t-on que l'ordre des lettres d'une égalité de parallélogramme est correct ?",
+      "verso": "On fait le tour de la figure du bout du crayon, en suivant A, B, C puis D. Si le tracé se croise, l'ordre est faux et l'égalité écrite ne convient pas.",
+      "difficulte": 2,
+      "tags": ["parallelogramme", "ordre-des-lettres", "controle"]
+    },
+    {
+      "id": "4E-CH11-027",
+      "lecon": "La caractérisation vectorielle du parallélogramme",
+      "type": "formule",
+      "recto": "Qu'apporte la caractérisation vectorielle par rapport à la définition apprise en 5ème ?",
+      "verso": "Elle remplace deux vérifications, le parallélisme et l'égalité des longueurs, par une seule égalité de vecteurs. On démontre alors sans mesurer aucune longueur ni aucun angle.",
+      "difficulte": 2,
+      "tags": ["parallelogramme", "caracterisation", "demonstration"]
+    },
+    {
+      "id": "4E-CH11-028",
+      "lecon": "La caractérisation vectorielle du parallélogramme",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on le centre d'un parallélogramme ABCD ?",
+      "verso": "C'est le point O où les diagonales [AC] et [BD] se coupent en leur milieu. On a alors $\\overrightarrow{AO} = \\overrightarrow{OC}$ et $\\overrightarrow{BO} = \\overrightarrow{OD}$.",
+      "difficulte": 2,
+      "tags": ["parallelogramme", "centre", "diagonales"]
+    },
+    {
+      "id": "4E-CH11-029",
+      "lecon": "La caractérisation vectorielle du parallélogramme",
+      "type": "formule",
+      "recto": "Que peut-on conclure d'un quadrilatère ABCD dont les diagonales ont le même milieu ?",
+      "verso": "Que ABCD est un parallélogramme. La propriété du centre fonctionne dans les deux sens, ce qui en fait un moyen commode de contrôle sur le terrain.",
+      "difficulte": 2,
+      "tags": ["parallelogramme", "diagonales", "reciproque"]
+    },
+    {
+      "id": "4E-CH11-030",
+      "lecon": "La caractérisation vectorielle du parallélogramme",
+      "type": "formule",
+      "recto": "Comment démontre-t-on qu'un quadrilatère ABCD dont les diagonales ont le même milieu O est un parallélogramme ?",
+      "verso": "On écrit $\\overrightarrow{AO} = \\overrightarrow{OC}$ et $\\overrightarrow{DO} = \\overrightarrow{OB}$, puis on décompose par O : $\\overrightarrow{AB} = \\overrightarrow{AO} + \\overrightarrow{OB}$ et $\\overrightarrow{DC} = \\overrightarrow{DO} + \\overrightarrow{OC}$. Ces sommes sont formées des mêmes vecteurs, donc $\\overrightarrow{AB} = \\overrightarrow{DC}$.",
+      "difficulte": 3,
+      "tags": ["parallelogramme", "demonstration", "diagonales"]
+    },
+    {
+      "id": "4E-CH11-031",
+      "lecon": "La caractérisation vectorielle du parallélogramme",
+      "type": "formule",
+      "recto": "Connaissant trois points A, B et C, quel déplacement reporte-t-on à partir de C pour que ABCD soit un parallélogramme ?",
+      "verso": "Celui qui va de B vers A : on construit D tel que $\\overrightarrow{CD} = \\overrightarrow{BA}$. En retournant les deux flèches, cette égalité devient $\\overrightarrow{AB} = \\overrightarrow{DC}$, la caractérisation cherchée.",
+      "difficulte": 3,
+      "tags": ["parallelogramme", "construction", "quatrieme-sommet"]
+    },
+    {
+      "id": "4E-CH11-032",
+      "lecon": "La caractérisation vectorielle du parallélogramme",
+      "type": "formule",
+      "recto": "Comment contrôle-t-on sur le terrain que le quatrième sommet D d'un parallélogramme ABCD est bien placé ?",
+      "verso": "On tend une corde de A à C et une autre de B à D : leur point de croisement doit tomber au milieu des deux cordes à la fois. Sinon, le déplacement a été reporté dans le mauvais sens.",
+      "difficulte": 3,
+      "tags": ["parallelogramme", "controle", "diagonales"]
+    },
+    {
+      "id": "4E-CH11-033",
+      "lecon": "La caractérisation vectorielle du parallélogramme",
+      "type": "formule",
+      "recto": "Dans un parallélogramme ABCD, que vaut la somme $\\overrightarrow{AB} + \\overrightarrow{AD}$ ?",
+      "verso": "Elle vaut $\\overrightarrow{AC}$, la diagonale issue de A. En effet $\\overrightarrow{AD} = \\overrightarrow{BC}$, donc $\\overrightarrow{AB} + \\overrightarrow{AD} = \\overrightarrow{AB} + \\overrightarrow{BC} = \\overrightarrow{AC}$.",
+      "difficulte": 2,
+      "tags": ["parallelogramme", "somme", "diagonale"]
+    }
+  ]
+}

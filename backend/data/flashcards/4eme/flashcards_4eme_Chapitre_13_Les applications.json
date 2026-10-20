@@ -1,0 +1,314 @@
+{
+  "niveau": "4ème",
+  "chapitre": "Chapitre 13 : Les applications",
+  "source": "maths/4eme/Chapitre_13_Les_applications",
+  "nombre_cartes": 34,
+  "cartes": [
+    {
+      "id": "4E-CH13-001",
+      "lecon": "Qu'est-ce qu'une application ?",
+      "type": "definition",
+      "recto": "Qu'est-ce qu'une application $f$ d'un ensemble $E$ vers un ensemble $F$ ?",
+      "verso": "C'est une règle qui associe à chaque élément de $E$ un unique élément de $F$. On la note $f : E \\to F$, où $E$ est l'ensemble de départ et $F$ l'ensemble d'arrivée.",
+      "difficulte": 1,
+      "tags": ["application", "definition"]
+    },
+    {
+      "id": "4E-CH13-002",
+      "lecon": "Qu'est-ce qu'une application ?",
+      "type": "definition",
+      "recto": "Quels trois renseignements faut-il donner pour définir une application ?",
+      "verso": "L'ensemble de départ, l'ensemble d'arrivée, et la règle qui fabrique l'image. Sans ces trois renseignements, l'application n'est pas définie.",
+      "difficulte": 2,
+      "tags": ["application", "definition"]
+    },
+    {
+      "id": "4E-CH13-003",
+      "lecon": "Qu'est-ce qu'une application ?",
+      "type": "definition",
+      "recto": "Comment note-t-on l'élément que l'application $f$ associe à un élément $x$ ?",
+      "verso": "On le note $f\\left(x\\right)$, et on lit « f de x ». Cet élément s'appelle l'image de $x$ par $f$.",
+      "difficulte": 1,
+      "tags": ["image", "notation"]
+    },
+    {
+      "id": "4E-CH13-004",
+      "lecon": "Qu'est-ce qu'une application ?",
+      "type": "definition",
+      "recto": "Dans l'égalité $f\\left(x\\right) = y$, comment appelle-t-on $x$ par rapport à $y$ ?",
+      "verso": "On dit que $x$ est un antécédent de $y$. Le sens de circulation est simple à retenir : l'antécédent est avant, l'image est après.",
+      "difficulte": 1,
+      "tags": ["antecedent", "vocabulaire"]
+    },
+    {
+      "id": "4E-CH13-005",
+      "lecon": "Qu'est-ce qu'une application ?",
+      "type": "definition",
+      "recto": "Pourquoi dit-on « l'image de $x$ » mais « un antécédent de $y$ » ?",
+      "verso": "Parce qu'un élément de départ n'a qu'une seule image, par définition même d'une application, alors qu'un élément d'arrivée peut avoir plusieurs antécédents, ou aucun. Par la règle du carré, $9$ a deux antécédents, $3$ et $-3$.",
+      "difficulte": 2,
+      "tags": ["image", "antecedent", "distinction"]
+    },
+    {
+      "id": "4E-CH13-006",
+      "lecon": "Qu'est-ce qu'une application ?",
+      "type": "formule",
+      "recto": "Comment trouve-t-on un antécédent d'un nombre $y$ par une application $f$ ?",
+      "verso": "On cherche les nombres $x$ tels que $f\\left(x\\right) = y$ : on écrit cette égalité et on la résout. On contrôle ensuite en recalculant l'image du nombre trouvé.",
+      "difficulte": 2,
+      "tags": ["antecedent", "methode"]
+    },
+    {
+      "id": "4E-CH13-007",
+      "lecon": "Qu'est-ce qu'une application ?",
+      "type": "definition",
+      "recto": "Sachant que $f\\left(4\\right) = 8$, pourquoi est-il faux d'écrire que $4$ est l'image de $8$ ?",
+      "verso": "Parce que $4$ entre dans la machine et $8$ en sort : $8$ est l'image de $4$, et $4$ est un antécédent de $8$. Inverser les deux mots inverse tout le raisonnement.",
+      "difficulte": 3,
+      "tags": ["image", "antecedent", "piege"]
+    },
+    {
+      "id": "4E-CH13-008",
+      "lecon": "La composition de deux applications",
+      "type": "definition",
+      "recto": "Que veut dire composer deux applications ?",
+      "verso": "C'est les appliquer l'une après l'autre : la sortie de la première devient l'entrée de la seconde. Si $f : E \\to F$ et $g : F \\to G$, la composée est une application de $E$ vers $G$, notée $g \\circ f$.",
+      "difficulte": 1,
+      "tags": ["composition", "definition"]
+    },
+    {
+      "id": "4E-CH13-009",
+      "lecon": "La composition de deux applications",
+      "type": "formule",
+      "recto": "Par quelle égalité définit-on la composée $g \\circ f$ ?",
+      "verso": "Par $\\left(g \\circ f\\right)\\left(x\\right) = g\\left(f\\left(x\\right)\\right)$. Le symbole $\\circ$ se lit « rond », donc $g \\circ f$ se lit « g rond f ».",
+      "difficulte": 1,
+      "tags": ["composition", "notation"]
+    },
+    {
+      "id": "4E-CH13-010",
+      "lecon": "La composition de deux applications",
+      "type": "formule",
+      "recto": "Dans la composée $g \\circ f$, quelle application applique-t-on en premier ?",
+      "verso": "On applique d'abord $f$, puis $g$ : la composition se lit de droite à gauche. Dans $g\\left(f\\left(x\\right)\\right)$, le morceau le plus profond, $f\\left(x\\right)$, se calcule en premier.",
+      "difficulte": 2,
+      "tags": ["composition", "ordre"]
+    },
+    {
+      "id": "4E-CH13-011",
+      "lecon": "La composition de deux applications",
+      "type": "formule",
+      "recto": "Quelle condition les ensembles doivent-ils remplir pour que la composée $g \\circ f$ ait un sens ?",
+      "verso": "L'ensemble d'arrivée de $f$ doit être l'ensemble de départ de $g$ : ce qui sort de la première machine doit pouvoir entrer dans la seconde.",
+      "difficulte": 2,
+      "tags": ["composition", "condition"]
+    },
+    {
+      "id": "4E-CH13-012",
+      "lecon": "La composition de deux applications",
+      "type": "formule",
+      "recto": "Pourquoi $g \\circ f$ et $f \\circ g$ ne donnent-ils pas le même résultat en général ?",
+      "verso": "Parce que la composition n'est pas commutative. Avec $f\\left(x\\right) = x + 3$ et $g\\left(x\\right) = 2x$, partir de $5$ donne $\\left(5 + 3\\right) \\times 2 = 16$ dans un ordre, et $5 \\times 2 + 3 = 13$ dans l'autre.",
+      "difficulte": 3,
+      "tags": ["composition", "commutativite", "piege"]
+    },
+    {
+      "id": "4E-CH13-013",
+      "lecon": "La composition de deux applications",
+      "type": "formule",
+      "recto": "Comment obtient-on la règle directe d'une composée $g \\circ f$ en fonction de $x$ ?",
+      "verso": "On mène le même calcul qu'avec un nombre, mais en gardant la lettre : on écrit $g\\left(f\\left(x\\right)\\right)$, puis on réduit. Avec $f\\left(x\\right) = 12x$ et $g\\left(n\\right) = 150n$, on obtient $1\\,800x$.",
+      "difficulte": 2,
+      "tags": ["composition", "regle-directe"]
+    },
+    {
+      "id": "4E-CH13-014",
+      "lecon": "La composition de deux applications",
+      "type": "formule",
+      "recto": "Quel réflexe d'écriture évite d'intervertir les deux applications d'une composée ?",
+      "verso": "Ecrire le résultat intermédiaire $f\\left(x\\right)$ sur une ligne, au lieu de le garder en tête, puis appliquer $g$ à ce nombre écrit.",
+      "difficulte": 2,
+      "tags": ["composition", "methode"]
+    },
+    {
+      "id": "4E-CH13-015",
+      "lecon": "L'application monôme",
+      "type": "definition",
+      "recto": "Qu'est-ce qu'une application monôme ?",
+      "verso": "C'est une application de $\\mathbb{R}$ vers $\\mathbb{R}$ définie par $f\\left(x\\right) = a x^{n}$, où $a$ est un nombre fixé et $n$ un entier naturel. Elle est faite d'un seul terme.",
+      "difficulte": 1,
+      "tags": ["monome", "definition"]
+    },
+    {
+      "id": "4E-CH13-016",
+      "lecon": "L'application monôme",
+      "type": "definition",
+      "recto": "Dans le monôme $f\\left(x\\right) = a x^{n}$, comment nomme-t-on les nombres $a$ et $n$ ?",
+      "verso": "$a$ est le coefficient du monôme, $n$ est son degré. Ainsi $h\\left(x\\right) = -5x^{3}$ a pour coefficient $-5$ et pour degré $3$.",
+      "difficulte": 1,
+      "tags": ["monome", "coefficient", "degre"]
+    },
+    {
+      "id": "4E-CH13-017",
+      "lecon": "L'application monôme",
+      "type": "formule",
+      "recto": "Dans quel ordre mène-t-on les calculs pour trouver l'image d'un nombre par $f\\left(x\\right) = a x^{n}$ ?",
+      "verso": "On remplace $x$ par sa valeur, en mettant des parenthèses si ce nombre est négatif, on calcule d'abord la puissance, puis on multiplie par le coefficient $a$.",
+      "difficulte": 2,
+      "tags": ["monome", "image", "priorite"]
+    },
+    {
+      "id": "4E-CH13-018",
+      "lecon": "L'application monôme",
+      "type": "formule",
+      "recto": "Pour $f\\left(x\\right) = 2x^{2}$, pourquoi $f\\left(3\\right)$ ne vaut-il pas $36$ ?",
+      "verso": "Parce que l'exposant ne porte que sur $x$, jamais sur le coefficient : $f\\left(3\\right) = 2 \\times 3^{2} = 2 \\times 9 = 18$. Pour élever le produit au carré, il faudrait écrire $\\left(2x\\right)^{2}$ avec des parenthèses.",
+      "difficulte": 3,
+      "tags": ["monome", "exposant", "piege"]
+    },
+    {
+      "id": "4E-CH13-019",
+      "lecon": "L'application monôme",
+      "type": "formule",
+      "recto": "Quelle différence y a-t-il entre $\\left(-3\\right)^{2}$ et $-3^{2}$ ?",
+      "verso": "$\\left(-3\\right)^{2} = 9$, car c'est le nombre négatif tout entier qui est élevé au carré. $-3^{2}$ signifie « l'opposé de $3^{2}$ », c'est-à-dire $-9$. Les parenthèses ne sont donc pas facultatives.",
+      "difficulte": 2,
+      "tags": ["puissance", "signe", "parentheses"]
+    },
+    {
+      "id": "4E-CH13-020",
+      "lecon": "L'application monôme",
+      "type": "formule",
+      "recto": "Pourquoi deux nombres opposés ont-ils la même image par un monôme de degré $2$ ?",
+      "verso": "Parce qu'un exposant pair efface le signe moins, alors qu'un exposant impair le conserve. Avec $f\\left(x\\right) = 2x^{2}$, on a $f\\left(3\\right) = f\\left(-3\\right) = 18$, donc $18$ possède deux antécédents.",
+      "difficulte": 2,
+      "tags": ["monome", "exposant-pair", "antecedent"]
+    },
+    {
+      "id": "4E-CH13-021",
+      "lecon": "L'application polynôme",
+      "type": "definition",
+      "recto": "Qu'est-ce qu'une application polynôme ?",
+      "verso": "C'est une application de $\\mathbb{R}$ vers $\\mathbb{R}$ définie par une somme de monômes : $f\\left(x\\right) = a + b x + c x^{2} + \\dots$, où les coefficients $a$, $b$, $c$ sont des nombres fixés.",
+      "difficulte": 1,
+      "tags": ["polynome", "definition"]
+    },
+    {
+      "id": "4E-CH13-022",
+      "lecon": "L'application polynôme",
+      "type": "definition",
+      "recto": "Comment détermine-t-on le degré d'une application polynôme ?",
+      "verso": "C'est le plus grand exposant qui apparaît réellement dans la somme. Ainsi $g\\left(x\\right) = x^{2} + 3x - 2$ est de degré $2$, et $f\\left(x\\right) = 2x + 1$ est de degré $1$.",
+      "difficulte": 2,
+      "tags": ["polynome", "degre"]
+    },
+    {
+      "id": "4E-CH13-023",
+      "lecon": "L'application polynôme",
+      "type": "definition",
+      "recto": "Quel lien y a-t-il entre un monôme et un polynôme ?",
+      "verso": "Un monôme est un cas particulier de polynôme : celui qui n'a qu'un seul terme. Chaque monôme d'une somme est appelé un terme du polynôme.",
+      "difficulte": 2,
+      "tags": ["polynome", "monome", "terme"]
+    },
+    {
+      "id": "4E-CH13-024",
+      "lecon": "L'application polynôme",
+      "type": "definition",
+      "recto": "De quel degré est l'application polynôme $h\\left(x\\right) = 5$ ?",
+      "verso": "Elle est de degré $0$, car aucune puissance de $x$ n'y figure. C'est une application constante : son image est la même pour toutes les valeurs de $x$.",
+      "difficulte": 2,
+      "tags": ["polynome", "degre-zero", "constante"]
+    },
+    {
+      "id": "4E-CH13-025",
+      "lecon": "L'application polynôme",
+      "type": "formule",
+      "recto": "Comment calcule-t-on l'image d'un nombre par une application polynôme ?",
+      "verso": "On remplace $x$ par sa valeur dans chaque terme, on calcule les puissances, puis les produits, et on additionne à la fin. Le terme constant, sans lettre, se recopie tel quel.",
+      "difficulte": 2,
+      "tags": ["polynome", "image", "methode"]
+    },
+    {
+      "id": "4E-CH13-026",
+      "lecon": "L'application polynôme",
+      "type": "formule",
+      "recto": "Quelle précaution faut-il prendre pour calculer l'image d'un nombre négatif par un polynôme ?",
+      "verso": "Mettre des parenthèses dans chaque terme où l'on remplace $x$, même si elles paraissent inutiles. Sans elles, $-2^{2}$ vaut $-4$ alors que $\\left(-2\\right)^{2}$ vaut $4$, et l'image entière devient fausse.",
+      "difficulte": 3,
+      "tags": ["polynome", "nombre-negatif", "piege"]
+    },
+    {
+      "id": "4E-CH13-027",
+      "lecon": "L'application polynôme",
+      "type": "formule",
+      "recto": "Quel type de raisonnement suffit à montrer qu'une propriété n'est pas toujours vraie ?",
+      "verso": "Un contre-exemple : un seul cas bien choisi suffit. Avec $f\\left(x\\right) = x^{2} - 4$, les nombres $3$ et $-3$ ont la même image $5$, ce qui montre qu'un nombre peut avoir plusieurs antécédents.",
+      "difficulte": 2,
+      "tags": ["contre-exemple", "raisonnement"]
+    },
+    {
+      "id": "4E-CH13-028",
+      "lecon": "Les applications du plan",
+      "type": "definition",
+      "recto": "Qu'est-ce qu'une application du plan ?",
+      "verso": "C'est une application dont l'ensemble de départ et l'ensemble d'arrivée sont le plan : à chaque point $M$ elle associe un unique point image $M'$.",
+      "difficulte": 1,
+      "tags": ["application-du-plan", "definition"]
+    },
+    {
+      "id": "4E-CH13-029",
+      "lecon": "Les applications du plan",
+      "type": "definition",
+      "recto": "Par quelle propriété du point O définit-on la symétrie centrale de centre O ?",
+      "verso": "Elle associe à tout point $M$ le point $M'$ tel que O soit le milieu du segment $\\left[MM'\\right]$.",
+      "difficulte": 2,
+      "tags": ["symetrie-centrale", "milieu"]
+    },
+    {
+      "id": "4E-CH13-030",
+      "lecon": "Les applications du plan",
+      "type": "definition",
+      "recto": "Par quelle propriété de la droite définit-on la symétrie orthogonale par rapport à cette droite ?",
+      "verso": "Elle associe à tout point $M$ le point $M'$ tel que la droite soit la médiatrice du segment $\\left[MM'\\right]$.",
+      "difficulte": 2,
+      "tags": ["symetrie-orthogonale", "mediatrice"]
+    },
+    {
+      "id": "4E-CH13-031",
+      "lecon": "Les applications du plan",
+      "type": "formule",
+      "recto": "Dans un repère d'origine O, quelles sont les coordonnées de l'image de $M\\left(x\\,;\\,y\\right)$ par la symétrie centrale de centre O ?",
+      "verso": "Ce sont $\\left(-x\\,;\\,-y\\right)$ : les deux coordonnées changent de signe, car le point traverse les deux axes à la fois.",
+      "difficulte": 2,
+      "tags": ["symetrie-centrale", "coordonnees"]
+    },
+    {
+      "id": "4E-CH13-032",
+      "lecon": "Les applications du plan",
+      "type": "formule",
+      "recto": "Quelles coordonnées obtient-on en appliquant à $M\\left(x\\,;\\,y\\right)$ la symétrie d'axe les abscisses ?",
+      "verso": "On obtient $\\left(x\\,;\\,-y\\right)$ : seule l'ordonnée change de signe, car le point traverse cet axe de haut en bas. Par rapport à l'axe des ordonnées, on obtiendrait au contraire $\\left(-x\\,;\\,y\\right)$.",
+      "difficulte": 2,
+      "tags": ["symetrie-orthogonale", "coordonnees", "axe"]
+    },
+    {
+      "id": "4E-CH13-033",
+      "lecon": "Les applications du plan",
+      "type": "formule",
+      "recto": "Quel contrôle simple valide l'image d'un point par une symétrie d'axe ?",
+      "verso": "Un point déjà situé sur l'axe de la symétrie ne doit pas bouger : il est sa propre image. Si le calcul le déplace, l'axe choisi est le mauvais.",
+      "difficulte": 2,
+      "tags": ["symetrie-orthogonale", "controle"]
+    },
+    {
+      "id": "4E-CH13-034",
+      "lecon": "Les applications du plan",
+      "type": "definition",
+      "recto": "Pourquoi la projection sur une droite ne permet-elle pas de remonter au point de départ, contrairement à une symétrie ?",
+      "verso": "Parce qu'elle écrase le plan sur la droite : tous les points d'une même perpendiculaire à cette droite ont le même projeté. Une image de la projection possède donc une infinité d'antécédents.",
+      "difficulte": 3,
+      "tags": ["projection", "antecedent", "piege"]
+    }
+  ]
+}

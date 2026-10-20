@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Fiche de revision - 2nde C - Chapitre 8 : Produit scalaire dans le plan</title>
+<style>
+/* ===================================================================
+   FICHE DE REVISION, Collection Hakili Lab, Edition 2026
+   Feuille de style autonome, format A4 pret a imprimer.
+   Bleu #005CB9 · Vert #49A145
+   =================================================================== */
+:root{
+  --bleu:#005CB9; --bleu-fonce:#00429A; --bleu-pale:#E8F1FB; --bleu-bord:#B7D2EE;
+  --vert:#49A145; --vert-fonce:#2F7A2C; --vert-pale:#EDF7EC; --vert-bord:#BCE0B9;
+  --gris:#4A4A4A; --gris-clair:#E4E4E4; --rouge:#B3261E;
+}
+@page{
+  size:A4; margin:15mm;
+  @bottom-center{
+    content:"Collection Hakili Lab, Edition 2026  ·  Fiche de revision  ·  " counter(page) "/" counter(pages);
+    font-family:"Segoe UI",Calibri,Arial,sans-serif; font-size:6.6pt; color:#8A8A8A;
+  }
+}
+*{box-sizing:border-box;}
+body{
+  margin:0; font-family:"Segoe UI",Calibri,Arial,sans-serif;
+  font-size:8.4pt; line-height:1.26; color:#1B1B1B;
+}
+p{margin:0 0 3pt;}
+ul{margin:0 0 3pt; padding-left:11pt;}
+li{margin:0 0 1.2pt;}
+b,strong{color:var(--bleu-fonce);}
+
+/* ------------------------------ ENTETE ---------------------------- */
+.entete{
+  display:flex; align-items:stretch; border:1.6pt solid var(--bleu);
+  border-radius:2.5pt; overflow:hidden; margin-bottom:6pt;
+}
+.entete .num{
+  background:var(--bleu); color:#fff; font-size:20pt; font-weight:700;
+  padding:0 8pt; display:flex; align-items:center; justify-content:center; min-width:34pt;
+}
+.entete .txt{padding:3.5pt 8pt; flex:1;}
+.entete .niveau{
+  font-size:7pt; font-weight:700; letter-spacing:.9pt; color:var(--vert-fonce);
+}
+.entete h1{margin:0; font-size:13.5pt; line-height:1.12; color:var(--bleu-fonce); font-weight:700;}
+.entete .sous{font-size:7pt; color:var(--gris); margin-top:1pt;}
+
+/* --------------------------- BANDEAUX ----------------------------- */
+.bandeau{
+  color:#fff; font-weight:700; font-size:9pt; letter-spacing:1pt;
+  padding:2.4pt 7pt; border-radius:2pt; margin:3pt 0 4pt; break-after:avoid; page-break-after:avoid;
+}
+.bandeau.bleu{background:var(--bleu);}
+.bandeau.vert{background:var(--vert);}
+
+/* --------------------------- COLONNES ----------------------------- */
+.cols{column-count:2; column-gap:7mm; column-fill:balance;}
+
+.cols.bal{column-fill:balance;}
+.bloc{margin-bottom:5pt;}
+.keep{break-inside:avoid; page-break-inside:avoid;}
+
+/* --------------------------- LECONS ------------------------------- */
+h2.lecon{
+  margin:0 0 3pt; font-size:8.6pt; font-weight:700; color:#fff; background:var(--bleu-fonce);
+  padding:1.8pt 5pt; border-radius:1.5pt; break-after:avoid; page-break-after:avoid;
+}
+h3.rub{
+  margin:3.5pt 0 1.5pt; font-size:8.2pt; font-weight:700; color:var(--vert-fonce);
+  border-bottom:.7pt solid var(--vert-bord); padding-bottom:.8pt;
+  break-after:avoid; page-break-after:avoid;
+}
+
+/* --------------------------- ENCADRES ----------------------------- */
+.form{
+  background:var(--bleu-pale); border:.8pt solid var(--bleu-bord); border-left:2.6pt solid var(--bleu);
+  border-radius:2pt; padding:2.4pt 5pt; margin:2.2pt 0 3.4pt;
+  break-inside:avoid; page-break-inside:avoid;
+}
+.form .t{
+  display:block; font-size:6.8pt; font-weight:700; letter-spacing:.6pt;
+  color:var(--bleu); margin-bottom:1.5pt;
+}
+.form .c{text-align:center; font-size:9.1pt; margin:1.6pt 0;}
+.note{background:var(--vert-pale); border-left:2.4pt solid var(--vert); padding:2.4pt 5pt; border-radius:1.5pt; margin:2.5pt 0 4pt; break-inside:avoid;}
+
+/* --------------------------- TABLEAUX ----------------------------- */
+table{width:100%; border-collapse:collapse; font-size:7.6pt; margin:2pt 0 4pt; break-inside:avoid;}
+th{background:var(--bleu); color:#fff; font-weight:700; text-align:left; padding:1.8pt 4pt; font-size:7.2pt;}
+td{border:.6pt solid var(--gris-clair); padding:1.8pt 4pt; vertical-align:top;}
+tr{break-inside:avoid;}
+table.var td{text-align:center; font-size:8pt;}
+table.var td.lab{text-align:left; font-weight:700; color:var(--bleu-fonce); background:var(--bleu-pale);}
+
+/* ----------------------------- PIEGES ----------------------------- */
+table.pieges th:first-child{width:44%;}
+table.pieges td:first-child{color:var(--rouge); background:#FDF1F0;}
+.x{font-weight:700;}
+.v{color:var(--vert-fonce); font-weight:700;}
+
+/* ---------------------------- RECAP ------------------------------- */
+ol.recap{margin:0; padding-left:0; list-style:none; counter-reset:r;}
+ol.recap li{
+  counter-increment:r; position:relative; padding-left:13pt; margin-bottom:1.8pt;
+  break-inside:avoid;
+}
+ol.recap li::before{
+  content:counter(r); position:absolute; left:0; top:.3pt;
+  width:10pt; height:10pt; border-radius:50%; background:var(--vert); color:#fff;
+  font-size:6.6pt; font-weight:700; text-align:center; line-height:10pt;
+}
+
+/* --------------------------- MATHS -------------------------------- */
+.m{font-family:Cambria,Georgia,"Times New Roman",serif;}
+i,var{font-family:Cambria,Georgia,"Times New Roman",serif; font-style:italic;}
+.op{font-family:Cambria,Georgia,"Times New Roman",serif; font-style:normal;}
+.f{display:inline-block; vertical-align:middle; text-align:center;
+   margin:0 .12em; line-height:1.06; font-family:Cambria,Georgia,"Times New Roman",serif;}
+.f>span{display:block; padding:0 .2em;}
+.f>span:first-child{border-bottom:.6pt solid currentColor; padding-bottom:.08em;}
+.f>span:last-child{padding-top:.04em;}
+.rad{border-top:.6pt solid currentColor; padding-top:.12em;}
+/* line-height:0 evite que l'exposant n'ecarte les lignes ; position:relative le
+   repositionne sans qu'il heurte la barre de fraction ni le trait du radical. */
+sup,sub{font-size:.68em; line-height:0; position:relative; vertical-align:baseline;}
+sup{top:-.42em;}
+sub{bottom:-.22em;}
+.pt{white-space:nowrap;}
+/* Les fleches n'ont qu'un glyphe atrophie dans la fonte serif : on les force
+   en sans-serif, ou elles sont franches meme a 8 pt. */
+.ar{font-family:"Segoe UI",Calibri,Arial,"DejaVu Sans",sans-serif; font-style:normal;}
+
+/* ------------------- PIEGES : blocs erreur / correction ------------- */
+.pg{font-size:8.1pt; border-left:2.4pt solid var(--rouge); background:#FDF1F0; border-radius:1.5pt;
+    padding:2pt 5pt; margin:0 0 2.8pt; break-inside:avoid; page-break-inside:avoid;}
+.pg .err{color:var(--rouge); font-weight:600;}
+.pg .cor{color:#1B1B1B; margin-top:.8pt;}
+.pg .cor b{color:var(--bleu-fonce);}
+.v{color:var(--vert-fonce); font-weight:700;}
+
+</style>
+</head>
+<body>
+<header class="entete">
+  <div class="num">8</div>
+  <div class="txt">
+    <div class="niveau">2NDE C &middot; MATHEMATIQUES</div>
+    <h1>Produit scalaire dans le plan</h1>
+    <div class="sous">Leçon 1 : définition du produit scalaire et orthogonalité &middot; Leçon 2 : propriétés, expression analytique et norme &middot; Leçon 3 : applications, distances, angles, relation métrique &middot; Leçon 4 : ensembles de points</div>
+  </div>
+</header>
+
+<div class="bandeau bleu" style="margin-top:0">L'ESSENTIEL</div>
+<div class="cols">
+
+<!-- ================= LECON 1 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 1&nbsp;: Définition du produit scalaire et orthogonalité</h2>
+<div class="form">
+  <span class="t">DEFINITION&nbsp;: <span style="border-top:.6pt solid;padding-top:.5pt"><i>u</i></span> et <span style="border-top:.6pt solid;padding-top:.5pt"><i>v</i></span> non nuls, &#952; angle entre eux (0&#8239;&#8804;&#8239;&#952;&#8239;&#8804;&#8239;&#960;)</span>
+  <div class="c m"><span style="border-top:.6pt solid;padding-top:.5pt"><i>u</i></span>&#8239;&#8901;&#8239;<span style="border-top:.6pt solid;padding-top:.5pt"><i>v</i></span>&#8239;=&#8239;&#8214;<span style="border-top:.6pt solid;padding-top:.5pt"><i>u</i></span>&#8214;&#8239;&#8901;&#8239;&#8214;<span style="border-top:.6pt solid;padding-top:.5pt"><i>v</i></span>&#8214;&#8239;&#8901;&#8239;<span class="op">cos</span>&#8239;&#952;</div>
+</div></div>
+<p>Le résultat est un <b>nombre réel</b> (« <i>u</i> scalaire <i>v</i> »). Si <span class="pt"><span style="border-top:.6pt solid;padding-top:.5pt"><i>u</i></span>&#8239;=&#8239;<span style="border-top:.6pt solid;padding-top:.5pt">0</span></span> ou <span class="pt"><span style="border-top:.6pt solid;padding-top:.5pt"><i>v</i></span>&#8239;=&#8239;<span style="border-top:.6pt solid;padding-top:.5pt">0</span></span>, on pose <span class="pt"><span style="border-top:.6pt solid;padding-top:.5pt"><i>u</i></span>&#8239;&#8901;&#8239;<span style="border-top:.6pt solid;padding-top:.5pt"><i>v</i></span>&#8239;=&#8239;0</span>. Le point &#8901; ne se supprime jamais, et les deux vecteurs doivent partir du <b>même point</b> pour que &#952; ait un sens.</p>
+</div>
+
+<div class="bloc">
+<div class="form">
+  <span class="t">AVEC LE PROJETE ORTHOGONAL&nbsp;: H projeté orthogonal de B sur (OA), O&#8239;&#8800;&#8239;A</span>
+  <div class="c m"><span style="border-top:.6pt solid;padding-top:.5pt">OA</span>&#8239;&#8901;&#8239;<span style="border-top:.6pt solid;padding-top:.5pt">OB</span>&#8239;=&#8239;<span style="border-top:.6pt solid;padding-top:.5pt">OA</span>&#8239;&#8901;&#8239;<span style="border-top:.6pt solid;padding-top:.5pt">OH</span>&#8239;=&#8239;&#177;&#8239;OA&#8239;&#215;&#8239;OH</div>
+</div>
+<p>Signe&#8239;: <b>+</b> si <span class="pt"><span style="border-top:.6pt solid;padding-top:.5pt">OA</span></span> et <span class="pt"><span style="border-top:.6pt solid;padding-top:.5pt">OH</span></span> sont de <b>même sens</b>, <b>&#8722;</b> s'ils sont de <b>sens contraires</b>.</p>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Carré scalaire et signe</h3>
+<div class="form">
+  <span class="t">CARRE SCALAIRE</span>
+  <div class="c m"><span style="border-top:.6pt solid;padding-top:.5pt"><i>u</i></span>&#8239;&#8901;&#8239;<span style="border-top:.6pt solid;padding-top:.5pt"><i>u</i></span>&#8239;=&#8239;<span style="border-top:.6pt solid;padding-top:.5pt"><i>u</i></span><sup>2</sup>&#8239;=&#8239;&#8214;<span style="border-top:.6pt solid;padding-top:.5pt"><i>u</i></span>&#8214;<sup>2</sup> &nbsp;&nbsp; &#8214;<span style="border-top:.6pt solid;padding-top:.5pt"><i>u</i></span>&#8214;&#8239;=&#8239;&#8730;<span class="rad"><span style="border-top:.6pt solid;padding-top:.5pt"><i>u</i></span>&#8239;&#8901;&#8239;<span style="border-top:.6pt solid;padding-top:.5pt"><i>u</i></span></span></div>
+  <div class="c m"><span style="border-top:.6pt solid;padding-top:.5pt">AB</span>&#8239;&#8901;&#8239;<span style="border-top:.6pt solid;padding-top:.5pt">AB</span>&#8239;=&#8239;AB<sup>2</sup></div>
+</div>
+<p>Pour deux vecteurs <b>non nuls</b>, le signe de <span class="pt"><span style="border-top:.6pt solid;padding-top:.5pt"><i>u</i></span>&#8239;&#8901;&#8239;<span style="border-top:.6pt solid;padding-top:.5pt"><i>v</i></span></span> est celui de <span class="op">cos</span>&#8239;&#952;&#8239;:</p>
+<ul>
+<li>&#952; <b>aigu</b>&#8239;: produit <b>positif</b> &nbsp;&middot;&nbsp; &#952; <b>droit</b>&#8239;: produit <b>nul</b> &nbsp;&middot;&nbsp; &#952; <b>obtus</b>&#8239;: produit <b>négatif</b>.</li>
+<li>Colinéaires de <b>même sens</b> (&#952;&#8239;=&#8239;0)&#8239;: <span class="pt"><span style="border-top:.6pt solid;padding-top:.5pt"><i>u</i></span>&#8239;&#8901;&#8239;<span style="border-top:.6pt solid;padding-top:.5pt"><i>v</i></span>&#8239;=&#8239;&#8214;<span style="border-top:.6pt solid;padding-top:.5pt"><i>u</i></span>&#8214;&#8239;&#215;&#8239;&#8214;<span style="border-top:.6pt solid;padding-top:.5pt"><i>v</i></span>&#8214;</span> ; de <b>sens contraires</b> (&#952;&#8239;=&#8239;&#960;)&#8239;: <span class="pt">&#8722;&#8214;<span style="border-top:.6pt solid;padding-top:.5pt"><i>u</i></span>&#8214;&#8239;&#215;&#8239;&#8214;<span style="border-top:.6pt solid;padding-top:.5pt"><i>v</i></span>&#8214;</span>.</li>
+</ul>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Orthogonalité</h3>
+<div class="form">
+  <span class="t">CARACTERISATION DE L'ORTHOGONALITE</span>
+  <div class="c m"><span style="border-top:.6pt solid;padding-top:.5pt"><i>u</i></span>&#8239;&#8869;&#8239;<span style="border-top:.6pt solid;padding-top:.5pt"><i>v</i></span>&nbsp;<span class="ar">&#8660;</span>&nbsp;<span style="border-top:.6pt solid;padding-top:.5pt"><i>u</i></span>&#8239;&#8901;&#8239;<span style="border-top:.6pt solid;padding-top:.5pt"><i>v</i></span>&#8239;=&#8239;0</div>
+  <div class="c m">(AB)&#8239;&#8869;&#8239;(CD)&nbsp;<span class="ar">&#8660;</span>&nbsp;<span style="border-top:.6pt solid;padding-top:.5pt">AB</span>&#8239;&#8901;&#8239;<span style="border-top:.6pt solid;padding-top:.5pt">CD</span>&#8239;=&#8239;0</div>
+</div>
+<p>Pour deux vecteurs non nuls, le produit ne peut s'annuler que si <span class="op">cos</span>&#8239;&#952;&#8239;=&#8239;0, donc si &#952;&#8239;=&#8239;<span class="f"><span>&#960;</span><span>2</span></span>. Par convention, le <b>vecteur nul est orthogonal à tout vecteur</b>. L'équivalence sert <b>dans les deux sens</b>&#8239;: une perpendicularité donnée fait disparaître des termes ; une perpendicularité à prouver se démontre par un produit scalaire nul.</p>
+</div>
+
+<!-- ================= LECON 2 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 2&nbsp;: Propriétés, expression analytique et norme</h2>
+<div class="form">
+  <span class="t">REGLES DE CALCUL&nbsp;: pour tous <span style="border-top:.6pt solid;padding-top:.5pt"><i>u</i></span>, <span style="border-top:.6pt solid;padding-top:.5pt"><i>v</i></span>, <span style="border-top:.6pt solid;padding-top:.5pt"><i>w</i></span> et tout réel <i>k</i></span>
+  <div class="c m"><span style="border-top:.6pt solid;padding-top:.5pt"><i>u</i></span>&#8239;&#8901;&#8239;<span style="border-top:.6pt solid;padding-top:.5pt"><i>v</i></span>&#8239;=&#8239;<span style="border-top:.6pt solid;padding-top:.5pt"><i>v</i></span>&#8239;&#8901;&#8239;<span style="border-top:.6pt solid;padding-top:.5pt"><i>u</i></span> &nbsp;<span style="font-size:7.5pt">(symétrie)</span></div>
+  <div class="c m">(<i>k</i><span style="border-top:.6pt solid;padding-top:.5pt"><i>u</i></span>)&#8239;&#8901;&#8239;<span style="border-top:.6pt solid;padding-top:.5pt"><i>v</i></span>&#8239;=&#8239;<i>k</i>(<span style="border-top:.6pt solid;padding-top:.5pt"><i>u</i></span>&#8239;&#8901;&#8239;<span style="border-top:.6pt solid;padding-top:.5pt"><i>v</i></span>)</div>
+  <div class="c m"><span style="border-top:.6pt solid;padding-top:.5pt"><i>u</i></span>&#8239;&#8901;&#8239;(<span style="border-top:.6pt solid;padding-top:.5pt"><i>v</i></span>&#8239;+&#8239;<span style="border-top:.6pt solid;padding-top:.5pt"><i>w</i></span>)&#8239;=&#8239;<span style="border-top:.6pt solid;padding-top:.5pt"><i>u</i></span>&#8239;&#8901;&#8239;<span style="border-top:.6pt solid;padding-top:.5pt"><i>v</i></span>&#8239;+&#8239;<span style="border-top:.6pt solid;padding-top:.5pt"><i>u</i></span>&#8239;&#8901;&#8239;<span style="border-top:.6pt solid;padding-top:.5pt"><i>w</i></span></div>
+</div></div>
+<p>Par symétrie, la linéarité vaut aussi sur le premier facteur&#8239;: le produit scalaire est <b>bilinéaire</b>. Les coefficients se multiplient et sortent devant&#8239;: <span class="pt">(<i>a</i><span style="border-top:.6pt solid;padding-top:.5pt"><i>u</i></span>)&#8239;&#8901;&#8239;(<i>b</i><span style="border-top:.6pt solid;padding-top:.5pt"><i>v</i></span>)&#8239;=&#8239;<i>ab</i>(<span style="border-top:.6pt solid;padding-top:.5pt"><i>u</i></span>&#8239;&#8901;&#8239;<span style="border-top:.6pt solid;padding-top:.5pt"><i>v</i></span>)</span>.</p>
+</div>
+
+<div class="bloc">
+<div class="form">
+  <span class="t">DEVELOPPEMENTS&nbsp;: on calcule comme en algèbre</span>
+  <div class="c m">(<span style="border-top:.6pt solid;padding-top:.5pt"><i>u</i></span>&#8239;+&#8239;<span style="border-top:.6pt solid;padding-top:.5pt"><i>v</i></span>)<sup>2</sup>&#8239;=&#8239;<span style="border-top:.6pt solid;padding-top:.5pt"><i>u</i></span><sup>2</sup>&#8239;+&#8239;2&#8239;<span style="border-top:.6pt solid;padding-top:.5pt"><i>u</i></span>&#8239;&#8901;&#8239;<span style="border-top:.6pt solid;padding-top:.5pt"><i>v</i></span>&#8239;+&#8239;<span style="border-top:.6pt solid;padding-top:.5pt"><i>v</i></span><sup>2</sup></div>
+  <div class="c m">(<span style="border-top:.6pt solid;padding-top:.5pt"><i>u</i></span>&#8239;&#8722;&#8239;<span style="border-top:.6pt solid;padding-top:.5pt"><i>v</i></span>)<sup>2</sup>&#8239;=&#8239;<span style="border-top:.6pt solid;padding-top:.5pt"><i>u</i></span><sup>2</sup>&#8239;&#8722;&#8239;2&#8239;<span style="border-top:.6pt solid;padding-top:.5pt"><i>u</i></span>&#8239;&#8901;&#8239;<span style="border-top:.6pt solid;padding-top:.5pt"><i>v</i></span>&#8239;+&#8239;<span style="border-top:.6pt solid;padding-top:.5pt"><i>v</i></span><sup>2</sup></div>
+  <div class="c m">(<span style="border-top:.6pt solid;padding-top:.5pt"><i>u</i></span>&#8239;+&#8239;<span style="border-top:.6pt solid;padding-top:.5pt"><i>v</i></span>)&#8239;&#8901;&#8239;(<span style="border-top:.6pt solid;padding-top:.5pt"><i>u</i></span>&#8239;&#8722;&#8239;<span style="border-top:.6pt solid;padding-top:.5pt"><i>v</i></span>)&#8239;=&#8239;<span style="border-top:.6pt solid;padding-top:.5pt"><i>u</i></span><sup>2</sup>&#8239;&#8722;&#8239;<span style="border-top:.6pt solid;padding-top:.5pt"><i>v</i></span><sup>2</sup></div>
+</div>
+<p>Avec les normes&#8239;: <span class="pt">&#8214;<span style="border-top:.6pt solid;padding-top:.5pt"><i>u</i></span>&#8239;+&#8239;<span style="border-top:.6pt solid;padding-top:.5pt"><i>v</i></span>&#8214;<sup>2</sup>&#8239;=&#8239;&#8214;<span style="border-top:.6pt solid;padding-top:.5pt"><i>u</i></span>&#8214;<sup>2</sup>&#8239;+&#8239;2&#8239;<span style="border-top:.6pt solid;padding-top:.5pt"><i>u</i></span>&#8239;&#8901;&#8239;<span style="border-top:.6pt solid;padding-top:.5pt"><i>v</i></span>&#8239;+&#8239;&#8214;<span style="border-top:.6pt solid;padding-top:.5pt"><i>v</i></span>&#8214;<sup>2</sup></span>. Un carré de vecteur est toujours un <b>carré scalaire</b>, donc un carré de longueur.</p>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Coordonnées</h3>
+<div class="form">
+  <span class="t">EXPRESSION ANALYTIQUE&nbsp;: repère orthonormé (O&#8239;;&#8239;<span style="border-top:.6pt solid;padding-top:.5pt"><i>i</i></span>,&#8239;<span style="border-top:.6pt solid;padding-top:.5pt"><i>j</i></span>), <span style="border-top:.6pt solid;padding-top:.5pt"><i>u</i></span>(<i>x</i>&#8239;;&#8239;<i>y</i>), <span style="border-top:.6pt solid;padding-top:.5pt"><i>v</i></span>(<i>x</i>&#8242;&#8239;;&#8239;<i>y</i>&#8242;)</span>
+  <div class="c m"><span style="border-top:.6pt solid;padding-top:.5pt"><i>u</i></span>&#8239;&#8901;&#8239;<span style="border-top:.6pt solid;padding-top:.5pt"><i>v</i></span>&#8239;=&#8239;<i>xx</i>&#8242;&#8239;+&#8239;<i>yy</i>&#8242; &nbsp;&nbsp;&nbsp; <span style="border-top:.6pt solid;padding-top:.5pt"><i>u</i></span>&#8239;&#8869;&#8239;<span style="border-top:.6pt solid;padding-top:.5pt"><i>v</i></span>&nbsp;<span class="ar">&#8660;</span>&nbsp;<i>xx</i>&#8242;&#8239;+&#8239;<i>yy</i>&#8242;&#8239;=&#8239;0</div>
+  <div class="c m">&#8214;<span style="border-top:.6pt solid;padding-top:.5pt"><i>u</i></span>&#8214;&#8239;=&#8239;&#8730;<span class="rad"><i>x</i><sup>2</sup>&#8239;+&#8239;<i>y</i><sup>2</sup></span></div>
+  <div class="c m">AB&#8239;=&#8239;&#8730;<span class="rad">(<i>x</i><sub>B</sub>&#8239;&#8722;&#8239;<i>x</i><sub>A</sub>)<sup>2</sup>&#8239;+&#8239;(<i>y</i><sub>B</sub>&#8239;&#8722;&#8239;<i>y</i><sub>A</sub>)<sup>2</sup></span></div>
+</div>
+<div class="note"><b>Ne pas confondre.</b> Produit scalaire <span class="pt"><i>xx</i>&#8242;&#8239;+&#8239;<i>yy</i>&#8242;</span>&#8239;: <b>en ligne</b>, on <b>ajoute</b> ; il s'annule si les vecteurs sont <b>orthogonaux</b>. Déterminant <span class="pt"><i>xy</i>&#8242;&#8239;&#8722;&#8239;<i>x</i>&#8242;<i>y</i></span>&#8239;: <b>en croix</b>, on <b>soustrait</b> ; il s'annule si les vecteurs sont <b>colinéaires</b>.</div>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Vecteur normal à une droite</h3>
+<p>Un vecteur <b>non nul</b> <span class="pt"><span style="border-top:.6pt solid;padding-top:.5pt"><i>n</i></span></span> est <b>normal</b> à une droite (D) lorsqu'il est <b>orthogonal à un vecteur directeur</b> de (D).</p>
+<ul>
+<li>Si <span class="pt"><span style="border-top:.6pt solid;padding-top:.5pt"><i>u</i></span>(<i>x</i>&#8239;;&#8239;<i>y</i>)</span> est non nul, alors <span class="pt"><span style="border-top:.6pt solid;padding-top:.5pt"><i>n</i></span>(&#8722;<i>y</i>&#8239;;&#8239;<i>x</i>)</span> lui est orthogonal, car <span class="pt"><i>x</i>&#8239;&#215;&#8239;(&#8722;<i>y</i>)&#8239;+&#8239;<i>y</i>&#8239;&#215;&#8239;<i>x</i>&#8239;=&#8239;0</span> ; <span class="pt">(<i>y</i>&#8239;;&#8239;&#8722;<i>x</i>)</span> convient aussi. On <b>échange les coordonnées</b> et l'on <b>change un signe</b>.</li>
+<li>La droite (D) passant par A et de vecteur normal <span class="pt"><span style="border-top:.6pt solid;padding-top:.5pt"><i>n</i></span></span> est l'ensemble des points M tels que <span class="pt"><span style="border-top:.6pt solid;padding-top:.5pt">AM</span>&#8239;&#8901;&#8239;<span style="border-top:.6pt solid;padding-top:.5pt"><i>n</i></span>&#8239;=&#8239;0</span>.</li>
+<li>Deux droites sont <b>perpendiculaires</b> si et seulement si un vecteur directeur de l'une est orthogonal à un vecteur directeur de l'autre.</li>
+</ul>
+</div>
+
+<!-- ================= LECON 3 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 3&nbsp;: Applications&#8239;: distances, angles, relation métrique</h2>
+<div class="form">
+  <span class="t">ANGLE DE DEUX VECTEURS NON NULS &nbsp;&middot;&nbsp; DISTANCE</span>
+  <div class="c m"><span class="op">cos</span>&#8239;&#952;&#8239;=&#8239;<span class="f"><span><span style="border-top:.6pt solid;padding-top:.5pt"><i>u</i></span>&#8239;&#8901;&#8239;<span style="border-top:.6pt solid;padding-top:.5pt"><i>v</i></span></span><span>&#8214;<span style="border-top:.6pt solid;padding-top:.5pt"><i>u</i></span>&#8214;&#8239;&#8901;&#8239;&#8214;<span style="border-top:.6pt solid;padding-top:.5pt"><i>v</i></span>&#8214;</span></span></div>
+  <div class="c m">AB<sup>2</sup>&#8239;=&#8239;<span style="border-top:.6pt solid;padding-top:.5pt">AB</span>&#8239;&#8901;&#8239;<span style="border-top:.6pt solid;padding-top:.5pt">AB</span> &nbsp;&nbsp; AB&#8239;=&#8239;&#8730;<span class="rad"><span style="border-top:.6pt solid;padding-top:.5pt">AB</span>&#8239;&#8901;&#8239;<span style="border-top:.6pt solid;padding-top:.5pt">AB</span></span></div>
+</div></div>
+<p>Le nombre <span class="op">cos</span>&#8239;&#952; obtenu est <b>toujours</b> dans [&#8722;1&#8239;;&#8239;1] ; sinon, il y a une erreur de calcul. Comme 0&#8239;&#8804;&#8239;&#952;&#8239;&#8804;&#8239;&#960;, un cosinus détermine <b>un seul</b> angle.</p>
+</div>
+
+<div class="bloc">
+<div class="form">
+  <span class="t">RELATION METRIQUE (AL-KASHI)&nbsp;: triangle ABC, <i>a</i>&#8239;=&#8239;BC, <i>b</i>&#8239;=&#8239;AC, <i>c</i>&#8239;=&#8239;AB</span>
+  <div class="c m"><i>a</i><sup>2</sup>&#8239;=&#8239;<i>b</i><sup>2</sup>&#8239;+&#8239;<i>c</i><sup>2</sup>&#8239;&#8722;&#8239;2<i>bc</i>&#8239;&#8901;&#8239;<span class="op">cos</span>&#8239;<span class="op">A&#770;</span></div>
+  <div class="c m"><i>b</i><sup>2</sup>&#8239;=&#8239;<i>a</i><sup>2</sup>&#8239;+&#8239;<i>c</i><sup>2</sup>&#8239;&#8722;&#8239;2<i>ac</i>&#8239;&#8901;&#8239;<span class="op">cos</span>&#8239;<span class="op">B&#770;</span> &nbsp;&nbsp; <i>c</i><sup>2</sup>&#8239;=&#8239;<i>a</i><sup>2</sup>&#8239;+&#8239;<i>b</i><sup>2</sup>&#8239;&#8722;&#8239;2<i>ab</i>&#8239;&#8901;&#8239;<span class="op">cos</span>&#8239;<span class="op">C&#770;</span></div>
+  <div class="c m"><span class="op">cos</span>&#8239;<span class="op">A&#770;</span>&#8239;=&#8239;<span class="f"><span><i>b</i><sup>2</sup>&#8239;+&#8239;<i>c</i><sup>2</sup>&#8239;&#8722;&#8239;<i>a</i><sup>2</sup></span><span>2<i>bc</i></span></span></div>
+</div>
+<p>Le côté <i>a</i> est <b>opposé</b> à l'angle <span class="op">A&#770;</span> ; <i>b</i> et <i>c</i> <b>encadrent</b> cet angle. Si <span class="op">A&#770;</span>&#8239;=&#8239;90&#176;, alors <span class="op">cos</span>&#8239;<span class="op">A&#770;</span>&#8239;=&#8239;0 et il reste <span class="pt"><i>a</i><sup>2</sup>&#8239;=&#8239;<i>b</i><sup>2</sup>&#8239;+&#8239;<i>c</i><sup>2</sup></span>&#8239;: la relation <b>généralise Pythagore</b>. Dans la formule du cosinus, le côté affecté du <b>signe moins</b> au numérateur est celui <b>opposé</b> à l'angle cherché.</p>
+<div class="note"><b>Travail d'une force.</b> Une force d'intensité <i>F</i> déplaçant un objet d'une distance <i>d</i>, en faisant l'angle &#952; avec le déplacement, a pour travail <span class="pt"><i>W</i>&#8239;=&#8239;<i>F</i>&#8239;&#215;&#8239;<i>d</i>&#8239;&#215;&#8239;<span class="op">cos</span>&#8239;&#952;</span>, en joules&#8239;: <b>maximal</b> si &#952;&#8239;=&#8239;0, <b>nul</b> si la force est perpendiculaire au déplacement, <b>négatif</b> si elle s'y oppose.</div>
+</div>
+
+<!-- ================= LECON 4 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 4&nbsp;: Ensembles de points</h2>
+<p>A et B sont deux points <b>distincts</b>, I le <b>milieu</b> de [AB], et <i>k</i> un réel donné. Ensemble des points M du plan tels que&#8239;:</p></div>
+<table>
+<tr><th>Condition sur M</th><th>Ensemble obtenu</th></tr>
+<tr><td class="m"><span style="border-top:.6pt solid;padding-top:.5pt">AB</span>&#8239;&#8901;&#8239;<span style="border-top:.6pt solid;padding-top:.5pt">AM</span>&#8239;=&#8239;<i>k</i></td><td><b>Droite</b> perpendiculaire à (AB) passant par le point H de (AB) tel que <span class="pt"><span style="border-top:.6pt solid;padding-top:.5pt">AB</span>&#8239;&#8901;&#8239;<span style="border-top:.6pt solid;padding-top:.5pt">AH</span>&#8239;=&#8239;<i>k</i></span>, soit <span class="pt">AH&#8239;=&#8239;<span class="f"><span><i>k</i></span><span>AB</span></span></span> en <b>mesure algébrique</b> sur (AB)</td></tr>
+<tr><td class="m">MA<sup>2</sup>&#8239;&#8722;&#8239;MB<sup>2</sup>&#8239;=&#8239;<i>k</i></td><td><b>Droite</b> perpendiculaire à (AB) ; c'est la <b>médiatrice</b> de [AB] si <i>k</i>&#8239;=&#8239;0</td></tr>
+<tr><td class="m">MA<sup>2</sup>&#8239;=&#8239;<i>k</i></td><td><b>Cercle</b> de centre A et de rayon &#8730;<span class="rad"><i>k</i></span> si <i>k</i>&#8239;&gt;&#8239;0 ; le seul point A si <i>k</i>&#8239;=&#8239;0 ; <b>vide</b> si <i>k</i>&#8239;&lt;&#8239;0</td></tr>
+<tr><td class="m">MA<sup>2</sup>&#8239;+&#8239;MB<sup>2</sup>&#8239;=&#8239;<i>k</i></td><td><b>Cercle</b> de centre I, éventuellement réduit à un point ou vide selon <i>k</i></td></tr>
+<tr><td class="m"><span style="border-top:.6pt solid;padding-top:.5pt">MA</span>&#8239;&#8901;&#8239;<span style="border-top:.6pt solid;padding-top:.5pt">MB</span>&#8239;=&#8239;0</td><td><b>Cercle de diamètre</b> [AB] (l'angle AMB est droit)</td></tr>
+</table>
+</div>
+
+<div class="bloc">
+<div class="form">
+  <span class="t">THEOREME DE LA MEDIANE&nbsp;: I milieu de [AB], M point quelconque</span>
+  <div class="c m">MA<sup>2</sup>&#8239;+&#8239;MB<sup>2</sup>&#8239;=&#8239;2&#8239;MI<sup>2</sup>&#8239;+&#8239;<span class="f"><span>AB<sup>2</sup></span><span>2</span></span></div>
+  <div class="c m">MA<sup>2</sup>&#8239;&#8722;&#8239;MB<sup>2</sup>&#8239;=&#8239;2&#8239;<span style="border-top:.6pt solid;padding-top:.5pt">IM</span>&#8239;&#8901;&#8239;<span style="border-top:.6pt solid;padding-top:.5pt">AB</span></div>
+</div>
+<p>La <b>somme</b> ramène deux distances à la seule distance MI&#8239;: on obtient un <b>cercle</b> de centre I. La <b>différence</b> devient un produit scalaire&#8239;: on obtient une <b>droite</b> perpendiculaire à (AB).</p>
+<div class="form">
+  <span class="t">EQUATION DU CERCLE DE DIAMETRE [AB]&nbsp;: repère orthonormé, M(<i>x</i>&#8239;;&#8239;<i>y</i>)</span>
+  <div class="c m">(<i>x</i>&#8239;&#8722;&#8239;<i>x</i><sub>A</sub>)(<i>x</i>&#8239;&#8722;&#8239;<i>x</i><sub>B</sub>)&#8239;+&#8239;(<i>y</i>&#8239;&#8722;&#8239;<i>y</i><sub>A</sub>)(<i>y</i>&#8239;&#8722;&#8239;<i>y</i><sub>B</sub>)&#8239;=&#8239;0</div>
+</div>
+<p>C'est la traduction en coordonnées de <span class="pt"><span style="border-top:.6pt solid;padding-top:.5pt">MA</span>&#8239;&#8901;&#8239;<span style="border-top:.6pt solid;padding-top:.5pt">MB</span>&#8239;=&#8239;0</span>. Une condition <b>linéaire</b> en M annonce une droite, une <b>somme de carrés</b> annonce un cercle&#8239;: c'est le calcul qui décide, pas l'intuition.</p>
+</div>
+
+</div>
+
+<div class="bandeau vert">PIEGES ET ERREURS FREQUENTES</div>
+<div class="cols">
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> <span class="pt"><span style="border-top:.6pt solid;padding-top:.5pt"><i>u</i></span>&#8239;&#8901;&#8239;<span style="border-top:.6pt solid;padding-top:.5pt"><i>v</i></span>&#8239;=&#8239;0</span> donc <span class="pt"><span style="border-top:.6pt solid;padding-top:.5pt"><i>u</i></span>&#8239;=&#8239;<span style="border-top:.6pt solid;padding-top:.5pt">0</span></span> ou <span class="pt"><span style="border-top:.6pt solid;padding-top:.5pt"><i>v</i></span>&#8239;=&#8239;<span style="border-top:.6pt solid;padding-top:.5pt">0</span></span> &nbsp;&middot;&nbsp; écrire <span class="pt"><span style="border-top:.6pt solid;padding-top:.5pt"><i>u</i></span>&#8239;&#8901;&#8239;<span style="border-top:.6pt solid;padding-top:.5pt"><i>v</i></span>&#8239;=&#8239;<span style="border-top:.6pt solid;padding-top:.5pt">0</span></span> ou <span class="pt"><span style="border-top:.6pt solid;padding-top:.5pt"><i>u</i></span>&#8239;&#8901;&#8239;<span style="border-top:.6pt solid;padding-top:.5pt"><i>v</i></span>&#8239;&#8901;&#8239;<span style="border-top:.6pt solid;padding-top:.5pt"><i>w</i></span></span></div><div class="cor"><span class="v">&#10003;</span> Deux vecteurs entrent, <b>un nombre sort</b>&#8239;: le zéro s'écrit <b>sans flèche</b>, et trois produits scalaires à la suite n'ont aucun sens. Un produit nul signifie <b>orthogonaux</b>&#8239;: deux vecteurs <b>non nuls</b> peuvent parfaitement avoir un produit nul, car c'est <span class="op">cos</span>&#8239;&#952; qui s'annule.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> <span class="pt"><span style="border-top:.6pt solid;padding-top:.5pt"><i>u</i></span>&#8239;&#8901;&#8239;<span style="border-top:.6pt solid;padding-top:.5pt"><i>v</i></span>&#8239;=&#8239;&#8214;<span style="border-top:.6pt solid;padding-top:.5pt"><i>u</i></span>&#8214;&#8239;&#215;&#8239;&#8214;<span style="border-top:.6pt solid;padding-top:.5pt"><i>v</i></span>&#8214;</span></div><div class="cor"><span class="v">&#10003;</span> Il manque <b><span class="op">cos</span>&#8239;&#952;</b>. Cette égalité n'est vraie que si les deux vecteurs sont colinéaires et de <b>même sens</b>&#8239;: un cas sur une infinité.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> <span class="pt"><span style="border-top:.6pt solid;padding-top:.5pt"><i>u</i></span>&#8239;&#8901;&#8239;<span style="border-top:.6pt solid;padding-top:.5pt"><i>v</i></span>&#8239;=&#8239;<i>xy</i>&#8242;&#8239;+&#8239;<i>yx</i>&#8242;</span> &nbsp;&middot;&nbsp; « <span class="pt"><i>xy</i>&#8242;&#8239;&#8722;&#8239;<i>x</i>&#8242;<i>y</i>&#8239;=&#8239;0</span> donc orthogonaux »</div><div class="cor"><span class="v">&#10003;</span> Produit scalaire&#8239;: <b>en ligne, plus</b>, <span class="pt"><i>xx</i>&#8242;&#8239;+&#8239;<i>yy</i>&#8242;</span>, nul si <b>orthogonaux</b>. Déterminant&#8239;: <b>en croix, moins</b>, <span class="pt"><i>xy</i>&#8242;&#8239;&#8722;&#8239;<i>x</i>&#8242;<i>y</i></span>, nul si <b>colinéaires</b>. Test&#8239;: <span class="pt"><span style="border-top:.6pt solid;padding-top:.5pt"><i>u</i></span>(1&#8239;;&#8239;0)</span> et <span class="pt"><span style="border-top:.6pt solid;padding-top:.5pt"><i>v</i></span>(0&#8239;;&#8239;1)</span> donnent 0 et 1.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> <span class="pt">&#8214;<span style="border-top:.6pt solid;padding-top:.5pt"><i>u</i></span>&#8214;&#8239;=&#8239;<i>x</i><sup>2</sup>&#8239;+&#8239;<i>y</i><sup>2</sup></span> &nbsp;&middot;&nbsp; <span class="pt">AB&#8239;=&#8239;(<i>x</i><sub>B</sub>&#8239;&#8722;&#8239;<i>x</i><sub>A</sub>)&#8239;+&#8239;(<i>y</i><sub>B</sub>&#8239;&#8722;&#8239;<i>y</i><sub>A</sub>)</span></div><div class="cor"><span class="v">&#10003;</span> La <b>racine carrée</b> s'oublie&#8239;: sans elle on a calculé le carré scalaire. Contre-exemple&#8239;: A(0&#8239;;&#8239;0) et B(3&#8239;;&#8239;4) donnent AB&#8239;=&#8239;5, et non 7.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> Appliquer <span class="pt"><i>xx</i>&#8242;&#8239;+&#8239;<i>yy</i>&#8242;</span> dans un repère quelconque</div><div class="cor"><span class="v">&#10003;</span> La formule analytique suppose une base <b>orthonormée</b>&#8239;: vecteurs de base <b>perpendiculaires</b> <b>et</b> de norme <b>1</b>. C'est cette double hypothèse qui fait disparaître les termes croisés ; l'énoncé la précise toujours.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> <span class="pt">BC<sup>2</sup>&#8239;=&#8239;AB<sup>2</sup>&#8239;+&#8239;AC<sup>2</sup></span> dans un triangle quelconque</div><div class="cor"><span class="v">&#10003;</span> Erreur la plus fréquente du chapitre. La formule complète est <span class="pt"><i>a</i><sup>2</sup>&#8239;=&#8239;<i>b</i><sup>2</sup>&#8239;+&#8239;<i>c</i><sup>2</sup>&#8239;&#8722;&#8239;2<i>bc</i>&#8239;&#8901;&#8239;<span class="op">cos</span>&#8239;<span class="op">A&#770;</span></span>&#8239;; on ne supprime le dernier terme que si <span class="op">A&#770;</span>&#8239;=&#8239;90&#176;. Si l'angle est <b>obtus</b>, <span class="op">cos</span>&#8239;<span class="op">A&#770;</span> est négatif et le terme devient une <b>addition</b>.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> Connaissant AB, AC et <span class="op">B&#770;</span>&#8239;: <span class="pt">BC<sup>2</sup>&#8239;=&#8239;AB<sup>2</sup>&#8239;+&#8239;AC<sup>2</sup>&#8239;&#8722;&#8239;2&#8239;&#215;&#8239;AB&#8239;&#215;&#8239;AC&#8239;&#8901;&#8239;<span class="op">cos</span>&#8239;<span class="op">B&#770;</span></span></div><div class="cor"><span class="v">&#10003;</span> L'angle va toujours avec le côté qui lui est <b>opposé</b>&#8239;: <span class="pt">AC<sup>2</sup>&#8239;=&#8239;AB<sup>2</sup>&#8239;+&#8239;BC<sup>2</sup>&#8239;&#8722;&#8239;2&#8239;&#215;&#8239;AB&#8239;&#215;&#8239;BC&#8239;&#8901;&#8239;<span class="op">cos</span>&#8239;<span class="op">B&#770;</span></span>. Les deux longueurs qui multiplient le cosinus sont celles des côtés qui <b>partent du sommet</b> de l'angle.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> Répondre « c'est un cercle » dès qu'on obtient <span class="pt">MI<sup>2</sup>&#8239;=&#8239;<i>c</i></span>, ou attendre un cercle de toute condition sur des distances</div><div class="cor"><span class="v">&#10003;</span> Il faut <b>discuter</b>&#8239;: cercle de rayon &#8730;<span class="rad"><i>c</i></span> si <i>c</i>&#8239;&gt;&#8239;0, le <b>seul point</b> I si <i>c</i>&#8239;=&#8239;0, ensemble <b>vide</b> si <i>c</i>&#8239;&lt;&#8239;0. Et une condition <b>linéaire</b> en M (<span class="pt"><span style="border-top:.6pt solid;padding-top:.5pt">AB</span>&#8239;&#8901;&#8239;<span style="border-top:.6pt solid;padding-top:.5pt">AM</span>&#8239;=&#8239;<i>k</i></span> ou <span class="pt">MA<sup>2</sup>&#8239;&#8722;&#8239;MB<sup>2</sup>&#8239;=&#8239;<i>k</i></span>) donne une <b>droite</b>.</div></div>
+
+</div>
+
+<div class="bandeau bleu">A SAVOIR PAR COEUR AVANT LE DEVOIR</div>
+<div class="cols">
+<ol class="recap">
+<li><span class="pt"><span style="border-top:.6pt solid;padding-top:.5pt"><i>u</i></span>&#8239;&#8901;&#8239;<span style="border-top:.6pt solid;padding-top:.5pt"><i>v</i></span>&#8239;=&#8239;&#8214;<span style="border-top:.6pt solid;padding-top:.5pt"><i>u</i></span>&#8214;&#8239;&#8901;&#8239;&#8214;<span style="border-top:.6pt solid;padding-top:.5pt"><i>v</i></span>&#8214;&#8239;&#8901;&#8239;<span class="op">cos</span>&#8239;&#952;</span> est un <b>nombre réel</b> ; <span class="pt"><span style="border-top:.6pt solid;padding-top:.5pt"><i>u</i></span><sup>2</sup>&#8239;=&#8239;&#8214;<span style="border-top:.6pt solid;padding-top:.5pt"><i>u</i></span>&#8214;<sup>2</sup></span> et <span class="pt"><span style="border-top:.6pt solid;padding-top:.5pt">AB</span>&#8239;&#8901;&#8239;<span style="border-top:.6pt solid;padding-top:.5pt">AB</span>&#8239;=&#8239;AB<sup>2</sup></span>. Avec le projeté H&#8239;: <span class="pt"><span style="border-top:.6pt solid;padding-top:.5pt">OA</span>&#8239;&#8901;&#8239;<span style="border-top:.6pt solid;padding-top:.5pt">OB</span>&#8239;=&#8239;&#177;&#8239;OA&#8239;&#215;&#8239;OH</span>.</li>
+<li><span class="pt"><span style="border-top:.6pt solid;padding-top:.5pt"><i>u</i></span>&#8239;&#8869;&#8239;<span style="border-top:.6pt solid;padding-top:.5pt"><i>v</i></span>&#8239;<span class="ar">&#8660;</span>&#8239;<span style="border-top:.6pt solid;padding-top:.5pt"><i>u</i></span>&#8239;&#8901;&#8239;<span style="border-top:.6pt solid;padding-top:.5pt"><i>v</i></span>&#8239;=&#8239;0</span>, et de même <span class="pt">(AB)&#8239;&#8869;&#8239;(CD)</span>. <b>Signe</b>&#8239;: angle aigu, produit positif ; angle droit, produit nul ; angle obtus, produit négatif.</li>
+<li>Base <b>orthonormée</b> seulement&#8239;: <span class="pt"><span style="border-top:.6pt solid;padding-top:.5pt"><i>u</i></span>&#8239;&#8901;&#8239;<span style="border-top:.6pt solid;padding-top:.5pt"><i>v</i></span>&#8239;=&#8239;<i>xx</i>&#8242;&#8239;+&#8239;<i>yy</i>&#8242;</span> ; <span class="pt">&#8214;<span style="border-top:.6pt solid;padding-top:.5pt"><i>u</i></span>&#8214;&#8239;=&#8239;&#8730;<span class="rad"><i>x</i><sup>2</sup>&#8239;+&#8239;<i>y</i><sup>2</sup></span></span> ; <span class="pt">AB&#8239;=&#8239;&#8730;<span class="rad">(<i>x</i><sub>B</sub>&#8239;&#8722;&#8239;<i>x</i><sub>A</sub>)<sup>2</sup>&#8239;+&#8239;(<i>y</i><sub>B</sub>&#8239;&#8722;&#8239;<i>y</i><sub>A</sub>)<sup>2</sup></span></span>.</li>
+<li>Vecteur <b>normal</b> à <span class="pt"><span style="border-top:.6pt solid;padding-top:.5pt"><i>u</i></span>(<i>x</i>&#8239;;&#8239;<i>y</i>)</span>&#8239;: <span class="pt"><span style="border-top:.6pt solid;padding-top:.5pt"><i>n</i></span>(&#8722;<i>y</i>&#8239;;&#8239;<i>x</i>)</span>. La droite par A de vecteur normal <span class="pt"><span style="border-top:.6pt solid;padding-top:.5pt"><i>n</i></span></span>&#8239;: <span class="pt"><span style="border-top:.6pt solid;padding-top:.5pt">AM</span>&#8239;&#8901;&#8239;<span style="border-top:.6pt solid;padding-top:.5pt"><i>n</i></span>&#8239;=&#8239;0</span>.</li>
+<li>Symétrique et <b>bilinéaire</b>&#8239;: <span class="pt">(<span style="border-top:.6pt solid;padding-top:.5pt"><i>u</i></span>&#8239;+&#8239;<span style="border-top:.6pt solid;padding-top:.5pt"><i>v</i></span>)<sup>2</sup>&#8239;=&#8239;<span style="border-top:.6pt solid;padding-top:.5pt"><i>u</i></span><sup>2</sup>&#8239;+&#8239;2&#8239;<span style="border-top:.6pt solid;padding-top:.5pt"><i>u</i></span>&#8239;&#8901;&#8239;<span style="border-top:.6pt solid;padding-top:.5pt"><i>v</i></span>&#8239;+&#8239;<span style="border-top:.6pt solid;padding-top:.5pt"><i>v</i></span><sup>2</sup></span> et <span class="pt">(<span style="border-top:.6pt solid;padding-top:.5pt"><i>u</i></span>&#8239;+&#8239;<span style="border-top:.6pt solid;padding-top:.5pt"><i>v</i></span>)&#8239;&#8901;&#8239;(<span style="border-top:.6pt solid;padding-top:.5pt"><i>u</i></span>&#8239;&#8722;&#8239;<span style="border-top:.6pt solid;padding-top:.5pt"><i>v</i></span>)&#8239;=&#8239;<span style="border-top:.6pt solid;padding-top:.5pt"><i>u</i></span><sup>2</sup>&#8239;&#8722;&#8239;<span style="border-top:.6pt solid;padding-top:.5pt"><i>v</i></span><sup>2</sup></span>.</li>
+<li><span class="pt"><span class="op">cos</span>&#8239;&#952;&#8239;=&#8239;<span class="f"><span><span style="border-top:.6pt solid;padding-top:.5pt"><i>u</i></span>&#8239;&#8901;&#8239;<span style="border-top:.6pt solid;padding-top:.5pt"><i>v</i></span></span><span>&#8214;<span style="border-top:.6pt solid;padding-top:.5pt"><i>u</i></span>&#8214;&#8239;&#8901;&#8239;&#8214;<span style="border-top:.6pt solid;padding-top:.5pt"><i>v</i></span>&#8214;</span></span></span>, résultat dans [&#8722;1&#8239;;&#8239;1]. <b>Al-Kashi</b>&#8239;: <span class="pt"><i>a</i><sup>2</sup>&#8239;=&#8239;<i>b</i><sup>2</sup>&#8239;+&#8239;<i>c</i><sup>2</sup>&#8239;&#8722;&#8239;2<i>bc</i>&#8239;&#8901;&#8239;<span class="op">cos</span>&#8239;<span class="op">A&#770;</span></span> (<i>a</i> opposé à <span class="op">A&#770;</span>), et <span class="pt"><span class="op">cos</span>&#8239;<span class="op">A&#770;</span>&#8239;=&#8239;<span class="f"><span><i>b</i><sup>2</sup>&#8239;+&#8239;<i>c</i><sup>2</sup>&#8239;&#8722;&#8239;<i>a</i><sup>2</sup></span><span>2<i>bc</i></span></span></span>.</li>
+<li><b>Droite</b>&#8239;: <span class="pt"><span style="border-top:.6pt solid;padding-top:.5pt">AB</span>&#8239;&#8901;&#8239;<span style="border-top:.6pt solid;padding-top:.5pt">AM</span>&#8239;=&#8239;<i>k</i></span> ou <span class="pt">MA<sup>2</sup>&#8239;&#8722;&#8239;MB<sup>2</sup>&#8239;=&#8239;<i>k</i></span> (médiatrice si <i>k</i>&#8239;=&#8239;0). <b>Cercle</b>&#8239;: <span class="pt">MA<sup>2</sup>&#8239;=&#8239;<i>k</i></span>, <span class="pt">MA<sup>2</sup>&#8239;+&#8239;MB<sup>2</sup>&#8239;=&#8239;<i>k</i></span>, ou <span class="pt"><span style="border-top:.6pt solid;padding-top:.5pt">MA</span>&#8239;&#8901;&#8239;<span style="border-top:.6pt solid;padding-top:.5pt">MB</span>&#8239;=&#8239;0</span> (diamètre [AB]).</li>
+<li><b>Médiane</b> (I milieu de [AB])&#8239;: <span class="pt">MA<sup>2</sup>&#8239;+&#8239;MB<sup>2</sup>&#8239;=&#8239;2&#8239;MI<sup>2</sup>&#8239;+&#8239;<span class="f"><span>AB<sup>2</sup></span><span>2</span></span></span>. Toujours <b>discuter</b> les cas « point unique » et « ensemble vide ».</li>
+</ol>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Fiche de revision - 6eme - Chapitre 12 : Les fractions</title>
+<style>
+/* ===================================================================
+   FICHE DE REVISION, Collection Hakili Lab, Edition 2026
+   Feuille de style autonome, format A4 pret a imprimer.
+   Bleu #005CB9 · Vert #49A145
+   =================================================================== */
+:root{
+  --bleu:#005CB9; --bleu-fonce:#00429A; --bleu-pale:#E8F1FB; --bleu-bord:#B7D2EE;
+  --vert:#49A145; --vert-fonce:#2F7A2C; --vert-pale:#EDF7EC; --vert-bord:#BCE0B9;
+  --gris:#4A4A4A; --gris-clair:#E4E4E4; --rouge:#B3261E;
+}
+@page{
+  size:A4; margin:15mm;
+  @bottom-center{
+    content:"Collection Hakili Lab, Edition 2026  ·  Fiche de revision  ·  " counter(page) "/" counter(pages);
+    font-family:"Segoe UI",Calibri,Arial,sans-serif; font-size:6.6pt; color:#8A8A8A;
+  }
+}
+*{box-sizing:border-box;}
+body{
+  margin:0; font-family:"Segoe UI",Calibri,Arial,sans-serif;
+  font-size:8.4pt; line-height:1.26; color:#1B1B1B;
+}
+p{margin:0 0 3pt;}
+ul{margin:0 0 3pt; padding-left:11pt;}
+li{margin:0 0 1.2pt;}
+b,strong{color:var(--bleu-fonce);}
+
+/* ------------------------------ ENTETE ---------------------------- */
+.entete{
+  display:flex; align-items:stretch; border:1.6pt solid var(--bleu);
+  border-radius:2.5pt; overflow:hidden; margin-bottom:6pt;
+}
+.entete .num{
+  background:var(--bleu); color:#fff; font-size:20pt; font-weight:700;
+  padding:0 8pt; display:flex; align-items:center; justify-content:center; min-width:34pt;
+}
+.entete .txt{padding:3.5pt 8pt; flex:1;}
+.entete .niveau{
+  font-size:7pt; font-weight:700; letter-spacing:.9pt; color:var(--vert-fonce);
+}
+.entete h1{margin:0; font-size:13.5pt; line-height:1.12; color:var(--bleu-fonce); font-weight:700;}
+.entete .sous{font-size:7pt; color:var(--gris); margin-top:1pt;}
+
+/* --------------------------- BANDEAUX ----------------------------- */
+.bandeau{
+  color:#fff; font-weight:700; font-size:9pt; letter-spacing:1pt;
+  padding:2.4pt 7pt; border-radius:2pt; margin:3pt 0 4pt; break-after:avoid; page-break-after:avoid;
+}
+.bandeau.bleu{background:var(--bleu);}
+.bandeau.vert{background:var(--vert);}
+
+/* --------------------------- COLONNES ----------------------------- */
+.cols{column-count:2; column-gap:7mm; column-fill:balance;}
+
+.cols.bal{column-fill:balance;}
+.bloc{margin-bottom:5pt;}
+.keep{break-inside:avoid; page-break-inside:avoid;}
+
+/* --------------------------- LECONS ------------------------------- */
+h2.lecon{
+  margin:0 0 3pt; font-size:8.6pt; font-weight:700; color:#fff; background:var(--bleu-fonce);
+  padding:1.8pt 5pt; border-radius:1.5pt; break-after:avoid; page-break-after:avoid;
+}
+h3.rub{
+  margin:3.5pt 0 1.5pt; font-size:8.2pt; font-weight:700; color:var(--vert-fonce);
+  border-bottom:.7pt solid var(--vert-bord); padding-bottom:.8pt;
+  break-after:avoid; page-break-after:avoid;
+}
+
+/* --------------------------- ENCADRES ----------------------------- */
+.form{
+  background:var(--bleu-pale); border:.8pt solid var(--bleu-bord); border-left:2.6pt solid var(--bleu);
+  border-radius:2pt; padding:2.4pt 5pt; margin:2.2pt 0 3.4pt;
+  break-inside:avoid; page-break-inside:avoid;
+}
+.form .t{
+  display:block; font-size:6.8pt; font-weight:700; letter-spacing:.6pt;
+  color:var(--bleu); margin-bottom:1.5pt;
+}
+.form .c{text-align:center; font-size:9.1pt; margin:1.6pt 0;}
+.note{background:var(--vert-pale); border-left:2.4pt solid var(--vert); padding:2.4pt 5pt; border-radius:1.5pt; margin:2.5pt 0 4pt; break-inside:avoid;}
+
+/* --------------------------- TABLEAUX ----------------------------- */
+table{width:100%; border-collapse:collapse; font-size:7.6pt; margin:2pt 0 4pt; break-inside:avoid;}
+th{background:var(--bleu); color:#fff; font-weight:700; text-align:left; padding:1.8pt 4pt; font-size:7.2pt;}
+td{border:.6pt solid var(--gris-clair); padding:1.8pt 4pt; vertical-align:top;}
+tr{break-inside:avoid;}
+table.var td{text-align:center; font-size:8pt;}
+table.var td.lab{text-align:left; font-weight:700; color:var(--bleu-fonce); background:var(--bleu-pale);}
+
+/* ----------------------------- PIEGES ----------------------------- */
+table.pieges th:first-child{width:44%;}
+table.pieges td:first-child{color:var(--rouge); background:#FDF1F0;}
+.x{font-weight:700;}
+.v{color:var(--vert-fonce); font-weight:700;}
+
+/* ---------------------------- RECAP ------------------------------- */
+ol.recap{margin:0; padding-left:0; list-style:none; counter-reset:r;}
+ol.recap li{
+  counter-increment:r; position:relative; padding-left:13pt; margin-bottom:1.8pt;
+  break-inside:avoid;
+}
+ol.recap li::before{
+  content:counter(r); position:absolute; left:0; top:.3pt;
+  width:10pt; height:10pt; border-radius:50%; background:var(--vert); color:#fff;
+  font-size:6.6pt; font-weight:700; text-align:center; line-height:10pt;
+}
+
+/* --------------------------- MATHS -------------------------------- */
+.m{font-family:Cambria,Georgia,"Times New Roman",serif;}
+i,var{font-family:Cambria,Georgia,"Times New Roman",serif; font-style:italic;}
+.op{font-family:Cambria,Georgia,"Times New Roman",serif; font-style:normal;}
+.f{display:inline-block; vertical-align:middle; text-align:center;
+   margin:0 .12em; line-height:1.06; font-family:Cambria,Georgia,"Times New Roman",serif;}
+.f>span{display:block; padding:0 .2em;}
+.f>span:first-child{border-bottom:.6pt solid currentColor; padding-bottom:.08em;}
+.f>span:last-child{padding-top:.04em;}
+.rad{border-top:.6pt solid currentColor; padding-top:.12em;}
+/* line-height:0 evite que l'exposant n'ecarte les lignes ; position:relative le
+   repositionne sans qu'il heurte la barre de fraction ni le trait du radical. */
+sup,sub{font-size:.68em; line-height:0; position:relative; vertical-align:baseline;}
+sup{top:-.42em;}
+sub{bottom:-.22em;}
+.pt{white-space:nowrap;}
+/* Les fleches n'ont qu'un glyphe atrophie dans la fonte serif : on les force
+   en sans-serif, ou elles sont franches meme a 8 pt. */
+.ar{font-family:"Segoe UI",Calibri,Arial,"DejaVu Sans",sans-serif; font-style:normal;}
+
+/* ------------------- PIEGES : blocs erreur / correction ------------- */
+.pg{font-size:8.1pt; border-left:2.4pt solid var(--rouge); background:#FDF1F0; border-radius:1.5pt;
+    padding:2pt 5pt; margin:0 0 2.8pt; break-inside:avoid; page-break-inside:avoid;}
+.pg .err{color:var(--rouge); font-weight:600;}
+.pg .cor{color:#1B1B1B; margin-top:.8pt;}
+.pg .cor b{color:var(--bleu-fonce);}
+.v{color:var(--vert-fonce); font-weight:700;}
+
+</style>
+</head>
+<body>
+<header class="entete">
+  <div class="num">12</div>
+  <div class="txt">
+    <div class="niveau">6EME &middot; MATHEMATIQUES</div>
+    <h1>Les fractions</h1>
+    <div class="sous">Leçon 1 : écrire une fraction ; fraction d'une quantité &middot; Leçon 2 : fractions égales et simplification &middot; Leçon 3 : comparer, additionner et soustraire (même dénominateur) &middot; Leçon 4 : fraction d'un nombre et pourcentages</div>
+  </div>
+</header>
+
+<div class="bandeau bleu" style="margin-top:0">L'ESSENTIEL</div>
+<div class="cols">
+
+<!-- ================= LECON 1 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 1&nbsp;: Ecrire une fraction ; fraction d'une quantité</h2>
+<p>Dans <span class="f"><span><i>a</i></span><span><i>b</i></span></span>, le <b>dénominateur</b> <i>b</i> (en bas) dit en combien de parts <b>égales</b> on partage le tout ; le <b>numérateur</b> <i>a</i> (en haut) dit combien de parts on prend. Le dénominateur n'est <b>jamais 0</b>.</p></div>
+<div class="form">
+  <span class="t">FRACTION D'UNE QUANTITE</span>
+  <div class="c m">on <b>divise</b> par le dénominateur, puis on <b>multiplie</b> par le numérateur</div>
+  <div class="c m"><span class="f"><span>2</span><span>3</span></span> de 24&#8239;=&#8239;24&#8239;&#247;&#8239;3&#8239;&#215;&#8239;2&#8239;=&#8239;16</div>
+</div>
+<p><b>Sur la droite graduée.</b> Une fraction est un <b>nombre</b> : on partage l'unité (de 0 à 1) en <i>b</i> parts égales, puis on compte <i>a</i> parts à partir de 0.</p>
+<p><b>Comparaison à 1.</b> Plus petite que 1 si <i>a</i>&#8239;&lt;&#8239;<i>b</i>, égale à 1 si <i>a</i>&#8239;=&#8239;<i>b</i>, plus grande sinon, et elle s'écrit alors « un entier plus une fraction » : <span class="f"><span>7</span><span>4</span></span>&#8239;=&#8239;1&#8239;+&#8239;<span class="f"><span>3</span><span>4</span></span>.</p>
+</div>
+
+<!-- ================= LECON 2 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 2&nbsp;: Fractions égales et simplification</h2>
+<p>Deux fractions sont <b>égales</b> si elles représentent la même part du tout.</p></div>
+<div class="form">
+  <span class="t">REGLE DES FRACTIONS EGALES</span>
+  <div class="c m"><span class="f"><span><i>a</i></span><span><i>b</i></span></span>&#8239;=&#8239;<span class="f"><span><i>a</i>&#8239;&#215;&#8239;<i>k</i></span><span><i>b</i>&#8239;&#215;&#8239;<i>k</i></span></span>&#8239;=&#8239;<span class="f"><span><i>a</i>&#8239;&#247;&#8239;<i>k</i></span><span><i>b</i>&#8239;&#247;&#8239;<i>k</i></span></span> &nbsp;<span style="font-size:7.5pt">(<i>k</i>&#8239;&#8800;&#8239;0)</span> &nbsp;&nbsp; <span class="f"><span>1</span><span>2</span></span>&#8239;=&#8239;<span class="f"><span>2</span><span>4</span></span>&#8239;=&#8239;<span class="f"><span>4</span><span>8</span></span></div>
+</div>
+<p><b>Simplifier</b>, c'est diviser les deux par un <b>diviseur commun</b> : 2 si les deux nombres sont pairs, 3 s'ils sont dans la table de 3, 5 s'ils se terminent par 0 ou 5. On peut simplifier en plusieurs fois. Quand plus aucun nombre autre que 1 ne les divise, la fraction est <b>irréductible</b> : <span class="f"><span>6</span><span>8</span></span>&#8239;=&#8239;<span class="f"><span>3</span><span>4</span></span>.</p>
+<div class="note"><b>Egalité à trou.</b> <span class="f"><span>2</span><span>5</span></span>&#8239;=&#8239;<span class="f"><span>&#8230;</span><span>15</span></span> : le dénominateur a été multiplié par 3 (5&#8239;&#215;&#8239;3&#8239;=&#8239;15), donc le numérateur aussi (2&#8239;&#215;&#8239;3&#8239;=&#8239;6).</div>
+</div>
+
+<!-- ================= LECON 3 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 3&nbsp;: Comparer, additionner et soustraire (même dénominateur)</h2>
+<ul>
+<li><b>Même dénominateur</b> : la plus grande est celle qui a le plus <b>grand numérateur</b>&nbsp;: <span class="f"><span>3</span><span>7</span></span>&#8239;&gt;&#8239;<span class="f"><span>2</span><span>7</span></span>.</li>
+<li><b>Même numérateur</b> : plus le dénominateur est grand, plus les parts sont <b>petites</b> ; la plus grande est celle qui a le plus <b>petit dénominateur</b>&nbsp;: <span class="f"><span>1</span><span>3</span></span>&#8239;&gt;&#8239;<span class="f"><span>1</span><span>4</span></span>.</li>
+</ul></div>
+<div class="form">
+  <span class="t">ADDITION ET SOUSTRACTION&nbsp;: MEME DENOMINATEUR</span>
+  <div class="c m"><span class="f"><span><i>a</i></span><span><i>c</i></span></span>&#8239;+&#8239;<span class="f"><span><i>b</i></span><span><i>c</i></span></span>&#8239;=&#8239;<span class="f"><span><i>a</i>&#8239;+&#8239;<i>b</i></span><span><i>c</i></span></span> &nbsp;&nbsp; <span class="f"><span><i>a</i></span><span><i>c</i></span></span>&#8239;&#8722;&#8239;<span class="f"><span><i>b</i></span><span><i>c</i></span></span>&#8239;=&#8239;<span class="f"><span><i>a</i>&#8239;&#8722;&#8239;<i>b</i></span><span><i>c</i></span></span></div>
+</div>
+<p>On opère sur les <b>numérateurs</b>, on <b>garde</b> le dénominateur. Le tout vaut <span class="f"><span><i>c</i></span><span><i>c</i></span></span>&#8239;=&#8239;1 ; le <b>reste</b> s'obtient en soustrayant du tout : <span class="f"><span>7</span><span>7</span></span>&#8239;&#8722;&#8239;<span class="f"><span>5</span><span>7</span></span>&#8239;=&#8239;<span class="f"><span>2</span><span>7</span></span>. On <b>simplifie</b> toujours le résultat si c'est possible.</p>
+</div>
+
+<!-- ================= LECON 4 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 4&nbsp;: Fraction d'un nombre et pourcentages</h2>
+<p>Un <b>pourcentage</b> est une fraction de dénominateur <b>100</b> : 25&#8239;%&#8239;=&#8239;<span class="f"><span>25</span><span>100</span></span>.</p></div>
+<div class="form">
+  <span class="t">A CONNAITRE PAR COEUR</span>
+  <div class="c m">50&#8239;%&#8239;=&#8239;<span class="f"><span>1</span><span>2</span></span> &nbsp; 25&#8239;%&#8239;=&#8239;<span class="f"><span>1</span><span>4</span></span> &nbsp; 20&#8239;%&#8239;=&#8239;<span class="f"><span>1</span><span>5</span></span> &nbsp; 10&#8239;%&#8239;=&#8239;<span class="f"><span>1</span><span>10</span></span> &nbsp; 75&#8239;%&#8239;=&#8239;<span class="f"><span>3</span><span>4</span></span></div>
+  <div class="c m">100&#8239;%&#8239;=&#8239;le tout &nbsp;&nbsp; <i>p</i>&#8239;% d'un nombre&#8239;=&#8239;(nombre&#8239;&#247;&#8239;100)&#8239;&#215;&#8239;<i>p</i></div>
+</div>
+<ul>
+<li><b>Remise</b> de <i>p</i>&#8239;% : prix payé&#8239;=&#8239;prix de départ&#8239;&#8722;&#8239;remise. <b>Hausse</b> de <i>p</i>&#8239;% : nouveau prix&#8239;=&#8239;prix de départ&#8239;+&#8239;hausse.</li>
+<li>Si une partie représente <i>p</i>&#8239;% du tout, le <b>reste</b> représente (100&#8239;&#8722;&#8239;<i>p</i>)&#8239;%.</li>
+<li><b>Retrouver le tout</b> par l'opération inverse : si 25&#8239;% d'une classe font 9 élèves, la classe compte 9&#8239;&#215;&#8239;4&#8239;=&#8239;36 élèves.</li>
+</ul>
+<div class="note">Si le pourcentage est une fraction simple, passe par la fraction : 25&#8239;% de 12&#8239;000&#8239;=&#8239;12&#8239;000&#8239;&#247;&#8239;4.</div>
+</div>
+
+</div>
+
+<div class="bandeau vert">PIEGES ET ERREURS FREQUENTES</div>
+<div class="cols">
+<div class="pg"><div class="err"><span class="x">&#10007;</span> <span class="f"><span>2</span><span>3</span></span> de 24&#8239;=&#8239;24&#8239;&#247;&#8239;2&#8239;&#215;&#8239;3 &nbsp;&middot;&nbsp; <span class="f"><span>1</span><span>3</span></span> de 24&#8239;=&#8239;24&#8239;&#8722;&#8239;3</div><div class="cor"><span class="v">&#10003;</span> On divise par le <b>dénominateur</b>, puis on multiplie par le <b>numérateur</b> : 24&#8239;&#247;&#8239;3&#8239;&#215;&#8239;2&#8239;=&#8239;16. Et « <span class="f"><span>1</span><span>3</span></span> de » veut dire « divisé par 3 » : 24&#8239;&#247;&#8239;3&#8239;=&#8239;8.</div></div>
+<div class="pg"><div class="err"><span class="x">&#10007;</span> <span class="f"><span>1</span><span>3</span></span>&#8239;=&#8239;0,3</div><div class="cor"><span class="v">&#10003;</span> 0,3&#8239;=&#8239;<span class="f"><span>3</span><span>10</span></span>, un peu <b>moins</b> qu'un tiers : le tiers n'a pas d'écriture décimale exacte. En revanche <span class="f"><span>1</span><span>4</span></span>&#8239;=&#8239;0,25.</div></div>
+<div class="pg"><div class="err"><span class="x">&#10007;</span> <span class="f"><span>6</span><span>8</span></span>&#8239;=&#8239;<span class="f"><span>3</span><span>8</span></span> &nbsp;&middot;&nbsp; <span class="f"><span>1</span><span>2</span></span>&#8239;=&#8239;<span class="f"><span>2</span><span>3</span></span></div><div class="cor"><span class="v">&#10003;</span> On agit sur le <b>haut ET le bas</b>, et par multiplication ou division, jamais par addition : <span class="f"><span>6</span><span>8</span></span>&#8239;=&#8239;<span class="f"><span>3</span><span>4</span></span> et <span class="f"><span>1</span><span>2</span></span>&#8239;=&#8239;<span class="f"><span>2</span><span>4</span></span>.</div></div>
+<div class="pg"><div class="err"><span class="x">&#10007;</span> <span class="f"><span>2</span><span>7</span></span>&#8239;+&#8239;<span class="f"><span>3</span><span>7</span></span>&#8239;=&#8239;<span class="f"><span>5</span><span>14</span></span></div><div class="cor"><span class="v">&#10003;</span> On n'additionne <b>pas</b> les dénominateurs : <span class="f"><span>2</span><span>7</span></span>&#8239;+&#8239;<span class="f"><span>3</span><span>7</span></span>&#8239;=&#8239;<span class="f"><span>5</span><span>7</span></span>.</div></div>
+<div class="pg"><div class="err"><span class="x">&#10007;</span> <span class="f"><span>1</span><span>5</span></span>&#8239;&gt;&#8239;<span class="f"><span>1</span><span>3</span></span> parce que 5&#8239;&gt;&#8239;3</div><div class="cor"><span class="v">&#10003;</span> Plus on coupe en parts nombreuses, plus chaque part est <b>petite</b> : <span class="f"><span>1</span><span>5</span></span>&#8239;&lt;&#8239;<span class="f"><span>1</span><span>3</span></span>.</div></div>
+<div class="pg"><div class="err"><span class="x">&#10007;</span> Remise de 25&#8239;% sur 12&#8239;000 FCFA : « je paie 3&#8239;000 » &nbsp;&middot;&nbsp; 100&#8239;%, c'est le double</div><div class="cor"><span class="v">&#10003;</span> 3&#8239;000 FCFA est ce qu'on <b>retire</b> : on paie 12&#8239;000&#8239;&#8722;&#8239;3&#8239;000&#8239;=&#8239;9&#8239;000 FCFA. Et 100&#8239;%, c'est <b>le tout</b>.</div></div>
+
+</div>
+
+<div class="bandeau bleu">A SAVOIR PAR COEUR AVANT LE DEVOIR</div>
+<div class="cols">
+<ol class="recap">
+<li>Dans <span class="f"><span><i>a</i></span><span><i>b</i></span></span> : <i>b</i> dit en combien de parts égales on partage, <i>a</i> dit combien on en prend, et <i>b</i>&#8239;&#8800;&#8239;0.</li>
+<li>Fraction d'un nombre : on <b>divise</b> par le dénominateur, puis on <b>multiplie</b> par le numérateur.</li>
+<li>Fractions égales : on multiplie ou on divise le <b>haut ET le bas</b> par un même nombre non nul ; on simplifie jusqu'à l'<b>irréductible</b>, et on simplifie tout résultat.</li>
+<li>Même dénominateur : le plus grand numérateur gagne. Même numérateur : le plus <b>petit</b> dénominateur gagne.</li>
+<li>Addition et soustraction : on opère sur les <b>numérateurs</b>, on garde le dénominateur ; le tout vaut <span class="f"><span><i>c</i></span><span><i>c</i></span></span>&#8239;=&#8239;1.</li>
+<li>50&#8239;%&#8239;=&#8239;<span class="f"><span>1</span><span>2</span></span>, 25&#8239;%&#8239;=&#8239;<span class="f"><span>1</span><span>4</span></span>, 20&#8239;%&#8239;=&#8239;<span class="f"><span>1</span><span>5</span></span>, 10&#8239;%&#8239;=&#8239;<span class="f"><span>1</span><span>10</span></span> ; <i>p</i>&#8239;% d'un nombre&#8239;=&#8239;(nombre&#8239;&#247;&#8239;100)&#8239;&#215;&#8239;<i>p</i>.</li>
+</ol>
+</div>
+
+</body>
+</html>

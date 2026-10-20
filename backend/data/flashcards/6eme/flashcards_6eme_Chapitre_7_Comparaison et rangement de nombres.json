@@ -1,0 +1,287 @@
+{
+  "niveau": "6ème",
+  "chapitre": "Chapitre 7 : Comparaison et rangement de nombres",
+  "source": "maths/6eme/Chapitre_7_Comparaison_rangement",
+  "nombre_cartes": 31,
+  "cartes": [
+    {
+      "id": "6E-CH07-001",
+      "lecon": "Comparer deux nombres décimaux",
+      "type": "formule",
+      "recto": "Quel effet a l'ajout de zéros tout à la fin de la partie décimale d'un nombre ?",
+      "verso": "Aucun : le nombre ne change pas. Ainsi $2{,}75 = 2{,}750$ et $3{,}5 = 3{,}50$.",
+      "difficulte": 1,
+      "tags": ["decimaux", "ecriture", "zeros"]
+    },
+    {
+      "id": "6E-CH07-002",
+      "lecon": "Comparer deux nombres décimaux",
+      "type": "formule",
+      "recto": "Pourquoi $0{,}5$ n'est-il pas égal à $0{,}05$ ?",
+      "verso": "Parce que ce zéro n'est pas placé à la fin : il décale tous les chiffres d'un rang. On a $0{,}5 = 0{,}50$, qui est dix fois plus grand que $0{,}05$.",
+      "difficulte": 3,
+      "tags": ["decimaux", "zeros", "piege"]
+    },
+    {
+      "id": "6E-CH07-003",
+      "lecon": "Comparer deux nombres décimaux",
+      "type": "definition",
+      "recto": "Comment se lisent les symboles $<$ et $>$ ?",
+      "verso": "$<$ se lit « est inférieur à » et $>$ se lit « est supérieur à ». La pointe du signe est toujours tournée vers le plus petit nombre.",
+      "difficulte": 1,
+      "tags": ["symboles", "comparaison"]
+    },
+    {
+      "id": "6E-CH07-004",
+      "lecon": "Comparer deux nombres décimaux",
+      "type": "definition",
+      "recto": "Comment se lisent les symboles $\\le$ et $\\ge$, et dans quels cas sont-ils vrais ?",
+      "verso": "$\\le$ se lit « est inférieur ou égal à » et $\\ge$ « est supérieur ou égal à ». Ils sont vrais dans deux cas : l'inégalité stricte, comme $3 \\le 5$, et l'égalité, comme $5 \\le 5$.",
+      "difficulte": 2,
+      "tags": ["symboles", "comparaison", "inegalite"]
+    },
+    {
+      "id": "6E-CH07-005",
+      "lecon": "Comparer deux nombres décimaux",
+      "type": "formule",
+      "recto": "Dans quel ordre compare-t-on les rangs de deux nombres décimaux ?",
+      "verso": "On compare d'abord les parties entières ; si elles sont égales, les dixièmes ; puis les centièmes, puis les millièmes, jusqu'à trouver une différence.",
+      "difficulte": 1,
+      "tags": ["comparaison", "regle", "rangs"]
+    },
+    {
+      "id": "6E-CH07-006",
+      "lecon": "Comparer deux nombres décimaux",
+      "type": "formule",
+      "recto": "Que fait-on dès qu'une différence apparaît à un rang pendant une comparaison ?",
+      "verso": "On s'arrête et on conclut, sans lire la suite. Une différence à un rang ne peut plus être rattrapée par les rangs suivants, qui pèsent dix fois moins lourd.",
+      "difficulte": 2,
+      "tags": ["comparaison", "regle"]
+    },
+    {
+      "id": "6E-CH07-007",
+      "lecon": "Comparer deux nombres décimaux",
+      "type": "formule",
+      "recto": "Quelle écriture facilite la comparaison de deux décimaux qui n'ont pas le même nombre de décimales ?",
+      "verso": "On complète le plus court par des zéros à la fin, pour que les deux aient autant de décimales : $2{,}8$ s'écrit $2{,}800$ et se compare alors sans risque à $2{,}750$.",
+      "difficulte": 2,
+      "tags": ["comparaison", "zeros", "astuce"]
+    },
+    {
+      "id": "6E-CH07-008",
+      "lecon": "Comparer deux nombres décimaux",
+      "type": "formule",
+      "recto": "Pourquoi $2{,}750$ n'est-il pas plus grand que $2{,}8$ ?",
+      "verso": "Parce que le nombre de chiffres ne fait pas la grandeur. En écrivant $2{,}800$ et $2{,}750$, on compare $2\\,800$ millièmes à $2\\,750$ millièmes : c'est $2{,}8$ le plus grand.",
+      "difficulte": 3,
+      "tags": ["comparaison", "piege", "decimaux"]
+    },
+    {
+      "id": "6E-CH07-009",
+      "lecon": "Ranger des nombres décimaux",
+      "type": "definition",
+      "recto": "Que veut dire ranger des nombres dans l'ordre croissant ?",
+      "verso": "C'est les écrire du plus petit au plus grand, en les reliant par le signe $<$.",
+      "difficulte": 1,
+      "tags": ["ranger", "ordre-croissant"]
+    },
+    {
+      "id": "6E-CH07-010",
+      "lecon": "Ranger des nombres décimaux",
+      "type": "definition",
+      "recto": "Que veut dire ranger des nombres dans l'ordre décroissant ?",
+      "verso": "C'est les écrire du plus grand au plus petit, en les reliant par le signe $>$.",
+      "difficulte": 1,
+      "tags": ["ranger", "ordre-decroissant"]
+    },
+    {
+      "id": "6E-CH07-011",
+      "lecon": "Ranger des nombres décimaux",
+      "type": "formule",
+      "recto": "Par quel signe relie-t-on deux nombres égaux dans un rangement ?",
+      "verso": "Par le signe $=$. Deux écritures différentes du même nombre se relient ainsi, comme $1{,}1 = 1{,}100$ ou $48{,}3 = 48{,}30$.",
+      "difficulte": 2,
+      "tags": ["ranger", "egalite", "symboles"]
+    },
+    {
+      "id": "6E-CH07-012",
+      "lecon": "Ranger des nombres décimaux",
+      "type": "formule",
+      "recto": "Comment place-t-on un nombre décimal sur une demi-droite graduée ?",
+      "verso": "On choisit une origine, le point $0$, et une unité, puis on partage chaque grand intervalle en $10$ parts égales. Pour $0{,}55$, avec des traits valant $0{,}1$, on se place à mi-chemin entre $0{,}5$ et $0{,}6$.",
+      "difficulte": 2,
+      "tags": ["demi-droite-graduee", "placer"]
+    },
+    {
+      "id": "6E-CH07-013",
+      "lecon": "Ranger des nombres décimaux",
+      "type": "formule",
+      "recto": "Comment lit-on l'ordre de plusieurs nombres placés sur une droite graduée ?",
+      "verso": "De gauche à droite pour l'ordre croissant, de droite à gauche pour l'ordre décroissant. Le plus petit nombre est toujours le plus à gauche.",
+      "difficulte": 2,
+      "tags": ["droite-graduee", "ranger"]
+    },
+    {
+      "id": "6E-CH07-014",
+      "lecon": "Ranger des nombres décimaux",
+      "type": "definition",
+      "recto": "Quelle erreur guette l'élève à qui l'on demande un rangement dans l'ordre croissant ?",
+      "verso": "Livrer la liste à l'envers, donc décroissante. Il faut relire la consigne, puis contrôler que chaque nombre écrit est plus grand que celui qui le précède.",
+      "difficulte": 3,
+      "tags": ["ranger", "piege", "consigne"]
+    },
+    {
+      "id": "6E-CH07-015",
+      "lecon": "Encadrer et intercaler",
+      "type": "definition",
+      "recto": "Que veut dire encadrer un nombre ?",
+      "verso": "C'est l'écrire entre deux valeurs, une plus petite et une plus grande. Par exemple $287 < 287{,}05 < 288$.",
+      "difficulte": 1,
+      "tags": ["encadrer", "definition"]
+    },
+    {
+      "id": "6E-CH07-016",
+      "lecon": "Encadrer et intercaler",
+      "type": "formule",
+      "recto": "Comment encadre-t-on un nombre décimal par deux entiers consécutifs ?",
+      "verso": "La borne du bas est la partie entière du nombre, la borne du haut est cette partie entière augmentée de $1$ : $3 < 3{,}649 < 4$.",
+      "difficulte": 2,
+      "tags": ["encadrer", "entiers-consecutifs"]
+    },
+    {
+      "id": "6E-CH07-017",
+      "lecon": "Encadrer et intercaler",
+      "type": "formule",
+      "recto": "Comment encadre-t-on un nombre au dixième près ?",
+      "verso": "On garde un seul chiffre après la virgule pour la borne du bas, et on prend le dixième suivant pour la borne du haut : $3{,}6 < 3{,}649 < 3{,}7$.",
+      "difficulte": 2,
+      "tags": ["encadrer", "dixieme"]
+    },
+    {
+      "id": "6E-CH07-018",
+      "lecon": "Encadrer et intercaler",
+      "type": "definition",
+      "recto": "Quand dit-on qu'un encadrement est plus serré qu'un autre ?",
+      "verso": "Quand ses deux bornes sont plus proches l'une de l'autre : il renseigne alors plus précisément. Ainsi $3{,}6 < 3{,}649 < 3{,}7$ est plus serré que $3 < 3{,}649 < 4$.",
+      "difficulte": 2,
+      "tags": ["encadrer", "precision"]
+    },
+    {
+      "id": "6E-CH07-019",
+      "lecon": "Encadrer et intercaler",
+      "type": "definition",
+      "recto": "Que veut dire intercaler un nombre ?",
+      "verso": "C'est trouver un nombre compris entre deux autres. Entre $5{,}2$ et $5{,}3$, on peut intercaler $5{,}25$, $5{,}27$ ou $5{,}21$.",
+      "difficulte": 1,
+      "tags": ["intercaler", "definition"]
+    },
+    {
+      "id": "6E-CH07-020",
+      "lecon": "Encadrer et intercaler",
+      "type": "formule",
+      "recto": "Combien de décimaux peut-on intercaler entre deux nombres décimaux ?",
+      "verso": "Une infinité. Il suffit d'ajouter un chiffre après la virgule : entre $0{,}05$ et $0{,}06$, on trouve par exemple $0{,}055$.",
+      "difficulte": 2,
+      "tags": ["intercaler", "infinite"]
+    },
+    {
+      "id": "6E-CH07-021",
+      "lecon": "Encadrer et intercaler",
+      "type": "formule",
+      "recto": "Combien d'entiers trouve-t-on entre deux nombres décimaux ?",
+      "verso": "Un nombre fini, parfois aucun. Entre $25{,}4$ et $29{,}17$ il y a $26$, $27$, $28$ et $29$, soit quatre entiers ; entre $4$ et $5$ il n'y en a aucun.",
+      "difficulte": 2,
+      "tags": ["intercaler", "entiers"]
+    },
+    {
+      "id": "6E-CH07-022",
+      "lecon": "Encadrer et intercaler",
+      "type": "definition",
+      "recto": "Quelle confusion guette l'élève qui affirme qu'il n'y a rien entre $0{,}2$ et $0{,}3$ ?",
+      "verso": "Il confond « aucun entier », qui est vrai, avec « aucun nombre », qui est faux : $0{,}25$, $0{,}21$ et $0{,}29$ sont tous compris entre $0{,}2$ et $0{,}3$.",
+      "difficulte": 3,
+      "tags": ["intercaler", "piege", "entiers"]
+    },
+    {
+      "id": "6E-CH07-023",
+      "lecon": "Encadrer et intercaler",
+      "type": "definition",
+      "recto": "En quoi encadrer et intercaler sont-ils deux gestes inverses l'un de l'autre ?",
+      "verso": "Encadrer part d'un nombre et cherche deux bornes autour de lui. Intercaler part de deux bornes et cherche un nombre placé entre elles.",
+      "difficulte": 2,
+      "tags": ["encadrer", "intercaler", "distinction"]
+    },
+    {
+      "id": "6E-CH07-024",
+      "lecon": "Donner une valeur approchée",
+      "type": "definition",
+      "recto": "Que veut dire donner une valeur approchée d'un nombre ?",
+      "verso": "C'est le remplacer par un nombre proche et plus simple, quand on n'a pas besoin de toutes ses décimales.",
+      "difficulte": 1,
+      "tags": ["valeur-approchee", "definition"]
+    },
+    {
+      "id": "6E-CH07-025",
+      "lecon": "Donner une valeur approchée",
+      "type": "definition",
+      "recto": "Qu'est-ce qu'une valeur approchée par défaut ?",
+      "verso": "C'est la valeur juste en dessous du nombre : on coupe tout ce qui suit le rang gardé. Au dixième, la valeur par défaut de $15{,}847$ est $15{,}8$.",
+      "difficulte": 2,
+      "tags": ["valeur-approchee", "par-defaut"]
+    },
+    {
+      "id": "6E-CH07-026",
+      "lecon": "Donner une valeur approchée",
+      "type": "definition",
+      "recto": "Qu'est-ce qu'une valeur approchée par excès ?",
+      "verso": "C'est la valeur juste au-dessus du nombre : on ajoute $1$ au dernier chiffre gardé. Au dixième, la valeur par excès de $15{,}847$ est $15{,}9$.",
+      "difficulte": 2,
+      "tags": ["valeur-approchee", "par-exces"]
+    },
+    {
+      "id": "6E-CH07-027",
+      "lecon": "Donner une valeur approchée",
+      "type": "formule",
+      "recto": "Où se situe le nombre exact par rapport à ses deux valeurs approchées ?",
+      "verso": "Toujours entre les deux : $15{,}8 < 15{,}847 < 15{,}9$. Une valeur approchée est donc, elle aussi, une histoire d'encadrement.",
+      "difficulte": 2,
+      "tags": ["valeur-approchee", "encadrement"]
+    },
+    {
+      "id": "6E-CH07-028",
+      "lecon": "Donner une valeur approchée",
+      "type": "formule",
+      "recto": "A quels rangs peut-on donner une valeur approchée d'un nombre ?",
+      "verso": "A n'importe quel rang : au dixième, au centième, au millième, mais aussi à l'unité, à la dizaine ou au millier. Au millier, $43\\,728$ donne $43\\,000$ par défaut et $44\\,000$ par excès.",
+      "difficulte": 2,
+      "tags": ["valeur-approchee", "rangs"]
+    },
+    {
+      "id": "6E-CH07-029",
+      "lecon": "Donner une valeur approchée",
+      "type": "formule",
+      "recto": "Comment sait-on laquelle des deux valeurs approchées est la plus proche du nombre exact ?",
+      "verso": "On calcule les deux écarts et on garde le plus petit. Pour $2\\,847{,}367$, l'écart à $2\\,847$ vaut $0{,}367$ et l'écart à $2\\,848$ vaut $0{,}633$ : c'est $2\\,847$ le plus proche.",
+      "difficulte": 2,
+      "tags": ["valeur-approchee", "ecart", "comparaison"]
+    },
+    {
+      "id": "6E-CH07-030",
+      "lecon": "Donner une valeur approchée",
+      "type": "definition",
+      "recto": "Qu'est-ce qu'un ordre de grandeur ?",
+      "verso": "C'est une valeur approchée très simple qui permet de vérifier un calcul. Ainsi $49 \\times 5{,}1$ a pour ordre de grandeur $50 \\times 5 = 250$.",
+      "difficulte": 2,
+      "tags": ["ordre-de-grandeur", "controle"]
+    },
+    {
+      "id": "6E-CH07-031",
+      "lecon": "Donner une valeur approchée",
+      "type": "definition",
+      "recto": "Pourquoi la valeur par défaut et la valeur par excès ne sont-elles jamais égales ?",
+      "verso": "Parce que l'une est prise en dessous du nombre et l'autre au-dessus. Elles ne coïncident que si le nombre tombe pile sur la graduation. Au dixième, $8{,}74$ donne $8{,}7$ par défaut et $8{,}8$ par excès.",
+      "difficulte": 3,
+      "tags": ["valeur-approchee", "piege"]
+    }
+  ]
+}

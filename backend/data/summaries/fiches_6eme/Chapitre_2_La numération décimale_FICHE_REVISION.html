@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Fiche de revision - 6eme - Chapitre 2 : La numeration decimale</title>
+<style>
+/* ===================================================================
+   FICHE DE REVISION, Collection Hakili Lab, Edition 2026
+   Feuille de style autonome, format A4 pret a imprimer.
+   Bleu #005CB9 · Vert #49A145
+   =================================================================== */
+:root{
+  --bleu:#005CB9; --bleu-fonce:#00429A; --bleu-pale:#E8F1FB; --bleu-bord:#B7D2EE;
+  --vert:#49A145; --vert-fonce:#2F7A2C; --vert-pale:#EDF7EC; --vert-bord:#BCE0B9;
+  --gris:#4A4A4A; --gris-clair:#E4E4E4; --rouge:#B3261E;
+}
+@page{
+  size:A4; margin:15mm;
+  @bottom-center{
+    content:"Collection Hakili Lab, Edition 2026  ·  Fiche de revision  ·  " counter(page) "/" counter(pages);
+    font-family:"Segoe UI",Calibri,Arial,sans-serif; font-size:6.6pt; color:#8A8A8A;
+  }
+}
+*{box-sizing:border-box;}
+body{
+  margin:0; font-family:"Segoe UI",Calibri,Arial,sans-serif;
+  font-size:8.4pt; line-height:1.26; color:#1B1B1B;
+}
+p{margin:0 0 3pt;}
+ul{margin:0 0 3pt; padding-left:11pt;}
+li{margin:0 0 1.2pt;}
+b,strong{color:var(--bleu-fonce);}
+
+/* ------------------------------ ENTETE ---------------------------- */
+.entete{
+  display:flex; align-items:stretch; border:1.6pt solid var(--bleu);
+  border-radius:2.5pt; overflow:hidden; margin-bottom:6pt;
+}
+.entete .num{
+  background:var(--bleu); color:#fff; font-size:20pt; font-weight:700;
+  padding:0 8pt; display:flex; align-items:center; justify-content:center; min-width:34pt;
+}
+.entete .txt{padding:3.5pt 8pt; flex:1;}
+.entete .niveau{
+  font-size:7pt; font-weight:700; letter-spacing:.9pt; color:var(--vert-fonce);
+}
+.entete h1{margin:0; font-size:13.5pt; line-height:1.12; color:var(--bleu-fonce); font-weight:700;}
+.entete .sous{font-size:7pt; color:var(--gris); margin-top:1pt;}
+
+/* --------------------------- BANDEAUX ----------------------------- */
+.bandeau{
+  color:#fff; font-weight:700; font-size:9pt; letter-spacing:1pt;
+  padding:2.4pt 7pt; border-radius:2pt; margin:3pt 0 4pt; break-after:avoid; page-break-after:avoid;
+}
+.bandeau.bleu{background:var(--bleu);}
+.bandeau.vert{background:var(--vert);}
+
+/* --------------------------- COLONNES ----------------------------- */
+.cols{column-count:2; column-gap:7mm; column-fill:balance;}
+
+.cols.bal{column-fill:balance;}
+.bloc{margin-bottom:5pt;}
+.keep{break-inside:avoid; page-break-inside:avoid;}
+
+/* --------------------------- LECONS ------------------------------- */
+h2.lecon{
+  margin:0 0 3pt; font-size:8.6pt; font-weight:700; color:#fff; background:var(--bleu-fonce);
+  padding:1.8pt 5pt; border-radius:1.5pt; break-after:avoid; page-break-after:avoid;
+}
+h3.rub{
+  margin:3.5pt 0 1.5pt; font-size:8.2pt; font-weight:700; color:var(--vert-fonce);
+  border-bottom:.7pt solid var(--vert-bord); padding-bottom:.8pt;
+  break-after:avoid; page-break-after:avoid;
+}
+
+/* --------------------------- ENCADRES ----------------------------- */
+.form{
+  background:var(--bleu-pale); border:.8pt solid var(--bleu-bord); border-left:2.6pt solid var(--bleu);
+  border-radius:2pt; padding:2.4pt 5pt; margin:2.2pt 0 3.4pt;
+  break-inside:avoid; page-break-inside:avoid;
+}
+.form .t{
+  display:block; font-size:6.8pt; font-weight:700; letter-spacing:.6pt;
+  color:var(--bleu); margin-bottom:1.5pt;
+}
+.form .c{text-align:center; font-size:9.1pt; margin:1.6pt 0;}
+.note{background:var(--vert-pale); border-left:2.4pt solid var(--vert); padding:2.4pt 5pt; border-radius:1.5pt; margin:2.5pt 0 4pt; break-inside:avoid;}
+
+/* --------------------------- TABLEAUX ----------------------------- */
+table{width:100%; border-collapse:collapse; font-size:7.6pt; margin:2pt 0 4pt; break-inside:avoid;}
+th{background:var(--bleu); color:#fff; font-weight:700; text-align:left; padding:1.8pt 4pt; font-size:7.2pt;}
+td{border:.6pt solid var(--gris-clair); padding:1.8pt 4pt; vertical-align:top;}
+tr{break-inside:avoid;}
+table.var td{text-align:center; font-size:8pt;}
+table.var td.lab{text-align:left; font-weight:700; color:var(--bleu-fonce); background:var(--bleu-pale);}
+
+/* ----------------------------- PIEGES ----------------------------- */
+table.pieges th:first-child{width:44%;}
+table.pieges td:first-child{color:var(--rouge); background:#FDF1F0;}
+.x{font-weight:700;}
+.v{color:var(--vert-fonce); font-weight:700;}
+
+/* ---------------------------- RECAP ------------------------------- */
+ol.recap{margin:0; padding-left:0; list-style:none; counter-reset:r;}
+ol.recap li{
+  counter-increment:r; position:relative; padding-left:13pt; margin-bottom:1.8pt;
+  break-inside:avoid;
+}
+ol.recap li::before{
+  content:counter(r); position:absolute; left:0; top:.3pt;
+  width:10pt; height:10pt; border-radius:50%; background:var(--vert); color:#fff;
+  font-size:6.6pt; font-weight:700; text-align:center; line-height:10pt;
+}
+
+/* --------------------------- MATHS -------------------------------- */
+.m{font-family:Cambria,Georgia,"Times New Roman",serif;}
+i,var{font-family:Cambria,Georgia,"Times New Roman",serif; font-style:italic;}
+.op{font-family:Cambria,Georgia,"Times New Roman",serif; font-style:normal;}
+.f{display:inline-block; vertical-align:middle; text-align:center;
+   margin:0 .12em; line-height:1.06; font-family:Cambria,Georgia,"Times New Roman",serif;}
+.f>span{display:block; padding:0 .2em;}
+.f>span:first-child{border-bottom:.6pt solid currentColor; padding-bottom:.08em;}
+.f>span:last-child{padding-top:.04em;}
+.rad{border-top:.6pt solid currentColor; padding-top:.12em;}
+/* line-height:0 evite que l'exposant n'ecarte les lignes ; position:relative le
+   repositionne sans qu'il heurte la barre de fraction ni le trait du radical. */
+sup,sub{font-size:.68em; line-height:0; position:relative; vertical-align:baseline;}
+sup{top:-.42em;}
+sub{bottom:-.22em;}
+.pt{white-space:nowrap;}
+/* Les fleches n'ont qu'un glyphe atrophie dans la fonte serif : on les force
+   en sans-serif, ou elles sont franches meme a 8 pt. */
+.ar{font-family:"Segoe UI",Calibri,Arial,"DejaVu Sans",sans-serif; font-style:normal;}
+
+/* ------------------- PIEGES : blocs erreur / correction ------------- */
+.pg{font-size:8.1pt; border-left:2.4pt solid var(--rouge); background:#FDF1F0; border-radius:1.5pt;
+    padding:2pt 5pt; margin:0 0 2.8pt; break-inside:avoid; page-break-inside:avoid;}
+.pg .err{color:var(--rouge); font-weight:600;}
+.pg .cor{color:#1B1B1B; margin-top:.8pt;}
+.pg .cor b{color:var(--bleu-fonce);}
+.v{color:var(--vert-fonce); font-weight:700;}
+
+</style>
+</head>
+<body>
+<header class="entete">
+  <div class="num">2</div>
+  <div class="txt">
+    <div class="niveau">6EME &middot; MATHEMATIQUES</div>
+    <h1>La numération décimale</h1>
+    <div class="sous">Leçon 1 : chiffres, nombres et numération de position &middot; Leçon 2 : partie entière et partie décimale &middot; Leçon 3 : lire, écrire et décomposer &middot; Leçon 4 : les ensembles &#8469; et 𝔻 ; comparer, ranger, encadrer</div>
+  </div>
+</header>
+
+<div class="bandeau bleu" style="margin-top:0">L'ESSENTIEL</div>
+<div class="cols">
+
+<!-- ================= LECON 1 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 1&nbsp;: Chiffres, nombres et numération de position</h2>
+<p>Un <b>chiffre</b> est un signe qui sert à écrire les nombres. Il y en a <b>dix</b> : 0, 1, 2, 3, 4, 5, 6, 7, 8, 9. Un <b>nombre</b> est une quantité ; il s'écrit avec un ou plusieurs chiffres.</p></div>
+<p><b>Numération de position.</b> Dans un nombre, <b>la place d'un chiffre indique sa valeur</b>. Les rangs se lisent <b>de droite à gauche</b> : unités, dizaines, centaines, unités de mille (ou milliers).</p>
+<div class="form">
+  <span class="t">LES RANGS DE LA PARTIE ENTIERE</span>
+  <div class="c m">1 dizaine&#8239;=&#8239;10 unités</div>
+  <div class="c m">1 centaine&#8239;=&#8239;10 dizaines&#8239;=&#8239;100 unités</div>
+  <div class="c m">1 millier&#8239;=&#8239;10 centaines&#8239;=&#8239;1&#8239;000 unités</div>
+</div>
+<p><b>Les classes.</b> Pour lire les grands nombres, on regroupe les rangs <b>trois par trois</b> : classe des unités (unités, dizaines, centaines), puis classe des mille (unités, dizaines et centaines de mille). On laisse une petite espace entre deux classes : on écrit 24&#8239;507 et non 24507.</p>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Le rôle du zéro</h3>
+<p>Le <b>0</b> marque un <b>rang vide</b> : il garde la place. Dans 207, il dit qu'il n'y a aucune dizaine ; sans lui on écrirait 27, un nombre tout différent.</p>
+<h3 class="rub">Chiffre des … et nombre de …</h3>
+<div class="form">
+  <span class="t">VALEUR D'UN CHIFFRE SELON SA PLACE</span>
+  <div class="c m">valeur&#8239;=&#8239;chiffre&#8239;&#215;&#8239;valeur de sa place</div>
+  <div class="c m">dans 2&#8239;845, le 8 vaut 8&#8239;&#215;&#8239;100&#8239;=&#8239;800</div>
+  <div class="c m"><b>chiffre</b> des centaines&#8239;=&#8239;8 &nbsp;&middot;&nbsp; <b>nombre</b> de centaines&#8239;=&#8239;28</div>
+</div>
+<p>Car 2&#8239;845&#8239;=&#8239;28 centaines&#8239;+&#8239;45 : « chiffre des » et « nombre de » ne veulent pas dire la même chose.</p>
+</div>
+
+<!-- ================= LECON 2 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 2&nbsp;: Partie entière et partie décimale</h2>
+<p>Un <b>nombre décimal</b> est formé d'une <b>partie entière</b> et d'une <b>partie décimale</b>, séparées par la <b>virgule décimale</b> : dans 3,75 la partie entière est 3 et la partie décimale est 75. Un <b>entier</b> est un décimal dont la partie décimale est nulle : 4&#8239;=&#8239;4,0.</p></div>
+<p><b>Les rangs après la virgule.</b> On continue à diviser par dix : le <b>dixième</b> (1<sup>er</sup> rang après la virgule), le <b>centième</b> (2<sup>e</sup> rang), le <b>millième</b> (3<sup>e</sup> rang).</p>
+<div class="form">
+  <span class="t">LE TABLEAU DE NUMERATION</span>
+  <div class="c m">milliers &middot; centaines &middot; dizaines &middot; <b>unités&#8239;,</b></div>
+  <div class="c m">dixièmes &middot; centièmes &middot; millièmes</div>
+</div>
+<p>Vers la gauche, on multiplie par 10 à chaque rang ; vers la droite, on divise par 10. La virgule n'est pas une frontière : c'est un repère placé juste après la colonne des <b>unités</b>.</p>
+</div>
+
+<div class="bloc">
+<div class="form">
+  <span class="t">EGALITES ENTRE LES RANGS</span>
+  <div class="c m">1 unité&#8239;=&#8239;10 dixièmes&#8239;=&#8239;100 centièmes&#8239;=&#8239;1&#8239;000 millièmes</div>
+  <div class="c m">1 dixième&#8239;=&#8239;10 centièmes &nbsp;&middot;&nbsp; 1 centième&#8239;=&#8239;10 millièmes</div>
+</div>
+<p><b>Les zéros inutiles.</b> On peut ajouter ou enlever des zéros <b>à la fin</b> de la partie décimale sans changer le nombre : 2,5&#8239;=&#8239;2,50&#8239;=&#8239;2,500.</p>
+<div class="note">On ne touche <b>jamais</b> à un zéro placé entre la virgule et un autre chiffre : 2,05 n'est pas égal à 2,5.</div>
+</div>
+
+<!-- ================= LECON 3 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 3&nbsp;: Lire, écrire et décomposer un décimal</h2>
+<p><b>Lire.</b> On lit la <b>partie entière</b>, puis « virgule », puis la <b>partie décimale</b> ; on peut aussi nommer le rang : 12,5 se lit « douze virgule cinq » ou « douze unités et cinq dixièmes ».</p></div>
+<p><b>Décomposer</b> un nombre, c'est l'écrire comme une <b>somme</b> qui montre la valeur de chaque chiffre.</p>
+<div class="form">
+  <span class="t">DECOMPOSER 274,6</span>
+  <div class="c m">274,6&#8239;=&#8239;(2&#8239;&#215;&#8239;100)&#8239;+&#8239;(7&#8239;&#215;&#8239;10)&#8239;+&#8239;(4&#8239;&#215;&#8239;1)&#8239;+&#8239;(6&#8239;&#215;&#8239;un dixième)</div>
+  <div class="c m">274,6&#8239;=&#8239;274&#8239;+&#8239;6 dixièmes</div>
+</div>
+<p><b>Ecrire un décimal à partir de sa décomposition.</b> On replace chaque chiffre dans la colonne de son rang, on met un <b>0</b> dans toute colonne vide, puis on lit le nombre : (3&#8239;&#215;&#8239;10)&#8239;+&#8239;(5&#8239;&#215;&#8239;1)&#8239;+&#8239;(8&#8239;&#215;&#8239;un centième)&#8239;=&#8239;35,08.</p>
+<div class="note"><b>Contrôle.</b> En additionnant tous les morceaux d'une décomposition, on doit retrouver exactement le nombre de départ.</div>
+<p><b>Les mots.</b> Le trait d'union relie les mots d'un même nombre : quatre-vingt-dix, soixante-dix. « Cent » s'écrit sans s devant un autre nombre (deux cent cinq) et avec un s quand il termine le nombre (deux cents).</p>
+</div>
+
+<!-- ================= LECON 4 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 4&nbsp;: Les ensembles &#8469; et 𝔻 : comparer, ranger, encadrer</h2>
+<ul>
+<li><b>&#8469;</b> est l'ensemble des <b>entiers naturels</b> : 0, 1, 2, 3, 4, … (les nombres pour compter).</li>
+<li><b>𝔻</b> est l'ensemble des <b>nombres décimaux</b> : tous ceux qui s'écrivent avec une virgule, et aussi les entiers.</li>
+</ul></div>
+<div class="form">
+  <span class="t">TOUT ENTIER EST UN DECIMAL</span>
+  <div class="c m">&#8469;&#8239;&#8834;&#8239;𝔻 &nbsp;(&#8469; est inclus dans 𝔻)</div>
+  <div class="c m">7&#8239;&#8712;&#8239;&#8469; et 7&#8239;&#8712;&#8239;𝔻 &nbsp;&middot;&nbsp; 3,5&#8239;&#8712;&#8239;𝔻 mais 3,5 n'est pas dans &#8469;</div>
+</div>
+</div>
+
+<div class="bloc">
+<h3 class="rub">La demi-droite graduée</h3>
+<p>On choisit une <b>origine</b> (le 0) et une <b>unité de longueur</b>, que l'on reporte régulièrement. En partageant chaque unité en 10, on place les <b>dixièmes</b> ; en partageant chaque dixième en 10, les <b>centièmes</b>. Le nombre associé à un point est son <b>abscisse</b> : plus un nombre est grand, plus il est <b>loin de l'origine</b>.</p>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Comparer et ranger</h3>
+<ul>
+<li>On compare d'abord les <b>parties entières</b> : celui dont la partie entière est la plus grande est <b>supérieur à</b> l'autre.</li>
+<li>Si elles sont <b>égales</b>, on compare rang par rang : les <b>dixièmes</b>, puis les <b>centièmes</b>, puis les <b>millièmes</b>.</li>
+</ul>
+<p><b>Astuce.</b> On complète par des zéros à la fin pour avoir autant de décimales : 12,8&#8239;=&#8239;12,80, à comparer avec 12,75.</p>
+<p><b>Vocabulaire.</b> Deux nombres sont <b>égaux</b>, ou bien l'un est <b>supérieur à</b> (plus grand que) l'autre, ou <b>inférieur à</b> (plus petit que) l'autre.</p>
+<p><b>Ranger.</b> Ordre <b>croissant</b> : du plus petit au plus grand. Ordre <b>décroissant</b> : du plus grand au plus petit.</p>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Encadrer</h3>
+<p><b>Encadrer</b> un nombre, c'est donner deux nombres, l'un plus petit et l'autre plus grand, qui l'entourent <b>au plus près</b>.</p>
+<div class="form">
+  <span class="t">ENCADRER 12,75</span>
+  <div class="c m">12&#8239;&lt;&#8239;12,75&#8239;&lt;&#8239;13 &nbsp;(par les entiers)</div>
+  <div class="c m">12,7&#8239;&lt;&#8239;12,75&#8239;&lt;&#8239;12,8 &nbsp;(par les dixièmes)</div>
+</div>
+<p>Entre deux décimaux, on peut toujours en trouver un troisième : entre 3,4 et 3,5 se placent 3,41 ; 3,42 ; et bien d'autres.</p>
+</div>
+
+</div>
+
+<div class="bandeau vert">PIEGES ET ERREURS FREQUENTES</div>
+<div class="cols">
+<div class="pg"><div class="err"><span class="x">&#10007;</span> 2&#8239;407 se lit « deux cent quarante-sept »</div><div class="cor"><span class="v">&#10003;</span> Le 0 occupe le rang des dizaines et ne se saute pas : 2&#8239;407&#8239;=&#8239;2 milliers 4 centaines 7 unités, « deux mille quatre cent sept ».</div></div>
+<div class="pg"><div class="err"><span class="x">&#10007;</span> 12,5&#8239;&lt;&#8239;12,45 parce que 45 est plus grand que 5</div><div class="cor"><span class="v">&#10003;</span> On compare rang par rang, pas la longueur : les parties entières sont égales, et aux dixièmes 5&#8239;&gt;&#8239;4, donc 12,5&#8239;&gt;&#8239;12,45.</div></div>
+<div class="pg"><div class="err"><span class="x">&#10007;</span> « 3,7&#8239;=&#8239;3,70 est faux, car 70 n'est pas 7 » &nbsp;&middot;&nbsp; 2,05&#8239;=&#8239;2,5</div><div class="cor"><span class="v">&#10003;</span> Un zéro écrit tout <b>à la fin</b> annonce « aucun centième » : 3,7&#8239;=&#8239;3,70&#8239;=&#8239;3,700. Mais le zéro placé <b>entre</b> la virgule et un chiffre compte : 2,05 est 2 unités et 5 centièmes, ce n'est pas 2,5.</div></div>
+<div class="pg"><div class="err"><span class="x">&#10007;</span> Le nombre de centaines de 2&#8239;845 est 8</div><div class="cor"><span class="v">&#10003;</span> 8 est le <b>chiffre</b> des centaines. Le <b>nombre</b> de centaines est 28, car 2&#8239;845&#8239;=&#8239;28 centaines&#8239;+&#8239;45.</div></div>
+<div class="pg"><div class="err"><span class="x">&#10007;</span> (3&#8239;&#215;&#8239;10)&#8239;+&#8239;(5&#8239;&#215;&#8239;1)&#8239;+&#8239;(8&#8239;&#215;&#8239;un centième)&#8239;=&#8239;35,8</div><div class="cor"><span class="v">&#10003;</span> Le rang des dixièmes est vide : on y écrit un <b>0</b>. Le résultat est 35,08.</div></div>
+<div class="pg"><div class="err"><span class="x">&#10007;</span> 7 n'est pas un décimal, il n'a pas de virgule</div><div class="cor"><span class="v">&#10003;</span> 7&#8239;=&#8239;7,0 : sa partie décimale existe, elle est nulle. Tout entier est un décimal, donc &#8469;&#8239;&#8834;&#8239;𝔻 ; l'inverse est faux, car 3,5 n'est pas un entier.</div></div>
+<div class="pg"><div class="err"><span class="x">&#10007;</span> Entre 3,4 et 3,5, il n'y a aucun nombre</div><div class="cor"><span class="v">&#10003;</span> Entre deux décimaux, on en trouve toujours d'autres : 3,41 ; 3,42 ; … Encadrer, c'est donner les deux voisins les plus proches : 12,7&#8239;&lt;&#8239;12,75&#8239;&lt;&#8239;12,8.</div></div>
+
+</div>
+
+<div class="bandeau bleu">A SAVOIR PAR COEUR AVANT LE DEVOIR</div>
+<div class="cols">
+<ol class="recap">
+<li>Dix chiffres (0 à 9) suffisent à écrire tous les nombres, et <b>la place d'un chiffre donne sa valeur</b> : dans 2&#8239;845, le 8 vaut 800.</li>
+<li><b>Chiffre des</b> centaines de 2&#8239;845&#8239;=&#8239;8 ; <b>nombre de</b> centaines&#8239;=&#8239;28. Le <b>0</b> garde la place d'un rang vide : 207 n'est pas 27.</li>
+<li>Les rangs, de gauche à droite : milliers, centaines, dizaines, unités, <b>virgule</b>, dixièmes, centièmes, millièmes.</li>
+<li>1 unité&#8239;=&#8239;10 dixièmes&#8239;=&#8239;100 centièmes&#8239;=&#8239;1&#8239;000 millièmes ; 1 dixième&#8239;=&#8239;10 centièmes.</li>
+<li>Zéros <b>à la fin</b> de la partie décimale : on les ajoute ou on les enlève (2,5&#8239;=&#8239;2,50). Zéro <b>entre</b> la virgule et un chiffre : jamais (2,05 n'est pas 2,5).</li>
+<li>Décomposer, c'est écrire la somme des valeurs de chaque chiffre ; toute colonne vide entre deux chiffres reçoit un <b>0</b>.</li>
+<li>&#8469;&#8239;&#8834;&#8239;𝔻 : tout entier est un décimal (4&#8239;=&#8239;4,0), mais 3,5 n'est pas un entier naturel.</li>
+<li>Comparer : d'abord les <b>parties entières</b>, puis rang par rang après la virgule. Croissant&#8239;=&#8239;du plus petit au plus grand ; encadrer&#8239;=&#8239;donner les deux voisins.</li>
+</ol>
+</div>
+
+</body>
+</html>

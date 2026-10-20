@@ -1,0 +1,85 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+venv/
+env/
+ENV/
+.venv
+
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+dist/
+dist-ssr/
+*.local
+
+# Environment
+.env
+.env.local
+.env.*.local
+# Sauvegardes ponctuelles d'un .env (ex: avant un nettoyage de variables) : mêmes secrets, mais
+# un nom horodaté ("*.env.bak-20260902...") ne matche aucun des motifs ci-dessus et se
+# retrouverait suivi par erreur au premier `git add` large si on oubliait de le supprimer.
+.env.bak*
+*.env.bak*
+
+# Secrets génériques (clés privées, certificats) : rien de tel n'est censé exister dans ce repo,
+# mais autant s'en prémunir plutôt que de compter sur la vigilance à chaque commit.
+*.pem
+*.key
+id_rsa*
+*.p12
+*.pfx
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Data : documents de cours volontairement suivis par Git dans ce projet (pas de stockage objet
+# séparé) — le Dockerfile de déploiement les embarque tels quels, voir DEPLOY.md.
+
+# Embeddings : stockés à part sur Postgres/pgvector (Neon, voir DATABASE_URL dans DEPLOY.md), plus
+# embarqués dans le déploiement. Ancien dossier ChromaDB local, obsolète, ignoré si encore présent.
+backend/data/chroma_db/
+
+# Comptes élèves : base SQLite (mots de passe hashés) et secret de signature JWT
+backend/data/app.db
+backend/data/.jwt_secret
+
+# Build frontend copié à côté du backend pour les déploiements "tout-en-un" (voir main.py) :
+# généré via `npm run build`, jamais commité (comme frontend/dist, déjà ignoré ci-dessus).
+backend/frontend_dist/
+
+# Cache local du modèle d'embeddings (voir EMBED_CACHE_DIR dans rag_system.py) : régénéré par
+# le Dockerfile au build, ou au premier lancement local — jamais commité (fichiers binaires lourds).
+backend/hf_cache/
+
+# Logs
+*.log

@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Fiche de revision - 1ere D - Chapitre 12 : LES STATISTIQUES</title>
+<style>
+/* ===================================================================
+   FICHE DE REVISION, Collection Hakili Lab, Edition 2026
+   Feuille de style autonome, format A4 pret a imprimer.
+   Bleu #005CB9 · Vert #49A145
+   =================================================================== */
+:root{
+  --bleu:#005CB9; --bleu-fonce:#00429A; --bleu-pale:#E8F1FB; --bleu-bord:#B7D2EE;
+  --vert:#49A145; --vert-fonce:#2F7A2C; --vert-pale:#EDF7EC; --vert-bord:#BCE0B9;
+  --gris:#4A4A4A; --gris-clair:#E4E4E4; --rouge:#B3261E;
+}
+@page{
+  size:A4; margin:15mm;
+  @bottom-center{
+    content:"Collection Hakili Lab, Edition 2026  ·  Fiche de revision  ·  " counter(page) "/" counter(pages);
+    font-family:"Segoe UI",Calibri,Arial,sans-serif; font-size:6.6pt; color:#8A8A8A;
+  }
+}
+*{box-sizing:border-box;}
+body{
+  margin:0; font-family:"Segoe UI",Calibri,Arial,sans-serif;
+  font-size:8.4pt; line-height:1.26; color:#1B1B1B;
+}
+p{margin:0 0 3pt;}
+ul{margin:0 0 3pt; padding-left:11pt;}
+li{margin:0 0 1.2pt;}
+b,strong{color:var(--bleu-fonce);}
+
+/* ------------------------------ ENTETE ---------------------------- */
+.entete{
+  display:flex; align-items:stretch; border:1.6pt solid var(--bleu);
+  border-radius:2.5pt; overflow:hidden; margin-bottom:6pt;
+}
+.entete .num{
+  background:var(--bleu); color:#fff; font-size:20pt; font-weight:700;
+  padding:0 8pt; display:flex; align-items:center; justify-content:center; min-width:34pt;
+}
+.entete .txt{padding:3.5pt 8pt; flex:1;}
+.entete .niveau{
+  font-size:7pt; font-weight:700; letter-spacing:.9pt; color:var(--vert-fonce);
+}
+.entete h1{margin:0; font-size:13.5pt; line-height:1.12; color:var(--bleu-fonce); font-weight:700;}
+.entete .sous{font-size:7pt; color:var(--gris); margin-top:1pt;}
+
+/* --------------------------- BANDEAUX ----------------------------- */
+.bandeau{
+  color:#fff; font-weight:700; font-size:9pt; letter-spacing:1pt;
+  padding:2.4pt 7pt; border-radius:2pt; margin:3pt 0 4pt; break-after:avoid; page-break-after:avoid;
+}
+.bandeau.bleu{background:var(--bleu);}
+.bandeau.vert{background:var(--vert);}
+
+/* --------------------------- COLONNES ----------------------------- */
+.cols{column-count:2; column-gap:7mm; column-fill:balance;}
+
+.cols.bal{column-fill:balance;}
+.bloc{margin-bottom:5pt;}
+.keep{break-inside:avoid; page-break-inside:avoid;}
+
+/* --------------------------- LECONS ------------------------------- */
+h2.lecon{
+  margin:0 0 3pt; font-size:8.6pt; font-weight:700; color:#fff; background:var(--bleu-fonce);
+  padding:1.8pt 5pt; border-radius:1.5pt; break-after:avoid; page-break-after:avoid;
+}
+h3.rub{
+  margin:3.5pt 0 1.5pt; font-size:8.2pt; font-weight:700; color:var(--vert-fonce);
+  border-bottom:.7pt solid var(--vert-bord); padding-bottom:.8pt;
+  break-after:avoid; page-break-after:avoid;
+}
+
+/* --------------------------- ENCADRES ----------------------------- */
+.form{
+  background:var(--bleu-pale); border:.8pt solid var(--bleu-bord); border-left:2.6pt solid var(--bleu);
+  border-radius:2pt; padding:2.4pt 5pt; margin:2.2pt 0 3.4pt;
+  break-inside:avoid; page-break-inside:avoid;
+}
+.form .t{
+  display:block; font-size:6.8pt; font-weight:700; letter-spacing:.6pt;
+  color:var(--bleu); margin-bottom:1.5pt;
+}
+.form .c{text-align:center; font-size:9.1pt; margin:1.6pt 0;}
+.note{background:var(--vert-pale); border-left:2.4pt solid var(--vert); padding:2.4pt 5pt; border-radius:1.5pt; margin:2.5pt 0 4pt; break-inside:avoid;}
+
+/* --------------------------- TABLEAUX ----------------------------- */
+table{width:100%; border-collapse:collapse; font-size:7.6pt; margin:2pt 0 4pt; break-inside:avoid;}
+th{background:var(--bleu); color:#fff; font-weight:700; text-align:left; padding:1.8pt 4pt; font-size:7.2pt;}
+td{border:.6pt solid var(--gris-clair); padding:1.8pt 4pt; vertical-align:top;}
+tr{break-inside:avoid;}
+table.var td{text-align:center; font-size:8pt;}
+table.var td.lab{text-align:left; font-weight:700; color:var(--bleu-fonce); background:var(--bleu-pale);}
+
+/* ----------------------------- PIEGES ----------------------------- */
+table.pieges th:first-child{width:44%;}
+table.pieges td:first-child{color:var(--rouge); background:#FDF1F0;}
+.x{font-weight:700;}
+.v{color:var(--vert-fonce); font-weight:700;}
+
+/* ---------------------------- RECAP ------------------------------- */
+ol.recap{margin:0; padding-left:0; list-style:none; counter-reset:r;}
+ol.recap li{
+  counter-increment:r; position:relative; padding-left:13pt; margin-bottom:1.8pt;
+  break-inside:avoid;
+}
+ol.recap li::before{
+  content:counter(r); position:absolute; left:0; top:.3pt;
+  width:10pt; height:10pt; border-radius:50%; background:var(--vert); color:#fff;
+  font-size:6.6pt; font-weight:700; text-align:center; line-height:10pt;
+}
+
+/* --------------------------- MATHS -------------------------------- */
+.m{font-family:Cambria,Georgia,"Times New Roman",serif;}
+i,var{font-family:Cambria,Georgia,"Times New Roman",serif; font-style:italic;}
+.op{font-family:Cambria,Georgia,"Times New Roman",serif; font-style:normal;}
+.f{display:inline-block; vertical-align:middle; text-align:center;
+   margin:0 .12em; line-height:1.06; font-family:Cambria,Georgia,"Times New Roman",serif;}
+.f>span{display:block; padding:0 .2em;}
+.f>span:first-child{border-bottom:.6pt solid currentColor; padding-bottom:.08em;}
+.f>span:last-child{padding-top:.04em;}
+.rad{border-top:.6pt solid currentColor; padding-top:.12em;}
+/* line-height:0 evite que l'exposant n'ecarte les lignes ; position:relative le
+   repositionne sans qu'il heurte la barre de fraction ni le trait du radical. */
+sup,sub{font-size:.68em; line-height:0; position:relative; vertical-align:baseline;}
+sup{top:-.42em;}
+sub{bottom:-.22em;}
+.pt{white-space:nowrap;}
+/* Les fleches n'ont qu'un glyphe atrophie dans la fonte serif : on les force
+   en sans-serif, ou elles sont franches meme a 8 pt. */
+.ar{font-family:"Segoe UI",Calibri,Arial,"DejaVu Sans",sans-serif; font-style:normal;}
+
+/* ------------------- PIEGES : blocs erreur / correction ------------- */
+.pg{font-size:8.1pt; border-left:2.4pt solid var(--rouge); background:#FDF1F0; border-radius:1.5pt;
+    padding:2pt 5pt; margin:0 0 2.8pt; break-inside:avoid; page-break-inside:avoid;}
+.pg .err{color:var(--rouge); font-weight:600;}
+.pg .cor{color:#1B1B1B; margin-top:.8pt;}
+.pg .cor b{color:var(--bleu-fonce);}
+.v{color:var(--vert-fonce); font-weight:700;}
+
+</style>
+</head>
+<body>
+<header class="entete">
+  <div class="num">12</div>
+  <div class="txt">
+    <div class="niveau">1ERE D &middot; MATHEMATIQUES</div>
+    <h1>Les statistiques</h1>
+    <div class="sous">Leçon 1 : vocabulaire, regroupement en classes et caractéristiques de position &middot; Leçon 2 : caractéristiques de dispersion, variance et écart-type &middot; Leçon 3 : organisation et représentation des données</div>
+  </div>
+</header>
+
+<div class="bandeau bleu" style="margin-top:0">L'ESSENTIEL</div>
+<div class="cols">
+
+<!-- ================= LECON 1 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 1&nbsp;: Vocabulaire, classes et caractéristiques de position</h2>
+<ul>
+<li>La <b>population</b> est l'ensemble étudié ; chacun de ses éléments est un <b>individu</b>. Le <b>caractère</b> est ce que l'on observe sur chaque individu.</li>
+<li>Il est <b>qualitatif</b> s'il ne se mesure pas par un nombre (couleur, sexe, filière) : on compte des effectifs, on ne calcule <b>aucune moyenne</b>.</li>
+<li>Il est <b>quantitatif</b> s'il se mesure par un nombre : <b>discret</b> si ses valeurs sont isolées (nombre d'enfants, note), <b>continu</b> s'il prend toute valeur d'un intervalle (masse, durée) et se regroupe alors en classes.</li>
+</ul></div>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Effectif et fréquence</h3>
+<p>L'<b>effectif</b> <i>n</i><sub><i>i</i></sub> d'une valeur ou d'une classe est le nombre d'individus qui la possèdent ; l'<b>effectif total</b> est <span class="pt"><i>N</i>&#8239;=&#8239;&#8721;<i>n</i><sub><i>i</i></sub></span>.</p>
+<div class="form">
+  <span class="t">FREQUENCE DE LA VALEUR <i>x</i><sub><i>i</i></sub></span>
+  <div class="c m"><i>f</i><sub><i>i</i></sub>&#8239;=&#8239;<span class="f"><span><i>n</i><sub><i>i</i></sub></span><span><i>N</i></span></span> &nbsp;&nbsp;&nbsp; &#8721;<i>f</i><sub><i>i</i></sub>&#8239;=&#8239;1&#8239;=&#8239;100&#8239;%</div>
+</div>
+<p>L'effectif est un <b>entier</b>, la fréquence une <b>proportion</b> de [0&#8239;;&#8239;1] : seules les fréquences se comparent d'une population à l'autre.</p>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Regroupement en classes</h3>
+<p>Un caractère continu se répartit en <b>classes</b> <span class="pt">[<i>a</i>&#8239;;&#8239;<i>b</i>[</span>, borne <i>a</i> incluse, borne <i>b</i> rejetée dans la classe suivante.</p>
+<div class="form">
+  <span class="t">AMPLITUDE ET CENTRE DE LA CLASSE [<i>a</i> ; <i>b</i>[</span>
+  <div class="c m">amplitude&#8239;=&#8239;<i>b</i>&#8239;&#8722;&#8239;<i>a</i> &nbsp;&nbsp;&nbsp; centre&#8239;<i>c</i>&#8239;=&#8239;<span class="f"><span><i>a</i>&#8239;+&#8239;<i>b</i></span><span>2</span></span></div>
+</div>
+<p>Le centre <b>remplace toutes les valeurs</b> de sa classe : la moyenne d'une série groupée est <b>approchée</b>.</p>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Effectifs et fréquences cumulés</h3>
+<ul>
+<li><b>Cumul croissant</b> : nombre d'individus de valeur <b>inférieure ou égale</b> ; on cumule de haut en bas, il se lit « <b>au plus</b> », le <b>dernier</b> vaut <i>N</i>.</li>
+<li><b>Cumul décroissant</b> : valeur <b>supérieure ou égale</b> ; on cumule de bas en haut, il se lit « <b>au moins</b> », le <b>premier</b> vaut <i>N</i>. Divisés par <i>N</i>, les cumuls donnent les <b>fréquences cumulées</b>.</li>
+</ul>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Mode et moyenne</h3>
+<ul>
+<li>Le <b>mode</b> est la valeur de <b>plus grand effectif</b> : une valeur du caractère, jamais un effectif. Plusieurs modes : série <b>bimodale</b> ou plurimodale. Série groupée : <b>classe modale</b>, la classe de plus grand effectif.</li>
+</ul>
+<div class="form">
+  <span class="t">MOYENNE&nbsp;: <i>x</i><sub><i>i</i></sub> VALEUR OU CENTRE DE LA CLASSE <i>i</i></span>
+  <div class="c m"><span style="border-top:.7pt solid;padding-top:.6pt"><i>x</i></span>&#8239;=&#8239;<span class="f"><span>&#8721;<i>n</i><sub><i>i</i></sub><i>x</i><sub><i>i</i></sub></span><span><i>N</i></span></span></div>
+</div>
+<p>La moyenne est le <b>point d'équilibre</b> : la somme des écarts à la moyenne, avec leur signe, est <b>nulle</b>. Elle est <b>sensible aux valeurs extrêmes</b>.</p>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Médiane</h3>
+<p>La <b>médiane</b> <i>M</i><sub><i>e</i></sub> partage la série <b>ordonnée</b> en deux moitiés de même effectif.</p>
+<ul>
+<li><b>Série discrète</b>, rangée par ordre croissant : si <i>N</i> est <b>impair</b>, <i>M</i><sub><i>e</i></sub> est la valeur de rang <span class="f"><span><i>N</i>&#8239;+&#8239;1</span><span>2</span></span> ; si <i>N</i> est <b>pair</b>, la demi-somme des valeurs de rangs <span class="f"><span><i>N</i></span><span>2</span></span> et <span class="f"><span><i>N</i></span><span>2</span></span>&#8239;+&#8239;1.</li>
+<li><b>Série groupée</b> : la <b>classe médiane</b> est la <b>première</b> dont le cumul croissant atteint <span class="f"><span><i>N</i></span><span>2</span></span> ; on précise <i>M</i><sub><i>e</i></sub> par interpolation linéaire (Leçon 3).</li>
+<li>Position de <b>rang</b>, non de valeur : la médiane est <b>robuste</b>, là où la moyenne se déplace.</li>
+</ul>
+</div>
+
+<!-- ================= LECON 2 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 2&nbsp;: Dispersion : variance et écart-type</h2>
+<div class="form">
+  <span class="t">ETENDUE ET ECART MOYEN</span>
+  <div class="c m"><i>e</i>&#8239;=&#8239;<i>x</i><sub>max</sub>&#8239;&#8722;&#8239;<i>x</i><sub>min</sub></div>
+  <div class="c m"><i>e</i><sub><i>m</i></sub>&#8239;=&#8239;<span class="f"><span>&#8721;<i>n</i><sub><i>i</i></sub>&#8239;|<i>x</i><sub><i>i</i></sub>&#8239;&#8722;&#8239;<span style="border-top:.7pt solid;padding-top:.6pt"><i>x</i></span>|</span><span><i>N</i></span></span></div>
+</div></div>
+<p>L'<b>étendue</b> ne regarde que <b>deux individus</b> : une seule valeur aberrante peut la doubler. L'<b>écart moyen</b>, dans l'unité des données, mesure l'éloignement moyen à la moyenne ; la <b>valeur absolue</b> empêche les écarts de se compenser.</p>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Variance et écart-type</h3>
+<div class="form">
+  <span class="t">DEFINITION&nbsp;: MOYENNE DES CARRES DES ECARTS</span>
+  <div class="c m"><i>V</i>&#8239;=&#8239;<span class="f"><span>&#8721;<i>n</i><sub><i>i</i></sub>(<i>x</i><sub><i>i</i></sub>&#8239;&#8722;&#8239;<span style="border-top:.7pt solid;padding-top:.6pt"><i>x</i></span>)<sup>2</sup></span><span><i>N</i></span></span> &nbsp;&nbsp;&nbsp; &#963;&#8239;=&#8239;&#8730;<span class="rad"><i>V</i></span></div>
+</div>
+<ul>
+<li><i>V</i>&#8239;&#8805;&#8239;0 et &#963;&#8239;&#8805;&#8239;0 <b>toujours</b> (moyenne de carrés) ; <i>V</i>&#8239;=&#8239;0 <b>si et seulement si toutes</b> les valeurs sont égales à la moyenne.</li>
+<li><i>V</i> est dans l'unité des données <b>au carré</b>, &#963; dans l'<b>unité des données</b> : on <b>calcule avec <i>V</i></b>, on <b>interprète avec &#963;</b>.</li>
+<li>Plus &#963; est petit, plus la série est <b>resserrée</b> : &#963; est la <b>largeur du nuage</b> autour de son centre.</li>
+</ul>
+</div>
+
+<div class="bloc">
+<div class="form">
+  <span class="t">FORMULE SIMPLIFIEE, DITE FORMULE DE KOENIG</span>
+  <div class="c m"><i>V</i>&#8239;=&#8239;<span class="f"><span>&#8721;<i>n</i><sub><i>i</i></sub><i>x</i><sub><i>i</i></sub><sup>2</sup></span><span><i>N</i></span></span>&#8239;&#8722;&#8239;<span style="border-top:.7pt solid;padding-top:.6pt"><i>x</i></span><sup>2</sup></div>
+</div>
+<p>« <b>Moyenne des carrés moins carré de la moyenne</b> » : c'est cette forme que l'on utilise, un <b>seul</b> passage sur le tableau suffisant. <b>Réflexe</b> : colonnes <span class="pt"><i>x</i><sub><i>i</i></sub></span>, <span class="pt"><i>n</i><sub><i>i</i></sub></span>, <span class="pt"><i>n</i><sub><i>i</i></sub><i>x</i><sub><i>i</i></sub></span>, <span class="pt"><i>n</i><sub><i>i</i></sub><i>x</i><sub><i>i</i></sub><sup>2</sup></span>, puis moyenne, <i>V</i>, &#963;. <b>Contrôles</b> : la moyenne tombe <b>entre</b> la plus petite et la plus grande valeur, <i>V</i>&#8239;&#8805;&#8239;0, &#963; vaut en général du quart à la moitié de l'étendue ; garder la moyenne avec <b>toutes ses décimales</b> et n'arrondir qu'à la fin.</p>
+<div class="note"><b>Notation &#8721;.</b> <span class="pt">&#8721;<sub><i>i</i>=1</sub><sup><i>p</i></sup>&#8239;<i>n</i><sub><i>i</i></sub><i>x</i><sub><i>i</i></sub>&#8239;=&#8239;<i>n</i><sub>1</sub><i>x</i><sub>1</sub>&#8239;+&#8239;&#8230;&#8239;+&#8239;<i>n</i><sub><i>p</i></sub><i>x</i><sub><i>p</i></sub></span>, où <i>i</i> est un <b>indice muet</b>. Règles : <span class="pt">&#8721;(<i>a</i><sub><i>i</i></sub>&#8239;+&#8239;<i>b</i><sub><i>i</i></sub>)&#8239;=&#8239;&#8721;<i>a</i><sub><i>i</i></sub>&#8239;+&#8239;&#8721;<i>b</i><sub><i>i</i></sub></span> et <span class="pt">&#8721;<i>k a</i><sub><i>i</i></sub>&#8239;=&#8239;<i>k</i>&#8239;&#8721;<i>a</i><sub><i>i</i></sub></span>.</div>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Modifier toutes les valeurs</h3>
+<table>
+<tr><th>Transformation</th><th>Moyenne</th><th>Ecart-type</th></tr>
+<tr><td>ajouter <i>k</i> à toutes</td><td class="m"><span style="border-top:.7pt solid;padding-top:.6pt"><i>x</i></span>&#8239;+&#8239;<i>k</i></td><td class="m">&#963; <b>inchangé</b></td></tr>
+<tr><td>multiplier par <i>a</i>&#8239;&gt;&#8239;0</td><td class="m"><i>a</i><span style="border-top:.7pt solid;padding-top:.6pt"><i>x</i></span></td><td class="m"><i>a</i>&#963; &nbsp;(et <i>V</i> par <i>a</i><sup>2</sup>)</td></tr>
+</table>
+<p>Ajouter <i>k</i> fait <b>glisser</b> le nuage, les distances ne changent pas ; multiplier par <i>a</i> <b>dilate</b> l'axe.</p>
+<div class="form">
+  <span class="t">MOYENNE DE DEUX GROUPES REUNIS</span>
+  <div class="c m"><span style="border-top:.7pt solid;padding-top:.6pt"><i>x</i></span>&#8239;=&#8239;<span class="f"><span><i>n</i><sub>1</sub><span style="border-top:.7pt solid;padding-top:.6pt"><i>x</i></span><sub>1</sub>&#8239;+&#8239;<i>n</i><sub>2</sub><span style="border-top:.7pt solid;padding-top:.6pt"><i>x</i></span><sub>2</sub></span><span><i>n</i><sub>1</sub>&#8239;+&#8239;<i>n</i><sub>2</sub></span></span></div>
+</div>
+<p>Elle est comprise <b>entre</b> les deux moyennes, sans être leur demi-somme, sauf si les effectifs sont égaux. Aucune règle analogue pour les écarts-types.</p>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Quartiles et écart interquartile</h3>
+<ul>
+<li>Série rangée par ordre croissant : <b><i>Q</i><sub>1</sub></b> est la <b>plus petite valeur</b> telle qu'au moins <b>25&#8239;%</b> des données lui soient inférieures ou égales, <b><i>Q</i><sub>3</sub></b> celle pour <b>75&#8239;%</b> ; la médiane est le <b>deuxième quartile</b>.</li>
+<li>L'<b>écart interquartile</b> <span class="pt"><i>Q</i><sub>3</sub>&#8239;&#8722;&#8239;<i>Q</i><sub>1</sub></span> est la largeur de la <b>moitié centrale</b> ; ne dépendant que de rangs, il est <b>robuste</b> et complète l'écart-type.</li>
+<li><b>Diagramme en boîte</b> : boîte de <i>Q</i><sub>1</sub> à <i>Q</i><sub>3</sub>, trait sur la médiane, moustaches jusqu'au minimum et au maximum.</li>
+</ul>
+</div>
+
+<!-- ================= LECON 3 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 3&nbsp;: Organisation et représentation des données</h2>
+<table>
+<tr><th>Caractère ou question</th><th>Représentation</th></tr>
+<tr><td>qualitatif ou quantitatif <b>discret</b></td><td><b>diagramme en bâtons</b> (bâtons <b>séparés</b>, hauteur <i>n</i><sub><i>i</i></sub> ou <i>f</i><sub><i>i</i></sub>) ou <b>diagramme circulaire</b></td></tr>
+<tr><td>quantitatif <b>continu</b> groupé en classes</td><td><b>histogramme</b> (rectangles <b>accolés</b>)</td></tr>
+<tr><td>« combien <b>au plus</b> », « <b>au moins</b> »</td><td><b>courbe (ou polygone) des effectifs cumulés</b></td></tr>
+</table></div>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Histogramme</h3>
+<p>C'est l'<b>aire</b> de chaque rectangle qui est proportionnelle à l'effectif de la classe.</p>
+<div class="form">
+  <span class="t">HAUTEUR DES RECTANGLES</span>
+  <div class="c m">classes de <b>même amplitude</b> : hauteur&#8239;=&#8239;<i>n</i><sub><i>i</i></sub> (ou <i>f</i><sub><i>i</i></sub>)</div>
+  <div class="c m">amplitudes <b>différentes</b> : hauteur&#8239;=&#8239;<i>d</i><sub><i>i</i></sub>&#8239;=&#8239;<span class="f"><span><i>n</i><sub><i>i</i></sub></span><span>amplitude</span></span></div>
+</div>
+<p>L'oeil compare des <b>surfaces</b> : à effectif 30 et largeurs 5 et 10, les <b>densités</b> 6 et 3 donnent des rectangles de même aire.</p>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Polygone des effectifs</h3>
+<p>On relie les <b>milieux des sommets supérieurs</b> des rectangles, points <span class="pt">(centre de classe&#8239;;&#8239;effectif)</span>, et l'on <b>ferme</b> sur l'axe par deux classes fictives de <b>même amplitude</b> et d'<b>effectif nul</b> : son aire égale celle de l'histogramme.</p>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Diagramme circulaire</h3>
+<div class="form">
+  <span class="t">ANGLE DU SECTEUR DE LA VALEUR OU CLASSE <i>i</i></span>
+  <div class="c m">angle<sub><i>i</i></sub>&#8239;=&#8239;<i>f</i><sub><i>i</i></sub>&#8239;&#215;&#8239;360°&#8239;=&#8239;<span class="f"><span><i>n</i><sub><i>i</i></sub></span><span><i>N</i></span></span>&#8239;&#215;&#8239;360°</div>
+</div>
+<p>Le disque représente l'<b>effectif total</b> ; contrôle : la somme des angles vaut <b>360°</b>. Il montre des <b>parts d'un tout</b>, mais devient illisible au-delà de sept secteurs.</p>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Courbe des effectifs cumulés</h3>
+<ul>
+<li>En abscisse les <b>bornes</b>, en ordonnée les <b>cumuls croissants</b>, reliés par des segments : ligne <b>montante</b> de 0 à <i>N</i>. Un cumul se rapporte à la <b>borne supérieure</b> de sa classe, jamais à son centre ; ne pas oublier le point (première borne&#8239;;&#8239;0).</li>
+<li>Lectures : la <b>médiane</b> est l'abscisse du point d'ordonnée <span class="f"><span><i>N</i></span><span>2</span></span> ; de même <i>Q</i><sub>1</sub> à <span class="f"><span><i>N</i></span><span>4</span></span> et <i>Q</i><sub>3</sub> à <span class="f"><span>3<i>N</i></span><span>4</span></span>.</li>
+<li>Avec les cumuls <b>décroissants</b>, la ligne est <b>descendante</b> ; les deux lignes se coupent à l'ordonnée <span class="f"><span><i>N</i></span><span>2</span></span>, donc à l'abscisse de la médiane.</li>
+</ul>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Interpolation linéaire</h3>
+<p>Les individus sont supposés <b>régulièrement répartis</b> dans chaque classe. Dans <span class="pt">[<i>a</i>&#8239;;&#8239;<i>b</i>[</span> d'effectif <i>n</i>, dont le cumul passe de <i>C</i><sub><i>a</i></sub> à <span class="pt"><i>C</i><sub><i>b</i></sub>&#8239;=&#8239;<i>C</i><sub><i>a</i></sub>&#8239;+&#8239;<i>n</i></span> :</p>
+<div class="form">
+  <span class="t">INTERPOLATION DANS LA CLASSE [<i>a</i> ; <i>b</i>[</span>
+  <div class="c m"><i>x</i>&#8239;=&#8239;<i>a</i>&#8239;+&#8239;<span class="f"><span><i>C</i>&#8239;&#8722;&#8239;<i>C</i><sub><i>a</i></sub></span><span><i>n</i></span></span>&#8239;&#215;&#8239;(<i>b</i>&#8239;&#8722;&#8239;<i>a</i>)</div>
+  <div class="c m"><i>C</i>&#8239;=&#8239;<i>C</i><sub><i>a</i></sub>&#8239;+&#8239;<span class="f"><span><i>x</i>&#8239;&#8722;&#8239;<i>a</i></span><span><i>b</i>&#8239;&#8722;&#8239;<i>a</i></span></span>&#8239;&#215;&#8239;<i>n</i></div>
+</div>
+<p>La <b>première</b> donne médiane (avec <span class="pt"><i>C</i>&#8239;=&#8239;<span class="f"><span><i>N</i></span><span>2</span></span></span>) et quartiles ; la <b>seconde</b>, le pourcentage d'individus sous un seuil. Une lecture graphique reste <b>approchée</b> : on la confirme par ce calcul.</p>
+</div>
+
+</div>
+
+<div class="bandeau vert">PIEGES ET ERREURS FREQUENTES</div>
+<div class="cols">
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> Pour 2 ; 4 ; 6 : moyenne&#8239;=&#8239;<span class="f"><span>2&#8239;+&#8239;4&#8239;+&#8239;6</span><span>2</span></span>&#8239;=&#8239;6 &nbsp;&middot;&nbsp; 40 élèves à 12 et 10 élèves à 16 donnent 14</div><div class="cor"><span class="v">&#10003;</span> On divise <b>toujours par l'effectif total</b> : <span class="f"><span>2&#8239;+&#8239;4&#8239;+&#8239;6</span><span>3</span></span>&#8239;=&#8239;4. La moyenne de deux groupes est <b>pondérée</b> : <span class="f"><span>40&#8239;&#215;&#8239;12&#8239;+&#8239;10&#8239;&#215;&#8239;16</span><span>50</span></span>&#8239;=&#8239;12,8, non 14 ; demi-somme seulement si les effectifs sont égaux.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> Le centre de [10&#8239;;&#8239;20[ est 10 &nbsp;&middot;&nbsp; celui de [45&#8239;;&#8239;50[ est 45</div><div class="cor"><span class="v">&#10003;</span> Une <b>borne n'est pas un centre</b> : <span class="f"><span><i>a</i>&#8239;+&#8239;<i>b</i></span><span>2</span></span> donne 15 et 47,5. Cette erreur fausse d'un coup moyenne, variance et écart-type.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> « La fréquence est 17 » &nbsp;&middot;&nbsp; la valeur 4 apparaît 8 fois, donc le mode est 8</div><div class="cor"><span class="v">&#10003;</span> L'effectif est un <b>entier</b>, la fréquence une <b>proportion</b> de [0&#8239;;&#8239;1] ou un pourcentage. Le mode est la <b>valeur</b> 4, pas son effectif ; de même la classe modale est une <b>classe</b>.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> Avec <span style="border-top:.7pt solid;padding-top:.6pt"><i>x</i></span>&#8239;=&#8239;8 et <span class="f"><span>&#8721;<i>n</i><sub><i>i</i></sub><i>x</i><sub><i>i</i></sub><sup>2</sup></span><span><i>N</i></span></span>&#8239;=&#8239;90 : <i>V</i>&#8239;=&#8239;90&#8239;&#8722;&#8239;8&#8239;=&#8239;82 &nbsp;&middot;&nbsp; <i>V</i>&#8239;=&#8239;&#8722;9 donne &#963;&#8239;=&#8239;&#8730;<span class="rad">&#8722;9</span></div><div class="cor"><span class="v">&#10003;</span> On soustrait le <b>carré de la moyenne</b> : <i>V</i>&#8239;=&#8239;90&#8239;&#8722;&#8239;8<sup>2</sup>&#8239;=&#8239;26. Une variance est une <b>moyenne de carrés</b> : <i>V</i>&#8239;&#8805;&#8239;0 toujours, donc <i>V</i>&#8239;=&#8239;&#8722;9 signale une faute dans &#8721;<i>n</i><sub><i>i</i></sub><i>x</i><sub><i>i</i></sub><sup>2</sup> ou dans la moyenne.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> J'arrondis <span style="border-top:.7pt solid;padding-top:.6pt"><i>x</i></span>&#8239;=&#8239;50,2 à 50 avant de calculer <i>V</i> &nbsp;&middot;&nbsp; « la dispersion vaut <i>V</i>&#8239;=&#8239;24,21 kg »</div><div class="cor"><span class="v">&#10003;</span> Les deux termes de la soustraction sont de <b>grands nombres très proches</b> : arrondir la moyenne détruit la précision de <i>V</i>. Et <i>V</i> est en kg<sup>2</sup> : on interprète avec <b>&#963;</b>, dans l'unité des données.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> Classes [1&#8239;;&#8239;2[, [2&#8239;;&#8239;3[, [3&#8239;;&#8239;5[ d'effectifs 34, 75, 31 : rectangles de hauteurs 34, 75 et 31 &nbsp;&middot;&nbsp; je lis la médiane sur les effectifs <b>simples</b>, aux <b>centres</b> de classes</div><div class="cor"><span class="v">&#10003;</span> La dernière classe est <b>deux fois plus large</b> : à hauteur 31 elle paraît deux fois trop peuplée. Amplitudes inégales : hauteur&#8239;=&#8239;<b>densité</b>, soit 34, 75 puis <span class="f"><span>31</span><span>2</span></span>&#8239;=&#8239;15,5. Et la médiane se lit sur les effectifs <b>cumulés</b>, portés aux <b>bornes supérieures</b> ; cette courbe est toujours <b>croissante</b>.</div></div>
+
+</div>
+
+<div class="bandeau bleu">A SAVOIR PAR COEUR AVANT LE DEVOIR</div>
+<div class="cols">
+<ol class="recap">
+<li><b>Fréquence</b> <span class="pt"><i>f</i><sub><i>i</i></sub>&#8239;=&#8239;<span class="f"><span><i>n</i><sub><i>i</i></sub></span><span><i>N</i></span></span></span>, <span class="pt">&#8721;<i>f</i><sub><i>i</i></sub>&#8239;=&#8239;1</span> : effectif entier, fréquence proportion. Cumul croissant&#8239;=&#8239;« au plus », décroissant&#8239;=&#8239;« au moins ».</li>
+<li><b>Classe</b> <span class="pt">[<i>a</i>&#8239;;&#8239;<i>b</i>[</span> : amplitude <span class="pt"><i>b</i>&#8239;&#8722;&#8239;<i>a</i></span>, centre <span class="pt"><span class="f"><span><i>a</i>&#8239;+&#8239;<i>b</i></span><span>2</span></span></span>, qui remplace la classe : moyenne groupée <b>approchée</b>.</li>
+<li><b>Moyenne</b> <span class="pt"><span style="border-top:.7pt solid;padding-top:.6pt"><i>x</i></span>&#8239;=&#8239;<span class="f"><span>&#8721;<i>n</i><sub><i>i</i></sub><i>x</i><sub><i>i</i></sub></span><span><i>N</i></span></span></span> (<b>sensible aux extrêmes</b>) ; <b>mode</b>&#8239;=&#8239;valeur ou classe de plus grand effectif ; <b>médiane</b>&#8239;=&#8239;rang du milieu, lue sur les cumulés à <span class="f"><span><i>N</i></span><span>2</span></span> (<b>robuste</b>).</li>
+<li><b>Dispersion</b> : <span class="pt"><i>e</i>&#8239;=&#8239;<i>x</i><sub>max</sub>&#8239;&#8722;&#8239;<i>x</i><sub>min</sub></span> ; <span class="pt"><i>e</i><sub><i>m</i></sub>&#8239;=&#8239;<span class="f"><span>&#8721;<i>n</i><sub><i>i</i></sub>&#8239;|<i>x</i><sub><i>i</i></sub>&#8239;&#8722;&#8239;<span style="border-top:.7pt solid;padding-top:.6pt"><i>x</i></span>|</span><span><i>N</i></span></span></span> ; écart interquartile <span class="pt"><i>Q</i><sub>3</sub>&#8239;&#8722;&#8239;<i>Q</i><sub>1</sub></span>, robuste.</li>
+<li><b>Variance</b> <span class="pt"><i>V</i>&#8239;=&#8239;<span class="f"><span>&#8721;<i>n</i><sub><i>i</i></sub>(<i>x</i><sub><i>i</i></sub>&#8239;&#8722;&#8239;<span style="border-top:.7pt solid;padding-top:.6pt"><i>x</i></span>)<sup>2</sup></span><span><i>N</i></span></span>&#8239;=&#8239;<span class="f"><span>&#8721;<i>n</i><sub><i>i</i></sub><i>x</i><sub><i>i</i></sub><sup>2</sup></span><span><i>N</i></span></span>&#8239;&#8722;&#8239;<span style="border-top:.7pt solid;padding-top:.6pt"><i>x</i></span><sup>2</sup></span> (Koenig) ; <b>écart-type</b> <span class="pt">&#963;&#8239;=&#8239;&#8730;<span class="rad"><i>V</i></span></span>. <i>V</i>&#8239;&#8805;&#8239;0, nulle seulement si toutes les valeurs sont égales.</li>
+<li><b>Transformations</b> : <span class="pt">+&#8239;<i>k</i></span> donne <span class="pt"><span style="border-top:.7pt solid;padding-top:.6pt"><i>x</i></span>&#8239;+&#8239;<i>k</i></span> et &#963; inchangé ; <span class="pt">&#215;&#8239;<i>a</i></span> (<i>a</i>&#8239;&gt;&#8239;0) donne <span class="pt"><i>a</i><span style="border-top:.7pt solid;padding-top:.6pt"><i>x</i></span></span>, <i>a</i>&#963;, <i>a</i><sup>2</sup><i>V</i>. Deux groupes : <span class="pt"><span class="f"><span><i>n</i><sub>1</sub><span style="border-top:.7pt solid;padding-top:.6pt"><i>x</i></span><sub>1</sub>&#8239;+&#8239;<i>n</i><sub>2</sub><span style="border-top:.7pt solid;padding-top:.6pt"><i>x</i></span><sub>2</sub></span><span><i>n</i><sub>1</sub>&#8239;+&#8239;<i>n</i><sub>2</sub></span></span></span>.</li>
+<li><b>Représentations</b> : bâtons séparés (discret) ; histogramme accolé, <b>aires</b> proportionnelles, hauteur&#8239;=&#8239;<b>densité</b> si les amplitudes diffèrent ; circulaire, angle <span class="pt"><i>f</i><sub><i>i</i></sub>&#8239;&#215;&#8239;360°</span> ; courbe cumulée sur les <b>bornes</b>, médiane par <b>interpolation linéaire</b>.</li>
+</ol>
+</div>
+
+</body>
+</html>

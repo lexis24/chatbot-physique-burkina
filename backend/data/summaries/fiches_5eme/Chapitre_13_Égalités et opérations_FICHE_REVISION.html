@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Fiche de revision - 5eme - Chapitre 13 : Egalites et operations</title>
+<style>
+/* ===================================================================
+   FICHE DE REVISION, Collection Hakili Lab, Edition 2026
+   Feuille de style autonome, format A4 pret a imprimer.
+   Bleu #005CB9 · Vert #49A145
+   =================================================================== */
+:root{
+  --bleu:#005CB9; --bleu-fonce:#00429A; --bleu-pale:#E8F1FB; --bleu-bord:#B7D2EE;
+  --vert:#49A145; --vert-fonce:#2F7A2C; --vert-pale:#EDF7EC; --vert-bord:#BCE0B9;
+  --gris:#4A4A4A; --gris-clair:#E4E4E4; --rouge:#B3261E;
+}
+@page{
+  size:A4; margin:15mm;
+  @bottom-center{
+    content:"Collection Hakili Lab, Edition 2026  ·  Fiche de revision  ·  " counter(page) "/" counter(pages);
+    font-family:"Segoe UI",Calibri,Arial,sans-serif; font-size:6.6pt; color:#8A8A8A;
+  }
+}
+*{box-sizing:border-box;}
+body{
+  margin:0; font-family:"Segoe UI",Calibri,Arial,sans-serif;
+  font-size:8.4pt; line-height:1.26; color:#1B1B1B;
+}
+p{margin:0 0 3pt;}
+ul{margin:0 0 3pt; padding-left:11pt;}
+li{margin:0 0 1.2pt;}
+b,strong{color:var(--bleu-fonce);}
+
+/* ------------------------------ ENTETE ---------------------------- */
+.entete{
+  display:flex; align-items:stretch; border:1.6pt solid var(--bleu);
+  border-radius:2.5pt; overflow:hidden; margin-bottom:6pt;
+}
+.entete .num{
+  background:var(--bleu); color:#fff; font-size:20pt; font-weight:700;
+  padding:0 8pt; display:flex; align-items:center; justify-content:center; min-width:34pt;
+}
+.entete .txt{padding:3.5pt 8pt; flex:1;}
+.entete .niveau{
+  font-size:7pt; font-weight:700; letter-spacing:.9pt; color:var(--vert-fonce);
+}
+.entete h1{margin:0; font-size:13.5pt; line-height:1.12; color:var(--bleu-fonce); font-weight:700;}
+.entete .sous{font-size:7pt; color:var(--gris); margin-top:1pt;}
+
+/* --------------------------- BANDEAUX ----------------------------- */
+.bandeau{
+  color:#fff; font-weight:700; font-size:9pt; letter-spacing:1pt;
+  padding:2.4pt 7pt; border-radius:2pt; margin:3pt 0 4pt; break-after:avoid; page-break-after:avoid;
+}
+.bandeau.bleu{background:var(--bleu);}
+.bandeau.vert{background:var(--vert);}
+
+/* --------------------------- COLONNES ----------------------------- */
+.cols{column-count:2; column-gap:7mm; column-fill:balance;}
+
+.cols.bal{column-fill:balance;}
+.bloc{margin-bottom:5pt;}
+.keep{break-inside:avoid; page-break-inside:avoid;}
+
+/* --------------------------- LECONS ------------------------------- */
+h2.lecon{
+  margin:0 0 3pt; font-size:8.6pt; font-weight:700; color:#fff; background:var(--bleu-fonce);
+  padding:1.8pt 5pt; border-radius:1.5pt; break-after:avoid; page-break-after:avoid;
+}
+h3.rub{
+  margin:3.5pt 0 1.5pt; font-size:8.2pt; font-weight:700; color:var(--vert-fonce);
+  border-bottom:.7pt solid var(--vert-bord); padding-bottom:.8pt;
+  break-after:avoid; page-break-after:avoid;
+}
+
+/* --------------------------- ENCADRES ----------------------------- */
+.form{
+  background:var(--bleu-pale); border:.8pt solid var(--bleu-bord); border-left:2.6pt solid var(--bleu);
+  border-radius:2pt; padding:2.4pt 5pt; margin:2.2pt 0 3.4pt;
+  break-inside:avoid; page-break-inside:avoid;
+}
+.form .t{
+  display:block; font-size:6.8pt; font-weight:700; letter-spacing:.6pt;
+  color:var(--bleu); margin-bottom:1.5pt;
+}
+.form .c{text-align:center; font-size:9.1pt; margin:1.6pt 0;}
+.note{background:var(--vert-pale); border-left:2.4pt solid var(--vert); padding:2.4pt 5pt; border-radius:1.5pt; margin:2.5pt 0 4pt; break-inside:avoid;}
+
+/* --------------------------- TABLEAUX ----------------------------- */
+table{width:100%; border-collapse:collapse; font-size:7.6pt; margin:2pt 0 4pt; break-inside:avoid;}
+th{background:var(--bleu); color:#fff; font-weight:700; text-align:left; padding:1.8pt 4pt; font-size:7.2pt;}
+td{border:.6pt solid var(--gris-clair); padding:1.8pt 4pt; vertical-align:top;}
+tr{break-inside:avoid;}
+table.var td{text-align:center; font-size:8pt;}
+table.var td.lab{text-align:left; font-weight:700; color:var(--bleu-fonce); background:var(--bleu-pale);}
+
+/* ----------------------------- PIEGES ----------------------------- */
+table.pieges th:first-child{width:44%;}
+table.pieges td:first-child{color:var(--rouge); background:#FDF1F0;}
+.x{font-weight:700;}
+.v{color:var(--vert-fonce); font-weight:700;}
+
+/* ---------------------------- RECAP ------------------------------- */
+ol.recap{margin:0; padding-left:0; list-style:none; counter-reset:r;}
+ol.recap li{
+  counter-increment:r; position:relative; padding-left:13pt; margin-bottom:1.8pt;
+  break-inside:avoid;
+}
+ol.recap li::before{
+  content:counter(r); position:absolute; left:0; top:.3pt;
+  width:10pt; height:10pt; border-radius:50%; background:var(--vert); color:#fff;
+  font-size:6.6pt; font-weight:700; text-align:center; line-height:10pt;
+}
+
+/* --------------------------- MATHS -------------------------------- */
+.m{font-family:Cambria,Georgia,"Times New Roman",serif;}
+i,var{font-family:Cambria,Georgia,"Times New Roman",serif; font-style:italic;}
+.op{font-family:Cambria,Georgia,"Times New Roman",serif; font-style:normal;}
+.f{display:inline-block; vertical-align:middle; text-align:center;
+   margin:0 .12em; line-height:1.06; font-family:Cambria,Georgia,"Times New Roman",serif;}
+.f>span{display:block; padding:0 .2em;}
+.f>span:first-child{border-bottom:.6pt solid currentColor; padding-bottom:.08em;}
+.f>span:last-child{padding-top:.04em;}
+.rad{border-top:.6pt solid currentColor; padding-top:.12em;}
+/* line-height:0 evite que l'exposant n'ecarte les lignes ; position:relative le
+   repositionne sans qu'il heurte la barre de fraction ni le trait du radical. */
+sup,sub{font-size:.68em; line-height:0; position:relative; vertical-align:baseline;}
+sup{top:-.42em;}
+sub{bottom:-.22em;}
+.pt{white-space:nowrap;}
+/* Les fleches n'ont qu'un glyphe atrophie dans la fonte serif : on les force
+   en sans-serif, ou elles sont franches meme a 8 pt. */
+.ar{font-family:"Segoe UI",Calibri,Arial,"DejaVu Sans",sans-serif; font-style:normal;}
+
+/* ------------------- PIEGES : blocs erreur / correction ------------- */
+.pg{font-size:8.1pt; border-left:2.4pt solid var(--rouge); background:#FDF1F0; border-radius:1.5pt;
+    padding:2pt 5pt; margin:0 0 2.8pt; break-inside:avoid; page-break-inside:avoid;}
+.pg .err{color:var(--rouge); font-weight:600;}
+.pg .cor{color:#1B1B1B; margin-top:.8pt;}
+.pg .cor b{color:var(--bleu-fonce);}
+.v{color:var(--vert-fonce); font-weight:700;}
+
+</style>
+</head>
+<body>
+<header class="entete">
+  <div class="num">13</div>
+  <div class="txt">
+    <div class="niveau">5EME &middot; MATHEMATIQUES</div>
+    <h1>Egalités et opérations</h1>
+    <div class="sous">Leçon 1 : égalité, addition et soustraction &middot; Leçon 2 : égalité, multiplication et division</div>
+  </div>
+</header>
+
+<div class="bandeau bleu" style="margin-top:0">L'ESSENTIEL</div>
+<div class="cols">
+
+<!-- ================= LECON 1 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 1&nbsp;: Egalité, addition et soustraction</h2>
+<p><b>Vocabulaire.</b> Dans une égalité, ce qui est écrit à gauche du signe <span class="m">=</span> est le <b>premier membre</b>, ce qui est écrit à droite est le <b>second membre</b>. Les deux membres, écrits différemment, désignent <b>le même nombre</b>.</p></div>
+<div class="form">
+  <span class="t">PROPRIETE&nbsp;: ON OPERE SUR LES DEUX MEMBRES</span>
+  <div class="c m">si <i>a</i>&#8239;=&#8239;<i>b</i>, alors <i>a</i>&#8239;+&#8239;<i>c</i>&#8239;=&#8239;<i>b</i>&#8239;+&#8239;<i>c</i> &nbsp; et &nbsp; <i>a</i>&#8239;&#8722;&#8239;<i>c</i>&#8239;=&#8239;<i>b</i>&#8239;&#8722;&#8239;<i>c</i></div>
+</div>
+<p>Une égalité reste vraie si on <b>ajoute</b> un <b>même</b> nombre aux <b>deux membres</b>, et elle reste vraie si on <b>retranche</b> un même nombre aux deux membres. La formule qui résume tout : <i>ce que je fais à gauche, je le fais aussi à droite.</i></p>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Isoler un nombre inconnu</h3>
+<div class="form">
+  <span class="t">ADDITION ET SOUSTRACTION</span>
+  <div class="c m"><i>x</i>&#8239;+&#8239;<i>c</i>&#8239;=&#8239;<i>b</i> &nbsp;<span class="ar">&#8594;</span>&nbsp; on retranche <i>c</i> &nbsp;<span class="ar">&#8594;</span>&nbsp; <i>x</i>&#8239;=&#8239;<i>b</i>&#8239;&#8722;&#8239;<i>c</i></div>
+  <div class="c m"><i>x</i>&#8239;&#8722;&#8239;<i>c</i>&#8239;=&#8239;<i>b</i> &nbsp;<span class="ar">&#8594;</span>&nbsp; on ajoute <i>c</i> &nbsp;<span class="ar">&#8594;</span>&nbsp; <i>x</i>&#8239;=&#8239;<i>b</i>&#8239;+&#8239;<i>c</i></div>
+</div>
+<p><b>Quelle opération faire ?</b> Celle qui <b>contrarie</b> l'opération qui gêne l'inconnue, jamais celle qui la recopie.</p>
+<ul>
+<li>Repère le <span class="m">+</span> ou le <span class="m">&#8722;</span> placé à côté de l'inconnue.</li>
+<li>Applique l'opération <b>inverse aux deux membres</b> : les deux opérations contraires s'annulent là où est l'inconnue.</li>
+<li>Calcule l'autre membre, puis <b>vérifie</b>.</li>
+</ul>
+<div class="note"><b>Vérifier</b>, c'est remplacer l'inconnue par la valeur trouvée dans l'égalité <b>de départ</b>, calculer chaque membre et comparer. Pour <span class="pt"><i>x</i>&#8239;&#8722;&#8239;7&#8239;=&#8239;5</span> : avec <span class="pt"><i>x</i>&#8239;=&#8239;12</span>, <span class="pt">12&#8239;&#8722;&#8239;7&#8239;=&#8239;5</span>, la valeur est bonne.</div>
+</div>
+
+<!-- ================= LECON 2 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 2&nbsp;: Egalité, multiplication et division</h2>
+<div class="form">
+  <span class="t">PROPRIETE&nbsp;: ON OPERE SUR LES DEUX MEMBRES</span>
+  <div class="c m">si <i>a</i>&#8239;=&#8239;<i>b</i>, alors <i>a</i>&#8239;&#215;&#8239;<i>c</i>&#8239;=&#8239;<i>b</i>&#8239;&#215;&#8239;<i>c</i></div>
+  <div class="c m">et <i>a</i>&#8239;&#247;&#8239;<i>c</i>&#8239;=&#8239;<i>b</i>&#8239;&#247;&#8239;<i>c</i> &nbsp;<span style="font-size:7.5pt">(à condition que <i>c</i>&#8239;&#8800;&#8239;0)</span></div>
+</div></div>
+<p>Une égalité reste vraie si on <b>multiplie</b> les deux membres par un même nombre, et si on <b>divise</b> les deux membres par un même nombre <b>non nul</b>.</p>
+<div class="form">
+  <span class="t">MULTIPLICATION ET DIVISION</span>
+  <div class="c m"><i>a</i>&#8239;&#215;&#8239;<i>x</i>&#8239;=&#8239;<i>b</i> &nbsp;<span class="ar">&#8594;</span>&nbsp; on divise par <i>a</i> &nbsp;<span class="ar">&#8594;</span>&nbsp; <i>x</i>&#8239;=&#8239;<i>b</i>&#8239;&#247;&#8239;<i>a</i></div>
+  <div class="c m"><i>x</i>&#8239;&#247;&#8239;<i>a</i>&#8239;=&#8239;<i>b</i> &nbsp;<span class="ar">&#8594;</span>&nbsp; on multiplie par <i>a</i> &nbsp;<span class="ar">&#8594;</span>&nbsp; <i>x</i>&#8239;=&#8239;<i>b</i>&#8239;&#215;&#8239;<i>a</i></div>
+</div>
+<p><b>Ecriture abrégée.</b> <span class="pt"><i>a</i>&#8239;&#215;&#8239;<i>x</i></span> s'écrit <span class="pt"><i>ax</i></span>, sans signe de multiplication : <span class="pt">3&#8239;&#215;&#8239;<i>t</i></span> s'écrit <span class="pt">3<i>t</i></span> et <span class="pt">&#8722;4&#8239;&#215;&#8239;<i>x</i></span> s'écrit <span class="pt">&#8722;4<i>x</i></span>. Le nombre placé devant la lettre est le <b>coefficient</b>.</p>
+<p><b>Signes.</b> Les règles de signes s'appliquent au quotient : deux nombres de <b>même signe</b> donnent un quotient <b>positif</b>, deux nombres de <b>signes contraires</b> un quotient <b>négatif</b>.</p>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Diviser par zéro est impossible</h3>
+<p>Diviser 12 par 4, c'est faire 4 parts égales ; diviser 12 par 0, ce serait faire <b>zéro part</b> : aucun nombre multiplié par 0 ne redonne 12. D'où la mention <span class="pt"><i>c</i>&#8239;&#8800;&#8239;0</span> : <b>avant de diviser</b> les deux membres par un nombre, assure-toi qu'il n'est pas nul.</p>
+
+<h3 class="rub">Deux opérations à la suite</h3>
+<p>Quand deux choses gênent l'inconnue, <b>l'ordre compte</b> : on enlève d'abord ce qui en est le plus loin, c'est-à-dire le <b>terme</b> ajouté ou retranché, puis le <b>coefficient</b>.</p>
+<div class="form">
+  <span class="t">L'ORDRE : LE TERME, PUIS LE COEFFICIENT</span>
+  <div class="c m">2<i>x</i>&#8239;+&#8239;3&#8239;=&#8239;11 &nbsp;<span class="ar">&#8594;</span>&nbsp; 2<i>x</i>&#8239;=&#8239;8 &nbsp;<span class="ar">&#8594;</span>&nbsp; <i>x</i>&#8239;=&#8239;4</div>
+</div>
+
+<h3 class="rub">Traduire une phrase en égalité</h3>
+<p>Un problème écrit en français se traduit d'abord en égalité ; un schéma en barre aide. « Quatre places de car au même prix coûtent 14&#8239;000 FCFA en tout » : la barre entière vaut quatre fois le prix <i>x</i> d'une place, donc <span class="pt">4<i>x</i>&#8239;=&#8239;14&#8239;000</span>, et en divisant les deux membres par 4, <span class="pt"><i>x</i>&#8239;=&#8239;3&#8239;500 FCFA</span>.</p>
+</div>
+
+</div>
+
+<div class="bandeau vert">PIEGES ET ERREURS FREQUENTES</div>
+<div class="cols">
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> De <span class="pt"><i>x</i>&#8239;+&#8239;5&#8239;=&#8239;12</span>, écrire « <span class="pt"><i>x</i>&#8239;=&#8239;12&#8239;+&#8239;5</span> »</div><div class="cor"><span class="v">&#10003;</span> On <b>contrarie</b> l'opération qui gêne, on ne la recopie pas : on retranche 5 des deux membres, donc <span class="pt"><i>x</i>&#8239;=&#8239;12&#8239;&#8722;&#8239;5&#8239;=&#8239;7</span>.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> De <span class="pt"><i>x</i>&#8239;&#8722;&#8239;7&#8239;=&#8239;5</span>, écrire « <span class="pt"><i>x</i>&#8239;=&#8239;5&#8239;&#8722;&#8239;7</span> »</div><div class="cor"><span class="v">&#10003;</span> C'est un <span class="m">&#8722;</span> qui gêne : on <b>ajoute</b> 7 aux deux membres, <span class="pt"><i>x</i>&#8239;=&#8239;5&#8239;+&#8239;7&#8239;=&#8239;12</span>. Le contrôle tranche : <span class="pt">&#8722;2&#8239;&#8722;&#8239;7&#8239;=&#8239;&#8722;9</span>, faux ; <span class="pt">12&#8239;&#8722;&#8239;7&#8239;=&#8239;5</span>, juste.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> Ajouter 3 au membre de gauche seulement &nbsp;&middot;&nbsp; ajouter 3 à gauche et 5 à droite</div><div class="cor"><span class="v">&#10003;</span> Toute opération s'applique aux <b>deux membres</b>, avec le <b>même</b> nombre. Opérer d'un seul côté fait pencher la balance : les deux membres ne désignent plus le même nombre.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> De <span class="pt">&#8722;2<i>x</i>&#8239;=&#8239;10</span>, écrire « <span class="pt"><i>x</i>&#8239;=&#8239;10&#8239;&#8722;&#8239;(&#8722;2)</span> »</div><div class="cor"><span class="v">&#10003;</span> Un coefficient se <b>divise</b>, il ne se retranche pas : <span class="pt"><i>x</i>&#8239;=&#8239;10&#8239;&#247;&#8239;(&#8722;2)&#8239;=&#8239;&#8722;5</span>. Signes contraires, donc quotient <b>négatif</b>.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> De <span class="pt"><i>x</i>&#8239;&#247;&#8239;4&#8239;=&#8239;12</span>, écrire « <span class="pt"><i>x</i>&#8239;=&#8239;12&#8239;&#247;&#8239;4</span> »</div><div class="cor"><span class="v">&#10003;</span> Une division s'annule par une <b>multiplication</b> : <span class="pt"><i>x</i>&#8239;=&#8239;12&#8239;&#215;&#8239;4&#8239;=&#8239;48</span>. De même, <span class="pt"><i>x</i>&#8239;&#247;&#8239;5&#8239;=&#8239;3</span> donne <span class="pt"><i>x</i>&#8239;=&#8239;3&#8239;&#215;&#8239;5&#8239;=&#8239;15</span>.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> Diviser les deux membres par 0</div><div class="cor"><span class="v">&#10003;</span> La division par zéro <b>n'existe pas</b> : le diviseur doit être <b>non nul</b>. C'est tout le sens de la condition <span class="pt"><i>c</i>&#8239;&#8800;&#8239;0</span> dans la propriété.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> Dans <span class="pt">2<i>x</i>&#8239;+&#8239;3&#8239;=&#8239;11</span>, diviser d'abord par 2 en gardant le 3 : « <span class="pt"><i>x</i>&#8239;+&#8239;3&#8239;=&#8239;5,5</span> »</div><div class="cor"><span class="v">&#10003;</span> Diviser un membre, c'est diviser <b>tout</b> le membre, 3 compris. On enlève d'abord le <b>terme</b> (<span class="pt">2<i>x</i>&#8239;=&#8239;8</span>), ensuite le <b>coefficient</b> (<span class="pt"><i>x</i>&#8239;=&#8239;4</span>).</div></div>
+
+</div>
+
+<div class="bandeau bleu">A SAVOIR PAR COEUR AVANT LE DEVOIR</div>
+<div class="cols">
+<ol class="recap">
+<li>Le <b>premier membre</b> est à gauche du signe <span class="m">=</span>, le <b>second membre</b> à droite ; tous deux désignent <b>le même nombre</b>.</li>
+<li><b>Egalité-balance</b> : si <span class="pt"><i>a</i>&#8239;=&#8239;<i>b</i></span>, alors <span class="pt"><i>a</i>&#8239;+&#8239;<i>c</i>&#8239;=&#8239;<i>b</i>&#8239;+&#8239;<i>c</i></span>, <span class="pt"><i>a</i>&#8239;&#8722;&#8239;<i>c</i>&#8239;=&#8239;<i>b</i>&#8239;&#8722;&#8239;<i>c</i></span>, <span class="pt"><i>a</i>&#8239;&#215;&#8239;<i>c</i>&#8239;=&#8239;<i>b</i>&#8239;&#215;&#8239;<i>c</i></span>, <span class="pt"><i>a</i>&#8239;&#247;&#8239;<i>c</i>&#8239;=&#8239;<i>b</i>&#8239;&#247;&#8239;<i>c</i></span> avec <span class="pt"><i>c</i>&#8239;&#8800;&#8239;0</span> : toute opération porte sur les <b>deux membres</b>, avec le <b>même</b> nombre.</li>
+<li>Les <b>quatre gestes</b> : <span class="pt"><i>x</i>&#8239;+&#8239;<i>a</i>&#8239;=&#8239;<i>b</i> <span class="ar">&#8594;</span> <i>x</i>&#8239;=&#8239;<i>b</i>&#8239;&#8722;&#8239;<i>a</i></span> ; <span class="pt"><i>x</i>&#8239;&#8722;&#8239;<i>a</i>&#8239;=&#8239;<i>b</i> <span class="ar">&#8594;</span> <i>x</i>&#8239;=&#8239;<i>b</i>&#8239;+&#8239;<i>a</i></span> ; <span class="pt"><i>ax</i>&#8239;=&#8239;<i>b</i> <span class="ar">&#8594;</span> <i>x</i>&#8239;=&#8239;<i>b</i>&#8239;&#247;&#8239;<i>a</i></span> ; <span class="pt"><i>x</i>&#8239;&#247;&#8239;<i>a</i>&#8239;=&#8239;<i>b</i> <span class="ar">&#8594;</span> <i>x</i>&#8239;=&#8239;<i>b</i>&#8239;&#215;&#8239;<i>a</i></span>.</li>
+<li>On isole l'inconnue par l'<b>opération inverse</b> (le <span class="m">&#8722;</span> annule le <span class="m">+</span>, le <span class="m">&#247;</span> annule le <span class="m">&#215;</span>) ; si deux opérations gênent, d'abord le <b>terme</b>, ensuite le <b>coefficient</b>.</li>
+<li><b>Interdits</b> : diviser par 0, et opérer d'un seul côté. <b>Signes</b> du quotient : même signe, positif ; signes contraires, négatif.</li>
+<li>Toujours <b>vérifier</b> : reporter la valeur trouvée dans l'égalité de départ et comparer les deux membres.</li>
+</ol>
+</div>
+
+</body>
+</html>

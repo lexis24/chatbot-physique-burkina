@@ -1,0 +1,287 @@
+{
+  "niveau": "5ème",
+  "chapitre": "Chapitre 15 : Sphère et boule",
+  "source": "maths/5eme/Chapitre_15_Sphere_et_boule",
+  "nombre_cartes": 31,
+  "cartes": [
+    {
+      "id": "5E-CH15-001",
+      "lecon": "Observer et décrire une sphère et une boule",
+      "type": "definition",
+      "recto": "Qu'est-ce qu'une sphère de centre $O$ et de rayon $r$ ?",
+      "verso": "C'est l'ensemble des points situés à la distance $r$ de $O$. C'est une surface, comme la peau d'un ballon.",
+      "difficulte": 1,
+      "tags": ["sphere", "definition"]
+    },
+    {
+      "id": "5E-CH15-002",
+      "lecon": "Observer et décrire une sphère et une boule",
+      "type": "definition",
+      "recto": "Qu'est-ce qu'une boule de centre $O$ et de rayon $r$ ?",
+      "verso": "C'est l'ensemble des points situés à une distance inférieure ou égale à $r$ de $O$. C'est un solide plein, comme une orange.",
+      "difficulte": 1,
+      "tags": ["boule", "definition"]
+    },
+    {
+      "id": "5E-CH15-003",
+      "lecon": "Observer et décrire une sphère et une boule",
+      "type": "definition",
+      "recto": "A quelle distinction du plan la différence entre la sphère et la boule correspond-elle ?",
+      "verso": "A celle du cercle et du disque : le cercle est la ligne, le disque la surface pleine. Transportée dans l'espace, la sphère est la peau et la boule est le plein.",
+      "difficulte": 2,
+      "tags": ["sphere", "boule", "cercle-disque"]
+    },
+    {
+      "id": "5E-CH15-004",
+      "lecon": "Observer et décrire une sphère et une boule",
+      "type": "formule",
+      "recto": "Comment le diamètre d'une sphère se calcule-t-il à partir de son rayon ?",
+      "verso": "Le diamètre vaut le double du rayon : $d = 2 \\times r$. Inversement, $r = d \\div 2$, et c'est le rayon qui sert dans toutes les formules.",
+      "difficulte": 1,
+      "tags": ["rayon", "diametre"]
+    },
+    {
+      "id": "5E-CH15-005",
+      "lecon": "Observer et décrire une sphère et une boule",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on un grand cercle d'une sphère ?",
+      "verso": "C'est un cercle qui a le même centre et le même rayon que la sphère. Sur un globe terrestre, l'équateur est un grand cercle.",
+      "difficulte": 2,
+      "tags": ["grand-cercle", "definition"]
+    },
+    {
+      "id": "5E-CH15-006",
+      "lecon": "Observer et décrire une sphère et une boule",
+      "type": "formule",
+      "recto": "Combien de grands cercles une sphère possède-t-elle ?",
+      "verso": "Une infinité : tout plan passant par le centre en donne un. Ils ont tous le même rayon que la sphère, donc tous le même périmètre.",
+      "difficulte": 2,
+      "tags": ["grand-cercle", "propriete"]
+    },
+    {
+      "id": "5E-CH15-007",
+      "lecon": "Observer et décrire une sphère et une boule",
+      "type": "definition",
+      "recto": "Quelle est la nature de la section d'une sphère par un plan ?",
+      "verso": "C'est toujours un cercle, quelle que soit la façon dont le plan coupe la sphère. Ce n'est jamais un ovale ni une forme irrégulière.",
+      "difficulte": 2,
+      "tags": ["section", "cercle"]
+    },
+    {
+      "id": "5E-CH15-008",
+      "lecon": "Observer et décrire une sphère et une boule",
+      "type": "formule",
+      "recto": "Dans quel cas la section d'une sphère par un plan est-elle un grand cercle ?",
+      "verso": "Lorsque le plan passe par le centre de la sphère. La section est alors la plus grande possible, et son rayon est celui de la sphère.",
+      "difficulte": 2,
+      "tags": ["section", "grand-cercle"]
+    },
+    {
+      "id": "5E-CH15-009",
+      "lecon": "Observer et décrire une sphère et une boule",
+      "type": "formule",
+      "recto": "Comment évolue le rayon de la section lorsque le plan de coupe s'éloigne du centre de la sphère ?",
+      "verso": "Le cercle obtenu devient de plus en plus petit. Si le plan s'éloigne trop, il ne touche plus la sphère du tout.",
+      "difficulte": 3,
+      "tags": ["section", "rayon", "variation"]
+    },
+    {
+      "id": "5E-CH15-010",
+      "lecon": "Observer et décrire une sphère et une boule",
+      "type": "definition",
+      "recto": "Qu'est-ce qu'une demi-boule ?",
+      "verso": "C'est la moitié d'une boule, obtenue en la coupant par un plan qui passe par le centre. La calebasse, le bol et le dôme en ont la forme.",
+      "difficulte": 1,
+      "tags": ["demi-boule", "calebasse"]
+    },
+    {
+      "id": "5E-CH15-011",
+      "lecon": "Observer et décrire une sphère et une boule",
+      "type": "formule",
+      "recto": "Comment reconnaît-on qu'un point est sur la sphère, dans la boule ou à l'extérieur ?",
+      "verso": "On compare sa distance au centre avec le rayon $r$ : distance égale à $r$, le point est sur la sphère ; distance plus petite, il est dans la boule ; distance plus grande, il est à l'extérieur.",
+      "difficulte": 2,
+      "tags": ["position-point", "rayon"]
+    },
+    {
+      "id": "5E-CH15-012",
+      "lecon": "Observer et décrire une sphère et une boule",
+      "type": "definition",
+      "recto": "Pourquoi le centre d'une sphère n'appartient-il pas à cette sphère ?",
+      "verso": "Parce que sa distance au centre vaut $0$ et non $r$ : il n'est pas sur la peau. Il appartient en revanche à la boule, qui contient tout l'intérieur.",
+      "difficulte": 3,
+      "tags": ["centre", "sphere", "piege"]
+    },
+    {
+      "id": "5E-CH15-013",
+      "lecon": "Observer et décrire une sphère et une boule",
+      "type": "definition",
+      "recto": "Pourquoi ne parle-t-on jamais du volume d'une sphère ?",
+      "verso": "Parce qu'une sphère est une surface : elle a une aire, pas de volume. C'est la boule, solide plein, qui possède un volume.",
+      "difficulte": 3,
+      "tags": ["sphere", "boule", "piege"]
+    },
+    {
+      "id": "5E-CH15-014",
+      "lecon": "Observer et décrire une sphère et une boule",
+      "type": "definition",
+      "recto": "Sur un globe terrestre, que repèrent la longitude et la latitude ?",
+      "verso": "La longitude repère la position vers l'Est ou vers l'Ouest, le long des méridiens. La latitude repère la position vers le Nord ou vers le Sud, le long des parallèles.",
+      "difficulte": 2,
+      "tags": ["globe", "longitude", "latitude"]
+    },
+    {
+      "id": "5E-CH15-015",
+      "lecon": "Observer et décrire une sphère et une boule",
+      "type": "formule",
+      "recto": "Pourquoi le tropique du Cancer n'est-il pas un grand cercle du globe terrestre ?",
+      "verso": "Parce qu'un grand cercle doit avoir le même centre et le même rayon que la sphère. Ce parallèle est situé plus haut : son centre n'est pas celui de la Terre et son rayon est plus petit. Seul l'équateur est un grand cercle parmi les parallèles.",
+      "difficulte": 3,
+      "tags": ["globe", "grand-cercle", "parallele"]
+    },
+    {
+      "id": "5E-CH15-016",
+      "lecon": "Aire de la sphère et volume de la boule",
+      "type": "formule",
+      "recto": "Quelle formule donne l'aire d'une sphère de rayon $r$ ?",
+      "verso": "$A = 4 \\times \\pi \\times r \\times r$, avec $\\pi \\approx 3{,}14$. Le résultat s'exprime en cm$^{2}$ ou en m$^{2}$.",
+      "difficulte": 1,
+      "tags": ["aire", "sphere", "formule"]
+    },
+    {
+      "id": "5E-CH15-017",
+      "lecon": "Aire de la sphère et volume de la boule",
+      "type": "formule",
+      "recto": "Quelle formule donne le volume d'une boule de rayon $r$ ?",
+      "verso": "$V = \\left(4 \\times \\pi \\times r \\times r \\times r\\right) \\div 3$, avec $\\pi \\approx 3{,}14$. Le résultat s'exprime en cm$^{3}$ ou en m$^{3}$.",
+      "difficulte": 1,
+      "tags": ["volume", "boule", "formule"]
+    },
+    {
+      "id": "5E-CH15-018",
+      "lecon": "Aire de la sphère et volume de la boule",
+      "type": "formule",
+      "recto": "Comment obtient-on le volume d'une demi-boule ?",
+      "verso": "On calcule le volume de la boule entière de même rayon, puis on en prend la moitié. Il n'y a pas de formule nouvelle, seulement une division par $2$ à la fin.",
+      "difficulte": 1,
+      "tags": ["demi-boule", "volume"]
+    },
+    {
+      "id": "5E-CH15-019",
+      "lecon": "Aire de la sphère et volume de la boule",
+      "type": "formule",
+      "recto": "Quel contrôle rapide évite de confondre la formule de l'aire et celle du volume ?",
+      "verso": "On compte les $r$ : le rayon apparaît deux fois dans une aire, qui s'écrit en cm$^{2}$, et trois fois dans un volume, qui s'écrit en cm$^{3}$.",
+      "difficulte": 2,
+      "tags": ["aire", "volume", "controle"]
+    },
+    {
+      "id": "5E-CH15-020",
+      "lecon": "Aire de la sphère et volume de la boule",
+      "type": "formule",
+      "recto": "Comment calcule-t-on l'aire extérieure d'un dôme en forme de demi-sphère ?",
+      "verso": "On calcule l'aire de la sphère entière de même rayon, puis on en prend la moitié. Pour un rayon de $4$ m : $4 \\times 3{,}14 \\times 16 = 200{,}96$ m$^{2}$, donc $100{,}48$ m$^{2}$ à peindre.",
+      "difficulte": 2,
+      "tags": ["aire", "demi-sphere", "dome"]
+    },
+    {
+      "id": "5E-CH15-021",
+      "lecon": "Aire de la sphère et volume de la boule",
+      "type": "formule",
+      "recto": "Par combien l'aire d'une sphère est-elle multipliée quand on double son rayon ?",
+      "verso": "Par $4$, et non par $2$. Le rayon apparaît deux fois dans la formule : on double donc deux facteurs à la fois, et $2 \\times 2 = 4$.",
+      "difficulte": 3,
+      "tags": ["aire", "agrandissement", "piege"]
+    },
+    {
+      "id": "5E-CH15-022",
+      "lecon": "Aire de la sphère et volume de la boule",
+      "type": "formule",
+      "recto": "Par combien le volume d'une boule est-il multiplié quand on double son rayon ?",
+      "verso": "Par $8$, et non par $2$. Le rayon apparaît trois fois dans la formule : on double donc trois facteurs à la fois, et $2 \\times 2 \\times 2 = 8$.",
+      "difficulte": 3,
+      "tags": ["volume", "agrandissement", "piege"]
+    },
+    {
+      "id": "5E-CH15-023",
+      "lecon": "Aire de la sphère et volume de la boule",
+      "type": "definition",
+      "recto": "Quels verbes d'un énoncé annoncent qu'il faut calculer une aire de sphère ?",
+      "verso": "Recouvrir, peindre, découper, coudre, envelopper. On travaille alors sur la peau, et le résultat s'écrit en cm$^{2}$ ou en m$^{2}$.",
+      "difficulte": 2,
+      "tags": ["aire", "enonce", "vocabulaire"]
+    },
+    {
+      "id": "5E-CH15-024",
+      "lecon": "Aire de la sphère et volume de la boule",
+      "type": "definition",
+      "recto": "Quels verbes d'un énoncé annoncent qu'il faut calculer un volume de boule ?",
+      "verso": "Contenir, remplir, verser, peser, fondre. On travaille alors sur le plein, et le résultat s'écrit en cm$^{3}$, en m$^{3}$ ou en litres.",
+      "difficulte": 2,
+      "tags": ["volume", "enonce", "vocabulaire"]
+    },
+    {
+      "id": "5E-CH15-025",
+      "lecon": "Aire de la sphère et volume de la boule",
+      "type": "formule",
+      "recto": "Comment retrouve-t-on le rayon d'une sphère à partir du périmètre d'un de ses grands cercles ?",
+      "verso": "Ce périmètre vaut $2 \\times \\pi \\times r$ : on le divise donc par $6{,}28$. Un tour de $62{,}8$ cm donne $r = 62{,}8 \\div 6{,}28 = 10$ cm.",
+      "difficulte": 2,
+      "tags": ["rayon", "perimetre", "grand-cercle"]
+    },
+    {
+      "id": "5E-CH15-026",
+      "lecon": "Aire de la sphère et volume de la boule",
+      "type": "formule",
+      "recto": "Comment retrouve-t-on le rayon d'une sphère à partir de son aire ?",
+      "verso": "On divise l'aire par $12{,}56$, ce qui donne $r \\times r$, puis on cherche le nombre qui multiplié par lui-même donne ce résultat. Une aire de $314$ cm$^{2}$ donne $25$, donc $r = 5$ cm.",
+      "difficulte": 3,
+      "tags": ["rayon", "aire", "calcul-inverse"]
+    },
+    {
+      "id": "5E-CH15-027",
+      "lecon": "Aire de la sphère et volume de la boule",
+      "type": "formule",
+      "recto": "Quelles égalités relient le litre, le décimètre cube, le centimètre cube et le mètre cube ?",
+      "verso": "$1$ L $= 1$ dm$^{3} = 1\\,000$ cm$^{3}$, et $1$ m$^{3} = 1\\,000$ L.",
+      "difficulte": 1,
+      "tags": ["unites", "conversion", "litre"]
+    },
+    {
+      "id": "5E-CH15-028",
+      "lecon": "Aire de la sphère et volume de la boule",
+      "type": "formule",
+      "recto": "Dans quel ordre mène-t-on le calcul et la conversion, quand un volume est demandé en litres ?",
+      "verso": "On calcule d'abord le volume en cm$^{3}$ avec la formule, puis on convertit en divisant par $1\\,000$. Jamais l'inverse.",
+      "difficulte": 2,
+      "tags": ["volume", "conversion", "methode"]
+    },
+    {
+      "id": "5E-CH15-029",
+      "lecon": "Aire de la sphère et volume de la boule",
+      "type": "formule",
+      "recto": "Pourquoi l'aire d'une sphère n'est-elle pas égale à $\\pi \\times r \\times r$ ?",
+      "verso": "Parce que $\\pi \\times r \\times r$ est l'aire du disque de même rayon. L'aire de la sphère vaut quatre fois plus : $A = 4 \\times \\pi \\times r \\times r$.",
+      "difficulte": 3,
+      "tags": ["aire", "disque", "piege"]
+    },
+    {
+      "id": "5E-CH15-030",
+      "lecon": "Aire de la sphère et volume de la boule",
+      "type": "formule",
+      "recto": "Quelle erreur guette l'élève qui cherche le volume d'une demi-boule ?",
+      "verso": "Diviser le rayon par $2$ au lieu du volume. On calcule le volume de la boule entière avec le rayon donné, puis on divise ce volume par $2$.",
+      "difficulte": 3,
+      "tags": ["demi-boule", "volume", "piege"]
+    },
+    {
+      "id": "5E-CH15-031",
+      "lecon": "Aire de la sphère et volume de la boule",
+      "type": "formule",
+      "recto": "Quelle part du cylindre qui l'entoure exactement une boule occupe-t-elle ?",
+      "verso": "Les deux tiers. Ce cylindre a le même rayon que la boule et une hauteur égale à son diamètre. C'est la découverte d'Archimède.",
+      "difficulte": 2,
+      "tags": ["boule", "cylindre", "archimede"]
+    }
+  ]
+}

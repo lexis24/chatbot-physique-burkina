@@ -1,0 +1,278 @@
+{
+  "niveau": "3ème",
+  "chapitre": "Chapitre 12 : Angles inscrits",
+  "source": "maths/3eme/Chapitre_12_Angles_inscrits",
+  "nombre_cartes": 30,
+  "cartes": [
+    {
+      "id": "3E-CH12-001",
+      "lecon": "Angle inscrit et angle au centre associé",
+      "type": "definition",
+      "recto": "Qu'est-ce qu'un angle inscrit dans un cercle ?",
+      "verso": "C'est un angle dont le sommet est sur le cercle et dont les deux côtés coupent le cercle en deux autres points.",
+      "difficulte": 1,
+      "tags": ["angle-inscrit", "vocabulaire"]
+    },
+    {
+      "id": "3E-CH12-002",
+      "lecon": "Angle inscrit et angle au centre associé",
+      "type": "definition",
+      "recto": "Qu'est-ce qu'un angle au centre d'un cercle ?",
+      "verso": "C'est un angle dont le sommet est le centre $O$ du cercle. Ses deux côtés sont des rayons, et il intercepte un arc.",
+      "difficulte": 1,
+      "tags": ["angle-au-centre", "vocabulaire"]
+    },
+    {
+      "id": "3E-CH12-003",
+      "lecon": "Angle inscrit et angle au centre associé",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on l'arc intercepté par un angle dans un cercle ?",
+      "verso": "C'est la portion de cercle comprise entre les deux côtés de l'angle, celle que l'angle « voit ».",
+      "difficulte": 1,
+      "tags": ["arc-intercepte", "vocabulaire"]
+    },
+    {
+      "id": "3E-CH12-004",
+      "lecon": "Angle inscrit et angle au centre associé",
+      "type": "formule",
+      "recto": "Dans un cercle, quelle relation lie l'angle au centre et l'angle inscrit qui interceptent le même arc ?",
+      "verso": "L'angle au centre est le double de l'angle inscrit : $\\widehat{AOB} = 2 \\times \\widehat{AMB}$. Autrement dit, l'angle inscrit vaut la moitié : $\\widehat{AMB} = \\dfrac{\\widehat{AOB}}{2}$.",
+      "difficulte": 1,
+      "tags": ["angle-inscrit", "angle-au-centre", "propriete"]
+    },
+    {
+      "id": "3E-CH12-005",
+      "lecon": "Angle inscrit et angle au centre associé",
+      "type": "formule",
+      "recto": "Que devient la mesure d'un angle inscrit lorsqu'on déplace son sommet sur son arc ?",
+      "verso": "Elle ne change pas. Tous les points d'un même arc donnent le même angle inscrit, car cet angle vaut toujours la moitié du même angle au centre.",
+      "difficulte": 2,
+      "tags": ["angle-inscrit", "propriete"]
+    },
+    {
+      "id": "3E-CH12-006",
+      "lecon": "Angle inscrit et angle au centre associé",
+      "type": "definition",
+      "recto": "Deux points $A$ et $B$ délimitent deux arcs d'un cercle : lequel l'angle inscrit $\\widehat{AMB}$ intercepte-t-il ?",
+      "verso": "Celui des deux arcs qui ne contient pas le sommet $M$. C'est pour cela qu'un énoncé précise toujours de quel côté de la corde se trouve le sommet.",
+      "difficulte": 3,
+      "tags": ["arc-intercepte", "angle-inscrit", "piege"]
+    },
+    {
+      "id": "3E-CH12-007",
+      "lecon": "Angle inscrit et angle au centre associé",
+      "type": "definition",
+      "recto": "Quelle condition deux angles d'un cercle doivent-ils remplir pour qu'on puisse les comparer ?",
+      "verso": "Ils doivent intercepter le même arc. Deux angles qui regardent des portions de cercle différentes n'ont aucune raison d'être liés.",
+      "difficulte": 2,
+      "tags": ["arc-intercepte", "condition"]
+    },
+    {
+      "id": "3E-CH12-008",
+      "lecon": "Angle inscrit et angle au centre associé",
+      "type": "formule",
+      "recto": "Quelle erreur guette l'élève qui applique le facteur $2$ entre un angle inscrit et un angle au centre ?",
+      "verso": "L'appliquer à l'envers. Si l'on connaît l'angle inscrit, on multiplie par $2$ ; si l'on connaît l'angle au centre, on divise par $2$.",
+      "difficulte": 3,
+      "tags": ["angle-inscrit", "angle-au-centre", "piege"]
+    },
+    {
+      "id": "3E-CH12-009",
+      "lecon": "Angle inscrit et angle au centre associé",
+      "type": "formule",
+      "recto": "Que vaut la somme des angles au centre qui partagent un cercle en arcs consécutifs ?",
+      "verso": "Elle vaut $360^{\\circ}$, un tour complet. Trois points partageant le cercle en trois arcs égaux donnent donc trois angles au centre de $\\dfrac{360}{3} = 120^{\\circ}$.",
+      "difficulte": 2,
+      "tags": ["angle-au-centre", "tour-complet"]
+    },
+    {
+      "id": "3E-CH12-010",
+      "lecon": "Angle inscrit et angle au centre associé",
+      "type": "formule",
+      "recto": "Un triangle équilatéral $ABC$ est inscrit dans un cercle : sous quel angle un point $D$ de l'arc contenant $C$ voit-il $\\left[AB\\right]$ ?",
+      "verso": "Sous un angle de $60^{\\circ}$. L'angle au centre $\\widehat{AOB}$ vaut $\\dfrac{360}{3} = 120^{\\circ}$, et l'angle inscrit $\\widehat{ADB}$ en est la moitié.",
+      "difficulte": 2,
+      "tags": ["triangle-equilateral", "angle-inscrit", "angle-au-centre"]
+    },
+    {
+      "id": "3E-CH12-011",
+      "lecon": "Angle inscrit et angle au centre associé",
+      "type": "definition",
+      "recto": "Pourquoi l'angle au centre est-il plus ouvert que l'angle inscrit qui intercepte le même arc ?",
+      "verso": "Parce que le centre est plus près de l'arc que le bord du cercle : il le voit plus grand. C'est le moyen de retenir le sens de la règle, l'angle au centre est le double.",
+      "difficulte": 2,
+      "tags": ["angle-au-centre", "angle-inscrit", "sens"]
+    },
+    {
+      "id": "3E-CH12-012",
+      "lecon": "Triangle inscrit dans un demi-cercle",
+      "type": "formule",
+      "recto": "Que peut-on dire d'un triangle inscrit dans un cercle dont l'un des côtés est un diamètre ?",
+      "verso": "Il est rectangle, et l'angle droit se trouve au sommet opposé au diamètre.",
+      "difficulte": 1,
+      "tags": ["demi-cercle", "triangle-rectangle", "propriete"]
+    },
+    {
+      "id": "3E-CH12-013",
+      "lecon": "Triangle inscrit dans un demi-cercle",
+      "type": "formule",
+      "recto": "Pourquoi un triangle inscrit dans un demi-cercle est-il rectangle ?",
+      "verso": "Parce que le diamètre $\\left[AB\\right]$ donne un angle au centre plat : $\\widehat{AOB} = 180^{\\circ}$. L'angle inscrit $\\widehat{AMB}$ intercepte le même arc, donc il mesure $\\dfrac{180}{2} = 90^{\\circ}$.",
+      "difficulte": 2,
+      "tags": ["demi-cercle", "demonstration"]
+    },
+    {
+      "id": "3E-CH12-014",
+      "lecon": "Triangle inscrit dans un demi-cercle",
+      "type": "formule",
+      "recto": "Quelle erreur guette l'élève qui place l'angle droit d'un triangle inscrit dans un demi-cercle ?",
+      "verso": "Le placer sur le diamètre. L'angle droit est toujours au sommet opposé au diamètre, jamais à l'une de ses extrémités.",
+      "difficulte": 3,
+      "tags": ["demi-cercle", "triangle-rectangle", "piege"]
+    },
+    {
+      "id": "3E-CH12-015",
+      "lecon": "Triangle inscrit dans un demi-cercle",
+      "type": "formule",
+      "recto": "Quelle est la réciproque de la propriété du triangle inscrit dans un demi-cercle ?",
+      "verso": "Si un triangle est rectangle, alors son hypoténuse est un diamètre du cercle qui passe par ses trois sommets.",
+      "difficulte": 2,
+      "tags": ["reciproque", "triangle-rectangle"]
+    },
+    {
+      "id": "3E-CH12-016",
+      "lecon": "Triangle inscrit dans un demi-cercle",
+      "type": "formule",
+      "recto": "Où se trouve le centre du cercle circonscrit à un triangle rectangle ?",
+      "verso": "Au milieu de l'hypoténuse, puisque l'hypoténuse est un diamètre de ce cercle. Il n'y a donc aucune médiatrice à tracer pour le placer.",
+      "difficulte": 1,
+      "tags": ["cercle-circonscrit", "triangle-rectangle"]
+    },
+    {
+      "id": "3E-CH12-017",
+      "lecon": "Triangle inscrit dans un demi-cercle",
+      "type": "formule",
+      "recto": "Que vaut le rayon du cercle circonscrit à un triangle rectangle ?",
+      "verso": "La moitié de l'hypoténuse. Pour une hypoténuse de $12$ dm, le rayon vaut $\\dfrac{12}{2} = 6$ dm.",
+      "difficulte": 2,
+      "tags": ["cercle-circonscrit", "rayon", "triangle-rectangle"]
+    },
+    {
+      "id": "3E-CH12-018",
+      "lecon": "Triangle inscrit dans un demi-cercle",
+      "type": "formule",
+      "recto": "Que vaut la somme des deux angles aigus d'un triangle rectangle ?",
+      "verso": "Elle vaut $90^{\\circ}$, car l'angle droit occupe déjà la moitié des $180^{\\circ}$ du triangle. Connaître l'un des deux angles aigus donne aussitôt l'autre.",
+      "difficulte": 1,
+      "tags": ["triangle-rectangle", "somme-des-angles"]
+    },
+    {
+      "id": "3E-CH12-019",
+      "lecon": "Triangle inscrit dans un demi-cercle",
+      "type": "formule",
+      "recto": "Pourquoi un triangle inscrit dans un cercle n'est-il pas rectangle pour autant ?",
+      "verso": "Parce qu'il ne l'est que si l'un de ses côtés est un diamètre, c'est-à-dire s'il passe par le centre du cercle. Sans diamètre, aucune conclusion n'est possible.",
+      "difficulte": 3,
+      "tags": ["demi-cercle", "condition", "piege"]
+    },
+    {
+      "id": "3E-CH12-020",
+      "lecon": "Triangle inscrit dans un demi-cercle",
+      "type": "formule",
+      "recto": "Quelles hypothèses faut-il vérifier avant d'affirmer qu'un triangle inscrit est rectangle ?",
+      "verso": "Que l'un de ses côtés passe par le centre du cercle, donc qu'il est bien un diamètre, et que le troisième sommet appartient au cercle.",
+      "difficulte": 2,
+      "tags": ["demi-cercle", "hypotheses"]
+    },
+    {
+      "id": "3E-CH12-021",
+      "lecon": "Triangle inscrit dans un demi-cercle",
+      "type": "formule",
+      "recto": "Pourquoi mesurer l'angle sur trois dessins ne démontre-t-il pas que tout triangle inscrit dans un demi-cercle est rectangle ?",
+      "verso": "Parce que trois mesures ne donnent qu'une conjecture : le rapporteur ne distingue pas $89^{\\circ}$ de $90^{\\circ}$, et trois dessins ne disent rien des autres positions du sommet.",
+      "difficulte": 3,
+      "tags": ["demonstration", "conjecture"]
+    },
+    {
+      "id": "3E-CH12-022",
+      "lecon": "Angles inscrits interceptant le même arc",
+      "type": "formule",
+      "recto": "Que peut-on dire de deux angles inscrits dans un même cercle qui interceptent le même arc ?",
+      "verso": "Ils ont la même mesure, quelle que soit la position de leurs sommets sur cet arc.",
+      "difficulte": 1,
+      "tags": ["angles-inscrits", "meme-arc", "propriete"]
+    },
+    {
+      "id": "3E-CH12-023",
+      "lecon": "Angles inscrits interceptant le même arc",
+      "type": "definition",
+      "recto": "Pour deux angles inscrits, que signifie concrètement la condition « intercepter le même arc » ?",
+      "verso": "Leurs côtés passent par les deux mêmes points $A$ et $B$ du cercle, et leurs sommets sont du même côté de la corde $\\left[AB\\right]$.",
+      "difficulte": 2,
+      "tags": ["meme-arc", "condition"]
+    },
+    {
+      "id": "3E-CH12-024",
+      "lecon": "Angles inscrits interceptant le même arc",
+      "type": "formule",
+      "recto": "Pourquoi deux angles inscrits qui interceptent le même arc sont-ils égaux ?",
+      "verso": "Parce qu'ils valent tous les deux la moitié du même angle au centre. Deux nombres égaux à la moitié d'un même nombre sont égaux.",
+      "difficulte": 2,
+      "tags": ["meme-arc", "demonstration"]
+    },
+    {
+      "id": "3E-CH12-025",
+      "lecon": "Angles inscrits interceptant le même arc",
+      "type": "formule",
+      "recto": "Que vaut la somme de deux angles inscrits dont les sommets sont de part et d'autre de la corde $\\left[AB\\right]$ ?",
+      "verso": "Elle vaut $180^{\\circ}$ : ces deux angles sont supplémentaires. Si l'un mesure $32^{\\circ}$, l'autre mesure $180 - 32 = 148^{\\circ}$.",
+      "difficulte": 2,
+      "tags": ["supplementaires", "corde"]
+    },
+    {
+      "id": "3E-CH12-026",
+      "lecon": "Angles inscrits interceptant le même arc",
+      "type": "definition",
+      "recto": "Que veut dire que deux angles sont supplémentaires ?",
+      "verso": "Leur somme vaut $180^{\\circ}$. Ainsi $40^{\\circ}$ et $140^{\\circ}$ sont supplémentaires.",
+      "difficulte": 1,
+      "tags": ["supplementaires", "vocabulaire"]
+    },
+    {
+      "id": "3E-CH12-027",
+      "lecon": "Angles inscrits interceptant le même arc",
+      "type": "formule",
+      "recto": "Pourquoi deux angles inscrits situés de part et d'autre d'une corde ont-ils pour somme $180^{\\circ}$ ?",
+      "verso": "Ils interceptent les deux arcs délimités par la corde, et ces arcs forment le cercle entier : les angles au centre correspondants ont pour somme $360^{\\circ}$, donc les angles inscrits $180^{\\circ}$.",
+      "difficulte": 3,
+      "tags": ["supplementaires", "demonstration"]
+    },
+    {
+      "id": "3E-CH12-028",
+      "lecon": "Angles inscrits interceptant le même arc",
+      "type": "formule",
+      "recto": "Quelle vérification faut-il faire avant de conclure que deux angles inscrits sont égaux ?",
+      "verso": "Regarder de quel côté de la corde se trouvent les deux sommets. Du même côté, les angles sont égaux ; de part et d'autre, ils sont supplémentaires.",
+      "difficulte": 3,
+      "tags": ["meme-arc", "piege"]
+    },
+    {
+      "id": "3E-CH12-029",
+      "lecon": "Angles inscrits interceptant le même arc",
+      "type": "formule",
+      "recto": "Comment l'angle sous lequel un point du cercle voit une corde varie-t-il avec l'éloignement de ce point ?",
+      "verso": "Il ne varie pas. Deux points d'un même arc voient la corde sous le même angle, même si l'un en est bien plus éloigné que l'autre.",
+      "difficulte": 2,
+      "tags": ["meme-arc", "distance"]
+    },
+    {
+      "id": "3E-CH12-030",
+      "lecon": "Angles inscrits interceptant le même arc",
+      "type": "definition",
+      "recto": "A quoi sert la propriété des angles inscrits interceptant le même arc ?",
+      "verso": "A justifier que deux angles sont égaux, et à calculer une mesure d'angle sans avoir besoin d'un rapporteur.",
+      "difficulte": 1,
+      "tags": ["meme-arc", "utilisation"]
+    }
+  ]
+}

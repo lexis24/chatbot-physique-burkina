@@ -1,0 +1,287 @@
+{
+  "niveau": "5ème",
+  "chapitre": "Chapitre 1 : La symétrie centrale (1) : construction",
+  "source": "maths/5eme/Chapitre_1_Symetrie_centrale_construction",
+  "nombre_cartes": 31,
+  "cartes": [
+    {
+      "id": "5E-CH01-001",
+      "lecon": "Symétrique d'un point par rapport à un point",
+      "type": "definition",
+      "recto": "Quand dit-on que deux points A et $A'$ sont symétriques par rapport à un point O ?",
+      "verso": "Lorsque O est le milieu du segment $[AA']$. Le point O s'appelle alors le centre de symétrie.",
+      "difficulte": 1,
+      "tags": ["symetrie-centrale", "definition", "milieu"]
+    },
+    {
+      "id": "5E-CH01-002",
+      "lecon": "Symétrique d'un point par rapport à un point",
+      "type": "definition",
+      "recto": "Qu'est-ce que la symétrie centrale ?",
+      "verso": "C'est la transformation qui fait tourner d'un demi-tour autour d'un point appelé centre. Chaque point vient alors se poser exactement sur son symétrique.",
+      "difficulte": 1,
+      "tags": ["symetrie-centrale", "demi-tour"]
+    },
+    {
+      "id": "5E-CH01-003",
+      "lecon": "Symétrique d'un point par rapport à un point",
+      "type": "formule",
+      "recto": "Quelles trois conditions concrètes traduisent que $A'$ est le symétrique de A par rapport à O ?",
+      "verso": "Les points A, O et $A'$ sont alignés, le point O est entre A et $A'$, et $OA = OA'$.",
+      "difficulte": 2,
+      "tags": ["symetrie-centrale", "alignement", "conditions"]
+    },
+    {
+      "id": "5E-CH01-004",
+      "lecon": "Symétrique d'un point par rapport à un point",
+      "type": "formule",
+      "recto": "Quelle relation lie $AA'$ et $OA$ lorsque $A'$ est le symétrique de A par rapport à O ?",
+      "verso": "$AA' = 2 \\times OA$, car O coupe $[AA']$ en deux moitiés égales. Si $OA = 3$ cm, alors $AA' = 6$ cm.",
+      "difficulte": 1,
+      "tags": ["symetrie-centrale", "longueur", "double"]
+    },
+    {
+      "id": "5E-CH01-005",
+      "lecon": "Symétrique d'un point par rapport à un point",
+      "type": "formule",
+      "recto": "Comment retrouve-t-on $OA$ quand on connaît seulement la distance $AA'$ entre un point et son symétrique ?",
+      "verso": "On en prend la moitié : $OA = AA' \\div 2$. Si deux trous symétriques sont distants de $36$ cm, chacun est à $18$ cm du centre.",
+      "difficulte": 2,
+      "tags": ["symetrie-centrale", "longueur", "moitie"]
+    },
+    {
+      "id": "5E-CH01-006",
+      "lecon": "Symétrique d'un point par rapport à un point",
+      "type": "definition",
+      "recto": "Si $A'$ est le symétrique de A par rapport à O, que peut-on dire du point A ?",
+      "verso": "A est le symétrique de $A'$ par rapport à O. La définition marche dans les deux sens : les deux points se partagent simplement le même milieu.",
+      "difficulte": 2,
+      "tags": ["symetrie-centrale", "reciprocite"]
+    },
+    {
+      "id": "5E-CH01-007",
+      "lecon": "Symétrique d'un point par rapport à un point",
+      "type": "definition",
+      "recto": "Quel est le symétrique du point O par rapport à O lui-même ?",
+      "verso": "C'est le point O lui-même. C'est le seul point qui ne bouge pas dans le demi-tour.",
+      "difficulte": 2,
+      "tags": ["symetrie-centrale", "cas-particulier", "centre"]
+    },
+    {
+      "id": "5E-CH01-008",
+      "lecon": "Symétrique d'un point par rapport à un point",
+      "type": "definition",
+      "recto": "De combien de degrés tourne-t-on lorsqu'on fait un demi-tour ?",
+      "verso": "De $180$ degrés, c'est-à-dire la moitié d'un tour complet, qui en fait $360$.",
+      "difficulte": 1,
+      "tags": ["demi-tour", "degres"]
+    },
+    {
+      "id": "5E-CH01-009",
+      "lecon": "Symétrique d'un point par rapport à un point",
+      "type": "formule",
+      "recto": "Comment construit-on à la règle graduée le symétrique d'un point A par rapport à O ?",
+      "verso": "On trace la demi-droite $[AO)$ et on la prolonge au-delà de O, on mesure $OA$, puis on place $A'$ sur ce prolongement avec $OA' = OA$.",
+      "difficulte": 2,
+      "tags": ["construction", "regle-graduee"]
+    },
+    {
+      "id": "5E-CH01-010",
+      "lecon": "Symétrique d'un point par rapport à un point",
+      "type": "formule",
+      "recto": "Comment construit-on le symétrique d'un point A par rapport à O avec une règle non graduée et un compas ?",
+      "verso": "On trace la droite $(AO)$, on pointe le compas en O avec l'écartement $OA$, puis on trace un arc qui coupe $(AO)$ de l'autre côté de O : ce point d'intersection est $A'$.",
+      "difficulte": 2,
+      "tags": ["construction", "compas"]
+    },
+    {
+      "id": "5E-CH01-011",
+      "lecon": "Symétrique d'un point par rapport à un point",
+      "type": "formule",
+      "recto": "Pourquoi la construction au compas donne-t-elle le bon point sans qu'on mesure quoi que ce soit ?",
+      "verso": "L'arc tracé depuis O réunit tous les points situés à la distance $OA$ de O. Il coupe $(AO)$ en A et en un second point, au-delà de O : ce second point remplit les trois conditions de la définition.",
+      "difficulte": 3,
+      "tags": ["compas", "justification"]
+    },
+    {
+      "id": "5E-CH01-012",
+      "lecon": "Symétrique d'un point par rapport à un point",
+      "type": "formule",
+      "recto": "Comment trouve-t-on le centre O lorsqu'on connaît un point A et son symétrique $A'$ ?",
+      "verso": "On prend le milieu de $[AA']$ : on trace le segment, on mesure et on divise par $2$. Il n'y a qu'un seul centre possible, car un segment n'a qu'un seul milieu.",
+      "difficulte": 2,
+      "tags": ["centre", "milieu", "recherche"]
+    },
+    {
+      "id": "5E-CH01-013",
+      "lecon": "Symétrique d'un point par rapport à un point",
+      "type": "formule",
+      "recto": "Que signifie la phrase « B est le symétrique de C par rapport à A » en termes de milieu ?",
+      "verso": "Elle signifie que A est le milieu de $[BC]$. On trace donc la droite $(AB)$ et on place C de l'autre côté de A, avec $AC = AB$.",
+      "difficulte": 2,
+      "tags": ["symetrie-centrale", "lecture-enonce"]
+    },
+    {
+      "id": "5E-CH01-014",
+      "lecon": "Symétrique d'un point par rapport à un point",
+      "type": "definition",
+      "recto": "Qu'est-ce qui distingue la symétrie axiale de la symétrie centrale ?",
+      "verso": "La symétrie axiale est un pliage le long d'une droite, et ce qui compte est l'angle droit avec l'axe. La symétrie centrale est un demi-tour autour d'un point, et ce qui compte est l'alignement avec le centre, milieu de $[AA']$.",
+      "difficulte": 2,
+      "tags": ["symetrie-axiale", "symetrie-centrale", "distinction"]
+    },
+    {
+      "id": "5E-CH01-015",
+      "lecon": "Symétrique d'un point par rapport à un point",
+      "type": "formule",
+      "recto": "Pourquoi l'égalité $OA = OA'$ ne suffit-elle pas à faire de $A'$ le symétrique de A par rapport à O ?",
+      "verso": "Parce que tous les points situés à la distance $OA$ de O forment un cercle entier. Il faut de plus que A, O et $A'$ soient alignés et que O soit entre A et $A'$.",
+      "difficulte": 3,
+      "tags": ["piege", "conditions", "alignement"]
+    },
+    {
+      "id": "5E-CH01-016",
+      "lecon": "Symétrique d'un point par rapport à un point",
+      "type": "formule",
+      "recto": "Quel point obtient-on en piquant le compas en A au lieu de O, avec l'écartement $OA$ ?",
+      "verso": "On retombe sur le point O lui-même, et non sur le symétrique de A. La pointe sèche doit être posée en O, puis l'arc reporté de l'autre côté de O.",
+      "difficulte": 3,
+      "tags": ["piege", "compas", "erreur"]
+    },
+    {
+      "id": "5E-CH01-017",
+      "lecon": "Symétrique d'une figure par rapport à un point",
+      "type": "formule",
+      "recto": "Comment construit-on le symétrique d'un triangle, d'un segment ou d'un polygone par rapport à un point O ?",
+      "verso": "On construit le symétrique de chacun de ses points clés par rapport à O, puis on relie ces symétriques dans le même ordre que sur le dessin de départ.",
+      "difficulte": 1,
+      "tags": ["construction", "points-cles"]
+    },
+    {
+      "id": "5E-CH01-018",
+      "lecon": "Symétrique d'une figure par rapport à un point",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on un point clé dans une construction de symétrique ?",
+      "verso": "Un sommet, une extrémité de segment ou le centre d'un cercle : ce sont les seuls points qu'il suffit de construire pour pouvoir retracer tout le dessin.",
+      "difficulte": 2,
+      "tags": ["points-cles", "vocabulaire"]
+    },
+    {
+      "id": "5E-CH01-019",
+      "lecon": "Symétrique d'une figure par rapport à un point",
+      "type": "formule",
+      "recto": "Que devient un segment $[AB]$ dans une symétrie de centre O ?",
+      "verso": "Il devient le segment $[A'B']$, de même longueur que $[AB]$. Il n'y a que deux points clés à construire : les deux extrémités.",
+      "difficulte": 1,
+      "tags": ["segment", "longueur"]
+    },
+    {
+      "id": "5E-CH01-020",
+      "lecon": "Symétrique d'une figure par rapport à un point",
+      "type": "formule",
+      "recto": "Que devient une droite $(d)$ dans une symétrie de centre O ?",
+      "verso": "Elle devient une droite $(d')$ parallèle à $(d)$. Deux points clés suffisent, car deux points définissent une droite.",
+      "difficulte": 2,
+      "tags": ["droite", "parallele"]
+    },
+    {
+      "id": "5E-CH01-021",
+      "lecon": "Symétrique d'une figure par rapport à un point",
+      "type": "formule",
+      "recto": "Que devient un cercle de centre C et de rayon $r$ dans une symétrie de centre O ?",
+      "verso": "Il devient le cercle de centre $C'$, symétrique de C, et de même rayon $r$. Il n'y a qu'un seul point clé à construire : le centre.",
+      "difficulte": 2,
+      "tags": ["cercle", "rayon", "points-cles"]
+    },
+    {
+      "id": "5E-CH01-022",
+      "lecon": "Symétrique d'une figure par rapport à un point",
+      "type": "formule",
+      "recto": "Combien de points clés faut-il construire pour un triangle, puis pour un polygone quelconque ?",
+      "verso": "Trois pour un triangle, ses trois sommets. Pour un polygone, autant de points clés que de sommets, et l'on obtient un polygone de même nature.",
+      "difficulte": 2,
+      "tags": ["triangle", "polygone", "points-cles"]
+    },
+    {
+      "id": "5E-CH01-023",
+      "lecon": "Symétrique d'une figure par rapport à un point",
+      "type": "definition",
+      "recto": "Quel centre utilise-t-on pour construire les symétriques des différents sommets d'un même dessin ?",
+      "verso": "Le même centre O pour tous les points, sans exception. Changer de centre d'un sommet à l'autre donne une construction fausse.",
+      "difficulte": 2,
+      "tags": ["centre", "piege"]
+    },
+    {
+      "id": "5E-CH01-024",
+      "lecon": "Symétrique d'une figure par rapport à un point",
+      "type": "formule",
+      "recto": "Dans quel ordre relie-t-on les points une fois tous les symétriques construits ?",
+      "verso": "Dans le même ordre que sur le dessin de départ. Pour le triangle ABC, on relie $A'$ à $B'$, puis $B'$ à $C'$, puis $C'$ à $A'$.",
+      "difficulte": 2,
+      "tags": ["ordre", "construction", "piege"]
+    },
+    {
+      "id": "5E-CH01-025",
+      "lecon": "Symétrique d'une figure par rapport à un point",
+      "type": "formule",
+      "recto": "Que deviennent les longueurs d'un dessin après un demi-tour autour d'un point ?",
+      "verso": "Elles ne changent pas. Le dessin obtenu a la même forme et la même taille que celui de départ : il est seulement retourné.",
+      "difficulte": 1,
+      "tags": ["longueur", "conservation"]
+    },
+    {
+      "id": "5E-CH01-026",
+      "lecon": "Symétrique d'une figure par rapport à un point",
+      "type": "formule",
+      "recto": "Pourquoi un demi-tour autour d'un point ne change-t-il aucune longueur ?",
+      "verso": "Parce qu'il se fait en bloc : le calque que l'on fait tourner autour de O n'est ni étiré ni plié, donc chaque trait garde forcément sa longueur.",
+      "difficulte": 2,
+      "tags": ["conservation", "justification"]
+    },
+    {
+      "id": "5E-CH01-027",
+      "lecon": "Symétrique d'une figure par rapport à un point",
+      "type": "formule",
+      "recto": "Pourquoi le symétrique d'un cercle de rayon $3$ cm n'est-il pas un cercle de rayon $6$ cm ?",
+      "verso": "Parce qu'un demi-tour ne change aucune longueur : le rayon reste $3$ cm. Seule la place du centre change.",
+      "difficulte": 3,
+      "tags": ["cercle", "piege", "rayon"]
+    },
+    {
+      "id": "5E-CH01-028",
+      "lecon": "Symétrique d'une figure par rapport à un point",
+      "type": "definition",
+      "recto": "Quand dit-on qu'un point O est un centre de symétrie d'un dessin ?",
+      "verso": "Quand le symétrique de ce dessin par rapport à O est le dessin lui-même : après le demi-tour, on retrouve exactement le même tracé, à la même place.",
+      "difficulte": 2,
+      "tags": ["centre-de-symetrie", "definition"]
+    },
+    {
+      "id": "5E-CH01-029",
+      "lecon": "Symétrique d'une figure par rapport à un point",
+      "type": "definition",
+      "recto": "Quels dessins usuels possèdent un centre de symétrie ?",
+      "verso": "Le cercle, dont le centre convient, et le parallélogramme, dont le centre est le croisement des diagonales. Un triangle quelconque, lui, n'en possède aucun.",
+      "difficulte": 2,
+      "tags": ["centre-de-symetrie", "exemples"]
+    },
+    {
+      "id": "5E-CH01-030",
+      "lecon": "Symétrique d'une figure par rapport à un point",
+      "type": "formule",
+      "recto": "Quel est le symétrique du segment $[AB]$ par rapport à son propre milieu O ?",
+      "verso": "C'est le segment $[AB]$ lui-même : le symétrique de A est B, et le symétrique de B est A.",
+      "difficulte": 3,
+      "tags": ["segment", "cas-particulier"]
+    },
+    {
+      "id": "5E-CH01-031",
+      "lecon": "Symétrique d'une figure par rapport à un point",
+      "type": "formule",
+      "recto": "Que se passe-t-il lorsque le centre O choisi est un sommet du dessin de départ ?",
+      "verso": "Ce sommet est son propre symétrique : il appartient donc à la fois au dessin de départ et à son image, et les deux se touchent en ce point.",
+      "difficulte": 3,
+      "tags": ["centre", "cas-particulier"]
+    }
+  ]
+}

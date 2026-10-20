@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Fiche de revision - 5eme - Chapitre 6 : Les angles : opposes par le sommet, alternes-internes, correspondants · Les triangles</title>
+<style>
+/* ===================================================================
+   FICHE DE REVISION, Collection Hakili Lab, Edition 2026
+   Feuille de style autonome, format A4 pret a imprimer.
+   Bleu #005CB9 · Vert #49A145
+   =================================================================== */
+:root{
+  --bleu:#005CB9; --bleu-fonce:#00429A; --bleu-pale:#E8F1FB; --bleu-bord:#B7D2EE;
+  --vert:#49A145; --vert-fonce:#2F7A2C; --vert-pale:#EDF7EC; --vert-bord:#BCE0B9;
+  --gris:#4A4A4A; --gris-clair:#E4E4E4; --rouge:#B3261E;
+}
+@page{
+  size:A4; margin:15mm;
+  @bottom-center{
+    content:"Collection Hakili Lab, Edition 2026  ·  Fiche de revision  ·  " counter(page) "/" counter(pages);
+    font-family:"Segoe UI",Calibri,Arial,sans-serif; font-size:6.6pt; color:#8A8A8A;
+  }
+}
+*{box-sizing:border-box;}
+body{
+  margin:0; font-family:"Segoe UI",Calibri,Arial,sans-serif;
+  font-size:8.4pt; line-height:1.26; color:#1B1B1B;
+}
+p{margin:0 0 3pt;}
+ul{margin:0 0 3pt; padding-left:11pt;}
+li{margin:0 0 1.2pt;}
+b,strong{color:var(--bleu-fonce);}
+
+/* ------------------------------ ENTETE ---------------------------- */
+.entete{
+  display:flex; align-items:stretch; border:1.6pt solid var(--bleu);
+  border-radius:2.5pt; overflow:hidden; margin-bottom:6pt;
+}
+.entete .num{
+  background:var(--bleu); color:#fff; font-size:20pt; font-weight:700;
+  padding:0 8pt; display:flex; align-items:center; justify-content:center; min-width:34pt;
+}
+.entete .txt{padding:3.5pt 8pt; flex:1;}
+.entete .niveau{
+  font-size:7pt; font-weight:700; letter-spacing:.9pt; color:var(--vert-fonce);
+}
+.entete h1{margin:0; font-size:13.5pt; line-height:1.12; color:var(--bleu-fonce); font-weight:700;}
+.entete .sous{font-size:7pt; color:var(--gris); margin-top:1pt;}
+
+/* --------------------------- BANDEAUX ----------------------------- */
+.bandeau{
+  color:#fff; font-weight:700; font-size:9pt; letter-spacing:1pt;
+  padding:2.4pt 7pt; border-radius:2pt; margin:3pt 0 4pt; break-after:avoid; page-break-after:avoid;
+}
+.bandeau.bleu{background:var(--bleu);}
+.bandeau.vert{background:var(--vert);}
+
+/* --------------------------- COLONNES ----------------------------- */
+.cols{column-count:2; column-gap:7mm; column-fill:balance;}
+
+.cols.bal{column-fill:balance;}
+.bloc{margin-bottom:5pt;}
+.keep{break-inside:avoid; page-break-inside:avoid;}
+
+/* --------------------------- LECONS ------------------------------- */
+h2.lecon{
+  margin:0 0 3pt; font-size:8.6pt; font-weight:700; color:#fff; background:var(--bleu-fonce);
+  padding:1.8pt 5pt; border-radius:1.5pt; break-after:avoid; page-break-after:avoid;
+}
+h3.rub{
+  margin:3.5pt 0 1.5pt; font-size:8.2pt; font-weight:700; color:var(--vert-fonce);
+  border-bottom:.7pt solid var(--vert-bord); padding-bottom:.8pt;
+  break-after:avoid; page-break-after:avoid;
+}
+
+/* --------------------------- ENCADRES ----------------------------- */
+.form{
+  background:var(--bleu-pale); border:.8pt solid var(--bleu-bord); border-left:2.6pt solid var(--bleu);
+  border-radius:2pt; padding:2.4pt 5pt; margin:2.2pt 0 3.4pt;
+  break-inside:avoid; page-break-inside:avoid;
+}
+.form .t{
+  display:block; font-size:6.8pt; font-weight:700; letter-spacing:.6pt;
+  color:var(--bleu); margin-bottom:1.5pt;
+}
+.form .c{text-align:center; font-size:9.1pt; margin:1.6pt 0;}
+.note{background:var(--vert-pale); border-left:2.4pt solid var(--vert); padding:2.4pt 5pt; border-radius:1.5pt; margin:2.5pt 0 4pt; break-inside:avoid;}
+
+/* --------------------------- TABLEAUX ----------------------------- */
+table{width:100%; border-collapse:collapse; font-size:7.6pt; margin:2pt 0 4pt; break-inside:avoid;}
+th{background:var(--bleu); color:#fff; font-weight:700; text-align:left; padding:1.8pt 4pt; font-size:7.2pt;}
+td{border:.6pt solid var(--gris-clair); padding:1.8pt 4pt; vertical-align:top;}
+tr{break-inside:avoid;}
+table.var td{text-align:center; font-size:8pt;}
+table.var td.lab{text-align:left; font-weight:700; color:var(--bleu-fonce); background:var(--bleu-pale);}
+
+/* ----------------------------- PIEGES ----------------------------- */
+table.pieges th:first-child{width:44%;}
+table.pieges td:first-child{color:var(--rouge); background:#FDF1F0;}
+.x{font-weight:700;}
+.v{color:var(--vert-fonce); font-weight:700;}
+
+/* ---------------------------- RECAP ------------------------------- */
+ol.recap{margin:0; padding-left:0; list-style:none; counter-reset:r;}
+ol.recap li{
+  counter-increment:r; position:relative; padding-left:13pt; margin-bottom:1.8pt;
+  break-inside:avoid;
+}
+ol.recap li::before{
+  content:counter(r); position:absolute; left:0; top:.3pt;
+  width:10pt; height:10pt; border-radius:50%; background:var(--vert); color:#fff;
+  font-size:6.6pt; font-weight:700; text-align:center; line-height:10pt;
+}
+
+/* --------------------------- MATHS -------------------------------- */
+.m{font-family:Cambria,Georgia,"Times New Roman",serif;}
+i,var{font-family:Cambria,Georgia,"Times New Roman",serif; font-style:italic;}
+.op{font-family:Cambria,Georgia,"Times New Roman",serif; font-style:normal;}
+.f{display:inline-block; vertical-align:middle; text-align:center;
+   margin:0 .12em; line-height:1.06; font-family:Cambria,Georgia,"Times New Roman",serif;}
+.f>span{display:block; padding:0 .2em;}
+.f>span:first-child{border-bottom:.6pt solid currentColor; padding-bottom:.08em;}
+.f>span:last-child{padding-top:.04em;}
+.rad{border-top:.6pt solid currentColor; padding-top:.12em;}
+/* line-height:0 evite que l'exposant n'ecarte les lignes ; position:relative le
+   repositionne sans qu'il heurte la barre de fraction ni le trait du radical. */
+sup,sub{font-size:.68em; line-height:0; position:relative; vertical-align:baseline;}
+sup{top:-.42em;}
+sub{bottom:-.22em;}
+.pt{white-space:nowrap;}
+/* Les fleches n'ont qu'un glyphe atrophie dans la fonte serif : on les force
+   en sans-serif, ou elles sont franches meme a 8 pt. */
+.ar{font-family:"Segoe UI",Calibri,Arial,"DejaVu Sans",sans-serif; font-style:normal;}
+
+/* ------------------- PIEGES : blocs erreur / correction ------------- */
+.pg{font-size:8.1pt; border-left:2.4pt solid var(--rouge); background:#FDF1F0; border-radius:1.5pt;
+    padding:2pt 5pt; margin:0 0 2.8pt; break-inside:avoid; page-break-inside:avoid;}
+.pg .err{color:var(--rouge); font-weight:600;}
+.pg .cor{color:#1B1B1B; margin-top:.8pt;}
+.pg .cor b{color:var(--bleu-fonce);}
+.v{color:var(--vert-fonce); font-weight:700;}
+
+</style>
+</head>
+<body>
+<header class="entete">
+  <div class="num">6</div>
+  <div class="txt">
+    <div class="niveau">5EME &middot; MATHEMATIQUES</div>
+    <h1>Les angles : opposés par le sommet, alternes-internes, correspondants &middot; Les triangles</h1>
+    <div class="sous">Leçon 1 : angles opposés par le sommet &middot; Leçon 2 : angles alternes-internes &middot; Leçon 3 : angles correspondants &middot; Leçon 4 : les triangles, somme des angles et triangles particuliers</div>
+  </div>
+</header>
+
+<div class="bandeau bleu" style="margin-top:0">L'ESSENTIEL</div>
+<div class="cols">
+
+<!-- ================= LECON 1 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 1&nbsp;: Angles opposés par le sommet</h2>
+<p><b>Définition.</b> Quand deux droites se coupent en un point, elles forment deux paires d'<b>angles opposés par le sommet</b> : ce sont les angles situés de part et d'autre du point d'intersection, <b>sans aucun côté commun</b>. <b>Opposés</b> décrit une <b>position</b> ; <b>égaux</b> décrit une <b>mesure</b> : c'est la propriété qui relie les deux.</p></div>
+<div class="form">
+  <span class="t">PROPRIETE&nbsp;: VRAIE TOUJOURS, SANS AUCUNE CONDITION</span>
+  <div class="c m">deux angles <b>opposés par le sommet</b> ont la <b>même mesure</b></div>
+  <div class="c m">deux angles <b>voisins</b> sont <b>supplémentaires</b> : leur somme vaut 180&#176;</div>
+</div>
+<p><b>Conséquence.</b> Une seule mesure suffit à connaître les quatre angles du croisement : si l'un vaut <i>a</i>, les quatre valent, en tournant, <i>a</i>, 180&#176;&#8239;&#8722;&#8239;<i>a</i>, <i>a</i>, 180&#176;&#8239;&#8722;&#8239;<i>a</i>. Leur somme vaut 360&#176;, le tour complet autour du point.</p>
+<p><b>Cas particulier.</b> Si l'un des quatre angles est <b>droit</b>, alors 180&#176;&#8239;&#8722;&#8239;90&#176;&#8239;=&#8239;90&#176; : les quatre angles sont droits et les deux droites sont <b>perpendiculaires</b>.</p>
+</div>
+
+<!-- ================= LECON 2 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 2&nbsp;: Angles alternes-internes</h2>
+<p><b>Définition.</b> Deux droites coupées par une <b>sécante</b> forment huit angles. On y repère :</p></div>
+<ul>
+<li>les <b>alternes-internes</b> : <b>entre</b> les deux droites et <b>de part et d'autre</b> de la sécante ;</li>
+<li>les <b>alternes-externes</b> : à l'<b>extérieur</b> des deux droites et de part et d'autre de la sécante.</li>
+</ul>
+<p>« Alternes » se lit sur la sécante, « internes » se lit entre les droites. Une paire d'angles alternes-internes n'a <b>jamais le même sommet</b>.</p>
+<div class="form">
+  <span class="t">PROPRIETE ET RECIPROQUE&nbsp;: ALTERNES-INTERNES</span>
+  <div class="c m">si (<i>d</i><sub>1</sub>)&#8239;//&#8239;(<i>d</i><sub>2</sub>), alors les angles alternes-internes sont <b>égaux</b></div>
+  <div class="c m">si deux angles alternes-internes sont <b>égaux</b>, alors (<i>d</i><sub>1</sub>)&#8239;//&#8239;(<i>d</i><sub>2</sub>)</div>
+</div>
+<p>Il en va de <b>même pour les alternes-externes</b>. La première propriété part des droites et sert à <b>calculer une mesure</b> ; la seconde part des angles et sert à <b>prouver un parallélisme</b>.</p>
+<p><b>Angles internes du même côté.</b> Situés <b>entre</b> les deux droites mais <b>du même côté</b> de la sécante : si les droites sont <b>parallèles</b>, ils sont <b>supplémentaires</b> (somme 180&#176;).</p>
+<div class="note"><b>Deux parallèles et une sécante.</b> Sur les huit angles, il ne reste que <b>deux mesures</b> différentes, et elles sont supplémentaires : chaque angle est soit égal, soit supplémentaire à celui que l'on connaît.</div>
+</div>
+
+<!-- ================= LECON 3 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 3&nbsp;: Angles correspondants</h2>
+<p><b>Définition.</b> Deux droites coupées par une sécante forment des <b>angles correspondants</b> : ils occupent la <b>même position</b> à chacun des deux croisements, c'est-à-dire du même côté de la sécante, l'un « interne », l'autre « externe ».</p></div>
+<div class="form">
+  <span class="t">PROPRIETE ET RECIPROQUE&nbsp;: CORRESPONDANTS</span>
+  <div class="c m">si (<i>d</i><sub>1</sub>)&#8239;//&#8239;(<i>d</i><sub>2</sub>), alors les angles correspondants sont <b>égaux</b></div>
+  <div class="c m">si deux angles correspondants sont <b>égaux</b>, alors (<i>d</i><sub>1</sub>)&#8239;//&#8239;(<i>d</i><sub>2</sub>)</div>
+</div>
+<p>Les réciproques sont le <b>seul moyen</b> de prouver que deux droites sont parallèles sans les prolonger : on repère une paire d'angles, on vérifie qu'ils ont la même mesure, on cite la propriété et l'on nomme les deux droites. Alternes-internes et correspondants donnent la même information : on passe des uns aux autres par un angle opposé par le sommet.</p>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Les familles d'angles en un coup d'oeil</h3>
+<table>
+<tr><th>Famille et position</th><th>Mesures</th></tr>
+<tr><td><b>Opposés par le sommet</b>&nbsp;: même croisement, face à face, sans côté commun</td><td><b>égaux toujours</b>, sans condition</td></tr>
+<tr><td><b>Voisins</b>&nbsp;: même croisement, un côté commun</td><td>supplémentaires <b>toujours</b></td></tr>
+<tr><td><b>Alternes-internes</b>&nbsp;: entre les droites, de part et d'autre de la sécante</td><td>égaux <b>si les droites sont parallèles</b></td></tr>
+<tr><td><b>Alternes-externes</b>&nbsp;: hors des droites, de part et d'autre de la sécante</td><td>égaux <b>si les droites sont parallèles</b></td></tr>
+<tr><td><b>Correspondants</b>&nbsp;: même position aux deux croisements</td><td>égaux <b>si les droites sont parallèles</b></td></tr>
+<tr><td><b>Internes du même côté</b>&nbsp;: entre les droites, du même côté de la sécante</td><td>supplémentaires <b>si les droites sont parallèles</b></td></tr>
+</table>
+</div>
+
+<!-- ================= LECON 4 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 4&nbsp;: Les triangles : somme des angles et triangles particuliers</h2>
+<div class="form">
+  <span class="t">SOMME DES ANGLES&nbsp;: DANS TOUT TRIANGLE</span>
+  <div class="c m"><span style="display:inline-block;position:relative;line-height:1"><i>A</i><span style="position:absolute;left:0;right:0;top:-.52em;font-size:.8em;font-style:normal;text-align:center">&#710;</span></span>&#8239;+&#8239;<span style="display:inline-block;position:relative;line-height:1"><i>B</i><span style="position:absolute;left:0;right:0;top:-.52em;font-size:.8em;font-style:normal;text-align:center">&#710;</span></span>&#8239;+&#8239;<span style="display:inline-block;position:relative;line-height:1"><i>C</i><span style="position:absolute;left:0;right:0;top:-.52em;font-size:.8em;font-style:normal;text-align:center">&#710;</span></span>&#8239;=&#8239;180&#176;</div>
+  <div class="c m">troisième angle&#8239;=&#8239;180&#176;&#8239;&#8722;&#8239;(somme des deux autres)</div>
+</div></div>
+<p>Un triangle a donc <b>au plus un</b> angle droit et <b>au plus un</b> angle obtus. Si la somme de deux angles atteint ou dépasse 180&#176;, le triangle est <b>impossible</b>. Contrôle gratuit : additionne les trois angles trouvés, tu dois retomber sur 180&#176;.</p>
+<ul>
+<li><b>Equilatéral</b> : trois côtés égaux, donc trois angles de <b>60&#176;</b> (180&#176;&#8239;&#247;&#8239;3).</li>
+<li><b>Rectangle</b> : un angle de <b>90&#176;</b> ; les deux autres sont <b>complémentaires</b>, ils font 90&#176; à eux deux.</li>
+<li><b>Isocèle</b> : deux côtés égaux ; leur sommet commun est le <b>sommet principal</b>, le côté opposé est la <b>base</b>, et les deux angles <b>à la base</b> sont <b>égaux</b>.</li>
+<li><b>Quelconque</b> : trois angles différents.</li>
+</ul>
+</div>
+
+<div class="bloc">
+<div class="form">
+  <span class="t">TRIANGLE ISOCELE&nbsp;: LES DEUX CALCULS</span>
+  <div class="c m">angle à la base&#8239;=&#8239;(180&#176;&#8239;&#8722;&#8239;angle au sommet)&#8239;&#247;&#8239;2</div>
+  <div class="c m">angle au sommet&#8239;=&#8239;180&#176;&#8239;&#8722;&#8239;2&#8239;&#215;&#8239;(angle à la base)</div>
+</div>
+<p><b>Angle extérieur.</b> En prolongeant un côté au-delà d'un sommet, on forme l'<b>angle extérieur</b> en ce sommet, à l'extérieur du triangle. Il est <b>supplémentaire</b> de l'angle du triangle, et il est aussi <b>égal à la somme des deux autres</b> angles.</p>
+<div class="form">
+  <span class="t">ANGLE EXTERIEUR&nbsp;: DEUX CALCULS, MEME RESULTAT</span>
+  <div class="c m">angle extérieur en C&#8239;=&#8239;180&#176;&#8239;&#8722;&#8239;<span style="display:inline-block;position:relative;line-height:1"><i>C</i><span style="position:absolute;left:0;right:0;top:-.52em;font-size:.8em;font-style:normal;text-align:center">&#710;</span></span>&#8239;=&#8239;<span style="display:inline-block;position:relative;line-height:1"><i>A</i><span style="position:absolute;left:0;right:0;top:-.52em;font-size:.8em;font-style:normal;text-align:center">&#710;</span></span>&#8239;+&#8239;<span style="display:inline-block;position:relative;line-height:1"><i>B</i><span style="position:absolute;left:0;right:0;top:-.52em;font-size:.8em;font-style:normal;text-align:center">&#710;</span></span></div>
+</div>
+<p><b>Construction.</b> Un côté et les <b>deux angles qui le touchent</b> suffisent à fixer entièrement le triangle : on trace le côté, on reporte les deux angles à ses extrémités au rapporteur, et le triangle se referme. Calcule le troisième angle <b>avant</b> de construire : il sert à vérifier la figure au rapporteur.</p>
+<div class="note"><b>Réflexe.</b> Pour trouver un angle manquant, cherche dans l'ordre : opposés par le sommet ? alternes-internes ou correspondants, avec des droites parallèles ? somme 180&#176; dans un triangle ?</div>
+</div>
+
+</div>
+
+<div class="bandeau vert">PIEGES ET ERREURS FREQUENTES</div>
+<div class="cols">
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> « Deux angles opposés par le sommet sont supplémentaires. »</div><div class="cor"><span class="v">&#10003;</span> Ils sont <b>égaux</b>. Ce sont les angles <b>voisins</b> qui sont supplémentaires, c'est-à-dire de somme 180&#176;.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> Appeler « opposés par le sommet » deux angles qui ont un côté commun.</div><div class="cor"><span class="v">&#10003;</span> Deux angles opposés par le sommet n'ont <b>aucun</b> côté commun : ils se font face. Deux angles qui partagent un côté sont <b>voisins</b>, donc supplémentaires.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> « Les angles alternes-internes sont toujours égaux. » &nbsp;&middot;&nbsp; « Les correspondants aussi. »</div><div class="cor"><span class="v">&#10003;</span> <b>Seulement si les deux droites sont parallèles.</b> Sans parallélisme, deux angles alternes-internes peuvent parfaitement être différents.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> Justifier une égalité d'angles sans écrire la condition de parallélisme.</div><div class="cor"><span class="v">&#10003;</span> La justification doit <b>citer le parallélisme</b> : « (<i>d</i><sub>1</sub>)&#8239;//&#8239;(<i>d</i><sub>2</sub>) et ces angles sont alternes-internes, donc ils sont égaux. » Sans cette condition, la rédaction est incomplète même si le résultat est juste.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> Confondre les deux sens &nbsp;&middot;&nbsp; conclure « les droites sont parallèles » à partir de deux angles quelconques de la figure.</div><div class="cor"><span class="v">&#10003;</span> « Parallèles, donc angles égaux » et « angles égaux, donc parallèles » sont <b>deux propriétés différentes</b> : vérifie laquelle l'énoncé te permet d'utiliser. Et la paire citée doit être une <b>vraie paire</b> reconnue (alternes-internes ou correspondants) : deux angles pris au hasard ne prouvent rien.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> Un triangle dont les angles mesurent 70&#176;, 60&#176; et 40&#176;.</div><div class="cor"><span class="v">&#10003;</span> 70&#8239;+&#8239;60&#8239;+&#8239;40&#8239;=&#8239;170, et non 180 : ce triangle <b>n'existe pas</b>. La somme des angles d'un triangle vaut <b>toujours</b> 180&#176;.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> Triangle isocèle, un angle de 50&#176; : « l'angle au sommet vaut (180&#176;&#8239;&#8722;&#8239;50&#176;)&#8239;&#247;&#8239;2 ».</div><div class="cor"><span class="v">&#10003;</span> Cette formule donne les angles <b>à la base</b>. Si 50&#176; est un angle à la base, le sommet vaut 180&#176;&#8239;&#8722;&#8239;50&#176;&#8239;&#8722;&#8239;50&#176;&#8239;=&#8239;80&#176;. Et si l'énoncé ne dit pas où se trouve l'angle donné, il faut examiner <b>les deux cas</b>.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> Confondre l'angle du triangle et l'angle extérieur.</div><div class="cor"><span class="v">&#10003;</span> L'angle extérieur est <b>à l'extérieur</b> du triangle, entre un côté et le <b>prolongement</b> de l'autre : il vaut 180&#176; moins l'angle du triangle, ou la somme des deux autres angles.</div></div>
+
+</div>
+
+<div class="bandeau bleu">A SAVOIR PAR COEUR AVANT LE DEVOIR</div>
+<div class="cols">
+<ol class="recap">
+<li>Angles <b>opposés par le sommet</b> : <b>toujours égaux</b>, sans condition. Angles <b>voisins</b> : <b>toujours supplémentaires</b> (180&#176;). Un croisement ne contient que deux mesures, <i>a</i> et 180&#176;&#8239;&#8722;&#8239;<i>a</i>.</li>
+<li><b>Alternes-internes</b> : entre les droites, de part et d'autre de la sécante. <b>Alternes-externes</b> : hors des droites, de part et d'autre. <b>Correspondants</b> : même position aux deux croisements.</li>
+<li>Ces trois familles sont égales <b>uniquement si les droites sont parallèles</b>, et la condition de parallélisme doit figurer dans la justification.</li>
+<li><b>Réciproques</b> : deux alternes-internes égaux, ou deux correspondants égaux, <b>prouvent le parallélisme</b> des deux droites. C'est le seul moyen de démontrer que deux droites sont parallèles.</li>
+<li>Deux parallèles coupées par une sécante : huit angles, <b>deux mesures</b> seulement, supplémentaires ; les angles <b>internes du même côté</b> sont supplémentaires.</li>
+<li>Dans <b>tout</b> triangle : <span style="display:inline-block;position:relative;line-height:1"><i>A</i><span style="position:absolute;left:0;right:0;top:-.52em;font-size:.8em;font-style:normal;text-align:center">&#710;</span></span>&#8239;+&#8239;<span style="display:inline-block;position:relative;line-height:1"><i>B</i><span style="position:absolute;left:0;right:0;top:-.52em;font-size:.8em;font-style:normal;text-align:center">&#710;</span></span>&#8239;+&#8239;<span style="display:inline-block;position:relative;line-height:1"><i>C</i><span style="position:absolute;left:0;right:0;top:-.52em;font-size:.8em;font-style:normal;text-align:center">&#710;</span></span>&#8239;=&#8239;180&#176;. Le troisième angle vaut 180&#176; moins la somme des deux autres, et le contrôle final doit redonner 180&#176;.</li>
+<li><b>Equilatéral</b> : trois angles de 60&#176;. <b>Rectangle</b> : un angle de 90&#176;, les deux autres complémentaires. <b>Isocèle</b> : angles à la base égaux, angle au sommet&#8239;=&#8239;180&#176;&#8239;&#8722;&#8239;2&#8239;&#215;&#8239;(angle à la base).</li>
+<li><b>Angle extérieur</b>&#8239;=&#8239;180&#176; moins l'angle du triangle&#8239;=&#8239;somme des deux autres angles. Un côté et les deux angles qui le touchent suffisent pour construire un triangle.</li>
+</ol>
+</div>
+
+</body>
+</html>

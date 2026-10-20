@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Fiche de revision - 4eme - Chapitre 6 : Projection et theoreme des milieux</title>
+<style>
+/* ===================================================================
+   FICHE DE REVISION, Collection Hakili Lab, Edition 2026
+   Feuille de style autonome, format A4 pret a imprimer.
+   Bleu #005CB9 · Vert #49A145
+   =================================================================== */
+:root{
+  --bleu:#005CB9; --bleu-fonce:#00429A; --bleu-pale:#E8F1FB; --bleu-bord:#B7D2EE;
+  --vert:#49A145; --vert-fonce:#2F7A2C; --vert-pale:#EDF7EC; --vert-bord:#BCE0B9;
+  --gris:#4A4A4A; --gris-clair:#E4E4E4; --rouge:#B3261E;
+}
+@page{
+  size:A4; margin:15mm;
+  @bottom-center{
+    content:"Collection Hakili Lab, Edition 2026  ·  Fiche de revision  ·  " counter(page) "/" counter(pages);
+    font-family:"Segoe UI",Calibri,Arial,sans-serif; font-size:6.6pt; color:#8A8A8A;
+  }
+}
+*{box-sizing:border-box;}
+body{
+  margin:0; font-family:"Segoe UI",Calibri,Arial,sans-serif;
+  font-size:8.4pt; line-height:1.26; color:#1B1B1B;
+}
+p{margin:0 0 3pt;}
+ul{margin:0 0 3pt; padding-left:11pt;}
+li{margin:0 0 1.2pt;}
+b,strong{color:var(--bleu-fonce);}
+
+/* ------------------------------ ENTETE ---------------------------- */
+.entete{
+  display:flex; align-items:stretch; border:1.6pt solid var(--bleu);
+  border-radius:2.5pt; overflow:hidden; margin-bottom:6pt;
+}
+.entete .num{
+  background:var(--bleu); color:#fff; font-size:20pt; font-weight:700;
+  padding:0 8pt; display:flex; align-items:center; justify-content:center; min-width:34pt;
+}
+.entete .txt{padding:3.5pt 8pt; flex:1;}
+.entete .niveau{
+  font-size:7pt; font-weight:700; letter-spacing:.9pt; color:var(--vert-fonce);
+}
+.entete h1{margin:0; font-size:13.5pt; line-height:1.12; color:var(--bleu-fonce); font-weight:700;}
+.entete .sous{font-size:7pt; color:var(--gris); margin-top:1pt;}
+
+/* --------------------------- BANDEAUX ----------------------------- */
+.bandeau{
+  color:#fff; font-weight:700; font-size:9pt; letter-spacing:1pt;
+  padding:2.4pt 7pt; border-radius:2pt; margin:3pt 0 4pt; break-after:avoid; page-break-after:avoid;
+}
+.bandeau.bleu{background:var(--bleu);}
+.bandeau.vert{background:var(--vert);}
+
+/* --------------------------- COLONNES ----------------------------- */
+.cols{column-count:2; column-gap:7mm; column-fill:balance;}
+
+.cols.bal{column-fill:balance;}
+.bloc{margin-bottom:5pt;}
+.keep{break-inside:avoid; page-break-inside:avoid;}
+
+/* --------------------------- LECONS ------------------------------- */
+h2.lecon{
+  margin:0 0 3pt; font-size:8.6pt; font-weight:700; color:#fff; background:var(--bleu-fonce);
+  padding:1.8pt 5pt; border-radius:1.5pt; break-after:avoid; page-break-after:avoid;
+}
+h3.rub{
+  margin:3.5pt 0 1.5pt; font-size:8.2pt; font-weight:700; color:var(--vert-fonce);
+  border-bottom:.7pt solid var(--vert-bord); padding-bottom:.8pt;
+  break-after:avoid; page-break-after:avoid;
+}
+
+/* --------------------------- ENCADRES ----------------------------- */
+.form{
+  background:var(--bleu-pale); border:.8pt solid var(--bleu-bord); border-left:2.6pt solid var(--bleu);
+  border-radius:2pt; padding:2.4pt 5pt; margin:2.2pt 0 3.4pt;
+  break-inside:avoid; page-break-inside:avoid;
+}
+.form .t{
+  display:block; font-size:6.8pt; font-weight:700; letter-spacing:.6pt;
+  color:var(--bleu); margin-bottom:1.5pt;
+}
+.form .c{text-align:center; font-size:9.1pt; margin:1.6pt 0;}
+.note{background:var(--vert-pale); border-left:2.4pt solid var(--vert); padding:2.4pt 5pt; border-radius:1.5pt; margin:2.5pt 0 4pt; break-inside:avoid;}
+
+/* --------------------------- TABLEAUX ----------------------------- */
+table{width:100%; border-collapse:collapse; font-size:7.6pt; margin:2pt 0 4pt; break-inside:avoid;}
+th{background:var(--bleu); color:#fff; font-weight:700; text-align:left; padding:1.8pt 4pt; font-size:7.2pt;}
+td{border:.6pt solid var(--gris-clair); padding:1.8pt 4pt; vertical-align:top;}
+tr{break-inside:avoid;}
+table.var td{text-align:center; font-size:8pt;}
+table.var td.lab{text-align:left; font-weight:700; color:var(--bleu-fonce); background:var(--bleu-pale);}
+
+/* ----------------------------- PIEGES ----------------------------- */
+table.pieges th:first-child{width:44%;}
+table.pieges td:first-child{color:var(--rouge); background:#FDF1F0;}
+.x{font-weight:700;}
+.v{color:var(--vert-fonce); font-weight:700;}
+
+/* ---------------------------- RECAP ------------------------------- */
+ol.recap{margin:0; padding-left:0; list-style:none; counter-reset:r;}
+ol.recap li{
+  counter-increment:r; position:relative; padding-left:13pt; margin-bottom:1.8pt;
+  break-inside:avoid;
+}
+ol.recap li::before{
+  content:counter(r); position:absolute; left:0; top:.3pt;
+  width:10pt; height:10pt; border-radius:50%; background:var(--vert); color:#fff;
+  font-size:6.6pt; font-weight:700; text-align:center; line-height:10pt;
+}
+
+/* --------------------------- MATHS -------------------------------- */
+.m{font-family:Cambria,Georgia,"Times New Roman",serif;}
+i,var{font-family:Cambria,Georgia,"Times New Roman",serif; font-style:italic;}
+.op{font-family:Cambria,Georgia,"Times New Roman",serif; font-style:normal;}
+.f{display:inline-block; vertical-align:middle; text-align:center;
+   margin:0 .12em; line-height:1.06; font-family:Cambria,Georgia,"Times New Roman",serif;}
+.f>span{display:block; padding:0 .2em;}
+.f>span:first-child{border-bottom:.6pt solid currentColor; padding-bottom:.08em;}
+.f>span:last-child{padding-top:.04em;}
+.rad{border-top:.6pt solid currentColor; padding-top:.12em;}
+/* line-height:0 evite que l'exposant n'ecarte les lignes ; position:relative le
+   repositionne sans qu'il heurte la barre de fraction ni le trait du radical. */
+sup,sub{font-size:.68em; line-height:0; position:relative; vertical-align:baseline;}
+sup{top:-.42em;}
+sub{bottom:-.22em;}
+.pt{white-space:nowrap;}
+/* Les fleches n'ont qu'un glyphe atrophie dans la fonte serif : on les force
+   en sans-serif, ou elles sont franches meme a 8 pt. */
+.ar{font-family:"Segoe UI",Calibri,Arial,"DejaVu Sans",sans-serif; font-style:normal;}
+
+/* ------------------- PIEGES : blocs erreur / correction ------------- */
+.pg{font-size:8.1pt; border-left:2.4pt solid var(--rouge); background:#FDF1F0; border-radius:1.5pt;
+    padding:2pt 5pt; margin:0 0 2.8pt; break-inside:avoid; page-break-inside:avoid;}
+.pg .err{color:var(--rouge); font-weight:600;}
+.pg .cor{color:#1B1B1B; margin-top:.8pt;}
+.pg .cor b{color:var(--bleu-fonce);}
+.v{color:var(--vert-fonce); font-weight:700;}
+
+</style>
+</head>
+<body>
+<header class="entete">
+  <div class="num">6</div>
+  <div class="txt">
+    <div class="niveau">4EME &middot; MATHEMATIQUES</div>
+    <h1>Projection et théorème des milieux</h1>
+    <div class="sous">Leçon 1 : la projection d'un point sur une droite, parallèlement à une autre &middot; Leçon 2 : la conservation du milieu par projection &middot; Leçon 3 : la droite des milieux dans un triangle &middot; Leçon 4 : la droite des milieux dans un trapèze &middot; Leçon 5 : la projection orthogonale</div>
+  </div>
+</header>
+
+<div class="bandeau bleu" style="margin-top:0">L'ESSENTIEL</div>
+<div class="cols">
+
+<!-- ================= LECON 1 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 1&nbsp;: La projection d'un point sur une droite, parallèlement à une autre</h2>
+<p>Projeter demande <b>deux droites</b> : la droite (d) <b>d'arrivée</b>, et une droite <span class="m">(&#916;)</span> qui donne la <b>direction</b>, c'est-à-dire le chemin à suivre. Ces deux droites doivent être <b>sécantes</b> : si <span class="m">(&#916;)</span> était parallèle à (d), la parallèle menée par M ne rencontrerait jamais (d) et il n'y aurait pas de projeté.</p></div>
+<div class="form">
+  <span class="t">DEFINITION&nbsp;: (d) et (&#916;) SECANTES</span>
+  <div class="c m">M&#8242; projeté de M sur (d) parallèlement à (&#916;)</div>
+  <div class="c m">M&#8242;&#8239;&#8712;&#8239;(d) &nbsp;&nbsp;et&nbsp;&nbsp; (MM&#8242;)&#8239;//&#8239;(&#916;)</div>
+</div>
+<ul>
+<li>M&#8242; (« M prime ») est le <b>projeté</b> de M sur (d) selon la direction <span class="m">(&#916;)</span>. Il est le <b>seul</b> point du plan à remplir les deux conditions à la fois : on parle <b>du</b> projeté, et non d'<b>un</b> projeté.</li>
+<li>Si M est déjà sur (d), alors M&#8242;&#8239;=&#8239;M : les points de (d) sont <b>invariants</b>, la projection ne les déplace pas.</li>
+<li>A chaque point M correspond <b>un seul</b> projeté M&#8242;, car une <b>seule</b> parallèle à <span class="m">(&#916;)</span> passe par M (axiome d'Euclide).</li>
+</ul>
+<h3 class="rub">Construire le projeté de M</h3>
+<ul>
+<li>Tracer (d) et la direction <span class="m">(&#916;)</span>, puis placer M hors de (d).</li>
+<li>Par M, tracer la <b>parallèle</b> à <span class="m">(&#916;)</span>, à l'équerre et à la règle.</li>
+<li>Marquer le point d'intersection M&#8242; de cette parallèle avec (d).</li>
+<li><b>Coder</b> la figure : un chevron sur <span class="m">(&#916;)</span> et le même chevron sur (MM&#8242;).</li>
+</ul>
+</div>
+
+<!-- ================= LECON 2 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 2&nbsp;: La conservation du milieu par projection</h2>
+<p>A, B, C, M ont pour projetés A&#8242;, B&#8242;, C&#8242;, M&#8242; sur (d) parallèlement à <span class="m">(&#916;)</span>. La projection parallèle conserve :</p></div>
+<ul>
+<li>l'<b>alignement</b> : trois points alignés ont des projetés alignés ; le projeté d'une droite est une droite, et le projeté du segment [AB] est le segment [A&#8242;B&#8242;] ;</li>
+<li>l'<b>ordre</b> : si C est entre A et B, alors C&#8242; est entre A&#8242; et B&#8242; ;</li>
+<li>le <b>parallélisme</b> : deux droites parallèles ont pour projetés deux droites parallèles.</li>
+</ul>
+<div class="form">
+  <span class="t">PROPRIETE&nbsp;: CONSERVATION DU MILIEU</span>
+  <div class="c m">M milieu de [AB] &nbsp;<span class="ar">&#8658;</span>&nbsp; M&#8242; milieu de [A&#8242;B&#8242;]</div>
+</div>
+<div class="note">La projection ne conserve <b>pas les longueurs</b> : en général A&#8242;B&#8242; n'est pas égal à AB. Ce qui est conservé, c'est l'<b>égalité</b> A&#8242;M&#8242;&#8239;=&#8239;M&#8242;B&#8242;, et non la valeur des longueurs.</div>
+<p><b>Démontrer qu'un point est un milieu par projection</b> : repérer le segment [AB] dont M est le milieu et la droite (d) d'arrivée ; projeter A, B et M sur (d) selon <span class="m">(&#916;)</span> ; appliquer la conservation du milieu ; conclure en <b>nommant</b> la propriété utilisée.</p>
+</div>
+
+<!-- ================= LECON 3 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 3&nbsp;: La droite des milieux dans un triangle</h2>
+<div class="form">
+  <span class="t">THEOREME DE LA DROITE DES MILIEUX</span>
+  <div class="c m">ABC triangle, M milieu de [AB], N milieu de [AC]</div>
+  <div class="c m">(MN)&#8239;//&#8239;(BC) &nbsp;&nbsp;et&nbsp;&nbsp; MN&#8239;=&#8239;BC&#8239;&#247;&#8239;2</div>
+</div></div>
+<ul>
+<li>La droite (MN) est une <b>droite des milieux</b> du triangle ; il y en a <b>trois</b>, une par côté.</li>
+<li>La relation se lit dans l'autre sens : <span class="pt">BC&#8239;=&#8239;2&#8239;&#215;&#8239;MN</span>. C'est ainsi qu'on obtient une longueur inaccessible, par exemple la largeur d'une rivière.</li>
+<li>Tout est dans le mot <b>si</b> : tant que M et N ne sont pas établis comme <b>milieux</b> de deux côtés, le théorème ne s'emploie pas. Dès qu'ils le sont, il donne d'un coup un <b>parallélisme</b> et une <b>longueur</b>, sans aucune mesure.</li>
+<li>Le milieu est parfois <b>déguisé</b> : « B est le symétrique de G par rapport à A » signifie que A est le <b>milieu</b> de [GB].</li>
+</ul>
+</div>
+
+<div class="bloc">
+<h3 class="rub">La réciproque</h3>
+<div class="form">
+  <span class="t">RECIPROQUE DU THEOREME DES MILIEUX</span>
+  <div class="c m">la droite qui passe par le <b>milieu d'un côté</b></div>
+  <div class="c m">et qui est <b>parallèle à un deuxième côté</b></div>
+  <div class="c m">coupe le <b>troisième côté en son milieu</b></div>
+</div>
+<ul>
+<li>Le théorème <b>direct</b> part de <b>deux milieux</b> et donne un parallélisme ; la <b>réciproque</b> part d'<b>un milieu et d'un parallélisme</b> et donne un second milieu. Elle sert à <b>démontrer qu'un point est un milieu</b>.</li>
+<li>La parallèle est parfois <b>cachée</b> : deux droites perpendiculaires à une même droite sont parallèles. C'est ce qui permet d'employer la réciproque avec une <b>médiatrice</b>.</li>
+<li>Une propriété est une porte à sens unique ; pour revenir en arrière il faut une <b>seconde</b> propriété, écrite exprès. Elle existe ici, mais la réciproque d'une propriété vraie n'est <b>pas toujours</b> vraie.</li>
+</ul>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Partager un triangle</h3>
+<ul>
+<li>En joignant les <b>trois milieux</b> des côtés, on forme le <b>triangle des milieux</b>. Ce tracé partage le triangle de départ en <b>quatre</b> petits triangles superposables, donc de même aire : chacun en occupe le <b>quart</b>.</li>
+<li>Le segment qui joint un sommet au <b>milieu du côté opposé</b> est une <b>médiane</b>. Elle partage le triangle en <b>deux</b> triangles de <b>même aire</b> : mêmes longueurs de base et même hauteur.</li>
+<li>Une <b>droite des milieux</b>, elle, ne donne <b>pas</b> deux parts égales : elle laisse un petit triangle d'un côté et un trapèze de l'autre.</li>
+</ul>
+</div>
+
+<!-- ================= LECON 4 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 4&nbsp;: La droite des milieux dans un trapèze</h2>
+<div class="form">
+  <span class="t">PROPRIETE&nbsp;: LIGNE DES MILIEUX D'UN TRAPEZE</span>
+  <div class="c m">dans un trapèze de bases parallèles, la droite</div>
+  <div class="c m">qui joint les milieux des deux côtés <b>non parallèles</b></div>
+  <div class="c m">est <b>parallèle aux deux bases</b></div>
+</div></div>
+<ul>
+<li>Cette droite est la <b>ligne des milieux</b> du trapèze ; parallèle aux bases, elle ne les rencontre jamais.</li>
+<li>Ne pas se tromper de côtés : ce sont les milieux des deux côtés <b>non parallèles</b> qu'il faut joindre, <b>jamais</b> ceux des bases.</li>
+<li><b>Marche à suivre</b> : vérifier que la figure est bien un trapèze (deux côtés parallèles, les <b>bases</b>) ; repérer les milieux des deux côtés non parallèles ; énoncer la propriété ; conclure le parallélisme en <b>citant les deux bases</b>.</li>
+<li>Elle sert à démontrer un <b>parallélisme</b>, ou à placer une ligne à mi-hauteur entre deux bords parallèles : une allée, une poutre, une rangée de plants.</li>
+</ul>
+</div>
+
+<!-- ================= LECON 5 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 5&nbsp;: La projection orthogonale</h2>
+<div class="form">
+  <span class="t">DEFINITION&nbsp;: PROJECTION ORTHOGONALE SUR (d)</span>
+  <div class="c m">M&#8242;&#8239;&#8712;&#8239;(d) &nbsp;&nbsp;et&nbsp;&nbsp; (MM&#8242;)&#8239;&#8869;&#8239;(d)</div>
+</div></div>
+<ul>
+<li>C'est un <b>cas particulier</b> de projection, où la direction est <b>perpendiculaire</b> à (d) : elle conserve donc, elle aussi, l'<b>alignement</b> et le <b>milieu</b>.</li>
+<li>M&#8242; est le <b>pied de la perpendiculaire</b>, et la longueur MM&#8242; est la <b>distance du point M à la droite (d)</b>.</li>
+<li>De tous les segments qui joignent M à un point de (d), <b>[MM&#8242;] est le plus court</b> : le chemin le plus économique pour rejoindre une route, un mur ou une rive.</li>
+<li>Le projeté orthogonal d'un sommet d'un triangle sur le côté opposé est le <b>pied de la hauteur</b> issue de ce sommet.</li>
+<li><b>Construction</b> : par M, tracer la <b>perpendiculaire</b> à (d) à l'équerre, marquer l'intersection M&#8242;, puis <b>coder l'angle droit</b> en M&#8242; : c'est lui qui justifie tout le reste.</li>
+</ul>
+<div class="note">Trois mots annoncent une projection orthogonale sans la nommer : <b>perpendiculaire</b>, <b>distance à une droite</b> et <b>pied de la hauteur</b>. Dès que l'un d'eux apparaît, on code un angle droit sur la figure.</div>
+</div>
+
+</div>
+
+<div class="bandeau vert">PIEGES ET ERREURS FREQUENTES</div>
+<div class="cols">
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> « Le projeté de M sur (d), c'est le point de (d) le plus proche de M. » &nbsp;&middot;&nbsp; on projette sans dire dans quelle direction</div><div class="cor"><span class="v">&#10003;</span> Une projection se fait <b>toujours dans une direction précise</b> : le projeté change si la direction change. On écrit « projeté de M sur (d) <b>parallèlement à</b> <span class="m">(&#916;)</span> ». Le point le plus proche n'est le projeté que dans le cas <b>orthogonal</b>.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> On projette sur (d) parallèlement à une direction <span class="m">(&#916;)</span> parallèle à (d)</div><div class="cor"><span class="v">&#10003;</span> (d) et <span class="m">(&#916;)</span> doivent être <b>sécantes</b> : sinon la parallèle à <span class="m">(&#916;)</span> menée par M ne rencontre jamais (d), et le projeté <b>n'existe pas</b>.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> « La projection conserve les longueurs, donc A&#8242;B&#8242;&#8239;=&#8239;AB. »</div><div class="cor"><span class="v">&#10003;</span> Elle conserve l'<b>alignement</b>, l'<b>ordre</b>, le <b>parallélisme</b> et le <b>milieu</b>, mais <b>pas</b> les longueurs. Ce qui se conserve du milieu, c'est l'<b>égalité</b> A&#8242;M&#8242;&#8239;=&#8239;M&#8242;B&#8242;.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> « M est sur [AB] et N sur [AC], donc (MN)&#8239;//&#8239;(BC). »</div><div class="cor"><span class="v">&#10003;</span> Pour des points <b>quelconques</b>, on ne peut rien conclure : il faut les <b>milieux</b>. Un seul cas où une propriété échoue suffit à interdire de s'en servir : c'est un <b>contre-exemple</b>.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> MN&#8239;=&#8239;2&#8239;&#215;&#8239;BC &nbsp;&middot;&nbsp; BC&#8239;=&#8239;MN&#8239;&#247;&#8239;2</div><div class="cor"><span class="v">&#10003;</span> C'est <b>MN</b>, le segment qui joint les deux milieux, qui est le plus petit : MN&#8239;=&#8239;BC&#8239;&#247;&#8239;2, donc BC&#8239;=&#8239;2&#8239;&#215;&#8239;MN. On <b>divise</b> pour trouver MN, on <b>multiplie</b> pour trouver le grand côté.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> On applique la réciproque à une droite qui part du milieu d'un côté <b>sans être parallèle</b> au deuxième côté</div><div class="cor"><span class="v">&#10003;</span> La réciproque exige les <b>deux</b> hypothèses : un <b>milieu</b> et un <b>parallélisme</b>. Sans le parallélisme, la droite coupe le troisième côté en un point qui <b>n'est pas</b> son milieu.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> Dans un trapèze, on joint les milieux des <b>deux bases</b> &nbsp;&middot;&nbsp; « la droite des milieux partage le triangle en deux parts égales »</div><div class="cor"><span class="v">&#10003;</span> Dans un trapèze, ce sont les milieux des deux côtés <b>non parallèles</b>. Dans un triangle, deux parts de même aire s'obtiennent avec une <b>médiane</b> ; quatre parts égales, en joignant les <b>trois milieux</b>.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> « La distance de M à (d) est MA », A étant un point quelconque de (d) &nbsp;&middot;&nbsp; projection orthogonale et projection parallèle confondues</div><div class="cor"><span class="v">&#10003;</span> La distance est <b>MM&#8242;</b>, avec M&#8242; <b>pied de la perpendiculaire</b> : [MM&#8242;] est le plus court. L'ombre d'un poteau n'est orthogonale qu'à midi ; le reste du temps, c'est une projection parallèle <b>oblique</b>.</div></div>
+
+</div>
+
+<div class="bandeau bleu">A SAVOIR PAR COEUR AVANT LE DEVOIR</div>
+<div class="cols">
+<ol class="recap">
+<li><b>Projeter</b> demande deux droites <b>sécantes</b> : (d) d'arrivée, <span class="m">(&#916;)</span> direction. M&#8242; est <b>le</b> point tel que M&#8242;&#8239;&#8712;&#8239;(d) et (MM&#8242;)&#8239;//&#8239;(&#916;). Toujours <b>préciser la direction</b>.</li>
+<li>Les points de (d) sont <b>invariants</b> (M&#8242;&#8239;=&#8239;M), et chaque point n'a <b>qu'un seul</b> projeté.</li>
+<li>La projection parallèle conserve l'<b>alignement</b>, l'<b>ordre</b>, le <b>parallélisme</b> et le <b>milieu</b> ; elle ne conserve <b>pas</b> les longueurs.</li>
+<li><b>Théorème des milieux</b> : dans ABC, si M est le milieu de [AB] et N celui de [AC], alors (MN)&#8239;//&#8239;(BC) et MN&#8239;=&#8239;BC&#8239;&#247;&#8239;2, c'est-à-dire BC&#8239;=&#8239;2&#8239;&#215;&#8239;MN.</li>
+<li><b>Réciproque</b> : la droite passant par le <b>milieu d'un côté</b> et <b>parallèle à un deuxième côté</b> coupe le troisième en son <b>milieu</b>. C'est l'outil pour <b>démontrer qu'un point est un milieu</b>.</li>
+<li><b>Trapèze</b> : la droite qui joint les milieux des deux côtés <b>non parallèles</b> est parallèle aux <b>deux bases</b>.</li>
+<li><b>Projection orthogonale</b> : (MM&#8242;)&#8239;&#8869;&#8239;(d) ; M&#8242; est le <b>pied de la perpendiculaire</b>, MM&#8242; la <b>distance de M à (d)</b> et le <b>plus court</b> chemin ; sur le côté opposé d'un triangle, c'est le <b>pied de la hauteur</b>.</li>
+<li><b>Aires</b> : les trois milieux joints découpent <b>quatre</b> triangles de même aire (un quart chacun) ; une <b>médiane</b> découpe <b>deux</b> triangles de même aire.</li>
+</ol>
+</div>
+
+</body>
+</html>

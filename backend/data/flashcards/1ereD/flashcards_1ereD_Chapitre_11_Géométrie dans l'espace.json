@@ -1,0 +1,350 @@
+{
+  "niveau": "1ère D",
+  "chapitre": "Chapitre 11 : Géométrie dans l'espace",
+  "source": "maths/1ereD/Chapitre_11_Geometrie_espace",
+  "nombre_cartes": 38,
+  "cartes": [
+    {
+      "id": "1D-CH11-001",
+      "lecon": "Parallélisme, orthogonalité et sections planes",
+      "type": "definition",
+      "recto": "Quelles sont les trois positions relatives possibles de deux droites de l'espace ?",
+      "verso": "Elles sont coplanaires et sécantes (exactement un point commun), coplanaires et parallèles (aucun point commun, ou confondues), ou non coplanaires : aucun plan ne les contient toutes les deux.",
+      "difficulte": 1,
+      "tags": ["positions-relatives", "droites", "espace"]
+    },
+    {
+      "id": "1D-CH11-002",
+      "lecon": "Parallélisme, orthogonalité et sections planes",
+      "type": "definition",
+      "recto": "Pourquoi deux droites de l'espace sans aucun point commun ne sont-elles pas forcément parallèles ?",
+      "verso": "Parce que le parallélisme exige en plus qu'elles soient coplanaires. Sans plan qui les contienne toutes les deux, elles sont dites non coplanaires. Dans un cube $ABCDEFGH$, $(AB)$ et $(CG)$ n'ont aucun point commun et ne sont pourtant pas parallèles.",
+      "difficulte": 3,
+      "tags": ["non-coplanaires", "piege", "parallelisme"]
+    },
+    {
+      "id": "1D-CH11-003",
+      "lecon": "Parallélisme, orthogonalité et sections planes",
+      "type": "definition",
+      "recto": "Quelles sont les trois positions relatives d'une droite et d'un plan de l'espace ?",
+      "verso": "La droite est incluse dans le plan, et l'intersection est la droite entière ; ou parallèle au plan, sans aucun point commun ; ou sécante au plan, qu'elle coupe alors en un seul point.",
+      "difficulte": 1,
+      "tags": ["positions-relatives", "droite-plan"]
+    },
+    {
+      "id": "1D-CH11-004",
+      "lecon": "Parallélisme, orthogonalité et sections planes",
+      "type": "definition",
+      "recto": "Quelle est l'intersection de deux plans sécants de l'espace ?",
+      "verso": "C'est une droite, jamais un point isolé : dès que deux plans distincts ont un point commun, ils en ont une droite entière. Deux murs qui se rencontrent se rencontrent le long d'une arête, jamais en un seul clou.",
+      "difficulte": 2,
+      "tags": ["plans-secants", "intersection"]
+    },
+    {
+      "id": "1D-CH11-005",
+      "lecon": "Parallélisme, orthogonalité et sections planes",
+      "type": "formule",
+      "recto": "Quelles hypothèses permettent d'affirmer qu'une droite $(d)$ est parallèle à un plan $\\mathcal{P}$ ?",
+      "verso": "Il faut que $(d)$ soit parallèle à une droite $(d')$ contenue dans $\\mathcal{P}$, et que $(d)$ ne soit pas contenue dans $\\mathcal{P}$. Une seule droite $(d')$ suffit : on ne cherche jamais à éviter tous les points du plan.",
+      "difficulte": 2,
+      "tags": ["parallelisme", "droite-plan", "critere"]
+    },
+    {
+      "id": "1D-CH11-006",
+      "lecon": "Parallélisme, orthogonalité et sections planes",
+      "type": "definition",
+      "recto": "Quelle condition oublie-t-on souvent en démontrant qu'une droite est parallèle à un plan ?",
+      "verso": "La mention que la droite n'est pas contenue dans ce plan. Sans elle, on démontrerait qu'une droite tracée dans un plan est parallèle à son propre plan, ce qui n'a aucun sens. Cette phrase doit apparaître dans la rédaction.",
+      "difficulte": 3,
+      "tags": ["parallelisme", "piege", "redaction"]
+    },
+    {
+      "id": "1D-CH11-007",
+      "lecon": "Parallélisme, orthogonalité et sections planes",
+      "type": "formule",
+      "recto": "A quelle condition sur un plan $\\mathcal{P}$ peut-on affirmer qu'il est parallèle à un plan $\\mathcal{Q}$ ?",
+      "verso": "Il suffit que $\\mathcal{P}$ contienne deux droites sécantes parallèles au plan $\\mathcal{Q}$. Deux droites parallèles entre elles ne suffiraient pas : elles ne donnent qu'une seule direction, et une direction ne bloque pas un plan.",
+      "difficulte": 2,
+      "tags": ["parallelisme", "plans", "critere"]
+    },
+    {
+      "id": "1D-CH11-008",
+      "lecon": "Parallélisme, orthogonalité et sections planes",
+      "type": "formule",
+      "recto": "Que peut-on dire d'une droite contenue dans un plan $\\mathcal{P}$, lorsque $\\mathcal{P}$ est parallèle à un plan $\\mathcal{Q}$ ?",
+      "verso": "Elle est parallèle au plan $\\mathcal{Q}$ : toute droite d'un plan est parallèle à tout plan parallèle à celui-ci. Ce raccourci évite de chercher une droite particulière de $\\mathcal{Q}$.",
+      "difficulte": 2,
+      "tags": ["parallelisme", "droite-plan"]
+    },
+    {
+      "id": "1D-CH11-009",
+      "lecon": "Parallélisme, orthogonalité et sections planes",
+      "type": "formule",
+      "recto": "Quelles sont les hypothèses et la conclusion du théorème du toit ?",
+      "verso": "Hypothèses : deux plans $\\mathcal{P}$ et $\\mathcal{Q}$ sont sécants selon une droite $(\\Delta)$, et ils contiennent respectivement deux droites $(d)$ et $(d')$ parallèles entre elles. Conclusion : $(\\Delta)$ est parallèle à $(d)$ et à $(d')$.",
+      "difficulte": 2,
+      "tags": ["theoreme-du-toit", "parallelisme"]
+    },
+    {
+      "id": "1D-CH11-010",
+      "lecon": "Parallélisme, orthogonalité et sections planes",
+      "type": "formule",
+      "recto": "Que peut-on dire des deux droites obtenues en coupant deux plans parallèles par un troisième plan ?",
+      "verso": "Elles sont parallèles entre elles. C'est cette propriété qui fait que, dans une section plane, deux faces parallèles d'un solide donnent deux côtés parallèles.",
+      "difficulte": 2,
+      "tags": ["plans-paralleles", "intersection", "section-plane"]
+    },
+    {
+      "id": "1D-CH11-011",
+      "lecon": "Parallélisme, orthogonalité et sections planes",
+      "type": "definition",
+      "recto": "Quelle différence fait-on dans l'espace entre deux droites orthogonales et deux droites perpendiculaires ?",
+      "verso": "Deux droites sont orthogonales lorsque leurs directions font un angle droit, qu'elles se coupent ou non. Elles sont perpendiculaires lorsque, de plus, elles sont sécantes. Dans un cube, $(AE)$ et $(BC)$ sont orthogonales sans être perpendiculaires.",
+      "difficulte": 2,
+      "tags": ["orthogonalite", "perpendiculaire", "vocabulaire"]
+    },
+    {
+      "id": "1D-CH11-012",
+      "lecon": "Parallélisme, orthogonalité et sections planes",
+      "type": "formule",
+      "recto": "A quelle condition une droite est-elle orthogonale à un plan de l'espace ?",
+      "verso": "Lorsqu'elle est orthogonale à deux droites sécantes de ce plan. Elle est alors orthogonale à toutes les droites de ce plan, et l'on note $(d)\\perp\\mathcal{P}$.",
+      "difficulte": 1,
+      "tags": ["orthogonalite", "droite-plan", "critere"]
+    },
+    {
+      "id": "1D-CH11-013",
+      "lecon": "Parallélisme, orthogonalité et sections planes",
+      "type": "definition",
+      "recto": "Pourquoi les deux droites du plan utilisées pour prouver une orthogonalité doivent-elles être sécantes ?",
+      "verso": "Parce que deux droites parallèles n'indiquent qu'une seule direction. Une droite orthogonale à cette direction peut encore basculer autour d'elle comme une porte autour de ses gonds. Deux directions sécantes verrouillent complètement la position.",
+      "difficulte": 3,
+      "tags": ["orthogonalite", "droites-secantes", "pourquoi"]
+    },
+    {
+      "id": "1D-CH11-014",
+      "lecon": "Parallélisme, orthogonalité et sections planes",
+      "type": "definition",
+      "recto": "Quand dit-on que deux plans de l'espace sont perpendiculaires ?",
+      "verso": "Lorsque l'un d'eux contient une droite orthogonale à l'autre. Il suffit donc d'un seul montant vertical dans un mur pour que le mur entier soit perpendiculaire à la dalle.",
+      "difficulte": 2,
+      "tags": ["plans-perpendiculaires", "definition"]
+    },
+    {
+      "id": "1D-CH11-015",
+      "lecon": "Parallélisme, orthogonalité et sections planes",
+      "type": "formule",
+      "recto": "Que devient l'orthogonalité à un plan si l'on remplace la droite par une droite parallèle, ou le plan par un plan parallèle ?",
+      "verso": "Elle se conserve dans les deux cas : si deux droites sont parallèles et si l'une est orthogonale à un plan, l'autre l'est aussi ; si deux plans sont parallèles et si une droite est orthogonale à l'un, elle est orthogonale à l'autre.",
+      "difficulte": 2,
+      "tags": ["orthogonalite", "parallelisme", "consequences"]
+    },
+    {
+      "id": "1D-CH11-016",
+      "lecon": "Parallélisme, orthogonalité et sections planes",
+      "type": "definition",
+      "recto": "Comment définit-on la distance d'un point $O$ à un plan $\\mathcal{P}$ ?",
+      "verso": "C'est la longueur $OH$, où $H$ est le pied de l'unique perpendiculaire menée de $O$ à $\\mathcal{P}$. Le point $H$ s'appelle aussi le projeté orthogonal de $O$ sur $\\mathcal{P}$, et $OH$ est le plus court chemin du point au plan.",
+      "difficulte": 2,
+      "tags": ["distance", "projete-orthogonal", "plan"]
+    },
+    {
+      "id": "1D-CH11-017",
+      "lecon": "Parallélisme, orthogonalité et sections planes",
+      "type": "definition",
+      "recto": "Quelles propriétés une représentation en perspective cavalière conserve-t-elle ?",
+      "verso": "L'alignement des points, le parallélisme des droites, les milieux, et les rapports de longueurs sur une même droite ou sur des droites parallèles. Elle ne conserve ni les longueurs en général, ni les angles, ni les aires.",
+      "difficulte": 2,
+      "tags": ["perspective-cavaliere", "conservation"]
+    },
+    {
+      "id": "1D-CH11-018",
+      "lecon": "Parallélisme, orthogonalité et sections planes",
+      "type": "definition",
+      "recto": "Quelle erreur guette l'élève qui lit une longueur ou un angle sur un dessin en perspective cavalière ?",
+      "verso": "Croire que la valeur lue est la valeur réelle, alors que la perspective déforme longueurs et angles. Les angles droits des faces du fond y apparaissent aigus ou obtus, et deux droites qui semblent se croiser peuvent être non coplanaires.",
+      "difficulte": 3,
+      "tags": ["perspective-cavaliere", "piege"]
+    },
+    {
+      "id": "1D-CH11-019",
+      "lecon": "Parallélisme, orthogonalité et sections planes",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on section d'un solide par un plan ?",
+      "verso": "C'est l'ensemble des points communs au solide et au plan. Pour un polyèdre, c'est un polygone : ses côtés sont les segments obtenus face par face, et ses sommets sont les points où le plan coupe les arêtes.",
+      "difficulte": 1,
+      "tags": ["section-plane", "definition", "polyedre"]
+    },
+    {
+      "id": "1D-CH11-020",
+      "lecon": "Parallélisme, orthogonalité et sections planes",
+      "type": "formule",
+      "recto": "Quelles deux règles permettent de construire la section plane d'un polyèdre ?",
+      "verso": "Deux points de la section situés sur une même face se relient par un segment tracé dans cette face. Et si deux faces du solide sont parallèles, les deux côtés de la section portés par ces faces sont parallèles entre eux.",
+      "difficulte": 2,
+      "tags": ["section-plane", "construction", "regles"]
+    },
+    {
+      "id": "1D-CH11-021",
+      "lecon": "Parallélisme, orthogonalité et sections planes",
+      "type": "formule",
+      "recto": "Quel est le plus grand nombre de côtés que peut avoir la section d'un cube par un plan ?",
+      "verso": "Six : la section est au plus un hexagone, car le cube n'a que six faces et le plan ne peut couper chaque face qu'une seule fois. Selon la position du plan, on obtient un triangle, un quadrilatère, un pentagone ou un hexagone.",
+      "difficulte": 2,
+      "tags": ["section-plane", "cube", "hexagone"]
+    },
+    {
+      "id": "1D-CH11-022",
+      "lecon": "Parallélisme, orthogonalité et sections planes",
+      "type": "formule",
+      "recto": "Quelle est la nature de la section d'un pavé droit par un plan parallèle à l'une de ses faces ?",
+      "verso": "C'est un rectangle superposable à cette face, de mêmes dimensions : une section parallèle à une face redonne toujours cette face à l'identique. Dès que le plan est incliné, la nature de la section change.",
+      "difficulte": 2,
+      "tags": ["section-plane", "pave", "rectangle"]
+    },
+    {
+      "id": "1D-CH11-023",
+      "lecon": "Parallélisme, orthogonalité et sections planes",
+      "type": "formule",
+      "recto": "Comment calcule-t-on la grande diagonale d'un pavé droit de dimensions $L$, $\\ell$ et $h$ ?",
+      "verso": "Elle vaut $\\sqrt{L^{2}+\\ell^{2}+h^{2}}$, alors que la diagonale d'une face de côtés $L$ et $\\ell$ vaut $\\sqrt{L^{2}+\\ell^{2}}$. La grande diagonale joint deux sommets opposés du pavé.",
+      "difficulte": 1,
+      "tags": ["pave", "diagonale", "longueurs"]
+    },
+    {
+      "id": "1D-CH11-024",
+      "lecon": "Parallélisme, orthogonalité et sections planes",
+      "type": "formule",
+      "recto": "Quelles sont les longueurs des diagonales d'un cube d'arête $a$ ?",
+      "verso": "La diagonale d'une face vaut $a\\sqrt{2}$ et la grande diagonale vaut $a\\sqrt{3}$. On les obtient en remplaçant les trois dimensions du pavé droit par $a$, soit $\\sqrt{a^{2}+a^{2}}$ et $\\sqrt{3a^{2}}$.",
+      "difficulte": 1,
+      "tags": ["cube", "diagonale", "longueurs"]
+    },
+    {
+      "id": "1D-CH11-025",
+      "lecon": "Parallélisme, orthogonalité et sections planes",
+      "type": "definition",
+      "recto": "Qu'est-ce qu'une pyramide régulière ?",
+      "verso": "C'est une pyramide dont la base est un polygone régulier et dont le sommet se projette orthogonalement au centre de cette base. La droite joignant le sommet au centre est donc sa hauteur, et les faces latérales sont des triangles isocèles superposables.",
+      "difficulte": 2,
+      "tags": ["pyramide-reguliere", "definition"]
+    },
+    {
+      "id": "1D-CH11-026",
+      "lecon": "Parallélisme, orthogonalité et sections planes",
+      "type": "formule",
+      "recto": "Que forment les milieux des arêtes $[AB]$, $[BC]$, $[CD]$ et $[DA]$ d'un tétraèdre $ABCD$ ?",
+      "verso": "Ils forment un parallélogramme, donc quatre points coplanaires. En notant $I$, $J$, $K$, $L$ ces milieux, la droite des milieux donne $\\overrightarrow{IJ}=\\dfrac{1}{2}\\overrightarrow{AC}$ dans le triangle $ABC$ et $\\overrightarrow{LK}=\\dfrac{1}{2}\\overrightarrow{AC}$ dans le triangle $ACD$.",
+      "difficulte": 2,
+      "tags": ["tetraedre", "milieux", "parallelogramme"]
+    },
+    {
+      "id": "1D-CH11-027",
+      "lecon": "La sphère",
+      "type": "definition",
+      "recto": "Quelle différence y a-t-il entre la sphère et la boule de centre $O$ et de rayon $R$ ?",
+      "verso": "La sphère est l'ensemble des points $M$ tels que $OM=R$ : c'est une surface, comme la peau d'un ballon. La boule est l'ensemble des points $M$ tels que $OM\\le R$ : c'est un solide, la surface et tout l'intérieur.",
+      "difficulte": 1,
+      "tags": ["sphere", "boule", "vocabulaire"]
+    },
+    {
+      "id": "1D-CH11-028",
+      "lecon": "La sphère",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on un grand cercle d'une sphère de centre $O$ et de rayon $R$ ?",
+      "verso": "C'est l'intersection de la sphère avec un plan passant par le centre $O$. Son rayon vaut $R$ : c'est le plus grand cercle que l'on puisse tracer sur la sphère.",
+      "difficulte": 2,
+      "tags": ["grand-cercle", "sphere"]
+    },
+    {
+      "id": "1D-CH11-029",
+      "lecon": "La sphère",
+      "type": "formule",
+      "recto": "Quels sont les trois cas possibles pour l'intersection d'une sphère de rayon $R$ et d'un plan situé à la distance $d$ de son centre ?",
+      "verso": "Si $d>R$, le plan ne coupe pas la sphère et l'intersection est vide. Si $d=R$, le plan est tangent et touche la sphère en un seul point. Si $d<R$, l'intersection est un cercle.",
+      "difficulte": 1,
+      "tags": ["sphere", "plan", "positions-relatives"]
+    },
+    {
+      "id": "1D-CH11-030",
+      "lecon": "La sphère",
+      "type": "formule",
+      "recto": "Quel est le rayon du cercle obtenu en coupant une sphère de rayon $R$ par un plan situé à la distance $d$ de son centre ?",
+      "verso": "Il vaut $r=\\sqrt{R^{2}-d^{2}}$, sous la condition $d<R$. Ce cercle a pour centre le pied $H$ de la perpendiculaire menée du centre $O$ au plan.",
+      "difficulte": 1,
+      "tags": ["sphere", "section", "formule"]
+    },
+    {
+      "id": "1D-CH11-031",
+      "lecon": "La sphère",
+      "type": "formule",
+      "recto": "Sous quelle forme retenir la relation entre le rayon $R$ d'une sphère, la distance $d$ du centre à un plan et le rayon $r$ de la section ?",
+      "verso": "Sous la forme $r^{2}+d^{2}=R^{2}$, où l'on reconnaît le théorème de Pythagore avec $R$ en hypoténuse. Elle donne aussi bien $r=\\sqrt{R^{2}-d^{2}}$ que $d=\\sqrt{R^{2}-r^{2}}$, selon l'inconnue cherchée.",
+      "difficulte": 2,
+      "tags": ["sphere", "pythagore", "relation"]
+    },
+    {
+      "id": "1D-CH11-032",
+      "lecon": "La sphère",
+      "type": "definition",
+      "recto": "Qu'est-ce qu'un plan tangent à une sphère de centre $O$ et de rayon $R$ ?",
+      "verso": "C'est un plan dont la distance au centre est égale au rayon, c'est-à-dire $d=R$ : il touche alors la sphère en un seul point $T$. Ce plan passe par $T$ et est perpendiculaire au rayon $[OT]$.",
+      "difficulte": 2,
+      "tags": ["plan-tangent", "sphere", "definition"]
+    },
+    {
+      "id": "1D-CH11-033",
+      "lecon": "La sphère",
+      "type": "definition",
+      "recto": "Quelle longueur désigne exactement la lettre $d$ dans l'étude d'une sphère coupée par un plan ?",
+      "verso": "La distance du centre $O$ au plan, c'est-à-dire la longueur $OH$ où $H$ est le pied de la perpendiculaire menée de $O$ au plan. Ce n'est jamais une distance quelconque prise au hasard sur un dessin.",
+      "difficulte": 2,
+      "tags": ["sphere", "distance", "notation"]
+    },
+    {
+      "id": "1D-CH11-034",
+      "lecon": "La sphère",
+      "type": "definition",
+      "recto": "Pourquoi la section d'une sphère par un plan n'est-elle jamais une ellipse ?",
+      "verso": "Parce que tous ses points sont à la même distance $\\sqrt{R^{2}-d^{2}}$ du pied $H$ de la perpendiculaire menée du centre au plan : c'est donc un cercle de centre $H$. La sphère n'ayant aucune direction privilégiée, une coupe en biais donne le même résultat.",
+      "difficulte": 3,
+      "tags": ["sphere", "section", "cercle", "piege"]
+    },
+    {
+      "id": "1D-CH11-035",
+      "lecon": "La sphère",
+      "type": "formule",
+      "recto": "Pourquoi l'écriture $r=\\sqrt{d^{2}-R^{2}}$ est-elle fausse pour le rayon d'une section de sphère ?",
+      "verso": "Parce que $R$ est l'hypoténuse du triangle rectangle sous-jacent, donc le plus grand des deux nombres : il faut écrire $r=\\sqrt{R^{2}-d^{2}}$. Avec $d<R$, la quantité sous la racine est bien positive.",
+      "difficulte": 3,
+      "tags": ["sphere", "formule", "piege"]
+    },
+    {
+      "id": "1D-CH11-036",
+      "lecon": "La sphère",
+      "type": "formule",
+      "recto": "Comment varie le rayon de la section d'une sphère lorsque le plan de coupe s'éloigne du centre ?",
+      "verso": "Il décroît continûment de $R$ jusqu'à $0$ pendant que $d$ augmente de $0$ jusqu'à $R$. Le cas tangent n'est donc pas un cas à part : c'est la limite du cas sécant, celui où le cercle s'est réduit à un point.",
+      "difficulte": 2,
+      "tags": ["sphere", "section", "variation"]
+    },
+    {
+      "id": "1D-CH11-037",
+      "lecon": "La sphère",
+      "type": "formule",
+      "recto": "Quels contrôles simples permettent de vérifier un résultat de section de sphère ?",
+      "verso": "On doit toujours avoir $0\\le r\\le R$ et $0\\le d\\le R$ : un rayon de section supérieur au rayon de la sphère signale une erreur de calcul. Le résultat doit de plus être accompagné de son unité.",
+      "difficulte": 2,
+      "tags": ["sphere", "controle", "verification"]
+    },
+    {
+      "id": "1D-CH11-038",
+      "lecon": "La sphère",
+      "type": "definition",
+      "recto": "Quelle est l'intersection d'une boule et d'un plan situé à une distance du centre inférieure au rayon ?",
+      "verso": "C'est un disque, c'est-à-dire une surface pleine, alors que l'intersection de la sphère par le même plan est un cercle, c'est-à-dire une ligne. La boule contient tout l'intérieur, la sphère seulement la surface.",
+      "difficulte": 2,
+      "tags": ["boule", "disque", "sphere"]
+    }
+  ]
+}

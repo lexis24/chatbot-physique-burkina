@@ -1,0 +1,287 @@
+{
+  "niveau": "5ème",
+  "chapitre": "Chapitre 4 : PGCD et PPCM",
+  "source": "maths/5eme/Chapitre_4_PGCD_PPCM",
+  "nombre_cartes": 31,
+  "cartes": [
+    {
+      "id": "5E-CH04-001",
+      "lecon": "Diviseurs communs et PGCD",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on un diviseur commun de deux entiers $a$ et $b$ ?",
+      "verso": "C'est un entier qui divise $a$ et qui divise aussi $b$. Par exemple $3$ est un diviseur commun de $30$ et de $45$.",
+      "difficulte": 1,
+      "tags": ["pgcd", "diviseur-commun", "definition"]
+    },
+    {
+      "id": "5E-CH04-002",
+      "lecon": "Diviseurs communs et PGCD",
+      "type": "definition",
+      "recto": "Quel entier est diviseur commun de n'importe quelle paire d'entiers ?",
+      "verso": "Le nombre $1$, car il divise tous les entiers. Deux entiers ont donc toujours au moins un diviseur commun.",
+      "difficulte": 1,
+      "tags": ["diviseur-commun", "cas-particulier"]
+    },
+    {
+      "id": "5E-CH04-003",
+      "lecon": "Diviseurs communs et PGCD",
+      "type": "definition",
+      "recto": "Comment définit-on le PGCD de deux entiers naturels $a$ et $b$ ?",
+      "verso": "C'est le plus grand de leurs diviseurs communs. On le note PGCD$(a\\,;\\,b)$. Ainsi PGCD$(30\\,;\\,45) = 15$.",
+      "difficulte": 1,
+      "tags": ["pgcd", "definition", "notation"]
+    },
+    {
+      "id": "5E-CH04-004",
+      "lecon": "Diviseurs communs et PGCD",
+      "type": "definition",
+      "recto": "Que veut dire que deux entiers sont premiers entre eux ?",
+      "verso": "Cela veut dire que leur PGCD vaut $1$ : leur seul diviseur commun est $1$. Comme PGCD$(42\\,;\\,55) = 1$, les nombres $42$ et $55$ sont premiers entre eux.",
+      "difficulte": 2,
+      "tags": ["premiers-entre-eux", "pgcd", "definition"]
+    },
+    {
+      "id": "5E-CH04-005",
+      "lecon": "Diviseurs communs et PGCD",
+      "type": "definition",
+      "recto": "Pourquoi deux nombres premiers entre eux ne sont-ils pas forcément deux nombres premiers ?",
+      "verso": "Parce que « premiers entre eux » ne parle que de leur PGCD, qui doit valoir $1$. Ainsi $8$ et $15$ ne sont premiers ni l'un ni l'autre, et pourtant ils sont premiers entre eux.",
+      "difficulte": 3,
+      "tags": ["premiers-entre-eux", "piege"]
+    },
+    {
+      "id": "5E-CH04-006",
+      "lecon": "Diviseurs communs et PGCD",
+      "type": "formule",
+      "recto": "Par décomposition en facteurs premiers, quels facteurs garde-t-on pour obtenir un PGCD ?",
+      "verso": "On garde seulement les facteurs premiers communs aux deux décompositions, chacun à sa plus petite puissance, puis on multiplie. Avec $60 = 2^{2} \\times 3 \\times 5$ et $84 = 2^{2} \\times 3 \\times 7$, le PGCD vaut $2^{2} \\times 3 = 12$.",
+      "difficulte": 2,
+      "tags": ["pgcd", "decomposition", "facteurs-premiers"]
+    },
+    {
+      "id": "5E-CH04-007",
+      "lecon": "Diviseurs communs et PGCD",
+      "type": "formule",
+      "recto": "En quoi consiste la méthode des soustractions successives pour obtenir un PGCD ?",
+      "verso": "On remplace le plus grand des deux nombres par leur différence, autant de fois qu'il le faut, jusqu'à obtenir deux nombres égaux. Ce nombre est le PGCD.",
+      "difficulte": 2,
+      "tags": ["pgcd", "soustractions-successives", "euclide"]
+    },
+    {
+      "id": "5E-CH04-008",
+      "lecon": "Diviseurs communs et PGCD",
+      "type": "formule",
+      "recto": "Pourquoi peut-on remplacer un couple de nombres par leur différence sans changer leurs diviseurs communs ?",
+      "verso": "Parce qu'un nombre qui divise $60$ et $84$ divise aussi leur différence $84 - 60 = 24$. Le couple $(60\\,;\\,24)$ garde donc les mêmes diviseurs communs, mais il est plus petit.",
+      "difficulte": 3,
+      "tags": ["pgcd", "soustractions-successives", "justification"]
+    },
+    {
+      "id": "5E-CH04-009",
+      "lecon": "Diviseurs communs et PGCD",
+      "type": "formule",
+      "recto": "Comment obtient-on le PGCD de deux petits nombres à partir des listes de leurs diviseurs ?",
+      "verso": "On écrit $D_{a}$ et $D_{b}$, puis on prend le plus grand nombre présent dans les deux listes à la fois. Pour $30$ et $45$, les diviseurs communs sont $1$, $3$, $5$ et $15$ : le PGCD vaut $15$.",
+      "difficulte": 1,
+      "tags": ["pgcd", "liste-diviseurs"]
+    },
+    {
+      "id": "5E-CH04-010",
+      "lecon": "Diviseurs communs et PGCD",
+      "type": "formule",
+      "recto": "Entre quelles bornes le PGCD de deux entiers se situe-t-il toujours ?",
+      "verso": "Il vaut au moins $1$ et il reste inférieur ou égal au plus petit des deux nombres, puisqu'il doit les diviser tous les deux.",
+      "difficulte": 2,
+      "tags": ["pgcd", "encadrement"]
+    },
+    {
+      "id": "5E-CH04-011",
+      "lecon": "Diviseurs communs et PGCD",
+      "type": "formule",
+      "recto": "Que vaut le PGCD de deux entiers lorsque l'un des deux divise l'autre ?",
+      "verso": "Il est égal au plus petit des deux nombres. Par exemple PGCD$(6\\,;\\,18) = 6$, car $6$ divise $18$.",
+      "difficulte": 2,
+      "tags": ["pgcd", "cas-particulier"]
+    },
+    {
+      "id": "5E-CH04-012",
+      "lecon": "Diviseurs communs et PGCD",
+      "type": "formule",
+      "recto": "Une fois le PGCD de deux nombres connu, comment obtient-on tous leurs diviseurs communs ?",
+      "verso": "Les diviseurs communs de deux nombres sont exactement les diviseurs de leur PGCD. Comme PGCD$(60\\,;\\,84) = 12$, leurs diviseurs communs sont $1$, $2$, $3$, $4$, $6$ et $12$.",
+      "difficulte": 3,
+      "tags": ["pgcd", "diviseur-commun", "propriete"]
+    },
+    {
+      "id": "5E-CH04-013",
+      "lecon": "Diviseurs communs et PGCD",
+      "type": "formule",
+      "recto": "Par quel nombre diviser le numérateur et le dénominateur d'une fraction pour la rendre irréductible en une seule étape ?",
+      "verso": "Par leur PGCD. Comme PGCD$(18\\,;\\,30) = 6$, on obtient directement $\\dfrac{18}{30} = \\dfrac{3}{5}$, qui ne se simplifie plus.",
+      "difficulte": 2,
+      "tags": ["pgcd", "simplification", "fraction"]
+    },
+    {
+      "id": "5E-CH04-014",
+      "lecon": "Diviseurs communs et PGCD",
+      "type": "definition",
+      "recto": "Quels mots d'un énoncé annoncent qu'il faut calculer un PGCD ?",
+      "verso": "« Le plus grand », « sans coupe », « sans reste », « parts identiques ». Ils décrivent un partage en lots égaux, donc un diviseur commun aussi grand que possible.",
+      "difficulte": 2,
+      "tags": ["pgcd", "reconnaitre", "probleme"]
+    },
+    {
+      "id": "5E-CH04-015",
+      "lecon": "Diviseurs communs et PGCD",
+      "type": "formule",
+      "recto": "Quelle erreur commet l'élève qui garde tous les facteurs des deux décompositions pour calculer un PGCD ?",
+      "verso": "Il obtient en réalité le PPCM, qui est bien plus grand. Pour un PGCD, on ne retient que les facteurs présents dans les deux décompositions à la fois.",
+      "difficulte": 3,
+      "tags": ["pgcd", "ppcm", "piege"]
+    },
+    {
+      "id": "5E-CH04-016",
+      "lecon": "Diviseurs communs et PGCD",
+      "type": "definition",
+      "recto": "Pourquoi $3$ n'est-il pas le PGCD de $12$ et de $30$, alors que $3$ divise ces deux nombres ?",
+      "verso": "Parce que $3$ n'est qu'un diviseur commun parmi d'autres, et pas le plus grand : $6$ divise aussi $12$ et $30$. Le PGCD vaut donc $6$.",
+      "difficulte": 3,
+      "tags": ["pgcd", "diviseur-commun", "piege"]
+    },
+    {
+      "id": "5E-CH04-017",
+      "lecon": "Multiples communs et PPCM",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on un multiple commun de deux entiers $a$ et $b$ ?",
+      "verso": "C'est un entier qui est à la fois multiple de $a$ et multiple de $b$. Par exemple $36$ est un multiple commun de $12$ et de $18$.",
+      "difficulte": 1,
+      "tags": ["ppcm", "multiple-commun", "definition"]
+    },
+    {
+      "id": "5E-CH04-018",
+      "lecon": "Multiples communs et PPCM",
+      "type": "formule",
+      "recto": "Quel multiple commun de deux entiers $a$ et $b$ peut-on donner sans aucun calcul ?",
+      "verso": "Leur produit $a \\times b$, qui est multiple de $a$ et multiple de $b$. Deux entiers possèdent d'ailleurs une infinité de multiples communs.",
+      "difficulte": 2,
+      "tags": ["ppcm", "multiple-commun", "produit"]
+    },
+    {
+      "id": "5E-CH04-019",
+      "lecon": "Multiples communs et PPCM",
+      "type": "definition",
+      "recto": "Comment définit-on le PPCM de deux entiers naturels $a$ et $b$ ?",
+      "verso": "C'est le plus petit de leurs multiples communs non nuls. On le note PPCM$(a\\,;\\,b)$. Ainsi PPCM$(12\\,;\\,18) = 36$.",
+      "difficulte": 1,
+      "tags": ["ppcm", "definition", "notation"]
+    },
+    {
+      "id": "5E-CH04-020",
+      "lecon": "Multiples communs et PPCM",
+      "type": "definition",
+      "recto": "Pourquoi la définition du PPCM précise-t-elle « non nul » ?",
+      "verso": "Parce que $0$ est multiple de tous les nombres, puisque $0 = 12 \\times 0$. Sans cette précision, le plus petit multiple commun serait toujours $0$ et la définition ne servirait à rien.",
+      "difficulte": 3,
+      "tags": ["ppcm", "zero", "definition"]
+    },
+    {
+      "id": "5E-CH04-021",
+      "lecon": "Multiples communs et PPCM",
+      "type": "definition",
+      "recto": "Pourquoi cherche-t-on le plus petit des multiples communs et non le plus grand ?",
+      "verso": "Parce que les multiples d'un nombre ne s'arrêtent jamais : il n'existe pas de plus grand multiple commun. Seule la première rencontre a un sens.",
+      "difficulte": 2,
+      "tags": ["ppcm", "multiple-commun", "infinite"]
+    },
+    {
+      "id": "5E-CH04-022",
+      "lecon": "Multiples communs et PPCM",
+      "type": "formule",
+      "recto": "Par décomposition en facteurs premiers, quels facteurs garde-t-on pour obtenir un PPCM ?",
+      "verso": "On prend tous les facteurs premiers qui apparaissent, communs ou non, chacun à sa plus grande puissance. Avec $12 = 2^{2} \\times 3$ et $18 = 2 \\times 3^{2}$, le PPCM vaut $2^{2} \\times 3^{2} = 36$.",
+      "difficulte": 2,
+      "tags": ["ppcm", "decomposition", "facteurs-premiers"]
+    },
+    {
+      "id": "5E-CH04-023",
+      "lecon": "Multiples communs et PPCM",
+      "type": "formule",
+      "recto": "Comment obtient-on le PPCM de deux petits nombres à partir des listes de leurs multiples ?",
+      "verso": "On écrit les multiples de chacun, puis on retient le plus petit nombre non nul présent dans les deux listes. Pour $9$ et $15$, on trouve $45$.",
+      "difficulte": 1,
+      "tags": ["ppcm", "liste-multiples"]
+    },
+    {
+      "id": "5E-CH04-024",
+      "lecon": "Multiples communs et PPCM",
+      "type": "formule",
+      "recto": "Que vaut le PPCM de deux entiers lorsque l'un des deux divise l'autre ?",
+      "verso": "Il est égal au plus grand des deux nombres. Par exemple PPCM$(5\\,;\\,20) = 20$, car $5$ divise $20$.",
+      "difficulte": 2,
+      "tags": ["ppcm", "cas-particulier"]
+    },
+    {
+      "id": "5E-CH04-025",
+      "lecon": "Multiples communs et PPCM",
+      "type": "formule",
+      "recto": "Que vaut le PPCM de deux entiers premiers entre eux ?",
+      "verso": "Il est égal à leur produit. Les nombres $7$ et $9$ sont premiers entre eux, donc PPCM$(7\\,;\\,9) = 7 \\times 9 = 63$.",
+      "difficulte": 2,
+      "tags": ["ppcm", "premiers-entre-eux", "cas-particulier"]
+    },
+    {
+      "id": "5E-CH04-026",
+      "lecon": "Multiples communs et PPCM",
+      "type": "formule",
+      "recto": "Entre quelles bornes le PPCM de deux entiers se situe-t-il toujours ?",
+      "verso": "Il est supérieur ou égal au plus grand des deux nombres, et inférieur ou égal à leur produit.",
+      "difficulte": 2,
+      "tags": ["ppcm", "encadrement"]
+    },
+    {
+      "id": "5E-CH04-027",
+      "lecon": "Multiples communs et PPCM",
+      "type": "formule",
+      "recto": "Quelle relation lie le PGCD, le PPCM et le produit de deux entiers $a$ et $b$ ?",
+      "verso": "PGCD$(a\\,;\\,b) \\times$ PPCM$(a\\,;\\,b) = a \\times b$. Connaissant l'un, on obtient l'autre par une division : de PGCD$(8\\,;\\,12) = 4$ on tire PPCM $= \\dfrac{8 \\times 12}{4} = 24$.",
+      "difficulte": 2,
+      "tags": ["ppcm", "pgcd", "relation"]
+    },
+    {
+      "id": "5E-CH04-028",
+      "lecon": "Multiples communs et PPCM",
+      "type": "formule",
+      "recto": "Quel nombre prend-on comme plus petit dénominateur commun possible à deux fractions ?",
+      "verso": "Le PPCM des deux dénominateurs. Pour $\\dfrac{5}{6}$ et $\\dfrac{7}{8}$, PPCM$(6\\,;\\,8) = 24$, donc on écrit $\\dfrac{20}{24}$ et $\\dfrac{21}{24}$.",
+      "difficulte": 2,
+      "tags": ["ppcm", "denominateur-commun", "fraction"]
+    },
+    {
+      "id": "5E-CH04-029",
+      "lecon": "Multiples communs et PPCM",
+      "type": "definition",
+      "recto": "Quels mots d'un énoncé annoncent qu'il faut calculer un PPCM ?",
+      "verso": "« En même temps », « de nouveau ensemble », « coïncider », « le premier moment où », « au même dénominateur ». Ils décrivent une rencontre qui revient, donc le plus petit multiple commun.",
+      "difficulte": 2,
+      "tags": ["ppcm", "reconnaitre", "probleme"]
+    },
+    {
+      "id": "5E-CH04-030",
+      "lecon": "Multiples communs et PPCM",
+      "type": "formule",
+      "recto": "Pourquoi PPCM$(4\\,;\\,6)$ ne vaut-il pas $24$ ?",
+      "verso": "Parce que $12$ est déjà multiple de $4$ et de $6$ : PPCM$(4\\,;\\,6) = 12$. Le produit ne donne le PPCM que si les deux nombres sont premiers entre eux.",
+      "difficulte": 3,
+      "tags": ["ppcm", "piege", "produit"]
+    },
+    {
+      "id": "5E-CH04-031",
+      "lecon": "Multiples communs et PPCM",
+      "type": "formule",
+      "recto": "Deux coureurs bouclent une piste en $12$ min et en $18$ min ; pourquoi ne se retrouvent-ils pas au départ au bout de $30$ min ?",
+      "verso": "Parce qu'une rencontre se produit à un multiple commun des deux durées, et non à leur somme. Le premier instant commun est PPCM$(12\\,;\\,18) = 36$ minutes.",
+      "difficulte": 3,
+      "tags": ["ppcm", "piege", "somme"]
+    }
+  ]
+}

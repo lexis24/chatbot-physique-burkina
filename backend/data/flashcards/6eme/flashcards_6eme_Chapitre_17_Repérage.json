@@ -1,0 +1,305 @@
+{
+  "niveau": "6ème",
+  "chapitre": "Chapitre 17 : Repérage",
+  "source": "maths/6eme/Chapitre_17_Reperage",
+  "nombre_cartes": 33,
+  "cartes": [
+    {
+      "id": "6E-CH17-001",
+      "lecon": "Repérer un point sur une droite graduée",
+      "type": "definition",
+      "recto": "Quels sont les trois éléments qui définissent une droite graduée ?",
+      "verso": "Une origine, notée $O$, à laquelle on donne le nombre $0$ ; une unité de longueur, qui est la distance entre deux graduations voisines ; un sens, celui dans lequel les nombres augmentent, en général vers la droite.",
+      "difficulte": 1,
+      "tags": ["droite-graduee", "definition"]
+    },
+    {
+      "id": "6E-CH17-002",
+      "lecon": "Repérer un point sur une droite graduée",
+      "type": "definition",
+      "recto": "Qu'est-ce que l'abscisse d'un point sur une droite graduée ?",
+      "verso": "C'est le nombre qui repère ce point. Elle est positive à droite du $0$, négative à gauche, et nulle lorsque le point est confondu avec l'origine $O$.",
+      "difficulte": 1,
+      "tags": ["droite-graduee", "abscisse"]
+    },
+    {
+      "id": "6E-CH17-003",
+      "lecon": "Repérer un point sur une droite graduée",
+      "type": "definition",
+      "recto": "Que signifie l'écriture $A\\left(+3\\right)$ ?",
+      "verso": "Elle signifie que le point $A$ a pour abscisse $+3$ : il se trouve $3$ unités à droite de l'origine. On dit aussi « le point d'abscisse $3$ ».",
+      "difficulte": 1,
+      "tags": ["abscisse", "notation"]
+    },
+    {
+      "id": "6E-CH17-004",
+      "lecon": "Repérer un point sur une droite graduée",
+      "type": "definition",
+      "recto": "Pourquoi un seul nombre suffit-il à repérer un car sur une route, alors qu'il en faut deux pour un arbre dans un champ ?",
+      "verso": "Sur la route, il n'y a qu'une liberté : avancer ou reculer. Dans un champ, il y en a deux, indépendantes l'une de l'autre : plus ou moins vers la droite, et plus ou moins vers le haut.",
+      "difficulte": 2,
+      "tags": ["reperage", "droite-graduee", "plan"]
+    },
+    {
+      "id": "6E-CH17-005",
+      "lecon": "Repérer un point sur une droite graduée",
+      "type": "formule",
+      "recto": "Comment calcule-t-on la distance entre deux points d'une droite graduée situés du même côté du $0$ ?",
+      "verso": "On soustrait leurs abscisses, comme sur une règle ordinaire : de $+2$ à $+7$, il y a $7 - 2 = 5$ unités.",
+      "difficulte": 2,
+      "tags": ["droite-graduee", "distance"]
+    },
+    {
+      "id": "6E-CH17-006",
+      "lecon": "Repérer un point sur une droite graduée",
+      "type": "formule",
+      "recto": "Comment calcule-t-on la distance entre deux points situés de part et d'autre du $0$ ?",
+      "verso": "Le trajet passe par l'origine : on mesure chaque morceau sans tenir compte du signe, puis on les additionne. De $E\\left(-3\\right)$ à $F\\left(+5\\right)$, $EF = 3 + 5 = 8$ unités.",
+      "difficulte": 2,
+      "tags": ["droite-graduee", "distance"]
+    },
+    {
+      "id": "6E-CH17-007",
+      "lecon": "Repérer un point sur une droite graduée",
+      "type": "formule",
+      "recto": "Comment trouve-t-on l'abscisse du milieu de deux points d'une droite graduée ?",
+      "verso": "On calcule la distance qui les sépare, on la partage en deux, puis on avance de cette moitié depuis le premier point. De $-3$ à $+5$ : $8 \\div 2 = 4$, et le milieu a pour abscisse $+1$.",
+      "difficulte": 2,
+      "tags": ["droite-graduee", "milieu"]
+    },
+    {
+      "id": "6E-CH17-008",
+      "lecon": "Repérer un point sur une droite graduée",
+      "type": "formule",
+      "recto": "Pourquoi le point d'abscisse $-1{,}5$ ne se place-t-il pas entre $-1$ et $0$ ?",
+      "verso": "Parce que $1{,}5$ est plus grand que $1$ : le point est donc plus loin du $0$ que $-1$, et il se place entre $-2$ et $-1$.",
+      "difficulte": 3,
+      "tags": ["abscisse", "piege", "decimal"]
+    },
+    {
+      "id": "6E-CH17-009",
+      "lecon": "Repérer un point sur une droite graduée",
+      "type": "formule",
+      "recto": "Sur une droite graduée, que peut représenter $1$ cm en dehors d'une unité de longueur ?",
+      "verso": "Il peut représenter $50$ km sur une carte, ou $1\\,000$ FCFA sur une droite des bénéfices. On l'écrit toujours à côté de la droite, sous la forme « $1$ cm $= 50$ km ».",
+      "difficulte": 2,
+      "tags": ["droite-graduee", "unite"]
+    },
+    {
+      "id": "6E-CH17-010",
+      "lecon": "Le repère du plan",
+      "type": "definition",
+      "recto": "De quoi est formé un repère du plan ?",
+      "verso": "De deux droites graduées perpendiculaires qui se coupent en un point $O$, l'origine. Le même point $O$ sert de zéro aux deux graduations, et l'unité est la même sur les deux axes.",
+      "difficulte": 1,
+      "tags": ["repere", "definition"]
+    },
+    {
+      "id": "6E-CH17-011",
+      "lecon": "Le repère du plan",
+      "type": "definition",
+      "recto": "Comment nomme-t-on l'axe horizontal et l'axe vertical d'un repère du plan ?",
+      "verso": "L'axe horizontal est l'axe des abscisses, noté $Ox$ ; l'axe vertical est l'axe des ordonnées, noté $Oy$.",
+      "difficulte": 1,
+      "tags": ["repere", "axes", "vocabulaire"]
+    },
+    {
+      "id": "6E-CH17-012",
+      "lecon": "Le repère du plan",
+      "type": "definition",
+      "recto": "Dans le couple $M\\left(x\\,;\\,y\\right)$, que désignent $x$ et $y$ ?",
+      "verso": "$x$ est l'abscisse, la position horizontale lue sur l'axe $Ox$ ; $y$ est l'ordonnée, la position verticale lue sur l'axe $Oy$.",
+      "difficulte": 1,
+      "tags": ["coordonnees", "abscisse", "ordonnee"]
+    },
+    {
+      "id": "6E-CH17-013",
+      "lecon": "Le repère du plan",
+      "type": "formule",
+      "recto": "Dans quel ordre écrit-on les deux coordonnées d'un point ?",
+      "verso": "Toujours l'abscisse d'abord, puis l'ordonnée, séparées par un point-virgule et entourées de parenthèses. C'est une convention que tous les mathématiciens respectent.",
+      "difficulte": 2,
+      "tags": ["coordonnees", "convention"]
+    },
+    {
+      "id": "6E-CH17-014",
+      "lecon": "Le repère du plan",
+      "type": "formule",
+      "recto": "Pourquoi $\\left(2\\,;\\,3\\right)$ et $\\left(3\\,;\\,2\\right)$ ne désignent-ils pas le même point ?",
+      "verso": "Parce que dans un couple l'ordre compte : le premier nombre est l'abscisse, le second l'ordonnée. Les échanger revient à échanger le déplacement horizontal et le déplacement vertical.",
+      "difficulte": 3,
+      "tags": ["coordonnees", "piege", "convention"]
+    },
+    {
+      "id": "6E-CH17-015",
+      "lecon": "Le repère du plan",
+      "type": "definition",
+      "recto": "Quelles sont les coordonnées de l'origine d'un repère ?",
+      "verso": "$O\\left(0\\,;\\,0\\right)$. L'origine ne s'écarte ni horizontalement ni verticalement : ses deux coordonnées sont nulles.",
+      "difficulte": 1,
+      "tags": ["repere", "origine"]
+    },
+    {
+      "id": "6E-CH17-016",
+      "lecon": "Le repère du plan",
+      "type": "formule",
+      "recto": "Quelle coordonnée est nulle pour un point situé sur l'axe des abscisses ?",
+      "verso": "Son ordonnée : il s'écrit $\\left(x\\,;\\,0\\right)$. Sur l'axe des ordonnées, c'est au contraire l'abscisse qui est nulle, et le point s'écrit $\\left(0\\,;\\,y\\right)$.",
+      "difficulte": 2,
+      "tags": ["coordonnees", "axes", "cas-particulier"]
+    },
+    {
+      "id": "6E-CH17-017",
+      "lecon": "Le repère du plan",
+      "type": "formule",
+      "recto": "Pourquoi exige-t-on des axes perpendiculaires portant la même unité ?",
+      "verso": "Si les axes se coupaient de travers, les carreaux deviendraient des losanges et le comptage serait difficile ; avec deux unités différentes, le même dessin paraîtrait écrasé.",
+      "difficulte": 2,
+      "tags": ["repere", "axes", "unite"]
+    },
+    {
+      "id": "6E-CH17-018",
+      "lecon": "Placer un point dans un repère",
+      "type": "formule",
+      "recto": "Quelle est la méthode universelle pour placer un point $M\\left(x\\,;\\,y\\right)$ dans un repère ?",
+      "verso": "On part de l'origine, on se déplace d'abord horizontalement de $x$, puis verticalement de $y$. On retient : origine, horizontal, vertical.",
+      "difficulte": 1,
+      "tags": ["placer", "methode"]
+    },
+    {
+      "id": "6E-CH17-019",
+      "lecon": "Placer un point dans un repère",
+      "type": "formule",
+      "recto": "Que commandent les signes des deux coordonnées lorsqu'on place un point ?",
+      "verso": "Le signe de l'abscisse répond à « droite ou gauche » : droite si $x > 0$, gauche si $x < 0$. Le signe de l'ordonnée répond à « haut ou bas » : haut si $y > 0$, bas si $y < 0$.",
+      "difficulte": 1,
+      "tags": ["placer", "signes"]
+    },
+    {
+      "id": "6E-CH17-020",
+      "lecon": "Placer un point dans un repère",
+      "type": "formule",
+      "recto": "Comment le couple de signes annonce-t-il la zone du repère où tombera un point ?",
+      "verso": "Positif et positif : en haut à droite. Négatif et positif : en haut à gauche. Positif et négatif : en bas à droite. Négatif et négatif : en bas à gauche.",
+      "difficulte": 2,
+      "tags": ["placer", "zones", "signes"]
+    },
+    {
+      "id": "6E-CH17-021",
+      "lecon": "Placer un point dans un repère",
+      "type": "formule",
+      "recto": "Pourquoi les deux déplacements doivent-ils toujours partir de l'origine ?",
+      "verso": "Parce qu'ils se comptent à partir d'un point de départ commun. En partant d'ailleurs, les deux nombres du couple ne désignent plus le même endroit.",
+      "difficulte": 2,
+      "tags": ["placer", "origine"]
+    },
+    {
+      "id": "6E-CH17-022",
+      "lecon": "Placer un point dans un repère",
+      "type": "formule",
+      "recto": "Que peut-on dire du segment qui joint deux points de même ordonnée ?",
+      "verso": "Il est horizontal, car les deux points sont à la même hauteur. Sa longueur en carreaux est la différence des deux abscisses : de $A\\left(1\\,;\\,1\\right)$ à $B\\left(5\\,;\\,1\\right)$, $AB = 5 - 1 = 4$ carreaux.",
+      "difficulte": 2,
+      "tags": ["longueur", "segment-horizontal"]
+    },
+    {
+      "id": "6E-CH17-023",
+      "lecon": "Placer un point dans un repère",
+      "type": "formule",
+      "recto": "Que peut-on dire du segment qui joint deux points de même abscisse ?",
+      "verso": "Il est vertical, car les deux points sont sur une même verticale. Sa longueur en carreaux est la différence des deux ordonnées : de $B\\left(5\\,;\\,1\\right)$ à $C\\left(5\\,;\\,3\\right)$, $BC = 3 - 1 = 2$ carreaux.",
+      "difficulte": 2,
+      "tags": ["longueur", "segment-vertical"]
+    },
+    {
+      "id": "6E-CH17-024",
+      "lecon": "Placer un point dans un repère",
+      "type": "formule",
+      "recto": "Pourquoi ne calcule-t-on pas en 6ème la longueur d'un segment oblique placé dans un repère ?",
+      "verso": "Parce que la différence des coordonnées ne donne la longueur que pour un segment horizontal ou vertical. Pour un segment oblique, on mesure à la règle.",
+      "difficulte": 3,
+      "tags": ["longueur", "piege", "oblique"]
+    },
+    {
+      "id": "6E-CH17-025",
+      "lecon": "Lire des coordonnées et applications",
+      "type": "definition",
+      "recto": "Comment appelle-t-on le fait d'aller d'un point tout droit jusqu'à un axe pour y lire une coordonnée ?",
+      "verso": "On dit que l'on projette le point sur cet axe. Le mot vient du latin projicere, qui veut dire « jeter en avant ».",
+      "difficulte": 2,
+      "tags": ["lire", "projeter", "vocabulaire"]
+    },
+    {
+      "id": "6E-CH17-026",
+      "lecon": "Lire des coordonnées et applications",
+      "type": "formule",
+      "recto": "Comment lit-on les coordonnées d'un point déjà placé dans un repère ?",
+      "verso": "On projette le point sur les deux axes : l'abscisse se lit sur l'axe horizontal, l'ordonnée sur l'axe vertical. On écrit ensuite le couple $\\left(x\\,;\\,y\\right)$.",
+      "difficulte": 1,
+      "tags": ["lire", "coordonnees"]
+    },
+    {
+      "id": "6E-CH17-027",
+      "lecon": "Lire des coordonnées et applications",
+      "type": "formule",
+      "recto": "Sur un plan orienté avec l'Est à droite, quel lieu est le plus à l'Est ?",
+      "verso": "Celui dont l'abscisse est la plus grande. Le plus à l'Ouest est celui dont l'abscisse est la plus petite.",
+      "difficulte": 2,
+      "tags": ["comparer", "abscisse", "carte"]
+    },
+    {
+      "id": "6E-CH17-028",
+      "lecon": "Lire des coordonnées et applications",
+      "type": "formule",
+      "recto": "Sur un plan orienté avec le Nord vers le haut, quel lieu est le plus au Nord ?",
+      "verso": "Celui dont l'ordonnée est la plus grande. Le plus au Sud est celui dont l'ordonnée est la plus petite.",
+      "difficulte": 2,
+      "tags": ["comparer", "ordonnee", "carte"]
+    },
+    {
+      "id": "6E-CH17-029",
+      "lecon": "Lire des coordonnées et applications",
+      "type": "formule",
+      "recto": "Que deviennent les coordonnées d'un point par symétrie par rapport à l'axe des abscisses ?",
+      "verso": "L'abscisse ne bouge pas et l'ordonnée change de signe : le symétrique de $T\\left(4\\,;\\,2\\right)$ est $T'\\left(4\\,;\\,-2\\right)$.",
+      "difficulte": 2,
+      "tags": ["symetrie", "axe-des-abscisses"]
+    },
+    {
+      "id": "6E-CH17-030",
+      "lecon": "Lire des coordonnées et applications",
+      "type": "formule",
+      "recto": "Que deviennent les coordonnées d'un point par symétrie par rapport à l'axe des ordonnées ?",
+      "verso": "L'ordonnée ne bouge pas et l'abscisse change de signe : le symétrique de $T\\left(4\\,;\\,2\\right)$ est le point $\\left(-4\\,;\\,2\\right)$.",
+      "difficulte": 2,
+      "tags": ["symetrie", "axe-des-ordonnees"]
+    },
+    {
+      "id": "6E-CH17-031",
+      "lecon": "Lire des coordonnées et applications",
+      "type": "formule",
+      "recto": "Pourquoi $\\left(-4\\,;\\,2\\right)$ n'est-il pas le symétrique de $T\\left(4\\,;\\,2\\right)$ par rapport à l'axe horizontal ?",
+      "verso": "Parce que changer le signe de l'abscisse donne le symétrique par rapport à l'axe vertical. Par rapport à l'axe horizontal, c'est l'ordonnée qui change de signe, ce qui donne $\\left(4\\,;\\,-2\\right)$.",
+      "difficulte": 3,
+      "tags": ["symetrie", "piege"]
+    },
+    {
+      "id": "6E-CH17-032",
+      "lecon": "Lire des coordonnées et applications",
+      "type": "definition",
+      "recto": "Sur une carte routière quadrillée, que désignent la lettre et le chiffre d'une case ?",
+      "verso": "La lettre désigne la colonne, écrite en haut, et le chiffre désigne la ligne, écrite sur le côté. On donne d'abord la lettre : « le marché est en case B3 ».",
+      "difficulte": 2,
+      "tags": ["carte", "case", "vocabulaire"]
+    },
+    {
+      "id": "6E-CH17-033",
+      "lecon": "Lire des coordonnées et applications",
+      "type": "definition",
+      "recto": "En quoi une case de carte comme B3 diffère-t-elle d'un couple de coordonnées ?",
+      "verso": "Elle désigne une zone entière et non un point précis. La lettre remplace l'abscisse, le chiffre remplace l'ordonnée, et l'on cherche un quartier, pas un endroit exact.",
+      "difficulte": 3,
+      "tags": ["carte", "case", "coordonnees"]
+    }
+  ]
+}

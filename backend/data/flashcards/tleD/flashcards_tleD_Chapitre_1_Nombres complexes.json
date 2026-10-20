@@ -1,0 +1,350 @@
+{
+  "niveau": "Terminale D",
+  "chapitre": "Chapitre 1 : Nombres complexes",
+  "source": "maths/tleD/Chapitre_1_Nombres_complexes",
+  "nombre_cartes": 38,
+  "cartes": [
+    {
+      "id": "TD-CH01-001",
+      "lecon": "Forme algébrique et conjugué",
+      "type": "definition",
+      "recto": "Comment tout nombre complexe s'écrit-il sous forme algébrique ?",
+      "verso": "De façon unique, $z=a+bi$ avec $a$ et $b$ réels, où $i$ est le nombre dont l'existence est admise et qui vérifie $i^{2}=-1$. Le réel $a$ est la partie réelle $\\operatorname{Re}(z)$, le réel $b$ la partie imaginaire $\\operatorname{Im}(z)$.",
+      "difficulte": 1,
+      "tags": ["forme-algebrique", "partie-reelle", "partie-imaginaire"]
+    },
+    {
+      "id": "TD-CH01-002",
+      "lecon": "Forme algébrique et conjugué",
+      "type": "definition",
+      "recto": "Quand un nombre complexe est-il dit réel, et quand est-il dit imaginaire pur ?",
+      "verso": "Pour $z=a+bi$ écrit sous forme algébrique : $z$ est réel si $b=0$, et $z$ est imaginaire pur si $a=0$ avec $b\\ne 0$. La partie imaginaire de $z=3-5i$ est le réel $-5$, et non $-5i$ : le mot partie désigne un coefficient.",
+      "difficulte": 2,
+      "tags": ["reel", "imaginaire-pur", "vocabulaire"]
+    },
+    {
+      "id": "TD-CH01-003",
+      "lecon": "Forme algébrique et conjugué",
+      "type": "formule",
+      "recto": "Que permet de faire l'unicité de la forme algébrique lorsque deux complexes sont égaux ?",
+      "verso": "Elle permet l'identification : $a+bi=a'+b'i$ équivaut à $a=a'$ et $b=b'$. En particulier $a+bi=0$ équivaut à $a=0$ et $b=0$. Une égalité entre complexes se coupe donc en deux égalités entre réels.",
+      "difficulte": 2,
+      "tags": ["identification", "unicite"]
+    },
+    {
+      "id": "TD-CH01-004",
+      "lecon": "Forme algébrique et conjugué",
+      "type": "formule",
+      "recto": "Quelles valeurs peuvent prendre les puissances entières de $i$ ?",
+      "verso": "Quatre seulement : $i^{0}=1$, $i^{1}=i$, $i^{2}=-1$, $i^{3}=-i$, puis tout se répète de $4$ en $4$ puisque $i^{4}=1$. En écrivant $n=4q+r$, on obtient $i^{n}=i^{r}$, où $r$ est le reste de $n$ dans la division par $4$.",
+      "difficulte": 2,
+      "tags": ["puissances-de-i", "periodicite"]
+    },
+    {
+      "id": "TD-CH01-005",
+      "lecon": "Forme algébrique et conjugué",
+      "type": "definition",
+      "recto": "Comment définit-on le conjugué d'un nombre complexe $z=a+bi$ ?",
+      "verso": "C'est $\\bar z=a-bi$ : on change le signe de la seule partie imaginaire. Conjuguer deux fois ramène au départ, $\\overline{\\bar z}=z$, et la conjugaison traverse les quatre opérations, par exemple $\\overline{z+z'}=\\bar z+\\bar z'$ et $\\overline{z\\,z'}=\\bar z\\,\\bar z'$.",
+      "difficulte": 1,
+      "tags": ["conjugue", "definition"]
+    },
+    {
+      "id": "TD-CH01-006",
+      "lecon": "Forme algébrique et conjugué",
+      "type": "formule",
+      "recto": "Pourquoi multiplie-t-on par le conjugué du dénominateur pour mettre un quotient sous forme algébrique ?",
+      "verso": "Parce que $z'\\,\\overline{z'}=c^{2}+d^{2}$ est un réel strictement positif dès que $z'\\ne 0$ : le dénominateur perd son $i$ et l'on peut séparer les deux parties. On obtient de même $\\dfrac{1}{z}=\\dfrac{\\bar z}{a^{2}+b^{2}}$ pour $z\\ne 0$.",
+      "difficulte": 2,
+      "tags": ["conjugue", "quotient", "forme-algebrique"]
+    },
+    {
+      "id": "TD-CH01-007",
+      "lecon": "Forme algébrique et conjugué",
+      "type": "definition",
+      "recto": "Pourquoi n'écrit-on jamais $i=\\sqrt{-1}$ ?",
+      "verso": "Parce que la règle $\\sqrt a\\,\\sqrt b=\\sqrt{ab}$ est fausse pour les nombres négatifs : elle donnerait $-1=i^{2}=\\sqrt{-1}\\,\\sqrt{-1}=\\sqrt{1}=1$, ce qui est absurde. Le symbole $\\sqrt{\\ }$ reste réservé aux réels positifs.",
+      "difficulte": 3,
+      "tags": ["piege", "racine-carree", "notation"]
+    },
+    {
+      "id": "TD-CH01-008",
+      "lecon": "Représentation géométrique et module",
+      "type": "definition",
+      "recto": "Que désignent les mots affixe et image dans le plan complexe ?",
+      "verso": "Dans un repère orthonormé direct, au complexe $z=a+bi$ correspond le point $M(a\\,;b)$, appelé image de $z$ ; réciproquement $z$ est l'affixe de $M$. Les réels sont les affixes des points de l'axe des réels, les imaginaires purs ceux de l'axe des imaginaires.",
+      "difficulte": 1,
+      "tags": ["affixe", "image", "plan-complexe"]
+    },
+    {
+      "id": "TD-CH01-009",
+      "lecon": "Représentation géométrique et module",
+      "type": "formule",
+      "recto": "Quelle est l'affixe du vecteur $\\overrightarrow{AB}$ dans le plan complexe ?",
+      "verso": "C'est $z_B-z_A$, l'affixe d'arrivée moins celle du départ. Le milieu $I$ de $[AB]$ a quant à lui pour affixe $z_I=\\dfrac{z_A+z_B}{2}$.",
+      "difficulte": 1,
+      "tags": ["affixe", "vecteur", "milieu"]
+    },
+    {
+      "id": "TD-CH01-010",
+      "lecon": "Représentation géométrique et module",
+      "type": "definition",
+      "recto": "Comment définit-on le module d'un nombre complexe $z=a+bi$ ?",
+      "verso": "C'est le réel positif $|z|=\\sqrt{a^{2}+b^{2}}$, qui vaut la distance $OM$ où $M$ est l'image de $z$. On a $|z|=0$ seulement pour $z=0$, et surtout l'égalité $|z|^{2}=z\\,\\bar z$.",
+      "difficulte": 1,
+      "tags": ["module", "definition"]
+    },
+    {
+      "id": "TD-CH01-011",
+      "lecon": "Représentation géométrique et module",
+      "type": "formule",
+      "recto": "Comment le module se comporte-t-il vis-à-vis du produit, du quotient et des puissances ?",
+      "verso": "Il les traverse : $|z\\,z'|=|z|\\,|z'|$, $\\left|\\dfrac{z}{z'}\\right|=\\dfrac{|z|}{|z'|}$ pour $z'\\ne 0$, et $|z^{n}|=|z|^{n}$. On a aussi $|\\bar z|=|z|$ et $|-z|=|z|$, mais pour la somme seulement l'inégalité triangulaire $|z+z'|\\le |z|+|z'|$.",
+      "difficulte": 2,
+      "tags": ["module", "proprietes", "inegalite-triangulaire"]
+    },
+    {
+      "id": "TD-CH01-012",
+      "lecon": "Représentation géométrique et module",
+      "type": "formule",
+      "recto": "Quels ensembles de points les écritures $|z-z_A|=R$ et $|z-z_A|=|z-z_B|$ décrivent-elles ?",
+      "verso": "Puisque $AB=|z_B-z_A|$, la première dit $AM=R$ et décrit le cercle de centre $A$ et de rayon $R$ ; la seconde dit $AM=BM$ et décrit la médiatrice de $[AB]$. Un module de différence se lit toujours comme une distance.",
+      "difficulte": 2,
+      "tags": ["module", "cercle", "mediatrice", "ensemble-de-points"]
+    },
+    {
+      "id": "TD-CH01-013",
+      "lecon": "Représentation géométrique et module",
+      "type": "definition",
+      "recto": "Pourquoi le module de $2+3i$ ne vaut-il pas $5$ ?",
+      "verso": "Parce que le module n'est pas la somme des deux parties mais $\\sqrt{a^{2}+b^{2}}$ : ici $|2+3i|=\\sqrt{13}$. De même $|z+z'|$ n'est en général pas $|z|+|z'|$ : pour $z=1$ et $z'=-1$, la somme des modules vaut $2$ alors que $|z+z'|=0$.",
+      "difficulte": 3,
+      "tags": ["module", "piege"]
+    },
+    {
+      "id": "TD-CH01-014",
+      "lecon": "Argument, forme trigonométrique et exponentielle",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on un argument d'un nombre complexe non nul $z$ ?",
+      "verso": "Toute mesure de l'angle orienté $\\left(\\vec u\\,,\\overrightarrow{OM}\\right)$, où $M$ est l'image de $z$ dans un repère orthonormé direct. Il est défini modulo $2\\pi$ : si $\\theta$ convient, les arguments sont les $\\theta+2k\\pi$. Le nombre $0$ n'a pas d'argument.",
+      "difficulte": 1,
+      "tags": ["argument", "definition"]
+    },
+    {
+      "id": "TD-CH01-015",
+      "lecon": "Argument, forme trigonométrique et exponentielle",
+      "type": "formule",
+      "recto": "Quel couple d'égalités caractérise un argument $\\theta$ de $z=a+bi$ non nul, de module $r$ ?",
+      "verso": "$\\cos\\theta=\\dfrac{a}{r}$ et $\\sin\\theta=\\dfrac{b}{r}$, les deux ensemble. Une seule ne suffit jamais : $\\cos\\theta=\\dfrac{1}{2}$ convient à $\\dfrac{\\pi}{3}$ comme à $-\\dfrac{\\pi}{3}$, et seul le signe du sinus tranche. Le module se calcule donc avant l'argument.",
+      "difficulte": 2,
+      "tags": ["argument", "cosinus", "sinus"]
+    },
+    {
+      "id": "TD-CH01-016",
+      "lecon": "Argument, forme trigonométrique et exponentielle",
+      "type": "formule",
+      "recto": "Comment s'écrit un complexe non nul de module $r$ et d'argument $\\theta$ sous forme trigonométrique ?",
+      "verso": "$z=r(\\cos\\theta+i\\sin\\theta)$, ce qui s'abrège en forme exponentielle $z=r\\,e^{i\\theta}$. Dans une écriture correcte, $r$ est positif et mis en facteur, avec un signe $+$ et le même angle aux deux places ; de plus $\\left|e^{i\\theta}\\right|=1$.",
+      "difficulte": 1,
+      "tags": ["forme-trigonometrique", "forme-exponentielle"]
+    },
+    {
+      "id": "TD-CH01-017",
+      "lecon": "Argument, forme trigonométrique et exponentielle",
+      "type": "formule",
+      "recto": "Comment l'argument se comporte-t-il vis-à-vis du produit et du quotient ?",
+      "verso": "On multiplie les modules et on additionne les arguments : $\\arg(z\\,z')=\\arg(z)+\\arg(z')+2k\\pi$ et $\\arg\\left(\\dfrac{z}{z'}\\right)=\\arg(z)-\\arg(z')+2k\\pi$. En exponentielle, $r\\,e^{i\\theta}\\times r'e^{i\\theta'}=r\\,r'\\,e^{i(\\theta+\\theta')}$.",
+      "difficulte": 2,
+      "tags": ["argument", "produit", "quotient"]
+    },
+    {
+      "id": "TD-CH01-018",
+      "lecon": "Argument, forme trigonométrique et exponentielle",
+      "type": "formule",
+      "recto": "Que valent $\\arg(\\bar z)$, $\\arg(-z)$ et $\\arg(z^{n})$ en fonction de $\\arg(z)$ ?",
+      "verso": "$\\arg(\\bar z)=-\\arg(z)+2k\\pi$, car le conjugué est le symétrique par rapport à l'axe des réels ; $\\arg(-z)=\\arg(z)+\\pi+2k\\pi$, ce qui est un demi-tour autour de $O$ ; et $\\arg(z^{n})=n\\,\\arg(z)+2k\\pi$.",
+      "difficulte": 2,
+      "tags": ["argument", "conjugue", "oppose"]
+    },
+    {
+      "id": "TD-CH01-019",
+      "lecon": "Argument, forme trigonométrique et exponentielle",
+      "type": "formule",
+      "recto": "Comment l'argument caractérise-t-il un complexe non nul réel ou imaginaire pur ?",
+      "verso": "$z$ est réel si et seulement si $\\arg(z)=k\\pi$, et imaginaire pur si et seulement si $\\arg(z)=\\dfrac{\\pi}{2}+k\\pi$. Pour $r>0$ : $r=r\\,e^{i\\cdot 0}$, $-r=r\\,e^{i\\pi}$, $ri=r\\,e^{i\\pi/2}$ et $-ri=r\\,e^{-i\\pi/2}$.",
+      "difficulte": 2,
+      "tags": ["argument", "reel", "imaginaire-pur"]
+    },
+    {
+      "id": "TD-CH01-020",
+      "lecon": "Argument, forme trigonométrique et exponentielle",
+      "type": "formule",
+      "recto": "Quel effet géométrique produit la multiplication d'un complexe par $e^{i\\alpha}$ ?",
+      "verso": "Comme $\\left|e^{i\\alpha}\\right|=1$, le module ne change pas et l'argument augmente de $\\alpha$ : l'image tourne autour de $O$ d'un angle $\\alpha$. Multiplier par $i=e^{i\\pi/2}$ revient donc à faire un quart de tour dans le sens direct.",
+      "difficulte": 2,
+      "tags": ["rotation", "forme-exponentielle", "argument"]
+    },
+    {
+      "id": "TD-CH01-021",
+      "lecon": "Formules de Moivre et d'Euler",
+      "type": "formule",
+      "recto": "Qu'affirme la formule de Moivre pour un entier naturel $n$ et un réel $\\theta$ ?",
+      "verso": "Que $(\\cos\\theta+i\\sin\\theta)^{n}=\\cos(n\\theta)+i\\sin(n\\theta)$, ce qui s'écrit $\\left(e^{i\\theta}\\right)^{n}=e^{in\\theta}$. Plus généralement, pour $z=r\\,e^{i\\theta}$ non nul, $z^{n}=r^{n}e^{in\\theta}$.",
+      "difficulte": 1,
+      "tags": ["moivre", "puissance"]
+    },
+    {
+      "id": "TD-CH01-022",
+      "lecon": "Formules de Moivre et d'Euler",
+      "type": "formule",
+      "recto": "Pourquoi le module de $(1+i)^{8}$ ne vaut-il pas $8\\sqrt{2}$ ?",
+      "verso": "Parce que la puissance n'agit pas de la même manière sur les deux nombres : le module est élevé à la puissance $n$, tandis que l'argument est seulement multiplié par $n$. Ici $\\left|(1+i)^{8}\\right|=\\left(\\sqrt2\\right)^{8}=16$.",
+      "difficulte": 3,
+      "tags": ["moivre", "module", "piege"]
+    },
+    {
+      "id": "TD-CH01-023",
+      "lecon": "Formules de Moivre et d'Euler",
+      "type": "formule",
+      "recto": "Quelles sont les formules d'Euler donnant $\\cos\\theta$ et $\\sin\\theta$ ?",
+      "verso": "$\\cos\\theta=\\dfrac{e^{i\\theta}+e^{-i\\theta}}{2}$ et $\\sin\\theta=\\dfrac{e^{i\\theta}-e^{-i\\theta}}{2i}$. On les obtient en additionnant puis en soustrayant $e^{i\\theta}=\\cos\\theta+i\\sin\\theta$ et $e^{-i\\theta}=\\cos\\theta-i\\sin\\theta$. Le $2i$ du sinus s'oublie souvent.",
+      "difficulte": 2,
+      "tags": ["euler", "trigonometrie"]
+    },
+    {
+      "id": "TD-CH01-024",
+      "lecon": "Formules de Moivre et d'Euler",
+      "type": "definition",
+      "recto": "En quoi consiste la linéarisation d'une puissance de cosinus ou de sinus ?",
+      "verso": "A transformer $\\cos^{n}\\theta$ ou $\\sin^{n}\\theta$ en une somme de $\\cos(k\\theta)$ et de $\\sin(k\\theta)$ : on remplace chaque facteur par son écriture d'Euler, on développe, puis on regroupe les paires conjuguées car $e^{ix}+e^{-ix}=2\\cos x$. Ainsi $\\cos^{2}\\theta=\\dfrac{1}{2}+\\dfrac{1}{2}\\cos(2\\theta)$.",
+      "difficulte": 2,
+      "tags": ["linearisation", "euler"]
+    },
+    {
+      "id": "TD-CH01-025",
+      "lecon": "Formules de Moivre et d'Euler",
+      "type": "formule",
+      "recto": "Quelles formules relient les produits et les sommes de cosinus ?",
+      "verso": "Dans un sens, $\\cos a\\,\\cos b=\\dfrac{1}{2}\\left[\\cos(a+b)+\\cos(a-b)\\right]$ ; dans l'autre, $\\cos p+\\cos q=2\\cos\\dfrac{p+q}{2}\\,\\cos\\dfrac{p-q}{2}$. On les retrouve toutes en passant par les écritures d'Euler puis en regroupant les termes conjugués.",
+      "difficulte": 2,
+      "tags": ["produit-en-somme", "somme-en-produit", "euler"]
+    },
+    {
+      "id": "TD-CH01-026",
+      "lecon": "Equations dans $\\mathbb{C}$",
+      "type": "formule",
+      "recto": "Quelles sont les solutions de $z^{2}=k$ lorsque le réel $k$ est strictement négatif ?",
+      "verso": "Deux solutions imaginaires pures opposées, $z=i\\sqrt{-k}$ et $z=-i\\sqrt{-k}$, car $-k$ est alors un réel positif. Ainsi $z^{2}=-9$ donne $z=3i$ ou $z=-3i$.",
+      "difficulte": 1,
+      "tags": ["equation", "racine-carree"]
+    },
+    {
+      "id": "TD-CH01-027",
+      "lecon": "Equations dans $\\mathbb{C}$",
+      "type": "formule",
+      "recto": "Quelles sont les solutions de $az^{2}+bz+c=0$ à coefficients réels lorsque $\\Delta<0$ ?",
+      "verso": "Deux solutions complexes conjuguées, $z_1=\\dfrac{-b+i\\sqrt{-\\Delta}}{2a}$ et $z_2=\\dfrac{-b-i\\sqrt{-\\Delta}}{2a}=\\overline{z_1}$. Le réel $-\\Delta$ étant positif, sa racine carrée a un sens : un trinôme a désormais toujours deux racines.",
+      "difficulte": 1,
+      "tags": ["second-degre", "discriminant", "racines-conjuguees"]
+    },
+    {
+      "id": "TD-CH01-028",
+      "lecon": "Equations dans $\\mathbb{C}$",
+      "type": "formule",
+      "recto": "Pourquoi les racines non réelles d'un trinôme à coefficients réels sont-elles conjuguées ?",
+      "verso": "En conjuguant l'égalité $az_1^{2}+bz_1+c=0$, la conjugaison traverse la somme et le produit et laisse $a$, $b$, $c$ inchangés puisqu'ils sont réels : $\\overline{z_1}$ est donc racine à son tour. La propriété tombe dès que les coefficients ne sont plus réels.",
+      "difficulte": 3,
+      "tags": ["racines-conjuguees", "demonstration", "piege"]
+    },
+    {
+      "id": "TD-CH01-029",
+      "lecon": "Equations dans $\\mathbb{C}$",
+      "type": "formule",
+      "recto": "Quel système résout-on pour déterminer les racines carrées d'un complexe non nul $A$ ?",
+      "verso": "En posant $z=x+iy$ : $x^{2}-y^{2}=\\operatorname{Re}(A)$, $x^{2}+y^{2}=|A|$ et $2xy=\\operatorname{Im}(A)$. Les deux premières donnent $x^{2}$ et $y^{2}$ par somme et différence ; la troisième ne sert qu'aux signes, mêmes signes si $\\operatorname{Im}(A)>0$, contraires sinon.",
+      "difficulte": 2,
+      "tags": ["racine-carree", "systeme"]
+    },
+    {
+      "id": "TD-CH01-030",
+      "lecon": "Equations dans $\\mathbb{C}$",
+      "type": "formule",
+      "recto": "Comment résout-on $az^{2}+bz+c=0$ lorsque les coefficients sont complexes ?",
+      "verso": "On calcule $\\Delta=b^{2}-4ac$, on cherche un complexe $\\delta$ vérifiant $\\delta^{2}=\\Delta$, puis $z_1=\\dfrac{-b+\\delta}{2a}$ et $z_2=\\dfrac{-b-\\delta}{2a}$. Il n'y a plus de discussion de signe, et les deux racines ne sont plus conjuguées en général.",
+      "difficulte": 2,
+      "tags": ["second-degre", "coefficients-complexes"]
+    },
+    {
+      "id": "TD-CH01-031",
+      "lecon": "Equations dans $\\mathbb{C}$",
+      "type": "formule",
+      "recto": "Quelles sont les solutions de l'équation $z^{n}=w$, où $w=r\\,e^{i\\theta}$ est un complexe non nul ?",
+      "verso": "Il y en a exactement $n$ : $z_k=\\sqrt[n]{r}\\,e^{i\\left(\\theta+2k\\pi\\right)/n}$, pour $k$ allant de $0$ à $n-1$. Leurs images se répartissent régulièrement sur le cercle de centre $O$ et de rayon $\\sqrt[n]{r}$, et forment un polygone régulier à $n$ côtés.",
+      "difficulte": 2,
+      "tags": ["racines-niemes", "polygone-regulier"]
+    },
+    {
+      "id": "TD-CH01-032",
+      "lecon": "Equations dans $\\mathbb{C}$",
+      "type": "formule",
+      "recto": "Par quel principe résout-on une équation bicarrée ou une équation de degré $3$ dont une racine est indiquée ?",
+      "verso": "On se ramène au second degré. Pour $az^{4}+bz^{2}+c=0$, on pose $Z=z^{2}$ puis on cherche les racines carrées de chaque $Z$ trouvé, ce qui donne quatre solutions. Pour un degré $3$ de racine connue $z_0$, on factorise en $(z-z_0)\\left(z^{2}+pz+q\\right)$ et l'on identifie.",
+      "difficulte": 2,
+      "tags": ["bicarree", "factorisation", "identification"]
+    },
+    {
+      "id": "TD-CH01-033",
+      "lecon": "Nombres complexes et géométrie du plan",
+      "type": "formule",
+      "recto": "Que représentent le module et l'argument du quotient $\\dfrac{c-a}{b-a}$ pour trois points distincts $A$, $B$, $C$ ?",
+      "verso": "Son module vaut $\\dfrac{AC}{AB}$ et son argument est une mesure de l'angle orienté $\\left(\\overrightarrow{AB},\\overrightarrow{AC}\\right)$. Le sommet étudié est celui dont l'affixe est soustraite partout, ici $A$, et l'angle se mesure de $\\overrightarrow{AB}$ vers $\\overrightarrow{AC}$.",
+      "difficulte": 2,
+      "tags": ["quotient", "angle", "geometrie"]
+    },
+    {
+      "id": "TD-CH01-034",
+      "lecon": "Nombres complexes et géométrie du plan",
+      "type": "formule",
+      "recto": "Quelles configurations de trois points $A$, $B$, $C$ le quotient $\\dfrac{c-a}{b-a}$ permet-il de reconnaître ?",
+      "verso": "Réel, il traduit l'alignement des trois points ; imaginaire pur non nul, un angle droit en $A$ ; de module $1$, un triangle isocèle en $A$ ; égal à $i$ ou à $-i$, un triangle rectangle isocèle en $A$.",
+      "difficulte": 2,
+      "tags": ["quotient", "alignement", "triangle"]
+    },
+    {
+      "id": "TD-CH01-035",
+      "lecon": "Nombres complexes et géométrie du plan",
+      "type": "definition",
+      "recto": "Pourquoi un quotient $\\dfrac{c-a}{b-a}$ imaginaire pur ne traduit-il pas un alignement ?",
+      "verso": "Parce qu'un argument valant $\\dfrac{\\pi}{2}$ modulo $\\pi$ signale un angle droit en $A$, alors que l'alignement correspond à un argument nul modulo $\\pi$, c'est-à-dire à un quotient réel. Echanger les deux caractérisations fait perdre tout le raisonnement.",
+      "difficulte": 3,
+      "tags": ["quotient", "piege"]
+    },
+    {
+      "id": "TD-CH01-036",
+      "lecon": "Nombres complexes et géométrie du plan",
+      "type": "formule",
+      "recto": "Quels ensembles de points obtient-on selon la nature du quotient $Z=\\dfrac{z-a}{z-b}$ ?",
+      "verso": "Son module vaut $\\dfrac{MA}{MB}$ et son argument mesure $\\left(\\overrightarrow{MB},\\overrightarrow{MA}\\right)$. Ainsi $|Z|=1$ donne la médiatrice de $[AB]$ ; $Z$ réel donne la droite $(AB)$ privée de $B$ ; $Z$ imaginaire pur donne le cercle de diamètre $[AB]$ privé de $A$ et de $B$.",
+      "difficulte": 3,
+      "tags": ["ensemble-de-points", "quotient", "cercle", "mediatrice"]
+    },
+    {
+      "id": "TD-CH01-037",
+      "lecon": "Nombres complexes et géométrie du plan",
+      "type": "formule",
+      "recto": "Quelles sont les écritures complexes de la translation et de la rotation ?",
+      "verso": "Translation de vecteur d'affixe $a$ : $z'=z+a$. Rotation de centre $\\Omega(\\omega)$ et d'angle $\\alpha$ : $z'-\\omega=e^{i\\alpha}(z-\\omega)$, qui ne se réduit à $z'=e^{i\\alpha}z$ que si le centre est $O$. Oublier le centre est l'erreur la plus fréquente.",
+      "difficulte": 2,
+      "tags": ["translation", "rotation", "ecriture-complexe"]
+    },
+    {
+      "id": "TD-CH01-038",
+      "lecon": "Nombres complexes et géométrie du plan",
+      "type": "formule",
+      "recto": "Quelles sont les écritures complexes des symétries usuelles et de l'homothétie ?",
+      "verso": "Symétrie d'axe l'axe des réels : $z'=\\bar z$ ; d'axe l'axe des imaginaires : $z'=-\\bar z$ ; de centre $O$ : $z'=-z$ ; de centre $\\Omega(\\omega)$ : $z'=2\\omega-z$. Homothétie de centre $\\Omega(\\omega)$ et de rapport réel $k$ non nul : $z'-\\omega=k(z-\\omega)$.",
+      "difficulte": 2,
+      "tags": ["symetrie", "homothetie", "ecriture-complexe"]
+    }
+  ]
+}

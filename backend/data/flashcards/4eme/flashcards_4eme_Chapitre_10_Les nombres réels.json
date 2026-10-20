@@ -1,0 +1,296 @@
+{
+  "niveau": "4ème",
+  "chapitre": "Chapitre 10 : Les nombres réels",
+  "source": "maths/4eme/Chapitre_10_Les_nombres_reels",
+  "nombre_cartes": 32,
+  "cartes": [
+    {
+      "id": "4E-CH10-001",
+      "lecon": "Qu'est-ce qu'un nombre réel ? Rationnels et irrationnels",
+      "type": "definition",
+      "recto": "Qu'est-ce qu'un nombre irrationnel ?",
+      "verso": "C'est un nombre dont l'écriture décimale est illimitée et non périodique : il ne peut pas s'écrire sous forme de fraction. Par exemple $\\sqrt{2}$, $\\sqrt{3}$, $\\sqrt{5}$ et $\\pi$.",
+      "difficulte": 1,
+      "tags": ["irrationnel", "definition"]
+    },
+    {
+      "id": "4E-CH10-002",
+      "lecon": "Qu'est-ce qu'un nombre réel ? Rationnels et irrationnels",
+      "type": "definition",
+      "recto": "Que réunit l'ensemble $\\mathbb{R}$ des nombres réels ?",
+      "verso": "Tous les rationnels et tous les irrationnels. Tout nombre réel se place sur une droite graduée, et tout point de cette droite correspond à un réel.",
+      "difficulte": 1,
+      "tags": ["ensemble-r", "definition"]
+    },
+    {
+      "id": "4E-CH10-003",
+      "lecon": "Qu'est-ce qu'un nombre réel ? Rationnels et irrationnels",
+      "type": "formule",
+      "recto": "Comment s'emboîtent les ensembles $\\mathbb{N}$, $\\mathbb{Z}$, $\\mathbb{D}$, $\\mathbb{Q}$ et $\\mathbb{R}$ ?",
+      "verso": "$\\mathbb{N}$ est contenu dans $\\mathbb{Z}$, contenu dans $\\mathbb{D}$, contenu dans $\\mathbb{Q}$, lui-même contenu dans $\\mathbb{R}$. Chaque famille contient la précédente.",
+      "difficulte": 2,
+      "tags": ["ensembles", "inclusion"]
+    },
+    {
+      "id": "4E-CH10-004",
+      "lecon": "Qu'est-ce qu'un nombre réel ? Rationnels et irrationnels",
+      "type": "definition",
+      "recto": "Pourquoi l'inclusion de $\\mathbb{Q}$ dans $\\mathbb{R}$ est-elle stricte ?",
+      "verso": "Parce qu'il existe des réels qui ne sont pas rationnels : $\\sqrt{2}$ et $\\pi$ appartiennent à $\\mathbb{R}$ sans appartenir à $\\mathbb{Q}$.",
+      "difficulte": 2,
+      "tags": ["ensemble-r", "irrationnel", "inclusion"]
+    },
+    {
+      "id": "4E-CH10-005",
+      "lecon": "Qu'est-ce qu'un nombre réel ? Rationnels et irrationnels",
+      "type": "definition",
+      "recto": "A quelles écritures décimales reconnaît-on un nombre rationnel ?",
+      "verso": "A une écriture finie, comme $0{,}75$, ou à une écriture périodique, comme $0{,}333\\ldots$ Ce sont les deux seules écritures possibles pour une fraction.",
+      "difficulte": 2,
+      "tags": ["rationnel", "ecriture-decimale"]
+    },
+    {
+      "id": "4E-CH10-006",
+      "lecon": "Qu'est-ce qu'un nombre réel ? Rationnels et irrationnels",
+      "type": "definition",
+      "recto": "Que désigne la notation $\\sqrt{a}$ lorsque $a$ est positif ?",
+      "verso": "Elle se lit « racine carrée de $a$ » et désigne le nombre positif dont le carré vaut $a$, c'est-à-dire $\\sqrt{a} \\times \\sqrt{a} = a$. C'est aussi la longueur du côté d'un carré d'aire $a$.",
+      "difficulte": 1,
+      "tags": ["racine-carree", "definition"]
+    },
+    {
+      "id": "4E-CH10-007",
+      "lecon": "Qu'est-ce qu'un nombre réel ? Rationnels et irrationnels",
+      "type": "definition",
+      "recto": "Qu'est-ce qu'un carré parfait ?",
+      "verso": "C'est un nombre qui est l'aire d'un carré de côté entier : $1$, $4$, $9$, $16$, $25$, $36$, $49$, $64$, $81$, $100$, et ainsi de suite.",
+      "difficulte": 1,
+      "tags": ["carre-parfait", "definition"]
+    },
+    {
+      "id": "4E-CH10-008",
+      "lecon": "Qu'est-ce qu'un nombre réel ? Rationnels et irrationnels",
+      "type": "formule",
+      "recto": "Comment sait-on si $\\sqrt{a}$ est rationnel ou irrationnel ?",
+      "verso": "On regarde le nombre $a$ écrit sous le signe : si $a$ est un carré parfait, $\\sqrt{a}$ est un entier, donc un rationnel. Sinon, $\\sqrt{a}$ est irrationnel. Ainsi $\\sqrt{9} = 3$, mais $\\sqrt{2}$ n'est pas une fraction.",
+      "difficulte": 2,
+      "tags": ["racine-carree", "carre-parfait", "critere"]
+    },
+    {
+      "id": "4E-CH10-009",
+      "lecon": "Qu'est-ce qu'un nombre réel ? Rationnels et irrationnels",
+      "type": "formule",
+      "recto": "Comment place-t-on exactement $\\sqrt{2}$ sur une droite graduée ?",
+      "verso": "On trace un carré de côté $1$ posé sur la droite à partir de l'origine, puis on rabat sa diagonale au compas depuis l'origine. Le point obtenu a pour abscisse $\\sqrt{2}$.",
+      "difficulte": 2,
+      "tags": ["racine-carree", "droite-graduee", "construction"]
+    },
+    {
+      "id": "4E-CH10-010",
+      "lecon": "Qu'est-ce qu'un nombre réel ? Rationnels et irrationnels",
+      "type": "formule",
+      "recto": "Pourquoi le tracé au compas situe-t-il $\\sqrt{2}$ mieux que la valeur $1{,}414$ ?",
+      "verso": "Parce que $1{,}414$ n'est qu'une valeur approchée, alors que le rabattement de la diagonale donne la position exacte, sans aucune approximation.",
+      "difficulte": 3,
+      "tags": ["racine-carree", "valeur-exacte", "piege"]
+    },
+    {
+      "id": "4E-CH10-011",
+      "lecon": "Qu'est-ce qu'un nombre réel ? Rationnels et irrationnels",
+      "type": "definition",
+      "recto": "Pourquoi $\\pi$ reste-t-il irrationnel alors qu'on l'écrit souvent $3{,}14$ ou $\\dfrac{22}{7}$ ?",
+      "verso": "Parce que $3{,}14$ et $\\dfrac{22}{7}$ ne sont que des valeurs approchées de $\\pi$, et ce sont elles qui sont rationnelles. Le nombre $\\pi$, rapport de la circonférence d'un cercle à son diamètre, a une écriture illimitée et non périodique.",
+      "difficulte": 3,
+      "tags": ["pi", "irrationnel", "piege"]
+    },
+    {
+      "id": "4E-CH10-012",
+      "lecon": "Opérations et puissances dans les nombres réels",
+      "type": "formule",
+      "recto": "Quelles sont les trois grandes propriétés de l'addition et de la multiplication dans $\\mathbb{R}$ ?",
+      "verso": "La commutativité, $a + b = b + a$ ; l'associativité, $\\left(a + b\\right) + c = a + \\left(b + c\\right)$ ; et la distributivité, $a \\times \\left(b + c\\right) = a \\times b + a \\times c$.",
+      "difficulte": 2,
+      "tags": ["operations", "proprietes"]
+    },
+    {
+      "id": "4E-CH10-013",
+      "lecon": "Opérations et puissances dans les nombres réels",
+      "type": "definition",
+      "recto": "Quels sont les éléments neutres de l'addition et de la multiplication dans $\\mathbb{R}$ ?",
+      "verso": "Le nombre $0$ pour l'addition, car $a + 0 = a$, et le nombre $1$ pour la multiplication, car $a \\times 1 = a$.",
+      "difficulte": 1,
+      "tags": ["element-neutre", "operations"]
+    },
+    {
+      "id": "4E-CH10-014",
+      "lecon": "Opérations et puissances dans les nombres réels",
+      "type": "definition",
+      "recto": "Quel nombre est absorbant pour la multiplication dans $\\mathbb{R}$ ?",
+      "verso": "Le nombre $0$ : quel que soit le réel $a$, on a $a \\times 0 = 0$.",
+      "difficulte": 1,
+      "tags": ["element-absorbant", "multiplication"]
+    },
+    {
+      "id": "4E-CH10-015",
+      "lecon": "Opérations et puissances dans les nombres réels",
+      "type": "formule",
+      "recto": "Quelles règles de calcul les puissances suivent-elles dans $\\mathbb{R}$ ?",
+      "verso": "$a^{m} \\times a^{n} = a^{m+n}$ ; $a^{m} \\div a^{n} = a^{m-n}$ ; $\\left(a^{m}\\right)^{n} = a^{m \\times n}$ ; $\\left(a \\times b\\right)^{n} = a^{n} \\times b^{n}$ ; et $a^{0} = 1$ pour $a \\ne 0$.",
+      "difficulte": 2,
+      "tags": ["puissances", "regles"]
+    },
+    {
+      "id": "4E-CH10-016",
+      "lecon": "Opérations et puissances dans les nombres réels",
+      "type": "formule",
+      "recto": "Qu'est-ce qui change dans les règles de calcul quand on passe de $\\mathbb{Q}$ à $\\mathbb{R}$ ?",
+      "verso": "Rien du tout : les propriétés des opérations et des puissances restent exactement les mêmes, même lorsqu'un irrationnel entre dans le calcul.",
+      "difficulte": 2,
+      "tags": ["ensemble-r", "operations", "continuite"]
+    },
+    {
+      "id": "4E-CH10-017",
+      "lecon": "Opérations et puissances dans les nombres réels",
+      "type": "formule",
+      "recto": "Quel est le signe d'une puissance d'un nombre négatif ?",
+      "verso": "Il est positif si l'exposant est pair, négatif si l'exposant est impair : $\\left(-3\\right)^{2} = 9$ et $\\left(-3\\right)^{3} = -27$.",
+      "difficulte": 2,
+      "tags": ["puissances", "signe", "parite"]
+    },
+    {
+      "id": "4E-CH10-018",
+      "lecon": "Opérations et puissances dans les nombres réels",
+      "type": "formule",
+      "recto": "Comment la racine carrée se comporte-t-elle vis-à-vis d'un produit de deux nombres positifs ?",
+      "verso": "Elle le traverse : pour $a$ et $b$ positifs, $\\sqrt{a \\times b} = \\sqrt{a} \\times \\sqrt{b}$.",
+      "difficulte": 2,
+      "tags": ["racine-carree", "produit", "regle"]
+    },
+    {
+      "id": "4E-CH10-019",
+      "lecon": "Opérations et puissances dans les nombres réels",
+      "type": "formule",
+      "recto": "Pourquoi $\\sqrt{9 + 16}$ n'est-il pas égal à $\\sqrt{9} + \\sqrt{16}$ ?",
+      "verso": "Parce que la racine carrée ne traverse pas l'addition : elle regarde le nombre entier écrit sous le signe. Ici $\\sqrt{25} = 5$, alors que $3 + 4 = 7$.",
+      "difficulte": 3,
+      "tags": ["racine-carree", "addition", "piege"]
+    },
+    {
+      "id": "4E-CH10-020",
+      "lecon": "Opérations et puissances dans les nombres réels",
+      "type": "formule",
+      "recto": "Pourquoi $\\left(a + b\\right)^{2}$ n'est-il pas égal à $a^{2} + b^{2}$ ?",
+      "verso": "Parce qu'un exposant ne se distribue pas sur une somme. Avec $a = 3$ et $b = 4$, on obtient $\\left(3 + 4\\right)^{2} = 49$ d'un côté et $3^{2} + 4^{2} = 25$ de l'autre.",
+      "difficulte": 3,
+      "tags": ["puissances", "somme", "piege"]
+    },
+    {
+      "id": "4E-CH10-021",
+      "lecon": "Opérations et puissances dans les nombres réels",
+      "type": "formule",
+      "recto": "Pourquoi le produit $\\sqrt{2} \\times \\sqrt{2}$ est-il un nombre rationnel ?",
+      "verso": "Parce que par définition de la racine carrée, $\\sqrt{a} \\times \\sqrt{a} = a$ : ce produit vaut $2$. Deux irrationnels peuvent donc avoir un produit rationnel.",
+      "difficulte": 3,
+      "tags": ["racine-carree", "irrationnel", "produit"]
+    },
+    {
+      "id": "4E-CH10-022",
+      "lecon": "L'ordre dans les nombres réels",
+      "type": "formule",
+      "recto": "Comment l'ordre de deux réels se lit-il sur une droite graduée ?",
+      "verso": "Le plus petit est à gauche du plus grand. Dans $\\mathbb{R}$, deux nombres se comparent toujours.",
+      "difficulte": 1,
+      "tags": ["ordre", "droite-graduee"]
+    },
+    {
+      "id": "4E-CH10-023",
+      "lecon": "L'ordre dans les nombres réels",
+      "type": "definition",
+      "recto": "Que veut dire encadrer un réel $x$ ?",
+      "verso": "C'est trouver deux nombres $a$ et $b$ tels que $a \\le x \\le b$. Le nombre $a$ est la borne inférieure, le nombre $b$ la borne supérieure.",
+      "difficulte": 1,
+      "tags": ["encadrement", "definition", "bornes"]
+    },
+    {
+      "id": "4E-CH10-024",
+      "lecon": "L'ordre dans les nombres réels",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on l'amplitude d'un encadrement ?",
+      "verso": "C'est la différence entre la borne supérieure et la borne inférieure. Plus elle est petite, plus l'encadrement est précis.",
+      "difficulte": 2,
+      "tags": ["encadrement", "amplitude", "precision"]
+    },
+    {
+      "id": "4E-CH10-025",
+      "lecon": "L'ordre dans les nombres réels",
+      "type": "formule",
+      "recto": "Comment encadre-t-on une fraction par deux entiers consécutifs ?",
+      "verso": "On effectue la division : la partie entière du quotient donne la borne inférieure, et l'entier suivant la borne supérieure. Comme $37 \\div 8 = 4{,}625$, on écrit $4 < \\dfrac{37}{8} < 5$.",
+      "difficulte": 2,
+      "tags": ["encadrement", "fraction", "entiers-consecutifs"]
+    },
+    {
+      "id": "4E-CH10-026",
+      "lecon": "L'ordre dans les nombres réels",
+      "type": "formule",
+      "recto": "Comment encadre-t-on $\\sqrt{a}$ entre deux entiers consécutifs ?",
+      "verso": "On cherche les deux carrés parfaits qui entourent $a$ : si $n^{2} < a < \\left(n+1\\right)^{2}$, alors $n < \\sqrt{a} < n+1$. Comme $4 < 7 < 9$, on obtient $2 < \\sqrt{7} < 3$.",
+      "difficulte": 2,
+      "tags": ["encadrement", "racine-carree", "carre-parfait"]
+    },
+    {
+      "id": "4E-CH10-027",
+      "lecon": "L'ordre dans les nombres réels",
+      "type": "definition",
+      "recto": "Quelle différence y a-t-il entre une valeur approchée par défaut et une valeur approchée par excès ?",
+      "verso": "La valeur par défaut est un peu plus petite que le nombre, la valeur par excès un peu plus grande. Pour $\\sqrt{2}$, à l'unité, ce sont $1$ et $2$.",
+      "difficulte": 2,
+      "tags": ["valeur-approchee", "par-defaut", "par-exces"]
+    },
+    {
+      "id": "4E-CH10-028",
+      "lecon": "L'ordre dans les nombres réels",
+      "type": "formule",
+      "recto": "Comment gagne-t-on une décimale dans l'encadrement de $\\sqrt{2}$ ?",
+      "verso": "On essaie les carrés des décimaux voisins : $1{,}4 \\times 1{,}4 = 1{,}96$ et $1{,}5 \\times 1{,}5 = 2{,}25$, donc $1{,}4 < \\sqrt{2} < 1{,}5$. L'amplitude passe de $1$ à $0{,}1$.",
+      "difficulte": 3,
+      "tags": ["encadrement", "racine-carree", "precision"]
+    },
+    {
+      "id": "4E-CH10-029",
+      "lecon": "L'ordre dans les nombres réels",
+      "type": "formule",
+      "recto": "Quelles opérations conservent l'ordre entre deux réels ?",
+      "verso": "Ajouter un même réel aux deux membres, et multiplier les deux membres par un nombre positif. Si $a \\le b$, alors $a + c \\le b + c$, et $k \\times a \\le k \\times b$ pour $k$ positif.",
+      "difficulte": 2,
+      "tags": ["ordre", "encadrement", "propriete"]
+    },
+    {
+      "id": "4E-CH10-030",
+      "lecon": "L'ordre dans les nombres réels",
+      "type": "formule",
+      "recto": "Que devient un encadrement quand on multiplie ses membres par un nombre négatif ?",
+      "verso": "L'ordre se retourne et les deux bornes échangent leur place : de $2 \\le x \\le 5$ on tire $-5 \\le -x \\le -2$.",
+      "difficulte": 3,
+      "tags": ["ordre", "nombre-negatif", "piege"]
+    },
+    {
+      "id": "4E-CH10-031",
+      "lecon": "L'ordre dans les nombres réels",
+      "type": "formule",
+      "recto": "Comment compare-t-on deux réels écrits sous des formes différentes ?",
+      "verso": "On les ramène d'abord à une même forme, en général l'écriture décimale, avant de conclure. Ainsi $\\dfrac{7}{3} \\approx 2{,}33$ se compare sans peine à $2{,}3$.",
+      "difficulte": 2,
+      "tags": ["comparaison", "ecriture-decimale"]
+    },
+    {
+      "id": "4E-CH10-032",
+      "lecon": "L'ordre dans les nombres réels",
+      "type": "formule",
+      "recto": "Quand deux encadrements permettent-ils de trancher entre deux quantités ?",
+      "verso": "Quand ils ne se chevauchent pas : la plus grande valeur possible de l'une reste alors inférieure à la plus petite valeur possible de l'autre. S'ils se chevauchent, il faut resserrer les bornes.",
+      "difficulte": 3,
+      "tags": ["encadrement", "comparaison", "decision"]
+    }
+  ]
+}

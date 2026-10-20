@@ -1,0 +1,332 @@
+{
+  "niveau": "5ème",
+  "chapitre": "Chapitre 5 : Opérations sur les fractions",
+  "source": "maths/5eme/Chapitre_5_Operations_sur_les_fractions",
+  "nombre_cartes": 36,
+  "cartes": [
+    {
+      "id": "5E-CH05-001",
+      "lecon": "Simplifier une fraction",
+      "type": "formule",
+      "recto": "Quelles opérations peut-on faire sur le numérateur et le dénominateur sans changer la valeur d'une fraction ?",
+      "verso": "Les multiplier, ou les diviser, tous les deux par un même nombre non nul : $\\dfrac{a}{b} = \\dfrac{a \\times k}{b \\times k}$. Ainsi $\\dfrac{2}{3} = \\dfrac{4}{6} = \\dfrac{8}{12}$.",
+      "difficulte": 1,
+      "tags": ["fraction", "propriete-fondamentale", "fractions-egales"]
+    },
+    {
+      "id": "5E-CH05-002",
+      "lecon": "Simplifier une fraction",
+      "type": "definition",
+      "recto": "Qu'est-ce qu'une fraction irréductible ?",
+      "verso": "C'est une fraction que l'on ne peut plus simplifier, parce que son numérateur et son dénominateur sont premiers entre eux. Par exemple $\\dfrac{2}{3}$.",
+      "difficulte": 1,
+      "tags": ["fraction", "irreductible", "definition"]
+    },
+    {
+      "id": "5E-CH05-003",
+      "lecon": "Simplifier une fraction",
+      "type": "formule",
+      "recto": "Par quel nombre diviser le numérateur et le dénominateur pour rendre une fraction irréductible en une seule étape ?",
+      "verso": "Par leur PGCD. Comme PGCD$(126\\,;\\,84) = 42$, on écrit directement $\\dfrac{126}{84} = \\dfrac{3}{2}$.",
+      "difficulte": 2,
+      "tags": ["fraction", "simplification", "pgcd"]
+    },
+    {
+      "id": "5E-CH05-004",
+      "lecon": "Simplifier une fraction",
+      "type": "definition",
+      "recto": "Que change-t-on exactement quand on simplifie une fraction ?",
+      "verso": "Son écriture seulement, jamais sa valeur : $\\dfrac{8}{12}$ et $\\dfrac{2}{3}$ sont le même nombre, dit plus simplement. Simplifier ne veut donc pas dire rendre plus petit.",
+      "difficulte": 2,
+      "tags": ["fraction", "simplification", "sens"]
+    },
+    {
+      "id": "5E-CH05-005",
+      "lecon": "Simplifier une fraction",
+      "type": "definition",
+      "recto": "Combien un nombre possède-t-il d'écritures fractionnaires irréductibles ?",
+      "verso": "Une seule, alors que ses écritures non simplifiées sont en nombre infini. C'est pour cela qu'on demande toujours la forme irréductible en fin de calcul : elle sert d'écriture de référence.",
+      "difficulte": 2,
+      "tags": ["fraction", "irreductible", "unicite"]
+    },
+    {
+      "id": "5E-CH05-006",
+      "lecon": "Simplifier une fraction",
+      "type": "formule",
+      "recto": "Pourquoi $\\dfrac{8}{12}$ n'est-il pas égal à $\\dfrac{6}{10}$ ?",
+      "verso": "Parce que simplifier, c'est diviser le haut et le bas par un même nombre, et non leur enlever le même nombre. La bonne écriture est $\\dfrac{8 \\div 4}{12 \\div 4} = \\dfrac{2}{3}$.",
+      "difficulte": 3,
+      "tags": ["fraction", "simplification", "piege"]
+    },
+    {
+      "id": "5E-CH05-007",
+      "lecon": "Réduire au même dénominateur",
+      "type": "definition",
+      "recto": "Que signifie « réduire deux fractions au même dénominateur » ?",
+      "verso": "C'est les réécrire avec un dénominateur commun, sans changer leur valeur. Ainsi $\\dfrac{1}{3}$ et $\\dfrac{1}{4}$ deviennent $\\dfrac{4}{12}$ et $\\dfrac{3}{12}$.",
+      "difficulte": 1,
+      "tags": ["fraction", "denominateur-commun", "definition"]
+    },
+    {
+      "id": "5E-CH05-008",
+      "lecon": "Réduire au même dénominateur",
+      "type": "formule",
+      "recto": "Quel dénominateur commun choisit-on de préférence pour deux fractions ?",
+      "verso": "Le PPCM des deux dénominateurs. N'importe quel multiple commun conviendrait, mais le PPCM est le plus petit, donc celui qui donne les plus petits nombres à écrire.",
+      "difficulte": 2,
+      "tags": ["fraction", "denominateur-commun", "ppcm"]
+    },
+    {
+      "id": "5E-CH05-009",
+      "lecon": "Réduire au même dénominateur",
+      "type": "formule",
+      "recto": "Comment réécrit-on une fraction avec le dénominateur commun choisi ?",
+      "verso": "On cherche par quel nombre multiplier son dénominateur pour atteindre ce dénominateur commun, puis on multiplie aussi le numérateur par ce nombre : $\\dfrac{1}{3} = \\dfrac{1 \\times 4}{3 \\times 4} = \\dfrac{4}{12}$.",
+      "difficulte": 2,
+      "tags": ["fraction", "denominateur-commun", "methode"]
+    },
+    {
+      "id": "5E-CH05-010",
+      "lecon": "Réduire au même dénominateur",
+      "type": "formule",
+      "recto": "Quel dénominateur commun prend-on quand l'un des deux dénominateurs est déjà multiple de l'autre ?",
+      "verso": "Le plus grand des deux, qui convient tel quel. Pour $\\dfrac{1}{3}$ et $\\dfrac{5}{6}$, on garde $6$ et seule la première fraction est à réécrire.",
+      "difficulte": 2,
+      "tags": ["fraction", "denominateur-commun", "cas-particulier"]
+    },
+    {
+      "id": "5E-CH05-011",
+      "lecon": "Réduire au même dénominateur",
+      "type": "formule",
+      "recto": "Quel dénominateur commun prend-on quand les deux dénominateurs sont premiers entre eux ?",
+      "verso": "Leur produit, car il est alors leur PPCM. Pour $\\dfrac{5}{7}$ et $\\dfrac{4}{5}$, le dénominateur commun est $7 \\times 5 = 35$.",
+      "difficulte": 2,
+      "tags": ["fraction", "denominateur-commun", "premiers-entre-eux"]
+    },
+    {
+      "id": "5E-CH05-012",
+      "lecon": "Réduire au même dénominateur",
+      "type": "formule",
+      "recto": "Pourquoi $\\dfrac{2}{3}$ ne devient-il pas $\\dfrac{2}{12}$ lorsqu'on le réécrit en douzièmes ?",
+      "verso": "Parce que couper les parts en quatre sans en prendre davantage diviserait la quantité par $4$. Il faut multiplier aussi le numérateur : $\\dfrac{2}{3} = \\dfrac{8}{12}$.",
+      "difficulte": 3,
+      "tags": ["fraction", "denominateur-commun", "piege"]
+    },
+    {
+      "id": "5E-CH05-013",
+      "lecon": "Additionner des fractions",
+      "type": "formule",
+      "recto": "Comment additionne-t-on deux fractions qui ont déjà le même dénominateur ?",
+      "verso": "On additionne les numérateurs et on garde le dénominateur commun : $\\dfrac{a}{c} + \\dfrac{b}{c} = \\dfrac{a + b}{c}$. On simplifie ensuite le résultat si c'est possible.",
+      "difficulte": 1,
+      "tags": ["addition", "fraction", "regle"]
+    },
+    {
+      "id": "5E-CH05-014",
+      "lecon": "Additionner des fractions",
+      "type": "formule",
+      "recto": "Quelle est la première étape d'une addition de deux fractions de dénominateurs différents ?",
+      "verso": "Les réduire au même dénominateur, car on ne peut ajouter que des parts de même taille. On additionne les numérateurs seulement ensuite.",
+      "difficulte": 2,
+      "tags": ["addition", "fraction", "denominateur-commun"]
+    },
+    {
+      "id": "5E-CH05-015",
+      "lecon": "Additionner des fractions",
+      "type": "definition",
+      "recto": "Pourquoi recopie-t-on le dénominateur au lieu de l'additionner ?",
+      "verso": "Parce que le dénominateur est un nom, celui de la taille des parts, et non une quantité. Trois huitièmes plus deux huitièmes font cinq huitièmes, comme trois moutons plus deux moutons font cinq moutons.",
+      "difficulte": 2,
+      "tags": ["addition", "fraction", "justification"]
+    },
+    {
+      "id": "5E-CH05-016",
+      "lecon": "Additionner des fractions",
+      "type": "formule",
+      "recto": "Comment ajoute-t-on un entier à une fraction ?",
+      "verso": "On écrit d'abord l'entier avec le dénominateur de la fraction : $2 = \\dfrac{10}{5}$, donc $2 + \\dfrac{3}{5} = \\dfrac{10}{5} + \\dfrac{3}{5} = \\dfrac{13}{5}$.",
+      "difficulte": 2,
+      "tags": ["addition", "entier", "fraction"]
+    },
+    {
+      "id": "5E-CH05-017",
+      "lecon": "Additionner des fractions",
+      "type": "formule",
+      "recto": "Comment écrit-on $\\dfrac{18}{5}$ sous la forme d'un entier plus une fraction ?",
+      "verso": "On divise le numérateur par le dénominateur : $18 = 5 \\times 3 + 3$, donc $\\dfrac{18}{5} = 3 + \\dfrac{3}{5}$. Le quotient donne l'entier, le reste devient le nouveau numérateur.",
+      "difficulte": 2,
+      "tags": ["fraction", "entier-plus-fraction"]
+    },
+    {
+      "id": "5E-CH05-018",
+      "lecon": "Additionner des fractions",
+      "type": "formule",
+      "recto": "Pourquoi $\\dfrac{1}{3} + \\dfrac{1}{4}$ ne vaut-il pas $\\dfrac{2}{7}$ ?",
+      "verso": "Parce qu'on n'additionne jamais les dénominateurs. De plus $\\dfrac{2}{7}$ est plus petit que $\\dfrac{1}{3}$, alors qu'une addition doit augmenter. Le bon calcul donne $\\dfrac{4}{12} + \\dfrac{3}{12} = \\dfrac{7}{12}$.",
+      "difficulte": 3,
+      "tags": ["addition", "fraction", "piege"]
+    },
+    {
+      "id": "5E-CH05-019",
+      "lecon": "Soustraire des fractions",
+      "type": "formule",
+      "recto": "Comment soustrait-on deux fractions qui ont le même dénominateur ?",
+      "verso": "On soustrait les numérateurs et on garde le dénominateur commun : $\\dfrac{a}{c} - \\dfrac{b}{c} = \\dfrac{a - b}{c}$. On simplifie ensuite si c'est possible.",
+      "difficulte": 1,
+      "tags": ["soustraction", "fraction", "regle"]
+    },
+    {
+      "id": "5E-CH05-020",
+      "lecon": "Soustraire des fractions",
+      "type": "formule",
+      "recto": "Comment retranche-t-on une fraction d'un entier, comme dans $1 - \\dfrac{1}{4}$ ?",
+      "verso": "On écrit d'abord l'entier avec le dénominateur de la fraction : $1 = \\dfrac{4}{4}$, donc $1 - \\dfrac{1}{4} = \\dfrac{4}{4} - \\dfrac{1}{4} = \\dfrac{3}{4}$.",
+      "difficulte": 2,
+      "tags": ["soustraction", "entier", "fraction"]
+    },
+    {
+      "id": "5E-CH05-021",
+      "lecon": "Soustraire des fractions",
+      "type": "formule",
+      "recto": "Quelle fraction du tout reste-t-il lorsqu'on en a déjà pris $\\dfrac{a}{b}$ ?",
+      "verso": "Il reste $1 - \\dfrac{a}{b}$, ce qu'on appelle le complément à $1$. Quand plusieurs parts ont été prises, on les additionne d'abord, puis on retranche la somme en une seule fois.",
+      "difficulte": 2,
+      "tags": ["soustraction", "complement-a-1", "fraction"]
+    },
+    {
+      "id": "5E-CH05-022",
+      "lecon": "Soustraire des fractions",
+      "type": "formule",
+      "recto": "Comment contrôle-t-on le résultat d'une soustraction de fractions ?",
+      "verso": "On refait l'addition : si $\\dfrac{5}{6} - \\dfrac{2}{3} = \\dfrac{1}{6}$, alors $\\dfrac{1}{6} + \\dfrac{2}{3}$ doit redonner $\\dfrac{5}{6}$. Le résultat doit aussi rester plus petit que la fraction de départ.",
+      "difficulte": 2,
+      "tags": ["soustraction", "verification", "fraction"]
+    },
+    {
+      "id": "5E-CH05-023",
+      "lecon": "Soustraire des fractions",
+      "type": "formule",
+      "recto": "Pourquoi le résultat de $\\dfrac{3}{4} - \\dfrac{1}{3}$ ne peut-il pas valoir $2$ ?",
+      "verso": "Parce qu'on a retiré quelque chose à un nombre plus petit que $1$ : le résultat ne peut pas dépasser $1$. L'erreur vient d'avoir soustrait aussi les dénominateurs. Le bon calcul donne $\\dfrac{9}{12} - \\dfrac{4}{12} = \\dfrac{5}{12}$.",
+      "difficulte": 3,
+      "tags": ["soustraction", "fraction", "piege"]
+    },
+    {
+      "id": "5E-CH05-024",
+      "lecon": "Multiplier et diviser des fractions",
+      "type": "formule",
+      "recto": "Comment multiplie-t-on une fraction par un entier ?",
+      "verso": "On multiplie seulement le numérateur : $k \\times \\dfrac{a}{b} = \\dfrac{k \\times a}{b}$. Les parts ne changent pas de taille, on en prend simplement davantage : $3 \\times \\dfrac{2}{5} = \\dfrac{6}{5}$.",
+      "difficulte": 1,
+      "tags": ["multiplication", "entier", "fraction"]
+    },
+    {
+      "id": "5E-CH05-025",
+      "lecon": "Multiplier et diviser des fractions",
+      "type": "formule",
+      "recto": "Comment multiplie-t-on deux fractions entre elles ?",
+      "verso": "On multiplie les numérateurs entre eux et les dénominateurs entre eux : $\\dfrac{a}{b} \\times \\dfrac{c}{d} = \\dfrac{a \\times c}{b \\times d}$. Aucun dénominateur commun n'est nécessaire.",
+      "difficulte": 1,
+      "tags": ["multiplication", "fraction", "regle"]
+    },
+    {
+      "id": "5E-CH05-026",
+      "lecon": "Multiplier et diviser des fractions",
+      "type": "definition",
+      "recto": "Par quelle opération traduit-on le mot « de » dans « les $\\dfrac{2}{3}$ de $\\dfrac{1}{2}$ » ?",
+      "verso": "Par une multiplication : prendre les $\\dfrac{a}{b}$ d'une quantité, c'est multiplier cette quantité par $\\dfrac{a}{b}$. Ici $\\dfrac{2}{3} \\times \\dfrac{1}{2} = \\dfrac{2}{6} = \\dfrac{1}{3}$.",
+      "difficulte": 2,
+      "tags": ["multiplication", "fraction", "vocabulaire"]
+    },
+    {
+      "id": "5E-CH05-027",
+      "lecon": "Multiplier et diviser des fractions",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on l'inverse de la fraction $\\dfrac{a}{b}$ ?",
+      "verso": "C'est la fraction retournée $\\dfrac{b}{a}$, avec $a$ non nul, car $\\dfrac{a}{b} \\times \\dfrac{b}{a} = 1$. L'inverse de $5$ est $\\dfrac{1}{5}$, puisque $5 = \\dfrac{5}{1}$.",
+      "difficulte": 2,
+      "tags": ["inverse", "fraction", "definition"]
+    },
+    {
+      "id": "5E-CH05-028",
+      "lecon": "Multiplier et diviser des fractions",
+      "type": "formule",
+      "recto": "Comment divise-t-on une fraction par une autre fraction ?",
+      "verso": "On multiplie par l'inverse du diviseur, c'est-à-dire de la fraction écrite après le signe : $\\dfrac{a}{b} \\div \\dfrac{c}{d} = \\dfrac{a}{b} \\times \\dfrac{d}{c}$. Ainsi $\\dfrac{3}{4} \\div \\dfrac{2}{5} = \\dfrac{3}{4} \\times \\dfrac{5}{2} = \\dfrac{15}{8}$.",
+      "difficulte": 2,
+      "tags": ["division", "inverse", "fraction"]
+    },
+    {
+      "id": "5E-CH05-029",
+      "lecon": "Multiplier et diviser des fractions",
+      "type": "definition",
+      "recto": "Comment lit-on la division $3 \\div \\dfrac{1}{4}$ pour comprendre son résultat ?",
+      "verso": "Combien de fois un quart tient-il dans $3$ ? Chaque unité contient $4$ quarts, donc $3$ unités en contiennent $12$. Diviser par une fraction plus petite que $1$ donne un résultat plus grand que le nombre de départ.",
+      "difficulte": 2,
+      "tags": ["division", "fraction", "sens"]
+    },
+    {
+      "id": "5E-CH05-030",
+      "lecon": "Multiplier et diviser des fractions",
+      "type": "formule",
+      "recto": "Pourquoi vaut-il mieux simplifier avant d'effectuer un produit de fractions ?",
+      "verso": "Parce qu'un facteur du haut se simplifie avec un facteur du bas, même venus de fractions différentes, ce qui évite les grands nombres. $\\dfrac{14}{15} \\times \\dfrac{25}{21}$ donne ainsi $\\dfrac{10}{9}$ sans passer par $\\dfrac{350}{315}$.",
+      "difficulte": 2,
+      "tags": ["multiplication", "simplification", "fraction"]
+    },
+    {
+      "id": "5E-CH05-031",
+      "lecon": "Multiplier et diviser des fractions",
+      "type": "formule",
+      "recto": "Pourquoi $\\dfrac{1}{2} \\times \\dfrac{1}{3}$ est-il plus petit que $\\dfrac{1}{2}$ ?",
+      "verso": "Parce qu'on multiplie par une fraction plus petite que $1$ : prendre une part d'une part réduit toujours. Le produit vaut $\\dfrac{1}{6}$. Un produit n'est donc pas toujours plus grand que ses facteurs.",
+      "difficulte": 3,
+      "tags": ["multiplication", "fraction", "piege"]
+    },
+    {
+      "id": "5E-CH05-032",
+      "lecon": "Comparer deux fractions",
+      "type": "formule",
+      "recto": "Comment compare-t-on deux fractions de dénominateurs différents ?",
+      "verso": "On les réduit au même dénominateur, puis on compare les numérateurs. Pour $\\dfrac{3}{5}$ et $\\dfrac{2}{3}$, on écrit $\\dfrac{9}{15}$ et $\\dfrac{10}{15}$, donc $\\dfrac{3}{5} < \\dfrac{2}{3}$.",
+      "difficulte": 1,
+      "tags": ["comparaison", "fraction", "denominateur-commun"]
+    },
+    {
+      "id": "5E-CH05-033",
+      "lecon": "Comparer deux fractions",
+      "type": "formule",
+      "recto": "Comment compare-t-on deux fractions qui ont le même dénominateur ?",
+      "verso": "Les parts ont la même taille : la plus grande fraction est celle qui a le plus grand numérateur. Ainsi $\\dfrac{4}{9} < \\dfrac{7}{9}$.",
+      "difficulte": 1,
+      "tags": ["comparaison", "meme-denominateur"]
+    },
+    {
+      "id": "5E-CH05-034",
+      "lecon": "Comparer deux fractions",
+      "type": "formule",
+      "recto": "Comment compare-t-on deux fractions qui ont le même numérateur ?",
+      "verso": "La plus grande est celle qui a le plus petit dénominateur, car ses parts sont plus grosses. Ainsi $\\dfrac{3}{5} > \\dfrac{3}{8}$.",
+      "difficulte": 2,
+      "tags": ["comparaison", "meme-numerateur"]
+    },
+    {
+      "id": "5E-CH05-035",
+      "lecon": "Comparer deux fractions",
+      "type": "formule",
+      "recto": "Comment reconnaît-on sans calcul qu'une fraction est plus petite que $1$, égale à $1$ ou plus grande que $1$ ?",
+      "verso": "On compare son numérateur à son dénominateur : numérateur plus petit, la fraction est inférieure à $1$ ; nombres égaux, elle vaut $1$ ; numérateur plus grand, elle dépasse $1$. Ainsi $\\dfrac{7}{9} < 1 < \\dfrac{5}{4}$.",
+      "difficulte": 2,
+      "tags": ["comparaison", "unite", "repere"]
+    },
+    {
+      "id": "5E-CH05-036",
+      "lecon": "Comparer deux fractions",
+      "type": "formule",
+      "recto": "Comment situe-t-on une fraction par rapport à $\\dfrac{1}{2}$ sans la réduire au même dénominateur ?",
+      "verso": "On regarde si le numérateur dépasse la moitié du dénominateur. Ainsi $\\dfrac{4}{9}$ est plus petite que $\\dfrac{1}{2}$, car $4 < 4{,}5$, tandis que $\\dfrac{5}{8}$ est plus grande.",
+      "difficulte": 3,
+      "tags": ["comparaison", "repere", "un-demi"]
+    }
+  ]
+}

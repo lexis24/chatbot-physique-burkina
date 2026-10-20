@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Fiche de revision - 6eme - Chapitre 5 : Le parallelogramme</title>
+<style>
+/* ===================================================================
+   FICHE DE REVISION, Collection Hakili Lab, Edition 2026
+   Feuille de style autonome, format A4 pret a imprimer.
+   Bleu #005CB9 · Vert #49A145
+   =================================================================== */
+:root{
+  --bleu:#005CB9; --bleu-fonce:#00429A; --bleu-pale:#E8F1FB; --bleu-bord:#B7D2EE;
+  --vert:#49A145; --vert-fonce:#2F7A2C; --vert-pale:#EDF7EC; --vert-bord:#BCE0B9;
+  --gris:#4A4A4A; --gris-clair:#E4E4E4; --rouge:#B3261E;
+}
+@page{
+  size:A4; margin:15mm;
+  @bottom-center{
+    content:"Collection Hakili Lab, Edition 2026  ·  Fiche de revision  ·  " counter(page) "/" counter(pages);
+    font-family:"Segoe UI",Calibri,Arial,sans-serif; font-size:6.6pt; color:#8A8A8A;
+  }
+}
+*{box-sizing:border-box;}
+body{
+  margin:0; font-family:"Segoe UI",Calibri,Arial,sans-serif;
+  font-size:8.4pt; line-height:1.26; color:#1B1B1B;
+}
+p{margin:0 0 3pt;}
+ul{margin:0 0 3pt; padding-left:11pt;}
+li{margin:0 0 1.2pt;}
+b,strong{color:var(--bleu-fonce);}
+
+/* ------------------------------ ENTETE ---------------------------- */
+.entete{
+  display:flex; align-items:stretch; border:1.6pt solid var(--bleu);
+  border-radius:2.5pt; overflow:hidden; margin-bottom:6pt;
+}
+.entete .num{
+  background:var(--bleu); color:#fff; font-size:20pt; font-weight:700;
+  padding:0 8pt; display:flex; align-items:center; justify-content:center; min-width:34pt;
+}
+.entete .txt{padding:3.5pt 8pt; flex:1;}
+.entete .niveau{
+  font-size:7pt; font-weight:700; letter-spacing:.9pt; color:var(--vert-fonce);
+}
+.entete h1{margin:0; font-size:13.5pt; line-height:1.12; color:var(--bleu-fonce); font-weight:700;}
+.entete .sous{font-size:7pt; color:var(--gris); margin-top:1pt;}
+
+/* --------------------------- BANDEAUX ----------------------------- */
+.bandeau{
+  color:#fff; font-weight:700; font-size:9pt; letter-spacing:1pt;
+  padding:2.4pt 7pt; border-radius:2pt; margin:3pt 0 4pt; break-after:avoid; page-break-after:avoid;
+}
+.bandeau.bleu{background:var(--bleu);}
+.bandeau.vert{background:var(--vert);}
+
+/* --------------------------- COLONNES ----------------------------- */
+.cols{column-count:2; column-gap:7mm; column-fill:balance;}
+
+.cols.bal{column-fill:balance;}
+.bloc{margin-bottom:5pt;}
+.keep{break-inside:avoid; page-break-inside:avoid;}
+
+/* --------------------------- LECONS ------------------------------- */
+h2.lecon{
+  margin:0 0 3pt; font-size:8.6pt; font-weight:700; color:#fff; background:var(--bleu-fonce);
+  padding:1.8pt 5pt; border-radius:1.5pt; break-after:avoid; page-break-after:avoid;
+}
+h3.rub{
+  margin:3.5pt 0 1.5pt; font-size:8.2pt; font-weight:700; color:var(--vert-fonce);
+  border-bottom:.7pt solid var(--vert-bord); padding-bottom:.8pt;
+  break-after:avoid; page-break-after:avoid;
+}
+
+/* --------------------------- ENCADRES ----------------------------- */
+.form{
+  background:var(--bleu-pale); border:.8pt solid var(--bleu-bord); border-left:2.6pt solid var(--bleu);
+  border-radius:2pt; padding:2.4pt 5pt; margin:2.2pt 0 3.4pt;
+  break-inside:avoid; page-break-inside:avoid;
+}
+.form .t{
+  display:block; font-size:6.8pt; font-weight:700; letter-spacing:.6pt;
+  color:var(--bleu); margin-bottom:1.5pt;
+}
+.form .c{text-align:center; font-size:9.1pt; margin:1.6pt 0;}
+.note{background:var(--vert-pale); border-left:2.4pt solid var(--vert); padding:2.4pt 5pt; border-radius:1.5pt; margin:2.5pt 0 4pt; break-inside:avoid;}
+
+/* --------------------------- TABLEAUX ----------------------------- */
+table{width:100%; border-collapse:collapse; font-size:7.6pt; margin:2pt 0 4pt; break-inside:avoid;}
+th{background:var(--bleu); color:#fff; font-weight:700; text-align:left; padding:1.8pt 4pt; font-size:7.2pt;}
+td{border:.6pt solid var(--gris-clair); padding:1.8pt 4pt; vertical-align:top;}
+tr{break-inside:avoid;}
+table.var td{text-align:center; font-size:8pt;}
+table.var td.lab{text-align:left; font-weight:700; color:var(--bleu-fonce); background:var(--bleu-pale);}
+
+/* ----------------------------- PIEGES ----------------------------- */
+table.pieges th:first-child{width:44%;}
+table.pieges td:first-child{color:var(--rouge); background:#FDF1F0;}
+.x{font-weight:700;}
+.v{color:var(--vert-fonce); font-weight:700;}
+
+/* ---------------------------- RECAP ------------------------------- */
+ol.recap{margin:0; padding-left:0; list-style:none; counter-reset:r;}
+ol.recap li{
+  counter-increment:r; position:relative; padding-left:13pt; margin-bottom:1.8pt;
+  break-inside:avoid;
+}
+ol.recap li::before{
+  content:counter(r); position:absolute; left:0; top:.3pt;
+  width:10pt; height:10pt; border-radius:50%; background:var(--vert); color:#fff;
+  font-size:6.6pt; font-weight:700; text-align:center; line-height:10pt;
+}
+
+/* --------------------------- MATHS -------------------------------- */
+.m{font-family:Cambria,Georgia,"Times New Roman",serif;}
+i,var{font-family:Cambria,Georgia,"Times New Roman",serif; font-style:italic;}
+.op{font-family:Cambria,Georgia,"Times New Roman",serif; font-style:normal;}
+.f{display:inline-block; vertical-align:middle; text-align:center;
+   margin:0 .12em; line-height:1.06; font-family:Cambria,Georgia,"Times New Roman",serif;}
+.f>span{display:block; padding:0 .2em;}
+.f>span:first-child{border-bottom:.6pt solid currentColor; padding-bottom:.08em;}
+.f>span:last-child{padding-top:.04em;}
+.rad{border-top:.6pt solid currentColor; padding-top:.12em;}
+/* line-height:0 evite que l'exposant n'ecarte les lignes ; position:relative le
+   repositionne sans qu'il heurte la barre de fraction ni le trait du radical. */
+sup,sub{font-size:.68em; line-height:0; position:relative; vertical-align:baseline;}
+sup{top:-.42em;}
+sub{bottom:-.22em;}
+.pt{white-space:nowrap;}
+/* Les fleches n'ont qu'un glyphe atrophie dans la fonte serif : on les force
+   en sans-serif, ou elles sont franches meme a 8 pt. */
+.ar{font-family:"Segoe UI",Calibri,Arial,"DejaVu Sans",sans-serif; font-style:normal;}
+
+/* ------------------- PIEGES : blocs erreur / correction ------------- */
+.pg{font-size:8.1pt; border-left:2.4pt solid var(--rouge); background:#FDF1F0; border-radius:1.5pt;
+    padding:2pt 5pt; margin:0 0 2.8pt; break-inside:avoid; page-break-inside:avoid;}
+.pg .err{color:var(--rouge); font-weight:600;}
+.pg .cor{color:#1B1B1B; margin-top:.8pt;}
+.pg .cor b{color:var(--bleu-fonce);}
+.v{color:var(--vert-fonce); font-weight:700;}
+
+</style>
+</head>
+<body>
+<header class="entete">
+  <div class="num">5</div>
+  <div class="txt">
+    <div class="niveau">6EME &middot; MATHEMATIQUES</div>
+    <h1>Le parallélogramme</h1>
+    <div class="sous">Leçon 1 : reconnaître et définir un parallélogramme &middot; Leçon 2 : les propriétés du parallélogramme &middot; Leçon 3 : construire un parallélogramme &middot; Leçon 4 : périmètre et aire</div>
+  </div>
+</header>
+
+<div class="bandeau bleu" style="margin-top:0">L'ESSENTIEL</div>
+<div class="cols">
+
+<!-- ================= LECON 1 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 1&nbsp;: Reconnaître et définir un parallélogramme</h2>
+<p>Un <b>quadrilatère</b> est une figure plane fermée à <b>quatre côtés</b>, quatre sommets et quatre angles.</p></div>
+<div class="form">
+  <span class="t">DEFINITION</span>
+  <div class="c m">un <b>parallélogramme</b> est un quadrilatère dont les <b>côtés opposés sont parallèles deux à deux</b></div>
+  <div class="c m">ABCD parallélogramme&#8239;: (AB)&#8239;//&#8239;(CD) <b>et</b> (BC)&#8239;//&#8239;(DA)</div>
+</div>
+<p>Il faut les <b>deux</b> paires : avec une seule, c'est un <b>trapèze</b>. Le rectangle et le carré sont des parallélogrammes particuliers, à angles droits.</p>
+<ul>
+<li><b>Côtés opposés</b> : ceux qui se font face, [AB] et [CD], [BC] et [DA] ; // se lit « est parallèle à ». <b>Côtés consécutifs</b> (voisins) : ils partagent un sommet, [AB] et [BC]. <b>Diagonales</b> : [AC] et [BD], entre deux sommets opposés.</li>
+<li><b>Notation</b> : on cite les sommets <b>dans l'ordre</b>, en tournant autour de la figure sans couper à l'intérieur : ABCD, BCDA, CDAB, DABC sont la même figure.</li>
+<li><b>Codage</b> : des <b>chevrons</b> identiques signalent deux côtés parallèles, des <b>petits traits</b> en même nombre deux côtés de même longueur.</li>
+</ul>
+<p><b>Reconnaître.</b> Quatre côtés, figure fermée non croisée, puis les <b>deux</b> paires de côtés opposés parallèles, à l'équerre ou en lisant les chevrons.</p>
+</div>
+
+<!-- ================= LECON 2 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 2&nbsp;: Les propriétés du parallélogramme</h2>
+<div class="form">
+  <span class="t">PROPRIETES&nbsp;: ABCD, DE DIAGONALES SECANTES EN O</span>
+  <div class="c m"><b>1.</b> côtés opposés égaux : AB&#8239;=&#8239;CD et BC&#8239;=&#8239;DA</div>
+  <div class="c m"><b>2.</b> angles opposés égaux : angle A&#8239;=&#8239;angle C, angle B&#8239;=&#8239;angle D</div>
+  <div class="c m"><b>3.</b> angles consécutifs supplémentaires : angle A&#8239;+&#8239;angle B&#8239;=&#8239;180&#176;</div>
+  <div class="c m"><b>4.</b> les diagonales se coupent en leur <b>milieu</b> O : OA&#8239;=&#8239;OC, OB&#8239;=&#8239;OD</div>
+</div></div>
+<p>O est le <b>centre de symétrie</b> : un demi-tour autour de O ramène la figure sur elle-même (A sur C, B sur D). Les quatre angles font 360&#176;.</p>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Utiliser une propriété</h3>
+<p>Elément cherché <b>opposé</b> à un élément connu : même mesure ; <b>voisin</b> : angles <b>supplémentaires</b>. On écrit l'égalité, on remplace, on calcule avec l'unité. Un angle est compris entre 0&#176; et 180&#176;.</p>
+<p>Les diagonales ne sont en général <b>ni égales ni perpendiculaires</b> : de même longueur <span class="ar">&#8594;</span> rectangle ; perpendiculaires <span class="ar">&#8594;</span> losange.</p>
+</div>
+
+<!-- ================= LECON 3 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 3&nbsp;: Construire un parallélogramme</h2>
+<p><b>Règle graduée</b> pour les côtés, <b>équerre</b> pour une parallèle ou une perpendiculaire, <b>rapporteur</b> pour un angle, <b>compas</b> pour reporter une longueur. Trois constructions :</p></div>
+<ul>
+<li><b>Deux côtés voisins et l'angle entre eux</b> : trace [AB], l'angle demandé en A, place D sur la demi-droite, puis C en reportant au compas AB depuis D et AD depuis B.</li>
+<li><b>Trois sommets A, B et D</b> : C est au croisement de la <b>parallèle à (AB) passant par D</b> et de la <b>parallèle à (AD) passant par B</b>.</li>
+<li><b>Les deux diagonales</b> : place O, puis A et C tels que O soit le milieu de [AC], et B et D de même sur une autre droite passant par O ; relie A, B, C, D <b>dans l'ordre</b>.</li>
+</ul>
+<div class="note"><b>Vérification finale.</b> A la règle : AB&#8239;=&#8239;DC et AD&#8239;=&#8239;BC. A l'équerre : (AB)&#8239;//&#8239;(DC).</div>
+</div>
+
+<!-- ================= LECON 4 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 4&nbsp;: Périmètre et aire du parallélogramme</h2>
+<div class="form">
+  <span class="t">FORMULES&nbsp;: <i>a</i> ET <i>b</i> SONT DEUX COTES VOISINS</span>
+  <div class="c m"><i>P</i>&#8239;=&#8239;2&#8239;&#215;&#8239;(<i>a</i>&#8239;+&#8239;<i>b</i>) &nbsp;&nbsp;&nbsp; <i>A</i>&#8239;=&#8239;base&#8239;&#215;&#8239;hauteur</div>
+  <div class="c m">hauteur&#8239;=&#8239;aire&#8239;&#247;&#8239;base &nbsp;&nbsp; base&#8239;=&#8239;aire&#8239;&#247;&#8239;hauteur</div>
+</div></div>
+<p>La <b>base</b> est un côté, celui que tu choisis. La <b>hauteur relative à cette base</b> est la distance entre la base et le côté opposé, mesurée <b>perpendiculairement</b> : ce n'est pas un côté, mais un segment tracé exprès. Deux bases, donc <b>deux</b> hauteurs, et toujours la même aire. <b>Unités</b> : périmètre en cm ou m, aire en cm<sup>2</sup> ou m<sup>2</sup>.</p>
+<div class="note"><b>Echelle « 1 cm pour <i>n</i> mètres ».</b> On calcule sur le plan, puis une <b>longueur</b> se multiplie <b>une</b> fois par <i>n</i>, une <b>aire deux</b> fois, par <i>n</i>&#8239;&#215;&#8239;<i>n</i>. Avec 1 cm pour 10 m : 1 cm<sup>2</sup> du plan vaut 100 m<sup>2</sup>.</div>
+</div>
+
+</div>
+
+<div class="bandeau vert">PIEGES ET ERREURS FREQUENTES</div>
+<div class="cols">
+<div class="pg"><div class="err"><span class="x">&#10007;</span> Le parallélogramme de sommets A, B, C, D est noté ABDC</div><div class="cor"><span class="v">&#10003;</span> On tourne autour de la figure sans couper à l'intérieur : <b>ABCD</b>. Avec ABDC, un côté devient une diagonale et la figure est croisée.</div></div>
+<div class="pg"><div class="err"><span class="x">&#10007;</span> Angle A&#8239;=&#8239;70&#176;, donc angle B&#8239;=&#8239;70&#176;</div><div class="cor"><span class="v">&#10003;</span> B est <b>voisin</b> de A, pas opposé : les deux angles sont <b>supplémentaires</b>, donc angle B&#8239;=&#8239;180&#176;&#8239;&#8722;&#8239;70&#176;&#8239;=&#8239;110&#176;. C'est l'angle C qui vaut 70&#176;.</div></div>
+<div class="pg"><div class="err"><span class="x">&#10007;</span> « Les diagonales d'un parallélogramme sont toujours égales »</div><div class="cor"><span class="v">&#10003;</span> Elles se coupent seulement en leur <b>milieu</b> : OA&#8239;=&#8239;OC et OB&#8239;=&#8239;OD ; en général, ni même longueur ni angle droit.</div></div>
+<div class="pg"><div class="err"><span class="x">&#10007;</span> Aire&#8239;=&#8239;AB&#8239;&#215;&#8239;BC (7&#8239;&#215;&#8239;5) &nbsp;&middot;&nbsp; on prend [BC] comme base, avec la hauteur relative à [AB]</div><div class="cor"><span class="v">&#10003;</span> L'aire utilise la <b>hauteur</b>, jamais le côté penché : <i>A</i>&#8239;=&#8239;base&#8239;&#215;&#8239;hauteur (7&#8239;&#215;&#8239;4). Chaque base a <b>sa</b> hauteur.</div></div>
+<div class="pg"><div class="err"><span class="x">&#10007;</span> Pour fermer la figure, on relie B et D</div><div class="cor"><span class="v">&#10003;</span> [BD] est une <b>diagonale</b>, pas un côté, et reporter AB depuis B repart à l'envers. Place C tel que [DC] soit <b>parallèle à [AB] et de même longueur</b>.</div></div>
+<div class="pg"><div class="err"><span class="x">&#10007;</span> Plan au 1 cm pour 10 m : 6 cm<sup>2</sup> donnent 60 m<sup>2</sup></div><div class="cor"><span class="v">&#10003;</span> Pour une aire, l'échelle joue <b>deux</b> fois : 1 cm<sup>2</sup> donne 100 m<sup>2</sup>, donc 6 cm<sup>2</sup> donnent 600 m<sup>2</sup>.</div></div>
+
+</div>
+
+<div class="bandeau bleu">A SAVOIR PAR COEUR AVANT LE DEVOIR</div>
+<div class="cols">
+<ol class="recap">
+<li>Quadrilatère dont les côtés opposés sont <b>parallèles deux à deux</b> (une seule paire : trapèze). On le nomme <b>dans l'ordre</b> : ABCD.</li>
+<li>Côtés opposés <b>égaux</b> : AB&#8239;=&#8239;CD et BC&#8239;=&#8239;DA. Angles opposés <b>égaux</b>.</li>
+<li>Angles consécutifs <b>supplémentaires</b> : angle A&#8239;+&#8239;angle B&#8239;=&#8239;180&#176; ; les quatre angles font 360&#176;.</li>
+<li>Les diagonales se coupent en leur <b>milieu</b> commun O, centre de symétrie : OA&#8239;=&#8239;OC, OB&#8239;=&#8239;OD ; ni égales ni perpendiculaires.</li>
+<li>Le quatrième sommet est au croisement de deux parallèles, ou reporté au compas ; on vérifie AB&#8239;=&#8239;DC et AD&#8239;=&#8239;BC.</li>
+<li>Périmètre : <i>P</i>&#8239;=&#8239;2&#8239;&#215;&#8239;(<i>a</i>&#8239;+&#8239;<i>b</i>), côtés <b>voisins</b> (cm, m). Aire : <i>A</i>&#8239;=&#8239;base&#8239;&#215;&#8239;<b>hauteur</b>, jamais le côté penché (cm<sup>2</sup>, m<sup>2</sup>).</li>
+<li>A l'échelle « 1 cm pour <i>n</i> mètres » : une longueur se multiplie par <i>n</i>, une aire par <i>n</i>&#8239;&#215;&#8239;<i>n</i>.</li>
+</ol>
+</div>
+
+</body>
+</html>

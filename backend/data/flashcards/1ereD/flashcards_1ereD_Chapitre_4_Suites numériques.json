@@ -1,0 +1,350 @@
+{
+  "niveau": "1ère D",
+  "chapitre": "Chapitre 4 : Suites numériques",
+  "source": "maths/1ereD/Chapitre_4_Suites_numeriques",
+  "nombre_cartes": 38,
+  "cartes": [
+    {
+      "id": "1D-CH04-001",
+      "lecon": "Modes de génération et notation indicielle",
+      "type": "definition",
+      "recto": "Qu'est-ce qu'une suite numérique ?",
+      "verso": "C'est une fonction définie sur $\\mathbb{N}$, ou sur une partie de $\\mathbb{N}$ formée des entiers à partir d'un certain $n_0$, et à valeurs dans $\\mathbb{R}$. L'image de l'entier $n$ se note $u_n$ plutôt que $u(n)$ : c'est le terme d'indice $n$.",
+      "difficulte": 1,
+      "tags": ["suite", "definition"]
+    },
+    {
+      "id": "1D-CH04-002",
+      "lecon": "Modes de génération et notation indicielle",
+      "type": "definition",
+      "recto": "Quelle différence y a-t-il entre le rang et l'indice d'un terme ?",
+      "verso": "L'indice est le numéro écrit en bas de la lettre, le rang est la place occupée dans la liste. Ils coïncident lorsque la suite commence à l'indice $1$ ; lorsqu'elle commence à l'indice $0$, le terme $u_n$ est de rang $n+1$.",
+      "difficulte": 3,
+      "tags": ["rang", "indice", "piege"]
+    },
+    {
+      "id": "1D-CH04-003",
+      "lecon": "Modes de génération et notation indicielle",
+      "type": "definition",
+      "recto": "Quels sont les deux modes de génération d'une suite ?",
+      "verso": "La formule explicite $u_n=f(n)$, qui donne directement le terme d'indice $n$ et permet de sauter au terme voulu, et la récurrence, qui donne le premier terme et une relation $u_{n+1}=f\\left(u_n\\right)$ imposant d'avancer pas à pas.",
+      "difficulte": 1,
+      "tags": ["formule-explicite", "recurrence", "generation"]
+    },
+    {
+      "id": "1D-CH04-004",
+      "lecon": "Modes de génération et notation indicielle",
+      "type": "formule",
+      "recto": "A quelles conditions une donnée par récurrence définit-elle réellement une suite ?",
+      "verso": "Le premier terme doit être donné, la relation doit permettre de calculer chaque terme suivant, et aucun terme ne doit sortir de l'ensemble de définition de $f$ : ni division par zéro, ni racine carrée d'un nombre négatif, ni indice négatif réclamé.",
+      "difficulte": 2,
+      "tags": ["recurrence", "conditions"]
+    },
+    {
+      "id": "1D-CH04-005",
+      "lecon": "Modes de génération et notation indicielle",
+      "type": "definition",
+      "recto": "Que désigne l'écriture $\\sum_{k=0}^{n}u_k$ ?",
+      "verso": "Elle désigne la somme $u_0+u_1+\\dots+u_n$, et se lit somme, pour $k$ allant de $0$ à $n$, de $u_k$. La lettre $k$ est un indice muet : la remplacer par une autre lettre ne change pas la valeur de la somme.",
+      "difficulte": 2,
+      "tags": ["somme", "notation-sigma"]
+    },
+    {
+      "id": "1D-CH04-006",
+      "lecon": "Modes de génération et notation indicielle",
+      "type": "formule",
+      "recto": "Combien de termes comporte la somme $\\sum_{k=p}^{q}u_k$ ?",
+      "verso": "Elle en comporte $q-p+1$, et non $q-p$. Ainsi $u_0+u_1+\\dots+u_n$ comporte $n+1$ termes, puisqu'on compte aussi le terme d'indice $0$. Une erreur d'une unité à cet endroit fausse toute formule de somme.",
+      "difficulte": 2,
+      "tags": ["nombre-de-termes", "somme", "piege"]
+    },
+    {
+      "id": "1D-CH04-007",
+      "lecon": "Suites arithmétiques et géométriques",
+      "type": "formule",
+      "recto": "A quelle condition une suite est-elle arithmétique ?",
+      "verso": "Lorsqu'on passe d'un terme au suivant en ajoutant toujours le même nombre $r$, appelé la raison : $u_{n+1}=u_n+r$ pour tout $n$. De façon équivalente, la différence $u_{n+1}-u_n$ est constante, et cette constante est la raison.",
+      "difficulte": 1,
+      "tags": ["suite-arithmetique", "raison"]
+    },
+    {
+      "id": "1D-CH04-008",
+      "lecon": "Suites arithmétiques et géométriques",
+      "type": "formule",
+      "recto": "Quelle formule donne le terme d'indice $n$ d'une suite arithmétique de raison $r$ ?",
+      "verso": "Si le premier terme est $u_0$, alors $u_n=u_0+n\\,r$ : de l'indice $0$ à l'indice $n$ on franchit $n$ pas, et chaque pas ajoute $r$. Si la suite commence à $u_1$, la formule devient $u_n=u_1+(n-1)r$.",
+      "difficulte": 1,
+      "tags": ["suite-arithmetique", "terme-general"]
+    },
+    {
+      "id": "1D-CH04-009",
+      "lecon": "Suites arithmétiques et géométriques",
+      "type": "formule",
+      "recto": "Comment relie-t-on deux termes quelconques $u_n$ et $u_p$ d'une suite arithmétique ?",
+      "verso": "Par $u_n=u_p+(n-p)\\,r$ : le nombre de pas est la différence des indices. Avec $u_3=7$ et $u_7=19$, on écrit donc $19=7+4r$, d'où $r=3$, sans repasser par $u_0$.",
+      "difficulte": 2,
+      "tags": ["suite-arithmetique", "deux-termes"]
+    },
+    {
+      "id": "1D-CH04-010",
+      "lecon": "Suites arithmétiques et géométriques",
+      "type": "formule",
+      "recto": "A quelle condition une suite est-elle géométrique ?",
+      "verso": "Lorsqu'on passe d'un terme au suivant en multipliant toujours par le même nombre $q$, appelé la raison : $u_{n+1}=q\\,u_n$ pour tout $n$. Si aucun terme n'est nul, cela revient à dire que le quotient $\\dfrac{u_{n+1}}{u_n}$ est constant.",
+      "difficulte": 1,
+      "tags": ["suite-geometrique", "raison"]
+    },
+    {
+      "id": "1D-CH04-011",
+      "lecon": "Suites arithmétiques et géométriques",
+      "type": "formule",
+      "recto": "Quelle formule donne le terme d'indice $n$ d'une suite géométrique de raison $q$ ?",
+      "verso": "Si le premier terme est $u_0$, alors $u_n=u_0\\,q^{\\,n}$ : après $n$ pas, on a multiplié $n$ fois par $q$. Si la suite commence à $u_1$, la formule devient $u_n=u_1\\,q^{\\,n-1}$.",
+      "difficulte": 1,
+      "tags": ["suite-geometrique", "terme-general"]
+    },
+    {
+      "id": "1D-CH04-012",
+      "lecon": "Suites arithmétiques et géométriques",
+      "type": "formule",
+      "recto": "Comment relie-t-on deux termes quelconques $u_n$ et $u_p$ d'une suite géométrique ?",
+      "verso": "Par $u_n=u_p\\,q^{\\,n-p}$, l'exposant étant la différence des indices. Avec $v_1=6$ et $v_3=54$, on écrit $54=6q^{2}$, donc $q^{2}=9$ : une équation en $q^{2}$ a deux solutions, et c'est l'énoncé ou le contexte qui tranche.",
+      "difficulte": 2,
+      "tags": ["suite-geometrique", "deux-termes"]
+    },
+    {
+      "id": "1D-CH04-013",
+      "lecon": "Suites arithmétiques et géométriques",
+      "type": "formule",
+      "recto": "Comment calcule-t-on la somme de termes consécutifs d'une suite arithmétique ?",
+      "verso": "On multiplie le nombre de termes par la demi-somme du premier et du dernier. Pour une suite commençant à $u_0$ : $u_0+\\dots+u_n=\\dfrac{(n+1)\\left(u_0+u_n\\right)}{2}$. Dans le cas des entiers, $1+2+\\dots+n=\\dfrac{n(n+1)}{2}$.",
+      "difficulte": 2,
+      "tags": ["somme", "suite-arithmetique"]
+    },
+    {
+      "id": "1D-CH04-014",
+      "lecon": "Suites arithmétiques et géométriques",
+      "type": "formule",
+      "recto": "Comment calcule-t-on la somme $u_0+u_1+\\dots+u_n$ d'une suite géométrique ?",
+      "verso": "Pour une raison $q\\ne 1$ : $u_0+\\dots+u_n=u_0\\times\\dfrac{1-q^{\\,n+1}}{1-q}$, l'exposant $n+1$ étant le nombre de termes. Si $q=1$, tous les termes valent $u_0$ et la somme vaut $(n+1)\\,u_0$, la formule précédente divisant alors par zéro.",
+      "difficulte": 2,
+      "tags": ["somme", "suite-geometrique", "conditions"]
+    },
+    {
+      "id": "1D-CH04-015",
+      "lecon": "Suites arithmétiques et géométriques",
+      "type": "formule",
+      "recto": "Par quel nombre multiplie-t-on une quantité qui augmente de $t\\ \\%$ à chaque étape ?",
+      "verso": "Par $q=1+\\dfrac{t}{100}$, ce qui fait apparaître une suite géométrique de raison $q$. Une diminution de $t\\ \\%$ correspond de même à $q=1-\\dfrac{t}{100}$ : une hausse de $6\\ \\%$ donne $1{,}06$, une baisse de $15\\ \\%$ donne $0{,}85$.",
+      "difficulte": 2,
+      "tags": ["pourcentage", "suite-geometrique", "raison"]
+    },
+    {
+      "id": "1D-CH04-016",
+      "lecon": "Suites arithmétiques et géométriques",
+      "type": "formule",
+      "recto": "Que vaut le terme du milieu de trois nombres en progression arithmétique ?",
+      "verso": "Il vaut la moyenne des deux autres : $a$, $b$, $c$ sont en progression arithmétique lorsque $b-a=c-b$, c'est-à-dire $b=\\dfrac{a+c}{2}$. Pour trois nombres strictement positifs en progression géométrique, la relation devient $b^{2}=ac$.",
+      "difficulte": 2,
+      "tags": ["progression", "moyenne"]
+    },
+    {
+      "id": "1D-CH04-017",
+      "lecon": "Suites arithmétiques et géométriques",
+      "type": "formule",
+      "recto": "Pourquoi la suite $u_n=5\\times 3^{\\,n}$ n'est-elle pas de raison $5$ ?",
+      "verso": "Parce que la raison est le facteur qui multiplie un terme pour donner le suivant, ici $3$ ; le nombre $5$ est le premier terme $u_0$. De même, $u_n=2^{\\,3n}$ s'écrit $\\left(2^{3}\\right)^{n}=8^{\\,n}$ : sa raison vaut $8$, et non $2$.",
+      "difficulte": 3,
+      "tags": ["piege", "raison", "suite-geometrique"]
+    },
+    {
+      "id": "1D-CH04-018",
+      "lecon": "Suites arithmétiques et géométriques",
+      "type": "definition",
+      "recto": "Comment exploite-t-on la suite auxiliaire $\\left(v_n\\right)$ fournie par un énoncé ?",
+      "verso": "On écrit $v_{n+1}$ à partir de sa définition, on y remplace $u_{n+1}$ par la relation de récurrence, puis on transforme jusqu'à faire apparaître $v_n$. On conclut en donnant la raison et le premier terme, avant de revenir à $u_n$ en inversant la relation.",
+      "difficulte": 2,
+      "tags": ["suite-auxiliaire", "methode"]
+    },
+    {
+      "id": "1D-CH04-019",
+      "lecon": "Comportement global d'une suite",
+      "type": "definition",
+      "recto": "Que signifie dire qu'une suite est croissante, décroissante ou monotone ?",
+      "verso": "Elle est croissante lorsque $u_{n+1}\\ge u_n$ pour tout $n$, décroissante lorsque $u_{n+1}\\le u_n$ pour tout $n$, et monotone lorsqu'elle est l'une ou l'autre. La monotonie est stricte si les inégalités sont strictes.",
+      "difficulte": 1,
+      "tags": ["sens-de-variation", "monotonie"]
+    },
+    {
+      "id": "1D-CH04-020",
+      "lecon": "Comportement global d'une suite",
+      "type": "formule",
+      "recto": "Comment se démontre le sens de variation d'une suite ?",
+      "verso": "Par le signe de la différence $u_{n+1}-u_n$, calculée pour un entier $n$ quelconque, et par rien d'autre. Observer quelques termes ne prouve rien : $u_n=n^{2}-12n+3$ décroît pendant six termes avant de croître.",
+      "difficulte": 2,
+      "tags": ["sens-de-variation", "difference"]
+    },
+    {
+      "id": "1D-CH04-021",
+      "lecon": "Comportement global d'une suite",
+      "type": "definition",
+      "recto": "Que signifient les mots majorée, minorée et bornée pour une suite ?",
+      "verso": "Elle est majorée s'il existe un réel $M$ tel que $u_n\\le M$ pour tout $n$, minorée s'il existe un réel $m$ tel que $u_n\\ge m$ pour tout $n$, et bornée lorsqu'elle est à la fois majorée et minorée.",
+      "difficulte": 1,
+      "tags": ["majorant", "minorant", "bornee"]
+    },
+    {
+      "id": "1D-CH04-022",
+      "lecon": "Comportement global d'une suite",
+      "type": "definition",
+      "recto": "Pourquoi un majorant d'une suite n'est-il pas un maximum ?",
+      "verso": "Parce qu'un majorant est seulement un plafond que la suite ne franchit pas, sans obligation de l'atteindre : $u_n=\\dfrac{n}{n+1}$ est majorée par $1$ sans jamais valoir $1$. Un majorant n'est pas unique non plus, car $2$ et $10$ majorent aussi cette suite.",
+      "difficulte": 3,
+      "tags": ["majorant", "piege"]
+    },
+    {
+      "id": "1D-CH04-023",
+      "lecon": "Comportement global d'une suite",
+      "type": "definition",
+      "recto": "Quand une suite est-elle périodique de période $p$ ?",
+      "verso": "Lorsque $u_{n+p}=u_n$ pour tout $n$, l'entier $p$ n'étant pas nul : ses termes se répètent par blocs de $p$. Une telle suite est toujours bornée, car elle ne prend qu'un nombre fini de valeurs, mais elle n'est monotone que si elle est constante.",
+      "difficulte": 2,
+      "tags": ["periodique", "bornee"]
+    },
+    {
+      "id": "1D-CH04-024",
+      "lecon": "Comportement global d'une suite",
+      "type": "formule",
+      "recto": "De quoi dépend le sens de variation d'une suite géométrique ?",
+      "verso": "Du signe du premier terme et de la valeur de la raison. Avec $u_0>0$ : croissante si $q>1$, décroissante si $0<q<1$, constante si $q=1$ ; avec $u_0<0$, tout s'inverse. Si $q<0$, la suite change de signe à chaque terme et n'est pas monotone.",
+      "difficulte": 3,
+      "tags": ["suite-geometrique", "sens-de-variation", "piege"]
+    },
+    {
+      "id": "1D-CH04-025",
+      "lecon": "Le raisonnement par récurrence",
+      "type": "formule",
+      "recto": "Quelles étapes comporte une démonstration par récurrence ?",
+      "verso": "L'initialisation, qui établit $P\\left(n_0\\right)$ ; l'hérédité, qui montre que pour un entier $n\\ge n_0$ quelconque, $P(n)$ entraîne $P(n+1)$ ; puis la conclusion, qui invoque le principe de récurrence pour affirmer $P(n)$ pour tout $n\\ge n_0$.",
+      "difficulte": 1,
+      "tags": ["recurrence", "initialisation", "heredite"]
+    },
+    {
+      "id": "1D-CH04-026",
+      "lecon": "Le raisonnement par récurrence",
+      "type": "definition",
+      "recto": "Que suppose-t-on exactement dans l'hypothèse de récurrence ?",
+      "verso": "Que la propriété est vraie pour un entier $n$ fixé, et non pour tous les entiers. Ce que l'hérédité démontre n'est donc pas la propriété elle-même, mais une implication : le lien de transmission entre deux rangs consécutifs.",
+      "difficulte": 3,
+      "tags": ["hypothese-de-recurrence", "implication"]
+    },
+    {
+      "id": "1D-CH04-027",
+      "lecon": "Le raisonnement par récurrence",
+      "type": "formule",
+      "recto": "Pourquoi l'hérédité seule ne démontre-t-elle rien ?",
+      "verso": "Parce que tant que le premier domino n'est pas poussé, aucun ne tombe. La propriété affirmant que $10^{\\,n}+1$ est divisible par $3$ est héréditaire et pourtant fausse pour tout $n$, puisque $10^{0}+1=2$. L'initialisation seule ne prouve rien non plus.",
+      "difficulte": 3,
+      "tags": ["recurrence", "piege", "contre-exemple"]
+    },
+    {
+      "id": "1D-CH04-028",
+      "lecon": "Le raisonnement par récurrence",
+      "type": "definition",
+      "recto": "A quel rang faut-il faire l'initialisation d'une récurrence ?",
+      "verso": "Au premier rang concerné, ni avant ni après. Une propriété portant sur $1+2+\\dots+n$ s'initialise à $n=1$, tandis qu'une inégalité vraie seulement à partir de $n=5$ s'initialise à $n=5$.",
+      "difficulte": 2,
+      "tags": ["initialisation", "rang"]
+    },
+    {
+      "id": "1D-CH04-029",
+      "lecon": "Le raisonnement par récurrence",
+      "type": "definition",
+      "recto": "Dans quelles situations le raisonnement par récurrence est-il l'outil naturel ?",
+      "verso": "Pour une égalité dépendant de $n$, pour une inégalité dépendant de $n$, pour l'encadrement d'une suite récurrente dont aucune formule explicite n'est disponible, et pour une divisibilité. La structure de la rédaction reste la même dans les quatre cas.",
+      "difficulte": 2,
+      "tags": ["recurrence", "situations"]
+    },
+    {
+      "id": "1D-CH04-030",
+      "lecon": "Le raisonnement par récurrence",
+      "type": "formule",
+      "recto": "Comment traduit-on la divisibilité de $N$ par $3$ pour s'en servir dans un calcul ?",
+      "verso": "Par la phrase il existe un entier $k$ tel que $N=3k$. C'est cette égalité, et non le mot divisible, qui se manipule : dans l'hérédité, on remplace grâce à elle, puis on met $3$ en facteur dans le résultat obtenu.",
+      "difficulte": 2,
+      "tags": ["divisibilite", "recurrence"]
+    },
+    {
+      "id": "1D-CH04-031",
+      "lecon": "Le raisonnement par récurrence",
+      "type": "formule",
+      "recto": "Comment mène-t-on l'hérédité lorsque la propriété est un encadrement de suite récurrente ?",
+      "verso": "On part de l'encadrement supposé sur $u_n$ et on lui applique, ligne à ligne, les opérations de la relation de récurrence, en surveillant le sens des inégalités. On a le droit d'affaiblir l'encadrement obtenu pour retrouver exactement l'énoncé visé.",
+      "difficulte": 3,
+      "tags": ["encadrement", "recurrence", "heredite"]
+    },
+    {
+      "id": "1D-CH04-032",
+      "lecon": "Limite d'une suite",
+      "type": "definition",
+      "recto": "Que signifie dire qu'une suite converge vers un réel $L$ ?",
+      "verso": "Que la distance $\\left|u_n-L\\right|$ devient aussi petite que l'on veut à partir d'un certain rang, et le reste. On écrit alors $\\lim\\limits_{n\\to+\\infty}u_n=L$. Le comportement des premiers termes, si désordonné soit-il, n'a aucune influence.",
+      "difficulte": 2,
+      "tags": ["limite", "convergence"]
+    },
+    {
+      "id": "1D-CH04-033",
+      "lecon": "Limite d'une suite",
+      "type": "definition",
+      "recto": "Que signifie l'écriture $\\lim\\limits_{n\\to+\\infty}u_n=+\\infty$ ?",
+      "verso": "Qu'à partir d'un certain rang la suite dépasse tout nombre donné à l'avance, et le reste. Le symbole $+\\infty$ n'est pas un nombre mais une description de comportement : on n'écrit donc jamais $u_n=+\\infty$.",
+      "difficulte": 2,
+      "tags": ["limite-infinie", "divergence"]
+    },
+    {
+      "id": "1D-CH04-034",
+      "lecon": "Limite d'une suite",
+      "type": "formule",
+      "recto": "Quelles sont les limites des suites de référence lorsque $n$ tend vers $+\\infty$ ?",
+      "verso": "Les suites $\\dfrac{1}{n}$, $\\dfrac{1}{n^{2}}$ et $\\dfrac{1}{\\sqrt{n}}$ tendent vers $0$ ; les suites $n$, $n^{2}$ et $\\sqrt{n}$ tendent vers $+\\infty$.",
+      "difficulte": 1,
+      "tags": ["suites-de-reference", "limite"]
+    },
+    {
+      "id": "1D-CH04-035",
+      "lecon": "Limite d'une suite",
+      "type": "formule",
+      "recto": "Quel est le comportement de la suite $\\left(k^{\\,n}\\right)$ selon la valeur de $k$ ?",
+      "verso": "Si $-1<k<1$, elle tend vers $0$ ; si $k=1$, elle est constante égale à $1$ ; si $k>1$, elle tend vers $+\\infty$ ; si $k\\le -1$, elle n'a pas de limite, ses termes changeant de signe à chaque rang.",
+      "difficulte": 2,
+      "tags": ["suite-geometrique", "limite"]
+    },
+    {
+      "id": "1D-CH04-036",
+      "lecon": "Limite d'une suite",
+      "type": "definition",
+      "recto": "Quelle différence y a-t-il entre une suite majorée par $L$ et une suite de limite $L$ ?",
+      "verso": "Etre majorée par $L$ signifie seulement ne jamais dépasser $L$ ; avoir pour limite $L$ signifie s'en approcher autant qu'on veut. La suite $u_n=-n$ est majorée par $0$ et tend pourtant vers $-\\infty$.",
+      "difficulte": 3,
+      "tags": ["majorant", "limite", "piege"]
+    },
+    {
+      "id": "1D-CH04-037",
+      "lecon": "Limite d'une suite",
+      "type": "formule",
+      "recto": "Quelles sont les formes indéterminées à reconnaître dans un calcul de limite ?",
+      "verso": "Les quatre écritures $(+\\infty)-(+\\infty)$, $0\\times(\\pm\\infty)$, $\\dfrac{\\pm\\infty}{\\pm\\infty}$ et $\\dfrac{0}{0}$. Indéterminé ne veut pas dire sans limite : le calcul, tel qu'il est écrit, ne suffit pas à trancher.",
+      "difficulte": 2,
+      "tags": ["forme-indeterminee", "limite"]
+    },
+    {
+      "id": "1D-CH04-038",
+      "lecon": "Limite d'une suite",
+      "type": "formule",
+      "recto": "Que fait-on lorsqu'une forme indéterminée apparaît dans un calcul de limite ?",
+      "verso": "On met en facteur le terme dominant avant de conclure : la plus haute puissance de $n$ pour un quotient de polynômes, la plus grande base pour une expression mêlant $a^{\\,n}$ et $b^{\\,n}$. Ainsi $n^{2}-n=n^{2}\\left(1-\\dfrac{1}{n}\\right)$ tend vers $+\\infty$.",
+      "difficulte": 2,
+      "tags": ["terme-dominant", "forme-indeterminee"]
+    }
+  ]
+}

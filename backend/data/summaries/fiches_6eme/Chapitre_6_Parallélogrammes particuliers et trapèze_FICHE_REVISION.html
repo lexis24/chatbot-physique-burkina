@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Fiche de revision - 6eme - Chapitre 6 : Parallelogrammes particuliers et trapeze</title>
+<style>
+/* ===================================================================
+   FICHE DE REVISION, Collection Hakili Lab, Edition 2026
+   Feuille de style autonome, format A4 pret a imprimer.
+   Bleu #005CB9 · Vert #49A145
+   =================================================================== */
+:root{
+  --bleu:#005CB9; --bleu-fonce:#00429A; --bleu-pale:#E8F1FB; --bleu-bord:#B7D2EE;
+  --vert:#49A145; --vert-fonce:#2F7A2C; --vert-pale:#EDF7EC; --vert-bord:#BCE0B9;
+  --gris:#4A4A4A; --gris-clair:#E4E4E4; --rouge:#B3261E;
+}
+@page{
+  size:A4; margin:15mm;
+  @bottom-center{
+    content:"Collection Hakili Lab, Edition 2026  ·  Fiche de revision  ·  " counter(page) "/" counter(pages);
+    font-family:"Segoe UI",Calibri,Arial,sans-serif; font-size:6.6pt; color:#8A8A8A;
+  }
+}
+*{box-sizing:border-box;}
+body{
+  margin:0; font-family:"Segoe UI",Calibri,Arial,sans-serif;
+  font-size:8.4pt; line-height:1.26; color:#1B1B1B;
+}
+p{margin:0 0 3pt;}
+ul{margin:0 0 3pt; padding-left:11pt;}
+li{margin:0 0 1.2pt;}
+b,strong{color:var(--bleu-fonce);}
+
+/* ------------------------------ ENTETE ---------------------------- */
+.entete{
+  display:flex; align-items:stretch; border:1.6pt solid var(--bleu);
+  border-radius:2.5pt; overflow:hidden; margin-bottom:6pt;
+}
+.entete .num{
+  background:var(--bleu); color:#fff; font-size:20pt; font-weight:700;
+  padding:0 8pt; display:flex; align-items:center; justify-content:center; min-width:34pt;
+}
+.entete .txt{padding:3.5pt 8pt; flex:1;}
+.entete .niveau{
+  font-size:7pt; font-weight:700; letter-spacing:.9pt; color:var(--vert-fonce);
+}
+.entete h1{margin:0; font-size:13.5pt; line-height:1.12; color:var(--bleu-fonce); font-weight:700;}
+.entete .sous{font-size:7pt; color:var(--gris); margin-top:1pt;}
+
+/* --------------------------- BANDEAUX ----------------------------- */
+.bandeau{
+  color:#fff; font-weight:700; font-size:9pt; letter-spacing:1pt;
+  padding:2.4pt 7pt; border-radius:2pt; margin:3pt 0 4pt; break-after:avoid; page-break-after:avoid;
+}
+.bandeau.bleu{background:var(--bleu);}
+.bandeau.vert{background:var(--vert);}
+
+/* --------------------------- COLONNES ----------------------------- */
+.cols{column-count:2; column-gap:7mm; column-fill:balance;}
+
+.cols.bal{column-fill:balance;}
+.bloc{margin-bottom:5pt;}
+.keep{break-inside:avoid; page-break-inside:avoid;}
+
+/* --------------------------- LECONS ------------------------------- */
+h2.lecon{
+  margin:0 0 3pt; font-size:8.6pt; font-weight:700; color:#fff; background:var(--bleu-fonce);
+  padding:1.8pt 5pt; border-radius:1.5pt; break-after:avoid; page-break-after:avoid;
+}
+h3.rub{
+  margin:3.5pt 0 1.5pt; font-size:8.2pt; font-weight:700; color:var(--vert-fonce);
+  border-bottom:.7pt solid var(--vert-bord); padding-bottom:.8pt;
+  break-after:avoid; page-break-after:avoid;
+}
+
+/* --------------------------- ENCADRES ----------------------------- */
+.form{
+  background:var(--bleu-pale); border:.8pt solid var(--bleu-bord); border-left:2.6pt solid var(--bleu);
+  border-radius:2pt; padding:2.4pt 5pt; margin:2.2pt 0 3.4pt;
+  break-inside:avoid; page-break-inside:avoid;
+}
+.form .t{
+  display:block; font-size:6.8pt; font-weight:700; letter-spacing:.6pt;
+  color:var(--bleu); margin-bottom:1.5pt;
+}
+.form .c{text-align:center; font-size:9.1pt; margin:1.6pt 0;}
+.note{background:var(--vert-pale); border-left:2.4pt solid var(--vert); padding:2.4pt 5pt; border-radius:1.5pt; margin:2.5pt 0 4pt; break-inside:avoid;}
+
+/* --------------------------- TABLEAUX ----------------------------- */
+table{width:100%; border-collapse:collapse; font-size:7.6pt; margin:2pt 0 4pt; break-inside:avoid;}
+th{background:var(--bleu); color:#fff; font-weight:700; text-align:left; padding:1.8pt 4pt; font-size:7.2pt;}
+td{border:.6pt solid var(--gris-clair); padding:1.8pt 4pt; vertical-align:top;}
+tr{break-inside:avoid;}
+table.var td{text-align:center; font-size:8pt;}
+table.var td.lab{text-align:left; font-weight:700; color:var(--bleu-fonce); background:var(--bleu-pale);}
+
+/* ----------------------------- PIEGES ----------------------------- */
+table.pieges th:first-child{width:44%;}
+table.pieges td:first-child{color:var(--rouge); background:#FDF1F0;}
+.x{font-weight:700;}
+.v{color:var(--vert-fonce); font-weight:700;}
+
+/* ---------------------------- RECAP ------------------------------- */
+ol.recap{margin:0; padding-left:0; list-style:none; counter-reset:r;}
+ol.recap li{
+  counter-increment:r; position:relative; padding-left:13pt; margin-bottom:1.8pt;
+  break-inside:avoid;
+}
+ol.recap li::before{
+  content:counter(r); position:absolute; left:0; top:.3pt;
+  width:10pt; height:10pt; border-radius:50%; background:var(--vert); color:#fff;
+  font-size:6.6pt; font-weight:700; text-align:center; line-height:10pt;
+}
+
+/* --------------------------- MATHS -------------------------------- */
+.m{font-family:Cambria,Georgia,"Times New Roman",serif;}
+i,var{font-family:Cambria,Georgia,"Times New Roman",serif; font-style:italic;}
+.op{font-family:Cambria,Georgia,"Times New Roman",serif; font-style:normal;}
+.f{display:inline-block; vertical-align:middle; text-align:center;
+   margin:0 .12em; line-height:1.06; font-family:Cambria,Georgia,"Times New Roman",serif;}
+.f>span{display:block; padding:0 .2em;}
+.f>span:first-child{border-bottom:.6pt solid currentColor; padding-bottom:.08em;}
+.f>span:last-child{padding-top:.04em;}
+.rad{border-top:.6pt solid currentColor; padding-top:.12em;}
+/* line-height:0 evite que l'exposant n'ecarte les lignes ; position:relative le
+   repositionne sans qu'il heurte la barre de fraction ni le trait du radical. */
+sup,sub{font-size:.68em; line-height:0; position:relative; vertical-align:baseline;}
+sup{top:-.42em;}
+sub{bottom:-.22em;}
+.pt{white-space:nowrap;}
+/* Les fleches n'ont qu'un glyphe atrophie dans la fonte serif : on les force
+   en sans-serif, ou elles sont franches meme a 8 pt. */
+.ar{font-family:"Segoe UI",Calibri,Arial,"DejaVu Sans",sans-serif; font-style:normal;}
+
+/* ------------------- PIEGES : blocs erreur / correction ------------- */
+.pg{font-size:8.1pt; border-left:2.4pt solid var(--rouge); background:#FDF1F0; border-radius:1.5pt;
+    padding:2pt 5pt; margin:0 0 2.8pt; break-inside:avoid; page-break-inside:avoid;}
+.pg .err{color:var(--rouge); font-weight:600;}
+.pg .cor{color:#1B1B1B; margin-top:.8pt;}
+.pg .cor b{color:var(--bleu-fonce);}
+.v{color:var(--vert-fonce); font-weight:700;}
+
+</style>
+</head>
+<body>
+<header class="entete">
+  <div class="num">6</div>
+  <div class="txt">
+    <div class="niveau">6EME &middot; MATHEMATIQUES</div>
+    <h1>Parallélogrammes particuliers et trapèze</h1>
+    <div class="sous">Leçon 1 : le rectangle &middot; Leçon 2 : le carré &middot; Leçon 3 : le losange &middot; Leçon 4 : le trapèze</div>
+  </div>
+</header>
+
+<div class="bandeau bleu" style="margin-top:0">L'ESSENTIEL</div>
+<div class="cols">
+
+<!-- ================= LECON 1 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 1&nbsp;: Le rectangle</h2>
+<p><b>Définition.</b> Un <b>rectangle</b> est un quadrilatère qui a <b>quatre angles droits</b>. C'est un <b>parallélogramme particulier</b> : il possède donc toutes les propriétés du parallélogramme.</p></div>
+<p><b>Propriétés.</b></p>
+<ul>
+<li>Les côtés opposés sont <b>parallèles</b> et de <b>même longueur</b>.</li>
+<li>Les quatre angles sont droits (90&#176;).</li>
+<li>Les diagonales ont la <b>même longueur</b> et se coupent en leur <b>milieu</b>.</li>
+<li><b>2 axes de symétrie</b> : les droites qui joignent les milieux de deux côtés opposés.</li>
+</ul>
+<div class="form">
+  <span class="t">PERIMETRE ET AIRE&nbsp;: Longueur L, largeur l</span>
+  <div class="c m"><i>P</i>&#8239;=&#8239;2&#8239;&#215;&#8239;(L&#8239;+&#8239;l) &nbsp;&nbsp;&nbsp; <i>A</i>&#8239;=&#8239;L&#8239;&#215;&#8239;l</div>
+</div>
+<div class="note"><b>Construire ABCD.</b> Tracer [AB] de longueur L ; en A et en B, tracer à l'équerre les perpendiculaires à [AB] ; y placer D et C à la distance l ; relier D et C. Vérifier les quatre angles droits, AB&#8239;=&#8239;DC et AD&#8239;=&#8239;BC.</div>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Les unités</h3>
+<p>Une <b>longueur</b> se mesure en m, cm, km ; une <b>aire</b> se mesure en unités <b>carrées</b> : m<sup>2</sup>, cm<sup>2</sup>.</p>
+<div class="form">
+  <span class="t">CONVERSIONS A CONNAITRE</span>
+  <div class="c m">1&#8239;m&#8239;=&#8239;100&#8239;cm &nbsp;&nbsp; 1&#8239;m<sup>2</sup>&#8239;=&#8239;10&#8239;000&#8239;cm<sup>2</sup> &nbsp;&nbsp; 1&#8239;ha&#8239;=&#8239;10&#8239;000&#8239;m<sup>2</sup></div>
+</div>
+<p>Avant tout calcul d'aire, mettre les deux dimensions dans <b>la même unité</b>.</p>
+</div>
+
+<!-- ================= LECON 2 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 2&nbsp;: Le carré</h2>
+<p><b>Définition.</b> Un <b>carré</b> est un quadrilatère qui a <b>quatre côtés égaux et quatre angles droits</b>. Il est donc à la fois un <b>rectangle particulier</b> (4 angles droits) et un <b>losange particulier</b> (4 côtés égaux) : on peut lui appliquer toutes les propriétés de l'un <b>et</b> de l'autre, sans rien redémontrer.</p></div>
+<p><b>Propriétés.</b></p>
+<ul>
+<li>Les côtés opposés sont parallèles ; les <b>quatre côtés sont égaux</b>.</li>
+<li>Les quatre angles sont droits.</li>
+<li>Les diagonales sont de <b>même longueur</b>, <b>perpendiculaires</b>, et se coupent en leur <b>milieu</b>.</li>
+<li><b>4 axes de symétrie</b> : ses deux diagonales et les deux droites joignant les milieux de côtés opposés.</li>
+</ul>
+<div class="form">
+  <span class="t">PERIMETRE ET AIRE&nbsp;: côté c</span>
+  <div class="c m"><i>P</i>&#8239;=&#8239;4&#8239;&#215;&#8239;<i>c</i> &nbsp;&nbsp;&nbsp; <i>A</i>&#8239;=&#8239;<i>c</i>&#8239;&#215;&#8239;<i>c</i></div>
+</div>
+<p><b>Construire un carré de côté <i>c</i>.</b> Même méthode que pour le rectangle, avec la largeur égale à la longueur : tracer [AB] de longueur <i>c</i>, élever les perpendiculaires en A et en B, y placer D et C à la distance <i>c</i>, puis relier D et C.</p>
+<div class="note"><b>Clôture fermée.</b> Si l'on plante un poteau tous les <i>d</i> mètres tout autour d'un terrain, le nombre de poteaux est <i>P</i>&#8239;&#247;&#8239;<i>d</i>, où <i>P</i> est le périmètre : le tour étant fermé, le dernier poteau tombe juste à côté du premier.</div>
+</div>
+
+<!-- ================= LECON 3 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 3&nbsp;: Le losange</h2>
+<p><b>Définition.</b> Un <b>losange</b> est un quadrilatère qui a <b>quatre côtés égaux</b>. C'est un <b>parallélogramme particulier</b> : ses côtés opposés sont parallèles.</p></div>
+<p><b>Propriétés.</b></p>
+<ul>
+<li>Les quatre côtés sont égaux ; les côtés opposés sont parallèles.</li>
+<li>Les <b>angles opposés</b> sont égaux.</li>
+<li>Les diagonales sont <b>perpendiculaires</b> et se coupent en leur <b>milieu</b>.</li>
+<li><b>2 axes de symétrie</b> : ce sont ses deux diagonales.</li>
+</ul>
+<div class="form">
+  <span class="t">PERIMETRE ET AIRE&nbsp;: côté c, diagonales D (grande) et d (petite)</span>
+  <div class="c m"><i>P</i>&#8239;=&#8239;4&#8239;&#215;&#8239;<i>c</i> &nbsp;&nbsp;&nbsp; <i>A</i>&#8239;=&#8239;(<i>D</i>&#8239;&#215;&#8239;<i>d</i>)&#8239;&#247;&#8239;2</div>
+</div>
+<p>Pour le rectangle on multiplie deux <b>côtés</b> ; pour le losange on multiplie les deux <b>diagonales</b>, et on divise par 2.</p>
+<div class="note"><b>Construire MNPQ à partir des diagonales.</b> Tracer la diagonale [MP] de longueur <i>D</i> ; placer son milieu O ; tracer en O la perpendiculaire à [MP] ; y placer N et Q tels que ON&#8239;=&#8239;OQ&#8239;=&#8239;<i>d</i>&#8239;&#247;&#8239;2 ; relier M, N, P, Q et vérifier que les quatre côtés sont égaux.</div>
+</div>
+
+<!-- ================= LECON 4 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 4&nbsp;: Le trapèze</h2>
+<p><b>Définition.</b> Un <b>trapèze</b> est un quadrilatère qui a <b>deux côtés parallèles</b>, appelés les <b>bases</b>. Les deux autres côtés ne sont pas parallèles : le trapèze n'est donc <b>pas</b> un parallélogramme.</p></div>
+<ul>
+<li><b>Trapèze isocèle</b> : ses deux côtés non parallèles ont la même longueur.</li>
+<li><b>Trapèze rectangle</b> : il a deux angles droits.</li>
+</ul>
+<p>La <b>hauteur</b> <i>h</i> est la distance entre les deux bases, mesurée <b>perpendiculairement</b>.</p>
+<div class="form">
+  <span class="t">PERIMETRE ET AIRE&nbsp;: grande base B, petite base b, hauteur h</span>
+  <div class="c m"><i>A</i>&#8239;=&#8239;[(<i>B</i>&#8239;+&#8239;<i>b</i>)&#8239;&#215;&#8239;<i>h</i>]&#8239;&#247;&#8239;2</div>
+  <div class="c m"><i>P</i>&#8239;=&#8239;somme des longueurs des quatre côtés</div>
+</div>
+<p>La formule se lit à voix haute : « la somme des deux bases, multipliée par la hauteur, le tout divisé par deux ». Si les deux bases devenaient égales, la figure serait un parallélogramme et la formule redonnerait base&#8239;&#215;&#8239;hauteur.</p>
+<div class="note"><b>Calculer l'aire.</b> Repérer B, b et <i>h</i> ; additionner B&#8239;+&#8239;b ; multiplier la somme par <i>h</i> ; diviser par 2 ; écrire l'unité carrée.</div>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Diagonales et axes de symétrie</h3>
+<table>
+<tr><th>Figure</th><th>Diagonales</th><th>Axes</th></tr>
+<tr><td>Rectangle</td><td>de <b>même longueur</b>, se coupent en leur milieu</td><td>2</td></tr>
+<tr><td>Carré</td><td>de <b>même longueur</b>, <b>perpendiculaires</b>, se coupent en leur milieu</td><td>4</td></tr>
+<tr><td>Losange</td><td><b>perpendiculaires</b>, se coupent en leur milieu</td><td>2</td></tr>
+</table>
+<p>Un <b>axe de symétrie</b> est une droite le long de laquelle on peut plier la figure pour que les deux moitiés se superposent exactement.</p>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Reconnaître une figure : l'ordre des vérifications</h3>
+<p>Devant un quadrilatère, vérifier dans cet ordre : les <b>côtés parallèles</b> (aucune paire, une seule paire, deux paires), puis les <b>angles droits</b>, puis les <b>côtés égaux</b>, puis les <b>diagonales</b>.</p>
+<ul>
+<li>Une seule paire de côtés parallèles&nbsp;: c'est un <b>trapèze</b>.</li>
+<li>Deux paires&nbsp;: c'est un <b>parallélogramme</b>, qui pourra ensuite être rectangle, losange ou carré.</li>
+</ul>
+</div>
+
+</div>
+
+<div class="bandeau vert">PIEGES ET ERREURS FREQUENTES</div>
+<div class="cols">
+<div class="pg"><div class="err"><span class="x">&#10007;</span> « Les diagonales du rectangle sont perpendiculaires. » &nbsp;&middot;&nbsp; « Tout parallélogramme a des diagonales de même longueur. »</div><div class="cor"><span class="v">&#10003;</span> Les diagonales du rectangle sont <b>égales</b> et se coupent en leur milieu, mais elles ne sont <b>pas</b> perpendiculaires. Seuls le rectangle et le carré ont des diagonales égales.</div></div>
+<div class="pg"><div class="err"><span class="x">&#10007;</span> « Un carré n'est pas un rectangle. »</div><div class="cor"><span class="v">&#10003;</span> Un carré a quatre angles droits : c'est <b>un rectangle</b> (particulier), et il a quatre côtés égaux, donc c'est aussi <b>un losange</b>. On peut lui appliquer toutes leurs propriétés.</div></div>
+<div class="pg"><div class="err"><span class="x">&#10007;</span> « Tout rectangle est un carré. »</div><div class="cor"><span class="v">&#10003;</span> Non : un rectangle de 8 cm sur 3 cm a bien quatre angles droits, mais ses quatre côtés ne sont pas égaux.</div></div>
+<div class="pg"><div class="err"><span class="x">&#10007;</span> « Un losange a quatre angles droits. »</div><div class="cor"><span class="v">&#10003;</span> Le losange a quatre <b>côtés</b> égaux. Quatre angles droits, c'est le <b>rectangle</b> ; les deux à la fois donnent le <b>carré</b>.</div></div>
+<div class="pg"><div class="err"><span class="x">&#10007;</span> Aire du losange&#8239;=&#8239;côté&#8239;&#215;&#8239;côté</div><div class="cor"><span class="v">&#10003;</span> <i>A</i>&#8239;=&#8239;(<i>D</i>&#8239;&#215;&#8239;<i>d</i>)&#8239;&#247;&#8239;2 : on multiplie les deux <b>diagonales</b>, pas les côtés, et on divise par 2. Le côté ne sert qu'au périmètre : <i>P</i>&#8239;=&#8239;4&#8239;&#215;&#8239;<i>c</i>.</div></div>
+<div class="pg"><div class="err"><span class="x">&#10007;</span> « Les diagonales d'un losange sont égales. »</div><div class="cor"><span class="v">&#10003;</span> Elles sont <b>perpendiculaires</b> et se coupent en leur milieu, mais elles sont en général de <b>longueurs différentes</b>.</div></div>
+<div class="pg"><div class="err"><span class="x">&#10007;</span> Aire du trapèze&#8239;=&#8239;(<i>B</i>&#8239;+&#8239;<i>b</i>)&#8239;&#215;&#8239;<i>h</i> &nbsp;&middot;&nbsp; les bases sont les côtés obliques</div><div class="cor"><span class="v">&#10003;</span> <i>A</i>&#8239;=&#8239;[(<i>B</i>&#8239;+&#8239;<i>b</i>)&#8239;&#215;&#8239;<i>h</i>]&#8239;&#247;&#8239;2 : la division par 2 est ce que l'on oublie le plus souvent. Les <b>bases</b> sont les deux côtés <b>parallèles</b>.</div></div>
+<div class="pg"><div class="err"><span class="x">&#10007;</span> Rectangle de 2 m sur 30 cm : <i>A</i>&#8239;=&#8239;2&#8239;&#215;&#8239;30&#8239;=&#8239;60&#8239;m</div><div class="cor"><span class="v">&#10003;</span> Il faut d'abord <b>la même unité</b> : 2&#8239;m&#8239;=&#8239;200&#8239;cm, donc <i>A</i>&#8239;=&#8239;200&#8239;&#215;&#8239;30&#8239;=&#8239;6&#8239;000&#8239;cm<sup>2</sup>. Une aire s'écrit toujours en unité <b>carrée</b>.</div></div>
+
+</div>
+
+<div class="bandeau bleu">A SAVOIR PAR COEUR AVANT LE DEVOIR</div>
+<div class="cols">
+<ol class="recap">
+<li><b>Rectangle</b> : quatre angles droits ; côtés opposés parallèles et égaux ; diagonales <b>égales</b> se coupant en leur milieu ; <b>2 axes</b>.</li>
+<li><b>Carré</b> : quatre côtés égaux <b>et</b> quatre angles droits ; diagonales égales, perpendiculaires, se coupant en leur milieu ; <b>4 axes</b>. C'est un rectangle ET un losange.</li>
+<li><b>Losange</b> : quatre côtés égaux ; angles opposés égaux ; diagonales <b>perpendiculaires</b> se coupant en leur milieu ; <b>2 axes</b> (ses diagonales).</li>
+<li><b>Trapèze</b> : une seule paire de côtés parallèles, les <b>bases</b> ; ce n'est pas un parallélogramme. Isocèle si les côtés non parallèles sont égaux, rectangle s'il a deux angles droits.</li>
+<li>Rectangle : <i>P</i>&#8239;=&#8239;2&#8239;&#215;&#8239;(L&#8239;+&#8239;l) et <i>A</i>&#8239;=&#8239;L&#8239;&#215;&#8239;l.</li>
+<li>Carré : <i>P</i>&#8239;=&#8239;4&#8239;&#215;&#8239;<i>c</i> et <i>A</i>&#8239;=&#8239;<i>c</i>&#8239;&#215;&#8239;<i>c</i> &nbsp;&middot;&nbsp; Losange : <i>P</i>&#8239;=&#8239;4&#8239;&#215;&#8239;<i>c</i> et <i>A</i>&#8239;=&#8239;(<i>D</i>&#8239;&#215;&#8239;<i>d</i>)&#8239;&#247;&#8239;2.</li>
+<li>Trapèze : <i>P</i>&#8239;=&#8239;somme des quatre côtés et <i>A</i>&#8239;=&#8239;[(<i>B</i>&#8239;+&#8239;<i>b</i>)&#8239;&#215;&#8239;<i>h</i>]&#8239;&#247;&#8239;2, la hauteur <i>h</i> étant mesurée perpendiculairement aux bases.</li>
+<li>Pour identifier une figure : parallélisme, angles droits, côtés égaux, diagonales. Une aire s'exprime en unité <b>carrée</b>, dimensions ramenées à la <b>même unité</b> (1&#8239;m<sup>2</sup>&#8239;=&#8239;10&#8239;000&#8239;cm<sup>2</sup>).</li>
+</ol>
+</div>
+
+</body>
+</html>

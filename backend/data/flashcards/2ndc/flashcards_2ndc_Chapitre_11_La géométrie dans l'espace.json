@@ -1,0 +1,350 @@
+{
+  "niveau": "2nde C",
+  "chapitre": "Chapitre 11 : La géométrie dans l'espace",
+  "source": "maths/2ndc/Chapitre_11_Geometrie_espace",
+  "nombre_cartes": 38,
+  "cartes": [
+    {
+      "id": "2C-CH11-001",
+      "lecon": "Incidence et parallélisme : positions relatives",
+      "type": "definition",
+      "recto": "Combien de plans passent par trois points non alignés de l'espace ?",
+      "verso": "Un plan et un seul, noté $(ABC)$ lorsque les trois points sont $A$, $B$ et $C$. De même, par deux points distincts passe une droite et une seule, notée $(AB)$.",
+      "difficulte": 1,
+      "tags": ["incidence", "plan", "droite"]
+    },
+    {
+      "id": "2C-CH11-002",
+      "lecon": "Incidence et parallélisme : positions relatives",
+      "type": "formule",
+      "recto": "Que peut-on affirmer lorsque deux points distincts d'une droite appartiennent à un plan ?",
+      "verso": "Que la droite tout entière est contenue dans ce plan. C'est cette propriété qui autorise à écrire, dans une démonstration : $A$ et $B$ appartiennent à $(P)$, donc la droite $(AB)$ est contenue dans $(P)$.",
+      "difficulte": 2,
+      "tags": ["incidence", "droite-incluse"]
+    },
+    {
+      "id": "2C-CH11-003",
+      "lecon": "Incidence et parallélisme : positions relatives",
+      "type": "definition",
+      "recto": "Quelles données, autres que trois points non alignés, déterminent un plan ?",
+      "verso": "Une droite et un point extérieur à cette droite, deux droites sécantes, ou deux droites parallèles distinctes. Dans chacun de ces cas, on retrouve trois points non alignés.",
+      "difficulte": 2,
+      "tags": ["incidence", "plan"]
+    },
+    {
+      "id": "2C-CH11-004",
+      "lecon": "Incidence et parallélisme : positions relatives",
+      "type": "definition",
+      "recto": "Que signifie que deux droites de l'espace sont coplanaires ?",
+      "verso": "Qu'il existe un plan qui les contient toutes les deux. Elles sont alors sécantes, avec un seul point commun, ou parallèles, sans point commun ou confondues.",
+      "difficulte": 1,
+      "tags": ["coplanaires", "positions-relatives"]
+    },
+    {
+      "id": "2C-CH11-005",
+      "lecon": "Incidence et parallélisme : positions relatives",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on deux droites gauches de l'espace ?",
+      "verso": "Deux droites non coplanaires : aucun plan ne les contient toutes les deux. Elles n'ont aucun point commun et ne sont pas parallèles. Sur un solide, deux arêtes non parallèles qui n'appartiennent à aucune face commune sont gauches.",
+      "difficulte": 2,
+      "tags": ["droites-gauches", "positions-relatives"]
+    },
+    {
+      "id": "2C-CH11-006",
+      "lecon": "Incidence et parallélisme : positions relatives",
+      "type": "formule",
+      "recto": "Quelles sont les trois positions relatives possibles d'une droite et d'un plan ?",
+      "verso": "La droite est contenue dans le plan, ou parallèle au plan sans aucun point commun, ou sécante au plan avec exactement un point commun appelé point de percée. Le test est le nombre de points communs : une infinité, zéro, ou un.",
+      "difficulte": 1,
+      "tags": ["positions-relatives", "droite-plan"]
+    },
+    {
+      "id": "2C-CH11-007",
+      "lecon": "Incidence et parallélisme : positions relatives",
+      "type": "formule",
+      "recto": "Quelles sont les deux seules positions relatives possibles de deux plans de l'espace ?",
+      "verso": "Ou bien ils sont parallèles, sans aucun point commun, ou confondus. Ou bien ils sont sécants, et leur intersection est alors une droite entière.",
+      "difficulte": 1,
+      "tags": ["positions-relatives", "plan-plan"]
+    },
+    {
+      "id": "2C-CH11-008",
+      "lecon": "Incidence et parallélisme : positions relatives",
+      "type": "formule",
+      "recto": "Comment montre-t-on que deux arêtes d'un solide situées sur des faces différentes sont parallèles ?",
+      "verso": "En les montrant toutes deux parallèles à une même troisième droite, car deux droites parallèles à une même troisième sont parallèles entre elles. Dans un pavé $ABCDEFGH$, $(AD)$ et $(FG)$ sont parallèles car toutes deux parallèles à $(BC)$.",
+      "difficulte": 2,
+      "tags": ["parallelisme", "droites"]
+    },
+    {
+      "id": "2C-CH11-009",
+      "lecon": "Incidence et parallélisme : positions relatives",
+      "type": "formule",
+      "recto": "Comment démontre-t-on qu'une droite est parallèle à un plan ?",
+      "verso": "On exhibe une droite du plan qui lui soit parallèle, la droite étudiée n'étant pas incluse dans le plan. Constater sur un dessin qu'elles ne se touchent pas ne démontre rien.",
+      "difficulte": 2,
+      "tags": ["parallelisme", "droite-plan"]
+    },
+    {
+      "id": "2C-CH11-010",
+      "lecon": "Incidence et parallélisme : positions relatives",
+      "type": "formule",
+      "recto": "Quel critère permet d'affirmer que deux plans $(P)$ et $(Q)$ sont parallèles ?",
+      "verso": "Il suffit que deux droites sécantes de $(P)$ soient respectivement parallèles à deux droites sécantes de $(Q)$. Une seule direction commune ne suffit pas : il en faut deux, et elles doivent se couper dans chaque plan.",
+      "difficulte": 2,
+      "tags": ["parallelisme", "plan-plan", "critere"]
+    },
+    {
+      "id": "2C-CH11-011",
+      "lecon": "Incidence et parallélisme : positions relatives",
+      "type": "formule",
+      "recto": "Que dire des deux droites obtenues lorsqu'un plan coupe deux plans parallèles ?",
+      "verso": "Elles sont parallèles entre elles. De plus, tout plan qui coupe l'un de deux plans parallèles coupe nécessairement l'autre.",
+      "difficulte": 2,
+      "tags": ["parallelisme", "intersection"]
+    },
+    {
+      "id": "2C-CH11-012",
+      "lecon": "Incidence et parallélisme : positions relatives",
+      "type": "formule",
+      "recto": "Qu'affirme la propriété du toit ?",
+      "verso": "Si une droite $(d)$ est parallèle à un plan $(P)$, alors tout plan contenant $(d)$ et sécant à $(P)$ coupe $(P)$ suivant une droite parallèle à $(d)$. Elle donne la direction d'une intersection dont on ne connaît aucun point.",
+      "difficulte": 2,
+      "tags": ["propriete-du-toit", "parallelisme"]
+    },
+    {
+      "id": "2C-CH11-013",
+      "lecon": "Incidence et parallélisme : positions relatives",
+      "type": "formule",
+      "recto": "Comment détermine-t-on l'intersection de deux plans sécants ?",
+      "verso": "On cherche deux points communs distincts aux deux plans : la droite qui les joint est contenue dans chacun d'eux et c'est exactement leur intersection. Le premier point est souvent un sommet du solide appartenant visiblement aux deux.",
+      "difficulte": 2,
+      "tags": ["intersection", "plan-plan", "methode"]
+    },
+    {
+      "id": "2C-CH11-014",
+      "lecon": "Incidence et parallélisme : positions relatives",
+      "type": "definition",
+      "recto": "Pourquoi deux droites de l'espace sans point commun ne sont-elles pas forcément parallèles ?",
+      "verso": "Parce qu'être parallèles exige en plus d'être coplanaires. Sans plan commun, deux droites sans point commun sont gauches : dans un cube $ABCDEFGH$, $(AB)$ et $(CG)$ sont dans ce cas.",
+      "difficulte": 3,
+      "tags": ["droites-gauches", "piege", "parallelisme"]
+    },
+    {
+      "id": "2C-CH11-015",
+      "lecon": "Incidence et parallélisme : positions relatives",
+      "type": "definition",
+      "recto": "Pourquoi deux plans sécants ne peuvent-ils pas avoir un seul point commun ?",
+      "verso": "Parce que dès que deux plans distincts ont un point commun, ils en ont une infinité, tous alignés sur une droite. Si $B$ et $C$ appartiennent aux deux plans, l'intersection est la droite $(BC)$ tout entière.",
+      "difficulte": 3,
+      "tags": ["intersection", "piege", "plan-plan"]
+    },
+    {
+      "id": "2C-CH11-016",
+      "lecon": "Orthogonalité dans l'espace et plan médiateur",
+      "type": "definition",
+      "recto": "Quelle distinction fait-on dans l'espace entre deux droites orthogonales et deux droites perpendiculaires ?",
+      "verso": "Deux droites sont orthogonales lorsque les parallèles à ces deux droites menées par un même point sont perpendiculaires. Elles sont perpendiculaires lorsqu'elles sont de plus sécantes : perpendiculaires égale orthogonales et sécantes.",
+      "difficulte": 2,
+      "tags": ["orthogonalite", "vocabulaire"]
+    },
+    {
+      "id": "2C-CH11-017",
+      "lecon": "Orthogonalité dans l'espace et plan médiateur",
+      "type": "formule",
+      "recto": "A quelle condition une droite est-elle orthogonale à un plan ?",
+      "verso": "Lorsqu'elle est orthogonale à deux droites sécantes de ce plan ; on note alors $(d) \\perp (P)$. Deux droites suffisent, mais il en faut deux, et elles doivent se couper.",
+      "difficulte": 1,
+      "tags": ["orthogonalite", "droite-plan", "critere"]
+    },
+    {
+      "id": "2C-CH11-018",
+      "lecon": "Orthogonalité dans l'espace et plan médiateur",
+      "type": "formule",
+      "recto": "Que peut-on affirmer des droites d'un plan lorsqu'une droite est orthogonale à ce plan ?",
+      "verso": "Si $(d) \\perp (P)$, alors $(d)$ est orthogonale à toutes les droites de $(P)$, y compris à celles qui ne la rencontrent pas. C'est ce qui permet d'obtenir un angle droit entre deux droites gauches.",
+      "difficulte": 2,
+      "tags": ["orthogonalite", "propriete-fondamentale"]
+    },
+    {
+      "id": "2C-CH11-019",
+      "lecon": "Orthogonalité dans l'espace et plan médiateur",
+      "type": "definition",
+      "recto": "Pourquoi l'orthogonalité à une seule droite d'un plan ne suffit-elle pas pour être orthogonal à ce plan ?",
+      "verso": "Parce qu'une droite orthogonale à une seule direction du plan garde une infinité de positions possibles, comme un poteau qui fait un angle droit avec la direction du nord et penche pourtant vers l'est. Il faut deux droites sécantes du plan.",
+      "difficulte": 3,
+      "tags": ["orthogonalite", "piege"]
+    },
+    {
+      "id": "2C-CH11-020",
+      "lecon": "Orthogonalité dans l'espace et plan médiateur",
+      "type": "definition",
+      "recto": "Quand dit-on que deux plans sont perpendiculaires ?",
+      "verso": "Lorsque l'un des deux contient une droite orthogonale à l'autre. Dans un cube $ABCDEFGH$, le plan $(DCG)$ contient l'arête $(CG)$, orthogonale au plan de base $(ABC)$ : ces deux plans sont donc perpendiculaires.",
+      "difficulte": 2,
+      "tags": ["plans-perpendiculaires", "definition"]
+    },
+    {
+      "id": "2C-CH11-021",
+      "lecon": "Orthogonalité dans l'espace et plan médiateur",
+      "type": "formule",
+      "recto": "Comment l'orthogonalité d'une droite et d'un plan se combine-t-elle avec le parallélisme ?",
+      "verso": "Si $(d) \\perp (P)$, toute droite parallèle à $(d)$ est orthogonale à $(P)$, et $(d)$ est orthogonale à tout plan parallèle à $(P)$. En sens inverse, deux droites orthogonales à un même plan sont parallèles, et deux plans perpendiculaires à une même droite sont parallèles.",
+      "difficulte": 2,
+      "tags": ["orthogonalite", "parallelisme"]
+    },
+    {
+      "id": "2C-CH11-022",
+      "lecon": "Orthogonalité dans l'espace et plan médiateur",
+      "type": "definition",
+      "recto": "Quelles affirmations d'orthogonalité, vraies dans le plan, deviennent fausses dans l'espace ?",
+      "verso": "Deux plans perpendiculaires à un même plan peuvent être sécants : deux murs qui se rejoignent dans un coin de salle sont tous deux perpendiculaires au sol. Deux droites orthogonales à une même droite peuvent aussi se couper : dans un cube, $(AB)$ et $(AE)$ le sont à $(AD)$ et se coupent en $A$.",
+      "difficulte": 3,
+      "tags": ["piege", "orthogonalite", "parallelisme"]
+    },
+    {
+      "id": "2C-CH11-023",
+      "lecon": "Orthogonalité dans l'espace et plan médiateur",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on le plan médiateur d'un segment $[AB]$ ?",
+      "verso": "C'est l'ensemble des points $M$ de l'espace tels que $MA = MB$. C'est aussi le plan perpendiculaire à $(AB)$ passant par le milieu de $[AB]$.",
+      "difficulte": 1,
+      "tags": ["plan-mediateur", "definition"]
+    },
+    {
+      "id": "2C-CH11-024",
+      "lecon": "Orthogonalité dans l'espace et plan médiateur",
+      "type": "formule",
+      "recto": "Comment reconnaît-on le plan médiateur d'un segment $[AB]$ sur un solide ?",
+      "verso": "En trouvant trois points non alignés équidistants de $A$ et de $B$ : le plan qu'ils déterminent est le plan médiateur. Pour un point isolé $M$, il suffit de prouver $MA = MB$ pour qu'il y appartienne.",
+      "difficulte": 2,
+      "tags": ["plan-mediateur", "methode"]
+    },
+    {
+      "id": "2C-CH11-025",
+      "lecon": "Orthogonalité dans l'espace et plan médiateur",
+      "type": "formule",
+      "recto": "Pourquoi les points $M$ tels que $MA = MB$ forment-ils un plan perpendiculaire à $(AB)$ ?",
+      "verso": "Parce que le triangle $MAB$ est alors isocèle en $M$ : sa médiane issue de $M$ est aussi sa hauteur, donc $(MI)$ est orthogonale à $(AB)$, où $I$ est le milieu de $[AB]$. Toutes ces droites orthogonales à $(AB)$ en $I$ remplissent un plan.",
+      "difficulte": 3,
+      "tags": ["plan-mediateur", "demonstration"]
+    },
+    {
+      "id": "2C-CH11-026",
+      "lecon": "Orthogonalité dans l'espace et plan médiateur",
+      "type": "formule",
+      "recto": "Combien mesure la grande diagonale d'un cube d'arête $a$ ?",
+      "verso": "Elle mesure $a\\sqrt{3}$. A ne pas confondre avec la diagonale d'une face, qui vaut $a\\sqrt{2}$ : la grande diagonale traverse le cube d'un sommet jusqu'au sommet opposé.",
+      "difficulte": 2,
+      "tags": ["cube", "diagonale", "pythagore"]
+    },
+    {
+      "id": "2C-CH11-027",
+      "lecon": "Orthogonalité dans l'espace et plan médiateur",
+      "type": "formule",
+      "recto": "Comment calcule-t-on la grande diagonale d'un pavé de dimensions $L$, $l$ et $h$ ?",
+      "verso": "Elle vaut $\\sqrt{L^{2} + l^{2} + h^{2}}$. On applique Pythagore deux fois : d'abord dans le plan de la base, où la diagonale $d$ vérifie $d^{2} = L^{2} + l^{2}$, puis dans le plan vertical contenant cette diagonale et une arête verticale.",
+      "difficulte": 2,
+      "tags": ["pave", "diagonale", "pythagore"]
+    },
+    {
+      "id": "2C-CH11-028",
+      "lecon": "Orthogonalité dans l'espace et plan médiateur",
+      "type": "formule",
+      "recto": "Comment démontre-t-on que deux droites gauches sont orthogonales ?",
+      "verso": "On cherche un plan contenant la seconde droite et auquel la première est orthogonale, on établit cette orthogonalité avec deux droites sécantes du plan, puis on conclut que la première est orthogonale à toute droite de ce plan, donc à la seconde.",
+      "difficulte": 2,
+      "tags": ["orthogonalite", "methode", "droites-gauches"]
+    },
+    {
+      "id": "2C-CH11-029",
+      "lecon": "Sections planes de solides et perspective cavalière",
+      "type": "definition",
+      "recto": "Quelles faces d'un solide sont dessinées en vraie grandeur en perspective cavalière ?",
+      "verso": "Les faces frontales, c'est-à-dire celles qui sont parallèles à la feuille : leurs longueurs et leurs angles y sont respectés. Les autres arêtes, appelées fuyantes, sont tracées en oblique et raccourcies.",
+      "difficulte": 1,
+      "tags": ["perspective-cavaliere", "faces-frontales"]
+    },
+    {
+      "id": "2C-CH11-030",
+      "lecon": "Sections planes de solides et perspective cavalière",
+      "type": "definition",
+      "recto": "Quelles deux conventions règlent le tracé des fuyantes en perspective cavalière ?",
+      "verso": "L'angle de fuite avec l'horizontale, le même pour toutes les fuyantes, souvent $30^{\\circ}$, $45^{\\circ}$ ou $60^{\\circ}$, et le coefficient de réduction, lui aussi le même pour toutes, souvent $\\dfrac{1}{2}$ ou $\\dfrac{2}{3}$. Ils sont fixés une fois pour toutes.",
+      "difficulte": 2,
+      "tags": ["perspective-cavaliere", "fuyantes"]
+    },
+    {
+      "id": "2C-CH11-031",
+      "lecon": "Sections planes de solides et perspective cavalière",
+      "type": "definition",
+      "recto": "Comment représente-t-on les arêtes cachées par le solide en perspective cavalière ?",
+      "verso": "En pointillés. Sur un cube posé devant soi, ce sont les trois arêtes issues du sommet arrière, celui que l'on ne voit pas.",
+      "difficulte": 1,
+      "tags": ["perspective-cavaliere", "aretes-cachees"]
+    },
+    {
+      "id": "2C-CH11-032",
+      "lecon": "Sections planes de solides et perspective cavalière",
+      "type": "formule",
+      "recto": "Quelles propriétés d'une figure de l'espace la perspective cavalière conserve-t-elle ?",
+      "verso": "L'alignement des points, le parallélisme de deux droites, les milieux, et plus généralement les rapports de longueurs mesurées sur une même droite. Elle ne conserve ni les longueurs des fuyantes, qui sont réduites, ni les angles.",
+      "difficulte": 2,
+      "tags": ["perspective-cavaliere", "proprietes"]
+    },
+    {
+      "id": "2C-CH11-033",
+      "lecon": "Sections planes de solides et perspective cavalière",
+      "type": "definition",
+      "recto": "Pourquoi une longueur lue sur un dessin en perspective cavalière n'est-elle pas la vraie longueur ?",
+      "verso": "Parce que les fuyantes sont réduites et les angles déformés : un angle droit de l'espace peut y paraître aigu ou obtus. Une vraie longueur se calcule par Pythagore dans un plan bien choisi, elle ne se mesure jamais sur le dessin.",
+      "difficulte": 3,
+      "tags": ["perspective-cavaliere", "piege", "longueur"]
+    },
+    {
+      "id": "2C-CH11-034",
+      "lecon": "Sections planes de solides et perspective cavalière",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on la section d'un solide par un plan ?",
+      "verso": "C'est l'ensemble des points communs au solide et au plan : un polygone dont chaque côté est la trace du plan sur une face. Le nombre de côtés est égal au nombre de faces traversées.",
+      "difficulte": 2,
+      "tags": ["section-plane", "definition"]
+    },
+    {
+      "id": "2C-CH11-035",
+      "lecon": "Sections planes de solides et perspective cavalière",
+      "type": "formule",
+      "recto": "Que dire des deux traces laissées par un plan de coupe sur deux faces parallèles d'un solide ?",
+      "verso": "Elles sont parallèles. C'est cette règle qui permet de poursuivre une section : à partir d'un point placé sur une face, on trace la parallèle à la trace déjà obtenue sur la face opposée. Un côté de section ne relie jamais deux points de faces non adjacentes.",
+      "difficulte": 2,
+      "tags": ["section-plane", "parallelisme", "construction"]
+    },
+    {
+      "id": "2C-CH11-036",
+      "lecon": "Sections planes de solides et perspective cavalière",
+      "type": "formule",
+      "recto": "Quelle est la nature de la section d'un cube d'arête $a$ par un plan parallèle à une face ?",
+      "verso": "Un carré de côté $a$, identique à la face. Le plan traverse les quatre faces latérales, ce qui donne quatre côtés, et les traces obtenues sur deux faces opposées sont parallèles.",
+      "difficulte": 1,
+      "tags": ["section-plane", "cube", "carre"]
+    },
+    {
+      "id": "2C-CH11-037",
+      "lecon": "Sections planes de solides et perspective cavalière",
+      "type": "formule",
+      "recto": "Quelle est la nature de la section d'un cube d'arête $a$ par le plan contenant une diagonale de la base et les deux arêtes verticales au-dessus de ses extrémités ?",
+      "verso": "Un rectangle de côtés $a$ et $a\\sqrt{2}$, et non un carré : les deux arêtes verticales mesurent $a$, les deux diagonales de faces mesurent $a\\sqrt{2}$, et une arête verticale est orthogonale au plan de base, donc à la diagonale.",
+      "difficulte": 2,
+      "tags": ["section-plane", "cube", "rectangle"]
+    },
+    {
+      "id": "2C-CH11-038",
+      "lecon": "Sections planes de solides et perspective cavalière",
+      "type": "formule",
+      "recto": "Quelle est la nature de la section d'une pyramide par un plan parallèle à sa base ?",
+      "verso": "Un polygone semblable à la base, réduit dans le rapport $k$ égal au quotient de la distance du plan de coupe au sommet par la hauteur de la pyramide : les longueurs sont multipliées par $k$ et l'aire par $k^{2}$.",
+      "difficulte": 2,
+      "tags": ["section-plane", "pyramide", "reduction"]
+    }
+  ]
+}

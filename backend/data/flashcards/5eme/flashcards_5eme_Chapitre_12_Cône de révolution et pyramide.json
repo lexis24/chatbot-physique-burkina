@@ -1,0 +1,323 @@
+{
+  "niveau": "5ème",
+  "chapitre": "Chapitre 12 : Cône de révolution et pyramide",
+  "source": "maths/5eme/Chapitre_12_Cone_et_pyramide",
+  "nombre_cartes": 35,
+  "cartes": [
+    {
+      "id": "5E-CH12-001",
+      "lecon": "Le cône de révolution : description et perspective",
+      "type": "definition",
+      "recto": "Comment obtient-on un cône de révolution à partir d'un triangle rectangle ?",
+      "verso": "En faisant tourner ce triangle d'un tour complet autour de l'un des deux côtés de son angle droit. Le mot « révolution » désigne précisément ce tour complet.",
+      "difficulte": 1,
+      "tags": ["cone", "definition", "revolution"]
+    },
+    {
+      "id": "5E-CH12-002",
+      "lecon": "Le cône de révolution : description et perspective",
+      "type": "definition",
+      "recto": "Quels sont les quatre éléments qui décrivent un cône de révolution ?",
+      "verso": "Une base qui est un disque de rayon $r$, un sommet $S$ unique, une hauteur $h$ qui joint le sommet au centre de la base, et une génératrice $g$ qui joint le sommet à un point du bord de la base.",
+      "difficulte": 1,
+      "tags": ["cone", "vocabulaire", "elements"]
+    },
+    {
+      "id": "5E-CH12-003",
+      "lecon": "Le cône de révolution : description et perspective",
+      "type": "definition",
+      "recto": "Dans un cône de révolution, qu'est-ce qui distingue la hauteur de la génératrice ?",
+      "verso": "La hauteur $h$ va du sommet au centre de la base, perpendiculairement à celle-ci. La génératrice $g$ va du sommet à un point du bord de la base : ce ne sont pas les mêmes longueurs.",
+      "difficulte": 2,
+      "tags": ["cone", "hauteur", "generatrice"]
+    },
+    {
+      "id": "5E-CH12-004",
+      "lecon": "Le cône de révolution : description et perspective",
+      "type": "formule",
+      "recto": "Quelles inégalités relient toujours la génératrice, la hauteur et le rayon d'un cône de révolution ?",
+      "verso": "On a toujours $g > h$ et $g > r$ : la génératrice est l'hypoténuse du triangle rectangle formé par la hauteur et le rayon, donc le plus long de ses trois côtés.",
+      "difficulte": 2,
+      "tags": ["cone", "generatrice", "comparaison"]
+    },
+    {
+      "id": "5E-CH12-005",
+      "lecon": "Le cône de révolution : description et perspective",
+      "type": "formule",
+      "recto": "Comment dessine-t-on la base d'un cône en perspective cavalière ?",
+      "verso": "On la représente par une ellipse : la moitié avant de son bord en trait plein, la moitié arrière, qui est cachée, en pointillés.",
+      "difficulte": 1,
+      "tags": ["cone", "perspective", "pointilles"]
+    },
+    {
+      "id": "5E-CH12-006",
+      "lecon": "Le cône de révolution : description et perspective",
+      "type": "formule",
+      "recto": "Que faut-il faire lorsqu'un énoncé donne le diamètre de la base d'un cône ?",
+      "verso": "Le diviser par $2$ dès la première ligne du calcul pour obtenir le rayon, car toutes les formules utilisent le rayon. Un cône de $8$ cm de diamètre a un rayon $r = 4$ cm.",
+      "difficulte": 2,
+      "tags": ["cone", "rayon", "diametre"]
+    },
+    {
+      "id": "5E-CH12-007",
+      "lecon": "Patron du cône et aire latérale",
+      "type": "definition",
+      "recto": "Qu'est-ce que le patron d'un solide ?",
+      "verso": "C'est le dessin à plat qui, découpé puis plié, redonne exactement le solide, sans manque ni recouvrement. C'est un plan de fabrication, pas un dessin approximatif.",
+      "difficulte": 1,
+      "tags": ["patron", "definition"]
+    },
+    {
+      "id": "5E-CH12-008",
+      "lecon": "Patron du cône et aire latérale",
+      "type": "definition",
+      "recto": "De quelles deux pièces le patron d'un cône de révolution est-il formé ?",
+      "verso": "Un disque de rayon $r$, qui est la base, et un secteur de disque, qui est la face latérale. Le rayon de ce secteur est la génératrice $g$, et non le rayon de la base.",
+      "difficulte": 2,
+      "tags": ["cone", "patron", "secteur"]
+    },
+    {
+      "id": "5E-CH12-009",
+      "lecon": "Patron du cône et aire latérale",
+      "type": "formule",
+      "recto": "Comment calcule-t-on l'angle du secteur du patron d'un cône de rayon $r$ et de génératrice $g$ ?",
+      "verso": "Par la règle de trois $\\alpha = 360^{\\circ} \\times r \\div g$, car l'arc du secteur doit avoir exactement la longueur du tour de la base, soit $2 \\times \\pi \\times r$.",
+      "difficulte": 2,
+      "tags": ["cone", "patron", "angle-secteur"]
+    },
+    {
+      "id": "5E-CH12-010",
+      "lecon": "Patron du cône et aire latérale",
+      "type": "formule",
+      "recto": "Pourquoi la part du disque conservée pour le secteur du patron d'un cône vaut-elle $\\dfrac{r}{g}$ ?",
+      "verso": "Le disque entier de rayon $g$ a pour tour $2 \\times \\pi \\times g$, alors que l'arc à garder ne mesure que $2 \\times \\pi \\times r$. Le facteur $2 \\times \\pi$ se simplifie, et il reste $\\dfrac{r}{g}$.",
+      "difficulte": 3,
+      "tags": ["cone", "patron", "angle-secteur"]
+    },
+    {
+      "id": "5E-CH12-011",
+      "lecon": "Patron du cône et aire latérale",
+      "type": "formule",
+      "recto": "Quelle est l'aire latérale d'un cône de rayon $r$ et de génératrice $g$ ?",
+      "verso": "Aire latérale $= \\pi \\times r \\times g$ : c'est l'aire du seul secteur du patron. En y ajoutant l'aire de la base, $\\pi \\times r \\times r$, on obtient l'aire totale.",
+      "difficulte": 1,
+      "tags": ["cone", "aire-laterale", "aire-totale"]
+    },
+    {
+      "id": "5E-CH12-012",
+      "lecon": "Patron du cône et aire latérale",
+      "type": "formule",
+      "recto": "Quel contrôle montre qu'on n'a pas inversé $r$ et $g$ en calculant l'angle du secteur d'un cône ?",
+      "verso": "Comme $g$ est toujours plus grand que $r$, l'angle trouvé doit rester inférieur à $360^{\\circ}$. Un résultat qui dépasse $360^{\\circ}$ signale que les deux longueurs ont été échangées.",
+      "difficulte": 3,
+      "tags": ["cone", "angle-secteur", "piege"]
+    },
+    {
+      "id": "5E-CH12-013",
+      "lecon": "Volume du cône",
+      "type": "formule",
+      "recto": "Quelle est la formule du volume d'un cône de révolution de rayon $r$ et de hauteur $h$ ?",
+      "verso": "$V = \\left(\\pi \\times r \\times r \\times h\\right) \\div 3$, autrement dit (aire de la base $\\times$ hauteur) $\\div 3$.",
+      "difficulte": 1,
+      "tags": ["cone", "volume", "formule"]
+    },
+    {
+      "id": "5E-CH12-014",
+      "lecon": "Volume du cône",
+      "type": "formule",
+      "recto": "Quelle fraction du cylindre de même base et de même hauteur un cône remplit-il ?",
+      "verso": "Le tiers exactement : il faut trois cônes pleins pour remplir ce cylindre. Le résultat ne dépend ni de la taille du cône ni de sa forme plus ou moins pointue.",
+      "difficulte": 2,
+      "tags": ["cone", "volume", "tiers"]
+    },
+    {
+      "id": "5E-CH12-015",
+      "lecon": "Volume du cône",
+      "type": "formule",
+      "recto": "Dans quel ordre enchaîne-t-on les trois calculs du volume d'un cône ?",
+      "verso": "On calcule l'aire de la base, $\\pi \\times r \\times r$ ; on multiplie par la hauteur $h$ ; on divise enfin par $3$, puis on écrit l'unité de volume.",
+      "difficulte": 2,
+      "tags": ["cone", "volume", "ordre"]
+    },
+    {
+      "id": "5E-CH12-016",
+      "lecon": "Volume du cône",
+      "type": "formule",
+      "recto": "Comment retrouve-t-on la hauteur d'un cône dont on connaît le volume et l'aire de la base ?",
+      "verso": "On multiplie d'abord le volume par $3$, puis on divise par l'aire de la base. Pour $V = 6{,}28$ m$^{3}$ et une base de $3{,}14$ m$^{2}$ : $\\left(3 \\times 6{,}28\\right) \\div 3{,}14 = 6$ m.",
+      "difficulte": 3,
+      "tags": ["cone", "volume", "dimension-manquante"]
+    },
+    {
+      "id": "5E-CH12-017",
+      "lecon": "Volume du cône",
+      "type": "formule",
+      "recto": "Quelle longueur du cône ne doit jamais entrer dans le calcul de son volume ?",
+      "verso": "La génératrice. Le volume se calcule avec la hauteur, qui descend du sommet au centre de la base ; la génératrice sert au patron et à l'aire latérale.",
+      "difficulte": 2,
+      "tags": ["cone", "volume", "piege"]
+    },
+    {
+      "id": "5E-CH12-018",
+      "lecon": "Volume du cône",
+      "type": "formule",
+      "recto": "Combien de centimètres cubes contient un litre ?",
+      "verso": "$1$ L $= 1$ dm$^{3} = 1\\,000$ cm$^{3}$, et $1$ m$^{3} = 1\\,000$ L. Dans un même calcul, toutes les longueurs doivent être exprimées dans la même unité.",
+      "difficulte": 2,
+      "tags": ["volume", "unites", "conversion"]
+    },
+    {
+      "id": "5E-CH12-019",
+      "lecon": "La pyramide : description et perspective",
+      "type": "definition",
+      "recto": "Quels sont les trois traits qui définissent une pyramide ?",
+      "verso": "Une base qui est un polygone, des faces latérales triangulaires en nombre égal aux côtés de la base, et un sommet unique où se rejoignent toutes ces faces latérales.",
+      "difficulte": 1,
+      "tags": ["pyramide", "definition"]
+    },
+    {
+      "id": "5E-CH12-020",
+      "lecon": "La pyramide : description et perspective",
+      "type": "definition",
+      "recto": "Comment reconnaît-on à coup sûr la base d'une pyramide, même couchée sur le côté ?",
+      "verso": "C'est la seule face qui ne contient pas le sommet. Ce n'est pas forcément la face posée sur le sol : une pyramide couchée garde la même base.",
+      "difficulte": 2,
+      "tags": ["pyramide", "base", "piege"]
+    },
+    {
+      "id": "5E-CH12-021",
+      "lecon": "La pyramide : description et perspective",
+      "type": "formule",
+      "recto": "Combien de faces, de sommets et d'arêtes possède une pyramide dont la base a $n$ côtés ?",
+      "verso": "Elle a $n$ faces latérales, donc $n + 1$ faces en tout, $n + 1$ sommets et $2n$ arêtes.",
+      "difficulte": 2,
+      "tags": ["pyramide", "comptage"]
+    },
+    {
+      "id": "5E-CH12-022",
+      "lecon": "La pyramide : description et perspective",
+      "type": "formule",
+      "recto": "Une pyramide compte $9$ faces en tout : quelle est la nature de sa base ?",
+      "verso": "On retire d'abord la base du compte : $9 - 1 = 8$ faces latérales, donc une base à $8$ côtés, c'est-à-dire un octogone.",
+      "difficulte": 2,
+      "tags": ["pyramide", "comptage", "base"]
+    },
+    {
+      "id": "5E-CH12-023",
+      "lecon": "La pyramide : description et perspective",
+      "type": "definition",
+      "recto": "A quelles conditions une pyramide est-elle régulière ?",
+      "verso": "Sa base doit être un polygone régulier et son sommet doit se trouver exactement au-dessus du centre de cette base. Ses faces latérales sont alors des triangles isocèles identiques.",
+      "difficulte": 2,
+      "tags": ["pyramide", "reguliere", "definition"]
+    },
+    {
+      "id": "5E-CH12-024",
+      "lecon": "La pyramide : description et perspective",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on l'apothème d'une pyramide régulière ?",
+      "verso": "C'est le segment qui joint le sommet au milieu d'un côté de la base, alors que l'arête latérale joint le sommet à un sommet de la base. L'apothème est la hauteur d'une face latérale.",
+      "difficulte": 2,
+      "tags": ["pyramide", "apotheme", "arete-laterale"]
+    },
+    {
+      "id": "5E-CH12-025",
+      "lecon": "La pyramide : description et perspective",
+      "type": "definition",
+      "recto": "Où se mesure la hauteur d'une pyramide ?",
+      "verso": "Du sommet au plan de la base, perpendiculairement à celui-ci. Elle est intérieure au solide, donc tracée en pointillés en perspective, et ce n'est jamais une arête latérale.",
+      "difficulte": 2,
+      "tags": ["pyramide", "hauteur", "piege"]
+    },
+    {
+      "id": "5E-CH12-026",
+      "lecon": "Patron d'une pyramide régulière et aire latérale",
+      "type": "definition",
+      "recto": "De quoi est formé le patron d'une pyramide régulière ?",
+      "verso": "De la base, qui est le polygone régulier, et d'autant de triangles isocèles identiques que la base a de côtés, chacun attaché à un côté de la base.",
+      "difficulte": 1,
+      "tags": ["pyramide", "patron", "reguliere"]
+    },
+    {
+      "id": "5E-CH12-027",
+      "lecon": "Patron d'une pyramide régulière et aire latérale",
+      "type": "formule",
+      "recto": "Sur le patron d'une pyramide régulière, quelle est la hauteur de chaque triangle latéral ?",
+      "verso": "C'est l'apothème $a$ de la pyramide. La base de ce triangle est un côté du polygone de base, et ses deux côtés égaux sont des arêtes latérales.",
+      "difficulte": 2,
+      "tags": ["pyramide", "patron", "apotheme"]
+    },
+    {
+      "id": "5E-CH12-028",
+      "lecon": "Patron d'une pyramide régulière et aire latérale",
+      "type": "formule",
+      "recto": "Comment calcule-t-on l'aire d'une face latérale d'une pyramide régulière ?",
+      "verso": "Aire d'une face $=$ (côté de la base $\\times$ apothème) $\\div 2$, puisque cette face est un triangle dont la base est un côté du polygone et la hauteur l'apothème.",
+      "difficulte": 2,
+      "tags": ["pyramide", "aire-laterale", "apotheme"]
+    },
+    {
+      "id": "5E-CH12-029",
+      "lecon": "Patron d'une pyramide régulière et aire latérale",
+      "type": "formule",
+      "recto": "Quelle formule donne l'aire latérale d'une pyramide régulière, quel que soit le nombre de côtés de sa base ?",
+      "verso": "Aire latérale $=$ (périmètre de la base $\\times$ apothème) $\\div 2$. On y ajoute l'aire de la base pour obtenir l'aire totale.",
+      "difficulte": 2,
+      "tags": ["pyramide", "aire-laterale", "formule"]
+    },
+    {
+      "id": "5E-CH12-030",
+      "lecon": "Patron d'une pyramide régulière et aire latérale",
+      "type": "formule",
+      "recto": "Quelle erreur commet l'élève qui calcule l'aire latérale d'une pyramide avec la hauteur du solide ?",
+      "verso": "Il emploie une longueur qui n'est la hauteur d'aucune face, puisqu'elle est intérieure au solide. L'aire latérale se calcule avec l'apothème, qui est plus long que cette hauteur.",
+      "difficulte": 3,
+      "tags": ["pyramide", "aire-laterale", "piege"]
+    },
+    {
+      "id": "5E-CH12-031",
+      "lecon": "Volume d'une pyramide",
+      "type": "formule",
+      "recto": "Quelle est la formule du volume d'une pyramide ?",
+      "verso": "$V =$ (aire de la base $\\times$ hauteur) $\\div 3$. Ni l'arête latérale ni l'apothème n'interviennent dans ce calcul.",
+      "difficulte": 1,
+      "tags": ["pyramide", "volume", "formule"]
+    },
+    {
+      "id": "5E-CH12-032",
+      "lecon": "Volume d'une pyramide",
+      "type": "formule",
+      "recto": "Quelle formule de volume le cône et la pyramide partagent-ils ?",
+      "verso": "La même : (aire de la base $\\times$ hauteur) $\\div 3$. Dès qu'un solide a une seule base et un sommet unique, il occupe le tiers du solide droit de même base et de même hauteur.",
+      "difficulte": 2,
+      "tags": ["volume", "cone", "pyramide", "tiers"]
+    },
+    {
+      "id": "5E-CH12-033",
+      "lecon": "Volume d'une pyramide",
+      "type": "definition",
+      "recto": "Quand la base d'une pyramide est un triangle, quelles deux hauteurs différentes l'énoncé désigne-t-il ?",
+      "verso": "La hauteur du triangle de base, couchée dans le plan du bas, qui sert à calculer l'aire de la base ; et la hauteur de la pyramide, verticale, qui sert ensuite à obtenir le volume.",
+      "difficulte": 3,
+      "tags": ["pyramide", "volume", "hauteur", "piege"]
+    },
+    {
+      "id": "5E-CH12-034",
+      "lecon": "Volume d'une pyramide",
+      "type": "formule",
+      "recto": "Quelles aires de base faut-il savoir calculer pour trouver le volume d'une pyramide ?",
+      "verso": "Carré : côté $\\times$ côté. Rectangle : Longueur $\\times$ largeur. Triangle : (base $\\times$ hauteur) $\\div 2$. Disque : $\\pi \\times r \\times r$.",
+      "difficulte": 1,
+      "tags": ["pyramide", "volume", "aire-de-base"]
+    },
+    {
+      "id": "5E-CH12-035",
+      "lecon": "Volume d'une pyramide",
+      "type": "formule",
+      "recto": "Comment retrouve-t-on l'aire de la base d'une pyramide dont on connaît le volume et la hauteur ?",
+      "verso": "On multiplie le volume par $3$, puis on divise par la hauteur. Pour $V = 256$ cm$^{3}$ et $h = 12$ cm : $3 \\times 256 = 768$, puis $768 \\div 12 = 64$ cm$^{2}$.",
+      "difficulte": 2,
+      "tags": ["pyramide", "volume", "dimension-manquante"]
+    }
+  ]
+}

@@ -1,0 +1,332 @@
+{
+  "niveau": "3ème",
+  "chapitre": "Chapitre 19 : Statistiques",
+  "source": "maths/3eme/Chapitre_19_Statistiques",
+  "nombre_cartes": 36,
+  "cartes": [
+    {
+      "id": "3E-CH19-001",
+      "lecon": "Effectifs, fréquences et lecture inverse d'un tableau",
+      "type": "definition",
+      "recto": "Dans un tableau statistique, que désignent les notations $x_i$, $n_i$ et $N$ ?",
+      "verso": "$x_i$ désigne une valeur du caractère, $n_i$ son effectif, c'est-à-dire le nombre d'individus qui prennent cette valeur, et $N$ l'effectif total, avec $N = n_1 + n_2 + \\dots + n_p$.",
+      "difficulte": 1,
+      "tags": ["statistique", "notations", "effectif"]
+    },
+    {
+      "id": "3E-CH19-002",
+      "lecon": "Effectifs, fréquences et lecture inverse d'un tableau",
+      "type": "formule",
+      "recto": "Comment calcule-t-on la fréquence d'une valeur dans une série statistique ?",
+      "verso": "On divise l'effectif de la valeur par l'effectif total : $f_i = \\dfrac{n_i}{N}$. Pour l'exprimer en pourcentage, on multiplie ensuite par $100$.",
+      "difficulte": 1,
+      "tags": ["frequence", "formule"]
+    },
+    {
+      "id": "3E-CH19-003",
+      "lecon": "Effectifs, fréquences et lecture inverse d'un tableau",
+      "type": "formule",
+      "recto": "Que vaut la somme de toutes les fréquences d'une série statistique ?",
+      "verso": "Elle vaut toujours $1$, c'est-à-dire $100\\ \\%$. C'est le contrôle à faire après avoir rempli un tableau de fréquences : si la somme ne tombe pas juste, une division est fausse.",
+      "difficulte": 1,
+      "tags": ["frequence", "controle"]
+    },
+    {
+      "id": "3E-CH19-004",
+      "lecon": "Effectifs, fréquences et lecture inverse d'un tableau",
+      "type": "formule",
+      "recto": "Connaissant la fréquence d'une valeur et l'effectif total, comment retrouve-t-on son effectif ?",
+      "verso": "On multiplie : $n_i = f_i \\times N$. Pour une fréquence de $28\\ \\%$ et un effectif total de $300$, l'effectif vaut $\\dfrac{28}{100} \\times 300 = 84$.",
+      "difficulte": 2,
+      "tags": ["lecture-inverse", "effectif", "frequence"]
+    },
+    {
+      "id": "3E-CH19-005",
+      "lecon": "Effectifs, fréquences et lecture inverse d'un tableau",
+      "type": "formule",
+      "recto": "Connaissant l'effectif d'une valeur et sa fréquence, comment retrouve-t-on l'effectif total ?",
+      "verso": "On divise : $N = \\dfrac{n_i}{f_i}$. Si $15\\ \\%$ correspondent à $45$ personnes, alors $5\\ \\%$ en représentent $15$, donc $N = 20 \\times 15 = 300$.",
+      "difficulte": 2,
+      "tags": ["lecture-inverse", "effectif-total"]
+    },
+    {
+      "id": "3E-CH19-006",
+      "lecon": "Effectifs, fréquences et lecture inverse d'un tableau",
+      "type": "definition",
+      "recto": "Qu'est-ce qui distingue un caractère quantitatif d'un caractère qualitatif ?",
+      "verso": "Un caractère est quantitatif quand ses valeurs sont des nombres, et qualitatif sinon. On ne calcule de moyenne que sur un caractère quantitatif.",
+      "difficulte": 2,
+      "tags": ["caractere", "quantitatif", "qualitatif"]
+    },
+    {
+      "id": "3E-CH19-007",
+      "lecon": "Effectifs, fréquences et lecture inverse d'un tableau",
+      "type": "definition",
+      "recto": "Pourquoi ne compare-t-on pas deux effectifs venant de deux enquêtes de tailles différentes ?",
+      "verso": "Parce que seules les proportions sont comparables. $48$ élèves à moto sur $120$ font $40\\ \\%$, tandis que $60$ sur $200$ n'en font que $30\\ \\%$ : ce sont les fréquences qui se comparent, jamais les effectifs bruts.",
+      "difficulte": 3,
+      "tags": ["frequence", "comparaison", "piege"]
+    },
+    {
+      "id": "3E-CH19-008",
+      "lecon": "Les diagrammes en bâtons, circulaires et semi-circulaires",
+      "type": "definition",
+      "recto": "Dans un diagramme en bâtons, à quoi la hauteur de chaque bâton est-elle proportionnelle ?",
+      "verso": "A l'effectif de la valeur représentée. Les bâtons sont séparés les uns des autres : ce diagramme s'emploie pour un caractère qualitatif ou pour un caractère quantitatif à valeurs isolées.",
+      "difficulte": 1,
+      "tags": ["diagramme-en-batons", "effectif"]
+    },
+    {
+      "id": "3E-CH19-009",
+      "lecon": "Les diagrammes en bâtons, circulaires et semi-circulaires",
+      "type": "formule",
+      "recto": "Dans un diagramme circulaire, comment calcule-t-on l'angle du secteur d'une valeur ?",
+      "verso": "On prend sa part du tour complet : $\\text{angle} = \\dfrac{n_i}{N} \\times 360^{\\circ}$, c'est-à-dire $f_i \\times 360^{\\circ}$. La somme des angles doit valoir $360^{\\circ}$.",
+      "difficulte": 1,
+      "tags": ["diagramme-circulaire", "angle", "formule"]
+    },
+    {
+      "id": "3E-CH19-010",
+      "lecon": "Les diagrammes en bâtons, circulaires et semi-circulaires",
+      "type": "formule",
+      "recto": "Dans un diagramme semi-circulaire, comment calcule-t-on l'angle du secteur d'une valeur ?",
+      "verso": "On partage un demi-disque : $\\text{angle} = f_i \\times 180^{\\circ}$. La somme des angles vaut alors $180^{\\circ}$, et non $360^{\\circ}$.",
+      "difficulte": 2,
+      "tags": ["diagramme-semi-circulaire", "angle"]
+    },
+    {
+      "id": "3E-CH19-011",
+      "lecon": "Les diagrammes en bâtons, circulaires et semi-circulaires",
+      "type": "formule",
+      "recto": "Sur un diagramme circulaire, comment passe-t-on d'un angle $\\alpha$ mesuré au rapporteur à l'effectif du secteur ?",
+      "verso": "On calcule d'abord la fréquence $f_i = \\dfrac{\\alpha}{360^{\\circ}}$, puis l'effectif $n_i = \\dfrac{\\alpha}{360^{\\circ}} \\times N$. Un secteur de $90^{\\circ}$ occupe le quart du disque, soit $25\\ \\%$.",
+      "difficulte": 2,
+      "tags": ["lecture-inverse", "angle", "diagramme-circulaire"]
+    },
+    {
+      "id": "3E-CH19-012",
+      "lecon": "Les diagrammes en bâtons, circulaires et semi-circulaires",
+      "type": "definition",
+      "recto": "Quand choisit-on un diagramme circulaire plutôt qu'un diagramme en bâtons ?",
+      "verso": "Quand la question porte sur des parts d'un tout, par exemple pour savoir si une valeur occupe plus ou moins de la moitié. Le diagramme en bâtons, lui, sert à comparer des quantités entre elles.",
+      "difficulte": 2,
+      "tags": ["diagramme-circulaire", "diagramme-en-batons", "choix"]
+    },
+    {
+      "id": "3E-CH19-013",
+      "lecon": "Les diagrammes en bâtons, circulaires et semi-circulaires",
+      "type": "formule",
+      "recto": "Pourquoi l'angle d'un secteur ne s'obtient-il pas en multipliant l'effectif par $360$ ?",
+      "verso": "Parce qu'il faut d'abord diviser par l'effectif total : $\\text{angle} = \\dfrac{n_i}{N} \\times 360^{\\circ}$. Un effectif de $30$ pour un total de $120$ donne $90^{\\circ}$, et non $10\\,800$ degrés.",
+      "difficulte": 3,
+      "tags": ["angle", "diagramme-circulaire", "piege"]
+    },
+    {
+      "id": "3E-CH19-014",
+      "lecon": "Le regroupement en classes et l'histogramme",
+      "type": "definition",
+      "recto": "Dans une série statistique, qu'appelle-t-on une classe ?",
+      "verso": "C'est un intervalle dans lequel on regroupe les valeurs d'un caractère quantitatif qui en prend un très grand nombre. Les classes se suivent sans trou ni recouvrement.",
+      "difficulte": 1,
+      "tags": ["classe", "regroupement"]
+    },
+    {
+      "id": "3E-CH19-015",
+      "lecon": "Le regroupement en classes et l'histogramme",
+      "type": "definition",
+      "recto": "Quelles valeurs la classe $\\left[a\\,;\\,b\\right[$ contient-elle exactement ?",
+      "verso": "Toutes les valeurs supérieures ou égales à $a$ et strictement inférieures à $b$. La borne $b$ n'appartient pas à cette classe, mais à la suivante.",
+      "difficulte": 2,
+      "tags": ["classe", "borne-ouverte"]
+    },
+    {
+      "id": "3E-CH19-016",
+      "lecon": "Le regroupement en classes et l'histogramme",
+      "type": "formule",
+      "recto": "Comment obtient-on l'amplitude et le centre d'une classe $\\left[a\\,;\\,b\\right[$ ?",
+      "verso": "L'amplitude est la différence des bornes, $b - a$ ; le centre est leur demi-somme, $\\dfrac{a+b}{2}$. Pour $\\left[40\\,;\\,50\\right[$, l'amplitude vaut $10$ et le centre $45$.",
+      "difficulte": 1,
+      "tags": ["classe", "amplitude", "centre"]
+    },
+    {
+      "id": "3E-CH19-017",
+      "lecon": "Le regroupement en classes et l'histogramme",
+      "type": "definition",
+      "recto": "Comment un histogramme représente-t-il une série groupée en classes ?",
+      "verso": "Chaque classe est représentée par un rectangle : sa largeur est l'amplitude de la classe, et sa hauteur est proportionnelle à l'effectif lorsque toutes les classes ont la même amplitude.",
+      "difficulte": 1,
+      "tags": ["histogramme", "classe"]
+    },
+    {
+      "id": "3E-CH19-018",
+      "lecon": "Le regroupement en classes et l'histogramme",
+      "type": "definition",
+      "recto": "Pourquoi les rectangles d'un histogramme sont-ils accolés, alors que les bâtons d'un diagramme en bâtons sont séparés ?",
+      "verso": "Parce que les classes se touchent : entre $40$ et $50$, toutes les valeurs intermédiaires existent. Dans un diagramme en bâtons, au contraire, les valeurs représentées sont isolées.",
+      "difficulte": 2,
+      "tags": ["histogramme", "diagramme-en-batons", "comparaison"]
+    },
+    {
+      "id": "3E-CH19-019",
+      "lecon": "Le regroupement en classes et l'histogramme",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on la classe modale d'une série groupée en classes ?",
+      "verso": "C'est la classe dont l'effectif est le plus grand, autrement dit le rectangle le plus haut de l'histogramme.",
+      "difficulte": 2,
+      "tags": ["classe-modale", "histogramme"]
+    },
+    {
+      "id": "3E-CH19-020",
+      "lecon": "Le regroupement en classes et l'histogramme",
+      "type": "definition",
+      "recto": "Comment choisit-on l'amplitude des classes quand on doit regrouper soi-même une série ?",
+      "verso": "On calcule l'étendue de la série, on décide d'un nombre de classes, en général quatre à six, et on divise l'étendue par ce nombre. Pour une étendue de $36$ cm et six classes, l'amplitude vaut $6$ cm.",
+      "difficulte": 2,
+      "tags": ["classe", "amplitude", "regroupement"]
+    },
+    {
+      "id": "3E-CH19-021",
+      "lecon": "Le regroupement en classes et l'histogramme",
+      "type": "formule",
+      "recto": "Pourquoi ne construit-on pas des classes du type $\\left[10\\,;\\,20\\right]$ puis $\\left[20\\,;\\,30\\right]$ ?",
+      "verso": "Parce que la valeur $20$ appartiendrait aux deux classes à la fois et l'on ne saurait plus où la compter. On emploie toujours la borne ouverte à droite : $\\left[10\\,;\\,20\\right[$ puis $\\left[20\\,;\\,30\\right[$.",
+      "difficulte": 3,
+      "tags": ["classe", "borne-ouverte", "piege"]
+    },
+    {
+      "id": "3E-CH19-022",
+      "lecon": "Le mode et la moyenne, y compris pour une série groupée",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on le mode d'une série statistique ?",
+      "verso": "C'est la valeur dont l'effectif est le plus grand, autrement dit la valeur la plus fréquente. Une série peut avoir plusieurs modes.",
+      "difficulte": 1,
+      "tags": ["mode", "definition"]
+    },
+    {
+      "id": "3E-CH19-023",
+      "lecon": "Le mode et la moyenne, y compris pour une série groupée",
+      "type": "formule",
+      "recto": "Comment calcule-t-on la moyenne d'une série donnée par ses valeurs et leurs effectifs ?",
+      "verso": "$\\overline{x} = \\dfrac{n_1 x_1 + n_2 x_2 + \\dots + n_p x_p}{N}$ : on multiplie chaque valeur par son effectif, on additionne ces produits, puis on divise par l'effectif total.",
+      "difficulte": 1,
+      "tags": ["moyenne", "formule"]
+    },
+    {
+      "id": "3E-CH19-024",
+      "lecon": "Le mode et la moyenne, y compris pour une série groupée",
+      "type": "formule",
+      "recto": "Comment calcule-t-on la moyenne d'une série regroupée en classes ?",
+      "verso": "On remplace chaque classe par son centre, puis on applique la formule de la moyenne pondérée avec ces centres et les effectifs des classes.",
+      "difficulte": 2,
+      "tags": ["moyenne", "classe", "centre"]
+    },
+    {
+      "id": "3E-CH19-025",
+      "lecon": "Le mode et la moyenne, y compris pour une série groupée",
+      "type": "definition",
+      "recto": "Pourquoi la moyenne d'une série regroupée en classes n'est-elle qu'une valeur approchée ?",
+      "verso": "Parce que le regroupement a fait perdre les valeurs exactes : on suppose que tous les individus d'une classe se trouvent en son centre. L'erreur reste faible tant que les classes ne sont pas trop larges.",
+      "difficulte": 3,
+      "tags": ["moyenne", "classe", "valeur-approchee"]
+    },
+    {
+      "id": "3E-CH19-026",
+      "lecon": "Le mode et la moyenne, y compris pour une série groupée",
+      "type": "formule",
+      "recto": "Entre quelles valeurs la moyenne d'une série est-elle toujours comprise ?",
+      "verso": "Entre la plus petite valeur $m$ et la plus grande valeur $M$ de la série : $m \\le \\overline{x} \\le M$. C'est un contrôle immédiat de tout calcul de moyenne.",
+      "difficulte": 2,
+      "tags": ["moyenne", "encadrement", "controle"]
+    },
+    {
+      "id": "3E-CH19-027",
+      "lecon": "Le mode et la moyenne, y compris pour une série groupée",
+      "type": "definition",
+      "recto": "Que devient la moyenne d'une série lorsqu'on y ajoute une valeur beaucoup plus grande que les autres ?",
+      "verso": "Elle est tirée vers le haut : la moyenne est sensible aux valeurs extrêmes. Une seule valeur très éloignée des autres suffit à la déplacer nettement.",
+      "difficulte": 2,
+      "tags": ["moyenne", "valeurs-extremes"]
+    },
+    {
+      "id": "3E-CH19-028",
+      "lecon": "Le mode et la moyenne, y compris pour une série groupée",
+      "type": "formule",
+      "recto": "Pourquoi la moyenne des valeurs $5$, $10$ et $15$, d'effectifs respectifs $2$, $3$ et $5$, ne vaut-elle pas $\\dfrac{5 + 10 + 15}{3}$ ?",
+      "verso": "Parce que chaque valeur doit être comptée autant de fois qu'elle apparaît. La moyenne vaut $\\dfrac{10 + 30 + 75}{10} = 11{,}5$, et non $10$.",
+      "difficulte": 3,
+      "tags": ["moyenne", "ponderation", "piege"]
+    },
+    {
+      "id": "3E-CH19-029",
+      "lecon": "Effectifs cumulés, médiane et étendue",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on l'effectif cumulé croissant d'une valeur ?",
+      "verso": "C'est le nombre d'individus dont la valeur est inférieure ou égale à celle-ci. On l'obtient en additionnant les effectifs de proche en proche, dans l'ordre croissant des valeurs ; le dernier cumul vaut l'effectif total $N$.",
+      "difficulte": 1,
+      "tags": ["effectif-cumule", "definition"]
+    },
+    {
+      "id": "3E-CH19-030",
+      "lecon": "Effectifs cumulés, médiane et étendue",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on la fréquence cumulée croissante d'une valeur ?",
+      "verso": "C'est l'effectif cumulé croissant de cette valeur divisé par l'effectif total $N$. La dernière fréquence cumulée vaut $1$, c'est-à-dire $100\\ \\%$.",
+      "difficulte": 2,
+      "tags": ["frequence-cumulee", "definition"]
+    },
+    {
+      "id": "3E-CH19-031",
+      "lecon": "Effectifs cumulés, médiane et étendue",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on la médiane d'une série statistique ?",
+      "verso": "C'est une valeur qui partage la série ordonnée en deux groupes de même effectif : au moins la moitié des valeurs lui sont inférieures ou égales, au moins la moitié lui sont supérieures ou égales.",
+      "difficulte": 2,
+      "tags": ["mediane", "definition"]
+    },
+    {
+      "id": "3E-CH19-032",
+      "lecon": "Effectifs cumulés, médiane et étendue",
+      "type": "formule",
+      "recto": "Lorsque l'effectif total $N$ est impair, quel est le rang de la médiane dans la série ordonnée ?",
+      "verso": "C'est le rang $\\dfrac{N+1}{2}$. Pour $N = 25$, la médiane est donc la treizième valeur de la série rangée dans l'ordre croissant.",
+      "difficulte": 2,
+      "tags": ["mediane", "rang", "effectif-impair"]
+    },
+    {
+      "id": "3E-CH19-033",
+      "lecon": "Effectifs cumulés, médiane et étendue",
+      "type": "formule",
+      "recto": "Lorsque l'effectif total $N$ est pair, comment détermine-t-on la médiane ?",
+      "verso": "On prend la demi-somme des valeurs de rangs $\\dfrac{N}{2}$ et $\\dfrac{N}{2} + 1$. Pour $N = 10$, la médiane est la demi-somme des valeurs de rangs $5$ et $6$.",
+      "difficulte": 2,
+      "tags": ["mediane", "rang", "effectif-pair"]
+    },
+    {
+      "id": "3E-CH19-034",
+      "lecon": "Effectifs cumulés, médiane et étendue",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on l'étendue d'une série statistique ?",
+      "verso": "C'est la différence entre la plus grande et la plus petite valeur de la série. Pour $12$ ; $5$ ; $18$ ; $9$ ; $21$, l'étendue vaut $21 - 5 = 16$, et non $21$.",
+      "difficulte": 1,
+      "tags": ["etendue", "definition"]
+    },
+    {
+      "id": "3E-CH19-035",
+      "lecon": "Effectifs cumulés, médiane et étendue",
+      "type": "definition",
+      "recto": "Qu'est-ce qui distingue la moyenne de la médiane d'une série ?",
+      "verso": "La moyenne se calcule, la médiane se repère sur la série ordonnée. Surtout, la moyenne est tirée par les valeurs extrêmes, alors que la médiane leur résiste et indique la situation de celui qui se trouve au milieu.",
+      "difficulte": 3,
+      "tags": ["moyenne", "mediane", "comparaison"]
+    },
+    {
+      "id": "3E-CH19-036",
+      "lecon": "Effectifs cumulés, médiane et étendue",
+      "type": "formule",
+      "recto": "Quel geste faut-il accomplir avant de chercher la médiane d'une série donnée en vrac ?",
+      "verso": "Il faut ranger la série dans l'ordre croissant. La médiane n'est pas la valeur écrite au milieu de la liste : pour $8$ ; $3$ ; $12$ ; $5$ ; $9$, elle vaut $8$ et non $12$.",
+      "difficulte": 3,
+      "tags": ["mediane", "ordonner", "piege"]
+    }
+  ]
+}

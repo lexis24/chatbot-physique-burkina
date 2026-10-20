@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Fiche de revision - 2nde C - Chapitre 9 : Geometrie plane</title>
+<style>
+/* ===================================================================
+   FICHE DE REVISION, Collection Hakili Lab, Edition 2026
+   Feuille de style autonome, format A4 pret a imprimer.
+   Bleu #005CB9 · Vert #49A145
+   =================================================================== */
+:root{
+  --bleu:#005CB9; --bleu-fonce:#00429A; --bleu-pale:#E8F1FB; --bleu-bord:#B7D2EE;
+  --vert:#49A145; --vert-fonce:#2F7A2C; --vert-pale:#EDF7EC; --vert-bord:#BCE0B9;
+  --gris:#4A4A4A; --gris-clair:#E4E4E4; --rouge:#B3261E;
+}
+@page{
+  size:A4; margin:15mm;
+  @bottom-center{
+    content:"Collection Hakili Lab, Edition 2026  ·  Fiche de revision  ·  " counter(page) "/" counter(pages);
+    font-family:"Segoe UI",Calibri,Arial,sans-serif; font-size:6.6pt; color:#8A8A8A;
+  }
+}
+*{box-sizing:border-box;}
+body{
+  margin:0; font-family:"Segoe UI",Calibri,Arial,sans-serif;
+  font-size:8.4pt; line-height:1.26; color:#1B1B1B;
+}
+p{margin:0 0 3pt;}
+ul{margin:0 0 3pt; padding-left:11pt;}
+li{margin:0 0 1.2pt;}
+b,strong{color:var(--bleu-fonce);}
+
+/* ------------------------------ ENTETE ---------------------------- */
+.entete{
+  display:flex; align-items:stretch; border:1.6pt solid var(--bleu);
+  border-radius:2.5pt; overflow:hidden; margin-bottom:6pt;
+}
+.entete .num{
+  background:var(--bleu); color:#fff; font-size:20pt; font-weight:700;
+  padding:0 8pt; display:flex; align-items:center; justify-content:center; min-width:34pt;
+}
+.entete .txt{padding:3.5pt 8pt; flex:1;}
+.entete .niveau{
+  font-size:7pt; font-weight:700; letter-spacing:.9pt; color:var(--vert-fonce);
+}
+.entete h1{margin:0; font-size:13.5pt; line-height:1.12; color:var(--bleu-fonce); font-weight:700;}
+.entete .sous{font-size:7pt; color:var(--gris); margin-top:1pt;}
+
+/* --------------------------- BANDEAUX ----------------------------- */
+.bandeau{
+  color:#fff; font-weight:700; font-size:9pt; letter-spacing:1pt;
+  padding:2.4pt 7pt; border-radius:2pt; margin:3pt 0 4pt; break-after:avoid; page-break-after:avoid;
+}
+.bandeau.bleu{background:var(--bleu);}
+.bandeau.vert{background:var(--vert);}
+
+/* --------------------------- COLONNES ----------------------------- */
+.cols{column-count:2; column-gap:7mm; column-fill:balance;}
+
+.cols.bal{column-fill:balance;}
+.bloc{margin-bottom:5pt;}
+.keep{break-inside:avoid; page-break-inside:avoid;}
+
+/* --------------------------- LECONS ------------------------------- */
+h2.lecon{
+  margin:0 0 3pt; font-size:8.6pt; font-weight:700; color:#fff; background:var(--bleu-fonce);
+  padding:1.8pt 5pt; border-radius:1.5pt; break-after:avoid; page-break-after:avoid;
+}
+h3.rub{
+  margin:3.5pt 0 1.5pt; font-size:8.2pt; font-weight:700; color:var(--vert-fonce);
+  border-bottom:.7pt solid var(--vert-bord); padding-bottom:.8pt;
+  break-after:avoid; page-break-after:avoid;
+}
+
+/* --------------------------- ENCADRES ----------------------------- */
+.form{
+  background:var(--bleu-pale); border:.8pt solid var(--bleu-bord); border-left:2.6pt solid var(--bleu);
+  border-radius:2pt; padding:2.4pt 5pt; margin:2.2pt 0 3.4pt;
+  break-inside:avoid; page-break-inside:avoid;
+}
+.form .t{
+  display:block; font-size:6.8pt; font-weight:700; letter-spacing:.6pt;
+  color:var(--bleu); margin-bottom:1.5pt;
+}
+.form .c{text-align:center; font-size:9.1pt; margin:1.6pt 0;}
+.note{background:var(--vert-pale); border-left:2.4pt solid var(--vert); padding:2.4pt 5pt; border-radius:1.5pt; margin:2.5pt 0 4pt; break-inside:avoid;}
+
+/* --------------------------- TABLEAUX ----------------------------- */
+table{width:100%; border-collapse:collapse; font-size:7.6pt; margin:2pt 0 4pt; break-inside:avoid;}
+th{background:var(--bleu); color:#fff; font-weight:700; text-align:left; padding:1.8pt 4pt; font-size:7.2pt;}
+td{border:.6pt solid var(--gris-clair); padding:1.8pt 4pt; vertical-align:top;}
+tr{break-inside:avoid;}
+table.var td{text-align:center; font-size:8pt;}
+table.var td.lab{text-align:left; font-weight:700; color:var(--bleu-fonce); background:var(--bleu-pale);}
+
+/* ----------------------------- PIEGES ----------------------------- */
+table.pieges th:first-child{width:44%;}
+table.pieges td:first-child{color:var(--rouge); background:#FDF1F0;}
+.x{font-weight:700;}
+.v{color:var(--vert-fonce); font-weight:700;}
+
+/* ---------------------------- RECAP ------------------------------- */
+ol.recap{margin:0; padding-left:0; list-style:none; counter-reset:r;}
+ol.recap li{
+  counter-increment:r; position:relative; padding-left:13pt; margin-bottom:1.8pt;
+  break-inside:avoid;
+}
+ol.recap li::before{
+  content:counter(r); position:absolute; left:0; top:.3pt;
+  width:10pt; height:10pt; border-radius:50%; background:var(--vert); color:#fff;
+  font-size:6.6pt; font-weight:700; text-align:center; line-height:10pt;
+}
+
+/* --------------------------- MATHS -------------------------------- */
+.m{font-family:Cambria,Georgia,"Times New Roman",serif;}
+i,var{font-family:Cambria,Georgia,"Times New Roman",serif; font-style:italic;}
+.op{font-family:Cambria,Georgia,"Times New Roman",serif; font-style:normal;}
+.f{display:inline-block; vertical-align:middle; text-align:center;
+   margin:0 .12em; line-height:1.06; font-family:Cambria,Georgia,"Times New Roman",serif;}
+.f>span{display:block; padding:0 .2em;}
+.f>span:first-child{border-bottom:.6pt solid currentColor; padding-bottom:.08em;}
+.f>span:last-child{padding-top:.04em;}
+.rad{border-top:.6pt solid currentColor; padding-top:.12em;}
+/* line-height:0 evite que l'exposant n'ecarte les lignes ; position:relative le
+   repositionne sans qu'il heurte la barre de fraction ni le trait du radical. */
+sup,sub{font-size:.68em; line-height:0; position:relative; vertical-align:baseline;}
+sup{top:-.42em;}
+sub{bottom:-.22em;}
+.pt{white-space:nowrap;}
+/* Les fleches n'ont qu'un glyphe atrophie dans la fonte serif : on les force
+   en sans-serif, ou elles sont franches meme a 8 pt. */
+.ar{font-family:"Segoe UI",Calibri,Arial,"DejaVu Sans",sans-serif; font-style:normal;}
+
+/* ------------------- PIEGES : blocs erreur / correction ------------- */
+.pg{font-size:8.1pt; border-left:2.4pt solid var(--rouge); background:#FDF1F0; border-radius:1.5pt;
+    padding:2pt 5pt; margin:0 0 2.8pt; break-inside:avoid; page-break-inside:avoid;}
+.pg .err{color:var(--rouge); font-weight:600;}
+.pg .cor{color:#1B1B1B; margin-top:.8pt;}
+.pg .cor b{color:var(--bleu-fonce);}
+.v{color:var(--vert-fonce); font-weight:700;}
+
+</style>
+</head>
+<body>
+<header class="entete">
+  <div class="num">9</div>
+  <div class="txt">
+    <div class="niveau">2NDE C &middot; MATHEMATIQUES</div>
+    <h1>Géométrie plane</h1>
+    <div class="sous">Leçons&nbsp;: <b>A.</b> 1 : vecteur directeur &middot; 2 : représentation paramétrique &middot; 3 : équation cartésienne &middot; 4 : parallélisme et orthogonalité &nbsp;|&nbsp; <b>B.</b> 5 : barycentre de deux points &middot; 6 : trois ou quatre points, associativité &middot; 7 : utilisation &nbsp;|&nbsp; <b>C.</b> 8 : équation d'un cercle et intersection avec une droite &middot; 9 : orientation du plan et mesure principale &middot; 10 : propriétés des angles orientés</div>
+  </div>
+</header>
+
+<div class="bandeau bleu" style="margin-top:0">L'ESSENTIEL</div>
+<div class="cols">
+
+<!-- ===================== PARTIE A / LECON 1 ===================== -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 1&nbsp;: Vecteur directeur d'une droite <span style="font-weight:400;font-size:6.8pt;letter-spacing:.5pt">&#8226; PARTIE A : DROITES DANS UN REPERE</span></h2>
+<p>Un <b>vecteur directeur</b> de (<i>D</i>) est un vecteur <b>non nul</b> de <b>même direction</b> que (<i>D</i>). Si <i>A</i> et <i>B</i> sont deux points distincts de (<i>D</i>), alors <span style="border-top:.6pt solid;padding-top:.5pt"><i>AB</i></span> en est un.</p></div>
+<ul>
+<li>Il y en a une <b>infinité</b>, tous <b>colinéaires</b> : si <span style="border-top:.6pt solid;padding-top:.5pt"><i>u</i></span> dirige (<i>D</i>), <i>k</i><span style="border-top:.6pt solid;padding-top:.5pt"><i>u</i></span> aussi pour tout <i>k</i>&#8239;&#8800;&#8239;0 ; on dit <b>un</b> vecteur directeur, jamais « le ».</li>
+<li><i>M</i> est sur la droite passant par <i>A</i> et dirigée par <span style="border-top:.6pt solid;padding-top:.5pt"><i>u</i></span> <b><span class="ar">&#8660;</span></b> <span style="border-top:.6pt solid;padding-top:.5pt"><i>AM</i></span> et <span style="border-top:.6pt solid;padding-top:.5pt"><i>u</i></span> <b>colinéaires</b> (déterminant nul).</li>
+</ul>
+<div class="form">
+  <span class="t">LIRE UN VECTEUR DIRECTEUR SUR UNE EQUATION</span>
+  <div class="c m"><i>y</i>&#8239;=&#8239;<i>mx</i>&#8239;+&#8239;<i>p</i>&nbsp;&nbsp;<span class="ar">&#8594;</span>&nbsp;&nbsp;<span style="border-top:.6pt solid;padding-top:.5pt"><i>u</i></span>(1&#8239;;&#8239;<i>m</i>)</div>
+  <div class="c m"><i>ax</i>&#8239;+&#8239;<i>by</i>&#8239;+&#8239;<i>c</i>&#8239;=&#8239;0&nbsp;&nbsp;<span class="ar">&#8594;</span>&nbsp;&nbsp;<span style="border-top:.6pt solid;padding-top:.5pt"><i>u</i></span>(&#8722;<i>b</i>&#8239;;&#8239;<i>a</i>) <b>directeur</b>, <span style="border-top:.6pt solid;padding-top:.5pt"><i>n</i></span>(<i>a</i>&#8239;;&#8239;<i>b</i>) <b>normal</b> (&#8869;)</div>
+</div>
+<div class="note"><b>Droites verticales.</b> <i>x</i>&#8239;=&#8239;<i>k</i> n'a <b>pas</b> de coefficient directeur, mais possède un vecteur directeur, (0&#8239;;&#8239;1), et une équation cartésienne, <span class="pt"><i>x</i>&#8239;&#8722;&#8239;<i>k</i>&#8239;=&#8239;0</span>.</div>
+</div>
+
+<!-- ===================== LECON 2 ===================== -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 2&nbsp;: Représentation paramétrique d'une droite</h2>
+<p>(<i>D</i>) passe par <i>A</i>(<i>x<sub>A</sub></i>&#8239;;&#8239;<i>y<sub>A</sub></i>) et est dirigée par <span style="border-top:.6pt solid;padding-top:.5pt"><i>u</i></span>(&#945;&#8239;;&#8239;&#946;) : <span class="pt"><i>M</i>(<i>x</i>&#8239;;&#8239;<i>y</i>)&#8239;&#8712;&#8239;(<i>D</i>)</span> <span class="ar">&#8660;</span> il existe un réel <i>t</i> tel que <span class="pt"><span style="border-top:.6pt solid;padding-top:.5pt"><i>AM</i></span>&#8239;=&#8239;<i>t</i><span style="border-top:.6pt solid;padding-top:.5pt"><i>u</i></span></span>.</p></div>
+<div class="form">
+  <span class="t">REPRESENTATION PARAMETRIQUE DE (<i>D</i>)</span>
+  <div class="c m"><i>x</i>&#8239;=&#8239;<i>x<sub>A</sub></i>&#8239;+&#8239;<i>t</i>&#945;&nbsp;&nbsp;et&nbsp;&nbsp;<i>y</i>&#8239;=&#8239;<i>y<sub>A</sub></i>&#8239;+&#8239;<i>t</i>&#946;&nbsp;&nbsp;&nbsp;avec <i>t</i>&#8239;&#8712;&#8239;&#8477;</div>
+</div>
+<ul>
+<li><i>t</i> est le <b>paramètre</b> : à chaque <i>t</i> un <b>seul</b> point de (<i>D</i>), et réciproquement ; <i>t</i>&#8239;=&#8239;0 donne <i>A</i>. La mention <b><i>t</i>&#8239;&#8712;&#8239;&#8477;</b> fait partie de la réponse.</li>
+<li>Une même droite en a une <b>infinité</b>, selon <i>A</i> et <span style="border-top:.6pt solid;padding-top:.5pt"><i>u</i></span> choisis.</li>
+<li><b>Tester un point</b> : résoudre la <b>première</b> équation en <i>t</i>, reporter dans la <b>seconde</b>, comparer à l'ordonnée (si &#945;&#8239;=&#8239;0, commencer par la seconde).</li>
+</ul>
+</div>
+
+<!-- ===================== LECON 3 ===================== -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 3&nbsp;: Equation cartésienne d'une droite</h2>
+<div class="form">
+  <span class="t">EQUATION CARTESIENNE&nbsp;: avec (<i>a</i>&#8239;;&#8239;<i>b</i>)&#8239;&#8800;&#8239;(0&#8239;;&#8239;0)</span>
+  <div class="c m"><i>ax</i>&#8239;+&#8239;<i>by</i>&#8239;+&#8239;<i>c</i>&#8239;=&#8239;0</div>
+</div></div>
+<p>Toute droite en admet une ; <i>M</i> lui appartient <span class="ar">&#8660;</span> ses coordonnées la vérifient. Réciproquement, toute équation de cette forme est celle d'une droite, de <b>directeur</b> <span style="border-top:.6pt solid;padding-top:.5pt"><i>u</i></span>(&#8722;<i>b</i>&#8239;;&#8239;<i>a</i>) et de <b>normal</b> <span style="border-top:.6pt solid;padding-top:.5pt"><i>n</i></span>(<i>a</i>&#8239;;&#8239;<i>b</i>).</p>
+<ul>
+<li>Une même droite en a une <b>infinité</b>, toutes <b>proportionnelles</b> : <span class="pt"><i>x</i>&#8239;&#8722;&#8239;2<i>y</i>&#8239;+&#8239;3&#8239;=&#8239;0</span> et <span class="pt">2<i>x</i>&#8239;&#8722;&#8239;4<i>y</i>&#8239;+&#8239;6&#8239;=&#8239;0</span> sont la même droite.</li>
+<li><i>b</i>&#8239;=&#8239;0 : droite <b>verticale</b> ; <i>a</i>&#8239;=&#8239;0 : droite <b>horizontale</b>. Si <i>b</i>&#8239;&#8800;&#8239;0, on isole <i>y</i> et l'on obtient la forme réduite, de coefficient directeur <span class="pt"><i>m</i>&#8239;=&#8239;&#8722;<span class="f"><span><i>a</i></span><span><i>b</i></span></span></span>.</li>
+</ul>
+<div class="form">
+  <span class="t">PAR LE DETERMINANT&nbsp;: droite par <i>A</i>(<i>x<sub>A</sub></i>&#8239;;&#8239;<i>y<sub>A</sub></i>), de directeur <span style="border-top:.6pt solid;padding-top:.5pt"><i>u</i></span>(&#945;&#8239;;&#8239;&#946;)</span>
+  <div class="c m">det(<span style="border-top:.6pt solid;padding-top:.5pt"><i>AM</i></span>&#8239;;&#8239;<span style="border-top:.6pt solid;padding-top:.5pt"><i>u</i></span>)&#8239;=&#8239;0&nbsp;<span class="ar">&#8660;</span>&nbsp;&#946;(<i>x</i>&#8239;&#8722;&#8239;<i>x<sub>A</sub></i>)&#8239;&#8722;&#8239;&#945;(<i>y</i>&#8239;&#8722;&#8239;<i>y<sub>A</sub></i>)&#8239;=&#8239;0</div>
+</div>
+<div class="note"><b>Changer de forme.</b> Paramétrique <span class="ar">&#8594;</span> cartésienne : on <b>élimine</b> <i>t</i>. Cartésienne <span class="ar">&#8594;</span> paramétrique : on lit un point et <span style="border-top:.6pt solid;padding-top:.5pt"><i>u</i></span>(&#8722;<i>b</i>&#8239;;&#8239;<i>a</i>), puis on écrit le système.</div>
+</div>
+
+<!-- ===================== LECON 4 ===================== -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 4&nbsp;: Parallélisme et orthogonalité de deux droites</h2>
+<div class="form">
+  <span class="t">CRITERES&nbsp;: <span style="border-top:.6pt solid;padding-top:.5pt"><i>u</i></span> et <span style="border-top:.6pt solid;padding-top:.5pt"><i>u&#8242;</i></span> dirigent (<i>D</i>) et (<i>D</i>&#8242;)</span>
+  <div class="c m">(<i>D</i>)&#8239;&#8741;&#8239;(<i>D</i>&#8242;)&nbsp;<span class="ar">&#8660;</span>&nbsp;<span style="border-top:.6pt solid;padding-top:.5pt"><i>u</i></span> et <span style="border-top:.6pt solid;padding-top:.5pt"><i>u&#8242;</i></span> colinéaires&nbsp;<span class="ar">&#8660;</span>&nbsp;det(<span style="border-top:.6pt solid;padding-top:.5pt"><i>u</i></span>&#8239;;&#8239;<span style="border-top:.6pt solid;padding-top:.5pt"><i>u&#8242;</i></span>)&#8239;=&#8239;0</div>
+  <div class="c m">(<i>D</i>)&#8239;&#8869;&#8239;(<i>D</i>&#8242;)&nbsp;<span class="ar">&#8660;</span>&nbsp;<span style="border-top:.6pt solid;padding-top:.5pt"><i>u</i></span>&#8239;&#183;&#8239;<span style="border-top:.6pt solid;padding-top:.5pt"><i>u&#8242;</i></span>&#8239;=&#8239;0&nbsp;&nbsp;<span style="font-size:7.4pt">(repère <b>orthonormé</b>)</span></div>
+</div></div>
+<p>En équations réduites : parallèles <span class="ar">&#8660;</span> <i>m</i>&#8239;=&#8239;<i>m</i>&#8242; ; perpendiculaires <span class="ar">&#8660;</span> <span class="pt"><i>m</i>&#8239;&#215;&#8239;<i>m</i>&#8242;&#8239;=&#8239;&#8722;1</span>, mais <b>seulement si les deux coefficients existent</b> ; le critère vectoriel, lui, est sans exception.</p>
+<h3 class="rub">Position relative : trois cas, et trois seulement</h3>
+<table>
+<tr><th>Cas</th><th>Reconnaissance</th><th>Points communs</th></tr>
+<tr><td><b>Sécantes</b></td><td class="m">det(<span style="border-top:.6pt solid;padding-top:.5pt"><i>u</i></span>&#8239;;&#8239;<span style="border-top:.6pt solid;padding-top:.5pt"><i>u&#8242;</i></span>)&#8239;&#8800;&#8239;0</td><td>un seul : solution du système</td></tr>
+<tr><td><b>Strict. parallèles</b></td><td>colinéaires, équations <b>non</b> proportionnelles</td><td>aucun</td></tr>
+<tr><td><b>Confondues</b></td><td>équations <b>proportionnelles</b></td><td>tous</td></tr>
+</table>
+<p>Parallélisme établi : on <b>teste un point</b> de la première dans la seconde ; s'il la vérifie, elles sont <b>confondues</b>, sinon <b>strictement parallèles</b>.</p>
+<div class="note"><b>Par un point <i>P</i>.</b> Parallèle à <span class="pt"><i>ax</i>&#8239;+&#8239;<i>by</i>&#8239;+&#8239;<i>c</i>&#8239;=&#8239;0</span> : <span class="pt"><i>ax</i>&#8239;+&#8239;<i>by</i>&#8239;+&#8239;<i>k</i>&#8239;=&#8239;0</span> (<b>mêmes</b> <i>a</i> et <i>b</i>) ; perpendiculaire : <span class="pt">&#8722;<i>bx</i>&#8239;+&#8239;<i>ay</i>&#8239;+&#8239;<i>k</i>&#8242;&#8239;=&#8239;0</span>. On trouve <i>k</i> avec les coordonnées de <i>P</i>.</div>
+</div>
+
+<!-- ===================== PARTIE B / LECON 5 ===================== -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 5&nbsp;: Barycentre de deux points pondérés <span style="font-weight:400;font-size:6.8pt;letter-spacing:.5pt">&#8226; PARTIE B : BARYCENTRE</span></h2>
+<p>Un <b>point pondéré</b> est un couple (<i>A</i>&#8239;;&#8239;<i>a</i>) : le réel <i>a</i> est le <b>coefficient</b>.</p></div>
+<div class="form">
+  <span class="t">DEFINITION&nbsp;: sous la condition <i>a</i>&#8239;+&#8239;<i>b</i>&#8239;&#8800;&#8239;0</span>
+  <div class="c m"><i>a</i>&#8239;<span style="border-top:.6pt solid;padding-top:.5pt"><i>GA</i></span>&#8239;+&#8239;<i>b</i>&#8239;<span style="border-top:.6pt solid;padding-top:.5pt"><i>GB</i></span>&#8239;=&#8239;<span style="border-top:.6pt solid;padding-top:.5pt">0</span></div>
+</div>
+<p>Il existe alors un <b>unique</b> point <i>G</i> : le <b>barycentre</b> de (<i>A</i>&#8239;;&#8239;<i>a</i>) et (<i>B</i>&#8239;;&#8239;<i>b</i>). Si <span class="pt"><i>a</i>&#8239;+&#8239;<i>b</i>&#8239;=&#8239;0</span>, il <b>n'existe pas</b>. Si <i>a</i>&#8239;=&#8239;<i>b</i>, c'est le <b>milieu</b> de [<i>AB</i>], dit <b>isobarycentre</b>.</p>
+<div class="form">
+  <span class="t">COORDONNEES ET POSITION DE <i>G</i></span>
+  <div class="c m"><i>x<sub>G</sub></i>&#8239;=&#8239;<span class="f"><span><i>a x<sub>A</sub></i>&#8239;+&#8239;<i>b x<sub>B</sub></i></span><span><i>a</i>&#8239;+&#8239;<i>b</i></span></span>&nbsp;&nbsp;&nbsp;<i>y<sub>G</sub></i>&#8239;=&#8239;<span class="f"><span><i>a y<sub>A</sub></i>&#8239;+&#8239;<i>b y<sub>B</sub></i></span><span><i>a</i>&#8239;+&#8239;<i>b</i></span></span>&nbsp;&nbsp;&nbsp;<span style="border-top:.6pt solid;padding-top:.5pt"><i>AG</i></span>&#8239;=&#8239;<span class="f"><span><i>b</i></span><span><i>a</i>&#8239;+&#8239;<i>b</i></span></span>&#8239;<span style="border-top:.6pt solid;padding-top:.5pt"><i>AB</i></span></div>
+</div>
+<ul>
+<li>Coordonnées de <i>G</i> = <b>moyennes pondérées</b> de celles de <i>A</i> et <i>B</i> ; <i>G</i> est toujours sur la <b>droite (<i>AB</i>)</b>, et sur le <b>segment</b> [<i>AB</i>] si <i>a</i> et <i>b</i> sont de <b>même signe</b>.</li>
+<li><i>G</i> est <b>inchangé</b> si l'on multiplie les deux coefficients par un même réel non nul.</li>
+</ul>
+</div>
+
+<!-- ===================== LECON 6 ===================== -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 6&nbsp;: Barycentre de trois et quatre points ; associativité</h2>
+<div class="form">
+  <span class="t">TROIS POINTS&nbsp;: sous la condition <i>a</i>&#8239;+&#8239;<i>b</i>&#8239;+&#8239;<i>c</i>&#8239;&#8800;&#8239;0</span>
+  <div class="c m"><i>a</i>&#8239;<span style="border-top:.6pt solid;padding-top:.5pt"><i>GA</i></span>&#8239;+&#8239;<i>b</i>&#8239;<span style="border-top:.6pt solid;padding-top:.5pt"><i>GB</i></span>&#8239;+&#8239;<i>c</i>&#8239;<span style="border-top:.6pt solid;padding-top:.5pt"><i>GC</i></span>&#8239;=&#8239;<span style="border-top:.6pt solid;padding-top:.5pt">0</span></div>
+  <div class="c m"><i>x<sub>G</sub></i>&#8239;=&#8239;<span class="f"><span><i>a x<sub>A</sub></i>&#8239;+&#8239;<i>b x<sub>B</sub></i>&#8239;+&#8239;<i>c x<sub>C</sub></i></span><span><i>a</i>&#8239;+&#8239;<i>b</i>&#8239;+&#8239;<i>c</i></span></span>&nbsp;&nbsp;<span style="font-size:7.4pt">(de même pour <i>y<sub>G</sub></i>)</span></div>
+</div></div>
+<ul>
+<li>Tout s'étend à <b>quatre</b> points pondérés, sous la condition <span class="pt"><i>a</i>&#8239;+&#8239;<i>b</i>&#8239;+&#8239;<i>c</i>&#8239;+&#8239;<i>d</i>&#8239;&#8800;&#8239;0</span> ; pas au-delà.</li>
+<li>Coefficients tous égaux : <i>G</i> est l'<b>isobarycentre</b> ; celui de trois points <b>non alignés</b> est le <b>centre de gravité</b> du triangle.</li>
+</ul>
+<div class="form">
+  <span class="t">ASSOCIATIVITE (admise)&nbsp;: <i>G</i> barycentre de (<i>A</i>&#8239;;&#8239;<i>a</i>), (<i>B</i>&#8239;;&#8239;<i>b</i>), (<i>C</i>&#8239;;&#8239;<i>c</i>)</span>
+  <div class="c m">si <i>a</i>&#8239;+&#8239;<i>b</i>&#8239;&#8800;&#8239;0 et si <i>I</i> est le barycentre de (<i>A</i>&#8239;;&#8239;<i>a</i>) et (<i>B</i>&#8239;;&#8239;<i>b</i>),</div>
+  <div class="c m">alors <i>G</i> est le barycentre de (<i>I</i>&#8239;;&#8239;<i>a</i>&#8239;+&#8239;<i>b</i>) et (<i>C</i>&#8239;;&#8239;<i>c</i>)</div>
+</div>
+<p>On <b>remplace donc deux points par leur barycentre partiel</b>, affecté de la <b>somme</b> de leurs coefficients : trois points se ramènent à deux.</p>
+</div>
+
+<!-- ===================== LECON 7 ===================== -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 7&nbsp;: Utilisation du barycentre</h2>
+<ul>
+<li><b>Alignement.</b> Tout barycentre de (<i>A</i>&#8239;;&#8239;<i>a</i>) et (<i>B</i>&#8239;;&#8239;<i>b</i>) est sur (<i>AB</i>), et réciproquement tout point de (<i>AB</i>) en est un, pour des coefficients bien choisis.</li>
+<li><b>Partage d'un segment.</b> Si <span class="pt"><span style="border-top:.6pt solid;padding-top:.5pt"><i>AG</i></span>&#8239;=&#8239;<i>k</i>&#8239;<span style="border-top:.6pt solid;padding-top:.5pt"><i>AB</i></span></span> avec <span class="pt">0&#8239;&lt;&#8239;<i>k</i>&#8239;&lt;&#8239;1</span>, alors <i>G</i> est le barycentre de <span class="pt">(<i>A</i>&#8239;;&#8239;1&#8239;&#8722;&#8239;<i>k</i>)</span> et (<i>B</i>&#8239;;&#8239;<i>k</i>).</li>
+<li><b>Centre de gravité.</b> Isobarycentre des trois sommets, sur chaque <b>médiane</b> aux <b>deux tiers</b> depuis le sommet.</li>
+<li><b>Concours de droites.</b> On construit un point candidat, puis on montre qu'il est sur les trois droites.</li>
+</ul></div>
+<div class="form">
+  <span class="t">REDUCTION&nbsp;: <i>G</i> barycentre de (<i>A</i>&#8239;;&#8239;<i>a</i>) et (<i>B</i>&#8239;;&#8239;<i>b</i>), <i>a</i>&#8239;+&#8239;<i>b</i>&#8239;&#8800;&#8239;0</span>
+  <div class="c m"><i>a MA</i><sup>2</sup>&#8239;+&#8239;<i>b MB</i><sup>2</sup>&#8239;=&#8239;(<i>a</i>&#8239;+&#8239;<i>b</i>)<i>MG</i><sup>2</sup>&#8239;+&#8239;<i>a GA</i><sup>2</sup>&#8239;+&#8239;<i>b GB</i><sup>2</sup></div>
+</div>
+<p>Valable pour <b>tout</b> point <i>M</i> : l'ensemble des <i>M</i> tels que <span class="pt"><i>a MA</i><sup>2</sup>&#8239;+&#8239;<i>b MB</i><sup>2</sup>&#8239;=&#8239;<i>k</i></span> est un <b>cercle de centre <i>G</i></b>, un point, ou vide. Pour <i>a</i>&#8239;=&#8239;<i>b</i>&#8239;=&#8239;1, <i>G</i> est le milieu de [<i>AB</i>] : théorème de la médiane.</p>
+</div>
+
+<!-- ===================== PARTIE C / LECON 8 ===================== -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 8&nbsp;: Equation d'un cercle et intersection avec une droite <span style="font-weight:400;font-size:6.8pt;letter-spacing:.5pt">&#8226; PARTIE C : CERCLE ET ANGLES ORIENTES</span></h2>
+<div class="form">
+  <span class="t">CENTRE &#937;(<i>a</i>&#8239;;&#8239;<i>b</i>), RAYON <i>r</i>&#8239;&gt;&#8239;0&nbsp;: repère orthonormé</span>
+  <div class="c m">(<i>x</i>&#8239;&#8722;&#8239;<i>a</i>)<sup>2</sup>&#8239;+&#8239;(<i>y</i>&#8239;&#8722;&#8239;<i>b</i>)<sup>2</sup>&#8239;=&#8239;<i>r</i><sup>2</sup></div>
+</div></div>
+<p><b>Forme canonique</b> : le centre <b>annule</b> les deux parenthèses, et le second membre vaut <i>r</i><sup>2</sup>. En développant : <span class="pt"><i>x</i><sup>2</sup>&#8239;+&#8239;<i>y</i><sup>2</sup>&#8239;&#8722;&#8239;2<i>ax</i>&#8239;&#8722;&#8239;2<i>by</i>&#8239;+&#8239;<i>c</i>&#8239;=&#8239;0</span> ; on revient à la forme canonique en <b>complétant les carrés</b> (<span class="pt"><i>x</i><sup>2</sup>&#8239;&#8722;&#8239;2&#945;<i>x</i>&#8239;=&#8239;(<i>x</i>&#8239;&#8722;&#8239;&#945;)<sup>2</sup>&#8239;&#8722;&#8239;&#945;<sup>2</sup></span>). Selon le signe du second membre obtenu, l'ensemble est un <b>cercle</b>, un <b>point</b>, ou <b>vide</b>.</p>
+<div class="form">
+  <span class="t">CERCLE DE DIAMETRE [<i>AB</i>]</span>
+  <div class="c m"><i>M</i> est sur le cercle&nbsp;<span class="ar">&#8660;</span>&nbsp;<span style="border-top:.6pt solid;padding-top:.5pt"><i>MA</i></span>&#8239;&#183;&#8239;<span style="border-top:.6pt solid;padding-top:.5pt"><i>MB</i></span>&#8239;=&#8239;0</div>
+</div>
+<h3 class="rub">Intersection d'une droite et d'un cercle</h3>
+<p>On <b>remplace</b> dans l'équation du cercle l'expression tirée de celle de la droite : équation du <b>second degré</b>. A chaque solution en <i>x</i> correspond un point, dont on <b>calcule l'ordonnée</b> avec l'équation de la droite.</p>
+<p>Le nombre de solutions donne la position : <b>deux</b> <span class="ar">&#8594;</span> <b>sécante</b> ; <b>une</b> (double) <span class="ar">&#8594;</span> <b>tangente</b> ; <b>aucune</b> <span class="ar">&#8594;</span> <b>extérieure</b>.</p>
+</div>
+
+<!-- ===================== LECON 9 ===================== -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 9&nbsp;: Orientation du plan et mesure principale</h2>
+<p><b>Orienter</b> le plan, c'est choisir un sens de rotation comme positif : le <b>sens direct</b> (ou trigonométrique), <b>contraire</b> aux aiguilles d'une montre ; l'autre est <b>indirect</b>. Pour <span style="border-top:.6pt solid;padding-top:.5pt"><i>u</i></span> et <span style="border-top:.6pt solid;padding-top:.5pt"><i>v</i></span> <b>non nuls</b>, l'<b>angle orienté</b> (<span style="border-top:.6pt solid;padding-top:.5pt"><i>u</i></span>&#8239;,&#8239;<span style="border-top:.6pt solid;padding-top:.5pt"><i>v</i></span>) va de <span style="border-top:.6pt solid;padding-top:.5pt"><i>u</i></span> vers <span style="border-top:.6pt solid;padding-top:.5pt"><i>v</i></span> : il tient compte du sens de rotation, a donc un <b>signe</b>, et <b>l'ordre compte</b>.</p></div>
+<p>Une <b>mesure</b> est un réel, en <b>radians</b> ; un même angle en a une <b>infinité</b>, différant d'un multiple de 2&#960; : si &#945; en est une, &#945;&#8239;+&#8239;2<i>k</i>&#960; aussi (<i>k</i>&#8239;&#8712;&#8239;&#8484;). La mesure est définie <b>modulo 2&#960;</b>. En <b>degrés</b>, le tour vaut 360.</p>
+<div class="form">
+  <span class="t">MESURE PRINCIPALE&nbsp;: l'unique mesure située dans cet intervalle</span>
+  <div class="c m">]&#8722;&#960;&#8239;;&#8239;&#960;]&nbsp;&nbsp;&nbsp;<span style="font-size:7.4pt">&#8722;&#960; <b>exclu</b>, &#960; <b>inclus</b></span></div>
+</div>
+<p>On l'obtient en <b>ajoutant ou en retranchant 2&#960;</b> autant de fois que nécessaire. La mesure principale d'un demi-tour est &#960;, jamais &#8722;&#960;.</p>
+</div>
+
+<!-- ===================== LECON 10 ===================== -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 10&nbsp;: Propriétés des angles orientés</h2>
+<div class="form">
+  <span class="t">PROPRIETES ADMISES&nbsp;: <span style="border-top:.6pt solid;padding-top:.5pt"><i>u</i></span>, <span style="border-top:.6pt solid;padding-top:.5pt"><i>v</i></span>, <span style="border-top:.6pt solid;padding-top:.5pt"><i>w</i></span> non nuls, modulo 2&#960;</span>
+  <div class="c m">(<span style="border-top:.6pt solid;padding-top:.5pt"><i>v</i></span>&#8239;,&#8239;<span style="border-top:.6pt solid;padding-top:.5pt"><i>u</i></span>)&#8239;=&#8239;&#8722;(<span style="border-top:.6pt solid;padding-top:.5pt"><i>u</i></span>&#8239;,&#8239;<span style="border-top:.6pt solid;padding-top:.5pt"><i>v</i></span>)&nbsp;&nbsp;<span style="font-size:7.4pt">(changement d'ordre)</span></div>
+  <div class="c m">(<span style="border-top:.6pt solid;padding-top:.5pt"><i>u</i></span>&#8239;,&#8239;<span style="border-top:.6pt solid;padding-top:.5pt"><i>v</i></span>)&#8239;+&#8239;(<span style="border-top:.6pt solid;padding-top:.5pt"><i>v</i></span>&#8239;,&#8239;<span style="border-top:.6pt solid;padding-top:.5pt"><i>w</i></span>)&#8239;=&#8239;(<span style="border-top:.6pt solid;padding-top:.5pt"><i>u</i></span>&#8239;,&#8239;<span style="border-top:.6pt solid;padding-top:.5pt"><i>w</i></span>)&nbsp;&nbsp;<span style="font-size:7.4pt">(Chasles)</span></div>
+  <div class="c m">(<span style="border-top:.6pt solid;padding-top:.5pt"><i>u</i></span>&#8239;,&#8239;<span style="border-top:.6pt solid;padding-top:.5pt"><i>u</i></span>)&#8239;=&#8239;0&nbsp;&nbsp;&nbsp;(<span style="border-top:.6pt solid;padding-top:.5pt"><i>u</i></span>&#8239;,&#8239;&#8722;<span style="border-top:.6pt solid;padding-top:.5pt"><i>u</i></span>)&#8239;=&#8239;&#960;</div>
+</div></div>
+<p>On peut <b>ajouter 2<i>k</i>&#960;</b> (<i>k</i>&#8239;&#8712;&#8239;&#8484;) sans changer l'angle : toutes les mesures d'un même angle ont le <b>même cosinus</b> et le <b>même sinus</b>. On <b>calcule</b> donc avec les angles comme avec des nombres relatifs, modulo 2&#960;, puis l'on ramène le résultat dans ]&#8722;&#960;&#8239;;&#8239;&#960;] si besoin.</p>
+</div>
+
+</div>
+
+<div class="bandeau vert">PIEGES ET ERREURS FREQUENTES</div>
+<div class="cols">
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> Pour <span class="pt"><i>ax</i>&#8239;+&#8239;<i>by</i>&#8239;+&#8239;<i>c</i>&#8239;=&#8239;0</span>, un vecteur directeur est (<i>a</i>&#8239;;&#8239;<i>b</i>)</div><div class="cor"><span class="v">&#10003;</span> (<i>a</i>&#8239;;&#8239;<i>b</i>) est le vecteur <b>normal</b> ; le <b>directeur</b> est <span style="border-top:.6pt solid;padding-top:.5pt"><i>u</i></span>(&#8722;<i>b</i>&#8239;;&#8239;<i>a</i>). Attention aux signes : dans <span class="pt">2<i>x</i>&#8239;&#8722;&#8239;3<i>y</i>&#8239;+&#8239;1&#8239;=&#8239;0</span>, <i>b</i>&#8239;=&#8239;&#8722;3, donc <span style="border-top:.6pt solid;padding-top:.5pt"><i>u</i></span>(3&#8239;;&#8239;2) ; écris « <i>a</i>&#8239;=&#8239;&#8230;, <i>b</i>&#8239;=&#8239;&#8230; » avant d'appliquer la règle.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> Deux droites sont parallèles si leurs directeurs sont orthogonaux &nbsp;&middot;&nbsp; deux droites parallèles n'ont jamais de point commun</div><div class="cor"><span class="v">&#10003;</span> <b>Déterminant nul</b> = directeurs <b>colinéaires</b> = droites <b>parallèles</b> ; <b>produit scalaire nul</b> = directeurs <b>orthogonaux</b> = droites <b>perpendiculaires</b>. Deux droites <b>confondues</b> sont parallèles, avec tous leurs points communs : « aucun point commun » se dit <b>strictement parallèles</b>.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> Le barycentre de (<i>A</i>&#8239;;&#8239;3) et (<i>B</i>&#8239;;&#8239;&#8722;3) existe</div><div class="cor"><span class="v">&#10003;</span> La somme des coefficients vaut 0 : la division par <i>a</i>&#8239;+&#8239;<i>b</i> est <b>impossible</b>, le barycentre <b>n'existe pas</b>. La condition porte sur la <b>somme</b>, non sur chaque coefficient : (<i>A</i>&#8239;;&#8239;&#8722;2) et (<i>B</i>&#8239;;&#8239;3) sont licites.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> <span class="pt"><span style="border-top:.6pt solid;padding-top:.5pt"><i>AG</i></span>&#8239;=&#8239;<span class="f"><span><i>a</i></span><span><i>a</i>&#8239;+&#8239;<i>b</i></span></span>&#8239;<span style="border-top:.6pt solid;padding-top:.5pt"><i>AB</i></span></span> &nbsp;&middot;&nbsp; on remplace <i>A</i> et <i>B</i> par leur milieu <i>I</i> affecté du coefficient 1</div><div class="cor"><span class="v">&#10003;</span> C'est le coefficient de <b>l'autre</b> point : <span class="pt"><span style="border-top:.6pt solid;padding-top:.5pt"><i>AG</i></span>&#8239;=&#8239;<span class="f"><span><i>b</i></span><span><i>a</i>&#8239;+&#8239;<i>b</i></span></span>&#8239;<span style="border-top:.6pt solid;padding-top:.5pt"><i>AB</i></span></span>. Pour <i>a</i>&#8239;=&#8239;3, <i>b</i>&#8239;=&#8239;1 : <i>G</i> est au <b>quart</b> de [<i>AB</i>] depuis <i>A</i>, près du gros coefficient. Et le point partiel reçoit la <b>somme</b> <i>a</i>&#8239;+&#8239;<i>b</i>, jamais 1.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> <span class="pt">(<i>x</i>&#8239;&#8722;&#8239;2)<sup>2</sup>&#8239;+&#8239;(<i>y</i>&#8239;+&#8239;1)<sup>2</sup>&#8239;=&#8239;16</span> a pour centre (&#8722;2&#8239;;&#8239;1) et pour rayon 16 &nbsp;&middot;&nbsp; <span class="pt"><i>x</i><sup>2</sup>&#8239;&#8722;&#8239;2<i>x</i>&#8239;=&#8239;(<i>x</i>&#8239;&#8722;&#8239;1)<sup>2</sup></span></div><div class="cor"><span class="v">&#10003;</span> Le centre <b>annule</b> les parenthèses : &#937;(2&#8239;;&#8239;&#8722;1) ; le second membre vaut <i>r</i><sup>2</sup>, donc <i>r</i>&#8239;=&#8239;4. En complétant, <span class="pt"><i>x</i><sup>2</sup>&#8239;&#8722;&#8239;2<i>x</i>&#8239;=&#8239;(<i>x</i>&#8239;&#8722;&#8239;1)<sup>2</sup>&#8239;&#8722;&#8239;1</span> : on <b>retranche</b> le carré ajouté. Ainsi <span class="pt"><i>x</i><sup>2</sup>&#8239;+&#8239;<i>y</i><sup>2</sup>&#8239;&#8722;&#8239;2<i>x</i>&#8239;+&#8239;5&#8239;=&#8239;0</span> donne <span class="pt">(<i>x</i>&#8239;&#8722;&#8239;1)<sup>2</sup>&#8239;+&#8239;<i>y</i><sup>2</sup>&#8239;=&#8239;&#8722;4</span> : ensemble <b>vide</b>.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> La mesure principale est dans [0&#8239;;&#8239;2&#960;] &nbsp;&middot;&nbsp; un angle orienté est toujours compris entre 0 et &#960;</div><div class="cor"><span class="v">&#10003;</span> La mesure principale est l'unique mesure de <span class="pt">]&#8722;&#960;&#8239;;&#8239;&#960;]</span> : &#8722;&#960; est <b>exclu</b>, &#960; est <b>inclus</b>. Un angle <b>orienté</b> est défini <b>modulo 2&#960;</b> et peut être <b>négatif</b> ; c'est l'angle <b>géométrique</b> qui reste entre 0 et &#960;, sans signe.</div></div>
+
+</div>
+
+<div class="bandeau bleu">A SAVOIR PAR COEUR AVANT LE DEVOIR</div>
+<div class="cols">
+
+<ol class="recap">
+<li><span class="pt"><i>ax</i>&#8239;+&#8239;<i>by</i>&#8239;+&#8239;<i>c</i>&#8239;=&#8239;0</span> : directeur <span style="border-top:.6pt solid;padding-top:.5pt"><i>u</i></span>(&#8722;<i>b</i>&#8239;;&#8239;<i>a</i>), normal <span style="border-top:.6pt solid;padding-top:.5pt"><i>n</i></span>(<i>a</i>&#8239;;&#8239;<i>b</i>) ; <span class="pt"><i>y</i>&#8239;=&#8239;<i>mx</i>&#8239;+&#8239;<i>p</i></span> : <span style="border-top:.6pt solid;padding-top:.5pt"><i>u</i></span>(1&#8239;;&#8239;<i>m</i>) ; verticale <i>x</i>&#8239;=&#8239;<i>k</i> : pas de coefficient directeur.</li>
+<li>Paramétrique : <span class="pt"><i>x</i>&#8239;=&#8239;<i>x<sub>A</sub></i>&#8239;+&#8239;<i>t</i>&#945;</span>, <span class="pt"><i>y</i>&#8239;=&#8239;<i>y<sub>A</sub></i>&#8239;+&#8239;<i>t</i>&#946;</span>, avec <i>t</i>&#8239;&#8712;&#8239;&#8477;. Cartésienne par le déterminant : <span class="pt">&#946;(<i>x</i>&#8239;&#8722;&#8239;<i>x<sub>A</sub></i>)&#8239;&#8722;&#8239;&#945;(<i>y</i>&#8239;&#8722;&#8239;<i>y<sub>A</sub></i>)&#8239;=&#8239;0</span>.</li>
+<li>Parallèles <span class="ar">&#8660;</span> <span class="pt">det(<span style="border-top:.6pt solid;padding-top:.5pt"><i>u</i></span>&#8239;;&#8239;<span style="border-top:.6pt solid;padding-top:.5pt"><i>u&#8242;</i></span>)&#8239;=&#8239;0</span> ; perpendiculaires, en repère orthonormé, <span class="ar">&#8660;</span> <span class="pt"><span style="border-top:.6pt solid;padding-top:.5pt"><i>u</i></span>&#8239;&#183;&#8239;<span style="border-top:.6pt solid;padding-top:.5pt"><i>u&#8242;</i></span>&#8239;=&#8239;0</span> ou <span class="pt"><i>m</i>&#8239;&#215;&#8239;<i>m</i>&#8242;&#8239;=&#8239;&#8722;1</span> <b>s'ils existent</b>. Trois positions : <b>sécantes</b>, <b>strictement parallèles</b>, <b>confondues</b>.</li>
+<li>Barycentre : existe <b><span class="ar">&#8660;</span> somme des coefficients non nulle</b> ; coordonnées = <b>moyennes pondérées</b> ; <span class="pt"><span style="border-top:.6pt solid;padding-top:.5pt"><i>AG</i></span>&#8239;=&#8239;<span class="f"><span><i>b</i></span><span><i>a</i>&#8239;+&#8239;<i>b</i></span></span>&#8239;<span style="border-top:.6pt solid;padding-top:.5pt"><i>AB</i></span></span>.</li>
+<li><b>Associativité</b> : deux points se remplacent par leur barycentre partiel affecté de la <b>somme</b> de leurs coefficients. Isobarycentre d'un triangle = <b>centre de gravité</b>, aux <b>deux tiers</b> de chaque médiane depuis le sommet.</li>
+<li>Réduction : <span class="pt"><i>a MA</i><sup>2</sup>&#8239;+&#8239;<i>b MB</i><sup>2</sup>&#8239;=&#8239;(<i>a</i>&#8239;+&#8239;<i>b</i>)<i>MG</i><sup>2</sup>&#8239;+&#8239;<i>a GA</i><sup>2</sup>&#8239;+&#8239;<i>b GB</i><sup>2</sup></span> ; d'où <span class="pt"><i>a MA</i><sup>2</sup>&#8239;+&#8239;<i>b MB</i><sup>2</sup>&#8239;=&#8239;<i>k</i></span> : cercle de centre <i>G</i>, point, ou vide.</li>
+<li>Cercle : <span class="pt">(<i>x</i>&#8239;&#8722;&#8239;<i>a</i>)<sup>2</sup>&#8239;+&#8239;(<i>y</i>&#8239;&#8722;&#8239;<i>b</i>)<sup>2</sup>&#8239;=&#8239;<i>r</i><sup>2</sup></span>, centre &#937;(<i>a</i>&#8239;;&#8239;<i>b</i>), rayon <i>r</i> ; diamètre [<i>AB</i>] : <span class="pt"><span style="border-top:.6pt solid;padding-top:.5pt"><i>MA</i></span>&#8239;&#183;&#8239;<span style="border-top:.6pt solid;padding-top:.5pt"><i>MB</i></span>&#8239;=&#8239;0</span>. Après complétion des carrés : cercle, point, ou vide.</li>
+<li>Angles orientés : définis <b>modulo 2&#960;</b>, mesure principale dans <span class="pt">]&#8722;&#960;&#8239;;&#8239;&#960;]</span> ; Chasles <span class="pt">(<span style="border-top:.6pt solid;padding-top:.5pt"><i>u</i></span>&#8239;,&#8239;<span style="border-top:.6pt solid;padding-top:.5pt"><i>v</i></span>)&#8239;+&#8239;(<span style="border-top:.6pt solid;padding-top:.5pt"><i>v</i></span>&#8239;,&#8239;<span style="border-top:.6pt solid;padding-top:.5pt"><i>w</i></span>)&#8239;=&#8239;(<span style="border-top:.6pt solid;padding-top:.5pt"><i>u</i></span>&#8239;,&#8239;<span style="border-top:.6pt solid;padding-top:.5pt"><i>w</i></span>)</span> et <span class="pt">(<span style="border-top:.6pt solid;padding-top:.5pt"><i>v</i></span>&#8239;,&#8239;<span style="border-top:.6pt solid;padding-top:.5pt"><i>u</i></span>)&#8239;=&#8239;&#8722;(<span style="border-top:.6pt solid;padding-top:.5pt"><i>u</i></span>&#8239;,&#8239;<span style="border-top:.6pt solid;padding-top:.5pt"><i>v</i></span>)</span>.</li>
+</ol>
+</div>
+
+</body>
+</html>

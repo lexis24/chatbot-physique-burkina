@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Fiche de revision - 3eme - Chapitre 15 : Equations et systemes du premier degre dans R x R</title>
+<style>
+/* ===================================================================
+   FICHE DE REVISION, Collection Hakili Lab, Edition 2026
+   Feuille de style autonome, format A4 pret a imprimer.
+   Bleu #005CB9 · Vert #49A145
+   =================================================================== */
+:root{
+  --bleu:#005CB9; --bleu-fonce:#00429A; --bleu-pale:#E8F1FB; --bleu-bord:#B7D2EE;
+  --vert:#49A145; --vert-fonce:#2F7A2C; --vert-pale:#EDF7EC; --vert-bord:#BCE0B9;
+  --gris:#4A4A4A; --gris-clair:#E4E4E4; --rouge:#B3261E;
+}
+@page{
+  size:A4; margin:15mm;
+  @bottom-center{
+    content:"Collection Hakili Lab, Edition 2026  ·  Fiche de revision  ·  " counter(page) "/" counter(pages);
+    font-family:"Segoe UI",Calibri,Arial,sans-serif; font-size:6.6pt; color:#8A8A8A;
+  }
+}
+*{box-sizing:border-box;}
+body{
+  margin:0; font-family:"Segoe UI",Calibri,Arial,sans-serif;
+  font-size:8.4pt; line-height:1.26; color:#1B1B1B;
+}
+p{margin:0 0 3pt;}
+ul{margin:0 0 3pt; padding-left:11pt;}
+li{margin:0 0 1.2pt;}
+b,strong{color:var(--bleu-fonce);}
+
+/* ------------------------------ ENTETE ---------------------------- */
+.entete{
+  display:flex; align-items:stretch; border:1.6pt solid var(--bleu);
+  border-radius:2.5pt; overflow:hidden; margin-bottom:6pt;
+}
+.entete .num{
+  background:var(--bleu); color:#fff; font-size:20pt; font-weight:700;
+  padding:0 8pt; display:flex; align-items:center; justify-content:center; min-width:34pt;
+}
+.entete .txt{padding:3.5pt 8pt; flex:1;}
+.entete .niveau{
+  font-size:7pt; font-weight:700; letter-spacing:.9pt; color:var(--vert-fonce);
+}
+.entete h1{margin:0; font-size:13.5pt; line-height:1.12; color:var(--bleu-fonce); font-weight:700;}
+.entete .sous{font-size:7pt; color:var(--gris); margin-top:1pt;}
+
+/* --------------------------- BANDEAUX ----------------------------- */
+.bandeau{
+  color:#fff; font-weight:700; font-size:9pt; letter-spacing:1pt;
+  padding:2.4pt 7pt; border-radius:2pt; margin:3pt 0 4pt; break-after:avoid; page-break-after:avoid;
+}
+.bandeau.bleu{background:var(--bleu);}
+.bandeau.vert{background:var(--vert);}
+
+/* --------------------------- COLONNES ----------------------------- */
+.cols{column-count:2; column-gap:7mm; column-fill:balance;}
+
+.cols.bal{column-fill:balance;}
+.bloc{margin-bottom:5pt;}
+.keep{break-inside:avoid; page-break-inside:avoid;}
+
+/* --------------------------- LECONS ------------------------------- */
+h2.lecon{
+  margin:0 0 3pt; font-size:8.6pt; font-weight:700; color:#fff; background:var(--bleu-fonce);
+  padding:1.8pt 5pt; border-radius:1.5pt; break-after:avoid; page-break-after:avoid;
+}
+h3.rub{
+  margin:3.5pt 0 1.5pt; font-size:8.2pt; font-weight:700; color:var(--vert-fonce);
+  border-bottom:.7pt solid var(--vert-bord); padding-bottom:.8pt;
+  break-after:avoid; page-break-after:avoid;
+}
+
+/* --------------------------- ENCADRES ----------------------------- */
+.form{
+  background:var(--bleu-pale); border:.8pt solid var(--bleu-bord); border-left:2.6pt solid var(--bleu);
+  border-radius:2pt; padding:2.4pt 5pt; margin:2.2pt 0 3.4pt;
+  break-inside:avoid; page-break-inside:avoid;
+}
+.form .t{
+  display:block; font-size:6.8pt; font-weight:700; letter-spacing:.6pt;
+  color:var(--bleu); margin-bottom:1.5pt;
+}
+.form .c{text-align:center; font-size:9.1pt; margin:1.6pt 0;}
+.note{background:var(--vert-pale); border-left:2.4pt solid var(--vert); padding:2.4pt 5pt; border-radius:1.5pt; margin:2.5pt 0 4pt; break-inside:avoid;}
+
+/* --------------------------- TABLEAUX ----------------------------- */
+table{width:100%; border-collapse:collapse; font-size:7.6pt; margin:2pt 0 4pt; break-inside:avoid;}
+th{background:var(--bleu); color:#fff; font-weight:700; text-align:left; padding:1.8pt 4pt; font-size:7.2pt;}
+td{border:.6pt solid var(--gris-clair); padding:1.8pt 4pt; vertical-align:top;}
+tr{break-inside:avoid;}
+table.var td{text-align:center; font-size:8pt;}
+table.var td.lab{text-align:left; font-weight:700; color:var(--bleu-fonce); background:var(--bleu-pale);}
+
+/* ----------------------------- PIEGES ----------------------------- */
+table.pieges th:first-child{width:44%;}
+table.pieges td:first-child{color:var(--rouge); background:#FDF1F0;}
+.x{font-weight:700;}
+.v{color:var(--vert-fonce); font-weight:700;}
+
+/* ---------------------------- RECAP ------------------------------- */
+ol.recap{margin:0; padding-left:0; list-style:none; counter-reset:r;}
+ol.recap li{
+  counter-increment:r; position:relative; padding-left:13pt; margin-bottom:1.8pt;
+  break-inside:avoid;
+}
+ol.recap li::before{
+  content:counter(r); position:absolute; left:0; top:.3pt;
+  width:10pt; height:10pt; border-radius:50%; background:var(--vert); color:#fff;
+  font-size:6.6pt; font-weight:700; text-align:center; line-height:10pt;
+}
+
+/* --------------------------- MATHS -------------------------------- */
+.m{font-family:Cambria,Georgia,"Times New Roman",serif;}
+i,var{font-family:Cambria,Georgia,"Times New Roman",serif; font-style:italic;}
+.op{font-family:Cambria,Georgia,"Times New Roman",serif; font-style:normal;}
+.f{display:inline-block; vertical-align:middle; text-align:center;
+   margin:0 .12em; line-height:1.06; font-family:Cambria,Georgia,"Times New Roman",serif;}
+.f>span{display:block; padding:0 .2em;}
+.f>span:first-child{border-bottom:.6pt solid currentColor; padding-bottom:.08em;}
+.f>span:last-child{padding-top:.04em;}
+.rad{border-top:.6pt solid currentColor; padding-top:.12em;}
+/* line-height:0 evite que l'exposant n'ecarte les lignes ; position:relative le
+   repositionne sans qu'il heurte la barre de fraction ni le trait du radical. */
+sup,sub{font-size:.68em; line-height:0; position:relative; vertical-align:baseline;}
+sup{top:-.42em;}
+sub{bottom:-.22em;}
+.pt{white-space:nowrap;}
+/* Les fleches n'ont qu'un glyphe atrophie dans la fonte serif : on les force
+   en sans-serif, ou elles sont franches meme a 8 pt. */
+.ar{font-family:"Segoe UI",Calibri,Arial,"DejaVu Sans",sans-serif; font-style:normal;}
+
+/* ------------------- PIEGES : blocs erreur / correction ------------- */
+.pg{font-size:8.1pt; border-left:2.4pt solid var(--rouge); background:#FDF1F0; border-radius:1.5pt;
+    padding:2pt 5pt; margin:0 0 2.8pt; break-inside:avoid; page-break-inside:avoid;}
+.pg .err{color:var(--rouge); font-weight:600;}
+.pg .cor{color:#1B1B1B; margin-top:.8pt;}
+.pg .cor b{color:var(--bleu-fonce);}
+.v{color:var(--vert-fonce); font-weight:700;}
+
+</style>
+</head>
+<body>
+<header class="entete">
+  <div class="num">15</div>
+  <div class="txt">
+    <div class="niveau">3EME &middot; MATHEMATIQUES</div>
+    <h1>Equations et systèmes du premier degré dans &#8477;&#8239;&#215;&#8239;&#8477;</h1>
+    <div class="sous">Leçon 1 : équation du premier degré à deux inconnues &middot; Leçon 2 : résolution algébrique d'un système &middot; Leçon 3 : résolution graphique d'un système &middot; Leçon 4 : systèmes d'inéquations &middot; Leçon 5 : problèmes se ramenant à un système</div>
+  </div>
+</header>
+
+<div class="bandeau bleu" style="margin-top:0">L'ESSENTIEL</div>
+<div class="cols">
+
+<!-- ================= LECON 1 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 1&nbsp;: Equation du premier degré à deux inconnues</h2>
+<div class="form">
+  <span class="t">FORME GENERALE</span>
+  <div class="c m"><i>ax</i>&#8239;+&#8239;<i>by</i>&#8239;+&#8239;<i>c</i>&#8239;=&#8239;0 &nbsp;<span style="font-size:7.5pt">(<i>a</i> et <i>b</i> non tous les deux nuls)</span></div>
+</div></div>
+<ul>
+<li>Une <b>solution</b> est un <b>couple</b> (<i>x</i>&#8239;;&#8239;<i>y</i>) de nombres réels qui vérifie l'égalité. On travaille dans <b>&#8477;&#8239;&#215;&#8239;&#8477;</b>, l'ensemble des couples de nombres réels.</li>
+<li><b>Vérifier</b> qu'un couple est solution : on remplace <i>x</i> et <i>y</i> par les deux nombres et on regarde si l'égalité est vraie.</li>
+<li><b>Fabriquer</b> une solution : on choisit librement une valeur de <i>x</i> et on calcule le <i>y</i> correspondant.</li>
+<li>Une telle équation possède une <b>infinité</b> de couples solutions : ce sont les coordonnées de tous les points d'une <b>droite</b> du plan. Tous les autres points du plan ne sont pas solutions.</li>
+</ul>
+<h3 class="rub">Trouver des couples solutions</h3>
+<p>Isoler l'une des inconnues, par exemple <i>y</i>, pour obtenir <span class="pt"><i>y</i>&#8239;=&#8239;&hellip;</span> <span class="ar">&#8594;</span> choisir une valeur simple de <i>x</i>, de préférence 0 ou 1 <span class="ar">&#8594;</span> calculer le <i>y</i> correspondant <span class="ar">&#8594;</span> écrire le couple <b>dans l'ordre</b> (<i>x</i>&#8239;;&#8239;<i>y</i>) <span class="ar">&#8594;</span> recommencer avec d'autres valeurs de <i>x</i>. La lettre <i>x</i> n'a rien de spécial : on peut aussi se donner <i>y</i> et calculer <i>x</i>. On choisit l'inconnue qui donne les calculs les plus simples.</p>
+</div>
+
+<!-- ================= LECON 2 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 2&nbsp;: Résolution d'un système par la méthode algébrique</h2>
+<p>Un <b>système de deux équations du premier degré à deux inconnues</b> est la donnée de deux équations que le couple cherché doit vérifier <b>en même temps</b> ; on l'écrit avec une accolade. Une <b>solution du système</b> est un couple (<i>x</i>&#8239;;&#8239;<i>y</i>) qui vérifie <b>les deux</b> équations.</p></div>
+<p><b>Ranger d'abord</b> les deux équations sous la forme <span class="pt"><i>ax</i>&#8239;+&#8239;<i>by</i>&#8239;=&#8239;<i>c</i></span> : les termes en <i>x</i>, puis en <i>y</i>, puis le nombre seul.</p>
+<table>
+<tr><th>Substitution</th><th>Combinaison</th></tr>
+<tr>
+<td>Isoler une inconnue dans l'une des équations, puis remplacer cette inconnue par son expression dans l'<b>autre</b> équation, entre <b>parenthèses</b>. Résoudre l'équation à une inconnue obtenue, puis reporter la valeur trouvée dans l'expression isolée.</td>
+<td>Multiplier une équation, ou les deux, par des nombres bien choisis pour rendre les coefficients d'une inconnue <b>opposés</b>, puis additionner les deux équations <b>membre à membre</b> : cette inconnue disparaît. Résoudre, puis reporter dans une équation de départ.</td>
+</tr>
+<tr>
+<td>Commode quand une inconnue est déjà isolée, ou quand son coefficient vaut 1 ou &#8722;1.</td>
+<td>Préférable quand aucune inconnue n'est isolée, surtout si les coefficients sont déjà proportionnels.</td>
+</tr>
+</table>
+<div class="note">Les deux méthodes ont le même but : <b>se ramener à une seule inconnue</b>. On <b>vérifie toujours</b> le couple trouvé dans les <b>deux</b> équations d'origine, puis on conclut. Un tel système a en général <b>un seul</b> couple solution ; il peut aussi n'en avoir <b>aucun</b>, ou en avoir une <b>infinité</b>.</div>
+</div>
+
+<!-- ================= LECON 3 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 3&nbsp;: Résolution graphique d'un système</h2>
+<ul>
+<li>Chaque équation du système représente une <b>droite</b> du plan.</li>
+<li>La <b>solution du système</b> est le <b>point d'intersection</b> des deux droites : ses coordonnées vérifient les deux équations.</li>
+</ul></div>
+<p>On met chaque équation sous la <b>forme réduite</b> <span class="pt"><i>y</i>&#8239;=&#8239;<i>ax</i>&#8239;+&#8239;<i>b</i></span>, puis on compare les coefficients : on sait d'avance dans quel cas on se trouve.</p>
+<table>
+<tr><th>Formes réduites</th><th>Droites</th><th>Solutions</th></tr>
+<tr><td class="m"><i>a</i>&#8239;&#8800;&#8239;<i>a</i>&#8242;</td><td>sécantes</td><td><b>un seul</b> couple</td></tr>
+<tr><td class="m"><i>a</i>&#8239;=&#8239;<i>a</i>&#8242; et <i>b</i>&#8239;&#8800;&#8239;<i>b</i>&#8242;</td><td>strictement parallèles</td><td><b>aucune</b> : impossible</td></tr>
+<tr><td class="m"><i>a</i>&#8239;=&#8239;<i>a</i>&#8242; et <i>b</i>&#8239;=&#8239;<i>b</i>&#8242;</td><td>confondues</td><td>une <b>infinité</b></td></tr>
+</table>
+<div class="form">
+  <span class="t">FINS DE CALCUL A RECONNAITRE</span>
+  <div class="c m">0&#8239;=&#8239;7, égalité <b>fausse</b> <span style="font-family:'Segoe UI',Calibri,Arial,sans-serif"><span class="ar">&#8594;</span></span> <b>aucune solution</b></div>
+  <div class="c m">0&#8239;=&#8239;0, égalité <b>vraie</b> <span style="font-family:'Segoe UI',Calibri,Arial,sans-serif"><span class="ar">&#8594;</span></span> une <b>infinité</b> de solutions</div>
+</div>
+<p>Pour tracer : deux points par droite, en choisissant des abscisses commodes, à la règle et sur un repère gradué avec soin. On lit les coordonnées du point d'intersection, puis on <b>vérifie ce couple par le calcul</b> dans les deux équations de départ.</p>
+</div>
+
+<!-- ================= LECON 4 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 4&nbsp;: Systèmes d'inéquations et résolution graphique</h2>
+<div class="form">
+  <span class="t">INEQUATION DU PREMIER DEGRE A DEUX INCONNUES</span>
+  <div class="c m"><i>ax</i>&#8239;+&#8239;<i>by</i>&#8239;+&#8239;<i>c</i>&#8239;&gt;&#8239;0 &nbsp;<span style="font-size:7.5pt">(ou avec &#8805;, &lt;, &#8804;)</span></div>
+</div></div>
+<ul>
+<li>L'ensemble de ses solutions est un <b>demi-plan</b> de frontière la droite d'équation <span class="pt"><i>ax</i>&#8239;+&#8239;<i>by</i>&#8239;+&#8239;<i>c</i>&#8239;=&#8239;0</span>.</li>
+<li>Inégalité <b>large</b> (&#8804; ou &#8805;) : la frontière <b>appartient</b> à la solution, on la trace en <b>trait plein</b>. Inégalité <b>stricte</b> (&lt; ou &gt;) : elle n'y appartient pas, on la trace en <b>pointillés</b>.</li>
+<li>Pour savoir quel demi-plan convient, il suffit de <b>tester un seul point</b> qui n'est pas sur la frontière ; on prend souvent l'<b>origine</b>. Si l'inéquation est vraie, le demi-plan solution est celui du point test ; sinon, c'est l'autre. On hachure ce demi-plan.</li>
+<li>La solution d'un <b>système d'inéquations</b> est l'<b>intersection</b> des demi-plans solutions : la <b>région commune</b>, hachurée par toutes les inéquations. On la colorie et on la décrit par une phrase.</li>
+</ul>
+<div class="note">Un seul point d'essai suffit parce que l'<b>expression</b> <span class="m"><i>ax</i>&#8239;+&#8239;<i>by</i>&#8239;+&#8239;<i>c</i></span> garde le <b>même signe</b> de chaque côté de la droite : elle ne peut changer de signe qu'en s'annulant, c'est-à-dire <b>sur la frontière</b>. Si la frontière passe par l'origine, comme pour <span class="pt">2<i>x</i>&#8239;&#8722;&#8239;3<i>y</i>&#8239;=&#8239;0</span>, choisir un autre point, par exemple (1&#8239;;&#8239;0).</div>
+</div>
+
+<!-- ================= LECON 5 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 5&nbsp;: Problèmes se ramenant à un système</h2>
+<ul>
+<li><b>Choisir deux inconnues</b> et préciser, par une phrase, ce que chacune représente et dans quelle <b>unité</b>.</li>
+<li><b>Ecarter</b> les informations inutiles, puis traduire chacun des <b>deux renseignements</b> utiles de l'énoncé par une <b>équation</b> : on obtient un système.</li>
+<li>Résoudre le système par substitution, par combinaison ou graphiquement.</li>
+<li><b>Contrôler la vraisemblance</b> de la solution : nombres entiers s'il s'agit d'objets, valeurs positives s'il s'agit de prix ou de longueurs.</li>
+<li><b>Conclure par une phrase</b> qui répond à la question posée.</li>
+</ul></div>
+<div class="note"><b>Deux équations, deux comptes différents.</b> Ecris l'unité à côté de chaque équation : « équation des nombres de pièces », « équation des valeurs, en FCFA ». Si les deux équations comptent la même chose, l'une est fausse, ou bien elles sont équivalentes et le système ne donnera rien. Une quantité donnée <b>par unité</b>, comme un prix au kilogramme, apparaît comme <b>coefficient</b> de l'inconnue, jamais comme inconnue elle-même.</div>
+</div>
+
+</div>
+
+<div class="bandeau vert">PIEGES ET ERREURS FREQUENTES</div>
+<div class="cols">
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> (1&#8239;;&#8239;3) est solution de 2<i>x</i>&#8239;+&#8239;<i>y</i>&#8239;=&#8239;5, donc (3&#8239;;&#8239;1) l'est aussi</div><div class="cor"><span class="v">&#10003;</span> Un couple s'écrit <b>dans l'ordre</b> (<i>x</i>&#8239;;&#8239;<i>y</i>) : le premier nombre est <b>toujours</b> la valeur de <i>x</i>. Ici 2&#8239;&#215;&#8239;1&#8239;+&#8239;3&#8239;=&#8239;5, vrai, mais 2&#8239;&#215;&#8239;3&#8239;+&#8239;1&#8239;=&#8239;7 : (3&#8239;;&#8239;1) n'est pas solution.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> « L'équation a une infinité de solutions, donc n'importe quel couple convient. »</div><div class="cor"><span class="v">&#10003;</span> Les couples solutions forment une <b>famille précise</b> : les points d'une <b>droite</b>. Tous les autres points du plan, et il y en a beaucoup, ne sont pas solutions. La <b>vérification</b> reste indispensable.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> On tire <i>y</i> de la première équation, puis on reporte cette expression dans cette <b>même</b> équation</div><div class="cor"><span class="v">&#10003;</span> En substitution, l'expression se reporte dans l'<b>autre</b> équation, entre <b>parenthèses</b>. Reportée dans celle dont on l'a tirée, elle donne 0&#8239;=&#8239;0 : c'est vrai, mais cela n'apprend rien.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> 3<i>x</i>&#8239;+&#8239;2<i>y</i>&#8239;=&#8239;8 et 5<i>x</i>&#8239;+&#8239;2<i>y</i>&#8239;=&#8239;12 : on additionne membre à membre pour éliminer <i>y</i></div><div class="cor"><span class="v">&#10003;</span> L'addition n'élimine une inconnue que si ses coefficients sont <b>opposés</b>. Il faut d'abord multiplier la première par &#8722;1 : &#8722;3<i>x</i>&#8239;&#8722;&#8239;2<i>y</i>&#8239;=&#8239;&#8722;8, puis additionner <span class="ar">&#8594;</span> 2<i>x</i>&#8239;=&#8239;4. Vérifie ensuite le couple dans les <b>deux</b> équations : un couple faux vérifie parfois l'une des deux par hasard.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> « Le calcul se termine par 0&#8239;=&#8239;0 : le système n'a donc pas de solution. »</div><div class="cor"><span class="v">&#10003;</span> 0&#8239;=&#8239;0 est une égalité <b>vraie</b> : les deux équations décrivent la <b>même droite</b>, il y a une <b>infinité</b> de solutions. C'est 0&#8239;=&#8239;7, égalité <b>fausse</b>, qui signale deux droites strictement parallèles et <b>aucune</b> solution. Ces deux fins de calcul se ressemblent et disent le contraire.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> On lit le couple sur un tracé à main levée &nbsp;&middot;&nbsp; « le point d'intersection sort de la feuille, donc pas de solution »</div><div class="cor"><span class="v">&#10003;</span> Un tracé imprécis donne un mauvais couple : trace à la règle, gradue soigneusement, et <b>vérifie toujours par le calcul</b> le couple lu. Seuls les <b>coefficients directeurs</b> décident : si <i>a</i>&#8239;&#8800;&#8239;<i>a</i>&#8242;, les droites se coupent, même hors de la feuille.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> Pour 2<i>x</i>&#8239;&#8722;&#8239;3<i>y</i>&#8239;&gt;&#8239;0, on teste l'origine &nbsp;&middot;&nbsp; pour <i>x</i>&#8239;+&#8239;<i>y</i>&#8239;&#8804;&#8239;4, on trace la frontière en pointillés</div><div class="cor"><span class="v">&#10003;</span> L'origine est <b>sur</b> cette frontière : le test donne 0 et n'apprend rien ; prendre un autre point, par exemple (1&#8239;;&#8239;0). Trait <b>plein</b> pour &#8804; et &#8805;, <b>pointillés</b> pour &lt; et &gt;. Enfin, la solution d'un système d'inéquations n'est pas un couple mais une <b>région</b> du plan : on la dessine et on la décrit.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> La copie commence directement par le système &nbsp;&middot;&nbsp; réponse : « <i>x</i>&#8239;=&#8239;12,5 pièces »</div><div class="cor"><span class="v">&#10003;</span> Précise <b>toujours</b> ce que désignent les inconnues, avec leur unité : sans cela des points sont perdus, même si le calcul est juste. Contrôle ensuite la <b>vraisemblance</b> : un nombre de pièces est entier, un prix n'est pas négatif. Et réponds à la <b>question posée</b>, non à celle que tu as su résoudre.</div></div>
+
+</div>
+
+<div class="bandeau bleu">A SAVOIR PAR COEUR AVANT LE DEVOIR</div>
+<div class="cols">
+<ol class="recap">
+<li><b>Equation du premier degré à deux inconnues</b> : <span class="pt"><i>ax</i>&#8239;+&#8239;<i>by</i>&#8239;+&#8239;<i>c</i>&#8239;=&#8239;0</span>, avec <i>a</i> et <i>b</i> non tous les deux nuls. Une solution est un <b>couple</b> (<i>x</i>&#8239;;&#8239;<i>y</i>) de &#8477;&#8239;&#215;&#8239;&#8477;, écrit dans cet ordre.</li>
+<li>Une telle équation a une <b>infinité</b> de solutions : les points d'une <b>droite</b>. On en fabrique une en choisissant <i>x</i> et en calculant <i>y</i>.</li>
+<li>Une <b>solution du système</b> vérifie les <b>deux</b> équations à la fois. Ranger d'abord chaque équation en <span class="pt"><i>ax</i>&#8239;+&#8239;<i>by</i>&#8239;=&#8239;<i>c</i></span>.</li>
+<li><b>Substitution</b> : isoler une inconnue, la reporter dans l'<b>autre</b> équation, entre parenthèses. <b>Combinaison</b> : rendre les coefficients d'une inconnue <b>opposés</b>, puis additionner membre à membre.</li>
+<li><b>Trois cas</b> : droites sécantes <span class="ar">&#8594;</span> un seul couple ; strictement parallèles <span class="ar">&#8594;</span> aucune solution ; confondues <span class="ar">&#8594;</span> une infinité. Sur les formes réduites <i>y</i>&#8239;=&#8239;<i>ax</i>&#8239;+&#8239;<i>b</i> : <i>a</i>&#8239;&#8800;&#8239;<i>a</i>&#8242; ; <i>a</i>&#8239;=&#8239;<i>a</i>&#8242; et <i>b</i>&#8239;&#8800;&#8239;<i>b</i>&#8242; ; <i>a</i> et <i>b</i> égaux.</li>
+<li>Fin de calcul : <b>0&#8239;=&#8239;0</b> (vrai) <span class="ar">&#8594;</span> infinité de solutions ; <b>0&#8239;=&#8239;7</b> (faux) <span class="ar">&#8594;</span> aucune solution.</li>
+<li><b>Inéquation</b> <span class="ar">&#8594;</span> <b>demi-plan</b> de frontière <span class="pt"><i>ax</i>&#8239;+&#8239;<i>by</i>&#8239;+&#8239;<i>c</i>&#8239;=&#8239;0</span> : trait plein pour &#8804; et &#8805;, pointillés pour &lt; et &gt;. On teste <b>un</b> point hors frontière, l'origine si elle n'y est pas. Un <b>système d'inéquations</b> a pour solution la <b>région commune</b>.</li>
+<li><b>Problème</b> : nommer les deux inconnues avec leur unité, écarter l'inutile, deux renseignements <span class="ar">&#8594;</span> deux équations, contrôler la vraisemblance, conclure par une phrase. Et <b>vérifier</b> le couple trouvé dans les deux équations d'origine.</li>
+</ol>
+</div>
+
+</body>
+</html>

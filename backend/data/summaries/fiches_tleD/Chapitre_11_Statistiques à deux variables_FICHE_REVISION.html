@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Fiche de revision - Terminale D - Chapitre 11 : Statistiques a deux variables</title>
+<style>
+/* ===================================================================
+   FICHE DE REVISION, Collection Hakili Lab, Edition 2026
+   Feuille de style autonome, format A4 pret a imprimer.
+   Bleu #005CB9 · Vert #49A145
+   =================================================================== */
+:root{
+  --bleu:#005CB9; --bleu-fonce:#00429A; --bleu-pale:#E8F1FB; --bleu-bord:#B7D2EE;
+  --vert:#49A145; --vert-fonce:#2F7A2C; --vert-pale:#EDF7EC; --vert-bord:#BCE0B9;
+  --gris:#4A4A4A; --gris-clair:#E4E4E4; --rouge:#B3261E;
+}
+@page{
+  size:A4; margin:15mm;
+  @bottom-center{
+    content:"Collection Hakili Lab, Edition 2026  ·  Fiche de revision  ·  " counter(page) "/" counter(pages);
+    font-family:"Segoe UI",Calibri,Arial,sans-serif; font-size:6.6pt; color:#8A8A8A;
+  }
+}
+*{box-sizing:border-box;}
+body{
+  margin:0; font-family:"Segoe UI",Calibri,Arial,sans-serif;
+  font-size:8.4pt; line-height:1.26; color:#1B1B1B;
+}
+p{margin:0 0 3pt;}
+ul{margin:0 0 3pt; padding-left:11pt;}
+li{margin:0 0 1.2pt;}
+b,strong{color:var(--bleu-fonce);}
+
+/* ------------------------------ ENTETE ---------------------------- */
+.entete{
+  display:flex; align-items:stretch; border:1.6pt solid var(--bleu);
+  border-radius:2.5pt; overflow:hidden; margin-bottom:6pt;
+}
+.entete .num{
+  background:var(--bleu); color:#fff; font-size:20pt; font-weight:700;
+  padding:0 8pt; display:flex; align-items:center; justify-content:center; min-width:34pt;
+}
+.entete .txt{padding:3.5pt 8pt; flex:1;}
+.entete .niveau{
+  font-size:7pt; font-weight:700; letter-spacing:.9pt; color:var(--vert-fonce);
+}
+.entete h1{margin:0; font-size:13.5pt; line-height:1.12; color:var(--bleu-fonce); font-weight:700;}
+.entete .sous{font-size:7pt; color:var(--gris); margin-top:1pt;}
+
+/* --------------------------- BANDEAUX ----------------------------- */
+.bandeau{
+  color:#fff; font-weight:700; font-size:9pt; letter-spacing:1pt;
+  padding:2.4pt 7pt; border-radius:2pt; margin:3pt 0 4pt; break-after:avoid; page-break-after:avoid;
+}
+.bandeau.bleu{background:var(--bleu);}
+.bandeau.vert{background:var(--vert);}
+
+/* --------------------------- COLONNES ----------------------------- */
+.cols{column-count:2; column-gap:7mm; column-fill:balance;}
+
+.cols.bal{column-fill:balance;}
+.bloc{margin-bottom:5pt;}
+.keep{break-inside:avoid; page-break-inside:avoid;}
+
+/* --------------------------- LECONS ------------------------------- */
+h2.lecon{
+  margin:0 0 3pt; font-size:8.6pt; font-weight:700; color:#fff; background:var(--bleu-fonce);
+  padding:1.8pt 5pt; border-radius:1.5pt; break-after:avoid; page-break-after:avoid;
+}
+h3.rub{
+  margin:3.5pt 0 1.5pt; font-size:8.2pt; font-weight:700; color:var(--vert-fonce);
+  border-bottom:.7pt solid var(--vert-bord); padding-bottom:.8pt;
+  break-after:avoid; page-break-after:avoid;
+}
+
+/* --------------------------- ENCADRES ----------------------------- */
+.form{
+  background:var(--bleu-pale); border:.8pt solid var(--bleu-bord); border-left:2.6pt solid var(--bleu);
+  border-radius:2pt; padding:2.4pt 5pt; margin:2.2pt 0 3.4pt;
+  break-inside:avoid; page-break-inside:avoid;
+}
+.form .t{
+  display:block; font-size:6.8pt; font-weight:700; letter-spacing:.6pt;
+  color:var(--bleu); margin-bottom:1.5pt;
+}
+.form .c{text-align:center; font-size:9.1pt; margin:1.6pt 0;}
+.note{background:var(--vert-pale); border-left:2.4pt solid var(--vert); padding:2.4pt 5pt; border-radius:1.5pt; margin:2.5pt 0 4pt; break-inside:avoid;}
+
+/* --------------------------- TABLEAUX ----------------------------- */
+table{width:100%; border-collapse:collapse; font-size:7.6pt; margin:2pt 0 4pt; break-inside:avoid;}
+th{background:var(--bleu); color:#fff; font-weight:700; text-align:left; padding:1.8pt 4pt; font-size:7.2pt;}
+td{border:.6pt solid var(--gris-clair); padding:1.8pt 4pt; vertical-align:top;}
+tr{break-inside:avoid;}
+table.var td{text-align:center; font-size:8pt;}
+table.var td.lab{text-align:left; font-weight:700; color:var(--bleu-fonce); background:var(--bleu-pale);}
+
+/* ----------------------------- PIEGES ----------------------------- */
+table.pieges th:first-child{width:44%;}
+table.pieges td:first-child{color:var(--rouge); background:#FDF1F0;}
+.x{font-weight:700;}
+.v{color:var(--vert-fonce); font-weight:700;}
+
+/* ---------------------------- RECAP ------------------------------- */
+ol.recap{margin:0; padding-left:0; list-style:none; counter-reset:r;}
+ol.recap li{
+  counter-increment:r; position:relative; padding-left:13pt; margin-bottom:1.8pt;
+  break-inside:avoid;
+}
+ol.recap li::before{
+  content:counter(r); position:absolute; left:0; top:.3pt;
+  width:10pt; height:10pt; border-radius:50%; background:var(--vert); color:#fff;
+  font-size:6.6pt; font-weight:700; text-align:center; line-height:10pt;
+}
+
+/* --------------------------- MATHS -------------------------------- */
+.m{font-family:Cambria,Georgia,"Times New Roman",serif;}
+i,var{font-family:Cambria,Georgia,"Times New Roman",serif; font-style:italic;}
+.op{font-family:Cambria,Georgia,"Times New Roman",serif; font-style:normal;}
+.f{display:inline-block; vertical-align:middle; text-align:center;
+   margin:0 .12em; line-height:1.06; font-family:Cambria,Georgia,"Times New Roman",serif;}
+.f>span{display:block; padding:0 .2em;}
+.f>span:first-child{border-bottom:.6pt solid currentColor; padding-bottom:.08em;}
+.f>span:last-child{padding-top:.04em;}
+.rad{border-top:.6pt solid currentColor; padding-top:.12em;}
+/* line-height:0 evite que l'exposant n'ecarte les lignes ; position:relative le
+   repositionne sans qu'il heurte la barre de fraction ni le trait du radical. */
+sup,sub{font-size:.68em; line-height:0; position:relative; vertical-align:baseline;}
+sup{top:-.42em;}
+sub{bottom:-.22em;}
+.pt{white-space:nowrap;}
+/* Les fleches n'ont qu'un glyphe atrophie dans la fonte serif : on les force
+   en sans-serif, ou elles sont franches meme a 8 pt. */
+.ar{font-family:"Segoe UI",Calibri,Arial,"DejaVu Sans",sans-serif; font-style:normal;}
+
+/* ------------------- PIEGES : blocs erreur / correction ------------- */
+.pg{font-size:8.1pt; border-left:2.4pt solid var(--rouge); background:#FDF1F0; border-radius:1.5pt;
+    padding:2pt 5pt; margin:0 0 2.8pt; break-inside:avoid; page-break-inside:avoid;}
+.pg .err{color:var(--rouge); font-weight:600;}
+.pg .cor{color:#1B1B1B; margin-top:.8pt;}
+.pg .cor b{color:var(--bleu-fonce);}
+.v{color:var(--vert-fonce); font-weight:700;}
+
+</style>
+</head>
+<body>
+<header class="entete">
+  <div class="num">11</div>
+  <div class="txt">
+    <div class="niveau">TERMINALE D &middot; MATHEMATIQUES</div>
+    <h1>Statistiques à deux variables</h1>
+    <div class="sous">Leçon 1 : nuage de points et point moyen &middot; Leçon 2 : covariance, corrélation et méthode de Mayer &middot; Leçon 3 : ajustement par les moindres carrés</div>
+  </div>
+</header>
+
+<div class="bandeau bleu" style="margin-top:0">L'ESSENTIEL</div>
+<div class="cols">
+
+<!-- ================= LECON 1 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 1&nbsp;: Nuage de points et point moyen</h2>
+<p>Etudier une <b>série statistique double</b> (ou à deux variables), c'est relever <b>simultanément</b> sur <i>n</i> individus deux caractères numériques <i>x</i> et <i>y</i>. Chaque individu <i>i</i> fournit un <b>couple</b> <span class="pt">(<i>x<sub>i</sub></i>&#8239;;&#8239;<i>y<sub>i</sub></i>)</span> ; la série est la liste de ces <i>n</i> couples.</p></div>
+<p><b>Nuage de points.</b> Dans un repère du plan, on associe à chaque couple le point <span class="pt"><i>M<sub>i</sub></i>(<i>x<sub>i</sub></i>&#8239;;&#8239;<i>y<sub>i</sub></i>)</span> ; l'ensemble des points <span class="pt"><i>M</i><sub>1</sub>, <i>M</i><sub>2</sub>, &hellip;, <i>M<sub>n</sub></i></span> est le <b>nuage de points</b> de la série.</p>
+<p>C'est l'<b>appariement</b> des deux mesures sur un même individu qui porte toute l'information : permuter les valeurs de <i>y</i> entre elles change la série, même si les valeurs de <i>x</i> et celles de <i>y</i> restent les mêmes.</p>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Tableau à double entrée</h3>
+<p>Quand plusieurs individus fournissent le <b>même</b> couple, on range la série dans un <b>tableau à double entrée</b> : valeurs de <i>x</i> en lignes, valeurs de <i>y</i> en colonnes, et dans chaque case l'<b>effectif</b> <i>n<sub>ij</sub></i> du couple <span class="pt">(<i>x<sub>i</sub></i>&#8239;;&#8239;<i>y<sub>j</sub></i>)</span>.</p>
+<ul>
+<li><b>Distributions marginales</b> : les totaux des lignes et des colonnes, portés en <b>marge</b>. Chacune est une série à <b>une</b> variable, celle qu'on obtiendrait en oubliant l'autre caractère.</li>
+<li><b>Fréquence marginale</b> = <span class="pt"><span class="f"><span>effectif marginal</span><span><i>n</i></span></span></span>, comprise entre 0 et 1 ; la somme des fréquences marginales de <i>x</i> vaut 1, et de même pour <i>y</i>.</li>
+<li><b>Contrôle</b> : le total général doit se retrouver en additionnant les marges <b>dans les deux sens</b>.</li>
+</ul>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Point moyen</h3>
+<div class="form">
+  <span class="t">POINT MOYEN DU NUAGE</span>
+  <div class="c m"><i>G</i>(<span class="rad"><i>x</i></span>&#8239;;&#8239;<span class="rad"><i>y</i></span>) &nbsp;&nbsp; <span class="rad"><i>x</i></span>&#8239;=&#8239;<span class="f"><span>1</span><span><i>n</i></span></span>&#8239;&#8721;<i>x<sub>i</sub></i> &nbsp;&nbsp; <span class="rad"><i>y</i></span>&#8239;=&#8239;<span class="f"><span>1</span><span><i>n</i></span></span>&#8239;&#8721;<i>y<sub>i</sub></i></div>
+  <div class="c m">pondéré : &nbsp;<span class="rad"><i>x</i></span>&#8239;=&#8239;<span class="f"><span>1</span><span><i>n</i></span></span>&#8239;&#8721;<i>n<sub>i</sub></i>&#8239;<i>x<sub>i</sub></i> &nbsp;&nbsp; <span class="rad"><i>y</i></span>&#8239;=&#8239;<span class="f"><span>1</span><span><i>n</i></span></span>&#8239;&#8721;<i>n<sub>i</sub></i>&#8239;<i>y<sub>i</sub></i> &nbsp;&nbsp;avec&nbsp;&nbsp;<i>n</i>&#8239;=&#8239;&#8721;<i>n<sub>i</sub></i></div>
+</div>
+<p><b>Données en classes</b> : on remplace chaque classe par son <b>centre</b>, demi-somme de ses deux bornes, puis on applique la formule pondérée.</p>
+<p><i>G</i> est le <b>résumé du nuage en un seul point</b> : <span class="pt">&#8721;(<i>x<sub>i</sub></i>&#8239;&#8722;&#8239;<span class="rad"><i>x</i></span>)&#8239;=&#8239;0</span> et <span class="pt">&#8721;(<i>y<sub>i</sub></i>&#8239;&#8722;&#8239;<span class="rad"><i>y</i></span>)&#8239;=&#8239;0</span>, le nuage s'équilibre autour de lui dans les deux directions. <b>Toutes les droites d'ajustement du chapitre passent par <i>G</i></b>.</p>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Construire le nuage</h3>
+<ul>
+<li>En <b>abscisse</b> la variable qui <b>explique</b> (temps, dose, surface, prix), en <b>ordonnée</b> celle que l'on veut <b>prévoir</b> (rendement, effectif, quantité vendue).</li>
+<li>Echelles choisies sur les valeurs extrêmes, <b>indépendantes</b> d'un axe à l'autre ; unité indiquée sur chaque axe ; toute coupure d'axe est signalée.</li>
+<li>Un point net par couple : on ne <b>relie jamais</b> les points, un nuage n'est pas une courbe.</li>
+<li><i>G</i> se place avec un <b>symbole différent</b> et doit tomber au milieu du nuage ; s'il en est très loin, une moyenne est fausse.</li>
+</ul>
+</div>
+
+<!-- ================= LECON 2 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 2&nbsp;: Covariance, corrélation et méthode de Mayer</h2>
+<div class="form">
+  <span class="t">COVARIANCE&nbsp;: DEFINITION ET FORMULE DE CALCUL</span>
+  <div class="c m"><span class="op">cov</span>(<i>x</i>,<i>y</i>)&#8239;=&#8239;&#963;<sub><i>xy</i></sub>&#8239;=&#8239;<span class="f"><span>1</span><span><i>n</i></span></span>&#8239;&#8721;(<i>x<sub>i</sub></i>&#8239;&#8722;&#8239;<span class="rad"><i>x</i></span>)(<i>y<sub>i</sub></i>&#8239;&#8722;&#8239;<span class="rad"><i>y</i></span>)</div>
+  <div class="c m"><span class="op">cov</span>(<i>x</i>,<i>y</i>)&#8239;=&#8239;<span class="f"><span>1</span><span><i>n</i></span></span>&#8239;&#8721;<i>x<sub>i</sub></i>&#8239;<i>y<sub>i</sub></i>&#8239;&#8722;&#8239;<span class="rad"><i>x</i></span>&#8239;<span class="rad"><i>y</i></span></div>
+</div></div>
+<p><b>Cas pondéré</b> : <span class="pt"><span class="op">cov</span>(<i>x</i>,<i>y</i>)&#8239;=&#8239;<span class="f"><span>1</span><span><i>n</i></span></span>&#8239;&#8721;<i>n<sub>ij</sub></i>&#8239;<i>x<sub>i</sub></i>&#8239;<i>y<sub>j</sub></i>&#8239;&#8722;&#8239;<span class="rad"><i>x</i></span>&#8239;<span class="rad"><i>y</i></span></span>.</p>
+<p><b>Signe</b> : covariance <b>positive</b> <span class="ar">&#8594;</span> tendance <b>montante</b> ; <b>négative</b> <span class="ar">&#8594;</span> tendance <b>descendante</b> ; <b>nulle</b> <span class="ar">&#8594;</span> aucune tendance linéaire.</p>
+<div class="note">C'est la formule de Koenig transposée : « moyenne des produits moins produit des moyennes ». Pour <i>y</i>&#8239;=&#8239;<i>x</i>, elle redonne <span class="pt"><span class="op">cov</span>(<i>x</i>,<i>x</i>)&#8239;=&#8239;<i>V</i>(<i>x</i>)</span> : <b>la variance est le cas particulier de la covariance où les deux variables sont confondues</b>.</div>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Coefficient de corrélation linéaire</h3>
+<div class="form">
+  <span class="t">COEFFICIENT DE CORRELATION LINEAIRE</span>
+  <div class="c m"><i>r</i>&#8239;=&#8239;<span class="f"><span><span class="op">cov</span>(<i>x</i>,<i>y</i>)</span><span>&#963;<sub><i>x</i></sub>&#8239;&#963;<sub><i>y</i></sub></span></span> &nbsp;&nbsp; &#963;<sub><i>x</i></sub>&#8239;=&#8239;&#8730;<span class="rad"><i>V</i>(<i>x</i>)</span> &nbsp;&nbsp; &#963;<sub><i>y</i></sub>&#8239;=&#8239;&#8730;<span class="rad"><i>V</i>(<i>y</i>)</span></div>
+  <div class="c m">&#8722;1&#8239;&#8804;&#8239;<i>r</i>&#8239;&#8804;&#8239;1 &nbsp;&middot;&nbsp; <i>r</i> sans unité, du signe de la covariance</div>
+</div>
+<p>Avec <span class="pt"><i>V</i>(<i>x</i>)&#8239;=&#8239;<span class="f"><span>1</span><span><i>n</i></span></span>&#8239;&#8721;<i>x<sub>i</sub></i><sup>2</sup>&#8239;&#8722;&#8239;<span class="rad"><i>x</i></span><sup>2</sup></span> et <span class="pt"><i>V</i>(<i>y</i>)&#8239;=&#8239;<span class="f"><span>1</span><span><i>n</i></span></span>&#8239;&#8721;<i>y<sub>i</sub></i><sup>2</sup>&#8239;&#8722;&#8239;<span class="rad"><i>y</i></span><sup>2</sup></span>.</p>
+<table>
+<tr><th><span class="m">|<i>r</i>|</span></th><th>Lecture</th></tr>
+<tr><td class="m">|<i>r</i>|&#8239;=&#8239;1</td><td>points <b>exactement alignés</b> ; ajustement affine parfait</td></tr>
+<tr><td class="m">|<i>r</i>|&#8239;&#8805;&#8239;0,9 environ</td><td><b>forte</b> corrélation ; ajustement affine justifié</td></tr>
+<tr><td class="m">|<i>r</i>|&#8239;&#8776;&#8239;0,5</td><td>corrélation <b>moyenne</b> ; ajustement grossier</td></tr>
+<tr><td class="m">|<i>r</i>| proche de 0</td><td>aucun lien <b>linéaire</b> : ne pas tracer de droite</td></tr>
+</table>
+<p>Le <b>signe</b> de <i>r</i> donne le sens, sa <b>valeur absolue</b> la force. <span class="pt"><i>r</i>&#8239;=&#8239;0</span> signifie « aucun lien <b>linéaire</b> » et non « aucun lien » : des points situés sur une parabole peuvent donner <span class="pt"><i>r</i>&#8239;=&#8239;0</span>.</p>
+<div class="note"><b>Corrélation n'est pas causalité.</b> Un <i>r</i> proche de 1 prouve que les deux grandeurs ont varié ensemble, jamais que l'une est la cause de l'autre : le lien peut être inversé, ou dû à une <b>troisième</b> grandeur cachée agissant sur les deux.</div>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Ajustements graphiques</h3>
+<p><b>Au jugé.</b> Si le nuage est allongé, on trace <b>à la règle</b> une droite qui suit la tendance, en laissant à peu près autant de points au-dessus qu'en dessous. Rapide et sans calcul, mais deux élèves ne tracent pas la même droite.</p>
+<p><b>Au jugé par <i>G</i>.</b> On impose à la droite de passer par le <b>point moyen</b> ; un second point la détermine entièrement, et son équation s'obtient par la méthode des deux points.</p>
+<div class="form">
+  <span class="t">METHODE DE MAYER&nbsp;: DROITE DES POINTS MOYENS</span>
+  <div class="c m">couples rangés par <i>x</i> croissant, partagés en <b>deux groupes de même effectif</b></div>
+  <div class="c m"><i>G</i><sub>1</sub>(<i>x</i><sub>1</sub>&#8239;;&#8239;<i>y</i><sub>1</sub>), <i>G</i><sub>2</sub>(<i>x</i><sub>2</sub>&#8239;;&#8239;<i>y</i><sub>2</sub>) <span class="ar">&#8594;</span> droite (<i>G</i><sub>1</sub><i>G</i><sub>2</sub>) : <i>y</i>&#8239;=&#8239;<i>ax</i>&#8239;+&#8239;<i>b</i></div>
+  <div class="c m"><i>a</i>&#8239;=&#8239;<span class="f"><span><i>y</i><sub>2</sub>&#8239;&#8722;&#8239;<i>y</i><sub>1</sub></span><span><i>x</i><sub>2</sub>&#8239;&#8722;&#8239;<i>x</i><sub>1</sub></span></span> &nbsp;&nbsp;&nbsp; <i>b</i>&#8239;=&#8239;<i>y</i><sub>1</sub>&#8239;&#8722;&#8239;<i>a</i>&#8239;<i>x</i><sub>1</sub></div>
+</div>
+<p>Si <i>n</i> est <b>impair</b>, le <b>premier</b> groupe reçoit le point supplémentaire. La droite de Mayer passe toujours par le point moyen <i>G</i> du nuage entier ; à effectifs égaux, <i>G</i> est le <b>milieu</b> de <span class="pt">[<i>G</i><sub>1</sub><i>G</i><sub>2</sub>]</span>, ce qui fournit la vérification.</p>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Conduite du calcul</h3>
+<ul>
+<li>Tableau à cinq colonnes : <span class="m"><i>x<sub>i</sub></i></span>, <span class="m"><i>y<sub>i</sub></i></span>, <span class="m"><i>x<sub>i</sub></i><sup>2</sup></span>, <span class="m"><i>y<sub>i</sub></i><sup>2</sup></span>, <span class="m"><i>x<sub>i</sub></i>&#8239;<i>y<sub>i</sub></i></span>, puis somme de chaque colonne.</li>
+<li>En déduire <span class="rad"><i>x</i></span> et <span class="rad"><i>y</i></span>, puis <span class="op">cov</span>(<i>x</i>,<i>y</i>), <i>V</i>(<i>x</i>), <i>V</i>(<i>y</i>), &#963;<sub><i>x</i></sub>, &#963;<sub><i>y</i></sub> et enfin <i>r</i>.</li>
+<li><b>Contrôles</b> : le signe de la covariance suit l'allure du nuage ; les deux variances sont positives ; <i>r</i> appartient à <span class="pt">[&#8722;1&#8239;;&#8239;1]</span>.</li>
+<li><b>Interpréter</b> en une phrase : le signe donne le sens, la valeur absolue la force, et l'on précise si un ajustement affine est justifié.</li>
+</ul>
+</div>
+
+<!-- ================= LECON 3 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 3&nbsp;: Ajustement par les moindres carrés</h2>
+<p>Parmi toutes les droites <span class="pt"><i>y</i>&#8239;=&#8239;<i>ax</i>&#8239;+&#8239;<i>b</i></span>, il en existe <b>une et une seule</b> qui rende <b>minimale</b> la somme des carrés des écarts <b>verticaux</b> <span class="pt">&#8721;(<i>y<sub>i</sub></i>&#8239;&#8722;&#8239;(<i>ax<sub>i</sub></i>&#8239;+&#8239;<i>b</i>))<sup>2</sup></span> : c'est la <b>droite de régression de <i>y</i> en <i>x</i></b>, ou droite des moindres carrés.</p></div>
+<div class="form">
+  <span class="t">DROITE DE REGRESSION DE <i>y</i> EN <i>x</i></span>
+  <div class="c m"><i>y</i>&#8239;=&#8239;<i>ax</i>&#8239;+&#8239;<i>b</i> &nbsp;&nbsp; <i>a</i>&#8239;=&#8239;<span class="f"><span><span class="op">cov</span>(<i>x</i>,<i>y</i>)</span><span><i>V</i>(<i>x</i>)</span></span>&#8239;=&#8239;<span class="f"><span>&#963;<sub><i>xy</i></sub><span style="display:inline-block;width:0;height:.9em;vertical-align:-.5em"></span></span><span><span style="display:inline-block;width:0;height:.85em;vertical-align:.34em"></span>&#963;<sub><i>x</i></sub><sup>2</sup></span></span> &nbsp;&nbsp; <i>b</i>&#8239;=&#8239;<span class="rad"><i>y</i></span>&#8239;&#8722;&#8239;<i>a</i>&#8239;<span class="rad"><i>x</i></span></div>
+</div>
+<p>Elle <b>passe par le point moyen</b> <span class="pt"><i>G</i>(<span class="rad"><i>x</i></span>&#8239;;&#8239;<span class="rad"><i>y</i></span>)</span> : la formule de <i>b</i> n'est que l'égalité <span class="pt"><span class="rad"><i>y</i></span>&#8239;=&#8239;<i>a</i>&#8239;<span class="rad"><i>x</i></span>&#8239;+&#8239;<i>b</i></span> résolue en <i>b</i>. Au dénominateur de la pente figure la <b>variance de la variable de départ</b> ; <i>a</i> a donc le signe de la covariance, donc celui de <i>r</i>. Les écarts <span class="pt"><i>e<sub>i</sub></i>&#8239;=&#8239;<i>y<sub>i</sub></i>&#8239;&#8722;&#8239;(<i>ax<sub>i</sub></i>&#8239;+&#8239;<i>b</i>)</span> ont une somme nulle, et aucune autre droite ne rend <span class="pt">&#8721;<i>e<sub>i</sub></i><sup>2</sup></span> plus petite.</p>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Droite de régression de <span class="m"><i>x</i></span> en <span class="m"><i>y</i></span></h3>
+<p>Lorsque c'est <i>x</i> que l'on veut prévoir à partir de <i>y</i>, on échange les rôles des deux variables et l'on minimise les écarts <b>horizontaux</b>.</p>
+<div class="form">
+  <span class="t">REGRESSION DE <i>x</i> EN <i>y</i> ET RELATION ENTRE LES DEUX DROITES</span>
+  <div class="c m"><i>x</i>&#8239;=&#8239;<i>a</i>&#8242;<i>y</i>&#8239;+&#8239;<i>b</i>&#8242; &nbsp;&nbsp; <i>a</i>&#8242;&#8239;=&#8239;<span class="f"><span><span class="op">cov</span>(<i>x</i>,<i>y</i>)</span><span><i>V</i>(<i>y</i>)</span></span> &nbsp;&nbsp; <i>b</i>&#8242;&#8239;=&#8239;<span class="rad"><i>x</i></span>&#8239;&#8722;&#8239;<i>a</i>&#8242;&#8239;<span class="rad"><i>y</i></span></div>
+  <div class="c m"><i>a</i>&#8239;&#215;&#8239;<i>a</i>&#8242;&#8239;=&#8239;<i>r</i><sup>2</sup></div>
+</div>
+<p>Elle passe elle aussi par <i>G</i> : les deux droites se coupent <b>toujours</b> au point moyen. Comme <span class="pt"><i>r</i><sup>2</sup>&#8239;&#8804;&#8239;1</span>, elles sont en général <b>distinctes</b>, et <b>confondues si et seulement si</b> <span class="pt"><i>r</i><sup>2</sup>&#8239;=&#8239;1</span>, c'est-à-dire lorsque les points sont exactement alignés. Elles ne minimisent pas la même chose : plus <span class="pt">|<i>r</i>|</span> est proche de 1, plus l'angle qu'elles forment est petit.</p>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Prévision</h3>
+<p>Pour prévoir la valeur de <i>y</i> associée à <span class="pt"><i>x</i><sub>0</sub></span>, on remplace <i>x</i> par <span class="pt"><i>x</i><sub>0</sub></span> dans l'équation : <span class="pt"><i>y</i><sub>0</sub>&#8239;=&#8239;<i>ax</i><sub>0</sub>&#8239;+&#8239;<i>b</i></span>. Le résultat se donne <b>avec son unité</b> et doit être plausible dans le contexte.</p>
+<ul>
+<li><b>Interpolation</b> : <span class="pt"><i>x</i><sub>0</sub></span> à l'<b>intérieur</b> de l'intervalle des données observées <span class="ar">&#8594;</span> prévision raisonnablement fiable.</li>
+<li><b>Extrapolation</b> : <span class="pt"><i>x</i><sub>0</sub></span> <b>hors</b> de cet intervalle <span class="ar">&#8594;</span> fiabilité qui décroît vite, à commenter : rien ne garantit que la relation reste affine, et une production finit par plafonner alors qu'une droite monte indéfiniment.</li>
+</ul>
+<p><b>Marche à suivre.</b> Tableau de calcul (<span class="m"><i>x<sub>i</sub></i></span>, <span class="m"><i>y<sub>i</sub></i></span>, <span class="m"><i>x<sub>i</sub></i><sup>2</sup></span>, <span class="m"><i>x<sub>i</sub></i>&#8239;<i>y<sub>i</sub></i></span>) <span class="ar">&#8594;</span> <span class="rad"><i>x</i></span> et <span class="rad"><i>y</i></span> <span class="ar">&#8594;</span> <span class="op">cov</span>(<i>x</i>,<i>y</i>) et <i>V</i>(<i>x</i>) <span class="ar">&#8594;</span> <i>a</i> puis <i>b</i> <span class="ar">&#8594;</span> <b>vérifier</b> que <span class="pt"><i>a</i>&#8239;<span class="rad"><i>x</i></span>&#8239;+&#8239;<i>b</i></span> redonne <span class="rad"><i>y</i></span>. Pour tracer, deux points suffisent : <i>G</i> et un point d'abscisse extrême. Calculer <i>r</i> <b>avant</b> d'ajuster : si <span class="pt">|<i>r</i>|</span> est faible, les formules donnent quand même un <i>a</i> et un <i>b</i>, mais la droite ne décrit rien.</p>
+</div>
+
+</div>
+
+<div class="bandeau vert">PIEGES ET ERREURS FREQUENTES</div>
+<div class="cols">
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> <span class="pt"><i>r</i>&#8239;=&#8239;0,9</span> donc <i>x</i> <b>cause</b> <i>y</i></div><div class="cor"><span class="v">&#10003;</span> La corrélation mesure un lien <b>linéaire</b>, jamais une <b>cause</b>. Le lien peut être inversé, ou provenir d'une <b>troisième</b> variable cachée qui agit sur les deux. La statistique constate, elle ne démontre pas les causes.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> <span class="pt"><i>r</i>&#8239;=&#8239;0</span> donc <i>x</i> et <i>y</i> n'ont aucun lien</div><div class="cor"><span class="v">&#10003;</span> <span class="pt"><i>r</i>&#8239;=&#8239;0</span> signifie seulement qu'il n'y a pas de lien <b>linéaire</b>. Des points situés sur une parabole peuvent donner <span class="pt"><i>r</i>&#8239;=&#8239;0</span> tout en étant liés par une relation exacte.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> <span class="pt"><i>r</i>&#8239;=&#8239;1,4</span> : la corrélation est très forte</div><div class="cor"><span class="v">&#10003;</span> Impossible : on a <b>toujours</b> <span class="pt">&#8722;1&#8239;&#8804;&#8239;<i>r</i>&#8239;&#8804;&#8239;1</span>. Une valeur hors de <span class="pt">[&#8722;1&#8239;;&#8239;1]</span> signale une erreur de calcul, le plus souvent un écart-type oublié au dénominateur.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> <span class="pt"><i>a</i>&#8239;=&#8239;<span class="f"><span><i>V</i>(<i>x</i>)</span><span><span class="op">cov</span>(<i>x</i>,<i>y</i>)</span></span></span> &nbsp;&middot;&nbsp; la droite de <i>y</i> en <i>x</i> et celle de <i>x</i> en <i>y</i> sont la même</div><div class="cor"><span class="v">&#10003;</span> Les deux termes sont inversés : <span class="pt"><i>a</i>&#8239;=&#8239;<span class="f"><span><span class="op">cov</span>(<i>x</i>,<i>y</i>)</span><span><i>V</i>(<i>x</i>)</span></span></span>. Au dénominateur figure toujours la <b>variance de la variable de départ</b> : <i>V</i>(<i>x</i>) pour <span class="pt"><i>y</i>&#8239;=&#8239;<i>ax</i>&#8239;+&#8239;<i>b</i></span>, <i>V</i>(<i>y</i>) pour <span class="pt"><i>x</i>&#8239;=&#8239;<i>a</i>&#8242;<i>y</i>&#8239;+&#8239;<i>b</i>&#8242;</span>. Les deux droites sont <b>distinctes</b> sauf si <span class="pt">|<i>r</i>|&#8239;=&#8239;1</span> ; elles se coupent en <i>G</i>.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> Le point moyen <i>G</i> est le point du nuage le plus haut</div><div class="cor"><span class="v">&#10003;</span> <span class="pt"><i>G</i>(<span class="rad"><i>x</i></span>&#8239;;&#8239;<span class="rad"><i>y</i></span>)</span> a pour coordonnées les deux <b>moyennes</b> : ce n'est en général <b>pas</b> un point du nuage. Toutes les valeurs entrent dans les moyennes, y compris celles qui contredisent la tendance.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> Dans le tableau à double entrée, la fréquence marginale de <span class="pt"><i>x</i>&#8239;=&#8239;2</span> est 6</div><div class="cor"><span class="v">&#10003;</span> 6 est l'<b>effectif</b> marginal ; la <b>fréquence</b> marginale est <span class="pt"><span class="f"><span>6</span><span><i>n</i></span></span></span>, soit <span class="pt"><span class="f"><span>6</span><span>10</span></span>&#8239;=&#8239;0,6</span> pour <span class="pt"><i>n</i>&#8239;=&#8239;10</span>. Avec un tel tableau, les moyennes se calculent <b>pondérées</b> par les effectifs.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> L'année 2026 donne <span class="pt"><i>x</i>&#8239;=&#8239;2026</span> dans la droite <span class="pt"><i>y</i>&#8239;=&#8239;13<i>x</i>&#8239;+&#8239;81</span></div><div class="cor"><span class="v">&#10003;</span> <i>x</i> est le <b>rang</b> de l'année, tel qu'il a été défini dans l'énoncé : si 2020 correspond à <span class="pt"><i>x</i>&#8239;=&#8239;1</span>, alors 2026 correspond à <span class="pt"><i>x</i>&#8239;=&#8239;7</span>.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> <span class="pt">|<i>r</i>|&#8239;=&#8239;0,2</span>, mais on trace la droite d'ajustement et l'on prévoit à 20 ans</div><div class="cor"><span class="v">&#10003;</span> Un calcul ne refuse jamais de s'exécuter : la droite existe mais ne décrit rien. On calcule <i>r</i> <b>avant</b> d'ajuster. Et prévoir loin des données est une <b>extrapolation</b> : sa fiabilité décroît vite, elle doit être commentée.</div></div>
+
+</div>
+
+<div class="bandeau bleu">A SAVOIR PAR COEUR AVANT LE DEVOIR</div>
+<div class="cols">
+<ol class="recap">
+<li>Série double = liste de <b>couples</b> <span class="pt">(<i>x<sub>i</sub></i>&#8239;;&#8239;<i>y<sub>i</sub></i>)</span> ; nuage = points <span class="pt"><i>M<sub>i</sub></i>(<i>x<sub>i</sub></i>&#8239;;&#8239;<i>y<sub>i</sub></i>)</span>, jamais reliés. Tableau à double entrée : les <b>marges</b> donnent les distributions marginales, et fréquence marginale <span class="pt">=&#8239;<span class="f"><span>effectif marginal</span><span><i>n</i></span></span></span>.</li>
+<li><span class="pt"><i>G</i>(<span class="rad"><i>x</i></span>&#8239;;&#8239;<span class="rad"><i>y</i></span>)</span> avec <span class="pt"><span class="rad"><i>x</i></span>&#8239;=&#8239;<span class="f"><span>1</span><span><i>n</i></span></span>&#8239;&#8721;<i>x<sub>i</sub></i></span> ; moyennes <b>pondérées</b> s'il y a des effectifs, <b>centres</b> des classes si les données sont groupées. <b>Toute droite d'ajustement passe par <i>G</i></b>.</li>
+<li><span class="pt"><span class="op">cov</span>(<i>x</i>,<i>y</i>)&#8239;=&#8239;&#963;<sub><i>xy</i></sub>&#8239;=&#8239;<span class="f"><span>1</span><span><i>n</i></span></span>&#8239;&#8721;<i>x<sub>i</sub></i>&#8239;<i>y<sub>i</sub></i>&#8239;&#8722;&#8239;<span class="rad"><i>x</i></span>&#8239;<span class="rad"><i>y</i></span></span>, du signe de la tendance ; <span class="pt"><span class="op">cov</span>(<i>x</i>,<i>x</i>)&#8239;=&#8239;<i>V</i>(<i>x</i>)&#8239;=&#8239;<span class="f"><span>1</span><span><i>n</i></span></span>&#8239;&#8721;<i>x<sub>i</sub></i><sup>2</sup>&#8239;&#8722;&#8239;<span class="rad"><i>x</i></span><sup>2</sup></span>.</li>
+<li><span class="pt"><i>r</i>&#8239;=&#8239;<span class="f"><span><span class="op">cov</span>(<i>x</i>,<i>y</i>)</span><span>&#963;<sub><i>x</i></sub>&#963;<sub><i>y</i></sub></span></span>&#8239;&#8712;&#8239;[&#8722;1&#8239;;&#8239;1]</span> : le <b>signe</b> donne le sens, la <b>valeur absolue</b> la force. <span class="pt">|<i>r</i>|&#8239;=&#8239;1</span> : points alignés ; <span class="pt">|<i>r</i>|&#8239;&#8805;&#8239;0,9</span> : ajustement affine justifié ; <span class="pt"><i>r</i>&#8239;=&#8239;0</span> : pas de lien <b>linéaire</b>.</li>
+<li><b>Mayer</b> : ranger par <i>x</i> croissant, deux groupes de même effectif (le premier reçoit le point en trop si <i>n</i> est impair), droite <span class="pt">(<i>G</i><sub>1</sub><i>G</i><sub>2</sub>)</span> avec <span class="pt"><i>a</i>&#8239;=&#8239;<span class="f"><span><i>y</i><sub>2</sub>&#8239;&#8722;&#8239;<i>y</i><sub>1</sub></span><span><i>x</i><sub>2</sub>&#8239;&#8722;&#8239;<i>x</i><sub>1</sub></span></span></span> et <span class="pt"><i>b</i>&#8239;=&#8239;<i>y</i><sub>1</sub>&#8239;&#8722;&#8239;<i>a</i><i>x</i><sub>1</sub></span> ; elle passe par <i>G</i>.</li>
+<li><b>Régression de <i>y</i> en <i>x</i></b> : <span class="pt"><i>a</i>&#8239;=&#8239;<span class="f"><span><span class="op">cov</span>(<i>x</i>,<i>y</i>)</span><span><i>V</i>(<i>x</i>)</span></span></span>, <span class="pt"><i>b</i>&#8239;=&#8239;<span class="rad"><i>y</i></span>&#8239;&#8722;&#8239;<i>a</i>&#8239;<span class="rad"><i>x</i></span></span> ; elle rend minimale <span class="pt">&#8721;(<i>y<sub>i</sub></i>&#8239;&#8722;&#8239;(<i>ax<sub>i</sub></i>&#8239;+&#8239;<i>b</i>))<sup>2</sup></span> et passe par <i>G</i>.</li>
+<li><b>Régression de <i>x</i> en <i>y</i></b> : <span class="pt"><i>a</i>&#8242;&#8239;=&#8239;<span class="f"><span><span class="op">cov</span>(<i>x</i>,<i>y</i>)</span><span><i>V</i>(<i>y</i>)</span></span></span>, <span class="pt"><i>b</i>&#8242;&#8239;=&#8239;<span class="rad"><i>x</i></span>&#8239;&#8722;&#8239;<i>a</i>&#8242;&#8239;<span class="rad"><i>y</i></span></span>, avec <span class="pt"><i>a</i>&#8239;&#215;&#8239;<i>a</i>&#8242;&#8239;=&#8239;<i>r</i><sup>2</sup></span> : droites <b>distinctes</b> sauf si <span class="pt">|<i>r</i>|&#8239;=&#8239;1</span>, sécantes en <i>G</i>. Au dénominateur, la <b>variance de la variable de départ</b>.</li>
+<li><b>Prévision</b> : remplacer <i>x</i> par <span class="pt"><i>x</i><sub>0</sub></span> dans <span class="pt"><i>y</i>&#8239;=&#8239;<i>ax</i>&#8239;+&#8239;<i>b</i></span>, avec l'unité. <b>Interpolation</b> fiable, <b>extrapolation</b> à commenter. Corrélation n'est pas causalité, et l'on calcule <i>r</i> avant d'ajuster.</li>
+</ol>
+</div>
+
+</body>
+</html>

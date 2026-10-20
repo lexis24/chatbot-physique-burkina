@@ -1,0 +1,332 @@
+{
+  "niveau": "6ème",
+  "chapitre": "Chapitre 12 : Les fractions",
+  "source": "maths/6eme/Chapitre_12_Les_fractions",
+  "nombre_cartes": 36,
+  "cartes": [
+    {
+      "id": "6E-CH12-001",
+      "lecon": "Ecrire une fraction ; fraction d'une quantité",
+      "type": "definition",
+      "recto": "Dans une fraction, comment appelle-t-on le nombre écrit sous la barre, et qu'indique-t-il ?",
+      "verso": "C'est le dénominateur. Il indique en combien de parts égales on partage le tout. Dans $\\dfrac{2}{3}$, le dénominateur est $3$.",
+      "difficulte": 1,
+      "tags": ["fraction", "vocabulaire", "denominateur"]
+    },
+    {
+      "id": "6E-CH12-002",
+      "lecon": "Ecrire une fraction ; fraction d'une quantité",
+      "type": "definition",
+      "recto": "Dans une fraction, comment appelle-t-on le nombre écrit au-dessus de la barre, et qu'indique-t-il ?",
+      "verso": "C'est le numérateur. Il indique combien de parts on prend parmi les parts égales du tout. Dans $\\dfrac{2}{3}$, le numérateur est $2$.",
+      "difficulte": 1,
+      "tags": ["fraction", "vocabulaire", "numerateur"]
+    },
+    {
+      "id": "6E-CH12-003",
+      "lecon": "Ecrire une fraction ; fraction d'une quantité",
+      "type": "definition",
+      "recto": "Quelle valeur le dénominateur d'une fraction ne peut-il jamais prendre, et pourquoi ?",
+      "verso": "Il ne peut jamais valoir $0$ : on ne peut pas partager un tout en zéro part.",
+      "difficulte": 1,
+      "tags": ["fraction", "denominateur", "condition"]
+    },
+    {
+      "id": "6E-CH12-004",
+      "lecon": "Ecrire une fraction ; fraction d'une quantité",
+      "type": "definition",
+      "recto": "Quelle condition les parts d'un partage doivent-elles remplir pour que ce partage puisse s'écrire avec une fraction ?",
+      "verso": "Les parts doivent être égales. Sans parts de même taille, l'écriture fractionnaire n'a pas de sens.",
+      "difficulte": 2,
+      "tags": ["fraction", "partage", "condition"]
+    },
+    {
+      "id": "6E-CH12-005",
+      "lecon": "Ecrire une fraction ; fraction d'une quantité",
+      "type": "formule",
+      "recto": "Pour calculer la fraction d'une quantité, dans quel ordre effectue-t-on les deux opérations ?",
+      "verso": "On divise d'abord par le dénominateur, puis on multiplie par le numérateur. Ainsi $\\dfrac{2}{3}$ de $24$ donne $24 \\div 3 = 8$, puis $8 \\times 2 = 16$.",
+      "difficulte": 2,
+      "tags": ["fraction", "fraction-d-une-quantite", "calcul"]
+    },
+    {
+      "id": "6E-CH12-006",
+      "lecon": "Ecrire une fraction ; fraction d'une quantité",
+      "type": "formule",
+      "recto": "Comment place-t-on une fraction sur une droite graduée ?",
+      "verso": "On partage l'unité, de $0$ à $1$, en autant de parts égales que l'indique le dénominateur, puis on compte depuis $0$ autant de parts que l'indique le numérateur.",
+      "difficulte": 2,
+      "tags": ["fraction", "droite-graduee"]
+    },
+    {
+      "id": "6E-CH12-007",
+      "lecon": "Ecrire une fraction ; fraction d'une quantité",
+      "type": "formule",
+      "recto": "Comment reconnaît-on, sans aucun calcul, qu'une fraction est plus petite que $1$, égale à $1$ ou plus grande que $1$ ?",
+      "verso": "On compare le numérateur au dénominateur. Numérateur plus petit : la fraction est inférieure à $1$, comme $\\dfrac{3}{4}$. Nombres égaux : elle vaut $1$, comme $\\dfrac{4}{4}$. Numérateur plus grand : elle dépasse $1$.",
+      "difficulte": 2,
+      "tags": ["fraction", "comparaison", "unite"]
+    },
+    {
+      "id": "6E-CH12-008",
+      "lecon": "Ecrire une fraction ; fraction d'une quantité",
+      "type": "formule",
+      "recto": "Comment écrit-on une fraction plus grande que $1$ sous la forme « un entier plus une fraction » ?",
+      "verso": "On isole d'abord le tout, c'est-à-dire la fraction dont le numérateur égale le dénominateur : $\\dfrac{7}{4} = \\dfrac{4}{4} + \\dfrac{3}{4} = 1 + \\dfrac{3}{4}$.",
+      "difficulte": 3,
+      "tags": ["fraction", "entier-plus-fraction"]
+    },
+    {
+      "id": "6E-CH12-009",
+      "lecon": "Ecrire une fraction ; fraction d'une quantité",
+      "type": "definition",
+      "recto": "Pourquoi dit-on toujours « les deux tiers de quelque chose » et jamais « les deux tiers » tout court ?",
+      "verso": "Parce qu'une fraction exprime une proportion et non une quantité fixe : le tiers de $24$ vaut $8$, mais le tiers de $30$ vaut $10$.",
+      "difficulte": 2,
+      "tags": ["fraction", "proportion", "sens"]
+    },
+    {
+      "id": "6E-CH12-010",
+      "lecon": "Ecrire une fraction ; fraction d'une quantité",
+      "type": "definition",
+      "recto": "Pourquoi $\\dfrac{1}{3}$ n'est-il pas égal à $0{,}3$ ?",
+      "verso": "Parce que $0{,}3 = \\dfrac{3}{10}$, et trois dixièmes ne remplissent pas tout à fait un tiers : $\\dfrac{1}{3}$ est un peu plus grand que $0{,}3$. En revanche $\\dfrac{1}{4} = 0{,}25$.",
+      "difficulte": 3,
+      "tags": ["fraction", "decimal", "piege"]
+    },
+    {
+      "id": "6E-CH12-011",
+      "lecon": "Fractions égales et simplification",
+      "type": "definition",
+      "recto": "Que veut dire que deux fractions sont égales ?",
+      "verso": "Elles représentent la même part du tout, même si elles ne s'écrivent pas de la même façon. Par exemple $\\dfrac{1}{2} = \\dfrac{2}{4} = \\dfrac{4}{8}$.",
+      "difficulte": 1,
+      "tags": ["fractions-egales"]
+    },
+    {
+      "id": "6E-CH12-012",
+      "lecon": "Fractions égales et simplification",
+      "type": "formule",
+      "recto": "Quelle opération permet d'obtenir une fraction égale à une fraction donnée ?",
+      "verso": "Multiplier, ou diviser, le numérateur ET le dénominateur par un même nombre différent de $0$. Ainsi $\\dfrac{1}{2} = \\dfrac{2}{4}$ en multipliant par $2$ en haut et en bas.",
+      "difficulte": 1,
+      "tags": ["fractions-egales", "regle"]
+    },
+    {
+      "id": "6E-CH12-013",
+      "lecon": "Fractions égales et simplification",
+      "type": "definition",
+      "recto": "Que signifie « simplifier une fraction » ?",
+      "verso": "C'est diviser le numérateur et le dénominateur par un même nombre pour obtenir une écriture plus courte, sans changer la valeur. Par exemple $\\dfrac{6}{8} = \\dfrac{3}{4}$.",
+      "difficulte": 1,
+      "tags": ["simplification"]
+    },
+    {
+      "id": "6E-CH12-014",
+      "lecon": "Fractions égales et simplification",
+      "type": "definition",
+      "recto": "Qu'est-ce qu'une fraction irréductible ?",
+      "verso": "C'est une fraction que plus aucun nombre, sauf $1$, ne divise à la fois en haut et en bas : c'est son écriture la plus simple. Par exemple $\\dfrac{2}{3}$.",
+      "difficulte": 2,
+      "tags": ["simplification", "irreductible"]
+    },
+    {
+      "id": "6E-CH12-015",
+      "lecon": "Fractions égales et simplification",
+      "type": "formule",
+      "recto": "Quels diviseurs communs essaie-t-on en premier pour simplifier une fraction ?",
+      "verso": "On essaie $2$ si les deux nombres sont pairs, $3$ s'ils sont tous les deux dans la table de $3$, et $5$ s'ils se terminent par $0$ ou par $5$.",
+      "difficulte": 2,
+      "tags": ["simplification", "diviseur-commun"]
+    },
+    {
+      "id": "6E-CH12-016",
+      "lecon": "Fractions égales et simplification",
+      "type": "formule",
+      "recto": "Que donne une fraction simplifiée en plusieurs étapes, par rapport à la même fraction simplifiée en une seule fois ?",
+      "verso": "Exactement la même fraction irréductible. Par exemple $\\dfrac{12}{18}$ divisé par $2$ puis par $3$, ou divisé directement par $6$, donne dans les deux cas $\\dfrac{2}{3}$.",
+      "difficulte": 2,
+      "tags": ["simplification", "irreductible"]
+    },
+    {
+      "id": "6E-CH12-017",
+      "lecon": "Fractions égales et simplification",
+      "type": "formule",
+      "recto": "Dans une égalité de fractions à trou comme $\\dfrac{2}{5} = \\dfrac{\\ldots}{15}$, comment trouve-t-on le nombre manquant ?",
+      "verso": "On regarde par combien le dénominateur a été multiplié, ici $5 \\times 3 = 15$, puis on multiplie le numérateur par ce même nombre : $2 \\times 3 = 6$.",
+      "difficulte": 2,
+      "tags": ["fractions-egales", "egalite-a-trous"]
+    },
+    {
+      "id": "6E-CH12-018",
+      "lecon": "Fractions égales et simplification",
+      "type": "formule",
+      "recto": "Quelle opération ne donne jamais une fraction égale, même appliquée au numérateur et au dénominateur en même temps ?",
+      "verso": "L'addition. Ajouter $1$ en haut et en bas transforme $\\dfrac{1}{2}$ en $\\dfrac{2}{3}$, qui est une autre valeur. Seules la multiplication et la division par un même nombre conservent la fraction.",
+      "difficulte": 3,
+      "tags": ["fractions-egales", "piege"]
+    },
+    {
+      "id": "6E-CH12-019",
+      "lecon": "Comparer, additionner et soustraire (même dénominateur)",
+      "type": "formule",
+      "recto": "Comment compare-t-on deux fractions qui ont le même dénominateur ?",
+      "verso": "Les parts ont la même taille : la plus grande fraction est celle qui a le plus grand numérateur. Par exemple $\\dfrac{3}{7} > \\dfrac{2}{7}$.",
+      "difficulte": 1,
+      "tags": ["comparaison", "meme-denominateur"]
+    },
+    {
+      "id": "6E-CH12-020",
+      "lecon": "Comparer, additionner et soustraire (même dénominateur)",
+      "type": "formule",
+      "recto": "Comment compare-t-on deux fractions qui ont le même numérateur ?",
+      "verso": "On prend le même nombre de parts, mais plus le dénominateur est grand, plus les parts sont petites. La plus grande fraction est donc celle qui a le plus petit dénominateur : $\\dfrac{1}{3} > \\dfrac{1}{4}$.",
+      "difficulte": 2,
+      "tags": ["comparaison", "meme-numerateur"]
+    },
+    {
+      "id": "6E-CH12-021",
+      "lecon": "Comparer, additionner et soustraire (même dénominateur)",
+      "type": "formule",
+      "recto": "Comment additionne-t-on deux fractions qui ont le même dénominateur ?",
+      "verso": "On additionne les numérateurs et on garde le dénominateur : $\\dfrac{a}{c} + \\dfrac{b}{c} = \\dfrac{a+b}{c}$. Par exemple $\\dfrac{2}{7} + \\dfrac{3}{7} = \\dfrac{5}{7}$.",
+      "difficulte": 1,
+      "tags": ["addition", "meme-denominateur"]
+    },
+    {
+      "id": "6E-CH12-022",
+      "lecon": "Comparer, additionner et soustraire (même dénominateur)",
+      "type": "formule",
+      "recto": "Comment soustrait-on deux fractions qui ont le même dénominateur ?",
+      "verso": "On soustrait les numérateurs et on garde le dénominateur : $\\dfrac{a}{c} - \\dfrac{b}{c} = \\dfrac{a-b}{c}$. Par exemple $\\dfrac{5}{6} - \\dfrac{1}{6} = \\dfrac{4}{6}$.",
+      "difficulte": 1,
+      "tags": ["soustraction", "meme-denominateur"]
+    },
+    {
+      "id": "6E-CH12-023",
+      "lecon": "Comparer, additionner et soustraire (même dénominateur)",
+      "type": "formule",
+      "recto": "Quand l'unité est partagée en $c$ parts égales, par quelle fraction écrit-on le tout ?",
+      "verso": "Par $\\dfrac{c}{c}$, qui vaut $1$. Un champ partagé en $7$ bandes s'écrit ainsi $\\dfrac{7}{7} = 1$.",
+      "difficulte": 2,
+      "tags": ["le-tout", "unite"]
+    },
+    {
+      "id": "6E-CH12-024",
+      "lecon": "Comparer, additionner et soustraire (même dénominateur)",
+      "type": "formule",
+      "recto": "Comment trouve-t-on la fraction qui reste, quand on connaît la fraction déjà prise ?",
+      "verso": "On soustrait la part prise du tout, écrit avec le même dénominateur. Si $\\dfrac{5}{7}$ du champ est cultivé, la jachère occupe $\\dfrac{7}{7} - \\dfrac{5}{7} = \\dfrac{2}{7}$.",
+      "difficulte": 2,
+      "tags": ["le-reste", "soustraction"]
+    },
+    {
+      "id": "6E-CH12-025",
+      "lecon": "Comparer, additionner et soustraire (même dénominateur)",
+      "type": "formule",
+      "recto": "Que faut-il vérifier avant d'additionner ou de soustraire deux fractions en classe de 6ème ?",
+      "verso": "Que les deux dénominateurs sont identiques. On ne peut compter ensemble que des parts de même taille ; les dénominateurs différents seront traités en 5ème.",
+      "difficulte": 2,
+      "tags": ["addition", "condition"]
+    },
+    {
+      "id": "6E-CH12-026",
+      "lecon": "Comparer, additionner et soustraire (même dénominateur)",
+      "type": "formule",
+      "recto": "Quelle erreur guette l'élève qui additionne deux fractions de même dénominateur ?",
+      "verso": "Additionner aussi les dénominateurs. $\\dfrac{2}{7} + \\dfrac{3}{7}$ vaut $\\dfrac{5}{7}$ et non $\\dfrac{5}{14}$ : le découpage du tout n'a pas changé, donc le dénominateur non plus.",
+      "difficulte": 3,
+      "tags": ["addition", "piege"]
+    },
+    {
+      "id": "6E-CH12-027",
+      "lecon": "Comparer, additionner et soustraire (même dénominateur)",
+      "type": "formule",
+      "recto": "Que fait-on du résultat d'une addition ou d'une soustraction de fractions ?",
+      "verso": "On le simplifie chaque fois que c'est possible. Par exemple $\\dfrac{5}{12} + \\dfrac{3}{12} = \\dfrac{8}{12} = \\dfrac{2}{3}$.",
+      "difficulte": 2,
+      "tags": ["addition", "simplification"]
+    },
+    {
+      "id": "6E-CH12-028",
+      "lecon": "Fraction d'un nombre et pourcentages",
+      "type": "definition",
+      "recto": "Qu'est-ce qu'un pourcentage ?",
+      "verso": "C'est une fraction dont le dénominateur est $100$. Par exemple $25\\ \\%$ est une autre écriture de $\\dfrac{25}{100}$.",
+      "difficulte": 1,
+      "tags": ["pourcentage", "definition"]
+    },
+    {
+      "id": "6E-CH12-029",
+      "lecon": "Fraction d'un nombre et pourcentages",
+      "type": "formule",
+      "recto": "A quelles fractions simples correspondent $50\\ \\%$, $25\\ \\%$, $20\\ \\%$, $10\\ \\%$ et $75\\ \\%$ ?",
+      "verso": "$50\\ \\% = \\dfrac{1}{2}$, $25\\ \\% = \\dfrac{1}{4}$, $20\\ \\% = \\dfrac{1}{5}$, $10\\ \\% = \\dfrac{1}{10}$ et $75\\ \\% = \\dfrac{3}{4}$.",
+      "difficulte": 1,
+      "tags": ["pourcentage", "fractions-usuelles"]
+    },
+    {
+      "id": "6E-CH12-030",
+      "lecon": "Fraction d'un nombre et pourcentages",
+      "type": "formule",
+      "recto": "Comment calcule-t-on $p\\ \\%$ d'un nombre dans le cas général ?",
+      "verso": "On divise le nombre par $100$, puis on multiplie par $p$. Pour $60\\ \\%$ de $40$ : $40 \\div 100 = 0{,}4$, puis $0{,}4 \\times 60 = 24$.",
+      "difficulte": 2,
+      "tags": ["pourcentage", "calcul"]
+    },
+    {
+      "id": "6E-CH12-031",
+      "lecon": "Fraction d'un nombre et pourcentages",
+      "type": "formule",
+      "recto": "Pourquoi prendre $25\\ \\%$ d'une quantité revient-il à en prendre le quart ?",
+      "verso": "Parce que $\\dfrac{25}{100}$ se simplifie en $\\dfrac{1}{4}$ : en regroupant les $100$ parts par paquets de $25$, on obtient $4$ paquets, et $25$ parts forment exactement un de ces paquets.",
+      "difficulte": 2,
+      "tags": ["pourcentage", "simplification"]
+    },
+    {
+      "id": "6E-CH12-032",
+      "lecon": "Fraction d'un nombre et pourcentages",
+      "type": "definition",
+      "recto": "Que représente $100\\ \\%$ d'une quantité ?",
+      "verso": "La quantité elle-même, c'est-à-dire le tout. Ce n'est pas son double.",
+      "difficulte": 2,
+      "tags": ["pourcentage", "le-tout", "piege"]
+    },
+    {
+      "id": "6E-CH12-033",
+      "lecon": "Fraction d'un nombre et pourcentages",
+      "type": "formule",
+      "recto": "Après une remise de $p\\ \\%$, comment obtient-on le prix à payer ?",
+      "verso": "On calcule d'abord le montant de la remise, puis on le retire : prix à payer $=$ prix de départ $-$ remise. La remise n'est pas le prix à payer.",
+      "difficulte": 2,
+      "tags": ["pourcentage", "remise"]
+    },
+    {
+      "id": "6E-CH12-034",
+      "lecon": "Fraction d'un nombre et pourcentages",
+      "type": "formule",
+      "recto": "Après une hausse de $p\\ \\%$, comment obtient-on le nouveau prix ?",
+      "verso": "On calcule le montant de la hausse, puis on l'ajoute : nouveau prix $=$ prix de départ $+$ hausse.",
+      "difficulte": 2,
+      "tags": ["pourcentage", "hausse"]
+    },
+    {
+      "id": "6E-CH12-035",
+      "lecon": "Fraction d'un nombre et pourcentages",
+      "type": "formule",
+      "recto": "Si une partie représente $p\\ \\%$ du tout, quel pourcentage représente le reste ?",
+      "verso": "Le reste représente $\\left(100 - p\\right)\\ \\%$. Si les filles forment $60\\ \\%$ de la classe, les garçons en forment $40\\ \\%$.",
+      "difficulte": 2,
+      "tags": ["pourcentage", "complement"]
+    },
+    {
+      "id": "6E-CH12-036",
+      "lecon": "Fraction d'un nombre et pourcentages",
+      "type": "formule",
+      "recto": "Comment retrouve-t-on le tout quand on connaît une partie et le pourcentage qu'elle représente ?",
+      "verso": "On remonte par l'opération inverse. Si $25\\ \\%$ d'une classe font $9$ élèves, alors $25\\ \\% = \\dfrac{1}{4}$ et la classe compte $9 \\times 4 = 36$ élèves.",
+      "difficulte": 3,
+      "tags": ["pourcentage", "retrouver-le-tout"]
+    }
+  ]
+}

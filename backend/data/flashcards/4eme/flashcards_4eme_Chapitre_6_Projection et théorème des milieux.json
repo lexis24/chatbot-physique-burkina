@@ -1,0 +1,323 @@
+{
+  "niveau": "4ème",
+  "chapitre": "Chapitre 6 : Projection et théorème des milieux",
+  "source": "maths/4eme/Chapitre_6_Projection_theoreme_des_milieux",
+  "nombre_cartes": 35,
+  "cartes": [
+    {
+      "id": "4E-CH06-001",
+      "lecon": "La projection d'un point sur une droite, parallèlement à une autre",
+      "type": "definition",
+      "recto": "Qu'est-ce que le projeté d'un point M sur une droite $\\left(d\\right)$ parallèlement à une direction $\\left(\\Delta\\right)$ ?",
+      "verso": "C'est le point M' de $\\left(d\\right)$ tel que la droite $\\left(MM'\\right)$ soit parallèle à $\\left(\\Delta\\right)$. On lit « M prime ».",
+      "difficulte": 1,
+      "tags": ["projection", "definition", "projete"]
+    },
+    {
+      "id": "4E-CH06-002",
+      "lecon": "La projection d'un point sur une droite, parallèlement à une autre",
+      "type": "definition",
+      "recto": "Quelles deux données faut-il se donner avant de projeter un point ?",
+      "verso": "Une droite d'arrivée $\\left(d\\right)$, sur laquelle on arrive, et une direction $\\left(\\Delta\\right)$, qui indique le chemin à suivre.",
+      "difficulte": 2,
+      "tags": ["projection", "direction"]
+    },
+    {
+      "id": "4E-CH06-003",
+      "lecon": "La projection d'un point sur une droite, parallèlement à une autre",
+      "type": "definition",
+      "recto": "Pourquoi la direction $\\left(\\Delta\\right)$ ne doit-elle jamais être parallèle à la droite $\\left(d\\right)$ ?",
+      "verso": "Parce que la parallèle à $\\left(\\Delta\\right)$ menée par M ne rencontrerait alors jamais $\\left(d\\right)$ : le projeté n'existerait pas. Les deux droites doivent être sécantes.",
+      "difficulte": 2,
+      "tags": ["projection", "condition"]
+    },
+    {
+      "id": "4E-CH06-004",
+      "lecon": "La projection d'un point sur une droite, parallèlement à une autre",
+      "type": "definition",
+      "recto": "Où se projette un point qui appartient déjà à la droite $\\left(d\\right)$ ?",
+      "verso": "Sur lui-même, puisque $M' = M$. On dit que les points de $\\left(d\\right)$ sont invariants : la projection ne les déplace pas.",
+      "difficulte": 2,
+      "tags": ["projection", "invariant"]
+    },
+    {
+      "id": "4E-CH06-005",
+      "lecon": "La projection d'un point sur une droite, parallèlement à une autre",
+      "type": "formule",
+      "recto": "Combien de projetés un point M possède-t-il sur $\\left(d\\right)$ pour une direction donnée ?",
+      "verso": "Un seul, car il ne passe qu'une seule parallèle à $\\left(\\Delta\\right)$ par le point M. C'est pourquoi on parle du projeté, et non d'un projeté.",
+      "difficulte": 2,
+      "tags": ["projection", "unicite"]
+    },
+    {
+      "id": "4E-CH06-006",
+      "lecon": "La projection d'un point sur une droite, parallèlement à une autre",
+      "type": "definition",
+      "recto": "Pourquoi faut-il toujours préciser la direction quand on nomme le projeté d'un point ?",
+      "verso": "Parce que le projeté dépend de cette direction : avec la même droite d'arrivée mais deux directions différentes, un même point M donne deux projetés distincts.",
+      "difficulte": 3,
+      "tags": ["projection", "direction"]
+    },
+    {
+      "id": "4E-CH06-007",
+      "lecon": "La conservation du milieu par projection",
+      "type": "formule",
+      "recto": "Que devient le milieu d'un segment quand on le projette parallèlement à une direction ?",
+      "verso": "Il reste un milieu : si M est le milieu de $\\left[AB\\right]$, son projeté M' est le milieu de $\\left[A'B'\\right]$, où A' et B' sont les projetés de A et de B.",
+      "difficulte": 1,
+      "tags": ["conservation", "milieu"]
+    },
+    {
+      "id": "4E-CH06-008",
+      "lecon": "La conservation du milieu par projection",
+      "type": "formule",
+      "recto": "Que conserve la projection parallèle lorsque trois points sont alignés ?",
+      "verso": "Leur alignement : leurs projetés sont alignés eux aussi. Le projeté d'une droite est une droite, et le projeté d'un segment $\\left[AB\\right]$ est le segment $\\left[A'B'\\right]$.",
+      "difficulte": 2,
+      "tags": ["conservation", "alignement"]
+    },
+    {
+      "id": "4E-CH06-009",
+      "lecon": "La conservation du milieu par projection",
+      "type": "formule",
+      "recto": "Que devient l'ordre de trois points alignés après une projection parallèle ?",
+      "verso": "Il est conservé : si C est situé entre A et B, alors C' est situé entre A' et B'. La projection ne mélange pas les points.",
+      "difficulte": 2,
+      "tags": ["conservation", "ordre"]
+    },
+    {
+      "id": "4E-CH06-010",
+      "lecon": "La conservation du milieu par projection",
+      "type": "formule",
+      "recto": "Que deviennent deux droites parallèles quand on les projette parallèlement à une direction ?",
+      "verso": "Elles restent parallèles : la projection parallèle conserve le parallélisme.",
+      "difficulte": 2,
+      "tags": ["conservation", "parallelisme"]
+    },
+    {
+      "id": "4E-CH06-011",
+      "lecon": "La conservation du milieu par projection",
+      "type": "formule",
+      "recto": "Pourquoi ne peut-on pas affirmer que $A'B' = AB$ après une projection parallèle ?",
+      "verso": "Parce que la projection ne conserve pas les longueurs : l'ombre d'un segment est en général plus courte, ou plus longue, que lui. Ce qui est conservé, c'est l'égalité $A'M' = M'B'$, et non la valeur des longueurs.",
+      "difficulte": 3,
+      "tags": ["conservation", "longueur", "piege"]
+    },
+    {
+      "id": "4E-CH06-012",
+      "lecon": "La conservation du milieu par projection",
+      "type": "formule",
+      "recto": "D'où vient la conservation du milieu par projection ?",
+      "verso": "Les traits de projection sont parallèles entre eux : ils découpent deux morceaux de même longueur sur la droite de départ, donc deux morceaux de même longueur sur $\\left(d\\right)$. En 4ème, cette propriété est admise et peut servir dans une démonstration.",
+      "difficulte": 2,
+      "tags": ["conservation", "milieu", "demonstration"]
+    },
+    {
+      "id": "4E-CH06-013",
+      "lecon": "La droite des milieux dans un triangle",
+      "type": "formule",
+      "recto": "Que dit le théorème de la droite des milieux dans un triangle ABC ?",
+      "verso": "Si M est le milieu de $\\left[AB\\right]$ et N le milieu de $\\left[AC\\right]$, alors la droite $\\left(MN\\right)$ est parallèle à $\\left(BC\\right)$, et de plus $MN = BC \\div 2$.",
+      "difficulte": 1,
+      "tags": ["theoreme-des-milieux", "triangle"]
+    },
+    {
+      "id": "4E-CH06-014",
+      "lecon": "La droite des milieux dans un triangle",
+      "type": "formule",
+      "recto": "Que dit la réciproque du théorème de la droite des milieux ?",
+      "verso": "Dans un triangle ABC, la droite qui passe par le milieu d'un côté et qui est parallèle à un deuxième côté coupe le troisième côté en son milieu.",
+      "difficulte": 2,
+      "tags": ["reciproque", "theoreme-des-milieux"]
+    },
+    {
+      "id": "4E-CH06-015",
+      "lecon": "La droite des milieux dans un triangle",
+      "type": "definition",
+      "recto": "Quelle différence d'emploi y a-t-il entre le théorème des milieux et sa réciproque ?",
+      "verso": "Le théorème direct part de deux milieux et donne un parallélisme ainsi qu'une longueur. La réciproque part d'un milieu et d'un parallélisme, et donne un second milieu : elle sert à démontrer qu'un point est un milieu.",
+      "difficulte": 3,
+      "tags": ["reciproque", "theoreme-des-milieux", "distinction"]
+    },
+    {
+      "id": "4E-CH06-016",
+      "lecon": "La droite des milieux dans un triangle",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on une droite des milieux d'un triangle ?",
+      "verso": "La droite qui joint les milieux de deux de ses côtés. Un triangle en possède trois, une par côté.",
+      "difficulte": 1,
+      "tags": ["droite-des-milieux", "definition"]
+    },
+    {
+      "id": "4E-CH06-017",
+      "lecon": "La droite des milieux dans un triangle",
+      "type": "formule",
+      "recto": "Comment obtient-on une longueur inaccessible grâce au théorème des milieux ?",
+      "verso": "En lisant la relation dans l'autre sens : de $MN = BC \\div 2$ on tire $BC = 2 \\times MN$. Mesurer la droite des milieux donne ainsi la largeur d'une rivière que l'on ne peut pas traverser.",
+      "difficulte": 2,
+      "tags": ["theoreme-des-milieux", "longueur"]
+    },
+    {
+      "id": "4E-CH06-018",
+      "lecon": "La droite des milieux dans un triangle",
+      "type": "formule",
+      "recto": "Pourquoi $\\left(MN\\right)$ n'est-elle pas parallèle à $\\left(BC\\right)$ pour des points M et N quelconques de $\\left[AB\\right]$ et $\\left[AC\\right]$ ?",
+      "verso": "Parce que le théorème exige que M et N soient les milieux de ces deux côtés. Tant que cette hypothèse n'est pas établie, on n'a pas le droit de l'employer.",
+      "difficulte": 3,
+      "tags": ["theoreme-des-milieux", "piege"]
+    },
+    {
+      "id": "4E-CH06-019",
+      "lecon": "La droite des milieux dans un triangle",
+      "type": "formule",
+      "recto": "Que forme-t-on en joignant les milieux des trois côtés d'un triangle ?",
+      "verso": "Le triangle des milieux. Ce tracé partage le triangle de départ en quatre petits triangles superposables, donc de même aire : chacun en occupe le quart.",
+      "difficulte": 2,
+      "tags": ["triangle-des-milieux", "aire"]
+    },
+    {
+      "id": "4E-CH06-020",
+      "lecon": "La droite des milieux dans un triangle",
+      "type": "definition",
+      "recto": "Qu'est-ce qu'une médiane d'un triangle ?",
+      "verso": "C'est le segment qui joint un sommet au milieu du côté opposé. Elle partage le triangle en deux triangles de même aire, car ils ont des bases de même longueur et la même hauteur.",
+      "difficulte": 2,
+      "tags": ["mediane", "aire"]
+    },
+    {
+      "id": "4E-CH06-021",
+      "lecon": "La droite des milieux dans un triangle",
+      "type": "formule",
+      "recto": "Pourquoi une droite des milieux ne partage-t-elle pas un triangle en deux parts de même aire ?",
+      "verso": "Parce qu'elle laisse un petit triangle d'un côté, qui n'occupe que le quart de l'aire, et un trapèze de l'autre. Pour obtenir deux parts égales, il faut tracer une médiane.",
+      "difficulte": 3,
+      "tags": ["aire", "partage", "piege"]
+    },
+    {
+      "id": "4E-CH06-022",
+      "lecon": "La droite des milieux dans un triangle",
+      "type": "definition",
+      "recto": "Sous quelle formulation détournée un milieu peut-il se cacher dans un énoncé ?",
+      "verso": "« B est le symétrique de G par rapport à A » signifie que A est le milieu de $\\left[GB\\right]$. De même, un piquet planté sur $\\left[AB\\right]$ à égale distance de A et de B en est le milieu.",
+      "difficulte": 3,
+      "tags": ["milieu", "enonce"]
+    },
+    {
+      "id": "4E-CH06-023",
+      "lecon": "La droite des milieux dans un trapèze",
+      "type": "formule",
+      "recto": "Que dit la propriété de la droite des milieux dans un trapèze ?",
+      "verso": "Dans un trapèze de bases parallèles, la droite qui joint les milieux des deux côtés non parallèles est parallèle aux deux bases.",
+      "difficulte": 1,
+      "tags": ["trapeze", "ligne-des-milieux"]
+    },
+    {
+      "id": "4E-CH06-024",
+      "lecon": "La droite des milieux dans un trapèze",
+      "type": "definition",
+      "recto": "Comment appelle-t-on la droite qui joint les milieux des côtés non parallèles d'un trapèze ?",
+      "verso": "La ligne des milieux du trapèze. Comme elle est parallèle aux deux bases, elle ne les rencontre jamais.",
+      "difficulte": 2,
+      "tags": ["trapeze", "ligne-des-milieux", "definition"]
+    },
+    {
+      "id": "4E-CH06-025",
+      "lecon": "La droite des milieux dans un trapèze",
+      "type": "formule",
+      "recto": "Pourquoi ne joint-on pas les milieux des deux bases pour tracer la ligne des milieux d'un trapèze ?",
+      "verso": "Parce que ce sont les milieux des deux côtés non parallèles qu'il faut joindre, jamais ceux des bases. Joindre les milieux des bases ne donne pas la ligne des milieux du trapèze.",
+      "difficulte": 3,
+      "tags": ["trapeze", "piege"]
+    },
+    {
+      "id": "4E-CH06-026",
+      "lecon": "La droite des milieux dans un trapèze",
+      "type": "formule",
+      "recto": "Quelle longueur mesure la ligne des milieux d'un trapèze ?",
+      "verso": "La moyenne des deux bases. Avec des bases de $9$ m et de $5$ m, elle mesure $\\left(9 + 5\\right) \\div 2 = 7$ m, valeur bien comprise entre les deux.",
+      "difficulte": 3,
+      "tags": ["trapeze", "ligne-des-milieux", "longueur"]
+    },
+    {
+      "id": "4E-CH06-027",
+      "lecon": "La droite des milieux dans un trapèze",
+      "type": "formule",
+      "recto": "D'où vient la propriété de la ligne des milieux d'un trapèze ?",
+      "verso": "En traçant une diagonale, le trapèze se coupe en deux triangles. Dans chacun on retrouve une droite des milieux : la ligne des milieux du trapèze n'est que deux droites des milieux mises bout à bout.",
+      "difficulte": 2,
+      "tags": ["trapeze", "demonstration"]
+    },
+    {
+      "id": "4E-CH06-028",
+      "lecon": "La droite des milieux dans un trapèze",
+      "type": "formule",
+      "recto": "A quoi sert la ligne des milieux d'un trapèze dans la pratique ?",
+      "verso": "A démontrer un parallélisme, ou à placer à mi-hauteur entre deux bords parallèles une allée, une poutre ou une rangée de plants, sans jamais couper ces bords.",
+      "difficulte": 2,
+      "tags": ["trapeze", "utilisation"]
+    },
+    {
+      "id": "4E-CH06-029",
+      "lecon": "La projection orthogonale",
+      "type": "definition",
+      "recto": "Qu'est-ce que la projection orthogonale d'un point M sur une droite $\\left(d\\right)$ ?",
+      "verso": "C'est le point M' de $\\left(d\\right)$ tel que la droite $\\left(MM'\\right)$ soit perpendiculaire à $\\left(d\\right)$.",
+      "difficulte": 1,
+      "tags": ["projection-orthogonale", "definition"]
+    },
+    {
+      "id": "4E-CH06-030",
+      "lecon": "La projection orthogonale",
+      "type": "definition",
+      "recto": "En quoi la projection orthogonale est-elle un cas particulier de projection ?",
+      "verso": "Sa direction n'est pas choisie librement : elle est imposée, perpendiculaire à la droite d'arrivée. Elle conserve donc, elle aussi, l'alignement et le milieu.",
+      "difficulte": 2,
+      "tags": ["projection-orthogonale", "cas-particulier"]
+    },
+    {
+      "id": "4E-CH06-031",
+      "lecon": "La projection orthogonale",
+      "type": "definition",
+      "recto": "Comment appelle-t-on le projeté orthogonal M' d'un point M sur une droite $\\left(d\\right)$ ?",
+      "verso": "Le pied de la perpendiculaire. La longueur $MM'$ est alors la distance du point M à la droite $\\left(d\\right)$, et ce mot ne s'emploie que pour ce point-là.",
+      "difficulte": 2,
+      "tags": ["projection-orthogonale", "distance", "pied"]
+    },
+    {
+      "id": "4E-CH06-032",
+      "lecon": "La projection orthogonale",
+      "type": "formule",
+      "recto": "Que peut-on dire du segment $\\left[MM'\\right]$ parmi tous ceux qui joignent M à un point de $\\left(d\\right)$ ?",
+      "verso": "C'est le plus court de tous : c'est le chemin le plus économique pour rejoindre une route, un mur ou une rive.",
+      "difficulte": 2,
+      "tags": ["projection-orthogonale", "plus-court-chemin"]
+    },
+    {
+      "id": "4E-CH06-033",
+      "lecon": "La projection orthogonale",
+      "type": "definition",
+      "recto": "Comment appelle-t-on le projeté orthogonal d'un sommet d'un triangle sur le côté opposé ?",
+      "verso": "Le pied de la hauteur issue de ce sommet. Le segment qui joint le sommet à ce point est la hauteur relative au côté opposé.",
+      "difficulte": 2,
+      "tags": ["projection-orthogonale", "hauteur"]
+    },
+    {
+      "id": "4E-CH06-034",
+      "lecon": "La projection orthogonale",
+      "type": "definition",
+      "recto": "Quels mots d'un énoncé annoncent une projection orthogonale sans la nommer ?",
+      "verso": "« Perpendiculaire », « distance à une droite » et « pied de la hauteur ». Dès que l'un d'eux apparaît, on peut coder un angle droit et employer les propriétés de la projection orthogonale.",
+      "difficulte": 2,
+      "tags": ["projection-orthogonale", "enonce"]
+    },
+    {
+      "id": "4E-CH06-035",
+      "lecon": "La projection orthogonale",
+      "type": "definition",
+      "recto": "Pourquoi l'ombre d'un poteau n'est-elle une projection orthogonale qu'à midi ?",
+      "verso": "Parce qu'à midi seulement les rayons tombent perpendiculairement au sol. Le reste du temps la direction est oblique, et l'ombre n'est plus qu'une projection parallèle quelconque.",
+      "difficulte": 3,
+      "tags": ["projection-orthogonale", "piege"]
+    }
+  ]
+}

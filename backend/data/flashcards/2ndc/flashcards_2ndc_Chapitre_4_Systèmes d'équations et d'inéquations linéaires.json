@@ -1,0 +1,350 @@
+{
+  "niveau": "2nde C",
+  "chapitre": "Chapitre 4 : Systèmes d'équations et d'inéquations linéaires",
+  "source": "maths/2ndc/Chapitre_4_Systemes_lineaires",
+  "nombre_cartes": 38,
+  "cartes": [
+    {
+      "id": "2C-CH04-001",
+      "lecon": "Systèmes de deux équations à deux inconnues",
+      "type": "definition",
+      "recto": "Que signifie résoudre un système de deux équations à deux inconnues ?",
+      "verso": "C'est trouver tous les couples $\\left(x\\,;\\,y\\right)$ qui vérifient les deux équations à la fois. Un tel couple s'appelle une solution du système.",
+      "difficulte": 1,
+      "tags": ["systeme", "solution", "couple"]
+    },
+    {
+      "id": "2C-CH04-002",
+      "lecon": "Systèmes de deux équations à deux inconnues",
+      "type": "definition",
+      "recto": "Que signifie l'accolade placée devant les deux équations d'un système ?",
+      "verso": "Elle signifie « et », jamais « ou » : les deux conditions doivent être vraies en même temps. Un système n'est pas une suite d'équations que l'on résout l'une après l'autre.",
+      "difficulte": 2,
+      "tags": ["systeme", "accolade"]
+    },
+    {
+      "id": "2C-CH04-003",
+      "lecon": "Systèmes de deux équations à deux inconnues",
+      "type": "definition",
+      "recto": "Quand dit-on qu'une équation à deux inconnues est linéaire ?",
+      "verso": "Lorsque chaque inconnue y figure au premier degré seulement : ni $x^2$, ni produit $xy$, ni $\\sqrt{x}$, ni $\\dfrac{1}{x}$.",
+      "difficulte": 2,
+      "tags": ["lineaire", "definition"]
+    },
+    {
+      "id": "2C-CH04-004",
+      "lecon": "Systèmes de deux équations à deux inconnues",
+      "type": "formule",
+      "recto": "En quoi consiste la méthode de substitution pour résoudre un système ?",
+      "verso": "On exprime une inconnue en fonction de l'autre à partir d'une équation, puis on la remplace par cette expression dans l'autre équation, qui ne contient plus qu'une inconnue. On la résout, puis on remonte pour obtenir la seconde inconnue.",
+      "difficulte": 2,
+      "tags": ["substitution", "methode"]
+    },
+    {
+      "id": "2C-CH04-005",
+      "lecon": "Systèmes de deux équations à deux inconnues",
+      "type": "formule",
+      "recto": "En quoi consiste la méthode de combinaison pour résoudre un système ?",
+      "verso": "On multiplie chaque équation par un nombre non nul bien choisi, de manière que les coefficients d'une même inconnue deviennent opposés. En additionnant les deux lignes, cette inconnue disparaît.",
+      "difficulte": 2,
+      "tags": ["combinaison", "elimination", "methode"]
+    },
+    {
+      "id": "2C-CH04-006",
+      "lecon": "Systèmes de deux équations à deux inconnues",
+      "type": "formule",
+      "recto": "Pourquoi multiplier l'équation $3x + y = 7$ par $2$ ne donne-t-il pas $6x + 2y = 7$ ?",
+      "verso": "Parce qu'il faut multiplier les deux membres : le résultat correct est $6x + 2y = 14$. Une égalité est une balance ; doubler un seul plateau rompt l'équilibre.",
+      "difficulte": 3,
+      "tags": ["egalite", "piege"]
+    },
+    {
+      "id": "2C-CH04-007",
+      "lecon": "Systèmes de deux équations à deux inconnues",
+      "type": "formule",
+      "recto": "Quelles transformations applique-t-on à un système pour le nettoyer avant de le résoudre ?",
+      "verso": "On range les inconnues du même côté et dans le même ordre, on chasse les dénominateurs en multipliant les deux membres, on supprime les décimaux, et on simplifie chaque ligne par un diviseur commun.",
+      "difficulte": 2,
+      "tags": ["nettoyage", "methode"]
+    },
+    {
+      "id": "2C-CH04-008",
+      "lecon": "Systèmes de deux équations à deux inconnues",
+      "type": "formule",
+      "recto": "Dans quelles équations faut-il contrôler le couple trouvé à la fin d'une résolution ?",
+      "verso": "Dans les deux équations de départ, celles de l'énoncé, et non dans les lignes fabriquées en chemin. Vérifier une seule ligne ne prouve rien, car n'importe quel point d'une droite vérifie son équation.",
+      "difficulte": 2,
+      "tags": ["verification", "methode"]
+    },
+    {
+      "id": "2C-CH04-009",
+      "lecon": "Systèmes de deux équations à deux inconnues",
+      "type": "formule",
+      "recto": "Comment rend-on linéaire un système où les inconnues figurent au dénominateur ?",
+      "verso": "On pose $X = \\dfrac{1}{x}$ et $Y = \\dfrac{1}{y}$, on résout le système linéaire en $X$ et $Y$, puis on revient par $x = \\dfrac{1}{X}$ et $y = \\dfrac{1}{Y}$, sans oublier les valeurs interdites $x \\ne 0$ et $y \\ne 0$.",
+      "difficulte": 3,
+      "tags": ["inconnue-auxiliaire", "changement-inconnue"]
+    },
+    {
+      "id": "2C-CH04-010",
+      "lecon": "Déterminant d'un système $2\\times 2$ : existence et unicité",
+      "type": "formule",
+      "recto": "Quel nombre appelle-t-on déterminant du système formé de $ax + by = c$ et de $a'x + b'y = c'$ ?",
+      "verso": "Le nombre $D = ab' - a'b$ : produit de la diagonale descendante moins produit de la diagonale montante. Seuls les coefficients des inconnues y figurent.",
+      "difficulte": 1,
+      "tags": ["determinant", "definition"]
+    },
+    {
+      "id": "2C-CH04-011",
+      "lecon": "Déterminant d'un système $2\\times 2$ : existence et unicité",
+      "type": "formule",
+      "recto": "Que peut-on conclure lorsque le déterminant d'un système de deux équations à deux inconnues n'est pas nul ?",
+      "verso": "Le système admet une solution unique et les deux droites associées sont sécantes. Le déterminant annonce cette solution, mais il ne la calcule pas : on résout ensuite par substitution ou par combinaison.",
+      "difficulte": 1,
+      "tags": ["determinant", "solution-unique"]
+    },
+    {
+      "id": "2C-CH04-012",
+      "lecon": "Déterminant d'un système $2\\times 2$ : existence et unicité",
+      "type": "formule",
+      "recto": "Que faut-il examiner lorsque le déterminant d'un système de deux équations à deux inconnues est nul ?",
+      "verso": "Les deux équations. Si l'une est un multiple exact de l'autre, second membre compris, les droites sont confondues et il y a une infinité de solutions ; sinon elles sont parallèles distinctes et il n'y a aucune solution.",
+      "difficulte": 2,
+      "tags": ["determinant", "discussion"]
+    },
+    {
+      "id": "2C-CH04-013",
+      "lecon": "Déterminant d'un système $2\\times 2$ : existence et unicité",
+      "type": "formule",
+      "recto": "Pourquoi un déterminant nul ne permet-il pas d'affirmer qu'un système n'a aucune solution ?",
+      "verso": "Parce que $D = 0$ dit seulement que la solution n'est pas unique. Les deux droites peuvent être confondues, et le système a alors une infinité de solutions.",
+      "difficulte": 3,
+      "tags": ["determinant", "piege"]
+    },
+    {
+      "id": "2C-CH04-014",
+      "lecon": "Déterminant d'un système $2\\times 2$ : existence et unicité",
+      "type": "definition",
+      "recto": "Combien de solutions un système linéaire de deux équations à deux inconnues peut-il posséder ?",
+      "verso": "Une seule, aucune, ou une infinité. Jamais exactement deux ni exactement trois, car deux droites distinctes ont au plus un point commun.",
+      "difficulte": 2,
+      "tags": ["systeme", "nombre-de-solutions"]
+    },
+    {
+      "id": "2C-CH04-015",
+      "lecon": "Déterminant d'un système $2\\times 2$ : existence et unicité",
+      "type": "formule",
+      "recto": "Comment interprète-t-on l'égalité qui reste lorsque les deux inconnues disparaissent d'un calcul ?",
+      "verso": "Si elle est fausse, du type $0 = 4$, aucun couple ne peut la rendre vraie : le système est incompatible et n'a aucune solution. Si elle est vraie, du type $0 = 0$, elle n'exclut personne : il y a une infinité de solutions.",
+      "difficulte": 3,
+      "tags": ["incompatible", "discussion"]
+    },
+    {
+      "id": "2C-CH04-016",
+      "lecon": "Déterminant d'un système $2\\times 2$ : existence et unicité",
+      "type": "formule",
+      "recto": "Comment trouve-t-on la valeur d'un coefficient $m$ pour laquelle un système cesse d'avoir une solution unique ?",
+      "verso": "On calcule le déterminant en traitant $m$ comme un nombre, puis on résout l'équation $D = 0$. Pour toutes les autres valeurs de $m$, la solution est unique.",
+      "difficulte": 2,
+      "tags": ["determinant", "parametre"]
+    },
+    {
+      "id": "2C-CH04-017",
+      "lecon": "Déterminant d'un système $2\\times 2$ : existence et unicité",
+      "type": "formule",
+      "recto": "Que faut-il faire avant de relever les coefficients $a$, $b$, $a'$ et $b'$ d'un système ?",
+      "verso": "Le ranger sous la forme $ax + by = c$ : ainsi $3x + 4 = 2y$ doit d'abord devenir $3x - 2y = -4$. Sans ce rangement, on lit des coefficients faux, souvent avec un signe faux.",
+      "difficulte": 2,
+      "tags": ["determinant", "rangement"]
+    },
+    {
+      "id": "2C-CH04-018",
+      "lecon": "Systèmes à trois (ou quatre) inconnues",
+      "type": "definition",
+      "recto": "Qu'est-ce qu'une solution d'un système de trois équations à trois inconnues ?",
+      "verso": "C'est un triplet $\\left(x\\,;\\,y\\,;\\,z\\right)$ qui vérifie les trois équations à la fois. Avec quatre inconnues, la solution s'appelle un quadruplet.",
+      "difficulte": 1,
+      "tags": ["triplet", "solution"]
+    },
+    {
+      "id": "2C-CH04-019",
+      "lecon": "Systèmes à trois (ou quatre) inconnues",
+      "type": "formule",
+      "recto": "En quoi consiste l'élimination en cascade sur un système à trois inconnues ?",
+      "verso": "On garde une équation comme référence et on la combine avec chacune des deux autres pour faire disparaître une même inconnue. Il reste un système à deux inconnues, que l'on résout, puis on remonte.",
+      "difficulte": 2,
+      "tags": ["cascade", "elimination", "methode"]
+    },
+    {
+      "id": "2C-CH04-020",
+      "lecon": "Systèmes à trois (ou quatre) inconnues",
+      "type": "formule",
+      "recto": "Pourquoi faut-il supprimer la même inconnue dans les deux combinaisons d'un système à trois inconnues ?",
+      "verso": "Sinon les deux équations obtenues contiennent ensemble trois inconnues et l'on n'a rien gagné. On décide donc de l'inconnue à éliminer avant de commencer les calculs.",
+      "difficulte": 3,
+      "tags": ["cascade", "piege"]
+    },
+    {
+      "id": "2C-CH04-021",
+      "lecon": "Systèmes à trois (ou quatre) inconnues",
+      "type": "formule",
+      "recto": "Pourquoi faut-il contrôler un triplet dans les trois équations de départ ?",
+      "verso": "Parce qu'un triplet peut satisfaire deux lignes et manquer la troisième. Une erreur de signe glissée en chemin produit un triplet présentable mais faux, que seul ce contrôle révèle.",
+      "difficulte": 2,
+      "tags": ["verification", "triplet"]
+    },
+    {
+      "id": "2C-CH04-022",
+      "lecon": "Systèmes à trois (ou quatre) inconnues",
+      "type": "definition",
+      "recto": "Combien de solutions un système à trois inconnues peut-il posséder ?",
+      "verso": "Les mêmes possibilités que pour un système de deux équations à deux inconnues : une solution unique, aucune solution, ou une infinité de solutions.",
+      "difficulte": 2,
+      "tags": ["triplet", "nombre-de-solutions"]
+    },
+    {
+      "id": "2C-CH04-023",
+      "lecon": "Systèmes à trois (ou quatre) inconnues",
+      "type": "formule",
+      "recto": "Pourquoi deux équations ne suffisent-elles pas à déterminer trois inconnues ?",
+      "verso": "Parce que chaque élimination consomme une équation et ne supprime qu'une inconnue : une inconnue reste libre et le système a une infinité de solutions. Il faut en général autant d'équations que d'inconnues.",
+      "difficulte": 3,
+      "tags": ["nombre-equations", "infinite-solutions"]
+    },
+    {
+      "id": "2C-CH04-024",
+      "lecon": "Résolution graphique des systèmes",
+      "type": "formule",
+      "recto": "Que représente graphiquement l'ensemble des couples solutions d'une équation $ax + by = c$ ?",
+      "verso": "Une droite du plan, lorsque $a$ et $b$ ne sont pas tous les deux nuls. Chaque point de cette droite fournit un couple qui vérifie l'équation, et réciproquement.",
+      "difficulte": 1,
+      "tags": ["droite", "equation"]
+    },
+    {
+      "id": "2C-CH04-025",
+      "lecon": "Résolution graphique des systèmes",
+      "type": "formule",
+      "recto": "Que cherche-t-on lorsqu'on résout graphiquement un système de deux équations ?",
+      "verso": "Les points communs aux deux droites. Un point situé sur une seule des deux droites vérifie une seule équation, il n'est donc pas solution du système.",
+      "difficulte": 1,
+      "tags": ["graphique", "intersection"]
+    },
+    {
+      "id": "2C-CH04-026",
+      "lecon": "Résolution graphique des systèmes",
+      "type": "formule",
+      "recto": "A quels nombres de solutions correspondent les trois positions possibles de deux droites ?",
+      "verso": "Droites sécantes : une solution, le point d'intersection. Droites parallèles distinctes : aucune solution. Droites confondues : une infinité de solutions, tous les points de la droite.",
+      "difficulte": 2,
+      "tags": ["droites", "nombre-de-solutions"]
+    },
+    {
+      "id": "2C-CH04-027",
+      "lecon": "Résolution graphique des systèmes",
+      "type": "definition",
+      "recto": "Pourquoi une solution lue sur un graphique doit-elle être confirmée par le calcul ?",
+      "verso": "Parce que le dessin montre un point sans le prouver : l'épaisseur du trait et l'échelle peuvent faire lire $\\left(2\\,;\\,3\\right)$ alors que la solution exacte vaut $\\left(1{,}9\\,;\\,2{,}8\\right)$. La lecture donne une conjecture, le calcul donne la valeur exacte.",
+      "difficulte": 3,
+      "tags": ["graphique", "conjecture", "piege"]
+    },
+    {
+      "id": "2C-CH04-028",
+      "lecon": "Résolution graphique des systèmes",
+      "type": "definition",
+      "recto": "Que représente graphiquement l'ensemble des solutions d'une inéquation $ax + by \\le c$ ?",
+      "verso": "Un demi-plan. La droite d'équation $ax + by = c$, appelée frontière, partage le plan en deux morceaux, et l'un des deux rassemble tous les points solutions.",
+      "difficulte": 2,
+      "tags": ["inequation", "demi-plan", "frontiere"]
+    },
+    {
+      "id": "2C-CH04-029",
+      "lecon": "Résolution graphique des systèmes",
+      "type": "formule",
+      "recto": "Quand trace-t-on la frontière d'un demi-plan en trait plein, et quand la trace-t-on en pointillé ?",
+      "verso": "En trait plein lorsque la borne est incluse, avec les signes $\\le$ ou $\\ge$ ; en trait pointillé lorsqu'elle est exclue, avec les signes $<$ ou $>$.",
+      "difficulte": 2,
+      "tags": ["frontiere", "inequation"]
+    },
+    {
+      "id": "2C-CH04-030",
+      "lecon": "Résolution graphique des systèmes",
+      "type": "formule",
+      "recto": "Comment reconnaît-on lequel des deux demi-plans est solution d'une inéquation ?",
+      "verso": "On teste un point qui n'est pas sur la frontière, le plus souvent l'origine : si ses coordonnées vérifient l'inéquation, c'est le demi-plan qui le contient, sinon c'est l'autre. Si la frontière passe par l'origine, on teste $\\left(0\\,;\\,1\\right)$.",
+      "difficulte": 2,
+      "tags": ["demi-plan", "test-point"]
+    },
+    {
+      "id": "2C-CH04-031",
+      "lecon": "Résolution graphique des systèmes",
+      "type": "formule",
+      "recto": "Que représente l'ensemble des solutions d'un système d'inéquations à deux inconnues ?",
+      "verso": "L'intersection des demi-plans, c'est-à-dire la zone commune à toutes les inéquations. Cette zone peut être non bornée, ou bornée et former alors un polygone.",
+      "difficulte": 2,
+      "tags": ["systeme-inequations", "zone", "polygone"]
+    },
+    {
+      "id": "2C-CH04-032",
+      "lecon": "Mise en équation et résolution de problèmes",
+      "type": "definition",
+      "recto": "Par quelle phrase commence toute mise en équation d'un problème ?",
+      "verso": "Par la phrase qui nomme les inconnues avec leur unité, du type « soit $x$ le prix d'une entrée adulte, en FCFA ». Nommer les inconnues n'est pas une politesse : c'est la première étape du raisonnement.",
+      "difficulte": 2,
+      "tags": ["mise-en-equation", "inconnues"]
+    },
+    {
+      "id": "2C-CH04-033",
+      "lecon": "Mise en équation et résolution de problèmes",
+      "type": "formule",
+      "recto": "Combien d'équations faut-il écrire pour espérer résoudre un problème à trois inconnues ?",
+      "verso": "Trois, car il faut en principe autant d'équations que d'inconnues, chacune traduisant une information chiffrée. S'il en manque une, c'est qu'une phrase de l'énoncé n'a pas été traduite.",
+      "difficulte": 2,
+      "tags": ["mise-en-equation", "nombre-equations"]
+    },
+    {
+      "id": "2C-CH04-034",
+      "lecon": "Mise en équation et résolution de problèmes",
+      "type": "formule",
+      "recto": "Quel contrôle simple permet de repérer une équation mal traduite ?",
+      "verso": "Vérifier que les deux membres s'expriment dans la même unité. Ajouter des francs à des kilogrammes n'a aucun sens, et une telle équation est nécessairement fausse.",
+      "difficulte": 2,
+      "tags": ["unites", "verification"]
+    },
+    {
+      "id": "2C-CH04-035",
+      "lecon": "Mise en équation et résolution de problèmes",
+      "type": "definition",
+      "recto": "Que faut-il faire lorsqu'un problème portant sur un nombre de personnes conduit à $x = 12{,}5$ ?",
+      "verso": "Ecrire le résultat, dire pourquoi il n'est pas recevable, puis conclure : ou bien la mise en équation est à reprendre, ou bien le problème n'a pas de solution acceptable. Un effectif est entier et positif.",
+      "difficulte": 3,
+      "tags": ["interpretation", "piege"]
+    },
+    {
+      "id": "2C-CH04-036",
+      "lecon": "Mise en équation et résolution de problèmes",
+      "type": "formule",
+      "recto": "Comment écrit-on un nombre de deux chiffres dont $a$ est le chiffre des dizaines et $b$ celui des unités ?",
+      "verso": "Ce nombre vaut $10a + b$, et le nombre obtenu en permutant les deux chiffres vaut $10b + a$.",
+      "difficulte": 2,
+      "tags": ["traduction", "nombre-deux-chiffres"]
+    },
+    {
+      "id": "2C-CH04-037",
+      "lecon": "Mise en équation et résolution de problèmes",
+      "type": "formule",
+      "recto": "Quelles sont les deux équations que fournit un problème de mélange ?",
+      "verso": "Une équation sur les masses, qui donne la masse totale du mélange, et une équation sur les valeurs, où chaque masse est multipliée par son prix au kilogramme.",
+      "difficulte": 2,
+      "tags": ["melange", "traduction"]
+    },
+    {
+      "id": "2C-CH04-038",
+      "lecon": "Mise en équation et résolution de problèmes",
+      "type": "formule",
+      "recto": "Comment traduit-on l'intérêt annuel dans un problème de placement d'argent ?",
+      "verso": "L'intérêt est le produit du capital par le taux, ce taux étant écrit en écriture décimale : un taux de $10\\ \\%$ s'écrit $0{,}10$.",
+      "difficulte": 2,
+      "tags": ["placement", "taux", "traduction"]
+    }
+  ]
+}

@@ -1,0 +1,296 @@
+{
+  "niveau": "5ème",
+  "chapitre": "Chapitre 16 : Masse volumique, vitesse et débit",
+  "source": "maths/5eme/Chapitre_16_Masse_volumique_vitesse_debit",
+  "nombre_cartes": 32,
+  "cartes": [
+    {
+      "id": "5E-CH16-001",
+      "lecon": "La masse volumique",
+      "type": "definition",
+      "recto": "Qu'est-ce que la masse volumique d'un corps ?",
+      "verso": "C'est la masse d'une unité de volume de ce corps. On la note $\\rho$, qui se lit « rhô », et on la calcule par $\\rho = m \\div V$.",
+      "difficulte": 1,
+      "tags": ["masse-volumique", "definition"]
+    },
+    {
+      "id": "5E-CH16-002",
+      "lecon": "La masse volumique",
+      "type": "definition",
+      "recto": "Dans quelles unités exprime-t-on une masse volumique ?",
+      "verso": "En kg/m$^{3}$, en g/cm$^{3}$, en kg/L ou en g/L. L'unité se lit comme une phrase, « $2$ grammes par centimètre cube », et le mot « par » indique la division.",
+      "difficulte": 1,
+      "tags": ["masse-volumique", "unites"]
+    },
+    {
+      "id": "5E-CH16-003",
+      "lecon": "La masse volumique",
+      "type": "formule",
+      "recto": "Quelle est la masse volumique de l'eau, dans les trois unités usuelles ?",
+      "verso": "$1$ kg/L, c'est-à-dire $1$ g/cm$^{3}$, c'est-à-dire $1\\,000$ kg/m$^{3}$. C'est le repère auquel on compare toutes les autres matières.",
+      "difficulte": 1,
+      "tags": ["masse-volumique", "eau", "repere"]
+    },
+    {
+      "id": "5E-CH16-004",
+      "lecon": "La masse volumique",
+      "type": "formule",
+      "recto": "Comment calcule-t-on la masse d'un corps dont on connaît la masse volumique et le volume ?",
+      "verso": "$m = \\rho \\times V$. La masse volumique est le coefficient de proportionnalité qui fait passer du volume à la masse.",
+      "difficulte": 2,
+      "tags": ["masse-volumique", "masse", "formule"]
+    },
+    {
+      "id": "5E-CH16-005",
+      "lecon": "La masse volumique",
+      "type": "formule",
+      "recto": "Comment calcule-t-on le volume d'un corps dont on connaît la masse et la masse volumique ?",
+      "verso": "$V = m \\div \\rho$. Un fût de $180$ kg d'huile de karité à $0{,}9$ kg/L contient $180 \\div 0{,}9 = 200$ L.",
+      "difficulte": 2,
+      "tags": ["masse-volumique", "volume", "formule"]
+    },
+    {
+      "id": "5E-CH16-006",
+      "lecon": "La masse volumique",
+      "type": "formule",
+      "recto": "Pourquoi la masse et le volume d'un même corps sont-ils deux grandeurs proportionnelles ?",
+      "verso": "Parce que doubler le volume double la masse. On passe toujours du volume à la masse en multipliant par le même nombre, qui est la masse volumique.",
+      "difficulte": 2,
+      "tags": ["proportionnalite", "masse-volumique"]
+    },
+    {
+      "id": "5E-CH16-007",
+      "lecon": "La masse volumique",
+      "type": "definition",
+      "recto": "De quoi la masse volumique d'un corps dépend-elle ?",
+      "verso": "Uniquement de la matière, jamais de la quantité prise. Un litre d'huile de karité et un fût de $200$ litres de la même huile ont la même masse volumique.",
+      "difficulte": 2,
+      "tags": ["masse-volumique", "matiere"]
+    },
+    {
+      "id": "5E-CH16-008",
+      "lecon": "La masse volumique",
+      "type": "formule",
+      "recto": "Quelle conversion relie le g/cm$^{3}$ et le kg/m$^{3}$ ?",
+      "verso": "$1$ g/cm$^{3} = 1\\,000$ kg/m$^{3}$. Ainsi l'eau vaut $1$ g/cm$^{3}$, c'est-à-dire $1\\,000$ kg/m$^{3}$.",
+      "difficulte": 2,
+      "tags": ["masse-volumique", "conversion", "unites"]
+    },
+    {
+      "id": "5E-CH16-009",
+      "lecon": "La masse volumique",
+      "type": "formule",
+      "recto": "Quelles égalités relient le mètre cube, le décimètre cube, le centimètre cube et le litre ?",
+      "verso": "$1$ m$^{3} = 1\\,000$ dm$^{3} = 1\\,000\\,000$ cm$^{3}$ : les volumes changent de $1\\,000$ en $1\\,000$, et non de $10$ en $10$. De plus $1$ L $= 1$ dm$^{3}$, donc $1$ m$^{3} = 1\\,000$ L et $1$ L $= 1\\,000$ cm$^{3}$.",
+      "difficulte": 2,
+      "tags": ["volume", "conversion", "litre"]
+    },
+    {
+      "id": "5E-CH16-010",
+      "lecon": "La masse volumique",
+      "type": "formule",
+      "recto": "Comment le triangle des trois grandeurs donne-t-il les formules de la masse volumique ?",
+      "verso": "On écrit $m$ en haut, $\\rho$ et $V$ côte à côte en bas, puis on cache du doigt la grandeur cherchée. Il reste $\\rho = m \\div V$, ou $m = \\rho \\times V$, ou $V = m \\div \\rho$.",
+      "difficulte": 2,
+      "tags": ["triangle", "masse-volumique", "formule"]
+    },
+    {
+      "id": "5E-CH16-011",
+      "lecon": "La masse volumique",
+      "type": "formule",
+      "recto": "Pourquoi la masse volumique n'est-elle pas égale au volume divisé par la masse ?",
+      "verso": "Parce qu'elle mesure la masse d'une unité de volume : on divise toujours la masse par le volume. Diviser à l'envers est l'erreur la plus fréquente.",
+      "difficulte": 3,
+      "tags": ["masse-volumique", "piege"]
+    },
+    {
+      "id": "5E-CH16-012",
+      "lecon": "La masse volumique",
+      "type": "formule",
+      "recto": "Quelle erreur guette l'élève qui divise directement $1{,}2$ kg par $150$ cm$^{3}$ ?",
+      "verso": "Mélanger deux unités qui ne vont pas ensemble. Il faut convertir avant de calculer : $1{,}2$ kg $= 1\\,200$ g, puis $1\\,200 \\div 150 = 8$ g/cm$^{3}$.",
+      "difficulte": 3,
+      "tags": ["masse-volumique", "unites", "piege"]
+    },
+    {
+      "id": "5E-CH16-013",
+      "lecon": "La masse volumique",
+      "type": "formule",
+      "recto": "Comment reconnaît-on qu'un liquide flotte sur l'eau ?",
+      "verso": "On compare sa masse volumique à celle de l'eau, $1$ kg/L. Si elle est plus petite, le liquide flotte : l'huile de karité, à $0{,}9$ kg/L, reste à la surface.",
+      "difficulte": 2,
+      "tags": ["masse-volumique", "flotter", "comparaison"]
+    },
+    {
+      "id": "5E-CH16-014",
+      "lecon": "La masse volumique",
+      "type": "definition",
+      "recto": "Pourquoi deux objets de même volume peuvent-ils avoir des masses très différentes ?",
+      "verso": "Parce que la masse dépend aussi de la matière, puisque $m = \\rho \\times V$. A volume égal, l'objet fait de la matière de plus grande masse volumique est le plus lourd.",
+      "difficulte": 2,
+      "tags": ["masse-volumique", "matiere", "comparaison"]
+    },
+    {
+      "id": "5E-CH16-015",
+      "lecon": "La vitesse et le débit",
+      "type": "definition",
+      "recto": "Qu'est-ce que la vitesse moyenne d'un mobile ?",
+      "verso": "C'est la distance parcourue par unité de temps : $v = d \\div t$. Elle s'exprime en km/h ou en m/s.",
+      "difficulte": 1,
+      "tags": ["vitesse", "definition"]
+    },
+    {
+      "id": "5E-CH16-016",
+      "lecon": "La vitesse et le débit",
+      "type": "definition",
+      "recto": "Que signifie exactement dire qu'un car a roulé à $60$ km/h de moyenne ?",
+      "verso": "Non pas que son compteur a affiché $60$ pendant tout le trajet, mais qu'en roulant sans changer d'allure à $60$ km/h il aurait mis le même temps pour faire le même chemin.",
+      "difficulte": 2,
+      "tags": ["vitesse", "moyenne", "sens"]
+    },
+    {
+      "id": "5E-CH16-017",
+      "lecon": "La vitesse et le débit",
+      "type": "formule",
+      "recto": "Comment calcule-t-on la distance parcourue à partir de la vitesse et de la durée ?",
+      "verso": "$d = v \\times t$, à condition que les unités s'accordent : des km/h avec des heures, ou des m/s avec des secondes.",
+      "difficulte": 1,
+      "tags": ["vitesse", "distance", "formule"]
+    },
+    {
+      "id": "5E-CH16-018",
+      "lecon": "La vitesse et le débit",
+      "type": "formule",
+      "recto": "Comment calcule-t-on la durée d'un trajet à partir de la distance et de la vitesse ?",
+      "verso": "$t = d \\div v$. Un parcours de $570$ km à la vitesse moyenne de $72$ km/h demande $570 \\div 72 \\approx 7{,}9$ h.",
+      "difficulte": 2,
+      "tags": ["vitesse", "duree", "formule"]
+    },
+    {
+      "id": "5E-CH16-019",
+      "lecon": "La vitesse et le débit",
+      "type": "definition",
+      "recto": "Qu'est-ce que le débit d'une pompe ou d'un robinet ?",
+      "verso": "C'est le volume écoulé par unité de temps : $Q = V \\div t$. Il s'exprime en L/s, en L/min, en L/h ou en m$^{3}$/h.",
+      "difficulte": 1,
+      "tags": ["debit", "definition"]
+    },
+    {
+      "id": "5E-CH16-020",
+      "lecon": "La vitesse et le débit",
+      "type": "formule",
+      "recto": "Comment calcule-t-on le volume écoulé à partir du débit et de la durée ?",
+      "verso": "$V = Q \\times t$. Une pompe de $60$ L/min qui fonctionne $50$ min donne $60 \\times 50 = 3\\,000$ L.",
+      "difficulte": 1,
+      "tags": ["debit", "volume", "formule"]
+    },
+    {
+      "id": "5E-CH16-021",
+      "lecon": "La vitesse et le débit",
+      "type": "formule",
+      "recto": "Comment calcule-t-on la durée de remplissage d'un réservoir ?",
+      "verso": "$t = V \\div Q$ : le volume à remplir divisé par le débit. Une citerne de $3\\,000$ L remplie à $60$ L/min demande $3\\,000 \\div 60 = 50$ min.",
+      "difficulte": 2,
+      "tags": ["debit", "duree", "remplissage"]
+    },
+    {
+      "id": "5E-CH16-022",
+      "lecon": "La vitesse et le débit",
+      "type": "definition",
+      "recto": "Qu'ont en commun la masse volumique, la vitesse et le débit ?",
+      "verso": "Ce sont trois grandeurs quotients, donc trois coefficients de proportionnalité : la masse par volume, la distance par temps et le volume par temps.",
+      "difficulte": 2,
+      "tags": ["grandeur-quotient", "proportionnalite"]
+    },
+    {
+      "id": "5E-CH16-023",
+      "lecon": "La vitesse et le débit",
+      "type": "formule",
+      "recto": "Quelles égalités relient l'heure, la minute et la seconde ?",
+      "verso": "$1$ h $= 60$ min et $1$ min $= 60$ s, donc $1$ h $= 3\\,600$ s. Les durées se comptent par soixantaines, jamais par dizaines.",
+      "difficulte": 1,
+      "tags": ["duree", "conversion", "unites"]
+    },
+    {
+      "id": "5E-CH16-024",
+      "lecon": "La vitesse et le débit",
+      "type": "formule",
+      "recto": "Comment écrit-on une durée en heures décimales quand elle est donnée en minutes ?",
+      "verso": "On divise le nombre de minutes par $60$ : $45$ min $= 45 \\div 60 = 0{,}75$ h. Ainsi $2$ h $30$ min s'écrit $2{,}5$ h.",
+      "difficulte": 2,
+      "tags": ["duree", "heure-decimale", "conversion"]
+    },
+    {
+      "id": "5E-CH16-025",
+      "lecon": "La vitesse et le débit",
+      "type": "formule",
+      "recto": "Comment repasse-t-on d'une heure décimale à des heures et des minutes ?",
+      "verso": "On multiplie par $60$ la partie située après la virgule. Ainsi $2{,}25$ h vaut $2$ h et $0{,}25 \\times 60 = 15$ min, soit $2$ h $15$ min.",
+      "difficulte": 2,
+      "tags": ["duree", "heure-decimale", "conversion"]
+    },
+    {
+      "id": "5E-CH16-026",
+      "lecon": "La vitesse et le débit",
+      "type": "formule",
+      "recto": "Quelle conversion relie le m/s et le km/h ?",
+      "verso": "$1$ m/s $= 3{,}6$ km/h. On multiplie par $3{,}6$ pour passer des m/s aux km/h, et on divise par $3{,}6$ pour revenir aux m/s.",
+      "difficulte": 1,
+      "tags": ["vitesse", "conversion", "unites"]
+    },
+    {
+      "id": "5E-CH16-027",
+      "lecon": "La vitesse et le débit",
+      "type": "formule",
+      "recto": "Pourquoi $1$ m/s vaut-il exactement $3{,}6$ km/h ?",
+      "verso": "Parce qu'en une heure, un mobile qui avance de $1$ m chaque seconde parcourt $3\\,600$ m, c'est-à-dire $3{,}6$ km.",
+      "difficulte": 3,
+      "tags": ["vitesse", "conversion", "justification"]
+    },
+    {
+      "id": "5E-CH16-028",
+      "lecon": "La vitesse et le débit",
+      "type": "formule",
+      "recto": "Quelle durée retient-on pour calculer une vitesse moyenne de roulage ?",
+      "verso": "La durée de roulage seule : durée de roulage $=$ durée totale $-$ durée des arrêts. Pendant un arrêt, le véhicule n'avance pas.",
+      "difficulte": 2,
+      "tags": ["vitesse", "roulage", "arret"]
+    },
+    {
+      "id": "5E-CH16-029",
+      "lecon": "La vitesse et le débit",
+      "type": "formule",
+      "recto": "A quoi reconnaît-on un arrêt sur un graphique donnant la distance parcourue en fonction de la durée ?",
+      "verso": "La ligne devient horizontale : le temps continue de passer, mais la distance ne change plus.",
+      "difficulte": 3,
+      "tags": ["graphique", "arret", "vitesse"]
+    },
+    {
+      "id": "5E-CH16-030",
+      "lecon": "La vitesse et le débit",
+      "type": "formule",
+      "recto": "Que traduit la raideur de la ligne, sur un graphique donnant la distance en fonction de la durée ?",
+      "verso": "La vitesse du mobile : plus la ligne est raide, plus il va vite. La montée obtenue en avançant d'une heure donne directement la vitesse en km/h.",
+      "difficulte": 2,
+      "tags": ["graphique", "vitesse", "lecture"]
+    },
+    {
+      "id": "5E-CH16-031",
+      "lecon": "La vitesse et le débit",
+      "type": "formule",
+      "recto": "Quelle erreur guette l'élève qui écrit $2$ h $30$ min sous forme décimale ?",
+      "verso": "Ecrire $2{,}30$ h. Les minutes se comptent par soixante : $30$ min $= 30 \\div 60 = 0{,}5$ h, donc $2$ h $30$ min $= 2{,}5$ h.",
+      "difficulte": 3,
+      "tags": ["duree", "conversion", "piege"]
+    },
+    {
+      "id": "5E-CH16-032",
+      "lecon": "La vitesse et le débit",
+      "type": "formule",
+      "recto": "Comment compare-t-on deux débits annoncés dans des unités différentes ?",
+      "verso": "On les ramène d'abord à une même unité. Ainsi $250$ L/min font $250 \\times 60 = 15\\,000$ L/h, soit $15$ m$^{3}$/h, ce qui dépasse un débit de $12$ m$^{3}$/h.",
+      "difficulte": 3,
+      "tags": ["debit", "comparaison", "unites"]
+    }
+  ]
+}

@@ -1,0 +1,350 @@
+{
+  "niveau": "1ère D",
+  "chapitre": "Chapitre 5 : Trigonométrie",
+  "source": "maths/1ereD/Chapitre_5_Trigonometrie",
+  "nombre_cartes": 38,
+  "cartes": [
+    {
+      "id": "1D-CH05-001",
+      "lecon": "Angle orienté de deux vecteurs",
+      "type": "definition",
+      "recto": "Quand une base orthonormée $\\left(\\vec{i},\\vec{j}\\right)$ est-elle dite directe ?",
+      "verso": "Lorsqu'on passe de $\\vec{i}$ à $\\vec{j}$ par un quart de tour dans le sens direct, c'est-à-dire le sens inverse des aiguilles d'une montre, celui dans lequel on parcourt le cercle trigonométrique. Dans le cas contraire, la base est indirecte.",
+      "difficulte": 1,
+      "tags": ["base-directe", "orientation"]
+    },
+    {
+      "id": "1D-CH05-002",
+      "lecon": "Angle orienté de deux vecteurs",
+      "type": "definition",
+      "recto": "Qu'est-ce que la mesure principale d'un angle orienté ?",
+      "verso": "Un angle orienté possède une infinité de mesures, qui diffèrent de multiples de $2\\pi$ ; la mesure principale est l'unique d'entre elles qui appartient à $\\left]-\\pi\\,;\\pi\\right]$. Positive, elle signale un angle parcouru dans le sens direct ; négative, dans le sens indirect.",
+      "difficulte": 2,
+      "tags": ["mesure-principale", "angle-oriente"]
+    },
+    {
+      "id": "1D-CH05-003",
+      "lecon": "Angle orienté de deux vecteurs",
+      "type": "formule",
+      "recto": "Que devient un angle orienté lorsqu'on échange l'ordre des deux vecteurs ?",
+      "verso": "Il change de signe : $\\left(\\vec{v},\\vec{u}\\right)=-\\left(\\vec{u},\\vec{v}\\right)$ modulo $2\\pi$. Un angle orienté se lit toujours du premier vecteur vers le second, et une erreur d'ordre change le signe du sinus.",
+      "difficulte": 2,
+      "tags": ["angle-oriente", "ordre"]
+    },
+    {
+      "id": "1D-CH05-004",
+      "lecon": "Angle orienté de deux vecteurs",
+      "type": "formule",
+      "recto": "Qu'affirme la relation de Chasles pour les angles orientés ?",
+      "verso": "Que $\\left(\\vec{u},\\vec{v}\\right)+\\left(\\vec{v},\\vec{w}\\right)=\\left(\\vec{u},\\vec{w}\\right)$ modulo $2\\pi$ : on va de $\\vec{u}$ à $\\vec{w}$ en passant par $\\vec{v}$, comme la relation de Chasles des vecteurs permet d'aller de $A$ à $C$ en passant par $B$.",
+      "difficulte": 2,
+      "tags": ["chasles", "angle-oriente"]
+    },
+    {
+      "id": "1D-CH05-005",
+      "lecon": "Angle orienté de deux vecteurs",
+      "type": "definition",
+      "recto": "Comment se lisent $\\cos x$ et $\\sin x$ sur le cercle trigonométrique ?",
+      "verso": "Le point $M$ associé au réel $x$ a pour coordonnées $\\left(\\cos x\\,;\\sin x\\right)$ : le cosinus est son abscisse, lue horizontalement, le sinus son ordonnée, lue verticalement. Comme $M$ est sur le cercle de rayon $1$, on a toujours $\\cos^{2}x+\\sin^{2}x=1$.",
+      "difficulte": 1,
+      "tags": ["cercle-trigonometrique", "cosinus", "sinus"]
+    },
+    {
+      "id": "1D-CH05-006",
+      "lecon": "Angle orienté de deux vecteurs",
+      "type": "formule",
+      "recto": "Comment calcule-t-on le cosinus de l'angle de deux vecteurs $\\vec{u}\\left(x\\,;y\\right)$ et $\\vec{v}\\left(x'\\,;y'\\right)$ ?",
+      "verso": "Par $\\cos\\theta=\\dfrac{\\vec{u}\\cdot\\vec{v}}{\\|\\vec{u}\\|\\,\\|\\vec{v}\\|}=\\dfrac{xx'+yy'}{\\|\\vec{u}\\|\\,\\|\\vec{v}\\|}$, les deux vecteurs étant non nuls et la base orthonormée. Diviser par les normes revient à ramener les vecteurs à la longueur $1$.",
+      "difficulte": 1,
+      "tags": ["produit-scalaire", "cosinus", "angle-oriente"]
+    },
+    {
+      "id": "1D-CH05-007",
+      "lecon": "Angle orienté de deux vecteurs",
+      "type": "formule",
+      "recto": "Comment calcule-t-on le sinus de l'angle orienté allant de $\\vec{u}\\left(x\\,;y\\right)$ vers $\\vec{v}\\left(x'\\,;y'\\right)$ ?",
+      "verso": "Par $\\sin\\theta=\\dfrac{xy'-yx'}{\\|\\vec{u}\\|\\,\\|\\vec{v}\\|}$, dans une base orthonormée directe. Le nombre $xy'-yx'$ s'appelle le déterminant des deux vecteurs, et son signe indique de quel côté le second a tourné.",
+      "difficulte": 2,
+      "tags": ["determinant", "sinus", "angle-oriente"]
+    },
+    {
+      "id": "1D-CH05-008",
+      "lecon": "Angle orienté de deux vecteurs",
+      "type": "formule",
+      "recto": "Pourquoi ne faut-il pas confondre $xx'+yy'$ et $xy'-yx'$ ?",
+      "verso": "Le premier est le produit scalaire : il s'annule quand les deux vecteurs sont orthogonaux. Le second est le déterminant : il s'annule quand ils sont colinéaires. Les écritures se ressemblent, les rôles sont opposés.",
+      "difficulte": 3,
+      "tags": ["piege", "produit-scalaire", "determinant"]
+    },
+    {
+      "id": "1D-CH05-009",
+      "lecon": "Angle orienté de deux vecteurs",
+      "type": "formule",
+      "recto": "Comment s'expriment $\\cos(\\pi-x)$ et $\\sin(\\pi-x)$ en fonction de $\\cos x$ et $\\sin x$ ?",
+      "verso": "On a $\\cos(\\pi-x)=-\\cos x$ et $\\sin(\\pi-x)=\\sin x$. Le point associé à $\\pi-x$ est le symétrique de celui de $x$ par rapport à l'axe des ordonnées : l'ordonnée est conservée, l'abscisse change de signe.",
+      "difficulte": 2,
+      "tags": ["angles-associes", "supplementaires"]
+    },
+    {
+      "id": "1D-CH05-010",
+      "lecon": "Angle orienté de deux vecteurs",
+      "type": "formule",
+      "recto": "Comment s'expriment $\\cos\\left(\\dfrac{\\pi}{2}-x\\right)$ et $\\sin\\left(\\dfrac{\\pi}{2}-x\\right)$ ?",
+      "verso": "On a $\\cos\\left(\\dfrac{\\pi}{2}-x\\right)=\\sin x$ et $\\sin\\left(\\dfrac{\\pi}{2}-x\\right)=\\cos x$ : la symétrie par rapport à la droite d'équation $y=x$ échange les deux coordonnées. Deux angles dont la somme vaut $\\dfrac{\\pi}{2}$ sont dits complémentaires.",
+      "difficulte": 2,
+      "tags": ["angles-associes", "complementaires"]
+    },
+    {
+      "id": "1D-CH05-011",
+      "lecon": "Angle orienté de deux vecteurs",
+      "type": "definition",
+      "recto": "Comment définit-on la tangente d'un réel $x$ ?",
+      "verso": "Par $\\tan x=\\dfrac{\\sin x}{\\cos x}$, à condition que $\\cos x\\ne 0$, c'est-à-dire pour $x\\ne\\dfrac{\\pi}{2}+k\\pi$. En divisant $\\cos^{2}x+\\sin^{2}x=1$ par $\\cos^{2}x$, on obtient $1+\\tan^{2}x=\\dfrac{1}{\\cos^{2}x}$. La tangente est impaire et de période $\\pi$.",
+      "difficulte": 2,
+      "tags": ["tangente", "conditions"]
+    },
+    {
+      "id": "1D-CH05-012",
+      "lecon": "Angle orienté de deux vecteurs",
+      "type": "definition",
+      "recto": "Pourquoi la relation $\\cos^{2}x+\\sin^{2}x=1$ ne suffit-elle pas à trouver $\\cos x$ connaissant $\\sin x$ ?",
+      "verso": "Parce qu'elle ne donne que le carré, donc la valeur absolue : deux valeurs opposées restent possibles. C'est le quadrant, indiqué par l'intervalle de l'énoncé, qui choisit le signe ; sans cet intervalle, la question n'a pas de réponse unique.",
+      "difficulte": 3,
+      "tags": ["piege", "quadrant", "signe"]
+    },
+    {
+      "id": "1D-CH05-013",
+      "lecon": "Formules d'addition, de duplication et de linéarisation",
+      "type": "formule",
+      "recto": "Quelles formules donnent $\\cos(a+b)$ et $\\cos(a-b)$ ?",
+      "verso": "$\\cos(a+b)=\\cos a\\cos b-\\sin a\\sin b$ et $\\cos(a-b)=\\cos a\\cos b+\\sin a\\sin b$. Pour le cosinus, on garde les fonctions ensemble et le signe du milieu est contraire à celui de l'énoncé.",
+      "difficulte": 1,
+      "tags": ["formules-addition", "cosinus"]
+    },
+    {
+      "id": "1D-CH05-014",
+      "lecon": "Formules d'addition, de duplication et de linéarisation",
+      "type": "formule",
+      "recto": "Quelles formules donnent $\\sin(a+b)$ et $\\sin(a-b)$ ?",
+      "verso": "$\\sin(a+b)=\\sin a\\cos b+\\cos a\\sin b$ et $\\sin(a-b)=\\sin a\\cos b-\\cos a\\sin b$. Pour le sinus, on mélange les fonctions et le signe du milieu est le même que celui de l'énoncé.",
+      "difficulte": 1,
+      "tags": ["formules-addition", "sinus"]
+    },
+    {
+      "id": "1D-CH05-015",
+      "lecon": "Formules d'addition, de duplication et de linéarisation",
+      "type": "formule",
+      "recto": "Quelle formule donne $\\tan(a+b)$ ?",
+      "verso": "$\\tan(a+b)=\\dfrac{\\tan a+\\tan b}{1-\\tan a\\tan b}$, lorsque les trois tangentes existent, et de même $\\tan(a-b)=\\dfrac{\\tan a-\\tan b}{1+\\tan a\\tan b}$. Elle s'obtient en divisant la formule du sinus par celle du cosinus.",
+      "difficulte": 2,
+      "tags": ["formules-addition", "tangente"]
+    },
+    {
+      "id": "1D-CH05-016",
+      "lecon": "Formules d'addition, de duplication et de linéarisation",
+      "type": "formule",
+      "recto": "Quelles sont les trois écritures de $\\cos 2a$ ?",
+      "verso": "$\\cos 2a=\\cos^{2}a-\\sin^{2}a=2\\cos^{2}a-1=1-2\\sin^{2}a$. Ce sont les mêmes, transformées par $\\cos^{2}a+\\sin^{2}a=1$ : on choisit celle qui contient la donnée dont on dispose.",
+      "difficulte": 1,
+      "tags": ["duplication", "cosinus"]
+    },
+    {
+      "id": "1D-CH05-017",
+      "lecon": "Formules d'addition, de duplication et de linéarisation",
+      "type": "formule",
+      "recto": "Que vaut $\\sin 2a$ ?",
+      "verso": "$\\sin 2a=2\\sin a\\cos a$, cas particulier de la formule d'addition du sinus pris avec $b=a$. C'est le double produit du sinus par le cosinus, et non le double du sinus.",
+      "difficulte": 1,
+      "tags": ["duplication", "sinus"]
+    },
+    {
+      "id": "1D-CH05-018",
+      "lecon": "Formules d'addition, de duplication et de linéarisation",
+      "type": "formule",
+      "recto": "Comment linéarise-t-on $\\cos^{2}a$ et $\\sin^{2}a$ ?",
+      "verso": "$\\cos^{2}a=\\dfrac{1+\\cos 2a}{2}$ et $\\sin^{2}a=\\dfrac{1-\\cos 2a}{2}$. Ce sont les formules de duplication lues à l'envers : elles remplacent un carré par une expression du premier degré en $\\cos 2a$.",
+      "difficulte": 2,
+      "tags": ["linearisation", "duplication"]
+    },
+    {
+      "id": "1D-CH05-019",
+      "lecon": "Formules d'addition, de duplication et de linéarisation",
+      "type": "formule",
+      "recto": "Comment transforme-t-on la somme $\\cos p+\\cos q$ en produit ?",
+      "verso": "Par $\\cos p+\\cos q=2\\cos\\dfrac{p+q}{2}\\cos\\dfrac{p-q}{2}$, et de même $\\sin p+\\sin q=2\\sin\\dfrac{p+q}{2}\\cos\\dfrac{p-q}{2}$. Factoriser ainsi est précieux pour résoudre une équation, car un produit est nul dès que l'un de ses facteurs l'est.",
+      "difficulte": 2,
+      "tags": ["somme-produit", "factorisation"]
+    },
+    {
+      "id": "1D-CH05-020",
+      "lecon": "Formules d'addition, de duplication et de linéarisation",
+      "type": "definition",
+      "recto": "Comment obtient-on la valeur exacte du cosinus d'un angle tel que $\\dfrac{7\\pi}{12}$ ?",
+      "verso": "En décomposant l'angle en somme ou différence de deux angles remarquables, ici $\\dfrac{7\\pi}{12}=\\dfrac{\\pi}{3}+\\dfrac{\\pi}{4}$, puis en appliquant la formule d'addition et en remplaçant par les valeurs remarquables. Le résultat reste exact, écrit avec des radicaux.",
+      "difficulte": 2,
+      "tags": ["valeur-exacte", "formules-addition"]
+    },
+    {
+      "id": "1D-CH05-021",
+      "lecon": "Formules d'addition, de duplication et de linéarisation",
+      "type": "formule",
+      "recto": "Pourquoi $\\cos(a+b)$ n'est-il pas égal à $\\cos a+\\cos b$ ?",
+      "verso": "Parce que le cosinus est une fonction, et qu'une fonction ne traverse pas les opérations. Un contre-exemple suffit : $\\cos\\left(\\dfrac{\\pi}{2}+\\dfrac{\\pi}{2}\\right)=\\cos\\pi=-1$, alors que $\\cos\\dfrac{\\pi}{2}+\\cos\\dfrac{\\pi}{2}=0$.",
+      "difficulte": 3,
+      "tags": ["piege", "formules-addition", "contre-exemple"]
+    },
+    {
+      "id": "1D-CH05-022",
+      "lecon": "Equations trigonométriques et angle auxiliaire",
+      "type": "formule",
+      "recto": "Quelles sont les solutions de l'équation $\\cos x=\\cos a$ ?",
+      "verso": "Les réels $x=a+2k\\pi$ et $x=-a+2k\\pi$, avec $k\\in\\mathbb{Z}$. Les deux familles viennent des deux points du cercle d'abscisse $\\cos a$, symétriques par rapport à l'axe des abscisses.",
+      "difficulte": 1,
+      "tags": ["equation-trigonometrique", "cosinus"]
+    },
+    {
+      "id": "1D-CH05-023",
+      "lecon": "Equations trigonométriques et angle auxiliaire",
+      "type": "formule",
+      "recto": "Quelles sont les solutions de l'équation $\\sin x=\\sin a$ ?",
+      "verso": "Les réels $x=a+2k\\pi$ et $x=\\pi-a+2k\\pi$, avec $k\\in\\mathbb{Z}$. Les deux familles viennent des deux points du cercle d'ordonnée $\\sin a$, symétriques par rapport à l'axe des ordonnées.",
+      "difficulte": 1,
+      "tags": ["equation-trigonometrique", "sinus"]
+    },
+    {
+      "id": "1D-CH05-024",
+      "lecon": "Equations trigonométriques et angle auxiliaire",
+      "type": "formule",
+      "recto": "Quelles sont les solutions de l'équation $\\tan x=\\tan a$ ?",
+      "verso": "Les réels $x=a+k\\pi$, avec $k\\in\\mathbb{Z}$ : une seule famille, et modulo $\\pi$ seulement. Deux points diamétralement opposés du cercle ont des coordonnées opposées, donc le même quotient $\\dfrac{\\sin x}{\\cos x}$.",
+      "difficulte": 2,
+      "tags": ["equation-trigonometrique", "tangente"]
+    },
+    {
+      "id": "1D-CH05-025",
+      "lecon": "Equations trigonométriques et angle auxiliaire",
+      "type": "formule",
+      "recto": "A quelle condition les équations $\\cos x=m$ et $\\sin x=m$ ont-elles des solutions ?",
+      "verso": "Il faut que $m$ appartienne à $[-1\\,;1]$. Aux bornes, il n'y a qu'une solution par tour : $\\cos x=1$ donne $x=2k\\pi$, $\\cos x=-1$ donne $x=\\pi+2k\\pi$, et $\\sin x=1$ donne $x=\\dfrac{\\pi}{2}+2k\\pi$.",
+      "difficulte": 2,
+      "tags": ["equation-trigonometrique", "conditions"]
+    },
+    {
+      "id": "1D-CH05-026",
+      "lecon": "Equations trigonométriques et angle auxiliaire",
+      "type": "definition",
+      "recto": "Pourquoi une équation trigonométrique donne-t-elle en général deux familles de solutions ?",
+      "verso": "Parce qu'une droite coupe le cercle en deux points, et non en un seul : droite verticale d'abscisse $m$ pour un cosinus, droite horizontale d'ordonnée $m$ pour un sinus. Chaque point fournit ensuite tous les réels qui en diffèrent d'un nombre entier de tours.",
+      "difficulte": 2,
+      "tags": ["equation-trigonometrique", "cercle-trigonometrique"]
+    },
+    {
+      "id": "1D-CH05-027",
+      "lecon": "Equations trigonométriques et angle auxiliaire",
+      "type": "formule",
+      "recto": "Comment résout-on une équation du second degré en $\\cos x$ ?",
+      "verso": "On pose $X=\\cos x$, on résout l'équation du second degré en $X$, puis on élimine les racines qui ne sont pas dans $[-1\\,;1]$, car elles ne correspondent à aucun angle. On revient enfin à $x$ par les équations fondamentales.",
+      "difficulte": 2,
+      "tags": ["second-degre", "equation-trigonometrique"]
+    },
+    {
+      "id": "1D-CH05-028",
+      "lecon": "Equations trigonométriques et angle auxiliaire",
+      "type": "formule",
+      "recto": "Que devient le terme $2k\\pi$ lorsqu'on résout une équation d'inconnue $2x$ ?",
+      "verso": "Il devient $k\\pi$, puisque l'on divise toute l'écriture par $2$. C'est cette division qui multiplie le nombre de solutions sur un tour : $\\cos 2x=\\dfrac12$ possède quatre solutions sur $[0\\,;2\\pi]$, et $\\cos 3x=\\dfrac12$ en possède six.",
+      "difficulte": 3,
+      "tags": ["piege", "angle-double", "equation-trigonometrique"]
+    },
+    {
+      "id": "1D-CH05-029",
+      "lecon": "Equations trigonométriques et angle auxiliaire",
+      "type": "definition",
+      "recto": "Comment lit-on sur le cercle les solutions d'une inéquation trigonométrique ?",
+      "verso": "Elles forment un arc, dont les extrémités sont les solutions de l'équation associée. Pour $\\sin x\\ge m$, c'est l'arc situé au-dessus de la droite horizontale d'ordonnée $m$ ; pour $\\cos x\\ge m$, l'arc situé à droite de la droite verticale d'abscisse $m$.",
+      "difficulte": 2,
+      "tags": ["inequation-trigonometrique", "arc"]
+    },
+    {
+      "id": "1D-CH05-030",
+      "lecon": "Equations trigonométriques et angle auxiliaire",
+      "type": "formule",
+      "recto": "Sous quelle forme peut-on écrire l'expression $a\\cos x+b\\sin x$ ?",
+      "verso": "Sous la forme $R\\cos(x-\\varphi)$, avec $R=\\sqrt{a^{2}+b^{2}}$, $\\cos\\varphi=\\dfrac{a}{R}$ et $\\sin\\varphi=\\dfrac{b}{R}$. L'expression reste donc comprise entre $-R$ et $R$, et l'équation $a\\cos x+b\\sin x=c$ n'a de solution que si $\\left|c\\right|\\le R$.",
+      "difficulte": 2,
+      "tags": ["angle-auxiliaire", "amplitude"]
+    },
+    {
+      "id": "1D-CH05-031",
+      "lecon": "Relations métriques dans le triangle",
+      "type": "definition",
+      "recto": "Comment note-t-on les côtés d'un triangle $ABC$ dans les relations métriques ?",
+      "verso": "On pose $a=BC$, $b=CA$ et $c=AB$ : chaque côté porte la lettre minuscule du sommet qui lui est opposé. Les angles se notent $\\widehat{A}$, $\\widehat{B}$ et $\\widehat{C}$.",
+      "difficulte": 1,
+      "tags": ["notations", "triangle"]
+    },
+    {
+      "id": "1D-CH05-032",
+      "lecon": "Relations métriques dans le triangle",
+      "type": "formule",
+      "recto": "Qu'énonce la relation d'Al-Kashi dans un triangle $ABC$ ?",
+      "verso": "Elle énonce que $a^{2}=b^{2}+c^{2}-2bc\\cos\\widehat{A}$, dans tout triangle, où $a=BC$, $b=CA$ et $c=AB$. Les deux autres écritures s'obtiennent en faisant tourner les lettres.",
+      "difficulte": 1,
+      "tags": ["al-kashi", "triangle"]
+    },
+    {
+      "id": "1D-CH05-033",
+      "lecon": "Relations métriques dans le triangle",
+      "type": "formule",
+      "recto": "Quelle forme d'Al-Kashi emploie-t-on lorsque les trois côtés sont connus ?",
+      "verso": "La forme résolue en cosinus : $\\cos\\widehat{A}=\\dfrac{b^{2}+c^{2}-a^{2}}{2bc}$. Au numérateur figurent les carrés des deux côtés qui encadrent l'angle, moins celui du côté opposé. Un cosinus négatif signale un angle obtus.",
+      "difficulte": 2,
+      "tags": ["al-kashi", "angle"]
+    },
+    {
+      "id": "1D-CH05-034",
+      "lecon": "Relations métriques dans le triangle",
+      "type": "formule",
+      "recto": "En quoi la relation d'Al-Kashi généralise-t-elle le théorème de Pythagore ?",
+      "verso": "Lorsque $\\widehat{A}$ est droit, $\\cos\\widehat{A}=0$ : le terme correctif disparaît et il reste $a^{2}=b^{2}+c^{2}$. Pythagore n'est donc que le cas particulier $\\widehat{A}=90°$ d'Al-Kashi, laquelle vaut dans tout triangle.",
+      "difficulte": 2,
+      "tags": ["al-kashi", "pythagore"]
+    },
+    {
+      "id": "1D-CH05-035",
+      "lecon": "Relations métriques dans le triangle",
+      "type": "formule",
+      "recto": "Quel angle intervient dans la relation $a^{2}=b^{2}+c^{2}-2bc\\cos\\widehat{A}$ ?",
+      "verso": "Celui qui est compris entre les deux côtés $b$ et $c$, c'est-à-dire l'angle opposé au côté $a$ que l'on calcule. Employer un autre angle donne un résultat faux, même si l'écriture ressemble à la bonne.",
+      "difficulte": 3,
+      "tags": ["piege", "al-kashi"]
+    },
+    {
+      "id": "1D-CH05-036",
+      "lecon": "Relations métriques dans le triangle",
+      "type": "formule",
+      "recto": "Comment calcule-t-on l'aire d'un triangle à partir de deux côtés et de l'angle qu'ils forment ?",
+      "verso": "Par $S=\\dfrac12\\,bc\\sin\\widehat{A}$, et de même $S=\\dfrac12\\,ac\\sin\\widehat{B}=\\dfrac12\\,ab\\sin\\widehat{C}$. C'est la base multipliée par la hauteur et divisée par deux, la hauteur issue d'un sommet valant $b\\sin\\widehat{A}$.",
+      "difficulte": 1,
+      "tags": ["aire", "triangle"]
+    },
+    {
+      "id": "1D-CH05-037",
+      "lecon": "Relations métriques dans le triangle",
+      "type": "formule",
+      "recto": "Qu'affirme la loi des sinus dans un triangle $ABC$ ?",
+      "verso": "Que $\\dfrac{a}{\\sin\\widehat{A}}=\\dfrac{b}{\\sin\\widehat{B}}=\\dfrac{c}{\\sin\\widehat{C}}$. Elle se déduit des trois écritures de l'aire, et elle traduit qu'au plus grand angle est opposé le plus grand côté.",
+      "difficulte": 1,
+      "tags": ["loi-des-sinus", "triangle"]
+    },
+    {
+      "id": "1D-CH05-038",
+      "lecon": "Relations métriques dans le triangle",
+      "type": "definition",
+      "recto": "Que signifie résoudre un triangle ?",
+      "verso": "C'est déterminer tous ses côtés et tous ses angles à partir de trois données. Avec deux côtés et l'angle compris, on emploie Al-Kashi ; avec les trois côtés, sa forme résolue en cosinus ; avec deux angles et un côté, la somme des angles puis la loi des sinus.",
+      "difficulte": 2,
+      "tags": ["resoudre-un-triangle", "methode"]
+    }
+  ]
+}

@@ -1,0 +1,341 @@
+{
+  "niveau": "1ère D",
+  "chapitre": "Chapitre 0 : Bien commencer la 1ère D",
+  "source": "maths/1ereD/Chapitre_0_Bien_commencer",
+  "nombre_cartes": 37,
+  "cartes": [
+    {
+      "id": "1D-CH00-001",
+      "lecon": "Je révise l'essentiel de la 2nde C",
+      "type": "formule",
+      "recto": "Quelles règles permettent de simplifier un radical comme $\\sqrt{50}$ ?",
+      "verso": "Pour $a \\ge 0$ et $b \\ge 0$ : $\\sqrt{ab}=\\sqrt{a}\\sqrt{b}$ et $\\sqrt{a^{2}}=a$. On isole le plus grand carré parfait contenu dans le radicande : $\\sqrt{50}=\\sqrt{25\\times 2}=5\\sqrt{2}$.",
+      "difficulte": 2,
+      "tags": ["radicaux", "simplification", "revision"]
+    },
+    {
+      "id": "1D-CH00-002",
+      "lecon": "Je révise l'essentiel de la 2nde C",
+      "type": "formule",
+      "recto": "Quelles sont les règles de calcul sur les puissances d'un même nombre ?",
+      "verso": "$a^{m}a^{n}=a^{m+n}$, $\\dfrac{a^{m}}{a^{n}}=a^{m-n}$, $\\left(a^{m}\\right)^{n}=a^{mn}$ et $a^{-n}=\\dfrac{1}{a^{n}}$. On additionne les exposants pour un produit, on les soustrait pour un quotient, on les multiplie pour une puissance de puissance.",
+      "difficulte": 1,
+      "tags": ["puissances", "regles-de-calcul", "revision"]
+    },
+    {
+      "id": "1D-CH00-003",
+      "lecon": "Je révise l'essentiel de la 2nde C",
+      "type": "definition",
+      "recto": "Comment se calcule $|x|$ selon le signe de $x$ ?",
+      "verso": "$|x|=x$ lorsque $x \\ge 0$, et $|x|=-x$ lorsque $x<0$. C'est la distance de $x$ à $0$ ; plus généralement, la distance entre deux réels $a$ et $b$ vaut $|b-a|$.",
+      "difficulte": 1,
+      "tags": ["valeur-absolue", "distance", "revision"]
+    },
+    {
+      "id": "1D-CH00-004",
+      "lecon": "Je révise l'essentiel de la 2nde C",
+      "type": "formule",
+      "recto": "Pourquoi n'encadre-t-on pas une différence comme on encadre une somme ?",
+      "verso": "Pour une somme, on additionne les deux encadrements membre à membre. Pour une différence, il faut soustraire en croisant les bornes : la plus petite valeur de $x-y$ s'obtient avec la plus petite valeur de $x$ et la plus grande valeur de $y$.",
+      "difficulte": 3,
+      "tags": ["encadrement", "piege", "revision"]
+    },
+    {
+      "id": "1D-CH00-005",
+      "lecon": "Je révise l'essentiel de la 2nde C",
+      "type": "formule",
+      "recto": "Comment le discriminant décide-t-il du nombre de racines réelles d'un trinôme $ax^{2}+bx+c$ ?",
+      "verso": "Avec $a\\ne 0$ et $\\Delta=b^{2}-4ac$ : si $\\Delta>0$, deux racines $x_{1}=\\dfrac{-b-\\sqrt{\\Delta}}{2a}$ et $x_{2}=\\dfrac{-b+\\sqrt{\\Delta}}{2a}$ ; si $\\Delta=0$, une racine double ; si $\\Delta<0$, aucune racine réelle.",
+      "difficulte": 2,
+      "tags": ["second-degre", "discriminant", "revision"]
+    },
+    {
+      "id": "1D-CH00-006",
+      "lecon": "Je révise l'essentiel de la 2nde C",
+      "type": "formule",
+      "recto": "Comment factorise-t-on un trinôme $ax^{2}+bx+c$ qui admet deux racines $x_{1}$ et $x_{2}$ ?",
+      "verso": "$ax^{2}+bx+c=a\\left(x-x_{1}\\right)\\left(x-x_{2}\\right)$. Le coefficient $a$ reste devant le produit : l'oublier change le trinôme. Ainsi $x^{2}-7x+12=(x-3)(x-4)$, où $a=1$.",
+      "difficulte": 2,
+      "tags": ["second-degre", "factorisation", "revision"]
+    },
+    {
+      "id": "1D-CH00-007",
+      "lecon": "Je révise l'essentiel de la 2nde C",
+      "type": "formule",
+      "recto": "Quel est le signe d'un trinôme $ax^{2}+bx+c$ qui admet deux racines ?",
+      "verso": "Il est du signe de $a$ à l'extérieur des racines, et du signe contraire entre elles. Pour $x^{2}-7x+12$, de racines $3$ et $4$ : positif pour $x<3$ ou $x>4$, négatif pour $3<x<4$.",
+      "difficulte": 2,
+      "tags": ["second-degre", "signe", "revision"]
+    },
+    {
+      "id": "1D-CH00-008",
+      "lecon": "Je révise l'essentiel de la 2nde C",
+      "type": "definition",
+      "recto": "Quelles conditions imposent un quotient et une racine carrée dans un ensemble de définition ?",
+      "verso": "Un quotient exige un dénominateur non nul, une racine carrée exige un radicande positif ou nul. Ainsi $\\dfrac{1}{x+3}$ est définie sur $\\mathbb{R}\\setminus\\{-3\\}$, et $\\sqrt{2x-6}$ sur $[3\\,;+\\infty[$.",
+      "difficulte": 2,
+      "tags": ["ensemble-de-definition", "quotient", "racine-carree"]
+    },
+    {
+      "id": "1D-CH00-009",
+      "lecon": "Je révise l'essentiel de la 2nde C",
+      "type": "definition",
+      "recto": "Quelles égalités définissent une fonction paire et une fonction impaire ?",
+      "verso": "$f$ est paire lorsque $f(-x)=f(x)$ pour tout $x$ de son ensemble de définition, impaire lorsque $f(-x)=-f(x)$. La courbe d'une fonction paire est symétrique par rapport à l'axe des ordonnées, celle d'une fonction impaire par rapport à l'origine.",
+      "difficulte": 2,
+      "tags": ["parite", "symetrie", "revision"]
+    },
+    {
+      "id": "1D-CH00-010",
+      "lecon": "Je révise l'essentiel de la 2nde C",
+      "type": "formule",
+      "recto": "Comment reconnaît-on que deux vecteurs $\\vec{u}(x\\,;y)$ et $\\vec{v}(x'\\,;y')$ sont colinéaires ?",
+      "verso": "Ils sont colinéaires lorsque $xy'-yx'=0$, c'est-à-dire lorsque le produit en croix de leurs coordonnées est nul. Ainsi $\\vec{u}(4\\,;6)$ et $\\vec{v}(2\\,;3)$ le sont, car $4\\times 3-6\\times 2=0$.",
+      "difficulte": 1,
+      "tags": ["vecteurs", "colinearite", "revision"]
+    },
+    {
+      "id": "1D-CH00-011",
+      "lecon": "Je révise l'essentiel de la 2nde C",
+      "type": "formule",
+      "recto": "Comment calcule-t-on la distance $AB$ dans un repère orthonormé ?",
+      "verso": "$AB=\\sqrt{\\left(x_B-x_A\\right)^{2}+\\left(y_B-y_A\\right)^{2}}$, car $\\overrightarrow{AB}$ a pour coordonnées $\\left(x_B-x_A\\,;\\,y_B-y_A\\right)$. La formule exige un repère orthonormé.",
+      "difficulte": 2,
+      "tags": ["distance", "repere-orthonorme", "revision"]
+    },
+    {
+      "id": "1D-CH00-012",
+      "lecon": "Je révise l'essentiel de la 2nde C",
+      "type": "formule",
+      "recto": "Comment calcule-t-on le produit scalaire de deux vecteurs à partir de leurs coordonnées ?",
+      "verso": "Dans un repère orthonormé, $\\vec{u}\\cdot\\vec{v}=xx'+yy'$ pour $\\vec{u}(x\\,;y)$ et $\\vec{v}(x'\\,;y')$. Les deux vecteurs sont orthogonaux lorsque ce produit scalaire est nul.",
+      "difficulte": 1,
+      "tags": ["produit-scalaire", "orthogonalite", "revision"]
+    },
+    {
+      "id": "1D-CH00-013",
+      "lecon": "Je révise l'essentiel de la 2nde C",
+      "type": "formule",
+      "recto": "Comment convertit-on une mesure d'angle des degrés vers les radians ?",
+      "verso": "On multiplie par $\\dfrac{\\pi}{180}$, puisqu'un tour complet vaut $360^{\\circ}$, soit $2\\pi$ radians. Ainsi $45^{\\circ}=\\dfrac{\\pi}{4}$ rad, et en sens inverse $\\dfrac{\\pi}{6}$ rad vaut $30^{\\circ}$.",
+      "difficulte": 1,
+      "tags": ["radian", "conversion", "revision"]
+    },
+    {
+      "id": "1D-CH00-014",
+      "lecon": "Je révise l'essentiel de la 2nde C",
+      "type": "formule",
+      "recto": "Quelles sont les valeurs exactes de $\\cos\\dfrac{\\pi}{6}$, $\\cos\\dfrac{\\pi}{4}$ et $\\cos\\dfrac{\\pi}{3}$ ?",
+      "verso": "$\\cos\\dfrac{\\pi}{6}=\\dfrac{\\sqrt{3}}{2}$, $\\cos\\dfrac{\\pi}{4}=\\dfrac{\\sqrt{2}}{2}$ et $\\cos\\dfrac{\\pi}{3}=\\dfrac{1}{2}$. Les sinus se lisent dans l'ordre inverse : $\\sin\\dfrac{\\pi}{6}=\\dfrac{1}{2}$ et $\\sin\\dfrac{\\pi}{3}=\\dfrac{\\sqrt{3}}{2}$.",
+      "difficulte": 2,
+      "tags": ["trigonometrie", "valeurs-remarquables"]
+    },
+    {
+      "id": "1D-CH00-015",
+      "lecon": "Je révise l'essentiel de la 2nde C",
+      "type": "formule",
+      "recto": "Quelle relation lie $\\cos x$ et $\\sin x$ pour tout réel $x$ ?",
+      "verso": "$\\cos^{2}x+\\sin^{2}x=1$. Cette égalité vaut quel que soit le réel $x$ et fait partie des formules à savoir par cœur.",
+      "difficulte": 1,
+      "tags": ["trigonometrie", "relation-fondamentale"]
+    },
+    {
+      "id": "1D-CH00-016",
+      "lecon": "Mes outils de travail",
+      "type": "definition",
+      "recto": "Sous quelle forme donne-t-on un résultat numérique, sauf indication contraire de l'énoncé ?",
+      "verso": "En valeur exacte : on garde $\\sqrt{2}$, $\\dfrac{\\pi}{3}$ ou $\\dfrac{5}{7}$ tels quels. Une valeur approchée ne se donne que si l'énoncé le demande, en précisant alors l'arrondi.",
+      "difficulte": 2,
+      "tags": ["valeur-exacte", "presentation"]
+    },
+    {
+      "id": "1D-CH00-017",
+      "lecon": "Mes outils de travail",
+      "type": "definition",
+      "recto": "Combien de points porte le tableau de valeurs servant à tracer la courbe d'une fonction ?",
+      "verso": "Cinq à huit points bien choisis, auxquels on ajoute les points remarquables : les intersections avec les axes et les extremums.",
+      "difficulte": 1,
+      "tags": ["tableau-de-valeurs", "courbe"]
+    },
+    {
+      "id": "1D-CH00-018",
+      "lecon": "Mes outils de travail",
+      "type": "definition",
+      "recto": "Comment relie-t-on les points placés pour obtenir la courbe d'une fonction ?",
+      "verso": "D'un trait souple et continu, jamais à la règle. On nomme ensuite la courbe et l'on vérifie que son allure s'accorde avec le tableau de variations.",
+      "difficulte": 2,
+      "tags": ["courbe", "trace"]
+    },
+    {
+      "id": "1D-CH00-019",
+      "lecon": "Raisonner en 1ère D : du langage du mathématicien à la récurrence",
+      "type": "definition",
+      "recto": "Dans le modèle de raisonnement « hypothèse, outil, conclusion », que désigne l'outil ?",
+      "verso": "La propriété ou la définition du cours qui s'applique à la situation. On l'énonce en entier, sous la forme « Or, si ... alors ... », entre les hypothèses données par l'énoncé et la conclusion qu'on en tire.",
+      "difficulte": 2,
+      "tags": ["raisonnement", "methode"]
+    },
+    {
+      "id": "1D-CH00-020",
+      "lecon": "Raisonner en 1ère D : du langage du mathématicien à la récurrence",
+      "type": "definition",
+      "recto": "Que signifient les symboles $\\forall$, $\\exists$, $\\Rightarrow$ et $\\iff$ ?",
+      "verso": "$\\forall$ se lit « quel que soit », $\\exists$ « il existe », $\\Rightarrow$ « implique » et $\\iff$ « équivaut à ». En 1ère D, on a le droit de les employer sur une copie, à condition de les employer correctement.",
+      "difficulte": 1,
+      "tags": ["symboles", "logique"]
+    },
+    {
+      "id": "1D-CH00-021",
+      "lecon": "Raisonner en 1ère D : du langage du mathématicien à la récurrence",
+      "type": "definition",
+      "recto": "Pourquoi l'écriture « $2x=8 \\Rightarrow 4$ » est-elle fautive ?",
+      "verso": "Parce que $\\Rightarrow$ relie deux propositions, et non un calcul à son résultat : ce n'est pas une flèche de calcul. On écrit soit l'équivalence $2x=8 \\iff x=4$, soit du français, « donc ».",
+      "difficulte": 3,
+      "tags": ["implication", "piege", "redaction"]
+    },
+    {
+      "id": "1D-CH00-022",
+      "lecon": "Raisonner en 1ère D : du langage du mathématicien à la récurrence",
+      "type": "formule",
+      "recto": "Pourquoi n'a-t-on pas le droit d'écrire $x^{2}=4 \\iff x=2$ ?",
+      "verso": "Parce que l'implication $x=2 \\Rightarrow x^{2}=4$ est vraie, mais sa réciproque est fausse : $x=-2$ convient aussi. L'équivalence correcte est $x^{2}=4 \\iff (x=2$ ou $x=-2)$.",
+      "difficulte": 3,
+      "tags": ["equivalence", "reciproque", "piege"]
+    },
+    {
+      "id": "1D-CH00-023",
+      "lecon": "Raisonner en 1ère D : du langage du mathématicien à la récurrence",
+      "type": "definition",
+      "recto": "Qu'est-ce qu'une propriété admise ?",
+      "verso": "Une propriété que le programme demande de savoir utiliser comme outil sans la démontrer ; sa démonstration existe, mais elle n'est établie que plus tard, souvent en Terminale. Rien à voir avec une conjecture, qui n'est encore ni admise ni démontrée.",
+      "difficulte": 2,
+      "tags": ["propriete-admise", "conjecture", "vocabulaire"]
+    },
+    {
+      "id": "1D-CH00-024",
+      "lecon": "Raisonner en 1ère D : du langage du mathématicien à la récurrence",
+      "type": "formule",
+      "recto": "Que suffit-il de montrer pour établir qu'une propriété $P(n)$ est vraie pour tout entier $n \\ge n_{0}$ ?",
+      "verso": "Deux choses : l'initialisation, $P(n_{0})$ est vraie, et l'hérédité, si $P(n)$ est vraie pour un entier quelconque $n \\ge n_{0}$ alors $P(n+1)$ l'est aussi. On conclut alors que $P(n)$ est vraie pour tout entier $n \\ge n_{0}$.",
+      "difficulte": 2,
+      "tags": ["recurrence", "initialisation", "heredite"]
+    },
+    {
+      "id": "1D-CH00-025",
+      "lecon": "Raisonner en 1ère D : du langage du mathématicien à la récurrence",
+      "type": "definition",
+      "recto": "En quoi consiste l'hérédité d'un raisonnement par récurrence ?",
+      "verso": "A démontrer que, si la propriété est vraie pour un entier quelconque $n \\ge n_{0}$, alors elle est vraie pour l'entier suivant $n+1$ : de n'importe quelle marche, on sait passer à la suivante.",
+      "difficulte": 2,
+      "tags": ["recurrence", "heredite"]
+    },
+    {
+      "id": "1D-CH00-026",
+      "lecon": "Raisonner en 1ère D : du langage du mathématicien à la récurrence",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on hypothèse de récurrence ?",
+      "verso": "La supposition que $P(n)$ est vraie pour un entier quelconque $n \\ge n_{0}$. C'est le point de départ de l'hérédité : on s'en sert pour établir $P(n+1)$.",
+      "difficulte": 2,
+      "tags": ["recurrence", "hypothese", "vocabulaire"]
+    },
+    {
+      "id": "1D-CH00-027",
+      "lecon": "Raisonner en 1ère D : du langage du mathématicien à la récurrence",
+      "type": "formule",
+      "recto": "Pourquoi l'hérédité seule ne démontre-t-elle rien ?",
+      "verso": "Sans première marche, l'escalier ne mène nulle part. Pour « $10^{n}+1$ est divisible par $9$ », l'hérédité marche, car $10^{n+1}+1=10\\left(10^{n}+1\\right)-9$ ; pourtant la propriété est fausse pour tout $n$, puisque $11$ n'est pas divisible par $9$.",
+      "difficulte": 3,
+      "tags": ["recurrence", "initialisation", "piege"]
+    },
+    {
+      "id": "1D-CH00-028",
+      "lecon": "Raisonner en 1ère D : du langage du mathématicien à la récurrence",
+      "type": "formule",
+      "recto": "Pourquoi vérifier une propriété sur de nombreuses valeurs de $n$ ne la démontre-t-il pas ?",
+      "verso": "Parce qu'une valeur plus grande peut la mettre en défaut : $n^{2}+n+41$ donne un nombre premier pour $n=0$, $1$, $2$, jusqu'à $39$, mais pas pour $n=40$, où il vaut $41^{2}$. Des exemples ne remplacent jamais la preuve de l'hérédité.",
+      "difficulte": 3,
+      "tags": ["recurrence", "piege", "preuve"]
+    },
+    {
+      "id": "1D-CH00-029",
+      "lecon": "Raisonner en 1ère D : du langage du mathématicien à la récurrence",
+      "type": "definition",
+      "recto": "Combien de contre-exemples faut-il pour réfuter une affirmation ?",
+      "verso": "Un seul suffit. L'affirmation « tout entier divisible par $3$ est divisible par $9$ » tombe devant $6$, qui est divisible par $3$ mais pas par $9$.",
+      "difficulte": 1,
+      "tags": ["contre-exemple", "logique"]
+    },
+    {
+      "id": "1D-CH00-030",
+      "lecon": "Raisonner en 1ère D : du langage du mathématicien à la récurrence",
+      "type": "definition",
+      "recto": "Que vaut une propriété simplement lue sur un graphique soigné ?",
+      "verso": "Elle ne vaut que comme conjecture. Un graphique fait deviner qu'une fonction croît ou que deux courbes se coupent, mais une figure suggère seulement : tant que rien n'est démontré, il n'y a pas de preuve.",
+      "difficulte": 2,
+      "tags": ["conjecture", "preuve", "graphique"]
+    },
+    {
+      "id": "1D-CH00-031",
+      "lecon": "Raisonner en 1ère D : du langage du mathématicien à la récurrence",
+      "type": "formule",
+      "recto": "Que vaut la somme $1+2+3+\\dots+n$ des $n$ premiers entiers naturels non nuls ?",
+      "verso": "Elle vaut $\\dfrac{n(n+1)}{2}$, pour tout entier $n \\ge 1$, égalité qui se démontre par récurrence. Contrôle pour $n=4$ : $1+2+3+4=10$ et $\\dfrac{4\\times 5}{2}=10$.",
+      "difficulte": 2,
+      "tags": ["somme", "recurrence", "entiers"]
+    },
+    {
+      "id": "1D-CH00-032",
+      "lecon": "Raisonner en 1ère D : du langage du mathématicien à la récurrence",
+      "type": "formule",
+      "recto": "Que vaut la somme $1+3+5+\\dots+(2n-1)$ des $n$ premiers nombres impairs ?",
+      "verso": "Elle vaut $n^{2}$, pour tout entier $n \\ge 1$. L'hérédité se lit dans une identité remarquable : $n^{2}+(2n+1)=(n+1)^{2}$.",
+      "difficulte": 2,
+      "tags": ["somme", "recurrence", "nombres-impairs"]
+    },
+    {
+      "id": "1D-CH00-033",
+      "lecon": "Ma méthode de travail",
+      "type": "definition",
+      "recto": "Que doit-on noter à côté de chaque formule dans un cahier de formules ?",
+      "verso": "Ses conditions d'emploi : « pour $x>0$ », « pour une suite géométrique de raison $q\\ne 1$ ». Une formule employée hors de ses conditions est une faute, et c'est la plus fréquente au lycée.",
+      "difficulte": 2,
+      "tags": ["conditions-demploi", "methode"]
+    },
+    {
+      "id": "1D-CH00-034",
+      "lecon": "Ma méthode de travail",
+      "type": "definition",
+      "recto": "Pourquoi recopier un corrigé ne prouve-t-il pas qu'on a compris ?",
+      "verso": "Parce que la preuve d'avoir compris n'est pas de savoir relire, mais de savoir refaire. Recopier donne une impression de maîtrise qui se paie le jour du devoir.",
+      "difficulte": 2,
+      "tags": ["methode", "piege"]
+    },
+    {
+      "id": "1D-CH00-035",
+      "lecon": "Ma méthode de travail",
+      "type": "definition",
+      "recto": "Que demande exactement la consigne « Déduis-en que » ?",
+      "verso": "D'utiliser le résultat de la question précédente pour établir le nouveau résultat, sans repartir de zéro : les deux questions s'enchaînent volontairement.",
+      "difficulte": 2,
+      "tags": ["consignes", "vocabulaire"]
+    },
+    {
+      "id": "1D-CH00-036",
+      "lecon": "Comment lire ce manuel",
+      "type": "definition",
+      "recto": "Que signalent les une, deux ou trois étoiles portées par un exercice ?",
+      "verso": "Non pas sa longueur, mais ce qu'il demande : une étoile pour une application directe d'une seule notion, deux étoiles pour un enchaînement de deux étapes, trois étoiles pour une prise d'initiative, quand rien n'indique par quoi commencer.",
+      "difficulte": 1,
+      "tags": ["etoiles", "difficulte"]
+    },
+    {
+      "id": "1D-CH00-037",
+      "lecon": "Comment lire ce manuel",
+      "type": "definition",
+      "recto": "Que propose la rubrique « Trouve l'erreur » ?",
+      "verso": "Une démarche fausse, à critiquer puis à corriger : mesure prise sur un dessin, propriété inventée, réciproque confondue avec l'énoncé direct, récurrence sans initialisation.",
+      "difficulte": 1,
+      "tags": ["rubrique", "critique"]
+    }
+  ]
+}

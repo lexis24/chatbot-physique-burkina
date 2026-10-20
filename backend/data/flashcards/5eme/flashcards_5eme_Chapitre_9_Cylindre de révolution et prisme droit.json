@@ -1,0 +1,332 @@
+{
+  "niveau": "5ème",
+  "chapitre": "Chapitre 9 : Cylindre de révolution et prisme droit",
+  "source": "maths/5eme/Chapitre_9_Cylindre_et_prisme_droit",
+  "nombre_cartes": 36,
+  "cartes": [
+    {
+      "id": "5E-CH09-001",
+      "lecon": "Le cylindre de révolution : description et perspective",
+      "type": "definition",
+      "recto": "Qu'est-ce qu'un cylindre de révolution ?",
+      "verso": "C'est le solide obtenu en faisant tourner un rectangle autour d'un de ses côtés. Ses deux bases sont des disques identiques, reliés par une surface latérale courbe.",
+      "difficulte": 1,
+      "tags": ["cylindre", "definition", "solide"]
+    },
+    {
+      "id": "5E-CH09-002",
+      "lecon": "Le cylindre de révolution : description et perspective",
+      "type": "definition",
+      "recto": "Quelles mesures suffisent à décrire entièrement un cylindre de révolution ?",
+      "verso": "Deux mesures seulement : le rayon $r$ d'une base et la hauteur $h$, qui est la distance entre les deux bases.",
+      "difficulte": 1,
+      "tags": ["cylindre", "rayon", "hauteur"]
+    },
+    {
+      "id": "5E-CH09-003",
+      "lecon": "Le cylindre de révolution : description et perspective",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on la surface latérale d'un cylindre ?",
+      "verso": "C'est la partie courbe qui relie les deux bases, celle que recouvre une étiquette. Elle ne comprend ni le fond ni le couvercle.",
+      "difficulte": 2,
+      "tags": ["cylindre", "surface-laterale", "vocabulaire"]
+    },
+    {
+      "id": "5E-CH09-004",
+      "lecon": "Le cylindre de révolution : description et perspective",
+      "type": "formule",
+      "recto": "Sur un fût couché, où se mesure la hauteur du cylindre ?",
+      "verso": "Le long du fût, et non verticalement : la hauteur se mesure toujours perpendiculairement aux bases, quelle que soit la position du solide.",
+      "difficulte": 3,
+      "tags": ["cylindre", "hauteur", "piege"]
+    },
+    {
+      "id": "5E-CH09-005",
+      "lecon": "Le cylindre de révolution : description et perspective",
+      "type": "formule",
+      "recto": "Que faut-il faire quand un énoncé donne le diamètre d'un cylindre au lieu de son rayon ?",
+      "verso": "Le diviser par $2$ avant tout calcul, car toutes les formules utilisent le rayon. Un fût de $8$ cm de diamètre a pour rayon $r = 4$ cm.",
+      "difficulte": 2,
+      "tags": ["cylindre", "diametre", "rayon", "piege"]
+    },
+    {
+      "id": "5E-CH09-006",
+      "lecon": "Le cylindre de révolution : description et perspective",
+      "type": "formule",
+      "recto": "Pourquoi les bases d'un cylindre se dessinent-elles en ellipses sur une perspective cavalière ?",
+      "verso": "Parce qu'un disque vu de biais s'aplatit et prend la forme d'une ellipse. En perspective cavalière, on dessine le solide comme on le voit, et ce qui est caché se trace en pointillés.",
+      "difficulte": 2,
+      "tags": ["cylindre", "perspective-cavaliere", "ellipse"]
+    },
+    {
+      "id": "5E-CH09-007",
+      "lecon": "Patron du cylindre",
+      "type": "definition",
+      "recto": "Qu'est-ce que le patron d'un solide ?",
+      "verso": "C'est le dessin à plat qui, découpé et plié, redonne exactement le solide, sans manque ni recouvrement. C'est un plan de fabrication.",
+      "difficulte": 1,
+      "tags": ["patron", "definition"]
+    },
+    {
+      "id": "5E-CH09-008",
+      "lecon": "Patron du cylindre",
+      "type": "formule",
+      "recto": "De quelles pièces le patron d'un cylindre est-il formé ?",
+      "verso": "De deux disques identiques de rayon $r$, qui sont les bases, et d'un rectangle unique, qui est la surface latérale dépliée.",
+      "difficulte": 1,
+      "tags": ["patron", "cylindre"]
+    },
+    {
+      "id": "5E-CH09-009",
+      "lecon": "Patron du cylindre",
+      "type": "formule",
+      "recto": "Quelles sont les deux dimensions du rectangle du patron d'un cylindre ?",
+      "verso": "L'une est la hauteur $h$ du cylindre, l'autre est le périmètre de la base, c'est-à-dire $2 \\times \\pi \\times r$.",
+      "difficulte": 2,
+      "tags": ["patron", "cylindre", "perimetre"]
+    },
+    {
+      "id": "5E-CH09-010",
+      "lecon": "Patron du cylindre",
+      "type": "formule",
+      "recto": "Pourquoi la longueur du rectangle latéral d'un cylindre vaut-elle le périmètre de la base ?",
+      "verso": "Parce que le bord de ce rectangle était collé tout le long du cercle de base : c'est ce cercle simplement redressé. Sa longueur vaut donc $2 \\times \\pi \\times r$.",
+      "difficulte": 3,
+      "tags": ["patron", "cylindre", "justification"]
+    },
+    {
+      "id": "5E-CH09-011",
+      "lecon": "Patron du cylindre",
+      "type": "definition",
+      "recto": "Pourquoi les bases d'un cylindre sont-elles des cercles dans un patron, et non des ellipses ?",
+      "verso": "Parce que dans un patron tout est vu à plat, sans effet de perspective. Les ellipses n'apparaissent que sur une représentation en perspective cavalière.",
+      "difficulte": 3,
+      "tags": ["patron", "cylindre", "piege"]
+    },
+    {
+      "id": "5E-CH09-012",
+      "lecon": "Aire et volume du cylindre",
+      "type": "formule",
+      "recto": "Comment calcule-t-on l'aire d'une base d'un cylindre de rayon $r$ ?",
+      "verso": "C'est l'aire d'un disque : $\\pi \\times r \\times r$. Avec $\\pi \\approx 3{,}14$ et $r = 5$ cm, elle vaut $78{,}5$ cm$^{2}$.",
+      "difficulte": 1,
+      "tags": ["cylindre", "aire-de-base", "disque"]
+    },
+    {
+      "id": "5E-CH09-013",
+      "lecon": "Aire et volume du cylindre",
+      "type": "formule",
+      "recto": "Quelle est la formule de l'aire latérale d'un cylindre ?",
+      "verso": "Aire latérale $= 2 \\times \\pi \\times r \\times h$. C'est l'aire du rectangle du patron, dont les dimensions sont le périmètre de la base et la hauteur.",
+      "difficulte": 1,
+      "tags": ["cylindre", "aire-laterale"]
+    },
+    {
+      "id": "5E-CH09-014",
+      "lecon": "Aire et volume du cylindre",
+      "type": "formule",
+      "recto": "Quelle est la formule de l'aire totale d'un cylindre ?",
+      "verso": "Aire totale $=$ aire latérale $+ 2 \\times \\pi \\times r \\times r$. On ajoute les deux disques de base, c'est-à-dire le fond et le couvercle.",
+      "difficulte": 2,
+      "tags": ["cylindre", "aire-totale"]
+    },
+    {
+      "id": "5E-CH09-015",
+      "lecon": "Aire et volume du cylindre",
+      "type": "formule",
+      "recto": "Quelle est la formule du volume d'un cylindre de révolution ?",
+      "verso": "Volume $=$ aire de la base $\\times$ hauteur $= \\pi \\times r \\times r \\times h$, avec $\\pi \\approx 3{,}14$.",
+      "difficulte": 1,
+      "tags": ["cylindre", "volume", "formule"]
+    },
+    {
+      "id": "5E-CH09-016",
+      "lecon": "Aire et volume du cylindre",
+      "type": "formule",
+      "recto": "Pourquoi l'expression $2 \\times \\pi \\times r \\times h$ ne donne-t-elle pas le volume d'un cylindre ?",
+      "verso": "Parce que c'est l'aire latérale, qui se mesure en unités d'aire. Le volume vaut $\\pi \\times r \\times r \\times h$, l'aire de la base multipliée par la hauteur.",
+      "difficulte": 3,
+      "tags": ["cylindre", "volume", "piege"]
+    },
+    {
+      "id": "5E-CH09-017",
+      "lecon": "Aire et volume du cylindre",
+      "type": "formule",
+      "recto": "A combien de centimètres cubes correspond un litre ?",
+      "verso": "$1$ L $= 1$ dm$^{3} = 1\\,000$ cm$^{3}$, car le litre est la contenance d'un cube de $1$ dm d'arête.",
+      "difficulte": 1,
+      "tags": ["unites", "litre", "conversion"]
+    },
+    {
+      "id": "5E-CH09-018",
+      "lecon": "Aire et volume du cylindre",
+      "type": "formule",
+      "recto": "Combien de litres contient un mètre cube ?",
+      "verso": "$1$ m$^{3} = 1\\,000$ dm$^{3}$, donc $1$ m$^{3} = 1\\,000$ L. Une citerne d'un mètre cube contient mille litres.",
+      "difficulte": 2,
+      "tags": ["unites", "metre-cube", "conversion"]
+    },
+    {
+      "id": "5E-CH09-019",
+      "lecon": "Le prisme droit : description et perspective",
+      "type": "definition",
+      "recto": "Qu'est-ce qu'un prisme droit ?",
+      "verso": "C'est un solide qui a deux bases identiques et parallèles, qui sont des polygones, reliées par des faces latérales qui sont des rectangles.",
+      "difficulte": 1,
+      "tags": ["prisme-droit", "definition", "solide"]
+    },
+    {
+      "id": "5E-CH09-020",
+      "lecon": "Le prisme droit : description et perspective",
+      "type": "definition",
+      "recto": "Que représente la hauteur d'un prisme droit ?",
+      "verso": "C'est la longueur des arêtes latérales, qui sont toutes égales et perpendiculaires aux bases.",
+      "difficulte": 2,
+      "tags": ["prisme-droit", "hauteur", "aretes-laterales"]
+    },
+    {
+      "id": "5E-CH09-021",
+      "lecon": "Le prisme droit : description et perspective",
+      "type": "formule",
+      "recto": "Combien de faces a un prisme droit dont la base a $n$ côtés ?",
+      "verso": "Il a $n$ faces latérales, une par côté de la base, donc $n + 2$ faces en tout une fois les deux bases ajoutées.",
+      "difficulte": 2,
+      "tags": ["prisme-droit", "faces", "comptage"]
+    },
+    {
+      "id": "5E-CH09-022",
+      "lecon": "Le prisme droit : description et perspective",
+      "type": "formule",
+      "recto": "Combien de sommets a un prisme droit dont la base a $n$ côtés ?",
+      "verso": "Il en a $2n$ : chaque sommet de la base du bas a son jumeau sur la base du haut. Une base hexagonale donne ainsi $12$ sommets.",
+      "difficulte": 2,
+      "tags": ["prisme-droit", "sommets", "comptage"]
+    },
+    {
+      "id": "5E-CH09-023",
+      "lecon": "Le prisme droit : description et perspective",
+      "type": "formule",
+      "recto": "Pourquoi un prisme droit à $10$ faces n'a-t-il pas une base à $10$ côtés ?",
+      "verso": "Parce qu'il faut d'abord retirer les deux bases : $10 - 2 = 8$ faces latérales, donc une base à $8$ côtés. Ses bases sont des octogones.",
+      "difficulte": 3,
+      "tags": ["prisme-droit", "comptage", "piege"]
+    },
+    {
+      "id": "5E-CH09-024",
+      "lecon": "Le prisme droit : description et perspective",
+      "type": "definition",
+      "recto": "Pourquoi la base d'une tente en forme de prisme n'est-elle pas la face posée sur le sol ?",
+      "verso": "Parce que les bases sont les deux faces identiques et parallèles entre lesquelles toutes les autres sont des rectangles : ici, les deux triangles des extrémités.",
+      "difficulte": 3,
+      "tags": ["prisme-droit", "base", "piege"]
+    },
+    {
+      "id": "5E-CH09-025",
+      "lecon": "Patron du prisme droit",
+      "type": "formule",
+      "recto": "De quelles pièces le patron d'un prisme droit est-il formé ?",
+      "verso": "De deux bases identiques, qui sont les polygones, et d'autant de rectangles que la base a de côtés.",
+      "difficulte": 1,
+      "tags": ["patron", "prisme-droit"]
+    },
+    {
+      "id": "5E-CH09-026",
+      "lecon": "Patron du prisme droit",
+      "type": "formule",
+      "recto": "Quelles sont les dimensions d'un rectangle latéral dans le patron d'un prisme droit ?",
+      "verso": "Sa largeur est un côté de la base, et son autre dimension est la hauteur du prisme, commune à tous les rectangles.",
+      "difficulte": 2,
+      "tags": ["patron", "prisme-droit", "dimensions"]
+    },
+    {
+      "id": "5E-CH09-027",
+      "lecon": "Patron du prisme droit",
+      "type": "formule",
+      "recto": "Que vaut la longueur de la bande latérale du patron d'un prisme droit ?",
+      "verso": "Le périmètre de la base. Mis bout à bout, les rectangles forment une seule bande de hauteur $h$ et de longueur égale à ce périmètre.",
+      "difficulte": 2,
+      "tags": ["patron", "prisme-droit", "bande-laterale"]
+    },
+    {
+      "id": "5E-CH09-028",
+      "lecon": "Patron du prisme droit",
+      "type": "formule",
+      "recto": "Comment vérifie-t-on rapidement qu'un patron de prisme droit est correct ?",
+      "verso": "La somme des largeurs des rectangles doit valoir le périmètre de la base, et tous les rectangles doivent avoir la même hauteur. Si l'un des deux points échoue, le patron est faux.",
+      "difficulte": 3,
+      "tags": ["patron", "prisme-droit", "verification"]
+    },
+    {
+      "id": "5E-CH09-029",
+      "lecon": "Patron du prisme droit",
+      "type": "definition",
+      "recto": "Pourquoi le pavé droit est-il un prisme droit ?",
+      "verso": "Parce que ses deux bases sont des rectangles identiques et parallèles, et que ses faces latérales sont des rectangles. Son patron obéit donc à la même règle.",
+      "difficulte": 2,
+      "tags": ["pave-droit", "prisme-droit", "classification"]
+    },
+    {
+      "id": "5E-CH09-030",
+      "lecon": "Aire et volume du prisme droit",
+      "type": "formule",
+      "recto": "Quelle est la formule du volume d'un prisme droit ?",
+      "verso": "Volume $=$ aire de la base $\\times$ hauteur. Un prisme de base $12$ cm$^{2}$ et de hauteur $4$ cm a pour volume $48$ cm$^{3}$.",
+      "difficulte": 1,
+      "tags": ["prisme-droit", "volume", "formule"]
+    },
+    {
+      "id": "5E-CH09-031",
+      "lecon": "Aire et volume du prisme droit",
+      "type": "formule",
+      "recto": "Quelle est la formule de l'aire latérale d'un prisme droit ?",
+      "verso": "Aire latérale $=$ périmètre de la base $\\times$ hauteur. C'est l'aire de la bande du patron, à ne pas confondre avec le volume, qui utilise l'aire de la base.",
+      "difficulte": 2,
+      "tags": ["prisme-droit", "aire-laterale"]
+    },
+    {
+      "id": "5E-CH09-032",
+      "lecon": "Aire et volume du prisme droit",
+      "type": "formule",
+      "recto": "Quelle est la formule de l'aire totale d'un prisme droit ?",
+      "verso": "Aire totale $=$ aire latérale $+ 2 \\times$ aire de la base. On ajoute les deux polygones à l'aire de la bande.",
+      "difficulte": 2,
+      "tags": ["prisme-droit", "aire-totale"]
+    },
+    {
+      "id": "5E-CH09-033",
+      "lecon": "Aire et volume du prisme droit",
+      "type": "formule",
+      "recto": "Pourquoi la règle « Volume $=$ aire de la base $\\times$ hauteur » vaut-elle pour le prisme droit comme pour le cylindre ?",
+      "verso": "Parce que dans les deux solides la base monte tout droit sans se déformer : toutes les tranches sont identiques à la base. Empiler cette surface sur une hauteur $h$ revient à multiplier son aire par $h$.",
+      "difficulte": 2,
+      "tags": ["volume", "justification", "empilement"]
+    },
+    {
+      "id": "5E-CH09-034",
+      "lecon": "Aire et volume du prisme droit",
+      "type": "formule",
+      "recto": "Comment retrouve-t-on la hauteur d'un solide dont on connaît le volume ?",
+      "verso": "On divise le volume par l'aire de la base. Une citerne de $6\\,280$ dm$^{3}$ dont la base a une aire de $314$ dm$^{2}$ mesure $6\\,280 \\div 314 = 20$ dm de haut.",
+      "difficulte": 2,
+      "tags": ["volume", "dimension-manquante", "hauteur"]
+    },
+    {
+      "id": "5E-CH09-035",
+      "lecon": "Aire et volume du prisme droit",
+      "type": "formule",
+      "recto": "Comment retrouve-t-on le périmètre de la base d'un prisme dont on connaît l'aire latérale ?",
+      "verso": "On divise l'aire latérale par la hauteur. Pour une aire latérale de $72$ cm$^{2}$ et une hauteur de $4{,}5$ cm, le périmètre vaut $72 \\div 4{,}5 = 16$ cm.",
+      "difficulte": 3,
+      "tags": ["aire-laterale", "dimension-manquante", "perimetre"]
+    },
+    {
+      "id": "5E-CH09-036",
+      "lecon": "Aire et volume du prisme droit",
+      "type": "formule",
+      "recto": "Quelle confusion guette l'élève devant un prisme dont la base est un triangle de hauteur donnée ?",
+      "verso": "Confondre la hauteur du triangle de base avec la hauteur du prisme. La première sert à calculer l'aire de la base, la seconde à empiler cette aire.",
+      "difficulte": 3,
+      "tags": ["prisme-droit", "hauteur", "piege"]
+    }
+  ]
+}

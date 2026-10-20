@@ -1,0 +1,305 @@
+{
+  "niveau": "3ème",
+  "chapitre": "Chapitre 14 : Trigonométrie dans le triangle rectangle",
+  "source": "maths/3eme/Chapitre_14_Trigonometrie",
+  "nombre_cartes": 33,
+  "cartes": [
+    {
+      "id": "3E-CH14-001",
+      "lecon": "Cosinus et sinus d'un angle aigu",
+      "type": "definition",
+      "recto": "Dans un triangle rectangle, quel côté appelle-t-on le côté adjacent à un angle aigu ?",
+      "verso": "Celui des deux côtés de cet angle qui n'est pas l'hypoténuse : il touche l'angle, il est couché contre lui.",
+      "difficulte": 1,
+      "tags": ["cote-adjacent", "vocabulaire"]
+    },
+    {
+      "id": "3E-CH14-002",
+      "lecon": "Cosinus et sinus d'un angle aigu",
+      "type": "definition",
+      "recto": "Dans un triangle rectangle, quel côté appelle-t-on le côté opposé à un angle aigu ?",
+      "verso": "Celui qui fait face à cet angle, de l'autre côté du triangle : il ne touche pas son sommet.",
+      "difficulte": 1,
+      "tags": ["cote-oppose", "vocabulaire"]
+    },
+    {
+      "id": "3E-CH14-003",
+      "lecon": "Cosinus et sinus d'un angle aigu",
+      "type": "definition",
+      "recto": "Dans un triangle rectangle, quel côté est l'hypoténuse ?",
+      "verso": "Le côté opposé à l'angle droit. C'est toujours le plus long des trois côtés.",
+      "difficulte": 1,
+      "tags": ["hypotenuse", "vocabulaire"]
+    },
+    {
+      "id": "3E-CH14-004",
+      "lecon": "Cosinus et sinus d'un angle aigu",
+      "type": "formule",
+      "recto": "Dans un triangle rectangle, comment définit-on le cosinus d'un angle aigu ?",
+      "verso": "$\\cos \\widehat{A} = \\dfrac{\\text{côté adjacent}}{\\text{hypoténuse}}$.",
+      "difficulte": 1,
+      "tags": ["cosinus", "definition"]
+    },
+    {
+      "id": "3E-CH14-005",
+      "lecon": "Cosinus et sinus d'un angle aigu",
+      "type": "formule",
+      "recto": "Dans un triangle rectangle, comment définit-on le sinus d'un angle aigu ?",
+      "verso": "$\\sin \\widehat{A} = \\dfrac{\\text{côté opposé}}{\\text{hypoténuse}}$.",
+      "difficulte": 1,
+      "tags": ["sinus", "definition"]
+    },
+    {
+      "id": "3E-CH14-006",
+      "lecon": "Cosinus et sinus d'un angle aigu",
+      "type": "formule",
+      "recto": "Pourquoi le cosinus d'un angle ne change-t-il pas quand on agrandit le triangle rectangle ?",
+      "verso": "Parce que toutes les longueurs sont alors multipliées par le même nombre : le quotient de deux d'entre elles reste inchangé. Ces rapports ne dépendent que de la mesure de l'angle.",
+      "difficulte": 2,
+      "tags": ["cosinus", "rapport", "propriete"]
+    },
+    {
+      "id": "3E-CH14-007",
+      "lecon": "Cosinus et sinus d'un angle aigu",
+      "type": "formule",
+      "recto": "Entre quelles valeurs le cosinus et le sinus d'un angle aigu sont-ils toujours compris ?",
+      "verso": "Entre $0$ et $1$ : $0 < \\cos \\widehat{A} < 1$ et $0 < \\sin \\widehat{A} < 1$, car un côté de l'angle droit est toujours plus court que l'hypoténuse.",
+      "difficulte": 2,
+      "tags": ["cosinus", "sinus", "encadrement"]
+    },
+    {
+      "id": "3E-CH14-008",
+      "lecon": "Cosinus et sinus d'un angle aigu",
+      "type": "formule",
+      "recto": "Quelle longueur figure toujours au dénominateur du cosinus et du sinus ?",
+      "verso": "L'hypoténuse, qui est le plus grand des trois côtés. Un cosinus ou un sinus supérieur à $1$ signale donc une erreur, sans qu'il soit besoin de refaire le calcul.",
+      "difficulte": 3,
+      "tags": ["hypotenuse", "piege"]
+    },
+    {
+      "id": "3E-CH14-009",
+      "lecon": "Cosinus et sinus d'un angle aigu",
+      "type": "definition",
+      "recto": "Pourquoi faut-il préciser de quel angle on parle avant de nommer le côté adjacent ?",
+      "verso": "Parce que le nom des côtés change avec l'angle choisi : dans un même triangle rectangle, le côté adjacent à $\\widehat{B}$ est le côté opposé à $\\widehat{C}$.",
+      "difficulte": 3,
+      "tags": ["cote-adjacent", "cote-oppose", "piege"]
+    },
+    {
+      "id": "3E-CH14-010",
+      "lecon": "Tangente d'un angle aigu ; formule $\\cos ^{2}\\widehat{A} + \\sin ^{2}\\widehat{A} = 1$",
+      "type": "formule",
+      "recto": "Dans un triangle rectangle, comment définit-on la tangente d'un angle aigu ?",
+      "verso": "$\\tan \\widehat{A} = \\dfrac{\\text{côté opposé}}{\\text{côté adjacent}}$. Ce rapport compare les deux côtés de l'angle droit, sans faire intervenir l'hypoténuse.",
+      "difficulte": 1,
+      "tags": ["tangente", "definition"]
+    },
+    {
+      "id": "3E-CH14-011",
+      "lecon": "Tangente d'un angle aigu ; formule $\\cos ^{2}\\widehat{A} + \\sin ^{2}\\widehat{A} = 1$",
+      "type": "formule",
+      "recto": "Par quelle opération sur le sinus et le cosinus obtient-on la tangente d'un angle aigu ?",
+      "verso": "Par un quotient : $\\tan \\widehat{A} = \\dfrac{\\sin \\widehat{A}}{\\cos \\widehat{A}}$. La tangente n'est pas la somme du sinus et du cosinus.",
+      "difficulte": 2,
+      "tags": ["tangente", "quotient", "piege"]
+    },
+    {
+      "id": "3E-CH14-012",
+      "lecon": "Tangente d'un angle aigu ; formule $\\cos ^{2}\\widehat{A} + \\sin ^{2}\\widehat{A} = 1$",
+      "type": "formule",
+      "recto": "Comment la tangente d'un angle aigu se situe-t-elle par rapport au nombre $1$ ?",
+      "verso": "Elle peut le dépasser, contrairement au cosinus et au sinus : elle vaut $1$ pour $45^{\\circ}$ et devient très grande quand l'angle s'approche de $90^{\\circ}$.",
+      "difficulte": 2,
+      "tags": ["tangente", "valeurs"]
+    },
+    {
+      "id": "3E-CH14-013",
+      "lecon": "Tangente d'un angle aigu ; formule $\\cos ^{2}\\widehat{A} + \\sin ^{2}\\widehat{A} = 1$",
+      "type": "formule",
+      "recto": "Quelle formule fondamentale relie le cosinus et le sinus d'un même angle aigu ?",
+      "verso": "$\\cos ^{2}\\widehat{A} + \\sin ^{2}\\widehat{A} = 1$, quelle que soit la mesure de l'angle aigu $\\widehat{A}$.",
+      "difficulte": 1,
+      "tags": ["formule-fondamentale", "cosinus", "sinus"]
+    },
+    {
+      "id": "3E-CH14-014",
+      "lecon": "Tangente d'un angle aigu ; formule $\\cos ^{2}\\widehat{A} + \\sin ^{2}\\widehat{A} = 1$",
+      "type": "formule",
+      "recto": "Que signifie l'écriture $\\cos ^{2}\\widehat{A}$ ?",
+      "verso": "Elle signifie $\\left(\\cos \\widehat{A}\\right)^{2}$, c'est-à-dire le nombre $\\cos \\widehat{A}$ multiplié par lui-même. Ce n'est pas le cosinus du carré de l'angle.",
+      "difficulte": 3,
+      "tags": ["notation", "piege"]
+    },
+    {
+      "id": "3E-CH14-015",
+      "lecon": "Tangente d'un angle aigu ; formule $\\cos ^{2}\\widehat{A} + \\sin ^{2}\\widehat{A} = 1$",
+      "type": "formule",
+      "recto": "Comment calcule-t-on le sinus d'un angle aigu dont on connaît le cosinus ?",
+      "verso": "On écrit $\\sin ^{2}\\widehat{A} = 1 - \\cos ^{2}\\widehat{A}$, puis on prend la racine carrée positive, car le sinus d'un angle aigu est positif. La formule donne le carré, jamais le sinus directement.",
+      "difficulte": 2,
+      "tags": ["formule-fondamentale", "calcul"]
+    },
+    {
+      "id": "3E-CH14-016",
+      "lecon": "Tangente d'un angle aigu ; formule $\\cos ^{2}\\widehat{A} + \\sin ^{2}\\widehat{A} = 1$",
+      "type": "formule",
+      "recto": "Quelles égalités relient les rapports des deux angles aigus d'un même triangle rectangle ?",
+      "verso": "Ces angles sont complémentaires, $\\widehat{B} + \\widehat{C} = 90^{\\circ}$, et l'on a $\\sin \\widehat{B} = \\cos \\widehat{C}$ ainsi que $\\cos \\widehat{B} = \\sin \\widehat{C}$.",
+      "difficulte": 2,
+      "tags": ["angles-complementaires", "cosinus", "sinus"]
+    },
+    {
+      "id": "3E-CH14-017",
+      "lecon": "Tangente d'un angle aigu ; formule $\\cos ^{2}\\widehat{A} + \\sin ^{2}\\widehat{A} = 1$",
+      "type": "formule",
+      "recto": "Pourquoi la somme $\\cos ^{2}\\widehat{A} + \\sin ^{2}\\widehat{A}$ vaut-elle toujours $1$ ?",
+      "verso": "Parce qu'elle vaut $\\dfrac{\\text{adjacent}^{2} + \\text{opposé}^{2}}{\\text{hypoténuse}^{2}}$, et le théorème de Pythagore affirme que le numérateur est égal au dénominateur.",
+      "difficulte": 2,
+      "tags": ["formule-fondamentale", "pythagore", "demonstration"]
+    },
+    {
+      "id": "3E-CH14-018",
+      "lecon": "La table trigonométrique",
+      "type": "definition",
+      "recto": "Que donne une table trigonométrique ?",
+      "verso": "Pour chaque mesure d'angle en degrés, elle donne les valeurs approchées de son sinus, de son cosinus et de sa tangente, calculées une fois pour toutes.",
+      "difficulte": 1,
+      "tags": ["table", "definition"]
+    },
+    {
+      "id": "3E-CH14-019",
+      "lecon": "La table trigonométrique",
+      "type": "formule",
+      "recto": "Comment varient le sinus, le cosinus et la tangente quand un angle aigu augmente ?",
+      "verso": "Le sinus augmente, le cosinus diminue et la tangente augmente. Ce sens de variation sert de garde-fou pour repérer une lecture fausse.",
+      "difficulte": 2,
+      "tags": ["table", "sens-de-variation"]
+    },
+    {
+      "id": "3E-CH14-020",
+      "lecon": "La table trigonométrique",
+      "type": "formule",
+      "recto": "Comment procède-t-on lorsque la valeur cherchée ne figure pas dans la table ?",
+      "verso": "On l'encadre entre les deux valeurs voisines de la table, ce qui donne un encadrement de l'angle, puis on retient l'angle dont la valeur est la plus proche.",
+      "difficulte": 2,
+      "tags": ["table", "encadrement"]
+    },
+    {
+      "id": "3E-CH14-021",
+      "lecon": "La table trigonométrique",
+      "type": "formule",
+      "recto": "Pourquoi l'encadrement se retourne-t-il lorsqu'on passe des cosinus aux angles ?",
+      "verso": "Parce que le cosinus diminue quand l'angle augmente. De $\\cos 24^{\\circ} < \\cos \\widehat{O} < \\cos 23^{\\circ}$, on déduit $23^{\\circ} < \\widehat{O} < 24^{\\circ}$.",
+      "difficulte": 3,
+      "tags": ["table", "cosinus", "piege"]
+    },
+    {
+      "id": "3E-CH14-022",
+      "lecon": "La table trigonométrique",
+      "type": "formule",
+      "recto": "Que valent $\\sin 30^{\\circ}$, $\\sin 45^{\\circ}$ et $\\sin 60^{\\circ}$ ?",
+      "verso": "$\\sin 30^{\\circ} = \\dfrac{1}{2}$, $\\sin 45^{\\circ} = \\dfrac{\\sqrt{2}}{2} \\approx 0{,}707$ et $\\sin 60^{\\circ} = \\dfrac{\\sqrt{3}}{2} \\approx 0{,}866$.",
+      "difficulte": 1,
+      "tags": ["valeurs-remarquables", "sinus"]
+    },
+    {
+      "id": "3E-CH14-023",
+      "lecon": "La table trigonométrique",
+      "type": "formule",
+      "recto": "Que valent $\\cos 30^{\\circ}$, $\\cos 45^{\\circ}$ et $\\cos 60^{\\circ}$ ?",
+      "verso": "$\\cos 30^{\\circ} = \\dfrac{\\sqrt{3}}{2} \\approx 0{,}866$, $\\cos 45^{\\circ} = \\dfrac{\\sqrt{2}}{2} \\approx 0{,}707$ et $\\cos 60^{\\circ} = \\dfrac{1}{2}$.",
+      "difficulte": 1,
+      "tags": ["valeurs-remarquables", "cosinus"]
+    },
+    {
+      "id": "3E-CH14-024",
+      "lecon": "La table trigonométrique",
+      "type": "formule",
+      "recto": "Que valent $\\tan 30^{\\circ}$, $\\tan 45^{\\circ}$ et $\\tan 60^{\\circ}$ ?",
+      "verso": "$\\tan 30^{\\circ} = \\dfrac{\\sqrt{3}}{3} \\approx 0{,}577$, $\\tan 45^{\\circ} = 1$ et $\\tan 60^{\\circ} = \\sqrt{3} \\approx 1{,}732$.",
+      "difficulte": 2,
+      "tags": ["valeurs-remarquables", "tangente"]
+    },
+    {
+      "id": "3E-CH14-025",
+      "lecon": "La table trigonométrique",
+      "type": "definition",
+      "recto": "Pourquoi la ligne des cosinus des valeurs remarquables est-elle la ligne des sinus lue à l'envers ?",
+      "verso": "Parce que $\\cos \\alpha = \\sin \\left(90^{\\circ} - \\alpha \\right)$ : les angles de $30^{\\circ}$ et de $60^{\\circ}$ sont complémentaires, et $45^{\\circ}$ est son propre complémentaire.",
+      "difficulte": 3,
+      "tags": ["valeurs-remarquables", "angles-complementaires"]
+    },
+    {
+      "id": "3E-CH14-026",
+      "lecon": "La table trigonométrique",
+      "type": "formule",
+      "recto": "Pourquoi écrit-on $\\approx$ et non $=$ devant l'écriture décimale d'un rapport trigonométrique ?",
+      "verso": "Parce que les valeurs de la table sont approchées. On écrit $\\sin 60^{\\circ} = \\dfrac{\\sqrt{3}}{2}$, valeur exacte, mais $\\sin 60^{\\circ} \\approx 0{,}866$.",
+      "difficulte": 2,
+      "tags": ["table", "valeur-approchee", "notation"]
+    },
+    {
+      "id": "3E-CH14-027",
+      "lecon": "Applications dans des problèmes",
+      "type": "formule",
+      "recto": "Par quoi commence la résolution d'un problème de trigonométrie ?",
+      "verso": "Par un schéma codé faisant apparaître le triangle rectangle, avec l'angle droit marqué, l'angle connu et les longueurs données. Sans schéma, on ne peut pas nommer les côtés.",
+      "difficulte": 1,
+      "tags": ["schema", "methode"]
+    },
+    {
+      "id": "3E-CH14-028",
+      "lecon": "Applications dans des problèmes",
+      "type": "formule",
+      "recto": "Comment choisit-on le rapport trigonométrique adapté à un problème ?",
+      "verso": "On regarde si l'hypoténuse intervient. Si elle n'apparaît ni dans les données ni dans la question, c'est la tangente ; sinon, c'est le cosinus si l'autre côté touche l'angle, le sinus s'il lui fait face.",
+      "difficulte": 2,
+      "tags": ["choix-du-rapport", "methode"]
+    },
+    {
+      "id": "3E-CH14-029",
+      "lecon": "Applications dans des problèmes",
+      "type": "formule",
+      "recto": "Que fait-on lorsque l'inconnue se trouve au dénominateur, comme dans $\\sin 30^{\\circ} = \\dfrac{5}{SC}$ ?",
+      "verso": "On multiplie en croix pour la remonter au numérateur : $0{,}5 \\times SC = 5$, donc $SC = \\dfrac{5}{0{,}5} = 10$.",
+      "difficulte": 3,
+      "tags": ["resolution", "piege"]
+    },
+    {
+      "id": "3E-CH14-030",
+      "lecon": "Applications dans des problèmes",
+      "type": "formule",
+      "recto": "Comment obtient-on la hauteur d'un objet à partir de la distance à son pied et de l'angle de visée ?",
+      "verso": "En multipliant la distance par la tangente de l'angle : la hauteur est le côté opposé, la distance le côté adjacent, et l'hypoténuse n'intervient pas.",
+      "difficulte": 2,
+      "tags": ["hauteur", "tangente"]
+    },
+    {
+      "id": "3E-CH14-031",
+      "lecon": "Applications dans des problèmes",
+      "type": "formule",
+      "recto": "Comment obtient-on un côté de l'angle droit à partir de l'hypoténuse et d'un angle aigu ?",
+      "verso": "Le côté adjacent vaut l'hypoténuse multipliée par le cosinus de l'angle, et le côté opposé vaut l'hypoténuse multipliée par le sinus de cet angle.",
+      "difficulte": 2,
+      "tags": ["longueur", "cosinus", "sinus"]
+    },
+    {
+      "id": "3E-CH14-032",
+      "lecon": "Applications dans des problèmes",
+      "type": "formule",
+      "recto": "Comment détermine-t-on la mesure d'un angle à partir de deux longueurs d'un triangle rectangle ?",
+      "verso": "On calcule sous forme décimale le rapport que ces deux côtés définissent, cosinus, sinus ou tangente, puis on lit l'angle correspondant dans la table.",
+      "difficulte": 2,
+      "tags": ["mesure-d-angle", "table"]
+    },
+    {
+      "id": "3E-CH14-033",
+      "lecon": "Applications dans des problèmes",
+      "type": "formule",
+      "recto": "Par quoi termine-t-on la résolution d'un problème de trigonométrie ?",
+      "verso": "Par une phrase de conclusion donnant le résultat avec son unité, et par un contrôle de sa plausibilité.",
+      "difficulte": 1,
+      "tags": ["conclusion", "methode"]
+    }
+  ]
+}

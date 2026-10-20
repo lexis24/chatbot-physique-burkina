@@ -1,0 +1,305 @@
+{
+  "niveau": "6ème",
+  "chapitre": "Chapitre 10 : Médiatrice d'un segment",
+  "source": "maths/6eme/Chapitre_10_Mediatrice",
+  "nombre_cartes": 33,
+  "cartes": [
+    {
+      "id": "6E-CH10-001",
+      "lecon": "Qu'est-ce que la médiatrice ?",
+      "type": "definition",
+      "recto": "Qu'est-ce que la médiatrice d'un segment [AB] ?",
+      "verso": "C'est la droite qui passe par le milieu de [AB] et qui est perpendiculaire à ce segment. Ces deux conditions doivent être remplies en même temps.",
+      "difficulte": 1,
+      "tags": ["mediatrice", "definition"]
+    },
+    {
+      "id": "6E-CH10-002",
+      "lecon": "Qu'est-ce que la médiatrice ?",
+      "type": "formule",
+      "recto": "Pourquoi la définition de la médiatrice impose-t-elle deux conditions à la fois ?",
+      "verso": "Parce que chacune, prise seule, laisse passer une infinité de droites : on peut faire tourner une droite autour du milieu, ou glisser une perpendiculaire le long du segment. Les deux ensemble n'en laissent plus qu'une.",
+      "difficulte": 2,
+      "tags": ["mediatrice", "definition", "justification"]
+    },
+    {
+      "id": "6E-CH10-003",
+      "lecon": "Qu'est-ce que la médiatrice ?",
+      "type": "definition",
+      "recto": "Combien de médiatrices un segment possède-t-il ?",
+      "verso": "Une seule. On la note souvent (D) ou $\\left(\\Delta\\right)$, et on écrit : « (D) est la médiatrice de [AB] ».",
+      "difficulte": 1,
+      "tags": ["mediatrice", "notation"]
+    },
+    {
+      "id": "6E-CH10-004",
+      "lecon": "Qu'est-ce que la médiatrice ?",
+      "type": "definition",
+      "recto": "Comment appelle-t-on le point où la médiatrice de [AB] coupe le segment ?",
+      "verso": "C'est le milieu de [AB], souvent noté I : il vérifie $IA = IB$. La médiatrice coupe le segment en ce seul point.",
+      "difficulte": 1,
+      "tags": ["mediatrice", "milieu", "vocabulaire"]
+    },
+    {
+      "id": "6E-CH10-005",
+      "lecon": "Qu'est-ce que la médiatrice ?",
+      "type": "formule",
+      "recto": "Pourquoi une droite qui passe par le milieu de [AB] n'est-elle pas forcément la médiatrice de ce segment ?",
+      "verso": "Parce qu'il lui manque peut-être la seconde condition : être perpendiculaire à [AB]. Une droite penchée qui coupe le segment en son milieu n'est pas la médiatrice.",
+      "difficulte": 3,
+      "tags": ["mediatrice", "piege"]
+    },
+    {
+      "id": "6E-CH10-006",
+      "lecon": "Qu'est-ce que la médiatrice ?",
+      "type": "formule",
+      "recto": "Une droite coupe à angle droit un segment [AB] de $9$ cm en un point K tel que $AK = 4$ cm : pourquoi n'est-elle pas la médiatrice ?",
+      "verso": "Parce que le milieu de [AB] se trouve à $9 \\div 2 = 4{,}5$ cm de A. Le point K, situé à $4$ cm de A, n'est pas ce milieu : la condition du milieu n'est pas remplie.",
+      "difficulte": 3,
+      "tags": ["mediatrice", "piege", "milieu"]
+    },
+    {
+      "id": "6E-CH10-007",
+      "lecon": "Qu'est-ce que la médiatrice ?",
+      "type": "formule",
+      "recto": "Pourquoi la médiatrice d'un segment ne peut-elle jamais lui être parallèle ?",
+      "verso": "Parce qu'elle lui est perpendiculaire : elle le coupe donc forcément, et en un seul point, son milieu.",
+      "difficulte": 2,
+      "tags": ["mediatrice", "perpendiculaire", "piege"]
+    },
+    {
+      "id": "6E-CH10-008",
+      "lecon": "Qu'est-ce que la médiatrice ?",
+      "type": "formule",
+      "recto": "Que devient le point A quand on plie la feuille le long de la médiatrice de [AB] ?",
+      "verso": "Il vient se poser exactement sur le point B. Les deux moitiés du segment se recouvrent, donc le pli passe par le milieu, et il forme un angle droit avec le segment.",
+      "difficulte": 2,
+      "tags": ["mediatrice", "pliage", "justification"]
+    },
+    {
+      "id": "6E-CH10-009",
+      "lecon": "Construire la médiatrice",
+      "type": "formule",
+      "recto": "Comment construit-on la médiatrice de [AB] à l'équerre et à la règle ?",
+      "verso": "On place d'abord le milieu I du segment à la règle graduée, à $AB \\div 2$ de chaque extrémité, puis on trace en I la perpendiculaire au segment, à l'équerre.",
+      "difficulte": 1,
+      "tags": ["construction", "equerre"]
+    },
+    {
+      "id": "6E-CH10-010",
+      "lecon": "Construire la médiatrice",
+      "type": "formule",
+      "recto": "Comment construit-on la médiatrice de [AB] au compas ?",
+      "verso": "On trace deux arcs de même rayon, l'un de centre A, l'autre de centre B. Ils se coupent en deux points P et Q, et la droite (PQ) est la médiatrice de [AB].",
+      "difficulte": 2,
+      "tags": ["construction", "compas"]
+    },
+    {
+      "id": "6E-CH10-011",
+      "lecon": "Construire la médiatrice",
+      "type": "formule",
+      "recto": "Quelle condition le rayon des arcs doit-il respecter pour construire une médiatrice au compas ?",
+      "verso": "Il doit être plus grand que la moitié de la longueur AB. Sinon les deux arcs restent chacun de leur côté et ne se croisent jamais.",
+      "difficulte": 2,
+      "tags": ["construction", "compas", "condition"]
+    },
+    {
+      "id": "6E-CH10-012",
+      "lecon": "Construire la médiatrice",
+      "type": "formule",
+      "recto": "Pourquoi un écartement de $3$ cm ne permet-il pas de tracer la médiatrice d'un segment [AB] de $8$ cm ?",
+      "verso": "Parce qu'en partant de A puis de B, les arcs n'atteignent au mieux que $3 + 3 = 6$ cm, alors que $AB = 8$ cm : ils ne se rencontrent pas. Il faut un rayon supérieur à $8 \\div 2 = 4$ cm.",
+      "difficulte": 3,
+      "tags": ["construction", "compas", "piege"]
+    },
+    {
+      "id": "6E-CH10-013",
+      "lecon": "Construire la médiatrice",
+      "type": "formule",
+      "recto": "Pourquoi le point où se croisent les deux arcs de même rayon appartient-il à la médiatrice de [AB] ?",
+      "verso": "Parce qu'il est sur l'arc de centre A et sur l'arc de centre B, tracés avec le même écartement : on a donc $PA = PB$, ce point est à égale distance de A et de B.",
+      "difficulte": 3,
+      "tags": ["construction", "compas", "justification"]
+    },
+    {
+      "id": "6E-CH10-014",
+      "lecon": "Construire la médiatrice",
+      "type": "formule",
+      "recto": "Que ne faut-il surtout pas modifier entre les arcs de centre A et ceux de centre B ?",
+      "verso": "L'écartement du compas. Les arcs doivent avoir exactement le même rayon, sinon leur point de croisement n'est plus à égale distance de A et de B.",
+      "difficulte": 2,
+      "tags": ["construction", "compas", "piege"]
+    },
+    {
+      "id": "6E-CH10-015",
+      "lecon": "Construire la médiatrice",
+      "type": "formule",
+      "recto": "Quelle méthode de construction de la médiatrice ne demande aucune mesure de longueur ?",
+      "verso": "Celle du compas : deux arcs de même écartement donnent le milieu sans qu'on ait eu à le mesurer. C'est la méthode employée sur le terrain, avec une corde.",
+      "difficulte": 2,
+      "tags": ["construction", "compas", "methode"]
+    },
+    {
+      "id": "6E-CH10-016",
+      "lecon": "Construire la médiatrice",
+      "type": "formule",
+      "recto": "Pourquoi la construction à l'équerre et la construction au compas donnent-elles le même tracé ?",
+      "verso": "Parce qu'un segment n'a qu'une seule médiatrice : les deux méthodes aboutissent donc forcément à la même droite.",
+      "difficulte": 2,
+      "tags": ["construction", "mediatrice"]
+    },
+    {
+      "id": "6E-CH10-017",
+      "lecon": "La propriété d'équidistance",
+      "type": "formule",
+      "recto": "Que peut-on dire des longueurs MA et MB lorsque M est sur la médiatrice de [AB] ?",
+      "verso": "Elles sont égales : $MA = MB$. C'est la propriété d'équidistance, valable pour tout point de la médiatrice, au-dessus comme en dessous du segment.",
+      "difficulte": 1,
+      "tags": ["equidistance", "propriete"]
+    },
+    {
+      "id": "6E-CH10-018",
+      "lecon": "La propriété d'équidistance",
+      "type": "formule",
+      "recto": "Où se trouve un point M qui vérifie $MA = MB$ ?",
+      "verso": "Sur la médiatrice de [AB] : c'est la réciproque de la propriété d'équidistance. On écrit alors $M \\in \\left(D\\right)$.",
+      "difficulte": 2,
+      "tags": ["equidistance", "reciproque"]
+    },
+    {
+      "id": "6E-CH10-019",
+      "lecon": "La propriété d'équidistance",
+      "type": "definition",
+      "recto": "De quels points la médiatrice de [AB] est-elle formée ?",
+      "verso": "De tous les points équidistants de A et de B, et d'eux seuls. Un point S situé hors de cette droite vérifie $SA \\neq SB$, et l'on écrit $S \\notin \\left(D\\right)$.",
+      "difficulte": 2,
+      "tags": ["equidistance", "ensemble-de-points"]
+    },
+    {
+      "id": "6E-CH10-020",
+      "lecon": "La propriété d'équidistance",
+      "type": "formule",
+      "recto": "Comment choisit-on entre la propriété d'équidistance et sa réciproque ?",
+      "verso": "On regarde ce que l'énoncé donne : s'il donne la position du point sur la médiatrice, on en déduit l'égalité des longueurs ; s'il donne l'égalité des longueurs, on en déduit la position du point.",
+      "difficulte": 3,
+      "tags": ["equidistance", "reciproque", "methode"]
+    },
+    {
+      "id": "6E-CH10-021",
+      "lecon": "La propriété d'équidistance",
+      "type": "formule",
+      "recto": "Que représente la droite (PQ) lorsque deux points P et Q vérifient $PA = PB$ et $QA = QB$ ?",
+      "verso": "C'est la médiatrice de [AB] : deux points équidistants de A et de B suffisent à la tracer, puisque tous deux lui appartiennent.",
+      "difficulte": 2,
+      "tags": ["equidistance", "construction"]
+    },
+    {
+      "id": "6E-CH10-022",
+      "lecon": "La propriété d'équidistance",
+      "type": "formule",
+      "recto": "Quelle est la nature du triangle MAB lorsque M appartient à la médiatrice de [AB] ?",
+      "verso": "Il est isocèle en M, puisque $MA = MB$ : les deux côtés issus de M ont la même longueur.",
+      "difficulte": 2,
+      "tags": ["equidistance", "triangle-isocele"]
+    },
+    {
+      "id": "6E-CH10-023",
+      "lecon": "La propriété d'équidistance",
+      "type": "formule",
+      "recto": "De quels points un point de la médiatrice de [AB] est-il à égale distance ?",
+      "verso": "Des deux extrémités A et B seulement. Il n'est pas à égale distance de tous les points du segment.",
+      "difficulte": 3,
+      "tags": ["equidistance", "piege"]
+    },
+    {
+      "id": "6E-CH10-024",
+      "lecon": "La propriété d'équidistance",
+      "type": "formule",
+      "recto": "Pourquoi un point à égale distance de A et de B n'est-il pas forcément le milieu de [AB] ?",
+      "verso": "Parce que le milieu n'est qu'un point de la médiatrice parmi une infinité d'autres. Tous les points de cette droite, de part et d'autre du segment, sont équidistants de A et de B.",
+      "difficulte": 3,
+      "tags": ["equidistance", "milieu", "piege"]
+    },
+    {
+      "id": "6E-CH10-025",
+      "lecon": "La propriété d'équidistance",
+      "type": "formule",
+      "recto": "Où faut-il placer un puits pour qu'il soit à égale distance de deux concessions A et B ?",
+      "verso": "Sur la médiatrice de [AB] : n'importe lequel de ses points convient, puisque tous sont à égale distance de A et de B.",
+      "difficulte": 2,
+      "tags": ["equidistance", "application"]
+    },
+    {
+      "id": "6E-CH10-026",
+      "lecon": "Médiatrices d'un triangle et cercle circonscrit",
+      "type": "formule",
+      "recto": "Que peut-on dire des trois médiatrices des côtés d'un triangle ?",
+      "verso": "Elles sont concourantes : elles se coupent toutes les trois en un même point, noté O.",
+      "difficulte": 1,
+      "tags": ["mediatrices-du-triangle", "point-de-concours"]
+    },
+    {
+      "id": "6E-CH10-027",
+      "lecon": "Médiatrices d'un triangle et cercle circonscrit",
+      "type": "formule",
+      "recto": "Que vérifie le point de rencontre O des médiatrices d'un triangle ABC ?",
+      "verso": "Il est à égale distance des trois sommets : $OA = OB = OC$. Cette distance commune sert de rayon.",
+      "difficulte": 2,
+      "tags": ["mediatrices-du-triangle", "equidistance"]
+    },
+    {
+      "id": "6E-CH10-028",
+      "lecon": "Médiatrices d'un triangle et cercle circonscrit",
+      "type": "definition",
+      "recto": "Qu'est-ce que le cercle circonscrit à un triangle ABC ?",
+      "verso": "C'est le cercle qui passe par les trois sommets A, B et C. Son centre est le point de concours des médiatrices, et son rayon vaut OA.",
+      "difficulte": 2,
+      "tags": ["cercle-circonscrit", "definition"]
+    },
+    {
+      "id": "6E-CH10-029",
+      "lecon": "Médiatrices d'un triangle et cercle circonscrit",
+      "type": "formule",
+      "recto": "Combien de médiatrices faut-il tracer pour trouver le centre du cercle circonscrit ?",
+      "verso": "Deux suffisent : leur point de croisement est le centre O. La troisième passe par le même point et ne sert que de vérification.",
+      "difficulte": 2,
+      "tags": ["cercle-circonscrit", "construction"]
+    },
+    {
+      "id": "6E-CH10-030",
+      "lecon": "Médiatrices d'un triangle et cercle circonscrit",
+      "type": "formule",
+      "recto": "Pourquoi la troisième médiatrice d'un triangle passe-t-elle elle aussi par le point O ?",
+      "verso": "Parce que O est sur la médiatrice de [AB], donc $OA = OB$, et sur celle de [BC], donc $OB = OC$. En enchaînant, $OA = OC$, et la réciproque place O sur la médiatrice de [AC].",
+      "difficulte": 3,
+      "tags": ["mediatrices-du-triangle", "justification"]
+    },
+    {
+      "id": "6E-CH10-031",
+      "lecon": "Médiatrices d'un triangle et cercle circonscrit",
+      "type": "formule",
+      "recto": "Que se passe-t-il quand on cherche un point à égale distance de trois points alignés ?",
+      "verso": "Il n'en existe aucun : les médiatrices, toutes perpendiculaires à la même droite, sont parallèles et ne se coupent jamais. Aucun cercle ne passe par trois points alignés.",
+      "difficulte": 3,
+      "tags": ["mediatrices-du-triangle", "points-alignes", "cas-particulier"]
+    },
+    {
+      "id": "6E-CH10-032",
+      "lecon": "Médiatrices d'un triangle et cercle circonscrit",
+      "type": "formule",
+      "recto": "Pourquoi confond-on souvent la médiatrice et la médiane relatives à un côté d'un triangle ?",
+      "verso": "Parce que toutes deux passent par le milieu de ce côté. Mais la médiane part d'un sommet, tandis que la médiatrice lui est perpendiculaire sans partir d'un sommet : les médianes donnent le centre de gravité, les médiatrices le centre du cercle circonscrit.",
+      "difficulte": 3,
+      "tags": ["mediatrice", "mediane", "piege"]
+    },
+    {
+      "id": "6E-CH10-033",
+      "lecon": "Médiatrices d'un triangle et cercle circonscrit",
+      "type": "formule",
+      "recto": "Où peut se situer le centre du cercle circonscrit par rapport au triangle ?",
+      "verso": "A l'intérieur du triangle, mais aussi sur un côté ou même à l'extérieur : ce n'est pas toujours un point intérieur.",
+      "difficulte": 2,
+      "tags": ["cercle-circonscrit", "position", "piege"]
+    }
+  ]
+}

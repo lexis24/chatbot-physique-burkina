@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Fiche de revision - 1ere D - Chapitre 9 : Transformations du plan</title>
+<style>
+/* ===================================================================
+   FICHE DE REVISION, Collection Hakili Lab, Edition 2026
+   Feuille de style autonome, format A4 pret a imprimer.
+   Bleu #005CB9 · Vert #49A145
+   =================================================================== */
+:root{
+  --bleu:#005CB9; --bleu-fonce:#00429A; --bleu-pale:#E8F1FB; --bleu-bord:#B7D2EE;
+  --vert:#49A145; --vert-fonce:#2F7A2C; --vert-pale:#EDF7EC; --vert-bord:#BCE0B9;
+  --gris:#4A4A4A; --gris-clair:#E4E4E4; --rouge:#B3261E;
+}
+@page{
+  size:A4; margin:15mm;
+  @bottom-center{
+    content:"Collection Hakili Lab, Edition 2026  ·  Fiche de revision  ·  " counter(page) "/" counter(pages);
+    font-family:"Segoe UI",Calibri,Arial,sans-serif; font-size:6.6pt; color:#8A8A8A;
+  }
+}
+*{box-sizing:border-box;}
+body{
+  margin:0; font-family:"Segoe UI",Calibri,Arial,sans-serif;
+  font-size:8.4pt; line-height:1.26; color:#1B1B1B;
+}
+p{margin:0 0 3pt;}
+ul{margin:0 0 3pt; padding-left:11pt;}
+li{margin:0 0 1.2pt;}
+b,strong{color:var(--bleu-fonce);}
+
+/* ------------------------------ ENTETE ---------------------------- */
+.entete{
+  display:flex; align-items:stretch; border:1.6pt solid var(--bleu);
+  border-radius:2.5pt; overflow:hidden; margin-bottom:6pt;
+}
+.entete .num{
+  background:var(--bleu); color:#fff; font-size:20pt; font-weight:700;
+  padding:0 8pt; display:flex; align-items:center; justify-content:center; min-width:34pt;
+}
+.entete .txt{padding:3.5pt 8pt; flex:1;}
+.entete .niveau{
+  font-size:7pt; font-weight:700; letter-spacing:.9pt; color:var(--vert-fonce);
+}
+.entete h1{margin:0; font-size:13.5pt; line-height:1.12; color:var(--bleu-fonce); font-weight:700;}
+.entete .sous{font-size:7pt; color:var(--gris); margin-top:1pt;}
+
+/* --------------------------- BANDEAUX ----------------------------- */
+.bandeau{
+  color:#fff; font-weight:700; font-size:9pt; letter-spacing:1pt;
+  padding:2.4pt 7pt; border-radius:2pt; margin:3pt 0 4pt; break-after:avoid; page-break-after:avoid;
+}
+.bandeau.bleu{background:var(--bleu);}
+.bandeau.vert{background:var(--vert);}
+
+/* --------------------------- COLONNES ----------------------------- */
+.cols{column-count:2; column-gap:7mm; column-fill:balance;}
+
+.cols.bal{column-fill:balance;}
+.bloc{margin-bottom:5pt;}
+.keep{break-inside:avoid; page-break-inside:avoid;}
+
+/* --------------------------- LECONS ------------------------------- */
+h2.lecon{
+  margin:0 0 3pt; font-size:8.6pt; font-weight:700; color:#fff; background:var(--bleu-fonce);
+  padding:1.8pt 5pt; border-radius:1.5pt; break-after:avoid; page-break-after:avoid;
+}
+h3.rub{
+  margin:3.5pt 0 1.5pt; font-size:8.2pt; font-weight:700; color:var(--vert-fonce);
+  border-bottom:.7pt solid var(--vert-bord); padding-bottom:.8pt;
+  break-after:avoid; page-break-after:avoid;
+}
+
+/* --------------------------- ENCADRES ----------------------------- */
+.form{
+  background:var(--bleu-pale); border:.8pt solid var(--bleu-bord); border-left:2.6pt solid var(--bleu);
+  border-radius:2pt; padding:2.4pt 5pt; margin:2.2pt 0 3.4pt;
+  break-inside:avoid; page-break-inside:avoid;
+}
+.form .t{
+  display:block; font-size:6.8pt; font-weight:700; letter-spacing:.6pt;
+  color:var(--bleu); margin-bottom:1.5pt;
+}
+.form .c{text-align:center; font-size:9.1pt; margin:1.6pt 0;}
+.note{background:var(--vert-pale); border-left:2.4pt solid var(--vert); padding:2.4pt 5pt; border-radius:1.5pt; margin:2.5pt 0 4pt; break-inside:avoid;}
+
+/* --------------------------- TABLEAUX ----------------------------- */
+table{width:100%; border-collapse:collapse; font-size:7.6pt; margin:2pt 0 4pt; break-inside:avoid;}
+th{background:var(--bleu); color:#fff; font-weight:700; text-align:left; padding:1.8pt 4pt; font-size:7.2pt;}
+td{border:.6pt solid var(--gris-clair); padding:1.8pt 4pt; vertical-align:top;}
+tr{break-inside:avoid;}
+table.var td{text-align:center; font-size:8pt;}
+table.var td.lab{text-align:left; font-weight:700; color:var(--bleu-fonce); background:var(--bleu-pale);}
+
+/* ----------------------------- PIEGES ----------------------------- */
+table.pieges th:first-child{width:44%;}
+table.pieges td:first-child{color:var(--rouge); background:#FDF1F0;}
+.x{font-weight:700;}
+.v{color:var(--vert-fonce); font-weight:700;}
+
+/* ---------------------------- RECAP ------------------------------- */
+ol.recap{margin:0; padding-left:0; list-style:none; counter-reset:r;}
+ol.recap li{
+  counter-increment:r; position:relative; padding-left:13pt; margin-bottom:1.8pt;
+  break-inside:avoid;
+}
+ol.recap li::before{
+  content:counter(r); position:absolute; left:0; top:.3pt;
+  width:10pt; height:10pt; border-radius:50%; background:var(--vert); color:#fff;
+  font-size:6.6pt; font-weight:700; text-align:center; line-height:10pt;
+}
+
+/* --------------------------- MATHS -------------------------------- */
+.m{font-family:Cambria,Georgia,"Times New Roman",serif;}
+i,var{font-family:Cambria,Georgia,"Times New Roman",serif; font-style:italic;}
+.op{font-family:Cambria,Georgia,"Times New Roman",serif; font-style:normal;}
+.f{display:inline-block; vertical-align:middle; text-align:center;
+   margin:0 .12em; line-height:1.06; font-family:Cambria,Georgia,"Times New Roman",serif;}
+.f>span{display:block; padding:0 .2em;}
+.f>span:first-child{border-bottom:.6pt solid currentColor; padding-bottom:.08em;}
+.f>span:last-child{padding-top:.04em;}
+.rad{border-top:.6pt solid currentColor; padding-top:.12em;}
+/* line-height:0 evite que l'exposant n'ecarte les lignes ; position:relative le
+   repositionne sans qu'il heurte la barre de fraction ni le trait du radical. */
+sup,sub{font-size:.68em; line-height:0; position:relative; vertical-align:baseline;}
+sup{top:-.42em;}
+sub{bottom:-.22em;}
+.pt{white-space:nowrap;}
+/* Les fleches n'ont qu'un glyphe atrophie dans la fonte serif : on les force
+   en sans-serif, ou elles sont franches meme a 8 pt. */
+.ar{font-family:"Segoe UI",Calibri,Arial,"DejaVu Sans",sans-serif; font-style:normal;}
+
+/* ------------------- PIEGES : blocs erreur / correction ------------- */
+.pg{font-size:8.1pt; border-left:2.4pt solid var(--rouge); background:#FDF1F0; border-radius:1.5pt;
+    padding:2pt 5pt; margin:0 0 2.8pt; break-inside:avoid; page-break-inside:avoid;}
+.pg .err{color:var(--rouge); font-weight:600;}
+.pg .cor{color:#1B1B1B; margin-top:.8pt;}
+.pg .cor b{color:var(--bleu-fonce);}
+.v{color:var(--vert-fonce); font-weight:700;}
+
+</style>
+</head>
+<body>
+<header class="entete">
+  <div class="num">9</div>
+  <div class="txt">
+    <div class="niveau">1ERE D &middot; MATHEMATIQUES</div>
+    <h1>Transformations du plan</h1>
+    <div class="sous">Leçon 1 : homothéties et translations &middot; Leçon 2 : rotations &middot; Leçon 3 : expressions analytiques et utilisation</div>
+  </div>
+</header>
+
+<div class="bandeau bleu" style="margin-top:0">L'ESSENTIEL</div>
+<div class="cols">
+
+<!-- ================= LECON 1 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 1&nbsp;: Homothéties et translations</h2>
+
+<h3 class="rub">Transformation du plan</h3>
+<p>Une <b>transformation du plan</b> est une application du plan dans lui-même telle que tout point admet <b>un unique antécédent</b> : c'est une <b>bijection</b> du plan dans lui-même. Si <span class="pt"><i>M</i>&#8242;&#8239;=&#8239;<i>f</i>(<i>M</i>)</span>, <i>M</i>&#8242; est l'<b>image</b> de <i>M</i>, et <i>M</i> l'<b>antécédent</b> de <i>M</i>&#8242;.</p></div>
+<ul>
+<li>Un point tel que <span class="pt"><i>f</i>(<i>M</i>)&#8239;=&#8239;<i>M</i></span> est un <b>point invariant</b> (ou fixe).</li>
+<li>L'<b>identité</b> <span class="op">Id</span> laisse tout point à sa place.</li>
+<li>Toute transformation <i>f</i> admet une <b>réciproque</b> <i>f</i><sup>&#8722;1</sup>, qui ramène chaque image à son antécédent : <span class="pt"><i>f</i><sup>&#8722;1</sup>&#8239;&#8728;&#8239;<i>f</i>&#8239;=&#8239;<i>f</i>&#8239;&#8728;&#8239;<i>f</i><sup>&#8722;1</sup>&#8239;=&#8239;<span class="op">Id</span></span>.</li>
+</ul>
+</div>
+
+<div class="bloc">
+<div class="form">
+  <span class="t">DEFINITIONS&nbsp;: <i>k</i> REEL NON NUL</span>
+  <div class="c m">translation <i>t</i><sub><i style="border-top:.6pt solid;padding:.5pt .14em 0 0">u</i></sub> : &nbsp;<span class="op" style="border-top:.6pt solid;padding-top:.5pt">MM&#8242;</span>&#8239;=&#8239;<i style="border-top:.6pt solid;padding:.5pt .14em 0 0">u</i></div>
+  <div class="c m">homothétie <i>h</i>(O,&#8239;<i>k</i>) : &nbsp;<span class="op" style="border-top:.6pt solid;padding-top:.5pt">OM&#8242;</span>&#8239;=&#8239;<i>k</i>&#8239;<span class="op" style="border-top:.6pt solid;padding-top:.5pt">OM</span></div>
+</div>
+<ul>
+<li>Le centre O est le <b>seul point invariant</b> de <span class="pt"><i>h</i>(O,&#8239;<i>k</i>)</span> dès que <i>k</i>&#8239;&#8800;&#8239;1.</li>
+<li><i>t</i><sub><i style="border-top:.6pt solid;padding:.5pt .14em 0 0">u</i></sub> n'a <b>aucun point invariant</b> si <i style="border-top:.6pt solid;padding:.5pt .14em 0 0">u</i>&#8239;&#8800;&#8239;<span class="op" style="border-top:.6pt solid;padding-top:.5pt">0</span> ; si <i style="border-top:.6pt solid;padding:.5pt .14em 0 0">u</i>&#8239;=&#8239;<span class="op" style="border-top:.6pt solid;padding-top:.5pt">0</span>, c'est l'identité.</li>
+<li><span class="pt"><i>h</i>(O,&#8239;1)&#8239;=&#8239;<span class="op">Id</span></span> et <span class="pt"><i>h</i>(O,&#8239;&#8722;1)</span> est la <b>symétrie centrale</b> de centre O, notée <i>S</i><sub>O</sub>.</li>
+</ul>
+</div>
+
+<div class="bloc">
+<div class="form">
+  <span class="t">CARACTERISATION VECTORIELLE&nbsp;: POUR TOUS POINTS M ET N</span>
+  <div class="c m"><span class="op" style="border-top:.6pt solid;padding-top:.5pt">M&#8242;N&#8242;</span>&#8239;=&#8239;<i>k</i>&#8239;<span class="op" style="border-top:.6pt solid;padding-top:.5pt">MN</span>&nbsp;&nbsp;(<i>k</i>&#8239;&#8800;&#8239;0)</div>
+</div>
+<p>Une transformation qui multiplie <b>tous les bipoints</b> par un même réel <i>k</i> non nul est une <b>homothétie-translation</b> :</p>
+<ul>
+<li><i>k</i>&#8239;=&#8239;1 : c'est une <b>translation</b>, de vecteur <span class="op" style="border-top:.6pt solid;padding-top:.5pt">MM&#8242;</span>, le même pour tout <i>M</i> ;</li>
+<li><i>k</i>&#8239;&#8800;&#8239;1 : c'est une <b>homothétie de rapport <i>k</i></b>, dont le centre est l'<b>unique point invariant</b>.</li>
+</ul>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Effet d'une homothétie-translation de rapport <i>k</i></h3>
+<ul>
+<li><b>Longueurs</b> multipliées par <b>|<i>k</i>|</b> : si <span class="pt"><i>M</i>&#8242;&#8239;=&#8239;<i>f</i>(<i>M</i>)</span> et <span class="pt"><i>N</i>&#8242;&#8239;=&#8239;<i>f</i>(<i>N</i>)</span>, alors <span class="pt"><i>M</i>&#8242;<i>N</i>&#8242;&#8239;=&#8239;|<i>k</i>|&#8239;&#215;&#8239;<i>MN</i></span>. <b>Aires</b> multipliées par <b><i>k</i><sup>2</sup></b>.</li>
+<li><b>Conserve</b> les angles géométriques, l'alignement, les milieux, le parallélisme et l'orthogonalité.</li>
+<li>Une <b>droite</b> a pour image une droite <b>parallèle</b> ; un segment, un segment ; un <b>cercle</b> de centre I et de rayon R, le cercle de centre <i>f</i>(I) et de rayon <span class="pt">|<i>k</i>|&#8239;<i>R</i></span>.</li>
+<li>Un triangle a pour image un triangle <b>semblable</b> ; un parallélogramme, un parallélogramme.</li>
+</ul>
+<div class="note"><b>Echelles.</b> Un plan au 1/100 est l'image du réel par l'homothétie de rapport <span class="f"><span>1</span><span>100</span></span> : les <b>longueurs</b> se lisent avec le rapport, les <b>aires</b> avec son <b>carré</b>.</div>
+</div>
+
+<div class="bloc">
+<div class="form">
+  <span class="t">RECIPROQUES ET COMPOSEES</span>
+  <div class="c m">(<i>t</i><sub><i style="border-top:.6pt solid;padding:.5pt .14em 0 0">u</i></sub>)<sup>&#8722;1</sup>&#8239;=&#8239;<i>t</i><sub>&#8722;<i style="border-top:.6pt solid;padding:.5pt .14em 0 0">u</i></sub> &nbsp;&nbsp;&nbsp; (<i>h</i>(O,&#8239;<i>k</i>))<sup>&#8722;1</sup>&#8239;=&#8239;<i>h</i>&#8239;(O,&#8239;<span class="f"><span>1</span><span><i>k</i></span></span>)</div>
+  <div class="c m"><i>t</i><sub><i style="border-top:.6pt solid;padding:.5pt .14em 0 0">u</i></sub>&#8239;&#8728;&#8239;<i>t</i><sub><i style="border-top:.6pt solid;padding:.5pt .14em 0 0">v</i></sub>&#8239;=&#8239;<i>t</i><sub><i style="border-top:.6pt solid;padding:.5pt .14em 0 0">u</i>&#8239;+&#8239;<i style="border-top:.6pt solid;padding:.5pt .14em 0 0">v</i></sub></div>
+  <div class="c m"><i>h</i>(O,&#8239;<i>k</i>)&#8239;&#8728;&#8239;<i>h</i>(O,&#8239;<i>k</i>&#8242;)&#8239;=&#8239;<i>h</i>(O,&#8239;<i>kk</i>&#8242;)&nbsp;&nbsp;(<b>même centre</b>)</div>
+</div>
+<ul>
+<li><b>Centres distincts</b> : la composée de deux homothéties de rapports <i>k</i> et <i>k</i>&#8242; est une homothétie-translation de rapport <i>kk</i>&#8242; ; c'est une <b>homothétie</b> de rapport <i>kk</i>&#8242; si <span class="pt"><i>kk</i>&#8242;&#8239;&#8800;&#8239;1</span>, une <b>translation</b> si <span class="pt"><i>kk</i>&#8242;&#8239;=&#8239;1</span>.</li>
+<li>Homothétie de rapport <i>k</i> composée avec une translation, dans un ordre ou dans l'autre : <b>homothétie de rapport <i>k</i></b>, mais de <b>centre différent</b>.</li>
+</ul>
+<p><b>Règle</b> : on compose deux homothéties-translations en <b>multipliant les rapports</b>, une translation comptant pour le rapport 1. Le rapport obtenu décide seul du type ; le centre, lui, se cherche.</p>
+</div>
+
+<div class="bloc">
+<div class="note"><b>Reconnaître une relation vectorielle.</b> Faire apparaître <span class="op" style="border-top:.6pt solid;padding-top:.5pt">MN</span> ou <span class="op" style="border-top:.6pt solid;padding-top:.5pt">OM</span> par la relation de Chasles. Si <span class="op" style="border-top:.6pt solid;padding-top:.5pt">MM&#8242;</span>&#8239;=&#8239;<i style="border-top:.6pt solid;padding:.5pt .14em 0 0">u</i> avec <i style="border-top:.6pt solid;padding:.5pt .14em 0 0">u</i> <b>indépendant</b> de <i>M</i> : translation <i>t</i><sub><i style="border-top:.6pt solid;padding:.5pt .14em 0 0">u</i></sub>. Si <span class="op" style="border-top:.6pt solid;padding-top:.5pt">OM&#8242;</span>&#8239;=&#8239;<i>k</i>&#8239;<span class="op" style="border-top:.6pt solid;padding-top:.5pt">OM</span> avec O fixe : homothétie <span class="pt"><i>h</i>(O,&#8239;<i>k</i>)</span>. Le centre est le seul point vérifiant <span class="pt"><i>f</i>(O)&#8239;=&#8239;O</span>.</div>
+</div>
+
+<!-- ================= LECON 2 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 2&nbsp;: Rotations</h2>
+<div class="form">
+  <span class="t">ROTATION <i>r</i>(O,&#8239;&#952;)&nbsp;: O POINT, &#952; REEL</span>
+  <div class="c m">O a pour image O ; pour <i>M</i>&#8239;&#8800;&#8239;O : &nbsp;<i>OM</i>&#8242;&#8239;=&#8239;<i>OM</i> &nbsp;et&nbsp; (<span class="op" style="border-top:.6pt solid;padding-top:.5pt">OM</span>,&#8239;<span class="op" style="border-top:.6pt solid;padding-top:.5pt">OM&#8242;</span>)&#8239;=&#8239;&#952;</div>
+</div></div>
+<ul>
+<li>&#952; est un angle <b>orienté</b> : compté <b>positivement dans le sens direct</b> (contraire des aiguilles d'une montre), négativement dans le sens indirect.</li>
+<li>O est le <b>seul point invariant</b> dès que &#952; n'est pas un multiple de 2&#960;.</li>
+<li>Deux angles qui diffèrent de 2&#960; donnent la <b>même</b> rotation : on réduit toujours modulo 2&#960;.</li>
+</ul>
+<h3 class="rub">Cas particuliers</h3>
+<ul>
+<li><span class="pt"><i>r</i>(O,&#8239;0)&#8239;=&#8239;<span class="op">Id</span></span>, et plus généralement <span class="pt"><i>r</i>(O,&#8239;2<i>k</i>&#960;)&#8239;=&#8239;<span class="op">Id</span></span> pour tout <i>k</i>&#8239;&#8712;&#8239;&#8484;.</li>
+<li><span class="pt"><i>r</i>(O,&#8239;&#960;)</span> est le <b>demi-tour</b> de centre O : <span class="pt"><i>r</i>(O,&#8239;&#960;)&#8239;=&#8239;<i>S</i><sub>O</sub>&#8239;=&#8239;<i>h</i>(O,&#8239;&#8722;1)</span> (trois écritures d'une même transformation).</li>
+<li><span class="pt"><i>r</i>&#8239;(O,&#8239;<span class="f"><span>&#960;</span><span>2</span></span>)</span> est le <b>quart de tour direct</b>, <span class="pt"><i>r</i>&#8239;(O,&#8239;&#8722;<span class="f"><span>&#960;</span><span>2</span></span>)</span> le <b>quart de tour indirect</b>.</li>
+</ul>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Propriétés d'une rotation</h3>
+<p>Une rotation est une <b>isométrie</b> : elle <b>conserve les distances</b>, donc aussi les angles, l'alignement, les milieux, le parallélisme, l'orthogonalité et les <b>aires</b>.</p>
+<ul>
+<li>L'image de [AB] est [A&#8242;B&#8242;], avec <span class="pt"><i>A</i>&#8242;<i>B</i>&#8242;&#8239;=&#8239;<i>AB</i></span>.</li>
+<li>L'image d'une droite (D) est une droite (D&#8242;) ; l'angle entre (D) et (D&#8242;) vaut &#952;.</li>
+<li>L'image d'un cercle de centre I et de rayon R est le cercle de centre <i>r</i>(I) et de <b>même rayon</b> R.</li>
+<li>L'image d'une figure lui est <b>superposable</b> : même forme, même taille, même sens.</li>
+</ul>
+<div class="note">L'homothétie conserve les <b>directions</b> et change les longueurs ; la rotation conserve les <b>longueurs</b> et tourne les directions de &#952;. Aucune des deux ne déforme la figure.<br><b>Démontrer avec une rotation.</b> De <span class="pt"><i>r</i>(A)&#8239;=&#8239;C</span> et <span class="pt"><i>r</i>(B)&#8239;=&#8239;D</span> on tire aussitôt <span class="pt"><i>AB</i>&#8239;=&#8239;<i>CD</i></span>, et l'angle de (AB) et (CD) vaut &#952; : pour <span class="pt">&#952;&#8239;=&#8239;<span class="f"><span>&#960;</span><span>2</span></span></span>, les deux droites sont <b>perpendiculaires</b>.</div>
+</div>
+
+<div class="bloc">
+<div class="form">
+  <span class="t">RECIPROQUE ET COMPOSEE&nbsp;: MEME CENTRE O</span>
+  <div class="c m">(<i>r</i>(O,&#8239;&#952;))<sup>&#8722;1</sup>&#8239;=&#8239;<i>r</i>(O,&#8239;&#8722;&#952;)</div>
+  <div class="c m"><i>r</i>(O,&#8239;&#952;)&#8239;&#8728;&#8239;<i>r</i>(O,&#8239;&#952;&#8242;)&#8239;=&#8239;<i>r</i>(O,&#8239;&#952;&#8239;+&#8239;&#952;&#8242;)&#8239;=&#8239;<i>r</i>(O,&#8239;&#952;&#8242;)&#8239;&#8728;&#8239;<i>r</i>(O,&#8239;&#952;)</div>
+</div>
+<p>Les angles <b>s'ajoutent</b>, avec leur signe, et l'ordre n'a aucune importance. Si <span class="pt">&#952;&#8239;+&#8239;&#952;&#8242;</span> est un multiple de 2&#960;, la composée est l'<b>identité</b>. Cette règle exige le <b>même centre</b>.</p>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Symétrie orthogonale (réflexion)</h3>
+<p>La symétrie orthogonale d'axe (&#916;), notée <i>S</i><sub>(&#916;)</sub>, laisse invariant tout point de (&#916;) et associe à tout point <i>M</i> hors de (&#916;) le point <i>M</i>&#8242; tel que (&#916;) soit la <b>médiatrice</b> de [<i>MM</i>&#8242;].</p>
+<ul>
+<li><b>Isométrie</b> : conserve distances, angles géométriques, alignement, milieux et aires.</li>
+<li>Ses points invariants sont <b>exactement</b> les points de l'axe.</li>
+<li>Elle est <b>sa propre réciproque</b> : <span class="pt"><i>S</i><sub>(&#916;)</sub>&#8239;&#8728;&#8239;<i>S</i><sub>(&#916;)</sub>&#8239;=&#8239;<span class="op">Id</span></span>.</li>
+<li>Elle <b>retourne</b> la figure et change le sens des angles orientés : elle est <b>indirecte</b>, alors que translations, homothéties et rotations sont <b>directes</b>.</li>
+</ul>
+<div class="form">
+  <span class="t">COMPOSEE DE DEUX SYMETRIES ORTHOGONALES &nbsp;<i>S</i><sub>2</sub>&#8239;&#8728;&#8239;<i>S</i><sub>1</sub></span>
+  <div class="c m">axes sécants en O, d'angle &#945; :&nbsp; rotation <i>r</i>(O,&#8239;2&#945;)</div>
+  <div class="c m">axes parallèles distants de <i>d</i> :&nbsp; translation de longueur 2<i>d</i></div>
+</div>
+<p>Le vecteur de cette translation est <b>perpendiculaire aux deux axes</b> et dirigé de (<i>d</i><sub>1</sub>) vers (<i>d</i><sub>2</sub>). Deux retournements remettant la figure à l'endroit, la composée est toujours <b>directe</b> : la réflexion est la brique de toutes les isométries du plan.</p>
+</div>
+
+<!-- ================= LECON 3 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 3&nbsp;: Expressions analytiques et utilisation</h2>
+<p>Le plan est rapporté à un <b>repère orthonormé</b> ; le point <span class="pt"><i>M</i>(<i>x</i>&#8239;;&#8239;<i>y</i>)</span> a pour image <span class="pt"><i>M</i>&#8242;(<i>x</i>&#8242;&#8239;;&#8239;<i>y</i>&#8242;)</span>.</p></div>
+<div class="form">
+  <span class="t">TRANSLATION ET HOMOTHETIE</span>
+  <div class="c m"><i>t</i><sub><i style="border-top:.6pt solid;padding:.5pt .14em 0 0">u</i></sub>, <i style="border-top:.6pt solid;padding:.5pt .14em 0 0">u</i>(<i>a</i>&#8239;;&#8239;<i>b</i>) : &nbsp;<i>x</i>&#8242;&#8239;=&#8239;<i>x</i>&#8239;+&#8239;<i>a</i> &nbsp;et&nbsp; <i>y</i>&#8242;&#8239;=&#8239;<i>y</i>&#8239;+&#8239;<i>b</i></div>
+  <div class="c m"><i>h</i>(O,&#8239;<i>k</i>), O origine : &nbsp;<i>x</i>&#8242;&#8239;=&#8239;<i>kx</i> &nbsp;et&nbsp; <i>y</i>&#8242;&#8239;=&#8239;<i>ky</i></div>
+  <div class="c m"><i>h</i>(&#937;,&#8239;<i>k</i>), &#937;(<i>x</i><sub>0</sub>&#8239;;&#8239;<i>y</i><sub>0</sub>) : &nbsp;<i>x</i>&#8242;&#8239;=&#8239;<i>x</i><sub>0</sub>&#8239;+&#8239;<i>k</i>(<i>x</i>&#8239;&#8722;&#8239;<i>x</i><sub>0</sub>) &nbsp;et&nbsp; <i>y</i>&#8242;&#8239;=&#8239;<i>y</i><sub>0</sub>&#8239;+&#8239;<i>k</i>(<i>y</i>&#8239;&#8722;&#8239;<i>y</i><sub>0</sub>)</div>
+</div>
+<div class="note"><b>Recentrer, multiplier, revenir.</b> <span class="pt"><i>x</i>&#8239;&#8722;&#8239;<i>x</i><sub>0</sub></span> mesure la position par rapport à &#937;, <i>k</i> la multiplie, <span class="pt">+&#8239;<i>x</i><sub>0</sub></span> ramène aux coordonnées ordinaires. Pour &#937;&#8239;=&#8239;O, il reste <span class="pt"><i>x</i>&#8242;&#8239;=&#8239;<i>kx</i></span>.</div>
+</div>
+
+<div class="bloc">
+<div class="form">
+  <span class="t">SYMETRIES</span>
+  <div class="c m">axe (O<i>x</i>) : <i>x</i>&#8242;&#8239;=&#8239;<i>x</i>, <i>y</i>&#8242;&#8239;=&#8239;&#8722;<i>y</i> &nbsp;&nbsp;&nbsp; axe (O<i>y</i>) : <i>x</i>&#8242;&#8239;=&#8239;&#8722;<i>x</i>, <i>y</i>&#8242;&#8239;=&#8239;<i>y</i></div>
+  <div class="c m"><i>S</i><sub>O</sub>&#8239;=&#8239;<i>h</i>(O,&#8239;&#8722;1) : <i>x</i>&#8242;&#8239;=&#8239;&#8722;<i>x</i>, <i>y</i>&#8242;&#8239;=&#8239;&#8722;<i>y</i></div>
+  <div class="c m"><i>S</i><sub>&#937;</sub>&#8239;=&#8239;<i>h</i>(&#937;,&#8239;&#8722;1) : <i>x</i>&#8242;&#8239;=&#8239;2<i>x</i><sub>0</sub>&#8239;&#8722;&#8239;<i>x</i>, <i>y</i>&#8242;&#8239;=&#8239;2<i>y</i><sub>0</sub>&#8239;&#8722;&#8239;<i>y</i></div>
+</div>
+<p>Pour une symétrie d'axe, <b>la coordonnée qui ne change pas est celle qui se lit le long de l'axe</b>. La dernière ligne s'obtient en faisant <i>k</i>&#8239;=&#8239;&#8722;1 dans l'homothétie de centre &#937;.</p>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Reconnaître une transformation</h3>
+<ul>
+<li><span class="pt"><i>x</i>&#8242;&#8239;=&#8239;<i>x</i>&#8239;+&#8239;<i>a</i></span> et <span class="pt"><i>y</i>&#8242;&#8239;=&#8239;<i>y</i>&#8239;+&#8239;<i>b</i></span> : <b>translation</b> de vecteur <i style="border-top:.6pt solid;padding:.5pt .14em 0 0">u</i>(<i>a</i>&#8239;;&#8239;<i>b</i>).</li>
+<li><span class="pt"><i>x</i>&#8242;&#8239;=&#8239;<i>kx</i>&#8239;+&#8239;<i>p</i></span> et <span class="pt"><i>y</i>&#8242;&#8239;=&#8239;<i>ky</i>&#8239;+&#8239;<i>q</i></span>, avec <i>k</i>&#8239;&#8800;&#8239;0 et <i>k</i>&#8239;&#8800;&#8239;1 : <b>homothétie de rapport <i>k</i></b>, de centre l'unique point invariant.</li>
+<li><i>x</i>&#8242; ne dépendant que de <i>x</i> et <i>y</i>&#8242; que de <i>y</i>, avec un signe &#8722; devant <b>une seule</b> des deux variables : <b>symétrie orthogonale suivie d'une translation</b>.</li>
+</ul>
+<p><b>Points invariants</b> : on les obtient en résolvant <span class="pt"><i>x</i>&#8242;&#8239;=&#8239;<i>x</i></span> et <span class="pt"><i>y</i>&#8242;&#8239;=&#8239;<i>y</i></span>, c'est-à-dire en écrivant que le point est sa propre image. Le résultat se lit comme un diagnostic :</p>
+<table>
+<tr><th>Points invariants</th><th>Transformation</th></tr>
+<tr><td>aucun</td><td>translation de vecteur non nul</td></tr>
+<tr><td>un seul</td><td>centre d'une homothétie (<i>k</i>&#8239;&#8800;&#8239;1) ou d'une rotation</td></tr>
+<tr><td>toute une droite</td><td>axe d'une symétrie orthogonale</td></tr>
+<tr><td>tout le plan</td><td>identité</td></tr>
+</table>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Image d'une droite ou d'une courbe</h3>
+<p>Pour obtenir une équation de l'image (C&#8242;) d'une courbe (C) par une transformation <i>f</i> : <b>1.</b> écrire l'expression analytique de <i>f</i>, soit <i>x</i>&#8242; et <i>y</i>&#8242; en fonction de <i>x</i> et <i>y</i> ; <b>2.</b> l'<b>inverser</b>, soit exprimer <i>x</i> et <i>y</i> en fonction de <i>x</i>&#8242; et <i>y</i>&#8242; ; <b>3.</b> <b>remplacer</b> <i>x</i> et <i>y</i> par ces expressions dans l'équation de (C) ; <b>4.</b> l'égalité obtenue en <i>x</i>&#8242; et <i>y</i>&#8242; est une équation de (C&#8242;), que l'on renomme en <i>x</i> et <i>y</i>.</p>
+<div class="note"><b>Pour transformer une courbe, on substitue la réciproque.</b> Un point <i>M</i>&#8242; appartient à (C&#8242;) exactement lorsque son <b>antécédent</b> <i>M</i> appartient à (C). Contrôle : prendre un point de (C), calculer son image, vérifier qu'elle satisfait l'équation trouvée.</div>
+</div>
+
+</div>
+
+<div class="bandeau vert">PIEGES ET ERREURS FREQUENTES</div>
+<div class="cols">
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> Une homothétie de rapport &#8722;2 multiplie les longueurs par &#8722;2</div><div class="cor"><span class="v">&#10003;</span> Elle les multiplie par <span class="pt">|&#8722;2|&#8239;=&#8239;2</span> : une longueur n'est jamais négative. Le <b>nombre</b> |<i>k</i>| commande la taille, le <b>signe</b> de <i>k</i> commande le côté du centre où la figure atterrit : ici elle est <b>retournée</b> (demi-tour).</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> Une homothétie de rapport 3 multiplie l'aire par 3</div><div class="cor"><span class="v">&#10003;</span> Les aires sont multipliées par <span class="pt"><i>k</i><sup>2</sup>&#8239;=&#8239;9</span>, car la longueur est multipliée par 3 <b>dans les deux directions</b> : un champ de 4 ares en fait 36, pas 12. Sur une carte au 1/50&#8239;000, les longueurs sont réduites 50&#8239;000 fois, les aires 2&#8239;500&#8239;000&#8239;000 fois.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> <span class="pt"><i>h</i>(O,&#8239;2)&#8239;&#8728;&#8239;<i>h</i>(O,&#8239;3)&#8239;=&#8239;<i>h</i>(O,&#8239;5)</span></div><div class="cor"><span class="v">&#10003;</span> Les rapports se <b>multiplient</b> : <span class="pt"><i>h</i>(O,&#8239;2)&#8239;&#8728;&#8239;<i>h</i>(O,&#8239;3)&#8239;=&#8239;<i>h</i>(O,&#8239;6)</span>. Ce sont les <b>vecteurs</b> qui s'additionnent : <span class="pt"><i>t</i><sub><i style="border-top:.6pt solid;padding:.5pt .14em 0 0">u</i></sub>&#8239;&#8728;&#8239;<i>t</i><sub><i style="border-top:.6pt solid;padding:.5pt .14em 0 0">v</i></sub>&#8239;=&#8239;<i>t</i><sub><i style="border-top:.6pt solid;padding:.5pt .14em 0 0">u</i>&#8239;+&#8239;<i style="border-top:.6pt solid;padding:.5pt .14em 0 0">v</i></sub></span>.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> <span class="pt"><i>r</i>&#8239;(O,&#8239;<span class="f"><span>&#960;</span><span>2</span></span>)&#8239;&#8728;&#8239;<i>r</i>&#8239;(O,&#8239;<span class="f"><span>&#960;</span><span>2</span></span>)</span> est une rotation d'angle <span class="f"><span>&#960;</span><span>2</span></span> &nbsp;&middot;&nbsp; on additionne les angles de deux rotations de centres différents</div><div class="cor"><span class="v">&#10003;</span> Les angles <b>s'ajoutent</b> : <span class="f"><span>&#960;</span><span>2</span></span>&#8239;+&#8239;<span class="f"><span>&#960;</span><span>2</span></span>&#8239;=&#8239;&#960;, c'est le <b>demi-tour</b> <i>S</i><sub>O</sub>. Et cette règle suppose le <b>même centre</b> : avec des centres distincts, la composée n'est pas la rotation d'angle la somme. Vérifier l'égalité des centres <b>avant</b> d'additionner.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> La rotation d'angle 60&#176;, sans préciser le sens &nbsp;&middot;&nbsp; <span class="pt"><i>r</i>&#8239;(O,&#8239;<span class="f"><span>&#960;</span><span>3</span></span>)&#8239;=&#8239;<i>r</i>&#8239;(O,&#8239;&#8722;<span class="f"><span>&#960;</span><span>3</span></span>)</span></div><div class="cor"><span class="v">&#10003;</span> L'angle d'une rotation est <b>orienté</b> : ces deux rotations sont <b>différentes</b>, réciproques l'une de l'autre. Le sens fait partie de l'énoncé. En revanche <span class="pt"><i>r</i>(O,&#8239;3&#960;)&#8239;=&#8239;<i>r</i>(O,&#8239;&#960;)</span> : on réduit modulo 2&#960;.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> L'image de <span class="pt">A(4&#8239;;&#8239;1)</span> par <span class="pt"><i>h</i>(&#937;,&#8239;3)</span>, avec <span class="pt">&#937;(2&#8239;;&#8239;0)</span>, est <span class="pt">A&#8242;(12&#8239;;&#8239;3)</span></div><div class="cor"><span class="v">&#10003;</span> <span class="pt"><i>x</i>&#8242;&#8239;=&#8239;<i>kx</i></span> ne vaut que pour le centre <b>O</b>. Ici il faut <b>recentrer</b> : <span class="pt"><i>x</i>&#8242;&#8239;=&#8239;2&#8239;+&#8239;3(4&#8239;&#8722;&#8239;2)&#8239;=&#8239;8</span> et <span class="pt"><i>y</i>&#8242;&#8239;=&#8239;0&#8239;+&#8239;3&#8239;&#215;&#8239;1&#8239;=&#8239;3</span>, donc <span class="pt">A&#8242;(8&#8239;;&#8239;3)</span>.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> <span class="pt"><i>x</i>&#8242;&#8239;=&#8239;&#8722;<i>x</i>&#8239;+&#8239;4</span>, <span class="pt"><i>y</i>&#8242;&#8239;=&#8239;&#8722;<i>y</i></span> n'a aucun point invariant &nbsp;&middot;&nbsp; pour l'image d'une courbe, on remplace <i>x</i> par <i>x</i>&#8242;</div><div class="cor"><span class="v">&#10003;</span> On résout <span class="pt"><i>x</i>&#8239;=&#8239;&#8722;<i>x</i>&#8239;+&#8239;4</span> et <span class="pt"><i>y</i>&#8239;=&#8239;&#8722;<i>y</i></span> : le point <span class="pt">&#937;(2&#8239;;&#8239;0)</span> est invariant, la transformation est la <b>symétrie centrale</b> de centre &#937;. Et pour une courbe on <b>substitue la réciproque</b> : ce sont <i>x</i> et <i>y</i> que l'on remplace par leurs expressions en <i>x</i>&#8242; et <i>y</i>&#8242;.</div></div>
+
+</div>
+
+<div class="bandeau bleu">A SAVOIR PAR COEUR AVANT LE DEVOIR</div>
+<div class="cols">
+<ol class="recap">
+<li>Une <b>transformation</b> est une bijection du plan ; <b>point invariant</b> : <span class="pt"><i>f</i>(<i>M</i>)&#8239;=&#8239;<i>M</i></span> ; toute transformation a une <b>réciproque</b> <i>f</i><sup>&#8722;1</sup>.</li>
+<li><b>Définitions</b> : <span class="pt"><span class="op" style="border-top:.6pt solid;padding-top:.5pt">MM&#8242;</span>&#8239;=&#8239;<i style="border-top:.6pt solid;padding:.5pt .14em 0 0">u</i></span> pour <i>t</i><sub><i style="border-top:.6pt solid;padding:.5pt .14em 0 0">u</i></sub> ; <span class="pt"><span class="op" style="border-top:.6pt solid;padding-top:.5pt">OM&#8242;</span>&#8239;=&#8239;<i>k</i>&#8239;<span class="op" style="border-top:.6pt solid;padding-top:.5pt">OM</span></span> pour <span class="pt"><i>h</i>(O,&#8239;<i>k</i>)</span>, <i>k</i>&#8239;&#8800;&#8239;0. <b>Caractérisation</b> : <span class="pt"><span class="op" style="border-top:.6pt solid;padding-top:.5pt">M&#8242;N&#8242;</span>&#8239;=&#8239;<i>k</i>&#8239;<span class="op" style="border-top:.6pt solid;padding-top:.5pt">MN</span></span> (<i>k</i>&#8239;=&#8239;1 translation, <i>k</i>&#8239;&#8800;&#8239;1 homothétie).</li>
+<li>Homothétie-translation : <b>longueurs &#215;&#8239;|<i>k</i>|</b>, <b>aires &#215;&#8239;<i>k</i><sup>2</sup></b> ; conserve angles, alignement, milieux, parallélisme, orthogonalité ; droite <span class="ar">&#8594;</span> droite <b>parallèle</b> ; cercle (I&#8239;;&#8239;R) <span class="ar">&#8594;</span> cercle (<i>f</i>(I)&#8239;;&#8239;|<i>k</i>|R).</li>
+<li><b>Rotation</b> <span class="pt"><i>r</i>(O,&#8239;&#952;)</span> : <span class="pt"><i>OM</i>&#8242;&#8239;=&#8239;<i>OM</i></span> et angle <b>orienté</b> &#952; ; <b>isométrie</b> (distances et aires conservées), droite et image faisant l'angle &#952;. <span class="pt"><i>r</i>(O,&#8239;&#960;)&#8239;=&#8239;<i>S</i><sub>O</sub>&#8239;=&#8239;<i>h</i>(O,&#8239;&#8722;1)</span>.</li>
+<li><b>Réciproques</b> : <span class="pt">(<i>t</i><sub><i style="border-top:.6pt solid;padding:.5pt .14em 0 0">u</i></sub>)<sup>&#8722;1</sup>&#8239;=&#8239;<i>t</i><sub>&#8722;<i style="border-top:.6pt solid;padding:.5pt .14em 0 0">u</i></sub></span> &middot; <span class="pt">(<i>h</i>(O,&#8239;<i>k</i>))<sup>&#8722;1</sup>&#8239;=&#8239;<i>h</i>&#8239;(O,&#8239;<span class="f"><span>1</span><span><i>k</i></span></span>)</span> &middot; <span class="pt">(<i>r</i>(O,&#8239;&#952;))<sup>&#8722;1</sup>&#8239;=&#8239;<i>r</i>(O,&#8239;&#8722;&#952;)</span> &middot; <span class="pt"><i>S</i><sub>(&#916;)</sub></span> est sa propre réciproque.</li>
+<li><b>Composées</b> : vecteurs <b>additionnés</b>, rapports <b>multipliés</b>, angles <b>ajoutés</b> (même centre obligatoire). Deux symétries d'axes sécants d'angle &#945; <span class="ar">&#8594;</span> <span class="pt"><i>r</i>(O,&#8239;2&#945;)</span> ; d'axes parallèles distants de <i>d</i> <span class="ar">&#8594;</span> translation de longueur 2<i>d</i>.</li>
+<li><b>Analytique</b> : translation <span class="pt"><i>x</i>&#8242;&#8239;=&#8239;<i>x</i>&#8239;+&#8239;<i>a</i></span>, <span class="pt"><i>y</i>&#8242;&#8239;=&#8239;<i>y</i>&#8239;+&#8239;<i>b</i></span> &middot; <span class="pt"><i>h</i>(O,&#8239;<i>k</i>)</span> : <span class="pt"><i>x</i>&#8242;&#8239;=&#8239;<i>kx</i></span> &middot; <span class="pt"><i>h</i>(&#937;,&#8239;<i>k</i>)</span> : <span class="pt"><i>x</i>&#8242;&#8239;=&#8239;<i>x</i><sub>0</sub>&#8239;+&#8239;<i>k</i>(<i>x</i>&#8239;&#8722;&#8239;<i>x</i><sub>0</sub>)</span> &middot; axe (O<i>x</i>) : <span class="pt"><i>y</i>&#8242;&#8239;=&#8239;&#8722;<i>y</i></span> &middot; <span class="pt"><i>S</i><sub>&#937;</sub></span> : <span class="pt"><i>x</i>&#8242;&#8239;=&#8239;2<i>x</i><sub>0</sub>&#8239;&#8722;&#8239;<i>x</i></span>.</li>
+<li><b>Points invariants</b> : aucun <span class="ar">&#8594;</span> translation ; un seul <span class="ar">&#8594;</span> centre (homothétie ou rotation) ; une droite <span class="ar">&#8594;</span> axe de symétrie ; tout le plan <span class="ar">&#8594;</span> identité. <b>Image d'une courbe</b> : on <b>substitue la réciproque</b>.</li>
+</ol>
+</div>
+
+</body>
+</html>

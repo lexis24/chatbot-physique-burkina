@@ -1,0 +1,314 @@
+{
+  "niveau": "6ème",
+  "chapitre": "Chapitre 9 : Cercle et disque",
+  "source": "maths/6eme/Chapitre_9_Cercle_et_disque",
+  "nombre_cartes": 34,
+  "cartes": [
+    {
+      "id": "6E-CH09-001",
+      "lecon": "Le cercle et son vocabulaire",
+      "type": "definition",
+      "recto": "Qu'est-ce qu'un cercle de centre O ?",
+      "verso": "C'est l'ensemble des points situés à une même distance de O. Cette distance commune est le rayon, souvent noté r.",
+      "difficulte": 1,
+      "tags": ["cercle", "definition"]
+    },
+    {
+      "id": "6E-CH09-002",
+      "lecon": "Le cercle et son vocabulaire",
+      "type": "definition",
+      "recto": "Quelle différence y a-t-il entre un cercle et un disque ?",
+      "verso": "Le cercle est la ligne seule, formée des points situés à la distance r du centre. Le disque est la surface : le cercle et tout son intérieur.",
+      "difficulte": 2,
+      "tags": ["cercle", "disque", "distinction"]
+    },
+    {
+      "id": "6E-CH09-003",
+      "lecon": "Le cercle et son vocabulaire",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on le rayon d'un cercle ?",
+      "verso": "Le segment qui relie le centre O à un point du cercle. Tous les rayons d'un même cercle ont la même longueur, et le mot désigne aussi cette longueur.",
+      "difficulte": 1,
+      "tags": ["rayon", "definition"]
+    },
+    {
+      "id": "6E-CH09-004",
+      "lecon": "Le cercle et son vocabulaire",
+      "type": "definition",
+      "recto": "Qu'est-ce que le diamètre d'un cercle ?",
+      "verso": "C'est le segment qui relie deux points du cercle en passant par le centre. Il est fait de deux rayons mis bout à bout.",
+      "difficulte": 1,
+      "tags": ["diametre", "definition"]
+    },
+    {
+      "id": "6E-CH09-005",
+      "lecon": "Le cercle et son vocabulaire",
+      "type": "formule",
+      "recto": "Quelle relation lie le diamètre et le rayon d'un cercle ?",
+      "verso": "$d = 2 \\times r$, et dans l'autre sens $r = d \\div 2$. Pour un rayon de $3$ cm, le diamètre vaut $6$ cm.",
+      "difficulte": 1,
+      "tags": ["diametre", "rayon", "relation"]
+    },
+    {
+      "id": "6E-CH09-006",
+      "lecon": "Le cercle et son vocabulaire",
+      "type": "definition",
+      "recto": "Qu'est-ce qu'une corde d'un cercle ?",
+      "verso": "C'est un segment qui relie deux points quelconques du cercle. Si elle passe par le centre, cette corde porte le nom de diamètre.",
+      "difficulte": 1,
+      "tags": ["corde", "definition"]
+    },
+    {
+      "id": "6E-CH09-007",
+      "lecon": "Le cercle et son vocabulaire",
+      "type": "definition",
+      "recto": "Qu'est-ce qu'un arc de cercle ?",
+      "verso": "C'est une portion de la ligne du cercle comprise entre deux points. Deux points découpent toujours le cercle en deux arcs, un petit et un grand.",
+      "difficulte": 1,
+      "tags": ["arc", "definition"]
+    },
+    {
+      "id": "6E-CH09-008",
+      "lecon": "Le cercle et son vocabulaire",
+      "type": "definition",
+      "recto": "Comment note-t-on le cercle de centre O et de rayon r ?",
+      "verso": "On écrit $C\\left(O, r\\right)$. Ainsi $C\\left(O, 3 \\text{ cm}\\right)$ se lit « le cercle de centre O et de rayon $3$ cm » : un point et une longueur suffisent à le décrire en entier.",
+      "difficulte": 1,
+      "tags": ["cercle", "notation"]
+    },
+    {
+      "id": "6E-CH09-009",
+      "lecon": "Le cercle et son vocabulaire",
+      "type": "formule",
+      "recto": "Pourquoi le diamètre est-il la plus longue des cordes d'un cercle ?",
+      "verso": "Pour une corde [MN], le chemin qui va de M à N en passant par le centre mesure deux rayons, donc un diamètre. Aller tout droit étant plus court qu'un détour, MN n'atteint cette longueur que si la corde passe déjà par le centre.",
+      "difficulte": 3,
+      "tags": ["corde", "diametre", "justification"]
+    },
+    {
+      "id": "6E-CH09-010",
+      "lecon": "Construire un cercle ; points et cordes",
+      "type": "formule",
+      "recto": "Comment sait-on si un point M est sur, à l'intérieur ou à l'extérieur du cercle $C\\left(O, r\\right)$ ?",
+      "verso": "On compare la distance OM au rayon r : si $OM = r$, M est sur le cercle ; si $OM < r$, M est à l'intérieur ; si $OM > r$, M est à l'extérieur.",
+      "difficulte": 2,
+      "tags": ["position-d-un-point", "cercle"]
+    },
+    {
+      "id": "6E-CH09-011",
+      "lecon": "Construire un cercle ; points et cordes",
+      "type": "formule",
+      "recto": "Combien de positions un point peut-il occuper par rapport à un cercle ?",
+      "verso": "Trois, et trois seulement : à l'intérieur, sur le cercle, ou à l'extérieur. Elles correspondent aux trois comparaisons possibles entre OM et r, $<$, $=$ ou $>$.",
+      "difficulte": 2,
+      "tags": ["position-d-un-point", "piege"]
+    },
+    {
+      "id": "6E-CH09-012",
+      "lecon": "Construire un cercle ; points et cordes",
+      "type": "formule",
+      "recto": "Pourquoi le centre O n'appartient-il pas au cercle $C\\left(O, r\\right)$ ?",
+      "verso": "Parce que sa distance à lui-même vaut $0$, et non r. Le centre appartient donc au disque, mais jamais au cercle.",
+      "difficulte": 3,
+      "tags": ["centre", "position-d-un-point", "piege"]
+    },
+    {
+      "id": "6E-CH09-013",
+      "lecon": "Construire un cercle ; points et cordes",
+      "type": "formule",
+      "recto": "Pourquoi un point situé sur le cercle appartient-il aussi au disque ?",
+      "verso": "Parce que le disque est formé du cercle et de tout son intérieur : la ligne du cercle fait partie du disque. Les positions « sur le cercle » et « dans le disque » ne s'excluent donc pas.",
+      "difficulte": 3,
+      "tags": ["disque", "cercle", "piege"]
+    },
+    {
+      "id": "6E-CH09-014",
+      "lecon": "Construire un cercle ; points et cordes",
+      "type": "formule",
+      "recto": "Comment trace-t-on au compas un cercle dont le centre et le rayon sont donnés ?",
+      "verso": "On règle l'écartement du compas sur le rayon à l'aide de la règle graduée, on pique la pointe sur le centre, puis on tourne sans jamais modifier l'écartement.",
+      "difficulte": 1,
+      "tags": ["construction", "compas"]
+    },
+    {
+      "id": "6E-CH09-015",
+      "lecon": "Construire un cercle ; points et cordes",
+      "type": "formule",
+      "recto": "Comment construit-on le cercle de centre O qui passe par un point A donné ?",
+      "verso": "Le rayon n'est pas écrit en toutes lettres : c'est la longueur OA. On pique la pointe du compas en O, on l'ouvre jusqu'à ce que la mine tombe exactement sur A, puis on trace.",
+      "difficulte": 2,
+      "tags": ["construction", "rayon", "compas"]
+    },
+    {
+      "id": "6E-CH09-016",
+      "lecon": "Construire un cercle ; points et cordes",
+      "type": "definition",
+      "recto": "Que sont deux cercles concentriques ?",
+      "verso": "Deux cercles qui ont le même centre mais des rayons différents. Ils ne se coupent jamais.",
+      "difficulte": 2,
+      "tags": ["cercles-concentriques", "definition"]
+    },
+    {
+      "id": "6E-CH09-017",
+      "lecon": "Construire un cercle ; points et cordes",
+      "type": "formule",
+      "recto": "Comment obtient-on un diamètre sur un cercle déjà tracé de centre O ?",
+      "verso": "On trace à la règle une droite passant par O : elle coupe le cercle en deux points A et B, et le segment [AB] est un diamètre.",
+      "difficulte": 2,
+      "tags": ["diametre", "construction"]
+    },
+    {
+      "id": "6E-CH09-018",
+      "lecon": "Le périmètre du cercle",
+      "type": "definition",
+      "recto": "Qu'est-ce que le nombre $\\pi$ ?",
+      "verso": "C'est le quotient de la longueur d'un cercle par son diamètre. Il est le même pour tous les cercles et ne s'écrit pas exactement avec des chiffres : on utilise la valeur approchée $\\pi \\approx 3{,}14$.",
+      "difficulte": 1,
+      "tags": ["pi", "definition"]
+    },
+    {
+      "id": "6E-CH09-019",
+      "lecon": "Le périmètre du cercle",
+      "type": "formule",
+      "recto": "Quelle est la formule du périmètre d'un cercle de rayon r ?",
+      "verso": "$P = 2 \\times \\pi \\times r$, ou bien $P = \\pi \\times d$ si l'on part du diamètre. Les deux écritures donnent le même résultat, puisque $d = 2 \\times r$.",
+      "difficulte": 1,
+      "tags": ["perimetre", "formule"]
+    },
+    {
+      "id": "6E-CH09-020",
+      "lecon": "Le périmètre du cercle",
+      "type": "formule",
+      "recto": "Laquelle des deux écritures du périmètre choisit-on selon la donnée de l'énoncé ?",
+      "verso": "Si l'énoncé donne le rayon, on prend $P = 2 \\times \\pi \\times r$ ; s'il donne le diamètre, on prend $P = \\pi \\times d$. On évite ainsi une conversion inutile.",
+      "difficulte": 2,
+      "tags": ["perimetre", "methode"]
+    },
+    {
+      "id": "6E-CH09-021",
+      "lecon": "Le périmètre du cercle",
+      "type": "formule",
+      "recto": "Pourquoi l'écriture $P = 2 \\times \\pi \\times d$ est-elle fausse ?",
+      "verso": "Parce que le diamètre contient déjà les deux rayons : on doublerait une seconde fois. Le périmètre vaut $2 \\times \\pi \\times r$ ou $\\pi \\times d$, jamais les deux à la fois.",
+      "difficulte": 3,
+      "tags": ["perimetre", "piege"]
+    },
+    {
+      "id": "6E-CH09-022",
+      "lecon": "Le périmètre du cercle",
+      "type": "formule",
+      "recto": "Comment retrouve-t-on le rayon d'un cercle dont on connaît le périmètre ?",
+      "verso": "On fait l'opération inverse : $r = P \\div \\left(2 \\times \\pi\\right)$, c'est-à-dire $P \\div 6{,}28$. On peut aussi calculer $d = P \\div \\pi$, puis $r = d \\div 2$.",
+      "difficulte": 2,
+      "tags": ["perimetre", "rayon", "operation-inverse"]
+    },
+    {
+      "id": "6E-CH09-023",
+      "lecon": "Le périmètre du cercle",
+      "type": "formule",
+      "recto": "Comment obtient-on la longueur d'un demi-cercle ou d'un quart de cercle ?",
+      "verso": "La longueur d'un arc est proportionnelle à l'angle au centre, et le tour complet correspond à $360^{\\circ}$. Le demi-cercle mesure donc la moitié du périmètre, et le quart de cercle en mesure le quart.",
+      "difficulte": 2,
+      "tags": ["arc", "proportionnalite", "perimetre"]
+    },
+    {
+      "id": "6E-CH09-024",
+      "lecon": "Le périmètre du cercle",
+      "type": "formule",
+      "recto": "Comment calcule-t-on le nombre de piquets que l'on peut planter tout autour d'un cercle, à espacement régulier ?",
+      "verso": "On divise le périmètre du cercle par l'espacement choisi, puis on garde la partie entière du quotient.",
+      "difficulte": 2,
+      "tags": ["perimetre", "application"]
+    },
+    {
+      "id": "6E-CH09-025",
+      "lecon": "Le périmètre du cercle",
+      "type": "formule",
+      "recto": "Comment calcule-t-on le nombre de tours que fait une roue sur une distance donnée ?",
+      "verso": "A chaque tour, la roue avance d'une longueur égale à son périmètre. On divise donc la distance parcourue par ce périmètre, après avoir exprimé les deux longueurs dans la même unité.",
+      "difficulte": 2,
+      "tags": ["perimetre", "roue", "application"]
+    },
+    {
+      "id": "6E-CH09-026",
+      "lecon": "Le périmètre du cercle",
+      "type": "formule",
+      "recto": "Pourquoi la longueur d'un cercle divisée par son diamètre donne-t-elle le même nombre pour tous les cercles ?",
+      "verso": "Parce qu'un grand cercle n'est qu'un petit cercle agrandi : si le diamètre double, toutes les longueurs doublent, le tour compris. Les deux doubles se compensent dans la division et le quotient ne change pas.",
+      "difficulte": 3,
+      "tags": ["pi", "justification"]
+    },
+    {
+      "id": "6E-CH09-027",
+      "lecon": "L'aire du disque",
+      "type": "formule",
+      "recto": "Quelle est la formule de l'aire d'un disque de rayon r ?",
+      "verso": "$A = \\pi \\times r \\times r$, que l'on écrit aussi $A = \\pi \\times r^{2}$, avec $\\pi \\approx 3{,}14$. L'aire se donne toujours en unités carrées, cm$^{2}$ ou m$^{2}$.",
+      "difficulte": 1,
+      "tags": ["aire", "disque", "formule"]
+    },
+    {
+      "id": "6E-CH09-028",
+      "lecon": "L'aire du disque",
+      "type": "formule",
+      "recto": "Pourquoi le calcul $\\pi \\times 2 \\times r$ ne donne-t-il pas l'aire d'un disque ?",
+      "verso": "Parce que ce calcul est celui du périmètre, qui est une longueur. Dans l'aire, le rayon est multiplié par lui-même et non par $2$ : $A = \\pi \\times r \\times r$.",
+      "difficulte": 3,
+      "tags": ["aire", "perimetre", "piege"]
+    },
+    {
+      "id": "6E-CH09-029",
+      "lecon": "L'aire du disque",
+      "type": "formule",
+      "recto": "Que fait-on d'abord quand l'énoncé donne le diamètre et que l'on cherche l'aire du disque ?",
+      "verso": "On calcule le rayon, $r = d \\div 2$, avant d'appliquer $A = \\pi \\times r \\times r$. On ne remplace jamais r par d dans la formule.",
+      "difficulte": 2,
+      "tags": ["aire", "diametre", "methode"]
+    },
+    {
+      "id": "6E-CH09-030",
+      "lecon": "L'aire du disque",
+      "type": "formule",
+      "recto": "Pourquoi le rayon apparaît-il deux fois dans la formule de l'aire du disque ?",
+      "verso": "Parce qu'en rangeant en alternance des parts très fines du disque, on obtient presque un rectangle de hauteur r et de longueur $\\pi \\times r$, la moitié du tour. Son aire vaut donc $\\pi \\times r \\times r$.",
+      "difficulte": 3,
+      "tags": ["aire", "justification"]
+    },
+    {
+      "id": "6E-CH09-031",
+      "lecon": "L'aire du disque",
+      "type": "formule",
+      "recto": "Comment retrouve-t-on le rayon d'un disque dont on connaît l'aire ?",
+      "verso": "On divise l'aire par $\\pi$ : on obtient $r \\times r$. On cherche ensuite le nombre qui, multiplié par lui-même, donne ce résultat.",
+      "difficulte": 2,
+      "tags": ["aire", "rayon", "operation-inverse"]
+    },
+    {
+      "id": "6E-CH09-032",
+      "lecon": "L'aire du disque",
+      "type": "formule",
+      "recto": "Comment calcule-t-on l'aire d'un secteur, quand un disque est partagé en parts égales ?",
+      "verso": "On divise l'aire totale par le nombre de parts. Un demi-disque a pour aire la moitié de A, et un quart de disque le quart de A.",
+      "difficulte": 2,
+      "tags": ["aire", "secteur"]
+    },
+    {
+      "id": "6E-CH09-033",
+      "lecon": "L'aire du disque",
+      "type": "formule",
+      "recto": "Comment calcule-t-on l'aire de l'anneau compris entre deux cercles de même centre ?",
+      "verso": "On calcule l'aire du grand disque, puis celle du petit, et on soustrait la petite de la grande.",
+      "difficulte": 2,
+      "tags": ["aire", "anneau"]
+    },
+    {
+      "id": "6E-CH09-034",
+      "lecon": "L'aire du disque",
+      "type": "formule",
+      "recto": "Que deviennent le périmètre et l'aire lorsque le rayon d'un disque double ?",
+      "verso": "Le périmètre double, mais l'aire est multipliée par $4$ : dans le calcul de l'aire, le rayon intervient deux fois, donc on multiplie deux fois par $2$.",
+      "difficulte": 3,
+      "tags": ["aire", "perimetre", "agrandissement"]
+    }
+  ]
+}

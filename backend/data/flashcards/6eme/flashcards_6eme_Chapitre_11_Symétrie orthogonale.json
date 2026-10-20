@@ -1,0 +1,323 @@
+{
+  "niveau": "6ème",
+  "chapitre": "Chapitre 11 : Symétrie orthogonale",
+  "source": "maths/6eme/Chapitre_11_Symetrie_orthogonale",
+  "nombre_cartes": 35,
+  "cartes": [
+    {
+      "id": "6E-CH11-001",
+      "lecon": "L'axe de symétrie d'une figure",
+      "type": "definition",
+      "recto": "Quand dit-on qu'une droite (D) est un axe de symétrie d'un dessin ?",
+      "verso": "Lorsque, en pliant le dessin le long de (D), les deux parties se superposent exactement. On dit alors que le dessin est symétrique par rapport à (D).",
+      "difficulte": 1,
+      "tags": ["axe-de-symetrie", "definition", "pliage"]
+    },
+    {
+      "id": "6E-CH11-002",
+      "lecon": "L'axe de symétrie d'une figure",
+      "type": "definition",
+      "recto": "Combien d'axes de symétrie un dessin peut-il posséder ?",
+      "verso": "Aucun, un seul, ou plusieurs : rien n'impose qu'un dessin en possède un.",
+      "difficulte": 1,
+      "tags": ["axe-de-symetrie", "nombre-d-axes"]
+    },
+    {
+      "id": "6E-CH11-003",
+      "lecon": "L'axe de symétrie d'une figure",
+      "type": "definition",
+      "recto": "Quelles orientations un axe de symétrie peut-il prendre ?",
+      "verso": "Toutes : un axe peut être vertical, horizontal ou oblique. Rien ne l'oblige à être debout sur la feuille.",
+      "difficulte": 2,
+      "tags": ["axe-de-symetrie", "orientation", "piege"]
+    },
+    {
+      "id": "6E-CH11-004",
+      "lecon": "L'axe de symétrie d'une figure",
+      "type": "formule",
+      "recto": "Pourquoi deux moitiés qui se ressemblent ne suffisent-elles pas à prouver une symétrie ?",
+      "verso": "Parce que la définition exige qu'elles se superposent exactement, point par point. Un dessin presque symétrique n'est pas symétrique.",
+      "difficulte": 3,
+      "tags": ["axe-de-symetrie", "piege"]
+    },
+    {
+      "id": "6E-CH11-005",
+      "lecon": "L'axe de symétrie d'une figure",
+      "type": "formule",
+      "recto": "Pourquoi le pliage est-il un contrôle plus sûr que des mesures pour vérifier une symétrie ?",
+      "verso": "Parce qu'il compare tous les points d'un seul coup : chaque point d'une moitié se pose sur un point de l'autre. Avec des mesures, une erreur peut se cacher entre deux contrôles.",
+      "difficulte": 2,
+      "tags": ["pliage", "justification"]
+    },
+    {
+      "id": "6E-CH11-006",
+      "lecon": "L'axe de symétrie d'une figure",
+      "type": "formule",
+      "recto": "Sur un quadrillage, où place-t-on l'image d'un carreau colorié par rapport à un axe vertical ?",
+      "verso": "On compte les carreaux qui le séparent de l'axe, puis on reporte le même nombre de l'autre côté, sur la même ligne.",
+      "difficulte": 2,
+      "tags": ["quadrillage", "motif", "construction"]
+    },
+    {
+      "id": "6E-CH11-007",
+      "lecon": "L'axe de symétrie d'une figure",
+      "type": "formule",
+      "recto": "Pourquoi le nombre total de carreaux coloriés d'un motif symétrique est-il pair ?",
+      "verso": "Parce que les carreaux vont deux par deux, un de chaque côté de l'axe. Un nombre impair signalerait un carreau resté seul, sans image.",
+      "difficulte": 3,
+      "tags": ["quadrillage", "motif", "verification"]
+    },
+    {
+      "id": "6E-CH11-008",
+      "lecon": "Le symétrique d'un point par rapport à une droite",
+      "type": "definition",
+      "recto": "Quand deux points A et $A'$ sont-ils symétriques par rapport à une droite (D) ?",
+      "verso": "Lorsque (D) est la médiatrice du segment $\\left[AA'\\right]$, c'est-à-dire qu'elle lui est perpendiculaire et passe par son milieu H. On dit aussi que $A'$ est l'image de A.",
+      "difficulte": 1,
+      "tags": ["point-symetrique", "definition", "mediatrice"]
+    },
+    {
+      "id": "6E-CH11-009",
+      "lecon": "Le symétrique d'un point par rapport à une droite",
+      "type": "formule",
+      "recto": "Où se trouve le symétrique d'un point A situé sur l'axe (D) ?",
+      "verso": "En A lui-même : $A' = A$. Un point de l'axe est son propre symétrique, il ne bouge pas.",
+      "difficulte": 2,
+      "tags": ["point-symetrique", "cas-particulier"]
+    },
+    {
+      "id": "6E-CH11-010",
+      "lecon": "Le symétrique d'un point par rapport à une droite",
+      "type": "formule",
+      "recto": "Comment retrouve-t-on l'axe quand on connaît seulement un point A et son symétrique $A'$ ?",
+      "verso": "C'est la médiatrice de $\\left[AA'\\right]$ : la droite perpendiculaire à ce segment qui passe par son milieu.",
+      "difficulte": 2,
+      "tags": ["point-symetrique", "mediatrice", "axe-de-symetrie"]
+    },
+    {
+      "id": "6E-CH11-011",
+      "lecon": "Le symétrique d'un point par rapport à une droite",
+      "type": "formule",
+      "recto": "Comment construit-on à l'équerre le symétrique d'un point A par rapport à une droite (D) ?",
+      "verso": "On trace la perpendiculaire à (D) passant par A ; elle coupe (D) en H. On reporte ensuite la longueur HA de l'autre côté de (D), sur cette même perpendiculaire.",
+      "difficulte": 2,
+      "tags": ["construction", "equerre", "point-symetrique"]
+    },
+    {
+      "id": "6E-CH11-012",
+      "lecon": "Le symétrique d'un point par rapport à une droite",
+      "type": "formule",
+      "recto": "Comment construit-on au compas le symétrique d'un point A par rapport à une droite (D) ?",
+      "verso": "Un arc de centre A coupe (D) en deux points M et N. Sans changer l'écartement, deux arcs de centres M et N se recoupent en $A'$.",
+      "difficulte": 3,
+      "tags": ["construction", "compas", "point-symetrique"]
+    },
+    {
+      "id": "6E-CH11-013",
+      "lecon": "Le symétrique d'un point par rapport à une droite",
+      "type": "formule",
+      "recto": "Pourquoi la construction au compas donne-t-elle bien le symétrique de A ?",
+      "verso": "Parce que M et N vérifient $MA' = MA$ et $NA' = NA$ : ils sont à égale distance de A et de $A'$, donc sur la médiatrice de $\\left[AA'\\right]$. Comme ils sont aussi sur (D), cette droite est cette médiatrice.",
+      "difficulte": 3,
+      "tags": ["compas", "justification", "mediatrice"]
+    },
+    {
+      "id": "6E-CH11-014",
+      "lecon": "Le symétrique d'un point par rapport à une droite",
+      "type": "formule",
+      "recto": "Quelle relation lie la longueur $AA'$ et la distance du point A à l'axe ?",
+      "verso": "La longueur $AA'$ vaut le double de cette distance, car le pied H de la perpendiculaire est le milieu de $\\left[AA'\\right]$. Un point situé à $2{,}5$ cm de l'axe donne $AA' = 5$ cm.",
+      "difficulte": 2,
+      "tags": ["point-symetrique", "distance"]
+    },
+    {
+      "id": "6E-CH11-015",
+      "lecon": "Le symétrique d'un point par rapport à une droite",
+      "type": "formule",
+      "recto": "Pourquoi ne peut-on pas reporter le point A « tout droit en face », sans tracer de perpendiculaire ?",
+      "verso": "Parce que le symétrique se place sur la perpendiculaire à l'axe issue de A. Avec un report de biais, le segment $\\left[AA'\\right]$ n'est plus perpendiculaire à l'axe, qui n'en est donc plus la médiatrice.",
+      "difficulte": 3,
+      "tags": ["point-symetrique", "piege", "perpendiculaire"]
+    },
+    {
+      "id": "6E-CH11-016",
+      "lecon": "Le symétrique d'un point par rapport à une droite",
+      "type": "formule",
+      "recto": "Quelle longueur reporte-t-on de l'autre côté de l'axe pour placer le symétrique de A ?",
+      "verso": "La distance HA, du point au pied de la perpendiculaire, et non la longueur totale $AA'$. On place $A'$ tel que $HA' = HA$.",
+      "difficulte": 3,
+      "tags": ["point-symetrique", "piege", "distance"]
+    },
+    {
+      "id": "6E-CH11-017",
+      "lecon": "Symétrique d'un segment et d'une figure",
+      "type": "formule",
+      "recto": "Comment construit-on le symétrique d'un dessin par rapport à une droite (D) ?",
+      "verso": "On construit le symétrique de chacun de ses points-clés, sommets, extrémités ou centre, puis on relie les images obtenues dans le même ordre.",
+      "difficulte": 1,
+      "tags": ["construction", "points-cles"]
+    },
+    {
+      "id": "6E-CH11-018",
+      "lecon": "Symétrique d'un segment et d'une figure",
+      "type": "formule",
+      "recto": "Qu'obtient-on comme symétrique d'un segment [AB] ?",
+      "verso": "Un segment de même longueur : $A'B' = AB$. De la même façon, le symétrique d'une droite est une droite.",
+      "difficulte": 1,
+      "tags": ["segment", "conservation", "longueur"]
+    },
+    {
+      "id": "6E-CH11-019",
+      "lecon": "Symétrique d'un segment et d'une figure",
+      "type": "formule",
+      "recto": "Que suffit-il de construire pour obtenir le symétrique d'un cercle ?",
+      "verso": "Le symétrique de son centre : le symétrique d'un cercle est un cercle de même rayon.",
+      "difficulte": 2,
+      "tags": ["cercle", "construction"]
+    },
+    {
+      "id": "6E-CH11-020",
+      "lecon": "Symétrique d'un segment et d'une figure",
+      "type": "formule",
+      "recto": "Quelles grandeurs et quelles propriétés la symétrie orthogonale conserve-t-elle ?",
+      "verso": "Les longueurs, les angles et les aires, ainsi que l'alignement des points et le parallélisme des droites.",
+      "difficulte": 2,
+      "tags": ["conservation", "propriete"]
+    },
+    {
+      "id": "6E-CH11-021",
+      "lecon": "Symétrique d'un segment et d'une figure",
+      "type": "formule",
+      "recto": "Pourquoi un dessin et son symétrique sont-ils superposables ?",
+      "verso": "Parce que le pliage le long de l'axe pose l'un exactement sur l'autre : on peut les superposer en retournant la feuille.",
+      "difficulte": 2,
+      "tags": ["superposable", "pliage"]
+    },
+    {
+      "id": "6E-CH11-022",
+      "lecon": "Symétrique d'un segment et d'une figure",
+      "type": "formule",
+      "recto": "Qu'est-ce que la symétrie orthogonale ne conserve pas ?",
+      "verso": "Le sens de lecture : elle retourne le dessin comme un miroir. C'est pourquoi un texte lu dans un miroir paraît à l'envers, alors que ses longueurs et ses angles sont intacts.",
+      "difficulte": 3,
+      "tags": ["conservation", "miroir", "piege"]
+    },
+    {
+      "id": "6E-CH11-023",
+      "lecon": "Symétrique d'un segment et d'une figure",
+      "type": "formule",
+      "recto": "Quelle est la nature du symétrique d'un rectangle ou d'un carré ?",
+      "verso": "La même : la symétrie donne un dessin de même nature et de mêmes dimensions. Un rectangle donne un rectangle, un carré donne un carré.",
+      "difficulte": 2,
+      "tags": ["conservation", "nature"]
+    },
+    {
+      "id": "6E-CH11-024",
+      "lecon": "Symétrique d'un segment et d'une figure",
+      "type": "formule",
+      "recto": "Pourquoi faut-il relier les images des sommets dans le même ordre que le dessin de départ ?",
+      "verso": "Parce qu'en reliant $A'$, $C'$ puis $B'$ au hasard, on obtient un tracé croisé qui n'est pas le symétrique. On associe A à $A'$, B à $B'$ et C à $C'$.",
+      "difficulte": 3,
+      "tags": ["construction", "ordre", "piege"]
+    },
+    {
+      "id": "6E-CH11-025",
+      "lecon": "Symétrique d'un segment et d'une figure",
+      "type": "formule",
+      "recto": "Pourquoi le triangle $OAA'$ est-il isocèle quand O appartient à l'axe et $A'$ est le symétrique de A ?",
+      "verso": "Parce que O est sur l'axe, donc sur la médiatrice de $\\left[AA'\\right]$ : on a $OA' = OA$, et les deux côtés issus de O ont la même longueur.",
+      "difficulte": 3,
+      "tags": ["triangle-isocele", "propriete"]
+    },
+    {
+      "id": "6E-CH11-026",
+      "lecon": "Axes de symétrie des figures usuelles",
+      "type": "formule",
+      "recto": "Combien d'axes de symétrie un cercle possède-t-il ?",
+      "verso": "Une infinité : toutes les droites qui passent par son centre, c'est-à-dire tous ses diamètres.",
+      "difficulte": 1,
+      "tags": ["cercle", "nombre-d-axes"]
+    },
+    {
+      "id": "6E-CH11-027",
+      "lecon": "Axes de symétrie des figures usuelles",
+      "type": "formule",
+      "recto": "Quels sont les axes de symétrie d'un carré ?",
+      "verso": "Il en a quatre : ses deux médianes, qui passent par les milieux de deux côtés opposés, et ses deux diagonales.",
+      "difficulte": 1,
+      "tags": ["carre", "nombre-d-axes"]
+    },
+    {
+      "id": "6E-CH11-028",
+      "lecon": "Axes de symétrie des figures usuelles",
+      "type": "formule",
+      "recto": "Quels sont les axes de symétrie d'un rectangle ?",
+      "verso": "Deux seulement : ses médianes, qui joignent les milieux de deux côtés opposés. Ses diagonales n'en font pas partie.",
+      "difficulte": 2,
+      "tags": ["rectangle", "nombre-d-axes"]
+    },
+    {
+      "id": "6E-CH11-029",
+      "lecon": "Axes de symétrie des figures usuelles",
+      "type": "formule",
+      "recto": "Quels sont les axes de symétrie d'un losange ?",
+      "verso": "Ses deux diagonales. Le losange et le rectangle se comportent de façon inverse : les diagonales du losange sont des axes, celles du rectangle non.",
+      "difficulte": 2,
+      "tags": ["losange", "nombre-d-axes"]
+    },
+    {
+      "id": "6E-CH11-030",
+      "lecon": "Axes de symétrie des figures usuelles",
+      "type": "formule",
+      "recto": "Pourquoi une diagonale de rectangle n'est-elle pas un axe de symétrie ?",
+      "verso": "Parce que le pliage selon cette diagonale pose un côté long sur un côté court : dans un rectangle de $8$ cm sur $4$ cm, il dépasse de $4$ cm. Un axe doit envoyer chaque côté sur un côté de même longueur.",
+      "difficulte": 3,
+      "tags": ["rectangle", "piege", "justification"]
+    },
+    {
+      "id": "6E-CH11-031",
+      "lecon": "Axes de symétrie des figures usuelles",
+      "type": "formule",
+      "recto": "Pourquoi le carré possède-t-il quatre axes de symétrie ?",
+      "verso": "Parce qu'il est à la fois un rectangle et un losange : il hérite des deux médianes de l'un et des deux diagonales de l'autre.",
+      "difficulte": 3,
+      "tags": ["carre", "justification"]
+    },
+    {
+      "id": "6E-CH11-032",
+      "lecon": "Axes de symétrie des figures usuelles",
+      "type": "formule",
+      "recto": "Quels sont les trois axes de symétrie d'un triangle équilatéral ?",
+      "verso": "Ses trois hauteurs, qui sont aussi ses médianes et les médiatrices de ses côtés.",
+      "difficulte": 2,
+      "tags": ["triangle-equilateral", "nombre-d-axes"]
+    },
+    {
+      "id": "6E-CH11-033",
+      "lecon": "Axes de symétrie des figures usuelles",
+      "type": "formule",
+      "recto": "Quel est l'unique axe de symétrie d'un triangle isocèle ?",
+      "verso": "La hauteur issue du sommet principal, qui est aussi la médiatrice de la base.",
+      "difficulte": 2,
+      "tags": ["triangle-isocele", "nombre-d-axes"]
+    },
+    {
+      "id": "6E-CH11-034",
+      "lecon": "Axes de symétrie des figures usuelles",
+      "type": "formule",
+      "recto": "Quelles formes usuelles ne possèdent aucun axe de symétrie ?",
+      "verso": "Le triangle quelconque, dont les trois côtés ont des longueurs différentes, et le parallélogramme qui n'est ni un rectangle ni un losange.",
+      "difficulte": 2,
+      "tags": ["parallelogramme", "triangle-quelconque", "nombre-d-axes"]
+    },
+    {
+      "id": "6E-CH11-035",
+      "lecon": "Axes de symétrie des figures usuelles",
+      "type": "formule",
+      "recto": "Combien d'axes de symétrie possède un polygone régulier à $n$ côtés ?",
+      "verso": "Exactement $n$ axes. Le triangle équilatéral, à $3$ côtés, en a $3$ ; le carré en a $4$ ; l'octogone régulier en a $8$.",
+      "difficulte": 2,
+      "tags": ["polygone-regulier", "nombre-d-axes"]
+    }
+  ]
+}

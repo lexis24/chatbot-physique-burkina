@@ -1,0 +1,332 @@
+{
+  "niveau": "6ème",
+  "chapitre": "Chapitre 5 : Le parallélogramme",
+  "source": "maths/6eme/Chapitre_5_Parallelogramme",
+  "nombre_cartes": 36,
+  "cartes": [
+    {
+      "id": "6E-CH05-001",
+      "lecon": "Reconnaître et définir un parallélogramme",
+      "type": "definition",
+      "recto": "Qu'est-ce qu'un quadrilatère ?",
+      "verso": "C'est une forme plane fermée qui possède quatre côtés, quatre sommets et quatre angles. Le carré, le rectangle et le trapèze sont des quadrilatères.",
+      "difficulte": 1,
+      "tags": ["quadrilatere", "definition"]
+    },
+    {
+      "id": "6E-CH05-002",
+      "lecon": "Reconnaître et définir un parallélogramme",
+      "type": "definition",
+      "recto": "Qu'est-ce qu'un parallélogramme ?",
+      "verso": "C'est un quadrilatère dont les côtés opposés sont parallèles deux à deux. Il faut bien les deux paires de côtés parallèles.",
+      "difficulte": 1,
+      "tags": ["parallelogramme", "definition"]
+    },
+    {
+      "id": "6E-CH05-003",
+      "lecon": "Reconnaître et définir un parallélogramme",
+      "type": "definition",
+      "recto": "Comment s'appelle un quadrilatère qui n'a qu'une seule paire de côtés opposés parallèles ?",
+      "verso": "Un trapèze. Une seule paire ne suffit pas pour un parallélogramme, qui en exige deux.",
+      "difficulte": 2,
+      "tags": ["trapeze", "distinction"]
+    },
+    {
+      "id": "6E-CH05-004",
+      "lecon": "Reconnaître et définir un parallélogramme",
+      "type": "definition",
+      "recto": "Dans le parallélogramme ABCD, quels côtés sont opposés deux à deux ?",
+      "verso": "Ceux qui se font face : [AB] et [CD] d'une part, [BC] et [DA] d'autre part. On écrit (AB) // (CD) et (BC) // (DA), où // se lit « est parallèle à ».",
+      "difficulte": 2,
+      "tags": ["cotes-opposes", "vocabulaire", "notation"]
+    },
+    {
+      "id": "6E-CH05-005",
+      "lecon": "Reconnaître et définir un parallélogramme",
+      "type": "definition",
+      "recto": "Dans le parallélogramme ABCD, quels segments sont les diagonales ?",
+      "verso": "Les segments [AC] et [BD] : une diagonale relie deux sommets opposés, c'est-à-dire deux sommets non voisins dans le nom.",
+      "difficulte": 2,
+      "tags": ["diagonales", "vocabulaire"]
+    },
+    {
+      "id": "6E-CH05-006",
+      "lecon": "Reconnaître et définir un parallélogramme",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on deux côtés consécutifs d'un parallélogramme ?",
+      "verso": "Deux côtés voisins, qui partagent un sommet, par exemple [AB] et [BC]. Ils ne sont jamais parallèles entre eux.",
+      "difficulte": 2,
+      "tags": ["cotes-consecutifs", "vocabulaire"]
+    },
+    {
+      "id": "6E-CH05-007",
+      "lecon": "Reconnaître et définir un parallélogramme",
+      "type": "formule",
+      "recto": "Comment nomme-t-on correctement un parallélogramme à partir de ses sommets ?",
+      "verso": "En citant les sommets dans l'ordre, en tournant autour du tracé sans couper à l'intérieur. ABCD, BCDA, CDAB et DABC désignent le même parallélogramme.",
+      "difficulte": 2,
+      "tags": ["notation", "sommets"]
+    },
+    {
+      "id": "6E-CH05-008",
+      "lecon": "Reconnaître et définir un parallélogramme",
+      "type": "definition",
+      "recto": "Que signifient les chevrons et les petits traits dessinés sur les côtés d'un quadrilatère ?",
+      "verso": "Des chevrons identiques signalent deux côtés parallèles ; des petits traits en même nombre signalent deux côtés de même longueur. C'est le codage.",
+      "difficulte": 2,
+      "tags": ["codage", "chevrons"]
+    },
+    {
+      "id": "6E-CH05-009",
+      "lecon": "Reconnaître et définir un parallélogramme",
+      "type": "definition",
+      "recto": "Quel lien y a-t-il entre le rectangle et le parallélogramme ?",
+      "verso": "Tout rectangle est un parallélogramme, car ses côtés opposés sont parallèles deux à deux. Il possède en plus quatre angles droits, ce qu'on n'exige pas d'un parallélogramme.",
+      "difficulte": 2,
+      "tags": ["rectangle", "parallelogramme", "distinction"]
+    },
+    {
+      "id": "6E-CH05-010",
+      "lecon": "Reconnaître et définir un parallélogramme",
+      "type": "definition",
+      "recto": "Pourquoi ne doit-on pas noter ABDC un parallélogramme dont les sommets se suivent dans l'ordre A, B, C, D ?",
+      "verso": "Parce que les lettres ne suivent plus le tour du tracé : deux côtés se croisent et un côté devient une diagonale. Le nom correct est ABCD.",
+      "difficulte": 3,
+      "tags": ["notation", "piege", "sommets"]
+    },
+    {
+      "id": "6E-CH05-011",
+      "lecon": "Les propriétés du parallélogramme",
+      "type": "formule",
+      "recto": "Que peut-on dire des longueurs des côtés opposés d'un parallélogramme ?",
+      "verso": "Ils ont la même longueur. Dans le parallélogramme ABCD, $AB = CD$ et $BC = DA$.",
+      "difficulte": 1,
+      "tags": ["cotes-opposes", "propriete", "longueur"]
+    },
+    {
+      "id": "6E-CH05-012",
+      "lecon": "Les propriétés du parallélogramme",
+      "type": "formule",
+      "recto": "Que peut-on dire des angles opposés d'un parallélogramme ?",
+      "verso": "Ils sont égaux. Dans ABCD, l'angle en A est égal à l'angle en C, et l'angle en B est égal à l'angle en D.",
+      "difficulte": 1,
+      "tags": ["angles-opposes", "propriete"]
+    },
+    {
+      "id": "6E-CH05-013",
+      "lecon": "Les propriétés du parallélogramme",
+      "type": "formule",
+      "recto": "Que vaut la somme de deux angles consécutifs d'un parallélogramme ?",
+      "verso": "Elle vaut $180^{\\circ}$ : ces deux angles sont dits supplémentaires. Dans ABCD, angle A $+$ angle $B = 180^{\\circ}$.",
+      "difficulte": 2,
+      "tags": ["angles-consecutifs", "supplementaires", "propriete"]
+    },
+    {
+      "id": "6E-CH05-014",
+      "lecon": "Les propriétés du parallélogramme",
+      "type": "formule",
+      "recto": "En quel point se coupent les diagonales d'un parallélogramme ?",
+      "verso": "En leur milieu commun O : $OA = OC$ et $OB = OD$ dans le parallélogramme ABCD.",
+      "difficulte": 2,
+      "tags": ["diagonales", "milieu", "propriete"]
+    },
+    {
+      "id": "6E-CH05-015",
+      "lecon": "Les propriétés du parallélogramme",
+      "type": "formule",
+      "recto": "Comment retrouve-t-on une diagonale entière à partir d'une seule demi-diagonale ?",
+      "verso": "On double la demi-diagonale, puisque le point de croisement est le milieu. Si $OR = 4{,}5$ cm, alors $RT = 2 \\times 4{,}5 = 9$ cm.",
+      "difficulte": 2,
+      "tags": ["diagonales", "milieu", "calcul"]
+    },
+    {
+      "id": "6E-CH05-016",
+      "lecon": "Les propriétés du parallélogramme",
+      "type": "definition",
+      "recto": "Quel rôle particulier joue le point de croisement des diagonales d'un parallélogramme ?",
+      "verso": "C'est le centre de symétrie : après un demi-tour autour de ce point, le parallélogramme revient exactement sur lui-même, A venant sur C et B venant sur D.",
+      "difficulte": 2,
+      "tags": ["centre-de-symetrie", "diagonales"]
+    },
+    {
+      "id": "6E-CH05-017",
+      "lecon": "Les propriétés du parallélogramme",
+      "type": "formule",
+      "recto": "Que vaut la somme des quatre angles d'un parallélogramme ?",
+      "verso": "Elle vaut toujours $360^{\\circ}$, car deux angles voisins forment $180^{\\circ}$ et il y a deux paires de ce type.",
+      "difficulte": 2,
+      "tags": ["angles", "somme", "propriete"]
+    },
+    {
+      "id": "6E-CH05-018",
+      "lecon": "Les propriétés du parallélogramme",
+      "type": "formule",
+      "recto": "Pourquoi les diagonales d'un parallélogramme ne sont-elles pas toujours de même longueur ?",
+      "verso": "Parce que la seule chose imposée est qu'elles se coupent en leur milieu. Elles peuvent mesurer $9$ cm et $6$ cm dans le même parallélogramme ; elles ne deviennent égales que dans un rectangle.",
+      "difficulte": 3,
+      "tags": ["diagonales", "piege", "rectangle"]
+    },
+    {
+      "id": "6E-CH05-019",
+      "lecon": "Les propriétés du parallélogramme",
+      "type": "formule",
+      "recto": "Pourquoi deux angles voisins d'un parallélogramme ne sont-ils pas égaux en général ?",
+      "verso": "Parce qu'ils sont supplémentaires et non égaux : leur somme vaut $180^{\\circ}$. Ils ne sont égaux que lorsqu'ils valent tous les deux $90^{\\circ}$.",
+      "difficulte": 3,
+      "tags": ["angles-consecutifs", "piege", "supplementaires"]
+    },
+    {
+      "id": "6E-CH05-020",
+      "lecon": "Les propriétés du parallélogramme",
+      "type": "formule",
+      "recto": "Comment le demi-tour autour du point O explique-t-il les propriétés du parallélogramme ABCD ?",
+      "verso": "Ce demi-tour amène A sur C et B sur D. Le côté [AB] se pose sur [CD], d'où leur égalité ; l'angle en A se pose sur l'angle en C, d'où leur égalité ; et O se trouve à mi-chemin de A et de C.",
+      "difficulte": 3,
+      "tags": ["centre-de-symetrie", "justification"]
+    },
+    {
+      "id": "6E-CH05-021",
+      "lecon": "Construire un parallélogramme",
+      "type": "definition",
+      "recto": "A quoi sert chacun des quatre instruments utilisés pour construire un parallélogramme ?",
+      "verso": "La règle graduée trace les côtés, l'équerre trace une parallèle ou une perpendiculaire, le rapporteur trace un angle donné, le compas reporte une longueur.",
+      "difficulte": 1,
+      "tags": ["instruments", "construction"]
+    },
+    {
+      "id": "6E-CH05-022",
+      "lecon": "Construire un parallélogramme",
+      "type": "formule",
+      "recto": "Par quel tracé commence-t-on la construction d'un parallélogramme dont on connaît deux côtés voisins et l'angle entre eux ?",
+      "verso": "Par le tracé d'un côté à la règle graduée : c'est le seul tracé qui ne dépend de rien d'autre, et le rapporteur a besoin de ce côté pour reporter l'angle.",
+      "difficulte": 2,
+      "tags": ["construction", "ordre"]
+    },
+    {
+      "id": "6E-CH05-023",
+      "lecon": "Construire un parallélogramme",
+      "type": "formule",
+      "recto": "Connaissant les trois sommets A, B et D du parallélogramme ABCD, où se trouve le quatrième sommet C ?",
+      "verso": "Au croisement de la parallèle à (AB) passant par D et de la parallèle à (AD) passant par B. Au compas, C est à la distance AB de D et à la distance AD de B.",
+      "difficulte": 2,
+      "tags": ["construction", "quatrieme-sommet"]
+    },
+    {
+      "id": "6E-CH05-024",
+      "lecon": "Construire un parallélogramme",
+      "type": "formule",
+      "recto": "Comment construit-on un parallélogramme quand on ne connaît que ses deux diagonales ?",
+      "verso": "On place le point O, puis A et C tels que O soit le milieu de [AC], puis B et D tels que O soit le milieu de [BD] sur une autre droite passant par O. On relie enfin A, B, C et D dans l'ordre.",
+      "difficulte": 2,
+      "tags": ["construction", "diagonales"]
+    },
+    {
+      "id": "6E-CH05-025",
+      "lecon": "Construire un parallélogramme",
+      "type": "formule",
+      "recto": "Que contrôle-t-on une fois terminée la construction du parallélogramme ABCD ?",
+      "verso": "A la règle, que $AB = DC$ et $AD = BC$ ; à l'équerre, que (AB) et (DC) sont bien parallèles.",
+      "difficulte": 2,
+      "tags": ["construction", "verification"]
+    },
+    {
+      "id": "6E-CH05-026",
+      "lecon": "Construire un parallélogramme",
+      "type": "formule",
+      "recto": "Pourquoi n'existe-t-il qu'une seule position possible pour le quatrième sommet C ?",
+      "verso": "Parce que C doit être à la fois sur la parallèle à (AB) passant par D et sur la parallèle à (AD) passant par B. Or deux droites non parallèles se croisent en un seul point.",
+      "difficulte": 3,
+      "tags": ["construction", "quatrieme-sommet", "justification"]
+    },
+    {
+      "id": "6E-CH05-027",
+      "lecon": "Construire un parallélogramme",
+      "type": "definition",
+      "recto": "Pourquoi ne faut-il pas reporter la longueur AB à partir de B pour placer le sommet C ?",
+      "verso": "Parce qu'on repart alors dans la mauvaise direction. Le côté opposé à [AB] est [DC] : c'est depuis D qu'il faut reporter la longueur AB.",
+      "difficulte": 3,
+      "tags": ["construction", "piege", "quatrieme-sommet"]
+    },
+    {
+      "id": "6E-CH05-028",
+      "lecon": "Périmètre et aire du parallélogramme",
+      "type": "formule",
+      "recto": "Quelle formule donne le périmètre d'un parallélogramme ?",
+      "verso": "$P = 2 \\times \\left(a + b\\right)$, où $a$ et $b$ sont les longueurs de deux côtés voisins. Les côtés opposés étant égaux, chaque longueur revient deux fois dans le tour.",
+      "difficulte": 1,
+      "tags": ["perimetre", "formule"]
+    },
+    {
+      "id": "6E-CH05-029",
+      "lecon": "Périmètre et aire du parallélogramme",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on la base d'un parallélogramme ?",
+      "verso": "C'est l'un de ses côtés, que l'on choisit librement pour servir d'appui au calcul de l'aire.",
+      "difficulte": 2,
+      "tags": ["base", "vocabulaire"]
+    },
+    {
+      "id": "6E-CH05-030",
+      "lecon": "Périmètre et aire du parallélogramme",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on la hauteur relative à une base d'un parallélogramme ?",
+      "verso": "C'est la distance entre la base et le côté opposé, mesurée perpendiculairement. Ce n'est pas un côté, mais un segment tracé exprès ; un parallélogramme a deux hauteurs, une par paire de côtés opposés.",
+      "difficulte": 2,
+      "tags": ["hauteur", "vocabulaire", "base"]
+    },
+    {
+      "id": "6E-CH05-031",
+      "lecon": "Périmètre et aire du parallélogramme",
+      "type": "formule",
+      "recto": "Quelle formule donne l'aire d'un parallélogramme ?",
+      "verso": "$A =$ base $\\times$ hauteur, en prenant la hauteur qui correspond à la base choisie. L'aire s'exprime en cm$^{2}$ ou en m$^{2}$.",
+      "difficulte": 1,
+      "tags": ["aire", "formule", "hauteur"]
+    },
+    {
+      "id": "6E-CH05-032",
+      "lecon": "Périmètre et aire du parallélogramme",
+      "type": "formule",
+      "recto": "Comment retrouve-t-on la hauteur d'un parallélogramme quand on connaît son aire et sa base ?",
+      "verso": "On divise : hauteur $=$ aire $\\div$ base. De la même façon, base $=$ aire $\\div$ hauteur.",
+      "difficulte": 2,
+      "tags": ["aire", "hauteur", "calcul"]
+    },
+    {
+      "id": "6E-CH05-033",
+      "lecon": "Périmètre et aire du parallélogramme",
+      "type": "formule",
+      "recto": "Pourquoi l'aire d'un parallélogramme se calcule-t-elle comme celle d'un rectangle ?",
+      "verso": "Parce qu'en découpant un triangle sur un côté et en le faisant glisser contre l'autre, on obtient un rectangle de même base et de même hauteur. Rien n'a été ajouté ni enlevé, donc la surface est la même.",
+      "difficulte": 2,
+      "tags": ["aire", "justification", "rectangle"]
+    },
+    {
+      "id": "6E-CH05-034",
+      "lecon": "Périmètre et aire du parallélogramme",
+      "type": "formule",
+      "recto": "En quoi une diagonale partage-t-elle un parallélogramme ?",
+      "verso": "En deux triangles superposables, donc de même aire. Chaque triangle couvre la moitié de la surface du parallélogramme.",
+      "difficulte": 3,
+      "tags": ["diagonale", "aire", "triangle"]
+    },
+    {
+      "id": "6E-CH05-035",
+      "lecon": "Périmètre et aire du parallélogramme",
+      "type": "formule",
+      "recto": "Sur un plan à l'échelle $1$ cm pour $10$ m, par combien multiplie-t-on une aire lue en cm$^{2}$ ?",
+      "verso": "Par $100$, car un carré de $1$ cm de côté représente un carré de $10$ m de côté, dont l'aire vaut $10 \\times 10 = 100$ m$^{2}$. Une longueur, elle, se multiplie seulement par $10$.",
+      "difficulte": 3,
+      "tags": ["echelle", "aire", "plan"]
+    },
+    {
+      "id": "6E-CH05-036",
+      "lecon": "Périmètre et aire du parallélogramme",
+      "type": "formule",
+      "recto": "Pourquoi ne calcule-t-on pas l'aire d'un parallélogramme en multipliant deux côtés voisins ?",
+      "verso": "Parce que le côté penché n'est pas la hauteur : il est toujours plus long qu'elle. Pour une base de $7$ cm et une hauteur de $4$ cm, l'aire vaut $28$ cm$^{2}$, et non $7 \\times 5 = 35$ cm$^{2}$.",
+      "difficulte": 3,
+      "tags": ["aire", "piege", "hauteur"]
+    }
+  ]
+}

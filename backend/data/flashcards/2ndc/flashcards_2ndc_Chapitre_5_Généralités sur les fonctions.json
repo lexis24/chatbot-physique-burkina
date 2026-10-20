@@ -1,0 +1,350 @@
+{
+  "niveau": "2nde C",
+  "chapitre": "Chapitre 5 : Généralités sur les fonctions",
+  "source": "maths/2ndc/Chapitre_5_Generalites_fonctions",
+  "nombre_cartes": 38,
+  "cartes": [
+    {
+      "id": "2C-CH05-001",
+      "lecon": "Décrire une fonction : ensemble de définition, image et antécédent",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on fonction $f$ d'une variable réelle ?",
+      "verso": "C'est un procédé qui, à chaque nombre $x$, associe au plus un nombre noté $f\\left(x\\right)$. On écrit $f : x \\mapsto f\\left(x\\right)$, où $x$ est la variable et $f\\left(x\\right)$ l'image de $x$.",
+      "difficulte": 1,
+      "tags": ["fonction", "definition", "image"]
+    },
+    {
+      "id": "2C-CH05-002",
+      "lecon": "Décrire une fonction : ensemble de définition, image et antécédent",
+      "type": "definition",
+      "recto": "Quelle différence y a-t-il entre l'écriture $f$ et l'écriture $f\\left(x\\right)$ ?",
+      "verso": "La lettre $f$ toute seule désigne la règle de calcul ; $f\\left(x\\right)$ désigne le nombre obtenu en appliquant cette règle à $x$. On parle donc de la fonction $f$, et non de la fonction $f\\left(x\\right)$.",
+      "difficulte": 2,
+      "tags": ["fonction", "notation"]
+    },
+    {
+      "id": "2C-CH05-003",
+      "lecon": "Décrire une fonction : ensemble de définition, image et antécédent",
+      "type": "definition",
+      "recto": "De quelles manières une même fonction peut-elle être décrite ?",
+      "verso": "Par une formule, par un tableau de valeurs, par une courbe tracée dans un repère, ou par une phrase décrivant le procédé. Ce sont quatre visages du même objet mathématique.",
+      "difficulte": 1,
+      "tags": ["fonction", "description"]
+    },
+    {
+      "id": "2C-CH05-004",
+      "lecon": "Décrire une fonction : ensemble de définition, image et antécédent",
+      "type": "formule",
+      "recto": "A quelles conditions le point $M\\left(a\\,;\\,b\\right)$ appartient-il à la courbe représentative de $f$ ?",
+      "verso": "Il faut que $a$ appartienne à l'ensemble de définition de $f$ et que $b = f\\left(a\\right)$. Les deux contrôles sont nécessaires, et l'on oublie presque toujours le premier.",
+      "difficulte": 2,
+      "tags": ["courbe", "appartenance"]
+    },
+    {
+      "id": "2C-CH05-005",
+      "lecon": "Décrire une fonction : ensemble de définition, image et antécédent",
+      "type": "formule",
+      "recto": "Comment reconnaît-on qu'un tracé ne peut pas être la courbe d'une fonction ?",
+      "verso": "On promène une droite verticale le long du tracé : si dans une position elle le rencontre deux fois ou plus, ce n'est pas la courbe d'une fonction, puisqu'un nombre a au plus une image. Un cercle échoue à ce test.",
+      "difficulte": 3,
+      "tags": ["courbe", "unicite", "piege"]
+    },
+    {
+      "id": "2C-CH05-006",
+      "lecon": "Décrire une fonction : ensemble de définition, image et antécédent",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on ensemble de définition d'une fonction $f$ ?",
+      "verso": "C'est l'ensemble, noté $D_{f}$, de tous les nombres $x$ pour lesquels $f\\left(x\\right)$ existe, c'est-à-dire pour lesquels le calcul est possible.",
+      "difficulte": 1,
+      "tags": ["ensemble-definition", "definition"]
+    },
+    {
+      "id": "2C-CH05-007",
+      "lecon": "Décrire une fonction : ensemble de définition, image et antécédent",
+      "type": "formule",
+      "recto": "Quels obstacles limitent l'ensemble de définition d'une fonction en classe de seconde ?",
+      "verso": "Deux seulement : le dénominateur d'un quotient, qui doit être différent de zéro, et l'expression sous une racine carrée, qui doit être positive ou nulle. Sans quotient ni radical, $D_{f} = \\mathbb{R}$.",
+      "difficulte": 2,
+      "tags": ["ensemble-definition", "condition-existence"]
+    },
+    {
+      "id": "2C-CH05-008",
+      "lecon": "Décrire une fonction : ensemble de définition, image et antécédent",
+      "type": "formule",
+      "recto": "Comment combine-t-on plusieurs conditions d'existence pour écrire un ensemble de définition ?",
+      "verso": "On garde les nombres qui les vérifient toutes en même temps, c'est-à-dire l'intersection des ensembles obtenus, et jamais leur réunion. La réponse s'écrit en intervalle ou en réunion d'intervalles.",
+      "difficulte": 2,
+      "tags": ["ensemble-definition", "intersection"]
+    },
+    {
+      "id": "2C-CH05-009",
+      "lecon": "Décrire une fonction : ensemble de définition, image et antécédent",
+      "type": "definition",
+      "recto": "Quelle est la différence entre l'image de $a$ et un antécédent de $b$ par une fonction $f$ ?",
+      "verso": "L'image de $a$ est le nombre $f\\left(a\\right)$, obtenu par un calcul direct. Un antécédent de $b$ est un nombre $x$ tel que $f\\left(x\\right) = b$, obtenu en résolvant une équation. L'image se calcule, l'antécédent se cherche.",
+      "difficulte": 2,
+      "tags": ["image", "antecedent", "distinction"]
+    },
+    {
+      "id": "2C-CH05-010",
+      "lecon": "Décrire une fonction : ensemble de définition, image et antécédent",
+      "type": "formule",
+      "recto": "Combien d'antécédents un nombre $b$ peut-il avoir par une fonction ?",
+      "verso": "Un, plusieurs, ou aucun. Avec $f\\left(x\\right) = x^{2}$, le nombre $9$ a deux antécédents, $-3$ et $3$, alors que $-9$ n'en a aucun. En revanche un nombre du domaine n'a jamais qu'une seule image.",
+      "difficulte": 2,
+      "tags": ["antecedent", "image"]
+    },
+    {
+      "id": "2C-CH05-011",
+      "lecon": "Lecture d'un graphique : image réciproque et extrema",
+      "type": "formule",
+      "recto": "Comment lit-on $f\\left(a\\right)$ sur la courbe d'une fonction ?",
+      "verso": "On part de $a$ sur l'axe des abscisses, on se déplace verticalement jusqu'à rencontrer la courbe, puis horizontalement jusqu'à l'axe des ordonnées : le nombre lu est $f\\left(a\\right)$.",
+      "difficulte": 2,
+      "tags": ["lecture-graphique", "image"]
+    },
+    {
+      "id": "2C-CH05-012",
+      "lecon": "Lecture d'un graphique : image réciproque et extrema",
+      "type": "formule",
+      "recto": "Comment lit-on sur une courbe tous les antécédents d'un nombre $b$ ?",
+      "verso": "On trace l'horizontale d'équation $y = b$ et l'on note l'abscisse de chaque point où elle coupe la courbe. Il faut relever toutes les intersections : il peut y en avoir zéro, une, deux ou davantage.",
+      "difficulte": 2,
+      "tags": ["lecture-graphique", "antecedent"]
+    },
+    {
+      "id": "2C-CH05-013",
+      "lecon": "Lecture d'un graphique : image réciproque et extrema",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on image de l'intervalle $\\left[a\\,;\\,b\\right]$ par une fonction $f$ ?",
+      "verso": "C'est l'ensemble de toutes les images $f\\left(x\\right)$ obtenues lorsque $x$ parcourt $\\left[a\\,;\\,b\\right]$. C'est donc un ensemble d'ordonnées, que l'on lit en projetant la portion de courbe sur l'axe vertical.",
+      "difficulte": 2,
+      "tags": ["image-intervalle", "ordonnees"]
+    },
+    {
+      "id": "2C-CH05-014",
+      "lecon": "Lecture d'un graphique : image réciproque et extrema",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on image réciproque de l'intervalle $\\left[c\\,;\\,d\\right]$ par une fonction $f$ ?",
+      "verso": "C'est l'ensemble, noté $f^{-1}\\left(\\left[c\\,;\\,d\\right]\\right)$, de tous les $x$ dont l'image appartient à $\\left[c\\,;\\,d\\right]$. C'est un ensemble d'abscisses, et aucune division n'intervient dans sa recherche.",
+      "difficulte": 2,
+      "tags": ["image-reciproque", "abscisses"]
+    },
+    {
+      "id": "2C-CH05-015",
+      "lecon": "Lecture d'un graphique : image réciproque et extrema",
+      "type": "formule",
+      "recto": "Que vaut $f\\left(\\left[a\\,;\\,b\\right]\\right)$ lorsque $f$ est croissante sur $\\left[a\\,;\\,b\\right]$ ?",
+      "verso": "C'est l'intervalle $\\left[f\\left(a\\right)\\,;\\,f\\left(b\\right)\\right]$, car les images vont de $f\\left(a\\right)$ à $f\\left(b\\right)$ sans jamais reculer. Si $f$ est décroissante, les bornes s'échangent.",
+      "difficulte": 2,
+      "tags": ["image-intervalle", "monotonie"]
+    },
+    {
+      "id": "2C-CH05-016",
+      "lecon": "Lecture d'un graphique : image réciproque et extrema",
+      "type": "formule",
+      "recto": "Quelles sont les deux conditions pour qu'un nombre $M$ soit le maximum de $f$ sur un intervalle $I$ ?",
+      "verso": "Il faut $f\\left(x\\right) \\le M$ pour tout $x$ de $I$, et il faut qu'il existe au moins un $x_{0}$ de $I$ tel que $f\\left(x_{0}\\right) = M$, autrement dit que la valeur $M$ soit atteinte.",
+      "difficulte": 2,
+      "tags": ["maximum", "extremum"]
+    },
+    {
+      "id": "2C-CH05-017",
+      "lecon": "Lecture d'un graphique : image réciproque et extrema",
+      "type": "definition",
+      "recto": "Pourquoi l'inégalité $f\\left(x\\right) \\le 6$ pour tout $x$ ne suffit-elle pas à faire de $6$ le maximum de $f$ ?",
+      "verso": "Parce que la valeur doit aussi être atteinte : sans cela, $6$ n'est qu'un majorant. Pour $x \\mapsto -x^{2}$, on a bien $f\\left(x\\right) \\le 7$, mais le maximum vaut $0$, atteint en $x = 0$.",
+      "difficulte": 3,
+      "tags": ["maximum", "majorant", "piege"]
+    },
+    {
+      "id": "2C-CH05-018",
+      "lecon": "Sens de variation d'une fonction",
+      "type": "definition",
+      "recto": "Que signifie qu'une fonction $f$ est croissante sur un intervalle $I$ ?",
+      "verso": "Elle conserve l'ordre : pour tous $a$ et $b$ de $I$, $a < b$ entraîne $f\\left(a\\right) \\le f\\left(b\\right)$. Elle est strictement croissante lorsque $a < b$ entraîne $f\\left(a\\right) < f\\left(b\\right)$.",
+      "difficulte": 1,
+      "tags": ["croissante", "definition"]
+    },
+    {
+      "id": "2C-CH05-019",
+      "lecon": "Sens de variation d'une fonction",
+      "type": "definition",
+      "recto": "Que signifie qu'une fonction $f$ est décroissante sur un intervalle $I$ ?",
+      "verso": "Elle inverse l'ordre : pour tous $a$ et $b$ de $I$, $a < b$ entraîne $f\\left(a\\right) \\ge f\\left(b\\right)$. Elle est strictement décroissante lorsque $a < b$ entraîne $f\\left(a\\right) > f\\left(b\\right)$.",
+      "difficulte": 1,
+      "tags": ["decroissante", "definition"]
+    },
+    {
+      "id": "2C-CH05-020",
+      "lecon": "Sens de variation d'une fonction",
+      "type": "definition",
+      "recto": "Que veut dire qu'une fonction est monotone sur un intervalle ?",
+      "verso": "Cela veut dire qu'elle y est croissante, ou bien qu'elle y est décroissante, sans changer de sens de variation sur cet intervalle.",
+      "difficulte": 1,
+      "tags": ["monotone", "definition"]
+    },
+    {
+      "id": "2C-CH05-021",
+      "lecon": "Sens de variation d'une fonction",
+      "type": "definition",
+      "recto": "Pourquoi est-il faux de dire que la fonction carré est croissante, sans autre précision ?",
+      "verso": "Parce que le sens de variation se précise toujours sur un intervalle : $x \\mapsto x^{2}$ est décroissante sur $\\left]-\\infty\\,;\\,0\\right]$ et croissante sur $\\left[0\\,;\\,+\\infty\\right[$. Ainsi $-3 < -1$, mais $9 > 1$.",
+      "difficulte": 3,
+      "tags": ["variation", "intervalle", "piege"]
+    },
+    {
+      "id": "2C-CH05-022",
+      "lecon": "Sens de variation d'une fonction",
+      "type": "formule",
+      "recto": "Quelle quantité étudie-t-on pour démontrer le sens de variation d'une fonction sur un intervalle ?",
+      "verso": "Le signe de la différence $f\\left(b\\right) - f\\left(a\\right)$, pour deux nombres quelconques $a$ et $b$ de l'intervalle tels que $a < b$. Toujours positive, la fonction est strictement croissante ; toujours négative, elle est strictement décroissante.",
+      "difficulte": 2,
+      "tags": ["variation", "difference", "methode"]
+    },
+    {
+      "id": "2C-CH05-023",
+      "lecon": "Sens de variation d'une fonction",
+      "type": "formule",
+      "recto": "De quoi dépend le sens de variation d'une fonction affine $x \\mapsto ax + b$ ?",
+      "verso": "Du seul coefficient directeur $a$ : la fonction est strictement croissante si $a > 0$, strictement décroissante si $a < 0$, et constante si $a = 0$. Ni $b$ ni l'intervalle choisi n'interviennent.",
+      "difficulte": 2,
+      "tags": ["fonction-affine", "variation"]
+    },
+    {
+      "id": "2C-CH05-024",
+      "lecon": "Sens de variation d'une fonction",
+      "type": "formule",
+      "recto": "Comment comparer $f\\left(a\\right)$ et $f\\left(b\\right)$ sans calculer ces deux nombres ?",
+      "verso": "On utilise la monotonie : si $f$ est croissante sur un intervalle contenant $a$ et $b$, alors $a < b$ donne $f\\left(a\\right) \\le f\\left(b\\right)$ ; si $f$ y est décroissante, l'ordre est inversé.",
+      "difficulte": 2,
+      "tags": ["monotonie", "comparaison"]
+    },
+    {
+      "id": "2C-CH05-025",
+      "lecon": "Sens de variation d'une fonction",
+      "type": "formule",
+      "recto": "Quelle condition deux nombres doivent-ils remplir pour que le sens de variation permette de comparer leurs images ?",
+      "verso": "Ils doivent appartenir au même intervalle de monotonie. Avec la fonction carré, $-3 < 1$ ne permet aucune conclusion, car $-3$ est dans l'intervalle de décroissance et $1$ dans celui de croissance.",
+      "difficulte": 3,
+      "tags": ["monotonie", "comparaison", "condition"]
+    },
+    {
+      "id": "2C-CH05-026",
+      "lecon": "Sens de variation d'une fonction",
+      "type": "definition",
+      "recto": "Que contient le tableau de variation d'une fonction ?",
+      "verso": "Une ligne des $x$ portant les abscisses remarquables rangées dans l'ordre croissant, et une ligne de flèches, montantes pour la croissance et descendantes pour la décroissance, avec les valeurs de la fonction aux extrémités de chaque flèche.",
+      "difficulte": 2,
+      "tags": ["tableau-variation", "lecture"]
+    },
+    {
+      "id": "2C-CH05-027",
+      "lecon": "Parité d'une fonction",
+      "type": "definition",
+      "recto": "Quand dit-on qu'un ensemble $D$ est symétrique par rapport à $0$ ?",
+      "verso": "Lorsque, pour tout $x$ de $D$, le nombre $-x$ appartient aussi à $D$. Ainsi $\\mathbb{R}$, $\\left[-5\\,;\\,5\\right]$ et $\\mathbb{R}^{*}$ sont symétriques, alors que $\\left[0\\,;\\,+\\infty\\right[$ ne l'est pas.",
+      "difficulte": 2,
+      "tags": ["domaine-symetrique", "definition"]
+    },
+    {
+      "id": "2C-CH05-028",
+      "lecon": "Parité d'une fonction",
+      "type": "formule",
+      "recto": "Quand une fonction $f$ est-elle paire ?",
+      "verso": "Lorsque $D_{f}$ est symétrique par rapport à $0$ et que $f\\left(-x\\right) = f\\left(x\\right)$ pour tout $x$ de $D_{f}$. Sa courbe est alors symétrique par rapport à l'axe des ordonnées.",
+      "difficulte": 1,
+      "tags": ["paire", "definition", "symetrie"]
+    },
+    {
+      "id": "2C-CH05-029",
+      "lecon": "Parité d'une fonction",
+      "type": "formule",
+      "recto": "Quand une fonction $f$ est-elle impaire ?",
+      "verso": "Lorsque $D_{f}$ est symétrique par rapport à $0$ et que $f\\left(-x\\right) = -f\\left(x\\right)$ pour tout $x$ de $D_{f}$. Sa courbe est alors symétrique par rapport à l'origine du repère.",
+      "difficulte": 1,
+      "tags": ["impaire", "definition", "symetrie"]
+    },
+    {
+      "id": "2C-CH05-030",
+      "lecon": "Parité d'une fonction",
+      "type": "definition",
+      "recto": "Que conclut-on lorsque l'ensemble de définition d'une fonction n'est pas symétrique par rapport à $0$ ?",
+      "verso": "Que la fonction n'est ni paire ni impaire, et il devient inutile de calculer $f\\left(-x\\right)$. Pour $f\\left(x\\right) = \\sqrt{x}$, écrire $f\\left(-4\\right) = f\\left(4\\right)$ n'a aucun sens, car $-4$ n'a pas d'image.",
+      "difficulte": 3,
+      "tags": ["parite", "domaine-symetrique", "piege"]
+    },
+    {
+      "id": "2C-CH05-031",
+      "lecon": "Parité d'une fonction",
+      "type": "formule",
+      "recto": "Que vaut $f\\left(0\\right)$ lorsqu'une fonction impaire est définie en $0$ ?",
+      "verso": "Elle vaut $0$, car l'égalité $f\\left(0\\right) = -f\\left(0\\right)$ ne laisse pas d'autre possibilité. La courbe d'une fonction impaire définie en $0$ passe donc par l'origine.",
+      "difficulte": 3,
+      "tags": ["impaire", "origine"]
+    },
+    {
+      "id": "2C-CH05-032",
+      "lecon": "Parité d'une fonction",
+      "type": "definition",
+      "recto": "Comment justifie-t-on qu'une fonction de domaine symétrique n'est ni paire ni impaire ?",
+      "verso": "Par un contre-exemple chiffré : pour $u\\left(x\\right) = x^{2} + x$, on a $u\\left(1\\right) = 2$ et $u\\left(-1\\right) = 0$, deux nombres qui ne sont ni égaux ni opposés.",
+      "difficulte": 2,
+      "tags": ["parite", "contre-exemple"]
+    },
+    {
+      "id": "2C-CH05-033",
+      "lecon": "Parité d'une fonction",
+      "type": "formule",
+      "recto": "Comment complète-t-on la courbe d'une fonction paire connue pour $x \\ge 0$ ?",
+      "verso": "A chaque point $M\\left(x\\,;\\,y\\right)$ déjà tracé, on ajoute le point $M'\\left(-x\\,;\\,y\\right)$ : on garde l'ordonnée et on change le signe de l'abscisse. Pour une fonction impaire, on change les deux signes.",
+      "difficulte": 2,
+      "tags": ["parite", "courbe", "symetrie"]
+    },
+    {
+      "id": "2C-CH05-034",
+      "lecon": "Périodicité d'une fonction",
+      "type": "formule",
+      "recto": "Quand dit-on qu'une fonction $f$ est périodique de période $T$ ?",
+      "verso": "Lorsque $T > 0$ et que, pour tout $x$ de $D_{f}$, le nombre $x + T$ appartient encore à $D_{f}$ et vérifie $f\\left(x + T\\right) = f\\left(x\\right)$.",
+      "difficulte": 1,
+      "tags": ["periodique", "definition"]
+    },
+    {
+      "id": "2C-CH05-035",
+      "lecon": "Périodicité d'une fonction",
+      "type": "formule",
+      "recto": "Que vaut $f\\left(x + kT\\right)$ pour une fonction périodique de période $T$ et un entier $k$ ?",
+      "verso": "Cette valeur est égale à $f\\left(x\\right)$, l'entier $k$ pouvant être positif ou négatif : on peut donc avancer ou reculer d'autant de périodes qu'on le souhaite.",
+      "difficulte": 2,
+      "tags": ["periodique", "multiple-periode"]
+    },
+    {
+      "id": "2C-CH05-036",
+      "lecon": "Périodicité d'une fonction",
+      "type": "definition",
+      "recto": "Pourquoi l'égalité $f\\left(0\\right) = f\\left(2\\right)$ ne prouve-t-elle pas qu'une fonction est périodique de période $2$ ?",
+      "verso": "Parce que deux valeurs égales peuvent se produire par hasard : il faut établir $f\\left(x + 2\\right) = f\\left(x\\right)$ pour tout $x$ du domaine. Une période est de plus un nombre strictement positif.",
+      "difficulte": 3,
+      "tags": ["periodique", "piege"]
+    },
+    {
+      "id": "2C-CH05-037",
+      "lecon": "Périodicité d'une fonction",
+      "type": "formule",
+      "recto": "Comment la courbe d'une fonction périodique de période $T$ se déduit-elle de son motif ?",
+      "verso": "La portion de courbe correspondant à un intervalle de longueur $T$, appelée motif, se reproduit identique à elle-même par translations horizontales de $T$, de $2T$, et ainsi de suite, vers la droite comme vers la gauche.",
+      "difficulte": 2,
+      "tags": ["periodique", "motif", "translation"]
+    },
+    {
+      "id": "2C-CH05-038",
+      "lecon": "Périodicité d'une fonction",
+      "type": "formule",
+      "recto": "Comment calcule-t-on l'image d'un nombre situé hors du motif d'une fonction périodique ?",
+      "verso": "On ajoute ou on retranche la période autant de fois qu'il le faut pour ramener ce nombre dans l'intervalle où la fonction est connue, puis on y applique la formule connue.",
+      "difficulte": 2,
+      "tags": ["periodique", "motif", "calcul"]
+    }
+  ]
+}

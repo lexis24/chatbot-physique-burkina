@@ -1,0 +1,350 @@
+{
+  "niveau": "Terminale D",
+  "chapitre": "Chapitre 2 : Limites et continuité",
+  "source": "maths/tleD/Chapitre_2_Limites_continuite",
+  "nombre_cartes": 38,
+  "cartes": [
+    {
+      "id": "TD-CH02-001",
+      "lecon": "Continuité et prolongement par continuité",
+      "type": "definition",
+      "recto": "Que signifie l'affirmation « $f$ est continue en $a$ » ?",
+      "verso": "Que $f$ est définie en $a$ et que $\\displaystyle\\lim_{x\\to a}f(x)=f(a)$ : la fonction tend en $a$ vers sa propre image. Graphiquement, la courbe ne présente en ce point ni saut ni trou.",
+      "difficulte": 1,
+      "tags": ["continuite", "definition"]
+    },
+    {
+      "id": "TD-CH02-002",
+      "lecon": "Continuité et prolongement par continuité",
+      "type": "formule",
+      "recto": "Quels trois nombres compare-t-on pour établir la continuité en un point de raccordement ?",
+      "verso": "La limite à gauche $\\displaystyle\\lim_{x\\to a^-}f(x)$, la limite à droite $\\displaystyle\\lim_{x\\to a^+}f(x)$ et l'image $f(a)$. La fonction est continue en $a$ si et seulement si ces trois nombres sont égaux ; sinon la courbe fait un saut.",
+      "difficulte": 2,
+      "tags": ["continuite", "raccordement", "limites-laterales"]
+    },
+    {
+      "id": "TD-CH02-003",
+      "lecon": "Continuité et prolongement par continuité",
+      "type": "formule",
+      "recto": "Sur quels ensembles les fonctions usuelles sont-elles continues ?",
+      "verso": "Les polynômes, les fonctions rationnelles, la racine carrée, le sinus, le cosinus, la tangente et la valeur absolue sont continus sur tout intervalle de leur ensemble de définition. Une somme, un produit, un quotient à dénominateur non nul et une composée de fonctions continues le sont aussi.",
+      "difficulte": 1,
+      "tags": ["continuite", "fonctions-usuelles"]
+    },
+    {
+      "id": "TD-CH02-004",
+      "lecon": "Continuité et prolongement par continuité",
+      "type": "formule",
+      "recto": "Quel lien y a-t-il entre dérivabilité et continuité sur un intervalle ?",
+      "verso": "Toute fonction dérivable sur $I$ y est continue, résultat admis. La réciproque est fausse : $x\\mapsto|x|$ est continue en $0$ sans y être dérivable. La contraposée est commode : une fonction non continue en un point n'y est certainement pas dérivable.",
+      "difficulte": 2,
+      "tags": ["derivabilite", "continuite", "implication"]
+    },
+    {
+      "id": "TD-CH02-005",
+      "lecon": "Continuité et prolongement par continuité",
+      "type": "definition",
+      "recto": "Pourquoi la fonction valeur absolue n'est-elle pas dérivable en $0$ ?",
+      "verso": "Parce que son taux d'accroissement $\\dfrac{|x|}{x}$ vaut $1$ pour $x>0$ et $-1$ pour $x<0$ : les deux limites latérales existent mais diffèrent, donc le taux n'a pas de limite en $0$. La courbe forme un point anguleux, sans tangente unique.",
+      "difficulte": 2,
+      "tags": ["valeur-absolue", "derivabilite", "point-anguleux"]
+    },
+    {
+      "id": "TD-CH02-006",
+      "lecon": "Continuité et prolongement par continuité",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on le prolongement par continuité de $f$ en $a$ ?",
+      "verso": "Lorsque $f$ n'est pas définie en $a$ mais y admet une limite finie $\\ell$, c'est la fonction $g$ égale à $f$ sur le domaine de $f$ et telle que $g(a)=\\ell$ ; elle est continue en $a$. La valeur $\\ell$ est la seule possible, d'où l'article défini.",
+      "difficulte": 2,
+      "tags": ["prolongement", "continuite", "limite-finie"]
+    },
+    {
+      "id": "TD-CH02-007",
+      "lecon": "Continuité et prolongement par continuité",
+      "type": "definition",
+      "recto": "Dans quel cas aucun prolongement par continuité n'est-il possible en $a$ ?",
+      "verso": "Lorsque la limite en $a$ est infinie, ou lorsque les deux limites latérales diffèrent : aucun réel ne peut alors être posé comme valeur en $a$. C'est le cas de $x\\mapsto\\dfrac{1}{x}$ en $0$ : un trou se comble, une asymptote jamais.",
+      "difficulte": 2,
+      "tags": ["prolongement", "impossible", "asymptote-verticale"]
+    },
+    {
+      "id": "TD-CH02-008",
+      "lecon": "Continuité et prolongement par continuité",
+      "type": "definition",
+      "recto": "Pourquoi ne dit-on pas d'une fonction qu'elle est discontinue en un point où elle n'est pas définie ?",
+      "verso": "Parce que la continuité en $a$ suppose d'abord que $f(a)$ existe : si $a$ n'appartient pas au domaine, la question ne se pose pas et l'on cherche seulement s'il existe un prolongement. Ce sont deux situations distinctes, qui appellent deux réponses distinctes.",
+      "difficulte": 3,
+      "tags": ["continuite", "domaine", "piege"]
+    },
+    {
+      "id": "TD-CH02-009",
+      "lecon": "Valeurs intermédiaires et bijection",
+      "type": "formule",
+      "recto": "Qu'affirme le théorème des valeurs intermédiaires ?",
+      "verso": "Si $f$ est continue sur $[a\\,;b]$, alors pour tout réel $k$ compris entre $f(a)$ et $f(b)$ il existe au moins un réel $c$ de $[a\\,;b]$ tel que $f(c)=k$. Une fonction continue prend donc toutes les valeurs situées entre deux de ses images.",
+      "difficulte": 1,
+      "tags": ["tvi", "continuite", "theoreme"]
+    },
+    {
+      "id": "TD-CH02-010",
+      "lecon": "Valeurs intermédiaires et bijection",
+      "type": "formule",
+      "recto": "Que donne le théorème des valeurs intermédiaires quand $f(a)$ et $f(b)$ sont de signes contraires ?",
+      "verso": "Si $f$ est continue sur $[a\\,;b]$, l'équation $f(x)=0$ admet alors au moins une solution dans $]a\\,;b[$. C'est le cas particulier $k=0$ du théorème, et de loin le plus employé au baccalauréat.",
+      "difficulte": 1,
+      "tags": ["tvi", "equation", "signe"]
+    },
+    {
+      "id": "TD-CH02-011",
+      "lecon": "Valeurs intermédiaires et bijection",
+      "type": "definition",
+      "recto": "Pourquoi le théorème des valeurs intermédiaires ne suffit-il pas à prouver qu'une solution est unique ?",
+      "verso": "Parce qu'il n'affirme que l'existence d'au moins une solution : $x\\mapsto x^{3}-3x+1$ est continue et s'annule trois fois. C'est la stricte monotonie qui apporte l'unicité, et une rédaction complète cite toujours les deux justifications.",
+      "difficulte": 3,
+      "tags": ["tvi", "unicite", "piege"]
+    },
+    {
+      "id": "TD-CH02-012",
+      "lecon": "Valeurs intermédiaires et bijection",
+      "type": "definition",
+      "recto": "Pourquoi le théorème des valeurs intermédiaires ne s'applique-t-il pas à $x\\mapsto\\dfrac{1}{x}$ sur $\\mathbb{R}^{*}$ ?",
+      "verso": "Parce que $\\mathbb{R}^{*}$ n'est pas un intervalle, mais la réunion de deux intervalles. La fonction y est continue, vaut $-1$ en $-1$ et $1$ en $1$, et ne prend pourtant jamais la valeur $0$ : il n'y a là aucune contradiction.",
+      "difficulte": 3,
+      "tags": ["tvi", "intervalle", "piege"]
+    },
+    {
+      "id": "TD-CH02-013",
+      "lecon": "Valeurs intermédiaires et bijection",
+      "type": "definition",
+      "recto": "Quand dit-on qu'une application $f$ de $A$ dans $B$ est bijective ?",
+      "verso": "Lorsque tout élément de $B$ admet un unique antécédent dans $A$. On dit alors que $f$ est une bijection de $A$ dans $B$.",
+      "difficulte": 1,
+      "tags": ["bijection", "definition"]
+    },
+    {
+      "id": "TD-CH02-014",
+      "lecon": "Valeurs intermédiaires et bijection",
+      "type": "formule",
+      "recto": "Qu'affirme le corollaire du théorème des valeurs intermédiaires pour une fonction strictement monotone ?",
+      "verso": "Si $f$ est continue et strictement monotone sur $[a\\,;b]$, elle réalise une bijection de $[a\\,;b]$ sur $[f(a)\\,;f(b)]$, ou sur $[f(b)\\,;f(a)]$ si elle décroît : pour tout $k$ compris entre $f(a)$ et $f(b)$, l'équation $f(x)=k$ a une solution et une seule.",
+      "difficulte": 1,
+      "tags": ["corollaire", "bijection", "unicite"]
+    },
+    {
+      "id": "TD-CH02-015",
+      "lecon": "Valeurs intermédiaires et bijection",
+      "type": "formule",
+      "recto": "Comment applique-t-on ce corollaire sur un intervalle ouvert ou non borné ?",
+      "verso": "On remplace les images aux bornes par les limites correspondantes. Sur $]a\\,;b[$, on compare $k$ à $\\displaystyle\\lim_{x\\to a^+}f(x)$ et à $\\displaystyle\\lim_{x\\to b^-}f(x)$, puis on conclut de la même manière.",
+      "difficulte": 2,
+      "tags": ["corollaire", "limites", "bornes"]
+    },
+    {
+      "id": "TD-CH02-016",
+      "lecon": "Valeurs intermédiaires et bijection",
+      "type": "formule",
+      "recto": "Pourquoi la stricte monotonie interdit-elle deux solutions distinctes à l'équation $f(x)=k$ ?",
+      "verso": "Par l'absurde : si $c$ et $c'$ étaient deux solutions avec $c<c'$, la stricte croissance donnerait $f(c)<f(c')$, c'est-à-dire $k<k$, ce qui est impossible. Le théorème fournit au moins une solution, cet argument au plus une, d'où exactement une.",
+      "difficulte": 3,
+      "tags": ["unicite", "absurde", "monotonie"]
+    },
+    {
+      "id": "TD-CH02-017",
+      "lecon": "Valeurs intermédiaires et bijection",
+      "type": "formule",
+      "recto": "Comment traite-t-on l'équation $f(x)=k$ lorsque $f$ n'est pas monotone sur tout l'intervalle ?",
+      "verso": "On découpe l'intervalle en intervalles de monotonie, lus dans le tableau de variations, puis on applique le corollaire sur chacun d'eux. Le nombre total de solutions est la somme de celles trouvées sur chaque morceau.",
+      "difficulte": 2,
+      "tags": ["monotonie", "decoupage", "solutions"]
+    },
+    {
+      "id": "TD-CH02-018",
+      "lecon": "Valeurs intermédiaires et bijection",
+      "type": "formule",
+      "recto": "Quelle est l'image d'un intervalle par une fonction continue ?",
+      "verso": "C'est encore un intervalle. Si de plus $f$ est strictement monotone, ses bornes se lisent sur celles de l'intervalle de départ : par exemple $f\\left([a\\,;b]\\right)=[f(a)\\,;f(b)]$ lorsque $f$ est croissante.",
+      "difficulte": 2,
+      "tags": ["image-dun-intervalle", "continuite"]
+    },
+    {
+      "id": "TD-CH02-019",
+      "lecon": "Valeurs intermédiaires et bijection",
+      "type": "formule",
+      "recto": "Quelles deux règles permettent de reconstituer l'image d'un intervalle par une fonction strictement monotone ?",
+      "verso": "Une borne fermée reste fermée et donne une image ; une borne ouverte reste ouverte et donne une limite. Et une fonction décroissante renverse l'ordre : la borne de gauche du départ fournit la borne de droite de l'image.",
+      "difficulte": 2,
+      "tags": ["image-dun-intervalle", "monotonie", "bornes"]
+    },
+    {
+      "id": "TD-CH02-020",
+      "lecon": "Valeurs intermédiaires et bijection",
+      "type": "formule",
+      "recto": "Quelles propriétés possède la bijection réciproque d'une fonction continue et strictement monotone ?",
+      "verso": "Si $f$ est une bijection de $K$ sur $L=f(K)$, alors $f^{-1}$ est continue et strictement monotone sur $L$, et de même sens de variation que $f$ : la réciproque d'une fonction croissante est croissante, et non décroissante.",
+      "difficulte": 2,
+      "tags": ["bijection-reciproque", "monotonie"]
+    },
+    {
+      "id": "TD-CH02-021",
+      "lecon": "Valeurs intermédiaires et bijection",
+      "type": "formule",
+      "recto": "Comment obtient-on une valeur de $f^{-1}$ sans chercher son expression ?",
+      "verso": "Par l'équivalence $y=f(x)\\iff x=f^{-1}(y)$ : la réciproque ne fait que lire le tableau à l'envers, donc $f(1)=4$ donne aussitôt $f^{-1}(4)=1$. Les courbes de $f$ et de $f^{-1}$ sont symétriques par rapport à la droite d'équation $y=x$.",
+      "difficulte": 2,
+      "tags": ["bijection-reciproque", "antecedent", "symetrie"]
+    },
+    {
+      "id": "TD-CH02-022",
+      "lecon": "Limites : énoncés admis et calculs",
+      "type": "formule",
+      "recto": "Quelles sont les limites de $x^{n}$ en $+\\infty$ et en $-\\infty$, pour $n$ entier naturel non nul ?",
+      "verso": "En $+\\infty$, $x^{n}$ tend vers $+\\infty$. En $-\\infty$, elle tend vers $+\\infty$ si $n$ est pair et vers $-\\infty$ si $n$ est impair : une puissance paire efface le signe, une puissance impaire le conserve.",
+      "difficulte": 1,
+      "tags": ["limites-de-reference", "parite"]
+    },
+    {
+      "id": "TD-CH02-023",
+      "lecon": "Limites : énoncés admis et calculs",
+      "type": "formule",
+      "recto": "Quelles sont les limites de $\\dfrac{1}{x^{n}}$ à l'infini, en $0^{+}$ et en $0^{-}$ ?",
+      "verso": "En $+\\infty$ comme en $-\\infty$, elle tend vers $0$. En $0^{+}$, elle tend vers $+\\infty$. En $0^{-}$, elle tend vers $+\\infty$ si $n$ est pair et vers $-\\infty$ si $n$ est impair.",
+      "difficulte": 2,
+      "tags": ["limites-de-reference", "parite"]
+    },
+    {
+      "id": "TD-CH02-024",
+      "lecon": "Limites : énoncés admis et calculs",
+      "type": "formule",
+      "recto": "Quelles sont les trois limites trigonométriques de référence en $0$ ?",
+      "verso": "$\\displaystyle\\lim_{x\\to 0}\\dfrac{\\sin x}{x}=1$, $\\displaystyle\\lim_{x\\to 0}\\dfrac{\\tan x}{x}=1$ et $\\displaystyle\\lim_{x\\to 0}\\dfrac{\\cos x-1}{x}=0$. Elles ne valent qu'en $0$ ; pour $\\dfrac{\\sin kx}{x}$, on fabrique l'argument en écrivant $k\\times\\dfrac{\\sin kx}{kx}$.",
+      "difficulte": 1,
+      "tags": ["limites-trigonometriques", "reference"]
+    },
+    {
+      "id": "TD-CH02-025",
+      "lecon": "Limites : énoncés admis et calculs",
+      "type": "formule",
+      "recto": "Qu'affirme le théorème d'encadrement, dit théorème des gendarmes ?",
+      "verso": "Si $g(x)\\le f(x)\\le h(x)$ au voisinage de $a$ et si $g$ et $h$ ont la même limite $\\ell$, alors $f$ admet aussi la limite $\\ell$. C'est le recours dès qu'une fonction bornée mais sans limite, comme le sinus, empêche tout calcul direct.",
+      "difficulte": 1,
+      "tags": ["gendarmes", "encadrement"]
+    },
+    {
+      "id": "TD-CH02-026",
+      "lecon": "Limites : énoncés admis et calculs",
+      "type": "formule",
+      "recto": "Qu'affirme le théorème de comparaison pour une limite infinie ?",
+      "verso": "Si $f(x)\\le g(x)$ au voisinage de $a$ et si $f$ tend vers $+\\infty$, alors $g$ tend elle aussi vers $+\\infty$, et symétriquement avec $-\\infty$. Ainsi l'inégalité $x+\\sin x\\ge x-1$ suffit à conclure que $x+\\sin x$ tend vers $+\\infty$.",
+      "difficulte": 2,
+      "tags": ["comparaison", "limite-infinie"]
+    },
+    {
+      "id": "TD-CH02-027",
+      "lecon": "Limites : énoncés admis et calculs",
+      "type": "formule",
+      "recto": "Qu'affirme le théorème dit de l'écart majoré ?",
+      "verso": "Si $\\left|f(x)-\\ell\\right|\\le u(x)$ au voisinage de $a$ et si $u$ tend vers $0$, alors $f$ tend vers $\\ell$. On majore ici la distance à la limite, au lieu d'encadrer la fonction elle-même.",
+      "difficulte": 2,
+      "tags": ["ecart-majore", "limite"]
+    },
+    {
+      "id": "TD-CH02-028",
+      "lecon": "Limites : énoncés admis et calculs",
+      "type": "formule",
+      "recto": "Comment calcule-t-on la limite d'une fonction composée $v\\left(u(x)\\right)$ ?",
+      "verso": "Si $u(x)$ tend vers $b$ quand $x$ tend vers $a$, et si $v(X)$ tend vers $\\ell$ quand $X$ tend vers $b$, alors $v\\left(u(x)\\right)$ tend vers $\\ell$. C'est ce qui autorise le changement de variable : poser $u=\\dfrac{1}{x}$ ramène une limite en $+\\infty$ à une limite en $0$.",
+      "difficulte": 2,
+      "tags": ["composee", "changement-de-variable"]
+    },
+    {
+      "id": "TD-CH02-029",
+      "lecon": "Limites : énoncés admis et calculs",
+      "type": "formule",
+      "recto": "Que peut-on affirmer d'une fonction croissante et majorée sur $[a\\,;b[$ ?",
+      "verso": "Qu'elle admet une limite finie en $b$, que cette borne soit finie ou infinie. De même, une fonction décroissante et minorée admet une limite finie. Ce théorème garantit l'existence de la limite sans en donner la valeur.",
+      "difficulte": 2,
+      "tags": ["croissante-majoree", "convergence"]
+    },
+    {
+      "id": "TD-CH02-030",
+      "lecon": "Limites : énoncés admis et calculs",
+      "type": "definition",
+      "recto": "Quelles sont les quatre formes indéterminées ?",
+      "verso": "$\\infty-\\infty$, $0\\times\\infty$, $\\dfrac{0}{0}$ et $\\dfrac{\\infty}{\\infty}$. Indéterminée ne veut pas dire impossible : la seule connaissance des deux limites ne suffit pas, il faut transformer l'expression. Ainsi $x^{2}-x$, $x-x^{2}$ et $(x+1)-x$ ont la même forme et trois limites différentes.",
+      "difficulte": 2,
+      "tags": ["forme-indeterminee", "limite"]
+    },
+    {
+      "id": "TD-CH02-031",
+      "lecon": "Limites : énoncés admis et calculs",
+      "type": "formule",
+      "recto": "Pourquoi le cas $\\dfrac{\\ell}{0}$, avec $\\ell$ non nul, n'est-il pas une forme indéterminée ?",
+      "verso": "Parce que la limite est infinie à coup sûr : seul le signe reste à trouver, en étudiant celui du dénominateur à gauche puis à droite de la valeur. Une telle question exige donc deux calculs et débouche presque toujours sur une asymptote verticale.",
+      "difficulte": 3,
+      "tags": ["forme-indeterminee", "signe", "piege"]
+    },
+    {
+      "id": "TD-CH02-032",
+      "lecon": "Limites : énoncés admis et calculs",
+      "type": "formule",
+      "recto": "Comment lève-t-on l'indétermination d'un quotient de polynômes en $\\pm\\infty$ ?",
+      "verso": "On factorise le numérateur et le dénominateur par leur terme de plus haut degré, puis on simplifie : en pratique, on compare les degrés et l'on garde les termes dominants. Pour des degrés égaux, la limite est le quotient des coefficients dominants.",
+      "difficulte": 2,
+      "tags": ["forme-indeterminee", "polynomes", "degre"]
+    },
+    {
+      "id": "TD-CH02-033",
+      "lecon": "Limites : énoncés admis et calculs",
+      "type": "formule",
+      "recto": "Comment lève-t-on une forme $\\dfrac{0}{0}$ obtenue en une valeur $a$ ?",
+      "verso": "Le facteur $(x-a)$ se trouve alors au numérateur et au dénominateur : on factorise puis on simplifie. Ainsi $\\dfrac{x^{2}-4}{x-2}$ s'écrit $\\dfrac{(x-2)(x+2)}{x-2}$, soit $x+2$ pour $x\\ne 2$, dont la limite en $2$ vaut $4$.",
+      "difficulte": 2,
+      "tags": ["forme-indeterminee", "factorisation"]
+    },
+    {
+      "id": "TD-CH02-034",
+      "lecon": "Limites : énoncés admis et calculs",
+      "type": "formule",
+      "recto": "Comment lève-t-on une indétermination portant sur une différence contenant une racine carrée ?",
+      "verso": "On multiplie et l'on divise par la quantité conjuguée, obtenue en changeant le signe entre les deux termes : le produit $(A-B)(A+B)=A^{2}-B^{2}$ fait disparaître la racine et remplace la différence par un quotient calculable.",
+      "difficulte": 2,
+      "tags": ["quantite-conjuguee", "forme-indeterminee"]
+    },
+    {
+      "id": "TD-CH02-035",
+      "lecon": "Limites : énoncés admis et calculs",
+      "type": "formule",
+      "recto": "Que vaut $\\sqrt{x^{2}}$ lorsque le réel $x$ est négatif ?",
+      "verso": "$\\sqrt{x^{2}}=|x|=-x$, et non $x$ : ainsi $\\sqrt{(-3)^{2}}=3$. C'est le piège classique des racines en $-\\infty$, où il faut penser à ce changement de signe avant toute factorisation.",
+      "difficulte": 3,
+      "tags": ["racine-carree", "valeur-absolue", "piege"]
+    },
+    {
+      "id": "TD-CH02-036",
+      "lecon": "Limites : énoncés admis et calculs",
+      "type": "formule",
+      "recto": "Quand la courbe d'une fonction admet-elle une asymptote horizontale ?",
+      "verso": "Lorsque $f(x)$ admet une limite finie $\\ell$ en $+\\infty$ ou en $-\\infty$ : la droite d'équation $y=\\ell$ est alors asymptote horizontale à la courbe. Une asymptote n'est rien d'autre que la traduction géométrique d'une limite.",
+      "difficulte": 1,
+      "tags": ["asymptote-horizontale", "limite"]
+    },
+    {
+      "id": "TD-CH02-037",
+      "lecon": "Limites : énoncés admis et calculs",
+      "type": "formule",
+      "recto": "Quand la courbe d'une fonction admet-elle une asymptote verticale ?",
+      "verso": "Lorsque $f(x)$ tend vers $+\\infty$ ou vers $-\\infty$ en une valeur $a$ : la droite d'équation $x=a$ est alors asymptote verticale. On la cherche aux valeurs interdites, mais une valeur interdite où la limite est finie ne donne qu'un trou.",
+      "difficulte": 2,
+      "tags": ["asymptote-verticale", "valeur-interdite"]
+    },
+    {
+      "id": "TD-CH02-038",
+      "lecon": "Limites : énoncés admis et calculs",
+      "type": "formule",
+      "recto": "Quelle limite reconnaît-on derrière une expression de la forme $\\dfrac{f(x)-f(a)}{x-a}$ ?",
+      "verso": "Celle d'un taux d'accroissement : quand $x$ tend vers $a$, elle vaut le nombre dérivé $f'(a)$. Ainsi $\\dfrac{\\cos x-1}{x}$ est le taux d'accroissement du cosinus en $0$ et tend vers $-\\sin 0=0$.",
+      "difficulte": 2,
+      "tags": ["taux-daccroissement", "nombre-derive"]
+    }
+  ]
+}

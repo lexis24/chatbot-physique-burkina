@@ -1,0 +1,323 @@
+{
+  "niveau": "6ème",
+  "chapitre": "Chapitre 0 : Bien démarrer en 6ème",
+  "source": "maths/6eme/Chapitre_0_Bien_demarrer",
+  "nombre_cartes": 35,
+  "cartes": [
+    {
+      "id": "6E-CH00-001",
+      "lecon": "Test de positionnement : que sais-tu déjà ?",
+      "type": "definition",
+      "recto": "Comment appelle-t-on deux droites qui se coupent ?",
+      "verso": "On dit que ce sont des droites sécantes. Deux droites parallèles, au contraire, ne se coupent jamais, même prolongées.",
+      "difficulte": 1,
+      "tags": ["droites", "secantes", "vocabulaire"]
+    },
+    {
+      "id": "6E-CH00-002",
+      "lecon": "Test de positionnement : que sais-tu déjà ?",
+      "type": "formule",
+      "recto": "Comment vérifie-t-on à la règle graduée que deux droites tracées sont parallèles ?",
+      "verso": "On mesure l'écart entre elles à deux endroits différents. Si cet écart est le même partout, les droites sont parallèles et ne se couperont jamais, même prolongées.",
+      "difficulte": 2,
+      "tags": ["droites", "paralleles", "verification"]
+    },
+    {
+      "id": "6E-CH00-003",
+      "lecon": "Je révise l'essentiel du CM2",
+      "type": "formule",
+      "recto": "Pour lire un grand nombre, comment groupe-t-on ses chiffres ?",
+      "verso": "Par tranches de trois, en partant de la droite : classe des unités, classe des mille, classe des millions. Ainsi $45\\,230$ se lit « quarante-cinq mille deux cent trente ».",
+      "difficulte": 1,
+      "tags": ["grands-nombres", "classes", "lecture"]
+    },
+    {
+      "id": "6E-CH00-004",
+      "lecon": "Je révise l'essentiel du CM2",
+      "type": "formule",
+      "recto": "Quand on pose une addition ou une soustraction, comment place-t-on les chiffres ?",
+      "verso": "On aligne les chiffres de même rang : les unités sous les unités, les dizaines sous les dizaines.",
+      "difficulte": 1,
+      "tags": ["addition", "soustraction", "poser"]
+    },
+    {
+      "id": "6E-CH00-005",
+      "lecon": "Je révise l'essentiel du CM2",
+      "type": "formule",
+      "recto": "Quand on pose une multiplication, que ne faut-il pas oublier à chaque nouvelle ligne ?",
+      "verso": "Le décalage : chaque nouvelle ligne du produit doit être décalée par rapport à la précédente.",
+      "difficulte": 2,
+      "tags": ["multiplication", "poser", "decalage"]
+    },
+    {
+      "id": "6E-CH00-006",
+      "lecon": "Je révise l'essentiel du CM2",
+      "type": "formule",
+      "recto": "Après une division posée, quelle condition le reste doit-il toujours vérifier ?",
+      "verso": "Le reste doit être plus petit que le diviseur. Pour $75 \\div 6$, le quotient est $12$ et le reste $3$, car $75 = 6 \\times 12 + 3$.",
+      "difficulte": 2,
+      "tags": ["division", "reste", "condition"]
+    },
+    {
+      "id": "6E-CH00-007",
+      "lecon": "Je révise l'essentiel du CM2",
+      "type": "definition",
+      "recto": "Dans un nombre décimal, que sépare la virgule ?",
+      "verso": "Elle sépare la partie entière de la partie décimale, où l'on trouve le chiffre des dixièmes puis celui des centièmes. Dans $7{,}25$, le chiffre des dixièmes est $2$ et celui des centièmes est $5$.",
+      "difficulte": 1,
+      "tags": ["decimaux", "virgule", "dixiemes"]
+    },
+    {
+      "id": "6E-CH00-008",
+      "lecon": "Je révise l'essentiel du CM2",
+      "type": "formule",
+      "recto": "Dans quel ordre compare-t-on les chiffres de deux nombres décimaux ?",
+      "verso": "On compare d'abord les parties entières ; si elles sont égales, on compare les dixièmes, puis les centièmes.",
+      "difficulte": 2,
+      "tags": ["decimaux", "comparaison"]
+    },
+    {
+      "id": "6E-CH00-009",
+      "lecon": "Je révise l'essentiel du CM2",
+      "type": "formule",
+      "recto": "Pourquoi $5{,}7$ est-il plus grand que $5{,}64$, alors que $64$ est plus grand que $7$ ?",
+      "verso": "Parce qu'on compare rang par rang, et non la longueur des écritures. Les parties entières sont égales, et $7$ dixièmes valent plus que $6$ dixièmes.",
+      "difficulte": 3,
+      "tags": ["decimaux", "comparaison", "piege"]
+    },
+    {
+      "id": "6E-CH00-010",
+      "lecon": "Je révise l'essentiel du CM2",
+      "type": "formule",
+      "recto": "Par quel nombre divise-t-on pour obtenir la moitié, le tiers ou le quart d'un nombre ?",
+      "verso": "Par $2$ pour la moitié, par $3$ pour le tiers, par $4$ pour le quart. La moitié de $18$ est $9$, le tiers de $27$ est $9$, le quart de $100$ est $25$.",
+      "difficulte": 1,
+      "tags": ["moitie", "tiers", "quart"]
+    },
+    {
+      "id": "6E-CH00-011",
+      "lecon": "Je révise l'essentiel du CM2",
+      "type": "formule",
+      "recto": "Par quelle opération obtient-on le double, puis le triple d'un nombre ?",
+      "verso": "Une multiplication : par $2$ pour le double, par $3$ pour le triple. Le double de $45$ est $90$.",
+      "difficulte": 1,
+      "tags": ["double", "triple", "multiplication"]
+    },
+    {
+      "id": "6E-CH00-012",
+      "lecon": "Je révise l'essentiel du CM2",
+      "type": "formule",
+      "recto": "Quelles égalités relient le kilomètre, le mètre, le centimètre et le millimètre ?",
+      "verso": "$1$ km $= 1\\,000$ m, $1$ m $= 100$ cm et $1$ cm $= 10$ mm. Le mètre est l'unité principale de longueur.",
+      "difficulte": 1,
+      "tags": ["longueur", "unites", "conversion"]
+    },
+    {
+      "id": "6E-CH00-013",
+      "lecon": "Je révise l'essentiel du CM2",
+      "type": "formule",
+      "recto": "A combien de grammes correspond $1$ kg ?",
+      "verso": "$1$ kg $= 1\\,000$ g : le gramme est l'unité principale de masse. Ainsi $4$ kg valent $4\\,000$ g.",
+      "difficulte": 1,
+      "tags": ["masse", "unites", "conversion"]
+    },
+    {
+      "id": "6E-CH00-014",
+      "lecon": "Je révise l'essentiel du CM2",
+      "type": "formule",
+      "recto": "Par quels nombres multiplie-t-on ou divise-t-on pour convertir une longueur ou une masse ?",
+      "verso": "Par $10$, par $100$ ou par $1\\,000$. Ainsi $3$ km $= 3\\,000$ m et $250$ cm $= 2{,}5$ m.",
+      "difficulte": 2,
+      "tags": ["conversion", "unites"]
+    },
+    {
+      "id": "6E-CH00-015",
+      "lecon": "Je révise l'essentiel du CM2",
+      "type": "formule",
+      "recto": "Que faut-il repérer dans l'énoncé d'un problème avant de choisir l'opération ?",
+      "verso": "Les données utiles, après avoir lu l'énoncé en entier. Le calcul effectué, on termine par une phrase de réponse contenant l'unité.",
+      "difficulte": 2,
+      "tags": ["probleme", "donnees", "reponse"]
+    },
+    {
+      "id": "6E-CH00-016",
+      "lecon": "Mes instruments de géométrie",
+      "type": "definition",
+      "recto": "A quoi sert la règle graduée ?",
+      "verso": "A tracer des traits droits et à mesurer des longueurs.",
+      "difficulte": 1,
+      "tags": ["instruments", "regle"]
+    },
+    {
+      "id": "6E-CH00-017",
+      "lecon": "Mes instruments de géométrie",
+      "type": "formule",
+      "recto": "Pour mesurer un segment à la règle, où faut-il placer le zéro ?",
+      "verso": "Exactement sur une extrémité du segment ; on lit ensuite la graduation à l'autre extrémité. Le zéro n'est pas toujours au tout début de la règle : il faut le chercher avant de mesurer.",
+      "difficulte": 2,
+      "tags": ["instruments", "regle", "mesure"]
+    },
+    {
+      "id": "6E-CH00-018",
+      "lecon": "Mes instruments de géométrie",
+      "type": "definition",
+      "recto": "A quoi sert l'équerre ?",
+      "verso": "A vérifier et à tracer des angles droits, qui mesurent $90^{\\circ}$, et plus tard à construire des droites perpendiculaires et parallèles.",
+      "difficulte": 1,
+      "tags": ["instruments", "equerre", "angle-droit"]
+    },
+    {
+      "id": "6E-CH00-019",
+      "lecon": "Mes instruments de géométrie",
+      "type": "formule",
+      "recto": "Comment vérifie-t-on à l'équerre qu'un angle est droit ?",
+      "verso": "On place le coin de l'angle droit de l'équerre dans l'angle. Si les deux côtés de l'équerre suivent exactement les deux côtés de l'angle, sans écart ni chevauchement, l'angle est droit.",
+      "difficulte": 2,
+      "tags": ["instruments", "equerre", "angle-droit"]
+    },
+    {
+      "id": "6E-CH00-020",
+      "lecon": "Mes instruments de géométrie",
+      "type": "definition",
+      "recto": "Quel instrument sert à tracer des cercles et à reporter des longueurs ?",
+      "verso": "Le compas. On le tient par la tête, entre le pouce et l'index, jamais par les branches.",
+      "difficulte": 1,
+      "tags": ["instruments", "compas"]
+    },
+    {
+      "id": "6E-CH00-021",
+      "lecon": "Mes instruments de géométrie",
+      "type": "formule",
+      "recto": "Comment ouvre-t-on le compas pour tracer un cercle de rayon $3$ cm ?",
+      "verso": "On règle l'écart entre la pointe sèche et la mine à exactement $3$ cm, en le vérifiant sur la règle. On plante ensuite la pointe sur le centre et on tourne d'un geste régulier, sans la bouger.",
+      "difficulte": 2,
+      "tags": ["instruments", "compas", "rayon"]
+    },
+    {
+      "id": "6E-CH00-022",
+      "lecon": "Mes instruments de géométrie",
+      "type": "definition",
+      "recto": "Quel instrument permet de mesurer un angle en degrés ?",
+      "verso": "Le rapporteur. Il sert aussi à construire un angle de mesure donnée.",
+      "difficulte": 1,
+      "tags": ["instruments", "rapporteur", "degre"]
+    },
+    {
+      "id": "6E-CH00-023",
+      "lecon": "Mes instruments de géométrie",
+      "type": "formule",
+      "recto": "Où place-t-on le centre du rapporteur pour mesurer un angle ?",
+      "verso": "Exactement sur le sommet de l'angle : le petit trou, ou le trait central, doit s'y trouver. On aligne ensuite la ligne de base sur un côté, puis on lit la graduation là où passe l'autre côté.",
+      "difficulte": 2,
+      "tags": ["instruments", "rapporteur", "mesure"]
+    },
+    {
+      "id": "6E-CH00-024",
+      "lecon": "Mes instruments de géométrie",
+      "type": "formule",
+      "recto": "Le rapporteur porte deux graduations : comment savoir laquelle lire ?",
+      "verso": "On regarde d'abord la forme de l'angle. Plus fermé qu'un angle droit, il mesure moins de $90^{\\circ}$ ; plus ouvert, il mesure plus de $90^{\\circ}$. Si la lecture ne s'accorde pas avec ce que l'on voit, c'est la mauvaise graduation.",
+      "difficulte": 3,
+      "tags": ["instruments", "rapporteur", "piege"]
+    },
+    {
+      "id": "6E-CH00-025",
+      "lecon": "Ma méthode de travail",
+      "type": "definition",
+      "recto": "Quelle différence y a-t-il entre le cahier de cours et le cahier d'exercices ?",
+      "verso": "Le cahier de cours reçoit la date, le titre, les définitions, les propriétés et les exemples, et doit rester propre : c'est lui qu'on relit avant un devoir. Le cahier d'exercices reçoit la recherche et les réponses, et l'on a le droit d'y raturer.",
+      "difficulte": 2,
+      "tags": ["methode", "cahiers"]
+    },
+    {
+      "id": "6E-CH00-026",
+      "lecon": "Ma méthode de travail",
+      "type": "formule",
+      "recto": "Comment présente-t-on les calculs et le résultat sur une copie ?",
+      "verso": "On aligne les calculs les uns sous les autres et on encadre le résultat, après avoir écrit le numéro et recopié les données utiles. Le correcteur doit pouvoir suivre le raisonnement sans deviner.",
+      "difficulte": 2,
+      "tags": ["methode", "copie", "presentation"]
+    },
+    {
+      "id": "6E-CH00-027",
+      "lecon": "Ma méthode de travail",
+      "type": "formule",
+      "recto": "Une fois lu l'encadré « Ce qu'il faut retenir », quel geste montre qu'une leçon est apprise ?",
+      "verso": "Fermer le cahier et réciter de mémoire, à voix haute ou en écrivant sur une feuille, puis comparer avec le cahier pour repérer uniquement ce qui manquait.",
+      "difficulte": 2,
+      "tags": ["methode", "apprendre", "memorisation"]
+    },
+    {
+      "id": "6E-CH00-028",
+      "lecon": "Ma méthode de travail",
+      "type": "formule",
+      "recto": "Pourquoi revenir cinq minutes sur une leçon le lendemain ?",
+      "verso": "Parce que c'est la répétition qui fixe, pas la durée. Une leçon apprise le soir même se révise en cinq minutes ; laissée trois semaines, elle se réapprend en entier.",
+      "difficulte": 2,
+      "tags": ["methode", "revision", "repetition"]
+    },
+    {
+      "id": "6E-CH00-029",
+      "lecon": "Ma méthode de travail",
+      "type": "definition",
+      "recto": "Pourquoi recopier un corrigé sans l'avoir cherché donne-t-il une fausse impression d'avoir compris ?",
+      "verso": "Parce que savoir relire n'est pas savoir refaire. L'illusion se paie le jour du devoir, quand le corrigé n'est plus là : la preuve qu'on a compris, c'est de savoir refaire seul.",
+      "difficulte": 3,
+      "tags": ["methode", "corrige", "piege"]
+    },
+    {
+      "id": "6E-CH00-030",
+      "lecon": "Ma méthode de travail",
+      "type": "formule",
+      "recto": "Combien de temps faut-il chercher un exercice seul avant d'ouvrir les corrigés ?",
+      "verso": "Au moins dix minutes : relire l'énoncé, faire un dessin, essayer sur un cas plus simple avec de petits nombres, et écrire quelque chose même d'incomplet. Une piste écrite vaut mieux qu'une feuille blanche.",
+      "difficulte": 2,
+      "tags": ["methode", "recherche", "corrige"]
+    },
+    {
+      "id": "6E-CH00-031",
+      "lecon": "Ma méthode de travail",
+      "type": "definition",
+      "recto": "Que demande la consigne « Justifie » ?",
+      "verso": "Expliquer pourquoi la réponse est correcte, en citant une règle ou une propriété. Donner le résultat seul ne suffit pas.",
+      "difficulte": 2,
+      "tags": ["consignes", "justifier", "vocabulaire"]
+    },
+    {
+      "id": "6E-CH00-032",
+      "lecon": "Ma méthode de travail",
+      "type": "definition",
+      "recto": "Quelle différence y a-t-il entre les consignes « Trace » et « Place » ?",
+      "verso": "« Trace », comme « Construis », demande de dessiner avec précision, aux instruments. « Place » demande de marquer un point à l'endroit voulu et de le nommer.",
+      "difficulte": 2,
+      "tags": ["consignes", "vocabulaire"]
+    },
+    {
+      "id": "6E-CH00-033",
+      "lecon": "Comment lire ce manuel",
+      "type": "definition",
+      "recto": "Que signifient les une, deux ou trois étoiles portées par un exercice ?",
+      "verso": "Une étoile : application directe d'une seule notion. Deux étoiles : deux étapes à enchaîner. Trois étoiles : il faut prendre une initiative et choisir soi-même la démarche. Elles ne disent pas si un exercice est long.",
+      "difficulte": 2,
+      "tags": ["manuel", "etoiles", "difficulte"]
+    },
+    {
+      "id": "6E-CH00-034",
+      "lecon": "Comment lire ce manuel",
+      "type": "definition",
+      "recto": "Que contient l'encadré « Ce qu'il faut retenir » d'une leçon ?",
+      "verso": "Les définitions, les propriétés et les notations : c'est exactement ce qui s'apprend par cœur.",
+      "difficulte": 1,
+      "tags": ["manuel", "rubriques", "retenir"]
+    },
+    {
+      "id": "6E-CH00-035",
+      "lecon": "Comment lire ce manuel",
+      "type": "definition",
+      "recto": "Quelle différence y a-t-il entre la rubrique « Méthode » et la rubrique « Exemple résolu » ?",
+      "verso": "« Méthode » donne les étapes numérotées d'une technique, comme une recette à suivre. « Exemple résolu » traite un exercice en deux colonnes : à gauche ce qu'on fait, à droite ce qu'on écrit.",
+      "difficulte": 2,
+      "tags": ["manuel", "rubriques", "methode"]
+    }
+  ]
+}

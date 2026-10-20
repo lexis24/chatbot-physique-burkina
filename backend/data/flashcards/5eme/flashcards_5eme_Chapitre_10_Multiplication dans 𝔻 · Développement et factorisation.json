@@ -1,0 +1,332 @@
+{
+  "niveau": "5ème",
+  "chapitre": "Chapitre 10 : Multiplication dans $\\mathbb{D}$ · Développement et factorisation",
+  "source": "maths/5eme/Chapitre_10_Multiplication_dans_D_developpement_factorisation",
+  "nombre_cartes": 36,
+  "cartes": [
+    {
+      "id": "5E-CH10-001",
+      "lecon": "Produit de deux relatifs (positifs ; signes contraires)",
+      "type": "formule",
+      "recto": "Quel est le signe du produit de deux nombres relatifs de signes contraires ?",
+      "verso": "Il est négatif : $\\left(+a\\right) \\times \\left(-b\\right) = -\\left(a \\times b\\right)$. Ainsi $\\left(+12\\right) \\times \\left(-5\\right) = -60$.",
+      "difficulte": 1,
+      "tags": ["regle-des-signes", "produit", "signes-contraires"]
+    },
+    {
+      "id": "5E-CH10-002",
+      "lecon": "Produit de deux relatifs (positifs ; signes contraires)",
+      "type": "formule",
+      "recto": "Dans quel ordre traite-t-on le signe et la valeur quand on multiplie deux relatifs ?",
+      "verso": "On détermine d'abord le signe du résultat, on multiplie ensuite les valeurs absolues, puis on assemble les deux. Ces deux temps ne se mélangent jamais.",
+      "difficulte": 1,
+      "tags": ["produit", "methode", "valeur-absolue"]
+    },
+    {
+      "id": "5E-CH10-003",
+      "lecon": "Produit de deux relatifs (positifs ; signes contraires)",
+      "type": "formule",
+      "recto": "Que donne la multiplication d'un nombre relatif par $-1$ ?",
+      "verso": "Elle donne son opposé : $\\left(-1\\right) \\times 7 = -7$ et $\\left(-1\\right) \\times \\left(-4\\right) = +4$. La distance à zéro ne change pas, le nombre passe de l'autre côté du zéro.",
+      "difficulte": 2,
+      "tags": ["produit", "oppose", "multiplier-par-moins-un"]
+    },
+    {
+      "id": "5E-CH10-004",
+      "lecon": "Produit de deux relatifs (positifs ; signes contraires)",
+      "type": "formule",
+      "recto": "Quels effets ont les facteurs $0$ et $+1$ dans une multiplication ?",
+      "verso": "Multiplier par $0$ donne toujours $0$, quel que soit l'autre facteur. Multiplier par $+1$ ne change rien au nombre.",
+      "difficulte": 1,
+      "tags": ["produit", "cas-particuliers"]
+    },
+    {
+      "id": "5E-CH10-005",
+      "lecon": "Produit de deux relatifs (positifs ; signes contraires)",
+      "type": "definition",
+      "recto": "Que signifie l'écriture $-a$ quand $a$ désigne un nombre relatif quelconque ?",
+      "verso": "Elle désigne l'opposé de $a$, et non un nombre forcément négatif. Si $a$ vaut $-3$, alors $-a$ vaut $+3$.",
+      "difficulte": 2,
+      "tags": ["oppose", "notation", "piege"]
+    },
+    {
+      "id": "5E-CH10-006",
+      "lecon": "Produit de deux relatifs négatifs",
+      "type": "formule",
+      "recto": "Quel est le signe du produit de deux nombres relatifs de même signe ?",
+      "verso": "Il est positif, que les deux facteurs soient positifs ou tous les deux négatifs : même signe donne plus. Ainsi $\\left(-20\\right) \\times \\left(-12\\right) = +240$.",
+      "difficulte": 1,
+      "tags": ["regle-des-signes", "produit", "meme-signe"]
+    },
+    {
+      "id": "5E-CH10-007",
+      "lecon": "Produit de deux relatifs négatifs",
+      "type": "formule",
+      "recto": "Comment connaît-on le signe d'un produit de plusieurs facteurs sans le calculer ?",
+      "verso": "On compte les facteurs négatifs : un nombre pair donne un produit positif, un nombre impair donne un produit négatif.",
+      "difficulte": 2,
+      "tags": ["signe-d-un-produit", "parite"]
+    },
+    {
+      "id": "5E-CH10-008",
+      "lecon": "Produit de deux relatifs négatifs",
+      "type": "formule",
+      "recto": "Pourquoi les facteurs négatifs s'annulent-ils deux par deux dans un produit ?",
+      "verso": "Parce que chaque facteur négatif fait basculer le signe du résultat, et deux bascules ramènent au point de départ, comme deux demi-tours successifs.",
+      "difficulte": 2,
+      "tags": ["signe-d-un-produit", "justification"]
+    },
+    {
+      "id": "5E-CH10-009",
+      "lecon": "Produit de deux relatifs négatifs",
+      "type": "formule",
+      "recto": "Que devient un produit dès que l'un de ses facteurs est nul ?",
+      "verso": "Il est nul, quels que soient les autres facteurs. Avant de compter les facteurs négatifs, il faut donc vérifier qu'aucun facteur ne vaut $0$.",
+      "difficulte": 2,
+      "tags": ["produit", "facteur-nul"]
+    },
+    {
+      "id": "5E-CH10-010",
+      "lecon": "Produit de deux relatifs négatifs",
+      "type": "formule",
+      "recto": "Pourquoi $\\left(-1\\right) \\times \\left(-10\\right) \\times \\left(-5\\right)$ ne vaut-il pas $+50$ ?",
+      "verso": "Parce que ce produit compte trois facteurs négatifs, un nombre impair : le résultat est donc négatif et vaut $-50$.",
+      "difficulte": 3,
+      "tags": ["signe-d-un-produit", "piege", "parite"]
+    },
+    {
+      "id": "5E-CH10-011",
+      "lecon": "Produit de deux relatifs négatifs",
+      "type": "formule",
+      "recto": "Pourquoi $\\left(-3\\right) \\times \\left(-4\\right)$ et $\\left(-3\\right) + \\left(-4\\right)$ n'ont-ils pas le même signe ?",
+      "verso": "Parce que la règle des signes du produit ne vaut pas pour l'addition : $\\left(-3\\right) \\times \\left(-4\\right) = +12$, alors que $\\left(-3\\right) + \\left(-4\\right) = -7$.",
+      "difficulte": 3,
+      "tags": ["regle-des-signes", "addition", "piege"]
+    },
+    {
+      "id": "5E-CH10-012",
+      "lecon": "Propriétés de la multiplication",
+      "type": "definition",
+      "recto": "Que dit la commutativité de la multiplication ?",
+      "verso": "Elle dit que $a \\times b = b \\times a$ : on peut changer l'ordre des facteurs sans changer le produit.",
+      "difficulte": 1,
+      "tags": ["commutativite", "propriete"]
+    },
+    {
+      "id": "5E-CH10-013",
+      "lecon": "Propriétés de la multiplication",
+      "type": "definition",
+      "recto": "Que dit l'associativité de la multiplication ?",
+      "verso": "Elle dit que $\\left(a \\times b\\right) \\times c = a \\times \\left(b \\times c\\right)$ : on peut regrouper les facteurs comme on veut.",
+      "difficulte": 2,
+      "tags": ["associativite", "propriete"]
+    },
+    {
+      "id": "5E-CH10-014",
+      "lecon": "Propriétés de la multiplication",
+      "type": "formule",
+      "recto": "Pour quelles opérations la commutativité est-elle fausse ?",
+      "verso": "Pour la soustraction et pour la division : $8 - 3$ ne vaut pas $3 - 8$, et $10 \\div 2$ ne vaut pas $2 \\div 10$. Elle est vraie pour la multiplication et pour l'addition.",
+      "difficulte": 3,
+      "tags": ["commutativite", "piege", "soustraction"]
+    },
+    {
+      "id": "5E-CH10-015",
+      "lecon": "Propriétés de la multiplication",
+      "type": "formule",
+      "recto": "Quels regroupements de facteurs cherche-t-on pour calculer un produit astucieusement ?",
+      "verso": "Les couples qui donnent $1$, comme $0{,}5$ et $2$, ceux qui donnent une puissance de dix, comme $25$ et $4$, et les facteurs égaux à $1$ ou à $-1$.",
+      "difficulte": 2,
+      "tags": ["calcul-astucieux", "regroupement"]
+    },
+    {
+      "id": "5E-CH10-016",
+      "lecon": "Propriétés de la multiplication",
+      "type": "formule",
+      "recto": "Comment trouve-t-on le facteur manquant d'une égalité comme $\\left(\\dots\\right) \\times \\left(-3\\right) = -33$ ?",
+      "verso": "On cherche d'abord le signe qui rend le produit correct, ici le signe $+$, puis on divise les valeurs absolues : $33 \\div 3 = 11$. Le facteur manquant est $+11$.",
+      "difficulte": 2,
+      "tags": ["facteur-manquant", "regle-des-signes"]
+    },
+    {
+      "id": "5E-CH10-017",
+      "lecon": "Réduction de sommes algébriques ; priorités",
+      "type": "definition",
+      "recto": "Que sont deux termes semblables ?",
+      "verso": "Ce sont deux termes qui ont la même partie littérale : $3a$ et $5a$ sont semblables, $3a$ et $5b$ ne le sont pas.",
+      "difficulte": 1,
+      "tags": ["termes-semblables", "definition"]
+    },
+    {
+      "id": "5E-CH10-018",
+      "lecon": "Réduction de sommes algébriques ; priorités",
+      "type": "formule",
+      "recto": "Que signifie réduire une somme algébrique ?",
+      "verso": "C'est regrouper les termes semblables en ajoutant leurs coefficients, les nombres placés devant la lettre : $3a + 5a = 8a$. Une lettre seule a pour coefficient $1$, donc $2b + b = 3b$.",
+      "difficulte": 1,
+      "tags": ["reduction", "coefficients"]
+    },
+    {
+      "id": "5E-CH10-019",
+      "lecon": "Réduction de sommes algébriques ; priorités",
+      "type": "formule",
+      "recto": "Dans quel ordre effectue-t-on les opérations d'un calcul ?",
+      "verso": "D'abord les parenthèses, puis les multiplications et les divisions, enfin les additions et les soustractions. Ces deux derniers groupes se traitent de gauche à droite.",
+      "difficulte": 2,
+      "tags": ["priorites", "ordre-des-operations"]
+    },
+    {
+      "id": "5E-CH10-020",
+      "lecon": "Réduction de sommes algébriques ; priorités",
+      "type": "formule",
+      "recto": "Pourquoi $7x + 3x$ ne vaut-il pas $10x^{2}$ ?",
+      "verso": "Parce qu'on additionne seulement les coefficients : la lettre ne change pas. Le résultat est $10x$.",
+      "difficulte": 3,
+      "tags": ["reduction", "piege"]
+    },
+    {
+      "id": "5E-CH10-021",
+      "lecon": "Réduction de sommes algébriques ; priorités",
+      "type": "formule",
+      "recto": "Pourquoi la somme $3a + 5b$ ne peut-elle pas être réduite ?",
+      "verso": "Parce que les deux termes n'ont pas la même partie littérale : ce sont des objets différents. Ecrire $8ab$ serait faux.",
+      "difficulte": 3,
+      "tags": ["reduction", "termes-semblables", "piege"]
+    },
+    {
+      "id": "5E-CH10-022",
+      "lecon": "Réduction de sommes algébriques ; priorités",
+      "type": "formule",
+      "recto": "Pourquoi l'expression $5 + 3x$ est-elle déjà réduite ?",
+      "verso": "Parce que la multiplication $3 \\times x$ se fait avant l'addition : $5$ et $3x$ ne sont pas des termes semblables, on ne peut donc pas ajouter $5$ et $3$.",
+      "difficulte": 3,
+      "tags": ["reduction", "priorites", "piege"]
+    },
+    {
+      "id": "5E-CH10-023",
+      "lecon": "Distributivité : développer et factoriser",
+      "type": "formule",
+      "recto": "Que dit la distributivité de la multiplication sur l'addition ?",
+      "verso": "Pour tous nombres $k$, $a$ et $b$ : $k \\times \\left(a + b\\right) = k \\times a + k \\times b$. De même, $k \\times \\left(a - b\\right) = k \\times a - k \\times b$.",
+      "difficulte": 1,
+      "tags": ["distributivite", "formule"]
+    },
+    {
+      "id": "5E-CH10-024",
+      "lecon": "Distributivité : développer et factoriser",
+      "type": "definition",
+      "recto": "Que veut dire développer une expression ?",
+      "verso": "C'est passer de $k\\left(a + b\\right)$ à $ka + kb$, c'est-à-dire enlever la parenthèse en multipliant $k$ par chaque terme.",
+      "difficulte": 1,
+      "tags": ["developper", "definition"]
+    },
+    {
+      "id": "5E-CH10-025",
+      "lecon": "Distributivité : développer et factoriser",
+      "type": "definition",
+      "recto": "Que veut dire factoriser une expression ?",
+      "verso": "C'est passer de $ka + kb$ à $k\\left(a + b\\right)$, c'est-à-dire mettre le facteur commun $k$ en évidence. C'est l'opération inverse du développement.",
+      "difficulte": 1,
+      "tags": ["factoriser", "definition"]
+    },
+    {
+      "id": "5E-CH10-026",
+      "lecon": "Distributivité : développer et factoriser",
+      "type": "formule",
+      "recto": "Pourquoi l'égalité $k\\left(a + b\\right) = ka + kb$ est-elle vraie ?",
+      "verso": "Parce que l'aire d'un rectangle de hauteur $k$ et de largeur $a + b$ ne change pas selon qu'on la compte d'un seul bloc ou en deux morceaux, $ka$ et $kb$.",
+      "difficulte": 2,
+      "tags": ["distributivite", "justification", "aire"]
+    },
+    {
+      "id": "5E-CH10-027",
+      "lecon": "Distributivité : développer et factoriser",
+      "type": "formule",
+      "recto": "Comment la distributivité permet-elle de calculer $99 \\times 417$ de tête ?",
+      "verso": "On décompose $99 = 100 - 1$, puis on calcule $417 \\times 100 - 417 = 41\\,700 - 417 = 41\\,283$.",
+      "difficulte": 2,
+      "tags": ["distributivite", "calcul-mental"]
+    },
+    {
+      "id": "5E-CH10-028",
+      "lecon": "Distributivité : développer et factoriser",
+      "type": "formule",
+      "recto": "Pourquoi $3\\left(x + 5\\right)$ ne vaut-il pas $3x + 5$ ?",
+      "verso": "Parce que le facteur placé devant multiplie tous les termes de la parenthèse, pas seulement le premier. Le développement correct est $3x + 15$.",
+      "difficulte": 3,
+      "tags": ["developper", "piege"]
+    },
+    {
+      "id": "5E-CH10-029",
+      "lecon": "Distributivité : développer et factoriser",
+      "type": "formule",
+      "recto": "Pourquoi l'expression $5a + 3b$ ne peut-elle pas être factorisée ?",
+      "verso": "Parce que ses termes n'ont aucun facteur commun : $5$ et $3$ n'en ont pas, $a$ et $b$ non plus. Sans partie commune, les deux morceaux ne se recollent pas.",
+      "difficulte": 3,
+      "tags": ["factoriser", "facteur-commun", "piege"]
+    },
+    {
+      "id": "5E-CH10-030",
+      "lecon": "Développement et factorisation d'expressions",
+      "type": "formule",
+      "recto": "Dans quel ordre simplifie-t-on une expression littérale qui contient des parenthèses ?",
+      "verso": "On développe d'abord chaque produit, en surveillant les signes, puis on réduit en regroupant les termes semblables. Tant que les parenthèses sont là, les termes semblables ne peuvent pas se rencontrer.",
+      "difficulte": 1,
+      "tags": ["developper", "reduire", "ordre"]
+    },
+    {
+      "id": "5E-CH10-031",
+      "lecon": "Développement et factorisation d'expressions",
+      "type": "formule",
+      "recto": "Quel effet a un signe moins placé devant une parenthèse ?",
+      "verso": "Il change tous les signes à l'intérieur, car il revient à multiplier par $-1$ : $-\\left(2a - 5\\right) = -2a + 5$.",
+      "difficulte": 2,
+      "tags": ["signe-moins", "developper", "parenthese"]
+    },
+    {
+      "id": "5E-CH10-032",
+      "lecon": "Développement et factorisation d'expressions",
+      "type": "formule",
+      "recto": "Que multiplie-t-on par chaque terme quand on développe $-3\\left(-2a - 7b\\right)$ ?",
+      "verso": "Le facteur $-3$ tout entier, signe compris : $\\left(-3\\right) \\times \\left(-2a\\right) = +6a$ et $\\left(-3\\right) \\times \\left(-7b\\right) = +21b$, donc le résultat est $+6a + 21b$.",
+      "difficulte": 3,
+      "tags": ["developper", "regle-des-signes", "piege"]
+    },
+    {
+      "id": "5E-CH10-033",
+      "lecon": "Développement et factorisation d'expressions",
+      "type": "formule",
+      "recto": "De quelle nature peut être le facteur commun d'une expression à factoriser ?",
+      "verso": "Un nombre, une lettre, ou les deux à la fois : $12a + 6b - 4c = 2\\left(6a + 3b - 2c\\right)$ et $8x - 8x^{2} = 8x\\left(1 - x\\right)$.",
+      "difficulte": 2,
+      "tags": ["factoriser", "facteur-commun"]
+    },
+    {
+      "id": "5E-CH10-034",
+      "lecon": "Développement et factorisation d'expressions",
+      "type": "formule",
+      "recto": "Comment factorise-t-on $5\\left(a + b\\right) + x\\left(a + b\\right)$ ?",
+      "verso": "Le facteur commun est la parenthèse entière, ce qui donne $5\\left(a + b\\right) + x\\left(a + b\\right) = \\left(a + b\\right)\\left(5 + x\\right)$.",
+      "difficulte": 3,
+      "tags": ["factoriser", "facteur-commun", "parenthese"]
+    },
+    {
+      "id": "5E-CH10-035",
+      "lecon": "Développement et factorisation d'expressions",
+      "type": "formule",
+      "recto": "A quelle condition une factorisation est-elle complète ?",
+      "verso": "Quand les termes restés dans la parenthèse n'ont plus aucun facteur commun. Ecrire $12a + 6b = 2\\left(6a + 3b\\right)$ est incomplet : la bonne réponse est $6\\left(2a + b\\right)$.",
+      "difficulte": 3,
+      "tags": ["factoriser", "factorisation-complete"]
+    },
+    {
+      "id": "5E-CH10-036",
+      "lecon": "Développement et factorisation d'expressions",
+      "type": "formule",
+      "recto": "Comment contrôle-t-on qu'aucun signe n'a été perdu dans un développement ?",
+      "verso": "On remplace la lettre par une valeur simple, $1$ par exemple, dans l'expression de départ et dans le résultat. Si les deux nombres diffèrent, un signe a été perdu en route.",
+      "difficulte": 2,
+      "tags": ["verification", "developper"]
+    }
+  ]
+}

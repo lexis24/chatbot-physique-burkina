@@ -1,0 +1,350 @@
+{
+  "niveau": "1ère D",
+  "chapitre": "Chapitre 10 : Dénombrement",
+  "source": "maths/1ereD/Chapitre_10_Denombrement",
+  "nombre_cartes": 38,
+  "cartes": [
+    {
+      "id": "1D-CH10-001",
+      "lecon": "Cardinal d'un ensemble fini",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on cardinal d'un ensemble fini $E$ ?",
+      "verso": "C'est son nombre d'éléments, noté $\\operatorname{card}(E)$. Ainsi, pour $E = \\{a\\,;b\\,;c\\}$, on a $\\operatorname{card}(E) = 3$, et l'ensemble vide vérifie $\\operatorname{card}(\\varnothing) = 0$.",
+      "difficulte": 1,
+      "tags": ["cardinal", "definition"]
+    },
+    {
+      "id": "1D-CH10-002",
+      "lecon": "Cardinal d'un ensemble fini",
+      "type": "formule",
+      "recto": "Comment calcule-t-on le cardinal de la réunion de deux ensembles finis $A$ et $B$ ?",
+      "verso": "$\\operatorname{card}(A\\cup B) = \\operatorname{card}(A) + \\operatorname{card}(B) - \\operatorname{card}(A\\cap B)$ : les éléments communs, comptés deux fois dans la somme, sont retranchés une fois. Si $A$ et $B$ sont disjoints, l'intersection est vide et la somme suffit.",
+      "difficulte": 1,
+      "tags": ["cardinal", "reunion"]
+    },
+    {
+      "id": "1D-CH10-003",
+      "lecon": "Cardinal d'un ensemble fini",
+      "type": "formule",
+      "recto": "Comment compte-t-on les éléments qui appartiennent à $A$ mais pas à $B$ ?",
+      "verso": "En retirant de $A$ ceux qui sont aussi dans $B$, soit $\\operatorname{card}(A) - \\operatorname{card}(A\\cap B)$. Ceux qui n'appartiennent ni à $A$ ni à $B$ s'obtiennent en retranchant $\\operatorname{card}(A\\cup B)$ de l'effectif total.",
+      "difficulte": 2,
+      "tags": ["cardinal", "intersection"]
+    },
+    {
+      "id": "1D-CH10-004",
+      "lecon": "Cardinal d'un ensemble fini",
+      "type": "formule",
+      "recto": "Que vaut le cardinal du produit cartésien $A\\times B$ de deux ensembles finis ?",
+      "verso": "$\\operatorname{card}(A\\times B) = \\operatorname{card}(A)\\times\\operatorname{card}(B)$. Le produit cartésien $A\\times B$ est l'ensemble des couples $(a\\,;b)$ où $a$ appartient à $A$ et $b$ appartient à $B$.",
+      "difficulte": 1,
+      "tags": ["produit-cartesien", "cardinal"]
+    },
+    {
+      "id": "1D-CH10-005",
+      "lecon": "Cardinal d'un ensemble fini",
+      "type": "definition",
+      "recto": "Qu'est-ce qu'une $p$-liste d'éléments d'un ensemble $E$ à $n$ éléments ?",
+      "verso": "C'est une liste ordonnée de $p$ éléments de $E$, les répétitions étant permises. Leur nombre vaut $n^p$. C'est la situation du tirage successif avec remise, où l'objet tiré est remis avant le tirage suivant.",
+      "difficulte": 1,
+      "tags": ["p-liste", "definition", "avec-remise"]
+    },
+    {
+      "id": "1D-CH10-006",
+      "lecon": "Cardinal d'un ensemble fini",
+      "type": "formule",
+      "recto": "Combien de parties possède un ensemble à $n$ éléments ?",
+      "verso": "Il en possède $2^n$, l'ensemble vide $\\varnothing$ et l'ensemble tout entier étant comptés parmi elles. Un ensemble à $3$ éléments a donc $2^3 = 8$ sous-ensembles.",
+      "difficulte": 1,
+      "tags": ["parties", "sous-ensemble"]
+    },
+    {
+      "id": "1D-CH10-007",
+      "lecon": "Cardinal d'un ensemble fini",
+      "type": "formule",
+      "recto": "Pourquoi un ensemble à $n$ éléments possède-t-il $2^n$ parties ?",
+      "verso": "Parce que construire une partie revient à décider, pour chacun des $n$ éléments, s'il est dedans ou dehors. Chaque élément offre $2$ réponses, d'où $2\\times 2\\times\\dots\\times 2 = 2^n$ suites de décisions, chacune donnant une partie et une seule.",
+      "difficulte": 2,
+      "tags": ["parties", "demonstration"]
+    },
+    {
+      "id": "1D-CH10-008",
+      "lecon": "Cardinal d'un ensemble fini",
+      "type": "formule",
+      "recto": "Quand faut-il multiplier des nombres de possibilités plutôt que les additionner ?",
+      "verso": "On multiplie quand les choix se font l'un après l'autre, comme une entrée puis un plat : c'est le principe multiplicatif. On additionne quand les cas s'excluent et ne se chevauchent pas, comme un dessert ou bien un café, jamais les deux.",
+      "difficulte": 2,
+      "tags": ["principe-multiplicatif", "addition"]
+    },
+    {
+      "id": "1D-CH10-009",
+      "lecon": "Cardinal d'un ensemble fini",
+      "type": "formule",
+      "recto": "Pourquoi traite-t-on en premier le rang soumis à une contrainte dans un comptage par étapes ?",
+      "verso": "Parce que le nombre de possibilités des rangs suivants dépend de ce qui a déjà été choisi. Pour un nombre de trois chiffres dont celui des centaines n'est pas $0$, on compte d'abord $9$ centaines, puis $10$ dizaines et $10$ unités, soit $900$.",
+      "difficulte": 3,
+      "tags": ["principe-multiplicatif", "contrainte"]
+    },
+    {
+      "id": "1D-CH10-010",
+      "lecon": "Cardinal d'un ensemble fini",
+      "type": "definition",
+      "recto": "Quelle erreur guette l'élève qui compte les codes de $4$ chiffres choisis parmi $10$ ?",
+      "verso": "Ecrire $4^{10}$ au lieu de $10^4 = 10\\,000$. La base est le nombre de choix offerts à chaque rang, l'exposant est le nombre de rangs à remplir.",
+      "difficulte": 3,
+      "tags": ["p-liste", "piege"]
+    },
+    {
+      "id": "1D-CH10-011",
+      "lecon": "Arrangements et permutations",
+      "type": "definition",
+      "recto": "Qu'est-ce qu'un $p$-arrangement des éléments d'un ensemble à $n$ éléments ?",
+      "verso": "C'est une liste ordonnée de $p$ éléments deux à deux distincts, avec $0 \\le p \\le n$ : l'ordre compte et il n'y a pas de répétition. C'est la situation du tirage successif sans remise.",
+      "difficulte": 1,
+      "tags": ["arrangement", "definition", "sans-remise"]
+    },
+    {
+      "id": "1D-CH10-012",
+      "lecon": "Arrangements et permutations",
+      "type": "formule",
+      "recto": "Quelles sont les deux écritures du nombre d'arrangements $A_n^p$ ?",
+      "verso": "$A_n^p = n\\times(n-1)\\times\\dots\\times(n-p+1)$, produit de $p$ facteurs décroissants à partir de $n$, et $A_n^p = \\dfrac{n!}{(n-p)!}$. La première sert à calculer, la seconde à démontrer.",
+      "difficulte": 1,
+      "tags": ["arrangement", "formule"]
+    },
+    {
+      "id": "1D-CH10-013",
+      "lecon": "Arrangements et permutations",
+      "type": "formule",
+      "recto": "Pourquoi le dernier facteur du produit donnant $A_n^p$ est-il $n-p+1$ ?",
+      "verso": "Parce que le produit compte exactement $p$ facteurs à partir de $n$ : avant la $p$-ième place, $p-1$ éléments sont déjà employés, il en reste donc $n-(p-1) = n-p+1$. Le contrôle $A_5^2 = 5\\times 4$ le confirme.",
+      "difficulte": 3,
+      "tags": ["arrangement", "formule", "controle"]
+    },
+    {
+      "id": "1D-CH10-014",
+      "lecon": "Arrangements et permutations",
+      "type": "definition",
+      "recto": "Qu'est-ce qu'une permutation des $n$ éléments d'un ensemble ?",
+      "verso": "C'est un arrangement de tous ses éléments, c'est-à-dire un rangement de l'ensemble dans un ordre donné. Leur nombre vaut $A_n^n = n! = n\\times(n-1)\\times\\dots\\times 2\\times 1$.",
+      "difficulte": 1,
+      "tags": ["permutation", "factorielle"]
+    },
+    {
+      "id": "1D-CH10-015",
+      "lecon": "Arrangements et permutations",
+      "type": "formule",
+      "recto": "Pourquoi pose-t-on la convention $0! = 1$ ?",
+      "verso": "Pour que la formule $A_n^p = \\dfrac{n!}{(n-p)!}$ reste valable jusqu'à $p = n$ : elle donne alors $\\dfrac{n!}{0!}$, qui doit être égal à $n!$. Par le sens aussi, il existe une seule façon de ne rien ranger.",
+      "difficulte": 2,
+      "tags": ["factorielle", "convention"]
+    },
+    {
+      "id": "1D-CH10-016",
+      "lecon": "Arrangements et permutations",
+      "type": "formule",
+      "recto": "Comment simplifie-t-on un quotient de factorielles comme $\\dfrac{10!}{8!}$ ?",
+      "verso": "On écrit la plus grande factorielle en s'arrêtant à la plus petite, puis on simplifie : $\\dfrac{10!}{8!} = \\dfrac{10\\times 9\\times 8!}{8!} = 90$. Il ne faut jamais développer $10!$ en entier pour diviser ensuite.",
+      "difficulte": 2,
+      "tags": ["factorielle", "simplification"]
+    },
+    {
+      "id": "1D-CH10-017",
+      "lecon": "Arrangements et permutations",
+      "type": "definition",
+      "recto": "Quelle conclusion faut-il tirer d'un calcul qui aboutit à $A_3^4$ ?",
+      "verso": "Que la modélisation est fausse : l'écriture $A_n^p$ n'a de sens que si $p \\le n$, car on ne peut pas choisir $4$ éléments distincts dans un ensemble qui n'en compte que $3$. Ce n'est pas un résultat nul, c'est une erreur.",
+      "difficulte": 3,
+      "tags": ["arrangement", "piege"]
+    },
+    {
+      "id": "1D-CH10-018",
+      "lecon": "Arrangements et permutations",
+      "type": "formule",
+      "recto": "Comment compte-t-on les anagrammes d'un mot de $5$ lettres dont une est écrite deux fois ?",
+      "verso": "On divise par $2!$ le nombre de rangements obtenus en distinguant artificiellement les deux exemplaires, car chaque mot lisible y figurait deux fois. Pour le mot FILLE, cela donne $\\dfrac{5!}{2!} = 60$ mots.",
+      "difficulte": 3,
+      "tags": ["anagramme", "permutation"]
+    },
+    {
+      "id": "1D-CH10-019",
+      "lecon": "Combinaisons",
+      "type": "definition",
+      "recto": "Qu'est-ce qu'une combinaison de $p$ éléments d'un ensemble à $n$ éléments ?",
+      "verso": "C'est une partie de cet ensemble ayant $p$ éléments : l'ordre ne compte pas et il n'y a pas de répétition. C'est la situation du tirage simultané, où les $p$ objets sont pris d'un seul coup.",
+      "difficulte": 1,
+      "tags": ["combinaison", "definition", "simultane"]
+    },
+    {
+      "id": "1D-CH10-020",
+      "lecon": "Combinaisons",
+      "type": "formule",
+      "recto": "Quelles sont les deux écritures du nombre de combinaisons $C_n^p$ ?",
+      "verso": "$C_n^p = \\dfrac{A_n^p}{p!}$, la plus commode pour calculer, et $C_n^p = \\dfrac{n!}{p!\\,(n-p)!}$, réservée aux démonstrations. Ainsi $C_5^2 = \\dfrac{5\\times 4}{2!} = 10$.",
+      "difficulte": 1,
+      "tags": ["combinaison", "formule"]
+    },
+    {
+      "id": "1D-CH10-021",
+      "lecon": "Combinaisons",
+      "type": "formule",
+      "recto": "Quels sont les trois modes de tirage de $p$ objets dans une urne qui en contient $n$ ?",
+      "verso": "Successif avec remise : ordre et répétitions, $n^p$ tirages. Successif sans remise : ordre sans répétition, $A_n^p$ tirages. Simultané : ni ordre ni répétition, $C_n^p$ tirages. On a toujours $C_n^p \\le A_n^p \\le n^p$.",
+      "difficulte": 2,
+      "tags": ["tirage", "combinaison", "arrangement"]
+    },
+    {
+      "id": "1D-CH10-022",
+      "lecon": "Combinaisons",
+      "type": "definition",
+      "recto": "Quel test permet de décider si l'ordre compte dans un énoncé de dénombrement ?",
+      "verso": "Echanger deux éléments de la réponse : si l'objet obtenu est différent, l'ordre compte. Les mots rôles, places, rangs, successivement l'annoncent ; les mots équipe, comité, main, simultanément annoncent le contraire.",
+      "difficulte": 2,
+      "tags": ["ordre", "reconnaissance"]
+    },
+    {
+      "id": "1D-CH10-023",
+      "lecon": "Combinaisons",
+      "type": "formule",
+      "recto": "Pourquoi divise-t-on $A_n^p$ par $p!$ pour obtenir le nombre de combinaisons ?",
+      "verso": "Parce que chaque partie de $p$ éléments produit exactement $p!$ listes ordonnées, une par rangement de ses éléments. Les $A_n^p$ listes se répartissent donc en paquets de même taille $p!$, et le nombre de parties est le nombre de paquets.",
+      "difficulte": 2,
+      "tags": ["combinaison", "demonstration"]
+    },
+    {
+      "id": "1D-CH10-024",
+      "lecon": "Combinaisons",
+      "type": "formule",
+      "recto": "Que valent les combinaisons $C_n^0$, $C_n^n$, $C_n^1$ et $C_n^{n-1}$ ?",
+      "verso": "$C_n^0 = 1$, car il n'y a qu'une façon de ne choisir personne ; $C_n^n = 1$, car il n'y en a qu'une de tout prendre ; $C_n^1 = n$, car choisir un seul élément revient à le désigner ; et $C_n^{n-1} = n$.",
+      "difficulte": 1,
+      "tags": ["combinaison", "cas-particuliers"]
+    },
+    {
+      "id": "1D-CH10-025",
+      "lecon": "Combinaisons",
+      "type": "formule",
+      "recto": "Qu'affirme la relation de symétrie des combinaisons ?",
+      "verso": "Que $C_n^p = C_n^{n-p}$ : choisir les $p$ éléments que l'on garde revient à choisir les $n-p$ que l'on écarte. Elle allège les calculs, puisque $C_{20}^{18} = C_{20}^{2} = 190$. Ce n'est ni $C_n^{p-1}$ ni $C_{n-p}^p$.",
+      "difficulte": 2,
+      "tags": ["combinaison", "symetrie"]
+    },
+    {
+      "id": "1D-CH10-026",
+      "lecon": "Combinaisons",
+      "type": "formule",
+      "recto": "Qu'énonce la formule de Pascal ?",
+      "verso": "Que $C_n^p + C_n^{p+1} = C_{n+1}^{p+1}$ pour tous entiers $n$ et $p$ vérifiant $0 \\le p \\le n$. Contrôle numérique : $C_4^1 + C_4^2 = 4 + 6 = 10$, et l'on a bien $C_5^2 = 10$.",
+      "difficulte": 2,
+      "tags": ["combinaison", "formule-de-pascal"]
+    },
+    {
+      "id": "1D-CH10-027",
+      "lecon": "Combinaisons",
+      "type": "formule",
+      "recto": "Pourquoi la formule de Pascal est-elle vraie ?",
+      "verso": "On isole un élément $x$ dans un ensemble à $n+1$ éléments. Une partie à $p+1$ éléments contient $x$, et il reste $C_n^p$ choix, ou ne le contient pas, et il en reste $C_n^{p+1}$. Ces deux familles couvrent tous les cas sans se recouper, donc leurs effectifs s'additionnent.",
+      "difficulte": 3,
+      "tags": ["formule-de-pascal", "demonstration"]
+    },
+    {
+      "id": "1D-CH10-028",
+      "lecon": "Combinaisons",
+      "type": "formule",
+      "recto": "Comment compte-t-on les tirages contenant au moins un objet d'une catégorie ?",
+      "verso": "Par le passage au contraire : on compte les tirages qui n'en contiennent aucun et on les retranche du total. Pour $3$ personnes choisies parmi $5$ hommes et $4$ femmes, les comités comptant au moins une femme sont $C_9^3 - C_5^3 = 84 - 10 = 74$.",
+      "difficulte": 2,
+      "tags": ["combinaison", "au-moins-un", "contraire"]
+    },
+    {
+      "id": "1D-CH10-029",
+      "lecon": "Combinaisons",
+      "type": "formule",
+      "recto": "Comment compte-t-on les tirages contenant exactement $k$ objets d'une catégorie ?",
+      "verso": "On sépare l'urne en deux parties, puis on multiplie le nombre de façons de choisir les $k$ objets dans la première par le nombre de façons de compléter dans la seconde. Un comité de $3$ avec exactement une femme donne $C_4^1\\times C_5^2 = 40$.",
+      "difficulte": 2,
+      "tags": ["combinaison", "condition"]
+    },
+    {
+      "id": "1D-CH10-030",
+      "lecon": "Combinaisons",
+      "type": "definition",
+      "recto": "Pourquoi une équipe de $3$ joueurs parmi $8$ ne se compte-t-elle pas comme un bureau de $3$ rôles ?",
+      "verso": "Parce que dans une équipe sans rôle particulier l'ordre ne compte pas : c'est $C_8^3 = 56$. Dans un bureau, les rôles distinguent les personnes et l'ordre compte : c'est $A_8^3 = 336$, soit $3!$ fois plus.",
+      "difficulte": 3,
+      "tags": ["combinaison", "arrangement", "piege"]
+    },
+    {
+      "id": "1D-CH10-031",
+      "lecon": "Formule du binôme et triangle de Pascal",
+      "type": "formule",
+      "recto": "Qu'énonce la formule du binôme pour $(a+b)^n$ ?",
+      "verso": "$(a+b)^n = C_n^0\\,b^n + C_n^1\\,a\\,b^{n-1} + C_n^2\\,a^2b^{n-2} + \\dots + C_n^n\\,a^n$, somme des termes $C_n^k\\,a^k\\,b^{n-k}$ pour $k$ allant de $0$ à $n$. Le développement a $n+1$ termes et, dans chacun, la somme des exposants vaut $n$.",
+      "difficulte": 2,
+      "tags": ["binome", "formule"]
+    },
+    {
+      "id": "1D-CH10-032",
+      "lecon": "Formule du binôme et triangle de Pascal",
+      "type": "formule",
+      "recto": "Comment développe-t-on $(a-b)^n$ à partir de la formule du binôme ?",
+      "verso": "On écrit $a - b = a + (-b)$ : les coefficients sont les mêmes que pour $(a+b)^n$, seuls les signes changent et alternent. Ainsi $(a-b)^3 = a^3 - 3a^2b + 3ab^2 - b^3$.",
+      "difficulte": 2,
+      "tags": ["binome", "difference", "signes"]
+    },
+    {
+      "id": "1D-CH10-033",
+      "lecon": "Formule du binôme et triangle de Pascal",
+      "type": "formule",
+      "recto": "Comment construit-on le triangle de Pascal sans calculer aucune factorielle ?",
+      "verso": "Chaque ligne commence et se termine par $1$, puisque $C_n^0 = C_n^n = 1$, et tout autre nombre est la somme des deux nombres placés au-dessus de lui, en vertu de la formule de Pascal. Chaque ligne est de plus symétrique.",
+      "difficulte": 2,
+      "tags": ["triangle-de-pascal", "construction"]
+    },
+    {
+      "id": "1D-CH10-034",
+      "lecon": "Formule du binôme et triangle de Pascal",
+      "type": "formule",
+      "recto": "Que vaut la somme des nombres d'une même ligne du triangle de Pascal ?",
+      "verso": "La ligne $n$ a pour somme $2^n$. On l'obtient en prenant $a = b = 1$ dans la formule du binôme, et l'on retrouve le nombre de parties d'un ensemble à $n$ éléments. Pour la ligne $4$ : $1+4+6+4+1 = 16 = 2^4$.",
+      "difficulte": 2,
+      "tags": ["triangle-de-pascal", "somme"]
+    },
+    {
+      "id": "1D-CH10-035",
+      "lecon": "Formule du binôme et triangle de Pascal",
+      "type": "formule",
+      "recto": "Pourquoi le coefficient $C_n^k$ apparaît-il dans le développement de $(a+b)^n$ ?",
+      "verso": "Parce que développer $(a+b)^n$ revient à prendre une lettre dans chacune des $n$ parenthèses. Le terme $a^k\\,b^{n-k}$ s'obtient en choisissant les $k$ parenthèses qui fournissent le $a$, ce qui se fait de $C_n^k$ façons.",
+      "difficulte": 3,
+      "tags": ["binome", "combinaison", "demonstration"]
+    },
+    {
+      "id": "1D-CH10-036",
+      "lecon": "Formule du binôme et triangle de Pascal",
+      "type": "formule",
+      "recto": "Comment obtient-on un seul coefficient d'un développement sans développer entièrement ?",
+      "verso": "On écrit le terme général $C_n^k\\,a^k\\,b^{n-k}$ avec les expressions de l'énoncé, puis on cherche la valeur de $k$ qui donne la puissance demandée. Pour $x^3$ dans $(x+2)^5$, on trouve $k = 3$, d'où $C_5^3\\times 2^2 = 40$.",
+      "difficulte": 3,
+      "tags": ["binome", "coefficient", "terme-general"]
+    },
+    {
+      "id": "1D-CH10-037",
+      "lecon": "Formule du binôme et triangle de Pascal",
+      "type": "definition",
+      "recto": "Pourquoi $(a+b)^n$ n'est-il pas égal à $a^n + b^n$ ?",
+      "verso": "Parce qu'il manque tous les termes croisés. Sur des nombres, $(2+3)^2 = 25$ alors que $2^2 + 3^2 = 13$ : le terme $2ab = 12$ est exactement ce qui manque.",
+      "difficulte": 2,
+      "tags": ["binome", "piege"]
+    },
+    {
+      "id": "1D-CH10-038",
+      "lecon": "Formule du binôme et triangle de Pascal",
+      "type": "definition",
+      "recto": "Quelle erreur guette le développement de $(2x+1)^3$ ?",
+      "verso": "Oublier d'élever le coefficient $2$ à la puissance : le terme en $x^3$ vaut $(2x)^3 = 8x^3$, et non $2x^3$. Il faut mettre toute l'expression entre parenthèses avant de l'élever à la puissance.",
+      "difficulte": 3,
+      "tags": ["binome", "piege"]
+    }
+  ]
+}

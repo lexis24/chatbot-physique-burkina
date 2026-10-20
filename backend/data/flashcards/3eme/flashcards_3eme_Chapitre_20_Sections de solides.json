@@ -1,0 +1,287 @@
+{
+  "niveau": "3ème",
+  "chapitre": "Chapitre 20 : Sections de solides",
+  "source": "maths/3eme/Chapitre_20_Sections_de_solides",
+  "nombre_cartes": 31,
+  "cartes": [
+    {
+      "id": "3E-CH20-001",
+      "lecon": "La nature d'une section plane",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on la section plane d'un solide ?",
+      "verso": "C'est la figure obtenue en coupant ce solide par un plan. Sa nature ne dépend pas seulement du solide : elle dépend surtout de la direction du plan de coupe.",
+      "difficulte": 1,
+      "tags": ["section-plane", "definition"]
+    },
+    {
+      "id": "3E-CH20-002",
+      "lecon": "La nature d'une section plane",
+      "type": "formule",
+      "recto": "Quelle est la nature de la section d'un pavé droit par un plan parallèle à sa base ?",
+      "verso": "C'est un polygone identique à la base : même forme et mêmes dimensions. Il en va de même pour tout prisme droit.",
+      "difficulte": 1,
+      "tags": ["pave-droit", "prisme-droit", "section-plane"]
+    },
+    {
+      "id": "3E-CH20-003",
+      "lecon": "La nature d'une section plane",
+      "type": "formule",
+      "recto": "Quelle est la nature de la section d'un pavé droit par un plan parallèle à une arête latérale ?",
+      "verso": "C'est un rectangle. Le plan descend le long des faces latérales au lieu de reproduire la base.",
+      "difficulte": 2,
+      "tags": ["pave-droit", "section-plane", "rectangle"]
+    },
+    {
+      "id": "3E-CH20-004",
+      "lecon": "La nature d'une section plane",
+      "type": "formule",
+      "recto": "Quelle est la nature de la section d'un cylindre par un plan parallèle à sa base ?",
+      "verso": "C'est un cercle de même rayon que la base : la coupe reproduit la base sans la déformer ni la réduire.",
+      "difficulte": 1,
+      "tags": ["cylindre", "section-plane", "cercle"]
+    },
+    {
+      "id": "3E-CH20-005",
+      "lecon": "La nature d'une section plane",
+      "type": "formule",
+      "recto": "Quelle est la nature de la section d'un cylindre par un plan parallèle à son axe ?",
+      "verso": "C'est un rectangle, et non un cercle : le plan traverse le cylindre de haut en bas. Seule la coupe parallèle à la base donne un cercle.",
+      "difficulte": 2,
+      "tags": ["cylindre", "section-plane", "rectangle"]
+    },
+    {
+      "id": "3E-CH20-006",
+      "lecon": "La nature d'une section plane",
+      "type": "definition",
+      "recto": "Dans la section d'un cylindre par un plan contenant son axe, à quoi correspond la largeur du rectangle obtenu ?",
+      "verso": "Au diamètre de la base, c'est-à-dire au double du rayon, car le plan traverse le cylindre de part en part. La longueur du rectangle, elle, est la hauteur du cylindre.",
+      "difficulte": 3,
+      "tags": ["cylindre", "diametre", "piege"]
+    },
+    {
+      "id": "3E-CH20-007",
+      "lecon": "La nature d'une section plane",
+      "type": "formule",
+      "recto": "Quelle est la nature de la section d'une pyramide ou d'un cône par un plan parallèle à la base ?",
+      "verso": "C'est une réduction de la base : la même forme, mais des dimensions multipliées par un coefficient $k$ inférieur à $1$.",
+      "difficulte": 2,
+      "tags": ["pyramide", "cone", "reduction"]
+    },
+    {
+      "id": "3E-CH20-008",
+      "lecon": "La nature d'une section plane",
+      "type": "definition",
+      "recto": "Pourquoi la section d'un cône parallèle à sa base n'a-t-elle pas le même rayon que la base ?",
+      "verso": "Parce que le cône se rétrécit vers son sommet : la coupe garde la forme de la base, mais pas sa taille. Pour un cylindre ou un prisme droit, au contraire, la coupe parallèle à la base la reproduit à l'identique.",
+      "difficulte": 3,
+      "tags": ["cone", "reduction", "piege"]
+    },
+    {
+      "id": "3E-CH20-009",
+      "lecon": "La nature d'une section plane",
+      "type": "formule",
+      "recto": "Quelle est la nature de la section d'une sphère par un plan ?",
+      "verso": "C'est toujours un cercle, quelle que soit la position du plan. Ce cercle est d'autant plus petit que le plan s'éloigne du centre de la sphère.",
+      "difficulte": 1,
+      "tags": ["sphere", "section-plane", "cercle"]
+    },
+    {
+      "id": "3E-CH20-010",
+      "lecon": "La nature d'une section plane",
+      "type": "formule",
+      "recto": "Comment calcule-t-on le rayon $r$ de la section d'une sphère de rayon $R$ par un plan situé à la distance $d$ de son centre ?",
+      "verso": "Le rayon vérifie $r^{2} = R^{2} - d^{2}$. Pour $R = 13$ et $d = 5$, on obtient $r^{2} = 169 - 25 = 144$, donc $r = 12$.",
+      "difficulte": 2,
+      "tags": ["sphere", "rayon", "formule"]
+    },
+    {
+      "id": "3E-CH20-011",
+      "lecon": "La nature d'une section plane",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on un grand cercle d'une sphère ?",
+      "verso": "C'est la section obtenue lorsque le plan de coupe passe par le centre. La distance $d$ vaut alors $0$ et le cercle a pour rayon $R$, celui de la sphère : c'est la plus grande section possible.",
+      "difficulte": 2,
+      "tags": ["sphere", "grand-cercle"]
+    },
+    {
+      "id": "3E-CH20-012",
+      "lecon": "La nature d'une section plane",
+      "type": "formule",
+      "recto": "D'où vient la relation $r^{2} = R^{2} - d^{2}$ entre le rayon d'une sphère et celui d'une de ses sections ?",
+      "verso": "Du théorème de Pythagore. En joignant le centre $O$ de la sphère au centre $H$ de la section, puis à un point $M$ du cercle, on obtient un triangle rectangle en $H$, avec $OM = R$, $OH = d$ et $HM = r$.",
+      "difficulte": 3,
+      "tags": ["sphere", "pythagore", "demonstration"]
+    },
+    {
+      "id": "3E-CH20-013",
+      "lecon": "Le théorème de Pythagore dans les solides",
+      "type": "formule",
+      "recto": "Quelle démarche suit-on pour calculer une longueur dans un solide ?",
+      "verso": "On extrait du solide une configuration plane, le plus souvent un triangle rectangle, on la dessine à plat en dehors du solide, puis on y applique le théorème de Pythagore.",
+      "difficulte": 1,
+      "tags": ["pythagore", "figure-plane", "methode"]
+    },
+    {
+      "id": "3E-CH20-014",
+      "lecon": "Le théorème de Pythagore dans les solides",
+      "type": "formule",
+      "recto": "Dans un cube d'arête $a$, combien mesure la diagonale d'une face ?",
+      "verso": "Elle mesure $a\\sqrt{2}$. Deux arêtes consécutives d'une face forment un triangle rectangle, et Pythagore y donne $a^{2} + a^{2} = 2a^{2}$.",
+      "difficulte": 1,
+      "tags": ["cube", "diagonale", "pythagore"]
+    },
+    {
+      "id": "3E-CH20-015",
+      "lecon": "Le théorème de Pythagore dans les solides",
+      "type": "formule",
+      "recto": "Dans un cube d'arête $a$, combien mesure la grande diagonale ?",
+      "verso": "Elle mesure $a\\sqrt{3}$. On l'obtient par Pythagore dans le triangle rectangle formé par la diagonale d'une face, $a\\sqrt{2}$, et une arête perpendiculaire à cette face, $a$.",
+      "difficulte": 1,
+      "tags": ["cube", "grande-diagonale", "pythagore"]
+    },
+    {
+      "id": "3E-CH20-016",
+      "lecon": "Le théorème de Pythagore dans les solides",
+      "type": "formule",
+      "recto": "Dans un pavé droit de dimensions $L$, $l$ et $h$, quelle relation vérifie la grande diagonale $D$ ?",
+      "verso": "Elle vérifie $D^{2} = L^{2} + l^{2} + h^{2}$. On calcule d'abord la diagonale de la base, $\\sqrt{L^{2} + l^{2}}$, puis on applique Pythagore une seconde fois avec la hauteur.",
+      "difficulte": 2,
+      "tags": ["pave-droit", "grande-diagonale", "pythagore"]
+    },
+    {
+      "id": "3E-CH20-017",
+      "lecon": "Le théorème de Pythagore dans les solides",
+      "type": "formule",
+      "recto": "Dans un cône de rayon $r$ et de hauteur $h$, quelle relation vérifie la génératrice $g$ ?",
+      "verso": "Elle vérifie $g^{2} = r^{2} + h^{2}$, car le triangle formé par la hauteur, un rayon de la base et la génératrice est rectangle au centre de la base.",
+      "difficulte": 2,
+      "tags": ["cone", "generatrice", "pythagore"]
+    },
+    {
+      "id": "3E-CH20-018",
+      "lecon": "Le théorème de Pythagore dans les solides",
+      "type": "definition",
+      "recto": "Dans une pyramide régulière à base carrée, quel triangle rectangle relie la hauteur à une arête latérale ?",
+      "verso": "Le triangle formé par la hauteur, la demi-diagonale de la base et cette arête latérale. Il est rectangle au pied de la hauteur, c'est-à-dire au centre du carré de base.",
+      "difficulte": 2,
+      "tags": ["pyramide", "arete-laterale", "pythagore"]
+    },
+    {
+      "id": "3E-CH20-019",
+      "lecon": "Le théorème de Pythagore dans les solides",
+      "type": "formule",
+      "recto": "Quel théorème permet de démontrer qu'un angle est droit dans un solide ?",
+      "verso": "La réciproque du théorème de Pythagore : si le carré du plus grand côté d'un triangle est égal à la somme des carrés des deux autres côtés, ce triangle est rectangle.",
+      "difficulte": 2,
+      "tags": ["reciproque", "pythagore", "angle-droit"]
+    },
+    {
+      "id": "3E-CH20-020",
+      "lecon": "Le théorème de Pythagore dans les solides",
+      "type": "formule",
+      "recto": "Pourquoi le calcul de la grande diagonale d'un pavé droit se mène-t-il en deux temps ?",
+      "verso": "Parce qu'on ne passe pas directement d'une arête à la grande diagonale : on calcule d'abord la diagonale de la base, et ce résultat devient une donnée du second triangle rectangle.",
+      "difficulte": 2,
+      "tags": ["pave-droit", "grande-diagonale", "methode"]
+    },
+    {
+      "id": "3E-CH20-021",
+      "lecon": "Le théorème de Pythagore dans les solides",
+      "type": "formule",
+      "recto": "Pourquoi la grande diagonale d'un cube d'arête $a$ ne vaut-elle pas $a\\sqrt{2} + a$ ?",
+      "verso": "Parce que la diagonale d'une face et l'arête verticale sont les deux côtés de l'angle droit d'un triangle rectangle : on ne les additionne pas, on leur applique Pythagore. La grande diagonale vaut $a\\sqrt{3}$.",
+      "difficulte": 3,
+      "tags": ["cube", "grande-diagonale", "piege"]
+    },
+    {
+      "id": "3E-CH20-022",
+      "lecon": "Le théorème de Pythagore dans les solides",
+      "type": "definition",
+      "recto": "Que faut-il justifier avant d'écrire la moindre égalité de Pythagore dans un solide ?",
+      "verso": "Que le triangle choisi est bien rectangle, en disant en une phrase où se trouve l'angle droit. Dans un solide, beaucoup de segments se croisent sans former d'angle droit.",
+      "difficulte": 3,
+      "tags": ["pythagore", "angle-droit", "piege"]
+    },
+    {
+      "id": "3E-CH20-023",
+      "lecon": "Le théorème de Thalès dans les solides",
+      "type": "formule",
+      "recto": "Quelle configuration crée une section parallèle à la base d'une pyramide ou d'un cône ?",
+      "verso": "Une configuration de Thalès, dans tout plan contenant le sommet : ce sommet joue le rôle du point de concours et la section y trace une parallèle à la base du triangle obtenu.",
+      "difficulte": 1,
+      "tags": ["thales", "section-plane", "pyramide"]
+    },
+    {
+      "id": "3E-CH20-024",
+      "lecon": "Le théorème de Thalès dans les solides",
+      "type": "definition",
+      "recto": "Dans une pyramide de sommet $S$ dont la hauteur $\\left[SI\\right]$ est coupée en $K$ par un plan parallèle à la base, comment définit-on le coefficient de réduction ?",
+      "verso": "Par le rapport des distances au sommet : $k = \\dfrac{SK}{SI}$. Ce nombre est inférieur à $1$, puisque la section est plus proche du sommet que la base.",
+      "difficulte": 2,
+      "tags": ["thales", "coefficient-de-reduction"]
+    },
+    {
+      "id": "3E-CH20-025",
+      "lecon": "Le théorème de Thalès dans les solides",
+      "type": "formule",
+      "recto": "Comment obtient-on les longueurs d'une section parallèle à la base à partir de celles de la base ?",
+      "verso": "On les multiplie par le coefficient de réduction $k$. Côté, rayon, diagonale et périmètre de la section valent tous $k$ fois la longueur correspondante de la base.",
+      "difficulte": 1,
+      "tags": ["thales", "coefficient-de-reduction", "longueur"]
+    },
+    {
+      "id": "3E-CH20-026",
+      "lecon": "Le théorème de Thalès dans les solides",
+      "type": "formule",
+      "recto": "Dans une réduction de coefficient $k$, par quels nombres sont multipliées les aires et les volumes ?",
+      "verso": "Les aires sont multipliées par $k^{2}$ et les volumes par $k^{3}$, alors que les longueurs le sont par $k$. Si les longueurs sont divisées par $2$, les aires le sont par $4$ et les volumes par $8$.",
+      "difficulte": 2,
+      "tags": ["reduction", "aire", "volume"]
+    },
+    {
+      "id": "3E-CH20-027",
+      "lecon": "Le théorème de Thalès dans les solides",
+      "type": "formule",
+      "recto": "Dans quel plan se place-t-on pour faire apparaître la configuration de Thalès d'une pyramide coupée parallèlement à sa base ?",
+      "verso": "Dans un plan contenant le sommet et deux sommets opposés de la base, par exemple le plan de la diagonale $\\left[AC\\right]$. Dessiné à plat, il donne un triangle coupé par une parallèle à sa base.",
+      "difficulte": 2,
+      "tags": ["thales", "figure-plane", "pyramide"]
+    },
+    {
+      "id": "3E-CH20-028",
+      "lecon": "Le théorème de Thalès dans les solides",
+      "type": "formule",
+      "recto": "Connaissant le rayon d'une section et celui de la base d'un cône, comment trouve-t-on la distance de cette section au sommet ?",
+      "verso": "On écrit l'égalité de Thalès $\\dfrac{SK}{SI} = \\dfrac{r}{R}$, puis on résout par produit en croix. Pour $SI = 15$ m, $r = 4$ m et $R = 10$ m, on obtient $SK = 15 \\times \\dfrac{2}{5} = 6$ m.",
+      "difficulte": 2,
+      "tags": ["thales", "cone", "lecture-inverse"]
+    },
+    {
+      "id": "3E-CH20-029",
+      "lecon": "Le théorème de Thalès dans les solides",
+      "type": "formule",
+      "recto": "Quel théorème permet de justifier qu'un plan de coupe est parallèle à la base d'une pyramide ?",
+      "verso": "La réciproque du théorème de Thalès : l'égalité des rapports des longueurs mesurées depuis le sommet entraîne le parallélisme du plan de coupe et de la base.",
+      "difficulte": 2,
+      "tags": ["reciproque", "thales", "parallelisme"]
+    },
+    {
+      "id": "3E-CH20-030",
+      "lecon": "Le théorème de Thalès dans les solides",
+      "type": "definition",
+      "recto": "Quelle condition le plan de coupe doit-il remplir pour qu'on puisse appliquer le théorème de Thalès dans un cône ?",
+      "verso": "Il doit être parallèle à la base. Une coupe oblique ne donne pas de configuration de Thalès, et les rapports de longueurs ne s'écrivent plus.",
+      "difficulte": 2,
+      "tags": ["thales", "condition", "parallelisme"]
+    },
+    {
+      "id": "3E-CH20-031",
+      "lecon": "Le théorème de Thalès dans les solides",
+      "type": "formule",
+      "recto": "Pourquoi le coefficient de réduction se lit-il depuis le sommet et non depuis la base ?",
+      "verso": "Parce que la réduction part du sommet. Pour une pyramide de $20$ cm de hauteur coupée à $5$ cm du sommet, $k = \\dfrac{5}{20}$, et non $\\dfrac{15}{20}$ : ce dernier rapport décrirait le tronc de pyramide, qui n'est pas une réduction de la base.",
+      "difficulte": 3,
+      "tags": ["thales", "coefficient-de-reduction", "piege"]
+    }
+  ]
+}

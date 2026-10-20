@@ -1,0 +1,350 @@
+{
+  "niveau": "1ère D",
+  "chapitre": "Chapitre 6 : Les fonctions numériques (généralités)",
+  "source": "maths/1ereD/Chapitre_6_Fonctions_numeriques",
+  "nombre_cartes": 38,
+  "cartes": [
+    {
+      "id": "1D-CH06-001",
+      "lecon": "Opérations sur les fonctions",
+      "type": "definition",
+      "recto": "A quelles deux conditions deux fonctions $f$ et $g$ sont-elles égales ?",
+      "verso": "Il faut d'abord qu'elles aient le même ensemble de définition, $D_f=D_g$, puis qu'elles prennent les mêmes valeurs, $f(x)=g(x)$ pour tout $x$ de cet ensemble commun. Si les valeurs coïncident seulement sur une partie $E$ de $\\mathbb{R}$, on dit que $f$ et $g$ coïncident sur $E$, et non qu'elles sont égales.",
+      "difficulte": 2,
+      "tags": ["egalite-de-fonctions", "ensemble-de-definition", "definition"]
+    },
+    {
+      "id": "1D-CH06-002",
+      "lecon": "Opérations sur les fonctions",
+      "type": "definition",
+      "recto": "Pourquoi une fonction ne se réduit-elle pas à une formule ?",
+      "verso": "Parce qu'une fonction est une correspondance : une formule accompagnée d'un ensemble de départ. Changer l'ensemble des nombres acceptés change la correspondance, donc la fonction. Deux fonctions données par la même formule sur deux ensembles différents ne sont pas la même fonction.",
+      "difficulte": 2,
+      "tags": ["fonction", "ensemble-de-definition", "vocabulaire"]
+    },
+    {
+      "id": "1D-CH06-003",
+      "lecon": "Opérations sur les fonctions",
+      "type": "formule",
+      "recto": "Comment définit-on les fonctions $\\lambda f$, $f+g$ et $fg$ à partir de $f$ et de $g$ ?",
+      "verso": "Point par point, sur les images : $(\\lambda f)(x)=\\lambda\\,f(x)$, $(f+g)(x)=f(x)+g(x)$ et $(fg)(x)=f(x)\\,g(x)$. La soustraction n'est pas une opération nouvelle, puisque $f-g=f+(-1)g$.",
+      "difficulte": 1,
+      "tags": ["operations", "definition"]
+    },
+    {
+      "id": "1D-CH06-004",
+      "lecon": "Opérations sur les fonctions",
+      "type": "formule",
+      "recto": "Quel est l'ensemble de définition de la somme $f+g$ et du produit $fg$ ?",
+      "verso": "$D_{f+g}=D_{fg}=D_f\\cap D_g$ : pour écrire $f(x)+g(x)$ ou $f(x)\\,g(x)$, il faut que les deux images existent. C'est la fonction la plus exigeante qui impose sa loi. En revanche $D_{\\lambda f}=D_f$, car multiplier par un réel fixe n'ajoute aucune contrainte.",
+      "difficulte": 1,
+      "tags": ["ensemble-de-definition", "somme", "produit"]
+    },
+    {
+      "id": "1D-CH06-005",
+      "lecon": "Opérations sur les fonctions",
+      "type": "formule",
+      "recto": "Quel est l'ensemble de définition du quotient $\\dfrac{f}{g}$ ?",
+      "verso": "C'est l'ensemble des $x$ de $D_f\\cap D_g$ tels que $g(x)\\ne 0$ : l'intersection des deux domaines, privée des zéros de $g$. Les zéros du numérateur, eux, ne gênent en rien : dans $\\dfrac{x-2}{x-5}$, la valeur $2$ est autorisée et donne l'image $0$.",
+      "difficulte": 2,
+      "tags": ["ensemble-de-definition", "quotient"]
+    },
+    {
+      "id": "1D-CH06-006",
+      "lecon": "Opérations sur les fonctions",
+      "type": "definition",
+      "recto": "Pourquoi $-2$ reste-t-il exclu du domaine de $x\\mapsto\\dfrac{x^2-4}{x+2}$ après simplification en $x-2$ ?",
+      "verso": "Parce que l'ensemble de définition se lit sur l'expression telle qu'elle est donnée, avant toute transformation. Simplifier ne fait pas disparaître une valeur interdite : on écrit d'abord le domaine, on simplifie ensuite.",
+      "difficulte": 3,
+      "tags": ["ensemble-de-definition", "simplification", "piege"]
+    },
+    {
+      "id": "1D-CH06-007",
+      "lecon": "Opérations sur les fonctions",
+      "type": "formule",
+      "recto": "Quelle condition d'existence impose un radical placé au dénominateur ?",
+      "verso": "Son contenu doit être strictement positif : positif ou nul pour que la racine existe, et non nul pour que la division soit possible. Ainsi $\\dfrac{1}{\\sqrt{2x-1}}$ exige $2x-1>0$, soit $x>\\dfrac12$.",
+      "difficulte": 2,
+      "tags": ["ensemble-de-definition", "radical", "denominateur"]
+    },
+    {
+      "id": "1D-CH06-008",
+      "lecon": "Opérations sur les fonctions",
+      "type": "definition",
+      "recto": "Comment lit-on l'ensemble de définition d'une fonction sur sa courbe ?",
+      "verso": "C'est la projection de la courbe sur l'axe des abscisses : un réel $x$ appartient à $D_f$ exactement lorsque la verticale d'abscisse $x$ rencontre la courbe. Un point plein signale une valeur atteinte, un petit cercle vide une valeur exclue.",
+      "difficulte": 2,
+      "tags": ["ensemble-de-definition", "lecture-graphique"]
+    },
+    {
+      "id": "1D-CH06-009",
+      "lecon": "Composition et restriction",
+      "type": "definition",
+      "recto": "Comment se calcule la composée $g\\circ f$ en un réel $x$ ?",
+      "verso": "$(g\\circ f)(x)=g\\big(f(x)\\big)$ : on applique $f$ d'abord, $g$ ensuite. Dans l'écriture $g\\circ f$, la fonction qui agit en premier est celle qui est écrite en dernier ; on lit donc l'expression de l'intérieur vers l'extérieur.",
+      "difficulte": 1,
+      "tags": ["composee", "definition", "notation"]
+    },
+    {
+      "id": "1D-CH06-010",
+      "lecon": "Composition et restriction",
+      "type": "formule",
+      "recto": "Quelles deux conditions un réel $x$ doit-il remplir pour appartenir à $D_{g\\circ f}$ ?",
+      "verso": "Il faut $x\\in D_f$ et $f(x)\\in D_g$ : le nombre produit par la première fonction doit encore être accepté par la seconde. C'est pourquoi le domaine d'une composée est presque toujours plus petit que celui de $f$.",
+      "difficulte": 2,
+      "tags": ["composee", "ensemble-de-definition"]
+    },
+    {
+      "id": "1D-CH06-011",
+      "lecon": "Composition et restriction",
+      "type": "definition",
+      "recto": "Pourquoi $g\\circ f$ et $f\\circ g$ ne sont-elles pas la même fonction ?",
+      "verso": "Parce que l'ordre des deux machines compte. Pour $f(x)=x-1$ et $g(x)=\\sqrt{x}$, on a $(g\\circ f)(x)=\\sqrt{x-1}$, définie pour $x\\ge 1$, alors que $(f\\circ g)(x)=\\sqrt{x}-1$, définie pour $x\\ge 0$ : ni les mêmes valeurs, ni les mêmes domaines.",
+      "difficulte": 3,
+      "tags": ["composee", "ordre", "piege"]
+    },
+    {
+      "id": "1D-CH06-012",
+      "lecon": "Composition et restriction",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on la restriction d'une fonction $f$ à un intervalle $I$ ?",
+      "verso": "C'est la fonction qui a pour ensemble de définition $I$, intervalle inclus dans $D_f$, et qui prend sur $I$ les mêmes valeurs que $f$. Restreindre ne change aucune valeur : cela change seulement l'ensemble de départ.",
+      "difficulte": 2,
+      "tags": ["restriction", "definition"]
+    },
+    {
+      "id": "1D-CH06-013",
+      "lecon": "Composition et restriction",
+      "type": "definition",
+      "recto": "Quel intérêt y a-t-il à restreindre une fonction à un intervalle bien choisi ?",
+      "verso": "Cela rend simple une fonction qui ne l'est pas. La fonction $x\\mapsto x^2$ n'est pas monotone sur $\\mathbb{R}$, mais sa restriction à $[0\\,;+\\infty[$ est strictement croissante, donc injective, et elle admet pour réciproque la fonction racine carrée.",
+      "difficulte": 2,
+      "tags": ["restriction", "monotonie"]
+    },
+    {
+      "id": "1D-CH06-014",
+      "lecon": "Composition et restriction",
+      "type": "definition",
+      "recto": "Quand dit-on qu'un ensemble $D$ est symétrique par rapport à $0$ ?",
+      "verso": "Lorsque, pour tout $x$ de $D$, le nombre $-x$ appartient aussi à $D$. C'est le cas de $\\mathbb{R}$, de $\\mathbb{R}^*$, de $[-3\\,;3]$ et de $\\mathbb{R}\\setminus\\{-2\\,;2\\}$ ; ce n'est le cas ni de $[0\\,;+\\infty[$ ni de $\\mathbb{R}\\setminus\\{1\\}$.",
+      "difficulte": 2,
+      "tags": ["ensemble-symetrique", "parite"]
+    },
+    {
+      "id": "1D-CH06-015",
+      "lecon": "Composition et restriction",
+      "type": "definition",
+      "recto": "Quelles deux conditions font d'une fonction $f$ une fonction paire ?",
+      "verso": "Son ensemble de définition $D_f$ doit être symétrique par rapport à $0$, et l'on doit avoir $f(-x)=f(x)$ pour tout $x$ de $D_f$. La condition sur le domaine se vérifie en premier : sans elle, l'écriture $f(-x)$ n'aurait aucun sens.",
+      "difficulte": 2,
+      "tags": ["fonction-paire", "definition"]
+    },
+    {
+      "id": "1D-CH06-016",
+      "lecon": "Composition et restriction",
+      "type": "definition",
+      "recto": "Quelle égalité caractérise une fonction impaire ?",
+      "verso": "L'égalité $f(-x)=-f(x)$ pour tout $x$ de $D_f$, l'ensemble $D_f$ devant lui aussi être symétrique par rapport à $0$. Toute puissance d'exposant impair est impaire, puisque $(-x)^3=-x^3$.",
+      "difficulte": 2,
+      "tags": ["fonction-impaire", "definition"]
+    },
+    {
+      "id": "1D-CH06-017",
+      "lecon": "Composition et restriction",
+      "type": "formule",
+      "recto": "Dans un repère orthogonal, quelle symétrie présente la courbe d'une fonction paire ?",
+      "verso": "Elle est symétrique par rapport à l'axe des ordonnées $(OJ)$ : les points d'abscisses $x$ et $-x$ sont à la même hauteur. Il suffit donc d'étudier $f$ sur l'ensemble d'étude $D_f\\cap[0\\,;+\\infty[$, puis de compléter par cette symétrie.",
+      "difficulte": 2,
+      "tags": ["fonction-paire", "symetrie", "ensemble-detude"]
+    },
+    {
+      "id": "1D-CH06-018",
+      "lecon": "Composition et restriction",
+      "type": "formule",
+      "recto": "Dans un repère orthogonal, quelle symétrie présente la courbe d'une fonction impaire ?",
+      "verso": "Elle est symétrique par rapport à l'origine $O$ du repère : les points d'abscisses $x$ et $-x$ sont à des hauteurs opposées. Si de plus $f$ est définie en $0$, alors $f(0)=-f(0)$, donc $f(0)=0$ et la courbe passe par l'origine.",
+      "difficulte": 2,
+      "tags": ["fonction-impaire", "symetrie", "origine"]
+    },
+    {
+      "id": "1D-CH06-019",
+      "lecon": "Composition et restriction",
+      "type": "formule",
+      "recto": "Quelle égalité démontre que la droite d'équation $x=a$ est un axe de symétrie de la courbe de $f$ ?",
+      "verso": "L'égalité $f(2a-x)=f(x)$ pour tout $x$ de $D_f$, le nombre $2a-x$ devant lui aussi appartenir à $D_f$. On l'écrit souvent $f(a+h)=f(a-h)$, forme plus commode dans les calculs.",
+      "difficulte": 2,
+      "tags": ["axe-de-symetrie", "courbe"]
+    },
+    {
+      "id": "1D-CH06-020",
+      "lecon": "Composition et restriction",
+      "type": "formule",
+      "recto": "Quelle égalité démontre que le point $\\Omega(a\\,;b)$ est un centre de symétrie de la courbe de $f$ ?",
+      "verso": "L'égalité $f(2a-x)+f(x)=2b$ pour tout $x$ de $D_f$, le nombre $2a-x$ restant dans $D_f$. Elle s'écrit aussi $f(a+h)+f(a-h)=2b$ : le point $\\Omega$ est alors le milieu de deux points de la courbe.",
+      "difficulte": 3,
+      "tags": ["centre-de-symetrie", "courbe"]
+    },
+    {
+      "id": "1D-CH06-021",
+      "lecon": "Composition et restriction",
+      "type": "definition",
+      "recto": "Quelle erreur guette l'élève qui vient d'établir qu'une fonction n'est pas paire ?",
+      "verso": "Conclure qu'elle est impaire. Les deux propriétés sont indépendantes, et le cas le plus fréquent est celui d'une fonction qui n'est ni paire ni impaire. Une seule fonction possède les deux propriétés à la fois : la fonction nulle.",
+      "difficulte": 3,
+      "tags": ["parite", "piege"]
+    },
+    {
+      "id": "1D-CH06-022",
+      "lecon": "Comparaison de fonctions",
+      "type": "definition",
+      "recto": "Que signifie l'écriture $f\\ge g$ sur un intervalle $K$ ?",
+      "verso": "Que $f(x)\\ge g(x)$ pour tout $x$ de $K$ : la courbe de $f$ est alors au-dessus de celle de $g$ sur cet intervalle. De même, $f\\ge 0$ sur $K$ signifie que la courbe de $f$ reste au-dessus de l'axe des abscisses.",
+      "difficulte": 1,
+      "tags": ["comparaison", "position-relative"]
+    },
+    {
+      "id": "1D-CH06-023",
+      "lecon": "Comparaison de fonctions",
+      "type": "formule",
+      "recto": "Par quel calcul compare-t-on deux fonctions $f$ et $g$ sur un intervalle ?",
+      "verso": "En étudiant le signe de la différence $f-g$, car $f(x)\\ge g(x)$ équivaut à $f(x)-g(x)\\ge 0$. On réduit la différence, on la factorise autant que possible, puis on dresse son tableau de signes.",
+      "difficulte": 1,
+      "tags": ["comparaison", "signe", "difference"]
+    },
+    {
+      "id": "1D-CH06-024",
+      "lecon": "Comparaison de fonctions",
+      "type": "definition",
+      "recto": "Que représentent les valeurs qui annulent la différence $f-g$ ?",
+      "verso": "Ce sont les abscisses des points d'intersection des deux courbes : là, les courbes ne sont pas l'une au-dessus de l'autre, elles se touchent. Ces racines sont les frontières qui séparent les zones où chaque fonction domine.",
+      "difficulte": 2,
+      "tags": ["comparaison", "intersection"]
+    },
+    {
+      "id": "1D-CH06-025",
+      "lecon": "Comparaison de fonctions",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on un majorant d'une fonction $f$ sur un ensemble $K$ ?",
+      "verso": "Un réel $M$ tel que $f(x)\\le M$ pour tout $x$ de $K$ ; la courbe reste alors sous la droite d'équation $y=M$, et l'on dit que $f$ est majorée sur $K$. De même, un minorant est un réel $m$ tel que $f(x)\\ge m$ sur $K$.",
+      "difficulte": 1,
+      "tags": ["majorant", "minorant", "definition"]
+    },
+    {
+      "id": "1D-CH06-026",
+      "lecon": "Comparaison de fonctions",
+      "type": "definition",
+      "recto": "Quand dit-on qu'une fonction $f$ est bornée sur un ensemble $K$ ?",
+      "verso": "Lorsqu'elle y est à la fois majorée et minorée, c'est-à-dire lorsqu'il existe deux réels $m$ et $M$ tels que $m\\le f(x)\\le M$ pour tout $x$ de $K$.",
+      "difficulte": 2,
+      "tags": ["fonction-bornee", "definition"]
+    },
+    {
+      "id": "1D-CH06-027",
+      "lecon": "Comparaison de fonctions",
+      "type": "definition",
+      "recto": "Quelle différence y a-t-il entre un majorant et un maximum ?",
+      "verso": "Un maximum est une valeur atteinte par la fonction, un majorant ne l'est pas forcément : $x\\mapsto\\dfrac{x^2}{x^2+1}$ est majorée par $1$ sans jamais valoir $1$. Un majorant n'est d'ailleurs jamais unique, car tout nombre plus grand convient aussi.",
+      "difficulte": 3,
+      "tags": ["majorant", "maximum", "piege"]
+    },
+    {
+      "id": "1D-CH06-028",
+      "lecon": "Comparaison de fonctions",
+      "type": "definition",
+      "recto": "Pourquoi faut-il toujours préciser l'ensemble sur lequel une fonction est majorée ?",
+      "verso": "Parce que la propriété dépend entièrement de cet ensemble : la fonction $x\\mapsto x^2$ est majorée par $4$ sur $[-2\\,;2]$, alors qu'elle n'est majorée par aucun nombre sur $\\mathbb{R}$.",
+      "difficulte": 3,
+      "tags": ["majorant", "intervalle"]
+    },
+    {
+      "id": "1D-CH06-029",
+      "lecon": "Comparaison de fonctions",
+      "type": "formule",
+      "recto": "Comment se comparent $x$ et $\\sqrt{x}$ sur $[0\\,;+\\infty[$ ?",
+      "verso": "La différence $x-\\sqrt{x}=\\sqrt{x}\\left(\\sqrt{x}-1\\right)$ change de signe en $1$ : sur $[0\\,;1]$ on a $x\\le\\sqrt{x}$, et sur $[1\\,;+\\infty[$ on a $x\\ge\\sqrt{x}$. Les deux fonctions sont égales en $0$ et en $1$.",
+      "difficulte": 2,
+      "tags": ["comparaison", "racine-carree"]
+    },
+    {
+      "id": "1D-CH06-030",
+      "lecon": "Sens de variation d'une fonction composée",
+      "type": "definition",
+      "recto": "Quand une fonction $f$ est-elle croissante, décroissante, puis monotone sur un intervalle $I$ ?",
+      "verso": "Elle est croissante lorsque $a<b$ entraîne $f(a)\\le f(b)$, donc lorsqu'elle conserve l'ordre ; décroissante lorsque $a<b$ entraîne $f(a)\\ge f(b)$, donc lorsqu'elle renverse l'ordre. Elle est monotone sur $I$ si elle y est croissante ou décroissante.",
+      "difficulte": 1,
+      "tags": ["sens-de-variation", "monotonie", "definition"]
+    },
+    {
+      "id": "1D-CH06-031",
+      "lecon": "Sens de variation d'une fonction composée",
+      "type": "formule",
+      "recto": "Comment le taux d'accroissement de $f$ renseigne-t-il sur son sens de variation ?",
+      "verso": "Le taux entre deux réels distincts vaut $T=\\dfrac{f(x_2)-f(x_1)}{x_2-x_1}$. Sur un intervalle $I$, $f$ est croissante si et seulement si $T\\ge 0$ pour tous $x_1\\ne x_2$ de $I$, et décroissante si et seulement si $T\\le 0$.",
+      "difficulte": 2,
+      "tags": ["taux-daccroissement", "sens-de-variation"]
+    },
+    {
+      "id": "1D-CH06-032",
+      "lecon": "Sens de variation d'une fonction composée",
+      "type": "definition",
+      "recto": "Que contient le tableau de variation d'une fonction ?",
+      "verso": "Une première ligne portant, dans l'ordre croissant, les bornes du domaine, les valeurs où le sens change et les valeurs interdites marquées d'une double barre ; une seconde ligne de flèches montantes ou descendantes, avec les valeurs de $f$ écrites à leurs extrémités.",
+      "difficulte": 2,
+      "tags": ["tableau-de-variation", "definition"]
+    },
+    {
+      "id": "1D-CH06-033",
+      "lecon": "Sens de variation d'une fonction composée",
+      "type": "definition",
+      "recto": "Comment repère-t-on un maximum, puis un minimum, dans un tableau de variation ?",
+      "verso": "Un maximum apparaît au sommet d'une flèche montante suivie d'une flèche descendante ; un minimum apparaît au creux d'une flèche descendante suivie d'une flèche montante.",
+      "difficulte": 1,
+      "tags": ["tableau-de-variation", "extremum"]
+    },
+    {
+      "id": "1D-CH06-034",
+      "lecon": "Sens de variation d'une fonction composée",
+      "type": "formule",
+      "recto": "Quelle règle donne le sens de variation de la composée $g\\circ f$ ?",
+      "verso": "La règle des signes : si $f$ et $g$ varient dans le même sens, $g\\circ f$ est croissante ; si elles varient en sens contraires, $g\\circ f$ est décroissante. On associe $+$ à croissante et $-$ à décroissante, puis on multiplie les deux signes.",
+      "difficulte": 1,
+      "tags": ["composee", "regle-des-signes", "sens-de-variation"]
+    },
+    {
+      "id": "1D-CH06-035",
+      "lecon": "Sens de variation d'une fonction composée",
+      "type": "formule",
+      "recto": "Quelle hypothèse sur les intervalles conditionne la règle des signes pour $g\\circ f$ ?",
+      "verso": "Il faut que $f$ soit monotone sur $I$ à valeurs dans un intervalle $J$, et que $g$ soit monotone sur $J$ tout entier, là où arrivent les images de $f$. Ecrire que $x\\mapsto x^2$ est croissante est faux en général : elle ne l'est que sur $[0\\,;+\\infty[$.",
+      "difficulte": 3,
+      "tags": ["composee", "monotonie", "hypotheses"]
+    },
+    {
+      "id": "1D-CH06-036",
+      "lecon": "Sens de variation d'une fonction composée",
+      "type": "formule",
+      "recto": "Quel est le sens de variation de la somme de deux fonctions croissantes sur un même intervalle ?",
+      "verso": "Elle est croissante : de $f(a)\\le f(b)$ et $g(a)\\le g(b)$ on tire, en additionnant membre à membre, $(f+g)(a)\\le (f+g)(b)$. De même, la somme de deux fonctions décroissantes est décroissante.",
+      "difficulte": 2,
+      "tags": ["somme", "sens-de-variation"]
+    },
+    {
+      "id": "1D-CH06-037",
+      "lecon": "Sens de variation d'une fonction composée",
+      "type": "formule",
+      "recto": "Pourquoi le produit de deux fonctions croissantes n'est-il pas toujours croissant ?",
+      "verso": "Parce que la règle d'addition membre à membre des inégalités n'a pas d'équivalent pour la multiplication lorsque les nombres peuvent être négatifs. Les fonctions $f(x)=x$ et $g(x)=x$ sont croissantes sur $\\mathbb{R}$, alors que leur produit $x\\mapsto x^2$ ne l'est pas.",
+      "difficulte": 3,
+      "tags": ["produit", "sens-de-variation", "piege"]
+    },
+    {
+      "id": "1D-CH06-038",
+      "lecon": "Sens de variation d'une fonction composée",
+      "type": "formule",
+      "recto": "Quel effet les transformations $f+\\lambda$, $f(x-\\lambda)$ et $\\lambda f$ ont-elles sur les variations de $f$ ?",
+      "verso": "$x\\mapsto f(x)+\\lambda$ translate la courbe verticalement et $x\\mapsto f(x-\\lambda)$ la translate horizontalement : dans les deux cas les variations sont inchangées. $x\\mapsto\\lambda f(x)$ multiplie les ordonnées par $\\lambda$ : les variations sont conservées si $\\lambda>0$, renversées si $\\lambda<0$.",
+      "difficulte": 2,
+      "tags": ["fonctions-associees", "translation", "sens-de-variation"]
+    }
+  ]
+}

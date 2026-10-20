@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Fiche de revision - 3eme - Chapitre 4 : Racine carree d'un nombre reel positif</title>
+<style>
+/* ===================================================================
+   FICHE DE REVISION, Collection Hakili Lab, Edition 2026
+   Feuille de style autonome, format A4 pret a imprimer.
+   Bleu #005CB9 · Vert #49A145
+   =================================================================== */
+:root{
+  --bleu:#005CB9; --bleu-fonce:#00429A; --bleu-pale:#E8F1FB; --bleu-bord:#B7D2EE;
+  --vert:#49A145; --vert-fonce:#2F7A2C; --vert-pale:#EDF7EC; --vert-bord:#BCE0B9;
+  --gris:#4A4A4A; --gris-clair:#E4E4E4; --rouge:#B3261E;
+}
+@page{
+  size:A4; margin:15mm;
+  @bottom-center{
+    content:"Collection Hakili Lab, Edition 2026  ·  Fiche de revision  ·  " counter(page) "/" counter(pages);
+    font-family:"Segoe UI",Calibri,Arial,sans-serif; font-size:6.6pt; color:#8A8A8A;
+  }
+}
+*{box-sizing:border-box;}
+body{
+  margin:0; font-family:"Segoe UI",Calibri,Arial,sans-serif;
+  font-size:8.4pt; line-height:1.26; color:#1B1B1B;
+}
+p{margin:0 0 3pt;}
+ul{margin:0 0 3pt; padding-left:11pt;}
+li{margin:0 0 1.2pt;}
+b,strong{color:var(--bleu-fonce);}
+
+/* ------------------------------ ENTETE ---------------------------- */
+.entete{
+  display:flex; align-items:stretch; border:1.6pt solid var(--bleu);
+  border-radius:2.5pt; overflow:hidden; margin-bottom:6pt;
+}
+.entete .num{
+  background:var(--bleu); color:#fff; font-size:20pt; font-weight:700;
+  padding:0 8pt; display:flex; align-items:center; justify-content:center; min-width:34pt;
+}
+.entete .txt{padding:3.5pt 8pt; flex:1;}
+.entete .niveau{
+  font-size:7pt; font-weight:700; letter-spacing:.9pt; color:var(--vert-fonce);
+}
+.entete h1{margin:0; font-size:13.5pt; line-height:1.12; color:var(--bleu-fonce); font-weight:700;}
+.entete .sous{font-size:7pt; color:var(--gris); margin-top:1pt;}
+
+/* --------------------------- BANDEAUX ----------------------------- */
+.bandeau{
+  color:#fff; font-weight:700; font-size:9pt; letter-spacing:1pt;
+  padding:2.4pt 7pt; border-radius:2pt; margin:3pt 0 4pt; break-after:avoid; page-break-after:avoid;
+}
+.bandeau.bleu{background:var(--bleu);}
+.bandeau.vert{background:var(--vert);}
+
+/* --------------------------- COLONNES ----------------------------- */
+.cols{column-count:2; column-gap:7mm; column-fill:balance;}
+
+.cols.bal{column-fill:balance;}
+.bloc{margin-bottom:5pt;}
+.keep{break-inside:avoid; page-break-inside:avoid;}
+
+/* --------------------------- LECONS ------------------------------- */
+h2.lecon{
+  margin:0 0 3pt; font-size:8.6pt; font-weight:700; color:#fff; background:var(--bleu-fonce);
+  padding:1.8pt 5pt; border-radius:1.5pt; break-after:avoid; page-break-after:avoid;
+}
+h3.rub{
+  margin:3.5pt 0 1.5pt; font-size:8.2pt; font-weight:700; color:var(--vert-fonce);
+  border-bottom:.7pt solid var(--vert-bord); padding-bottom:.8pt;
+  break-after:avoid; page-break-after:avoid;
+}
+
+/* --------------------------- ENCADRES ----------------------------- */
+.form{
+  background:var(--bleu-pale); border:.8pt solid var(--bleu-bord); border-left:2.6pt solid var(--bleu);
+  border-radius:2pt; padding:2.4pt 5pt; margin:2.2pt 0 3.4pt;
+  break-inside:avoid; page-break-inside:avoid;
+}
+.form .t{
+  display:block; font-size:6.8pt; font-weight:700; letter-spacing:.6pt;
+  color:var(--bleu); margin-bottom:1.5pt;
+}
+.form .c{text-align:center; font-size:9.1pt; margin:1.6pt 0;}
+.note{background:var(--vert-pale); border-left:2.4pt solid var(--vert); padding:2.4pt 5pt; border-radius:1.5pt; margin:2.5pt 0 4pt; break-inside:avoid;}
+
+/* --------------------------- TABLEAUX ----------------------------- */
+table{width:100%; border-collapse:collapse; font-size:7.6pt; margin:2pt 0 4pt; break-inside:avoid;}
+th{background:var(--bleu); color:#fff; font-weight:700; text-align:left; padding:1.8pt 4pt; font-size:7.2pt;}
+td{border:.6pt solid var(--gris-clair); padding:1.8pt 4pt; vertical-align:top;}
+tr{break-inside:avoid;}
+table.var td{text-align:center; font-size:8pt;}
+table.var td.lab{text-align:left; font-weight:700; color:var(--bleu-fonce); background:var(--bleu-pale);}
+
+/* ----------------------------- PIEGES ----------------------------- */
+table.pieges th:first-child{width:44%;}
+table.pieges td:first-child{color:var(--rouge); background:#FDF1F0;}
+.x{font-weight:700;}
+.v{color:var(--vert-fonce); font-weight:700;}
+
+/* ---------------------------- RECAP ------------------------------- */
+ol.recap{margin:0; padding-left:0; list-style:none; counter-reset:r;}
+ol.recap li{
+  counter-increment:r; position:relative; padding-left:13pt; margin-bottom:1.8pt;
+  break-inside:avoid;
+}
+ol.recap li::before{
+  content:counter(r); position:absolute; left:0; top:.3pt;
+  width:10pt; height:10pt; border-radius:50%; background:var(--vert); color:#fff;
+  font-size:6.6pt; font-weight:700; text-align:center; line-height:10pt;
+}
+
+/* --------------------------- MATHS -------------------------------- */
+.m{font-family:Cambria,Georgia,"Times New Roman",serif;}
+i,var{font-family:Cambria,Georgia,"Times New Roman",serif; font-style:italic;}
+.op{font-family:Cambria,Georgia,"Times New Roman",serif; font-style:normal;}
+.f{display:inline-block; vertical-align:middle; text-align:center;
+   margin:0 .12em; line-height:1.06; font-family:Cambria,Georgia,"Times New Roman",serif;}
+.f>span{display:block; padding:0 .2em;}
+.f>span:first-child{border-bottom:.6pt solid currentColor; padding-bottom:.08em;}
+.f>span:last-child{padding-top:.04em;}
+.rad{border-top:.6pt solid currentColor; padding-top:.12em;}
+/* line-height:0 evite que l'exposant n'ecarte les lignes ; position:relative le
+   repositionne sans qu'il heurte la barre de fraction ni le trait du radical. */
+sup,sub{font-size:.68em; line-height:0; position:relative; vertical-align:baseline;}
+sup{top:-.42em;}
+sub{bottom:-.22em;}
+.pt{white-space:nowrap;}
+/* Les fleches n'ont qu'un glyphe atrophie dans la fonte serif : on les force
+   en sans-serif, ou elles sont franches meme a 8 pt. */
+.ar{font-family:"Segoe UI",Calibri,Arial,"DejaVu Sans",sans-serif; font-style:normal;}
+
+/* ------------------- PIEGES : blocs erreur / correction ------------- */
+.pg{font-size:8.1pt; border-left:2.4pt solid var(--rouge); background:#FDF1F0; border-radius:1.5pt;
+    padding:2pt 5pt; margin:0 0 2.8pt; break-inside:avoid; page-break-inside:avoid;}
+.pg .err{color:var(--rouge); font-weight:600;}
+.pg .cor{color:#1B1B1B; margin-top:.8pt;}
+.pg .cor b{color:var(--bleu-fonce);}
+.v{color:var(--vert-fonce); font-weight:700;}
+
+</style>
+</head>
+<body>
+<header class="entete">
+  <div class="num">4</div>
+  <div class="txt">
+    <div class="niveau">3EME &middot; MATHEMATIQUES</div>
+    <h1>Racine carrée d'un nombre réel positif</h1>
+    <div class="sous">Leçon 1 : racine carrée et carrés parfaits &middot; Leçon 2 : calculs sur les radicaux &middot; Leçon 3 : comparaison par les carrés &middot; Leçon 4 : racine carrée et valeur absolue &middot; Leçon 5 : expression conjuguée et dénominateur rationnel &middot; Leçon 6 : équations <i>x</i><sup>2</sup>&#8239;=&#8239;<i>a</i></div>
+  </div>
+</header>
+
+<div class="bandeau bleu" style="margin-top:0">L'ESSENTIEL</div>
+<div class="cols">
+
+<!-- ================= LECON 1 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 1&nbsp;: Racine carrée et carrés parfaits</h2>
+<div class="form">
+  <span class="t">DEFINITION&nbsp;: pour <i>a</i>&#8239;&#8805;&#8239;0</span>
+  <div class="c m">&#8730;<span class="rad"><i>a</i></span> est le nombre <b>positif</b> dont le carré vaut <i>a</i></div>
+  <div class="c m">&#8730;<span class="rad"><i>a</i></span>&#8239;&#215;&#8239;&#8730;<span class="rad"><i>a</i></span>&#8239;=&#8239;<i>a</i> &nbsp;&nbsp;&nbsp; (&#8730;<span class="rad"><i>a</i></span>)<sup>2</sup>&#8239;=&#8239;<i>a</i></div>
+</div></div>
+<ul>
+<li>&#8730;<span class="rad"><i>a</i></span> <b>n'existe que si <i>a</i>&#8239;&#8805;&#8239;0</b> : un nombre négatif n'a pas de racine carrée.</li>
+<li>&#8730;<span class="rad">0</span>&#8239;=&#8239;0 &nbsp;&middot;&nbsp; &#8730;<span class="rad">1</span>&#8239;=&#8239;1 &nbsp;&middot;&nbsp; pour tout <i>a</i>&#8239;&#8805;&#8239;0 : <span class="pt">&#8730;<span class="rad"><i>a</i><sup>2</sup></span>&#8239;=&#8239;<i>a</i></span>.</li>
+<li>Géométriquement, &#8730;<span class="rad"><i>a</i></span> est le <b>côté d'un carré d'aire <i>a</i></b> : chercher une racine, c'est chercher un côté connaissant une aire.</li>
+<li>Un <b>carré parfait</b> est un nombre dont la racine carrée est un <b>entier</b>.</li>
+</ul>
+<div class="form">
+  <span class="t">LES CARRES PARFAITS&nbsp;: A RECITER DANS LES DEUX SENS</span>
+  <div class="c m">1 &#8226; 4 &#8226; 9 &#8226; 16 &#8226; 25 &#8226; 36 &#8226; 49 &#8226; 64 &#8226; 81 &#8226; 100 &#8226; 121 &#8226; 144</div>
+</div>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Décimaux, grands nombres, encadrement</h3>
+<p>La même liste sert pour les décimaux, à condition de compter les chiffres après la virgule <b>par paires</b> ; pour les grands nombres, on compte les zéros par paires.</p>
+<div class="form">
+  <div class="c m">&#8730;<span class="rad">0,49</span>&#8239;=&#8239;0,7 &nbsp;&nbsp; &#8730;<span class="rad">0,04</span>&#8239;=&#8239;0,2 &nbsp;&nbsp; &#8730;<span class="rad">1,44</span>&#8239;=&#8239;1,2 &nbsp;&nbsp; &#8730;<span class="rad">3&#8239;600</span>&#8239;=&#8239;60</div>
+</div>
+<p>Si <i>a</i> n'est pas un carré parfait, on l'<b>encadre entre les deux carrés parfaits voisins</b> : on obtient &#8730;<span class="rad"><i>a</i></span> entre deux entiers consécutifs. Ainsi <span class="pt">25&#8239;&lt;&#8239;30&#8239;&lt;&#8239;36</span> donne <span class="pt">5&#8239;&lt;&#8239;&#8730;<span class="rad">30</span>&#8239;&lt;&#8239;6</span>.</p>
+</div>
+
+<!-- ================= LECON 2 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 2&nbsp;: Calculs sur les radicaux</h2>
+<div class="form">
+  <span class="t">PRODUIT ET QUOTIENT&nbsp;: JAMAIS LA SOMME</span>
+  <div class="c m">&#8730;<span class="rad"><i>a</i>&#8239;&#215;&#8239;<i>b</i></span>&#8239;=&#8239;&#8730;<span class="rad"><i>a</i></span>&#8239;&#215;&#8239;&#8730;<span class="rad"><i>b</i></span> &nbsp;<span style="font-size:7.5pt">(<i>a</i>&#8239;&#8805;&#8239;0, <i>b</i>&#8239;&#8805;&#8239;0)</span></div>
+  <div class="c m"><span class="pt">&#8730;<span class="rad"><span class="f"><span><i>a</i></span><span><i>b</i></span></span></span>&#8239;=&#8239;<span class="f"><span>&#8730;<span class="rad"><i>a</i></span></span><span>&#8730;<span class="rad"><i>b</i></span></span></span></span> &nbsp;<span style="font-size:7.5pt">(<i>a</i>&#8239;&#8805;&#8239;0, <i>b</i>&#8239;&gt;&#8239;0)</span></div>
+</div></div>
+<p><b>Simplifier un radical</b>, c'est en <b>extraire le plus grand facteur carré parfait</b> : <span class="pt">&#8730;<span class="rad">18</span>&#8239;=&#8239;&#8730;<span class="rad">9&#8239;&#215;&#8239;2</span>&#8239;=&#8239;3&#8730;<span class="rad">2</span></span>. Le nombre restant sous le radical ne doit plus avoir aucun facteur carré parfait.</p>
+<div class="form">
+  <span class="t">SOMME DE RADICAUX SEMBLABLES</span>
+  <div class="c m"><i>a</i>&#8730;<span class="rad"><i>c</i></span>&#8239;+&#8239;<i>b</i>&#8730;<span class="rad"><i>c</i></span>&#8239;=&#8239;(<i>a</i>&#8239;+&#8239;<i>b</i>)&#8730;<span class="rad"><i>c</i></span></div>
+</div>
+<p>On n'additionne que des radicaux portant le <b>même nombre</b> sous le radical : c'est la règle de 3<i>x</i>&#8239;+&#8239;5<i>x</i>, où &#8730;<span class="rad">2</span> joue le rôle de la lettre.</p>
+<div class="note"><b>Simplifie avant de conclure.</b> &#8730;<span class="rad">8</span> et &#8730;<span class="rad">18</span> semblent étrangers, mais valent 2&#8730;<span class="rad">2</span> et 3&#8730;<span class="rad">2</span> : leur somme se réduit en 5&#8730;<span class="rad">2</span>.</div>
+</div>
+
+<!-- ================= LECON 3 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 3&nbsp;: Comparaison par les carrés</h2>
+<div class="form">
+  <span class="t">PROPRIETE&nbsp;: POUR <i>a</i> ET <i>b</i> POSITIFS SEULEMENT</span>
+  <div class="c m"><i>a</i>&#8239;&lt;&#8239;<i>b</i> <b>si et seulement si</b> <i>a</i><sup>2</sup>&#8239;&lt;&#8239;<i>b</i><sup>2</sup></div>
+  <div class="c m"><i>a</i>&#8239;&lt;&#8239;<i>b</i> <b>si et seulement si</b> &#8730;<span class="rad"><i>a</i></span>&#8239;&lt;&#8239;&#8730;<span class="rad"><i>b</i></span></div>
+</div></div>
+<ul>
+<li>Pour comparer deux nombres <b>positifs</b> écrits avec des radicaux, on compare leurs <b>carrés</b> : les radicaux disparaissent.</li>
+<li>La racine carrée <b>conserve l'ordre</b> des nombres positifs.</li>
+<li>Cas d'un radical et d'un entier : le carré du radical est le <b>nombre écrit dessous</b>. Pour &#8730;<span class="rad">30</span> et 5, on compare 30 et 5<sup>2</sup>&#8239;=&#8239;25, d'où <span class="pt">&#8730;<span class="rad">30</span>&#8239;&gt;&#8239;5</span>.</li>
+<li>Propriété <b>fausse pour des négatifs</b> : &#8722;3&#8239;&lt;&#8239;2, alors que (&#8722;3)<sup>2</sup>&#8239;=&#8239;9&#8239;&gt;&#8239;4&#8239;=&#8239;2<sup>2</sup>.</li>
+</ul>
+</div>
+
+<!-- ================= LECON 4 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 4&nbsp;: Racine carrée et valeur absolue</h2>
+<div class="form">
+  <span class="t">RACINE CARREE D'UN CARRE&nbsp;: POUR TOUT REEL <i>a</i></span>
+  <div class="c m">&#8730;<span class="rad"><i>a</i><sup>2</sup></span>&#8239;=&#8239;|<i>a</i>|</div>
+</div></div>
+<ul>
+<li>Si <i>a</i>&#8239;&#8805;&#8239;0 : <span class="pt">&#8730;<span class="rad"><i>a</i><sup>2</sup></span>&#8239;=&#8239;<i>a</i></span>. Si <i>a</i>&#8239;&lt;&#8239;0 : <span class="pt">&#8730;<span class="rad"><i>a</i><sup>2</sup></span>&#8239;=&#8239;&#8722;<i>a</i></span>, l'<b>opposé</b> de <i>a</i>, qui est positif.</li>
+<li>Pour toute expression <i>A</i> : <span class="pt">&#8730;<span class="rad"><i>A</i><sup>2</sup></span>&#8239;=&#8239;|<i>A</i>|</span>. Il faut <b>étudier le signe de <i>A</i></b> pour supprimer les barres ; tant que ce signe est inconnu, on les garde.</li>
+<li>Pour connaître ce signe, on <b>encadre le radical</b> : 1&#8239;&lt;&#8239;&#8730;<span class="rad">3</span>&#8239;&lt;&#8239;2, donc 1&#8239;&#8722;&#8239;&#8730;<span class="rad">3</span> est négatif et <span class="pt">|1&#8239;&#8722;&#8239;&#8730;<span class="rad">3</span>|&#8239;=&#8239;&#8730;<span class="rad">3</span>&#8239;&#8722;&#8239;1</span>.</li>
+</ul>
+<div class="note">Quand l'expression est <b>négative</b>, sa valeur absolue s'obtient en <b>échangeant les deux termes</b> de la soustraction.</div>
+</div>
+
+<!-- ================= LECON 5 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 5&nbsp;: Expression conjuguée ; rendre rationnel un dénominateur</h2>
+<p><b>Rendre rationnel un dénominateur</b>, c'est écrire une fraction <b>sans radical au dénominateur</b>. Le numérateur, lui, peut en garder un.</p></div>
+<div class="form">
+  <span class="t">CAS SIMPLE&nbsp;: UN SEUL RADICAL EN BAS (<i>b</i>&#8239;&gt;&#8239;0)</span>
+  <div class="c m"><span class="f"><span><i>a</i></span><span>&#8730;<span class="rad"><i>b</i></span></span></span>&#8239;=&#8239;<span class="f"><span><i>a</i>&#8730;<span class="rad"><i>b</i></span></span><span><i>b</i></span></span></div>
+</div>
+<div class="form">
+  <span class="t">EXPRESSION CONJUGUEE&nbsp;: ON CHANGE LE SIGNE DU MILIEU</span>
+  <div class="c m">(<i>a</i>&#8239;+&#8239;&#8730;<span class="rad"><i>b</i></span>)(<i>a</i>&#8239;&#8722;&#8239;&#8730;<span class="rad"><i>b</i></span>)&#8239;=&#8239;<i>a</i><sup>2</sup>&#8239;&#8722;&#8239;<i>b</i></div>
+  <div class="c m">(&#8730;<span class="rad"><i>a</i></span>&#8239;+&#8239;&#8730;<span class="rad"><i>b</i></span>)(&#8730;<span class="rad"><i>a</i></span>&#8239;&#8722;&#8239;&#8730;<span class="rad"><i>b</i></span>)&#8239;=&#8239;<i>a</i>&#8239;&#8722;&#8239;<i>b</i></div>
+</div>
+<p>Pour <span class="pt"><span class="f"><span><i>c</i></span><span><i>a</i>&#8239;+&#8239;&#8730;<span class="rad"><i>b</i></span></span></span></span>, on multiplie le <b>numérateur et le dénominateur</b> par le conjugué <span class="pt"><i>a</i>&#8239;&#8722;&#8239;&#8730;<span class="rad"><i>b</i></span></span>, puis on développe le bas avec l'identité ci-dessus et l'on simplifie. Rien de nouveau : les fractions égales et (<i>a</i>&#8239;+&#8239;<i>b</i>)(<i>a</i>&#8239;&#8722;&#8239;<i>b</i>)&#8239;=&#8239;<i>a</i><sup>2</sup>&#8239;&#8722;&#8239;<i>b</i><sup>2</sup>.</p>
+</div>
+
+<!-- ================= LECON 6 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 6&nbsp;: Résolution de l'équation <i>x</i><sup>2</sup> = <i>a</i></h2>
+<table>
+<tr><th>Signe de <i>a</i></th><th>Solutions de <span class="m"><i>x</i><sup>2</sup>&#8239;=&#8239;<i>a</i></span></th></tr>
+<tr><td><i>a</i>&#8239;&gt;&#8239;0</td><td class="m"><b>deux</b> solutions : <i>x</i>&#8239;=&#8239;&#8730;<span class="rad"><i>a</i></span> ou <i>x</i>&#8239;=&#8239;&#8722;&#8730;<span class="rad"><i>a</i></span></td></tr>
+<tr><td><i>a</i>&#8239;=&#8239;0</td><td class="m">une seule solution : <i>x</i>&#8239;=&#8239;0</td></tr>
+<tr><td><i>a</i>&#8239;&lt;&#8239;0</td><td class="m"><b>aucune</b> solution : un carré n'est jamais négatif</td></tr>
+</table></div>
+<ul>
+<li>On <b>isole d'abord <i>x</i><sup>2</sup></b> : 3<i>x</i><sup>2</sup>&#8239;=&#8239;27 donne <i>x</i><sup>2</sup>&#8239;=&#8239;9, puis <i>x</i>&#8239;=&#8239;3 ou <i>x</i>&#8239;=&#8239;&#8722;3.</li>
+<li>Dans un problème de <b>longueur, d'aire ou de masse</b>, on ne garde que la solution <b>positive</b>, et on le dit explicitement.</li>
+<li>Deux écritures voisines : &#8730;<span class="rad"><i>a</i></span> <b>désigne un nombre</b>, toujours positif ; <span class="pt"><i>x</i><sup>2</sup>&#8239;=&#8239;<i>a</i></span> <b>pose une question</b>, dont la réponse comporte deux nombres.</li>
+</ul>
+</div>
+
+</div>
+
+<div class="bandeau vert">PIEGES ET ERREURS FREQUENTES</div>
+<div class="cols">
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> &#8730;<span class="rad">&#8722;9</span>&#8239;=&#8239;&#8722;3 &nbsp;&middot;&nbsp; &#8730;<span class="rad">49</span>&#8239;=&#8239;7 ou &#8722;7</div><div class="cor"><span class="v">&#10003;</span> Un nombre <b>négatif n'a pas de racine carrée</b> : &#8730;<span class="rad">&#8722;9</span> n'a aucun sens, car aucune aire n'est négative. Et &#8730;<span class="rad"><i>a</i></span> est <b>toujours positif</b> : &#8730;<span class="rad">49</span>&#8239;=&#8239;7, un seul nombre. « Les nombres dont le carré vaut 49 », 7 <b>et</b> &#8722;7, est une autre question (leçon 6).</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> &#8730;<span class="rad"><i>a</i>&#8239;+&#8239;<i>b</i></span>&#8239;=&#8239;&#8730;<span class="rad"><i>a</i></span>&#8239;+&#8239;&#8730;<span class="rad"><i>b</i></span></div><div class="cor"><span class="v">&#10003;</span> Faux : la règle vaut pour le <b>produit</b> et le <b>quotient</b>, jamais pour la somme. Contre-exemple : <span class="pt">&#8730;<span class="rad">9&#8239;+&#8239;16</span>&#8239;=&#8239;&#8730;<span class="rad">25</span>&#8239;=&#8239;5</span>, alors que &#8730;<span class="rad">9</span>&#8239;+&#8239;&#8730;<span class="rad">16</span>&#8239;=&#8239;3&#8239;+&#8239;4&#8239;=&#8239;7.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> 3&#8730;<span class="rad">2</span>&#8239;+&#8239;5&#8730;<span class="rad">3</span>&#8239;=&#8239;8&#8730;<span class="rad">5</span> &nbsp;&middot;&nbsp; « &#8730;<span class="rad">8</span>&#8239;+&#8239;&#8730;<span class="rad">18</span> ne se réduit pas »</div><div class="cor"><span class="v">&#10003;</span> On n'additionne que des radicaux ayant le <b>même nombre dessous</b>, et l'on ajoute alors les <b>coefficients</b> : 3&#8730;<span class="rad">2</span>&#8239;+&#8239;5&#8730;<span class="rad">3</span> reste tel quel. Mais <b>simplifie d'abord</b> : &#8730;<span class="rad">8</span>&#8239;+&#8239;&#8730;<span class="rad">18</span>&#8239;=&#8239;2&#8730;<span class="rad">2</span>&#8239;+&#8239;3&#8730;<span class="rad">2</span>&#8239;=&#8239;5&#8730;<span class="rad">2</span>.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> &#8730;<span class="rad">48</span>&#8239;=&#8239;2&#8730;<span class="rad">12</span>, annoncé comme simplifié</div><div class="cor"><span class="v">&#10003;</span> Simplification <b>incomplète</b> : 12 contient encore le carré 4. On extrait le <b>plus grand</b> carré parfait : <span class="pt">&#8730;<span class="rad">48</span>&#8239;=&#8239;&#8730;<span class="rad">16&#8239;&#215;&#8239;3</span>&#8239;=&#8239;4&#8730;<span class="rad">3</span></span>. Contrôle : le nombre restant sous le radical n'a plus aucun facteur carré parfait.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> &#8722;5&#8239;&lt;&#8239;&#8722;2, donc (&#8722;5)<sup>2</sup>&#8239;&lt;&#8239;(&#8722;2)<sup>2</sup></div><div class="cor"><span class="v">&#10003;</span> La comparaison par les carrés ne vaut que pour des nombres <b>positifs</b> : ici 25&#8239;&gt;&#8239;4, l'ordre s'est retourné. <b>Vérifie le signe des deux nombres avant d'élever au carré.</b></div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> &#8730;<span class="rad">(&#8722;5)<sup>2</sup></span>&#8239;=&#8239;&#8722;5 &nbsp;&middot;&nbsp; &#8730;<span class="rad"><i>A</i><sup>2</sup></span>&#8239;=&#8239;<i>A</i> sans regarder le signe</div><div class="cor"><span class="v">&#10003;</span> L'erreur la plus fréquente du chapitre. <span class="pt">&#8730;<span class="rad"><i>a</i><sup>2</sup></span>&#8239;=&#8239;|<i>a</i>|</span> : le résultat est positif, donc &#8730;<span class="rad">(&#8722;5)<sup>2</sup></span>&#8239;=&#8239;&#8730;<span class="rad">25</span>&#8239;=&#8239;5. L'égalité &#8730;<span class="rad"><i>a</i><sup>2</sup></span>&#8239;=&#8239;<i>a</i> n'est vraie que <b>si <i>a</i> est positif</b>.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> <span class="f"><span>2</span><span>1&#8239;+&#8239;&#8730;<span class="rad">3</span></span></span>&#8239;=&#8239;<span class="f"><span>2(1&#8239;&#8722;&#8239;&#8730;<span class="rad">3</span>)</span><span>1&#8239;+&#8239;3</span></span></div><div class="cor"><span class="v">&#10003;</span> Deux fautes. On multiplie le haut <b>et</b> le bas par le conjugué, sinon la fraction change de valeur ; et le produit vaut <i>a</i><sup>2</sup>&#8239;&#8722;&#8239;<i>b</i>, ici 1&#8239;&#8722;&#8239;3&#8239;=&#8239;&#8722;2, un nombre <b>négatif</b> dont il faut tenir compte : <span class="pt"><span class="f"><span>2</span><span>1&#8239;+&#8239;&#8730;<span class="rad">3</span></span></span>&#8239;=&#8239;&#8730;<span class="rad">3</span>&#8239;&#8722;&#8239;1</span>.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> <i>x</i><sup>2</sup>&#8239;=&#8239;49 donc <i>x</i>&#8239;=&#8239;7 &nbsp;&middot;&nbsp; <i>x</i><sup>2</sup>&#8239;=&#8239;&#8722;4 donc <i>x</i>&#8239;=&#8239;&#8722;2</div><div class="cor"><span class="v">&#10003;</span> Pour <i>a</i>&#8239;&gt;&#8239;0, l'équation a <b>deux</b> solutions, &#8730;<span class="rad"><i>a</i></span> et &#8722;&#8730;<span class="rad"><i>a</i></span> : <i>x</i>&#8239;=&#8239;7 <b>ou</b> <i>x</i>&#8239;=&#8239;&#8722;7. Pour <i>a</i>&#8239;&lt;&#8239;0, il n'y a <b>aucune</b> solution. Si <i>x</i> est une longueur, seule la solution positive est retenue : dis-le, au lieu de faire disparaître l'autre.</div></div>
+
+</div>
+
+<div class="bandeau bleu">A SAVOIR PAR COEUR AVANT LE DEVOIR</div>
+<div class="cols">
+<ol class="recap">
+<li>&#8730;<span class="rad"><i>a</i></span> est le nombre <b>positif</b> dont le carré vaut <i>a</i> ; il n'existe que pour <i>a</i>&#8239;&#8805;&#8239;0, et (&#8730;<span class="rad"><i>a</i></span>)<sup>2</sup>&#8239;=&#8239;<i>a</i>. Les <b>carrés parfaits</b> : 1, 4, 9, 16, 25, 36, 49, 64, 81, 100, 121, 144.</li>
+<li><b>Produit et quotient seulement</b> : <span class="pt">&#8730;<span class="rad"><i>a</i>&#8239;&#215;&#8239;<i>b</i></span>&#8239;=&#8239;&#8730;<span class="rad"><i>a</i></span>&#8239;&#215;&#8239;&#8730;<span class="rad"><i>b</i></span></span> (<i>a</i>, <i>b</i>&#8239;&#8805;&#8239;0) et <span class="pt">&#8730;<span class="rad"><span class="f"><span><i>a</i></span><span><i>b</i></span></span></span>&#8239;=&#8239;<span class="f"><span>&#8730;<span class="rad"><i>a</i></span></span><span>&#8730;<span class="rad"><i>b</i></span></span></span></span> (<i>a</i>&#8239;&#8805;&#8239;0, <i>b</i>&#8239;&gt;&#8239;0). <b>Jamais sur une somme.</b></li>
+<li><b>Simplifier</b> : extraire le plus grand carré parfait, &#8730;<span class="rad">18</span>&#8239;=&#8239;3&#8730;<span class="rad">2</span>. <b>Additionner</b> : <i>a</i>&#8730;<span class="rad"><i>c</i></span>&#8239;+&#8239;<i>b</i>&#8730;<span class="rad"><i>c</i></span>&#8239;=&#8239;(<i>a</i>&#8239;+&#8239;<i>b</i>)&#8730;<span class="rad"><i>c</i></span>, à radicaux identiques, après simplification.</li>
+<li>Pour <i>a</i> et <i>b</i> <b>positifs</b> : <i>a</i>&#8239;&lt;&#8239;<i>b</i> <b>si et seulement si</b> <i>a</i><sup>2</sup>&#8239;&lt;&#8239;<i>b</i><sup>2</sup> ; <i>a</i>&#8239;&lt;&#8239;<i>b</i> <b>si et seulement si</b> &#8730;<span class="rad"><i>a</i></span>&#8239;&lt;&#8239;&#8730;<span class="rad"><i>b</i></span>. Hors de ce cas, l'ordre peut se <b>retourner</b>.</li>
+<li><b>Encadrer</b> : entre les deux carrés parfaits voisins. 25&#8239;&lt;&#8239;30&#8239;&lt;&#8239;36 donne 5&#8239;&lt;&#8239;&#8730;<span class="rad">30</span>&#8239;&lt;&#8239;6.</li>
+<li>&#8730;<span class="rad"><i>a</i><sup>2</sup></span>&#8239;=&#8239;|<i>a</i>| pour <b>tout</b> réel <i>a</i> : <i>a</i> si <i>a</i>&#8239;&#8805;&#8239;0, &#8722;<i>a</i> si <i>a</i>&#8239;&lt;&#8239;0. Etudier le signe de <i>A</i> avant de supprimer les barres de &#8730;<span class="rad"><i>A</i><sup>2</sup></span>&#8239;=&#8239;|<i>A</i>|.</li>
+<li><b>Dénominateur rationnel</b> : <span class="pt"><span class="f"><span><i>a</i></span><span>&#8730;<span class="rad"><i>b</i></span></span></span>&#8239;=&#8239;<span class="f"><span><i>a</i>&#8730;<span class="rad"><i>b</i></span></span><span><i>b</i></span></span></span> ; sinon, multiplier haut et bas par le <b>conjugué</b>, avec (<i>a</i>&#8239;+&#8239;&#8730;<span class="rad"><i>b</i></span>)(<i>a</i>&#8239;&#8722;&#8239;&#8730;<span class="rad"><i>b</i></span>)&#8239;=&#8239;<i>a</i><sup>2</sup>&#8239;&#8722;&#8239;<i>b</i>.</li>
+<li><i>x</i><sup>2</sup>&#8239;=&#8239;<i>a</i> : <b>deux</b> solutions &#8730;<span class="rad"><i>a</i></span> et &#8722;&#8730;<span class="rad"><i>a</i></span> si <i>a</i>&#8239;&gt;&#8239;0 ; une seule, 0, si <i>a</i>&#8239;=&#8239;0 ; <b>aucune</b> si <i>a</i>&#8239;&lt;&#8239;0. Longueur : on garde la positive.</li>
+</ol>
+</div>
+
+</body>
+</html>

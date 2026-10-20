@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Fiche de revision - 4eme - Chapitre 15 : Developpement, factorisation et identites remarquables</title>
+<style>
+/* ===================================================================
+   FICHE DE REVISION, Collection Hakili Lab, Edition 2026
+   Feuille de style autonome, format A4 pret a imprimer.
+   Bleu #005CB9 · Vert #49A145
+   =================================================================== */
+:root{
+  --bleu:#005CB9; --bleu-fonce:#00429A; --bleu-pale:#E8F1FB; --bleu-bord:#B7D2EE;
+  --vert:#49A145; --vert-fonce:#2F7A2C; --vert-pale:#EDF7EC; --vert-bord:#BCE0B9;
+  --gris:#4A4A4A; --gris-clair:#E4E4E4; --rouge:#B3261E;
+}
+@page{
+  size:A4; margin:15mm;
+  @bottom-center{
+    content:"Collection Hakili Lab, Edition 2026  ·  Fiche de revision  ·  " counter(page) "/" counter(pages);
+    font-family:"Segoe UI",Calibri,Arial,sans-serif; font-size:6.6pt; color:#8A8A8A;
+  }
+}
+*{box-sizing:border-box;}
+body{
+  margin:0; font-family:"Segoe UI",Calibri,Arial,sans-serif;
+  font-size:8.4pt; line-height:1.26; color:#1B1B1B;
+}
+p{margin:0 0 3pt;}
+ul{margin:0 0 3pt; padding-left:11pt;}
+li{margin:0 0 1.2pt;}
+b,strong{color:var(--bleu-fonce);}
+
+/* ------------------------------ ENTETE ---------------------------- */
+.entete{
+  display:flex; align-items:stretch; border:1.6pt solid var(--bleu);
+  border-radius:2.5pt; overflow:hidden; margin-bottom:6pt;
+}
+.entete .num{
+  background:var(--bleu); color:#fff; font-size:20pt; font-weight:700;
+  padding:0 8pt; display:flex; align-items:center; justify-content:center; min-width:34pt;
+}
+.entete .txt{padding:3.5pt 8pt; flex:1;}
+.entete .niveau{
+  font-size:7pt; font-weight:700; letter-spacing:.9pt; color:var(--vert-fonce);
+}
+.entete h1{margin:0; font-size:13.5pt; line-height:1.12; color:var(--bleu-fonce); font-weight:700;}
+.entete .sous{font-size:7pt; color:var(--gris); margin-top:1pt;}
+
+/* --------------------------- BANDEAUX ----------------------------- */
+.bandeau{
+  color:#fff; font-weight:700; font-size:9pt; letter-spacing:1pt;
+  padding:2.4pt 7pt; border-radius:2pt; margin:3pt 0 4pt; break-after:avoid; page-break-after:avoid;
+}
+.bandeau.bleu{background:var(--bleu);}
+.bandeau.vert{background:var(--vert);}
+
+/* --------------------------- COLONNES ----------------------------- */
+.cols{column-count:2; column-gap:7mm; column-fill:balance;}
+
+.cols.bal{column-fill:balance;}
+.bloc{margin-bottom:5pt;}
+.keep{break-inside:avoid; page-break-inside:avoid;}
+
+/* --------------------------- LECONS ------------------------------- */
+h2.lecon{
+  margin:0 0 3pt; font-size:8.6pt; font-weight:700; color:#fff; background:var(--bleu-fonce);
+  padding:1.8pt 5pt; border-radius:1.5pt; break-after:avoid; page-break-after:avoid;
+}
+h3.rub{
+  margin:3.5pt 0 1.5pt; font-size:8.2pt; font-weight:700; color:var(--vert-fonce);
+  border-bottom:.7pt solid var(--vert-bord); padding-bottom:.8pt;
+  break-after:avoid; page-break-after:avoid;
+}
+
+/* --------------------------- ENCADRES ----------------------------- */
+.form{
+  background:var(--bleu-pale); border:.8pt solid var(--bleu-bord); border-left:2.6pt solid var(--bleu);
+  border-radius:2pt; padding:2.4pt 5pt; margin:2.2pt 0 3.4pt;
+  break-inside:avoid; page-break-inside:avoid;
+}
+.form .t{
+  display:block; font-size:6.8pt; font-weight:700; letter-spacing:.6pt;
+  color:var(--bleu); margin-bottom:1.5pt;
+}
+.form .c{text-align:center; font-size:9.1pt; margin:1.6pt 0;}
+.note{background:var(--vert-pale); border-left:2.4pt solid var(--vert); padding:2.4pt 5pt; border-radius:1.5pt; margin:2.5pt 0 4pt; break-inside:avoid;}
+
+/* --------------------------- TABLEAUX ----------------------------- */
+table{width:100%; border-collapse:collapse; font-size:7.6pt; margin:2pt 0 4pt; break-inside:avoid;}
+th{background:var(--bleu); color:#fff; font-weight:700; text-align:left; padding:1.8pt 4pt; font-size:7.2pt;}
+td{border:.6pt solid var(--gris-clair); padding:1.8pt 4pt; vertical-align:top;}
+tr{break-inside:avoid;}
+table.var td{text-align:center; font-size:8pt;}
+table.var td.lab{text-align:left; font-weight:700; color:var(--bleu-fonce); background:var(--bleu-pale);}
+
+/* ----------------------------- PIEGES ----------------------------- */
+table.pieges th:first-child{width:44%;}
+table.pieges td:first-child{color:var(--rouge); background:#FDF1F0;}
+.x{font-weight:700;}
+.v{color:var(--vert-fonce); font-weight:700;}
+
+/* ---------------------------- RECAP ------------------------------- */
+ol.recap{margin:0; padding-left:0; list-style:none; counter-reset:r;}
+ol.recap li{
+  counter-increment:r; position:relative; padding-left:13pt; margin-bottom:1.8pt;
+  break-inside:avoid;
+}
+ol.recap li::before{
+  content:counter(r); position:absolute; left:0; top:.3pt;
+  width:10pt; height:10pt; border-radius:50%; background:var(--vert); color:#fff;
+  font-size:6.6pt; font-weight:700; text-align:center; line-height:10pt;
+}
+
+/* --------------------------- MATHS -------------------------------- */
+.m{font-family:Cambria,Georgia,"Times New Roman",serif;}
+i,var{font-family:Cambria,Georgia,"Times New Roman",serif; font-style:italic;}
+.op{font-family:Cambria,Georgia,"Times New Roman",serif; font-style:normal;}
+.f{display:inline-block; vertical-align:middle; text-align:center;
+   margin:0 .12em; line-height:1.06; font-family:Cambria,Georgia,"Times New Roman",serif;}
+.f>span{display:block; padding:0 .2em;}
+.f>span:first-child{border-bottom:.6pt solid currentColor; padding-bottom:.08em;}
+.f>span:last-child{padding-top:.04em;}
+.rad{border-top:.6pt solid currentColor; padding-top:.12em;}
+/* line-height:0 evite que l'exposant n'ecarte les lignes ; position:relative le
+   repositionne sans qu'il heurte la barre de fraction ni le trait du radical. */
+sup,sub{font-size:.68em; line-height:0; position:relative; vertical-align:baseline;}
+sup{top:-.42em;}
+sub{bottom:-.22em;}
+.pt{white-space:nowrap;}
+/* Les fleches n'ont qu'un glyphe atrophie dans la fonte serif : on les force
+   en sans-serif, ou elles sont franches meme a 8 pt. */
+.ar{font-family:"Segoe UI",Calibri,Arial,"DejaVu Sans",sans-serif; font-style:normal;}
+
+/* ------------------- PIEGES : blocs erreur / correction ------------- */
+.pg{font-size:8.1pt; border-left:2.4pt solid var(--rouge); background:#FDF1F0; border-radius:1.5pt;
+    padding:2pt 5pt; margin:0 0 2.8pt; break-inside:avoid; page-break-inside:avoid;}
+.pg .err{color:var(--rouge); font-weight:600;}
+.pg .cor{color:#1B1B1B; margin-top:.8pt;}
+.pg .cor b{color:var(--bleu-fonce);}
+.v{color:var(--vert-fonce); font-weight:700;}
+
+</style>
+</head>
+<body>
+<header class="entete">
+  <div class="num">15</div>
+  <div class="txt">
+    <div class="niveau">4EME &middot; MATHEMATIQUES</div>
+    <h1>Développement, factorisation et identités remarquables</h1>
+    <div class="sous">Leçon 1 : monômes et polynômes &middot; Leçon 2 : somme de monômes semblables &middot; Leçon 3 : développer, réduire et ordonner &middot; Leçon 4 : factoriser par un facteur commun &middot; Leçon 5 : les produits remarquables</div>
+  </div>
+</header>
+
+<div class="bandeau bleu" style="margin-top:0">L'ESSENTIEL</div>
+<div class="cols">
+
+<!-- ================= LECON 1 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 1&nbsp;: Monômes et polynômes</h2>
+<ul>
+<li>Un <b>monôme</b> est une expression formée d'un nombre et de lettres <b>multipliés</b> entre eux, <b>sans aucune addition ni soustraction</b> : 5<i>x</i> ; &#8722;3<i>x</i><sup>2</sup> ; 7 ; <i>xy</i>.</li>
+<li>Un <b>polynôme</b> est une <b>somme de monômes</b> : 2<i>x</i><sup>2</sup>&#8239;+&#8239;5<i>x</i>&#8239;&#8722;&#8239;3. Chaque morceau (2<i>x</i><sup>2</sup>, 5<i>x</i>, &#8722;3) est un <b>terme</b>.</li>
+<li>Le <b>degré d'un polynôme</b> est le <b>plus grand</b> des degrés de ses termes.</li>
+</ul></div>
+<div class="form">
+  <span class="t">LIRE UN MONOME&nbsp;: COEFFICIENT ET DEGRE</span>
+  <div class="c m">dans 5<i>x</i><sup>2</sup> : coefficient 5, degré 2</div>
+  <div class="c m">5<i>x</i> se lit 5<i>x</i><sup>1</sup> : degré <b>1</b> &nbsp;&middot;&nbsp; un nombre seul : degré <b>0</b></div>
+</div>
+<p><b>Le signe fait partie du coefficient.</b> Le signe qui précède un terme lui <b>appartient</b> : dans 2<i>x</i><sup>2</sup>&#8239;&#8722;&#8239;5<i>x</i>&#8239;+&#8239;3, les trois termes sont 2<i>x</i><sup>2</sup>, &#8722;5<i>x</i> et +3, et le coefficient du deuxième est <b>&#8722;5</b>, non 5. Toute soustraction devient ainsi une addition.</p>
+<p><b>Le 1 non écrit.</b> Le monôme <i>x</i> a pour coefficient <b>1</b>, et &#8722;<i>x</i> a pour coefficient <b>&#8722;1</b>. En cas de doute, relis <i>x</i> comme 1&#8239;&#215;&#8239;<i>x</i>.</p>
+</div>
+
+<!-- ================= LECON 2 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 2&nbsp;: Somme de monômes semblables</h2>
+<p>Deux monômes sont <b>semblables</b> lorsqu'ils ont la <b>même partie en lettres</b>, c'est-à-dire les mêmes lettres avec les <b>mêmes exposants</b>.</p></div>
+<ul>
+<li>Semblables : 3<i>x</i> et 5<i>x</i> &nbsp;&middot;&nbsp; 2<i>x</i><sup>2</sup> et 7<i>x</i><sup>2</sup> &nbsp;&middot;&nbsp; 4<i>ab</i> et &#8722;<i>ab</i>.</li>
+<li>Non semblables : 3<i>x</i> et 3<i>x</i><sup>2</sup> (exposants différents) &nbsp;&middot;&nbsp; 2<i>x</i> et 2<i>y</i> (lettres différentes).</li>
+</ul>
+<div class="form">
+  <span class="t">ADDITIONNER DES MONOMES SEMBLABLES</span>
+  <div class="c m">on additionne les <b>coefficients</b>, la partie en lettres <b>ne change pas</b></div>
+  <div class="c m">3<i>x</i>&#8239;+&#8239;5<i>x</i>&#8239;=&#8239;8<i>x</i></div>
+</div>
+<p><b>Réduire</b>, c'est effectuer ces regroupements. Une expression est <b>réduite</b> lorsqu'elle ne contient plus deux termes semblables. La partie en lettres joue le rôle d'une unité : 3&#8239;kg&#8239;+&#8239;5&#8239;kg&#8239;=&#8239;8&#8239;kg, et non 8&#8239;kg<sup>2</sup>.</p>
+<ul>
+<li>Réduire n'est pas calculer : l'expression réduite garde la <b>même valeur</b> que celle de départ, quelle que soit la valeur de <i>x</i>.</li>
+<li>Une expression peut être irréductible : 2<i>x</i><sup>2</sup>&#8239;+&#8239;3<i>x</i> est sa propre <b>forme finale</b>.</li>
+<li><b>Regrouper avant de calculer</b> : dans 2<i>x</i><sup>2</sup>&#8239;+&#8239;5<i>x</i>&#8239;+&#8239;3<i>x</i><sup>2</sup>&#8239;&#8722;&#8239;<i>x</i>, on rassemble d'abord les <i>x</i><sup>2</sup>, puis les <i>x</i>.</li>
+</ul>
+<div class="note"><b>Contrôle.</b> Choisis une valeur simple, souvent <i>x</i>&#8239;=&#8239;2, et calcule les deux expressions : des résultats différents signalent une erreur.</div>
+</div>
+
+<!-- ================= LECON 3 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 3&nbsp;: Développer, réduire et ordonner</h2>
+<p><b>Développer</b>, c'est transformer un <b>produit</b> en une <b>somme</b>.</p></div>
+<div class="form">
+  <span class="t">DISTRIBUTIVITE&nbsp;: facteur simple</span>
+  <div class="c m"><i>k</i>(<i>a</i>&#8239;+&#8239;<i>b</i>)&#8239;=&#8239;<i>ka</i>&#8239;+&#8239;<i>kb</i></div>
+</div>
+<div class="form">
+  <span class="t">DOUBLE DISTRIBUTIVITE&nbsp;: QUATRE PRODUITS</span>
+  <div class="c m">(<i>a</i>&#8239;+&#8239;<i>b</i>)(<i>c</i>&#8239;+&#8239;<i>d</i>)&#8239;=&#8239;<i>ac</i>&#8239;+&#8239;<i>ad</i>&#8239;+&#8239;<i>bc</i>&#8239;+&#8239;<i>bd</i></div>
+</div>
+<p>Chaque terme de la première parenthèse multiplie <b>chacun</b> des termes de la seconde : deux termes contre deux termes donnent <b>quatre</b> produits. On <b>réduit</b> ensuite, puis on <b>ordonne</b>.</p>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Le signe moins devant une parenthèse</h3>
+<div class="form">
+  <span class="t">TOUS LES SIGNES CHANGENT</span>
+  <div class="c m">&#8722;(<i>x</i>&#8239;+&#8239;6)&#8239;=&#8239;(&#8722;1)&#8239;&#215;&#8239;(<i>x</i>&#8239;+&#8239;6)&#8239;=&#8239;&#8722;<i>x</i>&#8239;&#8722;&#8239;6</div>
+</div>
+<p>La distributivité s'applique à <b>tous</b> les termes, pas seulement au premier. Même règle dans une soustraction d'expressions : devant (<i>x</i><sup>2</sup>&#8239;+&#8239;6<i>x</i>&#8239;+&#8239;9)&#8239;&#8722;&#8239;(<i>x</i><sup>2</sup>&#8239;&#8722;&#8239;10<i>x</i>&#8239;+&#8239;25), on change <b>les trois</b> signes de la seconde parenthèse avant de réduire.</p>
+<h3 class="rub">Ordonner un polynôme</h3>
+<p>On range les termes du <b>degré le plus grand</b> au <b>degré le plus petit</b> : le polynôme est <b>ordonné selon les puissances décroissantes</b>. On n'écrit pas &#8722;17&#8239;&#8722;&#8239;<i>x</i>&#8239;+&#8239;13<i>x</i><sup>2</sup>&#8239;+&#8239;<i>x</i><sup>3</sup>, mais <span class="pt"><i>x</i><sup>3</sup>&#8239;+&#8239;13<i>x</i><sup>2</sup>&#8239;&#8722;&#8239;<i>x</i>&#8239;&#8722;&#8239;17</span>. Deux polynômes ainsi rangés se comparent terme à terme, et le degré se lit sur le premier terme.</p>
+<div class="note">Termine tout développement par ces deux gestes enchaînés : <b>réduire</b>, puis <b>ordonner</b>.</div>
+</div>
+
+<!-- ================= LECON 4 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 4&nbsp;: Factoriser par un facteur commun</h2>
+<p><b>Factoriser</b>, c'est transformer une <b>somme</b> en un <b>produit</b> : c'est l'opération <b>inverse</b> du développement. On cherche un <b>facteur commun</b> à tous les termes, puis on l'écrit devant une parenthèse.</p></div>
+<div class="form">
+  <span class="t">FACTEUR COMMUN</span>
+  <div class="c m"><i>ka</i>&#8239;+&#8239;<i>kb</i>&#8239;=&#8239;<i>k</i>(<i>a</i>&#8239;+&#8239;<i>b</i>)</div>
+  <div class="c m">4<i>x</i>&#8239;+&#8239;4<i>y</i>&#8239;=&#8239;4(<i>x</i>&#8239;+&#8239;<i>y</i>) &nbsp;&nbsp; 15<i>x</i><sup>2</sup>&#8239;&#8722;&#8239;3<i>x</i>&#8239;=&#8239;3<i>x</i>(5<i>x</i>&#8239;&#8722;&#8239;1)</div>
+  <div class="c m">7(<i>x</i>&#8239;+&#8239;2)&#8239;+&#8239;<i>x</i>(<i>x</i>&#8239;+&#8239;2)&#8239;=&#8239;(<i>x</i>&#8239;+&#8239;2)(7&#8239;+&#8239;<i>x</i>)</div>
+</div>
+<ul>
+<li>Le facteur commun est un <b>nombre</b>, une <b>lettre</b>, les deux, ou une <b>parenthèse entière</b>.</li>
+<li>C'est la distributivité <b>lue de droite à gauche</b> : rien de nouveau, un nouveau sens de lecture.</li>
+<li>On <b>vérifie toujours</b> en développant le résultat : on doit retrouver l'expression de départ.</li>
+</ul>
+<h3 class="rub">Sortir le plus grand facteur commun</h3>
+<p>Une factorisation peut être correcte sans être <b>terminée</b> : 12<i>x</i><sup>2</sup>&#8239;+&#8239;18<i>x</i>&#8239;=&#8239;2(6<i>x</i><sup>2</sup>&#8239;+&#8239;9<i>x</i>) est vrai, mais la parenthèse contient encore un facteur commun. La factorisation complète est <span class="pt">6<i>x</i>(2<i>x</i>&#8239;+&#8239;3)</span>.</p>
+<ul>
+<li><b>Les nombres</b> : le plus grand diviseur commun des coefficients (ici 6 pour 12 et 18).</li>
+<li><b>Les lettres</b> : chaque lettre présente dans <b>tous</b> les termes, avec son <b>plus petit exposant</b> (ici <i>x</i>).</li>
+</ul>
+</div>
+
+<!-- ================= LECON 5 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 5&nbsp;: Les produits remarquables</h2>
+<div class="form">
+  <span class="t">LES TROIS IDENTITES REMARQUABLES&nbsp;: pour tous nombres <i>a</i> et <i>b</i></span>
+  <div class="c m">(<i>a</i>&#8239;+&#8239;<i>b</i>)<sup>2</sup>&#8239;=&#8239;<i>a</i><sup>2</sup>&#8239;+&#8239;2<i>ab</i>&#8239;+&#8239;<i>b</i><sup>2</sup></div>
+  <div class="c m">(<i>a</i>&#8239;&#8722;&#8239;<i>b</i>)<sup>2</sup>&#8239;=&#8239;<i>a</i><sup>2</sup>&#8239;&#8722;&#8239;2<i>ab</i>&#8239;+&#8239;<i>b</i><sup>2</sup></div>
+  <div class="c m">(<i>a</i>&#8239;+&#8239;<i>b</i>)(<i>a</i>&#8239;&#8722;&#8239;<i>b</i>)&#8239;=&#8239;<i>a</i><sup>2</sup>&#8239;&#8722;&#8239;<i>b</i><sup>2</sup></div>
+</div></div>
+<ul>
+<li>Le terme 2<i>ab</i> s'appelle le <b>double produit</b>.</li>
+<li>On lit ces égalités <b>dans les deux sens</b> : de gauche à droite pour <b>développer</b>, de droite à gauche pour <b>factoriser</b>. Ainsi (<i>x</i>&#8239;+&#8239;3)<sup>2</sup>&#8239;=&#8239;<i>x</i><sup>2</sup>&#8239;+&#8239;6<i>x</i>&#8239;+&#8239;9 et <span class="pt"><i>x</i><sup>2</sup>&#8239;&#8722;&#8239;25&#8239;=&#8239;(<i>x</i>&#8239;+&#8239;5)(<i>x</i>&#8239;&#8722;&#8239;5)</span>.</li>
+<li>La troisième s'appelle aussi <b>différence de deux carrés</b> : c'est la seule des trois qui donne un résultat à <b>deux</b> termes.</li>
+<li>Les deux premières ne diffèrent que par le <b>signe du double produit</b> ; le dernier terme est <b>toujours positif</b>, car <i>b</i><sup>2</sup> et (&#8722;<i>b</i>)<sup>2</sup> sont égaux.</li>
+</ul>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Trouver <i>a</i> et <i>b</i>, choisir l'identité</h3>
+<p>Ecris <i>a</i> et <i>b</i> à part <b>avant</b> d'appliquer la formule, en gardant les <b>monômes entiers</b>. Dans (3<i>x</i>&#8239;&#8722;&#8239;2)<sup>2</sup>, on a <i>a</i>&#8239;=&#8239;3<i>x</i> et <i>b</i>&#8239;=&#8239;2, donc <span class="pt"><i>a</i><sup>2</sup>&#8239;=&#8239;(3<i>x</i>)<sup>2</sup>&#8239;=&#8239;9<i>x</i><sup>2</sup></span> et <span class="pt">2<i>ab</i>&#8239;=&#8239;2&#8239;&#215;&#8239;3<i>x</i>&#8239;&#215;&#8239;2&#8239;=&#8239;12<i>x</i></span> : le résultat est 9<i>x</i><sup>2</sup>&#8239;&#8722;&#8239;12<i>x</i>&#8239;+&#8239;4.</p>
+<ul>
+<li><b>Pour développer</b>, deux questions : est-ce un <b>carré</b> (trois termes) ou un produit d'une somme par une différence des mêmes termes (deux termes) ? Puis : quel est le <b>signe intérieur</b> ? Il donne le signe du double produit.</li>
+<li><b>Pour factoriser</b>, on lit à l'envers. Devant une <b>différence de deux termes</b>, on regarde si chacun est un carré : la troisième identité s'applique. Devant <b>trois termes</b>, on vérifie que le premier et le dernier sont des carrés, puis que celui du milieu est bien le double produit.</li>
+</ul>
+<div class="note"><b>Calcul mental.</b> 101<sup>2</sup>&#8239;=&#8239;(100&#8239;+&#8239;1)<sup>2</sup>&#8239;=&#8239;10&#8239;000&#8239;+&#8239;200&#8239;+&#8239;1&#8239;=&#8239;10&#8239;201 &nbsp;&middot;&nbsp; 99&#8239;&#215;&#8239;101&#8239;=&#8239;(100&#8239;&#8722;&#8239;1)(100&#8239;+&#8239;1)&#8239;=&#8239;10&#8239;000&#8239;&#8722;&#8239;1&#8239;=&#8239;9&#8239;999.</div>
+</div>
+
+</div>
+
+<div class="bandeau vert">PIEGES ET ERREURS FREQUENTES</div>
+<div class="cols">
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> « Dans &#8722;3<i>x</i><sup>2</sup>, le coefficient est 3. » &nbsp;&middot;&nbsp; 5<i>x</i>&#8239;=&#8239;5&#8239;+&#8239;<i>x</i></div><div class="cor"><span class="v">&#10003;</span> Le <b>signe appartient au coefficient</b> : celui de &#8722;3<i>x</i><sup>2</sup> est &#8722;3, et dans 2<i>x</i><sup>2</sup>&#8239;&#8722;&#8239;5<i>x</i>&#8239;+&#8239;3 le deuxième coefficient est &#8722;5. Et 5<i>x</i> signifie 5 <b>multiplié</b> par <i>x</i> : pour <i>x</i>&#8239;=&#8239;2, 5<i>x</i>&#8239;=&#8239;10 tandis que 5&#8239;+&#8239;<i>x</i>&#8239;=&#8239;7.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> 2<i>x</i><sup>2</sup>&#8239;+&#8239;3<i>x</i>&#8239;=&#8239;5<i>x</i><sup>3</sup> &nbsp;&middot;&nbsp; 2<i>x</i><sup>2</sup>&#8239;+&#8239;3<i>x</i>&#8239;=&#8239;5<i>x</i> &nbsp;&middot;&nbsp; 3<i>x</i>&#8239;+&#8239;5<i>x</i>&#8239;=&#8239;8<i>x</i><sup>2</sup></div><div class="cor"><span class="v">&#10003;</span> On n'additionne que des monômes <b>semblables</b>, et l'on ajoute alors les <b>coefficients</b> sans toucher à la partie en lettres : 3<i>x</i>&#8239;+&#8239;5<i>x</i>&#8239;=&#8239;8<i>x</i>. Comme 2<i>x</i><sup>2</sup> et 3<i>x</i> ne sont pas semblables, 2<i>x</i><sup>2</sup>&#8239;+&#8239;3<i>x</i> est <b>déjà réduit</b> : on ne touche à rien.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> &#8722;(<i>x</i>&#8239;+&#8239;6)&#8239;=&#8239;&#8722;<i>x</i>&#8239;+&#8239;6 &nbsp;&middot;&nbsp; (<i>x</i><sup>2</sup>&#8239;+&#8239;6<i>x</i>&#8239;+&#8239;9)&#8239;&#8722;&#8239;(<i>x</i><sup>2</sup>&#8239;&#8722;&#8239;10<i>x</i>&#8239;+&#8239;25)&#8239;=&#8239;6<i>x</i>&#8239;+&#8239;9&#8239;&#8722;&#8239;10<i>x</i>&#8239;+&#8239;25</div><div class="cor"><span class="v">&#10003;</span> Le signe moins change <b>tous</b> les signes : &#8722;(<i>x</i>&#8239;+&#8239;6)&#8239;=&#8239;&#8722;<i>x</i>&#8239;&#8722;&#8239;6. Contrôle pour <i>x</i>&#8239;=&#8239;1 : &#8722;(1&#8239;+&#8239;6)&#8239;=&#8239;&#8722;7, comme &#8722;1&#8239;&#8722;&#8239;6, alors que &#8722;1&#8239;+&#8239;6&#8239;=&#8239;5. Dans la soustraction, <b>les trois</b> signes changent, et le résultat est 16<i>x</i>&#8239;&#8722;&#8239;16.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> 7<i>x</i>&#8239;+&#8239;7&#8239;=&#8239;7(<i>x</i>&#8239;+&#8239;0)</div><div class="cor"><span class="v">&#10003;</span> Quand un terme est <b>tout entier</b> le facteur commun, il reste <b>1</b> dans la parenthèse, et non 0 : 7<i>x</i>&#8239;+&#8239;7&#8239;=&#8239;7(<i>x</i>&#8239;+&#8239;1). Le développement le montre aussitôt, car 7(<i>x</i>&#8239;+&#8239;0) redonnerait 7<i>x</i>.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> 12<i>x</i><sup>2</sup>&#8239;+&#8239;18<i>x</i>&#8239;=&#8239;2(6<i>x</i><sup>2</sup>&#8239;+&#8239;9<i>x</i>)</div><div class="cor"><span class="v">&#10003;</span> Factorisation <b>incomplète</b> : 6<i>x</i><sup>2</sup> et 9<i>x</i> ont encore 3<i>x</i> en commun. On sort le <b>plus grand</b> facteur commun : 12<i>x</i><sup>2</sup>&#8239;+&#8239;18<i>x</i>&#8239;=&#8239;6<i>x</i>(2<i>x</i>&#8239;+&#8239;3).</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> (<i>a</i>&#8239;+&#8239;<i>b</i>)<sup>2</sup>&#8239;=&#8239;<i>a</i><sup>2</sup>&#8239;+&#8239;<i>b</i><sup>2</sup> &nbsp;&middot;&nbsp; (<i>x</i>&#8239;+&#8239;3)<sup>2</sup>&#8239;=&#8239;<i>x</i><sup>2</sup>&#8239;+&#8239;9</div><div class="cor"><span class="v">&#10003;</span> L'erreur la plus fréquente de tout le calcul littéral : il manque le <b>double produit</b>. (<i>a</i>&#8239;+&#8239;<i>b</i>)<sup>2</sup>&#8239;=&#8239;<i>a</i><sup>2</sup>&#8239;+&#8239;2<i>ab</i>&#8239;+&#8239;<i>b</i><sup>2</sup>, donc (<i>x</i>&#8239;+&#8239;3)<sup>2</sup>&#8239;=&#8239;<i>x</i><sup>2</sup>&#8239;+&#8239;6<i>x</i>&#8239;+&#8239;9. Le carré d'une somme a <b>trois</b> termes.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> (3<i>x</i>&#8239;&#8722;&#8239;2)<sup>2</sup>&#8239;=&#8239;3<i>x</i><sup>2</sup>&#8239;&#8722;&#8239;12<i>x</i>&#8239;+&#8239;4</div><div class="cor"><span class="v">&#10003;</span> Ici <i>a</i> est le <b>monôme entier</b> 3<i>x</i>, ni 3 ni <i>x</i> : <i>a</i><sup>2</sup>&#8239;=&#8239;(3<i>x</i>)<sup>2</sup>&#8239;=&#8239;9<i>x</i><sup>2</sup>, et 2<i>ab</i>&#8239;=&#8239;2&#8239;&#215;&#8239;3<i>x</i>&#8239;&#215;&#8239;2&#8239;=&#8239;12<i>x</i>. Donc (3<i>x</i>&#8239;&#8722;&#8239;2)<sup>2</sup>&#8239;=&#8239;9<i>x</i><sup>2</sup>&#8239;&#8722;&#8239;12<i>x</i>&#8239;+&#8239;4. Mets des <b>parenthèses</b> avant d'élever un monôme au carré.</div></div>
+
+</div>
+
+<div class="bandeau bleu">A SAVOIR PAR COEUR AVANT LE DEVOIR</div>
+<div class="cols">
+<ol class="recap">
+<li><b>Monôme</b> : nombre et lettres multipliés, sans + ni &#8722;. <b>Polynôme</b> : somme de monômes. Le <b>coefficient</b> garde son signe, le <b>degré</b> est l'exposant ; <i>x</i> vaut 1<i>x</i>, un nombre seul est de degré 0, et le degré d'un polynôme est le plus grand degré de ses termes.</li>
+<li><b>Monômes semblables</b> : même partie en lettres. On additionne les coefficients, la partie en lettres ne change pas : 3<i>x</i>&#8239;+&#8239;5<i>x</i>&#8239;=&#8239;8<i>x</i>. 2<i>x</i><sup>2</sup>&#8239;+&#8239;3<i>x</i> ne se réduit pas.</li>
+<li><b>Développer</b> : <i>k</i>(<i>a</i>&#8239;+&#8239;<i>b</i>)&#8239;=&#8239;<i>ka</i>&#8239;+&#8239;<i>kb</i> et (<i>a</i>&#8239;+&#8239;<i>b</i>)(<i>c</i>&#8239;+&#8239;<i>d</i>)&#8239;=&#8239;<i>ac</i>&#8239;+&#8239;<i>ad</i>&#8239;+&#8239;<i>bc</i>&#8239;+&#8239;<i>bd</i> : <b>quatre</b> produits à écrire.</li>
+<li>Un signe &#8722; devant une parenthèse change <b>tous</b> les signes : &#8722;(<i>x</i>&#8239;+&#8239;6)&#8239;=&#8239;&#8722;<i>x</i>&#8239;&#8722;&#8239;6. En cas de doute, remplace-le par (&#8722;1)&#8239;&#215;.</li>
+<li>Après un développement : <b>réduire</b>, puis <b>ordonner</b> selon les puissances décroissantes.</li>
+<li><b>Factoriser</b> : somme <span class="ar">&#8594;</span> produit, <i>ka</i>&#8239;+&#8239;<i>kb</i>&#8239;=&#8239;<i>k</i>(<i>a</i>&#8239;+&#8239;<i>b</i>). Sortir le <b>plus grand</b> facteur commun (plus grand diviseur commun des nombres, chaque lettre au plus petit exposant), sans oublier les <b>1</b>, puis <b>vérifier en développant</b>.</li>
+<li><b>Les trois identités</b> : (<i>a</i>&#8239;+&#8239;<i>b</i>)<sup>2</sup>&#8239;=&#8239;<i>a</i><sup>2</sup>&#8239;+&#8239;2<i>ab</i>&#8239;+&#8239;<i>b</i><sup>2</sup> ; (<i>a</i>&#8239;&#8722;&#8239;<i>b</i>)<sup>2</sup>&#8239;=&#8239;<i>a</i><sup>2</sup>&#8239;&#8722;&#8239;2<i>ab</i>&#8239;+&#8239;<i>b</i><sup>2</sup> ; (<i>a</i>&#8239;+&#8239;<i>b</i>)(<i>a</i>&#8239;&#8722;&#8239;<i>b</i>)&#8239;=&#8239;<i>a</i><sup>2</sup>&#8239;&#8722;&#8239;<i>b</i><sup>2</sup>. Lues dans les deux sens.</li>
+<li>Avant d'appliquer une identité, écris <i>a</i> et <i>b</i> à part, <b>monômes entiers</b>, avec des parenthèses : (3<i>x</i>)<sup>2</sup>&#8239;=&#8239;9<i>x</i><sup>2</sup>. Contrôle final avec une valeur simple de la lettre.</li>
+</ol>
+</div>
+
+</body>
+</html>

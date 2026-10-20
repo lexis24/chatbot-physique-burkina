@@ -1,0 +1,350 @@
+{
+  "niveau": "2nde C",
+  "chapitre": "Chapitre 6 : Fonctions de référence",
+  "source": "maths/2ndc/Chapitre_6_Fonctions_reference",
+  "nombre_cartes": 38,
+  "cartes": [
+    {
+      "id": "2C-CH06-001",
+      "lecon": "Fonctions affines et proportionnalité",
+      "type": "definition",
+      "recto": "Sous quelle forme s'écrit une fonction affine définie sur $\\mathbb{R}$ ?",
+      "verso": "Sous la forme $f(x) = ax + b$, où $a$ et $b$ sont deux réels fixés une fois pour toutes. Le réel $a$ s'appelle le coefficient directeur, le réel $b$ l'ordonnée à l'origine.",
+      "difficulte": 1,
+      "tags": ["fonction-affine", "definition", "coefficient-directeur"]
+    },
+    {
+      "id": "2C-CH06-002",
+      "lecon": "Fonctions affines et proportionnalité",
+      "type": "definition",
+      "recto": "A quelle condition une fonction affine $x \\mapsto ax + b$ est-elle une fonction linéaire ?",
+      "verso": "Lorsque $b = 0$. Elle s'écrit alors $f(x) = ax$ et traduit exactement une situation de proportionnalité, de coefficient $a$. Toute fonction linéaire est affine, mais une fonction affine n'est linéaire que si son ordonnée à l'origine est nulle.",
+      "difficulte": 2,
+      "tags": ["fonction-lineaire", "proportionnalite", "definition"]
+    },
+    {
+      "id": "2C-CH06-003",
+      "lecon": "Fonctions affines et proportionnalité",
+      "type": "formule",
+      "recto": "Quelle est la courbe représentative d'une fonction affine $x \\mapsto ax + b$ ?",
+      "verso": "C'est une droite : deux points suffisent à la tracer. Elle coupe l'axe des ordonnées au point de coordonnées $(0\\,;b)$, puisque $f(0) = b$, et elle passe par l'origine du repère lorsque $b = 0$.",
+      "difficulte": 1,
+      "tags": ["fonction-affine", "droite", "representation"]
+    },
+    {
+      "id": "2C-CH06-004",
+      "lecon": "Fonctions affines et proportionnalité",
+      "type": "formule",
+      "recto": "Comment le signe du coefficient directeur $a$ décide-t-il du sens de variation de $x \\mapsto ax + b$ ?",
+      "verso": "Sur $\\mathbb{R}$ tout entier : si $a > 0$, la fonction est strictement croissante ; si $a < 0$, elle est strictement décroissante ; si $a = 0$, elle est constante.",
+      "difficulte": 2,
+      "tags": ["fonction-affine", "sens-de-variation"]
+    },
+    {
+      "id": "2C-CH06-005",
+      "lecon": "Fonctions affines et proportionnalité",
+      "type": "formule",
+      "recto": "Pourquoi l'ordonnée à l'origine $b$ n'a-t-elle aucun effet sur le sens de variation de $x \\mapsto ax + b$ ?",
+      "verso": "Parce que pour deux réels $u < v$, la différence vaut $f(v) - f(u) = (av + b) - (au + b) = a(v - u)$ : le nombre $b$ disparaît. Comme $v - u > 0$, le signe de cette différence est celui de $a$ seul.",
+      "difficulte": 3,
+      "tags": ["fonction-affine", "sens-de-variation", "demonstration"]
+    },
+    {
+      "id": "2C-CH06-006",
+      "lecon": "Fonctions affines et proportionnalité",
+      "type": "formule",
+      "recto": "Comment détermine-t-on le coefficient directeur d'une fonction affine dont on connaît deux images $f(x_{1}) = y_{1}$ et $f(x_{2}) = y_{2}$ ?",
+      "verso": "On calcule $a = \\dfrac{y_{2} - y_{1}}{x_{2} - x_{1}}$, avec $x_{1} \\ne x_{2}$, puis on obtient $b$ en remplaçant $x$ et $f(x)$ par l'un des deux couples connus. Ce quotient s'appelle le taux de variation.",
+      "difficulte": 2,
+      "tags": ["fonction-affine", "taux-de-variation", "determination"]
+    },
+    {
+      "id": "2C-CH06-007",
+      "lecon": "Fonctions affines et proportionnalité",
+      "type": "formule",
+      "recto": "Dans un tableau de valeurs, quel test permet de reconnaître un phénomène linéaire ?",
+      "verso": "On calcule les quotients $\\dfrac{y}{x}$ colonne par colonne, avec $x \\ne 0$. S'ils sont tous égaux, il y a proportionnalité et ce quotient commun est le coefficient ; s'ils diffèrent, il n'y a pas proportionnalité.",
+      "difficulte": 2,
+      "tags": ["proportionnalite", "phenomene-lineaire", "test"]
+    },
+    {
+      "id": "2C-CH06-008",
+      "lecon": "Fonctions affines et proportionnalité",
+      "type": "definition",
+      "recto": "Pourquoi la fonction $x \\mapsto 2x + 3$ ne traduit-elle pas une situation de proportionnalité ?",
+      "verso": "Parce que sa constante n'est pas nulle : elle est affine mais pas linéaire. Son image de $0$ vaut $3$ et non $0$, donc sa droite ne passe pas par l'origine, alors qu'une proportionnalité l'exige.",
+      "difficulte": 3,
+      "tags": ["proportionnalite", "piege", "fonction-affine"]
+    },
+    {
+      "id": "2C-CH06-009",
+      "lecon": "Fonctions affines et proportionnalité",
+      "type": "definition",
+      "recto": "Qu'est-ce qu'une fonction affine par intervalles ?",
+      "verso": "C'est une fonction dont l'ensemble de définition se découpe en plusieurs intervalles, avec sur chacun une expression affine en général différente ; sa courbe est formée de morceaux de droites. Pour calculer une image, on cherche d'abord dans quel intervalle se trouve le nombre.",
+      "difficulte": 2,
+      "tags": ["affine-par-intervalles", "definition"]
+    },
+    {
+      "id": "2C-CH06-010",
+      "lecon": "Fonctions $x \\mapsto x^{2}$ et $x \\mapsto x^{3}$",
+      "type": "definition",
+      "recto": "Quelle est la parité de la fonction carré $x \\mapsto x^{2}$ ?",
+      "verso": "Elle est paire : pour tout réel $x$, $(-x)^{2} = x^{2}$, donc deux nombres opposés ont la même image. Sa courbe, appelée parabole, est symétrique par rapport à l'axe des ordonnées.",
+      "difficulte": 1,
+      "tags": ["fonction-carre", "parite", "parabole"]
+    },
+    {
+      "id": "2C-CH06-011",
+      "lecon": "Fonctions $x \\mapsto x^{2}$ et $x \\mapsto x^{3}$",
+      "type": "formule",
+      "recto": "Quel est le signe de $x^{2}$ pour un réel $x$ quelconque ?",
+      "verso": "On a toujours $x^{2} \\ge 0$ : un carré n'est jamais strictement négatif, et il ne s'annule que pour $x = 0$.",
+      "difficulte": 1,
+      "tags": ["fonction-carre", "signe"]
+    },
+    {
+      "id": "2C-CH06-012",
+      "lecon": "Fonctions $x \\mapsto x^{2}$ et $x \\mapsto x^{3}$",
+      "type": "formule",
+      "recto": "Quel est le sens de variation de la fonction carré sur $\\mathbb{R}$ ?",
+      "verso": "Elle est strictement décroissante sur $]-\\infty\\,;0]$ et strictement croissante sur $[0\\,;+\\infty[$. Elle admet donc un minimum égal à $0$, atteint pour $x = 0$.",
+      "difficulte": 2,
+      "tags": ["fonction-carre", "sens-de-variation", "minimum"]
+    },
+    {
+      "id": "2C-CH06-013",
+      "lecon": "Fonctions $x \\mapsto x^{2}$ et $x \\mapsto x^{3}$",
+      "type": "formule",
+      "recto": "Comment compare-t-on les carrés de deux réels de même signe ?",
+      "verso": "Sur les nombres positifs, le carré conserve l'ordre : si $0 \\le u < v$, alors $u^{2} < v^{2}$. Sur les nombres négatifs, il inverse l'ordre : si $u < v \\le 0$, alors $u^{2} > v^{2}$.",
+      "difficulte": 2,
+      "tags": ["fonction-carre", "comparaison"]
+    },
+    {
+      "id": "2C-CH06-014",
+      "lecon": "Fonctions $x \\mapsto x^{2}$ et $x \\mapsto x^{3}$",
+      "type": "definition",
+      "recto": "Quelle est la parité de la fonction cube $x \\mapsto x^{3}$ ?",
+      "verso": "Elle est impaire : pour tout réel $x$, $(-x)^{3} = -x^{3}$, donc deux nombres opposés ont des images opposées. Sa courbe est symétrique par rapport à l'origine du repère.",
+      "difficulte": 2,
+      "tags": ["fonction-cube", "parite", "symetrie"]
+    },
+    {
+      "id": "2C-CH06-015",
+      "lecon": "Fonctions $x \\mapsto x^{2}$ et $x \\mapsto x^{3}$",
+      "type": "formule",
+      "recto": "Quel est le sens de variation de la fonction cube sur $\\mathbb{R}$ ?",
+      "verso": "Elle est strictement croissante sur $\\mathbb{R}$ tout entier : si $u < v$, alors $u^{3} < v^{3}$, quels que soient leurs signes. Le cube garde le signe de $x$, et la fonction n'admet ni maximum ni minimum.",
+      "difficulte": 2,
+      "tags": ["fonction-cube", "sens-de-variation"]
+    },
+    {
+      "id": "2C-CH06-016",
+      "lecon": "Fonctions $x \\mapsto x^{2}$ et $x \\mapsto x^{3}$",
+      "type": "formule",
+      "recto": "Quelle erreur commet l'élève qui affirme que la fonction carré est croissante sur $\\mathbb{R}$ ?",
+      "verso": "Il oublie les nombres négatifs. Un seul contre-exemple le réfute : $-3 < 1$ alors que $(-3)^{2} = 9$ est plus grand que $1^{2} = 1$. Un sens de variation ne s'annonce jamais sans préciser l'intervalle.",
+      "difficulte": 3,
+      "tags": ["fonction-carre", "piege", "contre-exemple"]
+    },
+    {
+      "id": "2C-CH06-017",
+      "lecon": "Fonctions $x \\mapsto \\dfrac{1}{x}$ et $x \\mapsto \\sqrt{x}$",
+      "type": "definition",
+      "recto": "Quel est l'ensemble de définition de la fonction inverse $x \\mapsto \\dfrac{1}{x}$ ?",
+      "verso": "C'est $\\mathbb{R}^{*}$, c'est-à-dire $]-\\infty\\,;0[$ réuni à $]0\\,;+\\infty[$. La division par $0$ étant impossible, la valeur $0$ est une valeur interdite.",
+      "difficulte": 1,
+      "tags": ["fonction-inverse", "ensemble-de-definition"]
+    },
+    {
+      "id": "2C-CH06-018",
+      "lecon": "Fonctions $x \\mapsto \\dfrac{1}{x}$ et $x \\mapsto \\sqrt{x}$",
+      "type": "definition",
+      "recto": "Quel nom porte la courbe de la fonction inverse $x \\mapsto \\dfrac{1}{x}$ ?",
+      "verso": "C'est une hyperbole, formée de deux branches séparées. La fonction étant impaire, puisque $\\dfrac{1}{-x} = -\\dfrac{1}{x}$, cette courbe est symétrique par rapport à l'origine du repère.",
+      "difficulte": 2,
+      "tags": ["fonction-inverse", "hyperbole", "parite"]
+    },
+    {
+      "id": "2C-CH06-019",
+      "lecon": "Fonctions $x \\mapsto \\dfrac{1}{x}$ et $x \\mapsto \\sqrt{x}$",
+      "type": "formule",
+      "recto": "Sur quels intervalles la fonction inverse est-elle décroissante ?",
+      "verso": "Elle est strictement décroissante sur $]-\\infty\\,;0[$ et strictement décroissante sur $]0\\,;+\\infty[$, c'est-à-dire sur chacun des deux intervalles pris séparément, jamais sur $\\mathbb{R}^{*}$ tout entier.",
+      "difficulte": 2,
+      "tags": ["fonction-inverse", "sens-de-variation"]
+    },
+    {
+      "id": "2C-CH06-020",
+      "lecon": "Fonctions $x \\mapsto \\dfrac{1}{x}$ et $x \\mapsto \\sqrt{x}$",
+      "type": "formule",
+      "recto": "Pourquoi ne peut-on pas déduire de $-1 < 1$ que $\\dfrac{1}{-1} > \\dfrac{1}{1}$ ?",
+      "verso": "Parce que la décroissance de la fonction inverse ne vaut que sur un intervalle, jamais en franchissant la valeur interdite $0$. Quand les deux nombres sont de signes contraires, on conclut par le signe des images : $\\dfrac{1}{-1} = -1 < 1$.",
+      "difficulte": 3,
+      "tags": ["fonction-inverse", "piege", "comparaison"]
+    },
+    {
+      "id": "2C-CH06-021",
+      "lecon": "Fonctions $x \\mapsto \\dfrac{1}{x}$ et $x \\mapsto \\sqrt{x}$",
+      "type": "definition",
+      "recto": "Quel est l'ensemble de définition de la fonction racine carrée $x \\mapsto \\sqrt{x}$ ?",
+      "verso": "C'est $[0\\,;+\\infty[$. Le nombre $\\sqrt{x}$ est le nombre positif dont le carré vaut $x$ ; un carré n'étant jamais strictement négatif, la racine carrée n'existe que pour $x \\ge 0$.",
+      "difficulte": 1,
+      "tags": ["fonction-racine-carree", "ensemble-de-definition"]
+    },
+    {
+      "id": "2C-CH06-022",
+      "lecon": "Fonctions $x \\mapsto \\dfrac{1}{x}$ et $x \\mapsto \\sqrt{x}$",
+      "type": "formule",
+      "recto": "Quel est le sens de variation de la fonction racine carrée sur son ensemble de définition ?",
+      "verso": "Elle est strictement croissante sur $[0\\,;+\\infty[$ : elle conserve l'ordre, donc si $0 \\le u < v$, alors $\\sqrt{u} < \\sqrt{v}$. Son minimum vaut $0$, atteint en $x = 0$, et elle n'a pas de maximum.",
+      "difficulte": 2,
+      "tags": ["fonction-racine-carree", "sens-de-variation", "minimum"]
+    },
+    {
+      "id": "2C-CH06-023",
+      "lecon": "Fonctions $x \\mapsto \\dfrac{1}{x}$ et $x \\mapsto \\sqrt{x}$",
+      "type": "definition",
+      "recto": "Pourquoi la question de la parité ne se pose-t-elle pas pour la fonction racine carrée ?",
+      "verso": "Parce que son ensemble de définition n'est pas symétrique par rapport à $0$ : $\\sqrt{4}$ existe alors que $\\sqrt{-4}$ n'existe pas. Cette fonction n'est donc ni paire ni impaire.",
+      "difficulte": 3,
+      "tags": ["fonction-racine-carree", "parite"]
+    },
+    {
+      "id": "2C-CH06-024",
+      "lecon": "Fonctions $x \\mapsto \\dfrac{1}{x}$ et $x \\mapsto \\sqrt{x}$",
+      "type": "formule",
+      "recto": "Pour un réel $a$ strictement positif, comment le nombre $1$ sépare-t-il les positions de $\\dfrac{1}{a}$, $\\sqrt{a}$, $a$, $a^{2}$ et $a^{3}$ ?",
+      "verso": "Si $a > 1$ : $\\dfrac{1}{a} < 1 < \\sqrt{a} < a < a^{2} < a^{3}$. Si $0 < a < 1$, tout s'inverse : $a^{3} < a^{2} < a < \\sqrt{a} < 1 < \\dfrac{1}{a}$. Si $a = 1$, toutes ces quantités valent $1$.",
+      "difficulte": 2,
+      "tags": ["comparaison", "fonctions-de-reference"]
+    },
+    {
+      "id": "2C-CH06-025",
+      "lecon": "Fonction valeur absolue $x \\mapsto |x|$",
+      "type": "definition",
+      "recto": "Comment la valeur absolue d'un réel $x$ se définit-elle selon le signe de $x$ ?",
+      "verso": "$|x| = x$ si $x \\ge 0$, et $|x| = -x$ si $x < 0$. Dans le second cas, $-x$ désigne l'opposé de $x$, qui est bien un nombre positif : ainsi $|-5| = -(-5) = 5$.",
+      "difficulte": 1,
+      "tags": ["valeur-absolue", "definition"]
+    },
+    {
+      "id": "2C-CH06-026",
+      "lecon": "Fonction valeur absolue $x \\mapsto |x|$",
+      "type": "definition",
+      "recto": "Que représente $|x|$ sur une droite graduée ?",
+      "verso": "C'est la distance du nombre $x$ à zéro. Une distance n'étant jamais négative, on a $|x| \\ge 0$ pour tout réel $x$, et $|x| = 0$ seulement pour $x = 0$.",
+      "difficulte": 1,
+      "tags": ["valeur-absolue", "distance", "signe"]
+    },
+    {
+      "id": "2C-CH06-027",
+      "lecon": "Fonction valeur absolue $x \\mapsto |x|$",
+      "type": "definition",
+      "recto": "Quelle est l'allure de la courbe de la fonction $x \\mapsto |x|$ ?",
+      "verso": "Elle est formée de deux demi-droites issues de l'origine : $y = -x$ pour les $x$ négatifs et $y = x$ pour les $x$ positifs. L'ensemble forme un V dont le sommet est un coin, et non un arrondi. La fonction étant paire, ce V est symétrique par rapport à l'axe des ordonnées.",
+      "difficulte": 2,
+      "tags": ["valeur-absolue", "courbe-en-v", "parite"]
+    },
+    {
+      "id": "2C-CH06-028",
+      "lecon": "Fonction valeur absolue $x \\mapsto |x|$",
+      "type": "formule",
+      "recto": "Quel est le sens de variation de la fonction valeur absolue ?",
+      "verso": "Elle est strictement décroissante sur $]-\\infty\\,;0]$ et strictement croissante sur $[0\\,;+\\infty[$. Son minimum vaut $0$, atteint en $x = 0$, et elle n'admet pas de maximum.",
+      "difficulte": 2,
+      "tags": ["valeur-absolue", "sens-de-variation", "minimum"]
+    },
+    {
+      "id": "2C-CH06-029",
+      "lecon": "Fonction valeur absolue $x \\mapsto |x|$",
+      "type": "formule",
+      "recto": "Combien de solutions possède l'équation $|x| = k$ selon le signe de $k$ ?",
+      "verso": "Si $k > 0$, deux solutions opposées : $x = k$ et $x = -k$. Si $k = 0$, une seule solution : $x = 0$. Si $k < 0$, aucune solution, car une valeur absolue n'est jamais strictement négative.",
+      "difficulte": 2,
+      "tags": ["valeur-absolue", "equation"]
+    },
+    {
+      "id": "2C-CH06-030",
+      "lecon": "Fonction valeur absolue $x \\mapsto |x|$",
+      "type": "formule",
+      "recto": "Que représente le nombre $|x - a|$ pour deux réels $a$ et $x$ ?",
+      "verso": "C'est la distance entre $x$ et $a$ sur la droite graduée. L'équation $|x - a| = k$, avec $k > 0$, a donc pour solutions les deux nombres situés à la distance $k$ de $a$ : $x = a - k$ et $x = a + k$.",
+      "difficulte": 2,
+      "tags": ["valeur-absolue", "distance", "equation"]
+    },
+    {
+      "id": "2C-CH06-031",
+      "lecon": "Fonction valeur absolue $x \\mapsto |x|$",
+      "type": "formule",
+      "recto": "Comment réécrit-on $|ax + b|$ sans barres de valeur absolue ?",
+      "verso": "On sépare deux cas selon le signe de $ax + b$ : là où $ax + b \\ge 0$, on a $|ax + b| = ax + b$ ; là où $ax + b < 0$, on a $|ax + b| = -(ax + b)$. La fonction est donc affine par intervalles, de courbe en V dont le sommet a pour abscisse la solution de $ax + b = 0$.",
+      "difficulte": 3,
+      "tags": ["valeur-absolue", "affine-par-intervalles"]
+    },
+    {
+      "id": "2C-CH06-032",
+      "lecon": "Fonctions se ramenant aux fonctions de référence",
+      "type": "formule",
+      "recto": "Quel effet ont, sur la courbe d'une fonction de référence, le remplacement de $x$ par $x - h$ puis l'ajout de $k$ ?",
+      "verso": "La courbe est décalée de $h$ horizontalement et de $k$ verticalement. Le sens de variation, lui, ne change pas : il est seulement déplacé avec la courbe.",
+      "difficulte": 2,
+      "tags": ["fonctions-de-reference", "decalage"]
+    },
+    {
+      "id": "2C-CH06-033",
+      "lecon": "Fonctions se ramenant aux fonctions de référence",
+      "type": "formule",
+      "recto": "Quel est le minimum de la fonction $x \\mapsto (x - h)^{2} + k$, et en quel point est-il atteint ?",
+      "verso": "Son minimum vaut $k$ et il est atteint pour $x = h$. Sa courbe est la parabole de référence déplacée, de sommet $(h\\,;k)$ : la fonction décroît sur $]-\\infty\\,;h]$ puis croît sur $[h\\,;+\\infty[$.",
+      "difficulte": 2,
+      "tags": ["parabole", "forme-canonique", "minimum"]
+    },
+    {
+      "id": "2C-CH06-034",
+      "lecon": "Fonctions se ramenant aux fonctions de référence",
+      "type": "formule",
+      "recto": "Dans quel sens la courbe de $x \\mapsto (x - 2)^{2}$ est-elle déplacée par rapport à celle de $x \\mapsto x^{2}$ ?",
+      "verso": "De $2$ unités vers la droite, à l'envers de ce que l'écriture suggère. Le réflexe sûr est de chercher la valeur qui annule la quantité mise au carré, ici $x = 2$. De même, $(x + 3)^{2} = (x - (-3))^{2}$ déplace la courbe de $3$ vers la gauche.",
+      "difficulte": 3,
+      "tags": ["parabole", "decalage", "piege"]
+    },
+    {
+      "id": "2C-CH06-035",
+      "lecon": "Fonctions se ramenant aux fonctions de référence",
+      "type": "formule",
+      "recto": "Quel rôle joue le réel non nul $a$ dans la fonction $x \\mapsto a(x - h)^{2} + k$ ?",
+      "verso": "Si $|a| > 1$, la parabole est resserrée ; si $0 < |a| < 1$, elle est aplatie. Si $a > 0$, elle est tournée vers le haut et $k$ est un minimum ; si $a < 0$, elle est retournée vers le bas et $k$ devient un maximum. Le sommet reste le point $(h\\,;k)$.",
+      "difficulte": 2,
+      "tags": ["parabole", "coefficient", "extremum"]
+    },
+    {
+      "id": "2C-CH06-036",
+      "lecon": "Fonctions se ramenant aux fonctions de référence",
+      "type": "formule",
+      "recto": "Quels sont les deux temps d'une démonstration établissant que $k$ est le minimum d'une fonction $f$ ?",
+      "verso": "D'abord la minoration : $f(x) \\ge k$ pour tout $x$ du domaine. Ensuite l'atteinte : il existe une valeur de $x$ pour laquelle $f$ vaut exactement $k$. Sans ce second temps, on n'a prouvé qu'une minoration, pas un minimum.",
+      "difficulte": 3,
+      "tags": ["extremum", "demonstration", "minimum"]
+    },
+    {
+      "id": "2C-CH06-037",
+      "lecon": "Fonctions se ramenant aux fonctions de référence",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on forme canonique d'une expression du type $x^{2} + px + q$ ?",
+      "verso": "C'est son écriture sous la forme $(x - h)^{2} + k$, obtenue en lisant à l'envers l'identité $(x - h)^{2} = x^{2} - 2hx + h^{2}$. Elle rend le minimum et son emplacement immédiatement lisibles : $x^{2} - 6x + 11 = (x - 3)^{2} + 2$.",
+      "difficulte": 2,
+      "tags": ["forme-canonique", "definition"]
+    },
+    {
+      "id": "2C-CH06-038",
+      "lecon": "Fonctions se ramenant aux fonctions de référence",
+      "type": "formule",
+      "recto": "Quelle fonction de référence reconnaît-on derrière une écriture $f(x) = a + \\dfrac{b}{x - h}$ ?",
+      "verso": "La fonction inverse, décalée de $h$ horizontalement et de $a$ verticalement. Elle est définie pour $x \\ne h$ ; si $b > 0$, elle est décroissante sur chacun des deux intervalles, et si $b < 0$, elle y est croissante.",
+      "difficulte": 2,
+      "tags": ["fonction-inverse", "hyperbole", "decalage"]
+    }
+  ]
+}

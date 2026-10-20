@@ -1,0 +1,332 @@
+{
+  "niveau": "5ème",
+  "chapitre": "Chapitre 3 : La symétrie centrale (2) : propriétés, centre de symétrie, repérage",
+  "source": "maths/5eme/Chapitre_3_Symetrie_centrale_proprietes",
+  "nombre_cartes": 36,
+  "cartes": [
+    {
+      "id": "5E-CH03-001",
+      "lecon": "Propriétés : alignement, longueurs, direction",
+      "type": "formule",
+      "recto": "Que dit la propriété de conservation des longueurs de la symétrie centrale ?",
+      "verso": "Si $A'$ et $B'$ sont les symétriques de A et B par rapport à O, alors $A'B' = AB$. Un segment et son image ont toujours la même longueur.",
+      "difficulte": 1,
+      "tags": ["conservation", "longueurs"]
+    },
+    {
+      "id": "5E-CH03-002",
+      "lecon": "Propriétés : alignement, longueurs, direction",
+      "type": "formule",
+      "recto": "Que deviennent trois points alignés dans une symétrie centrale ?",
+      "verso": "Leurs symétriques sont trois points alignés, dans le même ordre. De plus, le milieu d'un segment a pour symétrique le milieu du segment image.",
+      "difficulte": 1,
+      "tags": ["conservation", "alignement", "milieu"]
+    },
+    {
+      "id": "5E-CH03-003",
+      "lecon": "Propriétés : alignement, longueurs, direction",
+      "type": "formule",
+      "recto": "Quelle est la position relative d'une droite et de sa symétrique par rapport à un point ?",
+      "verso": "Elles sont parallèles. C'est la propriété la plus utile : elle donne du parallélisme sans qu'on ait à le construire.",
+      "difficulte": 1,
+      "tags": ["droite", "parallele", "direction"]
+    },
+    {
+      "id": "5E-CH03-004",
+      "lecon": "Propriétés : alignement, longueurs, direction",
+      "type": "formule",
+      "recto": "Quelle est l'image d'une droite qui passe par le centre O de la symétrie ?",
+      "verso": "C'est elle-même. Chaque point glisse de l'autre côté de O, mais la droite occupe exactement la même position.",
+      "difficulte": 3,
+      "tags": ["droite", "cas-particulier"]
+    },
+    {
+      "id": "5E-CH03-005",
+      "lecon": "Propriétés : alignement, longueurs, direction",
+      "type": "formule",
+      "recto": "Que deviennent le périmètre, l'aire et la nature d'un triangle transformé par une symétrie centrale ?",
+      "verso": "Ils sont tous conservés. Aucune longueur ni aucun angle ne change, donc le triangle image a le même périmètre, la même aire et la même nature que celui de départ.",
+      "difficulte": 2,
+      "tags": ["conservation", "perimetre", "aire"]
+    },
+    {
+      "id": "5E-CH03-006",
+      "lecon": "Propriétés : alignement, longueurs, direction",
+      "type": "formule",
+      "recto": "Quelle est l'image d'un cercle de centre I et de rayon $r$ par une symétrie de centre O ?",
+      "verso": "C'est le cercle de même rayon $r$ dont le centre est $I'$, symétrique de I par rapport à O. Seul le centre est à construire.",
+      "difficulte": 2,
+      "tags": ["cercle", "image", "rayon"]
+    },
+    {
+      "id": "5E-CH03-007",
+      "lecon": "Propriétés : alignement, longueurs, direction",
+      "type": "formule",
+      "recto": "Pourquoi un demi-tour ne change-t-il ni les longueurs ni l'alignement ?",
+      "verso": "Parce qu'il transporte tout en bloc, comme un calque que l'on fait pivoter autour de O. Le calque n'est ni étiré, ni plié, ni déchiré : un trait de $5$ cm reste un trait de $5$ cm.",
+      "difficulte": 2,
+      "tags": ["conservation", "justification", "calque"]
+    },
+    {
+      "id": "5E-CH03-008",
+      "lecon": "Propriétés : alignement, longueurs, direction",
+      "type": "definition",
+      "recto": "Pourquoi dire que la symétrie centrale conserve les longueurs ne signifie-t-il pas que rien ne bouge ?",
+      "verso": "Parce que le dessin change bel et bien de place. Ce sont ses mesures, et non sa position, qui restent identiques : conserver veut dire garder les longueurs, pas rester immobile.",
+      "difficulte": 3,
+      "tags": ["conservation", "piege", "vocabulaire"]
+    },
+    {
+      "id": "5E-CH03-009",
+      "lecon": "Propriétés : alignement, longueurs, direction",
+      "type": "formule",
+      "recto": "Pourquoi ne peut-on pas écrire $A'B' = OA$ quand $A'$ et $B'$ sont les symétriques de A et B par rapport à O ?",
+      "verso": "Parce que la propriété compare un segment et son image, non un segment et la distance au centre. Elle donne $A'B' = AB$.",
+      "difficulte": 3,
+      "tags": ["piege", "longueurs"]
+    },
+    {
+      "id": "5E-CH03-010",
+      "lecon": "Conservation des angles",
+      "type": "formule",
+      "recto": "Que dit la propriété de conservation des angles de la symétrie centrale ?",
+      "verso": "Un angle et son symétrique ont la même mesure : la symétrie centrale conserve les mesures des angles.",
+      "difficulte": 1,
+      "tags": ["conservation", "angles"]
+    },
+    {
+      "id": "5E-CH03-011",
+      "lecon": "Conservation des angles",
+      "type": "formule",
+      "recto": "Quelle propriété permet d'affirmer, sans rapporteur, que le symétrique d'un triangle rectangle est rectangle ?",
+      "verso": "La conservation des angles : un angle et son symétrique ont la même mesure, donc l'angle droit reste un angle droit. Ce n'est pas la conservation des longueurs qui le justifie.",
+      "difficulte": 2,
+      "tags": ["angles", "triangle-rectangle", "justification"]
+    },
+    {
+      "id": "5E-CH03-012",
+      "lecon": "Conservation des angles",
+      "type": "formule",
+      "recto": "Que deviennent un triangle isocèle et un triangle équilatéral par une symétrie centrale ?",
+      "verso": "Ils gardent leur nature : le symétrique d'un triangle isocèle est isocèle, celui d'un triangle équilatéral est équilatéral. Longueurs et angles sont tous conservés.",
+      "difficulte": 2,
+      "tags": ["nature", "triangle", "conservation"]
+    },
+    {
+      "id": "5E-CH03-013",
+      "lecon": "Conservation des angles",
+      "type": "formule",
+      "recto": "Qu'est-ce que le choix de l'emplacement du centre O modifie dans l'image d'un dessin ?",
+      "verso": "Uniquement sa place. La forme, les longueurs et les angles restent les mêmes, quel que soit l'endroit où l'on marque le point O.",
+      "difficulte": 2,
+      "tags": ["centre", "conservation"]
+    },
+    {
+      "id": "5E-CH03-014",
+      "lecon": "Conservation des angles",
+      "type": "formule",
+      "recto": "Pourquoi l'ouverture d'un angle ne change-t-elle pas au cours d'un demi-tour ?",
+      "verso": "Parce que le demi-tour emporte d'un seul mouvement le sommet et les deux demi-droites, comme un compas dont personne n'a touché la vis : l'écartement reste le même.",
+      "difficulte": 2,
+      "tags": ["angles", "justification"]
+    },
+    {
+      "id": "5E-CH03-015",
+      "lecon": "Conservation des angles",
+      "type": "definition",
+      "recto": "Qu'est-ce qui distingue un axe de symétrie d'un centre de symétrie ?",
+      "verso": "Un axe de symétrie est une droite : on plie la feuille le long de cette droite. Un centre de symétrie est un point : on fait tourner d'un demi-tour autour de ce point.",
+      "difficulte": 2,
+      "tags": ["axe", "centre", "distinction"]
+    },
+    {
+      "id": "5E-CH03-016",
+      "lecon": "Conservation des angles",
+      "type": "formule",
+      "recto": "Pourquoi une symétrie centrale ne transforme-t-elle pas un angle aigu en angle obtus ?",
+      "verso": "Parce qu'elle conserve les mesures des angles. Le demi-tour retourne le dessin mais n'ouvre ni ne referme aucun angle : un angle aigu reste aigu.",
+      "difficulte": 3,
+      "tags": ["angles", "piege"]
+    },
+    {
+      "id": "5E-CH03-017",
+      "lecon": "Centre de symétrie d'une figure",
+      "type": "definition",
+      "recto": "Quand dit-on qu'un dessin possède un centre de symétrie O ?",
+      "verso": "Lorsqu'il est son propre symétrique par rapport à O, c'est-à-dire lorsque le demi-tour autour de O le laisse inchangé.",
+      "difficulte": 1,
+      "tags": ["centre-de-symetrie", "definition"]
+    },
+    {
+      "id": "5E-CH03-018",
+      "lecon": "Centre de symétrie d'une figure",
+      "type": "formule",
+      "recto": "Si un dessin admet O comme centre de symétrie, où se trouve le symétrique de l'un de ses points M ?",
+      "verso": "Le point $M'$, symétrique de M par rapport à O, appartient encore au dessin. Cela vaut pour tous ses points, sans exception.",
+      "difficulte": 2,
+      "tags": ["centre-de-symetrie", "point-par-point"]
+    },
+    {
+      "id": "5E-CH03-019",
+      "lecon": "Centre de symétrie d'une figure",
+      "type": "definition",
+      "recto": "Où se trouve le centre de symétrie du cercle, du segment et du parallélogramme ?",
+      "verso": "Le centre du cercle est son centre de symétrie, et le milieu du segment est le sien. Pour le parallélogramme, le rectangle, le losange et le carré, c'est le point d'intersection des diagonales.",
+      "difficulte": 2,
+      "tags": ["centre-de-symetrie", "exemples"]
+    },
+    {
+      "id": "5E-CH03-020",
+      "lecon": "Centre de symétrie d'une figure",
+      "type": "formule",
+      "recto": "Combien de centres de symétrie une droite possède-t-elle ?",
+      "verso": "Une infinité : chacun de ses points convient, car le demi-tour autour de n'importe lequel d'entre eux laisse la droite inchangée.",
+      "difficulte": 2,
+      "tags": ["droite", "centre-de-symetrie"]
+    },
+    {
+      "id": "5E-CH03-021",
+      "lecon": "Centre de symétrie d'une figure",
+      "type": "formule",
+      "recto": "Pourquoi un triangle équilatéral ne possède-t-il pas de centre de symétrie ?",
+      "verso": "Parce que le demi-tour autour de son centre le retourne pointe en bas et ne le recouvre pas, et qu'aucun autre point ne fait mieux. Il possède pourtant trois axes de symétrie.",
+      "difficulte": 3,
+      "tags": ["centre-de-symetrie", "contre-exemple", "triangle"]
+    },
+    {
+      "id": "5E-CH03-022",
+      "lecon": "Centre de symétrie d'une figure",
+      "type": "definition",
+      "recto": "Pourquoi ne peut-on pas conclure qu'un dessin a un centre de symétrie du seul fait qu'il possède un axe ?",
+      "verso": "Parce que les deux tests sont indépendants : le pliage pour l'axe, le demi-tour pour le centre. La lettre A a un axe mais aucun centre, le parallélogramme quelconque a un centre mais aucun axe.",
+      "difficulte": 3,
+      "tags": ["axe", "centre-de-symetrie", "piege"]
+    },
+    {
+      "id": "5E-CH03-023",
+      "lecon": "Centre de symétrie d'une figure",
+      "type": "formule",
+      "recto": "Comment trouve-t-on le centre de symétrie d'un quadrilatère ?",
+      "verso": "On trace les deux diagonales, on repère leur point d'intersection et on vérifie qu'il est le milieu de chacune. Chaque sommet a alors pour symétrique le sommet opposé.",
+      "difficulte": 2,
+      "tags": ["centre-de-symetrie", "quadrilatere", "diagonales"]
+    },
+    {
+      "id": "5E-CH03-024",
+      "lecon": "Caractérisation du parallélogramme",
+      "type": "formule",
+      "recto": "Que dit la propriété caractéristique du parallélogramme ?",
+      "verso": "Un quadrilatère ABCD est un parallélogramme si et seulement si ses diagonales $[AC]$ et $[BD]$ se coupent en leur milieu.",
+      "difficulte": 1,
+      "tags": ["parallelogramme", "caracterisation", "diagonales"]
+    },
+    {
+      "id": "5E-CH03-025",
+      "lecon": "Caractérisation du parallélogramme",
+      "type": "definition",
+      "recto": "Que signifie « si et seulement si » dans la caractérisation du parallélogramme ?",
+      "verso": "Que la propriété marche dans les deux sens : d'un parallélogramme on déduit que les diagonales se coupent en leur milieu, et de deux diagonales qui se coupent en leur milieu on déduit un parallélogramme.",
+      "difficulte": 2,
+      "tags": ["parallelogramme", "logique", "caracterisation"]
+    },
+    {
+      "id": "5E-CH03-026",
+      "lecon": "Caractérisation du parallélogramme",
+      "type": "formule",
+      "recto": "Que représente le milieu commun des diagonales d'un parallélogramme ABCD ?",
+      "verso": "C'est son centre de symétrie O : le point C est le symétrique de A et le point D le symétrique de B par rapport à O.",
+      "difficulte": 2,
+      "tags": ["parallelogramme", "centre-de-symetrie"]
+    },
+    {
+      "id": "5E-CH03-027",
+      "lecon": "Caractérisation du parallélogramme",
+      "type": "formule",
+      "recto": "Comment démontre-t-on qu'un quadrilatère est un parallélogramme, sans mesurer ses côtés ?",
+      "verso": "On montre qu'un même point O est le milieu de l'une et de l'autre diagonale, puis on cite la propriété caractéristique. On conclut en nommant O le centre du parallélogramme.",
+      "difficulte": 2,
+      "tags": ["parallelogramme", "demonstration"]
+    },
+    {
+      "id": "5E-CH03-028",
+      "lecon": "Caractérisation du parallélogramme",
+      "type": "formule",
+      "recto": "Comment la symétrie de centre O explique-t-elle que les côtés opposés d'un parallélogramme soient égaux et parallèles ?",
+      "verso": "Parce que $[CD]$ est l'image de $[AB]$ par cette symétrie. Or l'image d'un segment garde sa longueur et l'image d'une droite lui est parallèle : on obtient $AB = CD$ et les droites $(AB)$ et $(CD)$ parallèles.",
+      "difficulte": 2,
+      "tags": ["parallelogramme", "justification", "cotes-opposes"]
+    },
+    {
+      "id": "5E-CH03-029",
+      "lecon": "Caractérisation du parallélogramme",
+      "type": "formule",
+      "recto": "Comment voit-on, à partir de ses diagonales, qu'un parallélogramme n'est pas un rectangle ?",
+      "verso": "En comparant leurs longueurs : les diagonales d'un rectangle sont égales. Des diagonales de $6$ cm et de $8$ cm qui se coupent en leur milieu donnent un parallélogramme, mais pas un rectangle.",
+      "difficulte": 3,
+      "tags": ["parallelogramme", "rectangle", "diagonales"]
+    },
+    {
+      "id": "5E-CH03-030",
+      "lecon": "Caractérisation du parallélogramme",
+      "type": "definition",
+      "recto": "Comment définit-on le rectangle, le losange et le carré à partir du parallélogramme ?",
+      "verso": "Le rectangle est un parallélogramme à quatre angles droits, le losange un parallélogramme à quatre côtés égaux, et le carré est à la fois rectangle et losange.",
+      "difficulte": 2,
+      "tags": ["quadrilateres", "definition"]
+    },
+    {
+      "id": "5E-CH03-031",
+      "lecon": "Repérage dans le plan",
+      "type": "definition",
+      "recto": "Comment repère-t-on un point M dans un repère d'axes perpendiculaires ?",
+      "verso": "Par un couple $(x\\,;\\,y)$ noté $M(x\\,;\\,y)$ : x est l'abscisse, le déplacement horizontal, et y l'ordonnée, le déplacement vertical. L'origine O a pour coordonnées $(0\\,;\\,0)$.",
+      "difficulte": 1,
+      "tags": ["repere", "coordonnees", "abscisse"]
+    },
+    {
+      "id": "5E-CH03-032",
+      "lecon": "Repérage dans le plan",
+      "type": "formule",
+      "recto": "Quelles sont les coordonnées du symétrique de $M(x\\,;\\,y)$ par rapport à l'origine O ?",
+      "verso": "Ce sont $(-x\\,;\\,-y)$ : les deux signes changent, car le demi-tour fait traverser dans les deux directions à la fois.",
+      "difficulte": 1,
+      "tags": ["repere", "symetrie-centrale", "coordonnees"]
+    },
+    {
+      "id": "5E-CH03-033",
+      "lecon": "Repérage dans le plan",
+      "type": "formule",
+      "recto": "Quelles sont les coordonnées du symétrique de $M(x\\,;\\,y)$ par rapport à l'axe des abscisses ?",
+      "verso": "Ce sont $(x\\,;\\,-y)$ : seule l'ordonnée change de signe, car le pliage le long de l'axe horizontal fait traverser dans le sens vertical.",
+      "difficulte": 2,
+      "tags": ["repere", "symetrie-axiale", "coordonnees"]
+    },
+    {
+      "id": "5E-CH03-034",
+      "lecon": "Repérage dans le plan",
+      "type": "formule",
+      "recto": "Quelles sont les coordonnées du symétrique de $M(x\\,;\\,y)$ par rapport à l'axe des ordonnées ?",
+      "verso": "Ce sont $(-x\\,;\\,y)$ : seule l'abscisse change de signe, car le pliage le long de l'axe vertical fait passer de gauche à droite.",
+      "difficulte": 2,
+      "tags": ["repere", "symetrie-axiale", "coordonnees"]
+    },
+    {
+      "id": "5E-CH03-035",
+      "lecon": "Repérage dans le plan",
+      "type": "formule",
+      "recto": "Pourquoi, dans une symétrie par rapport à l'origine, les nombres restent-ils les mêmes et seuls les signes changent ?",
+      "verso": "Parce que l'origine doit être le milieu du segment : on refait depuis O le même trajet, mais dans l'autre sens. Les distances sont identiques, seuls les sens sont opposés.",
+      "difficulte": 2,
+      "tags": ["repere", "justification", "signes"]
+    },
+    {
+      "id": "5E-CH03-036",
+      "lecon": "Repérage dans le plan",
+      "type": "formule",
+      "recto": "Pourquoi le symétrique de $(3\\,;\\,5)$ par rapport à l'origine n'est-il pas $(-5\\,;\\,-3)$ ?",
+      "verso": "Parce qu'on change seulement les signes, jamais l'ordre des deux nombres : l'abscisse reste écrite en premier. Le symétrique cherché est $(-3\\,;\\,-5)$.",
+      "difficulte": 3,
+      "tags": ["repere", "piege", "coordonnees"]
+    }
+  ]
+}

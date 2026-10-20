@@ -1,0 +1,350 @@
+{
+  "niveau": "1ère D",
+  "chapitre": "Chapitre 9 : Transformations du plan",
+  "source": "maths/1ereD/Chapitre_9_Transformations_plan",
+  "nombre_cartes": 38,
+  "cartes": [
+    {
+      "id": "1D-CH09-001",
+      "lecon": "Homothéties et translations",
+      "type": "definition",
+      "recto": "Qu'est-ce qu'une transformation du plan ?",
+      "verso": "C'est une application du plan dans lui-même telle que tout point du plan admette un unique antécédent : c'est une bijection du plan dans lui-même. Si $M' = f(M)$, on dit que $M'$ est l'image de $M$ et que $M$ est l'antécédent de $M'$.",
+      "difficulte": 1,
+      "tags": ["transformation", "definition", "bijection"]
+    },
+    {
+      "id": "1D-CH09-002",
+      "lecon": "Homothéties et translations",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on point invariant d'une transformation $f$ ?",
+      "verso": "C'est un point $M$ vérifiant $f(M) = M$, autrement dit un point qui est sa propre image. La transformation qui laisse tous les points à leur place s'appelle l'identité et se note $\\mathrm{Id}$.",
+      "difficulte": 1,
+      "tags": ["point-invariant", "identite"]
+    },
+    {
+      "id": "1D-CH09-003",
+      "lecon": "Homothéties et translations",
+      "type": "definition",
+      "recto": "Comment définit-on la translation de vecteur $\\vec u$ ?",
+      "verso": "Notée $t_{\\vec u}$, elle associe à tout point $M$ le point $M'$ tel que $\\overrightarrow{MM'} = \\vec u$. Elle n'a aucun point invariant lorsque $\\vec u \\ne \\vec 0$ ; si $\\vec u = \\vec 0$, c'est l'identité.",
+      "difficulte": 1,
+      "tags": ["translation", "definition"]
+    },
+    {
+      "id": "1D-CH09-004",
+      "lecon": "Homothéties et translations",
+      "type": "definition",
+      "recto": "Comment définit-on l'homothétie de centre $O$ et de rapport $k$ ?",
+      "verso": "Notée $h(O,k)$, avec $k$ réel non nul, elle associe à tout point $M$ le point $M'$ tel que $\\overrightarrow{OM'} = k\\,\\overrightarrow{OM}$. Dès que $k \\ne 1$, le centre $O$ est son seul point invariant.",
+      "difficulte": 1,
+      "tags": ["homothetie", "definition"]
+    },
+    {
+      "id": "1D-CH09-005",
+      "lecon": "Homothéties et translations",
+      "type": "definition",
+      "recto": "Quelle transformation connue est l'homothétie de centre $O$ et de rapport $-1$ ?",
+      "verso": "C'est la symétrie centrale de centre $O$ : la relation $\\overrightarrow{OM'} = -\\overrightarrow{OM}$ dit que $O$ est le milieu de $[MM']$. Avec le rapport $1$, on obtiendrait au contraire l'identité.",
+      "difficulte": 2,
+      "tags": ["homothetie", "symetrie-centrale"]
+    },
+    {
+      "id": "1D-CH09-006",
+      "lecon": "Homothéties et translations",
+      "type": "formule",
+      "recto": "Quelle égalité vectorielle caractérise une homothétie-translation ?",
+      "verso": "$\\overrightarrow{M'N'} = k\\,\\overrightarrow{MN}$ pour tous points $M$ et $N$, avec $k$ réel non nul. Si $k = 1$, la transformation est une translation ; si $k \\ne 1$, c'est une homothétie de rapport $k$, dont le centre est l'unique point invariant.",
+      "difficulte": 2,
+      "tags": ["caracterisation-vectorielle", "homothetie-translation"]
+    },
+    {
+      "id": "1D-CH09-007",
+      "lecon": "Homothéties et translations",
+      "type": "formule",
+      "recto": "Par quel nombre une homothétie-translation de rapport $k$ multiplie-t-elle les longueurs ?",
+      "verso": "Par $|k|$ : si $M' = f(M)$ et $N' = f(N)$, alors $M'N' = |k| \\times MN$. C'est la valeur absolue du rapport qui intervient, car une longueur n'est jamais négative.",
+      "difficulte": 1,
+      "tags": ["homothetie", "longueur", "rapport"]
+    },
+    {
+      "id": "1D-CH09-008",
+      "lecon": "Homothéties et translations",
+      "type": "formule",
+      "recto": "Par quel nombre une homothétie de rapport $k$ multiplie-t-elle les aires ?",
+      "verso": "Par $k^2$, et jamais par $k$ : chaque longueur est multipliée par $|k|$ dans les deux directions à la fois. Une homothétie de rapport $3$ multiplie donc une aire par $9$, pas par $3$.",
+      "difficulte": 2,
+      "tags": ["homothetie", "aire"]
+    },
+    {
+      "id": "1D-CH09-009",
+      "lecon": "Homothéties et translations",
+      "type": "formule",
+      "recto": "Quels éléments d'une figure une homothétie-translation conserve-t-elle ?",
+      "verso": "Elle conserve les angles géométriques, l'alignement, les milieux, le parallélisme et l'orthogonalité. Elle ne déforme donc jamais : un triangle devient un triangle semblable, un parallélogramme un parallélogramme.",
+      "difficulte": 2,
+      "tags": ["homothetie", "conservation"]
+    },
+    {
+      "id": "1D-CH09-010",
+      "lecon": "Homothéties et translations",
+      "type": "formule",
+      "recto": "Quelles sont les images d'une droite et d'un cercle par une homothétie de rapport $k$ ?",
+      "verso": "Une droite a pour image une droite qui lui est parallèle, car $\\overrightarrow{A'B'} = k\\,\\overrightarrow{AB}$ donne des vecteurs directeurs colinéaires. Un cercle de centre $I$ et de rayon $R$ a pour image le cercle de centre $f(I)$ et de rayon $|k|\\,R$.",
+      "difficulte": 2,
+      "tags": ["homothetie", "droite", "cercle"]
+    },
+    {
+      "id": "1D-CH09-011",
+      "lecon": "Homothéties et translations",
+      "type": "formule",
+      "recto": "Comment obtient-on la réciproque d'une translation ou d'une homothétie ?",
+      "verso": "$\\left(t_{\\vec u}\\right)^{-1} = t_{-\\vec u}$, vecteur opposé ; $\\left(h(O,k)\\right)^{-1} = h\\left(O,\\dfrac{1}{k}\\right)$, même centre et rapport inverse. Dans les deux cas, la composée avec la transformation de départ redonne $\\mathrm{Id}$.",
+      "difficulte": 2,
+      "tags": ["reciproque", "homothetie", "translation"]
+    },
+    {
+      "id": "1D-CH09-012",
+      "lecon": "Homothéties et translations",
+      "type": "formule",
+      "recto": "Que vaut la composée $t_{\\vec u} \\circ t_{\\vec v}$ de deux translations ?",
+      "verso": "C'est la translation $t_{\\vec u + \\vec v}$ : les vecteurs s'additionnent. L'ordre n'a aucune importance, puisque l'addition des vecteurs est commutative.",
+      "difficulte": 1,
+      "tags": ["translation", "composee"]
+    },
+    {
+      "id": "1D-CH09-013",
+      "lecon": "Homothéties et translations",
+      "type": "formule",
+      "recto": "Que vaut la composée de deux homothéties de même centre $O$, de rapports $k$ et $k'$ ?",
+      "verso": "C'est $h(O,kk')$ : les rapports se multiplient et le centre commun est conservé. Ainsi $h(O,2) \\circ h(O,3) = h(O,6)$, et surtout pas $h(O,5)$.",
+      "difficulte": 2,
+      "tags": ["homothetie", "composee"]
+    },
+    {
+      "id": "1D-CH09-014",
+      "lecon": "Homothéties et translations",
+      "type": "formule",
+      "recto": "Quelle est la nature de la composée de deux homothéties de centres distincts, de rapports $k$ et $k'$ ?",
+      "verso": "C'est une homothétie-translation de rapport $kk'$ : une homothétie de rapport $kk'$ si $kk' \\ne 1$, et une translation si $kk' = 1$. Le rapport se calcule toujours ainsi, mais le centre, lui, doit être cherché à part.",
+      "difficulte": 3,
+      "tags": ["homothetie", "composee", "centres-distincts"]
+    },
+    {
+      "id": "1D-CH09-015",
+      "lecon": "Homothéties et translations",
+      "type": "definition",
+      "recto": "Quelle erreur guette l'élève qui applique une homothétie de rapport $k = -2$ ?",
+      "verso": "Multiplier les longueurs par $-2$ au lieu de $|-2| = 2$. Le nombre $|k|$ commande la taille, le signe de $k$ commande le côté du centre où la figure atterrit : ici elle est deux fois plus grande et retournée.",
+      "difficulte": 3,
+      "tags": ["homothetie", "rapport", "piege"]
+    },
+    {
+      "id": "1D-CH09-016",
+      "lecon": "Rotations",
+      "type": "definition",
+      "recto": "Comment définit-on la rotation de centre $O$ et d'angle $\\theta$ ?",
+      "verso": "Notée $r(O,\\theta)$, elle laisse $O$ à sa place et associe à tout point $M \\ne O$ le point $M'$ tel que $OM' = OM$ et $\\left(\\overrightarrow{OM},\\overrightarrow{OM'}\\right) = \\theta$, cet angle étant orienté.",
+      "difficulte": 1,
+      "tags": ["rotation", "definition"]
+    },
+    {
+      "id": "1D-CH09-017",
+      "lecon": "Rotations",
+      "type": "definition",
+      "recto": "Quelles transformations connues obtient-on avec $r(O,0)$ puis avec $r(O,\\pi)$ ?",
+      "verso": "$r(O,0)$ est l'identité, tout comme $r(O,2k\\pi)$ pour tout entier $k$. $r(O,\\pi)$ est le demi-tour de centre $O$, c'est-à-dire la symétrie centrale $S_O$, c'est-à-dire encore l'homothétie $h(O,-1)$.",
+      "difficulte": 2,
+      "tags": ["rotation", "demi-tour", "symetrie-centrale"]
+    },
+    {
+      "id": "1D-CH09-018",
+      "lecon": "Rotations",
+      "type": "formule",
+      "recto": "Quels éléments d'une figure une rotation conserve-t-elle ?",
+      "verso": "Une rotation est une isométrie : elle conserve les distances, et donc aussi les angles, l'alignement, les milieux, le parallélisme, l'orthogonalité et les aires. La figure image est superposable à celle de départ.",
+      "difficulte": 1,
+      "tags": ["rotation", "isometrie", "conservation"]
+    },
+    {
+      "id": "1D-CH09-019",
+      "lecon": "Rotations",
+      "type": "formule",
+      "recto": "Quelles sont les images d'une droite et d'un cercle par la rotation $r(O,\\theta)$ ?",
+      "verso": "Une droite $(D)$ a pour image une droite $(D')$ qui fait avec elle l'angle $\\theta$. Un cercle de centre $I$ et de rayon $R$ a pour image le cercle de centre $r(I)$ et de même rayon $R$.",
+      "difficulte": 2,
+      "tags": ["rotation", "droite", "cercle"]
+    },
+    {
+      "id": "1D-CH09-020",
+      "lecon": "Rotations",
+      "type": "formule",
+      "recto": "Quelle est la réciproque de la rotation $r(O,\\theta)$ ?",
+      "verso": "C'est $r(O,-\\theta)$ : on garde le même centre et l'on tourne du même angle dans l'autre sens. La somme des deux angles vaut $0$, donc la composée est bien l'identité.",
+      "difficulte": 1,
+      "tags": ["rotation", "reciproque"]
+    },
+    {
+      "id": "1D-CH09-021",
+      "lecon": "Rotations",
+      "type": "formule",
+      "recto": "Que vaut la composée de deux rotations de même centre $O$, d'angles $\\theta$ et $\\theta'$ ?",
+      "verso": "C'est $r(O,\\theta + \\theta')$ : les angles s'ajoutent, avec leur signe, et l'ordre n'a pas d'importance. Si $\\theta + \\theta'$ est un multiple de $2\\pi$, la composée est l'identité.",
+      "difficulte": 2,
+      "tags": ["rotation", "composee"]
+    },
+    {
+      "id": "1D-CH09-022",
+      "lecon": "Rotations",
+      "type": "formule",
+      "recto": "Pourquoi ne peut-on pas additionner les angles de deux rotations de centres différents ?",
+      "verso": "Parce que la règle d'addition suppose un centre commun, laissé sur place par les deux rotations, si bien que la seconde reprend le travail là où la première l'a laissé. Avec des centres distincts, la composée n'est pas la rotation d'angle la somme.",
+      "difficulte": 3,
+      "tags": ["rotation", "composee", "piege"]
+    },
+    {
+      "id": "1D-CH09-023",
+      "lecon": "Rotations",
+      "type": "definition",
+      "recto": "Quelle différence y a-t-il entre les rotations $r\\left(O,\\dfrac{\\pi}{3}\\right)$ et $r\\left(O,-\\dfrac{\\pi}{3}\\right)$ ?",
+      "verso": "Ce sont deux rotations différentes, réciproques l'une de l'autre : l'angle d'une rotation est orienté, et son signe donne le sens. En revanche, deux angles qui diffèrent de $2\\pi$ donnent la même rotation, ainsi $r(O,3\\pi) = r(O,\\pi)$.",
+      "difficulte": 3,
+      "tags": ["rotation", "angle-oriente", "piege"]
+    },
+    {
+      "id": "1D-CH09-024",
+      "lecon": "Rotations",
+      "type": "definition",
+      "recto": "Comment définit-on la symétrie orthogonale d'axe $(\\Delta)$ ?",
+      "verso": "Notée $S_{(\\Delta)}$, elle laisse en place tout point de $(\\Delta)$ et associe à tout point $M$ hors de l'axe le point $M'$ tel que $(\\Delta)$ soit la médiatrice de $[MM']$. Ses points invariants sont exactement les points de l'axe.",
+      "difficulte": 1,
+      "tags": ["symetrie-orthogonale", "definition"]
+    },
+    {
+      "id": "1D-CH09-025",
+      "lecon": "Rotations",
+      "type": "definition",
+      "recto": "Pourquoi dit-on qu'une symétrie orthogonale est une transformation indirecte ?",
+      "verso": "Parce qu'elle retourne la figure et change le sens des angles orientés : une main gauche devient une main droite. Les translations, homothéties et rotations sont au contraire directes. La symétrie orthogonale est de plus sa propre réciproque.",
+      "difficulte": 2,
+      "tags": ["symetrie-orthogonale", "transformation-indirecte"]
+    },
+    {
+      "id": "1D-CH09-026",
+      "lecon": "Rotations",
+      "type": "formule",
+      "recto": "Quelle transformation obtient-on en composant deux symétries orthogonales d'axes sécants ?",
+      "verso": "Si les axes se coupent en $O$ et font entre eux l'angle $\\alpha$, la composée $S_2 \\circ S_1$ est la rotation de centre $O$ et d'angle $2\\alpha$. Deux retournements successifs remettent en effet la figure à l'endroit.",
+      "difficulte": 2,
+      "tags": ["symetrie-orthogonale", "composee", "rotation"]
+    },
+    {
+      "id": "1D-CH09-027",
+      "lecon": "Rotations",
+      "type": "formule",
+      "recto": "Quelle transformation obtient-on en composant deux symétries orthogonales d'axes parallèles ?",
+      "verso": "Une translation : son vecteur est perpendiculaire aux deux axes, dirigé du premier axe vers le second, et sa longueur vaut $2d$ si $d$ désigne la distance entre les deux axes.",
+      "difficulte": 2,
+      "tags": ["symetrie-orthogonale", "composee", "translation"]
+    },
+    {
+      "id": "1D-CH09-028",
+      "lecon": "Expressions analytiques et utilisation",
+      "type": "formule",
+      "recto": "Quelle est l'expression analytique de la translation de vecteur $\\vec u(a\\,;b)$ ?",
+      "verso": "$x' = x + a$ et $y' = y + b$ : on ajoute les coordonnées du vecteur à celles du point. Une expression de cette forme ne peut correspondre qu'à une translation.",
+      "difficulte": 1,
+      "tags": ["expression-analytique", "translation"]
+    },
+    {
+      "id": "1D-CH09-029",
+      "lecon": "Expressions analytiques et utilisation",
+      "type": "formule",
+      "recto": "Quelle est l'expression analytique de l'homothétie de centre l'origine $O$ et de rapport $k$ ?",
+      "verso": "$x' = kx$ et $y' = ky$ : les deux coordonnées sont multipliées par le rapport. Cette forme simple n'est valable que si le centre de l'homothétie est l'origine du repère.",
+      "difficulte": 1,
+      "tags": ["expression-analytique", "homothetie"]
+    },
+    {
+      "id": "1D-CH09-030",
+      "lecon": "Expressions analytiques et utilisation",
+      "type": "formule",
+      "recto": "Quelle est l'expression analytique de l'homothétie de centre $\\Omega(x_0\\,;y_0)$ et de rapport $k$ ?",
+      "verso": "$x' = x_0 + k(x - x_0)$ et $y' = y_0 + k(y - y_0)$. La formule se lit en trois temps : je recentre sur $\\Omega$, je multiplie par $k$, je reviens aux coordonnées ordinaires.",
+      "difficulte": 2,
+      "tags": ["expression-analytique", "homothetie", "centre"]
+    },
+    {
+      "id": "1D-CH09-031",
+      "lecon": "Expressions analytiques et utilisation",
+      "type": "formule",
+      "recto": "Quelles sont les expressions analytiques des symétries orthogonales par rapport aux axes du repère ?",
+      "verso": "Par rapport à l'axe des abscisses : $x' = x$ et $y' = -y$. Par rapport à l'axe des ordonnées : $x' = -x$ et $y' = y$. La coordonnée qui ne change pas est celle qui se lit le long de l'axe.",
+      "difficulte": 1,
+      "tags": ["expression-analytique", "symetrie-orthogonale"]
+    },
+    {
+      "id": "1D-CH09-032",
+      "lecon": "Expressions analytiques et utilisation",
+      "type": "formule",
+      "recto": "Quelle est l'expression analytique de la symétrie centrale de centre $\\Omega(x_0\\,;y_0)$ ?",
+      "verso": "$x' = 2x_0 - x$ et $y' = 2y_0 - y$. On l'obtient en faisant $k = -1$ dans la formule de l'homothétie de centre $\\Omega$, ou en écrivant que $\\Omega$ est le milieu de $[MM']$.",
+      "difficulte": 2,
+      "tags": ["expression-analytique", "symetrie-centrale"]
+    },
+    {
+      "id": "1D-CH09-033",
+      "lecon": "Expressions analytiques et utilisation",
+      "type": "definition",
+      "recto": "Comment reconnaît-on une homothétie dans une expression analytique du type $x' = kx + p$ et $y' = ky + q$ ?",
+      "verso": "Au même coefficient $k$ devant $x$ et devant $y$ : si $k \\ne 0$ et $k \\ne 1$, c'est une homothétie de rapport $k$, dont le centre est l'unique point invariant. Pour $k = 1$, il s'agit d'une translation.",
+      "difficulte": 2,
+      "tags": ["expression-analytique", "reconnaissance", "homothetie"]
+    },
+    {
+      "id": "1D-CH09-034",
+      "lecon": "Expressions analytiques et utilisation",
+      "type": "definition",
+      "recto": "Que révèle le nombre de solutions du système $x' = x$ et $y' = y$ sur la nature d'une transformation ?",
+      "verso": "Aucune solution : c'est une translation de vecteur non nul. Une solution unique : c'est le centre d'une homothétie ou d'une rotation. Toute une droite de solutions : c'est l'axe d'une symétrie orthogonale. Tout le plan : c'est l'identité.",
+      "difficulte": 2,
+      "tags": ["point-invariant", "reconnaissance"]
+    },
+    {
+      "id": "1D-CH09-035",
+      "lecon": "Expressions analytiques et utilisation",
+      "type": "definition",
+      "recto": "Quelle décomposition annonce une expression analytique où seule une des deux variables change de signe ?",
+      "verso": "Une symétrie orthogonale suivie d'une translation, dès lors que $x'$ ne dépend que de $x$ et $y'$ que de $y$. C'est le cas de $x' = -x + 2$ et $y' = y - 3$.",
+      "difficulte": 3,
+      "tags": ["expression-analytique", "reconnaissance", "symetrie-orthogonale"]
+    },
+    {
+      "id": "1D-CH09-036",
+      "lecon": "Expressions analytiques et utilisation",
+      "type": "formule",
+      "recto": "Pour obtenir une équation de l'image d'une courbe, que substitue-t-on dans son équation ?",
+      "verso": "On substitue la réciproque : on remplace $x$ et $y$ par leurs expressions en fonction de $x'$ et $y'$, et non l'inverse. L'égalité obtenue, une fois les variables renommées, est une équation de la courbe image.",
+      "difficulte": 2,
+      "tags": ["image-courbe", "reciproque"]
+    },
+    {
+      "id": "1D-CH09-037",
+      "lecon": "Expressions analytiques et utilisation",
+      "type": "formule",
+      "recto": "Pourquoi une homothétie de rapport $k \\ne 1$ ne peut-elle avoir qu'un seul point invariant ?",
+      "verso": "Si $A$ et $B$ étaient deux points invariants, la caractérisation vectorielle donnerait $\\overrightarrow{AB} = k\\,\\overrightarrow{AB}$, donc $(1 - k)\\,\\overrightarrow{AB} = \\vec 0$. Comme $k \\ne 1$, il reste $\\overrightarrow{AB} = \\vec 0$, soit $A = B$.",
+      "difficulte": 3,
+      "tags": ["homothetie", "point-invariant", "demonstration"]
+    },
+    {
+      "id": "1D-CH09-038",
+      "lecon": "Expressions analytiques et utilisation",
+      "type": "definition",
+      "recto": "Quelle erreur guette le calcul de l'image d'un point par une homothétie de centre autre que l'origine ?",
+      "verso": "Appliquer $x' = kx$, qui ne vaut que pour un centre à l'origine, ou écrire $x' = k(x - x_0)$ en oubliant de revenir. Il faut recentrer, multiplier, puis revenir : $x' = x_0 + k(x - x_0)$.",
+      "difficulte": 3,
+      "tags": ["expression-analytique", "homothetie", "piege"]
+    }
+  ]
+}

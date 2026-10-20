@@ -1,0 +1,350 @@
+{
+  "niveau": "Terminale D",
+  "chapitre": "Chapitre 8 : Probabilités",
+  "source": "maths/tleD/Chapitre_8_Probabilites",
+  "nombre_cartes": 38,
+  "cartes": [
+    {
+      "id": "TD-CH08-001",
+      "lecon": "Langage des événements",
+      "type": "definition",
+      "recto": "Qu'est-ce que l'univers $\\Omega$ d'une expérience aléatoire ?",
+      "verso": "L'ensemble de tous les résultats possibles de l'expérience, supposé fini. Un événement est une partie de $\\Omega$, et un événement élémentaire est une partie réduite à un seul résultat, comme $\\{5\\}$.",
+      "difficulte": 1,
+      "tags": ["univers", "evenement", "vocabulaire"]
+    },
+    {
+      "id": "TD-CH08-002",
+      "lecon": "Langage des événements",
+      "type": "definition",
+      "recto": "Quels sont l'événement certain et l'événement impossible d'un univers $\\Omega$ ?",
+      "verso": "L'événement certain est $\\Omega$ lui-même, car il se réalise quel que soit le résultat. L'événement impossible est l'ensemble vide $\\varnothing$, que rien ne réalise puisqu'il ne contient aucun résultat.",
+      "difficulte": 1,
+      "tags": ["evenement-certain", "evenement-impossible"]
+    },
+    {
+      "id": "TD-CH08-003",
+      "lecon": "Langage des événements",
+      "type": "definition",
+      "recto": "Comment traduit-on « $A$ ou $B$ » et « $A$ et $B$ » en écriture ensembliste ?",
+      "verso": "« $A$ ou $B$ » est la réunion $A\\cup B$, formée des résultats qui sont dans $A$, dans $B$, ou dans les deux. « $A$ et $B$ » est l'intersection $A\\cap B$, formée des résultats qui sont dans les deux à la fois.",
+      "difficulte": 1,
+      "tags": ["reunion", "intersection", "traduction"]
+    },
+    {
+      "id": "TD-CH08-004",
+      "lecon": "Langage des événements",
+      "type": "definition",
+      "recto": "Quand dit-on que deux événements $A$ et $B$ sont incompatibles ?",
+      "verso": "Lorsque $A\\cap B=\\varnothing$, c'est-à-dire lorsqu'ils ne peuvent pas se produire ensemble. Pour une caisse prise sur un quai, « partir pour Koudougou » et « partir pour Ouagadougou » sont incompatibles.",
+      "difficulte": 2,
+      "tags": ["incompatibles", "intersection-vide"]
+    },
+    {
+      "id": "TD-CH08-005",
+      "lecon": "Langage des événements",
+      "type": "definition",
+      "recto": "Quelles deux égalités caractérisent l'événement contraire $\\overline{A}$ ?",
+      "verso": "$A\\cap\\overline{A}=\\varnothing$ et $A\\cup\\overline{A}=\\Omega$ : le contraire ramasse exactement ce que $A$ laisse de côté. D'où le test $\\operatorname{card}(A)+\\operatorname{card}(\\overline{A})=\\operatorname{card}(\\Omega)$.",
+      "difficulte": 2,
+      "tags": ["evenement-contraire", "univers"]
+    },
+    {
+      "id": "TD-CH08-006",
+      "lecon": "Langage des événements",
+      "type": "definition",
+      "recto": "Comment s'écrit l'événement « ni $A$ ni $B$ » ?",
+      "verso": "Par $\\overline{A}\\cap\\overline{B}$, puisque $A$ ne se réalise pas et $B$ non plus, ou tout aussi bien par $\\overline{A\\cup B}$, puisque « $A$ ou $B$ » est en défaut. Ces deux écritures désignent la même partie de $\\Omega$.",
+      "difficulte": 2,
+      "tags": ["evenement-contraire", "reunion", "traduction"]
+    },
+    {
+      "id": "TD-CH08-007",
+      "lecon": "Langage des événements",
+      "type": "definition",
+      "recto": "Pourquoi le « ou » des mathématiques ne se lit-il pas comme celui de « fromage ou dessert » ?",
+      "verso": "Parce qu'il est inclusif : « $A$ ou $B$ » comprend le cas où $A$ et $B$ se produisent ensemble. En tirant une carte, « roi ou cœur » garde le roi de cœur. Les deux sens ne coïncident que si $A$ et $B$ sont incompatibles.",
+      "difficulte": 3,
+      "tags": ["ou-inclusif", "reunion", "piege"]
+    },
+    {
+      "id": "TD-CH08-008",
+      "lecon": "Langage des événements",
+      "type": "definition",
+      "recto": "Pourquoi deux événements incompatibles ne sont-ils pas nécessairement contraires l'un de l'autre ?",
+      "verso": "Parce que l'incompatibilité ne donne que $A\\cap B=\\varnothing$, alors que le contraire exige de plus $A\\cup B=\\Omega$. Dans un univers de huit caisses, $\\{1,2,3\\}$ et $\\{4,5,6\\}$ sont incompatibles sans le remplir. Contraires entraîne incompatibles, jamais l'inverse.",
+      "difficulte": 3,
+      "tags": ["incompatibles", "evenement-contraire", "piege"]
+    },
+    {
+      "id": "TD-CH08-009",
+      "lecon": "Probabilité et équiprobabilité",
+      "type": "definition",
+      "recto": "Que signifie définir une probabilité $p$ sur un univers fini $\\Omega$ ?",
+      "verso": "C'est associer à chaque événement élémentaire un nombre $p_i\\ge 0$ tel que $p_1+p_2+\\dots+p_n=1$, la probabilité d'un événement étant la somme des $p_i$ des issues qui le composent. On a alors $p(\\Omega)=1$, $p(\\varnothing)=0$ et $p(A)\\in[0\\,;1]$.",
+      "difficulte": 2,
+      "tags": ["probabilite", "definition", "somme-egale-a-un"]
+    },
+    {
+      "id": "TD-CH08-010",
+      "lecon": "Probabilité et équiprobabilité",
+      "type": "definition",
+      "recto": "Qu'est-ce qui distingue la fréquence d'un événement de sa probabilité ?",
+      "verso": "La fréquence est expérimentale : elle se calcule après coup et fluctue d'une série à l'autre. La probabilité est le nombre théorique vers lequel ces fréquences se stabilisent quand les répétitions se multiplient ; elle est attachée à l'expérience elle-même.",
+      "difficulte": 2,
+      "tags": ["frequence", "probabilite", "stabilisation"]
+    },
+    {
+      "id": "TD-CH08-011",
+      "lecon": "Probabilité et équiprobabilité",
+      "type": "formule",
+      "recto": "Que vaut $p(A\\cup B)$ lorsque $A$ et $B$ sont incompatibles ?",
+      "verso": "Elle vaut $p(A)+p(B)$. Cette addition simple n'est licite que sous cette condition : sans elle, les issues communes à $A$ et à $B$ seraient comptées deux fois.",
+      "difficulte": 2,
+      "tags": ["reunion", "incompatibles", "addition"]
+    },
+    {
+      "id": "TD-CH08-012",
+      "lecon": "Probabilité et équiprobabilité",
+      "type": "formule",
+      "recto": "Comment calcule-t-on la probabilité de l'événement contraire de $A$ ?",
+      "verso": "Par $p(\\overline{A})=1-p(A)$. C'est la propriété la plus rentable : dès qu'un énoncé contient les mots « au moins un », on calcule la probabilité de « aucun », puis on retranche à $1$.",
+      "difficulte": 1,
+      "tags": ["evenement-contraire", "au-moins-un"]
+    },
+    {
+      "id": "TD-CH08-013",
+      "lecon": "Probabilité et équiprobabilité",
+      "type": "formule",
+      "recto": "Quelle formule donne $p(A\\cup B)$ dans le cas général ?",
+      "verso": "$p(A\\cup B)=p(A)+p(B)-p(A\\cap B)$. La soustraction répare un double comptage, car dans $p(A)+p(B)$ les issues de $A\\cap B$ sont comptées deux fois. Si $A$ et $B$ sont incompatibles, ce terme est nul.",
+      "difficulte": 1,
+      "tags": ["reunion", "double-comptage", "formule"]
+    },
+    {
+      "id": "TD-CH08-014",
+      "lecon": "Probabilité et équiprobabilité",
+      "type": "formule",
+      "recto": "Que peut-on dire des probabilités de deux événements tels que $A\\subset B$ ?",
+      "verso": "On a $p(A)\\le p(B)$. En effet, $B$ se découpe en deux morceaux incompatibles, ce qui est dans $A$ et ce qui n'y est pas : $p(B)=p(A)+p(B\\cap\\overline{A})$, et le second terme est positif ou nul.",
+      "difficulte": 2,
+      "tags": ["inclusion", "comparaison"]
+    },
+    {
+      "id": "TD-CH08-015",
+      "lecon": "Probabilité et équiprobabilité",
+      "type": "formule",
+      "recto": "Comment calcule-t-on $p(A)$ en situation d'équiprobabilité ?",
+      "verso": "Par $p(A)=\\dfrac{\\operatorname{card}(A)}{\\operatorname{card}(\\Omega)}$, soit le nombre de cas favorables divisé par le nombre de cas possibles. Chaque issue vaut alors $\\dfrac{1}{n}$, où $n$ est le nombre d'issues.",
+      "difficulte": 1,
+      "tags": ["equiprobabilite", "cas-favorables"]
+    },
+    {
+      "id": "TD-CH08-016",
+      "lecon": "Probabilité et équiprobabilité",
+      "type": "definition",
+      "recto": "Pourquoi le quotient des cas favorables par les cas possibles donne-t-il un résultat faux pour une punaise ?",
+      "verso": "Parce que ce quotient exige l'équiprobabilité, et que les deux positions d'une punaise n'ont pas la même chance : mille lancers donnent environ $0{,}62$ et non $0{,}5$. Deux issues possibles ne signifie pas deux issues également probables.",
+      "difficulte": 3,
+      "tags": ["equiprobabilite", "condition", "piege"]
+    },
+    {
+      "id": "TD-CH08-017",
+      "lecon": "Conditionnement, Bernoulli et loi binomiale",
+      "type": "formule",
+      "recto": "Comment définit-on la probabilité de $A$ sachant $B$ ?",
+      "verso": "Par $p_B(A)=p(A\\mid B)=\\dfrac{p(A\\cap B)}{p(B)}$, avec $p(B)>0$. L'information $B$ rétrécit l'univers et devient le nouveau tout, d'où la division par $p(B)$. La lettre en indice, ou placée après la barre, est l'information dont on dispose.",
+      "difficulte": 2,
+      "tags": ["probabilite-conditionnelle", "definition"]
+    },
+    {
+      "id": "TD-CH08-018",
+      "lecon": "Conditionnement, Bernoulli et loi binomiale",
+      "type": "formule",
+      "recto": "Qu'énonce la formule des probabilités composées ?",
+      "verso": "Pour $p(A)$ et $p(B)$ non nulles : $p(A\\cap B)=p(B)\\times p_B(A)=p(A)\\times p_A(B)$. C'est la définition de la probabilité conditionnelle débarrassée de son quotient, et c'est elle que l'on applique en multipliant les branches d'un arbre.",
+      "difficulte": 2,
+      "tags": ["probabilites-composees", "intersection"]
+    },
+    {
+      "id": "TD-CH08-019",
+      "lecon": "Conditionnement, Bernoulli et loi binomiale",
+      "type": "formule",
+      "recto": "Comment se comporte l'application $A\\mapsto p_B(A)$ pour un événement $B$ fixé de probabilité non nulle ?",
+      "verso": "Comme une probabilité ordinaire : on peut écrire $p_B(\\overline{A})=1-p_B(A)$ ou $p_B(A\\cup C)=p_B(A)+p_B(C)-p_B(A\\cap C)$. Mais la règle du contraire porte sur l'événement placé devant la barre, jamais sur l'information placée derrière.",
+      "difficulte": 2,
+      "tags": ["probabilite-conditionnelle", "proprietes"]
+    },
+    {
+      "id": "TD-CH08-020",
+      "lecon": "Conditionnement, Bernoulli et loi binomiale",
+      "type": "formule",
+      "recto": "Qu'énonce la formule des probabilités totales ?",
+      "verso": "Si $B_1,\\dots,B_k$ forment une partition de $\\Omega$, donc deux à deux incompatibles, de réunion $\\Omega$ et de probabilités non nulles, alors $p(A)=p(B_1)\\,p_{B_1}(A)+\\dots+p(B_k)\\,p_{B_k}(A)$. La partition la plus utile est $\\{B\\,;\\overline{B}\\}$.",
+      "difficulte": 2,
+      "tags": ["probabilites-totales", "partition"]
+    },
+    {
+      "id": "TD-CH08-021",
+      "lecon": "Conditionnement, Bernoulli et loi binomiale",
+      "type": "formule",
+      "recto": "Quelles deux opérations mène-t-on sur un arbre pondéré ?",
+      "verso": "On multiplie les probabilités rencontrées le long d'un chemin, ce qui donne la probabilité d'une intersection, puis on additionne les chemins qui réalisent l'événement cherché. Les branches issues d'un même point ont toujours pour somme $1$.",
+      "difficulte": 2,
+      "tags": ["arbre-pondere", "produit", "somme"]
+    },
+    {
+      "id": "TD-CH08-022",
+      "lecon": "Conditionnement, Bernoulli et loi binomiale",
+      "type": "formule",
+      "recto": "A quelle condition deux événements $A$ et $B$ sont-ils indépendants ?",
+      "verso": "Lorsque $p(A\\cap B)=p(A)\\times p(B)$. Si $p(B)>0$, cela équivaut à $p_B(A)=p(A)$ : savoir que $B$ s'est produit ne change pas la probabilité de $A$. On le vérifie en calculant les deux membres séparément, puis en les comparant.",
+      "difficulte": 2,
+      "tags": ["independance", "condition"]
+    },
+    {
+      "id": "TD-CH08-023",
+      "lecon": "Conditionnement, Bernoulli et loi binomiale",
+      "type": "definition",
+      "recto": "Pourquoi deux événements incompatibles de probabilités non nulles ne sont-ils jamais indépendants ?",
+      "verso": "Parce que $A\\cap B=\\varnothing$ donne $p(A\\cap B)=0$, alors que $p(A)\\times p(B)>0$ : l'égalité qui définit l'indépendance est en défaut. Indépendants et incompatibles sont donc deux notions distinctes.",
+      "difficulte": 2,
+      "tags": ["independance", "incompatibles", "distinction"]
+    },
+    {
+      "id": "TD-CH08-024",
+      "lecon": "Conditionnement, Bernoulli et loi binomiale",
+      "type": "definition",
+      "recto": "Quelles trois conditions définissent un schéma de Bernoulli ?",
+      "verso": "Une épreuve à deux issues seulement, succès de probabilité $p$ et échec de probabilité $1-p$ ; une probabilité de succès identique à chaque répétition ; et $n$ répétitions indépendantes. Tant que ces trois points ne sont pas acquis, on n'écrit pas $\\mathcal{B}(n\\,;p)$.",
+      "difficulte": 2,
+      "tags": ["bernoulli", "conditions"]
+    },
+    {
+      "id": "TD-CH08-025",
+      "lecon": "Conditionnement, Bernoulli et loi binomiale",
+      "type": "formule",
+      "recto": "Que vaut $p(X=k)$ lorsque $X$ suit la loi binomiale $\\mathcal{B}(n\\,;p)$ ?",
+      "verso": "$p(X=k)=C_n^k\\,p^{k}\\,(1-p)^{\\,n-k}$ pour $0\\le k\\le n$, où $X$ compte les succès. Le produit $p^{k}(1-p)^{\\,n-k}$ est la probabilité d'un chemin, et $C_n^k$ compte les chemins donnant exactement $k$ succès.",
+      "difficulte": 1,
+      "tags": ["loi-binomiale", "formule"]
+    },
+    {
+      "id": "TD-CH08-026",
+      "lecon": "Conditionnement, Bernoulli et loi binomiale",
+      "type": "formule",
+      "recto": "Pourquoi la loi binomiale ne s'applique-t-elle pas à un tirage sans remise ?",
+      "verso": "Parce que la composition change après chaque tirage : la probabilité du succès dépend de ce qui est sorti et les répétitions ne sont pas indépendantes. Avec remise, au contraire, l'expérience recommence à l'identique et le schéma de Bernoulli s'applique.",
+      "difficulte": 2,
+      "tags": ["sans-remise", "independance", "loi-binomiale"]
+    },
+    {
+      "id": "TD-CH08-027",
+      "lecon": "Conditionnement, Bernoulli et loi binomiale",
+      "type": "formule",
+      "recto": "Que donne le produit $p(A_1)\\times p(A_2)\\times\\dots\\times p(A_n)$ pour $n$ expériences indépendantes ?",
+      "verso": "Il donne $p(A_1\\cap A_2\\cap\\dots\\cap A_n)$, où chaque $A_i$ est lié à une expérience. Cette propriété n'est vraie que sous l'hypothèse d'indépendance, et c'est elle qui fonde le produit le long d'un chemin dans un schéma de Bernoulli.",
+      "difficulte": 2,
+      "tags": ["independance", "produit", "intersection"]
+    },
+    {
+      "id": "TD-CH08-028",
+      "lecon": "Conditionnement, Bernoulli et loi binomiale",
+      "type": "definition",
+      "recto": "Pourquoi $p(A\\mid D)$ ne vaut-il pas la même chose que $p(D\\mid A)$ ?",
+      "verso": "Parce que le dénominateur diffère : $p(D\\mid A)$ se calcule parmi les articles de la machine A, $p(A\\mid D)$ parmi les articles défectueux. Avec $p(D\\mid A)=0{,}05$ on peut trouver $p(A\\mid D)=\\dfrac37$. On repasse toujours par $\\dfrac{p(A\\cap D)}{p(D)}$.",
+      "difficulte": 3,
+      "tags": ["conditionnement", "renversement", "piege"]
+    },
+    {
+      "id": "TD-CH08-029",
+      "lecon": "Variables aléatoires",
+      "type": "definition",
+      "recto": "Qu'est-ce qu'une variable aléatoire numérique $X$ définie sur un univers $\\Omega$ ?",
+      "verso": "Une application de $\\Omega$ dans $\\mathbb{R}$ : une règle fixe, décidée d'avance, qui associe un nombre à chaque issue. L'écriture $(X=x_i)$ n'est pas une équation mais un événement, et $X(\\Omega)$, l'univers-image, est l'ensemble des valeurs prises.",
+      "difficulte": 1,
+      "tags": ["variable-aleatoire", "univers-image"]
+    },
+    {
+      "id": "TD-CH08-030",
+      "lecon": "Variables aléatoires",
+      "type": "formule",
+      "recto": "Qu'appelle-t-on la loi de probabilité d'une variable aléatoire $X$ ?",
+      "verso": "Le tableau qui associe à chaque valeur $x_i$ prise par $X$ la probabilité $p_i=p(X=x_i)$. La somme des $p_i$ vaut toujours $1$, car les événements $(X=x_i)$ forment une partition de $\\Omega$ : cette égalité sert de contrôle.",
+      "difficulte": 2,
+      "tags": ["loi-de-probabilite", "tableau", "controle"]
+    },
+    {
+      "id": "TD-CH08-031",
+      "lecon": "Variables aléatoires",
+      "type": "formule",
+      "recto": "Comment calcule-t-on l'espérance d'une variable aléatoire $X$ à partir de sa loi ?",
+      "verso": "Par $E(X)=\\sum_i x_i\\,p_i$ : c'est une moyenne pondérée, chaque valeur pesant d'autant plus lourd qu'elle est probable. L'espérance tombe toujours entre la plus petite et la plus grande valeur de $X$.",
+      "difficulte": 1,
+      "tags": ["esperance", "moyenne-ponderee"]
+    },
+    {
+      "id": "TD-CH08-032",
+      "lecon": "Variables aléatoires",
+      "type": "definition",
+      "recto": "Pourquoi une espérance de gain de $-10$ FCFA ne signifie-t-elle pas que le joueur perd $10$ FCFA ?",
+      "verso": "Parce que l'espérance n'est ni un gain garanti ni même un gain possible : c'est la moyenne vers laquelle se stabilise le gain par partie quand les parties se multiplient. Sur une partie elle ne prédit rien, sur mille parties presque tout.",
+      "difficulte": 2,
+      "tags": ["esperance", "interpretation"]
+    },
+    {
+      "id": "TD-CH08-033",
+      "lecon": "Variables aléatoires",
+      "type": "formule",
+      "recto": "Quelles deux écritures donnent la variance d'une variable aléatoire $X$ ?",
+      "verso": "$V(X)=\\sum_i p_i\\big(x_i-E(X)\\big)^2$, qui dit ce qu'elle signifie, une moyenne de carrés d'écarts à la moyenne, et $V(X)=E(X^2)-\\big(E(X)\\big)^2$, la formule de Koenig, qui sert au calcul.",
+      "difficulte": 2,
+      "tags": ["variance", "koenig"]
+    },
+    {
+      "id": "TD-CH08-034",
+      "lecon": "Variables aléatoires",
+      "type": "formule",
+      "recto": "Pourquoi ne peut-on pas confondre $E(X^{2})$ et $\\big(E(X)\\big)^{2}$ dans la formule de Koenig ?",
+      "verso": "Parce que l'on élève au carré avant de faire la moyenne dans le premier cas, après dans le second : les confondre donnerait $V(X)=0$ à tous les coups. Une variance étant une moyenne de carrés, un résultat négatif signale cette inversion.",
+      "difficulte": 3,
+      "tags": ["variance", "koenig", "piege"]
+    },
+    {
+      "id": "TD-CH08-035",
+      "lecon": "Variables aléatoires",
+      "type": "definition",
+      "recto": "Pourquoi interprète-t-on l'écart-type plutôt que la variance ?",
+      "verso": "A cause de l'unité : faite de carrés, la variance s'exprimerait en FCFA au carré, ce qui n'a aucun sens pour un joueur. L'écart-type $\\sigma(X)=\\sqrt{V(X)}$ rétablit l'unité de départ et se compare directement aux valeurs de $X$ et à leur moyenne.",
+      "difficulte": 2,
+      "tags": ["ecart-type", "unite", "dispersion"]
+    },
+    {
+      "id": "TD-CH08-036",
+      "lecon": "Variables aléatoires",
+      "type": "formule",
+      "recto": "Que valent l'espérance et la variance d'une variable suivant la loi binomiale $\\mathcal{B}(n\\,;p)$ ?",
+      "verso": "$E(X)=np$ et $V(X)=np(1-p)$. Deux produits suffisent, sans écrire les $n+1$ probabilités $p(X=k)$. Pour $\\mathcal{B}(10\\,;0{,}2)$, l'espérance vaut $2$ et non $0{,}2$.",
+      "difficulte": 1,
+      "tags": ["loi-binomiale", "esperance", "variance"]
+    },
+    {
+      "id": "TD-CH08-037",
+      "lecon": "Variables aléatoires",
+      "type": "formule",
+      "recto": "Comment définit-on la fonction de répartition $F$ d'une variable aléatoire $X$ ?",
+      "verso": "Par $F(x)=p(X\\le x)$, définie sur $\\mathbb{R}$ tout entier. C'est une fonction en escalier croissante de $0$ à $1$ : elle vaut $0$ avant la plus petite valeur, $1$ à partir de la plus grande, et chaque palier cumule les probabilités des valeurs déjà atteintes.",
+      "difficulte": 2,
+      "tags": ["fonction-de-repartition", "escalier"]
+    },
+    {
+      "id": "TD-CH08-038",
+      "lecon": "Variables aléatoires",
+      "type": "formule",
+      "recto": "Comment calcule-t-on $p(a<X\\le b)$ à l'aide de la fonction de répartition ?",
+      "verso": "Par $p(a<X\\le b)=F(b)-F(a)$ : $F(b)$ compte tout ce qui est inférieur ou égal à $b$, et l'on retranche ce qui est déjà inférieur ou égal à $a$. Il reste la tranche comprise entre les deux, bord droit inclus, bord gauche exclu.",
+      "difficulte": 2,
+      "tags": ["fonction-de-repartition", "intervalle"]
+    }
+  ]
+}

@@ -1,0 +1,314 @@
+{
+  "niveau": "3ème",
+  "chapitre": "Chapitre 13 : Equations de droites",
+  "source": "maths/3eme/Chapitre_13_Equations_de_droites",
+  "nombre_cartes": 34,
+  "cartes": [
+    {
+      "id": "3E-CH13-001",
+      "lecon": "Equation cartésienne et vecteur directeur",
+      "type": "definition",
+      "recto": "Qu'est-ce qu'une équation cartésienne d'une droite ?",
+      "verso": "C'est une égalité de la forme $ax + by + c = 0$, où $a$ et $b$ ne sont pas tous les deux nuls. Un point appartient à la droite si et seulement si ses coordonnées vérifient cette égalité.",
+      "difficulte": 1,
+      "tags": ["equation-cartesienne", "definition"]
+    },
+    {
+      "id": "3E-CH13-002",
+      "lecon": "Equation cartésienne et vecteur directeur",
+      "type": "definition",
+      "recto": "Qu'est-ce qu'un vecteur directeur d'une droite ?",
+      "verso": "C'est un vecteur non nul qui donne la direction de cette droite. Une droite a une infinité de vecteurs directeurs, tous colinéaires entre eux.",
+      "difficulte": 1,
+      "tags": ["vecteur-directeur", "definition"]
+    },
+    {
+      "id": "3E-CH13-003",
+      "lecon": "Equation cartésienne et vecteur directeur",
+      "type": "formule",
+      "recto": "Comment lit-on un vecteur directeur sur l'équation cartésienne $ax + by + c = 0$ ?",
+      "verso": "Le vecteur $\\vec{u}\\left(-b\\,;\\,a\\right)$ est un vecteur directeur de la droite. Pour $3x - 4y + 12 = 0$, on obtient $\\vec{u}\\left(4\\,;\\,3\\right)$.",
+      "difficulte": 2,
+      "tags": ["vecteur-directeur", "equation-cartesienne"]
+    },
+    {
+      "id": "3E-CH13-004",
+      "lecon": "Equation cartésienne et vecteur directeur",
+      "type": "formule",
+      "recto": "Pourquoi $\\vec{u}\\left(a\\,;\\,b\\right)$ n'est-il pas un vecteur directeur de la droite $ax + by + c = 0$ ?",
+      "verso": "Parce qu'il faut échanger les deux coefficients et changer un signe : le vecteur directeur est $\\vec{u}\\left(-b\\,;\\,a\\right)$. Pour $2x + 3y + 5 = 0$, c'est $\\vec{u}\\left(-3\\,;\\,2\\right)$.",
+      "difficulte": 3,
+      "tags": ["vecteur-directeur", "piege"]
+    },
+    {
+      "id": "3E-CH13-005",
+      "lecon": "Equation cartésienne et vecteur directeur",
+      "type": "formule",
+      "recto": "Quelle condition caractérise les points $M$ de la droite passant par $A$ et de vecteur directeur $\\vec{u}$ ?",
+      "verso": "Les vecteurs $\\overrightarrow{AM}$ et $\\vec{u}$ doivent être colinéaires. C'est en traduisant cette colinéarité en coordonnées que l'on obtient l'équation de la droite.",
+      "difficulte": 2,
+      "tags": ["vecteur-directeur", "colinearite"]
+    },
+    {
+      "id": "3E-CH13-006",
+      "lecon": "Equation cartésienne et vecteur directeur",
+      "type": "formule",
+      "recto": "Combien d'équations cartésiennes une même droite admet-elle ?",
+      "verso": "Une infinité : en multipliant toute l'égalité par un nombre non nul, on obtient une autre équation de la même droite. Ainsi $2x + y - 11 = 0$ et $4x + 2y - 22 = 0$ décrivent la même droite.",
+      "difficulte": 2,
+      "tags": ["equation-cartesienne", "propriete"]
+    },
+    {
+      "id": "3E-CH13-007",
+      "lecon": "Equation cartésienne et vecteur directeur",
+      "type": "definition",
+      "recto": "Dans l'équation $ax + by + c = 0$, quel est le rôle du nombre $c$ ?",
+      "verso": "Il ne fait que déplacer la droite parallèlement à elle-même. Ce sont les deux premiers nombres, $a$ et $b$, qui portent la direction de la droite.",
+      "difficulte": 3,
+      "tags": ["equation-cartesienne", "direction"]
+    },
+    {
+      "id": "3E-CH13-008",
+      "lecon": "Equation réduite et coefficient directeur",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on l'équation réduite d'une droite ?",
+      "verso": "C'est l'écriture de la forme $y = ax + b$. Toute droite non verticale en admet une.",
+      "difficulte": 1,
+      "tags": ["equation-reduite", "definition"]
+    },
+    {
+      "id": "3E-CH13-009",
+      "lecon": "Equation réduite et coefficient directeur",
+      "type": "definition",
+      "recto": "Que représente le nombre $a$ dans l'équation réduite $y = ax + b$ ?",
+      "verso": "C'est le coefficient directeur, c'est-à-dire la pente : lorsque l'abscisse augmente de $1$, l'ordonnée varie de $a$.",
+      "difficulte": 1,
+      "tags": ["coefficient-directeur", "definition"]
+    },
+    {
+      "id": "3E-CH13-010",
+      "lecon": "Equation réduite et coefficient directeur",
+      "type": "formule",
+      "recto": "Que révèle le signe du coefficient directeur sur l'allure d'une droite ?",
+      "verso": "Si $a > 0$ la droite monte, si $a < 0$ elle descend, et si $a = 0$ elle est horizontale.",
+      "difficulte": 2,
+      "tags": ["coefficient-directeur", "allure"]
+    },
+    {
+      "id": "3E-CH13-011",
+      "lecon": "Equation réduite et coefficient directeur",
+      "type": "definition",
+      "recto": "Que représente le nombre $b$ dans l'équation réduite $y = ax + b$ ?",
+      "verso": "C'est l'ordonnée à l'origine : la droite coupe l'axe des ordonnées au point de coordonnées $\\left(0\\,;\\,b\\right)$.",
+      "difficulte": 1,
+      "tags": ["ordonnee-a-l-origine", "definition"]
+    },
+    {
+      "id": "3E-CH13-012",
+      "lecon": "Equation réduite et coefficient directeur",
+      "type": "formule",
+      "recto": "Comment calcule-t-on le coefficient directeur d'une droite passant par deux points distincts $A$ et $B$ ?",
+      "verso": "Par $a = \\dfrac{y_{B} - y_{A}}{x_{B} - x_{A}}$, à condition que les deux abscisses soient différentes. C'est ce qu'on monte divisé par ce qu'on avance.",
+      "difficulte": 2,
+      "tags": ["coefficient-directeur", "deux-points"]
+    },
+    {
+      "id": "3E-CH13-013",
+      "lecon": "Equation réduite et coefficient directeur",
+      "type": "formule",
+      "recto": "Quelle erreur guette l'élève qui calcule un coefficient directeur à partir de deux points ?",
+      "verso": "Inverser les deux différences. Si l'on écrit $y_{B} - y_{A}$ au numérateur, il faut écrire $x_{B} - x_{A}$ au dénominateur, et non l'inverse.",
+      "difficulte": 3,
+      "tags": ["coefficient-directeur", "piege"]
+    },
+    {
+      "id": "3E-CH13-014",
+      "lecon": "Equation réduite et coefficient directeur",
+      "type": "formule",
+      "recto": "Quelle forme prend l'équation d'une droite verticale ?",
+      "verso": "Elle s'écrit $x = k$, où $k$ est l'abscisse commune à tous ses points. Sous forme cartésienne, cela donne $x - k = 0$.",
+      "difficulte": 1,
+      "tags": ["droite-verticale", "equation"]
+    },
+    {
+      "id": "3E-CH13-015",
+      "lecon": "Equation réduite et coefficient directeur",
+      "type": "formule",
+      "recto": "Pourquoi une droite verticale n'a-t-elle pas de coefficient directeur ?",
+      "verso": "Parce que tous ses points ont la même abscisse : le dénominateur de la pente serait nul, et l'on ne divise pas par $0$. Une droite verticale n'a donc pas non plus d'équation réduite.",
+      "difficulte": 3,
+      "tags": ["droite-verticale", "coefficient-directeur", "piege"]
+    },
+    {
+      "id": "3E-CH13-016",
+      "lecon": "Droite parallèle ou perpendiculaire à une droite donnée",
+      "type": "formule",
+      "recto": "Quel coefficient directeur donne-t-on à une droite parallèle à la droite d'équation $y = ax + b$ ?",
+      "verso": "Le même coefficient $a$. Seule l'ordonnée à l'origine change, et c'est elle qu'il reste à déterminer.",
+      "difficulte": 1,
+      "tags": ["parallele", "coefficient-directeur"]
+    },
+    {
+      "id": "3E-CH13-017",
+      "lecon": "Droite parallèle ou perpendiculaire à une droite donnée",
+      "type": "formule",
+      "recto": "Dans un repère orthonormal, comment obtient-on la pente d'une perpendiculaire à une droite de coefficient directeur $a$ non nul ?",
+      "verso": "On calcule $a' = \\dfrac{-1}{a}$ : on retourne la fraction et on change le signe. Si $a = \\dfrac{2}{3}$, alors $a' = -\\dfrac{3}{2}$.",
+      "difficulte": 2,
+      "tags": ["perpendiculaire", "coefficient-directeur"]
+    },
+    {
+      "id": "3E-CH13-018",
+      "lecon": "Droite parallèle ou perpendiculaire à une droite donnée",
+      "type": "formule",
+      "recto": "Comment détermine-t-on l'ordonnée à l'origine d'une droite dont on connaît la pente et un point ?",
+      "verso": "On écrit $y = ax + b$, on remplace $x$ et $y$ par les coordonnées du point, puis on résout pour trouver $b$.",
+      "difficulte": 2,
+      "tags": ["ordonnee-a-l-origine", "methode"]
+    },
+    {
+      "id": "3E-CH13-019",
+      "lecon": "Droite parallèle ou perpendiculaire à une droite donnée",
+      "type": "formule",
+      "recto": "Que peut-on dire des signes des pentes de deux droites perpendiculaires ?",
+      "verso": "Ils sont toujours contraires, puisque leur produit vaut $-1$ : une droite qui monte a forcément des perpendiculaires qui descendent.",
+      "difficulte": 3,
+      "tags": ["perpendiculaire", "signe"]
+    },
+    {
+      "id": "3E-CH13-020",
+      "lecon": "Droite parallèle ou perpendiculaire à une droite donnée",
+      "type": "formule",
+      "recto": "Quelles droites sont perpendiculaires à une droite horizontale d'équation $y = b$ ?",
+      "verso": "Les droites verticales $x = k$. Le critère du produit égal à $-1$ ne s'applique pas ici, puisqu'une droite verticale n'a pas de coefficient directeur.",
+      "difficulte": 3,
+      "tags": ["perpendiculaire", "droite-verticale", "cas-particulier"]
+    },
+    {
+      "id": "3E-CH13-021",
+      "lecon": "Droite parallèle ou perpendiculaire à une droite donnée",
+      "type": "formule",
+      "recto": "Comment obtient-on la pente d'une droite donnée par une équation cartésienne ?",
+      "verso": "On isole $y$ pour mettre l'équation sous forme réduite. Ainsi $x - 3y + 6 = 0$ devient $y = \\dfrac{1}{3}x + 2$, de pente $\\dfrac{1}{3}$.",
+      "difficulte": 2,
+      "tags": ["equation-reduite", "coefficient-directeur"]
+    },
+    {
+      "id": "3E-CH13-022",
+      "lecon": "Construction, appartenance, coordonnée manquante",
+      "type": "formule",
+      "recto": "Combien de points faut-il déterminer pour construire une droite dont on connaît l'équation ?",
+      "verso": "Deux points suffisent : on les place, puis on trace la droite qui les joint. On choisit des abscisses qui donnent des ordonnées simples.",
+      "difficulte": 1,
+      "tags": ["construction", "droite"]
+    },
+    {
+      "id": "3E-CH13-023",
+      "lecon": "Construction, appartenance, coordonnée manquante",
+      "type": "formule",
+      "recto": "Comment établit-on qu'un point appartient à une droite dont on connaît l'équation ?",
+      "verso": "On remplace $x$ et $y$ par les coordonnées du point, on calcule chaque membre, puis on compare : le point appartient à la droite si et seulement si l'égalité est vraie.",
+      "difficulte": 1,
+      "tags": ["appartenance", "test"]
+    },
+    {
+      "id": "3E-CH13-024",
+      "lecon": "Construction, appartenance, coordonnée manquante",
+      "type": "definition",
+      "recto": "Quelles notations expriment qu'un point appartient ou non à une droite $\\left(D\\right)$ ?",
+      "verso": "On écrit $M \\in \\left(D\\right)$ lorsque le point appartient à la droite, et $M \\notin \\left(D\\right)$ lorsqu'il ne lui appartient pas.",
+      "difficulte": 1,
+      "tags": ["appartenance", "notation"]
+    },
+    {
+      "id": "3E-CH13-025",
+      "lecon": "Construction, appartenance, coordonnée manquante",
+      "type": "formule",
+      "recto": "Comment trouve-t-on la coordonnée manquante d'un point situé sur une droite ?",
+      "verso": "On remplace la coordonnée connue dans l'équation, puis on résout l'équation du premier degré obtenue. On donne enfin le couple complet des coordonnées.",
+      "difficulte": 2,
+      "tags": ["coordonnee-manquante", "methode"]
+    },
+    {
+      "id": "3E-CH13-026",
+      "lecon": "Construction, appartenance, coordonnée manquante",
+      "type": "definition",
+      "recto": "Pourquoi le calcul vaut-il mieux que la lecture d'un dessin pour décider si un point est sur une droite ?",
+      "verso": "Parce que le tracé est toujours approximatif, alors que l'équation est un test exact : on remplace, on compare, et la réponse ne laisse aucun doute.",
+      "difficulte": 2,
+      "tags": ["appartenance", "demontrer"]
+    },
+    {
+      "id": "3E-CH13-027",
+      "lecon": "Construction, appartenance, coordonnée manquante",
+      "type": "formule",
+      "recto": "Quelles abscisses choisit-on pour placer facilement des points d'une droite dont la pente est une fraction ?",
+      "verso": "Des multiples du dénominateur de la pente, qui donnent des ordonnées entières. Avec la pente $-\\dfrac{2}{3}$, l'abscisse $3$ est un bon choix.",
+      "difficulte": 3,
+      "tags": ["construction", "astuce"]
+    },
+    {
+      "id": "3E-CH13-028",
+      "lecon": "Parallélisme et perpendicularité de deux droites",
+      "type": "formule",
+      "recto": "A quelle condition les droites $y = ax + b$ et $y = a'x + b'$ sont-elles parallèles ?",
+      "verso": "Lorsque leurs coefficients directeurs sont égaux, c'est-à-dire lorsque $a = a'$.",
+      "difficulte": 1,
+      "tags": ["parallelisme", "critere"]
+    },
+    {
+      "id": "3E-CH13-029",
+      "lecon": "Parallélisme et perpendicularité de deux droites",
+      "type": "formule",
+      "recto": "Comment distingue-t-on deux droites confondues de deux droites strictement parallèles ?",
+      "verso": "Les deux ont le même coefficient directeur. Si de plus $b = b'$, elles sont confondues ; si $b \\ne b'$, elles sont strictement parallèles et ne se rencontrent jamais.",
+      "difficulte": 2,
+      "tags": ["parallelisme", "confondues", "piege"]
+    },
+    {
+      "id": "3E-CH13-030",
+      "lecon": "Parallélisme et perpendicularité de deux droites",
+      "type": "formule",
+      "recto": "Dans un repère orthonormal, à quelle condition deux droites non verticales sont-elles perpendiculaires ?",
+      "verso": "Lorsque le produit de leurs coefficients directeurs vaut $-1$, c'est-à-dire lorsque $a \\times a' = -1$.",
+      "difficulte": 1,
+      "tags": ["perpendicularite", "critere"]
+    },
+    {
+      "id": "3E-CH13-031",
+      "lecon": "Parallélisme et perpendicularité de deux droites",
+      "type": "formule",
+      "recto": "Que peut-on dire de deux droites dont les coefficients directeurs sont différents ?",
+      "verso": "Elles sont sécantes : elles se coupent en un seul point. Ce point de croisement n'est un angle droit que si le produit des deux coefficients vaut $-1$.",
+      "difficulte": 2,
+      "tags": ["secantes", "position-relative"]
+    },
+    {
+      "id": "3E-CH13-032",
+      "lecon": "Parallélisme et perpendicularité de deux droites",
+      "type": "formule",
+      "recto": "Que doivent vérifier les vecteurs directeurs de deux droites parallèles ?",
+      "verso": "Ils doivent être colinéaires. Ce critère reste utilisable même lorsque l'une des droites est verticale et n'a pas de coefficient directeur.",
+      "difficulte": 2,
+      "tags": ["parallelisme", "vecteur-directeur"]
+    },
+    {
+      "id": "3E-CH13-033",
+      "lecon": "Parallélisme et perpendicularité de deux droites",
+      "type": "formule",
+      "recto": "Comment reconnaît-on deux droites perpendiculaires à partir de leurs vecteurs directeurs ?",
+      "verso": "Leurs vecteurs directeurs $\\vec{u}\\left(x\\,;\\,y\\right)$ et $\\vec{v}\\left(x'\\,;\\,y'\\right)$ sont orthogonaux, c'est-à-dire que $xx' + yy' = 0$, dans un repère orthonormal.",
+      "difficulte": 2,
+      "tags": ["perpendicularite", "vecteur-directeur", "orthogonaux"]
+    },
+    {
+      "id": "3E-CH13-034",
+      "lecon": "Parallélisme et perpendicularité de deux droites",
+      "type": "formule",
+      "recto": "Dans quel type de repère le critère $a \\times a' = -1$ est-il valable ?",
+      "verso": "Seulement dans un repère orthonormal, où les axes sont perpendiculaires et portent la même unité. Le critère du parallélisme, lui, est vrai dans tous les repères.",
+      "difficulte": 3,
+      "tags": ["perpendicularite", "repere-orthonormal", "condition"]
+    }
+  ]
+}

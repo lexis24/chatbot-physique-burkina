@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Fiche de revision - 4eme - Chapitre 13 : Les applications</title>
+<style>
+/* ===================================================================
+   FICHE DE REVISION, Collection Hakili Lab, Edition 2026
+   Feuille de style autonome, format A4 pret a imprimer.
+   Bleu #005CB9 · Vert #49A145
+   =================================================================== */
+:root{
+  --bleu:#005CB9; --bleu-fonce:#00429A; --bleu-pale:#E8F1FB; --bleu-bord:#B7D2EE;
+  --vert:#49A145; --vert-fonce:#2F7A2C; --vert-pale:#EDF7EC; --vert-bord:#BCE0B9;
+  --gris:#4A4A4A; --gris-clair:#E4E4E4; --rouge:#B3261E;
+}
+@page{
+  size:A4; margin:15mm;
+  @bottom-center{
+    content:"Collection Hakili Lab, Edition 2026  ·  Fiche de revision  ·  " counter(page) "/" counter(pages);
+    font-family:"Segoe UI",Calibri,Arial,sans-serif; font-size:6.6pt; color:#8A8A8A;
+  }
+}
+*{box-sizing:border-box;}
+body{
+  margin:0; font-family:"Segoe UI",Calibri,Arial,sans-serif;
+  font-size:8.4pt; line-height:1.26; color:#1B1B1B;
+}
+p{margin:0 0 3pt;}
+ul{margin:0 0 3pt; padding-left:11pt;}
+li{margin:0 0 1.2pt;}
+b,strong{color:var(--bleu-fonce);}
+
+/* ------------------------------ ENTETE ---------------------------- */
+.entete{
+  display:flex; align-items:stretch; border:1.6pt solid var(--bleu);
+  border-radius:2.5pt; overflow:hidden; margin-bottom:6pt;
+}
+.entete .num{
+  background:var(--bleu); color:#fff; font-size:20pt; font-weight:700;
+  padding:0 8pt; display:flex; align-items:center; justify-content:center; min-width:34pt;
+}
+.entete .txt{padding:3.5pt 8pt; flex:1;}
+.entete .niveau{
+  font-size:7pt; font-weight:700; letter-spacing:.9pt; color:var(--vert-fonce);
+}
+.entete h1{margin:0; font-size:13.5pt; line-height:1.12; color:var(--bleu-fonce); font-weight:700;}
+.entete .sous{font-size:7pt; color:var(--gris); margin-top:1pt;}
+
+/* --------------------------- BANDEAUX ----------------------------- */
+.bandeau{
+  color:#fff; font-weight:700; font-size:9pt; letter-spacing:1pt;
+  padding:2.4pt 7pt; border-radius:2pt; margin:3pt 0 4pt; break-after:avoid; page-break-after:avoid;
+}
+.bandeau.bleu{background:var(--bleu);}
+.bandeau.vert{background:var(--vert);}
+
+/* --------------------------- COLONNES ----------------------------- */
+.cols{column-count:2; column-gap:7mm; column-fill:balance;}
+
+.cols.bal{column-fill:balance;}
+.bloc{margin-bottom:5pt;}
+.keep{break-inside:avoid; page-break-inside:avoid;}
+
+/* --------------------------- LECONS ------------------------------- */
+h2.lecon{
+  margin:0 0 3pt; font-size:8.6pt; font-weight:700; color:#fff; background:var(--bleu-fonce);
+  padding:1.8pt 5pt; border-radius:1.5pt; break-after:avoid; page-break-after:avoid;
+}
+h3.rub{
+  margin:3.5pt 0 1.5pt; font-size:8.2pt; font-weight:700; color:var(--vert-fonce);
+  border-bottom:.7pt solid var(--vert-bord); padding-bottom:.8pt;
+  break-after:avoid; page-break-after:avoid;
+}
+
+/* --------------------------- ENCADRES ----------------------------- */
+.form{
+  background:var(--bleu-pale); border:.8pt solid var(--bleu-bord); border-left:2.6pt solid var(--bleu);
+  border-radius:2pt; padding:2.4pt 5pt; margin:2.2pt 0 3.4pt;
+  break-inside:avoid; page-break-inside:avoid;
+}
+.form .t{
+  display:block; font-size:6.8pt; font-weight:700; letter-spacing:.6pt;
+  color:var(--bleu); margin-bottom:1.5pt;
+}
+.form .c{text-align:center; font-size:9.1pt; margin:1.6pt 0;}
+.note{background:var(--vert-pale); border-left:2.4pt solid var(--vert); padding:2.4pt 5pt; border-radius:1.5pt; margin:2.5pt 0 4pt; break-inside:avoid;}
+
+/* --------------------------- TABLEAUX ----------------------------- */
+table{width:100%; border-collapse:collapse; font-size:7.6pt; margin:2pt 0 4pt; break-inside:avoid;}
+th{background:var(--bleu); color:#fff; font-weight:700; text-align:left; padding:1.8pt 4pt; font-size:7.2pt;}
+td{border:.6pt solid var(--gris-clair); padding:1.8pt 4pt; vertical-align:top;}
+tr{break-inside:avoid;}
+table.var td{text-align:center; font-size:8pt;}
+table.var td.lab{text-align:left; font-weight:700; color:var(--bleu-fonce); background:var(--bleu-pale);}
+
+/* ----------------------------- PIEGES ----------------------------- */
+table.pieges th:first-child{width:44%;}
+table.pieges td:first-child{color:var(--rouge); background:#FDF1F0;}
+.x{font-weight:700;}
+.v{color:var(--vert-fonce); font-weight:700;}
+
+/* ---------------------------- RECAP ------------------------------- */
+ol.recap{margin:0; padding-left:0; list-style:none; counter-reset:r;}
+ol.recap li{
+  counter-increment:r; position:relative; padding-left:13pt; margin-bottom:1.8pt;
+  break-inside:avoid;
+}
+ol.recap li::before{
+  content:counter(r); position:absolute; left:0; top:.3pt;
+  width:10pt; height:10pt; border-radius:50%; background:var(--vert); color:#fff;
+  font-size:6.6pt; font-weight:700; text-align:center; line-height:10pt;
+}
+
+/* --------------------------- MATHS -------------------------------- */
+.m{font-family:Cambria,Georgia,"Times New Roman",serif;}
+i,var{font-family:Cambria,Georgia,"Times New Roman",serif; font-style:italic;}
+.op{font-family:Cambria,Georgia,"Times New Roman",serif; font-style:normal;}
+.f{display:inline-block; vertical-align:middle; text-align:center;
+   margin:0 .12em; line-height:1.06; font-family:Cambria,Georgia,"Times New Roman",serif;}
+.f>span{display:block; padding:0 .2em;}
+.f>span:first-child{border-bottom:.6pt solid currentColor; padding-bottom:.08em;}
+.f>span:last-child{padding-top:.04em;}
+.rad{border-top:.6pt solid currentColor; padding-top:.12em;}
+/* line-height:0 evite que l'exposant n'ecarte les lignes ; position:relative le
+   repositionne sans qu'il heurte la barre de fraction ni le trait du radical. */
+sup,sub{font-size:.68em; line-height:0; position:relative; vertical-align:baseline;}
+sup{top:-.42em;}
+sub{bottom:-.22em;}
+.pt{white-space:nowrap;}
+/* Les fleches n'ont qu'un glyphe atrophie dans la fonte serif : on les force
+   en sans-serif, ou elles sont franches meme a 8 pt. */
+.ar{font-family:"Segoe UI",Calibri,Arial,"DejaVu Sans",sans-serif; font-style:normal;}
+
+/* ------------------- PIEGES : blocs erreur / correction ------------- */
+.pg{font-size:8.1pt; border-left:2.4pt solid var(--rouge); background:#FDF1F0; border-radius:1.5pt;
+    padding:2pt 5pt; margin:0 0 2.8pt; break-inside:avoid; page-break-inside:avoid;}
+.pg .err{color:var(--rouge); font-weight:600;}
+.pg .cor{color:#1B1B1B; margin-top:.8pt;}
+.pg .cor b{color:var(--bleu-fonce);}
+.v{color:var(--vert-fonce); font-weight:700;}
+
+</style>
+</head>
+<body>
+<header class="entete">
+  <div class="num">13</div>
+  <div class="txt">
+    <div class="niveau">4EME &middot; MATHEMATIQUES</div>
+    <h1>Les applications</h1>
+    <div class="sous">Leçon 1 : qu'est-ce qu'une application ? &middot; Leçon 2 : la composition de deux applications &middot; Leçon 3 : l'application monôme &middot; Leçon 4 : l'application polynôme &middot; Leçon 5 : les applications du plan</div>
+  </div>
+</header>
+
+<div class="bandeau bleu" style="margin-top:0">L'ESSENTIEL</div>
+<div class="cols">
+
+<!-- ================= LECON 1 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 1&nbsp;: Qu'est-ce qu'une application ?</h2>
+<div class="form">
+  <span class="t">DEFINITION</span>
+  <div class="c m">Une <b>application</b> <i>f</i> de <i>E</i> vers <i>F</i> associe à <b>chaque</b> élément de <i>E</i> <b>un unique</b> élément de <i>F</i>.</div>
+  <div class="c m"><span class="pt"><i>f</i>&#8239;:&#8239;<i>E</i>&#8239;<span class="ar">&#8594;</span>&#8239;<i>F</i></span></div>
+</div></div>
+<ul>
+<li><i>E</i> est l'<b>ensemble de départ</b>, <i>F</i> l'<b>ensemble d'arrivée</b>.</li>
+<li>L'élément de <i>F</i> associé à <i>x</i> est l'<b>image</b> de <i>x</i> par <i>f</i> ; on la note <span class="pt"><i>f</i>(<i>x</i>)</span>, et on lit « <i>f</i> de <i>x</i> ».</li>
+<li>Si <span class="pt"><i>f</i>(<i>x</i>)&#8239;=&#8239;<i>y</i></span>, alors <i>y</i> est l'<b>image</b> de <i>x</i>, et <i>x</i> est un <b>antécédent</b> de <i>y</i>.</li>
+<li>Définir une application demande <b>trois</b> renseignements : l'ensemble de départ, l'ensemble d'arrivée, et la règle qui fabrique l'image.</li>
+</ul>
+<p>Les deux mots comptent : <b>chaque</b> interdit qu'un départ reste sans image, <b>unique</b> qu'il en ait deux. Rien n'empêche en revanche deux départs différents d'avoir la même image.</p>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Image et antécédent : le sens de circulation</h3>
+<p>L'<b>antécédent</b> est ce qui <b>entre</b>, l'image ce qui <b>sort</b> : l'antécédent est <b>avant</b>, l'image est <b>après</b>.</p>
+<div class="form">
+  <span class="t">UNE SEULE IMAGE, PLUSIEURS ANTECEDENTS POSSIBLES</span>
+  <div class="c m">on dit <b>l</b>'image de <i>x</i> &nbsp;&middot;&nbsp; mais <b>un</b> antécédent de <i>y</i></div>
+</div>
+<p>Un élément de départ a <b>une seule</b> image. Un élément d'arrivée peut avoir <b>plusieurs</b> antécédents, ou <b>aucun</b> : par la règle qui associe à un nombre son carré, 9 a deux antécédents, 3 et &#8722;3, car <span class="pt">3<sup>2</sup>&#8239;=&#8239;9</span> et <span class="pt">(&#8722;3)<sup>2</sup>&#8239;=&#8239;9</span>.</p>
+<p><b>Méthode.</b> Image de <i>x</i> : applique la règle à <i>x</i>. Antécédent de <i>y</i> : résous l'égalité <span class="pt"><i>f</i>(<i>x</i>)&#8239;=&#8239;<i>y</i></span>, puis contrôle en recalculant l'image.</p>
+</div>
+
+<!-- ================= LECON 2 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 2&nbsp;: La composition de deux applications</h2>
+<p><b>Composer</b> deux applications, c'est les appliquer l'une après l'autre.</p></div>
+<div class="form">
+  <span class="t">COMPOSEE&nbsp;: pour <i>f</i>&#8239;:&#8239;<i>E</i>&#8239;<span class="ar">&#8594;</span>&#8239;<i>F</i> et <i>g</i>&#8239;:&#8239;<i>F</i>&#8239;<span class="ar">&#8594;</span>&#8239;<i>G</i></span>
+  <div class="c m"><span class="pt">(<i>g</i>&#8728;<i>f</i>)(<i>x</i>)&#8239;=&#8239;<i>g</i>(<i>f</i>(<i>x</i>))</span> &nbsp;&nbsp; <span class="pt"><i>g</i>&#8728;<i>f</i>&#8239;:&#8239;<i>E</i>&#8239;<span class="ar">&#8594;</span>&#8239;<i>G</i></span></div>
+</div>
+<ul>
+<li>Le symbole &#8728; se lit « <b>rond</b> » : <span class="pt"><i>g</i>&#8728;<i>f</i></span> se lit « <i>g</i> rond <i>f</i> ».</li>
+<li>On applique <b>d'abord <i>f</i>, puis <i>g</i></b> : la composition se lit <b>de droite à gauche</b>, comme les parenthèses d'un calcul.</li>
+<li><b>Condition</b> : l'ensemble d'arrivée de <i>f</i> doit être l'ensemble de départ de <i>g</i>. Ce qui sort de la première machine doit pouvoir entrer dans la seconde.</li>
+<li>En général <span class="pt"><i>g</i>&#8728;<i>f</i>&#8239;&#8800;&#8239;<i>f</i>&#8728;<i>g</i></span> : la composition n'est <b>pas commutative</b>.</li>
+</ul>
+<p><b>Méthode.</b> Repère l'application collée contre le <i>x</i> : c'est la première appliquée. Calcule <span class="pt"><i>f</i>(<i>x</i>)</span> et <b>écris ce résultat intermédiaire</b>, applique ensuite <i>g</i> à ce nombre, puis conclus.</p>
+<div class="note">Avec <span class="pt"><i>f</i>(<i>x</i>)&#8239;=&#8239;<i>x</i><sup>2</sup></span> et <span class="pt"><i>g</i>(<i>x</i>)&#8239;=&#8239;<i>x</i>&#8239;+&#8239;1</span> : <span class="pt">(<i>g</i>&#8728;<i>f</i>)(2)&#8239;=&#8239;<i>g</i>(4)&#8239;=&#8239;5</span>, mais <span class="pt">(<i>f</i>&#8728;<i>g</i>)(2)&#8239;=&#8239;<i>f</i>(3)&#8239;=&#8239;9</span>. Un seul contre-exemple suffit à prouver que l'ordre change le résultat.</div>
+</div>
+
+<!-- ================= LECON 3 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 3&nbsp;: L'application monôme</h2>
+<div class="form">
+  <span class="t">APPLICATION MONOME&nbsp;: de &#8477; vers &#8477;</span>
+  <div class="c m"><span class="pt"><i>f</i>(<i>x</i>)&#8239;=&#8239;<i>a</i>&#8239;<i>x</i><sup><i>n</i></sup></span> &nbsp;<span style="font-size:7.5pt">(<i>a</i> nombre fixé, <i>n</i> entier naturel)</span></div>
+  <div class="c m"><i>a</i> est le <b>coefficient</b>, <i>n</i> est le <b>degré</b></div>
+</div></div>
+<ul>
+<li>Pour calculer l'<b>image</b> de <i>x</i> : on remplace <i>x</i> par sa valeur, on calcule <b>d'abord la puissance</b>, <b>puis</b> la multiplication par <i>a</i>.</li>
+<li>Exemples : <span class="pt"><i>f</i>(<i>x</i>)&#8239;=&#8239;3<i>x</i></span> est de degré 1 et de coefficient 3 ; <span class="pt"><i>g</i>(<i>x</i>)&#8239;=&#8239;2<i>x</i><sup>2</sup></span> est de degré 2 et de coefficient 2 ; <span class="pt"><i>h</i>(<i>x</i>)&#8239;=&#8239;&#8722;5<i>x</i><sup>3</sup></span> est de degré 3 et de coefficient &#8722;5.</li>
+<li>Un monôme n'a <b>qu'un seul terme</b> : aucun signe + ni &#8722; ne le coupe en deux.</li>
+</ul>
+<div class="form">
+  <span class="t">L'EXPOSANT NE PORTE QUE SUR <i>x</i></span>
+  <div class="c m"><span class="pt"><i>a</i>&#8239;<i>x</i><sup><i>n</i></sup>&#8239;=&#8239;<i>a</i>&#8239;&#215;&#8239;(<i>x</i><sup><i>n</i></sup>)</span>&nbsp;, et non <span class="pt">(<i>a</i>&#8239;<i>x</i>)<sup><i>n</i></sup></span></div>
+  <div class="c m"><i>x</i> <b>négatif</b> : exposant <b>pair</b>, le signe &#8722; disparaît &nbsp;&middot;&nbsp; exposant <b>impair</b>, il reste</div>
+</div>
+<p>Ainsi <span class="pt">(&#8722;3)<sup>2</sup>&#8239;=&#8239;9</span> et <span class="pt">(&#8722;3)<sup>3</sup>&#8239;=&#8239;&#8722;27</span>. Les parenthèses ne sont pas facultatives : <span class="pt">&#8722;3<sup>2</sup></span> est l'opposé de <span class="pt">3<sup>2</sup></span>, c'est-à-dire <span class="pt">&#8722;9</span>.</p>
+<div class="note">Pour un monôme de <b>degré 2</b>, deux nombres <b>opposés</b> ont la <b>même image</b> : avec <span class="pt"><i>f</i>(<i>x</i>)&#8239;=&#8239;2<i>x</i><sup>2</sup></span>, <span class="pt"><i>f</i>(3)&#8239;=&#8239;<i>f</i>(&#8722;3)&#8239;=&#8239;18</span>. Le nombre 18 a donc <b>deux antécédents</b>.</div>
+</div>
+
+<!-- ================= LECON 4 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 4&nbsp;: L'application polynôme</h2>
+<div class="form">
+  <span class="t">APPLICATION POLYNOME&nbsp;: de &#8477; vers &#8477;</span>
+  <div class="c m"><span class="pt"><i>f</i>(<i>x</i>)&#8239;=&#8239;<i>a</i>&#8239;+&#8239;<i>b</i><i>x</i>&#8239;+&#8239;<i>c</i><i>x</i><sup>2</sup>&#8239;+&#8239;&#8230;</span></div>
+  <div class="c m">une <b>somme de monômes</b> ; <i>a</i>, <i>b</i>, <i>c</i> sont des nombres fixés</div>
+</div></div>
+<ul>
+<li>Chaque monôme de la somme est un <b>terme</b> du polynôme.</li>
+<li>Le <b>degré</b> du polynôme est le <b>plus grand exposant</b> qui apparaît réellement.</li>
+<li>Pour calculer l'<b>image</b> de <i>x</i> : on remplace <i>x</i> par sa valeur dans <b>chaque</b> terme, on calcule les puissances, puis les produits, et <b>on additionne à la fin</b>.</li>
+<li>Un <b>monôme</b> est un cas particulier de polynôme : celui qui n'a qu'un seul terme.</li>
+<li>Exemples : <span class="pt">2<i>x</i>&#8239;+&#8239;1</span> est de degré 1 ; <span class="pt"><i>x</i><sup>2</sup>&#8239;+&#8239;3<i>x</i>&#8239;&#8722;&#8239;2</span> est de degré 2 ; <span class="pt"><i>h</i>(<i>x</i>)&#8239;=&#8239;5</span> est de degré 0, c'est une application <b>constante</b>.</li>
+</ul>
+<p><b>Méthode.</b> Note le <b>signe</b> de chaque terme <b>avant</b> de remplacer, mets des <b>parenthèses</b> autour de tout nombre négatif, et une ligne de calcul par étape. Le terme constant se recopie tel quel.</p>
+<div class="note">Avec <span class="pt"><i>f</i>(<i>x</i>)&#8239;=&#8239;<i>x</i><sup>2</sup>&#8239;+&#8239;3<i>x</i>&#8239;&#8722;&#8239;2</span> : <span class="pt"><i>f</i>(&#8722;1)&#8239;=&#8239;(&#8722;1)<sup>2</sup>&#8239;+&#8239;3&#8239;&#215;&#8239;(&#8722;1)&#8239;&#8722;&#8239;2&#8239;=&#8239;1&#8239;&#8722;&#8239;3&#8239;&#8722;&#8239;2&#8239;=&#8239;&#8722;4</span>.</div>
+</div>
+
+<!-- ================= LECON 5 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 5&nbsp;: Les applications du plan</h2>
+<p>Une <b>application du plan</b> a le <b>plan</b> pour ensemble de départ et pour ensemble d'arrivée : à chaque point <i>M</i> elle associe un <b>unique</b> point image <i>M</i>&#8242;.</p></div>
+<ul>
+<li><b>Symétrie centrale</b> de centre O : elle associe à <i>M</i> le point <i>M</i>&#8242; tel que O soit le <b>milieu</b> de [<i>MM</i>&#8242;].</li>
+<li><b>Symétrie orthogonale</b> par rapport à une droite : elle associe à <i>M</i> le point <i>M</i>&#8242; tel que cette droite soit la <b>médiatrice</b> de [<i>MM</i>&#8242;].</li>
+<li><b>Projection</b> sur une droite : elle associe à <i>M</i> son <b>projeté</b> <i>M</i>&#8242; sur cette droite.</li>
+<li>Ces trois transformations sont bien des applications : chaque point a une image, et il n'en a qu'une.</li>
+</ul>
+<table>
+<tr><th>Transformation</th><th>Image de <i>M</i>(<i>x</i>&#8239;;&#8239;<i>y</i>)</th></tr>
+<tr><td>symétrie de centre O (origine)</td><td class="m"><i>M</i>&#8242;(&#8722;<i>x</i>&#8239;;&#8239;&#8722;<i>y</i>)</td></tr>
+<tr><td>symétrie d'axe les abscisses</td><td class="m"><i>M</i>&#8242;(<i>x</i>&#8239;;&#8239;&#8722;<i>y</i>)</td></tr>
+<tr><td>symétrie d'axe les ordonnées</td><td class="m"><i>M</i>&#8242;(&#8722;<i>x</i>&#8239;;&#8239;<i>y</i>)</td></tr>
+</table>
+<p>Repère <b>ce qui change de signe</b> : l'<b>ordonnée</b> pour l'axe des abscisses, l'<b>abscisse</b> pour l'axe des ordonnées, les <b>deux</b> pour le centre O. Contrôle : un point situé <b>sur</b> l'axe ne bouge pas.</p>
+<div class="note">Une <b>symétrie</b> envoie deux points distincts sur deux images distinctes, et l'appliquer deux fois ramène chaque point à sa place. La <b>projection</b> écrase la figure : tous les points d'une même perpendiculaire ont le <b>même</b> projeté, donc une <b>infinité</b> d'antécédents pour une même image.</div>
+</div>
+
+</div>
+
+<div class="bandeau vert">PIEGES ET ERREURS FREQUENTES</div>
+<div class="cols">
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> <span class="pt"><i>f</i>(4)&#8239;=&#8239;8</span>, donc « 4 est l'image de 8 ».</div><div class="cor"><span class="v">&#10003;</span> C'est l'inverse : <b>8 est l'image de 4</b>, et <b>4 est un antécédent de 8</b>. Dans <span class="pt"><i>f</i>(<i>x</i>)&#8239;=&#8239;<i>y</i></span>, <i>x</i> entre dans la machine et <i>y</i> en sort : l'antécédent est <b>avant</b>, l'image est <b>après</b>.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> « Chaque élément de l'ensemble d'arrivée a exactement un antécédent. » &nbsp;&middot;&nbsp; « Deux départs ne peuvent pas avoir la même image. »</div><div class="cor"><span class="v">&#10003;</span> Seul le <b>départ</b> est contraint : un élément d'arrivée peut avoir <b>plusieurs</b> antécédents, ou <b>aucun</b>. Avec <span class="pt"><i>f</i>(<i>x</i>)&#8239;=&#8239;<i>x</i><sup>2</sup></span>, 9 a deux antécédents (3 et &#8722;3) et &#8722;4 n'en a aucun.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> Dans <span class="pt"><i>g</i>&#8728;<i>f</i></span>, on applique <i>g</i> d'abord. &nbsp;&middot;&nbsp; <span class="pt"><i>g</i>&#8728;<i>f</i>&#8239;=&#8239;<i>f</i>&#8728;<i>g</i></span></div><div class="cor"><span class="v">&#10003;</span> La composition se lit <b>de droite à gauche</b> : dans <span class="pt"><i>g</i>&#8728;<i>f</i></span>, <i>f</i> est collée contre le <i>x</i>, donc <b><i>f</i> d'abord</b>. Et elle n'est <b>pas commutative</b> : avec <span class="pt"><i>f</i>(<i>x</i>)&#8239;=&#8239;<i>x</i><sup>2</sup></span> et <span class="pt"><i>g</i>(<i>x</i>)&#8239;=&#8239;<i>x</i>&#8239;+&#8239;1</span>, <span class="pt">(<i>g</i>&#8728;<i>f</i>)(2)&#8239;=&#8239;5</span> mais <span class="pt">(<i>f</i>&#8728;<i>g</i>)(2)&#8239;=&#8239;9</span>.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> <span class="pt"><i>f</i>(<i>x</i>)&#8239;=&#8239;2<i>x</i><sup>2</sup></span> et <span class="pt"><i>f</i>(3)&#8239;=&#8239;(2&#8239;&#215;&#8239;3)<sup>2</sup>&#8239;=&#8239;36</span></div><div class="cor"><span class="v">&#10003;</span> L'exposant ne porte <b>que sur <i>x</i></b>, jamais sur le produit <span class="pt"><i>a</i>&#8239;<i>x</i></span> : on calcule <b>la puissance avant</b> la multiplication, donc <span class="pt"><i>f</i>(3)&#8239;=&#8239;2&#8239;&#215;&#8239;3<sup>2</sup>&#8239;=&#8239;2&#8239;&#215;&#8239;9&#8239;=&#8239;18</span>.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> <span class="pt">&#8722;2<sup>2</sup>&#8239;=&#8239;4</span> &nbsp;&middot;&nbsp; on remplace <i>x</i> par &#8722;2 sans parenthèses</div><div class="cor"><span class="v">&#10003;</span> <span class="pt">&#8722;2<sup>2</sup>&#8239;=&#8239;&#8722;4</span> (l'opposé de <span class="pt">2<sup>2</sup></span>), alors que <span class="pt">(&#8722;2)<sup>2</sup>&#8239;=&#8239;4</span>. Des <b>parenthèses partout</b> où l'on remplace <i>x</i> par un nombre négatif, dans <b>chaque</b> terme.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> On oublie le terme constant, ou un signe moins, en calculant l'image par un polynôme.</div><div class="cor"><span class="v">&#10003;</span> Un polynôme se recopie <b>en entier</b> : le terme constant vaut la même chose pour toutes les valeurs de <i>x</i>. Compte les termes et note leur signe <b>avant</b> de remplacer, une ligne de calcul par étape.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> Le symétrique de <span class="pt"><i>A</i>(2&#8239;;&#8239;5)</span> par rapport à l'axe des abscisses est <span class="pt">(&#8722;2&#8239;;&#8239;5)</span>. &nbsp;&middot;&nbsp; « L'image d'un point est un nombre. »</div><div class="cor"><span class="v">&#10003;</span> Par rapport à l'axe des <b>abscisses</b>, c'est l'<b>ordonnée</b> qui change de signe : <span class="pt"><i>A</i>&#8242;(2&#8239;;&#8239;&#8722;5)</span>. Une application du plan transforme des <b>points</b> : son image est un <b>couple de coordonnées</b>, jamais un nombre isolé.</div></div>
+
+</div>
+
+<div class="bandeau bleu">A SAVOIR PAR COEUR AVANT LE DEVOIR</div>
+<div class="cols">
+<ol class="recap">
+<li>Une <b>application</b> <span class="pt"><i>f</i>&#8239;:&#8239;<i>E</i>&#8239;<span class="ar">&#8594;</span>&#8239;<i>F</i></span> associe à <b>chaque</b> élément de <i>E</i> <b>un unique</b> élément de <i>F</i>. Trois renseignements la définissent : départ, arrivée, règle.</li>
+<li><b>Image</b> et <b>antécédent</b> : si <span class="pt"><i>f</i>(<i>x</i>)&#8239;=&#8239;<i>y</i></span>, <i>y</i> est l'image de <i>x</i> et <i>x</i> est un antécédent de <i>y</i>. Une seule image par départ, mais <b>plusieurs antécédents ou aucun</b> pour une même arrivée.</li>
+<li><b>Composée</b> : <span class="pt">(<i>g</i>&#8728;<i>f</i>)(<i>x</i>)&#8239;=&#8239;<i>g</i>(<i>f</i>(<i>x</i>))</span>. On applique <b><i>f</i> d'abord</b>, on lit de droite à gauche, et l'arrivée de <i>f</i> doit être le départ de <i>g</i>.</li>
+<li>La composition <b>n'est pas commutative</b> : en général <span class="pt"><i>g</i>&#8728;<i>f</i>&#8239;&#8800;&#8239;<i>f</i>&#8728;<i>g</i></span>. Ecris toujours le résultat intermédiaire <span class="pt"><i>f</i>(<i>x</i>)</span>.</li>
+<li><b>Monôme</b> : <span class="pt"><i>f</i>(<i>x</i>)&#8239;=&#8239;<i>a</i>&#8239;<i>x</i><sup><i>n</i></sup></span>, coefficient <i>a</i>, degré <i>n</i>. On calcule <b>la puissance d'abord</b>, la multiplication par <i>a</i> ensuite : l'exposant ne porte que sur <i>x</i>.</li>
+<li><b>Signes</b> : une puissance <b>paire</b> d'un nombre négatif est positive, une puissance <b>impaire</b> reste négative. <span class="pt">(&#8722;2)<sup>2</sup>&#8239;=&#8239;4</span> mais <span class="pt">&#8722;2<sup>2</sup>&#8239;=&#8239;&#8722;4</span> : parenthèses obligatoires.</li>
+<li><b>Polynôme</b> : une <b>somme de monômes</b> ; son degré est le plus grand exposant présent. On remplace <i>x</i> dans <b>chaque</b> terme, puissances, produits, puis addition finale.</li>
+<li><b>Applications du plan</b> : centre O donne <span class="pt">(&#8722;<i>x</i>&#8239;;&#8239;&#8722;<i>y</i>)</span>, axe des abscisses donne <span class="pt">(<i>x</i>&#8239;;&#8239;&#8722;<i>y</i>)</span>, axe des ordonnées donne <span class="pt">(&#8722;<i>x</i>&#8239;;&#8239;<i>y</i>)</span>. La projection écrase : plusieurs antécédents pour une même image.</li>
+</ol>
+</div>
+
+</body>
+</html>

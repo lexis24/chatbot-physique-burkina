@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Fiche de revision - 5eme - Chapitre 10 : Multiplication dans 𝔻 · Developpement et factorisation</title>
+<style>
+/* ===================================================================
+   FICHE DE REVISION, Collection Hakili Lab, Edition 2026
+   Feuille de style autonome, format A4 pret a imprimer.
+   Bleu #005CB9 · Vert #49A145
+   =================================================================== */
+:root{
+  --bleu:#005CB9; --bleu-fonce:#00429A; --bleu-pale:#E8F1FB; --bleu-bord:#B7D2EE;
+  --vert:#49A145; --vert-fonce:#2F7A2C; --vert-pale:#EDF7EC; --vert-bord:#BCE0B9;
+  --gris:#4A4A4A; --gris-clair:#E4E4E4; --rouge:#B3261E;
+}
+@page{
+  size:A4; margin:15mm;
+  @bottom-center{
+    content:"Collection Hakili Lab, Edition 2026  ·  Fiche de revision  ·  " counter(page) "/" counter(pages);
+    font-family:"Segoe UI",Calibri,Arial,sans-serif; font-size:6.6pt; color:#8A8A8A;
+  }
+}
+*{box-sizing:border-box;}
+body{
+  margin:0; font-family:"Segoe UI",Calibri,Arial,sans-serif;
+  font-size:8.4pt; line-height:1.26; color:#1B1B1B;
+}
+p{margin:0 0 3pt;}
+ul{margin:0 0 3pt; padding-left:11pt;}
+li{margin:0 0 1.2pt;}
+b,strong{color:var(--bleu-fonce);}
+
+/* ------------------------------ ENTETE ---------------------------- */
+.entete{
+  display:flex; align-items:stretch; border:1.6pt solid var(--bleu);
+  border-radius:2.5pt; overflow:hidden; margin-bottom:6pt;
+}
+.entete .num{
+  background:var(--bleu); color:#fff; font-size:20pt; font-weight:700;
+  padding:0 8pt; display:flex; align-items:center; justify-content:center; min-width:34pt;
+}
+.entete .txt{padding:3.5pt 8pt; flex:1;}
+.entete .niveau{
+  font-size:7pt; font-weight:700; letter-spacing:.9pt; color:var(--vert-fonce);
+}
+.entete h1{margin:0; font-size:13.5pt; line-height:1.12; color:var(--bleu-fonce); font-weight:700;}
+.entete .sous{font-size:7pt; color:var(--gris); margin-top:1pt;}
+
+/* --------------------------- BANDEAUX ----------------------------- */
+.bandeau{
+  color:#fff; font-weight:700; font-size:9pt; letter-spacing:1pt;
+  padding:2.4pt 7pt; border-radius:2pt; margin:3pt 0 4pt; break-after:avoid; page-break-after:avoid;
+}
+.bandeau.bleu{background:var(--bleu);}
+.bandeau.vert{background:var(--vert);}
+
+/* --------------------------- COLONNES ----------------------------- */
+.cols{column-count:2; column-gap:7mm; column-fill:balance;}
+
+.cols.bal{column-fill:balance;}
+.bloc{margin-bottom:5pt;}
+.keep{break-inside:avoid; page-break-inside:avoid;}
+
+/* --------------------------- LECONS ------------------------------- */
+h2.lecon{
+  margin:0 0 3pt; font-size:8.6pt; font-weight:700; color:#fff; background:var(--bleu-fonce);
+  padding:1.8pt 5pt; border-radius:1.5pt; break-after:avoid; page-break-after:avoid;
+}
+h3.rub{
+  margin:3.5pt 0 1.5pt; font-size:8.2pt; font-weight:700; color:var(--vert-fonce);
+  border-bottom:.7pt solid var(--vert-bord); padding-bottom:.8pt;
+  break-after:avoid; page-break-after:avoid;
+}
+
+/* --------------------------- ENCADRES ----------------------------- */
+.form{
+  background:var(--bleu-pale); border:.8pt solid var(--bleu-bord); border-left:2.6pt solid var(--bleu);
+  border-radius:2pt; padding:2.4pt 5pt; margin:2.2pt 0 3.4pt;
+  break-inside:avoid; page-break-inside:avoid;
+}
+.form .t{
+  display:block; font-size:6.8pt; font-weight:700; letter-spacing:.6pt;
+  color:var(--bleu); margin-bottom:1.5pt;
+}
+.form .c{text-align:center; font-size:9.1pt; margin:1.6pt 0;}
+.note{background:var(--vert-pale); border-left:2.4pt solid var(--vert); padding:2.4pt 5pt; border-radius:1.5pt; margin:2.5pt 0 4pt; break-inside:avoid;}
+
+/* --------------------------- TABLEAUX ----------------------------- */
+table{width:100%; border-collapse:collapse; font-size:7.6pt; margin:2pt 0 4pt; break-inside:avoid;}
+th{background:var(--bleu); color:#fff; font-weight:700; text-align:left; padding:1.8pt 4pt; font-size:7.2pt;}
+td{border:.6pt solid var(--gris-clair); padding:1.8pt 4pt; vertical-align:top;}
+tr{break-inside:avoid;}
+table.var td{text-align:center; font-size:8pt;}
+table.var td.lab{text-align:left; font-weight:700; color:var(--bleu-fonce); background:var(--bleu-pale);}
+
+/* ----------------------------- PIEGES ----------------------------- */
+table.pieges th:first-child{width:44%;}
+table.pieges td:first-child{color:var(--rouge); background:#FDF1F0;}
+.x{font-weight:700;}
+.v{color:var(--vert-fonce); font-weight:700;}
+
+/* ---------------------------- RECAP ------------------------------- */
+ol.recap{margin:0; padding-left:0; list-style:none; counter-reset:r;}
+ol.recap li{
+  counter-increment:r; position:relative; padding-left:13pt; margin-bottom:1.8pt;
+  break-inside:avoid;
+}
+ol.recap li::before{
+  content:counter(r); position:absolute; left:0; top:.3pt;
+  width:10pt; height:10pt; border-radius:50%; background:var(--vert); color:#fff;
+  font-size:6.6pt; font-weight:700; text-align:center; line-height:10pt;
+}
+
+/* --------------------------- MATHS -------------------------------- */
+.m{font-family:Cambria,Georgia,"Times New Roman",serif;}
+i,var{font-family:Cambria,Georgia,"Times New Roman",serif; font-style:italic;}
+.op{font-family:Cambria,Georgia,"Times New Roman",serif; font-style:normal;}
+.f{display:inline-block; vertical-align:middle; text-align:center;
+   margin:0 .12em; line-height:1.06; font-family:Cambria,Georgia,"Times New Roman",serif;}
+.f>span{display:block; padding:0 .2em;}
+.f>span:first-child{border-bottom:.6pt solid currentColor; padding-bottom:.08em;}
+.f>span:last-child{padding-top:.04em;}
+.rad{border-top:.6pt solid currentColor; padding-top:.12em;}
+/* line-height:0 evite que l'exposant n'ecarte les lignes ; position:relative le
+   repositionne sans qu'il heurte la barre de fraction ni le trait du radical. */
+sup,sub{font-size:.68em; line-height:0; position:relative; vertical-align:baseline;}
+sup{top:-.42em;}
+sub{bottom:-.22em;}
+.pt{white-space:nowrap;}
+/* Les fleches n'ont qu'un glyphe atrophie dans la fonte serif : on les force
+   en sans-serif, ou elles sont franches meme a 8 pt. */
+.ar{font-family:"Segoe UI",Calibri,Arial,"DejaVu Sans",sans-serif; font-style:normal;}
+
+/* ------------------- PIEGES : blocs erreur / correction ------------- */
+.pg{font-size:8.1pt; border-left:2.4pt solid var(--rouge); background:#FDF1F0; border-radius:1.5pt;
+    padding:2pt 5pt; margin:0 0 2.8pt; break-inside:avoid; page-break-inside:avoid;}
+.pg .err{color:var(--rouge); font-weight:600;}
+.pg .cor{color:#1B1B1B; margin-top:.8pt;}
+.pg .cor b{color:var(--bleu-fonce);}
+.v{color:var(--vert-fonce); font-weight:700;}
+
+</style>
+</head>
+<body>
+<header class="entete">
+  <div class="num">10</div>
+  <div class="txt">
+    <div class="niveau">5EME &middot; MATHEMATIQUES</div>
+    <h1>Multiplication dans &#120123; &middot; Développement et factorisation</h1>
+    <div class="sous">Leçon 1 : produit de deux relatifs (positifs ; signes contraires) &middot; Leçon 2 : produit de deux relatifs négatifs &middot; Leçon 3 : propriétés de la multiplication &middot; Leçon 4 : réduction de sommes algébriques ; priorités &middot; Leçon 5 : distributivité : développer et factoriser &middot; Leçon 6 : développement et factorisation d'expressions</div>
+  </div>
+</header>
+
+<div class="bandeau bleu" style="margin-top:0">L'ESSENTIEL</div>
+<div class="cols">
+
+<!-- ================= LECON 1 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 1&nbsp;: Produit de deux relatifs (positifs ; signes contraires)</h2>
+<div class="form">
+  <span class="t">PREMIERS CAS</span>
+  <div class="c m">(+<i>a</i>)&#8239;&#215;&#8239;(+<i>b</i>)&#8239;=&#8239;+(<i>a</i>&#8239;&#215;&#8239;<i>b</i>) &nbsp;<span style="font-size:7.5pt">deux positifs : positif</span></div>
+  <div class="c m">(+<i>a</i>)&#8239;&#215;&#8239;(&#8722;<i>b</i>)&#8239;=&#8239;(&#8722;<i>a</i>)&#8239;&#215;&#8239;(+<i>b</i>)&#8239;=&#8239;&#8722;(<i>a</i>&#8239;&#215;&#8239;<i>b</i>) &nbsp;<span style="font-size:7.5pt">signes contraires : négatif</span></div>
+</div></div>
+<p><b>En pratique</b>, le <b>signe</b> et la <b>valeur</b> se traitent séparément, et dans cet ordre : on écrit d'abord le signe donné par la règle, puis on multiplie les <b>valeurs absolues</b>.</p>
+<ul>
+<li><b>Cas particuliers</b> : multiplier par <b>0</b> donne toujours 0 ; par <b>+1</b> ne change rien ; par <b>&#8722;1</b> donne l'<b>opposé</b>, par exemple (&#8722;1)&#8239;&#215;&#8239;7&#8239;=&#8239;&#8722;7 et (&#8722;1)&#8239;&#215;&#8239;(&#8722;4)&#8239;=&#8239;+4.</li>
+<li>&#8722;<i>a</i> se lit « l'<b>opposé</b> de <i>a</i> », et non « <i>a</i> est négatif » : si <i>a</i>&#8239;=&#8239;&#8722;3, alors &#8722;<i>a</i>&#8239;=&#8239;+3.</li>
+</ul>
+</div>
+
+<!-- ================= LECON 2 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 2&nbsp;: Produit de deux relatifs négatifs</h2>
+<div class="form">
+  <span class="t">REGLE DES SIGNES&nbsp;: RESUME COMPLET</span>
+  <div class="c m">(&#8722;<i>a</i>)&#8239;&#215;&#8239;(&#8722;<i>b</i>)&#8239;=&#8239;+(<i>a</i>&#8239;&#215;&#8239;<i>b</i>)</div>
+  <div class="c m"><b>même signe donne plus, signes contraires donnent moins</b></div>
+</div></div>
+<table class="var">
+<tr><th>&#215;</th><th>par (+)</th><th>par (&#8722;)</th></tr>
+<tr><td class="lab">(+)</td><td>+</td><td>&#8722;</td></tr>
+<tr><td class="lab">(&#8722;)</td><td>&#8722;</td><td>+</td></tr>
+</table>
+<div class="form">
+  <span class="t">SIGNE D'UN PRODUIT DE PLUSIEURS FACTEURS</span>
+  <div class="c m">nombre <b>pair</b> de facteurs négatifs : produit <b>positif</b></div>
+  <div class="c m">nombre <b>impair</b> de facteurs négatifs : produit <b>négatif</b></div>
+</div>
+<p>Chaque facteur négatif fait <b>basculer</b> le signe : les négatifs s'annulent <b>deux par deux</b>. On <b>compte</b> les facteurs négatifs, on ne calcule pas. Le produit est <b>nul</b> dès qu'un facteur est nul.</p>
+</div>
+
+<!-- ================= LECON 3 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 3&nbsp;: Propriétés de la multiplication</h2>
+<div class="form">
+  <span class="t">COMMUTATIVITE ET ASSOCIATIVITE DANS &#120123;</span>
+  <div class="c m"><i>a</i>&#8239;&#215;&#8239;<i>b</i>&#8239;=&#8239;<i>b</i>&#8239;&#215;&#8239;<i>a</i> &nbsp;&nbsp;&nbsp; (<i>a</i>&#8239;&#215;&#8239;<i>b</i>)&#8239;&#215;&#8239;<i>c</i>&#8239;=&#8239;<i>a</i>&#8239;&#215;&#8239;(<i>b</i>&#8239;&#215;&#8239;<i>c</i>)</div>
+</div></div>
+<p>Dans un <b>produit</b>, on déplace et on regroupe les facteurs librement. Cette liberté est celle du produit seul : dès qu'une addition ou une soustraction apparaît, on respecte les priorités. Les deux propriétés sont <b>fausses</b> pour la soustraction et la division : 8&#8239;&#8722;&#8239;3&#8239;&#8800;&#8239;3&#8239;&#8722;&#8239;8 et 10&#8239;&#247;&#8239;2&#8239;&#8800;&#8239;2&#8239;&#247;&#8239;10.</p>
+<p><b>Facteur manquant.</b> Chercher <i>x</i> tel que <i>a</i>&#8239;&#215;&#8239;<i>x</i>&#8239;=&#8239;<i>b</i> : le <b>signe</b> vient de la règle des signes, la <b>valeur</b> de la division des valeurs absolues. Ainsi (&#8722;4)&#8239;&#215;&#8239;<i>x</i>&#8239;=&#8239;20 donne <i>x</i>&#8239;=&#8239;&#8722;5, et (+84)&#8239;&#247;&#8239;(&#8722;7)&#8239;=&#8239;&#8722;12.</p>
+<p><b>Produit astucieux.</b> On note le signe <b>une fois pour toutes</b> en comptant les facteurs négatifs, on oublie ensuite les signes, on regroupe les facteurs faciles à multiplier, puis on pose le signe devant le résultat.</p>
+<div class="note"><b>Regroupements à repérer</b> avant de calculer : les couples qui donnent <b>1</b> (0,5 et 2 ; 0,25 et 4), ceux qui donnent une <b>puissance de dix</b> (0,1 et 10 ; 25 et 4), et les facteurs <b>1</b> ou <b>&#8722;1</b>, qui ne changent que le signe.</div>
+</div>
+
+<!-- ================= LECON 4 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 4&nbsp;: Réduction de sommes algébriques ; priorités</h2>
+<p>Deux termes sont <b>semblables</b> lorsqu'ils ont la <b>même partie littérale</b> : 3<i>a</i> et 5<i>a</i> le sont, 3<i>a</i> et 5<i>b</i> ne le sont pas. <b>Réduire</b>, c'est regrouper les termes semblables en ajoutant leurs <b>coefficients</b>, la lettre restant inchangée : 3<i>a</i>&#8239;+&#8239;5<i>a</i>&#8239;=&#8239;8<i>a</i> et 8<i>y</i>&#8239;&#8722;&#8239;3<i>y</i>&#8239;=&#8239;5<i>y</i>. Les <b>nombres seuls</b> forment un groupe à part : 5<i>x</i>&#8239;+&#8239;3&#8239;&#8722;&#8239;2<i>x</i>&#8239;=&#8239;3<i>x</i>&#8239;+&#8239;3.</p></div>
+<div class="form">
+  <span class="t">PRIORITE DES OPERATIONS</span>
+  <div class="c m"><b>parenthèses</b>, puis <b>&#215; et &#247;</b>, puis <b>+ et &#8722;</b> &nbsp;<span style="font-size:7.5pt">(de gauche à droite)</span></div>
+</div>
+<ul>
+<li>Une parenthèse change le sens : 3&#8239;+&#8239;4&#8239;&#215;&#8239;5&#8239;=&#8239;23, mais (3&#8239;+&#8239;4)&#8239;&#215;&#8239;5&#8239;=&#8239;35.</li>
+<li>5&#8239;+&#8239;3<i>x</i> est <b>déjà réduit</b> : la multiplication se fait avant l'addition, donc 5 et 3<i>x</i> ne sont pas semblables.</li>
+<li>Recopie chaque terme <b>avec le signe qui le précède</b>, puis fais les paquets.</li>
+<li>Une expression réduite garde la <b>même valeur</b> que celle de départ, quel que soit le nombre mis à la place de la lettre.</li>
+</ul>
+</div>
+
+<!-- ================= LECON 5 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 5&nbsp;: Distributivité : développer et factoriser</h2>
+<div class="form">
+  <span class="t">DISTRIBUTIVITE&nbsp;: pour tous nombres <i>k</i>, <i>a</i> et <i>b</i></span>
+  <div class="c m"><i>k</i>(<i>a</i>&#8239;+&#8239;<i>b</i>)&#8239;=&#8239;<i>ka</i>&#8239;+&#8239;<i>kb</i> &nbsp;&nbsp;&nbsp; <i>k</i>(<i>a</i>&#8239;&#8722;&#8239;<i>b</i>)&#8239;=&#8239;<i>ka</i>&#8239;&#8722;&#8239;<i>kb</i></div>
+</div></div>
+<ul>
+<li><b>Développer</b> : passer de <i>k</i>(<i>a</i>&#8239;+&#8239;<i>b</i>) à <i>ka</i>&#8239;+&#8239;<i>kb</i>, c'est enlever la parenthèse en multipliant <i>k</i> par <b>chaque</b> terme.</li>
+<li><b>Factoriser</b> : passer de <i>ka</i>&#8239;+&#8239;<i>kb</i> à <i>k</i>(<i>a</i>&#8239;+&#8239;<i>b</i>), c'est mettre le <b>facteur commun</b> en évidence. Sans facteur commun, on ne peut pas factoriser : 5<i>a</i>&#8239;+&#8239;3<i>b</i> reste tel quel.</li>
+<li>Les deux opérations sont <b>inverses</b> l'une de l'autre : l'écriture change, la valeur non.</li>
+<li><b>Notation</b> : on écrit <i>k</i>(<i>a</i>&#8239;+&#8239;<i>b</i>) sans le signe &#215;, et <i>ka</i> pour <i>k</i>&#8239;&#215;&#8239;<i>a</i>.</li>
+<li><b>Reconnaître la forme de départ</b> : une parenthèse précédée d'un facteur se <b>développe</b> ; une somme de produits se <b>factorise</b>, si un facteur est commun.</li>
+</ul>
+<div class="note"><b>Calcul mental.</b> 28&#8239;&#215;&#8239;31&#8239;=&#8239;28&#8239;&#215;&#8239;30&#8239;+&#8239;28&#8239;=&#8239;868 &nbsp;&middot;&nbsp; 99&#8239;&#215;&#8239;417&#8239;=&#8239;41&#8239;700&#8239;&#8722;&#8239;417&#8239;=&#8239;41&#8239;283 &nbsp;&middot;&nbsp; 15,5&#8239;&#215;&#8239;7&#8239;+&#8239;15,5&#8239;&#215;&#8239;53&#8239;=&#8239;15,5&#8239;&#215;&#8239;60&#8239;=&#8239;930.</div>
+</div>
+
+<!-- ================= LECON 6 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 6&nbsp;: Développement et factorisation d'expressions</h2>
+<p>Pour simplifier une expression littérale : on <b>développe</b> chaque produit en surveillant les signes, puis on <b>réduit</b> en regroupant les termes semblables.</p></div>
+<div class="form">
+  <span class="t">SIGNE MOINS DEVANT UNE PARENTHESE</span>
+  <div class="c m">&#8722;(3<i>a</i>&#8239;&#8722;&#8239;5)&#8239;=&#8239;(&#8722;1)&#8239;&#215;&#8239;(3<i>a</i>&#8239;&#8722;&#8239;5)&#8239;=&#8239;&#8722;3<i>a</i>&#8239;+&#8239;5</div>
+  <div class="c m">il change <b>tous</b> les signes de la parenthèse</div>
+</div>
+<div class="form">
+  <span class="t">FACTEUR COMMUN</span>
+  <div class="c m">12<i>a</i>&#8239;+&#8239;6<i>b</i>&#8239;&#8722;&#8239;4<i>c</i>&#8239;=&#8239;2(6<i>a</i>&#8239;+&#8239;3<i>b</i>&#8239;&#8722;&#8239;2<i>c</i>)</div>
+  <div class="c m">8<i>x</i>&#8239;&#8722;&#8239;8<i>x</i><sup>2</sup>&#8239;=&#8239;8<i>x</i>(1&#8239;&#8722;&#8239;<i>x</i>)</div>
+  <div class="c m">5(<i>a</i>&#8239;+&#8239;<i>b</i>)&#8239;+&#8239;<i>x</i>(<i>a</i>&#8239;+&#8239;<i>b</i>)&#8239;=&#8239;(<i>a</i>&#8239;+&#8239;<i>b</i>)(5&#8239;+&#8239;<i>x</i>)</div>
+</div>
+<ul>
+<li>Le facteur commun est un <b>nombre</b>, une <b>lettre</b>, les deux, ou une <b>parenthèse entière</b>.</li>
+<li>Une factorisation n'est réussie que si elle est <b>complète</b> : on sort le <b>plus grand</b> facteur commun, par exemple 12<i>a</i>&#8239;+&#8239;6<i>b</i>&#8239;=&#8239;6(2<i>a</i>&#8239;+&#8239;<i>b</i>). Contrôle : les termes restés dans la parenthèse n'ont plus de facteur commun.</li>
+<li><b>Contrôle numérique</b> : remplace la lettre par 1 dans les deux écritures ; les deux résultats doivent être égaux.</li>
+<li><i>x</i><sup>2</sup> se lit « <i>x</i> au carré » et signifie <i>x</i>&#8239;&#215;&#8239;<i>x</i>.</li>
+</ul>
+<div class="note"><b>Réduire sert à calculer vite.</b> 3(2<i>x</i>&#8239;+&#8239;1)&#8239;&#8722;&#8239;2(3<i>x</i>&#8239;&#8722;&#8239;4)&#8239;=&#8239;6<i>x</i>&#8239;+&#8239;3&#8239;&#8722;&#8239;6<i>x</i>&#8239;+&#8239;8&#8239;=&#8239;11 : l'expression vaut 11 quel que soit <i>x</i>, même pour <i>x</i>&#8239;=&#8239;100.</div>
+</div>
+
+</div>
+
+<div class="bandeau vert">PIEGES ET ERREURS FREQUENTES</div>
+<div class="cols">
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> (&#8722;4)&#8239;&#215;&#8239;(&#8722;5)&#8239;=&#8239;&#8722;20 &nbsp;&middot;&nbsp; (&#8722;1)&#8239;&#215;&#8239;(&#8722;10)&#8239;&#215;&#8239;(&#8722;5)&#8239;=&#8239;+50</div><div class="cor"><span class="v">&#10003;</span> Moins par moins donne <b>plus</b> : (&#8722;4)&#8239;&#215;&#8239;(&#8722;5)&#8239;=&#8239;+20. Mais <b>trois</b> facteurs négatifs font un nombre <b>impair</b> : le produit est négatif, &#8722;50.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> (+12)&#8239;&#215;&#8239;(&#8722;5)&#8239;=&#8239;&#8722;7 &nbsp;&middot;&nbsp; (&#8722;3)&#8239;&#215;&#8239;(&#8722;4)&#8239;=&#8239;&#8722;7</div><div class="cor"><span class="v">&#10003;</span> Multiplier n'est pas ajouter : (+12)&#8239;&#215;&#8239;(&#8722;5)&#8239;=&#8239;&#8722;60 et (&#8722;3)&#8239;&#215;&#8239;(&#8722;4)&#8239;=&#8239;+12, alors que (&#8722;3)&#8239;+&#8239;(&#8722;4)&#8239;=&#8239;&#8722;7. La règle des signes du <b>produit</b> n'est pas celle de l'<b>addition</b>.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> 2&#8239;+&#8239;3&#8239;&#215;&#8239;4&#8239;=&#8239;5&#8239;&#215;&#8239;4&#8239;=&#8239;20</div><div class="cor"><span class="v">&#10003;</span> La multiplication passe <b>avant</b> l'addition : 2&#8239;+&#8239;12&#8239;=&#8239;14. On ne regroupe librement que dans un <b>produit</b>.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> 3(<i>x</i>&#8239;+&#8239;5)&#8239;=&#8239;3<i>x</i>&#8239;+&#8239;5</div><div class="cor"><span class="v">&#10003;</span> On distribue sur <b>tous</b> les termes de la parenthèse : 3(<i>x</i>&#8239;+&#8239;5)&#8239;=&#8239;3<i>x</i>&#8239;+&#8239;15.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> 7<i>x</i>&#8239;+&#8239;3<i>x</i>&#8239;=&#8239;10<i>x</i><sup>2</sup> &nbsp;&middot;&nbsp; 3<i>a</i>&#8239;+&#8239;5<i>b</i>&#8239;=&#8239;8<i>ab</i> &nbsp;&middot;&nbsp; 2<i>b</i>&#8239;+&#8239;<i>b</i>&#8239;=&#8239;2<i>b</i></div><div class="cor"><span class="v">&#10003;</span> On ajoute les <b>coefficients</b>, la lettre ne change pas : 7<i>x</i>&#8239;+&#8239;3<i>x</i>&#8239;=&#8239;10<i>x</i>. 3<i>a</i> et 5<i>b</i> ne sont pas semblables : 3<i>a</i>&#8239;+&#8239;5<i>b</i> ne se réduit pas. Et <i>b</i> seul vaut 1<i>b</i>, donc 2<i>b</i>&#8239;+&#8239;<i>b</i>&#8239;=&#8239;3<i>b</i>.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> &#8722;(2<i>a</i>&#8239;&#8722;&#8239;5)&#8239;=&#8239;&#8722;2<i>a</i>&#8239;&#8722;&#8239;5 &nbsp;&middot;&nbsp; &#8722;3(&#8722;2<i>a</i>&#8239;&#8722;&#8239;7<i>b</i>)&#8239;=&#8239;&#8722;6<i>a</i>&#8239;&#8722;&#8239;21<i>b</i></div><div class="cor"><span class="v">&#10003;</span> Le signe moins <b>retourne</b> toute la parenthèse : &#8722;(2<i>a</i>&#8239;&#8722;&#8239;5)&#8239;=&#8239;&#8722;2<i>a</i>&#8239;+&#8239;5. On multiplie bien par &#8722;3, pas par 3 : &#8722;3(&#8722;2<i>a</i>&#8239;&#8722;&#8239;7<i>b</i>)&#8239;=&#8239;+6<i>a</i>&#8239;+&#8239;21<i>b</i>.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> 12<i>a</i>&#8239;+&#8239;6<i>b</i>&#8239;=&#8239;2(6<i>a</i>&#8239;+&#8239;3<i>b</i>) &nbsp;&middot;&nbsp; factoriser 5<i>a</i>&#8239;+&#8239;3<i>b</i> par 5</div><div class="cor"><span class="v">&#10003;</span> Factorisation <b>incomplète</b> : 6 et 3 se divisent encore par 3, donc 12<i>a</i>&#8239;+&#8239;6<i>b</i>&#8239;=&#8239;6(2<i>a</i>&#8239;+&#8239;<i>b</i>). Et 5<i>a</i>&#8239;+&#8239;3<i>b</i> ne se factorise pas : 3 n'est pas divisible par 5, et <i>a</i> n'est pas <i>b</i>.</div></div>
+
+</div>
+
+<div class="bandeau bleu">A SAVOIR PAR COEUR AVANT LE DEVOIR</div>
+<div class="cols">
+<ol class="recap">
+<li><b>Règle des signes</b> : même signe donne <b>+</b>, signes contraires donnent <b>&#8722;</b>. On pose le signe d'abord, on multiplie ensuite les <b>valeurs absolues</b>.</li>
+<li>Produit de <b>plusieurs</b> facteurs : nombre <b>pair</b> de facteurs négatifs, produit positif ; nombre <b>impair</b>, produit négatif ; un seul facteur nul rend le produit nul.</li>
+<li>Multiplier par <b>0</b> donne 0, par <b>+1</b> ne change rien, par <b>&#8722;1</b> donne l'<b>opposé</b> ; &#8722;<i>a</i> est l'opposé de <i>a</i>, pas forcément un nombre négatif.</li>
+<li><i>a</i>&#8239;&#215;&#8239;<i>b</i>&#8239;=&#8239;<i>b</i>&#8239;&#215;&#8239;<i>a</i> et (<i>a</i>&#8239;&#215;&#8239;<i>b</i>)&#8239;&#215;&#8239;<i>c</i>&#8239;=&#8239;<i>a</i>&#8239;&#215;&#8239;(<i>b</i>&#8239;&#215;&#8239;<i>c</i>) : on déplace et on regroupe dans un <b>produit</b>. <b>Facteur manquant</b> : signe par la règle des signes, valeur en divisant les valeurs absolues.</li>
+<li><b>Termes semblables</b> : même partie littérale. On ajoute les coefficients, la lettre ne change pas ; 3<i>a</i>&#8239;+&#8239;5<i>b</i> ne se réduit pas, et <i>b</i> vaut 1<i>b</i>.</li>
+<li><b>Priorités</b> : parenthèses, puis multiplications et divisions, puis additions et soustractions, de gauche à droite.</li>
+<li><b>Distributivité</b> : <i>k</i>(<i>a</i>&#8239;+&#8239;<i>b</i>)&#8239;=&#8239;<i>ka</i>&#8239;+&#8239;<i>kb</i> et <i>k</i>(<i>a</i>&#8239;&#8722;&#8239;<i>b</i>)&#8239;=&#8239;<i>ka</i>&#8239;&#8722;&#8239;<i>kb</i>, lue dans les deux sens : <b>développer</b> en multipliant par chaque terme, <b>factoriser</b> en sortant le <b>plus grand</b> facteur commun.</li>
+<li>Un signe <b>&#8722;</b> devant une parenthèse change <b>tous</b> les signes à l'intérieur. Contrôle final : remplace la lettre par 1 dans les deux écritures.</li>
+</ol>
+</div>
+
+</body>
+</html>

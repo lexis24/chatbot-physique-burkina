@@ -1,0 +1,296 @@
+{
+  "niveau": "3ème",
+  "chapitre": "Chapitre 8 : Théorème de Thalès et sa réciproque",
+  "source": "maths/3eme/Chapitre_8_Thales",
+  "nombre_cartes": 32,
+  "cartes": [
+    {
+      "id": "3E-CH08-001",
+      "lecon": "Configurations de Thalès",
+      "type": "definition",
+      "recto": "Qu'est-ce qu'une configuration de Thalès ?",
+      "verso": "C'est la situation où une droite parallèle à un côté d'un triangle coupe les deux autres côtés, ou leurs prolongements. On obtient deux triangles, un grand et un petit, qui ont un sommet commun.",
+      "difficulte": 1,
+      "tags": ["thales", "configuration", "definition"]
+    },
+    {
+      "id": "3E-CH08-002",
+      "lecon": "Configurations de Thalès",
+      "type": "definition",
+      "recto": "Dans une configuration de Thalès de sommet commun A, que signifie dire que M et B sont homologues ?",
+      "verso": "Cela signifie qu'ils se correspondent d'un triangle à l'autre : M appartient au petit triangle, B au grand, et tous deux sont portés par la même droite issue de A.",
+      "difficulte": 2,
+      "tags": ["thales", "points-homologues"]
+    },
+    {
+      "id": "3E-CH08-003",
+      "lecon": "Configurations de Thalès",
+      "type": "definition",
+      "recto": "Quelle différence sépare le triangle emboîté de la configuration papillon ?",
+      "verso": "Dans le triangle emboîté, M et N sont du même côté de A que B et C, et le petit triangle est à l'intérieur du grand. Dans le papillon, M et N sont de l'autre côté de A : les deux triangles se font face et le sommet commun est entre eux.",
+      "difficulte": 2,
+      "tags": ["thales", "emboite", "papillon"]
+    },
+    {
+      "id": "3E-CH08-004",
+      "lecon": "Configurations de Thalès",
+      "type": "definition",
+      "recto": "Dans une configuration papillon, quel point tient le rôle de sommet commun ?",
+      "verso": "Le point d'intersection des deux droites sécantes. C'est de lui que partent tous les rapports.",
+      "difficulte": 1,
+      "tags": ["thales", "papillon", "sommet-commun"]
+    },
+    {
+      "id": "3E-CH08-005",
+      "lecon": "Configurations de Thalès",
+      "type": "formule",
+      "recto": "Quelle écriture permet de repérer à coup sûr les points homologues de deux triangles en configuration de Thalès ?",
+      "verso": "On écrit les deux triangles l'un sous l'autre, sommet commun en premier : $A\\ M\\ N$ sous $A\\ B\\ C$. Chaque colonne donne alors une paire de points homologues, et les rapports s'écrivent tout seuls.",
+      "difficulte": 2,
+      "tags": ["thales", "points-homologues", "methode"]
+    },
+    {
+      "id": "3E-CH08-006",
+      "lecon": "Configurations de Thalès",
+      "type": "formule",
+      "recto": "Qu'est-ce qui reste identique dans les deux dispositions d'une configuration de Thalès ?",
+      "verso": "La droite $(MN)$ reste parallèle à $(BC)$, les points homologues se correspondent de la même façon, et les rapports de longueurs restent égaux. Seul le nom du sommet commun change.",
+      "difficulte": 2,
+      "tags": ["thales", "configuration", "proprietes"]
+    },
+    {
+      "id": "3E-CH08-007",
+      "lecon": "Configurations de Thalès",
+      "type": "formule",
+      "recto": "Pourquoi le rapport $\\dfrac{AM}{AC}$ n'a-t-il aucun sens dans une configuration de Thalès de sommet commun A ?",
+      "verso": "Parce qu'il mélange les deux triangles : $AM$ appartient au petit et $AC$ au grand, et ces deux segments ne sont pas portés par la même droite. Chaque rapport doit comparer deux segments homologues.",
+      "difficulte": 3,
+      "tags": ["thales", "piege", "rapports"]
+    },
+    {
+      "id": "3E-CH08-008",
+      "lecon": "Configurations de Thalès",
+      "type": "formule",
+      "recto": "Dans une configuration de Thalès, quels segments le troisième rapport compare-t-il ?",
+      "verso": "Les deux droites parallèles entre elles : c'est $\\dfrac{MN}{BC}$. Ce n'est ni $\\dfrac{MN}{CB}$ écrit à l'envers, ni $\\dfrac{AM}{BC}$.",
+      "difficulte": 2,
+      "tags": ["thales", "rapports", "piege"]
+    },
+    {
+      "id": "3E-CH08-009",
+      "lecon": "Le théorème de Thalès (direct)",
+      "type": "formule",
+      "recto": "Que dit le théorème de Thalès sous la forme « si ... alors ... » ?",
+      "verso": "Si M est un point de la droite $(AB)$, si N est un point de la droite $(AC)$ et si $(MN)$ // $(BC)$, alors $\\dfrac{AM}{AB} = \\dfrac{AN}{AC} = \\dfrac{MN}{BC}$.",
+      "difficulte": 2,
+      "tags": ["thales", "theoreme-direct", "enonce"]
+    },
+    {
+      "id": "3E-CH08-010",
+      "lecon": "Le théorème de Thalès (direct)",
+      "type": "definition",
+      "recto": "A quoi sert le sens direct du théorème de Thalès ?",
+      "verso": "A calculer une longueur lorsqu'un parallélisme est connu. L'hypothèse est le parallélisme, la conclusion est l'égalité des rapports.",
+      "difficulte": 1,
+      "tags": ["thales", "theoreme-direct", "usage"]
+    },
+    {
+      "id": "3E-CH08-011",
+      "lecon": "Le théorème de Thalès (direct)",
+      "type": "formule",
+      "recto": "Quelle hypothèse faut-il avoir établie avant d'appliquer le théorème de Thalès ?",
+      "verso": "Le parallélisme des deux droites, par exemple $(MN)$ // $(BC)$. Sans lui, aucune égalité de rapports n'est vraie et le calcul n'est pas justifié.",
+      "difficulte": 2,
+      "tags": ["thales", "hypothese", "parallelisme"]
+    },
+    {
+      "id": "3E-CH08-012",
+      "lecon": "Le théorème de Thalès (direct)",
+      "type": "formule",
+      "recto": "Parmi les trois rapports du théorème de Thalès, lesquels garde-t-on pour calculer une longueur ?",
+      "verso": "Les deux qui contiennent la longueur cherchée et deux longueurs connues. Le troisième rapport ne sert pas, et on termine par le produit en croix.",
+      "difficulte": 2,
+      "tags": ["thales", "calcul", "methode"]
+    },
+    {
+      "id": "3E-CH08-013",
+      "lecon": "Le théorème de Thalès (direct)",
+      "type": "formule",
+      "recto": "Quel calcul permet de tirer la longueur inconnue d'une égalité de deux quotients ?",
+      "verso": "Le produit en croix : $\\dfrac{a}{b} = \\dfrac{c}{d}$ équivaut à $a \\times d = b \\times c$. Ainsi $\\dfrac{30}{50} = \\dfrac{45}{BC}$ donne $30 \\times BC = 2\\,250$, donc $BC = 75$.",
+      "difficulte": 2,
+      "tags": ["thales", "produit-en-croix"]
+    },
+    {
+      "id": "3E-CH08-014",
+      "lecon": "Le théorème de Thalès (direct)",
+      "type": "formule",
+      "recto": "Sur quelle propriété s'appuie la démonstration du théorème de Thalès ?",
+      "verso": "Sur le rapport de projection : une projection de direction donnée multiplie toutes les longueurs d'une droite par un même nombre $k$, qui ne dépend pas du segment choisi.",
+      "difficulte": 3,
+      "tags": ["thales", "demonstration", "projection"]
+    },
+    {
+      "id": "3E-CH08-015",
+      "lecon": "Le théorème de Thalès (direct)",
+      "type": "definition",
+      "recto": "Que représente le nombre commun aux trois rapports du théorème de Thalès ?",
+      "verso": "Le rapport qui fait passer d'un triangle à l'autre : le petit triangle est une réduction du grand, et toutes ses longueurs sont multipliées par ce même nombre.",
+      "difficulte": 2,
+      "tags": ["thales", "rapport", "reduction"]
+    },
+    {
+      "id": "3E-CH08-016",
+      "lecon": "Le théorème de Thalès (direct)",
+      "type": "formule",
+      "recto": "Comment rédige-t-on la conclusion d'un calcul de longueur utilisant le théorème de Thalès ?",
+      "verso": "« On sait que $(MN)$ // $(BC)$. Or, si une droite est parallèle à un côté d'un triangle, alors elle partage les deux autres côtés dans le même rapport. Donc $\\dfrac{AM}{AB} = \\dfrac{AN}{AC} = \\dfrac{MN}{BC}$. »",
+      "difficulte": 2,
+      "tags": ["thales", "redaction", "bepc"]
+    },
+    {
+      "id": "3E-CH08-017",
+      "lecon": "Le théorème de Thalès (direct)",
+      "type": "formule",
+      "recto": "Comment contrôle-t-on qu'une longueur calculée avec le théorème de Thalès est plausible ?",
+      "verso": "On recalcule les deux quotients pour vérifier qu'ils sont bien égaux, et on regarde si le côté du petit triangle reste plus petit que son homologue du grand.",
+      "difficulte": 2,
+      "tags": ["thales", "verification"]
+    },
+    {
+      "id": "3E-CH08-018",
+      "lecon": "Applications : partage d'un segment, trapèze, égalités de quotients",
+      "type": "formule",
+      "recto": "Comment partage-t-on un segment $[AB]$ en $n$ parts égales sans rien mesurer ?",
+      "verso": "On trace une demi-droite d'origine A, on y reporte $n$ longueurs égales jusqu'à un point $A_n$, on joint $A_n$ à B, puis on trace les parallèles à $\\left(A_nB\\right)$ passant par les points intermédiaires : elles coupent $[AB]$ aux points de partage.",
+      "difficulte": 2,
+      "tags": ["thales", "partage-segment", "construction"]
+    },
+    {
+      "id": "3E-CH08-019",
+      "lecon": "Applications : partage d'un segment, trapèze, égalités de quotients",
+      "type": "formule",
+      "recto": "Dans un trapèze ABCD de bases $(AB)$ et $(CD)$ dont les diagonales se coupent en O, quelle égalité de rapports peut-on écrire ?",
+      "verso": "$\\dfrac{OA}{OC} = \\dfrac{OB}{OD} = \\dfrac{AB}{CD}$.",
+      "difficulte": 2,
+      "tags": ["thales", "trapeze", "diagonales"]
+    },
+    {
+      "id": "3E-CH08-020",
+      "lecon": "Applications : partage d'un segment, trapèze, égalités de quotients",
+      "type": "definition",
+      "recto": "Pourquoi les diagonales d'un trapèze forment-elles une configuration papillon ?",
+      "verso": "Parce que les deux bases sont parallèles et que les diagonales sont deux sécantes qui se croisent : leur point d'intersection O devient le sommet commun aux deux triangles.",
+      "difficulte": 2,
+      "tags": ["thales", "trapeze", "papillon"]
+    },
+    {
+      "id": "3E-CH08-021",
+      "lecon": "Applications : partage d'un segment, trapèze, égalités de quotients",
+      "type": "formule",
+      "recto": "Dans un trapèze ABCD, quelle correspondance des points faut-il respecter en appliquant Thalès aux diagonales ?",
+      "verso": "A correspond à C et B correspond à D, car chaque diagonale relie deux sommets opposés. Le sommet commun est l'intersection des diagonales, jamais un sommet du trapèze.",
+      "difficulte": 3,
+      "tags": ["thales", "trapeze", "piege"]
+    },
+    {
+      "id": "3E-CH08-022",
+      "lecon": "Applications : partage d'un segment, trapèze, égalités de quotients",
+      "type": "formule",
+      "recto": "Que devient un motif triangulaire agrandi en gardant exactement la même forme ?",
+      "verso": "Il forme avec le motif d'origine une configuration de Thalès : toutes les longueurs sont multipliées par un même nombre, le rapport d'agrandissement.",
+      "difficulte": 2,
+      "tags": ["thales", "agrandissement", "reduction"]
+    },
+    {
+      "id": "3E-CH08-023",
+      "lecon": "Applications : partage d'un segment, trapèze, égalités de quotients",
+      "type": "formule",
+      "recto": "Qu'apporte toute configuration de Thalès repérée dans une figure ?",
+      "verso": "Une égalité de deux quotients, c'est-à-dire une équation, que l'on résout par le produit en croix pour trouver une longueur inconnue ou un rapport d'agrandissement.",
+      "difficulte": 2,
+      "tags": ["thales", "egalite-de-quotients"]
+    },
+    {
+      "id": "3E-CH08-024",
+      "lecon": "Applications : partage d'un segment, trapèze, égalités de quotients",
+      "type": "formule",
+      "recto": "Pourquoi la demi-droite auxiliaire servant à partager $[AB]$ doit-elle être différente de $(AB)$ ?",
+      "verso": "Parce que les longueurs reportées tomberaient sur $[AB]$ lui-même : il n'y aurait plus deux droites sécantes, donc plus de configuration de Thalès, et la construction perdrait tout sens.",
+      "difficulte": 3,
+      "tags": ["thales", "partage-segment", "piege"]
+    },
+    {
+      "id": "3E-CH08-025",
+      "lecon": "La réciproque du théorème de Thalès",
+      "type": "formule",
+      "recto": "Que dit la réciproque du théorème de Thalès sous la forme « si ... alors ... » ?",
+      "verso": "Si A, M, B sont alignés, si A, N, C sont alignés, si M et N sont du même côté de A, et si $\\dfrac{AM}{AB} = \\dfrac{AN}{AC}$, alors les droites $(MN)$ et $(BC)$ sont parallèles.",
+      "difficulte": 2,
+      "tags": ["thales", "reciproque", "enonce"]
+    },
+    {
+      "id": "3E-CH08-026",
+      "lecon": "La réciproque du théorème de Thalès",
+      "type": "definition",
+      "recto": "A quoi sert la réciproque du théorème de Thalès ?",
+      "verso": "A démontrer un parallélisme à partir de longueurs mesurées ou calculées. Ici les longueurs sont l'hypothèse et le parallélisme la conclusion.",
+      "difficulte": 1,
+      "tags": ["thales", "reciproque", "usage"]
+    },
+    {
+      "id": "3E-CH08-027",
+      "lecon": "La réciproque du théorème de Thalès",
+      "type": "formule",
+      "recto": "Quelle condition, en plus de l'égalité des rapports, la réciproque de Thalès exige-t-elle ?",
+      "verso": "La condition d'ordre : les points doivent être placés dans le même ordre, c'est-à-dire du même côté du point commun. Sans elle, l'égalité des rapports ne prouve plus le parallélisme.",
+      "difficulte": 2,
+      "tags": ["thales", "reciproque", "condition-ordre"]
+    },
+    {
+      "id": "3E-CH08-028",
+      "lecon": "La réciproque du théorème de Thalès",
+      "type": "formule",
+      "recto": "Pourquoi l'égalité $\\dfrac{AM}{AB} = \\dfrac{MN}{BC}$ ne permet-elle pas de conclure au parallélisme ?",
+      "verso": "Parce que la réciproque exige l'égalité des deux rapports portés par les sécantes, soit $\\dfrac{AM}{AB} = \\dfrac{AN}{AC}$. Le rapport des deux parallèles ne fait pas partie de ses hypothèses.",
+      "difficulte": 3,
+      "tags": ["thales", "reciproque", "piege"]
+    },
+    {
+      "id": "3E-CH08-029",
+      "lecon": "La réciproque du théorème de Thalès",
+      "type": "definition",
+      "recto": "Comment sait-on s'il faut employer le théorème de Thalès ou bien sa réciproque ?",
+      "verso": "Si le parallélisme est donné et qu'on cherche une longueur, c'est le théorème direct. Si les longueurs sont données et qu'on veut prouver un parallélisme, c'est la réciproque.",
+      "difficulte": 2,
+      "tags": ["thales", "reciproque", "distinction"]
+    },
+    {
+      "id": "3E-CH08-030",
+      "lecon": "La réciproque du théorème de Thalès",
+      "type": "formule",
+      "recto": "Comment compare-t-on honnêtement les deux rapports avant d'appliquer la réciproque de Thalès ?",
+      "verso": "On les calcule séparément, chacun sur sa propre ligne, puis on compare les deux nombres obtenus. Le produit en croix donne le test exact : $\\dfrac{a}{b} = \\dfrac{c}{d}$ si et seulement si $a \\times d = b \\times c$.",
+      "difficulte": 2,
+      "tags": ["thales", "reciproque", "comparaison"]
+    },
+    {
+      "id": "3E-CH08-031",
+      "lecon": "La réciproque du théorème de Thalès",
+      "type": "formule",
+      "recto": "Que conclut-on quand les deux rapports sont proches sans être exactement égaux ?",
+      "verso": "Que les droites ne sont pas parallèles : une égalité approchée ne suffit pas. Ainsi $\\dfrac{20}{12} \\approx 1{,}67$ et $\\dfrac{17}{10} = 1{,}7$ diffèrent, ce que confirment les produits en croix $200$ et $204$.",
+      "difficulte": 3,
+      "tags": ["thales", "reciproque", "piege"]
+    },
+    {
+      "id": "3E-CH08-032",
+      "lecon": "La réciproque du théorème de Thalès",
+      "type": "formule",
+      "recto": "Sur quel raisonnement repose la démonstration de la réciproque du théorème de Thalès ?",
+      "verso": "Sur une construction : on trace la parallèle à $(BC)$ passant par M, qui coupe $(AC)$ en $N'$. Le théorème direct donne $AN' = AN$, et comme N et $N'$ sont du même côté de A, ils sont confondus.",
+      "difficulte": 3,
+      "tags": ["thales", "reciproque", "demonstration"]
+    }
+  ]
+}

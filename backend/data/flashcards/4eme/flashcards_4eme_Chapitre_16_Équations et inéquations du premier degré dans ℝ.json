@@ -1,0 +1,323 @@
+{
+  "niveau": "4ème",
+  "chapitre": "Chapitre 16 : Equations et inéquations du premier degré dans $\\mathbb{R}$",
+  "source": "maths/4eme/Chapitre_16_Equations_inequations",
+  "nombre_cartes": 35,
+  "cartes": [
+    {
+      "id": "4E-CH16-001",
+      "lecon": "Transposer un terme dans une égalité ou une inégalité",
+      "type": "definition",
+      "recto": "Dans une égalité, comment appelle-t-on les deux expressions séparées par le signe $=$ ?",
+      "verso": "Ce sont les deux membres : le membre de gauche et le membre de droite. Chaque membre est formé de termes ; dans $x + 2 = 5$, le membre de gauche compte les termes $x$ et $2$.",
+      "difficulte": 1,
+      "tags": ["egalite", "membre", "vocabulaire"]
+    },
+    {
+      "id": "4E-CH16-002",
+      "lecon": "Transposer un terme dans une égalité ou une inégalité",
+      "type": "formule",
+      "recto": "Que dit la règle de transposition d'un terme dans une égalité ?",
+      "verso": "On peut faire passer un terme d'un membre à l'autre en changeant son signe, et l'égalité reste vraie : $x + 2 = 5$ devient $x = 5 - 2$, donc $x = 3$.",
+      "difficulte": 1,
+      "tags": ["transposition", "regle"]
+    },
+    {
+      "id": "4E-CH16-003",
+      "lecon": "Transposer un terme dans une égalité ou une inégalité",
+      "type": "formule",
+      "recto": "Pourquoi un terme transposé change-t-il de signe ?",
+      "verso": "Parce que transposer est un raccourci d'écriture : on retire le même nombre aux deux membres. Derrière $x + 2 = 5$ qui devient $x = 5 - 2$, il y a en réalité $x + 2 - 2 = 5 - 2$.",
+      "difficulte": 2,
+      "tags": ["transposition", "justification"]
+    },
+    {
+      "id": "4E-CH16-004",
+      "lecon": "Transposer un terme dans une égalité ou une inégalité",
+      "type": "formule",
+      "recto": "Pourquoi le nombre $5$ de l'égalité $5x = 30$ ne peut-il pas être transposé ?",
+      "verso": "Parce que $5$ n'est pas un terme mais un facteur : il multiplie $x$. Ecrire $x = 30 - 5$ est une faute. Pour enlever un facteur, on divise les deux membres.",
+      "difficulte": 3,
+      "tags": ["transposition", "facteur", "piege"]
+    },
+    {
+      "id": "4E-CH16-005",
+      "lecon": "Transposer un terme dans une égalité ou une inégalité",
+      "type": "formule",
+      "recto": "Quel effet la transposition d'un terme a-t-elle sur le sens d'une inégalité ?",
+      "verso": "Aucun : transposer ne change jamais le sens d'une inégalité. Seul le signe du terme déplacé change.",
+      "difficulte": 2,
+      "tags": ["transposition", "inegalite", "sens"]
+    },
+    {
+      "id": "4E-CH16-006",
+      "lecon": "Transposer un terme dans une égalité ou une inégalité",
+      "type": "formule",
+      "recto": "Comment transpose-t-on plusieurs termes en une seule ligne, dans une égalité comme $3x - 6 = 2x + 5$ ?",
+      "verso": "On déplace chaque terme en changeant son signe : le $2x$ devient $-2x$ à gauche et le $-6$ devient $+6$ à droite, ce qui donne $3x - 2x = 5 + 6$.",
+      "difficulte": 2,
+      "tags": ["transposition", "calcul"]
+    },
+    {
+      "id": "4E-CH16-007",
+      "lecon": "Résoudre une équation du premier degré",
+      "type": "definition",
+      "recto": "Qu'est-ce qu'une équation ?",
+      "verso": "C'est une égalité qui contient un nombre inconnu, le plus souvent noté $x$.",
+      "difficulte": 1,
+      "tags": ["equation", "definition"]
+    },
+    {
+      "id": "4E-CH16-008",
+      "lecon": "Résoudre une équation du premier degré",
+      "type": "definition",
+      "recto": "Que veut dire résoudre une équation ?",
+      "verso": "C'est trouver toutes les valeurs de l'inconnue qui rendent l'égalité vraie. Ces valeurs sont appelées les solutions.",
+      "difficulte": 1,
+      "tags": ["equation", "solution"]
+    },
+    {
+      "id": "4E-CH16-009",
+      "lecon": "Résoudre une équation du premier degré",
+      "type": "definition",
+      "recto": "A quelle condition une équation est-elle du premier degré ?",
+      "verso": "Lorsque l'inconnue n'y apparaît qu'à la puissance $1$, sans aucun terme en $x^{2}$.",
+      "difficulte": 2,
+      "tags": ["equation", "premier-degre"]
+    },
+    {
+      "id": "4E-CH16-010",
+      "lecon": "Résoudre une équation du premier degré",
+      "type": "formule",
+      "recto": "Dans quel ordre effectue-t-on les deux gestes qui résolvent une équation du premier degré ?",
+      "verso": "On transpose d'abord, pour rassembler les $x$ d'un côté et les nombres de l'autre, puis on divise les deux membres par le coefficient de $x$. Diviser trop tôt fait apparaître des fractions inutiles.",
+      "difficulte": 2,
+      "tags": ["equation", "resolution", "ordre"]
+    },
+    {
+      "id": "4E-CH16-011",
+      "lecon": "Résoudre une équation du premier degré",
+      "type": "formule",
+      "recto": "Que dit la propriété du produit nul ?",
+      "verso": "Si $a \\times b = 0$, alors $a = 0$ ou $b = 0$ : un produit est nul si et seulement si l'un au moins de ses facteurs est nul.",
+      "difficulte": 1,
+      "tags": ["produit-nul", "propriete"]
+    },
+    {
+      "id": "4E-CH16-012",
+      "lecon": "Résoudre une équation du premier degré",
+      "type": "formule",
+      "recto": "Comment résout-on l'équation-produit $\\left(x - 2\\right)\\left(x + 5\\right) = 0$ ?",
+      "verso": "On ne développe pas : on annule chaque facteur. $x - 2 = 0$ donne $x = 2$, et $x + 5 = 0$ donne $x = -5$. L'équation admet donc deux solutions.",
+      "difficulte": 2,
+      "tags": ["equation-produit", "resolution"]
+    },
+    {
+      "id": "4E-CH16-013",
+      "lecon": "Résoudre une équation du premier degré",
+      "type": "formule",
+      "recto": "Combien de solutions une équation du premier degré possède-t-elle ?",
+      "verso": "Une seule, sauf deux cas particuliers : $0x = 0$ est vraie pour tout $x$, et $0x = 5$ n'admet aucune solution.",
+      "difficulte": 3,
+      "tags": ["equation", "nombre-de-solutions", "cas-particulier"]
+    },
+    {
+      "id": "4E-CH16-014",
+      "lecon": "Résoudre une équation du premier degré",
+      "type": "formule",
+      "recto": "Dans quelle égalité faut-il reporter la valeur trouvée pour vérifier la solution d'une équation ?",
+      "verso": "Dans l'équation de départ, jamais dans une ligne intermédiaire : une erreur commise en cours de route resterait sinon invisible.",
+      "difficulte": 2,
+      "tags": ["equation", "verification"]
+    },
+    {
+      "id": "4E-CH16-015",
+      "lecon": "Résoudre une équation du premier degré",
+      "type": "definition",
+      "recto": "Que fait-on lorsque la solution d'une équation est une fraction, comme $x = \\dfrac{5}{3}$ ?",
+      "verso": "On la laisse sous forme de fraction, qui est la valeur exacte, sans chercher à l'arrondir. Une solution fractionnaire n'est pas une faute quand l'équation est posée pour elle-même.",
+      "difficulte": 2,
+      "tags": ["equation", "solution", "fraction"]
+    },
+    {
+      "id": "4E-CH16-016",
+      "lecon": "Résoudre une inéquation du premier degré",
+      "type": "definition",
+      "recto": "Qu'est-ce qu'une inéquation ?",
+      "verso": "C'est une comparaison de deux expressions par un signe d'inégalité : $<$ plus petit, $>$ plus grand, $\\le$ plus petit ou égal, $\\ge$ plus grand ou égal.",
+      "difficulte": 1,
+      "tags": ["inequation", "definition"]
+    },
+    {
+      "id": "4E-CH16-017",
+      "lecon": "Résoudre une inéquation du premier degré",
+      "type": "definition",
+      "recto": "Que veut dire résoudre une inéquation ?",
+      "verso": "C'est trouver tous les nombres qui la vérifient. Ils sont en nombre infini et forment l'ensemble des solutions.",
+      "difficulte": 1,
+      "tags": ["inequation", "ensemble-solutions"]
+    },
+    {
+      "id": "4E-CH16-018",
+      "lecon": "Résoudre une inéquation du premier degré",
+      "type": "formule",
+      "recto": "Dans quel cas change-t-on le sens d'une inégalité au cours d'une résolution ?",
+      "verso": "Quand on multiplie ou quand on divise les deux membres par un nombre négatif. Ainsi $-2x < 6$ donne $x > -3$.",
+      "difficulte": 2,
+      "tags": ["inequation", "sens", "negatif"]
+    },
+    {
+      "id": "4E-CH16-019",
+      "lecon": "Résoudre une inéquation du premier degré",
+      "type": "formule",
+      "recto": "Pourquoi la multiplication par un nombre négatif retourne-t-elle le sens d'une inégalité ?",
+      "verso": "Parce qu'elle retourne l'ordre des nombres comme un miroir : $2 < 5$, mais en multipliant par $-1$ on obtient $-2 > -5$.",
+      "difficulte": 2,
+      "tags": ["inequation", "justification", "negatif"]
+    },
+    {
+      "id": "4E-CH16-020",
+      "lecon": "Résoudre une inéquation du premier degré",
+      "type": "formule",
+      "recto": "Quel effet la division des deux membres par un nombre positif a-t-elle sur le sens d'une inégalité ?",
+      "verso": "Aucun : le sens est conservé, et $2x < 8$ donne $x < 4$. Seule la division par un nombre négatif renverse le symbole.",
+      "difficulte": 3,
+      "tags": ["inequation", "sens", "piege"]
+    },
+    {
+      "id": "4E-CH16-021",
+      "lecon": "Résoudre une inéquation du premier degré",
+      "type": "formule",
+      "recto": "Comment éviter le retournement du symbole en résolvant $2x - 3 < 5x + 6$ ?",
+      "verso": "On rassemble les $x$ du côté où leur coefficient est le plus grand : $-3 - 6 < 5x - 2x$, soit $-9 < 3x$, donc $x > -3$. Aucun coefficient négatif n'apparaît.",
+      "difficulte": 3,
+      "tags": ["inequation", "coefficient", "astuce"]
+    },
+    {
+      "id": "4E-CH16-022",
+      "lecon": "Résoudre une inéquation du premier degré",
+      "type": "formule",
+      "recto": "Comment contrôle-t-on l'ensemble des solutions trouvé pour une inéquation ?",
+      "verso": "On teste un nombre pris dans la zone trouvée, qui doit vérifier l'inéquation, puis un nombre écarté, qui ne doit pas la vérifier.",
+      "difficulte": 2,
+      "tags": ["inequation", "verification"]
+    },
+    {
+      "id": "4E-CH16-023",
+      "lecon": "Représenter l'ensemble des solutions",
+      "type": "definition",
+      "recto": "Sur une droite graduée, comment appelle-t-on le nombre qui sépare les solutions d'une inéquation des autres nombres ?",
+      "verso": "C'est la borne. On la place sur la droite graduée, puis on hachure le côté où se trouvent les solutions.",
+      "difficulte": 1,
+      "tags": ["borne", "droite-graduee"]
+    },
+    {
+      "id": "4E-CH16-024",
+      "lecon": "Représenter l'ensemble des solutions",
+      "type": "formule",
+      "recto": "Quelle différence de tracé sépare la représentation de $x > 2$ de celle de $x \\ge 2$ ?",
+      "verso": "Le rond posé sur la borne : vide pour $x > 2$, car $2$ n'est pas solution, plein pour $x \\ge 2$, car $2$ est solution. Les hachures, elles, sont les mêmes.",
+      "difficulte": 2,
+      "tags": ["borne", "rond", "inegalite-stricte"]
+    },
+    {
+      "id": "4E-CH16-025",
+      "lecon": "Représenter l'ensemble des solutions",
+      "type": "formule",
+      "recto": "De quel côté de la borne hachure-t-on les solutions ?",
+      "verso": "Vers la droite quand $x$ est plus grand que la borne, vers la gauche quand $x$ est plus petit.",
+      "difficulte": 1,
+      "tags": ["borne", "hachures"]
+    },
+    {
+      "id": "4E-CH16-026",
+      "lecon": "Représenter l'ensemble des solutions",
+      "type": "formule",
+      "recto": "Comment écrit-on l'ensemble des solutions de $x > 2$ sous forme d'intervalle ?",
+      "verso": "On écrit $\\left]2\\,;\\,+\\infty\\right[$. Le crochet est ouvert du côté d'une borne qui n'est pas prise, et il est toujours ouvert du côté de l'infini.",
+      "difficulte": 2,
+      "tags": ["intervalle", "crochet"]
+    },
+    {
+      "id": "4E-CH16-027",
+      "lecon": "Représenter l'ensemble des solutions",
+      "type": "formule",
+      "recto": "Quel crochet écrit-on du côté d'une borne qui fait partie des solutions ?",
+      "verso": "Un crochet fermé. Ainsi $x \\le 5$ s'écrit $\\left]-\\infty\\,;\\,5\\right]$ : fermé sur $5$, ouvert du côté de l'infini.",
+      "difficulte": 2,
+      "tags": ["intervalle", "crochet", "inegalite-large"]
+    },
+    {
+      "id": "4E-CH16-028",
+      "lecon": "Représenter l'ensemble des solutions",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on un encadrement de l'inconnue ?",
+      "verso": "C'est une double inégalité qui limite les solutions des deux côtés, comme $2{,}5 < x < 3{,}5$, que l'on note $\\left]2{,}5\\,;\\,3{,}5\\right[$. Seule la portion comprise entre les deux bornes est coloriée.",
+      "difficulte": 2,
+      "tags": ["encadrement", "intervalle"]
+    },
+    {
+      "id": "4E-CH16-029",
+      "lecon": "Représenter l'ensemble des solutions",
+      "type": "formule",
+      "recto": "De quel côté hachure-t-on lorsque l'inconnue est écrite à droite, comme dans $-3 < x$ ?",
+      "verso": "Vers la droite : $-3 < x$ se lit $x > -3$, et les solutions sont les nombres plus grands que $-3$. Il ne faut pas se fier à l'orientation du symbole.",
+      "difficulte": 3,
+      "tags": ["hachures", "lecture", "piege"]
+    },
+    {
+      "id": "4E-CH16-030",
+      "lecon": "Résoudre des problèmes",
+      "type": "formule",
+      "recto": "Par quoi commence obligatoirement la mise en équation d'un problème ?",
+      "verso": "Par le choix de l'inconnue, écrit noir sur blanc : « Je note $x$ le nombre cherché. » La traduction de l'énoncé vient ensuite.",
+      "difficulte": 1,
+      "tags": ["probleme", "inconnue"]
+    },
+    {
+      "id": "4E-CH16-031",
+      "lecon": "Résoudre des problèmes",
+      "type": "formule",
+      "recto": "Quels symboles traduisent « exactement », « au moins » et « au plus » dans un énoncé ?",
+      "verso": "« Exactement » donne $=$, « au moins » donne $\\ge$, « au plus » donne $\\le$. « Plus de » donne le symbole strict $>$.",
+      "difficulte": 2,
+      "tags": ["probleme", "traduction", "symboles"]
+    },
+    {
+      "id": "4E-CH16-032",
+      "lecon": "Résoudre des problèmes",
+      "type": "formule",
+      "recto": "Quelle quantité a-t-on intérêt à nommer $x$ dans un partage inégal ?",
+      "verso": "La plus petite part. Les autres parts s'expriment alors par des additions ou des multiplications, et non par des soustractions ou des divisions.",
+      "difficulte": 2,
+      "tags": ["probleme", "choix-inconnue"]
+    },
+    {
+      "id": "4E-CH16-033",
+      "lecon": "Résoudre des problèmes",
+      "type": "formule",
+      "recto": "Comment traduit-on « trois fois moins que $x$ » ?",
+      "verso": "Par $\\dfrac{x}{3}$, c'est-à-dire par une division. C'est « trois fois plus que $x$ » qui s'écrit $3x$.",
+      "difficulte": 3,
+      "tags": ["traduction", "piege"]
+    },
+    {
+      "id": "4E-CH16-034",
+      "lecon": "Résoudre des problèmes",
+      "type": "formule",
+      "recto": "Comment écrit-on trois entiers consécutifs à partir d'un entier $x$ ?",
+      "verso": "On écrit $x$, $x + 1$ et $x + 2$. Leur somme vaut $x + \\left(x + 1\\right) + \\left(x + 2\\right)$, soit $3x + 3$.",
+      "difficulte": 2,
+      "tags": ["traduction", "entiers-consecutifs"]
+    },
+    {
+      "id": "4E-CH16-035",
+      "lecon": "Résoudre des problèmes",
+      "type": "formule",
+      "recto": "Par quoi se termine la résolution d'un problème, une fois la valeur de $x$ trouvée ?",
+      "verso": "Par une phrase qui répond exactement à la question posée, avec l'unité, et par un contrôle du sens : un nombre d'objets est un entier positif, une longueur n'est jamais négative.",
+      "difficulte": 2,
+      "tags": ["probleme", "reponse", "controle"]
+    }
+  ]
+}

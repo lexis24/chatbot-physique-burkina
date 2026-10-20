@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Fiche de revision - 2nde C - Chapitre 7 : Fonctions circulaires</title>
+<style>
+/* ===================================================================
+   FICHE DE REVISION, Collection Hakili Lab, Edition 2026
+   Feuille de style autonome, format A4 pret a imprimer.
+   Bleu #005CB9 · Vert #49A145
+   =================================================================== */
+:root{
+  --bleu:#005CB9; --bleu-fonce:#00429A; --bleu-pale:#E8F1FB; --bleu-bord:#B7D2EE;
+  --vert:#49A145; --vert-fonce:#2F7A2C; --vert-pale:#EDF7EC; --vert-bord:#BCE0B9;
+  --gris:#4A4A4A; --gris-clair:#E4E4E4; --rouge:#B3261E;
+}
+@page{
+  size:A4; margin:15mm;
+  @bottom-center{
+    content:"Collection Hakili Lab, Edition 2026  ·  Fiche de revision  ·  " counter(page) "/" counter(pages);
+    font-family:"Segoe UI",Calibri,Arial,sans-serif; font-size:6.6pt; color:#8A8A8A;
+  }
+}
+*{box-sizing:border-box;}
+body{
+  margin:0; font-family:"Segoe UI",Calibri,Arial,sans-serif;
+  font-size:8.4pt; line-height:1.26; color:#1B1B1B;
+}
+p{margin:0 0 3pt;}
+ul{margin:0 0 3pt; padding-left:11pt;}
+li{margin:0 0 1.2pt;}
+b,strong{color:var(--bleu-fonce);}
+
+/* ------------------------------ ENTETE ---------------------------- */
+.entete{
+  display:flex; align-items:stretch; border:1.6pt solid var(--bleu);
+  border-radius:2.5pt; overflow:hidden; margin-bottom:6pt;
+}
+.entete .num{
+  background:var(--bleu); color:#fff; font-size:20pt; font-weight:700;
+  padding:0 8pt; display:flex; align-items:center; justify-content:center; min-width:34pt;
+}
+.entete .txt{padding:3.5pt 8pt; flex:1;}
+.entete .niveau{
+  font-size:7pt; font-weight:700; letter-spacing:.9pt; color:var(--vert-fonce);
+}
+.entete h1{margin:0; font-size:13.5pt; line-height:1.12; color:var(--bleu-fonce); font-weight:700;}
+.entete .sous{font-size:7pt; color:var(--gris); margin-top:1pt;}
+
+/* --------------------------- BANDEAUX ----------------------------- */
+.bandeau{
+  color:#fff; font-weight:700; font-size:9pt; letter-spacing:1pt;
+  padding:2.4pt 7pt; border-radius:2pt; margin:3pt 0 4pt; break-after:avoid; page-break-after:avoid;
+}
+.bandeau.bleu{background:var(--bleu);}
+.bandeau.vert{background:var(--vert);}
+
+/* --------------------------- COLONNES ----------------------------- */
+.cols{column-count:2; column-gap:7mm; column-fill:balance;}
+
+.cols.bal{column-fill:balance;}
+.bloc{margin-bottom:5pt;}
+.keep{break-inside:avoid; page-break-inside:avoid;}
+
+/* --------------------------- LECONS ------------------------------- */
+h2.lecon{
+  margin:0 0 3pt; font-size:8.6pt; font-weight:700; color:#fff; background:var(--bleu-fonce);
+  padding:1.8pt 5pt; border-radius:1.5pt; break-after:avoid; page-break-after:avoid;
+}
+h3.rub{
+  margin:3.5pt 0 1.5pt; font-size:8.2pt; font-weight:700; color:var(--vert-fonce);
+  border-bottom:.7pt solid var(--vert-bord); padding-bottom:.8pt;
+  break-after:avoid; page-break-after:avoid;
+}
+
+/* --------------------------- ENCADRES ----------------------------- */
+.form{
+  background:var(--bleu-pale); border:.8pt solid var(--bleu-bord); border-left:2.6pt solid var(--bleu);
+  border-radius:2pt; padding:2.4pt 5pt; margin:2.2pt 0 3.4pt;
+  break-inside:avoid; page-break-inside:avoid;
+}
+.form .t{
+  display:block; font-size:6.8pt; font-weight:700; letter-spacing:.6pt;
+  color:var(--bleu); margin-bottom:1.5pt;
+}
+.form .c{text-align:center; font-size:9.1pt; margin:1.6pt 0;}
+.note{background:var(--vert-pale); border-left:2.4pt solid var(--vert); padding:2.4pt 5pt; border-radius:1.5pt; margin:2.5pt 0 4pt; break-inside:avoid;}
+
+/* --------------------------- TABLEAUX ----------------------------- */
+table{width:100%; border-collapse:collapse; font-size:7.6pt; margin:2pt 0 4pt; break-inside:avoid;}
+th{background:var(--bleu); color:#fff; font-weight:700; text-align:left; padding:1.8pt 4pt; font-size:7.2pt;}
+td{border:.6pt solid var(--gris-clair); padding:1.8pt 4pt; vertical-align:top;}
+tr{break-inside:avoid;}
+table.var td{text-align:center; font-size:8pt;}
+table.var td.lab{text-align:left; font-weight:700; color:var(--bleu-fonce); background:var(--bleu-pale);}
+
+/* ----------------------------- PIEGES ----------------------------- */
+table.pieges th:first-child{width:44%;}
+table.pieges td:first-child{color:var(--rouge); background:#FDF1F0;}
+.x{font-weight:700;}
+.v{color:var(--vert-fonce); font-weight:700;}
+
+/* ---------------------------- RECAP ------------------------------- */
+ol.recap{margin:0; padding-left:0; list-style:none; counter-reset:r;}
+ol.recap li{
+  counter-increment:r; position:relative; padding-left:13pt; margin-bottom:1.8pt;
+  break-inside:avoid;
+}
+ol.recap li::before{
+  content:counter(r); position:absolute; left:0; top:.3pt;
+  width:10pt; height:10pt; border-radius:50%; background:var(--vert); color:#fff;
+  font-size:6.6pt; font-weight:700; text-align:center; line-height:10pt;
+}
+
+/* --------------------------- MATHS -------------------------------- */
+.m{font-family:Cambria,Georgia,"Times New Roman",serif;}
+i,var{font-family:Cambria,Georgia,"Times New Roman",serif; font-style:italic;}
+.op{font-family:Cambria,Georgia,"Times New Roman",serif; font-style:normal;}
+.f{display:inline-block; vertical-align:middle; text-align:center;
+   margin:0 .12em; line-height:1.06; font-family:Cambria,Georgia,"Times New Roman",serif;}
+.f>span{display:block; padding:0 .2em;}
+.f>span:first-child{border-bottom:.6pt solid currentColor; padding-bottom:.08em;}
+.f>span:last-child{padding-top:.04em;}
+.rad{border-top:.6pt solid currentColor; padding-top:.12em;}
+/* line-height:0 evite que l'exposant n'ecarte les lignes ; position:relative le
+   repositionne sans qu'il heurte la barre de fraction ni le trait du radical. */
+sup,sub{font-size:.68em; line-height:0; position:relative; vertical-align:baseline;}
+sup{top:-.42em;}
+sub{bottom:-.22em;}
+.pt{white-space:nowrap;}
+/* Les fleches n'ont qu'un glyphe atrophie dans la fonte serif : on les force
+   en sans-serif, ou elles sont franches meme a 8 pt. */
+.ar{font-family:"Segoe UI",Calibri,Arial,"DejaVu Sans",sans-serif; font-style:normal;}
+
+/* ------------------- PIEGES : blocs erreur / correction ------------- */
+.pg{font-size:8.1pt; border-left:2.4pt solid var(--rouge); background:#FDF1F0; border-radius:1.5pt;
+    padding:2pt 5pt; margin:0 0 2.8pt; break-inside:avoid; page-break-inside:avoid;}
+.pg .err{color:var(--rouge); font-weight:600;}
+.pg .cor{color:#1B1B1B; margin-top:.8pt;}
+.pg .cor b{color:var(--bleu-fonce);}
+.v{color:var(--vert-fonce); font-weight:700;}
+
+</style>
+</head>
+<body>
+<header class="entete">
+  <div class="num">7</div>
+  <div class="txt">
+    <div class="niveau">2NDE C &middot; MATHEMATIQUES</div>
+    <h1>Fonctions circulaires</h1>
+    <div class="sous">Leçon 1 : cercle trigonométrique, radian, cosinus et sinus &middot; Leçon 2 : relations entre angles associés &middot; Leçon 3 : les fonctions <i>x</i>&#8239;<span class="ar">&#8614;</span>&#8239;<span class="op">cos</span>&#8239;<i>x</i> et <i>x</i>&#8239;<span class="ar">&#8614;</span>&#8239;<span class="op">sin</span>&#8239;<i>x</i> &middot; Leçon 4 : équations <span class="op">cos</span>&#8239;<i>x</i>&#8239;=&#8239;<i>a</i> et <span class="op">sin</span>&#8239;<i>x</i>&#8239;=&#8239;<i>b</i></div>
+  </div>
+</header>
+
+<div class="bandeau bleu" style="margin-top:0">L'ESSENTIEL</div>
+<div class="cols">
+
+<!-- ================= LECON 1 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 1&nbsp;: Cercle trigonométrique, radian, cosinus et sinus</h2>
+<p>Le <b>radian</b> est l'unité d'angle telle que <span class="pt">360&#176;&#8239;=&#8239;2&#960; rad</span>. Un angle de 1 radian découpe, sur un cercle de <b>rayon 1</b>, un arc de <b>longueur 1</b>.</p></div>
+<div class="form">
+  <span class="t">CONVERSIONS DEGRES <span class="ar">&#8596;</span> RADIANS</span>
+  <div class="c m">180&#176;&#8239;=&#8239;&#960; &nbsp; 90&#176;&#8239;=&#8239;<span class="f"><span>&#960;</span><span>2</span></span> &nbsp; 60&#176;&#8239;=&#8239;<span class="f"><span>&#960;</span><span>3</span></span> &nbsp; 45&#176;&#8239;=&#8239;<span class="f"><span>&#960;</span><span>4</span></span> &nbsp; 30&#176;&#8239;=&#8239;<span class="f"><span>&#960;</span><span>6</span></span></div>
+  <div class="c m">degrés&#8239;<span class="ar">&#8594;</span>&#8239;radians : &#215;&#8239;<span class="f"><span>&#960;</span><span>180</span></span> &nbsp;&nbsp; radians&#8239;<span class="ar">&#8594;</span>&#8239;degrés : &#215;&#8239;<span class="f"><span>180</span><span>&#960;</span></span></div>
+</div>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Cercle trigonométrique et enroulement</h3>
+<ul>
+<li><b>Cercle trigonométrique</b> : cercle de <b>centre O</b> et de <b>rayon 1</b>, muni du <b>sens direct</b>, contraire à celui des aiguilles d'une montre. I(1&#8239;;&#8239;0) est le point de départ, J(0&#8239;;&#8239;1).</li>
+<li><b>Enroulement</b> : à tout réel <i>x</i> on associe le <b>point image</b> M, obtenu en parcourant <b>à partir de I</b> un arc de longueur |<i>x</i>|, dans le sens direct si <i>x</i> est positif, dans l'autre sens si <i>x</i> est négatif.</li>
+<li>Un réel a <b>un seul</b> point image ; un point du cercle est l'image d'une <b>infinité</b> de réels, qui diffèrent d'un nombre entier de tours, soit de 2<i>k</i>&#960; avec <span class="pt"><i>k</i>&#8239;&#8712;&#8239;&#8484;</span>.</li>
+</ul>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Cosinus et sinus d'un réel</h3>
+<p>M est le point image du réel <i>x</i> sur le cercle trigonométrique.</p>
+<div class="form">
+  <span class="t">DEFINITION</span>
+  <div class="c m"><span class="op">cos</span>&#8239;<i>x</i>&#8239;=&#8239;abscisse de M &nbsp;&nbsp; <span class="op">sin</span>&#8239;<i>x</i>&#8239;=&#8239;ordonnée de M</div>
+  <div class="c m">M(<span class="op">cos</span>&#8239;<i>x</i>&#8239;;&#8239;<span class="op">sin</span>&#8239;<i>x</i>)</div>
+</div>
+<p>Le <b>cosinus se lit horizontalement</b>, sur l'axe des abscisses ; le <b>sinus se lit verticalement</b>, sur l'axe des ordonnées.</p>
+<div class="form">
+  <span class="t">PROPRIETES FONDAMENTALES&nbsp;: pour tout réel <i>x</i></span>
+  <div class="c m">&#8722;1&#8239;&#8804;&#8239;<span class="op">cos</span>&#8239;<i>x</i>&#8239;&#8804;&#8239;1 &nbsp;&nbsp;&nbsp; &#8722;1&#8239;&#8804;&#8239;<span class="op">sin</span>&#8239;<i>x</i>&#8239;&#8804;&#8239;1</div>
+  <div class="c m"><span class="op">cos</span><sup>2</sup><i>x</i>&#8239;+&#8239;<span class="op">sin</span><sup>2</sup><i>x</i>&#8239;=&#8239;1 &nbsp;&nbsp;<span style="font-size:7.5pt">(identité fondamentale)</span></div>
+</div>
+<p><span class="op">cos</span><sup>2</sup><i>x</i> abrège (<span class="op">cos</span>&#8239;<i>x</i>)<sup>2</sup> : ce n'est pas <i>x</i> que l'on élève au carré.</p>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Signes selon le quadrant</h3>
+<p>Les deux axes découpent le cercle en quatre <b>quadrants</b>, numérotés dans le sens direct à partir de I ; le signe se <b>lit sur la figure</b>.</p>
+<table>
+<tr><th>Quadrant</th><th><i>x</i> entre</th><th><span class="op">cos</span>&#8239;<i>x</i></th><th><span class="op">sin</span>&#8239;<i>x</i></th></tr>
+<tr><td>1<sup>er</sup></td><td class="m">0 et <span class="f"><span>&#960;</span><span>2</span></span></td><td class="m">&#8239;+</td><td class="m">&#8239;+</td></tr>
+<tr><td>2<sup>e</sup></td><td class="m"><span class="f"><span>&#960;</span><span>2</span></span> et &#960;</td><td class="m">&#8239;&#8722;</td><td class="m">&#8239;+</td></tr>
+<tr><td>3<sup>e</sup></td><td class="m">&#960; et <span class="f"><span>3&#960;</span><span>2</span></span></td><td class="m">&#8239;&#8722;</td><td class="m">&#8239;&#8722;</td></tr>
+<tr><td>4<sup>e</sup></td><td class="m"><span class="f"><span>3&#960;</span><span>2</span></span> et 2&#960;</td><td class="m">&#8239;+</td><td class="m">&#8239;&#8722;</td></tr>
+</table>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Valeurs remarquables</h3>
+<table>
+<tr><th><i>x</i></th><th>0</th><th class="m"><span class="f"><span>&#960;</span><span>6</span></span></th><th class="m"><span class="f"><span>&#960;</span><span>4</span></span></th><th class="m"><span class="f"><span>&#960;</span><span>3</span></span></th><th class="m"><span class="f"><span>&#960;</span><span>2</span></span></th></tr>
+<tr><td class="m"><span class="op">cos</span>&#8239;<i>x</i></td><td class="m">1</td><td class="m"><span class="f"><span>&#8730;<span class="rad">3</span></span><span>2</span></span></td><td class="m"><span class="f"><span>&#8730;<span class="rad">2</span></span><span>2</span></span></td><td class="m"><span class="f"><span>1</span><span>2</span></span></td><td class="m">0</td></tr>
+<tr><td class="m"><span class="op">sin</span>&#8239;<i>x</i></td><td class="m">0</td><td class="m"><span class="f"><span>1</span><span>2</span></span></td><td class="m"><span class="f"><span>&#8730;<span class="rad">2</span></span><span>2</span></span></td><td class="m"><span class="f"><span>&#8730;<span class="rad">3</span></span><span>2</span></span></td><td class="m">1</td></tr>
+</table>
+<div class="note"><b>Reconstruire les sinus</b> : écrire 0, 1, 2, 3, 4, prendre la racine carrée, diviser par 2 ; les cosinus sont les mêmes, <b>en ordre inverse</b>.</div>
+</div>
+
+<!-- ================= LECON 2 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 2&nbsp;: Relations entre angles associés</h2>
+<p>Les relations ci-dessous valent pour tout réel <i>x</i> et tout entier relatif <i>k</i>. Chaque ligne se lit sur une <b>symétrie</b> du cercle : la coordonnée conservée donne la fonction qui garde son signe.</p></div>
+<table>
+<tr><th>Réel associé</th><th><span class="op">cos</span></th><th><span class="op">sin</span></th><th>Symétrie</th></tr>
+<tr><td class="m">&#8722;<i>x</i> <span style="font-size:7pt">(opposés)</span></td><td class="m"><span class="op">cos</span>&#8239;<i>x</i></td><td class="m">&#8722;<span class="op">sin</span>&#8239;<i>x</i></td><td>axe des abscisses</td></tr>
+<tr><td class="m">&#960;&#8239;&#8722;&#8239;<i>x</i> <span style="font-size:7pt">(supplém.)</span></td><td class="m">&#8722;<span class="op">cos</span>&#8239;<i>x</i></td><td class="m"><span class="op">sin</span>&#8239;<i>x</i></td><td>axe des ordonnées</td></tr>
+<tr><td class="m">&#960;&#8239;+&#8239;<i>x</i></td><td class="m">&#8722;<span class="op">cos</span>&#8239;<i>x</i></td><td class="m">&#8722;<span class="op">sin</span>&#8239;<i>x</i></td><td>centre O</td></tr>
+<tr><td class="m"><span class="f"><span>&#960;</span><span>2</span></span>&#8239;&#8722;&#8239;<i>x</i> <span style="font-size:7pt">(complém.)</span></td><td class="m"><span class="op">sin</span>&#8239;<i>x</i></td><td class="m"><span class="op">cos</span>&#8239;<i>x</i></td><td>droite <i>y</i>&#8239;=&#8239;<i>x</i> (1<sup>re</sup> bissectrice)</td></tr>
+<tr><td class="m"><span class="f"><span>&#960;</span><span>2</span></span>&#8239;+&#8239;<i>x</i></td><td class="m">&#8722;<span class="op">sin</span>&#8239;<i>x</i></td><td class="m"><span class="op">cos</span>&#8239;<i>x</i></td><td>quart de tour direct</td></tr>
+<tr><td class="m"><i>x</i>&#8239;+&#8239;2<i>k</i>&#960;</td><td class="m"><span class="op">cos</span>&#8239;<i>x</i></td><td class="m"><span class="op">sin</span>&#8239;<i>x</i></td><td>même point image</td></tr>
+</table>
+</div>
+
+<div class="bloc">
+<div class="note"><b>Seules les formes en <span class="f"><span>&#960;</span><span>2</span></span> échangent</b> cosinus et sinus ; dans les formes en &#8722;<i>x</i>, &#960;&#8239;&#8722;&#8239;<i>x</i> et &#960;&#8239;+&#8239;<i>x</i>, seuls les <b>signes</b> peuvent changer.</div>
+<h3 class="rub">Ajouter des tours entiers</h3>
+<div class="form">
+  <span class="t">PERIODICITE&nbsp;: <i>k</i>&#8239;&#8712;&#8239;&#8484;</span>
+  <div class="c m"><span class="op">cos</span>(<i>x</i>&#8239;+&#8239;2<i>k</i>&#960;)&#8239;=&#8239;<span class="op">cos</span>&#8239;<i>x</i> &nbsp;&nbsp; <span class="op">sin</span>(<i>x</i>&#8239;+&#8239;2<i>k</i>&#960;)&#8239;=&#8239;<span class="op">sin</span>&#8239;<i>x</i></div>
+</div>
+<p>Ajouter 2<i>k</i>&#960;, c'est faire <i>k</i> <b>tours complets</b> : le point image ne bouge pas. Devant un réel quelconque, on <b>enlève d'abord les tours</b>, puis on reconnaît l'une des cinq formes du tableau. Un multiple <b>pair</b> de &#960; vaut un nombre entier de tours, un multiple <b>impair</b> laisse un &#960; à traiter.</p>
+</div>
+
+<!-- ================= LECON 3 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 3&nbsp;: Les fonctions <i>x</i>&#8239;<span class="ar">&#8614;</span>&#8239;cos <i>x</i> et <i>x</i>&#8239;<span class="ar">&#8614;</span>&#8239;sin <i>x</i></h2>
+<p>Les deux fonctions sont définies sur <b>&#8477;</b>, à valeurs dans <span class="pt">[&#8722;1&#8239;;&#8239;1]</span>, et <b>périodiques de période 2&#960;</b>.</p></div>
+<h3 class="rub">La fonction cosinus</h3>
+<ul>
+<li><b>Paire</b> : <span class="pt"><span class="op">cos</span>(&#8722;<i>x</i>)&#8239;=&#8239;<span class="op">cos</span>&#8239;<i>x</i></span> ; courbe symétrique par rapport à l'<b>axe des ordonnées</b>.</li>
+<li><b>Décroissante</b> sur <span class="pt">[0&#8239;;&#8239;&#960;]</span>, de 1 à &#8722;1 ; <b>croissante</b> sur <span class="pt">[&#960;&#8239;;&#8239;2&#960;]</span>, de &#8722;1 à 1.</li>
+<li>Maximum 1 atteint en <i>x</i>&#8239;=&#8239;2<i>k</i>&#960; ; minimum &#8722;1 en <span class="pt"><i>x</i>&#8239;=&#8239;&#960;&#8239;+&#8239;2<i>k</i>&#960;</span>. Sa courbe est la <b>cosinusoïde</b>.</li>
+</ul>
+<table class="var">
+<tr><td class="lab"><i>x</i></td><td>0</td><td></td><td class="m">&#960;</td><td></td><td class="m">2&#960;</td></tr>
+<tr><td class="lab"><span class="op">cos</span>&#8239;<i>x</i></td><td>1</td><td><span class="ar">&#8600;</span></td><td>&#8722;1</td><td><span class="ar">&#8599;</span></td><td>1</td></tr>
+</table>
+</div>
+
+<div class="bloc">
+<h3 class="rub">La fonction sinus</h3>
+<ul>
+<li><b>Impaire</b> : <span class="pt"><span class="op">sin</span>(&#8722;<i>x</i>)&#8239;=&#8239;&#8722;<span class="op">sin</span>&#8239;<i>x</i></span> ; courbe symétrique par rapport à l'<b>origine O</b>.</li>
+<li><b>Croissante</b> sur <span class="pt">[&#8722;<span class="f"><span>&#960;</span><span>2</span></span>&#8239;;&#8239;<span class="f"><span>&#960;</span><span>2</span></span>]</span>, de &#8722;1 à 1 ; <b>décroissante</b> sur <span class="pt">[<span class="f"><span>&#960;</span><span>2</span></span>&#8239;;&#8239;<span class="f"><span>3&#960;</span><span>2</span></span>]</span>, de 1 à &#8722;1. Sa courbe est la <b>sinusoïde</b>.</li>
+</ul>
+<table class="var">
+<tr><td class="lab"><i>x</i></td><td class="m">&#8722;<span class="f"><span>&#960;</span><span>2</span></span></td><td></td><td class="m"><span class="f"><span>&#960;</span><span>2</span></span></td><td></td><td class="m"><span class="f"><span>3&#960;</span><span>2</span></span></td></tr>
+<tr><td class="lab"><span class="op">sin</span>&#8239;<i>x</i></td><td>&#8722;1</td><td><span class="ar">&#8599;</span></td><td>1</td><td><span class="ar">&#8600;</span></td><td>&#8722;1</td></tr>
+</table>
+<p>Les deux courbes ont la <b>même forme</b> : <span class="pt"><span class="op">sin</span>&#8239;<i>x</i>&#8239;=&#8239;<span class="op">cos</span>(<span class="f"><span>&#960;</span><span>2</span></span>&#8239;&#8722;&#8239;<i>x</i>)</span>, donc un <b>décalage horizontal de <span class="f"><span>&#960;</span><span>2</span></span></b>. En <i>x</i>&#8239;=&#8239;0, la cosinusoïde est en haut, au point (0&#8239;;&#8239;1) ; la sinusoïde <b>passe par l'origine</b>.</p>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Reconnaître une période</h3>
+<div class="form">
+  <span class="t">DEFINITION&nbsp;: <i>T</i>&#8239;&gt;&#8239;0 est une période de <i>f</i></span>
+  <div class="c m"><i>f</i>(<i>x</i>&#8239;+&#8239;<i>T</i>)&#8239;=&#8239;<i>f</i>(<i>x</i>) &nbsp;&nbsp;pour tout réel <i>x</i></div>
+</div>
+<ul>
+<li>Pour <b>prouver</b> que <i>T</i> est une période, on <b>calcule</b> <i>f</i>(<i>x</i>&#8239;+&#8239;<i>T</i>) et l'on montre que le résultat vaut <i>f</i>(<i>x</i>), en faisant apparaître un multiple de 2&#960; dans le cosinus ou le sinus.</li>
+<li><span class="op">cos</span> et <span class="op">sin</span> ont pour périodes 2&#960;, 4&#960;, 6&#960; et tout multiple de 2&#960; ; la <b>plus petite</b>, 2&#960;, est appelée <b>la</b> période.</li>
+<li>La <b>parité</b> se prouve de même, par le calcul de <i>f</i>(&#8722;<i>x</i>) : un dessin suggère la symétrie, seul le calcul l'établit.</li>
+</ul>
+</div>
+
+<!-- ================= LECON 4 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 4&nbsp;: Equations cos <i>x</i> = <i>a</i> et sin <i>x</i> = <i>b</i></h2>
+<p>Chaque équation n'a de solution que si le nombre donné appartient à <span class="pt">[&#8722;1&#8239;;&#8239;1]</span> ; sinon, il n'y a <b>aucune</b> solution.</p></div>
+<div class="form">
+  <span class="t">EQUATION cos <i>x</i> = <i>a</i>, avec &#8722;1&#8239;&#8804;&#8239;<i>a</i>&#8239;&#8804;&#8239;1</span>
+  <div class="c m">on cherche &#945; tel que <span class="op">cos</span>&#8239;&#945;&#8239;=&#8239;<i>a</i>, puis</div>
+  <div class="c m"><i>x</i>&#8239;=&#8239;&#945;&#8239;+&#8239;2<i>k</i>&#960; &nbsp;<b>ou</b>&nbsp; <i>x</i>&#8239;=&#8239;&#8722;&#945;&#8239;+&#8239;2<i>k</i>&#960;, &nbsp;<i>k</i>&#8239;&#8712;&#8239;&#8484;</div>
+</div>
+<div class="form">
+  <span class="t">EQUATION sin <i>x</i> = <i>b</i>, avec &#8722;1&#8239;&#8804;&#8239;<i>b</i>&#8239;&#8804;&#8239;1</span>
+  <div class="c m">on cherche &#946; tel que <span class="op">sin</span>&#8239;&#946;&#8239;=&#8239;<i>b</i>, puis</div>
+  <div class="c m"><i>x</i>&#8239;=&#8239;&#946;&#8239;+&#8239;2<i>k</i>&#960; &nbsp;<b>ou</b>&nbsp; <i>x</i>&#8239;=&#8239;&#960;&#8239;&#8722;&#8239;&#946;&#8239;+&#8239;2<i>k</i>&#960;, &nbsp;<i>k</i>&#8239;&#8712;&#8239;&#8484;</div>
+</div>
+<ul>
+<li>Pour <span class="op">cos</span>&#8239;<i>x</i>&#8239;=&#8239;<i>a</i> : droite <b>verticale</b> d'équation <i>x</i>&#8239;=&#8239;<i>a</i> ; les deux points images sont symétriques par rapport à l'<b>axe des abscisses</b>.</li>
+<li>Pour <span class="op">sin</span>&#8239;<i>x</i>&#8239;=&#8239;<i>b</i> : droite <b>horizontale</b> ; les deux points images sont symétriques par rapport à l'<b>axe des ordonnées</b>.</li>
+</ul>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Cas particuliers</h3>
+<table>
+<tr><th>Equation</th><th>Solutions</th><th>Equation</th><th>Solutions</th></tr>
+<tr><td class="m"><span class="op">cos</span>&#8239;<i>x</i>&#8239;=&#8239;1</td><td class="m"><i>x</i>&#8239;=&#8239;2<i>k</i>&#960;</td><td class="m"><span class="op">sin</span>&#8239;<i>x</i>&#8239;=&#8239;1</td><td class="m"><i>x</i>&#8239;=&#8239;<span class="f"><span>&#960;</span><span>2</span></span>&#8239;+&#8239;2<i>k</i>&#960;</td></tr>
+<tr><td class="m"><span class="op">cos</span>&#8239;<i>x</i>&#8239;=&#8239;&#8722;1</td><td class="m"><i>x</i>&#8239;=&#8239;&#960;&#8239;+&#8239;2<i>k</i>&#960;</td><td class="m"><span class="op">sin</span>&#8239;<i>x</i>&#8239;=&#8239;&#8722;1</td><td class="m"><i>x</i>&#8239;=&#8239;&#8722;<span class="f"><span>&#960;</span><span>2</span></span>&#8239;+&#8239;2<i>k</i>&#960;</td></tr>
+<tr><td class="m"><span class="op">cos</span>&#8239;<i>x</i>&#8239;=&#8239;0</td><td class="m"><i>x</i>&#8239;=&#8239;<span class="f"><span>&#960;</span><span>2</span></span>&#8239;+&#8239;<i>k</i>&#960;</td><td class="m"><span class="op">sin</span>&#8239;<i>x</i>&#8239;=&#8239;0</td><td class="m"><i>x</i>&#8239;=&#8239;<i>k</i>&#960;</td></tr>
+</table>
+<p><i>k</i> est un entier relatif quelconque. Pour 1 et &#8722;1, la droite est <b>tangente</b> au cercle : les deux familles n'en font plus qu'une. Pour 0, les deux points sont diamétralement opposés, d'où le pas <b><i>k</i>&#960;</b> au lieu de 2<i>k</i>&#960;.</p>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Angle orienté et mesure principale</h3>
+<ul>
+<li>Deux vecteurs non nuls <span style="border-top:.6pt solid;padding-top:.5pt"><i>u</i></span> et <span style="border-top:.6pt solid;padding-top:.5pt"><i>v</i></span> définissent un <b>angle orienté</b>, noté (<span style="border-top:.6pt solid;padding-top:.5pt"><i>u</i></span>,&#8239;<span style="border-top:.6pt solid;padding-top:.5pt"><i>v</i></span>) et lu <b>du premier vecteur vers le second</b> ; sa mesure en radians est comptée positivement dans le <b>sens direct</b>.</li>
+<li>Si &#952; est une mesure de l'angle, alors <b>toutes</b> ses mesures sont les réels <span class="pt">&#952;&#8239;+&#8239;2<i>k</i>&#960;</span>, <span class="pt"><i>k</i>&#8239;&#8712;&#8239;&#8484;</span> : deux mesures diffèrent d'un nombre entier de tours.</li>
+<li><b>Mesure principale</b> : l'unique mesure appartenant à <span class="pt">]&#8722;&#960;&#8239;;&#8239;&#960;]</span>, borne de gauche <b>exclue</b>, borne de droite <b>incluse</b>. On l'obtient en retranchant ou en ajoutant des tours complets.</li>
+</ul>
+</div>
+
+</div>
+
+<div class="bandeau vert">PIEGES ET ERREURS FREQUENTES</div>
+<div class="cols">
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> <span class="op">sin</span>&#8239;0&#8239;=&#8239;1 &nbsp;&middot;&nbsp; cosinus et sinus échangés</div><div class="cor"><span class="v">&#10003;</span> Le cosinus est l'<b>abscisse</b>, le sinus l'<b>ordonnée</b>. Au point de départ I(1&#8239;;&#8239;0) : <span class="op">cos</span>&#8239;0&#8239;=&#8239;1 et <span class="op">sin</span>&#8239;0&#8239;=&#8239;0. Repère : l'<b>a</b>bscisse va avec le <b>c</b>osinus (a avant o, c avant s) ; le <b>c</b>osinus est <b>c</b>ouché, le <b>s</b>inus est <b>s</b>ur pied.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> <span class="op">cos</span>&#8239;<i>x</i>&#8239;=&#8239;1,5 &nbsp;&middot;&nbsp; « <span class="op">cos</span>&#8239;<i>x</i>&#8239;=&#8239;2 a une solution » &nbsp;&middot;&nbsp; <span class="op">cos</span><sup>2</sup><i>x</i> pris pour <span class="op">cos</span>&#8239;<i>x</i><sup>2</sup></div><div class="cor"><span class="v">&#10003;</span> Le point image ne quitte pas le cercle de rayon 1 : <span class="pt">&#8722;1&#8239;&#8804;&#8239;<span class="op">cos</span>&#8239;<i>x</i>&#8239;&#8804;&#8239;1</span> et <span class="pt">&#8722;1&#8239;&#8804;&#8239;<span class="op">sin</span>&#8239;<i>x</i>&#8239;&#8804;&#8239;1</span> pour tout réel <i>x</i> : l'équation <span class="op">cos</span>&#8239;<i>x</i>&#8239;=&#8239;2 n'a <b>aucune</b> solution. Et <span class="op">cos</span><sup>2</sup><i>x</i>&#8239;=&#8239;(<span class="op">cos</span>&#8239;<i>x</i>)<sup>2</sup>, à distinguer de <span class="op">cos</span>(<i>x</i><sup>2</sup>).</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> <span class="op">cos</span><sup>2</sup><i>x</i>&#8239;+&#8239;<span class="op">sin</span><sup>2</sup><i>x</i>&#8239;=&#8239;2</div><div class="cor"><span class="v">&#10003;</span> L'identité fondamentale vaut <b>1</b>. Elle sert à <b>contrôler</b> un couple (<span class="op">cos</span>&#8239;<i>x</i>&#8239;=&#8239;<span class="f"><span>1</span><span>2</span></span> et <span class="op">sin</span>&#8239;<i>x</i>&#8239;=&#8239;<span class="f"><span>1</span><span>2</span></span> donnent <span class="f"><span>1</span><span>2</span></span> et non 1, donc c'est faux) et à <b>calculer</b> l'un des deux quand on connaît l'autre.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> 180&#176;&#8239;=&#8239;<span class="f"><span>&#960;</span><span>2</span></span> rad &nbsp;&middot;&nbsp; un angle noté « 60 » pour 60 degrés</div><div class="cor"><span class="v">&#10003;</span> <span class="pt">180&#176;&#8239;=&#8239;&#960; rad</span> : c'est 90&#176; qui vaut <span class="f"><span>&#960;</span><span>2</span></span>. Un réel écrit sans unité est un nombre de <b>radians</b> : 60 vaut près de dix tours, alors que 60&#176;&#8239;=&#8239;<span class="f"><span>&#960;</span><span>3</span></span>.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> <span class="op">cos</span>(&#960;&#8239;&#8722;&#8239;<i>x</i>)&#8239;=&#8239;<span class="op">cos</span>&#8239;<i>x</i> &nbsp;&middot;&nbsp; <span class="op">sin</span>(&#960;&#8239;&#8722;&#8239;<i>x</i>)&#8239;=&#8239;&#8722;<span class="op">sin</span>&#8239;<i>x</i></div><div class="cor"><span class="v">&#10003;</span> La symétrie par rapport à l'axe des ordonnées change l'<b>abscisse</b> et conserve l'ordonnée : <span class="pt"><span class="op">cos</span>(&#960;&#8239;&#8722;&#8239;<i>x</i>)&#8239;=&#8239;&#8722;<span class="op">cos</span>&#8239;<i>x</i></span> et <span class="pt"><span class="op">sin</span>(&#960;&#8239;&#8722;&#8239;<i>x</i>)&#8239;=&#8239;<span class="op">sin</span>&#8239;<i>x</i></span>. C'est <span class="op">sin</span>(&#960;&#8239;+&#8239;<i>x</i>) qui vaut &#8722;<span class="op">sin</span>&#8239;<i>x</i>. Un dessin de dix secondes départage les deux.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> <span class="op">cos</span>(<span class="f"><span>&#960;</span><span>2</span></span>&#8239;&#8722;&#8239;<i>x</i>)&#8239;=&#8239;<span class="op">cos</span>&#8239;<i>x</i></div><div class="cor"><span class="v">&#10003;</span> Double faute : dans les formes en <span class="f"><span>&#960;</span><span>2</span></span>, les deux fonctions <b>s'échangent</b>, car la symétrie par rapport à la droite <i>y</i>&#8239;=&#8239;<i>x</i> échange abscisse et ordonnée. Donc <span class="pt"><span class="op">cos</span>(<span class="f"><span>&#960;</span><span>2</span></span>&#8239;&#8722;&#8239;<i>x</i>)&#8239;=&#8239;<span class="op">sin</span>&#8239;<i>x</i></span> et <span class="pt"><span class="op">sin</span>(<span class="f"><span>&#960;</span><span>2</span></span>&#8239;&#8722;&#8239;<i>x</i>)&#8239;=&#8239;<span class="op">cos</span>&#8239;<i>x</i></span>.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> « <span class="op">cos</span> est périodique de période 2&#960;, donc elle n'est définie que sur <span class="pt">[0&#8239;;&#8239;2&#960;]</span> » &nbsp;&middot;&nbsp; parité et périodicité confondues</div><div class="cor"><span class="v">&#10003;</span> <span class="op">cos</span> est définie sur <b>&#8477;</b> tout entier et sa courbe se prolonge indéfiniment : la période décrit la <b>répétition du motif</b>, pas l'ensemble de définition. Les deux propriétés sont <b>indépendantes</b> : <i>x</i>&#8239;<span class="ar">&#8614;</span>&#8239;<i>x</i><sup>2</sup> est paire sans être périodique.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> <span class="op">cos</span>&#8239;<i>x</i>&#8239;=&#8239;<span class="f"><span>1</span><span>2</span></span> donc <i>x</i>&#8239;=&#8239;<span class="f"><span>&#960;</span><span>3</span></span> &nbsp;&middot;&nbsp; pour <span class="op">sin</span>&#8239;<i>x</i>&#8239;=&#8239;<i>b</i> : <i>x</i>&#8239;=&#8239;&#8722;&#946;&#8239;+&#8239;2<i>k</i>&#960;</div><div class="cor"><span class="v">&#10003;</span> On oublie la <b>seconde famille</b> et le <b>+&#8239;2<i>k</i>&#960;</b> : <span class="pt"><i>x</i>&#8239;=&#8239;<span class="f"><span>&#960;</span><span>3</span></span>&#8239;+&#8239;2<i>k</i>&#960;</span> <b>ou</b> <span class="pt"><i>x</i>&#8239;=&#8239;&#8722;<span class="f"><span>&#960;</span><span>3</span></span>&#8239;+&#8239;2<i>k</i>&#960;</span>, <span class="pt"><i>k</i>&#8239;&#8712;&#8239;&#8484;</span>. Cette seconde famille est l'<b>opposé</b> &#8722;&#945; pour le cosinus, mais le <b>supplémentaire</b> &#960;&#8239;&#8722;&#8239;&#946; pour le sinus.</div></div>
+
+</div>
+
+<div class="bandeau bleu">A SAVOIR PAR COEUR AVANT LE DEVOIR</div>
+<div class="cols">
+<ol class="recap">
+<li><span class="pt">180&#176;&#8239;=&#8239;&#960; rad</span> ; degrés&#8239;<span class="ar">&#8594;</span>&#8239;radians : &#215;&#8239;<span class="f"><span>&#960;</span><span>180</span></span>, radians&#8239;<span class="ar">&#8594;</span>&#8239;degrés : &#215;&#8239;<span class="f"><span>180</span><span>&#960;</span></span>. Cercle trigonométrique : centre O, rayon 1, sens direct à partir de I(1&#8239;;&#8239;0).</li>
+<li><span class="op">cos</span>&#8239;<i>x</i> est l'<b>abscisse</b> du point image M, <span class="op">sin</span>&#8239;<i>x</i> son <b>ordonnée</b> : M(<span class="op">cos</span>&#8239;<i>x</i>&#8239;;&#8239;<span class="op">sin</span>&#8239;<i>x</i>). Le signe se lit sur le <b>quadrant</b>.</li>
+<li><span class="pt">&#8722;1&#8239;&#8804;&#8239;<span class="op">cos</span>&#8239;<i>x</i>&#8239;&#8804;&#8239;1</span>, <span class="pt">&#8722;1&#8239;&#8804;&#8239;<span class="op">sin</span>&#8239;<i>x</i>&#8239;&#8804;&#8239;1</span> et <span class="pt"><span class="op">cos</span><sup>2</sup><i>x</i>&#8239;+&#8239;<span class="op">sin</span><sup>2</sup><i>x</i>&#8239;=&#8239;1</span>, pour tout réel <i>x</i>.</li>
+<li>Valeurs remarquables : pour 0, <span class="f"><span>&#960;</span><span>6</span></span>, <span class="f"><span>&#960;</span><span>4</span></span>, <span class="f"><span>&#960;</span><span>3</span></span>, <span class="f"><span>&#960;</span><span>2</span></span>, le sinus vaut 0, <span class="f"><span>1</span><span>2</span></span>, <span class="f"><span>&#8730;<span class="rad">2</span></span><span>2</span></span>, <span class="f"><span>&#8730;<span class="rad">3</span></span><span>2</span></span>, 1 ; le cosinus donne les mêmes valeurs <b>en ordre inverse</b>.</li>
+<li>Angles associés : <span class="pt"><span class="op">cos</span>(&#8722;<i>x</i>)&#8239;=&#8239;<span class="op">cos</span>&#8239;<i>x</i></span>, <span class="pt"><span class="op">sin</span>(&#8722;<i>x</i>)&#8239;=&#8239;&#8722;<span class="op">sin</span>&#8239;<i>x</i></span> ; <span class="pt"><span class="op">cos</span>(&#960;&#8239;&#8722;&#8239;<i>x</i>)&#8239;=&#8239;&#8722;<span class="op">cos</span>&#8239;<i>x</i></span>, <span class="pt"><span class="op">sin</span>(&#960;&#8239;&#8722;&#8239;<i>x</i>)&#8239;=&#8239;<span class="op">sin</span>&#8239;<i>x</i></span> ; <span class="pt"><span class="op">cos</span>(&#960;&#8239;+&#8239;<i>x</i>)&#8239;=&#8239;&#8722;<span class="op">cos</span>&#8239;<i>x</i></span>, <span class="pt"><span class="op">sin</span>(&#960;&#8239;+&#8239;<i>x</i>)&#8239;=&#8239;&#8722;<span class="op">sin</span>&#8239;<i>x</i></span> ; <span class="pt"><span class="op">cos</span>(<span class="f"><span>&#960;</span><span>2</span></span>&#8239;&#8722;&#8239;<i>x</i>)&#8239;=&#8239;<span class="op">sin</span>&#8239;<i>x</i></span>, <span class="pt"><span class="op">sin</span>(<span class="f"><span>&#960;</span><span>2</span></span>&#8239;&#8722;&#8239;<i>x</i>)&#8239;=&#8239;<span class="op">cos</span>&#8239;<i>x</i></span>.</li>
+<li><span class="pt"><span class="op">cos</span>(<i>x</i>&#8239;+&#8239;2<i>k</i>&#960;)&#8239;=&#8239;<span class="op">cos</span>&#8239;<i>x</i></span> et <span class="pt"><span class="op">sin</span>(<i>x</i>&#8239;+&#8239;2<i>k</i>&#960;)&#8239;=&#8239;<span class="op">sin</span>&#8239;<i>x</i></span> : devant un grand réel, <b>enlever d'abord les tours complets</b>.</li>
+<li><span class="op">cos</span> est <b>paire</b>, <span class="op">sin</span> est <b>impaire</b> ; toutes deux définies sur &#8477;, à valeurs dans <span class="pt">[&#8722;1&#8239;;&#8239;1]</span>, <b>périodiques de période 2&#960;</b>. <span class="op">cos</span> décroît sur <span class="pt">[0&#8239;;&#8239;&#960;]</span>, <span class="op">sin</span> croît sur <span class="pt">[&#8722;<span class="f"><span>&#960;</span><span>2</span></span>&#8239;;&#8239;<span class="f"><span>&#960;</span><span>2</span></span>]</span>.</li>
+<li>Equations, si le nombre est dans <span class="pt">[&#8722;1&#8239;;&#8239;1]</span> et <span class="pt"><i>k</i>&#8239;&#8712;&#8239;&#8484;</span> : <span class="pt"><span class="op">cos</span>&#8239;<i>x</i>&#8239;=&#8239;<i>a</i>&#8239;<span class="ar">&#8594;</span>&#8239;<i>x</i>&#8239;=&#8239;&#945;&#8239;+&#8239;2<i>k</i>&#960;</span> ou <span class="pt">&#8722;&#945;&#8239;+&#8239;2<i>k</i>&#960;</span> ; <span class="pt"><span class="op">sin</span>&#8239;<i>x</i>&#8239;=&#8239;<i>b</i>&#8239;<span class="ar">&#8594;</span>&#8239;<i>x</i>&#8239;=&#8239;&#946;&#8239;+&#8239;2<i>k</i>&#960;</span> ou <span class="pt">&#960;&#8239;&#8722;&#8239;&#946;&#8239;+&#8239;2<i>k</i>&#960;</span>. Mesure principale : unique mesure dans <span class="pt">]&#8722;&#960;&#8239;;&#8239;&#960;]</span>.</li>
+</ol>
+</div>
+
+</body>
+</html>

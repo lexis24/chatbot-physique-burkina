@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Fiche de revision - 5eme - Chapitre 11 : Puissances entieres d'un nombre</title>
+<style>
+/* ===================================================================
+   FICHE DE REVISION, Collection Hakili Lab, Edition 2026
+   Feuille de style autonome, format A4 pret a imprimer.
+   Bleu #005CB9 · Vert #49A145
+   =================================================================== */
+:root{
+  --bleu:#005CB9; --bleu-fonce:#00429A; --bleu-pale:#E8F1FB; --bleu-bord:#B7D2EE;
+  --vert:#49A145; --vert-fonce:#2F7A2C; --vert-pale:#EDF7EC; --vert-bord:#BCE0B9;
+  --gris:#4A4A4A; --gris-clair:#E4E4E4; --rouge:#B3261E;
+}
+@page{
+  size:A4; margin:15mm;
+  @bottom-center{
+    content:"Collection Hakili Lab, Edition 2026  ·  Fiche de revision  ·  " counter(page) "/" counter(pages);
+    font-family:"Segoe UI",Calibri,Arial,sans-serif; font-size:6.6pt; color:#8A8A8A;
+  }
+}
+*{box-sizing:border-box;}
+body{
+  margin:0; font-family:"Segoe UI",Calibri,Arial,sans-serif;
+  font-size:8.4pt; line-height:1.26; color:#1B1B1B;
+}
+p{margin:0 0 3pt;}
+ul{margin:0 0 3pt; padding-left:11pt;}
+li{margin:0 0 1.2pt;}
+b,strong{color:var(--bleu-fonce);}
+
+/* ------------------------------ ENTETE ---------------------------- */
+.entete{
+  display:flex; align-items:stretch; border:1.6pt solid var(--bleu);
+  border-radius:2.5pt; overflow:hidden; margin-bottom:6pt;
+}
+.entete .num{
+  background:var(--bleu); color:#fff; font-size:20pt; font-weight:700;
+  padding:0 8pt; display:flex; align-items:center; justify-content:center; min-width:34pt;
+}
+.entete .txt{padding:3.5pt 8pt; flex:1;}
+.entete .niveau{
+  font-size:7pt; font-weight:700; letter-spacing:.9pt; color:var(--vert-fonce);
+}
+.entete h1{margin:0; font-size:13.5pt; line-height:1.12; color:var(--bleu-fonce); font-weight:700;}
+.entete .sous{font-size:7pt; color:var(--gris); margin-top:1pt;}
+
+/* --------------------------- BANDEAUX ----------------------------- */
+.bandeau{
+  color:#fff; font-weight:700; font-size:9pt; letter-spacing:1pt;
+  padding:2.4pt 7pt; border-radius:2pt; margin:3pt 0 4pt; break-after:avoid; page-break-after:avoid;
+}
+.bandeau.bleu{background:var(--bleu);}
+.bandeau.vert{background:var(--vert);}
+
+/* --------------------------- COLONNES ----------------------------- */
+.cols{column-count:2; column-gap:7mm; column-fill:balance;}
+
+.cols.bal{column-fill:balance;}
+.bloc{margin-bottom:5pt;}
+.keep{break-inside:avoid; page-break-inside:avoid;}
+
+/* --------------------------- LECONS ------------------------------- */
+h2.lecon{
+  margin:0 0 3pt; font-size:8.6pt; font-weight:700; color:#fff; background:var(--bleu-fonce);
+  padding:1.8pt 5pt; border-radius:1.5pt; break-after:avoid; page-break-after:avoid;
+}
+h3.rub{
+  margin:3.5pt 0 1.5pt; font-size:8.2pt; font-weight:700; color:var(--vert-fonce);
+  border-bottom:.7pt solid var(--vert-bord); padding-bottom:.8pt;
+  break-after:avoid; page-break-after:avoid;
+}
+
+/* --------------------------- ENCADRES ----------------------------- */
+.form{
+  background:var(--bleu-pale); border:.8pt solid var(--bleu-bord); border-left:2.6pt solid var(--bleu);
+  border-radius:2pt; padding:2.4pt 5pt; margin:2.2pt 0 3.4pt;
+  break-inside:avoid; page-break-inside:avoid;
+}
+.form .t{
+  display:block; font-size:6.8pt; font-weight:700; letter-spacing:.6pt;
+  color:var(--bleu); margin-bottom:1.5pt;
+}
+.form .c{text-align:center; font-size:9.1pt; margin:1.6pt 0;}
+.note{background:var(--vert-pale); border-left:2.4pt solid var(--vert); padding:2.4pt 5pt; border-radius:1.5pt; margin:2.5pt 0 4pt; break-inside:avoid;}
+
+/* --------------------------- TABLEAUX ----------------------------- */
+table{width:100%; border-collapse:collapse; font-size:7.6pt; margin:2pt 0 4pt; break-inside:avoid;}
+th{background:var(--bleu); color:#fff; font-weight:700; text-align:left; padding:1.8pt 4pt; font-size:7.2pt;}
+td{border:.6pt solid var(--gris-clair); padding:1.8pt 4pt; vertical-align:top;}
+tr{break-inside:avoid;}
+table.var td{text-align:center; font-size:8pt;}
+table.var td.lab{text-align:left; font-weight:700; color:var(--bleu-fonce); background:var(--bleu-pale);}
+
+/* ----------------------------- PIEGES ----------------------------- */
+table.pieges th:first-child{width:44%;}
+table.pieges td:first-child{color:var(--rouge); background:#FDF1F0;}
+.x{font-weight:700;}
+.v{color:var(--vert-fonce); font-weight:700;}
+
+/* ---------------------------- RECAP ------------------------------- */
+ol.recap{margin:0; padding-left:0; list-style:none; counter-reset:r;}
+ol.recap li{
+  counter-increment:r; position:relative; padding-left:13pt; margin-bottom:1.8pt;
+  break-inside:avoid;
+}
+ol.recap li::before{
+  content:counter(r); position:absolute; left:0; top:.3pt;
+  width:10pt; height:10pt; border-radius:50%; background:var(--vert); color:#fff;
+  font-size:6.6pt; font-weight:700; text-align:center; line-height:10pt;
+}
+
+/* --------------------------- MATHS -------------------------------- */
+.m{font-family:Cambria,Georgia,"Times New Roman",serif;}
+i,var{font-family:Cambria,Georgia,"Times New Roman",serif; font-style:italic;}
+.op{font-family:Cambria,Georgia,"Times New Roman",serif; font-style:normal;}
+.f{display:inline-block; vertical-align:middle; text-align:center;
+   margin:0 .12em; line-height:1.06; font-family:Cambria,Georgia,"Times New Roman",serif;}
+.f>span{display:block; padding:0 .2em;}
+.f>span:first-child{border-bottom:.6pt solid currentColor; padding-bottom:.08em;}
+.f>span:last-child{padding-top:.04em;}
+.rad{border-top:.6pt solid currentColor; padding-top:.12em;}
+/* line-height:0 evite que l'exposant n'ecarte les lignes ; position:relative le
+   repositionne sans qu'il heurte la barre de fraction ni le trait du radical. */
+sup,sub{font-size:.68em; line-height:0; position:relative; vertical-align:baseline;}
+sup{top:-.42em;}
+sub{bottom:-.22em;}
+.pt{white-space:nowrap;}
+/* Les fleches n'ont qu'un glyphe atrophie dans la fonte serif : on les force
+   en sans-serif, ou elles sont franches meme a 8 pt. */
+.ar{font-family:"Segoe UI",Calibri,Arial,"DejaVu Sans",sans-serif; font-style:normal;}
+
+/* ------------------- PIEGES : blocs erreur / correction ------------- */
+.pg{font-size:8.1pt; border-left:2.4pt solid var(--rouge); background:#FDF1F0; border-radius:1.5pt;
+    padding:2pt 5pt; margin:0 0 2.8pt; break-inside:avoid; page-break-inside:avoid;}
+.pg .err{color:var(--rouge); font-weight:600;}
+.pg .cor{color:#1B1B1B; margin-top:.8pt;}
+.pg .cor b{color:var(--bleu-fonce);}
+.v{color:var(--vert-fonce); font-weight:700;}
+
+</style>
+</head>
+<body>
+<header class="entete">
+  <div class="num">11</div>
+  <div class="txt">
+    <div class="niveau">5EME &middot; MATHEMATIQUES</div>
+    <h1>Puissances entières d'un nombre</h1>
+    <div class="sous">Leçon 1 : définition, puissances de 10, signe &middot; Leçon 2 : produit de puissances ; puissance d'un produit &middot; Leçon 3 : puissance d'une puissance</div>
+  </div>
+</header>
+
+<div class="bandeau bleu" style="margin-top:0">L'ESSENTIEL</div>
+<div class="cols">
+
+<!-- ================= LECON 1 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 1&nbsp;: Définition et calcul d'une puissance ; puissances de 10</h2>
+<p>Pour un nombre <i>a</i> et un entier <i>n</i>&#8239;&#8805;&#8239;1, la <b>puissance</b> <i>a</i><sup><i>n</i></sup> est le produit de <b><i>n</i> facteurs</b> tous égaux à <i>a</i>. Le nombre <i>a</i> est la <b>base</b>, le nombre <i>n</i> l'<b>exposant</b> ; on lit « <i>a</i> exposant <i>n</i> ».</p></div>
+<div class="form">
+  <span class="t">DEFINITION</span>
+  <div class="c m"><i>a</i><sup><i>n</i></sup>&#8239;=&#8239;<i>a</i>&#8239;&#215;&#8239;<i>a</i>&#8239;&#215;&#8239;&#8230;&#8239;&#215;&#8239;<i>a</i> &nbsp;<span style="font-size:7.5pt">(<i>n</i> facteurs)</span></div>
+  <div class="c m"><i>a</i><sup>1</sup>&#8239;=&#8239;<i>a</i> &nbsp;&nbsp;&nbsp; <i>a</i><sup>0</sup>&#8239;=&#8239;1 &nbsp;<span style="font-size:7.5pt">(pour <i>a</i>&#8239;&#8800;&#8239;0)</span></div>
+</div>
+<p>L'exposant s'écrit <b>en haut et à droite</b> de la base : il <b>compte</b> les facteurs, il n'en est pas un. <i>a</i><sup>2</sup> se lit « <i>a</i> au carré », <i>a</i><sup>3</sup> « <i>a</i> au cube » : un carré de côté 4 contient 4<sup>2</sup>&#8239;=&#8239;16 carreaux, un cube d'arête 3 contient 3<sup>3</sup>&#8239;=&#8239;27 petits cubes. D'où les aires en cm<sup>2</sup> et les volumes en cm<sup>3</sup> : l'exposant y compte les <b>dimensions</b>.</p>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Signe d'une puissance et parenthèses</h3>
+<p>Une puissance d'un nombre <b>négatif</b> est <b>positive</b> si l'exposant est <b>pair</b>, <b>négative</b> s'il est <b>impair</b> : les facteurs négatifs s'annulent deux par deux. On regarde donc la <b>parité</b>, sans calculer.</p>
+<div class="form">
+  <span class="t">SIGNE ET PARENTHESES</span>
+  <div class="c m">(&#8722;4)<sup>2</sup>&#8239;=&#8239;+16 &nbsp;&nbsp;&nbsp; (&#8722;2)<sup>3</sup>&#8239;=&#8239;&#8722;8</div>
+  <div class="c m">(&#8722;2)<sup>4</sup>&#8239;=&#8239;+16 &nbsp;<span class="op">mais</span>&nbsp; &#8722;2<sup>4</sup>&#8239;=&#8239;&#8722;16</div>
+</div>
+<p>Les <b>parenthèses</b> décident de ce que l'exposant recouvre : dans (&#8722;2)<sup>4</sup>, c'est le nombre &#8722;2 tout entier ; dans &#8722;2<sup>4</sup>, l'exposant ne porte que sur le 2, et le signe s'applique ensuite.</p>
+<div class="note"><b>Priorités.</b> Les puissances se calculent <b>avant</b> les multiplications et les divisions, elles-mêmes avant les additions : 2&#8239;&#215;&#8239;3<sup>2</sup>&#8239;=&#8239;2&#8239;&#215;&#8239;9&#8239;=&#8239;18, et non 36.</div>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Puissances de 10 et ordres de grandeur</h3>
+<div class="form">
+  <span class="t">PUISSANCES DE 10</span>
+  <div class="c m">10<sup><i>n</i></sup>&#8239;=&#8239;le nombre 1 suivi de <i>n</i> zéros</div>
+  <div class="c m">10<sup>1</sup>&#8239;=&#8239;10 &nbsp;&nbsp; 10<sup>2</sup>&#8239;=&#8239;100 &nbsp;&nbsp; 10<sup>3</sup>&#8239;=&#8239;1&#8239;000</div>
+</div>
+<ul>
+<li><b>Préfixes</b> : kilo&#8239;=&#8239;10<sup>3</sup>, méga&#8239;=&#8239;10<sup>6</sup>, giga&#8239;=&#8239;10<sup>9</sup>.</li>
+<li>Un grand nombre s'écrit <i>a</i>&#8239;&#215;&#8239;10<sup><i>n</i></sup> : 45&#8239;000&#8239;=&#8239;45&#8239;&#215;&#8239;10<sup>3</sup>.</li>
+</ul>
+</div>
+
+<!-- ================= LECON 2 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 2&nbsp;: Produit de puissances ; puissance d'un produit</h2>
+<div class="form">
+  <span class="t">PRODUIT DE DEUX PUISSANCES&nbsp;: MEME BASE</span>
+  <div class="c m"><i>a</i><sup><i>n</i></sup>&#8239;&#215;&#8239;<i>a</i><sup><i>m</i></sup>&#8239;=&#8239;<i>a</i><sup><i>n</i>&#8239;+&#8239;<i>m</i></sup> &nbsp;&nbsp;&nbsp; 5<sup>2</sup>&#8239;&#215;&#8239;5<sup>3</sup>&#8239;=&#8239;5<sup>5</sup></div>
+</div></div>
+<p>On <b>garde la base</b> et on <b>ajoute</b> les exposants. La règle exige <b>la même base</b> : dans 2<sup>3</sup>&#8239;&#215;&#8239;5<sup>4</sup>, on ne peut rien regrouper. La base ne change jamais.</p>
+<div class="form">
+  <span class="t">PUISSANCE D'UN PRODUIT</span>
+  <div class="c m">(<i>a</i>&#8239;&#215;&#8239;<i>b</i>)<sup><i>n</i></sup>&#8239;=&#8239;<i>a</i><sup><i>n</i></sup>&#8239;&#215;&#8239;<i>b</i><sup><i>n</i></sup></div>
+  <div class="c m">(3&#8239;&#215;&#8239;5)<sup>2</sup>&#8239;=&#8239;3<sup>2</sup>&#8239;&#215;&#8239;5<sup>2</sup>&#8239;=&#8239;9&#8239;&#215;&#8239;25&#8239;=&#8239;225</div>
+</div>
+<p>L'exposant se <b>distribue</b> sur chaque facteur. Pour choisir la règle, regarde les <b>parenthèses</b> : si elles enferment un produit, c'est la seconde.</p>
+<div class="note"><b>Nombres ronds.</b> 40<sup>2</sup>&#8239;=&#8239;4<sup>2</sup>&#8239;&#215;&#8239;10<sup>2</sup>&#8239;=&#8239;16&#8239;&#215;&#8239;100&#8239;=&#8239;1&#8239;600 ; 300<sup>2</sup>&#8239;=&#8239;3<sup>2</sup>&#8239;&#215;&#8239;100<sup>2</sup>&#8239;=&#8239;90&#8239;000.</div>
+</div>
+
+<!-- ================= LECON 3 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 3&nbsp;: Puissance d'une puissance</h2>
+<div class="form">
+  <span class="t">PUISSANCE D'UNE PUISSANCE</span>
+  <div class="c m">(<i>a</i><sup><i>n</i></sup>)<sup><i>m</i></sup>&#8239;=&#8239;<i>a</i><sup><i>n</i>&#8239;&#215;&#8239;<i>m</i></sup> &nbsp;&nbsp;&nbsp; (2<sup>2</sup>)<sup>3</sup>&#8239;=&#8239;2<sup>6</sup></div>
+</div></div>
+<p>On <b>garde la base</b> et on <b>multiplie</b> les exposants. Les trois règles du chapitre se reconnaissent à la <b>forme</b> de l'expression.</p>
+<table>
+<tr><th>Ce que je lis</th><th>Ce que je fais</th></tr>
+<tr><td>deux puissances multipliées, <b>même base</b></td><td>j'<b>ajoute</b> : <i>a</i><sup><i>n</i></sup>&#8239;&#215;&#8239;<i>a</i><sup><i>m</i></sup>&#8239;=&#8239;<i>a</i><sup><i>n</i>&#8239;+&#8239;<i>m</i></sup></td></tr>
+<tr><td>une parenthèse contenant un <b>produit</b></td><td>je <b>distribue</b> : (<i>a</i>&#8239;&#215;&#8239;<i>b</i>)<sup><i>n</i></sup>&#8239;=&#8239;<i>a</i><sup><i>n</i></sup>&#8239;&#215;&#8239;<i>b</i><sup><i>n</i></sup></td></tr>
+<tr><td>une parenthèse contenant une <b>puissance</b></td><td>je <b>multiplie</b> : (<i>a</i><sup><i>n</i></sup>)<sup><i>m</i></sup>&#8239;=&#8239;<i>a</i><sup><i>n</i>&#8239;&#215;&#8239;<i>m</i></sup></td></tr>
+</table>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Enchaîner les règles, changer de base</h3>
+<ul>
+<li>On travaille <b>de l'intérieur vers l'extérieur</b> : (9<sup>3</sup>)<sup>2</sup>&#8239;&#215;&#8239;9<sup>4</sup>&#8239;=&#8239;9<sup>6</sup>&#8239;&#215;&#8239;9<sup>4</sup>&#8239;=&#8239;9<sup>10</sup>.</li>
+<li><b>Changer de base</b> : 4<sup>3</sup>&#8239;=&#8239;(2<sup>2</sup>)<sup>3</sup>&#8239;=&#8239;2<sup>6</sup> et 8<sup>2</sup>&#8239;=&#8239;(2<sup>3</sup>)<sup>2</sup>&#8239;=&#8239;2<sup>6</sup> : ces deux nombres sont égaux, et valent 64.</li>
+<li><b>Comparer sans calculer</b> : 4<sup>5</sup>&#8239;=&#8239;(2<sup>2</sup>)<sup>5</sup>&#8239;=&#8239;2<sup>10</sup>, donc 2<sup>12</sup>&#8239;&gt;&#8239;4<sup>5</sup>. À base commune, le plus grand exposant l'emporte.</li>
+<li>En cas de doute, réécris tout en toutes lettres et <b>compte les facteurs</b>.</li>
+</ul>
+</div>
+
+</div>
+
+<div class="bandeau vert">PIEGES ET ERREURS FREQUENTES</div>
+<div class="cols">
+<div class="pg"><div class="err"><span class="x">&#10007;</span> 2<sup>5</sup>&#8239;=&#8239;2&#8239;&#215;&#8239;5&#8239;=&#8239;10 &nbsp;&middot;&nbsp; « le carré de 5, c'est 10 »</div><div class="cor"><span class="v">&#10003;</span> L'exposant <b>compte les facteurs</b> : 2<sup>5</sup>&#8239;=&#8239;2&#8239;&#215;&#8239;2&#8239;&#215;&#8239;2&#8239;&#215;&#8239;2&#8239;&#215;&#8239;2&#8239;=&#8239;32. Le <b>double</b> de 5 vaut 10, mais son <b>carré</b> vaut 5<sup>2</sup>&#8239;=&#8239;25.</div></div>
+<div class="pg"><div class="err"><span class="x">&#10007;</span> (&#8722;3)<sup>2</sup>&#8239;=&#8239;&#8722;9 &nbsp;&middot;&nbsp; (&#8722;2)<sup>4</sup> et &#8722;2<sup>4</sup>, c'est pareil</div><div class="cor"><span class="v">&#10003;</span> L'exposant 2 est <b>pair</b> : (&#8722;3)<sup>2</sup>&#8239;=&#8239;+9. Sans parenthèses, l'exposant ne porte que sur le nombre : &#8722;3<sup>2</sup>&#8239;=&#8239;&#8722;9, et (&#8722;2)<sup>4</sup>&#8239;=&#8239;+16 tandis que &#8722;2<sup>4</sup>&#8239;=&#8239;&#8722;16.</div></div>
+<div class="pg"><div class="err"><span class="x">&#10007;</span> 10<sup>3</sup>&#8239;&#215;&#8239;10<sup>2</sup>&#8239;=&#8239;10<sup>6</sup> &nbsp;&middot;&nbsp; 5<sup>2</sup>&#8239;&#215;&#8239;5<sup>3</sup>&#8239;=&#8239;25<sup>5</sup></div><div class="cor"><span class="v">&#10003;</span> On <b>ajoute</b> les exposants sans les multiplier, et la <b>base ne change pas</b> : 10<sup>3</sup>&#8239;&#215;&#8239;10<sup>2</sup>&#8239;=&#8239;10<sup>5</sup> et 5<sup>2</sup>&#8239;&#215;&#8239;5<sup>3</sup>&#8239;=&#8239;5<sup>5</sup>.</div></div>
+<div class="pg"><div class="err"><span class="x">&#10007;</span> 2<sup>3</sup>&#8239;&#215;&#8239;5<sup>4</sup>&#8239;=&#8239;10<sup>7</sup></div><div class="cor"><span class="v">&#10003;</span> Les <b>bases sont différentes</b> : la règle ne s'applique pas et on ne peut rien regrouper. On calcule séparément : 8&#8239;&#215;&#8239;625.</div></div>
+<div class="pg"><div class="err"><span class="x">&#10007;</span> (2<sup>2</sup>)<sup>3</sup>&#8239;=&#8239;2<sup>5</sup> &nbsp;&middot;&nbsp; (<i>a</i><sup><i>n</i></sup>)<sup><i>m</i></sup>&#8239;=&#8239;<i>a</i><sup><i>n</i></sup>&#8239;&#215;&#8239;<i>a</i><sup><i>m</i></sup></div><div class="cor"><span class="v">&#10003;</span> Pour une <b>puissance de puissance</b>, on <b>multiplie</b> : (<i>a</i><sup><i>n</i></sup>)<sup><i>m</i></sup>&#8239;=&#8239;<i>a</i><sup><i>n</i>&#8239;&#215;&#8239;<i>m</i></sup>, donc (2<sup>2</sup>)<sup>3</sup>&#8239;=&#8239;2<sup>6</sup>&#8239;=&#8239;64 (et non 2<sup>5</sup>&#8239;=&#8239;32).</div></div>
+<div class="pg"><div class="err"><span class="x">&#10007;</span> 2&#8239;&#215;&#8239;3<sup>2</sup>&#8239;=&#8239;6<sup>2</sup>&#8239;=&#8239;36</div><div class="cor"><span class="v">&#10003;</span> La <b>puissance passe avant</b> la multiplication : on calcule 3<sup>2</sup>&#8239;=&#8239;9, puis 2&#8239;&#215;&#8239;9&#8239;=&#8239;18.</div></div>
+
+</div>
+
+<div class="bandeau bleu">A SAVOIR PAR COEUR AVANT LE DEVOIR</div>
+<div class="cols">
+<ol class="recap">
+<li><i>a</i><sup><i>n</i></sup> est le produit de <b><i>n</i> facteurs</b> égaux à <i>a</i> (<i>a</i> la base, <i>n</i> l'exposant), à ne jamais confondre avec <i>a</i>&#8239;&#215;&#8239;<i>n</i> ; <i>a</i><sup>1</sup>&#8239;=&#8239;<i>a</i> et <i>a</i><sup>0</sup>&#8239;=&#8239;1 pour <i>a</i>&#8239;&#8800;&#8239;0.</li>
+<li><b>Signe</b> : une puissance d'un négatif est positive si l'exposant est <b>pair</b>, négative s'il est <b>impair</b> ; les parenthèses décident : (&#8722;2)<sup>4</sup>&#8239;=&#8239;+16 mais &#8722;2<sup>4</sup>&#8239;=&#8239;&#8722;16.</li>
+<li>10<sup><i>n</i></sup> est le nombre 1 suivi de <i>n</i> zéros ; kilo&#8239;=&#8239;10<sup>3</sup>, méga&#8239;=&#8239;10<sup>6</sup>, giga&#8239;=&#8239;10<sup>9</sup> ; un grand nombre s'écrit <i>a</i>&#8239;&#215;&#8239;10<sup><i>n</i></sup>.</li>
+<li><b>On ajoute</b> : <i>a</i><sup><i>n</i></sup>&#8239;&#215;&#8239;<i>a</i><sup><i>m</i></sup>&#8239;=&#8239;<i>a</i><sup><i>n</i>&#8239;+&#8239;<i>m</i></sup>, seulement si la base est <b>la même</b>, et cette base ne change pas.</li>
+<li><b>On distribue</b> : (<i>a</i>&#8239;&#215;&#8239;<i>b</i>)<sup><i>n</i></sup>&#8239;=&#8239;<i>a</i><sup><i>n</i></sup>&#8239;&#215;&#8239;<i>b</i><sup><i>n</i></sup>. Utile pour les nombres ronds : 40<sup>2</sup>&#8239;=&#8239;4<sup>2</sup>&#8239;&#215;&#8239;10<sup>2</sup>&#8239;=&#8239;1&#8239;600.</li>
+<li><b>On multiplie</b> : (<i>a</i><sup><i>n</i></sup>)<sup><i>m</i></sup>&#8239;=&#8239;<i>a</i><sup><i>n</i>&#8239;&#215;&#8239;<i>m</i></sup>, de l'intérieur vers l'extérieur. <b>Priorité</b> : les puissances avant les multiplications et les divisions : 2&#8239;&#215;&#8239;3<sup>2</sup>&#8239;=&#8239;18.</li>
+</ol>
+</div>
+
+</body>
+</html>

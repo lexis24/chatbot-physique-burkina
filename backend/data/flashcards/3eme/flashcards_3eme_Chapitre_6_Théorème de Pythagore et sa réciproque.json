@@ -1,0 +1,332 @@
+{
+  "niveau": "3ème",
+  "chapitre": "Chapitre 6 : Théorème de Pythagore et sa réciproque",
+  "source": "maths/3eme/Chapitre_6_Pythagore",
+  "nombre_cartes": 36,
+  "cartes": [
+    {
+      "id": "3E-CH06-001",
+      "lecon": "Relations métriques dans le triangle rectangle (1)",
+      "type": "definition",
+      "recto": "Dans un triangle ABC rectangle en A, quel est le point H qui intervient dans les relations métriques ?",
+      "verso": "C'est le pied de la hauteur issue de A, c'est-à-dire le projeté orthogonal de A sur $(BC)$. Il appartient au segment $[BC]$ et le partage en $[BH]$ et $[CH]$.",
+      "difficulte": 1,
+      "tags": ["relations-metriques", "hauteur", "definition"]
+    },
+    {
+      "id": "3E-CH06-002",
+      "lecon": "Relations métriques dans le triangle rectangle (1)",
+      "type": "formule",
+      "recto": "Dans un triangle ABC rectangle en A, à quoi sont égaux les carrés des deux côtés de l'angle droit ?",
+      "verso": "$AB^{2} = BH \\times BC$ et $AC^{2} = CH \\times BC$, où H est le pied de la hauteur issue de A. Le carré d'un côté vaut le produit de sa projection sur l'hypoténuse par l'hypoténuse entière.",
+      "difficulte": 2,
+      "tags": ["relations-metriques", "cote-angle-droit"]
+    },
+    {
+      "id": "3E-CH06-003",
+      "lecon": "Relations métriques dans le triangle rectangle (1)",
+      "type": "formule",
+      "recto": "Quelle relation métrique d'un triangle rectangle vient des deux façons de calculer son aire ?",
+      "verso": "$AH \\times BC = AB \\times AC$. Avec $[BC]$ pour base l'aire vaut $\\dfrac{BC \\times AH}{2}$, avec $[AB]$ pour base elle vaut $\\dfrac{AB \\times AC}{2}$ : les deux produits sont donc égaux.",
+      "difficulte": 2,
+      "tags": ["relations-metriques", "aire", "hauteur"]
+    },
+    {
+      "id": "3E-CH06-004",
+      "lecon": "Relations métriques dans le triangle rectangle (1)",
+      "type": "formule",
+      "recto": "Pourquoi a-t-on toujours $BH + CH = BC$ dans un triangle ABC rectangle en A ?",
+      "verso": "Parce que H appartient au segment $[BC]$ : les deux morceaux se recollent. Cette égalité ne sert pas à calculer, elle sert à vérifier ses résultats.",
+      "difficulte": 1,
+      "tags": ["relations-metriques", "verification"]
+    },
+    {
+      "id": "3E-CH06-005",
+      "lecon": "Relations métriques dans le triangle rectangle (1)",
+      "type": "formule",
+      "recto": "A quelles conditions les relations métriques du triangle rectangle s'appliquent-elles ?",
+      "verso": "Le triangle doit être rectangle, et la hauteur utilisée doit être celle issue du sommet de l'angle droit. Avec la hauteur issue de B ou de C, ces relations ne valent plus.",
+      "difficulte": 3,
+      "tags": ["relations-metriques", "condition", "piege"]
+    },
+    {
+      "id": "3E-CH06-006",
+      "lecon": "Relations métriques dans le triangle rectangle (1)",
+      "type": "formule",
+      "recto": "D'où vient la relation $AB^{2} = BH \\times BC$ dans un triangle rectangle en A ?",
+      "verso": "Du rapport de projection orthogonale, qui ne dépend que de l'angle. Vu du sommet B, il vaut $\\dfrac{BH}{BA}$ pour une projection et $\\dfrac{BA}{BC}$ pour l'autre, d'où $\\dfrac{BH}{BA} = \\dfrac{BA}{BC}$.",
+      "difficulte": 3,
+      "tags": ["relations-metriques", "demonstration", "projection"]
+    },
+    {
+      "id": "3E-CH06-007",
+      "lecon": "Relations métriques dans le triangle rectangle (2)",
+      "type": "formule",
+      "recto": "Comment calcule-t-on directement les deux morceaux découpés par la hauteur sur l'hypoténuse ?",
+      "verso": "$BH = \\dfrac{AB^{2}}{BC}$ et $CH = \\dfrac{AC^{2}}{BC}$ : ce sont les relations métriques retournées, où l'on a divisé chaque membre par l'hypoténuse.",
+      "difficulte": 2,
+      "tags": ["relations-metriques", "morceaux-hypotenuse"]
+    },
+    {
+      "id": "3E-CH06-008",
+      "lecon": "Relations métriques dans le triangle rectangle (2)",
+      "type": "formule",
+      "recto": "A quoi est égal le carré de la hauteur issue de l'angle droit ?",
+      "verso": "Au produit des deux morceaux qu'elle découpe sur l'hypoténuse : $AH^{2} = BH \\times CH$, c'est-à-dire $AH = \\sqrt{BH \\times CH}$.",
+      "difficulte": 2,
+      "tags": ["relations-metriques", "hauteur"]
+    },
+    {
+      "id": "3E-CH06-009",
+      "lecon": "Relations métriques dans le triangle rectangle (2)",
+      "type": "formule",
+      "recto": "Comment obtient-on l'hypoténuse quand on connaît un côté de l'angle droit et son morceau, comme $AB$ et $BH$ ?",
+      "verso": "En retournant la relation qui les lie : $AB^{2} = BH \\times BC$ donne $BC = \\dfrac{AB^{2}}{BH}$.",
+      "difficulte": 2,
+      "tags": ["relations-metriques", "hypotenuse"]
+    },
+    {
+      "id": "3E-CH06-010",
+      "lecon": "Relations métriques dans le triangle rectangle (2)",
+      "type": "definition",
+      "recto": "Combien de longueurs suffisent pour calculer toutes les autres dans un triangle rectangle muni de sa hauteur ?",
+      "verso": "Deux, à condition qu'elles ne se répètent pas. Les six longueurs $AB$, $AC$, $BC$, $AH$, $BH$ et $CH$ se déduisent alors les unes des autres, dans l'ordre que l'on choisit.",
+      "difficulte": 2,
+      "tags": ["relations-metriques", "donnees-suffisantes"]
+    },
+    {
+      "id": "3E-CH06-011",
+      "lecon": "Relations métriques dans le triangle rectangle (2)",
+      "type": "formule",
+      "recto": "Quelle est l'erreur la plus fréquente dans l'emploi des relations métriques ?",
+      "verso": "Ecrire $AB^{2} = BH \\times CH$, qui mélange deux relations. Le carré de la hauteur vaut $BH \\times CH$ ; dans une relation portant sur un côté, l'hypoténuse entière apparaît toujours.",
+      "difficulte": 3,
+      "tags": ["relations-metriques", "piege"]
+    },
+    {
+      "id": "3E-CH06-012",
+      "lecon": "Relations métriques dans le triangle rectangle (2)",
+      "type": "formule",
+      "recto": "Quel contrôle de vraisemblance peut-on faire sur la hauteur issue de l'angle droit ?",
+      "verso": "Elle doit être plus petite que chacun des deux côtés de l'angle droit, puisqu'elle est le plus court chemin du sommet A à l'hypoténuse.",
+      "difficulte": 2,
+      "tags": ["relations-metriques", "verification", "hauteur"]
+    },
+    {
+      "id": "3E-CH06-013",
+      "lecon": "Le théorème de Pythagore (direct)",
+      "type": "formule",
+      "recto": "Que dit le théorème de Pythagore dans le sens direct ?",
+      "verso": "Si un triangle est rectangle, alors le carré de la longueur de l'hypoténuse est égal à la somme des carrés des longueurs des deux autres côtés. Pour ABC rectangle en A : $BC^{2} = AB^{2} + AC^{2}$.",
+      "difficulte": 1,
+      "tags": ["pythagore", "theoreme-direct"]
+    },
+    {
+      "id": "3E-CH06-014",
+      "lecon": "Le théorème de Pythagore (direct)",
+      "type": "definition",
+      "recto": "Dans un triangle rectangle, quel côté appelle-t-on hypoténuse ?",
+      "verso": "Le côté opposé à l'angle droit, et c'est toujours le plus long des trois. Dans un triangle ABC rectangle en A, c'est $[BC]$.",
+      "difficulte": 1,
+      "tags": ["hypotenuse", "vocabulaire"]
+    },
+    {
+      "id": "3E-CH06-015",
+      "lecon": "Le théorème de Pythagore (direct)",
+      "type": "formule",
+      "recto": "A quoi sert le théorème de Pythagore dans le sens direct ?",
+      "verso": "A calculer une longueur dans un triangle dont on sait déjà qu'il est rectangle. L'hypothèse est « le triangle est rectangle », la conclusion est l'égalité des carrés.",
+      "difficulte": 2,
+      "tags": ["pythagore", "theoreme-direct", "usage"]
+    },
+    {
+      "id": "3E-CH06-016",
+      "lecon": "Le théorème de Pythagore (direct)",
+      "type": "formule",
+      "recto": "Quand additionne-t-on les carrés et quand les soustrait-on dans un calcul de Pythagore ?",
+      "verso": "On additionne pour trouver l'hypoténuse, on soustrait pour trouver un côté de l'angle droit, puisque $AB^{2} = BC^{2} - AC^{2}$. On prend la racine carrée à la fin.",
+      "difficulte": 2,
+      "tags": ["pythagore", "calcul", "hypotenuse"]
+    },
+    {
+      "id": "3E-CH06-017",
+      "lecon": "Le théorème de Pythagore (direct)",
+      "type": "formule",
+      "recto": "Comment démontre-t-on le théorème de Pythagore à partir des relations métriques ?",
+      "verso": "On additionne $AB^{2} = BH \\times BC$ et $AC^{2} = CH \\times BC$, puis on met $BC$ en facteur : $AB^{2} + AC^{2} = \\left(BH + CH\\right) \\times BC$. Or $BH + CH = BC$, donc la somme vaut $BC^{2}$.",
+      "difficulte": 3,
+      "tags": ["pythagore", "demonstration", "relations-metriques"]
+    },
+    {
+      "id": "3E-CH06-018",
+      "lecon": "Le théorème de Pythagore (direct)",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on un triplet pythagoricien ?",
+      "verso": "Un triplet de nombres entiers qui sont les trois côtés d'un triangle rectangle : $\\left(3\\,;4\\,;5\\right)$, $\\left(5\\,;12\\,;13\\right)$, $\\left(8\\,;15\\,;17\\right)$, $\\left(7\\,;24\\,;25\\right)$. Leurs multiples en donnent d'autres, comme $\\left(9\\,;12\\,;15\\right)$.",
+      "difficulte": 2,
+      "tags": ["triplet-pythagoricien", "calcul-rapide"]
+    },
+    {
+      "id": "3E-CH06-019",
+      "lecon": "Le théorème de Pythagore (direct)",
+      "type": "formule",
+      "recto": "Pourquoi n'écrit-on jamais $\\sqrt{36 + 64} = \\sqrt{36} + \\sqrt{64}$ dans un calcul de Pythagore ?",
+      "verso": "Parce que cela donnerait $6 + 8 = 14$ au lieu de $10$. Il faut d'abord additionner sous le radical, puis prendre la racine carrée : $\\sqrt{100} = 10$.",
+      "difficulte": 3,
+      "tags": ["pythagore", "radical", "piege"]
+    },
+    {
+      "id": "3E-CH06-020",
+      "lecon": "La réciproque du théorème de Pythagore",
+      "type": "formule",
+      "recto": "Que dit la réciproque du théorème de Pythagore ?",
+      "verso": "Si, dans un triangle, le carré de la longueur du plus grand côté est égal à la somme des carrés des longueurs des deux autres côtés, alors ce triangle est rectangle, et l'angle droit est au sommet opposé au plus grand côté.",
+      "difficulte": 1,
+      "tags": ["pythagore", "reciproque"]
+    },
+    {
+      "id": "3E-CH06-021",
+      "lecon": "La réciproque du théorème de Pythagore",
+      "type": "formule",
+      "recto": "A quoi sert la réciproque du théorème de Pythagore ?",
+      "verso": "A démontrer qu'un triangle est rectangle quand on ne connaît que ses trois longueurs : on part des longueurs pour aboutir à l'angle droit.",
+      "difficulte": 2,
+      "tags": ["pythagore", "reciproque", "usage"]
+    },
+    {
+      "id": "3E-CH06-022",
+      "lecon": "La réciproque du théorème de Pythagore",
+      "type": "formule",
+      "recto": "Que conclut-on lorsque le carré du plus grand côté n'est pas égal à la somme des carrés des deux autres ?",
+      "verso": "Que le triangle n'est pas rectangle : c'est la contraposée de la réciproque, la seule façon correcte de prouver qu'un angle n'est pas droit. L'égalité doit être exacte, $144$ et $145$ ne sont pas égaux.",
+      "difficulte": 2,
+      "tags": ["pythagore", "contraposee"]
+    },
+    {
+      "id": "3E-CH06-023",
+      "lecon": "La réciproque du théorème de Pythagore",
+      "type": "definition",
+      "recto": "Que faut-il préciser dans sa copie avant d'utiliser Pythagore ou sa réciproque ?",
+      "verso": "Lequel des deux énoncés on emploie, et l'hypothèse qui l'autorise. Pour le sens direct, il faut avoir écrit que le triangle est rectangle ; pour la réciproque, on part des trois longueurs.",
+      "difficulte": 3,
+      "tags": ["pythagore", "redaction", "reciproque"]
+    },
+    {
+      "id": "3E-CH06-024",
+      "lecon": "La réciproque du théorème de Pythagore",
+      "type": "formule",
+      "recto": "Comment résume-t-on en une seule phrase le théorème de Pythagore et sa réciproque ?",
+      "verso": "Un triangle ABC est rectangle en A si et seulement si $BC^{2} = AB^{2} + AC^{2}$. Les deux sens étant vrais, on peut les réunir en une équivalence.",
+      "difficulte": 2,
+      "tags": ["pythagore", "equivalence"]
+    },
+    {
+      "id": "3E-CH06-025",
+      "lecon": "La réciproque du théorème de Pythagore",
+      "type": "formule",
+      "recto": "Par quel côté commence-t-on lorsqu'on cherche à savoir si un triangle est rectangle ?",
+      "verso": "Par le plus grand : lui seul peut être l'hypoténuse. On calcule ensuite son carré d'une part, la somme des carrés des deux autres d'autre part, sur deux lignes distinctes, avant de comparer.",
+      "difficulte": 2,
+      "tags": ["reciproque", "methode", "plus-grand-cote"]
+    },
+    {
+      "id": "3E-CH06-026",
+      "lecon": "La réciproque du théorème de Pythagore",
+      "type": "definition",
+      "recto": "Pourquoi la réciproque d'un énoncé vrai doit-elle être démontrée à part ?",
+      "verso": "Parce qu'elle n'est pas automatiquement vraie. « Si un nombre se termine par $0$, alors il est pair » est vrai, mais sa réciproque est fausse.",
+      "difficulte": 3,
+      "tags": ["reciproque", "logique"]
+    },
+    {
+      "id": "3E-CH06-027",
+      "lecon": "Applications au carré et au triangle équilatéral",
+      "type": "formule",
+      "recto": "Quelle est la longueur de la diagonale d'un carré de côté $c$ ?",
+      "verso": "$d = c\\sqrt{2}$. La diagonale est l'hypoténuse d'un triangle rectangle dont les deux côtés de l'angle droit mesurent $c$ : $d^{2} = c^{2} + c^{2} = 2c^{2}$.",
+      "difficulte": 1,
+      "tags": ["carre", "diagonale"]
+    },
+    {
+      "id": "3E-CH06-028",
+      "lecon": "Applications au carré et au triangle équilatéral",
+      "type": "formule",
+      "recto": "Quelle est la hauteur d'un triangle équilatéral de côté $c$ ?",
+      "verso": "$h = \\dfrac{c\\sqrt{3}}{2}$. On l'obtient par Pythagore dans la moitié du triangle : $h^{2} = c^{2} - \\left(\\dfrac{c}{2}\\right)^{2} = \\dfrac{3c^{2}}{4}$.",
+      "difficulte": 2,
+      "tags": ["triangle-equilateral", "hauteur"]
+    },
+    {
+      "id": "3E-CH06-029",
+      "lecon": "Applications au carré et au triangle équilatéral",
+      "type": "formule",
+      "recto": "Quelle erreur guette l'élève qui calcule la hauteur d'un triangle équilatéral ?",
+      "verso": "Prendre $c$ au lieu de $\\dfrac{c}{2}$ pour la base du petit triangle rectangle. La hauteur tombe au milieu du côté opposé, donc cette base vaut la moitié du côté.",
+      "difficulte": 3,
+      "tags": ["triangle-equilateral", "piege", "milieu"]
+    },
+    {
+      "id": "3E-CH06-030",
+      "lecon": "Applications au carré et au triangle équilatéral",
+      "type": "formule",
+      "recto": "Comment calcule-t-on la diagonale d'un rectangle de longueur $L$ et de largeur $\\ell$ ?",
+      "verso": "Par Pythagore : $AC^{2} = L^{2} + \\ell^{2}$. Un rectangle de $8$ cm sur $6$ cm a donc une diagonale de $\\sqrt{64 + 36} = 10$ cm, et ses deux diagonales ont la même longueur.",
+      "difficulte": 2,
+      "tags": ["rectangle", "diagonale"]
+    },
+    {
+      "id": "3E-CH06-031",
+      "lecon": "Applications au carré et au triangle équilatéral",
+      "type": "formule",
+      "recto": "Pourquoi garde-t-on la forme $c\\sqrt{2}$ au lieu d'écrire $1{,}41 \\times c$ ?",
+      "verso": "Parce que $\\sqrt{2}$ n'est pas un nombre décimal : $1{,}41$ n'en est qu'une valeur approchée. On garde la valeur exacte et l'on n'arrondit qu'à la toute fin, si l'énoncé le demande.",
+      "difficulte": 2,
+      "tags": ["valeur-exacte", "radical", "carre"]
+    },
+    {
+      "id": "3E-CH06-032",
+      "lecon": "Distance d'un point à une droite",
+      "type": "definition",
+      "recto": "Comment définit-on la distance d'un point A à une droite $(d)$ ?",
+      "verso": "C'est la longueur $AH$, où H est le projeté orthogonal de A sur $(d)$, c'est-à-dire le pied de la perpendiculaire à $(d)$ passant par A.",
+      "difficulte": 1,
+      "tags": ["distance", "point-droite", "definition"]
+    },
+    {
+      "id": "3E-CH06-033",
+      "lecon": "Distance d'un point à une droite",
+      "type": "formule",
+      "recto": "Pourquoi la distance d'un point A à une droite est-elle la plus courte de toutes ?",
+      "verso": "Pour tout autre point M de la droite, le triangle AHM est rectangle en H, donc $AM^{2} = AH^{2} + HM^{2}$. Comme $HM^{2}$ est strictement positif, $AM > AH$.",
+      "difficulte": 3,
+      "tags": ["distance", "plus-court-chemin", "demonstration"]
+    },
+    {
+      "id": "3E-CH06-034",
+      "lecon": "Distance d'un point à une droite",
+      "type": "formule",
+      "recto": "Que vaut la distance d'un point à une droite lorsque ce point appartient à la droite ?",
+      "verso": "Elle est nulle : le point est alors son propre projeté orthogonal, donc $AH = 0$.",
+      "difficulte": 2,
+      "tags": ["distance", "cas-particulier"]
+    },
+    {
+      "id": "3E-CH06-035",
+      "lecon": "Distance d'un point à une droite",
+      "type": "formule",
+      "recto": "Avec quels outils calcule-t-on le plus souvent la distance d'un point à une droite ?",
+      "verso": "Par le théorème de Pythagore dans un triangle rectangle bien choisi, ou par la relation $AH = \\dfrac{AB \\times AC}{BC}$ lorsque la droite porte l'hypoténuse d'un triangle rectangle.",
+      "difficulte": 2,
+      "tags": ["distance", "pythagore", "calcul"]
+    },
+    {
+      "id": "3E-CH06-036",
+      "lecon": "Distance d'un point à une droite",
+      "type": "formule",
+      "recto": "Quelle erreur commet-on en disant qu'un campement est à $15$ m d'une piste parce qu'un point de la piste en est à $15$ m ?",
+      "verso": "On confond la distance entre deux points et la distance d'un point à une droite. Cette dernière se mesure perpendiculairement : elle vaut $9$ m si le pied de la perpendiculaire est à $12$ m du point cité.",
+      "difficulte": 3,
+      "tags": ["distance", "piege", "vocabulaire"]
+    }
+  ]
+}

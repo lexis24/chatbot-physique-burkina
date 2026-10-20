@@ -1,0 +1,350 @@
+{
+  "niveau": "Terminale D",
+  "chapitre": "Chapitre 6 : Suites numériques",
+  "source": "maths/tleD/Chapitre_6_Suites_numeriques",
+  "nombre_cartes": 38,
+  "cartes": [
+    {
+      "id": "TD-CH06-001",
+      "lecon": "Limites de suites : énoncés admis",
+      "type": "definition",
+      "recto": "A quelle condition une suite $(u_n)$ est-elle dite monotone ?",
+      "verso": "Lorsqu'elle est croissante, c'est-à-dire $u_{n+1}\\ge u_n$ pour tout $n\\ge n_0$, ou décroissante, c'est-à-dire $u_{n+1}\\le u_n$. Si $u_{n+1}=u_n$ à tout rang, la suite est constante.",
+      "difficulte": 1,
+      "tags": ["monotonie", "vocabulaire", "suite"]
+    },
+    {
+      "id": "TD-CH06-002",
+      "lecon": "Limites de suites : énoncés admis",
+      "type": "definition",
+      "recto": "Que signifie l'affirmation « la suite $(u_n)$ est bornée » ?",
+      "verso": "Qu'elle est à la fois majorée et minorée : il existe un réel $M$ tel que $u_n\\le M$ pour tout $n$, et un réel $m$ tel que $u_n\\ge m$. Un majorant n'est jamais unique, car $M+1000$ en est un autre : on dit donc un majorant, et non le majorant.",
+      "difficulte": 1,
+      "tags": ["bornee", "majorant", "minorant"]
+    },
+    {
+      "id": "TD-CH06-003",
+      "lecon": "Limites de suites : énoncés admis",
+      "type": "definition",
+      "recto": "Que signifie l'affirmation « la suite $(u_n)$ converge vers le réel $L$ » ?",
+      "verso": "Que la distance $|u_n-L|$ devient aussi petite que l'on veut à partir d'un certain rang ; on note $\\lim\\limits_{n\\to+\\infty}u_n=L$. Cette limite est unique, ce qui autorise à parler de la limite d'une suite convergente.",
+      "difficulte": 1,
+      "tags": ["convergence", "definition", "limite"]
+    },
+    {
+      "id": "TD-CH06-004",
+      "lecon": "Limites de suites : énoncés admis",
+      "type": "definition",
+      "recto": "Quels sont les trois comportements possibles d'une suite lorsque $n$ tend vers $+\\infty$ ?",
+      "verso": "Elle converge vers un réel $L$ ; elle diverge vers $+\\infty$ ou vers $-\\infty$ ; ou elle n'a aucune limite, comme $u_n=(-1)^n$. Les deux derniers cas s'appellent tous deux divergence, donc une conclusion soignée précise toujours lequel des deux.",
+      "difficulte": 2,
+      "tags": ["divergence", "convergence", "vocabulaire"]
+    },
+    {
+      "id": "TD-CH06-005",
+      "lecon": "Limites de suites : énoncés admis",
+      "type": "formule",
+      "recto": "Qu'affirme le théorème de comparaison pour les suites ?",
+      "verso": "Si $u_n\\le v_n$ à partir d'un certain rang et si $\\lim u_n=+\\infty$, alors $\\lim v_n=+\\infty$. De même, si $u_n\\le v_n$ et si $\\lim v_n=-\\infty$, alors $\\lim u_n=-\\infty$. On ne reste pas sous un plafond quand la suite que l'on domine n'en a pas.",
+      "difficulte": 2,
+      "tags": ["comparaison", "limite-infinie", "theoreme"]
+    },
+    {
+      "id": "TD-CH06-006",
+      "lecon": "Limites de suites : énoncés admis",
+      "type": "formule",
+      "recto": "Qu'affirme le théorème des gendarmes pour les suites ?",
+      "verso": "Si $u_n\\le w_n\\le v_n$ à partir d'un certain rang et si $\\lim u_n=\\lim v_n=L$, alors $(w_n)$ converge et $\\lim w_n=L$. La suite du milieu est prise entre deux gendarmes qui vont au même endroit.",
+      "difficulte": 1,
+      "tags": ["gendarmes", "encadrement", "theoreme"]
+    },
+    {
+      "id": "TD-CH06-007",
+      "lecon": "Limites de suites : énoncés admis",
+      "type": "formule",
+      "recto": "Que devient une inégalité entre deux suites convergentes lorsqu'on passe à la limite ?",
+      "verso": "Si $u_n\\le v_n$ à partir d'un certain rang, avec $\\lim u_n=L$ et $\\lim v_n=L'$, alors $L\\le L'$. Seules les inégalités larges se conservent : $\\dfrac1n>0$ pour tout $n\\ge 1$, et pourtant la limite vaut $0$.",
+      "difficulte": 2,
+      "tags": ["ordre", "inegalite-large", "limite"]
+    },
+    {
+      "id": "TD-CH06-008",
+      "lecon": "Limites de suites : énoncés admis",
+      "type": "formule",
+      "recto": "Qu'affirme le théorème de convergence monotone ?",
+      "verso": "Toute suite croissante et majorée converge, et toute suite décroissante et minorée converge. La monotonie accompagnée d'une borne du bon côté suffit donc à garantir l'existence d'une limite finie. Cet énoncé est admis.",
+      "difficulte": 1,
+      "tags": ["convergence-monotone", "theoreme"]
+    },
+    {
+      "id": "TD-CH06-009",
+      "lecon": "Limites de suites : énoncés admis",
+      "type": "formule",
+      "recto": "Que sait-on exactement de la limite d'une suite croissante et majorée par $M$ ?",
+      "verso": "Seulement qu'elle existe et qu'elle vérifie $\\lim u_n\\le M$. Le théorème garantit la convergence sans donner la valeur de la limite, et cette limite n'est pas le majorant : une suite majorée par $3{,}5$ peut très bien converger vers $3$.",
+      "difficulte": 3,
+      "tags": ["convergence-monotone", "majorant", "piege"]
+    },
+    {
+      "id": "TD-CH06-010",
+      "lecon": "Limites de suites : énoncés admis",
+      "type": "definition",
+      "recto": "Pourquoi une suite bornée n'est-elle pas nécessairement convergente ?",
+      "verso": "Parce que rester entre deux bornes n'oblige pas à se rapprocher d'un nombre : $(-1)^n$ reste entre $-1$ et $1$ et n'a pourtant aucune limite. Il faut la monotonie en plus, croissante et majorée ou décroissante et minorée.",
+      "difficulte": 3,
+      "tags": ["bornee", "convergence", "piege"]
+    },
+    {
+      "id": "TD-CH06-011",
+      "lecon": "Limites de suites : énoncés admis",
+      "type": "definition",
+      "recto": "Quel exemple montre qu'une suite peut converger sans être monotone ?",
+      "verso": "La suite $\\dfrac{(-1)^n}{n}$, définie pour $n\\ge 1$ : elle change de signe à chaque rang, donc n'est pas monotone, et converge pourtant vers $0$. Le théorème de convergence monotone ne donne une implication que dans un seul sens.",
+      "difficulte": 2,
+      "tags": ["monotonie", "convergence", "contre-exemple"]
+    },
+    {
+      "id": "TD-CH06-012",
+      "lecon": "Limites de suites : énoncés admis",
+      "type": "formule",
+      "recto": "Quelles deux conditions le raisonnement par récurrence exige-t-il ?",
+      "verso": "L'initialisation, c'est-à-dire $P(n_0)$ vraie, et l'hérédité, c'est-à-dire que pour tout entier $n\\ge n_0$ la vérité de $P(n)$ entraîne celle de $P(n+1)$. On conclut alors que $P(n)$ est vraie pour tout entier $n\\ge n_0$.",
+      "difficulte": 1,
+      "tags": ["recurrence", "initialisation", "heredite"]
+    },
+    {
+      "id": "TD-CH06-013",
+      "lecon": "Limites de suites : énoncés admis",
+      "type": "definition",
+      "recto": "Pour quels rangs suppose-t-on la propriété vraie dans l'hérédité d'une récurrence ?",
+      "verso": "Pour un seul rang $n$ fixé quelconque, supérieur ou égal à $n_0$ : c'est l'hypothèse de récurrence. La supposer vraie pour tous les rangs reviendrait à supposer ce que l'on veut démontrer.",
+      "difficulte": 2,
+      "tags": ["recurrence", "hypothese", "redaction"]
+    },
+    {
+      "id": "TD-CH06-014",
+      "lecon": "Limites de suites : énoncés admis",
+      "type": "definition",
+      "recto": "Quelle propriété montre qu'une hérédité sans initialisation ne prouve rien ?",
+      "verso": "La propriété « $n>n$ » : si $n>n$ alors $n+1>n+1$, donc elle est héréditaire, et elle est pourtant fausse à tout rang. Comme des dominos bien alignés que personne ne pousse, l'hérédité seule ne fait rien tomber.",
+      "difficulte": 3,
+      "tags": ["recurrence", "initialisation", "piege"]
+    },
+    {
+      "id": "TD-CH06-015",
+      "lecon": "Limites de suites : énoncés admis",
+      "type": "formule",
+      "recto": "Comment détermine-t-on la limite d'une suite contenant $\\sin n$, $\\cos n$ ou $(-1)^n$ ?",
+      "verso": "On encadre le terme oscillant par ses bornes, par exemple $-1\\le\\cos n\\le 1$, puis on transporte cet encadrement jusqu'à la suite étudiée en respectant le sens des inégalités. On conclut par les gendarmes, ou par comparaison si une seule minoration suffit.",
+      "difficulte": 2,
+      "tags": ["encadrement", "gendarmes", "oscillation"]
+    },
+    {
+      "id": "TD-CH06-016",
+      "lecon": "Limites de suites : énoncés admis",
+      "type": "formule",
+      "recto": "Quel calcul donne le sens de variation d'une suite dont on connaît l'expression ?",
+      "verso": "Le signe de la différence $u_{n+1}-u_n$ : positive ou nulle, la suite croît ; négative ou nulle, elle décroît. Si tous les termes sont strictement positifs et que $n$ figure en exposant, on compare plutôt le quotient $\\dfrac{u_{n+1}}{u_n}$ à $1$.",
+      "difficulte": 2,
+      "tags": ["monotonie", "difference", "quotient"]
+    },
+    {
+      "id": "TD-CH06-017",
+      "lecon": "Suites de référence et croissances comparées",
+      "type": "formule",
+      "recto": "Quelle est la limite de la suite $(a^n)$ selon la valeur du réel $a>0$ ?",
+      "verso": "Si $a>1$, $\\lim a^n=+\\infty$ ; si $a=1$, la suite est constante égale à $1$ ; si $0<a<1$, $\\lim a^n=0$. Une même écriture donne donc deux comportements opposés selon la position de $a$ par rapport à $1$.",
+      "difficulte": 1,
+      "tags": ["suite-geometrique", "reference", "limite"]
+    },
+    {
+      "id": "TD-CH06-018",
+      "lecon": "Suites de référence et croissances comparées",
+      "type": "formule",
+      "recto": "Quelles sont les limites des suites de référence $(n^{\\alpha})$ et $(\\ln n)$ ?",
+      "verso": "Pour $\\alpha>0$, $\\lim n^{\\alpha}=+\\infty$ ; pour $\\alpha<0$, $\\lim n^{\\alpha}=0$ ; et $\\lim\\ln n=+\\infty$. Sous ce déguisement, $\\dfrac{1}{n^{3}}$ est une suite puissance d'exposant $-3$ et tend donc vers $0$.",
+      "difficulte": 1,
+      "tags": ["suite-puissance", "logarithme", "reference"]
+    },
+    {
+      "id": "TD-CH06-019",
+      "lecon": "Suites de référence et croissances comparées",
+      "type": "formule",
+      "recto": "Pourquoi la suite $\\left(\\left(-\\dfrac12\\right)^{n}\\right)$ converge-t-elle vers $0$ malgré une raison négative ?",
+      "verso": "Parce que le critère décisif porte sur $|q|$ et non sur $q$ : ici $\\left|q^{n}\\right|=\\left(\\dfrac12\\right)^{n}$ tend vers $0$. Pour $q\\le -1$, en revanche, la suite $(q^{n})$ n'a aucune limite, ses termes changeant de signe à chaque rang.",
+      "difficulte": 3,
+      "tags": ["raison-negative", "valeur-absolue", "piege"]
+    },
+    {
+      "id": "TD-CH06-020",
+      "lecon": "Suites de référence et croissances comparées",
+      "type": "formule",
+      "recto": "A quelle condition une suite arithmétique de raison $r$ converge-t-elle ?",
+      "verso": "Uniquement lorsque $r=0$ : la suite est alors constante. Si $r\\ne 0$, elle diverge vers $+\\infty$ lorsque $r>0$ et vers $-\\infty$ lorsque $r<0$.",
+      "difficulte": 2,
+      "tags": ["suite-arithmetique", "convergence", "raison"]
+    },
+    {
+      "id": "TD-CH06-021",
+      "lecon": "Suites de référence et croissances comparées",
+      "type": "formule",
+      "recto": "Quel est le comportement de la suite géométrique $\\left(u_0\\,q^{n}\\right)$, avec $u_0\\ne 0$, selon la raison $q$ ?",
+      "verso": "Elle converge vers $0$ si $-1<q<1$ ; elle est constante si $q=1$ ; elle diverge vers $+\\infty$ ou vers $-\\infty$ si $q>1$, selon le signe de $u_0$ ; et si $q\\le -1$, elle n'a pas de limite.",
+      "difficulte": 2,
+      "tags": ["suite-geometrique", "convergence", "raison"]
+    },
+    {
+      "id": "TD-CH06-022",
+      "lecon": "Suites de référence et croissances comparées",
+      "type": "formule",
+      "recto": "Quelles relations lient deux termes de rangs $n$ et $p$ dans une suite arithmétique, puis dans une suite géométrique ?",
+      "verso": "Pour une suite arithmétique de raison $r$ : $u_n=u_p+(n-p)\\,r$. Pour une suite géométrique de raison $q$ : $u_n=u_p\\,q^{\\,n-p}$. Ces relations évitent de repasser par le premier terme.",
+      "difficulte": 2,
+      "tags": ["suite-arithmetique", "suite-geometrique", "terme-general"]
+    },
+    {
+      "id": "TD-CH06-023",
+      "lecon": "Suites de référence et croissances comparées",
+      "type": "formule",
+      "recto": "Comment calcule-t-on la somme $u_p+u_{p+1}+\\dots+u_n$ de termes consécutifs d'une suite arithmétique ?",
+      "verso": "Par $(n-p+1)\\times\\dfrac{u_p+u_n}{2}$, soit le nombre de termes multiplié par la demi-somme des extrêmes. Ainsi $1+2+\\dots+100=100\\times\\dfrac{1+100}{2}=5050$.",
+      "difficulte": 2,
+      "tags": ["somme", "suite-arithmetique"]
+    },
+    {
+      "id": "TD-CH06-024",
+      "lecon": "Suites de référence et croissances comparées",
+      "type": "formule",
+      "recto": "Comment calcule-t-on la somme $u_p+u_{p+1}+\\dots+u_n$ de termes consécutifs d'une suite géométrique de raison $q\\ne 1$ ?",
+      "verso": "Par $u_p\\times\\dfrac{1-q^{\\,n-p+1}}{1-q}$. L'exposant $n-p+1$ est exactement le nombre de termes additionnés, et la condition $q\\ne 1$ garantit que le dénominateur n'est pas nul.",
+      "difficulte": 2,
+      "tags": ["somme", "suite-geometrique", "condition"]
+    },
+    {
+      "id": "TD-CH06-025",
+      "lecon": "Suites de référence et croissances comparées",
+      "type": "formule",
+      "recto": "Vers quoi tend la somme $S_n=u_0+u_1+\\dots+u_n$ d'une suite géométrique de raison $|q|<1$ ?",
+      "verso": "Vers $\\dfrac{u_0}{1-q}$, car $q^{\\,n+1}$ tend vers $0$ dans $S_n=u_0\\dfrac{1-q^{\\,n+1}}{1-q}$. On additionne de plus en plus de termes et le total reste pourtant sous un plafond, chaque apport n'étant qu'une fraction fixe du précédent.",
+      "difficulte": 2,
+      "tags": ["somme", "suite-geometrique", "limite"]
+    },
+    {
+      "id": "TD-CH06-026",
+      "lecon": "Suites de référence et croissances comparées",
+      "type": "formule",
+      "recto": "Quelles sont les trois croissances comparées des suites, pour $a>1$, $\\alpha>0$ et $p$ entier non nul ?",
+      "verso": "$\\lim\\dfrac{a^{n}}{n^{p}}=+\\infty$, $\\lim\\dfrac{n^{\\alpha}}{a^{n}}=0$ et $\\lim\\dfrac{\\ln n}{n^{\\alpha}}=0$. La géométrique de raison supérieure à $1$ l'emporte sur les puissances, qui l'emportent sur le logarithme : $\\ln n\\ll n^{\\alpha}\\ll a^{n}$.",
+      "difficulte": 1,
+      "tags": ["croissances-comparees", "limite"]
+    },
+    {
+      "id": "TD-CH06-027",
+      "lecon": "Suites de référence et croissances comparées",
+      "type": "formule",
+      "recto": "Quelle précaution s'impose quand on divise par $\\ln q$ pour trouver le rang où $q^{n}$ franchit un seuil ?",
+      "verso": "Surveiller le signe de $\\ln q$ : si $0<q<1$, alors $\\ln q<0$ et la division renverse l'inégalité. On isole d'abord $q^{n}$, on applique le logarithme népérien, strictement croissant, puis on conclut par le premier entier qui convient.",
+      "difficulte": 2,
+      "tags": ["seuil", "logarithme", "inegalite"]
+    },
+    {
+      "id": "TD-CH06-028",
+      "lecon": "Etude de suites $u_n=f(n)$ et de suites récurrentes",
+      "type": "definition",
+      "recto": "Qu'est-ce qui distingue une suite définie explicitement d'une suite définie par récurrence ?",
+      "verso": "Une définition explicite donne $u_n$ directement à partir de $n$, comme $u_n=\\dfrac{2n+1}{n+3}$ : $u_{100}$ s'obtient en une seule substitution. Une définition par récurrence donne le premier terme et le passage au suivant : il faut alors calculer tous les termes intermédiaires.",
+      "difficulte": 1,
+      "tags": ["suite-explicite", "suite-recurrente", "definition"]
+    },
+    {
+      "id": "TD-CH06-029",
+      "lecon": "Etude de suites $u_n=f(n)$ et de suites récurrentes",
+      "type": "formule",
+      "recto": "Que déduit-on pour la suite $u_n=f(n)$ lorsque $f$ est croissante sur $[n_0\\,;+\\infty[$ ?",
+      "verso": "Que la suite $(u_n)$ est croissante, et de même une fonction décroissante donne une suite décroissante. La limite de la suite est $\\lim\\limits_{x\\to+\\infty}f(x)$ lorsque cette limite existe.",
+      "difficulte": 2,
+      "tags": ["suite-explicite", "monotonie", "limite"]
+    },
+    {
+      "id": "TD-CH06-030",
+      "lecon": "Etude de suites $u_n=f(n)$ et de suites récurrentes",
+      "type": "definition",
+      "recto": "Pourquoi n'utilise-t-on jamais le lien entre $u_n=f(n)$ et $f$ dans le sens de la suite vers la fonction ?",
+      "verso": "Parce que la réciproque est fausse : la suite ne regarde que les valeurs entières et ignore ce qui se passe entre deux entiers, si bien qu'elle peut croître sans que $f$ soit croissante. L'implication ne vaut donc que de la fonction vers la suite.",
+      "difficulte": 2,
+      "tags": ["suite-explicite", "reciproque", "piege"]
+    },
+    {
+      "id": "TD-CH06-031",
+      "lecon": "Etude de suites $u_n=f(n)$ et de suites récurrentes",
+      "type": "formule",
+      "recto": "Qu'obtient-on lorsqu'un intervalle $I$ contient $u_0$ et vérifie $f(I)\\subset I$ pour la suite $u_{n+1}=f(u_n)$ ?",
+      "verso": "Tous les termes de la suite restent dans $I$, ce qui se démontre par récurrence. On dit que l'intervalle est stable, et c'est lui qui fournit un minorant et un majorant de la suite.",
+      "difficulte": 2,
+      "tags": ["suite-recurrente", "intervalle-stable", "bornes"]
+    },
+    {
+      "id": "TD-CH06-032",
+      "lecon": "Etude de suites $u_n=f(n)$ et de suites récurrentes",
+      "type": "formule",
+      "recto": "Quelle équation vérifie la limite $L$ d'une suite récurrente définie par $u_{n+1}=f(u_n)$ ?",
+      "verso": "L'équation $L=f(L)$, sous deux conditions : que la suite converge vers $L$ et que $f$ soit continue en $L$. Une solution de cette équation s'appelle un point fixe de $f$.",
+      "difficulte": 2,
+      "tags": ["point-fixe", "suite-recurrente", "continuite"]
+    },
+    {
+      "id": "TD-CH06-033",
+      "lecon": "Etude de suites $u_n=f(n)$ et de suites récurrentes",
+      "type": "definition",
+      "recto": "Pourquoi un point fixe de $f$ n'est-il qu'un candidat à la limite de la suite $u_{n+1}=f(u_n)$ ?",
+      "verso": "Parce qu'il ne devient la limite que si la suite converge, ce qu'il faut établir d'abord. La suite $u_0=1$, $u_{n+1}=2u_n$ admet le point fixe $L=0$ et diverge pourtant vers $+\\infty$ : écrire $\\lim u_n=0$ serait une faute grave.",
+      "difficulte": 3,
+      "tags": ["point-fixe", "convergence", "piege"]
+    },
+    {
+      "id": "TD-CH06-034",
+      "lecon": "Etude de suites $u_n=f(n)$ et de suites récurrentes",
+      "type": "formule",
+      "recto": "Comment choisit-on entre plusieurs solutions de l'équation $L=f(L)$ ?",
+      "verso": "On retient celle qui appartient à l'intervalle stable contenant tous les termes, et l'on justifie l'exclusion des autres. Pour $u_{n+1}=\\sqrt{6u_n+7}$ avec $u_n\\ge 0$, l'équation donne $-1$ et $7$, et seul $7$ convient.",
+      "difficulte": 2,
+      "tags": ["point-fixe", "intervalle-stable", "justification"]
+    },
+    {
+      "id": "TD-CH06-035",
+      "lecon": "Etude de suites $u_n=f(n)$ et de suites récurrentes",
+      "type": "definition",
+      "recto": "Comment un point fixe de $f$ se lit-il graphiquement ?",
+      "verso": "C'est l'abscisse d'un point d'intersection de la courbe d'équation $y=f(x)$ avec la droite d'équation $y=x$. Une fonction peut en avoir plusieurs, ou aucun, et une suite partie exactement d'un point fixe ne bouge plus jamais.",
+      "difficulte": 2,
+      "tags": ["point-fixe", "lecture-graphique"]
+    },
+    {
+      "id": "TD-CH06-036",
+      "lecon": "Etude de suites $u_n=f(n)$ et de suites récurrentes",
+      "type": "definition",
+      "recto": "Quelle allure prend la construction des termes d'une suite récurrente selon le sens de variation de $f$ ?",
+      "verso": "Un escalier lorsque $f$ est croissante, la suite étant alors monotone ; un escargot lorsque $f$ est décroissante, les termes arrivant alternativement de part et d'autre du point fixe. Dans les deux cas la construction suggère le comportement, elle ne le démontre pas.",
+      "difficulte": 2,
+      "tags": ["escalier", "escargot", "suite-recurrente"]
+    },
+    {
+      "id": "TD-CH06-037",
+      "lecon": "Etude de suites $u_n=f(n)$ et de suites récurrentes",
+      "type": "formule",
+      "recto": "Quelle suite auxiliaire introduit-on lorsque $u_{n+1}=a\\,u_n+b$ avec $a\\ne 1$ ?",
+      "verso": "La suite $v_n=u_n-L$, où $L$ est le point fixe solution de $L=aL+b$ : elle est géométrique de raison $a$. On écrit $v_n=v_0\\,a^{n}$, puis on revient à $u_n=L+v_n$, ce qui donne une expression explicite et la limite.",
+      "difficulte": 2,
+      "tags": ["suite-auxiliaire", "fonction-affine", "point-fixe"]
+    },
+    {
+      "id": "TD-CH06-038",
+      "lecon": "Etude de suites $u_n=f(n)$ et de suites récurrentes",
+      "type": "formule",
+      "recto": "Pourquoi le passage à la limite dans $u_{n+1}=f(u_n)$ donne-t-il l'égalité $L=f(L)$ ?",
+      "verso": "Parce que $(u_{n+1})$ n'est que $(u_n)$ décalée d'un rang et a donc la même limite $L$, tandis que la continuité de $f$ donne $f(u_n)\\to f(L)$. L'unicité de la limite impose alors $L=f(L)$.",
+      "difficulte": 2,
+      "tags": ["point-fixe", "passage-a-la-limite", "continuite"]
+    }
+  ]
+}

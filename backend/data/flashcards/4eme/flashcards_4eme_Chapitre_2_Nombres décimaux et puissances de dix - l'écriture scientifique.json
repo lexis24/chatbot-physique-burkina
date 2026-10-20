@@ -1,0 +1,278 @@
+{
+  "niveau": "4ème",
+  "chapitre": "Chapitre 2 : Nombres décimaux et puissances de dix : l'écriture scientifique",
+  "source": "maths/4eme/Chapitre_2_Decimaux_puissances_de_dix",
+  "nombre_cartes": 30,
+  "cartes": [
+    {
+      "id": "4E-CH02-001",
+      "lecon": "Les puissances de 10 ; écrire un décimal sous la forme $a \\times 10^{p}$",
+      "type": "definition",
+      "recto": "Que représente l'écriture $a^{n}$, où $n$ est un entier positif ?",
+      "verso": "Un produit de $n$ facteurs tous égaux à $a$ ; l'exposant $n$ indique le nombre de facteurs. Ainsi $2^{4} = 2 \\times 2 \\times 2 \\times 2 = 16$.",
+      "difficulte": 1,
+      "tags": ["puissance", "exposant", "definition"]
+    },
+    {
+      "id": "4E-CH02-002",
+      "lecon": "Les puissances de 10 ; écrire un décimal sous la forme $a \\times 10^{p}$",
+      "type": "formule",
+      "recto": "Comment s'écrit en chiffres la puissance $10^{p}$, lorsque $p$ est un entier positif ?",
+      "verso": "C'est $1$ suivi de $p$ zéros, car $10^{p}$ est le produit de $p$ facteurs égaux à $10$ : $10^{3} = 1\\,000$.",
+      "difficulte": 1,
+      "tags": ["puissances-de-dix", "ecriture-decimale"]
+    },
+    {
+      "id": "4E-CH02-003",
+      "lecon": "Les puissances de 10 ; écrire un décimal sous la forme $a \\times 10^{p}$",
+      "type": "formule",
+      "recto": "Combien vaut $10^{0}$ ?",
+      "verso": "$10^{0} = 1$, par convention. Plus généralement, $a^{0} = 1$ pour tout nombre $a$ non nul, et $a^{1} = a$.",
+      "difficulte": 1,
+      "tags": ["puissances-de-dix", "convention"]
+    },
+    {
+      "id": "4E-CH02-004",
+      "lecon": "Les puissances de 10 ; écrire un décimal sous la forme $a \\times 10^{p}$",
+      "type": "formule",
+      "recto": "Que vaut la puissance $10^{-p}$, lorsque $p$ est un entier positif ?",
+      "verso": "$10^{-p} = 1 \\div 10^{p}$ : c'est un nombre plus petit que $1$, formé de $p$ rangs après la virgule. Ainsi $10^{-3} = 0{,}001$.",
+      "difficulte": 2,
+      "tags": ["puissances-de-dix", "exposant-negatif"]
+    },
+    {
+      "id": "4E-CH02-005",
+      "lecon": "Les puissances de 10 ; écrire un décimal sous la forme $a \\times 10^{p}$",
+      "type": "formule",
+      "recto": "Quelles sont les deux règles de calcul sur les puissances de $10$ ?",
+      "verso": "$10^{a} \\times 10^{b} = 10^{a+b}$ et $10^{a} \\div 10^{b} = 10^{a-b}$, pour tous les entiers relatifs $a$ et $b$.",
+      "difficulte": 1,
+      "tags": ["puissances-de-dix", "regles-de-calcul"]
+    },
+    {
+      "id": "4E-CH02-006",
+      "lecon": "Les puissances de 10 ; écrire un décimal sous la forme $a \\times 10^{p}$",
+      "type": "formule",
+      "recto": "Sous quelle forme tout nombre décimal peut-il s'écrire à l'aide d'une puissance de dix ?",
+      "verso": "Sous la forme $a \\times 10^{p}$, où $a$ est un nombre décimal et $p$ un entier relatif. Cette écriture n'est pas unique.",
+      "difficulte": 2,
+      "tags": ["ecriture-a-fois-dix-puissance-p", "propriete"]
+    },
+    {
+      "id": "4E-CH02-007",
+      "lecon": "Les puissances de 10 ; écrire un décimal sous la forme $a \\times 10^{p}$",
+      "type": "formule",
+      "recto": "Que devient la virgule d'un nombre que l'on multiplie par $10^{p}$, avec $p$ positif ?",
+      "verso": "Aucun chiffre ne change : la virgule se déplace de $p$ rangs vers la droite, et l'on complète par des zéros si les chiffres manquent. Ainsi $3{,}75 \\times 10^{2} = 375$.",
+      "difficulte": 2,
+      "tags": ["deplacement-de-la-virgule", "puissances-de-dix"]
+    },
+    {
+      "id": "4E-CH02-008",
+      "lecon": "Les puissances de 10 ; écrire un décimal sous la forme $a \\times 10^{p}$",
+      "type": "formule",
+      "recto": "Dans quel sens la virgule se déplace-t-elle quand on multiplie un nombre par $10^{-p}$ ?",
+      "verso": "Vers la gauche, de $p$ rangs, car multiplier par $10^{-p}$ revient à diviser par $10^{p}$ : $3{,}75 \\times 10^{-2} = 0{,}0375$.",
+      "difficulte": 2,
+      "tags": ["deplacement-de-la-virgule", "exposant-negatif"]
+    },
+    {
+      "id": "4E-CH02-009",
+      "lecon": "Les puissances de 10 ; écrire un décimal sous la forme $a \\times 10^{p}$",
+      "type": "formule",
+      "recto": "Comment détermine-t-on le signe de $p$ quand on écrit un nombre sous la forme $a \\times 10^{p}$ ?",
+      "verso": "On compte les rangs dont la virgule a été déplacée : vers la gauche, l'exposant est positif ; vers la droite, il est négatif. Ainsi $3\\,700 = 37 \\times 10^{2}$ et $0{,}045 = 45 \\times 10^{-3}$.",
+      "difficulte": 2,
+      "tags": ["ecriture-a-fois-dix-puissance-p", "signe-de-l-exposant"]
+    },
+    {
+      "id": "4E-CH02-010",
+      "lecon": "Les puissances de 10 ; écrire un décimal sous la forme $a \\times 10^{p}$",
+      "type": "formule",
+      "recto": "Pourquoi un même nombre admet-il une infinité d'écritures de la forme $a \\times 10^{p}$ ?",
+      "verso": "Parce que diviser le premier facteur par $10$ et augmenter l'exposant d'une unité ne change pas le produit : $1\\,500 = 15 \\times 10^{2} = 1{,}5 \\times 10^{3} = 150 \\times 10^{1}$.",
+      "difficulte": 3,
+      "tags": ["ecriture-a-fois-dix-puissance-p", "non-unicite"]
+    },
+    {
+      "id": "4E-CH02-011",
+      "lecon": "Les puissances de 10 ; écrire un décimal sous la forme $a \\times 10^{p}$",
+      "type": "definition",
+      "recto": "Pourquoi $10^{-3}$ n'est-il pas un nombre négatif ?",
+      "verso": "Parce qu'un exposant négatif indique seulement que le nombre est plus petit que $1$ : $10^{-3} = 0{,}001$, qui est bien positif. C'est $-10^{3}$ qui vaut $-1\\,000$.",
+      "difficulte": 3,
+      "tags": ["exposant-negatif", "piege"]
+    },
+    {
+      "id": "4E-CH02-012",
+      "lecon": "L'écriture scientifique d'un nombre décimal",
+      "type": "definition",
+      "recto": "Qu'est-ce que l'écriture scientifique d'un nombre décimal non nul ?",
+      "verso": "C'est son écriture sous la forme $a \\times 10^{p}$ avec $1 \\le a < 10$ et $p$ entier relatif. Par exemple $360\\,000 = 3{,}6 \\times 10^{5}$.",
+      "difficulte": 1,
+      "tags": ["ecriture-scientifique", "definition"]
+    },
+    {
+      "id": "4E-CH02-013",
+      "lecon": "L'écriture scientifique d'un nombre décimal",
+      "type": "definition",
+      "recto": "Comment appelle-t-on les deux éléments d'une écriture scientifique $a \\times 10^{p}$ ?",
+      "verso": "Le nombre $a$ est le premier facteur, appelé aussi mantisse ; le nombre $p$ est l'exposant.",
+      "difficulte": 1,
+      "tags": ["ecriture-scientifique", "vocabulaire"]
+    },
+    {
+      "id": "4E-CH02-014",
+      "lecon": "L'écriture scientifique d'un nombre décimal",
+      "type": "formule",
+      "recto": "Combien d'écritures scientifiques un nombre décimal non nul possède-t-il ?",
+      "verso": "Une seule : il n'existe qu'une valeur possible du premier facteur et une seule de l'exposant. C'est ce qui la distingue de l'écriture $a \\times 10^{p}$ générale, qui en admet une infinité.",
+      "difficulte": 2,
+      "tags": ["ecriture-scientifique", "unicite"]
+    },
+    {
+      "id": "4E-CH02-015",
+      "lecon": "L'écriture scientifique d'un nombre décimal",
+      "type": "definition",
+      "recto": "A quoi reconnaît-on qu'une écriture $a \\times 10^{p}$ n'est pas une écriture scientifique ?",
+      "verso": "Le premier facteur n'a pas exactement un chiffre non nul avant la virgule : $45 \\times 10^{3}$ ne convient pas car $45 \\ge 10$, et $0{,}9 \\times 10^{2}$ non plus car $0{,}9 < 1$.",
+      "difficulte": 2,
+      "tags": ["ecriture-scientifique", "premier-facteur", "piege"]
+    },
+    {
+      "id": "4E-CH02-016",
+      "lecon": "L'écriture scientifique d'un nombre décimal",
+      "type": "formule",
+      "recto": "Où place-t-on la virgule pour mettre un nombre en écriture scientifique ?",
+      "verso": "Juste après son premier chiffre non nul : on obtient ainsi un premier facteur compris entre $1$ et $10$, et le nombre de rangs franchis donne l'exposant. Ainsi $45\\,700 = 4{,}57 \\times 10^{4}$.",
+      "difficulte": 2,
+      "tags": ["ecriture-scientifique", "premier-chiffre-non-nul"]
+    },
+    {
+      "id": "4E-CH02-017",
+      "lecon": "L'écriture scientifique d'un nombre décimal",
+      "type": "formule",
+      "recto": "Comment compare-t-on deux nombres positifs écrits en écriture scientifique ?",
+      "verso": "On compare d'abord les exposants : le plus grand exposant l'emporte. Les premiers facteurs ne servent qu'à départager deux nombres de même exposant. Ainsi $1{,}25 \\times 10^{9} > 9{,}9 \\times 10^{8}$.",
+      "difficulte": 2,
+      "tags": ["ecriture-scientifique", "comparaison"]
+    },
+    {
+      "id": "4E-CH02-018",
+      "lecon": "L'écriture scientifique d'un nombre décimal",
+      "type": "formule",
+      "recto": "Pourquoi le nombre qui a le plus grand exposant est-il toujours le plus grand, en écriture scientifique ?",
+      "verso": "Parce que le premier facteur vérifie $1 \\le a < 10$ : le nombre vaut au moins $10^{p}$ et reste plus petit que $10^{p+1}$. Deux exposants différents suffisent donc à ranger les nombres.",
+      "difficulte": 3,
+      "tags": ["ecriture-scientifique", "comparaison", "demonstration"]
+    },
+    {
+      "id": "4E-CH02-019",
+      "lecon": "L'écriture scientifique d'un nombre décimal",
+      "type": "formule",
+      "recto": "Comment obtient-on l'ordre de grandeur d'un nombre écrit en écriture scientifique ?",
+      "verso": "On remplace le premier facteur par $1$ ou par $10$, selon celui dont il est le plus proche, et on garde la puissance de $10$. Ainsi $2{,}1 \\times 10^{7}$ a pour ordre de grandeur $10^{7}$.",
+      "difficulte": 2,
+      "tags": ["ordre-de-grandeur", "ecriture-scientifique"]
+    },
+    {
+      "id": "4E-CH02-020",
+      "lecon": "L'écriture scientifique d'un nombre décimal",
+      "type": "formule",
+      "recto": "Comment corrige-t-on une écriture $a \\times 10^{p}$ dont le premier facteur est plus petit que $1$ ?",
+      "verso": "On multiplie ce premier facteur par $10$ et on diminue l'exposant d'une unité, ce qui ne change pas le nombre : $0{,}5 \\times 10^{2} = 5 \\times 10^{1}$.",
+      "difficulte": 3,
+      "tags": ["ecriture-scientifique", "correction", "exposant"]
+    },
+    {
+      "id": "4E-CH02-021",
+      "lecon": "L'écriture scientifique d'un nombre décimal",
+      "type": "definition",
+      "recto": "Quelles puissances de $10$ désignent les préfixes kilo, méga, giga, milli, micro et nano ?",
+      "verso": "Kilo désigne $10^{3}$, méga $10^{6}$ et giga $10^{9}$ ; milli désigne $10^{-3}$, micro $10^{-6}$ et nano $10^{-9}$.",
+      "difficulte": 2,
+      "tags": ["prefixes", "systeme-international", "unites"]
+    },
+    {
+      "id": "4E-CH02-022",
+      "lecon": "Opérations et ordres de grandeur avec les puissances de 10",
+      "type": "formule",
+      "recto": "Comment multiplie-t-on deux nombres écrits avec des puissances de dix ?",
+      "verso": "$\\left(a \\times 10^{p}\\right) \\times \\left(b \\times 10^{q}\\right) = \\left(a \\times b\\right) \\times 10^{p+q}$ : on multiplie les premiers facteurs et on additionne les exposants.",
+      "difficulte": 1,
+      "tags": ["multiplication", "puissances-de-dix"]
+    },
+    {
+      "id": "4E-CH02-023",
+      "lecon": "Opérations et ordres de grandeur avec les puissances de 10",
+      "type": "formule",
+      "recto": "Comment divise-t-on deux nombres écrits avec des puissances de dix ?",
+      "verso": "$\\left(a \\times 10^{p}\\right) \\div \\left(b \\times 10^{q}\\right) = \\left(a \\div b\\right) \\times 10^{p-q}$ : on divise les premiers facteurs et on soustrait les exposants.",
+      "difficulte": 1,
+      "tags": ["division", "puissances-de-dix"]
+    },
+    {
+      "id": "4E-CH02-024",
+      "lecon": "Opérations et ordres de grandeur avec les puissances de 10",
+      "type": "formule",
+      "recto": "Comment additionne-t-on deux nombres écrits avec des puissances de dix différentes ?",
+      "verso": "On les ramène d'abord à la même puissance de $10$, en général la plus grande, puis on additionne les premiers facteurs : $\\left(3 \\times 10^{2}\\right) + \\left(5 \\times 10^{1}\\right) = \\left(3 + 0{,}5\\right) \\times 10^{2} = 3{,}5 \\times 10^{2}$.",
+      "difficulte": 2,
+      "tags": ["addition", "meme-puissance"]
+    },
+    {
+      "id": "4E-CH02-025",
+      "lecon": "Opérations et ordres de grandeur avec les puissances de 10",
+      "type": "formule",
+      "recto": "Pourquoi la somme $\\left(3 \\times 10^{2}\\right) + \\left(5 \\times 10^{1}\\right)$ ne vaut-elle pas $8 \\times 10^{3}$ ?",
+      "verso": "Parce qu'on n'additionne jamais les exposants dans une somme, et qu'on ne peut ajouter les premiers facteurs que si les puissances de $10$ sont les mêmes. La somme vaut $3{,}5 \\times 10^{2}$.",
+      "difficulte": 3,
+      "tags": ["addition", "piege", "exposants"]
+    },
+    {
+      "id": "4E-CH02-026",
+      "lecon": "Opérations et ordres de grandeur avec les puissances de 10",
+      "type": "definition",
+      "recto": "Pourquoi additionne-t-on les exposants dans un produit et jamais dans une somme ?",
+      "verso": "Dans un produit, les puissances de $10$ sont des facteurs de même base : on les regroupe en additionnant les exposants. Dans une somme, elles jouent le rôle d'unités, et l'on n'additionne que des grandeurs de même nature, comme des sacs de même masse.",
+      "difficulte": 3,
+      "tags": ["produit", "somme", "distinction"]
+    },
+    {
+      "id": "4E-CH02-027",
+      "lecon": "Opérations et ordres de grandeur avec les puissances de 10",
+      "type": "definition",
+      "recto": "A quel calcul sur les fractions ressemble l'addition de deux nombres écrits avec des puissances de dix ?",
+      "verso": "A la réduction au même dénominateur : on cherche d'abord une puissance de $10$ commune, comme on cherche un dénominateur commun, puis on additionne les premiers facteurs comme on additionne les numérateurs.",
+      "difficulte": 2,
+      "tags": ["addition", "fractions", "analogie"]
+    },
+    {
+      "id": "4E-CH02-028",
+      "lecon": "Opérations et ordres de grandeur avec les puissances de 10",
+      "type": "formule",
+      "recto": "Pourquoi faut-il relire l'écriture obtenue après avoir multiplié deux nombres écrits avec des puissances de dix ?",
+      "verso": "Parce que le premier facteur obtenu n'est pas toujours compris entre $1$ et $10$ : $20 \\times 10^{4}$ doit encore être corrigé en $2 \\times 10^{5}$ pour devenir une écriture scientifique.",
+      "difficulte": 2,
+      "tags": ["multiplication", "ecriture-scientifique", "correction"]
+    },
+    {
+      "id": "4E-CH02-029",
+      "lecon": "Opérations et ordres de grandeur avec les puissances de 10",
+      "type": "definition",
+      "recto": "A quoi sert l'ordre de grandeur d'un résultat ?",
+      "verso": "Il ne sert pas à calculer juste, mais à savoir à peu près de quelle taille est le résultat, et donc à repérer une réponse absurde. C'est la puissance de $10$ la plus proche du nombre.",
+      "difficulte": 2,
+      "tags": ["ordre-de-grandeur", "estimation"]
+    },
+    {
+      "id": "4E-CH02-030",
+      "lecon": "Opérations et ordres de grandeur avec les puissances de 10",
+      "type": "definition",
+      "recto": "Pourquoi la règle $10^{p} \\times 10^{q} = 10^{p+q}$ vaut-elle pour tous les exposants, et pas seulement pour ceux que l'on a testés ?",
+      "verso": "Parce qu'elle se démontre par le regroupement des facteurs d'un produit, sans utiliser aucun nombre particulier. Une déduction de ce type vaut pour tous les premiers facteurs et tous les exposants.",
+      "difficulte": 3,
+      "tags": ["demonstration", "puissances-de-dix", "generalite"]
+    }
+  ]
+}

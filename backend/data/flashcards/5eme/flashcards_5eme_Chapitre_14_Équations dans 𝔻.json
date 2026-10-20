@@ -1,0 +1,296 @@
+{
+  "niveau": "5ème",
+  "chapitre": "Chapitre 14 : Equations dans $\\mathbb{D}$",
+  "source": "maths/5eme/Chapitre_14_Equations_dans_D",
+  "nombre_cartes": 32,
+  "cartes": [
+    {
+      "id": "5E-CH14-001",
+      "lecon": "Qu'est-ce qu'une équation ?",
+      "type": "definition",
+      "recto": "Qu'est-ce qu'une équation ?",
+      "verso": "C'est une égalité dans laquelle figure un nombre inconnu, représenté par une lettre, le plus souvent $x$.",
+      "difficulte": 1,
+      "tags": ["equation", "definition", "inconnue"]
+    },
+    {
+      "id": "5E-CH14-002",
+      "lecon": "Qu'est-ce qu'une équation ?",
+      "type": "definition",
+      "recto": "Comment nomme-t-on les deux côtés du signe $=$ dans une équation ?",
+      "verso": "Ce qui est écrit à gauche du signe $=$ est le premier membre, ce qui est écrit à droite est le second membre.",
+      "difficulte": 1,
+      "tags": ["equation", "membres", "vocabulaire"]
+    },
+    {
+      "id": "5E-CH14-003",
+      "lecon": "Qu'est-ce qu'une équation ?",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on une solution d'une équation ?",
+      "verso": "C'est une valeur de l'inconnue qui rend l'égalité vraie. Certaines équations ont une solution, d'autres n'en ont aucune.",
+      "difficulte": 1,
+      "tags": ["equation", "solution", "definition"]
+    },
+    {
+      "id": "5E-CH14-004",
+      "lecon": "Qu'est-ce qu'une équation ?",
+      "type": "definition",
+      "recto": "Que veut dire résoudre une équation ?",
+      "verso": "C'est trouver toutes ses solutions, c'est-à-dire toutes les valeurs de l'inconnue qui rendent l'égalité vraie.",
+      "difficulte": 1,
+      "tags": ["equation", "resoudre", "definition"]
+    },
+    {
+      "id": "5E-CH14-005",
+      "lecon": "Qu'est-ce qu'une équation ?",
+      "type": "formule",
+      "recto": "Comment teste-t-on si un nombre proposé est solution d'une équation ?",
+      "verso": "On remplace l'inconnue par ce nombre, on calcule chaque membre séparément, puis on compare. Si les deux membres sont égaux, le nombre est solution.",
+      "difficulte": 2,
+      "tags": ["equation", "solution", "verification"]
+    },
+    {
+      "id": "5E-CH14-006",
+      "lecon": "Qu'est-ce qu'une équation ?",
+      "type": "formule",
+      "recto": "Pourquoi le calcul du seul premier membre ne prouve-t-il jamais qu'un nombre est solution ?",
+      "verso": "Parce que c'est la comparaison des deux membres qui conclut. Tant qu'on n'a pas dit à quoi on compare le résultat obtenu, on n'a rien démontré.",
+      "difficulte": 3,
+      "tags": ["equation", "solution", "piege"]
+    },
+    {
+      "id": "5E-CH14-007",
+      "lecon": "Qu'est-ce qu'une équation ?",
+      "type": "definition",
+      "recto": "Qu'est-ce qui distingue l'équation $x + 5 = 12$ de l'égalité $7 + 5 = 12$ ?",
+      "verso": "L'égalité $7 + 5 = 12$ est vraie une fois pour toutes. Dans l'équation, la lettre attend une valeur : c'est une question posée. On ne dit donc pas qu'une équation est vraie ou fausse, mais qu'un nombre est solution ou ne l'est pas.",
+      "difficulte": 2,
+      "tags": ["equation", "egalite", "distinction"]
+    },
+    {
+      "id": "5E-CH14-008",
+      "lecon": "Qu'est-ce qu'une équation ?",
+      "type": "definition",
+      "recto": "Quelle lettre peut-on choisir pour désigner l'inconnue d'un problème ?",
+      "verso": "N'importe laquelle : on écrit souvent $x$, mais il vaut mieux prendre une lettre qui rappelle ce qu'on cherche, comme $p$ pour un prix. L'essentiel est de dire, avant de commencer, ce qu'elle représente.",
+      "difficulte": 2,
+      "tags": ["equation", "inconnue", "notation"]
+    },
+    {
+      "id": "5E-CH14-009",
+      "lecon": "Résoudre $a + x = b$ et $a - x = b$",
+      "type": "formule",
+      "recto": "Comment résout-on une équation de la forme $x + a = b$ ?",
+      "verso": "On retranche $a$ aux deux membres : les deux opérations contraires s'annulent du côté de l'inconnue, et il reste $x = b - a$.",
+      "difficulte": 1,
+      "tags": ["equation", "addition", "resolution"]
+    },
+    {
+      "id": "5E-CH14-010",
+      "lecon": "Résoudre $a + x = b$ et $a - x = b$",
+      "type": "formule",
+      "recto": "Quelle opération applique-t-on aux deux membres pour résoudre $x - a = b$ ?",
+      "verso": "On ajoute $a$ aux deux membres, et il reste $x = b + a$. Ainsi $x - 15 = 79$ donne $x = 79 + 15 = 94$.",
+      "difficulte": 2,
+      "tags": ["equation", "soustraction", "resolution"]
+    },
+    {
+      "id": "5E-CH14-011",
+      "lecon": "Résoudre $a + x = b$ et $a - x = b$",
+      "type": "formule",
+      "recto": "Pourquoi l'équation $a - x = b$ demande-t-elle plus d'attention que les autres ?",
+      "verso": "Parce que l'inconnue y est retranchée, donc précédée d'un signe moins. On ajoute $x$ aux deux membres, puis on retranche $b$, et il reste $x = a - b$. La vérification devient indispensable.",
+      "difficulte": 3,
+      "tags": ["equation", "soustraction", "piege"]
+    },
+    {
+      "id": "5E-CH14-012",
+      "lecon": "Résoudre $a + x = b$ et $a - x = b$",
+      "type": "formule",
+      "recto": "Pourquoi peut-on transformer une équation sans perdre sa solution ?",
+      "verso": "Parce qu'une même opération faite sur les deux membres conserve l'égalité, dans un sens comme dans l'autre. L'équation obtenue a exactement les mêmes solutions : on dit qu'elles sont équivalentes.",
+      "difficulte": 2,
+      "tags": ["equation", "equivalence", "justification"]
+    },
+    {
+      "id": "5E-CH14-013",
+      "lecon": "Résoudre $a + x = b$ et $a - x = b$",
+      "type": "formule",
+      "recto": "A quoi sert la vérification, si les transformations conservent déjà les solutions ?",
+      "verso": "Elle ne sert pas à contrôler la propriété, mais à repérer une erreur de calcul, qui, elle, arrive souvent. On remplace l'inconnue par la valeur trouvée dans l'équation de départ.",
+      "difficulte": 2,
+      "tags": ["equation", "verification"]
+    },
+    {
+      "id": "5E-CH14-014",
+      "lecon": "Résoudre $a + x = b$ et $a - x = b$",
+      "type": "formule",
+      "recto": "Que faire quand l'inconnue figure dans le second membre, comme dans $47 = x + 11$ ?",
+      "verso": "Rien de particulier : une égalité se lit dans les deux sens, et cette équation se traite exactement comme $x + 11 = 47$.",
+      "difficulte": 2,
+      "tags": ["equation", "membres", "lecture"]
+    },
+    {
+      "id": "5E-CH14-015",
+      "lecon": "Résoudre $a + x = b$ et $a - x = b$",
+      "type": "formule",
+      "recto": "Comment prévoit-on, avant tout calcul, que la solution d'une équation sera négative ?",
+      "verso": "En comparant le nombre du second membre à celui qui accompagne l'inconnue : s'il est plus petit, la solution est négative. Dans $\\mathbb{D}$, une solution comme $-11$ est parfaitement acceptable.",
+      "difficulte": 2,
+      "tags": ["equation", "solution-negative", "controle"]
+    },
+    {
+      "id": "5E-CH14-016",
+      "lecon": "Résoudre $a + x = b$ et $a - x = b$",
+      "type": "formule",
+      "recto": "Quelle erreur commet l'élève qui écrit $x = 4 + 15$ pour l'équation $x + 15 = 4$ ?",
+      "verso": "Il recopie l'addition au lieu de la contrarier. On retranche $15$ aux deux membres : $x = 4 - 15 = -11$.",
+      "difficulte": 3,
+      "tags": ["equation", "addition", "piege"]
+    },
+    {
+      "id": "5E-CH14-017",
+      "lecon": "Résoudre $a \\times x = b$ et $x \\div a = b$",
+      "type": "formule",
+      "recto": "Comment résout-on une équation de la forme $a \\times x = b$, avec $a \\ne 0$ ?",
+      "verso": "On divise les deux membres par $a$, et il reste $x = b \\div a$. Ainsi $3x = 75$ donne $x = 75 \\div 3 = 25$.",
+      "difficulte": 1,
+      "tags": ["equation", "multiplication", "resolution"]
+    },
+    {
+      "id": "5E-CH14-018",
+      "lecon": "Résoudre $a \\times x = b$ et $x \\div a = b$",
+      "type": "formule",
+      "recto": "Quelle opération applique-t-on aux deux membres pour résoudre $x \\div a = b$ ?",
+      "verso": "On multiplie les deux membres par $a$, et il reste $x = b \\times a$. Ainsi $x \\div 5 = 4$ donne $x = 20$.",
+      "difficulte": 2,
+      "tags": ["equation", "division", "resolution"]
+    },
+    {
+      "id": "5E-CH14-019",
+      "lecon": "Résoudre $a \\times x = b$ et $x \\div a = b$",
+      "type": "definition",
+      "recto": "Comment appelle-t-on le nombre $3$ dans l'écriture $3x$ ?",
+      "verso": "C'est le coefficient. L'écriture $3x$ cache une multiplication : elle signifie $3 \\times x$.",
+      "difficulte": 1,
+      "tags": ["coefficient", "notation", "equation"]
+    },
+    {
+      "id": "5E-CH14-020",
+      "lecon": "Résoudre $a \\times x = b$ et $x \\div a = b$",
+      "type": "formule",
+      "recto": "Quelle erreur commet l'élève qui écrit $x = 22 - 4$ pour l'équation $4x = 22$ ?",
+      "verso": "Il retranche le coefficient au lieu de diviser par lui. Un coefficient s'enlève toujours par une division : $x = 22 \\div 4 = 5{,}5$.",
+      "difficulte": 3,
+      "tags": ["equation", "coefficient", "piege"]
+    },
+    {
+      "id": "5E-CH14-021",
+      "lecon": "Résoudre $a \\times x = b$ et $x \\div a = b$",
+      "type": "formule",
+      "recto": "Comment les règles de signes interviennent-elles dans la résolution de $-3x = 12$ ?",
+      "verso": "On divise les deux membres par $-3$. Le quotient de deux nombres de signes contraires étant négatif, on obtient $x = 12 \\div \\left(-3\\right) = -4$.",
+      "difficulte": 2,
+      "tags": ["equation", "signes", "resolution"]
+    },
+    {
+      "id": "5E-CH14-022",
+      "lecon": "Résoudre $a \\times x = b$ et $x \\div a = b$",
+      "type": "definition",
+      "recto": "Quelle forme la solution d'une équation peut-elle prendre dans $\\mathbb{D}$ ?",
+      "verso": "Celle d'un décimal relatif : elle n'est pas forcément entière. Ainsi $4x = 22$ a pour solution $x = 5{,}5$, qui convient parfaitement.",
+      "difficulte": 2,
+      "tags": ["equation", "solution", "decimal"]
+    },
+    {
+      "id": "5E-CH14-023",
+      "lecon": "Résoudre $a \\times x = b$ et $x \\div a = b$",
+      "type": "formule",
+      "recto": "Pourquoi l'équation $0 \\times x = 5$ n'a-t-elle aucune solution ?",
+      "verso": "Parce que $0 \\times x$ vaut $0$ quelle que soit la valeur de $x$, et $0$ n'est pas $5$. Aucun nombre ne peut donc rendre cette égalité vraie.",
+      "difficulte": 2,
+      "tags": ["equation", "sans-solution", "zero"]
+    },
+    {
+      "id": "5E-CH14-024",
+      "lecon": "Résoudre $a \\times x = b$ et $x \\div a = b$",
+      "type": "formule",
+      "recto": "Dans quel ordre enlève-t-on les deux gênes de l'inconnue dans une équation comme $3x + 4 = 19$ ?",
+      "verso": "D'abord le terme : on retranche $4$ aux deux membres, ce qui donne $3x = 15$. Ensuite le coefficient : on divise les deux membres par $3$, et $x = 5$. Diviser d'abord obligerait à diviser aussi le terme.",
+      "difficulte": 2,
+      "tags": ["equation", "deux-etapes", "ordre"]
+    },
+    {
+      "id": "5E-CH14-025",
+      "lecon": "Résoudre un problème par une équation",
+      "type": "formule",
+      "recto": "Par quoi commence-t-on la mise en équation d'un problème ?",
+      "verso": "Par le choix de l'inconnue : on dit ce qu'elle représente et on donne son unité, par exemple « $p$ est le prix d'un livre, en FCFA ».",
+      "difficulte": 2,
+      "tags": ["mise-en-equation", "inconnue", "methode"]
+    },
+    {
+      "id": "5E-CH14-026",
+      "lecon": "Résoudre un problème par une équation",
+      "type": "formule",
+      "recto": "Par quelles opérations traduit-on « augmenté de », « diminué de », « le double » et « le tiers » ?",
+      "verso": "« Augmenté de » donne $+$, « diminué de » donne $-$, « le double » donne $2x$ et « le tiers » donne $x \\div 3$. « En tout » annonce le total, donc souvent le second membre.",
+      "difficulte": 1,
+      "tags": ["mise-en-equation", "traduction", "vocabulaire"]
+    },
+    {
+      "id": "5E-CH14-027",
+      "lecon": "Résoudre un problème par une équation",
+      "type": "formule",
+      "recto": "Comment traduit-on par une expression « le double d'un nombre, augmenté de $3$ » ?",
+      "verso": "Par $2x + 3$ : on double d'abord, puis on ajoute. L'écriture $2 \\times \\left(x + 3\\right)$ traduirait « le double de la somme du nombre et de $3$ ». En cas de doute, on essaie une valeur simple.",
+      "difficulte": 3,
+      "tags": ["mise-en-equation", "traduction", "piege"]
+    },
+    {
+      "id": "5E-CH14-028",
+      "lecon": "Résoudre un problème par une équation",
+      "type": "definition",
+      "recto": "Quel schéma aide à écrire l'équation d'un problème ?",
+      "verso": "Un schéma en barre : on dessine une barre pour le total connu, on la partage en autant de morceaux que l'énoncé l'indique, puis on écrit l'inconnue dans les morceaux inconnus. L'équation se lit alors sur le dessin.",
+      "difficulte": 2,
+      "tags": ["mise-en-equation", "schema", "traduction"]
+    },
+    {
+      "id": "5E-CH14-029",
+      "lecon": "Résoudre un problème par une équation",
+      "type": "formule",
+      "recto": "Où faut-il vérifier la solution d'un problème mis en équation ?",
+      "verso": "Dans l'énoncé lui-même, et pas seulement dans l'équation : c'est la situation de départ qui doit être satisfaite.",
+      "difficulte": 2,
+      "tags": ["mise-en-equation", "verification"]
+    },
+    {
+      "id": "5E-CH14-030",
+      "lecon": "Résoudre un problème par une équation",
+      "type": "formule",
+      "recto": "Comment termine-t-on la résolution d'un problème mis en équation ?",
+      "verso": "En interprétant la solution : on répond à la question posée par une phrase complète, avec l'unité. S'arrêter à « $x = 9$ » ne répond pas au problème.",
+      "difficulte": 2,
+      "tags": ["mise-en-equation", "interpretation", "reponse"]
+    },
+    {
+      "id": "5E-CH14-031",
+      "lecon": "Résoudre un problème par une équation",
+      "type": "definition",
+      "recto": "Pourquoi vaut-il mieux poser une équation plutôt que chercher la réponse de tête ?",
+      "verso": "Parce que le raisonnement de tête se perd dès que l'énoncé se complique, alors que l'équation tient bon. Poser l'équation rend aussi la démarche claire et vérifiable par un autre.",
+      "difficulte": 2,
+      "tags": ["mise-en-equation", "interet"]
+    },
+    {
+      "id": "5E-CH14-032",
+      "lecon": "Résoudre un problème par une équation",
+      "type": "definition",
+      "recto": "Où se trouve l'inconnue dans toutes les équations étudiées en classe de 5ème ?",
+      "verso": "Dans un seul membre. Une équation comme $2x + 5 = x + 8$, où l'inconnue figure des deux côtés, s'étudie en classe de 4ème.",
+      "difficulte": 2,
+      "tags": ["equation", "programme", "inconnue"]
+    }
+  ]
+}

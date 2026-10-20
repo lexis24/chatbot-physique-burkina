@@ -1,0 +1,278 @@
+{
+  "niveau": "4ème",
+  "chapitre": "Chapitre 3 : Repérage sur une droite",
+  "source": "maths/4eme/Chapitre_3_Reperage_sur_une_droite",
+  "nombre_cartes": 30,
+  "cartes": [
+    {
+      "id": "4E-CH03-001",
+      "lecon": "L'abscisse d'un point sur une droite graduée",
+      "type": "definition",
+      "recto": "Quels sont les trois éléments qui définissent une droite graduée ?",
+      "verso": "Une origine O, un sens positif indiqué par une flèche, et une unité de longueur.",
+      "difficulte": 1,
+      "tags": ["droite-graduee", "definition"]
+    },
+    {
+      "id": "4E-CH03-002",
+      "lecon": "L'abscisse d'un point sur une droite graduée",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on abscisse d'un point M d'une droite graduée ?",
+      "verso": "C'est l'unique nombre relatif $x$ qui repère ce point sur la droite. On note $M\\left(x\\right)$.",
+      "difficulte": 1,
+      "tags": ["abscisse", "definition", "notation"]
+    },
+    {
+      "id": "4E-CH03-003",
+      "lecon": "L'abscisse d'un point sur une droite graduée",
+      "type": "formule",
+      "recto": "Que nous apprend le signe de l'abscisse d'un point ?",
+      "verso": "Il donne le côté : un point situé à droite de l'origine a une abscisse positive, un point situé à gauche une abscisse négative. L'origine, elle, a pour abscisse $0$.",
+      "difficulte": 1,
+      "tags": ["abscisse", "signe", "origine"]
+    },
+    {
+      "id": "4E-CH03-004",
+      "lecon": "L'abscisse d'un point sur une droite graduée",
+      "type": "definition",
+      "recto": "Quels types de nombres une abscisse peut-elle prendre pour valeur ?",
+      "verso": "Tous les nombres relatifs : l'abscisse peut être entière, décimale comme $1{,}5$, ou fractionnaire comme $\\dfrac{7}{4}$.",
+      "difficulte": 1,
+      "tags": ["abscisse", "decimal", "fraction"]
+    },
+    {
+      "id": "4E-CH03-005",
+      "lecon": "L'abscisse d'un point sur une droite graduée",
+      "type": "formule",
+      "recto": "Pourquoi deux points différents d'une droite graduée ne peuvent-ils jamais avoir la même abscisse ?",
+      "verso": "Parce que la correspondance est parfaite : à chaque point correspond un seul nombre, et à chaque nombre un seul point de la droite.",
+      "difficulte": 2,
+      "tags": ["abscisse", "correspondance", "unicite"]
+    },
+    {
+      "id": "4E-CH03-006",
+      "lecon": "L'abscisse d'un point sur une droite graduée",
+      "type": "definition",
+      "recto": "Pourquoi annonce-t-on toujours l'origine, le sens et l'unité avant de repérer des points ?",
+      "verso": "Parce que changer l'un de ces trois choix change tous les nombres : un point n'a d'abscisse que par rapport à un repérage fixé d'avance.",
+      "difficulte": 2,
+      "tags": ["droite-graduee", "convention"]
+    },
+    {
+      "id": "4E-CH03-007",
+      "lecon": "L'abscisse d'un point sur une droite graduée",
+      "type": "formule",
+      "recto": "Comment place-t-on un point dont l'abscisse est la fraction $\\dfrac{7}{4}$ ?",
+      "verso": "On cherche d'abord entre quelles graduations il tombe : $\\dfrac{7}{4} = 1 + \\dfrac{3}{4}$, donc il est entre $1$ et $2$. On partage cette unité en quatre parts égales et on avance de trois parts à partir de $1$.",
+      "difficulte": 2,
+      "tags": ["abscisse", "fraction", "construction"]
+    },
+    {
+      "id": "4E-CH03-008",
+      "lecon": "L'abscisse d'un point sur une droite graduée",
+      "type": "formule",
+      "recto": "Entre quelles graduations se trouve le point d'abscisse $-\\dfrac{5}{2}$ ?",
+      "verso": "Entre $-2$ et $-3$, à mi-chemin, car $-\\dfrac{5}{2}$ se lit $-2 - \\dfrac{1}{2}$.",
+      "difficulte": 2,
+      "tags": ["abscisse", "fraction", "negatif"]
+    },
+    {
+      "id": "4E-CH03-009",
+      "lecon": "L'abscisse d'un point sur une droite graduée",
+      "type": "formule",
+      "recto": "Comment la droite graduée permet-elle de comparer deux abscisses d'un seul coup d'œil ?",
+      "verso": "De deux points, celui qui est le plus à droite a la plus grande abscisse. Tout nombre négatif est ainsi inférieur à tout nombre positif.",
+      "difficulte": 2,
+      "tags": ["abscisse", "comparaison"]
+    },
+    {
+      "id": "4E-CH03-010",
+      "lecon": "L'abscisse d'un point sur une droite graduée",
+      "type": "formule",
+      "recto": "Pourquoi $-5$ est-il plus petit que $-3$, alors que $5$ est plus grand que $3$ ?",
+      "verso": "Parce que sur la droite graduée, $-5$ est plus à gauche que $-3$ : chez les nombres négatifs, plus la distance à zéro est grande, plus le nombre est petit.",
+      "difficulte": 3,
+      "tags": ["comparaison", "negatifs", "piege"]
+    },
+    {
+      "id": "4E-CH03-011",
+      "lecon": "L'abscisse d'un point sur une droite graduée",
+      "type": "formule",
+      "recto": "Parmi plusieurs points, comment reconnaît-on celui qui est le plus proche de l'origine ?",
+      "verso": "On compare les distances à l'origine, c'est-à-dire les abscisses sans tenir compte du signe. Le point d'abscisse $-2{,}5$ est ainsi plus proche de l'origine que celui d'abscisse $-8$.",
+      "difficulte": 3,
+      "tags": ["abscisse", "distance-a-l-origine", "piege"]
+    },
+    {
+      "id": "4E-CH03-012",
+      "lecon": "La distance de deux points",
+      "type": "formule",
+      "recto": "Comment calcule-t-on la distance de deux points A et B d'une droite graduée ?",
+      "verso": "C'est la valeur absolue de la différence de leurs abscisses : $AB = \\left|x_A - x_B\\right|$. On a aussi $AB = \\left|x_B - x_A\\right|$.",
+      "difficulte": 1,
+      "tags": ["distance", "valeur-absolue", "formule"]
+    },
+    {
+      "id": "4E-CH03-013",
+      "lecon": "La distance de deux points",
+      "type": "formule",
+      "recto": "Pourquoi obtient-on la même distance en soustrayant les abscisses dans un sens ou dans l'autre ?",
+      "verso": "Parce que $x_A - x_B$ et $x_B - x_A$ sont deux nombres opposés, et que deux nombres opposés ont la même valeur absolue. C'est pourquoi $AB = BA$.",
+      "difficulte": 2,
+      "tags": ["distance", "valeur-absolue", "demonstration"]
+    },
+    {
+      "id": "4E-CH03-014",
+      "lecon": "La distance de deux points",
+      "type": "definition",
+      "recto": "Quel signe une distance peut-elle porter sur une droite graduée ?",
+      "verso": "Aucun : une distance est toujours positive ou nulle. Elle vaut $0$ seulement lorsque les deux points sont confondus.",
+      "difficulte": 2,
+      "tags": ["distance", "positif", "propriete"]
+    },
+    {
+      "id": "4E-CH03-015",
+      "lecon": "La distance de deux points",
+      "type": "formule",
+      "recto": "Comment calcule-t-on la distance d'un point A à l'origine O ?",
+      "verso": "C'est la valeur absolue de son abscisse : $OA = \\left|x_A\\right|$, c'est-à-dire la distance à zéro.",
+      "difficulte": 1,
+      "tags": ["distance", "origine", "valeur-absolue"]
+    },
+    {
+      "id": "4E-CH03-016",
+      "lecon": "La distance de deux points",
+      "type": "definition",
+      "recto": "Pour $A\\left(-3\\right)$ et $B\\left(5\\right)$, pourquoi la différence $x_A - x_B$ n'est-elle pas la distance $AB$ ?",
+      "verso": "Parce que cette différence vaut $-8$, et qu'une distance ne peut pas être négative. La distance est $\\left|-8\\right| = 8$ : la valeur absolue ne s'oublie jamais.",
+      "difficulte": 3,
+      "tags": ["distance", "difference", "piege"]
+    },
+    {
+      "id": "4E-CH03-017",
+      "lecon": "La distance de deux points",
+      "type": "formule",
+      "recto": "Quelle erreur de calcul guette l'élève qui applique la formule à $A\\left(-6\\right)$ et $B\\left(-1\\right)$ ?",
+      "verso": "Oublier que soustraire un nombre négatif revient à ajouter son opposé : $-6 - \\left(-1\\right)$ vaut $-5$ et non $-7$. La distance est donc $5$.",
+      "difficulte": 3,
+      "tags": ["distance", "relatifs", "piege"]
+    },
+    {
+      "id": "4E-CH03-018",
+      "lecon": "La distance de deux points",
+      "type": "formule",
+      "recto": "Pourquoi la même soustraction convient-elle que les deux points soient du même côté de l'origine ou de part et d'autre ?",
+      "verso": "Du même côté, elle donne l'écart des graduations : $A\\left(3\\right)$ et $B\\left(8\\right)$ donnent $5$. De part et d'autre, soustraire deux nombres de signes contraires revient à additionner les deux distances à l'origine : $A\\left(-3\\right)$ et $B\\left(5\\right)$ donnent $8$.",
+      "difficulte": 2,
+      "tags": ["distance", "signes", "tous-les-cas"]
+    },
+    {
+      "id": "4E-CH03-019",
+      "lecon": "La distance de deux points",
+      "type": "formule",
+      "recto": "Quand a-t-on l'égalité $AB + BC = AC$ pour trois points d'une droite graduée ?",
+      "verso": "Lorsque B est situé entre A et C : les deux morceaux mis bout à bout reconstituent alors le trajet entier. Sinon, l'égalité est fausse.",
+      "difficulte": 2,
+      "tags": ["distance", "trois-points", "condition"]
+    },
+    {
+      "id": "4E-CH03-020",
+      "lecon": "La distance de deux points",
+      "type": "formule",
+      "recto": "Combien de points se trouvent à une distance donnée d'un point M d'une droite graduée ?",
+      "verso": "Deux, un de chaque côté de M. A $5$ unités du point $M\\left(3\\right)$, on trouve les points d'abscisses $8$ et $-2$.",
+      "difficulte": 3,
+      "tags": ["distance", "deux-solutions"]
+    },
+    {
+      "id": "4E-CH03-021",
+      "lecon": "L'abscisse du milieu d'un segment",
+      "type": "definition",
+      "recto": "Qu'est-ce que le milieu M d'un segment $\\left[AB\\right]$ ?",
+      "verso": "C'est le point situé à égale distance de A et de B, c'est-à-dire tel que $MA = MB$. Un segment n'a qu'un seul milieu.",
+      "difficulte": 1,
+      "tags": ["milieu", "definition"]
+    },
+    {
+      "id": "4E-CH03-022",
+      "lecon": "L'abscisse du milieu d'un segment",
+      "type": "formule",
+      "recto": "Comment calcule-t-on l'abscisse du milieu M d'un segment $\\left[AB\\right]$ ?",
+      "verso": "C'est la moyenne des abscisses des extrémités : $x_M = \\dfrac{x_A + x_B}{2}$. Pour $A\\left(-4\\right)$ et $B\\left(8\\right)$, on obtient $x_M = \\dfrac{-4 + 8}{2} = 2$.",
+      "difficulte": 1,
+      "tags": ["milieu", "formule", "moyenne"]
+    },
+    {
+      "id": "4E-CH03-023",
+      "lecon": "L'abscisse du milieu d'un segment",
+      "type": "formule",
+      "recto": "Comment retrouve-t-on une extrémité quand on connaît le milieu et l'autre extrémité ?",
+      "verso": "On applique la formule dérivée $x_B = 2 x_M - x_A$. Avec $x_A = -5$ et $x_M = 2$, on obtient $x_B = 2 \\times 2 - \\left(-5\\right) = 9$.",
+      "difficulte": 2,
+      "tags": ["milieu", "extremite", "formule-derivee"]
+    },
+    {
+      "id": "4E-CH03-024",
+      "lecon": "L'abscisse du milieu d'un segment",
+      "type": "formule",
+      "recto": "Comment obtient-on le milieu en partant d'une extrémité et de la distance des deux points ?",
+      "verso": "On ajoute la moitié de la distance à l'abscisse du point le plus à gauche. Entre $-4$ et $+8$, la distance vaut $12$, sa moitié $6$, et $-4 + 6 = +2$.",
+      "difficulte": 2,
+      "tags": ["milieu", "demi-distance"]
+    },
+    {
+      "id": "4E-CH03-025",
+      "lecon": "L'abscisse du milieu d'un segment",
+      "type": "definition",
+      "recto": "Quelles valeurs l'abscisse du milieu d'un segment peut-elle prendre ?",
+      "verso": "Elle peut être négative ou décimale, même quand les deux extrémités ont des abscisses entières : la demi-somme de $3$ et de $4$ vaut $3{,}5$.",
+      "difficulte": 2,
+      "tags": ["milieu", "abscisse", "piege"]
+    },
+    {
+      "id": "4E-CH03-026",
+      "lecon": "L'abscisse du milieu d'un segment",
+      "type": "formule",
+      "recto": "Pourquoi n'écrit-on jamais de valeur absolue dans la formule du milieu ?",
+      "verso": "Parce que le milieu est la demi-somme des abscisses, $x_M = \\dfrac{x_A + x_B}{2}$, et non $\\dfrac{\\left|x_A + x_B\\right|}{2}$ : son abscisse peut très bien être négative.",
+      "difficulte": 3,
+      "tags": ["milieu", "valeur-absolue", "piege"]
+    },
+    {
+      "id": "4E-CH03-027",
+      "lecon": "L'abscisse du milieu d'un segment",
+      "type": "formule",
+      "recto": "Quelle différence y a-t-il entre la demi-somme et la demi-différence des abscisses de deux points ?",
+      "verso": "La demi-somme donne l'abscisse du milieu ; la demi-différence donne la moitié de la distance des deux points. Les confondre est l'erreur la plus fréquente.",
+      "difficulte": 3,
+      "tags": ["milieu", "distance", "distinction"]
+    },
+    {
+      "id": "4E-CH03-028",
+      "lecon": "L'abscisse du milieu d'un segment",
+      "type": "definition",
+      "recto": "Pourquoi la formule du milieu utilise-t-elle une addition, alors que celle de la distance utilise une soustraction ?",
+      "verso": "Parce que le milieu est le point d'équilibre du segment : la moyenne compense un excès par un manque. Un écart, lui, s'obtient toujours par une soustraction, que la valeur absolue rend positive.",
+      "difficulte": 3,
+      "tags": ["milieu", "distance", "distinction"]
+    },
+    {
+      "id": "4E-CH03-029",
+      "lecon": "L'abscisse du milieu d'un segment",
+      "type": "formule",
+      "recto": "Pourquoi le point d'abscisse $\\dfrac{x_A + x_B}{2}$ est-il bien le milieu de $\\left[AB\\right]$ ?",
+      "verso": "Parce que $x_M - x_A = \\dfrac{x_B - x_A}{2}$ et $x_M - x_B = \\dfrac{x_A - x_B}{2}$ sont deux nombres opposés : ils ont la même valeur absolue, donc $MA = MB$.",
+      "difficulte": 3,
+      "tags": ["milieu", "demonstration", "valeur-absolue"]
+    },
+    {
+      "id": "4E-CH03-030",
+      "lecon": "L'abscisse du milieu d'un segment",
+      "type": "formule",
+      "recto": "Comment vérifie-t-on qu'une abscisse trouvée est bien celle du milieu d'un segment ?",
+      "verso": "On calcule les deux distances aux extrémités : elles doivent être égales. Pour $C\\left(-6\\right)$ et $D\\left(2\\right)$, le point $M\\left(-2\\right)$ donne $MC = 4$ et $MD = 4$.",
+      "difficulte": 2,
+      "tags": ["milieu", "verification", "distance"]
+    }
+  ]
+}

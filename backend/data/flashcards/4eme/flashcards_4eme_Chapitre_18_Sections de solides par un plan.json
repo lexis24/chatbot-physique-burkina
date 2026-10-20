@@ -1,0 +1,332 @@
+{
+  "niveau": "4ème",
+  "chapitre": "Chapitre 18 : Sections de solides par un plan",
+  "source": "maths/4eme/Chapitre_18_Sections_de_solides",
+  "nombre_cartes": 36,
+  "cartes": [
+    {
+      "id": "4E-CH18-001",
+      "lecon": "Positions relatives de deux plans",
+      "type": "definition",
+      "recto": "Quelles sont les deux positions possibles pour deux plans de l'espace ?",
+      "verso": "Ils sont parallèles s'ils n'ont aucun point commun, et sécants s'ils ont des points communs. Il n'existe pas d'autre cas.",
+      "difficulte": 1,
+      "tags": ["plans", "positions-relatives"]
+    },
+    {
+      "id": "4E-CH18-002",
+      "lecon": "Positions relatives de deux plans",
+      "type": "formule",
+      "recto": "Quelle est l'intersection de deux plans sécants ?",
+      "verso": "C'est une droite. Dès que deux plans ont un point commun, ils en ont une infinité, tous alignés le long de cette droite.",
+      "difficulte": 2,
+      "tags": ["plans", "intersection", "droite"]
+    },
+    {
+      "id": "4E-CH18-003",
+      "lecon": "Positions relatives de deux plans",
+      "type": "definition",
+      "recto": "Quelle différence sépare deux droites sécantes du plan de deux plans sécants de l'espace ?",
+      "verso": "Deux droites sécantes du plan se coupent en un point, alors que deux plans sécants de l'espace se coupent selon une droite. On monte d'un cran de dimension.",
+      "difficulte": 3,
+      "tags": ["plans", "distinction", "piege"]
+    },
+    {
+      "id": "4E-CH18-004",
+      "lecon": "Positions relatives de deux plans",
+      "type": "definition",
+      "recto": "Comment considère-t-on deux plans confondus, c'est-à-dire superposés ?",
+      "verso": "Comme des plans parallèles. Deux plans parallèles gardent d'ailleurs partout le même écartement, comme le sol et le plafond d'une salle.",
+      "difficulte": 2,
+      "tags": ["plans", "paralleles", "ecartement"]
+    },
+    {
+      "id": "4E-CH18-005",
+      "lecon": "Positions relatives de deux plans",
+      "type": "definition",
+      "recto": "Que peut-on dire de deux plans verticaux, comparés à deux plans horizontaux ?",
+      "verso": "Deux plans horizontaux sont toujours parallèles entre eux, alors que deux plans verticaux peuvent très bien être sécants, comme deux murs voisins.",
+      "difficulte": 2,
+      "tags": ["plans", "horizontal", "vertical"]
+    },
+    {
+      "id": "4E-CH18-006",
+      "lecon": "Positions relatives de deux plans",
+      "type": "formule",
+      "recto": "Quelle est la position des faces d'un pavé droit, prises deux à deux ?",
+      "verso": "Elles vont par paires parallèles : le dessus et le dessous, l'avant et l'arrière, la gauche et la droite. Toutes les autres paires sont sécantes, et leur intersection est une arête.",
+      "difficulte": 2,
+      "tags": ["pave-droit", "faces", "plans"]
+    },
+    {
+      "id": "4E-CH18-007",
+      "lecon": "Section d'un pavé droit",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on la section d'un solide par un plan ?",
+      "verso": "C'est la figure plane obtenue en coupant ce solide par ce plan.",
+      "difficulte": 1,
+      "tags": ["section", "definition"]
+    },
+    {
+      "id": "4E-CH18-008",
+      "lecon": "Section d'un pavé droit",
+      "type": "formule",
+      "recto": "Quelle est la section d'un pavé droit par un plan parallèle à la base ?",
+      "verso": "C'est un rectangle identique à la base : même forme et même taille. Si le pavé est un cube, la section est un carré identique à la base.",
+      "difficulte": 1,
+      "tags": ["pave-droit", "section", "rectangle"]
+    },
+    {
+      "id": "4E-CH18-009",
+      "lecon": "Section d'un pavé droit",
+      "type": "formule",
+      "recto": "Pourquoi la section d'un pavé droit ne dépend-elle pas de la hauteur de coupe ?",
+      "verso": "Parce que les faces latérales sont verticales : leur écartement ne varie pas avec la hauteur. Toutes les sections parallèles à la base sont donc superposables.",
+      "difficulte": 2,
+      "tags": ["pave-droit", "hauteur", "justification"]
+    },
+    {
+      "id": "4E-CH18-010",
+      "lecon": "Section d'un pavé droit",
+      "type": "formule",
+      "recto": "Que valent l'aire et le périmètre de la section d'un pavé droit par un plan parallèle à la base ?",
+      "verso": "Ils sont égaux à l'aire et au périmètre de la base, puisque la section est un rectangle identique à la base.",
+      "difficulte": 2,
+      "tags": ["pave-droit", "aire", "perimetre"]
+    },
+    {
+      "id": "4E-CH18-011",
+      "lecon": "Section d'un pavé droit",
+      "type": "formule",
+      "recto": "Combien de points marque-t-on pour tracer la section d'un pavé droit en perspective cavalière ?",
+      "verso": "Quatre points. Le plan de coupe, parallèle à la base, coupe les quatre arêtes verticales à la même hauteur ; on relie ensuite ces points en respectant les parallèles du dessin.",
+      "difficulte": 2,
+      "tags": ["perspective-cavaliere", "construction", "section"]
+    },
+    {
+      "id": "4E-CH18-012",
+      "lecon": "Section d'un pavé droit",
+      "type": "formule",
+      "recto": "Comment trace-t-on les parties cachées d'un solide et de sa section en perspective cavalière ?",
+      "verso": "En pointillés, alors que les parties visibles se tracent en trait plein. C'est ce détail qui rend le dessin lisible.",
+      "difficulte": 1,
+      "tags": ["perspective-cavaliere", "pointilles"]
+    },
+    {
+      "id": "4E-CH18-013",
+      "lecon": "Section d'un prisme droit",
+      "type": "formule",
+      "recto": "Quelle est la section d'un prisme droit par un plan parallèle à la base ?",
+      "verso": "C'est un polygone identique à la base, à toute hauteur de coupe : une base triangulaire donne un triangle identique, une base hexagonale un hexagone identique.",
+      "difficulte": 1,
+      "tags": ["prisme-droit", "section", "polygone"]
+    },
+    {
+      "id": "4E-CH18-014",
+      "lecon": "Section d'un prisme droit",
+      "type": "formule",
+      "recto": "A quoi est égal le nombre de côtés de la section d'un prisme droit par un plan parallèle à la base ?",
+      "verso": "Au nombre de faces latérales du prisme, car chaque côté de la section est tracé sur une face latérale.",
+      "difficulte": 2,
+      "tags": ["prisme-droit", "cotes", "faces-laterales"]
+    },
+    {
+      "id": "4E-CH18-015",
+      "lecon": "Section d'un prisme droit",
+      "type": "definition",
+      "recto": "Quel lien y a-t-il entre le pavé droit et le prisme droit ?",
+      "verso": "Le pavé droit est un cas particulier de prisme droit : celui dont la base est un rectangle.",
+      "difficulte": 2,
+      "tags": ["prisme-droit", "pave-droit", "cas-particulier"]
+    },
+    {
+      "id": "4E-CH18-016",
+      "lecon": "Section d'un prisme droit",
+      "type": "definition",
+      "recto": "Dans une tente en forme de prisme droit, quelle est la base du solide ?",
+      "verso": "C'est le triangle du pignon, et non le rectangle du sol. La base est l'un des deux polygones identiques, et c'est elle qui donne la forme de la section.",
+      "difficulte": 3,
+      "tags": ["prisme-droit", "base", "piege"]
+    },
+    {
+      "id": "4E-CH18-017",
+      "lecon": "Section d'un prisme droit",
+      "type": "formule",
+      "recto": "Que peut-on dire des tranches d'une poutre sciée perpendiculairement à sa longueur ?",
+      "verso": "Elles sont toutes identiques. Une poutre est un prisme droit, et scier perpendiculairement à sa longueur revient à couper parallèlement à la base.",
+      "difficulte": 2,
+      "tags": ["prisme-droit", "section", "application"]
+    },
+    {
+      "id": "4E-CH18-018",
+      "lecon": "Section d'un cylindre",
+      "type": "formule",
+      "recto": "Quelle est la section d'un cylindre par un plan parallèle à la base ?",
+      "verso": "C'est un disque identique à la base, de même rayon à toute hauteur de coupe. Son centre se trouve sur l'axe du cylindre, la droite qui joint les centres des deux bases.",
+      "difficulte": 1,
+      "tags": ["cylindre", "section", "disque"]
+    },
+    {
+      "id": "4E-CH18-019",
+      "lecon": "Section d'un cylindre",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on une génératrice d'un cylindre ?",
+      "verso": "C'est un trait vertical tracé sur la surface latérale, comme sur une boîte de conserve. Les génératrices sont verticales et parallèles entre elles, et c'est pourquoi le rayon ne change pas d'une section à l'autre.",
+      "difficulte": 2,
+      "tags": ["cylindre", "generatrice", "vocabulaire"]
+    },
+    {
+      "id": "4E-CH18-020",
+      "lecon": "Section d'un cylindre",
+      "type": "formule",
+      "recto": "Sous quelle forme un cercle horizontal se dessine-t-il en perspective cavalière ?",
+      "verso": "Sous la forme d'une ellipse, un ovale aplati. C'est une convention de dessin : dans la réalité, la base reste un cercle parfait.",
+      "difficulte": 2,
+      "tags": ["cylindre", "perspective-cavaliere", "ellipse"]
+    },
+    {
+      "id": "4E-CH18-021",
+      "lecon": "Section d'un cylindre",
+      "type": "formule",
+      "recto": "Quelle largeur donne-t-on à l'ellipse d'une section de cylindre, par rapport à celle de la base ?",
+      "verso": "Exactement la même largeur, puisque le rayon ne change pas. Une section dessinée plus étroite que la base serait une erreur de tracé, même si la réponse écrite est juste.",
+      "difficulte": 3,
+      "tags": ["cylindre", "perspective-cavaliere", "piege"]
+    },
+    {
+      "id": "4E-CH18-022",
+      "lecon": "Section d'un cylindre",
+      "type": "definition",
+      "recto": "Quelle confusion guette l'élève dont l'énoncé donne le diamètre d'un cylindre ?",
+      "verso": "Répondre par le diamètre quand la question porte sur le rayon, ou l'inverse. Le rayon vaut la moitié du diamètre : un puits de $1{,}4$ m de diamètre donne une section de rayon $0{,}7$ m.",
+      "difficulte": 3,
+      "tags": ["cylindre", "rayon", "diametre", "piege"]
+    },
+    {
+      "id": "4E-CH18-023",
+      "lecon": "Section d'une pyramide",
+      "type": "formule",
+      "recto": "Quelle est la section d'une pyramide par un plan parallèle à la base ?",
+      "verso": "C'est une figure de même forme que la base, mais plus petite : une réduction de la base. Une base carrée donne un carré, une base triangulaire donne un triangle.",
+      "difficulte": 1,
+      "tags": ["pyramide", "section", "reduction"]
+    },
+    {
+      "id": "4E-CH18-024",
+      "lecon": "Section d'une pyramide",
+      "type": "formule",
+      "recto": "Quelle formule donne le côté de la section d'une pyramide de hauteur $H$ coupée à la hauteur $h$ mesurée depuis la base ?",
+      "verso": "Côté de la section $=$ côté de la base $\\times \\left(H - h\\right) \\div H$. La même règle vaut pour toutes les longueurs de la figure, chaque côté comme chaque diagonale.",
+      "difficulte": 2,
+      "tags": ["pyramide", "formule", "reduction"]
+    },
+    {
+      "id": "4E-CH18-025",
+      "lecon": "Section d'une pyramide",
+      "type": "definition",
+      "recto": "Comment appelle-t-on le nombre $\\left(H - h\\right) \\div H$ utilisé pour une section de pyramide ?",
+      "verso": "C'est le coefficient de réduction. Il est toujours compris entre $0$ et $1$, et il multiplie chaque longueur de la base.",
+      "difficulte": 2,
+      "tags": ["pyramide", "coefficient", "vocabulaire"]
+    },
+    {
+      "id": "4E-CH18-026",
+      "lecon": "Section d'une pyramide",
+      "type": "formule",
+      "recto": "Quel coefficient de réduction emploie-t-on quand la distance de coupe $d$ est mesurée depuis le sommet ?",
+      "verso": "Le coefficient vaut directement $d \\div H$, car cette distance est déjà la hauteur de la petite pyramide du haut. Mesurée depuis la base, la hauteur $h$ donne au contraire $\\left(H - h\\right) \\div H$.",
+      "difficulte": 3,
+      "tags": ["pyramide", "coefficient", "piege"]
+    },
+    {
+      "id": "4E-CH18-027",
+      "lecon": "Section d'une pyramide",
+      "type": "formule",
+      "recto": "Quel contrôle simple valide le calcul d'une dimension de section de pyramide ?",
+      "verso": "Le résultat doit être plus petit que la dimension correspondante de la base. S'il est plus grand, le coefficient a été pris à l'envers.",
+      "difficulte": 2,
+      "tags": ["pyramide", "controle"]
+    },
+    {
+      "id": "4E-CH18-028",
+      "lecon": "Section d'une pyramide",
+      "type": "formule",
+      "recto": "Pourquoi la section d'une pyramide a-t-elle la même forme que la base ?",
+      "verso": "Parce que deux plans parallèles coupés par un même troisième plan donnent deux droites parallèles. Chaque côté de la section est donc parallèle au côté de base correspondant, et les angles sont conservés.",
+      "difficulte": 3,
+      "tags": ["pyramide", "demonstration", "forme"]
+    },
+    {
+      "id": "4E-CH18-029",
+      "lecon": "Section d'une pyramide",
+      "type": "formule",
+      "recto": "Que devient la section d'une pyramide lorsque le plan de coupe se rapproche du sommet ?",
+      "verso": "Elle devient de plus en plus petite, et au sommet même elle se réduit à un point.",
+      "difficulte": 1,
+      "tags": ["pyramide", "sommet", "section"]
+    },
+    {
+      "id": "4E-CH18-030",
+      "lecon": "Section d'un cône",
+      "type": "formule",
+      "recto": "Quelle est la section d'un cône par un plan parallèle à la base ?",
+      "verso": "C'est un disque plus petit que la base, une réduction du disque de base. Son centre se trouve sur l'axe du cône.",
+      "difficulte": 1,
+      "tags": ["cone", "section", "disque"]
+    },
+    {
+      "id": "4E-CH18-031",
+      "lecon": "Section d'un cône",
+      "type": "formule",
+      "recto": "Quelle formule donne le rayon de la section d'un cône de hauteur $H$ coupé à la hauteur $h$ mesurée depuis la base ?",
+      "verso": "Rayon de la section $=$ rayon de la base $\\times \\left(H - h\\right) \\div H$. C'est la formule de la pyramide, avec le rayon à la place du côté.",
+      "difficulte": 2,
+      "tags": ["cone", "formule", "rayon"]
+    },
+    {
+      "id": "4E-CH18-032",
+      "lecon": "Section d'un cône",
+      "type": "formule",
+      "recto": "Comment le diamètre d'une section de cône se réduit-il, par rapport au rayon ?",
+      "verso": "Dans le même rapport : le diamètre suit exactement la même règle que le rayon, puisqu'il en est le double.",
+      "difficulte": 2,
+      "tags": ["cone", "diametre", "reduction"]
+    },
+    {
+      "id": "4E-CH18-033",
+      "lecon": "Section d'un cône",
+      "type": "formule",
+      "recto": "Que vaut le rayon de la section d'un cône coupé à mi-hauteur ?",
+      "verso": "La moitié du rayon de base : la hauteur restante est la moitié de la hauteur totale, donc le coefficient de réduction vaut $\\dfrac{1}{2}$.",
+      "difficulte": 2,
+      "tags": ["cone", "mi-hauteur", "rayon"]
+    },
+    {
+      "id": "4E-CH18-034",
+      "lecon": "Section d'un cône",
+      "type": "formule",
+      "recto": "Dans quel sens varie le rayon de la section d'un cône quand la hauteur de coupe augmente ?",
+      "verso": "Il diminue : en montant vers le sommet, la hauteur restante $H - h$ diminue, donc le rayon aussi. Un rayon qui grandirait en montant signale une formule prise à l'envers.",
+      "difficulte": 3,
+      "tags": ["cone", "variation", "piege"]
+    },
+    {
+      "id": "4E-CH18-035",
+      "lecon": "Section d'un cône",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on un tronc de cône ?",
+      "verso": "C'est la partie qui reste entre la base et la section quand on coupe un cône et que l'on retire la pointe. Un abat-jour, un seau ou un panier tressé évasé en ont la forme.",
+      "difficulte": 2,
+      "tags": ["cone", "tronc-de-cone", "vocabulaire"]
+    },
+    {
+      "id": "4E-CH18-036",
+      "lecon": "Section d'un cône",
+      "type": "formule",
+      "recto": "Quel caractère d'un solide décide de la taille de sa section parallèle à la base ?",
+      "verso": "L'inclinaison de ses parois. Verticales, comme celles d'un pavé, d'un prisme ou d'un cylindre, elles donnent une section identique à la base ; inclinées, comme celles d'une pyramide ou d'un cône, elles donnent une section réduite.",
+      "difficulte": 2,
+      "tags": ["section", "parois", "classement"]
+    }
+  ]
+}

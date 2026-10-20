@@ -1,0 +1,332 @@
+{
+  "niveau": "6ème",
+  "chapitre": "Chapitre 4 : Sens et techniques d'exécution des opérations",
+  "source": "maths/6eme/Chapitre_4_Operations",
+  "nombre_cartes": 36,
+  "cartes": [
+    {
+      "id": "6E-CH04-001",
+      "lecon": "Le sens des quatre opérations et leur vocabulaire",
+      "type": "definition",
+      "recto": "Dans une addition, comment appelle-t-on le résultat et les nombres de départ ?",
+      "verso": "Le résultat est la somme ; les nombres de départ sont les termes. Dans $8 + 5 = 13$, $8$ et $5$ sont les termes et $13$ est la somme.",
+      "difficulte": 1,
+      "tags": ["addition", "vocabulaire", "somme"]
+    },
+    {
+      "id": "6E-CH04-002",
+      "lecon": "Le sens des quatre opérations et leur vocabulaire",
+      "type": "definition",
+      "recto": "Dans une soustraction, comment appelle-t-on le résultat et les nombres de départ ?",
+      "verso": "Le résultat est la différence ; les nombres de départ sont les termes. Dans $12 - 4 = 8$, $12$ et $4$ sont les termes et $8$ est la différence.",
+      "difficulte": 1,
+      "tags": ["soustraction", "vocabulaire", "difference"]
+    },
+    {
+      "id": "6E-CH04-003",
+      "lecon": "Le sens des quatre opérations et leur vocabulaire",
+      "type": "definition",
+      "recto": "Dans une multiplication, comment appelle-t-on le résultat et les nombres de départ ?",
+      "verso": "Le résultat est le produit ; les nombres de départ sont les facteurs. Dans $6 \\times 7 = 42$, $6$ et $7$ sont les facteurs et $42$ est le produit.",
+      "difficulte": 1,
+      "tags": ["multiplication", "vocabulaire", "produit"]
+    },
+    {
+      "id": "6E-CH04-004",
+      "lecon": "Le sens des quatre opérations et leur vocabulaire",
+      "type": "definition",
+      "recto": "Dans la division $20 \\div 4 = 5$, quel nom porte chacun des trois nombres ?",
+      "verso": "$20$ est le dividende, $4$ est le diviseur et $5$ est le quotient.",
+      "difficulte": 2,
+      "tags": ["division", "vocabulaire", "quotient"]
+    },
+    {
+      "id": "6E-CH04-005",
+      "lecon": "Le sens des quatre opérations et leur vocabulaire",
+      "type": "formule",
+      "recto": "Quelle égalité relie le dividende, le diviseur, le quotient et le reste d'une division euclidienne ?",
+      "verso": "dividende $=$ diviseur $\\times$ quotient $+$ reste. Pour $47 \\div 6$, on écrit $47 = 6 \\times 7 + 5$.",
+      "difficulte": 2,
+      "tags": ["division-euclidienne", "reste", "egalite"]
+    },
+    {
+      "id": "6E-CH04-006",
+      "lecon": "Le sens des quatre opérations et leur vocabulaire",
+      "type": "formule",
+      "recto": "Quelle condition le reste d'une division euclidienne doit-il toujours vérifier ?",
+      "verso": "Le reste est toujours plus petit que le diviseur. Un reste de $8$ avec un diviseur de $6$ est le signe certain d'une erreur.",
+      "difficulte": 2,
+      "tags": ["division-euclidienne", "reste", "condition"]
+    },
+    {
+      "id": "6E-CH04-007",
+      "lecon": "Le sens des quatre opérations et leur vocabulaire",
+      "type": "definition",
+      "recto": "Pourquoi un reste plus grand que le diviseur montre-t-il que le partage n'est pas terminé ?",
+      "verso": "Parce qu'il reste alors assez pour servir tout le monde une fois de plus. Avec $47$ ballons pour $6$ classes, un reste de $8$ permet encore de donner un ballon à chaque classe.",
+      "difficulte": 3,
+      "tags": ["division-euclidienne", "reste", "piege"]
+    },
+    {
+      "id": "6E-CH04-008",
+      "lecon": "Le sens des quatre opérations et leur vocabulaire",
+      "type": "definition",
+      "recto": "Comment note-t-on l'ensemble des entiers naturels et celui des nombres décimaux ?",
+      "verso": "Les entiers naturels $0$ ; $1$ ; $2$ ; $3$ … forment l'ensemble $\\mathbb{N}$. Les nombres qui s'écrivent avec une virgule et un nombre fini de décimales forment l'ensemble $\\mathbb{D}$.",
+      "difficulte": 2,
+      "tags": ["ensembles", "entiers-naturels", "decimaux"]
+    },
+    {
+      "id": "6E-CH04-009",
+      "lecon": "Le sens des quatre opérations et leur vocabulaire",
+      "type": "formule",
+      "recto": "Que signifie l'écriture $\\mathbb{N} \\subset \\mathbb{D}$ ?",
+      "verso": "Elle se lit « $\\mathbb{N}$ est inclus dans $\\mathbb{D}$ » : tout entier naturel est aussi un nombre décimal, car $7 = 7{,}0$.",
+      "difficulte": 2,
+      "tags": ["ensembles", "inclusion", "notation"]
+    },
+    {
+      "id": "6E-CH04-010",
+      "lecon": "Le sens des quatre opérations et leur vocabulaire",
+      "type": "definition",
+      "recto": "Pourquoi la somme de $6$ et de $7$ n'est-elle pas égale à $42$ ?",
+      "verso": "Parce que le mot somme désigne le résultat d'une addition : $6 + 7 = 13$. Le nombre $42$ est le produit de $6$ et de $7$, résultat d'une multiplication.",
+      "difficulte": 3,
+      "tags": ["vocabulaire", "somme", "produit", "piege"]
+    },
+    {
+      "id": "6E-CH04-011",
+      "lecon": "Les règles de priorité",
+      "type": "formule",
+      "recto": "Dans une expression contenant plusieurs opérations, dans quel ordre effectue-t-on les calculs ?",
+      "verso": "D'abord les parenthèses, puis les crochets ; ensuite les multiplications et les divisions de gauche à droite ; enfin les additions et les soustractions de gauche à droite.",
+      "difficulte": 1,
+      "tags": ["priorites", "ordre", "regle"]
+    },
+    {
+      "id": "6E-CH04-012",
+      "lecon": "Les règles de priorité",
+      "type": "formule",
+      "recto": "Entre une multiplication et une addition écrites sans parenthèses, laquelle effectue-t-on en premier ?",
+      "verso": "La multiplication : elle est prioritaire. Ainsi $3 \\times 200 + 2 \\times 150 = 600 + 300 = 900$.",
+      "difficulte": 2,
+      "tags": ["priorites", "multiplication", "addition"]
+    },
+    {
+      "id": "6E-CH04-013",
+      "lecon": "Les règles de priorité",
+      "type": "formule",
+      "recto": "Dans une expression qui contient une parenthèse à l'intérieur d'un crochet, par quel calcul commence-t-on ?",
+      "verso": "Par la parenthèse, c'est-à-dire par le calcul le plus profond, puis par le crochet : $\\left[18 - \\left(4 + 2\\right)\\right] \\times 3 = \\left[18 - 6\\right] \\times 3 = 36$.",
+      "difficulte": 2,
+      "tags": ["priorites", "crochets", "parentheses"]
+    },
+    {
+      "id": "6E-CH04-014",
+      "lecon": "Les règles de priorité",
+      "type": "formule",
+      "recto": "A quoi servent les parenthèses dans une expression numérique ?",
+      "verso": "Elles imposent un ordre différent de l'ordre habituel. Sans parenthèse, $3 + 5 \\times 2 = 13$ ; avec parenthèse, $\\left(3 + 5\\right) \\times 2 = 16$.",
+      "difficulte": 2,
+      "tags": ["parentheses", "priorites"]
+    },
+    {
+      "id": "6E-CH04-015",
+      "lecon": "Les règles de priorité",
+      "type": "formule",
+      "recto": "Dans quel sens effectue-t-on plusieurs multiplications et divisions qui se suivent ?",
+      "verso": "De gauche à droite, dans l'ordre où elles sont écrites. La même règle vaut pour des additions et des soustractions qui se suivent.",
+      "difficulte": 2,
+      "tags": ["priorites", "gauche-droite"]
+    },
+    {
+      "id": "6E-CH04-016",
+      "lecon": "Les règles de priorité",
+      "type": "formule",
+      "recto": "Combien de parenthèses et de crochets au maximum une même expression contient-elle en 6ème ?",
+      "verso": "Au plus $2$ parenthèses et $1$ crochet.",
+      "difficulte": 2,
+      "tags": ["parentheses", "crochets", "programme"]
+    },
+    {
+      "id": "6E-CH04-017",
+      "lecon": "Les règles de priorité",
+      "type": "definition",
+      "recto": "Pourquoi $7 + 3 \\times 6$ ne vaut-il pas $60$ ?",
+      "verso": "Parce que calculer de gauche à droite est interdit ici : la multiplication passe avant l'addition. On obtient $7 + 18 = 25$.",
+      "difficulte": 3,
+      "tags": ["priorites", "piege", "gauche-droite"]
+    },
+    {
+      "id": "6E-CH04-018",
+      "lecon": "Les règles de priorité",
+      "type": "definition",
+      "recto": "Pourquoi a-t-on fixé des règles de priorité communes à tout le monde ?",
+      "verso": "Pour qu'une même expression ait un seul résultat, partout et pour chacun. Sans elles, $3 \\times 200 + 2 \\times 150$ donnerait des réponses différentes selon les élèves.",
+      "difficulte": 2,
+      "tags": ["priorites", "sens"]
+    },
+    {
+      "id": "6E-CH04-019",
+      "lecon": "Les propriétés des opérations",
+      "type": "formule",
+      "recto": "Qu'affirme la commutativité de l'addition ?",
+      "verso": "$a + b = b + a$ : on peut échanger l'ordre des deux termes sans changer la somme. Par exemple $12 + 7 = 7 + 12 = 19$.",
+      "difficulte": 1,
+      "tags": ["commutativite", "addition", "propriete"]
+    },
+    {
+      "id": "6E-CH04-020",
+      "lecon": "Les propriétés des opérations",
+      "type": "formule",
+      "recto": "Qu'affirme la commutativité de la multiplication ?",
+      "verso": "$a \\times b = b \\times a$ : on peut échanger l'ordre des deux facteurs sans changer le produit. Par exemple $5 \\times 8 = 8 \\times 5 = 40$.",
+      "difficulte": 1,
+      "tags": ["commutativite", "multiplication", "propriete"]
+    },
+    {
+      "id": "6E-CH04-021",
+      "lecon": "Les propriétés des opérations",
+      "type": "formule",
+      "recto": "Pourquoi ne peut-on pas écrire $20 - 8 = 8 - 20$ ?",
+      "verso": "Parce que la soustraction n'est pas commutative : l'ordre des nombres compte. La division ne l'est pas non plus. On n'échange l'ordre que dans une addition ou une multiplication.",
+      "difficulte": 3,
+      "tags": ["commutativite", "soustraction", "division", "piege"]
+    },
+    {
+      "id": "6E-CH04-022",
+      "lecon": "Les propriétés des opérations",
+      "type": "formule",
+      "recto": "Qu'affirme l'associativité de l'addition ?",
+      "verso": "$\\left(a + b\\right) + c = a + \\left(b + c\\right)$ : on choisit librement par quel couple de termes commencer. Par exemple $\\left(25 + 15\\right) + 10 = 25 + \\left(15 + 10\\right) = 50$.",
+      "difficulte": 2,
+      "tags": ["associativite", "addition", "propriete"]
+    },
+    {
+      "id": "6E-CH04-023",
+      "lecon": "Les propriétés des opérations",
+      "type": "formule",
+      "recto": "Qu'affirme l'associativité de la multiplication ?",
+      "verso": "$\\left(a \\times b\\right) \\times c = a \\times \\left(b \\times c\\right)$ : on choisit librement par quel couple de facteurs commencer. Par exemple $\\left(2 \\times 5\\right) \\times 4 = 2 \\times \\left(5 \\times 4\\right) = 40$.",
+      "difficulte": 2,
+      "tags": ["associativite", "multiplication", "propriete"]
+    },
+    {
+      "id": "6E-CH04-024",
+      "lecon": "Les propriétés des opérations",
+      "type": "formule",
+      "recto": "Qu'affirme la distributivité de la multiplication sur l'addition ?",
+      "verso": "$a \\times \\left(b + c\\right) = a \\times b + a \\times c$. Par exemple $2 \\times \\left(300 + 500\\right) = 2 \\times 300 + 2 \\times 500 = 1\\,600$.",
+      "difficulte": 1,
+      "tags": ["distributivite", "propriete"]
+    },
+    {
+      "id": "6E-CH04-025",
+      "lecon": "Les propriétés des opérations",
+      "type": "formule",
+      "recto": "Comment s'écrit la distributivité lorsque la parenthèse contient une soustraction ?",
+      "verso": "$a \\times \\left(b - c\\right) = a \\times b - a \\times c$. Par exemple $17 \\times \\left(13{,}52 - 3{,}52\\right) = 17 \\times 13{,}52 - 17 \\times 3{,}52 = 170$.",
+      "difficulte": 2,
+      "tags": ["distributivite", "soustraction"]
+    },
+    {
+      "id": "6E-CH04-026",
+      "lecon": "Les propriétés des opérations",
+      "type": "formule",
+      "recto": "Que fait-on quand on lit l'égalité de distributivité de droite à gauche ?",
+      "verso": "On regroupe grâce au facteur commun : $a \\times b + a \\times c = a \\times \\left(b + c\\right)$. Lue de gauche à droite, la même égalité sert à développer.",
+      "difficulte": 2,
+      "tags": ["distributivite", "facteur-commun", "developper"]
+    },
+    {
+      "id": "6E-CH04-027",
+      "lecon": "Les propriétés des opérations",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on le facteur commun dans une somme de deux produits ?",
+      "verso": "C'est le nombre qui apparaît dans les deux produits. Dans $0{,}3 \\times 37 + 0{,}3 \\times 23$, le facteur commun est $0{,}3$, ce qui donne $0{,}3 \\times \\left(37 + 23\\right)$.",
+      "difficulte": 2,
+      "tags": ["facteur-commun", "distributivite"]
+    },
+    {
+      "id": "6E-CH04-028",
+      "lecon": "Les propriétés des opérations",
+      "type": "definition",
+      "recto": "Quelle différence y a-t-il entre la commutativité et l'associativité ?",
+      "verso": "La commutativité change l'ordre des nombres : $a + b = b + a$. L'associativité change les regroupements sans déplacer les nombres : $\\left(a + b\\right) + c = a + \\left(b + c\\right)$.",
+      "difficulte": 3,
+      "tags": ["commutativite", "associativite", "distinction"]
+    },
+    {
+      "id": "6E-CH04-029",
+      "lecon": "Les propriétés des opérations",
+      "type": "formule",
+      "recto": "Comment un rectangle coupé en deux justifie-t-il la distributivité ?",
+      "verso": "Un rectangle de $2$ sur $300 + 500$ coupé par un trait vertical donne un rectangle de $2$ sur $300$ et un rectangle de $2$ sur $500$. La surface totale n'a pas changé, donc $2 \\times \\left(300 + 500\\right) = 2 \\times 300 + 2 \\times 500$.",
+      "difficulte": 3,
+      "tags": ["distributivite", "justification", "rectangle"]
+    },
+    {
+      "id": "6E-CH04-030",
+      "lecon": "Le calcul astucieux et les problèmes",
+      "type": "definition",
+      "recto": "En quoi consiste un calcul astucieux ?",
+      "verso": "A utiliser les propriétés des opérations pour faire apparaître des nombres ronds comme $10$, $100$ ou $1\\,000$, afin de calculer plus vite.",
+      "difficulte": 2,
+      "tags": ["calcul-astucieux", "nombres-ronds"]
+    },
+    {
+      "id": "6E-CH04-031",
+      "lecon": "Le calcul astucieux et les problèmes",
+      "type": "formule",
+      "recto": "Quels couples de facteurs faut-il repérer pour faire apparaître un nombre rond ?",
+      "verso": "$25 \\times 4 = 100$, puis $2 \\times 5 = 10$ et $8 \\times 125 = 1\\,000$.",
+      "difficulte": 1,
+      "tags": ["calcul-astucieux", "nombres-ronds"]
+    },
+    {
+      "id": "6E-CH04-032",
+      "lecon": "Le calcul astucieux et les problèmes",
+      "type": "formule",
+      "recto": "Comment se déplace la virgule d'un nombre décimal multiplié par $10$, par $100$ ou par $1\\,000$ ?",
+      "verso": "Elle se déplace vers la droite de un, deux ou trois rangs : $2{,}75 \\times 100 = 275$. En divisant par ces nombres, elle se déplace vers la gauche.",
+      "difficulte": 2,
+      "tags": ["multiplier-par-10", "virgule", "decimaux"]
+    },
+    {
+      "id": "6E-CH04-033",
+      "lecon": "Le calcul astucieux et les problèmes",
+      "type": "formule",
+      "recto": "Que vaut un produit dont l'un des facteurs est $0$ ?",
+      "verso": "Il vaut $0$, quels que soient les autres facteurs. Par exemple $18 \\times 0 \\times 45 = 0$.",
+      "difficulte": 1,
+      "tags": ["produit", "zero"]
+    },
+    {
+      "id": "6E-CH04-034",
+      "lecon": "Le calcul astucieux et les problèmes",
+      "type": "formule",
+      "recto": "Quel effet ont la multiplication par $1$ et l'addition de $0$ sur un nombre ?",
+      "verso": "Ils ne le changent pas : $47 \\times 1 = 47$ et $53 + 0 = 53$.",
+      "difficulte": 2,
+      "tags": ["multiplication", "addition", "element-neutre"]
+    },
+    {
+      "id": "6E-CH04-035",
+      "lecon": "Le calcul astucieux et les problèmes",
+      "type": "definition",
+      "recto": "Qu'est-ce que l'ordre de grandeur d'un calcul ?",
+      "verso": "C'est un résultat approché obtenu en remplaçant chaque nombre par un nombre rond voisin : $347 + 1\\,258$ vaut à peu près $350 + 1\\,250 = 1\\,600$. Il sert à repérer une grosse erreur.",
+      "difficulte": 2,
+      "tags": ["ordre-de-grandeur", "controle"]
+    },
+    {
+      "id": "6E-CH04-036",
+      "lecon": "Le calcul astucieux et les problèmes",
+      "type": "definition",
+      "recto": "Pourquoi est-il maladroit de calculer $4 \\times 17 \\times 25$ dans l'ordre écrit ?",
+      "verso": "Parce qu'on casse le couple $4$ et $25$, qui donne $100$. En le gardant, $17 \\times 100 = 1\\,700$ se trouve de tête, alors que $68 \\times 25$ oblige à poser l'opération.",
+      "difficulte": 3,
+      "tags": ["calcul-astucieux", "piege", "nombres-ronds"]
+    }
+  ]
+}

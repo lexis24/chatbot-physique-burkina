@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Fiche de revision - 5eme - Chapitre 2 : Multiples et diviseurs d'un entier naturel · Nombres premiers</title>
+<style>
+/* ===================================================================
+   FICHE DE REVISION, Collection Hakili Lab, Edition 2026
+   Feuille de style autonome, format A4 pret a imprimer.
+   Bleu #005CB9 · Vert #49A145
+   =================================================================== */
+:root{
+  --bleu:#005CB9; --bleu-fonce:#00429A; --bleu-pale:#E8F1FB; --bleu-bord:#B7D2EE;
+  --vert:#49A145; --vert-fonce:#2F7A2C; --vert-pale:#EDF7EC; --vert-bord:#BCE0B9;
+  --gris:#4A4A4A; --gris-clair:#E4E4E4; --rouge:#B3261E;
+}
+@page{
+  size:A4; margin:15mm;
+  @bottom-center{
+    content:"Collection Hakili Lab, Edition 2026  ·  Fiche de revision  ·  " counter(page) "/" counter(pages);
+    font-family:"Segoe UI",Calibri,Arial,sans-serif; font-size:6.6pt; color:#8A8A8A;
+  }
+}
+*{box-sizing:border-box;}
+body{
+  margin:0; font-family:"Segoe UI",Calibri,Arial,sans-serif;
+  font-size:8.4pt; line-height:1.26; color:#1B1B1B;
+}
+p{margin:0 0 3pt;}
+ul{margin:0 0 3pt; padding-left:11pt;}
+li{margin:0 0 1.2pt;}
+b,strong{color:var(--bleu-fonce);}
+
+/* ------------------------------ ENTETE ---------------------------- */
+.entete{
+  display:flex; align-items:stretch; border:1.6pt solid var(--bleu);
+  border-radius:2.5pt; overflow:hidden; margin-bottom:6pt;
+}
+.entete .num{
+  background:var(--bleu); color:#fff; font-size:20pt; font-weight:700;
+  padding:0 8pt; display:flex; align-items:center; justify-content:center; min-width:34pt;
+}
+.entete .txt{padding:3.5pt 8pt; flex:1;}
+.entete .niveau{
+  font-size:7pt; font-weight:700; letter-spacing:.9pt; color:var(--vert-fonce);
+}
+.entete h1{margin:0; font-size:13.5pt; line-height:1.12; color:var(--bleu-fonce); font-weight:700;}
+.entete .sous{font-size:7pt; color:var(--gris); margin-top:1pt;}
+
+/* --------------------------- BANDEAUX ----------------------------- */
+.bandeau{
+  color:#fff; font-weight:700; font-size:9pt; letter-spacing:1pt;
+  padding:2.4pt 7pt; border-radius:2pt; margin:3pt 0 4pt; break-after:avoid; page-break-after:avoid;
+}
+.bandeau.bleu{background:var(--bleu);}
+.bandeau.vert{background:var(--vert);}
+
+/* --------------------------- COLONNES ----------------------------- */
+.cols{column-count:2; column-gap:7mm; column-fill:balance;}
+
+.cols.bal{column-fill:balance;}
+.bloc{margin-bottom:5pt;}
+.keep{break-inside:avoid; page-break-inside:avoid;}
+
+/* --------------------------- LECONS ------------------------------- */
+h2.lecon{
+  margin:0 0 3pt; font-size:8.6pt; font-weight:700; color:#fff; background:var(--bleu-fonce);
+  padding:1.8pt 5pt; border-radius:1.5pt; break-after:avoid; page-break-after:avoid;
+}
+h3.rub{
+  margin:3.5pt 0 1.5pt; font-size:8.2pt; font-weight:700; color:var(--vert-fonce);
+  border-bottom:.7pt solid var(--vert-bord); padding-bottom:.8pt;
+  break-after:avoid; page-break-after:avoid;
+}
+
+/* --------------------------- ENCADRES ----------------------------- */
+.form{
+  background:var(--bleu-pale); border:.8pt solid var(--bleu-bord); border-left:2.6pt solid var(--bleu);
+  border-radius:2pt; padding:2.4pt 5pt; margin:2.2pt 0 3.4pt;
+  break-inside:avoid; page-break-inside:avoid;
+}
+.form .t{
+  display:block; font-size:6.8pt; font-weight:700; letter-spacing:.6pt;
+  color:var(--bleu); margin-bottom:1.5pt;
+}
+.form .c{text-align:center; font-size:9.1pt; margin:1.6pt 0;}
+.note{background:var(--vert-pale); border-left:2.4pt solid var(--vert); padding:2.4pt 5pt; border-radius:1.5pt; margin:2.5pt 0 4pt; break-inside:avoid;}
+
+/* --------------------------- TABLEAUX ----------------------------- */
+table{width:100%; border-collapse:collapse; font-size:7.6pt; margin:2pt 0 4pt; break-inside:avoid;}
+th{background:var(--bleu); color:#fff; font-weight:700; text-align:left; padding:1.8pt 4pt; font-size:7.2pt;}
+td{border:.6pt solid var(--gris-clair); padding:1.8pt 4pt; vertical-align:top;}
+tr{break-inside:avoid;}
+table.var td{text-align:center; font-size:8pt;}
+table.var td.lab{text-align:left; font-weight:700; color:var(--bleu-fonce); background:var(--bleu-pale);}
+
+/* ----------------------------- PIEGES ----------------------------- */
+table.pieges th:first-child{width:44%;}
+table.pieges td:first-child{color:var(--rouge); background:#FDF1F0;}
+.x{font-weight:700;}
+.v{color:var(--vert-fonce); font-weight:700;}
+
+/* ---------------------------- RECAP ------------------------------- */
+ol.recap{margin:0; padding-left:0; list-style:none; counter-reset:r;}
+ol.recap li{
+  counter-increment:r; position:relative; padding-left:13pt; margin-bottom:1.8pt;
+  break-inside:avoid;
+}
+ol.recap li::before{
+  content:counter(r); position:absolute; left:0; top:.3pt;
+  width:10pt; height:10pt; border-radius:50%; background:var(--vert); color:#fff;
+  font-size:6.6pt; font-weight:700; text-align:center; line-height:10pt;
+}
+
+/* --------------------------- MATHS -------------------------------- */
+.m{font-family:Cambria,Georgia,"Times New Roman",serif;}
+i,var{font-family:Cambria,Georgia,"Times New Roman",serif; font-style:italic;}
+.op{font-family:Cambria,Georgia,"Times New Roman",serif; font-style:normal;}
+.f{display:inline-block; vertical-align:middle; text-align:center;
+   margin:0 .12em; line-height:1.06; font-family:Cambria,Georgia,"Times New Roman",serif;}
+.f>span{display:block; padding:0 .2em;}
+.f>span:first-child{border-bottom:.6pt solid currentColor; padding-bottom:.08em;}
+.f>span:last-child{padding-top:.04em;}
+.rad{border-top:.6pt solid currentColor; padding-top:.12em;}
+/* line-height:0 evite que l'exposant n'ecarte les lignes ; position:relative le
+   repositionne sans qu'il heurte la barre de fraction ni le trait du radical. */
+sup,sub{font-size:.68em; line-height:0; position:relative; vertical-align:baseline;}
+sup{top:-.42em;}
+sub{bottom:-.22em;}
+.pt{white-space:nowrap;}
+/* Les fleches n'ont qu'un glyphe atrophie dans la fonte serif : on les force
+   en sans-serif, ou elles sont franches meme a 8 pt. */
+.ar{font-family:"Segoe UI",Calibri,Arial,"DejaVu Sans",sans-serif; font-style:normal;}
+
+/* ------------------- PIEGES : blocs erreur / correction ------------- */
+.pg{font-size:8.1pt; border-left:2.4pt solid var(--rouge); background:#FDF1F0; border-radius:1.5pt;
+    padding:2pt 5pt; margin:0 0 2.8pt; break-inside:avoid; page-break-inside:avoid;}
+.pg .err{color:var(--rouge); font-weight:600;}
+.pg .cor{color:#1B1B1B; margin-top:.8pt;}
+.pg .cor b{color:var(--bleu-fonce);}
+.v{color:var(--vert-fonce); font-weight:700;}
+
+</style>
+</head>
+<body>
+<header class="entete">
+  <div class="num">2</div>
+  <div class="txt">
+    <div class="niveau">5EME &middot; MATHEMATIQUES</div>
+    <h1>Multiples et diviseurs d'un entier naturel &middot; Nombres premiers</h1>
+    <div class="sous">Leçon 1 : multiples et critères de divisibilité &middot; Leçon 2 : diviseurs d'un entier &middot; Leçon 3 : la division euclidienne &middot; Leçon 4 : les nombres premiers &middot; Leçon 5 : décomposition en produit de facteurs premiers</div>
+  </div>
+</header>
+
+<div class="bandeau bleu" style="margin-top:0">L'ESSENTIEL</div>
+<div class="cols">
+
+<!-- ================= LECON 1 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 1&nbsp;: Multiples d'un entier naturel ; critères de divisibilité</h2>
+<p><b>Définition.</b> <i>a</i> est un <b>multiple</b> de <i>b</i> (<i>b</i> non nul) lorsqu'il existe un entier <i>q</i> tel que <span class="pt m"><i>a</i>&#8239;=&#8239;<i>b</i>&#8239;&#215;&#8239;<i>q</i></span>. On dit aussi que <i>a</i> est <b>divisible</b> par <i>b</i>, ou que <i>b</i> <b>divise</b> <i>a</i>.</p></div>
+<p>L'ensemble des multiples de <i>b</i> se note <span class="m"><i>M</i><sub><i>b</i></sub></span> : <span class="m"><i>M</i><sub>7</sub>&#8239;=&#8239;{0&#8239;;&#8239;7&#8239;;&#8239;14&#8239;;&#8239;21&#8239;;&#8239;28&#8239;;&#8239;&#8230;}</span>.</p>
+<p><b>Notations.</b> <span class="pt m">21&#8239;&#8712;&#8239;<i>M</i><sub>7</sub></span> se lit « 21 appartient aux multiples de 7 » ; <span class="pt m">16&#8239;&#8713;&#8239;<i>M</i><sub>7</sub></span>, « 16 n'appartient pas aux multiples de 7 ». <span class="m">&#8745;</span> est l'<b>intersection</b> (ce qui est dans les deux ensembles à la fois), <span class="m">&#8746;</span> la <b>réunion</b> (ce qui est dans l'un ou dans l'autre).</p>
+<ul>
+<li>0 est multiple de <b>tout</b> entier ; tout entier est multiple de <b>1</b> et de <b>lui-même</b>.</li>
+<li>Un multiple de <i>b</i> est toujours plus grand que <i>b</i>, ou égal à <i>b</i> (sauf 0).</li>
+</ul>
+<p><b>Lister</b> les multiples de <i>b</i> : on multiplie <i>b</i> par 0, 1, 2, 3&#8239;&#8230; <b>Vérifier</b> que <i>a</i> est multiple de <i>b</i> : on pose <span class="pt m"><i>a</i>&#8239;&#247;&#8239;<i>b</i></span> et le reste doit être 0.</p>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Critères de divisibilité</h3>
+<table>
+<tr><th>Divisible par</th><th>Le nombre&#8239;&#8230;</th></tr>
+<tr><td class="m">2</td><td>se termine par 0, 2, 4, 6 ou 8</td></tr>
+<tr><td class="m">5</td><td>se termine par 0 ou 5</td></tr>
+<tr><td class="m">4</td><td>a ses <b>deux derniers chiffres</b> qui forment un nombre divisible par 4</td></tr>
+<tr><td class="m">3</td><td>a la <b>somme de ses chiffres</b> divisible par 3</td></tr>
+<tr><td class="m">9</td><td>a la <b>somme de ses chiffres</b> divisible par 9</td></tr>
+<tr><td class="m">6</td><td>est divisible <b>à la fois</b> par 2 et par 3, car <span class="pt m">6&#8239;=&#8239;2&#8239;&#215;&#8239;3</span></td></tr>
+</table>
+<div class="note">Deux familles à ne pas mélanger : pour <b>2, 5 et 4</b>, tout se joue sur la <b>fin</b> du nombre, car 10, 100 et 1&#8239;000 sont divisibles par 2 et par 5, et 100 et 1&#8239;000 le sont aussi par 4 ; pour <b>3 et 9</b>, c'est la <b>somme des chiffres</b> qui décide. Le critère de 6 combine les deux premiers, car <span class="pt m">6&#8239;=&#8239;2&#8239;&#215;&#8239;3</span> et ces deux nombres n'ont aucun diviseur commun autre que 1.</div>
+</div>
+
+<!-- ================= LECON 2 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 2&nbsp;: Diviseurs d'un entier naturel</h2>
+<p><b>Définition.</b> <i>b</i> est un <b>diviseur</b> de <i>a</i> lorsque <i>a</i> est un multiple de <i>b</i>, c'est-à-dire lorsqu'il existe un entier <i>q</i> tel que <span class="pt m"><i>a</i>&#8239;=&#8239;<i>b</i>&#8239;&#215;&#8239;<i>q</i></span> (le reste de <span class="pt m"><i>a</i>&#8239;&#247;&#8239;<i>b</i></span> est 0).</p></div>
+<p>L'ensemble des diviseurs de <i>a</i> se note <span class="m"><i>D</i><sub><i>a</i></sub></span> : <span class="m"><i>D</i><sub>12</sub>&#8239;=&#8239;{1&#8239;;&#8239;2&#8239;;&#8239;3&#8239;;&#8239;4&#8239;;&#8239;6&#8239;;&#8239;12}</span>.</p>
+<ul>
+<li>1 est diviseur de tout entier ; tout entier non nul est diviseur de <b>lui-même</b> et de <b>0</b>.</li>
+<li>Un diviseur de <i>a</i> n'est jamais plus grand que <i>a</i> (pour <i>a</i> non nul) : la liste des diviseurs est <b>finie</b>.</li>
+</ul>
+<div class="form">
+  <span class="t">LES DIVISEURS VONT PAR PAIRES</span>
+  <div class="c m">si <i>b</i> divise <i>a</i>, alors <i>q</i>&#8239;=&#8239;<i>a</i>&#8239;&#247;&#8239;<i>b</i> divise aussi <i>a</i>, et <i>b</i>&#8239;&#215;&#8239;<i>q</i>&#8239;=&#8239;<i>a</i></div>
+</div>
+<p>On essaie donc 1, 2, 3, 4&#8239;&#8230; en montant : chaque reste nul donne <b>deux</b> diviseurs d'un coup, et l'on s'arrête quand les deux membres de la paire se rejoignent (pour 36, à <span class="pt m">6&#8239;&#215;&#8239;6</span>). On range enfin la liste dans l'ordre croissant.</p>
+<div class="note"><b>Intersection et réunion.</b> <span class="pt m"><i>D</i><sub>12</sub>&#8239;&#8745;&#8239;<i>D</i><sub>18</sub></span> : les diviseurs <b>communs</b> à 12 et à 18. <span class="pt m"><i>M</i><sub>2</sub>&#8239;&#8746;&#8239;<i>M</i><sub>3</sub></span> : les nombres multiples de 2 <b>ou</b> de 3.</div>
+</div>
+
+<!-- ================= LECON 3 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 3&nbsp;: La division euclidienne</h2>
+<p><b>Définition.</b> Effectuer la division euclidienne de l'entier <i>a</i> (le <b>dividende</b>) par l'entier <i>b</i> non nul (le <b>diviseur</b>), c'est trouver l'<b>unique</b> couple (<i>q</i>&#8239;;&#8239;<i>r</i>) tel que :</p></div>
+<div class="form">
+  <span class="t">EGALITE DE LA DIVISION EUCLIDIENNE</span>
+  <div class="c m"><i>a</i>&#8239;=&#8239;<i>b</i>&#8239;&#215;&#8239;<i>q</i>&#8239;+&#8239;<i>r</i>&nbsp;&nbsp;avec&nbsp;&nbsp;0&#8239;&#8804;&#8239;<i>r</i>&#8239;&lt;&#8239;<i>b</i></div>
+</div>
+<p><i>q</i> est le <b>quotient</b>, <i>r</i> est le <b>reste</b>. La condition <span class="pt m"><i>r</i>&#8239;&lt;&#8239;<i>b</i></span> est essentielle : si le reste atteignait le diviseur, on pourrait encore former un paquet de plus et le quotient serait faux. C'est elle qui rend le couple (<i>q</i>&#8239;;&#8239;<i>r</i>) <b>unique</b>.</p>
+<ul>
+<li><i>a</i> est divisible par <i>b</i> <b>si et seulement si</b> <span class="pt m"><i>r</i>&#8239;=&#8239;0</span>.</li>
+<li>En divisant par <i>b</i>, le reste ne peut valoir que <span class="pt m">0, 1, 2, &#8230;, <i>b</i>&#8239;&#8722;&#8239;1</span> : il y a exactement <i>b</i> restes possibles.</li>
+<li>Donnée manquante : <span class="pt m"><i>r</i>&#8239;=&#8239;<i>a</i>&#8239;&#8722;&#8239;<i>b</i>&#8239;&#215;&#8239;<i>q</i></span> et, quand le reste est connu, <span class="pt m"><i>b</i>&#8239;=&#8239;(<i>a</i>&#8239;&#8722;&#8239;<i>r</i>)&#8239;&#247;&#8239;<i>q</i></span>.</li>
+<li><b>Encadrement</b> : <i>a</i> est compris entre deux multiples consécutifs de <i>b</i>, <span class="pt m"><i>b</i>&#8239;&#215;&#8239;<i>q</i>&#8239;&#8804;&#8239;<i>a</i>&#8239;&lt;&#8239;<i>b</i>&#8239;&#215;&#8239;(<i>q</i>&#8239;+&#8239;1)</span>.</li>
+</ul>
+<p><b>Pour l'écrire</b> : cherche le plus grand multiple de <i>b</i> qui ne dépasse pas <i>a</i> ; <i>q</i> est le nombre par lequel on a multiplié <i>b</i> ; calcule <span class="pt m"><i>r</i>&#8239;=&#8239;<i>a</i>&#8239;&#8722;&#8239;(<i>b</i>&#8239;&#215;&#8239;<i>q</i>)</span> et vérifie que <span class="pt m"><i>r</i>&#8239;&lt;&#8239;<i>b</i></span>.</p>
+<div class="note"><b>Lire l'égalité.</b> Elle dit : le total, c'est autant de <b>paquets pleins</b>, plus <b>ce qui reste</b>. Devant un résultat douteux, vérifie les deux choses : le calcul redonne bien le total, et le reste est bien plus petit que la taille d'un paquet.</div>
+</div>
+
+<!-- ================= LECON 4 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 4&nbsp;: Les nombres premiers</h2>
+<div class="form">
+  <span class="t">DEFINITION</span>
+  <div class="c m">un <b>nombre premier</b> possède <b>exactement deux diviseurs</b> : 1 et lui-même</div>
+</div></div>
+<ul>
+<li>2, 3, 5, 7, 11, 13, 17, 19, 23, 29&#8239;&#8230; <b>2 est le seul nombre premier pair</b>.</li>
+<li><b>1 n'est pas premier</b> : il n'a qu'un seul diviseur.</li>
+</ul>
+<p><b>Reconnaître un nombre premier.</b> Applique d'abord les critères : s'il est divisible par 2, 3 ou 5, il n'est pas premier (sauf 2, 3 et 5 eux-mêmes). Sinon, essaie de le diviser par les nombres premiers suivants, 7, 11, 13&#8239;&#8230;, et arrête-toi dès que le premier testé, <b>multiplié par lui-même</b>, dépasse le nombre étudié : s'il n'a été divisé par aucun d'eux, il est premier. Inutile de tester 4, 6, 9 ou 15 : un nombre divisible par 15 le serait déjà par 3, testé avant.</p>
+<div class="note"><b>Crible d'Eratosthène.</b> Ecrire les nombres de 1 à 50, barrer 1, puis tous les multiples de 2 (sauf 2), puis ceux de 3 (sauf 3), de 5, de 7 : ce qui reste est la liste des <b>15 nombres premiers inférieurs à 50</b>. On s'arrête après 7 car <span class="pt m">11&#8239;&#215;&#8239;11&#8239;=&#8239;121</span> dépasse déjà 50.</div>
+</div>
+
+<!-- ================= LECON 5 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 5&nbsp;: Décomposition en produit de facteurs premiers</h2>
+<p><b>Propriété.</b> Tout entier naturel supérieur à 1 s'écrit, de façon <b>unique</b> (à l'ordre près), comme un <b>produit de facteurs premiers</b>. Cette décomposition est la « carte d'identité » du nombre.</p></div>
+<div class="form">
+  <span class="t">ECRITURE AVEC DES EXPOSANTS</span>
+  <div class="c m">60&#8239;=&#8239;2&#8239;&#215;&#8239;2&#8239;&#215;&#8239;3&#8239;&#215;&#8239;5&#8239;=&#8239;2<sup>2</sup>&#8239;&#215;&#8239;3&#8239;&#215;&#8239;5</div>
+</div>
+<p>L'exposant est un simple raccourci : <span class="pt m">2<sup>3</sup></span> veut dire <span class="pt m">2&#8239;&#215;&#8239;2&#8239;&#215;&#8239;2</span>, rien de plus.</p>
+<ul>
+<li><b>Arbre des facteurs</b> : casser le nombre en deux facteurs, puis recommencer sur chaque branche tant qu'un facteur n'est pas premier.</li>
+<li><b>Division en cascade</b> : diviser par 2 tant que c'est possible, puis par 3, par 5, par 7&#8239;&#8230; jusqu'à obtenir 1 ; les diviseurs utilisés sont les facteurs premiers, que l'on regroupe avec des exposants.</li>
+</ul>
+<p><b>Lire une décomposition.</b> Elle donne directement les diviseurs premiers et répond sans calcul aux questions de divisibilité : <span class="pt m">360&#8239;=&#8239;2<sup>3</sup>&#8239;&#215;&#8239;3<sup>2</sup>&#8239;&#215;&#8239;5</span> est divisible par 9 (il contient <span class="pt m">3&#8239;&#215;&#8239;3</span>) et par 8 (il contient <span class="pt m">2&#8239;&#215;&#8239;2&#8239;&#215;&#8239;2</span>), mais pas par 7, qui n'y apparaît pas.</p>
+</div>
+
+</div>
+
+<div class="bandeau vert">PIEGES ET ERREURS FREQUENTES</div>
+<div class="cols">
+<div class="pg"><div class="err"><span class="x">&#10007;</span> « 12 est un diviseur de 3 » &nbsp;&middot;&nbsp; « 45 est un diviseur de 9 »</div><div class="cor"><span class="v">&#10003;</span> <span class="pt m">12&#8239;=&#8239;3&#8239;&#215;&#8239;4</span> : 12 est le <b>multiple</b>, 3 est le <b>diviseur</b> ; de même 9 divise 45. Le multiple est le <b>plus grand</b>, le diviseur le <b>plus petit</b>.</div></div>
+<div class="pg"><div class="err"><span class="x">&#10007;</span> « 3&#8239;254 est divisible par 3 car il se termine par 4 »</div><div class="cor"><span class="v">&#10003;</span> Pour 3 et 9, on regarde la <b>somme des chiffres</b> : <span class="pt m">3&#8239;+&#8239;2&#8239;+&#8239;5&#8239;+&#8239;4&#8239;=&#8239;14</span>, qui n'est pas multiple de 3 : 3&#8239;254 ne l'est pas non plus. Le dernier chiffre ne sert que pour 2 et 5.</div></div>
+<div class="pg"><div class="err"><span class="x">&#10007;</span> « 4&#8239;238 est divisible par 6 car il est pair »</div><div class="cor"><span class="v">&#10003;</span> Pour 6, les <b>deux</b> critères doivent réussir : 4&#8239;238 est pair, mais <span class="pt m">4&#8239;+&#8239;2&#8239;+&#8239;3&#8239;+&#8239;8&#8239;=&#8239;17</span> n'est pas multiple de 3, donc 4&#8239;238 n'est pas divisible par 6.</div></div>
+<div class="pg"><div class="err"><span class="x">&#10007;</span> <span class="pt m">43&#8239;=&#8239;5&#8239;&#215;&#8239;7&#8239;+&#8239;8</span></div><div class="cor"><span class="v">&#10003;</span> Le calcul tombe juste, mais <span class="pt m">8&#8239;&#8805;&#8239;5</span> : le reste doit <b>toujours</b> être plus petit que le diviseur. On écrit <span class="pt m">43&#8239;=&#8239;5&#8239;&#215;&#8239;8&#8239;+&#8239;3</span>.</div></div>
+<div class="pg"><div class="err"><span class="x">&#10007;</span> « 1 est un nombre premier »</div><div class="cor"><span class="v">&#10003;</span> Un nombre premier a exactement <b>deux</b> diviseurs distincts ; 1 n'en a qu'un. Le plus petit nombre premier est <b>2</b>, et c'est le seul qui soit pair.</div></div>
+<div class="pg"><div class="err"><span class="x">&#10007;</span> « 51 est premier car il est impair » &nbsp;&middot;&nbsp; « 91 aussi »</div><div class="cor"><span class="v">&#10003;</span> Etre impair ne suffit pas : <span class="pt m">51&#8239;=&#8239;3&#8239;&#215;&#8239;17</span> et <span class="pt m">91&#8239;=&#8239;7&#8239;&#215;&#8239;13</span>. Ces deux nombres ont quatre diviseurs : ils ne sont pas premiers.</div></div>
+<div class="pg"><div class="err"><span class="x">&#10007;</span> « <span class="pt m">60&#8239;=&#8239;4&#8239;&#215;&#8239;15</span>, voilà la décomposition »</div><div class="cor"><span class="v">&#10003;</span> L'égalité est juste, mais une décomposition ne contient <b>que</b> des nombres premiers : ni 4 ni 15 ne l'est. Il faut aller jusqu'à <span class="pt m">60&#8239;=&#8239;2<sup>2</sup>&#8239;&#215;&#8239;3&#8239;&#215;&#8239;5</span>.</div></div>
+
+</div>
+
+<div class="bandeau bleu">A SAVOIR PAR COEUR AVANT LE DEVOIR</div>
+<div class="cols">
+<ol class="recap">
+<li><span class="pt m"><i>a</i>&#8239;=&#8239;<i>b</i>&#8239;&#215;&#8239;<i>q</i></span> : <i>a</i> est <b>multiple</b> de <i>b</i>, <i>b</i> est <b>diviseur</b> de <i>a</i>. Le multiple est le plus grand, le diviseur le plus petit.</li>
+<li>Critères : <b>2</b> finit par 0, 2, 4, 6, 8 ; <b>5</b> par 0 ou 5 ; <b>4</b> deux derniers chiffres ; <b>3</b> et <b>9</b> somme des chiffres ; <b>6</b> par 2 <b>et</b> par 3 à la fois.</li>
+<li>Les diviseurs vont par <b>paires</b> : on monte 1, 2, 3, 4&#8239;&#8230; et on s'arrête quand les deux membres se rejoignent. La liste des diviseurs est <b>finie</b>.</li>
+<li>Division euclidienne : <span class="pt m"><i>a</i>&#8239;=&#8239;<i>b</i>&#8239;&#215;&#8239;<i>q</i>&#8239;+&#8239;<i>r</i></span> avec <span class="pt m">0&#8239;&#8804;&#8239;<i>r</i>&#8239;&lt;&#8239;<i>b</i></span> ; <i>a</i> divisible par <i>b</i> <b>si et seulement si</b> <span class="pt m"><i>r</i>&#8239;=&#8239;0</span>, et il y a <i>b</i> restes possibles, de 0 à <span class="pt m"><i>b</i>&#8239;&#8722;&#8239;1</span>.</li>
+<li><b>Nombre premier</b> : exactement deux diviseurs, 1 et lui-même. 1 n'est pas premier. Liste : 2, 3, 5, 7, 11, 13, 17, 19, 23, 29&#8239;&#8230;</li>
+<li>Pour tester si un nombre est premier : le diviser par 2, 3, 5, 7, 11&#8239;&#8230; et s'arrêter dès que le premier testé, multiplié par lui-même, dépasse ce nombre.</li>
+<li>Tout entier supérieur à 1 se décompose de façon <b>unique</b> en produit de <b>facteurs premiers</b> : <span class="pt m">60&#8239;=&#8239;2<sup>2</sup>&#8239;&#215;&#8239;3&#8239;&#215;&#8239;5</span>. Cette écriture se lit pour répondre aux questions de divisibilité.</li>
+</ol>
+</div>
+
+</body>
+</html>

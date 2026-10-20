@@ -1,0 +1,467 @@
+{
+  "niveau": "6ème",
+  "chapitre": "Chapitre 1 : Eléments de géométrie",
+  "source": "maths/6eme/Chapitre_1_Elements_de_geometrie",
+  "nombre_cartes": 36,
+  "cartes": [
+    {
+      "id": "6E-CH01-001",
+      "lecon": "Points, droites et points alignés",
+      "type": "definition",
+      "recto": "Comment nomme-t-on un point en géométrie ?",
+      "verso": "Par une lettre majuscule : A, B, M, O. Un point marque un endroit précis, sans largeur ni longueur, et on le dessine par une petite croix ou un petit rond.",
+      "difficulte": 1,
+      "tags": [
+        "point",
+        "notation",
+        "vocabulaire"
+      ]
+    },
+    {
+      "id": "6E-CH01-002",
+      "lecon": "Points, droites et points alignés",
+      "type": "definition",
+      "recto": "Qu'est-ce qu'une droite en mathématiques ?",
+      "verso": "Une ligne parfaitement droite qui se prolonge sans fin des deux côtés. Sur la feuille, on n'en dessine qu'un morceau, mais il faut toujours l'imaginer plus longue.",
+      "difficulte": 1,
+      "tags": [
+        "droite",
+        "definition"
+      ]
+    },
+    {
+      "id": "6E-CH01-003",
+      "lecon": "Points, droites et points alignés",
+      "type": "definition",
+      "recto": "De quelles deux façons peut-on nommer une droite ?",
+      "verso": "Par une lettre minuscule entre parenthèses, la droite $\\left(d\\right)$, ou par deux de ses points, la droite $\\left(AB\\right)$.",
+      "difficulte": 2,
+      "tags": [
+        "droite",
+        "notation"
+      ]
+    },
+    {
+      "id": "6E-CH01-004",
+      "lecon": "Points, droites et points alignés",
+      "type": "definition",
+      "recto": "Que signifie l'écriture $A \\in \\left(d\\right)$ ?",
+      "verso": "Que le point A appartient à la droite $\\left(d\\right)$, c'est-à-dire qu'il est sur cette droite ; on dit aussi que $\\left(d\\right)$ passe par A. Si le point E n'y est pas, on écrit $E \\notin \\left(d\\right)$.",
+      "difficulte": 2,
+      "tags": [
+        "appartenance",
+        "notation",
+        "droite"
+      ]
+    },
+    {
+      "id": "6E-CH01-005",
+      "lecon": "Points, droites et points alignés",
+      "type": "formule",
+      "recto": "Combien de droites différentes passent par deux points distincts A et B ?",
+      "verso": "Une seule : la droite $\\left(AB\\right)$. Par un seul point, au contraire, il passe une infinité de droites.",
+      "difficulte": 2,
+      "tags": [
+        "droite",
+        "propriete",
+        "deux-points"
+      ]
+    },
+    {
+      "id": "6E-CH01-006",
+      "lecon": "Points, droites et points alignés",
+      "type": "definition",
+      "recto": "Que veut dire que plusieurs points sont alignés ?",
+      "verso": "Qu'une même droite passe par tous ces points. On le vérifie en posant le bord de la règle contre deux d'entre eux et en regardant si les autres touchent aussi ce bord.",
+      "difficulte": 1,
+      "tags": [
+        "points-alignes",
+        "definition"
+      ]
+    },
+    {
+      "id": "6E-CH01-007",
+      "lecon": "Points, droites et points alignés",
+      "type": "formule",
+      "recto": "Pourquoi $\\left(AB\\right)$ et $\\left(BA\\right)$ désignent-elles la même droite ?",
+      "verso": "Parce que l'ordre des deux lettres ne change rien : les deux points sont posés sur la même ligne, et par deux points distincts il ne passe qu'une seule droite.",
+      "difficulte": 2,
+      "tags": [
+        "droite",
+        "notation",
+        "ordre-des-lettres"
+      ]
+    },
+    {
+      "id": "6E-CH01-008",
+      "lecon": "Points, droites et points alignés",
+      "type": "formule",
+      "recto": "Pourquoi est-il faux d'écrire que la droite $\\left(AB\\right)$ mesure $8$ cm ?",
+      "verso": "Parce qu'une droite est illimitée des deux côtés : elle n'a pas de longueur. C'est le segment $\\left[AB\\right]$ qui se mesure, et on écrit alors $AB = 8$ cm.",
+      "difficulte": 3,
+      "tags": [
+        "droite",
+        "longueur",
+        "piege"
+      ]
+    },
+    {
+      "id": "6E-CH01-009",
+      "lecon": "Points, droites et points alignés",
+      "type": "definition",
+      "recto": "Quelles erreurs de notation contient la phrase « la droite AB passe par le point $\\left(C\\right)$ » ?",
+      "verso": "Deux erreurs : le nom d'une droite s'écrit entre parenthèses, $\\left(AB\\right)$, et le nom d'un point s'écrit par une simple lettre majuscule, C.",
+      "difficulte": 3,
+      "tags": [
+        "notation",
+        "piege"
+      ]
+    },
+    {
+      "id": "6E-CH01-010",
+      "lecon": "Demi-droites, segments, longueur et milieu",
+      "type": "definition",
+      "recto": "Qu'est-ce qu'une demi-droite ?",
+      "verso": "Une portion de droite qui a un début, appelé son origine, et qui se prolonge sans fin d'un seul côté.",
+      "difficulte": 1,
+      "tags": [
+        "demi-droite",
+        "definition",
+        "origine"
+      ]
+    },
+    {
+      "id": "6E-CH01-011",
+      "lecon": "Demi-droites, segments, longueur et milieu",
+      "type": "definition",
+      "recto": "Comment note-t-on la demi-droite d'origine O qui passe par le point A ?",
+      "verso": "$\\left[OA\\right)$ : le crochet est du côté de l'origine, la parenthèse du côté illimité.",
+      "difficulte": 2,
+      "tags": [
+        "demi-droite",
+        "notation"
+      ]
+    },
+    {
+      "id": "6E-CH01-012",
+      "lecon": "Demi-droites, segments, longueur et milieu",
+      "type": "formule",
+      "recto": "Pourquoi $\\left[OA\\right)$ et $\\left[AO\\right)$ ne sont-elles pas la même demi-droite ?",
+      "verso": "Parce que la première part de O et la seconde part de A : changer l'origine change la demi-droite. Pour les segments et les droites, au contraire, l'ordre des lettres ne compte pas.",
+      "difficulte": 3,
+      "tags": [
+        "demi-droite",
+        "notation",
+        "piege"
+      ]
+    },
+    {
+      "id": "6E-CH01-013",
+      "lecon": "Demi-droites, segments, longueur et milieu",
+      "type": "definition",
+      "recto": "Qu'est-ce qu'un segment d'extrémités A et B ?",
+      "verso": "C'est la portion de droite comprise entre deux points, appelés ses extrémités. Le segment d'extrémités A et B se note $\\left[AB\\right]$, avec deux crochets, et $\\left[AB\\right] = \\left[BA\\right]$.",
+      "difficulte": 1,
+      "tags": [
+        "segment",
+        "notation",
+        "extremites"
+      ]
+    },
+    {
+      "id": "6E-CH01-014",
+      "lecon": "Demi-droites, segments, longueur et milieu",
+      "type": "definition",
+      "recto": "Quelle différence y a-t-il entre les écritures $\\left[AB\\right]$ et $AB$ ?",
+      "verso": "$\\left[AB\\right]$ est le segment : un dessin, que l'on trace. $AB$, sans crochet ni parenthèse, est sa longueur : un nombre, accompagné d'une unité, comme $AB = 5$ cm.",
+      "difficulte": 2,
+      "tags": [
+        "segment",
+        "longueur",
+        "notation"
+      ]
+    },
+    {
+      "id": "6E-CH01-015",
+      "lecon": "Demi-droites, segments, longueur et milieu",
+      "type": "formule",
+      "recto": "Pourquoi l'écriture « $\\left[AB\\right] = 7$ cm » est-elle fausse ?",
+      "verso": "Parce qu'un segment est un dessin, pas un nombre. On écrit $AB = 7$ cm, ou bien : « le segment $\\left[AB\\right]$ mesure $7$ cm ». De même, on trace $\\left[AB\\right]$ mais on calcule $AB$.",
+      "difficulte": 3,
+      "tags": [
+        "segment",
+        "longueur",
+        "piege"
+      ]
+    },
+    {
+      "id": "6E-CH01-016",
+      "lecon": "Demi-droites, segments, longueur et milieu",
+      "type": "definition",
+      "recto": "Que signifie l'écriture $\\left[AB\\right] \\subset \\left(AB\\right)$ ?",
+      "verso": "Que le segment est inclus dans la droite : tous les points de $\\left[AB\\right]$ sont aussi des points de $\\left(AB\\right)$. L'inverse est faux, et l'on écrit $\\left(AB\\right) \\not\\subset \\left[AB\\right]$.",
+      "difficulte": 2,
+      "tags": [
+        "inclusion",
+        "notation",
+        "segment"
+      ]
+    },
+    {
+      "id": "6E-CH01-017",
+      "lecon": "Demi-droites, segments, longueur et milieu",
+      "type": "definition",
+      "recto": "Quelles deux conditions définissent le milieu I du segment $\\left[AB\\right]$ ?",
+      "verso": "Le point I est sur $\\left[AB\\right]$ et il vérifie $IA = IB$. Si $AB = 6$ cm, alors $IA = IB = 6 \\div 2 = 3$ cm.",
+      "difficulte": 2,
+      "tags": [
+        "milieu",
+        "segment",
+        "definition"
+      ]
+    },
+    {
+      "id": "6E-CH01-018",
+      "lecon": "Demi-droites, segments, longueur et milieu",
+      "type": "formule",
+      "recto": "Quand trois points M, N et P sont alignés dans cet ordre, comment obtient-on la longueur $MP$ ?",
+      "verso": "En additionnant les deux morceaux mis bout à bout : $MP = MN + NP$. Avec $MN = 3{,}5$ cm et $NP = 2{,}5$ cm, on obtient $MP = 6$ cm.",
+      "difficulte": 2,
+      "tags": [
+        "longueur",
+        "points-alignes",
+        "addition"
+      ]
+    },
+    {
+      "id": "6E-CH01-019",
+      "lecon": "Demi-droites, segments, longueur et milieu",
+      "type": "formule",
+      "recto": "Où faut-il placer le zéro de la règle pour mesurer un segment $\\left[AB\\right]$ ?",
+      "verso": "Sur l'extrémité A, exactement ; on lit ensuite la graduation en face de B, et c'est la longueur $AB$. Le zéro n'est pas toujours au bout de la règle : il faut le chercher.",
+      "difficulte": 2,
+      "tags": [
+        "mesure",
+        "regle",
+        "segment"
+      ]
+    },
+    {
+      "id": "6E-CH01-020",
+      "lecon": "Demi-droites, segments, longueur et milieu",
+      "type": "formule",
+      "recto": "Pourquoi le compas reporte-t-il une longueur plus sûrement que la règle graduée ?",
+      "verso": "Parce que l'écartement entre la pointe sèche et la mine est la longueur elle-même : le compas la garde en mémoire, sans aucune graduation à lire, donc sans erreur de lecture ni arrondi.",
+      "difficulte": 2,
+      "tags": [
+        "compas",
+        "report-de-longueur"
+      ]
+    },
+    {
+      "id": "6E-CH01-021",
+      "lecon": "Droites parallèles",
+      "type": "definition",
+      "recto": "Quand dit-on que deux droites sont parallèles ?",
+      "verso": "Lorsqu'elles ne se coupent en aucun point, aussi loin qu'on les prolonge. On écrit $\\left(d_1\\right) \\parallel \\left(d_2\\right)$.",
+      "difficulte": 1,
+      "tags": [
+        "paralleles",
+        "definition",
+        "notation"
+      ]
+    },
+    {
+      "id": "6E-CH01-022",
+      "lecon": "Droites parallèles",
+      "type": "formule",
+      "recto": "Que peut-on dire de l'écart entre deux droites parallèles ?",
+      "verso": "Il est le même partout. C'est ce que vérifie le charpentier en mesurant l'écart à plusieurs endroits, et c'est ce qui revient au même que de dire qu'elles ne se coupent jamais.",
+      "difficulte": 1,
+      "tags": [
+        "paralleles",
+        "ecart-constant"
+      ]
+    },
+    {
+      "id": "6E-CH01-023",
+      "lecon": "Droites parallèles",
+      "type": "formule",
+      "recto": "Combien de parallèles à une droite $\\left(d\\right)$ passent par un point A qui n'est pas sur $\\left(d\\right)$ ?",
+      "verso": "Une seule. Cette parallèle existe toujours, et il n'y en a pas deux : c'est ce qui rend la construction à l'équerre fiable.",
+      "difficulte": 2,
+      "tags": [
+        "paralleles",
+        "propriete",
+        "unicite"
+      ]
+    },
+    {
+      "id": "6E-CH01-024",
+      "lecon": "Droites parallèles",
+      "type": "formule",
+      "recto": "Que conclut-on lorsque deux droites sont parallèles à une même troisième droite ?",
+      "verso": "Qu'elles sont parallèles entre elles : si $\\left(d_1\\right) \\parallel \\left(d\\right)$ et $\\left(d_2\\right) \\parallel \\left(d\\right)$, alors $\\left(d_1\\right) \\parallel \\left(d_2\\right)$. On démontre ainsi un parallélisme sans rien mesurer.",
+      "difficulte": 2,
+      "tags": [
+        "paralleles",
+        "propriete",
+        "demonstration"
+      ]
+    },
+    {
+      "id": "6E-CH01-025",
+      "lecon": "Droites parallèles",
+      "type": "definition",
+      "recto": "Quelle différence y a-t-il entre les symboles $\\cap$ et $\\cup$ ?",
+      "verso": "$\\cap$ est l'intersection : elle rassemble les points qui sont sur les deux lignes à la fois. $\\cup$ est la réunion : elle rassemble les points qui sont sur l'une ou sur l'autre.",
+      "difficulte": 2,
+      "tags": [
+        "intersection",
+        "reunion",
+        "notation"
+      ]
+    },
+    {
+      "id": "6E-CH01-026",
+      "lecon": "Droites parallèles",
+      "type": "formule",
+      "recto": "Que vaut l'intersection de deux droites parallèles distinctes ?",
+      "verso": "Elle est vide : aucun point n'appartient aux deux droites à la fois, puisqu'elles ne se coupent jamais.",
+      "difficulte": 2,
+      "tags": [
+        "paralleles",
+        "intersection",
+        "ensemble-vide"
+      ]
+    },
+    {
+      "id": "6E-CH01-027",
+      "lecon": "Droites parallèles",
+      "type": "definition",
+      "recto": "Comment marque-t-on deux droites parallèles sur un dessin codé ?",
+      "verso": "Par de petits chevrons identiques placés sur chacune des deux droites.",
+      "difficulte": 1,
+      "tags": [
+        "paralleles",
+        "codage"
+      ]
+    },
+    {
+      "id": "6E-CH01-028",
+      "lecon": "Droites parallèles",
+      "type": "formule",
+      "recto": "Pourquoi deux traits qui ne se coupent pas sur ta feuille ne sont-ils pas forcément parallèles ?",
+      "verso": "Parce que la feuille est trop petite : prolongées, les deux droites peuvent se couper bien plus loin. Il faut vérifier que l'écart est le même aux deux bouts, ou construire à l'équerre.",
+      "difficulte": 3,
+      "tags": [
+        "paralleles",
+        "piege",
+        "verification"
+      ]
+    },
+    {
+      "id": "6E-CH01-029",
+      "lecon": "Droites sécantes et droites perpendiculaires",
+      "type": "definition",
+      "recto": "Quand dit-on que deux droites sont sécantes ?",
+      "verso": "Lorsqu'elles se coupent. Elles se coupent alors en un seul point, appelé leur point d'intersection.",
+      "difficulte": 1,
+      "tags": [
+        "secantes",
+        "definition",
+        "intersection"
+      ]
+    },
+    {
+      "id": "6E-CH01-030",
+      "lecon": "Droites sécantes et droites perpendiculaires",
+      "type": "formule",
+      "recto": "Comment écrit-on correctement que les droites $\\left(d_1\\right)$ et $\\left(d_2\\right)$ se coupent au point I ?",
+      "verso": "$\\left(d_1\\right) \\cap \\left(d_2\\right) = \\left\\lbrace I \\right\\rbrace$, avec des accolades : une intersection est un ensemble de points, et non un point.",
+      "difficulte": 3,
+      "tags": [
+        "intersection",
+        "notation",
+        "piege"
+      ]
+    },
+    {
+      "id": "6E-CH01-031",
+      "lecon": "Droites sécantes et droites perpendiculaires",
+      "type": "formule",
+      "recto": "Quelles sont les deux seules positions possibles pour deux droites d'un même plan ?",
+      "verso": "Elles sont soit parallèles, sans aucun point commun ou bien confondues, soit sécantes, avec un seul point commun. Il n'y a pas d'autre possibilité.",
+      "difficulte": 2,
+      "tags": [
+        "positions-relatives",
+        "propriete"
+      ]
+    },
+    {
+      "id": "6E-CH01-032",
+      "lecon": "Droites sécantes et droites perpendiculaires",
+      "type": "definition",
+      "recto": "Quand deux droites sécantes sont-elles dites perpendiculaires ?",
+      "verso": "Lorsqu'elles forment quatre angles droits. On écrit $\\left(d_1\\right) \\perp \\left(d_2\\right)$, et on lit « $d_1$ est perpendiculaire à $d_2$ ».",
+      "difficulte": 1,
+      "tags": [
+        "perpendiculaires",
+        "definition",
+        "notation"
+      ]
+    },
+    {
+      "id": "6E-CH01-033",
+      "lecon": "Droites sécantes et droites perpendiculaires",
+      "type": "definition",
+      "recto": "Comment code-t-on un angle droit sur un dessin de géométrie ?",
+      "verso": "Par un petit carré placé dans le coin, au point d'intersection des deux droites.",
+      "difficulte": 1,
+      "tags": [
+        "perpendiculaires",
+        "codage",
+        "angle-droit"
+      ]
+    },
+    {
+      "id": "6E-CH01-034",
+      "lecon": "Droites sécantes et droites perpendiculaires",
+      "type": "formule",
+      "recto": "Combien de perpendiculaires à une droite $\\left(d\\right)$ passent par un point A donné ?",
+      "verso": "Une seule, que le point A soit sur $\\left(d\\right)$ ou en dehors.",
+      "difficulte": 2,
+      "tags": [
+        "perpendiculaires",
+        "propriete",
+        "unicite"
+      ]
+    },
+    {
+      "id": "6E-CH01-035",
+      "lecon": "Droites sécantes et droites perpendiculaires",
+      "type": "formule",
+      "recto": "Que conclut-on lorsque deux droites sont perpendiculaires à une même troisième droite ?",
+      "verso": "Qu'elles sont parallèles entre elles : si $\\left(d_1\\right) \\perp \\left(d\\right)$ et $\\left(d_2\\right) \\perp \\left(d\\right)$, alors $\\left(d_1\\right) \\parallel \\left(d_2\\right)$. Le maçon s'en sert pour monter deux murs parallèles d'équerre sur un même mur de fond.",
+      "difficulte": 2,
+      "tags": [
+        "perpendiculaires",
+        "paralleles",
+        "propriete"
+      ]
+    },
+    {
+      "id": "6E-CH01-036",
+      "lecon": "Droites sécantes et droites perpendiculaires",
+      "type": "formule",
+      "recto": "Quelle différence y a-t-il entre deux droites sécantes et deux droites perpendiculaires ?",
+      "verso": "Deux perpendiculaires sont toujours sécantes, mais deux sécantes peuvent se couper sans former d'angle droit. La perpendicularité est le cas particulier des quatre angles droits.",
+      "difficulte": 3,
+      "tags": [
+        "secantes",
+        "perpendiculaires",
+        "distinction"
+      ]
+    }
+  ]
+}

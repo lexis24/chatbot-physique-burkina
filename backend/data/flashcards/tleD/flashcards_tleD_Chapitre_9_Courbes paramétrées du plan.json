@@ -1,0 +1,332 @@
+{
+  "niveau": "Terminale D",
+  "chapitre": "Chapitre 9 : Courbes paramétrées du plan",
+  "source": "maths/tleD/Chapitre_9_Courbes_parametrees",
+  "nombre_cartes": 36,
+  "cartes": [
+    {
+      "id": "TD-CH09-001",
+      "lecon": "Courbe paramétrée, périodicité et symétries",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on courbe paramétrée du plan ?",
+      "verso": "C'est l'ensemble des points $M(t)=\\big(x(t)\\,;y(t)\\big)$ obtenus quand le paramètre $t$ parcourt un intervalle $I$, dans un repère orthonormé. Les fonctions $x$ et $y$ sont les fonctions coordonnées.",
+      "difficulte": 1,
+      "tags": ["courbe-parametree", "definition"]
+    },
+    {
+      "id": "TD-CH09-002",
+      "lecon": "Courbe paramétrée, périodicité et symétries",
+      "type": "definition",
+      "recto": "En vocabulaire cinématique, comment appelle-t-on la courbe décrite par le point $M(t)$ ?",
+      "verso": "Sa trajectoire. Lorsque $t$ représente le temps, $M(t)$ est un point mobile ; le paramètre $t$ n'est pas une coordonnée du point, c'est une étiquette qui désigne l'instant.",
+      "difficulte": 1,
+      "tags": ["trajectoire", "point-mobile", "cinematique"]
+    },
+    {
+      "id": "TD-CH09-003",
+      "lecon": "Courbe paramétrée, périodicité et symétries",
+      "type": "definition",
+      "recto": "Pourquoi deux paramétrages différents peuvent-ils donner la même courbe ?",
+      "verso": "Parce qu'une courbe paramétrée est un ensemble de points, et non un couple de fonctions. Le paramétrage dit en plus le sens et l'horaire du parcours, comme deux personnes qui suivent la même piste, l'une à pied, l'autre à vélo.",
+      "difficulte": 3,
+      "tags": ["parametrage", "courbe-parametree", "distinction"]
+    },
+    {
+      "id": "TD-CH09-004",
+      "lecon": "Courbe paramétrée, périodicité et symétries",
+      "type": "formule",
+      "recto": "Comment paramètre-t-on la courbe représentative d'une fonction $f$ de domaine $D_f$ ?",
+      "verso": "On pose $x(t)=t$ et $y(t)=f(t)$, pour $t\\in D_f$. Toute courbe d'équation $y=f(x)$ se paramètre ainsi : les courbes paramétrées généralisent les courbes de fonctions, sans rien perdre de ce qu'on savait tracer.",
+      "difficulte": 1,
+      "tags": ["parametrage", "fonction"]
+    },
+    {
+      "id": "TD-CH09-005",
+      "lecon": "Courbe paramétrée, périodicité et symétries",
+      "type": "definition",
+      "recto": "Pourquoi un cercle ne peut-il pas s'écrire sous la forme $y=f(x)$ ?",
+      "verso": "Parce que deux points distincts du cercle ont la même abscisse, alors qu'une fonction n'associe qu'une seule image à chaque nombre. Un paramétrage, lui, donne un point et un seul pour chaque valeur de $t$ : il décrit le cercle sans difficulté.",
+      "difficulte": 2,
+      "tags": ["cercle", "fonction", "parametrage"]
+    },
+    {
+      "id": "TD-CH09-006",
+      "lecon": "Courbe paramétrée, périodicité et symétries",
+      "type": "definition",
+      "recto": "Qu'obtient-on en éliminant le paramètre entre $x(t)$ et $y(t)$ ?",
+      "verso": "Une équation cartésienne, c'est-à-dire une relation entre $x$ et $y$ seuls, qui identifie la courbe : droite, parabole, cercle ou ellipse. L'élimination est un outil de reconnaissance, pas une obligation : on l'utilise quand elle est facile.",
+      "difficulte": 2,
+      "tags": ["equation-cartesienne", "elimination"]
+    },
+    {
+      "id": "TD-CH09-007",
+      "lecon": "Courbe paramétrée, périodicité et symétries",
+      "type": "formule",
+      "recto": "Comment élimine-t-on le paramètre lorsque l'une des fonctions coordonnées est affine en $t$ ?",
+      "verso": "On tire $t$ de cette égalité, puis on le remplace dans l'autre fonction. Ainsi $x=2t+1$ donne $t=\\dfrac{x-1}{2}$, valeur que l'on reporte dans $y(t)$ pour obtenir une relation entre $x$ et $y$ seuls.",
+      "difficulte": 2,
+      "tags": ["elimination", "affine"]
+    },
+    {
+      "id": "TD-CH09-008",
+      "lecon": "Courbe paramétrée, périodicité et symétries",
+      "type": "formule",
+      "recto": "Comment élimine-t-on le paramètre lorsque $x(t)=a\\cos t$ et $y(t)=b\\sin t$ ?",
+      "verso": "On isole $\\cos t=\\dfrac{x}{a}$ et $\\sin t=\\dfrac{y}{b}$, puis on élève au carré et l'on additionne. L'identité $\\cos^{2}t+\\sin^{2}t=1$ donne $\\dfrac{x^{2}}{a^{2}}+\\dfrac{y^{2}}{b^{2}}=1$ : une ellipse de centre $O$, de demi-axes $a$ et $b$.",
+      "difficulte": 2,
+      "tags": ["elimination", "ellipse", "trigonometrie"]
+    },
+    {
+      "id": "TD-CH09-009",
+      "lecon": "Courbe paramétrée, périodicité et symétries",
+      "type": "formule",
+      "recto": "Quelle courbe décrit le point de coordonnées $x(t)=R\\cos t$ et $y(t)=R\\sin t$ ?",
+      "verso": "Le cercle de centre $O$ et de rayon $R$, car $x^{2}+y^{2}=R^{2}\\left(\\cos^{2}t+\\sin^{2}t\\right)=R^{2}$. Si les deux coefficients étaient différents, on obtiendrait une ellipse et non un cercle.",
+      "difficulte": 1,
+      "tags": ["cercle", "parametrage", "rayon"]
+    },
+    {
+      "id": "TD-CH09-010",
+      "lecon": "Courbe paramétrée, périodicité et symétries",
+      "type": "definition",
+      "recto": "Pourquoi l'équation cartésienne obtenue peut-elle décrire plus de points que la courbe ?",
+      "verso": "Parce que les fonctions coordonnées ne prennent pas forcément toutes les valeurs possibles. Pour $x(t)=t^{2}$ et $y(t)=t^{4}$, on trouve $y=x^{2}$, mais $x(t)\\ge 0$ : seule la moitié droite de la parabole est parcourue. Précise toujours la portion décrite.",
+      "difficulte": 3,
+      "tags": ["elimination", "portion-decrite", "piege"]
+    },
+    {
+      "id": "TD-CH09-011",
+      "lecon": "Courbe paramétrée, périodicité et symétries",
+      "type": "definition",
+      "recto": "Pourquoi le paramètre $t$ ne doit-il pas être confondu avec l'abscisse du point ?",
+      "verso": "Parce que l'abscisse vaut $x(t)$, image de $t$ par la fonction coordonnée, et non $t$ lui-même. Pour $x(t)=t^{2}$, le point de paramètre $2$ a pour abscisse $4$. Les deux nombres ne coïncident que dans le cas particulier $x(t)=t$.",
+      "difficulte": 3,
+      "tags": ["parametre", "abscisse", "piege"]
+    },
+    {
+      "id": "TD-CH09-012",
+      "lecon": "Courbe paramétrée, périodicité et symétries",
+      "type": "formule",
+      "recto": "Que permet une période commune $T$ aux deux fonctions coordonnées ?",
+      "verso": "Comme $M(t+T)=M(t)$, le point mobile repasse par les mêmes positions : la courbe est entièrement décrite lorsque $t$ parcourt un seul intervalle de longueur $T$, par exemple $[0\\,;T]$. On passe d'un intervalle infini à un intervalle borné.",
+      "difficulte": 2,
+      "tags": ["periodicite", "reduction"]
+    },
+    {
+      "id": "TD-CH09-013",
+      "lecon": "Courbe paramétrée, périodicité et symétries",
+      "type": "formule",
+      "recto": "Comment détermine-t-on la période commune à $x(t)$ et à $y(t)$ ?",
+      "verso": "On cherche la période de $x$, celle de $y$, puis on prend le plus petit multiple commun aux deux. Pour $x(t)=\\cos t$ et $y(t)=\\sin(2t)$, de périodes $2\\pi$ et $\\pi$, la période commune est $2\\pi$ : il faut que les deux fonctions retrouvent leur valeur.",
+      "difficulte": 2,
+      "tags": ["periodicite", "periode-commune"]
+    },
+    {
+      "id": "TD-CH09-014",
+      "lecon": "Courbe paramétrée, périodicité et symétries",
+      "type": "formule",
+      "recto": "Quelles trois symétries obtient-on en comparant $M(-t)$ à $M(t)$ ?",
+      "verso": "Si $x(-t)=x(t)$ et $y(-t)=-y(t)$, symétrie d'axe $(Ox)$ ; si $x(-t)=-x(t)$ et $y(-t)=y(t)$, symétrie d'axe $(Oy)$ ; si les deux coordonnées changent de signe, symétrie de centre $O$. Dans les trois cas, on n'étudie que $t\\ge 0$.",
+      "difficulte": 2,
+      "tags": ["symetrie", "reduction", "parite"]
+    },
+    {
+      "id": "TD-CH09-015",
+      "lecon": "Courbe paramétrée, périodicité et symétries",
+      "type": "formule",
+      "recto": "Que conclut-on lorsque $x(t+\\pi)=x(t)$ et $y(t+\\pi)=-y(t)$ ?",
+      "verso": "Que $M(t+\\pi)$ est le symétrique de $M(t)$ par rapport à l'axe $(Ox)$, ce qui réduit encore de moitié l'intervalle d'étude. De même, $x(\\pi-t)=-x(t)$ et $y(\\pi-t)=-y(t)$ donnent une symétrie de centre $O$.",
+      "difficulte": 2,
+      "tags": ["symetrie", "reduction", "trigonometrie"]
+    },
+    {
+      "id": "TD-CH09-016",
+      "lecon": "Courbe paramétrée, périodicité et symétries",
+      "type": "formule",
+      "recto": "Dans quel ordre applique-t-on les symétries pour compléter un tracé après deux réductions ?",
+      "verso": "Dans l'ordre inverse de celui où on les a trouvées. Si l'on a d'abord utilisé la symétrie d'axe $(Ox)$, puis celle de centre $O$, on applique à la fin d'abord la symétrie de centre $O$, puis celle d'axe $(Ox)$. Sinon il manque un morceau au tracé.",
+      "difficulte": 2,
+      "tags": ["symetrie", "trace", "ordre-inverse"]
+    },
+    {
+      "id": "TD-CH09-017",
+      "lecon": "Courbe paramétrée, périodicité et symétries",
+      "type": "definition",
+      "recto": "Que peut-on dire d'une courbe dont les deux fonctions coordonnées sont paires ?",
+      "verso": "Qu'elle est simplement décrite deux fois, puisque $M(-t)=M(t)$ : il n'y a là aucune symétrie d'axe. La symétrie d'axe $(Ox)$ exige $x$ paire et $y$ impaire, les deux conditions vérifiées ensemble.",
+      "difficulte": 3,
+      "tags": ["parite", "symetrie", "piege"]
+    },
+    {
+      "id": "TD-CH09-018",
+      "lecon": "Vecteur dérivé, tangente et tracé",
+      "type": "definition",
+      "recto": "Comment définit-on le vecteur dérivé d'une courbe paramétrée au point $M(t)$ ?",
+      "verso": "C'est le vecteur $\\vec V(t)=\\big(x'(t)\\,;y'(t)\\big)$, noté aussi $\\dfrac{d\\overrightarrow{OM}}{dt}$, obtenu en dérivant séparément chaque fonction coordonnée. Il suppose $x$ et $y$ dérivables sur l'intervalle d'étude.",
+      "difficulte": 1,
+      "tags": ["vecteur-derive", "definition"]
+    },
+    {
+      "id": "TD-CH09-019",
+      "lecon": "Vecteur dérivé, tangente et tracé",
+      "type": "definition",
+      "recto": "Que représente le vecteur dérivé lorsque le paramètre $t$ est le temps ?",
+      "verso": "Le vecteur vitesse du point mobile à l'instant $t$. Il donne la direction du déplacement, son sens, et par sa longueur la rapidité du mouvement : trois informations réunies dans un seul objet.",
+      "difficulte": 1,
+      "tags": ["vecteur-vitesse", "cinematique"]
+    },
+    {
+      "id": "TD-CH09-020",
+      "lecon": "Vecteur dérivé, tangente et tracé",
+      "type": "formule",
+      "recto": "Comment calcule-t-on la vitesse d'un point mobile à partir du vecteur dérivé ?",
+      "verso": "C'est sa norme $\\big\\|\\vec V(t)\\big\\|=\\sqrt{x'(t)^{2}+y'(t)^{2}}$, exprimée en unité de longueur par unité de temps. Pour $x=R\\cos t$ et $y=R\\sin t$, elle vaut $R$ : un point qui tourne régulièrement a une vitesse constante.",
+      "difficulte": 1,
+      "tags": ["norme", "vitesse", "vecteur-derive"]
+    },
+    {
+      "id": "TD-CH09-021",
+      "lecon": "Vecteur dérivé, tangente et tracé",
+      "type": "formule",
+      "recto": "Quelle condition rend le vecteur dérivé $\\vec V(t_0)$ directeur de la tangente ?",
+      "verso": "Il suffit qu'il soit non nul. Si $\\vec V(t_0)\\ne\\vec 0$, la tangente en $M(t_0)$ est la droite passant par $M(t_0)$ et de vecteur directeur $\\big(x'(t_0)\\,;y'(t_0)\\big)$ ; tout vecteur non nul colinéaire à $\\vec V(t_0)$ convient aussi.",
+      "difficulte": 1,
+      "tags": ["tangente", "vecteur-directeur", "condition"]
+    },
+    {
+      "id": "TD-CH09-022",
+      "lecon": "Vecteur dérivé, tangente et tracé",
+      "type": "formule",
+      "recto": "Quelle est l'équation de la tangente en $M(t_0)$ lorsque $x'(t_0)\\ne 0$ ?",
+      "verso": "$y=\\dfrac{y'(t_0)}{x'(t_0)}\\big(x-x(t_0)\\big)+y(t_0)$. Le coefficient directeur est le quotient $\\dfrac{y'(t_0)}{x'(t_0)}$, et surtout pas son inverse. Si $x'(t_0)=0$, cette écriture perd son sens et la tangente est verticale.",
+      "difficulte": 2,
+      "tags": ["tangente", "equation", "coefficient-directeur"]
+    },
+    {
+      "id": "TD-CH09-023",
+      "lecon": "Vecteur dérivé, tangente et tracé",
+      "type": "formule",
+      "recto": "A quelle double condition la tangente à une courbe paramétrée est-elle horizontale ?",
+      "verso": "Lorsque $y'(t_0)=0$ et $x'(t_0)\\ne 0$ : l'ordonnée cesse momentanément de varier tandis que l'abscisse continue d'avancer. La seconde condition est indispensable, sinon le vecteur dérivé serait nul et ne dirigerait plus rien.",
+      "difficulte": 2,
+      "tags": ["tangente-horizontale", "condition"]
+    },
+    {
+      "id": "TD-CH09-024",
+      "lecon": "Vecteur dérivé, tangente et tracé",
+      "type": "formule",
+      "recto": "A quelle double condition la tangente à une courbe paramétrée est-elle verticale ?",
+      "verso": "Lorsque $x'(t_0)=0$ et $y'(t_0)\\ne 0$. Son équation est alors $x=x(t_0)$ : une tangente verticale n'a pas de coefficient directeur, on n'écrit donc jamais une équation de la forme $y=\\dots$ dans ce cas.",
+      "difficulte": 2,
+      "tags": ["tangente-verticale", "condition", "equation"]
+    },
+    {
+      "id": "TD-CH09-025",
+      "lecon": "Vecteur dérivé, tangente et tracé",
+      "type": "definition",
+      "recto": "Quelle confusion guette l'élève qui cherche une tangente horizontale ?",
+      "verso": "Croire que c'est $x'$ qui doit s'annuler. C'est $y'(t_0)=0$ qui donne une tangente horizontale, et $x'(t_0)=0$ une tangente verticale. Pour ne plus se tromper, raisonne sur le mouvement : si l'on ne monte ni ne descend, on file à l'horizontale.",
+      "difficulte": 3,
+      "tags": ["tangente", "piege", "confusion"]
+    },
+    {
+      "id": "TD-CH09-026",
+      "lecon": "Vecteur dérivé, tangente et tracé",
+      "type": "definition",
+      "recto": "Pourquoi le vecteur dérivé $\\vec V(t)$ ne donne-t-il pas la position du point mobile ?",
+      "verso": "Parce qu'il s'obtient en dérivant les coordonnées, alors que la position est donnée par les coordonnées elles-mêmes : $M(t)$ est un point, $\\vec V(t)$ un vecteur. Pour $x(t)=t^{2}$ et $y(t)=t^{3}$, $M(1)=(1\\,;1)$ tandis que $\\vec V(1)=(2\\,;3)$.",
+      "difficulte": 3,
+      "tags": ["vecteur-derive", "position", "piege"]
+    },
+    {
+      "id": "TD-CH09-027",
+      "lecon": "Vecteur dérivé, tangente et tracé",
+      "type": "formule",
+      "recto": "Pourquoi le vecteur dérivé non nul dirige-t-il la tangente ?",
+      "verso": "Le vecteur $\\overrightarrow{M(t)M(t+h)}$ dirige la sécante ; multiplié par $\\dfrac{1}{h}$, il dirige la même droite et ses coordonnées tendent vers $x'(t)$ et $y'(t)$ quand $h$ tend vers $0$. La sécante tend vers la tangente, donc $\\vec V(t)$ en donne la direction.",
+      "difficulte": 3,
+      "tags": ["tangente", "secante", "passage-a-la-limite"]
+    },
+    {
+      "id": "TD-CH09-028",
+      "lecon": "Vecteur dérivé, tangente et tracé",
+      "type": "definition",
+      "recto": "Quelles lignes empile-t-on dans le tableau de variations conjoint d'une courbe paramétrée ?",
+      "verso": "Sous la ligne du paramètre $t$ : le signe de $x'(t)$, les variations de $x(t)$, le signe de $y'(t)$, puis les variations de $y(t)$. Un seul tableau suffit, car les deux coordonnées varient en même temps et indépendamment l'une de l'autre.",
+      "difficulte": 2,
+      "tags": ["tableau-conjoint", "variations"]
+    },
+    {
+      "id": "TD-CH09-029",
+      "lecon": "Vecteur dérivé, tangente et tracé",
+      "type": "formule",
+      "recto": "Quelles valeurs de $t$ porte-t-on en tête du tableau de variations conjoint ?",
+      "verso": "Les bornes de l'intervalle d'étude et toutes les valeurs qui annulent $x'(t)$ ou $y'(t)$, rangées dans l'ordre croissant. On y ajoute au besoin celles qui annulent $x(t)$ ou $y(t)$, c'est-à-dire les passages par les axes.",
+      "difficulte": 2,
+      "tags": ["tableau-conjoint", "valeurs-remarquables"]
+    },
+    {
+      "id": "TD-CH09-030",
+      "lecon": "Vecteur dérivé, tangente et tracé",
+      "type": "formule",
+      "recto": "Comment lit-on l'allure d'un morceau de courbe dans une colonne du tableau conjoint ?",
+      "verso": "Par le couple des deux flèches : $x$ et $y$ croissants, la courbe monte vers la droite ; $x$ croissant et $y$ décroissant, elle descend vers la droite ; et symétriquement vers la gauche lorsque $x$ décroît.",
+      "difficulte": 2,
+      "tags": ["tableau-conjoint", "lecture", "trace"]
+    },
+    {
+      "id": "TD-CH09-031",
+      "lecon": "Vecteur dérivé, tangente et tracé",
+      "type": "formule",
+      "recto": "Que marquent, sur le tracé, les valeurs de $t$ qui annulent $x'$ ou $y'$ ?",
+      "verso": "Elles marquent les changements de sens du mouvement et donnent les tangentes remarquables. Là où $y'$ s'annule en changeant de signe se trouve le point le plus haut ou le plus bas d'une branche ; là où $x'$ s'annule, le point le plus à gauche ou le plus à droite.",
+      "difficulte": 2,
+      "tags": ["points-remarquables", "tangente", "trace"]
+    },
+    {
+      "id": "TD-CH09-032",
+      "lecon": "Vecteur dérivé, tangente et tracé",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on point double d'une courbe paramétrée ?",
+      "verso": "Un point atteint pour deux valeurs distinctes du paramètre : il existe $t_1\\ne t_2$ tels que $x(t_1)=x(t_2)$ et $y(t_1)=y(t_2)$. En un tel point, la courbe repasse par une position déjà occupée et possède en général deux tangentes différentes.",
+      "difficulte": 2,
+      "tags": ["point-double", "definition"]
+    },
+    {
+      "id": "TD-CH09-033",
+      "lecon": "Vecteur dérivé, tangente et tracé",
+      "type": "formule",
+      "recto": "Comment trouve-t-on les points doubles d'une courbe symétrique par rapport à $(Ox)$ ?",
+      "verso": "Ce sont les points de l'axe des abscisses atteints pour deux paramètres opposés : on résout $y(t)=0$ et l'on garde les solutions non nulles. Ainsi $y(t)=t^{3}-3t$ s'annule en $t=\\sqrt3$ et $t=-\\sqrt3$, qui donnent le même point.",
+      "difficulte": 2,
+      "tags": ["point-double", "symetrie", "recherche"]
+    },
+    {
+      "id": "TD-CH09-034",
+      "lecon": "Vecteur dérivé, tangente et tracé",
+      "type": "definition",
+      "recto": "Pourquoi le graphe d'une fonction ne possède-t-il jamais de point double ?",
+      "verso": "Parce qu'il ne repasse jamais deux fois par le même endroit : à chaque abscisse ne correspond qu'une seule ordonnée. Les points doubles sont donc la marque propre des courbes paramétrées, que l'écriture $y=f(x)$ ne peut pas produire.",
+      "difficulte": 2,
+      "tags": ["point-double", "fonction", "distinction"]
+    },
+    {
+      "id": "TD-CH09-035",
+      "lecon": "Vecteur dérivé, tangente et tracé",
+      "type": "formule",
+      "recto": "Quelle équation donne l'instant où un projectile paramétré retombe au sol ?",
+      "verso": "On résout $y(t)=0$ en écartant la solution $t=0$, qui correspond au départ ; la portée est alors l'abscisse à cet instant. Pour $x(t)=6t$ et $y(t)=8t-5t^{2}$, le jet retombe à $t=1{,}6$ s, à la distance $x(1{,}6)=9{,}6$ m.",
+      "difficulte": 2,
+      "tags": ["cinematique", "portee", "projectile"]
+    },
+    {
+      "id": "TD-CH09-036",
+      "lecon": "Vecteur dérivé, tangente et tracé",
+      "type": "formule",
+      "recto": "Comment trouve-t-on la hauteur maximale atteinte par un projectile paramétré ?",
+      "verso": "Au sommet, l'altitude cesse de croître avant de décroître : on résout $y'(t)=0$, ce qui donne le point à tangente horizontale, puis on calcule $y$ à cet instant. Pour $y(t)=8t-5t^{2}$, on trouve $t=0{,}8$ s puis $y(0{,}8)=3{,}2$ m.",
+      "difficulte": 2,
+      "tags": ["cinematique", "hauteur-maximale", "tangente-horizontale"]
+    }
+  ]
+}

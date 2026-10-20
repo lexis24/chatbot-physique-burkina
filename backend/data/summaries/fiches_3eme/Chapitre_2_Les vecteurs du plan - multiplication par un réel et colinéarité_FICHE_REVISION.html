@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Fiche de revision - 3eme - Chapitre 2 : Les vecteurs du plan : multiplication par un reel et colinearite</title>
+<style>
+/* ===================================================================
+   FICHE DE REVISION, Collection Hakili Lab, Edition 2026
+   Feuille de style autonome, format A4 pret a imprimer.
+   Bleu #005CB9 · Vert #49A145
+   =================================================================== */
+:root{
+  --bleu:#005CB9; --bleu-fonce:#00429A; --bleu-pale:#E8F1FB; --bleu-bord:#B7D2EE;
+  --vert:#49A145; --vert-fonce:#2F7A2C; --vert-pale:#EDF7EC; --vert-bord:#BCE0B9;
+  --gris:#4A4A4A; --gris-clair:#E4E4E4; --rouge:#B3261E;
+}
+@page{
+  size:A4; margin:15mm;
+  @bottom-center{
+    content:"Collection Hakili Lab, Edition 2026  ·  Fiche de revision  ·  " counter(page) "/" counter(pages);
+    font-family:"Segoe UI",Calibri,Arial,sans-serif; font-size:6.6pt; color:#8A8A8A;
+  }
+}
+*{box-sizing:border-box;}
+body{
+  margin:0; font-family:"Segoe UI",Calibri,Arial,sans-serif;
+  font-size:8.4pt; line-height:1.26; color:#1B1B1B;
+}
+p{margin:0 0 3pt;}
+ul{margin:0 0 3pt; padding-left:11pt;}
+li{margin:0 0 1.2pt;}
+b,strong{color:var(--bleu-fonce);}
+
+/* ------------------------------ ENTETE ---------------------------- */
+.entete{
+  display:flex; align-items:stretch; border:1.6pt solid var(--bleu);
+  border-radius:2.5pt; overflow:hidden; margin-bottom:6pt;
+}
+.entete .num{
+  background:var(--bleu); color:#fff; font-size:20pt; font-weight:700;
+  padding:0 8pt; display:flex; align-items:center; justify-content:center; min-width:34pt;
+}
+.entete .txt{padding:3.5pt 8pt; flex:1;}
+.entete .niveau{
+  font-size:7pt; font-weight:700; letter-spacing:.9pt; color:var(--vert-fonce);
+}
+.entete h1{margin:0; font-size:13.5pt; line-height:1.12; color:var(--bleu-fonce); font-weight:700;}
+.entete .sous{font-size:7pt; color:var(--gris); margin-top:1pt;}
+
+/* --------------------------- BANDEAUX ----------------------------- */
+.bandeau{
+  color:#fff; font-weight:700; font-size:9pt; letter-spacing:1pt;
+  padding:2.4pt 7pt; border-radius:2pt; margin:3pt 0 4pt; break-after:avoid; page-break-after:avoid;
+}
+.bandeau.bleu{background:var(--bleu);}
+.bandeau.vert{background:var(--vert);}
+
+/* --------------------------- COLONNES ----------------------------- */
+.cols{column-count:2; column-gap:7mm; column-fill:balance;}
+
+.cols.bal{column-fill:balance;}
+.bloc{margin-bottom:5pt;}
+.keep{break-inside:avoid; page-break-inside:avoid;}
+
+/* --------------------------- LECONS ------------------------------- */
+h2.lecon{
+  margin:0 0 3pt; font-size:8.6pt; font-weight:700; color:#fff; background:var(--bleu-fonce);
+  padding:1.8pt 5pt; border-radius:1.5pt; break-after:avoid; page-break-after:avoid;
+}
+h3.rub{
+  margin:3.5pt 0 1.5pt; font-size:8.2pt; font-weight:700; color:var(--vert-fonce);
+  border-bottom:.7pt solid var(--vert-bord); padding-bottom:.8pt;
+  break-after:avoid; page-break-after:avoid;
+}
+
+/* --------------------------- ENCADRES ----------------------------- */
+.form{
+  background:var(--bleu-pale); border:.8pt solid var(--bleu-bord); border-left:2.6pt solid var(--bleu);
+  border-radius:2pt; padding:2.4pt 5pt; margin:2.2pt 0 3.4pt;
+  break-inside:avoid; page-break-inside:avoid;
+}
+.form .t{
+  display:block; font-size:6.8pt; font-weight:700; letter-spacing:.6pt;
+  color:var(--bleu); margin-bottom:1.5pt;
+}
+.form .c{text-align:center; font-size:9.1pt; margin:1.6pt 0;}
+.note{background:var(--vert-pale); border-left:2.4pt solid var(--vert); padding:2.4pt 5pt; border-radius:1.5pt; margin:2.5pt 0 4pt; break-inside:avoid;}
+
+/* --------------------------- TABLEAUX ----------------------------- */
+table{width:100%; border-collapse:collapse; font-size:7.6pt; margin:2pt 0 4pt; break-inside:avoid;}
+th{background:var(--bleu); color:#fff; font-weight:700; text-align:left; padding:1.8pt 4pt; font-size:7.2pt;}
+td{border:.6pt solid var(--gris-clair); padding:1.8pt 4pt; vertical-align:top;}
+tr{break-inside:avoid;}
+table.var td{text-align:center; font-size:8pt;}
+table.var td.lab{text-align:left; font-weight:700; color:var(--bleu-fonce); background:var(--bleu-pale);}
+
+/* ----------------------------- PIEGES ----------------------------- */
+table.pieges th:first-child{width:44%;}
+table.pieges td:first-child{color:var(--rouge); background:#FDF1F0;}
+.x{font-weight:700;}
+.v{color:var(--vert-fonce); font-weight:700;}
+
+/* ---------------------------- RECAP ------------------------------- */
+ol.recap{margin:0; padding-left:0; list-style:none; counter-reset:r;}
+ol.recap li{
+  counter-increment:r; position:relative; padding-left:13pt; margin-bottom:1.8pt;
+  break-inside:avoid;
+}
+ol.recap li::before{
+  content:counter(r); position:absolute; left:0; top:.3pt;
+  width:10pt; height:10pt; border-radius:50%; background:var(--vert); color:#fff;
+  font-size:6.6pt; font-weight:700; text-align:center; line-height:10pt;
+}
+
+/* --------------------------- MATHS -------------------------------- */
+.m{font-family:Cambria,Georgia,"Times New Roman",serif;}
+i,var{font-family:Cambria,Georgia,"Times New Roman",serif; font-style:italic;}
+.op{font-family:Cambria,Georgia,"Times New Roman",serif; font-style:normal;}
+.f{display:inline-block; vertical-align:middle; text-align:center;
+   margin:0 .12em; line-height:1.06; font-family:Cambria,Georgia,"Times New Roman",serif;}
+.f>span{display:block; padding:0 .2em;}
+.f>span:first-child{border-bottom:.6pt solid currentColor; padding-bottom:.08em;}
+.f>span:last-child{padding-top:.04em;}
+.rad{border-top:.6pt solid currentColor; padding-top:.12em;}
+/* line-height:0 evite que l'exposant n'ecarte les lignes ; position:relative le
+   repositionne sans qu'il heurte la barre de fraction ni le trait du radical. */
+sup,sub{font-size:.68em; line-height:0; position:relative; vertical-align:baseline;}
+sup{top:-.42em;}
+sub{bottom:-.22em;}
+.pt{white-space:nowrap;}
+/* Les fleches n'ont qu'un glyphe atrophie dans la fonte serif : on les force
+   en sans-serif, ou elles sont franches meme a 8 pt. */
+.ar{font-family:"Segoe UI",Calibri,Arial,"DejaVu Sans",sans-serif; font-style:normal;}
+
+/* ------------------- PIEGES : blocs erreur / correction ------------- */
+.pg{font-size:8.1pt; border-left:2.4pt solid var(--rouge); background:#FDF1F0; border-radius:1.5pt;
+    padding:2pt 5pt; margin:0 0 2.8pt; break-inside:avoid; page-break-inside:avoid;}
+.pg .err{color:var(--rouge); font-weight:600;}
+.pg .cor{color:#1B1B1B; margin-top:.8pt;}
+.pg .cor b{color:var(--bleu-fonce);}
+.v{color:var(--vert-fonce); font-weight:700;}
+
+</style>
+</head>
+<body>
+<header class="entete">
+  <div class="num">2</div>
+  <div class="txt">
+    <div class="niveau">3EME &middot; MATHEMATIQUES</div>
+    <h1>Les vecteurs du plan : multiplication par un réel et colinéarité</h1>
+    <div class="sous">Leçon 1 : multiplication d'un vecteur par un réel &middot; Leçon 2 : vecteurs colinéaires &middot; Leçon 3 : alignement de trois points &middot; Leçon 4 : parallélisme de deux droites</div>
+  </div>
+</header>
+
+<div class="bandeau bleu" style="margin-top:0">L'ESSENTIEL</div>
+<div class="cols">
+
+<!-- ================= LECON 1 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 1&nbsp;: Multiplication d'un vecteur par un réel</h2>
+<p>Soit <span style="display:inline-block;position:relative;line-height:1"><i>u</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.7em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span> un vecteur et <i>k</i> un réel. Le <b>produit du vecteur <span style="display:inline-block;position:relative;line-height:1"><i>u</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.7em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span> par le réel <i>k</i></b> est le vecteur noté <span class="pt"><i>k</i><span style="display:inline-block;position:relative;line-height:1"><i>u</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.7em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span></span>. Pour <i>k</i>&#8239;&#8800;&#8239;0, il est défini par ses trois caractéristiques.</p></div>
+<table>
+<tr><th>Caractéristique</th><th>Le vecteur <span class="pt"><i>k</i><span style="display:inline-block;position:relative;line-height:1"><i>u</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.7em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span></span></th></tr>
+<tr><td><b>Direction</b></td><td>la <b>même</b> que celle de <span style="display:inline-block;position:relative;line-height:1"><i>u</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.7em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span> : elle ne change jamais</td></tr>
+<tr><td><b>Sens</b></td><td>celui de <span style="display:inline-block;position:relative;line-height:1"><i>u</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.7em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span> si <i>k</i>&#8239;&gt;&#8239;0 ; le <b>sens contraire</b> si <i>k</i>&#8239;&lt;&#8239;0</td></tr>
+<tr><td><b>Longueur</b></td><td><span class="pt">|<i>k</i>|</span> fois la longueur de <span style="display:inline-block;position:relative;line-height:1"><i>u</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.7em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span></td></tr>
+</table>
+<div class="form">
+  <span class="t">CAS PARTICULIERS</span>
+  <div class="c m">0<span style="display:inline-block;position:relative;line-height:1"><i>u</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.7em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span>&#8239;=&#8239;<span style="display:inline-block;position:relative;line-height:1">0<span style="position:absolute;left:0;right:0;top:-.62em;font-size:.7em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span> (le <b>vecteur nul</b>) &nbsp;&nbsp; 1<span style="display:inline-block;position:relative;line-height:1"><i>u</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.7em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span>&#8239;=&#8239;<span style="display:inline-block;position:relative;line-height:1"><i>u</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.7em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span></div>
+  <div class="c m">(&#8722;1)<span style="display:inline-block;position:relative;line-height:1"><i>u</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.7em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span>&#8239;=&#8239;&#8722;<span style="display:inline-block;position:relative;line-height:1"><i>u</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.7em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span> (le <b>vecteur opposé</b>)</div>
+</div>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Règles de calcul</h3>
+<div class="form">
+  <span class="t">POUR TOUS REELS k ET k&#8242;, TOUS VECTEURS <span style="display:inline-block;position:relative;line-height:1"><i>u</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.7em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span> ET <span style="display:inline-block;position:relative;line-height:1"><i>v</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.7em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span></span>
+  <div class="c m"><i>k</i>(<span style="display:inline-block;position:relative;line-height:1"><i>u</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.7em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span>&#8239;+&#8239;<span style="display:inline-block;position:relative;line-height:1"><i>v</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.7em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span>)&#8239;=&#8239;<i>k</i><span style="display:inline-block;position:relative;line-height:1"><i>u</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.7em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span>&#8239;+&#8239;<i>k</i><span style="display:inline-block;position:relative;line-height:1"><i>v</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.7em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span></div>
+  <div class="c m">(<i>k</i>&#8239;+&#8239;<i>k</i>&#8242;)<span style="display:inline-block;position:relative;line-height:1"><i>u</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.7em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span>&#8239;=&#8239;<i>k</i><span style="display:inline-block;position:relative;line-height:1"><i>u</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.7em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span>&#8239;+&#8239;<i>k</i>&#8242;<span style="display:inline-block;position:relative;line-height:1"><i>u</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.7em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span></div>
+  <div class="c m"><i>k</i>(<i>k</i>&#8242;<span style="display:inline-block;position:relative;line-height:1"><i>u</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.7em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span>)&#8239;=&#8239;(<i>kk</i>&#8242;)<span style="display:inline-block;position:relative;line-height:1"><i>u</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.7em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span></div>
+</div>
+<p>On calcule sur les vecteurs <b>comme sur les nombres</b> : on développe, on factorise, on réduit.</p>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Lire le coefficient sur une figure</h3>
+<p>Devant deux flèches de <b>même direction</b>, on compare d'abord les <b>sens</b>, puis les <b>longueurs</b>.</p>
+<ul>
+<li>Mêmes sens <span class="ar">&#8594;</span> <i>k</i>&#8239;&gt;&#8239;0 ; sens contraires <span class="ar">&#8594;</span> <i>k</i>&#8239;&lt;&#8239;0.</li>
+<li><span class="pt">|<i>k</i>|</span> est le <b>rapport des longueurs</b> : <span style="display:inline-block;position:relative;line-height:1"><i>AC</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.7em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span> deux fois plus longue que <span style="display:inline-block;position:relative;line-height:1"><i>AB</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.7em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span> et de sens contraire donne <span class="pt"><span style="display:inline-block;position:relative;line-height:1"><i>AC</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.7em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span>&#8239;=&#8239;&#8722;2<span style="display:inline-block;position:relative;line-height:1"><i>AB</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.7em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span></span>.</li>
+<li>Un coefficient compris entre 0 et 1 <b>raccourcit</b> sans retourner : <span class="pt"><span style="display:inline-block;position:relative;line-height:1"><i>AM</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.7em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span>&#8239;=&#8239;<span class="f"><span>1</span><span>2</span></span><span style="display:inline-block;position:relative;line-height:1"><i>AB</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.7em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span></span> place M au <b>milieu</b> de [AB].</li>
+</ul>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Placer un point défini par une égalité vectorielle</h3>
+<p>Un point donné par une égalité, par exemple X tel que <span class="pt">3<span style="display:inline-block;position:relative;line-height:1"><i>EX</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.7em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span>&#8239;+&#8239;5<span style="display:inline-block;position:relative;line-height:1"><i>FX</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.7em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span>&#8239;=&#8239;<span style="display:inline-block;position:relative;line-height:1">0<span style="position:absolute;left:0;right:0;top:-.62em;font-size:.7em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span></span>, ne se construit pas directement : on ramène toute l'égalité à <b>un seul vecteur connu</b>.</p>
+<ul>
+<li>Choisir un point de départ, ici E.</li>
+<li>Y ramener tous les vecteurs par la <b>relation de Chasles</b> : <span class="pt"><span style="display:inline-block;position:relative;line-height:1"><i>FX</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.7em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span>&#8239;=&#8239;<span style="display:inline-block;position:relative;line-height:1"><i>FE</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.7em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span>&#8239;+&#8239;<span style="display:inline-block;position:relative;line-height:1"><i>EX</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.7em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span></span>.</li>
+<li>Réduire, en tenant compte de <span class="pt"><span style="display:inline-block;position:relative;line-height:1"><i>FE</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.7em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span>&#8239;=&#8239;&#8722;<span style="display:inline-block;position:relative;line-height:1"><i>EF</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.7em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span></span>, puis isoler le vecteur cherché.</li>
+</ul>
+<div class="form">
+  <span class="t">EXEMPLE DE MISE EN EQUATION</span>
+  <div class="c m">3<span style="display:inline-block;position:relative;line-height:1"><i>EX</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.7em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span>&#8239;+&#8239;5<span style="display:inline-block;position:relative;line-height:1"><i>FX</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.7em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span>&#8239;=&#8239;<span style="display:inline-block;position:relative;line-height:1">0<span style="position:absolute;left:0;right:0;top:-.62em;font-size:.7em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span> donc 8<span style="display:inline-block;position:relative;line-height:1"><i>EX</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.7em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span>&#8239;=&#8239;5<span style="display:inline-block;position:relative;line-height:1"><i>EF</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.7em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span></div>
+  <div class="c m">donc <span style="display:inline-block;position:relative;line-height:1"><i>EX</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.7em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span>&#8239;=&#8239;<span class="f"><span>5</span><span>8</span></span><span style="display:inline-block;position:relative;line-height:1"><i>EF</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.7em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span></div>
+</div>
+<p>X se place alors aux cinq huitièmes de [EF] à partir de E.</p>
+</div>
+
+<!-- ================= LECON 2 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 2&nbsp;: Vecteurs colinéaires</h2>
+<div class="form">
+  <span class="t">DEFINITION&nbsp;: le vecteur <span style="display:inline-block;position:relative;line-height:1"><i>u</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.7em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span> étant non nul</span>
+  <div class="c m"><span style="display:inline-block;position:relative;line-height:1"><i>u</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.7em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span> et <span style="display:inline-block;position:relative;line-height:1"><i>v</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.7em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span> sont <b>colinéaires</b> s'il existe un réel <i>k</i> tel que <span style="display:inline-block;position:relative;line-height:1"><i>v</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.7em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span>&#8239;=&#8239;<i>k</i><span style="display:inline-block;position:relative;line-height:1"><i>u</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.7em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span></div>
+</div></div>
+<ul>
+<li>Deux vecteurs colinéaires ont la <b>même direction</b> ; on dit aussi qu'ils sont <b>parallèles</b>.</li>
+<li>Le <b>vecteur nul est colinéaire à tout vecteur</b>, car <span class="pt"><span style="display:inline-block;position:relative;line-height:1">0<span style="position:absolute;left:0;right:0;top:-.62em;font-size:.7em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span>&#8239;=&#8239;0&#8239;&#215;&#8239;<span style="display:inline-block;position:relative;line-height:1"><i>u</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.7em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span></span>.</li>
+<li><i>k</i> s'appelle le <b>coefficient de colinéarité</b> : son <b>signe</b> donne le sens relatif des deux vecteurs, sa <b>valeur absolue</b> le rapport de leurs longueurs.</li>
+<li>Deux vecteurs <b>égaux</b> sont colinéaires, avec <i>k</i>&#8239;=&#8239;1 ; mais deux vecteurs colinéaires ne sont pas forcément égaux.</li>
+<li>La colinéarité ne parle que de <b>direction</b> : ni la longueur ni la position n'interviennent.</li>
+</ul>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Reconnaître la colinéarité par la décomposition</h3>
+<p>Lorsque les vecteurs sont écrits à l'aide de deux vecteurs non colinéaires <span style="display:inline-block;position:relative;line-height:1"><i>i</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.7em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span> et <span style="display:inline-block;position:relative;line-height:1"><i>j</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.7em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span>, on cherche à <b>factoriser</b> le second pour y faire apparaître le premier.</p>
+<div class="form">
+  <span class="t">FACTORISER POUR CONCLURE</span>
+  <div class="c m"><span style="display:inline-block;position:relative;line-height:1"><i>u</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.7em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span>&#8239;=&#8239;2<span style="display:inline-block;position:relative;line-height:1"><i>i</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.7em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span>&#8239;+&#8239;<span style="display:inline-block;position:relative;line-height:1"><i>j</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.7em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span> &nbsp;&nbsp; <span style="display:inline-block;position:relative;line-height:1"><i>v</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.7em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span>&#8239;=&#8239;6<span style="display:inline-block;position:relative;line-height:1"><i>i</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.7em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span>&#8239;+&#8239;3<span style="display:inline-block;position:relative;line-height:1"><i>j</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.7em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span></div>
+  <div class="c m"><span style="display:inline-block;position:relative;line-height:1"><i>v</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.7em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span>&#8239;=&#8239;3(2<span style="display:inline-block;position:relative;line-height:1"><i>i</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.7em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span>&#8239;+&#8239;<span style="display:inline-block;position:relative;line-height:1"><i>j</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.7em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span>)&#8239;=&#8239;3<span style="display:inline-block;position:relative;line-height:1"><i>u</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.7em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span> &nbsp;&nbsp; <i>k</i>&#8239;=&#8239;3</div>
+</div>
+<ul>
+<li>Le facteur commun trouvé <b>est</b> le coefficient <i>k</i> : la colinéarité est alors démontrée.</li>
+<li>Si aucune factorisation n'est possible, les deux vecteurs <b>ne sont pas colinéaires</b>.</li>
+</ul>
+</div>
+
+<!-- ================= LECON 3 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 3&nbsp;: Alignement de trois points</h2>
+<div class="form">
+  <span class="t">CARACTERISATION VECTORIELLE DE L'ALIGNEMENT</span>
+  <div class="c m">A, B et C alignés <b>si et seulement si</b> <span style="display:inline-block;position:relative;line-height:1"><i>AB</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.7em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span> et <span style="display:inline-block;position:relative;line-height:1"><i>AC</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.7em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span> colinéaires</div>
+  <div class="c m">c'est-à-dire s'il existe un réel <i>k</i> tel que <span style="display:inline-block;position:relative;line-height:1"><i>AC</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.7em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span>&#8239;=&#8239;<i>k</i><span style="display:inline-block;position:relative;line-height:1"><i>AB</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.7em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span></div>
+</div></div>
+<ul>
+<li>C'est une <b>équivalence</b>, annoncée par « si et seulement si » : elle s'utilise <b>dans les deux sens</b>. Sens direct : A, B, C alignés donc <span style="display:inline-block;position:relative;line-height:1"><i>AB</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.7em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span> et <span style="display:inline-block;position:relative;line-height:1"><i>AC</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.7em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span> colinéaires. Sens réciproque : <span class="pt"><span style="display:inline-block;position:relative;line-height:1"><i>AC</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.7em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span>&#8239;=&#8239;<i>k</i><span style="display:inline-block;position:relative;line-height:1"><i>AB</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.7em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span></span> donc A, B et C alignés.</li>
+<li>Les deux vecteurs comparés doivent <b>partir du même point</b>. Rien n'oblige à choisir A : <span style="display:inline-block;position:relative;line-height:1"><i>BA</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.7em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span> et <span style="display:inline-block;position:relative;line-height:1"><i>BC</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.7em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span> conviennent aussi, à condition de partir tous deux de B.</li>
+</ul>
+<table>
+<tr><th>Signe de <i>k</i></th><th>Position des points</th></tr>
+<tr><td><i>k</i>&#8239;&gt;&#8239;0</td><td>B et C du <b>même côté</b> de A</td></tr>
+<tr><td>0&#8239;&lt;&#8239;<i>k</i>&#8239;&lt;&#8239;1</td><td>C est <b>entre</b> A et B</td></tr>
+<tr><td><i>k</i>&#8239;&lt;&#8239;0</td><td>B et C <b>de part et d'autre</b> de A</td></tr>
+</table>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Démontrer que trois points sont alignés</h3>
+<ul>
+<li>Choisir un <b>point de départ commun</b>, souvent A, et écrire <span style="display:inline-block;position:relative;line-height:1"><i>AB</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.7em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span> et <span style="display:inline-block;position:relative;line-height:1"><i>AC</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.7em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span>.</li>
+<li>Utiliser la relation de <b>Chasles</b> pour ramener tous les vecteurs à un même vecteur connu.</li>
+<li>Exprimer <span style="display:inline-block;position:relative;line-height:1"><i>AC</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.7em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span> en fonction de <span style="display:inline-block;position:relative;line-height:1"><i>AB</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.7em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span> et chercher le réel <i>k</i>.</li>
+<li>Conclure : « <span style="display:inline-block;position:relative;line-height:1"><i>AB</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.7em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span> et <span style="display:inline-block;position:relative;line-height:1"><i>AC</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.7em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span> sont colinéaires, donc A, B et C sont alignés. »</li>
+</ul>
+</div>
+
+<!-- ================= LECON 4 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 4&nbsp;: Parallélisme de deux droites</h2>
+<div class="form">
+  <span class="t">CARACTERISATION VECTORIELLE DU PARALLELISME</span>
+  <div class="c m">(AB)&#8239;&#8741;&#8239;(CD) <b>si et seulement si</b> <span style="display:inline-block;position:relative;line-height:1"><i>AB</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.7em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span> et <span style="display:inline-block;position:relative;line-height:1"><i>CD</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.7em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span> colinéaires</div>
+  <div class="c m">c'est-à-dire s'il existe un réel <i>k</i> tel que <span style="display:inline-block;position:relative;line-height:1"><i>CD</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.7em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span>&#8239;=&#8239;<i>k</i><span style="display:inline-block;position:relative;line-height:1"><i>AB</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.7em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span></div>
+</div></div>
+<ul>
+<li><span style="display:inline-block;position:relative;line-height:1"><i>AB</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.7em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span> est un <b>vecteur directeur</b> de la droite (AB) : il en donne la direction.</li>
+<li>Si <span style="display:inline-block;position:relative;line-height:1"><i>AB</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.7em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span> et <span style="display:inline-block;position:relative;line-height:1"><i>CD</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.7em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span> sont colinéaires <b>et</b> que les quatre points sont alignés, les deux droites sont <b>confondues</b> : c'est un cas particulier du parallélisme.</li>
+<li>Cette propriété démontre un parallélisme <b>sans mesurer le moindre angle</b> et sans prolonger les droites.</li>
+</ul>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Démontrer que deux droites sont parallèles</h3>
+<ul>
+<li>Déterminer un vecteur <b>porté par chaque droite</b>, par exemple <span style="display:inline-block;position:relative;line-height:1"><i>AB</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.7em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span> et <span style="display:inline-block;position:relative;line-height:1"><i>CD</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.7em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span>.</li>
+<li>Exprimer chacun d'eux à l'aide d'un même vecteur, avec la relation de Chasles si nécessaire.</li>
+<li>Chercher un réel <i>k</i> tel que <span class="pt"><span style="display:inline-block;position:relative;line-height:1"><i>CD</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.7em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span>&#8239;=&#8239;<i>k</i><span style="display:inline-block;position:relative;line-height:1"><i>AB</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.7em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span></span>.</li>
+<li>Conclure : « <span style="display:inline-block;position:relative;line-height:1"><i>AB</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.7em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span> et <span style="display:inline-block;position:relative;line-height:1"><i>CD</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.7em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span> sont colinéaires, donc (AB) et (CD) sont parallèles. »</li>
+</ul>
+</div>
+
+</div>
+
+<div class="bandeau vert">PIEGES ET ERREURS FREQUENTES</div>
+<div class="cols">
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> « Pour <i>k</i>&#8239;=&#8239;&#8722;2, la longueur de <span class="pt">&#8722;2<span style="display:inline-block;position:relative;line-height:1"><i>u</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.7em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span></span> vaut &#8722;2 fois celle de <span style="display:inline-block;position:relative;line-height:1"><i>u</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.7em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span>. »</div><div class="cor"><span class="v">&#10003;</span> Le signe de <i>k</i> indique le <b>sens</b>, jamais la longueur. La longueur de <span class="pt"><i>k</i><span style="display:inline-block;position:relative;line-height:1"><i>u</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.7em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span></span> est <span class="pt">|<i>k</i>|</span> fois celle de <span style="display:inline-block;position:relative;line-height:1"><i>u</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.7em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span>, donc <b>2 fois</b> celle de <span style="display:inline-block;position:relative;line-height:1"><i>u</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.7em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span> pour <i>k</i>&#8239;=&#8239;&#8722;2 : une longueur est toujours positive.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> &laquo; 0<span style="display:inline-block;position:relative;line-height:1"><i>u</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.7em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span>&#8239;=&#8239;0 &raquo; &nbsp;&middot;&nbsp; &laquo; <span class="pt"><span style="display:inline-block;position:relative;line-height:1"><i>u</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.7em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span>&#8239;&#8722;&#8239;<span style="display:inline-block;position:relative;line-height:1"><i>u</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.7em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span>&#8239;=&#8239;0</span> &raquo;</div><div class="cor"><span class="v">&#10003;</span> Le résultat n'est pas le <b>nombre</b> zéro mais le <b>vecteur nul</b> : <span class="pt">0<span style="display:inline-block;position:relative;line-height:1"><i>u</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.7em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span>&#8239;=&#8239;<span style="display:inline-block;position:relative;line-height:1">0<span style="position:absolute;left:0;right:0;top:-.62em;font-size:.7em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span></span>. Il en va de même pour une différence : <span class="pt"><span style="display:inline-block;position:relative;line-height:1"><i>u</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.7em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span>&#8239;&#8722;&#8239;<span style="display:inline-block;position:relative;line-height:1"><i>u</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.7em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span>&#8239;=&#8239;<span style="display:inline-block;position:relative;line-height:1">0<span style="position:absolute;left:0;right:0;top:-.62em;font-size:.7em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span></span>. Une somme, une différence ou un produit par un réel donne toujours un <b>vecteur</b> ; on ne l'égale jamais à un nombre.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> <i>k</i>(<span style="display:inline-block;position:relative;line-height:1"><i>u</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.7em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span>&#8239;+&#8239;<span style="display:inline-block;position:relative;line-height:1"><i>v</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.7em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span>)&#8239;=&#8239;<i>k</i><span style="display:inline-block;position:relative;line-height:1"><i>u</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.7em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span>&#8239;+&#8239;<span style="display:inline-block;position:relative;line-height:1"><i>v</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.7em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span></div><div class="cor"><span class="v">&#10003;</span> Le réel <i>k</i> multiplie <b>chacun</b> des vecteurs de la parenthèse : <span class="pt"><i>k</i>(<span style="display:inline-block;position:relative;line-height:1"><i>u</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.7em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span>&#8239;+&#8239;<span style="display:inline-block;position:relative;line-height:1"><i>v</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.7em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span>)&#8239;=&#8239;<i>k</i><span style="display:inline-block;position:relative;line-height:1"><i>u</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.7em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span>&#8239;+&#8239;<i>k</i><span style="display:inline-block;position:relative;line-height:1"><i>v</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.7em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span></span>. C'est la distributivité, exactement comme sur les nombres.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> <span class="pt">3<span style="display:inline-block;position:relative;line-height:1"><i>EX</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.7em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span>&#8239;+&#8239;5<span style="display:inline-block;position:relative;line-height:1"><i>FX</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.7em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span>&#8239;=&#8239;<span style="display:inline-block;position:relative;line-height:1">0<span style="position:absolute;left:0;right:0;top:-.62em;font-size:.7em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span></span> donne <span class="pt">8<span style="display:inline-block;position:relative;line-height:1"><i>EX</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.7em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span>&#8239;=&#8239;5<span style="display:inline-block;position:relative;line-height:1"><i>FE</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.7em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span></span></div><div class="cor"><span class="v">&#10003;</span> Chasles donne <span class="pt"><span style="display:inline-block;position:relative;line-height:1"><i>FX</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.7em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span>&#8239;=&#8239;<span style="display:inline-block;position:relative;line-height:1"><i>FE</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.7em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span>&#8239;+&#8239;<span style="display:inline-block;position:relative;line-height:1"><i>EX</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.7em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span></span>, donc <span class="pt">8<span style="display:inline-block;position:relative;line-height:1"><i>EX</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.7em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span>&#8239;+&#8239;5<span style="display:inline-block;position:relative;line-height:1"><i>FE</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.7em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span>&#8239;=&#8239;<span style="display:inline-block;position:relative;line-height:1">0<span style="position:absolute;left:0;right:0;top:-.62em;font-size:.7em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span></span>. Comme <span class="pt"><span style="display:inline-block;position:relative;line-height:1"><i>FE</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.7em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span>&#8239;=&#8239;&#8722;<span style="display:inline-block;position:relative;line-height:1"><i>EF</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.7em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span></span>, on obtient <span class="pt">8<span style="display:inline-block;position:relative;line-height:1"><i>EX</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.7em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span>&#8239;=&#8239;5<span style="display:inline-block;position:relative;line-height:1"><i>EF</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.7em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span></span>, puis <span class="pt"><span style="display:inline-block;position:relative;line-height:1"><i>EX</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.7em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span>&#8239;=&#8239;<span class="f"><span>5</span><span>8</span></span><span style="display:inline-block;position:relative;line-height:1"><i>EF</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.7em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span></span>. Les deux vecteurs <span style="display:inline-block;position:relative;line-height:1"><i>EF</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.7em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span> et <span style="display:inline-block;position:relative;line-height:1"><i>FE</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.7em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span> sont <b>opposés</b> : le sens se surveille à chaque étape.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> « <span class="pt"><span style="display:inline-block;position:relative;line-height:1"><i>u</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.7em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span>&#8239;=&#8239;2<span style="display:inline-block;position:relative;line-height:1"><i>i</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.7em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span>&#8239;+&#8239;<span style="display:inline-block;position:relative;line-height:1"><i>j</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.7em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span></span> et <span class="pt"><span style="display:inline-block;position:relative;line-height:1"><i>v</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.7em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span>&#8239;=&#8239;6<span style="display:inline-block;position:relative;line-height:1"><i>i</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.7em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span>&#8239;+&#8239;3<span style="display:inline-block;position:relative;line-height:1"><i>j</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.7em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span></span> ne sont pas colinéaires : les coefficients ne sont pas les mêmes. »</div><div class="cor"><span class="v">&#10003;</span> On <b>factorise</b> au lieu de comparer terme à terme : <span class="pt"><span style="display:inline-block;position:relative;line-height:1"><i>v</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.7em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span>&#8239;=&#8239;3(2<span style="display:inline-block;position:relative;line-height:1"><i>i</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.7em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span>&#8239;+&#8239;<span style="display:inline-block;position:relative;line-height:1"><i>j</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.7em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span>)&#8239;=&#8239;3<span style="display:inline-block;position:relative;line-height:1"><i>u</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.7em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span></span>. Les vecteurs sont colinéaires, de coefficient <i>k</i>&#8239;=&#8239;3. Les coefficients doivent être <b>proportionnels</b>, non égaux.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> « Deux vecteurs colinéaires sont égaux. » &nbsp;&middot;&nbsp; « Le vecteur nul n'est colinéaire à aucun vecteur. »</div><div class="cor"><span class="v">&#10003;</span> Deux vecteurs égaux sont colinéaires avec <i>k</i>&#8239;=&#8239;1, mais des vecteurs colinéaires peuvent avoir des <b>longueurs</b> et des <b>sens</b> différents : seule la direction est commune. Et <span class="pt"><span style="display:inline-block;position:relative;line-height:1">0<span style="position:absolute;left:0;right:0;top:-.62em;font-size:.7em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span>&#8239;=&#8239;0&#8239;&#215;&#8239;<span style="display:inline-block;position:relative;line-height:1"><i>u</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.7em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span></span> : le vecteur nul est colinéaire à <b>tout</b> vecteur.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> « <span style="display:inline-block;position:relative;line-height:1"><i>AB</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.7em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span> et <span style="display:inline-block;position:relative;line-height:1"><i>CD</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.7em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span> sont colinéaires, donc A, B, C et D sont alignés. »</div><div class="cor"><span class="v">&#10003;</span> Pour un alignement, les deux vecteurs doivent <b>partir du même point</b> : on compare <span style="display:inline-block;position:relative;line-height:1"><i>AB</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.7em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span> et <span style="display:inline-block;position:relative;line-height:1"><i>AC</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.7em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span>. Colinéaires, <span style="display:inline-block;position:relative;line-height:1"><i>AB</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.7em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span> et <span style="display:inline-block;position:relative;line-height:1"><i>CD</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.7em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span> prouvent seulement que les droites (AB) et (CD) sont <b>parallèles</b>.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> « <span style="display:inline-block;position:relative;line-height:1"><i>AB</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.7em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span> et <span style="display:inline-block;position:relative;line-height:1"><i>AC</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.7em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span> sont colinéaires, donc les droites (AB) et (AC) sont parallèles et distinctes. »</div><div class="cor"><span class="v">&#10003;</span> Deux vecteurs issus de A prouvent l'<b>alignement</b> de A, B et C : les droites (AB) et (AC) sont alors <b>confondues</b>. Pour un parallélisme, il faut un vecteur porté par <b>chacune</b> des deux droites.</div></div>
+
+</div>
+
+<div class="bandeau bleu">A SAVOIR PAR COEUR AVANT LE DEVOIR</div>
+<div class="cols">
+<ol class="recap">
+<li>Le vecteur <span class="pt"><i>k</i><span style="display:inline-block;position:relative;line-height:1"><i>u</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.7em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span></span> a la <b>même direction</b> que <span style="display:inline-block;position:relative;line-height:1"><i>u</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.7em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span> ; le <b>sens</b> de <span style="display:inline-block;position:relative;line-height:1"><i>u</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.7em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span> si <i>k</i>&#8239;&gt;&#8239;0, le sens contraire si <i>k</i>&#8239;&lt;&#8239;0 ; une <b>longueur</b> égale à <span class="pt">|<i>k</i>|</span> fois celle de <span style="display:inline-block;position:relative;line-height:1"><i>u</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.7em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span>.</li>
+<li>Cas particuliers : <span class="pt">0<span style="display:inline-block;position:relative;line-height:1"><i>u</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.7em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span>&#8239;=&#8239;<span style="display:inline-block;position:relative;line-height:1">0<span style="position:absolute;left:0;right:0;top:-.62em;font-size:.7em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span></span> (le vecteur nul, pas le nombre 0), <span class="pt">1<span style="display:inline-block;position:relative;line-height:1"><i>u</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.7em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span>&#8239;=&#8239;<span style="display:inline-block;position:relative;line-height:1"><i>u</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.7em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span></span>, <span class="pt">(&#8722;1)<span style="display:inline-block;position:relative;line-height:1"><i>u</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.7em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span>&#8239;=&#8239;&#8722;<span style="display:inline-block;position:relative;line-height:1"><i>u</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.7em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span></span>.</li>
+<li>Règles de calcul : <span class="pt"><i>k</i>(<span style="display:inline-block;position:relative;line-height:1"><i>u</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.7em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span>&#8239;+&#8239;<span style="display:inline-block;position:relative;line-height:1"><i>v</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.7em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span>)&#8239;=&#8239;<i>k</i><span style="display:inline-block;position:relative;line-height:1"><i>u</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.7em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span>&#8239;+&#8239;<i>k</i><span style="display:inline-block;position:relative;line-height:1"><i>v</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.7em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span></span> ; <span class="pt">(<i>k</i>&#8239;+&#8239;<i>k</i>&#8242;)<span style="display:inline-block;position:relative;line-height:1"><i>u</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.7em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span>&#8239;=&#8239;<i>k</i><span style="display:inline-block;position:relative;line-height:1"><i>u</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.7em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span>&#8239;+&#8239;<i>k</i>&#8242;<span style="display:inline-block;position:relative;line-height:1"><i>u</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.7em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span></span> ; <span class="pt"><i>k</i>(<i>k</i>&#8242;<span style="display:inline-block;position:relative;line-height:1"><i>u</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.7em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span>)&#8239;=&#8239;(<i>kk</i>&#8242;)<span style="display:inline-block;position:relative;line-height:1"><i>u</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.7em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span></span>. On développe, on factorise, on réduit comme sur les nombres.</li>
+<li><b>Colinéaires</b> : <span class="pt"><span style="display:inline-block;position:relative;line-height:1"><i>v</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.7em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span>&#8239;=&#8239;<i>k</i><span style="display:inline-block;position:relative;line-height:1"><i>u</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.7em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span></span> avec <span style="display:inline-block;position:relative;line-height:1"><i>u</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.7em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span> non nul. Même direction, longueurs et sens quelconques. Le vecteur nul est colinéaire à <b>tout</b> vecteur.</li>
+<li>Pour montrer la colinéarité, écrire les deux vecteurs avec le <b>même couple</b> de vecteurs non colinéaires, puis <b>factoriser</b> : le facteur trouvé est <i>k</i>.</li>
+<li><b>Alignement</b> : A, B et C alignés si et seulement si <span class="pt"><span style="display:inline-block;position:relative;line-height:1"><i>AC</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.7em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span>&#8239;=&#8239;<i>k</i><span style="display:inline-block;position:relative;line-height:1"><i>AB</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.7em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span></span>, deux vecteurs partant du <b>même point</b>. <i>k</i>&#8239;&gt;&#8239;0 : B et C du même côté de A ; 0&#8239;&lt;&#8239;<i>k</i>&#8239;&lt;&#8239;1 : C entre A et B ; <i>k</i>&#8239;&lt;&#8239;0 : de part et d'autre de A.</li>
+<li><b>Parallélisme</b> : <span class="pt">(AB)&#8239;&#8741;&#8239;(CD)</span> si et seulement si <span class="pt"><span style="display:inline-block;position:relative;line-height:1"><i>CD</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.7em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span>&#8239;=&#8239;<i>k</i><span style="display:inline-block;position:relative;line-height:1"><i>AB</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.7em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span></span>, un vecteur porté par <b>chaque</b> droite. <span style="display:inline-block;position:relative;line-height:1"><i>AB</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.7em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span> est un <b>vecteur directeur</b> de (AB) ; quatre points alignés donnent deux droites <b>confondues</b>.</li>
+<li>Pour placer un point défini par une égalité vectorielle : choisir un point de départ, appliquer <b>Chasles</b>, tout ramener à un seul vecteur connu, puis lire le coefficient.</li>
+</ol>
+</div>
+
+</body>
+</html>

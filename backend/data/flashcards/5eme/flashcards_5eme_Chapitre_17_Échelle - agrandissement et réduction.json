@@ -1,0 +1,278 @@
+{
+  "niveau": "5ème",
+  "chapitre": "Chapitre 17 : Echelle : agrandissement et réduction",
+  "source": "maths/5eme/Chapitre_17_Echelle",
+  "nombre_cartes": 30,
+  "cartes": [
+    {
+      "id": "5E-CH17-001",
+      "lecon": "L'échelle d'une carte ou d'un plan",
+      "type": "definition",
+      "recto": "Qu'est-ce que l'échelle d'une carte ou d'un plan ?",
+      "verso": "C'est le rapport (distance sur le plan) $\\div$ (distance réelle), les deux distances étant exprimées dans la même unité.",
+      "difficulte": 1,
+      "tags": ["echelle", "definition"]
+    },
+    {
+      "id": "5E-CH17-002",
+      "lecon": "L'échelle d'une carte ou d'un plan",
+      "type": "definition",
+      "recto": "Que signifie une échelle écrite sous la forme $\\dfrac{1}{n}$ ?",
+      "verso": "Elle se lit comme une consigne : $1$ cm sur le plan représente $n$ cm dans la réalité. Ainsi au $\\dfrac{1}{200}$, $1$ cm de plan vaut $200$ cm de terrain.",
+      "difficulte": 1,
+      "tags": ["echelle", "reduction", "lecture"]
+    },
+    {
+      "id": "5E-CH17-003",
+      "lecon": "L'échelle d'une carte ou d'un plan",
+      "type": "definition",
+      "recto": "Pourquoi une échelle ne s'exprime-t-elle dans aucune unité ?",
+      "verso": "Parce qu'elle compare deux longueurs mesurées dans la même unité : les unités se simplifient et il ne reste qu'un nombre pur.",
+      "difficulte": 2,
+      "tags": ["echelle", "unites"]
+    },
+    {
+      "id": "5E-CH17-004",
+      "lecon": "L'échelle d'une carte ou d'un plan",
+      "type": "formule",
+      "recto": "Comment calcule-t-on une distance réelle à partir d'une distance mesurée sur le plan ?",
+      "verso": "distance réelle $=$ distance sur le plan $\\times n$, où $n$ est le dénominateur de l'échelle. On convertit ensuite le résultat en mètres ou en kilomètres.",
+      "difficulte": 1,
+      "tags": ["echelle", "distance-reelle", "formule"]
+    },
+    {
+      "id": "5E-CH17-005",
+      "lecon": "L'échelle d'une carte ou d'un plan",
+      "type": "formule",
+      "recto": "Comment calcule-t-on une distance sur le plan à partir de la distance réelle ?",
+      "verso": "On convertit d'abord la distance réelle en centimètres, puis on la divise par le dénominateur $n$ de l'échelle. Ainsi $9$ m au $\\dfrac{1}{50}$ donnent $900 \\div 50 = 18$ cm.",
+      "difficulte": 2,
+      "tags": ["echelle", "distance-plan", "formule"]
+    },
+    {
+      "id": "5E-CH17-006",
+      "lecon": "L'échelle d'une carte ou d'un plan",
+      "type": "formule",
+      "recto": "Comment calcule-t-on l'échelle d'une carte dont on connaît une longueur dessinée et la longueur réelle correspondante ?",
+      "verso": "On met les deux longueurs dans la même unité, puis on forme le rapport plan $\\div$ réel et on le simplifie sous la forme $\\dfrac{1}{n}$. Ainsi $8{,}5$ cm pour $85$ km donne $8{,}5 \\div 8\\,500\\,000 = \\dfrac{1}{1\\,000\\,000}$.",
+      "difficulte": 2,
+      "tags": ["echelle", "calcul", "rapport"]
+    },
+    {
+      "id": "5E-CH17-007",
+      "lecon": "L'échelle d'une carte ou d'un plan",
+      "type": "formule",
+      "recto": "Quelle conversion de longueur est la plus utile dans les calculs d'échelle ?",
+      "verso": "$1$ km $= 100\\,000$ cm. Pour passer des kilomètres aux centimètres, la virgule se décale de cinq rangs vers la droite ; pour revenir, de cinq rangs vers la gauche.",
+      "difficulte": 1,
+      "tags": ["conversion", "longueur", "echelle"]
+    },
+    {
+      "id": "5E-CH17-008",
+      "lecon": "L'échelle d'une carte ou d'un plan",
+      "type": "formule",
+      "recto": "Pourquoi les distances du plan et les distances réelles forment-elles un tableau de proportionnalité ?",
+      "verso": "Parce qu'on passe toujours des unes aux autres en multipliant par le même nombre $n$, le dénominateur de l'échelle. Pour remonter du réel au plan, on divise par ce même $n$.",
+      "difficulte": 2,
+      "tags": ["proportionnalite", "echelle", "tableau"]
+    },
+    {
+      "id": "5E-CH17-009",
+      "lecon": "L'échelle d'une carte ou d'un plan",
+      "type": "definition",
+      "recto": "Qu'est-ce que l'échelle graphique d'une carte ?",
+      "verso": "C'est un petit segment gradué dessiné sur la carte, qui donne directement la distance réelle correspondante. L'échelle numérique, elle, est le rapport $\\dfrac{1}{n}$.",
+      "difficulte": 2,
+      "tags": ["echelle-graphique", "echelle-numerique"]
+    },
+    {
+      "id": "5E-CH17-010",
+      "lecon": "L'échelle d'une carte ou d'un plan",
+      "type": "definition",
+      "recto": "Pourquoi une carte est-elle une réduction régulière et non un dessin approximatif ?",
+      "verso": "Parce que toutes ses distances sont divisées par le même nombre. Deux villes quelconques de la carte donnent le même rapport, qui est la marque de fabrique de cette carte.",
+      "difficulte": 2,
+      "tags": ["carte", "reduction", "echelle"]
+    },
+    {
+      "id": "5E-CH17-011",
+      "lecon": "L'échelle d'une carte ou d'un plan",
+      "type": "formule",
+      "recto": "Que représente $1$ cm sur une carte à l'échelle $\\dfrac{1}{1\\,000\\,000}$ ?",
+      "verso": "$1\\,000\\,000$ cm dans la réalité, c'est-à-dire $10$ km.",
+      "difficulte": 1,
+      "tags": ["echelle", "carte", "conversion"]
+    },
+    {
+      "id": "5E-CH17-012",
+      "lecon": "L'échelle d'une carte ou d'un plan",
+      "type": "formule",
+      "recto": "Pourquoi faut-il convertir les longueurs avant de calculer une échelle ?",
+      "verso": "Parce que l'échelle compare deux longueurs, qui doivent être exprimées dans la même unité. Comparer des centimètres de plan à des mètres de terrain donne un rapport faux.",
+      "difficulte": 2,
+      "tags": ["echelle", "unites", "conversion"]
+    },
+    {
+      "id": "5E-CH17-013",
+      "lecon": "L'échelle d'une carte ou d'un plan",
+      "type": "formule",
+      "recto": "Comment contrôle-t-on qu'un résultat obtenu avec une échelle a un ordre de grandeur plausible ?",
+      "verso": "On se demande lequel des deux nombres doit être le plus grand : sauf agrandissement, la réalité dépasse toujours le plan. $3$ cm pour une route de $30$ km est plausible, $3\\,000$ km ne l'est pas.",
+      "difficulte": 2,
+      "tags": ["echelle", "ordre-de-grandeur", "controle"]
+    },
+    {
+      "id": "5E-CH17-014",
+      "lecon": "L'échelle d'une carte ou d'un plan",
+      "type": "formule",
+      "recto": "Comment obtient-on l'aire réelle d'un terrain à partir des dimensions lues sur un plan ?",
+      "verso": "On multiplie d'abord chaque dimension par le dénominateur de l'échelle, on convertit en mètres, puis seulement alors on calcule l'aire. Un rectangle de $12$ cm sur $7$ cm au $\\dfrac{1}{200}$ donne $24$ m sur $14$ m, soit $336$ m$^{2}$.",
+      "difficulte": 3,
+      "tags": ["echelle", "aire", "plan"]
+    },
+    {
+      "id": "5E-CH17-015",
+      "lecon": "L'échelle d'une carte ou d'un plan",
+      "type": "formule",
+      "recto": "Quelle erreur guette l'élève qui lit une échelle $\\dfrac{1}{200}$ ?",
+      "verso": "Croire que le terrain est $200$ fois plus petit que le plan. C'est l'inverse : le plan est $200$ fois plus petit, donc réel $=$ plan $\\times 200$.",
+      "difficulte": 3,
+      "tags": ["echelle", "sens", "piege"]
+    },
+    {
+      "id": "5E-CH17-016",
+      "lecon": "L'échelle d'une carte ou d'un plan",
+      "type": "formule",
+      "recto": "Que manque-t-il à une réponse annoncée comme « $250\\,000$ » pour une distance réelle ?",
+      "verso": "L'unité et la conversion finale. Le résultat est en centimètres, et $250\\,000$ cm $= 2{,}5$ km : c'est cette écriture qui a un sens pour un lecteur.",
+      "difficulte": 3,
+      "tags": ["conversion", "unites", "piege"]
+    },
+    {
+      "id": "5E-CH17-017",
+      "lecon": "Agrandissement et réduction",
+      "type": "definition",
+      "recto": "Que signifie agrandir ou réduire une figure à l'échelle $k$ ?",
+      "verso": "C'est multiplier toutes ses longueurs par le nombre $k$, que l'on appelle le coefficient.",
+      "difficulte": 1,
+      "tags": ["agrandissement", "reduction", "coefficient"]
+    },
+    {
+      "id": "5E-CH17-018",
+      "lecon": "Agrandissement et réduction",
+      "type": "definition",
+      "recto": "Comment le coefficient $k$ distingue-t-il un agrandissement d'une réduction ?",
+      "verso": "Si $k > 1$, la figure grandit : c'est un agrandissement. Si $k < 1$, par exemple $k = \\dfrac{1}{2}$, elle rapetisse : c'est une réduction. Si $k = 1$, elle ne change pas.",
+      "difficulte": 1,
+      "tags": ["coefficient", "agrandissement", "reduction"]
+    },
+    {
+      "id": "5E-CH17-019",
+      "lecon": "Agrandissement et réduction",
+      "type": "formule",
+      "recto": "Qu'advient-il des angles d'une figure que l'on agrandit ou que l'on réduit ?",
+      "verso": "Ils gardent exactement la même mesure, et les droites parallèles restent parallèles. La forme est donc conservée, seule la taille change.",
+      "difficulte": 2,
+      "tags": ["angles", "agrandissement", "forme"]
+    },
+    {
+      "id": "5E-CH17-020",
+      "lecon": "Agrandissement et réduction",
+      "type": "formule",
+      "recto": "Par combien les aires sont-elles multipliées quand les longueurs le sont par $k$ ?",
+      "verso": "Par $k \\times k$. Si les côtés sont multipliés par $3$, l'aire est multipliée par $9$.",
+      "difficulte": 2,
+      "tags": ["aire", "coefficient", "agrandissement"]
+    },
+    {
+      "id": "5E-CH17-021",
+      "lecon": "Agrandissement et réduction",
+      "type": "formule",
+      "recto": "Par combien les volumes sont-ils multipliés quand les longueurs le sont par $k$ ?",
+      "verso": "Par $k \\times k \\times k$. En doublant l'arête d'un cube, on multiplie son volume par $2 \\times 2 \\times 2 = 8$.",
+      "difficulte": 2,
+      "tags": ["volume", "coefficient", "agrandissement"]
+    },
+    {
+      "id": "5E-CH17-022",
+      "lecon": "Agrandissement et réduction",
+      "type": "formule",
+      "recto": "Pourquoi l'aire d'une figure n'est-elle pas multipliée par $k$ comme ses longueurs ?",
+      "verso": "Parce qu'une aire est un produit de deux longueurs, et que chacune des deux est multipliée par $k$. Le produit est donc multiplié par $k \\times k$ : un carré de $2$ cm de côté se découpe en quatre carrés de $1$ cm de côté.",
+      "difficulte": 3,
+      "tags": ["aire", "coefficient", "piege"]
+    },
+    {
+      "id": "5E-CH17-023",
+      "lecon": "Agrandissement et réduction",
+      "type": "formule",
+      "recto": "Quelle erreur guette l'élève qui réduit une figure avec le coefficient $\\dfrac{1}{3}$ ?",
+      "verso": "Diviser aussi les angles par $3$. Les angles ne changent jamais : seules les longueurs sont multipliées par le coefficient, et un angle de $60^{\\circ}$ reste un angle de $60^{\\circ}$.",
+      "difficulte": 3,
+      "tags": ["angles", "reduction", "piege"]
+    },
+    {
+      "id": "5E-CH17-024",
+      "lecon": "Agrandissement et réduction",
+      "type": "formule",
+      "recto": "Que devient une figure dont on ne multiplie qu'une seule dimension ?",
+      "verso": "Elle est déformée, plus longue mais aussi plate : ce n'est plus un agrandissement. Toutes les longueurs doivent être multipliées par le même coefficient $k$.",
+      "difficulte": 2,
+      "tags": ["agrandissement", "deformation", "coefficient"]
+    },
+    {
+      "id": "5E-CH17-025",
+      "lecon": "Agrandissement et réduction",
+      "type": "definition",
+      "recto": "Quel lien y a-t-il entre l'échelle d'une carte et le coefficient d'une réduction ?",
+      "verso": "C'est le même nombre. L'échelle $\\dfrac{1}{200}$ est le coefficient $k = \\dfrac{1}{200}$, inférieur à $1$, donc bien une réduction.",
+      "difficulte": 2,
+      "tags": ["echelle", "coefficient", "reduction"]
+    },
+    {
+      "id": "5E-CH17-026",
+      "lecon": "Agrandissement et réduction",
+      "type": "definition",
+      "recto": "Dans quelle situation emploie-t-on un coefficient supérieur à $1$ pour représenter un objet ?",
+      "verso": "Quand l'objet est minuscule et doit être dessiné plus grand que nature, comme un insecte ou un grain de mil. Le coefficient s'écrit alors $10$, $4$ ou $2{,}5$.",
+      "difficulte": 2,
+      "tags": ["agrandissement", "coefficient", "exemple"]
+    },
+    {
+      "id": "5E-CH17-027",
+      "lecon": "Agrandissement et réduction",
+      "type": "formule",
+      "recto": "Entre deux plans d'un même bâtiment, lequel en donne le dessin le plus grand ?",
+      "verso": "Celui dont le dénominateur est le plus petit. Un mur de $10$ m mesure $5$ cm au $\\dfrac{1}{200}$, mais seulement $2$ cm au $\\dfrac{1}{500}$.",
+      "difficulte": 2,
+      "tags": ["echelle", "comparaison", "denominateur"]
+    },
+    {
+      "id": "5E-CH17-028",
+      "lecon": "Agrandissement et réduction",
+      "type": "formule",
+      "recto": "Comment retrouve-t-on le coefficient reliant deux figures dont on connaît des longueurs correspondantes ?",
+      "verso": "On divise une longueur de la nouvelle figure par la longueur correspondante de la figure de départ. Un rectangle de $3$ cm sur $2$ cm devenu $12$ cm sur $8$ cm donne $12 \\div 3 = 4$.",
+      "difficulte": 2,
+      "tags": ["coefficient", "calcul", "agrandissement"]
+    },
+    {
+      "id": "5E-CH17-029",
+      "lecon": "Agrandissement et réduction",
+      "type": "formule",
+      "recto": "Comment retrouve-t-on le coefficient d'un agrandissement quand on connaît le rapport des aires ?",
+      "verso": "On cherche le nombre qui, multiplié par lui-même, donne ce rapport. Une aire multipliée par $25$ correspond à des longueurs multipliées par $5$, puisque $5 \\times 5 = 25$.",
+      "difficulte": 3,
+      "tags": ["coefficient", "aire", "calcul-inverse"]
+    },
+    {
+      "id": "5E-CH17-030",
+      "lecon": "Agrandissement et réduction",
+      "type": "formule",
+      "recto": "Comment obtient-on les dimensions d'une maquette à partir des dimensions réelles ?",
+      "verso": "On convertit d'abord les longueurs réelles en centimètres, puis on divise chacune par le dénominateur de l'échelle. Une façade de $30$ m au $\\dfrac{1}{50}$ donne $3\\,000 \\div 50 = 60$ cm.",
+      "difficulte": 2,
+      "tags": ["maquette", "reduction", "echelle"]
+    }
+  ]
+}

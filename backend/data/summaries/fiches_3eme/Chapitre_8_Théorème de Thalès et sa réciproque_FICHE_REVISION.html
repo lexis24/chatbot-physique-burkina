@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Fiche de revision - 3eme - Chapitre 8 : Theoreme de Thales et sa reciproque</title>
+<style>
+/* ===================================================================
+   FICHE DE REVISION, Collection Hakili Lab, Edition 2026
+   Feuille de style autonome, format A4 pret a imprimer.
+   Bleu #005CB9 · Vert #49A145
+   =================================================================== */
+:root{
+  --bleu:#005CB9; --bleu-fonce:#00429A; --bleu-pale:#E8F1FB; --bleu-bord:#B7D2EE;
+  --vert:#49A145; --vert-fonce:#2F7A2C; --vert-pale:#EDF7EC; --vert-bord:#BCE0B9;
+  --gris:#4A4A4A; --gris-clair:#E4E4E4; --rouge:#B3261E;
+}
+@page{
+  size:A4; margin:15mm;
+  @bottom-center{
+    content:"Collection Hakili Lab, Edition 2026  ·  Fiche de revision  ·  " counter(page) "/" counter(pages);
+    font-family:"Segoe UI",Calibri,Arial,sans-serif; font-size:6.6pt; color:#8A8A8A;
+  }
+}
+*{box-sizing:border-box;}
+body{
+  margin:0; font-family:"Segoe UI",Calibri,Arial,sans-serif;
+  font-size:8.4pt; line-height:1.26; color:#1B1B1B;
+}
+p{margin:0 0 3pt;}
+ul{margin:0 0 3pt; padding-left:11pt;}
+li{margin:0 0 1.2pt;}
+b,strong{color:var(--bleu-fonce);}
+
+/* ------------------------------ ENTETE ---------------------------- */
+.entete{
+  display:flex; align-items:stretch; border:1.6pt solid var(--bleu);
+  border-radius:2.5pt; overflow:hidden; margin-bottom:6pt;
+}
+.entete .num{
+  background:var(--bleu); color:#fff; font-size:20pt; font-weight:700;
+  padding:0 8pt; display:flex; align-items:center; justify-content:center; min-width:34pt;
+}
+.entete .txt{padding:3.5pt 8pt; flex:1;}
+.entete .niveau{
+  font-size:7pt; font-weight:700; letter-spacing:.9pt; color:var(--vert-fonce);
+}
+.entete h1{margin:0; font-size:13.5pt; line-height:1.12; color:var(--bleu-fonce); font-weight:700;}
+.entete .sous{font-size:7pt; color:var(--gris); margin-top:1pt;}
+
+/* --------------------------- BANDEAUX ----------------------------- */
+.bandeau{
+  color:#fff; font-weight:700; font-size:9pt; letter-spacing:1pt;
+  padding:2.4pt 7pt; border-radius:2pt; margin:3pt 0 4pt; break-after:avoid; page-break-after:avoid;
+}
+.bandeau.bleu{background:var(--bleu);}
+.bandeau.vert{background:var(--vert);}
+
+/* --------------------------- COLONNES ----------------------------- */
+.cols{column-count:2; column-gap:7mm; column-fill:balance;}
+
+.cols.bal{column-fill:balance;}
+.bloc{margin-bottom:5pt;}
+.keep{break-inside:avoid; page-break-inside:avoid;}
+
+/* --------------------------- LECONS ------------------------------- */
+h2.lecon{
+  margin:0 0 3pt; font-size:8.6pt; font-weight:700; color:#fff; background:var(--bleu-fonce);
+  padding:1.8pt 5pt; border-radius:1.5pt; break-after:avoid; page-break-after:avoid;
+}
+h3.rub{
+  margin:3.5pt 0 1.5pt; font-size:8.2pt; font-weight:700; color:var(--vert-fonce);
+  border-bottom:.7pt solid var(--vert-bord); padding-bottom:.8pt;
+  break-after:avoid; page-break-after:avoid;
+}
+
+/* --------------------------- ENCADRES ----------------------------- */
+.form{
+  background:var(--bleu-pale); border:.8pt solid var(--bleu-bord); border-left:2.6pt solid var(--bleu);
+  border-radius:2pt; padding:2.4pt 5pt; margin:2.2pt 0 3.4pt;
+  break-inside:avoid; page-break-inside:avoid;
+}
+.form .t{
+  display:block; font-size:6.8pt; font-weight:700; letter-spacing:.6pt;
+  color:var(--bleu); margin-bottom:1.5pt;
+}
+.form .c{text-align:center; font-size:9.1pt; margin:1.6pt 0;}
+.note{background:var(--vert-pale); border-left:2.4pt solid var(--vert); padding:2.4pt 5pt; border-radius:1.5pt; margin:2.5pt 0 4pt; break-inside:avoid;}
+
+/* --------------------------- TABLEAUX ----------------------------- */
+table{width:100%; border-collapse:collapse; font-size:7.6pt; margin:2pt 0 4pt; break-inside:avoid;}
+th{background:var(--bleu); color:#fff; font-weight:700; text-align:left; padding:1.8pt 4pt; font-size:7.2pt;}
+td{border:.6pt solid var(--gris-clair); padding:1.8pt 4pt; vertical-align:top;}
+tr{break-inside:avoid;}
+table.var td{text-align:center; font-size:8pt;}
+table.var td.lab{text-align:left; font-weight:700; color:var(--bleu-fonce); background:var(--bleu-pale);}
+
+/* ----------------------------- PIEGES ----------------------------- */
+table.pieges th:first-child{width:44%;}
+table.pieges td:first-child{color:var(--rouge); background:#FDF1F0;}
+.x{font-weight:700;}
+.v{color:var(--vert-fonce); font-weight:700;}
+
+/* ---------------------------- RECAP ------------------------------- */
+ol.recap{margin:0; padding-left:0; list-style:none; counter-reset:r;}
+ol.recap li{
+  counter-increment:r; position:relative; padding-left:13pt; margin-bottom:1.8pt;
+  break-inside:avoid;
+}
+ol.recap li::before{
+  content:counter(r); position:absolute; left:0; top:.3pt;
+  width:10pt; height:10pt; border-radius:50%; background:var(--vert); color:#fff;
+  font-size:6.6pt; font-weight:700; text-align:center; line-height:10pt;
+}
+
+/* --------------------------- MATHS -------------------------------- */
+.m{font-family:Cambria,Georgia,"Times New Roman",serif;}
+i,var{font-family:Cambria,Georgia,"Times New Roman",serif; font-style:italic;}
+.op{font-family:Cambria,Georgia,"Times New Roman",serif; font-style:normal;}
+.f{display:inline-block; vertical-align:middle; text-align:center;
+   margin:0 .12em; line-height:1.06; font-family:Cambria,Georgia,"Times New Roman",serif;}
+.f>span{display:block; padding:0 .2em;}
+.f>span:first-child{border-bottom:.6pt solid currentColor; padding-bottom:.08em;}
+.f>span:last-child{padding-top:.04em;}
+.rad{border-top:.6pt solid currentColor; padding-top:.12em;}
+/* line-height:0 evite que l'exposant n'ecarte les lignes ; position:relative le
+   repositionne sans qu'il heurte la barre de fraction ni le trait du radical. */
+sup,sub{font-size:.68em; line-height:0; position:relative; vertical-align:baseline;}
+sup{top:-.42em;}
+sub{bottom:-.22em;}
+.pt{white-space:nowrap;}
+/* Les fleches n'ont qu'un glyphe atrophie dans la fonte serif : on les force
+   en sans-serif, ou elles sont franches meme a 8 pt. */
+.ar{font-family:"Segoe UI",Calibri,Arial,"DejaVu Sans",sans-serif; font-style:normal;}
+
+/* ------------------- PIEGES : blocs erreur / correction ------------- */
+.pg{font-size:8.1pt; border-left:2.4pt solid var(--rouge); background:#FDF1F0; border-radius:1.5pt;
+    padding:2pt 5pt; margin:0 0 2.8pt; break-inside:avoid; page-break-inside:avoid;}
+.pg .err{color:var(--rouge); font-weight:600;}
+.pg .cor{color:#1B1B1B; margin-top:.8pt;}
+.pg .cor b{color:var(--bleu-fonce);}
+.v{color:var(--vert-fonce); font-weight:700;}
+
+</style>
+</head>
+<body>
+<header class="entete">
+  <div class="num">8</div>
+  <div class="txt">
+    <div class="niveau">3EME &middot; MATHEMATIQUES</div>
+    <h1>Théorème de Thalès et sa réciproque</h1>
+    <div class="sous">Leçon 1 : configurations de Thalès &middot; Leçon 2 : le théorème de Thalès (direct) &middot; Leçon 3 : applications : partage d'un segment, trapèze, égalités de quotients &middot; Leçon 4 : la réciproque du théorème de Thalès</div>
+  </div>
+</header>
+
+<div class="bandeau bleu" style="margin-top:0">L'ESSENTIEL</div>
+<div class="cols">
+
+<!-- ================= LECON 1 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 1&nbsp;: Configurations de Thalès</h2>
+<p>On est en <b>configuration de Thalès</b> lorsqu'une droite <b>parallèle à un côté d'un triangle</b> coupe les <b>deux autres côtés, ou leurs prolongements</b>. On obtient deux triangles, le grand et le petit, qui ont un <b>sommet commun</b>.</p></div>
+<ul>
+<li><b>Triangle emboîté</b> : M et N sont du <b>même côté</b> de A que B et C. Le petit triangle AMN est à l'intérieur du grand.</li>
+<li><b>Configuration papillon</b> : M et N sont de <b>l'autre côté</b> de A. Les deux triangles se font face et le sommet commun est <b>entre</b> les deux.</li>
+</ul>
+<p><b>Points homologues.</b> Le sommet commun étant A, on lit la figure <b>en partant toujours de A</b> : M correspond à B (tous deux sur la même droite issue de A) et N correspond à C.</p>
+<div class="form">
+  <span class="t">LIRE LES POINTS HOMOLOGUES&nbsp;: SOMMET COMMUN EN PREMIER</span>
+  <div class="c m">A&nbsp;&nbsp;&nbsp;M&nbsp;&nbsp;&nbsp;N &nbsp;&nbsp;<span style="font-size:7.5pt">(petit triangle)</span></div>
+  <div class="c m">A&nbsp;&nbsp;&nbsp;B&nbsp;&nbsp;&nbsp;C &nbsp;&nbsp;<span style="font-size:7.5pt">(grand triangle)</span></div>
+  <div class="c m">chaque colonne donne une paire de points homologues</div>
+</div>
+<div class="note">Dans les <b>deux</b> dispositions, (MN)&#8239;&#8741;&#8239;(BC), les points homologues se correspondent de la même façon et les rapports de longueurs sont égaux. La configuration papillon n'est pas un cas rare : elle apparaît dès que <b>deux droites se coupent</b>, par exemple dans les diagonales d'un trapèze.</div>
+<h3 class="rub">Reconnaître une configuration</h3>
+<ul>
+<li>Repère un <b>triangle</b> et une droite <b>parallèle</b> à l'un de ses côtés.</li>
+<li>Vérifie que cette droite coupe les <b>deux autres côtés</b>, ou leurs <b>prolongements</b>.</li>
+<li>Identifie le <b>sommet commun</b> aux deux triangles. Dans le papillon, c'est le point d'<b>intersection</b> des deux sécantes.</li>
+<li>Ecris les deux triangles l'un sous l'autre, en commençant par le sommet commun : les colonnes donnent les points homologues.</li>
+<li>Ecris alors les trois rapports égaux, tous dans le <b>même sens</b>.</li>
+</ul>
+</div>
+
+<!-- ================= LECON 2 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 2&nbsp;: Le théorème de Thalès (direct)</h2>
+<div class="form">
+  <span class="t">THEOREME DE THALES&nbsp;: SENS DIRECT</span>
+  <div class="c m"><b>Si</b> M est un point de (AB), N un point de (AC),</div>
+  <div class="c m"><b>et si</b> (MN)&#8239;&#8741;&#8239;(BC), <b>alors</b></div>
+  <div class="c m"><span class="f"><span>AM</span><span>AB</span></span>&#8239;=&#8239;<span class="f"><span>AN</span><span>AC</span></span>&#8239;=&#8239;<span class="f"><span>MN</span><span>BC</span></span></div>
+</div></div>
+<ul>
+<li><b>A quoi il sert</b> : à <b>calculer une longueur</b> lorsqu'un parallélisme est <b>connu</b>.</li>
+<li>L'énoncé est le <b>même</b> pour le triangle emboîté et pour le papillon ; seul change le nom du sommet commun.</li>
+<li>Le petit triangle est une <b>réduction</b> du grand : toutes ses longueurs sont multipliées par le <b>même</b> nombre. Les trois quotients sont égaux parce qu'ils valent tous ce rapport.</li>
+</ul>
+<h3 class="rub">Calculer une longueur</h3>
+<ul>
+<li>Vérifie la configuration et <b>écris l'hypothèse</b> de parallélisme : c'est elle qui autorise tout le reste.</li>
+<li>Ecris les trois rapports en respectant la <b>correspondance</b> des points.</li>
+<li>Choisis les <b>deux</b> rapports contenant la longueur cherchée et deux longueurs connues.</li>
+<li>Remplace par les valeurs, applique le <b>produit en croix</b>, résous.</li>
+<li>Vérifie la plausibilité : le petit côté doit rester le plus petit.</li>
+</ul>
+</div>
+
+<!-- ================= LECON 3 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 3&nbsp;: Applications : partage, trapèze, quotients</h2>
+<h3 class="rub">Partage d'un segment en <i>n</i> parts égales</h3>
+<ul>
+<li>Trace une demi-droite quelconque d'origine A, <b>différente</b> de (AB).</li>
+<li>Reporte sur cette demi-droite <i>n</i> <b>longueurs égales</b>, jusqu'à un point A<sub><i>n</i></sub>.</li>
+<li>Joins A<sub><i>n</i></sub> à B.</li>
+<li>Trace les <b>parallèles</b> à (A<sub><i>n</i></sub>B) passant par les points intermédiaires.</li>
+<li>Ces parallèles coupent [AB] aux <b>points de partage</b> cherchés.</li>
+</ul></div>
+<h3 class="rub">Cas du trapèze</h3>
+<p>Dans un trapèze ABCD de bases (AB) et (CD), les <b>diagonales</b> se coupent en O et forment une <b>configuration papillon</b> : A va avec C, B va avec D, car chaque diagonale relie deux sommets <b>opposés</b>.</p>
+<div class="form">
+  <span class="t">TRAPEZE&nbsp;: DIAGONALES SECANTES EN O</span>
+  <div class="c m"><span class="f"><span>OA</span><span>OC</span></span>&#8239;=&#8239;<span class="f"><span>OB</span><span>OD</span></span>&#8239;=&#8239;<span class="f"><span>AB</span><span>CD</span></span></div>
+</div>
+<h3 class="rub">Egalités de quotients</h3>
+<p>Toute configuration de Thalès fournit une <b>égalité de deux quotients</b>, donc une <b>équation</b>, que l'on résout par le produit en croix : on calcule ainsi une longueur inconnue ou un <b>rapport d'agrandissement</b>. Un agrandissement ou une réduction qui garde la même forme est exactement une configuration de Thalès : toutes les longueurs sont multipliées par un même nombre.</p>
+</div>
+
+<!-- ================= LECON 4 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 4&nbsp;: La réciproque du théorème de Thalès</h2>
+<div class="form">
+  <span class="t">RECIPROQUE DU THEOREME DE THALES</span>
+  <div class="c m"><b>Si</b> A, M, B sont alignés, <b>si</b> A, N, C sont alignés,</div>
+  <div class="c m"><b>si</b> M et N sont dans le <b>même ordre</b> par rapport à A</div>
+  <div class="c m"><span style="font-size:7.5pt">(c'est-à-dire du même côté de A)</span></div>
+  <div class="c m"><b>et si</b> <span class="f"><span>AM</span><span>AB</span></span>&#8239;=&#8239;<span class="f"><span>AN</span><span>AC</span></span>, <b>alors</b> (MN)&#8239;&#8741;&#8239;(BC)</div>
+</div></div>
+<ul>
+<li><b>A quoi elle sert</b> : à <b>démontrer un parallélisme</b> à partir de longueurs mesurées ou calculées.</li>
+<li><b>La condition d'ordre</b> fait partie des <b>hypothèses</b> : si M et N ne sont pas du même côté de A, l'égalité des rapports ne suffit plus.</li>
+<li><b>Ce qu'elle ne dit pas</b> : l'égalité <span class="f"><span>AM</span><span>AB</span></span>&#8239;=&#8239;<span class="f"><span>MN</span><span>BC</span></span> ne permet <b>pas</b> de conclure. La réciproque exige les deux rapports portés par les <b>sécantes</b>.</li>
+<li>Une réciproque n'est pas automatiquement vraie : celle de Thalès est un <b>énoncé à part entière</b>, qui se démontre.</li>
+</ul>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Démontrer un parallélisme</h3>
+<ul>
+<li>Repère le <b>point commun</b> aux deux droites sécantes et la correspondance des points.</li>
+<li>Vérifie l'<b>ordre</b> : les deux points à comparer sont du même côté du point commun.</li>
+<li>Calcule <b>séparément</b>, sur deux lignes distinctes, les deux rapports, puis compare les nombres obtenus.</li>
+<li>S'ils sont <b>égaux</b>, conclus en citant la <b>réciproque</b> du théorème de Thalès ; sinon, conclus que les droites <b>ne sont pas</b> parallèles.</li>
+</ul>
+<table>
+<tr><th>Théorème direct</th><th>Réciproque</th></tr>
+<tr><td>On <b>sait</b> que (MN)&#8239;&#8741;&#8239;(BC).</td><td>On <b>sait</b> que les rapports sont égaux.</td></tr>
+<tr><td>On <b>calcule une longueur</b>.</td><td>On <b>démontre un parallélisme</b>.</td></tr>
+</table>
+</div>
+
+</div>
+
+<div class="bandeau vert">PIEGES ET ERREURS FREQUENTES</div>
+<div class="cols">
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> Un rapport écrit <span class="f"><span>AM</span><span>AC</span></span> &nbsp;&middot;&nbsp; troisième rapport écrit <span class="f"><span>MN</span><span>CB</span></span> ou <span class="f"><span>AM</span><span>BC</span></span></div><div class="cor"><span class="v">&#10003;</span> On ne <b>mélange jamais</b> les deux triangles dans un même rapport : AM et AB sont portés par la <b>même droite</b> issue de A, AN et AC aussi. Le troisième rapport est <span class="f"><span>MN</span><span>BC</span></span> : MN va avec BC, jamais avec AB, et jamais à l'envers.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> « Les points sont bien placés, donc <span class="f"><span>AM</span><span>AB</span></span>&#8239;=&#8239;<span class="f"><span>AN</span><span>AC</span></span>. »</div><div class="cor"><span class="v">&#10003;</span> Le théorème direct n'a de sens que si le <b>parallélisme</b> est donné. Sans l'hypothèse (MN)&#8239;&#8741;&#8239;(BC), rien n'est vrai : écris cette hypothèse <b>avant</b> tout calcul.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> « D'après le théorème de Thalès, (MN)&#8239;&#8741;&#8239;(BC). »</div><div class="cor"><span class="v">&#10003;</span> Ne confonds pas le <b>direct</b> (le parallélisme est donné, on calcule une longueur) et la <b>réciproque</b> (les longueurs sont données, on démontre le parallélisme). <b>Indique toujours lequel des deux tu utilises</b> : c'est demandé au BEPC.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> « <span class="f"><span>AM</span><span>AB</span></span>&#8239;=&#8239;<span class="f"><span>AN</span><span>AC</span></span>, donc (MN)&#8239;&#8741;&#8239;(BC) » sans regarder la figure</div><div class="cor"><span class="v">&#10003;</span> La <b>condition d'ordre</b> est une hypothèse à part entière : M et N doivent être <b>du même côté</b> de A. Si l'un est d'un côté et l'autre de l'autre, l'égalité des rapports ne prouve rien.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> Un seul rapport calculé &nbsp;&middot;&nbsp; <span class="f"><span>AM</span><span>AB</span></span>&#8239;=&#8239;<span class="f"><span>MN</span><span>BC</span></span> utilisée pour conclure au parallélisme</div><div class="cor"><span class="v">&#10003;</span> Il faut <b>deux</b> rapports, calculés <b>séparément</b>, et ce sont ceux portés par les deux <b>sécantes</b> : <span class="f"><span>AM</span><span>AB</span></span> et <span class="f"><span>AN</span><span>AC</span></span>. Le rapport <span class="f"><span>MN</span><span>BC</span></span> est une <b>conséquence</b> du parallélisme, jamais une preuve.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> Dans le trapèze ABCD, on part du sommet A et l'on écrit <span class="f"><span>OA</span><span>OD</span></span>&#8239;=&#8239;<span class="f"><span>OB</span><span>OC</span></span></div><div class="cor"><span class="v">&#10003;</span> Le sommet commun est le point d'<b>intersection des diagonales</b>, O, et non un sommet du trapèze. Chaque diagonale relie deux sommets <b>opposés</b> : A va avec C, B va avec D, d'où <span class="f"><span>OA</span><span>OC</span></span>&#8239;=&#8239;<span class="f"><span>OB</span><span>OD</span></span>&#8239;=&#8239;<span class="f"><span>AB</span><span>CD</span></span>.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> Pour partager [AB], on reporte les longueurs égales sur (AB) elle-même &nbsp;&middot;&nbsp; on trace les droites « à peu près » parallèles</div><div class="cor"><span class="v">&#10003;</span> La demi-droite auxiliaire doit être <b>différente</b> de (AB), sinon la construction n'a plus de sens. Et les droites tracées doivent être <b>vraiment</b> parallèles : sans parallélisme exact, pas de configuration de Thalès.</div></div>
+
+</div>
+
+<div class="bandeau bleu">A SAVOIR PAR COEUR AVANT LE DEVOIR</div>
+<div class="cols">
+<ol class="recap">
+<li><b>Configuration de Thalès</b> : une droite parallèle à un côté d'un triangle coupe les deux autres côtés <b>ou leurs prolongements</b>. Deux dispositions : <b>triangle emboîté</b> et <b>papillon</b> ; dans les deux, un <b>sommet commun</b>.</li>
+<li><b>Points homologues</b> : écris A M N sous A B C, sommet commun en premier. Chaque colonne donne une paire ; les rapports s'écrivent alors tout seuls, toujours dans le <b>même sens</b>.</li>
+<li><b>Théorème direct</b> : si M&#8239;&#8712;&#8239;(AB), N&#8239;&#8712;&#8239;(AC) et (MN)&#8239;&#8741;&#8239;(BC), alors <span class="pt"><span class="f"><span>AM</span><span>AB</span></span>&#8239;=&#8239;<span class="f"><span>AN</span><span>AC</span></span>&#8239;=&#8239;<span class="f"><span>MN</span><span>BC</span></span></span>. Il sert à <b>calculer une longueur</b>.</li>
+<li><b>Calcul</b> : écrire l'hypothèse de parallélisme, choisir les <b>deux</b> rapports utiles, produit en croix, puis vérifier que le résultat est plausible.</li>
+<li><b>Réciproque</b> : si A, M, B alignés, A, N, C alignés, M et N <b>du même côté</b> de A, et <span class="pt"><span class="f"><span>AM</span><span>AB</span></span>&#8239;=&#8239;<span class="f"><span>AN</span><span>AC</span></span></span>, alors (MN)&#8239;&#8741;&#8239;(BC). Elle sert à <b>démontrer un parallélisme</b>.</li>
+<li>Direct ou réciproque : <b>dis toujours lequel tu utilises</b>. La condition d'<b>ordre</b> et les <b>deux</b> rapports des sécantes sont obligatoires pour la réciproque.</li>
+<li><b>Trapèze</b> ABCD de bases (AB) et (CD) : les diagonales se coupent en O en configuration papillon, <span class="pt"><span class="f"><span>OA</span><span>OC</span></span>&#8239;=&#8239;<span class="f"><span>OB</span><span>OD</span></span>&#8239;=&#8239;<span class="f"><span>AB</span><span>CD</span></span></span>.</li>
+<li><b>Partage de [AB] en <i>n</i> parts égales</b> : demi-droite auxiliaire d'origine A différente de (AB), <i>n</i> longueurs égales jusqu'à A<sub><i>n</i></sub>, on joint A<sub><i>n</i></sub> à B, puis les parallèles à (A<sub><i>n</i></sub>B).</li>
+</ol>
+</div>
+
+</body>
+</html>

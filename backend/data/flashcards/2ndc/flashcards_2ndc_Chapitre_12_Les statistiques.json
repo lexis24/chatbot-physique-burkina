@@ -1,0 +1,350 @@
+{
+  "niveau": "2nde C",
+  "chapitre": "Chapitre 12 : Les statistiques",
+  "source": "maths/2ndc/Chapitre_12_Statistiques",
+  "nombre_cartes": 38,
+  "cartes": [
+    {
+      "id": "2C-CH12-001",
+      "lecon": "Vocabulaire, effectifs et fréquences",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on la population d'une étude statistique ?",
+      "verso": "C'est l'ensemble de tous les éléments étudiés, et chacun de ces éléments s'appelle un individu. Le mot ne désigne pas forcément des personnes : la population peut être un ensemble de parcelles, de sacs ou de journées.",
+      "difficulte": 1,
+      "tags": ["vocabulaire", "population", "individu"]
+    },
+    {
+      "id": "2C-CH12-002",
+      "lecon": "Vocabulaire, effectifs et fréquences",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on le caractère étudié dans une série statistique ?",
+      "verso": "C'est ce que l'on observe sur chaque individu ; on dit aussi variable statistique. Les valeurs que ce caractère peut prendre s'appellent ses modalités.",
+      "difficulte": 1,
+      "tags": ["vocabulaire", "caractere", "modalites"]
+    },
+    {
+      "id": "2C-CH12-003",
+      "lecon": "Vocabulaire, effectifs et fréquences",
+      "type": "definition",
+      "recto": "Comment distingue-t-on un caractère qualitatif d'un caractère quantitatif ?",
+      "verso": "Un caractère est qualitatif lorsque ses modalités ne sont pas des nombres, comme la couleur d'un pagne ou la culture pratiquée, et quantitatif lorsque ses modalités sont des nombres, comme l'âge, la note, la taille ou le prix.",
+      "difficulte": 2,
+      "tags": ["caractere", "qualitatif", "quantitatif"]
+    },
+    {
+      "id": "2C-CH12-004",
+      "lecon": "Vocabulaire, effectifs et fréquences",
+      "type": "definition",
+      "recto": "Comment distingue-t-on un caractère quantitatif discret d'un caractère continu ?",
+      "verso": "Un caractère est discret lorsque ses valeurs sont isolées et se comptent, comme un nombre d'enfants, et continu lorsqu'il peut prendre toutes les valeurs d'un intervalle, comme une taille. Le test : entre deux valeurs voisines, des valeurs intermédiaires sont-elles possibles ?",
+      "difficulte": 2,
+      "tags": ["caractere", "discret", "continu"]
+    },
+    {
+      "id": "2C-CH12-005",
+      "lecon": "Vocabulaire, effectifs et fréquences",
+      "type": "definition",
+      "recto": "Que désignent l'effectif d'une valeur et l'effectif total d'une série ?",
+      "verso": "L'effectif d'une valeur est le nombre d'individus qui prennent cette valeur ; l'effectif total, noté $N$, est le nombre d'individus de la population. La somme de tous les effectifs vaut toujours $N$.",
+      "difficulte": 1,
+      "tags": ["effectif", "vocabulaire"]
+    },
+    {
+      "id": "2C-CH12-006",
+      "lecon": "Vocabulaire, effectifs et fréquences",
+      "type": "formule",
+      "recto": "Comment calcule-t-on la fréquence d'une valeur d'une série statistique ?",
+      "verso": "On divise l'effectif de cette valeur par l'effectif total : $f = \\dfrac{\\text{effectif de la valeur}}{N}$. C'est un nombre de l'intervalle $[0\\,;1]$, que l'on exprime en pourcentage en le multipliant par $100$.",
+      "difficulte": 1,
+      "tags": ["frequence", "formule"]
+    },
+    {
+      "id": "2C-CH12-007",
+      "lecon": "Vocabulaire, effectifs et fréquences",
+      "type": "formule",
+      "recto": "Que vaut la somme des fréquences de toutes les valeurs d'une série ?",
+      "verso": "Elle vaut toujours $1$, soit $100\\ \\%$, car toutes les fréquences ont le même dénominateur $N$ et la somme des effectifs vaut $N$. Additionner une ligne de fréquences est donc une vérification gratuite.",
+      "difficulte": 2,
+      "tags": ["frequence", "verification"]
+    },
+    {
+      "id": "2C-CH12-008",
+      "lecon": "Vocabulaire, effectifs et fréquences",
+      "type": "formule",
+      "recto": "Pourquoi compare-t-on deux populations de tailles différentes à l'aide des fréquences ?",
+      "verso": "Parce qu'un effectif dépend de la taille de la population : $12$ élèves sur $200$ et $12$ élèves sur $600$ donnent le même effectif, mais $6\\ \\%$ d'un côté et $2\\ \\%$ de l'autre. La fréquence ramène tous les comptes à une base commune.",
+      "difficulte": 2,
+      "tags": ["frequence", "comparaison", "proportion"]
+    },
+    {
+      "id": "2C-CH12-009",
+      "lecon": "Vocabulaire, effectifs et fréquences",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on l'effectif cumulé croissant d'une valeur ?",
+      "verso": "C'est la somme des effectifs de toutes les valeurs inférieures ou égales à celle-ci. Il répond à la question : combien d'individus ont au plus cette valeur ? Le dernier effectif cumulé croissant vaut $N$.",
+      "difficulte": 2,
+      "tags": ["effectif-cumule", "croissant"]
+    },
+    {
+      "id": "2C-CH12-010",
+      "lecon": "Vocabulaire, effectifs et fréquences",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on l'effectif cumulé décroissant d'une valeur ?",
+      "verso": "C'est la somme des effectifs de toutes les valeurs supérieures ou égales à celle-ci. Il répond à la question : combien d'individus ont au moins cette valeur ? Le premier effectif cumulé décroissant vaut $N$.",
+      "difficulte": 2,
+      "tags": ["effectif-cumule", "decroissant"]
+    },
+    {
+      "id": "2C-CH12-011",
+      "lecon": "Vocabulaire, effectifs et fréquences",
+      "type": "formule",
+      "recto": "Comment retrouve-t-on les effectifs quand on ne connaît que les effectifs cumulés croissants ?",
+      "verso": "On soustrait chaque cumul du précédent. Des cumuls $3$, $7$, $12$ redonnent les effectifs $3$, puis $7 - 3 = 4$, puis $12 - 7 = 5$. Cumuler et soustraire sont deux opérations qui se défont l'une l'autre.",
+      "difficulte": 2,
+      "tags": ["effectif-cumule", "methode"]
+    },
+    {
+      "id": "2C-CH12-012",
+      "lecon": "Vocabulaire, effectifs et fréquences",
+      "type": "definition",
+      "recto": "Pourquoi les classes d'une série s'écrivent-elles sous la forme $[a\\,;b[$ ?",
+      "verso": "Parce que la borne $a$ est incluse et la borne $b$ exclue : une valeur égale à $b$ appartient à la classe suivante. Sans cette convention, une taille de $170$ cm pourrait être comptée dans deux classes et l'effectif total serait faux.",
+      "difficulte": 2,
+      "tags": ["classes", "convention"]
+    },
+    {
+      "id": "2C-CH12-013",
+      "lecon": "Vocabulaire, effectifs et fréquences",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on le centre d'une classe $[a\\,;b[$ ?",
+      "verso": "C'est le nombre $\\dfrac{a + b}{2}$, milieu de l'intervalle : c'est lui qui remplace toutes les valeurs de la classe dans les calculs. L'amplitude de la classe est, elle, le nombre $b - a$.",
+      "difficulte": 1,
+      "tags": ["classes", "centre", "amplitude"]
+    },
+    {
+      "id": "2C-CH12-014",
+      "lecon": "Vocabulaire, effectifs et fréquences",
+      "type": "definition",
+      "recto": "Quelle erreur commet-on en annonçant que la fréquence d'une valeur vaut $8$ ?",
+      "verso": "On confond effectif et fréquence : $8$ est un nombre d'individus, alors que la fréquence est une proportion, ici $\\dfrac{8}{20} = 40\\ \\%$. Une fréquence supérieure à $1$ est nécessairement fausse, et un effectif décimal aussi.",
+      "difficulte": 3,
+      "tags": ["effectif", "frequence", "piege"]
+    },
+    {
+      "id": "2C-CH12-015",
+      "lecon": "Mode, moyenne, médiane",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on le mode d'une série statistique ?",
+      "verso": "C'est la valeur qui a le plus grand effectif ; une série est bimodale lorsque deux valeurs se partagent ce plus grand effectif. C'est la seule caractéristique de position qui ait un sens pour un caractère qualitatif.",
+      "difficulte": 1,
+      "tags": ["mode", "definition"]
+    },
+    {
+      "id": "2C-CH12-016",
+      "lecon": "Mode, moyenne, médiane",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on la classe modale d'une série regroupée en classes de même amplitude ?",
+      "verso": "C'est la classe de plus grand effectif. Lorsque les données sont regroupées, on ne parle plus de mode mais de classe modale, car les valeurs individuelles ne sont plus connues.",
+      "difficulte": 2,
+      "tags": ["mode", "classes"]
+    },
+    {
+      "id": "2C-CH12-017",
+      "lecon": "Mode, moyenne, médiane",
+      "type": "definition",
+      "recto": "Pourquoi le mode d'une série de notes ne peut-il pas être un nombre d'élèves ?",
+      "verso": "Parce que le mode est une valeur du caractère, jamais un effectif. Si six élèves ont obtenu $14$ et que c'est le plus grand effectif, le mode est la note $14$, et non $6$.",
+      "difficulte": 3,
+      "tags": ["mode", "piege"]
+    },
+    {
+      "id": "2C-CH12-018",
+      "lecon": "Mode, moyenne, médiane",
+      "type": "formule",
+      "recto": "Comment calcule-t-on la moyenne d'une série donnée par ses valeurs et leurs effectifs ?",
+      "verso": "Par $m = \\dfrac{n_{1}x_{1} + n_{2}x_{2} + \\dots + n_{p}x_{p}}{N}$ : chaque valeur est multipliée par son effectif, on additionne les produits et l'on divise par l'effectif total. Le résultat doit tomber entre la plus petite et la plus grande valeur.",
+      "difficulte": 1,
+      "tags": ["moyenne", "ponderation", "formule"]
+    },
+    {
+      "id": "2C-CH12-019",
+      "lecon": "Mode, moyenne, médiane",
+      "type": "definition",
+      "recto": "Quelle erreur guette celui qui calcule une moyenne à partir des seules valeurs distinctes ?",
+      "verso": "Il oublie les effectifs. Pour les notes $7$, $8$ et $9$ d'effectifs $3$, $3$ et $1$, la moyenne n'est pas $\\dfrac{7 + 8 + 9}{3} = 8$ mais $\\dfrac{3\\times 7 + 3\\times 8 + 1\\times 9}{7} = \\dfrac{54}{7} \\approx 7{,}71$.",
+      "difficulte": 3,
+      "tags": ["moyenne", "piege", "ponderation"]
+    },
+    {
+      "id": "2C-CH12-020",
+      "lecon": "Mode, moyenne, médiane",
+      "type": "formule",
+      "recto": "Comment calcule-t-on la moyenne d'une série regroupée en classes ?",
+      "verso": "On remplace chaque classe par son centre, puis on applique la moyenne pondérée par les effectifs. Le résultat est une valeur approchée de la vraie moyenne : on fait comme si tous les individus d'une classe se trouvaient en son centre.",
+      "difficulte": 2,
+      "tags": ["moyenne", "classes", "approximation"]
+    },
+    {
+      "id": "2C-CH12-021",
+      "lecon": "Mode, moyenne, médiane",
+      "type": "formule",
+      "recto": "Comment retrouve-t-on la somme de toutes les valeurs d'une série à partir de sa moyenne ?",
+      "verso": "En multipliant la moyenne par l'effectif total, car $m \\times N$ est la somme de toutes les valeurs. C'est ainsi que l'on traite les questions du type : on ajoute une note supplémentaire, que devient la moyenne ?",
+      "difficulte": 2,
+      "tags": ["moyenne", "somme"]
+    },
+    {
+      "id": "2C-CH12-022",
+      "lecon": "Mode, moyenne, médiane",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on la médiane d'une série statistique ?",
+      "verso": "C'est une valeur qui partage en deux la série ordonnée : au moins la moitié des individus ont une valeur inférieure ou égale à la médiane, et au moins la moitié une valeur supérieure ou égale.",
+      "difficulte": 1,
+      "tags": ["mediane", "definition"]
+    },
+    {
+      "id": "2C-CH12-023",
+      "lecon": "Mode, moyenne, médiane",
+      "type": "formule",
+      "recto": "Comment détermine-t-on la médiane d'une liste de $N$ valeurs rangées dans l'ordre croissant ?",
+      "verso": "Si $N$ est impair, c'est la valeur du milieu ; si $N$ est pair, c'est la demi-somme des deux valeurs centrales. Le rangement préalable est indispensable : sur une liste en désordre, la valeur du milieu ne veut rien dire.",
+      "difficulte": 2,
+      "tags": ["mediane", "liste", "parite"]
+    },
+    {
+      "id": "2C-CH12-024",
+      "lecon": "Mode, moyenne, médiane",
+      "type": "formule",
+      "recto": "Comment lit-on la médiane sur un tableau d'effectifs ?",
+      "verso": "Sur la ligne des effectifs cumulés croissants : on calcule $\\dfrac{N}{2}$, puis on retient la première valeur dont le cumul atteint ce nombre.",
+      "difficulte": 2,
+      "tags": ["mediane", "effectif-cumule"]
+    },
+    {
+      "id": "2C-CH12-025",
+      "lecon": "Mode, moyenne, médiane",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on l'étendue d'une série statistique ?",
+      "verso": "C'est la différence entre la plus grande et la plus petite valeur de la série. Ce n'est pas une caractéristique de position mais une première mesure de dispersion : elle dit sur quelle largeur les valeurs s'étalent.",
+      "difficulte": 1,
+      "tags": ["etendue", "dispersion"]
+    },
+    {
+      "id": "2C-CH12-026",
+      "lecon": "Mode, moyenne, médiane",
+      "type": "formule",
+      "recto": "Pourquoi une valeur extrême déplace-t-elle la moyenne sans faire bouger la médiane ?",
+      "verso": "Parce que la moyenne fait intervenir la grandeur de chaque valeur, alors que la médiane ne dépend que de leur rang : augmenter la plus grande valeur augmente la somme mais ne change pas l'ordre. La médiane est dite robuste, et c'est pourquoi les revenus sont publiés sous forme de médiane.",
+      "difficulte": 3,
+      "tags": ["mediane", "moyenne", "valeur-extreme"]
+    },
+    {
+      "id": "2C-CH12-027",
+      "lecon": "Mode, moyenne, médiane",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on le premier quartile d'une série statistique ?",
+      "verso": "C'est une valeur telle qu'au moins un quart des individus ont une valeur inférieure ou égale. Il correspond à $25\\ \\%$ de l'effectif cumulé, là où la médiane correspond à $50\\ \\%$.",
+      "difficulte": 2,
+      "tags": ["quartile", "definition"]
+    },
+    {
+      "id": "2C-CH12-028",
+      "lecon": "Représenter une série statistique",
+      "type": "definition",
+      "recto": "Quel diagramme représente un caractère discret ou qualitatif ?",
+      "verso": "Le diagramme en bâtons : les valeurs sont portées sur un axe horizontal et l'on trace au-dessus de chacune un bâton vertical dont la hauteur est proportionnelle à l'effectif, ou à la fréquence. Les bâtons sont séparés les uns des autres.",
+      "difficulte": 1,
+      "tags": ["diagramme-batons", "discret"]
+    },
+    {
+      "id": "2C-CH12-029",
+      "lecon": "Représenter une série statistique",
+      "type": "formule",
+      "recto": "Pourquoi les bâtons d'un diagramme en bâtons ne se touchent-ils pas ?",
+      "verso": "Parce que l'espace qui les sépare correspond à des valeurs impossibles : entre $3$ enfants et $4$ enfants, aucune famille n'existe. Des rectangles collés suggéreraient à tort que toutes les valeurs intermédiaires existent.",
+      "difficulte": 2,
+      "tags": ["diagramme-batons", "discret", "justification"]
+    },
+    {
+      "id": "2C-CH12-030",
+      "lecon": "Représenter une série statistique",
+      "type": "definition",
+      "recto": "Qu'obtient-on en joignant les sommets des bâtons d'un diagramme en bâtons ?",
+      "verso": "Le polygone des effectifs, ou polygone des fréquences. Il est commode pour comparer deux séries représentées sur un même graphique.",
+      "difficulte": 2,
+      "tags": ["polygone-des-effectifs", "diagramme-batons"]
+    },
+    {
+      "id": "2C-CH12-031",
+      "lecon": "Représenter une série statistique",
+      "type": "formule",
+      "recto": "Comment calcule-t-on l'angle d'un secteur d'un diagramme circulaire ?",
+      "verso": "L'angle est proportionnel à la fréquence : angle $=$ fréquence $\\times 360^{\\circ}$. La somme des angles doit valoir $360^{\\circ}$, ce qui fournit la vérification du calcul avant tout tracé.",
+      "difficulte": 1,
+      "tags": ["diagramme-circulaire", "angle", "formule"]
+    },
+    {
+      "id": "2C-CH12-032",
+      "lecon": "Représenter une série statistique",
+      "type": "formule",
+      "recto": "Comment retrouve-t-on l'effectif d'un secteur dont on a mesuré l'angle ?",
+      "verso": "On revient d'abord à la fréquence en divisant l'angle par $360^{\\circ}$, puis on multiplie cette fréquence par l'effectif total $N$. Un secteur de $90^{\\circ}$ correspond ainsi à $25\\ \\%$ de l'effectif.",
+      "difficulte": 2,
+      "tags": ["diagramme-circulaire", "lecture-inverse"]
+    },
+    {
+      "id": "2C-CH12-033",
+      "lecon": "Représenter une série statistique",
+      "type": "definition",
+      "recto": "Quel diagramme représente une série regroupée en classes ?",
+      "verso": "L'histogramme : au-dessus de chaque classe on trace un rectangle dont l'aire est proportionnelle à l'effectif de la classe. Les rectangles sont collés, puisque les classes se suivent sans trou.",
+      "difficulte": 2,
+      "tags": ["histogramme", "classes"]
+    },
+    {
+      "id": "2C-CH12-034",
+      "lecon": "Représenter une série statistique",
+      "type": "formule",
+      "recto": "Que faut-il corriger dans un histogramme dont les classes n'ont pas la même amplitude ?",
+      "verso": "Les hauteurs, pour que les aires restent proportionnelles aux effectifs : une classe deux fois plus large doit recevoir une hauteur divisée par deux. Quand toutes les amplitudes sont égales, on peut porter directement l'effectif en hauteur.",
+      "difficulte": 3,
+      "tags": ["histogramme", "amplitude", "piege"]
+    },
+    {
+      "id": "2C-CH12-035",
+      "lecon": "Représenter une série statistique",
+      "type": "definition",
+      "recto": "Pourquoi ne trace-t-on pas un histogramme à barres collées pour des notes entières ?",
+      "verso": "Parce que le caractère est discret : ses valeurs sont isolées et se représentent par des bâtons séparés. L'histogramme, fait de rectangles collés d'aires proportionnelles aux effectifs, est réservé aux données regroupées en classes.",
+      "difficulte": 3,
+      "tags": ["histogramme", "diagramme-batons", "piege"]
+    },
+    {
+      "id": "2C-CH12-036",
+      "lecon": "Représenter une série statistique",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on le diagramme cumulatif d'une série statistique ?",
+      "verso": "C'est la représentation des effectifs cumulés, ou des fréquences cumulées : la valeur, ou la borne de classe, en abscisse et le cumul en ordonnée. Les points se placent aux bornes des classes, jamais aux centres, car le cumul n'est atteint qu'à la fin de la classe.",
+      "difficulte": 2,
+      "tags": ["diagramme-cumulatif", "definition"]
+    },
+    {
+      "id": "2C-CH12-037",
+      "lecon": "Représenter une série statistique",
+      "type": "formule",
+      "recto": "Comment lit-on la médiane sur un diagramme cumulatif ?",
+      "verso": "On part de $\\dfrac{N}{2}$ sur l'axe vertical, ou de $50\\ \\%$ pour des fréquences cumulées, on se déplace horizontalement jusqu'à la courbe, puis on descend verticalement : l'abscisse obtenue est la médiane.",
+      "difficulte": 2,
+      "tags": ["diagramme-cumulatif", "mediane", "lecture"]
+    },
+    {
+      "id": "2C-CH12-038",
+      "lecon": "Représenter une série statistique",
+      "type": "formule",
+      "recto": "Pourquoi la courbe des effectifs cumulés croissants ne redescend-elle jamais ?",
+      "verso": "Parce qu'à chaque valeur on ajoute au cumul un effectif positif ou nul : le cumul ne peut pas diminuer. La courbe part de $0$ et se termine à $N$, et cette croissance rend la lecture de la médiane sans ambiguïté.",
+      "difficulte": 3,
+      "tags": ["diagramme-cumulatif", "croissance"]
+    }
+  ]
+}

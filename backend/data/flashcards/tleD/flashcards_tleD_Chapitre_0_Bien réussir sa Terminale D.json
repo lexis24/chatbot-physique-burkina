@@ -1,0 +1,350 @@
+{
+  "niveau": "Terminale D",
+  "chapitre": "Chapitre 0 : Bien réussir sa Terminale D",
+  "source": "maths/tleD/Chapitre_0_Bien_reussir",
+  "nombre_cartes": 38,
+  "cartes": [
+    {
+      "id": "TD-CH00-001",
+      "lecon": "Test de positionnement : que sais-tu déjà de la 1ère D ?",
+      "type": "formule",
+      "recto": "Dans un cube $ABCDEFGH$ d'arête $a$, quelle est la longueur de la grande diagonale $AG$ ?",
+      "verso": "Elle vaut $a\\sqrt{3}$. C'est la diagonale qui joint deux sommets opposés du cube, à ne pas confondre avec la diagonale d'une face. Deux arêtes issues d'un même sommet étant perpendiculaires, on a par ailleurs $\\overrightarrow{AB}\\cdot\\overrightarrow{AD}=0$.",
+      "difficulte": 2,
+      "tags": ["cube", "diagonale", "espace"]
+    },
+    {
+      "id": "TD-CH00-002",
+      "lecon": "Test de positionnement : que sais-tu déjà de la 1ère D ?",
+      "type": "formule",
+      "recto": "Que traduit, pour une courbe, une limite finie $\\ell$ en $+\\infty$ ?",
+      "verso": "La courbe admet une asymptote horizontale d'équation $y=\\ell$. Ainsi $\\dfrac{2x+1}{x-3}$ tend vers $2$ quand $x$ tend vers $+\\infty$, donc sa courbe admet l'asymptote horizontale d'équation $y=2$.",
+      "difficulte": 2,
+      "tags": ["limite", "asymptote-horizontale"]
+    },
+    {
+      "id": "TD-CH00-003",
+      "lecon": "Je révise l'essentiel de la 1ère D",
+      "type": "formule",
+      "recto": "Quelles sont les dérivées de $x^{n}$, de $\\sqrt{x}$ et de $\\dfrac{1}{x}$ ?",
+      "verso": "$\\left(x^{n}\\right)'=nx^{n-1}$ ; $\\left(\\sqrt{x}\\right)'=\\dfrac{1}{2\\sqrt{x}}$, valable pour $x>0$ seulement ; $\\left(\\dfrac{1}{x}\\right)'=-\\dfrac{1}{x^{2}}$.",
+      "difficulte": 1,
+      "tags": ["derivee", "fonctions-usuelles"]
+    },
+    {
+      "id": "TD-CH00-004",
+      "lecon": "Je révise l'essentiel de la 1ère D",
+      "type": "formule",
+      "recto": "Comment dérive-t-on un produit de deux fonctions $u$ et $v$ ?",
+      "verso": "$(uv)'=u'v+uv'$. La dérivée d'un produit n'est donc pas le produit des dérivées : on somme deux termes, dans chacun desquels un seul des deux facteurs est dérivé.",
+      "difficulte": 1,
+      "tags": ["derivee", "produit"]
+    },
+    {
+      "id": "TD-CH00-005",
+      "lecon": "Je révise l'essentiel de la 1ère D",
+      "type": "formule",
+      "recto": "Comment dérive-t-on un quotient $\\dfrac{u}{v}$ ?",
+      "verso": "$\\left(\\dfrac{u}{v}\\right)'=\\dfrac{u'v-uv'}{v^{2}}$. L'ordre des deux termes du numérateur compte : c'est $u'v$ en premier, puis $uv'$ retranché.",
+      "difficulte": 2,
+      "tags": ["derivee", "quotient"]
+    },
+    {
+      "id": "TD-CH00-006",
+      "lecon": "Je révise l'essentiel de la 1ère D",
+      "type": "formule",
+      "recto": "Comment dérive-t-on une puissance $u^{n}$ d'une fonction $u$ ?",
+      "verso": "$\\left(u^{n}\\right)'=nu'u^{n-1}$. Le facteur $u'$ est celui qu'on oublie le plus souvent : $g(x)=(3x+2)^{4}$ a pour dérivée $g'(x)=12(3x+2)^{3}$.",
+      "difficulte": 2,
+      "tags": ["derivee", "composee", "puissance"]
+    },
+    {
+      "id": "TD-CH00-007",
+      "lecon": "Je révise l'essentiel de la 1ère D",
+      "type": "formule",
+      "recto": "Quelle est l'équation de la tangente à la courbe de $f$ au point d'abscisse $a$ ?",
+      "verso": "$y=f'(a)(x-a)+f(a)$. Le nombre dérivé $f'(a)$ en est le coefficient directeur, et cette droite passe par le point de coordonnées $\\left(a\\,;f(a)\\right)$.",
+      "difficulte": 1,
+      "tags": ["tangente", "derivee"]
+    },
+    {
+      "id": "TD-CH00-008",
+      "lecon": "Je révise l'essentiel de la 1ère D",
+      "type": "formule",
+      "recto": "Comment le signe de $f'$ renseigne-t-il sur les variations de $f$ ?",
+      "verso": "Sur un intervalle où $f'>0$, la fonction $f$ est croissante ; sur un intervalle où $f'<0$, elle est décroissante. Un extremum local se cherche là où $f'$ s'annule en changeant de signe.",
+      "difficulte": 2,
+      "tags": ["derivee", "variations", "extremum"]
+    },
+    {
+      "id": "TD-CH00-009",
+      "lecon": "Je révise l'essentiel de la 1ère D",
+      "type": "formule",
+      "recto": "Comment exprime-t-on le terme général d'une suite arithmétique de raison $r$ ?",
+      "verso": "Une suite arithmétique vérifie $u_{n+1}=u_n+r$, ce qui donne $u_n=u_0+nr$ : on ajoute la raison autant de fois qu'il y a de pas depuis le rang $0$.",
+      "difficulte": 1,
+      "tags": ["suite-arithmetique", "terme-general"]
+    },
+    {
+      "id": "TD-CH00-010",
+      "lecon": "Je révise l'essentiel de la 1ère D",
+      "type": "formule",
+      "recto": "Comment calcule-t-on la somme de termes consécutifs d'une suite arithmétique ?",
+      "verso": "On multiplie le nombre de termes par la somme du premier et du dernier, puis on divise par $2$. Pour $u_0=3$ et $r=4$, la somme $u_0+\\dots+u_{10}$ vaut $\\dfrac{11\\times(3+43)}{2}=253$.",
+      "difficulte": 2,
+      "tags": ["suite-arithmetique", "somme"]
+    },
+    {
+      "id": "TD-CH00-011",
+      "lecon": "Je révise l'essentiel de la 1ère D",
+      "type": "formule",
+      "recto": "Comment exprime-t-on le terme général d'une suite géométrique de raison $q$ ?",
+      "verso": "Une suite géométrique vérifie $v_{n+1}=q\\,v_n$, ce qui donne $v_n=v_0q^{n}$ : on multiplie par la raison autant de fois qu'il y a de pas depuis le rang $0$.",
+      "difficulte": 1,
+      "tags": ["suite-geometrique", "terme-general"]
+    },
+    {
+      "id": "TD-CH00-012",
+      "lecon": "Je révise l'essentiel de la 1ère D",
+      "type": "formule",
+      "recto": "Quelle formule donne la somme $v_0+v_1+\\dots+v_n$ des termes d'une suite géométrique ?",
+      "verso": "$v_0+v_1+\\dots+v_n=v_0\\,\\dfrac{1-q^{n+1}}{1-q}$, à la condition que la raison $q$ soit différente de $1$. Sans cette condition, le dénominateur $1-q$ serait nul.",
+      "difficulte": 2,
+      "tags": ["suite-geometrique", "somme", "condition"]
+    },
+    {
+      "id": "TD-CH00-013",
+      "lecon": "Je révise l'essentiel de la 1ère D",
+      "type": "formule",
+      "recto": "Quelles sont les valeurs exactes de $\\cos\\dfrac{\\pi}{6}$, $\\cos\\dfrac{\\pi}{4}$ et $\\cos\\dfrac{\\pi}{3}$ ?",
+      "verso": "$\\cos\\dfrac{\\pi}{6}=\\dfrac{\\sqrt{3}}{2}$, $\\cos\\dfrac{\\pi}{4}=\\dfrac{\\sqrt{2}}{2}$ et $\\cos\\dfrac{\\pi}{3}=\\dfrac{1}{2}$. Les sinus de ces mêmes angles prennent les trois valeurs dans l'ordre inverse.",
+      "difficulte": 1,
+      "tags": ["trigonometrie", "valeurs-exactes"]
+    },
+    {
+      "id": "TD-CH00-014",
+      "lecon": "Je révise l'essentiel de la 1ère D",
+      "type": "formule",
+      "recto": "Quelles sont les formules d'addition donnant $\\cos(a+b)$ et $\\sin(a+b)$ ?",
+      "verso": "$\\cos(a+b)=\\cos a\\cos b-\\sin a\\sin b$ et $\\sin(a+b)=\\sin a\\cos b+\\cos a\\sin b$. Le cosinus associe les fonctions de même nom avec un signe moins, le sinus les croise avec un signe plus.",
+      "difficulte": 2,
+      "tags": ["trigonometrie", "formules-addition"]
+    },
+    {
+      "id": "TD-CH00-015",
+      "lecon": "Je révise l'essentiel de la 1ère D",
+      "type": "formule",
+      "recto": "Quelle égalité relie le carré du cosinus et le carré du sinus d'un même réel ?",
+      "verso": "$\\cos^{2}x+\\sin^{2}x=1$, pour tout réel $x$. On retient également la formule de duplication $\\cos 2a=2\\cos^{2}a-1$.",
+      "difficulte": 1,
+      "tags": ["trigonometrie", "relation-fondamentale"]
+    },
+    {
+      "id": "TD-CH00-016",
+      "lecon": "Je révise l'essentiel de la 1ère D",
+      "type": "definition",
+      "recto": "Qu'est-ce qu'un arrangement de $p$ éléments parmi $n$ ?",
+      "verso": "C'est un choix ordonné de $p$ éléments distincts parmi $n$, et leur nombre vaut $A_n^p=n(n-1)\\dots(n-p+1)$. Lorsqu'on ordonne les $n$ éléments entre eux, on parle de permutation et leur nombre vaut $n!$.",
+      "difficulte": 2,
+      "tags": ["denombrement", "arrangement", "permutation"]
+    },
+    {
+      "id": "TD-CH00-017",
+      "lecon": "Je révise l'essentiel de la 1ère D",
+      "type": "definition",
+      "recto": "Qu'est-ce qu'une combinaison de $p$ éléments parmi $n$ ?",
+      "verso": "C'est un choix non ordonné de $p$ éléments parmi $n$, et leur nombre vaut $C_n^p=\\dfrac{A_n^p}{p!}$ : les $p!$ façons d'ordonner un même groupe ne comptent que pour une. On a de plus $C_n^p=C_n^{n-p}$.",
+      "difficulte": 2,
+      "tags": ["denombrement", "combinaison"]
+    },
+    {
+      "id": "TD-CH00-018",
+      "lecon": "Je révise l'essentiel de la 1ère D",
+      "type": "formule",
+      "recto": "Que donne la formule du binôme de Newton pour $(a+b)^{n}$ ?",
+      "verso": "$(a+b)^{n}=\\sum C_n^p\\,a^{n-p}b^{p}$, où $p$ parcourt les entiers de $0$ à $n$. Ainsi $(a+b)^{4}=a^{4}+4a^{3}b+6a^{2}b^{2}+4ab^{3}+b^{4}$.",
+      "difficulte": 2,
+      "tags": ["binome-de-newton", "denombrement"]
+    },
+    {
+      "id": "TD-CH00-019",
+      "lecon": "Je révise l'essentiel de la 1ère D",
+      "type": "formule",
+      "recto": "Dans un repère orthonormé, comment calcule-t-on le produit scalaire de $\\vec u(x\\,;y)$ et $\\vec v(x'\\,;y')$ ?",
+      "verso": "$\\vec u\\cdot\\vec v=xx'+yy'$. Les deux vecteurs sont orthogonaux exactement lorsque ce produit est nul : $\\vec u(3\\,;1)$ et $\\vec v(-1\\,;3)$ donnent $-3+3=0$, ils sont donc orthogonaux.",
+      "difficulte": 1,
+      "tags": ["produit-scalaire", "orthogonalite"]
+    },
+    {
+      "id": "TD-CH00-020",
+      "lecon": "Mes outils de travail",
+      "type": "definition",
+      "recto": "Comment une asymptote doit-elle apparaître sur une courbe tracée à la main ?",
+      "verso": "En pointillés, avec son équation écrite juste à côté. Les points du tracé se marquent au crayon fin d'une petite croix, puis on les relie d'un trait souple qui respecte le tableau de variations.",
+      "difficulte": 2,
+      "tags": ["courbe", "asymptote", "trace"]
+    },
+    {
+      "id": "TD-CH00-021",
+      "lecon": "Mes outils de travail",
+      "type": "definition",
+      "recto": "Sous quelle forme donne-t-on un résultat de calcul en Terminale D ?",
+      "verso": "En valeur exacte. On ne donne une valeur approchée que si l'énoncé le demande, et les valeurs utiles comme $e\\approx 2{,}72$, $\\ln 2\\approx 0{,}69$ ou $\\sqrt{2}\\approx 1{,}41$ sont alors fournies ou retrouvées par encadrement.",
+      "difficulte": 2,
+      "tags": ["valeur-exacte", "redaction"]
+    },
+    {
+      "id": "TD-CH00-022",
+      "lecon": "Mes outils de travail",
+      "type": "definition",
+      "recto": "Que rassemble le cahier de formules qu'on enrichit tout au long de l'année ?",
+      "verso": "Les dérivées, les limites de référence, les propriétés du logarithme et de l'exponentielle, les primitives usuelles, les formules de trigonométrie et celles des nombres complexes, regroupées thème par thème.",
+      "difficulte": 1,
+      "tags": ["cahier-de-formules", "methode"]
+    },
+    {
+      "id": "TD-CH00-023",
+      "lecon": "Raisonner en Terminale D",
+      "type": "definition",
+      "recto": "Quels sont les trois temps du modèle de rédaction d'une démonstration en Terminale D ?",
+      "verso": "Les hypothèses, c'est-à-dire ce qu'on sait ; l'outil employé, définition, propriété ou théorème, que l'on nomme explicitement ; la conclusion, ce qu'on voulait établir. Un correcteur doit pouvoir suivre sans rien deviner.",
+      "difficulte": 1,
+      "tags": ["demonstration", "redaction"]
+    },
+    {
+      "id": "TD-CH00-024",
+      "lecon": "Raisonner en Terminale D",
+      "type": "definition",
+      "recto": "Quelle différence y a-t-il entre une propriété admise et une propriété démontrée ?",
+      "verso": "Une propriété admise s'emploie sans preuve, comme la plupart des résultats sur les limites. Une propriété démontrée doit être prouvée : présenter comme évidente une propriété dont on te demande la preuve est une faute.",
+      "difficulte": 2,
+      "tags": ["demonstration", "propriete-admise"]
+    },
+    {
+      "id": "TD-CH00-025",
+      "lecon": "Raisonner en Terminale D",
+      "type": "formule",
+      "recto": "Quelles sont les trois étapes d'une démonstration par récurrence d'une propriété $P(n)$ pour $n\\ge n_0$ ?",
+      "verso": "L'initialisation, où l'on vérifie que $P(n_0)$ est vraie ; l'hérédité, où l'on suppose $P(n)$ vraie pour un entier $n\\ge n_0$ et où l'on démontre $P(n+1)$ ; la conclusion, où le principe de récurrence donne $P(n)$ vraie pour tout $n\\ge n_0$.",
+      "difficulte": 1,
+      "tags": ["recurrence", "demonstration"]
+    },
+    {
+      "id": "TD-CH00-026",
+      "lecon": "Raisonner en Terminale D",
+      "type": "definition",
+      "recto": "Que suppose exactement l'hypothèse de récurrence ?",
+      "verso": "Elle suppose $P(n)$ vraie pour un entier $n\\ge n_0$ fixé, et non pour tous les entiers : supposer le résultat pour tous reviendrait à supposer ce qu'on veut démontrer. C'est de cette hypothèse qu'on déduit $P(n+1)$.",
+      "difficulte": 3,
+      "tags": ["recurrence", "hypothese", "piege"]
+    },
+    {
+      "id": "TD-CH00-027",
+      "lecon": "Raisonner en Terminale D",
+      "type": "definition",
+      "recto": "En quoi consiste un raisonnement par l'absurde ?",
+      "verso": "On suppose le contraire de ce qu'on veut prouver. Si cette supposition conduit à une contradiction, c'est qu'elle était impossible : la propriété de départ est donc vraie.",
+      "difficulte": 1,
+      "tags": ["absurde", "demonstration"]
+    },
+    {
+      "id": "TD-CH00-028",
+      "lecon": "Raisonner en Terminale D",
+      "type": "definition",
+      "recto": "Sur quelle contradiction repose la démonstration de l'irrationalité de $\\sqrt{2}$ ?",
+      "verso": "On suppose $\\sqrt{2}=\\dfrac{p}{q}$ avec une fraction irréductible, puis on obtient successivement $p$ pair et $q$ pair. La fraction n'était donc pas irréductible : c'est absurde, et $\\sqrt{2}$ est irrationnel.",
+      "difficulte": 3,
+      "tags": ["absurde", "irrationnel", "racine-carree"]
+    },
+    {
+      "id": "TD-CH00-029",
+      "lecon": "Raisonner en Terminale D",
+      "type": "definition",
+      "recto": "Quelle est la contraposée de l'implication « si $A$ alors $B$ » ?",
+      "verso": "C'est « si non $B$ alors non $A$ ». Elle a toujours la même valeur de vérité que l'implication de départ : démontrer l'une, c'est démontrer l'autre, et l'on choisit la forme la plus simple à prouver.",
+      "difficulte": 1,
+      "tags": ["contraposee", "logique"]
+    },
+    {
+      "id": "TD-CH00-030",
+      "lecon": "Raisonner en Terminale D",
+      "type": "definition",
+      "recto": "Pourquoi ne faut-il pas confondre la contraposée d'une implication avec sa réciproque ?",
+      "verso": "La contraposée de « si $A$ alors $B$ » est « si non $B$ alors non $A$ », et elle est toujours équivalente à l'énoncé de départ. La réciproque est « si $B$ alors $A$ », et elle n'est pas toujours vraie.",
+      "difficulte": 3,
+      "tags": ["contraposee", "reciproque", "piege"]
+    },
+    {
+      "id": "TD-CH00-031",
+      "lecon": "Raisonner en Terminale D",
+      "type": "definition",
+      "recto": "Que suffit-il de produire pour établir qu'une affirmation est fausse ?",
+      "verso": "Un seul contre-exemple. A l'inverse, des exemples même nombreux ne prouvent jamais qu'une affirmation est vraie : il y faut une démonstration générale, et un graphique peut suggérer une propriété sans jamais la remplacer.",
+      "difficulte": 2,
+      "tags": ["contre-exemple", "demonstration"]
+    },
+    {
+      "id": "TD-CH00-032",
+      "lecon": "Ma méthode de travail",
+      "type": "definition",
+      "recto": "Pourquoi note-t-on chaque formule avec ses conditions d'emploi ?",
+      "verso": "Parce qu'une formule employée hors de ses conditions est une faute, et c'est la plus fréquente à l'examen. On écrit donc à côté d'elle « pour $x>0$ », « pour $q\\ne 1$ » ou « si $f$ est continue sur l'intervalle ».",
+      "difficulte": 2,
+      "tags": ["conditions-demploi", "methode"]
+    },
+    {
+      "id": "TD-CH00-033",
+      "lecon": "Ma méthode de travail",
+      "type": "definition",
+      "recto": "Quelle est la preuve qu'on a vraiment compris un exercice difficile ?",
+      "verso": "Savoir le refaire seul, et non savoir le relire. Recopier un corrigé donne l'impression d'avoir compris, mais le jour de l'examen ce corrigé n'est plus là.",
+      "difficulte": 2,
+      "tags": ["methode", "corrige"]
+    },
+    {
+      "id": "TD-CH00-034",
+      "lecon": "Ma méthode de travail",
+      "type": "definition",
+      "recto": "A quels moments faut-il revenir sur une notion qu'on vient d'apprendre ?",
+      "verso": "Cinq minutes le lendemain, puis une fois encore la semaine suivante. On récite d'abord en écrivant, cahier fermé, puis on compare pour repérer seulement ce qui manquait.",
+      "difficulte": 2,
+      "tags": ["methode", "revision"]
+    },
+    {
+      "id": "TD-CH00-035",
+      "lecon": "Ma méthode de travail",
+      "type": "definition",
+      "recto": "Que doit comporter l'étude d'une fonction demandée par un énoncé ?",
+      "verso": "L'ensemble de définition, les limites, la dérivée, le tableau de variations, les asymptotes et enfin la courbe.",
+      "difficulte": 2,
+      "tags": ["etude-de-fonction", "consigne"]
+    },
+    {
+      "id": "TD-CH00-036",
+      "lecon": "Réussir mon année d'examen, et comment lire ce manuel",
+      "type": "definition",
+      "recto": "Que signalent les une, deux ou trois étoiles portées par un exercice ?",
+      "verso": "Non pas sa longueur, mais ce qu'il attend : une étoile pour l'application directe d'une seule notion, deux étoiles pour un enchaînement de deux étapes, trois étoiles pour une démarche qu'il faut choisir soi-même.",
+      "difficulte": 1,
+      "tags": ["etoiles", "difficulte"]
+    },
+    {
+      "id": "TD-CH00-037",
+      "lecon": "Réussir mon année d'examen, et comment lire ce manuel",
+      "type": "definition",
+      "recto": "Comment se compose l'épreuve écrite de mathématiques de la série D au baccalauréat ?",
+      "verso": "De plusieurs exercices indépendants, suivis d'un problème. Elle couvre l'ensemble du programme : analyse, nombres complexes, probabilités et géométrie de l'espace.",
+      "difficulte": 1,
+      "tags": ["baccalaureat", "epreuve"]
+    },
+    {
+      "id": "TD-CH00-038",
+      "lecon": "Réussir mon année d'examen, et comment lire ce manuel",
+      "type": "definition",
+      "recto": "Qu'évalue-t-on sur une copie de mathématiques, en plus de la justesse des résultats ?",
+      "verso": "La rédaction : outils nommés, étapes écrites, conclusions rédigées. Un raisonnement clair est récompensé même s'il n'aboutit pas, et il vaut donc mieux écrire la méthode que de laisser une question blanche.",
+      "difficulte": 2,
+      "tags": ["baccalaureat", "redaction"]
+    }
+  ]
+}

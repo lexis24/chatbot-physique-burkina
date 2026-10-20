@@ -1,0 +1,314 @@
+{
+  "niveau": "3ème",
+  "chapitre": "Chapitre 1 : Les nombres réels : intervalles, encadrement, valeur absolue",
+  "source": "maths/3eme/Chapitre_1_Les_nombres_reels",
+  "nombre_cartes": 34,
+  "cartes": [
+    {
+      "id": "3E-CH01-001",
+      "lecon": "Les intervalles de $\\mathbb{R}$",
+      "type": "definition",
+      "recto": "Qu'est-ce qu'un intervalle de $\\mathbb{R}$ ?",
+      "verso": "C'est l'ensemble de tous les réels compris entre deux bornes $a$ et $b$, avec $a \\le b$. Une seule écriture remplace ainsi une infinité de nombres.",
+      "difficulte": 1,
+      "tags": ["intervalle", "definition"]
+    },
+    {
+      "id": "3E-CH01-002",
+      "lecon": "Les intervalles de $\\mathbb{R}$",
+      "type": "definition",
+      "recto": "Comment sait-on, en regardant un crochet, si la borne fait partie de l'intervalle ?",
+      "verso": "Un crochet tourné vers l'intérieur inclut la borne, un crochet tourné vers l'extérieur l'exclut. Le crochet se lit comme une main : quand elle se referme sur le nombre, celui-ci est pris.",
+      "difficulte": 1,
+      "tags": ["intervalle", "crochets", "bornes"]
+    },
+    {
+      "id": "3E-CH01-003",
+      "lecon": "Les intervalles de $\\mathbb{R}$",
+      "type": "formule",
+      "recto": "Par quelle double inégalité traduit-on l'appartenance $x \\in \\left[a\\,;\\,b\\right]$ ?",
+      "verso": "Par $a \\le x \\le b$ : les deux bornes sont incluses. Avec des crochets ouverts, $x \\in \\left]a\\,;\\,b\\right[$ signifie $a < x < b$.",
+      "difficulte": 1,
+      "tags": ["intervalle", "inegalite"]
+    },
+    {
+      "id": "3E-CH01-004",
+      "lecon": "Les intervalles de $\\mathbb{R}$",
+      "type": "formule",
+      "recto": "Comment écrit-on sous forme d'intervalle l'ensemble des réels $x$ tels que $x \\ge 3$ ?",
+      "verso": "On écrit $x \\in \\left[3\\,;\\,+\\infty\\right[$. De la même façon, $x \\le 2$ s'écrit $x \\in \\left]-\\infty\\,;\\,2\\right]$.",
+      "difficulte": 2,
+      "tags": ["intervalle", "non-borne", "infini"]
+    },
+    {
+      "id": "3E-CH01-005",
+      "lecon": "Les intervalles de $\\mathbb{R}$",
+      "type": "definition",
+      "recto": "Pourquoi la borne infinie d'un intervalle porte-t-elle toujours un crochet ouvert ?",
+      "verso": "Parce que le symbole $\\infty$ n'est pas un nombre : il ne peut jamais être atteint, donc jamais inclus. On écrit $\\left[3\\,;\\,+\\infty\\right[$, jamais $\\left[3\\,;\\,+\\infty\\right]$.",
+      "difficulte": 2,
+      "tags": ["infini", "crochets", "piege"]
+    },
+    {
+      "id": "3E-CH01-006",
+      "lecon": "Les intervalles de $\\mathbb{R}$",
+      "type": "formule",
+      "recto": "Dans quel ordre écrit-on les deux bornes d'un intervalle ?",
+      "verso": "La plus petite à gauche, la plus grande à droite, même quand les deux sont négatives : $-5 < x \\le -1$ s'écrit $\\left]-5\\,;\\,-1\\right]$.",
+      "difficulte": 2,
+      "tags": ["intervalle", "bornes", "ordre"]
+    },
+    {
+      "id": "3E-CH01-007",
+      "lecon": "Les intervalles de $\\mathbb{R}$",
+      "type": "formule",
+      "recto": "Comment représente-t-on un intervalle non borné sur une droite graduée ?",
+      "verso": "On place la borne avec son crochet, on colorie jusqu'au bord de la feuille, puis on termine par une flèche qui rappelle que l'ensemble continue sans fin.",
+      "difficulte": 2,
+      "tags": ["intervalle", "droite-graduee", "representation"]
+    },
+    {
+      "id": "3E-CH01-008",
+      "lecon": "Les intervalles de $\\mathbb{R}$",
+      "type": "definition",
+      "recto": "Qu'est-ce que l'intersection de deux intervalles ?",
+      "verso": "Notée $\\cap$ et lue « inter », c'est l'ensemble des réels qui appartiennent aux deux intervalles à la fois.",
+      "difficulte": 1,
+      "tags": ["intersection", "definition"]
+    },
+    {
+      "id": "3E-CH01-009",
+      "lecon": "Les intervalles de $\\mathbb{R}$",
+      "type": "definition",
+      "recto": "Qu'est-ce que la réunion de deux intervalles ?",
+      "verso": "Notée $\\cup$ et lue « union », c'est l'ensemble des réels qui appartiennent à au moins un des deux intervalles.",
+      "difficulte": 1,
+      "tags": ["reunion", "definition"]
+    },
+    {
+      "id": "3E-CH01-010",
+      "lecon": "Les intervalles de $\\mathbb{R}$",
+      "type": "formule",
+      "recto": "Que vaut l'intersection de deux intervalles qui n'ont aucun réel commun ?",
+      "verso": "Elle est vide, ce qui se note $\\varnothing$. Ainsi $\\left[5\\,;\\,8\\right] \\cap \\left[0\\,;\\,2\\right] = \\varnothing$, car tout nombre du premier vaut au moins $5$ et tout nombre du second au plus $2$.",
+      "difficulte": 2,
+      "tags": ["intersection", "ensemble-vide"]
+    },
+    {
+      "id": "3E-CH01-011",
+      "lecon": "Les intervalles de $\\mathbb{R}$",
+      "type": "formule",
+      "recto": "A quelle condition une borne appartient-elle à l'intersection de deux intervalles ?",
+      "verso": "Seulement si elle appartient aux deux intervalles. Ainsi $\\left[8\\,;\\,12\\right] \\cap \\left]10\\,;\\,16\\right] = \\left]10\\,;\\,12\\right]$ : $10$ est exclu du second, alors que $12$ appartient bien aux deux.",
+      "difficulte": 3,
+      "tags": ["intersection", "bornes", "piege"]
+    },
+    {
+      "id": "3E-CH01-012",
+      "lecon": "Les intervalles de $\\mathbb{R}$",
+      "type": "definition",
+      "recto": "Que devient la réunion de deux intervalles qui n'ont aucune partie commune ?",
+      "verso": "Ce n'est plus un seul intervalle, puisqu'il manque un morceau entre les deux. On garde l'écriture avec le symbole $\\cup$ et l'on parle d'une réunion de deux intervalles.",
+      "difficulte": 3,
+      "tags": ["reunion", "piege"]
+    },
+    {
+      "id": "3E-CH01-013",
+      "lecon": "Encadrement d'une somme et d'un produit",
+      "type": "definition",
+      "recto": "Que signifie encadrer un nombre ?",
+      "verso": "C'est l'enfermer entre deux valeurs, sous la forme $a \\le x \\le b$, sans avoir besoin de le connaître exactement.",
+      "difficulte": 1,
+      "tags": ["encadrement", "definition"]
+    },
+    {
+      "id": "3E-CH01-014",
+      "lecon": "Encadrement d'une somme et d'un produit",
+      "type": "definition",
+      "recto": "Quelle est la nature du résultat obtenu quand on calcule à partir de deux encadrements ?",
+      "verso": "Ce n'est plus un nombre unique, mais un intervalle : on obtient deux résultats, un minimum, dans le cas le plus favorable, et un maximum, dans le cas le plus défavorable.",
+      "difficulte": 2,
+      "tags": ["encadrement", "sens"]
+    },
+    {
+      "id": "3E-CH01-015",
+      "lecon": "Encadrement d'une somme et d'un produit",
+      "type": "formule",
+      "recto": "Comment encadre-t-on la somme $x + y$ à partir des encadrements de $x$ et de $y$ ?",
+      "verso": "On additionne les bornes de même côté : si $a_{1} \\le x \\le a_{2}$ et $b_{1} \\le y \\le b_{2}$, alors $a_{1} + b_{1} \\le x + y \\le a_{2} + b_{2}$.",
+      "difficulte": 2,
+      "tags": ["encadrement", "somme"]
+    },
+    {
+      "id": "3E-CH01-016",
+      "lecon": "Encadrement d'une somme et d'un produit",
+      "type": "formule",
+      "recto": "Comment encadre-t-on le produit $x \\times y$ de deux réels positifs ?",
+      "verso": "On multiplie les bornes de même côté : si $0 \\le a_{1} \\le x \\le a_{2}$ et $0 \\le b_{1} \\le y \\le b_{2}$, alors $a_{1} \\times b_{1} \\le x \\times y \\le a_{2} \\times b_{2}$.",
+      "difficulte": 2,
+      "tags": ["encadrement", "produit"]
+    },
+    {
+      "id": "3E-CH01-017",
+      "lecon": "Encadrement d'une somme et d'un produit",
+      "type": "formule",
+      "recto": "Quelle condition doivent remplir les nombres pour que la règle d'encadrement du produit s'applique ?",
+      "verso": "Ils doivent être positifs. La règle « bornes de gauche entre elles, bornes de droite entre elles » n'est vraie que pour des nombres positifs.",
+      "difficulte": 3,
+      "tags": ["encadrement", "produit", "condition"]
+    },
+    {
+      "id": "3E-CH01-018",
+      "lecon": "Encadrement d'une somme et d'un produit",
+      "type": "formule",
+      "recto": "Que devient l'encadrement $a \\le x \\le b$ quand on ajoute un même nombre $c$ à chaque membre ?",
+      "verso": "Le sens des inégalités ne change pas : on obtient $a + c \\le x + c \\le b + c$.",
+      "difficulte": 1,
+      "tags": ["encadrement", "addition"]
+    },
+    {
+      "id": "3E-CH01-019",
+      "lecon": "Encadrement d'une somme et d'un produit",
+      "type": "formule",
+      "recto": "Que devient l'encadrement $a \\le x \\le b$ quand on le multiplie par un nombre $k$ positif ?",
+      "verso": "Le sens des inégalités ne change pas : si $k > 0$, alors $ka \\le kx \\le kb$.",
+      "difficulte": 2,
+      "tags": ["encadrement", "multiplication"]
+    },
+    {
+      "id": "3E-CH01-020",
+      "lecon": "Encadrement d'une somme et d'un produit",
+      "type": "formule",
+      "recto": "Que devient l'encadrement $a \\le x \\le b$ quand on le multiplie par un nombre $k$ négatif ?",
+      "verso": "L'ordre est retourné : si $k < 0$, alors $kb \\le kx \\le ka$. En particulier, de $a \\le x \\le b$ on tire $-b \\le -x \\le -a$.",
+      "difficulte": 3,
+      "tags": ["encadrement", "negatif", "piege"]
+    },
+    {
+      "id": "3E-CH01-021",
+      "lecon": "Encadrement d'une somme et d'un produit",
+      "type": "formule",
+      "recto": "Comment encadre-t-on la différence $x - y$ ?",
+      "verso": "On retourne d'abord l'encadrement de $y$, puisque $x - y = x + \\left(-y\\right)$, puis on additionne : $a_{1} - b_{2} \\le x - y \\le a_{2} - b_{1}$.",
+      "difficulte": 2,
+      "tags": ["encadrement", "difference"]
+    },
+    {
+      "id": "3E-CH01-022",
+      "lecon": "Encadrement d'une somme et d'un produit",
+      "type": "formule",
+      "recto": "Quelle erreur guette l'élève qui encadre une différence de deux quantités ?",
+      "verso": "Soustraire les bornes de même côté. La borne de gauche s'obtient avec le plus petit $x$ moins le plus grand $y$ : on enlève beaucoup à peu pour le minimum, peu à beaucoup pour le maximum.",
+      "difficulte": 3,
+      "tags": ["encadrement", "difference", "piege"]
+    },
+    {
+      "id": "3E-CH01-023",
+      "lecon": "Encadrement d'une somme et d'un produit",
+      "type": "formule",
+      "recto": "Pourquoi les bornes de deux encadrements s'additionnent-elles pour encadrer la somme ?",
+      "verso": "Parce qu'ajouter un même nombre aux deux membres d'une inégalité conserve son sens : de $a_{1} \\le x$ on tire $a_{1} + b_{1} \\le x + b_{1}$, et de $b_{1} \\le y$ on tire $x + b_{1} \\le x + y$.",
+      "difficulte": 2,
+      "tags": ["encadrement", "somme", "demonstration"]
+    },
+    {
+      "id": "3E-CH01-024",
+      "lecon": "Encadrement d'une somme et d'un produit",
+      "type": "formule",
+      "recto": "A quoi sert d'encadrer un produit avant de le calculer exactement ?",
+      "verso": "A contrôler l'ordre de grandeur du résultat. Le produit $48 \\times 19$ est compris entre $40 \\times 10 = 400$ et $50 \\times 20 = 1\\,000$, et $912$ est bien dans cet intervalle.",
+      "difficulte": 2,
+      "tags": ["encadrement", "ordre-de-grandeur", "controle"]
+    },
+    {
+      "id": "3E-CH01-025",
+      "lecon": "Valeur absolue et distance de deux réels",
+      "type": "definition",
+      "recto": "Qu'est-ce que la valeur absolue d'un réel $x$ ?",
+      "verso": "C'est sa distance à zéro, notée $|x|$. Elle est toujours positive ou nulle : $|-7| = 7$, $|+4| = 4$ et $|0| = 0$.",
+      "difficulte": 1,
+      "tags": ["valeur-absolue", "definition"]
+    },
+    {
+      "id": "3E-CH01-026",
+      "lecon": "Valeur absolue et distance de deux réels",
+      "type": "formule",
+      "recto": "Comment écrit-on $|x|$ sans les barres, selon le signe de $x$ ?",
+      "verso": "Si $x \\ge 0$, alors $|x| = x$. Si $x < 0$, alors $|x| = -x$, c'est-à-dire son opposé, qui est positif.",
+      "difficulte": 2,
+      "tags": ["valeur-absolue", "signe"]
+    },
+    {
+      "id": "3E-CH01-027",
+      "lecon": "Valeur absolue et distance de deux réels",
+      "type": "definition",
+      "recto": "Pourquoi l'écriture $|x| = -x$ ne donne-t-elle pas un résultat négatif ?",
+      "verso": "Parce qu'elle ne s'emploie que lorsque $x$ est déjà négatif : si $x$ vaut $-7$, alors $-x$ vaut $+7$. Le signe moins inverse le signe, il ne rend pas le nombre négatif.",
+      "difficulte": 3,
+      "tags": ["valeur-absolue", "piege"]
+    },
+    {
+      "id": "3E-CH01-028",
+      "lecon": "Valeur absolue et distance de deux réels",
+      "type": "formule",
+      "recto": "Que peut-on dire des valeurs absolues de deux nombres opposés ?",
+      "verso": "Elles sont égales, car les deux nombres sont à la même distance de zéro : $|-5| = |5| = 5$.",
+      "difficulte": 2,
+      "tags": ["valeur-absolue", "opposes"]
+    },
+    {
+      "id": "3E-CH01-029",
+      "lecon": "Valeur absolue et distance de deux réels",
+      "type": "formule",
+      "recto": "Comment calcule-t-on la distance de deux réels $a$ et $b$ ?",
+      "verso": "Elle vaut $|a - b|$, ou $|b - a|$ : les deux écritures donnent le même nombre.",
+      "difficulte": 1,
+      "tags": ["distance", "valeur-absolue"]
+    },
+    {
+      "id": "3E-CH01-030",
+      "lecon": "Valeur absolue et distance de deux réels",
+      "type": "definition",
+      "recto": "Pourquoi calcule-t-on une distance avec une valeur absolue plutôt qu'avec une simple soustraction ?",
+      "verso": "Parce que le résultat d'une soustraction dépend de l'ordre des deux nombres et peut être négatif, alors qu'une distance est toujours positive. Ainsi $|80 - \\left(-40\\right)| = 120$.",
+      "difficulte": 2,
+      "tags": ["distance", "valeur-absolue", "signe"]
+    },
+    {
+      "id": "3E-CH01-031",
+      "lecon": "Valeur absolue et distance de deux réels",
+      "type": "formule",
+      "recto": "Combien de solutions l'équation $|x| = -3$ possède-t-elle ?",
+      "verso": "Aucune : une valeur absolue est une distance, elle n'est jamais négative.",
+      "difficulte": 3,
+      "tags": ["valeur-absolue", "piege"]
+    },
+    {
+      "id": "3E-CH01-032",
+      "lecon": "Valeur absolue et distance de deux réels",
+      "type": "formule",
+      "recto": "Que faut-il faire avant de retirer les barres dans une écriture comme $|3 - 8|$ ?",
+      "verso": "Il faut d'abord effectuer le calcul placé entre les barres, puis prendre la distance à zéro du résultat : $|3 - 8| = |-5| = 5$.",
+      "difficulte": 2,
+      "tags": ["valeur-absolue", "calcul"]
+    },
+    {
+      "id": "3E-CH01-033",
+      "lecon": "Valeur absolue et distance de deux réels",
+      "type": "formule",
+      "recto": "Comment fait-on sortir un facteur $k$ d'une valeur absolue $|kx|$ ?",
+      "verso": "On écrit $|kx| = |k| \\times |x|$ : le facteur sort, mais lui aussi en valeur absolue.",
+      "difficulte": 2,
+      "tags": ["valeur-absolue", "produit"]
+    },
+    {
+      "id": "3E-CH01-034",
+      "lecon": "Valeur absolue et distance de deux réels",
+      "type": "formule",
+      "recto": "Quel intervalle décrit l'inégalité $|x - a| < r$, où $r$ est un nombre positif ?",
+      "verso": "L'intervalle $\\left]a - r\\,;\\,a + r\\right[$, centré en $a$ : ce sont tous les réels situés à moins de $r$ de $a$. Ainsi $|x - 2| < 0{,}5$ décrit $\\left]1{,}5\\,;\\,2{,}5\\right[$.",
+      "difficulte": 2,
+      "tags": ["valeur-absolue", "intervalle", "tolerance"]
+    }
+  ]
+}

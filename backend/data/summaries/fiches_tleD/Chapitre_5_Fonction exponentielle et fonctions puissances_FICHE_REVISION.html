@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Fiche de revision - Terminale D - Chapitre 5 : Fonction exponentielle et fonctions puissances</title>
+<style>
+/* ===================================================================
+   FICHE DE REVISION, Collection Hakili Lab, Edition 2026
+   Feuille de style autonome, format A4 pret a imprimer.
+   Bleu #005CB9 · Vert #49A145
+   =================================================================== */
+:root{
+  --bleu:#005CB9; --bleu-fonce:#00429A; --bleu-pale:#E8F1FB; --bleu-bord:#B7D2EE;
+  --vert:#49A145; --vert-fonce:#2F7A2C; --vert-pale:#EDF7EC; --vert-bord:#BCE0B9;
+  --gris:#4A4A4A; --gris-clair:#E4E4E4; --rouge:#B3261E;
+}
+@page{
+  size:A4; margin:15mm;
+  @bottom-center{
+    content:"Collection Hakili Lab, Edition 2026  ·  Fiche de revision  ·  " counter(page) "/" counter(pages);
+    font-family:"Segoe UI",Calibri,Arial,sans-serif; font-size:6.6pt; color:#8A8A8A;
+  }
+}
+*{box-sizing:border-box;}
+body{
+  margin:0; font-family:"Segoe UI",Calibri,Arial,sans-serif;
+  font-size:8.4pt; line-height:1.26; color:#1B1B1B;
+}
+p{margin:0 0 3pt;}
+ul{margin:0 0 3pt; padding-left:11pt;}
+li{margin:0 0 1.2pt;}
+b,strong{color:var(--bleu-fonce);}
+
+/* ------------------------------ ENTETE ---------------------------- */
+.entete{
+  display:flex; align-items:stretch; border:1.6pt solid var(--bleu);
+  border-radius:2.5pt; overflow:hidden; margin-bottom:6pt;
+}
+.entete .num{
+  background:var(--bleu); color:#fff; font-size:20pt; font-weight:700;
+  padding:0 8pt; display:flex; align-items:center; justify-content:center; min-width:34pt;
+}
+.entete .txt{padding:3.5pt 8pt; flex:1;}
+.entete .niveau{
+  font-size:7pt; font-weight:700; letter-spacing:.9pt; color:var(--vert-fonce);
+}
+.entete h1{margin:0; font-size:13.5pt; line-height:1.12; color:var(--bleu-fonce); font-weight:700;}
+.entete .sous{font-size:7pt; color:var(--gris); margin-top:1pt;}
+
+/* --------------------------- BANDEAUX ----------------------------- */
+.bandeau{
+  color:#fff; font-weight:700; font-size:9pt; letter-spacing:1pt;
+  padding:2.4pt 7pt; border-radius:2pt; margin:3pt 0 4pt; break-after:avoid; page-break-after:avoid;
+}
+.bandeau.bleu{background:var(--bleu);}
+.bandeau.vert{background:var(--vert);}
+
+/* --------------------------- COLONNES ----------------------------- */
+.cols{column-count:2; column-gap:7mm; column-fill:balance;}
+
+.cols.bal{column-fill:balance;}
+.bloc{margin-bottom:5pt;}
+.keep{break-inside:avoid; page-break-inside:avoid;}
+
+/* --------------------------- LECONS ------------------------------- */
+h2.lecon{
+  margin:0 0 3pt; font-size:8.6pt; font-weight:700; color:#fff; background:var(--bleu-fonce);
+  padding:1.8pt 5pt; border-radius:1.5pt; break-after:avoid; page-break-after:avoid;
+}
+h3.rub{
+  margin:3.5pt 0 1.5pt; font-size:8.2pt; font-weight:700; color:var(--vert-fonce);
+  border-bottom:.7pt solid var(--vert-bord); padding-bottom:.8pt;
+  break-after:avoid; page-break-after:avoid;
+}
+
+/* --------------------------- ENCADRES ----------------------------- */
+.form{
+  background:var(--bleu-pale); border:.8pt solid var(--bleu-bord); border-left:2.6pt solid var(--bleu);
+  border-radius:2pt; padding:2.4pt 5pt; margin:2.2pt 0 3.4pt;
+  break-inside:avoid; page-break-inside:avoid;
+}
+.form .t{
+  display:block; font-size:6.8pt; font-weight:700; letter-spacing:.6pt;
+  color:var(--bleu); margin-bottom:1.5pt;
+}
+.form .c{text-align:center; font-size:9.1pt; margin:1.6pt 0;}
+.note{background:var(--vert-pale); border-left:2.4pt solid var(--vert); padding:2.4pt 5pt; border-radius:1.5pt; margin:2.5pt 0 4pt; break-inside:avoid;}
+
+/* --------------------------- TABLEAUX ----------------------------- */
+table{width:100%; border-collapse:collapse; font-size:7.6pt; margin:2pt 0 4pt; break-inside:avoid;}
+th{background:var(--bleu); color:#fff; font-weight:700; text-align:left; padding:1.8pt 4pt; font-size:7.2pt;}
+td{border:.6pt solid var(--gris-clair); padding:1.8pt 4pt; vertical-align:top;}
+tr{break-inside:avoid;}
+table.var td{text-align:center; font-size:8pt;}
+table.var td.lab{text-align:left; font-weight:700; color:var(--bleu-fonce); background:var(--bleu-pale);}
+
+/* ----------------------------- PIEGES ----------------------------- */
+table.pieges th:first-child{width:44%;}
+table.pieges td:first-child{color:var(--rouge); background:#FDF1F0;}
+.x{font-weight:700;}
+.v{color:var(--vert-fonce); font-weight:700;}
+
+/* ---------------------------- RECAP ------------------------------- */
+ol.recap{margin:0; padding-left:0; list-style:none; counter-reset:r;}
+ol.recap li{
+  counter-increment:r; position:relative; padding-left:13pt; margin-bottom:1.8pt;
+  break-inside:avoid;
+}
+ol.recap li::before{
+  content:counter(r); position:absolute; left:0; top:.3pt;
+  width:10pt; height:10pt; border-radius:50%; background:var(--vert); color:#fff;
+  font-size:6.6pt; font-weight:700; text-align:center; line-height:10pt;
+}
+
+/* --------------------------- MATHS -------------------------------- */
+.m{font-family:Cambria,Georgia,"Times New Roman",serif;}
+i,var{font-family:Cambria,Georgia,"Times New Roman",serif; font-style:italic;}
+.op{font-family:Cambria,Georgia,"Times New Roman",serif; font-style:normal;}
+.f{display:inline-block; vertical-align:middle; text-align:center;
+   margin:0 .12em; line-height:1.06; font-family:Cambria,Georgia,"Times New Roman",serif;}
+.f>span{display:block; padding:0 .2em;}
+.f>span:first-child{border-bottom:.6pt solid currentColor; padding-bottom:.08em;}
+.f>span:last-child{padding-top:.04em;}
+.rad{border-top:.6pt solid currentColor; padding-top:.12em;}
+/* line-height:0 evite que l'exposant n'ecarte les lignes ; position:relative le
+   repositionne sans qu'il heurte la barre de fraction ni le trait du radical. */
+sup,sub{font-size:.68em; line-height:0; position:relative; vertical-align:baseline;}
+sup{top:-.42em;}
+sub{bottom:-.22em;}
+.pt{white-space:nowrap;}
+/* Les fleches n'ont qu'un glyphe atrophie dans la fonte serif : on les force
+   en sans-serif, ou elles sont franches meme a 8 pt. */
+.ar{font-family:"Segoe UI",Calibri,Arial,"DejaVu Sans",sans-serif; font-style:normal;}
+
+/* ------------------- PIEGES : blocs erreur / correction ------------- */
+.pg{font-size:8.1pt; border-left:2.4pt solid var(--rouge); background:#FDF1F0; border-radius:1.5pt;
+    padding:2pt 5pt; margin:0 0 2.8pt; break-inside:avoid; page-break-inside:avoid;}
+.pg .err{color:var(--rouge); font-weight:600;}
+.pg .cor{color:#1B1B1B; margin-top:.8pt;}
+.pg .cor b{color:var(--bleu-fonce);}
+.v{color:var(--vert-fonce); font-weight:700;}
+
+</style>
+</head>
+<body>
+<header class="entete">
+  <div class="num">5</div>
+  <div class="txt">
+    <div class="niveau">TERMINALE D &middot; MATHEMATIQUES</div>
+    <h1>Fonction exponentielle et fonctions puissances</h1>
+    <div class="sous">Leçon 1 : fonction exponentielle &middot; Leçon 2 : puissances réelles d'un réel strictement positif &middot; Leçon 3 : fonctions puissances et racines <i>n</i>-ièmes &middot; Leçon 4 : croissances comparées</div>
+  </div>
+</header>
+
+<div class="bandeau bleu" style="margin-top:0">L'ESSENTIEL</div>
+<div class="cols">
+
+<!-- ================= LECON 1 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 1&nbsp;: Fonction exponentielle</h2>
+<h3 class="rub">Définition</h3>
+<p><span class="op">ln</span> est continue, strictement croissante sur ]0&#8239;;&#8239;+&#8734;[, de limites &#8722;&#8734; en 0<sup>+</sup> et +&#8734; en +&#8734; : elle réalise une <b>bijection de ]0&#8239;;&#8239;+&#8734;[ sur &#8477;</b>. La <b>fonction exponentielle népérienne</b>, notée <span class="op">exp</span>, est sa <b>bijection réciproque</b> : définie sur <b>&#8477;</b>, à valeurs dans <b>]0&#8239;;&#8239;+&#8734;[</b>.</p></div>
+<div class="form">
+  <span class="t">EQUIVALENCE FONDAMENTALE&nbsp;: <i>x</i> REEL, <i>y</i>&#8239;&gt;&#8239;0</span>
+  <div class="c m"><i>y</i>&#8239;=&#8239;<span class="op">exp</span>(<i>x</i>)&nbsp;<span class="ar">&#8660;</span>&nbsp;<i>x</i>&#8239;=&#8239;<span class="op">ln</span>&#8239;<i>y</i></div>
+  <div class="c m"><span class="op">ln</span>(<span class="op">exp</span>&#8239;<i>x</i>)&#8239;=&#8239;<i>x</i>&nbsp;(<i>x</i>&#8239;&#8712;&#8239;&#8477;) &nbsp;&nbsp;&nbsp; <span class="op">exp</span>(<span class="op">ln</span>&#8239;<i>y</i>)&#8239;=&#8239;<i>y</i>&nbsp;(<i>y</i>&#8239;&gt;&#8239;0)</div>
+</div>
+<p>L'écriture <span class="pt"><i>x</i>&#8239;=&#8239;<span class="op">ln</span>&#8239;<i>y</i></span> exige <i>y</i>&#8239;&gt;&#8239;0, alors que <span class="pt"><i>y</i>&#8239;=&#8239;<span class="op">exp</span>(<i>x</i>)</span> n'exige rien de <i>x</i> : appliquer <span class="op">exp</span> ne perd aucune solution, appliquer <span class="op">ln</span> impose de vérifier une condition d'existence.</p>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Le nombre <span class="m"><span class="op">e</span></span> et la notation <span class="m"><span class="op">e</span><sup><i>x</i></sup></span></h3>
+<p>Comme <span class="op">ln e</span>&#8239;=&#8239;1, on a <span class="pt"><span class="op">exp</span>(1)&#8239;=&#8239;<span class="op">e</span>&#8239;&#8776;&#8239;2,718</span>. On convient de noter <span class="pt"><span class="op">exp</span>(<i>x</i>)&#8239;=&#8239;<span class="op">e</span><sup><i>x</i></sup></span>.</p>
+<ul>
+<li><span class="op">e</span><sup>0</sup>&#8239;=&#8239;1 et <span class="op">e</span><sup>1</sup>&#8239;=&#8239;<span class="op">e</span> ;</li>
+<li><span class="op">e</span><sup><i>x</i></sup>&#8239;&gt;&#8239;0 pour <b>tout</b> réel <i>x</i> : l'exponentielle ne s'annule jamais et n'est jamais négative.</li>
+</ul>
+<div class="form">
+  <span class="t">RELATION FONCTIONNELLE ET REGLES DE CALCUL&nbsp;: <i>a</i>, <i>b</i>, <i>r</i> REELS</span>
+  <div class="c m"><span class="op">e</span><sup><i>a</i>+<i>b</i></sup>&#8239;=&#8239;<span class="op">e</span><sup><i>a</i></sup>&#8239;&#215;&#8239;<span class="op">e</span><sup><i>b</i></sup></div>
+  <div class="c m"><span class="op">e</span><sup>&#8722;<i>b</i></sup>&#8239;=&#8239;<span class="f"><span>1</span><span><span class="op">e</span><sup><i>b</i></sup></span></span> &nbsp;&nbsp; <span class="op">e</span><sup><i>a</i>&#8722;<i>b</i></sup>&#8239;=&#8239;<span class="f"><span><span class="op">e</span><sup><i>a</i></sup></span><span><span class="op">e</span><sup><i>b</i></sup></span></span> &nbsp;&nbsp; (<span class="op">e</span><sup><i>a</i></sup>)<sup><i>r</i></sup>&#8239;=&#8239;<span class="op">e</span><sup><i>ra</i></sup></div>
+  <div class="c m"><span class="op">ln</span>(<span class="op">e</span><sup><i>a</i></sup>)&#8239;=&#8239;<i>a</i> &nbsp;&nbsp;&nbsp; <span class="op">e</span><sup><span class="op">ln</span>&#8239;<i>y</i></sup>&#8239;=&#8239;<i>y</i>&nbsp;(<i>y</i>&#8239;&gt;&#8239;0)</div>
+</div>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Equations et inéquations</h3>
+<div class="form">
+  <span class="t">STRICTE CROISSANCE DE exp&nbsp;: <i>A</i>, <i>B</i> REELS</span>
+  <div class="c m"><span class="op">e</span><sup><i>A</i></sup>&#8239;=&#8239;<span class="op">e</span><sup><i>B</i></sup>&nbsp;<span class="ar">&#8660;</span>&nbsp;<i>A</i>&#8239;=&#8239;<i>B</i> &nbsp;&nbsp;&nbsp; <span class="op">e</span><sup><i>A</i></sup>&#8239;&lt;&#8239;<span class="op">e</span><sup><i>B</i></sup>&nbsp;<span class="ar">&#8660;</span>&nbsp;<i>A</i>&#8239;&lt;&#8239;<i>B</i></div>
+  <div class="c m"><span class="op">e</span><sup><i>A</i></sup>&#8239;=&#8239;<i>k</i> : aucune solution si <i>k</i>&#8239;&#8804;&#8239;0 ; solution unique <i>A</i>&#8239;=&#8239;<span class="op">ln</span>&#8239;<i>k</i> si <i>k</i>&#8239;&gt;&#8239;0</div>
+</div>
+<p>Sens de l'inégalité <b>conservé</b>. Si l'inconnue figure dans <span class="op">e</span><sup>2<i>x</i></sup> et <span class="op">e</span><sup><i>x</i></sup>, poser <span class="pt"><i>X</i>&#8239;=&#8239;<span class="op">e</span><sup><i>x</i></sup>&#8239;&gt;&#8239;0</span>, résoudre en <i>X</i>, puis écarter les valeurs <span class="pt">&#8804;&#8239;0</span>.</p>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Dérivée et sens de variation</h3>
+<div class="form">
+  <span class="t">DERIVEES&nbsp;: <i>u</i> DERIVABLE SUR UN INTERVALLE <i>I</i></span>
+  <div class="c m">(<span class="op">e</span><sup><i>x</i></sup>)&#8242;&#8239;=&#8239;<span class="op">e</span><sup><i>x</i></sup> &nbsp;&nbsp;&nbsp; (<span class="op">e</span><sup><i>u</i></sup>)&#8242;&#8239;=&#8239;<i>u</i>&#8242;&#8239;<span class="op">e</span><sup><i>u</i></sup></div>
+</div>
+<p><span class="op">exp</span> est dérivable sur &#8477; (admis), donc <b>continue</b> ; comme <span class="op">e</span><sup><i>x</i></sup>&#8239;&gt;&#8239;0, elle est <b>strictement croissante</b>. Pour <span class="op">e</span><sup><i>u</i></sup> : <b>recopier</b> l'exponentielle, <b>multiplier</b> par <i>u</i>&#8242;, sans toucher à l'exposant. Dans un produit <span class="pt"><i>P</i>(<i>x</i>)&#8239;<span class="op">e</span><sup><i>u</i>(<i>x</i>)</sup></span>, mettre <span class="op">e</span><sup><i>u</i></sup>&#8239;&gt;&#8239;0 <b>en facteur</b> : le signe est celui du facteur restant.</p>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Limites, tangentes et courbe</h3>
+<ul>
+<li><span class="pt">lim<sub><i>x</i><span class="ar">&#8594;</span>+&#8734;</sub>&#8239;<span class="op">e</span><sup><i>x</i></sup>&#8239;=&#8239;+&#8734;</span> &nbsp;&middot;&nbsp; <span class="pt">lim<sub><i>x</i><span class="ar">&#8594;</span>&#8722;&#8734;</sub>&#8239;<span class="op">e</span><sup><i>x</i></sup>&#8239;=&#8239;0<sup>+</sup></span> : l'<b>axe des abscisses est asymptote horizontale</b> en &#8722;&#8734;, la courbe restant strictement au-dessus.</li>
+<li>Près de 0 : <span class="pt"><span class="op">e</span><sup><i>x</i></sup>&#8239;&#8776;&#8239;1&#8239;+&#8239;<i>x</i></span>, c'est-à-dire <span class="pt">lim<sub><i>u</i><span class="ar">&#8594;</span>0</sub>&#8239;<span class="f"><span><span class="op">e</span><sup><i>u</i></sup>&#8239;&#8722;&#8239;1</span><span><i>u</i></span></span>&#8239;=&#8239;1</span> (nombre dérivé de <span class="op">exp</span> en 0).</li>
+<li><b>Tangentes</b> : en B(0&#8239;;&#8239;1), <i>y</i>&#8239;=&#8239;<i>x</i>&#8239;+&#8239;1 ; en A(1&#8239;;&#8239;<span class="op">e</span>), <i>y</i>&#8239;=&#8239;<span class="op">e</span>&#8239;<i>x</i> (elle passe par l'origine). Pour tout réel <i>x</i>, <span class="pt"><span class="op">e</span><sup><i>x</i></sup>&#8239;&#8805;&#8239;1&#8239;+&#8239;<i>x</i></span> : la courbe est au-dessus de sa tangente en B.</li>
+<li>En +&#8734;, <span class="pt"><span class="f"><span><span class="op">e</span><sup><i>x</i></sup></span><span><i>x</i></span></span>&#8239;<span class="ar">&#8594;</span>&#8239;+&#8734;</span> : <b>branche parabolique de direction (O<i>y</i>)</b>. Les courbes de <span class="op">exp</span> et de <span class="op">ln</span> sont <b>symétriques par rapport à la droite <i>y</i>&#8239;=&#8239;<i>x</i></b>.</li>
+</ul>
+<table class="var">
+<tr><td class="lab"><i>x</i></td><td>&#8722;&#8734;</td><td>0</td><td>1</td><td>+&#8734;</td></tr>
+<tr><td class="lab">signe de (<span class="op">e</span><sup><i>x</i></sup>)&#8242;</td><td colspan="4">+ &nbsp;&nbsp; (partout sur &#8477;)</td></tr>
+<tr><td class="lab"><span class="op">e</span><sup><i>x</i></sup></td><td>0<sup>+</sup></td><td><span class="ar">&#8599;</span>&#8239;1</td><td><span class="ar">&#8599;</span>&#8239;<span class="op">e</span></td><td><span class="ar">&#8599;</span>&#8239;+&#8734;</td></tr>
+</table>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Modéliser une croissance ou une décroissance</h3>
+<div class="form">
+  <span class="t">MODELE EXPONENTIEL&nbsp;: <i>N</i><sub>0</sub>&#8239;&gt;&#8239;0 VALEUR INITIALE, <i>k</i>&#8239;&#8800;&#8239;0</span>
+  <div class="c m"><i>N</i>(<i>t</i>)&#8239;=&#8239;<i>N</i><sub>0</sub>&#8239;<span class="op">e</span><sup><i>kt</i></sup>&nbsp;&nbsp;avec&nbsp;<i>N</i>(0)&#8239;=&#8239;<i>N</i><sub>0</sub></div>
+</div>
+<ul>
+<li><i>k</i>&#8239;&gt;&#8239;0 : <b>croissance</b>, <span class="pt">lim<sub><i>t</i><span class="ar">&#8594;</span>+&#8734;</sub>&#8239;<i>N</i>(<i>t</i>)&#8239;=&#8239;+&#8734;</span> &nbsp;&middot;&nbsp; <i>k</i>&#8239;&lt;&#8239;0 : <b>décroissance</b>, <span class="pt">lim<sub><i>t</i><span class="ar">&#8594;</span>+&#8734;</sub>&#8239;<i>N</i>(<i>t</i>)&#8239;=&#8239;0<sup>+</sup></span>, asymptote <i>y</i>&#8239;=&#8239;0.</li>
+<li><b>Temps de doublement</b> (<i>k</i>&#8239;&gt;&#8239;0) : <i>T</i> tel que <span class="pt"><i>N</i>(<i>T</i>)&#8239;=&#8239;2<i>N</i><sub>0</sub></span> &nbsp;&middot;&nbsp; <b>demi-vie</b> (<i>k</i>&#8239;&lt;&#8239;0) : <i>T</i> tel que <span class="pt"><i>N</i>(<i>T</i>)&#8239;=&#8239;<span class="f"><span><i>N</i><sub>0</sub></span><span>2</span></span></span>. Dans les deux cas, <i>T</i> <b>ne dépend pas de <i>N</i><sub>0</sub></b>.</li>
+<li>Valeur limite non nulle : <span class="pt"><i>T</i>(<i>t</i>)&#8239;=&#8239;<i>T</i><sub>air</sub>&#8239;+&#8239;<i>A</i>&#8239;<span class="op">e</span><sup><i>kt</i></sup></span> (<i>k</i>&#8239;&lt;&#8239;0, refroidissement) : la limite est <i>T</i><sub>air</sub>, ordonnée de l'asymptote.</li>
+</ul>
+<div class="note">Traduire la question par une <b>équation</b>, <b>diviser par <i>N</i><sub>0</sub></b> non nul, appliquer <span class="op">ln</span>, résoudre en <i>t</i>, conclure avec l'unité : une durée doit être positive.</div>
+</div>
+
+<!-- ================= LECON 2 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 2&nbsp;: Puissances réelles d'un réel strictement positif</h2>
+<div class="form">
+  <span class="t">DEFINITION&nbsp;: <i>a</i>&#8239;&gt;&#8239;0 ET <i>b</i> REEL QUELCONQUE</span>
+  <div class="c m"><i>a</i><sup><i>b</i></sup>&#8239;=&#8239;<span class="op">e</span><sup><i>b</i>&#8239;<span class="op">ln</span>&#8239;<i>a</i></sup></div>
+</div></div>
+<p>Cette définition <b>prolonge</b> les puissances entières et conserve <span class="pt"><span class="op">ln</span>(<i>a</i><sup><i>b</i></sup>)&#8239;=&#8239;<i>b</i>&#8239;<span class="op">ln</span>&#8239;<i>a</i></span> pour tout réel <i>b</i>. La condition <b><i>a</i>&#8239;&gt;&#8239;0</b> est une nécessité : sans elle, <span class="op">ln</span>&#8239;<i>a</i> n'existe pas. <b>Conséquences</b> : <i>a</i><sup><i>b</i></sup>&#8239;&gt;&#8239;0 toujours ; <i>a</i><sup>0</sup>&#8239;=&#8239;1 ; <i>a</i><sup>1</sup>&#8239;=&#8239;<i>a</i> ; 1<sup><i>b</i></sup>&#8239;=&#8239;1 pour tout réel <i>b</i> ; <span class="pt"><span class="op">e</span><sup><i>b</i>&#8239;<span class="op">ln</span>&#8239;<span class="op">e</span></sup>&#8239;=&#8239;<span class="op">e</span><sup><i>b</i></sup></span>, la notation est cohérente.</p>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Règles de calcul</h3>
+<div class="form">
+  <span class="t">POUR <i>a</i>&#8239;&gt;&#8239;0, <i>a</i>&#8242;&#8239;&gt;&#8239;0 ET <i>b</i>, <i>c</i> REELS</span>
+  <div class="c m"><i>a</i><sup><i>b</i></sup>&#8239;&#215;&#8239;<i>a</i><sup><i>c</i></sup>&#8239;=&#8239;<i>a</i><sup><i>b</i>+<i>c</i></sup> &nbsp;&nbsp; <span class="f"><span><i>a</i><sup><i>b</i></sup></span><span><i>a</i><sup><i>c</i></sup></span></span>&#8239;=&#8239;<i>a</i><sup><i>b</i>&#8722;<i>c</i></sup> &nbsp;&nbsp; <i>a</i><sup>&#8722;<i>b</i></sup>&#8239;=&#8239;<span class="f"><span>1</span><span><i>a</i><sup><i>b</i></sup></span></span></div>
+  <div class="c m">(<i>a</i><sup><i>b</i></sup>)<sup><i>c</i></sup>&#8239;=&#8239;<i>a</i><sup><i>bc</i></sup> &nbsp;&nbsp; (<i>a</i>&#8239;<i>a</i>&#8242;)<sup><i>b</i></sup>&#8239;=&#8239;<i>a</i><sup><i>b</i></sup>&#8239;<i>a</i>&#8242;<sup><i>b</i></sup> &nbsp;&nbsp; (<span class="f"><span><i>a</i></span><span><i>a</i>&#8242;</span></span>)<sup><i>b</i></sup>&#8239;=&#8239;<span class="f"><span><i>a</i><sup><i>b</i></sup></span><span><i>a</i>&#8242;<sup><i>b</i></sup></span></span></div>
+  <div class="c m"><span class="op">ln</span>(<i>a</i><sup><i>b</i></sup>)&#8239;=&#8239;<i>b</i>&#8239;<span class="op">ln</span>&#8239;<i>a</i> &nbsp;&nbsp;&nbsp; <i>a</i><sup>1/<i>n</i></sup>&#8239;=&#8239;<sup><i>n</i></sup>&#8730;<span class="rad"><i>a</i></span>&nbsp;(<i>n</i> entier &#8805;&#8239;1)</div>
+</div>
+<p>Toutes se démontrent depuis la définition, par exemple <span class="pt"><i>a</i><sup><i>b</i></sup>&#8239;&#215;&#8239;<i>a</i><sup><i>c</i></sup>&#8239;=&#8239;<span class="op">e</span><sup>(<i>b</i>+<i>c</i>)&#8239;<span class="op">ln</span>&#8239;<i>a</i></sup></span> : ce sont les règles des puissances entières, valables pour <b>tout exposant réel</b>. Pour calculer, écrire la base comme puissance d'un nombre plus petit : 8&#8239;=&#8239;2<sup>3</sup>, 27&#8239;=&#8239;3<sup>3</sup>, 81&#8239;=&#8239;3<sup>4</sup>.</p>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Fonction exponentielle de base <span class="m"><i>a</i></span></h3>
+<p>Pour <i>a</i>&#8239;&gt;&#8239;0 fixé, <span class="pt"><i>x</i>&#8239;<span class="ar">&#8614;</span>&#8239;<i>a</i><sup><i>x</i></sup>&#8239;=&#8239;<span class="op">e</span><sup><i>x</i>&#8239;<span class="op">ln</span>&#8239;<i>a</i></sup></span> est définie et dérivable sur &#8477;, à valeurs strictement positives.</p>
+<div class="form">
+  <span class="t">DERIVEE DE LA FONCTION <i>x</i> <span class="ar">&#8614;</span> <i>a</i><sup><i>x</i></sup></span>
+  <div class="c m">(<i>a</i><sup><i>x</i></sup>)&#8242;&#8239;=&#8239;(<span class="op">ln</span>&#8239;<i>a</i>)&#8239;<i>a</i><sup><i>x</i></sup></div>
+</div>
+<p>Comme <i>a</i><sup><i>x</i></sup>&#8239;&gt;&#8239;0, le signe de la dérivée est celui de <span class="op">ln</span>&#8239;<i>a</i> :</p>
+<ul>
+<li><i>a</i>&#8239;&gt;&#8239;1 : strictement <b>croissante</b>, de limite 0 en &#8722;&#8734; et +&#8734; en +&#8734; ;</li>
+<li><i>a</i>&#8239;=&#8239;1 : fonction <b>constante</b> égale à 1 ;</li>
+<li>0&#8239;&lt;&#8239;<i>a</i>&#8239;&lt;&#8239;1 : strictement <b>décroissante</b>, de limite +&#8734; en &#8722;&#8734; et 0 en +&#8734;.</li>
+<li>Toutes ces courbes passent par le point (0&#8239;;&#8239;1).</li>
+</ul>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Evolutions en pourcentage</h3>
+<p>Une hausse de <i>p</i>&#8239;% par période a pour coefficient <span class="pt">1&#8239;+&#8239;<span class="f"><span><i>p</i></span><span>100</span></span></span> : après <i>t</i> périodes, <span class="pt"><i>P</i>(<i>t</i>)&#8239;=&#8239;<i>P</i><sub>0</sub>&#8239;(1&#8239;+&#8239;<span class="f"><span><i>p</i></span><span>100</span></span>)<sup><i>t</i></sup></span> ; une perte de 20&#8239;% suit <span class="pt"><i>V</i><sub>0</sub>&#8239;(0,8)<sup><i>t</i></sup></span>. Les écritures <i>a</i><sup><i>t</i></sup> et <span class="op">e</span><sup><i>kt</i></sup> décrivent le même phénomène, avec <span class="pt"><i>k</i>&#8239;=&#8239;<span class="op">ln</span>&#8239;<i>a</i></span> : <i>a</i>&#8239;&gt;&#8239;1 <span class="ar">&#8660;</span> <i>k</i>&#8239;&gt;&#8239;0.</p>
+<div class="form">
+  <span class="t">RESOUDRE <i>a</i><sup><i>t</i></sup>&#8239;=&#8239;<i>k</i>&nbsp;: <i>a</i>&#8239;&gt;&#8239;0, <i>a</i>&#8239;&#8800;&#8239;1, <i>k</i>&#8239;&gt;&#8239;0</span>
+  <div class="c m"><i>t</i>&#8239;=&#8239;<span class="f"><span><span class="op">ln</span>&#8239;<i>k</i></span><span><span class="op">ln</span>&#8239;<i>a</i></span></span></div>
+</div>
+<p>Appliquer <span class="op">ln</span> fait descendre l'inconnue de l'exposant. Pour une <b>inéquation</b>, la division par <span class="op">ln</span>&#8239;<i>a</i> <b>change le sens</b> lorsque 0&#8239;&lt;&#8239;<i>a</i>&#8239;&lt;&#8239;1, car <span class="op">ln</span>&#8239;<i>a</i> est alors négatif.</p>
+</div>
+
+<!-- ================= LECON 3 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 3&nbsp;: Fonctions puissances et racines <i>n</i>-ièmes</h2>
+<div class="form">
+  <span class="t">FONCTION PUISSANCE&nbsp;: &#945; REEL FIXE, SUR ]0&#8239;;&#8239;+&#8734;[</span>
+  <div class="c m"><i>x</i><sup>&#945;</sup>&#8239;=&#8239;<span class="op">e</span><sup>&#945;&#8239;<span class="op">ln</span>&#8239;<i>x</i></sup> &nbsp;&nbsp;&nbsp; (<i>x</i><sup>&#945;</sup>)&#8242;&#8239;=&#8239;&#945;&#8239;<i>x</i><sup>&#945;&#8722;1</sup></div>
+</div></div>
+<p>Elle se déduit de <span class="pt">(<span class="op">e</span><sup><i>u</i></sup>)&#8242;&#8239;=&#8239;<i>u</i>&#8242;<span class="op">e</span><sup><i>u</i></sup></span> avec <span class="pt"><i>u</i>(<i>x</i>)&#8239;=&#8239;&#945;&#8239;<span class="op">ln</span>&#8239;<i>x</i></span>, et prolonge à tout exposant réel la formule de première : <span class="pt">(&#8730;<span class="rad"><i>x</i></span>)&#8242;&#8239;=&#8239;<span class="f"><span>1</span><span>2</span></span>&#8239;<i>x</i><sup>&#8722;1/2</sup>&#8239;=&#8239;<span class="f"><span>1</span><span>2&#8730;<span class="rad"><i>x</i></span></span></span></span>. Se placer d'abord sur ]0&#8239;;&#8239;+&#8734;[.</p>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Sens de variation et allure</h3>
+<p>Sur ]0&#8239;;&#8239;+&#8734;[, <i>x</i><sup>&#945;&#8722;1</sup>&#8239;&gt;&#8239;0 : le signe de <span class="pt">&#945;&#8239;<i>x</i><sup>&#945;&#8722;1</sup></span> est celui de &#945;.</p>
+<ul>
+<li>&#945;&#8239;&gt;&#8239;0 : strictement <b>croissante</b>, <span class="pt">lim<sub><i>x</i><span class="ar">&#8594;</span>0<sup>+</sup></sub>&#8239;<i>x</i><sup>&#945;</sup>&#8239;=&#8239;0</span> et <span class="pt">lim<sub><i>x</i><span class="ar">&#8594;</span>+&#8734;</sub>&#8239;<i>x</i><sup>&#945;</sup>&#8239;=&#8239;+&#8734;</span> ;</li>
+<li>&#945;&#8239;&lt;&#8239;0 : strictement <b>décroissante</b>, <span class="pt">lim<sub><i>x</i><span class="ar">&#8594;</span>0<sup>+</sup></sub>&#8239;<i>x</i><sup>&#945;</sup>&#8239;=&#8239;+&#8734;</span> et <span class="pt">lim<sub><i>x</i><span class="ar">&#8594;</span>+&#8734;</sub>&#8239;<i>x</i><sup>&#945;</sup>&#8239;=&#8239;0</span> : les <b>deux axes sont asymptotes</b> ;</li>
+<li>&#945;&#8239;=&#8239;0 : fonction <b>constante</b> égale à 1, droite <i>y</i>&#8239;=&#8239;1. Toutes ces courbes passent par (1&#8239;;&#8239;1).</li>
+</ul>
+<table>
+<tr><th>&#945;&#8239;&gt;&#8239;1</th><th>&#945;&#8239;=&#8239;1</th><th>0&#8239;&lt;&#8239;&#945;&#8239;&lt;&#8239;1</th><th>&#945;&#8239;&lt;&#8239;0</th></tr>
+<tr>
+<td>type <span class="m"><i>x</i><sup>2</sup></span> : croissance accélérée</td>
+<td>droite <span class="m"><i>y</i>&#8239;=&#8239;<i>x</i></span></td>
+<td>type <span class="m">&#8730;<span class="rad"><i>x</i></span></span> : croissance ralentie</td>
+<td>type <span class="m"><span class="f"><span>1</span><span><i>x</i></span></span></span> : deux asymptotes</td>
+</tr>
+</table>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Racine <span class="m"><i>n</i></span>-ième</h3>
+<p>Pour <i>n</i> entier &#8805;&#8239;1, <span class="pt"><i>x</i>&#8239;<span class="ar">&#8614;</span>&#8239;<i>x</i><sup><i>n</i></sup></span> est continue et strictement croissante de [0&#8239;;&#8239;+&#8734;[ sur [0&#8239;;&#8239;+&#8734;[ : c'est une <b>bijection</b>, de réciproque la <b>racine <i>n</i>-ième</b>.</p>
+<div class="form">
+  <span class="t">RACINE <i>n</i>-IEME&nbsp;: <i>x</i>&#8239;&#8805;&#8239;0, <i>y</i>&#8239;&#8805;&#8239;0</span>
+  <div class="c m"><i>y</i>&#8239;=&#8239;<sup><i>n</i></sup>&#8730;<span class="rad"><i>x</i></span>&nbsp;<span class="ar">&#8660;</span>&nbsp;<i>x</i>&#8239;=&#8239;<i>y</i><sup><i>n</i></sup> &nbsp;&nbsp;&nbsp; <sup><i>n</i></sup>&#8730;<span class="rad"><i>x</i></span>&#8239;=&#8239;<i>x</i><sup>1/<i>n</i></sup>&nbsp;(<i>x</i>&#8239;&gt;&#8239;0)</div>
+  <div class="c m"><i>x</i><sup><i>n</i></sup>&#8239;=&#8239;<i>k</i>&nbsp;(<i>k</i>&#8239;&gt;&#8239;0)&nbsp;<span class="ar">&#8660;</span>&nbsp;<i>x</i>&#8239;=&#8239;<sup><i>n</i></sup>&#8730;<span class="rad"><i>k</i></span>&#8239;=&#8239;<i>k</i><sup>1/<i>n</i></sup></div>
+</div>
+<p>En particulier <sup>2</sup>&#8730;<span class="rad"><i>x</i></span>&#8239;=&#8239;&#8730;<span class="rad"><i>x</i></span>. Les courbes de <span class="pt"><i>x</i>&#8239;<span class="ar">&#8614;</span>&#8239;<i>x</i><sup><i>n</i></sup></span> et de <span class="pt"><i>x</i>&#8239;<span class="ar">&#8614;</span>&#8239;<sup><i>n</i></sup>&#8730;<span class="rad"><i>x</i></span></span> sont <b>symétriques par rapport à <i>y</i>&#8239;=&#8239;<i>x</i></b> ; <span class="pt"><i>x</i><sup><i>n</i></sup>&#8239;=&#8239;<i>k</i></span> a une solution <b>unique</b> dans ]0&#8239;;&#8239;+&#8734;[ : valeur exacte d'abord, approximation ensuite.</p>
+</div>
+
+<!-- ================= LECON 4 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 4&nbsp;: Croissances comparées</h2>
+<div class="form">
+  <span class="t">CROISSANCES COMPAREES&nbsp;: POUR TOUT REEL &#945;&#8239;&gt;&#8239;0</span>
+  <div class="c m"><span class="pt">lim<sub><i>x</i><span class="ar">&#8594;</span>+&#8734;</sub>&#8239;<span class="f"><span><span class="op">e</span><sup><i>x</i></sup></span><span><i>x</i><sup>&#945;</sup></span></span>&#8239;=&#8239;+&#8734;</span> &nbsp;&nbsp; <span class="pt">lim<sub><i>x</i><span class="ar">&#8594;</span>+&#8734;</sub>&#8239;<span class="f"><span><span class="op">ln</span>&#8239;<i>x</i></span><span><i>x</i><sup>&#945;</sup></span></span>&#8239;=&#8239;0</span></div>
+  <div class="c m"><span class="pt">lim<sub><i>x</i><span class="ar">&#8594;</span>0<sup>+</sup></sub>&#8239;<i>x</i><sup>&#945;</sup>&#8239;<span class="op">ln</span>&#8239;<i>x</i>&#8239;=&#8239;0</span> &nbsp;&nbsp; <span class="pt">lim<sub><i>x</i><span class="ar">&#8594;</span>&#8722;&#8734;</sub>&#8239;<i>x</i><sup><i>n</i></sup>&#8239;<span class="op">e</span><sup><i>x</i></sup>&#8239;=&#8239;0</span>&nbsp;(<i>n</i> entier &#8805;&#8239;1)</div>
+</div></div>
+<p>A l'infini, <b>l'exponentielle l'emporte sur les puissances, et les puissances sur le logarithme</b> ; un exposant plus grand ne change que le <b>moment</b> du croisement.</p>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Formes indéterminées</h3>
+<p>Les formes <span class="pt"><span class="f"><span>&#8734;</span><span>&#8734;</span></span></span>, <span class="pt">0&#8239;&#215;&#8239;&#8734;</span> et <span class="pt">&#8734;&#8239;&#8722;&#8239;&#8734;</span> sont <b>indéterminées</b> : il faut <b>transformer l'écriture</b>. Limites de référence :</p>
+<ul>
+<li><span class="pt">lim<sub><i>x</i><span class="ar">&#8594;</span>+&#8734;</sub>&#8239;<span class="f"><span><i>x</i><sup>&#945;</sup></span><span><span class="op">e</span><sup><i>x</i></sup></span></span>&#8239;=&#8239;0</span> et <span class="pt">lim<sub><i>x</i><span class="ar">&#8594;</span>+&#8734;</sub>&#8239;<i>x</i><sup>&#945;</sup>&#8239;<span class="op">e</span><sup>&#8722;<i>x</i></sup>&#8239;=&#8239;0</span> ;</li>
+<li><span class="pt">lim<sub><i>x</i><span class="ar">&#8594;</span>+&#8734;</sub>&#8239;(<i>x</i>&#8239;&#8722;&#8239;<span class="op">ln</span>&#8239;<i>x</i>)&#8239;=&#8239;+&#8734;</span> et <span class="pt">lim<sub><i>x</i><span class="ar">&#8594;</span>+&#8734;</sub>&#8239;(<span class="op">e</span><sup><i>x</i></sup>&#8239;&#8722;&#8239;<i>x</i><sup><i>n</i></sup>)&#8239;=&#8239;+&#8734;</span>, après factorisation ;</li>
+<li><span class="pt">lim<sub><i>u</i><span class="ar">&#8594;</span>0</sub>&#8239;<span class="f"><span><span class="op">e</span><sup><i>u</i></sup>&#8239;&#8722;&#8239;1</span><span><i>u</i></span></span>&#8239;=&#8239;1</span>, d'où <span class="pt">lim<sub><i>x</i><span class="ar">&#8594;</span>0</sub>&#8239;<span class="f"><span><span class="op">e</span><sup>3<i>x</i></sup>&#8239;&#8722;&#8239;1</span><span><i>x</i></span></span>&#8239;=&#8239;3</span> en posant <i>u</i>&#8239;=&#8239;3<i>x</i>.</li>
+</ul>
+<div class="note"><b>Méthode.</b> Nommer la forme obtenue, repérer le terme dominant selon la hiérarchie exponentielle, puissances, logarithme, puis le <b>mettre en facteur</b> pour faire apparaître un quotient de référence : <span class="pt"><span class="op">e</span><sup><i>x</i></sup>&#8239;&#8722;&#8239;<i>x</i><sup>10</sup>&#8239;=&#8239;<span class="op">e</span><sup><i>x</i></sup>(1&#8239;&#8722;&#8239;<span class="f"><span><i>x</i><sup>10</sup></span><span><span class="op">e</span><sup><i>x</i></sup></span></span>)&#8239;<span class="ar">&#8594;</span>&#8239;+&#8734;</span>.</div>
+</div>
+
+</div>
+
+<div class="bandeau vert">PIEGES ET ERREURS FREQUENTES</div>
+<div class="cols">
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> <span class="op">e</span><sup>2+3</sup>&#8239;=&#8239;<span class="op">e</span><sup>2</sup>&#8239;+&#8239;<span class="op">e</span><sup>3</sup> &nbsp;&middot;&nbsp; <span class="op">e</span><sup>2<i>x</i></sup>&#8239;=&#8239;2<span class="op">e</span><sup><i>x</i></sup> &nbsp;&middot;&nbsp; <span class="pt"><span class="f"><span>1</span><span><span class="op">e</span><sup><i>x</i></sup></span></span>&#8239;=&#8239;&#8722;<span class="op">e</span><sup><i>x</i></sup></span></div><div class="cor"><span class="v">&#10003;</span> L'exponentielle change la <b>somme en produit</b> : <span class="pt"><span class="op">e</span><sup>2+3</sup>&#8239;=&#8239;<span class="op">e</span><sup>2</sup>&#8239;&#215;&#8239;<span class="op">e</span><sup>3</sup>&#8239;=&#8239;<span class="op">e</span><sup>5</sup></span>, alors que <span class="pt"><span class="op">e</span><sup>0</sup>&#8239;+&#8239;<span class="op">e</span><sup>0</sup>&#8239;=&#8239;2</span> et <span class="pt"><span class="op">e</span><sup>0+0</sup>&#8239;=&#8239;1</span>. Et <span class="pt"><span class="op">e</span><sup>2<i>x</i></sup>&#8239;=&#8239;(<span class="op">e</span><sup><i>x</i></sup>)<sup>2</sup></span>, <span class="pt"><span class="f"><span>1</span><span><span class="op">e</span><sup><i>x</i></sup></span></span>&#8239;=&#8239;<span class="op">e</span><sup>&#8722;<i>x</i></sup></span>.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> <span class="pt">(1&#8239;+&#8239;<i>x</i>)<span class="op">e</span><sup><i>x</i></sup>&#8239;=&#8239;0</span> pour <i>x</i>&#8239;=&#8239;&#8722;1 ou <span class="op">e</span><sup><i>x</i></sup>&#8239;=&#8239;0</div><div class="cor"><span class="v">&#10003;</span> <span class="pt"><span class="op">e</span><sup><i>x</i></sup>&#8239;=&#8239;0</span> n'a <b>aucune</b> solution, car <span class="op">e</span><sup><i>x</i></sup>&#8239;&gt;&#8239;0 : la seule solution est <i>x</i>&#8239;=&#8239;&#8722;1. Un facteur <span class="op">e</span><sup><i>u</i></sup> <b>ne change jamais un signe</b> et ne s'annule jamais ; une somme comme <span class="pt"><span class="op">e</span><sup><i>x</i></sup>&#8239;+&#8239;<i>x</i></span> ne se factorise pas.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> <span class="pt"><i>x</i>&#8239;<span class="ar">&#8614;</span>&#8239;2<sup><i>x</i></sup></span> et <span class="pt"><i>x</i>&#8239;<span class="ar">&#8614;</span>&#8239;<i>x</i><sup>2</sup></span>, c'est pareil &nbsp;&middot;&nbsp; <span class="pt">(2<sup><i>x</i></sup>)&#8242;&#8239;=&#8239;<i>x</i>&#8239;2<sup><i>x</i>&#8722;1</sup></span></div><div class="cor"><span class="v">&#10003;</span> Dans 2<sup><i>x</i></sup> la variable est en <b>exposant</b>, dans <i>x</i><sup>2</sup> en <b>base</b> : <span class="pt">2<sup>10</sup>&#8239;=&#8239;1024</span> contre <span class="pt">10<sup>2</sup>&#8239;=&#8239;100</span>. Les dérivées diffèrent : <span class="pt">(2<sup><i>x</i></sup>)&#8242;&#8239;=&#8239;(<span class="op">ln</span>&#8239;2)&#8239;2<sup><i>x</i></sup></span> mais <span class="pt">(<i>x</i><sup><i>a</i></sup>)&#8242;&#8239;=&#8239;<i>a</i>&#8239;<i>x</i><sup><i>a</i>&#8722;1</sup></span>.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> <i>x</i><sup>0,7</sup> est définie pour tout réel <i>x</i> &nbsp;&middot;&nbsp; <span class="pt">(&#8722;8)<sup>1/3</sup>&#8239;=&#8239;&#8722;2</span></div><div class="cor"><span class="v">&#10003;</span> <span class="pt"><i>x</i><sup>&#945;</sup>&#8239;=&#8239;<span class="op">e</span><sup>&#945;&#8239;<span class="op">ln</span>&#8239;<i>x</i></sup></span> exige <b><i>x</i>&#8239;&gt;&#8239;0</b> : (&#8722;3)<sup>0,5</sup>, 0<sup>&#8722;2</sup> et (&#8722;8)<sup>1/3</sup> n'ont pas de sens. Seuls les exposants <b>entiers</b> y échappent : <span class="pt"><i>x</i>&#8239;<span class="ar">&#8614;</span>&#8239;<i>x</i><sup>3</sup></span> est définie sur &#8477;.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> <span class="pt">lim<sub><i>x</i><span class="ar">&#8594;</span>+&#8734;</sub>&#8239;<span class="f"><span><span class="op">e</span><sup><i>x</i></sup></span><span><i>x</i><sup>5</sup></span></span></span> est une forme <span class="pt"><span class="f"><span>&#8734;</span><span>&#8734;</span></span></span>, donc elle vaut 1 &nbsp;&middot;&nbsp; <span class="pt"><span class="f"><span><span class="op">e</span><sup><i>x</i></sup></span><span><i>x</i><sup>100</sup></span></span>&#8239;<span class="ar">&#8594;</span>&#8239;0</span></div><div class="cor"><span class="v">&#10003;</span> Une forme indéterminée n'a <b>aucune valeur automatique</b>. Par croissance comparée, l'exponentielle l'emporte sur <b>toute</b> puissance, même <i>x</i><sup>100</sup> : les deux limites valent +&#8734;.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> L'exponentielle est toujours plus grande que toute puissance</div><div class="cor"><span class="v">&#10003;</span> Faux <b>au début</b> : sur [2&#8239;;&#8239;4], <i>x</i><sup>3</sup> dépasse <span class="op">e</span><sup><i>x</i></sup> (en <i>x</i>&#8239;=&#8239;3 : 27 contre <span class="op">e</span><sup>3</sup>&#8239;&#8776;&#8239;20,1). La croissance comparée ne parle que de l'<b>infini</b> : l'exponentielle <b>finit par</b> dépasser toute puissance.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> +6&#8239;% par an pendant dix ans, donc +60&#8239;% &nbsp;&middot;&nbsp; <span class="pt">0,9<sup><i>t</i></sup>&#8239;&lt;&#8239;0,5</span> donne <span class="pt"><i>t</i>&#8239;&lt;&#8239;<span class="f"><span><span class="op">ln</span>&#8239;0,5</span><span><span class="op">ln</span>&#8239;0,9</span></span></span></div><div class="cor"><span class="v">&#10003;</span> Les pourcentages se <b>multiplient</b> : le coefficient est (1,06)<sup>10</sup>, soit environ +79&#8239;%. Et <span class="op">ln</span>&#8239;0,9 est <b>négatif</b> : la division retourne l'inégalité, donc <span class="pt"><i>t</i>&#8239;&gt;&#8239;<span class="f"><span><span class="op">ln</span>&#8239;0,5</span><span><span class="op">ln</span>&#8239;0,9</span></span></span>.</div></div>
+
+</div>
+
+<div class="bandeau bleu">A SAVOIR PAR COEUR AVANT LE DEVOIR</div>
+<div class="cols">
+<ol class="recap">
+<li><span class="op">exp</span> est la <b>réciproque de <span class="op">ln</span></b> : <span class="pt"><i>y</i>&#8239;=&#8239;<span class="op">e</span><sup><i>x</i></sup>&#8239;<span class="ar">&#8660;</span>&#8239;<i>x</i>&#8239;=&#8239;<span class="op">ln</span>&#8239;<i>y</i></span> (<i>y</i>&#8239;&gt;&#8239;0) ; <span class="op">e</span><sup>0</sup>&#8239;=&#8239;1, <span class="op">e</span><sup><i>x</i></sup>&#8239;&gt;&#8239;0 toujours, <span class="op">e</span>&#8239;&#8776;&#8239;2,718 ; <span class="pt"><span class="op">ln</span>(<span class="op">e</span><sup><i>x</i></sup>)&#8239;=&#8239;<i>x</i></span>, <span class="pt"><span class="op">e</span><sup><span class="op">ln</span>&#8239;<i>y</i></sup>&#8239;=&#8239;<i>y</i></span>.</li>
+<li><span class="pt"><span class="op">e</span><sup><i>a</i>+<i>b</i></sup>&#8239;=&#8239;<span class="op">e</span><sup><i>a</i></sup><span class="op">e</span><sup><i>b</i></sup></span>, <span class="pt"><span class="op">e</span><sup><i>a</i>&#8722;<i>b</i></sup>&#8239;=&#8239;<span class="f"><span><span class="op">e</span><sup><i>a</i></sup></span><span><span class="op">e</span><sup><i>b</i></sup></span></span></span>, <span class="pt"><span class="op">e</span><sup>&#8722;<i>b</i></sup>&#8239;=&#8239;<span class="f"><span>1</span><span><span class="op">e</span><sup><i>b</i></sup></span></span></span>, <span class="pt">(<span class="op">e</span><sup><i>a</i></sup>)<sup><i>r</i></sup>&#8239;=&#8239;<span class="op">e</span><sup><i>ra</i></sup></span>, et <b>jamais</b> <span class="op">e</span><sup><i>a</i></sup>&#8239;+&#8239;<span class="op">e</span><sup><i>b</i></sup>.</li>
+<li><span class="pt"><span class="op">e</span><sup><i>A</i></sup>&#8239;=&#8239;<span class="op">e</span><sup><i>B</i></sup>&#8239;<span class="ar">&#8660;</span>&#8239;<i>A</i>&#8239;=&#8239;<i>B</i></span>, <span class="pt"><span class="op">e</span><sup><i>A</i></sup>&#8239;&lt;&#8239;<span class="op">e</span><sup><i>B</i></sup>&#8239;<span class="ar">&#8660;</span>&#8239;<i>A</i>&#8239;&lt;&#8239;<i>B</i></span> (sens conservé) ; <span class="pt"><span class="op">e</span><sup><i>A</i></sup>&#8239;=&#8239;<i>k</i></span> n'a de solution que si <i>k</i>&#8239;&gt;&#8239;0, et alors <span class="pt"><i>A</i>&#8239;=&#8239;<span class="op">ln</span>&#8239;<i>k</i></span> ; si l'inconnue figure dans <span class="op">e</span><sup>2<i>x</i></sup> et <span class="op">e</span><sup><i>x</i></sup>, poser <span class="pt"><i>X</i>&#8239;=&#8239;<span class="op">e</span><sup><i>x</i></sup>&#8239;&gt;&#8239;0</span>.</li>
+<li><span class="pt">(<span class="op">e</span><sup><i>x</i></sup>)&#8242;&#8239;=&#8239;<span class="op">e</span><sup><i>x</i></sup></span>, <span class="pt">(<span class="op">e</span><sup><i>u</i></sup>)&#8242;&#8239;=&#8239;<i>u</i>&#8242;<span class="op">e</span><sup><i>u</i></sup></span> ; <span class="op">exp</span> strictement croissante ; 0<sup>+</sup> en &#8722;&#8734; (asymptote (O<i>x</i>)), +&#8734; en +&#8734; (branche parabolique (O<i>y</i>)) ; tangentes <span class="pt"><i>y</i>&#8239;=&#8239;<i>x</i>&#8239;+&#8239;1</span> en 0 et <span class="pt"><i>y</i>&#8239;=&#8239;<span class="op">e</span><i>x</i></span> en 1 ; <span class="pt"><span class="op">e</span><sup><i>x</i></sup>&#8239;&#8805;&#8239;1&#8239;+&#8239;<i>x</i></span>.</li>
+<li><b>Modèle</b> <span class="pt"><i>N</i>(<i>t</i>)&#8239;=&#8239;<i>N</i><sub>0</sub><span class="op">e</span><sup><i>kt</i></sup></span> : <i>N</i><sub>0</sub> valeur initiale, <i>k</i>&#8239;&gt;&#8239;0 croissance, <i>k</i>&#8239;&lt;&#8239;0 décroissance (asymptote <i>y</i>&#8239;=&#8239;0). Doublement et demi-vie : <b>diviser par <i>N</i><sub>0</sub></b> puis appliquer <span class="op">ln</span> ; indépendants de <i>N</i><sub>0</sub>.</li>
+<li><span class="pt"><i>a</i><sup><i>b</i></sup>&#8239;=&#8239;<span class="op">e</span><sup><i>b</i>&#8239;<span class="op">ln</span>&#8239;<i>a</i></sup></span> (<i>a</i>&#8239;&gt;&#8239;0) ; <span class="pt">(<i>a</i><sup><i>x</i></sup>)&#8242;&#8239;=&#8239;(<span class="op">ln</span>&#8239;<i>a</i>)<i>a</i><sup><i>x</i></sup></span>, croissante si <i>a</i>&#8239;&gt;&#8239;1, décroissante si 0&#8239;&lt;&#8239;<i>a</i>&#8239;&lt;&#8239;1, courbes par (0&#8239;;&#8239;1) ; hausse de <i>p</i>&#8239;% : coefficient <span class="pt">1&#8239;+&#8239;<span class="f"><span><i>p</i></span><span>100</span></span></span> et <span class="pt"><i>a</i><sup><i>t</i></sup>&#8239;=&#8239;<i>k</i>&#8239;<span class="ar">&#8660;</span>&#8239;<i>t</i>&#8239;=&#8239;<span class="f"><span><span class="op">ln</span>&#8239;<i>k</i></span><span><span class="op">ln</span>&#8239;<i>a</i></span></span></span>.</li>
+<li><span class="pt">(<i>x</i><sup>&#945;</sup>)&#8242;&#8239;=&#8239;&#945;&#8239;<i>x</i><sup>&#945;&#8722;1</sup></span> sur ]0&#8239;;&#8239;+&#8734;[ ; croissante si &#945;&#8239;&gt;&#8239;0, décroissante si &#945;&#8239;&lt;&#8239;0, courbes par (1&#8239;;&#8239;1) ; <span class="pt"><i>y</i>&#8239;=&#8239;<sup><i>n</i></sup>&#8730;<span class="rad"><i>x</i></span>&#8239;<span class="ar">&#8660;</span>&#8239;<i>x</i>&#8239;=&#8239;<i>y</i><sup><i>n</i></sup></span> (<i>x</i>, <i>y</i>&#8239;&#8805;&#8239;0), <span class="pt"><sup><i>n</i></sup>&#8730;<span class="rad"><i>x</i></span>&#8239;=&#8239;<i>x</i><sup>1/<i>n</i></sup></span>. Ne pas confondre <i>a</i><sup><i>x</i></sup> et <i>x</i><sup><i>a</i></sup>.</li>
+<li>A l'infini : <b>exp l'emporte sur les puissances, les puissances sur <span class="op">ln</span></b> ; <b>factoriser le terme dominant</b>.</li>
+</ol>
+</div>
+
+</body>
+</html>

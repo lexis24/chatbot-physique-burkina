@@ -1,0 +1,314 @@
+{
+  "niveau": "6ème",
+  "chapitre": "Chapitre 14 : Nombres relatifs",
+  "source": "maths/6eme/Chapitre_14_Nombres_relatifs",
+  "nombre_cartes": 34,
+  "cartes": [
+    {
+      "id": "6E-CH14-001",
+      "lecon": "Découvrir les nombres relatifs",
+      "type": "definition",
+      "recto": "Qu'est-ce qu'un nombre relatif ?",
+      "verso": "C'est un nombre précédé d'un signe : le signe indique de quel côté du zéro il se trouve, et la valeur indique sa distance au zéro. Ainsi $+5$ et $-3$ sont des nombres relatifs.",
+      "difficulte": 1,
+      "tags": ["nombre-relatif", "definition"]
+    },
+    {
+      "id": "6E-CH14-002",
+      "lecon": "Découvrir les nombres relatifs",
+      "type": "definition",
+      "recto": "Comment distingue-t-on un nombre positif d'un nombre négatif ?",
+      "verso": "Le nombre positif est précédé de $+$ et il est plus grand que zéro ; le nombre négatif est précédé de $-$ et il est plus petit que zéro. On peut écrire $+5$ plus simplement $5$, mais un négatif garde toujours son signe.",
+      "difficulte": 1,
+      "tags": ["positif", "negatif", "definition"]
+    },
+    {
+      "id": "6E-CH14-003",
+      "lecon": "Découvrir les nombres relatifs",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on la distance à zéro d'un nombre relatif ?",
+      "verso": "C'est ce nombre écrit sans son signe. La distance à zéro de $-7$ vaut $7$, et celle de $+7$ vaut $7$ également.",
+      "difficulte": 1,
+      "tags": ["distance-a-zero", "definition"]
+    },
+    {
+      "id": "6E-CH14-004",
+      "lecon": "Découvrir les nombres relatifs",
+      "type": "definition",
+      "recto": "Quel symbole désigne l'ensemble des entiers relatifs ?",
+      "verso": "Le symbole $\\mathbb{Z}$. Il rassemble les nombres $\\ldots, -3, -2, -1, 0, +1, +2, +3, \\ldots$, c'est-à-dire les relatifs écrits sans virgule.",
+      "difficulte": 2,
+      "tags": ["entiers-relatifs", "notation"]
+    },
+    {
+      "id": "6E-CH14-005",
+      "lecon": "Découvrir les nombres relatifs",
+      "type": "definition",
+      "recto": "Quelle différence sépare un entier relatif d'un décimal relatif ?",
+      "verso": "L'entier relatif s'écrit sans virgule, comme $-3$ ; le décimal relatif peut en avoir une, comme $-2{,}5$. Tout entier relatif est aussi un décimal relatif, puisque $-3$ s'écrit $-3{,}0$.",
+      "difficulte": 2,
+      "tags": ["entiers-relatifs", "decimaux-relatifs"]
+    },
+    {
+      "id": "6E-CH14-006",
+      "lecon": "Découvrir les nombres relatifs",
+      "type": "formule",
+      "recto": "Comment note-t-on une dette ou une baisse avec un nombre relatif ?",
+      "verso": "Avec un nombre négatif : une dette de $500$ FCFA se note $-500$ et une baisse de $15$ cm se note $-15$. Les gains et les hausses, eux, s'écrivent avec un nombre positif.",
+      "difficulte": 1,
+      "tags": ["situation", "negatif", "dette"]
+    },
+    {
+      "id": "6E-CH14-007",
+      "lecon": "Découvrir les nombres relatifs",
+      "type": "definition",
+      "recto": "Pourquoi le signe $-$ de $-3$ n'est-il pas une soustraction ?",
+      "verso": "Parce qu'il fait partie du nombre lui-même : $-3$ n'ordonne pas d'enlever $3$, il désigne un nombre situé $3$ unités en dessous de zéro.",
+      "difficulte": 3,
+      "tags": ["negatif", "piege", "signe"]
+    },
+    {
+      "id": "6E-CH14-008",
+      "lecon": "Découvrir les nombres relatifs",
+      "type": "definition",
+      "recto": "Quelle place le zéro occupe-t-il parmi les nombres positifs et les nombres négatifs ?",
+      "verso": "Aucune des deux : le zéro n'est ni positif ni négatif, car il est le repère lui-même et n'a donc pas de côté. On n'écrit jamais $+0$ ni $-0$.",
+      "difficulte": 2,
+      "tags": ["zero", "repere", "definition"]
+    },
+    {
+      "id": "6E-CH14-009",
+      "lecon": "La droite graduée et l'opposé",
+      "type": "formule",
+      "recto": "Comment place-t-on les nombres relatifs sur une droite graduée ?",
+      "verso": "On part du $0$, l'origine, et on reporte toujours la même unité : vers la droite pour les nombres positifs, vers la gauche pour les nombres négatifs.",
+      "difficulte": 1,
+      "tags": ["droite-graduee", "reperage"]
+    },
+    {
+      "id": "6E-CH14-010",
+      "lecon": "La droite graduée et l'opposé",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on l'abscisse d'un point d'une droite graduée ?",
+      "verso": "C'est le nombre relatif qui correspond à ce point. On l'écrit entre parenthèses après le nom du point, par exemple $A\\left(-2{,}5\\right)$.",
+      "difficulte": 1,
+      "tags": ["abscisse", "droite-graduee"]
+    },
+    {
+      "id": "6E-CH14-011",
+      "lecon": "La droite graduée et l'opposé",
+      "type": "definition",
+      "recto": "Qu'est-ce que l'opposé d'un nombre relatif ?",
+      "verso": "C'est le nombre situé à la même distance du $0$, mais de l'autre côté : on change seulement son signe. L'opposé de $+7$ est $-7$, celui de $-3$ est $+3$.",
+      "difficulte": 1,
+      "tags": ["oppose", "definition"]
+    },
+    {
+      "id": "6E-CH14-012",
+      "lecon": "La droite graduée et l'opposé",
+      "type": "formule",
+      "recto": "Que vaut l'opposé de $0$ ?",
+      "verso": "Il vaut $0$ lui-même. Le zéro est le repère : il n'a pas de côté, donc son symétrique par rapport au $0$ est lui-même.",
+      "difficulte": 2,
+      "tags": ["oppose", "zero"]
+    },
+    {
+      "id": "6E-CH14-013",
+      "lecon": "La droite graduée et l'opposé",
+      "type": "formule",
+      "recto": "Que donne l'opposé de l'opposé d'un nombre relatif ?",
+      "verso": "Le nombre de départ. Prendre l'opposé, c'est franchir le $0$ sans changer la distance ; le faire deux fois ramène au point d'origine, comme deux demi-tours.",
+      "difficulte": 2,
+      "tags": ["oppose", "propriete"]
+    },
+    {
+      "id": "6E-CH14-014",
+      "lecon": "La droite graduée et l'opposé",
+      "type": "formule",
+      "recto": "Combien vaut la somme d'un nombre relatif et de son opposé ?",
+      "verso": "Elle vaut $0$. Par exemple $\\left(+5\\right) + \\left(-5\\right) = 0$, et de même pour des décimaux relatifs.",
+      "difficulte": 2,
+      "tags": ["oppose", "somme"]
+    },
+    {
+      "id": "6E-CH14-015",
+      "lecon": "La droite graduée et l'opposé",
+      "type": "definition",
+      "recto": "Que signifie que deux nombres opposés sont symétriques par rapport au $0$ ?",
+      "verso": "Qu'en pliant la droite graduée sur le $0$, ils viendraient exactement l'un sur l'autre. Le $0$ est le milieu du segment qui joint leurs deux points.",
+      "difficulte": 2,
+      "tags": ["oppose", "symetrie", "droite-graduee"]
+    },
+    {
+      "id": "6E-CH14-016",
+      "lecon": "La droite graduée et l'opposé",
+      "type": "formule",
+      "recto": "Pourquoi l'opposé de $-3$ ne peut-il pas être $-3$ ?",
+      "verso": "Parce que l'opposé change le signe et garde la valeur : l'opposé de $-3$ est $+3$. Les deux nombres sont à $3$ unités du $0$, mais de part et d'autre.",
+      "difficulte": 3,
+      "tags": ["oppose", "piege"]
+    },
+    {
+      "id": "6E-CH14-017",
+      "lecon": "La droite graduée et l'opposé",
+      "type": "formule",
+      "recto": "Pourquoi l'unité doit-elle rester la même sur toute la longueur d'une droite graduée ?",
+      "verso": "Parce qu'une abscisse se lit en comptant les graduations. Si l'unité change en cours de route, les nombres lus ne veulent plus rien dire.",
+      "difficulte": 2,
+      "tags": ["droite-graduee", "unite", "piege"]
+    },
+    {
+      "id": "6E-CH14-018",
+      "lecon": "Comparer et ranger des nombres relatifs",
+      "type": "formule",
+      "recto": "Sur une droite graduée, comment reconnaît-on le plus grand de deux nombres relatifs ?",
+      "verso": "C'est celui qui est placé le plus à droite. Toutes les règles de comparaison des relatifs découlent de cette seule lecture.",
+      "difficulte": 1,
+      "tags": ["comparaison", "droite-graduee"]
+    },
+    {
+      "id": "6E-CH14-019",
+      "lecon": "Comparer et ranger des nombres relatifs",
+      "type": "formule",
+      "recto": "Comment se comparent un nombre positif et un nombre négatif ?",
+      "verso": "Tout nombre positif est plus grand que tout nombre négatif, quelles que soient leurs distances à zéro. Ainsi $+8 > -15$.",
+      "difficulte": 1,
+      "tags": ["comparaison", "positif", "negatif"]
+    },
+    {
+      "id": "6E-CH14-020",
+      "lecon": "Comparer et ranger des nombres relatifs",
+      "type": "formule",
+      "recto": "Comment le zéro se situe-t-il par rapport aux autres nombres relatifs ?",
+      "verso": "Il est plus grand que tout nombre négatif et plus petit que tout nombre positif : $-3 < 0 < +2$.",
+      "difficulte": 2,
+      "tags": ["comparaison", "zero"]
+    },
+    {
+      "id": "6E-CH14-021",
+      "lecon": "Comparer et ranger des nombres relatifs",
+      "type": "formule",
+      "recto": "Entre deux nombres négatifs, lequel est le plus grand ?",
+      "verso": "Celui qui est le plus proche de zéro, c'est-à-dire celui dont la distance à zéro est la plus petite. Ainsi $-3 > -5$.",
+      "difficulte": 2,
+      "tags": ["comparaison", "negatif"]
+    },
+    {
+      "id": "6E-CH14-022",
+      "lecon": "Comparer et ranger des nombres relatifs",
+      "type": "formule",
+      "recto": "Pourquoi $-13$ n'est-il pas plus grand que $-2$, alors que $13$ dépasse $2$ ?",
+      "verso": "Parce que l'on compare des positions et non des distances à zéro. $-13$ est plus loin du $0$ vers la gauche, donc plus petit : $-13 < -2$. Devoir $13\\,000$ FCFA est pire que devoir $2\\,000$ FCFA.",
+      "difficulte": 3,
+      "tags": ["comparaison", "piege", "negatif"]
+    },
+    {
+      "id": "6E-CH14-023",
+      "lecon": "Comparer et ranger des nombres relatifs",
+      "type": "formule",
+      "recto": "Dans quel ordre écrit-on une liste de nombres relatifs rangés par ordre croissant ?",
+      "verso": "Du plus petit au plus grand : d'abord les négatifs, du plus éloigné de zéro au plus proche, puis le zéro s'il y est, puis les positifs dans l'ordre habituel.",
+      "difficulte": 2,
+      "tags": ["rangement", "ordre-croissant"]
+    },
+    {
+      "id": "6E-CH14-024",
+      "lecon": "Comparer et ranger des nombres relatifs",
+      "type": "definition",
+      "recto": "Vers quel nombre pointe toujours le symbole $<$ ?",
+      "verso": "Vers le plus petit des deux nombres. Dans $-52 < -19$, la pointe est tournée vers $-52$.",
+      "difficulte": 2,
+      "tags": ["comparaison", "notation"]
+    },
+    {
+      "id": "6E-CH14-025",
+      "lecon": "Comparer et ranger des nombres relatifs",
+      "type": "formule",
+      "recto": "Combien de nombres relatifs se placent entre $-1$ et $0$ ?",
+      "verso": "Une infinité, car les relatifs peuvent être décimaux : $-0{,}5$ et $-0{,}25$ en sont deux exemples.",
+      "difficulte": 3,
+      "tags": ["decimaux-relatifs", "piege", "comparaison"]
+    },
+    {
+      "id": "6E-CH14-026",
+      "lecon": "Additionner des nombres relatifs",
+      "type": "formule",
+      "recto": "Comment additionne-t-on deux nombres relatifs de même signe ?",
+      "verso": "On additionne leurs distances à zéro et on garde le signe commun : $\\left(-6\\right) + \\left(-9\\right) = -15$ et $\\left(+4\\right) + \\left(+5\\right) = +9$.",
+      "difficulte": 1,
+      "tags": ["addition", "memes-signes"]
+    },
+    {
+      "id": "6E-CH14-027",
+      "lecon": "Additionner des nombres relatifs",
+      "type": "formule",
+      "recto": "Comment additionne-t-on deux nombres relatifs de signes différents ?",
+      "verso": "On calcule l'écart entre les deux distances à zéro et on garde le signe du nombre le plus éloigné de zéro : $\\left(+10\\right) + \\left(-4\\right) = +6$.",
+      "difficulte": 2,
+      "tags": ["addition", "signes-differents"]
+    },
+    {
+      "id": "6E-CH14-028",
+      "lecon": "Additionner des nombres relatifs",
+      "type": "formule",
+      "recto": "Que représente, sur une droite graduée, l'addition d'un nombre négatif ?",
+      "verso": "Un recul vers la gauche à partir du point de départ. Ajouter un nombre positif, au contraire, c'est avancer vers la droite.",
+      "difficulte": 2,
+      "tags": ["addition", "droite-graduee"]
+    },
+    {
+      "id": "6E-CH14-029",
+      "lecon": "Additionner des nombres relatifs",
+      "type": "formule",
+      "recto": "Comment additionne-t-on plusieurs nombres relatifs à la suite ?",
+      "verso": "On les additionne deux par deux, de gauche à droite. On peut aussi regrouper d'abord tous les positifs, puis tous les négatifs.",
+      "difficulte": 2,
+      "tags": ["addition", "plusieurs-nombres"]
+    },
+    {
+      "id": "6E-CH14-030",
+      "lecon": "Additionner des nombres relatifs",
+      "type": "formule",
+      "recto": "A quels nombres relatifs les règles d'addition s'appliquent-elles ?",
+      "verso": "A tous, entiers comme décimaux. Ainsi $\\left(-3{,}2\\right) + \\left(-1{,}8\\right) = -5$ se traite exactement comme une addition d'entiers relatifs.",
+      "difficulte": 2,
+      "tags": ["addition", "decimaux-relatifs"]
+    },
+    {
+      "id": "6E-CH14-031",
+      "lecon": "Additionner des nombres relatifs",
+      "type": "formule",
+      "recto": "Comment écrit-on une baisse de température dans un calcul de nombres relatifs ?",
+      "verso": "Avec un nombre négatif que l'on ajoute. Partir de $+32$ et baisser de $7$ s'écrit $\\left(+32\\right) + \\left(-7\\right) = +25$.",
+      "difficulte": 2,
+      "tags": ["addition", "temperature", "situation"]
+    },
+    {
+      "id": "6E-CH14-032",
+      "lecon": "Additionner des nombres relatifs",
+      "type": "formule",
+      "recto": "Comment trouve-t-on le nombre manquant dans une somme telle que $\\left(+7\\right) + \\ldots = 0$ ?",
+      "verso": "On cherche l'opposé du nombre connu, car un nombre ajouté à son opposé donne $0$. Le nombre manquant vaut donc $-7$.",
+      "difficulte": 2,
+      "tags": ["addition", "oppose", "nombre-manquant"]
+    },
+    {
+      "id": "6E-CH14-033",
+      "lecon": "Additionner des nombres relatifs",
+      "type": "formule",
+      "recto": "Pourquoi $\\left(-6\\right) + \\left(-9\\right)$ ne vaut-il pas $-3$ ?",
+      "verso": "Parce que les deux signes sont identiques : les deux pertes se cumulent au lieu de se compenser. On additionne les distances à zéro, $6 + 9 = 15$, et on garde le signe commun : $-15$.",
+      "difficulte": 3,
+      "tags": ["addition", "piege", "memes-signes"]
+    },
+    {
+      "id": "6E-CH14-034",
+      "lecon": "Additionner des nombres relatifs",
+      "type": "formule",
+      "recto": "Pourquoi $\\left(+8\\right) + \\left(-3\\right)$ ne vaut-il pas $+11$ ?",
+      "verso": "Parce que les signes sont différents : les deux nombres tirent en sens contraires. On prend l'écart $8 - 3 = 5$ et le signe du plus éloigné de zéro, celui de $+8$ : le résultat est $+5$.",
+      "difficulte": 3,
+      "tags": ["addition", "piege", "signes-differents"]
+    }
+  ]
+}

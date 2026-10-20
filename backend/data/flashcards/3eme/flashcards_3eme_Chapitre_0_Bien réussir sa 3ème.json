@@ -1,0 +1,332 @@
+{
+  "niveau": "3ème",
+  "chapitre": "Chapitre 0 : Bien réussir sa 3ème",
+  "source": "maths/3eme/Chapitre_0_Bien_reussir",
+  "nombre_cartes": 36,
+  "cartes": [
+    {
+      "id": "3E-CH00-001",
+      "lecon": "Test de positionnement : que sais-tu déjà de la 4ème ?",
+      "type": "definition",
+      "recto": "A quoi sert le test de positionnement proposé au début de la 3ème, alors qu'il n'est pas noté ?",
+      "verso": "Il montre ce qui est déjà acquis et ce qui demandera du travail. On le fait sans calculatrice, et si l'on bloque sur une question, on passe à la suivante.",
+      "difficulte": 1,
+      "tags": ["test-de-positionnement", "methode"]
+    },
+    {
+      "id": "3E-CH00-002",
+      "lecon": "Je révise l'essentiel de la 4ème",
+      "type": "formule",
+      "recto": "Quel est le signe du produit de deux nombres relatifs ?",
+      "verso": "Deux facteurs de même signe donnent un produit positif, deux facteurs de signes contraires un produit négatif. Ainsi $\\left(-5\\right) \\times \\left(-7\\right) = +35$ et $\\left(-6\\right) \\times \\left(+4\\right) = -24$.",
+      "difficulte": 1,
+      "tags": ["relatifs", "signe", "produit"]
+    },
+    {
+      "id": "3E-CH00-003",
+      "lecon": "Je révise l'essentiel de la 4ème",
+      "type": "formule",
+      "recto": "Dans un calcul qui mêle parenthèses, produits et sommes, dans quel ordre effectue-t-on les opérations ?",
+      "verso": "On effectue d'abord ce qui est entre parenthèses, puis les multiplications et les divisions, enfin les additions et les soustractions. Ainsi $10 - 2 \\times \\left(-3\\right) = 10 + 6 = 16$.",
+      "difficulte": 1,
+      "tags": ["priorites", "calcul"]
+    },
+    {
+      "id": "3E-CH00-004",
+      "lecon": "Je révise l'essentiel de la 4ème",
+      "type": "formule",
+      "recto": "Comment additionne-t-on deux fractions de dénominateurs différents ?",
+      "verso": "On les réduit d'abord au même dénominateur, puis on additionne les numérateurs. Par exemple $\\dfrac{1}{2} + \\dfrac{1}{3} = \\dfrac{3}{6} + \\dfrac{2}{6} = \\dfrac{5}{6}$. On simplifie toujours le résultat.",
+      "difficulte": 2,
+      "tags": ["fractions", "addition"]
+    },
+    {
+      "id": "3E-CH00-005",
+      "lecon": "Je révise l'essentiel de la 4ème",
+      "type": "formule",
+      "recto": "Comment divise-t-on un nombre par une fraction ?",
+      "verso": "On multiplie par l'inverse de cette fraction. Par exemple $\\dfrac{3}{5} \\div \\dfrac{6}{5} = \\dfrac{3}{5} \\times \\dfrac{5}{6} = \\dfrac{15}{30} = \\dfrac{1}{2}$.",
+      "difficulte": 2,
+      "tags": ["fractions", "division", "inverse"]
+    },
+    {
+      "id": "3E-CH00-006",
+      "lecon": "Je révise l'essentiel de la 4ème",
+      "type": "formule",
+      "recto": "Que deviennent les exposants quand on multiplie, puis quand on divise, deux puissances de $10$ ?",
+      "verso": "On ajoute les exposants pour un produit et on les soustrait pour un quotient : $10^{3} \\times 10^{2} = 10^{5}$ et $10^{7} \\div 10^{3} = 10^{4}$.",
+      "difficulte": 2,
+      "tags": ["puissances", "puissances-de-dix"]
+    },
+    {
+      "id": "3E-CH00-007",
+      "lecon": "Je révise l'essentiel de la 4ème",
+      "type": "definition",
+      "recto": "Quelle est la forme de l'écriture scientifique d'un nombre ?",
+      "verso": "C'est $a \\times 10^{n}$, avec un seul chiffre non nul avant la virgule, c'est-à-dire $1 \\le a < 10$. Ainsi $4\\,200 = 4{,}2 \\times 10^{3}$ et $0{,}0056 = 5{,}6 \\times 10^{-3}$.",
+      "difficulte": 2,
+      "tags": ["ecriture-scientifique", "puissances-de-dix"]
+    },
+    {
+      "id": "3E-CH00-008",
+      "lecon": "Je révise l'essentiel de la 4ème",
+      "type": "formule",
+      "recto": "Quelles sont les trois identités remarquables à savoir par cœur ?",
+      "verso": "$\\left(a + b\\right)^{2} = a^{2} + 2ab + b^{2}$ ; $\\left(a - b\\right)^{2} = a^{2} - 2ab + b^{2}$ ; $\\left(a - b\\right)\\left(a + b\\right) = a^{2} - b^{2}$.",
+      "difficulte": 2,
+      "tags": ["identites-remarquables", "developpement"]
+    },
+    {
+      "id": "3E-CH00-009",
+      "lecon": "Je révise l'essentiel de la 4ème",
+      "type": "definition",
+      "recto": "Que signifie factoriser une expression ?",
+      "verso": "C'est transformer une somme en produit. On cherche d'abord un facteur commun, $ka + kb = k\\left(a + b\\right)$, ou une identité remarquable comme $a^{2} - b^{2} = \\left(a - b\\right)\\left(a + b\\right)$.",
+      "difficulte": 2,
+      "tags": ["factorisation", "facteur-commun"]
+    },
+    {
+      "id": "3E-CH00-010",
+      "lecon": "Je révise l'essentiel de la 4ème",
+      "type": "formule",
+      "recto": "Dans une inéquation, quand faut-il changer le sens de l'inégalité ?",
+      "verso": "Quand on multiplie ou quand on divise les deux membres par un nombre négatif. Ainsi $-3x \\le 12$ donne $x \\ge -4$.",
+      "difficulte": 3,
+      "tags": ["inequation", "piege"]
+    },
+    {
+      "id": "3E-CH00-011",
+      "lecon": "Je révise l'essentiel de la 4ème",
+      "type": "formule",
+      "recto": "Que donne la relation de Chasles pour la somme $\\overrightarrow{AB} + \\overrightarrow{BC}$ ?",
+      "verso": "Elle donne $\\overrightarrow{AB} + \\overrightarrow{BC} = \\overrightarrow{AC}$ : on part de $A$ et l'on arrive en $C$.",
+      "difficulte": 1,
+      "tags": ["vecteurs", "chasles"]
+    },
+    {
+      "id": "3E-CH00-012",
+      "lecon": "Mes instruments de géométrie",
+      "type": "definition",
+      "recto": "A quoi sert l'équerre en géométrie ?",
+      "verso": "A tracer et à vérifier des angles droits, donc à construire des droites perpendiculaires et des droites parallèles, ainsi que les deux axes d'un repère orthonormal.",
+      "difficulte": 1,
+      "tags": ["instruments", "equerre"]
+    },
+    {
+      "id": "3E-CH00-013",
+      "lecon": "Mes instruments de géométrie",
+      "type": "formule",
+      "recto": "Quel instrument permet de reporter une longueur sans la mesurer ?",
+      "verso": "Le compas : on l'écarte à la longueur voulue, puis, sans toucher à la vis, on va reporter cet écartement où l'on veut, par exemple pour porter la même unité sur les deux axes d'un repère.",
+      "difficulte": 2,
+      "tags": ["instruments", "compas", "report-de-longueur"]
+    },
+    {
+      "id": "3E-CH00-014",
+      "lecon": "Mes instruments de géométrie",
+      "type": "definition",
+      "recto": "A quelles deux conditions un repère est-il orthonormal ?",
+      "verso": "Ses deux axes doivent être perpendiculaires, ce que garantit l'équerre, et porter la même unité, ce que garantit le compas.",
+      "difficulte": 2,
+      "tags": ["repere-orthonormal", "conditions"]
+    },
+    {
+      "id": "3E-CH00-015",
+      "lecon": "Mes instruments de géométrie",
+      "type": "definition",
+      "recto": "Que veut dire coder une figure ?",
+      "verso": "C'est marquer sur le dessin ce que l'on sait sans l'avoir mesuré : petits traits identiques pour des longueurs égales, petit carré pour un angle droit, flèches de même sens pour des droites parallèles.",
+      "difficulte": 2,
+      "tags": ["codage", "figure"]
+    },
+    {
+      "id": "3E-CH00-016",
+      "lecon": "Mes instruments de géométrie",
+      "type": "definition",
+      "recto": "Dans un exercice de géométrie, que représente souvent ce qui n'est pas codé sur le dessin ?",
+      "verso": "C'est souvent ce qu'il faut démontrer. Une figure bien codée contient déjà toutes les données et aide à choisir l'outil de la démonstration.",
+      "difficulte": 3,
+      "tags": ["codage", "demonstration", "piege"]
+    },
+    {
+      "id": "3E-CH00-017",
+      "lecon": "Démontrer en 3ème : direct et réciproque",
+      "type": "definition",
+      "recto": "Quels sont les trois temps du modèle de démonstration appris au collège ?",
+      "verso": "L'hypothèse, « On sait que… », ce que l'énoncé donne ; l'outil, « Or, si … alors … », la propriété du cours qui s'applique ; la conclusion, « Donc … », ce que l'on a le droit d'en déduire.",
+      "difficulte": 2,
+      "tags": ["demonstration", "methode"]
+    },
+    {
+      "id": "3E-CH00-018",
+      "lecon": "Démontrer en 3ème : direct et réciproque",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on l'énoncé direct d'une propriété ?",
+      "verso": "C'est l'énoncé de la forme « si A, alors B » : on connaît A et l'on veut obtenir B.",
+      "difficulte": 1,
+      "tags": ["enonce-direct", "logique"]
+    },
+    {
+      "id": "3E-CH00-019",
+      "lecon": "Démontrer en 3ème : direct et réciproque",
+      "type": "definition",
+      "recto": "Comment obtient-on l'énoncé réciproque d'une propriété « si A, alors B » ?",
+      "verso": "On échange l'hypothèse et la conclusion : la réciproque est « si B, alors A ». On connaît alors B et l'on veut obtenir A.",
+      "difficulte": 1,
+      "tags": ["reciproque", "logique"]
+    },
+    {
+      "id": "3E-CH00-020",
+      "lecon": "Démontrer en 3ème : direct et réciproque",
+      "type": "formule",
+      "recto": "Que dit le théorème de Pythagore dans son énoncé direct ?",
+      "verso": "Si un triangle est rectangle, alors le carré de l'hypoténuse est égal à la somme des carrés des deux autres côtés.",
+      "difficulte": 2,
+      "tags": ["pythagore", "enonce-direct"]
+    },
+    {
+      "id": "3E-CH00-021",
+      "lecon": "Démontrer en 3ème : direct et réciproque",
+      "type": "formule",
+      "recto": "Que dit la réciproque du théorème de Pythagore ?",
+      "verso": "Si, dans un triangle, le carré du plus grand côté est égal à la somme des carrés des deux autres côtés, alors ce triangle est rectangle.",
+      "difficulte": 2,
+      "tags": ["pythagore", "reciproque"]
+    },
+    {
+      "id": "3E-CH00-022",
+      "lecon": "Démontrer en 3ème : direct et réciproque",
+      "type": "formule",
+      "recto": "Pour prouver qu'un triangle est rectangle à partir de ses trois longueurs, lequel des deux énoncés de Pythagore emploie-t-on ?",
+      "verso": "La réciproque. L'énoncé direct, lui, sert à calculer une longueur dans un triangle dont on sait déjà qu'il est rectangle : deux énoncés différents, pour deux usages différents.",
+      "difficulte": 3,
+      "tags": ["pythagore", "reciproque", "piege"]
+    },
+    {
+      "id": "3E-CH00-023",
+      "lecon": "Démontrer en 3ème : direct et réciproque",
+      "type": "definition",
+      "recto": "Que doit-on écrire sur sa copie quand on emploie la réciproque d'un théorème ?",
+      "verso": "La mention en toutes lettres « d'après la réciproque du théorème de … ». Sans elle, le correcteur ne peut pas savoir si l'on a compris ce que l'on faisait.",
+      "difficulte": 2,
+      "tags": ["reciproque", "redaction", "bepc"]
+    },
+    {
+      "id": "3E-CH00-024",
+      "lecon": "Démontrer en 3ème : direct et réciproque",
+      "type": "definition",
+      "recto": "Quand un énoncé « si A, alors B » est vrai, que peut-on affirmer de sa réciproque ?",
+      "verso": "Rien : elle peut être vraie comme fausse. « Si un nombre se termine par $0$, alors il est divisible par $5$ » est vrai, mais sa réciproque est fausse, car $15$ est divisible par $5$ sans se terminer par $0$.",
+      "difficulte": 3,
+      "tags": ["reciproque", "contre-exemple", "piege"]
+    },
+    {
+      "id": "3E-CH00-025",
+      "lecon": "Démontrer en 3ème : direct et réciproque",
+      "type": "definition",
+      "recto": "Que signifie l'expression « A si et seulement si B » ?",
+      "verso": "Que l'énoncé direct et sa réciproque sont tous les deux vrais : la propriété va dans les deux sens. Un quadrilatère est un parallélogramme si et seulement si ses diagonales se coupent en leur milieu.",
+      "difficulte": 2,
+      "tags": ["equivalence", "logique"]
+    },
+    {
+      "id": "3E-CH00-026",
+      "lecon": "Démontrer en 3ème : direct et réciproque",
+      "type": "formule",
+      "recto": "Quel rôle jouent les exemples et les contre-exemples dans la preuve d'une affirmation ?",
+      "verso": "Un seul contre-exemple suffit pour montrer qu'une affirmation est fausse. Des exemples, même nombreux, ne prouvent jamais qu'elle est vraie : seule une démonstration générale l'établit.",
+      "difficulte": 3,
+      "tags": ["contre-exemple", "logique", "preuve"]
+    },
+    {
+      "id": "3E-CH00-027",
+      "lecon": "Démontrer en 3ème : direct et réciproque",
+      "type": "definition",
+      "recto": "Que peut apporter un dessin bien tracé à un raisonnement de géométrie ?",
+      "verso": "Il sert à conjecturer, c'est-à-dire à deviner ce qui est sans doute vrai. Il ne prouve rien : on démontre à partir des données de l'énoncé, jamais d'une mesure prise sur le dessin.",
+      "difficulte": 2,
+      "tags": ["conjecture", "demonstration", "figure"]
+    },
+    {
+      "id": "3E-CH00-028",
+      "lecon": "Démontrer en 3ème : direct et réciproque",
+      "type": "definition",
+      "recto": "Quels défauts rendent une démonstration fausse ?",
+      "verso": "Utiliser une mesure prise sur le dessin au lieu d'une donnée, invoquer une propriété qui n'existe pas, confondre un théorème et sa réciproque, ou sauter une étape.",
+      "difficulte": 2,
+      "tags": ["demonstration", "erreurs"]
+    },
+    {
+      "id": "3E-CH00-029",
+      "lecon": "Ma méthode de travail",
+      "type": "definition",
+      "recto": "Comment note-t-on dans son cahier de cours un théorème qui possède une réciproque ?",
+      "verso": "On écrit les deux énoncés en entier, l'un sous l'autre, avec la mention de ce que chacun sert à faire : l'un pour calculer, l'autre pour prouver.",
+      "difficulte": 2,
+      "tags": ["cahier", "reciproque", "methode"]
+    },
+    {
+      "id": "3E-CH00-030",
+      "lecon": "Ma méthode de travail",
+      "type": "definition",
+      "recto": "Pourquoi recopier un corrigé ne prouve-t-il pas que l'on a compris ?",
+      "verso": "Parce que savoir relire n'est pas savoir refaire. Le jour de l'examen le corrigé n'est plus là : la vraie preuve est de refaire seul, cahier fermé.",
+      "difficulte": 3,
+      "tags": ["methode", "corrige", "piege"]
+    },
+    {
+      "id": "3E-CH00-031",
+      "lecon": "Ma méthode de travail",
+      "type": "formule",
+      "recto": "Comment rédige-t-on la réponse à une question sur sa copie ?",
+      "verso": "On écrit le numéro de la question, on pose les données, on nomme l'outil en entier en précisant direct ou réciproque, on tire la conclusion, on encadre le résultat et l'on termine par une phrase de réponse avec l'unité.",
+      "difficulte": 2,
+      "tags": ["redaction", "copie", "bepc"]
+    },
+    {
+      "id": "3E-CH00-032",
+      "lecon": "Ma méthode de travail",
+      "type": "definition",
+      "recto": "Comment s'assure-t-on qu'une leçon est vraiment sue ?",
+      "verso": "On la lit une fois lentement, puis, cahier fermé, on récite en écrivant théorème par théorème ; on compare ensuite et l'on ne reprend que ce qui manquait.",
+      "difficulte": 2,
+      "tags": ["methode", "apprentissage"]
+    },
+    {
+      "id": "3E-CH00-033",
+      "lecon": "Réussir son année d'examen, et comment lire ce manuel",
+      "type": "definition",
+      "recto": "Que signifient les trois cotes d'étoiles portées par les exercices du manuel ?",
+      "verso": "Une étoile : application directe d'une seule notion. Deux étoiles : il faut enchaîner deux étapes. Trois étoiles : il faut prendre une initiative et choisir soi-même la démarche.",
+      "difficulte": 2,
+      "tags": ["etoiles", "difficulte", "manuel"]
+    },
+    {
+      "id": "3E-CH00-034",
+      "lecon": "Réussir son année d'examen, et comment lire ce manuel",
+      "type": "definition",
+      "recto": "Que demande une consigne qui commence par « Démontre que » ?",
+      "verso": "Elle demande d'établir le résultat par un raisonnement complet et rédigé, à partir des données. Elle ne demande pas de mesurer.",
+      "difficulte": 2,
+      "tags": ["consignes", "demonstration"]
+    },
+    {
+      "id": "3E-CH00-035",
+      "lecon": "Réussir son année d'examen, et comment lire ce manuel",
+      "type": "definition",
+      "recto": "Quelles sont les caractéristiques principales de l'épreuve de mathématiques du BEPC ?",
+      "verso": "Deux heures, coefficient $5$, calculatrice interdite, et deux parties indépendantes à traiter toutes les deux : des questions indépendantes, puis un problème. Ces modalités sont à vérifier chaque année auprès du professeur.",
+      "difficulte": 2,
+      "tags": ["bepc", "epreuve"]
+    },
+    {
+      "id": "3E-CH00-036",
+      "lecon": "Réussir son année d'examen, et comment lire ce manuel",
+      "type": "formule",
+      "recto": "Comment répartit-on son temps pendant l'épreuve de mathématiques du BEPC ?",
+      "verso": "On lit d'abord tout le sujet, on commence par ses points forts, on suit le barème, car plus une question rapporte de points, plus elle mérite de minutes, et l'on garde cinq minutes pour vérifier.",
+      "difficulte": 2,
+      "tags": ["bepc", "gestion-du-temps"]
+    }
+  ]
+}

@@ -1,0 +1,350 @@
+{
+  "niveau": "2nde C",
+  "chapitre": "Chapitre 1 : Calculs dans $\\mathbb{R}$",
+  "source": "maths/2ndc/Chapitre_1_Calculs_dans_R",
+  "nombre_cartes": 38,
+  "cartes": [
+    {
+      "id": "2C-CH01-001",
+      "lecon": "Ordre et comparaison dans $\\mathbb{R}$",
+      "type": "definition",
+      "recto": "Comment les cinq ensembles de nombres s'emboîtent-ils les uns dans les autres ?",
+      "verso": "$\\mathbb{N} \\subset \\mathbb{Z} \\subset \\mathbb{D} \\subset \\mathbb{Q} \\subset \\mathbb{R}$ : les entiers naturels, les entiers relatifs, les décimaux, les rationnels, puis les réels. Chaque ensemble contient tout le précédent et lui ajoute des nombres nouveaux.",
+      "difficulte": 1,
+      "tags": ["ensembles-de-nombres", "inclusion"]
+    },
+    {
+      "id": "2C-CH01-002",
+      "lecon": "Ordre et comparaison dans $\\mathbb{R}$",
+      "type": "formule",
+      "recto": "Que signifie l'inégalité $a < b$ en termes de signe d'une différence ?",
+      "verso": "Elle signifie que $b - a > 0$. Comparer deux réels revient donc à étudier le signe de leur différence, ce qui donne une réponse exacte, sans aucune valeur approchée.",
+      "difficulte": 1,
+      "tags": ["ordre", "difference"]
+    },
+    {
+      "id": "2C-CH01-003",
+      "lecon": "Ordre et comparaison dans $\\mathbb{R}$",
+      "type": "formule",
+      "recto": "De deux nombres négatifs, lequel est le plus grand ?",
+      "verso": "Celui qui est le plus proche de zéro. Ainsi $-\\dfrac{5}{7} > -\\dfrac{7}{9}$, car $-\\dfrac{7}{9}$ est plus éloigné de zéro, donc placé plus à gauche sur la droite graduée.",
+      "difficulte": 2,
+      "tags": ["ordre", "nombres-negatifs"]
+    },
+    {
+      "id": "2C-CH01-004",
+      "lecon": "Ordre et comparaison dans $\\mathbb{R}$",
+      "type": "formule",
+      "recto": "Que devient le sens d'une inégalité multipliée par un réel $c$ non nul ?",
+      "verso": "Si $c > 0$, le sens est conservé : de $a \\le b$ on tire $ac \\le bc$. Si $c < 0$, le sens s'inverse : $ac \\ge bc$. Ajouter un même nombre aux deux membres, au contraire, ne change jamais le sens.",
+      "difficulte": 2,
+      "tags": ["ordre", "multiplication"]
+    },
+    {
+      "id": "2C-CH01-005",
+      "lecon": "Ordre et comparaison dans $\\mathbb{R}$",
+      "type": "formule",
+      "recto": "Quel effet le passage au carré, puis à la racine carrée, a-t-il sur l'ordre de deux réels positifs ?",
+      "verso": "Les deux conservent l'ordre : si $0 \\le a \\le b$, alors $a^{2} \\le b^{2}$ et $\\sqrt{a} \\le \\sqrt{b}$. C'est ce qui permet de comparer deux nombres positifs contenant des radicaux en les élevant au carré.",
+      "difficulte": 2,
+      "tags": ["ordre", "carre", "racine-carree"]
+    },
+    {
+      "id": "2C-CH01-006",
+      "lecon": "Ordre et comparaison dans $\\mathbb{R}$",
+      "type": "formule",
+      "recto": "Quel effet le passage à l'inverse a-t-il sur l'ordre de deux réels strictement positifs ?",
+      "verso": "Il inverse l'ordre : si $0 < a \\le b$, alors $\\dfrac{1}{a} \\ge \\dfrac{1}{b}$. C'est le partage d'un même gâteau : plus il y a de convives, moins il y a dans chaque assiette.",
+      "difficulte": 2,
+      "tags": ["ordre", "inverse"]
+    },
+    {
+      "id": "2C-CH01-007",
+      "lecon": "Ordre et comparaison dans $\\mathbb{R}$",
+      "type": "formule",
+      "recto": "Quelle erreur commet celui qui déduit de $-5 < 2$ que $\\left(-5\\right)^{2} < 2^{2}$ ?",
+      "verso": "Il élève au carré des nombres qui ne sont pas tous positifs. Cela donnerait $25 < 4$, ce qui est faux : sur les réels négatifs, le carré inverse l'ordre, car si $a \\le b \\le 0$, alors $a^{2} \\ge b^{2}$.",
+      "difficulte": 3,
+      "tags": ["carre", "ordre", "piege"]
+    },
+    {
+      "id": "2C-CH01-008",
+      "lecon": "Ordre et comparaison dans $\\mathbb{R}$",
+      "type": "formule",
+      "recto": "Pour un réel $x$ tel que $0 < x < 1$, comment se classent $x$, $x^{2}$, $\\sqrt{x}$ et $\\dfrac{1}{x}$ ?",
+      "verso": "$x^{2} < x < \\sqrt{x} < 1 < \\dfrac{1}{x}$ : le carré d'un nombre plus petit que $1$ est plus petit que ce nombre. Pour $x > 1$, le classement se renverse en $\\dfrac{1}{x} < 1 < \\sqrt{x} < x < x^{2}$.",
+      "difficulte": 3,
+      "tags": ["comparaison", "classement"]
+    },
+    {
+      "id": "2C-CH01-009",
+      "lecon": "Ordre et comparaison dans $\\mathbb{R}$",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on l'écriture scientifique d'un nombre non nul ?",
+      "verso": "Son écriture sous la forme $a \\times 10^{n}$, où $n$ est un entier relatif et où $1 \\le |a| < 10$ : il y a un seul chiffre non nul avant la virgule. Ainsi $32\\,000 = 3{,}2 \\times 10^{4}$.",
+      "difficulte": 1,
+      "tags": ["ecriture-scientifique", "puissances-de-dix"]
+    },
+    {
+      "id": "2C-CH01-010",
+      "lecon": "Ordre et comparaison dans $\\mathbb{R}$",
+      "type": "formule",
+      "recto": "Quel contre-exemple montre que $\\sqrt{a + b}$ n'est pas égal à $\\sqrt{a} + \\sqrt{b}$ ?",
+      "verso": "$\\sqrt{9 + 16} = \\sqrt{25} = 5$, alors que $\\sqrt{9} + \\sqrt{16} = 3 + 4 = 7$. La racine carrée se comporte bien avec le produit et le quotient, jamais avec une somme.",
+      "difficulte": 3,
+      "tags": ["racine-carree", "piege"]
+    },
+    {
+      "id": "2C-CH01-011",
+      "lecon": "Ordre et comparaison dans $\\mathbb{R}$",
+      "type": "formule",
+      "recto": "Comment rend-on rationnel un dénominateur de la forme $a + \\sqrt{b}$ ?",
+      "verso": "On multiplie le numérateur et le dénominateur par la quantité conjuguée $a - \\sqrt{b}$. Le produit $\\left(a + \\sqrt{b}\\right)\\left(a - \\sqrt{b}\\right) = a^{2} - b$ ne contient plus de radical.",
+      "difficulte": 2,
+      "tags": ["radicaux", "quantite-conjuguee"]
+    },
+    {
+      "id": "2C-CH01-012",
+      "lecon": "Ordre et comparaison dans $\\mathbb{R}$",
+      "type": "formule",
+      "recto": "Comment détermine-t-on le signe d'un produit de facteurs du premier degré ?",
+      "verso": "On cherche la valeur qui annule chaque facteur, on range ces valeurs dans l'ordre croissant en tête d'un tableau de signes, puis on conclut zone par zone par la règle des signes. Un facteur $ax + b$ est du signe de $a$ après sa racine.",
+      "difficulte": 2,
+      "tags": ["signe", "tableau-de-signes"]
+    },
+    {
+      "id": "2C-CH01-013",
+      "lecon": "Intervalles, valeur absolue et distance",
+      "type": "definition",
+      "recto": "Dans l'écriture d'un intervalle, comment le crochet indique-t-il qu'une borne est incluse ?",
+      "verso": "Le crochet tourné vers l'intérieur attrape la borne, qui appartient alors à l'intervalle ; tourné vers l'extérieur, il la repousse et la borne est exclue. Sur la droite graduée, on trace un point plein ou un point creux.",
+      "difficulte": 2,
+      "tags": ["intervalle", "crochets"]
+    },
+    {
+      "id": "2C-CH01-014",
+      "lecon": "Intervalles, valeur absolue et distance",
+      "type": "definition",
+      "recto": "Pourquoi le crochet est-il toujours ouvert du côté de $+\\infty$ ou de $-\\infty$ ?",
+      "verso": "Parce que $+\\infty$ et $-\\infty$ ne sont pas des nombres : ce sont des signes qui indiquent que l'intervalle ne s'arrête pas de ce côté. Aucune borne n'y est donc atteinte.",
+      "difficulte": 2,
+      "tags": ["intervalle", "infini"]
+    },
+    {
+      "id": "2C-CH01-015",
+      "lecon": "Intervalles, valeur absolue et distance",
+      "type": "formule",
+      "recto": "Comment calcule-t-on le centre, le rayon et l'amplitude d'un intervalle borné de bornes $a$ et $b$ ?",
+      "verso": "Le centre vaut $c = \\dfrac{a + b}{2}$, le rayon $r = \\dfrac{b - a}{2}$ et l'amplitude $b - a$, soit le double du rayon. On a alors $a = c - r$ et $b = c + r$.",
+      "difficulte": 2,
+      "tags": ["intervalle", "centre", "rayon", "amplitude"]
+    },
+    {
+      "id": "2C-CH01-016",
+      "lecon": "Intervalles, valeur absolue et distance",
+      "type": "definition",
+      "recto": "Quels mots de l'énoncé annoncent l'intersection $A \\cap B$ et la réunion $A \\cup B$ ?",
+      "verso": "Le mot « et » annonce l'intersection, formée des nombres appartenant aux deux ensembles à la fois. Le mot « ou » annonce la réunion, formée des nombres appartenant à l'un au moins des deux : ce « ou » est inclusif.",
+      "difficulte": 1,
+      "tags": ["intersection", "reunion"]
+    },
+    {
+      "id": "2C-CH01-017",
+      "lecon": "Intervalles, valeur absolue et distance",
+      "type": "definition",
+      "recto": "Comment la valeur absolue $|x|$ d'un réel $x$ est-elle définie ?",
+      "verso": "$|x| = x$ si $x \\ge 0$, et $|x| = -x$ si $x < 0$, c'est-à-dire l'opposé du nombre lorsqu'il est négatif. Une valeur absolue est donc toujours positive ou nulle, et $|x| = 0$ seulement pour $x = 0$.",
+      "difficulte": 1,
+      "tags": ["valeur-absolue", "definition"]
+    },
+    {
+      "id": "2C-CH01-018",
+      "lecon": "Intervalles, valeur absolue et distance",
+      "type": "formule",
+      "recto": "Pourquoi écrit-on $\\sqrt{a^{2}} = |a|$ et non $\\sqrt{a^{2}} = a$ ?",
+      "verso": "Parce qu'une racine carrée est toujours positive, alors que $a$ peut être négatif. Ainsi $\\sqrt{\\left(-3\\right)^{2}} = \\sqrt{9} = 3$, et non $-3$. Avant d'enlever un radical sur un carré, on détermine le signe de ce qui est à l'intérieur.",
+      "difficulte": 3,
+      "tags": ["valeur-absolue", "racine-carree", "piege"]
+    },
+    {
+      "id": "2C-CH01-019",
+      "lecon": "Intervalles, valeur absolue et distance",
+      "type": "formule",
+      "recto": "Comment s'écrit la distance entre deux points d'abscisses $a$ et $b$ sur une droite graduée ?",
+      "verso": "$d\\left(a\\,;b\\right) = |b - a| = |a - b|$ : l'ordre des deux nombres est sans importance, ce qui est bien normal pour une distance. En particulier, $|x|$ est la distance de $x$ à $0$.",
+      "difficulte": 1,
+      "tags": ["distance", "valeur-absolue"]
+    },
+    {
+      "id": "2C-CH01-020",
+      "lecon": "Intervalles, valeur absolue et distance",
+      "type": "formule",
+      "recto": "Quel ensemble décrit la condition $|x - a| \\le r$, où $r$ est strictement positif ?",
+      "verso": "L'intervalle fermé de centre $a$ et de rayon $r$, soit $\\left[a - r\\,;a + r\\right]$ : ce sont les réels dont la distance à $a$ ne dépasse pas $r$. Avec une inégalité stricte, l'intervalle devient ouvert.",
+      "difficulte": 2,
+      "tags": ["valeur-absolue", "intervalle", "distance"]
+    },
+    {
+      "id": "2C-CH01-021",
+      "lecon": "Intervalles, valeur absolue et distance",
+      "type": "formule",
+      "recto": "Quel ensemble décrit la condition $|x - a| > r$, où $r$ est strictement positif ?",
+      "verso": "Une réunion de deux intervalles, $\\left]-\\infty\\,;a - r\\right[ \\cup \\left]a + r\\,;+\\infty\\right[$. Etre loin du centre laisse deux morceaux séparés, alors qu'être proche du centre donne un seul intervalle.",
+      "difficulte": 2,
+      "tags": ["valeur-absolue", "reunion", "distance"]
+    },
+    {
+      "id": "2C-CH01-022",
+      "lecon": "Majorant, minorant, maximum et minimum",
+      "type": "definition",
+      "recto": "Quand dit-on qu'un réel $M$ est un majorant d'une partie $A$ de $\\mathbb{R}$ ?",
+      "verso": "Lorsque tout élément $x$ de $A$ vérifie $x \\le M$. De même, $m$ minore $A$ lorsque tout élément vérifie $x \\ge m$. Une partie majorée possède une infinité de majorants.",
+      "difficulte": 1,
+      "tags": ["majorant", "minorant"]
+    },
+    {
+      "id": "2C-CH01-023",
+      "lecon": "Majorant, minorant, maximum et minimum",
+      "type": "definition",
+      "recto": "Quand une partie de $\\mathbb{R}$ est-elle dite bornée ?",
+      "verso": "Lorsqu'elle est à la fois majorée et minorée, c'est-à-dire lorsqu'on lui a trouvé un majorant et un minorant.",
+      "difficulte": 2,
+      "tags": ["partie-bornee"]
+    },
+    {
+      "id": "2C-CH01-024",
+      "lecon": "Majorant, minorant, maximum et minimum",
+      "type": "definition",
+      "recto": "Quelle condition supplémentaire un majorant doit-il remplir pour être le maximum de la partie ?",
+      "verso": "Il doit appartenir à la partie. Un majorant reste un simple témoin extérieur, alors que le maximum, noté $\\max A$, est un élément de l'ensemble. Une partie possède au plus un maximum.",
+      "difficulte": 2,
+      "tags": ["maximum", "majorant", "distinction"]
+    },
+    {
+      "id": "2C-CH01-025",
+      "lecon": "Majorant, minorant, maximum et minimum",
+      "type": "formule",
+      "recto": "Pourquoi l'intervalle $\\left[0\\,;1\\right[$ est-il majoré sans posséder de maximum ?",
+      "verso": "Le nombre $1$ le majore mais ne lui appartient pas, et aucun élément ne peut jouer ce rôle : pour tout $x$ de l'intervalle, la moyenne $\\dfrac{x + 1}{2}$ y appartient encore et dépasse $x$. Son minimum, lui, vaut $0$.",
+      "difficulte": 3,
+      "tags": ["maximum", "intervalle", "piege"]
+    },
+    {
+      "id": "2C-CH01-026",
+      "lecon": "Encadrement et calcul approché",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on l'amplitude d'un encadrement $a \\le x \\le b$ ?",
+      "verso": "Le nombre $b - a$ : plus l'amplitude est petite, plus l'encadrement est précis. Une mesure lue $m$ à $p$ près donne $m - p \\le x \\le m + p$, dont l'amplitude vaut $2p$, car l'erreur joue dans les deux sens.",
+      "difficulte": 2,
+      "tags": ["encadrement", "amplitude", "precision"]
+    },
+    {
+      "id": "2C-CH01-027",
+      "lecon": "Encadrement et calcul approché",
+      "type": "formule",
+      "recto": "Comment encadre-t-on la somme, puis la différence, de deux réels dont on connaît les encadrements ?",
+      "verso": "De $a \\le x \\le b$ et $c \\le y \\le d$ on tire $a + c \\le x + y \\le b + d$, en additionnant les bornes de même rang, et $a - d \\le x - y \\le b - c$, en croisant les bornes. Ces deux règles valent pour tous les réels.",
+      "difficulte": 2,
+      "tags": ["encadrement", "somme", "difference"]
+    },
+    {
+      "id": "2C-CH01-028",
+      "lecon": "Encadrement et calcul approché",
+      "type": "formule",
+      "recto": "Sous quelle condition peut-on encadrer directement un produit et un quotient ?",
+      "verso": "Il faut que les deux réels soient strictement positifs, avec $a > 0$ et $c > 0$. On a alors $ac \\le xy \\le bd$, et $\\dfrac{a}{d} \\le \\dfrac{x}{y} \\le \\dfrac{b}{c}$ en croisant les bornes du quotient.",
+      "difficulte": 2,
+      "tags": ["encadrement", "produit", "quotient", "condition"]
+    },
+    {
+      "id": "2C-CH01-029",
+      "lecon": "Encadrement et calcul approché",
+      "type": "formule",
+      "recto": "Comment encadre-t-on un produit $xy$ lorsque le facteur $x$ est négatif ?",
+      "verso": "On passe d'abord à l'opposé : multiplier l'encadrement de $x$ par $-1$ retourne les inégalités et rend $-x$ positif. On multiplie alors les encadrements, puis on revient à $xy$ en multipliant encore par $-1$, ce qui retourne le résultat.",
+      "difficulte": 3,
+      "tags": ["encadrement", "produit", "piege"]
+    },
+    {
+      "id": "2C-CH01-030",
+      "lecon": "Encadrement et calcul approché",
+      "type": "formule",
+      "recto": "Qu'affirme l'inégalité triangulaire pour deux réels $a$ et $b$ ?",
+      "verso": "Que $|a + b| \\le |a| + |b|$, avec égalité exactement lorsque $a$ et $b$ sont de même signe ou que l'un des deux est nul. Elle permet de majorer une somme sans connaître les deux nombres.",
+      "difficulte": 2,
+      "tags": ["inegalite-triangulaire", "valeur-absolue", "majoration"]
+    },
+    {
+      "id": "2C-CH01-031",
+      "lecon": "Encadrement et calcul approché",
+      "type": "definition",
+      "recto": "Quelle différence sépare la troncature et l'arrondi d'ordre $n$ d'un nombre ?",
+      "verso": "La troncature coupe l'écriture juste après la $n$-ième décimale ; l'arrondi donne le décimal d'ordre $n$ le plus proche, en augmentant d'une unité le dernier chiffre gardé si la décimale suivante vaut $5$ ou plus. Pour $3{,}148$ au centième : $3{,}14$ et $3{,}15$.",
+      "difficulte": 2,
+      "tags": ["arrondi", "troncature"]
+    },
+    {
+      "id": "2C-CH01-032",
+      "lecon": "Encadrement et calcul approché",
+      "type": "definition",
+      "recto": "A quoi sert un ordre de grandeur ?",
+      "verso": "A contrôler un résultat, et non à le donner. On remplace chaque facteur par un nombre simple, par exemple $198 \\times 5{,}1$ par $200 \\times 5 = 1000$, ce qui permet de repérer aussitôt une réponse aberrante.",
+      "difficulte": 2,
+      "tags": ["ordre-de-grandeur", "controle"]
+    },
+    {
+      "id": "2C-CH01-033",
+      "lecon": "Pour aller plus loin : nombres irrationnels et partie entière",
+      "type": "definition",
+      "recto": "Qu'est-ce qu'un nombre irrationnel ?",
+      "verso": "Un réel qui ne peut pas s'écrire $\\dfrac{p}{q}$ avec $p$ entier relatif et $q$ entier naturel non nul, comme $\\sqrt{2}$, $\\sqrt{3}$ ou $\\pi$. Une virgule ne suffit pas à rendre un nombre irrationnel : $0{,}25 = \\dfrac{1}{4}$ est rationnel.",
+      "difficulte": 2,
+      "tags": ["irrationnel", "rationnel"]
+    },
+    {
+      "id": "2C-CH01-034",
+      "lecon": "Pour aller plus loin : nombres irrationnels et partie entière",
+      "type": "formule",
+      "recto": "Sur quelle contradiction repose la démonstration de l'irrationalité de $\\sqrt{2}$ ?",
+      "verso": "On suppose $\\sqrt{2} = \\dfrac{p}{q}$, fraction irréductible. De $p^{2} = 2q^{2}$ on déduit que $p$ est pair, puis que $q$ l'est aussi : la fraction se simplifie encore, ce qui contredit l'hypothèse de départ.",
+      "difficulte": 3,
+      "tags": ["irrationnel", "raisonnement-par-l-absurde"]
+    },
+    {
+      "id": "2C-CH01-035",
+      "lecon": "Pour aller plus loin : nombres irrationnels et partie entière",
+      "type": "definition",
+      "recto": "Comment définit-on la partie entière $E\\left(x\\right)$ d'un réel $x$ ?",
+      "verso": "C'est le plus grand entier inférieur ou égal à $x$, caractérisé par $E\\left(x\\right) \\le x < E\\left(x\\right) + 1$. C'est la graduation entière située immédiatement à gauche : $E\\left(3{,}7\\right) = 3$ et $E\\left(-3{,}2\\right) = -4$.",
+      "difficulte": 2,
+      "tags": ["partie-entiere"]
+    },
+    {
+      "id": "2C-CH01-036",
+      "lecon": "Pour aller plus loin : identités de degré 3 et triangle de Pascal",
+      "type": "formule",
+      "recto": "Quel est le développement de $\\left(a + b\\right)^{3}$ ?",
+      "verso": "$\\left(a + b\\right)^{3} = a^{3} + 3a^{2}b + 3ab^{2} + b^{3}$ : on n'oublie jamais les deux termes du milieu. Pour $\\left(a - b\\right)^{3}$, on garde les mêmes coefficients $1$, $3$, $3$, $1$ en faisant alterner les signes.",
+      "difficulte": 2,
+      "tags": ["identites-remarquables", "degre-3"]
+    },
+    {
+      "id": "2C-CH01-037",
+      "lecon": "Pour aller plus loin : identités de degré 3 et triangle de Pascal",
+      "type": "formule",
+      "recto": "Comment factorise-t-on une différence de deux cubes $a^{3} - b^{3}$ ?",
+      "verso": "$a^{3} - b^{3} = \\left(a - b\\right)\\left(a^{2} + ab + b^{2}\\right)$, et de même $a^{3} + b^{3} = \\left(a + b\\right)\\left(a^{2} - ab + b^{2}\\right)$. Le produit du milieu porte toujours le signe contraire à celui du premier facteur.",
+      "difficulte": 2,
+      "tags": ["factorisation", "cubes"]
+    },
+    {
+      "id": "2C-CH01-038",
+      "lecon": "Pour aller plus loin : identités de degré 3 et triangle de Pascal",
+      "type": "formule",
+      "recto": "Comment construit-on chaque ligne du triangle de Pascal ?",
+      "verso": "Chaque ligne commence et finit par $1$, et tout autre nombre est la somme des deux nombres situés juste au-dessus de lui. La ligne $n$ donne les coefficients du développement de $\\left(a + b\\right)^{n}$ : par exemple $1$, $4$, $6$, $4$, $1$ pour $n = 4$.",
+      "difficulte": 2,
+      "tags": ["triangle-de-pascal", "coefficients"]
+    }
+  ]
+}

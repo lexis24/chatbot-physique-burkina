@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Fiche de revision - Terminale D - Chapitre 4 : Fonction logarithme neperien</title>
+<style>
+/* ===================================================================
+   FICHE DE REVISION, Collection Hakili Lab, Edition 2026
+   Feuille de style autonome, format A4 pret a imprimer.
+   Bleu #005CB9 · Vert #49A145
+   =================================================================== */
+:root{
+  --bleu:#005CB9; --bleu-fonce:#00429A; --bleu-pale:#E8F1FB; --bleu-bord:#B7D2EE;
+  --vert:#49A145; --vert-fonce:#2F7A2C; --vert-pale:#EDF7EC; --vert-bord:#BCE0B9;
+  --gris:#4A4A4A; --gris-clair:#E4E4E4; --rouge:#B3261E;
+}
+@page{
+  size:A4; margin:15mm;
+  @bottom-center{
+    content:"Collection Hakili Lab, Edition 2026  ·  Fiche de revision  ·  " counter(page) "/" counter(pages);
+    font-family:"Segoe UI",Calibri,Arial,sans-serif; font-size:6.6pt; color:#8A8A8A;
+  }
+}
+*{box-sizing:border-box;}
+body{
+  margin:0; font-family:"Segoe UI",Calibri,Arial,sans-serif;
+  font-size:8.4pt; line-height:1.26; color:#1B1B1B;
+}
+p{margin:0 0 3pt;}
+ul{margin:0 0 3pt; padding-left:11pt;}
+li{margin:0 0 1.2pt;}
+b,strong{color:var(--bleu-fonce);}
+
+/* ------------------------------ ENTETE ---------------------------- */
+.entete{
+  display:flex; align-items:stretch; border:1.6pt solid var(--bleu);
+  border-radius:2.5pt; overflow:hidden; margin-bottom:6pt;
+}
+.entete .num{
+  background:var(--bleu); color:#fff; font-size:20pt; font-weight:700;
+  padding:0 8pt; display:flex; align-items:center; justify-content:center; min-width:34pt;
+}
+.entete .txt{padding:3.5pt 8pt; flex:1;}
+.entete .niveau{
+  font-size:7pt; font-weight:700; letter-spacing:.9pt; color:var(--vert-fonce);
+}
+.entete h1{margin:0; font-size:13.5pt; line-height:1.12; color:var(--bleu-fonce); font-weight:700;}
+.entete .sous{font-size:7pt; color:var(--gris); margin-top:1pt;}
+
+/* --------------------------- BANDEAUX ----------------------------- */
+.bandeau{
+  color:#fff; font-weight:700; font-size:9pt; letter-spacing:1pt;
+  padding:2.4pt 7pt; border-radius:2pt; margin:3pt 0 4pt; break-after:avoid; page-break-after:avoid;
+}
+.bandeau.bleu{background:var(--bleu);}
+.bandeau.vert{background:var(--vert);}
+
+/* --------------------------- COLONNES ----------------------------- */
+.cols{column-count:2; column-gap:7mm; column-fill:balance;}
+
+.cols.bal{column-fill:balance;}
+.bloc{margin-bottom:5pt;}
+.keep{break-inside:avoid; page-break-inside:avoid;}
+
+/* --------------------------- LECONS ------------------------------- */
+h2.lecon{
+  margin:0 0 3pt; font-size:8.6pt; font-weight:700; color:#fff; background:var(--bleu-fonce);
+  padding:1.8pt 5pt; border-radius:1.5pt; break-after:avoid; page-break-after:avoid;
+}
+h3.rub{
+  margin:3.5pt 0 1.5pt; font-size:8.2pt; font-weight:700; color:var(--vert-fonce);
+  border-bottom:.7pt solid var(--vert-bord); padding-bottom:.8pt;
+  break-after:avoid; page-break-after:avoid;
+}
+
+/* --------------------------- ENCADRES ----------------------------- */
+.form{
+  background:var(--bleu-pale); border:.8pt solid var(--bleu-bord); border-left:2.6pt solid var(--bleu);
+  border-radius:2pt; padding:2.4pt 5pt; margin:2.2pt 0 3.4pt;
+  break-inside:avoid; page-break-inside:avoid;
+}
+.form .t{
+  display:block; font-size:6.8pt; font-weight:700; letter-spacing:.6pt;
+  color:var(--bleu); margin-bottom:1.5pt;
+}
+.form .c{text-align:center; font-size:9.1pt; margin:1.6pt 0;}
+.note{background:var(--vert-pale); border-left:2.4pt solid var(--vert); padding:2.4pt 5pt; border-radius:1.5pt; margin:2.5pt 0 4pt; break-inside:avoid;}
+
+/* --------------------------- TABLEAUX ----------------------------- */
+table{width:100%; border-collapse:collapse; font-size:7.6pt; margin:2pt 0 4pt; break-inside:avoid;}
+th{background:var(--bleu); color:#fff; font-weight:700; text-align:left; padding:1.8pt 4pt; font-size:7.2pt;}
+td{border:.6pt solid var(--gris-clair); padding:1.8pt 4pt; vertical-align:top;}
+tr{break-inside:avoid;}
+table.var td{text-align:center; font-size:8pt;}
+table.var td.lab{text-align:left; font-weight:700; color:var(--bleu-fonce); background:var(--bleu-pale);}
+
+/* ----------------------------- PIEGES ----------------------------- */
+table.pieges th:first-child{width:44%;}
+table.pieges td:first-child{color:var(--rouge); background:#FDF1F0;}
+.x{font-weight:700;}
+.v{color:var(--vert-fonce); font-weight:700;}
+
+/* ---------------------------- RECAP ------------------------------- */
+ol.recap{margin:0; padding-left:0; list-style:none; counter-reset:r;}
+ol.recap li{
+  counter-increment:r; position:relative; padding-left:13pt; margin-bottom:1.8pt;
+  break-inside:avoid;
+}
+ol.recap li::before{
+  content:counter(r); position:absolute; left:0; top:.3pt;
+  width:10pt; height:10pt; border-radius:50%; background:var(--vert); color:#fff;
+  font-size:6.6pt; font-weight:700; text-align:center; line-height:10pt;
+}
+
+/* --------------------------- MATHS -------------------------------- */
+.m{font-family:Cambria,Georgia,"Times New Roman",serif;}
+i,var{font-family:Cambria,Georgia,"Times New Roman",serif; font-style:italic;}
+.op{font-family:Cambria,Georgia,"Times New Roman",serif; font-style:normal;}
+.f{display:inline-block; vertical-align:middle; text-align:center;
+   margin:0 .12em; line-height:1.06; font-family:Cambria,Georgia,"Times New Roman",serif;}
+.f>span{display:block; padding:0 .2em;}
+.f>span:first-child{border-bottom:.6pt solid currentColor; padding-bottom:.08em;}
+.f>span:last-child{padding-top:.04em;}
+.rad{border-top:.6pt solid currentColor; padding-top:.12em;}
+/* line-height:0 evite que l'exposant n'ecarte les lignes ; position:relative le
+   repositionne sans qu'il heurte la barre de fraction ni le trait du radical. */
+sup,sub{font-size:.68em; line-height:0; position:relative; vertical-align:baseline;}
+sup{top:-.42em;}
+sub{bottom:-.22em;}
+.pt{white-space:nowrap;}
+/* Les fleches n'ont qu'un glyphe atrophie dans la fonte serif : on les force
+   en sans-serif, ou elles sont franches meme a 8 pt. */
+.ar{font-family:"Segoe UI",Calibri,Arial,"DejaVu Sans",sans-serif; font-style:normal;}
+
+/* ------------------- PIEGES : blocs erreur / correction ------------- */
+.pg{font-size:8.1pt; border-left:2.4pt solid var(--rouge); background:#FDF1F0; border-radius:1.5pt;
+    padding:2pt 5pt; margin:0 0 2.8pt; break-inside:avoid; page-break-inside:avoid;}
+.pg .err{color:var(--rouge); font-weight:600;}
+.pg .cor{color:#1B1B1B; margin-top:.8pt;}
+.pg .cor b{color:var(--bleu-fonce);}
+.v{color:var(--vert-fonce); font-weight:700;}
+
+</style>
+</head>
+<body>
+<header class="entete">
+  <div class="num">4</div>
+  <div class="txt">
+    <div class="niveau">TERMINALE D &middot; MATHEMATIQUES</div>
+    <h1>Fonction logarithme népérien</h1>
+    <div class="sous">Leçon 1 : définition et propriétés algébriques &middot; Leçon 2 : étude de la fonction ln &middot; Leçon 3 : logarithme décimal et applications</div>
+  </div>
+</header>
+
+<div class="bandeau bleu" style="margin-top:0">L'ESSENTIEL</div>
+<div class="cols">
+
+<!-- ================= LECON 1 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 1&nbsp;: Définition et propriétés algébriques de ln</h2>
+
+<h3 class="rub">Définition</h3>
+<p>La fonction <b>logarithme népérien</b>, notée <span class="op">ln</span>, est la <b>primitive sur ]0&#8239;;&#8239;+&#8734;[ de la fonction <i>x</i>&#8239;<span class="ar">&#8614;</span>&#8239;<span class="f"><span>1</span><span><i>x</i></span></span> qui s'annule en 1</b>. Donc :</p></div>
+<ul>
+<li><span class="op">ln</span> est définie sur <span class="pt">]0&#8239;;&#8239;+&#8734;[</span> : <span class="op">ln</span>&#8239;<i>x</i> n'a de sens que pour <i>x</i>&#8239;&gt;&#8239;0 ;</li>
+<li><span class="op">ln</span>&#8242;(<i>x</i>)&#8239;=&#8239;<span class="f"><span>1</span><span><i>x</i></span></span> pour tout <i>x</i>&#8239;&gt;&#8239;0 ;</li>
+<li><span class="op">ln</span>&#8239;1&#8239;=&#8239;0.</li>
+</ul>
+<p><b>Composée.</b> <span class="op">ln</span>(<i>u</i>(<i>x</i>)) existe si et seulement si <i>x</i> appartient au domaine de <i>u</i> <b>et</b> <i>u</i>(<i>x</i>)&#8239;&gt;&#8239;0. Chercher l'ensemble de définition de <span class="op">ln</span>&#8239;<i>u</i>, c'est résoudre <i>u</i>(<i>x</i>)&#8239;&gt;&#8239;0.</p>
+</div>
+
+<div class="bloc">
+<div class="form">
+  <span class="t">PROPRIETES ALGEBRIQUES&nbsp;: pour <i>a</i>&#8239;&gt;&#8239;0, <i>b</i>&#8239;&gt;&#8239;0, <i>n</i>&#8239;&#8712;&#8239;&#8484;</span>
+  <div class="c m"><span class="op">ln</span>(<i>a</i>&#215;<i>b</i>)&#8239;=&#8239;<span class="op">ln</span>&#8239;<i>a</i>&#8239;+&#8239;<span class="op">ln</span>&#8239;<i>b</i></div>
+  <div class="c m"><span class="op">ln</span>&#8239;<span class="f"><span>1</span><span><i>b</i></span></span>&#8239;=&#8239;&#8722;<span class="op">ln</span>&#8239;<i>b</i> &nbsp;&nbsp;&nbsp; <span class="op">ln</span>&#8239;<span class="f"><span><i>a</i></span><span><i>b</i></span></span>&#8239;=&#8239;<span class="op">ln</span>&#8239;<i>a</i>&#8239;&#8722;&#8239;<span class="op">ln</span>&#8239;<i>b</i></div>
+  <div class="c m"><span class="op">ln</span>(<i>a</i><sup><i>n</i></sup>)&#8239;=&#8239;<i>n</i>&#8239;<span class="op">ln</span>&#8239;<i>a</i></div>
+  <div class="c m"><span class="op">ln</span>&#8730;<span class="rad"><i>a</i></span>&#8239;=&#8239;<span class="f"><span>1</span><span>2</span></span><span class="op">ln</span>&#8239;<i>a</i> &nbsp;&nbsp;&nbsp; <span class="op">ln</span>&#8239;<sup><i>n</i></sup>&#8730;<span class="rad"><i>a</i></span>&#8239;=&#8239;<span class="f"><span>1</span><span><i>n</i></span></span><span class="op">ln</span>&#8239;<i>a</i> &nbsp;(<i>n</i>&#8239;&#8805;&#8239;1)</div>
+</div>
+<p>Le logarithme <b>abaisse d'un cran</b> chaque opération : produit <span class="ar">&#8594;</span> somme, quotient <span class="ar">&#8594;</span> différence, puissance <span class="ar">&#8594;</span> produit, racine <span class="ar">&#8594;</span> quotient.</p>
+</div>
+
+<!-- ================= LECON 2 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 2&nbsp;: Etude de la fonction ln</h2>
+
+<h3 class="rub">Variations et signe</h3>
+<p><span class="op">ln</span>&#8242;(<i>x</i>)&#8239;=&#8239;<span class="f"><span>1</span><span><i>x</i></span></span>&#8239;&gt;&#8239;0 sur ]0&#8239;;&#8239;+&#8734;[ : <span class="op">ln</span> est <b>strictement croissante</b> sur ]0&#8239;;&#8239;+&#8734;[.</p></div>
+<p><span class="op">ln</span>&#8239;<i>x</i>&#8239;&gt;&#8239;0 <span class="ar">&#8660;</span> <i>x</i>&#8239;&gt;&#8239;1 &nbsp;&middot;&nbsp; <span class="op">ln</span>&#8239;<i>x</i>&#8239;&lt;&#8239;0 <span class="ar">&#8660;</span> 0&#8239;&lt;&#8239;<i>x</i>&#8239;&lt;&#8239;1 &nbsp;&middot;&nbsp; <span class="op">ln</span>&#8239;1&#8239;=&#8239;0.</p>
+<div class="form">
+  <span class="t">OUTIL DE RESOLUTION&nbsp;: pour <i>a</i>&#8239;&gt;&#8239;0, <i>b</i>&#8239;&gt;&#8239;0</span>
+  <div class="c m"><span class="op">ln</span>&#8239;<i>a</i>&#8239;=&#8239;<span class="op">ln</span>&#8239;<i>b</i>&nbsp;<span class="ar">&#8660;</span>&nbsp;<i>a</i>&#8239;=&#8239;<i>b</i></div>
+  <div class="c m"><span class="op">ln</span>&#8239;<i>a</i>&#8239;&lt;&#8239;<span class="op">ln</span>&#8239;<i>b</i>&nbsp;<span class="ar">&#8660;</span>&nbsp;<i>a</i>&#8239;&lt;&#8239;<i>b</i></div>
+</div>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Bijection et nombre e</h3>
+<p><span class="op">ln</span> est continue (car dérivable) et strictement croissante, avec <span class="pt">lim<sub><i>x</i><span class="ar">&#8594;</span>0<sup>+</sup></sub>&#8239;<span class="op">ln</span>&#8239;<i>x</i>&#8239;=&#8239;&#8722;&#8734;</span> et <span class="pt">lim<sub><i>x</i><span class="ar">&#8594;</span>+&#8734;</sub>&#8239;<span class="op">ln</span>&#8239;<i>x</i>&#8239;=&#8239;+&#8734;</span> : elle réalise une <b>bijection de ]0&#8239;;&#8239;+&#8734;[ sur &#8477;</b>. Pour tout réel <i>k</i>, l'équation <span class="op">ln</span>&#8239;<i>x</i>&#8239;=&#8239;<i>k</i> admet une <b>unique</b> solution.</p>
+<p><b>Le nombre <span class="op">e</span></b> (nombre de Neper) est l'unique réel tel que <span class="op">ln e</span>&#8239;=&#8239;1 ; 2&#8239;&lt;&#8239;<span class="op">e</span>&#8239;&lt;&#8239;3 et <span class="op">e</span>&#8239;&#8776;&#8239;2,718. Pour tout <i>n</i>&#8239;&#8712;&#8239;&#8484; : <span class="op">ln</span>(<span class="op">e</span><sup><i>n</i></sup>)&#8239;=&#8239;<i>n</i>.</p>
+<div class="form">
+  <span class="t">RESOLUTION DE BASE</span>
+  <div class="c m"><span class="op">ln</span>&#8239;<i>x</i>&#8239;=&#8239;<i>k</i>&nbsp;<span class="ar">&#8660;</span>&nbsp;<i>x</i>&#8239;=&#8239;<span class="op">e</span><sup><i>k</i></sup>&nbsp;&nbsp;(<i>x</i>&#8239;&gt;&#8239;0)</div>
+</div>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Dérivation</h3>
+<div class="form">
+  <span class="t">DERIVEE DE ln <i>u</i></span>
+  <div class="c m">(<span class="op">ln</span>&#8239;<i>u</i>)&#8242;&#8239;=&#8239;<span class="f"><span><i>u</i>&#8242;</span><span><i>u</i></span></span> &nbsp;&nbsp;&nbsp; (<span class="op">ln</span>&#8239;<i>x</i>)&#8242;&#8239;=&#8239;<span class="f"><span>1</span><span><i>x</i></span></span></div>
+</div>
+<p><i>u</i> dérivable et <b>strictement positive</b> sur l'intervalle <i>I</i>. Comme <i>u</i>&#8239;&gt;&#8239;0, <span class="f"><span><i>u</i>&#8242;</span><span><i>u</i></span></span> a le <b>signe de <i>u</i>&#8242;</b> : <span class="op">ln</span>&#8239;<i>u</i> varie dans le même sens que <i>u</i>.</p>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Limites, tangentes et courbe</h3>
+<ul>
+<li><span class="pt">lim<sub><i>x</i><span class="ar">&#8594;</span>0<sup>+</sup></sub>&#8239;<span class="op">ln</span>&#8239;<i>x</i>&#8239;=&#8239;&#8722;&#8734;</span> : l'<b>axe des ordonnées</b> (<i>x</i>&#8239;=&#8239;0) est <b>asymptote verticale</b>.</li>
+<li><span class="pt">lim<sub><i>x</i><span class="ar">&#8594;</span>+&#8734;</sub>&#8239;<span class="op">ln</span>&#8239;<i>x</i>&#8239;=&#8239;+&#8734;</span> ; <b>branche parabolique de direction (O<i>x</i>)</b>&nbsp;: aucune asymptote horizontale.</li>
+<li>Près de 0 : <span class="op">ln</span>(1&#8239;+&#8239;<i>x</i>)&#8239;&#8776;&#8239;<i>x</i>, c'est-à-dire <span class="pt">lim<sub><i>x</i><span class="ar">&#8594;</span>0</sub>&#8239;<span class="f"><span><span class="op">ln</span>(1&#8239;+&#8239;<i>x</i>)</span><span><i>x</i></span></span>&#8239;=&#8239;1</span>.</li>
+<li><b>Tangentes</b> : en A(1&#8239;;&#8239;0), <i>y</i>&#8239;=&#8239;<i>x</i>&#8239;&#8722;&#8239;1 ; en B(<span class="op">e</span>&#8239;;&#8239;1), <i>y</i>&#8239;=&#8239;<span class="f"><span><i>x</i></span><span><span class="op">e</span></span></span> (elle passe par l'origine).</li>
+</ul>
+</div>
+
+<div class="bloc">
+<table class="var">
+<tr><td class="lab"><i>x</i></td><td>0<sup>+</sup></td><td>1</td><td><span class="op">e</span></td><td>+&#8734;</td></tr>
+<tr><td class="lab">signe de <span class="op">ln</span>&#8242;(<i>x</i>)</td><td colspan="4">+ &nbsp;&nbsp; (partout sur ]0&#8239;;&#8239;+&#8734;[)</td></tr>
+<tr><td class="lab"><span class="op">ln</span>&#8239;<i>x</i></td><td>&#8722;&#8734;</td><td><span class="ar">&#8599;</span>&#8239;0</td><td><span class="ar">&#8599;</span>&#8239;1</td><td><span class="ar">&#8599;</span>&#8239;+&#8734;</td></tr>
+</table>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Croissances comparées</h3>
+<div class="form">
+  <div class="c m"><span class="pt">lim<sub><i>x</i><span class="ar">&#8594;</span>+&#8734;</sub>&#8239;<span class="f"><span><span class="op">ln</span>&#8239;<i>x</i></span><span><i>x</i><sup><i>n</i></sup></span></span>&#8239;=&#8239;0</span>&nbsp;(<i>n</i>&#8239;&#8805;&#8239;1) &nbsp;&nbsp; <span class="pt">lim<sub><i>x</i><span class="ar">&#8594;</span>0<sup>+</sup></sub>&#8239;<i>x</i>&#8239;<span class="op">ln</span>&#8239;<i>x</i>&#8239;=&#8239;0</span></div>
+  <div class="c m"><span class="op">ln</span>&#8239;<i>x</i>&#8239;&#8804;&#8239;<i>x</i>&#8239;&#8722;&#8239;1&#8239;&lt;&#8239;<i>x</i>&nbsp;&nbsp;pour tout <i>x</i>&#8239;&gt;&#8239;0</div>
+</div>
+<p>Egalité <span class="op">ln</span>&#8239;<i>x</i>&#8239;=&#8239;<i>x</i>&#8239;&#8722;&#8239;1 seulement pour <i>x</i>&#8239;=&#8239;1. Face à une puissance de <i>x</i>, le logarithme perd toujours.</p>
+</div>
+
+<!-- ================= LECON 3 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 3&nbsp;: Logarithme décimal et applications</h2>
+<div class="form">
+  <span class="t">DEFINITION DU LOGARITHME DECIMAL</span>
+  <div class="c m"><span class="op">log</span>&#8239;<i>x</i>&#8239;=&#8239;<span class="f"><span><span class="op">ln</span>&#8239;<i>x</i></span><span><span class="op">ln</span>&#8239;10</span></span>&nbsp;&nbsp;sur ]0&#8239;;&#8239;+&#8734;[</div>
+</div></div>
+<p>Comme <span class="op">ln</span>&#8239;10&#8239;&gt;&#8239;0, <span class="op">log</span> a <b>les mêmes propriétés algébriques</b> et <b>le même sens de variation</b> que <span class="op">ln</span> :</p>
+<ul>
+<li><span class="op">log</span>(<i>ab</i>)&#8239;=&#8239;<span class="op">log</span>&#8239;<i>a</i>&#8239;+&#8239;<span class="op">log</span>&#8239;<i>b</i> ; <span class="op">log</span>&#8239;<span class="f"><span><i>a</i></span><span><i>b</i></span></span>&#8239;=&#8239;<span class="op">log</span>&#8239;<i>a</i>&#8239;&#8722;&#8239;<span class="op">log</span>&#8239;<i>b</i> ; <span class="op">log</span>(<i>a</i><sup><i>n</i></sup>)&#8239;=&#8239;<i>n</i>&#8239;<span class="op">log</span>&#8239;<i>a</i> ;</li>
+<li><span class="op">log</span>&#8239;1&#8239;=&#8239;0, <span class="op">log</span>&#8239;10&#8239;=&#8239;1, <span class="op">log</span>(10<sup><i>n</i></sup>)&#8239;=&#8239;<i>n</i> ;</li>
+<li><span class="op">log</span> strictement croissante, et <span class="op">log</span>&#8239;<i>x</i>&#8239;&gt;&#8239;0 <span class="ar">&#8660;</span> <i>x</i>&#8239;&gt;&#8239;1 ;</li>
+<li><span class="op">log</span>&#8239;<i>x</i>&#8239;=&#8239;<i>k</i> <span class="ar">&#8660;</span> <i>x</i>&#8239;=&#8239;10<sup><i>k</i></sup> &nbsp;(<i>x</i>&#8239;&gt;&#8239;0).</li>
+</ul>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Echelles logarithmiques</h3>
+<table>
+<tr><th>Domaine</th><th>Formule</th></tr>
+<tr><td>Chimie&nbsp;&middot;&nbsp;acidité</td><td class="m">pH&#8239;=&#8239;&#8722;<span class="op">log</span>[H<sub>3</sub>O<sup>+</sup>] &nbsp;(mol/L)</td></tr>
+<tr><td>Acoustique&nbsp;&middot;&nbsp;décibels</td><td class="m"><i>L</i>&#8239;=&#8239;10&#8239;<span class="op">log</span>&#8239;<span class="f"><span><i>I</i></span><span><i>I</i><sub>0</sub></span></span></td></tr>
+<tr><td>Sismologie&nbsp;&middot;&nbsp;magnitude</td><td class="m"><i>M</i>&#8239;=&#8239;<span class="op">log</span>&#8239;<span class="f"><span><i>A</i></span><span><i>A</i><sub>0</sub></span></span></td></tr>
+</table>
+<p>Ces échelles comptent les <b>puissances de 10</b> : la grandeur physique est <b>multipliée par 10</b> quand <i>M</i> augmente de 1, quand <i>L</i> augmente de <b>10 dB</b>, et quand le pH <b>diminue</b> de 1 (le signe moins renverse le sens).</p>
+<div class="note"><b>Nombre de chiffres.</b> Si <i>N</i> est un entier naturel non nul et si <i>p</i> est l'entier tel que <i>p</i>&#8239;&#8804;&#8239;<span class="op">log</span>&#8239;<i>N</i>&#8239;&lt;&#8239;<i>p</i>&#8239;+&#8239;1, alors 10<sup><i>p</i></sup>&#8239;&#8804;&#8239;<i>N</i>&#8239;&lt;&#8239;10<sup><i>p</i>+1</sup> : <i>N</i> possède exactement <b><i>p</i>&#8239;+&#8239;1 chiffres</b>.</div>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Résoudre <span class="m"><i>t</i><sup><i>n</i></sup>&#8239;&#8805;&#8239;<i>k</i></span> ou <span class="m"><i>t</i><sup><i>n</i></sup>&#8239;&#8804;&#8239;<i>k</i></span> &nbsp;(<i>t</i>&#8239;&gt;&#8239;0, <i>k</i>&#8239;&gt;&#8239;0)</h3>
+<p>On applique <span class="op">ln</span> (le sens est <b>conservé</b> à cette étape), puis <span class="op">ln</span>(<i>t</i><sup><i>n</i></sup>)&#8239;=&#8239;<i>n</i>&#8239;<span class="op">ln</span>&#8239;<i>t</i>, puis on divise par <span class="op">ln</span>&#8239;<i>t</i> <b>en surveillant son signe</b> :</p>
+<table>
+<tr><th><i>t</i>&#8239;&gt;&#8239;1 &nbsp;(<span class="op">ln</span>&#8239;<i>t</i>&#8239;&gt;&#8239;0)</th><th>0&#8239;&lt;&#8239;<i>t</i>&#8239;&lt;&#8239;1 &nbsp;(<span class="op">ln</span>&#8239;<i>t</i>&#8239;&lt;&#8239;0)</th></tr>
+<tr>
+<td>Sens <b>conservé</b><br><span class="m"><i>t</i><sup><i>n</i></sup>&#8239;&#8805;&#8239;<i>k</i>&nbsp;<span class="ar">&#8660;</span>&nbsp;<i>n</i>&#8239;&#8805;&#8239;<span class="f"><span><span class="op">ln</span>&#8239;<i>k</i></span><span><span class="op">ln</span>&#8239;<i>t</i></span></span></span></td>
+<td>Sens <b>changé</b><br><span class="m"><i>t</i><sup><i>n</i></sup>&#8239;&#8804;&#8239;<i>k</i>&nbsp;<span class="ar">&#8660;</span>&nbsp;<i>n</i>&#8239;&#8805;&#8239;<span class="f"><span><span class="op">ln</span>&#8239;<i>k</i></span><span><span class="op">ln</span>&#8239;<i>t</i></span></span></span></td>
+</tr>
+</table>
+<p><i>n</i> comptant des périodes entières, on conclut par le plus petit entier qui convient, avec son unité.</p>
+</div>
+</div>
+
+<div class="bandeau vert">PIEGES ET ERREURS FREQUENTES</div>
+<div class="cols">
+<div class="pg"><div class="err"><span class="x">&#10007;</span> <span class="op">ln</span>(<i>a</i>&#8239;+&#8239;<i>b</i>)&#8239;=&#8239;<span class="op">ln</span>&#8239;<i>a</i>&#8239;+&#8239;<span class="op">ln</span>&#8239;<i>b</i></div><div class="cor"><span class="v">&#10003;</span> <span class="op">ln</span> ne se distribue pas sur une somme : la règle vaut pour le <b>produit</b>, <span class="op">ln</span>(<i>ab</i>)&#8239;=&#8239;<span class="op">ln</span>&#8239;<i>a</i>&#8239;+&#8239;<span class="op">ln</span>&#8239;<i>b</i>. Ainsi <span class="op">ln</span>(2&#8239;+&#8239;3)&#8239;=&#8239;<span class="op">ln</span>&#8239;5&#8239;&#8776;&#8239;1,61 alors que <span class="op">ln</span>&#8239;2&#8239;+&#8239;<span class="op">ln</span>&#8239;3&#8239;=&#8239;<span class="op">ln</span>&#8239;6&#8239;&#8776;&#8239;1,79.</div></div>
+<div class="pg"><div class="err"><span class="x">&#10007;</span> <span class="op">ln</span>(&#8722;2) existe et vaut un nombre négatif</div><div class="cor"><span class="v">&#10003;</span> <span class="op">ln</span> est définie <b>seulement</b> sur ]0&#8239;;&#8239;+&#8734;[ : <span class="op">ln</span>(&#8722;2) <b>n'existe pas</b>.</div></div>
+<div class="pg"><div class="err"><span class="x">&#10007;</span> (<span class="op">ln</span>&#8239;5)<sup>2</sup>&#8239;=&#8239;2&#8239;<span class="op">ln</span>&#8239;5</div><div class="cor"><span class="v">&#10003;</span> C'est <span class="op">ln</span>(5<sup>2</sup>) qui vaut 2&#8239;<span class="op">ln</span>&#8239;5 ; dans (<span class="op">ln</span>&#8239;5)<sup>2</sup> le carré porte sur le <b>résultat</b> : (<span class="op">ln</span>&#8239;5)<sup>2</sup>&#8239;&#8776;&#8239;2,59 contre 2&#8239;<span class="op">ln</span>&#8239;5&#8239;&#8776;&#8239;3,22.</div></div>
+<div class="pg"><div class="err"><span class="x">&#10007;</span> Dans <span class="op">ln</span>(3&#8239;&#8722;&#8239;<i>x</i>), la condition est <i>x</i>&#8239;&gt;&#8239;0</div><div class="cor"><span class="v">&#10003;</span> C'est la <b>quantité écrite sous le logarithme</b> qui doit être strictement positive : 3&#8239;&#8722;&#8239;<i>x</i>&#8239;&gt;&#8239;0, donc <i>x</i>&#8239;&lt;&#8239;3.</div></div>
+<div class="pg"><div class="err"><span class="x">&#10007;</span> On résout <span class="op">ln</span>(<i>x</i>&#8239;&#8722;&#8239;1)&#8239;=&#8239;<span class="op">ln</span>&#8239;5 par <i>x</i>&#8239;&#8722;&#8239;1&#8239;=&#8239;5, sans plus</div><div class="cor"><span class="v">&#10003;</span> La <b>condition d'existence</b> <i>x</i>&#8239;&#8722;&#8239;1&#8239;&gt;&#8239;0 se pose avant, et les solutions se confrontent à elle après : elle fait partie de la réponse.</div></div>
+<div class="pg"><div class="err"><span class="x">&#10007;</span> <span class="op">ln</span> croît lentement, donc sa courbe admet une asymptote horizontale en +&#8734;</div><div class="cor"><span class="v">&#10003;</span> <span class="pt">lim<sub><i>x</i><span class="ar">&#8594;</span>+&#8734;</sub>&#8239;<span class="op">ln</span>&#8239;<i>x</i>&#8239;=&#8239;+&#8734;</span> : aucun plafond. La lenteur se traduit par <span class="f"><span><span class="op">ln</span>&#8239;<i>x</i></span><span><i>x</i></span></span>&#8239;<span class="ar">&#8594;</span>&#8239;0, donc une <b>branche parabolique de direction (O<i>x</i>)</b>.</div></div>
+<div class="pg"><div class="err"><span class="x">&#10007;</span> 0,9<sup><i>n</i></sup>&#8239;&lt;&#8239;0,5 donne <i>n</i>&#8239;&lt;&#8239;<span class="f"><span><span class="op">ln</span>&#8239;0,5</span><span><span class="op">ln</span>&#8239;0,9</span></span></div><div class="cor"><span class="v">&#10003;</span> <span class="op">ln</span>&#8239;0,9 est <b>négatif</b> : la division retourne l'inégalité, donc <i>n</i>&#8239;&gt;&#8239;<span class="f"><span><span class="op">ln</span>&#8239;0,5</span><span><span class="op">ln</span>&#8239;0,9</span></span>. Ce n'est pas <span class="op">ln</span> qui change le sens, c'est la division par un nombre négatif.</div></div>
+<div class="pg"><div class="err"><span class="x">&#10007;</span> (<span class="op">ln</span>(3<i>x</i>&#8239;&#8722;&#8239;1))&#8242;&#8239;=&#8239;<span class="f"><span>1</span><span>3<i>x</i>&#8239;&#8722;&#8239;1</span></span> &nbsp;&middot;&nbsp; <span class="op">log</span> et <span class="op">ln</span> confondus</div><div class="cor"><span class="v">&#10003;</span> Le numérateur <i>u</i>&#8242; ne s'oublie pas : (<span class="op">ln</span>(3<i>x</i>&#8239;&#8722;&#8239;1))&#8242;&#8239;=&#8239;<span class="f"><span>3</span><span>3<i>x</i>&#8239;&#8722;&#8239;1</span></span>. Et <span class="op">log</span>&#8239;<i>x</i>&#8239;=&#8239;<span class="f"><span><span class="op">ln</span>&#8239;<i>x</i></span><span><span class="op">ln</span>&#8239;10</span></span> : les deux fonctions sont distinctes.</div></div>
+
+</div>
+
+<div class="bandeau bleu">A SAVOIR PAR COEUR AVANT LE DEVOIR</div>
+<div class="cols">
+
+<ol class="recap">
+<li><span class="op">ln</span> est définie sur ]0&#8239;;&#8239;+&#8734;[, <span class="op">ln</span>&#8239;1&#8239;=&#8239;0, <span class="op">ln e</span>&#8239;=&#8239;1, <span class="op">ln</span>&#8242;(<i>x</i>)&#8239;=&#8239;<span class="f"><span>1</span><span><i>x</i></span></span>.</li>
+<li>Les quatre règles : <span class="op">ln</span>(<i>ab</i>), <span class="op">ln</span>&#8239;<span class="f"><span><i>a</i></span><span><i>b</i></span></span>, <span class="op">ln</span>(<i>a<sup>n</sup></i>), <span class="op">ln</span>&#8730;<span class="rad"><i>a</i></span>, et jamais <span class="op">ln</span>(<i>a</i>&#8239;+&#8239;<i>b</i>).</li>
+<li><span class="op">ln</span>&#8239;<i>a</i>&#8239;=&#8239;<span class="op">ln</span>&#8239;<i>b</i>&#8239;<span class="ar">&#8660;</span>&#8239;<i>a</i>&#8239;=&#8239;<i>b</i> et <span class="op">ln</span>&#8239;<i>a</i>&#8239;&lt;&#8239;<span class="op">ln</span>&#8239;<i>b</i>&#8239;<span class="ar">&#8660;</span>&#8239;<i>a</i>&#8239;&lt;&#8239;<i>b</i> (<i>a</i>, <i>b</i>&#8239;&gt;&#8239;0).</li>
+<li><span class="op">ln</span>&#8239;<i>x</i>&#8239;=&#8239;<i>k</i>&#8239;<span class="ar">&#8660;</span>&#8239;<i>x</i>&#8239;=&#8239;<span class="op">e</span><sup><i>k</i></sup> &nbsp;&middot;&nbsp; <span class="op">log</span>&#8239;<i>x</i>&#8239;=&#8239;<i>k</i>&#8239;<span class="ar">&#8660;</span>&#8239;<i>x</i>&#8239;=&#8239;10<sup><i>k</i></sup>.</li>
+<li>(<span class="op">ln</span>&#8239;<i>u</i>)&#8242;&#8239;=&#8239;<span class="f"><span><i>u</i>&#8242;</span><span><i>u</i></span></span>, valable là où <i>u</i>&#8239;&gt;&#8239;0 ; <span class="op">ln</span>&#8239;<i>u</i> varie comme <i>u</i>.</li>
+<li>Limites : &#8722;&#8734; en 0<sup>+</sup> (asymptote <i>x</i>&#8239;=&#8239;0), +&#8734; en +&#8734; ; <span class="f"><span><span class="op">ln</span>&#8239;<i>x</i></span><span><i>x</i></span></span>&#8239;<span class="ar">&#8594;</span>&#8239;0 <b>en +&#8734;</b> et <i>x</i>&#8239;<span class="op">ln</span>&#8239;<i>x</i>&#8239;<span class="ar">&#8594;</span>&#8239;0 <b>en 0<sup>+</sup></b>.</li>
+<li>Tangentes : <i>y</i>&#8239;=&#8239;<i>x</i>&#8239;&#8722;&#8239;1 en 1, <i>y</i>&#8239;=&#8239;<span class="f"><span><i>x</i></span><span><span class="op">e</span></span></span> en <span class="op">e</span> ; branche parabolique de direction (O<i>x</i>).</li>
+<li>Poser la <b>condition d'existence</b>, puis <b>confronter</b> les solutions trouvées à cette condition.</li>
+</ol>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,341 @@
+{
+  "niveau": "1ère D",
+  "chapitre": "Chapitre 3 : Problèmes algébriques et numériques",
+  "source": "maths/1ereD/Chapitre_3_Problemes_algebriques_numeriques",
+  "nombre_cartes": 37,
+  "cartes": [
+    {
+      "id": "1D-CH03-001",
+      "lecon": "Equations avec radicaux",
+      "type": "definition",
+      "recto": "A quelle condition l'expression $\\sqrt{f(x)}$ a-t-elle un sens ?",
+      "verso": "Il faut que $f(x)\\ge 0$, car on ne prend la racine carrée que d'un nombre positif ou nul. Cette contrainte s'appelle la condition d'existence, et l'ensemble des $x$ qui la vérifient est l'ensemble de validité.",
+      "difficulte": 1,
+      "tags": ["radical", "condition-existence"]
+    },
+    {
+      "id": "1D-CH03-002",
+      "lecon": "Equations avec radicaux",
+      "type": "definition",
+      "recto": "Quels sont les deux faits à retenir sur $\\sqrt{a}$ lorsque $a\\ge 0$ ?",
+      "verso": "D'une part $\\left(\\sqrt{a}\\right)^{2}=a$, d'autre part $\\sqrt{a}\\ge 0$. Le second est aussi important que le premier : c'est lui qui interdit à une racine carrée d'être égale à un nombre négatif.",
+      "difficulte": 1,
+      "tags": ["racine-carree", "signe"]
+    },
+    {
+      "id": "1D-CH03-003",
+      "lecon": "Equations avec radicaux",
+      "type": "formule",
+      "recto": "A quel système de trois conditions l'équation $\\sqrt{f(x)}=g(x)$ équivaut-elle ?",
+      "verso": "Aux trois conditions à réaliser simultanément $f(x)\\ge 0$, $g(x)\\ge 0$ et $f(x)=\\left(g(x)\\right)^{2}$. La première assure l'existence du radical, la deuxième traduit la positivité d'une racine carrée, la troisième vient de l'élévation au carré.",
+      "difficulte": 2,
+      "tags": ["equation-radical", "conditions"]
+    },
+    {
+      "id": "1D-CH03-004",
+      "lecon": "Equations avec radicaux",
+      "type": "formule",
+      "recto": "Pourquoi les deux conditions de positivité rendent-elles le passage au carré réversible ?",
+      "verso": "Parce que deux nombres positifs qui ont le même carré sont égaux. Sans elles, $f(x)=\\left(g(x)\\right)^{2}$ ne donne que $\\sqrt{f(x)}=\\left|g(x)\\right|$, ce qui laisse ouverte la possibilité $\\sqrt{f(x)}=-g(x)$, source des solutions parasites.",
+      "difficulte": 3,
+      "tags": ["equivalence", "carre", "conditions"]
+    },
+    {
+      "id": "1D-CH03-005",
+      "lecon": "Equations avec radicaux",
+      "type": "formule",
+      "recto": "A quoi équivaut l'équation $\\sqrt{f(x)}=\\sqrt{g(x)}$ ?",
+      "verso": "Au système formé de $f(x)\\ge 0$ et $f(x)=g(x)$. Aucune condition de signe n'est à ajouter, les deux membres étant des racines carrées donc déjà positifs, et une seule condition d'existence suffit puisque l'autre en découle.",
+      "difficulte": 2,
+      "tags": ["deux-radicaux", "equation-radical"]
+    },
+    {
+      "id": "1D-CH03-006",
+      "lecon": "Equations avec radicaux",
+      "type": "formule",
+      "recto": "Que donne l'équation $\\sqrt{f(x)}=k$ selon le signe du nombre $k$ ?",
+      "verso": "Si $k<0$, elle n'a aucune solution, car une racine carrée n'est jamais négative. Si $k\\ge 0$, elle équivaut à $f(x)=k^{2}$. Devant $\\sqrt{x+3}=-1$, on conclut donc en une ligne sans élever quoi que ce soit au carré.",
+      "difficulte": 2,
+      "tags": ["equation-radical", "second-membre-constant"]
+    },
+    {
+      "id": "1D-CH03-007",
+      "lecon": "Equations avec radicaux",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on une solution parasite d'une équation avec radical ?",
+      "verso": "C'est une valeur produite par la méthode, en général après élévation au carré, mais rejetée par l'équation de départ. Dans $\\sqrt{x+2}=x$, le carré fournit $2$ et $-1$, et $-1$ est parasite puisque $\\sqrt{1}=1$ n'est pas égal à $-1$.",
+      "difficulte": 2,
+      "tags": ["solution-parasite", "verification"]
+    },
+    {
+      "id": "1D-CH03-008",
+      "lecon": "Equations avec radicaux",
+      "type": "formule",
+      "recto": "Pourquoi élever une égalité au carré est-il une implication et non une équivalence ?",
+      "verso": "Parce que $A=B$ entraîne $A^{2}=B^{2}$, alors que $A^{2}=B^{2}$ signifie seulement $\\left|A\\right|=\\left|B\\right|$, c'est-à-dire $A=B$ ou $A=-B$. Le carré confond un nombre et son opposé : il peut ajouter des solutions, jamais en enlever.",
+      "difficulte": 2,
+      "tags": ["implication", "carre", "equivalence"]
+    },
+    {
+      "id": "1D-CH03-009",
+      "lecon": "Equations avec radicaux",
+      "type": "formule",
+      "recto": "Que vaut $\\sqrt{a^{2}}$ pour un réel $a$ quelconque ?",
+      "verso": "Cela vaut $\\left|a\\right|$, et non $a$. Ainsi $\\sqrt{\\left(-3\\right)^{2}}=\\sqrt{9}=3=\\left|-3\\right|$. La conséquence est que $A^{2}=B^{2}$ équivaut à $\\left|A\\right|=\\left|B\\right|$.",
+      "difficulte": 2,
+      "tags": ["valeur-absolue", "racine-carree"]
+    },
+    {
+      "id": "1D-CH03-010",
+      "lecon": "Equations avec radicaux",
+      "type": "formule",
+      "recto": "Pourquoi ne peut-on pas élever directement au carré l'équation $\\sqrt{x+5}-\\sqrt{x}=1$ ?",
+      "verso": "Parce que le carré d'une différence ferait réapparaître un produit de deux radicaux. On isole d'abord un radical dans chaque membre, en écrivant $\\sqrt{x+5}=1+\\sqrt{x}$, puis on élève au carré : il ne reste alors plus qu'un seul radical.",
+      "difficulte": 2,
+      "tags": ["deux-radicaux", "isoler"]
+    },
+    {
+      "id": "1D-CH03-011",
+      "lecon": "Equations avec radicaux",
+      "type": "definition",
+      "recto": "Pourquoi la seule condition d'existence ne suffit-elle pas à écarter les solutions parasites ?",
+      "verso": "Parce qu'une valeur parasite peut la vérifier : dans $\\sqrt{x+2}=x$, le nombre $-1$ satisfait bien $x+2\\ge 0$. C'est la condition de signe $g(x)\\ge 0$, portant sur le second membre, qui l'élimine.",
+      "difficulte": 3,
+      "tags": ["piege", "condition-signe", "solution-parasite"]
+    },
+    {
+      "id": "1D-CH03-012",
+      "lecon": "Equations avec radicaux",
+      "type": "formule",
+      "recto": "Pourquoi $\\left(x+2\\right)^{2}$ n'est-il pas égal à $x^{2}+4$ ?",
+      "verso": "Parce que le carré d'une somme n'est pas la somme des carrés : le double produit manque, et $\\left(x+2\\right)^{2}=x^{2}+4x+4$. L'oublier transforme une équation du second degré en équation du premier degré, donc fausse le nombre de candidats.",
+      "difficulte": 3,
+      "tags": ["piege", "identite-remarquable"]
+    },
+    {
+      "id": "1D-CH03-013",
+      "lecon": "Equations avec radicaux",
+      "type": "formule",
+      "recto": "Pourquoi $\\sqrt{a+b}$ n'est-il pas égal à $\\sqrt{a}+\\sqrt{b}$ ?",
+      "verso": "Un contre-exemple suffit à le montrer : pour $a=9$ et $b=16$, on obtient $\\sqrt{25}=5$ d'un côté et $3+4=7$ de l'autre. La racine carrée ne se distribue pas sur une somme.",
+      "difficulte": 3,
+      "tags": ["piege", "radical", "contre-exemple"]
+    },
+    {
+      "id": "1D-CH03-014",
+      "lecon": "Inéquations avec radicaux",
+      "type": "formule",
+      "recto": "A quel système de conditions l'inéquation $\\sqrt{f(x)}<g(x)$ équivaut-elle ?",
+      "verso": "Aux trois conditions simultanées $f(x)\\ge 0$, $g(x)>0$ et $f(x)<\\left(g(x)\\right)^{2}$. L'ensemble des solutions est l'intersection des trois ensembles obtenus.",
+      "difficulte": 2,
+      "tags": ["inequation-radical", "intersection"]
+    },
+    {
+      "id": "1D-CH03-015",
+      "lecon": "Inéquations avec radicaux",
+      "type": "formule",
+      "recto": "Que deviennent les conditions lorsque l'inéquation s'écrit $\\sqrt{f(x)}\\le g(x)$ ?",
+      "verso": "La condition de signe devient $g(x)\\ge 0$ et le passage au carré donne $f(x)\\le\\left(g(x)\\right)^{2}$, la condition d'existence $f(x)\\ge 0$ restant inchangée. Une inégalité large s'écrit donc dès le départ, on n'ajoute pas la borne après coup.",
+      "difficulte": 2,
+      "tags": ["inequation-radical", "inegalite-large"]
+    },
+    {
+      "id": "1D-CH03-016",
+      "lecon": "Inéquations avec radicaux",
+      "type": "formule",
+      "recto": "Comment résout-on l'inéquation $\\sqrt{f(x)}>g(x)$ ?",
+      "verso": "En distinguant deux cas selon le signe du second membre. Si $g(x)<0$, l'inégalité est vraie partout où $f(x)\\ge 0$. Si $g(x)\\ge 0$, elle équivaut à $f(x)>\\left(g(x)\\right)^{2}$. L'ensemble des solutions est la réunion des deux ensembles.",
+      "difficulte": 2,
+      "tags": ["inequation-radical", "disjonction-cas", "reunion"]
+    },
+    {
+      "id": "1D-CH03-017",
+      "lecon": "Inéquations avec radicaux",
+      "type": "formule",
+      "recto": "Pourquoi prend-on une intersection pour $\\sqrt{f(x)}<g(x)$ et une réunion pour $\\sqrt{f(x)}>g(x)$ ?",
+      "verso": "Quand le second membre est négatif, l'inégalité inférieure devient impossible et tout ce morceau disparaît, d'où l'intersection ; l'inégalité supérieure devient au contraire certaine et tout ce morceau s'ajoute d'un coup, d'où la réunion.",
+      "difficulte": 3,
+      "tags": ["intersection", "reunion", "inequation-radical"]
+    },
+    {
+      "id": "1D-CH03-018",
+      "lecon": "Inéquations avec radicaux",
+      "type": "formule",
+      "recto": "A quoi équivaut l'inéquation $\\sqrt{f(x)}<\\sqrt{g(x)}$ ?",
+      "verso": "A la double condition $0\\le f(x)<g(x)$. Aucune condition de signe n'est à discuter, et une seule condition d'existence suffit : si $0\\le f(x)$ et $f(x)<g(x)$, alors $g(x)$ est positif de lui-même.",
+      "difficulte": 2,
+      "tags": ["deux-radicaux", "inequation-radical"]
+    },
+    {
+      "id": "1D-CH03-019",
+      "lecon": "Inéquations avec radicaux",
+      "type": "definition",
+      "recto": "Pourquoi comparer deux racines carrées revient-il à comparer les nombres placés sous les radicaux ?",
+      "verso": "Parce que la fonction racine carrée est croissante : plus le nombre sous le radical est grand, plus sa racine est grande. L'inégalité se transmet donc du radicande à la racine sans changer de sens.",
+      "difficulte": 2,
+      "tags": ["croissance", "racine-carree"]
+    },
+    {
+      "id": "1D-CH03-020",
+      "lecon": "Inéquations avec radicaux",
+      "type": "formule",
+      "recto": "Sur quels nombres l'élévation au carré conserve-t-elle l'ordre ?",
+      "verso": "Sur les nombres positifs : si $0\\le A<B$, alors $A^{2}<B^{2}$. Sur les nombres négatifs, le carré renverse l'ordre, puisque $-5<-2$ et pourtant $25>4$. Pour des signes contraires, aucune conclusion générale n'est possible.",
+      "difficulte": 3,
+      "tags": ["carre", "ordre", "signe"]
+    },
+    {
+      "id": "1D-CH03-021",
+      "lecon": "Inéquations avec radicaux",
+      "type": "formule",
+      "recto": "D'où vient la condition $g(x)>0$ dans la résolution de $\\sqrt{f(x)}<g(x)$ ?",
+      "verso": "Du symbole radical lui-même : une racine carrée étant positive ou nulle, elle ne peut être strictement inférieure à $g(x)$ que si $g(x)$ est strictement positif. Cette condition n'est écrite nulle part dans l'énoncé, elle se lit dans le symbole.",
+      "difficulte": 2,
+      "tags": ["condition-signe", "inequation-radical"]
+    },
+    {
+      "id": "1D-CH03-022",
+      "lecon": "Inéquations avec radicaux",
+      "type": "definition",
+      "recto": "Pourquoi ne peut-on pas se contenter de vérifier à la fin, comme pour une équation avec radical ?",
+      "verso": "Parce que l'ensemble solution d'une inéquation contient une infinité de valeurs, impossibles à tester une à une. Les conditions se posent donc avant le calcul, et l'on croise ensuite les ensembles obtenus.",
+      "difficulte": 3,
+      "tags": ["piege", "inequation-radical", "conditions"]
+    },
+    {
+      "id": "1D-CH03-023",
+      "lecon": "Inéquations avec radicaux",
+      "type": "definition",
+      "recto": "Quelle forme prend l'ensemble de validité lorsque la quantité sous le radical est un trinôme du second degré ?",
+      "verso": "Ce n'est plus un seul intervalle, mais souvent une réunion de deux intervalles. Pour $\\sqrt{x^{2}-4}$, la condition $x^{2}-4\\ge 0$ donne $\\left]-\\infty\\,;-2\\right]\\cup\\left[2\\,;+\\infty\\right[$, et l'intersection finale se fait morceau par morceau.",
+      "difficulte": 3,
+      "tags": ["ensemble-validite", "trinome"]
+    },
+    {
+      "id": "1D-CH03-024",
+      "lecon": "Inéquations avec radicaux",
+      "type": "formule",
+      "recto": "Quel est le signe du trinôme $ax^{2}+bx+c$ lorsque son discriminant est strictement positif ?",
+      "verso": "Il est du signe de $a$ à l'extérieur des racines et du signe contraire entre les racines. Si $\\Delta\\le 0$, il garde partout le signe de $a$, en s'annulant en la racine double lorsque $\\Delta=0$.",
+      "difficulte": 2,
+      "tags": ["trinome", "signe", "discriminant"]
+    },
+    {
+      "id": "1D-CH03-025",
+      "lecon": "Systèmes linéaires",
+      "type": "definition",
+      "recto": "Quand dit-on qu'une équation est linéaire ?",
+      "verso": "Lorsque chaque inconnue y figure au premier degré seulement, sans carré, sans produit d'inconnues et sans radical. Le système formé de $x+y=5$ et $xy=6$ n'est donc pas linéaire.",
+      "difficulte": 1,
+      "tags": ["systeme-lineaire", "definition"]
+    },
+    {
+      "id": "1D-CH03-026",
+      "lecon": "Systèmes linéaires",
+      "type": "definition",
+      "recto": "Sous quelle forme s'écrit la solution d'un système à deux inconnues, puis à trois inconnues ?",
+      "verso": "C'est un couple $\\left(x\\,;y\\right)$ pour deux inconnues et un triplet $\\left(x\\,;y\\,;z\\right)$ pour trois. Résoudre un système, c'est trouver toutes les valeurs qui vérifient toutes les équations à la fois, et non deux nombres séparés.",
+      "difficulte": 1,
+      "tags": ["couple", "triplet", "systeme-lineaire"]
+    },
+    {
+      "id": "1D-CH03-027",
+      "lecon": "Systèmes linéaires",
+      "type": "definition",
+      "recto": "Que signifie l'expression deux systèmes équivalents ?",
+      "verso": "Elle signifie que les deux systèmes ont exactement le même ensemble de solutions. Toute la résolution consiste à remplacer un système par un système équivalent, mais plus simple à lire.",
+      "difficulte": 1,
+      "tags": ["systeme-equivalent", "definition"]
+    },
+    {
+      "id": "1D-CH03-028",
+      "lecon": "Systèmes linéaires",
+      "type": "formule",
+      "recto": "Quelles opérations transforment un système en un système équivalent ?",
+      "verso": "Echanger deux équations, multiplier les deux membres d'une équation par un nombre non nul, ou ajouter à une équation un multiple d'une autre équation. On les note en marge, par exemple $L_2\\leftarrow L_2-2L_1$.",
+      "difficulte": 2,
+      "tags": ["operations", "systeme-equivalent"]
+    },
+    {
+      "id": "1D-CH03-029",
+      "lecon": "Systèmes linéaires",
+      "type": "formule",
+      "recto": "Pourquoi exige-t-on un multiplicateur non nul et un multiple d'une autre équation ?",
+      "verso": "Multiplier par $0$ donnerait $0=0$, vraie pour tout couple, donc perdrait une information. Ajouter à $L_2$ un multiple d'elle-même pourrait la faire disparaître. Ces précautions garantissent le retour en arrière, et c'est le retour qui fait l'équivalence.",
+      "difficulte": 3,
+      "tags": ["operations", "systeme-equivalent", "piege"]
+    },
+    {
+      "id": "1D-CH03-030",
+      "lecon": "Systèmes linéaires",
+      "type": "formule",
+      "recto": "Quelles sont les trois configurations possibles pour un système linéaire de deux équations à deux inconnues ?",
+      "verso": "Chaque équation $ax+by=c$ représente une droite. Les droites sécantes donnent une solution unique, les droites strictement parallèles aucune solution, les droites confondues une infinité de solutions.",
+      "difficulte": 2,
+      "tags": ["nombre-solutions", "droites"]
+    },
+    {
+      "id": "1D-CH03-031",
+      "lecon": "Systèmes linéaires",
+      "type": "formule",
+      "recto": "Quel nombre indique que le système formé de $ax+by=c$ et $a'x+b'y=c'$ a une solution unique ?",
+      "verso": "Le déterminant $ab'-a'b$ : s'il n'est pas nul, les droites sont sécantes et la solution est unique. S'il est nul, les couples $\\left(a\\,;b\\right)$ et $\\left(a'\\,;b'\\right)$ sont proportionnels et les deux droites ont la même direction.",
+      "difficulte": 2,
+      "tags": ["determinant", "solution-unique"]
+    },
+    {
+      "id": "1D-CH03-032",
+      "lecon": "Systèmes linéaires",
+      "type": "formule",
+      "recto": "Que conclure lorsqu'un calcul de système aboutit à $0=3$, et lorsqu'il aboutit à $0=0$ ?",
+      "verso": "L'égalité absurde $0=3$ signale des droites strictement parallèles, donc aucune solution. L'égalité toujours vraie $0=0$ signale des droites confondues, donc une infinité de solutions. Intervertir ces deux conclusions est l'erreur classique.",
+      "difficulte": 3,
+      "tags": ["piege", "nombre-solutions"]
+    },
+    {
+      "id": "1D-CH03-033",
+      "lecon": "Systèmes linéaires",
+      "type": "definition",
+      "recto": "En quoi consiste la méthode des combinaisons sur un système de deux équations ?",
+      "verso": "A multiplier une équation, ou les deux, pour rendre égaux au signe près les coefficients d'une même inconnue, puis à additionner ou soustraire les deux équations pour la faire disparaître. Il reste une équation à une seule inconnue.",
+      "difficulte": 2,
+      "tags": ["combinaison", "elimination"]
+    },
+    {
+      "id": "1D-CH03-034",
+      "lecon": "Systèmes linéaires",
+      "type": "definition",
+      "recto": "En quoi consiste le pivot de Gauss ?",
+      "verso": "A éliminer les inconnues l'une après l'autre, de proche en proche, jusqu'à obtenir une forme en escalier que l'on résout de bas en haut. Ce n'est pas une autre méthode que les combinaisons : c'est la même, conduite avec méthode.",
+      "difficulte": 2,
+      "tags": ["pivot-de-gauss", "escalier"]
+    },
+    {
+      "id": "1D-CH03-035",
+      "lecon": "Systèmes linéaires",
+      "type": "definition",
+      "recto": "En quoi consiste la résolution d'un système par substitution ?",
+      "verso": "A exprimer une inconnue en fonction de l'autre, de préférence dans une équation où son coefficient vaut $1$ ou $-1$, puis à remplacer cette inconnue par son expression dans toutes les autres équations. Le système perd une inconnue et une équation.",
+      "difficulte": 1,
+      "tags": ["substitution", "systeme-lineaire"]
+    },
+    {
+      "id": "1D-CH03-036",
+      "lecon": "Systèmes linéaires",
+      "type": "formule",
+      "recto": "Pourquoi le remplacement de $L_2$ par $L_2-kL_1$ conserve-t-il l'ensemble des solutions ?",
+      "verso": "Une solution des deux équations vérifie aussi $L_2-kL_1$. Réciproquement, une solution de $L_1$ et de $L_2-kL_1$ vérifie la somme $\\left(L_2-kL_1\\right)+kL_1$, qui n'est autre que $L_2$. C'est la conservation de $L_1$ qui rend ce retour possible.",
+      "difficulte": 3,
+      "tags": ["combinaison", "systeme-equivalent", "demonstration"]
+    },
+    {
+      "id": "1D-CH03-037",
+      "lecon": "Systèmes linéaires",
+      "type": "formule",
+      "recto": "Comment traduit-on le partage d'une somme $S$ proportionnellement à trois nombres $p$, $q$ et $r$ ?",
+      "verso": "On écrit les parts sous la forme $pk$, $qk$ et $rk$, avec un même coefficient inconnu $k$, puis on résout $\\left(p+q+r\\right)k=S$. Un partage proportionnel n'introduit donc qu'une seule inconnue véritable, quel que soit le nombre de parts.",
+      "difficulte": 2,
+      "tags": ["partage-proportionnel", "mise-en-equation"]
+    }
+  ]
+}

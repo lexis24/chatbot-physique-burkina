@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Fiche de revision - 3eme - Chapitre 17 : Applications lineaires et applications affines</title>
+<style>
+/* ===================================================================
+   FICHE DE REVISION, Collection Hakili Lab, Edition 2026
+   Feuille de style autonome, format A4 pret a imprimer.
+   Bleu #005CB9 · Vert #49A145
+   =================================================================== */
+:root{
+  --bleu:#005CB9; --bleu-fonce:#00429A; --bleu-pale:#E8F1FB; --bleu-bord:#B7D2EE;
+  --vert:#49A145; --vert-fonce:#2F7A2C; --vert-pale:#EDF7EC; --vert-bord:#BCE0B9;
+  --gris:#4A4A4A; --gris-clair:#E4E4E4; --rouge:#B3261E;
+}
+@page{
+  size:A4; margin:15mm;
+  @bottom-center{
+    content:"Collection Hakili Lab, Edition 2026  ·  Fiche de revision  ·  " counter(page) "/" counter(pages);
+    font-family:"Segoe UI",Calibri,Arial,sans-serif; font-size:6.6pt; color:#8A8A8A;
+  }
+}
+*{box-sizing:border-box;}
+body{
+  margin:0; font-family:"Segoe UI",Calibri,Arial,sans-serif;
+  font-size:8.4pt; line-height:1.26; color:#1B1B1B;
+}
+p{margin:0 0 3pt;}
+ul{margin:0 0 3pt; padding-left:11pt;}
+li{margin:0 0 1.2pt;}
+b,strong{color:var(--bleu-fonce);}
+
+/* ------------------------------ ENTETE ---------------------------- */
+.entete{
+  display:flex; align-items:stretch; border:1.6pt solid var(--bleu);
+  border-radius:2.5pt; overflow:hidden; margin-bottom:6pt;
+}
+.entete .num{
+  background:var(--bleu); color:#fff; font-size:20pt; font-weight:700;
+  padding:0 8pt; display:flex; align-items:center; justify-content:center; min-width:34pt;
+}
+.entete .txt{padding:3.5pt 8pt; flex:1;}
+.entete .niveau{
+  font-size:7pt; font-weight:700; letter-spacing:.9pt; color:var(--vert-fonce);
+}
+.entete h1{margin:0; font-size:13.5pt; line-height:1.12; color:var(--bleu-fonce); font-weight:700;}
+.entete .sous{font-size:7pt; color:var(--gris); margin-top:1pt;}
+
+/* --------------------------- BANDEAUX ----------------------------- */
+.bandeau{
+  color:#fff; font-weight:700; font-size:9pt; letter-spacing:1pt;
+  padding:2.4pt 7pt; border-radius:2pt; margin:3pt 0 4pt; break-after:avoid; page-break-after:avoid;
+}
+.bandeau.bleu{background:var(--bleu);}
+.bandeau.vert{background:var(--vert);}
+
+/* --------------------------- COLONNES ----------------------------- */
+.cols{column-count:2; column-gap:7mm; column-fill:balance;}
+
+.cols.bal{column-fill:balance;}
+.bloc{margin-bottom:5pt;}
+.keep{break-inside:avoid; page-break-inside:avoid;}
+
+/* --------------------------- LECONS ------------------------------- */
+h2.lecon{
+  margin:0 0 3pt; font-size:8.6pt; font-weight:700; color:#fff; background:var(--bleu-fonce);
+  padding:1.8pt 5pt; border-radius:1.5pt; break-after:avoid; page-break-after:avoid;
+}
+h3.rub{
+  margin:3.5pt 0 1.5pt; font-size:8.2pt; font-weight:700; color:var(--vert-fonce);
+  border-bottom:.7pt solid var(--vert-bord); padding-bottom:.8pt;
+  break-after:avoid; page-break-after:avoid;
+}
+
+/* --------------------------- ENCADRES ----------------------------- */
+.form{
+  background:var(--bleu-pale); border:.8pt solid var(--bleu-bord); border-left:2.6pt solid var(--bleu);
+  border-radius:2pt; padding:2.4pt 5pt; margin:2.2pt 0 3.4pt;
+  break-inside:avoid; page-break-inside:avoid;
+}
+.form .t{
+  display:block; font-size:6.8pt; font-weight:700; letter-spacing:.6pt;
+  color:var(--bleu); margin-bottom:1.5pt;
+}
+.form .c{text-align:center; font-size:9.1pt; margin:1.6pt 0;}
+.note{background:var(--vert-pale); border-left:2.4pt solid var(--vert); padding:2.4pt 5pt; border-radius:1.5pt; margin:2.5pt 0 4pt; break-inside:avoid;}
+
+/* --------------------------- TABLEAUX ----------------------------- */
+table{width:100%; border-collapse:collapse; font-size:7.6pt; margin:2pt 0 4pt; break-inside:avoid;}
+th{background:var(--bleu); color:#fff; font-weight:700; text-align:left; padding:1.8pt 4pt; font-size:7.2pt;}
+td{border:.6pt solid var(--gris-clair); padding:1.8pt 4pt; vertical-align:top;}
+tr{break-inside:avoid;}
+table.var td{text-align:center; font-size:8pt;}
+table.var td.lab{text-align:left; font-weight:700; color:var(--bleu-fonce); background:var(--bleu-pale);}
+
+/* ----------------------------- PIEGES ----------------------------- */
+table.pieges th:first-child{width:44%;}
+table.pieges td:first-child{color:var(--rouge); background:#FDF1F0;}
+.x{font-weight:700;}
+.v{color:var(--vert-fonce); font-weight:700;}
+
+/* ---------------------------- RECAP ------------------------------- */
+ol.recap{margin:0; padding-left:0; list-style:none; counter-reset:r;}
+ol.recap li{
+  counter-increment:r; position:relative; padding-left:13pt; margin-bottom:1.8pt;
+  break-inside:avoid;
+}
+ol.recap li::before{
+  content:counter(r); position:absolute; left:0; top:.3pt;
+  width:10pt; height:10pt; border-radius:50%; background:var(--vert); color:#fff;
+  font-size:6.6pt; font-weight:700; text-align:center; line-height:10pt;
+}
+
+/* --------------------------- MATHS -------------------------------- */
+.m{font-family:Cambria,Georgia,"Times New Roman",serif;}
+i,var{font-family:Cambria,Georgia,"Times New Roman",serif; font-style:italic;}
+.op{font-family:Cambria,Georgia,"Times New Roman",serif; font-style:normal;}
+.f{display:inline-block; vertical-align:middle; text-align:center;
+   margin:0 .12em; line-height:1.06; font-family:Cambria,Georgia,"Times New Roman",serif;}
+.f>span{display:block; padding:0 .2em;}
+.f>span:first-child{border-bottom:.6pt solid currentColor; padding-bottom:.08em;}
+.f>span:last-child{padding-top:.04em;}
+.rad{border-top:.6pt solid currentColor; padding-top:.12em;}
+/* line-height:0 evite que l'exposant n'ecarte les lignes ; position:relative le
+   repositionne sans qu'il heurte la barre de fraction ni le trait du radical. */
+sup,sub{font-size:.68em; line-height:0; position:relative; vertical-align:baseline;}
+sup{top:-.42em;}
+sub{bottom:-.22em;}
+.pt{white-space:nowrap;}
+/* Les fleches n'ont qu'un glyphe atrophie dans la fonte serif : on les force
+   en sans-serif, ou elles sont franches meme a 8 pt. */
+.ar{font-family:"Segoe UI",Calibri,Arial,"DejaVu Sans",sans-serif; font-style:normal;}
+
+/* ------------------- PIEGES : blocs erreur / correction ------------- */
+.pg{font-size:8.1pt; border-left:2.4pt solid var(--rouge); background:#FDF1F0; border-radius:1.5pt;
+    padding:2pt 5pt; margin:0 0 2.8pt; break-inside:avoid; page-break-inside:avoid;}
+.pg .err{color:var(--rouge); font-weight:600;}
+.pg .cor{color:#1B1B1B; margin-top:.8pt;}
+.pg .cor b{color:var(--bleu-fonce);}
+.v{color:var(--vert-fonce); font-weight:700;}
+
+</style>
+</head>
+<body>
+<header class="entete">
+  <div class="num">17</div>
+  <div class="txt">
+    <div class="niveau">3EME &middot; MATHEMATIQUES</div>
+    <h1>Applications linéaires et applications affines</h1>
+    <div class="sous">Leçon 1 : l'application linéaire &middot; Leçon 2 : les propriétés de l'application linéaire &middot; Leçon 3 : l'application affine et son sens de variation &middot; Leçon 4 : la représentation graphique d'une application affine &middot; Leçon 5 : l'application affine par intervalles &middot; Leçon 6 : déterminer une application affine et résoudre des problèmes</div>
+  </div>
+</header>
+
+<div class="bandeau bleu" style="margin-top:0">L'ESSENTIEL</div>
+<div class="cols">
+
+<!-- ================= LECON 1 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 1&nbsp;: L'application linéaire</h2>
+<p>Une <b>application linéaire</b> est une application de la forme <span class="pt"><i>f</i>(<i>x</i>)&#8239;=&#8239;<i>ax</i></span>, où <i>a</i> est un nombre réel <b>fixé</b> appelé <b>coefficient</b> de l'application. Elle traduit une <b>proportionnalité</b> : <i>f</i>(<i>x</i>) est proportionnel à <i>x</i>, et <i>a</i> est le coefficient de proportionnalité.</p></div>
+<div class="form">
+  <span class="t">APPLICATION LINEAIRE&nbsp;: DEFINITION ET COEFFICIENT</span>
+  <div class="c m"><i>f</i>(<i>x</i>)&#8239;=&#8239;<i>ax</i> &nbsp;&nbsp;&middot;&nbsp;&nbsp; <i>f</i>(0)&#8239;=&#8239;0</div>
+  <div class="c m"><i>a</i>&#8239;=&#8239;<span class="f"><span><i>f</i>(<i>x</i>)</span><span><i>x</i></span></span> &nbsp;&nbsp;pour <i>x</i>&#8239;&#8800;&#8239;0</div>
+</div>
+<ul>
+<li>La <b>représentation graphique</b> est une <b>droite qui passe par l'origine</b> du repère.</li>
+<li>Le coefficient est l'<b>image divisée par le nombre de départ</b>, jamais l'inverse.</li>
+<li>Deux applications linéaires de <b>coefficients différents</b> sont différentes : le coefficient détermine entièrement l'application.</li>
+</ul>
+<p><b>Reconnaître.</b> L'expression doit s'écrire <i>ax</i>, un nombre multiplié par <i>x</i>, <b>sans aucun terme constant ajouté</b>. On conclut sous la forme <span class="pt"><i>f</i>(<i>x</i>)&#8239;=&#8239;<i>ax</i></span> en remplaçant <i>a</i> par sa valeur, puis l'on contrôle en recalculant l'image donnée.</p>
+</div>
+
+<!-- ================= LECON 2 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 2&nbsp;: Les propriétés de l'application linéaire</h2>
+<p>Soit <i>f</i> l'application linéaire définie par <span class="pt"><i>f</i>(<i>x</i>)&#8239;=&#8239;<i>ax</i></span>. Pour tous nombres <i>x</i> et <i>y</i> et pour tout nombre <i>k</i> :</p></div>
+<div class="form">
+  <span class="t">LES DEUX PROPRIETES&nbsp;: RESERVEES AU CAS LINEAIRE</span>
+  <div class="c m"><i>f</i>(<i>x</i>&#8239;+&#8239;<i>y</i>)&#8239;=&#8239;<i>f</i>(<i>x</i>)&#8239;+&#8239;<i>f</i>(<i>y</i>)</div>
+  <div class="c m"><i>f</i>(<i>kx</i>)&#8239;=&#8239;<i>k</i>&#8239;&#215;&#8239;<i>f</i>(<i>x</i>)</div>
+</div>
+<ul>
+<li>L'<b>image d'une somme</b> est la <b>somme des images</b> ; si le nombre de départ est multiplié par <i>k</i>, l'image est multipliée par <i>k</i>.</li>
+<li>On écrit donc le nombre cherché comme une <b>somme</b> ou un <b>multiple</b> de nombres dont l'image est connue : <i>f</i>(3) donne aussitôt <i>f</i>(6), <i>f</i>(9) et <i>f</i>(30), <b>sans calculer le coefficient</b>.</li>
+</ul>
+<table>
+<tr><th>Signe du coefficient</th><th>Sens de variation</th></tr>
+<tr><td class="m"><i>a</i>&#8239;&gt;&#8239;0</td><td><b>croissante</b> : quand <i>x</i> augmente, <i>f</i>(<i>x</i>) augmente</td></tr>
+<tr><td class="m"><i>a</i>&#8239;&lt;&#8239;0</td><td><b>décroissante</b> : quand <i>x</i> augmente, <i>f</i>(<i>x</i>) diminue</td></tr>
+<tr><td class="m"><i>a</i>&#8239;=&#8239;0</td><td><b>constante</b> : toutes les images valent 0</td></tr>
+</table>
+<div class="note"><b>Croissante</b> ne veut pas dire « grande » : une application peut être croissante alors que toutes ses images sont négatives. Croissante signifie seulement que les images <b>montent</b> quand on avance sur l'axe des abscisses.</div>
+</div>
+
+<!-- ================= LECON 3 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 3&nbsp;: L'application affine et son sens de variation</h2>
+<p>Une <b>application affine</b> est une application de la forme <span class="pt"><i>f</i>(<i>x</i>)&#8239;=&#8239;<i>ax</i>&#8239;+&#8239;<i>b</i></span>, où <i>a</i> et <i>b</i> sont deux nombres réels fixés.</p></div>
+<div class="form">
+  <span class="t">APPLICATION AFFINE&nbsp;: LE ROLE DES DEUX NOMBRES</span>
+  <div class="c m"><i>f</i>(<i>x</i>)&#8239;=&#8239;<i>ax</i>&#8239;+&#8239;<i>b</i></div>
+  <div class="c m"><i>a</i> : <b>coefficient directeur</b> &nbsp;&middot;&nbsp; <i>b</i> : <b>part fixe</b>, avec <i>b</i>&#8239;=&#8239;<i>f</i>(0)</div>
+</div>
+<ul>
+<li>Le <b>sens de variation ne dépend que du signe de <i>a</i></b>, exactement comme pour une application linéaire : croissante si <i>a</i>&#8239;&gt;&#8239;0, décroissante si <i>a</i>&#8239;&lt;&#8239;0, constante si <i>a</i>&#8239;=&#8239;0, et toutes les images valent alors <i>b</i>.</li>
+<li>Une application <b>linéaire est un cas particulier d'application affine</b>, celui où <i>b</i>&#8239;=&#8239;0.</li>
+</ul>
+<div class="form">
+  <span class="t">ORDRE DES IMAGES&nbsp;: pour <i>x</i><sub>1</sub>&#8239;&lt;&#8239;<i>x</i><sub>2</sub></span>
+  <div class="c m"><i>f</i> croissante <span class="ar">&#8594;</span> <i>f</i>(<i>x</i><sub>1</sub>)&#8239;&lt;&#8239;<i>f</i>(<i>x</i><sub>2</sub>) : ordre <b>conservé</b></div>
+  <div class="c m"><i>f</i> décroissante <span class="ar">&#8594;</span> <i>f</i>(<i>x</i><sub>1</sub>)&#8239;&gt;&#8239;<i>f</i>(<i>x</i><sub>2</sub>) : ordre <b>inversé</b></div>
+</div>
+<p><b>Etudier une application affine.</b> Mettre l'expression sous la forme <i>ax</i>&#8239;+&#8239;<i>b</i> en développant et en réduisant, identifier <i>a</i> et <i>b</i>, préciser la nature (affine, linéaire si <i>b</i>&#8239;=&#8239;0, constante si <i>a</i>&#8239;=&#8239;0), puis conclure d'après le <b>signe de <i>a</i></b>. Pour ranger des images, ranger d'abord les nombres de départ, puis conserver ou inverser l'ordre.</p>
+</div>
+
+<!-- ================= LECON 4 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 4&nbsp;: La représentation graphique d'une application affine</h2>
+<p>La représentation graphique de <span class="pt"><i>f</i>(<i>x</i>)&#8239;=&#8239;<i>ax</i>&#8239;+&#8239;<i>b</i></span> est une <b>droite</b>.</p></div>
+<ul>
+<li>Elle coupe l'axe des <b>ordonnées</b> au point de coordonnées <span class="pt">(0&#8239;;&#8239;<i>b</i>)</span> : c'est pourquoi <i>b</i> s'appelle aussi l'<b>ordonnée à l'origine</b>.</li>
+<li><i>a</i> est la <b>pente</b> : quand <i>x</i> augmente de 1, <i>f</i>(<i>x</i>) augmente de <i>a</i>. Si <i>a</i> est négatif, « augmenter de <i>a</i> » signifie <b>descendre</b>.</li>
+<li><b>Deux points suffisent</b> pour tracer : le point (0&#8239;;&#8239;<i>b</i>) et un second obtenu avec une valeur de <i>x</i> qui simplifie le calcul.</li>
+<li>Deux applications affines de <b>même coefficient directeur</b> ont des représentations <b>parallèles</b>.</li>
+</ul>
+<div class="form">
+  <span class="t">RESOUDRE GRAPHIQUEMENT L'EQUATION <i>f</i>(<i>x</i>)&#8239;=&#8239;<i>m</i></span>
+  <div class="c m">tracer l'horizontale d'ordonnée <i>m</i> <span class="ar">&#8594;</span> repérer le point d'intersection <span class="ar">&#8594;</span> lire son <b>abscisse</b></div>
+</div>
+<div class="note"><b>Contrôle du tracé.</b> A partir d'un point de la droite, avance de 1 unité vers la droite : tu dois monter de <i>a</i>, ou descendre d'autant si <i>a</i> est négatif. Une lecture graphique se vérifie ensuite <b>par le calcul</b>.</div>
+</div>
+
+<!-- ================= LECON 5 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 5&nbsp;: L'application affine par intervalles</h2>
+<p>Une <b>application affine par intervalles</b> est définie par une <b>expression affine différente sur chacun de plusieurs intervalles</b> qui se suivent.</p></div>
+<ul>
+<li>Pour calculer une image, <b>repérer d'abord l'intervalle</b> auquel appartient le nombre de départ, puis utiliser <b>son</b> expression.</li>
+<li>La représentation graphique est formée de <b>morceaux de droites</b>, un par intervalle : on ne trace chaque morceau que <b>sur son intervalle</b>, sans le prolonger.</li>
+<li>Le sens de variation se donne <b>morceau par morceau</b>, d'après le signe du coefficient directeur de chacun. Une même application peut être croissante sur un intervalle et décroissante sur un autre.</li>
+</ul>
+<div class="form">
+  <span class="t">VALEUR ABSOLUE&nbsp;: DEUX CAS, DONC DEUX INTERVALLES</span>
+  <div class="c m">|<i>A</i>|&#8239;=&#8239;<i>A</i> si <i>A</i>&#8239;&#8805;&#8239;0 &nbsp;&nbsp;&middot;&nbsp;&nbsp; |<i>A</i>|&#8239;=&#8239;&#8722;<i>A</i> si <i>A</i>&#8239;&lt;&#8239;0</div>
+</div>
+<p>Toute expression contenant une valeur absolue se ramène ainsi à une application affine par intervalles. La <b>valeur critique</b> sépare les deux intervalles : on l'obtient en résolvant l'équation qui <b>annule l'expression entre les barres</b>.</p>
+</div>
+
+<!-- ================= LECON 6 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 6&nbsp;: Déterminer une application affine et résoudre des problèmes</h2>
+<p>Une application affine est <b>entièrement déterminée</b> par les images de <b>deux nombres différents</b>.</p></div>
+<div class="form">
+  <span class="t">COEFFICIENT DIRECTEUR&nbsp;: pour <i>x</i><sub>1</sub>&#8239;&#8800;&#8239;<i>x</i><sub>2</sub></span>
+  <div class="c m"><i>a</i>&#8239;=&#8239;<span class="f"><span><i>f</i>(<i>x</i><sub>2</sub>)&#8239;&#8722;&#8239;<i>f</i>(<i>x</i><sub>1</sub>)</span><span><i>x</i><sub>2</sub>&#8239;&#8722;&#8239;<i>x</i><sub>1</sub></span></span></div>
+</div>
+<ul>
+<li>C'est la <b>différence des images</b> divisée par la <b>différence des nombres de départ</b>, les deux prises <b>dans le même ordre</b>.</li>
+<li>On obtient ensuite la part fixe <i>b</i> en remplaçant <i>x</i> et <i>f</i>(<i>x</i>) par <b>l'un</b> des deux couples connus dans <span class="pt"><i>f</i>(<i>x</i>)&#8239;=&#8239;<i>ax</i>&#8239;+&#8239;<i>b</i></span>, puis l'on <b>vérifie avec l'autre</b> couple, celui qui n'a pas servi.</li>
+<li>Une équation <span class="pt"><i>f</i>(<i>x</i>)&#8239;=&#8239;<i>m</i></span> se résout <b>par le calcul</b> ou <b>graphiquement</b>.</li>
+</ul>
+<h3 class="rub">Comparer deux tarifs</h3>
+<p>On trace les deux droites. Le <b>point d'intersection</b> donne la valeur pour laquelle les deux tarifs sont égaux ; de part et d'autre, c'est la <b>droite la plus basse</b> qui correspond au tarif le plus avantageux.</p>
+<div class="note">Le coefficient directeur est un <b>prix par unité</b> : des francs divisés par des kilos, jamais des kilos divisés par des francs.</div>
+</div>
+
+</div>
+
+<div class="bandeau vert">PIEGES ET ERREURS FREQUENTES</div>
+<div class="cols">
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> <span class="pt"><i>f</i>(<i>x</i>)&#8239;=&#8239;2<i>x</i>&#8239;+&#8239;3</span> est une application <b>linéaire</b></div><div class="cor"><span class="v">&#10003;</span> Une application linéaire s'écrit <i>ax</i>, <b>sans terme constant</b>, et vérifie <i>f</i>(0)&#8239;=&#8239;0. Ici l'image de 0 vaut 3 : l'application est <b>affine</b>. La présence d'un terme constant, même petit, change la nature de l'application, et sa droite ne passe plus par l'origine.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> <i>f</i>(<i>x</i>&#8239;+&#8239;<i>y</i>)&#8239;=&#8239;<i>f</i>(<i>x</i>)&#8239;&#215;&#8239;<i>f</i>(<i>y</i>)</div><div class="cor"><span class="v">&#10003;</span> L'image d'une somme est la <b>somme</b> des images, pas leur produit : <i>f</i>(<i>x</i>&#8239;+&#8239;<i>y</i>)&#8239;=&#8239;<i>f</i>(<i>x</i>)&#8239;+&#8239;<i>f</i>(<i>y</i>). Avec <i>f</i>(<i>x</i>)&#8239;=&#8239;5<i>x</i> : <span class="pt"><i>f</i>(2&#8239;+&#8239;3)&#8239;=&#8239;<i>f</i>(5)&#8239;=&#8239;25</span>, alors que <span class="pt"><i>f</i>(2)&#8239;&#215;&#8239;<i>f</i>(3)&#8239;=&#8239;10&#8239;&#215;&#8239;15&#8239;=&#8239;150</span>.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> Pour <span class="pt"><i>g</i>(<i>x</i>)&#8239;=&#8239;2<i>x</i>&#8239;+&#8239;3</span>, on écrit <i>g</i>(1&#8239;+&#8239;2)&#8239;=&#8239;<i>g</i>(1)&#8239;+&#8239;<i>g</i>(2)</div><div class="cor"><span class="v">&#10003;</span> Ces propriétés sont <b>réservées aux applications linéaires</b>. Ici <span class="pt"><i>g</i>(3)&#8239;=&#8239;9</span> tandis que <span class="pt"><i>g</i>(1)&#8239;+&#8239;<i>g</i>(2)&#8239;=&#8239;5&#8239;+&#8239;7&#8239;=&#8239;12</span> : la part fixe a été comptée <b>deux fois</b>.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> « <span class="pt"><i>f</i>(<i>x</i>)&#8239;=&#8239;&#8722;3<i>x</i>&#8239;+&#8239;10</span> est croissante parce que 10 est positif »</div><div class="cor"><span class="v">&#10003;</span> C'est <b><i>a</i>, et lui seul</b>, qui décide du sens de variation. Ici <i>a</i>&#8239;=&#8239;&#8722;3 est négatif, donc <i>f</i> est <b>décroissante</b>. La part fixe s'ajoute de la même façon à toutes les images : elle ne change pas l'ordre entre elles.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> Pour <span class="pt"><i>f</i>(<i>x</i>)&#8239;=&#8239;4<i>x</i></span>, la droite coupe l'axe des ordonnées au point d'ordonnée 4</div><div class="cor"><span class="v">&#10003;</span> L'ordonnée à l'origine est l'image de <b>zéro</b>, pas le coefficient : <i>b</i>&#8239;=&#8239;<i>f</i>(0)&#8239;=&#8239;0. La droite passe par l'<b>origine</b>, puisque la part fixe est nulle.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> Pour résoudre <span class="pt"><i>f</i>(<i>x</i>)&#8239;=&#8239;5</span>, on part de 5 sur l'axe des <b>abscisses</b></div><div class="cor"><span class="v">&#10003;</span> On part de <b>5 sur l'axe des ordonnées</b> et l'on cherche une abscisse. Partir de 5 sur l'axe des abscisses reviendrait à calculer <i>f</i>(5), qui est la question <b>inverse</b>.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> |2<i>x</i>&#8239;&#8722;&#8239;3|&#8239;=&#8239;2<i>x</i>&#8239;&#8722;&#8239;3 pour tout <i>x</i> &nbsp;&middot;&nbsp; on calcule <i>f</i>(&#8722;1) avec « <i>f</i>(<i>x</i>)&#8239;=&#8239;<i>x</i>&#8239;&#8722;&#8239;2 si <i>x</i>&#8239;&#8805;&#8239;3 »</div><div class="cor"><span class="v">&#10003;</span> Pour <i>x</i>&#8239;=&#8239;0, le membre de gauche vaut 3 et celui de droite &#8722;3 : une valeur absolue n'est <b>jamais négative</b>, alors que l'expression entre les barres peut l'être. Et l'on n'utilise que l'expression de l'intervalle <b>qui contient</b> le nombre de départ : &#8722;1 n'appartient pas à cet intervalle.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> <i>a</i>&#8239;=&#8239;<span class="f"><span><i>f</i>(<i>x</i><sub>1</sub>)&#8239;&#8722;&#8239;<i>f</i>(<i>x</i><sub>2</sub>)</span><span><i>x</i><sub>2</sub>&#8239;&#8722;&#8239;<i>x</i><sub>1</sub></span></span> &nbsp;&middot;&nbsp; on conclut « <span class="pt"><i>f</i>(<i>x</i>)&#8239;=&#8239;150<i>x</i></span> » alors qu'il reste 500&#8239;FCFA de mise en route</div><div class="cor"><span class="v">&#10003;</span> Les différences se prennent <b>dans le même ordre</b> en haut et en bas, sinon on obtient l'<b>opposé</b> du bon coefficient. Et une fois <i>a</i> trouvé, il reste à chercher la <b>part fixe</b> : ici <span class="pt"><i>f</i>(<i>x</i>)&#8239;=&#8239;150<i>x</i>&#8239;+&#8239;500</span>.</div></div>
+
+</div>
+
+<div class="bandeau bleu">A SAVOIR PAR COEUR AVANT LE DEVOIR</div>
+<div class="cols">
+<ol class="recap">
+<li><b>Linéaire</b> : <span class="pt"><i>f</i>(<i>x</i>)&#8239;=&#8239;<i>ax</i></span>, <i>a</i> le <b>coefficient</b> ; <i>f</i>(0)&#8239;=&#8239;0 et la droite passe par l'<b>origine</b>. Connaissant une image, <i>a</i>&#8239;=&#8239;<span class="f"><span><i>f</i>(<i>x</i>)</span><span><i>x</i></span></span> pour <i>x</i>&#8239;&#8800;&#8239;0 : l'<b>image divisée par le nombre de départ</b>.</li>
+<li>Propriétés valables <b>pour les seules applications linéaires</b> : <span class="pt"><i>f</i>(<i>x</i>&#8239;+&#8239;<i>y</i>)&#8239;=&#8239;<i>f</i>(<i>x</i>)&#8239;+&#8239;<i>f</i>(<i>y</i>)</span> et <span class="pt"><i>f</i>(<i>kx</i>)&#8239;=&#8239;<i>k</i>&#8239;&#215;&#8239;<i>f</i>(<i>x</i>)</span>.</li>
+<li><b>Affine</b> : <span class="pt"><i>f</i>(<i>x</i>)&#8239;=&#8239;<i>ax</i>&#8239;+&#8239;<i>b</i></span>, <i>a</i> le <b>coefficient directeur</b>, <i>b</i> la <b>part fixe</b> avec <i>b</i>&#8239;=&#8239;<i>f</i>(0). Une linéaire est une affine avec <i>b</i>&#8239;=&#8239;0.</li>
+<li><b>Sens de variation : le signe de <i>a</i> seul.</b> <i>a</i>&#8239;&gt;&#8239;0 croissante, <i>a</i>&#8239;&lt;&#8239;0 décroissante, <i>a</i>&#8239;=&#8239;0 constante. La part fixe <i>b</i> n'y joue aucun rôle.</li>
+<li>Si <i>x</i><sub>1</sub>&#8239;&lt;&#8239;<i>x</i><sub>2</sub> : une application croissante <b>conserve</b> l'ordre, une décroissante l'<b>inverse</b> et donne <span class="pt"><i>f</i>(<i>x</i><sub>1</sub>)&#8239;&gt;&#8239;<i>f</i>(<i>x</i><sub>2</sub>)</span>.</li>
+<li><b>Graphique</b> : une droite coupant l'axe des ordonnées en (0&#8239;;&#8239;<i>b</i>) ; <i>a</i> est la <b>pente</b> (avancer de 1, monter de <i>a</i>) ; <b>deux points suffisent</b> ; même coefficient directeur <span class="ar">&#8594;</span> droites <b>parallèles</b>. Pour <i>f</i>(<i>x</i>)&#8239;=&#8239;<i>m</i>, partir de <i>m</i> sur l'axe des <b>ordonnées</b>.</li>
+<li><b>Par intervalles</b> : repérer l'intervalle du nombre de départ <b>avant</b> tout calcul, tracer un morceau de droite par intervalle et donner le sens de variation morceau par morceau. Valeur absolue : |<i>A</i>|&#8239;=&#8239;<i>A</i> si <i>A</i>&#8239;&#8805;&#8239;0, |<i>A</i>|&#8239;=&#8239;&#8722;<i>A</i> si <i>A</i>&#8239;&lt;&#8239;0.</li>
+<li>Deux images connues déterminent l'application : <i>a</i>&#8239;=&#8239;<span class="f"><span><i>f</i>(<i>x</i><sub>2</sub>)&#8239;&#8722;&#8239;<i>f</i>(<i>x</i><sub>1</sub>)</span><span><i>x</i><sub>2</sub>&#8239;&#8722;&#8239;<i>x</i><sub>1</sub></span></span> (même ordre en haut et en bas), puis <i>b</i> avec un couple et <b>vérification avec l'autre</b>. Deux tarifs : la <b>droite la plus basse</b> est la plus avantageuse.</li>
+</ol>
+</div>
+
+</body>
+</html>

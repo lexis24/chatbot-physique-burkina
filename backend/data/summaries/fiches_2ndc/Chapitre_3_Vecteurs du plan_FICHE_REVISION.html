@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Fiche de revision - 2nde C - Chapitre 3 : Vecteurs du plan</title>
+<style>
+/* ===================================================================
+   FICHE DE REVISION, Collection Hakili Lab, Edition 2026
+   Feuille de style autonome, format A4 pret a imprimer.
+   Bleu #005CB9 · Vert #49A145
+   =================================================================== */
+:root{
+  --bleu:#005CB9; --bleu-fonce:#00429A; --bleu-pale:#E8F1FB; --bleu-bord:#B7D2EE;
+  --vert:#49A145; --vert-fonce:#2F7A2C; --vert-pale:#EDF7EC; --vert-bord:#BCE0B9;
+  --gris:#4A4A4A; --gris-clair:#E4E4E4; --rouge:#B3261E;
+}
+@page{
+  size:A4; margin:15mm;
+  @bottom-center{
+    content:"Collection Hakili Lab, Edition 2026  ·  Fiche de revision  ·  " counter(page) "/" counter(pages);
+    font-family:"Segoe UI",Calibri,Arial,sans-serif; font-size:6.6pt; color:#8A8A8A;
+  }
+}
+*{box-sizing:border-box;}
+body{
+  margin:0; font-family:"Segoe UI",Calibri,Arial,sans-serif;
+  font-size:8.4pt; line-height:1.26; color:#1B1B1B;
+}
+p{margin:0 0 3pt;}
+ul{margin:0 0 3pt; padding-left:11pt;}
+li{margin:0 0 1.2pt;}
+b,strong{color:var(--bleu-fonce);}
+
+/* ------------------------------ ENTETE ---------------------------- */
+.entete{
+  display:flex; align-items:stretch; border:1.6pt solid var(--bleu);
+  border-radius:2.5pt; overflow:hidden; margin-bottom:6pt;
+}
+.entete .num{
+  background:var(--bleu); color:#fff; font-size:20pt; font-weight:700;
+  padding:0 8pt; display:flex; align-items:center; justify-content:center; min-width:34pt;
+}
+.entete .txt{padding:3.5pt 8pt; flex:1;}
+.entete .niveau{
+  font-size:7pt; font-weight:700; letter-spacing:.9pt; color:var(--vert-fonce);
+}
+.entete h1{margin:0; font-size:13.5pt; line-height:1.12; color:var(--bleu-fonce); font-weight:700;}
+.entete .sous{font-size:7pt; color:var(--gris); margin-top:1pt;}
+
+/* --------------------------- BANDEAUX ----------------------------- */
+.bandeau{
+  color:#fff; font-weight:700; font-size:9pt; letter-spacing:1pt;
+  padding:2.4pt 7pt; border-radius:2pt; margin:3pt 0 4pt; break-after:avoid; page-break-after:avoid;
+}
+.bandeau.bleu{background:var(--bleu);}
+.bandeau.vert{background:var(--vert);}
+
+/* --------------------------- COLONNES ----------------------------- */
+.cols{column-count:2; column-gap:7mm; column-fill:balance;}
+
+.cols.bal{column-fill:balance;}
+.bloc{margin-bottom:5pt;}
+.keep{break-inside:avoid; page-break-inside:avoid;}
+
+/* --------------------------- LECONS ------------------------------- */
+h2.lecon{
+  margin:0 0 3pt; font-size:8.6pt; font-weight:700; color:#fff; background:var(--bleu-fonce);
+  padding:1.8pt 5pt; border-radius:1.5pt; break-after:avoid; page-break-after:avoid;
+}
+h3.rub{
+  margin:3.5pt 0 1.5pt; font-size:8.2pt; font-weight:700; color:var(--vert-fonce);
+  border-bottom:.7pt solid var(--vert-bord); padding-bottom:.8pt;
+  break-after:avoid; page-break-after:avoid;
+}
+
+/* --------------------------- ENCADRES ----------------------------- */
+.form{
+  background:var(--bleu-pale); border:.8pt solid var(--bleu-bord); border-left:2.6pt solid var(--bleu);
+  border-radius:2pt; padding:2.4pt 5pt; margin:2.2pt 0 3.4pt;
+  break-inside:avoid; page-break-inside:avoid;
+}
+.form .t{
+  display:block; font-size:6.8pt; font-weight:700; letter-spacing:.6pt;
+  color:var(--bleu); margin-bottom:1.5pt;
+}
+.form .c{text-align:center; font-size:9.1pt; margin:1.6pt 0;}
+.note{background:var(--vert-pale); border-left:2.4pt solid var(--vert); padding:2.4pt 5pt; border-radius:1.5pt; margin:2.5pt 0 4pt; break-inside:avoid;}
+
+/* --------------------------- TABLEAUX ----------------------------- */
+table{width:100%; border-collapse:collapse; font-size:7.6pt; margin:2pt 0 4pt; break-inside:avoid;}
+th{background:var(--bleu); color:#fff; font-weight:700; text-align:left; padding:1.8pt 4pt; font-size:7.2pt;}
+td{border:.6pt solid var(--gris-clair); padding:1.8pt 4pt; vertical-align:top;}
+tr{break-inside:avoid;}
+table.var td{text-align:center; font-size:8pt;}
+table.var td.lab{text-align:left; font-weight:700; color:var(--bleu-fonce); background:var(--bleu-pale);}
+
+/* ----------------------------- PIEGES ----------------------------- */
+table.pieges th:first-child{width:44%;}
+table.pieges td:first-child{color:var(--rouge); background:#FDF1F0;}
+.x{font-weight:700;}
+.v{color:var(--vert-fonce); font-weight:700;}
+
+/* ---------------------------- RECAP ------------------------------- */
+ol.recap{margin:0; padding-left:0; list-style:none; counter-reset:r;}
+ol.recap li{
+  counter-increment:r; position:relative; padding-left:13pt; margin-bottom:1.8pt;
+  break-inside:avoid;
+}
+ol.recap li::before{
+  content:counter(r); position:absolute; left:0; top:.3pt;
+  width:10pt; height:10pt; border-radius:50%; background:var(--vert); color:#fff;
+  font-size:6.6pt; font-weight:700; text-align:center; line-height:10pt;
+}
+
+/* --------------------------- MATHS -------------------------------- */
+.m{font-family:Cambria,Georgia,"Times New Roman",serif;}
+i,var{font-family:Cambria,Georgia,"Times New Roman",serif; font-style:italic;}
+.op{font-family:Cambria,Georgia,"Times New Roman",serif; font-style:normal;}
+.f{display:inline-block; vertical-align:middle; text-align:center;
+   margin:0 .12em; line-height:1.06; font-family:Cambria,Georgia,"Times New Roman",serif;}
+.f>span{display:block; padding:0 .2em;}
+.f>span:first-child{border-bottom:.6pt solid currentColor; padding-bottom:.08em;}
+.f>span:last-child{padding-top:.04em;}
+.rad{border-top:.6pt solid currentColor; padding-top:.12em;}
+/* line-height:0 evite que l'exposant n'ecarte les lignes ; position:relative le
+   repositionne sans qu'il heurte la barre de fraction ni le trait du radical. */
+sup,sub{font-size:.68em; line-height:0; position:relative; vertical-align:baseline;}
+sup{top:-.42em;}
+sub{bottom:-.22em;}
+.pt{white-space:nowrap;}
+/* Les fleches n'ont qu'un glyphe atrophie dans la fonte serif : on les force
+   en sans-serif, ou elles sont franches meme a 8 pt. */
+.ar{font-family:"Segoe UI",Calibri,Arial,"DejaVu Sans",sans-serif; font-style:normal;}
+
+/* ------------------- PIEGES : blocs erreur / correction ------------- */
+.pg{font-size:8.1pt; border-left:2.4pt solid var(--rouge); background:#FDF1F0; border-radius:1.5pt;
+    padding:2pt 5pt; margin:0 0 2.8pt; break-inside:avoid; page-break-inside:avoid;}
+.pg .err{color:var(--rouge); font-weight:600;}
+.pg .cor{color:#1B1B1B; margin-top:.8pt;}
+.pg .cor b{color:var(--bleu-fonce);}
+.v{color:var(--vert-fonce); font-weight:700;}
+
+</style>
+</head>
+<body>
+<header class="entete">
+  <div class="num">3</div>
+  <div class="txt">
+    <div class="niveau">2NDE C &middot; MATHEMATIQUES</div>
+    <h1>Vecteurs du plan</h1>
+    <div class="sous">Leçon 1 : combinaison linéaire, points et vecteurs &middot; Leçon 2 : base de l'ensemble des vecteurs du plan &middot; Leçon 3 : déterminant de deux vecteurs et colinéarité</div>
+  </div>
+</header>
+
+<div class="bandeau bleu" style="margin-top:0">L'ESSENTIEL</div>
+<div class="cols">
+
+<!-- ================= LECON 1 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 1&nbsp;: Combinaison linéaire, points et vecteurs</h2>
+
+<h3 class="rub">Somme de deux vecteurs</h3>
+<div class="form">
+  <span class="t">RELATION DE CHASLES&nbsp;: POUR TOUS POINTS A, B, C</span>
+  <div class="c m"><span class="op" style="border-top:.6pt solid;padding-top:.5pt">AB</span>&#8239;+&#8239;<span class="op" style="border-top:.6pt solid;padding-top:.5pt">BC</span>&#8239;=&#8239;<span class="op" style="border-top:.6pt solid;padding-top:.5pt">AC</span></div>
+</div></div>
+<p>On place l'origine du second vecteur à l'extrémité du premier ; la somme joint la première origine à la dernière extrémité. A lire dans les <b>deux sens</b> : pour <b>simplifier</b>, et pour <b>décomposer</b> <span class="op" style="border-top:.6pt solid;padding-top:.5pt">AC</span> en <span class="op" style="border-top:.6pt solid;padding-top:.5pt">AB</span>&#8239;+&#8239;<span class="op" style="border-top:.6pt solid;padding-top:.5pt">BC</span> en glissant au milieu le point de passage voulu.</p>
+<div class="form">
+  <span class="t">REGLE DU PARALLELOGRAMME&nbsp;: DEUX VECTEURS DE MEME ORIGINE A</span>
+  <div class="c m">si <i style="border-top:.6pt solid;padding:.5pt .14em 0 0">u</i>&#8239;=&#8239;<span class="op" style="border-top:.6pt solid;padding-top:.5pt">AB</span> et <i style="border-top:.6pt solid;padding:.5pt .14em 0 0">v</i>&#8239;=&#8239;<span class="op" style="border-top:.6pt solid;padding-top:.5pt">AD</span>, alors <i style="border-top:.6pt solid;padding:.5pt .14em 0 0">u</i>&#8239;+&#8239;<i style="border-top:.6pt solid;padding:.5pt .14em 0 0">v</i>&#8239;=&#8239;<span class="op" style="border-top:.6pt solid;padding-top:.5pt">AC</span></div>
+  <div class="c m">C étant le quatrième sommet du parallélogramme ABCD</div>
+</div>
+<ul>
+<li><b>Vecteur nul</b> : <i style="border-top:.6pt solid;padding:.5pt .14em 0 0">u</i>&#8239;+&#8239;<span class="op" style="border-top:.6pt solid;padding-top:.5pt">0</span>&#8239;=&#8239;<i style="border-top:.6pt solid;padding:.5pt .14em 0 0">u</i> pour tout <i style="border-top:.6pt solid;padding:.5pt .14em 0 0">u</i> ; <span class="pt"><span class="op" style="border-top:.6pt solid;padding-top:.5pt">AA</span>&#8239;=&#8239;<span class="op" style="border-top:.6pt solid;padding-top:.5pt">0</span></span>.</li>
+<li><b>Opposé</b> : l'opposé de <span class="op" style="border-top:.6pt solid;padding-top:.5pt">AB</span> est <span class="pt"><span class="op" style="border-top:.6pt solid;padding-top:.5pt">BA</span>&#8239;=&#8239;&#8722;<span class="op" style="border-top:.6pt solid;padding-top:.5pt">AB</span></span> : même direction, même longueur, <b>sens contraire</b>.</li>
+<li><b>Soustraire, c'est ajouter l'opposé</b> : <span class="pt"><i style="border-top:.6pt solid;padding:.5pt .14em 0 0">u</i>&#8239;&#8722;&#8239;<i style="border-top:.6pt solid;padding:.5pt .14em 0 0">v</i>&#8239;=&#8239;<i style="border-top:.6pt solid;padding:.5pt .14em 0 0">u</i>&#8239;+&#8239;(&#8722;<i style="border-top:.6pt solid;padding:.5pt .14em 0 0">v</i>)</span>.</li>
+<li><b>Norme</b> : <span class="pt">&#8214;<span class="op" style="border-top:.6pt solid;padding-top:.5pt">AB</span>&#8214;&#8239;=&#8239;AB</span>, la longueur du segment.</li>
+</ul>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Multiplication d'un vecteur par un réel</h3>
+<p>Soit <i>k</i> un réel et <i style="border-top:.6pt solid;padding:.5pt .14em 0 0">u</i> un vecteur non nul. Le vecteur <i>k</i><i style="border-top:.6pt solid;padding:.5pt .14em 0 0">u</i> a :</p>
+<ul>
+<li>la <b>même direction</b> que <i style="border-top:.6pt solid;padding:.5pt .14em 0 0">u</i> ;</li>
+<li>le <b>même sens</b> si <i>k</i>&#8239;&gt;&#8239;0, le <b>sens contraire</b> si <i>k</i>&#8239;&lt;&#8239;0 ;</li>
+<li>pour longueur <span class="pt">&#8214;<i>k</i><i style="border-top:.6pt solid;padding:.5pt .14em 0 0">u</i>&#8214;&#8239;=&#8239;|<i>k</i>|&#8239;&#215;&#8239;&#8214;<i style="border-top:.6pt solid;padding:.5pt .14em 0 0">u</i>&#8214;</span>.</li>
+</ul>
+<p>Si <i>k</i>&#8239;=&#8239;0 ou <span class="pt"><i style="border-top:.6pt solid;padding:.5pt .14em 0 0">u</i>&#8239;=&#8239;<span class="op" style="border-top:.6pt solid;padding-top:.5pt">0</span></span>, alors <span class="pt"><i>k</i><i style="border-top:.6pt solid;padding:.5pt .14em 0 0">u</i>&#8239;=&#8239;<span class="op" style="border-top:.6pt solid;padding-top:.5pt">0</span></span>.</p>
+<div class="form">
+  <span class="t">REGLES DE CALCUL&nbsp;: <i>k</i> ET <i>k</i>&#8242; REELS, <i style="border-top:.6pt solid;padding:.5pt .14em 0 0">u</i> ET <i style="border-top:.6pt solid;padding:.5pt .14em 0 0">v</i> VECTEURS</span>
+  <div class="c m"><i>k</i>(<i style="border-top:.6pt solid;padding:.5pt .14em 0 0">u</i>&#8239;+&#8239;<i style="border-top:.6pt solid;padding:.5pt .14em 0 0">v</i>)&#8239;=&#8239;<i>k</i><i style="border-top:.6pt solid;padding:.5pt .14em 0 0">u</i>&#8239;+&#8239;<i>k</i><i style="border-top:.6pt solid;padding:.5pt .14em 0 0">v</i></div>
+  <div class="c m">(<i>k</i>&#8239;+&#8239;<i>k</i>&#8242;)<i style="border-top:.6pt solid;padding:.5pt .14em 0 0">u</i>&#8239;=&#8239;<i>k</i><i style="border-top:.6pt solid;padding:.5pt .14em 0 0">u</i>&#8239;+&#8239;<i>k</i>&#8242;<i style="border-top:.6pt solid;padding:.5pt .14em 0 0">u</i> &nbsp;&nbsp;&nbsp; <i>k</i>(<i>k</i>&#8242;<i style="border-top:.6pt solid;padding:.5pt .14em 0 0">u</i>)&#8239;=&#8239;(<i>kk</i>&#8242;)<i style="border-top:.6pt solid;padding:.5pt .14em 0 0">u</i></div>
+</div>
+<div class="note">On <b>ne multiplie jamais deux vecteurs entre eux</b> dans ce chapitre : <span class="pt"><i style="border-top:.6pt solid;padding:.5pt .14em 0 0">u</i>&#8239;&#215;&#8239;<i style="border-top:.6pt solid;padding:.5pt .14em 0 0">v</i></span> n'a pas de sens ici, et <span class="pt"><span class="f"><span><i style="border-top:.6pt solid;padding:.5pt .14em 0 0">u</i></span><span><i style="border-top:.6pt solid;padding:.5pt .14em 0 0">v</i></span></span></span> n'en a jamais. Seuls les produits d'un <b>nombre</b> par un <b>vecteur</b> existent.</div>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Combinaison linéaire et colinéarité</h3>
+<div class="form">
+  <span class="t">COMBINAISON LINEAIRE DE <i style="border-top:.6pt solid;padding:.5pt .14em 0 0">u</i> ET <i style="border-top:.6pt solid;padding:.5pt .14em 0 0">v</i></span>
+  <div class="c m"><i style="border-top:.6pt solid;padding:.5pt .14em 0 0">w</i>&#8239;=&#8239;<i>a</i><i style="border-top:.6pt solid;padding:.5pt .14em 0 0">u</i>&#8239;+&#8239;<i>b</i><i style="border-top:.6pt solid;padding:.5pt .14em 0 0">v</i> &nbsp;&nbsp; (<i>a</i> et <i>b</i> réels, les <b>coefficients</b>)</div>
+</div>
+<div class="form">
+  <span class="t">COLINEARITE&nbsp;: POUR <i style="border-top:.6pt solid;padding:.5pt .14em 0 0">u</i>&#8239;&#8800;&#8239;<span class="op" style="border-top:.6pt solid;padding-top:.5pt">0</span></span>
+  <div class="c m"><i style="border-top:.6pt solid;padding:.5pt .14em 0 0">u</i> et <i style="border-top:.6pt solid;padding:.5pt .14em 0 0">v</i> colinéaires <span class="ar">&#8660;</span> il existe un réel <i>k</i> tel que <i style="border-top:.6pt solid;padding:.5pt .14em 0 0">v</i>&#8239;=&#8239;<i>k</i><i style="border-top:.6pt solid;padding:.5pt .14em 0 0">u</i></div>
+</div>
+<ul>
+<li>Deux vecteurs colinéaires ont la <b>même direction</b>.</li>
+<li>Le vecteur nul est colinéaire à <b>tout</b> vecteur, puisque <span class="pt"><span class="op" style="border-top:.6pt solid;padding-top:.5pt">0</span>&#8239;=&#8239;0&#8239;&#215;&#8239;<i style="border-top:.6pt solid;padding:.5pt .14em 0 0">u</i></span>.</li>
+</ul>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Points et vecteurs : les caractérisations</h3>
+<table>
+<tr><th>Configuration</th><th>Traduction vectorielle</th></tr>
+<tr><td>I milieu de [AB]</td><td class="m"><span class="op" style="border-top:.6pt solid;padding-top:.5pt">AI</span>&#8239;=&#8239;<span class="f"><span>1</span><span>2</span></span><span class="op" style="border-top:.6pt solid;padding-top:.5pt">AB</span>, ou <span class="op" style="border-top:.6pt solid;padding-top:.5pt">IA</span>&#8239;+&#8239;<span class="op" style="border-top:.6pt solid;padding-top:.5pt">IB</span>&#8239;=&#8239;<span class="op" style="border-top:.6pt solid;padding-top:.5pt">0</span></td></tr>
+<tr><td>A, B, C alignés</td><td class="m"><span class="op" style="border-top:.6pt solid;padding-top:.5pt">AB</span> et <span class="op" style="border-top:.6pt solid;padding-top:.5pt">AC</span> colinéaires : <span class="op" style="border-top:.6pt solid;padding-top:.5pt">AC</span>&#8239;=&#8239;<i>k</i><span class="op" style="border-top:.6pt solid;padding-top:.5pt">AB</span></td></tr>
+<tr><td>(AB)&#8239;&#8741;&#8239;(CD)</td><td class="m"><span class="op" style="border-top:.6pt solid;padding-top:.5pt">AB</span> et <span class="op" style="border-top:.6pt solid;padding-top:.5pt">CD</span> colinéaires</td></tr>
+<tr><td>ABCD parallélogramme</td><td class="m"><span class="op" style="border-top:.6pt solid;padding-top:.5pt">AB</span>&#8239;=&#8239;<span class="op" style="border-top:.6pt solid;padding-top:.5pt">DC</span>, ou <span class="op" style="border-top:.6pt solid;padding-top:.5pt">AD</span>&#8239;=&#8239;<span class="op" style="border-top:.6pt solid;padding-top:.5pt">BC</span>, ou [AC] et [BD] de même milieu</td></tr>
+<tr><td>E symétrique de B par rapport à C</td><td class="m"><span class="op" style="border-top:.6pt solid;padding-top:.5pt">BE</span>&#8239;=&#8239;2<span class="op" style="border-top:.6pt solid;padding-top:.5pt">BC</span></td></tr>
+</table>
+<p>Chaque ligne est une <b>équivalence</b> : elle se lit dans les deux sens. Une figure qui « a l'air » juste ne démontre rien ; c'est l'égalité vectorielle qu'il faut établir.</p>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Méthode : alignement, parallélisme, construction</h3>
+<ul>
+<li>Choisir les deux vecteurs qui portent l'information : <span class="op" style="border-top:.6pt solid;padding-top:.5pt">AB</span> et <span class="op" style="border-top:.6pt solid;padding-top:.5pt">AC</span> pour un alignement (un <b>point commun</b>), <span class="op" style="border-top:.6pt solid;padding-top:.5pt">AB</span> et <span class="op" style="border-top:.6pt solid;padding-top:.5pt">CD</span> pour un parallélisme.</li>
+<li>Exprimer <b>chacun</b> d'eux en fonction des <b>mêmes</b> vecteurs de référence, avec la relation de Chasles et les données.</li>
+<li>Chercher un réel <i>k</i> tel que l'un soit <i>k</i> fois l'autre, puis conclure par une phrase : les vecteurs sont colinéaires, donc les points sont alignés (ou les droites parallèles).</li>
+<li><b>Construire un point</b> défini par <span class="pt"><span class="op" style="border-top:.6pt solid;padding-top:.5pt">AD</span>&#8239;=&#8239;2<i style="border-top:.6pt solid;padding:.5pt .14em 0 0">u</i>&#8239;+&#8239;<i style="border-top:.6pt solid;padding:.5pt .14em 0 0">v</i></span> : partir du point <b>déjà placé</b> A, reporter 2<i style="border-top:.6pt solid;padding:.5pt .14em 0 0">u</i> puis <i style="border-top:.6pt solid;padding:.5pt .14em 0 0">v</i> <b>bout à bout</b>, en faisant demi-tour si un coefficient est négatif.</li>
+</ul>
+</div>
+
+<!-- ================= LECON 2 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 2&nbsp;: Base de l'ensemble des vecteurs du plan</h2>
+<div class="form">
+  <span class="t">BASE</span>
+  <div class="c m">(<i style="border-top:.6pt solid;padding:.5pt .14em 0 0">i</i>&#8239;;&#8239;<i style="border-top:.6pt solid;padding:.5pt .14em 0 0">j</i>) est une base <span class="ar">&#8660;</span> <i style="border-top:.6pt solid;padding:.5pt .14em 0 0">i</i> et <i style="border-top:.6pt solid;padding:.5pt .14em 0 0">j</i> ne sont <b>pas colinéaires</b></div>
+</div></div>
+<ul>
+<li>Aucune autre condition : les deux vecteurs n'ont pas besoin d'être <b>perpendiculaires</b>, ni d'avoir la même longueur, ni d'être de longueur 1. Il suffit que leurs directions soient différentes.</li>
+<li><b>Repère</b> : la donnée d'un point O, l'<b>origine</b>, et d'une base ; on note <span class="pt">(O&#8239;;&#8239;<i style="border-top:.6pt solid;padding:.5pt .14em 0 0">i</i>&#8239;;&#8239;<i style="border-top:.6pt solid;padding:.5pt .14em 0 0">j</i>)</span>. Une base sert à repérer les <b>vecteurs</b> ; un repère permet de repérer aussi les <b>points</b>.</li>
+<li>Si A, B, C ne sont <b>pas alignés</b>, <span class="pt">(<span class="op" style="border-top:.6pt solid;padding-top:.5pt">AB</span>&#8239;;&#8239;<span class="op" style="border-top:.6pt solid;padding-top:.5pt">AC</span>)</span> est une base et <span class="pt">(A&#8239;;&#8239;<span class="op" style="border-top:.6pt solid;padding-top:.5pt">AB</span>&#8239;;&#8239;<span class="op" style="border-top:.6pt solid;padding-top:.5pt">AC</span>)</span> un repère.</li>
+</ul>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Décomposition et coordonnées</h3>
+<div class="form">
+  <span class="t">DECOMPOSITION&nbsp;: (<i style="border-top:.6pt solid;padding:.5pt .14em 0 0">i</i>&#8239;;&#8239;<i style="border-top:.6pt solid;padding:.5pt .14em 0 0">j</i>) ETANT UNE BASE</span>
+  <div class="c m">tout vecteur <i style="border-top:.6pt solid;padding:.5pt .14em 0 0">u</i> s'écrit <b>d'une seule manière</b> <i style="border-top:.6pt solid;padding:.5pt .14em 0 0">u</i>&#8239;=&#8239;<i>x</i><i style="border-top:.6pt solid;padding:.5pt .14em 0 0">i</i>&#8239;+&#8239;<i>y</i><i style="border-top:.6pt solid;padding:.5pt .14em 0 0">j</i></div>
+</div>
+<p>Le couple (<i>x</i>&#8239;;&#8239;<i>y</i>) est formé des <b>coordonnées</b> de <i style="border-top:.6pt solid;padding:.5pt .14em 0 0">u</i> dans cette base ; on note <span class="pt"><i style="border-top:.6pt solid;padding:.5pt .14em 0 0">u</i>(<i>x</i>&#8239;;&#8239;<i>y</i>)</span>. L'unicité entraîne qu'une <b>égalité vectorielle se coupe en deux égalités de nombres</b> : si <span class="pt"><i>x</i><i style="border-top:.6pt solid;padding:.5pt .14em 0 0">i</i>&#8239;+&#8239;<i>y</i><i style="border-top:.6pt solid;padding:.5pt .14em 0 0">j</i>&#8239;=&#8239;<i>x</i>&#8242;<i style="border-top:.6pt solid;padding:.5pt .14em 0 0">i</i>&#8239;+&#8239;<i>y</i>&#8242;<i style="border-top:.6pt solid;padding:.5pt .14em 0 0">j</i></span>, alors <i>x</i>&#8239;=&#8239;<i>x</i>&#8242; <b>et</b> <i>y</i>&#8239;=&#8239;<i>y</i>&#8242;.</p>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Calculer sur les coordonnées</h3>
+<div class="form">
+  <span class="t">DANS UNE BASE FIXEE&nbsp;: <i style="border-top:.6pt solid;padding:.5pt .14em 0 0">u</i>(<i>x</i>&#8239;;&#8239;<i>y</i>), <i style="border-top:.6pt solid;padding:.5pt .14em 0 0">v</i>(<i>x</i>&#8242;&#8239;;&#8239;<i>y</i>&#8242;), <i>k</i> REEL</span>
+  <div class="c m"><i style="border-top:.6pt solid;padding:.5pt .14em 0 0">u</i>&#8239;+&#8239;<i style="border-top:.6pt solid;padding:.5pt .14em 0 0">v</i>&#8239;(<i>x</i>&#8239;+&#8239;<i>x</i>&#8242;&#8239;;&#8239;<i>y</i>&#8239;+&#8239;<i>y</i>&#8242;) &nbsp;&nbsp;&nbsp; <i>k</i><i style="border-top:.6pt solid;padding:.5pt .14em 0 0">u</i>&#8239;(<i>kx</i>&#8239;;&#8239;<i>ky</i>)</div>
+  <div class="c m"><i style="border-top:.6pt solid;padding:.5pt .14em 0 0">u</i>&#8239;=&#8239;<i style="border-top:.6pt solid;padding:.5pt .14em 0 0">v</i>&nbsp;<span class="ar">&#8660;</span>&nbsp;<i>x</i>&#8239;=&#8239;<i>x</i>&#8242; et <i>y</i>&#8239;=&#8239;<i>y</i>&#8242; &nbsp;&nbsp;&nbsp; <i style="border-top:.6pt solid;padding:.5pt .14em 0 0">u</i>&#8239;=&#8239;<span class="op" style="border-top:.6pt solid;padding-top:.5pt">0</span>&nbsp;<span class="ar">&#8660;</span>&nbsp;<i>x</i>&#8239;=&#8239;0 et <i>y</i>&#8239;=&#8239;0</div>
+</div>
+<div class="form">
+  <span class="t">DANS UN REPERE (O&#8239;;&#8239;<i style="border-top:.6pt solid;padding:.5pt .14em 0 0">i</i>&#8239;;&#8239;<i style="border-top:.6pt solid;padding:.5pt .14em 0 0">j</i>)&nbsp;: A(<i>x</i><sub>A</sub>&#8239;;&#8239;<i>y</i><sub>A</sub>), B(<i>x</i><sub>B</sub>&#8239;;&#8239;<i>y</i><sub>B</sub>)</span>
+  <div class="c m"><span class="op" style="border-top:.6pt solid;padding-top:.5pt">AB</span>&#8239;(<i>x</i><sub>B</sub>&#8239;&#8722;&#8239;<i>x</i><sub>A</sub>&#8239;;&#8239;<i>y</i><sub>B</sub>&#8239;&#8722;&#8239;<i>y</i><sub>A</sub>) &nbsp;&nbsp; <span style="font-size:7.5pt">arrivée moins départ</span></div>
+  <div class="c m">I milieu de [AB] : <span class="pt">I&#8239;(<span class="f"><span><i>x</i><sub>A</sub>&#8239;+&#8239;<i>x</i><sub>B</sub></span><span>2</span></span>&#8239;;&#8239;<span class="f"><span><i>y</i><sub>A</sub>&#8239;+&#8239;<i>y</i><sub>B</sub></span><span>2</span></span>)</span></div>
+</div>
+<div class="note">Des coordonnées n'ont de sens que <b>dans une base précisée</b>. Changer d'origine change les coordonnées des <b>points</b>, mais pas celles des <b>vecteurs</b>.</div>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Méthode : décomposer <i style="border-top:.6pt solid;padding:.5pt .14em 0 0">w</i> dans la base (<i style="border-top:.6pt solid;padding:.5pt .14em 0 0">u</i>&#8239;;&#8239;<i style="border-top:.6pt solid;padding:.5pt .14em 0 0">v</i>)</h3>
+<ul>
+<li>Vérifier d'abord que <span class="pt">(<i style="border-top:.6pt solid;padding:.5pt .14em 0 0">u</i>&#8239;;&#8239;<i style="border-top:.6pt solid;padding:.5pt .14em 0 0">v</i>)</span> est bien une <b>base</b> : les deux vecteurs ne sont pas colinéaires.</li>
+<li>Poser <span class="pt"><i style="border-top:.6pt solid;padding:.5pt .14em 0 0">w</i>&#8239;=&#8239;<i>a</i><i style="border-top:.6pt solid;padding:.5pt .14em 0 0">u</i>&#8239;+&#8239;<i>b</i><i style="border-top:.6pt solid;padding:.5pt .14em 0 0">v</i></span>, remplacer chaque vecteur par ses coordonnées, développer.</li>
+<li>Identifier <b>coordonnée par coordonnée</b> : on obtient un système de deux équations à deux inconnues <i>a</i> et <i>b</i>.</li>
+<li>Résoudre, puis <b>vérifier</b> en remplaçant <i>a</i> et <i>b</i> par les valeurs trouvées.</li>
+</ul>
+</div>
+
+<!-- ================= LECON 3 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 3&nbsp;: Déterminant de deux vecteurs et colinéarité</h2>
+<div class="form">
+  <span class="t">DETERMINANT&nbsp;: BASE FIXEE, <i style="border-top:.6pt solid;padding:.5pt .14em 0 0">u</i>(<i>x</i>&#8239;;&#8239;<i>y</i>) ET <i style="border-top:.6pt solid;padding:.5pt .14em 0 0">v</i>(<i>x</i>&#8242;&#8239;;&#8239;<i>y</i>&#8242;)</span>
+  <div class="c m"><span class="op">det</span>(<i style="border-top:.6pt solid;padding:.5pt .14em 0 0">u</i>&#8239;;&#8239;<i style="border-top:.6pt solid;padding:.5pt .14em 0 0">v</i>)&#8239;=&#8239;<span style="display:inline-block;vertical-align:middle;border-left:.7pt solid;border-right:.7pt solid;padding:0 2.5pt;line-height:1.08;text-align:center"><span style="display:block"><i>x</i>&nbsp;&nbsp;<i>x</i>&#8242;</span><span style="display:block"><i>y</i>&nbsp;&nbsp;<i>y</i>&#8242;</span></span>&#8239;=&#8239;<i>xy</i>&#8242;&#8239;&#8722;&#8239;<i>yx</i>&#8242;</div>
+</div></div>
+<p>Calcul <b>en croix</b> : produit de la diagonale descendante, moins produit de la diagonale montante. Le premier vecteur donne la colonne de gauche. Un déterminant est un <b>nombre</b>, jamais un vecteur : il peut être positif, négatif ou nul.</p>
+</div>
+
+<div class="bloc">
+<div class="form">
+  <span class="t">CARACTERISATION DE LA COLINEARITE</span>
+  <div class="c m"><i style="border-top:.6pt solid;padding:.5pt .14em 0 0">u</i> et <i style="border-top:.6pt solid;padding:.5pt .14em 0 0">v</i> colinéaires &nbsp;<span class="ar">&#8660;</span>&nbsp; <span class="op">det</span>(<i style="border-top:.6pt solid;padding:.5pt .14em 0 0">u</i>&#8239;;&#8239;<i style="border-top:.6pt solid;padding:.5pt .14em 0 0">v</i>)&#8239;=&#8239;<i>xy</i>&#8242;&#8239;&#8722;&#8239;<i>yx</i>&#8242;&#8239;=&#8239;0</div>
+</div>
+<p><b>Les trois conséquences à connaître :</b></p>
+<ul>
+<li>A, B, C <b>alignés</b> <span class="ar">&#8660;</span> <span class="pt"><span class="op">det</span>(<span class="op" style="border-top:.6pt solid;padding-top:.5pt">AB</span>&#8239;;&#8239;<span class="op" style="border-top:.6pt solid;padding-top:.5pt">AC</span>)&#8239;=&#8239;0</span>.</li>
+<li>(AB)&#8239;&#8741;&#8239;(CD) <span class="ar">&#8660;</span> <span class="pt"><span class="op">det</span>(<span class="op" style="border-top:.6pt solid;padding-top:.5pt">AB</span>&#8239;;&#8239;<span class="op" style="border-top:.6pt solid;padding-top:.5pt">CD</span>)&#8239;=&#8239;0</span>.</li>
+<li><span class="pt">(<i style="border-top:.6pt solid;padding:.5pt .14em 0 0">u</i>&#8239;;&#8239;<i style="border-top:.6pt solid;padding:.5pt .14em 0 0">v</i>)</span> est une <b>base</b> <span class="ar">&#8660;</span> <span class="pt"><span class="op">det</span>(<i style="border-top:.6pt solid;padding:.5pt .14em 0 0">u</i>&#8239;;&#8239;<i style="border-top:.6pt solid;padding:.5pt .14em 0 0">v</i>)&#8239;&#8800;&#8239;0</span>.</li>
+</ul>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Deux propriétés du déterminant</h3>
+<div class="form">
+  <span class="t">ANTISYMETRIE</span>
+  <div class="c m"><span class="op">det</span>(<i style="border-top:.6pt solid;padding:.5pt .14em 0 0">v</i>&#8239;;&#8239;<i style="border-top:.6pt solid;padding:.5pt .14em 0 0">u</i>)&#8239;=&#8239;&#8722;<span class="op">det</span>(<i style="border-top:.6pt solid;padding:.5pt .14em 0 0">u</i>&#8239;;&#8239;<i style="border-top:.6pt solid;padding:.5pt .14em 0 0">v</i>) &nbsp;&nbsp;&nbsp; <span class="op">det</span>(<i style="border-top:.6pt solid;padding:.5pt .14em 0 0">u</i>&#8239;;&#8239;<i style="border-top:.6pt solid;padding:.5pt .14em 0 0">u</i>)&#8239;=&#8239;0</div>
+</div>
+<p><b>Dépendance de la base :</b> la <b>valeur</b> du déterminant dépend de la base choisie, mais le fait qu'il soit <b>nul ou non</b> n'en dépend pas. La colinéarité est une propriété géométrique : elle ne change pas selon le quadrillage utilisé.</p>
+<h3 class="rub">Méthode : utiliser le déterminant</h3>
+<ul>
+<li>Ecrire les coordonnées des deux vecteurs <b>dans la même base</b> ; si l'énoncé donne des points, calculer d'abord <span class="pt">«&#8239;arrivée moins départ&#8239;»</span>.</li>
+<li>Poser les deux produits séparément avant de soustraire, en surveillant les signes.</li>
+<li>Conclure : déterminant <b>nul</b> <span class="ar">&#8594;</span> les deux vecteurs sont colinéaires, donc, selon les vecteurs choisis, les points sont alignés, les droites parallèles, ou le couple n'est pas une base ; déterminant <b>non nul</b> <span class="ar">&#8594;</span> ils ne sont pas colinéaires, et le couple est une base.</li>
+</ul>
+</div>
+
+</div>
+
+<div class="bandeau vert">PIEGES ET ERREURS FREQUENTES</div>
+<div class="cols">
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> <i style="border-top:.6pt solid;padding:.5pt .14em 0 0">u</i> et <i style="border-top:.6pt solid;padding:.5pt .14em 0 0">v</i> sont colinéaires, donc <span class="pt"><i style="border-top:.6pt solid;padding:.5pt .14em 0 0">u</i>&#8239;=&#8239;<i style="border-top:.6pt solid;padding:.5pt .14em 0 0">v</i></span></div><div class="cor"><span class="v">&#10003;</span> Colinéaires signifie seulement qu'il existe un réel <i>k</i> tel que <span class="pt"><i style="border-top:.6pt solid;padding:.5pt .14em 0 0">v</i>&#8239;=&#8239;<i>k</i><i style="border-top:.6pt solid;padding:.5pt .14em 0 0">u</i></span> : la <b>direction</b> est commune, le <b>sens</b> et la <b>longueur</b> peuvent différer. <span class="op" style="border-top:.6pt solid;padding-top:.5pt">AB</span>, 2<span class="op" style="border-top:.6pt solid;padding-top:.5pt">AB</span> et &#8722;3<span class="op" style="border-top:.6pt solid;padding-top:.5pt">AB</span> sont colinéaires et deux à deux différents ; l'égalité est le seul cas <i>k</i>&#8239;=&#8239;1.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> <span class="pt"><span class="op" style="border-top:.6pt solid;padding-top:.5pt">AB</span>&#8239;+&#8239;<span class="op" style="border-top:.6pt solid;padding-top:.5pt">CB</span>&#8239;=&#8239;<span class="op" style="border-top:.6pt solid;padding-top:.5pt">AC</span></span></div><div class="cor"><span class="v">&#10003;</span> Chasles exige que la lettre d'<b>arrivée</b> du premier soit la lettre de <b>départ</b> du second : ici on arrive en B et l'on repart de C, rien ne se recolle. On transforme d'abord : <span class="pt"><span class="op" style="border-top:.6pt solid;padding-top:.5pt">CB</span>&#8239;=&#8239;&#8722;<span class="op" style="border-top:.6pt solid;padding-top:.5pt">BC</span></span>, d'où <span class="pt"><span class="op" style="border-top:.6pt solid;padding-top:.5pt">AB</span>&#8239;+&#8239;<span class="op" style="border-top:.6pt solid;padding-top:.5pt">CB</span>&#8239;=&#8239;<span class="op" style="border-top:.6pt solid;padding-top:.5pt">AB</span>&#8239;&#8722;&#8239;<span class="op" style="border-top:.6pt solid;padding-top:.5pt">BC</span></span>. Réflexe : dès qu'une soustraction apparaît, remplacer &#8722;<span class="op" style="border-top:.6pt solid;padding-top:.5pt">XY</span> par <span class="op" style="border-top:.6pt solid;padding-top:.5pt">YX</span>.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> <span class="pt">(<i style="border-top:.6pt solid;padding:.5pt .14em 0 0">u</i>&#8239;;&#8239;2<i style="border-top:.6pt solid;padding:.5pt .14em 0 0">u</i>)</span> est une base, car les deux vecteurs sont différents</div><div class="cor"><span class="v">&#10003;</span> Etre différents ne suffit pas : une base est un couple de vecteurs <b>non colinéaires</b>, et ici <span class="pt"><span class="op">det</span>&#8239;=&#8239;0</span>. Un couple contenant <span class="op" style="border-top:.6pt solid;padding-top:.5pt">0</span> n'est <b>jamais</b> une base. A l'inverse, il n'est <b>pas</b> nécessaire que les vecteurs soient perpendiculaires ni de longueur 1.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> <span class="pt"><span class="op" style="border-top:.6pt solid;padding-top:.5pt">AB</span>&#8239;(<i>x</i><sub>A</sub>&#8239;&#8722;&#8239;<i>x</i><sub>B</sub>&#8239;;&#8239;<i>y</i><sub>A</sub>&#8239;&#8722;&#8239;<i>y</i><sub>B</sub>)</span></div><div class="cor"><span class="v">&#10003;</span> C'est l'inverse : toujours <b>l'arrivée moins le départ</b>, <span class="pt"><span class="op" style="border-top:.6pt solid;padding-top:.5pt">AB</span>&#8239;(<i>x</i><sub>B</sub>&#8239;&#8722;&#8239;<i>x</i><sub>A</sub>&#8239;;&#8239;<i>y</i><sub>B</sub>&#8239;&#8722;&#8239;<i>y</i><sub>A</sub>)</span>. Contrôle immédiat : si B est à droite de A, la première coordonnée doit être <b>positive</b>.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> <span class="pt"><span class="op">det</span>(<i style="border-top:.6pt solid;padding:.5pt .14em 0 0">u</i>&#8239;;&#8239;<i style="border-top:.6pt solid;padding:.5pt .14em 0 0">v</i>)&#8239;=&#8239;<i>xx</i>&#8242;&#8239;&#8722;&#8239;<i>yy</i>&#8242;</span></div><div class="cor"><span class="v">&#10003;</span> Le déterminant se calcule <b>en croix</b> : <span class="pt"><span class="op">det</span>(<i style="border-top:.6pt solid;padding:.5pt .14em 0 0">u</i>&#8239;;&#8239;<i style="border-top:.6pt solid;padding:.5pt .14em 0 0">v</i>)&#8239;=&#8239;<i>xy</i>&#8242;&#8239;&#8722;&#8239;<i>yx</i>&#8242;</span>. Contrôle sur un cas connu : pour <span class="pt"><i style="border-top:.6pt solid;padding:.5pt .14em 0 0">u</i>(1&#8239;;&#8239;0)</span> et <span class="pt"><i style="border-top:.6pt solid;padding:.5pt .14em 0 0">v</i>(0&#8239;;&#8239;1)</span>, la bonne formule donne 1&#8239;&#215;&#8239;1&#8239;&#8722;&#8239;0&#8239;&#215;&#8239;0&#8239;=&#8239;1, non nul, ce qui est correct.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> <span class="pt"><i style="border-top:.6pt solid;padding:.5pt .14em 0 0">u</i>(2&#8239;;&#8239;3)</span> et <span class="pt"><i style="border-top:.6pt solid;padding:.5pt .14em 0 0">v</i>(4&#8239;;&#8239;6)</span> ne sont pas colinéaires &nbsp;&middot;&nbsp; <span class="pt"><span class="op">det</span>(<i style="border-top:.6pt solid;padding:.5pt .14em 0 0">u</i>&#8239;;&#8239;<i style="border-top:.6pt solid;padding:.5pt .14em 0 0">v</i>)&#8239;=&#8239;<span class="op">det</span>(<i style="border-top:.6pt solid;padding:.5pt .14em 0 0">v</i>&#8239;;&#8239;<i style="border-top:.6pt solid;padding:.5pt .14em 0 0">u</i>)</span></div><div class="cor"><span class="v">&#10003;</span> Ici <span class="pt"><span class="op">det</span>&#8239;=&#8239;2&#8239;&#215;&#8239;6&#8239;&#8722;&#8239;3&#8239;&#215;&#8239;4&#8239;=&#8239;0</span> : ils <b>sont</b> colinéaires, avec <span class="pt"><i style="border-top:.6pt solid;padding:.5pt .14em 0 0">v</i>&#8239;=&#8239;2<i style="border-top:.6pt solid;padding:.5pt .14em 0 0">u</i></span>. Et échanger les deux vecteurs <b>change le signe</b> du déterminant ; seule sa <b>nullité</b> ne dépend pas de l'ordre.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> <span class="pt">&#8214;&#8722;3<i style="border-top:.6pt solid;padding:.5pt .14em 0 0">u</i>&#8214;&#8239;=&#8239;&#8722;3&#8214;<i style="border-top:.6pt solid;padding:.5pt .14em 0 0">u</i>&#8214;</span></div><div class="cor"><span class="v">&#10003;</span> Une <b>norme n'est jamais négative</b> : <span class="pt">&#8214;&#8722;3<i style="border-top:.6pt solid;padding:.5pt .14em 0 0">u</i>&#8214;&#8239;=&#8239;|&#8722;3|&#8239;&#215;&#8239;&#8214;<i style="border-top:.6pt solid;padding:.5pt .14em 0 0">u</i>&#8214;&#8239;=&#8239;3&#8214;<i style="border-top:.6pt solid;padding:.5pt .14em 0 0">u</i>&#8214;</span>. Un coefficient négatif <b>retourne la flèche</b>, il ne rend pas la longueur négative.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> ABCD parallélogramme donc <span class="pt"><span class="op" style="border-top:.6pt solid;padding-top:.5pt">AB</span>&#8239;=&#8239;<span class="op" style="border-top:.6pt solid;padding-top:.5pt">CD</span></span> &nbsp;&middot;&nbsp; « <i style="border-top:.6pt solid;padding:.5pt .14em 0 0">w</i> a pour coordonnées (8&#8239;;&#8239;9) », sans autre précision</div><div class="cor"><span class="v">&#10003;</span> L'ordre des lettres compte : <span class="pt"><span class="op" style="border-top:.6pt solid;padding-top:.5pt">AB</span>&#8239;=&#8239;<span class="op" style="border-top:.6pt solid;padding-top:.5pt">DC</span></span> ; avec <span class="op" style="border-top:.6pt solid;padding-top:.5pt">CD</span>, le quadrilatère serait <b>croisé</b>. Et des coordonnées n'existent que <b>dans une base</b> : le même vecteur peut valoir (8&#8239;;&#8239;9) dans <span class="pt">(<i style="border-top:.6pt solid;padding:.5pt .14em 0 0">i</i>&#8239;;&#8239;<i style="border-top:.6pt solid;padding:.5pt .14em 0 0">j</i>)</span> et (3&#8239;;&#8239;2) dans <span class="pt">(<i style="border-top:.6pt solid;padding:.5pt .14em 0 0">u</i>&#8239;;&#8239;<i style="border-top:.6pt solid;padding:.5pt .14em 0 0">v</i>)</span>.</div></div>
+
+</div>
+
+<div class="bandeau bleu">A SAVOIR PAR COEUR AVANT LE DEVOIR</div>
+<div class="cols">
+<ol class="recap">
+<li><b>Chasles</b> : <span class="pt"><span class="op" style="border-top:.6pt solid;padding-top:.5pt">AB</span>&#8239;+&#8239;<span class="op" style="border-top:.6pt solid;padding-top:.5pt">BC</span>&#8239;=&#8239;<span class="op" style="border-top:.6pt solid;padding-top:.5pt">AC</span></span>, à lire dans les deux sens ; <span class="pt"><span class="op" style="border-top:.6pt solid;padding-top:.5pt">BA</span>&#8239;=&#8239;&#8722;<span class="op" style="border-top:.6pt solid;padding-top:.5pt">AB</span></span> ; <span class="pt"><span class="op" style="border-top:.6pt solid;padding-top:.5pt">AA</span>&#8239;=&#8239;<span class="op" style="border-top:.6pt solid;padding-top:.5pt">0</span></span> ; règle du parallélogramme pour deux vecteurs de même origine.</li>
+<li><i>k</i><i style="border-top:.6pt solid;padding:.5pt .14em 0 0">u</i> : même direction, même sens si <i>k</i>&#8239;&gt;&#8239;0, sens contraire si <i>k</i>&#8239;&lt;&#8239;0, et <span class="pt">&#8214;<i>k</i><i style="border-top:.6pt solid;padding:.5pt .14em 0 0">u</i>&#8214;&#8239;=&#8239;|<i>k</i>|&#8239;&#215;&#8239;&#8214;<i style="border-top:.6pt solid;padding:.5pt .14em 0 0">u</i>&#8214;</span>. Jamais de produit de deux vecteurs.</li>
+<li><b>Combinaison linéaire</b> : <span class="pt"><i style="border-top:.6pt solid;padding:.5pt .14em 0 0">w</i>&#8239;=&#8239;<i>a</i><i style="border-top:.6pt solid;padding:.5pt .14em 0 0">u</i>&#8239;+&#8239;<i>b</i><i style="border-top:.6pt solid;padding:.5pt .14em 0 0">v</i></span>. <b>Colinéaires</b> (<span class="pt"><i style="border-top:.6pt solid;padding:.5pt .14em 0 0">u</i>&#8239;&#8800;&#8239;<span class="op" style="border-top:.6pt solid;padding-top:.5pt">0</span></span>) : il existe <i>k</i> tel que <span class="pt"><i style="border-top:.6pt solid;padding:.5pt .14em 0 0">v</i>&#8239;=&#8239;<i>k</i><i style="border-top:.6pt solid;padding:.5pt .14em 0 0">u</i></span> ; <span class="op" style="border-top:.6pt solid;padding-top:.5pt">0</span> est colinéaire à tout vecteur.</li>
+<li>I milieu de [AB] <span class="ar">&#8660;</span> <span class="pt"><span class="op" style="border-top:.6pt solid;padding-top:.5pt">AI</span>&#8239;=&#8239;<span class="f"><span>1</span><span>2</span></span><span class="op" style="border-top:.6pt solid;padding-top:.5pt">AB</span></span> ; A, B, C alignés <span class="ar">&#8660;</span> <span class="op" style="border-top:.6pt solid;padding-top:.5pt">AB</span> et <span class="op" style="border-top:.6pt solid;padding-top:.5pt">AC</span> colinéaires ; (AB)&#8239;&#8741;&#8239;(CD) <span class="ar">&#8660;</span> <span class="op" style="border-top:.6pt solid;padding-top:.5pt">AB</span> et <span class="op" style="border-top:.6pt solid;padding-top:.5pt">CD</span> colinéaires ; ABCD parallélogramme <span class="ar">&#8660;</span> <span class="pt"><span class="op" style="border-top:.6pt solid;padding-top:.5pt">AB</span>&#8239;=&#8239;<span class="op" style="border-top:.6pt solid;padding-top:.5pt">DC</span></span>.</li>
+<li><b>Base</b> = couple de vecteurs <b>non colinéaires</b> ; <b>repère</b> = une origine et une base. Si A, B, C ne sont pas alignés, <span class="pt">(<span class="op" style="border-top:.6pt solid;padding-top:.5pt">AB</span>&#8239;;&#8239;<span class="op" style="border-top:.6pt solid;padding-top:.5pt">AC</span>)</span> est une base.</li>
+<li><b>Décomposition unique</b> : <span class="pt"><i style="border-top:.6pt solid;padding:.5pt .14em 0 0">u</i>&#8239;=&#8239;<i>x</i><i style="border-top:.6pt solid;padding:.5pt .14em 0 0">i</i>&#8239;+&#8239;<i>y</i><i style="border-top:.6pt solid;padding:.5pt .14em 0 0">j</i></span>. Une égalité vectorielle se coupe en <b>deux égalités de nombres</b>. Toujours préciser la base.</li>
+<li><b>Coordonnées</b> : <span class="pt"><span class="op" style="border-top:.6pt solid;padding-top:.5pt">AB</span>&#8239;(<i>x</i><sub>B</sub>&#8239;&#8722;&#8239;<i>x</i><sub>A</sub>&#8239;;&#8239;<i>y</i><sub>B</sub>&#8239;&#8722;&#8239;<i>y</i><sub>A</sub>)</span> ; on ajoute les coordonnées pour <span class="pt"><i style="border-top:.6pt solid;padding:.5pt .14em 0 0">u</i>&#8239;+&#8239;<i style="border-top:.6pt solid;padding:.5pt .14em 0 0">v</i></span>, on les multiplie par <i>k</i> pour <i>k</i><i style="border-top:.6pt solid;padding:.5pt .14em 0 0">u</i> ; milieu = <b>moyenne</b> des coordonnées.</li>
+<li><b>Déterminant</b> : <span class="pt"><span class="op">det</span>(<i style="border-top:.6pt solid;padding:.5pt .14em 0 0">u</i>&#8239;;&#8239;<i style="border-top:.6pt solid;padding:.5pt .14em 0 0">v</i>)&#8239;=&#8239;<i>xy</i>&#8242;&#8239;&#8722;&#8239;<i>yx</i>&#8242;</span>, en croix. Il est <b>nul</b> <span class="ar">&#8660;</span> les deux vecteurs sont <b>colinéaires</b> : c'est le test de l'alignement, du parallélisme, et il permet de reconnaître une base. Sa valeur dépend de la base, sa nullité non.</li>
+</ol>
+</div>
+
+</body>
+</html>

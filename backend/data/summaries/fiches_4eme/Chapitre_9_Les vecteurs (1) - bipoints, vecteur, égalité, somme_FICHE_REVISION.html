@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Fiche de revision - 4eme - Chapitre 9 : Les vecteurs (1) : bipoints, vecteur, egalite, somme</title>
+<style>
+/* ===================================================================
+   FICHE DE REVISION, Collection Hakili Lab, Edition 2026
+   Feuille de style autonome, format A4 pret a imprimer.
+   Bleu #005CB9 · Vert #49A145
+   =================================================================== */
+:root{
+  --bleu:#005CB9; --bleu-fonce:#00429A; --bleu-pale:#E8F1FB; --bleu-bord:#B7D2EE;
+  --vert:#49A145; --vert-fonce:#2F7A2C; --vert-pale:#EDF7EC; --vert-bord:#BCE0B9;
+  --gris:#4A4A4A; --gris-clair:#E4E4E4; --rouge:#B3261E;
+}
+@page{
+  size:A4; margin:15mm;
+  @bottom-center{
+    content:"Collection Hakili Lab, Edition 2026  ·  Fiche de revision  ·  " counter(page) "/" counter(pages);
+    font-family:"Segoe UI",Calibri,Arial,sans-serif; font-size:6.6pt; color:#8A8A8A;
+  }
+}
+*{box-sizing:border-box;}
+body{
+  margin:0; font-family:"Segoe UI",Calibri,Arial,sans-serif;
+  font-size:8.4pt; line-height:1.26; color:#1B1B1B;
+}
+p{margin:0 0 3pt;}
+ul{margin:0 0 3pt; padding-left:11pt;}
+li{margin:0 0 1.2pt;}
+b,strong{color:var(--bleu-fonce);}
+
+/* ------------------------------ ENTETE ---------------------------- */
+.entete{
+  display:flex; align-items:stretch; border:1.6pt solid var(--bleu);
+  border-radius:2.5pt; overflow:hidden; margin-bottom:6pt;
+}
+.entete .num{
+  background:var(--bleu); color:#fff; font-size:20pt; font-weight:700;
+  padding:0 8pt; display:flex; align-items:center; justify-content:center; min-width:34pt;
+}
+.entete .txt{padding:3.5pt 8pt; flex:1;}
+.entete .niveau{
+  font-size:7pt; font-weight:700; letter-spacing:.9pt; color:var(--vert-fonce);
+}
+.entete h1{margin:0; font-size:13.5pt; line-height:1.12; color:var(--bleu-fonce); font-weight:700;}
+.entete .sous{font-size:7pt; color:var(--gris); margin-top:1pt;}
+
+/* --------------------------- BANDEAUX ----------------------------- */
+.bandeau{
+  color:#fff; font-weight:700; font-size:9pt; letter-spacing:1pt;
+  padding:2.4pt 7pt; border-radius:2pt; margin:3pt 0 4pt; break-after:avoid; page-break-after:avoid;
+}
+.bandeau.bleu{background:var(--bleu);}
+.bandeau.vert{background:var(--vert);}
+
+/* --------------------------- COLONNES ----------------------------- */
+.cols{column-count:2; column-gap:7mm; column-fill:balance;}
+
+.cols.bal{column-fill:balance;}
+.bloc{margin-bottom:5pt;}
+.keep{break-inside:avoid; page-break-inside:avoid;}
+
+/* --------------------------- LECONS ------------------------------- */
+h2.lecon{
+  margin:0 0 3pt; font-size:8.6pt; font-weight:700; color:#fff; background:var(--bleu-fonce);
+  padding:1.8pt 5pt; border-radius:1.5pt; break-after:avoid; page-break-after:avoid;
+}
+h3.rub{
+  margin:3.5pt 0 1.5pt; font-size:8.2pt; font-weight:700; color:var(--vert-fonce);
+  border-bottom:.7pt solid var(--vert-bord); padding-bottom:.8pt;
+  break-after:avoid; page-break-after:avoid;
+}
+
+/* --------------------------- ENCADRES ----------------------------- */
+.form{
+  background:var(--bleu-pale); border:.8pt solid var(--bleu-bord); border-left:2.6pt solid var(--bleu);
+  border-radius:2pt; padding:2.4pt 5pt; margin:2.2pt 0 3.4pt;
+  break-inside:avoid; page-break-inside:avoid;
+}
+.form .t{
+  display:block; font-size:6.8pt; font-weight:700; letter-spacing:.6pt;
+  color:var(--bleu); margin-bottom:1.5pt;
+}
+.form .c{text-align:center; font-size:9.1pt; margin:1.6pt 0;}
+.note{background:var(--vert-pale); border-left:2.4pt solid var(--vert); padding:2.4pt 5pt; border-radius:1.5pt; margin:2.5pt 0 4pt; break-inside:avoid;}
+
+/* --------------------------- TABLEAUX ----------------------------- */
+table{width:100%; border-collapse:collapse; font-size:7.6pt; margin:2pt 0 4pt; break-inside:avoid;}
+th{background:var(--bleu); color:#fff; font-weight:700; text-align:left; padding:1.8pt 4pt; font-size:7.2pt;}
+td{border:.6pt solid var(--gris-clair); padding:1.8pt 4pt; vertical-align:top;}
+tr{break-inside:avoid;}
+table.var td{text-align:center; font-size:8pt;}
+table.var td.lab{text-align:left; font-weight:700; color:var(--bleu-fonce); background:var(--bleu-pale);}
+
+/* ----------------------------- PIEGES ----------------------------- */
+table.pieges th:first-child{width:44%;}
+table.pieges td:first-child{color:var(--rouge); background:#FDF1F0;}
+.x{font-weight:700;}
+.v{color:var(--vert-fonce); font-weight:700;}
+
+/* ---------------------------- RECAP ------------------------------- */
+ol.recap{margin:0; padding-left:0; list-style:none; counter-reset:r;}
+ol.recap li{
+  counter-increment:r; position:relative; padding-left:13pt; margin-bottom:1.8pt;
+  break-inside:avoid;
+}
+ol.recap li::before{
+  content:counter(r); position:absolute; left:0; top:.3pt;
+  width:10pt; height:10pt; border-radius:50%; background:var(--vert); color:#fff;
+  font-size:6.6pt; font-weight:700; text-align:center; line-height:10pt;
+}
+
+/* --------------------------- MATHS -------------------------------- */
+.m{font-family:Cambria,Georgia,"Times New Roman",serif;}
+i,var{font-family:Cambria,Georgia,"Times New Roman",serif; font-style:italic;}
+.op{font-family:Cambria,Georgia,"Times New Roman",serif; font-style:normal;}
+.f{display:inline-block; vertical-align:middle; text-align:center;
+   margin:0 .12em; line-height:1.06; font-family:Cambria,Georgia,"Times New Roman",serif;}
+.f>span{display:block; padding:0 .2em;}
+.f>span:first-child{border-bottom:.6pt solid currentColor; padding-bottom:.08em;}
+.f>span:last-child{padding-top:.04em;}
+.rad{border-top:.6pt solid currentColor; padding-top:.12em;}
+/* line-height:0 evite que l'exposant n'ecarte les lignes ; position:relative le
+   repositionne sans qu'il heurte la barre de fraction ni le trait du radical. */
+sup,sub{font-size:.68em; line-height:0; position:relative; vertical-align:baseline;}
+sup{top:-.42em;}
+sub{bottom:-.22em;}
+.pt{white-space:nowrap;}
+/* Les fleches n'ont qu'un glyphe atrophie dans la fonte serif : on les force
+   en sans-serif, ou elles sont franches meme a 8 pt. */
+.ar{font-family:"Segoe UI",Calibri,Arial,"DejaVu Sans",sans-serif; font-style:normal;}
+
+/* ------------------- PIEGES : blocs erreur / correction ------------- */
+.pg{font-size:8.1pt; border-left:2.4pt solid var(--rouge); background:#FDF1F0; border-radius:1.5pt;
+    padding:2pt 5pt; margin:0 0 2.8pt; break-inside:avoid; page-break-inside:avoid;}
+.pg .err{color:var(--rouge); font-weight:600;}
+.pg .cor{color:#1B1B1B; margin-top:.8pt;}
+.pg .cor b{color:var(--bleu-fonce);}
+.v{color:var(--vert-fonce); font-weight:700;}
+
+</style>
+</head>
+<body>
+<header class="entete">
+  <div class="num">9</div>
+  <div class="txt">
+    <div class="niveau">4EME &middot; MATHEMATIQUES</div>
+    <h1>Les vecteurs (1) : bipoints, vecteur, égalité, somme</h1>
+    <div class="sous">Leçon 1 : les bipoints équipollents &middot; Leçon 2 : le vecteur et ses représentants &middot; Leçon 3 : l'égalité de deux vecteurs &middot; Leçon 4 : la relation de Chasles &middot; Leçon 5 : la somme de deux vecteurs</div>
+  </div>
+</header>
+
+<div class="bandeau bleu" style="margin-top:0">L'ESSENTIEL</div>
+<div class="cols">
+
+<!-- ================= LECON 1 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 1&nbsp;: Les bipoints équipollents</h2>
+<p>Un <b>bipoint</b> (A,&#8239;B) est un <b>couple de points</b> : A est l'<b>origine</b>, B l'<b>extrémité</b>. Il représente le déplacement « de A vers B » et se dessine par une <b>flèche</b> partant de A. L'ordre compte : (A,&#8239;B) et (B,&#8239;A) ne sont <b>pas</b> le même bipoint.</p></div>
+<p>Un bipoint est décrit par <b>trois</b> renseignements :</p>
+<ul>
+<li>sa <b>direction</b> : la droite (AB) ;</li>
+<li>son <b>sens</b> : de A vers B, et non de B vers A ;</li>
+<li>sa <b>longueur</b> : la distance AB.</li>
+</ul>
+<p>Deux bipoints (A,&#8239;B) et (C,&#8239;D) sont <b>équipollents</b> lorsqu'ils représentent le <b>même déplacement</b> : même direction, même sens, même longueur. Il faut les <b>trois</b> conditions à la fois.</p>
+<div class="form">
+  <span class="t">CARACTERISATION&nbsp;: pour des points non alignés</span>
+  <div class="c m">(A,&#8239;B) et (C,&#8239;D) équipollents si et seulement si <b>ABDC</b> parallélogramme</div>
+</div>
+<p><b>ABDC</b> est l'ordre du <b>tour de la figure</b> : A&#8239;<span class="ar">&#8594;</span>&#8239;B (le premier déplacement), B&#8239;<span class="ar">&#8594;</span>&#8239;D (on relie les deux arrivées), D&#8239;<span class="ar">&#8594;</span>&#8239;C (le second déplacement à l'envers), C&#8239;<span class="ar">&#8594;</span>&#8239;A (retour au départ). Quatre points alignés donnent un parallélogramme <b>aplati</b> : les trois conditions restent la définition.</p>
+</div>
+
+<!-- ================= LECON 2 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 2&nbsp;: Le vecteur et ses représentants</h2>
+<p>Un <b>vecteur</b> est ce que tous les bipoints équipollents ont en commun : une <b>direction</b>, un <b>sens</b> et une <b>longueur</b>, aussi appelée <b>norme</b>.</p></div>
+<div class="form">
+  <span class="t">NOTATION</span>
+  <div class="c m">de A vers B : <span style="display:inline-block;position:relative;line-height:1"><i>AB</i><span style="position:absolute;left:0;right:0;top:-.60em;font-size:.72em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span> &nbsp;&nbsp;&middot;&nbsp;&nbsp; d'une seule lettre : <span style="display:inline-block;position:relative;line-height:1"><i>u</i><span style="position:absolute;left:0;right:0;top:-.60em;font-size:.72em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span></div>
+  <div class="c m">AB est un <b>nombre</b> &nbsp;&middot;&nbsp; <span style="display:inline-block;position:relative;line-height:1"><i>AB</i><span style="position:absolute;left:0;right:0;top:-.60em;font-size:.72em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span> est un <b>déplacement</b></div>
+</div>
+<ul>
+<li>Tout bipoint équipollent à (A,&#8239;B) est un <b>représentant</b> de <span style="display:inline-block;position:relative;line-height:1"><i>AB</i><span style="position:absolute;left:0;right:0;top:-.60em;font-size:.72em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span>.</li>
+<li>Un même vecteur a une <b>infinité</b> de représentants, <b>un pour chaque origine</b> : on choisit librement le point de départ, le vecteur indique où arriver.</li>
+</ul>
+<h3 class="rub">Construire le représentant d'origine M</h3>
+<ul>
+<li>Trace la <b>parallèle</b> à (AB) passant par M.</li>
+<li>Reporte la longueur AB à partir de M, <b>du même côté</b> que la flèche <span style="display:inline-block;position:relative;line-height:1"><i>AB</i><span style="position:absolute;left:0;right:0;top:-.60em;font-size:.72em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span> : tu obtiens N.</li>
+<li>Contrôle : <b>ABNM</b> est un parallélogramme, et <span style="display:inline-block;position:relative;line-height:1"><i>MN</i><span style="position:absolute;left:0;right:0;top:-.60em;font-size:.72em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span>&#8239;=&#8239;<span style="display:inline-block;position:relative;line-height:1"><i>AB</i><span style="position:absolute;left:0;right:0;top:-.60em;font-size:.72em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span>.</li>
+</ul>
+</div>
+
+<!-- ================= LECON 3 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 3&nbsp;: L'égalité de deux vecteurs</h2>
+<p>Deux vecteurs sont <b>égaux</b> lorsqu'ils ont la <b>même direction</b>, le <b>même sens</b> et la <b>même longueur</b>.</p></div>
+<div class="form">
+  <span class="t">EGALITE ET PARALLELOGRAMME</span>
+  <div class="c m"><span style="display:inline-block;position:relative;line-height:1"><i>AB</i><span style="position:absolute;left:0;right:0;top:-.60em;font-size:.72em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span>&#8239;=&#8239;<span style="display:inline-block;position:relative;line-height:1"><i>CD</i><span style="position:absolute;left:0;right:0;top:-.60em;font-size:.72em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span> si et seulement si <b>ABDC</b> parallélogramme</div>
+  <div class="c m">dans le parallélogramme <b>ABCD</b> : <span style="display:inline-block;position:relative;line-height:1"><i>AB</i><span style="position:absolute;left:0;right:0;top:-.60em;font-size:.72em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span>&#8239;=&#8239;<span style="display:inline-block;position:relative;line-height:1"><i>DC</i><span style="position:absolute;left:0;right:0;top:-.60em;font-size:.72em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span> &nbsp;et&nbsp; <span style="display:inline-block;position:relative;line-height:1"><i>AD</i><span style="position:absolute;left:0;right:0;top:-.60em;font-size:.72em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span>&#8239;=&#8239;<span style="display:inline-block;position:relative;line-height:1"><i>BC</i><span style="position:absolute;left:0;right:0;top:-.60em;font-size:.72em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span></div>
+</div>
+<ul>
+<li><span style="display:inline-block;position:relative;line-height:1"><i>AB</i><span style="position:absolute;left:0;right:0;top:-.60em;font-size:.72em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span>&#8239;=&#8239;<span style="display:inline-block;position:relative;line-height:1"><i>CD</i><span style="position:absolute;left:0;right:0;top:-.60em;font-size:.72em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span> signifie exactement que les bipoints (A,&#8239;B) et (C,&#8239;D) sont <b>équipollents</b>.</li>
+<li>Deux vecteurs égaux ont la même longueur, mais deux vecteurs de <b>même longueur</b> ne sont pas forcément égaux : il faut aussi la même direction et le même sens.</li>
+<li>Si <span style="display:inline-block;position:relative;line-height:1"><i>AB</i><span style="position:absolute;left:0;right:0;top:-.60em;font-size:.72em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span>&#8239;=&#8239;<span style="display:inline-block;position:relative;line-height:1"><i>AC</i><span style="position:absolute;left:0;right:0;top:-.60em;font-size:.72em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span>, les deux flèches partent du même point A : elles arrivent au même endroit, donc <b>B&#8239;=&#8239;C</b>.</li>
+<li><b>Contrôle d'écriture</b> : les deux flèches partent de <b>deux sommets différents</b> et <b>pointent du même côté</b>.</li>
+</ul>
+</div>
+
+<!-- ================= LECON 4 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 4&nbsp;: La relation de Chasles</h2>
+<div class="form">
+  <span class="t">RELATION DE CHASLES&nbsp;: pour trois points quelconques A, B, C</span>
+  <div class="c m"><span style="display:inline-block;position:relative;line-height:1"><i>AB</i><span style="position:absolute;left:0;right:0;top:-.60em;font-size:.72em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span>&#8239;+&#8239;<span style="display:inline-block;position:relative;line-height:1"><i>BC</i><span style="position:absolute;left:0;right:0;top:-.60em;font-size:.72em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span>&#8239;=&#8239;<span style="display:inline-block;position:relative;line-height:1"><i>AC</i><span style="position:absolute;left:0;right:0;top:-.60em;font-size:.72em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span></div>
+</div></div>
+<ul>
+<li>Elle traduit que deux déplacements successifs, de A à B puis de B à C, équivalent à un <b>seul</b> déplacement, de A à C.</li>
+<li>Elle vaut pour <b>n'importe quels</b> points, même alignés, et même si le second déplacement revient en arrière.</li>
+<li>La lettre écrite <b>deux fois</b>, une fois à l'arrivée et une fois au départ, est celle qui <b>s'efface</b>.</li>
+<li>Elle sert à <b>simplifier</b> une somme (deux flèches en une) ou à <b>décomposer</b> un vecteur (une flèche en deux, en choisissant un point de passage).</li>
+<li>Elle s'enchaîne autant de fois qu'on veut : <span style="display:inline-block;position:relative;line-height:1"><i>AB</i><span style="position:absolute;left:0;right:0;top:-.60em;font-size:.72em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span>&#8239;+&#8239;<span style="display:inline-block;position:relative;line-height:1"><i>BC</i><span style="position:absolute;left:0;right:0;top:-.60em;font-size:.72em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span>&#8239;+&#8239;<span style="display:inline-block;position:relative;line-height:1"><i>CD</i><span style="position:absolute;left:0;right:0;top:-.60em;font-size:.72em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span>&#8239;=&#8239;<span style="display:inline-block;position:relative;line-height:1"><i>AD</i><span style="position:absolute;left:0;right:0;top:-.60em;font-size:.72em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span>.</li>
+</ul>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Vecteur nul et vecteurs opposés</h3>
+<div class="form">
+  <span class="t">VECTEUR NUL ET VECTEUR OPPOSE</span>
+  <div class="c m"><span style="display:inline-block;position:relative;line-height:1"><i>AA</i><span style="position:absolute;left:0;right:0;top:-.60em;font-size:.72em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span>&#8239;=&#8239;<span style="display:inline-block;position:relative;line-height:1"><span class="op">0</span><span style="position:absolute;left:0;right:0;top:-.60em;font-size:.72em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span> &nbsp;&nbsp;&nbsp; <span style="display:inline-block;position:relative;line-height:1"><i>AB</i><span style="position:absolute;left:0;right:0;top:-.60em;font-size:.72em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span>&#8239;+&#8239;<span style="display:inline-block;position:relative;line-height:1"><span class="op">0</span><span style="position:absolute;left:0;right:0;top:-.60em;font-size:.72em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span>&#8239;=&#8239;<span style="display:inline-block;position:relative;line-height:1"><i>AB</i><span style="position:absolute;left:0;right:0;top:-.60em;font-size:.72em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span></div>
+  <div class="c m"><span style="display:inline-block;position:relative;line-height:1"><i>BA</i><span style="position:absolute;left:0;right:0;top:-.60em;font-size:.72em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span>&#8239;=&#8239;&#8722;<span style="display:inline-block;position:relative;line-height:1"><i>AB</i><span style="position:absolute;left:0;right:0;top:-.60em;font-size:.72em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span> &nbsp;&nbsp;&nbsp; <span style="display:inline-block;position:relative;line-height:1"><i>AB</i><span style="position:absolute;left:0;right:0;top:-.60em;font-size:.72em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span>&#8239;+&#8239;<span style="display:inline-block;position:relative;line-height:1"><i>BA</i><span style="position:absolute;left:0;right:0;top:-.60em;font-size:.72em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span>&#8239;=&#8239;<span style="display:inline-block;position:relative;line-height:1"><i>AA</i><span style="position:absolute;left:0;right:0;top:-.60em;font-size:.72em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span>&#8239;=&#8239;<span style="display:inline-block;position:relative;line-height:1"><span class="op">0</span><span style="position:absolute;left:0;right:0;top:-.60em;font-size:.72em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span></div>
+  <div class="c m"><span style="display:inline-block;position:relative;line-height:1"><i>JK</i><span style="position:absolute;left:0;right:0;top:-.60em;font-size:.72em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span>&#8239;&#8722;&#8239;<span style="display:inline-block;position:relative;line-height:1"><i>MK</i><span style="position:absolute;left:0;right:0;top:-.60em;font-size:.72em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span>&#8239;=&#8239;<span style="display:inline-block;position:relative;line-height:1"><i>JK</i><span style="position:absolute;left:0;right:0;top:-.60em;font-size:.72em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span>&#8239;+&#8239;<span style="display:inline-block;position:relative;line-height:1"><i>KM</i><span style="position:absolute;left:0;right:0;top:-.60em;font-size:.72em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span>&#8239;=&#8239;<span style="display:inline-block;position:relative;line-height:1"><i>JM</i><span style="position:absolute;left:0;right:0;top:-.60em;font-size:.72em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span></div>
+</div>
+<ul>
+<li>Le <b>vecteur nul</b> <span style="display:inline-block;position:relative;line-height:1"><span class="op">0</span><span style="position:absolute;left:0;right:0;top:-.60em;font-size:.72em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span> est le déplacement qui ne bouge pas : sa longueur est <b>zéro</b>, il n'a ni direction ni sens. Il apparaît dès qu'un trajet revient à son point de départ.</li>
+<li>Le <b>vecteur opposé</b> de <span style="display:inline-block;position:relative;line-height:1"><i>AB</i><span style="position:absolute;left:0;right:0;top:-.60em;font-size:.72em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span> est <span style="display:inline-block;position:relative;line-height:1"><i>BA</i><span style="position:absolute;left:0;right:0;top:-.60em;font-size:.72em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span> : même direction, même longueur, <b>sens contraire</b>.</li>
+<li><b>Soustraire, c'est ajouter l'opposé</b> : on <b>retourne</b> la flèche, puis on ajoute, par exemple &#8722;<span style="display:inline-block;position:relative;line-height:1"><i>MK</i><span style="position:absolute;left:0;right:0;top:-.60em;font-size:.72em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span> s'écrit <span style="display:inline-block;position:relative;line-height:1"><i>KM</i><span style="position:absolute;left:0;right:0;top:-.60em;font-size:.72em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span>.</li>
+</ul>
+<h3 class="rub">Simplifier une somme</h3>
+<ul>
+<li>Retourne d'abord chaque soustraction : &#8722;<span style="display:inline-block;position:relative;line-height:1"><i>XY</i><span style="position:absolute;left:0;right:0;top:-.60em;font-size:.72em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span> devient +&#8239;<span style="display:inline-block;position:relative;line-height:1"><i>YX</i><span style="position:absolute;left:0;right:0;top:-.60em;font-size:.72em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span>.</li>
+<li>Cherche deux vecteurs qui <b>se suivent</b> : <span style="display:inline-block;position:relative;line-height:1"><i>XY</i><span style="position:absolute;left:0;right:0;top:-.60em;font-size:.72em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span>&#8239;+&#8239;<span style="display:inline-block;position:relative;line-height:1"><i>YZ</i><span style="position:absolute;left:0;right:0;top:-.60em;font-size:.72em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span>&#8239;=&#8239;<span style="display:inline-block;position:relative;line-height:1"><i>XZ</i><span style="position:absolute;left:0;right:0;top:-.60em;font-size:.72em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span>. Si aucun couple ne se suit, <b>change l'ordre</b> des termes : l'addition se fait dans l'ordre que l'on veut.</li>
+<li>Recommence jusqu'à obtenir un seul vecteur, et reconnais <span style="display:inline-block;position:relative;line-height:1"><span class="op">0</span><span style="position:absolute;left:0;right:0;top:-.60em;font-size:.72em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span> si le départ et l'arrivée sont confondus.</li>
+</ul>
+</div>
+
+<!-- ================= LECON 5 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 5&nbsp;: La somme de deux vecteurs</h2>
+<div class="form">
+  <span class="t">SOMME DE DEUX VECTEURS&nbsp;: deux constructions</span>
+  <div class="c m"><b>bout à bout</b> : <span style="display:inline-block;position:relative;line-height:1"><i>AB</i><span style="position:absolute;left:0;right:0;top:-.60em;font-size:.72em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span>&#8239;+&#8239;<span style="display:inline-block;position:relative;line-height:1"><i>BC</i><span style="position:absolute;left:0;right:0;top:-.60em;font-size:.72em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span>&#8239;=&#8239;<span style="display:inline-block;position:relative;line-height:1"><i>AC</i><span style="position:absolute;left:0;right:0;top:-.60em;font-size:.72em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span> &nbsp;<span style="font-size:7.5pt">(c'est Chasles)</span></div>
+  <div class="c m"><b>parallélogramme</b> : <span style="display:inline-block;position:relative;line-height:1"><i>AB</i><span style="position:absolute;left:0;right:0;top:-.60em;font-size:.72em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span>&#8239;+&#8239;<span style="display:inline-block;position:relative;line-height:1"><i>AC</i><span style="position:absolute;left:0;right:0;top:-.60em;font-size:.72em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span>&#8239;=&#8239;<span style="display:inline-block;position:relative;line-height:1"><i>AD</i><span style="position:absolute;left:0;right:0;top:-.60em;font-size:.72em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span> &nbsp;<span style="font-size:7.5pt">(ABDC parallélogramme)</span></div>
+</div></div>
+<ul>
+<li><b>Bout à bout</b> : on place <span style="display:inline-block;position:relative;line-height:1"><i>v</i><span style="position:absolute;left:0;right:0;top:-.60em;font-size:.72em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span> à l'<b>extrémité</b> de <span style="display:inline-block;position:relative;line-height:1"><i>u</i><span style="position:absolute;left:0;right:0;top:-.60em;font-size:.72em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span> ; la somme <span style="display:inline-block;position:relative;line-height:1"><i>u</i><span style="position:absolute;left:0;right:0;top:-.60em;font-size:.72em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span>&#8239;+&#8239;<span style="display:inline-block;position:relative;line-height:1"><i>v</i><span style="position:absolute;left:0;right:0;top:-.60em;font-size:.72em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span> va de l'<b>origine</b> de <span style="display:inline-block;position:relative;line-height:1"><i>u</i><span style="position:absolute;left:0;right:0;top:-.60em;font-size:.72em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span> à l'<b>extrémité</b> de <span style="display:inline-block;position:relative;line-height:1"><i>v</i><span style="position:absolute;left:0;right:0;top:-.60em;font-size:.72em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span>.</li>
+<li><b>Parallélogramme</b> : on place <span style="display:inline-block;position:relative;line-height:1"><i>u</i><span style="position:absolute;left:0;right:0;top:-.60em;font-size:.72em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span> et <span style="display:inline-block;position:relative;line-height:1"><i>v</i><span style="position:absolute;left:0;right:0;top:-.60em;font-size:.72em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span> à partir d'un <b>même point</b> A ; la somme est la <b>diagonale</b> issue de A.</li>
+<li>Les deux constructions donnent <b>le même</b> vecteur : ce sont deux façons de dessiner la même chose. L'addition traduit l'<b>enchaînement</b> de deux déplacements.</li>
+<li>La <b>longueur</b> de la somme n'est pas, en général, la somme des longueurs : ce sont les <b>flèches</b> qui s'ajoutent, pas les nombres.</li>
+<li><b>Construction</b> : trace la parallèle à (AC) passant par B et la parallèle à (AB) passant par C ; elles se coupent en <b>D</b>, et <span style="display:inline-block;position:relative;line-height:1"><i>AD</i><span style="position:absolute;left:0;right:0;top:-.60em;font-size:.72em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span> est la diagonale de <b>ABDC</b> issue de A.</li>
+</ul>
+<div class="note"><b>Déplacement et distance parcourue.</b> Le <b>déplacement</b> est un vecteur : il ne retient que le départ et l'arrivée. La <b>distance parcourue</b> est un nombre : elle retient tout le chemin. Un berger qui fait le tour de son enclos et rentre chez lui a parcouru plusieurs kilomètres, mais son déplacement total est le <b>vecteur nul</b>.</div>
+</div>
+
+</div>
+
+<div class="bandeau vert">PIEGES ET ERREURS FREQUENTES</div>
+<div class="cols">
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> « (A,&#8239;B) et (C,&#8239;D) sont équipollents, donc <b>ABCD</b> est un parallélogramme. »</div><div class="cor"><span class="v">&#10003;</span> C'est <b>ABDC</b>. En écrivant ABCD on passe de B, une <b>arrivée</b>, à C, un <b>départ</b> : le quadrilatère se croise. On suit le tour de la figure, A&#8239;<span class="ar">&#8594;</span>&#8239;B&#8239;<span class="ar">&#8594;</span>&#8239;D&#8239;<span class="ar">&#8594;</span>&#8239;C&#8239;<span class="ar">&#8594;</span>&#8239;A.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> <span style="display:inline-block;position:relative;line-height:1"><i>AB</i><span style="position:absolute;left:0;right:0;top:-.60em;font-size:.72em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span>&#8239;=&#8239;<span style="display:inline-block;position:relative;line-height:1"><i>CD</i><span style="position:absolute;left:0;right:0;top:-.60em;font-size:.72em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span> donc ABCD est un parallélogramme &nbsp;&middot;&nbsp; dans le parallélogramme ABCD, <span style="display:inline-block;position:relative;line-height:1"><i>AB</i><span style="position:absolute;left:0;right:0;top:-.60em;font-size:.72em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span>&#8239;=&#8239;<span style="display:inline-block;position:relative;line-height:1"><i>CD</i><span style="position:absolute;left:0;right:0;top:-.60em;font-size:.72em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span></div><div class="cor"><span class="v">&#10003;</span> <span style="display:inline-block;position:relative;line-height:1"><i>AB</i><span style="position:absolute;left:0;right:0;top:-.60em;font-size:.72em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span>&#8239;=&#8239;<span style="display:inline-block;position:relative;line-height:1"><i>CD</i><span style="position:absolute;left:0;right:0;top:-.60em;font-size:.72em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span> signifie <b>ABDC</b> parallélogramme. Dans un parallélogramme <b>ABCD</b>, ce sont les côtés opposés : <span style="display:inline-block;position:relative;line-height:1"><i>AB</i><span style="position:absolute;left:0;right:0;top:-.60em;font-size:.72em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span>&#8239;=&#8239;<span style="display:inline-block;position:relative;line-height:1"><i>DC</i><span style="position:absolute;left:0;right:0;top:-.60em;font-size:.72em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span> et <span style="display:inline-block;position:relative;line-height:1"><i>AD</i><span style="position:absolute;left:0;right:0;top:-.60em;font-size:.72em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span>&#8239;=&#8239;<span style="display:inline-block;position:relative;line-height:1"><i>BC</i><span style="position:absolute;left:0;right:0;top:-.60em;font-size:.72em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span>. L'ordre des lettres change tout.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> <span style="display:inline-block;position:relative;line-height:1"><i>AB</i><span style="position:absolute;left:0;right:0;top:-.60em;font-size:.72em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span>&#8239;=&#8239;5&#8239;cm &nbsp;&middot;&nbsp; « AB et <span style="display:inline-block;position:relative;line-height:1"><i>AB</i><span style="position:absolute;left:0;right:0;top:-.60em;font-size:.72em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span>, c'est la même chose »</div><div class="cor"><span class="v">&#10003;</span> AB sans flèche est un <b>nombre</b>, la longueur du segment ; <span style="display:inline-block;position:relative;line-height:1"><i>AB</i><span style="position:absolute;left:0;right:0;top:-.60em;font-size:.72em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span> avec la flèche est un <b>déplacement</b>. On écrit AB&#8239;=&#8239;5&#8239;cm, jamais <span style="display:inline-block;position:relative;line-height:1"><i>AB</i><span style="position:absolute;left:0;right:0;top:-.60em;font-size:.72em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span>&#8239;=&#8239;5&#8239;cm.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> « Ces deux flèches ont la même longueur, donc <span style="display:inline-block;position:relative;line-height:1"><i>AB</i><span style="position:absolute;left:0;right:0;top:-.60em;font-size:.72em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span>&#8239;=&#8239;<span style="display:inline-block;position:relative;line-height:1"><i>CD</i><span style="position:absolute;left:0;right:0;top:-.60em;font-size:.72em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span>. »</div><div class="cor"><span class="v">&#10003;</span> Il faut les <b>trois</b> conditions : même direction, même sens, même longueur. <span style="display:inline-block;position:relative;line-height:1"><i>AB</i><span style="position:absolute;left:0;right:0;top:-.60em;font-size:.72em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span> et <span style="display:inline-block;position:relative;line-height:1"><i>BA</i><span style="position:absolute;left:0;right:0;top:-.60em;font-size:.72em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span> ont la même longueur et sont pourtant <b>opposés</b>.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> « <span style="display:inline-block;position:relative;line-height:1"><i>AB</i><span style="position:absolute;left:0;right:0;top:-.60em;font-size:.72em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span> et <span style="display:inline-block;position:relative;line-height:1"><i>CD</i><span style="position:absolute;left:0;right:0;top:-.60em;font-size:.72em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span> ne sont pas au même endroit sur la figure, donc ils sont différents. »</div><div class="cor"><span class="v">&#10003;</span> Un vecteur n'a <b>pas de position fixe</b> : il a une <b>infinité</b> de représentants, un par origine. Deux flèches éloignées peuvent être <b>le même</b> vecteur.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> <span style="display:inline-block;position:relative;line-height:1"><i>AB</i><span style="position:absolute;left:0;right:0;top:-.60em;font-size:.72em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span>&#8239;+&#8239;<span style="display:inline-block;position:relative;line-height:1"><i>AC</i><span style="position:absolute;left:0;right:0;top:-.60em;font-size:.72em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span>&#8239;=&#8239;<span style="display:inline-block;position:relative;line-height:1"><i>BC</i><span style="position:absolute;left:0;right:0;top:-.60em;font-size:.72em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span></div><div class="cor"><span class="v">&#10003;</span> Chasles exige que l'<b>extrémité</b> du premier soit l'<b>origine</b> du second : <span style="display:inline-block;position:relative;line-height:1"><i>AB</i><span style="position:absolute;left:0;right:0;top:-.60em;font-size:.72em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span>&#8239;+&#8239;<span style="display:inline-block;position:relative;line-height:1"><i>BC</i><span style="position:absolute;left:0;right:0;top:-.60em;font-size:.72em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span>&#8239;=&#8239;<span style="display:inline-block;position:relative;line-height:1"><i>AC</i><span style="position:absolute;left:0;right:0;top:-.60em;font-size:.72em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span>. Ici les deux <b>origines</b> sont communes : c'est la règle du <b>parallélogramme</b>, <span style="display:inline-block;position:relative;line-height:1"><i>AB</i><span style="position:absolute;left:0;right:0;top:-.60em;font-size:.72em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span>&#8239;+&#8239;<span style="display:inline-block;position:relative;line-height:1"><i>AC</i><span style="position:absolute;left:0;right:0;top:-.60em;font-size:.72em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span>&#8239;=&#8239;<span style="display:inline-block;position:relative;line-height:1"><i>AD</i><span style="position:absolute;left:0;right:0;top:-.60em;font-size:.72em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span>.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> <span style="display:inline-block;position:relative;line-height:1"><i>JK</i><span style="position:absolute;left:0;right:0;top:-.60em;font-size:.72em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span>&#8239;&#8722;&#8239;<span style="display:inline-block;position:relative;line-height:1"><i>MK</i><span style="position:absolute;left:0;right:0;top:-.60em;font-size:.72em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span>&#8239;=&#8239;<span style="display:inline-block;position:relative;line-height:1"><i>JK</i><span style="position:absolute;left:0;right:0;top:-.60em;font-size:.72em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span>&#8239;+&#8239;<span style="display:inline-block;position:relative;line-height:1"><i>MK</i><span style="position:absolute;left:0;right:0;top:-.60em;font-size:.72em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span>, puis on applique Chasles</div><div class="cor"><span class="v">&#10003;</span> Soustraire, c'est <b>ajouter l'opposé</b> : &#8722;<span style="display:inline-block;position:relative;line-height:1"><i>MK</i><span style="position:absolute;left:0;right:0;top:-.60em;font-size:.72em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span>&#8239;=&#8239;<span style="display:inline-block;position:relative;line-height:1"><i>KM</i><span style="position:absolute;left:0;right:0;top:-.60em;font-size:.72em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span>, donc <span style="display:inline-block;position:relative;line-height:1"><i>JK</i><span style="position:absolute;left:0;right:0;top:-.60em;font-size:.72em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span>&#8239;&#8722;&#8239;<span style="display:inline-block;position:relative;line-height:1"><i>MK</i><span style="position:absolute;left:0;right:0;top:-.60em;font-size:.72em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span>&#8239;=&#8239;<span style="display:inline-block;position:relative;line-height:1"><i>JK</i><span style="position:absolute;left:0;right:0;top:-.60em;font-size:.72em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span>&#8239;+&#8239;<span style="display:inline-block;position:relative;line-height:1"><i>KM</i><span style="position:absolute;left:0;right:0;top:-.60em;font-size:.72em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span>&#8239;=&#8239;<span style="display:inline-block;position:relative;line-height:1"><i>JM</i><span style="position:absolute;left:0;right:0;top:-.60em;font-size:.72em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span>. On <b>retourne</b> la flèche avant d'appliquer Chasles.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> « La longueur de <span style="display:inline-block;position:relative;line-height:1"><i>u</i><span style="position:absolute;left:0;right:0;top:-.60em;font-size:.72em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span>&#8239;+&#8239;<span style="display:inline-block;position:relative;line-height:1"><i>v</i><span style="position:absolute;left:0;right:0;top:-.60em;font-size:.72em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span> est la somme des deux longueurs. » &nbsp;&middot;&nbsp; déplacement confondu avec distance parcourue</div><div class="cor"><span class="v">&#10003;</span> Ce sont les <b>flèches</b> qui s'ajoutent, pas les nombres. Un trajet fermé donne une distance parcourue grande et un déplacement égal au <b>vecteur nul</b>.</div></div>
+
+</div>
+
+<div class="bandeau bleu">A SAVOIR PAR COEUR AVANT LE DEVOIR</div>
+<div class="cols">
+<ol class="recap">
+<li>Un <b>bipoint</b> (A,&#8239;B) a une <b>origine</b> A, une <b>extrémité</b> B, et trois renseignements : <b>direction</b>, <b>sens</b>, <b>longueur</b>. (A,&#8239;B) et (B,&#8239;A) sont différents.</li>
+<li><b>Equipollents</b> : même direction, même sens, même longueur (les <b>trois</b> à la fois). Caractérisation : (A,&#8239;B) et (C,&#8239;D) équipollents si et seulement si <b>ABDC</b> parallélogramme.</li>
+<li>AB sans flèche est un <b>nombre</b> ; <span style="display:inline-block;position:relative;line-height:1"><i>AB</i><span style="position:absolute;left:0;right:0;top:-.60em;font-size:.72em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span> avec la flèche est un <b>déplacement</b>. Ne pas mélanger les deux écritures.</li>
+<li>Un vecteur a une <b>infinité de représentants</b>, un par origine : on choisit le point de départ, le vecteur donne l'arrivée. Il n'a pas de position fixe.</li>
+<li><span style="display:inline-block;position:relative;line-height:1"><i>AB</i><span style="position:absolute;left:0;right:0;top:-.60em;font-size:.72em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span>&#8239;=&#8239;<span style="display:inline-block;position:relative;line-height:1"><i>CD</i><span style="position:absolute;left:0;right:0;top:-.60em;font-size:.72em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span> signifie <b>ABDC</b> parallélogramme. Dans le parallélogramme <b>ABCD</b> : <span style="display:inline-block;position:relative;line-height:1"><i>AB</i><span style="position:absolute;left:0;right:0;top:-.60em;font-size:.72em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span>&#8239;=&#8239;<span style="display:inline-block;position:relative;line-height:1"><i>DC</i><span style="position:absolute;left:0;right:0;top:-.60em;font-size:.72em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span> et <span style="display:inline-block;position:relative;line-height:1"><i>AD</i><span style="position:absolute;left:0;right:0;top:-.60em;font-size:.72em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span>&#8239;=&#8239;<span style="display:inline-block;position:relative;line-height:1"><i>BC</i><span style="position:absolute;left:0;right:0;top:-.60em;font-size:.72em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span>. Et <span style="display:inline-block;position:relative;line-height:1"><i>AB</i><span style="position:absolute;left:0;right:0;top:-.60em;font-size:.72em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span>&#8239;=&#8239;<span style="display:inline-block;position:relative;line-height:1"><i>AC</i><span style="position:absolute;left:0;right:0;top:-.60em;font-size:.72em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span> entraîne B&#8239;=&#8239;C.</li>
+<li><b>Chasles</b> : <span style="display:inline-block;position:relative;line-height:1"><i>AB</i><span style="position:absolute;left:0;right:0;top:-.60em;font-size:.72em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span>&#8239;+&#8239;<span style="display:inline-block;position:relative;line-height:1"><i>BC</i><span style="position:absolute;left:0;right:0;top:-.60em;font-size:.72em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span>&#8239;=&#8239;<span style="display:inline-block;position:relative;line-height:1"><i>AC</i><span style="position:absolute;left:0;right:0;top:-.60em;font-size:.72em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span>, pour trois points quelconques, enchaînable ; la lettre commune s'efface. Elle sert à <b>simplifier</b> et à <b>décomposer</b>.</li>
+<li><span style="display:inline-block;position:relative;line-height:1"><i>AA</i><span style="position:absolute;left:0;right:0;top:-.60em;font-size:.72em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span>&#8239;=&#8239;<span style="display:inline-block;position:relative;line-height:1"><span class="op">0</span><span style="position:absolute;left:0;right:0;top:-.60em;font-size:.72em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span> &nbsp;&middot;&nbsp; <span style="display:inline-block;position:relative;line-height:1"><i>BA</i><span style="position:absolute;left:0;right:0;top:-.60em;font-size:.72em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span>&#8239;=&#8239;&#8722;<span style="display:inline-block;position:relative;line-height:1"><i>AB</i><span style="position:absolute;left:0;right:0;top:-.60em;font-size:.72em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span> &nbsp;&middot;&nbsp; <span style="display:inline-block;position:relative;line-height:1"><i>AB</i><span style="position:absolute;left:0;right:0;top:-.60em;font-size:.72em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span>&#8239;+&#8239;<span style="display:inline-block;position:relative;line-height:1"><i>BA</i><span style="position:absolute;left:0;right:0;top:-.60em;font-size:.72em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span>&#8239;=&#8239;<span style="display:inline-block;position:relative;line-height:1"><span class="op">0</span><span style="position:absolute;left:0;right:0;top:-.60em;font-size:.72em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span>. <b>Soustraire, c'est ajouter l'opposé</b> : &#8722;<span style="display:inline-block;position:relative;line-height:1"><i>MK</i><span style="position:absolute;left:0;right:0;top:-.60em;font-size:.72em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span>&#8239;=&#8239;<span style="display:inline-block;position:relative;line-height:1"><i>KM</i><span style="position:absolute;left:0;right:0;top:-.60em;font-size:.72em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span>.</li>
+<li><b>Somme</b> : bout à bout (c'est Chasles) ou <b>parallélogramme</b>, <span style="display:inline-block;position:relative;line-height:1"><i>AB</i><span style="position:absolute;left:0;right:0;top:-.60em;font-size:.72em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span>&#8239;+&#8239;<span style="display:inline-block;position:relative;line-height:1"><i>AC</i><span style="position:absolute;left:0;right:0;top:-.60em;font-size:.72em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span>&#8239;=&#8239;<span style="display:inline-block;position:relative;line-height:1"><i>AD</i><span style="position:absolute;left:0;right:0;top:-.60em;font-size:.72em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span> avec ABDC parallélogramme. La longueur de la somme n'est pas la somme des longueurs.</li>
+</ol>
+</div>
+
+</body>
+</html>

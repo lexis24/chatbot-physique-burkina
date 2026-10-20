@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Fiche de revision - 5eme - Chapitre 5 : Operations sur les fractions</title>
+<style>
+/* ===================================================================
+   FICHE DE REVISION, Collection Hakili Lab, Edition 2026
+   Feuille de style autonome, format A4 pret a imprimer.
+   Bleu #005CB9 · Vert #49A145
+   =================================================================== */
+:root{
+  --bleu:#005CB9; --bleu-fonce:#00429A; --bleu-pale:#E8F1FB; --bleu-bord:#B7D2EE;
+  --vert:#49A145; --vert-fonce:#2F7A2C; --vert-pale:#EDF7EC; --vert-bord:#BCE0B9;
+  --gris:#4A4A4A; --gris-clair:#E4E4E4; --rouge:#B3261E;
+}
+@page{
+  size:A4; margin:15mm;
+  @bottom-center{
+    content:"Collection Hakili Lab, Edition 2026  ·  Fiche de revision  ·  " counter(page) "/" counter(pages);
+    font-family:"Segoe UI",Calibri,Arial,sans-serif; font-size:6.6pt; color:#8A8A8A;
+  }
+}
+*{box-sizing:border-box;}
+body{
+  margin:0; font-family:"Segoe UI",Calibri,Arial,sans-serif;
+  font-size:8.4pt; line-height:1.26; color:#1B1B1B;
+}
+p{margin:0 0 3pt;}
+ul{margin:0 0 3pt; padding-left:11pt;}
+li{margin:0 0 1.2pt;}
+b,strong{color:var(--bleu-fonce);}
+
+/* ------------------------------ ENTETE ---------------------------- */
+.entete{
+  display:flex; align-items:stretch; border:1.6pt solid var(--bleu);
+  border-radius:2.5pt; overflow:hidden; margin-bottom:6pt;
+}
+.entete .num{
+  background:var(--bleu); color:#fff; font-size:20pt; font-weight:700;
+  padding:0 8pt; display:flex; align-items:center; justify-content:center; min-width:34pt;
+}
+.entete .txt{padding:3.5pt 8pt; flex:1;}
+.entete .niveau{
+  font-size:7pt; font-weight:700; letter-spacing:.9pt; color:var(--vert-fonce);
+}
+.entete h1{margin:0; font-size:13.5pt; line-height:1.12; color:var(--bleu-fonce); font-weight:700;}
+.entete .sous{font-size:7pt; color:var(--gris); margin-top:1pt;}
+
+/* --------------------------- BANDEAUX ----------------------------- */
+.bandeau{
+  color:#fff; font-weight:700; font-size:9pt; letter-spacing:1pt;
+  padding:2.4pt 7pt; border-radius:2pt; margin:3pt 0 4pt; break-after:avoid; page-break-after:avoid;
+}
+.bandeau.bleu{background:var(--bleu);}
+.bandeau.vert{background:var(--vert);}
+
+/* --------------------------- COLONNES ----------------------------- */
+.cols{column-count:2; column-gap:7mm; column-fill:balance;}
+
+.cols.bal{column-fill:balance;}
+.bloc{margin-bottom:5pt;}
+.keep{break-inside:avoid; page-break-inside:avoid;}
+
+/* --------------------------- LECONS ------------------------------- */
+h2.lecon{
+  margin:0 0 3pt; font-size:8.6pt; font-weight:700; color:#fff; background:var(--bleu-fonce);
+  padding:1.8pt 5pt; border-radius:1.5pt; break-after:avoid; page-break-after:avoid;
+}
+h3.rub{
+  margin:3.5pt 0 1.5pt; font-size:8.2pt; font-weight:700; color:var(--vert-fonce);
+  border-bottom:.7pt solid var(--vert-bord); padding-bottom:.8pt;
+  break-after:avoid; page-break-after:avoid;
+}
+
+/* --------------------------- ENCADRES ----------------------------- */
+.form{
+  background:var(--bleu-pale); border:.8pt solid var(--bleu-bord); border-left:2.6pt solid var(--bleu);
+  border-radius:2pt; padding:2.4pt 5pt; margin:2.2pt 0 3.4pt;
+  break-inside:avoid; page-break-inside:avoid;
+}
+.form .t{
+  display:block; font-size:6.8pt; font-weight:700; letter-spacing:.6pt;
+  color:var(--bleu); margin-bottom:1.5pt;
+}
+.form .c{text-align:center; font-size:9.1pt; margin:1.6pt 0;}
+.note{background:var(--vert-pale); border-left:2.4pt solid var(--vert); padding:2.4pt 5pt; border-radius:1.5pt; margin:2.5pt 0 4pt; break-inside:avoid;}
+
+/* --------------------------- TABLEAUX ----------------------------- */
+table{width:100%; border-collapse:collapse; font-size:7.6pt; margin:2pt 0 4pt; break-inside:avoid;}
+th{background:var(--bleu); color:#fff; font-weight:700; text-align:left; padding:1.8pt 4pt; font-size:7.2pt;}
+td{border:.6pt solid var(--gris-clair); padding:1.8pt 4pt; vertical-align:top;}
+tr{break-inside:avoid;}
+table.var td{text-align:center; font-size:8pt;}
+table.var td.lab{text-align:left; font-weight:700; color:var(--bleu-fonce); background:var(--bleu-pale);}
+
+/* ----------------------------- PIEGES ----------------------------- */
+table.pieges th:first-child{width:44%;}
+table.pieges td:first-child{color:var(--rouge); background:#FDF1F0;}
+.x{font-weight:700;}
+.v{color:var(--vert-fonce); font-weight:700;}
+
+/* ---------------------------- RECAP ------------------------------- */
+ol.recap{margin:0; padding-left:0; list-style:none; counter-reset:r;}
+ol.recap li{
+  counter-increment:r; position:relative; padding-left:13pt; margin-bottom:1.8pt;
+  break-inside:avoid;
+}
+ol.recap li::before{
+  content:counter(r); position:absolute; left:0; top:.3pt;
+  width:10pt; height:10pt; border-radius:50%; background:var(--vert); color:#fff;
+  font-size:6.6pt; font-weight:700; text-align:center; line-height:10pt;
+}
+
+/* --------------------------- MATHS -------------------------------- */
+.m{font-family:Cambria,Georgia,"Times New Roman",serif;}
+i,var{font-family:Cambria,Georgia,"Times New Roman",serif; font-style:italic;}
+.op{font-family:Cambria,Georgia,"Times New Roman",serif; font-style:normal;}
+.f{display:inline-block; vertical-align:middle; text-align:center;
+   margin:0 .12em; line-height:1.06; font-family:Cambria,Georgia,"Times New Roman",serif;}
+.f>span{display:block; padding:0 .2em;}
+.f>span:first-child{border-bottom:.6pt solid currentColor; padding-bottom:.08em;}
+.f>span:last-child{padding-top:.04em;}
+.rad{border-top:.6pt solid currentColor; padding-top:.12em;}
+/* line-height:0 evite que l'exposant n'ecarte les lignes ; position:relative le
+   repositionne sans qu'il heurte la barre de fraction ni le trait du radical. */
+sup,sub{font-size:.68em; line-height:0; position:relative; vertical-align:baseline;}
+sup{top:-.42em;}
+sub{bottom:-.22em;}
+.pt{white-space:nowrap;}
+/* Les fleches n'ont qu'un glyphe atrophie dans la fonte serif : on les force
+   en sans-serif, ou elles sont franches meme a 8 pt. */
+.ar{font-family:"Segoe UI",Calibri,Arial,"DejaVu Sans",sans-serif; font-style:normal;}
+
+/* ------------------- PIEGES : blocs erreur / correction ------------- */
+.pg{font-size:8.1pt; border-left:2.4pt solid var(--rouge); background:#FDF1F0; border-radius:1.5pt;
+    padding:2pt 5pt; margin:0 0 2.8pt; break-inside:avoid; page-break-inside:avoid;}
+.pg .err{color:var(--rouge); font-weight:600;}
+.pg .cor{color:#1B1B1B; margin-top:.8pt;}
+.pg .cor b{color:var(--bleu-fonce);}
+.v{color:var(--vert-fonce); font-weight:700;}
+
+</style>
+</head>
+<body>
+<header class="entete">
+  <div class="num">5</div>
+  <div class="txt">
+    <div class="niveau">5EME &middot; MATHEMATIQUES</div>
+    <h1>Opérations sur les fractions</h1>
+    <div class="sous">Leçon 1 : simplifier une fraction &middot; Leçon 2 : réduire au même dénominateur &middot; Leçon 3 : additionner &middot; Leçon 4 : soustraire &middot; Leçon 5 : multiplier et diviser &middot; Leçon 6 : comparer deux fractions</div>
+  </div>
+</header>
+
+<div class="bandeau bleu" style="margin-top:0">L'ESSENTIEL</div>
+<div class="cols">
+
+<!-- ================= LECON 1 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 1&nbsp;: Simplifier une fraction</h2>
+<div class="form">
+  <span class="t">PROPRIETE FONDAMENTALE&nbsp;: <i>k</i> non nul</span>
+  <div class="c m"><span class="f"><span><i>a</i></span><span><i>b</i></span></span>&#8239;=&#8239;<span class="f"><span><i>a</i>&#8239;&#215;&#8239;<i>k</i></span><span><i>b</i>&#8239;&#215;&#8239;<i>k</i></span></span>&#8239;=&#8239;<span class="f"><span><i>a</i>&#8239;&#247;&#8239;<i>k</i></span><span><i>b</i>&#8239;&#247;&#8239;<i>k</i></span></span></div>
+</div></div>
+<p>On ne change pas la valeur d'une fraction en multipliant, ou en divisant, son numérateur <b>et</b> son dénominateur par un <b>même nombre non nul</b>. Deux fractions qui s'obtiennent ainsi l'une de l'autre sont <b>égales</b> : <span class="f"><span>2</span><span>3</span></span>&#8239;=&#8239;<span class="f"><span>4</span><span>6</span></span>&#8239;=&#8239;<span class="f"><span>8</span><span>12</span></span> est un seul nombre, écrit de trois façons.</p>
+<p><b>Définition.</b> Une fraction est <b>irréductible</b> lorsqu'on ne peut plus la simplifier, c'est-à-dire lorsque son numérateur et son dénominateur sont <b>premiers entre eux</b>. Un nombre n'a qu'<b>une seule</b> écriture irréductible : c'est la forme à donner en fin de calcul.</p>
+<div class="form">
+  <span class="t">RENDRE IRREDUCTIBLE EN UNE ETAPE</span>
+  <div class="c m">diviser le numérateur et le dénominateur par leur <b>PGCD</b></div>
+</div>
+<p>Quand le PGCD ne se voit pas, on simplifie <b>en plusieurs fois</b> avec les critères de divisibilité (par 2 si le nombre finit par un chiffre pair ; par 5 s'il finit par 0 ou 5 ; par 3 ou par 9 si la somme des chiffres l'est) : <span class="f"><span>90</span><span>120</span></span>&#8239;=&#8239;<span class="f"><span>9</span><span>12</span></span>&#8239;=&#8239;<span class="f"><span>3</span><span>4</span></span>.</p>
+<div class="note">Simplifier ne rend pas la fraction plus petite : la valeur ne bouge pas, seule l'écriture devient plus courte.</div>
+</div>
+
+<!-- ================= LECON 2 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 2&nbsp;: Réduire au même dénominateur</h2>
+<p><b>Réduire au même dénominateur</b> deux fractions, c'est les réécrire avec un <b>dénominateur commun</b>, sans changer leur valeur. Tout multiple commun des dénominateurs convient, mais on choisit le <b>PPCM</b> : c'est le plus petit, donc celui qui donne les plus petits nombres à écrire.</p></div>
+<div class="form">
+  <span class="t">DENOMINATEUR COMMUN</span>
+  <div class="c m">dénominateur commun&#8239;=&#8239;PPCM des dénominateurs</div>
+  <div class="c m">on multiplie le numérateur <b>et</b> le dénominateur par le même facteur</div>
+</div>
+<ul>
+<li>Un dénominateur <b>multiple</b> de l'autre&nbsp;: il est le dénominateur commun. Pour <span class="f"><span>1</span><span>3</span></span> et <span class="f"><span>5</span><span>6</span></span>, on prend 6, et seule <span class="f"><span>1</span><span>3</span></span>&#8239;=&#8239;<span class="f"><span>2</span><span>6</span></span> est à réécrire.</li>
+<li>Dénominateurs <b>premiers entre eux</b>&nbsp;: on prend leur produit. Pour <span class="f"><span>5</span><span>7</span></span> et <span class="f"><span>4</span><span>5</span></span>, 7&#8239;&#215;&#8239;5&#8239;=&#8239;35.</li>
+<li><b>Ni l'un ni l'autre</b>&nbsp;: on calcule le PPCM. Pour <span class="f"><span>3</span><span>8</span></span> et <span class="f"><span>5</span><span>6</span></span>, c'est 24, et non le produit 48.</li>
+<li>Avec <b>trois</b> fractions, on prend le PPCM des trois dénominateurs.</li>
+</ul>
+<p><b>Contrôle.</b> Chaque nouvelle fraction doit se simplifier en la fraction de départ. Une réduction ne donne jamais un résultat : elle prépare une addition, une soustraction ou une comparaison.</p>
+<div class="note"><b>Conseil.</b> Simplifie chaque fraction <b>avant</b> de réduire : <span class="f"><span>10</span><span>15</span></span> et <span class="f"><span>3</span><span>4</span></span> demandent 60, mais <span class="f"><span>2</span><span>3</span></span> et <span class="f"><span>3</span><span>4</span></span> ne demandent que 12.</div>
+</div>
+
+<!-- ================= LECON 3 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 3&nbsp;: Additionner des fractions</h2>
+<p>On réduit au <b>même dénominateur</b>, on additionne les <b>numérateurs</b> en gardant le dénominateur commun, puis on <b>simplifie</b> le résultat si c'est possible.</p></div>
+<div class="form">
+  <span class="t">ADDITION</span>
+  <div class="c m"><span class="f"><span><i>a</i></span><span><i>c</i></span></span>&#8239;+&#8239;<span class="f"><span><i>b</i></span><span><i>c</i></span></span>&#8239;=&#8239;<span class="f"><span><i>a</i>&#8239;+&#8239;<i>b</i></span><span><i>c</i></span></span></div>
+</div>
+<p><b>Un entier s'écrit en fraction :</b> 2&#8239;=&#8239;<span class="f"><span>2</span><span>1</span></span>&#8239;=&#8239;<span class="f"><span>10</span><span>5</span></span>, donc 2&#8239;+&#8239;<span class="f"><span>3</span><span>5</span></span>&#8239;=&#8239;<span class="f"><span>13</span><span>5</span></span>. Avec <b>trois</b> fractions, on prend le PPCM des trois et on additionne en une seule fois : <span class="f"><span>1</span><span>2</span></span>&#8239;+&#8239;<span class="f"><span>1</span><span>4</span></span>&#8239;+&#8239;<span class="f"><span>1</span><span>8</span></span>&#8239;=&#8239;<span class="f"><span>4</span><span>8</span></span>&#8239;+&#8239;<span class="f"><span>2</span><span>8</span></span>&#8239;+&#8239;<span class="f"><span>1</span><span>8</span></span>&#8239;=&#8239;<span class="f"><span>7</span><span>8</span></span>.</p>
+<div class="form">
+  <span class="t">ECRITURE ENTIER PLUS FRACTION</span>
+  <div class="c m"><span class="f"><span><i>a</i></span><span><i>b</i></span></span>&#8239;=&#8239;<i>q</i>&#8239;+&#8239;<span class="f"><span><i>r</i></span><span><i>b</i></span></span> &nbsp;<span style="font-size:7.5pt">(<i>q</i> quotient et <i>r</i> reste de <i>a</i> par <i>b</i>)</span></div>
+  <div class="c m">18&#8239;=&#8239;5&#8239;&#215;&#8239;3&#8239;+&#8239;3, donc <span class="f"><span>18</span><span>5</span></span>&#8239;=&#8239;3&#8239;+&#8239;<span class="f"><span>3</span><span>5</span></span></div>
+</div>
+<div class="note"><b>Contrôle.</b> Une somme est plus <b>grande</b> que chacune des deux fractions ajoutées.</div>
+</div>
+
+<!-- ================= LECON 4 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 4&nbsp;: Soustraire des fractions</h2>
+<p>Même marche à suivre : <b>même dénominateur</b>, on soustrait les <b>numérateurs</b>, on garde le dénominateur commun, on <b>simplifie</b>.</p></div>
+<div class="form">
+  <span class="t">SOUSTRACTION ET COMPLEMENT A 1</span>
+  <div class="c m"><span class="f"><span><i>a</i></span><span><i>c</i></span></span>&#8239;&#8722;&#8239;<span class="f"><span><i>b</i></span><span><i>c</i></span></span>&#8239;=&#8239;<span class="f"><span><i>a</i>&#8239;&#8722;&#8239;<i>b</i></span><span><i>c</i></span></span></div>
+  <div class="c m">1&#8239;=&#8239;<span class="f"><span><i>b</i></span><span><i>b</i></span></span> &nbsp;&nbsp;&nbsp; reste&#8239;=&#8239;1&#8239;&#8722;&#8239;<span class="f"><span><i>a</i></span><span><i>b</i></span></span></div>
+</div>
+<p>Pour retrancher une fraction d'un <b>entier</b>, on écrit l'entier avec le dénominateur voulu : 1&#8239;=&#8239;<span class="f"><span>4</span><span>4</span></span>, 2&#8239;=&#8239;<span class="f"><span>8</span><span>4</span></span>. Le <b>complément à 1</b> est le calcul le plus utile des problèmes : si une part vaut <span class="f"><span><i>a</i></span><span><i>b</i></span></span> du tout, ce qui reste vaut 1&#8239;&#8722;&#8239;<span class="f"><span><i>a</i></span><span><i>b</i></span></span>.</p>
+<p>Quand plusieurs parts ont été prises l'une après l'autre, on les <b>additionne d'abord</b>, puis on retranche la somme en une seule fois : après <span class="f"><span>1</span><span>4</span></span> puis <span class="f"><span>1</span><span>3</span></span>, on a pris <span class="f"><span>3</span><span>12</span></span>&#8239;+&#8239;<span class="f"><span>4</span><span>12</span></span>&#8239;=&#8239;<span class="f"><span>7</span><span>12</span></span>, donc il reste <span class="f"><span>12</span><span>12</span></span>&#8239;&#8722;&#8239;<span class="f"><span>7</span><span>12</span></span>&#8239;=&#8239;<span class="f"><span>5</span><span>12</span></span>.</p>
+<div class="note"><b>Lecture.</b> « le tiers <b>du reste</b> » n'est pas « le tiers de la somme de départ » : calcule le reste avant d'en prendre le tiers. <b>Contrôle :</b> refais l'addition, et vérifie que le résultat est plus <b>petit</b> que la fraction de départ.</div>
+</div>
+
+<!-- ================= LECON 5 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 5&nbsp;: Multiplier et diviser des fractions</h2>
+<div class="form">
+  <span class="t">PRODUIT ET QUOTIENT&nbsp;: AUCUN DENOMINATEUR COMMUN A CHERCHER</span>
+  <div class="c m"><i>k</i>&#8239;&#215;&#8239;<span class="f"><span><i>a</i></span><span><i>b</i></span></span>&#8239;=&#8239;<span class="f"><span><i>k</i>&#8239;&#215;&#8239;<i>a</i></span><span><i>b</i></span></span> &nbsp;&nbsp;&nbsp; <span class="f"><span><i>a</i></span><span><i>b</i></span></span>&#8239;&#215;&#8239;<span class="f"><span><i>c</i></span><span><i>d</i></span></span>&#8239;=&#8239;<span class="f"><span><i>a</i>&#8239;&#215;&#8239;<i>c</i></span><span><i>b</i>&#8239;&#215;&#8239;<i>d</i></span></span></div>
+  <div class="c m"><span class="f"><span><i>a</i></span><span><i>b</i></span></span>&#8239;&#247;&#8239;<span class="f"><span><i>c</i></span><span><i>d</i></span></span>&#8239;=&#8239;<span class="f"><span><i>a</i></span><span><i>b</i></span></span>&#8239;&#215;&#8239;<span class="f"><span><i>d</i></span><span><i>c</i></span></span></div>
+</div></div>
+<p>On multiplie les <b>numérateurs entre eux</b> et les <b>dénominateurs entre eux</b>. On peut <b>simplifier avant</b> de multiplier : un facteur du haut se simplifie avec un facteur du bas, même s'ils viennent de fractions différentes, par exemple <span class="f"><span>14</span><span>15</span></span>&#8239;&#215;&#8239;<span class="f"><span>25</span><span>21</span></span>&#8239;=&#8239;<span class="f"><span>2&#8239;&#215;&#8239;5</span><span>3&#8239;&#215;&#8239;3</span></span>&#8239;=&#8239;<span class="f"><span>10</span><span>9</span></span>.</p>
+<p><b>Inverse.</b> L'inverse de <span class="f"><span><i>a</i></span><span><i>b</i></span></span> (avec <i>a</i> non nul) est <span class="f"><span><i>b</i></span><span><i>a</i></span></span> : on <b>retourne</b> la fraction, et le produit des deux vaut 1. L'inverse de 5 est <span class="f"><span>1</span><span>5</span></span>, car 5&#8239;=&#8239;<span class="f"><span>5</span><span>1</span></span>. <b>Diviser par une fraction, c'est multiplier par son inverse</b> : on retourne le <b>diviseur</b>, celui qui est écrit après le signe.</p>
+<div class="note"><b>Le mot « de ».</b> Prendre les <span class="f"><span><i>a</i></span><span><i>b</i></span></span> de <i>N</i>, c'est <i>N</i>&#8239;&#215;&#8239;<span class="f"><span><i>a</i></span><span><i>b</i></span></span>&#8239;=&#8239;(<i>N</i>&#8239;&#247;&#8239;<i>b</i>)&#8239;&#215;&#8239;<i>a</i> : <span class="f"><span>3</span><span>5</span></span> de 40&#8239;=&#8239;40&#8239;&#247;&#8239;5&#8239;&#215;&#8239;3&#8239;=&#8239;24.</div>
+</div>
+
+<!-- ================= LECON 6 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 6&nbsp;: Comparer deux fractions</h2>
+<p><b>Règle générale.</b> On <b>réduit au même dénominateur</b>, puis on compare les <b>numérateurs</b>. Pour ranger plusieurs fractions, on les réduit toutes au PPCM de tous les dénominateurs, puis on range les numérateurs.</p></div>
+<ul>
+<li><b>Même dénominateur</b> : la plus grande est celle qui a le plus <b>grand numérateur</b>, par exemple <span class="f"><span>4</span><span>9</span></span>&#8239;&lt;&#8239;<span class="f"><span>7</span><span>9</span></span>.</li>
+<li><b>Même numérateur</b> : la plus grande est celle qui a le plus <b>petit dénominateur</b>, car ses parts sont plus grosses, par exemple <span class="f"><span>3</span><span>5</span></span>&#8239;&gt;&#8239;<span class="f"><span>3</span><span>8</span></span>.</li>
+</ul>
+<div class="form">
+  <span class="t">COMPARER A 1</span>
+  <div class="c m"><span class="f"><span><i>a</i></span><span><i>b</i></span></span>&#8239;&lt;&#8239;1 si <i>a</i>&#8239;&lt;&#8239;<i>b</i> &nbsp;&middot;&nbsp; <span class="f"><span><i>a</i></span><span><i>b</i></span></span>&#8239;=&#8239;1 si <i>a</i>&#8239;=&#8239;<i>b</i> &nbsp;&middot;&nbsp; <span class="f"><span><i>a</i></span><span><i>b</i></span></span>&#8239;&gt;&#8239;1 si <i>a</i>&#8239;&gt;&#8239;<i>b</i></div>
+</div>
+<p><b>Egalité.</b> Deux fractions qui représentent le même nombre sont <b>égales</b>, même si elles ne s'écrivent pas pareil : <span class="f"><span>2</span><span>4</span></span>&#8239;=&#8239;<span class="f"><span>1</span><span>2</span></span>. Pour le vérifier, on les simplifie toutes les deux jusqu'à la forme irréductible.</p>
+<div class="note"><b>Trois repères qui évitent des calculs.</b> Comparer à 1 : <span class="f"><span>7</span><span>9</span></span>&#8239;&lt;&#8239;1&#8239;&lt;&#8239;<span class="f"><span>5</span><span>4</span></span> ; comparer à <span class="f"><span>1</span><span>2</span></span> : <span class="f"><span>4</span><span>9</span></span>&#8239;&lt;&#8239;<span class="f"><span>1</span><span>2</span></span>&#8239;&lt;&#8239;<span class="f"><span>5</span><span>8</span></span> ; comparer les <b>compléments à 1</b> : il manque <span class="f"><span>1</span><span>10</span></span> à <span class="f"><span>9</span><span>10</span></span> et <span class="f"><span>1</span><span>8</span></span> à <span class="f"><span>7</span><span>8</span></span>, donc <span class="f"><span>9</span><span>10</span></span>&#8239;&gt;&#8239;<span class="f"><span>7</span><span>8</span></span>. La réponse s'écrit avec le signe &lt;, &gt; ou =, la pointe du côté du plus petit nombre.</div>
+</div>
+
+</div>
+
+<div class="bandeau vert">PIEGES ET ERREURS FREQUENTES</div>
+<div class="cols">
+<div class="pg"><div class="err"><span class="x">&#10007;</span> <span class="f"><span>1</span><span>3</span></span>&#8239;+&#8239;<span class="f"><span>1</span><span>4</span></span>&#8239;=&#8239;<span class="f"><span>2</span><span>7</span></span> &nbsp;&middot;&nbsp; <span class="f"><span>2</span><span>3</span></span>&#8239;+&#8239;<span class="f"><span>1</span><span>4</span></span>&#8239;=&#8239;<span class="f"><span>3</span><span>7</span></span></div><div class="cor"><span class="v">&#10003;</span> On n'additionne <b>jamais</b> les dénominateurs : <span class="f"><span>1</span><span>3</span></span>&#8239;+&#8239;<span class="f"><span>1</span><span>4</span></span>&#8239;=&#8239;<span class="f"><span>4</span><span>12</span></span>&#8239;+&#8239;<span class="f"><span>3</span><span>12</span></span>&#8239;=&#8239;<span class="f"><span>7</span><span>12</span></span>. D'ailleurs <span class="f"><span>2</span><span>7</span></span> est plus <b>petit</b> que <span class="f"><span>1</span><span>3</span></span> : une somme ne peut pas être plus petite que ce qu'on ajoute.</div></div>
+<div class="pg"><div class="err"><span class="x">&#10007;</span> <span class="f"><span>8</span><span>12</span></span>&#8239;=&#8239;<span class="f"><span>8&#8239;&#8722;&#8239;4</span><span>12&#8239;&#8722;&#8239;4</span></span>&#8239;=&#8239;<span class="f"><span>4</span><span>8</span></span> &nbsp;&middot;&nbsp; <span class="f"><span>8</span><span>12</span></span>&#8239;=&#8239;<span class="f"><span>2</span><span>12</span></span></div><div class="cor"><span class="v">&#10003;</span> Simplifier, c'est <b>diviser</b> le haut et le bas par un même nombre, pas leur <b>enlever</b> le même nombre, et jamais sur une seule ligne : <span class="f"><span>8</span><span>12</span></span>&#8239;=&#8239;<span class="f"><span>8&#8239;&#247;&#8239;4</span><span>12&#8239;&#247;&#8239;4</span></span>&#8239;=&#8239;<span class="f"><span>2</span><span>3</span></span>.</div></div>
+<div class="pg"><div class="err"><span class="x">&#10007;</span> Pour réduire : <span class="f"><span>2</span><span>3</span></span>&#8239;=&#8239;<span class="f"><span>2</span><span>12</span></span> &nbsp;&middot;&nbsp; il faut toujours multiplier les deux dénominateurs entre eux</div><div class="cor"><span class="v">&#10003;</span> Ce qu'on fait en bas, on le fait en haut : <span class="f"><span>2</span><span>3</span></span>&#8239;=&#8239;<span class="f"><span>8</span><span>12</span></span>. Multiplier les dénominateurs est permis mais rarement le plus court : pour <span class="f"><span>1</span><span>6</span></span> et <span class="f"><span>1</span><span>4</span></span>, le PPCM 12 suffit, le produit 24 est inutile.</div></div>
+<div class="pg"><div class="err"><span class="x">&#10007;</span> <span class="f"><span>3</span><span>4</span></span>&#8239;&#8722;&#8239;<span class="f"><span>1</span><span>3</span></span>&#8239;=&#8239;<span class="f"><span>2</span><span>1</span></span>&#8239;=&#8239;2 &nbsp;&middot;&nbsp; 1&#8239;&#8722;&#8239;<span class="f"><span>1</span><span>4</span></span>&#8239;=&#8239;<span class="f"><span>1</span><span>3</span></span></div><div class="cor"><span class="v">&#10003;</span> On opère sur les numérateurs seulement, après réduction : <span class="f"><span>9</span><span>12</span></span>&#8239;&#8722;&#8239;<span class="f"><span>4</span><span>12</span></span>&#8239;=&#8239;<span class="f"><span>5</span><span>12</span></span>. Et l'entier s'écrit d'abord en fraction : <span class="f"><span>4</span><span>4</span></span>&#8239;&#8722;&#8239;<span class="f"><span>1</span><span>4</span></span>&#8239;=&#8239;<span class="f"><span>3</span><span>4</span></span>.</div></div>
+<div class="pg"><div class="err"><span class="x">&#10007;</span> Pour <span class="f"><span>2</span><span>3</span></span>&#8239;&#215;&#8239;<span class="f"><span>1</span><span>4</span></span>, je mets au même dénominateur &nbsp;&middot;&nbsp; un produit est toujours plus grand</div><div class="cor"><span class="v">&#10003;</span> Aucun dénominateur commun pour multiplier : on multiplie en ligne, <span class="f"><span>2&#8239;&#215;&#8239;1</span><span>3&#8239;&#215;&#8239;4</span></span>&#8239;=&#8239;<span class="f"><span>2</span><span>12</span></span>&#8239;=&#8239;<span class="f"><span>1</span><span>6</span></span>. Et multiplier par une fraction <b>plus petite que 1</b> <b>diminue</b> : <span class="f"><span>1</span><span>2</span></span>&#8239;&#215;&#8239;<span class="f"><span>1</span><span>3</span></span>&#8239;=&#8239;<span class="f"><span>1</span><span>6</span></span>.</div></div>
+<div class="pg"><div class="err"><span class="x">&#10007;</span> 6&#8239;&#247;&#8239;<span class="f"><span>1</span><span>2</span></span>&#8239;=&#8239;3 &nbsp;&middot;&nbsp; on retourne la première fraction</div><div class="cor"><span class="v">&#10003;</span> Diviser par <span class="f"><span>1</span><span>2</span></span>, c'est chercher combien de demis tiennent dans 6 : il y en a 12, donc 6&#8239;&#247;&#8239;<span class="f"><span>1</span><span>2</span></span>&#8239;=&#8239;6&#8239;&#215;&#8239;2&#8239;=&#8239;12. C'est le <b>diviseur</b>, écrit après le signe, que l'on retourne.</div></div>
+<div class="pg"><div class="err"><span class="x">&#10007;</span> <span class="f"><span>3</span><span>4</span></span>&#8239;&lt;&#8239;<span class="f"><span>5</span><span>8</span></span> car 3&#8239;&lt;&#8239;5 &nbsp;&middot;&nbsp; <span class="f"><span>1</span><span>10</span></span>&#8239;&gt;&#8239;<span class="f"><span>1</span><span>4</span></span> car 10&#8239;&gt;&#8239;4</div><div class="cor"><span class="v">&#10003;</span> On ne compare les numérateurs qu'<b>après</b> avoir mis le même dénominateur : <span class="f"><span>6</span><span>8</span></span>&#8239;&gt;&#8239;<span class="f"><span>5</span><span>8</span></span>. A numérateur égal, c'est le contraire : plus le dénominateur est grand, plus les parts sont petites, donc <span class="f"><span>1</span><span>10</span></span>&#8239;&lt;&#8239;<span class="f"><span>1</span><span>4</span></span>.</div></div>
+<div class="pg"><div class="err"><span class="x">&#10007;</span> <span class="f"><span>3</span><span>5</span></span> de 40&#8239;=&#8239;40&#8239;&#247;&#8239;5&#8239;=&#8239;8</div><div class="cor"><span class="v">&#10003;</span> 8 n'est qu'<b>un</b> cinquième ; il en faut trois : 40&#8239;&#247;&#8239;5&#8239;&#215;&#8239;3&#8239;=&#8239;24. On divise par le dénominateur, puis on multiplie par le numérateur.</div></div>
+
+</div>
+
+<div class="bandeau bleu">A SAVOIR PAR COEUR AVANT LE DEVOIR</div>
+<div class="cols">
+<ol class="recap">
+<li><b>Propriété fondamentale</b> : <span class="f"><span><i>a</i></span><span><i>b</i></span></span>&#8239;=&#8239;<span class="f"><span><i>a</i>&#8239;&#215;&#8239;<i>k</i></span><span><i>b</i>&#8239;&#215;&#8239;<i>k</i></span></span>&#8239;=&#8239;<span class="f"><span><i>a</i>&#8239;&#247;&#8239;<i>k</i></span><span><i>b</i>&#8239;&#247;&#8239;<i>k</i></span></span> pour <i>k</i> non nul : ce qu'on fait en haut, on le fait en bas.</li>
+<li>On <b>simplifie</b> avec le <b>PGCD</b>, on <b>réduit au même dénominateur</b> avec le <b>PPCM</b>. Tout résultat se donne <b>irréductible</b>.</li>
+<li><span class="f"><span><i>a</i></span><span><i>c</i></span></span>&#8239;+&#8239;<span class="f"><span><i>b</i></span><span><i>c</i></span></span>&#8239;=&#8239;<span class="f"><span><i>a</i>&#8239;+&#8239;<i>b</i></span><span><i>c</i></span></span> et <span class="f"><span><i>a</i></span><span><i>c</i></span></span>&#8239;&#8722;&#8239;<span class="f"><span><i>b</i></span><span><i>c</i></span></span>&#8239;=&#8239;<span class="f"><span><i>a</i>&#8239;&#8722;&#8239;<i>b</i></span><span><i>c</i></span></span> : même dénominateur d'abord, puis on opère sur les <b>numérateurs</b> seulement.</li>
+<li>Un entier s'écrit en fraction : 1&#8239;=&#8239;<span class="f"><span><i>b</i></span><span><i>b</i></span></span>, 2&#8239;=&#8239;<span class="f"><span>2&#8239;&#215;&#8239;<i>b</i></span><span><i>b</i></span></span> ; le <b>complément à 1</b> vaut 1&#8239;&#8722;&#8239;<span class="f"><span><i>a</i></span><span><i>b</i></span></span>.</li>
+<li><span class="f"><span><i>a</i></span><span><i>b</i></span></span>&#8239;&#215;&#8239;<span class="f"><span><i>c</i></span><span><i>d</i></span></span>&#8239;=&#8239;<span class="f"><span><i>a</i>&#8239;&#215;&#8239;<i>c</i></span><span><i>b</i>&#8239;&#215;&#8239;<i>d</i></span></span> et <i>k</i>&#8239;&#215;&#8239;<span class="f"><span><i>a</i></span><span><i>b</i></span></span>&#8239;=&#8239;<span class="f"><span><i>k</i>&#8239;&#215;&#8239;<i>a</i></span><span><i>b</i></span></span> : <b>aucun</b> dénominateur commun, et on simplifie <b>avant</b> de multiplier.</li>
+<li>L'<b>inverse</b> de <span class="f"><span><i>a</i></span><span><i>b</i></span></span> (<i>a</i> non nul) est <span class="f"><span><i>b</i></span><span><i>a</i></span></span>, leur produit vaut 1 ; <span class="f"><span><i>a</i></span><span><i>b</i></span></span>&#8239;&#247;&#8239;<span class="f"><span><i>c</i></span><span><i>d</i></span></span>&#8239;=&#8239;<span class="f"><span><i>a</i></span><span><i>b</i></span></span>&#8239;&#215;&#8239;<span class="f"><span><i>d</i></span><span><i>c</i></span></span> : on retourne le <b>diviseur</b>.</li>
+<li>Les <span class="f"><span><i>a</i></span><span><i>b</i></span></span> de <i>N</i>, c'est (<i>N</i>&#8239;&#247;&#8239;<i>b</i>)&#8239;&#215;&#8239;<i>a</i>, c'est-à-dire <i>N</i>&#8239;&#215;&#8239;<span class="f"><span><i>a</i></span><span><i>b</i></span></span>.</li>
+<li><b>Comparer</b> : même dénominateur <span class="ar">&#8594;</span> le plus grand numérateur gagne ; même numérateur <span class="ar">&#8594;</span> le plus <b>petit</b> dénominateur gagne ; sinon on réduit au même dénominateur.</li>
+</ol>
+</div>
+
+</body>
+</html>

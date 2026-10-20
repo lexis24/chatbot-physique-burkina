@@ -1,0 +1,296 @@
+{
+  "niveau": "4ème",
+  "chapitre": "Chapitre 7 : Les polygones",
+  "source": "maths/4eme/Chapitre_7_Les_polygones",
+  "nombre_cartes": 32,
+  "cartes": [
+    {
+      "id": "4E-CH07-001",
+      "lecon": "Vocabulaire des polygones ; convexe et concave",
+      "type": "definition",
+      "recto": "Qu'est-ce qu'un polygone ?",
+      "verso": "C'est une figure plane fermée, délimitée par une ligne brisée formée de segments. Son contour ne comporte donc aucune courbe.",
+      "difficulte": 1,
+      "tags": ["polygone", "definition"]
+    },
+    {
+      "id": "4E-CH07-002",
+      "lecon": "Vocabulaire des polygones ; convexe et concave",
+      "type": "definition",
+      "recto": "Comment appelle-t-on les segments d'un polygone et leurs extrémités ?",
+      "verso": "Les segments sont les côtés, leurs extrémités les sommets. Un polygone a toujours autant de sommets que de côtés.",
+      "difficulte": 1,
+      "tags": ["polygone", "cote", "sommet"]
+    },
+    {
+      "id": "4E-CH07-003",
+      "lecon": "Vocabulaire des polygones ; convexe et concave",
+      "type": "definition",
+      "recto": "Comment nomme-t-on les polygones à $3$, $4$, $5$ et $6$ côtés ?",
+      "verso": "Triangle pour $3$ côtés, quadrilatère pour $4$, pentagone pour $5$ et hexagone pour $6$.",
+      "difficulte": 1,
+      "tags": ["polygone", "noms"]
+    },
+    {
+      "id": "4E-CH07-004",
+      "lecon": "Vocabulaire des polygones ; convexe et concave",
+      "type": "definition",
+      "recto": "Comment nomme-t-on les polygones à $7$, $8$, $9$, $10$ et $12$ côtés ?",
+      "verso": "Heptagone pour $7$ côtés, octogone pour $8$, ennéagone pour $9$, décagone pour $10$ et dodécagone pour $12$.",
+      "difficulte": 2,
+      "tags": ["polygone", "noms"]
+    },
+    {
+      "id": "4E-CH07-005",
+      "lecon": "Vocabulaire des polygones ; convexe et concave",
+      "type": "definition",
+      "recto": "Qu'est-ce qu'une diagonale d'un polygone ?",
+      "verso": "C'est un segment qui joint deux sommets non consécutifs, c'est-à-dire deux sommets qui ne sont pas voisins.",
+      "difficulte": 1,
+      "tags": ["diagonale", "definition"]
+    },
+    {
+      "id": "4E-CH07-006",
+      "lecon": "Vocabulaire des polygones ; convexe et concave",
+      "type": "definition",
+      "recto": "Quand dit-on qu'un polygone est convexe ?",
+      "verso": "Quand tous ses angles intérieurs mesurent moins de $180^{\\circ}$. Un segment joignant deux de ses points reste alors entièrement à l'intérieur.",
+      "difficulte": 2,
+      "tags": ["convexe", "definition"]
+    },
+    {
+      "id": "4E-CH07-007",
+      "lecon": "Vocabulaire des polygones ; convexe et concave",
+      "type": "definition",
+      "recto": "Quand dit-on qu'un polygone est concave ?",
+      "verso": "Quand il possède au moins un angle rentrant, supérieur à $180^{\\circ}$. La figure est alors creusée : un polygone dont un angle mesure $200^{\\circ}$ est concave.",
+      "difficulte": 2,
+      "tags": ["concave", "definition"]
+    },
+    {
+      "id": "4E-CH07-008",
+      "lecon": "Vocabulaire des polygones ; convexe et concave",
+      "type": "definition",
+      "recto": "En quoi consiste le test du fil tendu ?",
+      "verso": "On tend un fil entre deux points quelconques du polygone : s'il sort de la figure, celle-ci est concave ; s'il y reste toujours, elle est convexe.",
+      "difficulte": 2,
+      "tags": ["convexe", "concave", "test"]
+    },
+    {
+      "id": "4E-CH07-009",
+      "lecon": "Vocabulaire des polygones ; convexe et concave",
+      "type": "formule",
+      "recto": "Combien de diagonales partent d'un même sommet d'un polygone à $n$ côtés ?",
+      "verso": "Il en part $n - 3$ : parmi les $n$ sommets, on écarte le sommet lui-même et ses deux voisins, vers lesquels les segments sont des côtés.",
+      "difficulte": 2,
+      "tags": ["diagonale", "denombrement"]
+    },
+    {
+      "id": "4E-CH07-010",
+      "lecon": "Vocabulaire des polygones ; convexe et concave",
+      "type": "formule",
+      "recto": "Quelle formule donne le nombre total de diagonales d'un polygone à $n$ côtés ?",
+      "verso": "$\\dfrac{n \\times \\left(n - 3\\right)}{2}$. On divise par $2$ parce que chaque diagonale serait comptée deux fois, une fois par extrémité. Le pentagone en a donc $5$.",
+      "difficulte": 2,
+      "tags": ["diagonale", "formule"]
+    },
+    {
+      "id": "4E-CH07-011",
+      "lecon": "Vocabulaire des polygones ; convexe et concave",
+      "type": "formule",
+      "recto": "Combien vaut la somme des angles d'un polygone à $n$ côtés ?",
+      "verso": "Elle vaut $\\left(n - 2\\right) \\times 180^{\\circ}$. Pour un décagone, on obtient $8 \\times 180^{\\circ} = 1\\,440^{\\circ}$.",
+      "difficulte": 1,
+      "tags": ["somme-des-angles", "formule"]
+    },
+    {
+      "id": "4E-CH07-012",
+      "lecon": "Vocabulaire des polygones ; convexe et concave",
+      "type": "formule",
+      "recto": "Pourquoi la somme des angles d'un polygone convexe à $n$ côtés vaut-elle $\\left(n - 2\\right) \\times 180^{\\circ}$ ?",
+      "verso": "Parce que les diagonales issues d'un même sommet découpent la figure en $n - 2$ triangles, sans recouvrement ni oubli, et que la somme des angles d'un triangle vaut $180^{\\circ}$.",
+      "difficulte": 2,
+      "tags": ["somme-des-angles", "demonstration"]
+    },
+    {
+      "id": "4E-CH07-013",
+      "lecon": "Vocabulaire des polygones ; convexe et concave",
+      "type": "definition",
+      "recto": "Que signifient les préfixes penta, hexa et octo dans les noms des polygones ?",
+      "verso": "Cinq, six et huit : le nom d'un polygone annonce son nombre de côtés. Le mot « polygone » lui-même vient du grec et signifie « plusieurs angles ».",
+      "difficulte": 2,
+      "tags": ["polygone", "noms", "etymologie"]
+    },
+    {
+      "id": "4E-CH07-014",
+      "lecon": "Vocabulaire des polygones ; convexe et concave",
+      "type": "definition",
+      "recto": "Pourquoi un cercle ou une demi-lune n'est-il pas un polygone ?",
+      "verso": "Parce que son contour comporte une ligne courbe. Un polygone est délimité uniquement par des segments, et son contour doit de plus être fermé.",
+      "difficulte": 3,
+      "tags": ["polygone", "piege"]
+    },
+    {
+      "id": "4E-CH07-015",
+      "lecon": "Vocabulaire des polygones ; convexe et concave",
+      "type": "definition",
+      "recto": "Pourquoi une diagonale n'est-elle jamais un côté du polygone ?",
+      "verso": "Parce qu'une diagonale joint deux sommets non voisins, alors qu'un côté joint deux sommets voisins. Les segments menés d'un sommet vers ses deux voisins sont donc des côtés, pas des diagonales.",
+      "difficulte": 3,
+      "tags": ["diagonale", "cote", "piege"]
+    },
+    {
+      "id": "4E-CH07-016",
+      "lecon": "Vocabulaire des polygones ; convexe et concave",
+      "type": "formule",
+      "recto": "Comment retrouve-t-on le nombre de côtés d'un polygone dont on connaît la somme des angles ?",
+      "verso": "On divise cette somme par $180^{\\circ}$, ce qui donne $n - 2$, puis on ajoute $2$. Pour une somme de $900^{\\circ}$ : $900 \\div 180 = 5$, donc $n = 7$, un heptagone.",
+      "difficulte": 3,
+      "tags": ["somme-des-angles", "nombre-de-cotes"]
+    },
+    {
+      "id": "4E-CH07-017",
+      "lecon": "Le polygone régulier et sa construction",
+      "type": "definition",
+      "recto": "Qu'est-ce qu'un polygone régulier ?",
+      "verso": "C'est un polygone dont tous les côtés ont la même longueur et dont tous les angles ont la même mesure. Les deux conditions sont nécessaires.",
+      "difficulte": 1,
+      "tags": ["polygone-regulier", "definition"]
+    },
+    {
+      "id": "4E-CH07-018",
+      "lecon": "Le polygone régulier et sa construction",
+      "type": "definition",
+      "recto": "Sur quelle ligne se trouvent tous les sommets d'un polygone régulier ?",
+      "verso": "Sur un même cercle, appelé cercle circonscrit : tout polygone régulier y est inscriptible. Le centre de ce cercle est le centre du polygone.",
+      "difficulte": 2,
+      "tags": ["polygone-regulier", "cercle-circonscrit"]
+    },
+    {
+      "id": "4E-CH07-019",
+      "lecon": "Le polygone régulier et sa construction",
+      "type": "formule",
+      "recto": "Combien mesure l'angle au centre d'un polygone régulier à $n$ côtés ?",
+      "verso": "Il mesure $360^{\\circ} \\div n$, puisque les $n$ angles au centre égaux se partagent le tour complet. Pour l'hexagone régulier, $360^{\\circ} \\div 6 = 60^{\\circ}$.",
+      "difficulte": 1,
+      "tags": ["angle-au-centre", "formule"]
+    },
+    {
+      "id": "4E-CH07-020",
+      "lecon": "Le polygone régulier et sa construction",
+      "type": "formule",
+      "recto": "Combien mesure chaque angle d'un polygone régulier à $n$ côtés ?",
+      "verso": "Il mesure $\\dfrac{\\left(n - 2\\right) \\times 180^{\\circ}}{n}$, car les $n$ angles se partagent également la somme des angles du polygone. Pour l'octogone régulier, cela donne $135^{\\circ}$.",
+      "difficulte": 2,
+      "tags": ["angle-interieur", "polygone-regulier"]
+    },
+    {
+      "id": "4E-CH07-021",
+      "lecon": "Le polygone régulier et sa construction",
+      "type": "formule",
+      "recto": "Comment retrouve-t-on le nombre de côtés d'un polygone régulier dont on connaît l'angle au centre ?",
+      "verso": "On divise le tour complet par cet angle : $n = 360^{\\circ} \\div$ angle au centre. Un angle au centre de $36^{\\circ}$ donne $360 \\div 36 = 10$ côtés, soit un décagone régulier.",
+      "difficulte": 2,
+      "tags": ["angle-au-centre", "nombre-de-cotes"]
+    },
+    {
+      "id": "4E-CH07-022",
+      "lecon": "Le polygone régulier et sa construction",
+      "type": "formule",
+      "recto": "Quelle relation lie le côté d'un hexagone régulier au rayon de son cercle circonscrit ?",
+      "verso": "Ils sont égaux. Il suffit donc de reporter six fois le rayon au compas le long du cercle pour obtenir les six sommets, sans utiliser de rapporteur.",
+      "difficulte": 2,
+      "tags": ["hexagone", "rayon", "construction"]
+    },
+    {
+      "id": "4E-CH07-023",
+      "lecon": "Le polygone régulier et sa construction",
+      "type": "formule",
+      "recto": "Pourquoi le côté d'un hexagone régulier est-il égal au rayon de son cercle circonscrit ?",
+      "verso": "Le triangle formé par le centre O et deux sommets voisins est isocèle en O, et son angle au sommet vaut $60^{\\circ}$. Les deux angles à la base valent donc $60^{\\circ}$ eux aussi : le triangle est équilatéral, d'où $AB = OA$.",
+      "difficulte": 3,
+      "tags": ["hexagone", "rayon", "demonstration"]
+    },
+    {
+      "id": "4E-CH07-024",
+      "lecon": "Le polygone régulier et sa construction",
+      "type": "formule",
+      "recto": "Quel angle reporte-t-on au rapporteur pour placer les sommets d'un polygone régulier sur un cercle ?",
+      "verso": "L'angle au centre $360^{\\circ} \\div n$, que l'on reporte depuis le centre autant de fois qu'il y a de côtés, avant de relier les sommets dans l'ordre.",
+      "difficulte": 2,
+      "tags": ["construction", "angle-au-centre"]
+    },
+    {
+      "id": "4E-CH07-025",
+      "lecon": "Le polygone régulier et sa construction",
+      "type": "formule",
+      "recto": "Comment obtient-on les huit sommets d'un octogone régulier sans rapporteur ?",
+      "verso": "On trace deux diamètres perpendiculaires, puis les bissectrices des quatre angles droits obtenus, car l'angle au centre $45^{\\circ}$ est la moitié de $90^{\\circ}$.",
+      "difficulte": 3,
+      "tags": ["octogone", "construction"]
+    },
+    {
+      "id": "4E-CH07-026",
+      "lecon": "Le polygone régulier et sa construction",
+      "type": "formule",
+      "recto": "Combien d'axes de symétrie possède un polygone régulier à $n$ côtés ?",
+      "verso": "Exactement $n$ axes, tous passant par son centre. Le carré en a donc $4$, le pentagone régulier $5$ et l'hexagone régulier $6$.",
+      "difficulte": 2,
+      "tags": ["axes-de-symetrie", "polygone-regulier"]
+    },
+    {
+      "id": "4E-CH07-027",
+      "lecon": "Le polygone régulier et sa construction",
+      "type": "definition",
+      "recto": "Comment les axes de symétrie d'un polygone régulier se placent-ils selon la parité de $n$ ?",
+      "verso": "Si $n$ est impair, chaque axe joint un sommet au milieu du côté opposé. Si $n$ est pair, la moitié des axes joignent deux sommets opposés, l'autre moitié les milieux de deux côtés opposés.",
+      "difficulte": 2,
+      "tags": ["axes-de-symetrie", "parite"]
+    },
+    {
+      "id": "4E-CH07-028",
+      "lecon": "Le polygone régulier et sa construction",
+      "type": "formule",
+      "recto": "Pourquoi un losange non carré et un rectangle non carré ne sont-ils pas des polygones réguliers ?",
+      "verso": "Parce que les deux conditions doivent être remplies ensemble. Le losange a quatre côtés égaux, mais deux mesures d'angles différentes ; le rectangle a quatre angles droits, mais des côtés de deux longueurs.",
+      "difficulte": 3,
+      "tags": ["polygone-regulier", "contre-exemple", "piege"]
+    },
+    {
+      "id": "4E-CH07-029",
+      "lecon": "Le polygone régulier et sa construction",
+      "type": "definition",
+      "recto": "Quelle différence y a-t-il entre l'angle au centre et l'angle du polygone régulier ?",
+      "verso": "L'angle au centre a son sommet au centre et vaut $360^{\\circ} \\div n$ ; l'angle du polygone a son sommet sur le cercle et il est bien plus grand. Pour l'octogone régulier, $45^{\\circ}$ contre $135^{\\circ}$.",
+      "difficulte": 3,
+      "tags": ["angle-au-centre", "angle-interieur", "piege"]
+    },
+    {
+      "id": "4E-CH07-030",
+      "lecon": "Le polygone régulier et sa construction",
+      "type": "formule",
+      "recto": "Quelle condition l'angle au centre doit-il remplir pour que le tracé se referme sur le premier sommet ?",
+      "verso": "Il doit partager exactement le tour complet, donc diviser $360^{\\circ}$ en un nombre entier de parts. Avec $25^{\\circ}$, $360 \\div 25 = 14{,}4$ n'est pas entier : le dernier côté serait plus court et la figure ne serait pas régulière.",
+      "difficulte": 3,
+      "tags": ["angle-au-centre", "construction", "condition"]
+    },
+    {
+      "id": "4E-CH07-031",
+      "lecon": "Le polygone régulier et sa construction",
+      "type": "formule",
+      "recto": "Que devient un polygone régulier quand son nombre de côtés augmente ?",
+      "verso": "Son angle au centre, égal à $360^{\\circ} \\div n$, devient de plus en plus petit, et le polygone ressemble de plus en plus au cercle dans lequel il est inscrit.",
+      "difficulte": 2,
+      "tags": ["polygone-regulier", "angle-au-centre", "cercle"]
+    },
+    {
+      "id": "4E-CH07-032",
+      "lecon": "Le polygone régulier et sa construction",
+      "type": "formule",
+      "recto": "Pourquoi les angles au centre d'un polygone régulier sont-ils tous égaux ?",
+      "verso": "Parce que les triangles formés par le centre et deux sommets voisins ont leurs trois côtés respectivement égaux : les côtés du polygone sont égaux entre eux, et le centre est à la même distance de tous les sommets.",
+      "difficulte": 2,
+      "tags": ["angle-au-centre", "demonstration"]
+    }
+  ]
+}

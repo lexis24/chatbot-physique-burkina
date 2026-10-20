@@ -1,0 +1,332 @@
+{
+  "niveau": "6ème",
+  "chapitre": "Chapitre 8 : Le triangle",
+  "source": "maths/6eme/Chapitre_8_Le_triangle",
+  "nombre_cartes": 36,
+  "cartes": [
+    {
+      "id": "6E-CH08-001",
+      "lecon": "Le triangle et ses types",
+      "type": "definition",
+      "recto": "Comment définit-on un triangle ?",
+      "verso": "C'est l'assemblage de trois segments qui relient trois points non alignés. Ces trois points sont les sommets, les segments sont les côtés, et aux sommets se forment les angles.",
+      "difficulte": 1,
+      "tags": ["triangle", "definition", "vocabulaire"]
+    },
+    {
+      "id": "6E-CH08-002",
+      "lecon": "Le triangle et ses types",
+      "type": "definition",
+      "recto": "Pourquoi les trois points d'un triangle doivent-ils être non alignés ?",
+      "verso": "S'ils étaient sur une même droite, les trois segments se poseraient les uns sur les autres et il n'y aurait aucune surface à l'intérieur : on obtiendrait un simple trait, pas un triangle.",
+      "difficulte": 2,
+      "tags": ["triangle", "points-non-alignes", "definition"]
+    },
+    {
+      "id": "6E-CH08-003",
+      "lecon": "Le triangle et ses types",
+      "type": "definition",
+      "recto": "Dans le triangle ABC, quel côté appelle-t-on le côté opposé au sommet A ?",
+      "verso": "Le côté [BC], celui qui se trouve en face de A. C'est le seul des trois côtés dont A n'est pas une extrémité.",
+      "difficulte": 1,
+      "tags": ["triangle", "cote-oppose", "vocabulaire"]
+    },
+    {
+      "id": "6E-CH08-004",
+      "lecon": "Le triangle et ses types",
+      "type": "definition",
+      "recto": "Dans le triangle ABC, que désigne la lettre du milieu de la notation $\\widehat{ABC}$ ?",
+      "verso": "Elle désigne toujours le sommet de l'angle, ici B. Ce même angle peut s'écrire plus simplement $\\widehat{B}$.",
+      "difficulte": 2,
+      "tags": ["angle", "notation"]
+    },
+    {
+      "id": "6E-CH08-005",
+      "lecon": "Le triangle et ses types",
+      "type": "definition",
+      "recto": "Qu'est-ce qu'un triangle isocèle ?",
+      "verso": "C'est un triangle qui a deux côtés égaux. Les deux angles de sa base sont alors égaux entre eux.",
+      "difficulte": 1,
+      "tags": ["triangle-isocele", "definition"]
+    },
+    {
+      "id": "6E-CH08-006",
+      "lecon": "Le triangle et ses types",
+      "type": "definition",
+      "recto": "Quelles sont les deux caractéristiques d'un triangle équilatéral ?",
+      "verso": "Il a ses trois côtés égaux, et ses trois angles mesurent $60^{\\circ}$.",
+      "difficulte": 1,
+      "tags": ["triangle-equilateral", "definition"]
+    },
+    {
+      "id": "6E-CH08-007",
+      "lecon": "Le triangle et ses types",
+      "type": "definition",
+      "recto": "Qu'est-ce qui distingue un triangle rectangle d'un triangle quelconque ?",
+      "verso": "Le triangle rectangle possède un angle droit, de $90^{\\circ}$. Le triangle quelconque, lui, n'a aucun côté égal et aucun angle égal.",
+      "difficulte": 2,
+      "tags": ["triangle-rectangle", "triangle-quelconque", "distinction"]
+    },
+    {
+      "id": "6E-CH08-008",
+      "lecon": "Le triangle et ses types",
+      "type": "definition",
+      "recto": "Que signifient les petits traits tracés sur les côtés d'un triangle ?",
+      "verso": "C'est le codage : deux côtés qui portent le même nombre de petits traits ont la même longueur. Un petit carré tracé dans un coin signale, lui, un angle droit.",
+      "difficulte": 2,
+      "tags": ["codage", "triangle"]
+    },
+    {
+      "id": "6E-CH08-009",
+      "lecon": "Le triangle et ses types",
+      "type": "formule",
+      "recto": "Combien vaut la somme des trois angles d'un triangle ?",
+      "verso": "Elle vaut toujours $180^{\\circ}$ : $\\widehat{A} + \\widehat{B} + \\widehat{C} = 180^{\\circ}$, quelle que soit la forme du triangle. Deux angles connus donnent donc le troisième par soustraction.",
+      "difficulte": 1,
+      "tags": ["somme-des-angles", "propriete"]
+    },
+    {
+      "id": "6E-CH08-010",
+      "lecon": "Le triangle et ses types",
+      "type": "formule",
+      "recto": "Pourquoi un triangle équilatéral est-il aussi isocèle, alors qu'un triangle isocèle n'est pas toujours équilatéral ?",
+      "verso": "Un triangle équilatéral a trois côtés égaux, donc en particulier deux : c'est un cas particulier de triangle isocèle. Un triangle isocèle, lui, peut avoir un troisième côté de longueur différente.",
+      "difficulte": 3,
+      "tags": ["triangle-isocele", "triangle-equilateral", "piege"]
+    },
+    {
+      "id": "6E-CH08-011",
+      "lecon": "Le triangle et ses types",
+      "type": "formule",
+      "recto": "Pourquoi un triangle ne peut-il pas avoir deux angles droits ?",
+      "verso": "Deux angles droits font déjà $90^{\\circ} + 90^{\\circ} = 180^{\\circ}$, c'est-à-dire toute la somme des angles d'un triangle : il ne resterait rien pour le troisième angle.",
+      "difficulte": 3,
+      "tags": ["somme-des-angles", "piege"]
+    },
+    {
+      "id": "6E-CH08-012",
+      "lecon": "Construire un triangle",
+      "type": "formule",
+      "recto": "Quelles sont les trois séries de données qui permettent de construire un triangle ?",
+      "verso": "Ses trois côtés ; ou un côté et les deux angles placés à ses extrémités ; ou deux côtés et l'angle compris entre eux.",
+      "difficulte": 2,
+      "tags": ["construction", "triangle"]
+    },
+    {
+      "id": "6E-CH08-013",
+      "lecon": "Construire un triangle",
+      "type": "formule",
+      "recto": "A quelle condition trois longueurs données peuvent-elles former un triangle ?",
+      "verso": "Chaque côté doit être plus petit que la somme des deux autres : c'est l'inégalité du triangle. Avec $2$ cm, $3$ cm et $10$ cm, $2 + 3 = 5$ est plus petit que $10$, donc le triangle est impossible.",
+      "difficulte": 2,
+      "tags": ["inegalite-du-triangle", "condition"]
+    },
+    {
+      "id": "6E-CH08-014",
+      "lecon": "Construire un triangle",
+      "type": "formule",
+      "recto": "Quel côté suffit-il de tester en pratique pour savoir si un triangle est constructible ?",
+      "verso": "Le plus grand. S'il reste plus petit que la somme des deux autres, la condition est remplie pour les trois côtés.",
+      "difficulte": 2,
+      "tags": ["inegalite-du-triangle", "methode"]
+    },
+    {
+      "id": "6E-CH08-015",
+      "lecon": "Construire un triangle",
+      "type": "formule",
+      "recto": "Pourquoi utilise-t-on le compas pour construire un triangle dont on connaît les trois côtés ?",
+      "verso": "Parce qu'un arc de centre B et de rayon AB donne tous les points situés à cette distance de B. Un second arc, de centre C et de rayon AC, croise le premier exactement au sommet A cherché.",
+      "difficulte": 2,
+      "tags": ["construction", "compas"]
+    },
+    {
+      "id": "6E-CH08-016",
+      "lecon": "Construire un triangle",
+      "type": "formule",
+      "recto": "Quel instrument emploie-t-on pour construire un triangle dont on connaît deux côtés et l'angle compris entre eux ?",
+      "verso": "Le rapporteur, avec la règle : on trace le premier côté, on construit l'angle demandé à son extrémité, puis on reporte la longueur du second côté sur la demi-droite obtenue.",
+      "difficulte": 2,
+      "tags": ["construction", "rapporteur"]
+    },
+    {
+      "id": "6E-CH08-017",
+      "lecon": "Construire un triangle",
+      "type": "formule",
+      "recto": "Qu'obtient-on lorsque la somme des deux petits côtés est exactement égale au grand côté ?",
+      "verso": "Un simple trait : les trois points sont alignés. Avec $3$, $4$ et $7$, on a $3 + 4 = 7$, le triangle est aplati et n'existe pas.",
+      "difficulte": 3,
+      "tags": ["inegalite-du-triangle", "cas-limite"]
+    },
+    {
+      "id": "6E-CH08-018",
+      "lecon": "Construire un triangle",
+      "type": "formule",
+      "recto": "Pourquoi les deux arcs de compas ne se croisent-ils pas quand l'inégalité du triangle n'est pas respectée ?",
+      "verso": "Parce que les deux petits côtés sont trop courts pour se rejoindre au-dessus du grand. Avec un grand côté de $9$ cm et des arcs de $3$ cm et de $4$ cm, il reste un vide de $9 - 3 - 4 = 2$ cm que rien ne comble.",
+      "difficulte": 3,
+      "tags": ["inegalite-du-triangle", "compas", "justification"]
+    },
+    {
+      "id": "6E-CH08-019",
+      "lecon": "Hauteurs et médianes",
+      "type": "definition",
+      "recto": "Qu'est-ce qu'une hauteur d'un triangle ?",
+      "verso": "C'est le segment issu d'un sommet et perpendiculaire au côté opposé. Un triangle possède trois hauteurs, une par sommet.",
+      "difficulte": 1,
+      "tags": ["hauteur", "definition"]
+    },
+    {
+      "id": "6E-CH08-020",
+      "lecon": "Hauteurs et médianes",
+      "type": "definition",
+      "recto": "Comment appelle-t-on le point où une hauteur rencontre le côté opposé ?",
+      "verso": "Le pied de la hauteur. C'est à cet endroit que l'on marque le petit carré de l'angle droit.",
+      "difficulte": 1,
+      "tags": ["hauteur", "pied", "vocabulaire"]
+    },
+    {
+      "id": "6E-CH08-021",
+      "lecon": "Hauteurs et médianes",
+      "type": "definition",
+      "recto": "Qu'est-ce qu'une médiane d'un triangle ?",
+      "verso": "C'est le segment qui relie un sommet au milieu du côté opposé. Un triangle possède trois médianes.",
+      "difficulte": 1,
+      "tags": ["mediane", "definition"]
+    },
+    {
+      "id": "6E-CH08-022",
+      "lecon": "Hauteurs et médianes",
+      "type": "definition",
+      "recto": "Comment appelle-t-on le point de rencontre des trois hauteurs d'un triangle ?",
+      "verso": "L'orthocentre, souvent noté H. Les trois hauteurs passent toujours par ce même point.",
+      "difficulte": 2,
+      "tags": ["orthocentre", "hauteur"]
+    },
+    {
+      "id": "6E-CH08-023",
+      "lecon": "Hauteurs et médianes",
+      "type": "definition",
+      "recto": "Comment appelle-t-on le point de rencontre des trois médianes d'un triangle ?",
+      "verso": "Le centre de gravité, souvent noté G. C'est le point d'équilibre : un triangle découpé dans du carton tient à plat sur une pointe placée exactement sous G.",
+      "difficulte": 2,
+      "tags": ["centre-de-gravite", "mediane"]
+    },
+    {
+      "id": "6E-CH08-024",
+      "lecon": "Hauteurs et médianes",
+      "type": "formule",
+      "recto": "Où se trouve l'orthocentre d'un triangle rectangle ?",
+      "verso": "Au sommet de l'angle droit. Les deux côtés de l'angle droit sont perpendiculaires l'un à l'autre : ce sont déjà deux des trois hauteurs, et elles se coupent à ce sommet.",
+      "difficulte": 3,
+      "tags": ["orthocentre", "triangle-rectangle", "cas-particulier"]
+    },
+    {
+      "id": "6E-CH08-025",
+      "lecon": "Hauteurs et médianes",
+      "type": "formule",
+      "recto": "Où tombe le pied d'une hauteur lorsque le triangle possède un angle obtus ?",
+      "verso": "Il peut tomber en dehors du côté. On prolonge alors ce côté en pointillés pour tracer la hauteur, et l'orthocentre se retrouve à l'extérieur du triangle.",
+      "difficulte": 3,
+      "tags": ["hauteur", "angle-obtus", "cas-particulier"]
+    },
+    {
+      "id": "6E-CH08-026",
+      "lecon": "Hauteurs et médianes",
+      "type": "formule",
+      "recto": "Dans quel triangle la hauteur et la médiane issues d'un même sommet sont-elles confondues ?",
+      "verso": "Dans un triangle isocèle, depuis le sommet principal. Dans un triangle équilatéral, c'est vrai depuis les trois sommets, et l'orthocentre H se confond alors avec le centre de gravité G.",
+      "difficulte": 2,
+      "tags": ["hauteur", "mediane", "triangle-isocele"]
+    },
+    {
+      "id": "6E-CH08-027",
+      "lecon": "Hauteurs et médianes",
+      "type": "formule",
+      "recto": "Pourquoi la hauteur issue de A ne passe-t-elle pas, en général, par le milieu du côté opposé ?",
+      "verso": "Parce qu'elle obéit à une consigne de direction, être perpendiculaire au côté, et non à une consigne de partage. C'est la médiane qui vise le milieu ; les deux ne se confondent que dans un triangle isocèle, depuis le sommet principal.",
+      "difficulte": 3,
+      "tags": ["hauteur", "mediane", "piege"]
+    },
+    {
+      "id": "6E-CH08-028",
+      "lecon": "Périmètre et aire du triangle",
+      "type": "formule",
+      "recto": "Comment calcule-t-on le périmètre d'un triangle ?",
+      "verso": "On additionne les longueurs de ses trois côtés : $P = a + b + c$. Le résultat s'exprime dans une unité de longueur, le centimètre ou le mètre.",
+      "difficulte": 1,
+      "tags": ["perimetre", "formule"]
+    },
+    {
+      "id": "6E-CH08-029",
+      "lecon": "Périmètre et aire du triangle",
+      "type": "formule",
+      "recto": "Quelle est la formule de l'aire d'un triangle ?",
+      "verso": "$A = \\left(\\text{base} \\times \\text{hauteur}\\right) \\div 2$, la hauteur étant celle qui est perpendiculaire à la base choisie. L'aire s'exprime en unités carrées, comme le cm$^{2}$.",
+      "difficulte": 1,
+      "tags": ["aire", "formule"]
+    },
+    {
+      "id": "6E-CH08-030",
+      "lecon": "Périmètre et aire du triangle",
+      "type": "formule",
+      "recto": "Pourquoi divise-t-on par $2$ dans le calcul de l'aire d'un triangle ?",
+      "verso": "Parce qu'en accolant au triangle une copie retournée, on obtient un parallélogramme de même base et de même hauteur, dont l'aire vaut base $\\times$ hauteur. Le triangle en occupe exactement la moitié.",
+      "difficulte": 2,
+      "tags": ["aire", "justification", "parallelogramme"]
+    },
+    {
+      "id": "6E-CH08-031",
+      "lecon": "Périmètre et aire du triangle",
+      "type": "formule",
+      "recto": "Quelle condition la hauteur doit-elle remplir vis-à-vis de la base choisie pour calculer une aire ?",
+      "verso": "Elle doit être perpendiculaire à cette base. Un triangle a trois bases possibles et donc trois hauteurs possibles : les trois couples donnent la même aire.",
+      "difficulte": 2,
+      "tags": ["aire", "hauteur", "condition"]
+    },
+    {
+      "id": "6E-CH08-032",
+      "lecon": "Périmètre et aire du triangle",
+      "type": "formule",
+      "recto": "Comment calcule-t-on l'aire d'un triangle rectangle ?",
+      "verso": "On multiplie les deux côtés de l'angle droit, puis on divise par $2$. Ces deux côtés sont perpendiculaires entre eux : l'un sert de base, l'autre de hauteur.",
+      "difficulte": 2,
+      "tags": ["aire", "triangle-rectangle"]
+    },
+    {
+      "id": "6E-CH08-033",
+      "lecon": "Périmètre et aire du triangle",
+      "type": "formule",
+      "recto": "Comment retrouve-t-on la hauteur d'un triangle quand on connaît son aire et sa base ?",
+      "verso": "On remonte le calcul à l'envers : hauteur $= \\left(A \\times 2\\right) \\div \\text{base}$. Pour une aire de $24$ cm$^{2}$ et une base de $8$ cm, la hauteur vaut $48 \\div 8 = 6$ cm.",
+      "difficulte": 2,
+      "tags": ["aire", "longueur-manquante"]
+    },
+    {
+      "id": "6E-CH08-034",
+      "lecon": "Périmètre et aire du triangle",
+      "type": "formule",
+      "recto": "Pourquoi une aire ne peut-elle jamais s'écrire en centimètres ?",
+      "verso": "Parce qu'une aire mesure une surface : elle s'écrit toujours en unités carrées, cm$^{2}$ ou m$^{2}$. Le centimètre, lui, mesure une longueur, donc le contour, c'est-à-dire le périmètre.",
+      "difficulte": 3,
+      "tags": ["aire", "unite", "piege"]
+    },
+    {
+      "id": "6E-CH08-035",
+      "lecon": "Périmètre et aire du triangle",
+      "type": "formule",
+      "recto": "Que peut-on dire de deux triangles qui ont la même base et la même hauteur ?",
+      "verso": "Ils ont exactement la même aire, même s'ils n'ont pas la même forme, car l'aire ne dépend que de ces deux longueurs.",
+      "difficulte": 2,
+      "tags": ["aire", "propriete"]
+    },
+    {
+      "id": "6E-CH08-036",
+      "lecon": "Périmètre et aire du triangle",
+      "type": "formule",
+      "recto": "Pourquoi la médiane issue de A partage-t-elle le triangle ABC en deux parts de même aire ?",
+      "verso": "Parce qu'elle coupe [BC] en son milieu M : les triangles ABM et AMC ont des bases égales, $BM = MC$, et la même hauteur, celle issue de A. Leurs aires sont donc égales.",
+      "difficulte": 3,
+      "tags": ["aire", "mediane", "propriete"]
+    }
+  ]
+}

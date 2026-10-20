@@ -1,0 +1,350 @@
+{
+  "niveau": "1ère D",
+  "chapitre": "Chapitre 7 : Les limites",
+  "source": "maths/1ereD/Chapitre_7_Limites",
+  "nombre_cartes": 38,
+  "cartes": [
+    {
+      "id": "1D-CH07-001",
+      "lecon": "Limite en $+\\infty$ et en $-\\infty$",
+      "type": "definition",
+      "recto": "Que signifie l'écriture $\\lim\\limits_{x\\to+\\infty}f(x)=L$, où $L$ est un réel ?",
+      "verso": "Que $f(x)$ devient aussi proche que l'on veut de $L$, pourvu que $x$ soit assez grand. L'exigence de proximité est fixée d'abord, le seuil sur $x$ ensuite ; il n'est jamais question d'atteindre $L$.",
+      "difficulte": 1,
+      "tags": ["limite", "infini", "definition"]
+    },
+    {
+      "id": "1D-CH07-002",
+      "lecon": "Limite en $+\\infty$ et en $-\\infty$",
+      "type": "definition",
+      "recto": "Que signifie l'écriture $\\lim\\limits_{x\\to+\\infty}f(x)=+\\infty$ ?",
+      "verso": "Que $f(x)$ dépasse tout nombre donné, pourvu que $x$ soit assez grand. Le symbole $+\\infty$ n'est pas un réel : il décrit une fuite, et non un résultat numérique.",
+      "difficulte": 1,
+      "tags": ["limite", "infini", "definition"]
+    },
+    {
+      "id": "1D-CH07-003",
+      "lecon": "Limite en $+\\infty$ et en $-\\infty$",
+      "type": "formule",
+      "recto": "Vers quoi tend $x^n$ en $+\\infty$, puis en $-\\infty$, pour un entier $n\\ge 1$ ?",
+      "verso": "En $+\\infty$, $x^n$ tend vers $+\\infty$. En $-\\infty$, il tend vers $+\\infty$ si $n$ est pair, car une puissance paire efface le signe, et vers $-\\infty$ si $n$ est impair, car une puissance impaire le conserve.",
+      "difficulte": 1,
+      "tags": ["limite", "puissance", "parite"]
+    },
+    {
+      "id": "1D-CH07-004",
+      "lecon": "Limite en $+\\infty$ et en $-\\infty$",
+      "type": "formule",
+      "recto": "Vers quoi tend $\\dfrac{1}{x^n}$ en $+\\infty$ et en $-\\infty$ ?",
+      "verso": "Vers $0$ dans les deux cas, pour tout entier $n\\ge 1$ : un dénominateur qui grossit sans limite écrase le quotient, et le signe de $x$ ne change rien à cet écrasement.",
+      "difficulte": 1,
+      "tags": ["limite", "inverse", "reference"]
+    },
+    {
+      "id": "1D-CH07-005",
+      "lecon": "Limite en $+\\infty$ et en $-\\infty$",
+      "type": "formule",
+      "recto": "Vers quoi tend $\\sqrt{x}$ quand $x$ tend vers $+\\infty$ ?",
+      "verso": "Vers $+\\infty$ : la racine carrée grandit sans plafond. La multiplier par un réel positif ou lui retrancher une constante ne change pas ce comportement, et $3\\sqrt{x}-5$ tend encore vers $+\\infty$.",
+      "difficulte": 1,
+      "tags": ["limite", "racine-carree", "reference"]
+    },
+    {
+      "id": "1D-CH07-006",
+      "lecon": "Limite en $+\\infty$ et en $-\\infty$",
+      "type": "formule",
+      "recto": "Comment calcule-t-on la limite d'une fonction polynôme en $+\\infty$ ou en $-\\infty$ ?",
+      "verso": "Elle est égale à la limite de son terme de plus haut degré, le terme dominant ; les autres termes sont négligés. Le signe se lit en combinant celui du coefficient dominant et, en $-\\infty$, la parité de l'exposant.",
+      "difficulte": 2,
+      "tags": ["polynome", "terme-dominant", "limite"]
+    },
+    {
+      "id": "1D-CH07-007",
+      "lecon": "Limite en $+\\infty$ et en $-\\infty$",
+      "type": "formule",
+      "recto": "Pourquoi le terme dominant d'un polynôme commande-t-il sa limite en l'infini ?",
+      "verso": "Parce qu'en factorisant par la plus haute puissance, $2x^2-5x-3=x^2\\left(2-\\dfrac{5}{x}-\\dfrac{3}{x^2}\\right)$, la parenthèse tend vers le coefficient dominant, chaque $\\dfrac{1}{x^k}$ tendant vers $0$. Il reste un facteur infini multiplié par un nombre non nul.",
+      "difficulte": 3,
+      "tags": ["terme-dominant", "factorisation", "demonstration"]
+    },
+    {
+      "id": "1D-CH07-008",
+      "lecon": "Limite en $+\\infty$ et en $-\\infty$",
+      "type": "definition",
+      "recto": "Quand la droite d'équation $y=L$ est-elle asymptote horizontale à la courbe de $f$ ?",
+      "verso": "Lorsque $\\lim\\limits_{x\\to+\\infty}f(x)=L$ ou $\\lim\\limits_{x\\to-\\infty}f(x)=L$, avec $L$ réel. Une courbe peut donc avoir deux asymptotes horizontales, une seule, ou aucune.",
+      "difficulte": 2,
+      "tags": ["asymptote-horizontale", "limite-finie"]
+    },
+    {
+      "id": "1D-CH07-009",
+      "lecon": "Limite en $+\\infty$ et en $-\\infty$",
+      "type": "definition",
+      "recto": "Pourquoi n'écrit-on jamais que $+\\infty-\\infty$ vaut $0$ ?",
+      "verso": "Parce que $+\\infty$ n'est pas un nombre et n'obéit pas aux règles de calcul des réels. Une telle écriture signale une forme indéterminée : le calcul direct ne conclut pas, il faut transformer l'écriture avant de recommencer.",
+      "difficulte": 3,
+      "tags": ["infini", "forme-indeterminee", "piege"]
+    },
+    {
+      "id": "1D-CH07-010",
+      "lecon": "Limite en un point ; limite à gauche et à droite",
+      "type": "definition",
+      "recto": "Que signifie l'écriture $\\lim\\limits_{x\\to a}f(x)=L$, où $a$ est un réel ?",
+      "verso": "Que $f(x)$ devient aussi proche que l'on veut de $L$, pourvu que $x$ soit assez proche de $a$ sans lui être égal. Une limite en un point décrit le comportement autour du point, jamais la valeur au point.",
+      "difficulte": 1,
+      "tags": ["limite-en-un-point", "definition"]
+    },
+    {
+      "id": "1D-CH07-011",
+      "lecon": "Limite en un point ; limite à gauche et à droite",
+      "type": "formule",
+      "recto": "Dans quel cas la limite en $a$ s'obtient-elle en remplaçant simplement $x$ par $a$ ?",
+      "verso": "Lorsque $f$ est une fonction polynôme, ou une fonction rationnelle dont le dénominateur ne s'annule pas en $a$ : on a alors $\\lim\\limits_{x\\to a}f(x)=f(a)$. Ainsi $\\lim\\limits_{x\\to 2}\\left(x^2+3x\\right)=10$.",
+      "difficulte": 2,
+      "tags": ["limite-en-un-point", "polynome", "rationnelle"]
+    },
+    {
+      "id": "1D-CH07-012",
+      "lecon": "Limite en un point ; limite à gauche et à droite",
+      "type": "definition",
+      "recto": "Que désignent les notations $\\lim\\limits_{x\\to a^-}f(x)$ et $\\lim\\limits_{x\\to a^+}f(x)$ ?",
+      "verso": "La limite à gauche, obtenue en ne considérant que les $x<a$, et la limite à droite, obtenue en ne considérant que les $x>a$. Le signe en exposant indique le côté par lequel on arrive : c'est une consigne de trajet, pas un signe de nombre.",
+      "difficulte": 2,
+      "tags": ["limite-a-gauche", "limite-a-droite", "notation"]
+    },
+    {
+      "id": "1D-CH07-013",
+      "lecon": "Limite en un point ; limite à gauche et à droite",
+      "type": "formule",
+      "recto": "A quelle condition une fonction $f$ admet-elle une limite en $a$ ?",
+      "verso": "Si et seulement si ses limites à gauche et à droite en $a$ existent et sont égales. Lorsqu'elles diffèrent, on dit que $f$ n'a pas de limite en $a$, et l'on donne les deux résultats séparément.",
+      "difficulte": 2,
+      "tags": ["limite-a-gauche", "limite-a-droite", "existence"]
+    },
+    {
+      "id": "1D-CH07-014",
+      "lecon": "Limite en un point ; limite à gauche et à droite",
+      "type": "formule",
+      "recto": "Vers quoi tend $\\dfrac{1}{x^n}$ quand $x$ tend vers $0$ ?",
+      "verso": "A droite, la limite vaut $+\\infty$ pour tout entier $n\\ge 1$. A gauche, elle vaut $+\\infty$ si $n$ est pair, car $x^n>0$ des deux côtés, et $-\\infty$ si $n$ est impair, car le dénominateur change alors de signe en $0$.",
+      "difficulte": 2,
+      "tags": ["limite-en-zero", "inverse", "parite"]
+    },
+    {
+      "id": "1D-CH07-015",
+      "lecon": "Limite en un point ; limite à gauche et à droite",
+      "type": "definition",
+      "recto": "Quand la droite d'équation $x=a$ est-elle asymptote verticale à la courbe de $f$ ?",
+      "verso": "Lorsque l'une au moins des deux limites $\\lim\\limits_{x\\to a^-}f(x)$ et $\\lim\\limits_{x\\to a^+}f(x)$ est infinie. On cherche donc les asymptotes verticales aux valeurs interdites, là où un dénominateur s'annule.",
+      "difficulte": 2,
+      "tags": ["asymptote-verticale", "valeur-interdite"]
+    },
+    {
+      "id": "1D-CH07-016",
+      "lecon": "Limite en un point ; limite à gauche et à droite",
+      "type": "formule",
+      "recto": "Comment détermine-t-on le signe de la limite d'un quotient en une valeur interdite $a$ ?",
+      "verso": "Le numérateur ne s'annulant pas en $a$, son signe est fixé. On étudie alors le signe du dénominateur à gauche puis à droite de $a$ : la limite vaut $+\\infty$ lorsque les deux signes concordent, $-\\infty$ sinon.",
+      "difficulte": 2,
+      "tags": ["quotient", "valeur-interdite", "signe"]
+    },
+    {
+      "id": "1D-CH07-017",
+      "lecon": "Limite en un point ; limite à gauche et à droite",
+      "type": "formule",
+      "recto": "Pourquoi une valeur interdite ne donne-t-elle pas toujours une asymptote verticale ?",
+      "verso": "Parce que l'asymptote exige une limite infinie en cette valeur. Si le numérateur s'y annule lui aussi, la fraction se simplifie et la limite peut être finie : la courbe présente alors un trou, et non une envolée.",
+      "difficulte": 3,
+      "tags": ["asymptote-verticale", "valeur-interdite", "piege"]
+    },
+    {
+      "id": "1D-CH07-018",
+      "lecon": "Limite en un point ; limite à gauche et à droite",
+      "type": "definition",
+      "recto": "Pourquoi une fonction non définie en $a$ peut-elle malgré tout admettre une limite en $a$ ?",
+      "verso": "Parce que la limite s'intéresse aux voisins du point, jamais au point lui-même. Ainsi $x\\mapsto\\dfrac{x^2-1}{x+1}$ n'est pas définie en $-1$ et y admet pourtant la limite finie $-2$.",
+      "difficulte": 3,
+      "tags": ["limite-en-un-point", "ensemble-de-definition"]
+    },
+    {
+      "id": "1D-CH07-019",
+      "lecon": "Limite en un point ; limite à gauche et à droite",
+      "type": "definition",
+      "recto": "Pourquoi l'écriture $\\lim\\limits_{x\\to 0}\\dfrac{1}{x}=+\\infty$ est-elle fautive ?",
+      "verso": "Parce que la limite à droite vaut $+\\infty$ et la limite à gauche $-\\infty$ : cette fonction n'a pas de limite en $0$. Il faut préciser le côté et donner les deux résultats. On ne s'en dispense que lorsque les deux limites coïncident, comme pour $\\dfrac{1}{x^2}$.",
+      "difficulte": 3,
+      "tags": ["limite-en-zero", "notation", "piege"]
+    },
+    {
+      "id": "1D-CH07-020",
+      "lecon": "Opérations sur les limites",
+      "type": "formule",
+      "recto": "Que disent les règles admises sur la limite d'une somme, d'un produit et d'un quotient ?",
+      "verso": "$\\lim(f+g)=\\lim f+\\lim g$, $\\lim(f\\times g)=\\lim f\\times\\lim g$ et $\\lim\\dfrac fg=\\dfrac{\\lim f}{\\lim g}$, sauf dans les formes indéterminées. Lorsqu'une limite est infinie, on applique la règle des signes habituelle.",
+      "difficulte": 2,
+      "tags": ["operations", "limite"]
+    },
+    {
+      "id": "1D-CH07-021",
+      "lecon": "Opérations sur les limites",
+      "type": "definition",
+      "recto": "Quelles sont les quatre formes indéterminées ?",
+      "verso": "$+\\infty-\\infty$, $0\\times\\infty$, $\\dfrac00$ et $\\dfrac{\\infty}{\\infty}$. Ce ne sont pas des résultats : elles signalent que le calcul direct ne permet pas de conclure et qu'il faut transformer l'écriture de la fonction.",
+      "difficulte": 1,
+      "tags": ["forme-indeterminee", "limite"]
+    },
+    {
+      "id": "1D-CH07-022",
+      "lecon": "Opérations sur les limites",
+      "type": "definition",
+      "recto": "Pourquoi la forme $\\dfrac{k}{0}$, avec $k\\ne 0$, n'est-elle pas une forme indéterminée ?",
+      "verso": "Parce que la limite y est infinie à coup sûr : seul le signe reste à déterminer, en étudiant le signe du dénominateur à gauche puis à droite de la valeur interdite.",
+      "difficulte": 3,
+      "tags": ["forme-indeterminee", "quotient", "piege"]
+    },
+    {
+      "id": "1D-CH07-023",
+      "lecon": "Opérations sur les limites",
+      "type": "formule",
+      "recto": "Comment calcule-t-on la limite d'une fonction rationnelle en $+\\infty$ ou en $-\\infty$ ?",
+      "verso": "Par le rapport des termes dominants du numérateur et du dénominateur : $f$ a la même limite que $\\dfrac{ax^n}{bx^m}$. C'est la règle du terme dominant appliquée deux fois, en haut et en bas.",
+      "difficulte": 2,
+      "tags": ["rationnelle", "terme-dominant", "limite"]
+    },
+    {
+      "id": "1D-CH07-024",
+      "lecon": "Opérations sur les limites",
+      "type": "formule",
+      "recto": "Quels sont les trois cas de la limite d'une rationnelle en l'infini, selon le degré $n$ du haut et le degré $m$ du bas ?",
+      "verso": "Si $n=m$, la limite vaut $\\dfrac ab$ et la droite $y=\\dfrac ab$ est asymptote horizontale. Si $n<m$, la limite vaut $0$ et l'axe des abscisses est asymptote horizontale. Si $n>m$, la limite est infinie et il n'y a pas d'asymptote horizontale.",
+      "difficulte": 2,
+      "tags": ["rationnelle", "degre", "asymptote-horizontale"]
+    },
+    {
+      "id": "1D-CH07-025",
+      "lecon": "Opérations sur les limites",
+      "type": "formule",
+      "recto": "Comment lève-t-on la forme $+\\infty-\\infty$ dans une différence de polynômes en l'infini ?",
+      "verso": "En factorisant par le terme de plus haut degré. Ainsi $x^3-50x^2=x^3\\left(1-\\dfrac{50}{x}\\right)$ : la parenthèse tend vers $1$, le facteur $x^3$ vers $+\\infty$, et l'indétermination a disparu.",
+      "difficulte": 2,
+      "tags": ["forme-indeterminee", "factorisation"]
+    },
+    {
+      "id": "1D-CH07-026",
+      "lecon": "Opérations sur les limites",
+      "type": "formule",
+      "recto": "Comment lève-t-on la forme $\\dfrac00$ dans un quotient de polynômes en un point $a$ ?",
+      "verso": "Le numérateur et le dénominateur s'annulant tous deux en $a$, ils se factorisent par $(x-a)$. On simplifie par ce facteur, ce qui est licite car $x\\ne a$ dans un calcul de limite, puis on remplace $x$ par $a$ dans l'expression obtenue.",
+      "difficulte": 2,
+      "tags": ["forme-indeterminee", "factorisation", "quotient"]
+    },
+    {
+      "id": "1D-CH07-027",
+      "lecon": "Opérations sur les limites",
+      "type": "formule",
+      "recto": "Quelle transformation lève une indétermination portant sur une différence de racines carrées ?",
+      "verso": "La multiplication par la quantité conjuguée, obtenue en changeant le signe entre les deux termes. L'identité $(A-B)(A+B)=A^2-B^2$ fait disparaître les racines : $\\sqrt{x+3}-\\sqrt{x}=\\dfrac{3}{\\sqrt{x+3}+\\sqrt{x}}$, qui tend vers $0$.",
+      "difficulte": 3,
+      "tags": ["quantite-conjuguee", "racine-carree", "forme-indeterminee"]
+    },
+    {
+      "id": "1D-CH07-028",
+      "lecon": "Opérations sur les limites",
+      "type": "definition",
+      "recto": "Pourquoi ne prend-on pas le rapport des premiers termes écrits d'une fonction rationnelle ?",
+      "verso": "Parce que le terme dominant se repère par le degré, jamais par sa position. Dans $1+x^3-2x$, le terme dominant est $x^3$ bien qu'il ne soit pas écrit en premier ; et pour $\\dfrac{2x+1}{x^2}$ le rapport vaut $\\dfrac{2x}{x^2}=\\dfrac2x$, qui tend vers $0$ et non vers $2$.",
+      "difficulte": 3,
+      "tags": ["terme-dominant", "rationnelle", "piege"]
+    },
+    {
+      "id": "1D-CH07-029",
+      "lecon": "Opérations sur les limites",
+      "type": "definition",
+      "recto": "Pourquoi la connaissance des deux limites séparées ne suffit-elle pas dans une forme indéterminée ?",
+      "verso": "Parce que deux effets contraires s'affrontent et que le résultat dépend du plus fort des deux. Avec un facteur qui tend vers $+\\infty$ et un autre vers $0$, le produit peut être nul, fini non nul ou infini : $2000x\\times\\dfrac{15\\,000}{x}$ vaut par exemple $30\\,000\\,000$.",
+      "difficulte": 2,
+      "tags": ["forme-indeterminee", "produit"]
+    },
+    {
+      "id": "1D-CH07-030",
+      "lecon": "Comparaison et asymptotes",
+      "type": "formule",
+      "recto": "Qu'affirme le théorème de comparaison pour une limite infinie ?",
+      "verso": "Si $f(x)\\le g(x)$ au voisinage de $a$ et si $\\lim f=+\\infty$, alors $\\lim g=+\\infty$. De même, si $g(x)\\le f(x)$ et si $\\lim f=-\\infty$, alors $\\lim g=-\\infty$. Une seule inégalité suffit, car il n'y a qu'un sens à forcer.",
+      "difficulte": 2,
+      "tags": ["comparaison", "limite-infinie"]
+    },
+    {
+      "id": "1D-CH07-031",
+      "lecon": "Comparaison et asymptotes",
+      "type": "formule",
+      "recto": "Qu'affirme le théorème d'encadrement ?",
+      "verso": "Si $u(x)\\le f(x)\\le v(x)$ au voisinage de $a$ et si $u$ et $v$ ont la même limite $L$, avec $L$ réel, alors $\\lim f=L$. Les deux bornes se referment sur $f$, qui n'a plus d'échappatoire.",
+      "difficulte": 2,
+      "tags": ["encadrement", "limite-finie"]
+    },
+    {
+      "id": "1D-CH07-032",
+      "lecon": "Comparaison et asymptotes",
+      "type": "definition",
+      "recto": "Pourquoi une seule majoration ne suffit-elle pas à établir une limite finie ?",
+      "verso": "Parce qu'elle n'empêche la fonction de s'échapper que d'un seul côté : une fonction majorée par $\\dfrac1x$ peut très bien plonger vers $-\\infty$. Une limite finie demande deux inégalités qui se referment sur la même valeur.",
+      "difficulte": 3,
+      "tags": ["encadrement", "majoration", "piege"]
+    },
+    {
+      "id": "1D-CH07-033",
+      "lecon": "Comparaison et asymptotes",
+      "type": "formule",
+      "recto": "Comment obtient-on la limite en $+\\infty$ d'une expression contenant $\\cos x$ ou $\\sin x$ ?",
+      "verso": "Par encadrement, car ces fonctions n'ont pas de limite en $+\\infty$ mais restent entre $-1$ et $1$. Pour $x>0$, $-\\dfrac1x\\le\\dfrac{\\cos x}{x}\\le\\dfrac1x$ : les deux bornes tendant vers $0$, le quotient tend vers $0$.",
+      "difficulte": 2,
+      "tags": ["encadrement", "cosinus", "sinus"]
+    },
+    {
+      "id": "1D-CH07-034",
+      "lecon": "Comparaison et asymptotes",
+      "type": "definition",
+      "recto": "Quand la droite d'équation $y=ax+b$, avec $a\\ne 0$, est-elle asymptote oblique à la courbe de $f$ ?",
+      "verso": "Lorsqu'on peut écrire $f(x)=ax+b+\\varepsilon(x)$ avec $\\lim\\varepsilon(x)=0$ en $+\\infty$, ou en $-\\infty$. C'est l'écart entre la courbe et la droite qui doit tendre vers $0$ ; l'asymptote horizontale n'est que le cas $a=0$.",
+      "difficulte": 2,
+      "tags": ["asymptote-oblique", "definition"]
+    },
+    {
+      "id": "1D-CH07-035",
+      "lecon": "Comparaison et asymptotes",
+      "type": "formule",
+      "recto": "Comment détermine-t-on la position d'une courbe par rapport à son asymptote oblique ?",
+      "verso": "Par le signe de l'écart $\\varepsilon(x)=f(x)-(ax+b)$ : la courbe est au-dessus de la droite là où $\\varepsilon(x)>0$, et au-dessous là où $\\varepsilon(x)<0$.",
+      "difficulte": 2,
+      "tags": ["asymptote-oblique", "position-relative", "signe"]
+    },
+    {
+      "id": "1D-CH07-036",
+      "lecon": "Comparaison et asymptotes",
+      "type": "definition",
+      "recto": "Pourquoi une courbe qui reste à distance $1$ d'une droite n'admet-elle pas cette droite pour asymptote ?",
+      "verso": "Parce que l'écart doit tendre vers $0$, et non rester constant. La courbe de $x\\mapsto x+1$ reste toujours à distance $1$ de la droite $y=x$, qui n'est donc pas son asymptote.",
+      "difficulte": 3,
+      "tags": ["asymptote", "ecart", "piege"]
+    },
+    {
+      "id": "1D-CH07-037",
+      "lecon": "Comparaison et asymptotes",
+      "type": "definition",
+      "recto": "Pourquoi une courbe peut-elle couper son asymptote ?",
+      "verso": "Parce qu'une asymptote n'est pas une barrière infranchissable : la seule exigence est que l'écart tende vers $0$. La courbe de $x\\mapsto 3+\\dfrac{\\cos x}{x}$ coupe ainsi son asymptote $y=3$ une infinité de fois.",
+      "difficulte": 3,
+      "tags": ["asymptote", "piege"]
+    },
+    {
+      "id": "1D-CH07-038",
+      "lecon": "Comparaison et asymptotes",
+      "type": "definition",
+      "recto": "Où cherche-t-on les asymptotes horizontales et où cherche-t-on les asymptotes verticales ?",
+      "verso": "Les horizontales aux bornes infinies du domaine, par les limites en $+\\infty$ et en $-\\infty$ ; les verticales aux valeurs interdites, par les limites à gauche et à droite. Une équation en $y=$ décrit une droite horizontale ou oblique, une équation en $x=$ une droite verticale.",
+      "difficulte": 2,
+      "tags": ["asymptote-horizontale", "asymptote-verticale", "distinction"]
+    }
+  ]
+}

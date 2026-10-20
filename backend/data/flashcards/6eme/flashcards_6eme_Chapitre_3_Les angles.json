@@ -1,0 +1,437 @@
+{
+  "niveau": "6ème",
+  "chapitre": "Chapitre 3 : Les angles",
+  "source": "maths/6eme/Chapitre_3_Les_angles",
+  "nombre_cartes": 34,
+  "cartes": [
+    {
+      "id": "6E-CH03-001",
+      "lecon": "L'angle : sommet, côtés et notation",
+      "type": "definition",
+      "recto": "Qu'est-ce qu'un angle ?",
+      "verso": "Un angle est formé par deux demi-droites de même origine. C'est l'ouverture, ou l'écartement, entre ces deux demi-droites.",
+      "difficulte": 1,
+      "tags": [
+        "angle",
+        "definition"
+      ]
+    },
+    {
+      "id": "6E-CH03-002",
+      "lecon": "L'angle : sommet, côtés et notation",
+      "type": "definition",
+      "recto": "Comment appelle-t-on le point commun aux deux demi-droites d'un angle ?",
+      "verso": "Le sommet de l'angle. Les deux demi-droites elles-mêmes s'appellent les côtés de l'angle.",
+      "difficulte": 1,
+      "tags": [
+        "angle",
+        "sommet",
+        "cotes"
+      ]
+    },
+    {
+      "id": "6E-CH03-003",
+      "lecon": "L'angle : sommet, côtés et notation",
+      "type": "definition",
+      "recto": "Comment note-t-on un angle de sommet O dont les côtés passent par A et par B ?",
+      "verso": "$A\\widehat{O}B$ : le chapeau se place sur la lettre du sommet, qui s'écrit au milieu. On peut aussi écrire $B\\widehat{O}A$, c'est le même angle.",
+      "difficulte": 2,
+      "tags": [
+        "angle",
+        "notation",
+        "sommet"
+      ]
+    },
+    {
+      "id": "6E-CH03-004",
+      "lecon": "L'angle : sommet, côtés et notation",
+      "type": "formule",
+      "recto": "Pourquoi l'écriture $S\\widehat{M}N$ est-elle fausse pour un angle de sommet S ?",
+      "verso": "Parce que le chapeau y est posé sur M : cette écriture désigne un angle de sommet M. La lettre coiffée du chapeau est toujours le sommet, donc il faut écrire $M\\widehat{S}N$.",
+      "difficulte": 3,
+      "tags": [
+        "notation",
+        "sommet",
+        "piege"
+      ]
+    },
+    {
+      "id": "6E-CH03-005",
+      "lecon": "L'angle : sommet, côtés et notation",
+      "type": "formule",
+      "recto": "Comment note-t-on les deux côtés d'un angle de sommet S passant par M et par N ?",
+      "verso": "$\\left[SM\\right)$ et $\\left[SN\\right)$ : ce sont des demi-droites d'origine S, et l'origine s'écrit toujours en premier.",
+      "difficulte": 2,
+      "tags": [
+        "cotes",
+        "demi-droite",
+        "notation"
+      ]
+    },
+    {
+      "id": "6E-CH03-006",
+      "lecon": "L'angle : sommet, côtés et notation",
+      "type": "definition",
+      "recto": "Quand peut-on noter un angle par la seule lettre de son sommet ?",
+      "verso": "Quand il n'y a pas de risque de confusion, c'est-à-dire quand un seul angle porte ce sommet : on écrit alors $\\widehat{O}$.",
+      "difficulte": 2,
+      "tags": [
+        "notation",
+        "sommet"
+      ]
+    },
+    {
+      "id": "6E-CH03-007",
+      "lecon": "L'angle : sommet, côtés et notation",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on l'intérieur d'un angle ?",
+      "verso": "La région située entre les deux côtés. Ces deux côtés partagent le plan en deux régions : l'intérieur de l'angle et l'extérieur.",
+      "difficulte": 2,
+      "tags": [
+        "angle",
+        "interieur"
+      ]
+    },
+    {
+      "id": "6E-CH03-008",
+      "lecon": "L'angle : sommet, côtés et notation",
+      "type": "definition",
+      "recto": "Par quel signe marque-t-on un angle sur un dessin de géométrie ?",
+      "verso": "Par un petit arc tracé entre les deux côtés, du côté de l'intérieur. L'angle droit, lui, se marque par un petit carré placé au sommet.",
+      "difficulte": 1,
+      "tags": [
+        "codage",
+        "angle",
+        "angle-droit"
+      ]
+    },
+    {
+      "id": "6E-CH03-009",
+      "lecon": "Comparer et classer les angles",
+      "type": "formule",
+      "recto": "Comment compare-t-on deux angles sans les mesurer ?",
+      "verso": "On les superpose, les deux sommets l'un sur l'autre et un côté de chacun l'un sur l'autre. Le plus grand est celui dont le second côté est le plus ouvert.",
+      "difficulte": 2,
+      "tags": [
+        "comparaison",
+        "superposition"
+      ]
+    },
+    {
+      "id": "6E-CH03-010",
+      "lecon": "Comparer et classer les angles",
+      "type": "formule",
+      "recto": "De quoi la grandeur d'un angle ne dépend-elle jamais ?",
+      "verso": "De la longueur de ses côtés. Un angle reste le même si l'on prolonge ou si l'on raccourcit ses côtés : seule compte l'ouverture.",
+      "difficulte": 2,
+      "tags": [
+        "grandeur",
+        "cotes",
+        "ouverture"
+      ]
+    },
+    {
+      "id": "6E-CH03-011",
+      "lecon": "Comparer et classer les angles",
+      "type": "definition",
+      "recto": "Quelles sont les cinq sortes d'angles saillants, de la plus fermée à la plus ouverte ?",
+      "verso": "L'angle nul $\\left(0^{\\circ}\\right)$, l'angle aigu (entre $0^{\\circ}$ et $90^{\\circ}$), l'angle droit $\\left(90^{\\circ}\\right)$, l'angle obtus (entre $90^{\\circ}$ et $180^{\\circ}$) et l'angle plat $\\left(180^{\\circ}\\right)$.",
+      "difficulte": 2,
+      "tags": [
+        "classement",
+        "sortes-d-angles"
+      ]
+    },
+    {
+      "id": "6E-CH03-012",
+      "lecon": "Comparer et classer les angles",
+      "type": "definition",
+      "recto": "Qu'est-ce qu'un angle aigu ?",
+      "verso": "Un angle plus fermé qu'un angle droit : sa mesure est comprise entre $0^{\\circ}$ et $90^{\\circ}$. Un angle de $47^{\\circ}$ est aigu.",
+      "difficulte": 1,
+      "tags": [
+        "angle-aigu",
+        "definition"
+      ]
+    },
+    {
+      "id": "6E-CH03-013",
+      "lecon": "Comparer et classer les angles",
+      "type": "definition",
+      "recto": "Qu'est-ce qu'un angle obtus ?",
+      "verso": "Un angle plus ouvert qu'un angle droit, sans aller jusqu'à la ligne droite : sa mesure est comprise entre $90^{\\circ}$ et $180^{\\circ}$. Un angle de $113^{\\circ}$ est obtus.",
+      "difficulte": 1,
+      "tags": [
+        "angle-obtus",
+        "definition"
+      ]
+    },
+    {
+      "id": "6E-CH03-014",
+      "lecon": "Comparer et classer les angles",
+      "type": "definition",
+      "recto": "Quelles sont les deux mesures limites d'un angle saillant ?",
+      "verso": "$0^{\\circ}$ pour l'angle nul, dont les deux côtés sont confondus, et $180^{\\circ}$ pour l'angle plat, dont les deux côtés forment une droite.",
+      "difficulte": 1,
+      "tags": [
+        "angle-nul",
+        "angle-plat",
+        "mesure"
+      ]
+    },
+    {
+      "id": "6E-CH03-015",
+      "lecon": "Comparer et classer les angles",
+      "type": "formule",
+      "recto": "Comment reconnaît-on à l'équerre qu'un angle est aigu ou obtus ?",
+      "verso": "On pose le coin de l'angle droit de l'équerre sur le sommet, un bord le long d'un côté. Si le second côté rentre à l'intérieur de l'équerre, l'angle est aigu ; s'il en sort, l'angle est obtus.",
+      "difficulte": 2,
+      "tags": [
+        "equerre",
+        "angle-aigu",
+        "angle-obtus"
+      ]
+    },
+    {
+      "id": "6E-CH03-016",
+      "lecon": "Comparer et classer les angles",
+      "type": "formule",
+      "recto": "Pourquoi un angle de $89^{\\circ}$ n'est-il pas un angle droit ?",
+      "verso": "Parce qu'un angle droit mesure exactement $90^{\\circ}$. Comme $89^{\\circ} < 90^{\\circ}$, cet angle est aigu, même s'il en est très proche.",
+      "difficulte": 3,
+      "tags": [
+        "angle-droit",
+        "piege",
+        "mesure"
+      ]
+    },
+    {
+      "id": "6E-CH03-017",
+      "lecon": "Comparer et classer les angles",
+      "type": "formule",
+      "recto": "Pourquoi deux dessins du même angle, l'un à côtés de $3$ cm et l'autre de $60$ cm, ont-ils la même mesure ?",
+      "verso": "Parce qu'un trait court et un trait long représentent la même demi-droite, qui n'a pas de fin. L'écartement entre les côtés ne change pas, donc la mesure non plus.",
+      "difficulte": 3,
+      "tags": [
+        "mesure",
+        "longueur",
+        "piege"
+      ]
+    },
+    {
+      "id": "6E-CH03-018",
+      "lecon": "Mesurer et construire un angle au rapporteur",
+      "type": "definition",
+      "recto": "Quelle est l'unité de mesure des angles ?",
+      "verso": "Le degré. Son symbole est le petit rond placé en haut à droite du nombre, comme dans $90^{\\circ}$.",
+      "difficulte": 1,
+      "tags": [
+        "degre",
+        "unite",
+        "mesure"
+      ]
+    },
+    {
+      "id": "6E-CH03-019",
+      "lecon": "Mesurer et construire un angle au rapporteur",
+      "type": "definition",
+      "recto": "Quels repères porte un rapporteur ?",
+      "verso": "Un centre, marqué d'un trait ou d'un petit trou, une ligne de base qui est la ligne du $0$, et une graduation de $0^{\\circ}$ à $180^{\\circ}$, presque toujours doublée en deux échelles de sens contraires.",
+      "difficulte": 1,
+      "tags": [
+        "rapporteur",
+        "graduation"
+      ]
+    },
+    {
+      "id": "6E-CH03-020",
+      "lecon": "Mesurer et construire un angle au rapporteur",
+      "type": "formule",
+      "recto": "Pourquoi la graduation du rapporteur s'arrête-t-elle à $180^{\\circ}$ ?",
+      "verso": "Parce qu'en 6ème on n'étudie que les angles saillants, dont la mesure est comprise entre $0^{\\circ}$ et $180^{\\circ}$ : un demi-cercle suffit donc pour tous les mesurer.",
+      "difficulte": 2,
+      "tags": [
+        "rapporteur",
+        "angles-saillants"
+      ]
+    },
+    {
+      "id": "6E-CH03-021",
+      "lecon": "Mesurer et construire un angle au rapporteur",
+      "type": "formule",
+      "recto": "Où pose-t-on le centre du rapporteur pour mesurer un angle ?",
+      "verso": "Exactement sur le sommet de l'angle. On fait ensuite tourner le rapporteur pour poser la ligne du $0$ sur l'un des deux côtés.",
+      "difficulte": 2,
+      "tags": [
+        "rapporteur",
+        "mesure",
+        "sommet"
+      ]
+    },
+    {
+      "id": "6E-CH03-022",
+      "lecon": "Mesurer et construire un angle au rapporteur",
+      "type": "formule",
+      "recto": "Sur laquelle des deux échelles du rapporteur faut-il lire la mesure ?",
+      "verso": "Sur celle dont le $0$ est posé sur le premier côté de l'angle. C'est la seule à suivre jusqu'au second côté.",
+      "difficulte": 2,
+      "tags": [
+        "rapporteur",
+        "lecture",
+        "echelle"
+      ]
+    },
+    {
+      "id": "6E-CH03-023",
+      "lecon": "Mesurer et construire un angle au rapporteur",
+      "type": "formule",
+      "recto": "Que vaut la somme des deux nombres lus en face d'un même côté sur un rapporteur ?",
+      "verso": "Elle vaut toujours $180$, car les deux échelles parcourent le même demi-cercle en sens contraire. Si l'un des nombres vaut $60$, l'autre vaut $120$.",
+      "difficulte": 2,
+      "tags": [
+        "rapporteur",
+        "echelles",
+        "somme"
+      ]
+    },
+    {
+      "id": "6E-CH03-024",
+      "lecon": "Mesurer et construire un angle au rapporteur",
+      "type": "formule",
+      "recto": "Comment corrige-t-on une lecture supérieure à $90$ pour un angle visiblement aigu ?",
+      "verso": "On s'est trompé d'échelle : il faut retrancher la lecture de $180$. Une lecture de $110$ correspond en réalité à $180 - 110 = 70^{\\circ}$.",
+      "difficulte": 3,
+      "tags": [
+        "rapporteur",
+        "piege",
+        "echelle"
+      ]
+    },
+    {
+      "id": "6E-CH03-025",
+      "lecon": "Mesurer et construire un angle au rapporteur",
+      "type": "formule",
+      "recto": "Par quoi commence-t-on la construction d'un angle de mesure donnée ?",
+      "verso": "Par le tracé d'une demi-droite $\\left[OA\\right)$, dont l'origine O sera le sommet : le rapporteur a besoin d'un premier côté sur lequel poser sa ligne du $0$.",
+      "difficulte": 2,
+      "tags": [
+        "construction",
+        "rapporteur"
+      ]
+    },
+    {
+      "id": "6E-CH03-026",
+      "lecon": "Angles adjacents, complémentaires, supplémentaires et bissectrice",
+      "type": "definition",
+      "recto": "A quelles conditions deux angles sont-ils adjacents ?",
+      "verso": "Ils doivent avoir le même sommet, un côté commun, et être situés de part et d'autre de ce côté commun.",
+      "difficulte": 2,
+      "tags": [
+        "angles-adjacents",
+        "definition"
+      ]
+    },
+    {
+      "id": "6E-CH03-027",
+      "lecon": "Angles adjacents, complémentaires, supplémentaires et bissectrice",
+      "type": "formule",
+      "recto": "Que donne la somme des mesures de deux angles adjacents ?",
+      "verso": "L'angle total qu'ils forment. Si $\\left[OC\\right)$ passe à l'intérieur de $A\\widehat{O}B$, alors $A\\widehat{O}C + C\\widehat{O}B = A\\widehat{O}B$.",
+      "difficulte": 2,
+      "tags": [
+        "angles-adjacents",
+        "somme"
+      ]
+    },
+    {
+      "id": "6E-CH03-028",
+      "lecon": "Angles adjacents, complémentaires, supplémentaires et bissectrice",
+      "type": "definition",
+      "recto": "Quand deux angles sont-ils complémentaires ?",
+      "verso": "Quand la somme de leurs mesures vaut $90^{\\circ}$, comme $30^{\\circ}$ et $60^{\\circ}$. Le complémentaire d'un angle de mesure $a$ se calcule par $90^{\\circ} - a$.",
+      "difficulte": 1,
+      "tags": [
+        "complementaires",
+        "definition",
+        "calcul"
+      ]
+    },
+    {
+      "id": "6E-CH03-029",
+      "lecon": "Angles adjacents, complémentaires, supplémentaires et bissectrice",
+      "type": "definition",
+      "recto": "Quand deux angles sont-ils supplémentaires ?",
+      "verso": "Quand la somme de leurs mesures vaut $180^{\\circ}$, comme $130^{\\circ}$ et $50^{\\circ}$. Le supplémentaire d'un angle de mesure $a$ se calcule par $180^{\\circ} - a$.",
+      "difficulte": 1,
+      "tags": [
+        "supplementaires",
+        "definition",
+        "calcul"
+      ]
+    },
+    {
+      "id": "6E-CH03-030",
+      "lecon": "Angles adjacents, complémentaires, supplémentaires et bissectrice",
+      "type": "formule",
+      "recto": "Pourquoi le complémentaire de $50^{\\circ}$ n'est-il pas $130^{\\circ}$ ?",
+      "verso": "Parce que $130^{\\circ}$ en est le supplémentaire. Le complément se calcule à partir de $90^{\\circ}$, le supplément à partir de $180^{\\circ}$ : le complémentaire de $50^{\\circ}$ vaut $90^{\\circ} - 50^{\\circ} = 40^{\\circ}$.",
+      "difficulte": 3,
+      "tags": [
+        "complementaires",
+        "supplementaires",
+        "piege"
+      ]
+    },
+    {
+      "id": "6E-CH03-031",
+      "lecon": "Angles adjacents, complémentaires, supplémentaires et bissectrice",
+      "type": "formule",
+      "recto": "Pourquoi un angle obtus ne possède-t-il pas de complémentaire ?",
+      "verso": "Parce que sa mesure dépasse déjà $90^{\\circ}$ : aucun angle ne peut s'y ajouter pour donner exactement $90^{\\circ}$. Seuls les angles aigus ont un complémentaire.",
+      "difficulte": 2,
+      "tags": [
+        "complementaires",
+        "angle-obtus",
+        "cas-particulier"
+      ]
+    },
+    {
+      "id": "6E-CH03-032",
+      "lecon": "Angles adjacents, complémentaires, supplémentaires et bissectrice",
+      "type": "definition",
+      "recto": "Qu'est-ce que la bissectrice d'un angle ?",
+      "verso": "La demi-droite issue du sommet qui partage l'angle en deux angles adjacents de même mesure. Ce n'est pas une droite : elle part du sommet et passe à l'intérieur de l'angle.",
+      "difficulte": 1,
+      "tags": [
+        "bissectrice",
+        "definition"
+      ]
+    },
+    {
+      "id": "6E-CH03-033",
+      "lecon": "Angles adjacents, complémentaires, supplémentaires et bissectrice",
+      "type": "formule",
+      "recto": "Que mesure chacun des deux angles formés par la bissectrice ?",
+      "verso": "La moitié de l'angle de départ : si $\\left[OC\\right)$ est la bissectrice de $A\\widehat{O}B$, alors $A\\widehat{O}C = C\\widehat{O}B = A\\widehat{O}B \\div 2$. Un angle de $110^{\\circ}$ donne ainsi deux angles de $55^{\\circ}$.",
+      "difficulte": 2,
+      "tags": [
+        "bissectrice",
+        "moitie",
+        "calcul"
+      ]
+    },
+    {
+      "id": "6E-CH03-034",
+      "lecon": "Angles adjacents, complémentaires, supplémentaires et bissectrice",
+      "type": "definition",
+      "recto": "Quelle différence y a-t-il entre être adjacents et être complémentaires ?",
+      "verso": "Etre adjacents est une question de position : même sommet, côté commun, de part et d'autre de ce côté. Etre complémentaires est une question de calcul : la somme des mesures vaut $90^{\\circ}$, même si les deux angles sont dessinés à part.",
+      "difficulte": 3,
+      "tags": [
+        "angles-adjacents",
+        "complementaires",
+        "distinction"
+      ]
+    }
+  ]
+}

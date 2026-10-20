@@ -1,0 +1,332 @@
+{
+  "niveau": "4ème",
+  "chapitre": "Chapitre 5 : Calculs sur les quotients d'entiers relatifs",
+  "source": "maths/4eme/Chapitre_5_Quotients_entiers_relatifs",
+  "nombre_cartes": 36,
+  "cartes": [
+    {
+      "id": "4E-CH05-001",
+      "lecon": "L'égalité de deux quotients",
+      "type": "definition",
+      "recto": "Qu'est-ce qu'un quotient d'entiers relatifs ?",
+      "verso": "C'est une écriture $\\dfrac{a}{b}$ où $a$ et $b$ sont des entiers relatifs, avec $b \\ne 0$. Le nombre $a$ est le numérateur, le nombre $b$ le dénominateur.",
+      "difficulte": 1,
+      "tags": ["quotient", "definition", "vocabulaire"]
+    },
+    {
+      "id": "4E-CH05-002",
+      "lecon": "L'égalité de deux quotients",
+      "type": "formule",
+      "recto": "Quelle opération peut-on faire sur les deux termes d'un quotient sans en changer la valeur ?",
+      "verso": "Les multiplier, ou les diviser, par un même nombre non nul : $\\dfrac{a}{b} = \\dfrac{a \\times k}{b \\times k}$. C'est la règle fondamentale des quotients.",
+      "difficulte": 1,
+      "tags": ["regle-fondamentale", "quotient"]
+    },
+    {
+      "id": "4E-CH05-003",
+      "lecon": "L'égalité de deux quotients",
+      "type": "formule",
+      "recto": "Quel test permet de savoir si les quotients $\\dfrac{a}{b}$ et $\\dfrac{c}{d}$ sont égaux ?",
+      "verso": "Le test des produits en croix : $\\dfrac{a}{b} = \\dfrac{c}{d}$ si et seulement si $a \\times d = b \\times c$. Il fonctionne quels que soient les signes.",
+      "difficulte": 2,
+      "tags": ["produit-en-croix", "egalite"]
+    },
+    {
+      "id": "4E-CH05-004",
+      "lecon": "L'égalité de deux quotients",
+      "type": "definition",
+      "recto": "Qu'est-ce qu'une fraction irréductible ?",
+      "verso": "C'est une fraction que l'on ne peut plus simplifier. On l'obtient d'un seul coup en divisant le numérateur et le dénominateur par leur PGCD.",
+      "difficulte": 2,
+      "tags": ["irreductible", "simplification", "pgcd"]
+    },
+    {
+      "id": "4E-CH05-005",
+      "lecon": "L'égalité de deux quotients",
+      "type": "formule",
+      "recto": "Quelles sont les trois écritures d'un même quotient négatif ?",
+      "verso": "Le signe se place au numérateur, au dénominateur ou devant la barre : $\\dfrac{-a}{b} = \\dfrac{a}{-b} = -\\dfrac{a}{b}$. Deux signes moins s'annulent : $\\dfrac{-3}{-4} = \\dfrac{3}{4}$.",
+      "difficulte": 2,
+      "tags": ["signe", "quotient-negatif", "ecritures"]
+    },
+    {
+      "id": "4E-CH05-006",
+      "lecon": "L'égalité de deux quotients",
+      "type": "formule",
+      "recto": "Parmi les écritures d'un quotient négatif, laquelle préfère-t-on en pratique ?",
+      "verso": "Celle qui place le signe devant la barre ou au numérateur, de sorte que le dénominateur reste positif : cela évite bien des erreurs de signe dans la suite des calculs.",
+      "difficulte": 2,
+      "tags": ["signe", "quotient-negatif", "presentation"]
+    },
+    {
+      "id": "4E-CH05-007",
+      "lecon": "L'égalité de deux quotients",
+      "type": "formule",
+      "recto": "Pourquoi ne peut-on pas barrer les deux $3$ dans $\\dfrac{3 + 5}{3}$ ?",
+      "verso": "Parce que la simplification ne s'applique qu'à des produits, jamais à des sommes. Il faut d'abord calculer le numérateur : $\\dfrac{3 + 5}{3} = \\dfrac{8}{3}$.",
+      "difficulte": 3,
+      "tags": ["simplification", "piege"]
+    },
+    {
+      "id": "4E-CH05-008",
+      "lecon": "L'addition de deux quotients",
+      "type": "formule",
+      "recto": "Comment additionne-t-on deux quotients de même dénominateur ?",
+      "verso": "On additionne les numérateurs et on garde le dénominateur : $\\dfrac{a}{c} + \\dfrac{b}{c} = \\dfrac{a + b}{c}$.",
+      "difficulte": 1,
+      "tags": ["addition", "meme-denominateur"]
+    },
+    {
+      "id": "4E-CH05-009",
+      "lecon": "L'addition de deux quotients",
+      "type": "formule",
+      "recto": "Que fait-on avant d'additionner deux quotients de dénominateurs différents ?",
+      "verso": "On les réduit au même dénominateur, en prenant un multiple commun des deux dénominateurs, par exemple leur PPCM. On additionne ensuite les numérateurs, puis on rend le résultat irréductible.",
+      "difficulte": 2,
+      "tags": ["addition", "denominateur-commun", "ppcm"]
+    },
+    {
+      "id": "4E-CH05-010",
+      "lecon": "L'addition de deux quotients",
+      "type": "formule",
+      "recto": "Pourquoi $\\dfrac{1}{3} + \\dfrac{1}{4}$ ne vaut-il pas $\\dfrac{2}{7}$ ?",
+      "verso": "Parce qu'on n'additionne jamais les dénominateurs. L'erreur se repère vite : $\\dfrac{2}{7}$ est plus petit que $\\dfrac{1}{3}$, alors qu'on vient d'ajouter une quantité positive. Le bon calcul est $\\dfrac{4}{12} + \\dfrac{3}{12} = \\dfrac{7}{12}$.",
+      "difficulte": 3,
+      "tags": ["addition", "piege"]
+    },
+    {
+      "id": "4E-CH05-011",
+      "lecon": "L'addition de deux quotients",
+      "type": "formule",
+      "recto": "Pourquoi le dénominateur ne change-t-il pas quand on additionne deux quotients de même dénominateur ?",
+      "verso": "Parce que $\\dfrac{a}{c}$ compte $a$ parts valant chacune $\\dfrac{1}{c}$ du tout. Réunir $a$ parts et $b$ parts de même taille donne $a + b$ parts de cette taille : seul le compte change.",
+      "difficulte": 2,
+      "tags": ["addition", "demonstration"]
+    },
+    {
+      "id": "4E-CH05-012",
+      "lecon": "L'addition de deux quotients",
+      "type": "formule",
+      "recto": "Comment compare-t-on deux quotients relatifs ?",
+      "verso": "On les écrit avec le même dénominateur positif : le plus grand est celui qui a le plus grand numérateur, puisque les parts sont alors de même taille. Un quotient négatif reste toujours plus petit qu'un quotient positif.",
+      "difficulte": 2,
+      "tags": ["comparaison", "denominateur-commun"]
+    },
+    {
+      "id": "4E-CH05-013",
+      "lecon": "L'addition de deux quotients",
+      "type": "formule",
+      "recto": "Pourquoi $-\\dfrac{3}{4}$ est-il plus petit que $-\\dfrac{2}{3}$ ?",
+      "verso": "Au dénominateur $12$, ces quotients s'écrivent $-\\dfrac{9}{12}$ et $-\\dfrac{8}{12}$. Comme $-9 < -8$, on obtient $-\\dfrac{3}{4} < -\\dfrac{2}{3}$ : « plus grand en chiffres » ne veut pas dire « plus grand ».",
+      "difficulte": 3,
+      "tags": ["comparaison", "relatifs"]
+    },
+    {
+      "id": "4E-CH05-014",
+      "lecon": "L'opposé d'un quotient ; la soustraction",
+      "type": "definition",
+      "recto": "Qu'est-ce que l'opposé du quotient $\\dfrac{a}{b}$ ?",
+      "verso": "C'est $-\\dfrac{a}{b}$, c'est-à-dire $\\dfrac{-a}{b}$ : le seul nombre qui, ajouté à $\\dfrac{a}{b}$, donne $0$.",
+      "difficulte": 1,
+      "tags": ["oppose", "definition"]
+    },
+    {
+      "id": "4E-CH05-015",
+      "lecon": "L'opposé d'un quotient ; la soustraction",
+      "type": "formule",
+      "recto": "Comment transforme-t-on une soustraction de quotients en addition ?",
+      "verso": "On ajoute l'opposé du second quotient : $\\dfrac{a}{b} - \\dfrac{c}{d} = \\dfrac{a}{b} + \\left(-\\dfrac{c}{d}\\right)$. Toutes les soustractions se ramènent ainsi à des additions.",
+      "difficulte": 1,
+      "tags": ["soustraction", "oppose"]
+    },
+    {
+      "id": "4E-CH05-016",
+      "lecon": "L'opposé d'un quotient ; la soustraction",
+      "type": "formule",
+      "recto": "Que devient un calcul dans lequel on soustrait un quotient négatif ?",
+      "verso": "Il devient une addition, car deux signes moins qui se suivent s'annulent : $\\dfrac{1}{4} - \\left(-\\dfrac{3}{4}\\right) = \\dfrac{1}{4} + \\dfrac{3}{4} = 1$.",
+      "difficulte": 2,
+      "tags": ["soustraction", "signes"]
+    },
+    {
+      "id": "4E-CH05-017",
+      "lecon": "L'opposé d'un quotient ; la soustraction",
+      "type": "formule",
+      "recto": "Comment écrit-on un entier pour le soustraire d'un quotient ?",
+      "verso": "Tout entier est un quotient de dénominateur $1$, puisque $3 = \\dfrac{3}{1}$. On le récrit ensuite avec le dénominateur voulu : $3 - \\dfrac{1}{2} = \\dfrac{6}{2} - \\dfrac{1}{2} = \\dfrac{5}{2}$.",
+      "difficulte": 2,
+      "tags": ["entier", "soustraction"]
+    },
+    {
+      "id": "4E-CH05-018",
+      "lecon": "L'opposé d'un quotient ; la soustraction",
+      "type": "formule",
+      "recto": "Sous quelles écritures fractionnaires le nombre $1$ se présente-t-il dans un calcul ?",
+      "verso": "Sous la forme $\\dfrac{n}{n}$ pour tout entier $n$ non nul : $\\dfrac{2}{2}$, $\\dfrac{5}{5}$, $\\dfrac{12}{12}$. On choisit le dénominateur qui arrange le calcul, comme dans $1 - \\dfrac{2}{3} = \\dfrac{3}{3} - \\dfrac{2}{3} = \\dfrac{1}{3}$.",
+      "difficulte": 2,
+      "tags": ["le-tout", "fraction"]
+    },
+    {
+      "id": "4E-CH05-019",
+      "lecon": "L'opposé d'un quotient ; la soustraction",
+      "type": "formule",
+      "recto": "Pourquoi ajouter l'opposé donne-t-il bien la différence de deux quotients ?",
+      "verso": "Parce que l'opposé de $\\dfrac{b}{c}$ est $\\dfrac{-b}{c}$ et que deux quotients de même dénominateur s'additionnent en additionnant les numérateurs : $\\dfrac{a}{c} + \\dfrac{-b}{c} = \\dfrac{a - b}{c}$.",
+      "difficulte": 3,
+      "tags": ["soustraction", "demonstration"]
+    },
+    {
+      "id": "4E-CH05-020",
+      "lecon": "La multiplication de deux quotients",
+      "type": "formule",
+      "recto": "Comment multiplie-t-on deux quotients ?",
+      "verso": "On multiplie les numérateurs entre eux et les dénominateurs entre eux : $\\dfrac{a}{b} \\times \\dfrac{c}{d} = \\dfrac{a \\times c}{b \\times d}$.",
+      "difficulte": 1,
+      "tags": ["multiplication", "regle"]
+    },
+    {
+      "id": "4E-CH05-021",
+      "lecon": "La multiplication de deux quotients",
+      "type": "formule",
+      "recto": "Comment détermine-t-on le signe du produit de deux quotients ?",
+      "verso": "Par la règle des signes : deux facteurs de même signe donnent un produit positif, deux facteurs de signes contraires un produit négatif. On écrit ce signe avant de calculer.",
+      "difficulte": 2,
+      "tags": ["multiplication", "signes"]
+    },
+    {
+      "id": "4E-CH05-022",
+      "lecon": "La multiplication de deux quotients",
+      "type": "formule",
+      "recto": "A quel moment vaut-il mieux simplifier dans un produit de quotients ?",
+      "verso": "Avant d'effectuer les produits, en simplifiant un numérateur avec un dénominateur, et jamais entre deux numérateurs. Cela évite d'avoir à simplifier un gros résultat à la fin.",
+      "difficulte": 2,
+      "tags": ["multiplication", "simplification"]
+    },
+    {
+      "id": "4E-CH05-023",
+      "lecon": "La multiplication de deux quotients",
+      "type": "formule",
+      "recto": "Comment multiplie-t-on un quotient par un entier $k$ ?",
+      "verso": "On considère $k$ comme le quotient $\\dfrac{k}{1}$, ce qui donne $\\dfrac{a}{b} \\times k = \\dfrac{a \\times k}{b}$ : seul le numérateur est multiplié.",
+      "difficulte": 2,
+      "tags": ["multiplication", "entier"]
+    },
+    {
+      "id": "4E-CH05-024",
+      "lecon": "La multiplication de deux quotients",
+      "type": "formule",
+      "recto": "Pourquoi ne réduit-on pas au même dénominateur avant de multiplier deux quotients ?",
+      "verso": "Parce que le dénominateur commun ne sert qu'à l'addition et à la soustraction, qui réunissent des parts de même taille. Multiplier, c'est prendre une fraction d'une quantité : les parts sont redécoupées, aucun dénominateur commun n'est utile.",
+      "difficulte": 3,
+      "tags": ["multiplication", "piege"]
+    },
+    {
+      "id": "4E-CH05-025",
+      "lecon": "La multiplication de deux quotients",
+      "type": "definition",
+      "recto": "Par quelle opération traduit-on le mot « de » dans « les $\\dfrac{3}{5}$ de $200$ FCFA » ?",
+      "verso": "Par une multiplication : $\\dfrac{3}{5} \\times 200$. On divise d'abord par $5$, ce qui donne $40$, puis on multiplie par $3$, ce qui donne $120$ FCFA.",
+      "difficulte": 2,
+      "tags": ["multiplication", "fraction-d-une-quantite"]
+    },
+    {
+      "id": "4E-CH05-026",
+      "lecon": "La multiplication de deux quotients",
+      "type": "formule",
+      "recto": "Pourquoi la moitié d'un tiers est-elle plus petite que chacun de ces deux nombres ?",
+      "verso": "Parce que multiplier n'agrandit que si le second facteur dépasse $1$. Ici $\\dfrac{1}{2} \\times \\dfrac{1}{3} = \\dfrac{1}{6}$, plus petit que $\\dfrac{1}{2}$ comme que $\\dfrac{1}{3}$.",
+      "difficulte": 3,
+      "tags": ["multiplication", "ordre-de-grandeur"]
+    },
+    {
+      "id": "4E-CH05-027",
+      "lecon": "Inverse, division et puissance d'un quotient",
+      "type": "definition",
+      "recto": "Qu'est-ce que l'inverse du quotient $\\dfrac{a}{b}$ ?",
+      "verso": "C'est le quotient $\\dfrac{b}{a}$, obtenu en échangeant le numérateur et le dénominateur, avec $a \\ne 0$ et $b \\ne 0$. Le produit d'un quotient par son inverse vaut $1$.",
+      "difficulte": 1,
+      "tags": ["inverse", "definition"]
+    },
+    {
+      "id": "4E-CH05-028",
+      "lecon": "Inverse, division et puissance d'un quotient",
+      "type": "definition",
+      "recto": "Quel nombre n'a pas d'inverse ?",
+      "verso": "Le nombre $0$ : aucun nombre multiplié par $0$ ne peut donner $1$, puisque tout produit par zéro est nul.",
+      "difficulte": 2,
+      "tags": ["inverse", "zero"]
+    },
+    {
+      "id": "4E-CH05-029",
+      "lecon": "Inverse, division et puissance d'un quotient",
+      "type": "definition",
+      "recto": "Quelle différence y a-t-il entre l'opposé et l'inverse d'un quotient ?",
+      "verso": "L'opposé change le signe et s'ajoute au quotient pour donner $0$. L'inverse retourne la fraction en échangeant ses deux termes et se multiplie par elle pour donner $1$.",
+      "difficulte": 3,
+      "tags": ["oppose", "inverse", "distinction"]
+    },
+    {
+      "id": "4E-CH05-030",
+      "lecon": "Inverse, division et puissance d'un quotient",
+      "type": "formule",
+      "recto": "Comment divise-t-on par un quotient non nul ?",
+      "verso": "On multiplie par son inverse : $\\dfrac{a}{b} \\div \\dfrac{c}{d} = \\dfrac{a}{b} \\times \\dfrac{d}{c}$.",
+      "difficulte": 1,
+      "tags": ["division", "inverse"]
+    },
+    {
+      "id": "4E-CH05-031",
+      "lecon": "Inverse, division et puissance d'un quotient",
+      "type": "formule",
+      "recto": "Pourquoi $\\dfrac{3}{4} \\div \\dfrac{2}{5}$ ne vaut-il pas $\\dfrac{4}{3} \\times \\dfrac{5}{2}$ ?",
+      "verso": "Parce qu'on n'inverse que le diviseur, c'est-à-dire le quotient qui suit le signe de division. Le premier est recopié tel quel : $\\dfrac{3}{4} \\div \\dfrac{2}{5} = \\dfrac{3}{4} \\times \\dfrac{5}{2}$.",
+      "difficulte": 3,
+      "tags": ["division", "piege"]
+    },
+    {
+      "id": "4E-CH05-032",
+      "lecon": "Inverse, division et puissance d'un quotient",
+      "type": "formule",
+      "recto": "Comment élève-t-on un quotient à une puissance entière $n$ ?",
+      "verso": "On élève séparément le numérateur et le dénominateur à cette puissance : $\\left(\\dfrac{a}{b}\\right)^{n} = \\dfrac{a^{n}}{b^{n}}$. Ainsi $\\left(\\dfrac{2}{3}\\right)^{2} = \\dfrac{4}{9}$.",
+      "difficulte": 2,
+      "tags": ["puissance", "quotient"]
+    },
+    {
+      "id": "4E-CH05-033",
+      "lecon": "Inverse, division et puissance d'un quotient",
+      "type": "formule",
+      "recto": "Quel est le signe d'un quotient négatif élevé à une puissance entière ?",
+      "verso": "Il est positif si l'exposant est pair, négatif si l'exposant est impair.",
+      "difficulte": 2,
+      "tags": ["puissance", "signes"]
+    },
+    {
+      "id": "4E-CH05-034",
+      "lecon": "Inverse, division et puissance d'un quotient",
+      "type": "formule",
+      "recto": "Pourquoi $\\left(-\\dfrac{3}{4}\\right)^{2}$ et $-\\dfrac{3^{2}}{4^{2}}$ ne sont-ils pas égaux ?",
+      "verso": "Les parenthèses font toute la différence. Dans le premier, le quotient négatif tout entier est élevé au carré, ce qui donne $\\dfrac{9}{16}$, positif. Dans le second, le signe reste devant et le résultat vaut $-\\dfrac{9}{16}$.",
+      "difficulte": 3,
+      "tags": ["puissance", "piege"]
+    },
+    {
+      "id": "4E-CH05-035",
+      "lecon": "Inverse, division et puissance d'un quotient",
+      "type": "formule",
+      "recto": "Dans quel ordre effectue-t-on les opérations d'un calcul qui mêle plusieurs signes ?",
+      "verso": "D'abord les parenthèses, en commençant par les plus intérieures, puis les puissances, puis les multiplications et divisions de gauche à droite, enfin les additions et soustractions de gauche à droite. Une barre de fraction joue le rôle d'une parenthèse.",
+      "difficulte": 2,
+      "tags": ["priorites", "calcul"]
+    },
+    {
+      "id": "4E-CH05-036",
+      "lecon": "Inverse, division et puissance d'un quotient",
+      "type": "formule",
+      "recto": "Comment calcule-t-on une fraction à étages ?",
+      "verso": "La grande barre est un signe de division : on calcule d'abord le haut, puis le bas, puis on multiplie le haut par l'inverse du bas. Ainsi $\\dfrac{\\dfrac{5}{6}}{\\dfrac{3}{4}} = \\dfrac{5}{6} \\times \\dfrac{4}{3} = \\dfrac{10}{9}$.",
+      "difficulte": 2,
+      "tags": ["fraction-a-etages", "division"]
+    }
+  ]
+}

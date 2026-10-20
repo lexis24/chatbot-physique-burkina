@@ -1,0 +1,287 @@
+{
+  "niveau": "3ème",
+  "chapitre": "Chapitre 10 : Repère orthonormal : distance et orthogonalité",
+  "source": "maths/3eme/Chapitre_10_Repere_orthonormal",
+  "nombre_cartes": 31,
+  "cartes": [
+    {
+      "id": "3E-CH10-001",
+      "lecon": "Le repère orthonormal",
+      "type": "definition",
+      "recto": "De quoi est formé un repère du plan ?",
+      "verso": "D'un point $O$ appelé origine et de deux axes gradués qui se coupent en $O$. On le note $(O\\,;\\,\\vec{i}\\,,\\,\\vec{j})$, où $\\vec{i}$ dirige l'axe des abscisses et $\\vec{j}$ celui des ordonnées.",
+      "difficulte": 1,
+      "tags": ["repere", "origine", "definition"]
+    },
+    {
+      "id": "3E-CH10-002",
+      "lecon": "Le repère orthonormal",
+      "type": "definition",
+      "recto": "A quelles deux conditions un repère du plan est-il orthonormal ?",
+      "verso": "Ses deux axes doivent être perpendiculaires, et les vecteurs $\\vec{i}$ et $\\vec{j}$ doivent avoir la même longueur, prise comme unité.",
+      "difficulte": 2,
+      "tags": ["repere-orthonormal", "conditions"]
+    },
+    {
+      "id": "3E-CH10-003",
+      "lecon": "Le repère orthonormal",
+      "type": "definition",
+      "recto": "Que désigne le mot « orthonormé » par rapport au mot « orthonormal » ?",
+      "verso": "Exactement la même chose : les deux mots sont synonymes et désignent un repère à axes perpendiculaires et à unité commune.",
+      "difficulte": 1,
+      "tags": ["repere-orthonormal", "vocabulaire"]
+    },
+    {
+      "id": "3E-CH10-004",
+      "lecon": "Le repère orthonormal",
+      "type": "definition",
+      "recto": "Dans le couple $(x\\,;\\,y)$ qui repère un point, comment s'appelle chacun des deux nombres ?",
+      "verso": "$x$ est l'abscisse et $y$ l'ordonnée. L'ordre compte : $(3\\,;\\,-2)$ et $(-2\\,;\\,3)$ ne sont pas le même point.",
+      "difficulte": 1,
+      "tags": ["coordonnees", "abscisse", "ordonnee"]
+    },
+    {
+      "id": "3E-CH10-005",
+      "lecon": "Le repère orthonormal",
+      "type": "formule",
+      "recto": "Comment calcule-t-on les coordonnées du vecteur $\\overrightarrow{AB}$ ?",
+      "verso": "$\\overrightarrow{AB}\\,(x_{B} - x_{A}\\,;\\,y_{B} - y_{A})$ : on soustrait les coordonnées du point de départ à celles du point d'arrivée.",
+      "difficulte": 1,
+      "tags": ["vecteur", "coordonnees"]
+    },
+    {
+      "id": "3E-CH10-006",
+      "lecon": "Le repère orthonormal",
+      "type": "formule",
+      "recto": "Comment obtient-on les coordonnées du milieu $I$ de $[AB]$ ?",
+      "verso": "En prenant la moyenne des abscisses et la moyenne des ordonnées : $I\\left(\\dfrac{x_{A} + x_{B}}{2}\\,;\\,\\dfrac{y_{A} + y_{B}}{2}\\right)$.",
+      "difficulte": 2,
+      "tags": ["milieu", "coordonnees"]
+    },
+    {
+      "id": "3E-CH10-007",
+      "lecon": "Le repère orthonormal",
+      "type": "formule",
+      "recto": "Dans un repère orthonormal, à quoi servent respectivement l'angle droit et l'unité commune ?",
+      "verso": "L'angle droit sert à construire des triangles rectangles entre les points, donc à appliquer le théorème de Pythagore. L'unité commune sert à mesurer les deux côtés de ces triangles avec la même graduation.",
+      "difficulte": 3,
+      "tags": ["repere-orthonormal", "conditions", "pythagore"]
+    },
+    {
+      "id": "3E-CH10-008",
+      "lecon": "Le repère orthonormal",
+      "type": "formule",
+      "recto": "Pourquoi un repère aux axes perpendiculaires n'est-il pas toujours orthonormal ?",
+      "verso": "Parce que ses deux axes peuvent porter des unités différentes, par exemple $1$ cm et $2$ cm. Sans unité commune, le repère n'est pas orthonormal et aucune formule de distance ne s'y applique.",
+      "difficulte": 3,
+      "tags": ["repere-orthonormal", "piege", "unite"]
+    },
+    {
+      "id": "3E-CH10-009",
+      "lecon": "Le repère orthonormal",
+      "type": "formule",
+      "recto": "Quel lien unit les coordonnées de $\\overrightarrow{AB}$ à celles de $\\overrightarrow{BA}$ ?",
+      "verso": "Elles sont opposées, car on soustrait toujours le départ de l'arrivée. Si $\\overrightarrow{AB}\\,(8\\,;\\,4)$, alors $\\overrightarrow{BA}\\,(-8\\,;\\,-4)$.",
+      "difficulte": 2,
+      "tags": ["vecteur", "coordonnees", "piege"]
+    },
+    {
+      "id": "3E-CH10-010",
+      "lecon": "Le repère orthonormal",
+      "type": "formule",
+      "recto": "Que peut-on dire du segment qui joint deux points de même ordonnée ?",
+      "verso": "Il est horizontal. Deux points de même abscisse donnent au contraire un segment vertical. Ces deux cas font apparaître des angles droits sans aucun calcul.",
+      "difficulte": 2,
+      "tags": ["coordonnees", "horizontal", "vertical"]
+    },
+    {
+      "id": "3E-CH10-011",
+      "lecon": "Distance de deux points",
+      "type": "formule",
+      "recto": "Dans un repère orthonormal, quelle formule donne la distance de deux points $A$ et $B$ ?",
+      "verso": "$AB = \\sqrt{(x_{B} - x_{A})^{2} + (y_{B} - y_{A})^{2}}$.",
+      "difficulte": 1,
+      "tags": ["distance", "formule"]
+    },
+    {
+      "id": "3E-CH10-012",
+      "lecon": "Distance de deux points",
+      "type": "formule",
+      "recto": "De quel théorème la formule de la distance est-elle l'écriture en coordonnées ?",
+      "verso": "Du théorème de Pythagore : les deux différences de coordonnées sont les côtés de l'angle droit, et $AB$ est l'hypoténuse.",
+      "difficulte": 2,
+      "tags": ["distance", "pythagore"]
+    },
+    {
+      "id": "3E-CH10-013",
+      "lecon": "Distance de deux points",
+      "type": "formule",
+      "recto": "Quel point auxiliaire construit-on pour retrouver la formule de la distance ?",
+      "verso": "Le point $H$ qui a l'abscisse de $B$ et l'ordonnée de $A$. Le segment $[AH]$ est alors horizontal, $[HB]$ vertical, et le triangle $AHB$ est rectangle en $H$.",
+      "difficulte": 3,
+      "tags": ["distance", "demonstration"]
+    },
+    {
+      "id": "3E-CH10-014",
+      "lecon": "Distance de deux points",
+      "type": "formule",
+      "recto": "Dans quel ordre effectue-t-on les opérations d'un calcul de distance ?",
+      "verso": "D'abord les deux différences de coordonnées, ensuite les deux carrés, puis leur somme, et la racine carrée tout à la fin.",
+      "difficulte": 2,
+      "tags": ["distance", "ordre-des-operations"]
+    },
+    {
+      "id": "3E-CH10-015",
+      "lecon": "Distance de deux points",
+      "type": "formule",
+      "recto": "Pourquoi le sens de la soustraction est-il sans importance dans un calcul de distance ?",
+      "verso": "Parce que les deux différences sont élevées au carré, ce qui efface les signes. Une distance est toujours positive, et $AB = BA$.",
+      "difficulte": 2,
+      "tags": ["distance", "signe"]
+    },
+    {
+      "id": "3E-CH10-016",
+      "lecon": "Distance de deux points",
+      "type": "formule",
+      "recto": "Sous quelle forme écrit-on le résultat d'un calcul de distance ?",
+      "verso": "Sous forme exacte, en simplifiant la racine chaque fois que c'est possible : $\\sqrt{50} = \\sqrt{25 \\times 2} = 5\\sqrt{2}$.",
+      "difficulte": 2,
+      "tags": ["distance", "racine-carree", "valeur-exacte"]
+    },
+    {
+      "id": "3E-CH10-017",
+      "lecon": "Distance de deux points",
+      "type": "formule",
+      "recto": "Dans quels cas un calcul de distance se passe-t-il de racine carrée ?",
+      "verso": "Quand les deux points ont la même ordonnée : la distance se réduit alors à l'écart des abscisses. Et quand ils ont la même abscisse : elle se réduit à l'écart des ordonnées.",
+      "difficulte": 2,
+      "tags": ["distance", "cas-particulier"]
+    },
+    {
+      "id": "3E-CH10-018",
+      "lecon": "Distance de deux points",
+      "type": "formule",
+      "recto": "A quelle condition un point $M$ appartient-il au cercle de centre $\\Omega$ et de rayon $r$ ?",
+      "verso": "Si et seulement si $\\Omega M = r$. Si $\\Omega M$ est plus petit que $r$, le point est à l'intérieur du cercle ; s'il est plus grand, à l'extérieur.",
+      "difficulte": 2,
+      "tags": ["cercle", "distance", "appartenance"]
+    },
+    {
+      "id": "3E-CH10-019",
+      "lecon": "Distance de deux points",
+      "type": "formule",
+      "recto": "Où se trouve le centre du cercle de diamètre $[AB]$ ?",
+      "verso": "Au milieu de $[AB]$, et son rayon vaut la moitié de $AB$. Ce milieu est toujours à la distance $\\dfrac{AB}{2}$ de chacune des deux extrémités.",
+      "difficulte": 2,
+      "tags": ["cercle", "milieu", "rayon"]
+    },
+    {
+      "id": "3E-CH10-020",
+      "lecon": "Distance de deux points",
+      "type": "formule",
+      "recto": "Comment reconnaît-on la nature d'un triangle à partir des coordonnées de ses sommets ?",
+      "verso": "On calcule les trois longueurs, ou plutôt leurs carrés. Deux longueurs égales annoncent un triangle isocèle, trois longueurs égales un triangle équilatéral, et l'égalité du plus grand carré avec la somme des deux autres annonce un triangle rectangle.",
+      "difficulte": 2,
+      "tags": ["triangle", "nature", "distance"]
+    },
+    {
+      "id": "3E-CH10-021",
+      "lecon": "Distance de deux points",
+      "type": "formule",
+      "recto": "Pourquoi $AB^{2} = 25$ ne signifie-t-il pas que $AB = 25$ ?",
+      "verso": "Parce que $AB$ est la racine carrée de $25$, donc $AB = 5$. Il ne faut oublier ni les carrés ni la racine : la distance n'est pas la somme des deux différences de coordonnées.",
+      "difficulte": 3,
+      "tags": ["distance", "piege", "racine-carree"]
+    },
+    {
+      "id": "3E-CH10-022",
+      "lecon": "Orthogonalité de deux vecteurs",
+      "type": "definition",
+      "recto": "Quand deux vecteurs non nuls sont-ils orthogonaux ?",
+      "verso": "Lorsque leurs directions sont perpendiculaires. On écrit alors $\\vec{u} \\perp \\vec{v}$.",
+      "difficulte": 1,
+      "tags": ["orthogonalite", "definition"]
+    },
+    {
+      "id": "3E-CH10-023",
+      "lecon": "Orthogonalité de deux vecteurs",
+      "type": "formule",
+      "recto": "Dans un repère orthonormal, quelle condition sur les coordonnées caractérise l'orthogonalité de deux vecteurs non nuls ?",
+      "verso": "Pour $\\vec{u}\\,(x\\,;\\,y)$ et $\\vec{v}\\,(x'\\,;\\,y')$ non nuls : ils sont orthogonaux si et seulement si $xx' + yy' = 0$.",
+      "difficulte": 2,
+      "tags": ["orthogonalite", "caracterisation-analytique"]
+    },
+    {
+      "id": "3E-CH10-024",
+      "lecon": "Orthogonalité de deux vecteurs",
+      "type": "formule",
+      "recto": "A quoi servent les deux sens de la caractérisation analytique de l'orthogonalité ?",
+      "verso": "Le premier sens démontre un angle droit à partir d'un calcul. Le second permet de trouver une inconnue : sachant les vecteurs perpendiculaires, on écrit que $xx' + yy' = 0$ et on obtient une équation.",
+      "difficulte": 3,
+      "tags": ["orthogonalite", "caracterisation-analytique", "usage"]
+    },
+    {
+      "id": "3E-CH10-025",
+      "lecon": "Orthogonalité de deux vecteurs",
+      "type": "formule",
+      "recto": "Comment démontre-t-on par le calcul que deux droites $(AB)$ et $(CD)$ sont perpendiculaires ?",
+      "verso": "En montrant que $\\overrightarrow{AB}$ et $\\overrightarrow{CD}$ sont orthogonaux, c'est-à-dire que le nombre $xx' + yy'$ formé avec leurs coordonnées est nul.",
+      "difficulte": 2,
+      "tags": ["orthogonalite", "droites-perpendiculaires"]
+    },
+    {
+      "id": "3E-CH10-026",
+      "lecon": "Orthogonalité de deux vecteurs",
+      "type": "formule",
+      "recto": "Comment démontre-t-on qu'un triangle $ABC$ est rectangle en $B$ à l'aide des vecteurs ?",
+      "verso": "Il suffit de vérifier que $\\overrightarrow{BA}$ et $\\overrightarrow{BC}$ sont orthogonaux, c'est-à-dire que le nombre $xx' + yy'$ calculé avec ces deux vecteurs issus de $B$ est nul.",
+      "difficulte": 2,
+      "tags": ["orthogonalite", "triangle-rectangle"]
+    },
+    {
+      "id": "3E-CH10-027",
+      "lecon": "Orthogonalité de deux vecteurs",
+      "type": "formule",
+      "recto": "Quelle différence sépare la condition $xy' - yx' = 0$ de la condition $xx' + yy' = 0$ ?",
+      "verso": "La première est la colinéarité : les deux vecteurs ont la même direction. La seconde est l'orthogonalité : leurs directions sont perpendiculaires. L'une soustrait, l'autre additionne.",
+      "difficulte": 3,
+      "tags": ["orthogonalite", "colinearite", "piege"]
+    },
+    {
+      "id": "3E-CH10-028",
+      "lecon": "Orthogonalité de deux vecteurs",
+      "type": "formule",
+      "recto": "Pourquoi un vecteur de coordonnées $(x\\,;\\,0)$ est-il orthogonal à tout vecteur de coordonnées $(0\\,;\\,y')$ ?",
+      "verso": "Parce que les deux produits $xx'$ et $yy'$ sont nuls, donc leur somme aussi. Ce sont les vecteurs horizontaux et verticaux, qui suivent les axes du repère.",
+      "difficulte": 2,
+      "tags": ["orthogonalite", "horizontal", "vertical"]
+    },
+    {
+      "id": "3E-CH10-029",
+      "lecon": "Orthogonalité de deux vecteurs",
+      "type": "formule",
+      "recto": "Comment fabrique-t-on à coup sûr un vecteur orthogonal à un vecteur donné ?",
+      "verso": "En échangeant ses deux coordonnées et en changeant un signe. Ainsi $(3\\,;\\,7)$ et $(7\\,;\\,-3)$ sont orthogonaux, car $3 \\times 7 + 7 \\times (-3) = 0$.",
+      "difficulte": 2,
+      "tags": ["orthogonalite", "construction", "astuce"]
+    },
+    {
+      "id": "3E-CH10-030",
+      "lecon": "Orthogonalité de deux vecteurs",
+      "type": "formule",
+      "recto": "Pourquoi l'équerre ne suffit-elle pas pour affirmer que deux directions sont perpendiculaires ?",
+      "verso": "Parce qu'un angle de $88$ degrés ressemble beaucoup à un angle droit sur un dessin, et deux élèves peuvent conclure le contraire l'un de l'autre. Seul le calcul de $xx' + yy'$ tranche sans discussion.",
+      "difficulte": 2,
+      "tags": ["orthogonalite", "demonstration", "equerre"]
+    },
+    {
+      "id": "3E-CH10-031",
+      "lecon": "Orthogonalité de deux vecteurs",
+      "type": "formule",
+      "recto": "Quelles précautions faut-il prendre avant de conclure avec la condition $xx' + yy' = 0$ ?",
+      "verso": "Vérifier d'abord que le repère est orthonormal, car ailleurs cette condition n'est pas valable, puis surveiller les signes des coordonnées négatives, qui sont la première cause d'erreur du calcul.",
+      "difficulte": 2,
+      "tags": ["orthogonalite", "precautions", "piege"]
+    }
+  ]
+}

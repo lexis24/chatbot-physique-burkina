@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Fiche de revision - Terminale D - Chapitre 7 : Calcul integral et equations differentielles</title>
+<style>
+/* ===================================================================
+   FICHE DE REVISION, Collection Hakili Lab, Edition 2026
+   Feuille de style autonome, format A4 pret a imprimer.
+   Bleu #005CB9 · Vert #49A145
+   =================================================================== */
+:root{
+  --bleu:#005CB9; --bleu-fonce:#00429A; --bleu-pale:#E8F1FB; --bleu-bord:#B7D2EE;
+  --vert:#49A145; --vert-fonce:#2F7A2C; --vert-pale:#EDF7EC; --vert-bord:#BCE0B9;
+  --gris:#4A4A4A; --gris-clair:#E4E4E4; --rouge:#B3261E;
+}
+@page{
+  size:A4; margin:15mm;
+  @bottom-center{
+    content:"Collection Hakili Lab, Edition 2026  ·  Fiche de revision  ·  " counter(page) "/" counter(pages);
+    font-family:"Segoe UI",Calibri,Arial,sans-serif; font-size:6.6pt; color:#8A8A8A;
+  }
+}
+*{box-sizing:border-box;}
+body{
+  margin:0; font-family:"Segoe UI",Calibri,Arial,sans-serif;
+  font-size:8.4pt; line-height:1.26; color:#1B1B1B;
+}
+p{margin:0 0 3pt;}
+ul{margin:0 0 3pt; padding-left:11pt;}
+li{margin:0 0 1.2pt;}
+b,strong{color:var(--bleu-fonce);}
+
+/* ------------------------------ ENTETE ---------------------------- */
+.entete{
+  display:flex; align-items:stretch; border:1.6pt solid var(--bleu);
+  border-radius:2.5pt; overflow:hidden; margin-bottom:6pt;
+}
+.entete .num{
+  background:var(--bleu); color:#fff; font-size:20pt; font-weight:700;
+  padding:0 8pt; display:flex; align-items:center; justify-content:center; min-width:34pt;
+}
+.entete .txt{padding:3.5pt 8pt; flex:1;}
+.entete .niveau{
+  font-size:7pt; font-weight:700; letter-spacing:.9pt; color:var(--vert-fonce);
+}
+.entete h1{margin:0; font-size:13.5pt; line-height:1.12; color:var(--bleu-fonce); font-weight:700;}
+.entete .sous{font-size:7pt; color:var(--gris); margin-top:1pt;}
+
+/* --------------------------- BANDEAUX ----------------------------- */
+.bandeau{
+  color:#fff; font-weight:700; font-size:9pt; letter-spacing:1pt;
+  padding:2.4pt 7pt; border-radius:2pt; margin:3pt 0 4pt; break-after:avoid; page-break-after:avoid;
+}
+.bandeau.bleu{background:var(--bleu);}
+.bandeau.vert{background:var(--vert);}
+
+/* --------------------------- COLONNES ----------------------------- */
+.cols{column-count:2; column-gap:7mm; column-fill:balance;}
+
+.cols.bal{column-fill:balance;}
+.bloc{margin-bottom:5pt;}
+.keep{break-inside:avoid; page-break-inside:avoid;}
+
+/* --------------------------- LECONS ------------------------------- */
+h2.lecon{
+  margin:0 0 3pt; font-size:8.6pt; font-weight:700; color:#fff; background:var(--bleu-fonce);
+  padding:1.8pt 5pt; border-radius:1.5pt; break-after:avoid; page-break-after:avoid;
+}
+h3.rub{
+  margin:3.5pt 0 1.5pt; font-size:8.2pt; font-weight:700; color:var(--vert-fonce);
+  border-bottom:.7pt solid var(--vert-bord); padding-bottom:.8pt;
+  break-after:avoid; page-break-after:avoid;
+}
+
+/* --------------------------- ENCADRES ----------------------------- */
+.form{
+  background:var(--bleu-pale); border:.8pt solid var(--bleu-bord); border-left:2.6pt solid var(--bleu);
+  border-radius:2pt; padding:2.4pt 5pt; margin:2.2pt 0 3.4pt;
+  break-inside:avoid; page-break-inside:avoid;
+}
+.form .t{
+  display:block; font-size:6.8pt; font-weight:700; letter-spacing:.6pt;
+  color:var(--bleu); margin-bottom:1.5pt;
+}
+.form .c{text-align:center; font-size:9.1pt; margin:1.6pt 0;}
+.note{background:var(--vert-pale); border-left:2.4pt solid var(--vert); padding:2.4pt 5pt; border-radius:1.5pt; margin:2.5pt 0 4pt; break-inside:avoid;}
+
+/* --------------------------- TABLEAUX ----------------------------- */
+table{width:100%; border-collapse:collapse; font-size:7.6pt; margin:2pt 0 4pt; break-inside:avoid;}
+th{background:var(--bleu); color:#fff; font-weight:700; text-align:left; padding:1.8pt 4pt; font-size:7.2pt;}
+td{border:.6pt solid var(--gris-clair); padding:1.8pt 4pt; vertical-align:top;}
+tr{break-inside:avoid;}
+table.var td{text-align:center; font-size:8pt;}
+table.var td.lab{text-align:left; font-weight:700; color:var(--bleu-fonce); background:var(--bleu-pale);}
+
+/* ----------------------------- PIEGES ----------------------------- */
+table.pieges th:first-child{width:44%;}
+table.pieges td:first-child{color:var(--rouge); background:#FDF1F0;}
+.x{font-weight:700;}
+.v{color:var(--vert-fonce); font-weight:700;}
+
+/* ---------------------------- RECAP ------------------------------- */
+ol.recap{margin:0; padding-left:0; list-style:none; counter-reset:r;}
+ol.recap li{
+  counter-increment:r; position:relative; padding-left:13pt; margin-bottom:1.8pt;
+  break-inside:avoid;
+}
+ol.recap li::before{
+  content:counter(r); position:absolute; left:0; top:.3pt;
+  width:10pt; height:10pt; border-radius:50%; background:var(--vert); color:#fff;
+  font-size:6.6pt; font-weight:700; text-align:center; line-height:10pt;
+}
+
+/* --------------------------- MATHS -------------------------------- */
+.m{font-family:Cambria,Georgia,"Times New Roman",serif;}
+i,var{font-family:Cambria,Georgia,"Times New Roman",serif; font-style:italic;}
+.op{font-family:Cambria,Georgia,"Times New Roman",serif; font-style:normal;}
+.f{display:inline-block; vertical-align:middle; text-align:center;
+   margin:0 .12em; line-height:1.06; font-family:Cambria,Georgia,"Times New Roman",serif;}
+.f>span{display:block; padding:0 .2em;}
+.f>span:first-child{border-bottom:.6pt solid currentColor; padding-bottom:.08em;}
+.f>span:last-child{padding-top:.04em;}
+.rad{border-top:.6pt solid currentColor; padding-top:.12em;}
+/* line-height:0 evite que l'exposant n'ecarte les lignes ; position:relative le
+   repositionne sans qu'il heurte la barre de fraction ni le trait du radical. */
+sup,sub{font-size:.68em; line-height:0; position:relative; vertical-align:baseline;}
+sup{top:-.42em;}
+sub{bottom:-.22em;}
+.pt{white-space:nowrap;}
+/* Les fleches n'ont qu'un glyphe atrophie dans la fonte serif : on les force
+   en sans-serif, ou elles sont franches meme a 8 pt. */
+.ar{font-family:"Segoe UI",Calibri,Arial,"DejaVu Sans",sans-serif; font-style:normal;}
+
+/* ------------------- PIEGES : blocs erreur / correction ------------- */
+.pg{font-size:8.1pt; border-left:2.4pt solid var(--rouge); background:#FDF1F0; border-radius:1.5pt;
+    padding:2pt 5pt; margin:0 0 2.8pt; break-inside:avoid; page-break-inside:avoid;}
+.pg .err{color:var(--rouge); font-weight:600;}
+.pg .cor{color:#1B1B1B; margin-top:.8pt;}
+.pg .cor b{color:var(--bleu-fonce);}
+.v{color:var(--vert-fonce); font-weight:700;}
+
+</style>
+</head>
+<body>
+<header class="entete">
+  <div class="num">7</div>
+  <div class="txt">
+    <div class="niveau">TERMINALE D &middot; MATHEMATIQUES</div>
+    <h1>Calcul intégral et équations différentielles</h1>
+    <div class="sous">Leçon 1 : intégrale d'une fonction continue &middot; Leçon 2 : propriétés de l'intégrale et valeur moyenne &middot; Leçon 3 : techniques de calcul et intégration par parties &middot; Leçon 4 : équations différentielles linéaires &middot; Leçon 5 : encadrements, valeurs approchées et volumes</div>
+  </div>
+</header>
+
+<div class="bandeau bleu" style="margin-top:0">L'ESSENTIEL</div>
+<div class="cols">
+
+<!-- ================= LECON 1 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 1&nbsp;: Intégrale d'une fonction continue</h2>
+<p>Soit <i>f</i> <b>continue</b> sur un intervalle contenant <i>a</i> et <i>b</i>, et <i>F</i> <b>une</b> primitive de <i>f</i> sur cet intervalle.</p></div>
+<div class="form">
+  <span class="t">DEFINITION DE L'INTEGRALE</span>
+  <div class="c m"><span class="pt">&#8747;<sub><i>a</i></sub><sup><i>b</i></sup>&#8239;<i>f</i>(<i>x</i>)&#8239;d<i>x</i></span>&#8239;=&#8239;<i>F</i>(<i>b</i>)&#8239;&#8722;&#8239;<i>F</i>(<i>a</i>)&#8239;=&#8239;<span class="pt">[<i>F</i>(<i>x</i>)]<sub><i>a</i></sub><sup><i>b</i></sup></span></div>
+</div>
+<p>Le nombre obtenu <b>ne dépend pas</b> de la primitive choisie ; <i>a</i> est la <b>borne inférieure</b>, <i>b</i> la <b>borne supérieure</b>, et <i>a</i>&#8239;&lt;&#8239;<i>b</i> n'est pas exigé. La variable est <b>muette</b> : <span class="pt">&#8747;<sub><i>a</i></sub><sup><i>b</i></sup>&#8239;<i>f</i>(<i>x</i>)&#8239;d<i>x</i></span>&#8239;=&#8239;<span class="pt">&#8747;<sub><i>a</i></sub><sup><i>b</i></sup>&#8239;<i>f</i>(<i>t</i>)&#8239;d<i>t</i></span> ; <span class="pt">d<i>x</i></span> dit par rapport à quelle variable on intègre. La continuité doit valoir sur <b>tout</b> l'intervalle qui joint <i>a</i> à <i>b</i> : <span class="pt"><i>x</i>&#8239;<span class="ar">&#8614;</span>&#8239;<span class="f"><span>1</span><span><i>x</i></span></span></span> ne s'intègre pas de part et d'autre de 0.</p>
+</div>
+
+<div class="bloc">
+<div class="form">
+  <span class="t">CAS PARTICULIERS ET LIEN AVEC LES PRIMITIVES</span>
+  <div class="c m"><span class="pt">&#8747;<sub><i>a</i></sub><sup><i>a</i></sup>&#8239;<i>f</i>(<i>x</i>)&#8239;d<i>x</i></span>&#8239;=&#8239;0 &nbsp;&nbsp;&nbsp; <span class="pt">&#8747;<sub><i>b</i></sub><sup><i>a</i></sup>&#8239;<i>f</i>(<i>x</i>)&#8239;d<i>x</i></span>&#8239;=&#8239;&#8722;<span class="pt">&#8747;<sub><i>a</i></sub><sup><i>b</i></sup>&#8239;<i>f</i>(<i>x</i>)&#8239;d<i>x</i></span></div>
+</div>
+<div class="note"><b>Intégrale et primitive.</b> La primitive de <i>f</i> qui <b>s'annule en <i>a</i></b> est la fonction <span class="pt"><i>x</i>&#8239;<span class="ar">&#8614;</span>&#8239;&#8747;<sub><i>a</i></sub><sup><i>x</i></sup>&#8239;<i>f</i>(<i>t</i>)&#8239;d<i>t</i></span> : ici <i>t</i> est muette, <i>x</i> est la vraie variable.</div>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Interprétation par l'aire</h3>
+<p>Si <i>f</i> est <b>positive</b> et continue sur <span class="pt">[<i>a</i>&#8239;;&#8239;<i>b</i>]</span> (avec <i>a</i>&#8239;&lt;&#8239;<i>b</i>), alors <span class="pt">&#8747;<sub><i>a</i></sub><sup><i>b</i></sup>&#8239;<i>f</i>(<i>x</i>)&#8239;d<i>x</i></span> est l'<b>aire</b>, en unités d'aire, de la région comprise entre la courbe de <i>f</i>, l'axe des abscisses et les droites <i>x</i>&#8239;=&#8239;<i>a</i> et <i>x</i>&#8239;=&#8239;<i>b</i>.</p>
+<p><b>Unité d'aire (U.A.)</b> : dans un repère orthogonal, aire du rectangle construit sur les unités des deux axes. Si l'unité vaut 1&#8239;cm sur (O<i>x</i>) et 2&#8239;cm sur (O<i>y</i>), alors 1&#8239;U.A.&#8239;=&#8239;2&#8239;cm<sup>2</sup> : on convertit dans l'unité demandée.</p>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Fonction négative ou de signe variable</h3>
+<ul>
+<li><i>f</i> <b>négative</b> sur <span class="pt">[<i>a</i>&#8239;;&#8239;<i>b</i>]</span> (<i>a</i>&#8239;&lt;&#8239;<i>b</i>) : l'intégrale est <b>négative</b> et l'aire vaut <span class="pt">&#119964;&#8239;=&#8239;&#8747;<sub><i>a</i></sub><sup><i>b</i></sup>(&#8722;<i>f</i>(<i>x</i>))&#8239;d<i>x</i></span>&#8239;=&#8239;&#8722;<span class="pt">&#8747;<sub><i>a</i></sub><sup><i>b</i></sup>&#8239;<i>f</i>(<i>x</i>)&#8239;d<i>x</i></span>.</li>
+<li><i>f</i> <b>change de signe</b> : l'intégrale fait le <b>bilan</b>, le dessus de l'axe comptant positivement, le dessous négativement. Pour l'<b>aire géométrique</b>, on <b>découpe</b> aux points où <i>f</i> s'annule et on <b>additionne les valeurs absolues</b>.</li>
+</ul>
+</div>
+
+<!-- ================= LECON 2 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 2&nbsp;: Propriétés de l'intégrale et valeur moyenne</h2>
+<div class="form">
+  <span class="t">CHASLES&nbsp;: <i>f</i> CONTINUE SUR <i>I</i>, <i>a</i>, <i>b</i>, <i>c</i> DANS <i>I</i></span>
+  <div class="c m"><span class="pt">&#8747;<sub><i>a</i></sub><sup><i>b</i></sup>&#8239;<i>f</i></span>&#8239;+&#8239;<span class="pt">&#8747;<sub><i>b</i></sub><sup><i>c</i></sup>&#8239;<i>f</i></span>&#8239;=&#8239;<span class="pt">&#8747;<sub><i>a</i></sub><sup><i>c</i></sup>&#8239;<i>f</i></span></div>
+</div></div>
+<p>Vraie <b>quel que soit l'ordre</b> des trois nombres. Elle sert à <b>découper</b> (changement d'expression ou de signe) et à <b>recoller</b> des intégrales partielles données.</p>
+<div class="form">
+  <span class="t">LINEARITE&nbsp;: <i>f</i>, <i>g</i> CONTINUES, &#945; ET &#946; REELS</span>
+  <div class="c m"><span class="pt">&#8747;<sub><i>a</i></sub><sup><i>b</i></sup>(&#945;<i>f</i>(<i>x</i>)&#8239;+&#8239;&#946;<i>g</i>(<i>x</i>))&#8239;d<i>x</i></span>&#8239;=&#8239;&#945;<span class="pt">&#8747;<sub><i>a</i></sub><sup><i>b</i></sup>&#8239;<i>f</i>(<i>x</i>)&#8239;d<i>x</i></span>&#8239;+&#8239;&#946;<span class="pt">&#8747;<sub><i>a</i></sub><sup><i>b</i></sup>&#8239;<i>g</i>(<i>x</i>)&#8239;d<i>x</i></span></div>
+</div>
+<p>On <b>sépare les sommes</b> et on <b>sort les constantes</b> : jamais un produit ni un quotient de fonctions.</p>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Positivité et comparaison&nbsp;: <span class="m"><i>a</i>&#8239;&lt;&#8239;<i>b</i></span></h3>
+<ul>
+<li><i>f</i>&#8239;&#8805;&#8239;0 sur <span class="pt">[<i>a</i>&#8239;;&#8239;<i>b</i>]</span> <span class="ar">&#8658;</span> <span class="pt">&#8747;<sub><i>a</i></sub><sup><i>b</i></sup>&#8239;<i>f</i>(<i>x</i>)&#8239;d<i>x</i>&#8239;&#8805;&#8239;0</span>. La <b>réciproque est fausse</b>.</li>
+<li><i>f</i>&#8239;&#8804;&#8239;<i>g</i> sur <span class="pt">[<i>a</i>&#8239;;&#8239;<i>b</i>]</span> <span class="ar">&#8658;</span> <span class="pt">&#8747;<sub><i>a</i></sub><sup><i>b</i></sup>&#8239;<i>f</i>&#8239;&#8804;&#8239;&#8747;<sub><i>a</i></sub><sup><i>b</i></sup>&#8239;<i>g</i></span> : l'intégrale <b>conserve l'ordre</b>.</li>
+<li>Valeur absolue : <span class="pt">|&#8747;<sub><i>a</i></sub><sup><i>b</i></sup>&#8239;<i>f</i>(<i>x</i>)&#8239;d<i>x</i>|&#8239;&#8804;&#8239;&#8747;<sub><i>a</i></sub><sup><i>b</i></sup>|<i>f</i>(<i>x</i>)|&#8239;d<i>x</i></span>.</li>
+</ul>
+<div class="form">
+  <span class="t">INEGALITE DE LA MOYENNE&nbsp;: SI <i>m</i>&#8239;&#8804;&#8239;<i>f</i>&#8239;&#8804;&#8239;<i>M</i> SUR [<i>a</i>&#8239;;&#8239;<i>b</i>]</span>
+  <div class="c m"><i>m</i>(<i>b</i>&#8239;&#8722;&#8239;<i>a</i>)&#8239;&#8804;&#8239;<span class="pt">&#8747;<sub><i>a</i></sub><sup><i>b</i></sup>&#8239;<i>f</i>(<i>x</i>)&#8239;d<i>x</i></span>&#8239;&#8804;&#8239;<i>M</i>(<i>b</i>&#8239;&#8722;&#8239;<i>a</i>)</div>
+  <div class="c m">si |<i>f</i>|&#8239;&#8804;&#8239;<i>M</i> : &nbsp;<span class="pt">|&#8747;<sub><i>a</i></sub><sup><i>b</i></sup>&#8239;<i>f</i>(<i>x</i>)&#8239;d<i>x</i>|&#8239;&#8804;&#8239;<i>M</i>(<i>b</i>&#8239;&#8722;&#8239;<i>a</i>)</span></div>
+</div>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Parité, imparité, périodicité</h3>
+<div class="form">
+  <span class="t">SYMETRIES&nbsp;: <i>f</i> CONTINUE</span>
+  <div class="c m"><i>f</i> paire, <i>a</i>&#8239;&gt;&#8239;0 : <span class="pt">&#8747;<sub>&#8722;<i>a</i></sub><sup><i>a</i></sup>&#8239;<i>f</i>(<i>t</i>)&#8239;d<i>t</i></span>&#8239;=&#8239;2<span class="pt">&#8747;<sub>0</sub><sup><i>a</i></sup>&#8239;<i>f</i>(<i>t</i>)&#8239;d<i>t</i></span></div>
+  <div class="c m"><i>f</i> impaire, <i>a</i>&#8239;&gt;&#8239;0 : <span class="pt">&#8747;<sub>&#8722;<i>a</i></sub><sup><i>a</i></sup>&#8239;<i>f</i>(<i>t</i>)&#8239;d<i>t</i></span>&#8239;=&#8239;0</div>
+  <div class="c m"><i>f</i> de période <i>T</i>, pour <b>tout</b> réel <i>a</i> : <span class="pt">&#8747;<sub><i>a</i></sub><sup><i>a</i>+<i>T</i></sup>&#8239;<i>f</i>(<i>t</i>)&#8239;d<i>t</i></span>&#8239;=&#8239;<span class="pt">&#8747;<sub>0</sub><sup><i>T</i></sup>&#8239;<i>f</i>(<i>t</i>)&#8239;d<i>t</i></span></div>
+</div>
+<p>Ces trois égalités reposent sur une <b>symétrie</b> : l'intervalle doit être <b>centré en 0</b>, ou de <b>longueur exactement <i>T</i></b>.</p>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Valeur moyenne</h3>
+<div class="form">
+  <span class="t">VALEUR MOYENNE DE <i>f</i> SUR [<i>a</i>&#8239;;&#8239;<i>b</i>], AVEC <i>a</i>&#8239;&lt;&#8239;<i>b</i></span>
+  <div class="c m">&#956;&#8239;=&#8239;<span class="f"><span>1</span><span><i>b</i>&#8239;&#8722;&#8239;<i>a</i></span></span><span class="pt">&#8747;<sub><i>a</i></sub><sup><i>b</i></sup>&#8239;<i>f</i>(<i>x</i>)&#8239;d<i>x</i></span></div>
+</div>
+<p>Hauteur du <b>rectangle</b> de base <span class="pt">[<i>a</i>&#8239;;&#8239;<i>b</i>]</span> de même aire que la région sous la courbe. Si <span class="pt"><i>m</i>&#8239;&#8804;&#8239;<i>f</i>&#8239;&#8804;&#8239;<i>M</i></span>, alors <span class="pt"><i>m</i>&#8239;&#8804;&#8239;&#956;&#8239;&#8804;&#8239;<i>M</i></span> : contrôle du résultat.</p>
+</div>
+
+<!-- ================= LECON 3 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 3&nbsp;: Techniques de calcul et intégration par parties</h2>
+<div class="form">
+  <span class="t">FORMES COMPOSEES&nbsp;: <i>u</i> DERIVABLE, A DERIVEE CONTINUE</span>
+  <div class="c m"><i>u</i>&#8242;<span class="op">e</span><sup><i>u</i></sup>&#8239;<span class="ar">&#8594;</span>&#8239;<span class="op">e</span><sup><i>u</i></sup> &nbsp;&nbsp;&nbsp; <span class="f"><span><i>u</i>&#8242;</span><span><i>u</i></span></span>&#8239;<span class="ar">&#8594;</span>&#8239;<span class="op">ln</span>&#8239;|<i>u</i>| &nbsp;(<i>u</i>&#8239;&#8800;&#8239;0)</div>
+  <div class="c m"><i>u</i>&#8242;<i>u</i><sup>&#945;</sup>&#8239;<span class="ar">&#8594;</span>&#8239;<span class="f"><span><i>u</i><sup>&#945;+1</sup></span><span>&#945;&#8239;+&#8239;1</span></span> &nbsp;(&#945;&#8239;&#8800;&#8239;&#8722;1)</div>
+  <div class="c m"><i>u</i>&#8242;<span class="op">cos</span>&#8239;<i>u</i>&#8239;<span class="ar">&#8594;</span>&#8239;<span class="op">sin</span>&#8239;<i>u</i> &nbsp;&nbsp;&nbsp; <i>u</i>&#8242;<span class="op">sin</span>&#8239;<i>u</i>&#8239;<span class="ar">&#8594;</span>&#8239;&#8722;<span class="op">cos</span>&#8239;<i>u</i></div>
+</div></div>
+<p>Le facteur <i>u</i>&#8242; est ce qu'il faut <b>repérer en premier</b>. <b>Composition affine</b> : si <i>F</i> est une primitive de <i>f</i>, alors une primitive de <span class="pt"><i>x</i>&#8239;<span class="ar">&#8614;</span>&#8239;<i>f</i>(<i>ax</i>&#8239;+&#8239;<i>b</i>)</span> est <span class="pt"><i>x</i>&#8239;<span class="ar">&#8614;</span>&#8239;<span class="f"><span>1</span><span><i>a</i></span></span><i>F</i>(<i>ax</i>&#8239;+&#8239;<i>b</i>)</span>, avec <i>a</i>&#8239;&#8800;&#8239;0.</p>
+<div class="note"><b>Deux formes voisines.</b> <span class="pt"><span class="f"><span><i>u</i>&#8242;</span><span><i>u</i></span></span></span> est le cas <b>exclu</b> de <span class="pt"><i>u</i>&#8242;<i>u</i><sup>&#945;</sup></span>, celui où &#945;&#8239;=&#8239;&#8722;1. L'exposant &#945; peut être <b>négatif</b> ou <b>fractionnaire</b> : <span class="pt"><span class="f"><span>1</span><span>&#8730;<span class="rad"><i>x</i></span></span></span>&#8239;=&#8239;<i>x</i><sup>&#8722;1/2</sup>&#8239;<span class="ar">&#8594;</span>&#8239;2&#8730;<span class="rad"><i>x</i></span></span> et <span class="pt"><span class="f"><span>1</span><span><i>x</i><sup>2</sup></span></span>&#8239;=&#8239;<i>x</i><sup>&#8722;2</sup>&#8239;<span class="ar">&#8594;</span>&#8239;&#8722;<span class="f"><span>1</span><span><i>x</i></span></span></span>.</div>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Intégration par parties (IPP)</h3>
+<div class="form">
+  <span class="t">IPP&nbsp;: <i>u</i> ET <i>v</i> DERIVABLES SUR [<i>a</i>&#8239;;&#8239;<i>b</i>], A DERIVEES CONTINUES</span>
+  <div class="c m"><span class="pt">&#8747;<sub><i>a</i></sub><sup><i>b</i></sup>&#8239;<i>u</i>(<i>x</i>)<i>v</i>&#8242;(<i>x</i>)&#8239;d<i>x</i></span>&#8239;=&#8239;<span class="pt">[<i>u</i>(<i>x</i>)<i>v</i>(<i>x</i>)]<sub><i>a</i></sub><sup><i>b</i></sup></span>&#8239;&#8722;&#8239;<span class="pt">&#8747;<sub><i>a</i></sub><sup><i>b</i></sup>&#8239;<i>u</i>&#8242;(<i>x</i>)<i>v</i>(<i>x</i>)&#8239;d<i>x</i></span></div>
+</div>
+<p>Pour un <b>produit</b> qu'aucune forme composée ne permet de lire directement : <span class="pt"><i>x</i>&#8239;<span class="op">e</span><sup><i>x</i></sup></span>, <span class="pt"><i>x</i>&#8239;<span class="op">cos</span>&#8239;<i>x</i></span>, <span class="pt"><i>x</i>&#8239;<span class="op">ln</span>&#8239;<i>x</i></span>, ou <span class="op">ln</span>&#8239;<i>x</i> seul, lu <span class="pt">1&#8239;&#215;&#8239;<span class="op">ln</span>&#8239;<i>x</i></span>. Prendre pour <i>u</i> le facteur dont la <b>dérivée est plus simple</b> (<i>x</i>, <i>x</i><sup>2</sup>, <span class="op">ln</span>&#8239;<i>x</i>), pour <i>v</i>&#8242; celui que l'on sait intégrer ; si la nouvelle intégrale reste du même type, <b>recommencer</b>.</p>
+</div>
+
+<!-- ================= LECON 4 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 4&nbsp;: Equations différentielles linéaires</h2>
+<p>Une <b>équation différentielle</b> est une équation dont l'inconnue est une <b>fonction</b> <i>y</i> et où figurent une ou plusieurs de ses dérivées ; son <b>ordre</b> est celui de la dérivée la plus élevée. La <b>résoudre</b> (ou l'<b>intégrer</b>) sur un intervalle, c'est déterminer <b>toutes</b> les fonctions qui la vérifient sur cet intervalle. Elle est <b>linéaire à coefficients constants et sans second membre</b> quand elle s'écrit <span class="pt"><i>y</i>&#8242;&#8239;+&#8239;<i>ay</i>&#8239;=&#8239;0</span> ou <span class="pt"><i>y</i>&#8243;&#8239;+&#8239;&#969;<sup>2</sup><i>y</i>&#8239;=&#8239;0</span>. Les lettres changent selon la discipline (<i>t</i> pour le temps, <i>q</i>, <i>N</i>, <i>V</i>, <i>C</i> pour la fonction) : l'équation, elle, ne change pas.</p></div>
+</div>
+
+<div class="bloc">
+<div class="form">
+  <span class="t">PREMIER ORDRE&nbsp;: SOLUTIONS SUR &#8477; DE <i>y</i>&#8242;&#8239;+&#8239;<i>ay</i>&#8239;=&#8239;0</span>
+  <div class="c m"><i>y</i>(<i>x</i>)&#8239;=&#8239;<i>C</i>&#8239;<span class="op">e</span><sup>&#8722;<i>ax</i></sup>, &nbsp;<i>C</i>&#8239;&#8712;&#8239;&#8477;</div>
+</div>
+<p><b>Existence et unicité.</b> Pour tout couple <span class="pt">(<i>x</i><sub>0</sub>&#8239;;&#8239;<i>y</i><sub>0</sub>)</span>, une <b>unique</b> solution vérifie la <b>condition initiale</b> <span class="pt"><i>y</i>(<i>x</i><sub>0</sub>)&#8239;=&#8239;<i>y</i><sub>0</sub></span> : remplacer <i>x</i> par <i>x</i><sub>0</sub> dans la forme générale, puis résoudre en <i>C</i>.</p>
+<p><b>Formes à reconnaître.</b> <span class="pt"><i>y</i>&#8242;&#8239;=&#8239;<i>ky</i></span> s'écrit <span class="pt"><i>y</i>&#8242;&#8239;&#8722;&#8239;<i>ky</i>&#8239;=&#8239;0</span>, donc <i>a</i>&#8239;=&#8239;&#8722;<i>k</i> et <span class="pt"><i>y</i>&#8239;=&#8239;<i>C</i><span class="op">e</span><sup><i>kx</i></sup></span>. Toute équation se <b>divise d'abord par le coefficient de <i>y</i>&#8242;</b>. Si <i>a</i>&#8239;&gt;&#8239;0 la solution <b>décroît</b> vers 0 (radioactivité, refroidissement) ; si <i>a</i>&#8239;&lt;&#8239;0 elle <b>croît</b> ; <i>C</i>&#8239;=&#8239;0 donne la fonction nulle, toujours solution.</p>
+</div>
+
+<div class="bloc">
+<div class="form">
+  <span class="t">SECOND ORDRE&nbsp;: SOLUTIONS SUR &#8477; DE <i>y</i>&#8243;&#8239;+&#8239;&#969;<sup>2</sup><i>y</i>&#8239;=&#8239;0, AVEC &#969;&#8239;&gt;&#8239;0</span>
+  <div class="c m"><i>y</i>(<i>x</i>)&#8239;=&#8239;<i>A</i>&#8239;<span class="op">cos</span>(&#969;<i>x</i>)&#8239;+&#8239;<i>B</i>&#8239;<span class="op">sin</span>(&#969;<i>x</i>), &nbsp;<i>A</i>,&#8239;<i>B</i>&#8239;&#8712;&#8239;&#8477;</div>
+  <div class="c m"><i>y</i>&#8242;(<i>x</i>)&#8239;=&#8239;&#8722;<i>A</i>&#969;&#8239;<span class="op">sin</span>(&#969;<i>x</i>)&#8239;+&#8239;<i>B</i>&#969;&#8239;<span class="op">cos</span>(&#969;<i>x</i>)</div>
+  <div class="c m"><i>y</i>(0)&#8239;=&#8239;<i>A</i> &nbsp;&nbsp;&nbsp; <i>y</i>&#8242;(0)&#8239;=&#8239;<i>B</i>&#969;</div>
+</div>
+<p>Forme <b>admise</b>. Deux constantes exigent <b>deux conditions</b>, en général <span class="pt"><i>y</i>(<i>x</i><sub>0</sub>)</span> et <span class="pt"><i>y</i>&#8242;(<i>x</i><sub>0</sub>)</span>. &#969; est la <b>racine carrée positive</b> du coefficient de <i>y</i> : dans <span class="pt"><i>y</i>&#8243;&#8239;+&#8239;9<i>y</i>&#8239;=&#8239;0</span>, &#969;&#8239;=&#8239;3. Solutions <b>périodiques</b> de période <span class="f"><span>2&#960;</span><span>&#969;</span></span> : les oscillations.</p>
+</div>
+
+<!-- ================= LECON 5 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 5&nbsp;: Encadrements, valeurs approchées et volumes</h2>
+<h3 class="rub">Encadrer une intégrale</h3>
+<p>On applique l'inégalité de la moyenne : <span class="pt"><i>m</i>(<i>b</i>&#8239;&#8722;&#8239;<i>a</i>)&#8239;&#8804;&#8239;&#8747;<sub><i>a</i></sub><sup><i>b</i></sup>&#8239;<i>f</i>(<i>x</i>)&#8239;d<i>x</i>&#8239;&#8804;&#8239;<i>M</i>(<i>b</i>&#8239;&#8722;&#8239;<i>a</i>)</span>. On obtient <i>m</i> et <i>M</i> par le <b>sens de variation</b> : si <i>f</i> croît, <span class="pt"><i>m</i>&#8239;=&#8239;<i>f</i>(<i>a</i>)</span> et <span class="pt"><i>M</i>&#8239;=&#8239;<i>f</i>(<i>b</i>)</span> ; si elle décroît, c'est l'inverse. L'<b>amplitude</b> <span class="pt">(<i>M</i>&#8239;&#8722;&#8239;<i>m</i>)(<i>b</i>&#8239;&#8722;&#8239;<i>a</i>)</span> diminue quand l'intervalle raccourcit : découpé en <i>n</i> tranches, l'encadrement voit son amplitude <b>divisée par <i>n</i></b> si <i>f</i> est <b>monotone</b>.</p></div>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Valeurs approchées par découpage</h3>
+<p>On partage <span class="pt">[<i>a</i>&#8239;;&#8239;<i>b</i>]</span> en <i>n</i> tranches de même longueur <span class="pt"><i>h</i>&#8239;=&#8239;<span class="f"><span><i>b</i>&#8239;&#8722;&#8239;<i>a</i></span><span><i>n</i></span></span></span>, de bornes <span class="pt"><i>x</i><sub>0</sub>&#8239;=&#8239;<i>a</i></span>, <span class="pt"><i>x</i><sub>1</sub>&#8239;=&#8239;<i>a</i>&#8239;+&#8239;<i>h</i></span>, &#8230;, <span class="pt"><i>x</i><sub><i>n</i></sub>&#8239;=&#8239;<i>b</i></span>.</p>
+<table>
+<tr><th>Méthode</th><th>Aire d'une tranche (largeur <i>h</i>)</th></tr>
+<tr><td>Rectangles (à gauche / à droite)</td><td class="m"><i>h</i>&#8239;&#215;&#8239;<i>f</i>(<i>x</i><sub><i>k</i></sub>) &nbsp;ou&nbsp; <i>h</i>&#8239;&#215;&#8239;<i>f</i>(<i>x</i><sub><i>k</i>+1</sub>)</td></tr>
+<tr><td>Point milieu</td><td class="m"><i>h</i>&#8239;&#215;&#8239;<i>f</i>(<span class="f"><span><i>x</i><sub><i>k</i></sub>&#8239;+&#8239;<i>x</i><sub><i>k</i>+1</sub></span><span>2</span></span>)</td></tr>
+<tr><td>Trapèzes</td><td class="m"><span class="f"><span><i>f</i>(<i>x</i><sub><i>k</i></sub>)&#8239;+&#8239;<i>f</i>(<i>x</i><sub><i>k</i>+1</sub>)</span><span>2</span></span>&#8239;&#215;&#8239;<i>h</i></td></tr>
+</table>
+<p>Si <i>f</i> est <b>monotone</b>, les deux sommes de rectangles <b>encadrent</b> l'intégrale et la somme des trapèzes en est la <b>moyenne</b>. Les trois méthodes sont de précision croissante et s'améliorent quand <i>n</i> augmente.</p>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Aire entre deux courbes</h3>
+<div class="form">
+  <span class="t">AIRE ENTRE DEUX COURBES&nbsp;: <i>f</i>&#8239;&#8804;&#8239;<i>g</i> SUR [<i>a</i>&#8239;;&#8239;<i>b</i>]</span>
+  <div class="c m">&#119964;&#8239;=&#8239;<span class="pt">&#8747;<sub><i>a</i></sub><sup><i>b</i></sup>(<i>g</i>(<i>x</i>)&#8239;&#8722;&#8239;<i>f</i>(<i>x</i>))&#8239;d<i>x</i></span> &nbsp;(en U.A.)</div>
+</div>
+<p><i>f</i> et <i>g</i> continues. On soustrait toujours <b>la courbe du bas à la courbe du haut</b>. Si elles <b>se croisent</b>, on découpe aux intersections et on additionne. Seule compte leur <b>position relative</b> : la formule vaut même sous l'axe des abscisses.</p>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Volumes par intégration</h3>
+<div class="form">
+  <span class="t">VOLUME PAR LES SECTIONS ET VOLUME DE REVOLUTION</span>
+  <div class="c m"><i>V</i>&#8239;=&#8239;<span class="pt">&#8747;<sub><i>a</i></sub><sup><i>b</i></sup>&#8239;<i>S</i>(<i>x</i>)&#8239;d<i>x</i></span> &nbsp;(en unités de volume)</div>
+  <div class="c m">rotation autour de (O<i>x</i>) : &nbsp;<i>V</i>&#8239;=&#8239;<span class="pt">&#8747;<sub><i>a</i></sub><sup><i>b</i></sup>&#960;[<i>f</i>(<i>x</i>)]<sup>2</sup>&#8239;d<i>x</i></span></div>
+</div>
+<p>Formules <b>admises</b>. Le solide est compris entre les plans d'abscisses <i>a</i> et <i>b</i> ; <i>S</i>(<i>x</i>), aire de la section d'abscisse <i>x</i>, est continue sur <span class="pt">[<i>a</i>&#8239;;&#8239;<i>b</i>]</span>. Pour une révolution, cette section est un <b>disque de rayon</b> <span class="pt">|<i>f</i>(<i>x</i>)|</span>. Le facteur &#960; se sort par linéarité ; conclure avec l'<b>unité</b>.</p>
+</div>
+
+</div>
+
+<div class="bandeau vert">PIEGES ET ERREURS FREQUENTES</div>
+<div class="cols">
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> <span class="pt">&#8747;<sub>0</sub><sup>1</sup><i>x</i><sup>2</sup><span class="op">e</span><sup><i>x</i></sup>&#8239;d<i>x</i></span>&#8239;=&#8239;<span class="pt">(&#8747;<sub>0</sub><sup>1</sup><i>x</i><sup>2</sup>)(&#8747;<sub>0</sub><sup>1</sup><span class="op">e</span><sup><i>x</i></sup>)</span></div><div class="cor"><span class="v">&#10003;</span> L'intégrale d'un <b>produit</b> n'est pas le produit des intégrales. Contre-exemple : <span class="pt">&#8747;<sub>0</sub><sup>1</sup><i>x</i>&#215;<i>x</i>&#8239;d<i>x</i>&#8239;=&#8239;<span class="f"><span>1</span><span>3</span></span></span> alors que <span class="pt">(&#8747;<sub>0</sub><sup>1</sup><i>x</i>&#8239;d<i>x</i>)<sup>2</sup>&#8239;=&#8239;<span class="f"><span>1</span><span>4</span></span></span>. Ici, deux IPP successives.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> <i>f</i> change de signe sur <span class="pt">[<i>a</i>&#8239;;&#8239;<i>b</i>]</span>, donc <span class="pt">&#8747;<sub><i>a</i></sub><sup><i>b</i></sup>&#8239;<i>f</i></span> est l'aire de la région</div><div class="cor"><span class="v">&#10003;</span> L'intégrale n'est l'aire que si <b><i>f</i>&#8239;&#8805;&#8239;0</b> : sinon les parties sous l'axe comptent <b>négativement</b>. Avant d'écrire le mot « aire », étudier le <b>signe</b> de <i>f</i>.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> <span class="pt">&#8747;<sub><i>a</i></sub><sup><i>b</i></sup>&#8239;<i>f</i>&#8239;&#8805;&#8239;0</span>, donc <i>f</i>&#8239;&#8805;&#8239;0 sur <span class="pt">[<i>a</i>&#8239;;&#8239;<i>b</i>]</span></div><div class="cor"><span class="v">&#10003;</span> La positivité n'a <b>pas de réciproque</b> : <span class="pt">&#8747;<sub>&#8722;1</sub><sup>2</sup>2<i>t</i>&#8239;d<i>t</i>&#8239;=&#8239;3&#8239;&#8805;&#8239;0</span> alors que <span class="pt">2<i>t</i>&#8239;&lt;&#8239;0</span> sur <span class="pt">[&#8722;1&#8239;;&#8239;0[</span>. Une intégrale positive signifie seulement que le <b>bilan</b> l'est.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> Une primitive de <span class="pt"><span class="op">e</span><sup>2<i>x</i></sup></span> est <span class="pt"><span class="op">e</span><sup>2<i>x</i></sup></span> &nbsp;&middot;&nbsp; une primitive de <span class="f"><span>1</span><span><i>x</i><sup>2</sup></span></span> est <span class="op">ln</span>&#8239;<i>x</i><sup>2</sup></div><div class="cor"><span class="v">&#10003;</span> En dérivant <span class="pt"><span class="op">e</span><sup>2<i>x</i></sup></span> on obtient <span class="pt">2<span class="op">e</span><sup>2<i>x</i></sup></span> : il faut <b>diviser par le coefficient de <i>x</i></b>, d'où <span class="f"><span>1</span><span>2</span></span><span class="op">e</span><sup>2<i>x</i></sup>. Et <span class="pt"><span class="f"><span>1</span><span><i>x</i><sup>2</sup></span></span>&#8239;=&#8239;<i>x</i><sup>&#8722;2</sup></span> relève de <span class="pt"><i>u</i>&#8242;<i>u</i><sup>&#945;</sup></span>, non de <span class="pt"><span class="f"><span><i>u</i>&#8242;</span><span><i>u</i></span></span></span> : sa primitive est &#8722;<span class="f"><span>1</span><span><i>x</i></span></span>.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> La solution de <span class="pt"><i>y</i>&#8242;&#8239;&#8722;&#8239;2<i>y</i>&#8239;=&#8239;0</span> est <span class="pt"><i>y</i>&#8239;=&#8239;<i>C</i><span class="op">e</span><sup>&#8722;2<i>x</i></sup></span> &nbsp;&middot;&nbsp; dans <span class="pt">2<i>y</i>&#8242;&#8239;+&#8239;6<i>y</i>&#8239;=&#8239;0</span>, <i>a</i>&#8239;=&#8239;6</div><div class="cor"><span class="v">&#10003;</span> Dans <span class="pt"><i>y</i>&#8242;&#8239;+&#8239;<i>ay</i>&#8239;=&#8239;0</span>, l'exposant est <b>l'opposé de <i>a</i></b> : ici <i>a</i>&#8239;=&#8239;&#8722;2, donc <span class="pt"><i>y</i>&#8239;=&#8239;<i>C</i><span class="op">e</span><sup>2<i>x</i></sup></span>, croissante. Et il faut <b>ranger</b> l'équation d'abord : <span class="pt">2<i>y</i>&#8242;&#8239;+&#8239;6<i>y</i>&#8239;=&#8239;0</span> donne <span class="pt"><i>y</i>&#8242;&#8239;+&#8239;3<i>y</i>&#8239;=&#8239;0</span>, <i>a</i>&#8239;=&#8239;3 et <span class="pt"><i>y</i>&#8239;=&#8239;<i>C</i><span class="op">e</span><sup>&#8722;3<i>x</i></sup></span>.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> <span class="pt"><i>y</i>&#8243;&#8239;+&#8239;16<i>y</i>&#8239;=&#8239;0</span> a pour solutions <span class="pt"><i>A</i><span class="op">cos</span>&#8239;16<i>x</i>&#8239;+&#8239;<i>B</i><span class="op">sin</span>&#8239;16<i>x</i></span></div><div class="cor"><span class="v">&#10003;</span> &#969; est la <b>racine carrée</b> du coefficient de <i>y</i>, pas ce coefficient : &#969;&#8239;=&#8239;4 et <span class="pt"><i>y</i>&#8239;=&#8239;<i>A</i><span class="op">cos</span>&#8239;4<i>x</i>&#8239;+&#8239;<i>B</i><span class="op">sin</span>&#8239;4<i>x</i></span>. Deux constantes exigent <b>deux</b> conditions.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> L'aire entre les courbes de <i>f</i> et <i>g</i> est <span class="pt">&#8747;<sub><i>a</i></sub><sup><i>b</i></sup>(<i>f</i>&#8239;&#8722;&#8239;<i>g</i>)</span></div><div class="cor"><span class="v">&#10003;</span> On soustrait <b>dans le bon sens</b> : <span class="pt">&#119964;&#8239;=&#8239;&#8747;<sub><i>a</i></sub><sup><i>b</i></sup>(<i>g</i>&#8239;&#8722;&#8239;<i>f</i>)</span> lorsque <i>f</i>&#8239;&#8804;&#8239;<i>g</i>, sinon le résultat est négatif, ce qu'aucune aire ne peut être. Si les courbes <b>se croisent</b>, on <b>découpe</b> aux intersections.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> Le volume de révolution vaut <span class="pt">&#8747;<sub><i>a</i></sub><sup><i>b</i></sup>&#960;<i>f</i>(<i>x</i>)&#8239;d<i>x</i></span> &nbsp;&middot;&nbsp; oubli du signe &#8722; dans l'IPP</div><div class="cor"><span class="v">&#10003;</span> La section est un disque de rayon <span class="pt">|<i>f</i>(<i>x</i>)|</span>, donc d'aire <span class="pt">&#960;[<i>f</i>(<i>x</i>)]<sup>2</sup></span> : on intègre le <b>carré</b>. Et dans l'IPP, la seconde intégrale est précédée d'un <b>signe moins</b> : l'oublier est l'erreur mécanique la plus fréquente.</div></div>
+
+</div>
+
+<div class="bandeau bleu">A SAVOIR PAR COEUR AVANT LE DEVOIR</div>
+<div class="cols">
+<ol class="recap">
+<li><span class="pt">&#8747;<sub><i>a</i></sub><sup><i>b</i></sup>&#8239;<i>f</i>(<i>x</i>)&#8239;d<i>x</i>&#8239;=&#8239;<i>F</i>(<i>b</i>)&#8239;&#8722;&#8239;<i>F</i>(<i>a</i>)&#8239;=&#8239;[<i>F</i>(<i>x</i>)]<sub><i>a</i></sub><sup><i>b</i></sup></span> avec <i>f</i> <b>continue</b> ; <span class="pt">&#8747;<sub><i>a</i></sub><sup><i>a</i></sup>&#8239;<i>f</i>&#8239;=&#8239;0</span> et <span class="pt">&#8747;<sub><i>b</i></sub><sup><i>a</i></sup>&#8239;<i>f</i>&#8239;=&#8239;&#8722;&#8747;<sub><i>a</i></sub><sup><i>b</i></sup>&#8239;<i>f</i></span> ; variable <b>muette</b>.</li>
+<li>Si <span class="pt"><i>f</i>&#8239;&#8805;&#8239;0</span> sur <span class="pt">[<i>a</i>&#8239;;&#8239;<i>b</i>]</span> (<i>a</i>&#8239;&lt;&#8239;<i>b</i>), l'intégrale est l'<b>aire</b> en U.A., et 1&#8239;U.A.&#8239;=&#8239;(unité O<i>x</i>)&#8239;&#215;&#8239;(unité O<i>y</i>). Si <i>f</i> change de signe : <b>découper</b> et additionner les <b>valeurs absolues</b>.</li>
+<li><b>Chasles</b> <span class="pt">&#8747;<sub><i>a</i></sub><sup><i>b</i></sup>&#8239;+&#8239;&#8747;<sub><i>b</i></sub><sup><i>c</i></sup>&#8239;=&#8239;&#8747;<sub><i>a</i></sub><sup><i>c</i></sup></span> (ordre quelconque) &middot; <b>linéarité</b> sur les sommes et les constantes, <b>jamais</b> sur un produit &middot; <span class="pt"><i>f</i>&#8239;&#8804;&#8239;<i>g</i>&#8239;<span class="ar">&#8658;</span>&#8239;&#8747;<i>f</i>&#8239;&#8804;&#8239;&#8747;<i>g</i></span> ; positivité <b>sans réciproque</b>.</li>
+<li><b>Inégalité de la moyenne</b> : <span class="pt"><i>m</i>&#8239;&#8804;&#8239;<i>f</i>&#8239;&#8804;&#8239;<i>M</i></span> donne <span class="pt"><i>m</i>(<i>b</i>&#8239;&#8722;&#8239;<i>a</i>)&#8239;&#8804;&#8239;&#8747;<sub><i>a</i></sub><sup><i>b</i></sup>&#8239;<i>f</i>&#8239;&#8804;&#8239;<i>M</i>(<i>b</i>&#8239;&#8722;&#8239;<i>a</i>)</span> &middot; <b>valeur moyenne</b> <span class="pt">&#956;&#8239;=&#8239;<span class="f"><span>1</span><span><i>b</i>&#8239;&#8722;&#8239;<i>a</i></span></span>&#8747;<sub><i>a</i></sub><sup><i>b</i></sup>&#8239;<i>f</i></span>, toujours comprise entre <i>m</i> et <i>M</i>.</li>
+<li><b>Symétries</b> : <i>f</i> paire, <span class="pt">&#8747;<sub>&#8722;<i>a</i></sub><sup><i>a</i></sup>&#8239;<i>f</i>&#8239;=&#8239;2&#8747;<sub>0</sub><sup><i>a</i></sup>&#8239;<i>f</i></span> ; <i>f</i> impaire, <span class="pt">&#8747;<sub>&#8722;<i>a</i></sub><sup><i>a</i></sup>&#8239;<i>f</i>&#8239;=&#8239;0</span> ; <i>f</i> de période <i>T</i>, <span class="pt">&#8747;<sub><i>a</i></sub><sup><i>a</i>+<i>T</i></sup>&#8239;<i>f</i>&#8239;=&#8239;&#8747;<sub>0</sub><sup><i>T</i></sup>&#8239;<i>f</i></span>.</li>
+<li><b>Formes composées</b> : <span class="pt"><i>u</i>&#8242;<span class="op">e</span><sup><i>u</i></sup>&#8239;<span class="ar">&#8594;</span>&#8239;<span class="op">e</span><sup><i>u</i></sup></span>, <span class="pt"><span class="f"><span><i>u</i>&#8242;</span><span><i>u</i></span></span>&#8239;<span class="ar">&#8594;</span>&#8239;<span class="op">ln</span>|<i>u</i>|</span>, <span class="pt"><i>u</i>&#8242;<i>u</i><sup>&#945;</sup>&#8239;<span class="ar">&#8594;</span>&#8239;<span class="f"><span><i>u</i><sup>&#945;+1</sup></span><span>&#945;&#8239;+&#8239;1</span></span></span> (&#945;&#8239;&#8800;&#8239;&#8722;1), <span class="pt"><i>f</i>(<i>ax</i>&#8239;+&#8239;<i>b</i>)&#8239;<span class="ar">&#8594;</span>&#8239;<span class="f"><span>1</span><span><i>a</i></span></span><i>F</i>(<i>ax</i>&#8239;+&#8239;<i>b</i>)</span>. <b>IPP</b> : <span class="pt">&#8747;<sub><i>a</i></sub><sup><i>b</i></sup><i>uv</i>&#8242;&#8239;=&#8239;[<i>uv</i>]<sub><i>a</i></sub><sup><i>b</i></sup>&#8239;&#8722;&#8239;&#8747;<sub><i>a</i></sub><sup><i>b</i></sup><i>u</i>&#8242;<i>v</i></span>, avec <i>u</i>&#8242; plus simple que <i>u</i>.</li>
+<li><b>Equations différentielles</b> : ranger d'abord, puis <span class="pt"><i>y</i>&#8242;&#8239;+&#8239;<i>ay</i>&#8239;=&#8239;0&#8239;<span class="ar">&#8658;</span>&#8239;<i>y</i>&#8239;=&#8239;<i>C</i><span class="op">e</span><sup>&#8722;<i>ax</i></sup></span> (une condition fixe <i>C</i>) et <span class="pt"><i>y</i>&#8243;&#8239;+&#8239;&#969;<sup>2</sup><i>y</i>&#8239;=&#8239;0&#8239;<span class="ar">&#8658;</span>&#8239;<i>y</i>&#8239;=&#8239;<i>A</i><span class="op">cos</span>&#969;<i>x</i>&#8239;+&#8239;<i>B</i><span class="op">sin</span>&#969;<i>x</i></span> avec <span class="pt"><i>y</i>(0)&#8239;=&#8239;<i>A</i></span>, <span class="pt"><i>y</i>&#8242;(0)&#8239;=&#8239;<i>B</i>&#969;</span> (deux conditions).</li>
+<li><b>Aires et volumes</b> : entre deux courbes (<i>f</i>&#8239;&#8804;&#8239;<i>g</i>), <span class="pt">&#119964;&#8239;=&#8239;&#8747;<sub><i>a</i></sub><sup><i>b</i></sup>(<i>g</i>&#8239;&#8722;&#8239;<i>f</i>)</span> &middot; <span class="pt"><i>V</i>&#8239;=&#8239;&#8747;<sub><i>a</i></sub><sup><i>b</i></sup>&#8239;<i>S</i>(<i>x</i>)&#8239;d<i>x</i></span> &middot; révolution autour de (O<i>x</i>), <span class="pt"><i>V</i>&#8239;=&#8239;&#8747;<sub><i>a</i></sub><sup><i>b</i></sup>&#960;[<i>f</i>(<i>x</i>)]<sup>2</sup>&#8239;d<i>x</i></span>. Valeurs approchées : rectangles, point milieu, trapèzes, du moins précis au plus précis.</li>
+</ol>
+</div>
+
+</body>
+</html>

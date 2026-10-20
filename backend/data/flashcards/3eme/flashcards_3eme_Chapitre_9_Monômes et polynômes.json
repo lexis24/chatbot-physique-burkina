@@ -1,0 +1,305 @@
+{
+  "niveau": "3ème",
+  "chapitre": "Chapitre 9 : Monômes et polynômes",
+  "source": "maths/3eme/Chapitre_9_Monomes_polynomes",
+  "nombre_cartes": 33,
+  "cartes": [
+    {
+      "id": "3E-CH09-001",
+      "lecon": "Somme de polynômes : réduire et ordonner",
+      "type": "definition",
+      "recto": "Qu'est-ce qu'un monôme ?",
+      "verso": "C'est le produit d'un nombre et d'une puissance de la lettre. Ainsi $3x^{2}$, $-5x$ et $7$ sont des monômes.",
+      "difficulte": 1,
+      "tags": ["monome", "definition"]
+    },
+    {
+      "id": "3E-CH09-002",
+      "lecon": "Somme de polynômes : réduire et ordonner",
+      "type": "definition",
+      "recto": "Dans le monôme $-5x^{3}$, comment appelle-t-on le nombre $-5$ ?",
+      "verso": "C'est le coefficient du monôme. La partie $x^{3}$, elle, s'appelle la partie littérale.",
+      "difficulte": 1,
+      "tags": ["monome", "coefficient", "partie-litterale"]
+    },
+    {
+      "id": "3E-CH09-003",
+      "lecon": "Somme de polynômes : réduire et ordonner",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on le degré d'un monôme ?",
+      "verso": "C'est l'exposant de sa partie littérale : le degré de $-5x^{3}$ est $3$. Un nombre seul, comme $7$, est un monôme de degré $0$.",
+      "difficulte": 2,
+      "tags": ["monome", "degre"]
+    },
+    {
+      "id": "3E-CH09-004",
+      "lecon": "Somme de polynômes : réduire et ordonner",
+      "type": "definition",
+      "recto": "Qu'est-ce qu'un polynôme ?",
+      "verso": "C'est une somme de monômes. Chaque monôme qui le compose s'appelle un terme du polynôme.",
+      "difficulte": 1,
+      "tags": ["polynome", "definition", "terme"]
+    },
+    {
+      "id": "3E-CH09-005",
+      "lecon": "Somme de polynômes : réduire et ordonner",
+      "type": "definition",
+      "recto": "Comment détermine-t-on le degré d'un polynôme ?",
+      "verso": "C'est le plus grand degré de ses termes, quel que soit l'ordre dans lequel ils sont écrits. Le degré de $4x^{3} - x^{5} + 1$ est donc $5$.",
+      "difficulte": 2,
+      "tags": ["polynome", "degre"]
+    },
+    {
+      "id": "3E-CH09-006",
+      "lecon": "Somme de polynômes : réduire et ordonner",
+      "type": "definition",
+      "recto": "Quand deux monômes sont-ils semblables ?",
+      "verso": "Quand ils ont la même partie littérale, c'est-à-dire la même lettre à la même puissance. Ainsi $3x^{2}$ et $-7x^{2}$ sont semblables, mais $3x^{2}$ et $3x$ ne le sont pas.",
+      "difficulte": 2,
+      "tags": ["monomes-semblables", "definition"]
+    },
+    {
+      "id": "3E-CH09-007",
+      "lecon": "Somme de polynômes : réduire et ordonner",
+      "type": "definition",
+      "recto": "Que veut dire réduire un polynôme ?",
+      "verso": "C'est regrouper les termes semblables en additionnant leurs coefficients. Réduire ne change jamais la valeur du polynôme, seulement son écriture.",
+      "difficulte": 2,
+      "tags": ["reduire", "polynome"]
+    },
+    {
+      "id": "3E-CH09-008",
+      "lecon": "Somme de polynômes : réduire et ordonner",
+      "type": "definition",
+      "recto": "Que veut dire ordonner un polynôme ?",
+      "verso": "C'est ranger ses termes par puissances décroissantes de la lettre, ou croissantes lorsque l'énoncé le demande.",
+      "difficulte": 1,
+      "tags": ["ordonner", "polynome"]
+    },
+    {
+      "id": "3E-CH09-009",
+      "lecon": "Somme de polynômes : réduire et ordonner",
+      "type": "formule",
+      "recto": "Comment obtient-on la valeur numérique d'un polynôme pour un nombre donné ?",
+      "verso": "On remplace la lettre par ce nombre, puis on calcule en respectant les priorités des opérations. Pour $P = 8x + 12$ et $x = 6$, on obtient $P = 8 \\times 6 + 12 = 60$.",
+      "difficulte": 2,
+      "tags": ["valeur-numerique", "polynome"]
+    },
+    {
+      "id": "3E-CH09-010",
+      "lecon": "Somme de polynômes : réduire et ordonner",
+      "type": "formule",
+      "recto": "Que deviennent les termes d'une parenthèse précédée du signe $-$ quand on la supprime ?",
+      "verso": "Ils changent tous de signe, et pas seulement le premier, car $-(a + b)$ signifie $(-1) \\times (a + b)$, donc $-a - b$. Ainsi $-(x - 3) = -x + 3$.",
+      "difficulte": 2,
+      "tags": ["signe", "parentheses", "reduire"]
+    },
+    {
+      "id": "3E-CH09-011",
+      "lecon": "Somme de polynômes : réduire et ordonner",
+      "type": "formule",
+      "recto": "Pourquoi la somme $3x^{2} + 2x$ ne se réduit-elle pas en $5x^{3}$ ?",
+      "verso": "Parce qu'on n'additionne jamais les exposants dans une somme. Les deux termes n'ont pas la même partie littérale, ils ne sont pas semblables, donc l'écriture $3x^{2} + 2x$ est déjà réduite.",
+      "difficulte": 3,
+      "tags": ["reduire", "piege", "exposants"]
+    },
+    {
+      "id": "3E-CH09-012",
+      "lecon": "Produit de polynômes : développer avec les identités remarquables",
+      "type": "definition",
+      "recto": "Que signifie développer une expression ?",
+      "verso": "C'est transformer un produit en somme.",
+      "difficulte": 1,
+      "tags": ["developper", "definition"]
+    },
+    {
+      "id": "3E-CH09-013",
+      "lecon": "Produit de polynômes : développer avec les identités remarquables",
+      "type": "formule",
+      "recto": "Comment développe-t-on le produit $(a + b)(c + d)$ ?",
+      "verso": "$(a + b)(c + d) = ac + ad + bc + bd$. Chaque terme de la première parenthèse multiplie chaque terme de la seconde : il y a toujours quatre produits à écrire.",
+      "difficulte": 2,
+      "tags": ["distributivite-double", "developper"]
+    },
+    {
+      "id": "3E-CH09-014",
+      "lecon": "Produit de polynômes : développer avec les identités remarquables",
+      "type": "formule",
+      "recto": "Comment développe-t-on $(a + b)^{2}$ ?",
+      "verso": "$(a + b)^{2} = a^{2} + 2ab + b^{2}$. Par exemple $(x + 5)^{2} = x^{2} + 10x + 25$.",
+      "difficulte": 1,
+      "tags": ["identite-remarquable", "carre-somme"]
+    },
+    {
+      "id": "3E-CH09-015",
+      "lecon": "Produit de polynômes : développer avec les identités remarquables",
+      "type": "formule",
+      "recto": "Comment développe-t-on $(a - b)^{2}$ ?",
+      "verso": "$(a - b)^{2} = a^{2} - 2ab + b^{2}$. Par rapport au carré d'une somme, seul le double produit change de signe : le terme $b^{2}$ reste positif.",
+      "difficulte": 2,
+      "tags": ["identite-remarquable", "carre-difference"]
+    },
+    {
+      "id": "3E-CH09-016",
+      "lecon": "Produit de polynômes : développer avec les identités remarquables",
+      "type": "formule",
+      "recto": "Que donne le développement du produit $(a - b)(a + b)$ ?",
+      "verso": "$(a - b)(a + b) = a^{2} - b^{2}$. La distributivité double donne quatre produits, mais les deux termes croisés $+ab$ et $-ab$ sont opposés et s'annulent : il ne reste que la différence des deux carrés.",
+      "difficulte": 2,
+      "tags": ["identite-remarquable", "difference-de-carres"]
+    },
+    {
+      "id": "3E-CH09-017",
+      "lecon": "Produit de polynômes : développer avec les identités remarquables",
+      "type": "definition",
+      "recto": "Comment appelle-t-on le terme $2ab$ dans le développement de $(a + b)^{2}$ ?",
+      "verso": "C'est le double produit. Il ne doit jamais être oublié, ni dans $(a + b)^{2}$ ni dans $(a - b)^{2}$.",
+      "difficulte": 2,
+      "tags": ["double-produit", "identite-remarquable"]
+    },
+    {
+      "id": "3E-CH09-018",
+      "lecon": "Produit de polynômes : développer avec les identités remarquables",
+      "type": "formule",
+      "recto": "Comment le découpage d'un carré de côté $a + b$ fait-il apparaître le double produit ?",
+      "verso": "Ce grand carré se découpe en quatre morceaux : un carré d'aire $a^{2}$, un carré d'aire $b^{2}$ et deux rectangles d'aire $ab$ chacun. Ces deux rectangles sont exactement le double produit $2ab$.",
+      "difficulte": 2,
+      "tags": ["double-produit", "aires", "identite-remarquable"]
+    },
+    {
+      "id": "3E-CH09-019",
+      "lecon": "Produit de polynômes : développer avec les identités remarquables",
+      "type": "formule",
+      "recto": "Pourquoi $(a + b)^{2}$ n'est-il pas égal à $a^{2} + b^{2}$ ?",
+      "verso": "Parce qu'il manque le double produit $2ab$. Ainsi $(x + 5)^{2} = x^{2} + 10x + 25$, et non $x^{2} + 25$ : c'est l'erreur la plus fréquente de tout le sujet.",
+      "difficulte": 3,
+      "tags": ["identite-remarquable", "piege", "double-produit"]
+    },
+    {
+      "id": "3E-CH09-020",
+      "lecon": "Produit de polynômes : développer avec les identités remarquables",
+      "type": "formule",
+      "recto": "Dans le développement de $(6x + 5)^{2}$, que vaut le carré du premier terme ?",
+      "verso": "Il vaut $(6x)^{2} = 36x^{2}$, car le carré porte sur tout le monôme, coefficient compris. Le développement complet est $36x^{2} + 60x + 25$.",
+      "difficulte": 3,
+      "tags": ["identite-remarquable", "coefficient", "piege"]
+    },
+    {
+      "id": "3E-CH09-021",
+      "lecon": "Produit de polynômes : développer avec les identités remarquables",
+      "type": "formule",
+      "recto": "Comment une identité remarquable accélère-t-elle le calcul mental de $52^{2}$ ?",
+      "verso": "On écrit $52 = 50 + 2$, puis $52^{2} = 50^{2} + 2 \\times 50 \\times 2 + 2^{2} = 2\\,500 + 200 + 4 = 2\\,704$. Chaque morceau devient un calcul facile.",
+      "difficulte": 2,
+      "tags": ["identite-remarquable", "calcul-mental"]
+    },
+    {
+      "id": "3E-CH09-022",
+      "lecon": "Factoriser un polynôme",
+      "type": "definition",
+      "recto": "Que signifie factoriser une expression ?",
+      "verso": "C'est transformer une somme en produit. C'est l'opération réciproque du développement.",
+      "difficulte": 1,
+      "tags": ["factoriser", "definition"]
+    },
+    {
+      "id": "3E-CH09-023",
+      "lecon": "Factoriser un polynôme",
+      "type": "formule",
+      "recto": "Comment s'écrit la mise en évidence d'un facteur commun ?",
+      "verso": "$ka + kb = k(a + b)$. On cherche le plus grand facteur présent dans tous les termes, chiffres et lettres compris.",
+      "difficulte": 2,
+      "tags": ["facteur-commun", "factoriser"]
+    },
+    {
+      "id": "3E-CH09-024",
+      "lecon": "Factoriser un polynôme",
+      "type": "formule",
+      "recto": "Quelle forme inattendue un facteur commun peut-il prendre ?",
+      "verso": "Une parenthèse entière. Dans $2a(a - 1) + 3(a - 1)$, le facteur commun est $(a - 1)$, et l'expression se factorise en $(a - 1)(2a + 3)$.",
+      "difficulte": 2,
+      "tags": ["facteur-commun", "parenthese"]
+    },
+    {
+      "id": "3E-CH09-025",
+      "lecon": "Factoriser un polynôme",
+      "type": "formule",
+      "recto": "Quelles formes d'expressions se factorisent grâce aux identités remarquables ?",
+      "verso": "Trois formes : $a^{2} + 2ab + b^{2} = (a + b)^{2}$ ; $a^{2} - 2ab + b^{2} = (a - b)^{2}$ ; $a^{2} - b^{2} = (a - b)(a + b)$.",
+      "difficulte": 2,
+      "tags": ["factoriser", "identite-remarquable"]
+    },
+    {
+      "id": "3E-CH09-026",
+      "lecon": "Factoriser un polynôme",
+      "type": "formule",
+      "recto": "A quoi reconnaît-on un carré parfait dans une expression à factoriser ?",
+      "verso": "A ses trois termes : deux d'entre eux sont des carrés, et le troisième est leur double produit. Dans $9x^{2} + 24x + 16$, on a $(3x)^{2}$, $4^{2}$ et $2 \\times 3x \\times 4 = 24x$, donc l'expression vaut $(3x + 4)^{2}$.",
+      "difficulte": 2,
+      "tags": ["carre-parfait", "factoriser"]
+    },
+    {
+      "id": "3E-CH09-027",
+      "lecon": "Factoriser un polynôme",
+      "type": "formule",
+      "recto": "Pourquoi une somme de deux carrés comme $x^{2} + 9$ ne se factorise-t-elle pas ?",
+      "verso": "Parce qu'aucune des trois identités remarquables du programme ne concerne une somme de deux carrés : seule la différence $a^{2} - b^{2}$ se factorise.",
+      "difficulte": 2,
+      "tags": ["factoriser", "somme-de-carres", "piege"]
+    },
+    {
+      "id": "3E-CH09-028",
+      "lecon": "Factoriser un polynôme",
+      "type": "formule",
+      "recto": "Quel outil de factorisation essaie-t-on toujours en premier ?",
+      "verso": "Le facteur commun, car il simplifie l'expression et fait souvent apparaître une identité derrière lui. On regarde ensuite seulement si ce qui reste est un carré parfait ou une différence de deux carrés.",
+      "difficulte": 2,
+      "tags": ["factoriser", "ordre", "methode"]
+    },
+    {
+      "id": "3E-CH09-029",
+      "lecon": "Factoriser un polynôme",
+      "type": "formule",
+      "recto": "Que faire lorsque aucun facteur commun ne se voit dans une somme à factoriser ?",
+      "verso": "Factoriser d'abord chaque morceau séparément, puis regarder de nouveau. Dans $x^{2} - 16 + (x - 4)(3x + 1)$, factoriser $x^{2} - 16$ en $(x - 4)(x + 4)$ fait apparaître le facteur commun $(x - 4)$.",
+      "difficulte": 3,
+      "tags": ["facteur-commun", "factoriser", "methode"]
+    },
+    {
+      "id": "3E-CH09-030",
+      "lecon": "Factoriser un polynôme",
+      "type": "formule",
+      "recto": "Pourquoi faut-il sortir le facteur commun en entier, comme $3x$ dans $3x^{2} + 6x$ ?",
+      "verso": "Parce qu'un facteur sorti à moitié laisse encore un facteur commun dans la parenthèse : la factorisation resterait inachevée. La forme complète est $3x^{2} + 6x = 3x(x + 2)$.",
+      "difficulte": 3,
+      "tags": ["facteur-commun", "piege"]
+    },
+    {
+      "id": "3E-CH09-031",
+      "lecon": "Factoriser un polynôme",
+      "type": "formule",
+      "recto": "Que dit la règle du produit nul ?",
+      "verso": "Un produit de deux facteurs est nul si et seulement si l'un au moins de ses facteurs est nul. Ainsi $(x - 2)(4x - 1) = 0$ donne $x = 2$ ou $x = \\dfrac{1}{4}$.",
+      "difficulte": 2,
+      "tags": ["produit-nul", "equation"]
+    },
+    {
+      "id": "3E-CH09-032",
+      "lecon": "Factoriser un polynôme",
+      "type": "formule",
+      "recto": "Comment vérifie-t-on qu'une factorisation est juste ?",
+      "verso": "En développant le produit obtenu : on doit retrouver exactement l'expression de départ.",
+      "difficulte": 1,
+      "tags": ["factoriser", "verification"]
+    },
+    {
+      "id": "3E-CH09-033",
+      "lecon": "Factoriser un polynôme",
+      "type": "formule",
+      "recto": "Quelle différence d'outil sépare la factorisation de $x^{2} - 4$ de celle de $x^{2} - 4x + 4$ ?",
+      "verso": "$x^{2} - 4$ a deux termes : c'est une différence de deux carrés, qui donne $(x - 2)(x + 2)$. $x^{2} - 4x + 4$ en a trois : c'est un carré parfait, qui donne $(x - 2)^{2}$. Le nombre de termes indique l'outil.",
+      "difficulte": 3,
+      "tags": ["factoriser", "distinction", "piege"]
+    }
+  ]
+}

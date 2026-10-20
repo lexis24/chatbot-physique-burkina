@@ -1,0 +1,278 @@
+{
+  "niveau": "5ème",
+  "chapitre": "Chapitre 11 : Puissances entières d'un nombre",
+  "source": "maths/5eme/Chapitre_11_Puissances_entieres",
+  "nombre_cartes": 30,
+  "cartes": [
+    {
+      "id": "5E-CH11-001",
+      "lecon": "Définition et calcul d'une puissance ; puissances de 10",
+      "type": "definition",
+      "recto": "Que représente la puissance $a^{n}$, pour un entier $n$ supérieur ou égal à $1$ ?",
+      "verso": "C'est le produit de $n$ facteurs tous égaux à $a$ : $a^{n} = a \\times a \\times \\ldots \\times a$, avec $n$ facteurs.",
+      "difficulte": 1,
+      "tags": ["puissance", "definition"]
+    },
+    {
+      "id": "5E-CH11-002",
+      "lecon": "Définition et calcul d'une puissance ; puissances de 10",
+      "type": "definition",
+      "recto": "Comment appelle-t-on les deux nombres de l'écriture $a^{n}$ ?",
+      "verso": "Le nombre $a$ est la base, le nombre $n$ est l'exposant. L'exposant s'écrit en haut et à droite de la base, en plus petit, et l'ensemble se lit « $a$ exposant $n$ ».",
+      "difficulte": 1,
+      "tags": ["puissance", "base", "exposant"]
+    },
+    {
+      "id": "5E-CH11-003",
+      "lecon": "Définition et calcul d'une puissance ; puissances de 10",
+      "type": "definition",
+      "recto": "Comment se lisent les puissances $a^{2}$ et $a^{3}$ ?",
+      "verso": "$a^{2}$ se lit « $a$ au carré » et $a^{3}$ se lit « $a$ au cube ». Ces deux noms viennent de la géométrie : l'aire d'un carré et le volume d'un cube.",
+      "difficulte": 1,
+      "tags": ["puissance", "carre", "cube", "vocabulaire"]
+    },
+    {
+      "id": "5E-CH11-004",
+      "lecon": "Définition et calcul d'une puissance ; puissances de 10",
+      "type": "formule",
+      "recto": "Pourquoi $2^{3}$ ne vaut-il pas $6$ ?",
+      "verso": "Parce que l'exposant compte les facteurs, il n'en est pas un lui-même : $2^{3} = 2 \\times 2 \\times 2 = 8$.",
+      "difficulte": 3,
+      "tags": ["puissance", "exposant", "piege"]
+    },
+    {
+      "id": "5E-CH11-005",
+      "lecon": "Définition et calcul d'une puissance ; puissances de 10",
+      "type": "formule",
+      "recto": "Que valent les puissances $a^{1}$ et $a^{0}$ ?",
+      "verso": "$a^{1} = a$, car il n'y a qu'un seul facteur. Et par convention, $a^{0} = 1$ pour tout nombre $a$ non nul.",
+      "difficulte": 1,
+      "tags": ["puissance", "exposant-un", "exposant-zero"]
+    },
+    {
+      "id": "5E-CH11-006",
+      "lecon": "Définition et calcul d'une puissance ; puissances de 10",
+      "type": "formule",
+      "recto": "Comment connaît-on le signe d'une puissance d'un nombre négatif ?",
+      "verso": "Par la parité de l'exposant : la puissance est positive si l'exposant est pair, négative s'il est impair. Ainsi $\\left(-4\\right)^{2} = +16$ et $\\left(-2\\right)^{3} = -8$.",
+      "difficulte": 2,
+      "tags": ["puissance", "signe", "parite"]
+    },
+    {
+      "id": "5E-CH11-007",
+      "lecon": "Définition et calcul d'une puissance ; puissances de 10",
+      "type": "formule",
+      "recto": "Pourquoi la puissance d'exposant pair d'un nombre négatif est-elle positive ?",
+      "verso": "Parce que tous les facteurs sont négatifs et qu'ils s'annulent deux par deux. Un exposant pair permet de les regrouper tous par paires, sans qu'il en reste un seul.",
+      "difficulte": 3,
+      "tags": ["puissance", "signe", "justification"]
+    },
+    {
+      "id": "5E-CH11-008",
+      "lecon": "Définition et calcul d'une puissance ; puissances de 10",
+      "type": "formule",
+      "recto": "Pourquoi $-2^{4}$ et $\\left(-2\\right)^{4}$ ne donnent-ils pas le même résultat ?",
+      "verso": "Sans parenthèses, l'exposant ne porte que sur le $2$ et le signe s'applique ensuite : $-2^{4} = -16$. Avec parenthèses, c'est le nombre $-2$ tout entier qui est répété : $\\left(-2\\right)^{4} = +16$.",
+      "difficulte": 3,
+      "tags": ["puissance", "parentheses", "piege"]
+    },
+    {
+      "id": "5E-CH11-009",
+      "lecon": "Définition et calcul d'une puissance ; puissances de 10",
+      "type": "formule",
+      "recto": "A quel moment calcule-t-on les puissances dans une expression ?",
+      "verso": "Avant les multiplications et les divisions, elles-mêmes avant les additions. Ainsi $2 \\times 3^{2} = 2 \\times 9 = 18$, et non $36$.",
+      "difficulte": 2,
+      "tags": ["puissance", "priorites"]
+    },
+    {
+      "id": "5E-CH11-010",
+      "lecon": "Définition et calcul d'une puissance ; puissances de 10",
+      "type": "formule",
+      "recto": "Comment écrit-on le nombre $10^{n}$ en chiffres ?",
+      "verso": "C'est le nombre $1$ suivi de $n$ zéros : $10^{2} = 100$ et $10^{3} = 1\\,000$. Il suffit de compter les zéros.",
+      "difficulte": 1,
+      "tags": ["puissances-de-dix", "zeros"]
+    },
+    {
+      "id": "5E-CH11-011",
+      "lecon": "Définition et calcul d'une puissance ; puissances de 10",
+      "type": "formule",
+      "recto": "Comment écrit-on un grand nombre comme $45\\,000$ à l'aide d'une puissance de $10$ ?",
+      "verso": "Comme un petit nombre multiplié par une puissance de dix : $45\\,000 = 45 \\times 10^{3}$, de même que $3\\,000 = 3 \\times 10^{3}$.",
+      "difficulte": 2,
+      "tags": ["puissances-de-dix", "grands-nombres"]
+    },
+    {
+      "id": "5E-CH11-012",
+      "lecon": "Définition et calcul d'une puissance ; puissances de 10",
+      "type": "definition",
+      "recto": "A quelles puissances de $10$ correspondent les préfixes kilo, méga et giga ?",
+      "verso": "Kilo vaut mille, soit $10^{3}$, comme dans kilogramme ; méga vaut un million, soit $10^{6}$ ; giga vaut un milliard, soit $10^{9}$.",
+      "difficulte": 2,
+      "tags": ["puissances-de-dix", "prefixes", "ordre-de-grandeur"]
+    },
+    {
+      "id": "5E-CH11-013",
+      "lecon": "Définition et calcul d'une puissance ; puissances de 10",
+      "type": "definition",
+      "recto": "Pourquoi les aires se mesurent-elles en cm$^{2}$ et les volumes en cm$^{3}$ ?",
+      "verso": "Parce que l'exposant y compte le nombre de dimensions : deux pour une surface, trois pour un solide.",
+      "difficulte": 2,
+      "tags": ["carre", "cube", "unites"]
+    },
+    {
+      "id": "5E-CH11-014",
+      "lecon": "Définition et calcul d'une puissance ; puissances de 10",
+      "type": "formule",
+      "recto": "Quelle différence y a-t-il entre le double d'un nombre et son carré ?",
+      "verso": "Le double ajoute le nombre à lui-même, le carré le multiplie par lui-même. Le double de $5$ vaut $10$, mais le carré de $5$ vaut $25$.",
+      "difficulte": 3,
+      "tags": ["carre", "double", "piege"]
+    },
+    {
+      "id": "5E-CH11-015",
+      "lecon": "Produit de puissances ; puissance d'un produit",
+      "type": "formule",
+      "recto": "Quelle règle donne le produit de deux puissances d'un même nombre ?",
+      "verso": "On garde la base et on ajoute les exposants : $a^{n} \\times a^{m} = a^{n+m}$. Ainsi $5^{2} \\times 5^{3} = 5^{5}$.",
+      "difficulte": 1,
+      "tags": ["produit-de-puissances", "regle"]
+    },
+    {
+      "id": "5E-CH11-016",
+      "lecon": "Produit de puissances ; puissance d'un produit",
+      "type": "formule",
+      "recto": "Quelle condition la règle $a^{n} \\times a^{m} = a^{n+m}$ exige-t-elle ?",
+      "verso": "Que les deux puissances aient la même base. On ne peut rien simplifier dans $2^{3} \\times 5^{4}$, car les facteurs ne sont pas les mêmes.",
+      "difficulte": 2,
+      "tags": ["produit-de-puissances", "condition", "base"]
+    },
+    {
+      "id": "5E-CH11-017",
+      "lecon": "Produit de puissances ; puissance d'un produit",
+      "type": "formule",
+      "recto": "Pourquoi ajoute-t-on les exposants dans un produit de puissances de même base ?",
+      "verso": "Parce que les exposants comptent des facteurs : mettre bout à bout un paquet de $n$ facteurs et un paquet de $m$ facteurs en donne $n + m$ au total.",
+      "difficulte": 2,
+      "tags": ["produit-de-puissances", "justification"]
+    },
+    {
+      "id": "5E-CH11-018",
+      "lecon": "Produit de puissances ; puissance d'un produit",
+      "type": "formule",
+      "recto": "Pourquoi $5^{2} \\times 5^{3}$ ne vaut-il pas $25^{5}$ ?",
+      "verso": "Parce que la base ne change pas : on regroupe seulement des facteurs identiques, qui restent des $5$. Le résultat est $5^{5}$.",
+      "difficulte": 3,
+      "tags": ["produit-de-puissances", "base", "piege"]
+    },
+    {
+      "id": "5E-CH11-019",
+      "lecon": "Produit de puissances ; puissance d'un produit",
+      "type": "formule",
+      "recto": "Quelle règle donne la puissance d'un produit ?",
+      "verso": "L'exposant se distribue sur chaque facteur : $\\left(a \\times b\\right)^{n} = a^{n} \\times b^{n}$. Ainsi $\\left(3 \\times 5\\right)^{2} = 3^{2} \\times 5^{2} = 9 \\times 25 = 225$.",
+      "difficulte": 1,
+      "tags": ["puissance-d-un-produit", "regle"]
+    },
+    {
+      "id": "5E-CH11-020",
+      "lecon": "Produit de puissances ; puissance d'un produit",
+      "type": "formule",
+      "recto": "Pourquoi l'exposant se distribue-t-il sur chaque facteur d'un produit ?",
+      "verso": "Parce que $\\left(3 \\times 5\\right)^{2}$ est le produit des quatre facteurs $3$, $5$, $3$ et $5$, que l'on peut regrouper librement en $\\left(3 \\times 3\\right) \\times \\left(5 \\times 5\\right)$.",
+      "difficulte": 2,
+      "tags": ["puissance-d-un-produit", "justification"]
+    },
+    {
+      "id": "5E-CH11-021",
+      "lecon": "Produit de puissances ; puissance d'un produit",
+      "type": "formule",
+      "recto": "Comment la puissance d'un produit permet-elle de calculer $40^{2}$ sans poser d'opération ?",
+      "verso": "On écrit $40 = 4 \\times 10$, d'où $40^{2} = 4^{2} \\times 10^{2} = 16 \\times 100 = 1\\,600$. Les zéros d'un nombre rond se traitent séparément.",
+      "difficulte": 2,
+      "tags": ["puissance-d-un-produit", "calcul-mental"]
+    },
+    {
+      "id": "5E-CH11-022",
+      "lecon": "Produit de puissances ; puissance d'un produit",
+      "type": "formule",
+      "recto": "Comment reconnaît-on que $9 \\times 25$ est le carré d'un nombre ?",
+      "verso": "En lisant la règle de droite à gauche : $9 \\times 25 = 3^{2} \\times 5^{2} = \\left(3 \\times 5\\right)^{2} = 15^{2}$.",
+      "difficulte": 3,
+      "tags": ["puissance-d-un-produit", "reconnaitre"]
+    },
+    {
+      "id": "5E-CH11-023",
+      "lecon": "Puissance d'une puissance",
+      "type": "formule",
+      "recto": "Quelle règle donne la puissance d'une puissance ?",
+      "verso": "On garde la base et on multiplie les exposants : $\\left(a^{n}\\right)^{m} = a^{n \\times m}$. Ainsi $\\left(2^{2}\\right)^{3} = 2^{6}$.",
+      "difficulte": 1,
+      "tags": ["puissance-d-une-puissance", "regle"]
+    },
+    {
+      "id": "5E-CH11-024",
+      "lecon": "Puissance d'une puissance",
+      "type": "formule",
+      "recto": "Pourquoi multiplie-t-on les exposants dans $\\left(a^{n}\\right)^{m}$ ?",
+      "verso": "Parce qu'on répète $m$ fois un paquet de $n$ facteurs. Compter $m$ paquets de $n$ facteurs revient à multiplier, ce qui donne $n \\times m$ facteurs.",
+      "difficulte": 2,
+      "tags": ["puissance-d-une-puissance", "justification"]
+    },
+    {
+      "id": "5E-CH11-025",
+      "lecon": "Puissance d'une puissance",
+      "type": "formule",
+      "recto": "Pourquoi $\\left(2^{2}\\right)^{3}$ et $2^{2} \\times 2^{3}$ ne donnent-ils pas le même nombre ?",
+      "verso": "Parce que la première expression multiplie les exposants et vaut $2^{6} = 64$, alors que la seconde les ajoute et vaut $2^{5} = 32$.",
+      "difficulte": 3,
+      "tags": ["puissance-d-une-puissance", "piege", "distinction"]
+    },
+    {
+      "id": "5E-CH11-026",
+      "lecon": "Puissance d'une puissance",
+      "type": "formule",
+      "recto": "Comment reconnaît-on, sur la forme d'une expression, laquelle des trois règles des puissances appliquer ?",
+      "verso": "Deux puissances de même base séparées par un signe $\\times$ : on ajoute. Une parenthèse contenant un produit : on distribue. Une parenthèse contenant déjà une puissance : on multiplie.",
+      "difficulte": 3,
+      "tags": ["trois-regles", "reconnaitre"]
+    },
+    {
+      "id": "5E-CH11-027",
+      "lecon": "Puissance d'une puissance",
+      "type": "formule",
+      "recto": "Dans quel ordre traite-t-on une expression comme $\\left(9^{3}\\right)^{2} \\times 9^{4}$ ?",
+      "verso": "De l'intérieur vers l'extérieur : on multiplie d'abord les exposants, ce qui donne $9^{6}$, puis on ajoute ceux du produit et l'on obtient $9^{10}$.",
+      "difficulte": 2,
+      "tags": ["trois-regles", "ordre", "enchainement"]
+    },
+    {
+      "id": "5E-CH11-028",
+      "lecon": "Puissance d'une puissance",
+      "type": "formule",
+      "recto": "Comment écrit-on $4^{3}$ sous forme d'une puissance de $2$ ?",
+      "verso": "En remarquant que $4 = 2^{2}$, ce qui donne $4^{3} = \\left(2^{2}\\right)^{3} = 2^{6}$. De la même façon, $8^{2} = \\left(2^{3}\\right)^{2} = 2^{6}$.",
+      "difficulte": 3,
+      "tags": ["changer-de-base", "puissance-d-une-puissance"]
+    },
+    {
+      "id": "5E-CH11-029",
+      "lecon": "Puissance d'une puissance",
+      "type": "formule",
+      "recto": "Comment compare-t-on $2^{12}$ et $4^{5}$ sans les calculer ?",
+      "verso": "On les ramène à la même base : $4^{5} = \\left(2^{2}\\right)^{5} = 2^{10}$. A base égale et supérieure à $1$, le plus grand exposant l'emporte, donc $2^{12}$ est le plus grand.",
+      "difficulte": 3,
+      "tags": ["comparaison", "changer-de-base"]
+    },
+    {
+      "id": "5E-CH11-030",
+      "lecon": "Puissance d'une puissance",
+      "type": "formule",
+      "recto": "Pourquoi $\\left(2^{2}\\right)^{3}$ et $\\left(2^{3}\\right)^{2}$ donnent-ils le même résultat ?",
+      "verso": "Parce que la multiplication des exposants hérite de la commutativité : trois paquets de deux facteurs et deux paquets de trois facteurs font six facteurs, soit $2^{6}$ dans les deux cas.",
+      "difficulte": 2,
+      "tags": ["puissance-d-une-puissance", "commutativite"]
+    }
+  ]
+}

@@ -1,0 +1,269 @@
+{
+  "niveau": "3ème",
+  "chapitre": "Chapitre 16 : Positions relatives d'une droite et d'un cercle",
+  "source": "maths/3eme/Chapitre_16_Droite_et_cercle",
+  "nombre_cartes": 29,
+  "cartes": [
+    {
+      "id": "3E-CH16-001",
+      "lecon": "Positions relatives d'une droite et d'un cercle",
+      "type": "definition",
+      "recto": "Pour un cercle de centre $O$, comment définit-on la distance de $O$ à une droite $\\left(d\\right)$ ?",
+      "verso": "C'est la longueur $OH$, où $H$ est le projeté orthogonal de $O$ sur $\\left(d\\right)$, c'est-à-dire le pied de la perpendiculaire à $\\left(d\\right)$ passant par $O$. C'est la plus courte distance de $O$ aux points de $\\left(d\\right)$.",
+      "difficulte": 1,
+      "tags": ["distance", "projete-orthogonal"]
+    },
+    {
+      "id": "3E-CH16-002",
+      "lecon": "Positions relatives d'une droite et d'un cercle",
+      "type": "formule",
+      "recto": "Quel critère permet de prévoir, sans tracer, le nombre de points communs à une droite et à un cercle ?",
+      "verso": "On compare la distance $d$ du centre à la droite et le rayon $R$. Si $d < R$, il y a deux points communs ; si $d = R$, un seul ; si $d > R$, aucun.",
+      "difficulte": 2,
+      "tags": ["positions-relatives", "critere"]
+    },
+    {
+      "id": "3E-CH16-003",
+      "lecon": "Positions relatives d'une droite et d'un cercle",
+      "type": "definition",
+      "recto": "Comment appelle-t-on une droite qui coupe un cercle en deux points ?",
+      "verso": "Une droite sécante au cercle. Le mot vient du latin secare, couper. La distance du centre à cette droite est alors inférieure au rayon.",
+      "difficulte": 1,
+      "tags": ["secante", "vocabulaire"]
+    },
+    {
+      "id": "3E-CH16-004",
+      "lecon": "Positions relatives d'une droite et d'un cercle",
+      "type": "definition",
+      "recto": "Comment appelle-t-on une droite qui n'a aucun point commun avec un cercle ?",
+      "verso": "Une droite extérieure au cercle. La distance du centre à cette droite est alors supérieure au rayon $R$.",
+      "difficulte": 1,
+      "tags": ["droite-exterieure", "vocabulaire"]
+    },
+    {
+      "id": "3E-CH16-005",
+      "lecon": "Positions relatives d'une droite et d'un cercle",
+      "type": "formule",
+      "recto": "A quelle condition sur la distance du centre une droite est-elle tangente à un cercle de rayon $R$ ?",
+      "verso": "Il faut que cette distance soit égale au rayon : $d = R$. L'unique point commun est alors le projeté orthogonal $H$ du centre sur la droite.",
+      "difficulte": 2,
+      "tags": ["tangente", "critere"]
+    },
+    {
+      "id": "3E-CH16-006",
+      "lecon": "Positions relatives d'une droite et d'un cercle",
+      "type": "formule",
+      "recto": "Combien de points communs, au maximum, une droite peut-elle avoir avec un cercle ?",
+      "verso": "Deux au maximum. Une droite et un cercle ne peuvent jamais avoir trois points communs.",
+      "difficulte": 2,
+      "tags": ["positions-relatives", "points-communs"]
+    },
+    {
+      "id": "3E-CH16-007",
+      "lecon": "Positions relatives d'une droite et d'un cercle",
+      "type": "formule",
+      "recto": "Quelle est la position relative d'un cercle et d'une droite passant par son centre ?",
+      "verso": "Elle est sécante, car la distance du centre à cette droite est nulle, donc inférieure au rayon. Elle coupe le cercle aux deux extrémités d'un diamètre.",
+      "difficulte": 2,
+      "tags": ["secante", "cas-particulier", "diametre"]
+    },
+    {
+      "id": "3E-CH16-008",
+      "lecon": "Positions relatives d'une droite et d'un cercle",
+      "type": "definition",
+      "recto": "Comment appelle-t-on le segment qui joint les deux points communs à un cercle et à une droite sécante ?",
+      "verso": "Une corde du cercle. Si la droite coupe le cercle en $A$ et en $B$, cette corde est le segment $\\left[AB\\right]$.",
+      "difficulte": 1,
+      "tags": ["corde", "vocabulaire"]
+    },
+    {
+      "id": "3E-CH16-009",
+      "lecon": "Positions relatives d'une droite et d'un cercle",
+      "type": "formule",
+      "recto": "Où se situe le projeté orthogonal $H$ du centre sur une droite sécante à un cercle ?",
+      "verso": "Au milieu de la corde $\\left[AB\\right]$. Le triangle $OAB$ est isocèle en $O$ puisque $OA = OB = R$, et la hauteur issue du sommet principal d'un triangle isocèle en est aussi la médiane.",
+      "difficulte": 2,
+      "tags": ["corde", "milieu", "isocele"]
+    },
+    {
+      "id": "3E-CH16-010",
+      "lecon": "Positions relatives d'une droite et d'un cercle",
+      "type": "formule",
+      "recto": "Comment calcule-t-on la longueur de la corde $\\left[AB\\right]$ à partir du rayon $R$ et de la distance $d$ du centre à la droite ?",
+      "verso": "Le triangle $OHA$ est rectangle en $H$, donc le théorème de Pythagore donne $HA^{2} = R^{2} - d^{2}$, puis $AB = 2 \\times HA$.",
+      "difficulte": 2,
+      "tags": ["corde", "pythagore", "calcul"]
+    },
+    {
+      "id": "3E-CH16-011",
+      "lecon": "Positions relatives d'une droite et d'un cercle",
+      "type": "formule",
+      "recto": "Pourquoi une droite dont la distance au centre dépasse le rayon ne rencontre-t-elle jamais le cercle ?",
+      "verso": "Parce que cette distance est la plus courte de toutes celles qui vont du centre aux points de la droite. Si même le point le plus proche est à plus de $R$ du centre, aucun point de la droite n'est à la distance $R$.",
+      "difficulte": 2,
+      "tags": ["droite-exterieure", "pourquoi"]
+    },
+    {
+      "id": "3E-CH16-012",
+      "lecon": "Positions relatives d'une droite et d'un cercle",
+      "type": "definition",
+      "recto": "Pourquoi la longueur mesurée du centre à un point quelconque d'une droite ne permet-elle pas de conclure sur la position relative ?",
+      "verso": "Parce que seule la distance mesurée perpendiculairement, celle du projeté orthogonal, se compare au rayon. Toute autre longueur est plus grande et ne décide de rien.",
+      "difficulte": 3,
+      "tags": ["distance", "piege"]
+    },
+    {
+      "id": "3E-CH16-013",
+      "lecon": "Positions relatives d'une droite et d'un cercle",
+      "type": "formule",
+      "recto": "Comment situe-t-on un point $M$ par rapport à un cercle de centre $O$ et de rayon $R$ ?",
+      "verso": "On compare $OM$ et $R$ : si $OM > R$, le point est à l'extérieur du cercle ; si $OM = R$, il est sur le cercle ; si $OM < R$, il est à l'intérieur.",
+      "difficulte": 2,
+      "tags": ["point", "cercle", "comparaison"]
+    },
+    {
+      "id": "3E-CH16-014",
+      "lecon": "La tangente à un cercle",
+      "type": "definition",
+      "recto": "Qu'est-ce que la tangente à un cercle en un point $A$ de ce cercle ?",
+      "verso": "C'est la droite qui n'a que le point $A$ en commun avec le cercle. Le point $A$ s'appelle le point de contact.",
+      "difficulte": 1,
+      "tags": ["tangente", "point-de-contact"]
+    },
+    {
+      "id": "3E-CH16-015",
+      "lecon": "La tangente à un cercle",
+      "type": "formule",
+      "recto": "Quelle propriété relie la tangente en $A$ à un cercle de centre $O$ et le rayon $\\left[OA\\right]$ ?",
+      "verso": "La tangente en $A$ est perpendiculaire au rayon $\\left[OA\\right]$ au point de contact : elle fait avec lui un angle de $90^{\\circ}$.",
+      "difficulte": 1,
+      "tags": ["tangente", "perpendiculaire", "rayon"]
+    },
+    {
+      "id": "3E-CH16-016",
+      "lecon": "La tangente à un cercle",
+      "type": "formule",
+      "recto": "Quelle propriété permet de démontrer qu'une droite est tangente en $A$ à un cercle de centre $O$ ?",
+      "verso": "La réciproque : si une droite passe par un point $A$ du cercle et si elle est perpendiculaire à $\\left(OA\\right)$, alors elle est tangente au cercle en $A$.",
+      "difficulte": 2,
+      "tags": ["tangente", "reciproque", "demonstration"]
+    },
+    {
+      "id": "3E-CH16-017",
+      "lecon": "La tangente à un cercle",
+      "type": "definition",
+      "recto": "Dans quel cas emploie-t-on la propriété de la tangente plutôt que sa réciproque ?",
+      "verso": "On emploie la propriété quand on sait déjà qu'une droite est tangente et qu'on veut en tirer un angle droit, par exemple pour appliquer Pythagore. La réciproque sert au contraire à prouver qu'une droite est tangente.",
+      "difficulte": 3,
+      "tags": ["tangente", "reciproque", "distinction"]
+    },
+    {
+      "id": "3E-CH16-018",
+      "lecon": "La tangente à un cercle",
+      "type": "formule",
+      "recto": "Combien de tangentes à un cercle passent par un point donné de ce cercle ?",
+      "verso": "Une seule. Toutes les autres droites passant par ce point recoupent le cercle en un second point.",
+      "difficulte": 2,
+      "tags": ["tangente", "unicite"]
+    },
+    {
+      "id": "3E-CH16-019",
+      "lecon": "La tangente à un cercle",
+      "type": "formule",
+      "recto": "Combien de tangentes à un cercle peut-on tracer depuis un point $I$ extérieur à ce cercle ?",
+      "verso": "Exactement deux. Elles touchent le cercle en deux points $A$ et $B$, disposés symétriquement de part et d'autre de la droite $\\left(OI\\right)$.",
+      "difficulte": 2,
+      "tags": ["tangente", "point-exterieur"]
+    },
+    {
+      "id": "3E-CH16-020",
+      "lecon": "La tangente à un cercle",
+      "type": "formule",
+      "recto": "Que peut-on dire des longueurs des deux tangentes issues d'un même point extérieur $I$ ?",
+      "verso": "Elles sont égales : si $A$ et $B$ sont les deux points de contact, alors $IA = IB$.",
+      "difficulte": 2,
+      "tags": ["tangente", "point-exterieur", "egalite"]
+    },
+    {
+      "id": "3E-CH16-021",
+      "lecon": "La tangente à un cercle",
+      "type": "formule",
+      "recto": "Pourquoi les deux tangentes issues d'un point extérieur $I$ ont-elles la même longueur ?",
+      "verso": "Les triangles $OAI$ et $OBI$ sont rectangles en $A$ et en $B$ et ont la même hypoténuse $\\left[OI\\right]$. Pythagore donne $IA^{2} = OI^{2} - R^{2} = IB^{2}$, donc $IA = IB$.",
+      "difficulte": 3,
+      "tags": ["tangente", "demonstration", "pythagore"]
+    },
+    {
+      "id": "3E-CH16-022",
+      "lecon": "La tangente à un cercle",
+      "type": "formule",
+      "recto": "Quelle égalité de Pythagore écrit-on lorsque $\\left(IA\\right)$ est tangente en $A$ à un cercle de centre $O$ ?",
+      "verso": "Le triangle $OAI$ est rectangle en $A$, d'hypoténuse $\\left[OI\\right]$, donc $OI^{2} = OA^{2} + IA^{2}$, où $OA$ est le rayon du cercle.",
+      "difficulte": 2,
+      "tags": ["tangente", "pythagore", "triangle-rectangle"]
+    },
+    {
+      "id": "3E-CH16-023",
+      "lecon": "La tangente à un cercle",
+      "type": "formule",
+      "recto": "Comment construit-on à l'équerre la tangente à un cercle de centre $O$ en un point $A$ de ce cercle ?",
+      "verso": "On trace le rayon $\\left[OA\\right]$, puis la perpendiculaire à $\\left(OA\\right)$ passant par $A$, en plaçant le sommet de l'angle droit de l'équerre en $A$. Cette perpendiculaire est la tangente cherchée.",
+      "difficulte": 2,
+      "tags": ["tangente", "construction"]
+    },
+    {
+      "id": "3E-CH16-024",
+      "lecon": "La tangente à un cercle",
+      "type": "formule",
+      "recto": "Quel cercle auxiliaire trace-t-on pour construire les deux tangentes issues d'un point $I$ extérieur à un cercle de centre $O$ ?",
+      "verso": "Le cercle de diamètre $\\left[OI\\right]$, donc de centre le milieu de $\\left[OI\\right]$. Il coupe le cercle de départ en deux points $A$ et $B$, qui sont les points de contact des tangentes $\\left(IA\\right)$ et $\\left(IB\\right)$.",
+      "difficulte": 2,
+      "tags": ["tangente", "construction", "point-exterieur"]
+    },
+    {
+      "id": "3E-CH16-025",
+      "lecon": "La tangente à un cercle",
+      "type": "formule",
+      "recto": "Pourquoi le cercle de diamètre $\\left[OI\\right]$ fournit-il les points de contact des tangentes issues de $I$ ?",
+      "verso": "Parce que les angles $\\widehat{OAI}$ et $\\widehat{OBI}$ sont inscrits dans un demi-cercle, donc droits. Les droites $\\left(IA\\right)$ et $\\left(IB\\right)$ sont ainsi perpendiculaires aux rayons en $A$ et en $B$.",
+      "difficulte": 3,
+      "tags": ["tangente", "construction", "angle-inscrit"]
+    },
+    {
+      "id": "3E-CH16-026",
+      "lecon": "La tangente à un cercle",
+      "type": "definition",
+      "recto": "Pourquoi est-il faux de dire que la tangente en $A$ est perpendiculaire à tous les rayons du cercle ?",
+      "verso": "La perpendicularité ne vaut qu'au point de contact. La tangente en $A$ est perpendiculaire au seul rayon $\\left[OA\\right]$, celui qui aboutit au point où elle touche le cercle.",
+      "difficulte": 3,
+      "tags": ["tangente", "piege", "perpendiculaire"]
+    },
+    {
+      "id": "3E-CH16-027",
+      "lecon": "La tangente à un cercle",
+      "type": "formule",
+      "recto": "Quelles sont les deux façons de démontrer qu'une droite est tangente à un cercle ?",
+      "verso": "Ou bien montrer que la distance du centre à la droite est égale au rayon, ou bien montrer que la droite passe par un point du cercle en y étant perpendiculaire au rayon. Un contact constaté sur un dessin ne démontre rien.",
+      "difficulte": 3,
+      "tags": ["tangente", "demonstration", "methode"]
+    },
+    {
+      "id": "3E-CH16-028",
+      "lecon": "La tangente à un cercle",
+      "type": "formule",
+      "recto": "Pourquoi une droite perpendiculaire à un rayon en son extrémité ne touche-t-elle le cercle qu'en un seul point ?",
+      "verso": "Parce que le point de contact est alors le point de la droite le plus proche du centre : il est à la distance $R$, tandis que tous les autres points de la droite sont plus loin que $R$, donc à l'extérieur du cercle.",
+      "difficulte": 3,
+      "tags": ["tangente", "pourquoi", "unicite"]
+    },
+    {
+      "id": "3E-CH16-029",
+      "lecon": "La tangente à un cercle",
+      "type": "definition",
+      "recto": "De quel mot latin vient le terme tangente ?",
+      "verso": "Du latin tangere, qui signifie toucher : la tangente est la droite qui touche le cercle sans le traverser. Le même mot a donné tangible.",
+      "difficulte": 1,
+      "tags": ["tangente", "etymologie"]
+    }
+  ]
+}

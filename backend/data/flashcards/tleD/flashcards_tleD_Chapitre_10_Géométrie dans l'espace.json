@@ -1,0 +1,350 @@
+{
+  "niveau": "Terminale D",
+  "chapitre": "Chapitre 10 : Géométrie dans l'espace",
+  "source": "maths/tleD/Chapitre_10_Geometrie_espace",
+  "nombre_cartes": 38,
+  "cartes": [
+    {
+      "id": "TD-CH10-001",
+      "lecon": "Vecteurs et produit scalaire dans l'espace",
+      "type": "definition",
+      "recto": "Comment définit-on un repère de l'espace ?",
+      "verso": "C'est la donnée d'un point $O$, l'origine, et de trois vecteurs $\\vec i$, $\\vec j$, $\\vec k$ non coplanaires, notée $(O,\\vec i,\\vec j,\\vec k)$. Tout point $M$ s'écrit alors d'une seule façon $\\overrightarrow{OM}=x\\,\\vec i+y\\,\\vec j+z\\,\\vec k$, et $(x\\,;y\\,;z)$ sont ses coordonnées.",
+      "difficulte": 1,
+      "tags": ["repere", "coordonnees", "espace"]
+    },
+    {
+      "id": "TD-CH10-002",
+      "lecon": "Vecteurs et produit scalaire dans l'espace",
+      "type": "definition",
+      "recto": "Quand une base $(\\vec i,\\vec j,\\vec k)$ de l'espace est-elle orthonormée ?",
+      "verso": "Lorsque les trois vecteurs sont unitaires, donc de norme $1$, et deux à deux orthogonaux. Le repère $(O,\\vec i,\\vec j,\\vec k)$ est alors dit orthonormé : c'est la condition exigée par toutes les formules de norme et de produit scalaire.",
+      "difficulte": 1,
+      "tags": ["base-orthonormee", "definition"]
+    },
+    {
+      "id": "TD-CH10-003",
+      "lecon": "Vecteurs et produit scalaire dans l'espace",
+      "type": "formule",
+      "recto": "Quelles sont les coordonnées du milieu $I$ du segment $[AB]$ dans l'espace ?",
+      "verso": "$I\\left(\\dfrac{x_A+x_B}{2}\\,;\\dfrac{y_A+y_B}{2}\\,;\\dfrac{z_A+z_B}{2}\\right)$ : on prend la moyenne coordonnée par coordonnée. De même, $\\overrightarrow{AB}$ a pour coordonnées $(x_B-x_A\\,;y_B-y_A\\,;z_B-z_A)$, comme dans le plan avec une ligne de plus.",
+      "difficulte": 1,
+      "tags": ["milieu", "coordonnees", "vecteur"]
+    },
+    {
+      "id": "TD-CH10-004",
+      "lecon": "Vecteurs et produit scalaire dans l'espace",
+      "type": "definition",
+      "recto": "Que signifie l'affirmation « trois vecteurs de l'espace sont coplanaires » ?",
+      "verso": "Qu'ils admettent des représentants situés dans un même plan. Une base de l'espace est justement formée de trois vecteurs non coplanaires : dans le plan, deux vecteurs non colinéaires suffisaient à tout engendrer ; dans l'espace, il en faut trois.",
+      "difficulte": 2,
+      "tags": ["coplanarite", "base", "espace"]
+    },
+    {
+      "id": "TD-CH10-005",
+      "lecon": "Vecteurs et produit scalaire dans l'espace",
+      "type": "formule",
+      "recto": "Quelle est la distance de deux points $A$ et $B$ dans un repère orthonormé de l'espace ?",
+      "verso": "$AB=\\sqrt{(x_B-x_A)^{2}+(y_B-y_A)^{2}+(z_B-z_A)^{2}}$, c'est-à-dire la norme du vecteur $\\overrightarrow{AB}$. Pour un vecteur $\\vec u(x\\,;y\\,;z)$, on a de même $\\|\\vec u\\|=\\sqrt{x^{2}+y^{2}+z^{2}}$.",
+      "difficulte": 1,
+      "tags": ["distance", "norme", "espace"]
+    },
+    {
+      "id": "TD-CH10-006",
+      "lecon": "Vecteurs et produit scalaire dans l'espace",
+      "type": "formule",
+      "recto": "Combien mesure la grande diagonale d'un pavé droit de dimensions $a$, $b$ et $c$ ?",
+      "verso": "$\\sqrt{a^{2}+b^{2}+c^{2}}$. C'est la plus grande longueur qui tienne dans le pavé : elle dépasse chacune des arêtes et chacune des diagonales de face, ce qui fournit un contrôle immédiat du résultat.",
+      "difficulte": 2,
+      "tags": ["diagonale", "pave-droit", "distance"]
+    },
+    {
+      "id": "TD-CH10-007",
+      "lecon": "Vecteurs et produit scalaire dans l'espace",
+      "type": "definition",
+      "recto": "Pourquoi la formule $\\|\\vec u\\|=\\sqrt{x^{2}+y^{2}+z^{2}}$ exige-t-elle un repère orthonormé ?",
+      "verso": "Parce qu'elle repose sur deux applications successives du théorème de Pythagore, l'une dans le plan de base, l'autre dans un plan vertical. Dans un repère quelconque, les axes ne sont pas perpendiculaires, Pythagore ne s'applique plus et la formule est fausse.",
+      "difficulte": 3,
+      "tags": ["norme", "repere-orthonorme", "piege"]
+    },
+    {
+      "id": "TD-CH10-008",
+      "lecon": "Vecteurs et produit scalaire dans l'espace",
+      "type": "formule",
+      "recto": "Comment calcule-t-on le produit scalaire de deux vecteurs de l'espace en base orthonormée ?",
+      "verso": "$\\vec u\\cdot\\vec v=xx'+yy'+zz'$, pour $\\vec u(x\\,;y\\,;z)$ et $\\vec v(x'\\,;y'\\,;z')$. Le critère d'orthogonalité en découle : $\\vec u\\perp\\vec v$ si et seulement si $\\vec u\\cdot\\vec v=0$.",
+      "difficulte": 1,
+      "tags": ["produit-scalaire", "orthogonalite"]
+    },
+    {
+      "id": "TD-CH10-009",
+      "lecon": "Vecteurs et produit scalaire dans l'espace",
+      "type": "formule",
+      "recto": "Quelles propriétés algébriques le produit scalaire possède-t-il dans l'espace ?",
+      "verso": "Il est symétrique, $\\vec u\\cdot\\vec v=\\vec v\\cdot\\vec u$, et bilinéaire, $(\\alpha\\vec u+\\beta\\vec v)\\cdot\\vec w=\\alpha\\,(\\vec u\\cdot\\vec w)+\\beta\\,(\\vec v\\cdot\\vec w)$ ; de plus $\\vec u\\cdot\\vec u=\\|\\vec u\\|^{2}$. Ces propriétés sont admises.",
+      "difficulte": 2,
+      "tags": ["produit-scalaire", "proprietes", "bilinearite"]
+    },
+    {
+      "id": "TD-CH10-010",
+      "lecon": "Vecteurs et produit scalaire dans l'espace",
+      "type": "formule",
+      "recto": "Comment obtient-on le cosinus de l'angle formé par deux vecteurs non nuls de l'espace ?",
+      "verso": "$\\cos\\theta=\\dfrac{\\vec u\\cdot\\vec v}{\\|\\vec u\\|\\times\\|\\vec v\\|}$, avec $0\\le\\theta\\le\\pi$. Pour l'angle $\\widehat{BAC}$ d'un triangle, il faut faire partir les deux vecteurs du sommet $A$ : $\\cos\\widehat{BAC}=\\dfrac{\\overrightarrow{AB}\\cdot\\overrightarrow{AC}}{AB\\times AC}$.",
+      "difficulte": 2,
+      "tags": ["angle", "cosinus", "produit-scalaire"]
+    },
+    {
+      "id": "TD-CH10-011",
+      "lecon": "Vecteurs et produit scalaire dans l'espace",
+      "type": "formule",
+      "recto": "Que lit-on sur le signe du produit scalaire de deux vecteurs non nuls ?",
+      "verso": "La nature de leur angle : positif, l'angle est aigu ; nul, l'angle est droit ; négatif, l'angle est obtus. Contrôle à faire ensuite : $\\cos\\theta$ doit appartenir à $[-1\\,;1]$, et une valeur comme $1{,}3$ signale l'oubli d'une racine dans une norme.",
+      "difficulte": 2,
+      "tags": ["produit-scalaire", "signe", "angle"]
+    },
+    {
+      "id": "TD-CH10-012",
+      "lecon": "Vecteurs et produit scalaire dans l'espace",
+      "type": "definition",
+      "recto": "Quelle erreur fait conclure faussement à une orthogonalité dans l'espace ?",
+      "verso": "Oublier le terme en $z$ et calculer $xx'+yy'$ comme dans le plan, alors que le produit scalaire de l'espace comporte trois termes. Retiens aussi que le résultat est un nombre, jamais un vecteur : on n'écrit pas de flèche sur $\\vec u\\cdot\\vec v$.",
+      "difficulte": 3,
+      "tags": ["produit-scalaire", "piege", "orthogonalite"]
+    },
+    {
+      "id": "TD-CH10-013",
+      "lecon": "Orientation et produit vectoriel",
+      "type": "definition",
+      "recto": "Quand une base orthonormée de l'espace est-elle dite directe ?",
+      "verso": "Lorsqu'elle respecte la règle de la main droite : le pouce donne $\\vec i$, l'index $\\vec j$ et le majeur $\\vec k$. Sinon elle est indirecte. L'orientation n'est pas un résultat que l'on démontre : c'est une convention prise une fois pour toutes sur l'espace.",
+      "difficulte": 1,
+      "tags": ["orientation", "base-directe", "main-droite"]
+    },
+    {
+      "id": "TD-CH10-014",
+      "lecon": "Orientation et produit vectoriel",
+      "type": "definition",
+      "recto": "Que voit l'observateur de la règle d'orientation lorsque la base est directe ?",
+      "verso": "Debout le long de $\\vec k$, les pieds à l'origine et la tête du côté de $\\vec k$, regardant dans la direction de $\\vec i$, il voit $\\vec j$ à sa gauche. Si la base est indirecte, il le voit à sa droite.",
+      "difficulte": 2,
+      "tags": ["orientation", "observateur", "base-directe"]
+    },
+    {
+      "id": "TD-CH10-015",
+      "lecon": "Orientation et produit vectoriel",
+      "type": "formule",
+      "recto": "Quelles manipulations des trois vecteurs conservent l'orientation d'une base ?",
+      "verso": "Les permutations circulaires : si $(\\vec i,\\vec j,\\vec k)$ est directe, alors $(\\vec j,\\vec k,\\vec i)$ et $(\\vec k,\\vec i,\\vec j)$ le sont aussi. Echanger deux vecteurs, en revanche, inverse l'orientation : $(\\vec i,\\vec k,\\vec j)$ et $(\\vec j,\\vec i,\\vec k)$ sont indirectes.",
+      "difficulte": 2,
+      "tags": ["orientation", "permutation", "base"]
+    },
+    {
+      "id": "TD-CH10-016",
+      "lecon": "Orientation et produit vectoriel",
+      "type": "definition",
+      "recto": "Quelles trois conditions caractérisent le produit vectoriel de deux vecteurs non colinéaires ?",
+      "verso": "Sa direction : $\\vec u\\wedge\\vec v$ est orthogonal à $\\vec u$ et à $\\vec v$, donc au plan qu'ils déterminent. Sa norme : $\\|\\vec u\\wedge\\vec v\\|=\\|\\vec u\\|\\,\\|\\vec v\\|\\sin\\theta$. Son sens : la base $(\\vec u,\\vec v,\\vec u\\wedge\\vec v)$ est directe.",
+      "difficulte": 2,
+      "tags": ["produit-vectoriel", "definition"]
+    },
+    {
+      "id": "TD-CH10-017",
+      "lecon": "Orientation et produit vectoriel",
+      "type": "formule",
+      "recto": "Quelles sont les coordonnées de $\\vec u\\wedge\\vec v$ en base orthonormée directe ?",
+      "verso": "$\\vec u\\wedge\\vec v=\\big(yz'-zy'\\ ;\\ zx'-xz'\\ ;\\ xy'-yx'\\big)$, pour $\\vec u(x\\,;y\\,;z)$ et $\\vec v(x'\\,;y'\\,;z')$. La base doit être directe : dans une base indirecte, la formule change de signe.",
+      "difficulte": 2,
+      "tags": ["produit-vectoriel", "coordonnees", "base-directe"]
+    },
+    {
+      "id": "TD-CH10-018",
+      "lecon": "Orientation et produit vectoriel",
+      "type": "formule",
+      "recto": "Que valent les produits vectoriels des vecteurs de base $\\vec i$, $\\vec j$ et $\\vec k$ ?",
+      "verso": "En base orthonormée directe, $\\vec i\\wedge\\vec j=\\vec k$, $\\vec j\\wedge\\vec k=\\vec i$ et $\\vec k\\wedge\\vec i=\\vec j$ : les trois égalités se déduisent l'une de l'autre par permutation circulaire.",
+      "difficulte": 1,
+      "tags": ["produit-vectoriel", "cas-de-reference"]
+    },
+    {
+      "id": "TD-CH10-019",
+      "lecon": "Orientation et produit vectoriel",
+      "type": "formule",
+      "recto": "Que devient le produit vectoriel lorsqu'on échange les deux vecteurs ?",
+      "verso": "Il change de signe : $\\vec v\\wedge\\vec u=-\\,\\vec u\\wedge\\vec v$, propriété appelée anticommutativité, et en particulier $\\vec u\\wedge\\vec u=\\vec 0$. L'échange renverse l'orientation de la base $(\\vec u,\\vec v,\\vec u\\wedge\\vec v)$, donc seul le sens du résultat peut s'ajuster.",
+      "difficulte": 2,
+      "tags": ["produit-vectoriel", "anticommutativite"]
+    },
+    {
+      "id": "TD-CH10-020",
+      "lecon": "Orientation et produit vectoriel",
+      "type": "formule",
+      "recto": "Que traduit l'égalité $\\vec u\\wedge\\vec v=\\vec 0$ ?",
+      "verso": "Que $\\vec u$ et $\\vec v$ sont colinéaires, l'un des deux pouvant être nul. Cela se lit sur la norme : si les vecteurs sont colinéaires, $\\theta$ vaut $0$ ou $\\pi$, donc $\\sin\\theta=0$. Ce critère remplace dans l'espace le déterminant du plan.",
+      "difficulte": 2,
+      "tags": ["produit-vectoriel", "colinearite", "critere"]
+    },
+    {
+      "id": "TD-CH10-021",
+      "lecon": "Orientation et produit vectoriel",
+      "type": "formule",
+      "recto": "Quel calcul permet de vérifier immédiatement un produit vectoriel ?",
+      "verso": "Le produit scalaire du résultat par chacun des deux vecteurs de départ : on doit obtenir $(\\vec u\\wedge\\vec v)\\cdot\\vec u=0$ et $(\\vec u\\wedge\\vec v)\\cdot\\vec v=0$. Cette vérification coûte deux lignes et repère aussitôt une erreur de signe.",
+      "difficulte": 2,
+      "tags": ["produit-vectoriel", "verification", "orthogonalite"]
+    },
+    {
+      "id": "TD-CH10-022",
+      "lecon": "Orientation et produit vectoriel",
+      "type": "definition",
+      "recto": "Quelle erreur de signe guette le calcul des coordonnées d'un produit vectoriel ?",
+      "verso": "Oublier le signe moins de la deuxième composante, qui vaut $zx'-xz'$, c'est-à-dire l'opposé du déterminant formé par les première et troisième lignes. C'est l'erreur de calcul la plus fréquente, et le contrôle par produit scalaire la détecte.",
+      "difficulte": 3,
+      "tags": ["produit-vectoriel", "signe", "piege"]
+    },
+    {
+      "id": "TD-CH10-023",
+      "lecon": "Orientation et produit vectoriel",
+      "type": "definition",
+      "recto": "Pourquoi l'écriture $\\vec u\\wedge\\vec v\\wedge\\vec w$ n'a-t-elle pas de sens ?",
+      "verso": "Parce que le produit vectoriel n'est pas associatif : en général $(\\vec u\\wedge\\vec v)\\wedge\\vec w$ et $\\vec u\\wedge(\\vec v\\wedge\\vec w)$ sont deux vecteurs différents. Il faut donc toujours des parenthèses pour indiquer l'ordre des deux opérations.",
+      "difficulte": 3,
+      "tags": ["produit-vectoriel", "associativite", "piege"]
+    },
+    {
+      "id": "TD-CH10-024",
+      "lecon": "Orientation et produit vectoriel",
+      "type": "formule",
+      "recto": "Comment obtient-on un vecteur normal au plan $(ABC)$ ?",
+      "verso": "En calculant $\\vec n=\\overrightarrow{AB}\\wedge\\overrightarrow{AC}$, à condition que $A$, $B$ et $C$ ne soient pas alignés : sans cette hypothèse le produit vectoriel serait nul et ne définirait aucune direction. Tout multiple non nul de $\\vec n$ convient également.",
+      "difficulte": 2,
+      "tags": ["vecteur-normal", "plan", "produit-vectoriel"]
+    },
+    {
+      "id": "TD-CH10-025",
+      "lecon": "Orientation et produit vectoriel",
+      "type": "formule",
+      "recto": "Pourquoi $\\overrightarrow{AB}\\wedge\\overrightarrow{AC}$ est-il orthogonal à tout vecteur du plan $(ABC)$ ?",
+      "verso": "Parce que tout vecteur du plan s'écrit $\\alpha\\overrightarrow{AB}+\\beta\\overrightarrow{AC}$ et que la bilinéarité du produit scalaire donne $\\vec n\\cdot\\vec t=\\alpha\\,\\big(\\vec n\\cdot\\overrightarrow{AB}\\big)+\\beta\\,\\big(\\vec n\\cdot\\overrightarrow{AC}\\big)=0$. Vérifier l'orthogonalité avec deux vecteurs non colinéaires suffit donc.",
+      "difficulte": 3,
+      "tags": ["vecteur-normal", "bilinearite", "demonstration"]
+    },
+    {
+      "id": "TD-CH10-026",
+      "lecon": "Distances, aires et volumes",
+      "type": "formule",
+      "recto": "Quelle est l'aire du parallélogramme construit sur deux vecteurs non colinéaires ?",
+      "verso": "$\\mathcal{A}=\\|\\vec u\\wedge\\vec v\\|$. Cette norme vaut $\\|\\vec u\\|\\,\\|\\vec v\\|\\sin\\theta$, c'est-à-dire base multipliée par hauteur, la hauteur étant la projection perpendiculaire du côté oblique et non sa longueur.",
+      "difficulte": 1,
+      "tags": ["aire", "parallelogramme", "produit-vectoriel"]
+    },
+    {
+      "id": "TD-CH10-027",
+      "lecon": "Distances, aires et volumes",
+      "type": "formule",
+      "recto": "Quelle est l'aire du triangle $ABD$ à partir de deux de ses côtés vectoriels ?",
+      "verso": "$\\mathcal{A}=\\dfrac12\\big\\|\\overrightarrow{AB}\\wedge\\overrightarrow{AD}\\big\\|$, moitié de l'aire du parallélogramme, puisqu'une diagonale le partage en deux triangles superposables. Oublier le facteur $\\dfrac12$ est une faute classique.",
+      "difficulte": 1,
+      "tags": ["aire", "triangle", "produit-vectoriel"]
+    },
+    {
+      "id": "TD-CH10-028",
+      "lecon": "Distances, aires et volumes",
+      "type": "formule",
+      "recto": "Que vaut au maximum la norme du produit vectoriel de deux vecteurs ?",
+      "verso": "Le produit des deux normes : $\\|\\vec u\\wedge\\vec v\\|\\le\\|\\vec u\\|\\times\\|\\vec v\\|$, car $\\sin\\theta\\le 1$, avec égalité si et seulement si $\\vec u$ et $\\vec v$ sont orthogonaux. Autrement dit, à longueurs de côtés fixées, c'est le rectangle qui a la plus grande aire.",
+      "difficulte": 2,
+      "tags": ["encadrement", "aire", "orthogonalite"]
+    },
+    {
+      "id": "TD-CH10-029",
+      "lecon": "Distances, aires et volumes",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on produit mixte de trois vecteurs de l'espace ?",
+      "verso": "Le nombre $(\\vec u\\wedge\\vec v)\\cdot\\vec w$, noté aussi $\\det(\\vec u,\\vec v,\\vec w)$. Sa valeur absolue donne le volume du parallélépipède construit sur les trois vecteurs : $V=\\big|(\\vec u\\wedge\\vec v)\\cdot\\vec w\\big|$.",
+      "difficulte": 2,
+      "tags": ["produit-mixte", "volume", "parallelepipede"]
+    },
+    {
+      "id": "TD-CH10-030",
+      "lecon": "Distances, aires et volumes",
+      "type": "formule",
+      "recto": "Quel est le volume du tétraèdre construit sur trois vecteurs $\\vec u$, $\\vec v$ et $\\vec w$ ?",
+      "verso": "$V=\\dfrac16\\big|(\\vec u\\wedge\\vec v)\\cdot\\vec w\\big|$. Le coefficient $\\dfrac16$ vient de $\\dfrac13\\times\\dfrac12$ : un tiers pour la pyramide, une moitié pour l'aire du triangle de base. Ce résultat est admis.",
+      "difficulte": 1,
+      "tags": ["volume", "tetraedre", "produit-mixte"]
+    },
+    {
+      "id": "TD-CH10-031",
+      "lecon": "Distances, aires et volumes",
+      "type": "formule",
+      "recto": "Que traduit l'annulation du produit mixte $(\\vec u\\wedge\\vec v)\\cdot\\vec w$ ?",
+      "verso": "Que les trois vecteurs sont coplanaires, le volume qu'ils construisent étant alors plat. C'est le critère de coplanarité, valable dans les deux sens, et il répond par un seul calcul.",
+      "difficulte": 2,
+      "tags": ["produit-mixte", "coplanarite", "critere"]
+    },
+    {
+      "id": "TD-CH10-032",
+      "lecon": "Distances, aires et volumes",
+      "type": "formule",
+      "recto": "Comment calcule-t-on la distance d'un point $M$ à une droite $(D)$ de l'espace ?",
+      "verso": "Si $(D)$ passe par $A$ et est dirigée par $\\vec u$ non nul, $d\\big(M,(D)\\big)=\\dfrac{\\big\\|\\overrightarrow{AM}\\wedge\\vec u\\big\\|}{\\|\\vec u\\|}$. Le résultat ne dépend ni du point $A$ choisi sur la droite, ni de la longueur de $\\vec u$.",
+      "difficulte": 2,
+      "tags": ["distance", "droite", "produit-vectoriel"]
+    },
+    {
+      "id": "TD-CH10-033",
+      "lecon": "Distances, aires et volumes",
+      "type": "formule",
+      "recto": "Pourquoi la distance d'un point à une droite s'écrit-elle comme un quotient de deux normes ?",
+      "verso": "Parce que l'aire du parallélogramme construit sur $\\overrightarrow{AM}$ et $\\vec u$ se calcule de deux façons : $\\big\\|\\overrightarrow{AM}\\wedge\\vec u\\big\\|$ d'une part, base multipliée par hauteur soit $\\|\\vec u\\|\\times d$ d'autre part. En égalant les deux expressions, on isole $d$.",
+      "difficulte": 3,
+      "tags": ["distance", "droite", "double-comptage"]
+    },
+    {
+      "id": "TD-CH10-034",
+      "lecon": "Distances, aires et volumes",
+      "type": "formule",
+      "recto": "Comment calcule-t-on la distance d'un point $M$ à un plan dont on connaît un vecteur normal ?",
+      "verso": "Si le plan passe par $A$ et a pour vecteur normal $\\vec n$, alors $d\\big(M,(\\mathcal{P})\\big)=\\dfrac{\\big|\\overrightarrow{AM}\\cdot\\vec n\\big|}{\\|\\vec n\\|}$. Lorsque le plan est donné par trois points non alignés, on prend $\\vec n=\\overrightarrow{AB}\\wedge\\overrightarrow{AC}$.",
+      "difficulte": 2,
+      "tags": ["distance", "plan", "vecteur-normal"]
+    },
+    {
+      "id": "TD-CH10-035",
+      "lecon": "Distances, aires et volumes",
+      "type": "definition",
+      "recto": "Comment ne pas confondre la distance à une droite et la distance à un plan ?",
+      "verso": "Pour un plan, on dispose d'un vecteur normal et c'est un produit scalaire qui apparaît, entre barres de valeur absolue ; pour une droite, on dispose d'un vecteur directeur et c'est un produit vectoriel, entre barres de norme. Dans les deux cas on divise par la norme du vecteur de référence.",
+      "difficulte": 3,
+      "tags": ["distance", "distinction", "piege"]
+    },
+    {
+      "id": "TD-CH10-036",
+      "lecon": "Distances, aires et volumes",
+      "type": "formule",
+      "recto": "Quelle forme prend l'équation cartésienne d'un plan de vecteur normal $\\vec n(a\\,;b\\,;c)$ ?",
+      "verso": "$ax+by+cz+d=0$, avec $\\vec n\\ne\\vec 0$ ; le réel $d$ se détermine en écrivant qu'un point connu du plan vérifie l'équation. Réciproquement, les coefficients de $x$, $y$ et $z$ se lisent directement comme les coordonnées d'un vecteur normal.",
+      "difficulte": 2,
+      "tags": ["equation-de-plan", "vecteur-normal"]
+    },
+    {
+      "id": "TD-CH10-037",
+      "lecon": "Distances, aires et volumes",
+      "type": "formule",
+      "recto": "Quelle est la distance de $M(x_0\\,;y_0\\,;z_0)$ au plan d'équation $ax+by+cz+d=0$ ?",
+      "verso": "$d\\big(M,(\\mathcal{P})\\big)=\\dfrac{|ax_0+by_0+cz_0+d|}{\\sqrt{a^{2}+b^{2}+c^{2}}}$. L'équation doit être écrite avec zéro au second membre : appliquer la formule à $2x-y+2z=3$ sans la réécrire $2x-y+2z-3=0$ donne un résultat faux.",
+      "difficulte": 2,
+      "tags": ["distance", "plan", "equation-de-plan"]
+    },
+    {
+      "id": "TD-CH10-038",
+      "lecon": "Distances, aires et volumes",
+      "type": "formule",
+      "recto": "Comment obtient-on une hauteur à partir d'un volume et d'une aire de base ?",
+      "verso": "Par $h=\\dfrac{3V}{\\mathcal{A}}$, tirée de la formule du volume d'une pyramide $V=\\dfrac13\\times\\mathcal{A}\\times h$. Elle donne par exemple la distance d'un sommet d'un tétraèdre au plan des trois autres, une fois le volume calculé.",
+      "difficulte": 2,
+      "tags": ["hauteur", "volume", "aire"]
+    }
+  ]
+}

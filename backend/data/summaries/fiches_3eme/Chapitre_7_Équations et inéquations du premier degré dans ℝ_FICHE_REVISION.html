@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Fiche de revision - 3eme - Chapitre 7 : Equations et inequations du premier degre dans R</title>
+<style>
+/* ===================================================================
+   FICHE DE REVISION, Collection Hakili Lab, Edition 2026
+   Feuille de style autonome, format A4 pret a imprimer.
+   Bleu #005CB9 · Vert #49A145
+   =================================================================== */
+:root{
+  --bleu:#005CB9; --bleu-fonce:#00429A; --bleu-pale:#E8F1FB; --bleu-bord:#B7D2EE;
+  --vert:#49A145; --vert-fonce:#2F7A2C; --vert-pale:#EDF7EC; --vert-bord:#BCE0B9;
+  --gris:#4A4A4A; --gris-clair:#E4E4E4; --rouge:#B3261E;
+}
+@page{
+  size:A4; margin:15mm;
+  @bottom-center{
+    content:"Collection Hakili Lab, Edition 2026  ·  Fiche de revision  ·  " counter(page) "/" counter(pages);
+    font-family:"Segoe UI",Calibri,Arial,sans-serif; font-size:6.6pt; color:#8A8A8A;
+  }
+}
+*{box-sizing:border-box;}
+body{
+  margin:0; font-family:"Segoe UI",Calibri,Arial,sans-serif;
+  font-size:8.4pt; line-height:1.26; color:#1B1B1B;
+}
+p{margin:0 0 3pt;}
+ul{margin:0 0 3pt; padding-left:11pt;}
+li{margin:0 0 1.2pt;}
+b,strong{color:var(--bleu-fonce);}
+
+/* ------------------------------ ENTETE ---------------------------- */
+.entete{
+  display:flex; align-items:stretch; border:1.6pt solid var(--bleu);
+  border-radius:2.5pt; overflow:hidden; margin-bottom:6pt;
+}
+.entete .num{
+  background:var(--bleu); color:#fff; font-size:20pt; font-weight:700;
+  padding:0 8pt; display:flex; align-items:center; justify-content:center; min-width:34pt;
+}
+.entete .txt{padding:3.5pt 8pt; flex:1;}
+.entete .niveau{
+  font-size:7pt; font-weight:700; letter-spacing:.9pt; color:var(--vert-fonce);
+}
+.entete h1{margin:0; font-size:13.5pt; line-height:1.12; color:var(--bleu-fonce); font-weight:700;}
+.entete .sous{font-size:7pt; color:var(--gris); margin-top:1pt;}
+
+/* --------------------------- BANDEAUX ----------------------------- */
+.bandeau{
+  color:#fff; font-weight:700; font-size:9pt; letter-spacing:1pt;
+  padding:2.4pt 7pt; border-radius:2pt; margin:3pt 0 4pt; break-after:avoid; page-break-after:avoid;
+}
+.bandeau.bleu{background:var(--bleu);}
+.bandeau.vert{background:var(--vert);}
+
+/* --------------------------- COLONNES ----------------------------- */
+.cols{column-count:2; column-gap:7mm; column-fill:balance;}
+
+.cols.bal{column-fill:balance;}
+.bloc{margin-bottom:5pt;}
+.keep{break-inside:avoid; page-break-inside:avoid;}
+
+/* --------------------------- LECONS ------------------------------- */
+h2.lecon{
+  margin:0 0 3pt; font-size:8.6pt; font-weight:700; color:#fff; background:var(--bleu-fonce);
+  padding:1.8pt 5pt; border-radius:1.5pt; break-after:avoid; page-break-after:avoid;
+}
+h3.rub{
+  margin:3.5pt 0 1.5pt; font-size:8.2pt; font-weight:700; color:var(--vert-fonce);
+  border-bottom:.7pt solid var(--vert-bord); padding-bottom:.8pt;
+  break-after:avoid; page-break-after:avoid;
+}
+
+/* --------------------------- ENCADRES ----------------------------- */
+.form{
+  background:var(--bleu-pale); border:.8pt solid var(--bleu-bord); border-left:2.6pt solid var(--bleu);
+  border-radius:2pt; padding:2.4pt 5pt; margin:2.2pt 0 3.4pt;
+  break-inside:avoid; page-break-inside:avoid;
+}
+.form .t{
+  display:block; font-size:6.8pt; font-weight:700; letter-spacing:.6pt;
+  color:var(--bleu); margin-bottom:1.5pt;
+}
+.form .c{text-align:center; font-size:9.1pt; margin:1.6pt 0;}
+.note{background:var(--vert-pale); border-left:2.4pt solid var(--vert); padding:2.4pt 5pt; border-radius:1.5pt; margin:2.5pt 0 4pt; break-inside:avoid;}
+
+/* --------------------------- TABLEAUX ----------------------------- */
+table{width:100%; border-collapse:collapse; font-size:7.6pt; margin:2pt 0 4pt; break-inside:avoid;}
+th{background:var(--bleu); color:#fff; font-weight:700; text-align:left; padding:1.8pt 4pt; font-size:7.2pt;}
+td{border:.6pt solid var(--gris-clair); padding:1.8pt 4pt; vertical-align:top;}
+tr{break-inside:avoid;}
+table.var td{text-align:center; font-size:8pt;}
+table.var td.lab{text-align:left; font-weight:700; color:var(--bleu-fonce); background:var(--bleu-pale);}
+
+/* ----------------------------- PIEGES ----------------------------- */
+table.pieges th:first-child{width:44%;}
+table.pieges td:first-child{color:var(--rouge); background:#FDF1F0;}
+.x{font-weight:700;}
+.v{color:var(--vert-fonce); font-weight:700;}
+
+/* ---------------------------- RECAP ------------------------------- */
+ol.recap{margin:0; padding-left:0; list-style:none; counter-reset:r;}
+ol.recap li{
+  counter-increment:r; position:relative; padding-left:13pt; margin-bottom:1.8pt;
+  break-inside:avoid;
+}
+ol.recap li::before{
+  content:counter(r); position:absolute; left:0; top:.3pt;
+  width:10pt; height:10pt; border-radius:50%; background:var(--vert); color:#fff;
+  font-size:6.6pt; font-weight:700; text-align:center; line-height:10pt;
+}
+
+/* --------------------------- MATHS -------------------------------- */
+.m{font-family:Cambria,Georgia,"Times New Roman",serif;}
+i,var{font-family:Cambria,Georgia,"Times New Roman",serif; font-style:italic;}
+.op{font-family:Cambria,Georgia,"Times New Roman",serif; font-style:normal;}
+.f{display:inline-block; vertical-align:middle; text-align:center;
+   margin:0 .12em; line-height:1.06; font-family:Cambria,Georgia,"Times New Roman",serif;}
+.f>span{display:block; padding:0 .2em;}
+.f>span:first-child{border-bottom:.6pt solid currentColor; padding-bottom:.08em;}
+.f>span:last-child{padding-top:.04em;}
+.rad{border-top:.6pt solid currentColor; padding-top:.12em;}
+/* line-height:0 evite que l'exposant n'ecarte les lignes ; position:relative le
+   repositionne sans qu'il heurte la barre de fraction ni le trait du radical. */
+sup,sub{font-size:.68em; line-height:0; position:relative; vertical-align:baseline;}
+sup{top:-.42em;}
+sub{bottom:-.22em;}
+.pt{white-space:nowrap;}
+/* Les fleches n'ont qu'un glyphe atrophie dans la fonte serif : on les force
+   en sans-serif, ou elles sont franches meme a 8 pt. */
+.ar{font-family:"Segoe UI",Calibri,Arial,"DejaVu Sans",sans-serif; font-style:normal;}
+
+/* ------------------- PIEGES : blocs erreur / correction ------------- */
+.pg{font-size:8.1pt; border-left:2.4pt solid var(--rouge); background:#FDF1F0; border-radius:1.5pt;
+    padding:2pt 5pt; margin:0 0 2.8pt; break-inside:avoid; page-break-inside:avoid;}
+.pg .err{color:var(--rouge); font-weight:600;}
+.pg .cor{color:#1B1B1B; margin-top:.8pt;}
+.pg .cor b{color:var(--bleu-fonce);}
+.v{color:var(--vert-fonce); font-weight:700;}
+
+</style>
+</head>
+<body>
+<header class="entete">
+  <div class="num">7</div>
+  <div class="txt">
+    <div class="niveau">3EME &middot; MATHEMATIQUES</div>
+    <h1>Equations et inéquations du premier degré dans &#8477;</h1>
+    <div class="sous">Leçon 1 : équations du premier degré &middot; Leçon 2 : problèmes se ramenant à une équation &middot; Leçon 3 : inéquations et représentation des solutions &middot; Leçon 4 : problèmes se ramenant à une inéquation &middot; Leçon 5 : produit nul et <i>x</i><sup>2</sup>&#8239;=&#8239;<i>a</i></div>
+  </div>
+</header>
+
+<div class="bandeau bleu" style="margin-top:0">L'ESSENTIEL</div>
+<div class="cols">
+
+<!-- ================= LECON 1 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 1&nbsp;: Equations du premier degré à une inconnue dans &#8477;</h2>
+<p>Une <b>équation du premier degré</b> à une inconnue est une <b>égalité</b> qui, après développement et réduction, s'écrit sous la forme <span class="pt"><i>ax</i>&#8239;+&#8239;<i>b</i>&#8239;=&#8239;0</span>, avec <span class="pt"><i>a</i>&#8239;&#8800;&#8239;0</span>. <b>Résoudre</b> cette équation, c'est trouver <b>tous</b> les nombres réels qui la rendent vraie : ce sont les <b>solutions</b>, et l'ensemble qu'elles forment se note <i>S</i>.</p></div>
+<div class="form">
+  <span class="t">SOLUTION UNIQUE&nbsp;: pour <i>a</i>&#8239;&#8800;&#8239;0</span>
+  <div class="c m"><i>ax</i>&#8239;+&#8239;<i>b</i>&#8239;=&#8239;0 donne <i>x</i>&#8239;=&#8239;<span class="f"><span>&#8722;<i>b</i></span><span><i>a</i></span></span></div>
+  <div class="c m"><i>S</i>&#8239;=&#8239;{<span class="f"><span>&#8722;<i>b</i></span><span><i>a</i></span></span>}</div>
+</div>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Les deux règles autorisées</h3>
+<ul>
+<li>On peut <b>ajouter ou retrancher</b> un même nombre aux <b>deux</b> membres.</li>
+<li>On peut <b>multiplier ou diviser</b> les deux membres par un même nombre <b>non nul</b>.</li>
+</ul>
+<p>Une égalité reste vraie si l'on traite ses deux membres <b>de la même façon</b>. La restriction « non nul » est essentielle : diviser par zéro n'a aucun sens.</p>
+<div class="form">
+  <span class="t">CONSEQUENCE PRATIQUE&nbsp;: LA TRANSPOSITION</span>
+  <div class="c m">un terme qui change de membre <b>change de signe</b></div>
+  <div class="c m">un facteur qui change de membre devient un <b>diviseur</b></div>
+</div>
+<p>La transposition n'est qu'un raccourci d'écriture : passer de <span class="pt"><i>x</i>&#8239;+&#8239;5&#8239;=&#8239;12</span> à <span class="pt"><i>x</i>&#8239;=&#8239;12&#8239;&#8722;&#8239;5</span>, c'est avoir retranché 5 des deux côtés.</p>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Marche à suivre</h3>
+<ul>
+<li><b>Développer et réduire</b> chaque membre s'il contient des parenthèses.</li>
+<li>S'il y a des <b>fractions</b>, multiplier les deux membres par un <b>dénominateur commun</b> pour les faire disparaître.</li>
+<li><b>Regrouper</b> les termes en <i>x</i> dans un membre, les nombres dans l'autre, en changeant le signe de chaque terme déplacé.</li>
+<li>Réduire jusqu'à <span class="pt"><i>ax</i>&#8239;=&#8239;<i>c</i></span>, puis <b>diviser par <i>a</i></b>.</li>
+<li><b>Vérifier</b> en remplaçant <i>x</i> par la valeur trouvée dans l'équation de <b>départ</b>, puis écrire <i>S</i>.</li>
+</ul>
+</div>
+
+<!-- ================= LECON 2 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 2&nbsp;: Problèmes se ramenant à une équation</h2>
+<div class="form">
+  <span class="t">LES CINQ ETAPES D'UNE MISE EN EQUATION</span>
+  <div class="c m">choisir <span class="ar">&#8594;</span> exprimer <span class="ar">&#8594;</span> traduire <span class="ar">&#8594;</span> résoudre <span class="ar">&#8594;</span> vérifier et conclure</div>
+</div></div>
+<ol style="margin:0 0 3pt;padding-left:13pt">
+<li><b>Choisir l'inconnue</b> et la nommer clairement : « soit <i>x</i> le nombre de … », en précisant l'<b>unité</b>.</li>
+<li><b>Exprimer</b> toutes les autres quantités utiles en fonction de <i>x</i>.</li>
+<li><b>Traduire</b> par une équation la phrase de l'énoncé qui donne une <b>égalité</b>.</li>
+<li><b>Résoudre</b> cette équation.</li>
+<li><b>Vérifier</b>, puis <b>conclure par une phrase</b> qui répond à la question posée.</li>
+</ol>
+<p><b>Cohérence du résultat.</b> La solution doit avoir un sens dans la situation : un nombre d'objets ou de personnes est un <b>entier positif</b>, un prix est <b>positif</b>. Une solution négative ou décimale, quand le contexte l'interdit, signale une <b>erreur de traduction</b>.</p>
+<div class="note"><b>Choix de l'inconnue.</b> Aucun choix n'est interdit : prends la quantité à partir de laquelle <b>toutes</b> les autres se décrivent le plus simplement. Devant « de plus que » ou « de moins que », prends pour inconnue celle qui apparaît <b>après</b> ces mots.</div>
+</div>
+
+<!-- ================= LECON 3 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 3&nbsp;: Inéquations du premier degré ; représentation des solutions</h2>
+<p>Une <b>inéquation du premier degré</b> à une inconnue est une <b>comparaison</b> de deux expressions à l'aide de l'un des signes <span class="m">&lt;</span>, <span class="m">&gt;</span>, <span class="m">&#8804;</span> ou <span class="m">&#8805;</span>, qui se ramène, après réduction, à <span class="pt"><i>ax</i>&#8239;+&#8239;<i>b</i>&#8239;&lt;&#8239;0</span> (ou avec l'un des trois autres signes).</p></div>
+<div class="form">
+  <span class="t">LES TROIS REGLES</span>
+  <div class="c m">ajouter ou retrancher un même nombre : <b>sens inchangé</b></div>
+  <div class="c m">multiplier ou diviser par un nombre <b>strictement positif</b> : <b>sens inchangé</b></div>
+  <div class="c m">multiplier ou diviser par un nombre <b>strictement négatif</b> : <b>SENS CHANGE</b></div>
+</div>
+<p>La troisième règle se voit sur la droite graduée : de <span class="pt">2&#8239;&lt;&#8239;3</span> on tire <span class="pt">&#8722;2&#8239;&gt;&#8239;&#8722;3</span>, car passer aux opposés revient à retourner la droite.</p>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Ensemble des solutions et représentation</h3>
+<p>Les solutions forment un <b>intervalle</b>. Le crochet est <b>fermé</b> (borne comprise) pour <span class="pt">&#8804;</span> et <span class="pt">&#8805;</span>, <b>ouvert</b> (borne exclue) pour <span class="pt">&lt;</span> et <span class="pt">&gt;</span>. On hachure ou on épaissit la partie de la droite graduée qui convient.</p>
+<table>
+<tr><th>Inéquation</th><th>Ensemble des solutions</th></tr>
+<tr><td class="m"><i>x</i>&#8239;&gt;&#8239;4,5</td><td class="m"><i>S</i>&#8239;=&#8239;]4,5&#8239;;&#8239;+&#8734;[</td></tr>
+<tr><td class="m"><i>x</i>&#8239;&#8805;&#8239;4,5</td><td class="m"><i>S</i>&#8239;=&#8239;[4,5&#8239;;&#8239;+&#8734;[</td></tr>
+<tr><td class="m"><i>x</i>&#8239;&lt;&#8239;3</td><td class="m"><i>S</i>&#8239;=&#8239;]&#8722;&#8734;&#8239;;&#8239;3[</td></tr>
+<tr><td class="m"><i>x</i>&#8239;&#8804;&#8239;3</td><td class="m"><i>S</i>&#8239;=&#8239;]&#8722;&#8734;&#8239;;&#8239;3]</td></tr>
+</table>
+<div class="note"><b>Contrôle.</b> Choisis un nombre de ton intervalle et vérifie qu'il convient dans l'inéquation de départ. S'il ne convient pas, c'est presque toujours qu'un <b>changement de sens</b> a été oublié.</div>
+</div>
+
+<!-- ================= LECON 4 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 4&nbsp;: Problèmes se ramenant à une inéquation</h2>
+<table>
+<tr><th>Expression de l'énoncé</th><th>Traduction</th></tr>
+<tr><td>au moins <i>n</i>, au minimum <i>n</i>, pas moins de <i>n</i></td><td class="m"><i>x</i>&#8239;&#8805;&#8239;<i>n</i></td></tr>
+<tr><td>au plus <i>n</i>, au maximum <i>n</i>, ne pas dépasser <i>n</i></td><td class="m"><i>x</i>&#8239;&#8804;&#8239;<i>n</i></td></tr>
+<tr><td>plus de <i>n</i>, dépasser <i>n</i>, strictement supérieur à <i>n</i></td><td class="m"><i>x</i>&#8239;&gt;&#8239;<i>n</i></td></tr>
+<tr><td>moins de <i>n</i>, strictement inférieur à <i>n</i></td><td class="m"><i>x</i>&#8239;&lt;&#8239;<i>n</i></td></tr>
+</table></div>
+<p>Les <b>étapes</b> sont celles de la leçon 2, avec une <b>inéquation</b> à la place de l'équation : choisir l'inconnue, exprimer, traduire, résoudre, <b>interpréter</b>, conclure.</p>
+<div class="form">
+  <span class="t">INTERPRETATION&nbsp;: QUAND L'INCONNUE COMPTE DES OBJETS</span>
+  <div class="c m">« au moins » <span class="ar">&#8594;</span> on arrondit <b>vers le haut</b></div>
+  <div class="c m">« au plus » <span class="ar">&#8594;</span> on arrondit <b>vers le bas</b></div>
+</div>
+<p>La réponse doit être un <b>entier</b> : <span class="pt"><i>x</i>&#8239;&#8805;&#8239;37,5</span> donne <b>38</b>, et non 37, car il faut <b>dépasser</b> le seuil.</p>
+</div>
+
+<!-- ================= LECON 5 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 5&nbsp;: Equations se ramenant au second degré : produit nul et <i>x</i><sup>2</sup>&#8239;=&#8239;<i>a</i></h2>
+<div class="form">
+  <span class="t">PROPRIETE DU PRODUIT NUL</span>
+  <div class="c m"><i>A</i>&#8239;&#215;&#8239;<i>B</i>&#8239;=&#8239;0 <b>si et seulement si</b> <i>A</i>&#8239;=&#8239;0&nbsp;&nbsp;<b>ou</b>&nbsp;&nbsp;<i>B</i>&#8239;=&#8239;0</div>
+</div></div>
+<p>Un produit de facteurs est nul <b>si et seulement si</b> au moins un de ses facteurs est nul. Le mot important est <b>ou</b> : il n'exige pas que les deux facteurs soient nuls en même temps.</p>
+<p><b>Equation produit.</b> Pour résoudre <span class="pt">(<i>ax</i>&#8239;+&#8239;<i>b</i>)(<i>cx</i>&#8239;+&#8239;<i>d</i>)&#8239;=&#8239;0</span>, on résout <b>séparément</b> <span class="pt"><i>ax</i>&#8239;+&#8239;<i>b</i>&#8239;=&#8239;0</span> et <span class="pt"><i>cx</i>&#8239;+&#8239;<i>d</i>&#8239;=&#8239;0</span> : l'équation a en général <b>deux</b> solutions.</p>
+</div>
+
+<div class="bloc">
+<h3 class="rub">L'équation <span class="m"><i>x</i><sup>2</sup>&#8239;=&#8239;<i>a</i></span></h3>
+<table>
+<tr><th>Equation</th><th>Solutions</th></tr>
+<tr><td class="m"><i>x</i><sup>2</sup>&#8239;=&#8239;<i>a</i>, avec <i>a</i>&#8239;&gt;&#8239;0</td><td>deux solutions : &#8730;<span class="rad"><i>a</i></span> et &#8722;&#8730;<span class="rad"><i>a</i></span></td></tr>
+<tr><td class="m"><i>x</i><sup>2</sup>&#8239;=&#8239;0</td><td>une seule solution : 0</td></tr>
+<tr><td class="m"><i>x</i><sup>2</sup>&#8239;=&#8239;<i>a</i>, avec <i>a</i>&#8239;&lt;&#8239;0</td><td>aucune solution : un carré n'est jamais négatif</td></tr>
+</table>
+<h3 class="rub">Se ramener à un produit</h3>
+<p>On <b>transpose tout dans un membre</b> pour obtenir « … &#8239;=&#8239;0 », puis on <b>factorise</b> : facteur commun, ou identité remarquable.</p>
+<div class="form">
+  <span class="t">DIFFERENCE DE DEUX CARRES</span>
+  <div class="c m"><i>x</i><sup>2</sup>&#8239;&#8722;&#8239;<i>a</i><sup>2</sup>&#8239;=&#8239;(<i>x</i>&#8239;&#8722;&#8239;<i>a</i>)(<i>x</i>&#8239;+&#8239;<i>a</i>)</div>
+</div>
+<p>On applique ensuite le produit nul, on résout chaque équation du premier degré obtenue, puis on <b>vérifie</b> chaque solution dans l'équation de départ.</p>
+</div>
+
+</div>
+
+<div class="bandeau vert">PIEGES ET ERREURS FREQUENTES</div>
+<div class="cols">
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> <span class="pt"><i>x</i>&#8239;+&#8239;5&#8239;=&#8239;12</span> donne <span class="pt"><i>x</i>&#8239;=&#8239;12&#8239;+&#8239;5</span> &nbsp;&middot;&nbsp; <span class="pt">3<i>x</i>&#8239;=&#8239;12</span> donne <span class="pt"><i>x</i>&#8239;=&#8239;12&#8239;&#8722;&#8239;3</span></div><div class="cor"><span class="v">&#10003;</span> Un terme qui change de membre <b>change de signe</b> : <span class="pt"><i>x</i>&#8239;=&#8239;12&#8239;&#8722;&#8239;5&#8239;=&#8239;7</span>. Un <b>facteur</b>, lui, devient un <b>diviseur</b> : <span class="pt"><i>x</i>&#8239;=&#8239;12&#8239;&#247;&#8239;3&#8239;=&#8239;4</span>. C'est l'erreur numéro un du chapitre, et la vérification dans l'équation de départ la détecte aussitôt.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> <span class="pt">&#8722;3(2<i>x</i>&#8239;+&#8239;1)&#8239;=&#8239;&#8722;6<i>x</i>&#8239;+&#8239;3</span> &nbsp;&middot;&nbsp; <span class="pt">&#8722;<i>x</i>&#8239;=&#8239;17</span> donne <span class="pt"><i>x</i>&#8239;=&#8239;17</span></div><div class="cor"><span class="v">&#10003;</span> Le signe moins devant une parenthèse multiplie <b>chaque</b> terme : <span class="pt">&#8722;3(2<i>x</i>&#8239;+&#8239;1)&#8239;=&#8239;&#8722;6<i>x</i>&#8239;&#8722;&#8239;3</span>. Et <span class="pt">&#8722;<i>x</i>&#8239;=&#8239;17</span> se divise par <span class="pt">&#8722;1</span> : <span class="pt"><i>x</i>&#8239;=&#8239;&#8722;17</span>.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> <span class="pt">&#8722;3<i>x</i>&#8239;&lt;&#8239;12</span> donne <span class="pt"><i>x</i>&#8239;&lt;&#8239;&#8722;4</span></div><div class="cor"><span class="v">&#10003;</span> On divise par <span class="pt">&#8722;3</span>, un nombre <b>strictement négatif</b> : le <b>sens change</b>, donc <span class="pt"><i>x</i>&#8239;&gt;&#8239;&#8722;4</span>. Erreur la plus fréquente du chapitre. Contrôle : <span class="pt"><i>x</i>&#8239;=&#8239;0</span> donne <span class="pt">0&#8239;&lt;&#8239;12</span>, vrai, et 0 est bien dans <span class="pt">]&#8722;4&#8239;;&#8239;+&#8734;[</span>.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> Pour <span class="pt"><i>x</i>&#8239;&lt;&#8239;2</span>, on écrit <span class="pt"><i>S</i>&#8239;=&#8239;]&#8722;&#8734;&#8239;;&#8239;2]</span> &nbsp;&middot;&nbsp; « la solution est <span class="pt"><i>x</i>&#8239;=&#8239;1</span> »</div><div class="cor"><span class="v">&#10003;</span> Pour <span class="pt">&lt;</span> et <span class="pt">&gt;</span> la borne est <b>exclue</b>, le crochet est <b>ouvert</b> : <span class="pt"><i>S</i>&#8239;=&#8239;]&#8722;&#8734;&#8239;;&#8239;2[</span>. Le crochet n'est fermé que pour <span class="pt">&#8804;</span> et <span class="pt">&#8805;</span>. Et la réponse à une inéquation est un <b>ensemble</b>, jamais un seul nombre.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> « Awa a 8 ans de plus que Bintou » : si Awa a <i>x</i> ans, Bintou en a <span class="pt"><i>x</i>&#8239;+&#8239;8</span> &nbsp;&middot;&nbsp; on pose « <i>x</i> » sans dire ce que c'est, et on termine par « <span class="pt"><i>x</i>&#8239;=&#8239;200&#8239;000</span> »</div><div class="cor"><span class="v">&#10003;</span> La phrase dit <span class="pt">Awa&#8239;=&#8239;Bintou&#8239;+&#8239;8</span>, donc Bintou a <span class="pt"><i>x</i>&#8239;&#8722;&#8239;8</span> ans. Une inconnue se <b>définit</b> avant d'être utilisée (« soit <i>x</i> le prix d'une chèvre en francs »), et un problème se termine par une <b>phrase de conclusion</b>, pas par une valeur de <i>x</i>.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> <span class="pt"><i>x</i>&#8239;&#8805;&#8239;37,5</span> donne 37 articles &nbsp;&middot;&nbsp; on compte la recette comme un bénéfice &nbsp;&middot;&nbsp; on conclut par « <span class="pt"><i>x</i>&#8239;&#8805;&#8239;30</span> »</div><div class="cor"><span class="v">&#10003;</span> L'arrondi ne suit pas la règle habituelle : pour un « <b>au moins</b> », on arrondit <b>vers le haut</b>, donc <b>38</b>. Un bénéfice net se calcule <b>charges fixes déduites</b>. Et la conclusion se rédige : « le menuisier doit vendre au moins 30 tabourets ».</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> <span class="pt"><i>x</i><sup>2</sup>&#8239;=&#8239;5<i>x</i></span> donne <span class="pt"><i>x</i>&#8239;=&#8239;5</span> &nbsp;&middot;&nbsp; <span class="pt"><i>x</i><sup>2</sup>&#8239;=&#8239;16</span> donne <span class="pt"><i>x</i>&#8239;=&#8239;4</span> &nbsp;&middot;&nbsp; « <span class="pt"><i>x</i>&#8239;=&#8239;3</span> <b>et</b> <span class="pt"><i>x</i>&#8239;=&#8239;&#8722;2</span> »</div><div class="cor"><span class="v">&#10003;</span> Ne <b>jamais diviser par <i>x</i></b>, qui peut être nul : on transpose et on factorise, <span class="pt"><i>x</i>(<i>x</i>&#8239;&#8722;&#8239;5)&#8239;=&#8239;0</span>, d'où <span class="pt"><i>S</i>&#8239;=&#8239;{0&#8239;;&#8239;5}</span>. Pour <span class="pt"><i>a</i>&#8239;&gt;&#8239;0</span>, <span class="pt"><i>x</i><sup>2</sup>&#8239;=&#8239;<i>a</i></span> a <b>deux</b> solutions : <span class="pt"><i>S</i>&#8239;=&#8239;{&#8722;4&#8239;;&#8239;4}</span>. Enfin le produit nul donne des solutions séparées par un « <b>ou</b> », jamais par un « et ».</div></div>
+
+</div>
+
+<div class="bandeau bleu">A SAVOIR PAR COEUR AVANT LE DEVOIR</div>
+<div class="cols">
+<ol class="recap">
+<li>Une équation du premier degré se ramène à <span class="pt"><i>ax</i>&#8239;+&#8239;<i>b</i>&#8239;=&#8239;0</span> avec <span class="pt"><i>a</i>&#8239;&#8800;&#8239;0</span> : <b>une seule</b> solution, <span class="pt"><i>x</i>&#8239;=&#8239;<span class="f"><span>&#8722;<i>b</i></span><span><i>a</i></span></span></span>, et <span class="pt"><i>S</i>&#8239;=&#8239;{<span class="f"><span>&#8722;<i>b</i></span><span><i>a</i></span></span>}</span>.</li>
+<li>Les <b>deux règles</b> : ajouter ou retrancher un même nombre aux deux membres ; multiplier ou diviser les deux membres par un même nombre <b>non nul</b>. D'où la <b>transposition</b> : un terme change de membre en <b>changeant de signe</b>, un facteur devient un <b>diviseur</b>.</li>
+<li>Toujours <b>vérifier</b> la valeur trouvée dans l'équation <b>de départ</b>, puis écrire l'ensemble des solutions.</li>
+<li><b>Mise en équation</b> : choisir et <b>définir</b> l'inconnue avec son unité, exprimer, traduire, résoudre, vérifier la cohérence, <b>conclure par une phrase</b>.</li>
+<li><b>Inéquation</b> : on garde le sens en ajoutant ou en retranchant, et en multipliant ou divisant par un nombre <b>strictement positif</b> ; on <b>change le sens</b> en multipliant ou divisant par un nombre <b>strictement négatif</b>.</li>
+<li>Les solutions d'une inéquation forment un <b>intervalle</b> : <span class="pt">]4,5&#8239;;&#8239;+&#8734;[</span> pour <span class="pt"><i>x</i>&#8239;&gt;&#8239;4,5</span>, <span class="pt">]&#8722;&#8734;&#8239;;&#8239;3]</span> pour <span class="pt"><i>x</i>&#8239;&#8804;&#8239;3</span>. Crochet <b>fermé</b> pour <span class="pt">&#8804;</span> et <span class="pt">&#8805;</span>, <b>ouvert</b> pour <span class="pt">&lt;</span> et <span class="pt">&gt;</span>.</li>
+<li><b>Mots-clés</b> : « au moins » <span class="ar">&#8594;</span> <span class="pt">&#8805;</span>, « au plus » <span class="ar">&#8594;</span> <span class="pt">&#8804;</span>, « plus de » <span class="ar">&#8594;</span> <span class="pt">&gt;</span>, « moins de » <span class="ar">&#8594;</span> <span class="pt">&lt;</span>. Pour un nombre d'objets, on arrondit <b>vers le haut</b> après un « au moins », <b>vers le bas</b> après un « au plus ».</li>
+<li><b>Produit nul</b> : <span class="pt"><i>A</i>&#8239;&#215;&#8239;<i>B</i>&#8239;=&#8239;0</span> équivaut à <span class="pt"><i>A</i>&#8239;=&#8239;0</span> <b>ou</b> <span class="pt"><i>B</i>&#8239;=&#8239;0</span>. Transposer, factoriser (facteur commun ou <span class="pt"><i>x</i><sup>2</sup>&#8239;&#8722;&#8239;<i>a</i><sup>2</sup>&#8239;=&#8239;(<i>x</i>&#8239;&#8722;&#8239;<i>a</i>)(<i>x</i>&#8239;+&#8239;<i>a</i>)</span>), jamais diviser par <i>x</i>. Et <span class="pt"><i>x</i><sup>2</sup>&#8239;=&#8239;<i>a</i></span> : deux solutions si <span class="pt"><i>a</i>&#8239;&gt;&#8239;0</span>, une si <span class="pt"><i>a</i>&#8239;=&#8239;0</span>, aucune si <span class="pt"><i>a</i>&#8239;&lt;&#8239;0</span>.</li>
+</ol>
+</div>
+
+</body>
+</html>

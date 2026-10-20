@@ -1,0 +1,314 @@
+{
+  "niveau": "3ème",
+  "chapitre": "Chapitre 4 : Racine carrée d'un nombre réel positif",
+  "source": "maths/3eme/Chapitre_4_Racine_carree",
+  "nombre_cartes": 34,
+  "cartes": [
+    {
+      "id": "3E-CH04-001",
+      "lecon": "Racine carrée et carrés parfaits",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on racine carrée d'un réel positif $a$ ?",
+      "verso": "C'est le nombre positif, noté $\\sqrt{a}$, dont le carré vaut $a$ : $\\sqrt{a} \\times \\sqrt{a} = a$, ce que l'on écrit aussi $\\left(\\sqrt{a}\\right)^{2} = a$.",
+      "difficulte": 1,
+      "tags": ["racine-carree", "definition"]
+    },
+    {
+      "id": "3E-CH04-002",
+      "lecon": "Racine carrée et carrés parfaits",
+      "type": "definition",
+      "recto": "Pour quelles valeurs de $a$ l'écriture $\\sqrt{a}$ a-t-elle un sens ?",
+      "verso": "Seulement pour $a \\ge 0$. Un nombre négatif n'a pas de racine carrée : l'écriture $\\sqrt{-9}$ ne désigne rien, car aucune aire n'est négative.",
+      "difficulte": 2,
+      "tags": ["racine-carree", "condition", "nombre-negatif"]
+    },
+    {
+      "id": "3E-CH04-003",
+      "lecon": "Racine carrée et carrés parfaits",
+      "type": "definition",
+      "recto": "Qu'est-ce qu'un carré parfait ?",
+      "verso": "C'est un nombre dont la racine carrée est un entier. Les premiers sont $1$, $4$, $9$, $16$, $25$, $36$, $49$, $64$, $81$, $100$, $121$ et $144$.",
+      "difficulte": 1,
+      "tags": ["carre-parfait", "definition"]
+    },
+    {
+      "id": "3E-CH04-004",
+      "lecon": "Racine carrée et carrés parfaits",
+      "type": "definition",
+      "recto": "Que représente $\\sqrt{a}$ pour un carré d'aire $a$ ?",
+      "verso": "C'est la longueur de son côté. Chercher une racine carrée, c'est chercher un côté connaissant une aire, ce qui explique que le résultat soit toujours positif.",
+      "difficulte": 1,
+      "tags": ["racine-carree", "aire", "cote"]
+    },
+    {
+      "id": "3E-CH04-005",
+      "lecon": "Racine carrée et carrés parfaits",
+      "type": "formule",
+      "recto": "Comment trouve-t-on de tête la racine carrée d'un nombre décimal comme $0{,}49$ ?",
+      "verso": "On compte les chiffres après la virgule par paires pour retrouver un carré parfait : $0{,}49 = 0{,}7^{2}$, donc $\\sqrt{0{,}49} = 0{,}7$. De même $\\sqrt{0{,}04} = 0{,}2$.",
+      "difficulte": 2,
+      "tags": ["racine-carree", "decimal", "calcul-mental"]
+    },
+    {
+      "id": "3E-CH04-006",
+      "lecon": "Racine carrée et carrés parfaits",
+      "type": "formule",
+      "recto": "Comment encadre-t-on $\\sqrt{a}$ entre deux entiers consécutifs quand $a$ n'est pas un carré parfait ?",
+      "verso": "On encadre $a$ par les deux carrés parfaits voisins. Ainsi $49 < 50 < 64$, c'est-à-dire $7^{2} < 50 < 8^{2}$, donne $7 < \\sqrt{50} < 8$.",
+      "difficulte": 2,
+      "tags": ["encadrement", "carre-parfait"]
+    },
+    {
+      "id": "3E-CH04-007",
+      "lecon": "Calculs sur les radicaux",
+      "type": "formule",
+      "recto": "Que vaut $\\sqrt{a \\times b}$ pour deux réels positifs $a$ et $b$ ?",
+      "verso": "$\\sqrt{a \\times b} = \\sqrt{a} \\times \\sqrt{b}$, pour $a \\ge 0$ et $b \\ge 0$. La racine carrée traverse le produit.",
+      "difficulte": 1,
+      "tags": ["radical", "produit"]
+    },
+    {
+      "id": "3E-CH04-008",
+      "lecon": "Calculs sur les radicaux",
+      "type": "formule",
+      "recto": "Que vaut la racine carrée d'un quotient $\\dfrac{a}{b}$ ?",
+      "verso": "$\\sqrt{\\dfrac{a}{b}} = \\dfrac{\\sqrt{a}}{\\sqrt{b}}$, à condition que $a \\ge 0$ et $b > 0$ : le dénominateur doit être strictement positif.",
+      "difficulte": 2,
+      "tags": ["radical", "quotient", "condition"]
+    },
+    {
+      "id": "3E-CH04-009",
+      "lecon": "Calculs sur les radicaux",
+      "type": "definition",
+      "recto": "Que signifie simplifier un radical comme $\\sqrt{18}$ ?",
+      "verso": "C'est en extraire le plus grand facteur carré parfait : $\\sqrt{18} = \\sqrt{9 \\times 2} = 3\\sqrt{2}$. Ce n'est pas une valeur approchée, c'est la même valeur exacte écrite plus simplement.",
+      "difficulte": 2,
+      "tags": ["radical", "simplification"]
+    },
+    {
+      "id": "3E-CH04-010",
+      "lecon": "Calculs sur les radicaux",
+      "type": "formule",
+      "recto": "A quelle condition peut-on additionner ou soustraire deux radicaux ?",
+      "verso": "Seulement s'ils portent le même nombre sous le radical : $a\\sqrt{c} + b\\sqrt{c} = \\left(a + b\\right)\\sqrt{c}$. C'est exactement la règle qui sert à réduire $3x + 5x$.",
+      "difficulte": 2,
+      "tags": ["radical", "addition", "condition"]
+    },
+    {
+      "id": "3E-CH04-011",
+      "lecon": "Calculs sur les radicaux",
+      "type": "formule",
+      "recto": "Pourquoi $\\sqrt{a + b}$ n'est-il pas égal à $\\sqrt{a} + \\sqrt{b}$ ?",
+      "verso": "Un contre-exemple suffit : $\\sqrt{9 + 16} = \\sqrt{25} = 5$, alors que $\\sqrt{9} + \\sqrt{16} = 3 + 4 = 7$. La propriété vaut pour le produit et le quotient, jamais pour la somme.",
+      "difficulte": 3,
+      "tags": ["radical", "somme", "piege"]
+    },
+    {
+      "id": "3E-CH04-012",
+      "lecon": "Calculs sur les radicaux",
+      "type": "formule",
+      "recto": "Pourquoi la racine carrée traverse-t-elle le produit ?",
+      "verso": "Le nombre $\\sqrt{a} \\times \\sqrt{b}$ est positif et son carré vaut $a \\times b$. Or $\\sqrt{a \\times b}$ est le seul nombre positif dont le carré vaut $a \\times b$ : les deux nombres sont donc égaux.",
+      "difficulte": 3,
+      "tags": ["radical", "produit", "demonstration"]
+    },
+    {
+      "id": "3E-CH04-013",
+      "lecon": "Calculs sur les radicaux",
+      "type": "formule",
+      "recto": "Que faut-il faire avant de déclarer qu'une somme comme $\\sqrt{8} + \\sqrt{18}$ ne se réduit pas ?",
+      "verso": "Simplifier chaque radical : $\\sqrt{8} = 2\\sqrt{2}$ et $\\sqrt{18} = 3\\sqrt{2}$, donc la somme vaut $5\\sqrt{2}$. Deux radicaux différents au premier regard peuvent devenir semblables.",
+      "difficulte": 3,
+      "tags": ["radical", "addition", "simplification"]
+    },
+    {
+      "id": "3E-CH04-014",
+      "lecon": "Comparaison par les carrés",
+      "type": "formule",
+      "recto": "Comment compare-t-on deux réels positifs écrits avec des radicaux ?",
+      "verso": "On compare leurs carrés : pour $a$ et $b$ positifs, $a < b$ si et seulement si $a^{2} < b^{2}$. Les radicaux disparaissent et il ne reste que des nombres simples.",
+      "difficulte": 2,
+      "tags": ["comparaison", "carre"]
+    },
+    {
+      "id": "3E-CH04-015",
+      "lecon": "Comparaison par les carrés",
+      "type": "formule",
+      "recto": "Comment calcule-t-on le carré d'un nombre écrit sous la forme $a\\sqrt{b}$ ?",
+      "verso": "On élève séparément le facteur et le radical : $\\left(a\\sqrt{b}\\right)^{2} = a^{2} \\times b$. Ainsi $\\left(7\\sqrt{2}\\right)^{2} = 49 \\times 2 = 98$.",
+      "difficulte": 2,
+      "tags": ["comparaison", "carre", "radical"]
+    },
+    {
+      "id": "3E-CH04-016",
+      "lecon": "Comparaison par les carrés",
+      "type": "formule",
+      "recto": "Que devient l'ordre de deux nombres positifs quand on prend leurs racines carrées ?",
+      "verso": "Il est conservé : pour $a \\ge 0$ et $b \\ge 0$, $a < b$ si et seulement si $\\sqrt{a} < \\sqrt{b}$. C'est ainsi que $63 < 68$ donne $\\sqrt{63} < \\sqrt{68}$.",
+      "difficulte": 2,
+      "tags": ["comparaison", "ordre", "racine-carree"]
+    },
+    {
+      "id": "3E-CH04-017",
+      "lecon": "Comparaison par les carrés",
+      "type": "formule",
+      "recto": "Comment compare-t-on un radical et un entier, par exemple $\\sqrt{30}$ et $5$ ?",
+      "verso": "On compare leurs carrés : le carré de $\\sqrt{30}$ est le nombre écrit dessous, soit $30$, et $5^{2} = 25$. Comme $30 > 25$ et que les deux nombres sont positifs, $\\sqrt{30} > 5$.",
+      "difficulte": 2,
+      "tags": ["comparaison", "radical", "entier"]
+    },
+    {
+      "id": "3E-CH04-018",
+      "lecon": "Comparaison par les carrés",
+      "type": "formule",
+      "recto": "Pourquoi la comparaison par les carrés est-elle réservée aux nombres positifs ?",
+      "verso": "Avec des négatifs elle se retourne : $-5 < -2$, alors que $\\left(-5\\right)^{2} = 25$ dépasse $\\left(-2\\right)^{2} = 4$. Il faut donc vérifier le signe avant d'élever au carré.",
+      "difficulte": 3,
+      "tags": ["comparaison", "signe", "piege"]
+    },
+    {
+      "id": "3E-CH04-019",
+      "lecon": "Racine carrée et valeur absolue",
+      "type": "formule",
+      "recto": "Que vaut $\\sqrt{a^{2}}$ pour un réel $a$ quelconque ?",
+      "verso": "$\\sqrt{a^{2}} = |a|$, la valeur absolue de $a$. Le résultat est toujours positif, quel que soit le signe de $a$.",
+      "difficulte": 1,
+      "tags": ["valeur-absolue", "racine-carree"]
+    },
+    {
+      "id": "3E-CH04-020",
+      "lecon": "Racine carrée et valeur absolue",
+      "type": "formule",
+      "recto": "Comment supprime-t-on les barres de valeur absolue dans $\\sqrt{a^{2}} = |a|$ ?",
+      "verso": "On étudie le signe de $a$ : si $a \\ge 0$, alors $\\sqrt{a^{2}} = a$ ; si $a < 0$, alors $\\sqrt{a^{2}} = -a$, l'opposé de $a$, qui est positif.",
+      "difficulte": 2,
+      "tags": ["valeur-absolue", "signe"]
+    },
+    {
+      "id": "3E-CH04-021",
+      "lecon": "Racine carrée et valeur absolue",
+      "type": "formule",
+      "recto": "Pourquoi $\\sqrt{a^{2}}$ est-il égal à $|a|$ pour tout réel $a$ ?",
+      "verso": "Le nombre $|a|$ est positif et son carré vaut $a^{2}$, puisque $a$ et $-a$ ont le même carré. Or $\\sqrt{a^{2}}$ est l'unique nombre positif dont le carré vaut $a^{2}$.",
+      "difficulte": 2,
+      "tags": ["valeur-absolue", "demonstration"]
+    },
+    {
+      "id": "3E-CH04-022",
+      "lecon": "Racine carrée et valeur absolue",
+      "type": "formule",
+      "recto": "Comment écrit-on sans barres la valeur absolue d'une différence négative comme $1 - \\sqrt{3}$ ?",
+      "verso": "On échange les deux termes de la soustraction. Comme $1 < \\sqrt{3} < 2$, le nombre $1 - \\sqrt{3}$ est négatif, donc $\\left|1 - \\sqrt{3}\\right| = \\sqrt{3} - 1$.",
+      "difficulte": 3,
+      "tags": ["valeur-absolue", "signe", "radical"]
+    },
+    {
+      "id": "3E-CH04-023",
+      "lecon": "Racine carrée et valeur absolue",
+      "type": "formule",
+      "recto": "Quelle erreur commet l'élève qui écrit $\\sqrt{\\left(-6\\right)^{2}} = -6$ ?",
+      "verso": "Il oublie qu'une racine carrée est toujours positive : $\\sqrt{\\left(-6\\right)^{2}} = \\left|-6\\right| = 6$. L'égalité $\\sqrt{a^{2}} = a$ n'est vraie que si $a$ est positif.",
+      "difficulte": 3,
+      "tags": ["valeur-absolue", "piege"]
+    },
+    {
+      "id": "3E-CH04-024",
+      "lecon": "Expression conjuguée ; rendre rationnel un dénominateur",
+      "type": "definition",
+      "recto": "Que veut dire rendre rationnel le dénominateur d'une fraction ?",
+      "verso": "C'est écrire cette fraction sans radical au dénominateur, sans changer sa valeur. Le numérateur, lui, peut parfaitement conserver un radical.",
+      "difficulte": 1,
+      "tags": ["denominateur-rationnel", "definition"]
+    },
+    {
+      "id": "3E-CH04-025",
+      "lecon": "Expression conjuguée ; rendre rationnel un dénominateur",
+      "type": "formule",
+      "recto": "Comment rend-on rationnel un dénominateur réduit à une seule racine, comme dans $\\dfrac{a}{\\sqrt{b}}$ ?",
+      "verso": "On multiplie le numérateur et le dénominateur par $\\sqrt{b}$ : $\\dfrac{a}{\\sqrt{b}} = \\dfrac{a\\sqrt{b}}{b}$, puisque $\\sqrt{b} \\times \\sqrt{b} = b$.",
+      "difficulte": 2,
+      "tags": ["denominateur-rationnel", "radical"]
+    },
+    {
+      "id": "3E-CH04-026",
+      "lecon": "Expression conjuguée ; rendre rationnel un dénominateur",
+      "type": "definition",
+      "recto": "Qu'est-ce que l'expression conjuguée de $a + \\sqrt{b}$ ?",
+      "verso": "C'est $a - \\sqrt{b}$, la même expression avec le signe du milieu changé. Leur produit ne contient plus de radical : $\\left(a + \\sqrt{b}\\right)\\left(a - \\sqrt{b}\\right) = a^{2} - b$.",
+      "difficulte": 2,
+      "tags": ["expression-conjuguee", "definition"]
+    },
+    {
+      "id": "3E-CH04-027",
+      "lecon": "Expression conjuguée ; rendre rationnel un dénominateur",
+      "type": "formule",
+      "recto": "Par quoi multiplie-t-on une fraction du type $\\dfrac{c}{a + \\sqrt{b}}$ pour chasser le radical du dénominateur ?",
+      "verso": "Par le conjugué $a - \\sqrt{b}$, en haut comme en bas. Le dénominateur devient alors $a^{2} - b$, un nombre sans radical.",
+      "difficulte": 2,
+      "tags": ["expression-conjuguee", "denominateur-rationnel"]
+    },
+    {
+      "id": "3E-CH04-028",
+      "lecon": "Expression conjuguée ; rendre rationnel un dénominateur",
+      "type": "formule",
+      "recto": "Quel est le conjugué d'un dénominateur de la forme $\\sqrt{a} + \\sqrt{b}$ ?",
+      "verso": "C'est $\\sqrt{a} - \\sqrt{b}$, et leur produit vaut $a - b$. La méthode du conjugué s'applique donc aussi quand les deux termes portent un radical.",
+      "difficulte": 2,
+      "tags": ["expression-conjuguee", "radical"]
+    },
+    {
+      "id": "3E-CH04-029",
+      "lecon": "Expression conjuguée ; rendre rationnel un dénominateur",
+      "type": "formule",
+      "recto": "Quelle erreur guette l'élève qui multiplie un dénominateur par son expression conjuguée ?",
+      "verso": "Oublier de multiplier aussi le numérateur, ce qui change la valeur de la fraction. Il faut aussi surveiller le signe obtenu en bas : $\\left(1 + \\sqrt{3}\\right)\\left(1 - \\sqrt{3}\\right) = -2$, un nombre négatif.",
+      "difficulte": 3,
+      "tags": ["expression-conjuguee", "piege"]
+    },
+    {
+      "id": "3E-CH04-030",
+      "lecon": "Résolution d'équations du type $x^{2} = a$",
+      "type": "formule",
+      "recto": "Combien de solutions l'équation $x^{2} = a$ a-t-elle lorsque $a$ est strictement positif ?",
+      "verso": "Deux solutions opposées : $x = \\sqrt{a}$ ou $x = -\\sqrt{a}$. Ainsi $x^{2} = 25$ a pour solutions $5$ et $-5$.",
+      "difficulte": 1,
+      "tags": ["equation", "x-carre", "solutions"]
+    },
+    {
+      "id": "3E-CH04-031",
+      "lecon": "Résolution d'équations du type $x^{2} = a$",
+      "type": "formule",
+      "recto": "Que devient l'équation $x^{2} = a$ lorsque $a$ est nul, puis lorsque $a$ est négatif ?",
+      "verso": "Si $a = 0$, elle a une seule solution, $x = 0$. Si $a < 0$, elle n'a aucune solution, car un carré n'est jamais négatif.",
+      "difficulte": 2,
+      "tags": ["equation", "x-carre", "cas-particuliers"]
+    },
+    {
+      "id": "3E-CH04-032",
+      "lecon": "Résolution d'équations du type $x^{2} = a$",
+      "type": "formule",
+      "recto": "Comment ramène-t-on une équation comme $3x^{2} = 27$ à la forme $x^{2} = a$ ?",
+      "verso": "On isole $x^{2}$ en divisant les deux membres par $3$, ce qui donne $x^{2} = 9$, puis on écrit les deux solutions $3$ et $-3$.",
+      "difficulte": 2,
+      "tags": ["equation", "x-carre", "methode"]
+    },
+    {
+      "id": "3E-CH04-033",
+      "lecon": "Résolution d'équations du type $x^{2} = a$",
+      "type": "formule",
+      "recto": "Dans un problème de longueur ou d'aire, laquelle des deux solutions de $x^{2} = a$ garde-t-on ?",
+      "verso": "La solution positive seulement, car une longueur n'est jamais négative. On résout d'abord dans $\\mathbb{R}$, puis on écarte explicitement la solution négative dans la conclusion.",
+      "difficulte": 2,
+      "tags": ["equation", "x-carre", "longueur"]
+    },
+    {
+      "id": "3E-CH04-034",
+      "lecon": "Résolution d'équations du type $x^{2} = a$",
+      "type": "definition",
+      "recto": "Quelle différence y a-t-il entre l'écriture $\\sqrt{a}$ et l'équation $x^{2} = a$ ?",
+      "verso": "$\\sqrt{a}$ nomme un seul nombre, toujours positif ; $x^{2} = a$ pose une question dont la réponse comporte deux nombres dès que $a > 0$. Ainsi $\\sqrt{49} = 7$, mais $x^{2} = 49$ a pour solutions $7$ et $-7$.",
+      "difficulte": 3,
+      "tags": ["equation", "racine-carree", "distinction"]
+    }
+  ]
+}

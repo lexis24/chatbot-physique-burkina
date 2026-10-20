@@ -1,0 +1,323 @@
+{
+  "niveau": "4ème",
+  "chapitre": "Chapitre 9 : Les vecteurs (1) : bipoints, vecteur, égalité, somme",
+  "source": "maths/4eme/Chapitre_9_Les_vecteurs_1",
+  "nombre_cartes": 35,
+  "cartes": [
+    {
+      "id": "4E-CH09-001",
+      "lecon": "Les bipoints équipollents",
+      "type": "definition",
+      "recto": "Dans un bipoint $\\left(A, B\\right)$, comment appelle-t-on chacun des deux points ?",
+      "verso": "A est l'origine et B l'extrémité. Le bipoint représente le déplacement de A vers B, dessiné par une flèche qui part de A et pointe vers B.",
+      "difficulte": 1,
+      "tags": ["bipoint", "vocabulaire"]
+    },
+    {
+      "id": "4E-CH09-002",
+      "lecon": "Les bipoints équipollents",
+      "type": "definition",
+      "recto": "Pourquoi les bipoints $\\left(A, B\\right)$ et $\\left(B, A\\right)$ sont-ils différents ?",
+      "verso": "Parce qu'on ne part pas du même point : l'un va de A vers B, l'autre de B vers A. L'ordre des deux lettres compte déjà pour un bipoint.",
+      "difficulte": 2,
+      "tags": ["bipoint", "ordre-des-lettres"]
+    },
+    {
+      "id": "4E-CH09-003",
+      "lecon": "Les bipoints équipollents",
+      "type": "definition",
+      "recto": "Quels sont les trois renseignements qui décrivent entièrement un bipoint $\\left(A, B\\right)$ ?",
+      "verso": "Sa direction, c'est-à-dire la droite (AB) ; son sens, de A vers B et non de B vers A ; et sa longueur, la distance $AB$.",
+      "difficulte": 1,
+      "tags": ["bipoint", "direction", "sens", "longueur"]
+    },
+    {
+      "id": "4E-CH09-004",
+      "lecon": "Les bipoints équipollents",
+      "type": "definition",
+      "recto": "Quand dit-on que deux bipoints sont équipollents ?",
+      "verso": "Quand ils représentent le même déplacement : même direction, même sens et même longueur. Les trois conditions sont exigées en même temps.",
+      "difficulte": 2,
+      "tags": ["equipollence", "definition"]
+    },
+    {
+      "id": "4E-CH09-005",
+      "lecon": "Les bipoints équipollents",
+      "type": "formule",
+      "recto": "Quel quadrilatère est un parallélogramme lorsque les bipoints $\\left(A, B\\right)$ et $\\left(C, D\\right)$ sont équipollents ?",
+      "verso": "Le quadrilatère ABDC, et non ABCD. Cette caractérisation s'emploie lorsque les quatre points ne sont pas alignés.",
+      "difficulte": 2,
+      "tags": ["equipollence", "parallelogramme", "caracterisation"]
+    },
+    {
+      "id": "4E-CH09-006",
+      "lecon": "Les bipoints équipollents",
+      "type": "formule",
+      "recto": "Pourquoi l'ordre ABDC traduit-il l'équipollence de $\\left(A, B\\right)$ et $\\left(C, D\\right)$ ?",
+      "verso": "Parce qu'il suit le tour de la figure : de A à B, puis de B à D qui est l'arrivée du second déplacement, puis de D à C qui en est le départ, puis retour en A. Avec ABCD, le tracé se croiserait.",
+      "difficulte": 3,
+      "tags": ["equipollence", "ordre-des-lettres", "piege"]
+    },
+    {
+      "id": "4E-CH09-007",
+      "lecon": "Les bipoints équipollents",
+      "type": "definition",
+      "recto": "Comment appelle-t-on la figure obtenue quand les quatre points de deux bipoints équipollents sont alignés ?",
+      "verso": "Un parallélogramme aplati. Dans ce cas particulier, ce sont les trois conditions de direction, de sens et de longueur qui restent la bonne définition.",
+      "difficulte": 3,
+      "tags": ["equipollence", "parallelogramme-aplati", "cas-particulier"]
+    },
+    {
+      "id": "4E-CH09-008",
+      "lecon": "Le vecteur et ses représentants",
+      "type": "definition",
+      "recto": "Qu'est-ce qu'un vecteur ?",
+      "verso": "C'est ce que tous les bipoints équipollents ont en commun : une direction, un sens et une longueur, cette dernière étant aussi appelée norme.",
+      "difficulte": 1,
+      "tags": ["vecteur", "definition", "norme"]
+    },
+    {
+      "id": "4E-CH09-009",
+      "lecon": "Le vecteur et ses représentants",
+      "type": "definition",
+      "recto": "Comment note-t-on le vecteur qui va du point A au point B ?",
+      "verso": "On écrit $\\overrightarrow{AB}$, avec une flèche au-dessus des deux lettres, qui se lit « vecteur ». Un vecteur peut aussi porter une seule lettre fléchée, comme $\\vec{u}$.",
+      "difficulte": 1,
+      "tags": ["vecteur", "notation"]
+    },
+    {
+      "id": "4E-CH09-010",
+      "lecon": "Le vecteur et ses représentants",
+      "type": "definition",
+      "recto": "Quelle différence y a-t-il entre les écritures $AB$ et $\\overrightarrow{AB}$ ?",
+      "verso": "$AB$ sans flèche est un nombre, la longueur du segment. $\\overrightarrow{AB}$ avec la flèche est un déplacement, muni d'une direction et d'un sens.",
+      "difficulte": 3,
+      "tags": ["vecteur", "notation", "piege"]
+    },
+    {
+      "id": "4E-CH09-011",
+      "lecon": "Le vecteur et ses représentants",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on un représentant d'un vecteur ?",
+      "verso": "C'est l'un des bipoints équipollents qui le dessinent, autrement dit une flèche particulière, tracée à partir d'une origine choisie.",
+      "difficulte": 2,
+      "tags": ["representant", "vecteur"]
+    },
+    {
+      "id": "4E-CH09-012",
+      "lecon": "Le vecteur et ses représentants",
+      "type": "formule",
+      "recto": "Combien de représentants un même vecteur possède-t-il ?",
+      "verso": "Une infinité, un pour chaque origine possible du plan. On choisit librement le point de départ, et le vecteur indique où arriver.",
+      "difficulte": 2,
+      "tags": ["representant", "infinite"]
+    },
+    {
+      "id": "4E-CH09-013",
+      "lecon": "Le vecteur et ses représentants",
+      "type": "formule",
+      "recto": "Pourquoi deux flèches tracées à des endroits différents peuvent-elles représenter le même vecteur ?",
+      "verso": "Parce qu'un vecteur n'a pas de position fixe : il est défini par sa direction, son sens et sa longueur, jamais par son origine. Seule la position de la flèche change.",
+      "difficulte": 3,
+      "tags": ["vecteur", "position", "piege"]
+    },
+    {
+      "id": "4E-CH09-014",
+      "lecon": "Le vecteur et ses représentants",
+      "type": "formule",
+      "recto": "Comment construit-on le point N tel que $\\overrightarrow{MN} = \\overrightarrow{AB}$ ?",
+      "verso": "On trace la parallèle à (AB) passant par M, puis on y reporte la longueur $AB$ à partir de M, du côté vers lequel pointe $\\overrightarrow{AB}$. Le quadrilatère ABNM est alors un parallélogramme.",
+      "difficulte": 2,
+      "tags": ["representant", "construction"]
+    },
+    {
+      "id": "4E-CH09-015",
+      "lecon": "L'égalité de deux vecteurs",
+      "type": "definition",
+      "recto": "A quelles conditions deux vecteurs sont-ils égaux ?",
+      "verso": "Ils doivent avoir la même direction, le même sens et la même longueur. Ces trois conditions sont exigées ensemble.",
+      "difficulte": 1,
+      "tags": ["egalite", "vecteur", "definition"]
+    },
+    {
+      "id": "4E-CH09-016",
+      "lecon": "L'égalité de deux vecteurs",
+      "type": "formule",
+      "recto": "Dans un parallélogramme ABCD, quelles égalités de vecteurs donnent les côtés opposés ?",
+      "verso": "$\\overrightarrow{AB} = \\overrightarrow{DC}$ et $\\overrightarrow{AD} = \\overrightarrow{BC}$. En retournant les deux flèches à la fois, on obtient aussi $\\overrightarrow{BA} = \\overrightarrow{CD}$ et $\\overrightarrow{DA} = \\overrightarrow{CB}$.",
+      "difficulte": 2,
+      "tags": ["egalite", "parallelogramme"]
+    },
+    {
+      "id": "4E-CH09-017",
+      "lecon": "L'égalité de deux vecteurs",
+      "type": "formule",
+      "recto": "Pourquoi $\\overrightarrow{AB} = \\overrightarrow{CD}$ et $\\overrightarrow{AB} = \\overrightarrow{DC}$ ne désignent-elles pas le même parallélogramme ?",
+      "verso": "Parce que l'ordre des lettres change tout : la première égalité donne le parallélogramme ABDC, la seconde donne ABCD, où [AB] et [DC] sont deux côtés opposés.",
+      "difficulte": 3,
+      "tags": ["egalite", "ordre-des-lettres", "piege"]
+    },
+    {
+      "id": "4E-CH09-018",
+      "lecon": "L'égalité de deux vecteurs",
+      "type": "formule",
+      "recto": "Pourquoi deux vecteurs de même longueur ne sont-ils pas forcément égaux ?",
+      "verso": "Parce que la longueur ne suffit pas : il faut aussi la même direction et le même sens. Deux vecteurs égaux ont bien la même longueur, mais la réciproque est fausse.",
+      "difficulte": 2,
+      "tags": ["egalite", "longueur", "piege"]
+    },
+    {
+      "id": "4E-CH09-019",
+      "lecon": "L'égalité de deux vecteurs",
+      "type": "formule",
+      "recto": "Que peut-on conclure de l'égalité $\\overrightarrow{AB} = \\overrightarrow{AC}$ ?",
+      "verso": "Que $B = C$. Les deux flèches partent du même point A avec la même direction, le même sens et la même longueur : elles arrivent donc au même endroit.",
+      "difficulte": 3,
+      "tags": ["egalite", "consequence"]
+    },
+    {
+      "id": "4E-CH09-020",
+      "lecon": "L'égalité de deux vecteurs",
+      "type": "formule",
+      "recto": "Comment démontre-t-on qu'un quadrilatère ABCD est un parallélogramme à partir de l'égalité $\\overrightarrow{AB} = \\overrightarrow{DC}$ ?",
+      "verso": "Deux vecteurs égaux donnent des segments parallèles et de même longueur. Donc [AB] et [DC] sont parallèles et de même longueur, et ABCD est un parallélogramme.",
+      "difficulte": 2,
+      "tags": ["egalite", "parallelogramme", "demonstration"]
+    },
+    {
+      "id": "4E-CH09-021",
+      "lecon": "L'égalité de deux vecteurs",
+      "type": "formule",
+      "recto": "Comment contrôler qu'une égalité entre deux vecteurs d'une figure est correctement écrite ?",
+      "verso": "Les deux flèches doivent partir de deux sommets différents et pointer du même côté. Si elles se font face, l'écriture est fausse.",
+      "difficulte": 2,
+      "tags": ["egalite", "controle"]
+    },
+    {
+      "id": "4E-CH09-022",
+      "lecon": "La relation de Chasles",
+      "type": "formule",
+      "recto": "Que dit la relation de Chasles pour trois points A, B et C ?",
+      "verso": "$\\overrightarrow{AB} + \\overrightarrow{BC} = \\overrightarrow{AC}$ : aller de A à B, puis de B à C, c'est aller de A à C. Elle vaut pour des points quelconques, même alignés.",
+      "difficulte": 1,
+      "tags": ["chasles", "formule"]
+    },
+    {
+      "id": "4E-CH09-023",
+      "lecon": "La relation de Chasles",
+      "type": "formule",
+      "recto": "A quels deux usages la relation de Chasles sert-elle dans un calcul vectoriel ?",
+      "verso": "A simplifier une somme, en remplaçant deux flèches par une seule, et à décomposer un vecteur, en le remplaçant par deux flèches passant par un point choisi.",
+      "difficulte": 2,
+      "tags": ["chasles", "usage"]
+    },
+    {
+      "id": "4E-CH09-024",
+      "lecon": "La relation de Chasles",
+      "type": "formule",
+      "recto": "A quoi se réduit une chaîne comme $\\overrightarrow{AB} + \\overrightarrow{BC} + \\overrightarrow{CD}$ ?",
+      "verso": "A $\\overrightarrow{AD}$. La relation de Chasles s'enchaîne autant de fois qu'on le souhaite : chaque lettre commune à une arrivée et au départ suivant s'efface.",
+      "difficulte": 2,
+      "tags": ["chasles", "simplification"]
+    },
+    {
+      "id": "4E-CH09-025",
+      "lecon": "La relation de Chasles",
+      "type": "definition",
+      "recto": "Qu'est-ce que le vecteur nul ?",
+      "verso": "C'est le vecteur d'un déplacement qui ne bouge pas : pour tout point A, $\\overrightarrow{AA} = \\vec{0}$. Sa longueur vaut zéro, et il n'a ni direction ni sens.",
+      "difficulte": 1,
+      "tags": ["vecteur-nul", "definition"]
+    },
+    {
+      "id": "4E-CH09-026",
+      "lecon": "La relation de Chasles",
+      "type": "definition",
+      "recto": "Quel est le vecteur opposé de $\\overrightarrow{AB}$ ?",
+      "verso": "C'est $\\overrightarrow{BA}$ : même direction et même longueur, mais sens contraire. On l'écrit $\\overrightarrow{BA} = -\\overrightarrow{AB}$.",
+      "difficulte": 2,
+      "tags": ["vecteur-oppose", "notation"]
+    },
+    {
+      "id": "4E-CH09-027",
+      "lecon": "La relation de Chasles",
+      "type": "formule",
+      "recto": "Comment transforme-t-on une soustraction de vecteurs en addition ?",
+      "verso": "Soustraire, c'est ajouter l'opposé : on retourne la flèche à enlever. Ainsi $\\overrightarrow{JK} - \\overrightarrow{MK} = \\overrightarrow{JK} + \\overrightarrow{KM} = \\overrightarrow{JM}$.",
+      "difficulte": 2,
+      "tags": ["soustraction", "vecteur-oppose", "chasles"]
+    },
+    {
+      "id": "4E-CH09-028",
+      "lecon": "La relation de Chasles",
+      "type": "formule",
+      "recto": "Que vaut la somme des déplacements d'un circuit qui part de A, passe par B, C, D et revient en A ?",
+      "verso": "Le vecteur nul : $\\overrightarrow{AB} + \\overrightarrow{BC} + \\overrightarrow{CD} + \\overrightarrow{DA} = \\overrightarrow{AA} = \\vec{0}$, puisque le trajet se termine à son point de départ.",
+      "difficulte": 2,
+      "tags": ["chasles", "circuit-ferme", "vecteur-nul"]
+    },
+    {
+      "id": "4E-CH09-029",
+      "lecon": "La relation de Chasles",
+      "type": "formule",
+      "recto": "Pourquoi la relation de Chasles ne s'applique-t-elle pas directement à $\\overrightarrow{AB} + \\overrightarrow{AC}$ ?",
+      "verso": "Parce que les deux vecteurs ont la même origine A, alors que la relation exige que l'extrémité du premier soit l'origine du second. Il faut alors passer par la règle du parallélogramme.",
+      "difficulte": 3,
+      "tags": ["chasles", "condition", "piege"]
+    },
+    {
+      "id": "4E-CH09-030",
+      "lecon": "La somme de deux vecteurs",
+      "type": "formule",
+      "recto": "Comment construit-on la somme de deux vecteurs par la méthode bout à bout ?",
+      "verso": "On place $\\vec{v}$ à l'extrémité de $\\vec{u}$, puis la somme $\\vec{u} + \\vec{v}$ est la flèche qui va de l'origine de $\\vec{u}$ à l'extrémité de $\\vec{v}$.",
+      "difficulte": 1,
+      "tags": ["somme", "bout-a-bout"]
+    },
+    {
+      "id": "4E-CH09-031",
+      "lecon": "La somme de deux vecteurs",
+      "type": "formule",
+      "recto": "Comment construit-on $\\overrightarrow{AB} + \\overrightarrow{AC}$ par la règle du parallélogramme ?",
+      "verso": "On trace la parallèle à (AC) passant par B et la parallèle à (AB) passant par C : elles se coupent en D, et $\\overrightarrow{AB} + \\overrightarrow{AC} = \\overrightarrow{AD}$, la diagonale issue de A du parallélogramme ABDC.",
+      "difficulte": 2,
+      "tags": ["somme", "parallelogramme", "construction"]
+    },
+    {
+      "id": "4E-CH09-032",
+      "lecon": "La somme de deux vecteurs",
+      "type": "formule",
+      "recto": "Quel lien y a-t-il entre la méthode bout à bout et la règle du parallélogramme ?",
+      "verso": "Elles donnent le même vecteur : ce sont deux façons de dessiner la même somme. La méthode bout à bout est exactement la relation de Chasles.",
+      "difficulte": 2,
+      "tags": ["somme", "methodes"]
+    },
+    {
+      "id": "4E-CH09-033",
+      "lecon": "La somme de deux vecteurs",
+      "type": "definition",
+      "recto": "Que traduit l'addition de deux vecteurs ?",
+      "verso": "L'enchaînement de deux déplacements. Additionner deux vecteurs, ce n'est pas additionner deux nombres : la flèche résultat ne se calcule pas, elle se construit.",
+      "difficulte": 2,
+      "tags": ["somme", "sens"]
+    },
+    {
+      "id": "4E-CH09-034",
+      "lecon": "La somme de deux vecteurs",
+      "type": "formule",
+      "recto": "Pourquoi la longueur de $\\vec{u} + \\vec{v}$ n'est-elle pas en général la somme des longueurs de $\\vec{u}$ et de $\\vec{v}$ ?",
+      "verso": "Parce que ce sont les flèches qui s'ajoutent, et non les nombres. Rouler $6$ km vers l'est puis $8$ km vers le nord éloigne d'environ $10$ km du départ, et non de $14$ km.",
+      "difficulte": 3,
+      "tags": ["somme", "longueur", "piege"]
+    },
+    {
+      "id": "4E-CH09-035",
+      "lecon": "La somme de deux vecteurs",
+      "type": "definition",
+      "recto": "Quelle différence y a-t-il entre la distance parcourue et le déplacement ?",
+      "verso": "Le déplacement est un vecteur : il ne retient que le départ et l'arrivée. La distance parcourue est un nombre : elle retient tout le chemin. Un berger qui fait le tour de son enclos et rentre a un déplacement nul.",
+      "difficulte": 3,
+      "tags": ["deplacement", "distance", "piege"]
+    }
+  ]
+}

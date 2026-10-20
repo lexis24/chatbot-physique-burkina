@@ -1,0 +1,350 @@
+{
+  "niveau": "1ère D",
+  "chapitre": "Chapitre 12 : Les statistiques",
+  "source": "maths/1ereD/Chapitre_12_Statistiques",
+  "nombre_cartes": 38,
+  "cartes": [
+    {
+      "id": "1D-CH12-001",
+      "lecon": "Séries statistiques : vocabulaire, regroupement en classes et caractéristiques de position",
+      "type": "definition",
+      "recto": "Que désignent les trois mots population, individu et caractère en statistique ?",
+      "verso": "La population est l'ensemble étudié, chacun de ses éléments est un individu, et le caractère est ce que l'on observe sur chaque individu : l'âge, la note, la masse.",
+      "difficulte": 1,
+      "tags": ["vocabulaire", "population", "caractere"]
+    },
+    {
+      "id": "1D-CH12-002",
+      "lecon": "Séries statistiques : vocabulaire, regroupement en classes et caractéristiques de position",
+      "type": "definition",
+      "recto": "Comment distingue-t-on un caractère qualitatif, un caractère quantitatif discret et un caractère quantitatif continu ?",
+      "verso": "Un caractère est qualitatif s'il ne se mesure pas par un nombre, comme une couleur ou une filière. Il est quantitatif discret s'il ne prend que des valeurs isolées, comme un nombre d'enfants, et quantitatif continu s'il peut prendre toute valeur d'un intervalle, comme une masse.",
+      "difficulte": 2,
+      "tags": ["caractere", "qualitatif", "quantitatif"]
+    },
+    {
+      "id": "1D-CH12-003",
+      "lecon": "Séries statistiques : vocabulaire, regroupement en classes et caractéristiques de position",
+      "type": "formule",
+      "recto": "Comment calcule-t-on la fréquence $f_i$ d'une valeur d'effectif $n_i$ dans une série d'effectif total $N$ ?",
+      "verso": "$f_i=\\dfrac{n_i}{N}$. C'est la proportion d'individus concernés, un nombre sans unité. La somme de toutes les fréquences vaut toujours $1$, soit $100\\ \\%$, ce qui sert de contrôle du tableau.",
+      "difficulte": 1,
+      "tags": ["frequence", "effectif", "formule"]
+    },
+    {
+      "id": "1D-CH12-004",
+      "lecon": "Séries statistiques : vocabulaire, regroupement en classes et caractéristiques de position",
+      "type": "definition",
+      "recto": "Pourquoi la phrase « la fréquence de cette valeur est $17$ » n'a-t-elle aucun sens ?",
+      "verso": "Parce que $17$ est un effectif, c'est-à-dire un nombre d'individus, donc un entier. Une fréquence est une proportion, un nombre de $[0\\,;1]$ ou un pourcentage : elle ne peut jamais dépasser $1$.",
+      "difficulte": 3,
+      "tags": ["frequence", "effectif", "piege"]
+    },
+    {
+      "id": "1D-CH12-005",
+      "lecon": "Séries statistiques : vocabulaire, regroupement en classes et caractéristiques de position",
+      "type": "formule",
+      "recto": "Comment calcule-t-on l'amplitude et le centre de la classe $[a\\,;b[$ ?",
+      "verso": "L'amplitude vaut $b-a$ et le centre vaut $c=\\dfrac{a+b}{2}$. C'est le centre qui remplace toutes les valeurs de la classe dans les calculs de moyenne et de variance.",
+      "difficulte": 1,
+      "tags": ["classe", "amplitude", "centre"]
+    },
+    {
+      "id": "1D-CH12-006",
+      "lecon": "Séries statistiques : vocabulaire, regroupement en classes et caractéristiques de position",
+      "type": "definition",
+      "recto": "Pourquoi le centre de la classe $[45\\,;50[$ ne vaut-il ni $45$ ni $50$ ?",
+      "verso": "Parce que le centre est la demi-somme des deux bornes : $\\dfrac{45+50}{2}=47{,}5$. Prendre une borne à sa place est l'erreur la plus coûteuse, car elle fausse d'un seul coup la moyenne, la variance et l'écart-type.",
+      "difficulte": 3,
+      "tags": ["centre-de-classe", "piege", "bornes"]
+    },
+    {
+      "id": "1D-CH12-007",
+      "lecon": "Séries statistiques : vocabulaire, regroupement en classes et caractéristiques de position",
+      "type": "definition",
+      "recto": "Pourquoi la moyenne d'une série groupée en classes n'est-elle qu'une valeur approchée ?",
+      "verso": "Parce que les valeurs exactes sont perdues et que l'on remplace chaque classe par son centre, comme si les individus y étaient répartis symétriquement. L'approximation est d'autant meilleure que les classes sont étroites et les effectifs importants.",
+      "difficulte": 2,
+      "tags": ["moyenne", "centre-de-classe", "approximation"]
+    },
+    {
+      "id": "1D-CH12-008",
+      "lecon": "Séries statistiques : vocabulaire, regroupement en classes et caractéristiques de position",
+      "type": "definition",
+      "recto": "Que compte l'effectif cumulé croissant associé à une valeur d'une série statistique ?",
+      "verso": "Le nombre d'individus dont la valeur du caractère lui est inférieure ou égale : il se lit « au plus ». On l'obtient en additionnant les effectifs de proche en proche, et le dernier vaut toujours $N$. L'effectif cumulé décroissant, lui, se lit « au moins ».",
+      "difficulte": 2,
+      "tags": ["effectifs-cumules", "croissant", "decroissant"]
+    },
+    {
+      "id": "1D-CH12-009",
+      "lecon": "Séries statistiques : vocabulaire, regroupement en classes et caractéristiques de position",
+      "type": "definition",
+      "recto": "Quelle différence y a-t-il entre le mode d'une série et sa classe modale ?",
+      "verso": "Le mode est la valeur de plus grand effectif, dans une série discrète ; la classe modale est la classe de plus grand effectif, dans une série groupée. Aucun des deux n'est un nombre d'individus : si la valeur $4$ apparaît $8$ fois, le mode est $4$, pas $8$.",
+      "difficulte": 2,
+      "tags": ["mode", "classe-modale", "position"]
+    },
+    {
+      "id": "1D-CH12-010",
+      "lecon": "Séries statistiques : vocabulaire, regroupement en classes et caractéristiques de position",
+      "type": "formule",
+      "recto": "Comment calcule-t-on la moyenne $\\overline{x}$ d'une série de valeurs $x_i$ d'effectifs $n_i$ ?",
+      "verso": "$\\overline{x}=\\dfrac{\\sum n_i x_i}{N}$, où $N$ est l'effectif total. Chaque valeur est pondérée par son effectif ; pour une série groupée en classes, $x_i$ désigne le centre de la classe $i$.",
+      "difficulte": 1,
+      "tags": ["moyenne", "formule", "ponderation"]
+    },
+    {
+      "id": "1D-CH12-011",
+      "lecon": "Séries statistiques : vocabulaire, regroupement en classes et caractéristiques de position",
+      "type": "definition",
+      "recto": "Pourquoi la moyenne est-elle sensible aux valeurs extrêmes d'une série ?",
+      "verso": "Parce qu'elle additionne toutes les valeurs : une seule valeur très éloignée suffit à la déplacer, comme une masse posée au bout d'un levier. La médiane, qui ne dépend que des rangs, ne bouge pas dans ce cas.",
+      "difficulte": 2,
+      "tags": ["moyenne", "valeurs-extremes", "mediane"]
+    },
+    {
+      "id": "1D-CH12-012",
+      "lecon": "Séries statistiques : vocabulaire, regroupement en classes et caractéristiques de position",
+      "type": "definition",
+      "recto": "Que partage exactement la médiane $M_e$ d'une série statistique ?",
+      "verso": "Elle partage la série ordonnée en deux moitiés de même effectif : au moins la moitié des valeurs lui sont inférieures ou égales, et au moins la moitié lui sont supérieures ou égales. C'est une position de rang, non une position de valeur.",
+      "difficulte": 2,
+      "tags": ["mediane", "definition", "position"]
+    },
+    {
+      "id": "1D-CH12-013",
+      "lecon": "Séries statistiques : vocabulaire, regroupement en classes et caractéristiques de position",
+      "type": "formule",
+      "recto": "Comment détermine-t-on la médiane d'une série discrète de $N$ valeurs rangées dans l'ordre croissant ?",
+      "verso": "Si $N$ est impair, c'est la valeur de rang $\\dfrac{N+1}{2}$. Si $N$ est pair, c'est la demi-somme des valeurs de rangs $\\dfrac{N}{2}$ et $\\dfrac{N}{2}+1$. Le rangement croissant préalable est indispensable.",
+      "difficulte": 2,
+      "tags": ["mediane", "serie-discrete", "rang"]
+    },
+    {
+      "id": "1D-CH12-014",
+      "lecon": "Séries statistiques : vocabulaire, regroupement en classes et caractéristiques de position",
+      "type": "formule",
+      "recto": "Comment repère-t-on la classe médiane d'une série groupée en classes ?",
+      "verso": "On dresse les effectifs cumulés croissants : la classe médiane est la première dont le cumul atteint ou dépasse $\\dfrac{N}{2}$. On précise ensuite la médiane à l'intérieur de cette classe par interpolation linéaire.",
+      "difficulte": 2,
+      "tags": ["classe-mediane", "effectifs-cumules", "serie-groupee"]
+    },
+    {
+      "id": "1D-CH12-015",
+      "lecon": "Caractéristiques de dispersion : variance et écart-type",
+      "type": "definition",
+      "recto": "Pourquoi la moyenne seule ne suffit-elle pas à décrire une série statistique ?",
+      "verso": "Parce que deux séries peuvent avoir la même moyenne sans rien avoir de commun. Les recettes $8$ ; $10$ ; $9$ ; $11$ ; $12$ et $2$ ; $18$ ; $4$ ; $20$ ; $6$ ont toutes deux pour moyenne $10$, mais la seconde est bien plus étalée. Il faut joindre à la position une mesure de dispersion.",
+      "difficulte": 2,
+      "tags": ["dispersion", "moyenne", "position"]
+    },
+    {
+      "id": "1D-CH12-016",
+      "lecon": "Caractéristiques de dispersion : variance et écart-type",
+      "type": "formule",
+      "recto": "Comment calcule-t-on l'étendue d'une série statistique ?",
+      "verso": "$e = x_{\\max} - x_{\\min}$, différence entre la plus grande et la plus petite valeur. Elle s'exprime dans l'unité des données, mais elle ne regarde que deux individus : une seule valeur aberrante suffit à la doubler.",
+      "difficulte": 1,
+      "tags": ["etendue", "dispersion", "formule"]
+    },
+    {
+      "id": "1D-CH12-017",
+      "lecon": "Caractéristiques de dispersion : variance et écart-type",
+      "type": "formule",
+      "recto": "Comment calcule-t-on l'écart moyen d'une série de moyenne $\\overline{x}$ ?",
+      "verso": "$e_m=\\dfrac{\\sum n_i\\,|x_i-\\overline{x}|}{N}$. La valeur absolue empêche les écarts positifs et négatifs de se compenser. L'écart moyen s'exprime dans l'unité des données et répond à la question : de combien s'écarte-t-on en moyenne de la moyenne.",
+      "difficulte": 2,
+      "tags": ["ecart-moyen", "valeur-absolue", "dispersion"]
+    },
+    {
+      "id": "1D-CH12-018",
+      "lecon": "Caractéristiques de dispersion : variance et écart-type",
+      "type": "definition",
+      "recto": "Pourquoi ne peut-on pas mesurer la dispersion en additionnant les écarts $x_i-\\overline{x}$ ?",
+      "verso": "Parce que cette somme est toujours nulle, quelle que soit la série : la moyenne est le point d'équilibre, donc les écarts positifs annulent exactement les négatifs. Il faut d'abord supprimer les signes, par la valeur absolue ou par le carré.",
+      "difficulte": 3,
+      "tags": ["dispersion", "ecarts", "pourquoi"]
+    },
+    {
+      "id": "1D-CH12-019",
+      "lecon": "Caractéristiques de dispersion : variance et écart-type",
+      "type": "definition",
+      "recto": "Comment définit-on la variance $V$ d'une série statistique de moyenne $\\overline{x}$ ?",
+      "verso": "C'est la moyenne des carrés des écarts à la moyenne : $V=\\dfrac{\\sum n_i\\left(x_i-\\overline{x}\\right)^{2}}{N}$. Elle s'exprime dans l'unité des données au carré, ce qui la rend impossible à interpréter directement.",
+      "difficulte": 1,
+      "tags": ["variance", "definition", "ecarts"]
+    },
+    {
+      "id": "1D-CH12-020",
+      "lecon": "Caractéristiques de dispersion : variance et écart-type",
+      "type": "formule",
+      "recto": "Quelle est la formule simplifiée de la variance, appelée formule de Koenig ?",
+      "verso": "$V=\\dfrac{\\sum n_i x_i^{\\,2}}{N}-\\overline{x}^{\\,2}$ : la moyenne des carrés moins le carré de la moyenne. C'est cette forme, et non la définition, que l'on emploie dans les calculs, car elle ne demande qu'un seul passage sur le tableau.",
+      "difficulte": 1,
+      "tags": ["variance", "formule-simplifiee", "koenig"]
+    },
+    {
+      "id": "1D-CH12-021",
+      "lecon": "Caractéristiques de dispersion : variance et écart-type",
+      "type": "definition",
+      "recto": "Comment définit-on l'écart-type $\\sigma$ d'une série statistique ?",
+      "verso": "C'est la racine carrée de la variance : $\\sigma=\\sqrt{V}$. La racine ramène le résultat à l'unité des données, ce qui le rend interprétable : plus $\\sigma$ est petit, plus la série est resserrée autour de sa moyenne.",
+      "difficulte": 1,
+      "tags": ["ecart-type", "variance", "unite"]
+    },
+    {
+      "id": "1D-CH12-022",
+      "lecon": "Caractéristiques de dispersion : variance et écart-type",
+      "type": "formule",
+      "recto": "Pourquoi une variance ne peut-elle jamais être négative ?",
+      "verso": "Parce que chaque terme $n_i\\left(x_i-\\overline{x}\\right)^{2}$ est un carré multiplié par un effectif positif : on a donc toujours $V\\ge 0$. De plus $V=0$ si et seulement si toutes les valeurs sont égales à la moyenne. Une variance négative signale une erreur de calcul.",
+      "difficulte": 3,
+      "tags": ["variance", "signe", "serie-constante"]
+    },
+    {
+      "id": "1D-CH12-023",
+      "lecon": "Caractéristiques de dispersion : variance et écart-type",
+      "type": "definition",
+      "recto": "Quelle est l'erreur la plus fréquente dans l'emploi de la formule simplifiée de la variance ?",
+      "verso": "Soustraire la moyenne $\\overline{x}$ au lieu de son carré $\\overline{x}^{\\,2}$. Avec $\\overline{x}=8$ et une moyenne des carrés égale à $90$, la variance vaut $90-64=26$, et non $90-8=82$.",
+      "difficulte": 3,
+      "tags": ["variance", "piege", "formule-simplifiee"]
+    },
+    {
+      "id": "1D-CH12-024",
+      "lecon": "Caractéristiques de dispersion : variance et écart-type",
+      "type": "formule",
+      "recto": "Que deviennent la moyenne et l'écart-type d'une série lorsqu'on ajoute un même nombre $k$ à toutes ses valeurs ?",
+      "verso": "La moyenne devient $\\overline{x}+k$ et l'écart-type reste inchangé. Ajouter $k$ revient à faire glisser le nuage de points le long de l'axe : le centre se déplace, mais les distances entre les valeurs ne changent pas.",
+      "difficulte": 2,
+      "tags": ["moyenne", "ecart-type", "translation"]
+    },
+    {
+      "id": "1D-CH12-025",
+      "lecon": "Caractéristiques de dispersion : variance et écart-type",
+      "type": "formule",
+      "recto": "Que deviennent la moyenne et l'écart-type d'une série lorsqu'on multiplie toutes ses valeurs par un nombre $a>0$ ?",
+      "verso": "La moyenne devient $a\\overline{x}$ et l'écart-type devient $a\\sigma$ ; la variance, elle, est multipliée par $a^{2}$. Multiplier par $a$ revient à dilater l'axe, donc à multiplier toutes les distances par $a$.",
+      "difficulte": 2,
+      "tags": ["moyenne", "ecart-type", "dilatation"]
+    },
+    {
+      "id": "1D-CH12-026",
+      "lecon": "Caractéristiques de dispersion : variance et écart-type",
+      "type": "formule",
+      "recto": "Comment calcule-t-on la moyenne de l'ensemble formé par deux groupes d'effectifs $n_1$ et $n_2$ ?",
+      "verso": "$\\overline{x}=\\dfrac{n_1\\overline{x}_1+n_2\\overline{x}_2}{n_1+n_2}$. Elle est comprise entre $\\overline{x}_1$ et $\\overline{x}_2$, mais elle n'est pas égale à $\\dfrac{\\overline{x}_1+\\overline{x}_2}{2}$, sauf si les deux groupes ont le même effectif.",
+      "difficulte": 2,
+      "tags": ["moyenne", "sous-groupes", "ponderation"]
+    },
+    {
+      "id": "1D-CH12-027",
+      "lecon": "Caractéristiques de dispersion : variance et écart-type",
+      "type": "definition",
+      "recto": "Comment définit-on le premier quartile $Q_1$ et le troisième quartile $Q_3$ d'une série ordonnée ?",
+      "verso": "$Q_1$ est la plus petite valeur telle qu'au moins $25\\ \\%$ des données lui soient inférieures ou égales, et $Q_3$ la plus petite valeur telle qu'au moins $75\\ \\%$ lui soient inférieures ou égales. La médiane joue le rôle de deuxième quartile.",
+      "difficulte": 2,
+      "tags": ["quartiles", "definition", "serie-ordonnee"]
+    },
+    {
+      "id": "1D-CH12-028",
+      "lecon": "Caractéristiques de dispersion : variance et écart-type",
+      "type": "formule",
+      "recto": "Que mesure l'écart interquartile d'une série statistique ?",
+      "verso": "Il vaut $Q_3-Q_1$ : c'est la largeur de la moitié centrale de la série. Comme il ne dépend que de rangs, une valeur extrême ne le modifie pas : c'est une mesure de dispersion robuste, qui complète l'écart-type.",
+      "difficulte": 2,
+      "tags": ["ecart-interquartile", "quartiles", "robustesse"]
+    },
+    {
+      "id": "1D-CH12-029",
+      "lecon": "Organisation et représentation des données",
+      "type": "definition",
+      "recto": "Quelle représentation graphique choisit-on selon le type de caractère étudié ?",
+      "verso": "Un diagramme en bâtons ou un diagramme circulaire pour un caractère qualitatif ou quantitatif discret ; un histogramme pour un caractère continu regroupé en classes ; une courbe des effectifs cumulés pour les questions du type « au plus » ou « au moins ».",
+      "difficulte": 2,
+      "tags": ["representation", "choix", "caractere"]
+    },
+    {
+      "id": "1D-CH12-030",
+      "lecon": "Organisation et représentation des données",
+      "type": "definition",
+      "recto": "Pourquoi les bâtons d'un diagramme en bâtons sont-ils séparés alors que les rectangles d'un histogramme sont accolés ?",
+      "verso": "Parce que les valeurs d'un caractère discret sont isolées : entre $3$ et $4$ frères, il n'y a rien. Un caractère continu, au contraire, n'interdit aucune valeur entre deux classes, ce qui impose des rectangles jointifs.",
+      "difficulte": 2,
+      "tags": ["diagramme-en-batons", "histogramme", "distinction"]
+    },
+    {
+      "id": "1D-CH12-031",
+      "lecon": "Organisation et représentation des données",
+      "type": "formule",
+      "recto": "Quelle grandeur d'un rectangle est proportionnelle à l'effectif de sa classe dans un histogramme ?",
+      "verso": "Son aire, et non sa hauteur. Si toutes les classes ont la même amplitude, on peut prendre l'effectif $n_i$ pour hauteur ; si les amplitudes diffèrent, la hauteur doit être la densité $d_i=\\dfrac{n_i}{\\text{amplitude}}$.",
+      "difficulte": 2,
+      "tags": ["histogramme", "aire", "densite"]
+    },
+    {
+      "id": "1D-CH12-032",
+      "lecon": "Organisation et représentation des données",
+      "type": "definition",
+      "recto": "Pourquoi un histogramme à classes d'amplitudes inégales tracé à hauteur d'effectif est-il trompeur ?",
+      "verso": "Parce que l'oeil compare des surfaces : à effectif égal, une classe deux fois plus large couvrirait deux fois plus de surface et paraîtrait deux fois plus peuplée. La densité rétablit des aires proportionnelles aux effectifs.",
+      "difficulte": 3,
+      "tags": ["histogramme", "densite", "piege"]
+    },
+    {
+      "id": "1D-CH12-033",
+      "lecon": "Organisation et représentation des données",
+      "type": "definition",
+      "recto": "Comment construit-on le polygone des effectifs d'une série groupée en classes ?",
+      "verso": "On relie par des segments les points de coordonnées (centre de classe ; effectif), c'est-à-dire les milieux des sommets supérieurs des rectangles de l'histogramme. On le ferme sur l'axe des abscisses par deux classes fictives d'effectif nul, de part et d'autre.",
+      "difficulte": 2,
+      "tags": ["polygone-des-effectifs", "construction", "centre-de-classe"]
+    },
+    {
+      "id": "1D-CH12-034",
+      "lecon": "Organisation et représentation des données",
+      "type": "formule",
+      "recto": "Comment calcule-t-on l'angle du secteur associé à une classe dans un diagramme circulaire ?",
+      "verso": "L'angle vaut $f_i\\times 360°$, c'est-à-dire $\\dfrac{n_i}{N}\\times 360°$, le disque entier représentant l'effectif total. Contrôle indispensable avant de tracer : la somme des angles calculés doit valoir $360°$.",
+      "difficulte": 1,
+      "tags": ["diagramme-circulaire", "angle", "frequence"]
+    },
+    {
+      "id": "1D-CH12-035",
+      "lecon": "Organisation et représentation des données",
+      "type": "formule",
+      "recto": "Comment lit-on la médiane sur une courbe des effectifs cumulés croissants ?",
+      "verso": "C'est l'abscisse du point d'ordonnée $\\dfrac{N}{2}$. De la même façon, $Q_1$ se lit à l'ordonnée $\\dfrac{N}{4}$ et $Q_3$ à l'ordonnée $\\dfrac{3N}{4}$. Cette courbe est toujours montante, de l'ordonnée $0$ à l'ordonnée $N$.",
+      "difficulte": 2,
+      "tags": ["effectifs-cumules", "mediane", "lecture-graphique"]
+    },
+    {
+      "id": "1D-CH12-036",
+      "lecon": "Organisation et représentation des données",
+      "type": "definition",
+      "recto": "A quelle abscisse place-t-on un effectif cumulé sur la courbe des effectifs cumulés croissants ?",
+      "verso": "A la borne supérieure de sa classe, jamais à son centre. Dire que $17$ producteurs ont récolté moins de $300$ kg place le point en $(300\\,;17)$ ; le placer en $250$ décalerait toute la courbe d'une demi-classe et fausserait la médiane.",
+      "difficulte": 3,
+      "tags": ["effectifs-cumules", "bornes", "piege"]
+    },
+    {
+      "id": "1D-CH12-037",
+      "lecon": "Organisation et représentation des données",
+      "type": "formule",
+      "recto": "Quelle formule d'interpolation linéaire donne la valeur $x$ correspondant à un cumul $C$ dans la classe $[a\\,;b[$ d'effectif $n$ ?",
+      "verso": "$x = a + \\dfrac{C-C_a}{n}\\times(b-a)$, où $C_a$ est le cumul atteint en $a$. Elle suppose les individus régulièrement répartis dans la classe et fournit la médiane pour $C=\\dfrac{N}{2}$, les quartiles pour les autres seuils.",
+      "difficulte": 2,
+      "tags": ["interpolation-lineaire", "mediane", "quartiles"]
+    },
+    {
+      "id": "1D-CH12-038",
+      "lecon": "Organisation et représentation des données",
+      "type": "formule",
+      "recto": "Quelle formule d'interpolation linéaire donne le cumul correspondant à une valeur $x$ de la classe $[a\\,;b[$ d'effectif $n$ ?",
+      "verso": "$C = C_a + \\dfrac{x-a}{b-a}\\times n$, où $C_a$ est le cumul atteint en $a$. Elle sert à obtenir le nombre, donc le pourcentage, d'individus situés en dessous d'un seuil fixé.",
+      "difficulte": 2,
+      "tags": ["interpolation-lineaire", "pourcentage", "seuil"]
+    }
+  ]
+}

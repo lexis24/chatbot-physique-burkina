@@ -1,0 +1,296 @@
+{
+  "niveau": "4ème",
+  "chapitre": "Chapitre 4 : Repérage dans le plan",
+  "source": "maths/4eme/Chapitre_4_Reperage_dans_le_plan",
+  "nombre_cartes": 32,
+  "cartes": [
+    {
+      "id": "4E-CH04-001",
+      "lecon": "Coordonnées d'un point dans un repère cartésien ; milieu de deux points",
+      "type": "definition",
+      "recto": "De quoi est formé un repère du plan ?",
+      "verso": "D'une origine O et de deux axes gradués sécants en O. Le premier axe est l'axe des abscisses, le second l'axe des ordonnées, et chaque axe porte son unité.",
+      "difficulte": 1,
+      "tags": ["repere", "definition", "axes"]
+    },
+    {
+      "id": "4E-CH04-002",
+      "lecon": "Coordonnées d'un point dans un repère cartésien ; milieu de deux points",
+      "type": "definition",
+      "recto": "Quelle position relative les deux axes d'un repère cartésien peuvent-ils avoir ?",
+      "verso": "Ils sont sécants en l'origine, mais pas forcément perpendiculaires : un repère cartésien accepte des axes tracés en biais.",
+      "difficulte": 2,
+      "tags": ["repere-cartesien", "axes"]
+    },
+    {
+      "id": "4E-CH04-003",
+      "lecon": "Coordonnées d'un point dans un repère cartésien ; milieu de deux points",
+      "type": "definition",
+      "recto": "Comment appelle-t-on le premier des deux nombres qui repèrent un point du plan ?",
+      "verso": "C'est l'abscisse, notée $x$. Elle se lit sur l'axe des abscisses, souvent horizontal. On écrit $M\\left(x\\,;\\,y\\right)$, l'abscisse toujours en premier.",
+      "difficulte": 1,
+      "tags": ["abscisse", "vocabulaire", "notation"]
+    },
+    {
+      "id": "4E-CH04-004",
+      "lecon": "Coordonnées d'un point dans un repère cartésien ; milieu de deux points",
+      "type": "definition",
+      "recto": "Comment appelle-t-on le second des deux nombres qui repèrent un point du plan ?",
+      "verso": "C'est l'ordonnée, notée $y$. Elle se lit sur l'axe des ordonnées, souvent vertical. Dans $M\\left(3\\,;\\,2\\right)$, l'ordonnée vaut $2$.",
+      "difficulte": 1,
+      "tags": ["ordonnee", "vocabulaire", "notation"]
+    },
+    {
+      "id": "4E-CH04-005",
+      "lecon": "Coordonnées d'un point dans un repère cartésien ; milieu de deux points",
+      "type": "definition",
+      "recto": "Pourquoi faut-il deux nombres pour repérer un point du plan, alors qu'un seul suffit sur une droite graduée ?",
+      "verso": "Parce qu'il faut préciser à la fois un déplacement horizontal et un déplacement vertical : « à $4$ pas » ne désigne rien tant que la direction n'est pas donnée. Dans un repère fixé, chaque point reçoit ainsi un unique couple $\\left(x\\,;\\,y\\right)$.",
+      "difficulte": 2,
+      "tags": ["coordonnees", "couple"]
+    },
+    {
+      "id": "4E-CH04-006",
+      "lecon": "Coordonnées d'un point dans un repère cartésien ; milieu de deux points",
+      "type": "definition",
+      "recto": "Pourquoi les couples $\\left(2\\,;\\,4\\right)$ et $\\left(4\\,;\\,2\\right)$ ne repèrent-ils pas le même point ?",
+      "verso": "Parce que l'ordre des deux nombres est convenu : l'abscisse d'abord, l'ordonnée ensuite. $\\left(2\\,;\\,4\\right)$ est à $2$ vers la droite puis $4$ vers le haut, tandis que $\\left(4\\,;\\,2\\right)$ est à $4$ vers la droite puis $2$ vers le haut.",
+      "difficulte": 3,
+      "tags": ["coordonnees", "ordre", "piege"]
+    },
+    {
+      "id": "4E-CH04-007",
+      "lecon": "Coordonnées d'un point dans un repère cartésien ; milieu de deux points",
+      "type": "formule",
+      "recto": "Quelles sont les coordonnées du milieu M de $\\left[AB\\right]$ ?",
+      "verso": "$x_M = \\dfrac{x_A + x_B}{2}$ et $y_M = \\dfrac{y_A + y_B}{2}$ : chaque coordonnée du milieu est la moyenne des coordonnées de même nom de A et de B.",
+      "difficulte": 1,
+      "tags": ["milieu", "formule"]
+    },
+    {
+      "id": "4E-CH04-008",
+      "lecon": "Coordonnées d'un point dans un repère cartésien ; milieu de deux points",
+      "type": "formule",
+      "recto": "Pourquoi les coordonnées du milieu de $\\left[AB\\right]$ s'obtiennent-elles par deux moyennes ?",
+      "verso": "En projetant A, M et B sur l'axe des abscisses, la projection de M reste au centre des deux autres : l'abscisse du milieu est donc la moyenne des abscisses. Le même raisonnement sur l'axe des ordonnées donne la seconde moyenne.",
+      "difficulte": 2,
+      "tags": ["milieu", "demonstration"]
+    },
+    {
+      "id": "4E-CH04-009",
+      "lecon": "Coordonnées d'un point dans un repère cartésien ; milieu de deux points",
+      "type": "formule",
+      "recto": "Comment applique-t-on la formule du milieu quand les coordonnées sont négatives ?",
+      "verso": "Sans rien y changer, en soignant les signes. Avec $A\\left(-6\\,;\\,4\\right)$ et $B\\left(2\\,;\\,-2\\right)$ : $x_M = \\dfrac{-6 + 2}{2} = -2$ et $y_M = \\dfrac{4 + \\left(-2\\right)}{2} = 1$, donc $M\\left(-2\\,;\\,1\\right)$.",
+      "difficulte": 2,
+      "tags": ["milieu", "relatifs"]
+    },
+    {
+      "id": "4E-CH04-010",
+      "lecon": "Coordonnées d'un point dans un repère cartésien ; milieu de deux points",
+      "type": "formule",
+      "recto": "Pourquoi les coordonnées du milieu ne s'obtiennent-elles pas en divisant par $2$ la différence des coordonnées ?",
+      "verso": "Parce que la formule est une demi-somme, jamais une demi-différence. Avec $A\\left(-4\\,;\\,2\\right)$ et $B\\left(6\\,;\\,-8\\right)$, le milieu est $M\\left(1\\,;\\,-3\\right)$ et non $M\\left(5\\,;\\,-5\\right)$.",
+      "difficulte": 3,
+      "tags": ["milieu", "piege"]
+    },
+    {
+      "id": "4E-CH04-011",
+      "lecon": "Coordonnées d'un point dans un repère cartésien ; milieu de deux points",
+      "type": "formule",
+      "recto": "Quel contrôle rapide permet de vérifier les coordonnées d'un milieu ?",
+      "verso": "Vérifier que chaque coordonnée du milieu est comprise entre les deux coordonnées correspondantes de A et de B : le milieu est toujours coincé entre les deux points.",
+      "difficulte": 2,
+      "tags": ["milieu", "verification"]
+    },
+    {
+      "id": "4E-CH04-012",
+      "lecon": "Coordonnées d'un point dans un repère cartésien ; milieu de deux points",
+      "type": "formule",
+      "recto": "Comment retrouve-t-on une extrémité d'un segment lorsqu'on connaît le milieu et l'autre extrémité ?",
+      "verso": "On écrit que la coordonnée du milieu est la moyenne, puis on résout. Si le milieu a pour abscisse $1$ et l'extrémité connue $-3$, alors $\\dfrac{-3 + x}{2} = 1$, donc $-3 + x = 2$ et $x = 5$. On refait le même travail sur les ordonnées.",
+      "difficulte": 3,
+      "tags": ["milieu", "extremite"]
+    },
+    {
+      "id": "4E-CH04-013",
+      "lecon": "Coordonnées d'un point dans un repère cartésien ; milieu de deux points",
+      "type": "definition",
+      "recto": "Comment le signe des deux coordonnées indique-t-il la région du repère où se trouve un point ?",
+      "verso": "En haut à droite les deux coordonnées sont positives ; en haut à gauche l'abscisse est négative et l'ordonnée positive ; en bas à gauche les deux sont négatives ; en bas à droite l'abscisse est positive et l'ordonnée négative.",
+      "difficulte": 2,
+      "tags": ["regions", "signes"]
+    },
+    {
+      "id": "4E-CH04-014",
+      "lecon": "Coordonnées d'un point dans un repère cartésien ; milieu de deux points",
+      "type": "formule",
+      "recto": "Comment lit-on sans erreur les coordonnées d'un point déjà marqué dans un repère ?",
+      "verso": "On trace deux traits en pointillés depuis ce point : celui qui rejoint l'axe horizontal donne l'abscisse, celui qui rejoint l'axe vertical donne l'ordonnée. On ne devine jamais la position à vue.",
+      "difficulte": 2,
+      "tags": ["lecture", "coordonnees"]
+    },
+    {
+      "id": "4E-CH04-015",
+      "lecon": "Coordonnées d'un point dans un repère cartésien ; milieu de deux points",
+      "type": "formule",
+      "recto": "Que vaut l'abscisse du milieu de $\\left[AB\\right]$ lorsque A et B ont la même abscisse ?",
+      "verso": "Elle vaut cette abscisse commune, car la moyenne de deux nombres égaux est ce nombre. Avec $A\\left(-2\\,;\\,6\\right)$ et $B\\left(-2\\,;\\,-4\\right)$, le milieu a pour abscisse $-2$.",
+      "difficulte": 3,
+      "tags": ["milieu", "cas-particulier"]
+    },
+    {
+      "id": "4E-CH04-016",
+      "lecon": "Coordonnées d'un point dans un repère cartésien ; milieu de deux points",
+      "type": "formule",
+      "recto": "Comment obtient-on les coordonnées du centre d'un parallélogramme ?",
+      "verso": "Le centre est le milieu d'une diagonale, puisque les diagonales d'un parallélogramme se coupent en leur milieu. On applique donc la formule du milieu à deux sommets opposés.",
+      "difficulte": 2,
+      "tags": ["milieu", "parallelogramme", "centre"]
+    },
+    {
+      "id": "4E-CH04-017",
+      "lecon": "Coordonnées d'un point dans un repère orthogonal ; placer un point",
+      "type": "definition",
+      "recto": "Qu'est-ce qu'un repère orthogonal ?",
+      "verso": "C'est un repère dont les deux axes sont perpendiculaires. Le mot « orthogonal » vient du grec et signifie « à angle droit ».",
+      "difficulte": 1,
+      "tags": ["repere-orthogonal", "definition"]
+    },
+    {
+      "id": "4E-CH04-018",
+      "lecon": "Coordonnées d'un point dans un repère orthogonal ; placer un point",
+      "type": "definition",
+      "recto": "Qu'est-ce qu'un repère orthonormé ?",
+      "verso": "C'est un repère orthogonal dont les deux axes portent en plus la même unité. Le papier quadrillé du cahier fournit gratuitement un repère orthonormé.",
+      "difficulte": 2,
+      "tags": ["repere-orthonorme", "definition"]
+    },
+    {
+      "id": "4E-CH04-019",
+      "lecon": "Coordonnées d'un point dans un repère orthogonal ; placer un point",
+      "type": "definition",
+      "recto": "Entre repère orthogonal et repère orthonormé, lequel est un cas particulier de l'autre ?",
+      "verso": "Le repère orthonormé est un cas particulier du repère orthogonal : « orthogonal » ne parle que des angles, « orthonormé » ajoute la même unité sur les deux axes. Un repère orthogonal n'est donc pas toujours orthonormé.",
+      "difficulte": 3,
+      "tags": ["repere-orthogonal", "repere-orthonorme", "distinction"]
+    },
+    {
+      "id": "4E-CH04-020",
+      "lecon": "Coordonnées d'un point dans un repère orthogonal ; placer un point",
+      "type": "formule",
+      "recto": "Depuis l'origine, quels déplacements permettent de placer le point $M\\left(x\\,;\\,y\\right)$ ?",
+      "verso": "On avance d'abord de $x$ sur l'axe horizontal, à droite si $x > 0$ et à gauche si $x < 0$, puis de $y$ parallèlement à l'axe vertical, vers le haut si $y > 0$ et vers le bas si $y < 0$.",
+      "difficulte": 2,
+      "tags": ["placer-un-point", "coordonnees"]
+    },
+    {
+      "id": "4E-CH04-021",
+      "lecon": "Coordonnées d'un point dans un repère orthogonal ; placer un point",
+      "type": "definition",
+      "recto": "Quelle coordonnée est nulle pour un point situé sur l'axe des abscisses ?",
+      "verso": "Son ordonnée. Un tel point s'écrit $\\left(x\\,;\\,0\\right)$, comme $F\\left(-3\\,;\\,0\\right)$.",
+      "difficulte": 2,
+      "tags": ["axes", "coordonnee-nulle"]
+    },
+    {
+      "id": "4E-CH04-022",
+      "lecon": "Coordonnées d'un point dans un repère orthogonal ; placer un point",
+      "type": "definition",
+      "recto": "Pourquoi le point $\\left(0\\,;\\,5\\right)$ n'est-il pas situé sur l'axe des abscisses ?",
+      "verso": "Parce que c'est son abscisse qui est nulle, et non son ordonnée. Il se trouve donc sur l'axe des ordonnées, à $5$ unités au-dessus de l'origine.",
+      "difficulte": 3,
+      "tags": ["axes", "piege"]
+    },
+    {
+      "id": "4E-CH04-023",
+      "lecon": "Coordonnées d'un point dans un repère orthogonal ; placer un point",
+      "type": "definition",
+      "recto": "Quelles sont les coordonnées de l'origine d'un repère ?",
+      "verso": "$O\\left(0\\,;\\,0\\right)$ : son abscisse et son ordonnée sont nulles, car l'origine appartient aux deux axes.",
+      "difficulte": 1,
+      "tags": ["origine", "coordonnees"]
+    },
+    {
+      "id": "4E-CH04-024",
+      "lecon": "Coordonnées d'un point dans un repère orthogonal ; placer un point",
+      "type": "formule",
+      "recto": "Quelle est la longueur de $\\left[AB\\right]$ lorsque A et B ont la même ordonnée ?",
+      "verso": "Le segment est horizontal et $AB = |x_A - x_B|$. Avec $A\\left(-2\\,;\\,3\\right)$ et $B\\left(5\\,;\\,3\\right)$ : $AB = |-2 - 5| = 7$ unités.",
+      "difficulte": 2,
+      "tags": ["longueur", "segment-horizontal"]
+    },
+    {
+      "id": "4E-CH04-025",
+      "lecon": "Coordonnées d'un point dans un repère orthogonal ; placer un point",
+      "type": "formule",
+      "recto": "Quelle est la longueur de $\\left[AB\\right]$ lorsque A et B ont la même abscisse ?",
+      "verso": "Le segment est vertical et $AB = |y_A - y_B|$. Avec $A\\left(4\\,;\\,-1\\right)$ et $B\\left(4\\,;\\,6\\right)$ : $AB = |-1 - 6| = 7$ unités.",
+      "difficulte": 2,
+      "tags": ["longueur", "segment-vertical"]
+    },
+    {
+      "id": "4E-CH04-026",
+      "lecon": "Coordonnées d'un point dans un repère orthogonal ; placer un point",
+      "type": "formule",
+      "recto": "Pourquoi la longueur d'un segment oblique ne se calcule-t-elle pas avec $|x_A - x_B|$ ?",
+      "verso": "Parce que cette règle suppose que les deux points ont la même ordonnée. Pour $A\\left(1\\,;\\,2\\right)$ et $B\\left(4\\,;\\,6\\right)$, le segment est oblique : sa longueur n'est pas $3$, et son calcul s'apprend en 3ème.",
+      "difficulte": 3,
+      "tags": ["longueur", "piege"]
+    },
+    {
+      "id": "4E-CH04-027",
+      "lecon": "Coordonnées d'un point dans un repère orthogonal ; placer un point",
+      "type": "formule",
+      "recto": "Quelles sont les coordonnées du symétrique de $A\\left(x\\,;\\,y\\right)$ par rapport à l'axe des abscisses ?",
+      "verso": "Ce sont $\\left(x\\,;\\,-y\\right)$ : on garde l'abscisse et on change le signe de l'ordonnée. Ainsi $A\\left(4\\,;\\,2\\right)$ a pour symétrique $\\left(4\\,;\\,-2\\right)$.",
+      "difficulte": 2,
+      "tags": ["symetrie", "axe-des-abscisses"]
+    },
+    {
+      "id": "4E-CH04-028",
+      "lecon": "Coordonnées d'un point dans un repère orthogonal ; placer un point",
+      "type": "formule",
+      "recto": "Quelles sont les coordonnées du symétrique de $A\\left(x\\,;\\,y\\right)$ par rapport à l'axe des ordonnées ?",
+      "verso": "Ce sont $\\left(-x\\,;\\,y\\right)$ : on garde l'ordonnée et on change le signe de l'abscisse. Ainsi $A\\left(4\\,;\\,2\\right)$ a pour symétrique $\\left(-4\\,;\\,2\\right)$.",
+      "difficulte": 2,
+      "tags": ["symetrie", "axe-des-ordonnees"]
+    },
+    {
+      "id": "4E-CH04-029",
+      "lecon": "Coordonnées d'un point dans un repère orthogonal ; placer un point",
+      "type": "formule",
+      "recto": "Quelles sont les coordonnées du symétrique de $A\\left(x\\,;\\,y\\right)$ par rapport à l'origine ?",
+      "verso": "Ce sont $\\left(-x\\,;\\,-y\\right)$ : les deux signes changent. Ainsi $A\\left(4\\,;\\,2\\right)$ a pour symétrique $\\left(-4\\,;\\,-2\\right)$.",
+      "difficulte": 2,
+      "tags": ["symetrie", "origine"]
+    },
+    {
+      "id": "4E-CH04-030",
+      "lecon": "Coordonnées d'un point dans un repère orthogonal ; placer un point",
+      "type": "formule",
+      "recto": "Pourquoi le symétrique de $M\\left(-2\\,;\\,3\\right)$ par rapport à l'axe des abscisses n'est-il pas $\\left(2\\,;\\,3\\right)$ ?",
+      "verso": "Parce que dans une symétrie par rapport à l'axe des abscisses, c'est l'ordonnée qui change de signe, l'abscisse restant inchangée. Le symétrique cherché est $\\left(-2\\,;\\,-3\\right)$.",
+      "difficulte": 3,
+      "tags": ["symetrie", "piege"]
+    },
+    {
+      "id": "4E-CH04-031",
+      "lecon": "Coordonnées d'un point dans un repère orthogonal ; placer un point",
+      "type": "formule",
+      "recto": "Quelle propriété de l'origine justifie les coordonnées du symétrique d'un point par rapport à O ?",
+      "verso": "O est le milieu de $\\left[AA'\\right]$. Comme l'abscisse du milieu est la moyenne des abscisses, $\\dfrac{x_A + x_{A'}}{2} = 0$, donc $x_{A'} = -x_A$, et de même $y_{A'} = -y_A$.",
+      "difficulte": 3,
+      "tags": ["symetrie", "origine", "demonstration"]
+    },
+    {
+      "id": "4E-CH04-032",
+      "lecon": "Coordonnées d'un point dans un repère orthogonal ; placer un point",
+      "type": "formule",
+      "recto": "Pourquoi préfère-t-on des axes perpendiculaires portant la même unité lorsqu'on veut mesurer des longueurs ?",
+      "verso": "Le repérage fonctionne aussi avec des axes en biais, mais les carreaux n'y sont plus de vrais carrés et les longueurs se déforment selon la direction. Avec des axes perpendiculaires de même unité, elles se comptent sans déformation.",
+      "difficulte": 2,
+      "tags": ["repere-orthonorme", "longueur"]
+    }
+  ]
+}

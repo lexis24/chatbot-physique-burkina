@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Fiche de revision - Terminale D - Chapitre 1 : Nombres complexes</title>
+<style>
+/* ===================================================================
+   FICHE DE REVISION, Collection Hakili Lab, Edition 2026
+   Feuille de style autonome, format A4 pret a imprimer.
+   Bleu #005CB9 · Vert #49A145
+   =================================================================== */
+:root{
+  --bleu:#005CB9; --bleu-fonce:#00429A; --bleu-pale:#E8F1FB; --bleu-bord:#B7D2EE;
+  --vert:#49A145; --vert-fonce:#2F7A2C; --vert-pale:#EDF7EC; --vert-bord:#BCE0B9;
+  --gris:#4A4A4A; --gris-clair:#E4E4E4; --rouge:#B3261E;
+}
+@page{
+  size:A4; margin:15mm;
+  @bottom-center{
+    content:"Collection Hakili Lab, Edition 2026  ·  Fiche de revision  ·  " counter(page) "/" counter(pages);
+    font-family:"Segoe UI",Calibri,Arial,sans-serif; font-size:6.6pt; color:#8A8A8A;
+  }
+}
+*{box-sizing:border-box;}
+body{
+  margin:0; font-family:"Segoe UI",Calibri,Arial,sans-serif;
+  font-size:8.4pt; line-height:1.26; color:#1B1B1B;
+}
+p{margin:0 0 3pt;}
+ul{margin:0 0 3pt; padding-left:11pt;}
+li{margin:0 0 1.2pt;}
+b,strong{color:var(--bleu-fonce);}
+
+/* ------------------------------ ENTETE ---------------------------- */
+.entete{
+  display:flex; align-items:stretch; border:1.6pt solid var(--bleu);
+  border-radius:2.5pt; overflow:hidden; margin-bottom:6pt;
+}
+.entete .num{
+  background:var(--bleu); color:#fff; font-size:20pt; font-weight:700;
+  padding:0 8pt; display:flex; align-items:center; justify-content:center; min-width:34pt;
+}
+.entete .txt{padding:3.5pt 8pt; flex:1;}
+.entete .niveau{
+  font-size:7pt; font-weight:700; letter-spacing:.9pt; color:var(--vert-fonce);
+}
+.entete h1{margin:0; font-size:13.5pt; line-height:1.12; color:var(--bleu-fonce); font-weight:700;}
+.entete .sous{font-size:7pt; color:var(--gris); margin-top:1pt;}
+
+/* --------------------------- BANDEAUX ----------------------------- */
+.bandeau{
+  color:#fff; font-weight:700; font-size:9pt; letter-spacing:1pt;
+  padding:2.4pt 7pt; border-radius:2pt; margin:3pt 0 4pt; break-after:avoid; page-break-after:avoid;
+}
+.bandeau.bleu{background:var(--bleu);}
+.bandeau.vert{background:var(--vert);}
+
+/* --------------------------- COLONNES ----------------------------- */
+.cols{column-count:2; column-gap:7mm; column-fill:balance;}
+
+.cols.bal{column-fill:balance;}
+.bloc{margin-bottom:5pt;}
+.keep{break-inside:avoid; page-break-inside:avoid;}
+
+/* --------------------------- LECONS ------------------------------- */
+h2.lecon{
+  margin:0 0 3pt; font-size:8.6pt; font-weight:700; color:#fff; background:var(--bleu-fonce);
+  padding:1.8pt 5pt; border-radius:1.5pt; break-after:avoid; page-break-after:avoid;
+}
+h3.rub{
+  margin:3.5pt 0 1.5pt; font-size:8.2pt; font-weight:700; color:var(--vert-fonce);
+  border-bottom:.7pt solid var(--vert-bord); padding-bottom:.8pt;
+  break-after:avoid; page-break-after:avoid;
+}
+
+/* --------------------------- ENCADRES ----------------------------- */
+.form{
+  background:var(--bleu-pale); border:.8pt solid var(--bleu-bord); border-left:2.6pt solid var(--bleu);
+  border-radius:2pt; padding:2.4pt 5pt; margin:2.2pt 0 3.4pt;
+  break-inside:avoid; page-break-inside:avoid;
+}
+.form .t{
+  display:block; font-size:6.8pt; font-weight:700; letter-spacing:.6pt;
+  color:var(--bleu); margin-bottom:1.5pt;
+}
+.form .c{text-align:center; font-size:9.1pt; margin:1.6pt 0;}
+.note{background:var(--vert-pale); border-left:2.4pt solid var(--vert); padding:2.4pt 5pt; border-radius:1.5pt; margin:2.5pt 0 4pt; break-inside:avoid;}
+
+/* --------------------------- TABLEAUX ----------------------------- */
+table{width:100%; border-collapse:collapse; font-size:7.6pt; margin:2pt 0 4pt; break-inside:avoid;}
+th{background:var(--bleu); color:#fff; font-weight:700; text-align:left; padding:1.8pt 4pt; font-size:7.2pt;}
+td{border:.6pt solid var(--gris-clair); padding:1.8pt 4pt; vertical-align:top;}
+tr{break-inside:avoid;}
+table.var td{text-align:center; font-size:8pt;}
+table.var td.lab{text-align:left; font-weight:700; color:var(--bleu-fonce); background:var(--bleu-pale);}
+
+/* ----------------------------- PIEGES ----------------------------- */
+table.pieges th:first-child{width:44%;}
+table.pieges td:first-child{color:var(--rouge); background:#FDF1F0;}
+.x{font-weight:700;}
+.v{color:var(--vert-fonce); font-weight:700;}
+
+/* ---------------------------- RECAP ------------------------------- */
+ol.recap{margin:0; padding-left:0; list-style:none; counter-reset:r;}
+ol.recap li{
+  counter-increment:r; position:relative; padding-left:13pt; margin-bottom:1.8pt;
+  break-inside:avoid;
+}
+ol.recap li::before{
+  content:counter(r); position:absolute; left:0; top:.3pt;
+  width:10pt; height:10pt; border-radius:50%; background:var(--vert); color:#fff;
+  font-size:6.6pt; font-weight:700; text-align:center; line-height:10pt;
+}
+
+/* --------------------------- MATHS -------------------------------- */
+.m{font-family:Cambria,Georgia,"Times New Roman",serif;}
+i,var{font-family:Cambria,Georgia,"Times New Roman",serif; font-style:italic;}
+.op{font-family:Cambria,Georgia,"Times New Roman",serif; font-style:normal;}
+.f{display:inline-block; vertical-align:middle; text-align:center;
+   margin:0 .12em; line-height:1.06; font-family:Cambria,Georgia,"Times New Roman",serif;}
+.f>span{display:block; padding:0 .2em;}
+.f>span:first-child{border-bottom:.6pt solid currentColor; padding-bottom:.08em;}
+.f>span:last-child{padding-top:.04em;}
+.rad{border-top:.6pt solid currentColor; padding-top:.12em;}
+/* line-height:0 evite que l'exposant n'ecarte les lignes ; position:relative le
+   repositionne sans qu'il heurte la barre de fraction ni le trait du radical. */
+sup,sub{font-size:.68em; line-height:0; position:relative; vertical-align:baseline;}
+sup{top:-.42em;}
+sub{bottom:-.22em;}
+.pt{white-space:nowrap;}
+/* Les fleches n'ont qu'un glyphe atrophie dans la fonte serif : on les force
+   en sans-serif, ou elles sont franches meme a 8 pt. */
+.ar{font-family:"Segoe UI",Calibri,Arial,"DejaVu Sans",sans-serif; font-style:normal;}
+
+/* ------------------- PIEGES : blocs erreur / correction ------------- */
+.pg{font-size:8.1pt; border-left:2.4pt solid var(--rouge); background:#FDF1F0; border-radius:1.5pt;
+    padding:2pt 5pt; margin:0 0 2.8pt; break-inside:avoid; page-break-inside:avoid;}
+.pg .err{color:var(--rouge); font-weight:600;}
+.pg .cor{color:#1B1B1B; margin-top:.8pt;}
+.pg .cor b{color:var(--bleu-fonce);}
+.v{color:var(--vert-fonce); font-weight:700;}
+
+</style>
+</head>
+<body>
+<header class="entete">
+  <div class="num">1</div>
+  <div class="txt">
+    <div class="niveau">TERMINALE D &middot; MATHEMATIQUES</div>
+    <h1>Nombres complexes</h1>
+    <div class="sous">Leçon 1 : forme algébrique et conjugué &middot; Leçon 2 : plan complexe et module &middot; Leçon 3 : argument et formes trigonométrique et exponentielle &middot; Leçon 4 : formules de Moivre et d'Euler &middot; Leçon 5 : équations dans &#8450; &middot; Leçon 6 : complexes et géométrie du plan</div>
+  </div>
+</header>
+
+<div class="bandeau bleu" style="margin-top:0">L'ESSENTIEL</div>
+<div class="cols">
+
+<!-- ================= LECON 1 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 1&nbsp;: Forme algébrique et conjugué</h2>
+<p><span class="m">&#8450;</span> contient <span class="m">&#8477;</span>, prolonge ses opérations et contient un élément <i>i</i> tel que <span class="pt"><i>i</i><sup>2</sup>&#8239;=&#8239;&#8722;1</span>. Tout complexe <i>z</i> s'écrit de <b>façon unique</b> sous la <b>forme algébrique</b> <span class="pt"><i>z</i>&#8239;=&#8239;<i>a</i>&#8239;+&#8239;<i>bi</i></span>, avec <i>a</i>, <i>b</i> réels : <span class="pt"><i>a</i>&#8239;=&#8239;<span class="op">Re</span>(<i>z</i>)</span> <b>partie réelle</b>, <span class="pt"><i>b</i>&#8239;=&#8239;<span class="op">Im</span>(<i>z</i>)</span> <b>partie imaginaire</b>, toutes deux <b>réelles</b>. <i>z</i> est <b>réel</b> si <i>b</i>&#8239;=&#8239;0, <b>imaginaire pur</b> si <i>a</i>&#8239;=&#8239;0 et <i>b</i>&#8239;&#8800;&#8239;0.</p></div>
+<div class="form">
+  <span class="t">IDENTIFICATION&nbsp;: L'UNICITE DE L'ECRITURE, <i>a</i>, <i>b</i>, <i>a</i>&#8242;, <i>b</i>&#8242; REELS</span>
+  <div class="c m"><i>a</i>&#8239;+&#8239;<i>bi</i>&#8239;=&#8239;<i>a</i>&#8242;&#8239;+&#8239;<i>b</i>&#8242;<i>i</i>&nbsp;<span class="ar">&#8660;</span>&nbsp;<i>a</i>&#8239;=&#8239;<i>a</i>&#8242; et <i>b</i>&#8239;=&#8239;<i>b</i>&#8242; &nbsp;&nbsp; <i>a</i>&#8239;+&#8239;<i>bi</i>&#8239;=&#8239;0&nbsp;<span class="ar">&#8660;</span>&nbsp;<i>a</i>&#8239;=&#8239;<i>b</i>&#8239;=&#8239;0</div>
+</div>
+<div class="form">
+  <span class="t">OPERATIONS&nbsp;: <i>z</i>&#8239;=&#8239;<i>a</i>&#8239;+&#8239;<i>bi</i>, <i>z</i>&#8242;&#8239;=&#8239;<i>c</i>&#8239;+&#8239;<i>di</i></span>
+  <div class="c m"><i>z</i>&#8239;&#177;&#8239;<i>z</i>&#8242;&#8239;=&#8239;(<i>a</i>&#8239;&#177;&#8239;<i>c</i>)&#8239;+&#8239;(<i>b</i>&#8239;&#177;&#8239;<i>d</i>)<i>i</i> &nbsp;&nbsp; <i>z</i>&#8239;<i>z</i>&#8242;&#8239;=&#8239;(<i>ac</i>&#8239;&#8722;&#8239;<i>bd</i>)&#8239;+&#8239;(<i>ad</i>&#8239;+&#8239;<i>bc</i>)<i>i</i></div>
+</div>
+<p>Le produit ne s'apprend pas : on <b>développe</b>, puis on remplace <span class="pt"><i>i</i><sup>2</sup></span> par &#8722;1. <b>Puissances</b> : <span class="pt"><i>i</i><sup>0</sup>&#8239;=&#8239;1</span>, <span class="pt"><i>i</i><sup>1</sup>&#8239;=&#8239;<i>i</i></span>, <span class="pt"><i>i</i><sup>2</sup>&#8239;=&#8239;&#8722;1</span>, <span class="pt"><i>i</i><sup>3</sup>&#8239;=&#8239;&#8722;<i>i</i></span>, <span class="pt"><i>i</i><sup>4</sup>&#8239;=&#8239;1</span>, puis <b>de 4 en 4</b>.</p>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Conjugué, inverse et quotient</h3>
+<p><b>Conjugué</b> de <span class="pt"><i>z</i>&#8239;=&#8239;<i>a</i>&#8239;+&#8239;<i>bi</i></span> : <span class="pt"><span class="rad"><i>z</i></span>&#8239;=&#8239;<i>a</i>&#8239;&#8722;&#8239;<i>bi</i></span> (on change le signe de la <b>seule</b> partie imaginaire).</p>
+<div class="form">
+  <span class="t">PROPRIETES DU CONJUGUE&nbsp;: <i>z</i>&#8242;&#8239;&#8800;&#8239;0 POUR LE QUOTIENT</span>
+  <div class="c m"><span class="rad"><i>z</i>&#8239;+&#8239;<i>z</i>&#8242;</span>&#8239;=&#8239;<span class="rad"><i>z</i></span>&#8239;+&#8239;<span class="rad"><i>z</i>&#8242;</span> &nbsp; <span class="rad"><i>z</i>&#8239;<i>z</i>&#8242;</span>&#8239;=&#8239;<span class="rad"><i>z</i></span>&#8239;<span class="rad"><i>z</i>&#8242;</span> &nbsp; <span class="rad">(<i>z</i>&#8239;/&#8239;<i>z</i>&#8242;)</span>&#8239;=&#8239;<span class="rad"><i>z</i></span>&#8239;/&#8239;<span class="rad"><i>z</i>&#8242;</span></div>
+  <div class="c m"><i>z</i>&#8239;+&#8239;<span class="rad"><i>z</i></span>&#8239;=&#8239;2&#8239;<span class="op">Re</span>(<i>z</i>) &nbsp; <i>z</i>&#8239;&#8722;&#8239;<span class="rad"><i>z</i></span>&#8239;=&#8239;2<i>i</i>&#8239;<span class="op">Im</span>(<i>z</i>) &nbsp; <i>z</i>&#8239;<span class="rad"><i>z</i></span>&#8239;=&#8239;<i>a</i><sup>2</sup>&#8239;+&#8239;<i>b</i><sup>2</sup></div>
+</div>
+<p><span class="pt"><i>z</i>&#8239;<span class="rad"><i>z</i></span></span> est un <b>réel positif</b> ; conjuguer deux fois redonne <i>z</i>. Outils de preuve : <i>z</i> réel <span class="ar">&#8660;</span> <span class="pt"><span class="rad"><i>z</i></span>&#8239;=&#8239;<i>z</i></span> ; <i>z</i> imaginaire pur <span class="ar">&#8660;</span> <span class="pt"><span class="rad"><i>z</i></span>&#8239;=&#8239;&#8722;<i>z</i></span>.</p>
+<div class="form">
+  <span class="t">QUOTIENT&nbsp;: multiplier par le conjugué du dénominateur</span>
+  <div class="c m"><span class="f"><span>1</span><span><i>z</i></span></span>&#8239;=&#8239;<span class="f"><span><span class="rad"><i>z</i></span></span><span><i>a</i><sup>2</sup>&#8239;+&#8239;<i>b</i><sup>2</sup></span></span>&nbsp;(<i>z</i>&#8239;&#8800;&#8239;0) &nbsp;&nbsp; <span class="f"><span><i>z</i></span><span><i>z</i>&#8242;</span></span>&#8239;=&#8239;<span class="f"><span><i>z</i>&#8239;<span class="rad"><i>z</i>&#8242;</span></span><span><i>c</i><sup>2</sup>&#8239;+&#8239;<i>d</i><sup>2</sup></span></span>&nbsp;(<i>z</i>&#8242;&#8239;&#8800;&#8239;0)</div>
+</div>
+</div>
+
+<!-- ================= LECON 2 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 2&nbsp;: Plan complexe et module</h2>
+<p>Le plan est muni d'un repère orthonormé <b>direct</b> <span class="pt">(O,&#8239;<span style="border-top:.6pt solid;padding-top:.5pt"><i>u</i></span>,&#8239;<span style="border-top:.6pt solid;padding-top:.5pt"><i>v</i></span>)</span> ; à <span class="pt"><i>z</i>&#8239;=&#8239;<i>a</i>&#8239;+&#8239;<i>bi</i></span> correspond son <b>image</b> <span class="pt">M(<i>a</i>&#8239;;&#8239;<i>b</i>)</span>, et <i>z</i> est l'<b>affixe</b> de M.</p></div>
+<ul>
+<li>Les <b>réels</b> ont pour images les points de l'<b>axe des réels</b> <span class="pt">(O,&#8239;<span style="border-top:.6pt solid;padding-top:.5pt"><i>u</i></span>)</span> ; les <b>imaginaires purs</b>, ceux de l'<b>axe des imaginaires</b> <span class="pt">(O,&#8239;<span style="border-top:.6pt solid;padding-top:.5pt"><i>v</i></span>)</span>.</li>
+<li>Affixe de <span style="border-top:.6pt solid;padding-top:.5pt">AB</span> : <span class="pt"><i>z</i><sub>B</sub>&#8239;&#8722;&#8239;<i>z</i><sub>A</sub></span> (arrivée moins départ) ; milieu I de [AB] : <span class="pt"><i>z</i><sub>I</sub>&#8239;=&#8239;<span class="f"><span><i>z</i><sub>A</sub>&#8239;+&#8239;<i>z</i><sub>B</sub></span><span>2</span></span></span>.</li>
+<li>Le point d'affixe <span class="pt"><span class="rad"><i>z</i></span></span> est le <b>symétrique</b> de M par rapport à l'axe des réels ; celui d'affixe &#8722;<i>z</i>, par rapport à&#8239;O.</li>
+</ul>
+<div class="form">
+  <span class="t">MODULE ET DISTANCE</span>
+  <div class="c m">|<i>z</i>|&#8239;=&#8239;&#8730;<span class="rad"><i>a</i><sup>2</sup>&#8239;+&#8239;<i>b</i><sup>2</sup></span>&#8239;=&#8239;OM &nbsp;&nbsp; |<i>z</i>|<sup>2</sup>&#8239;=&#8239;<i>z</i>&#8239;<span class="rad"><i>z</i></span> &nbsp;&nbsp; AB&#8239;=&#8239;|<i>z</i><sub>B</sub>&#8239;&#8722;&#8239;<i>z</i><sub>A</sub>|</div>
+  <div class="c m">|<i>z</i>&#8239;<i>z</i>&#8242;|&#8239;=&#8239;|<i>z</i>|&#8239;|<i>z</i>&#8242;| &nbsp; <span class="pt">|<span class="f"><span><i>z</i></span><span><i>z</i>&#8242;</span></span>|&#8239;=&#8239;<span class="f"><span>|<i>z</i>|</span><span>|<i>z</i>&#8242;|</span></span></span>&nbsp;(<i>z</i>&#8242;&#8239;&#8800;&#8239;0) &nbsp; |<i>z</i><sup><i>n</i></sup>|&#8239;=&#8239;|<i>z</i>|<sup><i>n</i></sup></div>
+  <div class="c m">|<span class="rad"><i>z</i></span>|&#8239;=&#8239;|&#8722;<i>z</i>|&#8239;=&#8239;|<i>z</i>| &nbsp;&nbsp; |<i>z</i>&#8239;+&#8239;<i>z</i>&#8242;|&#8239;&#8804;&#8239;|<i>z</i>|&#8239;+&#8239;|<i>z</i>&#8242;|&nbsp;(inégalité triangulaire)</div>
+</div>
+<p><span class="pt">|<i>z</i>|&#8239;&#8805;&#8239;0</span> et <span class="pt">|<i>z</i>|&#8239;=&#8239;0&#8239;<span class="ar">&#8660;</span>&#8239;<i>z</i>&#8239;=&#8239;0</span>. Le module <b>traverse</b> produits, quotients et puissances, mais <b>pas les sommes</b>. De <span class="pt">|<i>z</i>|<sup>2</sup>&#8239;=&#8239;<i>z</i>&#8239;<span class="rad"><i>z</i></span></span> vient <span class="pt"><span class="f"><span>1</span><span><i>z</i></span></span>&#8239;=&#8239;<span class="f"><span><span class="rad"><i>z</i></span></span><span>|<i>z</i>|<sup>2</sup></span></span></span>, donc <span class="pt"><span class="f"><span>1</span><span><i>z</i></span></span>&#8239;=&#8239;<span class="rad"><i>z</i></span></span> lorsque <span class="pt">|<i>z</i>|&#8239;=&#8239;1</span>.</p>
+<p><b>Premiers ensembles de points.</b> <span class="pt">|<i>z</i>&#8239;&#8722;&#8239;<i>z</i><sub>A</sub>|&#8239;=&#8239;R</span> (<span class="pt">R&#8239;&gt;&#8239;0</span>) : <b>cercle</b> de centre A, de rayon R &middot; <span class="pt">|<i>z</i>&#8239;&#8722;&#8239;<i>z</i><sub>A</sub>|&#8239;=&#8239;|<i>z</i>&#8239;&#8722;&#8239;<i>z</i><sub>B</sub>|</span> : <b>médiatrice</b> de [AB] &middot; <span class="pt"><i>z</i>&#8239;<span class="ar">&#8614;</span>&#8239;<i>z</i>&#8239;+&#8239;<i>a</i></span> : <b>translation</b> de vecteur d'affixe <i>a</i>. Un module se <b>traduit en distance</b> ; lire <span class="pt">|<i>z</i>&#8239;&#8722;&#8239;1&#8239;&#8722;&#8239;<i>i</i>|</span> comme <span class="pt">|<i>z</i>&#8239;&#8722;&#8239;(1&#8239;+&#8239;<i>i</i>)|</span>.</p>
+</div>
+
+<!-- ================= LECON 3 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 3&nbsp;: Argument et formes trigonométrique et exponentielle</h2>
+<p>Pour <i>z</i> <b>non nul</b> d'image M, un <b>argument</b> de <i>z</i> est une mesure de l'angle orienté <span class="pt">(<span style="border-top:.6pt solid;padding-top:.5pt"><i>u</i></span>,&#8239;<span style="border-top:.6pt solid;padding-top:.5pt">OM</span>)</span>. Il est défini <b>modulo 2&#960;</b> : ce sont les <span class="pt">&#952;&#8239;+&#8239;2<i>k</i>&#960;</span>, <span class="pt"><i>k</i>&#8239;&#8712;&#8239;&#8484;</span>. Le nombre <b>0 n'a pas d'argument</b>.</p></div>
+<div class="form">
+  <span class="t">ARGUMENT ET FORMES&nbsp;: <i>r</i>&#8239;=&#8239;|<i>z</i>|&#8239;&gt;&#8239;0</span>
+  <div class="c m"><span class="op">cos</span>&#8239;&#952;&#8239;=&#8239;<span class="f"><span><i>a</i></span><span><i>r</i></span></span> &nbsp;<b>et</b>&nbsp; <span class="op">sin</span>&#8239;&#952;&#8239;=&#8239;<span class="f"><span><i>b</i></span><span><i>r</i></span></span></div>
+  <div class="c m"><i>z</i>&#8239;=&#8239;<i>r</i>(<span class="op">cos</span>&#8239;&#952;&#8239;+&#8239;<i>i</i>&#8239;<span class="op">sin</span>&#8239;&#952;)&#8239;=&#8239;<i>r</i>&#8239;<span class="op">e</span><sup><i>i</i>&#952;</sup></div>
+  <div class="c m"><i>z</i>&#8239;=&#8239;<i>z</i>&#8242;&nbsp;<span class="ar">&#8660;</span>&nbsp;|<i>z</i>|&#8239;=&#8239;|<i>z</i>&#8242;| et <span class="op">arg</span>(<i>z</i>)&#8239;=&#8239;<span class="op">arg</span>(<i>z</i>&#8242;)&#8239;+&#8239;2<i>k</i>&#960;</div>
+</div>
+<p>Seul le <b>couple</b> détermine &#952; : le cosinus laisse deux angles opposés, le sinus tranche. Module d'abord, argument ensuite. <span class="pt"><span class="op">e</span><sup><i>i</i>&#952;</sup></span> <b>abrège</b> <span class="pt"><span class="op">cos</span>&#8239;&#952;&#8239;+&#8239;<i>i</i>&#8239;<span class="op">sin</span>&#8239;&#952;</span> et <span class="pt">|<span class="op">e</span><sup><i>i</i>&#952;</sup>|&#8239;=&#8239;1</span> ; une forme trigonométrique correcte a un facteur <b>positif</b>, un <b>+</b> et <b>le même angle</b> aux deux places.</p>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Propriétés des arguments</h3>
+<div class="form">
+  <span class="t">POUR <i>z</i>, <i>z</i>&#8242; NON NULS, <i>n</i>&#8239;&#8712;&#8239;&#8469; ET <i>k</i>&#8239;&#8712;&#8239;&#8484;</span>
+  <div class="c m"><span class="op">arg</span>(<i>z</i>&#8239;<i>z</i>&#8242;)&#8239;=&#8239;<span class="op">arg</span>(<i>z</i>)&#8239;+&#8239;<span class="op">arg</span>(<i>z</i>&#8242;)&#8239;+&#8239;2<i>k</i>&#960; &nbsp; <span class="op">arg</span><span class="pt">(<span class="f"><span><i>z</i></span><span><i>z</i>&#8242;</span></span>)</span>&#8239;=&#8239;<span class="op">arg</span>(<i>z</i>)&#8239;&#8722;&#8239;<span class="op">arg</span>(<i>z</i>&#8242;)&#8239;+&#8239;2<i>k</i>&#960;</div>
+  <div class="c m"><span class="op">arg</span>(<span class="rad"><i>z</i></span>)&#8239;=&#8239;&#8722;<span class="op">arg</span>(<i>z</i>)&#8239;+&#8239;2<i>k</i>&#960; &nbsp; <span class="op">arg</span>(&#8722;<i>z</i>)&#8239;=&#8239;<span class="op">arg</span>(<i>z</i>)&#8239;+&#8239;&#960;&#8239;+&#8239;2<i>k</i>&#960; &nbsp; <span class="op">arg</span>(<i>z</i><sup><i>n</i></sup>)&#8239;=&#8239;<i>n</i>&#8239;<span class="op">arg</span>(<i>z</i>)&#8239;+&#8239;2<i>k</i>&#960;</div>
+  <div class="c m"><i>r</i>&#8239;<span class="op">e</span><sup><i>i</i>&#952;</sup>&#8239;&#215;&#8239;<i>r</i>&#8242;&#8239;<span class="op">e</span><sup><i>i</i>&#952;&#8242;</sup>&#8239;=&#8239;<i>r</i>&#8239;<i>r</i>&#8242;&#8239;<span class="op">e</span><sup><i>i</i>(&#952;&#8239;+&#8239;&#952;&#8242;)</sup> &nbsp; <span class="f"><span><i>r</i>&#8239;<span class="op">e</span><sup><i>i</i>&#952;</sup></span><span><i>r</i>&#8242;&#8239;<span class="op">e</span><sup><i>i</i>&#952;&#8242;</sup></span></span>&#8239;=&#8239;<span class="f"><span><i>r</i></span><span><i>r</i>&#8242;</span></span>&#8239;<span class="op">e</span><sup><i>i</i>(&#952;&#8239;&#8722;&#8239;&#952;&#8242;)</sup> &nbsp; <span class="rad"><i>r</i>&#8239;<span class="op">e</span><sup><i>i</i>&#952;</sup></span>&#8239;=&#8239;<i>r</i>&#8239;<span class="op">e</span><sup>&#8722;<i>i</i>&#952;</sup></div>
+</div>
+<p>Une phrase suffit : <b>on multiplie les modules et on additionne les arguments</b>. <b>Arguments remarquables</b> (<span class="pt"><i>r</i>&#8239;&gt;&#8239;0</span>) : <span class="pt"><i>r</i>&#8239;=&#8239;<i>r</i>&#8239;<span class="op">e</span><sup><i>i</i>&#8239;0</sup></span>, <span class="pt">&#8722;<i>r</i>&#8239;=&#8239;<i>r</i>&#8239;<span class="op">e</span><sup><i>i</i>&#960;</sup></span>, <span class="pt"><i>ri</i>&#8239;=&#8239;<i>r</i>&#8239;<span class="op">e</span><sup><i>i</i>&#960;/2</sup></span>, <span class="pt">&#8722;<i>ri</i>&#8239;=&#8239;<i>r</i>&#8239;<span class="op">e</span><sup>&#8722;<i>i</i>&#960;/2</sup></span>. Pour <i>z</i> non nul : <b>réel</b> <span class="ar">&#8660;</span> <span class="pt"><span class="op">arg</span>(<i>z</i>)&#8239;=&#8239;<i>k</i>&#960;</span> ; <b>imaginaire pur</b> <span class="ar">&#8660;</span> <span class="pt"><span class="op">arg</span>(<i>z</i>)&#8239;=&#8239;&#960;&#8239;/&#8239;2&#8239;+&#8239;<i>k</i>&#960;</span>. L'ensemble des M tels que <span class="pt"><span class="op">arg</span>(<i>z</i>)&#8239;=&#8239;&#945;&#8239;+&#8239;2<i>k</i>&#960;</span> est la <b>demi-droite ouverte</b> d'origine O et d'angle &#945; (O exclu).</p>
+</div>
+
+<!-- ================= LECON 4 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 4&nbsp;: Formules de Moivre et d'Euler</h2>
+<div class="form">
+  <span class="t">MOIVRE ET EULER&nbsp;: <i>n</i>&#8239;&#8712;&#8239;&#8469;, &#952; REEL</span>
+  <div class="c m">(<span class="op">cos</span>&#8239;&#952;&#8239;+&#8239;<i>i</i>&#8239;<span class="op">sin</span>&#8239;&#952;)<sup><i>n</i></sup>&#8239;=&#8239;<span class="op">cos</span>(<i>n</i>&#952;)&#8239;+&#8239;<i>i</i>&#8239;<span class="op">sin</span>(<i>n</i>&#952;)</div>
+  <div class="c m">(<span class="op">e</span><sup><i>i</i>&#952;</sup>)<sup><i>n</i></sup>&#8239;=&#8239;<span class="op">e</span><sup><i>in</i>&#952;</sup> &nbsp;&nbsp; <i>z</i>&#8239;=&#8239;<i>r</i>&#8239;<span class="op">e</span><sup><i>i</i>&#952;</sup>&nbsp;<span class="ar">&#8658;</span>&nbsp;<i>z</i><sup><i>n</i></sup>&#8239;=&#8239;<i>r</i><sup><i>n</i></sup>&#8239;<span class="op">e</span><sup><i>in</i>&#952;</sup></div>
+  <div class="c m"><span class="op">cos</span>&#8239;&#952;&#8239;=&#8239;<span class="f"><span><span class="op">e</span><sup><i>i</i>&#952;</sup>&#8239;+&#8239;<span class="op">e</span><sup>&#8722;<i>i</i>&#952;</sup></span><span>2</span></span> &nbsp;&nbsp; <span class="op">sin</span>&#8239;&#952;&#8239;=&#8239;<span class="f"><span><span class="op">e</span><sup><i>i</i>&#952;</sup>&#8239;&#8722;&#8239;<span class="op">e</span><sup>&#8722;<i>i</i>&#952;</sup></span><span>2<i>i</i></span></span></div>
+</div></div>
+<p><b>Moivre</b> : le module est <b>élevé</b> à la puissance <i>n</i>, l'argument <b>multiplié</b> par <i>n</i>. <b>Euler</b> : le dénominateur du sinus est <b>2<i>i</i></b>, jamais 2.</p>
+<p><b>Linéariser</b> <span class="pt"><span class="op">cos</span><sup><i>n</i></sup>&#952;</span> ou <span class="pt"><span class="op">sin</span><sup><i>n</i></sup>&#952;</span> : passer aux exponentielles, développer, puis regrouper <span class="pt"><span class="op">e</span><sup><i>ik</i>&#952;</sup></span> avec <span class="pt"><span class="op">e</span><sup>&#8722;<i>ik</i>&#952;</sup></span> (qui donne <span class="pt">2&#8239;<span class="op">cos</span>(<i>k</i>&#952;)</span>) : on obtient une <b>somme</b> de <span class="pt"><span class="op">cos</span>(<i>k</i>&#952;)</span> et <span class="pt"><span class="op">sin</span>(<i>k</i>&#952;)</span>.</p>
+<div class="form">
+  <span class="t">PRODUIT EN SOMME, SOMME EN PRODUIT</span>
+  <div class="c m"><span class="op">cos</span>&#8239;<i>a</i>&#8239;<span class="op">cos</span>&#8239;<i>b</i>&#8239;=&#8239;<span class="f"><span>1</span><span>2</span></span>[<span class="op">cos</span>(<i>a</i>&#8239;+&#8239;<i>b</i>)&#8239;+&#8239;<span class="op">cos</span>(<i>a</i>&#8239;&#8722;&#8239;<i>b</i>)]</div>
+  <div class="c m"><span class="op">sin</span>&#8239;<i>a</i>&#8239;<span class="op">cos</span>&#8239;<i>b</i>&#8239;=&#8239;<span class="f"><span>1</span><span>2</span></span>[<span class="op">sin</span>(<i>a</i>&#8239;+&#8239;<i>b</i>)&#8239;+&#8239;<span class="op">sin</span>(<i>a</i>&#8239;&#8722;&#8239;<i>b</i>)]</div>
+  <div class="c m"><span class="op">cos</span>&#8239;<i>p</i>&#8239;+&#8239;<span class="op">cos</span>&#8239;<i>q</i>&#8239;=&#8239;2&#8239;<span class="op">cos</span>&#8239;<span class="f"><span><i>p</i>&#8239;+&#8239;<i>q</i></span><span>2</span></span>&#8239;<span class="op">cos</span>&#8239;<span class="f"><span><i>p</i>&#8239;&#8722;&#8239;<i>q</i></span><span>2</span></span></div>
+  <div class="c m"><span class="op">sin</span>&#8239;<i>p</i>&#8239;+&#8239;<span class="op">sin</span>&#8239;<i>q</i>&#8239;=&#8239;2&#8239;<span class="op">sin</span>&#8239;<span class="f"><span><i>p</i>&#8239;+&#8239;<i>q</i></span><span>2</span></span>&#8239;<span class="op">cos</span>&#8239;<span class="f"><span><i>p</i>&#8239;&#8722;&#8239;<i>q</i></span><span>2</span></span></div>
+</div>
+</div>
+
+<!-- ================= LECON 5 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 5&nbsp;: Equations dans &#8450;</h2>
+<p><b><span class="pt"><i>z</i><sup>2</sup>&#8239;=&#8239;<i>k</i></span>, <i>k</i> réel.</b> <span class="pt"><i>k</i>&#8239;&gt;&#8239;0</span> : <span class="pt"><i>z</i>&#8239;=&#8239;&#177;&#8730;<span class="rad"><i>k</i></span></span> &middot; <span class="pt"><i>k</i>&#8239;=&#8239;0</span> : <span class="pt"><i>z</i>&#8239;=&#8239;0</span> (double) &middot; <span class="pt"><i>k</i>&#8239;&lt;&#8239;0</span> : deux imaginaires purs opposés <span class="pt"><i>z</i>&#8239;=&#8239;&#177;<i>i</i>&#8730;<span class="rad">&#8722;<i>k</i></span></span>.</p></div>
+<div class="form">
+  <span class="t">SECOND DEGRE&nbsp;: <i>az</i><sup>2</sup>&#8239;+&#8239;<i>bz</i>&#8239;+&#8239;<i>c</i>&#8239;=&#8239;0, <i>a</i>&#8239;&#8800;&#8239;0, &#916;&#8239;=&#8239;<i>b</i><sup>2</sup>&#8239;&#8722;&#8239;4<i>ac</i></span>
+  <div class="c m">coefficients <b>réels</b>, &#916;&#8239;&lt;&#8239;0 : &nbsp;<i>z</i>&#8239;=&#8239;<span class="f"><span>&#8722;<i>b</i>&#8239;&#177;&#8239;<i>i</i>&#8730;<span class="rad">&#8722;&#916;</span></span><span>2<i>a</i></span></span>&nbsp;, racines <b>conjuguées</b></div>
+  <div class="c m">coefficients <b>complexes</b> : &nbsp;&#948; tel que &#948;<sup>2</sup>&#8239;=&#8239;&#916;, puis <i>z</i>&#8239;=&#8239;<span class="f"><span>&#8722;<i>b</i>&#8239;&#177;&#8239;&#948;</span><span>2<i>a</i></span></span></div>
+</div>
+<p>Coefficients réels et <span class="pt">&#916;&#8239;&#8805;&#8239;0</span> : les solutions réelles habituelles. Tout trinôme a donc <b>deux racines</b> dans <span class="m">&#8450;</span>, confondues si <span class="pt">&#916;&#8239;=&#8239;0</span>. Contrôle : <span class="pt"><i>z</i><sub>1</sub>&#8239;+&#8239;<i>z</i><sub>2</sub>&#8239;=&#8239;&#8722;<i>b</i>&#8239;/&#8239;<i>a</i></span> et <span class="pt"><i>z</i><sub>1</sub><i>z</i><sub>2</sub>&#8239;=&#8239;<i>c</i>&#8239;/&#8239;<i>a</i></span>. Avec des coefficients complexes, les racines ne sont <b>plus conjuguées</b>.</p>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Racines carrées d'un complexe et racines <span class="m"><i>n</i></span>-ièmes</h3>
+<p>Tout complexe <b>non nul</b> A a exactement <b>deux racines carrées</b>, opposées. On pose <span class="pt"><i>z</i>&#8239;=&#8239;<i>x</i>&#8239;+&#8239;<i>iy</i></span> (<i>x</i>, <i>y</i> réels) et l'on traduit <span class="pt"><i>z</i><sup>2</sup>&#8239;=&#8239;A</span> :</p>
+<div class="form">
+  <span class="t">SYSTEME DES RACINES CARREES DE A</span>
+  <div class="c m"><i>x</i><sup>2</sup>&#8239;&#8722;&#8239;<i>y</i><sup>2</sup>&#8239;=&#8239;<span class="op">Re</span>(A) &nbsp;&nbsp; <i>x</i><sup>2</sup>&#8239;+&#8239;<i>y</i><sup>2</sup>&#8239;=&#8239;|A| &nbsp;&nbsp; 2<i>xy</i>&#8239;=&#8239;<span class="op">Im</span>(A)</div>
+</div>
+<p>Les <b>deux premières</b> donnent <i>x</i><sup>2</sup> et <i>y</i><sup>2</sup> par somme et différence ; la <b>troisième ne sert qu'aux signes</b> : <span class="pt"><span class="op">Im</span>(A)&#8239;&gt;&#8239;0</span> donne <i>x</i> et <i>y</i> de <b>même signe</b>, <span class="pt"><span class="op">Im</span>(A)&#8239;&lt;&#8239;0</span> de <b>signes contraires</b>.</p>
+<div class="form">
+  <span class="t">RACINES n-IEMES&nbsp;: <i>w</i>&#8239;=&#8239;<i>r</i>&#8239;<span class="op">e</span><sup><i>i</i>&#952;</sup>&#8239;&#8800;&#8239;0, <i>n</i>&#8239;&#8805;&#8239;1</span>
+  <div class="c m"><i>z</i><sup><i>n</i></sup>&#8239;=&#8239;<i>w</i> &nbsp;a pour solutions&nbsp; <i>z</i><sub><i>k</i></sub>&#8239;=&#8239;<sup><i>n</i></sup>&#8730;<span class="rad"><i>r</i></span>&#8239;<span class="op">e</span><sup><i>i</i>(&#952;&#8239;+&#8239;2<i>k</i>&#960;)/<i>n</i></sup>, &nbsp;<i>k</i>&#8239;=&#8239;0, 1, &#8230;, <i>n</i>&#8239;&#8722;&#8239;1</div>
+</div>
+<p><b>Exactement <i>n</i> solutions</b>, <b>régulièrement réparties</b> sur le cercle de centre O et de rayon <span class="pt"><sup><i>n</i></sup>&#8730;<span class="rad"><i>r</i></span></span>, séparées par <span class="pt">2&#960;&#8239;/&#8239;<i>n</i></span> : un <b>polygone régulier</b> à <i>n</i> côtés.</p>
+<p><b>Retours au second degré.</b> Bicarrée <span class="pt"><i>az</i><sup>4</sup>&#8239;+&#8239;<i>bz</i><sup>2</sup>&#8239;+&#8239;<i>c</i>&#8239;=&#8239;0</span> : poser <span class="pt">Z&#8239;=&#8239;<i>z</i><sup>2</sup></span>, résoudre en Z, puis prendre les racines carrées de chaque Z : <b>quatre</b> solutions. Degré 3 avec une racine <i>z</i><sub>0</sub> indiquée : factoriser <span class="pt">P(<i>z</i>)&#8239;=&#8239;(<i>z</i>&#8239;&#8722;&#8239;<i>z</i><sub>0</sub>)(<i>z</i><sup>2</sup>&#8239;+&#8239;<i>pz</i>&#8239;+&#8239;<i>q</i>)</span> et trouver <i>p</i>, <i>q</i> par <b>identification</b>. Un degré <i>n</i> a <b>au plus <i>n</i> solutions</b>.</p>
+</div>
+
+<!-- ================= LECON 6 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 6&nbsp;: Complexes et géométrie du plan</h2>
+<p>Soit A, B, C d'affixes <i>a</i>, <i>b</i>, <i>c</i>, <b>deux à deux distincts</b>.</p></div>
+<div class="form">
+  <span class="t">INTERPRETATION DU QUOTIENT&nbsp;: SOMMET A</span>
+  <div class="c m"><span class="pt">|<span class="f"><span><i>c</i>&#8239;&#8722;&#8239;<i>a</i></span><span><i>b</i>&#8239;&#8722;&#8239;<i>a</i></span></span>|&#8239;=&#8239;<span class="f"><span>AC</span><span>AB</span></span></span> &nbsp;&nbsp; <span class="op">arg</span><span class="pt">(<span class="f"><span><i>c</i>&#8239;&#8722;&#8239;<i>a</i></span><span><i>b</i>&#8239;&#8722;&#8239;<i>a</i></span></span>)</span>&#8239;=&#8239;(<span style="border-top:.6pt solid;padding-top:.5pt">AB</span>,&#8239;<span style="border-top:.6pt solid;padding-top:.5pt">AC</span>)&#8239;+&#8239;2<i>k</i>&#960;</div>
+</div>
+<p>Le sommet étudié est celui dont l'affixe est <b>soustraite partout</b> ; l'angle va de <span style="border-top:.6pt solid;padding-top:.5pt">AB</span> <b>vers</b> <span style="border-top:.6pt solid;padding-top:.5pt">AC</span>.</p>
+<p><b>Configurations.</b> A, B, C <b>alignés</b> <span class="ar">&#8660;</span> quotient <b>réel</b> &middot; angle <b>droit en A</b> <span class="ar">&#8660;</span> <b>imaginaire pur non nul</b> &middot; <b>isocèle en A</b> <span class="ar">&#8660;</span> module 1 &middot; <b>rectangle isocèle en A</b> <span class="ar">&#8660;</span> quotient <i>i</i> ou &#8722;<i>i</i> &middot; <b>équilatéral</b> <span class="ar">&#8660;</span> <span class="pt">|<i>b</i>&#8239;&#8722;&#8239;<i>a</i>|&#8239;=&#8239;|<i>c</i>&#8239;&#8722;&#8239;<i>a</i>|&#8239;=&#8239;|<i>c</i>&#8239;&#8722;&#8239;<i>b</i>|</span>. Pour <b>construire</b> un point, écrire la condition à l'envers.</p>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Ensembles de points</h3>
+<p><b>Cercle</b> de centre A, de rayon <span class="pt">R&#8239;&gt;&#8239;0</span> : <span class="pt">|<i>z</i>&#8239;&#8722;&#8239;<i>a</i>|&#8239;=&#8239;R</span> &middot; <b>médiatrice</b> de [AB] : <span class="pt">|<i>z</i>&#8239;&#8722;&#8239;<i>a</i>|&#8239;=&#8239;|<i>z</i>&#8239;&#8722;&#8239;<i>b</i>|</span> &middot; <b>demi-droite ouverte</b> d'origine O, d'angle &#945; : <span class="pt"><span class="op">arg</span>(<i>z</i>)&#8239;=&#8239;&#945;&#8239;+&#8239;2<i>k</i>&#960;</span>, <span class="pt"><i>z</i>&#8239;&#8800;&#8239;0</span>.</p>
+<div class="form">
+  <span class="t">LE QUOTIENT Z&nbsp;: pour <i>z</i>&#8239;&#8800;&#8239;<i>b</i> et A&#8239;&#8800;&#8239;B</span>
+  <div class="c m">Z&#8239;=&#8239;<span class="f"><span><i>z</i>&#8239;&#8722;&#8239;<i>a</i></span><span><i>z</i>&#8239;&#8722;&#8239;<i>b</i></span></span> &nbsp;&nbsp; |Z|&#8239;=&#8239;<span class="f"><span>MA</span><span>MB</span></span> &nbsp;&nbsp; <span class="op">arg</span>(Z)&#8239;=&#8239;(<span style="border-top:.6pt solid;padding-top:.5pt">MB</span>,&#8239;<span style="border-top:.6pt solid;padding-top:.5pt">MA</span>)</div>
+</div>
+<p><span class="pt">|Z|&#8239;=&#8239;1</span> : <b>médiatrice</b> de [AB] &middot; Z <b>réel</b> : <b>droite (AB) privée de B</b> &middot; Z <b>imaginaire pur</b> : <b>cercle de diamètre [AB] privé de A et de B</b>. Les exclusions font partie de la réponse : B annule le dénominateur, et A donne <span class="pt">Z&#8239;=&#8239;0</span>, réel mais sans argument.</p>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Ecritures complexes des transformations</h3>
+<table>
+<tr><th>Transformation</th><th>Ecriture complexe</th></tr>
+<tr><td>Translation, vecteur d'affixe <span class="m"><i>a</i></span></td><td class="m"><i>z</i>&#8242;&#8239;=&#8239;<i>z</i>&#8239;+&#8239;<i>a</i></td></tr>
+<tr><td>Rotation, centre <span class="m">&#937;(&#969;)</span>, angle <span class="m">&#945;</span> &middot; centre O</td><td class="m"><i>z</i>&#8242;&#8239;&#8722;&#8239;&#969;&#8239;=&#8239;<span class="op">e</span><sup><i>i</i>&#945;</sup>(<i>z</i>&#8239;&#8722;&#8239;&#969;) &middot; <i>z</i>&#8242;&#8239;=&#8239;<span class="op">e</span><sup><i>i</i>&#945;</sup><i>z</i></td></tr>
+<tr><td>Symétrie, axe des réels &middot; axe des imaginaires</td><td class="m"><i>z</i>&#8242;&#8239;=&#8239;<span class="rad"><i>z</i></span> &nbsp;&middot;&nbsp; <i>z</i>&#8242;&#8239;=&#8239;&#8722;<span class="rad"><i>z</i></span></td></tr>
+<tr><td>Symétrie, centre O &middot; centre <span class="m">&#937;(&#969;)</span></td><td class="m"><i>z</i>&#8242;&#8239;=&#8239;&#8722;<i>z</i> &nbsp;&middot;&nbsp; <i>z</i>&#8242;&#8239;=&#8239;2&#969;&#8239;&#8722;&#8239;<i>z</i></td></tr>
+<tr><td>Homothétie, centre <span class="m">&#937;(&#969;)</span>, rapport <span class="m"><i>k</i></span> réel non nul</td><td class="m"><i>z</i>&#8242;&#8239;&#8722;&#8239;&#969;&#8239;=&#8239;<i>k</i>(<i>z</i>&#8239;&#8722;&#8239;&#969;)</td></tr>
+</table>
+<p>Toujours : <b>ramener le centre en O</b>, multiplier, <b>remettre le centre</b>. Multiplier par <i>i</i>, c'est <b>tourner de</b> <span class="pt">&#960;&#8239;/&#8239;2</span>. Translations, rotations et symétries <b>conservent les distances</b>. Parallélogramme ABCD : <span class="pt"><i>z</i><sub>D</sub>&#8239;=&#8239;<i>z</i><sub>A</sub>&#8239;+&#8239;<i>z</i><sub>C</sub>&#8239;&#8722;&#8239;<i>z</i><sub>B</sub></span>.</p>
+</div>
+
+</div>
+
+<div class="bandeau vert">PIEGES ET ERREURS FREQUENTES</div>
+<div class="cols">
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> <span class="pt">&#8730;<span class="rad">&#8722;4</span>&#8239;&#8730;<span class="rad">&#8722;9</span>&#8239;=&#8239;&#8730;<span class="rad">36</span>&#8239;=&#8239;6</span> &nbsp;&middot;&nbsp; <span class="pt"><i>i</i>&#8239;=&#8239;&#8730;<span class="rad">&#8722;1</span></span></div><div class="cor"><span class="v">&#10003;</span> La règle <span class="pt">&#8730;<span class="rad"><i>a</i></span>&#8239;&#8730;<span class="rad"><i>b</i></span>&#8239;=&#8239;&#8730;<span class="rad"><i>ab</i></span></span> est <b>fausse</b> pour les négatifs et &#8730; reste réservé aux <b>réels positifs</b> : de <span class="pt"><i>z</i><sup>2</sup>&#8239;=&#8239;&#8722;4</span> on tire <span class="pt"><i>z</i>&#8239;=&#8239;&#177;2<i>i</i></span>. Pas d'<b>ordre</b> non plus dans <span class="m">&#8450;</span>.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> <span class="pt">|2&#8239;+&#8239;3<i>i</i>|&#8239;=&#8239;2&#8239;+&#8239;3&#8239;=&#8239;5</span> &nbsp;&middot;&nbsp; <span class="pt"><span class="op">Im</span>(4&#8239;&#8722;&#8239;7<i>i</i>)&#8239;=&#8239;&#8722;7<i>i</i></span> &nbsp;&middot;&nbsp; le conjugué de <span class="pt">3&#8239;&#8722;&#8239;5<i>i</i></span> est <span class="pt">&#8722;3&#8239;+&#8239;5<i>i</i></span></div><div class="cor"><span class="v">&#10003;</span> <span class="pt">|2&#8239;+&#8239;3<i>i</i>|&#8239;=&#8239;&#8730;<span class="rad">2<sup>2</sup>&#8239;+&#8239;3<sup>2</sup></span>&#8239;=&#8239;&#8730;<span class="rad">13</span></span>, et sur une somme seule l'inégalité <span class="pt">|<i>z</i>&#8239;+&#8239;<i>z</i>&#8242;|&#8239;&#8804;&#8239;|<i>z</i>|&#8239;+&#8239;|<i>z</i>&#8242;|</span> est vraie. La partie imaginaire est un <b>réel</b> : <span class="pt"><span class="op">Im</span>(4&#8239;&#8722;&#8239;7<i>i</i>)&#8239;=&#8239;&#8722;7</span>. Et seule la partie imaginaire change de signe : <span class="pt"><span class="rad">3&#8239;&#8722;&#8239;5<i>i</i></span>&#8239;=&#8239;3&#8239;+&#8239;5<i>i</i></span>.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> <span class="pt"><span class="op">arg</span>(<span class="rad"><i>z</i></span>)&#8239;=&#8239;<span class="op">arg</span>(<i>z</i>)</span> &nbsp;&middot;&nbsp; <span class="pt"><span class="op">cos</span>&#8239;&#952;&#8239;=&#8239;&#8722;<span class="f"><span>&#8730;<span class="rad">2</span></span><span>2</span></span></span> donc <span class="pt">&#952;&#8239;=&#8239;<span class="f"><span>3&#960;</span><span>4</span></span></span></div><div class="cor"><span class="v">&#10003;</span> <span class="pt"><span class="op">arg</span>(<span class="rad"><i>z</i></span>)&#8239;=&#8239;&#8722;<span class="op">arg</span>(<i>z</i>)&#8239;+&#8239;2<i>k</i>&#960;</span> : l'image de <span class="pt"><span class="rad"><i>z</i></span></span> est le symétrique par rapport à l'axe des réels. Le cosinus <b>seul ne suffit jamais</b> : le <b>couple</b> <span class="pt">(<span class="op">cos</span>&#8239;&#952;&#8239;;&#8239;<span class="op">sin</span>&#8239;&#952;)</span> choisit entre <span class="pt"><span class="f"><span>3&#960;</span><span>4</span></span></span> et <span class="pt">&#8722;<span class="f"><span>3&#960;</span><span>4</span></span></span>.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> <span class="pt">(<span class="op">e</span><sup><i>i</i>&#952;</sup>)<sup>3</sup>&#8239;=&#8239;<span class="op">e</span><sup>3<i>i</i></sup></span> &nbsp;&middot;&nbsp; le module de <span class="pt">(1&#8239;+&#8239;<i>i</i>)<sup>8</sup></span> vaut <span class="pt">8&#8730;<span class="rad">2</span></span></div><div class="cor"><span class="v">&#10003;</span> L'exposant porte sur <b>tout</b> <span class="pt"><i>i</i>&#952;</span> : <span class="pt">(<span class="op">e</span><sup><i>i</i>&#952;</sup>)<sup>3</sup>&#8239;=&#8239;<span class="op">e</span><sup>3<i>i</i>&#952;</sup></span>, l'argument est <span class="pt">3&#952;</span>. Le module est <b>élevé</b>, l'argument <b>multiplié</b> : <span class="pt">|(1&#8239;+&#8239;<i>i</i>)<sup>8</sup>|&#8239;=&#8239;(&#8730;<span class="rad">2</span>)<sup>8</sup>&#8239;=&#8239;16</span>.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> <span class="pt"><i>z</i><sup>3</sup>&#8239;=&#8239;8</span> donc <span class="pt"><i>z</i>&#8239;=&#8239;2</span> &nbsp;&middot;&nbsp; <span class="pt"><i>z</i><sup>2</sup>&#8239;&#8722;&#8239;(3&#8239;+&#8239;<i>i</i>)<i>z</i>&#8239;+&#8239;2&#8239;+&#8239;2<i>i</i>&#8239;=&#8239;0</span> : racines conjuguées</div><div class="cor"><span class="v">&#10003;</span> <span class="pt"><i>z</i><sup><i>n</i></sup>&#8239;=&#8239;<i>w</i></span> a <b>exactement <i>n</i> solutions</b> : il en manque deux, <span class="pt">2&#8239;<span class="op">e</span><sup>2<i>i</i>&#960;/3</sup></span> et <span class="pt">2&#8239;<span class="op">e</span><sup>4<i>i</i>&#960;/3</sup></span>. Et « conjuguées » exige des coefficients <b>réels</b> : ici les racines sont 2 et <span class="pt">1&#8239;+&#8239;<i>i</i></span>, obtenues via une racine carrée &#948; de &#916;.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> Rotation de centre <span class="m">&#937;(&#969;)</span> : <span class="pt"><i>z</i>&#8242;&#8239;=&#8239;<span class="op">e</span><sup><i>i</i>&#945;</sup><i>z</i></span> &nbsp;&middot;&nbsp; <span class="pt"><span class="f"><span><i>c</i>&#8239;&#8722;&#8239;<i>a</i></span><span><i>b</i>&#8239;&#8722;&#8239;<i>a</i></span></span></span> imaginaire pur donc A, B, C alignés</div><div class="cor"><span class="v">&#10003;</span> Cette écriture ne vaut que si le centre est O ; sinon <span class="pt"><i>z</i>&#8242;&#8239;&#8722;&#8239;&#969;&#8239;=&#8239;<span class="op">e</span><sup><i>i</i>&#945;</sup>(<i>z</i>&#8239;&#8722;&#8239;&#969;)</span> : l'oubli du centre est l'erreur reine du chapitre. Et c'est le quotient <b>réel</b> qui donne l'<b>alignement</b>, l'<b>imaginaire pur</b> l'<b>angle droit en A</b>.</div></div>
+
+</div>
+
+<div class="bandeau bleu">A SAVOIR PAR COEUR AVANT LE DEVOIR</div>
+<div class="cols">
+<ol class="recap">
+<li><span class="pt"><i>i</i><sup>2</sup>&#8239;=&#8239;&#8722;1</span> ; <span class="pt"><i>z</i>&#8239;=&#8239;<i>a</i>&#8239;+&#8239;<i>bi</i></span> <b>unique</b>, d'où l'<b>identification</b> ; <span class="pt"><span class="rad"><i>z</i></span>&#8239;=&#8239;<i>a</i>&#8239;&#8722;&#8239;<i>bi</i></span>, <span class="pt"><i>z</i>&#8239;<span class="rad"><i>z</i></span>&#8239;=&#8239;<i>a</i><sup>2</sup>&#8239;+&#8239;<i>b</i><sup>2</sup></span> ; quotient : multiplier par le <b>conjugué du dénominateur</b> ; <span class="pt"><i>i</i><sup><i>n</i></sup></span> de 4 en 4.</li>
+<li><span class="pt">|<i>z</i>|&#8239;=&#8239;&#8730;<span class="rad"><i>a</i><sup>2</sup>&#8239;+&#8239;<i>b</i><sup>2</sup></span>&#8239;=&#8239;OM</span>, <span class="pt">AB&#8239;=&#8239;|<i>z</i><sub>B</sub>&#8239;&#8722;&#8239;<i>z</i><sub>A</sub>|</span>, <span class="pt">|<i>z</i>&#8239;<i>z</i>&#8242;|&#8239;=&#8239;|<i>z</i>|&#8239;|<i>z</i>&#8242;|</span>, <span class="pt">|<i>z</i><sup><i>n</i></sup>|&#8239;=&#8239;|<i>z</i>|<sup><i>n</i></sup></span>, <span class="pt">|<i>z</i>&#8239;+&#8239;<i>z</i>&#8242;|&#8239;&#8804;&#8239;|<i>z</i>|&#8239;+&#8239;|<i>z</i>&#8242;|</span>, <span class="pt">|<i>z</i>|<sup>2</sup>&#8239;=&#8239;<i>z</i>&#8239;<span class="rad"><i>z</i></span></span>.</li>
+<li><span class="pt"><i>z</i>&#8239;=&#8239;<i>r</i>(<span class="op">cos</span>&#8239;&#952;&#8239;+&#8239;<i>i</i>&#8239;<span class="op">sin</span>&#8239;&#952;)&#8239;=&#8239;<i>r</i>&#8239;<span class="op">e</span><sup><i>i</i>&#952;</sup></span>, avec <span class="pt"><span class="op">cos</span>&#8239;&#952;&#8239;=&#8239;<i>a</i>&#8239;/&#8239;<i>r</i></span> <b>et</b> <span class="pt"><span class="op">sin</span>&#8239;&#952;&#8239;=&#8239;<i>b</i>&#8239;/&#8239;<i>r</i></span> ; argument <b>modulo 2&#960;</b> (<b>0 n'en a pas</b>) ; on <b>multiplie les modules</b> et l'on <b>additionne les arguments</b>.</li>
+<li><b>Moivre</b> <span class="pt"><i>z</i><sup><i>n</i></sup>&#8239;=&#8239;<i>r</i><sup><i>n</i></sup>&#8239;<span class="op">e</span><sup><i>in</i>&#952;</sup></span> ; <b>Euler</b> <span class="pt"><span class="op">cos</span>&#8239;&#952;&#8239;=&#8239;(<span class="op">e</span><sup><i>i</i>&#952;</sup>&#8239;+&#8239;<span class="op">e</span><sup>&#8722;<i>i</i>&#952;</sup>)&#8239;/&#8239;2</span> et <span class="pt"><span class="op">sin</span>&#8239;&#952;&#8239;=&#8239;(<span class="op">e</span><sup><i>i</i>&#952;</sup>&#8239;&#8722;&#8239;<span class="op">e</span><sup>&#8722;<i>i</i>&#952;</sup>)&#8239;/&#8239;2<i>i</i></span> (le <b>2<i>i</i></b> ne s'oublie pas) ; elles servent à <b>linéariser</b>.</li>
+<li><b>Second degré</b> : coefficients <b>réels</b> et <span class="pt">&#916;&#8239;&lt;&#8239;0</span> donnent <span class="pt"><i>z</i>&#8239;=&#8239;(&#8722;<i>b</i>&#8239;&#177;&#8239;<i>i</i>&#8730;<span class="rad">&#8722;&#916;</span>)&#8239;/&#8239;2<i>a</i></span>, racines <b>conjuguées</b> ; coefficients <b>complexes</b> : <span class="pt">&#948;<sup>2</sup>&#8239;=&#8239;&#916;</span> puis <span class="pt"><i>z</i>&#8239;=&#8239;(&#8722;<i>b</i>&#8239;&#177;&#8239;&#948;)&#8239;/&#8239;2<i>a</i></span>, <b>non conjuguées</b>. Racines carrées de A : <span class="pt"><i>x</i><sup>2</sup>&#8239;&#8722;&#8239;<i>y</i><sup>2</sup>&#8239;=&#8239;<span class="op">Re</span>(A)</span>, <span class="pt"><i>x</i><sup>2</sup>&#8239;+&#8239;<i>y</i><sup>2</sup>&#8239;=&#8239;|A|</span>, <span class="pt">2<i>xy</i>&#8239;=&#8239;<span class="op">Im</span>(A)</span> (la 3<sup>e</sup> donne les <b>signes</b>) ; <span class="pt"><i>z</i><sup><i>n</i></sup>&#8239;=&#8239;<i>w</i></span> a <b><i>n</i></b> solutions <span class="pt"><sup><i>n</i></sup>&#8730;<span class="rad"><i>r</i></span>&#8239;<span class="op">e</span><sup><i>i</i>(&#952;&#8239;+&#8239;2<i>k</i>&#960;)/<i>n</i></sup></span> : polygone régulier.</li>
+<li><b>Géométrie</b> : <span class="pt">|(<i>c</i>&#8239;&#8722;&#8239;<i>a</i>)&#8239;/&#8239;(<i>b</i>&#8239;&#8722;&#8239;<i>a</i>)|&#8239;=&#8239;AC&#8239;/&#8239;AB</span>, d'argument <span class="pt">(<span style="border-top:.6pt solid;padding-top:.5pt">AB</span>,&#8239;<span style="border-top:.6pt solid;padding-top:.5pt">AC</span>)</span> : <b>réel</b> <span class="ar">&#8660;</span> <b>alignés</b>, <b>imaginaire pur</b> <span class="ar">&#8660;</span> <b>angle droit en A</b> ; cercle <span class="pt">|<i>z</i>&#8239;&#8722;&#8239;<i>a</i>|&#8239;=&#8239;R</span>, médiatrice <span class="pt">|<i>z</i>&#8239;&#8722;&#8239;<i>a</i>|&#8239;=&#8239;|<i>z</i>&#8239;&#8722;&#8239;<i>b</i>|</span>. Translation <span class="pt"><i>z</i>&#8242;&#8239;=&#8239;<i>z</i>&#8239;+&#8239;<i>a</i></span>, rotation <span class="pt"><i>z</i>&#8242;&#8239;&#8722;&#8239;&#969;&#8239;=&#8239;<span class="op">e</span><sup><i>i</i>&#945;</sup>(<i>z</i>&#8239;&#8722;&#8239;&#969;)</span>, symétrie de centre <span class="m">&#937;</span> <span class="pt"><i>z</i>&#8242;&#8239;=&#8239;2&#969;&#8239;&#8722;&#8239;<i>z</i></span>, homothétie <span class="pt"><i>z</i>&#8242;&#8239;&#8722;&#8239;&#969;&#8239;=&#8239;<i>k</i>(<i>z</i>&#8239;&#8722;&#8239;&#969;)</span> ; <span class="pt">&#215;<i>i</i></span> <b>tourne de</b> <span class="pt">&#960;&#8239;/&#8239;2</span>.</li>
+</ol>
+</div>
+
+</body>
+</html>

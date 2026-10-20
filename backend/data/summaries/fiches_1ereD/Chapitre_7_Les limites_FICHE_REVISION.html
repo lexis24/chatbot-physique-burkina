@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Fiche de revision - 1ere D - Chapitre 7 : Les limites</title>
+<style>
+/* ===================================================================
+   FICHE DE REVISION, Collection Hakili Lab, Edition 2026
+   Feuille de style autonome, format A4 pret a imprimer.
+   Bleu #005CB9 · Vert #49A145
+   =================================================================== */
+:root{
+  --bleu:#005CB9; --bleu-fonce:#00429A; --bleu-pale:#E8F1FB; --bleu-bord:#B7D2EE;
+  --vert:#49A145; --vert-fonce:#2F7A2C; --vert-pale:#EDF7EC; --vert-bord:#BCE0B9;
+  --gris:#4A4A4A; --gris-clair:#E4E4E4; --rouge:#B3261E;
+}
+@page{
+  size:A4; margin:15mm;
+  @bottom-center{
+    content:"Collection Hakili Lab, Edition 2026  ·  Fiche de revision  ·  " counter(page) "/" counter(pages);
+    font-family:"Segoe UI",Calibri,Arial,sans-serif; font-size:6.6pt; color:#8A8A8A;
+  }
+}
+*{box-sizing:border-box;}
+body{
+  margin:0; font-family:"Segoe UI",Calibri,Arial,sans-serif;
+  font-size:8.4pt; line-height:1.26; color:#1B1B1B;
+}
+p{margin:0 0 3pt;}
+ul{margin:0 0 3pt; padding-left:11pt;}
+li{margin:0 0 1.2pt;}
+b,strong{color:var(--bleu-fonce);}
+
+/* ------------------------------ ENTETE ---------------------------- */
+.entete{
+  display:flex; align-items:stretch; border:1.6pt solid var(--bleu);
+  border-radius:2.5pt; overflow:hidden; margin-bottom:6pt;
+}
+.entete .num{
+  background:var(--bleu); color:#fff; font-size:20pt; font-weight:700;
+  padding:0 8pt; display:flex; align-items:center; justify-content:center; min-width:34pt;
+}
+.entete .txt{padding:3.5pt 8pt; flex:1;}
+.entete .niveau{
+  font-size:7pt; font-weight:700; letter-spacing:.9pt; color:var(--vert-fonce);
+}
+.entete h1{margin:0; font-size:13.5pt; line-height:1.12; color:var(--bleu-fonce); font-weight:700;}
+.entete .sous{font-size:7pt; color:var(--gris); margin-top:1pt;}
+
+/* --------------------------- BANDEAUX ----------------------------- */
+.bandeau{
+  color:#fff; font-weight:700; font-size:9pt; letter-spacing:1pt;
+  padding:2.4pt 7pt; border-radius:2pt; margin:3pt 0 4pt; break-after:avoid; page-break-after:avoid;
+}
+.bandeau.bleu{background:var(--bleu);}
+.bandeau.vert{background:var(--vert);}
+
+/* --------------------------- COLONNES ----------------------------- */
+.cols{column-count:2; column-gap:7mm; column-fill:balance;}
+
+.cols.bal{column-fill:balance;}
+.bloc{margin-bottom:5pt;}
+.keep{break-inside:avoid; page-break-inside:avoid;}
+
+/* --------------------------- LECONS ------------------------------- */
+h2.lecon{
+  margin:0 0 3pt; font-size:8.6pt; font-weight:700; color:#fff; background:var(--bleu-fonce);
+  padding:1.8pt 5pt; border-radius:1.5pt; break-after:avoid; page-break-after:avoid;
+}
+h3.rub{
+  margin:3.5pt 0 1.5pt; font-size:8.2pt; font-weight:700; color:var(--vert-fonce);
+  border-bottom:.7pt solid var(--vert-bord); padding-bottom:.8pt;
+  break-after:avoid; page-break-after:avoid;
+}
+
+/* --------------------------- ENCADRES ----------------------------- */
+.form{
+  background:var(--bleu-pale); border:.8pt solid var(--bleu-bord); border-left:2.6pt solid var(--bleu);
+  border-radius:2pt; padding:2.4pt 5pt; margin:2.2pt 0 3.4pt;
+  break-inside:avoid; page-break-inside:avoid;
+}
+.form .t{
+  display:block; font-size:6.8pt; font-weight:700; letter-spacing:.6pt;
+  color:var(--bleu); margin-bottom:1.5pt;
+}
+.form .c{text-align:center; font-size:9.1pt; margin:1.6pt 0;}
+.note{background:var(--vert-pale); border-left:2.4pt solid var(--vert); padding:2.4pt 5pt; border-radius:1.5pt; margin:2.5pt 0 4pt; break-inside:avoid;}
+
+/* --------------------------- TABLEAUX ----------------------------- */
+table{width:100%; border-collapse:collapse; font-size:7.6pt; margin:2pt 0 4pt; break-inside:avoid;}
+th{background:var(--bleu); color:#fff; font-weight:700; text-align:left; padding:1.8pt 4pt; font-size:7.2pt;}
+td{border:.6pt solid var(--gris-clair); padding:1.8pt 4pt; vertical-align:top;}
+tr{break-inside:avoid;}
+table.var td{text-align:center; font-size:8pt;}
+table.var td.lab{text-align:left; font-weight:700; color:var(--bleu-fonce); background:var(--bleu-pale);}
+
+/* ----------------------------- PIEGES ----------------------------- */
+table.pieges th:first-child{width:44%;}
+table.pieges td:first-child{color:var(--rouge); background:#FDF1F0;}
+.x{font-weight:700;}
+.v{color:var(--vert-fonce); font-weight:700;}
+
+/* ---------------------------- RECAP ------------------------------- */
+ol.recap{margin:0; padding-left:0; list-style:none; counter-reset:r;}
+ol.recap li{
+  counter-increment:r; position:relative; padding-left:13pt; margin-bottom:1.8pt;
+  break-inside:avoid;
+}
+ol.recap li::before{
+  content:counter(r); position:absolute; left:0; top:.3pt;
+  width:10pt; height:10pt; border-radius:50%; background:var(--vert); color:#fff;
+  font-size:6.6pt; font-weight:700; text-align:center; line-height:10pt;
+}
+
+/* --------------------------- MATHS -------------------------------- */
+.m{font-family:Cambria,Georgia,"Times New Roman",serif;}
+i,var{font-family:Cambria,Georgia,"Times New Roman",serif; font-style:italic;}
+.op{font-family:Cambria,Georgia,"Times New Roman",serif; font-style:normal;}
+.f{display:inline-block; vertical-align:middle; text-align:center;
+   margin:0 .12em; line-height:1.06; font-family:Cambria,Georgia,"Times New Roman",serif;}
+.f>span{display:block; padding:0 .2em;}
+.f>span:first-child{border-bottom:.6pt solid currentColor; padding-bottom:.08em;}
+.f>span:last-child{padding-top:.04em;}
+.rad{border-top:.6pt solid currentColor; padding-top:.12em;}
+/* line-height:0 evite que l'exposant n'ecarte les lignes ; position:relative le
+   repositionne sans qu'il heurte la barre de fraction ni le trait du radical. */
+sup,sub{font-size:.68em; line-height:0; position:relative; vertical-align:baseline;}
+sup{top:-.42em;}
+sub{bottom:-.22em;}
+.pt{white-space:nowrap;}
+/* Les fleches n'ont qu'un glyphe atrophie dans la fonte serif : on les force
+   en sans-serif, ou elles sont franches meme a 8 pt. */
+.ar{font-family:"Segoe UI",Calibri,Arial,"DejaVu Sans",sans-serif; font-style:normal;}
+
+/* ------------------- PIEGES : blocs erreur / correction ------------- */
+.pg{font-size:8.1pt; border-left:2.4pt solid var(--rouge); background:#FDF1F0; border-radius:1.5pt;
+    padding:2pt 5pt; margin:0 0 2.8pt; break-inside:avoid; page-break-inside:avoid;}
+.pg .err{color:var(--rouge); font-weight:600;}
+.pg .cor{color:#1B1B1B; margin-top:.8pt;}
+.pg .cor b{color:var(--bleu-fonce);}
+.v{color:var(--vert-fonce); font-weight:700;}
+
+</style>
+</head>
+<body>
+<header class="entete">
+  <div class="num">7</div>
+  <div class="txt">
+    <div class="niveau">1ERE D &middot; MATHEMATIQUES</div>
+    <h1>Les limites</h1>
+    <div class="sous">Leçon 1 : limite en +&#8734; et en &#8722;&#8734; &middot; Leçon 2 : limite en un point, à gauche et à droite &middot; Leçon 3 : opérations sur les limites &middot; Leçon 4 : comparaison et asymptotes</div>
+  </div>
+</header>
+
+<div class="bandeau bleu" style="margin-top:0">L'ESSENTIEL</div>
+<div class="cols">
+
+<!-- ================= LECON 1 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 1&nbsp;: Limite en +&#8734; et en &#8722;&#8734;</h2>
+<p><i>f</i> est définie sur un intervalle <span class="pt">]<i>A</i>&#8239;;&#8239;+&#8734;[</span>. Les énoncés généraux et l'<b>unicité</b> de la limite sont <b>admis</b>.</p></div>
+<ul>
+<li><span class="pt">lim<sub><i>x</i><span class="ar">&#8594;</span>+&#8734;</sub>&#8239;<i>f</i>(<i>x</i>)&#8239;=&#8239;<i>L</i></span>, <i>L</i> <b>réel</b> : <i>f</i>(<i>x</i>) devient <b>aussi proche que l'on veut de <i>L</i></b> pourvu que <i>x</i> soit <b>assez grand</b> ; on ne demande jamais à <i>f</i>(<i>x</i>) d'<b>atteindre</b> <i>L</i>.</li>
+<li><span class="pt">lim<sub><i>x</i><span class="ar">&#8594;</span>+&#8734;</sub>&#8239;<i>f</i>(<i>x</i>)&#8239;=&#8239;+&#8734;</span> : <i>f</i>(<i>x</i>) <b>dépasse tout nombre donné</b> pourvu que <i>x</i> soit assez grand ; &#8722;&#8734; : <i>f</i>(<i>x</i>) devient <b>inférieur à tout nombre donné</b>.</li>
+<li>En &#8722;&#8734; : mêmes descriptions, avec « <i>x</i> assez grand en valeur absolue et négatif ».</li>
+</ul>
+<div class="form">
+  <span class="t">LIMITES DE REFERENCE EN L'INFINI&nbsp;: POUR <i>n</i>&#8239;&#8805;&#8239;1</span>
+  <div class="c m">lim<sub><i>x</i><span class="ar">&#8594;</span>+&#8734;</sub>&#8239;<i>x</i>&#8239;=&#8239;+&#8734; &nbsp;&nbsp; lim<sub><i>x</i><span class="ar">&#8594;</span>+&#8734;</sub>&#8239;<i>x</i><sup><i>n</i></sup>&#8239;=&#8239;+&#8734; &nbsp;&nbsp; lim<sub><i>x</i><span class="ar">&#8594;</span>+&#8734;</sub>&#8239;&#8730;<span class="rad"><i>x</i></span>&#8239;=&#8239;+&#8734;</div>
+  <div class="c m">lim<sub><i>x</i><span class="ar">&#8594;</span>&#8722;&#8734;</sub>&#8239;<i>x</i><sup><i>n</i></sup>&#8239;=&#8239;+&#8734; si <i>n</i> pair &nbsp;&middot;&nbsp; &#8722;&#8734; si <i>n</i> impair</div>
+  <div class="c m">lim<sub><i>x</i><span class="ar">&#8594;</span>+&#8734;</sub>&#8239;<span class="f"><span>1</span><span><i>x</i><sup><i>n</i></sup></span></span>&#8239;=&#8239;lim<sub><i>x</i><span class="ar">&#8594;</span>&#8722;&#8734;</sub>&#8239;<span class="f"><span>1</span><span><i>x</i><sup><i>n</i></sup></span></span>&#8239;=&#8239;0 &nbsp;&nbsp;&middot;&nbsp;&nbsp; constante <i>c</i>&#8239;<span class="ar">&#8594;</span>&#8239;<i>c</i></div>
+</div>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Asymptote horizontale</h3>
+<p>Si <span class="pt">lim<sub><i>x</i><span class="ar">&#8594;</span>+&#8734;</sub>&#8239;<i>f</i>(<i>x</i>)&#8239;=&#8239;<i>L</i></span> avec <i>L</i> <b>fini</b>, la droite d'équation <b><i>y</i>&#8239;=&#8239;<i>L</i></b> est <b>asymptote horizontale</b> à la courbe de <i>f</i> en +&#8734;. Même énoncé en &#8722;&#8734;. Une courbe peut en avoir <b>deux</b> (une de chaque côté), <b>une seule</b> ou <b>aucune</b> : c'est la traduction géométrique du calcul de limite.</p>
+<div class="note"><b>Méthode&nbsp;: polynôme en l'infini.</b> Repérer le <b>terme dominant</b> (plus haut degré) : la limite du polynôme est <b>celle de son terme dominant</b>. Le signe se lit sur le <b>coefficient</b>, complété par la <b>parité de l'exposant</b> en &#8722;&#8734;.</div>
+</div>
+
+<!-- ================= LECON 2 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 2&nbsp;: Limite en un point ; limite à gauche et à droite</h2>
+<p><span class="pt">lim<sub><i>x</i><span class="ar">&#8594;</span><i>a</i></sub>&#8239;<i>f</i>(<i>x</i>)&#8239;=&#8239;<i>L</i></span> : <i>f</i>(<i>x</i>) devient <b>aussi proche que l'on veut de <i>L</i></b> pourvu que <i>x</i> soit <b>assez proche de <i>a</i></b>, <b>sans être égal à <i>a</i></b>. De même <span class="pt">lim<sub><i>x</i><span class="ar">&#8594;</span><i>a</i></sub>&#8239;<i>f</i>(<i>x</i>)&#8239;=&#8239;+&#8734;</span> : <i>f</i>(<i>x</i>) dépasse tout nombre donné pourvu que <i>x</i> soit assez proche de <i>a</i>.</p></div>
+<div class="form">
+  <span class="t">FONCTION DEFINIE EN <i>a</i>&nbsp;: POLYNOME, OU RATIONNELLE DONT LE DENOMINATEUR NE S'ANNULE PAS EN <i>a</i></span>
+  <div class="c m">lim<sub><i>x</i><span class="ar">&#8594;</span><i>a</i></sub>&#8239;<i>f</i>(<i>x</i>)&#8239;=&#8239;<i>f</i>(<i>a</i>) &nbsp;&nbsp; on remplace <i>x</i> par <i>a</i></div>
+</div>
+<p>Valable dès que le remplacement donne un <b>résultat licite</b> ; si le dénominateur s'annule en <i>a</i>, on <b>étudie les alentours</b>.</p>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Limite à gauche, limite à droite</h3>
+<ul>
+<li><b>A gauche</b> : seulement les <i>x</i>&#8239;&lt;&#8239;<i>a</i>, noté <span class="pt">lim<sub><i>x</i><span class="ar">&#8594;</span><i>a</i><sup>&#8722;</sup></sub>&#8239;<i>f</i>(<i>x</i>)</span>. <b>A droite</b> : seulement les <i>x</i>&#8239;&gt;&#8239;<i>a</i>, noté <span class="pt">lim<sub><i>x</i><span class="ar">&#8594;</span><i>a</i><sup>+</sup></sub>&#8239;<i>f</i>(<i>x</i>)</span>. Elles peuvent être <b>différentes</b>.</li>
+<li><i>f</i> admet une limite en <i>a</i> <b>si, et seulement si</b>, ses limites à gauche et à droite existent et sont <b>égales</b>. Sinon <i>f</i> <b>n'a pas de limite</b> en <i>a</i> : on donne les deux séparément.</li>
+<li>Le signe en exposant n'est pas un signe de nombre, il indique <b>le côté d'approche</b> : <span class="pt"><i>x</i>&#8239;<span class="ar">&#8594;</span>&#8239;5<sup>&#8722;</sup></span> se lit « <i>x</i> tend vers 5 en restant plus petit que 5 » ; <span class="pt"><i>x</i>&#8239;<span class="ar">&#8594;</span>&#8239;0<sup>+</sup></span>, « par valeurs supérieures ».</li>
+</ul>
+<div class="form">
+  <span class="t">LIMITES EN 0 DES FONCTIONS DE REFERENCE&nbsp;: POUR <i>n</i>&#8239;&#8805;&#8239;1</span>
+  <div class="c m">lim<sub><i>x</i><span class="ar">&#8594;</span>0<sup>+</sup></sub>&#8239;<span class="f"><span>1</span><span><i>x</i><sup><i>n</i></sup></span></span>&#8239;=&#8239;+&#8734; &nbsp;&nbsp;&middot;&nbsp;&nbsp; lim<sub><i>x</i><span class="ar">&#8594;</span>0<sup>+</sup></sub>&#8239;&#8730;<span class="rad"><i>x</i></span>&#8239;=&#8239;0</div>
+  <div class="c m">lim<sub><i>x</i><span class="ar">&#8594;</span>0<sup>&#8722;</sup></sub>&#8239;<span class="f"><span>1</span><span><i>x</i><sup><i>n</i></sup></span></span>&#8239;=&#8239;+&#8734; si <i>n</i> pair &nbsp;&middot;&nbsp; &#8722;&#8734; si <i>n</i> impair</div>
+  <div class="c m">lim<sub><i>x</i><span class="ar">&#8594;</span>0</sub>&#8239;<span class="f"><span>1</span><span><i>x</i><sup>2</sup></span></span>&#8239;=&#8239;+&#8734;, &nbsp;mais <span class="f"><span>1</span><span><i>x</i></span></span> n'a pas de limite en 0</div>
+</div>
+<p>Tout se joue sur le <b>signe du dénominateur</b> : une puissance <b>paire</b> efface le signe (<i>x</i><sup>2</sup>&#8239;&gt;&#8239;0 des deux côtés), une puissance <b>impaire</b> le conserve.</p>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Asymptote verticale</h3>
+<p>Si l'une <b>au moins</b> des deux limites <span class="pt">lim<sub><i>x</i><span class="ar">&#8594;</span><i>a</i><sup>&#8722;</sup></sub>&#8239;<i>f</i>(<i>x</i>)</span> et <span class="pt">lim<sub><i>x</i><span class="ar">&#8594;</span><i>a</i><sup>+</sup></sub>&#8239;<i>f</i>(<i>x</i>)</span> est <b>infinie</b>, la droite d'équation <b><i>x</i>&#8239;=&#8239;<i>a</i></b> est <b>asymptote verticale</b> à la courbe de <i>f</i>. On les cherche aux <b>valeurs interdites</b>, mais seule une limite <b>réellement infinie</b> en donne une.</p>
+<div class="note"><b>Méthode&nbsp;: quotient en une valeur interdite <i>a</i>.</b> Vérifier que le <b>numérateur ne s'annule pas</b> en <i>a</i> (sinon forme <span class="pt"><span class="f"><span>0</span><span>0</span></span></span>, Leçon 3) et noter son <b>signe</b>. Etudier au tableau le <b>signe du dénominateur</b> à gauche puis à droite : +&#8734; si les signes concordent, &#8722;&#8734; sinon. Conclure par les <b>deux</b> limites, puis annoncer <i>x</i>&#8239;=&#8239;<i>a</i>.</div>
+<div class="note"><b>Méthode&nbsp;: <span class="pt"><span class="f"><span><i>k</i></span><span><i>x</i><sup><i>n</i></sup></span></span></span> en 0.</b> <i>n</i> <b>pair</b> : <i>x</i><sup><i>n</i></sup>&#8239;&gt;&#8239;0 des deux côtés, même limite à gauche et à droite. <i>n</i> <b>impair</b> : le dénominateur change de signe, les deux limites sont <b>opposées</b>. Un <i>k</i> négatif retourne les deux réponses. Annoncer l'asymptote <i>x</i>&#8239;=&#8239;0.</div>
+</div>
+
+<!-- ================= LECON 3 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 3&nbsp;: Opérations sur les limites</h2>
+<div class="form">
+  <span class="t">OPERATIONS (ADMIS)&nbsp;: <i>f</i> ET <i>g</i> AYANT UNE LIMITE EN +&#8734;, EN &#8722;&#8734; OU EN UN POINT <i>a</i></span>
+  <div class="c m">lim(<i>f</i>&#8239;+&#8239;<i>g</i>)&#8239;=&#8239;lim&#8239;<i>f</i>&#8239;+&#8239;lim&#8239;<i>g</i> &nbsp;&nbsp; sauf &#8239;+&#8734;&#8239;&#8722;&#8239;&#8734;</div>
+  <div class="c m">lim(<i>f</i>&#8239;&#215;&#8239;<i>g</i>)&#8239;=&#8239;lim&#8239;<i>f</i>&#8239;&#215;&#8239;lim&#8239;<i>g</i> &nbsp;&nbsp; sauf &#8239;0&#8239;&#215;&#8239;&#8734;</div>
+  <div class="c m">lim&#8239;<span class="f"><span><i>f</i></span><span><i>g</i></span></span>&#8239;=&#8239;<span class="f"><span>lim&#8239;<i>f</i></span><span>lim&#8239;<i>g</i></span></span> &nbsp;&nbsp; sauf &#8239;<span class="f"><span>0</span><span>0</span></span>&#8239; et &#8239;<span class="f"><span>&#8734;</span><span>&#8734;</span></span></div>
+</div></div>
+<p>Quand une limite est infinie, on applique la <b>règle des signes</b> habituelle.</p>
+<div class="form">
+  <span class="t">LES QUATRE FORMES INDETERMINEES</span>
+  <div class="c m">+&#8734;&#8239;&#8722;&#8239;&#8734; &nbsp;&nbsp;&nbsp; 0&#8239;&#215;&#8239;&#8734; &nbsp;&nbsp;&nbsp; <span class="f"><span>0</span><span>0</span></span> &nbsp;&nbsp;&nbsp; <span class="f"><span>&#8734;</span><span>&#8734;</span></span></div>
+</div>
+<p>Une forme indéterminée <b>n'est pas un résultat</b> : la limite peut exister, mais il faut <b>transformer l'écriture</b> puis recommencer le calcul. <b>N'est pas indéterminé :</b> le cas <span class="pt"><span class="f"><span><i>k</i></span><span>0</span></span></span> avec <i>k</i>&#8239;&#8800;&#8239;0, où la limite est infinie à coup sûr ; seul le <b>signe</b> reste à déterminer.</p>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Fonction rationnelle en l'infini</h3>
+<p>Soit <span class="pt"><i>f</i>(<i>x</i>)&#8239;=&#8239;<span class="f"><span><i>ax</i><sup><i>n</i></sup>&#8239;+&#8239;…</span><span><i>bx</i><sup><i>m</i></sup>&#8239;+&#8239;…</span></span></span>, où <i>ax</i><sup><i>n</i></sup> et <i>bx</i><sup><i>m</i></sup> sont les <b>termes dominants</b>. En +&#8734; comme en &#8722;&#8734;, <i>f</i> a la même limite que le <b>rapport des termes dominants</b> <span class="pt"><span class="f"><span><i>ax</i><sup><i>n</i></sup></span><span><i>bx</i><sup><i>m</i></sup></span></span></span> : c'est la règle du terme dominant appliquée <b>deux fois</b>.</p>
+<table>
+<tr><th>Degrés</th><th>Limite en +&#8734; et en &#8722;&#8734;</th></tr>
+<tr><td class="m"><i>n</i>&#8239;=&#8239;<i>m</i></td><td>limite <span class="pt"><span class="f"><span><i>a</i></span><span><i>b</i></span></span></span> ; asymptote horizontale <span class="pt"><i>y</i>&#8239;=&#8239;<span class="f"><span><i>a</i></span><span><i>b</i></span></span></span></td></tr>
+<tr><td class="m"><i>n</i>&#8239;&lt;&#8239;<i>m</i></td><td>limite <b>0</b> ; l'<b>axe des abscisses</b> est asymptote horizontale</td></tr>
+<tr><td class="m"><i>n</i>&#8239;&gt;&#8239;<i>m</i></td><td>limite <b>infinie</b> ; <b>aucune</b> asymptote horizontale</td></tr>
+</table>
+<div class="note"><b>Méthode&nbsp;: rationnelle en l'infini.</b> Ecrire le rapport <span class="pt"><span class="f"><span><i>ax</i><sup><i>n</i></sup></span><span><i>bx</i><sup><i>m</i></sup></span></span></span> et le <b>simplifier</b>, puis comparer les degrés. Si <i>n</i>&#8239;&gt;&#8239;<i>m</i>, le <b>signe</b> de l'infini vient du signe de <span class="pt"><span class="f"><span><i>a</i></span><span><i>b</i></span></span></span> et de la <b>parité de <i>n</i>&#8239;&#8722;&#8239;<i>m</i></b> en &#8722;&#8734;. Signaler l'asymptote horizontale si la limite est finie.</div>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Lever une forme indéterminée</h3>
+<p><b>Nommer d'abord la forme</b> obtenue par remplacement : l'écrire noir sur blanc guide le choix de la technique.</p>
+<ul>
+<li><span class="pt"><span class="f"><span>&#8734;</span><span>&#8734;</span></span></span>, quotient de polynômes en l'infini : garder les <b>termes dominants</b> et simplifier.</li>
+<li><span class="pt">+&#8734;&#8239;&#8722;&#8239;&#8734;</span>, somme ou différence en l'infini : <b>factoriser</b> par le terme de plus haut degré, puis conclure sur le produit.</li>
+<li><span class="pt"><span class="f"><span>0</span><span>0</span></span></span>, quotient en un point <i>a</i> : le facteur <span class="pt">(<i>x</i>&#8239;&#8722;&#8239;<i>a</i>)</span> est en haut <b>et</b> en bas ; factoriser, simplifier, remplacer.</li>
+<li>Différence contenant une <b>racine carrée</b> : multiplier et diviser par la <b>quantité conjuguée</b>, obtenue en changeant le signe entre les deux termes ; <span class="pt">(<i>A</i>&#8239;&#8722;&#8239;<i>B</i>)(<i>A</i>&#8239;+&#8239;<i>B</i>)&#8239;=&#8239;<i>A</i><sup>2</sup>&#8239;&#8722;&#8239;<i>B</i><sup>2</sup></span> fait disparaître la racine.</li>
+<li><b>Contrôler</b> le résultat sur une grande valeur de <i>x</i>, ou sur une valeur proche de <i>a</i>.</li>
+</ul>
+</div>
+
+<!-- ================= LECON 4 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 4&nbsp;: Comparaison et asymptotes</h2>
+<div class="form">
+  <span class="t">COMPARAISON ET ENCADREMENT (ADMIS)&nbsp;: AU VOISINAGE DE <i>a</i>, REEL OU INFINI</span>
+  <div class="c m"><i>f</i>(<i>x</i>)&#8239;&#8804;&#8239;<i>g</i>(<i>x</i>) et lim&#8239;<i>f</i>&#8239;=&#8239;+&#8734; &nbsp;donnent&nbsp; lim&#8239;<i>g</i>&#8239;=&#8239;+&#8734;</div>
+  <div class="c m"><i>g</i>(<i>x</i>)&#8239;&#8804;&#8239;<i>f</i>(<i>x</i>) et lim&#8239;<i>f</i>&#8239;=&#8239;&#8722;&#8734; &nbsp;donnent&nbsp; lim&#8239;<i>g</i>&#8239;=&#8239;&#8722;&#8734;</div>
+  <div class="c m"><i>u</i>(<i>x</i>)&#8239;&#8804;&#8239;<i>f</i>(<i>x</i>)&#8239;&#8804;&#8239;<i>v</i>(<i>x</i>) et lim&#8239;<i>u</i>&#8239;=&#8239;lim&#8239;<i>v</i>&#8239;=&#8239;<i>L</i> réel &nbsp;donnent&nbsp; lim&#8239;<i>f</i>&#8239;=&#8239;<i>L</i></div>
+</div></div>
+<p>Ces énoncés ne calculent rien, ils <b>comparent</b> : ils servent quand le calcul direct est impossible. La <b>comparaison</b> vise une limite <b>infinie</b> et une seule inégalité suffit ; l'<b>encadrement</b> vise une limite <b>finie</b> et exige les <b>deux</b> inégalités.</p>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Récapitulatif des asymptotes</h3>
+<table>
+<tr><th>Asymptote</th><th>Condition</th><th>Où la chercher</th></tr>
+<tr><td><b>Horizontale</b> <span class="m"><i>y</i>&#8239;=&#8239;<i>L</i></span></td><td class="m">lim<sub><i>x</i><span class="ar">&#8594;</span>+&#8734;</sub>&#8239;<i>f</i>&#8239;=&#8239;<i>L</i> ou lim<sub><i>x</i><span class="ar">&#8594;</span>&#8722;&#8734;</sub>&#8239;<i>f</i>&#8239;=&#8239;<i>L</i>, <i>L</i> réel</td><td>aux <b>bornes infinies</b></td></tr>
+<tr><td><b>Verticale</b> <span class="m"><i>x</i>&#8239;=&#8239;<i>a</i></span></td><td class="m">lim<sub><i>x</i><span class="ar">&#8594;</span><i>a</i></sub>&#8239;<i>f</i>&#8239;=&#8239;&#177;&#8734;, d'un côté au moins</td><td>aux <b>valeurs interdites</b></td></tr>
+<tr><td><b>Oblique</b> <span class="m"><i>y</i>&#8239;=&#8239;<i>ax</i>&#8239;+&#8239;<i>b</i></span></td><td class="m"><i>f</i>(<i>x</i>)&#8239;=&#8239;<i>ax</i>&#8239;+&#8239;<i>b</i>&#8239;+&#8239;&#949;(<i>x</i>), <i>a</i>&#8239;&#8800;&#8239;0, &#949;(<i>x</i>)&#8239;<span class="ar">&#8594;</span>&#8239;0</td><td>en +&#8734; et en &#8722;&#8734;</td></tr>
+</table>
+<p><b>Position relative</b> par rapport à la droite (<i>D</i>) : le signe de <span class="pt"><i>f</i>(<i>x</i>)&#8239;&#8722;&#8239;(<i>ax</i>&#8239;+&#8239;<i>b</i>)&#8239;=&#8239;&#949;(<i>x</i>)</span> la donne. La courbe est <b>au-dessus</b> de (<i>D</i>) là où <span class="pt">&#949;(<i>x</i>)&#8239;&gt;&#8239;0</span>, <b>au-dessous</b> là où <span class="pt">&#949;(<i>x</i>)&#8239;&lt;&#8239;0</span>. Horizontale ou oblique, c'est toujours l'<b>écart</b> qui tend vers 0 : l'horizontale est le cas <i>a</i>&#8239;=&#8239;0.</p>
+</div>
+
+<div class="bloc">
+<div class="note"><b>Méthode&nbsp;: asymptotes d'une fonction rationnelle.</b> Déterminer le domaine et <b>toutes</b> les valeurs interdites (deux si le dénominateur est de la forme <span class="pt"><i>x</i><sup>2</sup>&#8239;&#8722;&#8239;<i>c</i><sup>2</sup></span>). Limites en +&#8734; et en &#8722;&#8734; par le <b>rapport des termes dominants</b> : si l'une vaut un réel <i>L</i>, annoncer <i>y</i>&#8239;=&#8239;<i>L</i>. En chaque valeur interdite <i>a</i>, limite <b>à gauche</b> puis <b>à droite</b> ; si l'une au moins est infinie, annoncer <i>x</i>&#8239;=&#8239;<i>a</i>. Conclure en <b>listant</b> les asymptotes, tracées en pointillés avant la courbe.</div>
+<div class="note"><b>Méthode&nbsp;: montrer qu'une droite est asymptote oblique.</b> Ecrire <i>f</i>(<i>x</i>) sous la forme <span class="pt"><i>ax</i>&#8239;+&#8239;<i>b</i>&#8239;+&#8239;<span class="f"><span><i>c</i></span><span>dénominateur</span></span></span> (division ou identification), calculer <span class="pt"><i>f</i>(<i>x</i>)&#8239;&#8722;&#8239;(<i>ax</i>&#8239;+&#8239;<i>b</i>)&#8239;=&#8239;&#949;(<i>x</i>)</span> et montrer que <span class="pt">&#949;(<i>x</i>)&#8239;<span class="ar">&#8594;</span>&#8239;0</span> en +&#8734; et en &#8722;&#8734;. Position relative : <b>tableau de signes</b> de &#949;(<i>x</i>).</div>
+</div>
+
+</div>
+
+<div class="bandeau vert">PIEGES ET ERREURS FREQUENTES</div>
+<div class="cols">
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> <span class="pt">lim<sub><i>x</i><span class="ar">&#8594;</span>+&#8734;</sub>&#8239;(<i>x</i><sup>2</sup>&#8239;&#8722;&#8239;<i>x</i>)&#8239;=&#8239;+&#8734;&#8239;&#8722;&#8239;&#8734;&#8239;=&#8239;0</span> &nbsp;&middot;&nbsp; <span class="pt"><span class="f"><span>+&#8734;</span><span>+&#8734;</span></span>&#8239;=&#8239;1</span></div><div class="cor"><span class="v">&#10003;</span> +&#8734; <b>n'est pas un nombre</b> : ces écritures sont des formes <b>indéterminées</b>, pas des résultats. On transforme : <span class="pt"><i>x</i><sup>2</sup>&#8239;&#8722;&#8239;<i>x</i>&#8239;=&#8239;<i>x</i><sup>2</sup>(1&#8239;&#8722;&#8239;<span class="f"><span>1</span><span><i>x</i></span></span>)&#8239;<span class="ar">&#8594;</span>&#8239;+&#8734;</span>. La limite est parfaitement déterminée.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> <span class="pt">lim<sub><i>x</i><span class="ar">&#8594;</span>0</sub>&#8239;<span class="f"><span>1</span><span><i>x</i></span></span>&#8239;=&#8239;+&#8734;</span> &nbsp;&middot;&nbsp; <span class="pt"><i>x</i>&#8239;<span class="ar">&#8594;</span>&#8239;0<sup>&#8722;</sup></span> signifie que <i>x</i> tend vers le nombre &#8722;0</div><div class="cor"><span class="v">&#10003;</span> Il faut <b>préciser le côté</b> : +&#8734; en 0<sup>+</sup>, &#8722;&#8734; en 0<sup>&#8722;</sup>, donc <span class="pt"><span class="f"><span>1</span><span><i>x</i></span></span></span> <b>n'a pas de limite</b> en 0. Et &#8722;0 et 0 sont le <b>même nombre</b> : le signe en exposant indique le <b>côté d'approche</b>. On ne s'en dispense que si les deux limites coïncident, comme pour <span class="pt"><span class="f"><span>1</span><span><i>x</i><sup>2</sup></span></span></span>.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> <span class="pt">lim<sub><i>x</i><span class="ar">&#8594;</span>+&#8734;</sub>&#8239;<span class="f"><span>2<i>x</i>&#8239;+&#8239;1</span><span><i>x</i><sup>2</sup></span></span>&#8239;=&#8239;2</span> (rapport des premiers termes écrits) &nbsp;&middot;&nbsp; dans <span class="pt">1&#8239;+&#8239;<i>x</i><sup>3</sup>&#8239;&#8722;&#8239;2<i>x</i></span>, le terme dominant est 1</div><div class="cor"><span class="v">&#10003;</span> On prend le rapport des <b>termes dominants</b> : <span class="pt"><span class="f"><span>2<i>x</i></span><span><i>x</i><sup>2</sup></span></span>&#8239;=&#8239;<span class="f"><span>2</span><span><i>x</i></span></span>&#8239;<span class="ar">&#8594;</span>&#8239;0</span>. Le terme dominant de <span class="pt">1&#8239;+&#8239;<i>x</i><sup>3</sup>&#8239;&#8722;&#8239;2<i>x</i></span> est <i>x</i><sup>3</sup>, même s'il n'est pas écrit en premier : repérer le <b>degré</b>, jamais la position.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> <i>y</i>&#8239;=&#8239;2 est asymptote <b>verticale</b> de <span class="pt"><span class="f"><span>2<i>x</i>&#8239;+&#8239;1</span><span><i>x</i>&#8239;&#8722;&#8239;3</span></span></span> &nbsp;&middot;&nbsp; <i>y</i>&#8239;=&#8239;2 est asymptote <b>horizontale</b> de <span class="pt"><span class="f"><span>2<i>x</i><sup>2</sup>&#8239;+&#8239;1</span><span><i>x</i></span></span></span></div><div class="cor"><span class="v">&#10003;</span> Une équation en <i>y</i>&#8239;=&#8239; décrit une droite <b>horizontale ou oblique</b>, une équation en <i>x</i>&#8239;=&#8239; une droite <b>verticale</b> : ici l'asymptote verticale est <i>x</i>&#8239;=&#8239;3. Et dans le second cas le degré du haut <b>dépasse</b> celui du bas, la limite est infinie ; en écrivant <span class="pt">2<i>x</i>&#8239;+&#8239;<span class="f"><span>1</span><span><i>x</i></span></span></span>, l'asymptote est <b>oblique</b>, <i>y</i>&#8239;=&#8239;2<i>x</i>.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> &#8722;1 annule le dénominateur de <span class="pt"><span class="f"><span><i>x</i><sup>2</sup>&#8239;&#8722;&#8239;1</span><span><i>x</i>&#8239;+&#8239;1</span></span></span>, donc <i>x</i>&#8239;=&#8239;&#8722;1 est asymptote verticale</div><div class="cor"><span class="v">&#10003;</span> Après simplification, <span class="pt"><span class="f"><span><i>x</i><sup>2</sup>&#8239;&#8722;&#8239;1</span><span><i>x</i>&#8239;+&#8239;1</span></span>&#8239;=&#8239;<i>x</i>&#8239;&#8722;&#8239;1</span> et la limite en &#8722;1 vaut &#8722;2. Une valeur interdite ne donne une asymptote que si la limite y est <b>infinie</b>. « Non définie en <i>a</i> » et « sans limite en <i>a</i> » sont <b>indépendants</b> : la limite regarde les <b>voisins</b> du point, jamais le point.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> Une courbe ne coupe jamais son asymptote</div><div class="cor"><span class="v">&#10003;</span> Seul l'<b>écart</b> doit tendre vers 0 : la courbe de <span class="pt">3&#8239;+&#8239;<span class="f"><span><span class="op">cos</span>&#8239;<i>x</i></span><span><i>x</i></span></span></span> coupe <i>y</i>&#8239;=&#8239;3 une infinité de fois. Inversement, rester proche ne suffit pas : <span class="pt"><i>x</i>&#8239;<span class="ar">&#8614;</span>&#8239;<i>x</i>&#8239;+&#8239;1</span> reste à distance 1 de <i>y</i>&#8239;=&#8239;<i>x</i>, qui n'est <b>pas</b> son asymptote.</div></div>
+
+</div>
+
+<div class="bandeau bleu">A SAVOIR PAR COEUR AVANT LE DEVOIR</div>
+<div class="cols">
+<ol class="recap">
+<li><b>Références</b> : <span class="pt"><i>x</i><sup><i>n</i></sup>&#8239;<span class="ar">&#8594;</span>&#8239;+&#8734;</span> en +&#8734; ; en &#8722;&#8734;, <b>+&#8734; si <i>n</i> pair</b>, <b>&#8722;&#8734; si <i>n</i> impair</b> ; <span class="pt"><span class="f"><span>1</span><span><i>x</i><sup><i>n</i></sup></span></span>&#8239;<span class="ar">&#8594;</span>&#8239;0</span> en l'infini ; <span class="pt"><span class="f"><span>1</span><span><i>x</i></span></span>&#8239;<span class="ar">&#8594;</span>&#8239;+&#8734;</span> en 0<sup>+</sup> et &#8722;&#8734; en 0<sup>&#8722;</sup> ; <span class="pt"><span class="f"><span>1</span><span><i>x</i><sup>2</sup></span></span>&#8239;<span class="ar">&#8594;</span>&#8239;+&#8734;</span> en 0 ; <span class="pt">&#8730;<span class="rad"><i>x</i></span>&#8239;<span class="ar">&#8594;</span>&#8239;+&#8734;</span>.</li>
+<li><b>Polynôme</b> en l'infini : limite du <b>terme dominant</b>. <b>Rationnelle</b> en l'infini : <b>rapport des termes dominants</b>. Degrés égaux <span class="pt"><span class="ar">&#8594;</span>&#8239;<span class="f"><span><i>a</i></span><span><i>b</i></span></span></span>, haut plus grand <span class="pt"><span class="ar">&#8594;</span>&#8239;&#177;&#8734;</span>, bas plus grand <span class="pt"><span class="ar">&#8594;</span>&#8239;0</span>.</li>
+<li><b>En un point</b> : fonction définie en <i>a</i>, on <b>remplace</b> ; dénominateur nul et numérateur non nul, limite <b>infinie</b> dont le signe se lit dans le tableau de signes du dénominateur, à gauche puis à droite ; les deux nuls, forme <span class="pt"><span class="f"><span>0</span><span>0</span></span></span>, on factorise par <span class="pt">(<i>x</i>&#8239;&#8722;&#8239;<i>a</i>)</span> et on simplifie. La limite en <i>a</i> existe <b>si et seulement si</b> celles à gauche et à droite existent et sont <b>égales</b>.</li>
+<li><b>Asymptotes</b> : limite finie <i>L</i> en l'infini <span class="ar">&#8594;</span> <b>horizontale</b> <i>y</i>&#8239;=&#8239;<i>L</i> ; limite infinie en <i>a</i> <span class="ar">&#8594;</span> <b>verticale</b> <i>x</i>&#8239;=&#8239;<i>a</i> ; <span class="pt"><i>f</i>(<i>x</i>)&#8239;&#8722;&#8239;(<i>ax</i>&#8239;+&#8239;<i>b</i>)&#8239;<span class="ar">&#8594;</span>&#8239;0</span> <span class="ar">&#8594;</span> <b>oblique</b> <i>y</i>&#8239;=&#8239;<i>ax</i>&#8239;+&#8239;<i>b</i>. Position relative donnée par le <b>signe de l'écart</b>.</li>
+<li><b>Quatre indéterminées</b> : <span class="pt">+&#8734;&#8239;&#8722;&#8239;&#8734;</span>, <span class="pt">0&#8239;&#215;&#8239;&#8734;</span>, <span class="pt"><span class="f"><span>0</span><span>0</span></span></span>, <span class="pt"><span class="f"><span>&#8734;</span><span>&#8734;</span></span></span>. Les lever : termes dominants, factorisation par le plus haut degré, factorisation par <span class="pt">(<i>x</i>&#8239;&#8722;&#8239;<i>a</i>)</span>, <b>quantité conjuguée</b> pour les racines. <span class="pt"><span class="f"><span><i>k</i></span><span>0</span></span></span> avec <i>k</i>&#8239;&#8800;&#8239;0 <b>n'est pas</b> indéterminé.</li>
+<li><b>Comparaison</b> : <span class="pt"><i>f</i>&#8239;&#8804;&#8239;<i>g</i></span> et <span class="pt">lim&#8239;<i>f</i>&#8239;=&#8239;+&#8734;</span> donnent <span class="pt">lim&#8239;<i>g</i>&#8239;=&#8239;+&#8734;</span>. <b>Encadrement</b> : <span class="pt"><i>u</i>&#8239;&#8804;&#8239;<i>f</i>&#8239;&#8804;&#8239;<i>v</i></span> et <span class="pt">lim&#8239;<i>u</i>&#8239;=&#8239;lim&#8239;<i>v</i>&#8239;=&#8239;<i>L</i></span> donnent <span class="pt">lim&#8239;<i>f</i>&#8239;=&#8239;<i>L</i></span> (utile avec <span class="op">sin</span> et <span class="op">cos</span>).</li>
+</ol>
+</div>
+
+</body>
+</html>

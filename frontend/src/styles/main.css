@@ -1,0 +1,182 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  font-family: "Source Sans 3", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+/* Scrollbars */
+.scrollbar-thin::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+.scrollbar-thin::-webkit-scrollbar-track {
+  background: transparent;
+}
+.scrollbar-thin::-webkit-scrollbar-thumb {
+  background-color: rgba(13, 148, 136, 0.35);
+  border-radius: 999px;
+}
+.scrollbar-thin::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(13, 148, 136, 0.55);
+}
+
+/* Markdown / KaTeX content inside chat bubbles */
+.prose-chat {
+  font-size: 1.0625rem;
+  line-height: 1.75;
+}
+.prose-chat p {
+  margin: 0.6em 0;
+}
+.prose-chat ul, .prose-chat ol {
+  margin: 0.5em 0 0.5em 1.3em;
+}
+.prose-chat li {
+  margin: 0.2em 0;
+}
+.prose-chat h1, .prose-chat h2, .prose-chat h3 {
+  margin: 0.9em 0 0.4em;
+  font-weight: 700;
+  line-height: 1.3;
+  font-family: "Lexend", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+.prose-chat h1 { font-size: 1.35em; }
+.prose-chat h2 { font-size: 1.2em; @apply text-primary; }
+.prose-chat h3 { font-size: 1.08em; }
+.prose-chat strong {
+  font-weight: 700;
+}
+.prose-chat blockquote {
+  margin: 0.7em 0;
+  padding: 0.6em 1em;
+  border-radius: 0.4em;
+  font-style: normal;
+  @apply border-l-[3px] border-primary bg-primary/[0.06];
+}
+.prose-chat hr {
+  margin: 1.2em 0;
+  border: none;
+  @apply border-t border-base-content/15;
+}
+.prose-chat code {
+  background: rgba(148, 163, 184, 0.18);
+  padding: 0.15em 0.45em;
+  border-radius: 0.35em;
+  font-size: 0.88em;
+}
+.prose-chat .katex {
+  font-size: 1.1em;
+}
+/* Formules et tableaux larges (formules longues, tableaux de signes/variations) : défilement
+   horizontal interne au lieu de déborder la bulle, avec un léger dégradé sur le bord droit
+   signalant qu'il y a une suite. Toujours présent (pas de détection JS de l'overflow réel) mais
+   assez discret pour ne pas gêner le contenu qui tient déjà dans la largeur (voir
+   RAPPORT_MOBILE.md §8). La taille de police n'est pas touchée. */
+.prose-chat .katex-display,
+.prose-chat table {
+  box-shadow: inset -14px 0 10px -10px rgba(0, 0, 0, 0.16);
+}
+[data-theme="chatmaths-dark"] .prose-chat .katex-display,
+[data-theme="chatmaths-dark"] .prose-chat table {
+  box-shadow: inset -14px 0 10px -10px rgba(0, 0, 0, 0.45);
+}
+.prose-chat .katex-display {
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 0.3em 0;
+}
+.prose-chat table {
+  margin: 0.8em 0;
+  border-collapse: collapse;
+  width: auto;
+  max-width: 100%;
+  overflow-x: auto;
+  display: block;
+  font-size: 0.95em;
+}
+.prose-chat th, .prose-chat td {
+  padding: 0.45em 0.9em;
+  @apply border border-base-content/20;
+}
+.prose-chat th {
+  @apply bg-base-200 font-semibold;
+  text-align: center;
+}
+.prose-chat td {
+  text-align: center;
+}
+
+/* Gradient text utility (slow shimmer sweep across the gradient) */
+.text-gradient {
+  background: linear-gradient(120deg, #0d9488, #0891b2 45%, #d97706 55%, #0d9488);
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Card hover lift (used by interactive info cards: welcome steps, sidebar suggestions) */
+.card-interactive {
+  transition: transform 200ms ease-out, box-shadow 200ms ease-out, border-color 200ms ease-out;
+}
+.card-interactive:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 24px -12px rgba(13, 148, 136, 0.35);
+}
+
+/* Animated gradient border card (21st.dev-style glow) */
+.glow-border {
+  position: relative;
+}
+.glow-border::before {
+  content: "";
+  position: absolute;
+  inset: -1px;
+  border-radius: inherit;
+  padding: 1px;
+  background: linear-gradient(120deg, rgba(13,148,136,0.55), rgba(8,145,178,0.4), rgba(217,119,6,0.45));
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+}
+
+.typing-dot {
+  animation: typingBounce 1.2s infinite ease-in-out;
+}
+.typing-dot:nth-child(2) { animation-delay: 0.15s; }
+.typing-dot:nth-child(3) { animation-delay: 0.3s; }
+
+@keyframes typingBounce {
+  0%, 60%, 100% { transform: translateY(0); opacity: 0.5; }
+  30% { transform: translateY(-4px); opacity: 1; }
+}
+
+/* Respecte prefers-reduced-motion : coupe les animations décoratives pour les utilisateurs sensibles au mouvement */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Même logique étendue à une condition de largeur (voir RAPPORT_MOBILE.md §9) : sous 768px, les
+   animations d'ambiance en boucle infinie (halos de fond) coûtent batterie/GPU sur de l'Android
+   bas de gamme sans apporter d'information, même quand l'utilisateur n'a pas activé
+   prefers-reduced-motion. BackgroundBlobs ne se monte déjà plus sous ce seuil ; cette règle est
+   une sécurité si la classe est réutilisée ailleurs. Les animations de retour (chargement,
+   transitions d'interface) ne sont volontairement pas concernées : elles restent un signal utile.*/
+@media (max-width: 767px) {
+  .animate-float-slow,
+  .animate-float-slower {
+    animation: none !important;
+  }
+}

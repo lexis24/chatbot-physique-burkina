@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Fiche de revision - 4eme - Chapitre 3 : Reperage sur une droite</title>
+<style>
+/* ===================================================================
+   FICHE DE REVISION, Collection Hakili Lab, Edition 2026
+   Feuille de style autonome, format A4 pret a imprimer.
+   Bleu #005CB9 · Vert #49A145
+   =================================================================== */
+:root{
+  --bleu:#005CB9; --bleu-fonce:#00429A; --bleu-pale:#E8F1FB; --bleu-bord:#B7D2EE;
+  --vert:#49A145; --vert-fonce:#2F7A2C; --vert-pale:#EDF7EC; --vert-bord:#BCE0B9;
+  --gris:#4A4A4A; --gris-clair:#E4E4E4; --rouge:#B3261E;
+}
+@page{
+  size:A4; margin:15mm;
+  @bottom-center{
+    content:"Collection Hakili Lab, Edition 2026  ·  Fiche de revision  ·  " counter(page) "/" counter(pages);
+    font-family:"Segoe UI",Calibri,Arial,sans-serif; font-size:6.6pt; color:#8A8A8A;
+  }
+}
+*{box-sizing:border-box;}
+body{
+  margin:0; font-family:"Segoe UI",Calibri,Arial,sans-serif;
+  font-size:8.4pt; line-height:1.26; color:#1B1B1B;
+}
+p{margin:0 0 3pt;}
+ul{margin:0 0 3pt; padding-left:11pt;}
+li{margin:0 0 1.2pt;}
+b,strong{color:var(--bleu-fonce);}
+
+/* ------------------------------ ENTETE ---------------------------- */
+.entete{
+  display:flex; align-items:stretch; border:1.6pt solid var(--bleu);
+  border-radius:2.5pt; overflow:hidden; margin-bottom:6pt;
+}
+.entete .num{
+  background:var(--bleu); color:#fff; font-size:20pt; font-weight:700;
+  padding:0 8pt; display:flex; align-items:center; justify-content:center; min-width:34pt;
+}
+.entete .txt{padding:3.5pt 8pt; flex:1;}
+.entete .niveau{
+  font-size:7pt; font-weight:700; letter-spacing:.9pt; color:var(--vert-fonce);
+}
+.entete h1{margin:0; font-size:13.5pt; line-height:1.12; color:var(--bleu-fonce); font-weight:700;}
+.entete .sous{font-size:7pt; color:var(--gris); margin-top:1pt;}
+
+/* --------------------------- BANDEAUX ----------------------------- */
+.bandeau{
+  color:#fff; font-weight:700; font-size:9pt; letter-spacing:1pt;
+  padding:2.4pt 7pt; border-radius:2pt; margin:3pt 0 4pt; break-after:avoid; page-break-after:avoid;
+}
+.bandeau.bleu{background:var(--bleu);}
+.bandeau.vert{background:var(--vert);}
+
+/* --------------------------- COLONNES ----------------------------- */
+.cols{column-count:2; column-gap:7mm; column-fill:balance;}
+
+.cols.bal{column-fill:balance;}
+.bloc{margin-bottom:5pt;}
+.keep{break-inside:avoid; page-break-inside:avoid;}
+
+/* --------------------------- LECONS ------------------------------- */
+h2.lecon{
+  margin:0 0 3pt; font-size:8.6pt; font-weight:700; color:#fff; background:var(--bleu-fonce);
+  padding:1.8pt 5pt; border-radius:1.5pt; break-after:avoid; page-break-after:avoid;
+}
+h3.rub{
+  margin:3.5pt 0 1.5pt; font-size:8.2pt; font-weight:700; color:var(--vert-fonce);
+  border-bottom:.7pt solid var(--vert-bord); padding-bottom:.8pt;
+  break-after:avoid; page-break-after:avoid;
+}
+
+/* --------------------------- ENCADRES ----------------------------- */
+.form{
+  background:var(--bleu-pale); border:.8pt solid var(--bleu-bord); border-left:2.6pt solid var(--bleu);
+  border-radius:2pt; padding:2.4pt 5pt; margin:2.2pt 0 3.4pt;
+  break-inside:avoid; page-break-inside:avoid;
+}
+.form .t{
+  display:block; font-size:6.8pt; font-weight:700; letter-spacing:.6pt;
+  color:var(--bleu); margin-bottom:1.5pt;
+}
+.form .c{text-align:center; font-size:9.1pt; margin:1.6pt 0;}
+.note{background:var(--vert-pale); border-left:2.4pt solid var(--vert); padding:2.4pt 5pt; border-radius:1.5pt; margin:2.5pt 0 4pt; break-inside:avoid;}
+
+/* --------------------------- TABLEAUX ----------------------------- */
+table{width:100%; border-collapse:collapse; font-size:7.6pt; margin:2pt 0 4pt; break-inside:avoid;}
+th{background:var(--bleu); color:#fff; font-weight:700; text-align:left; padding:1.8pt 4pt; font-size:7.2pt;}
+td{border:.6pt solid var(--gris-clair); padding:1.8pt 4pt; vertical-align:top;}
+tr{break-inside:avoid;}
+table.var td{text-align:center; font-size:8pt;}
+table.var td.lab{text-align:left; font-weight:700; color:var(--bleu-fonce); background:var(--bleu-pale);}
+
+/* ----------------------------- PIEGES ----------------------------- */
+table.pieges th:first-child{width:44%;}
+table.pieges td:first-child{color:var(--rouge); background:#FDF1F0;}
+.x{font-weight:700;}
+.v{color:var(--vert-fonce); font-weight:700;}
+
+/* ---------------------------- RECAP ------------------------------- */
+ol.recap{margin:0; padding-left:0; list-style:none; counter-reset:r;}
+ol.recap li{
+  counter-increment:r; position:relative; padding-left:13pt; margin-bottom:1.8pt;
+  break-inside:avoid;
+}
+ol.recap li::before{
+  content:counter(r); position:absolute; left:0; top:.3pt;
+  width:10pt; height:10pt; border-radius:50%; background:var(--vert); color:#fff;
+  font-size:6.6pt; font-weight:700; text-align:center; line-height:10pt;
+}
+
+/* --------------------------- MATHS -------------------------------- */
+.m{font-family:Cambria,Georgia,"Times New Roman",serif;}
+i,var{font-family:Cambria,Georgia,"Times New Roman",serif; font-style:italic;}
+.op{font-family:Cambria,Georgia,"Times New Roman",serif; font-style:normal;}
+.f{display:inline-block; vertical-align:middle; text-align:center;
+   margin:0 .12em; line-height:1.06; font-family:Cambria,Georgia,"Times New Roman",serif;}
+.f>span{display:block; padding:0 .2em;}
+.f>span:first-child{border-bottom:.6pt solid currentColor; padding-bottom:.08em;}
+.f>span:last-child{padding-top:.04em;}
+.rad{border-top:.6pt solid currentColor; padding-top:.12em;}
+/* line-height:0 evite que l'exposant n'ecarte les lignes ; position:relative le
+   repositionne sans qu'il heurte la barre de fraction ni le trait du radical. */
+sup,sub{font-size:.68em; line-height:0; position:relative; vertical-align:baseline;}
+sup{top:-.42em;}
+sub{bottom:-.22em;}
+.pt{white-space:nowrap;}
+/* Les fleches n'ont qu'un glyphe atrophie dans la fonte serif : on les force
+   en sans-serif, ou elles sont franches meme a 8 pt. */
+.ar{font-family:"Segoe UI",Calibri,Arial,"DejaVu Sans",sans-serif; font-style:normal;}
+
+/* ------------------- PIEGES : blocs erreur / correction ------------- */
+.pg{font-size:8.1pt; border-left:2.4pt solid var(--rouge); background:#FDF1F0; border-radius:1.5pt;
+    padding:2pt 5pt; margin:0 0 2.8pt; break-inside:avoid; page-break-inside:avoid;}
+.pg .err{color:var(--rouge); font-weight:600;}
+.pg .cor{color:#1B1B1B; margin-top:.8pt;}
+.pg .cor b{color:var(--bleu-fonce);}
+.v{color:var(--vert-fonce); font-weight:700;}
+
+</style>
+</head>
+<body>
+<header class="entete">
+  <div class="num">3</div>
+  <div class="txt">
+    <div class="niveau">4EME &middot; MATHEMATIQUES</div>
+    <h1>Repérage sur une droite</h1>
+    <div class="sous">Leçon 1 : l'abscisse d'un point sur une droite graduée &middot; Leçon 2 : la distance de deux points &middot; Leçon 3 : l'abscisse du milieu d'un segment</div>
+  </div>
+</header>
+
+<div class="bandeau bleu" style="margin-top:0">L'ESSENTIEL</div>
+<div class="cols">
+
+<!-- ================= LECON 1 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 1&nbsp;: L'abscisse d'un point sur une droite graduée</h2>
+<p>Une <b>droite graduée</b> est une droite munie de <b>trois</b> éléments : une <b>origine</b> O, un <b>sens</b> positif indiqué par une flèche, et une <b>unité</b> de longueur.</p></div>
+<div class="form">
+  <span class="t">ABSCISSE D'UN POINT</span>
+  <div class="c m">chaque point M porte un <b>unique</b> nombre relatif <i>x</i> : on note <span class="pt">M(<i>x</i>)</span></div>
+  <div class="c m"><b>correspondance parfaite</b> : à chaque point un seul nombre, à chaque nombre un seul point</div>
+</div>
+<ul>
+<li><b>Le signe donne le côté.</b> L'origine O a pour abscisse <b>0</b> ; un point situé à <b>droite</b> de O a une abscisse <b>positive</b>, un point situé à <b>gauche</b> une abscisse <b>négative</b>.</li>
+<li>Une abscisse <b>n'est pas toujours entière</b> : elle peut être <b>décimale</b>, comme 1,5, ou <b>fractionnaire</b>, comme <span class="f"><span>7</span><span>4</span></span>.</li>
+</ul>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Placer un point d'abscisse fractionnaire</h3>
+<p>On cherche d'abord <b>entre quelles graduations</b> tombe le point, puis on <b>partage</b> la dernière unité.</p>
+<ul>
+<li><span class="pt">C(<span class="f"><span>7</span><span>4</span></span>)</span> : <span class="f"><span>4</span><span>4</span></span>&#8239;=&#8239;1 et <span class="f"><span>8</span><span>4</span></span>&#8239;=&#8239;2, donc C est entre 1 et 2 ; comme <span class="f"><span>7</span><span>4</span></span>&#8239;=&#8239;1&#8239;+&#8239;<span class="f"><span>3</span><span>4</span></span>, on partage l'unité de 1 à 2 en <b>quatre</b> parts et on avance de <b>trois</b> parts.</li>
+<li>Même méthode pour les négatifs : <span class="pt">D(&#8722;<span class="f"><span>5</span><span>2</span></span>)</span> se lit &#8722;2&#8239;&#8722;&#8239;<span class="f"><span>1</span><span>2</span></span>, donc D est à mi-chemin entre &#8722;2 et &#8722;3.</li>
+</ul>
+<h3 class="rub">Comparer deux abscisses</h3>
+<p>De deux points, celui qui est le <b>plus à droite</b> a la <b>plus grande</b> abscisse. Donc &#8722;5&#8239;&lt;&#8239;&#8722;3, car &#8722;5 est plus à gauche ; et tout nombre <b>négatif</b> est inférieur à tout nombre <b>positif</b>.</p>
+<div class="form">
+  <span class="t">METHODE&nbsp;: PLACER UN POINT</span>
+  <div class="c m">repérer O et l'unité &#8226; lire le <b>signe</b> : + à droite, &#8722; à gauche &#8226; compter les unités, partager la dernière &#8226; nommer <span class="pt">A(+2)</span></div>
+</div>
+</div>
+
+<!-- ================= LECON 2 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 2&nbsp;: La distance de deux points</h2>
+<p>La <b>distance</b> de deux points A et B d'une droite graduée est la <b>valeur absolue de la différence</b> de leurs abscisses.</p></div>
+<div class="form">
+  <span class="t">DISTANCE DE DEUX POINTS</span>
+  <div class="c m"><i>AB</i>&#8239;=&#8239;|<i>x</i><sub>A</sub>&#8239;&#8722;&#8239;<i>x</i><sub>B</sub>|&#8239;=&#8239;|<i>x</i><sub>B</sub>&#8239;&#8722;&#8239;<i>x</i><sub>A</sub>| &nbsp;&nbsp; <i>OA</i>&#8239;=&#8239;|<i>x</i><sub>A</sub>|</div>
+</div>
+<ul>
+<li>Une distance <b>n'a pas de signe</b> : elle est toujours <b>positive ou nulle</b>. On a <i>AB</i>&#8239;=&#8239;<i>BA</i>, et <i>AB</i>&#8239;=&#8239;0 seulement si A et B sont <b>confondus</b>. La valeur absolue traduit qu'une longueur se mesure <b>sans se soucier du sens</b> du parcours.</li>
+<li>La formule vaut <b>quels que soient les signes</b> : A(3) et B(8) donnent <span class="pt">|3&#8239;&#8722;&#8239;8|&#8239;=&#8239;5</span> ; A(&#8722;3) et B(5), de part et d'autre de O, donnent <span class="pt">|&#8722;3&#8239;&#8722;&#8239;5|&#8239;=&#8239;8</span>, soit 3 unités à gauche <b>plus</b> 5 à droite.</li>
+</ul>
+<div class="form">
+  <span class="t">METHODE&nbsp;: CALCULER UNE DISTANCE</span>
+  <div class="c m">écrire <i>x</i><sub>A</sub> et <i>x</i><sub>B</sub> <b>avec leur signe</b> &#8226; calculer <span class="pt"><i>x</i><sub>A</sub>&#8239;&#8722;&#8239;<i>x</i><sub>B</sub></span> &#8226; prendre la <b>valeur absolue</b> &#8226; contrôler sur un schéma</div>
+</div>
+</div>
+
+<!-- ================= LECON 3 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 3&nbsp;: L'abscisse du milieu d'un segment</h2>
+<p>Le <b>milieu</b> M d'un segment [AB] est le point situé <b>à égale distance</b> de A et de B : <i>MA</i>&#8239;=&#8239;<i>MB</i>. Un segment n'a qu'<b>un seul</b> milieu.</p></div>
+<div class="form">
+  <span class="t">ABSCISSE DU MILIEU&nbsp;: LA DEMI-SOMME</span>
+  <div class="c m"><i>x</i><sub>M</sub>&#8239;=&#8239;<span class="f"><span><i>x</i><sub>A</sub>&#8239;+&#8239;<i>x</i><sub>B</sub></span><span>2</span></span> &nbsp;&nbsp; et donc &nbsp; <i>x</i><sub>B</sub>&#8239;=&#8239;2&#8239;<i>x</i><sub>M</sub>&#8239;&#8722;&#8239;<i>x</i><sub>A</sub></div>
+</div>
+<ul>
+<li>L'abscisse du milieu est la <b>moyenne</b> des abscisses : le milieu est le <b>point d'équilibre</b> du segment, autant en dessous de la plus grande abscisse qu'au-dessus de la plus petite.</li>
+<li>Le milieu peut avoir une abscisse <b>négative</b> ou <b>décimale</b>, même si les extrémités sont entières : la demi-somme de 3 et de 4 vaut 3,5.</li>
+<li><b>Retrouver une extrémité</b> connaissant l'autre et le milieu : compléter l'égalité <span class="pt"><i>x</i><sub>M</sub>&#8239;=&#8239;<span class="f"><span><i>x</i><sub>A</sub>&#8239;+&#8239;<i>x</i><sub>B</sub></span><span>2</span></span></span>, ou aller plus vite avec la <b>formule dérivée</b>.</li>
+</ul>
+<div class="form">
+  <span class="t">METHODE&nbsp;: ABSCISSE DU MILIEU</span>
+  <div class="c m">écrire <i>x</i><sub>A</sub> et <i>x</i><sub>B</sub> avec leur signe &#8226; <b>additionner</b> &#8226; diviser par 2 &#8226; vérifier que <i>MA</i>&#8239;=&#8239;<i>MB</i></div>
+</div>
+</div>
+
+</div>
+
+<div class="bandeau vert">PIEGES ET ERREURS FREQUENTES</div>
+<div class="cols">
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> « Le point est à 3 unités de O, donc son abscisse est 3. »</div><div class="cor"><span class="v">&#10003;</span> L'abscisse porte un <b>signe</b> : à 3 unités de O se trouvent <b>deux</b> points, A(+3) à droite <b>et</b> B(&#8722;3) à gauche. Précise toujours le signe.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> &#8722;5&#8239;&gt;&#8239;&#8722;3 &nbsp;&middot;&nbsp; « parce que 5 est plus grand que 3 »</div><div class="cor"><span class="v">&#10003;</span> Sur la droite graduée, &#8722;5 est plus <b>à gauche</b> que &#8722;3 : il est donc plus <b>petit</b>, &#8722;5&#8239;&lt;&#8239;&#8722;3. Le point le plus à droite a la plus grande abscisse.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> A(&#8722;3) et B(5) : <i>AB</i>&#8239;=&#8239;&#8722;8 &nbsp;&middot;&nbsp; &#8722;6&#8239;&#8722;&#8239;(&#8722;1)&#8239;=&#8239;&#8722;7</div><div class="cor"><span class="v">&#10003;</span> Ne confonds pas la <b>distance</b>, toujours positive ou nulle, avec la <b>différence</b> des abscisses, qui peut être négative : <span class="pt"><i>x</i><sub>A</sub>&#8239;&#8722;&#8239;<i>x</i><sub>B</sub>&#8239;=&#8239;&#8722;8</span>, mais <i>AB</i>&#8239;=&#8239;|&#8722;8|&#8239;=&#8239;8. <b>N'oublie jamais la valeur absolue.</b> Et soustraire un négatif revient à <b>ajouter son opposé</b> : &#8722;6&#8239;&#8722;&#8239;(&#8722;1)&#8239;=&#8239;&#8722;6&#8239;+&#8239;1&#8239;=&#8239;&#8722;5.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> <i>x</i><sub>M</sub>&#8239;=&#8239;<span class="f"><span>|<i>x</i><sub>A</sub>&#8239;+&#8239;<i>x</i><sub>B</sub>|</span><span>2</span></span> &nbsp;&middot;&nbsp; <i>x</i><sub>M</sub>&#8239;=&#8239;<span class="f"><span><i>x</i><sub>A</sub>&#8239;&#8722;&#8239;<i>x</i><sub>B</sub></span><span>2</span></span></div><div class="cor"><span class="v">&#10003;</span> Pour le milieu on <b>additionne</b>, puis on divise par 2, <b>sans</b> valeur absolue. La <b>demi-somme</b> donne le milieu ; la <b>demi-différence</b> donne la moitié de la distance. Le milieu peut très bien être négatif.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> <span class="f"><span>7</span><span>4</span></span> se place entre 0 et 1 &nbsp;&middot;&nbsp; &#8722;<span class="f"><span>5</span><span>2</span></span> entre &#8722;2 et &#8722;1</div><div class="cor"><span class="v">&#10003;</span> On <b>encadre</b> d'abord : <span class="f"><span>4</span><span>4</span></span>&#8239;=&#8239;1 et <span class="f"><span>8</span><span>4</span></span>&#8239;=&#8239;2, donc <span class="f"><span>7</span><span>4</span></span> est entre <b>1 et 2</b>. Et &#8722;<span class="f"><span>5</span><span>2</span></span>&#8239;=&#8239;&#8722;2&#8239;&#8722;&#8239;<span class="f"><span>1</span><span>2</span></span> : pour un négatif, la partie fractionnaire s'ajoute <b>vers la gauche</b>, donc entre &#8722;2 et &#8722;3.</div></div>
+
+</div>
+
+<div class="bandeau bleu">A SAVOIR PAR COEUR AVANT LE DEVOIR</div>
+<div class="cols">
+<ol class="recap">
+<li><b>Droite graduée</b> : une <b>origine</b> O, un <b>sens</b> positif, une <b>unité</b>. Chaque point M porte une unique abscisse <i>x</i>, notée M(<i>x</i>).</li>
+<li>Le <b>signe donne le côté</b> : O a pour abscisse 0, positif à droite de O, négatif à gauche. Une abscisse peut être entière, <b>décimale</b> ou <b>fractionnaire</b>.</li>
+<li><b>Comparer</b> : le point le plus à droite a la plus grande abscisse. Donc &#8722;5&#8239;&lt;&#8239;&#8722;3, et tout négatif est inférieur à tout positif.</li>
+<li>Placer <span class="f"><span>7</span><span>4</span></span> : <b>encadrer</b> (1&#8239;&lt;&#8239;<span class="f"><span>7</span><span>4</span></span>&#8239;&lt;&#8239;2), écrire 1&#8239;+&#8239;<span class="f"><span>3</span><span>4</span></span>, <b>partager</b> l'unité en 4 parts et avancer de 3.</li>
+<li><b>Distance</b> : <i>AB</i>&#8239;=&#8239;|<i>x</i><sub>A</sub>&#8239;&#8722;&#8239;<i>x</i><sub>B</sub>|&#8239;=&#8239;|<i>x</i><sub>B</sub>&#8239;&#8722;&#8239;<i>x</i><sub>A</sub>|, toujours <b>positive ou nulle</b>, avec <i>AB</i>&#8239;=&#8239;<i>BA</i> et <i>AB</i>&#8239;=&#8239;0 seulement si A et B sont confondus ; <i>OA</i>&#8239;=&#8239;|<i>x</i><sub>A</sub>|.</li>
+<li><b>Milieu</b> de [AB] : <i>MA</i>&#8239;=&#8239;<i>MB</i> et <i>x</i><sub>M</sub>&#8239;=&#8239;<span class="f"><span><i>x</i><sub>A</sub>&#8239;+&#8239;<i>x</i><sub>B</sub></span><span>2</span></span>, la <b>demi-somme</b>. <b>Extrémité manquante</b> : <i>x</i><sub>B</sub>&#8239;=&#8239;2&#8239;<i>x</i><sub>M</sub>&#8239;&#8722;&#8239;<i>x</i><sub>A</sub>.</li>
+</ol>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Fiche de revision - 1ere D - Chapitre 6 : Les fonctions numeriques (generalites)</title>
+<style>
+/* ===================================================================
+   FICHE DE REVISION, Collection Hakili Lab, Edition 2026
+   Feuille de style autonome, format A4 pret a imprimer.
+   Bleu #005CB9 · Vert #49A145
+   =================================================================== */
+:root{
+  --bleu:#005CB9; --bleu-fonce:#00429A; --bleu-pale:#E8F1FB; --bleu-bord:#B7D2EE;
+  --vert:#49A145; --vert-fonce:#2F7A2C; --vert-pale:#EDF7EC; --vert-bord:#BCE0B9;
+  --gris:#4A4A4A; --gris-clair:#E4E4E4; --rouge:#B3261E;
+}
+@page{
+  size:A4; margin:15mm;
+  @bottom-center{
+    content:"Collection Hakili Lab, Edition 2026  ·  Fiche de revision  ·  " counter(page) "/" counter(pages);
+    font-family:"Segoe UI",Calibri,Arial,sans-serif; font-size:6.6pt; color:#8A8A8A;
+  }
+}
+*{box-sizing:border-box;}
+body{
+  margin:0; font-family:"Segoe UI",Calibri,Arial,sans-serif;
+  font-size:8.4pt; line-height:1.26; color:#1B1B1B;
+}
+p{margin:0 0 3pt;}
+ul{margin:0 0 3pt; padding-left:11pt;}
+li{margin:0 0 1.2pt;}
+b,strong{color:var(--bleu-fonce);}
+
+/* ------------------------------ ENTETE ---------------------------- */
+.entete{
+  display:flex; align-items:stretch; border:1.6pt solid var(--bleu);
+  border-radius:2.5pt; overflow:hidden; margin-bottom:6pt;
+}
+.entete .num{
+  background:var(--bleu); color:#fff; font-size:20pt; font-weight:700;
+  padding:0 8pt; display:flex; align-items:center; justify-content:center; min-width:34pt;
+}
+.entete .txt{padding:3.5pt 8pt; flex:1;}
+.entete .niveau{
+  font-size:7pt; font-weight:700; letter-spacing:.9pt; color:var(--vert-fonce);
+}
+.entete h1{margin:0; font-size:13.5pt; line-height:1.12; color:var(--bleu-fonce); font-weight:700;}
+.entete .sous{font-size:7pt; color:var(--gris); margin-top:1pt;}
+
+/* --------------------------- BANDEAUX ----------------------------- */
+.bandeau{
+  color:#fff; font-weight:700; font-size:9pt; letter-spacing:1pt;
+  padding:2.4pt 7pt; border-radius:2pt; margin:3pt 0 4pt; break-after:avoid; page-break-after:avoid;
+}
+.bandeau.bleu{background:var(--bleu);}
+.bandeau.vert{background:var(--vert);}
+
+/* --------------------------- COLONNES ----------------------------- */
+.cols{column-count:2; column-gap:7mm; column-fill:balance;}
+
+.cols.bal{column-fill:balance;}
+.bloc{margin-bottom:5pt;}
+.keep{break-inside:avoid; page-break-inside:avoid;}
+
+/* --------------------------- LECONS ------------------------------- */
+h2.lecon{
+  margin:0 0 3pt; font-size:8.6pt; font-weight:700; color:#fff; background:var(--bleu-fonce);
+  padding:1.8pt 5pt; border-radius:1.5pt; break-after:avoid; page-break-after:avoid;
+}
+h3.rub{
+  margin:3.5pt 0 1.5pt; font-size:8.2pt; font-weight:700; color:var(--vert-fonce);
+  border-bottom:.7pt solid var(--vert-bord); padding-bottom:.8pt;
+  break-after:avoid; page-break-after:avoid;
+}
+
+/* --------------------------- ENCADRES ----------------------------- */
+.form{
+  background:var(--bleu-pale); border:.8pt solid var(--bleu-bord); border-left:2.6pt solid var(--bleu);
+  border-radius:2pt; padding:2.4pt 5pt; margin:2.2pt 0 3.4pt;
+  break-inside:avoid; page-break-inside:avoid;
+}
+.form .t{
+  display:block; font-size:6.8pt; font-weight:700; letter-spacing:.6pt;
+  color:var(--bleu); margin-bottom:1.5pt;
+}
+.form .c{text-align:center; font-size:9.1pt; margin:1.6pt 0;}
+.note{background:var(--vert-pale); border-left:2.4pt solid var(--vert); padding:2.4pt 5pt; border-radius:1.5pt; margin:2.5pt 0 4pt; break-inside:avoid;}
+
+/* --------------------------- TABLEAUX ----------------------------- */
+table{width:100%; border-collapse:collapse; font-size:7.6pt; margin:2pt 0 4pt; break-inside:avoid;}
+th{background:var(--bleu); color:#fff; font-weight:700; text-align:left; padding:1.8pt 4pt; font-size:7.2pt;}
+td{border:.6pt solid var(--gris-clair); padding:1.8pt 4pt; vertical-align:top;}
+tr{break-inside:avoid;}
+table.var td{text-align:center; font-size:8pt;}
+table.var td.lab{text-align:left; font-weight:700; color:var(--bleu-fonce); background:var(--bleu-pale);}
+
+/* ----------------------------- PIEGES ----------------------------- */
+table.pieges th:first-child{width:44%;}
+table.pieges td:first-child{color:var(--rouge); background:#FDF1F0;}
+.x{font-weight:700;}
+.v{color:var(--vert-fonce); font-weight:700;}
+
+/* ---------------------------- RECAP ------------------------------- */
+ol.recap{margin:0; padding-left:0; list-style:none; counter-reset:r;}
+ol.recap li{
+  counter-increment:r; position:relative; padding-left:13pt; margin-bottom:1.8pt;
+  break-inside:avoid;
+}
+ol.recap li::before{
+  content:counter(r); position:absolute; left:0; top:.3pt;
+  width:10pt; height:10pt; border-radius:50%; background:var(--vert); color:#fff;
+  font-size:6.6pt; font-weight:700; text-align:center; line-height:10pt;
+}
+
+/* --------------------------- MATHS -------------------------------- */
+.m{font-family:Cambria,Georgia,"Times New Roman",serif;}
+i,var{font-family:Cambria,Georgia,"Times New Roman",serif; font-style:italic;}
+.op{font-family:Cambria,Georgia,"Times New Roman",serif; font-style:normal;}
+.f{display:inline-block; vertical-align:middle; text-align:center;
+   margin:0 .12em; line-height:1.06; font-family:Cambria,Georgia,"Times New Roman",serif;}
+.f>span{display:block; padding:0 .2em;}
+.f>span:first-child{border-bottom:.6pt solid currentColor; padding-bottom:.08em;}
+.f>span:last-child{padding-top:.04em;}
+.rad{border-top:.6pt solid currentColor; padding-top:.12em;}
+/* line-height:0 evite que l'exposant n'ecarte les lignes ; position:relative le
+   repositionne sans qu'il heurte la barre de fraction ni le trait du radical. */
+sup,sub{font-size:.68em; line-height:0; position:relative; vertical-align:baseline;}
+sup{top:-.42em;}
+sub{bottom:-.22em;}
+.pt{white-space:nowrap;}
+/* Les fleches n'ont qu'un glyphe atrophie dans la fonte serif : on les force
+   en sans-serif, ou elles sont franches meme a 8 pt. */
+.ar{font-family:"Segoe UI",Calibri,Arial,"DejaVu Sans",sans-serif; font-style:normal;}
+
+/* ------------------- PIEGES : blocs erreur / correction ------------- */
+.pg{font-size:8.1pt; border-left:2.4pt solid var(--rouge); background:#FDF1F0; border-radius:1.5pt;
+    padding:2pt 5pt; margin:0 0 2.8pt; break-inside:avoid; page-break-inside:avoid;}
+.pg .err{color:var(--rouge); font-weight:600;}
+.pg .cor{color:#1B1B1B; margin-top:.8pt;}
+.pg .cor b{color:var(--bleu-fonce);}
+.v{color:var(--vert-fonce); font-weight:700;}
+
+</style>
+</head>
+<body>
+<header class="entete">
+  <div class="num">6</div>
+  <div class="txt">
+    <div class="niveau">1ERE D &middot; MATHEMATIQUES</div>
+    <h1>Les fonctions numériques (généralités)</h1>
+    <div class="sous">Leçon 1 : opérations sur les fonctions &middot; Leçon 2 : composition et restriction &middot; Leçon 3 : comparaison de fonctions &middot; Leçon 4 : sens de variation d'une fonction composée</div>
+  </div>
+</header>
+
+<div class="bandeau bleu" style="margin-top:0">L'ESSENTIEL</div>
+<div class="cols">
+
+<!-- ================= LECON 1 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 1&nbsp;: Opérations sur les fonctions</h2>
+<div class="form">
+  <span class="t">EGALITE DE DEUX FONCTIONS</span>
+  <div class="c m"><i>f</i>&#8239;=&#8239;<i>g</i>&nbsp;<span class="ar">&#8660;</span>&nbsp;<i>D<sub>f</sub></i>&#8239;=&#8239;<i>D<sub>g</sub></i> &nbsp;<b>et</b>&nbsp; <i>f</i>(<i>x</i>)&#8239;=&#8239;<i>g</i>(<i>x</i>) pour tout <i>x</i></div>
+</div></div>
+<ul>
+<li>Les <b>deux</b> conditions sont exigées : <b>même ensemble de définition</b>, puis mêmes valeurs sur cet ensemble commun.</li>
+<li>Si les valeurs coïncident seulement sur une partie <i>E</i> de &#8477;, <i>f</i> et <i>g</i> <b>coïncident sur <i>E</i></b> sans être égales : <span class="pt"><i>x</i>&#8239;<span class="ar">&#8614;</span>&#8239;<span class="f"><span><i>x</i><sup>2</sup>&#8239;+&#8239;<i>x</i></span><span><i>x</i></span></span></span> et <span class="pt"><i>x</i>&#8239;<span class="ar">&#8614;</span>&#8239;<i>x</i>&#8239;+&#8239;1</span> coïncident sur &#8477;<sup>*</sup>, mais la première n'accepte pas 0.</li>
+<li><b>Règle de conduite</b> : écrire l'ensemble de définition <b>avant</b> toute simplification.</li>
+</ul>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Opérations et ensembles de définition</h3>
+<div class="form">
+  <span class="t">POINT PAR POINT&nbsp;: &#955; REEL</span>
+  <div class="c m">(&#955;<i>f</i>)(<i>x</i>)&#8239;=&#8239;&#955;&#8239;<i>f</i>(<i>x</i>) &nbsp; (<i>f</i>&#8239;&#177;&#8239;<i>g</i>)(<i>x</i>)&#8239;=&#8239;<i>f</i>(<i>x</i>)&#8239;&#177;&#8239;<i>g</i>(<i>x</i>) &nbsp; (<i>fg</i>)(<i>x</i>)&#8239;=&#8239;<i>f</i>(<i>x</i>)&#8239;<i>g</i>(<i>x</i>) &nbsp; <span class="pt">&#40;<i>f</i>&#8239;/&#8239;<i>g</i>&#41;(<i>x</i>)&#8239;=&#8239;<span class="f"><span><i>f</i>(<i>x</i>)</span><span><i>g</i>(<i>x</i>)</span></span></span></div>
+  <div class="c m"><i>D</i><sub>&#955;<i>f</i></sub>&#8239;=&#8239;<i>D<sub>f</sub></i> &nbsp;&nbsp; <i>D</i><sub><i>f</i>+<i>g</i></sub>&#8239;=&#8239;<i>D</i><sub><i>f</i>&#8722;<i>g</i></sub>&#8239;=&#8239;<i>D</i><sub><i>fg</i></sub>&#8239;=&#8239;<i>D<sub>f</sub></i>&#8239;&#8745;&#8239;<i>D<sub>g</sub></i></div>
+  <div class="c m"><i>D</i><sub><i>f</i>/<i>g</i></sub>&#8239;=&#8239;&#123;<i>x</i>&#8239;&#8712;&#8239;<i>D<sub>f</sub></i>&#8239;&#8745;&#8239;<i>D<sub>g</sub></i> tels que <i>g</i>(<i>x</i>)&#8239;&#8800;&#8239;0&#125;</div>
+</div>
+<p>Ces règles se retrouvent en se demandant <b>ce qu'il faut pour écrire le calcul</b> : les deux images doivent exister, d'où l'intersection ; le quotient exige de plus le <b>droit de diviser</b>, d'où les <b>zéros de <i>g</i> retirés</b>. Et <span class="pt"><i>f</i>&#8239;&#8722;&#8239;<i>g</i>&#8239;=&#8239;<i>f</i>&#8239;+&#8239;(&#8722;1)<i>g</i></span> n'est pas une opération nouvelle.</p>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Déterminer un ensemble de définition</h3>
+<div class="form">
+  <span class="t">LES TROIS SOURCES D'INTERDICTION</span>
+  <div class="c m">dénominateur&#8239;&#8800;&#8239;0 &nbsp;&middot;&nbsp; quantité sous un radical&#8239;&#8805;&#8239;0</div>
+  <div class="c m">radical <b>au dénominateur</b> : quantité&#8239;&gt;&#8239;0 (strictement)</div>
+</div>
+<ul>
+<li>Traduire chaque interdiction en équation ou inéquation, <b>une contrainte à la fois</b> ; tableau de signes pour un produit ou un quotient. Le domaine est l'<b>intersection</b> des ensembles obtenus.</li>
+<li>Réponse en intervalles ou sous la forme <span class="pt">&#8477;&#8239;&#8726;&#8239;&#123;&#8230;&#125;</span>, contrôlée par une valeur interdite et une valeur autorisée.</li>
+</ul>
+</div>
+
+<!-- ================= LECON 2 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 2&nbsp;: Composition et restriction</h2>
+<div class="form">
+  <span class="t">COMPOSEE DE <i>f</i> SUIVIE DE <i>g</i></span>
+  <div class="c m">(<i>g</i>&#8728;<i>f</i>)(<i>x</i>)&#8239;=&#8239;<i>g</i>&#40;<i>f</i>(<i>x</i>)&#41;</div>
+  <div class="c m"><i>x</i>&#8239;&#8712;&#8239;<i>D</i><sub><i>g</i>&#8728;<i>f</i></sub>&nbsp;<span class="ar">&#8660;</span>&nbsp;<i>x</i>&#8239;&#8712;&#8239;<i>D<sub>f</sub></i> <b>et</b> <i>f</i>(<i>x</i>)&#8239;&#8712;&#8239;<i>D<sub>g</sub></i></div>
+</div></div>
+<ul>
+<li><i>f</i> agit <b>d'abord</b>, <i>g</i> <b>ensuite</b> : dans <span class="pt"><i>g</i>&#8728;<i>f</i></span>, la fonction écrite en <b>dernier</b> agit en premier ; lire de l'<b>intérieur vers l'extérieur</b>. <i>D</i><sub><i>g</i>&#8728;<i>f</i></sub> est presque toujours <b>plus petit</b> que <i>D<sub>f</sub></i>, la seconde fonction triant les nombres produits par la première.</li>
+<li><b>Méthode</b> : identifier l'<b>intérieure</b> <i>f</i> et l'<b>extérieure</b> <i>g</i> ; remplacer la variable de <i>g</i> par <i>f</i>(<i>x</i>) <b>tout entière, entre parenthèses</b> ; écrire les deux conditions d'existence, traduire la seconde en inéquation en <i>x</i>, résoudre, intersecter.</li>
+</ul>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Restriction</h3>
+<p>Pour <i>I</i> <b>inclus</b> dans <i>D<sub>f</sub></i>, la <b>restriction de <i>f</i> à <i>I</i></b> a pour ensemble de définition <i>I</i> et y prend les mêmes valeurs que <i>f</i> : <b>aucune valeur ne change</b>, seul l'ensemble de départ. Ce n'est donc pas <i>f</i> (sauf si <span class="pt"><i>I</i>&#8239;=&#8239;<i>D<sub>f</sub></i></span>), mais une fonction qui <b>coïncide</b> avec <i>f</i> sur <i>I</i>. Utilité : <span class="pt"><i>x</i>&#8239;<span class="ar">&#8614;</span>&#8239;<i>x</i><sup>2</sup></span> n'est pas monotone sur &#8477;, mais sa restriction à <span class="pt">[0&#8239;;&#8239;+&#8734;[</span> est strictement croissante.</p>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Parité</h3>
+<p><b>Ensemble symétrique par rapport à 0</b> : pour tout <i>x</i> de <i>D</i>, le nombre &#8722;<i>x</i> appartient aussi à <i>D</i>. C'est le cas de &#8477;, &#8477;<sup>*</sup>, <span class="pt">[&#8722;3&#8239;;&#8239;3]</span>, <span class="pt">&#8477;&#8239;&#8726;&#8239;&#123;&#8722;2&#8239;;&#8239;2&#125;</span> ; ce n'est pas le cas de <span class="pt">[0&#8239;;&#8239;+&#8734;[</span> ni de <span class="pt">&#8477;&#8239;&#8726;&#8239;&#123;1&#125;</span>.</p>
+<div class="form">
+  <span class="t">PARITE&nbsp;: <i>D<sub>f</sub></i> SYMETRIQUE PAR RAPPORT A 0</span>
+  <div class="c m"><i>f</i> <b>paire</b> : <i>f</i>(&#8722;<i>x</i>)&#8239;=&#8239;<i>f</i>(<i>x</i>) &nbsp;&nbsp;&middot;&nbsp;&nbsp; <i>f</i> <b>impaire</b> : <i>f</i>(&#8722;<i>x</i>)&#8239;=&#8239;&#8722;<i>f</i>(<i>x</i>) &nbsp;(pour tout <i>x</i> de <i>D<sub>f</sub></i>)</div>
+</div>
+<ul>
+<li>La symétrie du domaine se vérifie <b>en premier</b> : si &#8722;<i>x</i> n'est pas dans <i>D<sub>f</sub></i>, l'écriture <i>f</i>(&#8722;<i>x</i>) n'a aucun sens. Toute puissance d'exposant <b>pair</b> est paire, d'exposant <b>impair</b> est impaire ; un polynôme qui mélange les deux, comme <span class="pt"><i>x</i><sup>2</sup>&#8239;+&#8239;<i>x</i></span>, n'est en général ni l'un ni l'autre.</li>
+<li><b>Méthode</b> : calculer <i>f</i>(&#8722;<i>x</i>) en remplaçant <b>chaque</b> <i>x</i> par (&#8722;<i>x</i>), simplifier, comparer à <i>f</i>(<i>x</i>) et à &#8722;<i>f</i>(<i>x</i>). Un <b>contre-exemple numérique</b> suffit : si <i>f</i>(&#8722;1) n'est égal ni à <i>f</i>(1) ni à &#8722;<i>f</i>(1), la conclusion est acquise.</li>
+</ul>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Interprétation graphique et symétries</h3>
+<p>Repère <b>orthogonal</b> (O,&#8239;I,&#8239;J), (C) courbe de <i>f</i>. <i>f</i> <b>paire</b> si et seulement si (C) est symétrique par rapport à l'<b>axe des ordonnées</b> (O<i>J</i>) ; <i>f</i> <b>impaire</b> si et seulement si (C) est symétrique par rapport à l'<b>origine</b> O. On étudie alors <i>f</i> sur l'<b>ensemble d'étude</b> <span class="pt"><i>D<sub>f</sub></i>&#8239;&#8745;&#8239;[0&#8239;;&#8239;+&#8734;[</span>, puis on complète par la symétrie. Si <i>f</i> est impaire et définie en 0, alors <span class="pt"><i>f</i>(0)&#8239;=&#8239;0</span> : la courbe passe par l'origine.</p>
+<div class="form">
+  <span class="t">ELEMENTS DE SYMETRIE&nbsp;: POUR TOUT <i>x</i> DE <i>D<sub>f</sub></i>, 2<i>a</i>&#8239;&#8722;&#8239;<i>x</i> RESTE DANS <i>D<sub>f</sub></i></span>
+  <div class="c m">axe (&#916;) : <i>x</i>&#8239;=&#8239;<i>a</i> &nbsp;<span class="ar">&#8660;</span>&nbsp; <i>f</i>(2<i>a</i>&#8239;&#8722;&#8239;<i>x</i>)&#8239;=&#8239;<i>f</i>(<i>x</i>), soit <i>f</i>(<i>a</i>&#8239;+&#8239;<i>h</i>)&#8239;=&#8239;<i>f</i>(<i>a</i>&#8239;&#8722;&#8239;<i>h</i>)</div>
+  <div class="c m">centre &#937;(<i>a</i>&#8239;;&#8239;<i>b</i>) &nbsp;<span class="ar">&#8660;</span>&nbsp; <i>f</i>(2<i>a</i>&#8239;&#8722;&#8239;<i>x</i>)&#8239;+&#8239;<i>f</i>(<i>x</i>)&#8239;=&#8239;2<i>b</i>, soit <i>f</i>(<i>a</i>&#8239;+&#8239;<i>h</i>)&#8239;+&#8239;<i>f</i>(<i>a</i>&#8239;&#8722;&#8239;<i>h</i>)&#8239;=&#8239;2<i>b</i></div>
+</div>
+<p>La parité en est le <b>cas particulier</b> : <span class="pt"><i>a</i>&#8239;=&#8239;0</span> donne l'axe des ordonnées, <span class="pt"><i>a</i>&#8239;=&#8239;<i>b</i>&#8239;=&#8239;0</span> l'origine. <b>Méthode</b> : vérifier que <i>D<sub>f</sub></i> est symétrique par rapport à <i>a</i>, calculer <i>f</i>(2<i>a</i>&#8239;&#8722;&#8239;<i>x</i>) en <b>réduisant complètement</b>, comparer à <i>f</i>(<i>x</i>) pour un axe, former la somme pour un centre, conclure en toutes lettres.</p>
+</div>
+
+<!-- ================= LECON 3 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 3&nbsp;: Comparaison de fonctions</h2>
+<div class="form">
+  <span class="t">COMPARER, C'EST ETUDIER UN SIGNE&nbsp;: SUR UN INTERVALLE <i>K</i></span>
+  <div class="c m"><i>f</i>&#8239;&#8805;&#8239;<i>g</i> sur <i>K</i>&nbsp;<span class="ar">&#8660;</span>&nbsp;<i>f</i>(<i>x</i>)&#8239;&#8722;&#8239;<i>g</i>(<i>x</i>)&#8239;&#8805;&#8239;0 pour tout <i>x</i> de <i>K</i></div>
+</div></div>
+<ul>
+<li><span class="pt"><i>f</i>&#8239;&#8805;&#8239;0</span> sur <i>K</i> : la courbe est <b>au-dessus de l'axe des abscisses</b> (ou sur cet axe). <span class="pt"><i>f</i>&#8239;&#8805;&#8239;<i>g</i></span> sur <i>K</i> : la courbe de <i>f</i> est <b>au-dessus</b> de celle de <i>g</i> ; là où <span class="pt"><i>f</i>&#8239;&#8722;&#8239;<i>g</i></span> s'annule, les deux courbes se <b>touchent</b>.</li>
+<li><b>Méthode</b> : sur <span class="pt"><i>D<sub>f</sub></i>&#8239;&#8745;&#8239;<i>D<sub>g</sub></i></span> ou l'intervalle imposé, former <span class="pt"><i>d</i>(<i>x</i>)&#8239;=&#8239;<i>f</i>(<i>x</i>)&#8239;&#8722;&#8239;<i>g</i>(<i>x</i>)</span>, réduire, développer, <b>factoriser</b>, puis dresser le <b>tableau de signes</b> de <i>d</i> avec toutes les racines et valeurs interdites ; conclure en termes de courbes.</li>
+</ul>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Fonction majorée, minorée, bornée</h3>
+<div class="form">
+  <span class="t">SUR UN ENSEMBLE <i>K</i></span>
+  <div class="c m"><b>majorée</b> : il existe <i>M</i> tel que <i>f</i>(<i>x</i>)&#8239;&#8804;&#8239;<i>M</i> sur <i>K</i> &nbsp;&middot;&nbsp; <b>minorée</b> : il existe <i>m</i> tel que <i>f</i>(<i>x</i>)&#8239;&#8805;&#8239;<i>m</i> sur <i>K</i></div>
+  <div class="c m"><b>bornée</b> : <i>m</i>&#8239;&#8804;&#8239;<i>f</i>(<i>x</i>)&#8239;&#8804;&#8239;<i>M</i> pour tout <i>x</i> de <i>K</i></div>
+</div>
+<ul>
+<li><i>M</i> est un <b>majorant</b> : la courbe reste <b>sous</b> la droite <span class="pt"><i>y</i>&#8239;=&#8239;<i>M</i></span> ; <i>m</i> est un <b>minorant</b> : elle reste <b>au-dessus</b> de <span class="pt"><i>y</i>&#8239;=&#8239;<i>m</i></span>.</li>
+<li>Un majorant n'est <b>pas unique</b> (tout nombre plus grand convient) ni <b>forcément atteint</b> ; s'il est atteint, on l'appelle <b>maximum</b>.</li>
+<li><b>Méthode</b> : encadrer la <b>partie variable</b> (carré, valeur absolue, racine carrée sont positifs ou nuls), puis transformer l'encadrement pas à pas : ajouter conserve le sens, multiplier par un <b>négatif</b> le renverse, et passer à l'inverse le renverse aussi <b>si les deux membres sont strictement positifs</b>.</li>
+</ul>
+</div>
+
+<!-- ================= LECON 4 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 4&nbsp;: Sens de variation d'une fonction composée</h2>
+<ul>
+<li><i>f</i> <b>croissante</b> sur l'intervalle <i>I</i> : pour tous <i>a</i>, <i>b</i> de <i>I</i>, <span class="pt"><i>a</i>&#8239;&lt;&#8239;<i>b</i>&#8239;<span class="ar">&#8658;</span>&#8239;<i>f</i>(<i>a</i>)&#8239;&#8804;&#8239;<i>f</i>(<i>b</i>)</span> (l'ordre est <b>conservé</b>).</li>
+<li><i>f</i> <b>décroissante</b> sur <i>I</i> : <span class="pt"><i>a</i>&#8239;&lt;&#8239;<i>b</i>&#8239;<span class="ar">&#8658;</span>&#8239;<i>f</i>(<i>a</i>)&#8239;&#8805;&#8239;<i>f</i>(<i>b</i>)</span> (l'ordre est <b>renversé</b>). <i>f</i> <b>monotone</b> sur <i>I</i> : croissante sur <i>I</i> ou décroissante sur <i>I</i>.</li>
+</ul></div>
+<div class="form">
+  <span class="t">TAUX D'ACCROISSEMENT&nbsp;: <i>x</i><sub>1</sub> ET <i>x</i><sub>2</sub> DISTINCTS DANS <i>I</i></span>
+  <div class="c m"><i>T</i>&#8239;=&#8239;<span class="f"><span><i>f</i>(<i>x</i><sub>2</sub>)&#8239;&#8722;&#8239;<i>f</i>(<i>x</i><sub>1</sub>)</span><span><i>x</i><sub>2</sub>&#8239;&#8722;&#8239;<i>x</i><sub>1</sub></span></span> &nbsp;&nbsp; croissante&nbsp;<span class="ar">&#8660;</span>&nbsp;<i>T</i>&#8239;&#8805;&#8239;0 &nbsp;&middot;&nbsp; décroissante&nbsp;<span class="ar">&#8660;</span>&nbsp;<i>T</i>&#8239;&#8804;&#8239;0</div>
+</div>
+<p><b>Méthode</b> : prendre <i>x</i><sub>1</sub> et <i>x</i><sub>2</sub> <b>distincts quelconques</b> dans <i>I</i>, <b>factoriser</b> <span class="pt"><i>f</i>(<i>x</i><sub>2</sub>)&#8239;&#8722;&#8239;<i>f</i>(<i>x</i><sub>1</sub>)</span> par <span class="pt"><i>x</i><sub>2</sub>&#8239;&#8722;&#8239;<i>x</i><sub>1</sub></span>, simplifier, puis déterminer le <b>signe</b> de <i>T</i> sur <i>I</i>.</p>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Tableau de variation</h3>
+<ul>
+<li><b>Première ligne</b> : les valeurs de <i>x</i> dans l'ordre croissant, avec celles où le sens change et les <b>valeurs interdites</b>, marquées d'une <b>double barre</b> : décroissante sur deux intervalles séparés par une valeur interdite ne veut <b>pas</b> dire décroissante sur leur réunion.</li>
+<li><b>Seconde ligne</b> : <b><span class="ar">&#8599;</span></b> sur chaque intervalle de croissance, <b><span class="ar">&#8600;</span></b> sur chaque intervalle de décroissance, avec les <b>valeurs</b> de <i>f</i> aux extrémités des flèches. <b>Maximum</b> au sommet d'une montante suivie d'une descendante, <b>minimum</b> au creux d'une descendante suivie d'une montante.</li>
+</ul>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Variation d'une composée</h3>
+<div class="form">
+  <span class="t">REGLE DES SIGNES&nbsp;: <i>f</i> MONOTONE SUR <i>I</i>, A VALEURS DANS <i>J</i>, <i>g</i> MONOTONE SUR <i>J</i></span>
+  <div class="c m"><b>même sens</b> <span class="ar">&#8594;</span> <i>g</i>&#8728;<i>f</i> <b>croissante</b> sur <i>I</i> &nbsp;&middot;&nbsp; <b>sens contraires</b> <span class="ar">&#8594;</span> <i>g</i>&#8728;<i>f</i> <b>décroissante</b> sur <i>I</i></div>
+  <div class="c m">+ pour « croissante », &#8722; pour « décroissante » : règle des signes de la multiplication</div>
+</div>
+<ul>
+<li>« A valeurs dans <i>J</i> » n'est pas une formalité : <i>g</i> doit être monotone <b>sur tout l'intervalle où arrivent les images de <i>f</i></b>. Pour <span class="pt"><i>x</i>&#8239;<span class="ar">&#8614;</span>&#8239;(2<i>x</i>&#8239;&#8722;&#8239;1)<sup>2</sup></span> sur <span class="pt">[<span class="f"><span>1</span><span>2</span></span>&#8239;;&#8239;+&#8734;[</span>, vérifier que <span class="pt">2<i>x</i>&#8239;&#8722;&#8239;1</span> reste positif, car <span class="pt"><i>x</i>&#8239;<span class="ar">&#8614;</span>&#8239;<i>x</i><sup>2</sup></span> n'est croissante que sur <span class="pt">[0&#8239;;&#8239;+&#8734;[</span>.</li>
+<li><b>Méthode</b> : décomposer (intérieure <i>f</i>, extérieure <i>g</i>) ; sens de <i>f</i> sur <i>I</i> et <b>intervalle image</b> <i>J</i> ; sens de <i>g</i> sur <b>cet</b> intervalle <i>J</i> ; appliquer la règle ; conclure en nommant l'intervalle.</li>
+</ul>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Fonctions associées (repère orthogonal)</h3>
+<table>
+<tr><th>Fonction</th><th>Courbe déduite de (C) et variations</th></tr>
+<tr><td class="m"><i>x</i>&#8239;<span class="ar">&#8614;</span>&#8239;<i>f</i>(<i>x</i>)&#8239;+&#8239;&#955;</td><td>translation <b>verticale</b> de vecteur <span class="pt">&#955;&#8239;<span style="border-top:.6pt solid;padding-top:.5pt"><i>j</i></span></span>, vers le haut si &#955;&#8239;&gt;&#8239;0 ; variations <b>inchangées</b>.</td></tr>
+<tr><td class="m"><i>x</i>&#8239;<span class="ar">&#8614;</span>&#8239;<i>f</i>(<i>x</i>&#8239;&#8722;&#8239;&#955;)</td><td>translation <b>horizontale</b> de vecteur <span class="pt">&#955;&#8239;<span style="border-top:.6pt solid;padding-top:.5pt"><i>i</i></span></span>, vers la droite si &#955;&#8239;&gt;&#8239;0 ; variations <b>inchangées</b>, intervalles décalés de &#955;.</td></tr>
+<tr><td class="m"><i>x</i>&#8239;<span class="ar">&#8614;</span>&#8239;&#955;&#8239;<i>f</i>(<i>x</i>)</td><td>toutes les <b>ordonnées</b> multipliées par &#955; ; variations inchangées si &#955;&#8239;&gt;&#8239;0, <b>renversées</b> si &#955;&#8239;&lt;&#8239;0.</td></tr>
+<tr><td class="m"><i>x</i>&#8239;<span class="ar">&#8614;</span>&#8239;&#8722;<i>f</i>(<i>x</i>) &nbsp;et&nbsp; <i>x</i>&#8239;<span class="ar">&#8614;</span>&#8239;<i>f</i>(&#8722;<i>x</i>)</td><td>symétriques de (C) par rapport à l'<b>axe des abscisses</b> et à l'<b>axe des ordonnées</b> ; variations <b>renversées</b>, intervalles symétriques dans le second cas.</td></tr>
+</table>
+<p><b>Méthode</b> : recopier la ligne des <i>x</i> (la transformer pour <span class="pt"><i>f</i>(<i>x</i>&#8239;&#8722;&#8239;&#955;)</span> et <span class="pt"><i>f</i>(&#8722;<i>x</i>)</span>), retourner les flèches si le sens est <b>renversé</b>, transformer les valeurs aux extrémités (ajouter &#955;, ou multiplier par &#955;) : un maximum reste un maximum si le sens est conservé, devient un <b>minimum</b> sinon. Le <b>nombre</b> d'intervalles de monotonie ne change jamais.</p>
+</div>
+
+</div>
+
+<div class="bandeau vert">PIEGES ET ERREURS FREQUENTES</div>
+<div class="cols">
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> <span class="pt"><span class="f"><span><i>x</i><sup>2</sup>&#8239;&#8722;&#8239;1</span><span><i>x</i>&#8239;&#8722;&#8239;1</span></span>&#8239;=&#8239;<i>x</i>&#8239;+&#8239;1</span> pour tout <i>x</i> &nbsp;&middot;&nbsp; <span class="pt"><i>D</i><sub><i>f</i>/<i>g</i></sub>&#8239;=&#8239;<i>D<sub>f</sub></i>&#8239;&#8745;&#8239;<i>D<sub>g</sub></i></span></div><div class="cor"><span class="v">&#10003;</span> L'égalité ne vaut que pour <i>x</i>&#8239;&#8800;&#8239;1 : domaines différents, fonctions <b>non égales</b>. Le domaine se lit sur l'expression <b>telle qu'elle est donnée</b> : dans <span class="pt"><span class="f"><span><i>x</i><sup>2</sup>&#8239;&#8722;&#8239;4</span><span><i>x</i>&#8239;+&#8239;2</span></span></span>, &#8722;2 reste exclue après simplification en <span class="pt"><i>x</i>&#8239;&#8722;&#8239;2</span>. Et pour un <b>quotient</b>, retirer en plus les zéros de <i>g</i> ; ceux du <b>numérateur</b> ne gênent pas : dans <span class="pt"><span class="f"><span><i>x</i>&#8239;&#8722;&#8239;2</span><span><i>x</i>&#8239;&#8722;&#8239;5</span></span></span>, 2 est autorisée (image 0), seule 5 est interdite.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> <span class="pt"><i>g</i>&#8728;<i>f</i>&#8239;=&#8239;<i>f</i>&#8728;<i>g</i></span></div><div class="cor"><span class="v">&#10003;</span> L'ordre compte. Pour <span class="pt"><i>f</i>(<i>x</i>)&#8239;=&#8239;<i>x</i>&#8239;&#8722;&#8239;1</span> et <span class="pt"><i>g</i>(<i>x</i>)&#8239;=&#8239;&#8730;<span class="rad"><i>x</i></span></span> : <span class="pt">(<i>g</i>&#8728;<i>f</i>)(<i>x</i>)&#8239;=&#8239;&#8730;<span class="rad"><i>x</i>&#8239;&#8722;&#8239;1</span></span>, définie pour <i>x</i>&#8239;&#8805;&#8239;1, alors que <span class="pt">(<i>f</i>&#8728;<i>g</i>)(<i>x</i>)&#8239;=&#8239;&#8730;<span class="rad"><i>x</i></span>&#8239;&#8722;&#8239;1</span>, définie pour <i>x</i>&#8239;&#8805;&#8239;0.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> <i>f</i> n'est pas paire, donc elle est impaire</div><div class="cor"><span class="v">&#10003;</span> Les deux propriétés sont <b>indépendantes</b>, et « ni paire ni impaire » est le cas <b>le plus fréquent</b>. Pour <span class="pt"><i>f</i>(<i>x</i>)&#8239;=&#8239;&#8730;<span class="rad"><i>x</i></span></span>, le domaine <span class="pt">[0&#8239;;&#8239;+&#8734;[</span> n'est même pas symétrique par rapport à 0 : la question ne se pose pas. Seule la <b>fonction nulle</b> est à la fois paire et impaire.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> <span class="pt"><i>f</i>(1)&#8239;&gt;&#8239;<i>g</i>(1)</span>, donc <span class="pt"><i>f</i>&#8239;&gt;&#8239;<i>g</i></span> sur tout l'intervalle &nbsp;&middot;&nbsp; <i>f</i> est majorée par 10, donc <i>f</i> atteint 10</div><div class="cor"><span class="v">&#10003;</span> Quelques points ne prouvent rien : il faut le <b>signe de <span class="pt"><i>f</i>&#8239;&#8722;&#8239;<i>g</i></span></b> sur tout l'intervalle, deux courbes pouvant se croiser juste après le bord de la figure. Et un <b>majorant</b> n'est pas un <b>maximum</b> : <span class="pt"><i>x</i>&#8239;<span class="ar">&#8614;</span>&#8239;<span class="f"><span><i>x</i><sup>2</sup></span><span><i>x</i><sup>2</sup>&#8239;+&#8239;1</span></span></span> est majorée par 1 sans jamais valoir 1. Préciser aussi l'<b>ensemble</b> : <span class="pt"><i>x</i>&#8239;<span class="ar">&#8614;</span>&#8239;<i>x</i><sup>2</sup></span> est majorée par 4 sur <span class="pt">[&#8722;2&#8239;;&#8239;2]</span>, par aucun nombre sur &#8477;.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> <i>f</i> et <i>g</i> croissantes, donc <i>fg</i> croissante &nbsp;&middot;&nbsp; <span class="pt"><i>x</i>&#8239;<span class="ar">&#8614;</span>&#8239;<span class="f"><span>1</span><span><i>x</i></span></span></span> est décroissante sur &#8477;<sup>*</sup></div><div class="cor"><span class="v">&#10003;</span> La règle des signes vaut pour la <b>composée</b> ; la <b>somme</b> de deux croissantes est croissante, mais le <b>produit</b> et le <b>quotient</b> n'ont rien d'automatique : <span class="pt"><i>f</i>(<i>x</i>)&#8239;=&#8239;<i>g</i>(<i>x</i>)&#8239;=&#8239;<i>x</i></span> croissantes, alors que <span class="pt"><i>x</i>&#8239;<span class="ar">&#8614;</span>&#8239;<i>x</i><sup>2</sup></span> ne l'est pas sur &#8477;. La monotonie se déclare <b>toujours sur un intervalle</b> : l'inverse décroît sur <span class="pt">]&#8722;&#8734;&#8239;;&#8239;0[</span> et sur <span class="pt">]0&#8239;;&#8239;+&#8734;[</span>, mais &#8722;1&#8239;&lt;&#8239;1 et pourtant <span class="pt"><span class="f"><span>1</span><span>&#8722;1</span></span>&#8239;&lt;&#8239;<span class="f"><span>1</span><span>1</span></span></span>.</div></div>
+
+</div>
+
+<div class="bandeau bleu">A SAVOIR PAR COEUR AVANT LE DEVOIR</div>
+<div class="cols">
+<ol class="recap">
+<li><b>Egalité et domaines</b> : <span class="pt"><i>f</i>&#8239;=&#8239;<i>g</i></span> exige <b>même domaine</b> <b>et</b> mêmes valeurs (domaine écrit <b>avant</b> toute simplification). <span class="pt"><i>D</i><sub><i>f</i>+<i>g</i></sub>&#8239;=&#8239;<i>D</i><sub><i>fg</i></sub>&#8239;=&#8239;<i>D<sub>f</sub></i>&#8239;&#8745;&#8239;<i>D<sub>g</sub></i></span> ; pour <i>f</i>/<i>g</i>, la même intersection <b>privée des zéros de <i>g</i></b>. Interdictions : dénominateur&#8239;&#8800;&#8239;0, radical&#8239;&#8805;&#8239;0, radical au dénominateur&#8239;&gt;&#8239;0.</li>
+<li><b>Composée</b> : <span class="pt">(<i>g</i>&#8728;<i>f</i>)(<i>x</i>)&#8239;=&#8239;<i>g</i>&#40;<i>f</i>(<i>x</i>)&#41;</span> ; domaine : <span class="pt"><i>x</i>&#8239;&#8712;&#8239;<i>D<sub>f</sub></i></span> <b>et</b> <span class="pt"><i>f</i>(<i>x</i>)&#8239;&#8712;&#8239;<i>D<sub>g</sub></i></span> ; <span class="pt"><i>g</i>&#8728;<i>f</i>&#8239;&#8800;&#8239;<i>f</i>&#8728;<i>g</i></span>. La <b>restriction</b> à <i>I</i> garde les valeurs et réduit le domaine.</li>
+<li><b>Parité et symétries</b> : <i>D<sub>f</sub></i> symétrique par rapport à 0, <b>puis</b> <span class="pt"><i>f</i>(&#8722;<i>x</i>)&#8239;=&#8239;<i>f</i>(<i>x</i>)</span> (paire, axe des ordonnées) ou <span class="pt"><i>f</i>(&#8722;<i>x</i>)&#8239;=&#8239;&#8722;<i>f</i>(<i>x</i>)</span> (impaire, centre O) ; ensemble d'étude <span class="pt"><i>D<sub>f</sub></i>&#8239;&#8745;&#8239;[0&#8239;;&#8239;+&#8734;[</span>. Axe <span class="pt"><i>x</i>&#8239;=&#8239;<i>a</i></span> si <span class="pt"><i>f</i>(2<i>a</i>&#8239;&#8722;&#8239;<i>x</i>)&#8239;=&#8239;<i>f</i>(<i>x</i>)</span> ; centre <span class="pt">&#937;(<i>a</i>&#8239;;&#8239;<i>b</i>)</span> si <span class="pt"><i>f</i>(2<i>a</i>&#8239;&#8722;&#8239;<i>x</i>)&#8239;+&#8239;<i>f</i>(<i>x</i>)&#8239;=&#8239;2<i>b</i></span>.</li>
+<li><b>Comparaison</b> : signe de <span class="pt"><i>f</i>&#8239;&#8722;&#8239;<i>g</i></span> ; <span class="pt"><i>f</i>&#8239;&#8805;&#8239;<i>g</i></span> = courbe de <i>f</i> <b>au-dessus</b>. <b>Bornes</b> : <span class="pt"><i>f</i>&#8239;&#8804;&#8239;<i>M</i></span> majorée, <span class="pt"><i>f</i>&#8239;&#8805;&#8239;<i>m</i></span> minorée, bornée les deux ; un majorant n'est pas forcément atteint.</li>
+<li><b>Variation</b> : signe du taux <span class="pt"><span class="f"><span><i>f</i>(<i>x</i><sub>2</sub>)&#8239;&#8722;&#8239;<i>f</i>(<i>x</i><sub>1</sub>)</span><span><i>x</i><sub>2</sub>&#8239;&#8722;&#8239;<i>x</i><sub>1</sub></span></span></span> ; <b>tableau de variation</b> avec les valeurs aux extrémités des flèches et une <b>double barre</b> sur chaque valeur interdite.</li>
+<li><b>Composée et associées</b> : même sens <span class="ar">&#8594;</span> croissante, sens contraires <span class="ar">&#8594;</span> décroissante, chaque fonction monotone <b>sur l'intervalle qui convient</b>. <span class="pt"><i>f</i>&#8239;+&#8239;&#955;</span> et <span class="pt"><i>f</i>(<i>x</i>&#8239;&#8722;&#8239;&#955;)</span> conservent le sens ; <span class="pt">&#955;<i>f</i></span> le conserve si &#955;&#8239;&gt;&#8239;0, le renverse si &#955;&#8239;&lt;&#8239;0.</li>
+</ol>
+</div>
+
+</body>
+</html>

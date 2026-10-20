@@ -1,0 +1,350 @@
+{
+  "niveau": "Terminale D",
+  "chapitre": "Chapitre 11 : Statistiques à deux variables",
+  "source": "maths/tleD/Chapitre_11_Statistiques_deux_variables",
+  "nombre_cartes": 38,
+  "cartes": [
+    {
+      "id": "TD-CH11-001",
+      "lecon": "Nuage de points et point moyen",
+      "type": "definition",
+      "recto": "Qu'étudie-t-on dans une série statistique double ?",
+      "verso": "On étudie $n$ individus sur lesquels on relève simultanément deux caractères numériques $x$ et $y$. Chaque individu $i$ fournit un couple $(x_i\\,;y_i)$, et la série est la liste de ces $n$ couples.",
+      "difficulte": 1,
+      "tags": ["serie-double", "definition"]
+    },
+    {
+      "id": "TD-CH11-002",
+      "lecon": "Nuage de points et point moyen",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on nuage de points d'une série statistique double ?",
+      "verso": "L'ensemble des points $M_i$ de coordonnées $(x_i\\,;y_i)$ placés dans un repère du plan, un point par individu observé. On ne relie jamais ces points entre eux : un nuage n'est pas une courbe.",
+      "difficulte": 1,
+      "tags": ["nuage-de-points", "definition"]
+    },
+    {
+      "id": "TD-CH11-003",
+      "lecon": "Nuage de points et point moyen",
+      "type": "definition",
+      "recto": "Pourquoi ne peut-on pas permuter entre elles les valeurs de $y$ d'une série double ?",
+      "verso": "Parce que l'information est portée par l'appariement des deux mesures sur un même individu. Les couples $(1\\,;2)$ et $(2\\,;3)$ ne décrivent pas la même réalité que $(1\\,;3)$ et $(2\\,;2)$, alors que les valeurs de $x$ et celles de $y$ sont les mêmes.",
+      "difficulte": 3,
+      "tags": ["appariement", "serie-double", "piege"]
+    },
+    {
+      "id": "TD-CH11-004",
+      "lecon": "Nuage de points et point moyen",
+      "type": "definition",
+      "recto": "Comment présente-t-on une série double dont plusieurs individus fournissent le même couple ?",
+      "verso": "Dans un tableau d'effectifs à double entrée : les valeurs de $x$ en lignes, celles de $y$ en colonnes, et dans chaque case l'effectif $n_{ij}$ du couple $(x_i\\,;y_j)$.",
+      "difficulte": 2,
+      "tags": ["tableau-double-entree", "effectifs"]
+    },
+    {
+      "id": "TD-CH11-005",
+      "lecon": "Nuage de points et point moyen",
+      "type": "definition",
+      "recto": "Où lit-on les distributions marginales dans un tableau à double entrée ?",
+      "verso": "Dans les totaux portés en marge : les totaux des lignes donnent la distribution marginale de $x$, ceux des colonnes celle de $y$. Chacune est une série à une seule variable, celle qu'on obtiendrait en oubliant l'autre caractère.",
+      "difficulte": 2,
+      "tags": ["distribution-marginale", "tableau-double-entree"]
+    },
+    {
+      "id": "TD-CH11-006",
+      "lecon": "Nuage de points et point moyen",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on fréquence marginale d'une valeur dans un tableau à double entrée ?",
+      "verso": "Le quotient de son effectif marginal par l'effectif total $n$ : c'est une proportion comprise entre $0$ et $1$, non un effectif. Ainsi $\\dfrac{6}{10}=0{,}6$ correspond à $60\\ \\%$ des individus, et la somme des fréquences marginales de $x$ vaut $1$.",
+      "difficulte": 2,
+      "tags": ["frequence-marginale", "proportion"]
+    },
+    {
+      "id": "TD-CH11-007",
+      "lecon": "Nuage de points et point moyen",
+      "type": "definition",
+      "recto": "Quelles sont les coordonnées du point moyen $G$ d'un nuage ?",
+      "verso": "$G\\big(\\overline{x}\\,;\\overline{y}\\big)$, avec $\\overline{x}=\\dfrac1n\\sum_i x_i$ et $\\overline{y}=\\dfrac1n\\sum_i y_i$. Il joue pour un nuage le rôle que la moyenne joue pour une série simple : il en est le résumé en un seul point.",
+      "difficulte": 1,
+      "tags": ["point-moyen", "definition"]
+    },
+    {
+      "id": "TD-CH11-008",
+      "lecon": "Nuage de points et point moyen",
+      "type": "formule",
+      "recto": "Comment calcule-t-on le point moyen lorsque les couples se répètent avec des effectifs ?",
+      "verso": "Par des moyennes pondérées : $\\overline{x}=\\dfrac1n\\sum_i n_ix_i$ et $\\overline{y}=\\dfrac1n\\sum_i n_iy_i$, avec $n=\\sum_i n_i$. Chaque valeur est comptée autant de fois qu'elle apparaît ; oublier de pondérer donne un résultat faux.",
+      "difficulte": 2,
+      "tags": ["point-moyen", "moyenne-ponderee"]
+    },
+    {
+      "id": "TD-CH11-009",
+      "lecon": "Nuage de points et point moyen",
+      "type": "formule",
+      "recto": "Comment traite-t-on une variable donnée par classes dans un calcul de moyenne ?",
+      "verso": "On remplace chaque classe par son centre, demi-somme de ses deux bornes, puis on applique la formule pondérée. Ainsi la classe $[100\\,;150[$ est comptée pour $125$. Cela introduit une petite erreur, acceptée en échange du gain de lisibilité.",
+      "difficulte": 2,
+      "tags": ["classes", "centre-de-classe", "moyenne-ponderee"]
+    },
+    {
+      "id": "TD-CH11-010",
+      "lecon": "Nuage de points et point moyen",
+      "type": "definition",
+      "recto": "Pourquoi le point moyen $G$ n'est-il pas forcément un point du nuage ?",
+      "verso": "Parce que ses coordonnées ne sont pas des mesures faites sur un individu : ce sont les deux moyennes. Rien n'oblige un individu réel à s'y trouver. Ce n'est pas non plus le point le plus haut ni le plus fréquent du nuage.",
+      "difficulte": 3,
+      "tags": ["point-moyen", "piege"]
+    },
+    {
+      "id": "TD-CH11-011",
+      "lecon": "Nuage de points et point moyen",
+      "type": "formule",
+      "recto": "Quelle variable place-t-on en abscisse lorsqu'on trace un nuage de points ?",
+      "verso": "Celle qui explique, comme le temps, la dose, la surface ou le prix. On porte en ordonnée celle que l'on veut prévoir : le rendement, l'effectif, la quantité vendue. Les deux axes n'ont aucune raison d'avoir la même échelle.",
+      "difficulte": 2,
+      "tags": ["nuage-de-points", "abscisse", "trace"]
+    },
+    {
+      "id": "TD-CH11-012",
+      "lecon": "Nuage de points et point moyen",
+      "type": "formule",
+      "recto": "Que vaut la somme des écarts $x_i-\\overline{x}$ d'une série ?",
+      "verso": "Elle vaut exactement zéro, les écarts positifs compensant les écarts négatifs, et il en va de même pour les $y_i-\\overline{y}$. C'est ce qui fait de $G$ le point autour duquel le nuage s'équilibre, dans les deux directions à la fois.",
+      "difficulte": 2,
+      "tags": ["ecarts", "point-moyen", "propriete"]
+    },
+    {
+      "id": "TD-CH11-013",
+      "lecon": "Covariance, corrélation et méthode de Mayer",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on covariance d'une série statistique double ?",
+      "verso": "La moyenne des produits des écarts aux moyennes : $\\operatorname{cov}(x,y)=\\dfrac1n\\sum_i\\big(x_i-\\overline{x}\\big)\\big(y_i-\\overline{y}\\big)$, notée aussi $\\sigma_{xy}$. Elle mesure la tendance commune des deux variables à s'écarter ensemble de leur moyenne.",
+      "difficulte": 1,
+      "tags": ["covariance", "definition"]
+    },
+    {
+      "id": "TD-CH11-014",
+      "lecon": "Covariance, corrélation et méthode de Mayer",
+      "type": "formule",
+      "recto": "Par quelle formule calcule-t-on en pratique la covariance d'une série double ?",
+      "verso": "$\\operatorname{cov}(x,y)=\\dfrac1n\\sum_i x_iy_i-\\overline{x}\\,\\overline{y}$, soit « moyenne des produits moins produit des moyennes ». C'est la formule de Koenig transposée, celle qui évite de calculer les $n$ couples d'écarts un par un.",
+      "difficulte": 1,
+      "tags": ["covariance", "formule-de-calcul", "koenig"]
+    },
+    {
+      "id": "TD-CH11-015",
+      "lecon": "Covariance, corrélation et méthode de Mayer",
+      "type": "formule",
+      "recto": "Que lit-on sur le signe de la covariance d'une série double ?",
+      "verso": "Le sens de la tendance : positive, la tendance est montante ; négative, elle est descendante ; nulle, il n'y a aucune tendance linéaire. Un nuage montant ne peut donc pas donner une covariance négative, ce qui fournit un contrôle immédiat.",
+      "difficulte": 2,
+      "tags": ["covariance", "signe", "tendance"]
+    },
+    {
+      "id": "TD-CH11-016",
+      "lecon": "Covariance, corrélation et méthode de Mayer",
+      "type": "formule",
+      "recto": "Pourquoi le signe de la covariance donne-t-il le sens de la tendance ?",
+      "verso": "Les droites d'équations $x=\\overline{x}$ et $y=\\overline{y}$ découpent le plan en quatre régions. Dans les deux régions diagonales montantes, les deux écarts sont de même signe et leur produit est positif ; dans les deux autres, il est négatif. La covariance prend le signe du camp majoritaire.",
+      "difficulte": 2,
+      "tags": ["covariance", "signe", "regle-des-signes"]
+    },
+    {
+      "id": "TD-CH11-017",
+      "lecon": "Covariance, corrélation et méthode de Mayer",
+      "type": "formule",
+      "recto": "Que vaut la covariance d'une variable avec elle-même ?",
+      "verso": "$\\operatorname{cov}(x,x)=\\dfrac1n\\sum_i\\big(x_i-\\overline{x}\\big)^{2}=V(x)$ : la variance est le cas particulier de la covariance où les deux variables sont confondues. Retenir ce fait dispense d'apprendre deux formules au lieu d'une.",
+      "difficulte": 2,
+      "tags": ["covariance", "variance", "cas-particulier"]
+    },
+    {
+      "id": "TD-CH11-018",
+      "lecon": "Covariance, corrélation et méthode de Mayer",
+      "type": "definition",
+      "recto": "Pourquoi la covariance ne suffit-elle pas à mesurer la force d'un lien ?",
+      "verso": "Parce qu'elle porte une unité, celle de $x$ multipliée par celle de $y$ : compter des rendements en kilogrammes au lieu de tonnes multiplie la covariance par $1000$ sans que le lien ait changé. Elle indique donc le sens du lien, jamais sa force.",
+      "difficulte": 3,
+      "tags": ["covariance", "unite", "piege"]
+    },
+    {
+      "id": "TD-CH11-019",
+      "lecon": "Covariance, corrélation et méthode de Mayer",
+      "type": "definition",
+      "recto": "Que mesure le coefficient de corrélation linéaire d'une série double ?",
+      "verso": "La force du lien linéaire entre les deux variables. C'est un nombre sans unité, toujours compris entre $-1$ et $1$, de même signe que la covariance : le signe donne le sens du lien, la valeur absolue en donne la force.",
+      "difficulte": 1,
+      "tags": ["correlation", "definition"]
+    },
+    {
+      "id": "TD-CH11-020",
+      "lecon": "Covariance, corrélation et méthode de Mayer",
+      "type": "formule",
+      "recto": "Par quelle formule obtient-on le coefficient de corrélation linéaire ?",
+      "verso": "$r=\\dfrac{\\operatorname{cov}(x,y)}{\\sigma_x\\,\\sigma_y}$, où $\\sigma_x=\\sqrt{V(x)}$ et $\\sigma_y=\\sqrt{V(y)}$. Le dénominateur porte exactement la même unité que la covariance, ce qui rend $r$ sans unité ; un résultat hors de $[-1\\,;1]$ signale toujours une erreur.",
+      "difficulte": 1,
+      "tags": ["correlation", "formule", "ecart-type"]
+    },
+    {
+      "id": "TD-CH11-021",
+      "lecon": "Covariance, corrélation et méthode de Mayer",
+      "type": "formule",
+      "recto": "Comment interprète-t-on la valeur absolue du coefficient de corrélation ?",
+      "verso": "$|r|=1$ : les points sont exactement alignés. $|r|\\ge 0{,}9$ environ : corrélation forte, un ajustement affine est justifié. $|r|$ voisin de $0{,}5$ : corrélation moyenne, l'ajustement reste grossier. $|r|$ proche de $0$ : tracer une droite serait abusif.",
+      "difficulte": 2,
+      "tags": ["correlation", "interpretation", "ajustement"]
+    },
+    {
+      "id": "TD-CH11-022",
+      "lecon": "Covariance, corrélation et méthode de Mayer",
+      "type": "definition",
+      "recto": "Que signifie exactement un coefficient de corrélation nul ?",
+      "verso": "Qu'aucun lien linéaire n'est décelable, et non qu'il n'existe aucun lien. Des points parfaitement répartis sur une parabole peuvent donner $r=0$ tout en étant liés par une relation exacte : le coefficient ne mesure que l'alignement.",
+      "difficulte": 3,
+      "tags": ["correlation", "lien-lineaire", "piege"]
+    },
+    {
+      "id": "TD-CH11-023",
+      "lecon": "Covariance, corrélation et méthode de Mayer",
+      "type": "definition",
+      "recto": "Pourquoi une corrélation forte ne prouve-t-elle pas une causalité ?",
+      "verso": "Parce que trois explications donnent le même $r$ élevé : $x$ agit sur $y$, ou $y$ agit sur $x$, ou une troisième grandeur cachée agit sur les deux. Ventes de sandales et cas de paludisme montent ensemble à cause de la saison des pluies, non l'un par l'autre.",
+      "difficulte": 3,
+      "tags": ["correlation", "causalite", "piege"]
+    },
+    {
+      "id": "TD-CH11-024",
+      "lecon": "Covariance, corrélation et méthode de Mayer",
+      "type": "definition",
+      "recto": "En quoi consiste la méthode de Mayer pour ajuster un nuage ?",
+      "verso": "On range les couples par abscisse croissante, on les partage en deux groupes de même effectif, le premier recevant le point supplémentaire si $n$ est impair, puis on calcule le point moyen $G_1$ du premier groupe et $G_2$ du second. La droite de Mayer est la droite $(G_1G_2)$.",
+      "difficulte": 2,
+      "tags": ["mayer", "ajustement", "definition"]
+    },
+    {
+      "id": "TD-CH11-025",
+      "lecon": "Covariance, corrélation et méthode de Mayer",
+      "type": "formule",
+      "recto": "Comment obtient-on l'équation de la droite de Mayer à partir de $G_1$ et $G_2$ ?",
+      "verso": "Par la méthode des deux points : $a=\\dfrac{y_2-y_1}{x_2-x_1}$ puis $b=y_1-a\\,x_1$, d'où $y=ax+b$. Cette droite passe toujours par le point moyen $G$ du nuage entier, ce qui fournit la vérification du calcul.",
+      "difficulte": 2,
+      "tags": ["mayer", "equation", "point-moyen"]
+    },
+    {
+      "id": "TD-CH11-026",
+      "lecon": "Ajustement par les moindres carrés",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on résidu en un point, pour une droite d'ajustement donnée ?",
+      "verso": "L'écart $e_i=y_i-(ax_i+b)$ entre la valeur observée et la valeur prédite par la droite. Il se mesure verticalement, parallèlement à l'axe des ordonnées, et non perpendiculairement à la droite, car c'est sur $y$ que l'on veut se tromper le moins.",
+      "difficulte": 2,
+      "tags": ["residu", "ecart", "definition"]
+    },
+    {
+      "id": "TD-CH11-027",
+      "lecon": "Ajustement par les moindres carrés",
+      "type": "definition",
+      "recto": "Pourquoi élève-t-on les écarts au carré au lieu de les additionner tels quels ?",
+      "verso": "Parce que la somme des écarts ne mesure rien : les écarts positifs annulent les négatifs, et une droite catastrophique peut donner un total nul. Les carrés suppriment les signes, pénalisent davantage les grands écarts et se prêtent au calcul.",
+      "difficulte": 2,
+      "tags": ["moindres-carres", "residu", "justification"]
+    },
+    {
+      "id": "TD-CH11-028",
+      "lecon": "Ajustement par les moindres carrés",
+      "type": "definition",
+      "recto": "Comment définit-on la droite de régression de $y$ en $x$ ?",
+      "verso": "C'est l'unique droite $y=ax+b$ qui rend minimale la somme des carrés des écarts verticaux $\\sum_i\\big(y_i-(ax_i+b)\\big)^{2}$. On l'appelle aussi droite des moindres carrés, et elle passe par le point moyen $G$.",
+      "difficulte": 1,
+      "tags": ["regression", "moindres-carres", "definition"]
+    },
+    {
+      "id": "TD-CH11-029",
+      "lecon": "Ajustement par les moindres carrés",
+      "type": "formule",
+      "recto": "Quels sont les coefficients de la droite de régression de $y$ en $x$ ?",
+      "verso": "$a=\\dfrac{\\operatorname{cov}(x,y)}{V(x)}$ et $b=\\overline{y}-a\\,\\overline{x}$. Au dénominateur de la pente figure toujours la variance de la variable placée en abscisse, jamais l'inverse ; le signe de $a$ est celui de la covariance.",
+      "difficulte": 1,
+      "tags": ["regression", "coefficients", "pente"]
+    },
+    {
+      "id": "TD-CH11-030",
+      "lecon": "Ajustement par les moindres carrés",
+      "type": "formule",
+      "recto": "Comment prévoit-on la valeur de $y$ associée à une valeur $x_0$ ?",
+      "verso": "On remplace $x$ par $x_0$ dans l'équation de la droite de régression : la prévision est $y_0=ax_0+b$. On donne toujours le résultat avec son unité et l'on vérifie qu'il est plausible dans le contexte étudié.",
+      "difficulte": 1,
+      "tags": ["prevision", "regression"]
+    },
+    {
+      "id": "TD-CH11-031",
+      "lecon": "Ajustement par les moindres carrés",
+      "type": "formule",
+      "recto": "Pourquoi toutes les droites d'ajustement passent-elles par le point moyen $G$ ?",
+      "verso": "Parce que leur ordonnée à l'origine vérifie $b=\\overline{y}-a\\,\\overline{x}$ : en remplaçant $x$ par $\\overline{x}$, on obtient $a\\overline{x}+b=\\overline{y}$. Le raisonnement n'utilise jamais la valeur de $a$, donc il vaut aussi bien pour Mayer que pour les moindres carrés.",
+      "difficulte": 2,
+      "tags": ["point-moyen", "ajustement", "verification"]
+    },
+    {
+      "id": "TD-CH11-032",
+      "lecon": "Ajustement par les moindres carrés",
+      "type": "definition",
+      "recto": "Que minimise la droite de régression de $x$ en $y$ ?",
+      "verso": "La somme des carrés des écarts horizontaux, car c'est $x$ que l'on cherche alors à prévoir à partir de $y$. Son équation s'écrit $x=a'y+b'$, et l'on résiste à la tentation de la réécrire sous la forme $y=\\dots$",
+      "difficulte": 2,
+      "tags": ["regression", "seconde-droite", "definition"]
+    },
+    {
+      "id": "TD-CH11-033",
+      "lecon": "Ajustement par les moindres carrés",
+      "type": "formule",
+      "recto": "Quels sont les coefficients de la droite de régression de $x$ en $y$ ?",
+      "verso": "$a'=\\dfrac{\\operatorname{cov}(x,y)}{V(y)}$ et $b'=\\overline{x}-a'\\,\\overline{y}$. C'est bien $V(y)$ qui passe au dénominateur, puisque la variable de départ est maintenant $y$ ; la covariance, elle, ne change pas. Cette droite passe elle aussi par $G$.",
+      "difficulte": 2,
+      "tags": ["regression", "seconde-droite", "coefficients"]
+    },
+    {
+      "id": "TD-CH11-034",
+      "lecon": "Ajustement par les moindres carrés",
+      "type": "formule",
+      "recto": "Quelle relation lie les pentes des deux droites de régression au coefficient de corrélation ?",
+      "verso": "$a\\times a'=r^{2}$. Comme $r^{2}\\le 1$, les deux droites sont en général distinctes ; elles sont confondues si et seulement si $r^{2}=1$, c'est-à-dire lorsque les points sont exactement alignés. Elles se coupent toujours au point moyen $G$.",
+      "difficulte": 2,
+      "tags": ["regression", "relation", "correlation"]
+    },
+    {
+      "id": "TD-CH11-035",
+      "lecon": "Ajustement par les moindres carrés",
+      "type": "definition",
+      "recto": "Pourquoi les deux droites de régression d'une même série sont-elles différentes ?",
+      "verso": "Parce qu'elles ne minimisent pas la même chose : la première rend minimales les erreurs commises sur $y$, la seconde celles commises sur $x$. Ce ne sont pas les mêmes segments que l'on raccourcit. Plus $|r|$ est proche de $1$, plus elles se rapprochent.",
+      "difficulte": 3,
+      "tags": ["regression", "deux-droites", "distinction"]
+    },
+    {
+      "id": "TD-CH11-036",
+      "lecon": "Ajustement par les moindres carrés",
+      "type": "definition",
+      "recto": "Quelle différence sépare une interpolation d'une extrapolation ?",
+      "verso": "Interpoler, c'est prévoir pour une valeur de $x$ située à l'intérieur de l'intervalle des données observées, ce qui reste raisonnablement fiable. Extrapoler, c'est prévoir au-delà : une population ou un rendement finissent par plafonner, alors qu'une droite monte indéfiniment.",
+      "difficulte": 2,
+      "tags": ["interpolation", "extrapolation", "prevision"]
+    },
+    {
+      "id": "TD-CH11-037",
+      "lecon": "Ajustement par les moindres carrés",
+      "type": "definition",
+      "recto": "Pourquoi faut-il calculer $r$ avant de construire une droite d'ajustement ?",
+      "verso": "Parce que les formules donneront toujours un $a$ et un $b$, un calcul ne refusant jamais de s'exécuter. Si la corrélation est faible, la droite obtenue ne décrit rien et toute prévision qu'on en tire est trompeuse.",
+      "difficulte": 3,
+      "tags": ["correlation", "ajustement", "piege"]
+    },
+    {
+      "id": "TD-CH11-038",
+      "lecon": "Ajustement par les moindres carrés",
+      "type": "definition",
+      "recto": "Quelle valeur substitue-t-on à $x$ lorsque la variable explicative est le rang d'une année ?",
+      "verso": "Le rang défini par l'énoncé, jamais le millésime. Si $2020$ correspond à $x=1$, alors l'année $2026$ correspond à $x=7$, et c'est $7$ que l'on reporte dans l'équation de la droite.",
+      "difficulte": 3,
+      "tags": ["prevision", "rang", "piege"]
+    }
+  ]
+}

@@ -1,0 +1,296 @@
+{
+  "niveau": "5ème",
+  "chapitre": "Chapitre 6 : Les angles : opposés par le sommet, alternes-internes, correspondants · Les triangles",
+  "source": "maths/5eme/Chapitre_6_Les_angles_et_triangles",
+  "nombre_cartes": 32,
+  "cartes": [
+    {
+      "id": "5E-CH06-001",
+      "lecon": "Angles opposés par le sommet",
+      "type": "definition",
+      "recto": "Comment sont placés deux angles opposés par le sommet ?",
+      "verso": "Ils sont formés par deux droites qui se coupent et se font face de part et d'autre du point d'intersection, sans aucun côté commun.",
+      "difficulte": 1,
+      "tags": ["angles", "opposes-par-le-sommet", "definition"]
+    },
+    {
+      "id": "5E-CH06-002",
+      "lecon": "Angles opposés par le sommet",
+      "type": "formule",
+      "recto": "Que peut-on dire des mesures de deux angles opposés par le sommet ?",
+      "verso": "Ils ont la même mesure. Cette propriété est vraie toujours, sans aucune condition sur les deux droites.",
+      "difficulte": 1,
+      "tags": ["angles", "opposes-par-le-sommet", "propriete"]
+    },
+    {
+      "id": "5E-CH06-003",
+      "lecon": "Angles opposés par le sommet",
+      "type": "formule",
+      "recto": "Que vaut la somme de deux angles voisins formés par deux droites sécantes ?",
+      "verso": "Elle vaut $180^{\\circ}$ : mis bout à bout, ces deux angles reconstituent une droite, donc un angle plat. Ils sont supplémentaires.",
+      "difficulte": 2,
+      "tags": ["angles", "supplementaires", "droites-secantes"]
+    },
+    {
+      "id": "5E-CH06-004",
+      "lecon": "Angles opposés par le sommet",
+      "type": "formule",
+      "recto": "Combien de mesures faut-il connaître pour obtenir les quatre angles d'un croisement de deux droites ?",
+      "verso": "Une seule. Si l'un vaut $a$, les quatre angles valent $a$, $180^{\\circ} - a$, $a$, puis $180^{\\circ} - a$ en tournant, et leur somme fait $360^{\\circ}$.",
+      "difficulte": 2,
+      "tags": ["angles", "opposes-par-le-sommet", "croisement"]
+    },
+    {
+      "id": "5E-CH06-005",
+      "lecon": "Angles opposés par le sommet",
+      "type": "formule",
+      "recto": "Que valent les quatre angles d'un croisement dont l'un est droit ?",
+      "verso": "Ils sont tous droits, car $180^{\\circ} - 90^{\\circ} = 90^{\\circ}$. Les deux droites sont alors perpendiculaires.",
+      "difficulte": 2,
+      "tags": ["angles", "angle-droit", "perpendiculaires"]
+    },
+    {
+      "id": "5E-CH06-006",
+      "lecon": "Angles opposés par le sommet",
+      "type": "formule",
+      "recto": "Pourquoi deux angles opposés par le sommet ont-ils forcément la même mesure ?",
+      "verso": "Parce qu'ils sont supplémentaires d'un même angle voisin : si $a + b = 180^{\\circ}$ et $b + c = 180^{\\circ}$, alors $a = c$. Un demi-tour autour du point d'intersection les superpose d'ailleurs exactement.",
+      "difficulte": 3,
+      "tags": ["angles", "opposes-par-le-sommet", "justification"]
+    },
+    {
+      "id": "5E-CH06-007",
+      "lecon": "Angles opposés par le sommet",
+      "type": "formule",
+      "recto": "Pourquoi deux angles opposés par le sommet ne sont-ils pas supplémentaires ?",
+      "verso": "Parce qu'ils sont égaux, et non de somme $180^{\\circ}$. Ce sont les angles voisins, ceux qui ont un côté commun, qui sont supplémentaires.",
+      "difficulte": 3,
+      "tags": ["angles", "opposes-par-le-sommet", "piege"]
+    },
+    {
+      "id": "5E-CH06-008",
+      "lecon": "Angles alternes-internes",
+      "type": "definition",
+      "recto": "Où sont situés deux angles alternes-internes formés par deux droites et une sécante ?",
+      "verso": "Entre les deux droites, ce que dit le mot « internes », et de part et d'autre de la sécante, ce que dit le mot « alternes ». Ils n'ont jamais le même sommet.",
+      "difficulte": 1,
+      "tags": ["angles", "alternes-internes", "definition"]
+    },
+    {
+      "id": "5E-CH06-009",
+      "lecon": "Angles alternes-internes",
+      "type": "definition",
+      "recto": "Où sont situés deux angles alternes-externes formés par deux droites et une sécante ?",
+      "verso": "A l'extérieur des deux droites, et de part et d'autre de la sécante. Comme les alternes-internes, ils sont égaux lorsque les deux droites sont parallèles.",
+      "difficulte": 2,
+      "tags": ["angles", "alternes-externes", "definition"]
+    },
+    {
+      "id": "5E-CH06-010",
+      "lecon": "Angles alternes-internes",
+      "type": "formule",
+      "recto": "Que dit la propriété des angles alternes-internes lorsque les deux droites sont parallèles ?",
+      "verso": "Si deux droites parallèles sont coupées par une sécante, alors leurs angles alternes-internes sont égaux. Il en va de même de leurs angles alternes-externes.",
+      "difficulte": 1,
+      "tags": ["angles", "alternes-internes", "paralleles"]
+    },
+    {
+      "id": "5E-CH06-011",
+      "lecon": "Angles alternes-internes",
+      "type": "formule",
+      "recto": "Que conclut-on lorsque deux angles alternes-internes ont la même mesure ?",
+      "verso": "Que les deux droites coupées par la sécante sont parallèles. C'est la propriété réciproque, celle qui sert à prouver un parallélisme.",
+      "difficulte": 2,
+      "tags": ["angles", "alternes-internes", "reciproque", "parallelisme"]
+    },
+    {
+      "id": "5E-CH06-012",
+      "lecon": "Angles alternes-internes",
+      "type": "formule",
+      "recto": "Pourquoi ne peut-on pas affirmer que deux angles alternes-internes sont égaux dès qu'on les repère ?",
+      "verso": "Parce que l'égalité n'a lieu que si les deux droites sont parallèles. Sans parallélisme, ces deux angles ont des mesures différentes, et une justification qui ne cite pas cette condition reste incomplète.",
+      "difficulte": 3,
+      "tags": ["angles", "alternes-internes", "piege"]
+    },
+    {
+      "id": "5E-CH06-013",
+      "lecon": "Angles alternes-internes",
+      "type": "formule",
+      "recto": "Combien de mesures différentes trouve-t-on parmi les huit angles formés par deux parallèles et une sécante ?",
+      "verso": "Deux seulement, et elles sont supplémentaires. Chaque angle est soit égal au premier, soit son supplémentaire, par exemple $60^{\\circ}$ et $120^{\\circ}$.",
+      "difficulte": 2,
+      "tags": ["angles", "paralleles", "secante"]
+    },
+    {
+      "id": "5E-CH06-014",
+      "lecon": "Angles alternes-internes",
+      "type": "formule",
+      "recto": "Que vaut la somme de deux angles internes situés du même côté de la sécante, entre deux parallèles ?",
+      "verso": "Elle vaut $180^{\\circ}$ : ces deux angles sont supplémentaires. Si l'un mesure $118^{\\circ}$, l'autre mesure donc $62^{\\circ}$.",
+      "difficulte": 2,
+      "tags": ["angles", "internes-meme-cote", "supplementaires"]
+    },
+    {
+      "id": "5E-CH06-015",
+      "lecon": "Angles correspondants",
+      "type": "definition",
+      "recto": "Où sont situés deux angles correspondants formés par deux droites et une sécante ?",
+      "verso": "Ils occupent la même position à chacun des deux croisements, du même côté de la sécante, l'un interne et l'autre externe. En glissant un croisement sur l'autre, ils se superposeraient.",
+      "difficulte": 1,
+      "tags": ["angles", "correspondants", "definition"]
+    },
+    {
+      "id": "5E-CH06-016",
+      "lecon": "Angles correspondants",
+      "type": "formule",
+      "recto": "Que dit la propriété des angles correspondants lorsque les deux droites sont parallèles ?",
+      "verso": "Si deux droites parallèles sont coupées par une sécante, alors leurs angles correspondants sont égaux.",
+      "difficulte": 1,
+      "tags": ["angles", "correspondants", "paralleles"]
+    },
+    {
+      "id": "5E-CH06-017",
+      "lecon": "Angles correspondants",
+      "type": "formule",
+      "recto": "Que conclut-on lorsque deux angles correspondants ont la même mesure ?",
+      "verso": "Que les deux droites coupées par la sécante sont parallèles. C'est le seul moyen, en géométrie, de prouver un parallélisme sans prolonger les droites à l'infini.",
+      "difficulte": 2,
+      "tags": ["angles", "correspondants", "reciproque", "parallelisme"]
+    },
+    {
+      "id": "5E-CH06-018",
+      "lecon": "Angles correspondants",
+      "type": "definition",
+      "recto": "En quoi « les droites sont parallèles donc les angles sont égaux » diffère-t-il de « les angles sont égaux donc les droites sont parallèles » ?",
+      "verso": "Ce sont deux propriétés différentes, qui vont en sens opposés. La première part des droites pour obtenir une mesure d'angle ; la seconde part des angles pour prouver un parallélisme. L'énoncé indique laquelle utiliser.",
+      "difficulte": 3,
+      "tags": ["angles", "reciproque", "piege"]
+    },
+    {
+      "id": "5E-CH06-019",
+      "lecon": "Angles correspondants",
+      "type": "formule",
+      "recto": "Pourquoi les angles correspondants et les angles alternes-internes donnent-ils la même information ?",
+      "verso": "Parce qu'en remplaçant l'un des deux angles correspondants par son opposé par le sommet, qui lui est toujours égal, on obtient une paire d'angles alternes-internes. Les deux propriétés disent donc la même chose.",
+      "difficulte": 3,
+      "tags": ["angles", "correspondants", "alternes-internes"]
+    },
+    {
+      "id": "5E-CH06-020",
+      "lecon": "Angles correspondants",
+      "type": "definition",
+      "recto": "Quelle famille d'angles reste égale même lorsque les deux droites ne sont pas parallèles ?",
+      "verso": "Les angles opposés par le sommet, toujours égaux. Les alternes-internes, les alternes-externes et les correspondants ne sont égaux que si les droites sont parallèles.",
+      "difficulte": 2,
+      "tags": ["angles", "familles", "synthese"]
+    },
+    {
+      "id": "5E-CH06-021",
+      "lecon": "Les triangles : somme des angles et triangles particuliers",
+      "type": "formule",
+      "recto": "Que vaut la somme des mesures des trois angles d'un triangle ?",
+      "verso": "Elle vaut $180^{\\circ}$ dans tout triangle, quelle que soit sa forme. Un triangle n'a donc que deux angles libres : le troisième est décidé par les deux premiers.",
+      "difficulte": 1,
+      "tags": ["triangle", "somme-des-angles"]
+    },
+    {
+      "id": "5E-CH06-022",
+      "lecon": "Les triangles : somme des angles et triangles particuliers",
+      "type": "formule",
+      "recto": "Comment obtient-on le troisième angle d'un triangle dont on connaît les deux autres ?",
+      "verso": "On additionne les deux angles connus, puis on retranche cette somme de $180^{\\circ}$. Avec $20^{\\circ}$ et $100^{\\circ}$, le troisième vaut $180^{\\circ} - 120^{\\circ} = 60^{\\circ}$.",
+      "difficulte": 1,
+      "tags": ["triangle", "somme-des-angles", "calcul"]
+    },
+    {
+      "id": "5E-CH06-023",
+      "lecon": "Les triangles : somme des angles et triangles particuliers",
+      "type": "formule",
+      "recto": "Combien mesure chaque angle d'un triangle équilatéral ?",
+      "verso": "$60^{\\circ}$. Ses trois angles sont égaux et leur somme vaut $180^{\\circ}$, donc chacun vaut $180^{\\circ} \\div 3 = 60^{\\circ}$.",
+      "difficulte": 1,
+      "tags": ["triangle", "equilateral", "angles"]
+    },
+    {
+      "id": "5E-CH06-024",
+      "lecon": "Les triangles : somme des angles et triangles particuliers",
+      "type": "formule",
+      "recto": "Que peut-on dire des deux angles aigus d'un triangle rectangle ?",
+      "verso": "Ils sont complémentaires : leur somme vaut $90^{\\circ}$, puisque l'angle droit occupe déjà $90^{\\circ}$ sur les $180^{\\circ}$ du triangle.",
+      "difficulte": 2,
+      "tags": ["triangle", "rectangle", "complementaires"]
+    },
+    {
+      "id": "5E-CH06-025",
+      "lecon": "Les triangles : somme des angles et triangles particuliers",
+      "type": "definition",
+      "recto": "Comment appelle-t-on les deux angles égaux d'un triangle isocèle ?",
+      "verso": "Les angles à la base. La base est le côté opposé au sommet principal, c'est-à-dire au sommet commun aux deux côtés de même longueur.",
+      "difficulte": 2,
+      "tags": ["triangle", "isocele", "vocabulaire"]
+    },
+    {
+      "id": "5E-CH06-026",
+      "lecon": "Les triangles : somme des angles et triangles particuliers",
+      "type": "formule",
+      "recto": "Pourquoi un triangle isocèle dont un angle mesure $40^{\\circ}$ admet-il deux réponses possibles ?",
+      "verso": "Parce que l'énoncé ne dit pas où se trouve cet angle. Au sommet principal, les angles à la base valent $(180^{\\circ} - 40^{\\circ}) \\div 2 = 70^{\\circ}$ ; à la base, l'autre angle à la base vaut $40^{\\circ}$ et le sommet $100^{\\circ}$.",
+      "difficulte": 3,
+      "tags": ["triangle", "isocele", "piege"]
+    },
+    {
+      "id": "5E-CH06-027",
+      "lecon": "Les triangles : somme des angles et triangles particuliers",
+      "type": "formule",
+      "recto": "A quelle condition sur ses angles un triangle est-il impossible ?",
+      "verso": "Lorsque la somme de deux de ses angles atteint ou dépasse $180^{\\circ}$, car il ne resterait rien pour le troisième. Il est impossible aussi lorsque les trois angles annoncés ne totalisent pas $180^{\\circ}$, comme $70^{\\circ}$, $60^{\\circ}$ et $40^{\\circ}$.",
+      "difficulte": 2,
+      "tags": ["triangle", "somme-des-angles", "impossible"]
+    },
+    {
+      "id": "5E-CH06-028",
+      "lecon": "Les triangles : somme des angles et triangles particuliers",
+      "type": "formule",
+      "recto": "Pourquoi un triangle ne peut-il posséder qu'un seul angle droit ?",
+      "verso": "Parce que deux angles droits feraient déjà $90^{\\circ} + 90^{\\circ} = 180^{\\circ}$ à eux seuls, et il ne resterait rien pour le troisième angle. Pour la même raison, un triangle n'a qu'un seul angle obtus.",
+      "difficulte": 3,
+      "tags": ["triangle", "angle-droit", "piege"]
+    },
+    {
+      "id": "5E-CH06-029",
+      "lecon": "Les triangles : somme des angles et triangles particuliers",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on l'angle extérieur d'un triangle en un sommet ?",
+      "verso": "C'est l'angle situé à l'extérieur du triangle, entre un côté et le prolongement de l'autre côté au-delà de ce sommet.",
+      "difficulte": 2,
+      "tags": ["triangle", "angle-exterieur", "definition"]
+    },
+    {
+      "id": "5E-CH06-030",
+      "lecon": "Les triangles : somme des angles et triangles particuliers",
+      "type": "formule",
+      "recto": "De quelles deux manières calcule-t-on l'angle extérieur d'un triangle en un sommet ?",
+      "verso": "En retranchant de $180^{\\circ}$ l'angle du triangle, dont il est le supplémentaire, ou en additionnant les deux autres angles du triangle. Les deux calculs donnent le même résultat.",
+      "difficulte": 2,
+      "tags": ["triangle", "angle-exterieur", "calcul"]
+    },
+    {
+      "id": "5E-CH06-031",
+      "lecon": "Les triangles : somme des angles et triangles particuliers",
+      "type": "formule",
+      "recto": "Quelles données suffisent à construire entièrement un triangle à la règle et au rapporteur ?",
+      "verso": "Un côté et les deux angles qui le touchent. On trace le côté, on reporte un angle à chacune de ses extrémités, et les deux demi-droites se coupent au troisième sommet.",
+      "difficulte": 2,
+      "tags": ["triangle", "construction"]
+    },
+    {
+      "id": "5E-CH06-032",
+      "lecon": "Les triangles : somme des angles et triangles particuliers",
+      "type": "formule",
+      "recto": "Comment démontre-t-on que la somme des angles d'un triangle vaut $180^{\\circ}$ ?",
+      "verso": "On trace la parallèle au côté opposé passant par un sommet. Les deux angles qui encadrent l'angle de ce sommet sont alternes-internes avec les deux autres angles du triangle, donc égaux à eux, et les trois forment ensemble un angle plat.",
+      "difficulte": 3,
+      "tags": ["triangle", "somme-des-angles", "demonstration"]
+    }
+  ]
+}

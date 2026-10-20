@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Fiche de revision - 5eme - Chapitre 8 : Valeur absolue et comparaison de nombres relatifs</title>
+<style>
+/* ===================================================================
+   FICHE DE REVISION, Collection Hakili Lab, Edition 2026
+   Feuille de style autonome, format A4 pret a imprimer.
+   Bleu #005CB9 · Vert #49A145
+   =================================================================== */
+:root{
+  --bleu:#005CB9; --bleu-fonce:#00429A; --bleu-pale:#E8F1FB; --bleu-bord:#B7D2EE;
+  --vert:#49A145; --vert-fonce:#2F7A2C; --vert-pale:#EDF7EC; --vert-bord:#BCE0B9;
+  --gris:#4A4A4A; --gris-clair:#E4E4E4; --rouge:#B3261E;
+}
+@page{
+  size:A4; margin:15mm;
+  @bottom-center{
+    content:"Collection Hakili Lab, Edition 2026  ·  Fiche de revision  ·  " counter(page) "/" counter(pages);
+    font-family:"Segoe UI",Calibri,Arial,sans-serif; font-size:6.6pt; color:#8A8A8A;
+  }
+}
+*{box-sizing:border-box;}
+body{
+  margin:0; font-family:"Segoe UI",Calibri,Arial,sans-serif;
+  font-size:8.4pt; line-height:1.26; color:#1B1B1B;
+}
+p{margin:0 0 3pt;}
+ul{margin:0 0 3pt; padding-left:11pt;}
+li{margin:0 0 1.2pt;}
+b,strong{color:var(--bleu-fonce);}
+
+/* ------------------------------ ENTETE ---------------------------- */
+.entete{
+  display:flex; align-items:stretch; border:1.6pt solid var(--bleu);
+  border-radius:2.5pt; overflow:hidden; margin-bottom:6pt;
+}
+.entete .num{
+  background:var(--bleu); color:#fff; font-size:20pt; font-weight:700;
+  padding:0 8pt; display:flex; align-items:center; justify-content:center; min-width:34pt;
+}
+.entete .txt{padding:3.5pt 8pt; flex:1;}
+.entete .niveau{
+  font-size:7pt; font-weight:700; letter-spacing:.9pt; color:var(--vert-fonce);
+}
+.entete h1{margin:0; font-size:13.5pt; line-height:1.12; color:var(--bleu-fonce); font-weight:700;}
+.entete .sous{font-size:7pt; color:var(--gris); margin-top:1pt;}
+
+/* --------------------------- BANDEAUX ----------------------------- */
+.bandeau{
+  color:#fff; font-weight:700; font-size:9pt; letter-spacing:1pt;
+  padding:2.4pt 7pt; border-radius:2pt; margin:3pt 0 4pt; break-after:avoid; page-break-after:avoid;
+}
+.bandeau.bleu{background:var(--bleu);}
+.bandeau.vert{background:var(--vert);}
+
+/* --------------------------- COLONNES ----------------------------- */
+.cols{column-count:2; column-gap:7mm; column-fill:balance;}
+
+.cols.bal{column-fill:balance;}
+.bloc{margin-bottom:5pt;}
+.keep{break-inside:avoid; page-break-inside:avoid;}
+
+/* --------------------------- LECONS ------------------------------- */
+h2.lecon{
+  margin:0 0 3pt; font-size:8.6pt; font-weight:700; color:#fff; background:var(--bleu-fonce);
+  padding:1.8pt 5pt; border-radius:1.5pt; break-after:avoid; page-break-after:avoid;
+}
+h3.rub{
+  margin:3.5pt 0 1.5pt; font-size:8.2pt; font-weight:700; color:var(--vert-fonce);
+  border-bottom:.7pt solid var(--vert-bord); padding-bottom:.8pt;
+  break-after:avoid; page-break-after:avoid;
+}
+
+/* --------------------------- ENCADRES ----------------------------- */
+.form{
+  background:var(--bleu-pale); border:.8pt solid var(--bleu-bord); border-left:2.6pt solid var(--bleu);
+  border-radius:2pt; padding:2.4pt 5pt; margin:2.2pt 0 3.4pt;
+  break-inside:avoid; page-break-inside:avoid;
+}
+.form .t{
+  display:block; font-size:6.8pt; font-weight:700; letter-spacing:.6pt;
+  color:var(--bleu); margin-bottom:1.5pt;
+}
+.form .c{text-align:center; font-size:9.1pt; margin:1.6pt 0;}
+.note{background:var(--vert-pale); border-left:2.4pt solid var(--vert); padding:2.4pt 5pt; border-radius:1.5pt; margin:2.5pt 0 4pt; break-inside:avoid;}
+
+/* --------------------------- TABLEAUX ----------------------------- */
+table{width:100%; border-collapse:collapse; font-size:7.6pt; margin:2pt 0 4pt; break-inside:avoid;}
+th{background:var(--bleu); color:#fff; font-weight:700; text-align:left; padding:1.8pt 4pt; font-size:7.2pt;}
+td{border:.6pt solid var(--gris-clair); padding:1.8pt 4pt; vertical-align:top;}
+tr{break-inside:avoid;}
+table.var td{text-align:center; font-size:8pt;}
+table.var td.lab{text-align:left; font-weight:700; color:var(--bleu-fonce); background:var(--bleu-pale);}
+
+/* ----------------------------- PIEGES ----------------------------- */
+table.pieges th:first-child{width:44%;}
+table.pieges td:first-child{color:var(--rouge); background:#FDF1F0;}
+.x{font-weight:700;}
+.v{color:var(--vert-fonce); font-weight:700;}
+
+/* ---------------------------- RECAP ------------------------------- */
+ol.recap{margin:0; padding-left:0; list-style:none; counter-reset:r;}
+ol.recap li{
+  counter-increment:r; position:relative; padding-left:13pt; margin-bottom:1.8pt;
+  break-inside:avoid;
+}
+ol.recap li::before{
+  content:counter(r); position:absolute; left:0; top:.3pt;
+  width:10pt; height:10pt; border-radius:50%; background:var(--vert); color:#fff;
+  font-size:6.6pt; font-weight:700; text-align:center; line-height:10pt;
+}
+
+/* --------------------------- MATHS -------------------------------- */
+.m{font-family:Cambria,Georgia,"Times New Roman",serif;}
+i,var{font-family:Cambria,Georgia,"Times New Roman",serif; font-style:italic;}
+.op{font-family:Cambria,Georgia,"Times New Roman",serif; font-style:normal;}
+.f{display:inline-block; vertical-align:middle; text-align:center;
+   margin:0 .12em; line-height:1.06; font-family:Cambria,Georgia,"Times New Roman",serif;}
+.f>span{display:block; padding:0 .2em;}
+.f>span:first-child{border-bottom:.6pt solid currentColor; padding-bottom:.08em;}
+.f>span:last-child{padding-top:.04em;}
+.rad{border-top:.6pt solid currentColor; padding-top:.12em;}
+/* line-height:0 evite que l'exposant n'ecarte les lignes ; position:relative le
+   repositionne sans qu'il heurte la barre de fraction ni le trait du radical. */
+sup,sub{font-size:.68em; line-height:0; position:relative; vertical-align:baseline;}
+sup{top:-.42em;}
+sub{bottom:-.22em;}
+.pt{white-space:nowrap;}
+/* Les fleches n'ont qu'un glyphe atrophie dans la fonte serif : on les force
+   en sans-serif, ou elles sont franches meme a 8 pt. */
+.ar{font-family:"Segoe UI",Calibri,Arial,"DejaVu Sans",sans-serif; font-style:normal;}
+
+/* ------------------- PIEGES : blocs erreur / correction ------------- */
+.pg{font-size:8.1pt; border-left:2.4pt solid var(--rouge); background:#FDF1F0; border-radius:1.5pt;
+    padding:2pt 5pt; margin:0 0 2.8pt; break-inside:avoid; page-break-inside:avoid;}
+.pg .err{color:var(--rouge); font-weight:600;}
+.pg .cor{color:#1B1B1B; margin-top:.8pt;}
+.pg .cor b{color:var(--bleu-fonce);}
+.v{color:var(--vert-fonce); font-weight:700;}
+
+</style>
+</head>
+<body>
+<header class="entete">
+  <div class="num">8</div>
+  <div class="txt">
+    <div class="niveau">5EME &middot; MATHEMATIQUES</div>
+    <h1>Valeur absolue et comparaison de nombres relatifs</h1>
+    <div class="sous">Leçon 1 : la valeur absolue d'un nombre &middot; Leçon 2 : comparer deux nombres relatifs &middot; Leçon 3 : ranger, encadrer, intercaler</div>
+  </div>
+</header>
+
+<div class="bandeau bleu" style="margin-top:0">L'ESSENTIEL</div>
+<div class="cols">
+
+<!-- ================= LECON 1 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 1&nbsp;: La valeur absolue d'un nombre</h2>
+<p><b>Définition.</b> La <b>valeur absolue</b> d'un nombre relatif est sa <b>distance à zéro</b> sur la droite graduée. Elle est <b>toujours positive ou nulle</b>. On la note entre deux barres : <span class="pt m">|<i>a</i>|</span>.</p></div>
+<div class="form">
+  <span class="t">VALEUR ABSOLUE&nbsp;: COMMENT L'OBTENIR</span>
+  <div class="c m"><i>a</i> positif ou nul <span class="ar">&#8594;</span> |<i>a</i>|&#8239;=&#8239;<i>a</i> : on <b>recopie</b></div>
+  <div class="c m"><i>a</i> négatif <span class="ar">&#8594;</span> |<i>a</i>| est l'<b>opposé</b> de <i>a</i> : on efface le signe &#8722;</div>
+  <div class="c m">|+13|&#8239;=&#8239;13 &nbsp; |&#8722;9,2|&#8239;=&#8239;9,2 &nbsp; |0|&#8239;=&#8239;0</div>
+</div>
+<p><b>Propriété.</b> Un nombre et son opposé ont la <b>même valeur absolue</b> : <span class="pt m">|+5|&#8239;=&#8239;|&#8722;5|&#8239;=&#8239;5</span>. Le signe dit <b>de quel côté</b>, la valeur absolue dit <b>de combien</b>.</p>
+<p><b>Calcul.</b> S'il y a une opération entre les barres, on l'<b>effectue d'abord</b> : les barres jouent le rôle de <b>parenthèses</b>.</p>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Lire une valeur absolue dans l'autre sens</h3>
+<p>Les points situés à 3 unités de 0 sont <span class="pt m">+3</span> et <span class="pt m">&#8722;3</span> : il y a <b>deux</b> réponses, pas une.</p>
+<div class="form">
+  <span class="t">SOLUTIONS DE |<i>x</i>|&#8239;=&#8239;<i>a</i></span>
+  <div class="c m"><i>a</i>&#8239;&gt;&#8239;0 <span class="ar">&#8594;</span> <b>deux</b> solutions : <i>x</i>&#8239;=&#8239;+<i>a</i> ou <i>x</i>&#8239;=&#8239;&#8722;<i>a</i></div>
+  <div class="c m"><i>a</i>&#8239;=&#8239;0 <span class="ar">&#8594;</span> <b>une seule</b> : <i>x</i>&#8239;=&#8239;0</div>
+  <div class="c m"><i>a</i>&#8239;&lt;&#8239;0 <span class="ar">&#8594;</span> <b>aucune</b> solution</div>
+</div>
+<div class="note">Une valeur absolue est une <b>longueur</b> : elle n'est jamais négative, et <span class="pt m">|0|&#8239;=&#8239;0</span> est la seule qui ne soit pas strictement positive.</div>
+</div>
+
+<!-- ================= LECON 2 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 2&nbsp;: Comparer deux nombres relatifs</h2>
+<p><b>Règle de base.</b> De deux nombres relatifs, le plus petit est celui situé <b>le plus à gauche</b> sur la droite graduée.</p></div>
+<div class="form">
+  <span class="t">REGLES DE COMPARAISON</span>
+  <div class="c m">tout négatif&#8239;&lt;&#8239;0&#8239;&lt;&#8239;tout positif</div>
+  <div class="c m">deux <b>positifs</b> : le plus grand est celui de plus <b>grande</b> valeur absolue</div>
+  <div class="c m">deux <b>négatifs</b> : le plus grand est celui de plus <b>petite</b> valeur absolue, c'est-à-dire le plus proche de 0</div>
+</div>
+<p>Une comparaison n'est pas un calcul : le résultat est une <b>phrase</b>, comme <span class="pt m">&#8722;8&#8239;&lt;&#8239;&#8722;7,6</span>. Le symbole s'<b>ouvre du côté du plus grand</b> ; sa pointe désigne le plus petit.</p>
+<div class="note"><b>Comparer.</b> Signes <b>différents</b> : c'est fini, le négatif est le plus petit. Deux <b>positifs</b> : ordre habituel des décimaux. Deux <b>négatifs</b> : compare les valeurs absolues, puis <b>inverse</b> la conclusion.</div>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Les quatre symboles et l'encadrement</h3>
+<ul>
+<li><b>Stricts</b> : <span class="m">&lt;</span> (plus petit que) et <span class="m">&gt;</span> (plus grand que) <b>interdisent</b> l'égalité.</li>
+<li><b>Larges</b> : <span class="m">&#8804;</span> (inférieur ou égal) et <span class="m">&#8805;</span> (supérieur ou égal) <b>autorisent</b> l'égalité.</li>
+</ul>
+<p><b>Encadrer.</b> Une écriture comme <span class="pt m">&#8722;3&#8239;&#8804;&#8239;<i>a</i>&#8239;&#8804;&#8239;&#8722;1</span> se coupe en deux : <span class="pt m">&#8722;3&#8239;&#8804;&#8239;<i>a</i></span> et <span class="pt m"><i>a</i>&#8239;&#8804;&#8239;&#8722;1</span>. Le symbole large <b>garde les bornes</b> : les entiers sont &#8722;3, &#8722;2 et &#8722;1 ; avec <span class="pt m">&#8722;3&#8239;&lt;&#8239;<i>a</i>&#8239;&lt;&#8239;&#8722;1</span>, il ne reste que &#8722;2.</p>
+</div>
+
+<!-- ================= LECON 3 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 3&nbsp;: Ranger, encadrer, intercaler</h2>
+<p><b>Ranger</b>, c'est écrire les nombres dans l'ordre <b>croissant</b> (du plus petit au plus grand) ou <b>décroissant</b>. On garde le <b>même symbole</b> du début à la fin : <span class="pt m">&#8722;9,2&#8239;&lt;&#8239;&#8722;2,3&#8239;&lt;&#8239;0&#8239;&lt;&#8239;+1,4</span>, puis on <b>recompte</b> les nombres.</p></div>
+<ul>
+<li><b>Encadrer</b> par deux entiers consécutifs, c'est trouver l'entier juste avant et l'entier juste après : <span class="pt m">&#8722;5&#8239;&lt;&#8239;&#8722;4,2&#8239;&lt;&#8239;&#8722;4</span>.</li>
+<li>Encadrement plus fin, par des décimaux à deux chiffres après la virgule : <span class="pt m">&#8722;5,59&#8239;&lt;&#8239;&#8722;5,583&#8239;&lt;&#8239;&#8722;5,58</span>.</li>
+<li><b>Intercaler</b>, c'est chercher les nombres qui tiennent entre deux autres : entre &#8722;4,2 et &#8722;1,8 tiennent &#8722;4, &#8722;3 et &#8722;2.</li>
+</ul>
+<div class="note"><b>Ranger une liste.</b> Sépare-la en trois paquets : les négatifs, le zéro s'il y est, les positifs. Range les négatifs entre eux, le plus loin de 0 en premier ; range les positifs entre eux, le plus proche de 0 en premier.</div>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Distance entre deux points</h3>
+<p>Sur un axe, la <b>distance</b> entre deux points est l'écart qui les sépare : elle est <b>toujours positive</b>.</p>
+<div class="form">
+  <span class="t">ECART ENTRE DEUX POINTS</span>
+  <div class="c m">même côté de 0 <span class="ar">&#8594;</span> on <b>retranche</b> : de &#8722;12 à &#8722;4, 12&#8239;&#8722;&#8239;4&#8239;=&#8239;8</div>
+  <div class="c m">de part et d'autre de 0 <span class="ar">&#8594;</span> on <b>ajoute</b> : entre &#8722;3 et +4, 3&#8239;+&#8239;4&#8239;=&#8239;7</div>
+</div>
+</div>
+
+</div>
+
+<div class="bandeau vert">PIEGES ET ERREURS FREQUENTES</div>
+<div class="cols">
+<div class="pg"><div class="err"><span class="x">&#10007;</span> La distance à zéro de &#8722;7 est &#8722;7 &nbsp;&middot;&nbsp; <span class="pt m">|<i>x</i>|&#8239;=&#8239;&#8722;8</span> a pour solution <span class="pt m"><i>x</i>&#8239;=&#8239;&#8722;8</span></div><div class="cor"><span class="v">&#10003;</span> Une valeur absolue est une <b>longueur</b> : elle n'est jamais négative. <span class="pt m">|&#8722;7|&#8239;=&#8239;7</span>, et <span class="pt m">|<i>x</i>|&#8239;=&#8239;&#8722;8</span> n'a <b>aucune</b> solution.</div></div>
+<div class="pg"><div class="err"><span class="x">&#10007;</span> « <span class="pt m">&#8722;<i>a</i></span> est forcément négatif. »</div><div class="cor"><span class="v">&#10003;</span> Le signe &#8722; devant une lettre veut dire « l'<b>opposé de</b> », et l'opposé d'un négatif est positif : si <span class="pt m"><i>a</i>&#8239;=&#8239;&#8722;3</span>, alors <span class="pt m">&#8722;<i>a</i>&#8239;=&#8239;+3</span>.</div></div>
+<div class="pg"><div class="err"><span class="x">&#10007;</span> <span class="pt m">&#8722;3,5&#8239;&gt;&#8239;&#8722;2,8</span> « parce que <span class="pt m">3,5&#8239;&gt;&#8239;2,8</span> »</div><div class="cor"><span class="v">&#10003;</span> Comparer deux négatifs, ce n'est <b>pas</b> comparer leurs valeurs absolues : le plus grand est le plus <b>proche</b> de zéro, donc <span class="pt m">&#8722;3,5&#8239;&lt;&#8239;&#8722;2,8</span>.</div></div>
+<div class="pg"><div class="err"><span class="x">&#10007;</span> « 0 est positif, donc <span class="pt m">0&#8239;&gt;&#8239;+1</span>. »</div><div class="cor"><span class="v">&#10003;</span> 0 n'est ni <b>strictement</b> positif ni <b>strictement</b> négatif : il est plus petit que tous les positifs et plus grand que tous les négatifs, donc <span class="pt m">0&#8239;&lt;&#8239;+1</span>.</div></div>
+<div class="pg"><div class="err"><span class="x">&#10007;</span> <span class="pt m">&#8722;4&#8239;&lt;&#8239;&#8722;4,2&#8239;&lt;&#8239;&#8722;3</span> &nbsp;&middot;&nbsp; l'écart entre &#8722;3 et +4 vaut <span class="pt m">4&#8239;&#8722;&#8239;3&#8239;=&#8239;1</span></div><div class="cor"><span class="v">&#10003;</span> <span class="pt m">&#8722;4,2</span> est à <b>gauche</b> de <span class="pt m">&#8722;4</span> : <span class="pt m">&#8722;5&#8239;&lt;&#8239;&#8722;4,2&#8239;&lt;&#8239;&#8722;4</span>. Et &#8722;3 et +4 sont <b>de part et d'autre</b> de zéro : on <b>ajoute</b>, <span class="pt m">3&#8239;+&#8239;4&#8239;=&#8239;7</span>.</div></div>
+<div class="pg"><div class="err"><span class="x">&#10007;</span> <span class="pt m">7&#8239;&lt;&#8239;7</span> &nbsp;&middot;&nbsp; dans <span class="pt m">&#8722;3&#8239;&#8804;&#8239;<i>a</i>&#8239;&#8804;&#8239;&#8722;1</span>, seul &#8722;2 convient</div><div class="cor"><span class="v">&#10003;</span> <span class="m">&lt;</span> <b>interdit</b> l'égalité (<span class="pt m">7&#8239;&lt;&#8239;7</span> est faux), <span class="m">&#8804;</span> l'<b>autorise</b> (<span class="pt m">7&#8239;&#8804;&#8239;7</span> est vrai). Le symbole large garde les bornes : &#8722;3, &#8722;2 et &#8722;1 conviennent.</div></div>
+
+</div>
+
+<div class="bandeau bleu">A SAVOIR PAR COEUR AVANT LE DEVOIR</div>
+<div class="cols">
+<ol class="recap">
+<li><span class="pt m">|<i>a</i>|</span> est la <b>distance de <i>a</i> à zéro</b> : elle est toujours <b>positive ou nulle</b>, un nombre et son opposé ont la même valeur absolue, et <span class="pt m">|0|&#8239;=&#8239;0</span>.</li>
+<li>Les barres sont des <b>parenthèses</b> : on calcule d'abord ce qui est dedans. Positif ou nul, on recopie ; négatif, on efface le signe &#8722;.</li>
+<li><span class="pt m">|<i>x</i>|&#8239;=&#8239;<i>a</i></span> : <b>deux</b> solutions <span class="pt m">+<i>a</i></span> et <span class="pt m">&#8722;<i>a</i></span> si <span class="pt m"><i>a</i>&#8239;&gt;&#8239;0</span> ; <b>une seule</b> si <span class="pt m"><i>a</i>&#8239;=&#8239;0</span> ; <b>aucune</b> si <span class="pt m"><i>a</i>&#8239;&lt;&#8239;0</span>.</li>
+<li>Le plus petit est le plus <b>à gauche</b> : tout négatif&#8239;&lt;&#8239;0&#8239;&lt;&#8239;tout positif. Entre deux <b>négatifs</b>, le plus grand est le plus <b>proche de 0</b>.</li>
+<li><span class="m">&lt;</span> et <span class="m">&gt;</span> interdisent l'égalité ; <span class="m">&#8804;</span> et <span class="m">&#8805;</span> l'autorisent. Un <b>encadrement</b> <span class="pt m">&#8722;3&#8239;&#8804;&#8239;<i>a</i>&#8239;&#8804;&#8239;&#8722;1</span> se coupe en <span class="pt m">&#8722;3&#8239;&#8804;&#8239;<i>a</i></span> et <span class="pt m"><i>a</i>&#8239;&#8804;&#8239;&#8722;1</span>.</li>
+<li>Ranger : le <b>même symbole</b> du début à la fin, puis on recompte. Encadrer un négatif se fait dans l'autre sens : <span class="pt m">&#8722;5&#8239;&lt;&#8239;&#8722;4,2&#8239;&lt;&#8239;&#8722;4</span>.</li>
+<li>Ecart entre deux points : toujours <b>positif</b>. Du <b>même côté</b> de 0, on retranche ; <b>de part et d'autre</b> de 0, on ajoute.</li>
+</ol>
+</div>
+
+</body>
+</html>

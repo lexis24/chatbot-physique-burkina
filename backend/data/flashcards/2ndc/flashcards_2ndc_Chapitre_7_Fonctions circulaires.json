@@ -1,0 +1,350 @@
+{
+  "niveau": "2nde C",
+  "chapitre": "Chapitre 7 : Fonctions circulaires",
+  "source": "maths/2ndc/Chapitre_7_Fonctions_circulaires",
+  "nombre_cartes": 38,
+  "cartes": [
+    {
+      "id": "2C-CH07-001",
+      "lecon": "Cercle trigonométrique, radian, cosinus et sinus",
+      "type": "definition",
+      "recto": "Qu'est-ce que le radian ?",
+      "verso": "C'est l'unité d'angle telle que $360^{\\circ} = 2\\pi$ radians. Un angle de $1$ radian découpe, sur un cercle de rayon $1$, un arc de longueur $1$ : l'angle se mesure donc par la longueur de son arc.",
+      "difficulte": 1,
+      "tags": ["radian", "definition", "angle"]
+    },
+    {
+      "id": "2C-CH07-002",
+      "lecon": "Cercle trigonométrique, radian, cosinus et sinus",
+      "type": "formule",
+      "recto": "Par quel nombre multiplie-t-on pour convertir un angle des degrés vers les radians, puis des radians vers les degrés ?",
+      "verso": "Des degrés vers les radians, on multiplie par $\\dfrac{\\pi}{180}$ ; des radians vers les degrés, on multiplie par $\\dfrac{180}{\\pi}$. La conversion ne change pas l'angle, seulement l'unité dans laquelle on le mesure.",
+      "difficulte": 2,
+      "tags": ["radian", "conversion", "degre"]
+    },
+    {
+      "id": "2C-CH07-003",
+      "lecon": "Cercle trigonométrique, radian, cosinus et sinus",
+      "type": "formule",
+      "recto": "A quelles mesures en radians correspondent $180^{\\circ}$, $90^{\\circ}$, $60^{\\circ}$, $45^{\\circ}$ et $30^{\\circ}$ ?",
+      "verso": "$180^{\\circ} = \\pi$, $90^{\\circ} = \\dfrac{\\pi}{2}$, $60^{\\circ} = \\dfrac{\\pi}{3}$, $45^{\\circ} = \\dfrac{\\pi}{4}$ et $30^{\\circ} = \\dfrac{\\pi}{6}$. Toutes ces égalités se retrouvent à partir de $360^{\\circ} = 2\\pi$.",
+      "difficulte": 1,
+      "tags": ["radian", "conversion", "valeurs-usuelles"]
+    },
+    {
+      "id": "2C-CH07-004",
+      "lecon": "Cercle trigonométrique, radian, cosinus et sinus",
+      "type": "definition",
+      "recto": "Qu'est-ce que le cercle trigonométrique ?",
+      "verso": "C'est le cercle de centre $O$ et de rayon $1$, muni d'un sens de parcours positif appelé sens direct, contraire à celui des aiguilles d'une montre. Le point $I(1\\,;0)$ y sert de point de départ, et $J$ a pour coordonnées $(0\\,;1)$.",
+      "difficulte": 1,
+      "tags": ["cercle-trigonometrique", "definition", "sens-direct"]
+    },
+    {
+      "id": "2C-CH07-005",
+      "lecon": "Cercle trigonométrique, radian, cosinus et sinus",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on point image d'un réel $x$ sur le cercle trigonométrique ?",
+      "verso": "C'est le point $M$ obtenu en parcourant, à partir de $I$, un arc de longueur $|x|$ : dans le sens direct si $x$ est positif, dans le sens contraire si $x$ est négatif. C'est l'enroulement de la droite numérique sur le cercle.",
+      "difficulte": 2,
+      "tags": ["cercle-trigonometrique", "enroulement", "point-image"]
+    },
+    {
+      "id": "2C-CH07-006",
+      "lecon": "Cercle trigonométrique, radian, cosinus et sinus",
+      "type": "definition",
+      "recto": "Combien de réels admettent le même point image sur le cercle trigonométrique ?",
+      "verso": "Une infinité : deux réels ont le même point image lorsqu'ils diffèrent d'un nombre entier de tours, donc d'un multiple de $2\\pi$. En revanche, un réel donné n'a qu'un seul point image.",
+      "difficulte": 2,
+      "tags": ["cercle-trigonometrique", "point-image"]
+    },
+    {
+      "id": "2C-CH07-007",
+      "lecon": "Cercle trigonométrique, radian, cosinus et sinus",
+      "type": "definition",
+      "recto": "Que représentent le cosinus et le sinus d'un réel $x$ sur le cercle trigonométrique ?",
+      "verso": "Si $M$ est le point image de $x$, alors $\\cos x$ est l'abscisse de $M$ et $\\sin x$ son ordonnée : $M(\\cos x\\,;\\sin x)$. Le cosinus se lit horizontalement, le sinus verticalement.",
+      "difficulte": 1,
+      "tags": ["cosinus", "sinus", "definition"]
+    },
+    {
+      "id": "2C-CH07-008",
+      "lecon": "Cercle trigonométrique, radian, cosinus et sinus",
+      "type": "formule",
+      "recto": "Pourquoi une égalité comme $\\cos x = 1{,}5$ est-elle impossible ?",
+      "verso": "Parce que le point image ne quitte jamais le cercle de rayon $1$ : ses deux coordonnées vérifient $-1 \\le \\cos x \\le 1$ et $-1 \\le \\sin x \\le 1$. Un résultat hors de cet intervalle signale une erreur de calcul.",
+      "difficulte": 2,
+      "tags": ["cosinus", "sinus", "encadrement", "piege"]
+    },
+    {
+      "id": "2C-CH07-009",
+      "lecon": "Cercle trigonométrique, radian, cosinus et sinus",
+      "type": "formule",
+      "recto": "Quelle égalité relie $\\cos x$ et $\\sin x$ pour tout réel $x$ ?",
+      "verso": "L'identité fondamentale $\\cos^{2}x + \\sin^{2}x = 1$. Elle traduit le théorème de Pythagore pour le point image $M$, situé à la distance $1$ de l'origine. On écrit $\\cos^{2}x$ pour $(\\cos x)^{2}$.",
+      "difficulte": 2,
+      "tags": ["identite-fondamentale", "cosinus", "sinus"]
+    },
+    {
+      "id": "2C-CH07-010",
+      "lecon": "Cercle trigonométrique, radian, cosinus et sinus",
+      "type": "formule",
+      "recto": "Quels sont les signes de $\\cos x$ et de $\\sin x$ dans chacun des quatre quadrants ?",
+      "verso": "Premier quadrant : les deux sont positifs. Deuxième : $\\cos x < 0$ et $\\sin x > 0$. Troisième : les deux sont négatifs. Quatrième : $\\cos x > 0$ et $\\sin x < 0$. Ces signes se lisent sur la position du point image, à droite ou à gauche, en haut ou en bas.",
+      "difficulte": 2,
+      "tags": ["quadrant", "signe", "cosinus", "sinus"]
+    },
+    {
+      "id": "2C-CH07-011",
+      "lecon": "Cercle trigonométrique, radian, cosinus et sinus",
+      "type": "formule",
+      "recto": "Que valent les cosinus et les sinus de $0$, $\\dfrac{\\pi}{6}$, $\\dfrac{\\pi}{4}$, $\\dfrac{\\pi}{3}$ et $\\dfrac{\\pi}{2}$ ?",
+      "verso": "Les sinus valent, dans l'ordre, $0$, $\\dfrac{1}{2}$, $\\dfrac{\\sqrt2}{2}$, $\\dfrac{\\sqrt3}{2}$ et $1$ ; les cosinus forment la même liste lue à l'envers : $1$, $\\dfrac{\\sqrt3}{2}$, $\\dfrac{\\sqrt2}{2}$, $\\dfrac{1}{2}$ et $0$.",
+      "difficulte": 2,
+      "tags": ["valeurs-remarquables", "cosinus", "sinus"]
+    },
+    {
+      "id": "2C-CH07-012",
+      "lecon": "Relations entre angles associés",
+      "type": "formule",
+      "recto": "Que valent $\\cos(-x)$ et $\\sin(-x)$ ?",
+      "verso": "$\\cos(-x) = \\cos x$ et $\\sin(-x) = -\\sin x$. Les points images de $x$ et de $-x$, réels dits opposés, sont symétriques par rapport à l'axe des abscisses : l'abscisse est conservée, l'ordonnée change de signe.",
+      "difficulte": 1,
+      "tags": ["angles-associes", "opposes"]
+    },
+    {
+      "id": "2C-CH07-013",
+      "lecon": "Relations entre angles associés",
+      "type": "formule",
+      "recto": "Que valent $\\cos(\\pi - x)$ et $\\sin(\\pi - x)$ ?",
+      "verso": "$\\cos(\\pi - x) = -\\cos x$ et $\\sin(\\pi - x) = \\sin x$. Les réels $x$ et $\\pi - x$, dont la somme vaut $\\pi$, sont dits supplémentaires : leurs points images sont symétriques par rapport à l'axe des ordonnées.",
+      "difficulte": 2,
+      "tags": ["angles-associes", "supplementaires"]
+    },
+    {
+      "id": "2C-CH07-014",
+      "lecon": "Relations entre angles associés",
+      "type": "formule",
+      "recto": "Que valent $\\cos(\\pi + x)$ et $\\sin(\\pi + x)$ ?",
+      "verso": "$\\cos(\\pi + x) = -\\cos x$ et $\\sin(\\pi + x) = -\\sin x$. Ajouter $\\pi$ revient à faire un demi-tour de plus : le point image devient le point diamétralement opposé. C'est le seul cas où les deux coordonnées changent de signe.",
+      "difficulte": 2,
+      "tags": ["angles-associes", "demi-tour"]
+    },
+    {
+      "id": "2C-CH07-015",
+      "lecon": "Relations entre angles associés",
+      "type": "formule",
+      "recto": "Que valent $\\cos\\left(\\dfrac{\\pi}{2} - x\\right)$ et $\\sin\\left(\\dfrac{\\pi}{2} - x\\right)$ ?",
+      "verso": "$\\cos\\left(\\dfrac{\\pi}{2} - x\\right) = \\sin x$ et $\\sin\\left(\\dfrac{\\pi}{2} - x\\right) = \\cos x$. Les réels $x$ et $\\dfrac{\\pi}{2} - x$ sont complémentaires : la symétrie par rapport à la première bissectrice échange abscisse et ordonnée.",
+      "difficulte": 2,
+      "tags": ["angles-associes", "complementaires"]
+    },
+    {
+      "id": "2C-CH07-016",
+      "lecon": "Relations entre angles associés",
+      "type": "formule",
+      "recto": "Que valent $\\cos\\left(\\dfrac{\\pi}{2} + x\\right)$ et $\\sin\\left(\\dfrac{\\pi}{2} + x\\right)$ ?",
+      "verso": "$\\cos\\left(\\dfrac{\\pi}{2} + x\\right) = -\\sin x$ et $\\sin\\left(\\dfrac{\\pi}{2} + x\\right) = \\cos x$. Comme dans toutes les relations en $\\dfrac{\\pi}{2}$, cosinus et sinus échangent leurs rôles ; seul le cosinus prend ici un signe moins.",
+      "difficulte": 3,
+      "tags": ["angles-associes", "quart-de-tour"]
+    },
+    {
+      "id": "2C-CH07-017",
+      "lecon": "Relations entre angles associés",
+      "type": "formule",
+      "recto": "Que devient le cosinus ou le sinus d'un réel auquel on ajoute $2k\\pi$, avec $k$ entier relatif ?",
+      "verso": "Rien ne change : $\\cos(x + 2k\\pi) = \\cos x$ et $\\sin(x + 2k\\pi) = \\sin x$. Ajouter $2k\\pi$ revient à faire $k$ tours complets de plus, donc le point image ne bouge pas.",
+      "difficulte": 1,
+      "tags": ["angles-associes", "tours-complets"]
+    },
+    {
+      "id": "2C-CH07-018",
+      "lecon": "Relations entre angles associés",
+      "type": "formule",
+      "recto": "Pourquoi $\\sin(\\pi - x)$ et $\\sin(\\pi + x)$ n'ont-ils pas le même signe ?",
+      "verso": "Parce que les symétries diffèrent. Le réel $\\pi - x$ correspond à la symétrie d'axe vertical, qui conserve l'ordonnée : $\\sin(\\pi - x) = \\sin x$. Le réel $\\pi + x$ correspond à la symétrie de centre $O$, qui retourne l'ordonnée : $\\sin(\\pi + x) = -\\sin x$.",
+      "difficulte": 3,
+      "tags": ["angles-associes", "piege", "signe"]
+    },
+    {
+      "id": "2C-CH07-019",
+      "lecon": "Relations entre angles associés",
+      "type": "formule",
+      "recto": "Dans quelles relations d'angles associés le cosinus et le sinus échangent-ils leurs rôles ?",
+      "verso": "Uniquement dans celles qui font intervenir $\\dfrac{\\pi}{2} - x$ ou $\\dfrac{\\pi}{2} + x$. Avec $-x$, $\\pi - x$ ou $\\pi + x$, le cosinus reste un cosinus et le sinus reste un sinus : seuls les signes peuvent changer.",
+      "difficulte": 3,
+      "tags": ["angles-associes", "piege"]
+    },
+    {
+      "id": "2C-CH07-020",
+      "lecon": "Les fonctions $x \\mapsto \\cos x$ et $x \\mapsto \\sin x$",
+      "type": "definition",
+      "recto": "Quelle est la parité de la fonction $x \\mapsto \\cos x$ ?",
+      "verso": "Elle est paire, car $\\cos(-x) = \\cos x$ pour tout réel $x$. Sa courbe, appelée cosinusoïde, est symétrique par rapport à l'axe des ordonnées.",
+      "difficulte": 1,
+      "tags": ["fonction-cosinus", "parite", "cosinusoide"]
+    },
+    {
+      "id": "2C-CH07-021",
+      "lecon": "Les fonctions $x \\mapsto \\cos x$ et $x \\mapsto \\sin x$",
+      "type": "definition",
+      "recto": "Quelle est la parité de la fonction $x \\mapsto \\sin x$ ?",
+      "verso": "Elle est impaire, car $\\sin(-x) = -\\sin x$ pour tout réel $x$. Sa courbe, appelée sinusoïde, est symétrique par rapport à l'origine $O$ du repère.",
+      "difficulte": 1,
+      "tags": ["fonction-sinus", "parite", "sinusoide"]
+    },
+    {
+      "id": "2C-CH07-022",
+      "lecon": "Les fonctions $x \\mapsto \\cos x$ et $x \\mapsto \\sin x$",
+      "type": "formule",
+      "recto": "Quelle est la période des fonctions cosinus et sinus ?",
+      "verso": "Elles sont périodiques de période $2\\pi$ : $\\cos(x + 2\\pi) = \\cos x$ et $\\sin(x + 2\\pi) = \\sin x$. Leur courbe se reproduit à l'identique tous les $2\\pi$. Les multiples de $2\\pi$ sont aussi des périodes, mais $2\\pi$ est la plus petite.",
+      "difficulte": 2,
+      "tags": ["periodicite", "fonction-cosinus", "fonction-sinus"]
+    },
+    {
+      "id": "2C-CH07-023",
+      "lecon": "Les fonctions $x \\mapsto \\cos x$ et $x \\mapsto \\sin x$",
+      "type": "formule",
+      "recto": "Quel est le sens de variation de la fonction cosinus sur $[0\\,;2\\pi]$ ?",
+      "verso": "Elle est décroissante sur $[0\\,;\\pi]$, de $1$ à $-1$, puis croissante sur $[\\pi\\,;2\\pi]$, de $-1$ à $1$. Cela se lit sur le cercle : l'abscisse du point image diminue quand il passe par le haut, puis remonte quand il revient par le bas.",
+      "difficulte": 2,
+      "tags": ["fonction-cosinus", "sens-de-variation"]
+    },
+    {
+      "id": "2C-CH07-024",
+      "lecon": "Les fonctions $x \\mapsto \\cos x$ et $x \\mapsto \\sin x$",
+      "type": "formule",
+      "recto": "Quel est le sens de variation de la fonction sinus sur $\\left[-\\dfrac{\\pi}{2}\\,;\\dfrac{3\\pi}{2}\\right]$ ?",
+      "verso": "Elle est croissante sur $\\left[-\\dfrac{\\pi}{2}\\,;\\dfrac{\\pi}{2}\\right]$, de $-1$ à $1$, puis décroissante sur $\\left[\\dfrac{\\pi}{2}\\,;\\dfrac{3\\pi}{2}\\right]$, de $1$ à $-1$.",
+      "difficulte": 2,
+      "tags": ["fonction-sinus", "sens-de-variation"]
+    },
+    {
+      "id": "2C-CH07-025",
+      "lecon": "Les fonctions $x \\mapsto \\cos x$ et $x \\mapsto \\sin x$",
+      "type": "definition",
+      "recto": "Comment distingue-t-on la cosinusoïde de la sinusoïde ?",
+      "verso": "Par leur position en $x = 0$ : la cosinusoïde est en haut, au point $(0\\,;1)$, tandis que la sinusoïde passe par l'origine. Les deux courbes ont pourtant la même forme, décalée horizontalement de $\\dfrac{\\pi}{2}$.",
+      "difficulte": 2,
+      "tags": ["cosinusoide", "sinusoide", "courbe"]
+    },
+    {
+      "id": "2C-CH07-026",
+      "lecon": "Les fonctions $x \\mapsto \\cos x$ et $x \\mapsto \\sin x$",
+      "type": "formule",
+      "recto": "Comment démontre-t-on qu'un réel $T$ strictement positif est une période d'une fonction $f$ ?",
+      "verso": "On calcule $f(x + T)$ et l'on montre que le résultat est $f(x)$, pour tout réel $x$. Il n'y a rien d'autre à faire : une observation graphique peut suggérer une période, seul le calcul l'établit.",
+      "difficulte": 2,
+      "tags": ["periodicite", "demonstration"]
+    },
+    {
+      "id": "2C-CH07-027",
+      "lecon": "Les fonctions $x \\mapsto \\cos x$ et $x \\mapsto \\sin x$",
+      "type": "definition",
+      "recto": "Pourquoi la périodicité de la fonction cosinus ne limite-t-elle pas son ensemble de définition à $[0\\,;2\\pi]$ ?",
+      "verso": "Parce que la fonction est définie sur $\\mathbb{R}$ tout entier. La période dit seulement que le motif se répète : la courbe se prolonge indéfiniment des deux côtés.",
+      "difficulte": 3,
+      "tags": ["periodicite", "piege", "fonction-cosinus"]
+    },
+    {
+      "id": "2C-CH07-028",
+      "lecon": "Les fonctions $x \\mapsto \\cos x$ et $x \\mapsto \\sin x$",
+      "type": "formule",
+      "recto": "Pourquoi la connaissance de la fonction cosinus sur $[0\\,;\\pi]$ suffit-elle à la connaître sur $\\mathbb{R}$ ?",
+      "verso": "La périodicité ramène tout réel à un réel de $]-\\pi\\,;\\pi]$ sans changer le cosinus ; la parité ramène ensuite un réel négatif à son opposé, qui appartient à $[0\\,;\\pi]$. Toute valeur se lit donc sur cet intervalle.",
+      "difficulte": 3,
+      "tags": ["fonction-cosinus", "parite", "periodicite"]
+    },
+    {
+      "id": "2C-CH07-029",
+      "lecon": "Equations $\\cos x = a$ et $\\sin x = b$",
+      "type": "formule",
+      "recto": "A quelle condition l'équation $\\cos x = a$ admet-elle des solutions ?",
+      "verso": "Il faut que $-1 \\le a \\le 1$, car un cosinus est toujours compris entre $-1$ et $1$. Sinon l'ensemble des solutions est vide. La même condition vaut pour l'équation $\\sin x = b$.",
+      "difficulte": 2,
+      "tags": ["equation-trigonometrique", "condition"]
+    },
+    {
+      "id": "2C-CH07-030",
+      "lecon": "Equations $\\cos x = a$ et $\\sin x = b$",
+      "type": "formule",
+      "recto": "Quelles sont les solutions dans $\\mathbb{R}$ de l'équation $\\cos x = a$, lorsqu'on connaît un réel $\\alpha$ tel que $\\cos \\alpha = a$ ?",
+      "verso": "$x = \\alpha + 2k\\pi$ ou $x = -\\alpha + 2k\\pi$, avec $k \\in \\mathbb{Z}$. Les deux points images correspondants sont symétriques par rapport à l'axe des abscisses.",
+      "difficulte": 2,
+      "tags": ["equation-trigonometrique", "cosinus"]
+    },
+    {
+      "id": "2C-CH07-031",
+      "lecon": "Equations $\\cos x = a$ et $\\sin x = b$",
+      "type": "formule",
+      "recto": "Quelles sont les solutions dans $\\mathbb{R}$ de l'équation $\\sin x = b$, lorsqu'on connaît un réel $\\beta$ tel que $\\sin \\beta = b$ ?",
+      "verso": "$x = \\beta + 2k\\pi$ ou $x = \\pi - \\beta + 2k\\pi$, avec $k \\in \\mathbb{Z}$. Les deux points images correspondants sont symétriques par rapport à l'axe des ordonnées.",
+      "difficulte": 2,
+      "tags": ["equation-trigonometrique", "sinus"]
+    },
+    {
+      "id": "2C-CH07-032",
+      "lecon": "Equations $\\cos x = a$ et $\\sin x = b$",
+      "type": "formule",
+      "recto": "Quelles sont les solutions des équations $\\cos x = 1$, $\\cos x = -1$, $\\sin x = 1$ et $\\sin x = -1$ ?",
+      "verso": "Dans l'ordre : $x = 2k\\pi$ ; $x = \\pi + 2k\\pi$ ; $x = \\dfrac{\\pi}{2} + 2k\\pi$ ; $x = -\\dfrac{\\pi}{2} + 2k\\pi$, avec $k$ entier relatif. La droite est alors tangente au cercle, donc il ne reste qu'une seule famille.",
+      "difficulte": 2,
+      "tags": ["equation-trigonometrique", "cas-particuliers"]
+    },
+    {
+      "id": "2C-CH07-033",
+      "lecon": "Equations $\\cos x = a$ et $\\sin x = b$",
+      "type": "formule",
+      "recto": "Quelles sont les solutions des équations $\\cos x = 0$ et $\\sin x = 0$ ?",
+      "verso": "$\\cos x = 0$ donne $x = \\dfrac{\\pi}{2} + k\\pi$, et $\\sin x = 0$ donne $x = k\\pi$, avec $k$ entier relatif. Les deux points images sont ici diamétralement opposés, ce qui permet de réunir les deux familles en une seule avec $k\\pi$.",
+      "difficulte": 3,
+      "tags": ["equation-trigonometrique", "cas-particuliers"]
+    },
+    {
+      "id": "2C-CH07-034",
+      "lecon": "Equations $\\cos x = a$ et $\\sin x = b$",
+      "type": "formule",
+      "recto": "Pourquoi la seconde famille de solutions diffère-t-elle entre une équation en cosinus et une équation en sinus ?",
+      "verso": "Pour $\\cos x = a$, on coupe le cercle par une droite verticale et les deux points sont symétriques par rapport à l'axe horizontal : la seconde famille est $-\\alpha + 2k\\pi$. Pour $\\sin x = b$, la droite est horizontale et la symétrie verticale : la seconde famille est $\\pi - \\beta + 2k\\pi$.",
+      "difficulte": 3,
+      "tags": ["equation-trigonometrique", "piege"]
+    },
+    {
+      "id": "2C-CH07-035",
+      "lecon": "Equations $\\cos x = a$ et $\\sin x = b$",
+      "type": "formule",
+      "recto": "Pourquoi l'équation $\\cos x = a$, avec $-1 < a < 1$, possède-t-elle une infinité de solutions ?",
+      "verso": "La droite verticale d'équation $x = a$ coupe le cercle en deux points, images de $\\alpha$ et de $-\\alpha$. Chacun de ces points est l'image d'une infinité de réels, obtenus en ajoutant un nombre entier de tours : d'où le terme $2k\\pi$.",
+      "difficulte": 3,
+      "tags": ["equation-trigonometrique", "demonstration"]
+    },
+    {
+      "id": "2C-CH07-036",
+      "lecon": "Equations $\\cos x = a$ et $\\sin x = b$",
+      "type": "formule",
+      "recto": "Comment résout-on une équation du type $\\sin 2x = b$ ?",
+      "verso": "On traite d'abord $2x$ comme une seule inconnue et l'on écrit les deux familles pour $2x$. On divise ensuite chaque membre par $2$, sans oublier de diviser aussi le terme $2k\\pi$, qui devient $k\\pi$.",
+      "difficulte": 3,
+      "tags": ["equation-trigonometrique", "inconnue-multipliee"]
+    },
+    {
+      "id": "2C-CH07-037",
+      "lecon": "Equations $\\cos x = a$ et $\\sin x = b$",
+      "type": "definition",
+      "recto": "Quelles sont toutes les mesures d'un angle orienté de deux vecteurs non nuls ?",
+      "verso": "Si $\\theta$ est une mesure de $(\\vec u, \\vec v)$, toutes ses mesures sont les réels $\\theta + 2k\\pi$, avec $k \\in \\mathbb{Z}$ : deux mesures d'un même angle orienté diffèrent d'un nombre entier de tours.",
+      "difficulte": 2,
+      "tags": ["angle-oriente", "mesure"]
+    },
+    {
+      "id": "2C-CH07-038",
+      "lecon": "Equations $\\cos x = a$ et $\\sin x = b$",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on mesure principale d'un angle orienté ?",
+      "verso": "C'est l'unique mesure qui appartient à l'intervalle $\\left]-\\pi\\,;\\pi\\right]$, borne de gauche exclue et borne de droite incluse. On l'obtient en ajoutant ou en retranchant des tours complets à une mesure connue.",
+      "difficulte": 2,
+      "tags": ["angle-oriente", "mesure-principale"]
+    }
+  ]
+}

@@ -1,0 +1,332 @@
+{
+  "niveau": "4ème",
+  "chapitre": "Chapitre 8 : Les nombres rationnels",
+  "source": "maths/4eme/Chapitre_8_Les_nombres_rationnels",
+  "nombre_cartes": 36,
+  "cartes": [
+    {
+      "id": "4E-CH08-001",
+      "lecon": "Qu'est-ce qu'un nombre rationnel ? Les ensembles $\\mathbb{D}$ et $\\mathbb{Q}$",
+      "type": "definition",
+      "recto": "Qu'est-ce qu'un nombre rationnel ?",
+      "verso": "C'est un nombre qui peut s'écrire sous la forme $\\dfrac{a}{b}$, où $a$ et $b$ sont des entiers relatifs et $b \\ne 0$. L'ensemble des rationnels se note $\\mathbb{Q}$.",
+      "difficulte": 1,
+      "tags": ["nombre-rationnel", "definition", "ensemble-q"]
+    },
+    {
+      "id": "4E-CH08-002",
+      "lecon": "Qu'est-ce qu'un nombre rationnel ? Les ensembles $\\mathbb{D}$ et $\\mathbb{Q}$",
+      "type": "definition",
+      "recto": "Qu'est-ce qui caractérise un nombre décimal parmi les nombres rationnels ?",
+      "verso": "Un nombre décimal est un rationnel dont l'écriture décimale est finie, comme $0{,}75$. L'ensemble des décimaux se note $\\mathbb{D}$.",
+      "difficulte": 2,
+      "tags": ["nombre-decimal", "ensemble-d", "definition"]
+    },
+    {
+      "id": "4E-CH08-003",
+      "lecon": "Qu'est-ce qu'un nombre rationnel ? Les ensembles $\\mathbb{D}$ et $\\mathbb{Q}$",
+      "type": "formule",
+      "recto": "Comment s'emboîtent les entiers, l'ensemble $\\mathbb{D}$ et l'ensemble $\\mathbb{Q}$ ?",
+      "verso": "Tout entier est un décimal et tout décimal est un rationnel : les entiers sont inclus dans $\\mathbb{D}$, lui-même inclus dans $\\mathbb{Q}$. Ainsi $-7 = \\dfrac{-7}{1}$ et $0{,}75 = \\dfrac{75}{100}$.",
+      "difficulte": 2,
+      "tags": ["ensembles", "inclusion", "ensemble-q"]
+    },
+    {
+      "id": "4E-CH08-004",
+      "lecon": "Qu'est-ce qu'un nombre rationnel ? Les ensembles $\\mathbb{D}$ et $\\mathbb{Q}$",
+      "type": "definition",
+      "recto": "Pourquoi l'inclusion de $\\mathbb{D}$ dans $\\mathbb{Q}$ est-elle stricte ?",
+      "verso": "Parce que certains rationnels ne sont pas décimaux : $\\dfrac{5}{3} = 1{,}666$… est bien un quotient d'entiers, mais son écriture décimale ne s'arrête jamais.",
+      "difficulte": 3,
+      "tags": ["inclusion", "ensemble-d", "piege"]
+    },
+    {
+      "id": "4E-CH08-005",
+      "lecon": "Qu'est-ce qu'un nombre rationnel ? Les ensembles $\\mathbb{D}$ et $\\mathbb{Q}$",
+      "type": "formule",
+      "recto": "Comment place-t-on un nombre rationnel sur une droite graduée ?",
+      "verso": "On l'encadre d'abord entre deux entiers consécutifs, puis on partage l'unité restante en autant de parts égales que l'indique le dénominateur. Comme $\\dfrac{7}{4} = 1 + \\dfrac{3}{4}$, on avance de trois quarts après $1$.",
+      "difficulte": 2,
+      "tags": ["droite-graduee", "reperage"]
+    },
+    {
+      "id": "4E-CH08-006",
+      "lecon": "Qu'est-ce qu'un nombre rationnel ? Les ensembles $\\mathbb{D}$ et $\\mathbb{Q}$",
+      "type": "definition",
+      "recto": "Parmi toutes les écritures fractionnaires d'un même rationnel, laquelle sert de forme de référence ?",
+      "verso": "L'écriture irréductible de dénominateur positif. Les écritures $\\dfrac{6}{8}$, $\\dfrac{75}{100}$ et $\\dfrac{-30}{-40}$ désignent le même nombre, dont la forme de référence est $\\dfrac{3}{4}$.",
+      "difficulte": 2,
+      "tags": ["ecriture-fractionnaire", "irreductible"]
+    },
+    {
+      "id": "4E-CH08-007",
+      "lecon": "Qu'est-ce qu'un nombre rationnel ? Les ensembles $\\mathbb{D}$ et $\\mathbb{Q}$",
+      "type": "formule",
+      "recto": "Comment transforme-t-on un nombre décimal en fraction ?",
+      "verso": "On écrit ses décimales sur une puissance de $10$, puis on simplifie : $0{,}125 = \\dfrac{125}{1\\,000} = \\dfrac{1}{8}$ et $-5{,}7 = \\dfrac{-57}{10}$.",
+      "difficulte": 1,
+      "tags": ["nombre-decimal", "fraction", "conversion"]
+    },
+    {
+      "id": "4E-CH08-008",
+      "lecon": "Ordre et opérations dans $\\mathbb{Q}$",
+      "type": "formule",
+      "recto": "Comment compare-t-on deux nombres rationnels ?",
+      "verso": "On les réduit au même dénominateur positif, puis on compare les numérateurs. On peut aussi comparer leurs écritures décimales.",
+      "difficulte": 2,
+      "tags": ["comparaison", "denominateur-commun"]
+    },
+    {
+      "id": "4E-CH08-009",
+      "lecon": "Ordre et opérations dans $\\mathbb{Q}$",
+      "type": "definition",
+      "recto": "Que signifie exactement l'inégalité $a < b$ entre deux rationnels ?",
+      "verso": "Elle signifie que la différence $a - b$ est un nombre négatif. C'est la définition même de l'ordre dans $\\mathbb{Q}$.",
+      "difficulte": 2,
+      "tags": ["ordre", "definition"]
+    },
+    {
+      "id": "4E-CH08-010",
+      "lecon": "Ordre et opérations dans $\\mathbb{Q}$",
+      "type": "formule",
+      "recto": "Que devient une inégalité entre rationnels quand on ajoute un même nombre à ses deux membres ?",
+      "verso": "Elle est conservée : si $a < b$, alors $a + c < b + c$ pour tout rationnel $c$, positif comme négatif. On peut donc aussi retrancher un même nombre des deux côtés.",
+      "difficulte": 1,
+      "tags": ["ordre", "addition", "propriete"]
+    },
+    {
+      "id": "4E-CH08-011",
+      "lecon": "Ordre et opérations dans $\\mathbb{Q}$",
+      "type": "formule",
+      "recto": "Comment démontre-t-on que l'addition d'un même nombre conserve l'ordre entre deux rationnels ?",
+      "verso": "On calcule $\\left(a + c\\right) - \\left(b + c\\right) = a - b$. Cette différence est la même qu'au départ, donc négative puisque $a < b$. Par définition de l'ordre, cela signifie $a + c < b + c$.",
+      "difficulte": 3,
+      "tags": ["ordre", "demonstration", "addition"]
+    },
+    {
+      "id": "4E-CH08-012",
+      "lecon": "Ordre et opérations dans $\\mathbb{Q}$",
+      "type": "formule",
+      "recto": "Que devient l'inégalité $a < b$ quand on multiplie ses deux membres par un rationnel $k$ positif ?",
+      "verso": "L'ordre est conservé : $k \\times a < k \\times b$. La condition « $k$ positif » est indispensable.",
+      "difficulte": 2,
+      "tags": ["ordre", "multiplication", "condition"]
+    },
+    {
+      "id": "4E-CH08-013",
+      "lecon": "Ordre et opérations dans $\\mathbb{Q}$",
+      "type": "formule",
+      "recto": "A partir d'un encadrement de $x$, dans quel ordre opère-t-on pour encadrer $2x + 5$ ?",
+      "verso": "On multiplie d'abord les trois membres par $2$, qui est positif, puis on ajoute $5$ partout. De $-2 \\le x \\le 1$ on tire $-4 \\le 2x \\le 2$, puis $1 \\le 2x + 5 \\le 7$.",
+      "difficulte": 2,
+      "tags": ["encadrement", "ordre"]
+    },
+    {
+      "id": "4E-CH08-014",
+      "lecon": "Ordre et opérations dans $\\mathbb{Q}$",
+      "type": "formule",
+      "recto": "Pourquoi $\\dfrac{3}{7}$ n'est-il pas plus grand que $\\dfrac{3}{5}$, alors que $7 > 5$ ?",
+      "verso": "Parce que le dénominateur fixe la taille des parts, et non leur nombre : plus il est grand, plus les parts sont petites. Au dénominateur $35$, $\\dfrac{3}{7} = \\dfrac{15}{35}$ et $\\dfrac{3}{5} = \\dfrac{21}{35}$.",
+      "difficulte": 3,
+      "tags": ["comparaison", "piege"]
+    },
+    {
+      "id": "4E-CH08-015",
+      "lecon": "Ordre et opérations dans $\\mathbb{Q}$",
+      "type": "formule",
+      "recto": "Quelle précaution prendre avant de comparer par leurs numérateurs deux fractions dont un dénominateur est négatif ?",
+      "verso": "Il faut d'abord rendre les deux dénominateurs positifs. Avec un dénominateur négatif, la comparaison des numérateurs donne le résultat contraire.",
+      "difficulte": 3,
+      "tags": ["comparaison", "denominateur-negatif", "piege"]
+    },
+    {
+      "id": "4E-CH08-016",
+      "lecon": "Puissances dans $\\mathbb{Q}$",
+      "type": "formule",
+      "recto": "Comment élève-t-on un nombre rationnel à une puissance entière $n$ ?",
+      "verso": "On élève le numérateur et le dénominateur à cette puissance : $\\left(\\dfrac{a}{b}\\right)^{n} = \\dfrac{a^{n}}{b^{n}}$. Ainsi $\\left(\\dfrac{2}{3}\\right)^{3} = \\dfrac{8}{27}$.",
+      "difficulte": 1,
+      "tags": ["puissance", "formule"]
+    },
+    {
+      "id": "4E-CH08-017",
+      "lecon": "Puissances dans $\\mathbb{Q}$",
+      "type": "formule",
+      "recto": "Quelles règles de calcul sur les puissances se prolongent dans $\\mathbb{Q}$ ?",
+      "verso": "Les mêmes que pour les décimaux : $x^{m} \\times x^{n} = x^{m+n}$, $\\left(x^{m}\\right)^{n} = x^{m \\times n}$, et $x^{0} = 1$ pour tout $x$ non nul.",
+      "difficulte": 2,
+      "tags": ["puissance", "regles"]
+    },
+    {
+      "id": "4E-CH08-018",
+      "lecon": "Puissances dans $\\mathbb{Q}$",
+      "type": "formule",
+      "recto": "Pourquoi convient-on que $x^{0} = 1$ pour tout rationnel $x$ non nul ?",
+      "verso": "Parce que c'est la seule valeur qui rende la règle $x^{m} \\times x^{n} = x^{m+n}$ vraie dans tous les cas, y compris lorsque l'un des exposants est nul.",
+      "difficulte": 3,
+      "tags": ["puissance", "exposant-zero"]
+    },
+    {
+      "id": "4E-CH08-019",
+      "lecon": "Puissances dans $\\mathbb{Q}$",
+      "type": "formule",
+      "recto": "Que permet la règle $\\left(x \\times y\\right)^{n} = x^{n} \\times y^{n}$ dans la conduite d'un calcul ?",
+      "verso": "Elle laisse le choix entre multiplier d'abord, puis élever à la puissance, ou élever chaque facteur d'abord. Pour $\\left(\\dfrac{2}{3} \\times \\dfrac{9}{4}\\right)^{2}$, multiplier d'abord donne $\\left(\\dfrac{3}{2}\\right)^{2} = \\dfrac{9}{4}$, bien plus vite.",
+      "difficulte": 2,
+      "tags": ["puissance", "produit", "regles"]
+    },
+    {
+      "id": "4E-CH08-020",
+      "lecon": "Puissances dans $\\mathbb{Q}$",
+      "type": "formule",
+      "recto": "Quel est le signe d'une puissance d'un rationnel négatif ?",
+      "verso": "Il dépend de la parité de l'exposant : positif si l'exposant est pair, négatif s'il est impair. Chaque paire de facteurs négatifs donne en effet un produit positif.",
+      "difficulte": 2,
+      "tags": ["puissance", "signe", "parite"]
+    },
+    {
+      "id": "4E-CH08-021",
+      "lecon": "Puissances dans $\\mathbb{Q}$",
+      "type": "formule",
+      "recto": "Quelle différence y a-t-il entre $\\left(\\dfrac{-2}{5}\\right)^{2}$ et $-\\left(\\dfrac{2}{5}\\right)^{2}$ ?",
+      "verso": "Le premier vaut $\\dfrac{4}{25}$ : le signe moins est dans les parenthèses et l'exposant est pair. Le second vaut $-\\dfrac{4}{25}$, car seule la fraction est élevée au carré.",
+      "difficulte": 3,
+      "tags": ["puissance", "signe", "piege"]
+    },
+    {
+      "id": "4E-CH08-022",
+      "lecon": "Puissances dans $\\mathbb{Q}$",
+      "type": "formule",
+      "recto": "Comment se comporte une puissance dont la base est un rationnel compris entre $0$ et $1$ ?",
+      "verso": "Le résultat est plus petit que la base et diminue quand l'exposant grandit, sans jamais atteindre $0$. Ainsi $\\dfrac{2}{3}$, puis $\\dfrac{4}{9}$, puis $\\dfrac{8}{27}$.",
+      "difficulte": 2,
+      "tags": ["puissance", "ordre-de-grandeur"]
+    },
+    {
+      "id": "4E-CH08-023",
+      "lecon": "L'approximation décimale d'un rationnel",
+      "type": "definition",
+      "recto": "Quelle différence fait-on entre la valeur exacte et une valeur approchée d'un rationnel ?",
+      "verso": "La valeur exacte est son écriture fractionnaire, ou son écriture décimale lorsque celle-ci est finie. Une valeur approchée est un décimal proche du nombre, sans lui être forcément égal.",
+      "difficulte": 1,
+      "tags": ["valeur-exacte", "valeur-approchee"]
+    },
+    {
+      "id": "4E-CH08-024",
+      "lecon": "L'approximation décimale d'un rationnel",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on approximation décimale par défaut d'ordre $n$ d'un rationnel ?",
+      "verso": "C'est le plus grand décimal à $n$ chiffres après la virgule qui soit inférieur ou égal à ce rationnel. Comme $\\dfrac{22}{7} = 3{,}142857$…, son approximation par défaut d'ordre $2$ vaut $3{,}14$.",
+      "difficulte": 2,
+      "tags": ["approximation", "par-defaut"]
+    },
+    {
+      "id": "4E-CH08-025",
+      "lecon": "L'approximation décimale d'un rationnel",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on approximation décimale par excès d'ordre $n$ d'un rationnel ?",
+      "verso": "C'est le plus petit décimal à $n$ chiffres après la virgule qui soit supérieur ou égal à ce rationnel. Pour $\\dfrac{22}{7}$, l'approximation par excès d'ordre $2$ vaut $3{,}15$.",
+      "difficulte": 2,
+      "tags": ["approximation", "par-exces"]
+    },
+    {
+      "id": "4E-CH08-026",
+      "lecon": "L'approximation décimale d'un rationnel",
+      "type": "formule",
+      "recto": "Quel est l'écart entre les deux approximations décimales d'ordre $n$ d'un rationnel ?",
+      "verso": "Il vaut $\\dfrac{1}{10^{n}}$. Les deux approximations encadrent le nombre, et l'encadrement se resserre quand $n$ grandit : $3{,}14 \\le \\dfrac{22}{7} \\le 3{,}15$.",
+      "difficulte": 2,
+      "tags": ["approximation", "encadrement", "precision"]
+    },
+    {
+      "id": "4E-CH08-027",
+      "lecon": "L'approximation décimale d'un rationnel",
+      "type": "formule",
+      "recto": "Pour un nombre négatif, laquelle des deux approximations décimales se place le plus à gauche sur la droite graduée ?",
+      "verso": "Celle par défaut, car « par défaut » veut toujours dire plus petit. Pour $-0{,}0237$, l'approximation par défaut d'ordre $2$ est $-0{,}03$, et celle par excès est $-0{,}02$.",
+      "difficulte": 3,
+      "tags": ["approximation", "nombre-negatif", "piege"]
+    },
+    {
+      "id": "4E-CH08-028",
+      "lecon": "L'approximation décimale d'un rationnel",
+      "type": "formule",
+      "recto": "Quel signe faut-il écrire entre $\\dfrac{22}{7}$ et $3{,}14$ ?",
+      "verso": "Le symbole $\\approx$, ou le mot « environ », jamais le signe d'égalité : $3{,}14$ n'est qu'une valeur approchée de $\\dfrac{22}{7}$.",
+      "difficulte": 3,
+      "tags": ["approximation", "notation", "piege"]
+    },
+    {
+      "id": "4E-CH08-029",
+      "lecon": "L'approximation décimale d'un rationnel",
+      "type": "formule",
+      "recto": "A quel moment d'un problème faut-il arrondir un résultat rationnel ?",
+      "verso": "A la toute fin seulement. On garde la fraction exacte pendant tout le calcul, sinon les erreurs d'arrondi s'accumulent.",
+      "difficulte": 2,
+      "tags": ["approximation", "bonne-habitude"]
+    },
+    {
+      "id": "4E-CH08-030",
+      "lecon": "Les écritures décimales périodiques",
+      "type": "definition",
+      "recto": "Quelles sont les deux seules formes possibles pour l'écriture décimale d'un rationnel ?",
+      "verso": "Elle est soit finie, comme $\\dfrac{3}{4} = 0{,}75$, soit illimitée périodique, un groupe de chiffres se répétant indéfiniment. Il n'y a pas d'autre cas possible.",
+      "difficulte": 2,
+      "tags": ["ecriture-decimale", "periodique"]
+    },
+    {
+      "id": "4E-CH08-031",
+      "lecon": "Les écritures décimales périodiques",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on la période d'une écriture décimale illimitée périodique ?",
+      "verso": "C'est le groupe de chiffres qui se répète indéfiniment. Dans $\\dfrac{1}{3} = 0{,}333$… la période est $3$ ; dans $\\dfrac{1}{11} = 0{,}0909$… elle vaut $09$. On abrège cette écriture en SDIP.",
+      "difficulte": 1,
+      "tags": ["periode", "sdip", "definition"]
+    },
+    {
+      "id": "4E-CH08-032",
+      "lecon": "Les écritures décimales périodiques",
+      "type": "formule",
+      "recto": "Pourquoi une division par un entier $b$ finit-elle toujours par s'arrêter ou par se répéter ?",
+      "verso": "Parce que les restes possibles sont en nombre fini, entre $0$ et $b - 1$. Ou bien un reste nul apparaît et la division s'arrête, ou bien un reste revient et toute la suite des chiffres recommence.",
+      "difficulte": 3,
+      "tags": ["periodique", "restes", "justification"]
+    },
+    {
+      "id": "4E-CH08-033",
+      "lecon": "Les écritures décimales périodiques",
+      "type": "formule",
+      "recto": "Comment reconnaît-on, sans poser la division, qu'un rationnel a une écriture décimale finie ?",
+      "verso": "On rend la fraction irréductible et on décompose son dénominateur : s'il ne contient que des facteurs $2$ et $5$, l'écriture est finie. Ainsi $\\dfrac{7}{20}$ est décimal car $20 = 2 \\times 2 \\times 5$, mais pas $\\dfrac{5}{12}$.",
+      "difficulte": 2,
+      "tags": ["ecriture-finie", "critere", "denominateur"]
+    },
+    {
+      "id": "4E-CH08-034",
+      "lecon": "Les écritures décimales périodiques",
+      "type": "formule",
+      "recto": "Pourquoi seuls les facteurs $2$ et $5$ au dénominateur donnent-ils une écriture décimale finie ?",
+      "verso": "Parce qu'une écriture finie signifie que la fraction se récrit avec une puissance de $10$ au dénominateur. Or $10 = 2 \\times 5$ : une puissance de $10$ ne contient que des facteurs $2$ et $5$.",
+      "difficulte": 3,
+      "tags": ["ecriture-finie", "critere", "justification"]
+    },
+    {
+      "id": "4E-CH08-035",
+      "lecon": "Les écritures décimales périodiques",
+      "type": "formule",
+      "recto": "Comment convertit-on une écriture décimale périodique en fraction ?",
+      "verso": "On pose $x$ égal à ce nombre, on multiplie par la puissance de $10$ qui décale d'exactement une période, puis on soustrait les deux égalités. De $x = 0{,}2727$… et $100x = 27{,}2727$… on tire $99x = 27$, donc $x = \\dfrac{3}{11}$.",
+      "difficulte": 2,
+      "tags": ["conversion", "periodique", "fraction"]
+    },
+    {
+      "id": "4E-CH08-036",
+      "lecon": "Les écritures décimales périodiques",
+      "type": "formule",
+      "recto": "Pourquoi $0{,}4545$… vaut-il $\\dfrac{45}{99}$ et non $\\dfrac{45}{100}$ ?",
+      "verso": "Parce que le dénominateur se forme avec autant de $9$ que la période compte de chiffres. Ici la période $45$ compte deux chiffres : on multiplie par $100$, et le dénominateur est $99$.",
+      "difficulte": 3,
+      "tags": ["conversion", "periodique", "piege"]
+    }
+  ]
+}

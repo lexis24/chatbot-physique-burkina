@@ -1,0 +1,350 @@
+{
+  "niveau": "1ère D",
+  "chapitre": "Chapitre 8 : Dérivation et étude de fonction",
+  "source": "maths/1ereD/Chapitre_8_Derivation_etude_fonction",
+  "nombre_cartes": 38,
+  "cartes": [
+    {
+      "id": "1D-CH08-001",
+      "lecon": "Dérivation en un point",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on le taux de variation de $f$ entre $a$ et $a+h$ ?",
+      "verso": "C'est le quotient $T(h)=\\dfrac{f(a+h)-f(a)}{h}$, défini pour $h\\ne 0$. Il donne la pente de la sécante joignant les deux points de la courbe d'abscisses $a$ et $a+h$, c'est-à-dire l'accroissement moyen de $f$ entre ces deux abscisses.",
+      "difficulte": 1,
+      "tags": ["taux-de-variation", "secante", "definition"]
+    },
+    {
+      "id": "1D-CH08-002",
+      "lecon": "Dérivation en un point",
+      "type": "definition",
+      "recto": "Quand une fonction $f$ est-elle dérivable en $a$, et que vaut alors $f'(a)$ ?",
+      "verso": "Lorsque le taux de variation admet une limite finie quand $h$ tend vers $0$ ; cette limite est le nombre dérivé $f'(a)=\\lim\\limits_{h\\to 0}\\dfrac{f(a+h)-f(a)}{h}$. On l'écrit aussi $\\lim\\limits_{x\\to a}\\dfrac{f(x)-f(a)}{x-a}$, en posant $x=a+h$.",
+      "difficulte": 2,
+      "tags": ["nombre-derive", "derivabilite", "definition"]
+    },
+    {
+      "id": "1D-CH08-003",
+      "lecon": "Dérivation en un point",
+      "type": "definition",
+      "recto": "Que représente géométriquement le nombre dérivé $f'(a)$ ?",
+      "verso": "La pente, c'est-à-dire le coefficient directeur, de la tangente à la courbe de $f$ au point d'abscisse $a$. Cette tangente est la position limite des sécantes lorsque le second point rejoint le premier.",
+      "difficulte": 1,
+      "tags": ["nombre-derive", "tangente", "pente"]
+    },
+    {
+      "id": "1D-CH08-004",
+      "lecon": "Dérivation en un point",
+      "type": "definition",
+      "recto": "Que représente $f'(a)$ lorsque $f(t)$ donne la position d'un mobile à l'instant $t$ ?",
+      "verso": "La vitesse instantanée du mobile à l'instant $a$, celle qu'affiche un compteur. De même, la dérivée de la vitesse décrit l'accélération : un mobile dont la vitesse augmente accélère.",
+      "difficulte": 1,
+      "tags": ["nombre-derive", "vitesse-instantanee"]
+    },
+    {
+      "id": "1D-CH08-005",
+      "lecon": "Dérivation en un point",
+      "type": "formule",
+      "recto": "Par quelle expression affine remplace-t-on $f(a+h)$ lorsque $h$ est proche de $0$ ?",
+      "verso": "Par $f(a)+h\\,f'(a)$ : si $f$ est dérivable en $a$, alors $f(a+h)\\approx f(a)+h\\,f'(a)$. Cela revient à remplacer la courbe par sa tangente au voisinage de $a$, sans commettre une grande erreur.",
+      "difficulte": 2,
+      "tags": ["approximation-affine", "tangente"]
+    },
+    {
+      "id": "1D-CH08-006",
+      "lecon": "Dérivation en un point",
+      "type": "formule",
+      "recto": "Quelle valeur approchée donne-t-on à $(1+h)^n$ au voisinage de $0$ ?",
+      "verso": "$(1+h)^n\\approx 1+nh$, d'où $(1+h)^2\\approx 1+2h$ et $(1+h)^3\\approx 1+3h$. Le développement exact $(1+h)^2=1+2h+h^2$ montre l'origine de l'approximation : on néglige $h^2$, cent fois plus petit que $h$ lorsque $h=0{,}01$.",
+      "difficulte": 2,
+      "tags": ["approximation-affine", "puissance"]
+    },
+    {
+      "id": "1D-CH08-007",
+      "lecon": "Dérivation en un point",
+      "type": "definition",
+      "recto": "Dans quels cas une fonction n'est-elle pas dérivable en un point ?",
+      "verso": "Lorsque le taux de variation n'a pas de limite finie. Deux situations : la limite est infinie et la courbe admet une demi-tangente verticale, comme $\\sqrt{x}$ en $0$ ; ou bien les limites à gauche et à droite diffèrent et la courbe présente un point anguleux, comme $|x|$ en $0$.",
+      "difficulte": 3,
+      "tags": ["derivabilite", "tangente-verticale", "point-anguleux"]
+    },
+    {
+      "id": "1D-CH08-008",
+      "lecon": "Dérivation en un point",
+      "type": "definition",
+      "recto": "Pourquoi ne faut-il jamais confondre $f(a)$ et $f'(a)$ ?",
+      "verso": "$f(a)$ est une valeur de la fonction, donc une hauteur sur le graphique ; $f'(a)$ est une pente, donc une inclinaison, et les deux n'ont même pas la même unité. Pour $f(x)=x^2$ : $f(1)=1$ est la hauteur du point, tandis que $f'(1)=2$ est la pente de la tangente.",
+      "difficulte": 3,
+      "tags": ["nombre-derive", "piege"]
+    },
+    {
+      "id": "1D-CH08-009",
+      "lecon": "Equation de la tangente",
+      "type": "formule",
+      "recto": "Quelle est l'équation de la tangente à la courbe de $f$ au point d'abscisse $a$ ?",
+      "verso": "$y=f'(a)\\,(x-a)+f(a)$, dès que $f$ est dérivable en $a$. La pente $f'(a)$ multiplie la parenthèse, et l'ordonnée $f(a)$ du point de contact s'ajoute. C'est l'équation d'une droite dont la dérivation a fourni la pente.",
+      "difficulte": 1,
+      "tags": ["tangente", "equation"]
+    },
+    {
+      "id": "1D-CH08-010",
+      "lecon": "Equation de la tangente",
+      "type": "formule",
+      "recto": "Que devient l'équation de la tangente au point d'abscisse $a$ lorsque $f'(a)=0$ ?",
+      "verso": "La tangente est horizontale et son équation se réduit à $y=f(a)$. Ce cas signale un extremum possible, à confirmer en vérifiant que la dérivée change de signe en $a$.",
+      "difficulte": 2,
+      "tags": ["tangente", "tangente-horizontale"]
+    },
+    {
+      "id": "1D-CH08-011",
+      "lecon": "Equation de la tangente",
+      "type": "formule",
+      "recto": "A quelle condition la tangente au point d'abscisse $a$ est-elle parallèle à la droite d'équation $y=mx+p$ ?",
+      "verso": "Lorsque $f'(a)=m$, les deux droites ayant alors la même pente. Dans un repère orthonormé, elles sont perpendiculaires lorsque $f'(a)\\times m=-1$, soit $f'(a)=-\\dfrac1m$. Chercher les points correspondants revient à résoudre une équation d'inconnue $a$.",
+      "difficulte": 2,
+      "tags": ["tangente", "parallele", "perpendiculaire"]
+    },
+    {
+      "id": "1D-CH08-012",
+      "lecon": "Equation de la tangente",
+      "type": "formule",
+      "recto": "Comment cherche-t-on les tangentes à une courbe qui passent par un point $B$ n'appartenant pas à cette courbe ?",
+      "verso": "On nomme $a$ l'abscisse du point de contact, qui est inconnue, on écrit la tangente $y=f'(a)(x-a)+f(a)$, puis on traduit que les coordonnées de $B$ vérifient cette équation. Il reste à résoudre l'équation obtenue, d'inconnue $a$.",
+      "difficulte": 3,
+      "tags": ["tangente", "point-exterieur"]
+    },
+    {
+      "id": "1D-CH08-013",
+      "lecon": "Equation de la tangente",
+      "type": "definition",
+      "recto": "Pourquoi l'écriture $y=f(a)(x-a)+f'(a)$ ne peut-elle pas être une équation de tangente ?",
+      "verso": "Parce que les deux rôles y sont inversés : c'est la pente $f'(a)$ qui multiplie la parenthèse, et l'ordonnée $f(a)$ du point de contact qui s'ajoute. L'écriture correcte est $y=f'(a)(x-a)+f(a)$.",
+      "difficulte": 3,
+      "tags": ["tangente", "piege"]
+    },
+    {
+      "id": "1D-CH08-014",
+      "lecon": "Fonction dérivée",
+      "type": "formule",
+      "recto": "Quelle est la dérivée de $x\\mapsto x^n$, pour $n$ entier supérieur ou égal à $1$ ?",
+      "verso": "$\\left(x^n\\right)'=n\\,x^{n-1}$, pour tout réel $x$. Cette règle contient les cas simples : pour $n=1$ elle donne $(x)'=1$, et la dérivée d'une fonction constante est nulle.",
+      "difficulte": 1,
+      "tags": ["derivee-usuelle", "puissance"]
+    },
+    {
+      "id": "1D-CH08-015",
+      "lecon": "Fonction dérivée",
+      "type": "formule",
+      "recto": "Quelles sont les dérivées de $x\\mapsto\\dfrac1x$ et de $x\\mapsto\\dfrac{1}{x^n}$ ?",
+      "verso": "$\\left(\\dfrac1x\\right)'=-\\dfrac{1}{x^2}$ et $\\left(\\dfrac{1}{x^n}\\right)'=-\\dfrac{n}{x^{n+1}}$, valables pour $x\\ne 0$. Ce sont les mêmes règles que pour les puissances, avec un exposant négatif.",
+      "difficulte": 1,
+      "tags": ["derivee-usuelle", "inverse"]
+    },
+    {
+      "id": "1D-CH08-016",
+      "lecon": "Fonction dérivée",
+      "type": "formule",
+      "recto": "Quelle est la dérivée de $x\\mapsto\\sqrt{x}$, et sur quel ensemble est-elle valable ?",
+      "verso": "$\\left(\\sqrt{x}\\right)'=\\dfrac{1}{2\\sqrt{x}}$, valable seulement pour $x>0$. La fonction racine carrée est définie en $0$ mais n'y est pas dérivable : sa courbe y admet une demi-tangente verticale.",
+      "difficulte": 2,
+      "tags": ["derivee-usuelle", "racine-carree"]
+    },
+    {
+      "id": "1D-CH08-017",
+      "lecon": "Fonction dérivée",
+      "type": "formule",
+      "recto": "Quelles sont les dérivées des fonctions sinus et cosinus ?",
+      "verso": "$\\left(\\sin x\\right)'=\\cos x$ et $\\left(\\cos x\\right)'=-\\sin x$, pour tout réel $x$. Le signe moins se retient graphiquement : sur $\\left]0\\,;\\dfrac{\\pi}{2}\\right[$ la courbe du cosinus descend, sa dérivée doit donc y être négative.",
+      "difficulte": 1,
+      "tags": ["derivee-usuelle", "sinus", "cosinus"]
+    },
+    {
+      "id": "1D-CH08-018",
+      "lecon": "Fonction dérivée",
+      "type": "formule",
+      "recto": "Quelle est la dérivée de la fonction tangente, et sous quelle condition ?",
+      "verso": "$\\left(\\tan x\\right)'=1+\\tan^2 x$, ce qui s'écrit aussi $\\dfrac{1}{\\cos^2 x}$. La formule vaut là où $\\cos x\\ne 0$, c'est-à-dire partout où la tangente est définie.",
+      "difficulte": 2,
+      "tags": ["derivee-usuelle", "tangente-trigonometrique"]
+    },
+    {
+      "id": "1D-CH08-019",
+      "lecon": "Fonction dérivée",
+      "type": "formule",
+      "recto": "Comment dérive-t-on une somme $u+v$ et un produit $\\lambda u$ par un réel ?",
+      "verso": "$(u+v)'=u'+v'$ et $(\\lambda u)'=\\lambda u'$, pour $u$ et $v$ dérivables sur un même intervalle. Additionner deux fonctions revient à additionner leurs accroissements, donc leurs taux de variation, donc leurs dérivées.",
+      "difficulte": 1,
+      "tags": ["operations", "somme"]
+    },
+    {
+      "id": "1D-CH08-020",
+      "lecon": "Fonction dérivée",
+      "type": "formule",
+      "recto": "Quelle est la dérivée d'un produit $uv$ de deux fonctions dérivables ?",
+      "verso": "$(uv)'=u'v+uv'$. Les deux termes s'expliquent par l'aire d'un rectangle de côtés $u$ et $v$ : elle augmente à la fois par l'allongement de $u$ à hauteur $v$ constante et par l'allongement de $v$ à largeur $u$ constante.",
+      "difficulte": 1,
+      "tags": ["operations", "produit"]
+    },
+    {
+      "id": "1D-CH08-021",
+      "lecon": "Fonction dérivée",
+      "type": "formule",
+      "recto": "Quelle est la dérivée d'un quotient $\\dfrac{u}{v}$ ?",
+      "verso": "$\\left(\\dfrac uv\\right)'=\\dfrac{u'v-uv'}{v^2}$, pour $v\\ne 0$ ; en particulier $\\left(\\dfrac1v\\right)'=-\\dfrac{v'}{v^2}$. L'ordre au numérateur n'est pas libre : échanger les deux termes change le signe de la dérivée, donc inverse toutes les variations.",
+      "difficulte": 2,
+      "tags": ["operations", "quotient"]
+    },
+    {
+      "id": "1D-CH08-022",
+      "lecon": "Fonction dérivée",
+      "type": "formule",
+      "recto": "Quelle est la dérivée de $x\\mapsto f(ax+b)$ ?",
+      "verso": "$\\big(f(ax+b)\\big)'=a\\,f'(ax+b)$ : on dérive comme d'habitude, puis on multiplie par le coefficient $a$. Ainsi $\\big(\\sin(3x)\\big)'=3\\cos(3x)$ et $\\big(\\sqrt{ax+b}\\big)'=\\dfrac{a}{2\\sqrt{ax+b}}$. Oublier ce facteur est l'erreur la plus fréquente.",
+      "difficulte": 2,
+      "tags": ["derivee", "composee-affine"]
+    },
+    {
+      "id": "1D-CH08-023",
+      "lecon": "Fonction dérivée",
+      "type": "formule",
+      "recto": "Quelles sont les dérivées de $u^n$ et de $\\sqrt{u}$, où $u$ est une fonction dérivable ?",
+      "verso": "$\\left(u^n\\right)'=n\\,u'\\,u^{n-1}$, et $\\left(\\sqrt{u}\\right)'=\\dfrac{u'}{2\\sqrt{u}}$ à condition que $u$ soit strictement positive. On remplace $x$ par $u$ dans la formule usuelle, puis on multiplie par $u'$.",
+      "difficulte": 2,
+      "tags": ["derivee", "puissance-de-fonction", "racine-de-fonction"]
+    },
+    {
+      "id": "1D-CH08-024",
+      "lecon": "Fonction dérivée",
+      "type": "formule",
+      "recto": "Pourquoi la dérivée d'un produit n'est-elle pas le produit des dérivées ?",
+      "verso": "Un contre-exemple suffit : avec $u(x)=v(x)=x$, on a $u'v'=1$, alors que $uv$ est la fonction $x\\mapsto x^2$, de dérivée $2x$. La règle correcte, $(uv)'=u'v+uv'$, redonne bien $1\\times x+x\\times 1=2x$.",
+      "difficulte": 3,
+      "tags": ["produit", "contre-exemple", "piege"]
+    },
+    {
+      "id": "1D-CH08-025",
+      "lecon": "Application à l'étude des variations",
+      "type": "formule",
+      "recto": "Quel lien y a-t-il entre le signe de $f'$ et le sens de variation de $f$ sur un intervalle $I$ ?",
+      "verso": "Si $f'\\ge 0$ sur $I$, alors $f$ est croissante sur $I$, et strictement croissante si $f'>0$. Si $f'\\le 0$ sur $I$, alors $f$ est décroissante, et strictement décroissante si $f'<0$. Si $f'=0$ sur $I$ tout entier, alors $f$ est constante sur $I$.",
+      "difficulte": 1,
+      "tags": ["signe-de-la-derivee", "sens-de-variation"]
+    },
+    {
+      "id": "1D-CH08-026",
+      "lecon": "Application à l'étude des variations",
+      "type": "formule",
+      "recto": "Pourquoi une conclusion sur le sens de variation ne vaut-elle que sur un intervalle ?",
+      "verso": "Parce que le lien entre signe et variation exige un intervalle. La fonction inverse a pour dérivée $-\\dfrac{1}{x^2}$, négative partout où elle existe, et pourtant $f(-1)=-1$ est plus petit que $f(1)=1$ : elle décroît sur $]-\\infty\\,;0[$ et sur $]0\\,;+\\infty[$, jamais sur la réunion.",
+      "difficulte": 3,
+      "tags": ["sens-de-variation", "intervalle", "piege"]
+    },
+    {
+      "id": "1D-CH08-027",
+      "lecon": "Application à l'étude des variations",
+      "type": "formule",
+      "recto": "Quel lien y a-t-il entre un extremum local de $f$ en $a$ et le nombre $f'(a)$ ?",
+      "verso": "Si $f$ admet un extremum local en $a$, alors $f'(a)=0$ et la tangente y est horizontale. La réciproque exige davantage : il y a extremum si et seulement si $f'$ change de signe en $a$, du moins au plus pour un minimum, du plus au moins pour un maximum.",
+      "difficulte": 2,
+      "tags": ["extremum", "derivee", "tangente-horizontale"]
+    },
+    {
+      "id": "1D-CH08-028",
+      "lecon": "Application à l'étude des variations",
+      "type": "definition",
+      "recto": "Pourquoi $x\\mapsto x^3$ n'admet-elle pas d'extremum en $0$ malgré sa tangente horizontale ?",
+      "verso": "Parce que sa dérivée $3x^2$ s'annule en $0$ sans changer de signe : elle reste positive de part et d'autre, donc la fonction continue de croître. Le point d'abscisse $0$ est un point d'inflexion, c'est-à-dire un point où la courbe traverse sa propre tangente.",
+      "difficulte": 3,
+      "tags": ["extremum", "point-dinflexion", "piege"]
+    },
+    {
+      "id": "1D-CH08-029",
+      "lecon": "Application à l'étude des variations",
+      "type": "formule",
+      "recto": "Comment démontre-t-on qu'une équation $f(x)=\\lambda$ admet une solution et une seule sur un intervalle $I$ ?",
+      "verso": "Si $f'>0$ sur $I$, ou $f'<0$ sur $I$, alors $f$ est strictement monotone et réalise une bijection de $I$ sur $f(I)$ : cela donne l'unicité. Il reste à vérifier que $\\lambda$ appartient à $f(I)$, ce qui donne l'existence. Sur $[\\alpha\\,;\\beta]$ croissante, $f(I)=\\big[f(\\alpha)\\,;f(\\beta)\\big]$.",
+      "difficulte": 3,
+      "tags": ["bijection", "unicite", "monotonie"]
+    },
+    {
+      "id": "1D-CH08-030",
+      "lecon": "Application à l'étude des variations",
+      "type": "definition",
+      "recto": "Pourquoi ne faut-il pas confondre le signe de $f$ et le signe de $f'$ ?",
+      "verso": "Le signe de $f$ situe la courbe par rapport à l'axe des abscisses, celui de $f'$ donne son inclinaison. Une fonction peut être négative et croissante : $f(x)=x-5$ vaut $-4$ en $x=1$, alors que sa dérivée y vaut $1$.",
+      "difficulte": 3,
+      "tags": ["signe", "derivee", "piege"]
+    },
+    {
+      "id": "1D-CH08-031",
+      "lecon": "Etude complète et fonctions associées",
+      "type": "formule",
+      "recto": "Comment lit-on sur un graphique le nombre de solutions de l'équation $f(x)=\\lambda$ ?",
+      "verso": "C'est le nombre de points d'intersection de la courbe avec la droite horizontale d'équation $y=\\lambda$. En faisant glisser cette droite du bas vers le haut, le compte ne change qu'aux hauteurs des extremums locaux : ce sont les valeurs critiques de la discussion.",
+      "difficulte": 2,
+      "tags": ["lecture-graphique", "discussion", "extremum"]
+    },
+    {
+      "id": "1D-CH08-032",
+      "lecon": "Etude complète et fonctions associées",
+      "type": "formule",
+      "recto": "Comment une parité permet-elle de réduire l'ensemble d'étude d'une fonction ?",
+      "verso": "Si $D_f$ est symétrique par rapport à $0$ et si $f(-x)=f(x)$, la courbe admet l'axe des ordonnées pour axe de symétrie ; si $f(-x)=-f(x)$, elle admet l'origine pour centre. Dans les deux cas on étudie $f$ sur $D_f\\cap[0\\,;+\\infty[$, puis on complète le tracé par symétrie.",
+      "difficulte": 2,
+      "tags": ["parite", "ensemble-detude", "symetrie"]
+    },
+    {
+      "id": "1D-CH08-033",
+      "lecon": "Etude complète et fonctions associées",
+      "type": "definition",
+      "recto": "Comment la périodicité d'une fonction réduit-elle son ensemble d'étude ?",
+      "verso": "Si $f(x+T)=f(x)$ pour tout $x$, la fonction est périodique de période $T$ : on l'étudie sur un intervalle de longueur $T$, puis on reproduit le motif par translations successives de vecteur $T\\vec{\\imath}$. C'est le cas des fonctions trigonométriques.",
+      "difficulte": 2,
+      "tags": ["periodicite", "ensemble-detude"]
+    },
+    {
+      "id": "1D-CH08-034",
+      "lecon": "Etude complète et fonctions associées",
+      "type": "formule",
+      "recto": "Quelle égalité démontre que le point $I(a\\,;b)$ est centre de symétrie de la courbe de $f$ ?",
+      "verso": "L'égalité $f(a+h)+f(a-h)=2b$, pour tout réel $h$ tel que $a+h$ et $a-h$ appartiennent à $D_f$. Elle traduit que $I$ est le milieu des deux points de la courbe d'abscisses $a-h$ et $a+h$.",
+      "difficulte": 2,
+      "tags": ["centre-de-symetrie", "courbe"]
+    },
+    {
+      "id": "1D-CH08-035",
+      "lecon": "Etude complète et fonctions associées",
+      "type": "formule",
+      "recto": "Quelle égalité démontre que la droite d'équation $x=a$ est axe de symétrie de la courbe de $f$ ?",
+      "verso": "L'égalité $f(a+h)=f(a-h)$, pour tout réel $h$ tel que $a+h$ et $a-h$ appartiennent à $D_f$. Elle traduit que les deux points de la courbe d'abscisses $a-h$ et $a+h$ sont à la même hauteur.",
+      "difficulte": 2,
+      "tags": ["axe-de-symetrie", "courbe"]
+    },
+    {
+      "id": "1D-CH08-036",
+      "lecon": "Etude complète et fonctions associées",
+      "type": "formule",
+      "recto": "Quelle écriture de $f(x)$ met en évidence une asymptote oblique et la position de la courbe ?",
+      "verso": "L'écriture $f(x)=ax+b+\\varepsilon(x)$, avec $a\\ne 0$ et $\\lim\\varepsilon(x)=0$ en l'infini : la droite $y=ax+b$ est alors asymptote. Le signe de $\\varepsilon(x)$ donne la position : la courbe est au-dessus de la droite là où $\\varepsilon(x)>0$, au-dessous là où $\\varepsilon(x)<0$.",
+      "difficulte": 2,
+      "tags": ["asymptote-oblique", "position-relative"]
+    },
+    {
+      "id": "1D-CH08-037",
+      "lecon": "Etude complète et fonctions associées",
+      "type": "formule",
+      "recto": "Quelles transformations font passer de la courbe de $f$ à celles de $f+\\lambda$, de $f(x+\\lambda)$ et de $\\lambda f$ ?",
+      "verso": "$f+\\lambda$ translate la courbe verticalement, vers le haut si $\\lambda>0$. $f(x+\\lambda)$ la translate horizontalement, vers la gauche si $\\lambda>0$. $\\lambda f$ la dilate verticalement dans le rapport $\\lambda$, avec en plus une symétrie par rapport à l'axe des abscisses si $\\lambda<0$.",
+      "difficulte": 2,
+      "tags": ["fonctions-associees", "translation", "dilatation"]
+    },
+    {
+      "id": "1D-CH08-038",
+      "lecon": "Etude complète et fonctions associées",
+      "type": "formule",
+      "recto": "Quelles transformations de la courbe de $f$ donnent celles de $|f|$, de $f(-x)$, de $-f(x)$ et de $-f(-x)$ ?",
+      "verso": "Pour $|f|$, on conserve la partie située au-dessus de l'axe des abscisses et l'on replie vers le haut celle qui est en dessous. Par ailleurs $f(-x)$ donne la symétrique par rapport à l'axe des ordonnées, $-f(x)$ la symétrique par rapport à l'axe des abscisses, et $-f(-x)$ la symétrique par rapport à l'origine.",
+      "difficulte": 2,
+      "tags": ["fonctions-associees", "valeur-absolue", "symetrie"]
+    }
+  ]
+}

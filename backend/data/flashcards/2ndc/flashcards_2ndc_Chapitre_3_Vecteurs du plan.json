@@ -1,0 +1,350 @@
+{
+  "niveau": "2nde C",
+  "chapitre": "Chapitre 3 : Vecteurs du plan",
+  "source": "maths/2ndc/Chapitre_3_Vecteurs_du_plan",
+  "nombre_cartes": 38,
+  "cartes": [
+    {
+      "id": "2C-CH03-001",
+      "lecon": "Combinaison linéaire, points et vecteurs",
+      "type": "definition",
+      "recto": "Quelles sont les trois caractéristiques qui définissent un vecteur ?",
+      "verso": "Une direction, un sens et une longueur appelée sa norme. Deux vecteurs sont égaux lorsqu'ils ont ces trois caractéristiques en commun, quel que soit l'endroit où on les dessine.",
+      "difficulte": 1,
+      "tags": ["vecteur", "direction-sens", "norme"]
+    },
+    {
+      "id": "2C-CH03-002",
+      "lecon": "Combinaison linéaire, points et vecteurs",
+      "type": "formule",
+      "recto": "Que dit la relation de Chasles pour trois points $A$, $B$ et $C$ quelconques ?",
+      "verso": "$\\overrightarrow{AB} + \\overrightarrow{BC} = \\overrightarrow{AC}$. Le point intermédiaire $B$ disparaît du résultat : seuls comptent le point de départ et le point d'arrivée.",
+      "difficulte": 1,
+      "tags": ["chasles", "somme", "vecteur"]
+    },
+    {
+      "id": "2C-CH03-003",
+      "lecon": "Combinaison linéaire, points et vecteurs",
+      "type": "formule",
+      "recto": "Comment la relation de Chasles permet-elle de faire apparaître un point $B$ dans le vecteur $\\overrightarrow{AC}$ ?",
+      "verso": "On écrit $\\overrightarrow{AC} = \\overrightarrow{AB} + \\overrightarrow{BC}$ : on peut glisser au milieu n'importe quel point de passage. C'est ce sens de lecture qui débloque les démonstrations, en ramenant tous les vecteurs à un même point.",
+      "difficulte": 2,
+      "tags": ["chasles", "demonstration"]
+    },
+    {
+      "id": "2C-CH03-004",
+      "lecon": "Combinaison linéaire, points et vecteurs",
+      "type": "formule",
+      "recto": "Que donne la règle du parallélogramme pour deux vecteurs partant d'un même point $A$ ?",
+      "verso": "Si $\\overrightarrow{AB} = \\vec{u}$ et $\\overrightarrow{AD} = \\vec{v}$, alors $\\vec{u} + \\vec{v} = \\overrightarrow{AC}$, où $C$ est le quatrième sommet du parallélogramme $ABCD$. La somme, appelée résultante, se lit sur la diagonale.",
+      "difficulte": 2,
+      "tags": ["somme", "parallelogramme", "resultante"]
+    },
+    {
+      "id": "2C-CH03-005",
+      "lecon": "Combinaison linéaire, points et vecteurs",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on opposé du vecteur $\\overrightarrow{AB}$ ?",
+      "verso": "C'est le vecteur $\\overrightarrow{BA}$, noté $-\\overrightarrow{AB}$ : même direction et même longueur, mais sens contraire. Soustraire revient à ajouter l'opposé, et $\\overrightarrow{AB} + \\overrightarrow{BA} = \\vec{0}$.",
+      "difficulte": 1,
+      "tags": ["oppose", "vecteur-nul", "soustraction"]
+    },
+    {
+      "id": "2C-CH03-006",
+      "lecon": "Combinaison linéaire, points et vecteurs",
+      "type": "formule",
+      "recto": "Pour un réel $k$ non nul et un vecteur $\\vec{u}$ non nul, quelles sont les caractéristiques du vecteur $k\\vec{u}$ ?",
+      "verso": "Il a la même direction que $\\vec{u}$, le même sens si $k > 0$ et le sens contraire si $k < 0$, et sa longueur vaut $|k|$ fois celle de $\\vec{u}$.",
+      "difficulte": 2,
+      "tags": ["multiplication-reel", "direction-sens"]
+    },
+    {
+      "id": "2C-CH03-007",
+      "lecon": "Combinaison linéaire, points et vecteurs",
+      "type": "formule",
+      "recto": "Quelles règles de développement s'appliquent au produit d'un réel par un vecteur ?",
+      "verso": "$k\\left(\\vec{u} + \\vec{v}\\right) = k\\vec{u} + k\\vec{v}$, puis $\\left(k + k'\\right)\\vec{u} = k\\vec{u} + k'\\vec{u}$ et enfin $k\\left(k'\\vec{u}\\right) = \\left(kk'\\right)\\vec{u}$.",
+      "difficulte": 2,
+      "tags": ["multiplication-reel", "regles-de-calcul"]
+    },
+    {
+      "id": "2C-CH03-008",
+      "lecon": "Combinaison linéaire, points et vecteurs",
+      "type": "formule",
+      "recto": "Que vaut la norme $\\|k\\vec{u}\\|$ en fonction de $k$ et de $\\|\\vec{u}\\|$ ?",
+      "verso": "$\\|k\\vec{u}\\| = |k| \\times \\|\\vec{u}\\|$. La valeur absolue est indispensable, car une norme n'est jamais négative : $\\|-3\\vec{u}\\| = 3\\|\\vec{u}\\|$.",
+      "difficulte": 2,
+      "tags": ["norme", "multiplication-reel"]
+    },
+    {
+      "id": "2C-CH03-009",
+      "lecon": "Combinaison linéaire, points et vecteurs",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on combinaison linéaire de deux vecteurs $\\vec{u}$ et $\\vec{v}$ ?",
+      "verso": "Tout vecteur qui s'écrit $\\vec{w} = a\\vec{u} + b\\vec{v}$, où $a$ et $b$ sont des réels appelés coefficients de la combinaison linéaire.",
+      "difficulte": 1,
+      "tags": ["combinaison-lineaire", "definition"]
+    },
+    {
+      "id": "2C-CH03-010",
+      "lecon": "Combinaison linéaire, points et vecteurs",
+      "type": "definition",
+      "recto": "Que signifie que deux vecteurs $\\vec{u}$ et $\\vec{v}$, avec $\\vec{u}$ non nul, sont colinéaires ?",
+      "verso": "Cela signifie qu'il existe un réel $k$ tel que $\\vec{v} = k\\vec{u}$. Deux vecteurs colinéaires ont la même direction, et $\\vec{0}$ est colinéaire à tout vecteur puisque $\\vec{0} = 0 \\times \\vec{u}$.",
+      "difficulte": 2,
+      "tags": ["colinearite", "definition"]
+    },
+    {
+      "id": "2C-CH03-011",
+      "lecon": "Combinaison linéaire, points et vecteurs",
+      "type": "definition",
+      "recto": "Pourquoi deux vecteurs colinéaires ne sont-ils pas forcément égaux ?",
+      "verso": "Parce que la colinéarité dit seulement qu'il existe un réel $k$ tel que $\\vec{v} = k\\vec{u}$ : la direction est commune, mais le sens et la longueur peuvent différer. Ainsi $\\overrightarrow{AB}$, $2\\overrightarrow{AB}$ et $-3\\overrightarrow{AB}$ sont colinéaires sans être égaux ; l'égalité est le seul cas $k = 1$.",
+      "difficulte": 3,
+      "tags": ["colinearite", "piege"]
+    },
+    {
+      "id": "2C-CH03-012",
+      "lecon": "Combinaison linéaire, points et vecteurs",
+      "type": "formule",
+      "recto": "Quelles égalités vectorielles caractérisent le fait que $I$ est le milieu de $[AB]$ ?",
+      "verso": "$I$ est le milieu de $[AB]$ si et seulement si $\\overrightarrow{AI} = \\dfrac{1}{2}\\overrightarrow{AB}$, ce qui équivaut aussi à $\\overrightarrow{IA} + \\overrightarrow{IB} = \\vec{0}$.",
+      "difficulte": 2,
+      "tags": ["milieu", "caracterisation"]
+    },
+    {
+      "id": "2C-CH03-013",
+      "lecon": "Combinaison linéaire, points et vecteurs",
+      "type": "formule",
+      "recto": "Quelle condition vectorielle caractérise l'alignement de trois points $A$, $B$ et $C$ ?",
+      "verso": "Ils sont alignés si et seulement si $\\overrightarrow{AB}$ et $\\overrightarrow{AC}$ sont colinéaires, c'est-à-dire s'il existe un réel $k$ tel que $\\overrightarrow{AC} = k\\overrightarrow{AB}$.",
+      "difficulte": 2,
+      "tags": ["alignement", "colinearite"]
+    },
+    {
+      "id": "2C-CH03-014",
+      "lecon": "Combinaison linéaire, points et vecteurs",
+      "type": "formule",
+      "recto": "Quelle condition vectorielle caractérise le parallélisme des droites $(AB)$ et $(CD)$ ?",
+      "verso": "Ces deux droites sont parallèles si et seulement si les vecteurs $\\overrightarrow{AB}$ et $\\overrightarrow{CD}$ sont colinéaires.",
+      "difficulte": 2,
+      "tags": ["parallelisme", "colinearite"]
+    },
+    {
+      "id": "2C-CH03-015",
+      "lecon": "Combinaison linéaire, points et vecteurs",
+      "type": "formule",
+      "recto": "Quelle égalité de vecteurs traduit que $ABCD$ est un parallélogramme ?",
+      "verso": "$\\overrightarrow{AB} = \\overrightarrow{DC}$, ce qui équivaut à $\\overrightarrow{AD} = \\overrightarrow{BC}$, et aussi au fait que les diagonales $[AC]$ et $[BD]$ ont le même milieu.",
+      "difficulte": 2,
+      "tags": ["parallelogramme", "caracterisation"]
+    },
+    {
+      "id": "2C-CH03-016",
+      "lecon": "Combinaison linéaire, points et vecteurs",
+      "type": "definition",
+      "recto": "Pourquoi écrire $\\overrightarrow{AB} = \\overrightarrow{CD}$ pour un parallélogramme $ABCD$ est-il une erreur ?",
+      "verso": "Parce que les côtés qui se correspondent sont $[AB]$ et $[DC]$ : la bonne égalité est $\\overrightarrow{AB} = \\overrightarrow{DC}$, lue dans le même sens. Avec $\\overrightarrow{AB} = \\overrightarrow{CD}$, le quadrilatère obtenu serait croisé.",
+      "difficulte": 3,
+      "tags": ["parallelogramme", "piege", "ordre-des-lettres"]
+    },
+    {
+      "id": "2C-CH03-017",
+      "lecon": "Base de l'ensemble des vecteurs du plan",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on une base de l'ensemble des vecteurs du plan ?",
+      "verso": "Tout couple $\\left(\\vec{i}\\,;\\,\\vec{j}\\right)$ de vecteurs non colinéaires. Aucune autre condition n'est exigée : les deux vecteurs peuvent être obliques et de longueurs différentes.",
+      "difficulte": 2,
+      "tags": ["base", "definition", "non-colineaires"]
+    },
+    {
+      "id": "2C-CH03-018",
+      "lecon": "Base de l'ensemble des vecteurs du plan",
+      "type": "definition",
+      "recto": "Pourquoi le couple $\\left(\\vec{i}\\,;\\,2\\vec{i}\\right)$ n'est-il pas une base du plan ?",
+      "verso": "Parce que ces deux vecteurs sont colinéaires : toutes leurs combinaisons linéaires restent sur une même droite et une infinité de vecteurs du plan deviennent inaccessibles. Pour la même raison, un couple contenant $\\vec{0}$ n'est jamais une base.",
+      "difficulte": 3,
+      "tags": ["base", "colinearite", "piege"]
+    },
+    {
+      "id": "2C-CH03-019",
+      "lecon": "Base de l'ensemble des vecteurs du plan",
+      "type": "definition",
+      "recto": "Qu'est-ce qu'un repère du plan ?",
+      "verso": "C'est la donnée d'un point $O$, appelé origine, et d'une base $\\left(\\vec{i}\\,;\\,\\vec{j}\\right)$. On le note $\\left(O\\,;\\,\\vec{i}\\,;\\,\\vec{j}\\right)$.",
+      "difficulte": 1,
+      "tags": ["repere", "definition"]
+    },
+    {
+      "id": "2C-CH03-020",
+      "lecon": "Base de l'ensemble des vecteurs du plan",
+      "type": "definition",
+      "recto": "Que permet de repérer un repère, qu'une base seule ne permet pas de repérer ?",
+      "verso": "Les points. Une base fixe seulement des directions et ne repère que des vecteurs ; le repère y ajoute une origine, ce qui permet de repérer aussi les points.",
+      "difficulte": 2,
+      "tags": ["base", "repere", "distinction"]
+    },
+    {
+      "id": "2C-CH03-021",
+      "lecon": "Base de l'ensemble des vecteurs du plan",
+      "type": "formule",
+      "recto": "Pourquoi trois points $A$, $B$ et $C$ non alignés fournissent-ils une base du plan ?",
+      "verso": "Parce que $\\overrightarrow{AB}$ et $\\overrightarrow{AC}$ ne sont alors pas colinéaires : le couple $\\left(\\overrightarrow{AB}\\,;\\,\\overrightarrow{AC}\\right)$ est une base, et $\\left(A\\,;\\,\\overrightarrow{AB}\\,;\\,\\overrightarrow{AC}\\right)$ est un repère.",
+      "difficulte": 2,
+      "tags": ["base", "triangle", "repere"]
+    },
+    {
+      "id": "2C-CH03-022",
+      "lecon": "Base de l'ensemble des vecteurs du plan",
+      "type": "formule",
+      "recto": "Dans une base $\\left(\\vec{i}\\,;\\,\\vec{j}\\right)$, sous quelle forme s'écrit tout vecteur du plan ?",
+      "verso": "Sous la forme $\\vec{u} = x\\vec{i} + y\\vec{j}$, et d'une seule manière. Cette écriture est la décomposition de $\\vec{u}$, et $\\left(x\\,;\\,y\\right)$ est le couple de ses coordonnées dans cette base.",
+      "difficulte": 2,
+      "tags": ["decomposition", "coordonnees", "unicite"]
+    },
+    {
+      "id": "2C-CH03-023",
+      "lecon": "Base de l'ensemble des vecteurs du plan",
+      "type": "formule",
+      "recto": "Que peut-on déduire de l'égalité $x\\vec{i} + y\\vec{j} = x'\\vec{i} + y'\\vec{j}$ écrite dans une base ?",
+      "verso": "Que $x = x'$ et $y = y'$. L'unicité de la décomposition coupe une égalité vectorielle en deux égalités entre nombres, ce qui donne un système de deux équations.",
+      "difficulte": 2,
+      "tags": ["decomposition", "unicite", "systeme"]
+    },
+    {
+      "id": "2C-CH03-024",
+      "lecon": "Base de l'ensemble des vecteurs du plan",
+      "type": "formule",
+      "recto": "Dans une base, quelles sont les coordonnées de $\\vec{u} + \\vec{v}$ et de $k\\vec{u}$ pour $\\vec{u}\\left(x\\,;\\,y\\right)$ et $\\vec{v}\\left(x'\\,;\\,y'\\right)$ ?",
+      "verso": "$\\vec{u} + \\vec{v}$ a pour coordonnées $\\left(x + x'\\,;\\,y + y'\\right)$ et $k\\vec{u}$ a pour coordonnées $\\left(kx\\,;\\,ky\\right)$ : on calcule sur les coordonnées comme sur les vecteurs.",
+      "difficulte": 1,
+      "tags": ["coordonnees", "calcul"]
+    },
+    {
+      "id": "2C-CH03-025",
+      "lecon": "Base de l'ensemble des vecteurs du plan",
+      "type": "formule",
+      "recto": "Dans un repère, comment calcule-t-on les coordonnées du vecteur $\\overrightarrow{AB}$ ?",
+      "verso": "$\\overrightarrow{AB}\\left(x_B - x_A\\,;\\,y_B - y_A\\right)$ : c'est toujours l'arrivée moins le départ, jamais l'inverse.",
+      "difficulte": 1,
+      "tags": ["coordonnees", "vecteur"]
+    },
+    {
+      "id": "2C-CH03-026",
+      "lecon": "Base de l'ensemble des vecteurs du plan",
+      "type": "formule",
+      "recto": "Dans un repère, quelles sont les coordonnées du milieu $I$ du segment $[AB]$ ?",
+      "verso": "$I\\left(\\dfrac{x_A + x_B}{2}\\,;\\,\\dfrac{y_A + y_B}{2}\\right)$ : chaque coordonnée du milieu est la moyenne des coordonnées correspondantes de $A$ et de $B$.",
+      "difficulte": 1,
+      "tags": ["milieu", "coordonnees"]
+    },
+    {
+      "id": "2C-CH03-027",
+      "lecon": "Base de l'ensemble des vecteurs du plan",
+      "type": "definition",
+      "recto": "Pourquoi faut-il toujours préciser la base avant d'annoncer les coordonnées d'un vecteur ?",
+      "verso": "Parce qu'un même vecteur a des coordonnées différentes selon la base choisie : il peut avoir pour coordonnées $\\left(8\\,;\\,9\\right)$ dans une base et $\\left(3\\,;\\,2\\right)$ dans une autre.",
+      "difficulte": 3,
+      "tags": ["coordonnees", "base", "piege"]
+    },
+    {
+      "id": "2C-CH03-028",
+      "lecon": "Déterminant de deux vecteurs et colinéarité",
+      "type": "formule",
+      "recto": "Dans une base, comment calcule-t-on le déterminant de $\\vec{u}\\left(x\\,;\\,y\\right)$ et $\\vec{v}\\left(x'\\,;\\,y'\\right)$ ?",
+      "verso": "$\\det\\left(\\vec{u}\\,;\\,\\vec{v}\\right) = xy' - yx'$, en croix : produit de la diagonale descendante moins produit de la diagonale montante. Le résultat est un nombre, pas un vecteur.",
+      "difficulte": 1,
+      "tags": ["determinant", "calcul-en-croix"]
+    },
+    {
+      "id": "2C-CH03-029",
+      "lecon": "Déterminant de deux vecteurs et colinéarité",
+      "type": "formule",
+      "recto": "Quel test sur le déterminant permet de reconnaître deux vecteurs colinéaires ?",
+      "verso": "Deux vecteurs sont colinéaires si et seulement si leur déterminant est nul, c'est-à-dire si $xy' - yx' = 0$.",
+      "difficulte": 2,
+      "tags": ["determinant", "colinearite"]
+    },
+    {
+      "id": "2C-CH03-030",
+      "lecon": "Déterminant de deux vecteurs et colinéarité",
+      "type": "formule",
+      "recto": "Quel déterminant faut-il calculer pour savoir si trois points $A$, $B$ et $C$ sont alignés ?",
+      "verso": "Celui de $\\overrightarrow{AB}$ et $\\overrightarrow{AC}$ : les trois points sont alignés si et seulement si $\\det\\left(\\overrightarrow{AB}\\,;\\,\\overrightarrow{AC}\\right) = 0$.",
+      "difficulte": 2,
+      "tags": ["determinant", "alignement"]
+    },
+    {
+      "id": "2C-CH03-031",
+      "lecon": "Déterminant de deux vecteurs et colinéarité",
+      "type": "formule",
+      "recto": "Comment le déterminant permet-il de décider si les droites $(AB)$ et $(CD)$ sont parallèles ?",
+      "verso": "On calcule $\\det\\left(\\overrightarrow{AB}\\,;\\,\\overrightarrow{CD}\\right)$ : les deux droites sont parallèles si et seulement si ce nombre est nul.",
+      "difficulte": 2,
+      "tags": ["determinant", "parallelisme"]
+    },
+    {
+      "id": "2C-CH03-032",
+      "lecon": "Déterminant de deux vecteurs et colinéarité",
+      "type": "formule",
+      "recto": "Quelle condition sur le déterminant fait du couple $\\left(\\vec{u}\\,;\\,\\vec{v}\\right)$ une base du plan ?",
+      "verso": "Le déterminant doit être non nul : $\\left(\\vec{u}\\,;\\,\\vec{v}\\right)$ est une base si et seulement si $\\det\\left(\\vec{u}\\,;\\,\\vec{v}\\right) \\ne 0$.",
+      "difficulte": 2,
+      "tags": ["determinant", "base"]
+    },
+    {
+      "id": "2C-CH03-033",
+      "lecon": "Déterminant de deux vecteurs et colinéarité",
+      "type": "formule",
+      "recto": "Quel point commun doivent avoir les deux vecteurs dont on calcule le déterminant pour prouver un alignement ?",
+      "verso": "Ils doivent partir du même point : pour $A$, $B$, $C$, on prend $\\overrightarrow{AB}$ et $\\overrightarrow{AC}$. Sans point commun, un déterminant nul prouverait seulement un parallélisme de deux droites.",
+      "difficulte": 2,
+      "tags": ["determinant", "alignement", "distinction"]
+    },
+    {
+      "id": "2C-CH03-034",
+      "lecon": "Déterminant de deux vecteurs et colinéarité",
+      "type": "formule",
+      "recto": "Que devient le déterminant de deux vecteurs lorsqu'on échange leur ordre ?",
+      "verso": "Il change de signe : $\\det\\left(\\vec{v}\\,;\\,\\vec{u}\\right) = -\\det\\left(\\vec{u}\\,;\\,\\vec{v}\\right)$. En particulier $\\det\\left(\\vec{u}\\,;\\,\\vec{u}\\right) = 0$, car un vecteur est toujours colinéaire à lui-même.",
+      "difficulte": 2,
+      "tags": ["determinant", "antisymetrie"]
+    },
+    {
+      "id": "2C-CH03-035",
+      "lecon": "Déterminant de deux vecteurs et colinéarité",
+      "type": "formule",
+      "recto": "Qu'est-ce qui ne change pas quand on calcule le déterminant de deux mêmes vecteurs dans deux bases différentes ?",
+      "verso": "Le fait qu'il soit nul ou non. Sa valeur, elle, dépend de la base choisie. La colinéarité est une propriété géométrique : elle ne peut pas changer selon le quadrillage utilisé.",
+      "difficulte": 3,
+      "tags": ["determinant", "base", "colinearite"]
+    },
+    {
+      "id": "2C-CH03-036",
+      "lecon": "Déterminant de deux vecteurs et colinéarité",
+      "type": "formule",
+      "recto": "Pourquoi le calcul $xx' - yy'$ ne donne-t-il pas le déterminant de $\\vec{u}\\left(x\\,;\\,y\\right)$ et $\\vec{v}\\left(x'\\,;\\,y'\\right)$ ?",
+      "verso": "Parce que le déterminant se calcule en croix : $\\det\\left(\\vec{u}\\,;\\,\\vec{v}\\right) = xy' - yx'$. La formule fausse multiplie les premières coordonnées entre elles et les secondes entre elles, ce qui ne traduit aucune proportionnalité.",
+      "difficulte": 3,
+      "tags": ["determinant", "piege"]
+    },
+    {
+      "id": "2C-CH03-037",
+      "lecon": "Déterminant de deux vecteurs et colinéarité",
+      "type": "formule",
+      "recto": "Comment trouve-t-on les valeurs d'un paramètre $m$ qui rendent deux vecteurs colinéaires ?",
+      "verso": "On écrit que leur déterminant est nul : cela donne une équation d'inconnue $m$, dont les solutions sont exactement les valeurs cherchées.",
+      "difficulte": 2,
+      "tags": ["determinant", "parametre", "equation"]
+    },
+    {
+      "id": "2C-CH03-038",
+      "lecon": "Déterminant de deux vecteurs et colinéarité",
+      "type": "formule",
+      "recto": "Pourquoi le déterminant de deux vecteurs colinéaires est-il toujours nul ?",
+      "verso": "Si $\\vec{v} = k\\vec{u}$, alors $x' = kx$ et $y' = ky$, donc $xy' - yx' = x\\left(ky\\right) - y\\left(kx\\right) = kxy - kxy = 0$.",
+      "difficulte": 3,
+      "tags": ["determinant", "colinearite", "demonstration"]
+    }
+  ]
+}

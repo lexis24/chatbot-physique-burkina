@@ -1,0 +1,332 @@
+{
+  "niveau": "5ème",
+  "chapitre": "Chapitre 2 : Multiples et diviseurs d'un entier naturel · Nombres premiers",
+  "source": "maths/5eme/Chapitre_2_Multiples_diviseurs_premiers",
+  "nombre_cartes": 36,
+  "cartes": [
+    {
+      "id": "5E-CH02-001",
+      "lecon": "Multiples d'un entier naturel ; critères de divisibilité",
+      "type": "definition",
+      "recto": "Quand dit-on qu'un nombre a est un multiple d'un nombre b non nul ?",
+      "verso": "Lorsqu'il existe un entier q tel que $a = b \\times q$. On dit alors aussi que a est divisible par b, ou que b divise a.",
+      "difficulte": 1,
+      "tags": ["multiple", "definition"]
+    },
+    {
+      "id": "5E-CH02-002",
+      "lecon": "Multiples d'un entier naturel ; critères de divisibilité",
+      "type": "definition",
+      "recto": "Que désigne la notation $M_{7}$ ?",
+      "verso": "L'ensemble des multiples de $7$, c'est-à-dire {0 ; 7 ; 14 ; 21 ; 28 ; …}. De façon générale, $M_{b}$ désigne l'ensemble des multiples de b.",
+      "difficulte": 1,
+      "tags": ["multiple", "notation", "ensemble"]
+    },
+    {
+      "id": "5E-CH02-003",
+      "lecon": "Multiples d'un entier naturel ; critères de divisibilité",
+      "type": "definition",
+      "recto": "Comment lit-on les symboles $\\in$ et $\\notin$ dans une écriture comme $21 \\in M_{7}$ ?",
+      "verso": "$\\in$ se lit « appartient à » et $\\notin$ se lit « n'appartient pas à ». Ainsi $21 \\in M_{7}$ signifie que $21$ est un multiple de $7$.",
+      "difficulte": 2,
+      "tags": ["notation", "appartenance"]
+    },
+    {
+      "id": "5E-CH02-004",
+      "lecon": "Multiples d'un entier naturel ; critères de divisibilité",
+      "type": "formule",
+      "recto": "De quels entiers le nombre $0$ est-il un multiple ?",
+      "verso": "De tous. Par ailleurs, tout entier est multiple de $1$ et de lui-même, et un multiple de b est toujours supérieur ou égal à b, sauf $0$.",
+      "difficulte": 2,
+      "tags": ["multiple", "proprietes", "zero"]
+    },
+    {
+      "id": "5E-CH02-005",
+      "lecon": "Multiples d'un entier naturel ; critères de divisibilité",
+      "type": "formule",
+      "recto": "A quoi reconnaît-on qu'un nombre est divisible par $2$, puis qu'il est divisible par $5$ ?",
+      "verso": "On regarde son dernier chiffre : il est divisible par $2$ s'il se termine par $0$, $2$, $4$, $6$ ou $8$, et par $5$ s'il se termine par $0$ ou $5$.",
+      "difficulte": 1,
+      "tags": ["divisibilite", "criteres"]
+    },
+    {
+      "id": "5E-CH02-006",
+      "lecon": "Multiples d'un entier naturel ; critères de divisibilité",
+      "type": "formule",
+      "recto": "A quoi reconnaît-on qu'un nombre est divisible par $3$, puis qu'il est divisible par $9$ ?",
+      "verso": "On additionne ses chiffres : il est divisible par $3$ si cette somme est divisible par $3$, et par $9$ si cette somme est divisible par $9$. Pour $522$, $5 + 2 + 2 = 9$ : les deux critères réussissent.",
+      "difficulte": 2,
+      "tags": ["divisibilite", "criteres", "somme-des-chiffres"]
+    },
+    {
+      "id": "5E-CH02-007",
+      "lecon": "Multiples d'un entier naturel ; critères de divisibilité",
+      "type": "formule",
+      "recto": "A quoi reconnaît-on qu'un nombre est divisible par $4$ ?",
+      "verso": "On regarde le nombre formé par ses deux derniers chiffres : si ce nombre est divisible par $4$, le nombre entier l'est aussi.",
+      "difficulte": 2,
+      "tags": ["divisibilite", "criteres"]
+    },
+    {
+      "id": "5E-CH02-008",
+      "lecon": "Multiples d'un entier naturel ; critères de divisibilité",
+      "type": "formule",
+      "recto": "Comment teste-t-on la divisibilité d'un nombre par $6$ ?",
+      "verso": "On applique les deux critères de $2$ et de $3$, et il faut que les deux réussissent. Cela marche parce que $6 = 2 \\times 3$ et que ces deux nombres n'ont aucun diviseur commun autre que $1$.",
+      "difficulte": 2,
+      "tags": ["divisibilite", "critere-combine"]
+    },
+    {
+      "id": "5E-CH02-009",
+      "lecon": "Multiples d'un entier naturel ; critères de divisibilité",
+      "type": "definition",
+      "recto": "Pourquoi ne peut-on pas dire que $12$ est un diviseur de $3$ ?",
+      "verso": "Parce que c'est l'inverse : $12$ est un multiple de $3$, et $3$ est un diviseur de $12$. Le multiple est le plus grand des deux, le diviseur le plus petit.",
+      "difficulte": 3,
+      "tags": ["multiple", "diviseur", "piege"]
+    },
+    {
+      "id": "5E-CH02-010",
+      "lecon": "Diviseurs d'un entier naturel",
+      "type": "definition",
+      "recto": "Quand dit-on qu'un nombre b est un diviseur d'un nombre a ?",
+      "verso": "Lorsque a est un multiple de b, c'est-à-dire lorsqu'il existe un entier q tel que $a = b \\times q$. Autrement dit, le reste de $a \\div b$ vaut $0$.",
+      "difficulte": 1,
+      "tags": ["diviseur", "definition"]
+    },
+    {
+      "id": "5E-CH02-011",
+      "lecon": "Diviseurs d'un entier naturel",
+      "type": "definition",
+      "recto": "Que désigne la notation $D_{12}$ ?",
+      "verso": "L'ensemble des diviseurs de $12$, soit {1 ; 2 ; 3 ; 4 ; 6 ; 12}. De façon générale, $D_{a}$ désigne l'ensemble des diviseurs de a.",
+      "difficulte": 1,
+      "tags": ["diviseur", "notation", "ensemble"]
+    },
+    {
+      "id": "5E-CH02-012",
+      "lecon": "Diviseurs d'un entier naturel",
+      "type": "formule",
+      "recto": "De quels entiers le nombre $1$ est-il un diviseur ?",
+      "verso": "De tous. Par ailleurs, tout entier non nul est diviseur de lui-même, et il est aussi diviseur de $0$.",
+      "difficulte": 2,
+      "tags": ["diviseur", "proprietes"]
+    },
+    {
+      "id": "5E-CH02-013",
+      "lecon": "Diviseurs d'un entier naturel",
+      "type": "definition",
+      "recto": "Pourquoi la liste des diviseurs d'un nombre est-elle finie, alors que celle de ses multiples ne l'est pas ?",
+      "verso": "Parce qu'un diviseur de a n'est jamais plus grand que a, pour a non nul : les candidats sont donc en nombre limité. Les multiples, eux, se poursuivent indéfiniment.",
+      "difficulte": 2,
+      "tags": ["diviseur", "multiple", "distinction"]
+    },
+    {
+      "id": "5E-CH02-014",
+      "lecon": "Diviseurs d'un entier naturel",
+      "type": "formule",
+      "recto": "Pourquoi dit-on que les diviseurs d'un nombre vont par paires ?",
+      "verso": "Parce que si b divise a, alors le quotient $q = a \\div b$ est lui aussi un diviseur de a, et $b \\times q = a$. Trouver un diviseur en donne donc deux d'un coup.",
+      "difficulte": 2,
+      "tags": ["diviseur", "paires"]
+    },
+    {
+      "id": "5E-CH02-015",
+      "lecon": "Diviseurs d'un entier naturel",
+      "type": "formule",
+      "recto": "Quand s'arrête-t-on dans la recherche des diviseurs d'un nombre, en essayant $1$, $2$, $3$, $4$ et ainsi de suite ?",
+      "verso": "Quand les deux membres d'une même paire se rejoignent. Pour $36$, on s'arrête à $6 \\times 6$ : les diviseurs plus grands ont déjà été trouvés comme partenaires.",
+      "difficulte": 2,
+      "tags": ["diviseur", "recherche", "paires"]
+    },
+    {
+      "id": "5E-CH02-016",
+      "lecon": "Diviseurs d'un entier naturel",
+      "type": "definition",
+      "recto": "Que désignent les symboles $\\cap$ et $\\cup$ placés entre deux ensembles ?",
+      "verso": "$\\cap$ est l'intersection, ce qui appartient aux deux ensembles à la fois ; $\\cup$ est la réunion, ce qui appartient à l'un ou à l'autre. Ainsi $D_{30} \\cap D_{45}$ donne les diviseurs communs à $30$ et à $45$.",
+      "difficulte": 2,
+      "tags": ["notation", "intersection", "reunion"]
+    },
+    {
+      "id": "5E-CH02-017",
+      "lecon": "La division euclidienne",
+      "type": "definition",
+      "recto": "Qu'est-ce qu'effectuer la division euclidienne d'un entier a par un entier b non nul ?",
+      "verso": "C'est trouver l'unique couple (q ; r) tel que $a = b \\times q + r$ avec $0 \\le r < b$. On appelle a le dividende, b le diviseur, q le quotient et r le reste.",
+      "difficulte": 1,
+      "tags": ["division-euclidienne", "definition"]
+    },
+    {
+      "id": "5E-CH02-018",
+      "lecon": "La division euclidienne",
+      "type": "formule",
+      "recto": "Pourquoi le reste d'une division euclidienne doit-il rester plus petit que le diviseur ?",
+      "verso": "Parce que s'il atteignait le diviseur, on pourrait encore former un paquet complet de plus et le quotient serait faux. C'est cette condition qui rend le couple (q ; r) unique.",
+      "difficulte": 2,
+      "tags": ["division-euclidienne", "reste", "condition"]
+    },
+    {
+      "id": "5E-CH02-019",
+      "lecon": "La division euclidienne",
+      "type": "formule",
+      "recto": "A quoi voit-on, dans une division euclidienne, que a est divisible par b ?",
+      "verso": "Au reste : le nombre a est divisible par b si et seulement si $r = 0$.",
+      "difficulte": 1,
+      "tags": ["division-euclidienne", "divisibilite"]
+    },
+    {
+      "id": "5E-CH02-020",
+      "lecon": "La division euclidienne",
+      "type": "formule",
+      "recto": "Quelles valeurs le reste d'une division par b peut-il prendre ?",
+      "verso": "Les valeurs $0, 1, 2, \\dots, b - 1$ : il y a donc exactement b restes possibles. En divisant par $5$, le reste vaut $0$, $1$, $2$, $3$ ou $4$.",
+      "difficulte": 2,
+      "tags": ["division-euclidienne", "reste"]
+    },
+    {
+      "id": "5E-CH02-021",
+      "lecon": "La division euclidienne",
+      "type": "formule",
+      "recto": "Comment retrouve-t-on le dividende quand on connaît le diviseur, le quotient et le reste ?",
+      "verso": "On applique l'égalité $a = b \\times q + r$. Avec un diviseur $12$, un quotient $7$ et un reste $5$, on obtient $a = 12 \\times 7 + 5 = 89$.",
+      "difficulte": 2,
+      "tags": ["division-euclidienne", "dividende"]
+    },
+    {
+      "id": "5E-CH02-022",
+      "lecon": "La division euclidienne",
+      "type": "formule",
+      "recto": "Entre quels deux multiples consécutifs de b se situe un nombre a tel que $a = b \\times q + r$ ?",
+      "verso": "Entre $b \\times q$ et $b \\times (q + 1)$, c'est-à-dire $b \\times q \\le a < b \\times (q + 1)$. Pour $89$ divisé par $12$ : $84 \\le 89 < 96$.",
+      "difficulte": 3,
+      "tags": ["division-euclidienne", "encadrement"]
+    },
+    {
+      "id": "5E-CH02-023",
+      "lecon": "La division euclidienne",
+      "type": "formule",
+      "recto": "Pourquoi l'écriture $43 = 5 \\times 7 + 8$ ne traduit-elle pas la division euclidienne de $43$ par $5$ ?",
+      "verso": "Parce que le calcul tombe juste, mais le reste $8$ n'est pas plus petit que le diviseur $5$. L'écriture correcte est $43 = 5 \\times 8 + 3$.",
+      "difficulte": 3,
+      "tags": ["division-euclidienne", "piege", "reste"]
+    },
+    {
+      "id": "5E-CH02-024",
+      "lecon": "Les nombres premiers",
+      "type": "definition",
+      "recto": "Qu'est-ce qu'un nombre premier ?",
+      "verso": "C'est un entier naturel qui possède exactement deux diviseurs : $1$ et lui-même. Par exemple $2$, $3$, $5$, $7$, $11$, $13$, $17$, $19$ et $23$.",
+      "difficulte": 1,
+      "tags": ["nombre-premier", "definition"]
+    },
+    {
+      "id": "5E-CH02-025",
+      "lecon": "Les nombres premiers",
+      "type": "definition",
+      "recto": "Pourquoi $1$ n'est-il pas un nombre premier ?",
+      "verso": "Parce qu'il ne possède qu'un seul diviseur, lui-même, alors qu'un nombre premier en compte exactement deux. Le plus petit nombre premier est donc $2$.",
+      "difficulte": 2,
+      "tags": ["nombre-premier", "piege"]
+    },
+    {
+      "id": "5E-CH02-026",
+      "lecon": "Les nombres premiers",
+      "type": "formule",
+      "recto": "Jusqu'où faut-il pousser les essais pour savoir si un nombre est premier ?",
+      "verso": "On essaie les nombres premiers successifs $2$, $3$, $5$, $7$, $11$ et ainsi de suite, et l'on s'arrête dès que le nombre premier testé, multiplié par lui-même, dépasse le nombre étudié. Si aucun ne l'a divisé, il est premier.",
+      "difficulte": 2,
+      "tags": ["nombre-premier", "test", "arret"]
+    },
+    {
+      "id": "5E-CH02-027",
+      "lecon": "Les nombres premiers",
+      "type": "formule",
+      "recto": "Pourquoi peut-on arrêter les essais dès que le nombre premier testé, multiplié par lui-même, dépasse le nombre étudié ?",
+      "verso": "Parce qu'un nombre non premier s'écrit $b \\times q$ avec deux facteurs plus grands que $1$. Si le plus petit des deux dépassait ce seuil, leur produit dépasserait le nombre lui-même, ce qui est impossible.",
+      "difficulte": 3,
+      "tags": ["nombre-premier", "justification"]
+    },
+    {
+      "id": "5E-CH02-028",
+      "lecon": "Les nombres premiers",
+      "type": "formule",
+      "recto": "Pourquoi $51$ n'est-il pas un nombre premier, bien qu'il soit impair ?",
+      "verso": "Parce qu'être impair ne suffit pas : $51 = 3 \\times 17$, donc $51$ possède quatre diviseurs, à savoir $1$, $3$, $17$ et $51$.",
+      "difficulte": 3,
+      "tags": ["nombre-premier", "piege", "impair"]
+    },
+    {
+      "id": "5E-CH02-029",
+      "lecon": "Les nombres premiers",
+      "type": "definition",
+      "recto": "En quoi consiste le crible d'Eratosthène ?",
+      "verso": "On écrit la suite des nombres, on barre $1$, puis tous les multiples de $2$ sauf $2$, ceux de $3$ sauf $3$, puis ceux de $5$ et de $7$. Ce qui reste après ce tamisage est la liste des nombres premiers.",
+      "difficulte": 2,
+      "tags": ["crible", "eratosthene", "nombre-premier"]
+    },
+    {
+      "id": "5E-CH02-030",
+      "lecon": "Décomposition en produit de facteurs premiers",
+      "type": "formule",
+      "recto": "Que dit la propriété de décomposition d'un entier naturel supérieur à $1$ ?",
+      "verso": "Il s'écrit, de façon unique à l'ordre des facteurs près, comme un produit de facteurs premiers. Par exemple $60 = 2 \\times 2 \\times 3 \\times 5 = 2^{2} \\times 3 \\times 5$.",
+      "difficulte": 1,
+      "tags": ["decomposition", "facteurs-premiers", "unicite"]
+    },
+    {
+      "id": "5E-CH02-031",
+      "lecon": "Décomposition en produit de facteurs premiers",
+      "type": "definition",
+      "recto": "Pourquoi appelle-t-on la décomposition en facteurs premiers la carte d'identité d'un nombre ?",
+      "verso": "Parce qu'elle est unique. Deux élèves qui partent de découpages différents, l'un par $60 = 2 \\times 30$, l'autre par $60 = 6 \\times 10$, arrivent au même produit de nombres premiers, à l'ordre près.",
+      "difficulte": 2,
+      "tags": ["decomposition", "unicite"]
+    },
+    {
+      "id": "5E-CH02-032",
+      "lecon": "Décomposition en produit de facteurs premiers",
+      "type": "formule",
+      "recto": "En quoi consiste la division en cascade pour décomposer un nombre ?",
+      "verso": "On divise par $2$ tant que c'est possible, puis par $3$, puis par $5$, puis par $7$, jusqu'à obtenir $1$. Les diviseurs utilisés sont les facteurs premiers du nombre.",
+      "difficulte": 2,
+      "tags": ["decomposition", "division-en-cascade"]
+    },
+    {
+      "id": "5E-CH02-033",
+      "lecon": "Décomposition en produit de facteurs premiers",
+      "type": "formule",
+      "recto": "En quoi consiste l'arbre des facteurs ?",
+      "verso": "On casse le nombre en deux facteurs, puis on recommence sur chaque branche tant qu'un facteur n'est pas premier. Le travail s'arrête forcément, car les nombres obtenus deviennent de plus en plus petits.",
+      "difficulte": 2,
+      "tags": ["decomposition", "arbre-des-facteurs"]
+    },
+    {
+      "id": "5E-CH02-034",
+      "lecon": "Décomposition en produit de facteurs premiers",
+      "type": "formule",
+      "recto": "Comment lit-on les divisibilités d'un nombre sur sa décomposition en facteurs premiers ?",
+      "verso": "On vérifie si les facteurs nécessaires y sont présents. Comme $360 = 2^{3} \\times 3^{2} \\times 5$, il est divisible par $9$, qui vaut $3 \\times 3$, et par $8$, qui vaut $2 \\times 2 \\times 2$, mais pas par $7$, qui n'y apparaît pas.",
+      "difficulte": 2,
+      "tags": ["decomposition", "divisibilite", "lecture"]
+    },
+    {
+      "id": "5E-CH02-035",
+      "lecon": "Décomposition en produit de facteurs premiers",
+      "type": "definition",
+      "recto": "Que signifie l'écriture $2^{3}$ dans une décomposition en facteurs premiers ?",
+      "verso": "C'est un raccourci pour $2 \\times 2 \\times 2$. L'exposant compte simplement combien de fois le facteur premier apparaît dans le produit.",
+      "difficulte": 1,
+      "tags": ["decomposition", "exposant", "notation"]
+    },
+    {
+      "id": "5E-CH02-036",
+      "lecon": "Décomposition en produit de facteurs premiers",
+      "type": "formule",
+      "recto": "Pourquoi $60 = 4 \\times 15$ n'est-il pas une décomposition en facteurs premiers ?",
+      "verso": "Parce qu'une décomposition ne contient que des nombres premiers, or ni $4$ ni $15$ n'est premier. Il faut écrire $60 = 2^{2} \\times 3 \\times 5$.",
+      "difficulte": 3,
+      "tags": ["decomposition", "piege"]
+    }
+  ]
+}

@@ -1,0 +1,443 @@
+{
+  "niveau": "4ème",
+  "chapitre": "Chapitre 17 : Compositions d'applications du plan",
+  "source": "maths/4eme/Chapitre_17_Compositions_applications",
+  "nombre_cartes": 35,
+  "cartes": [
+    {
+      "id": "4E-CH17-001",
+      "lecon": "Composer deux translations",
+      "type": "definition",
+      "recto": "Qu'est-ce qu'une application du plan ?",
+      "verso": "C'est une correspondance qui associe à chaque point du plan un point, et un seul. La translation, la symétrie centrale et la symétrie orthogonale en sont.",
+      "difficulte": 1,
+      "tags": [
+        "application",
+        "definition"
+      ]
+    },
+    {
+      "id": "4E-CH17-002",
+      "lecon": "Composer deux translations",
+      "type": "definition",
+      "recto": "Que veut dire composer deux applications du plan ?",
+      "verso": "C'est les appliquer l'une après l'autre : la sortie de la première devient l'entrée de la seconde.",
+      "difficulte": 1,
+      "tags": [
+        "composee",
+        "definition"
+      ]
+    },
+    {
+      "id": "4E-CH17-003",
+      "lecon": "Composer deux translations",
+      "type": "definition",
+      "recto": "Comment appelle-t-on le point obtenu après la première des deux transformations d'une composée ?",
+      "verso": "C'est le point intermédiaire, noté $M'$, alors que le point d'arrivée est noté $M''$. Ce point n'est pas le but du voyage, mais il doit être construit.",
+      "difficulte": 2,
+      "tags": [
+        "composee",
+        "point-intermediaire"
+      ]
+    },
+    {
+      "id": "4E-CH17-004",
+      "lecon": "Composer deux translations",
+      "type": "definition",
+      "recto": "Dans la composée notée $g \\circ f$, quelle transformation applique-t-on en premier ?",
+      "verso": "On applique d'abord $f$, puis $g$ : le symbole $\\circ$, qui se lit « rond », s'interprète de droite à gauche. $g \\circ f\\left(M\\right)$ signifie « $g$ appliqué à $f\\left(M\\right)$ ».",
+      "difficulte": 2,
+      "tags": [
+        "composee",
+        "notation",
+        "ordre"
+      ]
+    },
+    {
+      "id": "4E-CH17-005",
+      "lecon": "Composer deux translations",
+      "type": "formule",
+      "recto": "Comment construit-on l'image d'un point M par « translation de $\\vec{u}$, puis translation de $\\vec{v}$ » ?",
+      "verso": "On construit $M'$ tel que $\\overrightarrow{MM'} = \\vec{u}$, puis $M''$ tel que $\\overrightarrow{M'M''} = \\vec{v}$. Le second vecteur se reporte à partir de $M'$.",
+      "difficulte": 2,
+      "tags": [
+        "translation",
+        "construction"
+      ]
+    },
+    {
+      "id": "4E-CH17-006",
+      "lecon": "Composer deux translations",
+      "type": "formule",
+      "recto": "Quelle est la nature de la composée de deux translations, de vecteurs $\\vec{u}$ et $\\vec{v}$ ?",
+      "verso": "C'est encore une translation, de vecteur $\\vec{u} + \\vec{v}$. Ce vecteur ne dépend pas du point de départ choisi.",
+      "difficulte": 2,
+      "tags": [
+        "translation",
+        "composee",
+        "nature"
+      ]
+    },
+    {
+      "id": "4E-CH17-007",
+      "lecon": "Composer deux translations",
+      "type": "formule",
+      "recto": "Quelle propriété des vecteurs justifie que deux translations enchaînées donnent une translation ?",
+      "verso": "La relation de Chasles : de $\\overrightarrow{MM'} = \\vec{u}$ et $\\overrightarrow{M'M''} = \\vec{v}$, on déduit $\\overrightarrow{MM''} = \\vec{u} + \\vec{v}$.",
+      "difficulte": 2,
+      "tags": [
+        "translation",
+        "chasles",
+        "justification"
+      ]
+    },
+    {
+      "id": "4E-CH17-008",
+      "lecon": "Composer deux translations",
+      "type": "formule",
+      "recto": "Quel effet l'ordre a-t-il sur le point d'arrivée lorsqu'on compose deux translations ?",
+      "verso": "Aucun : les deux ordres mènent au même point, car l'addition de deux vecteurs donne le même résultat dans les deux sens.",
+      "difficulte": 2,
+      "tags": [
+        "translation",
+        "ordre"
+      ]
+    },
+    {
+      "id": "4E-CH17-009",
+      "lecon": "Composer deux translations",
+      "type": "definition",
+      "recto": "Qu'est-ce que l'application réciproque d'une transformation ?",
+      "verso": "C'est la transformation qui annule la première : elle ramène chaque point à sa position de départ.",
+      "difficulte": 1,
+      "tags": [
+        "reciproque",
+        "definition"
+      ]
+    },
+    {
+      "id": "4E-CH17-010",
+      "lecon": "Composer deux translations",
+      "type": "formule",
+      "recto": "Quelle est l'application réciproque de la translation de vecteur $\\vec{u}$ ?",
+      "verso": "La translation de vecteur $-\\vec{u}$ : le même déplacement, effectué en sens contraire.",
+      "difficulte": 1,
+      "tags": [
+        "reciproque",
+        "translation"
+      ]
+    },
+    {
+      "id": "4E-CH17-011",
+      "lecon": "Composer deux translations",
+      "type": "formule",
+      "recto": "Quelles transformations du plan sont leur propre réciproque ?",
+      "verso": "La symétrie de centre O et la symétrie d'axe (d) : appliquée deux fois de suite, chacune ramène tout point à sa place.",
+      "difficulte": 2,
+      "tags": [
+        "reciproque",
+        "symetrie"
+      ]
+    },
+    {
+      "id": "4E-CH17-012",
+      "lecon": "Composer deux translations",
+      "type": "definition",
+      "recto": "Quelle application obtient-on en composant une transformation avec sa réciproque ?",
+      "verso": "L'application identique, celle qui ne déplace aucun point du plan.",
+      "difficulte": 2,
+      "tags": [
+        "reciproque",
+        "application-identique"
+      ]
+    },
+    {
+      "id": "4E-CH17-013",
+      "lecon": "Composer deux translations",
+      "type": "formule",
+      "recto": "Pourquoi ne reporte-t-on pas le second vecteur à partir de M lorsqu'on compose deux translations ?",
+      "verso": "Parce que la seconde translation part du point intermédiaire $M'$. Reporter les deux vecteurs depuis M donnerait deux images séparées, et non un enchaînement.",
+      "difficulte": 3,
+      "tags": [
+        "translation",
+        "piege",
+        "point-intermediaire"
+      ]
+    },
+    {
+      "id": "4E-CH17-014",
+      "lecon": "Composer deux symétries d'axes perpendiculaires",
+      "type": "formule",
+      "recto": "Comment construit-on l'image d'un point Q par « symétrie d'axe (d), puis symétrie d'axe (d') » ?",
+      "verso": "On construit $Q'$, image de Q par la symétrie d'axe (d), puis $Q''$, image de $Q'$ par la symétrie d'axe (d'). La seconde symétrie porte sur $Q'$, jamais sur Q.",
+      "difficulte": 2,
+      "tags": [
+        "symetrie-axiale",
+        "construction"
+      ]
+    },
+    {
+      "id": "4E-CH17-015",
+      "lecon": "Composer deux symétries d'axes perpendiculaires",
+      "type": "formule",
+      "recto": "Quelle est la médiatrice de $\\left[QQ'\\right]$ quand $Q'$ est l'image de Q par la symétrie d'axe (d) ?",
+      "verso": "C'est l'axe (d) lui-même. La droite $\\left(QQ'\\right)$ est donc perpendiculaire à (d), et Q et $Q'$ sont à la même distance de (d), de part et d'autre.",
+      "difficulte": 2,
+      "tags": [
+        "symetrie-axiale",
+        "mediatrice"
+      ]
+    },
+    {
+      "id": "4E-CH17-016",
+      "lecon": "Composer deux symétries d'axes perpendiculaires",
+      "type": "formule",
+      "recto": "Quelle transformation unique remplace deux symétries d'axes perpendiculaires se coupant en O ?",
+      "verso": "Le demi-tour de centre O, c'est-à-dire la symétrie de centre O : le point O est le milieu de $\\left[QQ''\\right]$.",
+      "difficulte": 2,
+      "tags": [
+        "symetrie-axiale",
+        "demi-tour",
+        "composee"
+      ]
+    },
+    {
+      "id": "4E-CH17-017",
+      "lecon": "Composer deux symétries d'axes perpendiculaires",
+      "type": "formule",
+      "recto": "Quelle est l'image du point d'intersection de deux axes perpendiculaires par la composée des deux symétries correspondantes ?",
+      "verso": "C'est ce point lui-même. Les points d'un axe ne bougent pas pendant leur symétrie, et ce point appartient aux deux axes à la fois.",
+      "difficulte": 2,
+      "tags": [
+        "symetrie-axiale",
+        "point-fixe"
+      ]
+    },
+    {
+      "id": "4E-CH17-018",
+      "lecon": "Composer deux symétries d'axes perpendiculaires",
+      "type": "formule",
+      "recto": "Quel effet l'ordre a-t-il sur le résultat lorsque les deux axes de symétrie sont perpendiculaires ?",
+      "verso": "Aucun : les deux ordres mènent au même point. Cela tient à la perpendicularité des axes ; en général, la composition de deux transformations n'est pas commutative.",
+      "difficulte": 3,
+      "tags": [
+        "symetrie-axiale",
+        "ordre",
+        "commutativite"
+      ]
+    },
+    {
+      "id": "4E-CH17-019",
+      "lecon": "Composer deux symétries d'axes perpendiculaires",
+      "type": "formule",
+      "recto": "Comment obtient-on l'image d'une figure entière par une composée de transformations ?",
+      "verso": "On transforme ses points remarquables, puis on relie les images dans le même ordre : deux points pour un segment, trois sommets pour un triangle.",
+      "difficulte": 1,
+      "tags": [
+        "figure",
+        "construction"
+      ]
+    },
+    {
+      "id": "4E-CH17-020",
+      "lecon": "Composer deux symétries d'axes perpendiculaires",
+      "type": "formule",
+      "recto": "Quelles grandeurs la translation et les symétries conservent-elles ?",
+      "verso": "Les longueurs, mais aussi l'alignement, le parallélisme et les angles. L'image d'un segment de $5$ cm mesure $5$ cm, et l'image d'un cercle de rayon $2$ cm a pour rayon $2$ cm.",
+      "difficulte": 1,
+      "tags": [
+        "conservation",
+        "longueurs"
+      ]
+    },
+    {
+      "id": "4E-CH17-021",
+      "lecon": "Composer deux symétries d'axes perpendiculaires",
+      "type": "formule",
+      "recto": "Quelle transformation renverse le sens d'une figure, comme le ferait un miroir ?",
+      "verso": "La symétrie d'axe. La translation et le demi-tour, eux, conservent le sens de la figure.",
+      "difficulte": 2,
+      "tags": [
+        "sens",
+        "symetrie-axiale"
+      ]
+    },
+    {
+      "id": "4E-CH17-022",
+      "lecon": "Composer deux symétries d'axes perpendiculaires",
+      "type": "formule",
+      "recto": "Pourquoi une lettre F n'est-elle plus inversée après deux symétries d'axes perpendiculaires ?",
+      "verso": "Parce qu'elle a été renversée deux fois et que les deux renversements se compensent. Il ne reste que le demi-tour, qui retourne la lettre sans l'inverser.",
+      "difficulte": 3,
+      "tags": [
+        "sens",
+        "demi-tour",
+        "piege"
+      ]
+    },
+    {
+      "id": "4E-CH17-023",
+      "lecon": "Composer deux symétries d'axes perpendiculaires",
+      "type": "formule",
+      "recto": "Quelle est la nature de la composée de deux symétries d'axes parallèles ?",
+      "verso": "C'est une translation perpendiculaire aux deux axes, dont la longueur vaut le double de l'écart entre ces axes.",
+      "difficulte": 2,
+      "tags": [
+        "axes-paralleles",
+        "translation",
+        "composee"
+      ]
+    },
+    {
+      "id": "4E-CH17-024",
+      "lecon": "Composer deux symétries d'axes perpendiculaires",
+      "type": "formule",
+      "recto": "Quelle est la nature de la composée de deux symétries d'axes sécants en O ?",
+      "verso": "C'est une rotation de centre O, d'angle égal au double de l'angle formé par les deux axes. Avec des axes perpendiculaires, on retrouve $2 \\times 90^{\\circ} = 180^{\\circ}$, soit un demi-tour.",
+      "difficulte": 2,
+      "tags": [
+        "axes-secants",
+        "rotation",
+        "composee"
+      ]
+    },
+    {
+      "id": "4E-CH17-025",
+      "lecon": "Composer deux symétries d'axes perpendiculaires",
+      "type": "definition",
+      "recto": "Pourquoi ne suffit-il pas de tracer une perpendiculaire à l'axe pour placer le symétrique d'un point ?",
+      "verso": "Parce que l'axe doit être la médiatrice du segment joignant le point et son image : il faut donc aussi reporter la même distance de l'autre côté de l'axe.",
+      "difficulte": 3,
+      "tags": [
+        "mediatrice",
+        "piege",
+        "construction"
+      ]
+    },
+    {
+      "id": "4E-CH17-026",
+      "lecon": "Composer deux symétries centrales",
+      "type": "formule",
+      "recto": "Comment construit-on l'image d'un point P par « symétrie de centre O, puis symétrie de centre $O'$ » ?",
+      "verso": "On construit $P'$ tel que O soit le milieu de $\\left[PP'\\right]$, puis $P''$ tel que $O'$ soit le milieu de $\\left[P'P''\\right]$.",
+      "difficulte": 2,
+      "tags": [
+        "symetrie-centrale",
+        "construction"
+      ]
+    },
+    {
+      "id": "4E-CH17-027",
+      "lecon": "Composer deux symétries centrales",
+      "type": "formule",
+      "recto": "Quel geste donne en pratique le symétrique d'un point P par rapport à un centre O ?",
+      "verso": "On prolonge la demi-droite d'origine P passant par O, au-delà de O, et l'on reporte la longueur OP : le point O devient le milieu de $\\left[PP'\\right]$.",
+      "difficulte": 1,
+      "tags": [
+        "symetrie-centrale",
+        "construction"
+      ]
+    },
+    {
+      "id": "4E-CH17-028",
+      "lecon": "Composer deux symétries centrales",
+      "type": "formule",
+      "recto": "Quel effet l'ordre des deux centres a-t-il quand on compose deux symétries centrales ?",
+      "verso": "Il change le point d'arrivée : « centre O puis centre $O'$ » et « centre $O'$ puis centre O » donnent en général deux points différents. Cette composition n'est pas commutative.",
+      "difficulte": 2,
+      "tags": [
+        "symetrie-centrale",
+        "ordre",
+        "commutativite"
+      ]
+    },
+    {
+      "id": "4E-CH17-029",
+      "lecon": "Composer deux symétries centrales",
+      "type": "formule",
+      "recto": "Quelle est la nature de la composée de deux symétries centrales de centres distincts O et $O'$ ?",
+      "verso": "C'est la translation de vecteur $2\\overrightarrow{OO'}$ : le déplacement obtenu est parallèle à $\\overrightarrow{OO'}$, de même sens, et deux fois plus long.",
+      "difficulte": 2,
+      "tags": [
+        "symetrie-centrale",
+        "translation",
+        "composee"
+      ]
+    },
+    {
+      "id": "4E-CH17-030",
+      "lecon": "Composer deux symétries centrales",
+      "type": "formule",
+      "recto": "De combien un point se déplace-t-il par la composée de deux symétries centrales dont les centres sont distants de $3$ cm ?",
+      "verso": "De $6$ cm, dans la direction de la droite qui joint les deux centres : le déplacement vaut toujours le double de la distance entre les centres.",
+      "difficulte": 2,
+      "tags": [
+        "symetrie-centrale",
+        "longueur",
+        "deplacement"
+      ]
+    },
+    {
+      "id": "4E-CH17-031",
+      "lecon": "Composer deux symétries centrales",
+      "type": "formule",
+      "recto": "Quel outil de géométrie démontre que $PP'' = 2 \\times OO'$ pour deux symétries centrales enchaînées ?",
+      "verso": "La droite des milieux : dans le triangle $PP'P''$, O est le milieu de $\\left[P'P\\right]$ et $O'$ celui de $\\left[P'P''\\right]$, donc $\\left(OO'\\right)$ et $\\left(PP''\\right)$ sont parallèles et $PP'' = 2 \\times OO'$.",
+      "difficulte": 3,
+      "tags": [
+        "droite-des-milieux",
+        "demonstration"
+      ]
+    },
+    {
+      "id": "4E-CH17-032",
+      "lecon": "Composer deux symétries centrales",
+      "type": "formule",
+      "recto": "Que devient un point auquel on applique deux fois la même symétrie centrale ?",
+      "verso": "Il revient à sa place : les deux demi-tours se compensent et la composée est l'application identique.",
+      "difficulte": 2,
+      "tags": [
+        "symetrie-centrale",
+        "application-identique"
+      ]
+    },
+    {
+      "id": "4E-CH17-033",
+      "lecon": "Composer deux symétries centrales",
+      "type": "formule",
+      "recto": "Comment contrôle-t-on la construction de l'image d'un point par deux symétries centrales ?",
+      "verso": "On vérifie que $\\left[PP''\\right]$ est parallèle à $\\left[OO'\\right]$ et que la longueur $PP''$ vaut le double de $OO'$.",
+      "difficulte": 2,
+      "tags": [
+        "symetrie-centrale",
+        "controle"
+      ]
+    },
+    {
+      "id": "4E-CH17-034",
+      "lecon": "Composer deux symétries centrales",
+      "type": "definition",
+      "recto": "Quelle différence sépare une symétrie centrale d'une symétrie d'axe ?",
+      "verso": "La symétrie centrale se fait autour d'un point, et P, O, $P'$ sont alignés. La symétrie d'axe se fait autour d'une droite, qui est la médiatrice du segment joignant le point et son image.",
+      "difficulte": 2,
+      "tags": [
+        "symetrie-centrale",
+        "symetrie-axiale",
+        "distinction"
+      ]
+    },
+    {
+      "id": "4E-CH17-035",
+      "lecon": "Composer deux symétries centrales",
+      "type": "formule",
+      "recto": "Quel déplacement obtient-on en échangeant l'ordre des deux centres d'une composée de symétries centrales ?",
+      "verso": "Le déplacement contraire du premier : même direction et même longueur, mais sens opposé, donc un autre point d'arrivée.",
+      "difficulte": 3,
+      "tags": [
+        "symetrie-centrale",
+        "ordre",
+        "piege"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,465 @@
+{
+  "niveau": "6ème",
+  "chapitre": "Chapitre 2 : La numération décimale",
+  "source": "maths/6eme/Chapitre_2_Numeration_decimale",
+  "nombre_cartes": 36,
+  "cartes": [
+    {
+      "id": "6E-CH02-001",
+      "lecon": "Chiffres, nombres et numération de position",
+      "type": "definition",
+      "recto": "Quelle différence y a-t-il entre un chiffre et un nombre ?",
+      "verso": "Un chiffre est un signe servant à écrire les nombres, et il y en a dix, de $0$ à $9$. Un nombre est une quantité, qui s'écrit avec un ou plusieurs chiffres : les chiffres sont aux nombres ce que les lettres sont aux mots.",
+      "difficulte": 1,
+      "tags": [
+        "chiffre",
+        "nombre",
+        "vocabulaire"
+      ]
+    },
+    {
+      "id": "6E-CH02-002",
+      "lecon": "Chiffres, nombres et numération de position",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on numération de position ?",
+      "verso": "Le fait que la place d'un chiffre indique sa valeur. Dans $333$, le premier $3$ vaut $300$, le deuxième $30$ et le troisième $3$.",
+      "difficulte": 1,
+      "tags": [
+        "numeration-de-position",
+        "valeur"
+      ]
+    },
+    {
+      "id": "6E-CH02-003",
+      "lecon": "Chiffres, nombres et numération de position",
+      "type": "definition",
+      "recto": "Quels sont les quatre premiers rangs d'un nombre entier, lus de droite à gauche ?",
+      "verso": "Les unités, les dizaines, les centaines, puis les unités de mille appelées aussi milliers. Chaque rang vaut dix fois le précédent : $1$ centaine $= 10$ dizaines $= 100$ unités.",
+      "difficulte": 1,
+      "tags": [
+        "rangs",
+        "unites",
+        "dizaines",
+        "centaines"
+      ]
+    },
+    {
+      "id": "6E-CH02-004",
+      "lecon": "Chiffres, nombres et numération de position",
+      "type": "formule",
+      "recto": "Comment calcule-t-on la valeur d'un chiffre d'après sa place ?",
+      "verso": "On multiplie le chiffre par la valeur de sa place : unité $= 1$, dizaine $= 10$, centaine $= 100$, millier $= 1\\,000$. Dans $6\\,308$, le $3$ est aux centaines et vaut $3 \\times 100 = 300$.",
+      "difficulte": 2,
+      "tags": [
+        "valeur",
+        "rangs",
+        "calcul"
+      ]
+    },
+    {
+      "id": "6E-CH02-005",
+      "lecon": "Chiffres, nombres et numération de position",
+      "type": "formule",
+      "recto": "Pourquoi regroupe-t-on les rangs trois par trois dans l'écriture d'un grand nombre ?",
+      "verso": "Pour le lire plus facilement : classe des unités, puis classe des mille. On laisse une petite espace entre deux classes, et l'on écrit $24\\,507$ plutôt que $24507$.",
+      "difficulte": 2,
+      "tags": [
+        "classes",
+        "grands-nombres",
+        "ecriture"
+      ]
+    },
+    {
+      "id": "6E-CH02-006",
+      "lecon": "Chiffres, nombres et numération de position",
+      "type": "definition",
+      "recto": "A quoi sert le chiffre $0$ écrit au milieu d'un nombre ?",
+      "verso": "Il marque un rang vide et garde la place. Dans $207$, il dit qu'il n'y a aucune dizaine ; sans lui on écrirait $27$, un nombre tout différent.",
+      "difficulte": 1,
+      "tags": [
+        "zero",
+        "rang-vide",
+        "position"
+      ]
+    },
+    {
+      "id": "6E-CH02-007",
+      "lecon": "Chiffres, nombres et numération de position",
+      "type": "definition",
+      "recto": "Quelle différence y a-t-il entre le chiffre des centaines et le nombre de centaines ?",
+      "verso": "Le chiffre des centaines est le seul signe écrit à ce rang. Le nombre de centaines compte toutes les centaines contenues dans le nombre. Dans $2\\,845$, le chiffre des centaines est $8$ et le nombre de centaines est $28$.",
+      "difficulte": 3,
+      "tags": [
+        "chiffre-des",
+        "nombre-de",
+        "piege"
+      ]
+    },
+    {
+      "id": "6E-CH02-008",
+      "lecon": "Chiffres, nombres et numération de position",
+      "type": "formule",
+      "recto": "Comment trouve-t-on le nombre de dizaines d'un nombre entier ?",
+      "verso": "On enlève le chiffre des unités : $4\\,752 = 475$ dizaines $+\\ 2$, donc le nombre de dizaines est $475$. On contrôle par $475 \\times 10 + 2 = 4\\,752$.",
+      "difficulte": 2,
+      "tags": [
+        "nombre-de",
+        "dizaines",
+        "methode"
+      ]
+    },
+    {
+      "id": "6E-CH02-009",
+      "lecon": "Chiffres, nombres et numération de position",
+      "type": "formule",
+      "recto": "Pourquoi peut-on ne pas écrire le zéro placé devant un nombre, alors qu'on ne peut jamais oublier celui du milieu ?",
+      "verso": "Parce qu'un zéro de devant ne change rien, tandis qu'un zéro supprimé au milieu fait glisser d'un cran vers la droite tous les chiffres de gauche : chacun perd dix fois sa valeur, et $2\\,407$ deviendrait $247$.",
+      "difficulte": 3,
+      "tags": [
+        "zero",
+        "rang-vide",
+        "piege"
+      ]
+    },
+    {
+      "id": "6E-CH02-010",
+      "lecon": "Les nombres décimaux : partie entière et partie décimale",
+      "type": "definition",
+      "recto": "Qu'est-ce qu'un nombre décimal ?",
+      "verso": "Un nombre formé d'une partie entière et d'une partie décimale, séparées par une virgule décimale. Dans $3{,}75$, la partie entière est $3$ et la partie décimale est $75$.",
+      "difficulte": 1,
+      "tags": [
+        "decimal",
+        "partie-entiere",
+        "partie-decimale"
+      ]
+    },
+    {
+      "id": "6E-CH02-011",
+      "lecon": "Les nombres décimaux : partie entière et partie décimale",
+      "type": "definition",
+      "recto": "Quels sont les trois premiers rangs situés après la virgule ?",
+      "verso": "Le dixième au premier rang, le centième au deuxième, le millième au troisième. A chaque pas vers la droite, on divise encore par dix.",
+      "difficulte": 1,
+      "tags": [
+        "dixieme",
+        "centieme",
+        "millieme"
+      ]
+    },
+    {
+      "id": "6E-CH02-012",
+      "lecon": "Les nombres décimaux : partie entière et partie décimale",
+      "type": "formule",
+      "recto": "Quelles égalités relient l'unité, le dixième, le centième et le millième ?",
+      "verso": "$1$ unité $= 10$ dixièmes $= 100$ centièmes $= 1\\,000$ millièmes. De plus, $1$ dixième $= 10$ centièmes et $1$ centième $= 10$ millièmes.",
+      "difficulte": 1,
+      "tags": [
+        "rangs",
+        "egalites",
+        "conversion"
+      ]
+    },
+    {
+      "id": "6E-CH02-013",
+      "lecon": "Les nombres décimaux : partie entière et partie décimale",
+      "type": "definition",
+      "recto": "Où se place la virgule dans le tableau de numération ?",
+      "verso": "Juste après la colonne des unités. La virgule n'est pas une frontière entre deux mondes : c'est le repère qui marque le rang des unités, et un seul tableau sert pour les entiers comme pour les décimaux.",
+      "difficulte": 2,
+      "tags": [
+        "virgule",
+        "tableau-de-numeration"
+      ]
+    },
+    {
+      "id": "6E-CH02-014",
+      "lecon": "Les nombres décimaux : partie entière et partie décimale",
+      "type": "formule",
+      "recto": "Quels zéros peut-on ajouter ou enlever sans changer un nombre décimal ?",
+      "verso": "Seulement ceux qui sont tout à la fin de la partie décimale : $2{,}5 = 2{,}50 = 2{,}500$. Un tel zéro annonce un rang vide après le dernier chiffre utile, donc il n'ajoute rien.",
+      "difficulte": 2,
+      "tags": [
+        "zeros-inutiles",
+        "egalite",
+        "decimal"
+      ]
+    },
+    {
+      "id": "6E-CH02-015",
+      "lecon": "Les nombres décimaux : partie entière et partie décimale",
+      "type": "formule",
+      "recto": "Pourquoi $2{,}05$ n'est-il pas égal à $2{,}5$ ?",
+      "verso": "Parce que dans $2{,}05$ le $0$ occupe le rang des dixièmes et le $5$ celui des centièmes, alors que dans $2{,}5$ le $5$ est aux dixièmes. Un zéro placé entre la virgule et un chiffre change le nombre.",
+      "difficulte": 3,
+      "tags": [
+        "zero",
+        "piege",
+        "decimal"
+      ]
+    },
+    {
+      "id": "6E-CH02-016",
+      "lecon": "Les nombres décimaux : partie entière et partie décimale",
+      "type": "formule",
+      "recto": "Comment nomme-t-on la partie décimale d'un nombre : en dixièmes, en centièmes ou en millièmes ?",
+      "verso": "D'après le dernier rang occupé à droite. Dans $6{,}38$, le dernier chiffre est au rang des centièmes : la partie décimale vaut $38$ centièmes.",
+      "difficulte": 2,
+      "tags": [
+        "partie-decimale",
+        "rangs",
+        "lecture"
+      ]
+    },
+    {
+      "id": "6E-CH02-017",
+      "lecon": "Les nombres décimaux : partie entière et partie décimale",
+      "type": "formule",
+      "recto": "Comment donne-t-on la valeur d'un chiffre placé après la virgule ?",
+      "verso": "On le lit dans le rang qu'il occupe. Dans $36{,}82$, le $8$ est au rang des dixièmes : il vaut $8$ dixièmes, c'est-à-dire $0{,}8$.",
+      "difficulte": 2,
+      "tags": [
+        "valeur",
+        "partie-decimale",
+        "rangs"
+      ]
+    },
+    {
+      "id": "6E-CH02-018",
+      "lecon": "Lire, écrire et décomposer un nombre décimal",
+      "type": "formule",
+      "recto": "Comment lit-on un nombre décimal à voix haute ?",
+      "verso": "On lit d'abord la partie entière, puis on dit « virgule », puis la partie décimale. Ainsi $12{,}5$ se lit « douze virgule cinq », ou encore « douze unités et cinq dixièmes ».",
+      "difficulte": 1,
+      "tags": [
+        "lecture",
+        "decimal"
+      ]
+    },
+    {
+      "id": "6E-CH02-019",
+      "lecon": "Lire, écrire et décomposer un nombre décimal",
+      "type": "formule",
+      "recto": "Comment lit-on la partie décimale de $305{,}07$ ?",
+      "verso": "« zéro sept » : la partie décimale se lit chiffre par chiffre, sans oublier le zéro des dixièmes, qui s'entend et se voit.",
+      "difficulte": 2,
+      "tags": [
+        "lecture",
+        "zero",
+        "decimal"
+      ]
+    },
+    {
+      "id": "6E-CH02-020",
+      "lecon": "Lire, écrire et décomposer un nombre décimal",
+      "type": "definition",
+      "recto": "Que veut dire décomposer un nombre décimal ?",
+      "verso": "L'écrire comme une somme qui montre la valeur de chaque chiffre : $274{,}6 = \\left(2 \\times 100\\right) + \\left(7 \\times 10\\right) + \\left(4 \\times 1\\right)$, plus $6$ dixièmes.",
+      "difficulte": 2,
+      "tags": [
+        "decomposition",
+        "somme"
+      ]
+    },
+    {
+      "id": "6E-CH02-021",
+      "lecon": "Lire, écrire et décomposer un nombre décimal",
+      "type": "formule",
+      "recto": "Quelle décomposition sépare simplement la partie entière de la partie décimale ?",
+      "verso": "Celle qui s'écrit « entier plus décimal » : $274{,}6 = 274 + 6$ dixièmes.",
+      "difficulte": 2,
+      "tags": [
+        "decomposition",
+        "partie-entiere",
+        "partie-decimale"
+      ]
+    },
+    {
+      "id": "6E-CH02-022",
+      "lecon": "Lire, écrire et décomposer un nombre décimal",
+      "type": "formule",
+      "recto": "Pourquoi $\\left(3 \\times 10\\right)$ plus $8$ centièmes ne donne-t-il pas $3{,}8$ ?",
+      "verso": "Parce que chaque chiffre doit rejoindre son rang et que tout rang vide se remplit d'un $0$. Il n'y a ici ni unité ni dixième : le nombre s'écrit $30{,}08$.",
+      "difficulte": 3,
+      "tags": [
+        "decomposition",
+        "rang-vide",
+        "piege"
+      ]
+    },
+    {
+      "id": "6E-CH02-023",
+      "lecon": "Lire, écrire et décomposer un nombre décimal",
+      "type": "formule",
+      "recto": "Comment une décomposition permet-elle de contrôler son propre travail ?",
+      "verso": "On additionne tous les morceaux obtenus : si l'on retombe sur le nombre de départ, chaque chiffre était bien à son rang. Pour $30{,}08$ : $30 + 0{,}08 = 30{,}08$.",
+      "difficulte": 2,
+      "tags": [
+        "decomposition",
+        "verification"
+      ]
+    },
+    {
+      "id": "6E-CH02-024",
+      "lecon": "Lire, écrire et décomposer un nombre décimal",
+      "type": "definition",
+      "recto": "Quand écrit-on « cent » avec un s dans un nombre écrit en lettres ?",
+      "verso": "Quand « cent » termine le nombre : on écrit « deux cents ». Suivi d'un autre nombre, il reste invariable : « deux cent cinq ».",
+      "difficulte": 2,
+      "tags": [
+        "orthographe",
+        "lettres",
+        "nombres"
+      ]
+    },
+    {
+      "id": "6E-CH02-025",
+      "lecon": "Lire, écrire et décomposer un nombre décimal",
+      "type": "definition",
+      "recto": "Pourquoi un bon de pesée porte-t-il la même masse en chiffres et en toutes lettres ?",
+      "verso": "Parce qu'un chiffre peut être ajouté ou effacé sans qu'on le voie, tandis qu'une phrase écrite en toutes lettres, non. La double écriture protège celui qui signe.",
+      "difficulte": 2,
+      "tags": [
+        "lettres",
+        "chiffres",
+        "vie-courante"
+      ]
+    },
+    {
+      "id": "6E-CH02-026",
+      "lecon": "Les ensembles $\\mathbb{N}$ et $\\mathbb{D}$ : comparer, ranger, encadrer",
+      "type": "definition",
+      "recto": "Que contient l'ensemble $\\mathbb{N}$ ?",
+      "verso": "Les entiers naturels : $0$, $1$, $2$, $3$, $4$, et ainsi de suite. Ce sont les nombres qui servent à compter.",
+      "difficulte": 1,
+      "tags": [
+        "ensembles",
+        "entiers-naturels"
+      ]
+    },
+    {
+      "id": "6E-CH02-027",
+      "lecon": "Les ensembles $\\mathbb{N}$ et $\\mathbb{D}$ : comparer, ranger, encadrer",
+      "type": "definition",
+      "recto": "Que contient l'ensemble $\\mathbb{D}$ ?",
+      "verso": "Les nombres décimaux : tous ceux qui s'écrivent avec une virgule, et aussi tous les entiers. Ainsi $3{,}5 \\in \\mathbb{D}$ et $7 \\in \\mathbb{D}$.",
+      "difficulte": 1,
+      "tags": [
+        "ensembles",
+        "decimaux"
+      ]
+    },
+    {
+      "id": "6E-CH02-028",
+      "lecon": "Les ensembles $\\mathbb{N}$ et $\\mathbb{D}$ : comparer, ranger, encadrer",
+      "type": "formule",
+      "recto": "Pourquoi écrit-on $\\mathbb{N} \\subset \\mathbb{D}$ ?",
+      "verso": "Parce que tout entier naturel est aussi un décimal, de partie décimale nulle : $7 = 7{,}0$. L'inverse est faux, car $3{,}5 \\notin \\mathbb{N}$ : un ensemble est donc contenu dans l'autre.",
+      "difficulte": 2,
+      "tags": [
+        "inclusion",
+        "ensembles",
+        "notation"
+      ]
+    },
+    {
+      "id": "6E-CH02-029",
+      "lecon": "Les ensembles $\\mathbb{N}$ et $\\mathbb{D}$ : comparer, ranger, encadrer",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on l'abscisse d'un point d'une demi-droite graduée ?",
+      "verso": "Le nombre associé à ce point. Plus ce nombre est grand, plus le point est loin de l'origine, qui porte le $0$.",
+      "difficulte": 2,
+      "tags": [
+        "abscisse",
+        "demi-droite-graduee"
+      ]
+    },
+    {
+      "id": "6E-CH02-030",
+      "lecon": "Les ensembles $\\mathbb{N}$ et $\\mathbb{D}$ : comparer, ranger, encadrer",
+      "type": "formule",
+      "recto": "Dans quel ordre compare-t-on deux nombres décimaux ?",
+      "verso": "On compare d'abord les parties entières : la plus grande donne le plus grand nombre. Si elles sont égales, on compare les dixièmes, puis les centièmes, puis les millièmes, rang par rang.",
+      "difficulte": 1,
+      "tags": [
+        "comparaison",
+        "rangs"
+      ]
+    },
+    {
+      "id": "6E-CH02-031",
+      "lecon": "Les ensembles $\\mathbb{N}$ et $\\mathbb{D}$ : comparer, ranger, encadrer",
+      "type": "formule",
+      "recto": "Quelle astuce évite de se tromper de rang quand deux parties décimales n'ont pas la même longueur ?",
+      "verso": "On les complète par des zéros à la fin pour qu'elles aient autant de chiffres, ce qui ne change pas les nombres : $12{,}8 = 12{,}80$, que l'on compare alors à $12{,}75$.",
+      "difficulte": 2,
+      "tags": [
+        "comparaison",
+        "zeros",
+        "astuce"
+      ]
+    },
+    {
+      "id": "6E-CH02-032",
+      "lecon": "Les ensembles $\\mathbb{N}$ et $\\mathbb{D}$ : comparer, ranger, encadrer",
+      "type": "formule",
+      "recto": "Pourquoi $12{,}75$ est-il inférieur à $12{,}8$, alors qu'il a plus de chiffres après la virgule ?",
+      "verso": "Parce qu'un nombre n'est pas plus grand parce qu'il est plus long : après la virgule, chaque chiffre ajouté ouvre un rang plus faible. Aux dixièmes, $7$ est déjà inférieur à $8$, et la comparaison est tranchée.",
+      "difficulte": 3,
+      "tags": [
+        "comparaison",
+        "piege",
+        "decimaux"
+      ]
+    },
+    {
+      "id": "6E-CH02-033",
+      "lecon": "Les ensembles $\\mathbb{N}$ et $\\mathbb{D}$ : comparer, ranger, encadrer",
+      "type": "definition",
+      "recto": "Que veulent dire « ordre croissant » et « ordre décroissant » ?",
+      "verso": "Ordre croissant : du plus petit au plus grand. Ordre décroissant : du plus grand au plus petit.",
+      "difficulte": 1,
+      "tags": [
+        "rangement",
+        "croissant",
+        "decroissant"
+      ]
+    },
+    {
+      "id": "6E-CH02-034",
+      "lecon": "Les ensembles $\\mathbb{N}$ et $\\mathbb{D}$ : comparer, ranger, encadrer",
+      "type": "definition",
+      "recto": "Qu'est-ce qu'encadrer un nombre décimal ?",
+      "verso": "C'est donner deux nombres, l'un plus petit et l'autre plus grand, qui l'entourent au plus près : $12{,}75$ est compris entre $12$ et $13$, et aussi entre $12{,}7$ et $12{,}8$.",
+      "difficulte": 2,
+      "tags": [
+        "encadrement",
+        "definition"
+      ]
+    },
+    {
+      "id": "6E-CH02-035",
+      "lecon": "Les ensembles $\\mathbb{N}$ et $\\mathbb{D}$ : comparer, ranger, encadrer",
+      "type": "formule",
+      "recto": "Comment encadre-t-on un nombre par les deux dixièmes voisins ?",
+      "verso": "On garde son chiffre des dixièmes pour la borne du bas, et on prend le dixième suivant pour la borne du haut : $4{,}26$ est compris entre $4{,}2$ et $4{,}3$.",
+      "difficulte": 2,
+      "tags": [
+        "encadrement",
+        "dixiemes"
+      ]
+    },
+    {
+      "id": "6E-CH02-036",
+      "lecon": "Les ensembles $\\mathbb{N}$ et $\\mathbb{D}$ : comparer, ranger, encadrer",
+      "type": "formule",
+      "recto": "Que peut-on toujours trouver entre deux nombres décimaux ?",
+      "verso": "Un troisième nombre décimal. Entre $3{,}4$ et $3{,}5$ se placent $3{,}41$, $3{,}42$, et bien d'autres encore.",
+      "difficulte": 2,
+      "tags": [
+        "decimaux",
+        "intercaler"
+      ]
+    }
+  ]
+}

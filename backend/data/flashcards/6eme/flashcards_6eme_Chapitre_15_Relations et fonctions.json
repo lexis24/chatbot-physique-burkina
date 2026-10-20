@@ -1,0 +1,314 @@
+{
+  "niveau": "6ème",
+  "chapitre": "Chapitre 15 : Relations et fonctions",
+  "source": "maths/6eme/Chapitre_15_Relations_et_fonctions",
+  "nombre_cartes": 34,
+  "cartes": [
+    {
+      "id": "6E-CH15-001",
+      "lecon": "Qu'est-ce qu'une relation ?",
+      "type": "definition",
+      "recto": "Qu'est-ce qu'une relation entre deux grandeurs ?",
+      "verso": "C'est un lien : à une valeur de la première grandeur, on associe une valeur de la seconde. Par exemple le nombre de mangues est relié au prix à payer.",
+      "difficulte": 1,
+      "tags": ["relation", "definition"]
+    },
+    {
+      "id": "6E-CH15-002",
+      "lecon": "Qu'est-ce qu'une relation ?",
+      "type": "definition",
+      "recto": "Comment appelle-t-on la grandeur dont on part dans une relation ?",
+      "verso": "La grandeur de départ ; celle que l'on obtient est la grandeur d'arrivée. Leurs valeurs forment l'ensemble de départ et l'ensemble d'arrivée.",
+      "difficulte": 1,
+      "tags": ["relation", "depart", "arrivee"]
+    },
+    {
+      "id": "6E-CH15-003",
+      "lecon": "Qu'est-ce qu'une relation ?",
+      "type": "definition",
+      "recto": "Dans un couple comme $\\left(3\\,;\\,150\\right)$, quelle valeur écrit-on en premier ?",
+      "verso": "Toujours la valeur de départ. Le couple $\\left(3\\,;\\,150\\right)$ se lit donc : $3$ mangues coûtent $150$ FCFA.",
+      "difficulte": 2,
+      "tags": ["couple", "notation"]
+    },
+    {
+      "id": "6E-CH15-004",
+      "lecon": "Qu'est-ce qu'une relation ?",
+      "type": "formule",
+      "recto": "Comment retrouve-t-on la règle d'une relation à partir d'un tableau de valeurs ?",
+      "verso": "On compare une valeur d'arrivée à sa valeur de départ, souvent en divisant : $150 \\div 2 = 75$ donne le prix d'un sachet. On contrôle ensuite sur une autre colonne.",
+      "difficulte": 2,
+      "tags": ["relation", "regle", "tableau"]
+    },
+    {
+      "id": "6E-CH15-005",
+      "lecon": "Qu'est-ce qu'une relation ?",
+      "type": "definition",
+      "recto": "Que doit contenir une phrase qui décrit une relation ?",
+      "verso": "Le nom des deux grandeurs et l'opération qui mène de l'une à l'autre, par exemple : le prix est égal à $50$ fois le nombre de mangues.",
+      "difficulte": 2,
+      "tags": ["relation", "lien-verbal"]
+    },
+    {
+      "id": "6E-CH15-006",
+      "lecon": "Qu'est-ce qu'une relation ?",
+      "type": "formule",
+      "recto": "Pourquoi un tableau permet-il de répondre pour une valeur qui n'y est pas écrite ?",
+      "verso": "Parce que toutes ses colonnes obéissent à la même règle. Une fois cette règle trouvée, on l'applique à n'importe quelle valeur : $7$ mangues à $50$ FCFA l'unité coûtent $350$ FCFA.",
+      "difficulte": 2,
+      "tags": ["tableau", "regle", "prevision"]
+    },
+    {
+      "id": "6E-CH15-007",
+      "lecon": "Qu'est-ce qu'une relation ?",
+      "type": "definition",
+      "recto": "Pourquoi faut-il préciser laquelle des deux grandeurs dépend de l'autre ?",
+      "verso": "Parce qu'une relation se lit dans un sens précis, du départ vers l'arrivée. « Nombre de mangues $\\to$ prix » et « prix $\\to$ nombre de mangues » ne racontent pas la même situation.",
+      "difficulte": 2,
+      "tags": ["relation", "sens-de-lecture"]
+    },
+    {
+      "id": "6E-CH15-008",
+      "lecon": "Qu'est-ce qu'une relation ?",
+      "type": "definition",
+      "recto": "Pourquoi le couple $\\left(150\\,;\\,3\\right)$ est-il faux pour dire que $3$ mangues coûtent $150$ FCFA ?",
+      "verso": "Parce que la valeur de départ s'écrit toujours en premier. Comme on part du nombre de mangues, le bon couple est $\\left(3\\,;\\,150\\right)$.",
+      "difficulte": 3,
+      "tags": ["couple", "piege", "depart"]
+    },
+    {
+      "id": "6E-CH15-009",
+      "lecon": "Représenter une relation",
+      "type": "definition",
+      "recto": "Quelles sont les trois représentations d'une relation ?",
+      "verso": "Le tableau de valeurs, le diagramme à flèches et le graphique dans un repère. On peut aussi la décrire par des mots, avec un lien verbal.",
+      "difficulte": 1,
+      "tags": ["representations", "relation"]
+    },
+    {
+      "id": "6E-CH15-010",
+      "lecon": "Représenter une relation",
+      "type": "definition",
+      "recto": "Comment est organisé un tableau de valeurs ?",
+      "verso": "Une ligne porte les valeurs de départ, l'autre les valeurs d'arrivée. Chaque colonne donne un couple.",
+      "difficulte": 1,
+      "tags": ["tableau", "couple"]
+    },
+    {
+      "id": "6E-CH15-011",
+      "lecon": "Représenter une relation",
+      "type": "definition",
+      "recto": "Qu'est-ce qu'un diagramme à flèches ?",
+      "verso": "C'est un dessin où l'on trace l'ensemble de départ et l'ensemble d'arrivée, puis une flèche de chaque valeur de départ vers sa valeur d'arrivée. On l'appelle aussi diagramme sagittal.",
+      "difficulte": 1,
+      "tags": ["diagramme-a-fleches", "definition"]
+    },
+    {
+      "id": "6E-CH15-012",
+      "lecon": "Représenter une relation",
+      "type": "formule",
+      "recto": "Sur quel axe d'un repère place-t-on la grandeur de départ ?",
+      "verso": "Sur l'axe horizontal, celui des abscisses. La grandeur d'arrivée est portée par l'axe vertical, celui des ordonnées.",
+      "difficulte": 1,
+      "tags": ["repere", "abscisse", "ordonnee"]
+    },
+    {
+      "id": "6E-CH15-013",
+      "lecon": "Représenter une relation",
+      "type": "formule",
+      "recto": "Que devient chaque couple d'une relation sur un graphique ?",
+      "verso": "Un point du repère : la valeur de départ donne son abscisse, la valeur d'arrivée donne son ordonnée.",
+      "difficulte": 2,
+      "tags": ["graphique", "couple", "point"]
+    },
+    {
+      "id": "6E-CH15-014",
+      "lecon": "Représenter une relation",
+      "type": "formule",
+      "recto": "Comment choisit-on l'unité de chaque axe d'un graphique ?",
+      "verso": "On l'adapte aux nombres à représenter, par exemple $1$ cm pour $50$ FCFA, afin que tout tienne sur la feuille et reste lisible. Les deux axes n'ont pas besoin de la même unité.",
+      "difficulte": 2,
+      "tags": ["graphique", "unite", "axe"]
+    },
+    {
+      "id": "6E-CH15-015",
+      "lecon": "Représenter une relation",
+      "type": "definition",
+      "recto": "Quelle représentation montre le mieux l'allure d'ensemble d'une relation ?",
+      "verso": "Le graphique : il montre d'un coup d'œil si les valeurs montent, descendent ou progressent régulièrement, ce que le tableau ne dit pas immédiatement.",
+      "difficulte": 2,
+      "tags": ["graphique", "representations"]
+    },
+    {
+      "id": "6E-CH15-016",
+      "lecon": "Représenter une relation",
+      "type": "formule",
+      "recto": "Pourquoi place-t-on le point $\\left(2\\,;\\,100\\right)$ à $2$ sur l'axe horizontal et non à $100$ ?",
+      "verso": "Parce que l'abscisse s'écrit toujours en premier dans un couple : $2$ est l'abscisse, $100$ l'ordonnée. Sans cette convention, ce point et le point $\\left(100\\,;\\,2\\right)$ se confondraient.",
+      "difficulte": 3,
+      "tags": ["repere", "piege", "abscisse"]
+    },
+    {
+      "id": "6E-CH15-017",
+      "lecon": "Représenter une relation",
+      "type": "formule",
+      "recto": "Pourquoi les graduations d'un axe doivent-elles être régulières ?",
+      "verso": "Parce que l'on lit les valeurs en comptant les graduations. Un axe gradué en sautant des nombres au hasard rend toute lecture fausse.",
+      "difficulte": 2,
+      "tags": ["axe", "graduation", "piege"]
+    },
+    {
+      "id": "6E-CH15-018",
+      "lecon": "Image et antécédent",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on l'image d'une valeur de départ ?",
+      "verso": "C'est la valeur d'arrivée qui lui correspond. Dans un tableau reliant l'âge à la taille, l'image de $3$ ans est $80$ cm.",
+      "difficulte": 1,
+      "tags": ["image", "definition"]
+    },
+    {
+      "id": "6E-CH15-019",
+      "lecon": "Image et antécédent",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on l'antécédent d'une valeur d'arrivée ?",
+      "verso": "C'est la valeur de départ qui lui correspond. Si $100$ cm est associé à $5$ ans, l'antécédent de $100$ cm est $5$ ans.",
+      "difficulte": 1,
+      "tags": ["antecedent", "definition"]
+    },
+    {
+      "id": "6E-CH15-020",
+      "lecon": "Image et antécédent",
+      "type": "formule",
+      "recto": "Sur un diagramme à flèches, où se lit l'image d'une valeur ?",
+      "verso": "Au bout de la flèche. L'antécédent, lui, se lit au départ de la flèche.",
+      "difficulte": 2,
+      "tags": ["image", "antecedent", "diagramme-a-fleches"]
+    },
+    {
+      "id": "6E-CH15-021",
+      "lecon": "Image et antécédent",
+      "type": "formule",
+      "recto": "Dans un tableau de valeurs, comment trouve-t-on l'antécédent d'un nombre ?",
+      "verso": "On cherche ce nombre dans la ligne des valeurs d'arrivée, puis on remonte dans la même colonne pour lire la valeur de départ.",
+      "difficulte": 2,
+      "tags": ["antecedent", "tableau"]
+    },
+    {
+      "id": "6E-CH15-022",
+      "lecon": "Image et antécédent",
+      "type": "formule",
+      "recto": "Sur un graphique, comment lit-on l'image d'une valeur ?",
+      "verso": "On repère la valeur sur l'axe horizontal, on monte jusqu'au point, puis on lit son ordonnée sur l'axe vertical.",
+      "difficulte": 2,
+      "tags": ["image", "graphique"]
+    },
+    {
+      "id": "6E-CH15-023",
+      "lecon": "Image et antécédent",
+      "type": "formule",
+      "recto": "Combien d'antécédents une même valeur d'arrivée peut-elle avoir ?",
+      "verso": "Elle peut en avoir plusieurs : deux jours différents peuvent afficher la même température, deux élèves la même note. On demande donc parfois les antécédents au pluriel.",
+      "difficulte": 2,
+      "tags": ["antecedent", "propriete"]
+    },
+    {
+      "id": "6E-CH15-024",
+      "lecon": "Image et antécédent",
+      "type": "definition",
+      "recto": "Pourquoi ne dit-on pas « l'antécédent de $4$ ans est $85$ cm » ?",
+      "verso": "Parce que l'on part ici d'une valeur de départ, l'âge : $85$ cm est l'image de $4$ ans. Un antécédent part toujours d'une valeur d'arrivée.",
+      "difficulte": 3,
+      "tags": ["image", "antecedent", "piege"]
+    },
+    {
+      "id": "6E-CH15-025",
+      "lecon": "Image et antécédent",
+      "type": "formule",
+      "recto": "Que doit accompagner le nombre donné en réponse pour une image ou un antécédent ?",
+      "verso": "Son unité. On écrit « l'image de $4$ ans est $85$ cm », et non « l'image de $4$ est $85$ » : chaque nombre garde sa grandeur.",
+      "difficulte": 2,
+      "tags": ["image", "antecedent", "unite"]
+    },
+    {
+      "id": "6E-CH15-026",
+      "lecon": "Relation et fonction",
+      "type": "definition",
+      "recto": "Qu'est-ce qu'une fonction ?",
+      "verso": "C'est une relation particulière : à chaque valeur de départ correspond une seule valeur d'arrivée, c'est-à-dire une seule image.",
+      "difficulte": 1,
+      "tags": ["fonction", "definition"]
+    },
+    {
+      "id": "6E-CH15-027",
+      "lecon": "Relation et fonction",
+      "type": "formule",
+      "recto": "Comment reconnaît-on une fonction sur un diagramme à flèches ?",
+      "verso": "Il part une flèche, et une seule, de chaque point de l'ensemble de départ. Deux flèches issues du même point, et ce n'est plus une fonction.",
+      "difficulte": 2,
+      "tags": ["fonction", "diagramme-a-fleches"]
+    },
+    {
+      "id": "6E-CH15-028",
+      "lecon": "Relation et fonction",
+      "type": "formule",
+      "recto": "Sur quelles flèches faut-il regarder pour décider si une relation est une fonction ?",
+      "verso": "Sur celles qui partent : on compte combien de flèches quittent chaque valeur de départ. Les flèches qui arrivent ne comptent pas pour cette décision.",
+      "difficulte": 2,
+      "tags": ["fonction", "reconnaissance"]
+    },
+    {
+      "id": "6E-CH15-029",
+      "lecon": "Relation et fonction",
+      "type": "formule",
+      "recto": "Que suffit-il de montrer pour prouver qu'une relation n'est pas une fonction ?",
+      "verso": "Une seule valeur de départ possédant deux images. Un unique exemple suffit, comme un prénom porté par deux élèves.",
+      "difficulte": 2,
+      "tags": ["fonction", "preuve"]
+    },
+    {
+      "id": "6E-CH15-030",
+      "lecon": "Relation et fonction",
+      "type": "definition",
+      "recto": "Pourquoi la relation « prénom $\\to$ élève » n'est-elle pas toujours une fonction ?",
+      "verso": "Parce qu'un même prénom peut être porté par plusieurs élèves : cette valeur de départ aurait alors plusieurs images.",
+      "difficulte": 2,
+      "tags": ["fonction", "contre-exemple"]
+    },
+    {
+      "id": "6E-CH15-031",
+      "lecon": "Relation et fonction",
+      "type": "definition",
+      "recto": "Quel lien unit la notion de relation et celle de fonction ?",
+      "verso": "Toute fonction est une relation, mais toute relation n'est pas une fonction : seules le sont celles qui donnent une image unique à chaque valeur de départ.",
+      "difficulte": 2,
+      "tags": ["fonction", "relation"]
+    },
+    {
+      "id": "6E-CH15-032",
+      "lecon": "Relation et fonction",
+      "type": "formule",
+      "recto": "Pourquoi une relation où deux valeurs de départ ont la même image reste-t-elle une fonction ?",
+      "verso": "Parce que l'interdit porte sur un départ qui aurait deux images, pas sur deux départs qui visent la même arrivée. Ainsi $1 \\to 50$ et $2 \\to 50$ est bien une fonction.",
+      "difficulte": 3,
+      "tags": ["fonction", "piege", "image"]
+    },
+    {
+      "id": "6E-CH15-033",
+      "lecon": "Relation et fonction",
+      "type": "formule",
+      "recto": "Pourquoi la relation qui associe $1 \\to 50$ et $1 \\to 60$ n'est-elle pas une fonction ?",
+      "verso": "Parce que la valeur de départ $1$ aurait deux images et que l'on ne saurait pas laquelle choisir. Une fonction rend une réponse unique à chaque valeur de départ.",
+      "difficulte": 3,
+      "tags": ["fonction", "piege", "contre-exemple"]
+    },
+    {
+      "id": "6E-CH15-034",
+      "lecon": "Relation et fonction",
+      "type": "formule",
+      "recto": "Pourquoi une même liste de couples peut-elle donner une fonction dans un sens et pas dans l'autre ?",
+      "verso": "Parce que tout dépend de la grandeur choisie au départ. La relation « élève $\\to$ note » est une fonction, mais « note $\\to$ élève » n'en est pas une si deux élèves ont obtenu $12$.",
+      "difficulte": 3,
+      "tags": ["fonction", "sens-de-lecture"]
+    }
+  ]
+}

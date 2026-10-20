@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Fiche de revision - 5eme - Chapitre 15 : Sphere et boule</title>
+<style>
+/* ===================================================================
+   FICHE DE REVISION, Collection Hakili Lab, Edition 2026
+   Feuille de style autonome, format A4 pret a imprimer.
+   Bleu #005CB9 · Vert #49A145
+   =================================================================== */
+:root{
+  --bleu:#005CB9; --bleu-fonce:#00429A; --bleu-pale:#E8F1FB; --bleu-bord:#B7D2EE;
+  --vert:#49A145; --vert-fonce:#2F7A2C; --vert-pale:#EDF7EC; --vert-bord:#BCE0B9;
+  --gris:#4A4A4A; --gris-clair:#E4E4E4; --rouge:#B3261E;
+}
+@page{
+  size:A4; margin:15mm;
+  @bottom-center{
+    content:"Collection Hakili Lab, Edition 2026  ·  Fiche de revision  ·  " counter(page) "/" counter(pages);
+    font-family:"Segoe UI",Calibri,Arial,sans-serif; font-size:6.6pt; color:#8A8A8A;
+  }
+}
+*{box-sizing:border-box;}
+body{
+  margin:0; font-family:"Segoe UI",Calibri,Arial,sans-serif;
+  font-size:8.4pt; line-height:1.26; color:#1B1B1B;
+}
+p{margin:0 0 3pt;}
+ul{margin:0 0 3pt; padding-left:11pt;}
+li{margin:0 0 1.2pt;}
+b,strong{color:var(--bleu-fonce);}
+
+/* ------------------------------ ENTETE ---------------------------- */
+.entete{
+  display:flex; align-items:stretch; border:1.6pt solid var(--bleu);
+  border-radius:2.5pt; overflow:hidden; margin-bottom:6pt;
+}
+.entete .num{
+  background:var(--bleu); color:#fff; font-size:20pt; font-weight:700;
+  padding:0 8pt; display:flex; align-items:center; justify-content:center; min-width:34pt;
+}
+.entete .txt{padding:3.5pt 8pt; flex:1;}
+.entete .niveau{
+  font-size:7pt; font-weight:700; letter-spacing:.9pt; color:var(--vert-fonce);
+}
+.entete h1{margin:0; font-size:13.5pt; line-height:1.12; color:var(--bleu-fonce); font-weight:700;}
+.entete .sous{font-size:7pt; color:var(--gris); margin-top:1pt;}
+
+/* --------------------------- BANDEAUX ----------------------------- */
+.bandeau{
+  color:#fff; font-weight:700; font-size:9pt; letter-spacing:1pt;
+  padding:2.4pt 7pt; border-radius:2pt; margin:3pt 0 4pt; break-after:avoid; page-break-after:avoid;
+}
+.bandeau.bleu{background:var(--bleu);}
+.bandeau.vert{background:var(--vert);}
+
+/* --------------------------- COLONNES ----------------------------- */
+.cols{column-count:2; column-gap:7mm; column-fill:balance;}
+
+.cols.bal{column-fill:balance;}
+.bloc{margin-bottom:5pt;}
+.keep{break-inside:avoid; page-break-inside:avoid;}
+
+/* --------------------------- LECONS ------------------------------- */
+h2.lecon{
+  margin:0 0 3pt; font-size:8.6pt; font-weight:700; color:#fff; background:var(--bleu-fonce);
+  padding:1.8pt 5pt; border-radius:1.5pt; break-after:avoid; page-break-after:avoid;
+}
+h3.rub{
+  margin:3.5pt 0 1.5pt; font-size:8.2pt; font-weight:700; color:var(--vert-fonce);
+  border-bottom:.7pt solid var(--vert-bord); padding-bottom:.8pt;
+  break-after:avoid; page-break-after:avoid;
+}
+
+/* --------------------------- ENCADRES ----------------------------- */
+.form{
+  background:var(--bleu-pale); border:.8pt solid var(--bleu-bord); border-left:2.6pt solid var(--bleu);
+  border-radius:2pt; padding:2.4pt 5pt; margin:2.2pt 0 3.4pt;
+  break-inside:avoid; page-break-inside:avoid;
+}
+.form .t{
+  display:block; font-size:6.8pt; font-weight:700; letter-spacing:.6pt;
+  color:var(--bleu); margin-bottom:1.5pt;
+}
+.form .c{text-align:center; font-size:9.1pt; margin:1.6pt 0;}
+.note{background:var(--vert-pale); border-left:2.4pt solid var(--vert); padding:2.4pt 5pt; border-radius:1.5pt; margin:2.5pt 0 4pt; break-inside:avoid;}
+
+/* --------------------------- TABLEAUX ----------------------------- */
+table{width:100%; border-collapse:collapse; font-size:7.6pt; margin:2pt 0 4pt; break-inside:avoid;}
+th{background:var(--bleu); color:#fff; font-weight:700; text-align:left; padding:1.8pt 4pt; font-size:7.2pt;}
+td{border:.6pt solid var(--gris-clair); padding:1.8pt 4pt; vertical-align:top;}
+tr{break-inside:avoid;}
+table.var td{text-align:center; font-size:8pt;}
+table.var td.lab{text-align:left; font-weight:700; color:var(--bleu-fonce); background:var(--bleu-pale);}
+
+/* ----------------------------- PIEGES ----------------------------- */
+table.pieges th:first-child{width:44%;}
+table.pieges td:first-child{color:var(--rouge); background:#FDF1F0;}
+.x{font-weight:700;}
+.v{color:var(--vert-fonce); font-weight:700;}
+
+/* ---------------------------- RECAP ------------------------------- */
+ol.recap{margin:0; padding-left:0; list-style:none; counter-reset:r;}
+ol.recap li{
+  counter-increment:r; position:relative; padding-left:13pt; margin-bottom:1.8pt;
+  break-inside:avoid;
+}
+ol.recap li::before{
+  content:counter(r); position:absolute; left:0; top:.3pt;
+  width:10pt; height:10pt; border-radius:50%; background:var(--vert); color:#fff;
+  font-size:6.6pt; font-weight:700; text-align:center; line-height:10pt;
+}
+
+/* --------------------------- MATHS -------------------------------- */
+.m{font-family:Cambria,Georgia,"Times New Roman",serif;}
+i,var{font-family:Cambria,Georgia,"Times New Roman",serif; font-style:italic;}
+.op{font-family:Cambria,Georgia,"Times New Roman",serif; font-style:normal;}
+.f{display:inline-block; vertical-align:middle; text-align:center;
+   margin:0 .12em; line-height:1.06; font-family:Cambria,Georgia,"Times New Roman",serif;}
+.f>span{display:block; padding:0 .2em;}
+.f>span:first-child{border-bottom:.6pt solid currentColor; padding-bottom:.08em;}
+.f>span:last-child{padding-top:.04em;}
+.rad{border-top:.6pt solid currentColor; padding-top:.12em;}
+/* line-height:0 evite que l'exposant n'ecarte les lignes ; position:relative le
+   repositionne sans qu'il heurte la barre de fraction ni le trait du radical. */
+sup,sub{font-size:.68em; line-height:0; position:relative; vertical-align:baseline;}
+sup{top:-.42em;}
+sub{bottom:-.22em;}
+.pt{white-space:nowrap;}
+/* Les fleches n'ont qu'un glyphe atrophie dans la fonte serif : on les force
+   en sans-serif, ou elles sont franches meme a 8 pt. */
+.ar{font-family:"Segoe UI",Calibri,Arial,"DejaVu Sans",sans-serif; font-style:normal;}
+
+/* ------------------- PIEGES : blocs erreur / correction ------------- */
+.pg{font-size:8.1pt; border-left:2.4pt solid var(--rouge); background:#FDF1F0; border-radius:1.5pt;
+    padding:2pt 5pt; margin:0 0 2.8pt; break-inside:avoid; page-break-inside:avoid;}
+.pg .err{color:var(--rouge); font-weight:600;}
+.pg .cor{color:#1B1B1B; margin-top:.8pt;}
+.pg .cor b{color:var(--bleu-fonce);}
+.v{color:var(--vert-fonce); font-weight:700;}
+
+</style>
+</head>
+<body>
+<header class="entete">
+  <div class="num">15</div>
+  <div class="txt">
+    <div class="niveau">5EME &middot; MATHEMATIQUES</div>
+    <h1>Sphère et boule</h1>
+    <div class="sous">Leçon 1 : observer et décrire une sphère et une boule &middot; Leçon 2 : aire de la sphère et volume de la boule</div>
+  </div>
+</header>
+
+<div class="bandeau bleu" style="margin-top:0">L'ESSENTIEL</div>
+<div class="cols">
+
+<!-- ================= LECON 1 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 1&nbsp;: Observer et décrire une sphère et une boule</h2>
+<ul>
+<li>La <b>sphère</b> de centre O et de rayon <i>r</i> est l'ensemble des points situés <b>à la distance <i>r</i></b> de O : c'est une <b>surface</b>, la peau du ballon.</li>
+<li>La <b>boule</b> de centre O et de rayon <i>r</i> est l'ensemble des points situés à une distance <b>inférieure ou égale à <i>r</i></b> de O : c'est un <b>solide plein</b>, l'orange entière.</li>
+</ul></div>
+<p>Le <b>rayon</b> <i>r</i> est la distance du centre à un point de la sphère ; le <b>diamètre</b> vaut <b>deux fois</b> le rayon.</p>
+<div class="form">
+  <span class="t">POSITION D'UN POINT M&nbsp;: ON COMPARE OM ET <i>r</i></span>
+  <div class="c m">OM&#8239;&lt;&#8239;<i>r</i> &nbsp;<span class="ar">&#8594;</span>&nbsp; M est <b>dans</b> la boule, pas sur la sphère</div>
+  <div class="c m">OM&#8239;=&#8239;<i>r</i> &nbsp;<span class="ar">&#8594;</span>&nbsp; M est <b>sur</b> la sphère (et dans la boule)</div>
+  <div class="c m">OM&#8239;&gt;&#8239;<i>r</i> &nbsp;<span class="ar">&#8594;</span>&nbsp; M est <b>à l'extérieur</b> de la boule</div>
+</div>
+<p>La boule contient donc sa sphère : elle réunit tous les points tels que <span class="pt">OM&#8239;&#8804;&#8239;<i>r</i></span>. Le centre O est dans la boule, mais il n'est pas sur la sphère.</p>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Grand cercle et sections</h3>
+<p>Un <b>grand cercle</b> d'une sphère est un cercle qui a le <b>même centre</b> et le <b>même rayon</b> que la sphère, comme l'équateur sur un globe. Une sphère en possède une <b>infinité</b>, et ils ont tous le même périmètre. Sur le globe, un lieu se repère par sa <b>longitude</b> et sa <b>latitude</b>.</p>
+<p>La <b>section</b> d'une sphère par un plan est <b>toujours un cercle</b>, jamais un ovale. Plus le plan s'éloigne du centre, plus ce cercle est <b>petit</b> ; trop loin, le plan ne coupe plus la sphère.</p>
+<div class="form">
+  <span class="t">PLAN PASSANT PAR LE CENTRE</span>
+  <div class="c m">section&#8239;=&#8239;<b>grand cercle</b>, la plus grande possible</div>
+  <div class="c m">chaque moitié est une <b>demi-boule</b></div>
+</div>
+<div class="note"><b>Sphère ou boule&#8239;?</b> Une coque, une peau, une surface à recouvrir : c'est la <b>sphère</b>, on calcule une <b>aire</b>. Un contenu, une matière pleine, une quantité à contenir : c'est la <b>boule</b>, on calcule un <b>volume</b>. La calebasse, le bol, le dôme sont des demi-boules.</div>
+</div>
+
+<!-- ================= LECON 2 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 2&nbsp;: Aire de la sphère et volume de la boule</h2>
+<div class="form">
+  <span class="t">FORMULES&nbsp;: <i>r</i> RAYON, &#960;&#8239;&#8776;&#8239;3,14</span>
+  <div class="c m">aire de la <b>sphère</b> : <i>A</i>&#8239;=&#8239;4&#8239;&#215;&#8239;&#960;&#8239;&#215;&#8239;<i>r</i>&#8239;&#215;&#8239;<i>r</i> &nbsp;<span style="font-size:7.5pt">(cm<sup>2</sup>, m<sup>2</sup>)</span></div>
+  <div class="c m">volume de la <b>boule</b> : <i>V</i>&#8239;=&#8239;(4&#8239;&#215;&#8239;&#960;&#8239;&#215;&#8239;<i>r</i>&#8239;&#215;&#8239;<i>r</i>&#8239;&#215;&#8239;<i>r</i>)&#8239;&#247;&#8239;3 &nbsp;<span style="font-size:7.5pt">(cm<sup>3</sup>, m<sup>3</sup>)</span></div>
+</div></div>
+<p><b>Compte les <i>r</i>.</b> Le rayon apparaît <b>deux fois</b> dans une aire, qui s'écrit en cm<sup>2</sup> ; <b>trois fois</b> dans un volume, qui s'écrit en cm<sup>3</sup>.</p>
+<p><b>Quatre disques.</b> Comme &#960;&#8239;&#215;&#8239;<i>r</i>&#8239;&#215;&#8239;<i>r</i> est l'aire du <b>disque</b> de même rayon, l'aire de la sphère vaut <b>quatre fois</b> celle de ce disque. Si l'on <b>double</b> le rayon, l'aire est donc multipliée par <b>4</b>, pas par 2.</p>
+<p><b>Demi-boule.</b> On calcule le volume de la boule entière, puis on en prend la <b>moitié</b>.</p>
+<div class="note"><b>Unités.</b> 1 L&#8239;=&#8239;1 dm<sup>3</sup>&#8239;=&#8239;1&#8239;000 cm<sup>3</sup> &nbsp;&middot;&nbsp; 1 m<sup>3</sup>&#8239;=&#8239;1&#8239;000 L.</div>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Trouver le rayon, choisir l'aire ou le volume</h3>
+<p>Beaucoup d'énoncés donnent un résultat et demandent le rayon : on procède à l'envers.</p>
+<div class="form">
+  <span class="t">REMONTER AU RAYON</span>
+  <div class="c m">diamètre donné&#8239;: <i>r</i>&#8239;=&#8239;diamètre&#8239;&#247;&#8239;2</div>
+  <div class="c m">périmètre d'un grand cercle (2&#8239;&#215;&#8239;&#960;&#8239;&#215;&#8239;<i>r</i>)&#8239;: <i>r</i>&#8239;=&#8239;périmètre&#8239;&#247;&#8239;6,28</div>
+  <div class="c m">aire de la sphère&#8239;: <i>A</i>&#8239;&#247;&#8239;12,56&#8239;=&#8239;<i>r</i>&#8239;&#215;&#8239;<i>r</i>, puis on cherche <i>r</i></div>
+</div>
+<p>C'est le <b>verbe</b> de la question, et non la formule, qui décide du calcul.</p>
+<ul>
+<li><b>Recouvrir, peindre, découper, coudre, envelopper</b> : on travaille sur la peau, donc une <b>aire</b>, en cm<sup>2</sup> ou m<sup>2</sup>.</li>
+<li><b>Contenir, remplir, verser, peser, fondre</b> : on travaille sur le plein, donc un <b>volume</b>, en cm<sup>3</sup>, m<sup>3</sup> ou en litres.</li>
+</ul>
+<p>Un même objet donne parfois les deux questions : pour un château d'eau sphérique, la peinture demande l'<b>aire</b>, les litres demandent le <b>volume</b>.</p>
+</div>
+
+</div>
+
+<div class="bandeau vert">PIEGES ET ERREURS FREQUENTES</div>
+<div class="cols">
+<div class="pg"><div class="err"><span class="x">&#10007;</span> « Le centre appartient à la sphère. »</div><div class="cor"><span class="v">&#10003;</span> Le centre est <b>dans la boule</b>, mais pas sur la sphère : il n'est pas à la distance <i>r</i> de lui-même.</div></div>
+<div class="pg"><div class="err"><span class="x">&#10007;</span> « Le volume d'une sphère »</div><div class="cor"><span class="v">&#10003;</span> Une sphère est une <b>surface</b> : elle a une <b>aire</b>. C'est la <b>boule</b>, solide plein, qui a un volume.</div></div>
+<div class="pg"><div class="err"><span class="x">&#10007;</span> Aire de la sphère&#8239;=&#8239;&#960;&#8239;&#215;&#8239;<i>r</i>&#8239;&#215;&#8239;<i>r</i></div><div class="cor"><span class="v">&#10003;</span> Cela, c'est l'aire du <b>disque</b> ; la sphère a une aire <b>quatre fois</b> plus grande : <span class="pt"><i>A</i>&#8239;=&#8239;4&#8239;&#215;&#8239;&#960;&#8239;&#215;&#8239;<i>r</i>&#8239;&#215;&#8239;<i>r</i></span>.</div></div>
+<div class="pg"><div class="err"><span class="x">&#10007;</span> <i>V</i>&#8239;=&#8239;(4&#8239;&#215;&#8239;&#960;&#8239;&#215;&#8239;<i>r</i>&#8239;&#215;&#8239;<i>r</i>)&#8239;&#247;&#8239;3</div><div class="cor"><span class="v">&#10003;</span> Dans un <b>volume</b>, le rayon apparaît <b>trois</b> fois : <span class="pt"><i>V</i>&#8239;=&#8239;(4&#8239;&#215;&#8239;&#960;&#8239;&#215;&#8239;<i>r</i>&#8239;&#215;&#8239;<i>r</i>&#8239;&#215;&#8239;<i>r</i>)&#8239;&#247;&#8239;3</span>.</div></div>
+<div class="pg"><div class="err"><span class="x">&#10007;</span> « Demi-boule de rayon 10 : je divise le rayon par 2. »</div><div class="cor"><span class="v">&#10003;</span> On divise le <b>volume</b> par 2, jamais le rayon : le rayon de la calebasse reste celui de la boule.</div></div>
+<div class="pg"><div class="err"><span class="x">&#10007;</span> « La section d'une sphère par un plan est un ovale. » &nbsp;&middot;&nbsp; rayon pris pour le diamètre</div><div class="cor"><span class="v">&#10003;</span> Toute section est un <b>cercle</b>, quel que soit le plan de coupe. Et le <b>diamètre vaut le double du rayon</b> : si l'énoncé donne 10 cm de diamètre, alors <span class="pt"><i>r</i>&#8239;=&#8239;5 cm</span>.</div></div>
+
+</div>
+
+<div class="bandeau bleu">A SAVOIR PAR COEUR AVANT LE DEVOIR</div>
+<div class="cols">
+<ol class="recap">
+<li>La <b>sphère</b> est la surface (les points à la distance <i>r</i> du centre) ; la <b>boule</b> est le solide plein (les points à une distance <span class="pt">&#8804;&#8239;<i>r</i></span>). Diamètre&#8239;=&#8239;2&#8239;&#215;&#8239;rayon.</li>
+<li>Position d'un point : <span class="pt">OM&#8239;&lt;&#8239;<i>r</i></span> dans la boule, <span class="pt">OM&#8239;=&#8239;<i>r</i></span> sur la sphère, <span class="pt">OM&#8239;&gt;&#8239;<i>r</i></span> à l'extérieur.</li>
+<li>Toute <b>section</b> par un plan est un <b>cercle</b> ; c'est un <b>grand cercle</b> (même centre, même rayon que la sphère) si le plan passe par le centre, et chaque moitié est une <b>demi-boule</b>.</li>
+<li><b>Aire de la sphère</b> : <span class="pt"><i>A</i>&#8239;=&#8239;4&#8239;&#215;&#8239;&#960;&#8239;&#215;&#8239;<i>r</i>&#8239;&#215;&#8239;<i>r</i></span>, en cm<sup>2</sup> ou m<sup>2</sup>. C'est quatre fois l'aire du disque de même rayon.</li>
+<li><b>Volume de la boule</b> : <span class="pt"><i>V</i>&#8239;=&#8239;(4&#8239;&#215;&#8239;&#960;&#8239;&#215;&#8239;<i>r</i>&#8239;&#215;&#8239;<i>r</i>&#8239;&#215;&#8239;<i>r</i>)&#8239;&#247;&#8239;3</span>, en cm<sup>3</sup> ou m<sup>3</sup> ; pour une <b>demi-boule</b>, on prend la moitié de ce volume.</li>
+<li><b>Compte les <i>r</i></b> : deux <i>r</i> pour une aire (cm<sup>2</sup>), trois <i>r</i> pour un volume (cm<sup>3</sup>).</li>
+<li>Le <b>rayon d'abord</b> : diamètre&#8239;&#247;&#8239;2 ; périmètre d'un grand cercle&#8239;&#247;&#8239;6,28 ; aire&#8239;&#247;&#8239;12,56 donne <span class="pt"><i>r</i>&#8239;&#215;&#8239;<i>r</i></span>.</li>
+<li>Unités : 1 L&#8239;=&#8239;1 dm<sup>3</sup>&#8239;=&#8239;1&#8239;000 cm<sup>3</sup> ; 1 m<sup>3</sup>&#8239;=&#8239;1&#8239;000 L.</li>
+</ol>
+</div>
+
+</body>
+</html>

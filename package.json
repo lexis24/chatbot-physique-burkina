@@ -1,0 +1,14 @@
+{
+  "name": "chatbot-maths-burkina",
+  "version": "1.0.0",
+  "description": "Chatbot Maths Burkina Faso",
+  "scripts": {
+    "install:all": "npm install && cd frontend && npm install && cd ../backend && python -m pip install -r requirements.txt",
+    "dev:frontend": "cd frontend && npm run dev",
+    "dev:backend": "cd backend && python main.py",
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

@@ -1,0 +1,278 @@
+{
+  "niveau": "3ème",
+  "chapitre": "Chapitre 5 : Le rapport de projection",
+  "source": "maths/3eme/Chapitre_5_Rapport_de_projection",
+  "nombre_cartes": 30,
+  "cartes": [
+    {
+      "id": "3E-CH05-001",
+      "lecon": "Rapport de projection d'une droite sur une droite parallèlement à une direction",
+      "type": "definition",
+      "recto": "Etant donné deux droites sécantes $(D)$ et $(D')$ et une direction $(d)$, qu'appelle-t-on projeté d'un point M de $(D)$ sur $(D')$ parallèlement à $(d)$ ?",
+      "verso": "C'est le point M' où la parallèle à $(d)$ passant par M coupe la droite $(D')$.",
+      "difficulte": 2,
+      "tags": ["projection", "projete", "definition"]
+    },
+    {
+      "id": "3E-CH05-002",
+      "lecon": "Rapport de projection d'une droite sur une droite parallèlement à une direction",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on rapport de projection de $(D)$ sur $(D')$ parallèlement à une direction donnée ?",
+      "verso": "C'est le nombre $k = \\dfrac{A'B'}{AB}$, où A' et B' sont les projetés de deux points distincts A et B de $(D)$. Ce quotient est toujours le même, quels que soient les points choisis.",
+      "difficulte": 1,
+      "tags": ["rapport-de-projection", "definition"]
+    },
+    {
+      "id": "3E-CH05-003",
+      "lecon": "Rapport de projection d'une droite sur une droite parallèlement à une direction",
+      "type": "definition",
+      "recto": "Quelle condition la direction $(d)$ doit-elle remplir pour définir une projection de $(D)$ sur $(D')$ ?",
+      "verso": "Elle ne doit être parallèle ni à $(D)$, ni à $(D')$. Les deux droites $(D)$ et $(D')$, elles, doivent être sécantes.",
+      "difficulte": 2,
+      "tags": ["projection", "direction", "condition"]
+    },
+    {
+      "id": "3E-CH05-004",
+      "lecon": "Rapport de projection d'une droite sur une droite parallèlement à une direction",
+      "type": "formule",
+      "recto": "Comment obtient-on la longueur du projeté d'un segment $[AB]$ quand on connaît le rapport de projection $k$ ?",
+      "verso": "On multiplie par $k$ : $A'B' = k \\times AB$. Si c'est au contraire la longueur de départ qui est cherchée, on divise par $k$.",
+      "difficulte": 1,
+      "tags": ["rapport-de-projection", "calcul"]
+    },
+    {
+      "id": "3E-CH05-005",
+      "lecon": "Rapport de projection d'une droite sur une droite parallèlement à une direction",
+      "type": "formule",
+      "recto": "Dans quel sens écrit-on le quotient qui donne le rapport de projection de $(D)$ sur $(D')$ ?",
+      "verso": "L'arrivée divisée par le départ : $k = \\dfrac{A'B'}{AB}$. Pour une poutre de $20$ cm dont l'ombre mesure $14$ cm, c'est $\\dfrac{14}{20}$ et non $\\dfrac{20}{14}$.",
+      "difficulte": 3,
+      "tags": ["rapport-de-projection", "piege", "sens-du-quotient"]
+    },
+    {
+      "id": "3E-CH05-006",
+      "lecon": "Rapport de projection d'une droite sur une droite parallèlement à une direction",
+      "type": "definition",
+      "recto": "Pourquoi n'écrit-on jamais d'unité après un rapport de projection ?",
+      "verso": "Parce que c'est un quotient de deux longueurs, donc un nombre sans unité : écrire $k = 0{,}7$ cm n'a pas de sens. Le rapport dit seulement par combien les longueurs sont multipliées.",
+      "difficulte": 2,
+      "tags": ["rapport-de-projection", "unite", "piege"]
+    },
+    {
+      "id": "3E-CH05-007",
+      "lecon": "Rapport de projection d'une droite sur une droite parallèlement à une direction",
+      "type": "definition",
+      "recto": "De quoi la valeur du rapport de projection dépend-elle vraiment ?",
+      "verso": "Uniquement de la direction de la projection. Elle ne dépend ni du segment choisi, ni de sa longueur : c'est pourquoi une seule mesure suffit pour prévoir toutes les autres.",
+      "difficulte": 2,
+      "tags": ["rapport-de-projection", "direction"]
+    },
+    {
+      "id": "3E-CH05-008",
+      "lecon": "Rapport de projection d'une droite sur une droite parallèlement à une direction",
+      "type": "formule",
+      "recto": "Que devient l'ordre de trois points alignés lorsqu'on les projette ?",
+      "verso": "Il est conservé : si B est situé entre A et C, alors B' est situé entre A' et C'.",
+      "difficulte": 2,
+      "tags": ["projection", "ordre", "conservation"]
+    },
+    {
+      "id": "3E-CH05-009",
+      "lecon": "Rapport de projection d'une droite sur une droite parallèlement à une direction",
+      "type": "formule",
+      "recto": "Que signifie pour les longueurs un rapport de projection égal à $1{,}5$ ?",
+      "verso": "Toutes les longueurs sont multipliées par $1{,}5$, donc allongées de moitié. Un rapport de $0{,}7$ les raccourcirait au contraire à sept dixièmes de leur valeur.",
+      "difficulte": 2,
+      "tags": ["rapport-de-projection", "interpretation"]
+    },
+    {
+      "id": "3E-CH05-010",
+      "lecon": "Rapport de projection d'une droite sur une droite parallèlement à une direction",
+      "type": "formule",
+      "recto": "Comment calcule-t-on la hauteur d'un mur inaccessible à partir de l'ombre d'une règle plantée à côté ?",
+      "verso": "Le mur et la règle sont verticaux, donc parallèles : le rapport est le même. On calcule $k = \\dfrac{\\text{ombre de la règle}}{\\text{longueur de la règle}}$, puis on divise l'ombre du mur par $k$.",
+      "difficulte": 2,
+      "tags": ["rapport-de-projection", "segment-temoin", "hauteur"]
+    },
+    {
+      "id": "3E-CH05-011",
+      "lecon": "Rapport de projection orthogonale",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on projeté orthogonal d'un point A sur une droite $(d)$ ?",
+      "verso": "C'est le pied A' de la perpendiculaire à $(d)$ passant par A. La projection orthogonale est donc la projection dont la direction est perpendiculaire à $(d)$.",
+      "difficulte": 1,
+      "tags": ["projection-orthogonale", "projete", "definition"]
+    },
+    {
+      "id": "3E-CH05-012",
+      "lecon": "Rapport de projection orthogonale",
+      "type": "definition",
+      "recto": "Comment définit-on le rapport de projection orthogonale d'un segment $[AB]$ sur une droite $(d)$ ?",
+      "verso": "C'est le nombre $k = \\dfrac{A'B'}{AB}$, où A' et B' sont les projetés orthogonaux de A et de B sur $(d)$.",
+      "difficulte": 1,
+      "tags": ["projection-orthogonale", "rapport-de-projection"]
+    },
+    {
+      "id": "3E-CH05-013",
+      "lecon": "Rapport de projection orthogonale",
+      "type": "formule",
+      "recto": "Entre quelles valeurs un rapport de projection orthogonale est-il toujours compris ?",
+      "verso": "Entre $0$ et $1$ : $0 \\le k \\le 1$. La projection orthogonale ne rallonge jamais un segment, donc $A'B' \\le AB$.",
+      "difficulte": 1,
+      "tags": ["projection-orthogonale", "encadrement"]
+    },
+    {
+      "id": "3E-CH05-014",
+      "lecon": "Rapport de projection orthogonale",
+      "type": "formule",
+      "recto": "Dans quel cas le rapport de projection orthogonale d'un segment $[AB]$ sur $(d)$ vaut-il $1$ ?",
+      "verso": "Lorsque la droite $(AB)$ est parallèle à $(d)$ : le segment garde alors exactement sa longueur, $A'B' = AB$.",
+      "difficulte": 2,
+      "tags": ["projection-orthogonale", "cas-limite", "parallele"]
+    },
+    {
+      "id": "3E-CH05-015",
+      "lecon": "Rapport de projection orthogonale",
+      "type": "formule",
+      "recto": "Dans quel cas le rapport de projection orthogonale d'un segment $[AB]$ sur $(d)$ vaut-il $0$ ?",
+      "verso": "Lorsque la droite $(AB)$ est perpendiculaire à $(d)$ : les projetés A' et B' sont confondus et le segment se réduit à un point.",
+      "difficulte": 2,
+      "tags": ["projection-orthogonale", "cas-limite", "perpendiculaire"]
+    },
+    {
+      "id": "3E-CH05-016",
+      "lecon": "Rapport de projection orthogonale",
+      "type": "formule",
+      "recto": "Pourquoi une projection orthogonale ne peut-elle jamais allonger un segment ?",
+      "verso": "Parce que $[AB]$ et son projeté $[A'B']$ sont deux côtés d'un triangle rectangle dont $[AB]$ est l'hypoténuse, donc le plus grand côté. Le projeté est plus court, sauf si les deux se confondent.",
+      "difficulte": 3,
+      "tags": ["projection-orthogonale", "hypotenuse", "justification"]
+    },
+    {
+      "id": "3E-CH05-017",
+      "lecon": "Rapport de projection orthogonale",
+      "type": "definition",
+      "recto": "Que mesure la valeur du rapport de projection orthogonale d'un segment sur une droite ?",
+      "verso": "L'inclinaison du segment par rapport à cette droite : plus il se redresse, plus $k$ se rapproche de $0$ ; plus il se couche, plus $k$ se rapproche de $1$.",
+      "difficulte": 2,
+      "tags": ["projection-orthogonale", "inclinaison"]
+    },
+    {
+      "id": "3E-CH05-018",
+      "lecon": "Rapport de projection orthogonale",
+      "type": "formule",
+      "recto": "Que faut-il conclure d'un rapport de projection orthogonale trouvé égal à $1{,}4$ ?",
+      "verso": "Que le résultat est faux : le quotient a été écrit à l'envers, ou bien la projection n'est pas orthogonale. Dans une projection parallèle quelconque, $1{,}5$ resterait pourtant possible.",
+      "difficulte": 3,
+      "tags": ["projection-orthogonale", "piege", "encadrement"]
+    },
+    {
+      "id": "3E-CH05-019",
+      "lecon": "Rapport de projection orthogonale",
+      "type": "formule",
+      "recto": "Que peut-on dire des rapports de projection orthogonale de deux segments parallèles sur une même droite ?",
+      "verso": "Ils sont égaux, car les deux segments ont la même inclinaison. On projette donc le second en multipliant sa longueur par le rapport calculé sur le premier.",
+      "difficulte": 2,
+      "tags": ["projection-orthogonale", "segments-paralleles"]
+    },
+    {
+      "id": "3E-CH05-020",
+      "lecon": "Rapport de projection orthogonale",
+      "type": "formule",
+      "recto": "Comment obtient-on à l'équerre le projeté orthogonal d'un segment $[AB]$ sur une droite $(d)$ ?",
+      "verso": "On trace la perpendiculaire à $(d)$ passant par A, puis celle passant par B. Les deux pieds A' et B' sont les extrémités du segment projeté, et l'on code les deux angles droits.",
+      "difficulte": 1,
+      "tags": ["projection-orthogonale", "construction"]
+    },
+    {
+      "id": "3E-CH05-021",
+      "lecon": "Propriétés du rapport de projection orthogonale et applications",
+      "type": "formule",
+      "recto": "Quelle égalité de rapports obtient-on lorsque deux droites sécantes en O sont coupées par des parallèles ?",
+      "verso": "$\\dfrac{OA'}{OA} = \\dfrac{OB'}{OB} = \\dfrac{A'B'}{AB} = k$ : un même nombre $k$ relie chaque longueur à sa projetée. Les parallèles découpent des longueurs proportionnelles.",
+      "difficulte": 2,
+      "tags": ["egalite-des-rapports", "proportionnalite"]
+    },
+    {
+      "id": "3E-CH05-022",
+      "lecon": "Propriétés du rapport de projection orthogonale et applications",
+      "type": "formule",
+      "recto": "Pourquoi écrit-on les rapports en partant du point O commun aux deux droites sécantes ?",
+      "verso": "Parce que O appartient aux deux droites : il est son propre projeté. Toutes les longueurs se comptent donc à partir d'un point qui ne bouge pas.",
+      "difficulte": 2,
+      "tags": ["egalite-des-rapports", "point-commun"]
+    },
+    {
+      "id": "3E-CH05-023",
+      "lecon": "Propriétés du rapport de projection orthogonale et applications",
+      "type": "formule",
+      "recto": "Que deviennent l'alignement de points et le parallélisme de deux droites après une projection ?",
+      "verso": "Ils sont conservés : des points alignés restent alignés, et si $(AB)$ est parallèle à $(CD)$, alors $(A'B')$ est parallèle à $(C'D')$.",
+      "difficulte": 2,
+      "tags": ["projection", "conservation", "parallelisme"]
+    },
+    {
+      "id": "3E-CH05-024",
+      "lecon": "Propriétés du rapport de projection orthogonale et applications",
+      "type": "formule",
+      "recto": "Où se trouve le projeté du milieu M d'un segment $[AB]$ ?",
+      "verso": "Au milieu du segment projeté : si M est le milieu de $[AB]$, alors M' est le milieu de $[A'B']$. Une projection conserve le milieu.",
+      "difficulte": 2,
+      "tags": ["projection", "milieu", "conservation"]
+    },
+    {
+      "id": "3E-CH05-025",
+      "lecon": "Propriétés du rapport de projection orthogonale et applications",
+      "type": "formule",
+      "recto": "Pourquoi $\\dfrac{OA'}{OA}$ et $\\dfrac{OB'}{OB}$ sont-ils égaux lorsque $(AA')$ et $(BB')$ sont parallèles ?",
+      "verso": "Parce que la projection multiplie toutes les longueurs par un même nombre $k$ : $OA' = k \\times OA$ et $OB' = k \\times OB$. En divisant chaque égalité par la longueur de départ, les deux quotients valent $k$.",
+      "difficulte": 3,
+      "tags": ["egalite-des-rapports", "demonstration"]
+    },
+    {
+      "id": "3E-CH05-026",
+      "lecon": "Propriétés du rapport de projection orthogonale et applications",
+      "type": "definition",
+      "recto": "Dans le raisonnement qui conduit à l'égalité des rapports, qu'est-ce qui est donné et qu'est-ce qui est déduit ?",
+      "verso": "Le parallélisme des droites est donné par l'énoncé, et l'égalité des rapports en est déduite. C'est une déduction directe, qui ne se lit que dans ce sens.",
+      "difficulte": 3,
+      "tags": ["raisonnement", "deduction"]
+    },
+    {
+      "id": "3E-CH05-027",
+      "lecon": "Propriétés du rapport de projection orthogonale et applications",
+      "type": "formule",
+      "recto": "Comment transforme-t-on une égalité de deux quotients en équation ?",
+      "verso": "Par le produit en croix : $\\dfrac{a}{b} = \\dfrac{c}{d}$ donne $a \\times d = b \\times c$. Ainsi $\\dfrac{x}{3} = \\dfrac{8}{2x}$ devient $2x^{2} = 24$.",
+      "difficulte": 2,
+      "tags": ["produit-en-croix", "equation"]
+    },
+    {
+      "id": "3E-CH05-028",
+      "lecon": "Propriétés du rapport de projection orthogonale et applications",
+      "type": "formule",
+      "recto": "Que faut-il vérifier avant d'écrire une égalité de rapports dans une configuration de deux droites sécantes ?",
+      "verso": "Que le parallélisme des deux droites qui les coupent est bien donné par l'énoncé ou par le codage. Sans parallèles, les longueurs ne sont pas proportionnelles et l'égalité est fausse.",
+      "difficulte": 2,
+      "tags": ["egalite-des-rapports", "condition", "parallelisme"]
+    },
+    {
+      "id": "3E-CH05-029",
+      "lecon": "Propriétés du rapport de projection orthogonale et applications",
+      "type": "formule",
+      "recto": "Quelle erreur commet l'élève qui écrit $\\dfrac{OA}{ON}$ dans une configuration où A correspond à M et B correspond à N ?",
+      "verso": "Il associe deux points qui ne se correspondent pas. Les rapports qui vont ensemble sont $\\dfrac{OA}{OM}$ et $\\dfrac{AB}{MN}$.",
+      "difficulte": 3,
+      "tags": ["egalite-des-rapports", "correspondance", "piege"]
+    },
+    {
+      "id": "3E-CH05-030",
+      "lecon": "Propriétés du rapport de projection orthogonale et applications",
+      "type": "formule",
+      "recto": "Lorsqu'un produit en croix conduit à une équation du type $x^{2} = a$, quelle solution retient-on pour une longueur ?",
+      "verso": "La solution positive seulement. Ainsi $2x^{2} = 24$ donne $x^{2} = 12$, donc $x = \\sqrt{12} = 2\\sqrt{3}$, la solution négative étant écartée.",
+      "difficulte": 3,
+      "tags": ["produit-en-croix", "longueur", "solution-positive"]
+    }
+  ]
+}

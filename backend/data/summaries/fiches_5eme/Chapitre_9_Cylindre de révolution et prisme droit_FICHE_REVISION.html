@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Fiche de revision - 5eme - Chapitre 9 : Cylindre de revolution et prisme droit</title>
+<style>
+/* ===================================================================
+   FICHE DE REVISION, Collection Hakili Lab, Edition 2026
+   Feuille de style autonome, format A4 pret a imprimer.
+   Bleu #005CB9 · Vert #49A145
+   =================================================================== */
+:root{
+  --bleu:#005CB9; --bleu-fonce:#00429A; --bleu-pale:#E8F1FB; --bleu-bord:#B7D2EE;
+  --vert:#49A145; --vert-fonce:#2F7A2C; --vert-pale:#EDF7EC; --vert-bord:#BCE0B9;
+  --gris:#4A4A4A; --gris-clair:#E4E4E4; --rouge:#B3261E;
+}
+@page{
+  size:A4; margin:15mm;
+  @bottom-center{
+    content:"Collection Hakili Lab, Edition 2026  ·  Fiche de revision  ·  " counter(page) "/" counter(pages);
+    font-family:"Segoe UI",Calibri,Arial,sans-serif; font-size:6.6pt; color:#8A8A8A;
+  }
+}
+*{box-sizing:border-box;}
+body{
+  margin:0; font-family:"Segoe UI",Calibri,Arial,sans-serif;
+  font-size:8.4pt; line-height:1.26; color:#1B1B1B;
+}
+p{margin:0 0 3pt;}
+ul{margin:0 0 3pt; padding-left:11pt;}
+li{margin:0 0 1.2pt;}
+b,strong{color:var(--bleu-fonce);}
+
+/* ------------------------------ ENTETE ---------------------------- */
+.entete{
+  display:flex; align-items:stretch; border:1.6pt solid var(--bleu);
+  border-radius:2.5pt; overflow:hidden; margin-bottom:6pt;
+}
+.entete .num{
+  background:var(--bleu); color:#fff; font-size:20pt; font-weight:700;
+  padding:0 8pt; display:flex; align-items:center; justify-content:center; min-width:34pt;
+}
+.entete .txt{padding:3.5pt 8pt; flex:1;}
+.entete .niveau{
+  font-size:7pt; font-weight:700; letter-spacing:.9pt; color:var(--vert-fonce);
+}
+.entete h1{margin:0; font-size:13.5pt; line-height:1.12; color:var(--bleu-fonce); font-weight:700;}
+.entete .sous{font-size:7pt; color:var(--gris); margin-top:1pt;}
+
+/* --------------------------- BANDEAUX ----------------------------- */
+.bandeau{
+  color:#fff; font-weight:700; font-size:9pt; letter-spacing:1pt;
+  padding:2.4pt 7pt; border-radius:2pt; margin:3pt 0 4pt; break-after:avoid; page-break-after:avoid;
+}
+.bandeau.bleu{background:var(--bleu);}
+.bandeau.vert{background:var(--vert);}
+
+/* --------------------------- COLONNES ----------------------------- */
+.cols{column-count:2; column-gap:7mm; column-fill:balance;}
+
+.cols.bal{column-fill:balance;}
+.bloc{margin-bottom:5pt;}
+.keep{break-inside:avoid; page-break-inside:avoid;}
+
+/* --------------------------- LECONS ------------------------------- */
+h2.lecon{
+  margin:0 0 3pt; font-size:8.6pt; font-weight:700; color:#fff; background:var(--bleu-fonce);
+  padding:1.8pt 5pt; border-radius:1.5pt; break-after:avoid; page-break-after:avoid;
+}
+h3.rub{
+  margin:3.5pt 0 1.5pt; font-size:8.2pt; font-weight:700; color:var(--vert-fonce);
+  border-bottom:.7pt solid var(--vert-bord); padding-bottom:.8pt;
+  break-after:avoid; page-break-after:avoid;
+}
+
+/* --------------------------- ENCADRES ----------------------------- */
+.form{
+  background:var(--bleu-pale); border:.8pt solid var(--bleu-bord); border-left:2.6pt solid var(--bleu);
+  border-radius:2pt; padding:2.4pt 5pt; margin:2.2pt 0 3.4pt;
+  break-inside:avoid; page-break-inside:avoid;
+}
+.form .t{
+  display:block; font-size:6.8pt; font-weight:700; letter-spacing:.6pt;
+  color:var(--bleu); margin-bottom:1.5pt;
+}
+.form .c{text-align:center; font-size:9.1pt; margin:1.6pt 0;}
+.note{background:var(--vert-pale); border-left:2.4pt solid var(--vert); padding:2.4pt 5pt; border-radius:1.5pt; margin:2.5pt 0 4pt; break-inside:avoid;}
+
+/* --------------------------- TABLEAUX ----------------------------- */
+table{width:100%; border-collapse:collapse; font-size:7.6pt; margin:2pt 0 4pt; break-inside:avoid;}
+th{background:var(--bleu); color:#fff; font-weight:700; text-align:left; padding:1.8pt 4pt; font-size:7.2pt;}
+td{border:.6pt solid var(--gris-clair); padding:1.8pt 4pt; vertical-align:top;}
+tr{break-inside:avoid;}
+table.var td{text-align:center; font-size:8pt;}
+table.var td.lab{text-align:left; font-weight:700; color:var(--bleu-fonce); background:var(--bleu-pale);}
+
+/* ----------------------------- PIEGES ----------------------------- */
+table.pieges th:first-child{width:44%;}
+table.pieges td:first-child{color:var(--rouge); background:#FDF1F0;}
+.x{font-weight:700;}
+.v{color:var(--vert-fonce); font-weight:700;}
+
+/* ---------------------------- RECAP ------------------------------- */
+ol.recap{margin:0; padding-left:0; list-style:none; counter-reset:r;}
+ol.recap li{
+  counter-increment:r; position:relative; padding-left:13pt; margin-bottom:1.8pt;
+  break-inside:avoid;
+}
+ol.recap li::before{
+  content:counter(r); position:absolute; left:0; top:.3pt;
+  width:10pt; height:10pt; border-radius:50%; background:var(--vert); color:#fff;
+  font-size:6.6pt; font-weight:700; text-align:center; line-height:10pt;
+}
+
+/* --------------------------- MATHS -------------------------------- */
+.m{font-family:Cambria,Georgia,"Times New Roman",serif;}
+i,var{font-family:Cambria,Georgia,"Times New Roman",serif; font-style:italic;}
+.op{font-family:Cambria,Georgia,"Times New Roman",serif; font-style:normal;}
+.f{display:inline-block; vertical-align:middle; text-align:center;
+   margin:0 .12em; line-height:1.06; font-family:Cambria,Georgia,"Times New Roman",serif;}
+.f>span{display:block; padding:0 .2em;}
+.f>span:first-child{border-bottom:.6pt solid currentColor; padding-bottom:.08em;}
+.f>span:last-child{padding-top:.04em;}
+.rad{border-top:.6pt solid currentColor; padding-top:.12em;}
+/* line-height:0 evite que l'exposant n'ecarte les lignes ; position:relative le
+   repositionne sans qu'il heurte la barre de fraction ni le trait du radical. */
+sup,sub{font-size:.68em; line-height:0; position:relative; vertical-align:baseline;}
+sup{top:-.42em;}
+sub{bottom:-.22em;}
+.pt{white-space:nowrap;}
+/* Les fleches n'ont qu'un glyphe atrophie dans la fonte serif : on les force
+   en sans-serif, ou elles sont franches meme a 8 pt. */
+.ar{font-family:"Segoe UI",Calibri,Arial,"DejaVu Sans",sans-serif; font-style:normal;}
+
+/* ------------------- PIEGES : blocs erreur / correction ------------- */
+.pg{font-size:8.1pt; border-left:2.4pt solid var(--rouge); background:#FDF1F0; border-radius:1.5pt;
+    padding:2pt 5pt; margin:0 0 2.8pt; break-inside:avoid; page-break-inside:avoid;}
+.pg .err{color:var(--rouge); font-weight:600;}
+.pg .cor{color:#1B1B1B; margin-top:.8pt;}
+.pg .cor b{color:var(--bleu-fonce);}
+.v{color:var(--vert-fonce); font-weight:700;}
+
+</style>
+</head>
+<body>
+<header class="entete">
+  <div class="num">9</div>
+  <div class="txt">
+    <div class="niveau">5EME &middot; MATHEMATIQUES</div>
+    <h1>Cylindre de révolution et prisme droit</h1>
+    <div class="sous">Leçon 1 : le cylindre de révolution &middot; Leçon 2 : patron du cylindre &middot; Leçon 3 : aire et volume du cylindre &middot; Leçon 4 : le prisme droit &middot; Leçon 5 : patron du prisme droit &middot; Leçon 6 : aire et volume du prisme droit</div>
+  </div>
+</header>
+
+<div class="bandeau bleu" style="margin-top:0">L'ESSENTIEL</div>
+<div class="cols">
+
+<!-- ================= LECON 1 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 1&nbsp;: Le cylindre de révolution : description et perspective</h2>
+<p>Un <b>cylindre de révolution</b> est le solide obtenu en faisant tourner un <b>rectangle</b> autour d'un de ses côtés. Il a <b>deux bases</b>, qui sont des <b>disques</b> identiques, reliées par une <b>surface latérale</b> courbe.</p></div>
+<ul>
+<li>Le <b>rayon</b> <i>r</i> est celui d'une base. La <b>hauteur</b> <i>h</i> est la distance entre les deux bases : elle se mesure toujours <b>perpendiculairement aux bases</b> (sur un fût couché, c'est la longueur du fût).</li>
+<li><b>Deux mesures suffisent</b> : <i>r</i> et <i>h</i> décrivent entièrement le cylindre. Si l'énoncé donne le <b>diamètre</b>, on le divise par 2 avant tout calcul.</li>
+<li>La <b>base</b> est un disque, jamais le rectangle latéral ; les deux bases sont superposables et parallèles.</li>
+<li>La <b>surface latérale</b> est la partie courbe, celle que couvre une étiquette : elle ne comprend ni le fond ni le couvercle.</li>
+</ul>
+<p><b>Perspective cavalière.</b> Les bases se dessinent en <b>ellipses</b>, les arêtes cachées en <b>pointillés</b> ; le parallélisme est conservé. On trace l'ellipse du bas (moitié avant en trait plein, moitié arrière en pointillés), deux segments verticaux de longueur <i>h</i>, puis l'ellipse du haut, entièrement en trait plein.</p>
+</div>
+
+<!-- ================= LECON 2 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 2&nbsp;: Patron du cylindre</h2>
+<p>Le <b>patron</b> d'un solide est le dessin <b>à plat</b> qui, découpé et plié, redonne exactement le solide, sans manque ni recouvrement.</p></div>
+<div class="form">
+  <span class="t">PATRON DU CYLINDRE</span>
+  <div class="c m">deux <b>disques</b> de rayon <i>r</i> (les bases)</div>
+  <div class="c m">+ un <b>rectangle</b> de dimensions <i>h</i> et 2&#8239;&#215;&#8239;&#960;&#8239;&#215;&#8239;<i>r</i></div>
+</div>
+<p>Le grand côté du rectangle est le <b>périmètre de la base</b> : c'est le cercle redressé, donc il mesure <span class="pt">2&#8239;&#215;&#8239;&#960;&#8239;&#215;&#8239;<i>r</i></span>. Enroulé, il redonne la surface latérale.</p>
+<p><b>Placement des disques.</b> Chacun touche le rectangle en un seul point, l'un sur le bord du <b>haut</b>, l'autre sur le bord du <b>bas</b>, décalés l'un vers la gauche et l'autre vers la droite pour ne pas se chevaucher.</p>
+</div>
+
+<!-- ================= LECON 3 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 3&nbsp;: Aire et volume du cylindre</h2>
+<div class="form">
+  <span class="t">FORMULES DU CYLINDRE&nbsp;: <i>r</i> rayon, <i>h</i> hauteur, &#960;&#8239;&#8776;&#8239;3,14</span>
+  <div class="c m">aire d'une base&#8239;=&#8239;&#960;&#8239;&#215;&#8239;<i>r</i>&#8239;&#215;&#8239;<i>r</i></div>
+  <div class="c m">aire latérale&#8239;=&#8239;2&#8239;&#215;&#8239;&#960;&#8239;&#215;&#8239;<i>r</i>&#8239;&#215;&#8239;<i>h</i></div>
+  <div class="c m">aire totale&#8239;=&#8239;aire latérale&#8239;+&#8239;2&#8239;&#215;&#8239;&#960;&#8239;&#215;&#8239;<i>r</i>&#8239;&#215;&#8239;<i>r</i></div>
+  <div class="c m">volume&#8239;=&#8239;&#960;&#8239;&#215;&#8239;<i>r</i>&#8239;&#215;&#8239;<i>r</i>&#8239;&#215;&#8239;<i>h</i></div>
+</div></div>
+<p>L'<b>aire latérale</b> est l'aire du rectangle du patron ; l'<b>aire totale</b> y ajoute les deux disques, c'est-à-dire le fond et le couvercle. Le <b>volume</b> ne se lit pas sur le patron : il vaut l'aire de la base multipliée par la hauteur.</p>
+<p><b>Unités.</b> Une aire se donne en cm<sup>2</sup> ou m<sup>2</sup>, un volume en cm<sup>3</sup> ou m<sup>3</sup>. Toutes les longueurs d'un même calcul doivent être exprimées dans la <b>même unité</b>.</p>
+<div class="form">
+  <span class="t">VOLUMES ET CONTENANCES</span>
+  <div class="c m">1 L&#8239;=&#8239;1 dm<sup>3</sup>&#8239;=&#8239;1&#8239;000 cm<sup>3</sup> &nbsp;&nbsp; 1 mL&#8239;=&#8239;1 cm<sup>3</sup></div>
+  <div class="c m">1 m<sup>3</sup>&#8239;=&#8239;1&#8239;000 dm<sup>3</sup>&#8239;=&#8239;1&#8239;000 L</div>
+</div>
+<div class="note">D'une unité de volume à la suivante, on multiplie ou on divise par <b>mille</b>, jamais par dix.</div>
+</div>
+
+<!-- ================= LECON 4 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 4&nbsp;: Le prisme droit : description et perspective</h2>
+<p>Un <b>prisme droit</b> est un solide qui a <b>deux bases</b> identiques et parallèles, qui sont des <b>polygones</b>, reliées par des <b>faces latérales</b> qui sont des <b>rectangles</b>. Sa <b>hauteur</b> est la longueur des arêtes latérales, toutes égales et <b>perpendiculaires aux bases</b>.</p></div>
+<ul>
+<li><b>Nom du prisme</b> : on le nomme d'après sa base, par exemple prisme <b>triangulaire</b>, <b>rectangulaire</b>, <b>hexagonal</b>. Le <b>pavé droit</b> est un prisme droit à base rectangulaire.</li>
+<li><b>Reconnaître les bases</b> : ce ne sont pas les faces posées par terre, mais les <b>deux faces identiques et parallèles</b> entre lesquelles toutes les autres sont des rectangles.</li>
+<li><b>Perspective cavalière</b> : arêtes cachées en pointillés, parallélisme conservé.</li>
+</ul>
+<div class="form">
+  <span class="t">COMPTAGE&nbsp;: base à <i>n</i> côtés</span>
+  <div class="c m"><i>n</i> faces latérales &nbsp;&middot;&nbsp; <i>n</i>&#8239;+&#8239;2 faces en tout &nbsp;&middot;&nbsp; 2<i>n</i> sommets</div>
+</div>
+<div class="note"><b>Question inverse.</b> Un prisme à 10 faces a 10&#8239;&#8722;&#8239;2&#8239;=&#8239;8 faces latérales, donc une base à <b>8 côtés</b> : ses bases sont des octogones.</div>
+</div>
+
+<!-- ================= LECON 5 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 5&nbsp;: Patron du prisme droit</h2>
+<p>Le patron d'un prisme droit est formé de <b>deux bases</b> identiques (les polygones) et d'autant de <b>rectangles</b> que la base a de côtés. Chaque rectangle a pour dimensions <b>un côté de la base</b> et la <b>hauteur</b> <i>h</i> du prisme.</p></div>
+<div class="form">
+  <span class="t">LA BANDE LATERALE</span>
+  <div class="c m">hauteur&#8239;=&#8239;<i>h</i> &nbsp;&nbsp; longueur&#8239;=&#8239;périmètre de la base</div>
+</div>
+<ul>
+<li><b>Placement des bases</b> : chacune s'attache à un côté de la bande, l'une <b>en haut</b>, l'autre <b>en bas</b>, sans chevauchement.</li>
+<li><b>Contrôle du patron</b> : la somme des largeurs des rectangles doit être égale au <b>périmètre de la base</b>, et tous les rectangles doivent avoir la <b>même hauteur</b>. Si l'un des deux points échoue, le patron est faux.</li>
+<li><b>Pavé droit</b> : c'est un prisme droit à base rectangulaire, son patron obéit à la même règle.</li>
+</ul>
+</div>
+
+<!-- ================= LECON 6 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 6&nbsp;: Aire et volume du prisme droit</h2>
+<div class="form">
+  <span class="t">FORMULES DU PRISME DROIT</span>
+  <div class="c m">volume&#8239;=&#8239;aire de la base&#8239;&#215;&#8239;hauteur</div>
+  <div class="c m">aire latérale&#8239;=&#8239;périmètre de la base&#8239;&#215;&#8239;hauteur</div>
+  <div class="c m">aire totale&#8239;=&#8239;aire latérale&#8239;+&#8239;2&#8239;&#215;&#8239;aire de la base</div>
+</div></div>
+<p>La règle <b>volume&#8239;=&#8239;aire de la base&#8239;&#215;&#8239;hauteur</b> est commune au <b>prisme droit</b>, au <b>pavé droit</b> et au <b>cylindre</b>. Pour une <b>aire</b>, on additionne des morceaux de surface ; pour un <b>volume</b>, on empile une surface.</p>
+<h3 class="rub">Aires de base à connaître</h3>
+<table>
+<tr><th>Base</th><th>Aire</th></tr>
+<tr><td>Rectangle</td><td class="m">Longueur&#8239;&#215;&#8239;largeur</td></tr>
+<tr><td>Triangle</td><td class="m">(base&#8239;&#215;&#8239;hauteur)&#8239;&#247;&#8239;2</td></tr>
+<tr><td>Losange</td><td class="m">(grande diagonale&#8239;&#215;&#8239;petite diagonale)&#8239;&#247;&#8239;2</td></tr>
+<tr><td>Disque</td><td class="m">&#960;&#8239;&#215;&#8239;<i>r</i>&#8239;&#215;&#8239;<i>r</i></td></tr>
+</table>
+<h3 class="rub">Retrouver une dimension manquante</h3>
+<ul>
+<li>hauteur&#8239;=&#8239;volume&#8239;&#247;&#8239;aire de la base ;</li>
+<li>périmètre de la base&#8239;=&#8239;aire latérale&#8239;&#247;&#8239;hauteur ;</li>
+<li>rayon d'un cylindre&#8239;=&#8239;périmètre&#8239;&#247;&#8239;(2&#8239;&#215;&#8239;&#960;), c'est-à-dire &#247;&#8239;6,28.</li>
+</ul>
+</div>
+
+</div>
+
+<div class="bandeau vert">PIEGES ET ERREURS FREQUENTES</div>
+<div class="cols">
+<div class="pg"><div class="err"><span class="x">&#10007;</span> Pour un fût de 8 cm de <b>diamètre</b>, prendre <i>r</i>&#8239;=&#8239;8</div><div class="cor"><span class="v">&#10003;</span> <i>r</i> est le <b>RAYON</b> : <i>r</i>&#8239;=&#8239;4. On divise toujours le diamètre par 2 avant tout calcul.</div></div>
+<div class="pg"><div class="err"><span class="x">&#10007;</span> volume du cylindre&#8239;=&#8239;2&#8239;&#215;&#8239;&#960;&#8239;&#215;&#8239;<i>r</i>&#8239;&#215;&#8239;<i>h</i></div><div class="cor"><span class="v">&#10003;</span> Cela, c'est l'<b>aire latérale</b> ; le volume vaut <span class="pt">&#960;&#8239;&#215;&#8239;<i>r</i>&#8239;&#215;&#8239;<i>r</i>&#8239;&#215;&#8239;<i>h</i></span>, soit l'aire de la base multipliée par la hauteur.</div></div>
+<div class="pg"><div class="err"><span class="x">&#10007;</span> aire latérale du prisme&#8239;=&#8239;aire de la base&#8239;&#215;&#8239;hauteur</div><div class="cor"><span class="v">&#10003;</span> Cela, c'est le <b>volume</b> ; l'aire latérale est le <b>PERIMETRE</b> de la base multiplié par la hauteur.</div></div>
+<div class="pg"><div class="err"><span class="x">&#10007;</span> Oublier les <b>deux bases</b> dans l'aire totale</div><div class="cor"><span class="v">&#10003;</span> aire totale&#8239;=&#8239;aire latérale&#8239;+&#8239;2&#8239;&#215;&#8239;aire d'une base, car il y a le fond <b>et</b> le couvercle : pour le cylindre, <span class="pt">+&#8239;2&#8239;&#215;&#8239;&#960;&#8239;&#215;&#8239;<i>r</i>&#8239;&#215;&#8239;<i>r</i></span>.</div></div>
+<div class="pg"><div class="err"><span class="x">&#10007;</span> 1 L&#8239;=&#8239;100 cm<sup>3</sup></div><div class="cor"><span class="v">&#10003;</span> 1 L&#8239;=&#8239;1 dm<sup>3</sup>&#8239;=&#8239;<b>1&#8239;000</b> cm<sup>3</sup> : d'une unité de volume à la suivante, on multiplie ou on divise par <b>mille</b>.</div></div>
+<div class="pg"><div class="err"><span class="x">&#10007;</span> Appeler « base » la surface latérale &nbsp;&middot;&nbsp; « la base d'une tente est le sol de la tente »</div><div class="cor"><span class="v">&#10003;</span> Les bases du cylindre sont les deux <b>disques</b> ; celles d'une tente sont les deux <b>triangles</b> des extrémités, seules faces identiques et parallèles.</div></div>
+<div class="pg"><div class="err"><span class="x">&#10007;</span> Dessiner des <b>ellipses</b> dans un patron &nbsp;&middot;&nbsp; prendre <i>r</i> pour la longueur du rectangle &nbsp;&middot;&nbsp; les deux disques du même côté</div><div class="cor"><span class="v">&#10003;</span> Dans un patron, tout est vu <b>à plat</b> : les bases sont des <b>cercles</b>. La longueur du rectangle est le <b>périmètre</b>, <span class="pt">2&#8239;&#215;&#8239;&#960;&#8239;&#215;&#8239;<i>r</i></span>, et un disque va en haut, l'autre en bas.</div></div>
+<div class="pg"><div class="err"><span class="x">&#10007;</span> Un prisme à 10 faces a une base à 10 côtés &nbsp;&middot;&nbsp; base de côtés 3, 4 et 5 : trois rectangles identiques &nbsp;&middot;&nbsp; confondre la hauteur du triangle de base et celle du prisme</div><div class="cor"><span class="v">&#10003;</span> On retire d'abord les deux bases : 10&#8239;&#8722;&#8239;2&#8239;=&#8239;8 côtés. Les largeurs valent 3, 4 et 5 ; seule la <b>hauteur</b> leur est commune. Enfin la hauteur du triangle sert à l'aire de la base, celle du prisme à l'empiler.</div></div>
+
+</div>
+
+<div class="bandeau bleu">A SAVOIR PAR COEUR AVANT LE DEVOIR</div>
+<div class="cols">
+<ol class="recap">
+<li><b>Cylindre</b> : deux <b>disques</b> identiques et une surface latérale courbe ; il est décrit par <i>r</i> et <i>h</i>, et le diamètre se divise par 2.</li>
+<li><b>Patron du cylindre</b> : 2 disques de rayon <i>r</i> + 1 rectangle de dimensions <i>h</i> et <span class="pt">2&#8239;&#215;&#8239;&#960;&#8239;&#215;&#8239;<i>r</i></span> (le périmètre de la base).</li>
+<li><b>Cylindre</b> : aire latérale&#8239;=&#8239;<span class="pt">2&#8239;&#215;&#8239;&#960;&#8239;&#215;&#8239;<i>r</i>&#8239;&#215;&#8239;<i>h</i></span> ; aire totale&#8239;=&#8239;aire latérale&#8239;+&#8239;<span class="pt">2&#8239;&#215;&#8239;&#960;&#8239;&#215;&#8239;<i>r</i>&#8239;&#215;&#8239;<i>r</i></span> ; volume&#8239;=&#8239;<span class="pt">&#960;&#8239;&#215;&#8239;<i>r</i>&#8239;&#215;&#8239;<i>r</i>&#8239;&#215;&#8239;<i>h</i></span>.</li>
+<li><b>Prisme droit</b> : deux bases polygonales identiques et parallèles, faces latérales rectangulaires ; base à <i>n</i> côtés <span class="ar">&#8594;</span> <i>n</i> rectangles, <span class="pt"><i>n</i>&#8239;+&#8239;2</span> faces, 2<i>n</i> sommets.</li>
+<li><b>Patron du prisme</b> : une bande de hauteur <i>h</i> et de longueur le périmètre de la base, partagée en panneaux, plus les deux bases, l'une en haut, l'autre en bas.</li>
+<li><b>Prisme droit</b> : aire latérale&#8239;=&#8239;périmètre de la base&#8239;&#215;&#8239;hauteur ; aire totale&#8239;=&#8239;aire latérale&#8239;+&#8239;2&#8239;&#215;&#8239;aire de la base.</li>
+<li><b>Volume&#8239;=&#8239;aire de la base&#8239;&#215;&#8239;hauteur</b> : règle commune au prisme droit, au pavé droit et au cylindre. A l'envers : hauteur&#8239;=&#8239;volume&#8239;&#247;&#8239;aire de la base.</li>
+<li><b>Unités</b> : aire en cm<sup>2</sup> ou m<sup>2</sup>, volume en cm<sup>3</sup> ou m<sup>3</sup> ; 1 L&#8239;=&#8239;1 dm<sup>3</sup>&#8239;=&#8239;1&#8239;000 cm<sup>3</sup> et 1 m<sup>3</sup>&#8239;=&#8239;1&#8239;000 L ; même unité partout avant de calculer.</li>
+</ol>
+</div>
+
+</body>
+</html>

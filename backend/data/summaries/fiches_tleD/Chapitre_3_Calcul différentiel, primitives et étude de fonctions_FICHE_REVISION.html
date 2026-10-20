@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Fiche de revision - Terminale D - Chapitre 3 : Calcul differentiel, primitives et etude de fonctions</title>
+<style>
+/* ===================================================================
+   FICHE DE REVISION, Collection Hakili Lab, Edition 2026
+   Feuille de style autonome, format A4 pret a imprimer.
+   Bleu #005CB9 · Vert #49A145
+   =================================================================== */
+:root{
+  --bleu:#005CB9; --bleu-fonce:#00429A; --bleu-pale:#E8F1FB; --bleu-bord:#B7D2EE;
+  --vert:#49A145; --vert-fonce:#2F7A2C; --vert-pale:#EDF7EC; --vert-bord:#BCE0B9;
+  --gris:#4A4A4A; --gris-clair:#E4E4E4; --rouge:#B3261E;
+}
+@page{
+  size:A4; margin:15mm;
+  @bottom-center{
+    content:"Collection Hakili Lab, Edition 2026  ·  Fiche de revision  ·  " counter(page) "/" counter(pages);
+    font-family:"Segoe UI",Calibri,Arial,sans-serif; font-size:6.6pt; color:#8A8A8A;
+  }
+}
+*{box-sizing:border-box;}
+body{
+  margin:0; font-family:"Segoe UI",Calibri,Arial,sans-serif;
+  font-size:8.4pt; line-height:1.26; color:#1B1B1B;
+}
+p{margin:0 0 3pt;}
+ul{margin:0 0 3pt; padding-left:11pt;}
+li{margin:0 0 1.2pt;}
+b,strong{color:var(--bleu-fonce);}
+
+/* ------------------------------ ENTETE ---------------------------- */
+.entete{
+  display:flex; align-items:stretch; border:1.6pt solid var(--bleu);
+  border-radius:2.5pt; overflow:hidden; margin-bottom:6pt;
+}
+.entete .num{
+  background:var(--bleu); color:#fff; font-size:20pt; font-weight:700;
+  padding:0 8pt; display:flex; align-items:center; justify-content:center; min-width:34pt;
+}
+.entete .txt{padding:3.5pt 8pt; flex:1;}
+.entete .niveau{
+  font-size:7pt; font-weight:700; letter-spacing:.9pt; color:var(--vert-fonce);
+}
+.entete h1{margin:0; font-size:13.5pt; line-height:1.12; color:var(--bleu-fonce); font-weight:700;}
+.entete .sous{font-size:7pt; color:var(--gris); margin-top:1pt;}
+
+/* --------------------------- BANDEAUX ----------------------------- */
+.bandeau{
+  color:#fff; font-weight:700; font-size:9pt; letter-spacing:1pt;
+  padding:2.4pt 7pt; border-radius:2pt; margin:3pt 0 4pt; break-after:avoid; page-break-after:avoid;
+}
+.bandeau.bleu{background:var(--bleu);}
+.bandeau.vert{background:var(--vert);}
+
+/* --------------------------- COLONNES ----------------------------- */
+.cols{column-count:2; column-gap:7mm; column-fill:balance;}
+
+.cols.bal{column-fill:balance;}
+.bloc{margin-bottom:5pt;}
+.keep{break-inside:avoid; page-break-inside:avoid;}
+
+/* --------------------------- LECONS ------------------------------- */
+h2.lecon{
+  margin:0 0 3pt; font-size:8.6pt; font-weight:700; color:#fff; background:var(--bleu-fonce);
+  padding:1.8pt 5pt; border-radius:1.5pt; break-after:avoid; page-break-after:avoid;
+}
+h3.rub{
+  margin:3.5pt 0 1.5pt; font-size:8.2pt; font-weight:700; color:var(--vert-fonce);
+  border-bottom:.7pt solid var(--vert-bord); padding-bottom:.8pt;
+  break-after:avoid; page-break-after:avoid;
+}
+
+/* --------------------------- ENCADRES ----------------------------- */
+.form{
+  background:var(--bleu-pale); border:.8pt solid var(--bleu-bord); border-left:2.6pt solid var(--bleu);
+  border-radius:2pt; padding:2.4pt 5pt; margin:2.2pt 0 3.4pt;
+  break-inside:avoid; page-break-inside:avoid;
+}
+.form .t{
+  display:block; font-size:6.8pt; font-weight:700; letter-spacing:.6pt;
+  color:var(--bleu); margin-bottom:1.5pt;
+}
+.form .c{text-align:center; font-size:9.1pt; margin:1.6pt 0;}
+.note{background:var(--vert-pale); border-left:2.4pt solid var(--vert); padding:2.4pt 5pt; border-radius:1.5pt; margin:2.5pt 0 4pt; break-inside:avoid;}
+
+/* --------------------------- TABLEAUX ----------------------------- */
+table{width:100%; border-collapse:collapse; font-size:7.6pt; margin:2pt 0 4pt; break-inside:avoid;}
+th{background:var(--bleu); color:#fff; font-weight:700; text-align:left; padding:1.8pt 4pt; font-size:7.2pt;}
+td{border:.6pt solid var(--gris-clair); padding:1.8pt 4pt; vertical-align:top;}
+tr{break-inside:avoid;}
+table.var td{text-align:center; font-size:8pt;}
+table.var td.lab{text-align:left; font-weight:700; color:var(--bleu-fonce); background:var(--bleu-pale);}
+
+/* ----------------------------- PIEGES ----------------------------- */
+table.pieges th:first-child{width:44%;}
+table.pieges td:first-child{color:var(--rouge); background:#FDF1F0;}
+.x{font-weight:700;}
+.v{color:var(--vert-fonce); font-weight:700;}
+
+/* ---------------------------- RECAP ------------------------------- */
+ol.recap{margin:0; padding-left:0; list-style:none; counter-reset:r;}
+ol.recap li{
+  counter-increment:r; position:relative; padding-left:13pt; margin-bottom:1.8pt;
+  break-inside:avoid;
+}
+ol.recap li::before{
+  content:counter(r); position:absolute; left:0; top:.3pt;
+  width:10pt; height:10pt; border-radius:50%; background:var(--vert); color:#fff;
+  font-size:6.6pt; font-weight:700; text-align:center; line-height:10pt;
+}
+
+/* --------------------------- MATHS -------------------------------- */
+.m{font-family:Cambria,Georgia,"Times New Roman",serif;}
+i,var{font-family:Cambria,Georgia,"Times New Roman",serif; font-style:italic;}
+.op{font-family:Cambria,Georgia,"Times New Roman",serif; font-style:normal;}
+.f{display:inline-block; vertical-align:middle; text-align:center;
+   margin:0 .12em; line-height:1.06; font-family:Cambria,Georgia,"Times New Roman",serif;}
+.f>span{display:block; padding:0 .2em;}
+.f>span:first-child{border-bottom:.6pt solid currentColor; padding-bottom:.08em;}
+.f>span:last-child{padding-top:.04em;}
+.rad{border-top:.6pt solid currentColor; padding-top:.12em;}
+/* line-height:0 evite que l'exposant n'ecarte les lignes ; position:relative le
+   repositionne sans qu'il heurte la barre de fraction ni le trait du radical. */
+sup,sub{font-size:.68em; line-height:0; position:relative; vertical-align:baseline;}
+sup{top:-.42em;}
+sub{bottom:-.22em;}
+.pt{white-space:nowrap;}
+/* Les fleches n'ont qu'un glyphe atrophie dans la fonte serif : on les force
+   en sans-serif, ou elles sont franches meme a 8 pt. */
+.ar{font-family:"Segoe UI",Calibri,Arial,"DejaVu Sans",sans-serif; font-style:normal;}
+
+/* ------------------- PIEGES : blocs erreur / correction ------------- */
+.pg{font-size:8.1pt; border-left:2.4pt solid var(--rouge); background:#FDF1F0; border-radius:1.5pt;
+    padding:2pt 5pt; margin:0 0 2.8pt; break-inside:avoid; page-break-inside:avoid;}
+.pg .err{color:var(--rouge); font-weight:600;}
+.pg .cor{color:#1B1B1B; margin-top:.8pt;}
+.pg .cor b{color:var(--bleu-fonce);}
+.v{color:var(--vert-fonce); font-weight:700;}
+
+</style>
+</head>
+<body>
+<header class="entete">
+  <div class="num">3</div>
+  <div class="txt">
+    <div class="niveau">TERMINALE D &middot; MATHEMATIQUES</div>
+    <h1>Calcul différentiel, primitives et étude de fonctions</h1>
+    <div class="sous">Leçon 1 : dérivabilité, singularités, dérivées successives &middot; Leçon 2 : dérivation des fonctions composées &middot; Leçon 3 : primitives &middot; Leçon 4 : étude complète d'une fonction &middot; Leçon 5 : symétries, périodicité et branches infinies</div>
+  </div>
+</header>
+
+<div class="bandeau bleu" style="margin-top:0">L'ESSENTIEL</div>
+<div class="cols">
+
+<!-- ================= LECON 1 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 1&nbsp;: Dérivabilité, singularités, dérivées successives</h2>
+<p>Soit <i>f</i> définie sur un intervalle contenant <i>a</i> : <i>f</i> est <b>dérivable en <i>a</i></b> lorsque le taux d'accroissement a une limite <b>finie</b> quand <span class="pt"><i>x</i>&#8239;<span class="ar">&#8594;</span>&#8239;<i>a</i></span> ; cette limite est le <b>nombre dérivé</b> <i>f</i>&#8242;(<i>a</i>).</p></div>
+<div class="form">
+  <span class="t">NOMBRE DERIVE ET TANGENTE&nbsp;: LIMITE FINIE EXIGEE</span>
+  <div class="c m"><i>f</i>&#8242;(<i>a</i>)&#8239;=&#8239;<span class="pt">lim<sub><i>x</i><span class="ar">&#8594;</span><i>a</i></sub>&#8239;<span class="f"><span><i>f</i>(<i>x</i>)&#8239;&#8722;&#8239;<i>f</i>(<i>a</i>)</span><span><i>x</i>&#8239;&#8722;&#8239;<i>a</i></span></span></span>&#8239;=&#8239;<span class="pt">lim<sub><i>h</i><span class="ar">&#8594;</span>0</sub>&#8239;<span class="f"><span><i>f</i>(<i>a</i>&#8239;+&#8239;<i>h</i>)&#8239;&#8722;&#8239;<i>f</i>(<i>a</i>)</span><span><i>h</i></span></span></span></div>
+  <div class="c m">tangente en <span class="pt">A(<i>a</i>&#8239;;&#8239;<i>f</i>(<i>a</i>))</span> : &nbsp;<i>y</i>&#8239;=&#8239;<i>f</i>&#8242;(<i>a</i>)&#8239;(<i>x</i>&#8239;&#8722;&#8239;<i>a</i>)&#8239;+&#8239;<i>f</i>(<i>a</i>)</div>
+</div>
+<p><b>Dérivable en <i>a</i> <span class="ar">&#8658;</span> continue en <i>a</i></b> ; réciproque <b>fausse</b>. <b>Approximation affine</b> (<i>h</i> voisin de 0) : <span class="pt"><i>f</i>(<i>a</i>&#8239;+&#8239;<i>h</i>)&#8239;&#8776;&#8239;<i>f</i>(<i>a</i>)&#8239;+&#8239;<i>h</i>&#8239;<i>f</i>&#8242;(<i>a</i>)</span>.</p>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Dérivées à droite et à gauche&nbsp;: singularités</h3>
+<p><span class="pt"><i>f</i>&#8242;<sub><i>d</i></sub>(<i>a</i>)</span> est la limite <b>finie</b> du taux quand <span class="pt"><i>x</i>&#8239;<span class="ar">&#8594;</span>&#8239;<i>a</i><sup>+</sup></span>, <span class="pt"><i>f</i>&#8242;<sub><i>g</i></sub>(<i>a</i>)</span> celle quand <span class="pt"><i>x</i>&#8239;<span class="ar">&#8594;</span>&#8239;<i>a</i><sup>&#8722;</sup></span>. <i>f</i> est dérivable en <i>a</i> <b><span class="ar">&#8660;</span></b> les deux existent et sont <b>égaux</b>.</p>
+<ul>
+<li><b>Point anguleux</b> : les deux existent mais <b>diffèrent</b> ; deux <b>demi-tangentes</b>, de coefficients directeurs <span class="pt"><i>f</i>&#8242;<sub><i>d</i></sub>(<i>a</i>)</span> et <span class="pt"><i>f</i>&#8242;<sub><i>g</i></sub>(<i>a</i>)</span>.</li>
+<li><b>Tangente verticale</b> : le taux tend vers &#177;&#8734; ; tangente d'équation <i>x</i>&#8239;=&#8239;<i>a</i>, et <i>f</i> <b>n'est pas dérivable</b> en <i>a</i>.</li>
+</ul>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Lectures du nombre dérivé, dérivées successives</h3>
+<p><i>f</i>&#8242;(<i>a</i>) est la <b>vitesse de variation instantanée</b> en <i>a</i> : coefficient directeur de la <b>tangente</b> ; <b>vitesse</b> <i>x</i>&#8242;(<i>t</i>) et <b>accélération</b> <i>x</i>&#8243;(<i>t</i>) en physique ; <b>coût marginal</b> <i>C</i>&#8242;(<i>x</i>) en économie, coût approché du <span class="pt">(<i>x</i>&#8239;+&#8239;1)</span>-ième objet.</p>
+<p>Si <i>f</i>&#8242; est dérivable sur <i>I</i>, sa dérivée est la <b>dérivée seconde</b> <i>f</i>&#8243; ; de même <i>f</i>&#8244;, <i>f</i><sup>(4)</sup>… Notation de Leibniz : <span class="pt"><i>f</i>&#8242;&#8239;=&#8239;<span class="f"><span><span class="op">d</span><i>f</i></span><span><span class="op">d</span><i>x</i></span></span></span>, <span class="pt"><i>f</i>&#8243;&#8239;=&#8239;<span class="f"><span><span class="op">d</span><sup>2</sup><i>f</i></span><span><span class="op">d</span><i>x</i><sup>2</sup></span></span></span>.</p>
+<div class="form">
+  <span class="t">ACCROISSEMENTS FINIS&nbsp;: <i>f</i> DERIVABLE SUR [<i>a</i>&#8239;;&#8239;<i>b</i>], <i>a</i>&#8239;&lt;&#8239;<i>b</i></span>
+  <div class="c m">si <span class="pt"><i>m</i>&#8239;&#8804;&#8239;<i>f</i>&#8242;(<i>x</i>)&#8239;&#8804;&#8239;<i>M</i></span> sur [<i>a</i>&#8239;;&#8239;<i>b</i>], alors</div>
+  <div class="c m"><i>m</i>&#8239;(<i>b</i>&#8239;&#8722;&#8239;<i>a</i>)&#8239;&#8804;&#8239;<i>f</i>(<i>b</i>)&#8239;&#8722;&#8239;<i>f</i>(<i>a</i>)&#8239;&#8804;&#8239;<i>M</i>&#8239;(<i>b</i>&#8239;&#8722;&#8239;<i>a</i>)</div>
+  <div class="c m">si <span class="pt">|<i>f</i>&#8242;(<i>x</i>)|&#8239;&#8804;&#8239;<i>M</i></span> sur [<i>a</i>&#8239;;&#8239;<i>b</i>] : &nbsp;<span class="pt">|<i>f</i>(<i>b</i>)&#8239;&#8722;&#8239;<i>f</i>(<i>a</i>)|&#8239;&#8804;&#8239;<i>M</i>&#8239;|<i>b</i>&#8239;&#8722;&#8239;<i>a</i>|</span></div>
+</div>
+</div>
+
+<!-- ================= LECON 2 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 2&nbsp;: Dérivation des fonctions composées</h2>
+<p><i>u</i> dérivable sur <i>I</i>, <i>v</i> dérivable sur un intervalle contenant <i>u</i>(<i>I</i>) : <span class="pt"><i>v</i>&#8728;<i>u</i>&#8239;:&#8239;<i>x</i>&#8239;<span class="ar">&#8614;</span>&#8239;<i>v</i>(<i>u</i>(<i>x</i>))</span> est dérivable sur <i>I</i>. On dérive l'<b>extérieure</b>, l'intérieur restant <b>intact</b>, puis on <b>multiplie par la dérivée de l'intérieur</b>.</p></div>
+<div class="form">
+  <span class="t">REGLE DE LA CHAINE ET FORMULES PRATIQUES&nbsp;: LA OU ELLES ONT UN SENS</span>
+  <div class="c m">(<i>v</i>&#8728;<i>u</i>)&#8242;(<i>x</i>)&#8239;=&#8239;<i>u</i>&#8242;(<i>x</i>)&#8239;&#215;&#8239;<i>v</i>&#8242;(<i>u</i>(<i>x</i>))</div>
+  <div class="c m">(<i>u</i><sup><i>n</i></sup>)&#8242;&#8239;=&#8239;<i>n</i>&#8239;<i>u</i>&#8242;&#8239;<i>u</i><sup><i>n</i>&#8722;1</sup>&nbsp;(<i>n</i>&#8239;&#8712;&#8239;&#8484;) &nbsp;&nbsp; (&#8730;<span class="rad"><i>u</i></span>)&#8242;&#8239;=&#8239;<span class="f"><span><i>u</i>&#8242;</span><span>2&#8730;<span class="rad"><i>u</i></span></span></span>&nbsp;(<i>u</i>&#8239;&gt;&#8239;0)</div>
+  <div class="c m">(<span class="pt"><span class="f"><span>1</span><span><i>u</i></span></span></span>)&#8242;&#8239;=&#8239;&#8722;<span class="f"><span><i>u</i>&#8242;</span><span><i>u</i><sup>2</sup></span></span>&nbsp;(<i>u</i>&#8239;&#8800;&#8239;0) &nbsp;&nbsp; (<i>f</i>(<i>ax</i>&#8239;+&#8239;<i>b</i>))&#8242;&#8239;=&#8239;<i>a</i>&#8239;<i>f</i>&#8242;(<i>ax</i>&#8239;+&#8239;<i>b</i>)</div>
+</div>
+<p>Sur tout intervalle où <span class="pt"><span class="op">cos</span>&#8239;<i>x</i>&#8239;&#8800;&#8239;0</span> : <span class="pt">(<span class="op">tan</span>&#8239;<i>x</i>)&#8242;&#8239;=&#8239;<span class="f"><span>1</span><span><span class="op">cos</span><sup>2</sup><i>x</i></span></span>&#8239;=&#8239;1&#8239;+&#8239;<span class="op">tan</span><sup>2</sup><i>x</i></span>, <b>strictement positive</b> : la <b>fonction tangente</b> est croissante sur chacun de ces intervalles.</p>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Dérivée d'une bijection réciproque</h3>
+<p><i>f</i> dérivable et <b>strictement monotone</b> sur <i>I</i>, avec <i>f</i>&#8242; qui <b>ne s'annule pas</b> : <i>f</i> réalise une bijection de <i>I</i> sur <i>f</i>(<i>I</i>) et <i>f</i><sup>&#8722;1</sup> est dérivable sur <i>f</i>(<i>I</i>).</p>
+<div class="form">
+  <span class="t">FORMULE ADMISE&nbsp;: POUR <i>b</i>&#8239;=&#8239;<i>f</i>(<i>a</i>)</span>
+  <div class="c m">(<i>f</i><sup>&#8722;1</sup>)&#8242;(<i>b</i>)&#8239;=&#8239;<span class="f"><span>1</span><span><i>f</i>&#8242;(<i>a</i>)</span></span>&#8239;=&#8239;<span class="f"><span>1</span><span><i>f</i>&#8242;(<i>f</i><sup>&#8722;1</sup>(<i>b</i>))</span></span></div>
+</div>
+<p>Trouver d'abord le <b><i>a</i> tel que <i>f</i>(<i>a</i>)&#8239;=&#8239;<i>b</i></b> : on ne remplace pas <i>b</i> dans <i>f</i>&#8242;.</p>
+</div>
+
+<!-- ================= LECON 3 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 3&nbsp;: Primitives</h2>
+<p>Une <b>primitive de <i>f</i> sur un intervalle <i>I</i></b> est une fonction <i>F</i> <b>dérivable sur <i>I</i></b> telle que <span class="pt"><i>F</i>&#8242;(<i>x</i>)&#8239;=&#8239;<i>f</i>(<i>x</i>)</span> sur <i>I</i>. <b>Existence (admise)</b> : toute fonction <b>continue</b> sur <i>I</i> y admet des primitives. Si <i>F</i> en est une, ce sont <b>exactement</b> les <span class="pt"><i>x</i>&#8239;<span class="ar">&#8614;</span>&#8239;<i>F</i>(<i>x</i>)&#8239;+&#8239;<i>C</i></span>, <i>C</i>&#8239;&#8712;&#8239;&#8477; ; une <b>seule</b> vérifie <span class="pt"><i>F</i>(<i>x</i><sub>0</sub>)&#8239;=&#8239;<i>y</i><sub>0</sub></span>. <b>Linéarité</b> : <span class="pt">&#945;<i>F</i>&#8239;+&#8239;&#946;<i>G</i></span> est une primitive de <span class="pt">&#945;<i>f</i>&#8239;+&#8239;&#946;<i>g</i></span> sur <i>I</i>.</p></div>
+<table>
+<tr><th><span class="m"><i>f</i>(<i>x</i>)</span></th><th>une <span class="m"><i>F</i>(<i>x</i>)</span></th><th><span class="m"><i>f</i>(<i>x</i>)</span></th><th>une <span class="m"><i>F</i>(<i>x</i>)</span></th></tr>
+<tr><td class="m"><i>a</i> (constante)</td><td class="m"><i>ax</i></td><td class="m"><span class="op">cos</span>&#8239;<i>x</i></td><td class="m"><span class="op">sin</span>&#8239;<i>x</i></td></tr>
+<tr><td class="m"><i>x</i><sup><i>n</i></sup>&nbsp;(<i>n</i>&#8239;&#8712;&#8239;&#8469;)</td><td class="m"><span class="f"><span><i>x</i><sup><i>n</i>+1</sup></span><span><i>n</i>&#8239;+&#8239;1</span></span></td><td class="m"><span class="op">sin</span>&#8239;<i>x</i></td><td class="m">&#8722;<span class="op">cos</span>&#8239;<i>x</i></td></tr>
+<tr><td class="m"><span class="f"><span>1</span><span><i>x</i><sup>2</sup></span></span></td><td class="m">&#8722;<span class="f"><span>1</span><span><i>x</i></span></span></td><td class="m"><span class="f"><span>1</span><span><span class="op">cos</span><sup>2</sup><i>x</i></span></span>&#8239;=&#8239;1&#8239;+&#8239;<span class="op">tan</span><sup>2</sup><i>x</i></td><td class="m"><span class="op">tan</span>&#8239;<i>x</i></td></tr>
+<tr><td class="m"><span class="f"><span>1</span><span><i>x</i><sup><i>n</i></sup></span></span>&nbsp;(<i>n</i>&#8239;&#8805;&#8239;2)</td><td class="m">&#8722;<span class="f"><span>1</span><span>(<i>n</i>&#8239;&#8722;&#8239;1)&#8239;<i>x</i><sup><i>n</i>&#8722;1</sup></span></span></td><td class="m"><span class="f"><span>1</span><span>&#8730;<span class="rad"><i>x</i></span></span></span></td><td class="m">2&#8730;<span class="rad"><i>x</i></span></td></tr>
+<tr><td class="m">&#8730;<span class="rad"><i>x</i></span></td><td class="m"><span class="f"><span>2</span><span>3</span></span>&#8239;<i>x</i>&#8730;<span class="rad"><i>x</i></span></td><td colspan="2">Sur un intervalle où l'expression a un sens ; <b>toutes</b> les primitives s'obtiennent en ajoutant <i>C</i>.</td></tr>
+</table>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Primitives des formes composées</h3>
+<table>
+<tr><th><span class="m"><i>f</i>(<i>x</i>)</span></th><th>une <span class="m"><i>F</i>(<i>x</i>)</span></th><th><span class="m"><i>f</i>(<i>x</i>)</span></th><th>une <span class="m"><i>F</i>(<i>x</i>)</span></th></tr>
+<tr><td class="m"><i>u</i>&#8242;&#8239;<i>u</i><sup><i>n</i></sup>&nbsp;(<i>n</i>&#8239;&#8800;&#8239;&#8722;1)</td><td class="m"><span class="f"><span><i>u</i><sup><i>n</i>+1</sup></span><span><i>n</i>&#8239;+&#8239;1</span></span></td><td class="m"><i>u</i>&#8242;&#8239;<span class="op">cos</span>&#8239;<i>u</i></td><td class="m"><span class="op">sin</span>&#8239;<i>u</i></td></tr>
+<tr><td class="m"><span class="f"><span><i>u</i>&#8242;</span><span>&#8730;<span class="rad"><i>u</i></span></span></span></td><td class="m">2&#8730;<span class="rad"><i>u</i></span></td><td class="m"><i>u</i>&#8242;&#8239;<span class="op">sin</span>&#8239;<i>u</i></td><td class="m">&#8722;<span class="op">cos</span>&#8239;<i>u</i></td></tr>
+<tr><td class="m"><span class="f"><span><i>u</i>&#8242;</span><span><i>u</i><sup><i>n</i></sup></span></span>&nbsp;(<i>n</i>&#8239;&#8805;&#8239;2)</td><td class="m">&#8722;<span class="f"><span>1</span><span>(<i>n</i>&#8239;&#8722;&#8239;1)&#8239;<i>u</i><sup><i>n</i>&#8722;1</sup></span></span></td><td class="m"><i>u</i>&#8242;&#8239;&#215;&#8239;<i>g</i>(<i>u</i>)</td><td class="m"><i>G</i>(<i>u</i>)</td></tr>
+<tr><td class="m"><i>g</i>(<i>ax</i>&#8239;+&#8239;<i>b</i>)&nbsp;(<i>a</i>&#8239;&#8800;&#8239;0)</td><td class="m"><span class="f"><span>1</span><span><i>a</i></span></span>&#8239;<i>G</i>(<i>ax</i>&#8239;+&#8239;<i>b</i>)</td><td colspan="2"><i>u</i> dérivable, <i>G</i> primitive de <i>g</i>. Ce tableau ne vaut que si <i>u</i>&#8242; <b>figure</b> dans <i>f</i>, au besoin à une constante près. Toujours <b>+&#8239;<i>C</i></b> et <b>vérification en dérivant</b>.</td></tr>
+</table>
+</div>
+
+<!-- ================= LECON 4 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 4&nbsp;: Etude complète d'une fonction</h2>
+<p><b>1.</b> <b>Ensemble de définition</b> <i>D<sub>f</sub></i> et continuité ; <b>parité, périodicité, symétries</b> (Leçon 5) pour <b>réduire le domaine d'étude</b>. &nbsp;<b>2.</b> <b>Limites</b> aux bornes de <i>D<sub>f</sub></i> ; <b>asymptotes</b> et <b>branches infinies</b>. &nbsp;<b>3.</b> <b>Dérivée</b> <i>f</i>&#8242;, son <b>signe</b>, <b>tableau de variations</b> et extremums. &nbsp;<b>4.</b> <b>Points particuliers</b> : intersections avec les axes, tangentes remarquables, <b>position</b> par rapport à une asymptote. &nbsp;<b>5.</b> <b>Tracé</b> : asymptotes, points et tangentes remarquables, puis la courbe. Si le signe de <i>f</i>&#8242; n'est pas immédiat, introduire une <b>fonction auxiliaire</b>, à <b>signaler explicitement</b> et à étudier complètement.</p></div>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Signe de <span class="m"><i>f</i>&#8242;</span>, variations et extremums</h3>
+<div class="form">
+  <span class="t">SUR UN INTERVALLE <i>I</i>&nbsp;: <i>f</i> DERIVABLE SUR <i>I</i></span>
+  <div class="c m"><i>f</i>&#8242;&#8239;&gt;&#8239;0 <span class="ar">&#8658;</span> strictement croissante &nbsp;&middot;&nbsp; <i>f</i>&#8242;&#8239;&lt;&#8239;0 <span class="ar">&#8658;</span> strictement décroissante</div>
+  <div class="c m"><i>f</i>&#8242;&#8239;=&#8239;0 sur <i>I</i> tout entier <span class="ar">&#8658;</span> <i>f</i> constante sur <i>I</i></div>
+</div>
+<p>Conclusions maintenues si <i>f</i>&#8242; s'annule en des <b>points isolés</b>. <b>Extremum local</b> : <i>f</i>&#8242; s'annule en <i>x</i><sub>0</sub> <b>en changeant de signe</b> <span class="ar">&#8658;</span> extremum, <b>maximum</b> de + à &#8722;, <b>minimum</b> de &#8722; à + ; tangente <b>horizontale</b>.</p>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Asymptotes et position de la courbe</h3>
+<div class="form">
+  <span class="t">ASYMPTOTES A LA COURBE (<i>C<sub>f</sub></i>)</span>
+  <div class="c m"><span class="pt">lim<sub><i>x</i><span class="ar">&#8594;</span><i>a</i></sub>&#8239;<i>f</i>(<i>x</i>)&#8239;=&#8239;&#177;&#8734;</span> <span class="ar">&#8658;</span> <b>verticale</b> <i>x</i>&#8239;=&#8239;<i>a</i></div>
+  <div class="c m"><span class="pt">lim<sub><i>x</i><span class="ar">&#8594;</span>&#177;&#8734;</sub>&#8239;<i>f</i>(<i>x</i>)&#8239;=&#8239;&#8467;</span> (réel) <span class="ar">&#8658;</span> <b>horizontale</b> <i>y</i>&#8239;=&#8239;&#8467;</div>
+  <div class="c m"><span class="pt">lim<sub><i>x</i><span class="ar">&#8594;</span>&#177;&#8734;</sub>&#8239;[<i>f</i>(<i>x</i>)&#8239;&#8722;&#8239;(<i>ax</i>&#8239;+&#8239;<i>b</i>)]&#8239;=&#8239;0</span>, <i>a</i>&#8239;&#8800;&#8239;0 <span class="ar">&#8658;</span> <b>oblique</b> <i>y</i>&#8239;=&#8239;<i>ax</i>&#8239;+&#8239;<i>b</i></div>
+</div>
+<p><b>Position</b> : elle se lit sur le signe de <span class="pt"><i>d</i>(<i>x</i>)&#8239;=&#8239;<i>f</i>(<i>x</i>)&#8239;&#8722;&#8239;(<i>ax</i>&#8239;+&#8239;<i>b</i>)</span> : positif, la courbe est <b>au-dessus</b> ; négatif, <b>au-dessous</b> ; nul, elle <b>coupe</b> l'asymptote.</p>
+<p>Pour une fraction rationnelle, écrire <span class="pt"><i>f</i>(<i>x</i>)&#8239;=&#8239;<i>ax</i>&#8239;+&#8239;<i>b</i>&#8239;+&#8239;<i>r</i>(<i>x</i>)</span> avec <span class="pt"><i>r</i>(<i>x</i>)&#8239;<span class="ar">&#8594;</span>&#8239;0</span> : le signe de <i>r</i>(<i>x</i>) donne la position.</p>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Nombre de solutions de <span class="m"><i>f</i>(<i>x</i>)&#8239;=&#8239;&#955;</span></h3>
+<p>Une fonction <b>continue et strictement monotone</b> sur un intervalle <i>I</i> réalise une <b>bijection</b> de <i>I</i> sur l'intervalle image <i>f</i>(<i>I</i>) : l'équation <span class="pt"><i>f</i>(<i>x</i>)&#8239;=&#8239;&#955;</span> admet <b>une solution et une seule</b> dans <i>I</i> si <span class="pt">&#955;&#8239;&#8712;&#8239;<i>f</i>(<i>I</i>)</span>, <b>aucune</b> sinon.</p>
+<p><b>En pratique</b> : découper <i>D<sub>f</sub></i> en intervalles de stricte monotonie (les colonnes du tableau), lire l'<b>intervalle image</b> de chacun, compter ceux qui contiennent &#955; ; <span class="pt"><i>f</i>(<i>x</i>)&#8239;&#8805;&#8239;&#955;</span> se lit de même. <b>Localiser</b> : changement de signe de <span class="pt"><i>f</i>(<i>x</i>)&#8239;&#8722;&#8239;&#955;</span> entre deux entiers voisins.</p>
+</div>
+
+<!-- ================= LECON 5 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 5&nbsp;: Symétries, périodicité et branches infinies</h2>
+<p><b>Parité.</b> <i>D<sub>f</sub></i> doit d'abord être <b>symétrique par rapport à 0</b> : <span class="pt"><i>x</i>&#8239;&#8712;&#8239;<i>D<sub>f</sub></i></span> entraîne <span class="pt">&#8722;<i>x</i>&#8239;&#8712;&#8239;<i>D<sub>f</sub></i></span>.</p></div>
+<div class="form">
+  <span class="t">PARITE&nbsp;: POUR TOUT <i>x</i> DE <i>D<sub>f</sub></i></span>
+  <div class="c m"><i>f</i>(&#8722;<i>x</i>)&#8239;=&#8239;<i>f</i>(<i>x</i>) : <i>f</i> <b>paire</b>, symétrie d'axe (O<i>y</i>)</div>
+  <div class="c m"><i>f</i>(&#8722;<i>x</i>)&#8239;=&#8239;&#8722;<i>f</i>(<i>x</i>) : <i>f</i> <b>impaire</b>, symétrie de centre O</div>
+</div>
+<p>On <b>réduit l'étude</b> à <span class="pt">[0&#8239;;&#8239;+&#8734;[&#8239;&#8745;&#8239;<i>D<sub>f</sub></i></span>, puis on complète par la symétrie.</p>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Périodicité</h3>
+<p><i>f</i> est <b>périodique de période <i>T</i></b> (<i>T</i>&#8239;&gt;&#8239;0) lorsque, pour tout <i>x</i> de <i>D<sub>f</sub></i>, <span class="pt"><i>x</i>&#8239;+&#8239;<i>T</i>&#8239;&#8712;&#8239;<i>D<sub>f</sub></i></span> et <span class="pt"><i>f</i>(<i>x</i>&#8239;+&#8239;<i>T</i>)&#8239;=&#8239;<i>f</i>(<i>x</i>)</span> : la courbe est invariante par la <b>translation de vecteur <i>T</i>&#8239;<span style="border-top:.6pt solid;padding-top:.5pt"><i>i</i></span></b>. La <b>période</b> est le plus petit réel strictement positif convenable ; on étudie <i>f</i> sur un intervalle de largeur <i>T</i> : [0&#8239;;&#8239;<i>T</i>], ou <span class="pt">[&#8722;<span class="f"><span><i>T</i></span><span>2</span></span>&#8239;;&#8239;<span class="f"><span><i>T</i></span><span>2</span></span>]</span> si <i>f</i> est de plus paire ou impaire.</p>
+<p><b>Périodes usuelles</b> : <span class="op">sin</span> et <span class="op">cos</span>, 2&#960; ; <span class="op">tan</span>, &#960; ; <span class="pt"><span class="op">sin</span>(<i>ax</i>&#8239;+&#8239;<i>b</i>)</span> et <span class="pt"><span class="op">cos</span>(<i>ax</i>&#8239;+&#8239;<i>b</i>)</span>, <i>a</i>&#8239;&#8800;&#8239;0 : <span class="pt"><i>T</i>&#8239;=&#8239;<span class="f"><span>2&#960;</span><span>|<i>a</i>|</span></span></span>. Pour une <b>somme</b> : <b>ppcm</b> des périodes.</p>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Axe et centre de symétrie</h3>
+<p><i>D<sub>f</sub></i> doit être <b>symétrique par rapport à <i>a</i></b> : <span class="pt"><i>x</i>&#8239;&#8712;&#8239;<i>D<sub>f</sub></i></span> entraîne <span class="pt">2<i>a</i>&#8239;&#8722;&#8239;<i>x</i>&#8239;&#8712;&#8239;<i>D<sub>f</sub></i></span>.</p>
+<div class="form">
+  <span class="t">CRITERES&nbsp;: POUR TOUT <i>x</i> DE <i>D<sub>f</sub></i></span>
+  <div class="c m">droite <i>x</i>&#8239;=&#8239;<i>a</i> <b>axe</b> de (<i>C<sub>f</sub></i>) <span class="ar">&#8660;</span> <i>f</i>(2<i>a</i>&#8239;&#8722;&#8239;<i>x</i>)&#8239;=&#8239;<i>f</i>(<i>x</i>)</div>
+  <div class="c m">point A(<i>a</i>&#8239;;&#8239;<i>b</i>) <b>centre</b> de (<i>C<sub>f</sub></i>) <span class="ar">&#8660;</span> <i>f</i>(2<i>a</i>&#8239;&#8722;&#8239;<i>x</i>)&#8239;+&#8239;<i>f</i>(<i>x</i>)&#8239;=&#8239;2<i>b</i></div>
+</div>
+<p>L'étude se réduit à <span class="pt">[<i>a</i>&#8239;;&#8239;+&#8734;[&#8239;&#8745;&#8239;<i>D<sub>f</sub></i></span> ; <i>a</i>&#8239;=&#8239;0 et <span class="pt"><i>a</i>&#8239;=&#8239;<i>b</i>&#8239;=&#8239;0</span> redonnent parité et imparité.</p>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Concavité, point d'inflexion, branches infinies</h3>
+<p><i>f</i> <b>deux fois dérivable</b> sur <i>I</i> : <span class="pt"><i>f</i>&#8243;&#8239;&gt;&#8239;0</span> donne une courbe <b>convexe</b> (concavité vers le haut, <b>au-dessus</b> de ses tangentes), <span class="pt"><i>f</i>&#8243;&#8239;&lt;&#8239;0</span> une courbe <b>concave</b> (<b>au-dessous</b>). <b>Point d'inflexion</b> : la tangente y <b>traverse</b> la courbe, qui <b>change de concavité</b> ; il y en a un en <i>x</i><sub>0</sub> si <i>f</i>&#8243; s'y annule <b>en changeant de signe</b>.</p>
+<p><b>Branches infinies en +&#8734;</b> (même méthode en &#8722;&#8734;). Si <span class="pt">lim<sub><i>x</i><span class="ar">&#8594;</span>+&#8734;</sub>&#8239;<i>f</i>(<i>x</i>)</span> est <b>finie</b>, c'est une <b>asymptote horizontale</b>. Si elle vaut &#177;&#8734;, on étudie <span class="pt">lim<sub><i>x</i><span class="ar">&#8594;</span>+&#8734;</sub>&#8239;<span class="f"><span><i>f</i>(<i>x</i>)</span><span><i>x</i></span></span></span> :</p>
+<ul>
+<li>&#177;&#8734; : <b>branche parabolique de direction (O<i>y</i>)</b> (exemple <i>x</i><sup>2</sup>) ;</li>
+<li>0 : <b>branche parabolique de direction (O<i>x</i>)</b> (exemple &#8730;<span class="rad"><i>x</i></span>) ;</li>
+<li><i>a</i> réel non nul : étudier <span class="pt">lim<sub><i>x</i><span class="ar">&#8594;</span>+&#8734;</sub>&#8239;[<i>f</i>(<i>x</i>)&#8239;&#8722;&#8239;<i>ax</i>]</span>. Limite <b>finie</b> <i>b</i> : <b>asymptote oblique</b> <i>y</i>&#8239;=&#8239;<i>ax</i>&#8239;+&#8239;<i>b</i> ; limite <b>infinie</b> : <b>branche parabolique de direction <i>y</i>&#8239;=&#8239;<i>ax</i></b>. En cas d'asymptote, étudier ensuite la <b>position</b> de la courbe (Leçon 4).</li>
+</ul>
+</div>
+
+</div>
+
+<div class="bandeau vert">PIEGES ET ERREURS FREQUENTES</div>
+<div class="cols">
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> <span class="pt">((2<i>x</i>&#8239;&#8722;&#8239;1)<sup>3</sup>)&#8242;&#8239;=&#8239;3(2<i>x</i>&#8239;&#8722;&#8239;1)<sup>2</sup></span> &nbsp;&middot;&nbsp; <span class="pt">(&#8730;<span class="rad"><i>x</i><sup>2</sup>&#8239;+&#8239;1</span>)&#8242;&#8239;=&#8239;<span class="f"><span>1</span><span>2&#8730;<span class="rad"><i>x</i><sup>2</sup>&#8239;+&#8239;1</span></span></span></span></div><div class="cor"><span class="v">&#10003;</span> Le facteur <i>u</i>&#8242; ne s'oublie <b>jamais</b> : <span class="pt">6(2<i>x</i>&#8239;&#8722;&#8239;1)<sup>2</sup></span>, et <span class="pt"><span class="f"><span>2<i>x</i></span><span>2&#8730;<span class="rad"><i>x</i><sup>2</sup>&#8239;+&#8239;1</span></span></span>&#8239;=&#8239;<span class="f"><span><i>x</i></span><span>&#8730;<span class="rad"><i>x</i><sup>2</sup>&#8239;+&#8239;1</span></span></span></span>. Dans <span class="pt"><i>n</i>&#8239;<i>u</i>&#8242;&#8239;<i>u</i><sup><i>n</i>&#8722;1</sup></span>, c'est <b><i>u</i> qui reste sous l'exposant</b>. Et <span class="op">cos</span><sup>3</sup><i>x</i> se lit <span class="pt">(<span class="op">cos</span>&#8239;<i>x</i>)<sup>3</sup></span>, pas <span class="op">cos</span>(<i>x</i><sup>3</sup>).</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> La primitive de 3<i>x</i><sup>2</sup> est <i>x</i><sup>3</sup> &nbsp;&middot;&nbsp; une primitive de <span class="pt">(<i>x</i><sup>2</sup>&#8239;+&#8239;1)<sup>3</sup></span> est <span class="pt"><span class="f"><span>(<i>x</i><sup>2</sup>&#8239;+&#8239;1)<sup>4</sup></span><span>4</span></span></span> &nbsp;&middot;&nbsp; une primitive de <span class="op">cos</span>(2<i>x</i>) est <span class="op">sin</span>(2<i>x</i>)</div><div class="cor"><span class="v">&#10003;</span> Il y a une <b>infinité</b> de primitives : les <span class="pt"><i>x</i><sup>3</sup>&#8239;+&#8239;<i>C</i></span>. Le tableau des formes composées exige que <i>u</i>&#8242; <b>figure</b> dans l'expression : ici <span class="pt"><i>u</i>&#8242;&#8239;=&#8239;2<i>x</i></span> est absent. Et <span class="pt"><i>g</i>(<i>ax</i>&#8239;+&#8239;<i>b</i>)</span> donne <span class="pt"><span class="f"><span>1</span><span><i>a</i></span></span>&#8239;<i>G</i>(<i>ax</i>&#8239;+&#8239;<i>b</i>)</span>, donc <span class="pt"><span class="f"><span><span class="op">sin</span>(2<i>x</i>)</span><span>2</span></span></span>. <b>Vérifier en dérivant.</b></div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> <i>f</i> est continue en <i>a</i>, donc <i>f</i> est dérivable en <i>a</i></div><div class="cor"><span class="v">&#10003;</span> L'implication ne va que dans un sens : <b>dérivable <span class="ar">&#8658;</span> continue</b>, jamais l'inverse. <span class="pt"><i>x</i>&#8239;<span class="ar">&#8614;</span>&#8239;|<i>x</i>|</span> est continue en 0 avec un <b>point anguleux</b>, <span class="pt"><i>x</i>&#8239;<span class="ar">&#8614;</span>&#8239;&#8730;<span class="rad"><i>x</i></span></span> y a une <b>tangente verticale</b>. Seul le <b>taux d'accroissement</b> décide.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> <span class="pt"><i>f</i>&#8242;(<i>a</i>)&#8239;=&#8239;0</span> donc extremum en <i>a</i> &nbsp;&middot;&nbsp; <span class="pt"><i>f</i>&#8243;(<i>x</i><sub>0</sub>)&#8239;=&#8239;0</span> donc point d'inflexion en <i>x</i><sub>0</sub></div><div class="cor"><span class="v">&#10003;</span> Il faut un <b>changement de signe</b> dans les deux cas. Pour <i>x</i><sup>3</sup>, <span class="pt"><i>f</i>&#8242;(0)&#8239;=&#8239;0</span> mais 3<i>x</i><sup>2</sup> reste positive : <b>aucun extremum</b>. Pour <i>x</i><sup>4</sup>, <span class="pt"><i>f</i>&#8243;(<i>x</i>)&#8239;=&#8239;12<i>x</i><sup>2</sup></span> s'annule en 0 sans changer de signe : <b>aucune inflexion</b>.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> <span class="pt"><i>f</i>(&#8722;<i>x</i>)&#8239;=&#8239;&#8722;<i>f</i>(<i>x</i>)</span>, donc symétrie par rapport à l'axe (O<i>y</i>)</div><div class="cor"><span class="v">&#10003;</span> <i>f</i> <b>impaire</b> donne la symétrie de <b>centre O</b> ; l'axe (O<i>y</i>) correspond à <i>f</i> <b>paire</b>, <span class="pt"><i>f</i>(&#8722;<i>x</i>)&#8239;=&#8239;<i>f</i>(<i>x</i>)</span>. Le test n'a de sens que si <i>D<sub>f</sub></i> est <b>symétrique par rapport à 0</b>.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> <span class="pt">lim<sub><i>x</i><span class="ar">&#8594;</span>+&#8734;</sub>&#8239;<i>f</i>(<i>x</i>)&#8239;=&#8239;+&#8734;</span> donc la courbe a une asymptote &nbsp;&middot;&nbsp; <i>f</i> décroissante sur ]0&#8239;;&#8239;1[ et sur ]1&#8239;;&#8239;2[ donc sur ]0&#8239;;&#8239;2[</div><div class="cor"><span class="v">&#10003;</span> Sans l'étude de <span class="pt"><span class="f"><span><i>f</i>(<i>x</i>)</span><span><i>x</i></span></span></span> on ne conclut rien : ce peut être une <b>branche parabolique</b> (&#8730;<span class="rad"><i>x</i></span>, <i>x</i><sup>2</sup>). Et le lien signe-variation ne vaut que <b>sur un intervalle</b> : on ne relie <b>jamais</b> deux morceaux séparés par une <b>double barre</b>.</div></div>
+
+</div>
+
+<div class="bandeau bleu">A SAVOIR PAR COEUR AVANT LE DEVOIR</div>
+<div class="cols">
+<ol class="recap">
+<li><span class="pt"><i>f</i>&#8242;(<i>a</i>)&#8239;=&#8239;lim<sub><i>x</i><span class="ar">&#8594;</span><i>a</i></sub>&#8239;<span class="f"><span><i>f</i>(<i>x</i>)&#8239;&#8722;&#8239;<i>f</i>(<i>a</i>)</span><span><i>x</i>&#8239;&#8722;&#8239;<i>a</i></span></span></span>, limite <b>finie</b> ; <b>tangente</b> <span class="pt"><i>y</i>&#8239;=&#8239;<i>f</i>&#8242;(<i>a</i>)(<i>x</i>&#8239;&#8722;&#8239;<i>a</i>)&#8239;+&#8239;<i>f</i>(<i>a</i>)</span> ; <span class="pt"><i>f</i>(<i>a</i>&#8239;+&#8239;<i>h</i>)&#8239;&#8776;&#8239;<i>f</i>(<i>a</i>)&#8239;+&#8239;<i>h</i>&#8239;<i>f</i>&#8242;(<i>a</i>)</span>. <b>Dérivable <span class="ar">&#8658;</span> continue</b>, jamais l'inverse. <b>Singularités</b> : dérivées à droite et à gauche <b>différentes</b> <span class="ar">&#8658;</span> <b>point anguleux</b> ; taux <span class="ar">&#8594;</span>&#8239;&#177;&#8734; <span class="ar">&#8658;</span> <b>tangente verticale</b> <i>x</i>&#8239;=&#8239;<i>a</i>.</li>
+<li><b>Accroissements finis</b> : <span class="pt"><i>m</i>&#8239;&#8804;&#8239;<i>f</i>&#8242;&#8239;&#8804;&#8239;<i>M</i></span> sur [<i>a</i>&#8239;;&#8239;<i>b</i>] <span class="ar">&#8658;</span> <span class="pt"><i>m</i>(<i>b</i>&#8239;&#8722;&#8239;<i>a</i>)&#8239;&#8804;&#8239;<i>f</i>(<i>b</i>)&#8239;&#8722;&#8239;<i>f</i>(<i>a</i>)&#8239;&#8804;&#8239;<i>M</i>(<i>b</i>&#8239;&#8722;&#8239;<i>a</i>)</span> ; <span class="pt">|<i>f</i>&#8242;|&#8239;&#8804;&#8239;<i>M</i></span> <span class="ar">&#8658;</span> <span class="pt">|<i>f</i>(<i>b</i>)&#8239;&#8722;&#8239;<i>f</i>(<i>a</i>)|&#8239;&#8804;&#8239;<i>M</i>|<i>b</i>&#8239;&#8722;&#8239;<i>a</i>|</span>.</li>
+<li><b>Composées</b> : <span class="pt">(<i>u</i><sup><i>n</i></sup>)&#8242;&#8239;=&#8239;<i>n</i>&#8239;<i>u</i>&#8242;&#8239;<i>u</i><sup><i>n</i>&#8722;1</sup></span>, <span class="pt">(&#8730;<span class="rad"><i>u</i></span>)&#8242;&#8239;=&#8239;<span class="f"><span><i>u</i>&#8242;</span><span>2&#8730;<span class="rad"><i>u</i></span></span></span></span>, <span class="pt">(<span class="f"><span>1</span><span><i>u</i></span></span>)&#8242;&#8239;=&#8239;&#8722;<span class="f"><span><i>u</i>&#8242;</span><span><i>u</i><sup>2</sup></span></span></span>, <span class="pt">(<i>f</i>(<i>ax</i>&#8239;+&#8239;<i>b</i>))&#8242;&#8239;=&#8239;<i>a</i>&#8239;<i>f</i>&#8242;(<i>ax</i>&#8239;+&#8239;<i>b</i>)</span>, <span class="pt">(<span class="op">tan</span>&#8239;<i>x</i>)&#8242;&#8239;=&#8239;1&#8239;+&#8239;<span class="op">tan</span><sup>2</sup><i>x</i></span>. <b>Toujours le facteur <i>u</i>&#8242;.</b> Réciproque : <span class="pt">(<i>f</i><sup>&#8722;1</sup>)&#8242;(<i>b</i>)&#8239;=&#8239;<span class="f"><span>1</span><span><i>f</i>&#8242;(<i>a</i>)</span></span></span>, <span class="pt"><i>b</i>&#8239;=&#8239;<i>f</i>(<i>a</i>)</span>.</li>
+<li><b>Primitives</b> sur un <b>intervalle</b> : <span class="pt"><i>F</i>&#8242;&#8239;=&#8239;<i>f</i></span> ; toutes valent <span class="pt"><i>F</i>&#8239;+&#8239;<i>C</i></span>, une seule vérifie <span class="pt"><i>F</i>(<i>x</i><sub>0</sub>)&#8239;=&#8239;<i>y</i><sub>0</sub></span>. Les deux tableaux se retiennent comme le tableau des dérivées lu à l'envers : <span class="pt"><i>u</i>&#8242;<i>u</i><sup><i>n</i></sup>&#8239;<span class="ar">&#8594;</span>&#8239;<span class="f"><span><i>u</i><sup><i>n</i>+1</sup></span><span><i>n</i>&#8239;+&#8239;1</span></span></span> (<i>n</i>&#8239;&#8800;&#8239;&#8722;1), <span class="pt"><span class="f"><span><i>u</i>&#8242;</span><span>&#8730;<span class="rad"><i>u</i></span></span></span>&#8239;<span class="ar">&#8594;</span>&#8239;2&#8730;<span class="rad"><i>u</i></span></span>, <span class="pt"><i>g</i>(<i>ax</i>&#8239;+&#8239;<i>b</i>)&#8239;<span class="ar">&#8594;</span>&#8239;<span class="f"><span>1</span><span><i>a</i></span></span><i>G</i>(<i>ax</i>&#8239;+&#8239;<i>b</i>)</span>. Toujours <b>+&#8239;<i>C</i></b> et <b>contrôle en dérivant</b>.</li>
+<li><b>Etude complète</b> : domaine et réduction &middot; limites et asymptotes &middot; <i>f</i>&#8242; factorisée et son signe &middot; tableau &middot; points particuliers &middot; tracé. <b>Position</b> par rapport à une asymptote : <b>signe</b> de <span class="pt"><i>f</i>(<i>x</i>)&#8239;&#8722;&#8239;(<i>ax</i>&#8239;+&#8239;<i>b</i>)</span>. <b>Fonction auxiliaire</b> à <b>signaler</b> et étudier. <b>Extremum</b> : <i>f</i>&#8242; s'annule <b>en changeant de signe</b>. <b>Equation <span class="pt"><i>f</i>(<i>x</i>)&#8239;=&#8239;&#955;</span></b> : <i>f</i> continue et strictement monotone sur <i>I</i> <span class="ar">&#8658;</span> <b>une solution unique</b> si <span class="pt">&#955;&#8239;&#8712;&#8239;<i>f</i>(<i>I</i>)</span>, <b>aucune</b> sinon ; on compte colonne par colonne.</li>
+<li><b>Réduire avant d'étudier</b> : paire <span class="pt"><i>f</i>(&#8722;<i>x</i>)&#8239;=&#8239;<i>f</i>(<i>x</i>)</span>, axe (O<i>y</i>) &middot; impaire <span class="pt"><i>f</i>(&#8722;<i>x</i>)&#8239;=&#8239;&#8722;<i>f</i>(<i>x</i>)</span>, centre O &middot; axe <i>x</i>&#8239;=&#8239;<i>a</i> : <span class="pt"><i>f</i>(2<i>a</i>&#8239;&#8722;&#8239;<i>x</i>)&#8239;=&#8239;<i>f</i>(<i>x</i>)</span> &middot; centre A(<i>a</i>&#8239;;&#8239;<i>b</i>) : <span class="pt"><i>f</i>(2<i>a</i>&#8239;&#8722;&#8239;<i>x</i>)&#8239;+&#8239;<i>f</i>(<i>x</i>)&#8239;=&#8239;2<i>b</i></span> &middot; période <span class="pt"><i>T</i>&#8239;=&#8239;<span class="f"><span>2&#960;</span><span>|<i>a</i>|</span></span></span> pour <span class="pt"><span class="op">sin</span>(<i>ax</i>&#8239;+&#8239;<i>b</i>)</span>. <b>Concavité</b> : <i>f</i>&#8243;&#8239;&gt;&#8239;0 convexe, <i>f</i>&#8243;&#8239;&lt;&#8239;0 concave ; <b>inflexion</b> si <i>f</i>&#8243; change de signe. <b>Branche infinie</b> : étudier <span class="pt"><span class="f"><span><i>f</i>(<i>x</i>)</span><span><i>x</i></span></span></span>.</li>
+</ol>
+</div>
+
+</body>
+</html>

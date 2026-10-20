@@ -1,0 +1,53 @@
+# Serveur API
+# fastapi/starlette/python-multipart relevés (étaient 0.115.0/0.38.6/0.0.9) suite à un audit de
+# sécurité : starlette<=0.47.1 est vulnérable à CVE-2025-54121 (l'upload d'un fichier dépassant le
+# seuil de spool bloque la boucle événementielle asyncio le temps de l'écrire sur disque — DoS
+# exploitable sans authentification via /api/exercise/photo, ouverte aux invités) ; python-
+# multipart<0.0.18 à CVE-2024-53981 (DoS via boundary malformé). Épinglé en exact (comme le reste
+# de ce fichier) plutôt qu'avec un simple plancher : starlette 1.x (refonte majeure) n'est pas
+# auditée ici, une résolution automatique future ne doit pas y basculer silencieusement.
+fastapi==0.141.1
+starlette==0.52.1
+uvicorn[standard]==0.30.0
+pydantic==2.9.0
+python-multipart==0.0.32
+python-dotenv==1.0.1
+
+# RAG : embeddings + base vectorielle (Postgres/pgvector, Neon — voir DEPLOY.md DATABASE_URL)
+sentence-transformers>=2.6.1,<3.0.0
+llama-index==0.10.32
+llama-index-embeddings-huggingface==0.2.0
+# Épinglé à 0.1.11 : les versions plus récentes (0.8.x) exigent llama-index-core>=0.14, alors que
+# tout le reste de la pile est fige sur la ligne 0.10.x (voir la note huggingface-hub ci-dessous) —
+# une résolution automatique tire alors une chaîne de mises à jour incompatibles en cascade.
+llama-index-vector-stores-postgres==0.1.11
+# Extra "pool" : expose psycopg_pool.ConnectionPool, utilisé par database.py pour les données
+# applicatives (comptes/conversations), séparément des connexions ponctuelles du RAG.
+psycopg[binary,pool]>=3.1
+# Épinglé : sans ça, pip essaie de résoudre parmi des dizaines de versions 1.x récentes qui ont
+# supprimé l'extra "inference" attendu par llama-index-embeddings-huggingface==0.2.0, et remonte
+# très lentement (voire échoue) jusqu'à une version compatible comme celle-ci.
+huggingface-hub==0.23.5
+
+# Traitement de documents
+pypdf
+python-docx==1.1.0
+
+# LLM
+# Borne haute volontaire : la 1.x a retiré `temperature` de create()/stream() (voir
+# rag_system.py::_create_message) sans que la borne précédente (>=0.116.0, sans plafond) ne nous
+# protège d'un futur changement cassant équivalent à la prochaine montée de version majeure.
+anthropic>=1.2.0,<2.0.0
+
+# Comptes élèves (auth)
+bcrypt>=4.1.0
+pyjwt>=2.9.0
+
+# Limite de débit (protection brute-force + maîtrise des coûts d'API sur les routes ouvertes)
+slowapi>=0.1.9
+
+# Utilitaires
+numpy>=1.26.0
+
+# Tests (voir backend/tests/)
+pytest>=8.0.0

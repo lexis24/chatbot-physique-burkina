@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Fiche de revision - 3eme - Chapitre 13 : Equations de droites</title>
+<style>
+/* ===================================================================
+   FICHE DE REVISION, Collection Hakili Lab, Edition 2026
+   Feuille de style autonome, format A4 pret a imprimer.
+   Bleu #005CB9 · Vert #49A145
+   =================================================================== */
+:root{
+  --bleu:#005CB9; --bleu-fonce:#00429A; --bleu-pale:#E8F1FB; --bleu-bord:#B7D2EE;
+  --vert:#49A145; --vert-fonce:#2F7A2C; --vert-pale:#EDF7EC; --vert-bord:#BCE0B9;
+  --gris:#4A4A4A; --gris-clair:#E4E4E4; --rouge:#B3261E;
+}
+@page{
+  size:A4; margin:15mm;
+  @bottom-center{
+    content:"Collection Hakili Lab, Edition 2026  ·  Fiche de revision  ·  " counter(page) "/" counter(pages);
+    font-family:"Segoe UI",Calibri,Arial,sans-serif; font-size:6.6pt; color:#8A8A8A;
+  }
+}
+*{box-sizing:border-box;}
+body{
+  margin:0; font-family:"Segoe UI",Calibri,Arial,sans-serif;
+  font-size:8.4pt; line-height:1.26; color:#1B1B1B;
+}
+p{margin:0 0 3pt;}
+ul{margin:0 0 3pt; padding-left:11pt;}
+li{margin:0 0 1.2pt;}
+b,strong{color:var(--bleu-fonce);}
+
+/* ------------------------------ ENTETE ---------------------------- */
+.entete{
+  display:flex; align-items:stretch; border:1.6pt solid var(--bleu);
+  border-radius:2.5pt; overflow:hidden; margin-bottom:6pt;
+}
+.entete .num{
+  background:var(--bleu); color:#fff; font-size:20pt; font-weight:700;
+  padding:0 8pt; display:flex; align-items:center; justify-content:center; min-width:34pt;
+}
+.entete .txt{padding:3.5pt 8pt; flex:1;}
+.entete .niveau{
+  font-size:7pt; font-weight:700; letter-spacing:.9pt; color:var(--vert-fonce);
+}
+.entete h1{margin:0; font-size:13.5pt; line-height:1.12; color:var(--bleu-fonce); font-weight:700;}
+.entete .sous{font-size:7pt; color:var(--gris); margin-top:1pt;}
+
+/* --------------------------- BANDEAUX ----------------------------- */
+.bandeau{
+  color:#fff; font-weight:700; font-size:9pt; letter-spacing:1pt;
+  padding:2.4pt 7pt; border-radius:2pt; margin:3pt 0 4pt; break-after:avoid; page-break-after:avoid;
+}
+.bandeau.bleu{background:var(--bleu);}
+.bandeau.vert{background:var(--vert);}
+
+/* --------------------------- COLONNES ----------------------------- */
+.cols{column-count:2; column-gap:7mm; column-fill:balance;}
+
+.cols.bal{column-fill:balance;}
+.bloc{margin-bottom:5pt;}
+.keep{break-inside:avoid; page-break-inside:avoid;}
+
+/* --------------------------- LECONS ------------------------------- */
+h2.lecon{
+  margin:0 0 3pt; font-size:8.6pt; font-weight:700; color:#fff; background:var(--bleu-fonce);
+  padding:1.8pt 5pt; border-radius:1.5pt; break-after:avoid; page-break-after:avoid;
+}
+h3.rub{
+  margin:3.5pt 0 1.5pt; font-size:8.2pt; font-weight:700; color:var(--vert-fonce);
+  border-bottom:.7pt solid var(--vert-bord); padding-bottom:.8pt;
+  break-after:avoid; page-break-after:avoid;
+}
+
+/* --------------------------- ENCADRES ----------------------------- */
+.form{
+  background:var(--bleu-pale); border:.8pt solid var(--bleu-bord); border-left:2.6pt solid var(--bleu);
+  border-radius:2pt; padding:2.4pt 5pt; margin:2.2pt 0 3.4pt;
+  break-inside:avoid; page-break-inside:avoid;
+}
+.form .t{
+  display:block; font-size:6.8pt; font-weight:700; letter-spacing:.6pt;
+  color:var(--bleu); margin-bottom:1.5pt;
+}
+.form .c{text-align:center; font-size:9.1pt; margin:1.6pt 0;}
+.note{background:var(--vert-pale); border-left:2.4pt solid var(--vert); padding:2.4pt 5pt; border-radius:1.5pt; margin:2.5pt 0 4pt; break-inside:avoid;}
+
+/* --------------------------- TABLEAUX ----------------------------- */
+table{width:100%; border-collapse:collapse; font-size:7.6pt; margin:2pt 0 4pt; break-inside:avoid;}
+th{background:var(--bleu); color:#fff; font-weight:700; text-align:left; padding:1.8pt 4pt; font-size:7.2pt;}
+td{border:.6pt solid var(--gris-clair); padding:1.8pt 4pt; vertical-align:top;}
+tr{break-inside:avoid;}
+table.var td{text-align:center; font-size:8pt;}
+table.var td.lab{text-align:left; font-weight:700; color:var(--bleu-fonce); background:var(--bleu-pale);}
+
+/* ----------------------------- PIEGES ----------------------------- */
+table.pieges th:first-child{width:44%;}
+table.pieges td:first-child{color:var(--rouge); background:#FDF1F0;}
+.x{font-weight:700;}
+.v{color:var(--vert-fonce); font-weight:700;}
+
+/* ---------------------------- RECAP ------------------------------- */
+ol.recap{margin:0; padding-left:0; list-style:none; counter-reset:r;}
+ol.recap li{
+  counter-increment:r; position:relative; padding-left:13pt; margin-bottom:1.8pt;
+  break-inside:avoid;
+}
+ol.recap li::before{
+  content:counter(r); position:absolute; left:0; top:.3pt;
+  width:10pt; height:10pt; border-radius:50%; background:var(--vert); color:#fff;
+  font-size:6.6pt; font-weight:700; text-align:center; line-height:10pt;
+}
+
+/* --------------------------- MATHS -------------------------------- */
+.m{font-family:Cambria,Georgia,"Times New Roman",serif;}
+i,var{font-family:Cambria,Georgia,"Times New Roman",serif; font-style:italic;}
+.op{font-family:Cambria,Georgia,"Times New Roman",serif; font-style:normal;}
+.f{display:inline-block; vertical-align:middle; text-align:center;
+   margin:0 .12em; line-height:1.06; font-family:Cambria,Georgia,"Times New Roman",serif;}
+.f>span{display:block; padding:0 .2em;}
+.f>span:first-child{border-bottom:.6pt solid currentColor; padding-bottom:.08em;}
+.f>span:last-child{padding-top:.04em;}
+.rad{border-top:.6pt solid currentColor; padding-top:.12em;}
+/* line-height:0 evite que l'exposant n'ecarte les lignes ; position:relative le
+   repositionne sans qu'il heurte la barre de fraction ni le trait du radical. */
+sup,sub{font-size:.68em; line-height:0; position:relative; vertical-align:baseline;}
+sup{top:-.42em;}
+sub{bottom:-.22em;}
+.pt{white-space:nowrap;}
+/* Les fleches n'ont qu'un glyphe atrophie dans la fonte serif : on les force
+   en sans-serif, ou elles sont franches meme a 8 pt. */
+.ar{font-family:"Segoe UI",Calibri,Arial,"DejaVu Sans",sans-serif; font-style:normal;}
+
+/* ------------------- PIEGES : blocs erreur / correction ------------- */
+.pg{font-size:8.1pt; border-left:2.4pt solid var(--rouge); background:#FDF1F0; border-radius:1.5pt;
+    padding:2pt 5pt; margin:0 0 2.8pt; break-inside:avoid; page-break-inside:avoid;}
+.pg .err{color:var(--rouge); font-weight:600;}
+.pg .cor{color:#1B1B1B; margin-top:.8pt;}
+.pg .cor b{color:var(--bleu-fonce);}
+.v{color:var(--vert-fonce); font-weight:700;}
+
+</style>
+</head>
+<body>
+<header class="entete">
+  <div class="num">13</div>
+  <div class="txt">
+    <div class="niveau">3EME &middot; MATHEMATIQUES</div>
+    <h1>Equations de droites</h1>
+    <div class="sous">Leçon 1 : équation cartésienne et vecteur directeur &middot; Leçon 2 : équation réduite et coefficient directeur &middot; Leçon 3 : droite parallèle ou perpendiculaire à une droite donnée &middot; Leçon 4 : construction, appartenance, coordonnée manquante &middot; Leçon 5 : parallélisme et perpendicularité de deux droites</div>
+  </div>
+</header>
+
+<div class="bandeau bleu" style="margin-top:0">L'ESSENTIEL</div>
+<div class="cols">
+
+<!-- ================= LECON 1 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 1&nbsp;: Equation cartésienne et vecteur directeur</h2>
+<div class="form">
+  <span class="t">EQUATION CARTESIENNE&nbsp;: <i>a</i> et <i>b</i> non tous les deux nuls</span>
+  <div class="c m"><i>ax</i>&#8239;+&#8239;<i>by</i>&#8239;+&#8239;<i>c</i>&#8239;=&#8239;0</div>
+  <div class="c m"><span class="pt">M(<i>x</i>&#8239;;&#8239;<i>y</i>)&#8239;&#8712;&#8239;(D)</span> si et seulement si ses coordonnées vérifient l'égalité</div>
+</div></div>
+<ul>
+<li>Un <b>vecteur directeur</b> d'une droite est un vecteur <b>non nul</b> qui donne sa direction. Une droite en a une <b>infinité</b>, tous colinéaires entre eux.</li>
+<li>La droite passant par A et de vecteur directeur <span style="display:inline-block;position:relative;line-height:1"><i>u</i><span style="position:absolute;left:0;right:0;top:0;border-top:.6pt solid"></span></span> est l'ensemble des points M tels que <span style="display:inline-block;position:relative;line-height:1"><i>AM</i><span style="position:absolute;left:0;right:0;top:0;border-top:.6pt solid"></span></span> et <span style="display:inline-block;position:relative;line-height:1"><i>u</i><span style="position:absolute;left:0;right:0;top:0;border-top:.6pt solid"></span></span> soient <b>colinéaires</b>.</li>
+</ul>
+<div class="form">
+  <span class="t">LIRE UN VECTEUR DIRECTEUR SUR L'EQUATION</span>
+  <div class="c m"><i>ax</i>&#8239;+&#8239;<i>by</i>&#8239;+&#8239;<i>c</i>&#8239;=&#8239;0&nbsp;<span style="font-family:'Segoe UI',Calibri,Arial,sans-serif"><span class="ar">&#8594;</span></span>&nbsp;<span style="display:inline-block;position:relative;line-height:1"><i>u</i><span style="position:absolute;left:0;right:0;top:0;border-top:.6pt solid"></span></span>(&#8722;<i>b</i>&#8239;;&#8239;<i>a</i>)</div>
+</div>
+<p>Les deux premiers nombres <i>a</i> et <i>b</i> portent la <b>direction</b> ; <i>c</i> ne fait que déplacer la droite <b>parallèlement à elle-même</b>. Une droite n'a pas <b>une</b> équation cartésienne mais une <b>infinité</b> : multiplier toute l'égalité par un nombre non nul donne une autre équation de la <b>même</b> droite.</p>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Equation à partir d'un point et d'un vecteur directeur</h3>
+<ul>
+<li>On note A(<i>x</i><sub>A</sub>&#8239;;&#8239;<i>y</i><sub>A</sub>) et <span style="display:inline-block;position:relative;line-height:1"><i>u</i><span style="position:absolute;left:0;right:0;top:0;border-top:.6pt solid"></span></span>(&#945;&#8239;;&#8239;&#946;), puis un point quelconque M(<i>x</i>&#8239;;&#8239;<i>y</i>) de la droite : <span style="display:inline-block;position:relative;line-height:1"><i>AM</i><span style="position:absolute;left:0;right:0;top:0;border-top:.6pt solid"></span></span>(<i>x</i>&#8239;&#8722;&#8239;<i>x</i><sub>A</sub>&#8239;;&#8239;<i>y</i>&#8239;&#8722;&#8239;<i>y</i><sub>A</sub>).</li>
+<li>On écrit la <b>colinéarité</b> de <span style="display:inline-block;position:relative;line-height:1"><i>AM</i><span style="position:absolute;left:0;right:0;top:0;border-top:.6pt solid"></span></span> et de <span style="display:inline-block;position:relative;line-height:1"><i>u</i><span style="position:absolute;left:0;right:0;top:0;border-top:.6pt solid"></span></span>, puis on développe, on réduit et on range sous la forme <span class="pt"><i>ax</i>&#8239;+&#8239;<i>by</i>&#8239;+&#8239;<i>c</i>&#8239;=&#8239;0</span>.</li>
+</ul>
+<div class="form">
+  <span class="t">CONDITION DE COLINEARITE</span>
+  <div class="c m">(<i>x</i>&#8239;&#8722;&#8239;<i>x</i><sub>A</sub>)&#8239;&#215;&#8239;&#946;&#8239;&#8722;&#8239;(<i>y</i>&#8239;&#8722;&#8239;<i>y</i><sub>A</sub>)&#8239;&#215;&#8239;&#945;&#8239;=&#8239;0</div>
+</div>
+<div class="note"><b>Contrôle.</b> Remplace <i>x</i> et <i>y</i> par les coordonnées de A : tu dois trouver 0.</div>
+</div>
+
+<!-- ================= LECON 2 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 2&nbsp;: Equation réduite et coefficient directeur</h2>
+<div class="form">
+  <span class="t">EQUATION REDUITE&nbsp;: toute droite NON VERTICALE</span>
+  <div class="c m"><i>y</i>&#8239;=&#8239;<i>ax</i>&#8239;+&#8239;<i>b</i></div>
+  <div class="c m"><i>a</i> : coefficient directeur &nbsp;&middot;&nbsp; <i>b</i> : ordonnée à l'origine</div>
+</div></div>
+<ul>
+<li><b><i>a</i></b> : quand l'abscisse augmente de 1, l'ordonnée varie de <i>a</i>. Si <i>a</i>&#8239;&gt;&#8239;0 la droite <b>monte</b>, si <i>a</i>&#8239;&lt;&#8239;0 elle <b>descend</b>, si <i>a</i>&#8239;=&#8239;0 elle est <b>horizontale</b>.</li>
+<li><b><i>b</i></b> : la droite coupe l'axe des ordonnées au point de coordonnées (0&#8239;;&#8239;<i>b</i>).</li>
+</ul>
+<div class="form">
+  <span class="t">COEFFICIENT DIRECTEUR&nbsp;: A et B distincts, droite non verticale</span>
+  <div class="c m"><i>a</i>&#8239;=&#8239;<span class="f"><span><i>y</i><sub>B</sub>&#8239;&#8722;&#8239;<i>y</i><sub>A</sub></span><span><i>x</i><sub>B</sub>&#8239;&#8722;&#8239;<i>x</i><sub>A</sub></span></span></div>
+</div>
+<p>C'est la variation des <b>ordonnées</b> divisée par celle des <b>abscisses</b> : « ce qu'on monte divisé par ce qu'on avance ». Les deux différences se prennent dans le <b>même ordre</b>, en haut et en bas.</p>
+</div>
+
+<div class="bloc">
+<div class="form">
+  <span class="t">DROITE VERTICALE</span>
+  <div class="c m"><i>x</i>&#8239;=&#8239;<i>k</i> &nbsp;&middot;&nbsp; équation cartésienne <i>x</i>&#8239;&#8722;&#8239;<i>k</i>&#8239;=&#8239;0</div>
+  <div class="c m"><b>ni</b> coefficient directeur, <b>ni</b> équation réduite</div>
+</div>
+<h3 class="rub">Equation réduite d'une droite passant par deux points</h3>
+<ul>
+<li>Si les deux points ont la <b>même abscisse</b>, la droite est verticale, son équation est <i>x</i>&#8239;=&#8239;<i>k</i> : le travail est fini.</li>
+<li>Sinon, calcule <i>a</i>, écris <i>y</i>&#8239;=&#8239;<i>ax</i>&#8239;+&#8239;<i>b</i>, remplace <i>x</i> et <i>y</i> par les coordonnées de <b>l'un</b> des deux points, puis résous pour trouver <i>b</i>.</li>
+<li>Ecris l'équation complète et <b>contrôle-la avec l'autre point</b>.</li>
+</ul>
+</div>
+
+<!-- ================= LECON 3 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 3&nbsp;: Droite parallèle ou perpendiculaire à une droite donnée</h2>
+<div class="form">
+  <span class="t">PENTES&nbsp;: (D) : <i>y</i>&#8239;=&#8239;<i>ax</i>&#8239;+&#8239;<i>b</i> et (D&#8242;) : <i>y</i>&#8239;=&#8239;<i>a</i>&#8242;<i>x</i>&#8239;+&#8239;<i>b</i>&#8242;</span>
+  <div class="c m"><span class="pt">(D)&#8239;&#8741;&#8239;(D&#8242;)</span> si et seulement si <span class="pt"><i>a</i>&#8239;=&#8239;<i>a</i>&#8242;</span></div>
+  <div class="c m"><span class="pt">(D)&#8239;&#8869;&#8239;(D&#8242;)</span> si et seulement si <span class="pt"><i>a</i>&#8239;&#215;&#8239;<i>a</i>&#8242;&#8239;=&#8239;&#8722;1</span> &nbsp;<span style="font-size:7.5pt">(repère orthonormal)</span></div>
+  <div class="c m"><i>a</i>&#8242;&#8239;=&#8239;<span class="f"><span>&#8722;1</span><span><i>a</i></span></span> &nbsp;<span style="font-size:7.5pt">(<i>a</i>&#8239;&#8800;&#8239;0)</span></div>
+</div></div>
+<p>Pour une perpendiculaire, « on <b>retourne la fraction</b> et on <b>change le signe</b> » : pente <span class="f"><span>2</span><span>3</span></span>&#8239;<span class="ar">&#8594;</span>&#8239;&#8722;<span class="f"><span>3</span><span>2</span></span> ; pente &#8722;4&#8239;<span class="ar">&#8594;</span>&#8239;<span class="f"><span>1</span><span>4</span></span>. Les deux pentes sont toujours de <b>signes contraires</b>.</p>
+<h3 class="rub">Ecrire l'équation d'une parallèle ou d'une perpendiculaire par un point</h3>
+<ul>
+<li>Mets la droite donnée sous forme <b>réduite</b> et lis son coefficient directeur <i>a</i>.</li>
+<li>Choisis la pente : <b>le même <i>a</i></b> pour une parallèle, le nombre <i>a</i>&#8242; tel que <span class="pt"><i>a</i>&#8239;&#215;&#8239;<i>a</i>&#8242;&#8239;=&#8239;&#8722;1</span> pour une perpendiculaire.</li>
+<li>Ecris <i>y</i>&#8239;=&#8239;<i>a</i>&#8242;<i>x</i>&#8239;+&#8239;<i>b</i>&#8242;, remplace <i>x</i> et <i>y</i> par les coordonnées du <b>point imposé</b>, puis tire <i>b</i>&#8242;.</li>
+<li>Ecris l'équation complète et contrôle que le point la vérifie.</li>
+</ul>
+<div class="note">Une droite <b>horizontale</b> <i>y</i>&#8239;=&#8239;<i>b</i> a pour perpendiculaires les <b>verticales</b> <i>x</i>&#8239;=&#8239;<i>k</i> : le produit des pentes ne s'utilise pas, les verticales n'ayant pas de coefficient directeur.</div>
+</div>
+
+<!-- ================= LECON 4 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 4&nbsp;: Construction, appartenance, coordonnée manquante</h2>
+<p>Pour <b>construire</b> une droite dont on connaît l'équation, il suffit de déterminer <b>deux</b> de ses points, de les placer et de tracer la droite qui les joint. Choisis des abscisses qui donnent des ordonnées simples.</p></div>
+<div class="form">
+  <span class="t">TEST D'APPARTENANCE</span>
+  <div class="c m"><span class="pt">M(<i>x</i><sub>0</sub>&#8239;;&#8239;<i>y</i><sub>0</sub>)&#8239;&#8712;&#8239;(D)</span> si et seulement si <i>x</i><sub>0</sub> et <i>y</i><sub>0</sub> vérifient l'équation de (D)</div>
+  <div class="c m">égalité fausse&nbsp;<span style="font-family:'Segoe UI',Calibri,Arial,sans-serif"><span class="ar">&#8594;</span></span>&nbsp;M&#8239;&#8713;&#8239;(D)</div>
+</div>
+<ul>
+<li>L'équation d'une droite est un <b>test</b> : on lui présente un point, elle répond par oui ou par non. Ce test est <b>exact</b>, alors qu'un tracé est toujours approché.</li>
+<li>En rédigeant, calcule <b>séparément</b> les deux membres de l'égalité, compare-les, puis conclus par une <b>phrase</b>.</li>
+<li><b>Coordonnée manquante</b> : remplace la coordonnée connue dans l'équation, résous l'équation du <b>premier degré</b> obtenue, puis donne le <b>couple complet</b> des coordonnées.</li>
+</ul>
+</div>
+
+<!-- ================= LECON 5 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 5&nbsp;: Parallélisme et perpendicularité de deux droites</h2>
+<p>(D) : <span class="pt"><i>y</i>&#8239;=&#8239;<i>ax</i>&#8239;+&#8239;<i>b</i></span> et (D&#8242;) : <span class="pt"><i>y</i>&#8239;=&#8239;<i>a</i>&#8242;<i>x</i>&#8239;+&#8239;<i>b</i>&#8242;</span>.</p></div>
+<table>
+<tr><th>Ce que l'on compare</th><th>Position des deux droites</th></tr>
+<tr><td class="m"><i>a</i>&#8239;=&#8239;<i>a</i>&#8242; et <i>b</i>&#8239;=&#8239;<i>b</i>&#8242;</td><td><b>Confondues</b></td></tr>
+<tr><td class="m"><i>a</i>&#8239;=&#8239;<i>a</i>&#8242; et <i>b</i>&#8239;&#8800;&#8239;<i>b</i>&#8242;</td><td><b>Strictement parallèles</b></td></tr>
+<tr><td class="m"><i>a</i>&#8239;&#8800;&#8239;<i>a</i>&#8242;</td><td><b>Sécantes</b> en un seul point</td></tr>
+<tr><td class="m"><i>a</i>&#8239;&#215;&#8239;<i>a</i>&#8242;&#8239;=&#8239;&#8722;1</td><td><b>Perpendiculaires</b> (repère orthonormal)</td></tr>
+</table>
+<div class="form">
+  <span class="t">AVEC LES VECTEURS DIRECTEURS <span style="display:inline-block;position:relative;line-height:1"><i>u</i><span style="position:absolute;left:0;right:0;top:0;border-top:.6pt solid"></span></span>(<i>x</i>&#8239;;&#8239;<i>y</i>) ET <span style="display:inline-block;position:relative;line-height:1"><i>u</i>&#8242;<span style="position:absolute;left:0;right:0;top:0;border-top:.6pt solid"></span></span>(<i>x</i>&#8242;&#8239;;&#8239;<i>y</i>&#8242;)</span>
+  <div class="c m">parallèles si et seulement si <span style="display:inline-block;position:relative;line-height:1"><i>u</i><span style="position:absolute;left:0;right:0;top:0;border-top:.6pt solid"></span></span> et <span style="display:inline-block;position:relative;line-height:1"><i>u</i>&#8242;<span style="position:absolute;left:0;right:0;top:0;border-top:.6pt solid"></span></span> sont colinéaires</div>
+  <div class="c m">perpendiculaires si et seulement si <span class="pt"><i>xx</i>&#8242;&#8239;+&#8239;<i>yy</i>&#8242;&#8239;=&#8239;0</span> &nbsp;<span class="pt" style="font-size:7.5pt">(repère orthonormal)</span></div>
+</div>
+<p>Les deux critères se ressemblent, mais pour le parallélisme on <b>compare</b> les coefficients et pour la perpendicularité on les <b>multiplie</b>. Le critère du produit suppose un repère <b>orthonormal</b> ; celui du parallélisme est vrai dans <b>tous</b> les repères.</p>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Etudier la position relative de deux droites</h3>
+<ul>
+<li>Mets les deux équations sous forme <b>réduite</b>.</li>
+<li>Si l'une est de la forme <i>x</i>&#8239;=&#8239;<i>k</i>, la droite est verticale : conclus directement, elle est parallèle aux autres verticales et perpendiculaire aux horizontales.</li>
+<li>Compare les <b>coefficients directeurs</b> ; s'ils sont égaux, compare ensuite les <b>ordonnées à l'origine</b>.</li>
+<li>S'ils sont différents, calcule leur <b>produit</b> : &#8722;1 donne des perpendiculaires, sinon les droites sont simplement sécantes.</li>
+<li>Rédige la conclusion en une phrase, en <b>citant la propriété</b> utilisée.</li>
+</ul>
+</div>
+
+</div>
+
+<div class="bandeau vert">PIEGES ET ERREURS FREQUENTES</div>
+<div class="cols">
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> Pour 2<i>x</i>&#8239;+&#8239;3<i>y</i>&#8239;+&#8239;5&#8239;=&#8239;0, un vecteur directeur est <span style="display:inline-block;position:relative;line-height:1"><i>u</i><span style="position:absolute;left:0;right:0;top:0;border-top:.6pt solid"></span></span>(2&#8239;;&#8239;3)</div><div class="cor"><span class="v">&#10003;</span> On lit <span style="display:inline-block;position:relative;line-height:1"><i>u</i><span style="position:absolute;left:0;right:0;top:0;border-top:.6pt solid"></span></span>(&#8722;<i>b</i>&#8239;;&#8239;<i>a</i>), donc <span style="display:inline-block;position:relative;line-height:1"><i>u</i><span style="position:absolute;left:0;right:0;top:0;border-top:.6pt solid"></span></span>(&#8722;3&#8239;;&#8239;2) : on <b>échange</b> les deux coefficients <b>et</b> on change un signe. Contrôle : <span class="pt"><i>a</i>&#8239;&#215;&#8239;(&#8722;<i>b</i>)&#8239;+&#8239;<i>b</i>&#8239;&#215;&#8239;<i>a</i>&#8239;=&#8239;0</span>.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> <i>a</i>&#8239;=&#8239;<span class="f"><span><i>x</i><sub>B</sub>&#8239;&#8722;&#8239;<i>x</i><sub>A</sub></span><span><i>y</i><sub>B</sub>&#8239;&#8722;&#8239;<i>y</i><sub>A</sub></span></span> &nbsp;&middot;&nbsp; <i>a</i>&#8239;=&#8239;<span class="f"><span><i>y</i><sub>B</sub>&#8239;&#8722;&#8239;<i>y</i><sub>A</sub></span><span><i>x</i><sub>A</sub>&#8239;&#8722;&#8239;<i>x</i><sub>B</sub></span></span></div><div class="cor"><span class="v">&#10003;</span> <i>a</i>&#8239;=&#8239;<span class="f"><span><i>y</i><sub>B</sub>&#8239;&#8722;&#8239;<i>y</i><sub>A</sub></span><span><i>x</i><sub>B</sub>&#8239;&#8722;&#8239;<i>x</i><sub>A</sub></span></span> : les <b>ordonnées</b> en haut, les <b>abscisses</b> en bas, et les deux différences <b>dans le même ordre</b>. Sinon on obtient l'inverse ou l'opposé du bon nombre.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> « Dans <i>y</i>&#8239;=&#8239;2<i>x</i>&#8239;+&#8239;3, la pente est 3. »</div><div class="cor"><span class="v">&#10003;</span> Dans <i>y</i>&#8239;=&#8239;<i>ax</i>&#8239;+&#8239;<i>b</i>, <i>a</i> est le <b>coefficient directeur</b> et <i>b</i> l'<b>ordonnée à l'origine</b> : ici la pente vaut <b>2</b> et la droite passe par (0&#8239;;&#8239;3).</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> « La droite <i>x</i>&#8239;=&#8239;5 a pour coefficient directeur 0. »</div><div class="cor"><span class="v">&#10003;</span> Une <b>verticale</b> n'a ni coefficient directeur ni équation réduite : en avançant de 0 en abscisse, on aurait à diviser par 0. Elle a bien une équation cartésienne, <span class="pt"><i>x</i>&#8239;&#8722;&#8239;5&#8239;=&#8239;0</span>. C'est l'<b>horizontale</b> <i>y</i>&#8239;=&#8239;5 dont le coefficient directeur vaut 0.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> La perpendiculaire à <i>y</i>&#8239;=&#8239;2<i>x</i>&#8239;+&#8239;1 a pour pente &#8722;2 &nbsp;&middot;&nbsp; pente <span class="f"><span>2</span><span>3</span></span>&#8239;<span class="ar">&#8594;</span>&#8239;&#8722;<span class="f"><span>2</span><span>3</span></span></div><div class="cor"><span class="v">&#10003;</span> On applique <i>a</i>&#8242;&#8239;=&#8239;<span class="f"><span>&#8722;1</span><span><i>a</i></span></span> : la perpendiculaire à <i>y</i>&#8239;=&#8239;2<i>x</i>&#8239;+&#8239;1 a pour pente &#8722;<span class="f"><span>1</span><span>2</span></span>, et une pente <span class="f"><span>2</span><span>3</span></span> donne &#8722;<span class="f"><span>3</span><span>2</span></span>. On <b>retourne</b> la fraction, on ne se contente pas de changer le signe.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> « <i>y</i>&#8239;=&#8239;2<i>x</i>&#8239;+&#8239;1 et <i>y</i>&#8239;=&#8239;2<i>x</i>&#8239;+&#8239;5 ne sont pas parallèles, leurs ordonnées à l'origine diffèrent. »</div><div class="cor"><span class="v">&#10003;</span> Le parallélisme se lit sur les <b>coefficients directeurs</b> seuls : <span class="pt">2&#8239;=&#8239;2</span>, ces droites sont parallèles. Les ordonnées à l'origine disent seulement si elles sont <b>confondues</b> (<i>b</i>&#8239;=&#8239;<i>b</i>&#8242;) ou <b>strictement parallèles</b> (<i>b</i>&#8239;&#8800;&#8239;<i>b</i>&#8242;).</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> Pour tester le parallélisme, on multiplie <i>a</i> et <i>a</i>&#8242; &nbsp;&middot;&nbsp; <i>a</i>&#8239;&#215;&#8239;<i>a</i>&#8242;&#8239;=&#8239;&#8722;1 dans n'importe quel repère</div><div class="cor"><span class="v">&#10003;</span> On <b>compare</b> pour le parallélisme (<i>a</i>&#8239;=&#8239;<i>a</i>&#8242;), on <b>multiplie</b> pour la perpendicularité (<i>a</i>&#8239;&#215;&#8239;<i>a</i>&#8242;&#8239;=&#8239;&#8722;1), et ce dernier critère n'est valable que dans un repère <b>orthonormal</b>.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> « 2<i>x</i>&#8239;+&#8239;<i>y</i>&#8239;&#8722;&#8239;11&#8239;=&#8239;0 et 4<i>x</i>&#8239;+&#8239;2<i>y</i>&#8239;&#8722;&#8239;22&#8239;=&#8239;0 sont deux droites sécantes. » &nbsp;&middot;&nbsp; « M est sur la droite, je le vois sur le dessin. »</div><div class="cor"><span class="v">&#10003;</span> La seconde égalité est la première multipliée par 2 : c'est la <b>même droite</b>. Pour comparer deux équations, mets-les sous forme <b>réduite</b>. Et l'appartenance se <b>prouve par le calcul</b> : on remplace les <b>deux</b> coordonnées, on calcule chaque membre, on compare, on conclut.</div></div>
+
+</div>
+
+<div class="bandeau bleu">A SAVOIR PAR COEUR AVANT LE DEVOIR</div>
+<div class="cols">
+<ol class="recap">
+<li><b>Equation cartésienne</b> : <span class="pt"><i>ax</i>&#8239;+&#8239;<i>by</i>&#8239;+&#8239;<i>c</i>&#8239;=&#8239;0</span> avec <i>a</i> et <i>b</i> non tous les deux nuls. Une même droite en admet une <b>infinité</b> (on peut multiplier par tout nombre non nul).</li>
+<li><b>Vecteur directeur</b> : <span style="display:inline-block;position:relative;line-height:1"><i>u</i><span style="position:absolute;left:0;right:0;top:0;border-top:.6pt solid"></span></span>(&#8722;<i>b</i>&#8239;;&#8239;<i>a</i>) se lit sur <span class="pt"><i>ax</i>&#8239;+&#8239;<i>by</i>&#8239;+&#8239;<i>c</i>&#8239;=&#8239;0</span>. M appartient à la droite passant par A lorsque <span style="display:inline-block;position:relative;line-height:1"><i>AM</i><span style="position:absolute;left:0;right:0;top:0;border-top:.6pt solid"></span></span> et <span style="display:inline-block;position:relative;line-height:1"><i>u</i><span style="position:absolute;left:0;right:0;top:0;border-top:.6pt solid"></span></span> sont colinéaires.</li>
+<li><b>Equation réduite</b> <span class="pt"><i>y</i>&#8239;=&#8239;<i>ax</i>&#8239;+&#8239;<i>b</i></span> : <i>a</i> est la <b>pente</b> (+1 en abscisse donne +<i>a</i> en ordonnée), <i>b</i> l'<b>ordonnée à l'origine</b>, donc le point (0&#8239;;&#8239;<i>b</i>). <i>a</i>&#8239;&gt;&#8239;0 monte, <i>a</i>&#8239;&lt;&#8239;0 descend, <i>a</i>&#8239;=&#8239;0 horizontale.</li>
+<li><i>a</i>&#8239;=&#8239;<span class="f"><span><i>y</i><sub>B</sub>&#8239;&#8722;&#8239;<i>y</i><sub>A</sub></span><span><i>x</i><sub>B</sub>&#8239;&#8722;&#8239;<i>x</i><sub>A</sub></span></span> pour deux points <b>distincts</b> d'une droite non verticale, les deux différences prises dans le même ordre.</li>
+<li><b>Droite verticale</b> <i>x</i>&#8239;=&#8239;<i>k</i> : <b>pas</b> de coefficient directeur, <b>pas</b> d'équation réduite, mais une équation cartésienne <span class="pt"><i>x</i>&#8239;&#8722;&#8239;<i>k</i>&#8239;=&#8239;0</span>.</li>
+<li><b>Parallèles</b> si et seulement si <i>a</i>&#8239;=&#8239;<i>a</i>&#8242; : <b>confondues</b> si de plus <i>b</i>&#8239;=&#8239;<i>b</i>&#8242;, <b>strictement parallèles</b> si <i>b</i>&#8239;&#8800;&#8239;<i>b</i>&#8242; ; <b>sécantes</b> si <i>a</i>&#8239;&#8800;&#8239;<i>a</i>&#8242;.</li>
+<li><b>Perpendiculaires</b> en repère <b>orthonormal</b> si et seulement si <span class="pt"><i>a</i>&#8239;&#215;&#8239;<i>a</i>&#8242;&#8239;=&#8239;&#8722;1</span>, c'est-à-dire <i>a</i>&#8242;&#8239;=&#8239;<span class="f"><span>&#8722;1</span><span><i>a</i></span></span> : on retourne la fraction et on change le signe. Avec les vecteurs directeurs : <span class="pt"><i>xx</i>&#8242;&#8239;+&#8239;<i>yy</i>&#8242;&#8239;=&#8239;0</span>.</li>
+<li><b>Appartenance</b> ou <b>coordonnée manquante</b> : on remplace dans l'équation, on calcule chaque membre, on compare ou on résout l'équation du premier degré, et on conclut par une phrase.</li>
+</ol>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Fiche de revision - 1ere D - Chapitre 3 : Problemes algebriques et numeriques</title>
+<style>
+/* ===================================================================
+   FICHE DE REVISION, Collection Hakili Lab, Edition 2026
+   Feuille de style autonome, format A4 pret a imprimer.
+   Bleu #005CB9 · Vert #49A145
+   =================================================================== */
+:root{
+  --bleu:#005CB9; --bleu-fonce:#00429A; --bleu-pale:#E8F1FB; --bleu-bord:#B7D2EE;
+  --vert:#49A145; --vert-fonce:#2F7A2C; --vert-pale:#EDF7EC; --vert-bord:#BCE0B9;
+  --gris:#4A4A4A; --gris-clair:#E4E4E4; --rouge:#B3261E;
+}
+@page{
+  size:A4; margin:15mm;
+  @bottom-center{
+    content:"Collection Hakili Lab, Edition 2026  ·  Fiche de revision  ·  " counter(page) "/" counter(pages);
+    font-family:"Segoe UI",Calibri,Arial,sans-serif; font-size:6.6pt; color:#8A8A8A;
+  }
+}
+*{box-sizing:border-box;}
+body{
+  margin:0; font-family:"Segoe UI",Calibri,Arial,sans-serif;
+  font-size:8.4pt; line-height:1.26; color:#1B1B1B;
+}
+p{margin:0 0 3pt;}
+ul{margin:0 0 3pt; padding-left:11pt;}
+li{margin:0 0 1.2pt;}
+b,strong{color:var(--bleu-fonce);}
+
+/* ------------------------------ ENTETE ---------------------------- */
+.entete{
+  display:flex; align-items:stretch; border:1.6pt solid var(--bleu);
+  border-radius:2.5pt; overflow:hidden; margin-bottom:6pt;
+}
+.entete .num{
+  background:var(--bleu); color:#fff; font-size:20pt; font-weight:700;
+  padding:0 8pt; display:flex; align-items:center; justify-content:center; min-width:34pt;
+}
+.entete .txt{padding:3.5pt 8pt; flex:1;}
+.entete .niveau{
+  font-size:7pt; font-weight:700; letter-spacing:.9pt; color:var(--vert-fonce);
+}
+.entete h1{margin:0; font-size:13.5pt; line-height:1.12; color:var(--bleu-fonce); font-weight:700;}
+.entete .sous{font-size:7pt; color:var(--gris); margin-top:1pt;}
+
+/* --------------------------- BANDEAUX ----------------------------- */
+.bandeau{
+  color:#fff; font-weight:700; font-size:9pt; letter-spacing:1pt;
+  padding:2.4pt 7pt; border-radius:2pt; margin:3pt 0 4pt; break-after:avoid; page-break-after:avoid;
+}
+.bandeau.bleu{background:var(--bleu);}
+.bandeau.vert{background:var(--vert);}
+
+/* --------------------------- COLONNES ----------------------------- */
+.cols{column-count:2; column-gap:7mm; column-fill:balance;}
+
+.cols.bal{column-fill:balance;}
+.bloc{margin-bottom:5pt;}
+.keep{break-inside:avoid; page-break-inside:avoid;}
+
+/* --------------------------- LECONS ------------------------------- */
+h2.lecon{
+  margin:0 0 3pt; font-size:8.6pt; font-weight:700; color:#fff; background:var(--bleu-fonce);
+  padding:1.8pt 5pt; border-radius:1.5pt; break-after:avoid; page-break-after:avoid;
+}
+h3.rub{
+  margin:3.5pt 0 1.5pt; font-size:8.2pt; font-weight:700; color:var(--vert-fonce);
+  border-bottom:.7pt solid var(--vert-bord); padding-bottom:.8pt;
+  break-after:avoid; page-break-after:avoid;
+}
+
+/* --------------------------- ENCADRES ----------------------------- */
+.form{
+  background:var(--bleu-pale); border:.8pt solid var(--bleu-bord); border-left:2.6pt solid var(--bleu);
+  border-radius:2pt; padding:2.4pt 5pt; margin:2.2pt 0 3.4pt;
+  break-inside:avoid; page-break-inside:avoid;
+}
+.form .t{
+  display:block; font-size:6.8pt; font-weight:700; letter-spacing:.6pt;
+  color:var(--bleu); margin-bottom:1.5pt;
+}
+.form .c{text-align:center; font-size:9.1pt; margin:1.6pt 0;}
+.note{background:var(--vert-pale); border-left:2.4pt solid var(--vert); padding:2.4pt 5pt; border-radius:1.5pt; margin:2.5pt 0 4pt; break-inside:avoid;}
+
+/* --------------------------- TABLEAUX ----------------------------- */
+table{width:100%; border-collapse:collapse; font-size:7.6pt; margin:2pt 0 4pt; break-inside:avoid;}
+th{background:var(--bleu); color:#fff; font-weight:700; text-align:left; padding:1.8pt 4pt; font-size:7.2pt;}
+td{border:.6pt solid var(--gris-clair); padding:1.8pt 4pt; vertical-align:top;}
+tr{break-inside:avoid;}
+table.var td{text-align:center; font-size:8pt;}
+table.var td.lab{text-align:left; font-weight:700; color:var(--bleu-fonce); background:var(--bleu-pale);}
+
+/* ----------------------------- PIEGES ----------------------------- */
+table.pieges th:first-child{width:44%;}
+table.pieges td:first-child{color:var(--rouge); background:#FDF1F0;}
+.x{font-weight:700;}
+.v{color:var(--vert-fonce); font-weight:700;}
+
+/* ---------------------------- RECAP ------------------------------- */
+ol.recap{margin:0; padding-left:0; list-style:none; counter-reset:r;}
+ol.recap li{
+  counter-increment:r; position:relative; padding-left:13pt; margin-bottom:1.8pt;
+  break-inside:avoid;
+}
+ol.recap li::before{
+  content:counter(r); position:absolute; left:0; top:.3pt;
+  width:10pt; height:10pt; border-radius:50%; background:var(--vert); color:#fff;
+  font-size:6.6pt; font-weight:700; text-align:center; line-height:10pt;
+}
+
+/* --------------------------- MATHS -------------------------------- */
+.m{font-family:Cambria,Georgia,"Times New Roman",serif;}
+i,var{font-family:Cambria,Georgia,"Times New Roman",serif; font-style:italic;}
+.op{font-family:Cambria,Georgia,"Times New Roman",serif; font-style:normal;}
+.f{display:inline-block; vertical-align:middle; text-align:center;
+   margin:0 .12em; line-height:1.06; font-family:Cambria,Georgia,"Times New Roman",serif;}
+.f>span{display:block; padding:0 .2em;}
+.f>span:first-child{border-bottom:.6pt solid currentColor; padding-bottom:.08em;}
+.f>span:last-child{padding-top:.04em;}
+.rad{border-top:.6pt solid currentColor; padding-top:.12em;}
+/* line-height:0 evite que l'exposant n'ecarte les lignes ; position:relative le
+   repositionne sans qu'il heurte la barre de fraction ni le trait du radical. */
+sup,sub{font-size:.68em; line-height:0; position:relative; vertical-align:baseline;}
+sup{top:-.42em;}
+sub{bottom:-.22em;}
+.pt{white-space:nowrap;}
+/* Les fleches n'ont qu'un glyphe atrophie dans la fonte serif : on les force
+   en sans-serif, ou elles sont franches meme a 8 pt. */
+.ar{font-family:"Segoe UI",Calibri,Arial,"DejaVu Sans",sans-serif; font-style:normal;}
+
+/* ------------------- PIEGES : blocs erreur / correction ------------- */
+.pg{font-size:8.1pt; border-left:2.4pt solid var(--rouge); background:#FDF1F0; border-radius:1.5pt;
+    padding:2pt 5pt; margin:0 0 2.8pt; break-inside:avoid; page-break-inside:avoid;}
+.pg .err{color:var(--rouge); font-weight:600;}
+.pg .cor{color:#1B1B1B; margin-top:.8pt;}
+.pg .cor b{color:var(--bleu-fonce);}
+.v{color:var(--vert-fonce); font-weight:700;}
+
+</style>
+</head>
+<body>
+<header class="entete">
+  <div class="num">3</div>
+  <div class="txt">
+    <div class="niveau">1ERE D &middot; MATHEMATIQUES</div>
+    <h1>Problèmes algébriques et numériques</h1>
+    <div class="sous">Leçon 1 : équations avec radicaux &middot; Leçon 2 : inéquations avec radicaux &middot; Leçon 3 : systèmes linéaires</div>
+  </div>
+</header>
+
+<div class="bandeau bleu" style="margin-top:0">L'ESSENTIEL</div>
+<div class="cols">
+
+<!-- ================= LECON 1 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 1&nbsp;: Equations avec radicaux</h2>
+<div class="form">
+  <span class="t">EQUATION &#8730;<span class="rad"><i>f</i>(<i>x</i>)</span>&#8239;=&#8239;<i>g</i>(<i>x</i>)&nbsp;: TROIS CONDITIONS SIMULTANEES</span>
+  <div class="c m">&#8730;<span class="rad"><i>f</i>(<i>x</i>)</span>&#8239;=&#8239;<i>g</i>(<i>x</i>)&nbsp;<span class="ar">&#8660;</span>&nbsp;<span class="pt"><i>f</i>(<i>x</i>)&#8239;&#8805;&#8239;0</span> &nbsp;et&nbsp; <span class="pt"><i>g</i>(<i>x</i>)&#8239;&#8805;&#8239;0</span> &nbsp;et&nbsp; <span class="pt"><i>f</i>(<i>x</i>)&#8239;=&#8239;(<i>g</i>(<i>x</i>))<sup>2</sup></span></div>
+</div></div>
+<ul>
+<li><b>1<sup>re</sup> condition</b> : <b>existence</b> du radical ; elle donne l'<b>ensemble de validité</b> <i>V</i>.</li>
+<li><b>2<sup>e</sup> condition</b> : une racine carrée est <b>positive ou nulle</b>, donc le second membre l'est aussi.</li>
+<li><b>3<sup>e</sup> condition</b> : équation obtenue en élevant au carré. On la résout, puis on <b>ne garde</b> que les valeurs vérifiant aussi les deux premières.</li>
+</ul>
+<p>Deux nombres positifs qui ont le même carré sont égaux : c'est ce que garantissent les deux premières lignes, et c'est ce qui fait de ce système une <b>équivalence</b>. Sans elles, l'élévation au carré n'est qu'une <b>implication</b> et laisse ouverte la possibilité <span class="pt">&#8730;<span class="rad"><i>f</i>(<i>x</i>)</span>&#8239;=&#8239;&#8722;<i>g</i>(<i>x</i>)</span>, source des <b>solutions parasites</b>.</p>
+</div>
+
+<div class="bloc">
+<div class="form">
+  <span class="t">DEUX CAS PARTICULIERS</span>
+  <div class="c m">&#8730;<span class="rad"><i>f</i>(<i>x</i>)</span>&#8239;=&#8239;&#8730;<span class="rad"><i>g</i>(<i>x</i>)</span>&nbsp;<span class="ar">&#8660;</span>&nbsp;<span class="pt"><i>f</i>(<i>x</i>)&#8239;&#8805;&#8239;0</span> &nbsp;et&nbsp; <span class="pt"><i>f</i>(<i>x</i>)&#8239;=&#8239;<i>g</i>(<i>x</i>)</span></div>
+  <div class="c m">&#8730;<span class="rad"><i>f</i>(<i>x</i>)</span>&#8239;=&#8239;<i>k</i> : &nbsp;aucune solution si <i>k</i>&#8239;&lt;&#8239;0 ; &nbsp;équivaut à <span class="pt"><i>f</i>(<i>x</i>)&#8239;=&#8239;<i>k</i><sup>2</sup></span> si <i>k</i>&#8239;&#8805;&#8239;0</div>
+</div>
+<p>Pour deux radicaux, <b>aucune condition de signe</b> n'est à ajouter : les deux membres sont déjà positifs, et une seule condition d'existence suffit, l'autre en découle. Pour un second membre <b>constant négatif</b>, on conclut en une ligne, sans élever au carré.</p>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Marche à suivre</h3>
+<ul>
+<li>Poser <span class="pt"><i>f</i>(<i>x</i>)&#8239;&#8805;&#8239;0</span> et résoudre : ensemble de validité <i>V</i>.</li>
+<li>Poser <span class="pt"><i>g</i>(<i>x</i>)&#8239;&#8805;&#8239;0</span> et résoudre. Si aucun <i>x</i> de <i>V</i> ne la vérifie, il n'y a pas de solution.</li>
+<li>Elever au carré, résoudre <span class="pt"><i>f</i>(<i>x</i>)&#8239;=&#8239;(<i>g</i>(<i>x</i>))<sup>2</sup></span> en <b>développant</b> le carré du second membre.</li>
+<li><b>Confronter</b> chaque valeur trouvée aux deux conditions et écarter celles qui n'y satisfont pas.</li>
+<li><b>Vérifier</b> les valeurs retenues dans l'équation de départ, en calculant les deux membres séparément, puis conclure par une phrase.</li>
+</ul>
+<div class="note"><b>Deux radicaux séparés.</b> On <b>isole</b> un radical, on élève au carré, on simplifie, on isole de nouveau, puis on élève une <b>seconde fois</b>.</div>
+</div>
+
+<!-- ================= LECON 2 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 2&nbsp;: Inéquations avec radicaux</h2>
+<div class="form">
+  <span class="t">INEQUATION &#8730;<span class="rad"><i>f</i>(<i>x</i>)</span>&#8239;&lt;&#8239;<i>g</i>(<i>x</i>)&nbsp;: INTERSECTION</span>
+  <div class="c m">&#8730;<span class="rad"><i>f</i>(<i>x</i>)</span>&#8239;&lt;&#8239;<i>g</i>(<i>x</i>)&nbsp;<span class="ar">&#8660;</span>&nbsp;<span class="pt"><i>f</i>(<i>x</i>)&#8239;&#8805;&#8239;0</span> &nbsp;et&nbsp; <span class="pt"><i>g</i>(<i>x</i>)&#8239;&gt;&#8239;0</span> &nbsp;et&nbsp; <span class="pt"><i>f</i>(<i>x</i>)&#8239;&lt;&#8239;(<i>g</i>(<i>x</i>))<sup>2</sup></span></div>
+  <div class="c m">inégalité <b>large</b> : &nbsp;les deux dernières conditions deviennent <span class="pt"><i>g</i>(<i>x</i>)&#8239;&#8805;&#8239;0</span> &nbsp;et&nbsp; <span class="pt"><i>f</i>(<i>x</i>)&#8239;&#8804;&#8239;(<i>g</i>(<i>x</i>))<sup>2</sup></span></div>
+</div></div>
+<p>L'ensemble des solutions est l'<b>intersection</b> des trois ensembles obtenus. La condition <span class="pt"><i>g</i>(<i>x</i>)&#8239;&gt;&#8239;0</span> est celle qu'on oublie : une racine carrée, positive ou nulle, ne peut être strictement inférieure à <i>g</i>(<i>x</i>) que si <i>g</i>(<i>x</i>) est strictement positif. Le passage au carré n'est une équivalence que parce que <b>les deux membres sont positifs</b> : sur les positifs, élever au carré <b>conserve</b> l'ordre.</p>
+</div>
+
+<div class="bloc">
+<div class="form">
+  <span class="t">INEQUATION &#8730;<span class="rad"><i>f</i>(<i>x</i>)</span>&#8239;&gt;&#8239;<i>g</i>(<i>x</i>)&nbsp;: REUNION DE DEUX CAS</span>
+  <div class="c m"><b>Cas 1</b> : &nbsp;<span class="pt"><i>f</i>(<i>x</i>)&#8239;&#8805;&#8239;0</span> &nbsp;et&nbsp; <span class="pt"><i>g</i>(<i>x</i>)&#8239;&lt;&#8239;0</span> &nbsp;(inégalité <b>automatiquement vraie</b>)</div>
+  <div class="c m"><b>Cas 2</b> : &nbsp;<span class="pt"><i>g</i>(<i>x</i>)&#8239;&#8805;&#8239;0</span> &nbsp;et&nbsp; <span class="pt"><i>f</i>(<i>x</i>)&#8239;&gt;&#8239;(<i>g</i>(<i>x</i>))<sup>2</sup></span></div>
+</div>
+<p>La solution est la <b>réunion</b> des deux ensembles ; au cas 2, la condition <span class="pt"><i>f</i>(<i>x</i>)&#8239;&#8805;&#8239;0</span> est automatique. Une seule idée commande les deux encadrés, le <b>signe du second membre</b>, mais elle produit deux effets opposés : pour &lt; l'inégalité devient impossible et l'on <b>intersecte</b> ; pour &gt; elle devient certaine et l'on <b>réunit</b>.</p>
+</div>
+
+<div class="bloc">
+<div class="form">
+  <span class="t">COMPARER DEUX RADICAUX</span>
+  <div class="c m">&#8730;<span class="rad"><i>f</i>(<i>x</i>)</span>&#8239;&lt;&#8239;&#8730;<span class="rad"><i>g</i>(<i>x</i>)</span>&nbsp;<span class="ar">&#8660;</span>&nbsp;<span class="pt">0&#8239;&#8804;&#8239;<i>f</i>(<i>x</i>)&#8239;&lt;&#8239;<i>g</i>(<i>x</i>)</span></div>
+  <div class="c m">&#8730;<span class="rad"><i>f</i>(<i>x</i>)</span>&#8239;&#8804;&#8239;&#8730;<span class="rad"><i>g</i>(<i>x</i>)</span>&nbsp;<span class="ar">&#8660;</span>&nbsp;<span class="pt">0&#8239;&#8804;&#8239;<i>f</i>(<i>x</i>)&#8239;&#8804;&#8239;<i>g</i>(<i>x</i>)</span></div>
+</div>
+<p>Cas le plus simple : aucune condition de signe, et une seule condition d'existence, celle du <b>plus petit</b> radicand. L'inégalité se transmet du radicand à la racine <b>sans changer de sens</b>, la fonction racine carrée étant <b>croissante</b>.</p>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Marche à suivre</h3>
+<ul>
+<li>Pour &lt; : résoudre les trois conditions, hachurer les trois ensembles sur un <b>axe</b>, prendre la <b>partie commune</b>.</li>
+<li>Pour &gt; : traiter le <b>cas 1</b>, puis le <b>cas 2</b>, et <b>réunir</b> ; vérifier que les bornes se recollent, les deux morceaux se rejoignant souvent en un seul intervalle.</li>
+<li>Le carré ramène à une inéquation du <b>second degré</b> : tableau de signes obligatoire.</li>
+<li>Conclure en intervalles, en soignant les crochets, <b>ouverts</b> ou <b>fermés</b>.</li>
+</ul>
+<div class="note"><b>Quand la condition d'existence n'est pas un intervalle.</b> Si le radicand est un trinôme, sa positivité s'écrit en <b>réunion</b> de deux intervalles : <span class="pt"><i>x</i><sup>2</sup>&#8239;&#8722;&#8239;4&#8239;&#8805;&#8239;0</span> donne <span class="pt">]&#8722;&#8734;&#8239;;&#8239;&#8722;2]&#8239;&#8746;&#8239;[2&#8239;;&#8239;+&#8734;[</span>, et l'intersection finale se fait morceau par morceau. La méthode, elle, ne change pas.</div>
+</div>
+
+<!-- ================= LECON 3 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 3&nbsp;: Systèmes linéaires</h2>
+<p>Une équation est <b>linéaire</b> lorsque chaque inconnue y figure au <b>premier degré seulement</b>, sans carré, sans produit d'inconnues et sans radical. <b>Résoudre un système</b>, c'est trouver <b>toutes</b> les valeurs des inconnues qui vérifient <b>toutes</b> les équations à la fois : une solution est un <b>couple</b> <span class="pt">(<i>x</i>&#8239;;&#8239;<i>y</i>)</span> à deux inconnues, un <b>triplet</b> <span class="pt">(<i>x</i>&#8239;;&#8239;<i>y</i>&#8239;;&#8239;<i>z</i>)</span> à trois. Deux systèmes sont <b>équivalents</b> lorsqu'ils ont exactement le même ensemble de solutions.</p></div>
+<div class="form">
+  <span class="t">OPERATIONS QUI CONSERVENT LES SOLUTIONS</span>
+  <div class="c m">échanger deux équations &nbsp;&middot;&nbsp; multiplier une équation par un nombre <b>non nul</b></div>
+  <div class="c m">ajouter à une équation un multiple d'une <b>autre</b> équation</div>
+</div>
+<p>On note ces opérations en marge, par exemple <span class="pt"><i>L</i><sub>2</sub>&#8239;<span class="ar">&#8592;</span>&#8239;<i>L</i><sub>2</sub>&#8239;&#8722;&#8239;2<i>L</i><sub>1</sub></span>. Multiplier par 0 transformerait l'équation en <span class="pt">0&#8239;=&#8239;0</span> et ferait gagner de fausses solutions ; ajouter à <i>L</i><sub>2</sub> un multiple d'elle-même la ferait disparaître. Ces précautions garantissent qu'on peut toujours <b>revenir en arrière</b> : c'est le retour qui fait l'équivalence.</p>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Nombre de solutions d'un système 2&#215;2</h3>
+<p>Chaque équation <span class="pt"><i>ax</i>&#8239;+&#8239;<i>by</i>&#8239;=&#8239;<i>c</i></span> représente une <b>droite</b> du plan. Trois configurations, et trois seulement :</p>
+<table>
+<tr><th>Les deux droites</th><th>Solutions</th><th>Le calcul aboutit à</th></tr>
+<tr><td><b>sécantes</b></td><td>une solution <b>unique</b></td><td class="m">un couple de valeurs</td></tr>
+<tr><td><b>strictement parallèles</b></td><td><b>aucune</b> solution</td><td class="m">0&#8239;=&#8239;3</td></tr>
+<tr><td><b>confondues</b></td><td>une <b>infinité</b> de solutions</td><td class="m">0&#8239;=&#8239;0</td></tr>
+</table>
+<div class="form">
+  <span class="t">DETERMINANT DU SYSTEME <i>ax</i>&#8239;+&#8239;<i>by</i>&#8239;=&#8239;<i>c</i> ET <i>a</i>&#8242;<i>x</i>&#8239;+&#8239;<i>b</i>&#8242;<i>y</i>&#8239;=&#8239;<i>c</i>&#8242;</span>
+  <div class="c m"><i>ab</i>&#8242;&#8239;&#8722;&#8239;<i>a</i>&#8242;<i>b</i>&#8239;&#8800;&#8239;0&nbsp;<span class="ar">&#8660;</span>&nbsp;droites <b>sécantes</b>&nbsp;<span class="ar">&#8660;</span>&nbsp;solution <b>unique</b></div>
+</div>
+<p>Si <span class="pt"><i>ab</i>&#8242;&#8239;&#8722;&#8239;<i>a</i>&#8242;<i>b</i>&#8239;=&#8239;0</span>, les couples <span class="pt">(<i>a</i>&#8239;;&#8239;<i>b</i>)</span> et <span class="pt">(<i>a</i>&#8242;&#8239;;&#8239;<i>b</i>&#8242;)</span> sont <b>proportionnels</b> : même direction, donc droites parallèles, éventuellement confondues. On départage par les <b>seconds membres</b>.</p>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Trois techniques de résolution</h3>
+<ul>
+<li><b>Combinaison</b> : ranger les inconnues en <b>colonnes</b>, rendre les coefficients d'une inconnue <b>égaux au signe près</b>, additionner ou soustraire pour l'éliminer, résoudre, puis reporter dans une équation de départ.</li>
+<li><b>Substitution</b> : repérer une inconnue de coefficient 1 ou &#8722;1, l'exprimer en fonction de l'autre, la <b>remplacer dans toutes</b> les autres équations, résoudre, puis remonter.</li>
+<li><b>Pivot de Gauss</b> : par combinaisons successives, amener le système à une <b>forme en escalier</b>, puis <b>remonter</b> de la dernière équation vers la première.</li>
+</ul>
+<p>Dans les trois cas, <b>vérifier</b> le couple ou le triplet dans <b>toutes</b> les équations initiales avant de conclure.</p>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Mettre un problème en système</h3>
+<ul>
+<li><b>Nommer</b> les inconnues par une <b>phrase complète</b>, avec l'unité : « soit <i>x</i> le prix d'un sac de mil, en FCFA ».</li>
+<li><b>Traduire</b> chaque information par une équation : en principe autant d'équations que d'inconnues.</li>
+<li><b>Nettoyer</b> le système : chasser les dénominateurs, simplifier les coefficients par un diviseur commun.</li>
+<li><b>Résoudre</b>, <b>vérifier</b>, puis <b>conclure par une phrase</b> revenant au contexte, avec les unités, en contrôlant la vraisemblance (un prix négatif, un effectif décimal doivent alerter).</li>
+</ul>
+<div class="form">
+  <span class="t">PARTAGE PROPORTIONNEL D'UNE SOMME <i>S</i> A <i>p</i>, <i>q</i>, <i>r</i></span>
+  <div class="c m">parts&#8239;: <i>pk</i>, <i>qk</i>, <i>rk</i> &nbsp;&nbsp;et&nbsp;&nbsp; (<i>p</i>&#8239;+&#8239;<i>q</i>&#8239;+&#8239;<i>r</i>)&#8239;<i>k</i>&#8239;=&#8239;<i>S</i></div>
+</div>
+<p>Un partage proportionnel n'introduit qu'<b>une seule inconnue véritable</b>, le coefficient <i>k</i>, quel que soit le nombre de parts. On contrôle à la fin que la somme des parts vaut bien <i>S</i>.</p>
+</div>
+
+</div>
+
+<div class="bandeau vert">PIEGES ET ERREURS FREQUENTES</div>
+<div class="cols">
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> <span class="pt">&#8730;<span class="rad"><i>x</i>&#8239;+&#8239;2</span>&#8239;=&#8239;<i>x</i></span> donne <i>x</i>&#8239;=&#8239;2 ou <i>x</i>&#8239;=&#8239;&#8722;1 &nbsp;&middot;&nbsp; « j'ai posé <span class="pt"><i>x</i>&#8239;+&#8239;2&#8239;&#8805;&#8239;0</span>, donc j'ai vérifié »</div><div class="cor"><span class="v">&#10003;</span> L'élévation au carré est une <b>implication</b> : elle crée des <b>solutions parasites</b>. Ici &#8722;1 vérifie bien la condition d'existence ; c'est la condition de <b>signe</b> <span class="pt"><i>x</i>&#8239;&#8805;&#8239;0</span> qui l'écarte, car <span class="pt">&#8730;<span class="rad">1</span>&#8239;=&#8239;1&#8239;&#8800;&#8239;&#8722;1</span>. Seule solution : <i>x</i>&#8239;=&#8239;2.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> <span class="pt">&#8730;<span class="rad"><i>x</i>&#8239;+&#8239;3</span>&#8239;=&#8239;&#8722;1</span> a pour solution <i>x</i>&#8239;=&#8239;&#8722;2</div><div class="cor"><span class="v">&#10003;</span> Une racine carrée est toujours <b>positive ou nulle</b> : elle ne peut valoir &#8722;1. <b>Aucune</b> solution, et sans aucun calcul. Celui qui élève au carré a résolu <span class="pt">&#8730;<span class="rad"><i>x</i>&#8239;+&#8239;3</span>&#8239;=&#8239;1</span>, une équation différente.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> <span class="pt">&#8730;<span class="rad"><i>x</i>&#8239;+&#8239;4</span>&#8239;=&#8239;<i>x</i>&#8239;+&#8239;2</span> donne <span class="pt"><i>x</i>&#8239;+&#8239;4&#8239;=&#8239;<i>x</i><sup>2</sup>&#8239;+&#8239;4</span> &nbsp;&middot;&nbsp; <span class="pt">&#8730;<span class="rad"><i>a</i>&#8239;+&#8239;<i>b</i></span>&#8239;=&#8239;&#8730;<span class="rad"><i>a</i></span>&#8239;+&#8239;&#8730;<span class="rad"><i>b</i></span></span></div><div class="cor"><span class="v">&#10003;</span> Le carré d'une somme n'est pas la somme des carrés : <span class="pt">(<i>x</i>&#8239;+&#8239;2)<sup>2</sup>&#8239;=&#8239;<i>x</i><sup>2</sup>&#8239;+&#8239;4<i>x</i>&#8239;+&#8239;4</span>, d'où <span class="pt"><i>x</i><sup>2</sup>&#8239;+&#8239;3<i>x</i>&#8239;=&#8239;0</span>, du <b>second degré</b>. De même <span class="pt">&#8730;<span class="rad">9&#8239;+&#8239;16</span>&#8239;=&#8239;5</span> alors que <span class="pt">&#8730;<span class="rad">9</span>&#8239;+&#8239;&#8730;<span class="rad">16</span>&#8239;=&#8239;7</span>.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> <span class="pt">&#8730;<span class="rad"><i>f</i>(<i>x</i>)</span>&#8239;&lt;&#8239;<i>g</i>(<i>x</i>)</span> équivaut à <span class="pt"><i>f</i>(<i>x</i>)&#8239;&lt;&#8239;(<i>g</i>(<i>x</i>))<sup>2</sup></span> &nbsp;&middot;&nbsp; « je vérifierai à la fin »</div><div class="cor"><span class="v">&#10003;</span> Il faut <b>aussi</b> <span class="pt"><i>f</i>(<i>x</i>)&#8239;&#8805;&#8239;0</span> <b>et</b> <span class="pt"><i>g</i>(<i>x</i>)&#8239;&gt;&#8239;0</span>, et la solution est l'<b>intersection</b> des trois. Une inéquation ne se vérifie pas après coup : son ensemble solution contient une infinité de valeurs. Les conditions se posent <b>avant</b>, jamais après.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> <span class="pt">&#8730;<span class="rad"><i>x</i>&#8239;+&#8239;6</span>&#8239;&gt;&#8239;<i>x</i></span> : j'élève au carré, donc <span class="pt"><i>x</i>&#8239;+&#8239;6&#8239;&gt;&#8239;<i>x</i><sup>2</sup></span></div><div class="cor"><span class="v">&#10003;</span> Pour &gt;, on <b>discute d'abord le signe</b> du second membre : si <i>x</i>&#8239;&lt;&#8239;0 l'inégalité est vraie partout où le radical existe ; le carré ne s'applique que si <i>x</i>&#8239;&#8805;&#8239;0. On prend ensuite la <b>réunion</b> des deux ensembles, jamais leur intersection.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> Une inégalité large, c'est la stricte à laquelle on ajoute la borne</div><div class="cor"><span class="v">&#10003;</span> Les bonnes conditions s'écrivent <b>dès le départ</b> : pour <span class="pt">&#8730;<span class="rad"><i>f</i>(<i>x</i>)</span>&#8239;&#8804;&#8239;<i>g</i>(<i>x</i>)</span>, ce sont <span class="pt"><i>g</i>(<i>x</i>)&#8239;&#8805;&#8239;0</span> et <span class="pt"><i>f</i>(<i>x</i>)&#8239;&#8804;&#8239;(<i>g</i>(<i>x</i>))<sup>2</sup></span>. Une borne se justifie par un <b>calcul</b>, jamais par une impression : la remplacer dans l'inéquation de départ tranche la question.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> Le système <span class="pt"><i>x</i>&#8239;+&#8239;<i>y</i>&#8239;=&#8239;1</span> et <span class="pt">2<i>x</i>&#8239;+&#8239;2<i>y</i>&#8239;=&#8239;5</span> a une solution &nbsp;&middot;&nbsp; le système <span class="pt"><i>x</i>&#8239;&#8722;&#8239;<i>y</i>&#8239;=&#8239;1</span> et <span class="pt">2<i>x</i>&#8239;&#8722;&#8239;2<i>y</i>&#8239;=&#8239;2</span> n'en a pas</div><div class="cor"><span class="v">&#10003;</span> C'est l'inverse. Le premier aboutit à <span class="pt">0&#8239;=&#8239;3</span> : droites <b>strictement parallèles</b>, <b>aucune</b> solution. Le second aboutit à <span class="pt">0&#8239;=&#8239;0</span>, la seconde équation étant le double de la première : droites <b>confondues</b>, une <b>infinité</b> de solutions.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> Réponse d'un problème : « (2&#8239;;&#8239;5) », sans phrase, sans unité, sans vérification</div><div class="cor"><span class="v">&#10003;</span> Ecrire la phrase qui <b>définit</b> les inconnues avec leur unité, les garder dans le <b>même ordre</b> d'une équation à l'autre, contrôler le couple dans <b>toutes</b> les équations de départ, puis conclure dans l'unité de la question. Un résultat invraisemblable signale une erreur de mise en équation.</div></div>
+
+</div>
+
+<div class="bandeau bleu">A SAVOIR PAR COEUR AVANT LE DEVOIR</div>
+<div class="cols">
+<ol class="recap">
+<li><span class="pt">&#8730;<span class="rad"><i>f</i>(<i>x</i>)</span></span> n'existe que si <span class="pt"><i>f</i>(<i>x</i>)&#8239;&#8805;&#8239;0</span>, et une racine carrée est <b>toujours positive ou nulle</b> : ces deux faits commandent tout le chapitre.</li>
+<li><b>Equation</b> : <span class="pt">&#8730;<span class="rad"><i>f</i></span>&#8239;=&#8239;<i>g</i></span> <span class="ar">&#8660;</span> <span class="pt"><i>f</i>&#8239;&#8805;&#8239;0</span>, <span class="pt"><i>g</i>&#8239;&#8805;&#8239;0</span>, <span class="pt"><i>f</i>&#8239;=&#8239;<i>g</i><sup>2</sup></span>, puis <b>vérifier</b> &nbsp;&middot;&nbsp; le carré crée des solutions parasites.</li>
+<li><span class="pt">&#8730;<span class="rad"><i>f</i></span>&#8239;=&#8239;&#8730;<span class="rad"><i>g</i></span></span> <span class="ar">&#8660;</span> <span class="pt"><i>f</i>&#8239;=&#8239;<i>g</i></span> avec <span class="pt"><i>f</i>&#8239;&#8805;&#8239;0</span> &nbsp;&middot;&nbsp; <span class="pt">&#8730;<span class="rad"><i>f</i></span>&#8239;=&#8239;<i>k</i></span> avec <i>k</i>&#8239;&lt;&#8239;0 : aucune solution &nbsp;&middot;&nbsp; deux radicaux séparés : isoler, carré, isoler, carré.</li>
+<li><b>Inéquation</b> : <span class="pt">&#8730;<span class="rad"><i>f</i></span>&#8239;&lt;&#8239;<i>g</i></span> <span class="ar">&#8660;</span> <span class="pt"><i>f</i>&#8239;&#8805;&#8239;0</span>, <span class="pt"><i>g</i>&#8239;&gt;&#8239;0</span>, <span class="pt"><i>f</i>&#8239;&lt;&#8239;<i>g</i><sup>2</sup></span> : <b>intersection</b> des trois. Version large : <span class="pt"><i>f</i>&#8239;&#8805;&#8239;0</span>, <span class="pt"><i>g</i>&#8239;&#8805;&#8239;0</span> et <span class="pt"><i>f</i>&#8239;&#8804;&#8239;<i>g</i><sup>2</sup></span>.</li>
+<li><span class="pt">&#8730;<span class="rad"><i>f</i></span>&#8239;&gt;&#8239;<i>g</i></span> : cas <span class="pt"><i>g</i>&#8239;&lt;&#8239;0</span> (vrai dès que <span class="pt"><i>f</i>&#8239;&#8805;&#8239;0</span>) <b>réuni</b> au cas <span class="pt"><i>g</i>&#8239;&#8805;&#8239;0</span> avec <span class="pt"><i>f</i>&#8239;&gt;&#8239;<i>g</i><sup>2</sup></span> &nbsp;&middot;&nbsp; <span class="pt">&#8730;<span class="rad"><i>f</i></span>&#8239;&lt;&#8239;&#8730;<span class="rad"><i>g</i></span></span> <span class="ar">&#8660;</span> <span class="pt">0&#8239;&#8804;&#8239;<i>f</i>&#8239;&lt;&#8239;<i>g</i></span>.</li>
+<li><b>Opérations autorisées</b> sur un système : échanger deux équations, multiplier une équation par un nombre <b>non nul</b>, ajouter à une équation un multiple d'une <b>autre</b> équation.</li>
+<li><b>Système 2&#215;2</b> : une solution si <span class="pt"><i>ab</i>&#8242;&#8239;&#8722;&#8239;<i>a</i>&#8242;<i>b</i>&#8239;&#8800;&#8239;0</span> (sécantes) ; aucune si strictement parallèles (<span class="pt">0&#8239;=&#8239;3</span>) ; une infinité si confondues (<span class="pt">0&#8239;=&#8239;0</span>). Résolution par combinaison, substitution ou pivot de Gauss.</li>
+<li><b>Mise en équation</b> : nommer les inconnues par une phrase et une unité, une équation par information, chasser les dénominateurs ; partage proportionnel : parts <i>pk</i>, <i>qk</i>, <i>rk</i> et une seule inconnue <i>k</i>. Vérifier dans toutes les équations, conclure par une phrase.</li>
+</ol>
+</div>
+
+</body>
+</html>

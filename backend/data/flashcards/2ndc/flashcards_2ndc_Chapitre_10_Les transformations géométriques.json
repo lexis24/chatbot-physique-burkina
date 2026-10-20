@@ -1,0 +1,332 @@
+{
+  "niveau": "2nde C",
+  "chapitre": "Chapitre 10 : Les transformations géométriques",
+  "source": "maths/2ndc/Chapitre_10_Transformations",
+  "nombre_cartes": 36,
+  "cartes": [
+    {
+      "id": "2C-CH10-001",
+      "lecon": "Transformations connues : translation, symétrie centrale, symétrie orthogonale",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on une transformation du plan ?",
+      "verso": "Une règle qui associe à tout point $M$ du plan un unique point $M'$, de telle façon que tout point du plan soit l'image d'un point et d'un seul. On note $M' = f(M)$ : $M'$ est l'image de $M$, et $M$ est l'antécédent de $M'$.",
+      "difficulte": 1,
+      "tags": ["transformation", "definition", "image"]
+    },
+    {
+      "id": "2C-CH10-002",
+      "lecon": "Transformations connues : translation, symétrie centrale, symétrie orthogonale",
+      "type": "definition",
+      "recto": "Qu'est-ce qu'un point invariant d'une transformation ?",
+      "verso": "Un point qui est sa propre image, c'est-à-dire un point $M$ tel que $f(M) = M$. Cela ne signifie pas que la transformation ne fait rien : ce point-là ne bouge pas, alors que les autres bougent.",
+      "difficulte": 1,
+      "tags": ["point-invariant", "transformation"]
+    },
+    {
+      "id": "2C-CH10-003",
+      "lecon": "Transformations connues : translation, symétrie centrale, symétrie orthogonale",
+      "type": "definition",
+      "recto": "Comment la translation de vecteur $\\vec{u}$ transforme-t-elle un point $M$ ?",
+      "verso": "Elle lui associe le point $M'$ tel que $\\overrightarrow{MM'} = \\vec{u}$. Toutes les flèches qui joignent un point à son image sont identiques : la figure se déplace d'un seul bloc, sans pivoter ni se retourner. Une translation de vecteur non nul n'a aucun point invariant.",
+      "difficulte": 1,
+      "tags": ["translation", "definition"]
+    },
+    {
+      "id": "2C-CH10-004",
+      "lecon": "Transformations connues : translation, symétrie centrale, symétrie orthogonale",
+      "type": "definition",
+      "recto": "Comment la symétrie centrale de centre $O$ transforme-t-elle un point $M$ ?",
+      "verso": "Elle lui associe le point $M'$ tel que $O$ soit le milieu de $[MM']$, ce qui s'écrit aussi $\\overrightarrow{OM'} = -\\overrightarrow{OM}$. Le centre $O$ est son unique point invariant.",
+      "difficulte": 1,
+      "tags": ["symetrie-centrale", "definition"]
+    },
+    {
+      "id": "2C-CH10-005",
+      "lecon": "Transformations connues : translation, symétrie centrale, symétrie orthogonale",
+      "type": "definition",
+      "recto": "Comment la symétrie orthogonale d'axe $(D)$ transforme-t-elle un point $M$ situé hors de l'axe ?",
+      "verso": "Elle lui associe le point $M'$ tel que $(D)$ soit la médiatrice de $[MM']$ : l'axe coupe le segment en son milieu et à angle droit. Tout point de $(D)$ est sa propre image, si bien que l'axe est une droite entière de points invariants.",
+      "difficulte": 1,
+      "tags": ["symetrie-orthogonale", "definition", "mediatrice"]
+    },
+    {
+      "id": "2C-CH10-006",
+      "lecon": "Transformations connues : translation, symétrie centrale, symétrie orthogonale",
+      "type": "definition",
+      "recto": "Qu'est-ce qu'une isométrie ?",
+      "verso": "Une transformation qui conserve les distances : si $A'$ et $B'$ sont les images de $A$ et $B$, alors $A'B' = AB$. La translation, la symétrie centrale, la symétrie orthogonale et la rotation en sont. Le mot vient du grec pour même mesure.",
+      "difficulte": 1,
+      "tags": ["isometrie", "definition"]
+    },
+    {
+      "id": "2C-CH10-007",
+      "lecon": "Transformations connues : translation, symétrie centrale, symétrie orthogonale",
+      "type": "formule",
+      "recto": "Quelles grandeurs une isométrie conserve-t-elle en plus des distances ?",
+      "verso": "Les longueurs, les périmètres, les aires, les angles, l'alignement, le parallélisme, l'orthogonalité, les milieux et les barycentres. Tout cela découle de la seule conservation des distances, qui est donc la seule chose à retenir.",
+      "difficulte": 2,
+      "tags": ["isometrie", "conservation"]
+    },
+    {
+      "id": "2C-CH10-008",
+      "lecon": "Transformations connues : translation, symétrie centrale, symétrie orthogonale",
+      "type": "definition",
+      "recto": "Comment reconnaître dans un énoncé s'il s'agit d'une symétrie centrale ou d'une symétrie orthogonale ?",
+      "verso": "On regarde la donnée fournie : un point annonce une symétrie centrale, une droite annonce une symétrie orthogonale. Le symétrique de $M\\left(2\\,;\\,3\\right)$ par rapport à l'origine est $\\left(-2\\,;\\,-3\\right)$, alors que son symétrique par rapport à l'axe des abscisses est $\\left(2\\,;\\,-3\\right)$.",
+      "difficulte": 3,
+      "tags": ["symetrie-centrale", "symetrie-orthogonale", "piege"]
+    },
+    {
+      "id": "2C-CH10-009",
+      "lecon": "Transformations connues : translation, symétrie centrale, symétrie orthogonale",
+      "type": "formule",
+      "recto": "Quelles coordonnées a le symétrique de $M\\left(x\\,;\\,y\\right)$ par rapport à l'axe des abscisses ?",
+      "verso": "$\\left(x\\,;\\,-y\\right)$ : cet axe est la droite d'équation $y = 0$, donc seule l'ordonnée change de signe. Par rapport à l'axe des ordonnées on obtient $\\left(-x\\,;\\,y\\right)$, et par rapport à l'origine $\\left(-x\\,;\\,-y\\right)$.",
+      "difficulte": 2,
+      "tags": ["symetrie-orthogonale", "coordonnees"]
+    },
+    {
+      "id": "2C-CH10-010",
+      "lecon": "L'homothétie",
+      "type": "definition",
+      "recto": "Comment définit-on l'homothétie de centre $O$ et de rapport $k$ ?",
+      "verso": "C'est la transformation qui associe à tout point $M$ le point $M'$ tel que $\\overrightarrow{OM'} = k\\cdot\\overrightarrow{OM}$, le réel $k$ étant non nul. On la note $h(O\\,;\\,k)$, et le centre $O$ est son seul point invariant dès que $k \\ne 1$.",
+      "difficulte": 1,
+      "tags": ["homothetie", "definition"]
+    },
+    {
+      "id": "2C-CH10-011",
+      "lecon": "L'homothétie",
+      "type": "formule",
+      "recto": "Où se place l'image d'un point $M$ par l'homothétie de centre $O$ et de rapport $k$ ?",
+      "verso": "Sur la droite $(OM)$ : du côté de $M$ si $k > 0$, de l'autre côté de $O$ si $k < 0$, à une distance du centre égale à $\\left|k\\right|$ fois $OM$. La figure est agrandie si $\\left|k\\right| > 1$ et réduite si $\\left|k\\right| < 1$.",
+      "difficulte": 2,
+      "tags": ["homothetie", "rapport", "construction"]
+    },
+    {
+      "id": "2C-CH10-012",
+      "lecon": "L'homothétie",
+      "type": "definition",
+      "recto": "Quelles transformations connues obtient-on avec les rapports $1$ et $-1$ ?",
+      "verso": "L'homothétie $h(O\\,;\\,1)$ laisse tous les points en place : c'est l'identité. L'homothétie $h(O\\,;\\,-1)$ donne $\\overrightarrow{OM'} = -\\overrightarrow{OM}$, donc $O$ est le milieu de $[MM']$ : c'est la symétrie centrale de centre $O$.",
+      "difficulte": 2,
+      "tags": ["homothetie", "symetrie-centrale", "cas-particulier"]
+    },
+    {
+      "id": "2C-CH10-013",
+      "lecon": "L'homothétie",
+      "type": "formule",
+      "recto": "Que conserve une homothétie ?",
+      "verso": "L'alignement, le parallélisme, l'orthogonalité, les angles, les milieux et les barycentres. Elle conserve donc la forme des figures et ne les déforme jamais : un rectangle reste un rectangle, un cercle reste un cercle. Elle ne conserve pas la taille.",
+      "difficulte": 1,
+      "tags": ["homothetie", "conservation"]
+    },
+    {
+      "id": "2C-CH10-014",
+      "lecon": "L'homothétie",
+      "type": "formule",
+      "recto": "Comment une homothétie de rapport $k$ agit-elle sur les longueurs et sur les aires ?",
+      "verso": "Elle multiplie les longueurs par $\\left|k\\right|$, donc $A'B' = \\left|k\\right| \\times AB$, et les aires par $k^{2}$. Le carré vient de ce que la figure grandit dans les deux directions à la fois ; il efface le signe, ce qui convient à une aire, toujours positive.",
+      "difficulte": 1,
+      "tags": ["homothetie", "longueur", "aire"]
+    },
+    {
+      "id": "2C-CH10-015",
+      "lecon": "L'homothétie",
+      "type": "definition",
+      "recto": "Pourquoi les longueurs ne sont-elles pas multipliées par $-2$ dans une homothétie de rapport $-2$ ?",
+      "verso": "Parce qu'une longueur est toujours positive : elle est multipliée par $\\left|-2\\right| = 2$. Retiens le partage des rôles : le nombre $\\left|k\\right|$ commande la taille, le signe de $k$ commande seulement le côté du centre où atterrit la figure.",
+      "difficulte": 3,
+      "tags": ["homothetie", "rapport", "piege"]
+    },
+    {
+      "id": "2C-CH10-016",
+      "lecon": "L'homothétie",
+      "type": "formule",
+      "recto": "Quel est le rapport positif de l'homothétie qui multiplie l'aire d'une figure par $9$ ?",
+      "verso": "Il vaut $\\sqrt{9} = 3$, et non $9$, puisque les aires sont multipliées par $k^{2}$. Inversement, une homothétie de rapport $3$ multiplie l'aire par $9$ : un champ de $4$ hectares en donnerait $36$, et non $12$.",
+      "difficulte": 3,
+      "tags": ["homothetie", "aire", "piege"]
+    },
+    {
+      "id": "2C-CH10-017",
+      "lecon": "L'homothétie",
+      "type": "formule",
+      "recto": "Comment traduit-on par une égalité vectorielle que $B$ est l'image de $A$ par l'homothétie de centre $I$ et de rapport $k$ ?",
+      "verso": "Par $\\overrightarrow{IB} = k\\,\\overrightarrow{IA}$ : le centre est toujours l'origine des deux vecteurs. L'erreur la plus fréquente consiste à écrire $\\overrightarrow{AB} = k\\,\\overrightarrow{AI}$, où le centre n'est plus le point de départ.",
+      "difficulte": 2,
+      "tags": ["homothetie", "vecteur", "traduction"]
+    },
+    {
+      "id": "2C-CH10-018",
+      "lecon": "L'homothétie",
+      "type": "formule",
+      "recto": "Quelles sont les coordonnées de l'image de $M\\left(x\\,;\\,y\\right)$ par l'homothétie de centre $O_{1}\\left(x_{1}\\,;\\,y_{1}\\right)$ et de rapport $k$ ?",
+      "verso": "$x' = x_{1} + k\\left(x - x_{1}\\right)$ et $y' = y_{1} + k\\left(y - y_{1}\\right)$, obtenues en traduisant $\\overrightarrow{O_{1}M'} = k\\,\\overrightarrow{O_{1}M}$ coordonnée par coordonnée. Si le centre est l'origine, cela se réduit à $x' = kx$ et $y' = ky$.",
+      "difficulte": 2,
+      "tags": ["homothetie", "coordonnees"]
+    },
+    {
+      "id": "2C-CH10-019",
+      "lecon": "L'homothétie",
+      "type": "formule",
+      "recto": "Quel lien l'homothétie entretient-elle avec le théorème de Thalès ?",
+      "verso": "Elle en réalise la configuration : si $A'$ et $B'$ sont les images de $A$ et $B$ par $h(O\\,;\\,k)$, alors $(A'B')$ est parallèle à $(AB)$ et $\\dfrac{OA'}{OA} = \\dfrac{OB'}{OB} = \\dfrac{A'B'}{AB} = \\left|k\\right|$.",
+      "difficulte": 2,
+      "tags": ["homothetie", "thales", "proportion"]
+    },
+    {
+      "id": "2C-CH10-020",
+      "lecon": "La rotation",
+      "type": "definition",
+      "recto": "Quelles conditions définissent l'image $M'$ d'un point $M$ par la rotation de centre $O$ et d'angle $\\alpha$ ?",
+      "verso": "Deux conditions : $OM' = OM$, ce qui place $M'$ sur le cercle de centre $O$ passant par $M$, et $\\left(\\overrightarrow{OM}, \\overrightarrow{OM'}\\right) = \\alpha$. Elles déterminent $M'$ de façon unique. Le centre $O$ est invariant.",
+      "difficulte": 1,
+      "tags": ["rotation", "definition"]
+    },
+    {
+      "id": "2C-CH10-021",
+      "lecon": "La rotation",
+      "type": "formule",
+      "recto": "Que signifie le signe de l'angle d'une rotation ?",
+      "verso": "Le sens dans lequel on tourne. Un angle positif correspond au sens direct, contraire à celui des aiguilles d'une montre ; un angle négatif au sens indirect. Ainsi $r\\left(O\\,;\\,\\dfrac{\\pi}{2}\\right)$ est le quart de tour direct.",
+      "difficulte": 2,
+      "tags": ["rotation", "angle", "sens-direct"]
+    },
+    {
+      "id": "2C-CH10-022",
+      "lecon": "La rotation",
+      "type": "definition",
+      "recto": "Pourquoi les rotations d'angles $\\dfrac{\\pi}{3}$ et $-\\dfrac{\\pi}{3}$ de même centre ne donnent-elles pas la même image ?",
+      "verso": "Parce qu'elles tournent en sens contraires. Les deux images d'un même point $M$ sont deux points distincts, symétriques l'un de l'autre par rapport à la droite $(OM)$. Le signe se lit donc avant de poser le rapporteur.",
+      "difficulte": 3,
+      "tags": ["rotation", "angle", "piege"]
+    },
+    {
+      "id": "2C-CH10-023",
+      "lecon": "La rotation",
+      "type": "formule",
+      "recto": "Quelle transformation connue est la rotation d'angle $\\pi$ ?",
+      "verso": "La symétrie centrale de même centre. L'angle plat aligne $M$, $O$ et $M'$ avec $O$ entre les deux, et l'égalité $OM' = OM$ fait de $O$ le milieu de $[MM']$. La rotation d'angle $0$, elle, laisse tous les points en place.",
+      "difficulte": 2,
+      "tags": ["rotation", "symetrie-centrale", "cas-particulier"]
+    },
+    {
+      "id": "2C-CH10-024",
+      "lecon": "La rotation",
+      "type": "formule",
+      "recto": "Que peut-on affirmer d'une figure et de son image par une rotation ?",
+      "verso": "Elles ont exactement la même taille et la même forme, car une rotation est une isométrie : elle conserve les distances, les aires, les angles, l'alignement et les barycentres. L'image n'est pas retournée, elle a seulement pivoté.",
+      "difficulte": 1,
+      "tags": ["rotation", "isometrie", "conservation"]
+    },
+    {
+      "id": "2C-CH10-025",
+      "lecon": "La rotation",
+      "type": "definition",
+      "recto": "Pourquoi l'image d'une droite par une rotation d'angle non nul ne lui est-elle pas parallèle ?",
+      "verso": "Parce qu'elle a pivoté du même angle $\\alpha$ : une rotation change les directions. Elle conserve pourtant le parallélisme de deux droites entre elles. L'homothétie fait exactement le contraire : elle change la taille, mais pas les directions.",
+      "difficulte": 3,
+      "tags": ["rotation", "direction", "piege"]
+    },
+    {
+      "id": "2C-CH10-026",
+      "lecon": "La rotation",
+      "type": "formule",
+      "recto": "Comment retrouve-t-on le centre d'une rotation dont on connaît deux points et leurs images ?",
+      "verso": "Le centre vérifie $OA = OA'$ et $OB = OB'$ : il est donc sur la médiatrice de $[AA']$ et sur celle de $[BB']$, c'est-à-dire à leur intersection. L'angle se lit ensuite comme l'angle orienté $\\left(\\overrightarrow{OA}, \\overrightarrow{OA'}\\right)$.",
+      "difficulte": 2,
+      "tags": ["rotation", "centre", "mediatrice"]
+    },
+    {
+      "id": "2C-CH10-027",
+      "lecon": "La rotation",
+      "type": "formule",
+      "recto": "En quel vecteur le quart de tour direct de centre l'origine transforme-t-il le vecteur de coordonnées $\\left(x\\,;\\,y\\right)$ ?",
+      "verso": "En le vecteur $\\left(-y\\,;\\,x\\right)$ : on échange les deux nombres, puis on change le signe du premier. Pour un centre autre que l'origine, on applique cette règle au vecteur issu du centre, puis on repart du centre.",
+      "difficulte": 2,
+      "tags": ["rotation", "quart-de-tour", "coordonnees"]
+    },
+    {
+      "id": "2C-CH10-028",
+      "lecon": "La rotation",
+      "type": "definition",
+      "recto": "Qu'est-ce qui distingue une rotation d'une symétrie orthogonale ?",
+      "verso": "La rotation est définie par un centre et un angle, la symétrie orthogonale par une droite. Une rotation ne retourne jamais la figure, alors qu'une symétrie orthogonale la retourne toujours. Seule la rotation d'angle $\\pi$ coïncide avec une symétrie, la symétrie centrale.",
+      "difficulte": 3,
+      "tags": ["rotation", "symetrie-orthogonale", "distinction"]
+    },
+    {
+      "id": "2C-CH10-029",
+      "lecon": "Utilisation des transformations",
+      "type": "definition",
+      "recto": "A quoi servent les transformations géométriques ?",
+      "verso": "A construire une figure sans recommencer chaque mesure, à démontrer une propriété en transportant une configuration, et à déterminer un ensemble de points, puisque l'image d'une figure simple est une figure simple de même famille.",
+      "difficulte": 2,
+      "tags": ["transformation", "utilisation"]
+    },
+    {
+      "id": "2C-CH10-030",
+      "lecon": "Utilisation des transformations",
+      "type": "definition",
+      "recto": "Sur quel critère choisit-on la transformation à employer dans un problème ?",
+      "verso": "Sur ce qu'elle conserve : on prend celle qui laisse intacte la propriété cherchée. Pour garder des longueurs ou des aires, il faut une isométrie ; l'homothétie ne convient que si l'on accepte de multiplier les longueurs par $\\left|k\\right|$.",
+      "difficulte": 2,
+      "tags": ["transformation", "choix", "conservation"]
+    },
+    {
+      "id": "2C-CH10-031",
+      "lecon": "Utilisation des transformations",
+      "type": "formule",
+      "recto": "Quelle est l'image d'une droite par une homothétie ?",
+      "verso": "Une droite parallèle à la première, car l'homothétie ne fait pivoter aucune direction. Les deux droites ne se confondent que lorsque la droite de départ passe par le centre de l'homothétie : elle est alors globalement invariante.",
+      "difficulte": 1,
+      "tags": ["homothetie", "droite", "parallelisme"]
+    },
+    {
+      "id": "2C-CH10-032",
+      "lecon": "Utilisation des transformations",
+      "type": "formule",
+      "recto": "Quelle est l'image du cercle de centre $I$ et de rayon $r$ par une homothétie de rapport $k$ ?",
+      "verso": "Le cercle de centre l'image de $I$ et de rayon $\\left|k\\right| \\times r$. Il suffit donc de transformer le centre et de multiplier le rayon, sans avoir à transformer chacun des points du bord.",
+      "difficulte": 2,
+      "tags": ["homothetie", "cercle", "image"]
+    },
+    {
+      "id": "2C-CH10-033",
+      "lecon": "Utilisation des transformations",
+      "type": "formule",
+      "recto": "Quelle est l'image d'un cercle par une isométrie ?",
+      "verso": "Un cercle de même rayon, centré à l'image du centre. De même, l'image d'une droite est une droite, l'image d'un segment un segment de même longueur, et l'image d'un angle un angle de même mesure.",
+      "difficulte": 1,
+      "tags": ["isometrie", "cercle", "image"]
+    },
+    {
+      "id": "2C-CH10-034",
+      "lecon": "Utilisation des transformations",
+      "type": "formule",
+      "recto": "Quelles transformations laissent chaque droite parallèle à son image ?",
+      "verso": "La translation, la symétrie centrale et l'homothétie. La symétrie orthogonale et la rotation changent au contraire les directions, même si elles conservent le parallélisme de deux droites entre elles.",
+      "difficulte": 3,
+      "tags": ["direction", "parallelisme", "comparaison"]
+    },
+    {
+      "id": "2C-CH10-035",
+      "lecon": "Utilisation des transformations",
+      "type": "definition",
+      "recto": "Quelle transformation retourne le sens de la figure ?",
+      "verso": "La symétrie orthogonale, et elle seule : aucun glissement sur la feuille ne permet de superposer son image à la figure de départ, il faudrait la soulever. Translation, symétrie centrale et rotation conservent le sens de la figure.",
+      "difficulte": 3,
+      "tags": ["symetrie-orthogonale", "sens", "comparaison"]
+    },
+    {
+      "id": "2C-CH10-036",
+      "lecon": "Utilisation des transformations",
+      "type": "formule",
+      "recto": "Qu'obtient-on en enchaînant deux symétries orthogonales d'axes sécants ?",
+      "verso": "Une rotation de centre le point d'intersection des deux axes, et d'angle le double de l'angle formé par ces axes. Avec deux axes parallèles, on obtiendrait au contraire une translation.",
+      "difficulte": 3,
+      "tags": ["symetrie-orthogonale", "rotation", "enchainement"]
+    }
+  ]
+}

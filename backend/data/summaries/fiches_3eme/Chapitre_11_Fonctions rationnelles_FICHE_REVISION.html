@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Fiche de revision - 3eme - Chapitre 11 : Fonctions rationnelles</title>
+<style>
+/* ===================================================================
+   FICHE DE REVISION, Collection Hakili Lab, Edition 2026
+   Feuille de style autonome, format A4 pret a imprimer.
+   Bleu #005CB9 · Vert #49A145
+   =================================================================== */
+:root{
+  --bleu:#005CB9; --bleu-fonce:#00429A; --bleu-pale:#E8F1FB; --bleu-bord:#B7D2EE;
+  --vert:#49A145; --vert-fonce:#2F7A2C; --vert-pale:#EDF7EC; --vert-bord:#BCE0B9;
+  --gris:#4A4A4A; --gris-clair:#E4E4E4; --rouge:#B3261E;
+}
+@page{
+  size:A4; margin:15mm;
+  @bottom-center{
+    content:"Collection Hakili Lab, Edition 2026  ·  Fiche de revision  ·  " counter(page) "/" counter(pages);
+    font-family:"Segoe UI",Calibri,Arial,sans-serif; font-size:6.6pt; color:#8A8A8A;
+  }
+}
+*{box-sizing:border-box;}
+body{
+  margin:0; font-family:"Segoe UI",Calibri,Arial,sans-serif;
+  font-size:8.4pt; line-height:1.26; color:#1B1B1B;
+}
+p{margin:0 0 3pt;}
+ul{margin:0 0 3pt; padding-left:11pt;}
+li{margin:0 0 1.2pt;}
+b,strong{color:var(--bleu-fonce);}
+
+/* ------------------------------ ENTETE ---------------------------- */
+.entete{
+  display:flex; align-items:stretch; border:1.6pt solid var(--bleu);
+  border-radius:2.5pt; overflow:hidden; margin-bottom:6pt;
+}
+.entete .num{
+  background:var(--bleu); color:#fff; font-size:20pt; font-weight:700;
+  padding:0 8pt; display:flex; align-items:center; justify-content:center; min-width:34pt;
+}
+.entete .txt{padding:3.5pt 8pt; flex:1;}
+.entete .niveau{
+  font-size:7pt; font-weight:700; letter-spacing:.9pt; color:var(--vert-fonce);
+}
+.entete h1{margin:0; font-size:13.5pt; line-height:1.12; color:var(--bleu-fonce); font-weight:700;}
+.entete .sous{font-size:7pt; color:var(--gris); margin-top:1pt;}
+
+/* --------------------------- BANDEAUX ----------------------------- */
+.bandeau{
+  color:#fff; font-weight:700; font-size:9pt; letter-spacing:1pt;
+  padding:2.4pt 7pt; border-radius:2pt; margin:3pt 0 4pt; break-after:avoid; page-break-after:avoid;
+}
+.bandeau.bleu{background:var(--bleu);}
+.bandeau.vert{background:var(--vert);}
+
+/* --------------------------- COLONNES ----------------------------- */
+.cols{column-count:2; column-gap:7mm; column-fill:balance;}
+
+.cols.bal{column-fill:balance;}
+.bloc{margin-bottom:5pt;}
+.keep{break-inside:avoid; page-break-inside:avoid;}
+
+/* --------------------------- LECONS ------------------------------- */
+h2.lecon{
+  margin:0 0 3pt; font-size:8.6pt; font-weight:700; color:#fff; background:var(--bleu-fonce);
+  padding:1.8pt 5pt; border-radius:1.5pt; break-after:avoid; page-break-after:avoid;
+}
+h3.rub{
+  margin:3.5pt 0 1.5pt; font-size:8.2pt; font-weight:700; color:var(--vert-fonce);
+  border-bottom:.7pt solid var(--vert-bord); padding-bottom:.8pt;
+  break-after:avoid; page-break-after:avoid;
+}
+
+/* --------------------------- ENCADRES ----------------------------- */
+.form{
+  background:var(--bleu-pale); border:.8pt solid var(--bleu-bord); border-left:2.6pt solid var(--bleu);
+  border-radius:2pt; padding:2.4pt 5pt; margin:2.2pt 0 3.4pt;
+  break-inside:avoid; page-break-inside:avoid;
+}
+.form .t{
+  display:block; font-size:6.8pt; font-weight:700; letter-spacing:.6pt;
+  color:var(--bleu); margin-bottom:1.5pt;
+}
+.form .c{text-align:center; font-size:9.1pt; margin:1.6pt 0;}
+.note{background:var(--vert-pale); border-left:2.4pt solid var(--vert); padding:2.4pt 5pt; border-radius:1.5pt; margin:2.5pt 0 4pt; break-inside:avoid;}
+
+/* --------------------------- TABLEAUX ----------------------------- */
+table{width:100%; border-collapse:collapse; font-size:7.6pt; margin:2pt 0 4pt; break-inside:avoid;}
+th{background:var(--bleu); color:#fff; font-weight:700; text-align:left; padding:1.8pt 4pt; font-size:7.2pt;}
+td{border:.6pt solid var(--gris-clair); padding:1.8pt 4pt; vertical-align:top;}
+tr{break-inside:avoid;}
+table.var td{text-align:center; font-size:8pt;}
+table.var td.lab{text-align:left; font-weight:700; color:var(--bleu-fonce); background:var(--bleu-pale);}
+
+/* ----------------------------- PIEGES ----------------------------- */
+table.pieges th:first-child{width:44%;}
+table.pieges td:first-child{color:var(--rouge); background:#FDF1F0;}
+.x{font-weight:700;}
+.v{color:var(--vert-fonce); font-weight:700;}
+
+/* ---------------------------- RECAP ------------------------------- */
+ol.recap{margin:0; padding-left:0; list-style:none; counter-reset:r;}
+ol.recap li{
+  counter-increment:r; position:relative; padding-left:13pt; margin-bottom:1.8pt;
+  break-inside:avoid;
+}
+ol.recap li::before{
+  content:counter(r); position:absolute; left:0; top:.3pt;
+  width:10pt; height:10pt; border-radius:50%; background:var(--vert); color:#fff;
+  font-size:6.6pt; font-weight:700; text-align:center; line-height:10pt;
+}
+
+/* --------------------------- MATHS -------------------------------- */
+.m{font-family:Cambria,Georgia,"Times New Roman",serif;}
+i,var{font-family:Cambria,Georgia,"Times New Roman",serif; font-style:italic;}
+.op{font-family:Cambria,Georgia,"Times New Roman",serif; font-style:normal;}
+.f{display:inline-block; vertical-align:middle; text-align:center;
+   margin:0 .12em; line-height:1.06; font-family:Cambria,Georgia,"Times New Roman",serif;}
+.f>span{display:block; padding:0 .2em;}
+.f>span:first-child{border-bottom:.6pt solid currentColor; padding-bottom:.08em;}
+.f>span:last-child{padding-top:.04em;}
+.rad{border-top:.6pt solid currentColor; padding-top:.12em;}
+/* line-height:0 evite que l'exposant n'ecarte les lignes ; position:relative le
+   repositionne sans qu'il heurte la barre de fraction ni le trait du radical. */
+sup,sub{font-size:.68em; line-height:0; position:relative; vertical-align:baseline;}
+sup{top:-.42em;}
+sub{bottom:-.22em;}
+.pt{white-space:nowrap;}
+/* Les fleches n'ont qu'un glyphe atrophie dans la fonte serif : on les force
+   en sans-serif, ou elles sont franches meme a 8 pt. */
+.ar{font-family:"Segoe UI",Calibri,Arial,"DejaVu Sans",sans-serif; font-style:normal;}
+
+/* ------------------- PIEGES : blocs erreur / correction ------------- */
+.pg{font-size:8.1pt; border-left:2.4pt solid var(--rouge); background:#FDF1F0; border-radius:1.5pt;
+    padding:2pt 5pt; margin:0 0 2.8pt; break-inside:avoid; page-break-inside:avoid;}
+.pg .err{color:var(--rouge); font-weight:600;}
+.pg .cor{color:#1B1B1B; margin-top:.8pt;}
+.pg .cor b{color:var(--bleu-fonce);}
+.v{color:var(--vert-fonce); font-weight:700;}
+
+</style>
+</head>
+<body>
+<header class="entete">
+  <div class="num">11</div>
+  <div class="txt">
+    <div class="niveau">3EME &middot; MATHEMATIQUES</div>
+    <h1>Fonctions rationnelles</h1>
+    <div class="sous">Leçon 1 : définition, ensemble de définition, image et antécédents &middot; Leçon 2 : simplification d'une fonction rationnelle</div>
+  </div>
+</header>
+
+<div class="bandeau bleu" style="margin-top:0">L'ESSENTIEL</div>
+<div class="cols">
+
+<!-- ================= LECON 1 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 1&nbsp;: Définition, ensemble de définition, image et antécédents</h2>
+<div class="form">
+  <span class="t">FONCTION RATIONNELLE&nbsp;: <i>P</i> et <i>Q</i> polynômes</span>
+  <div class="c m"><i>f</i>(<i>x</i>)&#8239;=&#8239;<span class="f"><span><i>P</i>(<i>x</i>)</span><span><i>Q</i>(<i>x</i>)</span></span></div>
+</div></div>
+<ul>
+<li>Une <b>fonction rationnelle</b> est le <b>quotient de deux polynômes</b> : <i>P</i> est le <b>numérateur</b>, <i>Q</i> le <b>dénominateur</b>.</li>
+<li>Une <b>valeur interdite</b> est une valeur de <i>x</i> qui <b>annule le dénominateur</b> : pour elle le quotient n'existe pas, car on ne divise jamais par zéro.</li>
+<li>L'<b>ensemble de définition</b> de <i>f</i>, noté <i>D</i>, est l'ensemble de tous les réels <b>sauf</b> les valeurs interdites.</li>
+</ul>
+<div class="form">
+  <span class="t">ENSEMBLE DE DEFINITION</span>
+  <div class="c m"><i>D</i>&#8239;=&#8239;&#8477;&#8239;\&#8239;{valeurs interdites}</div>
+  <div class="c m" style="font-size:7.6pt">se lit « &#8477; privé de… »</div>
+</div>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Trouver les valeurs interdites</h3>
+<p>Le numérateur n'interdit rien : on regarde le <b>dénominateur seul</b> et l'on résout <span class="pt"><i>Q</i>(<i>x</i>)&#8239;=&#8239;0</span>.</p>
+<table>
+<tr><th>Dénominateur <i>Q</i>(<i>x</i>)</th><th>Ensemble de définition</th></tr>
+<tr><td class="m"><i>x</i>&#8239;&#8722;&#8239;3 &nbsp;<span style="font-family:inherit;font-size:7pt">(premier degré)</span></td><td class="m"><i>D</i>&#8239;=&#8239;&#8477;&#8239;\&#8239;{3}</td></tr>
+<tr><td class="m">(<i>x</i>&#8239;&#8722;&#8239;1)(<i>x</i>&#8239;+&#8239;2) &nbsp;<span style="font-family:inherit;font-size:7pt">(produit nul)</span></td><td class="m"><i>D</i>&#8239;=&#8239;&#8477;&#8239;\&#8239;{&#8722;2&#8239;;&#8239;1}</td></tr>
+<tr><td class="m"><i>x</i><sup>2</sup>&#8239;&#8722;&#8239;4&#8239;=&#8239;(<i>x</i>&#8239;&#8722;&#8239;2)(<i>x</i>&#8239;+&#8239;2)</td><td class="m"><i>D</i>&#8239;=&#8239;&#8477;&#8239;\&#8239;{&#8722;2&#8239;;&#8239;2}</td></tr>
+<tr><td class="m"><i>x</i><sup>2</sup>&#8239;+&#8239;1 &nbsp;<span style="font-family:inherit;font-size:7pt">(toujours &#8239;&gt;&#8239;0)</span></td><td class="m"><i>D</i>&#8239;=&#8239;&#8477;</td></tr>
+</table>
+<p>Un <b>produit</b> est nul dès que <b>l'un</b> de ses facteurs est nul : autant de facteurs, autant de valeurs interdites. Si le dénominateur n'est ni du premier degré ni déjà en produit, on le <b>factorise d'abord</b>. Un carré étant positif ou nul, <i>x</i><sup>2</sup>&#8239;+&#8239;1 ne s'annule <b>jamais</b>.</p>
+<div class="note"><b>Déterminer <i>D</i>.</b> Dénominateur seul <span class="ar">&#8594;</span> factoriser <span class="ar">&#8594;</span> résoudre <span class="pt"><i>Q</i>(<i>x</i>)&#8239;=&#8239;0</span> <span class="ar">&#8594;</span> écrire <i>D</i>. Avant tout calcul d'image, vérifier que le nombre demandé appartient bien à <i>D</i>.</div>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Image et antécédent</h3>
+<ul>
+<li>L'<b>image</b> de <i>a</i> par <i>f</i> est le nombre <i>f</i>(<i>a</i>) obtenu en remplaçant <i>x</i> par <i>a</i>, à condition que <span class="pt"><i>a</i>&#8239;&#8712;&#8239;<i>D</i></span>. Une image, quand elle existe, est <b>unique</b>.</li>
+<li>Un <b>antécédent</b> de <i>y</i> par <i>f</i> est un nombre <i>x</i> de <i>D</i> tel que <span class="pt"><i>f</i>(<i>x</i>)&#8239;=&#8239;<i>y</i></span> : on le cherche en <b>résolvant une équation</b>. Un antécédent peut <b>manquer</b>.</li>
+</ul>
+<p>Calculer une image, c'est partir d'un nombre autorisé et arriver au résultat. Chercher un antécédent, c'est faire le trajet <b>en sens inverse</b> : on connaît l'arrivée, on cherche le départ.</p>
+<div class="form">
+  <span class="t">QUOTIENT NUL&nbsp;: ANTECEDENT DE ZERO</span>
+  <div class="c m"><span class="pt"><span class="f"><span><i>P</i>(<i>x</i>)</span><span><i>Q</i>(<i>x</i>)</span></span>&#8239;=&#8239;0</span> si et seulement si <span class="pt"><i>P</i>(<i>x</i>)&#8239;=&#8239;0</span> et <span class="pt"><i>Q</i>(<i>x</i>)&#8239;&#8800;&#8239;0</span></div>
+</div>
+<p>Un quotient est nul <b>si et seulement si son numérateur est nul</b>, le dénominateur ne l'étant pas. Ainsi, par la fonction <span class="f"><span>4</span><span><i>x</i>&#8239;&#8722;&#8239;1</span></span>, le nombre 0 n'a <b>aucun</b> antécédent : un quotient de numérateur 4 n'est jamais nul.</p>
+</div>
+
+<!-- ================= LECON 2 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 2&nbsp;: Simplification d'une fonction rationnelle</h2>
+<ul>
+<li><b>Simplifier</b> une fonction rationnelle, c'est <b>factoriser</b> le numérateur et le dénominateur, puis <b>supprimer les facteurs communs</b>.</li>
+<li>On ne simplifie que des <b>facteurs</b>, c'est-à-dire des expressions <b>multipliées</b> entre elles. On ne simplifie <b>jamais</b> les termes d'une somme : <span class="f"><span><i>x</i>&#8239;+&#8239;2</span><span><i>x</i>&#8239;+&#8239;3</span></span> ne se simplifie pas.</li>
+<li>La simplification n'est valable que <b>sur <i>D</i></b> : on détermine donc <i>D</i> <b>avant</b> de simplifier, sur l'<b>écriture de départ</b>.</li>
+<li>L'ensemble de définition <b>ne change pas</b> après simplification : les valeurs interdites du début restent exclues, même si le nouveau dénominateur ne les fait plus apparaître.</li>
+</ul></div>
+<div class="form">
+  <span class="t">FACTEURS OPPOSES&nbsp;: pour <i>x</i> &#8800; 5</span>
+  <div class="c m"><span class="f"><span><i>x</i>&#8239;&#8722;&#8239;5</span><span>5&#8239;&#8722;&#8239;<i>x</i></span></span>&#8239;=&#8239;&#8722;1&nbsp;&nbsp;car&nbsp;&nbsp;5&#8239;&#8722;&#8239;<i>x</i>&#8239;=&#8239;&#8722;(<i>x</i>&#8239;&#8722;&#8239;5)</div>
+</div>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Ce que l'on ne simplifie pas</h3>
+<p>Dans <span class="pt"><i>x</i>&#8239;+&#8239;2</span>, le <i>x</i> est un <b>terme</b> d'une somme, non un facteur d'un produit. Le barrer revient à <b>soustraire</b> <i>x</i> en haut et en bas, ce qui <b>change</b> la valeur du quotient ; <b>diviser</b> en haut et en bas par un même nombre non nul, au contraire, ne la change pas.</p>
+<div class="note"><b>Le contre-exemple qui tranche.</b> Pour <i>x</i>&#8239;=&#8239;1 : <span class="f"><span><i>x</i>&#8239;+&#8239;2</span><span><i>x</i>&#8239;+&#8239;3</span></span>&#8239;=&#8239;<span class="f"><span>3</span><span>4</span></span>, alors que <span class="f"><span>2</span><span>3</span></span> en est loin. <b>On ne barre jamais dans une somme</b> : tant que le numérateur et le dénominateur ne sont pas écrits en <b>produits</b>, il n'y a rien à simplifier.</div>
+<h3 class="rub">Les trois étapes, dans l'ordre</h3>
+<div class="form">
+  <span class="t">SIMPLIFIER UNE FONCTION RATIONNELLE</span>
+  <div class="c m">1. Ecrire <i>D</i> sur l'écriture de <b>départ</b></div>
+  <div class="c m">2. Factoriser le numérateur, puis le dénominateur</div>
+  <div class="c m">3. Supprimer le facteur commun, en précisant « sur <i>D</i> »</div>
+</div>
+<p>Simplifier une fonction rationnelle, c'est simplifier une fraction de nombres, à une différence près : une lettre peut valoir zéro. D'où la mention « sur <i>D</i> », sans laquelle l'égalité serait fausse pour les valeurs interdites. <b>Contrôle</b> : avec une valeur autorisée, les deux écritures donnent le <b>même nombre</b>.</p>
+</div>
+
+</div>
+
+<div class="bandeau vert">PIEGES ET ERREURS FREQUENTES</div>
+<div class="cols">
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> Pour <i>f</i>(<i>x</i>)&#8239;=&#8239;<span class="f"><span>4</span><span><i>x</i>&#8239;&#8722;&#8239;1</span></span>, on écrit <i>f</i>(1)&#8239;=&#8239;<span class="f"><span>4</span><span>0</span></span>&#8239;=&#8239;0 &nbsp;&middot;&nbsp; « un numérateur nul est interdit lui aussi »</div><div class="cor"><span class="v">&#10003;</span> 1 est une <b>valeur interdite</b> : <i>f</i>(1) n'existe pas, on ne divise <b>jamais</b> par zéro. Vérifie que le nombre appartient à <i>D</i> <b>avant</b> tout calcul d'image. Un <b>numérateur</b> nul, lui, est autorisé : il donne simplement une image nulle.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> « Toute fonction rationnelle a au moins une valeur interdite. »</div><div class="cor"><span class="v">&#10003;</span> Faux : <span class="f"><span><i>x</i></span><span><i>x</i><sup>2</sup>&#8239;+&#8239;1</span></span> est définie sur <b>&#8477; tout entier</b>. Un carré est positif ou nul, donc <span class="pt"><i>x</i><sup>2</sup>&#8239;+&#8239;1&#8239;&gt;&#8239;0</span> : ce dénominateur ne s'annule jamais.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> Pour <span class="f"><span><i>x</i>&#8239;&#8722;&#8239;1</span><span><i>x</i><sup>2</sup>&#8239;&#8722;&#8239;4</span></span>, on annonce <i>D</i>&#8239;=&#8239;&#8477;&#8239;\&#8239;{4} &nbsp;&middot;&nbsp; le dénominateur (<i>x</i>&#8239;&#8722;&#8239;1)(<i>x</i>&#8239;+&#8239;2) ne donne qu'une valeur interdite</div><div class="cor"><span class="v">&#10003;</span> On <b>factorise d'abord</b> : <span class="pt"><i>x</i><sup>2</sup>&#8239;&#8722;&#8239;4&#8239;=&#8239;(<i>x</i>&#8239;&#8722;&#8239;2)(<i>x</i>&#8239;+&#8239;2)</span>, donc <i>D</i>&#8239;=&#8239;&#8477;&#8239;\&#8239;{&#8722;2&#8239;;&#8239;2}. Un produit s'annule dès que <b>l'un</b> de ses facteurs s'annule : (<i>x</i>&#8239;&#8722;&#8239;1)(<i>x</i>&#8239;+&#8239;2) donne donc <b>deux</b> valeurs interdites, 1 et &#8722;2.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> <span class="f"><span><i>x</i>&#8239;+&#8239;2</span><span><i>x</i>&#8239;+&#8239;3</span></span>&#8239;=&#8239;<span class="f"><span>2</span><span>3</span></span> &nbsp;&middot;&nbsp; <span class="f"><span><i>x</i><sup>2</sup>&#8239;+&#8239;9</span><span><i>x</i>&#8239;+&#8239;3</span></span>&#8239;=&#8239;<i>x</i>&#8239;+&#8239;3</div><div class="cor"><span class="v">&#10003;</span> On ne barre que des <b>facteurs</b>, jamais les <b>termes</b> d'une somme. Pour <i>x</i>&#8239;=&#8239;1, la première fraction vaut <span class="f"><span>3</span><span>4</span></span> et non <span class="f"><span>2</span><span>3</span></span>. Et <i>x</i><sup>2</sup>&#8239;+&#8239;9 n'est pas factorisable avec les identités du programme : ce quotient <b>ne se simplifie pas</b>.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> <span class="f"><span>(<i>x</i>&#8239;+&#8239;3)(<i>x</i>&#8239;&#8722;&#8239;1)</span><span>(<i>x</i>&#8239;&#8722;&#8239;1)(<i>x</i>&#8239;+&#8239;1)</span></span>&#8239;=&#8239;<span class="f"><span><i>x</i>&#8239;+&#8239;3</span><span><i>x</i>&#8239;+&#8239;1</span></span>, « donc <i>f</i> est définie en 1 »</div><div class="cor"><span class="v">&#10003;</span> L'ensemble de définition se lit sur l'<b>écriture de départ</b> et <b>ne change pas</b> : 1 annulait le dénominateur initial, elle reste <b>interdite</b>. Ici <i>D</i>&#8239;=&#8239;&#8477;&#8239;\&#8239;{&#8722;1&#8239;;&#8239;1}, et la forme simplifiée n'est valable que <b>sur <i>D</i></b>.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> <span class="f"><span><i>x</i>&#8239;&#8722;&#8239;5</span><span>5&#8239;&#8722;&#8239;<i>x</i></span></span>&#8239;=&#8239;1</div><div class="cor"><span class="v">&#10003;</span> Les deux facteurs sont <b>opposés</b>, non égaux : <span class="pt">5&#8239;&#8722;&#8239;<i>x</i>&#8239;=&#8239;&#8722;(<i>x</i>&#8239;&#8722;&#8239;5)</span>, donc le quotient vaut <b>&#8722;1</b>. Contrôle pour <i>x</i>&#8239;=&#8239;6 : <span class="f"><span>1</span><span>&#8722;1</span></span>&#8239;=&#8239;&#8722;1.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> « Pour trouver l'antécédent de 0, on annule le dénominateur. »</div><div class="cor"><span class="v">&#10003;</span> C'est le contraire : un quotient est nul <b>si et seulement si son numérateur est nul</b>, le dénominateur ne l'étant pas. On résout <span class="pt"><i>P</i>(<i>x</i>)&#8239;=&#8239;0</span>, puis on vérifie que la solution appartient à <i>D</i>.</div></div>
+
+</div>
+
+<div class="bandeau bleu">A SAVOIR PAR COEUR AVANT LE DEVOIR</div>
+<div class="cols">
+<ol class="recap">
+<li>Une <b>fonction rationnelle</b> est un <b>quotient de deux polynômes</b> : <i>f</i>(<i>x</i>)&#8239;=&#8239;<span class="f"><span><i>P</i>(<i>x</i>)</span><span><i>Q</i>(<i>x</i>)</span></span>. Une <b>valeur interdite</b> annule le dénominateur ; on ne divise jamais par zéro.</li>
+<li><i>D</i>&#8239;=&#8239;&#8477;&#8239;\&#8239;{valeurs interdites}. Pour l'obtenir : <b>dénominateur seul</b>, factorisé, puis <span class="pt"><i>Q</i>(<i>x</i>)&#8239;=&#8239;0</span>. Le numérateur n'interdit rien.</li>
+<li><b>Produit nul</b> : (<i>x</i>&#8239;&#8722;&#8239;1)(<i>x</i>&#8239;+&#8239;2) s'annule pour 1 et &#8722;2. Autant de facteurs, autant de valeurs interdites. Un dénominateur qui ne s'annule jamais, comme <i>x</i><sup>2</sup>&#8239;+&#8239;1, donne <i>D</i>&#8239;=&#8239;&#8477;.</li>
+<li><b>Image</b> de <i>a</i> : le nombre <i>f</i>(<i>a</i>), calculé seulement si <span class="pt"><i>a</i>&#8239;&#8712;&#8239;<i>D</i></span> ; elle est unique. <b>Antécédent</b> de <i>y</i> : on résout <span class="pt"><i>f</i>(<i>x</i>)&#8239;=&#8239;<i>y</i></span> dans <i>D</i> ; il peut ne pas exister.</li>
+<li>Un quotient est <b>nul</b> si et seulement si son <b>numérateur</b> est nul et son <b>dénominateur</b> non nul : c'est ainsi qu'on trouve l'antécédent de 0.</li>
+<li><b>Simplifier</b> : factoriser en haut et en bas, puis supprimer les facteurs communs. On ne barre que des <b>facteurs</b>, jamais les <b>termes</b> d'une somme. Deux facteurs <b>opposés</b> donnent &#8722;1 : <span class="f"><span><i>x</i>&#8239;&#8722;&#8239;5</span><span>5&#8239;&#8722;&#8239;<i>x</i></span></span>&#8239;=&#8239;&#8722;1.</li>
+<li><i>D</i> s'écrit <b>avant</b> de simplifier, sur l'écriture de départ, et <b>ne change pas</b> ensuite : les valeurs interdites restent exclues. Toute forme simplifiée se termine par « sur <i>D</i> ».</li>
+</ol>
+</div>
+
+</body>
+</html>

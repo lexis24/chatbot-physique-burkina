@@ -1,0 +1,314 @@
+{
+  "niveau": "4ème",
+  "chapitre": "Chapitre 15 : Développement, factorisation et identités remarquables",
+  "source": "maths/4eme/Chapitre_15_Developpement_factorisation",
+  "nombre_cartes": 34,
+  "cartes": [
+    {
+      "id": "4E-CH15-001",
+      "lecon": "Monômes et polynômes",
+      "type": "definition",
+      "recto": "Qu'est-ce qu'un monôme ?",
+      "verso": "C'est une expression formée d'un nombre et de lettres multipliés entre eux, sans aucune addition ni soustraction. Ainsi $5x$, $-3x^{2}$, $7$ et $xy$ sont des monômes.",
+      "difficulte": 1,
+      "tags": ["monome", "definition"]
+    },
+    {
+      "id": "4E-CH15-002",
+      "lecon": "Monômes et polynômes",
+      "type": "definition",
+      "recto": "Dans le monôme $5x^{2}$, comment nomme-t-on le nombre $5$ et l'exposant $2$ ?",
+      "verso": "$5$ est le coefficient et $2$ est le degré. Quand aucun exposant n'est écrit, le degré vaut $1$, car $5x$ se lit $5x^{1}$ ; un nombre seul est un monôme de degré $0$.",
+      "difficulte": 1,
+      "tags": ["monome", "coefficient", "degre"]
+    },
+    {
+      "id": "4E-CH15-003",
+      "lecon": "Monômes et polynômes",
+      "type": "definition",
+      "recto": "Qu'est-ce qu'un polynôme ?",
+      "verso": "C'est une somme de monômes, comme $2x^{2} + 5x - 3$. Chacun de ses morceaux, ici $2x^{2}$, $5x$ et $-3$, s'appelle un terme du polynôme.",
+      "difficulte": 1,
+      "tags": ["polynome", "terme"]
+    },
+    {
+      "id": "4E-CH15-004",
+      "lecon": "Monômes et polynômes",
+      "type": "formule",
+      "recto": "Comment détermine-t-on le degré d'un polynôme ?",
+      "verso": "C'est le plus grand des degrés de ses termes. Ainsi $4x^{3} - x^{2} + 6x - 9$ est un polynôme de degré $3$.",
+      "difficulte": 2,
+      "tags": ["polynome", "degre"]
+    },
+    {
+      "id": "4E-CH15-005",
+      "lecon": "Monômes et polynômes",
+      "type": "definition",
+      "recto": "Dans le polynôme $2x^{2} - 5x + 3$, quel est le coefficient du deuxième terme ?",
+      "verso": "C'est $-5$, et non $5$ : le signe qui précède un terme lui appartient. Cette convention transforme toute soustraction en addition, ce qui allège tous les calculs qui suivent.",
+      "difficulte": 3,
+      "tags": ["coefficient", "signe", "piege"]
+    },
+    {
+      "id": "4E-CH15-006",
+      "lecon": "Monômes et polynômes",
+      "type": "definition",
+      "recto": "Quel est le coefficient des monômes $x$ et $-x$ ?",
+      "verso": "Il vaut $1$ pour $x$ et $-1$ pour $-x$, même si ce $1$ n'est jamais écrit. En cas de doute, relis $x$ sous la forme $1 \\times x$.",
+      "difficulte": 2,
+      "tags": ["coefficient", "monome"]
+    },
+    {
+      "id": "4E-CH15-007",
+      "lecon": "Monômes et polynômes",
+      "type": "definition",
+      "recto": "Pourquoi $5x$ n'a-t-il rien à voir avec $5 + x$ ?",
+      "verso": "Parce que l'écriture $5x$ signifie $5$ multiplié par $x$. Pour $x = 2$, on a $5x = 10$, tandis que $5 + x = 7$.",
+      "difficulte": 2,
+      "tags": ["monome", "ecriture", "piege"]
+    },
+    {
+      "id": "4E-CH15-008",
+      "lecon": "Somme de monômes semblables",
+      "type": "definition",
+      "recto": "Quand deux monômes sont-ils semblables ?",
+      "verso": "Lorsqu'ils ont la même partie en lettres, c'est-à-dire les mêmes lettres avec les mêmes exposants. Ainsi $3x$ et $5x$ sont semblables, mais $3x$ et $3x^{2}$ ne le sont pas, ni $2x$ et $2y$.",
+      "difficulte": 1,
+      "tags": ["monomes-semblables", "definition"]
+    },
+    {
+      "id": "4E-CH15-009",
+      "lecon": "Somme de monômes semblables",
+      "type": "formule",
+      "recto": "Comment additionne-t-on deux monômes semblables ?",
+      "verso": "On additionne leurs coefficients et on garde la partie en lettres inchangée : $3x + 5x = 8x$.",
+      "difficulte": 1,
+      "tags": ["monomes-semblables", "addition"]
+    },
+    {
+      "id": "4E-CH15-010",
+      "lecon": "Somme de monômes semblables",
+      "type": "definition",
+      "recto": "Que veut dire qu'une expression littérale est réduite ?",
+      "verso": "Cela veut dire qu'elle ne contient plus deux termes semblables. Réduire n'est pas calculer : c'est écrire plus court sans changer la valeur de l'expression.",
+      "difficulte": 2,
+      "tags": ["reduire", "definition"]
+    },
+    {
+      "id": "4E-CH15-011",
+      "lecon": "Somme de monômes semblables",
+      "type": "formule",
+      "recto": "Pourquoi $3x + 5x$ ne vaut-il pas $8x^{2}$ ?",
+      "verso": "Parce que la partie en lettres joue le rôle d'une unité : $3$ kg et $5$ kg font $8$ kg, jamais $8$ kg au carré. On additionne les coefficients, la partie en lettres ne change pas.",
+      "difficulte": 3,
+      "tags": ["reduire", "exposant", "piege"]
+    },
+    {
+      "id": "4E-CH15-012",
+      "lecon": "Somme de monômes semblables",
+      "type": "formule",
+      "recto": "Que fait-on d'une expression comme $2x^{2} + 3x$, dont les deux termes ne sont pas semblables ?",
+      "verso": "On n'y touche pas : elle est déjà sous sa forme réduite. Ecrire $5x^{3}$ ou $5x$ serait faux, car les deux termes n'ont pas la même partie en lettres.",
+      "difficulte": 2,
+      "tags": ["reduire", "monomes-semblables"]
+    },
+    {
+      "id": "4E-CH15-013",
+      "lecon": "Somme de monômes semblables",
+      "type": "formule",
+      "recto": "Comment contrôle-t-on qu'une expression a bien été réduite ?",
+      "verso": "On choisit une valeur simple de la lettre, souvent $x = 2$, puis on calcule l'expression de départ et l'expression réduite. Les deux résultats doivent coïncider.",
+      "difficulte": 2,
+      "tags": ["reduire", "controle"]
+    },
+    {
+      "id": "4E-CH15-014",
+      "lecon": "Développer, réduire et ordonner",
+      "type": "definition",
+      "recto": "Que veut dire développer une expression ?",
+      "verso": "C'est transformer un produit en une somme. Pour un facteur simple, on applique la distributivité : $k\\left(a + b\\right) = ka + kb$.",
+      "difficulte": 1,
+      "tags": ["developper", "distributivite"]
+    },
+    {
+      "id": "4E-CH15-015",
+      "lecon": "Développer, réduire et ordonner",
+      "type": "formule",
+      "recto": "Comment développe-t-on un produit de deux parenthèses ?",
+      "verso": "On multiplie chaque terme de la première par chaque terme de la seconde : $\\left(a + b\\right)\\left(c + d\\right) = ac + ad + bc + bd$. Il y a donc quatre produits à écrire.",
+      "difficulte": 1,
+      "tags": ["developper", "double-distributivite"]
+    },
+    {
+      "id": "4E-CH15-016",
+      "lecon": "Développer, réduire et ordonner",
+      "type": "formule",
+      "recto": "Pourquoi le développement de $\\left(a + b\\right)\\left(c + d\\right)$ compte-t-il exactement quatre produits ?",
+      "verso": "Parce que chaque morceau de la longueur rencontre chaque morceau de la largeur, comme les quatre parcelles d'un champ rectangulaire découpé. Avec trois termes dans une parenthèse, il y en aurait six.",
+      "difficulte": 2,
+      "tags": ["developper", "double-distributivite"]
+    },
+    {
+      "id": "4E-CH15-017",
+      "lecon": "Développer, réduire et ordonner",
+      "type": "formule",
+      "recto": "Que devient l'expression $-\\left(x + 6\\right)$ une fois développée ?",
+      "verso": "Elle devient $-x - 6$, et non $-x + 6$ : tous les signes de la parenthèse changent, car $-\\left(x + 6\\right)$ signifie $\\left(-1\\right) \\times \\left(x + 6\\right)$.",
+      "difficulte": 3,
+      "tags": ["developper", "signe-moins", "piege"]
+    },
+    {
+      "id": "4E-CH15-018",
+      "lecon": "Développer, réduire et ordonner",
+      "type": "definition",
+      "recto": "Que veut dire qu'un polynôme est ordonné selon les puissances décroissantes ?",
+      "verso": "Cela veut dire que ses termes sont rangés du degré le plus grand au degré le plus petit. On écrit $x^{3} + 13x^{2} - x - 17$, et non $-17 - x + 13x^{2} + x^{3}$.",
+      "difficulte": 2,
+      "tags": ["ordonner", "polynome"]
+    },
+    {
+      "id": "4E-CH15-019",
+      "lecon": "Développer, réduire et ordonner",
+      "type": "formule",
+      "recto": "A quoi sert d'ordonner un polynôme selon les puissances décroissantes ?",
+      "verso": "Deux polynômes ainsi rangés se lisent terme à terme et se comparent immédiatement. Le degré se lit de plus directement sur le premier terme écrit.",
+      "difficulte": 2,
+      "tags": ["ordonner", "comparaison"]
+    },
+    {
+      "id": "4E-CH15-020",
+      "lecon": "Développer, réduire et ordonner",
+      "type": "formule",
+      "recto": "Dans quel ordre enchaîne-t-on les deux derniers gestes d'un développement ?",
+      "verso": "On réduit d'abord les termes semblables, on ordonne ensuite selon les puissances décroissantes. Une réponse réduite mais en désordre reste juste, elle est seulement plus difficile à contrôler.",
+      "difficulte": 2,
+      "tags": ["developper", "reduire", "ordonner"]
+    },
+    {
+      "id": "4E-CH15-021",
+      "lecon": "Factoriser par un facteur commun",
+      "type": "definition",
+      "recto": "Que veut dire factoriser une expression ?",
+      "verso": "C'est transformer une somme en un produit. C'est l'opération inverse du développement.",
+      "difficulte": 1,
+      "tags": ["factoriser", "definition"]
+    },
+    {
+      "id": "4E-CH15-022",
+      "lecon": "Factoriser par un facteur commun",
+      "type": "formule",
+      "recto": "Quelle égalité traduit la factorisation par un facteur commun ?",
+      "verso": "L'égalité $ka + kb = k\\left(a + b\\right)$ : on écrit le facteur commun devant une parenthèse. Ainsi $4x + 4y = 4\\left(x + y\\right)$.",
+      "difficulte": 1,
+      "tags": ["factoriser", "facteur-commun"]
+    },
+    {
+      "id": "4E-CH15-023",
+      "lecon": "Factoriser par un facteur commun",
+      "type": "formule",
+      "recto": "Que peut être le facteur commun d'une somme à factoriser ?",
+      "verso": "Un nombre, une lettre, ou les deux à la fois, comme dans $15x^{2} - 3x = 3x\\left(5x - 1\\right)$. Ce peut même être une parenthèse entière : $7\\left(x + 2\\right) + x\\left(x + 2\\right) = \\left(x + 2\\right)\\left(7 + x\\right)$.",
+      "difficulte": 2,
+      "tags": ["factoriser", "facteur-commun"]
+    },
+    {
+      "id": "4E-CH15-024",
+      "lecon": "Factoriser par un facteur commun",
+      "type": "formule",
+      "recto": "Comment trouve-t-on le plus grand facteur commun possible ?",
+      "verso": "On cherche d'abord le plus grand diviseur commun des coefficients, puis on garde chaque lettre présente dans tous les termes, avec son plus petit exposant. Pour $12x^{2} + 18x$, cela donne $6x$.",
+      "difficulte": 2,
+      "tags": ["factoriser", "facteur-commun"]
+    },
+    {
+      "id": "4E-CH15-025",
+      "lecon": "Factoriser par un facteur commun",
+      "type": "formule",
+      "recto": "Pourquoi la factorisation de $7x + 7$ donne-t-elle $7\\left(x + 1\\right)$ et non $7\\left(x + 0\\right)$ ?",
+      "verso": "Parce que le second terme est tout entier le facteur commun : après division par $7$, il reste $1$ et non $0$. Le développement du résultat fait apparaître l'erreur en une ligne.",
+      "difficulte": 3,
+      "tags": ["factoriser", "un-oublie", "piege"]
+    },
+    {
+      "id": "4E-CH15-026",
+      "lecon": "Factoriser par un facteur commun",
+      "type": "formule",
+      "recto": "Comment vérifie-t-on qu'une factorisation est correcte ?",
+      "verso": "On développe le résultat obtenu : on doit retrouver exactement l'expression de départ. Si le développement donne autre chose, la factorisation est fausse.",
+      "difficulte": 2,
+      "tags": ["factoriser", "verification"]
+    },
+    {
+      "id": "4E-CH15-027",
+      "lecon": "Factoriser par un facteur commun",
+      "type": "definition",
+      "recto": "Quel lien y a-t-il entre la distributivité et la factorisation ?",
+      "verso": "C'est la même égalité $ka + kb = k\\left(a + b\\right)$, lue dans l'autre sens. Développer va de gauche à droite, factoriser va de droite à gauche : il n'y a qu'un sens de lecture nouveau à retenir.",
+      "difficulte": 2,
+      "tags": ["factoriser", "distributivite", "lien"]
+    },
+    {
+      "id": "4E-CH15-028",
+      "lecon": "Les produits remarquables",
+      "type": "formule",
+      "recto": "Quelle identité remarquable développe le carré d'une somme $\\left(a + b\\right)^{2}$ ?",
+      "verso": "$\\left(a + b\\right)^{2} = a^{2} + 2ab + b^{2}$. Le terme $2ab$ s'appelle le double produit.",
+      "difficulte": 1,
+      "tags": ["identite-remarquable", "carre-somme"]
+    },
+    {
+      "id": "4E-CH15-029",
+      "lecon": "Les produits remarquables",
+      "type": "formule",
+      "recto": "Quelle identité remarquable développe le carré d'une différence $\\left(a - b\\right)^{2}$ ?",
+      "verso": "$\\left(a - b\\right)^{2} = a^{2} - 2ab + b^{2}$. Seul le signe du double produit change ; le dernier terme reste positif, car $b^{2}$ et $\\left(-b\\right)^{2}$ sont égaux.",
+      "difficulte": 1,
+      "tags": ["identite-remarquable", "carre-difference"]
+    },
+    {
+      "id": "4E-CH15-030",
+      "lecon": "Les produits remarquables",
+      "type": "formule",
+      "recto": "Quelle identité remarquable développe le produit $\\left(a + b\\right)\\left(a - b\\right)$ ?",
+      "verso": "$\\left(a + b\\right)\\left(a - b\\right) = a^{2} - b^{2}$. On l'appelle la différence de deux carrés : c'est la seule des trois identités dont le résultat ne compte que deux termes.",
+      "difficulte": 1,
+      "tags": ["identite-remarquable", "difference-de-carres"]
+    },
+    {
+      "id": "4E-CH15-031",
+      "lecon": "Les produits remarquables",
+      "type": "formule",
+      "recto": "Pourquoi $\\left(x + 3\\right)^{2}$ ne vaut-il pas $x^{2} + 9$ ?",
+      "verso": "Parce qu'il manque le double produit : $\\left(x + 3\\right)^{2} = x^{2} + 6x + 9$. Retiens la phrase : le carré d'une somme a trois termes.",
+      "difficulte": 3,
+      "tags": ["identite-remarquable", "double-produit", "piege"]
+    },
+    {
+      "id": "4E-CH15-032",
+      "lecon": "Les produits remarquables",
+      "type": "formule",
+      "recto": "Dans $\\left(3x - 2\\right)^{2}$, que vaut le nombre $a$ de l'identité du carré d'une différence ?",
+      "verso": "$a$ est le monôme entier $3x$, et non $3$ ni $x$. On calcule donc $a^{2} = \\left(3x\\right)^{2} = 9x^{2}$ et $2ab = 2 \\times 3x \\times 2 = 12x$, d'où $9x^{2} - 12x + 4$.",
+      "difficulte": 3,
+      "tags": ["identite-remarquable", "identifier-a-et-b"]
+    },
+    {
+      "id": "4E-CH15-033",
+      "lecon": "Les produits remarquables",
+      "type": "formule",
+      "recto": "Dans quel sens lit-on les identités remarquables pour factoriser ?",
+      "verso": "De droite à gauche. Devant une différence de deux termes, on regarde si chacun est un carré ; devant trois termes, on regarde si le premier et le dernier sont des carrés, puis si celui du milieu est bien le double produit.",
+      "difficulte": 2,
+      "tags": ["identite-remarquable", "factoriser"]
+    },
+    {
+      "id": "4E-CH15-034",
+      "lecon": "Les produits remarquables",
+      "type": "formule",
+      "recto": "Comment une identité remarquable permet-elle de calculer $99 \\times 101$ de tête ?",
+      "verso": "On écrit $99 \\times 101 = \\left(100 - 1\\right)\\left(100 + 1\\right) = 100^{2} - 1^{2} = 10\\,000 - 1 = 9\\,999$. De la même façon, $101^{2} = 10\\,000 + 200 + 1 = 10\\,201$.",
+      "difficulte": 2,
+      "tags": ["identite-remarquable", "calcul-mental"]
+    }
+  ]
+}

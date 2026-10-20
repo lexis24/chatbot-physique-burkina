@@ -1,0 +1,314 @@
+{
+  "niveau": "3ème",
+  "chapitre": "Chapitre 15 : Equations et systèmes du premier degré dans $\\mathbb{R}\\times \\mathbb{R}$",
+  "source": "maths/3eme/Chapitre_15_Systemes",
+  "nombre_cartes": 34,
+  "cartes": [
+    {
+      "id": "3E-CH15-001",
+      "lecon": "Equation du premier degré à deux inconnues",
+      "type": "definition",
+      "recto": "Qu'est-ce qu'une équation du premier degré à deux inconnues ?",
+      "verso": "C'est une égalité de la forme $ax + by + c = 0$, où $a$ et $b$ ne sont pas tous les deux nuls.",
+      "difficulte": 1,
+      "tags": ["equation-deux-inconnues", "definition"]
+    },
+    {
+      "id": "3E-CH15-002",
+      "lecon": "Equation du premier degré à deux inconnues",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on une solution d'une équation du premier degré à deux inconnues ?",
+      "verso": "C'est un couple $\\left(x\\,;\\,y\\right)$ de nombres réels qui vérifie l'égalité. On travaille donc dans $\\mathbb{R}\\times \\mathbb{R}$, l'ensemble des couples de nombres réels.",
+      "difficulte": 1,
+      "tags": ["couple", "solution", "definition"]
+    },
+    {
+      "id": "3E-CH15-003",
+      "lecon": "Equation du premier degré à deux inconnues",
+      "type": "formule",
+      "recto": "Combien de couples solutions une équation du premier degré à deux inconnues possède-t-elle ?",
+      "verso": "Une infinité : ces couples sont exactement les coordonnées des points d'une droite du plan.",
+      "difficulte": 2,
+      "tags": ["equation-deux-inconnues", "droite"]
+    },
+    {
+      "id": "3E-CH15-004",
+      "lecon": "Equation du premier degré à deux inconnues",
+      "type": "formule",
+      "recto": "Comment fabrique-t-on un couple solution d'une équation à deux inconnues ?",
+      "verso": "On choisit librement une valeur pour l'une des inconnues, puis on calcule la valeur de l'autre. On prend l'inconnue qui donne les calculs les plus simples.",
+      "difficulte": 2,
+      "tags": ["couple", "methode"]
+    },
+    {
+      "id": "3E-CH15-005",
+      "lecon": "Equation du premier degré à deux inconnues",
+      "type": "formule",
+      "recto": "Pourquoi $\\left(3\\,;\\,1\\right)$ n'est-il pas solution de $2x + y = 5$, alors que $\\left(1\\,;\\,3\\right)$ l'est ?",
+      "verso": "Parce qu'un couple s'écrit dans l'ordre $\\left(x\\,;\\,y\\right)$ : le premier nombre est toujours la valeur de $x$. Ici $2\\times 3 + 1 = 7$, alors que $2\\times 1 + 3 = 5$.",
+      "difficulte": 3,
+      "tags": ["couple", "ordre", "piege"]
+    },
+    {
+      "id": "3E-CH15-006",
+      "lecon": "Equation du premier degré à deux inconnues",
+      "type": "definition",
+      "recto": "Que faut-il comprendre quand on dit qu'une équation à deux inconnues a une infinité de solutions ?",
+      "verso": "Non pas que tous les couples conviennent, mais que les couples solutions forment une famille précise, celle des points d'une droite. Tous les autres points du plan ne sont pas solutions.",
+      "difficulte": 3,
+      "tags": ["equation-deux-inconnues", "piege"]
+    },
+    {
+      "id": "3E-CH15-007",
+      "lecon": "Résolution d'un système par la méthode algébrique",
+      "type": "definition",
+      "recto": "Qu'est-ce qu'un système de deux équations du premier degré à deux inconnues ?",
+      "verso": "C'est la donnée de deux équations que le couple cherché doit vérifier en même temps. On l'écrit avec une accolade.",
+      "difficulte": 1,
+      "tags": ["systeme", "definition"]
+    },
+    {
+      "id": "3E-CH15-008",
+      "lecon": "Résolution d'un système par la méthode algébrique",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on une solution d'un système de deux équations à deux inconnues ?",
+      "verso": "C'est un couple $\\left(x\\,;\\,y\\right)$ qui vérifie les deux équations à la fois, et non l'une seulement.",
+      "difficulte": 1,
+      "tags": ["systeme", "solution"]
+    },
+    {
+      "id": "3E-CH15-009",
+      "lecon": "Résolution d'un système par la méthode algébrique",
+      "type": "formule",
+      "recto": "En quoi consiste la méthode de substitution ?",
+      "verso": "On isole une inconnue dans l'une des équations, puis on remplace cette inconnue par son expression dans l'autre équation, ce qui donne une équation à une seule inconnue.",
+      "difficulte": 2,
+      "tags": ["substitution", "methode"]
+    },
+    {
+      "id": "3E-CH15-010",
+      "lecon": "Résolution d'un système par la méthode algébrique",
+      "type": "formule",
+      "recto": "En quoi consiste la méthode de combinaison ?",
+      "verso": "On multiplie une équation, ou les deux, par des nombres bien choisis pour rendre opposés les coefficients d'une même inconnue, puis on additionne membre à membre : cette inconnue disparaît.",
+      "difficulte": 2,
+      "tags": ["combinaison", "methode"]
+    },
+    {
+      "id": "3E-CH15-011",
+      "lecon": "Résolution d'un système par la méthode algébrique",
+      "type": "formule",
+      "recto": "Dans quel cas la substitution est-elle plus commode que la combinaison ?",
+      "verso": "Quand une inconnue est déjà isolée, ou que son coefficient vaut $1$ ou $-1$ : l'expression obtenue reste simple. Sinon, la combinaison évite les fractions.",
+      "difficulte": 2,
+      "tags": ["substitution", "combinaison", "choix"]
+    },
+    {
+      "id": "3E-CH15-012",
+      "lecon": "Résolution d'un système par la méthode algébrique",
+      "type": "formule",
+      "recto": "Pourquoi faut-il reporter l'expression obtenue dans l'autre équation du système ?",
+      "verso": "Parce qu'en la reportant dans l'équation dont on l'a tirée, on obtient $0 = 0$, une égalité vraie mais qui n'apprend rien et ne fait pas avancer la résolution.",
+      "difficulte": 3,
+      "tags": ["substitution", "piege"]
+    },
+    {
+      "id": "3E-CH15-013",
+      "lecon": "Résolution d'un système par la méthode algébrique",
+      "type": "formule",
+      "recto": "Dans combien d'équations vérifie-t-on le couple trouvé à la fin d'une résolution ?",
+      "verso": "Dans les deux équations d'origine, jamais dans une seule : un couple faux vérifie parfois l'une des deux par hasard.",
+      "difficulte": 2,
+      "tags": ["verification", "systeme"]
+    },
+    {
+      "id": "3E-CH15-014",
+      "lecon": "Résolution d'un système par la méthode algébrique",
+      "type": "formule",
+      "recto": "Pourquoi a-t-on le droit d'additionner membre à membre les deux équations d'un système ?",
+      "verso": "Parce que l'addition membre à membre de deux égalités vraies donne encore une égalité vraie. Le couple solution vérifie donc aussi l'équation obtenue par cette addition.",
+      "difficulte": 3,
+      "tags": ["combinaison", "demonstration"]
+    },
+    {
+      "id": "3E-CH15-015",
+      "lecon": "Résolution graphique d'un système",
+      "type": "formule",
+      "recto": "Que représente graphiquement chacune des deux équations d'un système ?",
+      "verso": "Une droite du plan, dont les points ont pour coordonnées les couples solutions de cette équation.",
+      "difficulte": 1,
+      "tags": ["graphique", "droite"]
+    },
+    {
+      "id": "3E-CH15-016",
+      "lecon": "Résolution graphique d'un système",
+      "type": "formule",
+      "recto": "Que représente graphiquement la solution d'un système de deux équations ?",
+      "verso": "Le point d'intersection des deux droites : ses coordonnées vérifient les deux équations à la fois.",
+      "difficulte": 1,
+      "tags": ["graphique", "intersection"]
+    },
+    {
+      "id": "3E-CH15-017",
+      "lecon": "Résolution graphique d'un système",
+      "type": "formule",
+      "recto": "Combien de solutions a un système dont les deux droites sont strictement parallèles ?",
+      "verso": "Aucune : les deux droites n'ont pas de point commun, et l'on dit que le système est impossible.",
+      "difficulte": 2,
+      "tags": ["graphique", "sans-solution"]
+    },
+    {
+      "id": "3E-CH15-018",
+      "lecon": "Résolution graphique d'un système",
+      "type": "formule",
+      "recto": "Combien de solutions a un système dont les deux droites sont confondues ?",
+      "verso": "Une infinité : tous les couples correspondant aux points de cette droite conviennent.",
+      "difficulte": 2,
+      "tags": ["graphique", "infinite-de-solutions"]
+    },
+    {
+      "id": "3E-CH15-019",
+      "lecon": "Résolution graphique d'un système",
+      "type": "formule",
+      "recto": "Comment reconnaît-on sur les équations réduites le nombre de solutions d'un système ?",
+      "verso": "Coefficients directeurs différents : une seule solution. Coefficients égaux et ordonnées à l'origine différentes : aucune solution. Les deux nombres égaux : une infinité de solutions.",
+      "difficulte": 2,
+      "tags": ["equation-reduite", "nombre-de-solutions"]
+    },
+    {
+      "id": "3E-CH15-020",
+      "lecon": "Résolution graphique d'un système",
+      "type": "formule",
+      "recto": "Que signifient les deux fins de calcul $0 = 7$ et $0 = 0$ obtenues par combinaison ?",
+      "verso": "Une égalité fausse comme $0 = 7$ signale des droites parallèles, donc aucune solution. Une égalité vraie comme $0 = 0$ signale des droites confondues, donc une infinité de solutions.",
+      "difficulte": 3,
+      "tags": ["combinaison", "nombre-de-solutions", "piege"]
+    },
+    {
+      "id": "3E-CH15-021",
+      "lecon": "Résolution graphique d'un système",
+      "type": "formule",
+      "recto": "Quelle est la limite de la résolution graphique d'un système ?",
+      "verso": "Elle dépend de la précision du tracé. Quand la solution n'est pas un couple d'entiers, seule la méthode algébrique donne la réponse exacte : on contrôle donc toujours par le calcul.",
+      "difficulte": 2,
+      "tags": ["graphique", "limite"]
+    },
+    {
+      "id": "3E-CH15-022",
+      "lecon": "Systèmes d'inéquations et résolution graphique",
+      "type": "definition",
+      "recto": "Comment s'écrit une inéquation du premier degré à deux inconnues ?",
+      "verso": "Sous la forme $ax + by + c > 0$, ou avec l'un des signes $\\ge$, $<$ ou $\\le$.",
+      "difficulte": 1,
+      "tags": ["inequation", "definition"]
+    },
+    {
+      "id": "3E-CH15-023",
+      "lecon": "Systèmes d'inéquations et résolution graphique",
+      "type": "formule",
+      "recto": "Quel est l'ensemble des solutions d'une inéquation du premier degré à deux inconnues ?",
+      "verso": "Un demi-plan, c'est-à-dire l'une des deux moitiés du plan découpées par la droite d'équation $ax + by + c = 0$, qui en est la frontière.",
+      "difficulte": 1,
+      "tags": ["inequation", "demi-plan"]
+    },
+    {
+      "id": "3E-CH15-024",
+      "lecon": "Systèmes d'inéquations et résolution graphique",
+      "type": "formule",
+      "recto": "Comment sait-on lequel des deux demi-plans est la solution d'une inéquation ?",
+      "verso": "On teste un seul point pris hors de la frontière, souvent l'origine : si l'inégalité est vraie pour ce point, le demi-plan solution est celui qui le contient ; sinon, c'est l'autre.",
+      "difficulte": 2,
+      "tags": ["inequation", "point-test"]
+    },
+    {
+      "id": "3E-CH15-025",
+      "lecon": "Systèmes d'inéquations et résolution graphique",
+      "type": "formule",
+      "recto": "Comment trace-t-on la droite frontière d'une inéquation à deux inconnues ?",
+      "verso": "En trait plein si l'inégalité est large, $\\le$ ou $\\ge$, car la frontière appartient alors à la solution ; en pointillés si elle est stricte, $<$ ou $>$, car la frontière en est exclue.",
+      "difficulte": 2,
+      "tags": ["inequation", "frontiere", "trace"]
+    },
+    {
+      "id": "3E-CH15-026",
+      "lecon": "Systèmes d'inéquations et résolution graphique",
+      "type": "formule",
+      "recto": "Quelle est la solution d'un système d'inéquations à deux inconnues ?",
+      "verso": "L'intersection des demi-plans solutions, c'est-à-dire la région commune, celle qui est hachurée par toutes les inéquations du système.",
+      "difficulte": 2,
+      "tags": ["systeme-inequations", "intersection"]
+    },
+    {
+      "id": "3E-CH15-027",
+      "lecon": "Systèmes d'inéquations et résolution graphique",
+      "type": "formule",
+      "recto": "Pourquoi ne prend-on pas l'origine comme point test lorsque la frontière passe par l'origine ?",
+      "verso": "Parce que le calcul donne $0$ et n'apprend rien sur le côté à retenir. Le point test doit être choisi hors de la frontière, par exemple $\\left(1\\,;\\,0\\right)$.",
+      "difficulte": 3,
+      "tags": ["point-test", "piege"]
+    },
+    {
+      "id": "3E-CH15-028",
+      "lecon": "Systèmes d'inéquations et résolution graphique",
+      "type": "formule",
+      "recto": "Sous quelle forme donne-t-on la solution d'un système d'inéquations ?",
+      "verso": "Non pas sous la forme d'un couple, mais sous celle d'une région du plan : on la hachure, on la colorie et on la décrit par une phrase.",
+      "difficulte": 3,
+      "tags": ["systeme-inequations", "region", "piege"]
+    },
+    {
+      "id": "3E-CH15-029",
+      "lecon": "Problèmes se ramenant à un système",
+      "type": "formule",
+      "recto": "Par quoi commence la résolution d'un problème se ramenant à un système ?",
+      "verso": "Par le choix des deux inconnues, en écrivant par une phrase ce que chacune représente et dans quelle unité.",
+      "difficulte": 1,
+      "tags": ["probleme", "inconnues"]
+    },
+    {
+      "id": "3E-CH15-030",
+      "lecon": "Problèmes se ramenant à un système",
+      "type": "formule",
+      "recto": "Comment obtient-on les deux équations du système à partir d'un énoncé ?",
+      "verso": "On écarte d'abord les informations inutiles, puis on traduit par une équation chacun des deux renseignements utiles que donne l'énoncé.",
+      "difficulte": 2,
+      "tags": ["probleme", "traduction"]
+    },
+    {
+      "id": "3E-CH15-031",
+      "lecon": "Problèmes se ramenant à un système",
+      "type": "formule",
+      "recto": "Que contrôle-t-on sur la solution avant de conclure un problème concret ?",
+      "verso": "Sa vraisemblance : des nombres entiers s'il s'agit d'objets, des valeurs positives s'il s'agit de prix ou de longueurs.",
+      "difficulte": 2,
+      "tags": ["probleme", "vraisemblance"]
+    },
+    {
+      "id": "3E-CH15-032",
+      "lecon": "Problèmes se ramenant à un système",
+      "type": "formule",
+      "recto": "Par quoi termine-t-on un problème résolu à l'aide d'un système ?",
+      "verso": "Par une phrase complète qui répond à la question posée. Un couple écrit seul au bas de la copie ne vaut pas une réponse.",
+      "difficulte": 1,
+      "tags": ["probleme", "conclusion"]
+    },
+    {
+      "id": "3E-CH15-033",
+      "lecon": "Problèmes se ramenant à un système",
+      "type": "formule",
+      "recto": "A quoi reconnaît-on que l'une des deux équations d'un problème est fausse ?",
+      "verso": "Au fait que les deux équations comptent la même grandeur. Elles doivent porter sur deux choses différentes, par exemple un nombre d'objets pour l'une et une valeur en francs pour l'autre.",
+      "difficulte": 3,
+      "tags": ["probleme", "grandeurs", "piege"]
+    },
+    {
+      "id": "3E-CH15-034",
+      "lecon": "Problèmes se ramenant à un système",
+      "type": "formule",
+      "recto": "Où apparaît dans le système une quantité donnée par unité, comme un prix au kilogramme ?",
+      "verso": "Comme coefficient de l'inconnue, et jamais comme inconnue elle-même.",
+      "difficulte": 2,
+      "tags": ["probleme", "coefficient"]
+    }
+  ]
+}

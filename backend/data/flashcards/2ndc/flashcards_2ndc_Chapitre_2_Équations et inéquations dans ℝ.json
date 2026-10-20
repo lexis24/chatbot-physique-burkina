@@ -1,0 +1,350 @@
+{
+  "niveau": "2nde C",
+  "chapitre": "Chapitre 2 : Equations et inéquations dans $\\mathbb{R}$",
+  "source": "maths/2ndc/Chapitre_2_Equations_inequations",
+  "nombre_cartes": 38,
+  "cartes": [
+    {
+      "id": "2C-CH02-001",
+      "lecon": "Polynômes : zéro et factorisation par $\\left(x - a\\right)$",
+      "type": "definition",
+      "recto": "Comment détermine-t-on le degré d'un polynôme ?",
+      "verso": "C'est le plus grand exposant dont le coefficient est non nul. Dans $x^{3} - 7x - 6$, le coefficient de $x^{2}$ vaut $0$, et pourtant le degré reste $3$.",
+      "difficulte": 2,
+      "tags": ["polynome", "degre"]
+    },
+    {
+      "id": "2C-CH02-002",
+      "lecon": "Polynômes : zéro et factorisation par $\\left(x - a\\right)$",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on un zéro, ou une racine, d'un polynôme $P$ ?",
+      "verso": "Un réel $a$ tel que $P\\left(a\\right) = 0$. Les deux mots désignent la même chose et s'emploient l'un pour l'autre.",
+      "difficulte": 1,
+      "tags": ["polynome", "racine", "zero"]
+    },
+    {
+      "id": "2C-CH02-003",
+      "lecon": "Polynômes : zéro et factorisation par $\\left(x - a\\right)$",
+      "type": "formule",
+      "recto": "Que peut-on affirmer d'un polynôme $P$ dès que $P\\left(a\\right) = 0$ ?",
+      "verso": "Qu'il existe un polynôme $Q$ tel que $P\\left(x\\right) = \\left(x - a\\right)Q\\left(x\\right)$, le degré de $Q$ étant inférieur d'une unité à celui de $P$. Une racine trouvée fait donc tomber le degré du problème.",
+      "difficulte": 2,
+      "tags": ["factorisation", "theoreme", "racine"]
+    },
+    {
+      "id": "2C-CH02-004",
+      "lecon": "Polynômes : zéro et factorisation par $\\left(x - a\\right)$",
+      "type": "formule",
+      "recto": "Quelle racine correspond au facteur $\\left(x + 2\\right)$ dans un polynôme factorisé ?",
+      "verso": "La racine $-2$, et non $2$ : le facteur s'écrit toujours $\\left(x - a\\right)$, avec un moins, donc $\\left(x + 2\\right)$ se lit $\\left(x - \\left(-2\\right)\\right)$. Le réflexe sûr est de chercher quelle valeur annule le facteur.",
+      "difficulte": 3,
+      "tags": ["factorisation", "racine", "piege"]
+    },
+    {
+      "id": "2C-CH02-005",
+      "lecon": "Polynômes : zéro et factorisation par $\\left(x - a\\right)$",
+      "type": "formule",
+      "recto": "A quelle condition un produit de facteurs est-il nul ?",
+      "verso": "Un produit est nul si et seulement si l'un au moins de ses facteurs est nul. Ainsi $A \\times B = 0$ équivaut à « $A = 0$ ou $B = 0$ ».",
+      "difficulte": 1,
+      "tags": ["produit-nul", "equation"]
+    },
+    {
+      "id": "2C-CH02-006",
+      "lecon": "Polynômes : zéro et factorisation par $\\left(x - a\\right)$",
+      "type": "formule",
+      "recto": "Sur quel principe repose la méthode des coefficients indéterminés ?",
+      "verso": "Sur le fait que deux polynômes sont égaux exactement lorsque leurs coefficients le sont, un par un. On écrit $Q$ avec des coefficients inconnus, on développe $\\left(x - a\\right)Q\\left(x\\right)$, puis on identifie terme à terme.",
+      "difficulte": 2,
+      "tags": ["identification", "factorisation"]
+    },
+    {
+      "id": "2C-CH02-007",
+      "lecon": "Polynômes : zéro et factorisation par $\\left(x - a\\right)$",
+      "type": "formule",
+      "recto": "Quelle solution perd-on en simplifiant l'équation $x^{2} = 3x$ par $x$ ?",
+      "verso": "La solution $x = 0$. On ne divise jamais par l'inconnue : on ramène tout dans un membre et l'on factorise, ce qui donne $x\\left(x - 3\\right) = 0$, donc $x = 0$ ou $x = 3$.",
+      "difficulte": 3,
+      "tags": ["equation", "piege", "factorisation"]
+    },
+    {
+      "id": "2C-CH02-008",
+      "lecon": "Le trinôme du second degré : forme canonique et discriminant",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on un trinôme du second degré ?",
+      "verso": "Un polynôme de la forme $ax^{2} + bx + c$ avec $a \\ne 0$, où $a$ est le coefficient dominant, $b$ le coefficient de $x$ et $c$ le terme constant. Si $a$ était nul, il ne resterait qu'une expression du premier degré.",
+      "difficulte": 1,
+      "tags": ["trinome", "definition"]
+    },
+    {
+      "id": "2C-CH02-009",
+      "lecon": "Le trinôme du second degré : forme canonique et discriminant",
+      "type": "formule",
+      "recto": "Sous quelle forme canonique tout trinôme du second degré peut-il s'écrire ?",
+      "verso": "$ax^{2} + bx + c = a\\left(x - \\alpha\\right)^{2} + \\beta$, avec $\\alpha = -\\dfrac{b}{2a}$ et $\\beta$ égal à la valeur du trinôme en $\\alpha$. L'inconnue n'y apparaît plus qu'une seule fois.",
+      "difficulte": 2,
+      "tags": ["forme-canonique", "trinome"]
+    },
+    {
+      "id": "2C-CH02-010",
+      "lecon": "Le trinôme du second degré : forme canonique et discriminant",
+      "type": "formule",
+      "recto": "Que donne la forme canonique sur la plus petite ou la plus grande valeur d'un trinôme ?",
+      "verso": "Si $a > 0$, le trinôme admet $\\beta$ pour plus petite valeur ; si $a < 0$, il admet $\\beta$ pour plus grande valeur. Dans les deux cas, cette valeur est atteinte pour $x = \\alpha$, car un carré vaut au minimum $0$.",
+      "difficulte": 2,
+      "tags": ["forme-canonique", "extremum"]
+    },
+    {
+      "id": "2C-CH02-011",
+      "lecon": "Le trinôme du second degré : forme canonique et discriminant",
+      "type": "definition",
+      "recto": "Comment se calcule le discriminant d'un trinôme $ax^{2} + bx + c$ ?",
+      "verso": "$\\Delta = b^{2} - 4ac$. Le symbole $\\Delta$ est la lettre grecque delta majuscule, et son signe distingue les trois cas possibles.",
+      "difficulte": 1,
+      "tags": ["discriminant", "trinome"]
+    },
+    {
+      "id": "2C-CH02-012",
+      "lecon": "Le trinôme du second degré : forme canonique et discriminant",
+      "type": "formule",
+      "recto": "Que dit le signe du discriminant sur le nombre de racines d'un trinôme ?",
+      "verso": "Si $\\Delta > 0$, il y a deux racines distinctes ; si $\\Delta = 0$, une seule racine, dite double ; si $\\Delta < 0$, aucune racine réelle.",
+      "difficulte": 1,
+      "tags": ["discriminant", "racines"]
+    },
+    {
+      "id": "2C-CH02-013",
+      "lecon": "Le trinôme du second degré : forme canonique et discriminant",
+      "type": "formule",
+      "recto": "Quelles formules donnent les racines d'un trinôme lorsque $\\Delta > 0$ ?",
+      "verso": "$x_{1} = \\dfrac{-b - \\sqrt{\\Delta}}{2a}$ et $x_{2} = \\dfrac{-b + \\sqrt{\\Delta}}{2a}$. Elles ne diffèrent que par le signe devant $\\sqrt{\\Delta}$, si bien que leur milieu vaut $-\\dfrac{b}{2a}$. Quand $\\Delta = 0$, l'unique racine est ce milieu.",
+      "difficulte": 2,
+      "tags": ["discriminant", "racines", "formule"]
+    },
+    {
+      "id": "2C-CH02-014",
+      "lecon": "Le trinôme du second degré : forme canonique et discriminant",
+      "type": "formule",
+      "recto": "Comment la forme canonique explique-t-elle qu'un discriminant négatif interdise toute racine ?",
+      "verso": "Résoudre revient à écrire $\\left(x - \\alpha\\right)^{2} = -\\dfrac{\\beta}{a}$, dont le second membre est alors négatif : aucun carré ne l'est. Ainsi $x^{2} + x + 1 = \\left(x + \\dfrac{1}{2}\\right)^{2} + \\dfrac{3}{4}$ vaut au moins $\\dfrac{3}{4}$.",
+      "difficulte": 3,
+      "tags": ["discriminant", "forme-canonique"]
+    },
+    {
+      "id": "2C-CH02-015",
+      "lecon": "Le trinôme du second degré : forme canonique et discriminant",
+      "type": "formule",
+      "recto": "Comment se factorise un trinôme dont le discriminant est positif ou nul ?",
+      "verso": "Si $\\Delta > 0$, $ax^{2} + bx + c = a\\left(x - x_{1}\\right)\\left(x - x_{2}\\right)$ ; si $\\Delta = 0$, $ax^{2} + bx + c = a\\left(x - x_{0}\\right)^{2}$. Le facteur $a$ est indispensable. Pour $\\Delta < 0$, aucune factorisation du premier degré n'existe.",
+      "difficulte": 2,
+      "tags": ["factorisation", "trinome", "discriminant"]
+    },
+    {
+      "id": "2C-CH02-016",
+      "lecon": "Le trinôme du second degré : forme canonique et discriminant",
+      "type": "formule",
+      "recto": "Quelles erreurs de signe guettent le calcul du discriminant ?",
+      "verso": "Ecrire $\\left(-4\\right)^{2} = -16$ au lieu de $16$, et oublier que retrancher $4ac$ revient à ajouter lorsque $a$ et $c$ sont de signes contraires : pour $2x^{2} - x - 6$, on a $\\Delta = 1 + 48 = 49$.",
+      "difficulte": 3,
+      "tags": ["discriminant", "piege", "signes"]
+    },
+    {
+      "id": "2C-CH02-017",
+      "lecon": "Résoudre une équation du second degré",
+      "type": "formule",
+      "recto": "Parmi les méthodes de résolution d'une équation du second degré, laquelle fonctionne toujours ?",
+      "verso": "Le discriminant. La racine évidente, l'identité remarquable et la forme canonique sont plus rapides quand elles s'appliquent, mais seul le discriminant réussit dans tous les cas.",
+      "difficulte": 2,
+      "tags": ["equation", "methodes", "discriminant"]
+    },
+    {
+      "id": "2C-CH02-018",
+      "lecon": "Résoudre une équation du second degré",
+      "type": "definition",
+      "recto": "Comment écrit-on l'ensemble des solutions d'une équation ?",
+      "verso": "Avec des accolades, par exemple $S = \\left\\{-3\\,;2\\right\\}$, car c'est une liste de nombres et non un intervalle. Quand il n'y a pas de solution, on écrit $S = \\varnothing$, jamais $S = 0$.",
+      "difficulte": 2,
+      "tags": ["notation", "solutions", "redaction"]
+    },
+    {
+      "id": "2C-CH02-019",
+      "lecon": "Résoudre une équation du second degré",
+      "type": "formule",
+      "recto": "Que valent la somme et le produit des racines d'un trinôme $ax^{2} + bx + c$ ?",
+      "verso": "$x_{1} + x_{2} = -\\dfrac{b}{a}$ et $x_{1}x_{2} = \\dfrac{c}{a}$. Ces égalités contrôlent des racines déjà calculées, et donnent la seconde racine lorsqu'une racine évidente est connue.",
+      "difficulte": 2,
+      "tags": ["somme-produit", "racines"]
+    },
+    {
+      "id": "2C-CH02-020",
+      "lecon": "Résoudre une équation du second degré",
+      "type": "formule",
+      "recto": "De quelle équation deux nombres de somme $S$ et de produit $P$ sont-ils les racines ?",
+      "verso": "De l'équation $t^{2} - St + P = 0$, avec un moins devant $S$ et un plus devant $P$. Ces deux nombres existent si et seulement si $S^{2} - 4P \\ge 0$.",
+      "difficulte": 2,
+      "tags": ["somme-produit", "modelisation"]
+    },
+    {
+      "id": "2C-CH02-021",
+      "lecon": "Résoudre une équation du second degré",
+      "type": "formule",
+      "recto": "Quelle condition impose-t-on à la nouvelle inconnue d'une équation bicarrée $ax^{4} + bx^{2} + c = 0$ ?",
+      "verso": "On pose $X = x^{2}$ avec $X \\ge 0$, car un carré n'est jamais négatif. Une valeur négative de $X$ est écartée, et chaque valeur positive redonne deux valeurs opposées de $x$.",
+      "difficulte": 3,
+      "tags": ["equation-bicarree", "changement-d-inconnue", "piege"]
+    },
+    {
+      "id": "2C-CH02-022",
+      "lecon": "Résoudre une équation du second degré",
+      "type": "formule",
+      "recto": "Comment résout-on une équation de la forme $A^{2} = B^{2}$ ?",
+      "verso": "On écrit $A^{2} - B^{2} = 0$, puis $\\left(A - B\\right)\\left(A + B\\right) = 0$, et l'on applique la règle du produit nul. Deux nombres ont le même carré exactement lorsqu'ils sont égaux ou opposés.",
+      "difficulte": 2,
+      "tags": ["equation", "identite-remarquable"]
+    },
+    {
+      "id": "2C-CH02-023",
+      "lecon": "Résoudre une équation du second degré",
+      "type": "formule",
+      "recto": "Que cherche-t-on avant tout calcul dans une équation contenant des quotients ?",
+      "verso": "Les valeurs interdites, celles qui annulent un dénominateur. On les note de côté, puis on les relit avant de conclure pour écarter toute solution trouvée qui y figurerait.",
+      "difficulte": 2,
+      "tags": ["valeurs-interdites", "equation-quotient"]
+    },
+    {
+      "id": "2C-CH02-024",
+      "lecon": "Résoudre une équation du second degré",
+      "type": "formule",
+      "recto": "Comment résout-on une équation de la forme $\\left|A\\right| = \\left|B\\right|$ ?",
+      "verso": "Elle équivaut à « $A = B$ ou $A = -B$ », et l'on résout les deux équations. De même, $\\left|A\\right| = k$ avec $k \\ge 0$ équivaut à « $A = k$ ou $A = -k$ ».",
+      "difficulte": 2,
+      "tags": ["valeur-absolue", "equation"]
+    },
+    {
+      "id": "2C-CH02-025",
+      "lecon": "Résoudre une équation du second degré",
+      "type": "formule",
+      "recto": "Que représentent graphiquement les solutions de l'équation $ax^{2} + bx + c = k$ ?",
+      "verso": "Les abscisses des points communs à la parabole d'équation $y = ax^{2} + bx + c$ et à la droite horizontale $y = k$. La lecture graphique donne le nombre de solutions de façon sûre, leurs valeurs de façon approchée.",
+      "difficulte": 2,
+      "tags": ["resolution-graphique", "parabole"]
+    },
+    {
+      "id": "2C-CH02-026",
+      "lecon": "Signe du trinôme et inéquations",
+      "type": "formule",
+      "recto": "Que devient le symbole d'une inéquation dont on multiplie les deux membres par un nombre négatif ?",
+      "verso": "Il faut le retourner : de $-3x \\le -6$ on déduit $x \\ge 2$. Ajouter ou retrancher un nombre, ou multiplier par un nombre strictement positif, ne change au contraire jamais le sens.",
+      "difficulte": 2,
+      "tags": ["inequation", "sens-de-l-inegalite"]
+    },
+    {
+      "id": "2C-CH02-027",
+      "lecon": "Signe du trinôme et inéquations",
+      "type": "formule",
+      "recto": "Quel est le signe de l'expression $ax + b$ selon les valeurs de $x$ ?",
+      "verso": "Elle s'annule pour $x = -\\dfrac{b}{a}$, puis elle est du signe de $a$ après cette racine, et du signe contraire avant. On résume par « du signe de $a$ après la racine ».",
+      "difficulte": 2,
+      "tags": ["signe", "premier-degre"]
+    },
+    {
+      "id": "2C-CH02-028",
+      "lecon": "Signe du trinôme et inéquations",
+      "type": "formule",
+      "recto": "Quelle phrase résume le signe d'un trinôme du second degré ?",
+      "verso": "« Le trinôme est du signe de $a$, sauf entre les racines. » Quand $\\Delta > 0$, il est du signe de $a$ à l'extérieur des racines, du signe contraire entre elles, et nul en chacune d'elles.",
+      "difficulte": 1,
+      "tags": ["signe", "trinome"]
+    },
+    {
+      "id": "2C-CH02-029",
+      "lecon": "Signe du trinôme et inéquations",
+      "type": "formule",
+      "recto": "Quel est le signe d'un trinôme dont le discriminant est strictement négatif ?",
+      "verso": "Il garde partout le signe de $a$ et ne s'annule jamais. Ainsi $-5x^{2} + x - 1$, de discriminant $-19$ et de coefficient dominant négatif, est négatif pour tout réel $x$.",
+      "difficulte": 2,
+      "tags": ["signe", "discriminant", "trinome"]
+    },
+    {
+      "id": "2C-CH02-030",
+      "lecon": "Signe du trinôme et inéquations",
+      "type": "formule",
+      "recto": "Pourquoi le trinôme prend-il le signe de $a$ à l'extérieur de ses racines ?",
+      "verso": "Parce qu'il s'écrit $a\\left(x - x_{1}\\right)\\left(x - x_{2}\\right)$ : hors des racines, les deux facteurs ont le même signe et leur produit est positif ; entre les racines, ils sont de signes contraires et le produit est négatif.",
+      "difficulte": 2,
+      "tags": ["signe", "factorisation", "demonstration"]
+    },
+    {
+      "id": "2C-CH02-031",
+      "lecon": "Signe du trinôme et inéquations",
+      "type": "definition",
+      "recto": "Quelle différence de traitement sépare le zéro d'un numérateur et la valeur qui annule un dénominateur ?",
+      "verso": "Le zéro du numérateur peut être pris, avec un crochet fermé, si l'inégalité est large. La valeur interdite du dénominateur est marquée d'une double barre dans le tableau et reste toujours exclue, avec un crochet ouvert.",
+      "difficulte": 3,
+      "tags": ["tableau-de-signes", "valeurs-interdites", "crochets"]
+    },
+    {
+      "id": "2C-CH02-032",
+      "lecon": "Signe du trinôme et inéquations",
+      "type": "formule",
+      "recto": "Pourquoi ne multiplie-t-on pas les deux membres de $\\dfrac{x + 1}{x - 2} \\ge 1$ par $x - 2$ ?",
+      "verso": "Parce que le signe de $x - 2$ est inconnu : on ignore s'il faudrait retourner l'inégalité. On ramène tout dans un membre, on réduit au même dénominateur, puis on étudie le signe du quotient obtenu.",
+      "difficulte": 3,
+      "tags": ["inequation", "quotient", "piege"]
+    },
+    {
+      "id": "2C-CH02-033",
+      "lecon": "Signe du trinôme et inéquations",
+      "type": "formule",
+      "recto": "Pourquoi l'inéquation $x^{2} < 4$ n'équivaut-elle pas à $x < 2$ ?",
+      "verso": "Parce que cette réponse oublie les nombres très négatifs, comme $-10$. On écrit $x^{2} - 4 < 0$, soit $\\left(x - 2\\right)\\left(x + 2\\right) < 0$, ce qui donne $-2 < x < 2$.",
+      "difficulte": 3,
+      "tags": ["inequation", "piege", "factorisation"]
+    },
+    {
+      "id": "2C-CH02-034",
+      "lecon": "Signe du trinôme et inéquations",
+      "type": "formule",
+      "recto": "Que lit-on sur une parabole pour résoudre l'inéquation $ax^{2} + bx + c > 0$ ?",
+      "verso": "Les abscisses des points de la courbe situés au-dessus de l'axe des abscisses. Pour une inégalité de sens contraire et large, on prend les points situés au-dessous, bornes comprises.",
+      "difficulte": 2,
+      "tags": ["inequation", "lecture-graphique", "parabole"]
+    },
+    {
+      "id": "2C-CH02-035",
+      "lecon": "La parabole : représentation graphique",
+      "type": "formule",
+      "recto": "Où se trouve le sommet de la parabole d'équation $y = ax^{2} + bx + c$ ?",
+      "verso": "Au point $S\\left(\\alpha\\,;\\beta\\right)$, avec $\\alpha = -\\dfrac{b}{2a}$ et $\\beta$ la valeur du trinôme en $\\alpha$. C'est le point le plus bas de la courbe si $a > 0$, le plus haut si $a < 0$.",
+      "difficulte": 1,
+      "tags": ["parabole", "sommet"]
+    },
+    {
+      "id": "2C-CH02-036",
+      "lecon": "La parabole : représentation graphique",
+      "type": "definition",
+      "recto": "Quelle est l'équation de l'axe de symétrie d'une parabole ?",
+      "verso": "La droite verticale $x = \\alpha$, qui passe par le sommet. Grâce à cette symétrie, chaque point calculé en fournit gratuitement un second, de même ordonnée.",
+      "difficulte": 2,
+      "tags": ["parabole", "axe-de-symetrie"]
+    },
+    {
+      "id": "2C-CH02-037",
+      "lecon": "La parabole : représentation graphique",
+      "type": "formule",
+      "recto": "Que devient l'équation d'une parabole lorsqu'on prend son sommet pour nouvelle origine ?",
+      "verso": "En posant $X = x - \\alpha$ et $Y = y - \\beta$, elle devient $Y = aX^{2}$. Toutes les paraboles de même coefficient $a$ sont donc la même courbe, simplement posée ailleurs sur la feuille.",
+      "difficulte": 2,
+      "tags": ["parabole", "changement-d-origine"]
+    },
+    {
+      "id": "2C-CH02-038",
+      "lecon": "La parabole : représentation graphique",
+      "type": "formule",
+      "recto": "Comment trouve-t-on les points où une parabole coupe les deux axes du repère ?",
+      "verso": "Avec l'axe des ordonnées, on remplace $x$ par $0$, ce qui donne le point $\\left(0\\,;c\\right)$. Avec l'axe des abscisses, on résout $ax^{2} + bx + c = 0$ : deux points si $\\Delta > 0$, un seul si $\\Delta = 0$, aucun si $\\Delta < 0$.",
+      "difficulte": 2,
+      "tags": ["parabole", "intersections", "discriminant"]
+    }
+  ]
+}

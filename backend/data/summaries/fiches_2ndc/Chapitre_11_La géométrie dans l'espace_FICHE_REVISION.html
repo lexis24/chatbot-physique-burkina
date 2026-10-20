@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Fiche de revision - 2nde C - Chapitre 11 : La geometrie dans l'espace</title>
+<style>
+/* ===================================================================
+   FICHE DE REVISION, Collection Hakili Lab, Edition 2026
+   Feuille de style autonome, format A4 pret a imprimer.
+   Bleu #005CB9 · Vert #49A145
+   =================================================================== */
+:root{
+  --bleu:#005CB9; --bleu-fonce:#00429A; --bleu-pale:#E8F1FB; --bleu-bord:#B7D2EE;
+  --vert:#49A145; --vert-fonce:#2F7A2C; --vert-pale:#EDF7EC; --vert-bord:#BCE0B9;
+  --gris:#4A4A4A; --gris-clair:#E4E4E4; --rouge:#B3261E;
+}
+@page{
+  size:A4; margin:15mm;
+  @bottom-center{
+    content:"Collection Hakili Lab, Edition 2026  ·  Fiche de revision  ·  " counter(page) "/" counter(pages);
+    font-family:"Segoe UI",Calibri,Arial,sans-serif; font-size:6.6pt; color:#8A8A8A;
+  }
+}
+*{box-sizing:border-box;}
+body{
+  margin:0; font-family:"Segoe UI",Calibri,Arial,sans-serif;
+  font-size:8.4pt; line-height:1.26; color:#1B1B1B;
+}
+p{margin:0 0 3pt;}
+ul{margin:0 0 3pt; padding-left:11pt;}
+li{margin:0 0 1.2pt;}
+b,strong{color:var(--bleu-fonce);}
+
+/* ------------------------------ ENTETE ---------------------------- */
+.entete{
+  display:flex; align-items:stretch; border:1.6pt solid var(--bleu);
+  border-radius:2.5pt; overflow:hidden; margin-bottom:6pt;
+}
+.entete .num{
+  background:var(--bleu); color:#fff; font-size:20pt; font-weight:700;
+  padding:0 8pt; display:flex; align-items:center; justify-content:center; min-width:34pt;
+}
+.entete .txt{padding:3.5pt 8pt; flex:1;}
+.entete .niveau{
+  font-size:7pt; font-weight:700; letter-spacing:.9pt; color:var(--vert-fonce);
+}
+.entete h1{margin:0; font-size:13.5pt; line-height:1.12; color:var(--bleu-fonce); font-weight:700;}
+.entete .sous{font-size:7pt; color:var(--gris); margin-top:1pt;}
+
+/* --------------------------- BANDEAUX ----------------------------- */
+.bandeau{
+  color:#fff; font-weight:700; font-size:9pt; letter-spacing:1pt;
+  padding:2.4pt 7pt; border-radius:2pt; margin:3pt 0 4pt; break-after:avoid; page-break-after:avoid;
+}
+.bandeau.bleu{background:var(--bleu);}
+.bandeau.vert{background:var(--vert);}
+
+/* --------------------------- COLONNES ----------------------------- */
+.cols{column-count:2; column-gap:7mm; column-fill:balance;}
+
+.cols.bal{column-fill:balance;}
+.bloc{margin-bottom:5pt;}
+.keep{break-inside:avoid; page-break-inside:avoid;}
+
+/* --------------------------- LECONS ------------------------------- */
+h2.lecon{
+  margin:0 0 3pt; font-size:8.6pt; font-weight:700; color:#fff; background:var(--bleu-fonce);
+  padding:1.8pt 5pt; border-radius:1.5pt; break-after:avoid; page-break-after:avoid;
+}
+h3.rub{
+  margin:3.5pt 0 1.5pt; font-size:8.2pt; font-weight:700; color:var(--vert-fonce);
+  border-bottom:.7pt solid var(--vert-bord); padding-bottom:.8pt;
+  break-after:avoid; page-break-after:avoid;
+}
+
+/* --------------------------- ENCADRES ----------------------------- */
+.form{
+  background:var(--bleu-pale); border:.8pt solid var(--bleu-bord); border-left:2.6pt solid var(--bleu);
+  border-radius:2pt; padding:2.4pt 5pt; margin:2.2pt 0 3.4pt;
+  break-inside:avoid; page-break-inside:avoid;
+}
+.form .t{
+  display:block; font-size:6.8pt; font-weight:700; letter-spacing:.6pt;
+  color:var(--bleu); margin-bottom:1.5pt;
+}
+.form .c{text-align:center; font-size:9.1pt; margin:1.6pt 0;}
+.note{background:var(--vert-pale); border-left:2.4pt solid var(--vert); padding:2.4pt 5pt; border-radius:1.5pt; margin:2.5pt 0 4pt; break-inside:avoid;}
+
+/* --------------------------- TABLEAUX ----------------------------- */
+table{width:100%; border-collapse:collapse; font-size:7.6pt; margin:2pt 0 4pt; break-inside:avoid;}
+th{background:var(--bleu); color:#fff; font-weight:700; text-align:left; padding:1.8pt 4pt; font-size:7.2pt;}
+td{border:.6pt solid var(--gris-clair); padding:1.8pt 4pt; vertical-align:top;}
+tr{break-inside:avoid;}
+table.var td{text-align:center; font-size:8pt;}
+table.var td.lab{text-align:left; font-weight:700; color:var(--bleu-fonce); background:var(--bleu-pale);}
+
+/* ----------------------------- PIEGES ----------------------------- */
+table.pieges th:first-child{width:44%;}
+table.pieges td:first-child{color:var(--rouge); background:#FDF1F0;}
+.x{font-weight:700;}
+.v{color:var(--vert-fonce); font-weight:700;}
+
+/* ---------------------------- RECAP ------------------------------- */
+ol.recap{margin:0; padding-left:0; list-style:none; counter-reset:r;}
+ol.recap li{
+  counter-increment:r; position:relative; padding-left:13pt; margin-bottom:1.8pt;
+  break-inside:avoid;
+}
+ol.recap li::before{
+  content:counter(r); position:absolute; left:0; top:.3pt;
+  width:10pt; height:10pt; border-radius:50%; background:var(--vert); color:#fff;
+  font-size:6.6pt; font-weight:700; text-align:center; line-height:10pt;
+}
+
+/* --------------------------- MATHS -------------------------------- */
+.m{font-family:Cambria,Georgia,"Times New Roman",serif;}
+i,var{font-family:Cambria,Georgia,"Times New Roman",serif; font-style:italic;}
+.op{font-family:Cambria,Georgia,"Times New Roman",serif; font-style:normal;}
+.f{display:inline-block; vertical-align:middle; text-align:center;
+   margin:0 .12em; line-height:1.06; font-family:Cambria,Georgia,"Times New Roman",serif;}
+.f>span{display:block; padding:0 .2em;}
+.f>span:first-child{border-bottom:.6pt solid currentColor; padding-bottom:.08em;}
+.f>span:last-child{padding-top:.04em;}
+.rad{border-top:.6pt solid currentColor; padding-top:.12em;}
+/* line-height:0 evite que l'exposant n'ecarte les lignes ; position:relative le
+   repositionne sans qu'il heurte la barre de fraction ni le trait du radical. */
+sup,sub{font-size:.68em; line-height:0; position:relative; vertical-align:baseline;}
+sup{top:-.42em;}
+sub{bottom:-.22em;}
+.pt{white-space:nowrap;}
+/* Les fleches n'ont qu'un glyphe atrophie dans la fonte serif : on les force
+   en sans-serif, ou elles sont franches meme a 8 pt. */
+.ar{font-family:"Segoe UI",Calibri,Arial,"DejaVu Sans",sans-serif; font-style:normal;}
+
+/* ------------------- PIEGES : blocs erreur / correction ------------- */
+.pg{font-size:8.1pt; border-left:2.4pt solid var(--rouge); background:#FDF1F0; border-radius:1.5pt;
+    padding:2pt 5pt; margin:0 0 2.8pt; break-inside:avoid; page-break-inside:avoid;}
+.pg .err{color:var(--rouge); font-weight:600;}
+.pg .cor{color:#1B1B1B; margin-top:.8pt;}
+.pg .cor b{color:var(--bleu-fonce);}
+.v{color:var(--vert-fonce); font-weight:700;}
+
+</style>
+</head>
+<body>
+<header class="entete">
+  <div class="num">11</div>
+  <div class="txt">
+    <div class="niveau">2NDE C &middot; MATHEMATIQUES</div>
+    <h1>La géométrie dans l'espace</h1>
+    <div class="sous">Leçon 1 : incidence et parallélisme, positions relatives &middot; Leçon 2 : orthogonalité dans l'espace et plan médiateur &middot; Leçon 3 : sections planes de solides et perspective cavalière</div>
+  </div>
+</header>
+
+<div class="bandeau bleu" style="margin-top:0">L'ESSENTIEL</div>
+<div class="cols">
+
+<!-- ================= LECON 1 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 1&nbsp;: Incidence et parallélisme : positions relatives</h2>
+<div class="form">
+  <span class="t">PROPRIETES D'INCIDENCE</span>
+  <div class="c m">deux points distincts A, B <span class="ar">&#8594;</span> une droite et une seule, (AB)</div>
+  <div class="c m">trois points non alignés A, B, C <span class="ar">&#8594;</span> un plan et un seul, (ABC)</div>
+  <div class="c m">deux points d'une droite dans (<i>P</i>) <span class="ar">&#8594;</span> droite entière incluse dans (<i>P</i>)</div>
+</div></div>
+<p>La troisième autorise à écrire d'un trait : « A et B sont dans (<i>P</i>), donc (AB) est contenue dans (<i>P</i>) ». Un plan est aussi déterminé par une droite et un point extérieur, par deux droites sécantes, ou par deux droites parallèles distinctes : dans les trois cas on retombe sur trois points non alignés.</p>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Positions relatives</h3>
+<p><b>Deux droites.</b> Elles sont <b>coplanaires</b> lorsqu'un plan les contient toutes les deux : elles sont alors <b>sécantes</b> (un seul point commun) ou <b>parallèles</b> (aucun point commun, ou confondues). Sinon elles sont <b>non coplanaires</b>, on dit <b>gauches</b> : aucun point commun et pas parallèles.</p>
+<p><b>Une droite (<i>d</i>) et un plan (<i>P</i>).</b> Trois cas, que l'on distingue en comptant les points communs : une infinité, (<i>d</i>) est <b>contenue</b> dans (<i>P</i>) ; aucun, (<i>d</i>) est <b>parallèle</b> à (<i>P</i>) ; exactement un, (<i>d</i>) est <b>sécante</b> à (<i>P</i>) et ce point est le <b>point de percée</b>.</p>
+<p><b>Deux plans.</b> <b>Parallèles</b> (aucun point commun, ou confondus) ou <b>sécants</b> : leur intersection est alors une <b>droite</b> entière.</p>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Propriétés de parallélisme</h3>
+<ul>
+<li>Deux droites parallèles à une <b>même troisième</b> sont parallèles entre elles.</li>
+<li>Si (<i>d</i>) est parallèle à une droite (<i>d</i>&#8242;) contenue dans (<i>P</i>) et si (<i>d</i>) n'est pas dans (<i>P</i>), alors (<i>d</i>) est <b>parallèle au plan</b> (<i>P</i>). C'est le seul outil pour démontrer un parallélisme droite-plan.</li>
+<li>Si deux plans sont parallèles, tout plan qui coupe l'un coupe l'autre, et les <b>deux droites d'intersection sont parallèles</b>.</li>
+<li>Si <b>deux droites sécantes</b> de (<i>P</i>) sont parallèles à <b>deux droites sécantes</b> de (<i>Q</i>), alors (<i>P</i>) et (<i>Q</i>) sont <b>parallèles</b>. Une seule droite ne suffit pas.</li>
+<li><b>Propriété du toit</b> : si (<i>d</i>) est parallèle à (<i>P</i>), tout plan contenant (<i>d</i>) et sécant à (<i>P</i>) coupe (<i>P</i>) suivant une droite <b>parallèle à (<i>d</i>)</b>.</li>
+</ul>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Méthodes</h3>
+<p><b>Position relative de deux droites.</b> Chercher un plan qui contient les deux : sur un solide, une <b>face</b> ou un plan diagonal. S'il existe, elles sont coplanaires, et un point commun donne <b>sécantes</b>, aucun donne <b>parallèles</b>. Si aucun plan ne les contient, elles sont <b>gauches</b> : c'est le cas de deux arêtes non parallèles qui n'appartiennent à <b>aucune face commune</b>.</p>
+<p><b>Intersection de deux plans.</b> Chercher un premier point commun, souvent un sommet, puis un <b>second point commun distinct</b> : les deux points étant dans les deux plans, la droite qui les joint est <b>exactement</b> leur intersection. Avec un seul point commun, la <b>propriété du toit</b> donne la direction.</p>
+</div>
+
+<!-- ================= LECON 2 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 2&nbsp;: Orthogonalité dans l'espace et plan médiateur</h2>
+<p>Deux droites sont <b>orthogonales</b>, ce que l'on note (<i>d</i>)&#8239;&#8869;&#8239;(<i>d</i>&#8242;), lorsque les parallèles à ces deux droites menées par un <b>même point</b> sont perpendiculaires. Si de plus elles ont un point commun, elles sont <b>perpendiculaires</b>.</p></div>
+<div class="form">
+  <div class="c m">perpendiculaires&#8239;=&#8239;orthogonales&#8239;+&#8239;sécantes</div>
+</div>
+<p>Deux droites orthogonales peuvent donc ne jamais se rencontrer, ce qui n'arrive pas dans le plan : sur un solide, on transporte l'une d'elles en la remplaçant par une <b>arête parallèle</b> mieux placée.</p>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Droite orthogonale à un plan</h3>
+<div class="form">
+  <span class="t">DEFINITION ET PROPRIETE FONDAMENTALE</span>
+  <div class="c m">(<i>d</i>)&#8239;&#8869;&#8239;(<i>P</i>) lorsque (<i>d</i>) est orthogonale à <b>deux droites sécantes</b> de (<i>P</i>)</div>
+  <div class="c m">alors (<i>d</i>) est orthogonale à <b>toutes</b> les droites de (<i>P</i>)</div>
+</div>
+<p>Deux lectures. Pour <b>prouver</b> (<i>d</i>)&#8239;&#8869;&#8239;(<i>P</i>), exhiber deux droites de (<i>P</i>), vérifier qu'elles sont <b>sécantes</b>, montrer l'orthogonalité avec chacune. Une fois acquise, elle donne sans autre justification l'orthogonalité avec n'importe quelle droite de (<i>P</i>), même une diagonale. C'est ainsi qu'on montre que <b>deux droites sont orthogonales</b> : on cherche un plan qui contienne la seconde et auquel la première soit orthogonale. Quand (<i>d</i>) coupe (<i>P</i>), on dit qu'elle lui est perpendiculaire et le point commun est le <b>pied de la perpendiculaire</b>.</p>
+<p><b>Plans perpendiculaires.</b> (<i>P</i>) et (<i>Q</i>) sont perpendiculaires lorsque l'un des deux <b>contient une droite orthogonale</b> à l'autre.</p>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Orthogonalité et parallélisme</h3>
+<ul>
+<li>Si (<i>d</i>)&#8239;&#8869;&#8239;(<i>P</i>) et si (<i>d</i>&#8242;) est parallèle à (<i>d</i>), alors (<i>d</i>&#8242;)&#8239;&#8869;&#8239;(<i>P</i>).</li>
+<li>Si (<i>d</i>)&#8239;&#8869;&#8239;(<i>P</i>) et si (<i>Q</i>) est parallèle à (<i>P</i>), alors (<i>d</i>)&#8239;&#8869;&#8239;(<i>Q</i>).</li>
+<li>Deux droites orthogonales à un <b>même plan</b> sont <b>parallèles</b> entre elles.</li>
+<li>Deux plans perpendiculaires à une <b>même droite</b> sont <b>parallèles</b> entre eux.</li>
+</ul>
+<div class="note"><b>Enoncés voisins, faux dans l'espace.</b> Deux plans perpendiculaires à un <b>même plan</b> ne sont pas forcément parallèles : deux murs d'un coin de salle sont perpendiculaires au sol et sécants. Deux droites orthogonales à une <b>même droite</b> non plus : dans un cube, (AB) et (AE) sont orthogonales à (AD) et se coupent en A.</div>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Plan médiateur</h3>
+<div class="form">
+  <span class="t">PLAN MEDIATEUR DU SEGMENT [AB]</span>
+  <div class="c m">ensemble des points M de l'espace tels que MA&#8239;=&#8239;MB</div>
+  <div class="c m">= plan perpendiculaire à (AB) passant par le <b>milieu</b> de [AB]</div>
+</div>
+<ul>
+<li>Pour montrer que M est dans le plan médiateur de [AB], il suffit de prouver que MA&#8239;=&#8239;MB.</li>
+<li>Pour l'identifier sur un solide, trouver <b>trois points non alignés</b> équidistants de A et de B : le plan qu'ils déterminent est le plan médiateur.</li>
+</ul>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Calculer une longueur dans l'espace</h3>
+<p>Repérer un <b>triangle rectangle</b> dont l'hypoténuse est le segment cherché et qui est contenu dans un <b>plan</b> du solide : une face, une section diagonale. Justifier l'angle droit par une propriété d'orthogonalité, <b>jamais par la lecture du dessin</b>, puis appliquer <b>Pythagore</b> dans ce plan, au besoin <b>deux fois</b>. Donner la valeur exacte avec son radical avant toute valeur approchée.</p>
+<div class="form">
+  <span class="t">DIAGONALES ET VOLUMES</span>
+  <div class="c m">cube d'arête <i>a</i> : diagonale d'une face <i>a</i>&#8730;<span class="rad">2</span> &nbsp;&#8226;&nbsp; <b>grande diagonale <i>a</i>&#8730;<span class="rad">3</span></b></div>
+  <div class="c m">pavé <i>L</i>&#8239;&#215;&#8239;<i>l</i>&#8239;&#215;&#8239;<i>h</i> : grande diagonale &#8730;<span class="rad"><i>L</i><sup>2</sup>&#8239;+&#8239;<i>l</i><sup>2</sup>&#8239;+&#8239;<i>h</i><sup>2</sup></span></div>
+  <div class="c m">volume du pavé <i>L</i>&#215;<i>l</i>&#215;<i>h</i> &nbsp;&#8226;&nbsp; volume de la pyramide <span class="f"><span>1</span><span>3</span></span>&#8239;&#215;&#8239;Base&#8239;&#215;&#8239;hauteur</div>
+</div>
+</div>
+
+<!-- ================= LECON 3 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 3&nbsp;: Sections planes de solides et perspective cavalière</h2>
+<p>La <b>perspective cavalière</b> est la convention de dessin qui représente un solide de l'espace sur une feuille plane.</p></div>
+<ul>
+<li>Les <b>faces frontales</b>, parallèles à la feuille, sont dessinées <b>en vraie grandeur</b> : longueurs et angles y sont respectés.</li>
+<li>Les arêtes <b>fuyantes</b>, celles qui s'éloignent vers l'arrière, sont toutes tracées suivant un <b>même angle</b> avec l'horizontale, l'<b>angle de fuite</b> (souvent 30&#176;, 45&#176; ou 60&#176;).</li>
+<li>Toutes les fuyantes sont <b>réduites dans le même rapport</b>, le <b>coefficient de réduction</b> (souvent <span class="f"><span>1</span><span>2</span></span> ou <span class="f"><span>2</span><span>3</span></span>).</li>
+<li>Les arêtes <b>cachées</b> par le solide se tracent en <b>pointillés</b>.</li>
+</ul>
+</div>
+
+<div class="bloc">
+<table>
+<tr><th>La perspective conserve</th><th>Elle ne conserve pas</th></tr>
+<tr><td>l'alignement des points ; le <b>parallélisme</b> de deux droites ; les <b>milieux</b> ; les rapports de longueurs mesurées <b>sur une même droite</b></td><td>les <b>longueurs des fuyantes</b>, qui sont réduites ; les <b>angles</b> : un angle droit de l'espace peut apparaître aigu ou obtus</td></tr>
+</table>
+<p>Un carré de l'espace se dessine donc comme un parallélogramme, et le milieu d'une arête se place au milieu du segment dessiné, même sur une fuyante raccourcie. Mais dès qu'une <b>longueur</b> ou un <b>angle</b> est demandé, la figure ne fait plus que guider le raisonnement : la réponse vient du calcul.</p>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Construire un solide en perspective</h3>
+<ul>
+<li>Dessiner la face <b>frontale en vraie grandeur</b>, avec ses vraies mesures et ses vrais angles.</li>
+<li>Fixer <b>une fois pour toutes</b> l'angle de fuite et le coefficient de réduction annoncés par l'énoncé.</li>
+<li>Depuis <b>chaque</b> sommet de la face frontale, tracer une fuyante : même angle et même longueur pour toutes, égale à la profondeur réelle multipliée par le coefficient.</li>
+<li>Joindre les extrémités des fuyantes : la face arrière obtenue est <b>superposable</b> à la face frontale et lui est parallèle sur le dessin.</li>
+<li>Repasser en <b>pointillés</b> les arêtes cachées, celles qui passent derrière le solide.</li>
+</ul>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Construire une section plane</h3>
+<ul>
+<li>Placer les points donnés du plan de coupe et noter, pour chacun, <b>dans quelle face</b> il se trouve.</li>
+<li><b>Joindre par un segment</b> deux points situés dans une <b>même face</b> : la trace du plan sur une face est toujours un segment.</li>
+<li>Quand il n'y a plus de couple de points dans une même face, utiliser le <b>parallélisme</b> : la trace sur une face est <b>parallèle</b> à la trace déjà obtenue sur la face <b>opposée</b>. Tracer donc, depuis un point déjà placé, la parallèle à la trace connue.</li>
+<li>Continuer de face en face jusqu'à <b>refermer</b> le polygone : il a autant de côtés que de <b>faces traversées</b>.</li>
+<li>Repasser en pointillés les côtés situés sur des faces cachées.</li>
+</ul>
+<div class="note"><b>Section d'une pyramide par un plan parallèle à la base :</b> polygone <b>semblable</b> à la base ; les longueurs sont multipliées par <i>k</i> et l'aire par <i>k</i><sup>2</sup>.</div>
+</div>
+
+</div>
+
+<div class="bandeau vert">PIEGES ET ERREURS FREQUENTES</div>
+<div class="cols">
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> (AB) et (CG) ne se coupent pas, donc elles sont parallèles</div><div class="cor"><span class="v">&#10003;</span> Dans l'espace, deux droites sans point commun sont <b>parallèles</b> (un plan les contient) <b>ou gauches</b> (aucun plan ne les contient). Ne pas se couper ne suffit <b>pas</b> : il faut en plus exhiber un plan contenant les deux.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> Les plans (ABC) et (SBC) se coupent au point B</div><div class="cor"><span class="v">&#10003;</span> Dès que deux plans distincts ont un point commun, ils en ont une infinité, alignés sur une <b>droite</b> : B et C étant dans les deux, l'intersection est la droite (BC) tout entière. C'est une <b>droite et un plan</b> sécants qui se coupent en un point, le point de percée.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> (AS) est orthogonale à (AB), donc (AS) est orthogonale au plan (ABC)</div><div class="cor"><span class="v">&#10003;</span> Il faut <b>deux</b> droites du plan, et il faut de plus qu'elles soient <b>sécantes</b>. Orthogonale à une seule droite, (AS) peut encore pencher dans une infinité de positions.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> La grande diagonale d'un cube d'arête <i>a</i> vaut <i>a</i>&#8730;<span class="rad">2</span></div><div class="cor"><span class="v">&#10003;</span> <i>a</i>&#8730;<span class="rad">2</span> est la diagonale d'une <b>face</b>. La <b>grande diagonale</b> vaut <b><i>a</i>&#8730;<span class="rad">3</span></b> : on applique Pythagore <b>deux fois</b>, d'abord dans une face, puis dans le plan contenant cette diagonale et une arête.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> Une droite contenue dans un plan lui est parallèle &nbsp;&middot;&nbsp; une droite qui longe une arête est parallèle au plan</div><div class="cor"><span class="v">&#10003;</span> Un seul test : <b>compter les points communs</b>. Zéro donne <b>parallèle</b>, un donne <b>sécante</b>, une infinité donne <b>incluse</b>. Une droite qui rencontre le plan ne peut pas lui être parallèle, même si le dessin le laisse croire.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> Mesurer une arête fuyante sur le dessin et la prendre pour sa vraie longueur</div><div class="cor"><span class="v">&#10003;</span> Les <b>fuyantes sont réduites</b> et les angles déformés : une vraie longueur se <b>calcule</b> par Pythagore dans un plan, elle ne se mesure pas. Un angle qui paraît droit ne l'est pas forcément, et un angle droit réel peut paraître aigu ou obtus.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> Tracer une fuyante à 45&#176; et une autre à 30&#176; &nbsp;&middot;&nbsp; relier au hasard des points de faces opposées</div><div class="cor"><span class="v">&#10003;</span> L'angle de fuite et le coefficient valent pour <b>toutes</b> les fuyantes, sinon le parallélisme est détruit. Et sur <b>deux faces parallèles</b>, la coupe donne deux segments <b>parallèles</b> : un côté de section ne relie jamais deux points de faces non adjacentes.</div></div>
+
+</div>
+
+<div class="bandeau bleu">A SAVOIR PAR COEUR AVANT LE DEVOIR</div>
+<div class="cols">
+<ol class="recap">
+<li><b>Incidence</b> : deux points distincts donnent une droite ; trois points non alignés donnent un plan ; deux points d'une droite dans un plan y font entrer la <b>droite entière</b>.</li>
+<li><b>Positions relatives.</b> Deux droites : coplanaires (sécantes ou parallèles) ou <b>gauches</b>. Droite et plan : incluse, parallèle, ou sécante en un point (point de percée). Deux plans : parallèles ou sécants suivant une <b>droite</b>.</li>
+<li><b>Parallélisme.</b> (<i>d</i>) parallèle à une droite de (<i>P</i>) sans y être incluse donne (<i>d</i>) parallèle à (<i>P</i>). <b>Deux droites sécantes</b> de (<i>P</i>) parallèles à deux droites sécantes de (<i>Q</i>) donnent (<i>P</i>) parallèle à (<i>Q</i>). Un plan coupant deux plans parallèles donne deux droites parallèles.</li>
+<li><b>Propriété du toit</b> : (<i>d</i>) parallèle à (<i>P</i>), un plan contenant (<i>d</i>) coupe (<i>P</i>) suivant une parallèle à (<i>d</i>). Pour l'<b>intersection de deux plans</b>, chercher <b>deux points communs</b>.</li>
+<li><b>Orthogonalité.</b> Orthogonales : les parallèles menées par un même point sont perpendiculaires ; perpendiculaires : orthogonales <b>et</b> sécantes. (<i>d</i>)&#8239;&#8869;&#8239;(<i>P</i>) équivaut à (<i>d</i>) orthogonale à <b>deux droites sécantes</b> de (<i>P</i>), et alors à <b>toutes</b> ses droites. Deux plans sont perpendiculaires si l'un contient une droite orthogonale à l'autre.</li>
+<li><b>Plan médiateur</b> de [AB] : plan perpendiculaire à (AB) en son <b>milieu</b>, c'est-à-dire l'ensemble des points équidistants de A et de B.</li>
+<li><b>Calculs</b> : se placer dans un <b>plan</b> et appliquer <b>Pythagore</b>, au besoin deux fois. Face d'un cube <i>a</i>&#8730;<span class="rad">2</span>, <b>grande diagonale <i>a</i>&#8730;<span class="rad">3</span></b>, pavé &#8730;<span class="rad"><i>L</i><sup>2</sup>&#8239;+&#8239;<i>l</i><sup>2</sup>&#8239;+&#8239;<i>h</i><sup>2</sup></span> ; pyramide <span class="f"><span>1</span><span>3</span></span>&#8239;&#215;&#8239;Base&#8239;&#215;&#8239;hauteur.</li>
+<li><b>Perspective et sections.</b> Faces frontales en vraie grandeur, fuyantes toutes au même angle et toutes réduites du même coefficient, arêtes cachées en pointillés. Conservés : alignement, <b>parallélisme</b>, <b>milieux</b> ; non conservés : longueurs des fuyantes et angles. Une <b>section</b> est un <b>polygone</b> : autant de côtés que de faces traversées, et des traces parallèles sur deux faces parallèles.</li>
+</ol>
+</div>
+
+</body>
+</html>

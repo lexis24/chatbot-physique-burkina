@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Fiche de revision - 1ere D - Chapitre 4 : Suites numeriques</title>
+<style>
+/* ===================================================================
+   FICHE DE REVISION, Collection Hakili Lab, Edition 2026
+   Feuille de style autonome, format A4 pret a imprimer.
+   Bleu #005CB9 · Vert #49A145
+   =================================================================== */
+:root{
+  --bleu:#005CB9; --bleu-fonce:#00429A; --bleu-pale:#E8F1FB; --bleu-bord:#B7D2EE;
+  --vert:#49A145; --vert-fonce:#2F7A2C; --vert-pale:#EDF7EC; --vert-bord:#BCE0B9;
+  --gris:#4A4A4A; --gris-clair:#E4E4E4; --rouge:#B3261E;
+}
+@page{
+  size:A4; margin:15mm;
+  @bottom-center{
+    content:"Collection Hakili Lab, Edition 2026  ·  Fiche de revision  ·  " counter(page) "/" counter(pages);
+    font-family:"Segoe UI",Calibri,Arial,sans-serif; font-size:6.6pt; color:#8A8A8A;
+  }
+}
+*{box-sizing:border-box;}
+body{
+  margin:0; font-family:"Segoe UI",Calibri,Arial,sans-serif;
+  font-size:8.4pt; line-height:1.26; color:#1B1B1B;
+}
+p{margin:0 0 3pt;}
+ul{margin:0 0 3pt; padding-left:11pt;}
+li{margin:0 0 1.2pt;}
+b,strong{color:var(--bleu-fonce);}
+
+/* ------------------------------ ENTETE ---------------------------- */
+.entete{
+  display:flex; align-items:stretch; border:1.6pt solid var(--bleu);
+  border-radius:2.5pt; overflow:hidden; margin-bottom:6pt;
+}
+.entete .num{
+  background:var(--bleu); color:#fff; font-size:20pt; font-weight:700;
+  padding:0 8pt; display:flex; align-items:center; justify-content:center; min-width:34pt;
+}
+.entete .txt{padding:3.5pt 8pt; flex:1;}
+.entete .niveau{
+  font-size:7pt; font-weight:700; letter-spacing:.9pt; color:var(--vert-fonce);
+}
+.entete h1{margin:0; font-size:13.5pt; line-height:1.12; color:var(--bleu-fonce); font-weight:700;}
+.entete .sous{font-size:7pt; color:var(--gris); margin-top:1pt;}
+
+/* --------------------------- BANDEAUX ----------------------------- */
+.bandeau{
+  color:#fff; font-weight:700; font-size:9pt; letter-spacing:1pt;
+  padding:2.4pt 7pt; border-radius:2pt; margin:3pt 0 4pt; break-after:avoid; page-break-after:avoid;
+}
+.bandeau.bleu{background:var(--bleu);}
+.bandeau.vert{background:var(--vert);}
+
+/* --------------------------- COLONNES ----------------------------- */
+.cols{column-count:2; column-gap:7mm; column-fill:balance;}
+
+.cols.bal{column-fill:balance;}
+.bloc{margin-bottom:5pt;}
+.keep{break-inside:avoid; page-break-inside:avoid;}
+
+/* --------------------------- LECONS ------------------------------- */
+h2.lecon{
+  margin:0 0 3pt; font-size:8.6pt; font-weight:700; color:#fff; background:var(--bleu-fonce);
+  padding:1.8pt 5pt; border-radius:1.5pt; break-after:avoid; page-break-after:avoid;
+}
+h3.rub{
+  margin:3.5pt 0 1.5pt; font-size:8.2pt; font-weight:700; color:var(--vert-fonce);
+  border-bottom:.7pt solid var(--vert-bord); padding-bottom:.8pt;
+  break-after:avoid; page-break-after:avoid;
+}
+
+/* --------------------------- ENCADRES ----------------------------- */
+.form{
+  background:var(--bleu-pale); border:.8pt solid var(--bleu-bord); border-left:2.6pt solid var(--bleu);
+  border-radius:2pt; padding:2.4pt 5pt; margin:2.2pt 0 3.4pt;
+  break-inside:avoid; page-break-inside:avoid;
+}
+.form .t{
+  display:block; font-size:6.8pt; font-weight:700; letter-spacing:.6pt;
+  color:var(--bleu); margin-bottom:1.5pt;
+}
+.form .c{text-align:center; font-size:9.1pt; margin:1.6pt 0;}
+.note{background:var(--vert-pale); border-left:2.4pt solid var(--vert); padding:2.4pt 5pt; border-radius:1.5pt; margin:2.5pt 0 4pt; break-inside:avoid;}
+
+/* --------------------------- TABLEAUX ----------------------------- */
+table{width:100%; border-collapse:collapse; font-size:7.6pt; margin:2pt 0 4pt; break-inside:avoid;}
+th{background:var(--bleu); color:#fff; font-weight:700; text-align:left; padding:1.8pt 4pt; font-size:7.2pt;}
+td{border:.6pt solid var(--gris-clair); padding:1.8pt 4pt; vertical-align:top;}
+tr{break-inside:avoid;}
+table.var td{text-align:center; font-size:8pt;}
+table.var td.lab{text-align:left; font-weight:700; color:var(--bleu-fonce); background:var(--bleu-pale);}
+
+/* ----------------------------- PIEGES ----------------------------- */
+table.pieges th:first-child{width:44%;}
+table.pieges td:first-child{color:var(--rouge); background:#FDF1F0;}
+.x{font-weight:700;}
+.v{color:var(--vert-fonce); font-weight:700;}
+
+/* ---------------------------- RECAP ------------------------------- */
+ol.recap{margin:0; padding-left:0; list-style:none; counter-reset:r;}
+ol.recap li{
+  counter-increment:r; position:relative; padding-left:13pt; margin-bottom:1.8pt;
+  break-inside:avoid;
+}
+ol.recap li::before{
+  content:counter(r); position:absolute; left:0; top:.3pt;
+  width:10pt; height:10pt; border-radius:50%; background:var(--vert); color:#fff;
+  font-size:6.6pt; font-weight:700; text-align:center; line-height:10pt;
+}
+
+/* --------------------------- MATHS -------------------------------- */
+.m{font-family:Cambria,Georgia,"Times New Roman",serif;}
+i,var{font-family:Cambria,Georgia,"Times New Roman",serif; font-style:italic;}
+.op{font-family:Cambria,Georgia,"Times New Roman",serif; font-style:normal;}
+.f{display:inline-block; vertical-align:middle; text-align:center;
+   margin:0 .12em; line-height:1.06; font-family:Cambria,Georgia,"Times New Roman",serif;}
+.f>span{display:block; padding:0 .2em;}
+.f>span:first-child{border-bottom:.6pt solid currentColor; padding-bottom:.08em;}
+.f>span:last-child{padding-top:.04em;}
+.rad{border-top:.6pt solid currentColor; padding-top:.12em;}
+/* line-height:0 evite que l'exposant n'ecarte les lignes ; position:relative le
+   repositionne sans qu'il heurte la barre de fraction ni le trait du radical. */
+sup,sub{font-size:.68em; line-height:0; position:relative; vertical-align:baseline;}
+sup{top:-.42em;}
+sub{bottom:-.22em;}
+.pt{white-space:nowrap;}
+/* Les fleches n'ont qu'un glyphe atrophie dans la fonte serif : on les force
+   en sans-serif, ou elles sont franches meme a 8 pt. */
+.ar{font-family:"Segoe UI",Calibri,Arial,"DejaVu Sans",sans-serif; font-style:normal;}
+
+/* ------------------- PIEGES : blocs erreur / correction ------------- */
+.pg{font-size:8.1pt; border-left:2.4pt solid var(--rouge); background:#FDF1F0; border-radius:1.5pt;
+    padding:2pt 5pt; margin:0 0 2.8pt; break-inside:avoid; page-break-inside:avoid;}
+.pg .err{color:var(--rouge); font-weight:600;}
+.pg .cor{color:#1B1B1B; margin-top:.8pt;}
+.pg .cor b{color:var(--bleu-fonce);}
+.v{color:var(--vert-fonce); font-weight:700;}
+
+</style>
+</head>
+<body>
+<header class="entete">
+  <div class="num">4</div>
+  <div class="txt">
+    <div class="niveau">1ERE D &middot; MATHEMATIQUES</div>
+    <h1>Suites numériques</h1>
+    <div class="sous">Leçon 1 : modes de génération et notation indicielle &middot; Leçon 2 : suites arithmétiques et géométriques &middot; Leçon 3 : comportement global d'une suite &middot; Leçon 4 : le raisonnement par récurrence &middot; Leçon 5 : limite d'une suite</div>
+  </div>
+</header>
+
+<div class="bandeau bleu" style="margin-top:0">L'ESSENTIEL</div>
+<div class="cols">
+
+<!-- ================= LECON 1 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 1&nbsp;: Modes de génération et notation indicielle</h2>
+<p>Une <b>suite numérique</b> est une fonction <i>u</i> définie sur &#8469; (ou sur une partie <span class="pt">{<i>n</i><sub>0</sub>&#8239;;&#8239;<i>n</i><sub>0</sub>&#8239;+&#8239;1&#8239;;&#8239;…}</span>) et à valeurs dans &#8477;. L'image de <i>n</i> se note <i>u</i><sub><i>n</i></sub> : c'est le <b>terme d'indice <i>n</i></b> ; la suite se note (<i>u</i><sub><i>n</i></sub>).</p></div>
+<ul>
+<li><b>Indice et rang.</b> Le <b>rang</b> est la place dans la liste : si la suite commence à <i>u</i><sub>0</sub>, <i>u</i><sub><i>n</i></sub> est de rang <i>n</i>&#8239;+&#8239;1 ; si elle commence à <i>u</i><sub>1</sub>, indice et rang coïncident. Repérer <b>l'indice de départ</b> d'abord.</li>
+<li><b>Représentation</b> : <i>n</i> en abscisse, <i>u</i><sub><i>n</i></sub> en ordonnée. <i>n</i> étant entier, on obtient un <b>nuage de points isolés</b>, jamais une courbe.</li>
+</ul>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Les deux modes de génération</h3>
+<div class="form">
+  <span class="t">FORMULE EXPLICITE &nbsp;&middot;&nbsp; RELATION DE RECURRENCE</span>
+  <div class="c m"><i>u</i><sub><i>n</i></sub>&#8239;=&#8239;<i>f</i>(<i>n</i>) &nbsp;&nbsp;&nbsp;&nbsp; <i>u</i><sub><i>n</i>+1</sub>&#8239;=&#8239;<i>f</i>(<i>u</i><sub><i>n</i></sub>) avec le premier terme</div>
+</div>
+<ul>
+<li><b>Explicite</b> : le terme d'indice <i>n</i> se calcule <b>seul</b> (exemple <span class="pt"><i>u</i><sub><i>n</i></sub>&#8239;=&#8239;3<i>n</i>&#8239;&#8722;&#8239;1</span>) : on atteint <i>u</i><sub>100</sub> d'un coup.</li>
+<li><b>Récurrence</b> : premier terme donné, puis la relation fait passer d'un terme au suivant (<span class="pt"><i>u</i><sub>0</sub>&#8239;=&#8239;2</span> et <span class="pt"><i>u</i><sub><i>n</i>+1</sub>&#8239;=&#8239;2<i>u</i><sub><i>n</i></sub>&#8239;+&#8239;1</span>). On ne peut <b>pas sauter d'étape</b>.</li>
+<li>Elle n'est <b>bien définie</b> qu'à trois conditions : premier terme donné ; relation donnant <b>chaque</b> terme suivant ; aucun terme hors du domaine de <i>f</i> (ni division par 0, ni racine d'un négatif).</li>
+</ul>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Notation somme</h3>
+<div class="form">
+  <span class="t">SYMBOLE SIGMA</span>
+  <div class="c m"><span class="pt">&#8721;<sub><i>k</i>&#8239;=&#8239;0</sub><sup><i>n</i></sup>&#8239;<i>u</i><sub><i>k</i></sub>&#8239;=&#8239;<i>u</i><sub>0</sub>&#8239;+&#8239;<i>u</i><sub>1</sub>&#8239;+&#8239;…&#8239;+&#8239;<i>u</i><sub><i>n</i></sub></span></div>
+</div>
+<p><span class="pt">&#8721;<sub><i>k</i>&#8239;=&#8239;<i>p</i></sub><sup><i>q</i></sup>&#8239;<i>u</i><sub><i>k</i></sub></span> compte <span class="pt"><i>q</i>&#8239;&#8722;&#8239;<i>p</i>&#8239;+&#8239;1</span> termes. <i>k</i> est un <b>indice muet</b> : une autre lettre donne la même somme. On peut sommer une expression de <i>k</i> : <span class="pt">&#8721;<sub><i>k</i>&#8239;=&#8239;1</sub><sup>4</sup>&#8239;<i>k</i><sup>2</sup>&#8239;=&#8239;30</span>.</p>
+</div>
+
+<!-- ================= LECON 2 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 2&nbsp;: Suites arithmétiques et géométriques</h2>
+<div class="form">
+  <span class="t">SUITE ARITHMETIQUE&nbsp;: RAISON <i>r</i></span>
+  <div class="c m"><i>u</i><sub><i>n</i>+1</sub>&#8239;=&#8239;<i>u</i><sub><i>n</i></sub>&#8239;+&#8239;<i>r</i>&nbsp;&nbsp;<span class="ar">&#8660;</span>&nbsp;&nbsp;<i>u</i><sub><i>n</i>+1</sub>&#8239;&#8722;&#8239;<i>u</i><sub><i>n</i></sub> constante</div>
+  <div class="c m"><i>u</i><sub><i>n</i></sub>&#8239;=&#8239;<i>u</i><sub>0</sub>&#8239;+&#8239;<i>n</i>&#8239;<i>r</i> &nbsp;&nbsp;&nbsp;&nbsp; <i>u</i><sub><i>n</i></sub>&#8239;=&#8239;<i>u</i><sub><i>p</i></sub>&#8239;+&#8239;(<i>n</i>&#8239;&#8722;&#8239;<i>p</i>)&#8239;<i>r</i></div>
+</div></div>
+<p>Valable <b>pour tout <i>n</i></b>. Si elle commence à <i>u</i><sub>1</sub> : <span class="pt"><i>u</i><sub><i>n</i></sub>&#8239;=&#8239;<i>u</i><sub>1</sub>&#8239;+&#8239;(<i>n</i>&#8239;&#8722;&#8239;1)&#8239;<i>r</i></span>. Le nombre de pas est la <b>différence des indices</b> : <span class="pt"><i>u</i><sub><i>p</i></sub>&#8239;+&#8239;(<i>n</i>&#8239;&#8722;&#8239;<i>p</i>)&#8239;<i>r</i></span> sert si deux termes quelconques sont donnés. <b>Progression arithmétique</b> : <span class="pt"><i>b</i>&#8239;=&#8239;<span class="f"><span><i>a</i>&#8239;+&#8239;<i>c</i></span><span>2</span></span></span>.</p>
+</div>
+
+<div class="bloc">
+<div class="form">
+  <span class="t">SUITE GEOMETRIQUE&nbsp;: RAISON <i>q</i></span>
+  <div class="c m"><i>u</i><sub><i>n</i>+1</sub>&#8239;=&#8239;<i>q</i>&#8239;<i>u</i><sub><i>n</i></sub>&nbsp;&nbsp;<span class="ar">&#8660;</span>&nbsp;&nbsp;<span class="f"><span><i>u</i><sub><i>n</i>+1</sub></span><span><i>u</i><sub><i>n</i></sub></span></span> constant &nbsp;(termes non nuls)</div>
+  <div class="c m"><i>u</i><sub><i>n</i></sub>&#8239;=&#8239;<i>u</i><sub>0</sub>&#8239;<i>q</i><sup><i>n</i></sup> &nbsp;&nbsp;&nbsp;&nbsp; <i>u</i><sub><i>n</i></sub>&#8239;=&#8239;<i>u</i><sub><i>p</i></sub>&#8239;<i>q</i><sup><i>n</i>&#8722;<i>p</i></sup></div>
+</div>
+<p>Si elle commence à <i>u</i><sub>1</sub> : <span class="pt"><i>u</i><sub><i>n</i></sub>&#8239;=&#8239;<i>u</i><sub>1</sub>&#8239;<i>q</i><sup><i>n</i>&#8722;1</sup></span>. On suppose <span class="pt"><i>u</i><sub>0</sub>&#8239;&#8800;&#8239;0</span> et <span class="pt"><i>q</i>&#8239;&#8800;&#8239;0</span> ; une équation en <i>q</i><sup>2</sup> a <b>deux</b> solutions. <b>Progression géométrique</b> (termes positifs) : <span class="pt"><i>b</i><sup>2</sup>&#8239;=&#8239;<i>ac</i></span>. Hausse de <i>t</i>&#8239;% : <span class="pt"><i>q</i>&#8239;=&#8239;1&#8239;+&#8239;<span class="f"><span><i>t</i></span><span>100</span></span></span> ; baisse : <span class="pt"><i>q</i>&#8239;=&#8239;1&#8239;&#8722;&#8239;<span class="f"><span><i>t</i></span><span>100</span></span></span>.</p>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Sommes de termes consécutifs</h3>
+<div class="form">
+  <span class="t">SOMME ARITHMETIQUE, PUIS GEOMETRIQUE POUR <i>q</i>&#8239;&#8800;&#8239;1</span>
+  <div class="c m">somme&#8239;=&#8239;<span class="f"><span>(nb de termes)(premier&#8239;+&#8239;dernier)</span><span>2</span></span></div>
+  <div class="c m"><i>u</i><sub>0</sub>&#8239;+&#8239;…&#8239;+&#8239;<i>u</i><sub><i>n</i></sub>&#8239;=&#8239;<span class="f"><span>(<i>n</i>&#8239;+&#8239;1)(<i>u</i><sub>0</sub>&#8239;+&#8239;<i>u</i><sub><i>n</i></sub>)</span><span>2</span></span> &nbsp;&nbsp;&nbsp; 1&#8239;+&#8239;2&#8239;+&#8239;…&#8239;+&#8239;<i>n</i>&#8239;=&#8239;<span class="f"><span><i>n</i>(<i>n</i>&#8239;+&#8239;1)</span><span>2</span></span></div>
+  <div class="c m"><i>u</i><sub>0</sub>&#8239;+&#8239;…&#8239;+&#8239;<i>u</i><sub><i>n</i></sub>&#8239;=&#8239;<i>u</i><sub>0</sub>&#8239;&#215;&#8239;<span class="f"><span>1&#8239;&#8722;&#8239;<i>q</i><sup><i>n</i>+1</sup></span><span>1&#8239;&#8722;&#8239;<i>q</i></span></span> &nbsp;&nbsp; 1&#8239;+&#8239;<i>q</i>&#8239;+&#8239;…&#8239;+&#8239;<i>q</i><sup><i>n</i></sup>&#8239;=&#8239;<span class="f"><span>1&#8239;&#8722;&#8239;<i>q</i><sup><i>n</i>+1</sup></span><span>1&#8239;&#8722;&#8239;<i>q</i></span></span></div>
+</div>
+<p><b>Cas exclu</b> : si <span class="pt"><i>q</i>&#8239;=&#8239;1</span>, la somme vaut <span class="pt">(<i>n</i>&#8239;+&#8239;1)&#8239;<i>u</i><sub>0</sub></span>. L'exposant et le facteur <span class="pt"><i>n</i>&#8239;+&#8239;1</span> sont le <b>nombre de termes</b> : le compter d'abord.</p>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Reconnaître la nature d'une suite</h3>
+<ul>
+<li><b>Par récurrence</b> : on lit directement. <span class="pt"><i>u</i><sub><i>n</i>+1</sub>&#8239;=&#8239;<i>u</i><sub><i>n</i></sub>&#8239;+&#8239;3</span> est arithmétique de raison 3 ; <span class="pt"><i>u</i><sub><i>n</i>+1</sub>&#8239;=&#8239;5<i>u</i><sub><i>n</i></sub></span> est géométrique de raison 5.</li>
+<li><b>Par formule explicite</b> : calculer <span class="pt"><i>u</i><sub><i>n</i>+1</sub>&#8239;&#8722;&#8239;<i>u</i><sub><i>n</i></sub></span> ; un <b>nombre sans <i>n</i></b> donne une arithmétique. Sinon calculer <span class="pt"><span class="f"><span><i>u</i><sub><i>n</i>+1</sub></span><span><i>u</i><sub><i>n</i></sub></span></span></span> (termes non nuls) avec <span class="pt"><i>a</i><sup><i>n</i>+1</sup>&#8239;=&#8239;<i>a</i>&#8239;&#215;&#8239;<i>a</i><sup><i>n</i></sup></span> : un nombre sans <i>n</i> donne une géométrique. Si aucun n'est constant, elle n'est <b>ni</b> l'une <b>ni</b> l'autre. Préciser <b>raison</b> et <b>premier terme</b>.</li>
+</ul>
+<div class="note"><b>Suite auxiliaire.</b> Si (<i>u</i><sub><i>n</i></sub>) n'est ni arithmétique ni géométrique, l'énoncé fournit (<i>v</i><sub><i>n</i></sub>) : écrire <i>v</i><sub><i>n</i>+1</sub> en remplaçant <i>n</i> par <i>n</i>&#8239;+&#8239;1, y remplacer <i>u</i><sub><i>n</i>+1</sub> par la récurrence, faire apparaître <i>v</i><sub><i>n</i></sub>, conclure (nature, <b>raison et premier terme</b>), puis <b>revenir à <i>u</i><sub><i>n</i></sub></b>.</div>
+</div>
+
+<!-- ================= LECON 3 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 3&nbsp;: Comportement global d'une suite</h2>
+<h3 class="rub">Sens de variation</h3>
+<div class="form">
+  <span class="t">DEFINITIONS&nbsp;: TOUTES POUR TOUT <i>n</i></span>
+  <div class="c m">croissante : <i>u</i><sub><i>n</i>+1</sub>&#8239;&#8805;&#8239;<i>u</i><sub><i>n</i></sub> &nbsp;&middot;&nbsp; décroissante : <i>u</i><sub><i>n</i>+1</sub>&#8239;&#8804;&#8239;<i>u</i><sub><i>n</i></sub></div>
+  <div class="c m">constante : <i>u</i><sub><i>n</i>+1</sub>&#8239;=&#8239;<i>u</i><sub><i>n</i></sub> &nbsp;&middot;&nbsp; monotone : croissante ou décroissante</div>
+</div></div>
+<p>Inégalité <b>stricte</b> : monotonie stricte. Le <b>pour tout <i>n</i></b> est capital : c'est une propriété de la suite entière. Une suite peut n'être <b>ni croissante ni décroissante</b>, comme <span class="pt">(&#8722;1)<sup><i>n</i></sup></span>. En revanche, une suite peut être monotone <b>à partir d'un certain rang</b> : il faut alors préciser ce rang.</p>
+<ul>
+<li><b>Voie principale</b> : signe de <span class="pt"><i>u</i><sub><i>n</i>+1</sub>&#8239;&#8722;&#8239;<i>u</i><sub><i>n</i></sub></span> pour un <i>n</i> quelconque, après réduction au même dénominateur ou factorisation.</li>
+<li><b>Voie du quotient</b> : termes <b>strictement positifs</b>, comparer <span class="pt"><span class="f"><span><i>u</i><sub><i>n</i>+1</sub></span><span><i>u</i><sub><i>n</i></sub></span></span></span> à 1 (le plus rapide pour les puissances).</li>
+<li><b>Voie de la fonction</b> : si <span class="pt"><i>u</i><sub><i>n</i></sub>&#8239;=&#8239;<i>f</i>(<i>n</i>)</span> avec <i>f</i> monotone sur <span class="pt">[0&#8239;;&#8239;+&#8734;[</span>, la suite varie comme <i>f</i>. Ne s'applique <b>pas</b> aux suites récurrentes.</li>
+</ul>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Majorants, minorants, périodicité</h3>
+<div class="form">
+  <span class="t">SUITE MAJOREE, MINOREE, BORNEE</span>
+  <div class="c m">majorée : il existe <i>M</i> tel que <i>u</i><sub><i>n</i></sub>&#8239;&#8804;&#8239;<i>M</i> pour tout <i>n</i></div>
+  <div class="c m">minorée : il existe <i>m</i> tel que <i>u</i><sub><i>n</i></sub>&#8239;&#8805;&#8239;<i>m</i> pour tout <i>n</i></div>
+  <div class="c m">bornée : majorée <b>et</b> minorée</div>
+</div>
+<ul>
+<li>Un majorant n'est <b>pas unique</b> ni nécessairement une <b>valeur</b> de la suite : <span class="pt"><span class="f"><span><i>n</i></span><span><i>n</i>&#8239;+&#8239;1</span></span></span> est majorée par 1, par 2, par 1&#8239;000 : ce n'est pas un <b>maximum</b>.</li>
+<li><b>Méthode.</b> Formule explicite : isoler un terme de signe évident, <span class="pt"><span class="f"><span><i>n</i></span><span><i>n</i>&#8239;+&#8239;1</span></span>&#8239;=&#8239;1&#8239;&#8722;&#8239;<span class="f"><span>1</span><span><i>n</i>&#8239;+&#8239;1</span></span>&#8239;&lt;&#8239;1</span>. Suite récurrente : encadrement <b>par récurrence</b>.</li>
+<li><b>Suite périodique</b> de période <i>p</i> (<b>entier non nul</b>) : <span class="pt"><i>u</i><sub><i>n</i>+<i>p</i></sub>&#8239;=&#8239;<i>u</i><sub><i>n</i></sub></span> pour tout <i>n</i>. Toujours <b>bornée</b>, monotone seulement si constante.</li>
+</ul>
+<h3 class="rub">Construction en escalier</h3>
+<p>Pour <span class="pt"><i>u</i><sub><i>n</i>+1</sub>&#8239;=&#8239;<i>f</i>(<i>u</i><sub><i>n</i></sub>)</span> : tracer la courbe de <i>f</i> et la droite <span class="pt"><i>y</i>&#8239;=&#8239;<i>x</i></span>, puis, depuis <i>u</i><sub>0</sub> en abscisse, alterner <b>verticale</b> jusqu'à la courbe et <b>horizontale</b> jusqu'à la droite. Marches montantes : croissante ; descendantes : décroissante ; spirale : elle oscille. L'intersection vérifie <span class="pt"><i>f</i>(&#945;)&#8239;=&#8239;&#945;</span>.</p>
+</div>
+
+<!-- ================= LECON 4 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 4&nbsp;: Le raisonnement par récurrence</h2>
+<div class="form">
+  <span class="t">PRINCIPE DE RECURRENCE&nbsp;: <i>P</i>(<i>n</i>) PROPRIETE, <i>n</i><sub>0</sub> ENTIER</span>
+  <div class="c m">1. Initialisation : <i>P</i>(<i>n</i><sub>0</sub>) est vraie</div>
+  <div class="c m">2. Hérédité : pour <i>n</i>&#8239;&#8805;&#8239;<i>n</i><sub>0</sub> quelconque, <i>P</i>(<i>n</i>) vraie <span class="ar">&#8658;</span> <i>P</i>(<i>n</i>&#8239;+&#8239;1) vraie</div>
+  <div class="c m">alors <i>P</i>(<i>n</i>) est vraie pour tout <i>n</i>&#8239;&#8805;&#8239;<i>n</i><sub>0</sub></div>
+</div></div>
+<p>La supposition faite au début de l'hérédité est l'<b>hypothèse de récurrence</b> : <i>P</i>(<i>n</i>) est supposée vraie <b>pour un entier <i>n</i> fixé</b>, non pour tous. <i>n</i><sub>0</sub> n'est pas toujours 0 : <span class="pt">2<sup><i>n</i></sup>&#8239;&gt;&#8239;<i>n</i><sup>2</sup></span> n'est vraie qu'à partir de <span class="pt"><i>n</i>&#8239;=&#8239;5</span>.</p>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Les quatre situations, même rédaction</h3>
+<ul>
+<li><b>Egalité</b> (somme, formule conjecturée) : ajouter le terme suivant aux deux membres.</li>
+<li><b>Inégalité</b> <span class="pt">(2<sup><i>n</i></sup>&#8239;&#8805;&#8239;<i>n</i>&#8239;+&#8239;1)</span> : ajouter ou multiplier des deux côtés, jamais par un négatif.</li>
+<li><b>Encadrement</b> d'une suite récurrente : lui appliquer les opérations de la relation.</li>
+<li><b>Divisibilité</b> <span class="pt">(4<sup><i>n</i></sup>&#8239;&#8722;&#8239;1 par 3)</span> : écrire « il existe <i>k</i> tel que … », puis faire apparaître le facteur.</li>
+</ul>
+<p><b>Rédaction.</b> Nommer <i>P</i>(<i>n</i>) ; initialiser <b>au premier rang concerné</b> ; poser l'hypothèse pour un <i>n</i> fixé ; écrire <i>P</i>(<i>n</i>&#8239;+&#8239;1) <b>avant</b> tout calcul ; faire le pont ; conclure par le <b>principe de récurrence</b>.</p>
+</div>
+
+<!-- ================= LECON 5 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 5&nbsp;: Limite d'une suite</h2>
+<p>Dans toute la leçon, <i>n</i> tend vers +&#8734;.</p></div>
+<ul>
+<li><b>Limite finie.</b> Si <span class="pt">|<i>u</i><sub><i>n</i></sub>&#8239;&#8722;&#8239;<i>L</i>|</span> devient <b>aussi petit que l'on veut à partir d'un certain rang</b>, la suite <b>converge</b> vers <i>L</i> : <span class="pt"><span class="op">lim</span>&#8239;<i>u</i><sub><i>n</i></sub>&#8239;=&#8239;<i>L</i></span> (unicité <b>admise</b>).</li>
+<li><b>Limite infinie.</b> Si <i>u</i><sub><i>n</i></sub> finit par dépasser tout nombre donné à l'avance, <b>et le reste</b> : <span class="pt"><span class="op">lim</span>&#8239;<i>u</i><sub><i>n</i></sub>&#8239;=&#8239;+&#8734;</span> ; s'il finit par passer sous tout nombre donné : <span class="pt">&#8722;&#8734;</span>. La suite est <b>divergente</b>.</li>
+<li><b>Sans limite.</b> Une suite peut n'avoir aucune limite, ni finie ni infinie, comme <span class="pt">(&#8722;1)<sup><i>n</i></sup></span> : elle <b>diverge sans limite</b>. Une limite ne dépend pas des premiers termes, seulement du comportement <b>à partir d'un certain rang</b>.</li>
+</ul>
+</div>
+
+<div class="bloc">
+<div class="form">
+  <span class="t">SUITES DE REFERENCE&nbsp;: ET SUITE (<i>k</i><sup><i>n</i></sup>), RESULTAT ADMIS</span>
+  <div class="c m"><span class="pt"><span class="f"><span>1</span><span><i>n</i></span></span>&#8239;<span class="ar">&#8594;</span>&#8239;0</span> &nbsp; <span class="pt"><span class="f"><span>1</span><span><i>n</i><sup>2</sup></span></span>&#8239;<span class="ar">&#8594;</span>&#8239;0</span> &nbsp; <span class="pt"><span class="f"><span>1</span><span>&#8730;<span class="rad"><i>n</i></span></span></span>&#8239;<span class="ar">&#8594;</span>&#8239;0</span> &nbsp; <i>n</i>&#8239;<span class="ar">&#8594;</span>&#8239;+&#8734; &nbsp; <i>n</i><sup>2</sup>&#8239;<span class="ar">&#8594;</span>&#8239;+&#8734; &nbsp; &#8730;<span class="rad"><i>n</i></span>&#8239;<span class="ar">&#8594;</span>&#8239;+&#8734;</div>
+  <div class="c m">&#8722;1&#8239;&lt;&#8239;<i>k</i>&#8239;&lt;&#8239;1 : <i>k</i><sup><i>n</i></sup>&#8239;<span class="ar">&#8594;</span>&#8239;0 &nbsp;&nbsp;&middot;&nbsp;&nbsp; <i>k</i>&#8239;=&#8239;1 : <i>k</i><sup><i>n</i></sup>&#8239;<span class="ar">&#8594;</span>&#8239;1</div>
+  <div class="c m"><i>k</i>&#8239;&gt;&#8239;1 : <i>k</i><sup><i>n</i></sup>&#8239;<span class="ar">&#8594;</span>&#8239;+&#8734; &nbsp;&nbsp;&middot;&nbsp;&nbsp; <i>k</i>&#8239;&#8804;&#8239;&#8722;1 : <b>pas de limite</b></div>
+</div>
+<h3 class="rub">Opérations sur les limites (admises)</h3>
+<table>
+<tr><th><span class="m"><span class="op">lim</span>&#8239;<i>u</i><sub><i>n</i></sub></span></th><th><span class="m"><span class="op">lim</span>&#8239;<i>v</i><sub><i>n</i></sub></span></th><th><span class="m"><span class="op">lim</span>(<i>u</i><sub><i>n</i></sub>&#8239;+&#8239;<i>v</i><sub><i>n</i></sub>)</span></th><th><span class="m"><span class="op">lim</span>(<i>u</i><sub><i>n</i></sub>&#8239;&#215;&#8239;<i>v</i><sub><i>n</i></sub>)</span></th></tr>
+<tr><td class="m"><i>L</i></td><td class="m"><i>L</i>&#8242;</td><td class="m"><i>L</i>&#8239;+&#8239;<i>L</i>&#8242;</td><td class="m"><i>L</i>&#8239;&#215;&#8239;<i>L</i>&#8242;</td></tr>
+<tr><td class="m"><i>L</i></td><td class="m">+&#8734;</td><td class="m">+&#8734;</td><td class="m">+&#8734; si <i>L</i>&#8239;&gt;&#8239;0</td></tr>
+<tr><td class="m">+&#8734;</td><td class="m">+&#8734;</td><td class="m">+&#8734;</td><td class="m">+&#8734;</td></tr>
+</table>
+<div class="form">
+  <span class="t">QUOTIENT ET FORMES INDETERMINEES</span>
+  <div class="c m">si <i>L</i>&#8242;&#8239;&#8800;&#8239;0 : <span class="op">lim</span>&#8239;<span class="f"><span><i>u</i><sub><i>n</i></sub></span><span><i>v</i><sub><i>n</i></sub></span></span>&#8239;=&#8239;<span class="f"><span><i>L</i></span><span><i>L</i>&#8242;</span></span></div>
+  <div class="c m">(+&#8734;)&#8239;&#8722;&#8239;(+&#8734;) &nbsp;&nbsp; 0&#8239;&#215;&#8239;(&#177;&#8734;) &nbsp;&nbsp; <span class="f"><span>&#177;&#8734;</span><span>&#177;&#8734;</span></span> &nbsp;&nbsp; <span class="f"><span>0</span><span>0</span></span></div>
+</div>
+<p>Une <b>forme indéterminée</b> ne dit pas « pas de limite » : il faut <b>transformer l'écriture</b>, presque toujours en <b>mettant en facteur le terme dominant</b>.</p>
+<ul>
+<li><b>Quotient de polynômes en <i>n</i></b> : factoriser la plus haute puissance de <i>n</i> en haut et en bas ; ou <span class="pt"><span class="f"><span>2<i>n</i>&#8239;+&#8239;1</span><span><i>n</i></span></span>&#8239;=&#8239;2&#8239;+&#8239;<span class="f"><span>1</span><span><i>n</i></span></span></span>. <b>Différence</b> <span class="pt">(+&#8734;)&#8239;&#8722;&#8239;(+&#8734;)</span> : <span class="pt"><i>n</i><sup>2</sup>&#8239;&#8722;&#8239;<i>n</i>&#8239;=&#8239;<i>n</i><sup>2</sup>(1&#8239;&#8722;&#8239;<span class="f"><span>1</span><span><i>n</i></span></span>)&#8239;<span class="ar">&#8594;</span>&#8239;+&#8734;</span>. <b>Puissances</b> : factoriser la <b>plus grande base</b>, pour faire apparaître des <i>k</i><sup><i>n</i></sup> avec <span class="pt">&#8722;1&#8239;&lt;&#8239;<i>k</i>&#8239;&lt;&#8239;1</span>.</li>
+</ul>
+</div>
+
+</div>
+
+<div class="bandeau vert">PIEGES ET ERREURS FREQUENTES</div>
+<div class="cols">
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> <span class="pt"><i>u</i><sub>0</sub>&#8239;+&#8239;…&#8239;+&#8239;<i>u</i><sub><i>n</i></sub></span> compte <i>n</i> termes &nbsp;&middot;&nbsp; <span class="pt">1&#8239;+&#8239;<i>q</i>&#8239;+&#8239;…&#8239;+&#8239;<i>q</i><sup><i>n</i></sup>&#8239;=&#8239;<span class="f"><span>1&#8239;&#8722;&#8239;<i>q</i><sup><i>n</i></sup></span><span>1&#8239;&#8722;&#8239;<i>q</i></span></span></span></div><div class="cor"><span class="v">&#10003;</span> Il y a <b><i>n</i>&#8239;+&#8239;1</b> termes, l'indice 0 comptant aussi : de <i>p</i> à <i>q</i> il y a <span class="pt"><i>q</i>&#8239;&#8722;&#8239;<i>p</i>&#8239;+&#8239;1</span> entiers. L'exposant de la somme géométrique est ce <b>nombre de termes</b> : <span class="pt"><span class="f"><span>1&#8239;&#8722;&#8239;<i>q</i><sup><i>n</i>+1</sup></span><span>1&#8239;&#8722;&#8239;<i>q</i></span></span></span>, et seulement si <span class="pt"><i>q</i>&#8239;&#8800;&#8239;1</span>.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> <span class="pt"><i>u</i><sub><i>n</i></sub>&#8239;=&#8239;5&#8239;&#215;&#8239;3<sup><i>n</i></sup></span> est de raison 5 &nbsp;&middot;&nbsp; <span class="pt"><i>u</i><sub><i>n</i></sub>&#8239;=&#8239;2<sup>3<i>n</i></sup></span> est de raison 2</div><div class="cor"><span class="v">&#10003;</span> La raison est le <b>facteur multiplicatif entre deux termes</b> : ici 3, et 5 est le premier terme <i>u</i><sub>0</sub>. Pour la seconde, écrire <span class="pt">2<sup>3<i>n</i></sup>&#8239;=&#8239;(2<sup>3</sup>)<sup><i>n</i></sup>&#8239;=&#8239;8<sup><i>n</i></sup></span> : la raison est <b>8</b>.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> (<i>u</i><sub><i>n</i></sub>) est croissante car <span class="pt"><i>u</i><sub>0</sub>&#8239;&lt;&#8239;<i>u</i><sub>1</sub>&#8239;&lt;&#8239;<i>u</i><sub>2</sub></span> &nbsp;&middot;&nbsp; elle est croissante parce qu'elle est géométrique</div><div class="cor"><span class="v">&#10003;</span> Trois termes ne prouvent rien : <span class="pt"><i>u</i><sub><i>n</i></sub>&#8239;=&#8239;<i>n</i><sup>2</sup>&#8239;&#8722;&#8239;12<i>n</i>&#8239;+&#8239;3</span> décroît puis croît ; il faut le signe de <span class="pt"><i>u</i><sub><i>n</i>+1</sub>&#8239;&#8722;&#8239;<i>u</i><sub><i>n</i></sub></span> <b>pour tout <i>n</i></b>. Pour une géométrique, la variation dépend du <b>signe de <i>u</i><sub>0</sub> et de <i>q</i></b> : avec <span class="pt"><i>u</i><sub>0</sub>&#8239;&gt;&#8239;0</span>, croissante si <span class="pt"><i>q</i>&#8239;&gt;&#8239;1</span>, décroissante si <span class="pt">0&#8239;&lt;&#8239;<i>q</i>&#8239;&lt;&#8239;1</span> ; tout s'inverse si <span class="pt"><i>u</i><sub>0</sub>&#8239;&lt;&#8239;0</span>, et si <span class="pt"><i>q</i>&#8239;&lt;&#8239;0</span> elle n'est <b>pas monotone</b>.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> Pour prouver par récurrence, l'hérédité suffit &nbsp;&middot;&nbsp; on suppose <i>P</i>(<i>n</i>) vraie pour tout <i>n</i></div><div class="cor"><span class="v">&#10003;</span> Les <b>deux</b> étapes sont indispensables, et l'initialisation se fait <b>au bon rang</b> (énoncé en <span class="pt"><i>n</i>&#8239;&#8805;&#8239;1</span> : initialiser à 1). <i>P</i>(<i>n</i>) est supposée vraie <b>pour un <i>n</i> fixé</b> ; une hérédité qui n'<b>utilise</b> pas l'hypothèse est presque toujours fausse. Ne pas oublier la conclusion.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> <span class="pt">(&#8722;1)<sup><i>n</i></sup></span> tend vers 0 car les termes sont petits &nbsp;&middot;&nbsp; une géométrique de raison 2 tend vers 2</div><div class="cor"><span class="v">&#10003;</span> Les termes valent 1 et &#8722;1 : la suite <b>n'a pas de limite</b>. Etre bornée n'est pas converger. De même, <span class="pt">(<i>q</i><sup><i>n</i></sup>)</span> n'a <b>pas de limite</b> dès que <span class="pt"><i>q</i>&#8239;&#8804;&#8239;&#8722;1</span>, car ses termes changent de signe à chaque rang. Pour <span class="pt"><i>q</i>&#8239;=&#8239;2&#8239;&gt;&#8239;1</span>, <span class="pt"><i>q</i><sup><i>n</i></sup>&#8239;<span class="ar">&#8594;</span>&#8239;+&#8734;</span> : la <b>raison n'est pas la limite</b>.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> (<i>u</i><sub><i>n</i></sub>) est majorée par 1, donc sa limite est 1 &nbsp;&middot;&nbsp; <span class="pt"><i>n</i><sup>2</sup>&#8239;&#8722;&#8239;<i>n</i></span> tend vers 0 car <span class="pt">&#8734;&#8239;&#8722;&#8239;&#8734;&#8239;=&#8239;0</span></div><div class="cor"><span class="v">&#10003;</span> Majoration et limite sont distinctes : <span class="pt"><i>u</i><sub><i>n</i></sub>&#8239;=&#8239;&#8722;<i>n</i></span> est majorée par 1 et tend vers &#8722;&#8734; ; un majorant n'est pas un <b>maximum</b>. Et <span class="pt">(+&#8734;)&#8239;&#8722;&#8239;(+&#8734;)</span> est une <b>forme indéterminée</b> : <span class="pt"><i>n</i><sup>2</sup>&#8239;&#8722;&#8239;<i>n</i>&#8239;=&#8239;<i>n</i><sup>2</sup>(1&#8239;&#8722;&#8239;<span class="f"><span>1</span><span><i>n</i></span></span>)&#8239;<span class="ar">&#8594;</span>&#8239;+&#8734;</span>, alors que <span class="pt"><i>n</i>&#8239;&#8722;&#8239;<i>n</i><sup>2</sup>&#8239;<span class="ar">&#8594;</span>&#8239;&#8722;&#8734;</span>. Enfin on écrit <span class="pt"><span class="op">lim</span>&#8239;<i>u</i><sub><i>n</i></sub>&#8239;=&#8239;+&#8734;</span>, jamais <span class="pt"><i>u</i><sub><i>n</i></sub>&#8239;=&#8239;+&#8734;</span>.</div></div>
+
+</div>
+
+<div class="bandeau bleu">A SAVOIR PAR COEUR AVANT LE DEVOIR</div>
+<div class="cols">
+<ol class="recap">
+<li><b>Génération.</b> Explicite <span class="pt"><i>u</i><sub><i>n</i></sub>&#8239;=&#8239;<i>f</i>(<i>n</i>)</span> : chaque terme se calcule seul. Récurrence <span class="pt"><i>u</i><sub><i>n</i>+1</sub>&#8239;=&#8239;<i>f</i>(<i>u</i><sub><i>n</i></sub>)</span> + premier terme : pas à pas. Lire l'<b>indice de départ</b> ; <span class="pt"><i>u</i><sub>0</sub>&#8239;+&#8239;…&#8239;+&#8239;<i>u</i><sub><i>n</i></sub></span> compte <span class="pt"><i>n</i>&#8239;+&#8239;1</span> termes, pas <i>n</i>.</li>
+<li><b>Arithmétique.</b> <span class="pt"><i>u</i><sub><i>n</i>+1</sub>&#8239;&#8722;&#8239;<i>u</i><sub><i>n</i></sub>&#8239;=&#8239;<i>r</i></span> ; <span class="pt"><i>u</i><sub><i>n</i></sub>&#8239;=&#8239;<i>u</i><sub>0</sub>&#8239;+&#8239;<i>nr</i>&#8239;=&#8239;<i>u</i><sub><i>p</i></sub>&#8239;+&#8239;(<i>n</i>&#8239;&#8722;&#8239;<i>p</i>)<i>r</i></span> ; somme <span class="pt">=&#8239;<span class="f"><span>(nb)(premier&#8239;+&#8239;dernier)</span><span>2</span></span></span> ; <span class="pt">1&#8239;+&#8239;…&#8239;+&#8239;<i>n</i>&#8239;=&#8239;<span class="f"><span><i>n</i>(<i>n</i>&#8239;+&#8239;1)</span><span>2</span></span></span>.</li>
+<li><b>Géométrique.</b> <span class="pt"><span class="f"><span><i>u</i><sub><i>n</i>+1</sub></span><span><i>u</i><sub><i>n</i></sub></span></span>&#8239;=&#8239;<i>q</i></span> ; <span class="pt"><i>u</i><sub><i>n</i></sub>&#8239;=&#8239;<i>u</i><sub>0</sub><i>q</i><sup><i>n</i></sup>&#8239;=&#8239;<i>u</i><sub><i>p</i></sub><i>q</i><sup><i>n</i>&#8722;<i>p</i></sup></span> ; somme <span class="pt">=&#8239;<i>u</i><sub>0</sub>&#8239;<span class="f"><span>1&#8239;&#8722;&#8239;<i>q</i><sup>nb</sup></span><span>1&#8239;&#8722;&#8239;<i>q</i></span></span></span> si <span class="pt"><i>q</i>&#8239;&#8800;&#8239;1</span>, sinon <span class="pt">(<i>n</i>&#8239;+&#8239;1)<i>u</i><sub>0</sub></span> ; <span class="pt">+<i>t</i>&#8239;%</span> donne <span class="pt"><i>q</i>&#8239;=&#8239;1&#8239;+&#8239;<span class="f"><span><i>t</i></span><span>100</span></span></span>.</li>
+<li><b>Suite auxiliaire.</b> Calculer <i>v</i><sub><i>n</i>+1</sub>, y remplacer <i>u</i><sub><i>n</i>+1</sub>, faire apparaître <i>v</i><sub><i>n</i></sub>, conclure avec <b>raison et premier terme</b>, revenir à <i>u</i><sub><i>n</i></sub>.</li>
+<li><b>Comportement global.</b> Signe de <span class="pt"><i>u</i><sub><i>n</i>+1</sub>&#8239;&#8722;&#8239;<i>u</i><sub><i>n</i></sub></span> pour tout <i>n</i>, ou quotient comparé à 1 si les termes sont positifs. Bornée = majorée <b>et</b> minorée.</li>
+<li><b>Récurrence.</b> Nommer <i>P</i>(<i>n</i>), initialiser à <i>n</i><sub>0</sub>, supposer <i>P</i>(<i>n</i>) pour un <i>n</i> fixé, démontrer <i>P</i>(<i>n</i>&#8239;+&#8239;1) en <b>utilisant</b> l'hypothèse, conclure. Les <b>deux</b> étapes.</li>
+<li><b>Limites.</b> <span class="pt"><span class="f"><span>1</span><span><i>n</i></span></span>&#8239;<span class="ar">&#8594;</span>&#8239;0</span>, <span class="pt"><i>n</i>&#8239;<span class="ar">&#8594;</span>&#8239;+&#8734;</span> ; <span class="pt"><i>k</i><sup><i>n</i></sup>&#8239;<span class="ar">&#8594;</span>&#8239;0</span> si <span class="pt">&#8722;1&#8239;&lt;&#8239;<i>k</i>&#8239;&lt;&#8239;1</span>, <span class="pt"><span class="ar">&#8594;</span>&#8239;+&#8734;</span> si <span class="pt"><i>k</i>&#8239;&gt;&#8239;1</span>, <b>sans limite</b> si <span class="pt"><i>k</i>&#8239;&#8804;&#8239;&#8722;1</span>. Devant une <b>forme indéterminée</b>, factoriser le terme dominant.</li>
+</ol>
+</div>
+
+</body>
+</html>

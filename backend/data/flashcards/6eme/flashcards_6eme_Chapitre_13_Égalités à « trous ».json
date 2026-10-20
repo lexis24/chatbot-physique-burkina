@@ -1,0 +1,314 @@
+{
+  "niveau": "6ème",
+  "chapitre": "Chapitre 13 : Egalités à « trous »",
+  "source": "maths/6eme/Chapitre_13_Egalites_a_trous",
+  "nombre_cartes": 34,
+  "cartes": [
+    {
+      "id": "6E-CH13-001",
+      "lecon": "Comprendre une égalité à trou",
+      "type": "definition",
+      "recto": "Qu'est-ce qu'une égalité en mathématiques ?",
+      "verso": "C'est une écriture qui affirme que les deux côtés du signe $=$ ont la même valeur. Ainsi $13 + 8 = 21$ est une égalité vraie, alors que $13 + 8 = 20$ est fausse.",
+      "difficulte": 1,
+      "tags": ["egalite", "definition", "signe-egal"]
+    },
+    {
+      "id": "6E-CH13-002",
+      "lecon": "Comprendre une égalité à trou",
+      "type": "definition",
+      "recto": "Qu'est-ce qu'une égalité à trou ?",
+      "verso": "C'est une égalité dans laquelle un nombre manque, marqué par une case, des pointillés ou un point d'interrogation. Trouver le trou, c'est trouver le nombre qui rend l'égalité vraie.",
+      "difficulte": 1,
+      "tags": ["egalite-a-trou", "definition"]
+    },
+    {
+      "id": "6E-CH13-003",
+      "lecon": "Comprendre une égalité à trou",
+      "type": "formule",
+      "recto": "Combien de nombres différents peuvent remplir le trou d'une égalité à trou ?",
+      "verso": "Un seul. Une seule valeur rend les deux côtés identiques, et on peut toujours la contrôler en la remplaçant dans l'égalité.",
+      "difficulte": 2,
+      "tags": ["egalite-a-trou", "unicite"]
+    },
+    {
+      "id": "6E-CH13-004",
+      "lecon": "Comprendre une égalité à trou",
+      "type": "definition",
+      "recto": "A quel objet compare-t-on une égalité pour en comprendre le sens ?",
+      "verso": "A une balance à deux plateaux en équilibre : ce qui est écrit à gauche du signe $=$ pèse exactement autant que ce qui est écrit à droite.",
+      "difficulte": 1,
+      "tags": ["egalite", "balance"]
+    },
+    {
+      "id": "6E-CH13-005",
+      "lecon": "Comprendre une égalité à trou",
+      "type": "formule",
+      "recto": "Que peut-on faire des deux côtés d'une égalité sans la rendre fausse ?",
+      "verso": "On peut ajouter, ou retirer, la même chose des deux côtés. La balance reste en équilibre, donc l'égalité reste vraie.",
+      "difficulte": 2,
+      "tags": ["egalite", "balance", "regle"]
+    },
+    {
+      "id": "6E-CH13-006",
+      "lecon": "Comprendre une égalité à trou",
+      "type": "formule",
+      "recto": "Quelles sont les deux paires d'opérations inverses qui servent à trouver un nombre manquant ?",
+      "verso": "L'addition et la soustraction se défont l'une l'autre ; la multiplication et la division aussi. Si $13 + 8 = 21$, alors $21 - 13 = 8$.",
+      "difficulte": 1,
+      "tags": ["operation-inverse", "regle"]
+    },
+    {
+      "id": "6E-CH13-007",
+      "lecon": "Comprendre une égalité à trou",
+      "type": "definition",
+      "recto": "Comment un schéma en barre aide-t-il à traduire un énoncé en égalité ?",
+      "verso": "On dessine une barre pour le tout et on la partage en morceaux pour les parties. Le morceau inconnu se lit directement, et le dessin indique s'il faut ajouter ou soustraire.",
+      "difficulte": 2,
+      "tags": ["schema-en-barre", "traduction"]
+    },
+    {
+      "id": "6E-CH13-008",
+      "lecon": "Comprendre une égalité à trou",
+      "type": "formule",
+      "recto": "Que fait-on une fois le nombre manquant calculé ?",
+      "verso": "On vérifie : on remplace le trou par le nombre trouvé, puis on calcule les deux côtés. S'ils donnent le même nombre, la réponse est bonne.",
+      "difficulte": 2,
+      "tags": ["verification", "methode"]
+    },
+    {
+      "id": "6E-CH13-009",
+      "lecon": "Comprendre une égalité à trou",
+      "type": "definition",
+      "recto": "Pourquoi l'écriture $13 + \\ldots = 21 = 8$ est-elle fausse ?",
+      "verso": "Parce que le signe $=$ affirme que les deux côtés ont la même valeur, or $21$ et $8$ ne sont pas égaux. On écrit $\\ldots = 21 - 13 = 8$, puis on contrôle que $13 + 8 = 21$.",
+      "difficulte": 3,
+      "tags": ["signe-egal", "piege", "redaction"]
+    },
+    {
+      "id": "6E-CH13-010",
+      "lecon": "Trous dans une addition ou une soustraction",
+      "type": "formule",
+      "recto": "Dans une addition à trou comme $a + \\ldots = b$, comment trouve-t-on le terme manquant ?",
+      "verso": "On soustrait : $\\ldots = b - a$. Ainsi $190 + \\ldots = 375$ donne $375 - 190 = 185$.",
+      "difficulte": 1,
+      "tags": ["addition", "regle", "operation-inverse"]
+    },
+    {
+      "id": "6E-CH13-011",
+      "lecon": "Trous dans une addition ou une soustraction",
+      "type": "formule",
+      "recto": "Quand le trou est ce que l'on enlève, comme dans $a - \\ldots = b$, comment le calcule-t-on ?",
+      "verso": "On soustrait : $\\ldots = a - b$, car le trou est ce que l'on enlève, donc un morceau du tout. Ainsi $72 - \\ldots = 43$ donne $72 - 43 = 29$.",
+      "difficulte": 2,
+      "tags": ["soustraction", "regle"]
+    },
+    {
+      "id": "6E-CH13-012",
+      "lecon": "Trous dans une addition ou une soustraction",
+      "type": "formule",
+      "recto": "Quand le trou est le nombre de départ d'une soustraction, comme dans $\\ldots - a = b$, comment le calcule-t-on ?",
+      "verso": "On additionne : $\\ldots = b + a$, car le trou est le nombre de départ, donc le tout. Ainsi $\\ldots - 51 = 18$ donne $18 + 51 = 69$.",
+      "difficulte": 2,
+      "tags": ["soustraction", "regle", "nombre-de-depart"]
+    },
+    {
+      "id": "6E-CH13-013",
+      "lecon": "Trous dans une addition ou une soustraction",
+      "type": "formule",
+      "recto": "Quel réflexe permet de choisir entre additionner et soustraire pour trouver un trou ?",
+      "verso": "Se demander si le trou est le tout ou un morceau. Un morceau est plus petit que le tout : on soustrait. Le tout est plus grand que chaque morceau : on additionne.",
+      "difficulte": 2,
+      "tags": ["tout-ou-morceau", "reflexe"]
+    },
+    {
+      "id": "6E-CH13-014",
+      "lecon": "Trous dans une addition ou une soustraction",
+      "type": "formule",
+      "recto": "Pourquoi une soustraction écrite dans l'égalité n'impose-t-elle pas une soustraction dans le calcul ?",
+      "verso": "Parce que c'est la place du trou qui décide, pas l'opération écrite. Dans $\\ldots - 51 = 18$, le trou est le nombre de départ : on ajoute, $18 + 51 = 69$.",
+      "difficulte": 3,
+      "tags": ["soustraction", "piege", "tout-ou-morceau"]
+    },
+    {
+      "id": "6E-CH13-015",
+      "lecon": "Trous dans une addition ou une soustraction",
+      "type": "formule",
+      "recto": "Quel contrôle de bon sens s'applique au nombre de départ d'une soustraction ?",
+      "verso": "Il est toujours plus grand que le reste. Un résultat plus petit que le reste signale une erreur, avant même la vérification.",
+      "difficulte": 2,
+      "tags": ["ordre-de-grandeur", "controle"]
+    },
+    {
+      "id": "6E-CH13-016",
+      "lecon": "Trous dans une addition ou une soustraction",
+      "type": "formule",
+      "recto": "Comment traite-t-on une égalité à trou dont les nombres sont décimaux ?",
+      "verso": "Exactement comme avec des entiers, la méthode ne change pas : $6 + \\ldots = 6{,}5$ donne $\\ldots = 6{,}5 - 6 = 0{,}5$.",
+      "difficulte": 2,
+      "tags": ["decimal", "addition"]
+    },
+    {
+      "id": "6E-CH13-017",
+      "lecon": "Trous dans une addition ou une soustraction",
+      "type": "definition",
+      "recto": "Dans $72 - \\ldots = 43$, que représentent le $72$ et le $43$ sur un schéma en barre ?",
+      "verso": "Le $72$ est la barre entière, c'est-à-dire le tout ; le $43$ est un morceau, le reste. Le trou est l'autre morceau, et les deux morceaux bout à bout redonnent $72$.",
+      "difficulte": 2,
+      "tags": ["schema-en-barre", "soustraction"]
+    },
+    {
+      "id": "6E-CH13-018",
+      "lecon": "Trous dans une multiplication ou une division",
+      "type": "formule",
+      "recto": "Dans l'égalité $a \\times \\ldots = b$, comment trouve-t-on le facteur manquant ?",
+      "verso": "On divise : $\\ldots = b \\div a$. Ainsi $4 \\times \\ldots = 60$ donne $60 \\div 4 = 15$.",
+      "difficulte": 1,
+      "tags": ["multiplication", "regle"]
+    },
+    {
+      "id": "6E-CH13-019",
+      "lecon": "Trous dans une multiplication ou une division",
+      "type": "formule",
+      "recto": "Dans l'égalité $a \\div \\ldots = b$, comment trouve-t-on le diviseur manquant ?",
+      "verso": "On divise : $\\ldots = a \\div b$. Ainsi $200 \\div \\ldots = 8$ donne $200 \\div 8 = 25$.",
+      "difficulte": 2,
+      "tags": ["division", "regle", "diviseur"]
+    },
+    {
+      "id": "6E-CH13-020",
+      "lecon": "Trous dans une multiplication ou une division",
+      "type": "formule",
+      "recto": "Dans l'égalité $\\ldots \\div a = b$, comment trouve-t-on le nombre manquant ?",
+      "verso": "On multiplie : $\\ldots = b \\times a$, car le trou est le nombre de départ, c'est-à-dire le total. Ainsi $\\ldots \\div 3 = 21$ donne $21 \\times 3 = 63$.",
+      "difficulte": 2,
+      "tags": ["division", "regle", "dividende"]
+    },
+    {
+      "id": "6E-CH13-021",
+      "lecon": "Trous dans une multiplication ou une division",
+      "type": "formule",
+      "recto": "Quel réflexe permet de choisir entre multiplier et diviser pour trouver un trou ?",
+      "verso": "Se demander si le trou est le total ou une part. Une part, ou un nombre de parts, est plus petite que le total : on divise. Le total est plus grand que chaque part : on multiplie.",
+      "difficulte": 2,
+      "tags": ["total-ou-part", "reflexe"]
+    },
+    {
+      "id": "6E-CH13-022",
+      "lecon": "Trous dans une multiplication ou une division",
+      "type": "formule",
+      "recto": "Pourquoi le nombre manquant de $\\ldots \\div 3 = 21$ ne vaut-il pas $7$ ?",
+      "verso": "Parce que $7$ vient de $21 \\div 3$, alors que le trou est le nombre de départ, donc plus grand que $21$. L'inverse de la division est la multiplication : $21 \\times 3 = 63$.",
+      "difficulte": 3,
+      "tags": ["division", "piege"]
+    },
+    {
+      "id": "6E-CH13-023",
+      "lecon": "Trous dans une multiplication ou une division",
+      "type": "formule",
+      "recto": "Quelle forme le nombre manquant peut-il prendre quand la division ne tombe pas juste ?",
+      "verso": "Celle d'un nombre décimal. $18 \\times \\ldots = 99$ donne $\\ldots = 99 \\div 18 = 5{,}5$, valeur exacte que l'on garde telle quelle dans le calcul.",
+      "difficulte": 2,
+      "tags": ["decimal", "division"]
+    },
+    {
+      "id": "6E-CH13-024",
+      "lecon": "Trous dans une multiplication ou une division",
+      "type": "formule",
+      "recto": "Comment encadrer rapidement le nombre manquant de $18 \\times \\ldots = 99$ avant de calculer ?",
+      "verso": "Avec deux produits simples : $18 \\times 5 = 90$ et $18 \\times 6 = 108$, donc le trou est compris entre $5$ et $6$.",
+      "difficulte": 2,
+      "tags": ["encadrement", "controle", "multiplication"]
+    },
+    {
+      "id": "6E-CH13-025",
+      "lecon": "Trous dans une multiplication ou une division",
+      "type": "formule",
+      "recto": "Que devient un résultat décimal comme $5{,}5$ paquets dans une situation concrète ?",
+      "verso": "Le calcul donne la valeur exacte, mais la situation décide de son emploi : on ne prépare pas un demi-paquet, il en faudra $6$.",
+      "difficulte": 3,
+      "tags": ["decimal", "interpretation"]
+    },
+    {
+      "id": "6E-CH13-026",
+      "lecon": "Trous dans une multiplication ou une division",
+      "type": "formule",
+      "recto": "Pourquoi diviser par $3$ défait-il une multiplication par $3$ ?",
+      "verso": "Multiplier par $3$, c'est mettre bout à bout trois barres identiques ; diviser par $3$, c'est recouper la longue barre en trois morceaux égaux. Chaque opération annule l'autre.",
+      "difficulte": 2,
+      "tags": ["operation-inverse", "division", "multiplication"]
+    },
+    {
+      "id": "6E-CH13-027",
+      "lecon": "Egalités à trous, aire et volume",
+      "type": "formule",
+      "recto": "Connaissant l'aire d'un rectangle et sa longueur, comment retrouve-t-on sa largeur ?",
+      "verso": "On divise l'aire par la longueur. Pour une aire de $48$ m$^{2}$ et une longueur de $8$ m, la largeur vaut $48 \\div 8 = 6$ m.",
+      "difficulte": 1,
+      "tags": ["aire", "rectangle", "division"]
+    },
+    {
+      "id": "6E-CH13-028",
+      "lecon": "Egalités à trous, aire et volume",
+      "type": "formule",
+      "recto": "Connaissant le volume d'un pavé droit et deux de ses dimensions, comment retrouve-t-on la troisième ?",
+      "verso": "On multiplie d'abord les deux dimensions connues, puis on divise le volume par ce produit. Pour $60$ cm$^{3}$ sur une base de $5$ cm par $4$ cm : $60 \\div 20 = 3$ cm.",
+      "difficulte": 2,
+      "tags": ["volume", "pave-droit", "division"]
+    },
+    {
+      "id": "6E-CH13-029",
+      "lecon": "Egalités à trous, aire et volume",
+      "type": "formule",
+      "recto": "Connaissant l'aire d'un triangle et sa base, comment retrouve-t-on sa hauteur ?",
+      "verso": "L'aire vaut (base $\\times$ hauteur) $\\div 2$, donc base $\\times$ hauteur $= 2 \\times$ aire. On divise ensuite ce produit par la base pour obtenir la hauteur.",
+      "difficulte": 3,
+      "tags": ["aire", "triangle", "hauteur"]
+    },
+    {
+      "id": "6E-CH13-030",
+      "lecon": "Egalités à trous, aire et volume",
+      "type": "formule",
+      "recto": "Connaissant le périmètre d'un rectangle et sa longueur, comment retrouve-t-on sa largeur ?",
+      "verso": "Le périmètre vaut $P = 2 \\times \\left(L + l\\right)$, donc $L + l = P \\div 2$, puis $l = \\left(P \\div 2\\right) - L$.",
+      "difficulte": 2,
+      "tags": ["perimetre", "rectangle", "largeur"]
+    },
+    {
+      "id": "6E-CH13-031",
+      "lecon": "Egalités à trous, aire et volume",
+      "type": "formule",
+      "recto": "Connaissant l'aire d'un carré, comment retrouve-t-on son côté ?",
+      "verso": "On cherche le nombre qui, multiplié par lui-même, donne l'aire. Pour une aire de $49$ cm$^{2}$, le côté mesure $7$ cm car $7 \\times 7 = 49$.",
+      "difficulte": 2,
+      "tags": ["aire", "carre", "cote"]
+    },
+    {
+      "id": "6E-CH13-032",
+      "lecon": "Egalités à trous, aire et volume",
+      "type": "formule",
+      "recto": "Connaissant le volume d'un cube, comment retrouve-t-on son arête ?",
+      "verso": "On cherche le nombre qui, multiplié deux fois par lui-même, donne le volume. Pour $64$ dm$^{3}$, l'arête mesure $4$ dm car $4 \\times 4 \\times 4 = 64$.",
+      "difficulte": 2,
+      "tags": ["volume", "cube", "arete"]
+    },
+    {
+      "id": "6E-CH13-033",
+      "lecon": "Egalités à trous, aire et volume",
+      "type": "formule",
+      "recto": "Pourquoi la largeur d'un rectangle d'aire $48$ m$^{2}$ et de longueur $8$ m ne vaut-elle pas $40$ m ?",
+      "verso": "Parce que l'aire est un produit et non une somme : on divise au lieu de soustraire. La largeur vaut $48 \\div 8 = 6$ m.",
+      "difficulte": 3,
+      "tags": ["aire", "piege", "rectangle"]
+    },
+    {
+      "id": "6E-CH13-034",
+      "lecon": "Egalités à trous, aire et volume",
+      "type": "definition",
+      "recto": "Dans quelle unité s'exprime une largeur retrouvée à partir d'une aire donnée en m$^{2}$ ?",
+      "verso": "En mètres. La grandeur cherchée est une longueur : elle ne s'exprime jamais en unités carrées, même si l'aire de départ l'était.",
+      "difficulte": 3,
+      "tags": ["unites", "aire", "piege"]
+    }
+  ]
+}

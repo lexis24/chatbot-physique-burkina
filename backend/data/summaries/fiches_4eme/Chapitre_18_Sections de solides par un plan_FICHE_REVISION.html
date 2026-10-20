@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Fiche de revision - 4eme - Chapitre 18 : Sections de solides par un plan</title>
+<style>
+/* ===================================================================
+   FICHE DE REVISION, Collection Hakili Lab, Edition 2026
+   Feuille de style autonome, format A4 pret a imprimer.
+   Bleu #005CB9 · Vert #49A145
+   =================================================================== */
+:root{
+  --bleu:#005CB9; --bleu-fonce:#00429A; --bleu-pale:#E8F1FB; --bleu-bord:#B7D2EE;
+  --vert:#49A145; --vert-fonce:#2F7A2C; --vert-pale:#EDF7EC; --vert-bord:#BCE0B9;
+  --gris:#4A4A4A; --gris-clair:#E4E4E4; --rouge:#B3261E;
+}
+@page{
+  size:A4; margin:15mm;
+  @bottom-center{
+    content:"Collection Hakili Lab, Edition 2026  ·  Fiche de revision  ·  " counter(page) "/" counter(pages);
+    font-family:"Segoe UI",Calibri,Arial,sans-serif; font-size:6.6pt; color:#8A8A8A;
+  }
+}
+*{box-sizing:border-box;}
+body{
+  margin:0; font-family:"Segoe UI",Calibri,Arial,sans-serif;
+  font-size:8.4pt; line-height:1.26; color:#1B1B1B;
+}
+p{margin:0 0 3pt;}
+ul{margin:0 0 3pt; padding-left:11pt;}
+li{margin:0 0 1.2pt;}
+b,strong{color:var(--bleu-fonce);}
+
+/* ------------------------------ ENTETE ---------------------------- */
+.entete{
+  display:flex; align-items:stretch; border:1.6pt solid var(--bleu);
+  border-radius:2.5pt; overflow:hidden; margin-bottom:6pt;
+}
+.entete .num{
+  background:var(--bleu); color:#fff; font-size:20pt; font-weight:700;
+  padding:0 8pt; display:flex; align-items:center; justify-content:center; min-width:34pt;
+}
+.entete .txt{padding:3.5pt 8pt; flex:1;}
+.entete .niveau{
+  font-size:7pt; font-weight:700; letter-spacing:.9pt; color:var(--vert-fonce);
+}
+.entete h1{margin:0; font-size:13.5pt; line-height:1.12; color:var(--bleu-fonce); font-weight:700;}
+.entete .sous{font-size:7pt; color:var(--gris); margin-top:1pt;}
+
+/* --------------------------- BANDEAUX ----------------------------- */
+.bandeau{
+  color:#fff; font-weight:700; font-size:9pt; letter-spacing:1pt;
+  padding:2.4pt 7pt; border-radius:2pt; margin:3pt 0 4pt; break-after:avoid; page-break-after:avoid;
+}
+.bandeau.bleu{background:var(--bleu);}
+.bandeau.vert{background:var(--vert);}
+
+/* --------------------------- COLONNES ----------------------------- */
+.cols{column-count:2; column-gap:7mm; column-fill:balance;}
+
+.cols.bal{column-fill:balance;}
+.bloc{margin-bottom:5pt;}
+.keep{break-inside:avoid; page-break-inside:avoid;}
+
+/* --------------------------- LECONS ------------------------------- */
+h2.lecon{
+  margin:0 0 3pt; font-size:8.6pt; font-weight:700; color:#fff; background:var(--bleu-fonce);
+  padding:1.8pt 5pt; border-radius:1.5pt; break-after:avoid; page-break-after:avoid;
+}
+h3.rub{
+  margin:3.5pt 0 1.5pt; font-size:8.2pt; font-weight:700; color:var(--vert-fonce);
+  border-bottom:.7pt solid var(--vert-bord); padding-bottom:.8pt;
+  break-after:avoid; page-break-after:avoid;
+}
+
+/* --------------------------- ENCADRES ----------------------------- */
+.form{
+  background:var(--bleu-pale); border:.8pt solid var(--bleu-bord); border-left:2.6pt solid var(--bleu);
+  border-radius:2pt; padding:2.4pt 5pt; margin:2.2pt 0 3.4pt;
+  break-inside:avoid; page-break-inside:avoid;
+}
+.form .t{
+  display:block; font-size:6.8pt; font-weight:700; letter-spacing:.6pt;
+  color:var(--bleu); margin-bottom:1.5pt;
+}
+.form .c{text-align:center; font-size:9.1pt; margin:1.6pt 0;}
+.note{background:var(--vert-pale); border-left:2.4pt solid var(--vert); padding:2.4pt 5pt; border-radius:1.5pt; margin:2.5pt 0 4pt; break-inside:avoid;}
+
+/* --------------------------- TABLEAUX ----------------------------- */
+table{width:100%; border-collapse:collapse; font-size:7.6pt; margin:2pt 0 4pt; break-inside:avoid;}
+th{background:var(--bleu); color:#fff; font-weight:700; text-align:left; padding:1.8pt 4pt; font-size:7.2pt;}
+td{border:.6pt solid var(--gris-clair); padding:1.8pt 4pt; vertical-align:top;}
+tr{break-inside:avoid;}
+table.var td{text-align:center; font-size:8pt;}
+table.var td.lab{text-align:left; font-weight:700; color:var(--bleu-fonce); background:var(--bleu-pale);}
+
+/* ----------------------------- PIEGES ----------------------------- */
+table.pieges th:first-child{width:44%;}
+table.pieges td:first-child{color:var(--rouge); background:#FDF1F0;}
+.x{font-weight:700;}
+.v{color:var(--vert-fonce); font-weight:700;}
+
+/* ---------------------------- RECAP ------------------------------- */
+ol.recap{margin:0; padding-left:0; list-style:none; counter-reset:r;}
+ol.recap li{
+  counter-increment:r; position:relative; padding-left:13pt; margin-bottom:1.8pt;
+  break-inside:avoid;
+}
+ol.recap li::before{
+  content:counter(r); position:absolute; left:0; top:.3pt;
+  width:10pt; height:10pt; border-radius:50%; background:var(--vert); color:#fff;
+  font-size:6.6pt; font-weight:700; text-align:center; line-height:10pt;
+}
+
+/* --------------------------- MATHS -------------------------------- */
+.m{font-family:Cambria,Georgia,"Times New Roman",serif;}
+i,var{font-family:Cambria,Georgia,"Times New Roman",serif; font-style:italic;}
+.op{font-family:Cambria,Georgia,"Times New Roman",serif; font-style:normal;}
+.f{display:inline-block; vertical-align:middle; text-align:center;
+   margin:0 .12em; line-height:1.06; font-family:Cambria,Georgia,"Times New Roman",serif;}
+.f>span{display:block; padding:0 .2em;}
+.f>span:first-child{border-bottom:.6pt solid currentColor; padding-bottom:.08em;}
+.f>span:last-child{padding-top:.04em;}
+.rad{border-top:.6pt solid currentColor; padding-top:.12em;}
+/* line-height:0 evite que l'exposant n'ecarte les lignes ; position:relative le
+   repositionne sans qu'il heurte la barre de fraction ni le trait du radical. */
+sup,sub{font-size:.68em; line-height:0; position:relative; vertical-align:baseline;}
+sup{top:-.42em;}
+sub{bottom:-.22em;}
+.pt{white-space:nowrap;}
+/* Les fleches n'ont qu'un glyphe atrophie dans la fonte serif : on les force
+   en sans-serif, ou elles sont franches meme a 8 pt. */
+.ar{font-family:"Segoe UI",Calibri,Arial,"DejaVu Sans",sans-serif; font-style:normal;}
+
+/* ------------------- PIEGES : blocs erreur / correction ------------- */
+.pg{font-size:8.1pt; border-left:2.4pt solid var(--rouge); background:#FDF1F0; border-radius:1.5pt;
+    padding:2pt 5pt; margin:0 0 2.8pt; break-inside:avoid; page-break-inside:avoid;}
+.pg .err{color:var(--rouge); font-weight:600;}
+.pg .cor{color:#1B1B1B; margin-top:.8pt;}
+.pg .cor b{color:var(--bleu-fonce);}
+.v{color:var(--vert-fonce); font-weight:700;}
+
+</style>
+</head>
+<body>
+<header class="entete">
+  <div class="num">18</div>
+  <div class="txt">
+    <div class="niveau">4EME &middot; MATHEMATIQUES</div>
+    <h1>Sections de solides par un plan</h1>
+    <div class="sous">Leçon 1 : positions relatives de deux plans &middot; Leçon 2 : section d'un pavé droit &middot; Leçon 3 : section d'un prisme droit &middot; Leçon 4 : section d'un cylindre &middot; Leçon 5 : section d'une pyramide &middot; Leçon 6 : section d'un cône</div>
+  </div>
+</header>
+
+<div class="bandeau bleu" style="margin-top:0">L'ESSENTIEL</div>
+<div class="cols">
+
+<!-- ================= LECON 1 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 1&nbsp;: Positions relatives de deux plans</h2>
+<p>Deux plans de l'espace n'ont que <b>deux</b> positions possibles.</p></div>
+<ul>
+<li><b>Parallèles</b> : <b>aucun point commun</b> (le sol et le plafond d'une salle) ; leur <b>écartement</b> est le même partout. Deux plans <b>confondus</b> sont considérés comme parallèles.</li>
+<li><b>Sécants</b> : ils ont des points communs, et leur <b>intersection est alors une droite</b> (deux murs voisins, qui se coupent le long de l'arête du coin).</li>
+</ul>
+<div class="form">
+  <span class="t">DIFFERENCE DE DIMENSION&nbsp;: à ne jamais confondre</span>
+  <div class="c m">deux droites sécantes <b>du plan</b> <span class="ar">&#8594;</span> <b>un point</b></div>
+  <div class="c m">deux plans sécants <b>de l'espace</b> <span class="ar">&#8594;</span> <b>une droite</b></div>
+</div>
+<p><b>Sur un solide.</b> Chaque face est un morceau de plan. Dans un pavé droit, les faces vont par paires <b>parallèles</b> (dessus-dessous, avant-arrière, gauche-droite) ; toutes les autres paires sont <b>sécantes</b>, et leur intersection est une <b>arête</b>.</p>
+<p>Deux plans <b>horizontaux</b> (parallèles au sol) sont toujours parallèles entre eux ; deux plans <b>verticaux</b> (qui suivent la direction du fil à plomb) peuvent très bien être sécants.</p>
+<div class="note">Un plan de coupe <b>parallèle à la base</b> ne rencontre jamais la base, mais rencontre <b>toutes les faces latérales</b> : chaque côté de la section est l'intersection du plan de coupe avec une face latérale.</div>
+</div>
+
+<!-- ================= LECON 2 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 2&nbsp;: Section d'un pavé droit</h2>
+<p>La <b>section</b> d'un solide par un plan est la <b>figure plane</b> obtenue en coupant ce solide par ce plan.</p></div>
+<div class="form">
+  <span class="t">PAVE DROIT COUPE PAR UN PLAN PARALLELE A LA BASE</span>
+  <div class="c m">section&#8239;=&#8239;<b>rectangle identique à la base</b></div>
+  <div class="c m">si le pavé est un <b>cube</b> <span class="ar">&#8594;</span> <b>carré identique</b> à la base</div>
+</div>
+<ul>
+<li>La <b>hauteur de coupe ne change rien</b> : toutes les sections parallèles à la base sont superposables, car les faces latérales sont <b>verticales</b> et leur écartement ne varie pas avec la hauteur.</li>
+<li>La section a donc la <b>même aire</b> et le <b>même périmètre</b> que la base.</li>
+</ul>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Représenter la section en perspective cavalière</h3>
+<ul>
+<li>Dessine le pavé : face avant en <b>vraie grandeur</b>, fuyantes <b>obliques et raccourcies</b>, arêtes cachées en <b>pointillés</b>.</li>
+<li>Le plan de coupe, parallèle à la base, coupe les <b>quatre arêtes verticales à la même hauteur</b> : marque un point sur chacune, puis relie-les en respectant les parallèles du dessin.</li>
+<li>Trait <b>plein</b> pour les deux côtés visibles (avant et droite), <b>pointillés</b> pour les deux qui passent derrière le solide.</li>
+</ul>
+</div>
+
+<!-- ================= LECON 3 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 3&nbsp;: Section d'un prisme droit</h2>
+<div class="form">
+  <span class="t">PRISME DROIT COUPE PAR UN PLAN PARALLELE A LA BASE</span>
+  <div class="c m">section&#8239;=&#8239;<b>polygone identique à la base</b></div>
+  <div class="c m">même forme, mêmes dimensions, à toute hauteur de coupe</div>
+</div></div>
+<ul>
+<li>Base triangulaire <span class="ar">&#8594;</span> triangle identique ; base hexagonale <span class="ar">&#8594;</span> hexagone identique.</li>
+<li>La section a le <b>même périmètre</b> et la <b>même aire</b> que la base.</li>
+<li>Le <b>pavé droit est un cas particulier de prisme droit</b> : celui dont la base est un rectangle.</li>
+<li>Le nombre de <b>côtés</b> de la section est égal au nombre de <b>faces latérales</b> du prisme.</li>
+</ul>
+<p><b>Méthode.</b> Identifie la <b>base</b>, l'un des deux polygones identiques, et note ses dimensions : la section a exactement cette forme et ces dimensions. Représente-la parallèle aux deux bases, parties cachées en pointillés.</p>
+<div class="note">Ne confonds pas la <b>base</b> et une <b>face latérale</b>. Dans une tente, la base est le <b>triangle du pignon</b>, pas le rectangle du sol : c'est elle qui donne la forme de la section.</div>
+</div>
+
+<!-- ================= LECON 4 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 4&nbsp;: Section d'un cylindre</h2>
+<div class="form">
+  <span class="t">CYLINDRE COUPE PAR UN PLAN PARALLELE A LA BASE</span>
+  <div class="c m">section&#8239;=&#8239;<b>disque identique à la base</b>, même rayon</div>
+</div></div>
+<ul>
+<li>Le <b>centre</b> de ce disque est sur l'<b>axe</b> du cylindre, la droite qui joint les centres des deux bases.</li>
+<li>Même <b>aire</b> et même <b>périmètre</b> que la base, à toute hauteur : les <b>génératrices</b> de la surface latérale sont verticales et parallèles entre elles.</li>
+<li>En perspective cavalière, un cercle horizontal se dessine comme une <b>ellipse</b>, un ovale aplati : c'est une convention de dessin, la base reste un cercle parfait.</li>
+<li>La section se dessine <b>exactement aussi large</b> que la base, simplement plus haut ; moitié arrière en <b>pointillés</b>.</li>
+</ul>
+</div>
+
+<!-- ================= LECON 5 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 5&nbsp;: Section d'une pyramide</h2>
+<p>La section d'une pyramide par un plan <b>parallèle à la base</b> a la <b>même forme</b> que la base, mais elle est <b>plus petite</b> : c'est une <b>réduction</b> de la base. Base carrée <span class="ar">&#8594;</span> carré, base triangulaire <span class="ar">&#8594;</span> triangle.</p></div>
+<div class="form">
+  <span class="t">REDUCTION&nbsp;: hauteur totale <i>H</i>, coupe à la hauteur <i>h</i> mesurée depuis la base</span>
+  <div class="c m">côté de la section&#8239;=&#8239;côté de la base&#8239;&#215;&#8239;(<i>H</i>&#8239;&#8722;&#8239;<i>h</i>)&#8239;&#247;&#8239;<i>H</i></div>
+  <div class="c m">distance <i>d</i> donnée <b>depuis le sommet</b> : coefficient <i>d</i>&#8239;&#247;&#8239;<i>H</i></div>
+</div>
+<ul>
+<li>(<i>H</i>&#8239;&#8722;&#8239;<i>h</i>)&#8239;&#247;&#8239;<i>H</i> est le <b>coefficient de réduction</b>, toujours compris entre 0 et 1.</li>
+<li><i>H</i>&#8239;&#8722;&#8239;<i>h</i> est la hauteur qui reste <b>au-dessus</b> de la coupe : celle de la petite pyramide du haut.</li>
+<li><b>Toutes</b> les longueurs (chaque côté, chaque diagonale) sont multipliées par ce même coefficient.</li>
+<li>Plus le plan de coupe est proche du <b>sommet</b>, plus la section est petite ; au sommet, elle se réduit à un <b>point</b>.</li>
+<li><b>Contrôle</b> : le résultat doit être <b>plus petit</b> que la dimension de la base ; sinon, le coefficient a été pris à l'envers.</li>
+</ul>
+</div>
+
+<!-- ================= LECON 6 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 6&nbsp;: Section d'un cône</h2>
+<p>La section d'un cône par un plan <b>parallèle à la base</b> est un <b>disque plus petit</b> que la base : c'est une <b>réduction</b> du disque de base. Le <b>centre</b> de chaque section est sur l'<b>axe</b> du cône.</p></div>
+<div class="form">
+  <span class="t">REDUCTION&nbsp;: rayon de base <i>R</i>, hauteur totale <i>H</i></span>
+  <div class="c m">rayon de la section&#8239;=&#8239;<i>R</i>&#8239;&#215;&#8239;(<i>H</i>&#8239;&#8722;&#8239;<i>h</i>)&#8239;&#247;&#8239;<i>H</i> &nbsp;<span style="font-size:7.5pt">(<i>h</i> depuis la base)</span></div>
+  <div class="c m">rayon de la section&#8239;=&#8239;<i>R</i>&#8239;&#215;&#8239;<i>d</i>&#8239;&#247;&#8239;<i>H</i> &nbsp;<span style="font-size:7.5pt">(<i>d</i> depuis le sommet)</span></div>
+</div>
+<ul>
+<li>Le <b>diamètre</b> suit la même règle, puisqu'il vaut le double du rayon.</li>
+<li><b>Mi-hauteur</b> : la hauteur restante vaut la moitié de la hauteur totale, donc le coefficient vaut <span class="f"><span>1</span><span>2</span></span> et le rayon de la section est la <b>moitié</b> du rayon de base.</li>
+<li><b>Sens de variation</b> : quand <i>h</i> augmente, on monte vers le sommet, <i>H</i>&#8239;&#8722;&#8239;<i>h</i> diminue, et le rayon <b>diminue</b> aussi.</li>
+<li>Retirer la pointe d'un cône laisse un <b>tronc de cône</b> (abat-jour, seau) : le petit cercle du haut est une section.</li>
+</ul>
+<div class="form">
+  <span class="t">LES DEUX FAMILLES&nbsp;: tout le chapitre en deux lignes</span>
+  <div class="c m">pavé, prisme, cylindre (parois droites) <span class="ar">&#8594;</span> section <b>identique</b></div>
+  <div class="c m">pyramide, cône (parois inclinées) <span class="ar">&#8594;</span> section <b>réduite</b></div>
+</div>
+</div>
+
+</div>
+
+<div class="bandeau vert">PIEGES ET ERREURS FREQUENTES</div>
+<div class="cols">
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> « L'intersection de deux plans sécants est un point. »</div><div class="cor"><span class="v">&#10003;</span> C'est une <b>droite</b>, jamais un point. Ce sont deux <b>droites</b> sécantes <b>du plan</b> qui se coupent en un point : dans l'espace, on monte d'un cran.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> Pyramide de hauteur 12 cm coupée à 8 cm de la base : « la section est identique à la base ».</div><div class="cor"><span class="v">&#10003;</span> Pour une pyramide ou un cône, la section est une <b>réduction</b> : même forme, taille <b>plus petite</b>. « Identique » n'est vrai que pour le pavé, le prisme et le cylindre, dont les parois sont <b>verticales</b>.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> <i>h</i> mesurée depuis la base, et l'on écrit coefficient&#8239;=&#8239;<i>h</i>&#8239;&#247;&#8239;<i>H</i>.</div><div class="cor"><span class="v">&#10003;</span> Depuis la <b>base</b>, le coefficient est (<i>H</i>&#8239;&#8722;&#8239;<i>h</i>)&#8239;&#247;&#8239;<i>H</i> : on prend la hauteur qui <b>reste au-dessus</b> de la coupe. <i>d</i>&#8239;&#247;&#8239;<i>H</i> ne sert que si la distance <i>d</i> est donnée <b>depuis le sommet</b>.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> Rayon de section trouvé plus grand que le rayon de base &nbsp;&middot;&nbsp; « le rayon grandit quand on monte ».</div><div class="cor"><span class="v">&#10003;</span> Dans une <b>pyramide</b> ou un <b>cône</b>, la section est toujours <b>plus petite</b> que la base et <b>rétrécit</b> en montant : si <i>h</i> augmente, <i>H</i>&#8239;&#8722;&#8239;<i>h</i> diminue. Un résultat plus grand signale un coefficient pris à l'envers.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> L'énoncé donne le <b>diamètre</b>, et on l'utilise tel quel comme rayon.</div><div class="cor"><span class="v">&#10003;</span> Lis la question deux fois : rayon&#8239;=&#8239;diamètre&#8239;&#247;&#8239;2. La règle de réduction vaut pour le rayon comme pour le diamètre, mais sans mélanger les deux.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> Dans une tente, « la base du prisme est le rectangle du sol ».</div><div class="cor"><span class="v">&#10003;</span> La <b>base</b> d'un prisme droit est l'un des <b>deux polygones identiques</b> : ici le <b>triangle du pignon</b>. Une erreur sur la base fausse toute la réponse.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> Section d'un cylindre dessinée plus étroite que la base &nbsp;&middot;&nbsp; deux plans jugés sécants parce qu'ils se rapprochent sur le dessin.</div><div class="cor"><span class="v">&#10003;</span> Le rayon ne change pas : la section garde <b>la même largeur</b> que la base, l'<b>ellipse</b> n'étant qu'une convention de la perspective cavalière. Et le dessin trompe l'œil : raisonne sur le <b>solide</b>.</div></div>
+
+</div>
+
+<div class="bandeau bleu">A SAVOIR PAR COEUR AVANT LE DEVOIR</div>
+<div class="cols">
+<ol class="recap">
+<li>Deux plans sont soit <b>parallèles</b> (aucun point commun, écartement constant, confondus compris), soit <b>sécants</b> : leur intersection est alors <b>une droite</b>, jamais un point.</li>
+<li>La <b>section</b> est la figure plane obtenue en coupant le solide par un plan. Un plan parallèle à la base coupe <b>toutes les faces latérales</b> : chaque côté de la section vient d'une face latérale.</li>
+<li><b>Parois droites (pavé, prisme, cylindre)</b> : la section parallèle à la base est <b>identique</b> à la base, à toute hauteur de coupe (même forme, même aire, même périmètre). Cube <span class="ar">&#8594;</span> carré ; prisme <span class="ar">&#8594;</span> polygone de la base ; cylindre <span class="ar">&#8594;</span> disque de même rayon, centré sur l'axe.</li>
+<li><b>Parois inclinées (pyramide, cône)</b> : la section parallèle à la base est une <b>réduction</b> de la base : même forme, mais <b>plus petite</b>.</li>
+<li><b>Coefficient de réduction</b> : (<i>H</i>&#8239;&#8722;&#8239;<i>h</i>)&#8239;&#247;&#8239;<i>H</i> si <i>h</i> est mesurée <b>depuis la base</b>, <i>d</i>&#8239;&#247;&#8239;<i>H</i> si <i>d</i> est mesurée <b>depuis le sommet</b>. Toutes les longueurs (côté, diagonale, rayon, diamètre) sont multipliées par lui.</li>
+<li><b>Mi-hauteur</b> : coefficient <span class="f"><span>1</span><span>2</span></span>, donc longueurs de la section réduites de <b>moitié</b>.</li>
+<li><b>Contrôle</b> : la section d'une pyramide ou d'un cône est toujours plus petite que la base et rétrécit quand on monte vers le sommet ; au sommet, elle se réduit à un point.</li>
+<li><b>Perspective cavalière</b> : face avant en vraie grandeur, fuyantes obliques et raccourcies, parties cachées en <b>pointillés</b> ; un cercle horizontal se dessine en <b>ellipse</b>, aussi large pour la section que pour la base.</li>
+</ol>
+</div>
+
+</body>
+</html>

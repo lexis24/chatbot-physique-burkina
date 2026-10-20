@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Fiche de revision - 1ere D - Chapitre 2 : Polynomes et fonctions rationnelles</title>
+<style>
+/* ===================================================================
+   FICHE DE REVISION, Collection Hakili Lab, Edition 2026
+   Feuille de style autonome, format A4 pret a imprimer.
+   Bleu #005CB9 · Vert #49A145
+   =================================================================== */
+:root{
+  --bleu:#005CB9; --bleu-fonce:#00429A; --bleu-pale:#E8F1FB; --bleu-bord:#B7D2EE;
+  --vert:#49A145; --vert-fonce:#2F7A2C; --vert-pale:#EDF7EC; --vert-bord:#BCE0B9;
+  --gris:#4A4A4A; --gris-clair:#E4E4E4; --rouge:#B3261E;
+}
+@page{
+  size:A4; margin:15mm;
+  @bottom-center{
+    content:"Collection Hakili Lab, Edition 2026  ·  Fiche de revision  ·  " counter(page) "/" counter(pages);
+    font-family:"Segoe UI",Calibri,Arial,sans-serif; font-size:6.6pt; color:#8A8A8A;
+  }
+}
+*{box-sizing:border-box;}
+body{
+  margin:0; font-family:"Segoe UI",Calibri,Arial,sans-serif;
+  font-size:8.4pt; line-height:1.26; color:#1B1B1B;
+}
+p{margin:0 0 3pt;}
+ul{margin:0 0 3pt; padding-left:11pt;}
+li{margin:0 0 1.2pt;}
+b,strong{color:var(--bleu-fonce);}
+
+/* ------------------------------ ENTETE ---------------------------- */
+.entete{
+  display:flex; align-items:stretch; border:1.6pt solid var(--bleu);
+  border-radius:2.5pt; overflow:hidden; margin-bottom:6pt;
+}
+.entete .num{
+  background:var(--bleu); color:#fff; font-size:20pt; font-weight:700;
+  padding:0 8pt; display:flex; align-items:center; justify-content:center; min-width:34pt;
+}
+.entete .txt{padding:3.5pt 8pt; flex:1;}
+.entete .niveau{
+  font-size:7pt; font-weight:700; letter-spacing:.9pt; color:var(--vert-fonce);
+}
+.entete h1{margin:0; font-size:13.5pt; line-height:1.12; color:var(--bleu-fonce); font-weight:700;}
+.entete .sous{font-size:7pt; color:var(--gris); margin-top:1pt;}
+
+/* --------------------------- BANDEAUX ----------------------------- */
+.bandeau{
+  color:#fff; font-weight:700; font-size:9pt; letter-spacing:1pt;
+  padding:2.4pt 7pt; border-radius:2pt; margin:3pt 0 4pt; break-after:avoid; page-break-after:avoid;
+}
+.bandeau.bleu{background:var(--bleu);}
+.bandeau.vert{background:var(--vert);}
+
+/* --------------------------- COLONNES ----------------------------- */
+.cols{column-count:2; column-gap:7mm; column-fill:balance;}
+
+.cols.bal{column-fill:balance;}
+.bloc{margin-bottom:5pt;}
+.keep{break-inside:avoid; page-break-inside:avoid;}
+
+/* --------------------------- LECONS ------------------------------- */
+h2.lecon{
+  margin:0 0 3pt; font-size:8.6pt; font-weight:700; color:#fff; background:var(--bleu-fonce);
+  padding:1.8pt 5pt; border-radius:1.5pt; break-after:avoid; page-break-after:avoid;
+}
+h3.rub{
+  margin:3.5pt 0 1.5pt; font-size:8.2pt; font-weight:700; color:var(--vert-fonce);
+  border-bottom:.7pt solid var(--vert-bord); padding-bottom:.8pt;
+  break-after:avoid; page-break-after:avoid;
+}
+
+/* --------------------------- ENCADRES ----------------------------- */
+.form{
+  background:var(--bleu-pale); border:.8pt solid var(--bleu-bord); border-left:2.6pt solid var(--bleu);
+  border-radius:2pt; padding:2.4pt 5pt; margin:2.2pt 0 3.4pt;
+  break-inside:avoid; page-break-inside:avoid;
+}
+.form .t{
+  display:block; font-size:6.8pt; font-weight:700; letter-spacing:.6pt;
+  color:var(--bleu); margin-bottom:1.5pt;
+}
+.form .c{text-align:center; font-size:9.1pt; margin:1.6pt 0;}
+.note{background:var(--vert-pale); border-left:2.4pt solid var(--vert); padding:2.4pt 5pt; border-radius:1.5pt; margin:2.5pt 0 4pt; break-inside:avoid;}
+
+/* --------------------------- TABLEAUX ----------------------------- */
+table{width:100%; border-collapse:collapse; font-size:7.6pt; margin:2pt 0 4pt; break-inside:avoid;}
+th{background:var(--bleu); color:#fff; font-weight:700; text-align:left; padding:1.8pt 4pt; font-size:7.2pt;}
+td{border:.6pt solid var(--gris-clair); padding:1.8pt 4pt; vertical-align:top;}
+tr{break-inside:avoid;}
+table.var td{text-align:center; font-size:8pt;}
+table.var td.lab{text-align:left; font-weight:700; color:var(--bleu-fonce); background:var(--bleu-pale);}
+
+/* ----------------------------- PIEGES ----------------------------- */
+table.pieges th:first-child{width:44%;}
+table.pieges td:first-child{color:var(--rouge); background:#FDF1F0;}
+.x{font-weight:700;}
+.v{color:var(--vert-fonce); font-weight:700;}
+
+/* ---------------------------- RECAP ------------------------------- */
+ol.recap{margin:0; padding-left:0; list-style:none; counter-reset:r;}
+ol.recap li{
+  counter-increment:r; position:relative; padding-left:13pt; margin-bottom:1.8pt;
+  break-inside:avoid;
+}
+ol.recap li::before{
+  content:counter(r); position:absolute; left:0; top:.3pt;
+  width:10pt; height:10pt; border-radius:50%; background:var(--vert); color:#fff;
+  font-size:6.6pt; font-weight:700; text-align:center; line-height:10pt;
+}
+
+/* --------------------------- MATHS -------------------------------- */
+.m{font-family:Cambria,Georgia,"Times New Roman",serif;}
+i,var{font-family:Cambria,Georgia,"Times New Roman",serif; font-style:italic;}
+.op{font-family:Cambria,Georgia,"Times New Roman",serif; font-style:normal;}
+.f{display:inline-block; vertical-align:middle; text-align:center;
+   margin:0 .12em; line-height:1.06; font-family:Cambria,Georgia,"Times New Roman",serif;}
+.f>span{display:block; padding:0 .2em;}
+.f>span:first-child{border-bottom:.6pt solid currentColor; padding-bottom:.08em;}
+.f>span:last-child{padding-top:.04em;}
+.rad{border-top:.6pt solid currentColor; padding-top:.12em;}
+/* line-height:0 evite que l'exposant n'ecarte les lignes ; position:relative le
+   repositionne sans qu'il heurte la barre de fraction ni le trait du radical. */
+sup,sub{font-size:.68em; line-height:0; position:relative; vertical-align:baseline;}
+sup{top:-.42em;}
+sub{bottom:-.22em;}
+.pt{white-space:nowrap;}
+/* Les fleches n'ont qu'un glyphe atrophie dans la fonte serif : on les force
+   en sans-serif, ou elles sont franches meme a 8 pt. */
+.ar{font-family:"Segoe UI",Calibri,Arial,"DejaVu Sans",sans-serif; font-style:normal;}
+
+/* ------------------- PIEGES : blocs erreur / correction ------------- */
+.pg{font-size:8.1pt; border-left:2.4pt solid var(--rouge); background:#FDF1F0; border-radius:1.5pt;
+    padding:2pt 5pt; margin:0 0 2.8pt; break-inside:avoid; page-break-inside:avoid;}
+.pg .err{color:var(--rouge); font-weight:600;}
+.pg .cor{color:#1B1B1B; margin-top:.8pt;}
+.pg .cor b{color:var(--bleu-fonce);}
+.v{color:var(--vert-fonce); font-weight:700;}
+
+</style>
+</head>
+<body>
+<header class="entete">
+  <div class="num">2</div>
+  <div class="txt">
+    <div class="niveau">1ERE D &middot; MATHEMATIQUES</div>
+    <h1>Polynômes et fonctions rationnelles</h1>
+    <div class="sous">Leçon 1 : polynômes, degré et opérations &middot; Leçon 2 : racines, factorisation et division euclidienne &middot; Leçon 3 : trinôme du second degré, somme et produit des racines &middot; Leçon 4 : fractions rationnelles</div>
+  </div>
+</header>
+
+<div class="bandeau bleu" style="margin-top:0">L'ESSENTIEL</div>
+<div class="cols">
+
+<!-- ================= LECON 1 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 1&nbsp;: Polynômes : degré et opérations</h2>
+<p>Un <b>polynôme</b> est une somme de termes <span class="pt"><i>a<sub>k</sub></i>&#8239;<i>x</i><sup><i>k</i></sup></span>, les <i>a<sub>k</sub></i> réels et <i>k</i> entier naturel. Son écriture <b>réduite</b> regroupe les termes de même degré ; on l'<b>ordonne</b> suivant les puissances décroissantes de <i>x</i>.</p></div>
+<ul>
+<li><b>Degré</b> de <i>P</i>, noté <span class="pt"><span class="op">deg</span>&#8239;<i>P</i></span> : le plus grand exposant dont le coefficient est <b>non nul</b> dans l'écriture réduite. Ce coefficient est le <b>coefficient dominant</b> ; le terme sans <i>x</i> est le <b>terme constant</b>.</li>
+<li>La <b>fonction polynôme</b> <span class="pt"><i>x</i>&#8239;<span class="ar">&#8614;</span>&#8239;<i>P</i>(<i>x</i>)</span> est définie sur &#8477; <b>tout entier</b>.</li>
+<li>Seuls sont autorisés les exposants <b>entiers positifs ou nuls</b> : <span class="pt">&#8730;<span class="rad"><i>x</i></span></span>, <span class="pt"><span class="f"><span>1</span><span><i>x</i></span></span></span>, <span class="pt"><span class="f"><span>1</span><span><i>x</i><sup>2</sup></span></span></span> n'en sont pas. En revanche 5 est un polynôme de degré 0.</li>
+</ul>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Polynôme nul et identification</h3>
+<p>Le <b>polynôme nul</b> est celui dont <b>tous les coefficients sont nuls</b> ; on convient qu'il n'a pas de degré. Si un polynôme prend la valeur 0 pour <b>tout</b> réel <i>x</i>, alors tous ses coefficients sont nuls.</p>
+<div class="form">
+  <span class="t">IDENTIFICATION DES COEFFICIENTS</span>
+  <div class="c m">deux polynômes sont égaux <span class="ar">&#8660;</span> leurs coefficients de même degré sont égaux deux à deux</div>
+</div>
+<p>Pour trouver des coefficients inconnus dans une égalité valable <b>pour tout <i>x</i></b> : développer, réduire les deux membres, puis écrire <b>une équation par degré</b>. Vérifier d'abord que l'égalité vaut pour tout <i>x</i>, et non pour une valeur particulière.</p>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Degré d'une somme, d'un produit</h3>
+<div class="form">
+  <span class="t">DEGRE ET OPERATIONS</span>
+  <div class="c m"><span class="op">deg</span>(<i>A</i>&#215;<i>B</i>)&#8239;=&#8239;<span class="op">deg</span>&#8239;<i>A</i>&#8239;+&#8239;<span class="op">deg</span>&#8239;<i>B</i></div>
+  <div class="c m"><span class="op">deg</span>(<i>A</i>&#8239;+&#8239;<i>B</i>)&#8239;&#8804;&#8239;<span class="op">max</span>(<span class="op">deg</span>&#8239;<i>A</i>&#8239;;&#8239;<span class="op">deg</span>&#8239;<i>B</i>)</div>
+</div>
+<p><b>Somme</b> : additionner les coefficients de même degré. <b>Produit</b> : distribuer chaque terme du premier sur chaque terme du second, puis réduire. Le degré d'une somme peut <b>baisser</b> si les termes dominants s'annulent, et il ne se lit <b>jamais</b> sur une écriture non réduite.</p>
+</div>
+
+<!-- ================= LECON 2 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 2&nbsp;: Racines, factorisation et division euclidienne</h2>
+<div class="form">
+  <span class="t">RACINE ET FACTORISATION&nbsp;: <i>a</i> RACINE DE <i>P</i> SI <i>P</i>(<i>a</i>)&#8239;=&#8239;0</span>
+  <div class="c m"><i>P</i>(<i>a</i>)&#8239;=&#8239;0&nbsp;<span class="ar">&#8660;</span>&nbsp;<i>P</i>(<i>x</i>)&#8239;=&#8239;(<i>x</i>&#8239;&#8722;&#8239;<i>a</i>)&#8239;<i>Q</i>(<i>x</i>)</div>
+  <div class="c m">avec <span class="op">deg</span>&#8239;<i>Q</i>&#8239;=&#8239;<span class="op">deg</span>&#8239;<i>P</i>&#8239;&#8722;&#8239;1</div>
+</div></div>
+<ul>
+<li>Une racine se dit aussi un <b>zéro</b> de <i>P</i>. <i>Q</i> s'obtient par <b>identification des coefficients</b> ou par <b>division euclidienne</b> de <i>P</i> par <span class="pt">(<i>x</i>&#8239;&#8722;&#8239;<i>a</i>)</span>.</li>
+<li><b>Signe :</b> pour la racine &#8722;1, le facteur est <span class="pt">(<i>x</i>&#8239;&#8722;&#8239;(&#8722;1))&#8239;=&#8239;(<i>x</i>&#8239;+&#8239;1)</span>.</li>
+<li>Un polynôme de degré <i>n</i> possède <b>au plus <i>n</i> racines</b> réelles.</li>
+</ul>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Division euclidienne</h3>
+<p><i>P</i> et <i>D</i> polynômes, <i>D</i> <b>non nul</b>. Il existe un <b>unique</b> couple formé du <b>quotient</b> <i>Q</i> et du <b>reste</b> <i>R</i> tel que :</p>
+<div class="form">
+  <span class="t">ECRITURE UNIQUE</span>
+  <div class="c m"><i>P</i>&#8239;=&#8239;<i>D</i>&#215;<i>Q</i>&#8239;+&#8239;<i>R</i>&nbsp;&nbsp;avec&nbsp;&nbsp;<span class="op">deg</span>&#8239;<i>R</i>&#8239;&lt;&#8239;<span class="op">deg</span>&#8239;<i>D</i></div>
+  <div class="c m">si <i>D</i>(<i>x</i>)&#8239;=&#8239;<i>x</i>&#8239;&#8722;&#8239;<i>a</i> : &nbsp;<i>R</i>&#8239;=&#8239;<i>P</i>(<i>a</i>)</div>
+</div>
+<p>Lorsque <span class="pt"><i>R</i>&#8239;=&#8239;0</span>, <i>D</i> <b>divise</b> <i>P</i> et <span class="pt"><i>P</i>&#8239;=&#8239;<i>D</i>&#215;<i>Q</i></span> est une factorisation. La condition <span class="pt"><span class="op">deg</span>&#8239;<i>R</i>&#8239;&lt;&#8239;<span class="op">deg</span>&#8239;<i>D</i></span> dit <b>quand s'arrêter</b> : tant que le reste a un degré au moins égal à celui de <i>D</i>, on peut encore diviser.</p>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Trouver une racine, poser la division</h3>
+<ul>
+<li><b>Racine évidente</b> : essayer 1, &#8722;1, 2, &#8722;2, 3, &#8722;3. Si les coefficients sont entiers et le coefficient dominant vaut 1, les racines entières sont parmi les <b>diviseurs du terme constant</b>. La <b>somme des coefficients</b> vaut <i>P</i>(1) : si elle est nulle, 1 est racine.</li>
+<li><b>Division posée</b> : écrire <i>P</i> et <i>D</i> par puissances décroissantes en <b>complétant par 0</b> les termes manquants (<span class="pt"><i>x</i><sup>3</sup>&#8239;&#8722;&#8239;1&#8239;=&#8239;<i>x</i><sup>3</sup>&#8239;+&#8239;0<i>x</i><sup>2</sup>&#8239;+&#8239;0<i>x</i>&#8239;&#8722;&#8239;1</span>) ; diviser les dominants ; multiplier <b>tout</b> le diviseur, aligner les colonnes de même degré et <b>soustraire</b>, c'est-à-dire changer <b>tous</b> les signes ; abaisser le terme suivant ; s'arrêter dès que <span class="pt"><span class="op">deg</span>&#8239;<i>R</i>&#8239;&lt;&#8239;<span class="op">deg</span>&#8239;<i>D</i></span> ; contrôler en développant.</li>
+</ul>
+</div>
+
+<!-- ================= LECON 3 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 3&nbsp;: Trinôme du second degré : somme et produit des racines</h2>
+<table>
+<tr><th><span class="m"><i>ax</i><sup>2</sup>&#8239;+&#8239;<i>bx</i>&#8239;+&#8239;<i>c</i></span>, <span class="m"><i>a</i>&#8239;&#8800;&#8239;0</span></th><th>Racines et factorisation, <span class="m">&#916;&#8239;=&#8239;<i>b</i><sup>2</sup>&#8239;&#8722;&#8239;4<i>ac</i></span></th></tr>
+<tr><td class="m">&#916;&#8239;&gt;&#8239;0</td><td>deux racines distinctes <i>x</i><sub>1</sub> et <i>x</i><sub>2</sub> ; <span class="pt"><i>ax</i><sup>2</sup>&#8239;+&#8239;<i>bx</i>&#8239;+&#8239;<i>c</i>&#8239;=&#8239;<i>a</i>(<i>x</i>&#8239;&#8722;&#8239;<i>x</i><sub>1</sub>)(<i>x</i>&#8239;&#8722;&#8239;<i>x</i><sub>2</sub>)</span></td></tr>
+<tr><td class="m">&#916;&#8239;=&#8239;0</td><td>racine double <span class="pt"><i>x</i><sub>0</sub>&#8239;=&#8239;&#8722;<span class="f"><span><i>b</i></span><span>2<i>a</i></span></span></span> ; <span class="pt"><i>a</i>(<i>x</i>&#8239;&#8722;&#8239;<i>x</i><sub>0</sub>)<sup>2</sup></span></td></tr>
+<tr><td class="m">&#916;&#8239;&lt;&#8239;0</td><td>aucune racine réelle ; <b>aucune factorisation</b> dans &#8477;</td></tr>
+</table></div>
+<p>Le coefficient <i>a</i> ne s'oublie pas : <span class="pt">2<i>x</i><sup>2</sup>&#8239;&#8722;&#8239;6<i>x</i>&#8239;+&#8239;4&#8239;=&#8239;2(<i>x</i>&#8239;&#8722;&#8239;1)(<i>x</i>&#8239;&#8722;&#8239;2)</span>.</p>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Somme et produit des racines</h3>
+<div class="form">
+  <span class="t">POUR UN TRINOME <i>ax</i><sup>2</sup>&#8239;+&#8239;<i>bx</i>&#8239;+&#8239;<i>c</i> (<i>a</i>&#8239;&#8800;&#8239;0) AYANT DEUX RACINES</span>
+  <div class="c m"><i>S</i>&#8239;=&#8239;<i>x</i><sub>1</sub>&#8239;+&#8239;<i>x</i><sub>2</sub>&#8239;=&#8239;&#8722;<span class="f"><span><i>b</i></span><span><i>a</i></span></span> &nbsp;&nbsp;&nbsp; <i>P</i>&#8239;=&#8239;<i>x</i><sub>1</sub>&#8239;<i>x</i><sub>2</sub>&#8239;=&#8239;<span class="f"><span><i>c</i></span><span><i>a</i></span></span></div>
+  <div class="c m">réciproquement : somme <i>S</i>, produit <i>P</i> <span class="ar">&#8660;</span> racines de <i>t</i><sup>2</sup>&#8239;&#8722;&#8239;<i>S</i>&#8239;<i>t</i>&#8239;+&#8239;<i>P</i>&#8239;=&#8239;0</div>
+</div>
+<ul>
+<li>Ces deux nombres existent dans &#8477; <b>si et seulement si</b> <span class="pt"><i>S</i><sup>2</sup>&#8239;&#8722;&#8239;4<i>P</i>&#8239;&#8805;&#8239;0</span> ; ils valent alors <span class="pt"><span class="f"><span><i>S</i>&#8239;&#177;&#8239;&#8730;<span class="rad"><i>S</i><sup>2</sup>&#8239;&#8722;&#8239;4<i>P</i></span></span><span>2</span></span></span>. Surveiller les signes : <b>moins</b> devant <i>S</i>, <b>plus</b> devant <i>P</i>.</li>
+<li>Une racine <i>x</i><sub>1</sub> connue donne l'autre : <span class="pt"><i>x</i><sub>2</sub>&#8239;=&#8239;<span class="f"><span><i>c</i>/<i>a</i></span><span><i>x</i><sub>1</sub></span></span></span> ou <span class="pt"><i>x</i><sub>2</sub>&#8239;=&#8239;&#8722;<span class="f"><span><i>b</i></span><span><i>a</i></span></span>&#8239;&#8722;&#8239;<i>x</i><sub>1</sub></span>. Sans connaître les racines : <span class="pt"><i>x</i><sub>1</sub><sup>2</sup>&#8239;+&#8239;<i>x</i><sub>2</sub><sup>2</sup>&#8239;=&#8239;<i>S</i><sup>2</sup>&#8239;&#8722;&#8239;2<i>P</i></span>.</li>
+<li><b>Vérifier</b> ensuite <i>S</i> et <i>P</i>, et écarter les valeurs sans sens concret, avec l'unité.</li>
+</ul>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Signe d'un trinôme et sommet de la parabole</h3>
+<table>
+<tr><th>Discriminant</th><th>Signe de <span class="m"><i>f</i>(<i>x</i>)&#8239;=&#8239;<i>ax</i><sup>2</sup>&#8239;+&#8239;<i>bx</i>&#8239;+&#8239;<i>c</i></span></th></tr>
+<tr><td class="m">&#916;&#8239;&lt;&#8239;0</td><td><b>du signe de <i>a</i></b> pour tout réel <i>x</i> : la courbe ne coupe jamais l'axe</td></tr>
+<tr><td class="m">&#916;&#8239;=&#8239;0</td><td>du signe de <i>a</i> partout, <b>nul</b> en la racine double</td></tr>
+<tr><td class="m">&#916;&#8239;&gt;&#8239;0</td><td>signe de <i>a</i> <b>à l'extérieur</b> des racines, signe <b>contraire entre</b> elles</td></tr>
+</table>
+<div class="form">
+  <span class="t">AXE DE SYMETRIE ET SOMMET</span>
+  <div class="c m"><i>x</i>&#8239;=&#8239;&#8722;<span class="f"><span><i>b</i></span><span>2<i>a</i></span></span>&#8239;=&#8239;<span class="f"><span><i>x</i><sub>1</sub>&#8239;+&#8239;<i>x</i><sub>2</sub></span><span>2</span></span> &nbsp;&nbsp;(milieu des racines)</div>
+</div>
+<p>Le point de la courbe qui a cette abscisse est le <b>sommet</b> : <b>minimum si <i>a</i>&#8239;&gt;&#8239;0</b>, <b>maximum si <i>a</i>&#8239;&lt;&#8239;0</b>.</p>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Tableau de signes et inéquations</h3>
+<p>Le signe d'un <b>produit de facteurs du premier degré</b> se lit facteur par facteur, quel que soit le degré : un facteur <span class="pt"><i>x</i>&#8239;&#8722;&#8239;<i>a</i></span> est négatif <b>avant</b> <i>a</i>, nul <b>en</b> <i>a</i>, positif <b>après</b> ; si le coefficient de <i>x</i> est négatif, le signe est inversé.</p>
+<ul>
+<li>Ramener tous les termes <b>du même côté</b> ; ne <b>jamais</b> diviser par une expression contenant <i>x</i>. Calculer &#916;, chercher les racines, factoriser.</li>
+<li>Ranger les valeurs qui annulent un facteur dans l'<b>ordre croissant</b>, sans en oublier ; <b>une ligne par facteur</b>, avec un 0 là où il s'annule ; ligne du produit obtenue en <b>multipliant les signes colonne par colonne</b>. Conclure par une <b>réunion d'intervalles</b> : crochets fermés si l'inégalité est large, ouverts si elle est stricte, <b>toujours ouverts</b> en une valeur interdite. Ainsi <span class="pt">(<i>x</i>&#8239;+&#8239;2)(<i>x</i>&#8239;&#8722;&#8239;1)(<i>x</i>&#8239;&#8722;&#8239;3)&#8239;&#8804;&#8239;0</span> sur <span class="pt">]&#8722;&#8734;&#8239;;&#8239;&#8722;2]&#8239;&#8746;&#8239;[1&#8239;;&#8239;3]</span>.</li>
+</ul>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Equations bicarrées et paramètre</h3>
+<p>Une équation de degré 4 ne contenant que des puissances <b>paires</b> de l'inconnue est dite <b>bicarrée</b> ; elle se ramène au second degré par le <b>changement d'inconnue</b> <span class="pt"><i>X</i>&#8239;=&#8239;<i>x</i><sup>2</sup></span>.</p>
+<div class="note"><b>Ne jamais oublier le retour à <i>x</i>.</b> <span class="pt"><i>x</i><sup>4</sup>&#8239;&#8722;&#8239;10<i>x</i><sup>2</sup>&#8239;+&#8239;9&#8239;=&#8239;0</span> donne <i>X</i>&#8239;=&#8239;9 ou <i>X</i>&#8239;=&#8239;1, puis <b>quatre</b> solutions : &#8722;3, &#8722;1, 1 et 3. Une valeur <b>négative</b> de <i>X</i> ne fournit <b>aucune</b> solution.</div>
+<p>Si un coefficient dépend d'un <b>paramètre</b>, discuter d'abord le cas où le coefficient de <i>x</i><sup>2</sup> <b>s'annule</b> : l'équation devient du <b>premier</b> degré.</p>
+</div>
+
+<!-- ================= LECON 4 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 4&nbsp;: Fractions rationnelles</h2>
+<div class="form">
+  <span class="t">FRACTION RATIONNELLE ET ENSEMBLE DE DEFINITION</span>
+  <div class="c m"><i>F</i>(<i>x</i>)&#8239;=&#8239;<span class="f"><span><i>P</i>(<i>x</i>)</span><span><i>Q</i>(<i>x</i>)</span></span> n'existe que si <i>Q</i>(<i>x</i>)&#8239;&#8800;&#8239;0</div>
+  <div class="c m"><i>D<sub>F</sub></i>&#8239;=&#8239;{<i>x</i>&#8239;&#8712;&#8239;&#8477; tels que <i>Q</i>(<i>x</i>)&#8239;&#8800;&#8239;0}</div>
+</div></div>
+<ul>
+<li>Les réels qui annulent <i>Q</i> sont les <b>valeurs interdites</b> : des racines du <b>dénominateur</b>, jamais du numérateur. Les chercher, c'est résoudre <span class="pt"><i>Q</i>(<i>x</i>)&#8239;=&#8239;0</span>.</li>
+<li><i>D<sub>F</sub></i> s'écrit <span class="pt">&#8477;&#8726;{0&#8239;;&#8239;1}</span> ou comme une réunion d'intervalles <b>ouverts</b>. Si <i>Q</i> ne s'annule jamais, comme <span class="pt"><i>x</i><sup>2</sup>&#8239;+&#8239;1</span>, <span class="pt"><i>D<sub>F</sub></i>&#8239;=&#8239;&#8477;</span>.</li>
+</ul>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Simplifier une fraction rationnelle</h3>
+<p>Dans cet ordre : déterminer <i>D<sub>F</sub></i>, <b>factoriser</b> numérateur et dénominateur, supprimer les <b>facteurs communs</b>. <i>D<sub>F</sub></i> <b>ne change pas</b> : il est fixé par l'écriture de départ, et le résultat s'écrit en précisant « pour <i>x</i>&#8239;&#8712;&#8239;<i>D<sub>F</sub></i> ».</p>
+<div class="form">
+  <span class="t">ON NE SIMPLIFIE QUE DES FACTEURS, JAMAIS DES TERMES</span>
+  <div class="c m"><span class="f"><span><i>k</i>&#215;<i>A</i></span><span><i>k</i>&#215;<i>B</i></span></span>&#8239;=&#8239;<span class="f"><span><i>A</i></span><span><i>B</i></span></span> &nbsp;&nbsp;mais&nbsp;&nbsp; <span class="f"><span><i>x</i>&#8239;+&#8239;2</span><span><i>x</i></span></span>&#8239;=&#8239;1&#8239;+&#8239;<span class="f"><span>2</span><span><i>x</i></span></span></div>
+</div>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Opérations</h3>
+<ul>
+<li>Comme avec les fractions de nombres, après avoir écrit <i>D<sub>F</sub></i>, qui exclut <b>toutes</b> les valeurs interdites rencontrées.</li>
+<li><b>Addition, soustraction</b> : factoriser les dénominateurs, choisir le dénominateur commun le plus simple, compléter chaque fraction en haut et en bas, additionner les numérateurs sans toucher au dénominateur. Attention aux <b>parenthèses</b> dans une soustraction.</li>
+<li><b>Multiplication</b> : numérateurs entre eux, dénominateurs entre eux, puis simplifier. <b>Division</b> : multiplier par l'<b>inverse</b>, en excluant en plus les valeurs qui annulent le <b>numérateur de la seconde fraction</b>.</li>
+<li><b>Couper une fraction en morceaux</b> : dans <span class="pt"><span class="f"><span>1</span><span><i>x</i>(<i>x</i>&#8239;+&#8239;2)</span></span>&#8239;=&#8239;<span class="f"><span><i>a</i></span><span><i>x</i></span></span>&#8239;+&#8239;<span class="f"><span><i>b</i></span><span><i>x</i>&#8239;+&#8239;2</span></span></span>, réduire à droite au même dénominateur puis <b>identifier les numérateurs</b> (ici <span class="pt"><i>a</i>&#8239;=&#8239;<span class="f"><span>1</span><span>2</span></span></span>, <span class="pt"><i>b</i>&#8239;=&#8239;&#8722;<span class="f"><span>1</span><span>2</span></span></span>).</li>
+</ul>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Equations et inéquations avec un quotient</h3>
+<div class="form">
+  <span class="t">QUOTIENT NUL</span>
+  <div class="c m"><span class="f"><span><i>A</i>(<i>x</i>)</span><span><i>B</i>(<i>x</i>)</span></span>&#8239;=&#8239;0&nbsp;<span class="ar">&#8660;</span>&nbsp;<i>A</i>(<i>x</i>)&#8239;=&#8239;0 et <i>B</i>(<i>x</i>)&#8239;&#8800;&#8239;0</div>
+</div>
+<ul>
+<li>Déterminer l'ensemble de définition <b>d'abord</b> : aucune solution ne pourra en sortir.</li>
+<li><b>Inéquation</b> : tout ramener du même côté pour obtenir un <b>seul quotient comparé à 0</b>, factoriser numérateur et dénominateur, dresser un tableau de signes contenant les racines du numérateur <b>et</b> celles du dénominateur, ces dernières marquées d'une <b>double barre</b> ; l'intervalle y reste <b>ouvert</b>, même si l'inégalité est large.</li>
+<li>La multiplication « en croix » <span class="pt"><span class="f"><span><i>A</i></span><span><i>B</i></span></span>&#8239;=&#8239;<span class="f"><span><i>C</i></span><span><i>D</i></span></span>&nbsp;<span class="ar">&#8660;</span>&nbsp;<i>AD</i>&#8239;=&#8239;<i>BC</i></span> n'est valable que si <i>B</i> et <i>D</i> sont <b>non nuls</b>, ce qui doit être écrit auparavant.</li>
+</ul>
+</div>
+
+</div>
+
+<div class="bandeau vert">PIEGES ET ERREURS FREQUENTES</div>
+<div class="cols">
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> <span class="pt"><span class="op">deg</span>(<i>A</i>&#8239;+&#8239;<i>B</i>)&#8239;=&#8239;<span class="op">deg</span>&#8239;<i>A</i>&#8239;+&#8239;<span class="op">deg</span>&#8239;<i>B</i></span> &nbsp;&middot;&nbsp; degré lu sur une écriture non réduite</div><div class="cor"><span class="v">&#10003;</span> Seul le <b>produit</b> ajoute les degrés. Pour une somme, <span class="pt"><span class="op">deg</span>(<i>A</i>&#8239;+&#8239;<i>B</i>)&#8239;&#8804;&#8239;<span class="op">max</span></span>, car les termes dominants peuvent s'annuler : <span class="pt">(<i>x</i><sup>2</sup>&#8239;+&#8239;1)&#8239;+&#8239;(&#8722;<i>x</i><sup>2</sup>&#8239;+&#8239;<i>x</i>)&#8239;=&#8239;<i>x</i>&#8239;+&#8239;1</span>. Il faut <b>réduire avant</b> de lire un degré.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> <span class="pt"><i>P</i>(<i>x</i>)&#8239;=&#8239;<i>x</i><sup>3</sup>&#8239;&#8722;&#8239;<i>x</i><sup>2</sup>&#8239;+&#8239;<i>x</i>&#8239;+&#8239;3</span> se factorise par <span class="pt">(<i>x</i>&#8239;&#8722;&#8239;1)</span> &nbsp;&middot;&nbsp; la racine &#8722;1 donne le facteur <span class="pt">(<i>x</i>&#8239;&#8722;&#8239;1)</span></div><div class="cor"><span class="v">&#10003;</span> <span class="pt"><i>P</i>(1)&#8239;=&#8239;4&#8239;&#8800;&#8239;0</span> : 1 n'est pas racine, c'est &#8722;1 qui l'est ; la racine se <b>vérifie</b> <b>avant</b> toute factorisation, et &#8722;1 donne le facteur <span class="pt">(<i>x</i>&#8239;+&#8239;1)</span>. Dans une division posée, <b>soustraire</b> change le signe de <b>tous</b> les termes.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> Pour <span class="pt">2<i>x</i><sup>2</sup>&#8239;&#8722;&#8239;6<i>x</i>&#8239;+&#8239;4</span> : <span class="pt"><i>S</i>&#8239;=&#8239;6</span> et <span class="pt"><i>P</i>&#8239;=&#8239;4</span></div><div class="cor"><span class="v">&#10003;</span> On <b>divise par <i>a</i></b> : <span class="pt"><i>S</i>&#8239;=&#8239;<span class="f"><span>6</span><span>2</span></span>&#8239;=&#8239;3</span> et <span class="pt"><i>P</i>&#8239;=&#8239;<span class="f"><span>4</span><span>2</span></span>&#8239;=&#8239;2</span> ; ces formules ne valent <b>que si le trinôme a des racines</b> <span class="pt">(&#916;&#8239;&#8805;&#8239;0)</span>.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> <span class="pt"><i>x</i><sup>2</sup>&#8239;&#8805;&#8239;4<i>x</i></span> donc <span class="pt"><i>x</i>&#8239;&#8805;&#8239;4</span></div><div class="cor"><span class="v">&#10003;</span> On a simplifié par <i>x</i>, dont le <b>signe est inconnu</b> : diviser par une quantité négative retourne l'inégalité. Tout du même côté : <span class="pt"><i>x</i>(<i>x</i>&#8239;&#8722;&#8239;4)&#8239;&#8805;&#8239;0</span>, puis tableau de signes, d'où <span class="pt">]&#8722;&#8734;&#8239;;&#8239;0]&#8239;&#8746;&#8239;[4&#8239;;&#8239;+&#8734;[</span>.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> <span class="pt"><i>mx</i><sup>2</sup>&#8239;&#8722;&#8239;3<i>x</i>&#8239;+&#8239;1&#8239;=&#8239;0</span> a deux solutions si <span class="pt">&#916;&#8239;&gt;&#8239;0</span></div><div class="cor"><span class="v">&#10003;</span> Incomplet : si <span class="pt"><i>m</i>&#8239;=&#8239;0</span>, l'équation devient <span class="pt">&#8722;3<i>x</i>&#8239;+&#8239;1&#8239;=&#8239;0</span>, du <b>premier</b> degré, avec une seule solution et sans discriminant. Avec un paramètre, <b>discuter d'abord</b> le cas où le coefficient de <i>x</i><sup>2</sup> s'annule.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> <span class="pt"><span class="f"><span><i>x</i>&#8239;+&#8239;2</span><span><i>x</i></span></span>&#8239;=&#8239;2</span> &nbsp;&middot;&nbsp; <span class="pt"><span class="f"><span><i>x</i><sup>2</sup>&#8239;&#8722;&#8239;1</span><span><i>x</i>&#8239;&#8722;&#8239;1</span></span>&#8239;=&#8239;<i>x</i>&#8239;+&#8239;1</span> pour tout <i>x</i> &nbsp;&middot;&nbsp; intervalle fermé en une valeur interdite</div><div class="cor"><span class="v">&#10003;</span> On ne simplifie <b>jamais</b> un terme d'une somme, seulement un <b>facteur</b> commun à tout le numérateur et à tout le dénominateur : <span class="pt"><span class="f"><span><i>x</i>&#8239;+&#8239;2</span><span><i>x</i></span></span>&#8239;=&#8239;1&#8239;+&#8239;<span class="f"><span>2</span><span><i>x</i></span></span></span>. La <b>condition d'existence s'écrit avant</b> de simplifier : la seconde égalité ne vaut que pour <span class="pt"><i>x</i>&#8239;&#8800;&#8239;1</span>, et l'intervalle reste <b>ouvert</b> en une valeur interdite, même avec une inégalité large.</div></div>
+
+</div>
+
+<div class="bandeau bleu">A SAVOIR PAR COEUR AVANT LE DEVOIR</div>
+<div class="cols">
+<ol class="recap">
+<li><b>Degré</b> : <span class="pt"><span class="op">deg</span>(<i>A</i>&#215;<i>B</i>)&#8239;=&#8239;<span class="op">deg</span>&#8239;<i>A</i>&#8239;+&#8239;<span class="op">deg</span>&#8239;<i>B</i></span> ; pour une somme, seulement <span class="pt">&#8804;&#8239;<span class="op">max</span></span>. Polynômes égaux <span class="ar">&#8660;</span> mêmes coefficients : <b>identification</b>, une équation par degré.</li>
+<li><span class="pt"><i>P</i>(<i>a</i>)&#8239;=&#8239;0&#8239;<span class="ar">&#8660;</span>&#8239;<i>P</i>(<i>x</i>)&#8239;=&#8239;(<i>x</i>&#8239;&#8722;&#8239;<i>a</i>)<i>Q</i>(<i>x</i>)</span>, <span class="pt"><span class="op">deg</span>&#8239;<i>Q</i>&#8239;=&#8239;<span class="op">deg</span>&#8239;<i>P</i>&#8239;&#8722;&#8239;1</span> ; au plus <i>n</i> racines pour un degré <i>n</i>. Vérifier <i>P</i>(<i>a</i>) <b>avant</b> de factoriser. <b>Division euclidienne</b> : <span class="pt"><i>P</i>&#8239;=&#8239;<i>D</i>&#215;<i>Q</i>&#8239;+&#8239;<i>R</i></span> avec <span class="pt"><span class="op">deg</span>&#8239;<i>R</i>&#8239;&lt;&#8239;<span class="op">deg</span>&#8239;<i>D</i></span>, écriture unique ; le reste de la division par <span class="pt">(<i>x</i>&#8239;&#8722;&#8239;<i>a</i>)</span> vaut <span class="pt"><i>P</i>(<i>a</i>)</span>.</li>
+<li><b>Trinôme</b> : <span class="pt">&#916;&#8239;=&#8239;<i>b</i><sup>2</sup>&#8239;&#8722;&#8239;4<i>ac</i></span> ; <span class="pt"><i>a</i>(<i>x</i>&#8239;&#8722;&#8239;<i>x</i><sub>1</sub>)(<i>x</i>&#8239;&#8722;&#8239;<i>x</i><sub>2</sub>)</span> si <span class="pt">&#916;&#8239;&gt;&#8239;0</span>, <span class="pt"><i>a</i>(<i>x</i>&#8239;&#8722;&#8239;<i>x</i><sub>0</sub>)<sup>2</sup></span> si <span class="pt">&#916;&#8239;=&#8239;0</span>, rien si <span class="pt">&#916;&#8239;&lt;&#8239;0</span>. Le coefficient <i>a</i> ne s'oublie pas. <b>Bicarrée</b> : poser <span class="pt"><i>X</i>&#8239;=&#8239;<i>x</i><sup>2</sup></span> puis <b>revenir à <i>x</i></b>.</li>
+<li><span class="pt"><i>S</i>&#8239;=&#8239;<i>x</i><sub>1</sub>&#8239;+&#8239;<i>x</i><sub>2</sub>&#8239;=&#8239;&#8722;<span class="f"><span><i>b</i></span><span><i>a</i></span></span></span>, <span class="pt"><i>P</i>&#8239;=&#8239;<i>x</i><sub>1</sub><i>x</i><sub>2</sub>&#8239;=&#8239;<span class="f"><span><i>c</i></span><span><i>a</i></span></span></span> (si <span class="pt">&#916;&#8239;&#8805;&#8239;0</span>) ; somme <i>S</i> et produit <i>P</i> <span class="ar">&#8594;</span> racines de <span class="pt"><i>t</i><sup>2</sup>&#8239;&#8722;&#8239;<i>St</i>&#8239;+&#8239;<i>P</i>&#8239;=&#8239;0</span>, existantes si <span class="pt"><i>S</i><sup>2</sup>&#8239;&#8722;&#8239;4<i>P</i>&#8239;&#8805;&#8239;0</span>.</li>
+<li><b>Signe</b> : celui de <i>a</i> à l'extérieur des racines, contraire entre elles ; si <span class="pt">&#916;&#8239;&lt;&#8239;0</span>, celui de <i>a</i> partout. <b>Sommet</b> en <span class="pt"><i>x</i>&#8239;=&#8239;&#8722;<span class="f"><span><i>b</i></span><span>2<i>a</i></span></span></span>, milieu des racines : minimum si <span class="pt"><i>a</i>&#8239;&gt;&#8239;0</span>, maximum si <span class="pt"><i>a</i>&#8239;&lt;&#8239;0</span>. <b>Tableau de signes</b> : une ligne par facteur, signes multipliés par colonne, <b>double barre</b> en une valeur interdite.</li>
+<li><b>Fractions rationnelles</b> : <span class="pt"><span class="f"><span><i>P</i></span><span><i>Q</i></span></span></span> existe si <span class="pt"><i>Q</i>&#8239;&#8800;&#8239;0</span> ; valeurs interdites <b>avant</b> simplification ; on ne simplifie qu'un <b>facteur</b> ; <span class="pt"><span class="f"><span><i>A</i></span><span><i>B</i></span></span>&#8239;=&#8239;0&#8239;<span class="ar">&#8660;</span>&#8239;<i>A</i>&#8239;=&#8239;0</span> et <span class="pt"><i>B</i>&#8239;&#8800;&#8239;0</span>.</li>
+</ol>
+</div>
+
+</body>
+</html>

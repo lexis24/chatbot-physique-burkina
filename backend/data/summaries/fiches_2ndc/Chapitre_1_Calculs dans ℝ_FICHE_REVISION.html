@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Fiche de revision - 2nde C - Chapitre 1 : Calculs dans R</title>
+<style>
+/* ===================================================================
+   FICHE DE REVISION, Collection Hakili Lab, Edition 2026
+   Feuille de style autonome, format A4 pret a imprimer.
+   Bleu #005CB9 · Vert #49A145
+   =================================================================== */
+:root{
+  --bleu:#005CB9; --bleu-fonce:#00429A; --bleu-pale:#E8F1FB; --bleu-bord:#B7D2EE;
+  --vert:#49A145; --vert-fonce:#2F7A2C; --vert-pale:#EDF7EC; --vert-bord:#BCE0B9;
+  --gris:#4A4A4A; --gris-clair:#E4E4E4; --rouge:#B3261E;
+}
+@page{
+  size:A4; margin:15mm;
+  @bottom-center{
+    content:"Collection Hakili Lab, Edition 2026  ·  Fiche de revision  ·  " counter(page) "/" counter(pages);
+    font-family:"Segoe UI",Calibri,Arial,sans-serif; font-size:6.6pt; color:#8A8A8A;
+  }
+}
+*{box-sizing:border-box;}
+body{
+  margin:0; font-family:"Segoe UI",Calibri,Arial,sans-serif;
+  font-size:8.4pt; line-height:1.26; color:#1B1B1B;
+}
+p{margin:0 0 3pt;}
+ul{margin:0 0 3pt; padding-left:11pt;}
+li{margin:0 0 1.2pt;}
+b,strong{color:var(--bleu-fonce);}
+
+/* ------------------------------ ENTETE ---------------------------- */
+.entete{
+  display:flex; align-items:stretch; border:1.6pt solid var(--bleu);
+  border-radius:2.5pt; overflow:hidden; margin-bottom:6pt;
+}
+.entete .num{
+  background:var(--bleu); color:#fff; font-size:20pt; font-weight:700;
+  padding:0 8pt; display:flex; align-items:center; justify-content:center; min-width:34pt;
+}
+.entete .txt{padding:3.5pt 8pt; flex:1;}
+.entete .niveau{
+  font-size:7pt; font-weight:700; letter-spacing:.9pt; color:var(--vert-fonce);
+}
+.entete h1{margin:0; font-size:13.5pt; line-height:1.12; color:var(--bleu-fonce); font-weight:700;}
+.entete .sous{font-size:7pt; color:var(--gris); margin-top:1pt;}
+
+/* --------------------------- BANDEAUX ----------------------------- */
+.bandeau{
+  color:#fff; font-weight:700; font-size:9pt; letter-spacing:1pt;
+  padding:2.4pt 7pt; border-radius:2pt; margin:3pt 0 4pt; break-after:avoid; page-break-after:avoid;
+}
+.bandeau.bleu{background:var(--bleu);}
+.bandeau.vert{background:var(--vert);}
+
+/* --------------------------- COLONNES ----------------------------- */
+.cols{column-count:2; column-gap:7mm; column-fill:balance;}
+
+.cols.bal{column-fill:balance;}
+.bloc{margin-bottom:5pt;}
+.keep{break-inside:avoid; page-break-inside:avoid;}
+
+/* --------------------------- LECONS ------------------------------- */
+h2.lecon{
+  margin:0 0 3pt; font-size:8.6pt; font-weight:700; color:#fff; background:var(--bleu-fonce);
+  padding:1.8pt 5pt; border-radius:1.5pt; break-after:avoid; page-break-after:avoid;
+}
+h3.rub{
+  margin:3.5pt 0 1.5pt; font-size:8.2pt; font-weight:700; color:var(--vert-fonce);
+  border-bottom:.7pt solid var(--vert-bord); padding-bottom:.8pt;
+  break-after:avoid; page-break-after:avoid;
+}
+
+/* --------------------------- ENCADRES ----------------------------- */
+.form{
+  background:var(--bleu-pale); border:.8pt solid var(--bleu-bord); border-left:2.6pt solid var(--bleu);
+  border-radius:2pt; padding:2.4pt 5pt; margin:2.2pt 0 3.4pt;
+  break-inside:avoid; page-break-inside:avoid;
+}
+.form .t{
+  display:block; font-size:6.8pt; font-weight:700; letter-spacing:.6pt;
+  color:var(--bleu); margin-bottom:1.5pt;
+}
+.form .c{text-align:center; font-size:9.1pt; margin:1.6pt 0;}
+.note{background:var(--vert-pale); border-left:2.4pt solid var(--vert); padding:2.4pt 5pt; border-radius:1.5pt; margin:2.5pt 0 4pt; break-inside:avoid;}
+
+/* --------------------------- TABLEAUX ----------------------------- */
+table{width:100%; border-collapse:collapse; font-size:7.6pt; margin:2pt 0 4pt; break-inside:avoid;}
+th{background:var(--bleu); color:#fff; font-weight:700; text-align:left; padding:1.8pt 4pt; font-size:7.2pt;}
+td{border:.6pt solid var(--gris-clair); padding:1.8pt 4pt; vertical-align:top;}
+tr{break-inside:avoid;}
+table.var td{text-align:center; font-size:8pt;}
+table.var td.lab{text-align:left; font-weight:700; color:var(--bleu-fonce); background:var(--bleu-pale);}
+
+/* ----------------------------- PIEGES ----------------------------- */
+table.pieges th:first-child{width:44%;}
+table.pieges td:first-child{color:var(--rouge); background:#FDF1F0;}
+.x{font-weight:700;}
+.v{color:var(--vert-fonce); font-weight:700;}
+
+/* ---------------------------- RECAP ------------------------------- */
+ol.recap{margin:0; padding-left:0; list-style:none; counter-reset:r;}
+ol.recap li{
+  counter-increment:r; position:relative; padding-left:13pt; margin-bottom:1.8pt;
+  break-inside:avoid;
+}
+ol.recap li::before{
+  content:counter(r); position:absolute; left:0; top:.3pt;
+  width:10pt; height:10pt; border-radius:50%; background:var(--vert); color:#fff;
+  font-size:6.6pt; font-weight:700; text-align:center; line-height:10pt;
+}
+
+/* --------------------------- MATHS -------------------------------- */
+.m{font-family:Cambria,Georgia,"Times New Roman",serif;}
+i,var{font-family:Cambria,Georgia,"Times New Roman",serif; font-style:italic;}
+.op{font-family:Cambria,Georgia,"Times New Roman",serif; font-style:normal;}
+.f{display:inline-block; vertical-align:middle; text-align:center;
+   margin:0 .12em; line-height:1.06; font-family:Cambria,Georgia,"Times New Roman",serif;}
+.f>span{display:block; padding:0 .2em;}
+.f>span:first-child{border-bottom:.6pt solid currentColor; padding-bottom:.08em;}
+.f>span:last-child{padding-top:.04em;}
+.rad{border-top:.6pt solid currentColor; padding-top:.12em;}
+/* line-height:0 evite que l'exposant n'ecarte les lignes ; position:relative le
+   repositionne sans qu'il heurte la barre de fraction ni le trait du radical. */
+sup,sub{font-size:.68em; line-height:0; position:relative; vertical-align:baseline;}
+sup{top:-.42em;}
+sub{bottom:-.22em;}
+.pt{white-space:nowrap;}
+/* Les fleches n'ont qu'un glyphe atrophie dans la fonte serif : on les force
+   en sans-serif, ou elles sont franches meme a 8 pt. */
+.ar{font-family:"Segoe UI",Calibri,Arial,"DejaVu Sans",sans-serif; font-style:normal;}
+
+/* ------------------- PIEGES : blocs erreur / correction ------------- */
+.pg{font-size:8.1pt; border-left:2.4pt solid var(--rouge); background:#FDF1F0; border-radius:1.5pt;
+    padding:2pt 5pt; margin:0 0 2.8pt; break-inside:avoid; page-break-inside:avoid;}
+.pg .err{color:var(--rouge); font-weight:600;}
+.pg .cor{color:#1B1B1B; margin-top:.8pt;}
+.pg .cor b{color:var(--bleu-fonce);}
+.v{color:var(--vert-fonce); font-weight:700;}
+
+</style>
+</head>
+<body>
+<header class="entete">
+  <div class="num">1</div>
+  <div class="txt">
+    <div class="niveau">2NDE C &middot; MATHEMATIQUES</div>
+    <h1>Calculs dans &#8477;</h1>
+    <div class="sous">Leçon 1 : ordre et comparaison dans &#8477; &middot; Leçon 2 : intervalles, valeur absolue et distance &middot; Leçon 3 : majorant, minorant, maximum et minimum &middot; Leçon 4 : encadrement et calcul approché &middot; Leçon 5 : nombres irrationnels et partie entière &middot; Leçon 6 : identités de degré 3 et triangle de Pascal</div>
+  </div>
+</header>
+
+<div class="bandeau bleu" style="margin-top:0">L'ESSENTIEL</div>
+<div class="cols">
+
+<!-- ================= LECON 1 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 1&nbsp;: Ordre et comparaison dans &#8477;</h2>
+<div class="form">
+  <span class="t">LES CINQ ENSEMBLES DE NOMBRES</span>
+  <div class="c m">&#8469;&#8239;&#8834;&#8239;&#8484;&#8239;&#8834;&#8239;&#120123;&#8239;&#8834;&#8239;&#8474;&#8239;&#8834;&#8239;&#8477;</div>
+</div></div>
+<p><b>&#8469;</b> entiers naturels &nbsp;&middot;&nbsp; <b>&#8484;</b> entiers relatifs &nbsp;&middot;&nbsp; <b>&#120123;</b> décimaux, de la forme <span class="f"><span><i>a</i></span><span>10<sup><i>n</i></sup></span></span> avec <i>a</i>&#8239;&#8712;&#8239;&#8484; et <i>n</i>&#8239;&#8712;&#8239;&#8469;, dont l'écriture décimale <b>s'arrête</b> &nbsp;&middot;&nbsp; <b>&#8474;</b> rationnels, de la forme <span class="f"><span><i>p</i></span><span><i>q</i></span></span> avec <i>p</i>&#8239;&#8712;&#8239;&#8484; et <i>q</i>&#8239;&#8712;&#8239;&#8469; non nul &nbsp;&middot;&nbsp; <b>&#8477;</b> réels, qui repèrent chacun un point de la droite graduée.</p>
+<p>Chaque ensemble contient tous les précédents. On <b>simplifie l'écriture avant de conclure</b> : &#8730;<span class="rad">9</span>&#8239;=&#8239;3&#8239;&#8712;&#8239;&#8469;.</p>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Comparer deux réels</h3>
+<div class="form">
+  <span class="t">ORDRE DANS &#8477;&nbsp;: DEFINITION ET OPERATIONS</span>
+  <div class="c m"><i>a</i>&#8239;&lt;&#8239;<i>b</i>&nbsp;<span class="ar">&#8660;</span>&nbsp;<i>b</i>&#8239;&#8722;&#8239;<i>a</i>&#8239;&gt;&#8239;0 &nbsp;&nbsp; <i>a</i>&#8239;=&#8239;<i>b</i>&nbsp;<span class="ar">&#8660;</span>&nbsp;<i>b</i>&#8239;&#8722;&#8239;<i>a</i>&#8239;=&#8239;0</div>
+  <div class="c m"><i>a</i>&#8239;&#8804;&#8239;<i>b</i> donne <i>a</i>&#8239;+&#8239;<i>c</i>&#8239;&#8804;&#8239;<i>b</i>&#8239;+&#8239;<i>c</i> <span style="font-size:7.2pt">(tout réel <i>c</i>)</span>, <i>ac</i>&#8239;&#8804;&#8239;<i>bc</i> si <i>c</i>&#8239;&gt;&#8239;0, <i>ac</i>&#8239;&#8805;&#8239;<i>bc</i> si <i>c</i>&#8239;&lt;&#8239;0</div>
+  <div class="c m">0&#8239;&#8804;&#8239;<i>a</i>&#8239;&#8804;&#8239;<i>b</i> donne <i>a</i><sup>2</sup>&#8239;&#8804;&#8239;<i>b</i><sup>2</sup> et &#8730;<span class="rad"><i>a</i></span>&#8239;&#8804;&#8239;&#8730;<span class="rad"><i>b</i></span> &nbsp;&nbsp; <i>a</i>&#8239;&#8804;&#8239;<i>b</i>&#8239;&#8804;&#8239;0 donne <i>a</i><sup>2</sup>&#8239;&#8805;&#8239;<i>b</i><sup>2</sup> &nbsp;&nbsp; 0&#8239;&lt;&#8239;<i>a</i>&#8239;&#8804;&#8239;<i>b</i> donne <span class="f"><span>1</span><span><i>a</i></span></span>&#8239;&#8805;&#8239;<span class="f"><span>1</span><span><i>b</i></span></span></div>
+</div>
+<p>Comparer, c'est étudier le <b>signe de la différence</b> <span class="pt"><i>a</i>&#8239;&#8722;&#8239;<i>b</i></span> ; <b>seulement pour deux nombres strictement positifs</b>, on peut comparer le quotient <span class="f"><span><i>a</i></span><span><i>b</i></span></span> à&nbsp;1. Ajouter conserve <b>toujours</b> le sens, multiplier par un <b>négatif l'inverse</b> ; sur les négatifs, le carré mesure l'<b>éloignement à zéro</b> et retourne l'ordre.</p>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Puissances et écriture scientifique</h3>
+<div class="form">
+  <span class="t">PUISSANCES&nbsp;: <i>a</i>&#8239;&#8800;&#8239;0, <i>b</i>&#8239;&#8800;&#8239;0, <i>m</i> et <i>n</i> dans &#8484;</span>
+  <div class="c m"><i>a</i><sup><i>m</i></sup>&#8239;&#215;&#8239;<i>a</i><sup><i>n</i></sup>&#8239;=&#8239;<i>a</i><sup><i>m</i>+<i>n</i></sup> &nbsp;&nbsp; <span class="f"><span><i>a</i><sup><i>m</i></sup></span><span><i>a</i><sup><i>n</i></sup></span></span>&#8239;=&#8239;<i>a</i><sup><i>m</i>&#8722;<i>n</i></sup> &nbsp;&nbsp; (<i>a</i><sup><i>m</i></sup>)<sup><i>n</i></sup>&#8239;=&#8239;<i>a</i><sup><i>mn</i></sup></div>
+  <div class="c m">(<i>ab</i>)<sup><i>n</i></sup>&#8239;=&#8239;<i>a</i><sup><i>n</i></sup><i>b</i><sup><i>n</i></sup> &nbsp;&nbsp; <span class="pt">&#40;<span class="f"><span><i>a</i></span><span><i>b</i></span></span>&#41;<sup><i>n</i></sup>&#8239;=&#8239;<span class="f"><span><i>a</i><sup><i>n</i></sup></span><span><i>b</i><sup><i>n</i></sup></span></span></span> &nbsp;&nbsp; <i>a</i><sup>0</sup>&#8239;=&#8239;1 &nbsp;&nbsp; <i>a</i><sup>&#8722;<i>n</i></sup>&#8239;=&#8239;<span class="f"><span>1</span><span><i>a</i><sup><i>n</i></sup></span></span></div>
+</div>
+<p><b>Ecriture scientifique</b> d'un nombre non nul : <span class="pt"><i>a</i>&#8239;&#215;&#8239;10<sup><i>n</i></sup></span> avec <i>n</i>&#8239;&#8712;&#8239;&#8484; et <span class="pt">1&#8239;&#8804;&#8239;|<i>a</i>|&#8239;&lt;&#8239;10</span> : un seul chiffre non nul avant la virgule.</p>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Racine carrée</h3>
+<div class="form">
+  <span class="t">RACINE CARREE&nbsp;: pour <i>a</i>&#8239;&#8805;&#8239;0 et <i>b</i>&#8239;&#8805;&#8239;0</span>
+  <div class="c m">&#8730;<span class="rad"><i>a</i></span> est l'unique nombre <b>positif</b> de carré <i>a</i> : (&#8730;<span class="rad"><i>a</i></span>)<sup>2</sup>&#8239;=&#8239;<i>a</i></div>
+  <div class="c m">&#8730;<span class="rad"><i>a</i>&#8239;&#215;&#8239;<i>b</i></span>&#8239;=&#8239;&#8730;<span class="rad"><i>a</i></span>&#8239;&#215;&#8239;&#8730;<span class="rad"><i>b</i></span> &nbsp;&nbsp; <span class="pt">&#8730;<span class="rad"><span class="f"><span><i>a</i></span><span><i>b</i></span></span></span>&#8239;=&#8239;<span class="f"><span>&#8730;<span class="rad"><i>a</i></span></span><span>&#8730;<span class="rad"><i>b</i></span></span></span></span> <span style="font-size:7.2pt">(<i>b</i>&#8239;&gt;&#8239;0)</span> &nbsp;&nbsp; &#8730;<span class="rad"><i>a</i><sup>2</sup></span>&#8239;=&#8239;|<i>a</i>|</div>
+  <div class="c m">quantité conjuguée : (<i>a</i>&#8239;+&#8239;&#8730;<span class="rad"><i>b</i></span>)(<i>a</i>&#8239;&#8722;&#8239;&#8730;<span class="rad"><i>b</i></span>)&#8239;=&#8239;<i>a</i><sup>2</sup>&#8239;&#8722;&#8239;<i>b</i></div>
+</div>
+<p><b>Aucune formule</b> ne donne &#8730;<span class="rad"><i>a</i>&#8239;+&#8239;<i>b</i></span>. <b>Equation <span class="pt"><i>x</i><sup>2</sup>&#8239;=&#8239;<i>a</i></span></b> : deux solutions &#8730;<span class="rad"><i>a</i></span> et &#8722;&#8730;<span class="rad"><i>a</i></span> si <i>a</i>&#8239;&gt;&#8239;0 ; une seule, 0, si <i>a</i>&#8239;=&#8239;0 ; aucune si <i>a</i>&#8239;&lt;&#8239;0.</p>
+<p><b>Simplifier</b> un radical, c'est en sortir le plus grand carré parfait : <span class="pt">&#8730;<span class="rad">75</span>&#8239;=&#8239;5&#8730;<span class="rad">3</span></span> ; deux radicaux ne s'additionnent que s'ils ont le <b>même radicande</b>. La conjuguée <b>rend rationnel</b> un dénominateur.</p>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Signe d'un produit ou d'un quotient</h3>
+<p>Un produit est <b>positif</b> si les deux facteurs sont de même signe, <b>négatif</b> s'ils sont de signes contraires, <b>nul</b> si un facteur est nul ; même règle pour un quotient, la valeur qui annule le dénominateur étant <b>interdite</b>. Un facteur <span class="pt"><i>ax</i>&#8239;+&#8239;<i>b</i></span> (<i>a</i>&#8239;&#8800;&#8239;0) s'annule en <i>x</i>&#8239;=&#8239;&#8722;<span class="f"><span><i>b</i></span><span><i>a</i></span></span> et prend le <b>signe de <i>a</i></b> après cette valeur.</p>
+<p><b>Tableau de signes</b> : factoriser, ranger les racines dans l'ordre croissant de &#8722;&#8734; à +&#8734;, une ligne par facteur puis une ligne pour l'expression, <b>double barre</b> sous la valeur interdite.</p>
+</div>
+
+<!-- ================= LECON 2 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 2&nbsp;: Intervalles, valeur absolue et distance</h2>
+<p>Un <b>intervalle</b> est un ensemble de réels sans trou. Pour <span class="pt"><i>a</i>&#8239;&#8804;&#8239;<i>b</i></span> : <span class="pt">[<i>a</i>&#8239;;&#8239;<i>b</i>]</span> <b>fermé</b> (<span class="pt"><i>a</i>&#8239;&#8804;&#8239;<i>x</i>&#8239;&#8804;&#8239;<i>b</i></span>, bornes incluses), <span class="pt">]<i>a</i>&#8239;;&#8239;<i>b</i>[</span> <b>ouvert</b> (<span class="pt"><i>a</i>&#8239;&lt;&#8239;<i>x</i>&#8239;&lt;&#8239;<i>b</i></span>, bornes exclues), <span class="pt">[<i>a</i>&#8239;;&#8239;<i>b</i>[</span> et <span class="pt">]<i>a</i>&#8239;;&#8239;<i>b</i>]</span> <b>semi-ouverts</b>. Non bornés : <span class="pt">[<i>a</i>&#8239;;&#8239;+&#8734;[</span>, <span class="pt">]<i>a</i>&#8239;;&#8239;+&#8734;[</span>, <span class="pt">]&#8722;&#8734;&#8239;;&#8239;<i>b</i>]</span>, <span class="pt">]&#8722;&#8734;&#8239;;&#8239;<i>b</i>[</span>.</p></div>
+<p><b>Règle du crochet</b> : vers l'intérieur, borne incluse (point plein) ; vers l'extérieur, borne exclue (point creux). +&#8734; et &#8722;&#8734; <b>ne sont pas des nombres</b> : le crochet est <b>toujours ouvert</b> de leur côté.</p>
+<div class="form">
+  <span class="t">CENTRE, RAYON, AMPLITUDE&nbsp;: bornes <i>a</i>&#8239;&#8804;&#8239;<i>b</i></span>
+  <div class="c m"><i>c</i>&#8239;=&#8239;<span class="f"><span><i>a</i>&#8239;+&#8239;<i>b</i></span><span>2</span></span> &nbsp;&nbsp; <i>r</i>&#8239;=&#8239;<span class="f"><span><i>b</i>&#8239;&#8722;&#8239;<i>a</i></span><span>2</span></span> &nbsp;&nbsp; amplitude&#8239;=&#8239;<i>b</i>&#8239;&#8722;&#8239;<i>a</i>&#8239;=&#8239;2<i>r</i></div>
+  <div class="c m"><i>a</i>&#8239;=&#8239;<i>c</i>&#8239;&#8722;&#8239;<i>r</i> &nbsp;&nbsp;et&nbsp;&nbsp; <i>b</i>&#8239;=&#8239;<i>c</i>&#8239;+&#8239;<i>r</i></div>
+</div>
+<p><span class="pt"><i>A</i>&#8239;&#8745;&#8239;<i>B</i></span> : les nombres qui sont <b>à la fois</b> dans <i>A</i> <b>et</b> dans <i>B</i>. <span class="pt"><i>A</i>&#8239;&#8746;&#8239;<i>B</i></span> : ceux qui sont dans <i>A</i> <b>ou</b> dans <i>B</i>, le « ou » étant <b>inclusif</b>. Sans nombre commun, l'intersection est l'<b>ensemble vide</b> &#8709;. Le <b>complémentaire</b> de <i>I</i> dans &#8477; est souvent une réunion de deux intervalles.</p>
+<div class="note">On dessine les deux intervalles l'un sous l'autre : l'intersection est couverte <b>deux fois</b>, la réunion <b>au moins une fois</b>.</div>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Valeur absolue</h3>
+<div class="form">
+  <span class="t">DEFINITION ET PROPRIETES&nbsp;: <i>a</i> et <i>b</i> réels</span>
+  <div class="c m">|<i>x</i>|&#8239;=&#8239;<i>x</i> si <i>x</i>&#8239;&#8805;&#8239;0 &nbsp;&nbsp;&nbsp; |<i>x</i>|&#8239;=&#8239;&#8722;<i>x</i> si <i>x</i>&#8239;&lt;&#8239;0</div>
+  <div class="c m">|&#8722;<i>a</i>|&#8239;=&#8239;|<i>a</i>| &nbsp;&nbsp; |<i>a</i>|<sup>2</sup>&#8239;=&#8239;<i>a</i><sup>2</sup> &nbsp;&nbsp; &#8730;<span class="rad"><i>a</i><sup>2</sup></span>&#8239;=&#8239;|<i>a</i>|</div>
+  <div class="c m">|<i>a</i>&#8239;&#215;&#8239;<i>b</i>|&#8239;=&#8239;|<i>a</i>|&#8239;&#215;&#8239;|<i>b</i>| &nbsp;&nbsp; <span class="pt">&#124;<span class="f"><span><i>a</i></span><span><i>b</i></span></span>&#124;&#8239;=&#8239;<span class="f"><span>|<i>a</i>|</span><span>|<i>b</i>|</span></span></span> <span style="font-size:7.2pt">(<i>b</i>&#8239;&#8800;&#8239;0)</span></div>
+</div>
+<p>Une valeur absolue est <b>toujours positive ou nulle</b> ; la ligne |<i>x</i>|&#8239;=&#8239;&#8722;<i>x</i> ne sert que si <i>x</i> est <b>déjà négatif</b>. Aucune formule ne donne |<i>a</i>&#8239;+&#8239;<i>b</i>| : seulement l'inégalité triangulaire (Leçon 4).</p>
+<p><b>Ecrire une expression sans les barres</b> : chercher les valeurs qui annulent chaque expression placée entre les barres, les ranger dans l'<b>ordre croissant</b>, puis, sur chaque zone ainsi découpée, remplacer chaque valeur absolue par l'expression elle-même si elle y est positive, par son <b>opposé</b> si elle y est négative.</p>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Distance et intervalle de centre <i>a</i></h3>
+<div class="form">
+  <span class="t">DISTANCE ET INTERVALLE DE CENTRE <i>a</i>, DE RAYON <i>r</i>&#8239;&gt;&#8239;0</span>
+  <div class="c m"><i>d</i>(<i>a</i>&#8239;;&#8239;<i>b</i>)&#8239;=&#8239;|<i>b</i>&#8239;&#8722;&#8239;<i>a</i>|&#8239;=&#8239;|<i>a</i>&#8239;&#8722;&#8239;<i>b</i>|</div>
+  <div class="c m">|<i>x</i>&#8239;&#8722;&#8239;<i>a</i>|&#8239;&#8804;&#8239;<i>r</i>&nbsp;<span class="ar">&#8660;</span>&nbsp;<i>x</i>&#8239;&#8712;&#8239;[<i>a</i>&#8239;&#8722;&#8239;<i>r</i>&#8239;;&#8239;<i>a</i>&#8239;+&#8239;<i>r</i>] <span style="font-size:7.2pt">(avec &lt; : intervalle ouvert)</span></div>
+  <div class="c m">|<i>x</i>&#8239;&#8722;&#8239;<i>a</i>|&#8239;=&#8239;<i>r</i>&nbsp;<span class="ar">&#8660;</span>&nbsp;<i>x</i>&#8239;=&#8239;<i>a</i>&#8239;&#8722;&#8239;<i>r</i> ou <i>x</i>&#8239;=&#8239;<i>a</i>&#8239;+&#8239;<i>r</i></div>
+  <div class="c m">|<i>x</i>&#8239;&#8722;&#8239;<i>a</i>|&#8239;&gt;&#8239;<i>r</i>&nbsp;<span class="ar">&#8660;</span>&nbsp;<i>x</i>&#8239;&#8712;&#8239;]&#8722;&#8734;&#8239;;&#8239;<i>a</i>&#8239;&#8722;&#8239;<i>r</i>[&#8239;&#8746;&#8239;]<i>a</i>&#8239;+&#8239;<i>r</i>&#8239;;&#8239;+&#8734;[</div>
+</div>
+<p>|<i>x</i>| est la distance de <i>x</i> à 0. Une écriture |<i>x</i>&#8239;+&#8239;3| se lit |<i>x</i>&#8239;&#8722;&#8239;(&#8722;3)| : le centre est &#8722;3. Pour résoudre, on <b>isole</b> la valeur absolue ; si le second membre est <b>négatif</b>, on conclut sans calculer : |<i>A</i>|&#8239;=&#8239;&#8722;2 n'a aucune solution, |<i>A</i>|&#8239;&#8805;&#8239;&#8722;2 est vraie pour tout réel.</p>
+</div>
+
+<!-- ================= LECON 3 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 3&nbsp;: Majorant, minorant, maximum et minimum</h2>
+<div class="form">
+  <span class="t">MAJORANT ET MINORANT&nbsp;: <i>A</i> partie de &#8477;</span>
+  <div class="c m">pour tout <i>x</i>&#8239;&#8712;&#8239;<i>A</i> :&nbsp; <i>x</i>&#8239;&#8804;&#8239;<i>M</i> (<i>M</i> majore <i>A</i>) &nbsp;&nbsp;&middot;&nbsp;&nbsp; <i>x</i>&#8239;&#8805;&#8239;<i>m</i> (<i>m</i> minore <i>A</i>)</div>
+</div></div>
+<ul>
+<li>Une partie à la fois majorée et minorée est <b>bornée</b>. Une partie majorée a une <b>infinité</b> de majorants : si <i>M</i> convient, tout nombre plus grand convient aussi.</li>
+<li><b>Maximum</b> de <i>A</i> : un majorant qui <b>appartient à <i>A</i></b>, noté max&#8239;<i>A</i>. <b>Minimum</b> : un minorant qui appartient à <i>A</i>, noté min&#8239;<i>A</i>.</li>
+<li>Un maximum est <b>unique</b> quand il existe, mais il <b>peut ne pas exister</b>. Tout ensemble fini non vide a un maximum et un minimum.</li>
+<li>Pour un maximum, <b>deux vérifications</b> : c'est un majorant, <b>et</b> il appartient à <i>A</i>.</li>
+</ul>
+</div>
+
+<!-- ================= LECON 4 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 4&nbsp;: Encadrement et calcul approché</h2>
+<p><b>Encadrer</b> un réel <i>x</i>, c'est trouver deux réels tels que <span class="pt"><i>a</i>&#8239;&#8804;&#8239;<i>x</i>&#8239;&#8804;&#8239;<i>b</i></span> : <i>a</i> est un minorant, <i>b</i> un majorant. L'<b>amplitude</b> est <span class="pt"><i>b</i>&#8239;&#8722;&#8239;<i>a</i></span> ; plus elle est petite, plus l'encadrement est <b>précis</b>. Une amplitude de 10<sup>&#8722;<i>n</i></sup> donne un encadrement « à 10<sup>&#8722;<i>n</i></sup> près ». Une mesure donnée <b>à <i>p</i> près</b> se traduit par <span class="pt"><i>m</i>&#8239;&#8722;&#8239;<i>p</i>&#8239;&#8804;&#8239;<i>x</i>&#8239;&#8804;&#8239;<i>m</i>&#8239;+&#8239;<i>p</i></span> : l'amplitude vaut 2<i>p</i>, le <b>double</b> de la précision annoncée.</p></div>
+<div class="form">
+  <span class="t">ENCADRER&nbsp;: <i>a</i>&#8239;&#8804;&#8239;<i>x</i>&#8239;&#8804;&#8239;<i>b</i> et <i>c</i>&#8239;&#8804;&#8239;<i>y</i>&#8239;&#8804;&#8239;<i>d</i></span>
+  <div class="c m"><i>a</i>&#8239;+&#8239;<i>c</i>&#8239;&#8804;&#8239;<i>x</i>&#8239;+&#8239;<i>y</i>&#8239;&#8804;&#8239;<i>b</i>&#8239;+&#8239;<i>d</i> &nbsp;&nbsp; <i>a</i>&#8239;&#8722;&#8239;<i>d</i>&#8239;&#8804;&#8239;<i>x</i>&#8239;&#8722;&#8239;<i>y</i>&#8239;&#8804;&#8239;<i>b</i>&#8239;&#8722;&#8239;<i>c</i> <span style="font-size:7.2pt">(tous réels ; bornes croisées)</span></div>
+  <div class="c m"><i>ac</i>&#8239;&#8804;&#8239;<i>xy</i>&#8239;&#8804;&#8239;<i>bd</i> &nbsp;&nbsp; <span class="pt"><span class="f"><span><i>a</i></span><span><i>d</i></span></span>&#8239;&#8804;&#8239;<span class="f"><span><i>x</i></span><span><i>y</i></span></span>&#8239;&#8804;&#8239;<span class="f"><span><i>b</i></span><span><i>c</i></span></span></span> <span style="font-size:7.2pt">(si <i>a</i>&#8239;&gt;&#8239;0 et <i>c</i>&#8239;&gt;&#8239;0)</span></div>
+  <div class="c m">inégalité triangulaire : |<i>a</i>&#8239;+&#8239;<i>b</i>|&#8239;&#8804;&#8239;|<i>a</i>|&#8239;+&#8239;|<i>b</i>|</div>
+</div>
+<p>Si un facteur est négatif, on passe d'abord à son <b>opposé</b>, ce qui retourne son encadrement, on multiplie, puis on repasse à l'opposé. Dans l'<b>inégalité triangulaire</b>, l'égalité a lieu exactement lorsque <i>a</i> et <i>b</i> sont de <b>même signe</b> (ou lorsque l'un des deux est nul) ; cette inégalité permet de <b>majorer sans calculer</b>.</p>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Valeur approchée, arrondi, troncature</h3>
+<ul>
+<li>Un décimal <i>v</i> est une <b>valeur approchée</b> de <i>x</i> à 10<sup>&#8722;<i>n</i></sup> près lorsque <span class="pt">|<i>x</i>&#8239;&#8722;&#8239;<i>v</i>|&#8239;&#8804;&#8239;10<sup>&#8722;<i>n</i></sup></span>.</li>
+<li><b>Troncature</b> d'ordre <i>n</i> : on coupe l'écriture décimale après la <i>n</i>-ième décimale. <b>Arrondi</b> d'ordre <i>n</i> : le décimal d'ordre <i>n</i> le plus proche, le dernier chiffre conservé étant augmenté d'une unité si la décimale suivante est <b>&#8805;&#8239;5</b>. Pour 3,148 : troncature 3,14 au centième, arrondi 3,15.</li>
+<li><b>Ordre de grandeur</b> : valeur approchée volontairement grossière, en puissances de 10 ; elle sert à <b>contrôler</b> un résultat, non à le donner.</li>
+<li><b>Réponse fiable</b> : ne garder que les décimales <b>communes aux deux bornes</b>, arrondir <b>seulement à la fin</b>, et toujours préciser la nature du résultat : valeur exacte, arrondi, troncature ou encadrement.</li>
+</ul>
+</div>
+
+<!-- ================= LECON 5 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 5&nbsp;: Nombres irrationnels et partie entière</h2>
+<p>Un <b>rationnel</b> s'écrit <span class="f"><span><i>p</i></span><span><i>q</i></span></span> avec <i>p</i>&#8239;&#8712;&#8239;&#8484; et <i>q</i>&#8239;&#8712;&#8239;&#8469; non nul ; un réel qui n'est pas rationnel est <b>irrationnel</b> : &#8730;<span class="rad">2</span>, &#8730;<span class="rad">3</span>, &#960;. Un nombre est rationnel <b>si et seulement si</b> son écriture décimale s'arrête ou devient périodique.</p></div>
+<p><b>&#8730;<span class="rad">2</span> est irrationnel</b> : aucune fraction n'a pour carré 2 (démonstration <b>par l'absurde</b>). A chaque point de la droite graduée correspond <b>un réel et un seul</b> : les irrationnels comblent les trous laissés par les rationnels.</p>
+<div class="form">
+  <span class="t">PARTIE ENTIERE</span>
+  <div class="c m"><i>E</i>(<i>x</i>) est le <b>plus grand entier</b> inférieur ou égal à <i>x</i></div>
+  <div class="c m"><i>E</i>(<i>x</i>)&#8239;&#8804;&#8239;<i>x</i>&#8239;&lt;&#8239;<i>E</i>(<i>x</i>)&#8239;+&#8239;1 &nbsp;&nbsp;donc&nbsp;&nbsp; 0&#8239;&#8804;&#8239;<i>x</i>&#8239;&#8722;&#8239;<i>E</i>(<i>x</i>)&#8239;&lt;&#8239;1</div>
+</div>
+<p><span class="pt"><i>x</i>&#8239;&#8722;&#8239;<i>E</i>(<i>x</i>)</span> est la <b>partie décimale</b>. Sur la droite graduée, <i>E</i>(<i>x</i>) est la graduation entière <b>immédiatement à gauche</b> de <i>x</i> : <i>E</i>(3,7)&#8239;=&#8239;3 et <i>E</i>(&#8722;3,2)&#8239;=&#8239;&#8722;4. Avec un radical, on encadre entre deux carrés parfaits : <span class="pt">4&#8239;&lt;&#8239;7&#8239;&lt;&#8239;9</span> donne <span class="pt">2&#8239;&lt;&#8239;&#8730;<span class="rad">7</span>&#8239;&lt;&#8239;3</span>, donc <i>E</i>(&#8730;<span class="rad">7</span>)&#8239;=&#8239;2.</p>
+</div>
+
+<!-- ================= LECON 6 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 6&nbsp;: Identités de degré 3 et triangle de Pascal</h2>
+<div class="form">
+  <span class="t">IDENTITES REMARQUABLES DE DEGRE 3&nbsp;: <i>a</i> et <i>b</i> réels</span>
+  <div class="c m">(<i>a</i>&#8239;+&#8239;<i>b</i>)<sup>3</sup>&#8239;=&#8239;<i>a</i><sup>3</sup>&#8239;+&#8239;3<i>a</i><sup>2</sup><i>b</i>&#8239;+&#8239;3<i>ab</i><sup>2</sup>&#8239;+&#8239;<i>b</i><sup>3</sup></div>
+  <div class="c m">(<i>a</i>&#8239;&#8722;&#8239;<i>b</i>)<sup>3</sup>&#8239;=&#8239;<i>a</i><sup>3</sup>&#8239;&#8722;&#8239;3<i>a</i><sup>2</sup><i>b</i>&#8239;+&#8239;3<i>ab</i><sup>2</sup>&#8239;&#8722;&#8239;<i>b</i><sup>3</sup></div>
+  <div class="c m"><i>a</i><sup>3</sup>&#8239;&#8722;&#8239;<i>b</i><sup>3</sup>&#8239;=&#8239;(<i>a</i>&#8239;&#8722;&#8239;<i>b</i>)(<i>a</i><sup>2</sup>&#8239;+&#8239;<i>ab</i>&#8239;+&#8239;<i>b</i><sup>2</sup>)</div>
+  <div class="c m"><i>a</i><sup>3</sup>&#8239;+&#8239;<i>b</i><sup>3</sup>&#8239;=&#8239;(<i>a</i>&#8239;+&#8239;<i>b</i>)(<i>a</i><sup>2</sup>&#8239;&#8722;&#8239;<i>ab</i>&#8239;+&#8239;<i>b</i><sup>2</sup>)</div>
+</div></div>
+<p>Les puissances de <i>a</i> <b>décroissent</b> de 3 à 0 pendant que celles de <i>b</i> <b>croissent</b> de 0 à 3 ; pour (<i>a</i>&#8239;&#8722;&#8239;<i>b</i>)<sup>3</sup>, mêmes coefficients avec les <b>signes alternés</b>. Dans les deux factorisations, le produit central porte le <b>signe contraire</b> à celui du premier facteur.</p>
+<div class="form">
+  <span class="t">TRIANGLE DE PASCAL&nbsp;: CHAQUE NOMBRE EST LA SOMME DES DEUX AU-DESSUS</span>
+  <div class="c m">ligne 2 : 1 &nbsp;2 &nbsp;1 &nbsp;&nbsp;&middot;&nbsp;&nbsp; ligne 3 : 1 &nbsp;3 &nbsp;3 &nbsp;1 &nbsp;&nbsp;&middot;&nbsp;&nbsp; ligne 4 : 1 &nbsp;4 &nbsp;6 &nbsp;4 &nbsp;1</div>
+</div>
+<p>La ligne <i>n</i> donne les coefficients de (<i>a</i>&#8239;+&#8239;<i>b</i>)<sup><i>n</i></sup> (signes alternés pour (<i>a</i>&#8239;&#8722;&#8239;<i>b</i>)<sup><i>n</i></sup>), d'où <span class="pt">(<i>a</i>&#8239;+&#8239;<i>b</i>)<sup>4</sup>&#8239;=&#8239;<i>a</i><sup>4</sup>&#8239;+&#8239;4<i>a</i><sup>3</sup><i>b</i>&#8239;+&#8239;6<i>a</i><sup>2</sup><i>b</i><sup>2</sup>&#8239;+&#8239;4<i>ab</i><sup>3</sup>&#8239;+&#8239;<i>b</i><sup>4</sup></span>. Attention aux termes composés : dans (2<i>x</i>&#8239;&#8722;&#8239;1)<sup>3</sup>, <i>a</i> vaut 2<i>x</i>, donc <i>a</i><sup>3</sup>&#8239;=&#8239;8<i>x</i><sup>3</sup>.</p>
+</div>
+
+</div>
+
+<div class="bandeau vert">PIEGES ET ERREURS FREQUENTES</div>
+<div class="cols">
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> &#8722;5&#8239;&lt;&#8239;2 donc (&#8722;5)<sup>2</sup>&#8239;&lt;&#8239;2<sup>2</sup></div><div class="cor"><span class="v">&#10003;</span> Le passage au carré ne conserve l'ordre que pour des nombres <b>positifs</b> : ici 25&#8239;&gt;&#8239;4. Sur les négatifs il l'<b>inverse</b> : si <span class="pt"><i>a</i>&#8239;&#8804;&#8239;<i>b</i>&#8239;&#8804;&#8239;0</span>, alors <i>a</i><sup>2</sup>&#8239;&#8805;&#8239;<i>b</i><sup>2</sup>.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> De <i>a</i>&#8239;&lt;&#8239;<i>b</i> on déduit <i>ax</i>&#8239;&lt;&#8239;<i>bx</i></div><div class="cor"><span class="v">&#10003;</span> Vrai si <i>x</i>&#8239;&gt;&#8239;0, <b>faux</b> si <i>x</i>&#8239;&lt;&#8239;0, égalité si <i>x</i>&#8239;=&#8239;0. Tant que le signe de <i>x</i> est inconnu, on <b>discute les cas</b> : c'est pourquoi on ne « multiplie pas en croix » une inéquation à dénominateurs.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> |<i>x</i>|&#8239;=&#8239;5 donc <i>x</i>&#8239;=&#8239;5 &nbsp;&middot;&nbsp; |<i>x</i>|&#8239;&#8804;&#8239;3 donc <i>x</i>&#8239;&#8804;&#8239;3 &nbsp;&middot;&nbsp; |<i>x</i>&#8239;&#8722;&#8239;1|&#8239;=&#8239;&#8722;4 donc <i>x</i>&#8239;&#8722;&#8239;1&#8239;=&#8239;&#8722;4</div><div class="cor"><span class="v">&#10003;</span> Une valeur absolue encadre des <b>deux côtés</b> de 0 : |<i>x</i>|&#8239;=&#8239;5&#8239;<span class="ar">&#8660;</span>&#8239;<i>x</i>&#8239;=&#8239;5 <b>ou</b> <i>x</i>&#8239;=&#8239;&#8722;5, et |<i>x</i>|&#8239;&#8804;&#8239;3&#8239;<span class="ar">&#8660;</span>&#8239;&#8722;3&#8239;&#8804;&#8239;<i>x</i>&#8239;&#8804;&#8239;3 : toujours <b>deux</b> conditions. N'étant jamais négative, elle ne peut valoir &#8722;4 : aucune solution.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> &#8730;<span class="rad"><i>a</i><sup>2</sup></span>&#8239;=&#8239;<i>a</i> &nbsp;&middot;&nbsp; &#8730;<span class="rad"><i>a</i>&#8239;+&#8239;<i>b</i></span>&#8239;=&#8239;&#8730;<span class="rad"><i>a</i></span>&#8239;+&#8239;&#8730;<span class="rad"><i>b</i></span></div><div class="cor"><span class="v">&#10003;</span> Une racine carrée est <b>positive</b> : &#8730;<span class="rad"><i>a</i><sup>2</sup></span>&#8239;=&#8239;|<i>a</i>|, donc <span class="pt">&#8730;<span class="rad">(1&#8239;&#8722;&#8239;&#8730;<span class="rad">2</span>)<sup>2</sup></span>&#8239;=&#8239;&#8730;<span class="rad">2</span>&#8239;&#8722;&#8239;1</span>. Et elle ne se distribue <b>pas</b> sur une somme : <span class="pt">&#8730;<span class="rad">9&#8239;+&#8239;16</span>&#8239;=&#8239;5</span>, alors que <span class="pt">&#8730;<span class="rad">9</span>&#8239;+&#8239;&#8730;<span class="rad">16</span>&#8239;=&#8239;7</span>.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> 100 est le maximum de [0&#8239;;&#8239;100[</div><div class="cor"><span class="v">&#10003;</span> Le crochet est <b>ouvert</b> : 100 n'appartient pas à l'intervalle, qui n'a donc <b>pas de maximum</b>. 100 en est seulement un <b>majorant</b> ; un maximum doit appartenir à l'ensemble.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> &#8722;2&#8239;&lt;&#8239;<i>x</i>&#8239;&lt;&#8239;3 donc 4&#8239;&lt;&#8239;<i>x</i><sup>2</sup>&#8239;&lt;&#8239;9 &nbsp;&middot;&nbsp; &#8722;3&#8239;&lt;&#8239;<i>x</i>&#8239;&lt;&#8239;&#8722;1 et 2&#8239;&lt;&#8239;<i>y</i>&#8239;&lt;&#8239;4 donc &#8722;6&#8239;&lt;&#8239;<i>xy</i>&#8239;&lt;&#8239;&#8722;4</div><div class="cor"><span class="v">&#10003;</span> <i>x</i> <b>change de signe</b> : le carré vaut au minimum 0, donc <span class="pt">0&#8239;&#8804;&#8239;<i>x</i><sup>2</sup>&#8239;&lt;&#8239;9</span>. Et le produit d'encadrements exige des réels <b>strictement positifs</b> : de <span class="pt">1&#8239;&lt;&#8239;&#8722;<i>x</i>&#8239;&lt;&#8239;3</span> on tire <span class="pt">2&#8239;&lt;&#8239;&#8722;<i>xy</i>&#8239;&lt;&#8239;12</span>, donc <span class="pt">&#8722;12&#8239;&lt;&#8239;<i>xy</i>&#8239;&lt;&#8239;&#8722;2</span>.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> (<i>x</i>&#8239;+&#8239;2)<sup>3</sup>&#8239;=&#8239;<i>x</i><sup>3</sup>&#8239;+&#8239;8 &nbsp;&middot;&nbsp; (2<i>x</i>)<sup>3</sup>&#8239;=&#8239;2<i>x</i><sup>3</sup></div><div class="cor"><span class="v">&#10003;</span> Les deux termes du milieu ne s'oublient pas : <span class="pt">(<i>x</i>&#8239;+&#8239;2)<sup>3</sup>&#8239;=&#8239;<i>x</i><sup>3</sup>&#8239;+&#8239;6<i>x</i><sup>2</sup>&#8239;+&#8239;12<i>x</i>&#8239;+&#8239;8</span> (pour <i>x</i>&#8239;=&#8239;1 : 27, et non 9). L'exposant porte sur <b>tout</b> le facteur : (2<i>x</i>)<sup>3</sup>&#8239;=&#8239;8<i>x</i><sup>3</sup>.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> <i>E</i>(&#8722;3,2)&#8239;=&#8239;&#8722;3 &nbsp;&middot;&nbsp; 0,25 est irrationnel car il a une virgule</div><div class="cor"><span class="v">&#10003;</span> <i>E</i>(<i>x</i>) est le plus grand entier <b>inférieur ou égal</b> à <i>x</i>, donc l'entier <b>de gauche</b> : <i>E</i>(&#8722;3,2)&#8239;=&#8239;&#8722;4. Et 0,25&#8239;=&#8239;<span class="f"><span>1</span><span>4</span></span> est <b>rationnel</b> : ce qui décide, c'est de pouvoir écrire le nombre en fraction, non son apparence.</div></div>
+
+</div>
+
+<div class="bandeau bleu">A SAVOIR PAR COEUR AVANT LE DEVOIR</div>
+<div class="cols">
+
+<ol class="recap">
+<li><span class="pt">&#8469;&#8239;&#8834;&#8239;&#8484;&#8239;&#8834;&#8239;&#120123;&#8239;&#8834;&#8239;&#8474;&#8239;&#8834;&#8239;&#8477;</span> ; on simplifie l'écriture avant de conclure. Comparer, c'est étudier le <b>signe de <span class="pt"><i>a</i>&#8239;&#8722;&#8239;<i>b</i></span></b>.</li>
+<li>Ajouter conserve le sens ; multiplier par un <b>négatif l'inverse</b> ; le carré ne conserve l'ordre que sur les positifs ; le passage à l'inverse le <b>retourne</b>, mais seulement pour deux réels <b>strictement positifs</b>.</li>
+<li>&#8730;<span class="rad"><i>a</i></span>&#8239;&#8805;&#8239;0, (&#8730;<span class="rad"><i>a</i></span>)<sup>2</sup>&#8239;=&#8239;<i>a</i>, &#8730;<span class="rad"><i>ab</i></span>&#8239;=&#8239;&#8730;<span class="rad"><i>a</i></span>&#8730;<span class="rad"><i>b</i></span>, &#8730;<span class="rad"><i>a</i><sup>2</sup></span>&#8239;=&#8239;|<i>a</i>|, <b>rien</b> pour &#8730;<span class="rad"><i>a</i>&#8239;+&#8239;<i>b</i></span> ; conjuguée (<i>a</i>&#8239;+&#8239;&#8730;<span class="rad"><i>b</i></span>)(<i>a</i>&#8239;&#8722;&#8239;&#8730;<span class="rad"><i>b</i></span>)&#8239;=&#8239;<i>a</i><sup>2</sup>&#8239;&#8722;&#8239;<i>b</i>.</li>
+<li>|<i>x</i>|&#8239;=&#8239;<i>x</i> si <i>x</i>&#8239;&#8805;&#8239;0, &#8722;<i>x</i> sinon ; |<i>ab</i>|&#8239;=&#8239;|<i>a</i>||<i>b</i>| ; |<i>a</i>&#8239;+&#8239;<i>b</i>|&#8239;&#8804;&#8239;|<i>a</i>|&#8239;+&#8239;|<i>b</i>|.</li>
+<li><i>d</i>(<i>a</i>&#8239;;&#8239;<i>b</i>)&#8239;=&#8239;|<i>b</i>&#8239;&#8722;&#8239;<i>a</i>| ; |<i>x</i>&#8239;&#8722;&#8239;<i>a</i>|&#8239;&#8804;&#8239;<i>r</i>&#8239;<span class="ar">&#8660;</span>&#8239;<i>x</i>&#8239;&#8712;&#8239;[<i>a</i>&#8239;&#8722;&#8239;<i>r</i>&#8239;;&#8239;<i>a</i>&#8239;+&#8239;<i>r</i>] ; |<i>x</i>&#8239;&#8722;&#8239;<i>a</i>|&#8239;&gt;&#8239;<i>r</i> donne une <b>réunion</b>. Crochet <b>ouvert</b> du côté de l'infini ; centre <span class="pt">(<i>a</i>&#8239;+&#8239;<i>b</i>)&#8239;&#247;&#8239;2</span>, rayon <span class="pt">(<i>b</i>&#8239;&#8722;&#8239;<i>a</i>)&#8239;&#247;&#8239;2</span>, amplitude <i>b</i>&#8239;&#8722;&#8239;<i>a</i>.</li>
+<li>Un <b>majorant</b> n'appartient pas forcément à l'ensemble, un <b>maximum</b> si. Encadrer : somme et différence pour tous les réels, produit et quotient pour les <b>positifs stricts</b>. <i>E</i>(<i>x</i>) est le plus grand entier <span class="pt">&#8804;&#8239;<i>x</i></span> ; (<i>a</i>&#8239;+&#8239;<i>b</i>)<sup>3</sup>&#8239;=&#8239;<i>a</i><sup>3</sup>&#8239;+&#8239;3<i>a</i><sup>2</sup><i>b</i>&#8239;+&#8239;3<i>ab</i><sup>2</sup>&#8239;+&#8239;<i>b</i><sup>3</sup>.</li>
+</ol>
+</div>
+
+</body>
+</html>

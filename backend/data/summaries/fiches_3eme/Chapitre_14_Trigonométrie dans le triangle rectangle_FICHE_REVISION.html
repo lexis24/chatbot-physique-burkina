@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Fiche de revision - 3eme - Chapitre 14 : Trigonometrie dans le triangle rectangle</title>
+<style>
+/* ===================================================================
+   FICHE DE REVISION, Collection Hakili Lab, Edition 2026
+   Feuille de style autonome, format A4 pret a imprimer.
+   Bleu #005CB9 · Vert #49A145
+   =================================================================== */
+:root{
+  --bleu:#005CB9; --bleu-fonce:#00429A; --bleu-pale:#E8F1FB; --bleu-bord:#B7D2EE;
+  --vert:#49A145; --vert-fonce:#2F7A2C; --vert-pale:#EDF7EC; --vert-bord:#BCE0B9;
+  --gris:#4A4A4A; --gris-clair:#E4E4E4; --rouge:#B3261E;
+}
+@page{
+  size:A4; margin:15mm;
+  @bottom-center{
+    content:"Collection Hakili Lab, Edition 2026  ·  Fiche de revision  ·  " counter(page) "/" counter(pages);
+    font-family:"Segoe UI",Calibri,Arial,sans-serif; font-size:6.6pt; color:#8A8A8A;
+  }
+}
+*{box-sizing:border-box;}
+body{
+  margin:0; font-family:"Segoe UI",Calibri,Arial,sans-serif;
+  font-size:8.4pt; line-height:1.26; color:#1B1B1B;
+}
+p{margin:0 0 3pt;}
+ul{margin:0 0 3pt; padding-left:11pt;}
+li{margin:0 0 1.2pt;}
+b,strong{color:var(--bleu-fonce);}
+
+/* ------------------------------ ENTETE ---------------------------- */
+.entete{
+  display:flex; align-items:stretch; border:1.6pt solid var(--bleu);
+  border-radius:2.5pt; overflow:hidden; margin-bottom:6pt;
+}
+.entete .num{
+  background:var(--bleu); color:#fff; font-size:20pt; font-weight:700;
+  padding:0 8pt; display:flex; align-items:center; justify-content:center; min-width:34pt;
+}
+.entete .txt{padding:3.5pt 8pt; flex:1;}
+.entete .niveau{
+  font-size:7pt; font-weight:700; letter-spacing:.9pt; color:var(--vert-fonce);
+}
+.entete h1{margin:0; font-size:13.5pt; line-height:1.12; color:var(--bleu-fonce); font-weight:700;}
+.entete .sous{font-size:7pt; color:var(--gris); margin-top:1pt;}
+
+/* --------------------------- BANDEAUX ----------------------------- */
+.bandeau{
+  color:#fff; font-weight:700; font-size:9pt; letter-spacing:1pt;
+  padding:2.4pt 7pt; border-radius:2pt; margin:3pt 0 4pt; break-after:avoid; page-break-after:avoid;
+}
+.bandeau.bleu{background:var(--bleu);}
+.bandeau.vert{background:var(--vert);}
+
+/* --------------------------- COLONNES ----------------------------- */
+.cols{column-count:2; column-gap:7mm; column-fill:balance;}
+
+.cols.bal{column-fill:balance;}
+.bloc{margin-bottom:5pt;}
+.keep{break-inside:avoid; page-break-inside:avoid;}
+
+/* --------------------------- LECONS ------------------------------- */
+h2.lecon{
+  margin:0 0 3pt; font-size:8.6pt; font-weight:700; color:#fff; background:var(--bleu-fonce);
+  padding:1.8pt 5pt; border-radius:1.5pt; break-after:avoid; page-break-after:avoid;
+}
+h3.rub{
+  margin:3.5pt 0 1.5pt; font-size:8.2pt; font-weight:700; color:var(--vert-fonce);
+  border-bottom:.7pt solid var(--vert-bord); padding-bottom:.8pt;
+  break-after:avoid; page-break-after:avoid;
+}
+
+/* --------------------------- ENCADRES ----------------------------- */
+.form{
+  background:var(--bleu-pale); border:.8pt solid var(--bleu-bord); border-left:2.6pt solid var(--bleu);
+  border-radius:2pt; padding:2.4pt 5pt; margin:2.2pt 0 3.4pt;
+  break-inside:avoid; page-break-inside:avoid;
+}
+.form .t{
+  display:block; font-size:6.8pt; font-weight:700; letter-spacing:.6pt;
+  color:var(--bleu); margin-bottom:1.5pt;
+}
+.form .c{text-align:center; font-size:9.1pt; margin:1.6pt 0;}
+.note{background:var(--vert-pale); border-left:2.4pt solid var(--vert); padding:2.4pt 5pt; border-radius:1.5pt; margin:2.5pt 0 4pt; break-inside:avoid;}
+
+/* --------------------------- TABLEAUX ----------------------------- */
+table{width:100%; border-collapse:collapse; font-size:7.6pt; margin:2pt 0 4pt; break-inside:avoid;}
+th{background:var(--bleu); color:#fff; font-weight:700; text-align:left; padding:1.8pt 4pt; font-size:7.2pt;}
+td{border:.6pt solid var(--gris-clair); padding:1.8pt 4pt; vertical-align:top;}
+tr{break-inside:avoid;}
+table.var td{text-align:center; font-size:8pt;}
+table.var td.lab{text-align:left; font-weight:700; color:var(--bleu-fonce); background:var(--bleu-pale);}
+
+/* ----------------------------- PIEGES ----------------------------- */
+table.pieges th:first-child{width:44%;}
+table.pieges td:first-child{color:var(--rouge); background:#FDF1F0;}
+.x{font-weight:700;}
+.v{color:var(--vert-fonce); font-weight:700;}
+
+/* ---------------------------- RECAP ------------------------------- */
+ol.recap{margin:0; padding-left:0; list-style:none; counter-reset:r;}
+ol.recap li{
+  counter-increment:r; position:relative; padding-left:13pt; margin-bottom:1.8pt;
+  break-inside:avoid;
+}
+ol.recap li::before{
+  content:counter(r); position:absolute; left:0; top:.3pt;
+  width:10pt; height:10pt; border-radius:50%; background:var(--vert); color:#fff;
+  font-size:6.6pt; font-weight:700; text-align:center; line-height:10pt;
+}
+
+/* --------------------------- MATHS -------------------------------- */
+.m{font-family:Cambria,Georgia,"Times New Roman",serif;}
+i,var{font-family:Cambria,Georgia,"Times New Roman",serif; font-style:italic;}
+.op{font-family:Cambria,Georgia,"Times New Roman",serif; font-style:normal;}
+.f{display:inline-block; vertical-align:middle; text-align:center;
+   margin:0 .12em; line-height:1.06; font-family:Cambria,Georgia,"Times New Roman",serif;}
+.f>span{display:block; padding:0 .2em;}
+.f>span:first-child{border-bottom:.6pt solid currentColor; padding-bottom:.08em;}
+.f>span:last-child{padding-top:.04em;}
+.rad{border-top:.6pt solid currentColor; padding-top:.12em;}
+/* line-height:0 evite que l'exposant n'ecarte les lignes ; position:relative le
+   repositionne sans qu'il heurte la barre de fraction ni le trait du radical. */
+sup,sub{font-size:.68em; line-height:0; position:relative; vertical-align:baseline;}
+sup{top:-.42em;}
+sub{bottom:-.22em;}
+.pt{white-space:nowrap;}
+/* Les fleches n'ont qu'un glyphe atrophie dans la fonte serif : on les force
+   en sans-serif, ou elles sont franches meme a 8 pt. */
+.ar{font-family:"Segoe UI",Calibri,Arial,"DejaVu Sans",sans-serif; font-style:normal;}
+
+/* ------------------- PIEGES : blocs erreur / correction ------------- */
+.pg{font-size:8.1pt; border-left:2.4pt solid var(--rouge); background:#FDF1F0; border-radius:1.5pt;
+    padding:2pt 5pt; margin:0 0 2.8pt; break-inside:avoid; page-break-inside:avoid;}
+.pg .err{color:var(--rouge); font-weight:600;}
+.pg .cor{color:#1B1B1B; margin-top:.8pt;}
+.pg .cor b{color:var(--bleu-fonce);}
+.v{color:var(--vert-fonce); font-weight:700;}
+
+</style>
+</head>
+<body>
+<header class="entete">
+  <div class="num">14</div>
+  <div class="txt">
+    <div class="niveau">3EME &middot; MATHEMATIQUES</div>
+    <h1>Trigonométrie dans le triangle rectangle</h1>
+    <div class="sous">Leçon 1 : cosinus et sinus d'un angle aigu &middot; Leçon 2 : tangente et formule cos<sup>2</sup>&#8239;+&#8239;sin<sup>2</sup>&#8239;=&#8239;1 &middot; Leçon 3 : la table trigonométrique &middot; Leçon 4 : applications dans des problèmes</div>
+  </div>
+</header>
+
+<div class="bandeau bleu" style="margin-top:0">L'ESSENTIEL</div>
+<div class="cols">
+
+<!-- ================= LECON 1 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 1&nbsp;: Cosinus et sinus d'un angle aigu</h2>
+<p>Dans un triangle rectangle, on nomme les côtés <b>par rapport à un angle aigu choisi</b> :</p></div>
+<ul>
+<li>l'<b>hypoténuse</b> est le côté opposé à l'<b>angle droit</b> ; c'est toujours le <b>plus grand côté</b> ;</li>
+<li>le côté <b>adjacent</b> touche l'angle sans être l'hypoténuse ;</li>
+<li>le côté <b>opposé</b> lui fait face, il ne touche pas son sommet.</li>
+</ul>
+<div class="form">
+  <span class="t">COSINUS ET SINUS&nbsp;: angle aigu <span style="display:inline-block;position:relative;line-height:1"><i>A</i><span style="position:absolute;left:0;right:0;top:-.52em;font-size:.8em;font-style:normal;text-align:center">&#710;</span></span> d'un triangle rectangle</span>
+  <div class="c m"><span class="op">cos</span>&#8239;<span style="display:inline-block;position:relative;line-height:1"><i>A</i><span style="position:absolute;left:0;right:0;top:-.52em;font-size:.8em;font-style:normal;text-align:center">&#710;</span></span>&#8239;=&#8239;<span class="f"><span>côté adjacent</span><span>hypoténuse</span></span></div>
+  <div class="c m"><span class="op">sin</span>&#8239;<span style="display:inline-block;position:relative;line-height:1"><i>A</i><span style="position:absolute;left:0;right:0;top:-.52em;font-size:.8em;font-style:normal;text-align:center">&#710;</span></span>&#8239;=&#8239;<span class="f"><span>côté opposé</span><span>hypoténuse</span></span></div>
+</div>
+<ul>
+<li>Les deux rapports ont le <b>même dénominateur</b>, l'hypoténuse ; seul le numérateur change.</li>
+<li><span class="op">cos</span>&#8239;<span style="display:inline-block;position:relative;line-height:1"><i>A</i><span style="position:absolute;left:0;right:0;top:-.52em;font-size:.8em;font-style:normal;text-align:center">&#710;</span></span> et <span class="op">sin</span>&#8239;<span style="display:inline-block;position:relative;line-height:1"><i>A</i><span style="position:absolute;left:0;right:0;top:-.52em;font-size:.8em;font-style:normal;text-align:center">&#710;</span></span> ne dépendent <b>que de la mesure de l'angle</b>, et pas de la taille du triangle.</li>
+<li>Pour tout angle aigu : <span class="pt">0&#8239;&lt;&#8239;<span class="op">cos</span>&#8239;<span style="display:inline-block;position:relative;line-height:1"><i>A</i><span style="position:absolute;left:0;right:0;top:-.52em;font-size:.8em;font-style:normal;text-align:center">&#710;</span></span>&#8239;&lt;&#8239;1</span> et <span class="pt">0&#8239;&lt;&#8239;<span class="op">sin</span>&#8239;<span style="display:inline-block;position:relative;line-height:1"><i>A</i><span style="position:absolute;left:0;right:0;top:-.52em;font-size:.8em;font-style:normal;text-align:center">&#710;</span></span>&#8239;&lt;&#8239;1</span>, car un côté de l'angle droit est plus court que l'hypoténuse.</li>
+<li>« Adjacent » et « opposé » n'ont de sens qu'une fois l'angle <b>annoncé</b> : le côté adjacent à <span style="display:inline-block;position:relative;line-height:1"><i>B</i><span style="position:absolute;left:0;right:0;top:-.52em;font-size:.8em;font-style:normal;text-align:center">&#710;</span></span> est le côté opposé à <span style="display:inline-block;position:relative;line-height:1"><i>C</i><span style="position:absolute;left:0;right:0;top:-.52em;font-size:.8em;font-style:normal;text-align:center">&#710;</span></span>. Ecris d'abord « par rapport à l'angle <span style="display:inline-block;position:relative;line-height:1"><i>B</i><span style="position:absolute;left:0;right:0;top:-.52em;font-size:.8em;font-style:normal;text-align:center">&#710;</span></span> », puis nomme les côtés.</li>
+</ul>
+<div class="note"><b>Marche à suivre.</b> Repère l'angle droit, puis l'angle aigu <span class="ar">&#8594;</span> nomme l'hypoténuse, l'adjacent et l'opposé <span class="ar">&#8594;</span> écris le rapport, remplace par les longueurs et simplifie <span class="ar">&#8594;</span> contrôle que le résultat est bien entre 0 et 1.</div>
+</div>
+
+<!-- ================= LECON 2 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 2&nbsp;: Tangente ; formule cos<sup>2</sup>&#8239;<span style="display:inline-block;position:relative;line-height:1"><i>A</i><span style="position:absolute;left:0;right:0;top:-.52em;font-size:.8em;font-style:normal;text-align:center">&#710;</span></span>&#8239;+&#8239;sin<sup>2</sup>&#8239;<span style="display:inline-block;position:relative;line-height:1"><i>A</i><span style="position:absolute;left:0;right:0;top:-.52em;font-size:.8em;font-style:normal;text-align:center">&#710;</span></span>&#8239;=&#8239;1</h2>
+<div class="form">
+  <span class="t">TANGENTE D'UN ANGLE AIGU</span>
+  <div class="c m"><span class="op">tan</span>&#8239;<span style="display:inline-block;position:relative;line-height:1"><i>A</i><span style="position:absolute;left:0;right:0;top:-.52em;font-size:.8em;font-style:normal;text-align:center">&#710;</span></span>&#8239;=&#8239;<span class="f"><span>côté opposé</span><span>côté adjacent</span></span>&#8239;=&#8239;<span class="f"><span><span class="op">sin</span>&#8239;<span style="display:inline-block;position:relative;line-height:1"><i>A</i><span style="position:absolute;left:0;right:0;top:-.52em;font-size:.8em;font-style:normal;text-align:center">&#710;</span></span></span><span><span class="op">cos</span>&#8239;<span style="display:inline-block;position:relative;line-height:1"><i>A</i><span style="position:absolute;left:0;right:0;top:-.52em;font-size:.8em;font-style:normal;text-align:center">&#710;</span></span></span></span></div>
+</div></div>
+<ul>
+<li>La tangente ne fait <b>pas</b> intervenir l'hypoténuse : elle relie les <b>deux côtés de l'angle droit</b>.</li>
+<li>Contrairement au cosinus et au sinus, la tangente <b>peut dépasser 1</b> : elle vaut <b>1</b> pour 45&#176;, et devient très grande quand l'angle s'approche de 90&#176;.</li>
+</ul>
+<div class="form">
+  <span class="t">FORMULE FONDAMENTALE&nbsp;: pour tout angle aigu <span style="display:inline-block;position:relative;line-height:1"><i>A</i><span style="position:absolute;left:0;right:0;top:-.52em;font-size:.8em;font-style:normal;text-align:center">&#710;</span></span></span>
+  <div class="c m"><span class="op">cos</span><sup>2</sup>&#8239;<span style="display:inline-block;position:relative;line-height:1"><i>A</i><span style="position:absolute;left:0;right:0;top:-.52em;font-size:.8em;font-style:normal;text-align:center">&#710;</span></span>&#8239;+&#8239;<span class="op">sin</span><sup>2</sup>&#8239;<span style="display:inline-block;position:relative;line-height:1"><i>A</i><span style="position:absolute;left:0;right:0;top:-.52em;font-size:.8em;font-style:normal;text-align:center">&#710;</span></span>&#8239;=&#8239;1</div>
+  <div class="c m"><span class="op">sin</span><sup>2</sup>&#8239;<span style="display:inline-block;position:relative;line-height:1"><i>A</i><span style="position:absolute;left:0;right:0;top:-.52em;font-size:.8em;font-style:normal;text-align:center">&#710;</span></span>&#8239;=&#8239;1&#8239;&#8722;&#8239;<span class="op">cos</span><sup>2</sup>&#8239;<span style="display:inline-block;position:relative;line-height:1"><i>A</i><span style="position:absolute;left:0;right:0;top:-.52em;font-size:.8em;font-style:normal;text-align:center">&#710;</span></span> &nbsp;&nbsp; <span class="op">cos</span><sup>2</sup>&#8239;<span style="display:inline-block;position:relative;line-height:1"><i>A</i><span style="position:absolute;left:0;right:0;top:-.52em;font-size:.8em;font-style:normal;text-align:center">&#710;</span></span>&#8239;=&#8239;1&#8239;&#8722;&#8239;<span class="op">sin</span><sup>2</sup>&#8239;<span style="display:inline-block;position:relative;line-height:1"><i>A</i><span style="position:absolute;left:0;right:0;top:-.52em;font-size:.8em;font-style:normal;text-align:center">&#710;</span></span></div>
+</div>
+<ul>
+<li><b>Notation</b> : <span class="op">cos</span><sup>2</sup>&#8239;<span style="display:inline-block;position:relative;line-height:1"><i>A</i><span style="position:absolute;left:0;right:0;top:-.52em;font-size:.8em;font-style:normal;text-align:center">&#710;</span></span> désigne <span class="pt">(<span class="op">cos</span>&#8239;<span style="display:inline-block;position:relative;line-height:1"><i>A</i><span style="position:absolute;left:0;right:0;top:-.52em;font-size:.8em;font-style:normal;text-align:center">&#710;</span></span>)<sup>2</sup></span>, le nombre <span class="op">cos</span>&#8239;<span style="display:inline-block;position:relative;line-height:1"><i>A</i><span style="position:absolute;left:0;right:0;top:-.52em;font-size:.8em;font-style:normal;text-align:center">&#710;</span></span> multiplié par lui-même.</li>
+<li>C'est le théorème de <b>Pythagore</b> écrit avec des rapports : dans un triangle rectangle d'hypoténuse 1, les deux autres côtés mesurent <span class="op">cos</span>&#8239;<span style="display:inline-block;position:relative;line-height:1"><i>A</i><span style="position:absolute;left:0;right:0;top:-.52em;font-size:.8em;font-style:normal;text-align:center">&#710;</span></span> et <span class="op">sin</span>&#8239;<span style="display:inline-block;position:relative;line-height:1"><i>A</i><span style="position:absolute;left:0;right:0;top:-.52em;font-size:.8em;font-style:normal;text-align:center">&#710;</span></span>.</li>
+<li>La formule donne le <b>carré</b> de l'autre nombre : il reste toujours à prendre la <b>racine carrée positive</b>, puisque l'angle est aigu.</li>
+</ul>
+<div class="form">
+  <span class="t">ANGLES COMPLEMENTAIRES&nbsp;: <span style="display:inline-block;position:relative;line-height:1"><i>B</i><span style="position:absolute;left:0;right:0;top:-.52em;font-size:.8em;font-style:normal;text-align:center">&#710;</span></span> et <span style="display:inline-block;position:relative;line-height:1"><i>C</i><span style="position:absolute;left:0;right:0;top:-.52em;font-size:.8em;font-style:normal;text-align:center">&#710;</span></span> angles aigus d'un même triangle rectangle</span>
+  <div class="c m"><span style="display:inline-block;position:relative;line-height:1"><i>B</i><span style="position:absolute;left:0;right:0;top:-.52em;font-size:.8em;font-style:normal;text-align:center">&#710;</span></span>&#8239;+&#8239;<span style="display:inline-block;position:relative;line-height:1"><i>C</i><span style="position:absolute;left:0;right:0;top:-.52em;font-size:.8em;font-style:normal;text-align:center">&#710;</span></span>&#8239;=&#8239;90&#176;</div>
+  <div class="c m"><span class="op">sin</span>&#8239;<span style="display:inline-block;position:relative;line-height:1"><i>B</i><span style="position:absolute;left:0;right:0;top:-.52em;font-size:.8em;font-style:normal;text-align:center">&#710;</span></span>&#8239;=&#8239;<span class="op">cos</span>&#8239;<span style="display:inline-block;position:relative;line-height:1"><i>C</i><span style="position:absolute;left:0;right:0;top:-.52em;font-size:.8em;font-style:normal;text-align:center">&#710;</span></span> &nbsp;&nbsp; <span class="op">cos</span>&#8239;<span style="display:inline-block;position:relative;line-height:1"><i>B</i><span style="position:absolute;left:0;right:0;top:-.52em;font-size:.8em;font-style:normal;text-align:center">&#710;</span></span>&#8239;=&#8239;<span class="op">sin</span>&#8239;<span style="display:inline-block;position:relative;line-height:1"><i>C</i><span style="position:absolute;left:0;right:0;top:-.52em;font-size:.8em;font-style:normal;text-align:center">&#710;</span></span></div>
+</div>
+</div>
+
+<!-- ================= LECON 3 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 3&nbsp;: La table trigonométrique</h2>
+<ul>
+<li>La <b>table trigonométrique</b> donne, pour chaque mesure d'angle en degrés, les valeurs <b>approchées</b> de son sinus, de son cosinus et de sa tangente.</li>
+<li><b>Trouver une valeur</b> : chercher la <b>ligne</b> de l'angle, lire dans la colonne voulue.</li>
+<li><b>Trouver un angle</b> : chercher la valeur dans la colonne voulue, lire l'angle de la même ligne. Si la valeur ne figure pas, l'<b>encadrer</b> entre les deux valeurs voisines : on obtient un encadrement de l'angle, puis on donne sa mesure au degré près, en choisissant celui dont la valeur est la plus proche.</li>
+<li><b>Sens de variation.</b> Quand l'angle aigu augmente, son <b>sinus augmente</b>, son <b>cosinus diminue</b>, sa <b>tangente augmente</b>.</li>
+<li>Les valeurs de la table étant approchées, on écrit <b>&#8776;</b> et non <b>=</b> dès qu'on passe à l'écriture décimale.</li>
+</ul></div>
+<table>
+<tr><th>Angle</th><th>30&#176;</th><th>45&#176;</th><th>60&#176;</th></tr>
+<tr><td>sinus</td><td class="m"><span class="f"><span>1</span><span>2</span></span>&#8239;=&#8239;0,5</td><td class="m"><span class="f"><span>&#8730;<span class="rad">2</span></span><span>2</span></span>&#8239;&#8776;&#8239;0,707</td><td class="m"><span class="f"><span>&#8730;<span class="rad">3</span></span><span>2</span></span>&#8239;&#8776;&#8239;0,866</td></tr>
+<tr><td>cosinus</td><td class="m"><span class="f"><span>&#8730;<span class="rad">3</span></span><span>2</span></span>&#8239;&#8776;&#8239;0,866</td><td class="m"><span class="f"><span>&#8730;<span class="rad">2</span></span><span>2</span></span>&#8239;&#8776;&#8239;0,707</td><td class="m"><span class="f"><span>1</span><span>2</span></span>&#8239;=&#8239;0,5</td></tr>
+<tr><td>tangente</td><td class="m"><span class="f"><span>&#8730;<span class="rad">3</span></span><span>3</span></span>&#8239;&#8776;&#8239;0,577</td><td class="m">1</td><td class="m">&#8730;<span class="rad">3</span>&#8239;&#8776;&#8239;1,732</td></tr>
+</table>
+<div class="note">La ligne des <b>cosinus</b> est la ligne des <b>sinus</b> lue à l'envers : c'est l'égalité <span class="pt"><span class="op">cos</span>&#8239;&#945;&#8239;=&#8239;<span class="op">sin</span>(90&#176;&#8239;&#8722;&#8239;&#945;)</span> des angles complémentaires.</div>
+</div>
+
+<!-- ================= LECON 4 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 4&nbsp;: Applications dans des problèmes</h2>
+<p>Hauteur, distance, inclinaison : on commence par un <b>schéma codé</b> faisant apparaître un <b>triangle rectangle</b>, avec l'angle droit, l'angle connu et les longueurs données. On repère ensuite, <b>par rapport à l'angle connu</b>, le côté connu et le côté cherché.</p></div>
+<div class="form">
+  <span class="t">CHOISIR LE RAPPORT&nbsp;: L'HYPOTENUSE EST-ELLE CONCERNEE ?</span>
+  <div class="c m"><b>non</b> <span style="font-family:'Segoe UI',Calibri,Arial,sans-serif"><span class="ar">&#8594;</span></span> <span class="op">tangente</span> (les deux côtés de l'angle droit)</div>
+  <div class="c m"><b>oui</b> <span style="font-family:'Segoe UI',Calibri,Arial,sans-serif"><span class="ar">&#8594;</span></span> <span class="op">cosinus</span> si l'autre côté est l'adjacent, <span class="op">sinus</span> s'il est l'opposé</div>
+</div>
+<ul>
+<li>Ecris l'égalité, remplace par les valeurs (données de l'énoncé et valeurs lues dans la table), puis résous en <b>isolant l'inconnue</b>.</li>
+<li>Si l'inconnue est au <b>dénominateur</b>, comme dans <span class="pt"><span class="op">sin</span>&#8239;30&#176;&#8239;=&#8239;<span class="f"><span>5</span><span>SC</span></span></span>, on ne conclut pas directement : on <b>multiplie en croix</b> pour la faire remonter au numérateur.</li>
+<li>Termine par une <b>phrase de conclusion</b> avec l'<b>unité</b>, et vérifie que le résultat est plausible.</li>
+</ul>
+</div>
+
+</div>
+
+<div class="bandeau vert">PIEGES ET ERREURS FREQUENTES</div>
+<div class="cols">
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> <span class="op">cos</span>&#8239;<span style="display:inline-block;position:relative;line-height:1"><i>B</i><span style="position:absolute;left:0;right:0;top:-.52em;font-size:.8em;font-style:normal;text-align:center">&#710;</span></span>&#8239;=&#8239;<span class="f"><span>côté opposé</span><span>hypoténuse</span></span> &nbsp;&middot;&nbsp; on trouve <span class="op">cos</span>&#8239;<span style="display:inline-block;position:relative;line-height:1"><i>B</i><span style="position:absolute;left:0;right:0;top:-.52em;font-size:.8em;font-style:normal;text-align:center">&#710;</span></span>&#8239;=&#8239;1,25 et on garde ce résultat</div><div class="cor"><span class="v">&#10003;</span> <b>Cosinus</b> : adjacent sur hypoténuse. <b>Sinus</b> : opposé sur hypoténuse. L'hypoténuse est <b>toujours au dénominateur</b> et c'est <b>toujours le plus grand côté</b> : un cosinus ou un sinus supérieur à 1 signale donc une erreur, sans qu'il soit besoin de refaire le calcul.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> « Dans ce triangle, le côté adjacent est [AB] », sans dire de quel angle on parle</div><div class="cor"><span class="v">&#10003;</span> Adjacent et opposé <b>changent avec l'angle choisi</b> : le côté adjacent à <span style="display:inline-block;position:relative;line-height:1"><i>B</i><span style="position:absolute;left:0;right:0;top:-.52em;font-size:.8em;font-style:normal;text-align:center">&#710;</span></span> est le côté opposé à <span style="display:inline-block;position:relative;line-height:1"><i>C</i><span style="position:absolute;left:0;right:0;top:-.52em;font-size:.8em;font-style:normal;text-align:center">&#710;</span></span>. Seule l'hypoténuse ne change pas, car elle est toujours opposée à l'<b>angle droit</b>.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> <span class="op">cos</span><sup>2</sup>&#8239;<span style="display:inline-block;position:relative;line-height:1"><i>A</i><span style="position:absolute;left:0;right:0;top:-.52em;font-size:.8em;font-style:normal;text-align:center">&#710;</span></span> se lit « cosinus de <span style="display:inline-block;position:relative;line-height:1"><i>A</i><span style="position:absolute;left:0;right:0;top:-.52em;font-size:.8em;font-style:normal;text-align:center">&#710;</span></span><sup>2</sup> » &nbsp;&middot;&nbsp; <span class="op">tan</span>&#8239;<span style="display:inline-block;position:relative;line-height:1"><i>A</i><span style="position:absolute;left:0;right:0;top:-.52em;font-size:.8em;font-style:normal;text-align:center">&#710;</span></span>&#8239;=&#8239;<span class="op">sin</span>&#8239;<span style="display:inline-block;position:relative;line-height:1"><i>A</i><span style="position:absolute;left:0;right:0;top:-.52em;font-size:.8em;font-style:normal;text-align:center">&#710;</span></span>&#8239;+&#8239;<span class="op">cos</span>&#8239;<span style="display:inline-block;position:relative;line-height:1"><i>A</i><span style="position:absolute;left:0;right:0;top:-.52em;font-size:.8em;font-style:normal;text-align:center">&#710;</span></span></div><div class="cor"><span class="v">&#10003;</span> <span class="op">cos</span><sup>2</sup>&#8239;<span style="display:inline-block;position:relative;line-height:1"><i>A</i><span style="position:absolute;left:0;right:0;top:-.52em;font-size:.8em;font-style:normal;text-align:center">&#710;</span></span> est <span class="pt">(<span class="op">cos</span>&#8239;<span style="display:inline-block;position:relative;line-height:1"><i>A</i><span style="position:absolute;left:0;right:0;top:-.52em;font-size:.8em;font-style:normal;text-align:center">&#710;</span></span>)<sup>2</sup></span> : le carré porte sur le <b>nombre</b> <span class="op">cos</span>&#8239;<span style="display:inline-block;position:relative;line-height:1"><i>A</i><span style="position:absolute;left:0;right:0;top:-.52em;font-size:.8em;font-style:normal;text-align:center">&#710;</span></span>, pas sur l'angle. Et la tangente est un <b>quotient</b>, non une somme : <span class="pt"><span class="op">tan</span>&#8239;<span style="display:inline-block;position:relative;line-height:1"><i>A</i><span style="position:absolute;left:0;right:0;top:-.52em;font-size:.8em;font-style:normal;text-align:center">&#710;</span></span>&#8239;=&#8239;<span class="f"><span><span class="op">sin</span>&#8239;<span style="display:inline-block;position:relative;line-height:1"><i>A</i><span style="position:absolute;left:0;right:0;top:-.52em;font-size:.8em;font-style:normal;text-align:center">&#710;</span></span></span><span><span class="op">cos</span>&#8239;<span style="display:inline-block;position:relative;line-height:1"><i>A</i><span style="position:absolute;left:0;right:0;top:-.52em;font-size:.8em;font-style:normal;text-align:center">&#710;</span></span></span></span></span>.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> <span class="op">sin</span><sup>2</sup>&#8239;<span style="display:inline-block;position:relative;line-height:1"><i>A</i><span style="position:absolute;left:0;right:0;top:-.52em;font-size:.8em;font-style:normal;text-align:center">&#710;</span></span>&#8239;=&#8239;0,36 donc <span class="op">sin</span>&#8239;<span style="display:inline-block;position:relative;line-height:1"><i>A</i><span style="position:absolute;left:0;right:0;top:-.52em;font-size:.8em;font-style:normal;text-align:center">&#710;</span></span>&#8239;=&#8239;0,36</div><div class="cor"><span class="v">&#10003;</span> La formule fondamentale donne le <b>carré</b> : il reste la racine carrée. <span class="pt"><span class="op">sin</span>&#8239;<span style="display:inline-block;position:relative;line-height:1"><i>A</i><span style="position:absolute;left:0;right:0;top:-.52em;font-size:.8em;font-style:normal;text-align:center">&#710;</span></span>&#8239;=&#8239;&#8730;<span class="rad">0,36</span>&#8239;=&#8239;0,6</span>, et l'on garde la valeur <b>positive</b> puisque l'angle est aigu.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> « La tangente aussi est comprise entre 0 et 1. » &nbsp;&middot;&nbsp; « Le cosinus augmente quand l'angle augmente. »</div><div class="cor"><span class="v">&#10003;</span> Seuls le <b>cosinus</b> et le <b>sinus</b> restent entre 0 et 1 : <span class="pt"><span class="op">tan</span>&#8239;45&#176;&#8239;=&#8239;1</span> et la tangente dépasse 1 au-delà. Et quand l'angle aigu augmente, le <b>cosinus diminue</b> ; seuls le sinus et la tangente augmentent.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> De <span class="pt"><span class="op">sin</span>&#8239;30&#176;&#8239;=&#8239;<span class="f"><span>5</span><span>SC</span></span></span> on tire <span class="pt">SC&#8239;=&#8239;5&#8239;&#215;&#8239;<span class="op">sin</span>&#8239;30&#176;&#8239;=&#8239;2,5</span></div><div class="cor"><span class="v">&#10003;</span> L'inconnue est au <b>dénominateur</b> : on multiplie en croix, <span class="pt">SC&#8239;&#215;&#8239;<span class="op">sin</span>&#8239;30&#176;&#8239;=&#8239;5</span>, donc <span class="pt">SC&#8239;=&#8239;<span class="f"><span>5</span><span><span class="op">sin</span>&#8239;30&#176;</span></span>&#8239;=&#8239;10</span>. Contrôle : SC est l'hypoténuse, elle doit être <b>plus grande</b> que 5.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> On écrit <span class="pt"><span class="op">cos</span>&#8239;<span style="display:inline-block;position:relative;line-height:1"><i>A</i><span style="position:absolute;left:0;right:0;top:-.52em;font-size:.8em;font-style:normal;text-align:center">&#710;</span></span>&#8239;=&#8239;<span class="f"><span>AB</span><span>AC</span></span></span> dans un triangle qui n'a <b>aucun angle droit</b></div><div class="cor"><span class="v">&#10003;</span> Ces trois rapports ne sont définis que dans un <b>triangle rectangle</b>, et pour un <b>angle aigu</b>. Si la figure n'en contient pas, on en fait apparaître un (hauteur, projeté) avant d'écrire quoi que ce soit.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> <span class="pt"><span class="op">cos</span>&#8239;40&#176;&#8239;=&#8239;0,766</span> &nbsp;&middot;&nbsp; une longueur donnée sans unité</div><div class="cor"><span class="v">&#10003;</span> Les valeurs de la table sont <b>approchées</b> : <span class="pt"><span class="op">cos</span>&#8239;40&#176;&#8239;&#8776;&#8239;0,766</span>. Le signe <b>&#8776;</b> s'impose dès l'écriture décimale, et toute longueur se conclut par une phrase <b>avec son unité</b>.</div></div>
+
+</div>
+
+<div class="bandeau bleu">A SAVOIR PAR COEUR AVANT LE DEVOIR</div>
+<div class="cols">
+<ol class="recap">
+<li>Par rapport à un <b>angle aigu</b> : l'<b>hypoténuse</b> est opposée à l'angle droit (le plus grand côté), l'<b>adjacent</b> touche l'angle, l'<b>opposé</b> lui fait face. Ces deux derniers noms changent si l'on change d'angle.</li>
+<li><span class="pt"><span class="op">cos</span>&#8239;<span style="display:inline-block;position:relative;line-height:1"><i>A</i><span style="position:absolute;left:0;right:0;top:-.52em;font-size:.8em;font-style:normal;text-align:center">&#710;</span></span>&#8239;=&#8239;<span class="f"><span>adjacent</span><span>hypoténuse</span></span></span> &nbsp;&middot;&nbsp; <span class="pt"><span class="op">sin</span>&#8239;<span style="display:inline-block;position:relative;line-height:1"><i>A</i><span style="position:absolute;left:0;right:0;top:-.52em;font-size:.8em;font-style:normal;text-align:center">&#710;</span></span>&#8239;=&#8239;<span class="f"><span>opposé</span><span>hypoténuse</span></span></span> &nbsp;&middot;&nbsp; <span class="pt"><span class="op">tan</span>&#8239;<span style="display:inline-block;position:relative;line-height:1"><i>A</i><span style="position:absolute;left:0;right:0;top:-.52em;font-size:.8em;font-style:normal;text-align:center">&#710;</span></span>&#8239;=&#8239;<span class="f"><span>opposé</span><span>adjacent</span></span>&#8239;=&#8239;<span class="f"><span><span class="op">sin</span>&#8239;<span style="display:inline-block;position:relative;line-height:1"><i>A</i><span style="position:absolute;left:0;right:0;top:-.52em;font-size:.8em;font-style:normal;text-align:center">&#710;</span></span></span><span><span class="op">cos</span>&#8239;<span style="display:inline-block;position:relative;line-height:1"><i>A</i><span style="position:absolute;left:0;right:0;top:-.52em;font-size:.8em;font-style:normal;text-align:center">&#710;</span></span></span></span></span>, <b>uniquement dans un triangle rectangle</b>.</li>
+<li><span class="pt">0&#8239;&lt;&#8239;<span class="op">cos</span>&#8239;<span style="display:inline-block;position:relative;line-height:1"><i>A</i><span style="position:absolute;left:0;right:0;top:-.52em;font-size:.8em;font-style:normal;text-align:center">&#710;</span></span>&#8239;&lt;&#8239;1</span> et <span class="pt">0&#8239;&lt;&#8239;<span class="op">sin</span>&#8239;<span style="display:inline-block;position:relative;line-height:1"><i>A</i><span style="position:absolute;left:0;right:0;top:-.52em;font-size:.8em;font-style:normal;text-align:center">&#710;</span></span>&#8239;&lt;&#8239;1</span> ; la <b>tangente</b>, elle, peut dépasser 1. Ces nombres ne dépendent que de la mesure de l'angle.</li>
+<li><span class="pt"><span class="op">cos</span><sup>2</sup>&#8239;<span style="display:inline-block;position:relative;line-height:1"><i>A</i><span style="position:absolute;left:0;right:0;top:-.52em;font-size:.8em;font-style:normal;text-align:center">&#710;</span></span>&#8239;+&#8239;<span class="op">sin</span><sup>2</sup>&#8239;<span style="display:inline-block;position:relative;line-height:1"><i>A</i><span style="position:absolute;left:0;right:0;top:-.52em;font-size:.8em;font-style:normal;text-align:center">&#710;</span></span>&#8239;=&#8239;1</span>, où <span class="op">cos</span><sup>2</sup>&#8239;<span style="display:inline-block;position:relative;line-height:1"><i>A</i><span style="position:absolute;left:0;right:0;top:-.52em;font-size:.8em;font-style:normal;text-align:center">&#710;</span></span> signifie <span class="pt">(<span class="op">cos</span>&#8239;<span style="display:inline-block;position:relative;line-height:1"><i>A</i><span style="position:absolute;left:0;right:0;top:-.52em;font-size:.8em;font-style:normal;text-align:center">&#710;</span></span>)<sup>2</sup></span>. Elle donne un <b>carré</b> : prendre ensuite la <b>racine carrée positive</b>.</li>
+<li><b>Angles complémentaires</b> : <span class="pt"><span style="display:inline-block;position:relative;line-height:1"><i>B</i><span style="position:absolute;left:0;right:0;top:-.52em;font-size:.8em;font-style:normal;text-align:center">&#710;</span></span>&#8239;+&#8239;<span style="display:inline-block;position:relative;line-height:1"><i>C</i><span style="position:absolute;left:0;right:0;top:-.52em;font-size:.8em;font-style:normal;text-align:center">&#710;</span></span>&#8239;=&#8239;90&#176;</span>, <span class="pt"><span class="op">sin</span>&#8239;<span style="display:inline-block;position:relative;line-height:1"><i>B</i><span style="position:absolute;left:0;right:0;top:-.52em;font-size:.8em;font-style:normal;text-align:center">&#710;</span></span>&#8239;=&#8239;<span class="op">cos</span>&#8239;<span style="display:inline-block;position:relative;line-height:1"><i>C</i><span style="position:absolute;left:0;right:0;top:-.52em;font-size:.8em;font-style:normal;text-align:center">&#710;</span></span></span> et <span class="pt"><span class="op">cos</span>&#8239;<span style="display:inline-block;position:relative;line-height:1"><i>B</i><span style="position:absolute;left:0;right:0;top:-.52em;font-size:.8em;font-style:normal;text-align:center">&#710;</span></span>&#8239;=&#8239;<span class="op">sin</span>&#8239;<span style="display:inline-block;position:relative;line-height:1"><i>C</i><span style="position:absolute;left:0;right:0;top:-.52em;font-size:.8em;font-style:normal;text-align:center">&#710;</span></span></span>.</li>
+<li><b>Valeurs remarquables</b> : <span class="pt"><span class="op">sin</span>&#8239;30&#176;&#8239;=&#8239;<span class="op">cos</span>&#8239;60&#176;&#8239;=&#8239;0,5</span> ; <span class="pt"><span class="op">sin</span>&#8239;45&#176;&#8239;=&#8239;<span class="op">cos</span>&#8239;45&#176;&#8239;&#8776;&#8239;0,707</span> ; <span class="pt"><span class="op">cos</span>&#8239;30&#176;&#8239;=&#8239;<span class="op">sin</span>&#8239;60&#176;&#8239;&#8776;&#8239;0,866</span> ; <span class="pt"><span class="op">tan</span>&#8239;45&#176;&#8239;=&#8239;1</span>.</li>
+<li>Quand l'angle aigu augmente : sinus <b><span class="ar">&#8599;</span></b>, cosinus <b><span class="ar">&#8600;</span></b>, tangente <b><span class="ar">&#8599;</span></b>. Les valeurs de la table sont approchées : on écrit <b>&#8776;</b>. Valeur absente de la table <span class="ar">&#8594;</span> on l'<b>encadre</b>, puis on conclut au degré près.</li>
+<li><b>Choix du rapport</b> : hypoténuse absente <span class="ar">&#8594;</span> <b>tangente</b> ; hypoténuse présente <span class="ar">&#8594;</span> <b>cosinus</b> (adjacent) ou <b>sinus</b> (opposé). Inconnue au dénominateur <span class="ar">&#8594;</span> multiplier en croix. Conclure par une phrase, avec l'unité.</li>
+</ol>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,350 @@
+{
+  "niveau": "Terminale D",
+  "chapitre": "Chapitre 3 : Calcul différentiel, primitives et étude de fonctions",
+  "source": "maths/tleD/Chapitre_3_Calcul_differentiel_primitives",
+  "nombre_cartes": 38,
+  "cartes": [
+    {
+      "id": "TD-CH03-001",
+      "lecon": "Dérivabilité, singularités, dérivées successives",
+      "type": "definition",
+      "recto": "Que signifie l'affirmation « $f$ est dérivable en $a$ » ?",
+      "verso": "Que le taux d'accroissement $\\dfrac{f(x)-f(a)}{x-a}$ admet une limite finie quand $x$ tend vers $a$. Cette limite est le nombre dérivé $f'(a)$, qui mesure la vitesse de variation instantanée de $f$ en $a$.",
+      "difficulte": 1,
+      "tags": ["nombre-derive", "definition", "taux-daccroissement"]
+    },
+    {
+      "id": "TD-CH03-002",
+      "lecon": "Dérivabilité, singularités, dérivées successives",
+      "type": "formule",
+      "recto": "Quelle est l'équation de la tangente à la courbe de $f$ au point d'abscisse $a$ ?",
+      "verso": "$y=f'(a)(x-a)+f(a)$, à condition que $f$ soit dérivable en $a$. Cette droite passe par le point $A\\left(a\\,;f(a)\\right)$ et son coefficient directeur est le nombre dérivé $f'(a)$.",
+      "difficulte": 1,
+      "tags": ["tangente", "nombre-derive"]
+    },
+    {
+      "id": "TD-CH03-003",
+      "lecon": "Dérivabilité, singularités, dérivées successives",
+      "type": "formule",
+      "recto": "Quel critère portant sur $f'_d(a)$ et $f'_g(a)$ caractérise la dérivabilité de $f$ en $a$ ?",
+      "verso": "$f$ est dérivable en $a$ si, et seulement si, le nombre dérivé à droite $f'_d(a)$ et le nombre dérivé à gauche $f'_g(a)$ existent, sont finis et sont égaux. Leur valeur commune est alors $f'(a)$.",
+      "difficulte": 2,
+      "tags": ["derivabilite", "derivees-laterales"]
+    },
+    {
+      "id": "TD-CH03-004",
+      "lecon": "Dérivabilité, singularités, dérivées successives",
+      "type": "definition",
+      "recto": "Que présente la courbe de $f$ au point d'abscisse $a$ lorsque $f'_d(a)$ et $f'_g(a)$ existent mais diffèrent ?",
+      "verso": "Un point anguleux : la courbe y admet deux demi-tangentes distinctes, de coefficients directeurs $f'_d(a)$ et $f'_g(a)$. Aucune droite ne peut jouer le rôle de tangente unique, et $f$ n'est pas dérivable en $a$.",
+      "difficulte": 2,
+      "tags": ["point-anguleux", "singularite", "demi-tangentes"]
+    },
+    {
+      "id": "TD-CH03-005",
+      "lecon": "Dérivabilité, singularités, dérivées successives",
+      "type": "definition",
+      "recto": "Que conclut-on lorsque le taux d'accroissement de $f$ en $a$ tend vers $+\\infty$ ou vers $-\\infty$ ?",
+      "verso": "Que $f$ n'est pas dérivable en $a$, puisque aucun réel ne peut être appelé $f'(a)$. La courbe admet en ce point une tangente verticale, d'équation $x=a$ : c'est le cas de $x\\mapsto\\sqrt x$ en $0$.",
+      "difficulte": 2,
+      "tags": ["tangente-verticale", "singularite"]
+    },
+    {
+      "id": "TD-CH03-006",
+      "lecon": "Dérivabilité, singularités, dérivées successives",
+      "type": "definition",
+      "recto": "Pourquoi la continuité de $f$ en $a$ ne suffit-elle pas à garantir sa dérivabilité en $a$ ?",
+      "verso": "Parce que la dérivabilité réclame en plus que la courbe soit lisse : $x\\mapsto|x|$ est continue en $0$ mais y forme un coin. L'implication ne fonctionne que dans un sens, dérivable entraîne continue, jamais l'inverse.",
+      "difficulte": 3,
+      "tags": ["continuite", "derivabilite", "piege"]
+    },
+    {
+      "id": "TD-CH03-007",
+      "lecon": "Dérivabilité, singularités, dérivées successives",
+      "type": "definition",
+      "recto": "Comment obtient-on la dérivée seconde $f''$ d'une fonction $f$ ?",
+      "verso": "En dérivant $f'$, lorsque cette fonction est à son tour dérivable sur l'intervalle. On poursuit de même avec $f'''$ puis $f^{(4)}$. En notation différentielle, $f'=\\dfrac{df}{dx}$ et $f''=\\dfrac{d^2f}{dx^2}$.",
+      "difficulte": 1,
+      "tags": ["derivees-successives", "notation"]
+    },
+    {
+      "id": "TD-CH03-008",
+      "lecon": "Dérivabilité, singularités, dérivées successives",
+      "type": "formule",
+      "recto": "Sous quelles hypothèses écrit-on l'encadrement $m\\,(b-a)\\le f(b)-f(a)\\le M\\,(b-a)$ ?",
+      "verso": "Il faut que $f$ soit dérivable sur $[a\\,;b]$ avec $a<b$, et que $m\\le f'(x)\\le M$ pour tout $x$ de $[a\\,;b]$. C'est l'inégalité des accroissements finis ; si $|f'|\\le M$, elle donne $\\left|f(b)-f(a)\\right|\\le M\\left|b-a\\right|$.",
+      "difficulte": 2,
+      "tags": ["accroissements-finis", "encadrement", "inegalite"]
+    },
+    {
+      "id": "TD-CH03-009",
+      "lecon": "Dérivation des fonctions composées",
+      "type": "formule",
+      "recto": "Comment se dérive la fonction composée $v\\circ u$ ?",
+      "verso": "$(v\\circ u)'(x)=u'(x)\\times v'\\left(u(x)\\right)$, si $u$ est dérivable sur $I$ et $v$ dérivable sur un intervalle contenant $u(I)$. On dérive l'extérieure en gardant l'intérieur intact, puis on multiplie par la dérivée de l'intérieur.",
+      "difficulte": 1,
+      "tags": ["composee", "regle-de-la-chaine"]
+    },
+    {
+      "id": "TD-CH03-010",
+      "lecon": "Dérivation des fonctions composées",
+      "type": "formule",
+      "recto": "Quelles sont les dérivées de $u^n$, de $\\sqrt u$ et de $\\dfrac1u$, avec leurs conditions de validité ?",
+      "verso": "$\\left(u^n\\right)'=n\\,u'\\,u^{n-1}$ pour $n$ entier relatif, $\\left(\\sqrt u\\right)'=\\dfrac{u'}{2\\sqrt u}$ là où $u>0$, et $\\left(\\dfrac1u\\right)'=-\\dfrac{u'}{u^2}$ là où $u\\ne 0$. Chacune est la règle de la chaîne appliquée à une extérieure connue.",
+      "difficulte": 2,
+      "tags": ["composee", "formules-pratiques"]
+    },
+    {
+      "id": "TD-CH03-011",
+      "lecon": "Dérivation des fonctions composées",
+      "type": "formule",
+      "recto": "Comment se dérive une fonction de la forme $x\\mapsto f(ax+b)$ ?",
+      "verso": "$\\left(f(ax+b)\\right)'=a\\,f'(ax+b)$, car la dérivée de l'intérieur vaut $a$. Ainsi $\\left(\\sin(3x-1)\\right)'=3\\cos(3x-1)$ et $\\left((2x+5)^7\\right)'=14(2x+5)^6$.",
+      "difficulte": 2,
+      "tags": ["composee", "fonction-affine"]
+    },
+    {
+      "id": "TD-CH03-012",
+      "lecon": "Dérivation des fonctions composées",
+      "type": "formule",
+      "recto": "Pourquoi la dérivée de $(2x-1)^3$ n'est-elle pas $3(2x-1)^2$ ?",
+      "verso": "Parce que le facteur $u'=2$ manque : quand $x$ augmente, l'intérieur $2x-1$ varie deux fois plus vite. La dérivée vaut $3\\times 2\\times(2x-1)^2=6(2x-1)^2$, soit le double du résultat annoncé.",
+      "difficulte": 3,
+      "tags": ["composee", "oubli-de-u-prime", "piege"]
+    },
+    {
+      "id": "TD-CH03-013",
+      "lecon": "Dérivation des fonctions composées",
+      "type": "definition",
+      "recto": "Quelle est la fonction intérieure de $x\\mapsto\\cos^3x$ ?",
+      "verso": "C'est $\\cos x$, car $\\cos^3x$ se lit $\\left(\\cos x\\right)^3$ et non $\\cos\\left(x^3\\right)$. Sa dérivée vaut donc $3\\times(-\\sin x)\\times\\cos^2x$, c'est-à-dire $-3\\sin x\\,\\cos^2x$.",
+      "difficulte": 3,
+      "tags": ["composee", "notation", "piege"]
+    },
+    {
+      "id": "TD-CH03-014",
+      "lecon": "Dérivation des fonctions composées",
+      "type": "formule",
+      "recto": "Quelle est la dérivée de la fonction tangente, et sur quels intervalles ?",
+      "verso": "$(\\tan x)'=\\dfrac{1}{\\cos^2x}=1+\\tan^2x$, sur tout intervalle où $\\cos x\\ne 0$. Cette dérivée étant toujours strictement positive, la fonction tangente est croissante sur chacun de ces intervalles.",
+      "difficulte": 2,
+      "tags": ["fonction-tangente", "derivee", "trigonometrie"]
+    },
+    {
+      "id": "TD-CH03-015",
+      "lecon": "Dérivation des fonctions composées",
+      "type": "formule",
+      "recto": "Quelle formule donne le nombre dérivé de la bijection réciproque $f^{-1}$ en $b=f(a)$ ?",
+      "verso": "$\\left(f^{-1}\\right)'(b)=\\dfrac{1}{f'(a)}$, lorsque $f$ est dérivable et strictement monotone sur $I$ et que $f'$ ne s'y annule pas. Il faut d'abord chercher le $a$ tel que $f(a)=b$, et non remplacer $b$ dans $f'$.",
+      "difficulte": 2,
+      "tags": ["bijection-reciproque", "derivee"]
+    },
+    {
+      "id": "TD-CH03-016",
+      "lecon": "Primitives",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on une primitive de $f$ sur un intervalle $I$ ?",
+      "verso": "Toute fonction $F$ dérivable sur $I$ telle que $F'(x)=f(x)$ pour tout $x$ de $I$. Le contrôle est immédiat : on dérive $F$ et l'on doit retomber sur $f$.",
+      "difficulte": 1,
+      "tags": ["primitive", "definition"]
+    },
+    {
+      "id": "TD-CH03-017",
+      "lecon": "Primitives",
+      "type": "formule",
+      "recto": "Quelle condition suffit pour qu'une fonction admette des primitives sur un intervalle $I$ ?",
+      "verso": "Il suffit qu'elle soit continue sur $I$. Ce théorème, admis, garantit l'existence des primitives sans indiquer comment les écrire.",
+      "difficulte": 2,
+      "tags": ["primitive", "existence", "continuite"]
+    },
+    {
+      "id": "TD-CH03-018",
+      "lecon": "Primitives",
+      "type": "formule",
+      "recto": "Une primitive $F$ de $f$ sur $I$ étant connue, comment s'écrivent toutes les autres ?",
+      "verso": "Ce sont exactement les fonctions $x\\mapsto F(x)+C$, avec $C$ réel : il y en a une infinité. Leurs courbes se déduisent les unes des autres par une translation verticale et ont partout la même pente.",
+      "difficulte": 2,
+      "tags": ["primitive", "constante", "famille"]
+    },
+    {
+      "id": "TD-CH03-019",
+      "lecon": "Primitives",
+      "type": "formule",
+      "recto": "Combien de primitives de $f$ sur $I$ vérifient une condition imposée $F(x_0)=y_0$ ?",
+      "verso": "Une seule. On écrit la forme générale avec sa constante, on remplace $x$ par $x_0$, et l'équation du premier degré obtenue fournit une unique valeur de $C$ : par un point donné passe une courbe de la famille et une seule.",
+      "difficulte": 2,
+      "tags": ["primitive", "condition-initiale", "unicite"]
+    },
+    {
+      "id": "TD-CH03-020",
+      "lecon": "Primitives",
+      "type": "formule",
+      "recto": "Pourquoi deux primitives d'une même fonction sur un intervalle ne peuvent-elles différer que d'une constante ?",
+      "verso": "Si $F'=f$ et $G'=f$ sur $I$, alors $(F-G)'=0$. Or une fonction de dérivée nulle sur un intervalle y est constante, donc $F-G=C$. L'hypothèse d'intervalle est indispensable : sur une réunion de deux intervalles disjoints, la conclusion tombe.",
+      "difficulte": 3,
+      "tags": ["primitive", "demonstration", "intervalle"]
+    },
+    {
+      "id": "TD-CH03-021",
+      "lecon": "Primitives",
+      "type": "formule",
+      "recto": "Quelles primitives correspondent à $x^n$, à $\\dfrac{1}{\\sqrt x}$, à $\\cos x$ et à $\\sin x$ ?",
+      "verso": "$\\dfrac{x^{n+1}}{n+1}$ pour $x^n$ avec $n\\ne -1$, $2\\sqrt x$ pour $\\dfrac{1}{\\sqrt x}$, $\\sin x$ pour $\\cos x$ et $-\\cos x$ pour $\\sin x$, chacune à une constante additive près.",
+      "difficulte": 1,
+      "tags": ["primitives-usuelles", "tableau"]
+    },
+    {
+      "id": "TD-CH03-022",
+      "lecon": "Primitives",
+      "type": "formule",
+      "recto": "Quelles primitives correspondent aux formes composées $u'\\,u^n$, $\\dfrac{u'}{\\sqrt u}$ et $u'\\cos u$ ?",
+      "verso": "$\\dfrac{u^{n+1}}{n+1}$ pour $u'\\,u^n$ avec $n\\ne -1$, $2\\sqrt u$ pour $\\dfrac{u'}{\\sqrt u}$ et $\\sin u$ pour $u'\\cos u$, à une constante près. C'est le tableau des primitives usuelles augmenté du facteur $u'$, qui doit figurer dans l'expression.",
+      "difficulte": 2,
+      "tags": ["primitives-composees", "facteur-u-prime"]
+    },
+    {
+      "id": "TD-CH03-023",
+      "lecon": "Primitives",
+      "type": "formule",
+      "recto": "Quelle est une primitive de $x\\mapsto g(ax+b)$ lorsque $G$ est une primitive de $g$ et que $a\\ne 0$ ?",
+      "verso": "$\\dfrac{1}{a}\\,G(ax+b)$. Le coefficient $\\dfrac1a$ compense le facteur $a$ que la dérivation ferait apparaître : une primitive de $\\cos(2x)$ est $\\dfrac{\\sin(2x)}{2}$, et non $\\sin(2x)$.",
+      "difficulte": 2,
+      "tags": ["primitive", "forme-affine", "coefficient"]
+    },
+    {
+      "id": "TD-CH03-024",
+      "lecon": "Etude complète d'une fonction",
+      "type": "formule",
+      "recto": "Que déduit-on du signe de $f'$ sur un intervalle $I$ où $f$ est dérivable ?",
+      "verso": "Son sens de variation : $f'>0$ sur $I$ donne $f$ strictement croissante, $f'<0$ strictement décroissante, et $f'$ nulle sur tout $I$ donne $f$ constante. On ne relie jamais deux morceaux séparés par une valeur interdite.",
+      "difficulte": 1,
+      "tags": ["signe-de-la-derivee", "variations"]
+    },
+    {
+      "id": "TD-CH03-025",
+      "lecon": "Etude complète d'une fonction",
+      "type": "formule",
+      "recto": "A quelle condition la fonction $f$ admet-elle un extremum local en $x_0$ ?",
+      "verso": "Il faut que $f'$ s'annule en $x_0$ en changeant de signe : un maximum si $f'$ passe du signe $+$ au signe $-$, un minimum si elle passe de $-$ à $+$. La tangente en ce point est horizontale.",
+      "difficulte": 2,
+      "tags": ["extremum", "changement-de-signe"]
+    },
+    {
+      "id": "TD-CH03-026",
+      "lecon": "Etude complète d'une fonction",
+      "type": "formule",
+      "recto": "Pourquoi l'égalité $f'(x_0)=0$ ne suffit-elle pas à conclure à un extremum en $x_0$ ?",
+      "verso": "Parce que la dérivée doit en plus changer de signe. Pour $x\\mapsto x^3$, la dérivée $3x^2$ s'annule en $0$ en restant positive : la tangente y est horizontale, mais la fonction ne cesse pas de croître.",
+      "difficulte": 3,
+      "tags": ["extremum", "piege", "tangente-horizontale"]
+    },
+    {
+      "id": "TD-CH03-027",
+      "lecon": "Etude complète d'une fonction",
+      "type": "formule",
+      "recto": "Quelles limites font apparaître respectivement une asymptote verticale, horizontale et oblique ?",
+      "verso": "$\\displaystyle\\lim_{x\\to a}f(x)=\\pm\\infty$ donne l'asymptote verticale $x=a$ ; $\\displaystyle\\lim_{x\\to\\pm\\infty}f(x)=\\ell$ donne l'asymptote horizontale $y=\\ell$ ; $\\displaystyle\\lim_{x\\to\\pm\\infty}\\left[f(x)-(ax+b)\\right]=0$ avec $a\\ne 0$ donne l'asymptote oblique $y=ax+b$.",
+      "difficulte": 2,
+      "tags": ["asymptote", "limites"]
+    },
+    {
+      "id": "TD-CH03-028",
+      "lecon": "Etude complète d'une fonction",
+      "type": "formule",
+      "recto": "Comment détermine-t-on la position de la courbe par rapport à son asymptote d'équation $y=ax+b$ ?",
+      "verso": "Par le signe de la différence $d(x)=f(x)-(ax+b)$ : positive, la courbe est au-dessus ; négative, au-dessous ; nulle, la courbe coupe l'asymptote en ce point. Rien n'interdit donc à une courbe de couper son asymptote.",
+      "difficulte": 2,
+      "tags": ["asymptote", "position", "signe"]
+    },
+    {
+      "id": "TD-CH03-029",
+      "lecon": "Etude complète d'une fonction",
+      "type": "formule",
+      "recto": "Combien de solutions l'équation $f(x)=\\lambda$ admet-elle sur un intervalle $I$ où $f$ est continue et strictement monotone ?",
+      "verso": "Une solution et une seule si $\\lambda$ appartient à l'intervalle image $f(I)$, aucune sinon, car $f$ réalise une bijection de $I$ sur $f(I)$. Sur le domaine entier, on additionne les intervalles de monotonie dont l'image contient $\\lambda$.",
+      "difficulte": 2,
+      "tags": ["equation", "bijection", "tableau-de-variations"]
+    },
+    {
+      "id": "TD-CH03-030",
+      "lecon": "Etude complète d'une fonction",
+      "type": "definition",
+      "recto": "Que fait-on lorsque le signe de $f'$ ne se lit pas directement, par exemple pour un polynôme de degré $3$ ?",
+      "verso": "On introduit une fonction auxiliaire, en le signalant explicitement, puis on l'étudie complètement : sa dérivée, ses variations, une racine évidente, enfin son signe. Ce signe fournit alors celui de $f'$.",
+      "difficulte": 2,
+      "tags": ["fonction-auxiliaire", "signe-de-la-derivee"]
+    },
+    {
+      "id": "TD-CH03-031",
+      "lecon": "Symétries, périodicité et branches infinies",
+      "type": "definition",
+      "recto": "Quelles symétries de la courbe traduisent les égalités $f(-x)=f(x)$ et $f(-x)=-f(x)$ ?",
+      "verso": "La première dit que $f$ est paire : courbe symétrique par rapport à l'axe $(Oy)$. La seconde dit que $f$ est impaire : courbe symétrique par rapport à l'origine $O$. Dans les deux cas le domaine doit être symétrique par rapport à $0$, et l'étude se réduit à $[0\\,;+\\infty[$.",
+      "difficulte": 2,
+      "tags": ["parite", "symetrie", "reduction-du-domaine"]
+    },
+    {
+      "id": "TD-CH03-032",
+      "lecon": "Symétries, périodicité et branches infinies",
+      "type": "definition",
+      "recto": "Que signifie l'affirmation « $f$ est périodique de période $T$ » ?",
+      "verso": "Que $T>0$, que $x+T$ reste dans le domaine et que $f(x+T)=f(x)$ pour tout $x$, $T$ étant le plus petit réel strictement positif ayant cette propriété. La courbe est invariante par la translation de vecteur $T\\,\\vec\\imath$.",
+      "difficulte": 2,
+      "tags": ["periodicite", "definition", "translation"]
+    },
+    {
+      "id": "TD-CH03-033",
+      "lecon": "Symétries, périodicité et branches infinies",
+      "type": "formule",
+      "recto": "Quelle est la période de $x\\mapsto\\cos(ax+b)$, avec $a\\ne 0$ ?",
+      "verso": "$T=\\dfrac{2\\pi}{|a|}$, comme pour $x\\mapsto\\sin(ax+b)$ : quand $x$ augmente de $T$, la quantité $ax+b$ augmente de $2\\pi$. Plus $|a|$ est grand, plus la courbe oscille rapidement.",
+      "difficulte": 2,
+      "tags": ["periode", "trigonometrie"]
+    },
+    {
+      "id": "TD-CH03-034",
+      "lecon": "Symétries, périodicité et branches infinies",
+      "type": "formule",
+      "recto": "Quelle est la période d'une somme de deux fonctions périodiques ?",
+      "verso": "Le plus petit commun multiple de leurs périodes, car la somme ne reprend sa valeur que lorsque les deux termes reprennent la leur en même temps. Ainsi $\\sin(2x)+\\cos(3x)$, de périodes $\\pi$ et $\\dfrac{2\\pi}{3}$, est de période $2\\pi$.",
+      "difficulte": 2,
+      "tags": ["periode", "somme", "ppcm"]
+    },
+    {
+      "id": "TD-CH03-035",
+      "lecon": "Symétries, périodicité et branches infinies",
+      "type": "formule",
+      "recto": "Quelles égalités caractérisent un axe de symétrie $x=a$ et un centre de symétrie $A(a\\,;b)$ ?",
+      "verso": "$f(2a-x)=f(x)$ pour l'axe, $f(2a-x)+f(x)=2b$ pour le centre, le domaine devant d'abord être symétrique par rapport à $a$. Dans les deux cas, l'étude se réduit à $[a\\,;+\\infty[$ intersecté avec le domaine.",
+      "difficulte": 2,
+      "tags": ["axe-de-symetrie", "centre-de-symetrie"]
+    },
+    {
+      "id": "TD-CH03-036",
+      "lecon": "Symétries, périodicité et branches infinies",
+      "type": "formule",
+      "recto": "Que dit le signe de $f''$ sur la forme de la courbe de $f$ ?",
+      "verso": "Si $f''>0$ sur $I$, la courbe est convexe : elle tourne sa concavité vers le haut et reste au-dessus de chacune de ses tangentes. Si $f''<0$ sur $I$, elle est concave et reste au-dessous de ses tangentes.",
+      "difficulte": 2,
+      "tags": ["concavite", "derivee-seconde", "convexe"]
+    },
+    {
+      "id": "TD-CH03-037",
+      "lecon": "Symétries, périodicité et branches infinies",
+      "type": "formule",
+      "recto": "A quelle condition la courbe de $f$ admet-elle un point d'inflexion au point d'abscisse $x_0$ ?",
+      "verso": "Il faut que $f''$ s'annule en $x_0$ en changeant de signe ; la tangente traverse alors la courbe. L'égalité $f''(x_0)=0$ ne suffit pas : pour $x\\mapsto x^4$, $f''(x)=12x^2$ s'annule en $0$ sans changer de signe.",
+      "difficulte": 3,
+      "tags": ["point-dinflexion", "derivee-seconde", "piege"]
+    },
+    {
+      "id": "TD-CH03-038",
+      "lecon": "Symétries, périodicité et branches infinies",
+      "type": "formule",
+      "recto": "Comment classe-t-on la branche infinie d'une courbe lorsque $\\displaystyle\\lim_{x\\to+\\infty}f(x)=\\pm\\infty$ ?",
+      "verso": "On étudie $\\displaystyle\\lim_{x\\to+\\infty}\\dfrac{f(x)}{x}$ : infinie, branche parabolique de direction $(Oy)$ ; nulle, branche parabolique de direction $(Ox)$ ; égale à un réel $a$ non nul, on calcule $\\displaystyle\\lim_{x\\to+\\infty}\\left[f(x)-ax\\right]$, finie et valant $b$ pour l'asymptote $y=ax+b$, infinie pour une branche parabolique de direction $y=ax$.",
+      "difficulte": 2,
+      "tags": ["branche-parabolique", "asymptote-oblique", "limites"]
+    }
+  ]
+}

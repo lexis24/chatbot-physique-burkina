@@ -1,0 +1,314 @@
+{
+  "niveau": "3ème",
+  "chapitre": "Chapitre 2 : Les vecteurs du plan : multiplication par un réel et colinéarité",
+  "source": "maths/3eme/Chapitre_2_Les_vecteurs_du_plan",
+  "nombre_cartes": 34,
+  "cartes": [
+    {
+      "id": "3E-CH02-001",
+      "lecon": "Multiplication d'un vecteur par un réel",
+      "type": "definition",
+      "recto": "Quelle est la direction du vecteur $k\\vec{u}$, lorsque le réel $k$ n'est pas nul ?",
+      "verso": "C'est la direction de $\\vec{u}$. La multiplication par un réel ne fait jamais tourner la flèche : la direction est la seule chose qu'elle ne peut pas modifier.",
+      "difficulte": 1,
+      "tags": ["produit-vecteur-reel", "direction"]
+    },
+    {
+      "id": "3E-CH02-002",
+      "lecon": "Multiplication d'un vecteur par un réel",
+      "type": "formule",
+      "recto": "Qu'est-ce qui, dans le réel $k$, décide du sens du vecteur $k\\vec{u}$ ?",
+      "verso": "Son signe : le vecteur $k\\vec{u}$ a le sens de $\\vec{u}$ si $k > 0$, et le sens contraire si $k < 0$.",
+      "difficulte": 1,
+      "tags": ["produit-vecteur-reel", "sens", "signe"]
+    },
+    {
+      "id": "3E-CH02-003",
+      "lecon": "Multiplication d'un vecteur par un réel",
+      "type": "formule",
+      "recto": "Comment obtient-on la longueur du vecteur $k\\vec{u}$ ?",
+      "verso": "Elle vaut $|k|$ fois la longueur de $\\vec{u}$, et non $k$ fois : une longueur ne peut pas être négative. Pour $k = -2$, la longueur est doublée.",
+      "difficulte": 2,
+      "tags": ["produit-vecteur-reel", "longueur", "valeur-absolue"]
+    },
+    {
+      "id": "3E-CH02-004",
+      "lecon": "Multiplication d'un vecteur par un réel",
+      "type": "formule",
+      "recto": "Que valent les produits $0\\vec{u}$, $1\\vec{u}$ et $\\left(-1\\right)\\vec{u}$ ?",
+      "verso": "$0\\vec{u} = \\vec{0}$, le vecteur nul ; $1\\vec{u} = \\vec{u}$ ; $\\left(-1\\right)\\vec{u} = -\\vec{u}$, le vecteur opposé.",
+      "difficulte": 1,
+      "tags": ["produit-vecteur-reel", "cas-particuliers"]
+    },
+    {
+      "id": "3E-CH02-005",
+      "lecon": "Multiplication d'un vecteur par un réel",
+      "type": "definition",
+      "recto": "Pourquoi est-il faux d'écrire $0\\vec{u} = 0$ ?",
+      "verso": "Parce que le produit d'un vecteur par un réel est un vecteur, pas un nombre. Le résultat est le vecteur nul $\\vec{0}$, et non le nombre zéro.",
+      "difficulte": 3,
+      "tags": ["vecteur-nul", "piege", "notation"]
+    },
+    {
+      "id": "3E-CH02-006",
+      "lecon": "Multiplication d'un vecteur par un réel",
+      "type": "formule",
+      "recto": "Quelles règles permettent de développer et de factoriser des produits de vecteurs par des réels ?",
+      "verso": "Pour tous réels $k$ et $k'$ et tous vecteurs $\\vec{u}$ et $\\vec{v}$ : $k\\left(\\vec{u} + \\vec{v}\\right) = k\\vec{u} + k\\vec{v}$ ; $\\left(k + k'\\right)\\vec{u} = k\\vec{u} + k'\\vec{u}$ ; $k\\left(k'\\vec{u}\\right) = \\left(kk'\\right)\\vec{u}$.",
+      "difficulte": 2,
+      "tags": ["produit-vecteur-reel", "calcul-vectoriel"]
+    },
+    {
+      "id": "3E-CH02-007",
+      "lecon": "Multiplication d'un vecteur par un réel",
+      "type": "formule",
+      "recto": "Comment lit-on le coefficient $k$ entre deux flèches de même direction ?",
+      "verso": "Les sens donnent le signe, identiques pour $k$ positif, contraires pour $k$ négatif ; les longueurs donnent la valeur absolue. Une flèche deux fois plus longue et de sens contraire donne $\\overrightarrow{AC} = -2\\overrightarrow{AB}$.",
+      "difficulte": 2,
+      "tags": ["coefficient", "lecture"]
+    },
+    {
+      "id": "3E-CH02-008",
+      "lecon": "Multiplication d'un vecteur par un réel",
+      "type": "formule",
+      "recto": "Quelle égalité vectorielle place le point M au milieu du segment $\\left[AB\\right]$ ?",
+      "verso": "L'égalité $\\overrightarrow{AM} = \\dfrac{1}{2}\\overrightarrow{AB}$ : le coefficient, compris entre $0$ et $1$, raccourcit la flèche sans la retourner.",
+      "difficulte": 2,
+      "tags": ["milieu", "coefficient"]
+    },
+    {
+      "id": "3E-CH02-009",
+      "lecon": "Multiplication d'un vecteur par un réel",
+      "type": "formule",
+      "recto": "Comment construit-on le vecteur $k\\vec{u}$ à partir d'un point A ?",
+      "verso": "On reporte $|k|$ fois la longueur de $\\vec{u}$ depuis A, le long de la même direction, dans le même sens si $k > 0$ et dans le sens contraire si $k < 0$.",
+      "difficulte": 2,
+      "tags": ["construction", "produit-vecteur-reel"]
+    },
+    {
+      "id": "3E-CH02-010",
+      "lecon": "Multiplication d'un vecteur par un réel",
+      "type": "formule",
+      "recto": "Comment place-t-on un point défini par une égalité comme $3\\overrightarrow{EX} + 5\\overrightarrow{FX} = \\vec{0}$ ?",
+      "verso": "On ramène toute l'égalité à un seul vecteur connu grâce à la relation de Chasles. Ici on obtient $8\\overrightarrow{EX} = 5\\overrightarrow{EF}$, donc $\\overrightarrow{EX} = \\dfrac{5}{8}\\overrightarrow{EF}$, et X se construit sans peine.",
+      "difficulte": 3,
+      "tags": ["egalite-vectorielle", "chasles", "construction"]
+    },
+    {
+      "id": "3E-CH02-011",
+      "lecon": "Vecteurs colinéaires",
+      "type": "definition",
+      "recto": "Quand dit-on que deux vecteurs $\\vec{u}$ et $\\vec{v}$ sont colinéaires ?",
+      "verso": "Lorsqu'il existe un réel $k$ tel que $\\vec{v} = k\\vec{u}$, le vecteur $\\vec{u}$ étant non nul.",
+      "difficulte": 1,
+      "tags": ["colinearite", "definition"]
+    },
+    {
+      "id": "3E-CH02-012",
+      "lecon": "Vecteurs colinéaires",
+      "type": "definition",
+      "recto": "Que partagent nécessairement deux vecteurs colinéaires ?",
+      "verso": "La même direction. On dit aussi de deux vecteurs colinéaires qu'ils sont parallèles.",
+      "difficulte": 1,
+      "tags": ["colinearite", "direction"]
+    },
+    {
+      "id": "3E-CH02-013",
+      "lecon": "Vecteurs colinéaires",
+      "type": "definition",
+      "recto": "De quelle caractéristique des vecteurs le mot « colinéaire » parle-t-il uniquement ?",
+      "verso": "De leur direction, jamais de leur longueur ni de leur position. Deux flèches colinéaires peuvent être l'une minuscule et l'autre immense, l'une à gauche de la feuille et l'autre à droite.",
+      "difficulte": 2,
+      "tags": ["colinearite", "direction", "sens"]
+    },
+    {
+      "id": "3E-CH02-014",
+      "lecon": "Vecteurs colinéaires",
+      "type": "formule",
+      "recto": "A quels vecteurs le vecteur nul $\\vec{0}$ est-il colinéaire ?",
+      "verso": "A tous, car $\\vec{0} = 0 \\times \\vec{u}$ quel que soit $\\vec{u}$. Le vecteur nul n'a pas de direction propre, rien ne l'empêche donc d'accompagner n'importe quelle direction.",
+      "difficulte": 2,
+      "tags": ["vecteur-nul", "colinearite"]
+    },
+    {
+      "id": "3E-CH02-015",
+      "lecon": "Vecteurs colinéaires",
+      "type": "definition",
+      "recto": "Que renseigne le coefficient de colinéarité $k$ sur deux vecteurs colinéaires ?",
+      "verso": "Son signe donne le sens relatif des deux vecteurs, et sa valeur absolue le rapport de leurs longueurs.",
+      "difficulte": 2,
+      "tags": ["coefficient", "colinearite"]
+    },
+    {
+      "id": "3E-CH02-016",
+      "lecon": "Vecteurs colinéaires",
+      "type": "definition",
+      "recto": "Quelle différence y a-t-il entre deux vecteurs colinéaires et deux vecteurs égaux ?",
+      "verso": "Deux vecteurs égaux sont colinéaires, avec $k = 1$, mais la réciproque est fausse : deux vecteurs colinéaires peuvent avoir des longueurs différentes et des sens contraires.",
+      "difficulte": 3,
+      "tags": ["colinearite", "egalite", "piege"]
+    },
+    {
+      "id": "3E-CH02-017",
+      "lecon": "Vecteurs colinéaires",
+      "type": "formule",
+      "recto": "Comment montre-t-on que $\\vec{u} = 2\\vec{i} + \\vec{j}$ et $\\vec{v} = 6\\vec{i} + 3\\vec{j}$ sont colinéaires ?",
+      "verso": "En factorisant l'écriture de $\\vec{v}$ pour y faire apparaître $\\vec{u}$ : $\\vec{v} = 3\\left(2\\vec{i} + \\vec{j}\\right) = 3\\vec{u}$. Le facteur trouvé est le coefficient, ici $k = 3$.",
+      "difficulte": 2,
+      "tags": ["colinearite", "factorisation"]
+    },
+    {
+      "id": "3E-CH02-018",
+      "lecon": "Vecteurs colinéaires",
+      "type": "formule",
+      "recto": "Que conclut-on lorsque aucune factorisation ne permet d'écrire $\\vec{v} = k\\vec{u}$ ?",
+      "verso": "Que les deux vecteurs ne sont pas colinéaires : aucun réel ne transforme l'un en l'autre, donc leurs directions sont différentes.",
+      "difficulte": 2,
+      "tags": ["colinearite", "conclusion"]
+    },
+    {
+      "id": "3E-CH02-019",
+      "lecon": "Vecteurs colinéaires",
+      "type": "formule",
+      "recto": "Comment reconnaît-on l'égalité de deux vecteurs écrits avec deux vecteurs non colinéaires $\\vec{i}$ et $\\vec{j}$ ?",
+      "verso": "Ils sont égaux quand leurs coefficients le sont terme à terme. De $-12\\vec{i} + m\\vec{j} = 4k\\vec{i} - 3k\\vec{j}$ on tire $4k = -12$, donc $k = -3$, puis $m = 9$.",
+      "difficulte": 3,
+      "tags": ["identification", "coefficient", "colinearite"]
+    },
+    {
+      "id": "3E-CH02-020",
+      "lecon": "Caractérisation vectorielle de l'alignement de trois points",
+      "type": "formule",
+      "recto": "Quelle condition vectorielle caractérise l'alignement de trois points A, B et C ?",
+      "verso": "Les points A, B et C sont alignés si et seulement si $\\overrightarrow{AB}$ et $\\overrightarrow{AC}$ sont colinéaires, c'est-à-dire s'il existe un réel $k$ tel que $\\overrightarrow{AC} = k\\overrightarrow{AB}$.",
+      "difficulte": 1,
+      "tags": ["alignement", "colinearite", "caracterisation"]
+    },
+    {
+      "id": "3E-CH02-021",
+      "lecon": "Caractérisation vectorielle de l'alignement de trois points",
+      "type": "definition",
+      "recto": "Que signifie le « si et seulement si » de la caractérisation de l'alignement ?",
+      "verso": "Que la propriété s'emploie dans les deux sens : si A, B et C sont alignés, alors $\\overrightarrow{AB}$ et $\\overrightarrow{AC}$ sont colinéaires, et réciproquement si $\\overrightarrow{AC} = k\\overrightarrow{AB}$, alors les trois points sont alignés.",
+      "difficulte": 2,
+      "tags": ["equivalence", "alignement"]
+    },
+    {
+      "id": "3E-CH02-022",
+      "lecon": "Caractérisation vectorielle de l'alignement de trois points",
+      "type": "formule",
+      "recto": "Quelle condition les deux vecteurs comparés doivent-ils remplir pour démontrer un alignement ?",
+      "verso": "Ils doivent partir du même point. Comparer $\\overrightarrow{AB}$ et $\\overrightarrow{CD}$ ne prouve rien sur l'alignement de ces quatre points : cela prouve seulement que les droites $\\left(AB\\right)$ et $\\left(CD\\right)$ sont parallèles.",
+      "difficulte": 3,
+      "tags": ["alignement", "piege", "point-commun"]
+    },
+    {
+      "id": "3E-CH02-023",
+      "lecon": "Caractérisation vectorielle de l'alignement de trois points",
+      "type": "formule",
+      "recto": "Quel point de départ commun peut-on choisir pour démontrer que A, B et C sont alignés ?",
+      "verso": "N'importe lequel des trois, pourvu que les deux vecteurs en partent. Au lieu de $\\overrightarrow{AB}$ et $\\overrightarrow{AC}$, on peut comparer $\\overrightarrow{BA}$ et $\\overrightarrow{BC}$.",
+      "difficulte": 2,
+      "tags": ["alignement", "methode"]
+    },
+    {
+      "id": "3E-CH02-024",
+      "lecon": "Caractérisation vectorielle de l'alignement de trois points",
+      "type": "formule",
+      "recto": "Que dit le coefficient $k$ de l'égalité $\\overrightarrow{AC} = k\\overrightarrow{AB}$ sur la position du point C ?",
+      "verso": "Si $k > 0$, les points B et C sont du même côté de A ; si $k < 0$, ils sont de part et d'autre de A. Si de plus $0 < k < 1$, le point C se trouve entre A et B.",
+      "difficulte": 2,
+      "tags": ["coefficient", "position", "alignement"]
+    },
+    {
+      "id": "3E-CH02-025",
+      "lecon": "Caractérisation vectorielle de l'alignement de trois points",
+      "type": "formule",
+      "recto": "Pourquoi la relation de Chasles intervient-elle dans une démonstration d'alignement ?",
+      "verso": "Parce que les données donnent rarement deux vecteurs partant du même point. De $\\overrightarrow{AB}$ et $\\overrightarrow{BC}$, elle fabrique le vecteur manquant : $\\overrightarrow{AC} = \\overrightarrow{AB} + \\overrightarrow{BC}$.",
+      "difficulte": 2,
+      "tags": ["chasles", "alignement", "methode"]
+    },
+    {
+      "id": "3E-CH02-026",
+      "lecon": "Caractérisation vectorielle de l'alignement de trois points",
+      "type": "definition",
+      "recto": "Lequel des deux sens de l'équivalence emploie-t-on quand on part d'une égalité vectorielle pour conclure à un alignement ?",
+      "verso": "Le sens réciproque : de la colinéarité des vecteurs on déduit l'alignement des points. On l'écrit sur la copie, « donc A, B et C sont alignés ».",
+      "difficulte": 3,
+      "tags": ["reciproque", "alignement", "redaction"]
+    },
+    {
+      "id": "3E-CH02-027",
+      "lecon": "Caractérisation vectorielle du parallélisme de deux droites",
+      "type": "formule",
+      "recto": "Quelle condition vectorielle caractérise le parallélisme des droites $\\left(AB\\right)$ et $\\left(CD\\right)$ ?",
+      "verso": "Ces deux droites sont parallèles si et seulement si les vecteurs $\\overrightarrow{AB}$ et $\\overrightarrow{CD}$ sont colinéaires.",
+      "difficulte": 1,
+      "tags": ["parallelisme", "colinearite", "caracterisation"]
+    },
+    {
+      "id": "3E-CH02-028",
+      "lecon": "Caractérisation vectorielle du parallélisme de deux droites",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on un vecteur directeur d'une droite ?",
+      "verso": "Un vecteur porté par cette droite, qui en donne la direction. Ainsi $\\overrightarrow{AB}$ est un vecteur directeur de la droite $\\left(AB\\right)$.",
+      "difficulte": 1,
+      "tags": ["vecteur-directeur", "definition"]
+    },
+    {
+      "id": "3E-CH02-029",
+      "lecon": "Caractérisation vectorielle du parallélisme de deux droites",
+      "type": "definition",
+      "recto": "Par quoi une droite est-elle entièrement déterminée ?",
+      "verso": "Par un point et une direction. Deux droites sont donc parallèles exactement quand elles portent la même direction, quelle que soit leur position sur la feuille.",
+      "difficulte": 2,
+      "tags": ["droite", "direction", "parallelisme"]
+    },
+    {
+      "id": "3E-CH02-030",
+      "lecon": "Caractérisation vectorielle du parallélisme de deux droites",
+      "type": "definition",
+      "recto": "Dans quel cas deux droites portées par des vecteurs colinéaires sont-elles confondues ?",
+      "verso": "Lorsque les quatre points sont alignés : les deux droites se superposent alors, ce qui reste un cas particulier du parallélisme.",
+      "difficulte": 3,
+      "tags": ["droites-confondues", "parallelisme", "piege"]
+    },
+    {
+      "id": "3E-CH02-031",
+      "lecon": "Caractérisation vectorielle du parallélisme de deux droites",
+      "type": "definition",
+      "recto": "Quelle différence de configuration sépare une démonstration d'alignement d'une démonstration de parallélisme ?",
+      "verso": "Pour un alignement, les deux vecteurs comparés partent du même point ; pour un parallélisme, ils sont portés par deux droites différentes.",
+      "difficulte": 2,
+      "tags": ["alignement", "parallelisme", "distinction"]
+    },
+    {
+      "id": "3E-CH02-032",
+      "lecon": "Caractérisation vectorielle du parallélisme de deux droites",
+      "type": "definition",
+      "recto": "Quel avantage la caractérisation vectorielle offre-t-elle par rapport à l'observation d'un dessin ?",
+      "verso": "Elle change une question de position en question de calcul. Deux droites presque parallèles se coupent parfois très loin, hors du dessin, et l'œil ne peut pas trancher, alors que le calcul tranche toujours.",
+      "difficulte": 2,
+      "tags": ["parallelisme", "demonstration", "sens"]
+    },
+    {
+      "id": "3E-CH02-033",
+      "lecon": "Caractérisation vectorielle du parallélisme de deux droites",
+      "type": "formule",
+      "recto": "Comment fabrique-t-on le vecteur $\\overrightarrow{MN}$ quand seules les positions de M et de N par rapport à A sont connues ?",
+      "verso": "On passe par A grâce à la relation de Chasles : $\\overrightarrow{MN} = \\overrightarrow{MA} + \\overrightarrow{AN}$, sans oublier que $\\overrightarrow{MA} = -\\overrightarrow{AM}$.",
+      "difficulte": 2,
+      "tags": ["chasles", "parallelisme", "methode"]
+    },
+    {
+      "id": "3E-CH02-034",
+      "lecon": "Caractérisation vectorielle du parallélisme de deux droites",
+      "type": "formule",
+      "recto": "Que donne la valeur absolue du coefficient de colinéarité sur les longueurs de deux segments portés par des droites parallèles ?",
+      "verso": "Elle donne leur rapport. Si $\\overrightarrow{CD} = -\\dfrac{1}{2}\\overrightarrow{AB}$ et $AB = 24$ m, alors $CD = \\dfrac{1}{2} \\times 24 = 12$ m, et les deux sens sont contraires.",
+      "difficulte": 2,
+      "tags": ["coefficient", "longueur", "parallelisme"]
+    }
+  ]
+}

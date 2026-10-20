@@ -1,0 +1,305 @@
+{
+  "niveau": "6ème",
+  "chapitre": "Chapitre 18 : Parallélépipède rectangle et cube",
+  "source": "maths/6eme/Chapitre_18_Pave_droit_et_cube",
+  "nombre_cartes": 33,
+  "cartes": [
+    {
+      "id": "6E-CH18-001",
+      "lecon": "Décrire le pavé droit et le cube",
+      "type": "definition",
+      "recto": "Combien de faces, d'arêtes et de sommets compte un pavé droit ?",
+      "verso": "Il compte $6$ faces rectangulaires, opposées deux à deux, $12$ arêtes et $8$ sommets.",
+      "difficulte": 1,
+      "tags": ["pave-droit", "faces", "aretes", "sommets"]
+    },
+    {
+      "id": "6E-CH18-002",
+      "lecon": "Décrire le pavé droit et le cube",
+      "type": "definition",
+      "recto": "Qu'est-ce qu'un cube ?",
+      "verso": "C'est un pavé droit particulier dont les $6$ faces sont des carrés identiques. Toutes ses arêtes ont donc la même longueur, comme sur un dé de ludo.",
+      "difficulte": 1,
+      "tags": ["cube", "definition"]
+    },
+    {
+      "id": "6E-CH18-003",
+      "lecon": "Décrire le pavé droit et le cube",
+      "type": "definition",
+      "recto": "Pourquoi un cube est-il un pavé droit ?",
+      "verso": "Parce qu'il a lui aussi $6$ faces, $12$ arêtes et $8$ sommets : seule la forme de ses faces le distingue. Le cube est au pavé droit ce que le carré est au rectangle.",
+      "difficulte": 3,
+      "tags": ["cube", "pave-droit", "piege"]
+    },
+    {
+      "id": "6E-CH18-004",
+      "lecon": "Décrire le pavé droit et le cube",
+      "type": "definition",
+      "recto": "Sur un solide, comment appelle-t-on les bords où deux faces se rejoignent ?",
+      "verso": "Ce sont les arêtes. Les coins, eux, s'appellent les sommets, et les surfaces plates sont les faces.",
+      "difficulte": 1,
+      "tags": ["arete", "sommet", "vocabulaire"]
+    },
+    {
+      "id": "6E-CH18-005",
+      "lecon": "Décrire le pavé droit et le cube",
+      "type": "formule",
+      "recto": "Combien d'arêtes partent de chaque sommet d'un pavé droit ?",
+      "verso": "Exactement $3$. Cela permet de contrôler le compte : $8 \\times 3 = 24$, mais chaque arête est comptée deux fois, une par extrémité, donc il y a bien $24 \\div 2 = 12$ arêtes.",
+      "difficulte": 2,
+      "tags": ["arete", "sommet", "denombrement"]
+    },
+    {
+      "id": "6E-CH18-006",
+      "lecon": "Décrire le pavé droit et le cube",
+      "type": "definition",
+      "recto": "Sur un pavé $ABCDEFGH$, combien de lettres faut-il pour nommer une face ?",
+      "verso": "Quatre, celles de ses quatre sommets : $ABFE$ est la face de devant. Une arête, elle, se nomme par ses deux extrémités, entre crochets, comme $\\left[AB\\right]$.",
+      "difficulte": 2,
+      "tags": ["pave-droit", "nommer", "notation"]
+    },
+    {
+      "id": "6E-CH18-007",
+      "lecon": "Décrire le pavé droit et le cube",
+      "type": "definition",
+      "recto": "Quand dit-on que deux faces d'un pavé droit sont opposées ?",
+      "verso": "Quand elles n'ont aucun sommet commun. Sur $ABCDEFGH$ : $ABCD$ et $EFGH$, $ABFE$ et $DCGH$, $BCGF$ et $ADHE$.",
+      "difficulte": 2,
+      "tags": ["faces-opposees", "pave-droit"]
+    },
+    {
+      "id": "6E-CH18-008",
+      "lecon": "Décrire le pavé droit et le cube",
+      "type": "definition",
+      "recto": "Comment appelle-t-on les trois dimensions d'un pavé droit ?",
+      "verso": "La longueur $L$, la largeur $l$ et la hauteur $h$.",
+      "difficulte": 1,
+      "tags": ["pave-droit", "dimensions"]
+    },
+    {
+      "id": "6E-CH18-009",
+      "lecon": "Décrire le pavé droit et le cube",
+      "type": "formule",
+      "recto": "Pourquoi trois mesures suffisent-elles à décrire entièrement un pavé droit ?",
+      "verso": "Parce que ses six faces se rangent en trois paires de faces identiques : la face du dessus reprend celle du dessous, et il en va de même pour les deux autres paires. Toutes les autres dimensions se répètent.",
+      "difficulte": 2,
+      "tags": ["pave-droit", "faces-opposees", "dimensions"]
+    },
+    {
+      "id": "6E-CH18-010",
+      "lecon": "Perspective et patron",
+      "type": "definition",
+      "recto": "Qu'est-ce que la perspective cavalière ?",
+      "verso": "C'est la façon de dessiner un solide en relief sur une feuille : la face avant est dessinée en vraie grandeur, et la profondeur est tracée en oblique, raccourcie, souvent de moitié.",
+      "difficulte": 2,
+      "tags": ["perspective", "definition"]
+    },
+    {
+      "id": "6E-CH18-011",
+      "lecon": "Perspective et patron",
+      "type": "formule",
+      "recto": "Comment trace-t-on les arêtes que l'œil ne verrait pas sur un dessin en perspective ?",
+      "verso": "En pointillés, pour qu'on sache qu'elles existent sans les confondre avec les autres. Sur un pavé posé devant soi, il y en a exactement $3$.",
+      "difficulte": 1,
+      "tags": ["perspective", "aretes-cachees"]
+    },
+    {
+      "id": "6E-CH18-012",
+      "lecon": "Perspective et patron",
+      "type": "formule",
+      "recto": "Pourquoi y a-t-il toujours trois arêtes cachées sur un pavé dessiné en perspective ?",
+      "verso": "Parce qu'on voit au plus trois faces : le devant, un côté et le dessus. Les trois autres sont derrière, et avec elles les trois arêtes qui partent du sommet du fond.",
+      "difficulte": 2,
+      "tags": ["perspective", "aretes-cachees"]
+    },
+    {
+      "id": "6E-CH18-013",
+      "lecon": "Perspective et patron",
+      "type": "definition",
+      "recto": "Qu'est-ce que le patron d'un solide ?",
+      "verso": "C'est le dessin obtenu en dépliant le solide à plat. Pour un pavé droit, il est formé de $6$ rectangles identiques deux à deux ; pour un cube, de $6$ carrés identiques.",
+      "difficulte": 2,
+      "tags": ["patron", "definition"]
+    },
+    {
+      "id": "6E-CH18-014",
+      "lecon": "Perspective et patron",
+      "type": "formule",
+      "recto": "Pourquoi six carrés ne forment-ils pas toujours le patron d'un cube ?",
+      "verso": "Parce qu'ils doivent aussi être bien disposés. Rangés en rectangle de $2$ carrés sur $3$, ils ne se referment pas : deux faces se superposent et deux trous restent ouverts.",
+      "difficulte": 3,
+      "tags": ["patron", "cube", "piege"]
+    },
+    {
+      "id": "6E-CH18-015",
+      "lecon": "Perspective et patron",
+      "type": "formule",
+      "recto": "Comment retrouve-t-on les trois dimensions d'un pavé à partir de son patron ?",
+      "verso": "Chaque paire de rectangles identiques correspond à deux faces opposées : on relève les longueurs qui reviennent. Deux rectangles $6 \\times 4$, deux $6 \\times 3$ et deux $4 \\times 3$ donnent un pavé de $6$ cm sur $4$ cm sur $3$ cm.",
+      "difficulte": 2,
+      "tags": ["patron", "dimensions"]
+    },
+    {
+      "id": "6E-CH18-016",
+      "lecon": "Perspective et patron",
+      "type": "definition",
+      "recto": "Quel avantage le patron a-t-il sur le dessin en perspective ?",
+      "verso": "Aucune longueur n'y est déformée : chaque face apparaît en vraie grandeur. En échange, on perd la vue d'ensemble et il faut imaginer le pliage.",
+      "difficulte": 2,
+      "tags": ["patron", "perspective"]
+    },
+    {
+      "id": "6E-CH18-017",
+      "lecon": "L'aire totale",
+      "type": "definition",
+      "recto": "Qu'est-ce que l'aire totale d'un solide ?",
+      "verso": "C'est la somme des aires de toutes ses faces, c'est-à-dire la surface à peindre ou à recouvrir.",
+      "difficulte": 1,
+      "tags": ["aire-totale", "definition"]
+    },
+    {
+      "id": "6E-CH18-018",
+      "lecon": "L'aire totale",
+      "type": "formule",
+      "recto": "Quelle est la formule de l'aire totale d'un cube d'arête $c$ ?",
+      "verso": "Aire totale $= 6 \\times \\left(c \\times c\\right)$, car les six faces sont des carrés identiques d'aire $c \\times c$. Pour $c = 4$ cm : $6 \\times 16 = 96$ cm$^{2}$.",
+      "difficulte": 1,
+      "tags": ["aire-totale", "cube", "formule"]
+    },
+    {
+      "id": "6E-CH18-019",
+      "lecon": "L'aire totale",
+      "type": "formule",
+      "recto": "Quelle est la formule de l'aire totale d'un pavé droit de dimensions $L$, $l$ et $h$ ?",
+      "verso": "Aire totale $= 2 \\times \\left(L \\times l\\right) + 2 \\times \\left(L \\times h\\right) + 2 \\times \\left(l \\times h\\right)$ : on calcule trois rectangles différents, on double chacun, puis on additionne.",
+      "difficulte": 2,
+      "tags": ["aire-totale", "pave-droit", "formule"]
+    },
+    {
+      "id": "6E-CH18-020",
+      "lecon": "L'aire totale",
+      "type": "formule",
+      "recto": "Pourquoi n'y a-t-il que trois aires différentes à calculer pour l'aire totale d'un pavé ?",
+      "verso": "Parce que les faces vont par paires : chaque face a sa jumelle en face d'elle. On calcule donc trois aires seulement, on double chacune, et on additionne.",
+      "difficulte": 2,
+      "tags": ["aire-totale", "faces-opposees"]
+    },
+    {
+      "id": "6E-CH18-021",
+      "lecon": "L'aire totale",
+      "type": "formule",
+      "recto": "Dans quelle sorte d'unité exprime-t-on une aire totale ?",
+      "verso": "En unités carrées, comme le cm$^{2}$ ou le m$^{2}$, puisqu'il s'agit d'une surface.",
+      "difficulte": 1,
+      "tags": ["aire-totale", "unites"]
+    },
+    {
+      "id": "6E-CH18-022",
+      "lecon": "L'aire totale",
+      "type": "formule",
+      "recto": "Pourquoi l'aire totale d'un cube ne vaut-elle pas $c \\times c$ ?",
+      "verso": "Parce que $c \\times c$ est l'aire d'une seule face. L'aire totale compte les six faces, elle vaut donc $6 \\times \\left(c \\times c\\right)$.",
+      "difficulte": 3,
+      "tags": ["aire-totale", "cube", "piege"]
+    },
+    {
+      "id": "6E-CH18-023",
+      "lecon": "L'aire totale",
+      "type": "formule",
+      "recto": "Que faut-il vérifier avant d'appliquer la formule de l'aire totale à un grenier que l'on veut crépir ?",
+      "verso": "Quelles faces sont réellement demandées. Si l'on crépit les quatre murs et le plafond, on ne compte pas le sol : on additionne alors cinq faces seulement.",
+      "difficulte": 2,
+      "tags": ["aire-totale", "aire-partielle"]
+    },
+    {
+      "id": "6E-CH18-024",
+      "lecon": "L'aire totale",
+      "type": "formule",
+      "recto": "Comment retrouve-t-on l'arête d'un cube dont on connaît l'aire totale ?",
+      "verso": "On divise l'aire totale par $6$ pour obtenir l'aire d'une face, puis on cherche le nombre qui, multiplié par lui-même, donne cette aire. Pour $54$ cm$^{2}$ : $54 \\div 6 = 9$, donc l'arête vaut $3$ cm.",
+      "difficulte": 2,
+      "tags": ["aire-totale", "cube", "question-inverse"]
+    },
+    {
+      "id": "6E-CH18-025",
+      "lecon": "Le volume et la capacité",
+      "type": "definition",
+      "recto": "Que mesure le volume d'un solide ?",
+      "verso": "La place qu'il occupe dans l'espace. On le donne en unités cubes : cm$^{3}$, dm$^{3}$ ou m$^{3}$.",
+      "difficulte": 1,
+      "tags": ["volume", "definition", "unites"]
+    },
+    {
+      "id": "6E-CH18-026",
+      "lecon": "Le volume et la capacité",
+      "type": "formule",
+      "recto": "Quelle est la formule du volume d'un pavé droit ?",
+      "verso": "Volume $= L \\times l \\times h$. Les trois dimensions doivent être exprimées dans la même unité avant d'être multipliées.",
+      "difficulte": 2,
+      "tags": ["volume", "pave-droit", "formule"]
+    },
+    {
+      "id": "6E-CH18-027",
+      "lecon": "Le volume et la capacité",
+      "type": "formule",
+      "recto": "Quelle est la formule du volume d'un cube d'arête $c$ ?",
+      "verso": "Volume $= c \\times c \\times c$. Pour une arête de $5$ cm : $5 \\times 5 \\times 5 = 125$ cm$^{3}$.",
+      "difficulte": 1,
+      "tags": ["volume", "cube", "formule"]
+    },
+    {
+      "id": "6E-CH18-028",
+      "lecon": "Le volume et la capacité",
+      "type": "formule",
+      "recto": "Pourquoi le volume d'un pavé ne vaut-il pas $L \\times l$ ?",
+      "verso": "Parce que $L \\times l$ ne compte que deux dimensions : c'est une aire. Le volume en multiplie trois, $L \\times l \\times h$, et son résultat s'exprime en unités cubes.",
+      "difficulte": 3,
+      "tags": ["volume", "aire", "piege"]
+    },
+    {
+      "id": "6E-CH18-029",
+      "lecon": "Le volume et la capacité",
+      "type": "formule",
+      "recto": "A combien de litres et de centimètres cubes correspond $1$ dm$^{3}$ ?",
+      "verso": "$1$ dm$^{3} = 1$ litre $= 1\\,000$ cm$^{3}$. Un litre est exactement le volume d'un cube de $10$ cm d'arête.",
+      "difficulte": 1,
+      "tags": ["capacite", "litre", "conversion"]
+    },
+    {
+      "id": "6E-CH18-030",
+      "lecon": "Le volume et la capacité",
+      "type": "formule",
+      "recto": "Combien de litres contient $1$ m$^{3}$ ?",
+      "verso": "$1\\,000$ litres. On a aussi $1$ m$^{3} = 1\\,000$ dm$^{3} = 1\\,000\\,000$ cm$^{3}$.",
+      "difficulte": 2,
+      "tags": ["capacite", "conversion", "unites"]
+    },
+    {
+      "id": "6E-CH18-031",
+      "lecon": "Le volume et la capacité",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on la capacité d'un récipient ?",
+      "verso": "C'est ce que le récipient peut contenir ; elle se mesure en litres. Le mot vient du latin capere, qui veut dire contenir.",
+      "difficulte": 2,
+      "tags": ["capacite", "vocabulaire"]
+    },
+    {
+      "id": "6E-CH18-032",
+      "lecon": "Le volume et la capacité",
+      "type": "formule",
+      "recto": "Comment retrouve-t-on la hauteur d'un pavé dont on connaît le volume et les deux autres dimensions ?",
+      "verso": "Par une division, comme dans une égalité à trou : $h = V \\div \\left(L \\times l\\right)$. Pour $V = 240$ m$^{3}$, $L = 10$ m et $l = 6$ m : $240 \\div 60 = 4$ m.",
+      "difficulte": 2,
+      "tags": ["volume", "dimension-manquante"]
+    },
+    {
+      "id": "6E-CH18-033",
+      "lecon": "Le volume et la capacité",
+      "type": "formule",
+      "recto": "Pourquoi le volume d'un pavé s'obtient-il en multipliant trois longueurs ?",
+      "verso": "Parce que mesurer un volume, c'est compter des cubes : une couche du fond en contient longueur fois largeur, et l'on empile autant de couches que la hauteur en contient.",
+      "difficulte": 2,
+      "tags": ["volume", "pourquoi"]
+    }
+  ]
+}

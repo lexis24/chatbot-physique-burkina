@@ -1,0 +1,350 @@
+{
+  "niveau": "Terminale D",
+  "chapitre": "Chapitre 5 : Fonction exponentielle et fonctions puissances",
+  "source": "maths/tleD/Chapitre_5_Exponentielle_puissances",
+  "nombre_cartes": 38,
+  "cartes": [
+    {
+      "id": "TD-CH05-001",
+      "lecon": "Fonction exponentielle",
+      "type": "definition",
+      "recto": "Comment définit-on la fonction exponentielle népérienne ?",
+      "verso": "Comme la bijection réciproque de $\\ln$ : elle est définie sur $\\mathbb{R}$, à valeurs dans $]0\\,;+\\infty[$, et $y=\\exp(x)\\iff x=\\ln y$ pour $y>0$. Il en découle $\\ln\\left(e^x\\right)=x$ pour tout réel $x$, et $e^{\\ln y}=y$ pour tout $y>0$.",
+      "difficulte": 1,
+      "tags": ["exponentielle", "definition", "reciproque"]
+    },
+    {
+      "id": "TD-CH05-002",
+      "lecon": "Fonction exponentielle",
+      "type": "formule",
+      "recto": "Pour quelles valeurs du réel $k$ l'équation $e^x=k$ admet-elle une solution ?",
+      "verso": "Uniquement pour $k>0$, puisque $e^x>0$ pour tout réel $x$ : l'exponentielle ne s'annule jamais et ne prend jamais de valeur négative. La solution est alors unique et vaut $x=\\ln k$.",
+      "difficulte": 2,
+      "tags": ["equation", "signe", "exponentielle"]
+    },
+    {
+      "id": "TD-CH05-003",
+      "lecon": "Fonction exponentielle",
+      "type": "formule",
+      "recto": "Que valent $e^{a+b}$, $e^{-b}$ et $e^{a-b}$ pour des réels $a$ et $b$ ?",
+      "verso": "$e^{a+b}=e^a\\times e^b$, qui est la relation fonctionnelle, puis $e^{-b}=\\dfrac{1}{e^b}$ et $e^{a-b}=\\dfrac{e^a}{e^b}$. L'exponentielle transforme les sommes en produits, exactement à l'inverse du logarithme.",
+      "difficulte": 1,
+      "tags": ["relation-fonctionnelle", "regles-de-calcul"]
+    },
+    {
+      "id": "TD-CH05-004",
+      "lecon": "Fonction exponentielle",
+      "type": "formule",
+      "recto": "Pourquoi $e^{a+b}$ n'est-il pas égal à $e^a+e^b$ ?",
+      "verso": "Parce que l'exponentielle transforme une somme en produit : $e^{a+b}=e^a\\times e^b$. Le contre-exemple le plus court est $e^{0+0}=e^0=1$, alors que $e^0+e^0=2$. De même, $e^{2x}$ vaut $\\left(e^x\\right)^2$ et non $2e^x$.",
+      "difficulte": 3,
+      "tags": ["piege", "relation-fonctionnelle", "somme"]
+    },
+    {
+      "id": "TD-CH05-005",
+      "lecon": "Fonction exponentielle",
+      "type": "formule",
+      "recto": "Quelles équivalences la stricte croissance de $\\exp$ fournit-elle pour résoudre $e^A=e^B$ ?",
+      "verso": "$e^A=e^B\\iff A=B$ et $e^A<e^B\\iff A<B$ : on compare directement les exposants, sans appliquer $\\ln$, et le sens de l'inégalité est conservé.",
+      "difficulte": 2,
+      "tags": ["resolution", "equivalences", "croissance"]
+    },
+    {
+      "id": "TD-CH05-006",
+      "lecon": "Fonction exponentielle",
+      "type": "formule",
+      "recto": "Quel changement d'inconnue ramène l'équation $e^{2x}-3e^x+2=0$ au second degré ?",
+      "verso": "On pose $X=e^x$, avec la condition $X>0$, puisque $e^{2x}=\\left(e^x\\right)^2$. On résout alors $X^2-3X+2=0$, puis on revient à $x$ en écartant les valeurs de $X$ négatives ou nulles.",
+      "difficulte": 2,
+      "tags": ["changement-dinconnue", "second-degre", "equation"]
+    },
+    {
+      "id": "TD-CH05-007",
+      "lecon": "Fonction exponentielle",
+      "type": "formule",
+      "recto": "Quelles sont les dérivées de $e^x$ et de $e^u$ ?",
+      "verso": "$\\left(e^x\\right)'=e^x$ : l'exponentielle est égale à sa propre dérivée, qui est donc strictement positive, et $\\exp$ est strictement croissante sur $\\mathbb{R}$. Pour une composée, $\\left(e^u\\right)'=u'\\,e^u$ : on recopie l'exponentielle et on multiplie par la dérivée de l'exposant.",
+      "difficulte": 1,
+      "tags": ["derivee", "composee"]
+    },
+    {
+      "id": "TD-CH05-008",
+      "lecon": "Fonction exponentielle",
+      "type": "formule",
+      "recto": "Que valent les limites de $e^x$ en $-\\infty$ et en $+\\infty$ ?",
+      "verso": "$\\displaystyle\\lim_{x\\to-\\infty}e^x=0^+$, ce qui fait de l'axe des abscisses une asymptote horizontale, la courbe restant strictement au-dessus, et $\\displaystyle\\lim_{x\\to+\\infty}e^x=+\\infty$.",
+      "difficulte": 1,
+      "tags": ["limites", "asymptote-horizontale"]
+    },
+    {
+      "id": "TD-CH05-009",
+      "lecon": "Fonction exponentielle",
+      "type": "formule",
+      "recto": "Quelle approximation de $e^x$ vaut au voisinage de $0$ ?",
+      "verso": "$e^x\\approx 1+x$, ce qui s'écrit $\\displaystyle\\lim_{x\\to 0}\\dfrac{e^x-1}{x}=1$ : cette limite est le nombre dérivé de $\\exp$ en $0$. On admet de plus que $e^x\\ge 1+x$ pour tout réel $x$, donc la courbe reste au-dessus de cette tangente.",
+      "difficulte": 2,
+      "tags": ["approximation-affine", "limite-de-reference"]
+    },
+    {
+      "id": "TD-CH05-010",
+      "lecon": "Fonction exponentielle",
+      "type": "formule",
+      "recto": "Quelles sont les tangentes remarquables à la courbe de $\\exp$ aux points d'abscisses $0$ et $1$ ?",
+      "verso": "En $0$ : $y=x+1$, car $e^0=1$ et la dérivée y vaut $1$. En $1$ : $y=e\\,x$, car $e^1=e$ et la dérivée y vaut $e$ ; cette seconde tangente passe par l'origine.",
+      "difficulte": 2,
+      "tags": ["tangente", "courbe"]
+    },
+    {
+      "id": "TD-CH05-011",
+      "lecon": "Fonction exponentielle",
+      "type": "formule",
+      "recto": "Quelle est la nature de la branche infinie de la courbe de $\\exp$ en $+\\infty$ ?",
+      "verso": "Une branche parabolique de direction $(Oy)$, car $\\dfrac{e^x}{x}$ tend vers $+\\infty$ : la courbe monte plus vite que n'importe quelle droite. Les courbes de $\\exp$ et de $\\ln$ sont d'ailleurs symétriques par rapport à la droite d'équation $y=x$.",
+      "difficulte": 2,
+      "tags": ["branche-parabolique", "symetrie"]
+    },
+    {
+      "id": "TD-CH05-012",
+      "lecon": "Fonction exponentielle",
+      "type": "definition",
+      "recto": "Que représentent $N_0$ et le signe de $k$ dans le modèle $N(t)=N_0\\,e^{kt}$ ?",
+      "verso": "$N_0=N(0)$ est la valeur initiale de la grandeur. Si $k>0$, la fonction est strictement croissante : c'est une croissance exponentielle. Si $k<0$, elle est strictement décroissante et tend vers $0$, la droite d'équation $y=0$ étant asymptote.",
+      "difficulte": 2,
+      "tags": ["modele-exponentiel", "valeur-initiale"]
+    },
+    {
+      "id": "TD-CH05-013",
+      "lecon": "Fonction exponentielle",
+      "type": "formule",
+      "recto": "Pourquoi le temps de doublement d'un modèle exponentiel ne dépend-il pas de la valeur initiale ?",
+      "verso": "Parce que l'équation $N_0e^{kT}=2N_0$ se simplifie par $N_0$, qui n'est pas nul, et se réduit à $e^{kT}=2$, soit $kT=\\ln 2$. Il en va de même pour la demi-vie, définie par $e^{kT}=\\dfrac12$ lorsque $k<0$.",
+      "difficulte": 2,
+      "tags": ["temps-de-doublement", "demi-vie", "modele-exponentiel"]
+    },
+    {
+      "id": "TD-CH05-014",
+      "lecon": "Fonction exponentielle",
+      "type": "formule",
+      "recto": "Que peut-on dire du facteur $e^{u(x)}$ dans l'étude du signe d'un produit tel que $(1+x)e^x$ ?",
+      "verso": "Il est toujours strictement positif : il ne change jamais le signe et n'annule jamais l'expression. Le signe de $(1+x)e^x$ est donc celui du seul facteur $1+x$, et l'équation $e^x=0$ n'a aucune solution.",
+      "difficulte": 2,
+      "tags": ["signe", "factorisation", "exponentielle"]
+    },
+    {
+      "id": "TD-CH05-015",
+      "lecon": "Puissances réelles d'un réel strictement positif",
+      "type": "definition",
+      "recto": "Comment définit-on la puissance $a^b$ pour un réel $a>0$ et un réel $b$ quelconque ?",
+      "verso": "Par $a^b=e^{b\\ln a}$. Cette définition prolonge les puissances entières et conserve la règle $\\ln\\left(a^b\\right)=b\\ln a$ pour tout réel $b$. Elle exige $a>0$, puisqu'elle fait intervenir $\\ln a$.",
+      "difficulte": 1,
+      "tags": ["puissance-reelle", "definition"]
+    },
+    {
+      "id": "TD-CH05-016",
+      "lecon": "Puissances réelles d'un réel strictement positif",
+      "type": "formule",
+      "recto": "Quelles règles de calcul les puissances réelles vérifient-elles pour $a>0$ et $b$, $c$ réels ?",
+      "verso": "$a^b\\times a^c=a^{b+c}$, $\\dfrac{a^b}{a^c}=a^{b-c}$, $a^{-b}=\\dfrac{1}{a^b}$ et $\\left(a^b\\right)^c=a^{bc}$, comme pour les exposants entiers. Toutes se retrouvent en revenant à la définition $a^b=e^{b\\ln a}$.",
+      "difficulte": 2,
+      "tags": ["puissance-reelle", "regles-de-calcul"]
+    },
+    {
+      "id": "TD-CH05-017",
+      "lecon": "Puissances réelles d'un réel strictement positif",
+      "type": "formule",
+      "recto": "Pourquoi la définition $a^b=e^{b\\ln a}$ est-elle la seule possible ?",
+      "verso": "Parce qu'un nombre $N>0$ méritant le nom de $a^b$ doit vérifier $\\ln N=b\\ln a$. Or $\\ln$ est une bijection de $]0\\,;+\\infty[$ sur $\\mathbb{R}$ : un seul nombre possède ce logarithme, à savoir $e^{b\\ln a}$. La définition n'était donc pas un choix.",
+      "difficulte": 3,
+      "tags": ["demonstration", "bijection", "puissance-reelle"]
+    },
+    {
+      "id": "TD-CH05-018",
+      "lecon": "Puissances réelles d'un réel strictement positif",
+      "type": "formule",
+      "recto": "Quelle est la dérivée de la fonction exponentielle de base $a$, définie par $x\\mapsto a^x$ ?",
+      "verso": "$\\left(a^x\\right)'=(\\ln a)\\,a^x$, obtenue en dérivant $e^{x\\ln a}$ par la formule $\\left(e^u\\right)'=u'e^u$. Cette fonction est définie, dérivable et strictement positive sur $\\mathbb{R}$ tout entier.",
+      "difficulte": 2,
+      "tags": ["exponentielle-de-base-a", "derivee"]
+    },
+    {
+      "id": "TD-CH05-019",
+      "lecon": "Puissances réelles d'un réel strictement positif",
+      "type": "formule",
+      "recto": "Comment le sens de variation de $x\\mapsto a^x$ dépend-il de la valeur de $a$ ?",
+      "verso": "Comme $a^x>0$, le signe de la dérivée est celui de $\\ln a$ : la fonction est strictement croissante si $a>1$, constante égale à $1$ si $a=1$, et strictement décroissante si $0<a<1$. Toutes ces courbes passent par le point $(0\\,;1)$.",
+      "difficulte": 2,
+      "tags": ["exponentielle-de-base-a", "variations"]
+    },
+    {
+      "id": "TD-CH05-020",
+      "lecon": "Puissances réelles d'un réel strictement positif",
+      "type": "formule",
+      "recto": "Comment s'écrit une grandeur qui augmente de $p\\ \\%$ par période, au bout de $t$ périodes ?",
+      "verso": "Par $P(t)=P_0\\left(1+\\dfrac{p}{100}\\right)^{t}$, où $P_0$ est la valeur initiale. C'est une exponentielle de base $a=1+\\dfrac{p}{100}$, que l'on ramène à la forme $e^{kt}$ grâce à $a^t=e^{t\\ln a}$, avec $k=\\ln a$.",
+      "difficulte": 2,
+      "tags": ["pourcentage", "modele", "exponentielle-de-base-a"]
+    },
+    {
+      "id": "TD-CH05-021",
+      "lecon": "Puissances réelles d'un réel strictement positif",
+      "type": "formule",
+      "recto": "Comment résout-on l'équation $a^t=k$, avec $a>0$, $a\\ne 1$ et $k>0$ ?",
+      "verso": "On applique $\\ln$ aux deux membres, ce qui fait descendre l'inconnue de l'exposant : $t\\ln a=\\ln k$, donc $t=\\dfrac{\\ln k}{\\ln a}$. Pour une inéquation, cette division change le sens lorsque $0<a<1$, car $\\ln a$ est alors négatif.",
+      "difficulte": 2,
+      "tags": ["equation", "resolution", "puissance"]
+    },
+    {
+      "id": "TD-CH05-022",
+      "lecon": "Puissances réelles d'un réel strictement positif",
+      "type": "definition",
+      "recto": "Pourquoi les écritures $(-3)^{0{,}5}$ et $(-8)^{1/3}$ n'ont-elles pas de sens ?",
+      "verso": "Parce qu'une puissance réelle exige une base strictement positive : $a^b=e^{b\\ln a}$ suppose que $\\ln a$ existe. Le cube de $-2$ vaut bien $-8$, mais cela n'autorise pas pour autant l'écriture $(-8)^{1/3}$.",
+      "difficulte": 3,
+      "tags": ["piege", "base-positive", "puissance-reelle"]
+    },
+    {
+      "id": "TD-CH05-023",
+      "lecon": "Fonctions puissances et racines $n$-ièmes",
+      "type": "definition",
+      "recto": "Comment définit-on la fonction puissance d'exposant réel $\\alpha$, et sur quel ensemble ?",
+      "verso": "Par $x^{\\alpha}=e^{\\alpha\\ln x}$, sur $]0\\,;+\\infty[$ seulement, puisque la définition fait intervenir $\\ln x$.",
+      "difficulte": 1,
+      "tags": ["fonction-puissance", "definition", "domaine"]
+    },
+    {
+      "id": "TD-CH05-024",
+      "lecon": "Fonctions puissances et racines $n$-ièmes",
+      "type": "formule",
+      "recto": "Quelle est la dérivée de $x\\mapsto x^{\\alpha}$ sur $]0\\,;+\\infty[$ ?",
+      "verso": "$\\left(x^{\\alpha}\\right)'=\\alpha\\,x^{\\alpha-1}$, pour tout exposant réel $\\alpha$. On retrouve ainsi la formule connue pour les exposants entiers, et elle donne par exemple $\\left(\\sqrt x\\right)'=\\dfrac12x^{-1/2}=\\dfrac{1}{2\\sqrt x}$.",
+      "difficulte": 1,
+      "tags": ["fonction-puissance", "derivee"]
+    },
+    {
+      "id": "TD-CH05-025",
+      "lecon": "Fonctions puissances et racines $n$-ièmes",
+      "type": "formule",
+      "recto": "Comment le sens de variation de $x\\mapsto x^{\\alpha}$ dépend-il du signe de $\\alpha$ ?",
+      "verso": "Comme $x^{\\alpha-1}>0$ sur $]0\\,;+\\infty[$, le signe de $\\alpha x^{\\alpha-1}$ est celui de $\\alpha$ : la fonction est strictement croissante si $\\alpha>0$, strictement décroissante si $\\alpha<0$, et constante égale à $1$ si $\\alpha=0$.",
+      "difficulte": 2,
+      "tags": ["fonction-puissance", "variations"]
+    },
+    {
+      "id": "TD-CH05-026",
+      "lecon": "Fonctions puissances et racines $n$-ièmes",
+      "type": "formule",
+      "recto": "Quelles sont les limites de $x^{\\alpha}$ en $0^+$ et en $+\\infty$ lorsque $\\alpha<0$ ?",
+      "verso": "$\\displaystyle\\lim_{x\\to 0^+}x^{\\alpha}=+\\infty$ et $\\displaystyle\\lim_{x\\to+\\infty}x^{\\alpha}=0$ : les deux axes sont alors asymptotes à la courbe. Pour $\\alpha>0$, les deux limites sont échangées, $0$ en $0^+$ et $+\\infty$ en $+\\infty$.",
+      "difficulte": 2,
+      "tags": ["fonction-puissance", "limites", "asymptotes"]
+    },
+    {
+      "id": "TD-CH05-027",
+      "lecon": "Fonctions puissances et racines $n$-ièmes",
+      "type": "formule",
+      "recto": "Par quel point passent toutes les courbes de fonctions puissances ?",
+      "verso": "Par le point $(1\\,;1)$, car $1^{\\alpha}=e^{\\alpha\\ln 1}=e^{0}=1$ quel que soit l'exposant $\\alpha$. C'est un repère commode pour contrôler un tracé.",
+      "difficulte": 2,
+      "tags": ["fonction-puissance", "point-commun", "courbe"]
+    },
+    {
+      "id": "TD-CH05-028",
+      "lecon": "Fonctions puissances et racines $n$-ièmes",
+      "type": "definition",
+      "recto": "Qu'est-ce qui distingue l'allure de $x\\mapsto x^{\\alpha}$ selon que $\\alpha>1$ ou $0<\\alpha<1$ ?",
+      "verso": "Dans les deux cas la fonction croît, mais pour $\\alpha>1$ la courbe s'envole, du type $x^2$, alors que pour $0<\\alpha<1$ elle s'aplatit, du type $\\sqrt x$. Un exposant compris entre $0$ et $1$ amortit donc les variations.",
+      "difficulte": 2,
+      "tags": ["fonction-puissance", "allure", "distinction"]
+    },
+    {
+      "id": "TD-CH05-029",
+      "lecon": "Fonctions puissances et racines $n$-ièmes",
+      "type": "formule",
+      "recto": "Comment définit-on la racine $n$-ième d'un réel positif ?",
+      "verso": "Comme la réciproque de $x\\mapsto x^n$, bijection de $[0\\,;+\\infty[$ sur lui-même : pour $x\\ge 0$ et $y\\ge 0$, $y=\\sqrt[n]{x}\\iff x=y^n$. Pour $x>0$, $\\sqrt[n]{x}=x^{1/n}$, et l'équation $x^n=k$ avec $k>0$ a pour unique solution positive $x=\\sqrt[n]{k}$.",
+      "difficulte": 2,
+      "tags": ["racine-n-ieme", "bijection", "reciproque"]
+    },
+    {
+      "id": "TD-CH05-030",
+      "lecon": "Fonctions puissances et racines $n$-ièmes",
+      "type": "definition",
+      "recto": "Pourquoi $x\\mapsto x^{0{,}7}$ n'est-elle pas définie sur $\\mathbb{R}$ alors que $x\\mapsto x^{3}$ l'est ?",
+      "verso": "Parce que $x^{0{,}7}=e^{0{,}7\\ln x}$ exige $x>0$, tandis que $x^{3}$ ne fait intervenir que des multiplications et garde un sens pour tout réel. Le domaine d'une puissance d'exposant réel quelconque est toujours $]0\\,;+\\infty[$.",
+      "difficulte": 3,
+      "tags": ["piege", "domaine", "fonction-puissance"]
+    },
+    {
+      "id": "TD-CH05-031",
+      "lecon": "Fonctions puissances et racines $n$-ièmes",
+      "type": "formule",
+      "recto": "Quelle erreur commet-on en écrivant $\\left(2^x\\right)'=x\\,2^{x-1}$ ?",
+      "verso": "On confond les deux familles : la règle $\\left(x^{\\alpha}\\right)'=\\alpha x^{\\alpha-1}$ vaut quand la variable est en base, alors qu'elle est ici en exposant. La bonne réponse est $\\left(2^x\\right)'=(\\ln 2)\\,2^x$.",
+      "difficulte": 3,
+      "tags": ["piege", "derivee", "confusion"]
+    },
+    {
+      "id": "TD-CH05-032",
+      "lecon": "Croissances comparées",
+      "type": "formule",
+      "recto": "Quelles limites en $+\\infty$ comparent l'exponentielle, les puissances et le logarithme ?",
+      "verso": "Pour tout réel $\\alpha>0$ : $\\displaystyle\\lim_{x\\to+\\infty}\\dfrac{e^x}{x^{\\alpha}}=+\\infty$ et $\\displaystyle\\lim_{x\\to+\\infty}\\dfrac{\\ln x}{x^{\\alpha}}=0$. Autrement dit, l'exponentielle l'emporte sur les puissances, et les puissances l'emportent sur le logarithme.",
+      "difficulte": 1,
+      "tags": ["croissances-comparees", "limites"]
+    },
+    {
+      "id": "TD-CH05-033",
+      "lecon": "Croissances comparées",
+      "type": "formule",
+      "recto": "Que valent $\\displaystyle\\lim_{x\\to 0^+}x^{\\alpha}\\ln x$ et $\\displaystyle\\lim_{x\\to-\\infty}x^{n}e^{x}$ ?",
+      "verso": "Les deux valent $0$, pour tout réel $\\alpha>0$ et tout entier $n\\ge 1$ : la puissance écrase le logarithme en $0^+$, et l'exponentielle écrase la puissance en $-\\infty$.",
+      "difficulte": 2,
+      "tags": ["croissances-comparees", "limites"]
+    },
+    {
+      "id": "TD-CH05-034",
+      "lecon": "Croissances comparées",
+      "type": "formule",
+      "recto": "Que valent $\\displaystyle\\lim_{x\\to+\\infty}\\dfrac{x^{\\alpha}}{e^{x}}$ et $\\displaystyle\\lim_{x\\to+\\infty}x^{\\alpha}e^{-x}$ pour $\\alpha>0$ ?",
+      "verso": "Les deux valent $0$ : ce sont les inverses de la limite de référence $\\dfrac{e^x}{x^{\\alpha}}$, puisque $e^{-x}=\\dfrac{1}{e^x}$. L'exponentielle placée au dénominateur écrase toute puissance du numérateur.",
+      "difficulte": 2,
+      "tags": ["croissances-comparees", "limites", "inverse"]
+    },
+    {
+      "id": "TD-CH05-035",
+      "lecon": "Croissances comparées",
+      "type": "definition",
+      "recto": "Que signifie l'affirmation « cette limite est une forme indéterminée » ?",
+      "verso": "Que la limite ne se lit pas sur celles des morceaux, comme dans les cas $\\dfrac{\\infty}{\\infty}$, $0\\times\\infty$ et $\\infty-\\infty$. Cela ne veut pas dire que la limite n'existe pas : il faut transformer l'écriture pour la trouver.",
+      "difficulte": 2,
+      "tags": ["forme-indeterminee", "limites"]
+    },
+    {
+      "id": "TD-CH05-036",
+      "lecon": "Croissances comparées",
+      "type": "formule",
+      "recto": "Quelle transformation lève l'indétermination de $e^{x}-x^{10}$ en $+\\infty$ ?",
+      "verso": "La mise en facteur du terme dominant : $e^{x}-x^{10}=e^{x}\\left(1-\\dfrac{x^{10}}{e^{x}}\\right)$. La parenthèse tend vers $1$ par croissance comparée et le facteur vers $+\\infty$, donc la limite vaut $+\\infty$. Devant $x-\\ln x$, on met de même $x$ en facteur.",
+      "difficulte": 2,
+      "tags": ["forme-indeterminee", "factorisation", "terme-dominant"]
+    },
+    {
+      "id": "TD-CH05-037",
+      "lecon": "Croissances comparées",
+      "type": "formule",
+      "recto": "Comment démontre-t-on que $\\dfrac{e^x}{x}$ tend vers $+\\infty$ en $+\\infty$ ?",
+      "verso": "Par le changement de variable $y=e^x$, qui donne $x=\\ln y$ et $\\dfrac{e^x}{x}=\\dfrac{y}{\\ln y}$. Or $\\dfrac{\\ln y}{y}$ tend vers $0$ par valeurs strictement positives, donc son inverse tend vers $+\\infty$.",
+      "difficulte": 3,
+      "tags": ["demonstration", "changement-de-variable", "croissances-comparees"]
+    },
+    {
+      "id": "TD-CH05-038",
+      "lecon": "Croissances comparées",
+      "type": "formule",
+      "recto": "Pourquoi l'affirmation « l'exponentielle est toujours plus grande que toute puissance » est-elle fausse ?",
+      "verso": "Parce que les croissances comparées ne portent que sur le comportement à l'infini : sur $[0\\,;4]$, la fonction $x\\mapsto x^3$ dépasse $x\\mapsto e^x$. La formulation correcte est que l'exponentielle finit par dépasser toute puissance et ne se laisse plus rattraper.",
+      "difficulte": 3,
+      "tags": ["piege", "croissances-comparees", "infini"]
+    }
+  ]
+}

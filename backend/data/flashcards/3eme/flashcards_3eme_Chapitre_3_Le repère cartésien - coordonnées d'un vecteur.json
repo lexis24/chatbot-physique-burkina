@@ -1,0 +1,305 @@
+{
+  "niveau": "3ème",
+  "chapitre": "Chapitre 3 : Le repère cartésien : coordonnées d'un vecteur",
+  "source": "maths/3eme/Chapitre_3_Le_repere_cartesien",
+  "nombre_cartes": 33,
+  "cartes": [
+    {
+      "id": "3E-CH03-001",
+      "lecon": "Coordonnées d'un vecteur dans un repère cartésien",
+      "type": "definition",
+      "recto": "Comment note-t-on les coordonnées d'un vecteur $\\vec{u}$ dans un repère $\\left(O, \\vec{i}, \\vec{j}\\right)$ ?",
+      "verso": "On écrit $\\vec{u}\\left(x\\,;\\,y\\right)$ : le nombre $x$ est la première coordonnée du vecteur, le nombre $y$ la seconde.",
+      "difficulte": 1,
+      "tags": ["coordonnees", "vecteur", "notation"]
+    },
+    {
+      "id": "3E-CH03-002",
+      "lecon": "Coordonnées d'un vecteur dans un repère cartésien",
+      "type": "formule",
+      "recto": "Comment calcule-t-on les coordonnées du vecteur $\\overrightarrow{AB}$ à partir de celles de A et de B ?",
+      "verso": "On applique « extrémité moins origine » : $\\overrightarrow{AB}\\left(x_{B} - x_{A}\\,;\\,y_{B} - y_{A}\\right)$.",
+      "difficulte": 1,
+      "tags": ["coordonnees", "vecteur", "formule"]
+    },
+    {
+      "id": "3E-CH03-003",
+      "lecon": "Coordonnées d'un vecteur dans un repère cartésien",
+      "type": "formule",
+      "recto": "Pourquoi est-il faux d'écrire que $\\overrightarrow{AB}$ a pour coordonnées $\\left(x_{A} - x_{B}\\,;\\,y_{A} - y_{B}\\right)$ ?",
+      "verso": "Parce que ce calcul donne le vecteur opposé $\\overrightarrow{BA}$. On retranche toujours l'origine de l'extrémité, donc $x_{B} - x_{A}$ et $y_{B} - y_{A}$.",
+      "difficulte": 3,
+      "tags": ["coordonnees", "piege", "signe"]
+    },
+    {
+      "id": "3E-CH03-004",
+      "lecon": "Coordonnées d'un vecteur dans un repère cartésien",
+      "type": "formule",
+      "recto": "A quelle condition deux vecteurs sont-ils égaux, dans un repère cartésien ?",
+      "verso": "Si et seulement s'ils ont les mêmes coordonnées. Comparer deux couples de nombres remplace ainsi la comparaison des directions, des sens et des longueurs.",
+      "difficulte": 1,
+      "tags": ["egalite", "coordonnees"]
+    },
+    {
+      "id": "3E-CH03-005",
+      "lecon": "Coordonnées d'un vecteur dans un repère cartésien",
+      "type": "formule",
+      "recto": "Quel lien unit les coordonnées de $\\overrightarrow{BA}$ à celles de $\\overrightarrow{AB}$ ?",
+      "verso": "Ce sont les opposées. Si $\\overrightarrow{AB}\\left(1\\,;\\,4\\right)$, alors $\\overrightarrow{BA}\\left(-1\\,;\\,-4\\right)$.",
+      "difficulte": 2,
+      "tags": ["vecteur-oppose", "coordonnees"]
+    },
+    {
+      "id": "3E-CH03-006",
+      "lecon": "Coordonnées d'un vecteur dans un repère cartésien",
+      "type": "formule",
+      "recto": "Que peut-on dire des points A et B lorsque $\\overrightarrow{AB}$ a pour coordonnées $\\left(0\\,;\\,0\\right)$ ?",
+      "verso": "Ils sont confondus. Le vecteur nul est le seul dont les deux coordonnées sont nulles : aucun déplacement ne sépare A de B.",
+      "difficulte": 2,
+      "tags": ["vecteur-nul", "coordonnees"]
+    },
+    {
+      "id": "3E-CH03-007",
+      "lecon": "Coordonnées d'un vecteur dans un repère cartésien",
+      "type": "definition",
+      "recto": "Quel lien y a-t-il entre les coordonnées du point $M$ et celles du vecteur $\\overrightarrow{OM}$ ?",
+      "verso": "Ce sont les mêmes : si $M\\left(x\\,;\\,y\\right)$, alors $\\overrightarrow{OM}\\left(x\\,;\\,y\\right)$. Un point est repéré par le déplacement qui mène de l'origine jusqu'à lui.",
+      "difficulte": 2,
+      "tags": ["point", "vecteur", "origine"]
+    },
+    {
+      "id": "3E-CH03-008",
+      "lecon": "Coordonnées d'un vecteur dans un repère cartésien",
+      "type": "definition",
+      "recto": "Pourquoi deux flèches tracées à des endroits différents peuvent-elles avoir les mêmes coordonnées ?",
+      "verso": "Parce qu'un vecteur ne dit pas où l'on est, mais comment on se déplace. Le point de départ disparaît du calcul : ces flèches sont deux représentants d'un même vecteur.",
+      "difficulte": 2,
+      "tags": ["representant", "vecteur", "sens"]
+    },
+    {
+      "id": "3E-CH03-009",
+      "lecon": "Coordonnées d'un vecteur dans un repère cartésien",
+      "type": "formule",
+      "recto": "Comment retrouve-t-on les coordonnées de B, connaissant A et celles de $\\overrightarrow{AB}$ ?",
+      "verso": "On ajoute les coordonnées du vecteur à celles de A. De $x_{B} - 5 = -4$ on tire $x_{B} = 1$ ; de $y_{B} + 1 = 3$ on tire $y_{B} = 2$.",
+      "difficulte": 2,
+      "tags": ["coordonnees", "point-manquant"]
+    },
+    {
+      "id": "3E-CH03-010",
+      "lecon": "Coordonnées d'un vecteur dans un repère cartésien",
+      "type": "definition",
+      "recto": "Quelle différence d'écriture sépare les coordonnées d'un point de celles d'un vecteur ?",
+      "verso": "Celles d'un point s'écrivent en ligne, à côté de son nom, $M\\left(x\\,;\\,y\\right)$ ; celles d'un vecteur se notent en colonne au tableau. Les deux notations ne se mélangent pas.",
+      "difficulte": 3,
+      "tags": ["notation", "point", "piege"]
+    },
+    {
+      "id": "3E-CH03-011",
+      "lecon": "Coordonnées d'un vecteur dans un repère cartésien",
+      "type": "formule",
+      "recto": "Comment contrôle-t-on sur un quadrillage les coordonnées trouvées pour $\\overrightarrow{AB}$ ?",
+      "verso": "On part de A, on avance du nombre de carreaux donné par la première coordonnée, puis on monte du nombre donné par la seconde : on doit arriver exactement en B.",
+      "difficulte": 2,
+      "tags": ["controle", "quadrillage", "coordonnees"]
+    },
+    {
+      "id": "3E-CH03-012",
+      "lecon": "Coordonnées de la somme et du produit par un réel",
+      "type": "formule",
+      "recto": "Quelles sont les coordonnées de la somme $\\vec{u} + \\vec{v}$, pour $\\vec{u}\\left(x\\,;\\,y\\right)$ et $\\vec{v}\\left(x'\\,;\\,y'\\right)$ ?",
+      "verso": "Ce sont $\\left(x + x'\\,;\\,y + y'\\right)$ : les abscisses s'additionnent entre elles, les ordonnées entre elles. De même, $\\vec{u} - \\vec{v}$ a pour coordonnées $\\left(x - x'\\,;\\,y - y'\\right)$.",
+      "difficulte": 1,
+      "tags": ["somme", "coordonnees"]
+    },
+    {
+      "id": "3E-CH03-013",
+      "lecon": "Coordonnées de la somme et du produit par un réel",
+      "type": "formule",
+      "recto": "Quelles sont les coordonnées du vecteur $k\\vec{u}$, pour $\\vec{u}\\left(x\\,;\\,y\\right)$ ?",
+      "verso": "Ce sont $\\left(kx\\,;\\,ky\\right)$ : chacune des deux coordonnées est multipliée par le réel $k$.",
+      "difficulte": 1,
+      "tags": ["produit-par-un-reel", "coordonnees"]
+    },
+    {
+      "id": "3E-CH03-014",
+      "lecon": "Coordonnées de la somme et du produit par un réel",
+      "type": "formule",
+      "recto": "Quelle erreur guette l'élève qui multiplie un vecteur par un réel ?",
+      "verso": "N'en multiplier qu'une seule coordonnée. Pour $\\vec{u}\\left(3\\,;\\,-4\\right)$, le vecteur $2\\vec{u}$ a pour coordonnées $\\left(6\\,;\\,-8\\right)$, et non $\\left(6\\,;\\,-4\\right)$.",
+      "difficulte": 3,
+      "tags": ["produit-par-un-reel", "piege"]
+    },
+    {
+      "id": "3E-CH03-015",
+      "lecon": "Coordonnées de la somme et du produit par un réel",
+      "type": "definition",
+      "recto": "Pourquoi les calculs sur les coordonnées se font-ils coordonnée par coordonnée ?",
+      "verso": "Parce que le plan se découpe en deux directions indépendantes, l'horizontale et la verticale : ce qui se passe sur l'une ne change rien à l'autre. On ne mélange jamais une abscisse avec une ordonnée.",
+      "difficulte": 2,
+      "tags": ["coordonnees", "sens", "calcul"]
+    },
+    {
+      "id": "3E-CH03-016",
+      "lecon": "Coordonnées de la somme et du produit par un réel",
+      "type": "formule",
+      "recto": "Quelles sont les coordonnées du milieu I du segment $\\left[AB\\right]$ ?",
+      "verso": "Ce sont $\\left(\\dfrac{x_{A} + x_{B}}{2}\\,;\\,\\dfrac{y_{A} + y_{B}}{2}\\right)$ : la demi-somme des abscisses, puis la demi-somme des ordonnées.",
+      "difficulte": 1,
+      "tags": ["milieu", "coordonnees"]
+    },
+    {
+      "id": "3E-CH03-017",
+      "lecon": "Coordonnées de la somme et du produit par un réel",
+      "type": "formule",
+      "recto": "Quelle égalité vectorielle justifie la formule de la demi-somme pour le milieu ?",
+      "verso": "L'égalité $\\overrightarrow{AI} = \\dfrac{1}{2}\\overrightarrow{AB}$, qui définit le milieu I du segment $\\left[AB\\right]$.",
+      "difficulte": 2,
+      "tags": ["milieu", "egalite-vectorielle"]
+    },
+    {
+      "id": "3E-CH03-018",
+      "lecon": "Coordonnées de la somme et du produit par un réel",
+      "type": "formule",
+      "recto": "Comment calcule-t-on les coordonnées du symétrique d'un point A par rapport à un point I ?",
+      "verso": "On prend le double du milieu, moins le point de départ : $x_{A'} = 2x_{I} - x_{A}$ et $y_{A'} = 2y_{I} - y_{A}$, car I est le milieu de $\\left[AA'\\right]$.",
+      "difficulte": 2,
+      "tags": ["symetrique", "coordonnees", "milieu"]
+    },
+    {
+      "id": "3E-CH03-019",
+      "lecon": "Coordonnées de la somme et du produit par un réel",
+      "type": "formule",
+      "recto": "Comment contrôle-t-on par les coordonnées que ABCD est un parallélogramme ?",
+      "verso": "En vérifiant que $\\overrightarrow{AB} = \\overrightarrow{DC}$, c'est-à-dire que ces deux vecteurs ont le même couple de coordonnées.",
+      "difficulte": 2,
+      "tags": ["parallelogramme", "egalite", "coordonnees"]
+    },
+    {
+      "id": "3E-CH03-020",
+      "lecon": "Coordonnées de la somme et du produit par un réel",
+      "type": "formule",
+      "recto": "Comment détermine-t-on le quatrième sommet D d'un parallélogramme ABCD ?",
+      "verso": "On écrit la condition $\\overrightarrow{AB} = \\overrightarrow{DC}$, qui donne $x_{D} = x_{C} - \\left(x_{B} - x_{A}\\right)$, et le même calcul sur les ordonnées.",
+      "difficulte": 3,
+      "tags": ["parallelogramme", "quatrieme-sommet"]
+    },
+    {
+      "id": "3E-CH03-021",
+      "lecon": "Coordonnées de la somme et du produit par un réel",
+      "type": "definition",
+      "recto": "Pourquoi l'ordre des lettres compte-t-il quand on cherche le quatrième sommet d'un parallélogramme ?",
+      "verso": "Parce qu'il fixe les côtés qui se correspondent : dans ABCD, ce sont $\\left[AB\\right]$ et $\\left[DC\\right]$ ; dans ABDC, ce sont $\\left[AB\\right]$ et $\\left[CD\\right]$, et le point cherché n'est pas le même.",
+      "difficulte": 3,
+      "tags": ["parallelogramme", "ordre-des-lettres", "piege"]
+    },
+    {
+      "id": "3E-CH03-022",
+      "lecon": "Coordonnées de la somme et du produit par un réel",
+      "type": "formule",
+      "recto": "Comment contrôle-t-on autrement le quatrième sommet trouvé d'un parallélogramme ?",
+      "verso": "Par les diagonales, qui ont le même milieu : le milieu de $\\left[AC\\right]$ doit être aussi celui de $\\left[BD\\right]$. Ce point commun est le centre du parallélogramme.",
+      "difficulte": 2,
+      "tags": ["parallelogramme", "diagonales", "controle"]
+    },
+    {
+      "id": "3E-CH03-023",
+      "lecon": "Caractérisation analytique de la colinéarité",
+      "type": "definition",
+      "recto": "Quel nombre teste la colinéarité de $\\vec{u}\\left(x\\,;\\,y\\right)$ et de $\\vec{v}\\left(x'\\,;\\,y'\\right)$ ?",
+      "verso": "Le nombre $xy' - yx'$, obtenu en croisant les coordonnées des deux vecteurs.",
+      "difficulte": 1,
+      "tags": ["colinearite", "produit-croise"]
+    },
+    {
+      "id": "3E-CH03-024",
+      "lecon": "Caractérisation analytique de la colinéarité",
+      "type": "formule",
+      "recto": "Que dit la valeur du nombre $xy' - yx'$ sur les deux vecteurs ?",
+      "verso": "S'il est nul, les deux vecteurs sont colinéaires ; s'il n'est pas nul, ils ne le sont pas. Seule compte l'égalité à zéro, jamais la valeur obtenue.",
+      "difficulte": 1,
+      "tags": ["colinearite", "critere"]
+    },
+    {
+      "id": "3E-CH03-025",
+      "lecon": "Caractérisation analytique de la colinéarité",
+      "type": "formule",
+      "recto": "Dans quel ordre écrit-on les deux produits croisés du test de colinéarité ?",
+      "verso": "Première coordonnée du premier vecteur par seconde du second, moins seconde du premier par première du second. Inverser l'ordre change le signe, mais pas le fait que le résultat soit nul.",
+      "difficulte": 2,
+      "tags": ["produit-croise", "ordre", "colinearite"]
+    },
+    {
+      "id": "3E-CH03-026",
+      "lecon": "Caractérisation analytique de la colinéarité",
+      "type": "formule",
+      "recto": "Comment démontre-t-on par le calcul que trois points A, B et C sont alignés ?",
+      "verso": "On calcule les coordonnées de $\\overrightarrow{AB}$ et de $\\overrightarrow{AC}$, deux vecteurs partant du même point, puis on vérifie que leur nombre croisé $xy' - yx'$ est nul.",
+      "difficulte": 2,
+      "tags": ["alignement", "colinearite", "methode"]
+    },
+    {
+      "id": "3E-CH03-027",
+      "lecon": "Caractérisation analytique de la colinéarité",
+      "type": "formule",
+      "recto": "Comment démontre-t-on par le calcul que les droites $\\left(AB\\right)$ et $\\left(CD\\right)$ sont parallèles ?",
+      "verso": "On calcule les coordonnées de $\\overrightarrow{AB}$ et de $\\overrightarrow{CD}$, un vecteur porté par chaque droite, puis on vérifie que $xy' - yx' = 0$.",
+      "difficulte": 2,
+      "tags": ["parallelisme", "colinearite", "methode"]
+    },
+    {
+      "id": "3E-CH03-028",
+      "lecon": "Caractérisation analytique de la colinéarité",
+      "type": "definition",
+      "recto": "Quels vecteurs choisit-on selon que la question porte sur un alignement ou sur un parallélisme ?",
+      "verso": "Pour un alignement, deux vecteurs partant du même point ; pour un parallélisme, un vecteur porté par chaque droite. Le calcul est le même, seule la phrase de conclusion change.",
+      "difficulte": 2,
+      "tags": ["alignement", "parallelisme", "distinction"]
+    },
+    {
+      "id": "3E-CH03-029",
+      "lecon": "Caractérisation analytique de la colinéarité",
+      "type": "formule",
+      "recto": "Pourquoi deux vecteurs colinéaires ont-ils un nombre croisé nul ?",
+      "verso": "Parce que la colinéarité donne $\\vec{v} = k\\vec{u}$, donc $x' = kx$ et $y' = ky$. Alors $xy' - yx' = x\\left(ky\\right) - y\\left(kx\\right) = 0$.",
+      "difficulte": 2,
+      "tags": ["colinearite", "demonstration"]
+    },
+    {
+      "id": "3E-CH03-030",
+      "lecon": "Caractérisation analytique de la colinéarité",
+      "type": "definition",
+      "recto": "Lequel des deux sens de la caractérisation analytique est admis sans démonstration ?",
+      "verso": "Le sens réciproque : si $xy' - yx' = 0$, alors les deux vecteurs sont colinéaires. Le sens direct, lui, se démontre par le calcul.",
+      "difficulte": 3,
+      "tags": ["reciproque", "colinearite", "demonstration"]
+    },
+    {
+      "id": "3E-CH03-031",
+      "lecon": "Caractérisation analytique de la colinéarité",
+      "type": "formule",
+      "recto": "Pourquoi ne suffit-il pas de comparer une seule coordonnée pour conclure à la colinéarité ?",
+      "verso": "Parce que la proportionnalité doit valoir sur les deux. Pour $\\vec{u}\\left(2\\,;\\,5\\right)$ et $\\vec{v}\\left(4\\,;\\,7\\right)$, on a bien $4 = 2 \\times 2$, mais le test complet donne $2 \\times 7 - 5 \\times 4 = -6$, qui n'est pas nul.",
+      "difficulte": 3,
+      "tags": ["colinearite", "piege", "produit-croise"]
+    },
+    {
+      "id": "3E-CH03-032",
+      "lecon": "Caractérisation analytique de la colinéarité",
+      "type": "formule",
+      "recto": "Comment détermine-t-on la coordonnée inconnue d'un point pour qu'il soit aligné avec deux autres ?",
+      "verso": "On écrit que le nombre croisé des deux vecteurs est nul : cela donne une équation du premier degré, dont l'inconnue est la coordonnée cherchée.",
+      "difficulte": 2,
+      "tags": ["alignement", "equation", "coordonnee-manquante"]
+    },
+    {
+      "id": "3E-CH03-033",
+      "lecon": "Caractérisation analytique de la colinéarité",
+      "type": "definition",
+      "recto": "Quel avantage le test $xy' - yx' = 0$ offre-t-il sur la recherche d'un coefficient $k$ à la main ?",
+      "verso": "Il tranche toujours, même quand les coordonnées sont des fractions ou des décimaux, alors qu'en cherchant $k$ on n'est jamais sûr d'avoir tout essayé.",
+      "difficulte": 2,
+      "tags": ["colinearite", "test", "sens"]
+    }
+  ]
+}

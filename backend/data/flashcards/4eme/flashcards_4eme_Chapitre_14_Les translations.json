@@ -1,0 +1,296 @@
+{
+  "niveau": "4ème",
+  "chapitre": "Chapitre 14 : Les translations",
+  "source": "maths/4eme/Chapitre_14_Les_translations",
+  "nombre_cartes": 32,
+  "cartes": [
+    {
+      "id": "4E-CH14-001",
+      "lecon": "Définition de la translation ; image d'un point",
+      "type": "definition",
+      "recto": "Qu'est-ce qu'une translation ?",
+      "verso": "C'est une transformation du plan qui déplace tous les points dans une même direction, dans un même sens et d'une même distance. Elle est entièrement définie par un vecteur $\\vec{u}$.",
+      "difficulte": 1,
+      "tags": ["translation", "definition"]
+    },
+    {
+      "id": "4E-CH14-002",
+      "lecon": "Définition de la translation ; image d'un point",
+      "type": "formule",
+      "recto": "A quelle condition le point $M'$ est-il l'image de $M$ par la translation de vecteur $\\vec{u}$ ?",
+      "verso": "Il faut et il suffit que $\\overrightarrow{MM'} = \\vec{u}$. On écrit alors $M' = t\\left(M\\right)$, où $t$ désigne la translation.",
+      "difficulte": 1,
+      "tags": ["translation", "image", "vecteur"]
+    },
+    {
+      "id": "4E-CH14-003",
+      "lecon": "Définition de la translation ; image d'un point",
+      "type": "definition",
+      "recto": "Pourquoi une seule flèche suffit-elle à décrire entièrement une translation ?",
+      "verso": "Parce qu'un vecteur contient les trois renseignements utiles : la direction, le sens et la longueur du déplacement. Une fois ce vecteur connu, l'image de n'importe quel point du plan est déterminée.",
+      "difficulte": 2,
+      "tags": ["translation", "vecteur"]
+    },
+    {
+      "id": "4E-CH14-004",
+      "lecon": "Définition de la translation ; image d'un point",
+      "type": "formule",
+      "recto": "Quel effet la translation de vecteur $\\vec{0}$ a-t-elle sur les points du plan ?",
+      "verso": "Elle laisse tous les points à leur place : chaque point est alors sa propre image.",
+      "difficulte": 2,
+      "tags": ["translation", "vecteur-nul"]
+    },
+    {
+      "id": "4E-CH14-005",
+      "lecon": "Définition de la translation ; image d'un point",
+      "type": "definition",
+      "recto": "Sur quels points du plan une translation agit-elle ?",
+      "verso": "Sur tous, qu'ils appartiennent ou non à la figure dessinée : chaque point du plan possède une image. C'est ce qui autorise à parler de l'image d'une droite ou d'un cercle.",
+      "difficulte": 2,
+      "tags": ["translation", "plan"]
+    },
+    {
+      "id": "4E-CH14-006",
+      "lecon": "Définition de la translation ; image d'un point",
+      "type": "definition",
+      "recto": "Qu'est-ce qu'une translation ne fait jamais subir à une figure, contrairement à une symétrie centrale ?",
+      "verso": "Elle ne la tourne ni ne la retourne, et elle ne l'agrandit ni ne la réduit : elle la fait seulement glisser. Ce qui était en haut reste en haut, alors qu'une symétrie centrale retourne la figure.",
+      "difficulte": 2,
+      "tags": ["translation", "symetrie-centrale", "distinction"]
+    },
+    {
+      "id": "4E-CH14-007",
+      "lecon": "Définition de la translation ; image d'un point",
+      "type": "formule",
+      "recto": "Pourquoi la translation de vecteur $\\overrightarrow{AB}$ n'est-elle pas celle de vecteur $\\overrightarrow{BA}$ ?",
+      "verso": "Parce que ces deux vecteurs sont opposés : les deux translations déplacent les points en sens contraires. Une figure déplacée par l'une puis par l'autre revient exactement à sa position de départ.",
+      "difficulte": 3,
+      "tags": ["translation", "sens", "piege"]
+    },
+    {
+      "id": "4E-CH14-008",
+      "lecon": "Définition de la translation ; image d'un point",
+      "type": "formule",
+      "recto": "Comment contrôle-t-on la construction de l'image $M'$ d'un point $M$ par la translation de vecteur $\\overrightarrow{AB}$ ?",
+      "verso": "Le quadrilatère $ABM'M$ doit être un parallélogramme. Autrement dit, les segments $\\left[AB\\right]$ et $\\left[MM'\\right]$ sont parallèles, de même longueur et de même sens.",
+      "difficulte": 2,
+      "tags": ["translation", "construction", "controle"]
+    },
+    {
+      "id": "4E-CH14-009",
+      "lecon": "Image d'une figure ; déterminer la translation",
+      "type": "formule",
+      "recto": "Comment construit-on l'image d'une figure par une translation ?",
+      "verso": "On construit l'image de chacun de ses points-clés, puis on relie ces images dans le même ordre que les points-clés de départ.",
+      "difficulte": 1,
+      "tags": ["figure", "construction"]
+    },
+    {
+      "id": "4E-CH14-010",
+      "lecon": "Image d'une figure ; déterminer la translation",
+      "type": "definition",
+      "recto": "Quels sont les points-clés d'une figure que l'on déplace par une translation ?",
+      "verso": "Les sommets d'un polygone, le centre d'un cercle, les extrémités d'un segment. Il n'est donc pas nécessaire de déplacer chaque point du contour.",
+      "difficulte": 1,
+      "tags": ["figure", "points-cles"]
+    },
+    {
+      "id": "4E-CH14-011",
+      "lecon": "Image d'une figure ; déterminer la translation",
+      "type": "formule",
+      "recto": "Que peut-on dire de la forme et des dimensions de l'image d'une figure par une translation ?",
+      "verso": "Elles sont identiques à celles de la figure de départ : on dit que la translation conserve les figures.",
+      "difficulte": 1,
+      "tags": ["figure", "conservation"]
+    },
+    {
+      "id": "4E-CH14-012",
+      "lecon": "Image d'une figure ; déterminer la translation",
+      "type": "formule",
+      "recto": "Comment détermine-t-on la translation qui transforme une figure en une autre ?",
+      "verso": "On choisit un point de la figure de départ et le point correspondant de la figure d'arrivée : le vecteur de la translation est celui qui va du point vers son image. Il est prudent de vérifier ensuite sur un second point.",
+      "difficulte": 2,
+      "tags": ["translation", "determiner"]
+    },
+    {
+      "id": "4E-CH14-013",
+      "lecon": "Image d'une figure ; déterminer la translation",
+      "type": "formule",
+      "recto": "Pourquoi prendre le vecteur $\\overrightarrow{A'A}$ au lieu de $\\overrightarrow{AA'}$ fausse-t-il la détermination d'une translation ?",
+      "verso": "Parce que le sens de la flèche est celui du déplacement de la figure : $\\overrightarrow{A'A}$ ramènerait la figure en arrière. Le vecteur va toujours du point vers son image.",
+      "difficulte": 3,
+      "tags": ["translation", "sens", "piege"]
+    },
+    {
+      "id": "4E-CH14-014",
+      "lecon": "Image d'une figure ; déterminer la translation",
+      "type": "formule",
+      "recto": "Comment reconnaît-on quel sommet d'une figure correspond à quel sommet de son image ?",
+      "verso": "On apparie deux sommets qui jouent le même rôle, jamais deux sommets au hasard. Les noms y aident : $A'$ est l'image de A et rien d'autre, et la figure se lit dans le même ordre que son image.",
+      "difficulte": 2,
+      "tags": ["figure", "sommets", "appariement"]
+    },
+    {
+      "id": "4E-CH14-015",
+      "lecon": "Image d'une figure ; déterminer la translation",
+      "type": "formule",
+      "recto": "Comment vérifie-t-on qu'une figure est bien l'image d'une autre par une translation ?",
+      "verso": "Les vecteurs $\\overrightarrow{AA'}$, $\\overrightarrow{BB'}$ et $\\overrightarrow{CC'}$ doivent tous être égaux. Sinon, la seconde figure n'est pas l'image de la première, ou les sommets ont été mal appariés.",
+      "difficulte": 2,
+      "tags": ["figure", "verification"]
+    },
+    {
+      "id": "4E-CH14-016",
+      "lecon": "Image d'une figure ; déterminer la translation",
+      "type": "formule",
+      "recto": "Combien de points et d'images faut-il connaître pour retrouver une translation tout entière ?",
+      "verso": "Un seul couple suffit : comme tous les points se déplacent du même vecteur, un point et son image donnent la règle qui permet de déplacer ensuite n'importe quelle autre figure.",
+      "difficulte": 2,
+      "tags": ["translation", "determiner", "vecteur"]
+    },
+    {
+      "id": "4E-CH14-017",
+      "lecon": "Propriétés (1) : image d'un segment, parallélogramme",
+      "type": "formule",
+      "recto": "Si $A'$ et $B'$ sont les images de A et de B par une translation, quelle égalité vectorielle obtient-on ?",
+      "verso": "On a $\\overrightarrow{A'B'} = \\overrightarrow{AB}$, donc $A'B' = AB$ : le segment image a la même longueur que le segment de départ, et il lui est parallèle.",
+      "difficulte": 1,
+      "tags": ["conservation", "longueur", "segment"]
+    },
+    {
+      "id": "4E-CH14-018",
+      "lecon": "Propriétés (1) : image d'un segment, parallélogramme",
+      "type": "formule",
+      "recto": "Quelle est la nature du quadrilatère $ABB'A'$ lorsque $A'$ et $B'$ sont les images de A et de B par une translation ?",
+      "verso": "C'est un parallélogramme, car $\\overrightarrow{AA'} = \\overrightarrow{BB'} = \\vec{u}$. Le seul cas écarté est celui où les quatre points sont alignés.",
+      "difficulte": 2,
+      "tags": ["parallelogramme", "translation"]
+    },
+    {
+      "id": "4E-CH14-019",
+      "lecon": "Propriétés (1) : image d'un segment, parallélogramme",
+      "type": "formule",
+      "recto": "Pourquoi le parallélogramme formé par un segment et son image s'écrit-il $ABB'A'$ et non $ABA'B'$ ?",
+      "verso": "Parce qu'on parcourt le contour dans l'ordre : de A vers B, puis on revient par les images $B'$ et $A'$. Ecrit $ABA'B'$, le quadrilatère se croise et la démonstration tombe à faux.",
+      "difficulte": 3,
+      "tags": ["parallelogramme", "ordre-des-lettres", "piege"]
+    },
+    {
+      "id": "4E-CH14-020",
+      "lecon": "Propriétés (1) : image d'un segment, parallélogramme",
+      "type": "formule",
+      "recto": "Comment distinguer l'égalité $\\overrightarrow{A'B'} = \\overrightarrow{AB}$ de l'égalité $\\overrightarrow{AA'} = \\overrightarrow{BB'}$ ?",
+      "verso": "Quand les deux primes sont du même côté du signe égal, on parle du segment et de sa longueur. Quand elles sont réparties de part et d'autre, on démontre le parallélogramme.",
+      "difficulte": 2,
+      "tags": ["vecteur", "distinction"]
+    },
+    {
+      "id": "4E-CH14-021",
+      "lecon": "Propriétés (1) : image d'un segment, parallélogramme",
+      "type": "formule",
+      "recto": "Quelles grandeurs et quelles propriétés une translation conserve-t-elle ?",
+      "verso": "Les longueurs, les angles, les aires, l'alignement et les milieux. L'image du milieu d'un segment est donc le milieu du segment image.",
+      "difficulte": 1,
+      "tags": ["conservation", "proprietes"]
+    },
+    {
+      "id": "4E-CH14-022",
+      "lecon": "Propriétés (1) : image d'un segment, parallélogramme",
+      "type": "formule",
+      "recto": "Quelle est l'image d'un cercle par une translation ?",
+      "verso": "C'est un cercle de même rayon, dont le centre est l'image du centre de départ. Seul le centre se déplace, le rayon ne change pas.",
+      "difficulte": 2,
+      "tags": ["cercle", "conservation", "rayon"]
+    },
+    {
+      "id": "4E-CH14-023",
+      "lecon": "Propriétés (1) : image d'un segment, parallélogramme",
+      "type": "formule",
+      "recto": "Comment la relation de Chasles établit-elle que $\\overrightarrow{A'B'} = \\overrightarrow{AB}$ ?",
+      "verso": "On décompose $\\overrightarrow{A'B'} = \\overrightarrow{A'A} + \\overrightarrow{AB} + \\overrightarrow{BB'}$. Or $\\overrightarrow{BB'} = \\vec{u}$ et $\\overrightarrow{A'A} = -\\vec{u}$ : ces deux vecteurs se compensent, et il reste $\\overrightarrow{A'B'} = \\overrightarrow{AB}$.",
+      "difficulte": 3,
+      "tags": ["chasles", "demonstration", "vecteur"]
+    },
+    {
+      "id": "4E-CH14-024",
+      "lecon": "Propriétés (1) : image d'un segment, parallélogramme",
+      "type": "formule",
+      "recto": "Sur quelle caractérisation s'appuie-t-on pour prouver qu'un quadrilatère est un parallélogramme à partir d'une translation ?",
+      "verso": "Sur la caractérisation vectorielle du parallélogramme : il suffit d'établir que $\\overrightarrow{AA'} = \\overrightarrow{BB'}$, c'est-à-dire que deux côtés opposés portent des vecteurs égaux.",
+      "difficulte": 2,
+      "tags": ["parallelogramme", "demonstration"]
+    },
+    {
+      "id": "4E-CH14-025",
+      "lecon": "Propriétés (1) : image d'un segment, parallélogramme",
+      "type": "formule",
+      "recto": "Pourquoi la conservation des longueurs entraîne-t-elle celle des angles et des aires ?",
+      "verso": "Parce que si toutes les longueurs sont conservées, les triangles gardent la même forme : les angles ne changent donc pas, ni les aires. La translation transporte la figure telle quelle.",
+      "difficulte": 2,
+      "tags": ["conservation", "angle", "aire"]
+    },
+    {
+      "id": "4E-CH14-026",
+      "lecon": "Propriétés (2) : image d'une droite, parallélisme",
+      "type": "formule",
+      "recto": "Quelle est l'image d'une droite par une translation ?",
+      "verso": "C'est une droite parallèle à la droite de départ. Elle est confondue avec elle lorsque le vecteur de la translation a la même direction que cette droite.",
+      "difficulte": 1,
+      "tags": ["droite", "parallelisme"]
+    },
+    {
+      "id": "4E-CH14-027",
+      "lecon": "Propriétés (2) : image d'une droite, parallélisme",
+      "type": "formule",
+      "recto": "Pourquoi le cas d'un vecteur dirigé le long de la droite n'est-il pas une exception à la règle ?",
+      "verso": "Parce que chaque point glisse alors sur la droite elle-même, si bien que la droite image se confond avec la droite de départ. Or une droite est toujours considérée comme parallèle à elle-même.",
+      "difficulte": 2,
+      "tags": ["droite", "cas-particulier"]
+    },
+    {
+      "id": "4E-CH14-028",
+      "lecon": "Propriétés (2) : image d'une droite, parallélisme",
+      "type": "formule",
+      "recto": "Que deviennent deux droites parallèles après une même translation ?",
+      "verso": "Leurs images sont encore parallèles : une translation conserve le parallélisme.",
+      "difficulte": 1,
+      "tags": ["parallelisme", "conservation"]
+    },
+    {
+      "id": "4E-CH14-029",
+      "lecon": "Propriétés (2) : image d'une droite, parallélisme",
+      "type": "formule",
+      "recto": "Que deviennent deux droites perpendiculaires après une même translation ?",
+      "verso": "Leurs images sont encore perpendiculaires. Une translation conserve la mesure de tous les angles, l'angle droit compris : elle ne redresse ni ne penche jamais rien.",
+      "difficulte": 2,
+      "tags": ["perpendicularite", "conservation", "angle"]
+    },
+    {
+      "id": "4E-CH14-030",
+      "lecon": "Propriétés (2) : image d'une droite, parallélisme",
+      "type": "formule",
+      "recto": "Quelle est l'image d'une demi-droite par une translation ?",
+      "verso": "C'est une demi-droite parallèle et de même sens. De la même façon, l'image d'un segment est un segment parallèle et de même longueur.",
+      "difficulte": 2,
+      "tags": ["demi-droite", "segment", "conservation"]
+    },
+    {
+      "id": "4E-CH14-031",
+      "lecon": "Propriétés (2) : image d'une droite, parallélisme",
+      "type": "formule",
+      "recto": "Pourquoi une translation ne peut-elle jamais transformer une droite en une droite perpendiculaire à celle-ci ?",
+      "verso": "Parce qu'elle conserve les directions : rien ne pivote au cours du déplacement. L'image d'une droite lui est toujours parallèle, ou confondue avec elle, jamais sécante.",
+      "difficulte": 3,
+      "tags": ["direction", "perpendicularite", "piege"]
+    },
+    {
+      "id": "4E-CH14-032",
+      "lecon": "Propriétés (2) : image d'une droite, parallélisme",
+      "type": "formule",
+      "recto": "Comment démontre-t-on que deux droites sont parallèles à l'aide d'une translation ?",
+      "verso": "On prouve que l'une est l'image de l'autre par une translation, puis on cite la propriété : l'image d'une droite par une translation est une droite parallèle. La rédaction suit le schéma « on sait que, or, donc ».",
+      "difficulte": 2,
+      "tags": ["parallelisme", "demonstration"]
+    }
+  ]
+}

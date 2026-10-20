@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Fiche de revision - 5eme - Chapitre 16 : Masse volumique, vitesse et debit</title>
+<style>
+/* ===================================================================
+   FICHE DE REVISION, Collection Hakili Lab, Edition 2026
+   Feuille de style autonome, format A4 pret a imprimer.
+   Bleu #005CB9 · Vert #49A145
+   =================================================================== */
+:root{
+  --bleu:#005CB9; --bleu-fonce:#00429A; --bleu-pale:#E8F1FB; --bleu-bord:#B7D2EE;
+  --vert:#49A145; --vert-fonce:#2F7A2C; --vert-pale:#EDF7EC; --vert-bord:#BCE0B9;
+  --gris:#4A4A4A; --gris-clair:#E4E4E4; --rouge:#B3261E;
+}
+@page{
+  size:A4; margin:15mm;
+  @bottom-center{
+    content:"Collection Hakili Lab, Edition 2026  ·  Fiche de revision  ·  " counter(page) "/" counter(pages);
+    font-family:"Segoe UI",Calibri,Arial,sans-serif; font-size:6.6pt; color:#8A8A8A;
+  }
+}
+*{box-sizing:border-box;}
+body{
+  margin:0; font-family:"Segoe UI",Calibri,Arial,sans-serif;
+  font-size:8.4pt; line-height:1.26; color:#1B1B1B;
+}
+p{margin:0 0 3pt;}
+ul{margin:0 0 3pt; padding-left:11pt;}
+li{margin:0 0 1.2pt;}
+b,strong{color:var(--bleu-fonce);}
+
+/* ------------------------------ ENTETE ---------------------------- */
+.entete{
+  display:flex; align-items:stretch; border:1.6pt solid var(--bleu);
+  border-radius:2.5pt; overflow:hidden; margin-bottom:6pt;
+}
+.entete .num{
+  background:var(--bleu); color:#fff; font-size:20pt; font-weight:700;
+  padding:0 8pt; display:flex; align-items:center; justify-content:center; min-width:34pt;
+}
+.entete .txt{padding:3.5pt 8pt; flex:1;}
+.entete .niveau{
+  font-size:7pt; font-weight:700; letter-spacing:.9pt; color:var(--vert-fonce);
+}
+.entete h1{margin:0; font-size:13.5pt; line-height:1.12; color:var(--bleu-fonce); font-weight:700;}
+.entete .sous{font-size:7pt; color:var(--gris); margin-top:1pt;}
+
+/* --------------------------- BANDEAUX ----------------------------- */
+.bandeau{
+  color:#fff; font-weight:700; font-size:9pt; letter-spacing:1pt;
+  padding:2.4pt 7pt; border-radius:2pt; margin:3pt 0 4pt; break-after:avoid; page-break-after:avoid;
+}
+.bandeau.bleu{background:var(--bleu);}
+.bandeau.vert{background:var(--vert);}
+
+/* --------------------------- COLONNES ----------------------------- */
+.cols{column-count:2; column-gap:7mm; column-fill:balance;}
+
+.cols.bal{column-fill:balance;}
+.bloc{margin-bottom:5pt;}
+.keep{break-inside:avoid; page-break-inside:avoid;}
+
+/* --------------------------- LECONS ------------------------------- */
+h2.lecon{
+  margin:0 0 3pt; font-size:8.6pt; font-weight:700; color:#fff; background:var(--bleu-fonce);
+  padding:1.8pt 5pt; border-radius:1.5pt; break-after:avoid; page-break-after:avoid;
+}
+h3.rub{
+  margin:3.5pt 0 1.5pt; font-size:8.2pt; font-weight:700; color:var(--vert-fonce);
+  border-bottom:.7pt solid var(--vert-bord); padding-bottom:.8pt;
+  break-after:avoid; page-break-after:avoid;
+}
+
+/* --------------------------- ENCADRES ----------------------------- */
+.form{
+  background:var(--bleu-pale); border:.8pt solid var(--bleu-bord); border-left:2.6pt solid var(--bleu);
+  border-radius:2pt; padding:2.4pt 5pt; margin:2.2pt 0 3.4pt;
+  break-inside:avoid; page-break-inside:avoid;
+}
+.form .t{
+  display:block; font-size:6.8pt; font-weight:700; letter-spacing:.6pt;
+  color:var(--bleu); margin-bottom:1.5pt;
+}
+.form .c{text-align:center; font-size:9.1pt; margin:1.6pt 0;}
+.note{background:var(--vert-pale); border-left:2.4pt solid var(--vert); padding:2.4pt 5pt; border-radius:1.5pt; margin:2.5pt 0 4pt; break-inside:avoid;}
+
+/* --------------------------- TABLEAUX ----------------------------- */
+table{width:100%; border-collapse:collapse; font-size:7.6pt; margin:2pt 0 4pt; break-inside:avoid;}
+th{background:var(--bleu); color:#fff; font-weight:700; text-align:left; padding:1.8pt 4pt; font-size:7.2pt;}
+td{border:.6pt solid var(--gris-clair); padding:1.8pt 4pt; vertical-align:top;}
+tr{break-inside:avoid;}
+table.var td{text-align:center; font-size:8pt;}
+table.var td.lab{text-align:left; font-weight:700; color:var(--bleu-fonce); background:var(--bleu-pale);}
+
+/* ----------------------------- PIEGES ----------------------------- */
+table.pieges th:first-child{width:44%;}
+table.pieges td:first-child{color:var(--rouge); background:#FDF1F0;}
+.x{font-weight:700;}
+.v{color:var(--vert-fonce); font-weight:700;}
+
+/* ---------------------------- RECAP ------------------------------- */
+ol.recap{margin:0; padding-left:0; list-style:none; counter-reset:r;}
+ol.recap li{
+  counter-increment:r; position:relative; padding-left:13pt; margin-bottom:1.8pt;
+  break-inside:avoid;
+}
+ol.recap li::before{
+  content:counter(r); position:absolute; left:0; top:.3pt;
+  width:10pt; height:10pt; border-radius:50%; background:var(--vert); color:#fff;
+  font-size:6.6pt; font-weight:700; text-align:center; line-height:10pt;
+}
+
+/* --------------------------- MATHS -------------------------------- */
+.m{font-family:Cambria,Georgia,"Times New Roman",serif;}
+i,var{font-family:Cambria,Georgia,"Times New Roman",serif; font-style:italic;}
+.op{font-family:Cambria,Georgia,"Times New Roman",serif; font-style:normal;}
+.f{display:inline-block; vertical-align:middle; text-align:center;
+   margin:0 .12em; line-height:1.06; font-family:Cambria,Georgia,"Times New Roman",serif;}
+.f>span{display:block; padding:0 .2em;}
+.f>span:first-child{border-bottom:.6pt solid currentColor; padding-bottom:.08em;}
+.f>span:last-child{padding-top:.04em;}
+.rad{border-top:.6pt solid currentColor; padding-top:.12em;}
+/* line-height:0 evite que l'exposant n'ecarte les lignes ; position:relative le
+   repositionne sans qu'il heurte la barre de fraction ni le trait du radical. */
+sup,sub{font-size:.68em; line-height:0; position:relative; vertical-align:baseline;}
+sup{top:-.42em;}
+sub{bottom:-.22em;}
+.pt{white-space:nowrap;}
+/* Les fleches n'ont qu'un glyphe atrophie dans la fonte serif : on les force
+   en sans-serif, ou elles sont franches meme a 8 pt. */
+.ar{font-family:"Segoe UI",Calibri,Arial,"DejaVu Sans",sans-serif; font-style:normal;}
+
+/* ------------------- PIEGES : blocs erreur / correction ------------- */
+.pg{font-size:8.1pt; border-left:2.4pt solid var(--rouge); background:#FDF1F0; border-radius:1.5pt;
+    padding:2pt 5pt; margin:0 0 2.8pt; break-inside:avoid; page-break-inside:avoid;}
+.pg .err{color:var(--rouge); font-weight:600;}
+.pg .cor{color:#1B1B1B; margin-top:.8pt;}
+.pg .cor b{color:var(--bleu-fonce);}
+.v{color:var(--vert-fonce); font-weight:700;}
+
+</style>
+</head>
+<body>
+<header class="entete">
+  <div class="num">16</div>
+  <div class="txt">
+    <div class="niveau">5EME &middot; MATHEMATIQUES</div>
+    <h1>Masse volumique, vitesse et débit</h1>
+    <div class="sous">Leçon 1 : la masse volumique &middot; Leçon 2 : la vitesse et le débit</div>
+  </div>
+</header>
+
+<div class="bandeau bleu" style="margin-top:0">L'ESSENTIEL</div>
+<div class="cols">
+
+<!-- ================= LECON 1 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 1&nbsp;: La masse volumique</h2>
+<p>La <b>masse volumique</b> d'un corps, notée &#961; (on lit « rhô »), est la <b>masse d'une unité de volume</b> de ce corps. On divise <b>toujours</b> la masse par le volume : « 2 grammes <b>par</b> centimètre cube », et « par » se traduit par une division.</p></div>
+<div class="form">
+  <span class="t">MASSE VOLUMIQUE&nbsp;: UNITES : g/cm<sup>3</sup>, kg/m<sup>3</sup>, kg/L, g/L</span>
+  <div class="c m">&#961;&#8239;=&#8239;masse&#8239;&#247;&#8239;volume&#8239;=&#8239;<i>m</i>&#8239;&#247;&#8239;<i>V</i></div>
+  <div class="c m"><i>m</i>&#8239;=&#8239;&#961;&#8239;&#215;&#8239;<i>V</i> &nbsp;&nbsp;&nbsp; <i>V</i>&#8239;=&#8239;<i>m</i>&#8239;&#247;&#8239;&#961;</div>
+</div>
+<p><b>Un coefficient de proportionnalité.</b> Pour un <b>même corps</b>, la masse et le volume sont proportionnels et &#961; est leur coefficient : on peut dresser un <b>tableau de proportionnalité</b>, volumes sur une ligne, masses sur l'autre. La masse volumique <b>ne change pas</b> avec la quantité : un litre d'huile et un fût de 200 litres ont la même.</p>
+<div class="note"><b>Repères.</b> Eau : 1 kg/L&#8239;=&#8239;1 g/cm<sup>3</sup>&#8239;=&#8239;1&#8239;000 kg/m<sup>3</sup>.</div>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Le triangle des trois grandeurs</h3>
+<div class="form">
+  <span class="t">CACHE LA GRANDEUR CHERCHEE</span>
+  <div class="c m"><span class="f"><span><i>m</i></span><span>&#961;&#8239;&#215;&#8239;<i>V</i></span></span></div>
+</div>
+<p>La <b>barre est une division</b>, le signe du bas une <b>multiplication</b>. Cache <i>m</i> : il reste &#961; à côté de <i>V</i>, donc <span class="pt"><i>m</i>&#8239;=&#8239;&#961;&#8239;&#215;&#8239;<i>V</i></span> ; cache &#961; : il reste <i>m</i> au-dessus de <i>V</i>, donc <span class="pt">&#961;&#8239;=&#8239;<i>m</i>&#8239;&#247;&#8239;<i>V</i></span> ; cache <i>V</i> : il reste <i>m</i> au-dessus de &#961;, donc <span class="pt"><i>V</i>&#8239;=&#8239;<i>m</i>&#8239;&#247;&#8239;&#961;</span>.</p>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Les unités de volume</h3>
+<p>Elles changent de <b>1 000 en 1 000</b>, non de 10 en 10 : un cube de 1 m d'arête contient 10&#8239;&#215;&#8239;10&#8239;&#215;&#8239;10&#8239;=&#8239;1&#8239;000 cubes de 1 dm d'arête.</p>
+<div class="form">
+  <span class="t">VOLUMES ET CONTENANCES</span>
+  <div class="c m">1 m<sup>3</sup>&#8239;=&#8239;1&#8239;000 dm<sup>3</sup>&#8239;=&#8239;1&#8239;000&#8239;000 cm<sup>3</sup></div>
+  <div class="c m">1 L&#8239;=&#8239;1 dm<sup>3</sup> &nbsp;&nbsp; 1 m<sup>3</sup>&#8239;=&#8239;1&#8239;000 L &nbsp;&nbsp; 1 L&#8239;=&#8239;1&#8239;000 cm<sup>3</sup></div>
+</div>
+<p><b>Pavé droit :</b> <span class="pt"><i>V</i>&#8239;=&#8239;longueur&#8239;&#215;&#8239;largeur&#8239;&#215;&#8239;hauteur</span>, les trois dimensions dans la <b>même unité</b>.</p>
+<p><b>Méthode.</b> Repère le donné et le cherché, puis <b>convertis avant</b> de calculer : des g avec des cm<sup>3</sup>, des kg avec des m<sup>3</sup>.</p>
+</div>
+
+<!-- ================= LECON 2 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 2&nbsp;: La vitesse et le débit</h2>
+<p>La <b>vitesse moyenne</b> est la distance parcourue par unité de temps ; le <b>débit</b> est le volume écoulé par unité de temps.</p></div>
+<div class="form">
+  <span class="t">VITESSE&nbsp;: UNITES : km/h, m/s</span>
+  <div class="c m"><i>v</i>&#8239;=&#8239;distance&#8239;&#247;&#8239;durée&#8239;=&#8239;<i>d</i>&#8239;&#247;&#8239;<i>t</i></div>
+  <div class="c m"><i>d</i>&#8239;=&#8239;<i>v</i>&#8239;&#215;&#8239;<i>t</i> &nbsp;&nbsp; <i>t</i>&#8239;=&#8239;<i>d</i>&#8239;&#247;&#8239;<i>v</i> &nbsp;&nbsp; 1 m/s&#8239;=&#8239;3,6 km/h</div>
+</div>
+<div class="form">
+  <span class="t">DEBIT&nbsp;: UNITES : L/s, L/min, L/h, m<sup>3</sup>/h</span>
+  <div class="c m"><i>Q</i>&#8239;=&#8239;volume&#8239;&#247;&#8239;durée&#8239;=&#8239;<i>V</i>&#8239;&#247;&#8239;<i>t</i></div>
+  <div class="c m"><i>V</i>&#8239;=&#8239;<i>Q</i>&#8239;&#215;&#8239;<i>t</i> &nbsp;&nbsp;&nbsp; <i>t</i>&#8239;=&#8239;<i>V</i>&#8239;&#247;&#8239;<i>Q</i></div>
+</div>
+<p>Le <b>même triangle</b> sert : <span class="f"><span><i>d</i></span><span><i>v</i>&#8239;&#215;&#8239;<i>t</i></span></span> et <span class="f"><span><i>V</i></span><span><i>Q</i>&#8239;&#215;&#8239;<i>t</i></span></span>. <b>Masse volumique, vitesse et débit</b> sont des <b>grandeurs-quotients</b>, donc des <b>coefficients de proportionnalité</b>.</p>
+<p><b>Moyenne.</b> Rouler à 60 km/h <b>de moyenne</b>, ce n'est pas rouler à 60 tout le trajet : c'est l'allure constante qui ferait le même chemin en autant de temps.</p>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Lire une vitesse sur un graphique</h3>
+<p>Durée en abscisse, distance en ordonnée : la distance étant <b>proportionnelle</b> à la durée, les points sont <b>alignés</b> et la ligne <b>part de l'origine</b>. Ce que la ligne <b>monte en une heure</b> est la vitesse : monter de 72 km par heure, c'est rouler à 72 km/h. Plus elle est <b>raide</b>, plus le véhicule est rapide ; un <b>arrêt</b> donne un morceau <b>horizontal</b>.</p>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Conversions de temps et de vitesse</h3>
+<div class="form">
+  <span class="t">A CONVERTIR AVANT DE CALCULER</span>
+  <div class="c m">1 h&#8239;=&#8239;60 min &nbsp;&nbsp; 1 min&#8239;=&#8239;60 s &nbsp;&nbsp; 1 h&#8239;=&#8239;3&#8239;600 s</div>
+  <div class="c m">minutes&#8239;<span class="ar">&#8594;</span>&#8239;heures : &#247;&#8239;60 &nbsp;&nbsp; 45 min&#8239;=&#8239;45&#8239;&#247;&#8239;60&#8239;=&#8239;0,75 h</div>
+  <div class="c m">m/s&#8239;<span class="ar">&#8594;</span>&#8239;km/h : &#215;&#8239;3,6 &nbsp;&nbsp;&nbsp; km/h&#8239;<span class="ar">&#8594;</span>&#8239;m/s : &#247;&#8239;3,6</div>
+</div>
+<p>Les durées se comptent par <b>soixantaines</b>. Dans l'autre sens, on multiplie par 60 la partie après la virgule : 2,25 h, c'est 2 h et 0,25&#8239;&#215;&#8239;60&#8239;=&#8239;15 min.</p>
+<p><b>Méthode.</b> <b>Ecarte les temps d'arrêt</b> pour une vitesse de roulage, convertis (des km avec des heures, des mètres avec des secondes), puis vérifie que le résultat est <b>plausible</b>.</p>
+</div>
+
+</div>
+
+<div class="bandeau vert">PIEGES ET ERREURS FREQUENTES</div>
+<div class="cols">
+<div class="pg"><div class="err"><span class="x">&#10007;</span> masse volumique&#8239;=&#8239;volume&#8239;&#247;&#8239;masse</div><div class="cor"><span class="v">&#10003;</span> C'est l'inverse : <span class="pt">&#961;&#8239;=&#8239;masse&#8239;&#247;&#8239;volume</span>, la masse <b>toujours en haut</b> ; on lit « tant de grammes <b>par</b> cm<sup>3</sup> ».</div></div>
+<div class="pg"><div class="err"><span class="x">&#10007;</span> 1,2 kg pour 150 cm<sup>3</sup> : 1,2&#8239;&#247;&#8239;150&#8239;=&#8239;0,008 g/cm<sup>3</sup></div><div class="cor"><span class="v">&#10003;</span> Les <b>unités d'abord</b>, le calcul ensuite : 1,2 kg&#8239;=&#8239;1&#8239;200 g, puis 1&#8239;200&#8239;&#247;&#8239;150&#8239;=&#8239;8 g/cm<sup>3</sup>.</div></div>
+<div class="pg"><div class="err"><span class="x">&#10007;</span> « Deux objets de même volume ont la même masse. »</div><div class="cor"><span class="v">&#10003;</span> Tout dépend de la <b>matière</b>, donc de &#961; : 1 L d'eau pèse 1 kg, 1 L d'huile de karité 0,9 kg.</div></div>
+<div class="pg"><div class="err"><span class="x">&#10007;</span> 2 h 30 min&#8239;=&#8239;2,30 h</div><div class="cor"><span class="v">&#10003;</span> Le temps se compte par <b>soixante</b>, pas par dix : 30&#8239;&#247;&#8239;60&#8239;=&#8239;0,5, donc 2 h 30 min&#8239;=&#8239;<b>2,5 h</b>.</div></div>
+<div class="pg"><div class="err"><span class="x">&#10007;</span> 90 km/h&#8239;=&#8239;90 m/s</div><div class="cor"><span class="v">&#10003;</span> 90 km/h&#8239;=&#8239;90&#8239;000 m&#8239;&#247;&#8239;3&#8239;600 s&#8239;=&#8239;<b>25 m/s</b>, car 1 m/s&#8239;=&#8239;3,6 km/h.</div></div>
+<div class="pg"><div class="err"><span class="x">&#10007;</span> Un robinet de débit 10 L/min remplit 100 L en 5 min</div><div class="cor"><span class="v">&#10003;</span> On cherche une durée : <span class="pt"><i>t</i>&#8239;=&#8239;<i>V</i>&#8239;&#247;&#8239;<i>Q</i>&#8239;=&#8239;100&#8239;&#247;&#8239;10&#8239;=&#8239;10 min</span>.</div></div>
+<div class="pg"><div class="err"><span class="x">&#10007;</span> Une vitesse de roulage calculée sans retirer l'arrêt</div><div class="cor"><span class="v">&#10003;</span> <span class="pt">durée de roulage&#8239;=&#8239;durée totale&#8239;&#8722;&#8239;durée des arrêts</span>.</div></div>
+
+</div>
+
+<div class="bandeau bleu">A SAVOIR PAR COEUR AVANT LE DEVOIR</div>
+<div class="cols">
+<ol class="recap">
+<li><b>Masse volumique</b> : &#961;&#8239;=&#8239;<i>m</i>&#8239;&#247;&#8239;<i>V</i>, donc <i>m</i>&#8239;=&#8239;&#961;&#8239;&#215;&#8239;<i>V</i> et <i>V</i>&#8239;=&#8239;<i>m</i>&#8239;&#247;&#8239;&#961;. Unités : g/cm<sup>3</sup>, kg/m<sup>3</sup>, kg/L.</li>
+<li><b>Vitesse</b> : <i>v</i>&#8239;=&#8239;<i>d</i>&#8239;&#247;&#8239;<i>t</i>, donc <i>d</i>&#8239;=&#8239;<i>v</i>&#8239;&#215;&#8239;<i>t</i> et <i>t</i>&#8239;=&#8239;<i>d</i>&#8239;&#247;&#8239;<i>v</i>. Unités : km/h, m/s.</li>
+<li><b>Débit</b> : <i>Q</i>&#8239;=&#8239;<i>V</i>&#8239;&#247;&#8239;<i>t</i>, donc <i>V</i>&#8239;=&#8239;<i>Q</i>&#8239;&#215;&#8239;<i>t</i> et <i>t</i>&#8239;=&#8239;<i>V</i>&#8239;&#247;&#8239;<i>Q</i>. Unités : L/s, L/min, m<sup>3</sup>/h.</li>
+<li><b>Triangle</b> : on cache la grandeur cherchée et l'on lit la formule sur ce qui reste (barre&#8239;=&#8239;division, signe du bas&#8239;=&#8239;multiplication).</li>
+<li><b>Convertir AVANT de calculer</b> : g avec cm<sup>3</sup>, kg avec m<sup>3</sup>, km avec heures, mètres avec secondes.</li>
+<li><b>Volumes</b>, de 1 000 en 1 000 : 1 m<sup>3</sup>&#8239;=&#8239;1&#8239;000 dm<sup>3</sup>&#8239;=&#8239;1&#8239;000&#8239;000 cm<sup>3</sup> ; 1 L&#8239;=&#8239;1 dm<sup>3</sup> ; 1 m<sup>3</sup>&#8239;=&#8239;1&#8239;000 L ; 1 L&#8239;=&#8239;1&#8239;000 cm<sup>3</sup>.</li>
+<li><b>Temps</b> : 1 h&#8239;=&#8239;60 min&#8239;=&#8239;3&#8239;600 s ; minutes en heures : &#247;&#8239;60 (45 min&#8239;=&#8239;0,75 h). Et 1 m/s&#8239;=&#8239;3,6 km/h ; 1 g/cm<sup>3</sup>&#8239;=&#8239;1&#8239;000 kg/m<sup>3</sup>.</li>
+</ol>
+</div>
+
+</body>
+</html>

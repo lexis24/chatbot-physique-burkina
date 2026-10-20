@@ -1,0 +1,350 @@
+{
+  "niveau": "Terminale D",
+  "chapitre": "Chapitre 7 : Calcul intégral et équations différentielles",
+  "source": "maths/tleD/Chapitre_7_Calcul_integral_equations_diff",
+  "nombre_cartes": 38,
+  "cartes": [
+    {
+      "id": "TD-CH07-001",
+      "lecon": "Intégrale d'une fonction continue",
+      "type": "formule",
+      "recto": "Comment définit-on l'intégrale $\\displaystyle\\int_a^b f(x)\\,dx$ d'une fonction continue ?",
+      "verso": "Par $\\displaystyle\\int_a^b f(x)\\,dx=F(b)-F(a)=\\big[F(x)\\big]_a^b$, où $F$ est une primitive de $f$ sur un intervalle contenant $a$ et $b$. Ce nombre ne dépend pas de la primitive choisie.",
+      "difficulte": 1,
+      "tags": ["integrale", "definition", "primitive"]
+    },
+    {
+      "id": "TD-CH07-002",
+      "lecon": "Intégrale d'une fonction continue",
+      "type": "definition",
+      "recto": "Que veut dire que la variable est muette dans $\\displaystyle\\int_a^b f(x)\\,dx$ ?",
+      "verso": "Qu'elle disparaît du résultat et peut être renommée librement : $\\displaystyle\\int_a^b f(x)\\,dx$ et $\\displaystyle\\int_a^b f(t)\\,dt$ désignent le même nombre. Le symbole $dx$ n'est pas décoratif : il indique par rapport à quelle variable on intègre.",
+      "difficulte": 2,
+      "tags": ["variable-muette", "notation"]
+    },
+    {
+      "id": "TD-CH07-003",
+      "lecon": "Intégrale d'une fonction continue",
+      "type": "formule",
+      "recto": "Que valent $\\displaystyle\\int_a^a f(x)\\,dx$ et $\\displaystyle\\int_b^a f(x)\\,dx$ ?",
+      "verso": "$\\displaystyle\\int_a^a f(x)\\,dx=0$ et $\\displaystyle\\int_b^a f(x)\\,dx=-\\int_a^b f(x)\\,dx$. Les deux se lisent sur la définition : $F(a)-F(a)=0$, et $F(a)-F(b)$ est l'opposé de $F(b)-F(a)$.",
+      "difficulte": 1,
+      "tags": ["bornes", "cas-particuliers"]
+    },
+    {
+      "id": "TD-CH07-004",
+      "lecon": "Intégrale d'une fonction continue",
+      "type": "formule",
+      "recto": "Quelle est la primitive de $f$ qui s'annule en $a$ ?",
+      "verso": "La fonction $x\\mapsto\\displaystyle\\int_a^x f(t)\\,dt$. Si $G$ est une primitive quelconque de $f$, elle vaut $G(x)-G(a)$ : elle est donc dérivable, de dérivée $f$, et prend bien la valeur $0$ en $a$.",
+      "difficulte": 2,
+      "tags": ["primitive", "borne-variable"]
+    },
+    {
+      "id": "TD-CH07-005",
+      "lecon": "Intégrale d'une fonction continue",
+      "type": "formule",
+      "recto": "Que représente $\\displaystyle\\int_a^b f(x)\\,dx$ lorsque $f$ est continue et positive sur $[a\\,;b]$, avec $a<b$ ?",
+      "verso": "L'aire, en unités d'aire, de la région comprise entre la courbe de $f$, l'axe des abscisses et les droites d'équations $x=a$ et $x=b$. Ce lien entre l'intégrale et l'aire est admis.",
+      "difficulte": 1,
+      "tags": ["aire", "interpretation", "positivite"]
+    },
+    {
+      "id": "TD-CH07-006",
+      "lecon": "Intégrale d'une fonction continue",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on une unité d'aire dans un repère orthogonal ?",
+      "verso": "L'aire du rectangle construit sur les unités des deux axes. Si l'unité vaut $1$ cm en abscisse et $2$ cm en ordonnée, alors $1$ unité d'aire vaut $2$ cm². L'intégrale donne toujours des unités d'aire, la conversion se fait à la fin.",
+      "difficulte": 2,
+      "tags": ["unite-daire", "conversion"]
+    },
+    {
+      "id": "TD-CH07-007",
+      "lecon": "Intégrale d'une fonction continue",
+      "type": "definition",
+      "recto": "Pourquoi $\\displaystyle\\int_a^b f(x)\\,dx$ ne donne-t-elle pas l'aire lorsque $f$ change de signe ?",
+      "verso": "Parce que l'intégrale fait le bilan : les parties situées sous l'axe comptent négativement. Pour l'aire, on découpe aux points où $f$ s'annule et l'on additionne les valeurs absolues. Ainsi $\\displaystyle\\int_0^3(x-1)\\,dx=1{,}5$ alors que l'aire vaut $2{,}5$.",
+      "difficulte": 3,
+      "tags": ["aire", "changement-de-signe", "piege"]
+    },
+    {
+      "id": "TD-CH07-008",
+      "lecon": "Intégrale d'une fonction continue",
+      "type": "definition",
+      "recto": "Pourquoi le choix de la primitive n'a-t-il aucune importance dans le calcul d'une intégrale ?",
+      "verso": "Parce que deux primitives d'une même fonction sur un intervalle diffèrent d'une constante $k$ : dans $\\big(F(b)+k\\big)-\\big(F(a)+k\\big)$, cette constante apparaît deux fois avec des signes contraires et disparaît. L'intégrale est donc bien définie.",
+      "difficulte": 2,
+      "tags": ["primitive", "constante", "justification"]
+    },
+    {
+      "id": "TD-CH07-009",
+      "lecon": "Propriétés de l'intégrale et valeur moyenne",
+      "type": "formule",
+      "recto": "Qu'énonce la relation de Chasles pour les intégrales ?",
+      "verso": "Pour $f$ continue sur un intervalle contenant $a$, $b$ et $c$ : $\\displaystyle\\int_a^b f+\\int_b^c f=\\int_a^c f$. Elle est vraie quel que soit l'ordre des trois nombres, sans qu'il soit nécessaire que $b$ soit compris entre $a$ et $c$.",
+      "difficulte": 1,
+      "tags": ["chasles", "decoupage"]
+    },
+    {
+      "id": "TD-CH07-010",
+      "lecon": "Propriétés de l'intégrale et valeur moyenne",
+      "type": "formule",
+      "recto": "Qu'énonce la linéarité de l'intégrale ?",
+      "verso": "Pour $f$ et $g$ continues et pour tous réels $\\alpha$ et $\\beta$ : $\\displaystyle\\int_a^b\\big(\\alpha f+\\beta g\\big)=\\alpha\\int_a^b f+\\beta\\int_a^b g$. Autrement dit, on sépare les sommes et l'on sort les constantes.",
+      "difficulte": 1,
+      "tags": ["linearite", "calcul"]
+    },
+    {
+      "id": "TD-CH07-011",
+      "lecon": "Propriétés de l'intégrale et valeur moyenne",
+      "type": "formule",
+      "recto": "Que donnent la positivité et la comparaison des intégrales sur $[a\\,;b]$, avec $a<b$ ?",
+      "verso": "Si $f\\ge 0$ sur $[a\\,;b]$, alors $\\displaystyle\\int_a^b f\\ge 0$. Si $f\\le g$ sur $[a\\,;b]$, alors $\\displaystyle\\int_a^b f\\le\\int_a^b g$ : l'intégrale conserve l'ordre. On dispose aussi de $\\left|\\displaystyle\\int_a^b f\\right|\\le\\displaystyle\\int_a^b|f|$.",
+      "difficulte": 2,
+      "tags": ["positivite", "comparaison", "ordre"]
+    },
+    {
+      "id": "TD-CH07-012",
+      "lecon": "Propriétés de l'intégrale et valeur moyenne",
+      "type": "definition",
+      "recto": "Pourquoi une intégrale positive ne prouve-t-elle pas que la fonction est positive ?",
+      "verso": "Parce que l'intégrale n'est qu'un bilan : $\\displaystyle\\int_{-1}^{2}2t\\,dt=3\\ge 0$ alors que $t\\mapsto 2t$ est négative sur $[-1\\,;0[$. La positivité n'a donc pas de réciproque, comme un commerçant peut finir l'année en bénéfice après des mois de pertes.",
+      "difficulte": 3,
+      "tags": ["positivite", "reciproque", "piege"]
+    },
+    {
+      "id": "TD-CH07-013",
+      "lecon": "Propriétés de l'intégrale et valeur moyenne",
+      "type": "formule",
+      "recto": "Qu'affirme l'inégalité de la moyenne pour une fonction vérifiant $m\\le f\\le M$ sur $[a\\,;b]$ ?",
+      "verso": "Que $m(b-a)\\le\\displaystyle\\int_a^b f(x)\\,dx\\le M(b-a)$. En particulier, si $|f|\\le M$ sur $[a\\,;b]$, alors $\\left|\\displaystyle\\int_a^b f(x)\\,dx\\right|\\le M(b-a)$. Cet encadrement s'obtient sans calculer la moindre primitive.",
+      "difficulte": 2,
+      "tags": ["inegalite-de-la-moyenne", "encadrement"]
+    },
+    {
+      "id": "TD-CH07-014",
+      "lecon": "Propriétés de l'intégrale et valeur moyenne",
+      "type": "formule",
+      "recto": "Que vaut $\\displaystyle\\int_{-a}^{a}f(t)\\,dt$ selon que $f$ est paire ou impaire, avec $a>0$ ?",
+      "verso": "Si $f$ est paire, $\\displaystyle\\int_{-a}^{a}f(t)\\,dt=2\\int_0^{a}f(t)\\,dt$ : les deux moitiés de la région ont la même aire. Si $f$ est impaire, $\\displaystyle\\int_{-a}^{a}f(t)\\,dt=0$ : les deux contributions se compensent exactement.",
+      "difficulte": 2,
+      "tags": ["parite", "symetrie"]
+    },
+    {
+      "id": "TD-CH07-015",
+      "lecon": "Propriétés de l'intégrale et valeur moyenne",
+      "type": "formule",
+      "recto": "Que vaut $\\displaystyle\\int_{a}^{a+T}f(t)\\,dt$ pour une fonction continue et périodique de période $T$ ?",
+      "verso": "Elle vaut $\\displaystyle\\int_0^{T}f(t)\\,dt$, quel que soit le réel $a$ : l'aire sous une période complète ne dépend pas de l'endroit où on la prélève, puisque le motif se répète à l'identique.",
+      "difficulte": 2,
+      "tags": ["periodicite", "integrale"]
+    },
+    {
+      "id": "TD-CH07-016",
+      "lecon": "Propriétés de l'intégrale et valeur moyenne",
+      "type": "formule",
+      "recto": "Comment définit-on la valeur moyenne d'une fonction $f$ sur $[a\\,;b]$, avec $a<b$ ?",
+      "verso": "Par $\\mu=\\dfrac{1}{b-a}\\displaystyle\\int_a^b f(x)\\,dx$. C'est la hauteur du rectangle de base $[a\\,;b]$ ayant la même aire que la région sous la courbe, et si $m\\le f\\le M$, alors $m\\le\\mu\\le M$.",
+      "difficulte": 1,
+      "tags": ["valeur-moyenne", "rectangle"]
+    },
+    {
+      "id": "TD-CH07-017",
+      "lecon": "Propriétés de l'intégrale et valeur moyenne",
+      "type": "definition",
+      "recto": "Pourquoi l'intégrale d'un produit n'est-elle pas le produit des deux intégrales ?",
+      "verso": "Parce que la linéarité vaut pour l'addition et pour la multiplication par une constante, jamais pour un produit ni pour un quotient de fonctions. Sur $[0\\,;1]$, $\\displaystyle\\int_0^1 x\\times x\\,dx=\\dfrac13$ tandis que $\\left(\\displaystyle\\int_0^1 x\\,dx\\right)^2=\\dfrac14$.",
+      "difficulte": 3,
+      "tags": ["produit", "linearite", "piege"]
+    },
+    {
+      "id": "TD-CH07-018",
+      "lecon": "Techniques de calcul et intégration par parties",
+      "type": "formule",
+      "recto": "Quelles primitives se lisent directement sur les formes $u'e^{u}$, $u'\\cos u$ et $u'\\sin u$ ?",
+      "verso": "Une primitive de $u'e^{u}$ est $e^{u}$, une primitive de $u'\\cos u$ est $\\sin u$, et une primitive de $u'\\sin u$ est $-\\cos u$. On repère d'abord $u$, puis on vérifie que $u'$ figure bien dans l'expression, quitte à ajuster un coefficient.",
+      "difficulte": 2,
+      "tags": ["formes-composees", "primitive"]
+    },
+    {
+      "id": "TD-CH07-019",
+      "lecon": "Techniques de calcul et intégration par parties",
+      "type": "formule",
+      "recto": "Qu'est-ce qui distingue la forme $\\dfrac{u'}{u}$ de la forme $u'u^{\\alpha}$ ?",
+      "verso": "Une primitive de $u'u^{\\alpha}$ est $\\dfrac{u^{\\alpha+1}}{\\alpha+1}$, pour $\\alpha\\ne -1$ ; le cas $\\alpha=-1$ est justement la forme $\\dfrac{u'}{u}$, dont une primitive est $\\ln|u|$. L'exposant peut être négatif ou fractionnaire : $\\dfrac{1}{\\sqrt{x}}=x^{-1/2}$ a pour primitive $2\\sqrt{x}$.",
+      "difficulte": 2,
+      "tags": ["formes-composees", "logarithme", "puissance"]
+    },
+    {
+      "id": "TD-CH07-020",
+      "lecon": "Techniques de calcul et intégration par parties",
+      "type": "formule",
+      "recto": "Quelle est une primitive de $x\\mapsto f(ax+b)$ lorsque $F$ est une primitive de $f$ et que $a\\ne 0$ ?",
+      "verso": "La fonction $x\\mapsto\\dfrac1a\\,F(ax+b)$. Le facteur $\\dfrac1a$ compense le coefficient $a$ que la dérivation de la composée ferait apparaître.",
+      "difficulte": 2,
+      "tags": ["composition-affine", "primitive"]
+    },
+    {
+      "id": "TD-CH07-021",
+      "lecon": "Techniques de calcul et intégration par parties",
+      "type": "formule",
+      "recto": "Pourquoi une primitive de $x\\mapsto e^{2x}$ n'est-elle pas $e^{2x}$ ?",
+      "verso": "Parce qu'en dérivant $e^{2x}$ on obtient $2e^{2x}$, soit le double : une primitive est $\\dfrac12 e^{2x}$, car il faut diviser par le coefficient de $x$. Le même réflexe vaut pour $\\dfrac{x}{x^2+1}$, que l'on écrit $\\dfrac12\\times\\dfrac{2x}{x^2+1}$.",
+      "difficulte": 3,
+      "tags": ["coefficient", "primitive", "piege"]
+    },
+    {
+      "id": "TD-CH07-022",
+      "lecon": "Techniques de calcul et intégration par parties",
+      "type": "formule",
+      "recto": "Quelle est la formule d'intégration par parties ?",
+      "verso": "Pour $u$ et $v$ dérivables sur $[a\\,;b]$, à dérivées continues : $\\displaystyle\\int_a^b u(x)v'(x)\\,dx=\\big[u(x)v(x)\\big]_a^b-\\int_a^b u'(x)v(x)\\,dx$. Elle n'est que la dérivée d'un produit, $(uv)'=u'v+uv'$, lue à l'envers.",
+      "difficulte": 1,
+      "tags": ["ipp", "formule", "produit"]
+    },
+    {
+      "id": "TD-CH07-023",
+      "lecon": "Techniques de calcul et intégration par parties",
+      "type": "formule",
+      "recto": "Comment choisit-on $u$ et $v'$ dans une intégration par parties ?",
+      "verso": "On prend pour $u$ le facteur dont la dérivée est plus simple que lui, comme $x$, $x^2$ ou $\\ln x$, et pour $v'$ celui qui s'intègre facilement. L'opération n'est gagnante que si la nouvelle intégrale $\\displaystyle\\int_a^b u'v$ est plus simple que celle de départ.",
+      "difficulte": 2,
+      "tags": ["ipp", "choix", "methode"]
+    },
+    {
+      "id": "TD-CH07-024",
+      "lecon": "Techniques de calcul et intégration par parties",
+      "type": "formule",
+      "recto": "Combien d'intégrations par parties faut-il pour une intégrale du type $\\displaystyle\\int_a^b x^{n}e^{x}\\,dx$ ?",
+      "verso": "Autant que le degré du polynôme, car chaque intégration par parties fait baisser ce degré d'une unité : $x^2$ devient $2x$, puis $2x$ devient $2$. Pour $\\ln x$ seul, on l'écrit $1\\times\\ln x$ et une seule suffit.",
+      "difficulte": 2,
+      "tags": ["ipp", "degre", "repetition"]
+    },
+    {
+      "id": "TD-CH07-025",
+      "lecon": "Equations différentielles linéaires",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on une équation différentielle ?",
+      "verso": "Une équation dont l'inconnue est une fonction $y$ et dans laquelle figurent une ou plusieurs de ses dérivées. Son ordre est celui de la dérivée la plus élevée qui y apparaît, et la résoudre, ou l'intégrer, c'est déterminer toutes les fonctions qui la vérifient sur un intervalle.",
+      "difficulte": 1,
+      "tags": ["equation-differentielle", "definition", "ordre"]
+    },
+    {
+      "id": "TD-CH07-026",
+      "lecon": "Equations différentielles linéaires",
+      "type": "formule",
+      "recto": "Quelles sont les solutions sur $\\mathbb{R}$ de l'équation différentielle $y'+ay=0$ ?",
+      "verso": "Exactement les fonctions $y(x)=C\\,e^{-ax}$, où $C$ décrit $\\mathbb{R}$. Il y en a donc une infinité, et elles se déduisent les unes des autres par multiplication par une constante.",
+      "difficulte": 1,
+      "tags": ["premier-ordre", "solution-generale"]
+    },
+    {
+      "id": "TD-CH07-027",
+      "lecon": "Equations différentielles linéaires",
+      "type": "formule",
+      "recto": "Combien de solutions de $y'+ay=0$ vérifient une condition initiale $y(x_0)=y_0$ ?",
+      "verso": "Une seule. Comme $e^{-ax_0}$ n'est jamais nul, l'équation $C\\,e^{-ax_0}=y_0$ d'inconnue $C$ possède une solution et une seule. Géométriquement, par chaque point du plan passe une courbe de la famille et une seule.",
+      "difficulte": 2,
+      "tags": ["condition-initiale", "unicite"]
+    },
+    {
+      "id": "TD-CH07-028",
+      "lecon": "Equations différentielles linéaires",
+      "type": "formule",
+      "recto": "Pourquoi la solution de $y'-2y=0$ est-elle $C\\,e^{2x}$ et non $C\\,e^{-2x}$ ?",
+      "verso": "Parce que dans $y'+ay=0$ la solution s'écrit $C\\,e^{-ax}$ : le signe de l'exposant est l'opposé de celui de $a$. Ici $a=-2$, donc l'exposant vaut $2x$ et la solution est croissante.",
+      "difficulte": 3,
+      "tags": ["signe", "premier-ordre", "piege"]
+    },
+    {
+      "id": "TD-CH07-029",
+      "lecon": "Equations différentielles linéaires",
+      "type": "formule",
+      "recto": "Que faut-il faire avant d'identifier $a$ dans une équation comme $2y'+6y=0$ ?",
+      "verso": "Diviser toute l'équation par le coefficient de $y'$ pour la ramener à la forme du cours : $2y'+6y=0$ devient $y'+3y=0$, donc $a=3$ et $y=C\\,e^{-3x}$. Lire $a=6$ directement fausserait tout le reste.",
+      "difficulte": 2,
+      "tags": ["mise-en-forme", "premier-ordre"]
+    },
+    {
+      "id": "TD-CH07-030",
+      "lecon": "Equations différentielles linéaires",
+      "type": "formule",
+      "recto": "Quelles sont les solutions de l'équation $y''+\\omega^{2}y=0$, avec $\\omega>0$ ?",
+      "verso": "Les fonctions $y(x)=A\\cos(\\omega x)+B\\sin(\\omega x)$, avec $A$ et $B$ réels : c'est la forme admise. Le nombre $\\omega$ est la racine carrée positive du coefficient de $y$, donc $y''+16y=0$ donne $\\omega=4$.",
+      "difficulte": 1,
+      "tags": ["second-ordre", "solution-generale"]
+    },
+    {
+      "id": "TD-CH07-031",
+      "lecon": "Equations différentielles linéaires",
+      "type": "formule",
+      "recto": "Comment les conditions en $0$ déterminent-elles $A$ et $B$ dans $y=A\\cos(\\omega x)+B\\sin(\\omega x)$ ?",
+      "verso": "En dérivant, $y'(x)=-A\\,\\omega\\sin(\\omega x)+B\\,\\omega\\cos(\\omega x)$, donc $y(0)=A$ et $y'(0)=B\\,\\omega$. Deux constantes exigent deux conditions, en général la valeur de $y$ et celle de $y'$ en un même point.",
+      "difficulte": 2,
+      "tags": ["second-ordre", "conditions", "derivee"]
+    },
+    {
+      "id": "TD-CH07-032",
+      "lecon": "Equations différentielles linéaires",
+      "type": "definition",
+      "recto": "Que change le signe de $a$ dans le comportement des solutions de $y'+ay=0$ ?",
+      "verso": "Si $a>0$, l'exposant $-ax$ devient négatif et la solution décroît vers $0$ : radioactivité, refroidissement, vidange. Si $a<0$, la solution croît sans limite : croissance d'une population, intérêts composés. La valeur $C=0$ donne la fonction nulle, toujours solution.",
+      "difficulte": 2,
+      "tags": ["signe", "croissance", "modelisation"]
+    },
+    {
+      "id": "TD-CH07-033",
+      "lecon": "Encadrements, valeurs approchées et volumes",
+      "type": "formule",
+      "recto": "De quoi dépend l'amplitude de l'encadrement donné par l'inégalité de la moyenne ?",
+      "verso": "Elle vaut $(M-m)(b-a)$, donc elle est d'autant plus petite que la fonction varie peu et que l'intervalle est court. On trouve $m$ et $M$ par le sens de variation de $f$, et comme on ne peut pas rendre la fonction moins variable, on découpe l'intervalle.",
+      "difficulte": 2,
+      "tags": ["amplitude", "encadrement", "decoupage"]
+    },
+    {
+      "id": "TD-CH07-034",
+      "lecon": "Encadrements, valeurs approchées et volumes",
+      "type": "formule",
+      "recto": "Quelles sommes obtient-on en découpant $[a\\,;b]$ en $n$ tranches pour approcher une intégrale ?",
+      "verso": "Les sommes de rectangles de hauteur $f(x_k)$ ou $f(x_{k+1})$, qui encadrent l'intégrale lorsque $f$ est monotone, et la somme des trapèzes, qui en est la moyenne et se révèle bien plus précise. La méthode du point milieu prend la hauteur au milieu de chaque tranche.",
+      "difficulte": 2,
+      "tags": ["rectangles", "trapezes", "valeur-approchee"]
+    },
+    {
+      "id": "TD-CH07-035",
+      "lecon": "Encadrements, valeurs approchées et volumes",
+      "type": "formule",
+      "recto": "Comment l'amplitude de l'encadrement par rectangles varie-t-elle avec le nombre $n$ de tranches ?",
+      "verso": "Pour $f$ monotone, elle vaut $\\dfrac{(b-a)\\big(f(b)-f(a)\\big)}{n}$ : elle est inversement proportionnelle à $n$. Doubler le nombre de tranches divise donc l'amplitude par deux, et cent tranches la rendent cent fois plus petite.",
+      "difficulte": 2,
+      "tags": ["amplitude", "rectangles", "precision"]
+    },
+    {
+      "id": "TD-CH07-036",
+      "lecon": "Encadrements, valeurs approchées et volumes",
+      "type": "formule",
+      "recto": "Comment calcule-t-on l'aire du domaine compris entre les courbes de $f$ et de $g$ sur $[a\\,;b]$ ?",
+      "verso": "Par $\\mathcal{A}=\\displaystyle\\int_a^b\\big(g(x)-f(x)\\big)\\,dx$ lorsque $f\\le g$ : on soustrait toujours la courbe du bas à la courbe du haut, pour obtenir un résultat positif. Si les courbes se croisent, on découpe aux points d'intersection et l'on additionne.",
+      "difficulte": 1,
+      "tags": ["aire", "deux-courbes", "soustraction"]
+    },
+    {
+      "id": "TD-CH07-037",
+      "lecon": "Encadrements, valeurs approchées et volumes",
+      "type": "formule",
+      "recto": "Comment obtient-on le volume d'un solide dont on connaît l'aire $S(x)$ de ses sections ?",
+      "verso": "Par $V=\\displaystyle\\int_a^b S(x)\\,dx$, formule admise, où $a$ et $b$ sont les abscisses extrêmes du solide et $S$ est continue sur $[a\\,;b]$. Une tranche mince d'épaisseur $dx$ a pour volume approché $S(x)\\,dx$.",
+      "difficulte": 1,
+      "tags": ["volume", "sections"]
+    },
+    {
+      "id": "TD-CH07-038",
+      "lecon": "Encadrements, valeurs approchées et volumes",
+      "type": "formule",
+      "recto": "Quel volume engendre la rotation de la courbe de $f$ autour de l'axe $(Ox)$ sur $[a\\,;b]$ ?",
+      "verso": "Le volume $V=\\displaystyle\\int_a^b \\pi\\big[f(x)\\big]^{2}\\,dx$ : la section d'abscisse $x$ est un disque de rayon $\\left|f(x)\\right|$, donc d'aire $\\pi\\big[f(x)\\big]^{2}$. C'est bien le carré du rayon qui intervient, et non $\\pi f(x)$.",
+      "difficulte": 2,
+      "tags": ["volume-de-revolution", "disque", "carre"]
+    }
+  ]
+}

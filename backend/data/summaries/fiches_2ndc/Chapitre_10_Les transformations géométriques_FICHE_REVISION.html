@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Fiche de revision - 2nde C - Chapitre 10 : Les transformations geometriques</title>
+<style>
+/* ===================================================================
+   FICHE DE REVISION, Collection Hakili Lab, Edition 2026
+   Feuille de style autonome, format A4 pret a imprimer.
+   Bleu #005CB9 · Vert #49A145
+   =================================================================== */
+:root{
+  --bleu:#005CB9; --bleu-fonce:#00429A; --bleu-pale:#E8F1FB; --bleu-bord:#B7D2EE;
+  --vert:#49A145; --vert-fonce:#2F7A2C; --vert-pale:#EDF7EC; --vert-bord:#BCE0B9;
+  --gris:#4A4A4A; --gris-clair:#E4E4E4; --rouge:#B3261E;
+}
+@page{
+  size:A4; margin:15mm;
+  @bottom-center{
+    content:"Collection Hakili Lab, Edition 2026  ·  Fiche de revision  ·  " counter(page) "/" counter(pages);
+    font-family:"Segoe UI",Calibri,Arial,sans-serif; font-size:6.6pt; color:#8A8A8A;
+  }
+}
+*{box-sizing:border-box;}
+body{
+  margin:0; font-family:"Segoe UI",Calibri,Arial,sans-serif;
+  font-size:8.4pt; line-height:1.26; color:#1B1B1B;
+}
+p{margin:0 0 3pt;}
+ul{margin:0 0 3pt; padding-left:11pt;}
+li{margin:0 0 1.2pt;}
+b,strong{color:var(--bleu-fonce);}
+
+/* ------------------------------ ENTETE ---------------------------- */
+.entete{
+  display:flex; align-items:stretch; border:1.6pt solid var(--bleu);
+  border-radius:2.5pt; overflow:hidden; margin-bottom:6pt;
+}
+.entete .num{
+  background:var(--bleu); color:#fff; font-size:20pt; font-weight:700;
+  padding:0 8pt; display:flex; align-items:center; justify-content:center; min-width:34pt;
+}
+.entete .txt{padding:3.5pt 8pt; flex:1;}
+.entete .niveau{
+  font-size:7pt; font-weight:700; letter-spacing:.9pt; color:var(--vert-fonce);
+}
+.entete h1{margin:0; font-size:13.5pt; line-height:1.12; color:var(--bleu-fonce); font-weight:700;}
+.entete .sous{font-size:7pt; color:var(--gris); margin-top:1pt;}
+
+/* --------------------------- BANDEAUX ----------------------------- */
+.bandeau{
+  color:#fff; font-weight:700; font-size:9pt; letter-spacing:1pt;
+  padding:2.4pt 7pt; border-radius:2pt; margin:3pt 0 4pt; break-after:avoid; page-break-after:avoid;
+}
+.bandeau.bleu{background:var(--bleu);}
+.bandeau.vert{background:var(--vert);}
+
+/* --------------------------- COLONNES ----------------------------- */
+.cols{column-count:2; column-gap:7mm; column-fill:balance;}
+
+.cols.bal{column-fill:balance;}
+.bloc{margin-bottom:5pt;}
+.keep{break-inside:avoid; page-break-inside:avoid;}
+
+/* --------------------------- LECONS ------------------------------- */
+h2.lecon{
+  margin:0 0 3pt; font-size:8.6pt; font-weight:700; color:#fff; background:var(--bleu-fonce);
+  padding:1.8pt 5pt; border-radius:1.5pt; break-after:avoid; page-break-after:avoid;
+}
+h3.rub{
+  margin:3.5pt 0 1.5pt; font-size:8.2pt; font-weight:700; color:var(--vert-fonce);
+  border-bottom:.7pt solid var(--vert-bord); padding-bottom:.8pt;
+  break-after:avoid; page-break-after:avoid;
+}
+
+/* --------------------------- ENCADRES ----------------------------- */
+.form{
+  background:var(--bleu-pale); border:.8pt solid var(--bleu-bord); border-left:2.6pt solid var(--bleu);
+  border-radius:2pt; padding:2.4pt 5pt; margin:2.2pt 0 3.4pt;
+  break-inside:avoid; page-break-inside:avoid;
+}
+.form .t{
+  display:block; font-size:6.8pt; font-weight:700; letter-spacing:.6pt;
+  color:var(--bleu); margin-bottom:1.5pt;
+}
+.form .c{text-align:center; font-size:9.1pt; margin:1.6pt 0;}
+.note{background:var(--vert-pale); border-left:2.4pt solid var(--vert); padding:2.4pt 5pt; border-radius:1.5pt; margin:2.5pt 0 4pt; break-inside:avoid;}
+
+/* --------------------------- TABLEAUX ----------------------------- */
+table{width:100%; border-collapse:collapse; font-size:7.6pt; margin:2pt 0 4pt; break-inside:avoid;}
+th{background:var(--bleu); color:#fff; font-weight:700; text-align:left; padding:1.8pt 4pt; font-size:7.2pt;}
+td{border:.6pt solid var(--gris-clair); padding:1.8pt 4pt; vertical-align:top;}
+tr{break-inside:avoid;}
+table.var td{text-align:center; font-size:8pt;}
+table.var td.lab{text-align:left; font-weight:700; color:var(--bleu-fonce); background:var(--bleu-pale);}
+
+/* ----------------------------- PIEGES ----------------------------- */
+table.pieges th:first-child{width:44%;}
+table.pieges td:first-child{color:var(--rouge); background:#FDF1F0;}
+.x{font-weight:700;}
+.v{color:var(--vert-fonce); font-weight:700;}
+
+/* ---------------------------- RECAP ------------------------------- */
+ol.recap{margin:0; padding-left:0; list-style:none; counter-reset:r;}
+ol.recap li{
+  counter-increment:r; position:relative; padding-left:13pt; margin-bottom:1.8pt;
+  break-inside:avoid;
+}
+ol.recap li::before{
+  content:counter(r); position:absolute; left:0; top:.3pt;
+  width:10pt; height:10pt; border-radius:50%; background:var(--vert); color:#fff;
+  font-size:6.6pt; font-weight:700; text-align:center; line-height:10pt;
+}
+
+/* --------------------------- MATHS -------------------------------- */
+.m{font-family:Cambria,Georgia,"Times New Roman",serif;}
+i,var{font-family:Cambria,Georgia,"Times New Roman",serif; font-style:italic;}
+.op{font-family:Cambria,Georgia,"Times New Roman",serif; font-style:normal;}
+.f{display:inline-block; vertical-align:middle; text-align:center;
+   margin:0 .12em; line-height:1.06; font-family:Cambria,Georgia,"Times New Roman",serif;}
+.f>span{display:block; padding:0 .2em;}
+.f>span:first-child{border-bottom:.6pt solid currentColor; padding-bottom:.08em;}
+.f>span:last-child{padding-top:.04em;}
+.rad{border-top:.6pt solid currentColor; padding-top:.12em;}
+/* line-height:0 evite que l'exposant n'ecarte les lignes ; position:relative le
+   repositionne sans qu'il heurte la barre de fraction ni le trait du radical. */
+sup,sub{font-size:.68em; line-height:0; position:relative; vertical-align:baseline;}
+sup{top:-.42em;}
+sub{bottom:-.22em;}
+.pt{white-space:nowrap;}
+/* Les fleches n'ont qu'un glyphe atrophie dans la fonte serif : on les force
+   en sans-serif, ou elles sont franches meme a 8 pt. */
+.ar{font-family:"Segoe UI",Calibri,Arial,"DejaVu Sans",sans-serif; font-style:normal;}
+
+/* ------------------- PIEGES : blocs erreur / correction ------------- */
+.pg{font-size:8.1pt; border-left:2.4pt solid var(--rouge); background:#FDF1F0; border-radius:1.5pt;
+    padding:2pt 5pt; margin:0 0 2.8pt; break-inside:avoid; page-break-inside:avoid;}
+.pg .err{color:var(--rouge); font-weight:600;}
+.pg .cor{color:#1B1B1B; margin-top:.8pt;}
+.pg .cor b{color:var(--bleu-fonce);}
+.v{color:var(--vert-fonce); font-weight:700;}
+
+</style>
+</head>
+<body>
+<header class="entete">
+  <div class="num">10</div>
+  <div class="txt">
+    <div class="niveau">2NDE C &middot; MATHEMATIQUES</div>
+    <h1>Les transformations géométriques</h1>
+    <div class="sous">Leçon 1 : translation, symétrie centrale, symétrie orthogonale &middot; Leçon 2 : l'homothétie &middot; Leçon 3 : la rotation &middot; Leçon 4 : utilisation des transformations</div>
+  </div>
+</header>
+
+<div class="bandeau bleu" style="margin-top:0">L'ESSENTIEL</div>
+<div class="cols">
+
+<!-- ================= LECON 1 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 1&nbsp;: Translation, symétrie centrale, symétrie orthogonale</h2>
+<p>Une <b>transformation du plan</b> associe à <b>tout</b> point M <b>un unique</b> point M&#8242;, et tout point du plan est l'image d'un point et d'un seul. M&#8242; est l'<b>image</b> de M, M l'<b>antécédent</b> de M&#8242; ; on écrit M&#8242;&#8239;=&#8239;<i>f</i>(M). Un point tel que <i>f</i>(M)&#8239;=&#8239;M est un <b>point invariant</b>.</p></div>
+<div class="form">
+  <span class="t">LES TROIS TRANSFORMATIONS CONNUES</span>
+  <div class="c m">Translation de vecteur <span style="display:inline-block;position:relative;line-height:1"><i>u</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.72em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span> : <span style="display:inline-block;position:relative;line-height:1"><i>MM&#8242;</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.72em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span>&#8239;=&#8239;<span style="display:inline-block;position:relative;line-height:1"><i>u</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.72em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span></div>
+  <div class="c m">Symétrie centrale de centre O : O <b>milieu</b> de [MM&#8242;]</div>
+  <div class="c m">Symétrie orthogonale d'axe (D) : (D) <b>médiatrice</b> de [MM&#8242;]</div>
+</div>
+<ul>
+<li>Pour la symétrie d'axe (D), la médiatrice ne concerne que les points M <b>n'appartenant pas à (D)</b> : tout point de (D) est sa propre image.</li>
+<li><b>Points invariants</b> : une translation de vecteur <b>non nul</b> n'en a <b>aucun</b> ; une symétrie centrale en a <b>un seul</b>, le centre O ; une symétrie orthogonale en a <b>toute une droite</b>, l'axe (D).</li>
+<li>La symétrie centrale s'écrit aussi en vecteurs : <span class="pt"><span style="display:inline-block;position:relative;line-height:1"><i>OM&#8242;</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.72em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span>&#8239;=&#8239;&#8722;<span style="display:inline-block;position:relative;line-height:1"><i>OM</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.72em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span></span>.</li>
+<li><b>Construire une figure image</b> : ne traite que les <b>points clés</b> (sommets, centre et un point d'un cercle), puis relie les images <b>dans le même ordre</b>. Pour l'axe (D) : trace la perpendiculaire à (D) passant par M, de pied H, et reporte MH de l'autre côté de H. <b>Contrôle</b> : un côté et son image ont la <b>même longueur</b>.</li>
+</ul>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Isométries</h3>
+<div class="form">
+  <span class="t">ISOMETRIE&nbsp;: A&#8242; ET B&#8242; IMAGES DE A ET B</span>
+  <div class="c m">A&#8242;B&#8242;&#8239;=&#8239;AB</div>
+</div>
+<p>Translation, symétrie centrale, symétrie orthogonale et rotation sont des <b>isométries</b> : elles <b>conservent les distances</b>. Elles conservent donc aussi les <b>longueurs</b>, <b>périmètres</b>, <b>aires</b>, <b>angles</b>, l'<b>alignement</b>, le <b>parallélisme</b>, l'<b>orthogonalité</b>, les <b>milieux</b> et les <b>barycentres</b> : la figure image a la <b>même taille et la même forme</b> que la figure de départ.</p>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Dans un repère</h3>
+<table>
+<tr><th>Transformation</th><th>Image de M(<i>x</i>&#8239;;&#8239;<i>y</i>)</th></tr>
+<tr><td>Translation de vecteur <span style="display:inline-block;position:relative;line-height:1"><i>u</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.72em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span>(<i>a</i>&#8239;;&#8239;<i>b</i>)</td><td class="m">(<i>x</i>&#8239;+&#8239;<i>a</i>&#8239;;&#8239;<i>y</i>&#8239;+&#8239;<i>b</i>)</td></tr>
+<tr><td>Symétrie de centre l'origine O</td><td class="m">(&#8722;<i>x</i>&#8239;;&#8239;&#8722;<i>y</i>)</td></tr>
+<tr><td>Symétrie d'axe des abscisses</td><td class="m">(<i>x</i>&#8239;;&#8239;&#8722;<i>y</i>)</td></tr>
+<tr><td>Symétrie d'axe des ordonnées</td><td class="m">(&#8722;<i>x</i>&#8239;;&#8239;<i>y</i>)</td></tr>
+<tr><td>Quart de tour direct de centre O</td><td class="m">(&#8722;<i>y</i>&#8239;;&#8239;<i>x</i>)</td></tr>
+</table>
+</div>
+
+<!-- ================= LECON 2 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 2&nbsp;: L'homothétie</h2>
+<div class="form">
+  <span class="t">DEFINITION&nbsp;: CENTRE O, RAPPORT <i>k</i> REEL NON NUL</span>
+  <div class="c m"><i>h</i>(O&#8239;;&#8239;<i>k</i>) : M <span class="ar">&#8614;</span> M&#8242; tel que <span style="display:inline-block;position:relative;line-height:1"><i>OM&#8242;</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.72em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span>&#8239;=&#8239;<i>k</i>&#8239;<span style="display:inline-block;position:relative;line-height:1"><i>OM</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.72em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span></div>
+</div></div>
+<p>Le centre O est <b>invariant</b>, et c'est le seul dès que <i>k</i>&#8239;&#8800;&#8239;1. Le rapport <i>k</i> ne peut pas être nul.</p>
+<ul>
+<li><i>k</i>&#8239;&gt;&#8239;0 : M&#8242; est sur la <b>demi-droite [OM)</b>, du <b>même côté</b> du centre ; <i>k</i>&#8239;&lt;&#8239;0 : M&#8242; est de l'<b>autre côté</b> de O.</li>
+<li>|<i>k</i>|&#8239;&gt;&#8239;1 : la figure est <b>agrandie</b> ; |<i>k</i>|&#8239;&lt;&#8239;1 : elle est <b>réduite</b> ; |<i>k</i>|&#8239;=&#8239;1 : elle garde sa taille.</li>
+<li><b>Cas particuliers</b> : <i>h</i>(O&#8239;;&#8239;1) est l'<b>identité</b> ; <i>h</i>(O&#8239;;&#8239;&#8722;1) est la <b>symétrie centrale</b> de centre O.</li>
+</ul>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Ce qu'elle conserve, ce qu'elle change</h3>
+<p><b>Conserve</b> : l'<b>alignement</b>, le <b>parallélisme</b>, l'<b>orthogonalité</b>, les <b>angles</b>, les <b>milieux</b> et les <b>barycentres</b>. L'image d'une droite est une droite <b>parallèle</b> à la première.</p>
+<div class="form">
+  <span class="t">EFFET SUR LES GRANDEURS</span>
+  <div class="c m">A&#8242;B&#8242;&#8239;=&#8239;|<i>k</i>|&#8239;&#215;&#8239;AB &nbsp;&nbsp;&nbsp; aire&#8242;&#8239;=&#8239;<i>k</i><sup>2</sup>&#8239;&#215;&#8239;aire</div>
+</div>
+<div class="note"><b>Thalès.</b> Si A&#8242; et B&#8242; sont les images de A et B par <i>h</i>(O&#8239;;&#8239;<i>k</i>), alors (A&#8242;B&#8242;) et (AB) sont <b>parallèles</b> et <span class="pt"><span class="f"><span>OA&#8242;</span><span>OA</span></span>&#8239;=&#8239;<span class="f"><span>OB&#8242;</span><span>OB</span></span>&#8239;=&#8239;<span class="f"><span>A&#8242;B&#8242;</span><span>AB</span></span>&#8239;=&#8239;|<i>k</i>|</span>.</div>
+<p><b>Traduire un énoncé.</b> « B est l'image de A par l'homothétie de centre I et de rapport <i>k</i> » s'écrit <span class="pt"><span style="display:inline-block;position:relative;line-height:1"><i>IB</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.72em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span>&#8239;=&#8239;<i>k</i>&#8239;<span style="display:inline-block;position:relative;line-height:1"><i>IA</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.72em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span></span> : le <b>centre est l'origine des deux vecteurs</b>.</p>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Homothétie dans un repère</h3>
+<div class="form">
+  <span class="t">CENTRE O<sub>1</sub>(<i>x</i><sub>1</sub>&#8239;;&#8239;<i>y</i><sub>1</sub>), RAPPORT <i>k</i></span>
+  <div class="c m"><i>x</i>&#8242;&#8239;=&#8239;<i>x</i><sub>1</sub>&#8239;+&#8239;<i>k</i>(<i>x</i>&#8239;&#8722;&#8239;<i>x</i><sub>1</sub>) &nbsp;&nbsp; <i>y</i>&#8242;&#8239;=&#8239;<i>y</i><sub>1</sub>&#8239;+&#8239;<i>k</i>(<i>y</i>&#8239;&#8722;&#8239;<i>y</i><sub>1</sub>)</div>
+</div>
+<ul>
+<li>Si le <b>centre est l'origine</b> : <span class="pt"><i>x</i>&#8242;&#8239;=&#8239;<i>kx</i></span> et <span class="pt"><i>y</i>&#8242;&#8239;=&#8239;<i>ky</i></span>.</li>
+<li><b>Antécédent</b> d'un point M&#8242; connu : on applique l'homothétie de <b>même centre</b> et de rapport <span class="f"><span>1</span><span><i>k</i></span></span>.</li>
+<li><b>Construire</b> M&#8242; : sur la droite (OM), du côté donné par le <b>signe</b> de <i>k</i>, à la distance <span class="pt">|<i>k</i>|&#8239;&#215;&#8239;OM</span> du centre. <b>Contrôle</b> : deux côtés qui se correspondent sont <b>parallèles</b>.</li>
+</ul>
+</div>
+
+<!-- ================= LECON 3 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 3&nbsp;: La rotation</h2>
+<div class="form">
+  <span class="t">DEFINITION&nbsp;: CENTRE O, ANGLE ORIENTE <span class="op">&#945;</span>, POUR M&#8239;&#8800;&#8239;O</span>
+  <div class="c m"><i>r</i>(O&#8239;;&#8239;<span class="op">&#945;</span>) : OM&#8242;&#8239;=&#8239;OM &nbsp;&nbsp;et&nbsp;&nbsp; (<span style="display:inline-block;position:relative;line-height:1"><i>OM</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.72em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span>&#8239;,&#8239;<span style="display:inline-block;position:relative;line-height:1"><i>OM&#8242;</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.72em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span>)&#8239;=&#8239;<span class="op">&#945;</span></div>
+</div></div>
+<p>Le centre O est <b>invariant</b> : son image est lui-même. Les deux conditions sont indispensables ; ensemble, elles déterminent M&#8242; de façon unique.</p>
+<ul>
+<li>Le plan est orienté dans le <b>sens direct</b>, celui qui est <b>contraire aux aiguilles d'une montre</b>.</li>
+<li><span class="op">&#945;</span>&#8239;&gt;&#8239;0 : rotation dans le <b>sens direct</b> ; <span class="op">&#945;</span>&#8239;&lt;&#8239;0 : rotation dans le <b>sens indirect</b>.</li>
+<li><span class="pt"><i>r</i>(O&#8239;;&#8239;<span class="f"><span><span class="op">&#960;</span></span><span>2</span></span>)</span> est le <b>quart de tour direct</b>, <span class="pt"><i>r</i>(O&#8239;;&#8239;&#8722;<span class="f"><span><span class="op">&#960;</span></span><span>2</span></span>)</span> le <b>quart de tour indirect</b> : les images sont <b>différentes</b>.</li>
+</ul>
+</div>
+
+<div class="bloc">
+<p>La rotation est une <b>isométrie</b> : elle conserve les <b>distances</b>, les <b>longueurs</b>, les <b>périmètres</b>, les <b>aires</b>, les <b>angles</b>, l'<b>alignement</b>, le <b>parallélisme</b>, l'<b>orthogonalité</b> et les <b>barycentres</b>. La figure a la même taille et la même forme ; elle a seulement <b>pivoté</b>, elle n'est pas retournée.</p>
+<ul>
+<li><b>Images</b> : une droite a pour image une <b>droite</b> ; un segment, un <b>segment de même longueur</b> ; un cercle de centre I et de rayon <i>r</i>, le <b>cercle de centre l'image de I et de même rayon <i>r</i></b>.</li>
+<li><b>Cas particuliers</b> : l'angle 0 donne l'<b>identité</b> ; l'angle <span class="op">&#960;</span> (soit 180&#176;) donne la <b>symétrie centrale</b> de centre O.</li>
+<li>Elle conserve le <b>parallélisme</b> mais <b>non la direction</b> : l'image d'une droite a pivoté de <span class="op">&#945;</span>, elle n'est en général <b>pas parallèle</b> à cette droite.</li>
+<li><b>Construire</b> M&#8242; : à partir de la demi-droite [OM), trace au rapporteur un angle de mesure |<span class="op">&#945;</span>|, dans le sens indiqué par le signe de <span class="op">&#945;</span>, puis reporte au compas la longueur OM sur la demi-droite obtenue.</li>
+</ul>
+<div class="note"><b>Retrouver le centre et l'angle</b> connaissant A, B et leurs images : O est le <b>point d'intersection des médiatrices</b> de [AA&#8242;] et de [BB&#8242;], car OA&#8242;&#8239;=&#8239;OA et OB&#8242;&#8239;=&#8239;OB ; l'angle est ensuite l'angle orienté <span class="pt">(<span style="display:inline-block;position:relative;line-height:1"><i>OA</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.72em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span>&#8239;,&#8239;<span style="display:inline-block;position:relative;line-height:1"><i>OA&#8242;</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.72em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span>)</span>.</div>
+</div>
+
+<!-- ================= LECON 4 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 4&nbsp;: Utilisation des transformations</h2>
+<ul>
+<li><b>Construire</b> une figure : frises, motifs, agrandissements (homothétie), figures tournées (rotation).</li>
+<li><b>Démontrer</b> une propriété : on <b>transporte</b> une configuration par une transformation qui <b>conserve</b> ce qui nous intéresse.</li>
+<li><b>Déterminer un ensemble de points</b> : l'image d'une figure simple est une figure simple, dont on précise les éléments caractéristiques.</li>
+</ul></div>
+<div class="note"><b>Règle d'or.</b> On choisit toujours la transformation qui <b>conserve la propriété cherchée</b> : longueurs <span class="ar">&#8594;</span> isométrie ; formes et directions <span class="ar">&#8594;</span> homothétie ; orientation <span class="ar">&#8594;</span> rotation.</div>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Images des figures usuelles</h3>
+<ul>
+<li><b>Homothétie</b> de rapport <i>k</i> : une <b>droite</b> a pour image une <b>droite parallèle</b> (confondue avec elle si la droite passe par le centre) ; un <b>cercle</b> de centre I et de rayon <i>r</i> a pour image le <b>cercle de centre l'image de I et de rayon |<i>k</i>|&#8239;&#215;&#8239;<i>r</i></b>.</li>
+<li><b>Isométrie</b> (translation, symétries, rotation) : une <b>droite</b> a pour image une <b>droite</b> ; un <b>cercle</b>, un <b>cercle de même rayon</b>.</li>
+<li>Dans tous les cas : segment <span class="ar">&#8594;</span> segment, triangle <span class="ar">&#8594;</span> triangle, angle <span class="ar">&#8594;</span> angle de <b>même mesure</b>.</li>
+</ul>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Que conserve chaque transformation ?</h3>
+<table>
+<tr><th>Transformation</th><th>Longueurs et aires</th><th>Directions</th><th>Sens</th></tr>
+<tr><td>Translation</td><td>conservées</td><td>conservées</td><td>conservé</td></tr>
+<tr><td>Symétrie centrale</td><td>conservées</td><td>conservées</td><td>conservé</td></tr>
+<tr><td>Symétrie orthogonale</td><td>conservées</td><td>changées</td><td><b>inversé</b></td></tr>
+<tr><td>Rotation</td><td>conservées</td><td>changées</td><td>conservé</td></tr>
+<tr><td>Homothétie de rapport <i>k</i></td><td class="m">long.&#8239;&#215;&#8239;|<i>k</i>|, aires&#8239;&#215;&#8239;<i>k</i><sup>2</sup></td><td>conservées</td><td>conservé</td></tr>
+</table>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Enchaîner deux transformations</h3>
+<p>Aucune étude systématique n'est exigée ; deux observations suffisent :</p>
+<ul>
+<li>deux <b>symétries orthogonales d'axes sécants</b> en O donnent une <b>rotation de centre O</b>, d'angle le <b>double</b> de l'angle des deux axes ;</li>
+<li>deux <b>symétries orthogonales d'axes parallèles</b> donnent une <b>translation</b>.</li>
+</ul>
+</div>
+
+</div>
+
+<div class="bandeau vert">PIEGES ET ERREURS FREQUENTES</div>
+<div class="cols">
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> Par une homothétie de rapport <i>k</i>, les aires sont multipliées par <i>k</i></div><div class="cor"><span class="v">&#10003;</span> Les <b>longueurs</b> sont multipliées par |<i>k</i>|, les <b>aires par <i>k</i><sup>2</sup></b>, car on agrandit dans les <b>deux directions</b>. Un rapport 3 multiplie l'aire par 9, pas par 3 : 4 hectares en donnent 36. Inversement, une aire multipliée par 9 vient d'un rapport 3.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> Homothétie de rapport &#8722;2 : les longueurs sont multipliées par &#8722;2</div><div class="cor"><span class="v">&#10003;</span> Une longueur est <b>toujours positive</b> : elle est multipliée par |&#8722;2|&#8239;=&#8239;<b>2</b>. Le <b>nombre</b> |<i>k</i>| commande la taille, le <b>signe</b> de <i>k</i> commande seulement le côté du centre où atterrit la figure.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> La translation agrandit la figure &nbsp;&middot;&nbsp; l'homothétie de rapport 3 garde les longueurs</div><div class="cor"><span class="v">&#10003;</span> Exactement l'inverse. Translation, symétries et rotation sont des <b>isométries</b> : un côté de 5 cm reste un côté de 5 cm. L'homothétie, elle, <b>multiplie</b> les longueurs par |<i>k</i>|.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> La rotation d'angle <span class="op">&#960;</span> est une symétrie axiale</div><div class="cor"><span class="v">&#10003;</span> C'est la <b>symétrie centrale</b> de centre O. Une <b>rotation</b> est définie par un <b>centre et un angle</b>, une symétrie <b>axiale</b> par une <b>droite</b> : la rotation ne retourne jamais la figure, la symétrie axiale la retourne toujours.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> L'image d'une droite par une homothétie est une droite sécante à la première</div><div class="cor"><span class="v">&#10003;</span> C'est une droite <b>parallèle</b>, et <b>distincte</b> en général : les deux droites ne se confondent que si (D) <b>passe par le centre</b>. Ne transporte pas ce résultat à la rotation : d'angle non nul, elle fait <b>pivoter</b> la droite, qui n'est plus parallèle.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> Le symétrique de M(3&#8239;;&#8239;2) par rapport à l'axe des abscisses est (&#8722;3&#8239;;&#8239;2)</div><div class="cor"><span class="v">&#10003;</span> C'est <b>(3&#8239;;&#8239;&#8722;2)</b> : l'axe des abscisses ne change que le signe de l'<b>ordonnée</b>. Par rapport à l'<b>origine</b>, les <b>deux</b> signes changent : (&#8722;3&#8239;;&#8239;&#8722;2). Un <b>point</b> donné, c'est une symétrie centrale ; une <b>droite</b>, une symétrie orthogonale.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> <span class="pt"><i>r</i>(O&#8239;;&#8239;<span class="f"><span><span class="op">&#960;</span></span><span>3</span></span>)</span> et <span class="pt"><i>r</i>(O&#8239;;&#8239;&#8722;<span class="f"><span><span class="op">&#960;</span></span><span>3</span></span>)</span> donnent la même image</div><div class="cor"><span class="v">&#10003;</span> Le <b>signe</b> donne le <b>sens</b> : les deux images sont <b>différentes</b>, symétriques par rapport à (OM). Lis le signe avant de poser le rapporteur ; le sens positif tourne à l'<b>inverse des aiguilles d'une montre</b>.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> « B est l'image de A par <i>h</i>(I&#8239;;&#8239;<i>k</i>) » traduit par <span class="pt"><span style="display:inline-block;position:relative;line-height:1"><i>AB</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.72em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span>&#8239;=&#8239;<i>k</i>&#8239;<span style="display:inline-block;position:relative;line-height:1"><i>AI</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.72em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span></span></div><div class="cor"><span class="v">&#10003;</span> Le <b>centre est l'origine des deux vecteurs</b> : <span class="pt"><span style="display:inline-block;position:relative;line-height:1"><i>IB</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.72em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span>&#8239;=&#8239;<i>k</i>&#8239;<span style="display:inline-block;position:relative;line-height:1"><i>IA</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.72em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span></span>. De même, dans un enchaînement, la seconde transformation s'applique aux <b>images</b>, jamais aux points de départ.</div></div>
+
+</div>
+
+<div class="bandeau bleu">A SAVOIR PAR COEUR AVANT LE DEVOIR</div>
+<div class="cols">
+<ol class="recap">
+<li>Une <b>transformation</b> associe à tout point M un <b>unique</b> point M&#8242; ; un <b>point invariant</b> vérifie <i>f</i>(M)&#8239;=&#8239;M. Aucun pour une translation de vecteur non nul, le centre seul pour une symétrie centrale, toute la droite pour une symétrie d'axe.</li>
+<li>Translation : <span class="pt"><span style="display:inline-block;position:relative;line-height:1"><i>MM&#8242;</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.72em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span>&#8239;=&#8239;<span style="display:inline-block;position:relative;line-height:1"><i>u</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.72em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span></span>. Symétrie centrale : O <b>milieu</b> de [MM&#8242;]. Symétrie axiale : (D) <b>médiatrice</b> de [MM&#8242;]. Rotation : <span class="pt">OM&#8242;&#8239;=&#8239;OM</span> et <span class="pt">(<span style="display:inline-block;position:relative;line-height:1"><i>OM</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.72em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span>&#8239;,&#8239;<span style="display:inline-block;position:relative;line-height:1"><i>OM&#8242;</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.72em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span>)&#8239;=&#8239;<span class="op">&#945;</span></span>.</li>
+<li>Ces quatre transformations sont des <b>isométries</b> : <span class="pt">A&#8242;B&#8242;&#8239;=&#8239;AB</span>, et elles conservent aires, angles, alignement, parallélisme, milieux et barycentres.</li>
+<li><b>Homothétie</b> <i>h</i>(O&#8239;;&#8239;<i>k</i>), <i>k</i>&#8239;&#8800;&#8239;0 : <span class="pt"><span style="display:inline-block;position:relative;line-height:1"><i>OM&#8242;</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.72em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span>&#8239;=&#8239;<i>k</i>&#8239;<span style="display:inline-block;position:relative;line-height:1"><i>OM</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.72em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span></span>. Elle conserve la <b>forme</b> mais <b>longueurs&#8239;&#215;&#8239;|<i>k</i>|</b> et <b>aires&#8239;&#215;&#8239;<i>k</i><sup>2</sup></b>. <span class="pt"><i>h</i>(O&#8239;;&#8239;&#8722;1)</span> et <span class="pt"><i>r</i>(O&#8239;;&#8239;<span class="op">&#960;</span>)</span> sont la <b>symétrie centrale</b> de centre O.</li>
+<li><b>Images</b> : par une homothétie, une droite donne une <b>droite parallèle</b> et un cercle un cercle de rayon |<i>k</i>|&#8239;&#215;&#8239;<i>r</i> ; par une isométrie, une droite donne une droite et un cercle un cercle de <b>même rayon</b>.</li>
+<li>Dans un repère : translation de <span style="display:inline-block;position:relative;line-height:1"><i>u</i><span style="position:absolute;left:0;right:0;top:-.62em;font-size:.72em;font-style:normal;text-align:center"><span class="ar">&#8594;</span></span></span>(<i>a</i>&#8239;;&#8239;<i>b</i>) <span class="ar">&#8594;</span> (<i>x</i>&#8239;+&#8239;<i>a</i>&#8239;;&#8239;<i>y</i>&#8239;+&#8239;<i>b</i>) ; centre O <span class="ar">&#8594;</span> (&#8722;<i>x</i>&#8239;;&#8239;&#8722;<i>y</i>) ; axe des abscisses <span class="ar">&#8594;</span> (<i>x</i>&#8239;;&#8239;&#8722;<i>y</i>) ; axe des ordonnées <span class="ar">&#8594;</span> (&#8722;<i>x</i>&#8239;;&#8239;<i>y</i>) ; quart de tour direct <span class="ar">&#8594;</span> (&#8722;<i>y</i>&#8239;;&#8239;<i>x</i>).</li>
+<li>Homothétie de centre O<sub>1</sub>(<i>x</i><sub>1</sub>&#8239;;&#8239;<i>y</i><sub>1</sub>) : <span class="pt"><i>x</i>&#8242;&#8239;=&#8239;<i>x</i><sub>1</sub>&#8239;+&#8239;<i>k</i>(<i>x</i>&#8239;&#8722;&#8239;<i>x</i><sub>1</sub>)</span> et <span class="pt"><i>y</i>&#8242;&#8239;=&#8239;<i>y</i><sub>1</sub>&#8239;+&#8239;<i>k</i>(<i>y</i>&#8239;&#8722;&#8239;<i>y</i><sub>1</sub>)</span>.</li>
+<li>Le <b>centre d'une rotation</b> est l'intersection des <b>médiatrices</b> de [AA&#8242;] et [BB&#8242;]. On choisit toujours la transformation qui <b>conserve la propriété cherchée</b>.</li>
+</ol>
+</div>
+
+</body>
+</html>

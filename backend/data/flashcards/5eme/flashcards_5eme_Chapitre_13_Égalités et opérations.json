@@ -1,0 +1,260 @@
+{
+  "niveau": "5ème",
+  "chapitre": "Chapitre 13 : Egalités et opérations",
+  "source": "maths/5eme/Chapitre_13_Egalites_et_operations",
+  "nombre_cartes": 28,
+  "cartes": [
+    {
+      "id": "5E-CH13-001",
+      "lecon": "Egalité, addition et soustraction",
+      "type": "definition",
+      "recto": "Comment appelle-t-on les deux côtés du signe $=$ dans une égalité ?",
+      "verso": "Ce qui est écrit à gauche est le premier membre, ce qui est écrit à droite est le second membre.",
+      "difficulte": 1,
+      "tags": ["egalite", "vocabulaire", "membres"]
+    },
+    {
+      "id": "5E-CH13-002",
+      "lecon": "Egalité, addition et soustraction",
+      "type": "definition",
+      "recto": "Pourquoi une égalité se compare-t-elle à une balance en équilibre ?",
+      "verso": "Parce que ses deux membres, bien qu'écrits différemment, désignent le même nombre, comme deux plateaux qui portent exactement la même masse.",
+      "difficulte": 1,
+      "tags": ["egalite", "balance", "sens"]
+    },
+    {
+      "id": "5E-CH13-003",
+      "lecon": "Egalité, addition et soustraction",
+      "type": "formule",
+      "recto": "Que devient une égalité si on ajoute ou si on retranche un même nombre à ses deux membres ?",
+      "verso": "Elle reste vraie : si $a = b$, alors $a + c = b + c$ et $a - c = b - c$.",
+      "difficulte": 1,
+      "tags": ["egalite", "addition", "soustraction"]
+    },
+    {
+      "id": "5E-CH13-004",
+      "lecon": "Egalité, addition et soustraction",
+      "type": "formule",
+      "recto": "Que devient une égalité quand on ajoute un nombre à un seul de ses membres ?",
+      "verso": "Elle devient fausse : ce membre change de valeur alors que l'autre ne bouge pas, donc les deux membres ne désignent plus le même nombre. La balance penche du côté chargé.",
+      "difficulte": 2,
+      "tags": ["egalite", "un-seul-membre", "erreur"]
+    },
+    {
+      "id": "5E-CH13-005",
+      "lecon": "Egalité, addition et soustraction",
+      "type": "formule",
+      "recto": "Quelle condition le nombre ajouté aux deux membres d'une égalité doit-il remplir ?",
+      "verso": "Il doit être exactement le même des deux côtés. Ajouter $3$ à gauche et $5$ à droite détruit l'égalité, même si l'on a bien touché aux deux membres.",
+      "difficulte": 2,
+      "tags": ["egalite", "addition", "piege"]
+    },
+    {
+      "id": "5E-CH13-006",
+      "lecon": "Egalité, addition et soustraction",
+      "type": "formule",
+      "recto": "Comment isole-t-on l'inconnue dans une égalité de la forme $x + c = b$ ?",
+      "verso": "On retranche $c$ aux deux membres. A gauche, $+ c$ et $- c$ s'annulent, et il reste $x = b - c$.",
+      "difficulte": 1,
+      "tags": ["egalite", "isoler", "soustraction"]
+    },
+    {
+      "id": "5E-CH13-007",
+      "lecon": "Egalité, addition et soustraction",
+      "type": "formule",
+      "recto": "Quelle opération applique-t-on aux deux membres pour isoler l'inconnue dans $x - c = b$ ?",
+      "verso": "On ajoute $c$ aux deux membres, et il reste $x = b + c$. Ainsi $x - 7 = 5$ donne $x = 5 + 7 = 12$.",
+      "difficulte": 2,
+      "tags": ["egalite", "isoler", "addition"]
+    },
+    {
+      "id": "5E-CH13-008",
+      "lecon": "Egalité, addition et soustraction",
+      "type": "formule",
+      "recto": "Quelle question permet de choisir l'opération à appliquer aux deux membres d'une égalité ?",
+      "verso": "« Quelle opération gêne l'inconnue ? » On applique ensuite aux deux membres l'opération contraire, car c'est elle qui fait disparaître cette gêne.",
+      "difficulte": 2,
+      "tags": ["egalite", "operation-inverse", "methode"]
+    },
+    {
+      "id": "5E-CH13-009",
+      "lecon": "Egalité, addition et soustraction",
+      "type": "formule",
+      "recto": "Pourquoi n'a-t-on pas besoin de connaître $a$ et $b$ pour affirmer que $a + c = b + c$ ?",
+      "verso": "Parce que $a = b$ signifie déjà que les deux membres sont un seul et même nombre. En ajoutant $c$ à ce nombre des deux côtés, on obtient encore le même résultat.",
+      "difficulte": 2,
+      "tags": ["egalite", "addition", "justification"]
+    },
+    {
+      "id": "5E-CH13-010",
+      "lecon": "Egalité, addition et soustraction",
+      "type": "formule",
+      "recto": "Quelle erreur commet l'élève qui écrit $x = 5 - 7$ pour l'égalité $x - 7 = 5$ ?",
+      "verso": "Il recopie la soustraction au lieu de la contrarier. Le $- 7$ s'annule en ajoutant $7$ aux deux membres : $x = 5 + 7 = 12$.",
+      "difficulte": 3,
+      "tags": ["egalite", "soustraction", "piege"]
+    },
+    {
+      "id": "5E-CH13-011",
+      "lecon": "Egalité, addition et soustraction",
+      "type": "formule",
+      "recto": "Comment vérifie-t-on la valeur trouvée pour une inconnue ?",
+      "verso": "On la remplace dans l'égalité de départ, on calcule chaque membre, puis on compare : les deux membres doivent avoir la même valeur.",
+      "difficulte": 1,
+      "tags": ["egalite", "verification"]
+    },
+    {
+      "id": "5E-CH13-012",
+      "lecon": "Egalité, addition et soustraction",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on l'opération inverse d'une opération donnée ?",
+      "verso": "C'est celle qui l'annule : l'inverse de l'addition est la soustraction, et l'inverse de la multiplication est la division.",
+      "difficulte": 1,
+      "tags": ["operation-inverse", "definition"]
+    },
+    {
+      "id": "5E-CH13-013",
+      "lecon": "Egalité, addition et soustraction",
+      "type": "formule",
+      "recto": "Que devient le membre qui porte l'inconnue lorsqu'on lui applique l'opération inverse ?",
+      "verso": "Les deux opérations contraires s'y annulent et l'inconnue reste seule. Dans $x + 7 - 7$, le $+ 7$ et le $- 7$ se détruisent, et il ne reste que $x$.",
+      "difficulte": 2,
+      "tags": ["egalite", "isoler", "annulation"]
+    },
+    {
+      "id": "5E-CH13-014",
+      "lecon": "Egalité, addition et soustraction",
+      "type": "definition",
+      "recto": "Dans quel cas utilise-t-on la propriété qui autorise à opérer sur les deux membres ?",
+      "verso": "Seulement quand elle sert à faire disparaître ce qui encombre l'inconnue. C'est une autorisation, pas une obligation : elle dit ce qu'on a le droit de faire sans détruire l'égalité.",
+      "difficulte": 2,
+      "tags": ["egalite", "propriete", "usage"]
+    },
+    {
+      "id": "5E-CH13-015",
+      "lecon": "Egalité, multiplication et division",
+      "type": "formule",
+      "recto": "Que devient une égalité si on multiplie ou si on divise ses deux membres par un même nombre ?",
+      "verso": "Elle reste vraie : si $a = b$, alors $a \\times c = b \\times c$, et $a \\div c = b \\div c$ à condition que $c \\ne 0$.",
+      "difficulte": 1,
+      "tags": ["egalite", "multiplication", "division"]
+    },
+    {
+      "id": "5E-CH13-016",
+      "lecon": "Egalité, multiplication et division",
+      "type": "formule",
+      "recto": "Quelle restriction pèse sur la division des deux membres, alors que la multiplication n'en a aucune ?",
+      "verso": "Le nombre par lequel on divise doit être différent de $0$. On peut multiplier les deux membres par n'importe quel nombre, mais la division par zéro n'existe pas.",
+      "difficulte": 2,
+      "tags": ["egalite", "division", "condition"]
+    },
+    {
+      "id": "5E-CH13-017",
+      "lecon": "Egalité, multiplication et division",
+      "type": "formule",
+      "recto": "Pourquoi la division par zéro n'existe-t-elle pas ?",
+      "verso": "Diviser $12$ par $0$ reviendrait à faire zéro part avec $12$ kg de mil : la question n'a pas de réponse, car aucun nombre multiplié par $0$ ne peut redonner $12$.",
+      "difficulte": 2,
+      "tags": ["division", "zero", "justification"]
+    },
+    {
+      "id": "5E-CH13-018",
+      "lecon": "Egalité, multiplication et division",
+      "type": "formule",
+      "recto": "Comment isole-t-on l'inconnue dans une égalité de la forme $a \\times x = b$ ?",
+      "verso": "On divise les deux membres par $a$, et il reste $x = b \\div a$. On divise par le coefficient, on ne le retranche jamais.",
+      "difficulte": 1,
+      "tags": ["egalite", "isoler", "division"]
+    },
+    {
+      "id": "5E-CH13-019",
+      "lecon": "Egalité, multiplication et division",
+      "type": "formule",
+      "recto": "Comment isole-t-on l'inconnue dans une égalité de la forme $x \\div a = b$ ?",
+      "verso": "On multiplie les deux membres par $a$, et il reste $x = b \\times a$.",
+      "difficulte": 2,
+      "tags": ["egalite", "isoler", "multiplication"]
+    },
+    {
+      "id": "5E-CH13-020",
+      "lecon": "Egalité, multiplication et division",
+      "type": "formule",
+      "recto": "Quelle erreur commet l'élève qui écrit $x = 10 - \\left(-2\\right)$ pour l'égalité $-2x = 10$ ?",
+      "verso": "Il retranche le coefficient au lieu de diviser par lui. Un coefficient s'enlève par une division : $x = 10 \\div \\left(-2\\right) = -5$.",
+      "difficulte": 3,
+      "tags": ["egalite", "coefficient", "piege"]
+    },
+    {
+      "id": "5E-CH13-021",
+      "lecon": "Egalité, multiplication et division",
+      "type": "formule",
+      "recto": "Quelle erreur commet l'élève qui écrit $x = 12 \\div 4$ pour l'égalité $x \\div 4 = 12$ ?",
+      "verso": "Il divise alors que l'inconnue est déjà divisée. Pour annuler une division, on multiplie les deux membres : $x = 12 \\times 4 = 48$.",
+      "difficulte": 3,
+      "tags": ["egalite", "division", "piege"]
+    },
+    {
+      "id": "5E-CH13-022",
+      "lecon": "Egalité, multiplication et division",
+      "type": "definition",
+      "recto": "Comment appelle-t-on le nombre placé devant la lettre dans une écriture comme $3t$ ?",
+      "verso": "C'est le coefficient. L'écriture $3t$ abrège $3 \\times t$ et $-4x$ abrège $\\left(-4\\right) \\times x$ : le signe de multiplication n'est pas écrit.",
+      "difficulte": 1,
+      "tags": ["coefficient", "notation"]
+    },
+    {
+      "id": "5E-CH13-023",
+      "lecon": "Egalité, multiplication et division",
+      "type": "formule",
+      "recto": "Quel est le signe du quotient de deux nombres négatifs ?",
+      "verso": "Il est positif : le quotient de deux nombres de même signe est positif, celui de deux nombres de signes contraires est négatif. Ainsi $\\left(-12\\right) \\div \\left(-4\\right) = 3$.",
+      "difficulte": 2,
+      "tags": ["signes", "quotient", "calcul"]
+    },
+    {
+      "id": "5E-CH13-024",
+      "lecon": "Egalité, multiplication et division",
+      "type": "formule",
+      "recto": "Dans quel ordre enlève-t-on les deux gênes de l'inconnue dans une égalité comme $2x + 3 = 11$ ?",
+      "verso": "On enlève d'abord le terme : en retranchant $3$ aux deux membres, il vient $2x = 8$. On enlève ensuite le coefficient : en divisant les deux membres par $2$, il vient $x = 4$.",
+      "difficulte": 2,
+      "tags": ["egalite", "deux-etapes", "ordre"]
+    },
+    {
+      "id": "5E-CH13-025",
+      "lecon": "Egalité, multiplication et division",
+      "type": "formule",
+      "recto": "Pourquoi vaut-il mieux retrancher le terme avant de diviser par le coefficient ?",
+      "verso": "Parce qu'en divisant d'abord il faudrait diviser tout le membre, donc le terme ajouté lui aussi, ce qui compliquerait le calcul.",
+      "difficulte": 3,
+      "tags": ["egalite", "deux-etapes", "ordre"]
+    },
+    {
+      "id": "5E-CH13-026",
+      "lecon": "Egalité, multiplication et division",
+      "type": "formule",
+      "recto": "Comment traduit-on par une égalité la phrase « quatre places de car au même prix coûtent $14\\,000$ FCFA en tout » ?",
+      "verso": "En notant $x$ le prix d'une place : $4x = 14\\,000$. On divise ensuite les deux membres par $4$, ce qui donne $x = 3\\,500$ FCFA.",
+      "difficulte": 2,
+      "tags": ["traduction", "egalite", "probleme"]
+    },
+    {
+      "id": "5E-CH13-027",
+      "lecon": "Egalité, multiplication et division",
+      "type": "definition",
+      "recto": "Quel schéma aide à traduire en égalité une phrase où un total se partage en parts identiques ?",
+      "verso": "Une barre qui représente le total, partagée en autant de morceaux identiques qu'il y a de parts. Un morceau vaut l'inconnue, et la barre entière vaut le total.",
+      "difficulte": 2,
+      "tags": ["traduction", "schema", "probleme"]
+    },
+    {
+      "id": "5E-CH13-028",
+      "lecon": "Egalité, multiplication et division",
+      "type": "formule",
+      "recto": "Comment transforme-t-on une égalité sans connaître la valeur de l'inconnue ?",
+      "verso": "En appliquant la même opération aux deux membres. De $3x = 21$ on tire $6x = 42$ en multipliant les deux membres par $2$, sans avoir calculé $x$.",
+      "difficulte": 3,
+      "tags": ["egalite", "propriete", "transformation"]
+    }
+  ]
+}

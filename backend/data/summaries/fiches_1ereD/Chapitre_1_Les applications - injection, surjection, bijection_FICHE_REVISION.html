@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Fiche de revision - 1ere D - Chapitre 1 : Les applications : injection, surjection, bijection</title>
+<style>
+/* ===================================================================
+   FICHE DE REVISION, Collection Hakili Lab, Edition 2026
+   Feuille de style autonome, format A4 pret a imprimer.
+   Bleu #005CB9 · Vert #49A145
+   =================================================================== */
+:root{
+  --bleu:#005CB9; --bleu-fonce:#00429A; --bleu-pale:#E8F1FB; --bleu-bord:#B7D2EE;
+  --vert:#49A145; --vert-fonce:#2F7A2C; --vert-pale:#EDF7EC; --vert-bord:#BCE0B9;
+  --gris:#4A4A4A; --gris-clair:#E4E4E4; --rouge:#B3261E;
+}
+@page{
+  size:A4; margin:15mm;
+  @bottom-center{
+    content:"Collection Hakili Lab, Edition 2026  ·  Fiche de revision  ·  " counter(page) "/" counter(pages);
+    font-family:"Segoe UI",Calibri,Arial,sans-serif; font-size:6.6pt; color:#8A8A8A;
+  }
+}
+*{box-sizing:border-box;}
+body{
+  margin:0; font-family:"Segoe UI",Calibri,Arial,sans-serif;
+  font-size:8.4pt; line-height:1.26; color:#1B1B1B;
+}
+p{margin:0 0 3pt;}
+ul{margin:0 0 3pt; padding-left:11pt;}
+li{margin:0 0 1.2pt;}
+b,strong{color:var(--bleu-fonce);}
+
+/* ------------------------------ ENTETE ---------------------------- */
+.entete{
+  display:flex; align-items:stretch; border:1.6pt solid var(--bleu);
+  border-radius:2.5pt; overflow:hidden; margin-bottom:6pt;
+}
+.entete .num{
+  background:var(--bleu); color:#fff; font-size:20pt; font-weight:700;
+  padding:0 8pt; display:flex; align-items:center; justify-content:center; min-width:34pt;
+}
+.entete .txt{padding:3.5pt 8pt; flex:1;}
+.entete .niveau{
+  font-size:7pt; font-weight:700; letter-spacing:.9pt; color:var(--vert-fonce);
+}
+.entete h1{margin:0; font-size:13.5pt; line-height:1.12; color:var(--bleu-fonce); font-weight:700;}
+.entete .sous{font-size:7pt; color:var(--gris); margin-top:1pt;}
+
+/* --------------------------- BANDEAUX ----------------------------- */
+.bandeau{
+  color:#fff; font-weight:700; font-size:9pt; letter-spacing:1pt;
+  padding:2.4pt 7pt; border-radius:2pt; margin:3pt 0 4pt; break-after:avoid; page-break-after:avoid;
+}
+.bandeau.bleu{background:var(--bleu);}
+.bandeau.vert{background:var(--vert);}
+
+/* --------------------------- COLONNES ----------------------------- */
+.cols{column-count:2; column-gap:7mm; column-fill:balance;}
+
+.cols.bal{column-fill:balance;}
+.bloc{margin-bottom:5pt;}
+.keep{break-inside:avoid; page-break-inside:avoid;}
+
+/* --------------------------- LECONS ------------------------------- */
+h2.lecon{
+  margin:0 0 3pt; font-size:8.6pt; font-weight:700; color:#fff; background:var(--bleu-fonce);
+  padding:1.8pt 5pt; border-radius:1.5pt; break-after:avoid; page-break-after:avoid;
+}
+h3.rub{
+  margin:3.5pt 0 1.5pt; font-size:8.2pt; font-weight:700; color:var(--vert-fonce);
+  border-bottom:.7pt solid var(--vert-bord); padding-bottom:.8pt;
+  break-after:avoid; page-break-after:avoid;
+}
+
+/* --------------------------- ENCADRES ----------------------------- */
+.form{
+  background:var(--bleu-pale); border:.8pt solid var(--bleu-bord); border-left:2.6pt solid var(--bleu);
+  border-radius:2pt; padding:2.4pt 5pt; margin:2.2pt 0 3.4pt;
+  break-inside:avoid; page-break-inside:avoid;
+}
+.form .t{
+  display:block; font-size:6.8pt; font-weight:700; letter-spacing:.6pt;
+  color:var(--bleu); margin-bottom:1.5pt;
+}
+.form .c{text-align:center; font-size:9.1pt; margin:1.6pt 0;}
+.note{background:var(--vert-pale); border-left:2.4pt solid var(--vert); padding:2.4pt 5pt; border-radius:1.5pt; margin:2.5pt 0 4pt; break-inside:avoid;}
+
+/* --------------------------- TABLEAUX ----------------------------- */
+table{width:100%; border-collapse:collapse; font-size:7.6pt; margin:2pt 0 4pt; break-inside:avoid;}
+th{background:var(--bleu); color:#fff; font-weight:700; text-align:left; padding:1.8pt 4pt; font-size:7.2pt;}
+td{border:.6pt solid var(--gris-clair); padding:1.8pt 4pt; vertical-align:top;}
+tr{break-inside:avoid;}
+table.var td{text-align:center; font-size:8pt;}
+table.var td.lab{text-align:left; font-weight:700; color:var(--bleu-fonce); background:var(--bleu-pale);}
+
+/* ----------------------------- PIEGES ----------------------------- */
+table.pieges th:first-child{width:44%;}
+table.pieges td:first-child{color:var(--rouge); background:#FDF1F0;}
+.x{font-weight:700;}
+.v{color:var(--vert-fonce); font-weight:700;}
+
+/* ---------------------------- RECAP ------------------------------- */
+ol.recap{margin:0; padding-left:0; list-style:none; counter-reset:r;}
+ol.recap li{
+  counter-increment:r; position:relative; padding-left:13pt; margin-bottom:1.8pt;
+  break-inside:avoid;
+}
+ol.recap li::before{
+  content:counter(r); position:absolute; left:0; top:.3pt;
+  width:10pt; height:10pt; border-radius:50%; background:var(--vert); color:#fff;
+  font-size:6.6pt; font-weight:700; text-align:center; line-height:10pt;
+}
+
+/* --------------------------- MATHS -------------------------------- */
+.m{font-family:Cambria,Georgia,"Times New Roman",serif;}
+i,var{font-family:Cambria,Georgia,"Times New Roman",serif; font-style:italic;}
+.op{font-family:Cambria,Georgia,"Times New Roman",serif; font-style:normal;}
+.f{display:inline-block; vertical-align:middle; text-align:center;
+   margin:0 .12em; line-height:1.06; font-family:Cambria,Georgia,"Times New Roman",serif;}
+.f>span{display:block; padding:0 .2em;}
+.f>span:first-child{border-bottom:.6pt solid currentColor; padding-bottom:.08em;}
+.f>span:last-child{padding-top:.04em;}
+.rad{border-top:.6pt solid currentColor; padding-top:.12em;}
+/* line-height:0 evite que l'exposant n'ecarte les lignes ; position:relative le
+   repositionne sans qu'il heurte la barre de fraction ni le trait du radical. */
+sup,sub{font-size:.68em; line-height:0; position:relative; vertical-align:baseline;}
+sup{top:-.42em;}
+sub{bottom:-.22em;}
+.pt{white-space:nowrap;}
+/* Les fleches n'ont qu'un glyphe atrophie dans la fonte serif : on les force
+   en sans-serif, ou elles sont franches meme a 8 pt. */
+.ar{font-family:"Segoe UI",Calibri,Arial,"DejaVu Sans",sans-serif; font-style:normal;}
+
+/* ------------------- PIEGES : blocs erreur / correction ------------- */
+.pg{font-size:8.1pt; border-left:2.4pt solid var(--rouge); background:#FDF1F0; border-radius:1.5pt;
+    padding:2pt 5pt; margin:0 0 2.8pt; break-inside:avoid; page-break-inside:avoid;}
+.pg .err{color:var(--rouge); font-weight:600;}
+.pg .cor{color:#1B1B1B; margin-top:.8pt;}
+.pg .cor b{color:var(--bleu-fonce);}
+.v{color:var(--vert-fonce); font-weight:700;}
+
+</style>
+</head>
+<body>
+<header class="entete">
+  <div class="num">1</div>
+  <div class="txt">
+    <div class="niveau">1ERE D &middot; MATHEMATIQUES</div>
+    <h1>Les applications : injection, surjection, bijection</h1>
+    <div class="sous">Leçon 1 : applications injective, surjective, bijective &middot; Leçon 2 : l'équation <i>f</i>(<i>x</i>)&#8239;=&#8239;<i>&#955;</i> &middot; Leçon 3 : application réciproque d'une bijection &middot; Leçon 4 : composition de deux applications</div>
+  </div>
+</header>
+
+<div class="bandeau bleu" style="margin-top:0">L'ESSENTIEL</div>
+<div class="cols">
+
+<!-- ================= LECON 1 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 1&nbsp;: Applications injective, surjective, bijective</h2>
+
+<h3 class="rub">Application</h3>
+<p>Une <b>application</b> <i>f</i> de <i>E</i> vers <i>F</i> associe à <b>chaque</b> élément de <i>E</i> (départ) <b>un et un seul</b> élément de <i>F</i> (arrivée). On note <span class="pt"><i>f</i>&#8239;:&#8239;<i>E</i>&#8239;<span class="ar">&#8594;</span>&#8239;<i>F</i></span> et l'image de <i>x</i> se note <i>f</i>(<i>x</i>). Deux conditions, et une seule ne suffit pas :</p></div>
+<ul>
+<li><b>existence</b> : aucun élément de <i>E</i> ne reste sans image ;</li>
+<li><b>unicité</b> : aucun élément de <i>E</i> n'a deux images.</li>
+</ul>
+<p>Une application n'est pas une formule seule, c'est une formule <b>accompagnée de ses deux ensembles</b>. Interdits à contrôler sur <i>E</i> : dénominateur nul, quantité négative sous un radical. Ainsi <span class="pt"><i>x</i>&#8239;<span class="ar">&#8614;</span>&#8239;<span class="f"><span>1</span><span><i>x</i>&#8239;&#8722;&#8239;2</span></span></span> n'est pas une application de &#8477; vers &#8477; (le réel 2 n'a pas d'image), mais en est une de <span class="pt">&#8477;&#8201;&#8722;&#8201;{2}</span> vers &#8477;. Toutes les images doivent enfin tomber dans <i>F</i>.</p>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Les trois mots</h3>
+<div class="form">
+  <span class="t">DEFINITIONS&nbsp;: <i>f</i> APPLICATION DE <i>E</i> VERS <i>F</i></span>
+  <div class="c m"><b>injective</b> : &nbsp;<i>f</i>(<i>a</i>)&#8239;=&#8239;<i>f</i>(<i>b</i>)&nbsp;<span class="ar">&#8658;</span>&nbsp;<i>a</i>&#8239;=&#8239;<i>b</i></div>
+  <div class="c m"><b>surjective</b> : &nbsp;pour tout <i>y</i>&#8239;&#8712;&#8239;<i>F</i>, <i>f</i>(<i>x</i>)&#8239;=&#8239;<i>y</i> a <b>au moins une</b> solution dans <i>E</i></div>
+  <div class="c m"><b>bijective</b> : &nbsp;injective <b>et</b> surjective</div>
+</div>
+<p>Tout se compte en <b>antécédents</b> : injective = <b>au plus un</b>, surjective = <b>au moins un</b>, bijective = <b>exactement un</b>. L'injectivité s'écrit <span class="pt"><i>f</i>(<i>a</i>)&#8239;=&#8239;<i>f</i>(<i>b</i>)&#8239;<span class="ar">&#8658;</span>&#8239;<i>a</i>&#8239;=&#8239;<i>b</i></span> et non <span class="pt"><i>a</i>&#8239;&#8800;&#8239;<i>b</i>&#8239;<span class="ar">&#8658;</span>&#8239;<i>f</i>(<i>a</i>)&#8239;&#8800;&#8239;<i>f</i>(<i>b</i>)</span> : la première part d'une égalité, donc d'une équation que l'on sait manipuler.</p>
+<div class="note"><b>L'injectivité</b> ne dépend que de <i>E</i> et de la formule ; la <b>surjectivité dépend de l'ensemble d'arrivée <i>F</i></b> choisi. Changer <i>F</i> peut faire apparaître ou disparaître la surjectivité. Une question sur la nature de <i>f</i> n'a de sens qu'après annonce des <b>deux</b> ensembles.</div>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Ensemble image</h3>
+<div class="form">
+  <span class="t">ENSEMBLE IMAGE ET CRITERE DE SURJECTIVITE</span>
+  <div class="c m"><i>f</i>(<i>E</i>)&#8239;=&#8239;{&#8239;<i>f</i>(<i>x</i>)&#8239;;&#8239;<i>x</i>&#8239;&#8712;&#8239;<i>E</i>&#8239;}&#8239;&#8834;&#8239;<i>F</i></div>
+  <div class="c m"><i>f</i> surjective de <i>E</i> vers <i>F</i>&nbsp;<span class="ar">&#8660;</span>&nbsp;<i>f</i>(<i>E</i>)&#8239;=&#8239;<i>F</i></div>
+</div>
+<p><i>f</i>(<i>E</i>) est la partie de <i>F</i> <b>réellement atteinte</b>. Pour rendre <i>f</i> surjective, on ne change pas <i>f</i> : on <b>rétrécit l'arrivée</b> en posant <i>B</i>&#8239;=&#8239;<i>f</i>(<i>E</i>). Pour <i>f</i>(<i>x</i>)&#8239;=&#8239;<i>x</i><sup>2</sup> sur &#8477;, <span class="pt"><i>f</i>(&#8477;)&#8239;=&#8239;[0&#8239;;&#8239;+&#8734;[</span>. Pour rendre <i>f</i> injective, on <b>restreint le départ</b> à un intervalle de stricte monotonie.</p>
+<p><b>Antécédents d'une partie.</b> Pour <i>B</i>&#8239;&#8834;&#8239;<i>F</i>, <i>f</i><sup>&#8722;1</sup>(<i>B</i>) est l'ensemble des éléments de <i>E</i> dont l'image tombe dans <i>B</i> ; il peut être <b>vide</b>. Cette notation <b>ne suppose pas <i>f</i> bijective</b> : pour <i>f</i>(<i>x</i>)&#8239;=&#8239;<i>x</i><sup>2</sup> de &#8477; vers &#8477;, <span class="pt"><i>f</i><sup>&#8722;1</sup>({9})&#8239;=&#8239;{&#8722;3&#8239;;&#8239;3}</span> et <span class="pt"><i>f</i><sup>&#8722;1</sup>({&#8722;4})&#8239;=&#8239;&#8709;</span>.</p>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Rédiger les démonstrations</h3>
+<ul>
+<li><b>Injectivité</b> : supposer <i>f</i>(<i>a</i>)&#8239;=&#8239;<i>f</i>(<i>b</i>), transformer par calculs équivalents jusqu'à <i>a</i>&#8239;=&#8239;<i>b</i>. Pour <b>réfuter</b> : un <b>contre-exemple chiffré</b>, deux valeurs <i>a</i>&#8239;&#8800;&#8239;<i>b</i> avec <i>f</i>(<i>a</i>)&#8239;=&#8239;<i>f</i>(<i>b</i>).</li>
+<li><b>Surjectivité</b> : prendre <i>y</i> <b>quelconque</b> dans l'arrivée (jamais une valeur particulière), résoudre <i>f</i>(<i>x</i>)&#8239;=&#8239;<i>y</i> en exprimant <i>x</i> en fonction de <i>y</i>, puis <b>vérifier que la solution appartient à <i>E</i></b>. Les <i>y</i> sans solution indiquent quel ensemble d'arrivée il fallait prendre.</li>
+<li><b>Bijectivité</b> : soit les deux démonstrations séparées, soit, plus vite, <b>exactement une</b> solution de <i>f</i>(<i>x</i>)&#8239;=&#8239;<i>y</i> pour tout <i>y</i> de l'arrivée.</li>
+<li>Toute application <b>affine</b> <span class="pt"><i>x</i>&#8239;<span class="ar">&#8614;</span>&#8239;<i>ax</i>&#8239;+&#8239;<i>b</i></span> avec <i>a</i>&#8239;&#8800;&#8239;0 est bijective de &#8477; vers &#8477;, ainsi que toute application <b>strictement monotone</b> de &#8477; vers &#8477; dont la courbe balaie tout &#8477; en ordonnée.</li>
+</ul>
+<div class="note"><b>Ensembles finis : compter d'abord.</b> S'il existe une application injective de <i>E</i> vers <i>F</i>, alors <i>E</i> a <b>au plus</b> autant d'éléments que <i>F</i> ; si elle est surjective, <b>au moins</b> autant. Une <b>bijection</b> entre ensembles finis exige donc <b>le même nombre d'éléments</b>.</div>
+</div>
+
+<!-- ================= LECON 2 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 2&nbsp;: L'équation <i>f</i>(<i>x</i>)&#8239;=&#8239;<i>&#955;</i></h2>
+<p>Soit <i>f</i> une application de <i>E</i> vers <i>F</i> et <i>&#955;</i>&#8239;&#8712;&#8239;<i>F</i>. Résoudre <span class="pt"><i>f</i>(<i>x</i>)&#8239;=&#8239;<i>&#955;</i></span>, c'est déterminer <b>tous les antécédents</b> de <i>&#955;</i> par <i>f</i>. Le nombre de solutions se lit sur la nature de <i>f</i>.</p></div>
+<table>
+<tr><th>Nature de <i>f</i></th><th>Nombre de solutions de <span class="m"><i>f</i>(<i>x</i>)&#8239;=&#8239;<i>&#955;</i></span></th></tr>
+<tr><td><b>injective</b></td><td><b>au plus une</b> solution</td></tr>
+<tr><td><b>surjective</b></td><td><b>au moins une</b> solution, pour tout <i>&#955;</i> de <i>F</i></td></tr>
+<tr><td><b>bijective</b></td><td><b>exactement une</b> solution, pour tout <i>&#955;</i> de <i>F</i></td></tr>
+</table>
+<p>Ce tableau n'est pas une propriété de plus : c'est la traduction des définitions de la leçon 1, un antécédent de <i>&#955;</i> <b>étant</b> une solution de <i>f</i>(<i>x</i>)&#8239;=&#8239;<i>&#955;</i>.</p>
+<div class="form">
+  <span class="t">TRADUCTION GRAPHIQUE</span>
+  <div class="c m">nombre de solutions&#8239;=&#8239;nombre de points d'intersection</div>
+  <div class="c m">de la courbe de <i>f</i> avec la droite <i>y</i>&#8239;=&#8239;<i>&#955;</i></div>
+</div>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Monotonie et discussion selon <i>&#955;</i></h3>
+<p>Si <i>f</i> est <b>strictement monotone</b> sur un intervalle <i>I</i>, alors <i>f</i> est <b>injective</b> sur <i>I</i> : l'équation <i>f</i>(<i>x</i>)&#8239;=&#8239;<i>&#955;</i> y a <b>au plus une</b> solution. En effet, si <i>f</i> est strictement croissante, <i>a</i>&#8239;&lt;&#8239;<i>b</i> entraîne <i>f</i>(<i>a</i>)&#8239;&lt;&#8239;<i>f</i>(<i>b</i>) : les deux images ne peuvent être égales. La croissance <b>stricte</b> est exigée : sur un palier, une infinité d'abscisses donnent la même image.</p>
+<ul>
+<li>Découper l'intervalle d'étude en <b>intervalles de monotonie</b>, compter les solutions sur chacun, puis <b>additionner</b>. Le <b>tableau de variation</b> donne ce découpage et les valeurs atteintes.</li>
+<li>Repérer les valeurs de <i>&#955;</i> qui <b>séparent les cas</b> : extremums, valeurs aux bornes. Ce sont les hauteurs où le nombre de points d'intersection change.</li>
+<li>Faire glisser la droite <i>y</i>&#8239;=&#8239;<i>&#955;</i> du bas vers le haut, rédiger cas par cas en écrivant les intervalles de <i>&#955;</i>, sans oublier le <b>cas frontière</b> (extremum, tangence).</li>
+<li><b>Contrôle</b> : les cas doivent couvrir tout l'ensemble d'arrivée, sans trou ni recouvrement.</li>
+</ul>
+</div>
+
+<!-- ================= LECON 3 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 3&nbsp;: Application réciproque d'une bijection</h2>
+<div class="form">
+  <span class="t">DEFINITION&nbsp;: <i>f</i> BIJECTION DE <i>E</i> VERS <i>F</i></span>
+  <div class="c m"><i>f</i><sup>&#8722;1</sup>&#8239;:&#8239;<i>F</i>&#8239;<span class="ar">&#8594;</span>&#8239;<i>E</i> &nbsp;&nbsp;&nbsp; <i>f</i><sup>&#8722;1</sup>(<i>y</i>)&#8239;=&#8239;<i>x</i>&nbsp;<span class="ar">&#8660;</span>&nbsp;<i>f</i>(<i>x</i>)&#8239;=&#8239;<i>y</i></div>
+  <div class="c m"><i>f</i><sup>&#8722;1</sup>(<i>f</i>(<i>x</i>))&#8239;=&#8239;<i>x</i> &nbsp;(<i>x</i>&#8239;&#8712;&#8239;<i>E</i>) &nbsp;&nbsp; <i>f</i>(<i>f</i><sup>&#8722;1</sup>(<i>y</i>))&#8239;=&#8239;<i>y</i> &nbsp;(<i>y</i>&#8239;&#8712;&#8239;<i>F</i>)</div>
+</div></div>
+<p><b>Seule une bijection admet une application réciproque.</b> Chaque <i>y</i> de <i>F</i> a un antécédent et un seul ; <i>f</i><sup>&#8722;1</sup> lui associe cet unique antécédent. Sans injectivité, l'unicité manquerait ; sans surjectivité, l'existence manquerait : ce sont les deux conditions d'une application. De plus <i>f</i><sup>&#8722;1</sup> est elle-même une <b>bijection de <i>F</i> vers <i>E</i></b>, et sa réciproque est <i>f</i>.</p>
+<p><b>Lecture graphique</b> (repère <b>orthonormé</b>) : la courbe de <i>f</i><sup>&#8722;1</sup> est la <b>symétrique</b> de celle de <i>f</i> par rapport à la droite d'équation <i>y</i>&#8239;=&#8239;<i>x</i>. Les points communs aux deux courbes situés sur cette droite sont les solutions de <i>f</i>(<i>x</i>)&#8239;=&#8239;<i>x</i>. Dans un repère quelconque, la symétrie n'est plus celle qu'on voit.</p>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Déterminer <i>f</i><sup>&#8722;1</sup> par une formule</h3>
+<ul>
+<li><b>Justifier d'abord la bijectivité</b> de <i>f</i> de <i>E</i> vers <i>F</i> : sans cette étape, la suite n'a pas de sens.</li>
+<li>Ecrire <i>y</i>&#8239;=&#8239;<i>f</i>(<i>x</i>), <i>y</i> étant la donnée et <i>x</i> l'inconnue ; <b>isoler <i>x</i></b> en défaisant les opérations dans l'ordre inverse. La formule <i>x</i>&#8239;=&#8239;&#8230; est celle de <i>f</i><sup>&#8722;1</sup>(<i>y</i>) ; on renomme ensuite la variable.</li>
+<li>L'ensemble de définition de <i>f</i><sup>&#8722;1</sup> est l'ensemble d'<b>arrivée</b> de <i>f</i>.</li>
+<li><b>Vérifier</b> en calculant <i>f</i><sup>&#8722;1</sup>(<i>f</i>(<i>a</i>)) pour une valeur numérique <i>a</i> : on doit retomber sur <i>a</i>.</li>
+</ul>
+<p><b>Cas homographique</b> <span class="pt"><i>y</i>&#8239;=&#8239;<span class="f"><span><i>ax</i>&#8239;+&#8239;<i>b</i></span><span><i>cx</i>&#8239;+&#8239;<i>d</i></span></span></span> : chasser le dénominateur (non nul par hypothèse), développer, regrouper d'un côté <b>tous</b> les termes en <i>x</i>, mettre <i>x</i> en facteur, puis diviser <b>en signalant la valeur de <i>y</i> qui annule ce facteur</b> : c'est précisément celle qui n'a pas d'antécédent. <i>f</i><sup>&#8722;1</sup> est alors définie sur &#8477; privé de cette valeur.</p>
+<div class="note"><b>Cas usuels.</b> Affine <span class="pt"><i>f</i>(<i>x</i>)&#8239;=&#8239;<i>ax</i>&#8239;+&#8239;<i>b</i></span> (<i>a</i>&#8239;&#8800;&#8239;0) : <span class="pt"><i>f</i><sup>&#8722;1</sup>(<i>x</i>)&#8239;=&#8239;<span class="f"><span><i>x</i>&#8239;&#8722;&#8239;<i>b</i></span><span><i>a</i></span></span></span> &middot; carré sur [0&#8239;;&#8239;+&#8734;[ : réciproque <span class="pt"><i>x</i>&#8239;<span class="ar">&#8614;</span>&#8239;&#8730;<span class="rad"><i>x</i></span></span> &middot; <b>involution</b> (<i>f</i><sup>&#8722;1</sup>&#8239;=&#8239;<i>f</i>) : <span class="pt"><i>x</i>&#8239;<span class="ar">&#8614;</span>&#8239;<span class="f"><span>1</span><span><i>x</i></span></span></span>.</div>
+</div>
+
+<!-- ================= LECON 4 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 4&nbsp;: Composition de deux applications</h2>
+<div class="form">
+  <span class="t">DEFINITION&nbsp;: <i>f</i>&#8239;:&#8239;<i>E</i>&#8239;<span class="ar">&#8594;</span>&#8239;<i>F</i> ET <i>g</i>&#8239;:&#8239;<i>F</i>&#8239;<span class="ar">&#8594;</span>&#8239;<i>G</i></span>
+  <div class="c m"><i>g</i>&#8239;&#8728;&#8239;<i>f</i>&#8239;:&#8239;<i>E</i>&#8239;<span class="ar">&#8594;</span>&#8239;<i>G</i> &nbsp;&nbsp;&nbsp; (<i>g</i>&#8239;&#8728;&#8239;<i>f</i>)(<i>x</i>)&#8239;=&#8239;<i>g</i>(<i>f</i>(<i>x</i>))</div>
+</div></div>
+<p>Lue « <i>g</i> rond <i>f</i> » : on applique <b>d'abord <i>f</i></b>, l'application écrite <b>à droite</b>, puis <i>g</i>. La composition <b>n'est pas commutative</b> : en général <span class="pt"><i>g</i>&#8239;&#8728;&#8239;<i>f</i>&#8239;&#8800;&#8239;<i>f</i>&#8239;&#8728;&#8239;<i>g</i></span>, et l'une des deux peut exister sans que l'autre ait un sens.</p>
+<p><b>Condition d'existence.</b> Il faut que l'ensemble image de <i>f</i> soit contenu dans l'ensemble de départ de <i>g</i> : c'est la chaîne <span class="pt"><i>E</i>&#8239;<span class="ar">&#8594;</span>&#8239;<i>F</i>&#8239;<span class="ar">&#8594;</span>&#8239;<i>G</i></span>. Pour des fonctions numériques, <i>g</i>&#8239;&#8728;&#8239;<i>f</i> est définie pour les <i>x</i> tels que <i>f</i>(<i>x</i>) existe <b>et</b> appartient à l'ensemble de définition de <i>g</i>. Avec <i>f</i>(<i>x</i>)&#8239;=&#8239;<i>x</i>&#8239;&#8722;&#8239;5 et <i>g</i>(<i>x</i>)&#8239;=&#8239;&#8730;<span class="rad"><i>x</i></span>, la composée <i>g</i>&#8239;&#8728;&#8239;<i>f</i> n'est définie que pour <i>x</i>&#8239;&#8805;&#8239;5.</p>
+<p><b>Trois applications</b> : <span class="pt"><i>h</i>&#8239;&#8728;&#8239;<i>g</i>&#8239;&#8728;&#8239;<i>f</i>&#8239;:&#8239;<i>x</i>&#8239;<span class="ar">&#8614;</span>&#8239;<i>h</i>(<i>g</i>(<i>f</i>(<i>x</i>)))</span>, toujours de la droite vers la gauche.</p>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Identité et lien avec la réciproque</h3>
+<div class="form">
+  <span class="t">APPLICATION IDENTITE ET RECIPROQUE</span>
+  <div class="c m"><span class="op">Id</span><sub><i>E</i></sub>(<i>x</i>)&#8239;=&#8239;<i>x</i> pour tout <i>x</i>&#8239;&#8712;&#8239;<i>E</i></div>
+  <div class="c m"><i>f</i><sup>&#8722;1</sup>&#8239;&#8728;&#8239;<i>f</i>&#8239;=&#8239;<span class="op">Id</span><sub><i>E</i></sub> &nbsp;&nbsp;&nbsp; <i>f</i>&#8239;&#8728;&#8239;<i>f</i><sup>&#8722;1</sup>&#8239;=&#8239;<span class="op">Id</span><sub><i>F</i></sub></div>
+</div>
+<p><b>Méthode de contrôle</b> : pour prouver que deux applications <i>f</i> et <i>g</i> sont réciproques l'une de l'autre, il suffit de vérifier que <i>g</i>&#8239;&#8728;&#8239;<i>f</i> et <i>f</i>&#8239;&#8728;&#8239;<i>g</i> sont les identités. Aucune équation à résoudre. Pour deux bijections : <span class="pt">(<i>g</i>&#8239;&#8728;&#8239;<i>f</i>)<sup>&#8722;1</sup>&#8239;=&#8239;<i>f</i><sup>&#8722;1</sup>&#8239;&#8728;&#8239;<i>g</i><sup>&#8722;1</sup></span>, avec <b>inversion de l'ordre</b>.</p>
+</div>
+
+<div class="bloc">
+<h3 class="rub">Calculer et décomposer</h3>
+<ul>
+<li><b>Calculer <i>g</i>&#8239;&#8728;&#8239;<i>f</i></b> : dans la formule de <i>g</i>, remplacer partout la variable par l'expression entière de <i>f</i>(<i>x</i>), <b>mise entre parenthèses</b>. Développer si l'énoncé le demande, puis donner l'ensemble de définition.</li>
+<li><b>Décomposer</b> : le calcul que l'on ferait <b>en premier</b> pour évaluer la formule est la fonction <b>intérieure</b> <i>f</i>, celle qui touche <i>x</i> ; le calcul suivant est l'<b>extérieure</b> <i>g</i>. La fonction cherchée est <i>g</i>&#8239;&#8728;&#8239;<i>f</i>. Trois calculs emboîtés donnent une composée de trois applications.</li>
+<li><b>Vérifier</b> en recomposant, ou sur une valeur numérique : calculer <i>f</i>(<i>a</i>), puis <i>g</i> de ce résultat, et comparer avec la formule finale en <i>a</i>.</li>
+</ul>
+</div>
+
+</div>
+
+<div class="bandeau vert">PIEGES ET ERREURS FREQUENTES</div>
+<div class="cols">
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> « <i>g</i>(<i>x</i>)&#8239;=&#8239;<i>x</i><sup>2</sup> est injective, car <i>x</i><sup>2</sup> est une seule valeur » &nbsp;&middot;&nbsp; « <i>x</i>&#8239;<span class="ar">&#8614;</span>&#8239;<i>x</i><sup>2</sup> n'est pas bijective »</div><div class="cor"><span class="v">&#10003;</span> Un seul contre-exemple réfute : <span class="pt"><i>g</i>(2)&#8239;=&#8239;<i>g</i>(&#8722;2)&#8239;=&#8239;4</span> avec 2&#8239;&#8800;&#8239;&#8722;2, donc <i>g</i> n'est <b>pas injective sur &#8477;</b>. « Une seule valeur » ne dit que l'unicité de l'<b>image</b>, c'est la définition d'une application. Et une réponse sans les <b>deux ensembles</b> n'a pas de sens : <i>x</i>&#8239;<span class="ar">&#8614;</span>&#8239;<i>x</i><sup>2</sup> est bijective de [0&#8239;;&#8239;+&#8734;[ vers [0&#8239;;&#8239;+&#8734;[.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> Injective et surjective employées l'une pour l'autre &nbsp;&middot;&nbsp; « changer <i>F</i> ne change rien »</div><div class="cor"><span class="v">&#10003;</span> <b>Injective</b> se dit du départ : jamais deux fois la même image, <b>au plus un</b> antécédent. <b>Surjective</b> se dit de l'arrivée : toutes les cibles atteintes, <b>au moins un</b> antécédent. Les deux qualités sont <b>indépendantes</b>, et seule la surjectivité dépend de <i>F</i> : <i>x</i>&#8239;<span class="ar">&#8614;</span>&#8239;<i>x</i><sup>2</sup> n'est pas surjective de &#8477; vers &#8477;, mais l'est de &#8477; vers [0&#8239;;&#8239;+&#8734;[.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> « Toute application admet une réciproque » &nbsp;&middot;&nbsp; on écrit <i>f</i><sup>&#8722;1</sup> pour <i>x</i>&#8239;<span class="ar">&#8614;</span>&#8239;<i>x</i><sup>2</sup> sur &#8477;</div><div class="cor"><span class="v">&#10003;</span> <b>Seule une bijection</b> admet une application réciproque, et la bijectivité doit avoir été <b>démontrée</b> avant d'écrire <i>f</i><sup>&#8722;1</sup>. Sur &#8477;, <i>x</i>&#8239;<span class="ar">&#8614;</span>&#8239;<i>x</i><sup>2</sup> n'a pas de réciproque : c'est une faute, pas une imprécision. Ne pas confondre avec <i>f</i><sup>&#8722;1</sup>(<i>B</i>), ensemble d'antécédents, qui existe toujours.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> <i>f</i><sup>&#8722;1</sup>(<i>x</i>)&#8239;=&#8239;<span class="f"><span>1</span><span><i>f</i>(<i>x</i>)</span></span></div><div class="cor"><span class="v">&#10003;</span> La <b>réciproque</b> n'est pas l'<b>inverse</b> : le &#8722;1 en exposant du <b>nom de l'application</b> désigne la réciproque, en exposant d'un <b>nombre</b> il désigne l'inverse. Pour <i>f</i>(<i>x</i>)&#8239;=&#8239;2<i>x</i> : <span class="pt"><i>f</i><sup>&#8722;1</sup>(<i>x</i>)&#8239;=&#8239;<span class="f"><span><i>x</i></span><span>2</span></span></span> alors que <span class="pt"><span class="f"><span>1</span><span><i>f</i>(<i>x</i>)</span></span>&#8239;=&#8239;<span class="f"><span>1</span><span>2<i>x</i></span></span></span>.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> « <i>f</i>(<i>x</i>)&#8239;=&#8239;<i>&#955;</i> a une solution, donc elle en a une seule » &nbsp;&middot;&nbsp; <i>x</i><sup>2</sup>&#8239;=&#8239;0 a une solution unique, donc le carré est injectif</div><div class="cor"><span class="v">&#10003;</span> « Une solution » signifie <b>au moins une</b> : préciser toujours <b>combien</b> et <b>pour quelles valeurs de <i>&#955;</i></b>. Et on ne conclut jamais d'<b>un</b> cas particulier à la nature de <i>f</i> : un contre-exemple suffit à <b>réfuter</b>, jamais à <b>prouver</b>. Il faut établir la propriété pour <b>tout</b> <i>&#955;</i>.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> <i>g</i>&#8239;&#8728;&#8239;<i>f</i>&#8239;=&#8239;<i>f</i>&#8239;&#8728;&#8239;<i>g</i> &nbsp;&middot;&nbsp; avec <i>f</i>(<i>x</i>)&#8239;=&#8239;<i>x</i>&#8239;&#8722;&#8239;3 et <i>g</i>(<i>x</i>)&#8239;=&#8239;<i>x</i><sup>2</sup>, on écrit <i>g</i>&#8239;&#8728;&#8239;<i>f</i>(<i>x</i>)&#8239;=&#8239;<i>x</i><sup>2</sup>&#8239;&#8722;&#8239;3<sup>2</sup></div><div class="cor"><span class="v">&#10003;</span> L'ordre compte : <span class="pt"><i>g</i>&#8239;&#8728;&#8239;<i>f</i>(<i>x</i>)&#8239;=&#8239;(<i>x</i>&#8239;&#8722;&#8239;3)<sup>2</sup></span> alors que <span class="pt"><i>f</i>&#8239;&#8728;&#8239;<i>g</i>(<i>x</i>)&#8239;=&#8239;<i>x</i><sup>2</sup>&#8239;&#8722;&#8239;3</span>. Dans <i>g</i>&#8239;&#8728;&#8239;<i>f</i>, c'est <i>f</i> qui agit <b>en premier</b> bien qu'écrite à droite, et l'expression substituée s'écrit <b>entre parenthèses</b>.</div></div>
+
+<div class="pg"><div class="err"><span class="x">&#10007;</span> <i>f</i> est définie sur &#8477;, donc <i>g</i>&#8239;&#8728;&#8239;<i>f</i> aussi</div><div class="cor"><span class="v">&#10003;</span> Une composée peut être définie sur un ensemble <b>strictement plus petit</b> : il faut que <i>f</i>(<i>x</i>) existe <b>et</b> appartienne au départ de <i>g</i>. Avec <i>f</i>(<i>x</i>)&#8239;=&#8239;<i>x</i>&#8239;&#8722;&#8239;5 et <i>g</i>(<i>x</i>)&#8239;=&#8239;&#8730;<span class="rad"><i>x</i></span>, <i>f</i> est définie sur &#8477; mais <i>g</i>&#8239;&#8728;&#8239;<i>f</i> seulement sur [5&#8239;;&#8239;+&#8734;[.</div></div>
+
+</div>
+
+<div class="bandeau bleu">A SAVOIR PAR COEUR AVANT LE DEVOIR</div>
+<div class="cols">
+<ol class="recap">
+<li><b>Application</b> <i>f</i>&#8239;:&#8239;<i>E</i>&#8239;<span class="ar">&#8594;</span>&#8239;<i>F</i> : chaque <i>x</i> de <i>E</i> a une image et <b>une seule</b> ; contrôler les interdits (dénominateur nul, radicande négatif). Toujours <b>annoncer les deux ensembles</b>.</li>
+<li>Tout se compte en <b>antécédents</b> : injective = au plus un, surjective = au moins un, bijective = exactement un. L'injectivité ne dépend pas de <i>F</i> ; la surjectivité, elle, en dépend.</li>
+<li><b>Injectivité</b> : partir de <i>f</i>(<i>a</i>)&#8239;=&#8239;<i>f</i>(<i>b</i>) et aboutir à <i>a</i>&#8239;=&#8239;<i>b</i> ; se réfute par un <b>contre-exemple chiffré</b>. <b>Surjectivité</b> : résoudre <i>f</i>(<i>x</i>)&#8239;=&#8239;<i>y</i> pour <i>y</i> <b>quelconque</b> et vérifier que la solution est dans <i>E</i>.</li>
+<li><b>Ensemble image</b> <span class="pt"><i>f</i>(<i>E</i>)&#8239;=&#8239;{&#8239;<i>f</i>(<i>x</i>)&#8239;;&#8239;<i>x</i>&#8239;&#8712;&#8239;<i>E</i>&#8239;}</span> : <i>f</i> surjective <span class="ar">&#8660;</span> <i>f</i>(<i>E</i>)&#8239;=&#8239;<i>F</i>. Rendre surjective : prendre <i>B</i>&#8239;=&#8239;<i>f</i>(<i>E</i>) ; rendre injective : restreindre le départ à un intervalle de stricte monotonie.</li>
+<li>Nombre de solutions de <span class="pt"><i>f</i>(<i>x</i>)&#8239;=&#8239;<i>&#955;</i></span> = nombre de points communs à la courbe et à la droite <i>y</i>&#8239;=&#8239;<i>&#955;</i>. Discussion <b>selon <i>&#955;</i></b>, cas frontière aux extremums. Strictement monotone sur <i>I</i> <span class="ar">&#8658;</span> injective sur <i>I</i>.</li>
+<li><b>Seule une bijection</b> a une réciproque : <span class="pt"><i>f</i><sup>&#8722;1</sup>(<i>y</i>)&#8239;=&#8239;<i>x</i>&#8239;<span class="ar">&#8660;</span>&#8239;<i>f</i>(<i>x</i>)&#8239;=&#8239;<i>y</i></span> ; méthode : écrire <i>y</i>&#8239;=&#8239;<i>f</i>(<i>x</i>) et isoler <i>x</i> ; <i>f</i><sup>&#8722;1</sup> est définie sur l'<b>arrivée</b> de <i>f</i>. Courbes symétriques par rapport à <i>y</i>&#8239;=&#8239;<i>x</i> en repère <b>orthonormé</b>. <span class="pt"><i>f</i><sup>&#8722;1</sup>&#8239;&#8800;&#8239;<span class="f"><span>1</span><span><i>f</i></span></span></span>.</li>
+<li><b>Composée</b> : <span class="pt">(<i>g</i>&#8239;&#8728;&#8239;<i>f</i>)(<i>x</i>)&#8239;=&#8239;<i>g</i>(<i>f</i>(<i>x</i>))</span>, <i>f</i> d'abord ; parenthèses obligatoires ; ensemble de définition : <i>f</i>(<i>x</i>) existe <b>et</b> appartient au départ de <i>g</i> ; en général <i>g</i>&#8239;&#8728;&#8239;<i>f</i>&#8239;&#8800;&#8239;<i>f</i>&#8239;&#8728;&#8239;<i>g</i>.</li>
+<li><span class="pt"><i>f</i><sup>&#8722;1</sup>&#8239;&#8728;&#8239;<i>f</i>&#8239;=&#8239;<span class="op">Id</span><sub><i>E</i></sub></span> et <span class="pt"><i>f</i>&#8239;&#8728;&#8239;<i>f</i><sup>&#8722;1</sup>&#8239;=&#8239;<span class="op">Id</span><sub><i>F</i></sub></span> : deux compositions suffisent à prouver que deux applications sont réciproques. Pour deux bijections, <span class="pt">(<i>g</i>&#8239;&#8728;&#8239;<i>f</i>)<sup>&#8722;1</sup>&#8239;=&#8239;<i>f</i><sup>&#8722;1</sup>&#8239;&#8728;&#8239;<i>g</i><sup>&#8722;1</sup></span>.</li>
+</ol>
+</div>
+
+</body>
+</html>

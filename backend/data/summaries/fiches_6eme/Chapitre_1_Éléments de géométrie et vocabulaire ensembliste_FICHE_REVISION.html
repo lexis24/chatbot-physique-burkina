@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Fiche de revision - 6eme - Chapitre 1 : Elements de geometrie</title>
+<style>
+/* ===================================================================
+   FICHE DE REVISION, Collection Hakili Lab, Edition 2026
+   Feuille de style autonome, format A4 pret a imprimer.
+   Bleu #005CB9 · Vert #49A145
+   =================================================================== */
+:root{
+  --bleu:#005CB9; --bleu-fonce:#00429A; --bleu-pale:#E8F1FB; --bleu-bord:#B7D2EE;
+  --vert:#49A145; --vert-fonce:#2F7A2C; --vert-pale:#EDF7EC; --vert-bord:#BCE0B9;
+  --gris:#4A4A4A; --gris-clair:#E4E4E4; --rouge:#B3261E;
+}
+@page{
+  size:A4; margin:15mm;
+  @bottom-center{
+    content:"Collection Hakili Lab, Edition 2026  ·  Fiche de revision  ·  " counter(page) "/" counter(pages);
+    font-family:"Segoe UI",Calibri,Arial,sans-serif; font-size:6.6pt; color:#8A8A8A;
+  }
+}
+*{box-sizing:border-box;}
+body{
+  margin:0; font-family:"Segoe UI",Calibri,Arial,sans-serif;
+  font-size:8.4pt; line-height:1.26; color:#1B1B1B;
+}
+p{margin:0 0 3pt;}
+ul{margin:0 0 3pt; padding-left:11pt;}
+li{margin:0 0 1.2pt;}
+b,strong{color:var(--bleu-fonce);}
+
+/* ------------------------------ ENTETE ---------------------------- */
+.entete{
+  display:flex; align-items:stretch; border:1.6pt solid var(--bleu);
+  border-radius:2.5pt; overflow:hidden; margin-bottom:6pt;
+}
+.entete .num{
+  background:var(--bleu); color:#fff; font-size:20pt; font-weight:700;
+  padding:0 8pt; display:flex; align-items:center; justify-content:center; min-width:34pt;
+}
+.entete .txt{padding:3.5pt 8pt; flex:1;}
+.entete .niveau{
+  font-size:7pt; font-weight:700; letter-spacing:.9pt; color:var(--vert-fonce);
+}
+.entete h1{margin:0; font-size:13.5pt; line-height:1.12; color:var(--bleu-fonce); font-weight:700;}
+.entete .sous{font-size:7pt; color:var(--gris); margin-top:1pt;}
+
+/* --------------------------- BANDEAUX ----------------------------- */
+.bandeau{
+  color:#fff; font-weight:700; font-size:9pt; letter-spacing:1pt;
+  padding:2.4pt 7pt; border-radius:2pt; margin:3pt 0 4pt; break-after:avoid; page-break-after:avoid;
+}
+.bandeau.bleu{background:var(--bleu);}
+.bandeau.vert{background:var(--vert);}
+
+/* --------------------------- COLONNES ----------------------------- */
+.cols{column-count:2; column-gap:7mm; column-fill:balance;}
+
+.cols.bal{column-fill:balance;}
+.bloc{margin-bottom:5pt;}
+.keep{break-inside:avoid; page-break-inside:avoid;}
+
+/* --------------------------- LECONS ------------------------------- */
+h2.lecon{
+  margin:0 0 3pt; font-size:8.6pt; font-weight:700; color:#fff; background:var(--bleu-fonce);
+  padding:1.8pt 5pt; border-radius:1.5pt; break-after:avoid; page-break-after:avoid;
+}
+h3.rub{
+  margin:3.5pt 0 1.5pt; font-size:8.2pt; font-weight:700; color:var(--vert-fonce);
+  border-bottom:.7pt solid var(--vert-bord); padding-bottom:.8pt;
+  break-after:avoid; page-break-after:avoid;
+}
+
+/* --------------------------- ENCADRES ----------------------------- */
+.form{
+  background:var(--bleu-pale); border:.8pt solid var(--bleu-bord); border-left:2.6pt solid var(--bleu);
+  border-radius:2pt; padding:2.4pt 5pt; margin:2.2pt 0 3.4pt;
+  break-inside:avoid; page-break-inside:avoid;
+}
+.form .t{
+  display:block; font-size:6.8pt; font-weight:700; letter-spacing:.6pt;
+  color:var(--bleu); margin-bottom:1.5pt;
+}
+.form .c{text-align:center; font-size:9.1pt; margin:1.6pt 0;}
+.note{background:var(--vert-pale); border-left:2.4pt solid var(--vert); padding:2.4pt 5pt; border-radius:1.5pt; margin:2.5pt 0 4pt; break-inside:avoid;}
+
+/* --------------------------- TABLEAUX ----------------------------- */
+table{width:100%; border-collapse:collapse; font-size:7.6pt; margin:2pt 0 4pt; break-inside:avoid;}
+th{background:var(--bleu); color:#fff; font-weight:700; text-align:left; padding:1.8pt 4pt; font-size:7.2pt;}
+td{border:.6pt solid var(--gris-clair); padding:1.8pt 4pt; vertical-align:top;}
+tr{break-inside:avoid;}
+table.var td{text-align:center; font-size:8pt;}
+table.var td.lab{text-align:left; font-weight:700; color:var(--bleu-fonce); background:var(--bleu-pale);}
+
+/* ----------------------------- PIEGES ----------------------------- */
+table.pieges th:first-child{width:44%;}
+table.pieges td:first-child{color:var(--rouge); background:#FDF1F0;}
+.x{font-weight:700;}
+.v{color:var(--vert-fonce); font-weight:700;}
+
+/* ---------------------------- RECAP ------------------------------- */
+ol.recap{margin:0; padding-left:0; list-style:none; counter-reset:r;}
+ol.recap li{
+  counter-increment:r; position:relative; padding-left:13pt; margin-bottom:1.8pt;
+  break-inside:avoid;
+}
+ol.recap li::before{
+  content:counter(r); position:absolute; left:0; top:.3pt;
+  width:10pt; height:10pt; border-radius:50%; background:var(--vert); color:#fff;
+  font-size:6.6pt; font-weight:700; text-align:center; line-height:10pt;
+}
+
+/* --------------------------- MATHS -------------------------------- */
+.m{font-family:Cambria,Georgia,"Times New Roman",serif;}
+i,var{font-family:Cambria,Georgia,"Times New Roman",serif; font-style:italic;}
+.op{font-family:Cambria,Georgia,"Times New Roman",serif; font-style:normal;}
+.f{display:inline-block; vertical-align:middle; text-align:center;
+   margin:0 .12em; line-height:1.06; font-family:Cambria,Georgia,"Times New Roman",serif;}
+.f>span{display:block; padding:0 .2em;}
+.f>span:first-child{border-bottom:.6pt solid currentColor; padding-bottom:.08em;}
+.f>span:last-child{padding-top:.04em;}
+.rad{border-top:.6pt solid currentColor; padding-top:.12em;}
+/* line-height:0 evite que l'exposant n'ecarte les lignes ; position:relative le
+   repositionne sans qu'il heurte la barre de fraction ni le trait du radical. */
+sup,sub{font-size:.68em; line-height:0; position:relative; vertical-align:baseline;}
+sup{top:-.42em;}
+sub{bottom:-.22em;}
+.pt{white-space:nowrap;}
+/* Les fleches n'ont qu'un glyphe atrophie dans la fonte serif : on les force
+   en sans-serif, ou elles sont franches meme a 8 pt. */
+.ar{font-family:"Segoe UI",Calibri,Arial,"DejaVu Sans",sans-serif; font-style:normal;}
+
+/* ------------------- PIEGES : blocs erreur / correction ------------- */
+.pg{font-size:8.1pt; border-left:2.4pt solid var(--rouge); background:#FDF1F0; border-radius:1.5pt;
+    padding:2pt 5pt; margin:0 0 2.8pt; break-inside:avoid; page-break-inside:avoid;}
+.pg .err{color:var(--rouge); font-weight:600;}
+.pg .cor{color:#1B1B1B; margin-top:.8pt;}
+.pg .cor b{color:var(--bleu-fonce);}
+.v{color:var(--vert-fonce); font-weight:700;}
+
+</style>
+</head>
+<body>
+<header class="entete">
+  <div class="num">1</div>
+  <div class="txt">
+    <div class="niveau">6EME &middot; MATHEMATIQUES</div>
+    <h1>Eléments de géométrie</h1>
+    <div class="sous">Leçon 1 : points, droites et points alignés &middot; Leçon 2 : demi-droites, segments, longueur et milieu &middot; Leçon 3 : droites parallèles &middot; Leçon 4 : droites sécantes et droites perpendiculaires</div>
+  </div>
+</header>
+
+<div class="bandeau bleu" style="margin-top:0">L'ESSENTIEL</div>
+<div class="cols">
+
+<!-- ================= LECON 1 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 1&nbsp;: Points, droites et points alignés</h2>
+<ul>
+<li>Un <b>point</b> marque un endroit précis, sans largeur ni longueur : on le nomme par une <b>lettre majuscule</b> (A, B, M, O).</li>
+<li>Une <b>droite</b> se prolonge <b>sans fin des deux côtés</b> : sur la feuille on n'en trace qu'un morceau. Elle se note (<i>d</i>) ou (AB), et <span class="pt">(AB)&#8239;=&#8239;(BA)</span>.</li>
+<li>Des points sont <b>alignés</b> lorsqu'une <b>même droite</b> passe par tous ces points ; on le vérifie à la règle.</li>
+</ul></div>
+<div class="form">
+  <span class="t">APPARTENANCE ET PROPRIETES</span>
+  <div class="c m">A&#8239;&#8712;&#8239;(<i>d</i>) : A est <b>sur</b> (<i>d</i>), et (<i>d</i>) <b>passe par</b> A</div>
+  <div class="c m">E&#8239;&#8713;&#8239;(<i>d</i>) : E n'est <b>pas</b> sur (<i>d</i>)</div>
+  <div class="c m">par <b>un</b> point : une <b>infinité</b> de droites</div>
+  <div class="c m">par <b>deux points distincts</b> A et B : <b>une seule</b> droite, (AB)</div>
+</div>
+</div>
+
+<!-- ================= LECON 2 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 2&nbsp;: Demi-droites, segments, longueur et milieu</h2>
+<p>Une <b>demi-droite</b> a un début, son <b>origine</b>, et se prolonge sans fin d'un seul côté : dans [OA), le <b>crochet</b> est du côté de l'origine O, la <b>parenthèse</b> du côté illimité. Un <b>segment</b> est la portion de droite comprise entre ses deux <b>extrémités</b>.</p></div>
+<table>
+<tr><th>Ecriture</th><th>Ce que c'est</th></tr>
+<tr><td class="m">(AB)</td><td>la <b>droite</b>, illimitée des deux côtés &nbsp;&middot;&nbsp; <span class="pt">(AB)&#8239;=&#8239;(BA)</span></td></tr>
+<tr><td class="m">[AB)</td><td>la <b>demi-droite</b> d'origine A passant par B &nbsp;&middot;&nbsp; <span class="pt">[AB)&#8239;&#8800;&#8239;[BA)</span></td></tr>
+<tr><td class="m">[AB]</td><td>le <b>segment</b> d'extrémités A et B, que l'on <b>trace</b> &nbsp;&middot;&nbsp; <span class="pt">[AB]&#8239;=&#8239;[BA]</span></td></tr>
+<tr><td class="m">AB</td><td>la <b>longueur</b> de [AB], que l'on <b>mesure</b> : un <b>nombre</b> avec son unité, <span class="pt">AB&#8239;=&#8239;5 cm</span></td></tr>
+</table>
+<div class="form">
+  <span class="t">INCLUSION ET MILIEU</span>
+  <div class="c m">[AB]&#8239;&#8834;&#8239;(AB) &nbsp;&nbsp;&nbsp; (AB)&#8239;&#8836;&#8239;[AB]</div>
+  <div class="c m">I milieu de [AB] : I&#8239;&#8712;&#8239;[AB] <b>et</b> IA&#8239;=&#8239;IB&#8239;=&#8239;AB&#8239;&#247;&#8239;2</div>
+</div>
+<p>Le segment est <b>inclus</b> dans la droite : tous ses points sont des points de (AB) ; l'inverse est faux. Si <span class="pt">AB&#8239;=&#8239;6 cm</span>, alors <span class="pt">IA&#8239;=&#8239;IB&#8239;=&#8239;3 cm</span>.</p>
+</div>
+
+<!-- ================= LECON 3 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 3&nbsp;: Droites parallèles</h2>
+<p>Deux droites sont <b>parallèles</b> lorsqu'elles ne se coupent en <b>aucun</b> point, aussi loin qu'on les prolonge : elles gardent partout le <b>même écart</b>. Codage : de petits <b>chevrons identiques</b>.</p></div>
+<p><b>Intersection</b> (&#8745;) : les points qui sont sur les <b>deux</b> figures à la fois. <b>Réunion</b> (&#8746;) : les points qui sont sur <b>l'une ou l'autre</b>. Deux droites parallèles et distinctes ont une intersection <b>vide</b>.</p>
+<div class="form">
+  <span class="t">PARALLELISME&nbsp;: PROPRIETES 1 ET 2</span>
+  <div class="c m">(<i>d</i><sub>1</sub>)&#8239;&#8741;&#8239;(<i>d</i><sub>2</sub>) : « (<i>d</i><sub>1</sub>) est parallèle à (<i>d</i><sub>2</sub>) »</div>
+  <div class="c m">par un point A qui n'est pas sur (<i>d</i>) : <b>une seule</b> parallèle à (<i>d</i>)</div>
+  <div class="c m">si (<i>d</i><sub>1</sub>)&#8239;&#8741;&#8239;(<i>d</i>) et (<i>d</i><sub>2</sub>)&#8239;&#8741;&#8239;(<i>d</i>), alors (<i>d</i><sub>1</sub>)&#8239;&#8741;&#8239;(<i>d</i><sub>2</sub>)</div>
+</div>
+</div>
+
+<!-- ================= LECON 4 ================= -->
+<div class="bloc">
+<div class="keep"><h2 class="lecon">Leçon 4&nbsp;: Droites sécantes et droites perpendiculaires</h2>
+<p>Deux droites <b>sécantes</b> se coupent en <b>un seul</b> point, appelé leur <b>point d'intersection</b>. On écrit ce point entre <b>accolades</b>, car une intersection est un <b>ensemble</b> de points.</p></div>
+<p><b>Deux cas, et deux seulement :</b> deux droites d'un même plan sont soit <b>parallèles</b> (aucun point commun, ou confondues), soit <b>sécantes</b> (un seul point commun).</p>
+<p>Deux droites sécantes qui forment <b>quatre angles droits</b> sont <b>perpendiculaires</b> ; codage : un <b>petit carré</b> dans le coin.</p>
+<div class="form">
+  <span class="t">SECANTES, PERPENDICULAIRES&nbsp;: PROPRIETES 3 ET 4</span>
+  <div class="c m">(<i>d</i><sub>1</sub>)&#8239;&#8745;&#8239;(<i>d</i><sub>2</sub>)&#8239;=&#8239;{&#8239;I&#8239;} : sécantes &nbsp;&nbsp; (<i>d</i><sub>1</sub>)&#8239;&#8869;&#8239;(<i>d</i><sub>2</sub>) : perpendiculaires</div>
+  <div class="c m">par un point A, qu'il soit sur (<i>d</i>) ou non :</div>
+  <div class="c m"><b>une seule</b> perpendiculaire à (<i>d</i>)</div>
+  <div class="c m">si (<i>d</i><sub>1</sub>)&#8239;&#8869;&#8239;(<i>d</i>) et (<i>d</i><sub>2</sub>)&#8239;&#8869;&#8239;(<i>d</i>), alors (<i>d</i><sub>1</sub>)&#8239;&#8741;&#8239;(<i>d</i><sub>2</sub>)</div>
+</div>
+<div class="note"><b>Les instruments.</b> Règle : tracer et mesurer. Equerre : angles droits, parallèles et perpendiculaires. Compas : reporter une longueur.</div>
+</div>
+
+</div>
+
+<div class="bandeau vert">PIEGES ET ERREURS FREQUENTES</div>
+<div class="cols">
+<div class="pg"><div class="err"><span class="x">&#10007;</span> « la droite AB » &nbsp;&middot;&nbsp; « la droite (AB) mesure 8 cm »</div><div class="cor"><span class="v">&#10003;</span> Une droite s'écrit avec ses <b>parenthèses</b> : (AB). Et une droite est <b>illimitée</b> : elle n'a pas de longueur. C'est le segment [AB] qui mesure : <span class="pt">AB&#8239;=&#8239;8 cm</span>.</div></div>
+<div class="pg"><div class="err"><span class="x">&#10007;</span> « [AB]&#8239;=&#8239;7 cm » &nbsp;&middot;&nbsp; « je trace AB »</div><div class="cor"><span class="v">&#10003;</span> [AB] est un <b>dessin</b>, AB est un <b>nombre</b> : on trace [AB], on calcule AB. On écrit <span class="pt">AB&#8239;=&#8239;7 cm</span>, ou « le segment [AB] mesure 7 cm ».</div></div>
+<div class="pg"><div class="err"><span class="x">&#10007;</span> [AB)&#8239;=&#8239;[BA)</div><div class="cor"><span class="v">&#10003;</span> La première demi-droite part de A, la seconde part de B. Seuls le segment et la droite ne dépendent pas de l'ordre : <span class="pt">[AB]&#8239;=&#8239;[BA]</span> et <span class="pt">(AB)&#8239;=&#8239;(BA)</span>.</div></div>
+<div class="pg"><div class="err"><span class="x">&#10007;</span> (<i>d</i><sub>1</sub>)&#8239;&#8745;&#8239;(<i>d</i><sub>2</sub>)&#8239;=&#8239;I &nbsp;&middot;&nbsp; « ces deux droites se coupent en deux points »</div><div class="cor"><span class="v">&#10003;</span> Une intersection est un <b>ensemble</b>, pas un point : <span class="pt">(<i>d</i><sub>1</sub>)&#8239;&#8745;&#8239;(<i>d</i><sub>2</sub>)&#8239;=&#8239;{&#8239;I&#8239;}</span>. Et deux droites distinctes n'ont <b>jamais</b> plus d'un point commun.</div></div>
+<div class="pg"><div class="err"><span class="x">&#10007;</span> « ces deux traits ne se croisent pas sur mon cahier, donc ils sont parallèles »</div><div class="cor"><span class="v">&#10003;</span> La feuille est trop petite : les droites peuvent se couper bien plus loin. Il faut vérifier que l'<b>écart est le même</b> aux deux bouts, ou construire à l'équerre.</div></div>
+<div class="pg"><div class="err"><span class="x">&#10007;</span> « (<i>d</i><sub>1</sub>) est parallèle » &nbsp;&middot;&nbsp; « perpendiculaire, c'est debout »</div><div class="cor"><span class="v">&#10003;</span> Etre parallèle ou perpendiculaire, c'est l'être <b>à quelque chose</b> : on précise toujours à quelle droite. Ces mots ne décrivent pas une position sur la feuille : on peut tourner la figure, les droites le restent.</div></div>
+
+</div>
+
+<div class="bandeau bleu">A SAVOIR PAR COEUR AVANT LE DEVOIR</div>
+<div class="cols">
+<ol class="recap">
+<li>Un point se nomme par une <b>lettre majuscule</b> ; une droite se note (<i>d</i>) ou (AB) et elle est <b>illimitée</b> des deux côtés.</li>
+<li>Les quatre écritures : (AB) la droite &middot; [AB) la demi-droite d'origine A &middot; [AB] le segment &middot; AB sa <b>longueur</b>, qui est un nombre.</li>
+<li><span class="pt">A&#8239;&#8712;&#8239;(<i>d</i>)</span> : A est sur (<i>d</i>) ; <span class="pt">E&#8239;&#8713;&#8239;(<i>d</i>)</span> : E n'y est pas. Des points sont <b>alignés</b> si une même droite passe par tous.</li>
+<li>Par un point passe une <b>infinité</b> de droites ; par <b>deux</b> points distincts, une <b>seule</b>.</li>
+<li>I milieu de [AB] : <span class="pt">I&#8239;&#8712;&#8239;[AB]</span> <b>et</b> <span class="pt">IA&#8239;=&#8239;IB&#8239;=&#8239;AB&#8239;&#247;&#8239;2</span> ; et <span class="pt">[AB]&#8239;&#8834;&#8239;(AB)</span>.</li>
+<li><span class="pt">(<i>d</i><sub>1</sub>)&#8239;&#8741;&#8239;(<i>d</i><sub>2</sub>)</span> : aucun point commun, écart constant. Par un point hors de (<i>d</i>) passe une <b>seule</b> parallèle ; deux droites parallèles à une même troisième sont parallèles entre elles.</li>
+<li><span class="pt">(<i>d</i><sub>1</sub>)&#8239;&#8745;&#8239;(<i>d</i><sub>2</sub>)&#8239;=&#8239;{&#8239;I&#8239;}</span> : sécantes, un <b>seul</b> point commun. Deux droites d'un même plan sont parallèles ou sécantes, jamais autre chose.</li>
+<li><span class="pt">(<i>d</i><sub>1</sub>)&#8239;&#8869;&#8239;(<i>d</i><sub>2</sub>)</span> : quatre angles droits, codage par un petit carré. Par un point passe une <b>seule</b> perpendiculaire à (<i>d</i>) ; deux droites perpendiculaires à une même troisième sont <b>parallèles</b>.</li>
+</ol>
+</div>
+
+</body>
+</html>

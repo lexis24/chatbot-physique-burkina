@@ -1,0 +1,350 @@
+{
+  "niveau": "2nde C",
+  "chapitre": "Chapitre 9 : Géométrie plane",
+  "source": "maths/2ndc/Chapitre_9_Geometrie_plane",
+  "nombre_cartes": 38,
+  "cartes": [
+    {
+      "id": "2C-CH09-001",
+      "lecon": "Vecteur directeur d'une droite",
+      "type": "definition",
+      "recto": "Qu'est-ce qu'un vecteur directeur d'une droite $(D)$ ?",
+      "verso": "C'est un vecteur non nul qui a la même direction que $(D)$. Si $(D)$ passe par deux points distincts $A$ et $B$, alors $\\overrightarrow{AB}$ en est un. Une droite en possède une infinité, tous colinéaires entre eux.",
+      "difficulte": 1,
+      "tags": ["vecteur-directeur", "definition", "droite"]
+    },
+    {
+      "id": "2C-CH09-002",
+      "lecon": "Vecteur directeur d'une droite",
+      "type": "formule",
+      "recto": "Quel vecteur directeur lit-on sur l'équation $ax + by + c = 0$ ?",
+      "verso": "Le vecteur $\\vec{u}\\left(-b\\,;\\,a\\right)$ : on échange les deux coefficients et l'on change un signe. Le vecteur $\\vec{n}\\left(a\\,;\\,b\\right)$, lui, est un vecteur normal, donc perpendiculaire à la droite.",
+      "difficulte": 2,
+      "tags": ["vecteur-directeur", "equation-cartesienne", "vecteur-normal"]
+    },
+    {
+      "id": "2C-CH09-003",
+      "lecon": "Vecteur directeur d'une droite",
+      "type": "definition",
+      "recto": "Pourquoi $\\vec{n}\\left(a\\,;\\,b\\right)$ ne dirige-t-il pas la droite d'équation $ax + by + c = 0$ ?",
+      "verso": "Parce qu'il lui est perpendiculaire : c'est le vecteur normal. Le contrôle est immédiat : en partant d'un point de la droite et en avançant de $\\left(a\\,;\\,b\\right)$, on la quitte, alors qu'en avançant de $\\left(-b\\,;\\,a\\right)$ on y reste.",
+      "difficulte": 3,
+      "tags": ["vecteur-normal", "vecteur-directeur", "piege"]
+    },
+    {
+      "id": "2C-CH09-004",
+      "lecon": "Vecteur directeur d'une droite",
+      "type": "formule",
+      "recto": "Quel vecteur directeur lit-on sur l'équation réduite $y = mx + p$ ?",
+      "verso": "Le vecteur $\\vec{u}\\left(1\\,;\\,m\\right)$, car lorsque $x$ augmente de $1$, $y$ augmente de $m$. Cette lecture s'accorde avec l'autre règle, puisque $y = mx + p$ s'écrit aussi $mx - y + p = 0$.",
+      "difficulte": 1,
+      "tags": ["vecteur-directeur", "equation-reduite"]
+    },
+    {
+      "id": "2C-CH09-005",
+      "lecon": "Représentation paramétrique d'une droite",
+      "type": "formule",
+      "recto": "Quelle représentation paramétrique décrit la droite passant par $A\\left(x_{A}\\,;\\,y_{A}\\right)$ et de vecteur directeur $\\vec{u}\\left(\\alpha\\,;\\,\\beta\\right)$ ?",
+      "verso": "Le système $x = x_{A} + t\\alpha$ et $y = y_{A} + t\\beta$, avec $t \\in \\mathbb{R}$. Il traduit l'égalité $\\overrightarrow{AM} = t\\vec{u}$, et le réel $t$ s'appelle le paramètre.",
+      "difficulte": 1,
+      "tags": ["representation-parametrique", "droite"]
+    },
+    {
+      "id": "2C-CH09-006",
+      "lecon": "Représentation paramétrique d'une droite",
+      "type": "definition",
+      "recto": "Que représente le paramètre $t$ dans une représentation paramétrique de droite ?",
+      "verso": "Un troisième nombre, qui n'est ni l'abscisse ni l'ordonnée du point : il sert d'intermédiaire. A chaque valeur de $t$ correspond un seul point de la droite, et $t = 0$ redonne le point de départ $A$.",
+      "difficulte": 2,
+      "tags": ["parametre", "representation-parametrique"]
+    },
+    {
+      "id": "2C-CH09-007",
+      "lecon": "Représentation paramétrique d'une droite",
+      "type": "formule",
+      "recto": "Comment teste-t-on qu'un point appartient à une droite donnée par une représentation paramétrique ?",
+      "verso": "On calcule $t$ à partir de la première équation, puis on reporte cette valeur dans la seconde. Si l'ordonnée obtenue est celle du point, il appartient à la droite : une seule valeur de $t$ doit convenir pour les deux coordonnées.",
+      "difficulte": 2,
+      "tags": ["representation-parametrique", "appartenance"]
+    },
+    {
+      "id": "2C-CH09-008",
+      "lecon": "Représentation paramétrique d'une droite",
+      "type": "definition",
+      "recto": "Qu'est-ce qui distingue une représentation paramétrique d'une équation cartésienne ?",
+      "verso": "La paramétrique comporte deux égalités et un paramètre : elle fabrique les points, on donne $t$ et elle rend un point. L'équation cartésienne comporte une seule égalité sans paramètre : elle teste les points, on donne un point et elle répond.",
+      "difficulte": 3,
+      "tags": ["representation-parametrique", "equation-cartesienne", "distinction"]
+    },
+    {
+      "id": "2C-CH09-009",
+      "lecon": "Equation cartésienne d'une droite",
+      "type": "formule",
+      "recto": "Comment obtient-on une équation cartésienne d'une droite dont on connaît un point $A$ et un vecteur directeur $\\vec{u}\\left(\\alpha\\,;\\,\\beta\\right)$ ?",
+      "verso": "On écrit que le déterminant de $\\overrightarrow{AM}$ et de $\\vec{u}$ est nul, pour $M\\left(x\\,;\\,y\\right)$ quelconque : $\\beta\\left(x - x_{A}\\right) - \\alpha\\left(y - y_{A}\\right) = 0$, puis on développe et l'on range sous la forme $ax + by + c = 0$.",
+      "difficulte": 2,
+      "tags": ["equation-cartesienne", "determinant"]
+    },
+    {
+      "id": "2C-CH09-010",
+      "lecon": "Equation cartésienne d'une droite",
+      "type": "formule",
+      "recto": "Pourquoi l'équation $ax + by + c = 0$ exige-t-elle que $a$ et $b$ ne soient pas tous les deux nuls ?",
+      "verso": "Sinon l'égalité se réduirait à $c = 0$, vraie pour tout le plan si $c$ est nul et pour aucun point sinon : l'ensemble obtenu ne serait pas une droite. Cette condition garantit aussi que $\\vec{u}\\left(-b\\,;\\,a\\right)$ n'est pas le vecteur nul.",
+      "difficulte": 2,
+      "tags": ["equation-cartesienne", "condition"]
+    },
+    {
+      "id": "2C-CH09-011",
+      "lecon": "Equation cartésienne d'une droite",
+      "type": "definition",
+      "recto": "Que décrit l'équation $ax + by + c = 0$ lorsque le coefficient $b$ est nul ?",
+      "verso": "Une droite verticale, d'équation $x = -\\dfrac{c}{a}$, dirigée par $\\left(0\\,;\\,a\\right)$. Une telle droite n'a pas de coefficient directeur : la forme générale décrit donc toutes les droites, alors que $y = mx + p$ en laisse échapper une famille.",
+      "difficulte": 3,
+      "tags": ["droite-verticale", "equation-cartesienne", "cas-particulier"]
+    },
+    {
+      "id": "2C-CH09-012",
+      "lecon": "Parallélisme et orthogonalité de deux droites",
+      "type": "formule",
+      "recto": "Quel calcul caractérise le parallélisme de deux droites de vecteurs directeurs $\\vec{u}$ et $\\vec{u}'$ ?",
+      "verso": "Le déterminant : les droites sont parallèles si et seulement si $\\det\\left(\\vec{u}\\,;\\,\\vec{u}'\\right) = 0$, c'est-à-dire si $\\vec{u}$ et $\\vec{u}'$ sont colinéaires. Avec des équations réduites, cela revient à $m = m'$.",
+      "difficulte": 1,
+      "tags": ["parallelisme", "determinant"]
+    },
+    {
+      "id": "2C-CH09-013",
+      "lecon": "Parallélisme et orthogonalité de deux droites",
+      "type": "formule",
+      "recto": "Quel calcul caractérise la perpendicularité de deux droites dans un repère orthonormé ?",
+      "verso": "Le produit scalaire : les droites sont perpendiculaires si et seulement si $\\vec{u}\\cdot\\vec{u}' = 0$. Avec des coefficients directeurs, cela revient à $m \\times m' = -1$, mais cette forme suppose qu'aucune des deux droites n'est verticale.",
+      "difficulte": 1,
+      "tags": ["orthogonalite", "produit-scalaire"]
+    },
+    {
+      "id": "2C-CH09-014",
+      "lecon": "Parallélisme et orthogonalité de deux droites",
+      "type": "definition",
+      "recto": "Quelle confusion guette lorsqu'on teste par le calcul la position de deux droites ?",
+      "verso": "Echanger les deux outils. Le déterminant $xy' - yx'$, avec un moins et des coordonnées croisées, teste le parallélisme ; le produit scalaire $xx' + yy'$, avec un plus et sans croisement, teste la perpendicularité.",
+      "difficulte": 3,
+      "tags": ["determinant", "produit-scalaire", "piege"]
+    },
+    {
+      "id": "2C-CH09-015",
+      "lecon": "Parallélisme et orthogonalité de deux droites",
+      "type": "formule",
+      "recto": "Quelles sont les trois positions relatives possibles de deux droites du plan ?",
+      "verso": "Sécantes, quand le déterminant des vecteurs directeurs n'est pas nul : un seul point commun. Strictement parallèles : aucun point commun. Confondues, quand les équations sont proportionnelles : tous les points communs. Deux droites confondues sont parallèles.",
+      "difficulte": 2,
+      "tags": ["position-relative", "parallelisme"]
+    },
+    {
+      "id": "2C-CH09-016",
+      "lecon": "Barycentre de deux points pondérés",
+      "type": "definition",
+      "recto": "Comment définit-on le barycentre de deux points pondérés $(A\\,;\\,a)$ et $(B\\,;\\,b)$ ?",
+      "verso": "C'est l'unique point $G$ tel que $a\\overrightarrow{GA} + b\\overrightarrow{GB} = \\vec{0}$, et il n'existe que si $a + b \\ne 0$. Un point pondéré est un couple formé d'un point et d'un réel appelé coefficient.",
+      "difficulte": 1,
+      "tags": ["barycentre", "definition"]
+    },
+    {
+      "id": "2C-CH09-017",
+      "lecon": "Barycentre de deux points pondérés",
+      "type": "formule",
+      "recto": "Quelles sont les coordonnées du barycentre $G$ de $(A\\,;\\,a)$ et $(B\\,;\\,b)$ ?",
+      "verso": "$x_{G} = \\dfrac{a\\,x_{A} + b\\,x_{B}}{a + b}$ et $y_{G} = \\dfrac{a\\,y_{A} + b\\,y_{B}}{a + b}$, sous la condition $a + b \\ne 0$. Ce sont les moyennes pondérées des coordonnées, comme une moyenne de notes affectées de coefficients.",
+      "difficulte": 1,
+      "tags": ["barycentre", "coordonnees", "moyenne-ponderee"]
+    },
+    {
+      "id": "2C-CH09-018",
+      "lecon": "Barycentre de deux points pondérés",
+      "type": "formule",
+      "recto": "Quelle relation donne la position du barycentre $G$ de $(A\\,;\\,a)$ et $(B\\,;\\,b)$ sur la droite $(AB)$ ?",
+      "verso": "$\\overrightarrow{AG} = \\dfrac{b}{a + b}\\overrightarrow{AB}$ : c'est le coefficient de l'autre point qui commande la distance depuis $A$. Le point $G$ est toujours sur $(AB)$, et sur $[AB]$ lorsque $a$ et $b$ sont de même signe.",
+      "difficulte": 2,
+      "tags": ["barycentre", "position", "alignement"]
+    },
+    {
+      "id": "2C-CH09-019",
+      "lecon": "Barycentre de deux points pondérés",
+      "type": "definition",
+      "recto": "Pourquoi le barycentre de $(A\\,;\\,2)$ et $(B\\,;\\,-2)$ n'existe-t-il pas ?",
+      "verso": "Parce que la somme des coefficients est nulle et que les coordonnées s'obtiennent en divisant par cette somme. La condition porte sur la somme, non sur chaque coefficient : $(A\\,;\\,-2)$ et $(B\\,;\\,3)$, de somme $1$, donnent bien un barycentre.",
+      "difficulte": 3,
+      "tags": ["barycentre", "condition-existence", "piege"]
+    },
+    {
+      "id": "2C-CH09-020",
+      "lecon": "Barycentre de deux points pondérés",
+      "type": "formule",
+      "recto": "Que devient le barycentre lorsqu'on multiplie tous les coefficients par un même nombre non nul ?",
+      "verso": "Il ne change pas : seul le rapport des coefficients compte. Le barycentre de $(A\\,;\\,6)$ et $(B\\,;\\,2)$ est celui de $(A\\,;\\,3)$ et $(B\\,;\\,1)$. On peut donc simplifier les coefficients avant tout calcul.",
+      "difficulte": 2,
+      "tags": ["barycentre", "coefficients-proportionnels"]
+    },
+    {
+      "id": "2C-CH09-021",
+      "lecon": "Barycentre de trois et quatre points ; associativité",
+      "type": "formule",
+      "recto": "Quelles sont les coordonnées du barycentre de trois points pondérés $(A\\,;\\,a)$, $(B\\,;\\,b)$ et $(C\\,;\\,c)$ ?",
+      "verso": "$x_{G} = \\dfrac{a\\,x_{A} + b\\,x_{B} + c\\,x_{C}}{a + b + c}$, et de même pour $y_{G}$, sous la condition $a + b + c \\ne 0$. La structure reste la somme des coordonnées pondérées divisée par la somme des coefficients.",
+      "difficulte": 2,
+      "tags": ["barycentre", "trois-points", "coordonnees"]
+    },
+    {
+      "id": "2C-CH09-022",
+      "lecon": "Barycentre de trois et quatre points ; associativité",
+      "type": "formule",
+      "recto": "Qu'affirme l'associativité du barycentre de trois points pondérés ?",
+      "verso": "Si $a + b \\ne 0$ et si $I$ est le barycentre partiel de $(A\\,;\\,a)$ et $(B\\,;\\,b)$, alors le barycentre des trois points est celui de $(I\\,;\\,a + b)$ et $(C\\,;\\,c)$. Le point partiel reçoit la somme des coefficients, jamais $1$.",
+      "difficulte": 2,
+      "tags": ["associativite", "barycentre"]
+    },
+    {
+      "id": "2C-CH09-023",
+      "lecon": "Barycentre de trois et quatre points ; associativité",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on isobarycentre d'un système de points pondérés ?",
+      "verso": "Leur barycentre lorsque tous les coefficients sont égaux. Pour deux points, c'est le milieu du segment ; pour trois points non alignés, c'est le centre de gravité du triangle, point de concours des trois médianes.",
+      "difficulte": 1,
+      "tags": ["isobarycentre", "centre-de-gravite"]
+    },
+    {
+      "id": "2C-CH09-024",
+      "lecon": "Utilisation du barycentre",
+      "type": "formule",
+      "recto": "Comment le barycentre permet-il de démontrer que trois points sont alignés ?",
+      "verso": "Le barycentre de $(A\\,;\\,a)$ et $(B\\,;\\,b)$ appartient toujours à la droite $(AB)$, puisque $\\overrightarrow{AG} = \\dfrac{b}{a + b}\\overrightarrow{AB}$. Il suffit de reconnaître que l'un des trois points est barycentre des deux autres, même sans repère.",
+      "difficulte": 2,
+      "tags": ["barycentre", "alignement", "demonstration"]
+    },
+    {
+      "id": "2C-CH09-025",
+      "lecon": "Utilisation du barycentre",
+      "type": "definition",
+      "recto": "De quel côté se place le barycentre lorsque les deux coefficients diffèrent ?",
+      "verso": "Du côté du point de plus grand coefficient, comme sur un levier. Pour $(A\\,;\\,2)$ et $(B\\,;\\,1)$, le point $G$ est au tiers de $[AB]$ depuis $A$. Un barycentre trouvé près du point le plus léger signale un échange de coefficients.",
+      "difficulte": 3,
+      "tags": ["barycentre", "controle", "piege"]
+    },
+    {
+      "id": "2C-CH09-026",
+      "lecon": "Utilisation du barycentre",
+      "type": "formule",
+      "recto": "A quoi se réduit $a\\,MA^{2} + b\\,MB^{2}$ lorsque $G$ est le barycentre de $(A\\,;\\,a)$ et $(B\\,;\\,b)$ ?",
+      "verso": "A $\\left(a + b\\right)MG^{2} + a\\,GA^{2} + b\\,GB^{2}$, et ceci pour tout point $M$. Chercher les points tels que cette somme vaille $k$ revient donc à fixer $MG^{2}$ : l'ensemble est un cercle de centre $G$, un point, ou l'ensemble vide.",
+      "difficulte": 3,
+      "tags": ["barycentre", "ensemble-de-points", "reduction"]
+    },
+    {
+      "id": "2C-CH09-027",
+      "lecon": "Equation d'un cercle et intersection avec une droite",
+      "type": "formule",
+      "recto": "Quelle est l'équation du cercle de centre $\\Omega\\left(a\\,;\\,b\\right)$ et de rayon $r$ dans un repère orthonormé ?",
+      "verso": "$\\left(x - a\\right)^{2} + \\left(y - b\\right)^{2} = r^{2}$. C'est la traduction de $\\Omega M = r$, élevée au carré pour supprimer la racine, ce qui est permis car les deux membres sont positifs. Cette écriture est la forme canonique.",
+      "difficulte": 1,
+      "tags": ["cercle", "equation", "forme-canonique"]
+    },
+    {
+      "id": "2C-CH09-028",
+      "lecon": "Equation d'un cercle et intersection avec une droite",
+      "type": "definition",
+      "recto": "Pourquoi le centre du cercle $\\left(x - a\\right)^{2} + \\left(y - b\\right)^{2} = r^{2}$ n'est-il pas $\\left(-a\\,;\\,-b\\right)$ ?",
+      "verso": "Parce que le centre est le point qui annule les deux parenthèses, donc $\\Omega\\left(a\\,;\\,b\\right)$. Ainsi $\\left(x + 2\\right)^{2} + \\left(y - 3\\right)^{2} = 16$ a pour centre $\\left(-2\\,;\\,3\\right)$ et pour rayon $4$, le second membre valant $r^{2}$.",
+      "difficulte": 3,
+      "tags": ["cercle", "centre", "piege"]
+    },
+    {
+      "id": "2C-CH09-029",
+      "lecon": "Equation d'un cercle et intersection avec une droite",
+      "type": "formule",
+      "recto": "Que peut représenter une équation de la forme $x^{2} + y^{2} - 2ax - 2by + c = 0$ ?",
+      "verso": "En complétant les carrés, elle s'écrit $\\left(x - a\\right)^{2} + \\left(y - b\\right)^{2} = a^{2} + b^{2} - c$. Si ce nombre est strictement positif, c'est un cercle de centre $\\Omega\\left(a\\,;\\,b\\right)$ ; s'il est nul, le seul point $\\Omega$ ; s'il est négatif, l'ensemble vide.",
+      "difficulte": 3,
+      "tags": ["cercle", "completion-des-carres", "discussion"]
+    },
+    {
+      "id": "2C-CH09-030",
+      "lecon": "Equation d'un cercle et intersection avec une droite",
+      "type": "formule",
+      "recto": "Quelle égalité caractérise les points du cercle de diamètre $[AB]$ ?",
+      "verso": "$\\overrightarrow{MA}\\cdot\\overrightarrow{MB} = 0$ : ou bien $M$ est confondu avec $A$ ou $B$, ou bien le triangle $AMB$ est rectangle en $M$. Cette écriture donne l'équation du cercle sans calculer le milieu ni la longueur $AB$.",
+      "difficulte": 2,
+      "tags": ["cercle", "diametre", "produit-scalaire"]
+    },
+    {
+      "id": "2C-CH09-031",
+      "lecon": "Equation d'un cercle et intersection avec une droite",
+      "type": "formule",
+      "recto": "Comment détermine-t-on les points communs à une droite et à un cercle ?",
+      "verso": "On remplace, dans l'équation du cercle, l'expression tirée de l'équation de la droite : il vient une équation du second degré. Deux solutions donnent une droite sécante, une solution une tangente, aucune solution une droite extérieure.",
+      "difficulte": 2,
+      "tags": ["cercle", "intersection", "second-degre"]
+    },
+    {
+      "id": "2C-CH09-032",
+      "lecon": "Orientation du plan et mesure principale",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on orienter le plan ?",
+      "verso": "C'est choisir l'un des deux sens de rotation comme sens positif. On retient toujours le sens direct, dit aussi sens trigonométrique, contraire à celui des aiguilles d'une montre ; le sens opposé est dit indirect.",
+      "difficulte": 1,
+      "tags": ["orientation", "sens-direct"]
+    },
+    {
+      "id": "2C-CH09-033",
+      "lecon": "Orientation du plan et mesure principale",
+      "type": "definition",
+      "recto": "Pourquoi un angle orienté possède-t-il une infinité de mesures ?",
+      "verso": "Parce qu'un tour complet ramène à la même direction : si $\\alpha$ est une mesure de $\\left(\\vec{u}, \\vec{v}\\right)$, alors $\\alpha + 2k\\pi$ en est une aussi, pour tout entier relatif $k$. On dit que la mesure est définie modulo $2\\pi$.",
+      "difficulte": 2,
+      "tags": ["angle-oriente", "modulo"]
+    },
+    {
+      "id": "2C-CH09-034",
+      "lecon": "Orientation du plan et mesure principale",
+      "type": "formule",
+      "recto": "Qu'appelle-t-on mesure principale d'un angle orienté ?",
+      "verso": "L'unique mesure appartenant à l'intervalle $\\left]-\\pi\\,;\\,\\pi\\right]$. On l'obtient en ajoutant ou en retranchant $2\\pi$ autant de fois qu'il le faut. La borne $-\\pi$ est exclue : un demi-tour a pour mesure principale $\\pi$.",
+      "difficulte": 2,
+      "tags": ["mesure-principale", "angle-oriente"]
+    },
+    {
+      "id": "2C-CH09-035",
+      "lecon": "Orientation du plan et mesure principale",
+      "type": "definition",
+      "recto": "Quelle différence sépare un angle orienté d'un angle géométrique ?",
+      "verso": "L'angle géométrique est une grandeur positive, comprise entre $0$ et $\\pi$, sans signe. L'angle orienté tient compte du sens de rotation : il porte un signe, il peut être négatif, et il est défini modulo $2\\pi$.",
+      "difficulte": 3,
+      "tags": ["angle-oriente", "angle-geometrique", "distinction"]
+    },
+    {
+      "id": "2C-CH09-036",
+      "lecon": "Propriétés des angles orientés",
+      "type": "formule",
+      "recto": "Qu'énonce la relation de Chasles pour les angles orientés ?",
+      "verso": "$\\left(\\vec{u}, \\vec{v}\\right) + \\left(\\vec{v}, \\vec{w}\\right) = \\left(\\vec{u}, \\vec{w}\\right)$, modulo $2\\pi$ : enchaîner deux rotations revient à additionner leurs mesures. Le vecteur du milieu figure une fois à l'arrivée, une fois au départ, puis disparaît.",
+      "difficulte": 1,
+      "tags": ["chasles", "angle-oriente"]
+    },
+    {
+      "id": "2C-CH09-037",
+      "lecon": "Propriétés des angles orientés",
+      "type": "formule",
+      "recto": "Que devient la mesure d'un angle orienté lorsqu'on échange les deux vecteurs ?",
+      "verso": "Elle change de signe : $\\left(\\vec{v}, \\vec{u}\\right) = -\\left(\\vec{u}, \\vec{v}\\right)$, modulo $2\\pi$. On le retrouve en prenant $\\vec{w} = \\vec{u}$ dans la relation de Chasles, puisque $\\left(\\vec{u}, \\vec{u}\\right) = 0$ et $\\left(\\vec{u}, -\\vec{u}\\right) = \\pi$.",
+      "difficulte": 2,
+      "tags": ["angle-oriente", "changement-ordre"]
+    },
+    {
+      "id": "2C-CH09-038",
+      "lecon": "Propriétés des angles orientés",
+      "type": "definition",
+      "recto": "Pourquoi peut-on parler du cosinus d'un angle orienté sans préciser la mesure choisie ?",
+      "verso": "Parce que deux mesures diffèrent d'un multiple de $2\\pi$ et que les fonctions cosinus et sinus sont périodiques de période $2\\pi$. Toutes les mesures d'un même angle donnent donc le même cosinus et le même sinus.",
+      "difficulte": 3,
+      "tags": ["angle-oriente", "cosinus", "periodicite"]
+    }
+  ]
+}

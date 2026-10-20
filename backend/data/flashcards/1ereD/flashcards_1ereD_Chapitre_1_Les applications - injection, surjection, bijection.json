@@ -1,0 +1,350 @@
+{
+  "niveau": "1ère D",
+  "chapitre": "Chapitre 1 : Les applications : injection, surjection, bijection",
+  "source": "maths/1ereD/Chapitre_1_Applications",
+  "nombre_cartes": 38,
+  "cartes": [
+    {
+      "id": "1D-CH01-001",
+      "lecon": "Applications injective, surjective, bijective",
+      "type": "definition",
+      "recto": "Qu'est-ce qu'une application $f$ de $E$ vers $F$ ?",
+      "verso": "Une correspondance qui, à chaque élément de $E$, associe un et un seul élément de $F$. Deux conditions sont donc à contrôler : l'existence, aucun élément de $E$ ne reste sans image, et l'unicité, aucun n'a deux images.",
+      "difficulte": 1,
+      "tags": ["application", "definition", "existence-unicite"]
+    },
+    {
+      "id": "1D-CH01-002",
+      "lecon": "Applications injective, surjective, bijective",
+      "type": "definition",
+      "recto": "Pourquoi la correspondance $x\\mapsto\\dfrac{1}{x-2}$ n'est-elle pas une application de $\\mathbb{R}$ vers $\\mathbb{R}$ ?",
+      "verso": "Parce que l'élément $2$ du départ n'aurait pas d'image : la condition d'existence est en défaut. Elle devient une application de $\\mathbb{R}\\setminus\\{2\\}$ vers $\\mathbb{R}$ : une application, c'est une formule accompagnée de ses deux ensembles.",
+      "difficulte": 2,
+      "tags": ["application", "ensemble-de-depart", "piege"]
+    },
+    {
+      "id": "1D-CH01-003",
+      "lecon": "Applications injective, surjective, bijective",
+      "type": "definition",
+      "recto": "Quelle implication traduit l'injectivité d'une application $f$ ?",
+      "verso": "$f(a)=f(b) \\Longrightarrow a=b$ : deux éléments distincts du départ ont toujours des images distinctes. Autrement dit, chaque élément de l'ensemble d'arrivée a au plus un antécédent.",
+      "difficulte": 1,
+      "tags": ["injective", "definition", "antecedent"]
+    },
+    {
+      "id": "1D-CH01-004",
+      "lecon": "Applications injective, surjective, bijective",
+      "type": "definition",
+      "recto": "Pourquoi démontre-t-on l'injectivité en partant de $f(a)=f(b)$ plutôt que de $a\\ne b$ ?",
+      "verso": "Parce que la première forme part d'une égalité, donc d'une équation que l'on sait transformer par calculs, alors que la seconde part d'une inégalité, avec laquelle on ne peut presque rien faire. Les deux disent pourtant la même chose.",
+      "difficulte": 3,
+      "tags": ["injective", "demonstration"]
+    },
+    {
+      "id": "1D-CH01-005",
+      "lecon": "Applications injective, surjective, bijective",
+      "type": "definition",
+      "recto": "Quand dit-on qu'une application $f$ de $E$ vers $F$ est surjective ?",
+      "verso": "Lorsque tout élément $y$ de $F$ a au moins un antécédent, c'est-à-dire lorsque l'équation $f(x)=y$ admet au moins une solution dans $E$, quel que soit $y$ choisi dans $F$.",
+      "difficulte": 1,
+      "tags": ["surjective", "definition", "antecedent"]
+    },
+    {
+      "id": "1D-CH01-006",
+      "lecon": "Applications injective, surjective, bijective",
+      "type": "definition",
+      "recto": "Quelles deux qualités réunit une application bijective ?",
+      "verso": "L'injectivité et la surjectivité à la fois. Tout élément de l'ensemble d'arrivée a alors exactement un antécédent : c'est un appariement parfait, sans doublon et sans place vide.",
+      "difficulte": 1,
+      "tags": ["bijective", "definition"]
+    },
+    {
+      "id": "1D-CH01-007",
+      "lecon": "Applications injective, surjective, bijective",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on l'ensemble image $f(E)$ d'une application $f$ de $E$ vers $F$ ?",
+      "verso": "L'ensemble de toutes les images des éléments de $E$ : $f(E)=\\{f(x)\\ ;\\ x\\in E\\}$. C'est la partie de $F$ réellement atteinte par $f$, et l'on a toujours $f(E)\\subset F$.",
+      "difficulte": 2,
+      "tags": ["ensemble-image", "definition"]
+    },
+    {
+      "id": "1D-CH01-008",
+      "lecon": "Applications injective, surjective, bijective",
+      "type": "formule",
+      "recto": "Comment choisir l'ensemble d'arrivée $B$ pour qu'une application soit surjective de $E$ vers $B$ ?",
+      "verso": "On prend $B=f(E)$, car $f$ est surjective si et seulement si $f(E)=F$. Rendre une application surjective, ce n'est pas la changer, c'est rétrécir l'arrivée jusqu'à ce qu'elle colle à ce que l'application produit.",
+      "difficulte": 2,
+      "tags": ["surjective", "ensemble-image"]
+    },
+    {
+      "id": "1D-CH01-009",
+      "lecon": "Applications injective, surjective, bijective",
+      "type": "definition",
+      "recto": "Que désigne la notation $f^{-1}(B)$ lorsque $B$ est une partie de l'ensemble d'arrivée ?",
+      "verso": "L'ensemble des éléments du départ dont l'image tombe dans $B$, autrement dit l'ensemble des antécédents des éléments de $B$. Cette notation ne suppose pas $f$ bijective, et cet ensemble peut être vide : pour $f(x)=x^{2}$, $f^{-1}(\\{-4\\})=\\varnothing$.",
+      "difficulte": 3,
+      "tags": ["antecedent", "notation", "piege"]
+    },
+    {
+      "id": "1D-CH01-010",
+      "lecon": "Applications injective, surjective, bijective",
+      "type": "definition",
+      "recto": "Lequel des deux ensembles annoncés peut faire apparaître ou disparaître la surjectivité ?",
+      "verso": "L'ensemble d'arrivée. L'injectivité ne dépend que du départ et de la formule ; la surjectivité dépend de l'arrivée choisie. Ainsi $x\\mapsto x^{2}$ n'est pas surjective de $\\mathbb{R}$ vers $\\mathbb{R}$, mais elle l'est de $\\mathbb{R}$ vers $[0\\,;+\\infty[$.",
+      "difficulte": 3,
+      "tags": ["surjective", "ensemble-darrivee", "piege"]
+    },
+    {
+      "id": "1D-CH01-011",
+      "lecon": "Applications injective, surjective, bijective",
+      "type": "formule",
+      "recto": "Comment rend-on injective une application qui ne l'est pas ?",
+      "verso": "En restreignant l'ensemble de départ à un intervalle où la fonction est strictement monotone. Ainsi $x\\mapsto x^{2}$, non injective sur $\\mathbb{R}$, le devient sur $[0\\,;+\\infty[$, où les couples de nombres opposés ont disparu.",
+      "difficulte": 2,
+      "tags": ["restriction", "injective", "monotonie"]
+    },
+    {
+      "id": "1D-CH01-012",
+      "lecon": "Applications injective, surjective, bijective",
+      "type": "formule",
+      "recto": "Comment lit-on la nature d'une application sur sa courbe, à l'aide des droites horizontales ?",
+      "verso": "On fait glisser une horizontale et l'on compte les points de rencontre : si toute horizontale coupe la courbe au plus une fois, $f$ est injective ; au moins une fois, elle est surjective ; exactement une fois, elle est bijective.",
+      "difficulte": 2,
+      "tags": ["lecture-graphique", "injective", "surjective"]
+    },
+    {
+      "id": "1D-CH01-013",
+      "lecon": "Applications injective, surjective, bijective",
+      "type": "formule",
+      "recto": "Que peut-on dire des effectifs de deux ensembles finis reliés par une bijection ?",
+      "verso": "Ils ont exactement le même nombre d'éléments. Une application injective de $E$ vers $F$ exige déjà que $E$ n'ait pas plus d'éléments que $F$, et une application surjective qu'il n'en ait pas moins.",
+      "difficulte": 2,
+      "tags": ["ensembles-finis", "bijective", "denombrement"]
+    },
+    {
+      "id": "1D-CH01-014",
+      "lecon": "L'équation $f(x)=\\lambda$",
+      "type": "definition",
+      "recto": "Que cherche-t-on exactement en résolvant l'équation $f(x)=\\lambda$ ?",
+      "verso": "Tous les antécédents de $\\lambda$ par $f$. Graphiquement, ce sont les abscisses des points d'intersection de la courbe de $f$ avec la droite horizontale d'équation $y=\\lambda$.",
+      "difficulte": 1,
+      "tags": ["equation", "antecedent", "lecture-graphique"]
+    },
+    {
+      "id": "1D-CH01-015",
+      "lecon": "L'équation $f(x)=\\lambda$",
+      "type": "formule",
+      "recto": "Combien de solutions a l'équation $f(x)=\\lambda$ selon la nature de l'application $f$ ?",
+      "verso": "Au plus une si $f$ est injective ; au moins une, pour tout $\\lambda$ de l'ensemble d'arrivée, si $f$ est surjective ; exactement une, pour tout $\\lambda$, si $f$ est bijective.",
+      "difficulte": 1,
+      "tags": ["equation", "nombre-de-solutions"]
+    },
+    {
+      "id": "1D-CH01-016",
+      "lecon": "L'équation $f(x)=\\lambda$",
+      "type": "formule",
+      "recto": "Combien de solutions a $f(x)=\\lambda$ sur un intervalle où $f$ est strictement monotone ?",
+      "verso": "Au plus une, car une fonction strictement monotone sur un intervalle y est injective : si $a<b$, alors $f(a)<f(b)$ pour une fonction strictement croissante, donc les deux images ne peuvent jamais être égales.",
+      "difficulte": 2,
+      "tags": ["monotonie", "injective", "nombre-de-solutions"]
+    },
+    {
+      "id": "1D-CH01-017",
+      "lecon": "L'équation $f(x)=\\lambda$",
+      "type": "definition",
+      "recto": "Pourquoi la croissance au sens large ne suffit-elle pas à assurer l'injectivité ?",
+      "verso": "Parce que la courbe peut comporter un palier : sur tout le palier, une infinité d'abscisses donnent la même image, et l'équation $f(x)=\\lambda$ y a une infinité de solutions. C'est bien la croissance stricte qui est exigée.",
+      "difficulte": 3,
+      "tags": ["monotonie", "injective", "piege"]
+    },
+    {
+      "id": "1D-CH01-018",
+      "lecon": "L'équation $f(x)=\\lambda$",
+      "type": "formule",
+      "recto": "Comment discute-t-on le nombre de solutions de $f(x)=\\lambda$ pour une fonction non monotone ?",
+      "verso": "On découpe l'intervalle d'étude en intervalles de monotonie, on compte les solutions sur chacun, puis on additionne. Le tableau de variation fournit ce découpage ainsi que les valeurs atteintes sur chaque morceau.",
+      "difficulte": 2,
+      "tags": ["discussion", "tableau-de-variation"]
+    },
+    {
+      "id": "1D-CH01-019",
+      "lecon": "L'équation $f(x)=\\lambda$",
+      "type": "formule",
+      "recto": "Combien de solutions a l'équation $x^{2}=\\lambda$ selon le réel $\\lambda$ ?",
+      "verso": "Aucune pour $\\lambda<0$ ; une seule, $x=0$, pour $\\lambda=0$ ; deux, $x=\\sqrt{\\lambda}$ et $x=-\\sqrt{\\lambda}$, pour $\\lambda>0$. La valeur charnière est le minimum de la fonction carré.",
+      "difficulte": 2,
+      "tags": ["discussion", "fonction-carre"]
+    },
+    {
+      "id": "1D-CH01-020",
+      "lecon": "L'équation $f(x)=\\lambda$",
+      "type": "definition",
+      "recto": "Pourquoi « l'équation $f(x)=\\lambda$ a une solution » ne signifie-t-il pas qu'elle en a une seule ?",
+      "verso": "Parce qu'en mathématiques cela veut seulement dire qu'il en existe au moins une, contrairement au français courant. Il faut donc toujours préciser combien de solutions, et pour quelles valeurs de $\\lambda$.",
+      "difficulte": 3,
+      "tags": ["equation", "vocabulaire", "piege"]
+    },
+    {
+      "id": "1D-CH01-021",
+      "lecon": "Application réciproque d'une bijection",
+      "type": "definition",
+      "recto": "Quelle condition une application doit-elle remplir pour admettre une application réciproque ?",
+      "verso": "Elle doit être bijective de $E$ vers $F$. Chaque $y$ de $F$ a alors un antécédent et un seul, et $f^{-1}$ est l'application de $F$ vers $E$ qui à chaque $y$ associe cet unique antécédent.",
+      "difficulte": 1,
+      "tags": ["reciproque", "bijective", "definition"]
+    },
+    {
+      "id": "1D-CH01-022",
+      "lecon": "Application réciproque d'une bijection",
+      "type": "formule",
+      "recto": "Quelle équivalence définit l'application réciproque $f^{-1}$ d'une bijection $f$ ?",
+      "verso": "$f^{-1}(y)=x\\iff f(x)=y$. Les deux applications décrivent la même correspondance, parcourue en sens contraire : le départ et l'arrivée ont simplement échangé leurs rôles.",
+      "difficulte": 1,
+      "tags": ["reciproque", "equivalence"]
+    },
+    {
+      "id": "1D-CH01-023",
+      "lecon": "Application réciproque d'une bijection",
+      "type": "definition",
+      "recto": "Pourquoi une application non injective ne peut-elle pas admettre de réciproque ?",
+      "verso": "Parce qu'un élément de l'arrivée aurait plusieurs antécédents : la correspondance inverse ne serait pas une application, faute d'unicité. Sans surjectivité, elle échouerait de l'autre côté, faute d'existence.",
+      "difficulte": 2,
+      "tags": ["reciproque", "injective", "surjective"]
+    },
+    {
+      "id": "1D-CH01-024",
+      "lecon": "Application réciproque d'une bijection",
+      "type": "definition",
+      "recto": "Que faut-il établir avant de calculer la formule d'une réciproque ?",
+      "verso": "La bijectivité de $f$, et elle seule d'abord. Ecrire une formule de réciproque sans avoir justifié la bijectivité, c'est calculer quelque chose dont on n'a pas prouvé l'existence.",
+      "difficulte": 2,
+      "tags": ["reciproque", "redaction", "methode"]
+    },
+    {
+      "id": "1D-CH01-025",
+      "lecon": "Application réciproque d'une bijection",
+      "type": "formule",
+      "recto": "Par rapport à quelle droite les courbes de $f$ et de $f^{-1}$ sont-elles symétriques ?",
+      "verso": "Par rapport à la droite d'équation $y=x$, dans un repère orthonormé. Le point $M(a\\,;b)$ de la courbe de $f$ a pour symétrique $M'(b\\,;a)$, qui appartient à la courbe de $f^{-1}$.",
+      "difficulte": 1,
+      "tags": ["reciproque", "symetrie", "lecture-graphique"]
+    },
+    {
+      "id": "1D-CH01-026",
+      "lecon": "Application réciproque d'une bijection",
+      "type": "formule",
+      "recto": "Quelle est la réciproque de l'application affine $x\\mapsto ax+b$ avec $a\\ne 0$ ?",
+      "verso": "$f^{-1}(x)=\\dfrac{x-b}{a}$. Toute application affine non constante est bijective de $\\mathbb{R}$ vers $\\mathbb{R}$, et l'on défait ses opérations dans l'ordre inverse : on retranche $b$, puis on divise par $a$.",
+      "difficulte": 2,
+      "tags": ["reciproque", "affine"]
+    },
+    {
+      "id": "1D-CH01-027",
+      "lecon": "Application réciproque d'une bijection",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on une involution ?",
+      "verso": "Une application qui est sa propre réciproque, c'est-à-dire telle que $f^{-1}=f$. Ainsi $x\\mapsto\\dfrac{1}{x}$ et $x\\mapsto\\dfrac{x+2}{x-1}$ sont des involutions.",
+      "difficulte": 2,
+      "tags": ["involution", "reciproque"]
+    },
+    {
+      "id": "1D-CH01-028",
+      "lecon": "Application réciproque d'une bijection",
+      "type": "definition",
+      "recto": "Quelle différence sépare la réciproque $f^{-1}$ de l'inverse $\\dfrac{1}{f}$ ?",
+      "verso": "Le $-1$ placé en exposant du nom de l'application désigne la réciproque ; placé en exposant d'un nombre, il désigne l'inverse. Pour $f(x)=8x+15$, $f^{-1}(x)=\\dfrac{x-15}{8}$ alors que $\\dfrac{1}{f(x)}=\\dfrac{1}{8x+15}$.",
+      "difficulte": 3,
+      "tags": ["reciproque", "inverse", "piege"]
+    },
+    {
+      "id": "1D-CH01-029",
+      "lecon": "Application réciproque d'une bijection",
+      "type": "formule",
+      "recto": "De quelle bijection la fonction racine carrée est-elle la réciproque ?",
+      "verso": "De la fonction carré restreinte aux nombres positifs : $x\\mapsto x^{2}$ est bijective de $[0\\,;+\\infty[$ vers $[0\\,;+\\infty[$, de réciproque $x\\mapsto\\sqrt{x}$. C'est pourquoi $\\sqrt{x^{2}}$ ne vaut $x$ que si $x$ est positif.",
+      "difficulte": 2,
+      "tags": ["racine-carree", "reciproque", "restriction"]
+    },
+    {
+      "id": "1D-CH01-030",
+      "lecon": "Composition de deux applications",
+      "type": "formule",
+      "recto": "Comment se définit la composée $g\\circ f$ de deux applications ?",
+      "verso": "Par $(g\\circ f)(x)=g\\big(f(x)\\big)$ : on applique d'abord $f$, puis $g$. Si $f$ va de $E$ vers $F$ et $g$ de $F$ vers $G$, alors $g\\circ f$ va de $E$ vers $G$.",
+      "difficulte": 1,
+      "tags": ["composee", "definition"]
+    },
+    {
+      "id": "1D-CH01-031",
+      "lecon": "Composition de deux applications",
+      "type": "definition",
+      "recto": "Dans l'écriture $g\\circ f$, laquelle des deux applications agit en premier ?",
+      "verso": "Celle qui est écrite à droite, $f$ : c'est elle qui est la plus proche du $x$ dans $g\\big(f(x)\\big)$. La notation suit l'ordre de lecture de la formule, de l'extérieur vers l'intérieur, et non l'ordre des calculs.",
+      "difficulte": 2,
+      "tags": ["composee", "notation", "piege"]
+    },
+    {
+      "id": "1D-CH01-032",
+      "lecon": "Composition de deux applications",
+      "type": "formule",
+      "recto": "Pourquoi ne peut-on pas échanger l'ordre des deux applications dans une composée ?",
+      "verso": "Parce que la composition n'est pas commutative : en général $g\\circ f\\ne f\\circ g$. Avec $f(x)=x-3$ et $g(x)=x^{2}$, on obtient $(x-3)^{2}$ dans un sens et $x^{2}-3$ dans l'autre, soit $4$ et $22$ pour $x=5$.",
+      "difficulte": 2,
+      "tags": ["composee", "commutativite"]
+    },
+    {
+      "id": "1D-CH01-033",
+      "lecon": "Composition de deux applications",
+      "type": "formule",
+      "recto": "Quelle précaution d'écriture s'impose en remplaçant la variable de $g$ par l'expression de $f(x)$ ?",
+      "verso": "Encadrer cette expression tout entière par des parenthèses. Avec $f(x)=x-3$ et $g(x)=x^{2}$, la composée vaut $(x-3)^{2}$, et surtout pas $x-3^{2}$ ni $x^{2}-3^{2}$.",
+      "difficulte": 2,
+      "tags": ["composee", "parentheses", "piege"]
+    },
+    {
+      "id": "1D-CH01-034",
+      "lecon": "Composition de deux applications",
+      "type": "formule",
+      "recto": "Pour quels nombres $x$ la composée $g\\circ f$ est-elle définie ?",
+      "verso": "Pour ceux tels que $f(x)$ existe et appartienne à l'ensemble de définition de $g$. Avec $f(x)=x-5$ et $g(x)=\\sqrt{x}$, la composée n'est définie que sur $[5\\,;+\\infty[$, alors que $f$ l'est sur $\\mathbb{R}$ tout entier.",
+      "difficulte": 2,
+      "tags": ["composee", "ensemble-de-definition"]
+    },
+    {
+      "id": "1D-CH01-035",
+      "lecon": "Composition de deux applications",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on l'application identité d'un ensemble $E$ ?",
+      "verso": "L'application de $E$ vers $E$ qui laisse chaque élément inchangé, notée $\\mathrm{Id}_E$ : $\\mathrm{Id}_E(x)=x$ pour tout $x$ de $E$.",
+      "difficulte": 1,
+      "tags": ["identite", "definition"]
+    },
+    {
+      "id": "1D-CH01-036",
+      "lecon": "Composition de deux applications",
+      "type": "formule",
+      "recto": "Comment prouver que deux applications sont réciproques l'une de l'autre sans résoudre d'équation ?",
+      "verso": "En vérifiant que les deux composées sont les identités. Pour une bijection $f$ de $E$ vers $F$, on a en effet $f^{-1}\\circ f=\\mathrm{Id}_E$ et $f\\circ f^{-1}=\\mathrm{Id}_F$ : deux compositions suffisent donc.",
+      "difficulte": 2,
+      "tags": ["identite", "reciproque", "composee"]
+    },
+    {
+      "id": "1D-CH01-037",
+      "lecon": "Composition de deux applications",
+      "type": "formule",
+      "recto": "Quelle est la réciproque de la composée $g\\circ f$ de deux bijections ?",
+      "verso": "$(g\\circ f)^{-1}=f^{-1}\\circ g^{-1}$, avec inversion de l'ordre : on met les chaussettes puis les chaussures, on enlève les chaussures puis les chaussettes.",
+      "difficulte": 3,
+      "tags": ["composee", "reciproque", "ordre"]
+    },
+    {
+      "id": "1D-CH01-038",
+      "lecon": "Composition de deux applications",
+      "type": "formule",
+      "recto": "Comment repère-t-on la fonction intérieure quand on décompose une fonction en composée ?",
+      "verso": "C'est le calcul que l'on ferait en premier pour évaluer la formule sur un nombre, celui qui touche directement $x$. Pour $h(x)=\\sqrt{3x+1}$, l'intérieure est $f(x)=3x+1$ et l'extérieure $g(x)=\\sqrt{x}$, d'où $h=g\\circ f$.",
+      "difficulte": 2,
+      "tags": ["decomposition", "composee"]
+    }
+  ]
+}

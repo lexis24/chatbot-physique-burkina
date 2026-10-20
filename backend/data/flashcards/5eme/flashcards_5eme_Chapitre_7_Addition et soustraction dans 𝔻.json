@@ -1,0 +1,431 @@
+{
+  "niveau": "5ème",
+  "chapitre": "Chapitre 7 : Addition et soustraction dans $\\mathbb{D}$",
+  "source": "maths/5eme/Chapitre_7_Addition_soustraction_dans_D",
+  "nombre_cartes": 33,
+  "cartes": [
+    {
+      "id": "5E-CH07-001",
+      "lecon": "Les ensembles $\\mathbb{N}$, $\\mathbb{Z}$, $\\mathbb{D}$ ; commutativité de l'addition",
+      "type": "definition",
+      "recto": "Quels nombres contient l'ensemble $\\mathbb{N}$ ?",
+      "verso": "Les entiers naturels $0$, $1$, $2$, $3$, et ainsi de suite : ce sont les nombres qui servent à compter.",
+      "difficulte": 1,
+      "tags": [
+        "ensembles",
+        "entiers-naturels",
+        "definition"
+      ]
+    },
+    {
+      "id": "5E-CH07-002",
+      "lecon": "Les ensembles $\\mathbb{N}$, $\\mathbb{Z}$, $\\mathbb{D}$ ; commutativité de l'addition",
+      "type": "definition",
+      "recto": "Quels nombres contient l'ensemble $\\mathbb{Z}$ ?",
+      "verso": "Les entiers relatifs, c'est-à-dire les entiers naturels et leurs opposés : $\\dots$, $-2$, $-1$, $0$, $+1$, $+2$, $\\dots$",
+      "difficulte": 1,
+      "tags": [
+        "ensembles",
+        "entiers-relatifs",
+        "definition"
+      ]
+    },
+    {
+      "id": "5E-CH07-003",
+      "lecon": "Les ensembles $\\mathbb{N}$, $\\mathbb{Z}$, $\\mathbb{D}$ ; commutativité de l'addition",
+      "type": "definition",
+      "recto": "Quels nombres contient l'ensemble $\\mathbb{D}$ ?",
+      "verso": "Les décimaux relatifs, c'est-à-dire tous les nombres à virgule, positifs ou négatifs, comme $-3{,}5$, $+0{,}75$ ou $-12$.",
+      "difficulte": 2,
+      "tags": [
+        "ensembles",
+        "decimaux-relatifs",
+        "definition"
+      ]
+    },
+    {
+      "id": "5E-CH07-004",
+      "lecon": "Les ensembles $\\mathbb{N}$, $\\mathbb{Z}$, $\\mathbb{D}$ ; commutativité de l'addition",
+      "type": "formule",
+      "recto": "Comment les ensembles $\\mathbb{N}$, $\\mathbb{Z}$ et $\\mathbb{D}$ sont-ils emboîtés les uns dans les autres ?",
+      "verso": "Chacun contient le précédent : tout entier naturel est un entier relatif, et tout entier relatif est un décimal relatif.",
+      "difficulte": 2,
+      "tags": [
+        "ensembles",
+        "inclusion"
+      ]
+    },
+    {
+      "id": "5E-CH07-005",
+      "lecon": "Les ensembles $\\mathbb{N}$, $\\mathbb{Z}$, $\\mathbb{D}$ ; commutativité de l'addition",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on la distance à zéro d'un nombre relatif ?",
+      "verso": "C'est le nombre obtenu en enlevant son signe. La distance à zéro de $-7$ vaut $7$, et celle de $+7$ vaut $7$ également.",
+      "difficulte": 2,
+      "tags": [
+        "relatifs",
+        "distance-a-zero",
+        "definition"
+      ]
+    },
+    {
+      "id": "5E-CH07-006",
+      "lecon": "Les ensembles $\\mathbb{N}$, $\\mathbb{Z}$, $\\mathbb{D}$ ; commutativité de l'addition",
+      "type": "formule",
+      "recto": "Comment additionne-t-on deux nombres relatifs de même signe ?",
+      "verso": "On additionne leurs distances à zéro et on garde le signe commun : $(-5) + (-3) = -8$.",
+      "difficulte": 1,
+      "tags": [
+        "addition",
+        "relatifs",
+        "meme-signe"
+      ]
+    },
+    {
+      "id": "5E-CH07-007",
+      "lecon": "Les ensembles $\\mathbb{N}$, $\\mathbb{Z}$, $\\mathbb{D}$ ; commutativité de l'addition",
+      "type": "formule",
+      "recto": "Comment additionne-t-on deux nombres relatifs de signes contraires ?",
+      "verso": "On retranche la plus petite distance à zéro de la plus grande, et on garde le signe du nombre le plus éloigné de zéro : $(+5) + (-8) = -3$.",
+      "difficulte": 1,
+      "tags": [
+        "addition",
+        "relatifs",
+        "signes-contraires"
+      ]
+    },
+    {
+      "id": "5E-CH07-008",
+      "lecon": "Les ensembles $\\mathbb{N}$, $\\mathbb{Z}$, $\\mathbb{D}$ ; commutativité de l'addition",
+      "type": "formule",
+      "recto": "Que dit la commutativité de l'addition ?",
+      "verso": "On peut changer l'ordre des termes d'une addition sans changer le résultat : $a + b = b + a$. La soustraction, elle, ne le permet pas.",
+      "difficulte": 2,
+      "tags": [
+        "addition",
+        "commutativite"
+      ]
+    },
+    {
+      "id": "5E-CH07-009",
+      "lecon": "Les ensembles $\\mathbb{N}$, $\\mathbb{Z}$, $\\mathbb{D}$ ; commutativité de l'addition",
+      "type": "formule",
+      "recto": "Pourquoi $(-5) + (-3)$ ne vaut-il pas $-2$ ?",
+      "verso": "Parce que les deux signes sont les mêmes : on additionne les distances à zéro au lieu de les retrancher. Le résultat vaut $-8$. On ne retranche que si les signes sont contraires.",
+      "difficulte": 3,
+      "tags": [
+        "addition",
+        "relatifs",
+        "piege"
+      ]
+    },
+    {
+      "id": "5E-CH07-010",
+      "lecon": "Les ensembles $\\mathbb{N}$, $\\mathbb{Z}$, $\\mathbb{D}$ ; commutativité de l'addition",
+      "type": "definition",
+      "recto": "Dans l'écriture $(-5) + (-3)$, comment distingue-t-on le signe d'un nombre du signe de l'opération ?",
+      "verso": "Le premier $-$ appartient au nombre $-5$, le $+$ est l'opération, et le dernier $-$ appartient au nombre $-3$. Les parenthèses servent justement à séparer les deux sortes de signes.",
+      "difficulte": 3,
+      "tags": [
+        "relatifs",
+        "signe",
+        "piege"
+      ]
+    },
+    {
+      "id": "5E-CH07-011",
+      "lecon": "Associativité ; simplification d'écritures",
+      "type": "formule",
+      "recto": "Que dit l'associativité de l'addition ?",
+      "verso": "Dans une addition de plusieurs termes, on peut les regrouper comme on veut sans changer le résultat : $(a + b) + c = a + (b + c)$.",
+      "difficulte": 1,
+      "tags": [
+        "addition",
+        "associativite"
+      ]
+    },
+    {
+      "id": "5E-CH07-012",
+      "lecon": "Associativité ; simplification d'écritures",
+      "type": "formule",
+      "recto": "Comment organise-t-on le calcul d'une longue somme de nombres relatifs ?",
+      "verso": "On regroupe tous les positifs ensemble et tous les négatifs ensemble, puis on combine les deux totaux par une seule addition à signes contraires.",
+      "difficulte": 2,
+      "tags": [
+        "addition",
+        "regroupement",
+        "somme-algebrique"
+      ]
+    },
+    {
+      "id": "5E-CH07-013",
+      "lecon": "Associativité ; simplification d'écritures",
+      "type": "formule",
+      "recto": "Que cherche-t-on en tout premier dans une longue somme de relatifs ?",
+      "verso": "Les paires de nombres opposés, qui s'annulent sans aucun calcul. Dans $(-84{,}5) + (+13{,}7) + (+84{,}5)$, les deux termes opposés disparaissent et il ne reste que $+13{,}7$.",
+      "difficulte": 2,
+      "tags": [
+        "somme-algebrique",
+        "opposes",
+        "simplification"
+      ]
+    },
+    {
+      "id": "5E-CH07-014",
+      "lecon": "Associativité ; simplification d'écritures",
+      "type": "definition",
+      "recto": "Quelle différence y a-t-il entre la commutativité et l'associativité de l'addition ?",
+      "verso": "La commutativité permet de changer l'ordre des termes ; l'associativité permet de changer leur regroupement. On les emploie ensemble quand on trie une somme avant de la calculer.",
+      "difficulte": 3,
+      "tags": [
+        "commutativite",
+        "associativite",
+        "distinction"
+      ]
+    },
+    {
+      "id": "5E-CH07-015",
+      "lecon": "Associativité ; simplification d'écritures",
+      "type": "formule",
+      "recto": "Pourquoi peut-on trier librement les termes d'une addition sans en changer le total ?",
+      "verso": "Parce que le total ne dépend ni de l'ordre des termes ni de leur regroupement, comme un tas de billets et un tas de dettes que l'on compte séparément avant de comparer.",
+      "difficulte": 2,
+      "tags": [
+        "addition",
+        "associativite",
+        "justification"
+      ]
+    },
+    {
+      "id": "5E-CH07-016",
+      "lecon": "Associativité ; simplification d'écritures",
+      "type": "formule",
+      "recto": "Pourquoi ne peut-on pas réorganiser une soustraction comme on réorganise une addition ?",
+      "verso": "Parce que la soustraction n'est pas commutative : $(-3) - (+8)$ vaut $-11$ alors que $(+8) - (-3)$ vaut $+11$. Il faut d'abord transformer toutes les soustractions en additions.",
+      "difficulte": 3,
+      "tags": [
+        "soustraction",
+        "commutativite",
+        "piege"
+      ]
+    },
+    {
+      "id": "5E-CH07-017",
+      "lecon": "Opposé d'un nombre relatif ; soustraction",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on l'opposé d'un nombre relatif $a$ ?",
+      "verso": "C'est le nombre noté $-a$ tel que $a + (-a) = 0$. On l'obtient en changeant le signe : l'opposé de $+5$ est $-5$, celui de $-3{,}2$ est $+3{,}2$, et l'opposé de $0$ est $0$.",
+      "difficulte": 1,
+      "tags": [
+        "oppose",
+        "relatifs",
+        "definition"
+      ]
+    },
+    {
+      "id": "5E-CH07-018",
+      "lecon": "Opposé d'un nombre relatif ; soustraction",
+      "type": "formule",
+      "recto": "Que vaut l'opposé de l'opposé d'un nombre relatif ?",
+      "verso": "Le nombre de départ lui-même, puisqu'on a changé deux fois le signe : l'opposé de l'opposé de $-7$ est $-7$.",
+      "difficulte": 2,
+      "tags": [
+        "oppose",
+        "relatifs"
+      ]
+    },
+    {
+      "id": "5E-CH07-019",
+      "lecon": "Opposé d'un nombre relatif ; soustraction",
+      "type": "definition",
+      "recto": "Pourquoi l'écriture $-a$ ne signifie-t-elle pas que ce nombre est négatif ?",
+      "verso": "Parce qu'elle désigne l'opposé de $a$, quel que soit le signe de $a$. L'opposé d'un nombre négatif est positif : l'opposé de $-40$ est $+40$.",
+      "difficulte": 3,
+      "tags": [
+        "oppose",
+        "relatifs",
+        "piege"
+      ]
+    },
+    {
+      "id": "5E-CH07-020",
+      "lecon": "Opposé d'un nombre relatif ; soustraction",
+      "type": "formule",
+      "recto": "Comment transforme-t-on une soustraction de nombres relatifs en addition ?",
+      "verso": "On ajoute l'opposé du nombre retranché : $a - b = a + (-b)$. Ainsi $(-7) - (+8) = (-7) + (-8) = -15$.",
+      "difficulte": 1,
+      "tags": [
+        "soustraction",
+        "oppose",
+        "regle"
+      ]
+    },
+    {
+      "id": "5E-CH07-021",
+      "lecon": "Opposé d'un nombre relatif ; soustraction",
+      "type": "formule",
+      "recto": "Lequel des deux nombres change de signe quand on transforme une soustraction en addition ?",
+      "verso": "Seul le nombre retranché, celui qui est écrit après le signe. Dans $(-7) - (+8)$, le $-7$ est le point de départ et ne bouge pas.",
+      "difficulte": 2,
+      "tags": [
+        "soustraction",
+        "oppose",
+        "methode"
+      ]
+    },
+    {
+      "id": "5E-CH07-022",
+      "lecon": "Opposé d'un nombre relatif ; soustraction",
+      "type": "formule",
+      "recto": "Pourquoi le résultat de $(-7) - (-4)$ est-il plus grand que $-7$ ?",
+      "verso": "Parce que soustraire $-4$ revient à ajouter $+4$, ce qui donne $-3$. Retrancher un nombre négatif fait donc augmenter, contrairement à ce qu'on attend d'une soustraction.",
+      "difficulte": 3,
+      "tags": [
+        "soustraction",
+        "relatifs",
+        "piege"
+      ]
+    },
+    {
+      "id": "5E-CH07-023",
+      "lecon": "Opposé d'un nombre relatif ; soustraction",
+      "type": "formule",
+      "recto": "Pourquoi transforme-t-on systématiquement les soustractions en additions ?",
+      "verso": "Pour n'avoir plus qu'une seule série de règles à appliquer, celles de l'addition, et pour pouvoir ensuite regrouper et trier les termes librement.",
+      "difficulte": 2,
+      "tags": [
+        "soustraction",
+        "methode",
+        "somme-algebrique"
+      ]
+    },
+    {
+      "id": "5E-CH07-024",
+      "lecon": "Opposé d'un nombre relatif ; soustraction",
+      "type": "formule",
+      "recto": "Comment calcule-t-on la variation d'une grandeur qui passe de la valeur $a$ à la valeur $b$ ?",
+      "verso": "On effectue $b - a$, c'est-à-dire la valeur d'arrivée moins la valeur de départ. Le résultat est positif si la grandeur a augmenté, négatif si elle a diminué.",
+      "difficulte": 2,
+      "tags": [
+        "variation",
+        "soustraction",
+        "application"
+      ]
+    },
+    {
+      "id": "5E-CH07-025",
+      "lecon": "Opposé d'un nombre relatif ; soustraction",
+      "type": "formule",
+      "recto": "Comment obtient-on la distance entre deux points d'un axe gradué ?",
+      "verso": "On retranche la plus petite abscisse de la plus grande. Entre les abscisses $-4$ et $+3$, la distance vaut $(+3) - (-4) = 7$ unités. Une distance est toujours positive.",
+      "difficulte": 2,
+      "tags": [
+        "distance",
+        "axe-gradue",
+        "application"
+      ]
+    },
+    {
+      "id": "5E-CH07-026",
+      "lecon": "Somme algébrique ; suppression des parenthèses",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on une somme algébrique ?",
+      "verso": "C'est une suite d'additions et de soustractions de nombres relatifs. On peut toujours l'écrire sans parenthèses, sous la forme d'une suite de termes précédés de leur signe.",
+      "difficulte": 1,
+      "tags": [
+        "somme-algebrique",
+        "definition"
+      ]
+    },
+    {
+      "id": "5E-CH07-027",
+      "lecon": "Somme algébrique ; suppression des parenthèses",
+      "type": "formule",
+      "recto": "Comment supprime-t-on une parenthèse précédée d'un signe plus ?",
+      "verso": "On l'enlève sans rien changer aux signes qu'elle contient : $a + (b - c) = a + b - c$.",
+      "difficulte": 1,
+      "tags": [
+        "parentheses",
+        "somme-algebrique",
+        "regle"
+      ]
+    },
+    {
+      "id": "5E-CH07-028",
+      "lecon": "Somme algébrique ; suppression des parenthèses",
+      "type": "formule",
+      "recto": "Comment supprime-t-on une parenthèse précédée d'un signe moins ?",
+      "verso": "On change tous les signes qu'elle contient : $a - (b - c) = a - b + c$.",
+      "difficulte": 1,
+      "tags": [
+        "parentheses",
+        "somme-algebrique",
+        "regle"
+      ]
+    },
+    {
+      "id": "5E-CH07-029",
+      "lecon": "Somme algébrique ; suppression des parenthèses",
+      "type": "formule",
+      "recto": "Pourquoi $8 - (3 - 5)$ ne vaut-il pas $0$ ?",
+      "verso": "Parce que la parenthèse est précédée d'un $-$ : tous ses signes changent, et pas seulement le premier. Le calcul correct est $8 - 3 + 5 = 10$.",
+      "difficulte": 3,
+      "tags": [
+        "parentheses",
+        "somme-algebrique",
+        "piege"
+      ]
+    },
+    {
+      "id": "5E-CH07-030",
+      "lecon": "Somme algébrique ; suppression des parenthèses",
+      "type": "formule",
+      "recto": "Par quel niveau commence-t-on quand un calcul contient des parenthèses à l'intérieur de crochets ?",
+      "verso": "Par la parenthèse la plus intérieure, puis on remonte vers l'extérieur un niveau à la fois, en appliquant chaque fois la règle du signe qui précède.",
+      "difficulte": 2,
+      "tags": [
+        "parentheses",
+        "crochets",
+        "methode"
+      ]
+    },
+    {
+      "id": "5E-CH07-031",
+      "lecon": "Somme algébrique ; suppression des parenthèses",
+      "type": "formule",
+      "recto": "Pourquoi un signe $-$ placé devant une parenthèse retourne-t-il tous les signes qu'elle contient ?",
+      "verso": "Parce que retrancher un groupe, c'est retrancher chacun de ses termes et rendre ceux qu'il enlevait. L'opposé d'un groupe s'obtient en prenant l'opposé de chacun de ses termes.",
+      "difficulte": 3,
+      "tags": [
+        "parentheses",
+        "oppose",
+        "justification"
+      ]
+    },
+    {
+      "id": "5E-CH07-032",
+      "lecon": "Somme algébrique ; suppression des parenthèses",
+      "type": "formule",
+      "recto": "Quelles sont les deux façons correctes de traiter une parenthèse dans un calcul ?",
+      "verso": "Calculer ce qu'elle contient puis effectuer l'opération, ou la supprimer puis calculer l'ensemble. La première est plus sûre pour une parenthèse courte, la seconde est indispensable quand elle contient des lettres.",
+      "difficulte": 2,
+      "tags": [
+        "parentheses",
+        "methode"
+      ]
+    },
+    {
+      "id": "5E-CH07-033",
+      "lecon": "Somme algébrique ; suppression des parenthèses",
+      "type": "formule",
+      "recto": "Que fait-on une fois toutes les parenthèses supprimées d'une somme algébrique ?",
+      "verso": "On regroupe les termes positifs ensemble et les termes négatifs ensemble, puis on combine les deux totaux et on contrôle le signe du résultat.",
+      "difficulte": 2,
+      "tags": [
+        "somme-algebrique",
+        "regroupement",
+        "methode"
+      ]
+    }
+  ]
+}

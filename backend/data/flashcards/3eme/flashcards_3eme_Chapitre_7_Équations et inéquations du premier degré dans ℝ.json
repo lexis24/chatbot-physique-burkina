@@ -1,0 +1,314 @@
+{
+  "niveau": "3ème",
+  "chapitre": "Chapitre 7 : Equations et inéquations du premier degré dans $\\mathbb{R}$",
+  "source": "maths/3eme/Chapitre_7_Equations_inequations",
+  "nombre_cartes": 34,
+  "cartes": [
+    {
+      "id": "3E-CH07-001",
+      "lecon": "Equations du premier degré à une inconnue dans $\\mathbb{R}$",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on équation du premier degré à une inconnue ?",
+      "verso": "Une égalité qui, après développement et réduction, s'écrit sous la forme $ax + b = 0$, avec $a \\ne 0$.",
+      "difficulte": 1,
+      "tags": ["equation", "premier-degre", "definition"]
+    },
+    {
+      "id": "3E-CH07-002",
+      "lecon": "Equations du premier degré à une inconnue dans $\\mathbb{R}$",
+      "type": "definition",
+      "recto": "Que signifie résoudre une équation dans $\\mathbb{R}$ ?",
+      "verso": "C'est trouver tous les nombres réels qui la rendent vraie. Ces nombres sont les solutions, et l'ensemble qu'ils forment se note $S$.",
+      "difficulte": 1,
+      "tags": ["equation", "solution", "ensemble-s"]
+    },
+    {
+      "id": "3E-CH07-003",
+      "lecon": "Equations du premier degré à une inconnue dans $\\mathbb{R}$",
+      "type": "formule",
+      "recto": "Quelles opérations a-t-on le droit d'appliquer aux deux membres d'une équation ?",
+      "verso": "Ajouter ou retrancher un même nombre aux deux membres, et multiplier ou diviser les deux membres par un même nombre non nul. Une égalité reste vraie si l'on traite ses deux membres de la même façon.",
+      "difficulte": 2,
+      "tags": ["equation", "regles"]
+    },
+    {
+      "id": "3E-CH07-004",
+      "lecon": "Equations du premier degré à une inconnue dans $\\mathbb{R}$",
+      "type": "formule",
+      "recto": "Que devient un terme qui change de membre dans une équation ?",
+      "verso": "Il change de signe ; un facteur qui change de membre devient un diviseur. Cette transposition n'est que l'écriture abrégée de la règle d'addition.",
+      "difficulte": 2,
+      "tags": ["equation", "transposition"]
+    },
+    {
+      "id": "3E-CH07-005",
+      "lecon": "Equations du premier degré à une inconnue dans $\\mathbb{R}$",
+      "type": "formule",
+      "recto": "Quelle est la solution de l'équation $ax + b = 0$ lorsque $a$ n'est pas nul ?",
+      "verso": "Une solution unique : $x = \\dfrac{-b}{a}$, et l'on écrit $S = \\left\\{\\dfrac{-b}{a}\\right\\}$.",
+      "difficulte": 2,
+      "tags": ["equation", "premier-degre", "solution"]
+    },
+    {
+      "id": "3E-CH07-006",
+      "lecon": "Equations du premier degré à une inconnue dans $\\mathbb{R}$",
+      "type": "formule",
+      "recto": "Que vaut $x$ lorsqu'une résolution aboutit à $-x = 17$ ?",
+      "verso": "$x = -17$, et non $17$. Le coefficient de $x$ vaut $-1$ : il faut encore diviser les deux membres par $-1$.",
+      "difficulte": 3,
+      "tags": ["equation", "piege", "signe"]
+    },
+    {
+      "id": "3E-CH07-007",
+      "lecon": "Equations du premier degré à une inconnue dans $\\mathbb{R}$",
+      "type": "formule",
+      "recto": "Que devient $-3\\left(2x + 1\\right)$ une fois développé ?",
+      "verso": "$-6x - 3$, et non $-6x + 3$ : le signe moins placé devant la parenthèse change le signe des deux termes qu'elle contient.",
+      "difficulte": 3,
+      "tags": ["equation", "developpement", "piege"]
+    },
+    {
+      "id": "3E-CH07-008",
+      "lecon": "Equations du premier degré à une inconnue dans $\\mathbb{R}$",
+      "type": "formule",
+      "recto": "Dans quelle égalité remplace-t-on la valeur trouvée pour vérifier une solution ?",
+      "verso": "Dans l'équation de départ, jamais dans une ligne intermédiaire. Si les deux membres ne donnent pas le même nombre, une transposition s'est faite sans changement de signe.",
+      "difficulte": 2,
+      "tags": ["equation", "verification"]
+    },
+    {
+      "id": "3E-CH07-009",
+      "lecon": "Problèmes se ramenant à une équation",
+      "type": "formule",
+      "recto": "Comment doit-on présenter l'inconnue au début d'un problème ?",
+      "verso": "Par une phrase qui dit ce qu'elle désigne et dans quelle unité : « soit $x$ le prix d'une chèvre, en francs », et non simplement « $x$ ».",
+      "difficulte": 2,
+      "tags": ["mise-en-equation", "inconnue"]
+    },
+    {
+      "id": "3E-CH07-010",
+      "lecon": "Problèmes se ramenant à une équation",
+      "type": "formule",
+      "recto": "Quelle quantité a-t-on intérêt à prendre pour inconnue dans un problème ?",
+      "verso": "Celle à partir de laquelle toutes les autres se décrivent le plus simplement. Quand deux quantités sont reliées par « de plus que » ou « de moins que », on prend celle qui apparaît après ces mots.",
+      "difficulte": 3,
+      "tags": ["mise-en-equation", "inconnue", "choix"]
+    },
+    {
+      "id": "3E-CH07-011",
+      "lecon": "Problèmes se ramenant à une équation",
+      "type": "formule",
+      "recto": "Quelle phrase de l'énoncé cherche-t-on pour écrire l'équation d'un problème ?",
+      "verso": "Celle qui donne une égalité, le plus souvent un total. Une fois cette phrase traduite, le problème redevient une équation ordinaire.",
+      "difficulte": 2,
+      "tags": ["mise-en-equation", "traduction"]
+    },
+    {
+      "id": "3E-CH07-012",
+      "lecon": "Problèmes se ramenant à une équation",
+      "type": "definition",
+      "recto": "Pourquoi une valeur comme « $x = 200\\,000$ » ne termine-t-elle pas un problème ?",
+      "verso": "Parce qu'une équation résolue n'est pas encore une réponse. Il faut conclure par une phrase en français qui reprend les mots de l'énoncé et répond à la question posée.",
+      "difficulte": 2,
+      "tags": ["mise-en-equation", "conclusion"]
+    },
+    {
+      "id": "3E-CH07-013",
+      "lecon": "Problèmes se ramenant à une équation",
+      "type": "formule",
+      "recto": "Que signale une solution négative dans un problème où l'inconnue est un nombre d'objets ?",
+      "verso": "Une erreur de traduction. Un nombre d'objets ou de personnes est un entier positif et un prix est positif : la solution doit avoir un sens dans la situation.",
+      "difficulte": 2,
+      "tags": ["mise-en-equation", "coherence"]
+    },
+    {
+      "id": "3E-CH07-014",
+      "lecon": "Problèmes se ramenant à une équation",
+      "type": "formule",
+      "recto": "Si Awa a $8$ ans de plus que Bintou et si Awa a $x$ ans, quel est l'âge de Bintou ?",
+      "verso": "Bintou a $x - 8$ ans, et non $x + 8$. La phrase se traduit par $\\text{Awa} = \\text{Bintou} + 8$, donc $\\text{Bintou} = \\text{Awa} - 8$.",
+      "difficulte": 3,
+      "tags": ["mise-en-equation", "traduction", "piege"]
+    },
+    {
+      "id": "3E-CH07-015",
+      "lecon": "Inéquations du premier degré ; représentation des solutions",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on inéquation du premier degré à une inconnue ?",
+      "verso": "Une comparaison de deux expressions à l'aide de l'un des signes $<$, $>$, $\\le$ ou $\\ge$, qui se ramène après réduction à $ax + b < 0$, ou à l'une des trois autres formes.",
+      "difficulte": 1,
+      "tags": ["inequation", "definition"]
+    },
+    {
+      "id": "3E-CH07-016",
+      "lecon": "Inéquations du premier degré ; représentation des solutions",
+      "type": "definition",
+      "recto": "Combien de solutions une inéquation du premier degré possède-t-elle ?",
+      "verso": "Une infinité. La réponse n'est donc pas un nombre mais un ensemble de nombres, que l'on décrit par un intervalle et que l'on représente sur une droite graduée.",
+      "difficulte": 1,
+      "tags": ["inequation", "solutions", "intervalle"]
+    },
+    {
+      "id": "3E-CH07-017",
+      "lecon": "Inéquations du premier degré ; représentation des solutions",
+      "type": "formule",
+      "recto": "Que se passe-t-il quand on multiplie ou divise les deux membres d'une inéquation par un nombre négatif ?",
+      "verso": "Le sens de l'inégalité se retourne : $-3x < 12$ donne $x > -4$, et non $x < -4$. Avec un nombre strictement positif, ou par une addition, le sens ne change pas.",
+      "difficulte": 2,
+      "tags": ["inequation", "changement-de-sens"]
+    },
+    {
+      "id": "3E-CH07-018",
+      "lecon": "Inéquations du premier degré ; représentation des solutions",
+      "type": "formule",
+      "recto": "Pourquoi le passage aux opposés retourne-t-il le sens d'une inégalité ?",
+      "verso": "Parce que multiplier par $-1$ revient à retourner la droite graduée. On a $2 < 3$, alors que leurs opposés sont rangés dans l'ordre inverse : $-2 > -3$.",
+      "difficulte": 3,
+      "tags": ["inequation", "opposes", "justification"]
+    },
+    {
+      "id": "3E-CH07-019",
+      "lecon": "Inéquations du premier degré ; représentation des solutions",
+      "type": "formule",
+      "recto": "Comment note-t-on avec un intervalle l'ensemble des solutions de $x > 4{,}5$ ?",
+      "verso": "$S = \\left]4{,}5\\,;+\\infty\\right[$. De la même façon, les solutions de $x \\le 3$ s'écrivent $S = \\left]-\\infty\\,;3\\right]$.",
+      "difficulte": 2,
+      "tags": ["inequation", "intervalle", "notation"]
+    },
+    {
+      "id": "3E-CH07-020",
+      "lecon": "Inéquations du premier degré ; représentation des solutions",
+      "type": "formule",
+      "recto": "Quand le crochet d'un intervalle est-il fermé, et quand est-il ouvert ?",
+      "verso": "Fermé, borne comprise, pour $\\le$ et $\\ge$ ; ouvert, borne exclue, pour $<$ et $>$. Pour $x < 2$, le nombre $2$ n'est pas solution.",
+      "difficulte": 2,
+      "tags": ["inequation", "crochet", "borne"]
+    },
+    {
+      "id": "3E-CH07-021",
+      "lecon": "Inéquations du premier degré ; représentation des solutions",
+      "type": "formule",
+      "recto": "Comment contrôle-t-on le résultat d'une inéquation ?",
+      "verso": "En testant une valeur de l'intervalle trouvé dans l'inéquation de départ. Si elle ne convient pas, c'est presque toujours qu'un changement de sens a été oublié.",
+      "difficulte": 2,
+      "tags": ["inequation", "verification"]
+    },
+    {
+      "id": "3E-CH07-022",
+      "lecon": "Problèmes se ramenant à une inéquation",
+      "type": "formule",
+      "recto": "Par quels signes traduit-on « au moins $n$ » et « au plus $n$ » ?",
+      "verso": "« Au moins $n$ », « au minimum $n$ » et « pas moins de $n$ » donnent $x \\ge n$. « Au plus $n$ », « au maximum $n$ » et « ne pas dépasser $n$ » donnent $x \\le n$.",
+      "difficulte": 2,
+      "tags": ["inequation", "mots-cles", "traduction"]
+    },
+    {
+      "id": "3E-CH07-023",
+      "lecon": "Problèmes se ramenant à une inéquation",
+      "type": "formule",
+      "recto": "Par quels signes traduit-on « plus de $n$ » et « moins de $n$ » ?",
+      "verso": "« Plus de $n$ », « dépasser $n$ » et « strictement supérieur à $n$ » donnent $x > n$. « Moins de $n$ » et « strictement inférieur à $n$ » donnent $x < n$.",
+      "difficulte": 2,
+      "tags": ["inequation", "mots-cles", "traduction"]
+    },
+    {
+      "id": "3E-CH07-024",
+      "lecon": "Problèmes se ramenant à une inéquation",
+      "type": "formule",
+      "recto": "Comment arrondit-on le seuil trouvé quand l'inconnue désigne un nombre d'objets ?",
+      "verso": "Vers le haut pour un « au moins », vers le bas pour un « au plus ». Ainsi $x \\ge 37{,}5$ donne $38$ objets, et non $37$, car il faut dépasser le seuil.",
+      "difficulte": 3,
+      "tags": ["inequation", "arrondi", "interpretation"]
+    },
+    {
+      "id": "3E-CH07-025",
+      "lecon": "Problèmes se ramenant à une inéquation",
+      "type": "formule",
+      "recto": "Comment s'assure-t-on d'avoir choisi le bon signe en traduisant un énoncé ?",
+      "verso": "On relit la phrase et on se demande si une valeur très grande la satisferait. Si oui, le signe est $\\ge$ ou $>$.",
+      "difficulte": 2,
+      "tags": ["inequation", "mots-cles", "controle"]
+    },
+    {
+      "id": "3E-CH07-026",
+      "lecon": "Problèmes se ramenant à une inéquation",
+      "type": "formule",
+      "recto": "Pourquoi ne confond-on pas la recette et le bénéfice net dans un problème d'atelier ?",
+      "verso": "Parce que le bénéfice net est ce qui reste une fois les charges fixes payées. Avec $25\\,000$ FCFA de charges et $1\\,500$ FCFA par tabouret, il s'écrit $1\\,500x - 25\\,000$.",
+      "difficulte": 3,
+      "tags": ["inequation", "benefice-net", "charges-fixes"]
+    },
+    {
+      "id": "3E-CH07-027",
+      "lecon": "Problèmes se ramenant à une inéquation",
+      "type": "formule",
+      "recto": "Comment vérifie-t-on le seuil entier trouvé dans un problème d'inéquation ?",
+      "verso": "En testant les deux entiers voisins. Avec $38$ articles à $400$ FCFA, le bénéfice atteint $15\\,200$ FCFA, alors qu'avec $37$ articles il n'est que de $14\\,800$ FCFA.",
+      "difficulte": 2,
+      "tags": ["inequation", "verification", "entier"]
+    },
+    {
+      "id": "3E-CH07-028",
+      "lecon": "Equations se ramenant au second degré : produit nul et $x^{2} = a$",
+      "type": "formule",
+      "recto": "Que dit la propriété du produit nul ?",
+      "verso": "Un produit de facteurs est nul si et seulement si au moins un de ses facteurs est nul : $A \\times B = 0$ équivaut à $A = 0$ ou $B = 0$.",
+      "difficulte": 1,
+      "tags": ["produit-nul", "propriete"]
+    },
+    {
+      "id": "3E-CH07-029",
+      "lecon": "Equations se ramenant au second degré : produit nul et $x^{2} = a$",
+      "type": "formule",
+      "recto": "Comment résout-on une équation du type $\\left(ax + b\\right)\\left(cx + d\\right) = 0$ ?",
+      "verso": "On résout séparément $ax + b = 0$ et $cx + d = 0$, ce qui donne en général deux solutions.",
+      "difficulte": 2,
+      "tags": ["produit-nul", "equation-produit"]
+    },
+    {
+      "id": "3E-CH07-030",
+      "lecon": "Equations se ramenant au second degré : produit nul et $x^{2} = a$",
+      "type": "formule",
+      "recto": "Pourquoi écrit-on « $x = 3$ ou $x = -2$ » plutôt que « $x = 3$ et $x = -2$ » ?",
+      "verso": "Parce que le produit nul n'exige pas que les deux facteurs s'annulent en même temps : il suffit que l'un le soit. Les deux solutions sont donc séparées par un « ou ».",
+      "difficulte": 3,
+      "tags": ["produit-nul", "redaction", "piege"]
+    },
+    {
+      "id": "3E-CH07-031",
+      "lecon": "Equations se ramenant au second degré : produit nul et $x^{2} = a$",
+      "type": "formule",
+      "recto": "Pourquoi un produit nul force-t-il l'un au moins de ses facteurs à être nul ?",
+      "verso": "Parce que si $A$ n'est pas nul, on peut diviser les deux membres par $A$, ce qui oblige $B$ à valoir $0$.",
+      "difficulte": 3,
+      "tags": ["produit-nul", "justification"]
+    },
+    {
+      "id": "3E-CH07-032",
+      "lecon": "Equations se ramenant au second degré : produit nul et $x^{2} = a$",
+      "type": "formule",
+      "recto": "Combien de solutions l'équation $x^{2} = a$ possède-t-elle selon le signe de $a$ ?",
+      "verso": "Deux solutions, $\\sqrt{a}$ et $-\\sqrt{a}$, si $a > 0$ ; une seule, $0$, si $a = 0$ ; aucune si $a < 0$, car un carré n'est jamais négatif.",
+      "difficulte": 2,
+      "tags": ["x-carre", "solutions"]
+    },
+    {
+      "id": "3E-CH07-033",
+      "lecon": "Equations se ramenant au second degré : produit nul et $x^{2} = a$",
+      "type": "formule",
+      "recto": "Que fait-on d'une équation avant de pouvoir lui appliquer la propriété du produit nul ?",
+      "verso": "On transpose tout dans un membre pour obtenir une écriture « $\\dots = 0$ », puis on factorise : facteur commun, ou identité remarquable comme $x^{2} - a^{2} = \\left(x - a\\right)\\left(x + a\\right)$.",
+      "difficulte": 2,
+      "tags": ["produit-nul", "factorisation"]
+    },
+    {
+      "id": "3E-CH07-034",
+      "lecon": "Equations se ramenant au second degré : produit nul et $x^{2} = a$",
+      "type": "formule",
+      "recto": "Pourquoi ne divise-t-on jamais l'équation $x^{2} = 5x$ par $x$ ?",
+      "verso": "Parce que $x$ peut être nul et que l'on n'a pas le droit de diviser par zéro : on perdrait la solution $x = 0$. On factorise plutôt en $x\\left(x - 5\\right) = 0$.",
+      "difficulte": 3,
+      "tags": ["produit-nul", "piege", "division"]
+    }
+  ]
+}

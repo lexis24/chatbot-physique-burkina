@@ -1,0 +1,323 @@
+{
+  "niveau": "6ème",
+  "chapitre": "Chapitre 6 : Parallélogrammes particuliers et trapèze",
+  "source": "maths/6eme/Chapitre_6_Parallelogrammes_particuliers",
+  "nombre_cartes": 35,
+  "cartes": [
+    {
+      "id": "6E-CH06-001",
+      "lecon": "Le rectangle",
+      "type": "definition",
+      "recto": "Qu'est-ce qu'un rectangle ?",
+      "verso": "C'est un quadrilatère qui a quatre angles droits. C'est aussi un parallélogramme particulier, donc il en possède toutes les propriétés.",
+      "difficulte": 1,
+      "tags": ["rectangle", "definition"]
+    },
+    {
+      "id": "6E-CH06-002",
+      "lecon": "Le rectangle",
+      "type": "definition",
+      "recto": "Quelle différence y a-t-il entre la définition du rectangle et ses propriétés ?",
+      "verso": "La définition tient en quatre mots : quatre angles droits. Les côtés opposés parallèles et égaux, ou les diagonales de même longueur, sont des propriétés, c'est-à-dire des conséquences que l'on constate ensuite.",
+      "difficulte": 2,
+      "tags": ["rectangle", "definition", "propriete"]
+    },
+    {
+      "id": "6E-CH06-003",
+      "lecon": "Le rectangle",
+      "type": "formule",
+      "recto": "Que peut-on dire des diagonales d'un rectangle ?",
+      "verso": "Elles ont la même longueur et se coupent en leur milieu.",
+      "difficulte": 2,
+      "tags": ["rectangle", "diagonales", "propriete"]
+    },
+    {
+      "id": "6E-CH06-004",
+      "lecon": "Le rectangle",
+      "type": "formule",
+      "recto": "Quelle formule donne le périmètre d'un rectangle ?",
+      "verso": "$P = 2 \\times \\left(L + l\\right)$, où $L$ est la Longueur et $l$ la largeur. Le périmètre s'exprime en cm ou en m.",
+      "difficulte": 1,
+      "tags": ["rectangle", "perimetre", "formule"]
+    },
+    {
+      "id": "6E-CH06-005",
+      "lecon": "Le rectangle",
+      "type": "formule",
+      "recto": "Quelle formule donne l'aire d'un rectangle ?",
+      "verso": "$A = L \\times l$ : la Longueur multipliée par la largeur. L'aire s'exprime en unités carrées, cm$^{2}$ ou m$^{2}$.",
+      "difficulte": 1,
+      "tags": ["rectangle", "aire", "formule"]
+    },
+    {
+      "id": "6E-CH06-006",
+      "lecon": "Le rectangle",
+      "type": "formule",
+      "recto": "Combien d'axes de symétrie possède un rectangle, et quels sont-ils ?",
+      "verso": "Deux : les droites qui joignent les milieux de deux côtés opposés. Ses diagonales ne sont pas des axes de symétrie.",
+      "difficulte": 2,
+      "tags": ["rectangle", "axe-de-symetrie"]
+    },
+    {
+      "id": "6E-CH06-007",
+      "lecon": "Le rectangle",
+      "type": "formule",
+      "recto": "Quelles conversions faut-il connaître avant de calculer une aire ?",
+      "verso": "$1$ m $= 100$ cm, $1$ m$^{2} = 10\\,000$ cm$^{2}$ et $1$ ha $= 10\\,000$ m$^{2}$. Les deux dimensions doivent être dans la même unité avant d'être multipliées.",
+      "difficulte": 2,
+      "tags": ["unites", "conversion", "aire"]
+    },
+    {
+      "id": "6E-CH06-008",
+      "lecon": "Le rectangle",
+      "type": "formule",
+      "recto": "Quelle propriété du rectangle un parallélogramme quelconque ne possède-t-il pas ?",
+      "verso": "L'égalité de ses deux diagonales. C'est ce contrôle que font les menuisiers sur un chantier pour vérifier qu'un cadre est bien droit.",
+      "difficulte": 3,
+      "tags": ["rectangle", "diagonales", "distinction"]
+    },
+    {
+      "id": "6E-CH06-009",
+      "lecon": "Le rectangle",
+      "type": "definition",
+      "recto": "Quelle erreur guette l'élève qui décrit les diagonales d'un rectangle ?",
+      "verso": "Les croire perpendiculaires. Dans un rectangle, elles sont égales et se coupent en leur milieu ; ce sont celles du losange qui se coupent à angle droit.",
+      "difficulte": 3,
+      "tags": ["rectangle", "diagonales", "piege"]
+    },
+    {
+      "id": "6E-CH06-010",
+      "lecon": "Le carré",
+      "type": "definition",
+      "recto": "Qu'est-ce qu'un carré ?",
+      "verso": "C'est un quadrilatère qui a quatre côtés égaux et quatre angles droits.",
+      "difficulte": 1,
+      "tags": ["carre", "definition"]
+    },
+    {
+      "id": "6E-CH06-011",
+      "lecon": "Le carré",
+      "type": "definition",
+      "recto": "A quelles deux familles de quadrilatères le carré appartient-il en même temps ?",
+      "verso": "A celle des rectangles, parce qu'il a quatre angles droits, et à celle des losanges, parce qu'il a quatre côtés égaux.",
+      "difficulte": 2,
+      "tags": ["carre", "rectangle", "losange"]
+    },
+    {
+      "id": "6E-CH06-012",
+      "lecon": "Le carré",
+      "type": "formule",
+      "recto": "Que peut-on dire des diagonales d'un carré ?",
+      "verso": "Elles ont la même longueur, elles sont perpendiculaires, et elles se coupent en leur milieu. Elles réunissent les propriétés du rectangle et celles du losange.",
+      "difficulte": 2,
+      "tags": ["carre", "diagonales", "propriete"]
+    },
+    {
+      "id": "6E-CH06-013",
+      "lecon": "Le carré",
+      "type": "formule",
+      "recto": "Quelles formules donnent le périmètre et l'aire d'un carré de côté $c$ ?",
+      "verso": "$P = 4 \\times c$ pour le périmètre et $A = c \\times c$ pour l'aire.",
+      "difficulte": 1,
+      "tags": ["carre", "perimetre", "aire", "formule"]
+    },
+    {
+      "id": "6E-CH06-014",
+      "lecon": "Le carré",
+      "type": "formule",
+      "recto": "Combien d'axes de symétrie possède un carré, et quels sont-ils ?",
+      "verso": "Quatre : ses deux diagonales et les deux droites qui joignent les milieux de côtés opposés.",
+      "difficulte": 2,
+      "tags": ["carre", "axe-de-symetrie"]
+    },
+    {
+      "id": "6E-CH06-015",
+      "lecon": "Le carré",
+      "type": "formule",
+      "recto": "Comment compte-t-on les poteaux plantés tous les $d$ mètres tout autour d'un terrain ?",
+      "verso": "On divise le périmètre par $d$ : le nombre de poteaux vaut $P \\div d$. Comme le tour est une ligne fermée, le dernier poteau tombe juste à côté du premier.",
+      "difficulte": 2,
+      "tags": ["perimetre", "poteaux", "cloture"]
+    },
+    {
+      "id": "6E-CH06-016",
+      "lecon": "Le carré",
+      "type": "formule",
+      "recto": "Pourquoi un carré est-il un rectangle ?",
+      "verso": "Parce que la définition du rectangle exige seulement quatre angles droits, sans rien dire des longueurs. Le carré remplit cette condition : c'est un rectangle dont les quatre côtés sont en plus égaux.",
+      "difficulte": 3,
+      "tags": ["carre", "rectangle", "justification"]
+    },
+    {
+      "id": "6E-CH06-017",
+      "lecon": "Le carré",
+      "type": "definition",
+      "recto": "Pourquoi un rectangle de $8$ cm sur $3$ cm n'est-il pas un carré ?",
+      "verso": "Parce qu'il a bien quatre angles droits, mais ses quatre côtés ne sont pas égaux. Tout carré est un rectangle, alors que l'inverse est faux.",
+      "difficulte": 3,
+      "tags": ["carre", "rectangle", "piege"]
+    },
+    {
+      "id": "6E-CH06-018",
+      "lecon": "Le losange",
+      "type": "definition",
+      "recto": "Qu'est-ce qu'un losange ?",
+      "verso": "C'est un quadrilatère qui a quatre côtés égaux. C'est un parallélogramme particulier, donc ses côtés opposés sont parallèles et ses angles opposés égaux.",
+      "difficulte": 1,
+      "tags": ["losange", "definition"]
+    },
+    {
+      "id": "6E-CH06-019",
+      "lecon": "Le losange",
+      "type": "formule",
+      "recto": "Que peut-on dire des diagonales d'un losange ?",
+      "verso": "Elles sont perpendiculaires et se coupent en leur milieu. En général, elles n'ont pas la même longueur.",
+      "difficulte": 2,
+      "tags": ["losange", "diagonales", "propriete"]
+    },
+    {
+      "id": "6E-CH06-020",
+      "lecon": "Le losange",
+      "type": "formule",
+      "recto": "Quelle formule donne l'aire d'un losange à partir de ses diagonales ?",
+      "verso": "$A = \\left(D \\times d\\right) \\div 2$, où $D$ est la grande diagonale et $d$ la petite diagonale.",
+      "difficulte": 1,
+      "tags": ["losange", "aire", "formule"]
+    },
+    {
+      "id": "6E-CH06-021",
+      "lecon": "Le losange",
+      "type": "formule",
+      "recto": "Quelle formule donne le périmètre d'un losange de côté $c$ ?",
+      "verso": "$P = 4 \\times c$, comme pour le carré, puisque les quatre côtés d'un losange sont égaux.",
+      "difficulte": 2,
+      "tags": ["losange", "perimetre", "formule"]
+    },
+    {
+      "id": "6E-CH06-022",
+      "lecon": "Le losange",
+      "type": "formule",
+      "recto": "Combien d'axes de symétrie possède un losange, et quels sont-ils ?",
+      "verso": "Deux : ce sont ses deux diagonales.",
+      "difficulte": 2,
+      "tags": ["losange", "axe-de-symetrie"]
+    },
+    {
+      "id": "6E-CH06-023",
+      "lecon": "Le losange",
+      "type": "definition",
+      "recto": "Qu'est-ce qu'un axe de symétrie ?",
+      "verso": "C'est une droite le long de laquelle on peut plier un dessin pour que les deux moitiés se superposent exactement.",
+      "difficulte": 2,
+      "tags": ["axe-de-symetrie", "definition"]
+    },
+    {
+      "id": "6E-CH06-024",
+      "lecon": "Le losange",
+      "type": "formule",
+      "recto": "Pourquoi divise-t-on par $2$ dans la formule de l'aire du losange ?",
+      "verso": "Parce que les deux diagonales dessinent autour du losange un rectangle exactement deux fois plus grand : le losange en occupe la moitié.",
+      "difficulte": 2,
+      "tags": ["losange", "aire", "justification"]
+    },
+    {
+      "id": "6E-CH06-025",
+      "lecon": "Le losange",
+      "type": "formule",
+      "recto": "Comment retrouve-t-on la petite diagonale d'un losange dont on connaît l'aire et la grande diagonale ?",
+      "verso": "On remonte les deux opérations : on multiplie l'aire par $2$, puis on divise par la grande diagonale. Pour une aire de $54$ cm$^{2}$ et $D = 12$ cm, on obtient $d = 108 \\div 12 = 9$ cm.",
+      "difficulte": 3,
+      "tags": ["losange", "aire", "diagonales", "calcul"]
+    },
+    {
+      "id": "6E-CH06-026",
+      "lecon": "Le losange",
+      "type": "formule",
+      "recto": "Pourquoi ne calcule-t-on pas l'aire d'un losange en multipliant deux de ses côtés ?",
+      "verso": "Parce que la formule fait intervenir les diagonales et non les côtés : $A = \\left(D \\times d\\right) \\div 2$. Pour des diagonales de $9$ cm et $6$ cm, l'aire vaut $27$ cm$^{2}$, et non $54$ cm$^{2}$.",
+      "difficulte": 3,
+      "tags": ["losange", "aire", "piege"]
+    },
+    {
+      "id": "6E-CH06-027",
+      "lecon": "Le trapèze",
+      "type": "definition",
+      "recto": "Qu'est-ce qu'un trapèze ?",
+      "verso": "C'est un quadrilatère qui a deux côtés parallèles, appelés les bases. Les deux autres côtés ne sont pas parallèles : un trapèze n'est donc pas un parallélogramme.",
+      "difficulte": 1,
+      "tags": ["trapeze", "definition"]
+    },
+    {
+      "id": "6E-CH06-028",
+      "lecon": "Le trapèze",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on les bases d'un trapèze ?",
+      "verso": "Ses deux côtés parallèles. Les deux autres côtés, obliques, ne sont jamais des bases.",
+      "difficulte": 2,
+      "tags": ["trapeze", "bases", "vocabulaire"]
+    },
+    {
+      "id": "6E-CH06-029",
+      "lecon": "Le trapèze",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on la hauteur d'un trapèze ?",
+      "verso": "C'est la distance entre les deux bases, mesurée perpendiculairement. Ce n'est pas la longueur d'un côté oblique.",
+      "difficulte": 2,
+      "tags": ["trapeze", "hauteur", "vocabulaire"]
+    },
+    {
+      "id": "6E-CH06-030",
+      "lecon": "Le trapèze",
+      "type": "formule",
+      "recto": "Quelle formule donne l'aire d'un trapèze ?",
+      "verso": "$A = \\left[\\left(B + b\\right) \\times h\\right] \\div 2$, où $B$ est la grande base, $b$ la petite base et $h$ la hauteur.",
+      "difficulte": 1,
+      "tags": ["trapeze", "aire", "formule"]
+    },
+    {
+      "id": "6E-CH06-031",
+      "lecon": "Le trapèze",
+      "type": "formule",
+      "recto": "Comment calcule-t-on le périmètre d'un trapèze ?",
+      "verso": "On additionne les longueurs de ses quatre côtés, bases comprises. Aucune formule plus courte n'existe, car les côtés ne sont pas égaux deux à deux.",
+      "difficulte": 2,
+      "tags": ["trapeze", "perimetre"]
+    },
+    {
+      "id": "6E-CH06-032",
+      "lecon": "Le trapèze",
+      "type": "definition",
+      "recto": "Qu'est-ce qui distingue un trapèze isocèle d'un trapèze rectangle ?",
+      "verso": "Un trapèze isocèle a ses deux côtés non parallèles de même longueur. Un trapèze rectangle, lui, possède deux angles droits.",
+      "difficulte": 2,
+      "tags": ["trapeze", "isocele", "trapeze-rectangle"]
+    },
+    {
+      "id": "6E-CH06-033",
+      "lecon": "Le trapèze",
+      "type": "formule",
+      "recto": "Dans quel ordre examine-t-on un quadrilatère pour reconnaître sa nature ?",
+      "verso": "D'abord les côtés parallèles, puis les angles droits, puis les côtés égaux, puis les diagonales. Une seule paire de côtés parallèles donne un trapèze, deux paires donnent un parallélogramme.",
+      "difficulte": 2,
+      "tags": ["reconnaitre", "quadrilatere", "methode"]
+    },
+    {
+      "id": "6E-CH06-034",
+      "lecon": "Le trapèze",
+      "type": "formule",
+      "recto": "Quelle erreur guette l'élève qui calcule l'aire d'un trapèze ?",
+      "verso": "Oublier la division par $2$. L'aire vaut $\\left[\\left(B + b\\right) \\times h\\right] \\div 2$, et non $\\left(B + b\\right) \\times h$.",
+      "difficulte": 3,
+      "tags": ["trapeze", "aire", "piege"]
+    },
+    {
+      "id": "6E-CH06-035",
+      "lecon": "Le trapèze",
+      "type": "formule",
+      "recto": "Comment le découpage d'un trapèze en un rectangle et deux triangles justifie-t-il sa formule d'aire ?",
+      "verso": "Pour des bases $5$ et $3$ et une hauteur $2$, le rectangle du milieu couvre $6$ et les deux triangles réunis couvrent $2$, soit $8$ en tout. La formule donne $\\left(5 + 3\\right) \\times 2 = 16$, puis $16 \\div 2 = 8$.",
+      "difficulte": 3,
+      "tags": ["trapeze", "aire", "justification"]
+    }
+  ]
+}
