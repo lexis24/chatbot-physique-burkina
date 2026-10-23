@@ -2,7 +2,7 @@ import React, { useEffect, useMemo, useState } from "react"
 import {
   LineChart, Line, BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Cell,
 } from "recharts"
-import { Sigma, Users, ClipboardCheck, TrendingUp, LogOut, Moon, Sun, MessageSquare } from "lucide-react"
+import { Atom, Users, ClipboardCheck, TrendingUp, LogOut, Moon, Sun, MessageSquare } from "lucide-react"
 import Card from "./ui/Card"
 import Button from "./ui/Button"
 import {
@@ -18,13 +18,13 @@ const GENDER_LABELS = { F: "Féminin", M: "Masculin", autres: "Autres (effectif 
 // Couleurs exactes des thèmes DaisyUI de l'appli (tailwind.config.js) : recharts a besoin de
 // valeurs hex littérales, donc on ne peut pas se contenter des classes Tailwind ici.
 const PALETTES = {
-  "chatmaths-light": {
-    primary: "#0d9488", secondary: "#0891b2", success: "#16a34a", warning: "#d97706", error: "#dc2626",
-    text: "#1f2937", muted: "#64748b", grid: "#e1f1ee", surface: "#ffffff",
+  "chatphysique-light": {
+    primary: "#4f46e5", secondary: "#0284c7", success: "#16a34a", warning: "#d97706", error: "#dc2626",
+    text: "#1f2937", muted: "#64748b", grid: "#e4e6f5", surface: "#ffffff",
   },
-  "chatmaths-dark": {
-    primary: "#2dd4bf", secondary: "#22d3ee", success: "#4ade80", warning: "#fbbf24", error: "#f87171",
-    text: "#e5e7eb", muted: "#94a3b8", grid: "#17302c", surface: "#0b1615",
+  "chatphysique-dark": {
+    primary: "#818cf8", secondary: "#38bdf8", success: "#4ade80", warning: "#fbbf24", error: "#f87171",
+    text: "#e5e7eb", muted: "#94a3b8", grid: "#22254a", surface: "#0f1020",
   },
 }
 
@@ -75,7 +75,7 @@ function EmptyState({ text }) {
 }
 
 export default function AdminDashboard({ token, username, theme, onToggleTheme, onLogout }) {
-  const palette = PALETTES[theme] || PALETTES["chatmaths-light"]
+  const palette = PALETTES[theme] || PALETTES["chatphysique-light"]
 
   const [classes, setClasses] = useState([])
   const [classLevel, setClassLevel] = useState("")
@@ -144,11 +144,11 @@ export default function AdminDashboard({ token, username, theme, onToggleTheme, 
       <header className="sticky top-0 z-20 flex items-center justify-between border-b border-base-300/60 bg-base-100/80 px-4 py-3 backdrop-blur-md sm:px-6">
         <div className="flex items-center gap-3">
           <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-br from-primary via-secondary to-accent text-white shadow-glow">
-            <Sigma size={20} />
+            <Atom size={20} />
           </div>
           <div>
             <h1 className="font-heading text-lg font-extrabold leading-tight">
-              Prof <span className="text-gradient">Amira</span> · Tableau de bord
+              Prof <span className="text-gradient">Aïcha</span> · Tableau de bord
             </h1>
             <p className="text-sm text-base-content/60">Statistiques agrégées, aucune donnée nominative</p>
           </div>
@@ -158,7 +158,7 @@ export default function AdminDashboard({ token, username, theme, onToggleTheme, 
             {username}
           </span>
           <Button variant="ghost" size="icon" onClick={onToggleTheme} title="Changer de thème">
-            {theme === "chatmaths-dark" ? <Sun size={18} /> : <Moon size={18} />}
+            {theme === "chatphysique-dark" ? <Sun size={18} /> : <Moon size={18} />}
           </Button>
           <Button variant="ghost" size="icon" onClick={onLogout} title="Se déconnecter">
             <LogOut size={17} />

@@ -1,0 +1,433 @@
+{
+  "matiere": "Physique-Chimie",
+  "partie": "Physique",
+  "niveau": "1ère D",
+  "chapitre": "Physique, Chapitre 1 : Le mouvement du centre d'inertie",
+  "source": "pc/1ered/Chapitre_1_Le_mouvement_du_centre_d_inertie",
+  "nombre_cartes": 36,
+  "cartes": [
+    {
+      "id": "PC1D-P01-001",
+      "lecon": "Le centre d'inertie d'un solide",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on le centre d'inertie $G$ d'un solide ?",
+      "verso": "C'est le point du solide dont le mouvement est le plus simple : lorsque le solide est lancé librement, $G$ décrit une trajectoire simple, alors que les autres points décrivent des courbes compliquées.",
+      "difficulte": 1,
+      "tags": [
+        "centre-inertie",
+        "definition"
+      ]
+    },
+    {
+      "id": "PC1D-P01-002",
+      "lecon": "Le centre d'inertie d'un solide",
+      "type": "definition",
+      "recto": "Quelle différence y a-t-il entre le centre de masse et le centre de gravité d'un solide ?",
+      "verso": "Le centre de masse est le barycentre des masses du solide ; le centre de gravité est le point d'application du poids. Dans un champ de pesanteur uniforme (solide de taille ordinaire), ils sont confondus avec le centre d'inertie $G$.",
+      "difficulte": 2,
+      "tags": [
+        "centre-de-masse",
+        "centre-de-gravite"
+      ]
+    },
+    {
+      "id": "PC1D-P01-003",
+      "lecon": "Le centre d'inertie d'un solide",
+      "type": "formule",
+      "recto": "Pour des points matériels $A_1$, ..., $A_n$ de masses $m_1$, ..., $m_n$, quelle relation vectorielle définit leur centre d'inertie $G$ ?",
+      "verso": "$m_1\\overrightarrow{GA_1} + m_2\\overrightarrow{GA_2} + \\ldots + m_n\\overrightarrow{GA_n} = \\vec{0}$ : $G$ est le barycentre des points pondérés par leurs masses.",
+      "difficulte": 2,
+      "tags": [
+        "barycentre",
+        "relation"
+      ]
+    },
+    {
+      "id": "PC1D-P01-004",
+      "lecon": "Le centre d'inertie d'un solide",
+      "type": "formule",
+      "recto": "Rapportée à une origine $O$ quelconque, quelle expression donne la position du centre d'inertie $G$ de points $A_i$ de masses $m_i$ ?",
+      "verso": "$\\overrightarrow{OG} = \\dfrac{m_1\\overrightarrow{OA_1} + m_2\\overrightarrow{OA_2} + \\ldots + m_n\\overrightarrow{OA_n}}{m_1 + m_2 + \\ldots + m_n}$. En coordonnées : $x_G = \\dfrac{m_1x_1 + \\ldots + m_nx_n}{m_1 + \\ldots + m_n}$, de même pour $y_G$.",
+      "difficulte": 2,
+      "tags": [
+        "barycentre",
+        "coordonnees"
+      ]
+    },
+    {
+      "id": "PC1D-P01-005",
+      "lecon": "Le centre d'inertie d'un solide",
+      "type": "formule",
+      "recto": "Pour un solide formé de deux parties de masses $m_1$ et $m_2$, de centres d'inertie $G_1$ et $G_2$, où se trouve le centre d'inertie $G$ ?",
+      "verso": "$\\overrightarrow{G_1G} = \\dfrac{m_2}{m_1 + m_2}\\,\\overrightarrow{G_1G_2}$ : $G$ est sur le segment $[G_1G_2]$, plus près de la partie la plus lourde.",
+      "difficulte": 2,
+      "tags": [
+        "barycentre",
+        "regroupement"
+      ]
+    },
+    {
+      "id": "PC1D-P01-006",
+      "lecon": "Le centre d'inertie d'un solide",
+      "type": "definition",
+      "recto": "Pour un solide homogène de forme simple (tige, disque, rectangle, triangle), où se trouve le centre d'inertie ?",
+      "verso": "Au centre géométrique : milieu de la tige, centre du disque ou de la sphère, intersection des diagonales du rectangle, intersection des médianes du triangle.",
+      "difficulte": 1,
+      "tags": [
+        "solide-homogene",
+        "centre-geometrique"
+      ]
+    },
+    {
+      "id": "PC1D-P01-007",
+      "lecon": "Le centre d'inertie d'un solide",
+      "type": "definition",
+      "recto": "Pourquoi le centre d'inertie d'un anneau homogène se trouve-t-il en un point où il n'y a pas de matière ?",
+      "verso": "$G$ est un barycentre, une moyenne des positions pondérée par les masses, qui n'est pas forcément un point du solide. Par symétrie, $G$ est au centre du cercle : il peut se trouver hors de la matière.",
+      "difficulte": 3,
+      "tags": [
+        "centre-inertie",
+        "anneau"
+      ]
+    },
+    {
+      "id": "PC1D-P01-008",
+      "lecon": "Le centre d'inertie d'un solide",
+      "type": "formule",
+      "recto": "Comment détermine-t-on expérimentalement le centre d'inertie d'une plaque de forme quelconque ?",
+      "verso": "Par suspension au fil à plomb : suspendue en un point $S$, la plaque s'immobilise avec $G$ sur la verticale de $S$. Deux suspensions donnent deux verticales qui se coupent en $G$.",
+      "difficulte": 2,
+      "tags": [
+        "fil-a-plomb",
+        "experience"
+      ]
+    },
+    {
+      "id": "PC1D-P01-009",
+      "lecon": "Le centre d'inertie d'un solide",
+      "type": "formule",
+      "recto": "Pour calculer le centre d'inertie d'une plaque homogène découpée en formes simples, que remplace-t-on dans la relation du barycentre ?",
+      "verso": "On remplace les masses par les aires des parties, et l'on compte une partie enlevée avec une aire négative.",
+      "difficulte": 2,
+      "tags": [
+        "plaque-homogene",
+        "barycentre"
+      ]
+    },
+    {
+      "id": "PC1D-P01-010",
+      "lecon": "Le centre d'inertie d'un solide",
+      "type": "definition",
+      "recto": "En mécanique, quand dit-on qu'un système est isolé ?",
+      "verso": "Lorsqu'il n'est soumis à aucune force extérieure. Un tel système n'existe pas rigoureusement sur Terre, puisque la pesanteur atteint tout.",
+      "difficulte": 1,
+      "tags": [
+        "systeme-isole"
+      ]
+    },
+    {
+      "id": "PC1D-P01-011",
+      "lecon": "Le centre d'inertie d'un solide",
+      "type": "definition",
+      "recto": "En mécanique, quand dit-on qu'un système est pseudo-isolé ?",
+      "verso": "Lorsque les forces extérieures qui s'exercent sur lui ont une somme vectorielle nulle : $\\vec{F}_1 + \\vec{F}_2 + \\ldots = \\vec{0}$. Elles existent, mais elles se compensent (palet sur coussin d'air horizontal).",
+      "difficulte": 1,
+      "tags": [
+        "systeme-pseudo-isole"
+      ]
+    },
+    {
+      "id": "PC1D-P01-012",
+      "lecon": "Le centre d'inertie d'un solide",
+      "type": "definition",
+      "recto": "Pourquoi un palet qui glisse sur une table à coussin d'air horizontale n'est-il pas un système isolé ?",
+      "verso": "Il est soumis à des forces, son poids et la poussée de l'air ; elles se compensent, donc il est pseudo-isolé. Isolé voudrait dire aucune force.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "pseudo-isole"
+      ]
+    },
+    {
+      "id": "PC1D-P01-013",
+      "lecon": "Le principe de l'inertie et les référentiels galiléens",
+      "type": "formule",
+      "recto": "Comment s'énonce le principe de l'inertie ?",
+      "verso": "Dans un référentiel galiléen, le centre d'inertie $G$ d'un système isolé ou pseudo-isolé est soit au repos, soit animé d'un mouvement rectiligne uniforme : son vecteur vitesse $\\vec{v}_G$ est constant.",
+      "difficulte": 1,
+      "tags": [
+        "principe-inertie"
+      ]
+    },
+    {
+      "id": "PC1D-P01-014",
+      "lecon": "Le principe de l'inertie et les référentiels galiléens",
+      "type": "formule",
+      "recto": "Quelle est la réciproque du principe de l'inertie ?",
+      "verso": "Si le centre d'inertie d'un système est au repos ou en mouvement rectiligne uniforme dans un référentiel galiléen, alors la somme vectorielle des forces extérieures est nulle : le système est isolé ou pseudo-isolé.",
+      "difficulte": 2,
+      "tags": [
+        "principe-inertie",
+        "reciproque"
+      ]
+    },
+    {
+      "id": "PC1D-P01-015",
+      "lecon": "Le principe de l'inertie et les référentiels galiléens",
+      "type": "definition",
+      "recto": "En physique, qu'est-ce qu'un principe ?",
+      "verso": "Une loi que l'on ne démontre pas : on l'admet parce qu'aucune expérience ne l'a mise en défaut, et on la garde tant que ni elle ni ses conséquences ne sont contredites par l'expérience.",
+      "difficulte": 2,
+      "tags": [
+        "principe",
+        "vocabulaire"
+      ]
+    },
+    {
+      "id": "PC1D-P01-016",
+      "lecon": "Le principe de l'inertie et les référentiels galiléens",
+      "type": "formule",
+      "recto": "D'après le principe de l'inertie, quelle force faut-il pour entretenir un mouvement rectiligne uniforme ?",
+      "verso": "Aucune : dans un référentiel galiléen, un mouvement rectiligne uniforme se maintient avec une somme vectorielle des forces extérieures nulle.",
+      "difficulte": 1,
+      "tags": [
+        "consequence",
+        "mouvement-rectiligne-uniforme"
+      ]
+    },
+    {
+      "id": "PC1D-P01-017",
+      "lecon": "Le principe de l'inertie et les référentiels galiléens",
+      "type": "formule",
+      "recto": "Dans un référentiel galiléen, que faut-il pour modifier le vecteur vitesse du centre d'inertie d'un système ?",
+      "verso": "Une somme vectorielle des forces extérieures non nulle, que la modification porte sur la valeur ou sur la direction de la vitesse. Un corps ne peut pas modifier de lui-même son mouvement.",
+      "difficulte": 2,
+      "tags": [
+        "consequence",
+        "vitesse"
+      ]
+    },
+    {
+      "id": "PC1D-P01-018",
+      "lecon": "Le principe de l'inertie et les référentiels galiléens",
+      "type": "definition",
+      "recto": "Pour un solide pseudo-isolé qui tourne sur lui-même, sur quel point porte le principe de l'inertie ?",
+      "verso": "Sur le centre d'inertie seul : $G$ est au repos ou en mouvement rectiligne uniforme, tandis que les autres points peuvent tourner autour de $G$.",
+      "difficulte": 3,
+      "tags": [
+        "centre-inertie",
+        "rotation"
+      ]
+    },
+    {
+      "id": "PC1D-P01-019",
+      "lecon": "Le principe de l'inertie et les référentiels galiléens",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on un référentiel galiléen ?",
+      "verso": "Un référentiel dans lequel le principe de l'inertie est vérifié. Tout référentiel en translation rectiligne uniforme par rapport à un référentiel galiléen est lui-même galiléen.",
+      "difficulte": 2,
+      "tags": [
+        "referentiel-galileen"
+      ]
+    },
+    {
+      "id": "PC1D-P01-020",
+      "lecon": "Le principe de l'inertie et les référentiels galiléens",
+      "type": "definition",
+      "recto": "Quels sont les trois référentiels galiléens usuels et à quoi sert chacun ?",
+      "verso": "Le référentiel terrestre, lié au sol, pour les expériences de courte durée ; le référentiel géocentrique, lié au centre de la Terre, pour les satellites ; le référentiel héliocentrique (de Copernic), lié au centre du Soleil, pour les planètes.",
+      "difficulte": 1,
+      "tags": [
+        "referentiels-usuels"
+      ]
+    },
+    {
+      "id": "PC1D-P01-021",
+      "lecon": "Le principe de l'inertie et les référentiels galiléens",
+      "type": "definition",
+      "recto": "Pourquoi le référentiel d'un véhicule qui freine, accélère ou tourne n'est-il pas galiléen ?",
+      "verso": "Un système pseudo-isolé y voit sa vitesse varier sans qu'aucune force n'apparaisse : le principe de l'inertie n'y est pas vérifié.",
+      "difficulte": 3,
+      "tags": [
+        "referentiel-non-galileen"
+      ]
+    },
+    {
+      "id": "PC1D-P01-022",
+      "lecon": "Le principe de l'inertie et les référentiels galiléens",
+      "type": "definition",
+      "recto": "Pourquoi est-il faux de dire qu'un corps immobile n'est soumis à aucune force ?",
+      "verso": "Le repos et le mouvement rectiligne uniforme correspondent au même état : une somme vectorielle des forces extérieures nulle. Les forces peuvent exister et se compenser.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "repos"
+      ]
+    },
+    {
+      "id": "PC1D-P01-023",
+      "lecon": "Le principe de l'inertie et les référentiels galiléens",
+      "type": "definition",
+      "recto": "Pourquoi un palet qui glisse après une chiquenaude n'est-il pas poussé par une « force de la lancée » ?",
+      "verso": "Une force est toujours exercée par un corps sur un autre et ne se stocke pas. Le doigt ne touche plus le palet : il ne reste que la vitesse acquise, conservée selon le principe de l'inertie.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "force"
+      ]
+    },
+    {
+      "id": "PC1D-P01-024",
+      "lecon": "Le vecteur quantité de mouvement et sa conservation",
+      "type": "formule",
+      "recto": "Comment définit-on le vecteur quantité de mouvement d'un point matériel de masse $m$ animé de la vitesse $\\vec{v}$ ?",
+      "verso": "$\\vec{p} = m\\,\\vec{v}$ : même direction et même sens que $\\vec{v}$, norme $p = mv$, avec $m$ en kg et $v$ en m/s.",
+      "difficulte": 1,
+      "tags": [
+        "quantite-de-mouvement"
+      ]
+    },
+    {
+      "id": "PC1D-P01-025",
+      "lecon": "Le vecteur quantité de mouvement et sa conservation",
+      "type": "definition",
+      "recto": "Quelle est l'unité légale de la quantité de mouvement ?",
+      "verso": "Le kilogramme-mètre par seconde : $\\mathrm{kg \\cdot m/s}$, ou $\\mathrm{kg \\cdot m \\cdot s^{-1}}$.",
+      "difficulte": 1,
+      "tags": [
+        "unite",
+        "quantite-de-mouvement"
+      ]
+    },
+    {
+      "id": "PC1D-P01-026",
+      "lecon": "Le vecteur quantité de mouvement et sa conservation",
+      "type": "formule",
+      "recto": "Comment calcule-t-on la quantité de mouvement $\\vec{p}$ d'un système de masse totale $M$ ?",
+      "verso": "$\\vec{p} = m_1\\vec{v}_1 + m_2\\vec{v}_2 + \\ldots = M\\,\\vec{v}_G$, où $\\vec{v}_G$ est la vitesse du centre d'inertie : tout se passe comme si toute la masse était concentrée en $G$.",
+      "difficulte": 2,
+      "tags": [
+        "systeme",
+        "quantite-de-mouvement"
+      ]
+    },
+    {
+      "id": "PC1D-P01-027",
+      "lecon": "Le vecteur quantité de mouvement et sa conservation",
+      "type": "formule",
+      "recto": "Comment s'énonce le principe de l'inertie en termes de quantité de mouvement ?",
+      "verso": "Dans un référentiel galiléen, le vecteur quantité de mouvement d'un système isolé ou pseudo-isolé reste constant : $\\vec{p} = \\overrightarrow{\\text{cte}}$, et réciproquement.",
+      "difficulte": 2,
+      "tags": [
+        "principe-inertie",
+        "conservation"
+      ]
+    },
+    {
+      "id": "PC1D-P01-028",
+      "lecon": "Le vecteur quantité de mouvement et sa conservation",
+      "type": "formule",
+      "recto": "Lors du choc de deux solides formant un système pseudo-isolé, quelle relation traduit la conservation de la quantité de mouvement ?",
+      "verso": "$m_1\\vec{v}_1 + m_2\\vec{v}_2 = m_1\\vec{v'}_1 + m_2\\vec{v'}_2$ (sans prime : avant le choc ; avec prime : après), dans un référentiel galiléen.",
+      "difficulte": 2,
+      "tags": [
+        "choc",
+        "conservation"
+      ]
+    },
+    {
+      "id": "PC1D-P01-029",
+      "lecon": "Le vecteur quantité de mouvement et sa conservation",
+      "type": "formule",
+      "recto": "Lors d'un choc entre deux solides pseudo-isolés, quelle relation lie les variations $\\Delta\\vec{p}_1$ et $\\Delta\\vec{p}_2$ de leurs quantités de mouvement ?",
+      "verso": "$\\Delta\\vec{p}_1 = -\\Delta\\vec{p}_2$ : ce que l'un gagne en quantité de mouvement, l'autre le perd exactement. L'interaction est un échange.",
+      "difficulte": 2,
+      "tags": [
+        "transfert",
+        "choc"
+      ]
+    },
+    {
+      "id": "PC1D-P01-030",
+      "lecon": "Le vecteur quantité de mouvement et sa conservation",
+      "type": "formule",
+      "recto": "Pour un choc mou entre deux solides, quelle relation donne la vitesse commune $\\vec{v'}$ après le choc ?",
+      "verso": "$m_1\\vec{v}_1 + m_2\\vec{v}_2 = (m_1 + m_2)\\,\\vec{v'}$ : les deux solides restent accrochés et repartent ensemble.",
+      "difficulte": 2,
+      "tags": [
+        "choc-mou"
+      ]
+    },
+    {
+      "id": "PC1D-P01-031",
+      "lecon": "Le vecteur quantité de mouvement et sa conservation",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on un choc élastique ?",
+      "verso": "Un choc après lequel les solides restent séparés et qui ne fait perdre aucune énergie ; les billes de verre en donnent une bonne approximation. La quantité de mouvement se conserve, que le choc soit élastique ou non.",
+      "difficulte": 2,
+      "tags": [
+        "choc-elastique"
+      ]
+    },
+    {
+      "id": "PC1D-P01-032",
+      "lecon": "Le vecteur quantité de mouvement et sa conservation",
+      "type": "formule",
+      "recto": "Lors de l'éclatement d'un système initialement au repos en deux morceaux, quelle relation lie leurs vitesses $\\vec{v'}_1$ et $\\vec{v'}_2$ ?",
+      "verso": "$m_1\\vec{v'}_1 + m_2\\vec{v'}_2 = \\vec{0}$, donc $\\vec{v'}_2 = -\\dfrac{m_1}{m_2}\\vec{v'}_1$ : les morceaux partent en sens contraires, le plus lourd le plus lentement.",
+      "difficulte": 2,
+      "tags": [
+        "eclatement",
+        "recul"
+      ]
+    },
+    {
+      "id": "PC1D-P01-033",
+      "lecon": "Le vecteur quantité de mouvement et sa conservation",
+      "type": "definition",
+      "recto": "Pourquoi une fusée peut-elle accélérer dans le vide, sans air sur lequel s'appuyer ?",
+      "verso": "Le système fusée et gaz est pseudo-isolé : sa quantité de mouvement totale se conserve. Les gaz éjectés vers l'arrière emportent une quantité de mouvement vers l'arrière, la fusée acquiert une quantité de mouvement égale et opposée, vers l'avant.",
+      "difficulte": 2,
+      "tags": [
+        "propulsion",
+        "fusee"
+      ]
+    },
+    {
+      "id": "PC1D-P01-034",
+      "lecon": "Le vecteur quantité de mouvement et sa conservation",
+      "type": "definition",
+      "recto": "Quelle est la quantité de mouvement d'une roue qui tourne autour d'un axe fixe passant par son centre d'inertie ?",
+      "verso": "Elle est nulle : ses points bougent, mais $\\vec{v}_G = \\vec{0}$, donc $\\vec{p} = M\\vec{v}_G = \\vec{0}$.",
+      "difficulte": 3,
+      "tags": [
+        "rotation",
+        "quantite-de-mouvement"
+      ]
+    },
+    {
+      "id": "PC1D-P01-035",
+      "lecon": "Le vecteur quantité de mouvement et sa conservation",
+      "type": "definition",
+      "recto": "Lors d'un choc frontal, pourquoi ne peut-on pas additionner les valeurs $m_1v_1$ et $m_2v_2$ toutes positives ?",
+      "verso": "Les deux solides vont en sens contraires : sur un axe orienté, l'une des vitesses est négative, et sa quantité de mouvement aussi. Les valeurs algébriques s'écrivent avec leur signe.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "signe"
+      ]
+    },
+    {
+      "id": "PC1D-P01-036",
+      "lecon": "Le vecteur quantité de mouvement et sa conservation",
+      "type": "definition",
+      "recto": "Lors d'un choc entre deux billes, à quel système applique-t-on la conservation de la quantité de mouvement ?",
+      "verso": "A l'ensemble des deux billes, seul système pseudo-isolé : les forces du choc y sont intérieures. La quantité de mouvement d'une seule bille ne se conserve pas.",
+      "difficulte": 3,
+      "tags": [
+        "systeme",
+        "choc"
+      ]
+    }
+  ]
+}

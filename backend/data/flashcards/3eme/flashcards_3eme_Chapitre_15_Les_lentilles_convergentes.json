@@ -1,0 +1,409 @@
+{
+  "matiere": "Physique-Chimie",
+  "partie": "Physique",
+  "niveau": "3ème",
+  "chapitre": "Physique, Chapitre 15 : Les lentilles convergentes",
+  "source": "pc/3eme/Chapitre_15_Les_lentilles_convergentes",
+  "nombre_cartes": 34,
+  "cartes": [
+    {
+      "id": "PC3E-P15-001",
+      "lecon": "Les lentilles et la reconnaissance d'une lentille convergente",
+      "type": "definition",
+      "recto": "En optique, qu'est-ce qu'une lentille ?",
+      "verso": "C'est un milieu transparent, en verre ou en plastique, limité par deux faces dont l'une au moins est courbe.",
+      "difficulte": 1,
+      "tags": [
+        "lentille",
+        "vocabulaire"
+      ]
+    },
+    {
+      "id": "PC3E-P15-002",
+      "lecon": "Les lentilles et la reconnaissance d'une lentille convergente",
+      "type": "definition",
+      "recto": "A quoi reconnaît-on une lentille convergente par sa forme ?",
+      "verso": "Elle est à bords minces : plus épaisse au centre qu'aux bords. Au toucher, on sent que son centre est plus épais.",
+      "difficulte": 1,
+      "tags": [
+        "lentille-convergente",
+        "reconnaissance"
+      ]
+    },
+    {
+      "id": "PC3E-P15-003",
+      "lecon": "Les lentilles et la reconnaissance d'une lentille convergente",
+      "type": "definition",
+      "recto": "A quoi reconnaît-on une lentille divergente par sa forme ?",
+      "verso": "Elle est à bords épais : plus mince au centre qu'aux bords.",
+      "difficulte": 1,
+      "tags": [
+        "lentille-divergente",
+        "reconnaissance"
+      ]
+    },
+    {
+      "id": "PC3E-P15-004",
+      "lecon": "Les lentilles et la reconnaissance d'une lentille convergente",
+      "type": "definition",
+      "recto": "Quel effet une lentille convergente a-t-elle sur un faisceau de lumière parallèle ?",
+      "verso": "Elle le rassemble en un point. (Une lentille divergente, au contraire, écarte les rayons d'un tel faisceau.)",
+      "difficulte": 2,
+      "tags": [
+        "lentille-convergente"
+      ]
+    },
+    {
+      "id": "PC3E-P15-005",
+      "lecon": "Les lentilles et la reconnaissance d'une lentille convergente",
+      "type": "definition",
+      "recto": "Pour une face de lentille, que signifient les mots convexe et concave ?",
+      "verso": "Convexe : bombée vers l'extérieur. Concave : creusée. Une face peut aussi être plane.",
+      "difficulte": 2,
+      "tags": [
+        "convexe",
+        "concave"
+      ]
+    },
+    {
+      "id": "PC3E-P15-006",
+      "lecon": "Les lentilles et la reconnaissance d'une lentille convergente",
+      "type": "definition",
+      "recto": "Quelles sont les trois formes de lentilles convergentes ?",
+      "verso": "La lentille biconvexe, la lentille plan-convexe et le ménisque à bords minces (ou ménisque convergent).",
+      "difficulte": 2,
+      "tags": [
+        "formes",
+        "lentille-convergente"
+      ]
+    },
+    {
+      "id": "PC3E-P15-007",
+      "lecon": "Les lentilles et la reconnaissance d'une lentille convergente",
+      "type": "definition",
+      "recto": "Quelles sont les trois formes de lentilles divergentes ?",
+      "verso": "La lentille biconcave, la lentille plan-concave et le ménisque à bords épais (ou ménisque divergent).",
+      "difficulte": 2,
+      "tags": [
+        "formes",
+        "lentille-divergente"
+      ]
+    },
+    {
+      "id": "PC3E-P15-008",
+      "lecon": "Les lentilles et la reconnaissance d'une lentille convergente",
+      "type": "definition",
+      "recto": "Qu'est-ce qu'un ménisque à bords minces ?",
+      "verso": "Une lentille convergente dont les deux faces sont courbées dans le même sens, la face bombée l'emportant sur la face creuse.",
+      "difficulte": 3,
+      "tags": [
+        "menisque"
+      ]
+    },
+    {
+      "id": "PC3E-P15-009",
+      "lecon": "Les lentilles et la reconnaissance d'une lentille convergente",
+      "type": "definition",
+      "recto": "Quel est le symbole d'une lentille convergente sur un schéma ?",
+      "verso": "Un segment vertical portant à chaque extrémité une flèche dirigée vers l'extérieur.",
+      "difficulte": 1,
+      "tags": [
+        "symbole",
+        "lentille-convergente"
+      ]
+    },
+    {
+      "id": "PC3E-P15-010",
+      "lecon": "Les lentilles et la reconnaissance d'une lentille convergente",
+      "type": "definition",
+      "recto": "Quel est le symbole d'une lentille divergente sur un schéma ?",
+      "verso": "Un segment vertical portant à chaque extrémité une flèche dirigée vers l'intérieur.",
+      "difficulte": 2,
+      "tags": [
+        "symbole",
+        "lentille-divergente"
+      ]
+    },
+    {
+      "id": "PC3E-P15-011",
+      "lecon": "Les lentilles et la reconnaissance d'une lentille convergente",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on le centre optique d'une lentille ?",
+      "verso": "C'est le point situé au milieu de la lentille, noté $\\mathrm{O}$. Ce n'est pas un trou.",
+      "difficulte": 1,
+      "tags": [
+        "centre-optique"
+      ]
+    },
+    {
+      "id": "PC3E-P15-012",
+      "lecon": "Les lentilles et la reconnaissance d'une lentille convergente",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on l'axe optique d'une lentille ?",
+      "verso": "C'est la droite qui passe par le centre optique $\\mathrm{O}$ et qui est perpendiculaire au plan de la lentille ; c'est son axe de symétrie.",
+      "difficulte": 2,
+      "tags": [
+        "axe-optique"
+      ]
+    },
+    {
+      "id": "PC3E-P15-013",
+      "lecon": "Les lentilles et la reconnaissance d'une lentille convergente",
+      "type": "definition",
+      "recto": "Pourquoi est-il faux de dire qu'une lentille grossit la lumière ?",
+      "verso": "Une lentille ne grossit pas la lumière : elle la dévie.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "lentille"
+      ]
+    },
+    {
+      "id": "PC3E-P15-014",
+      "lecon": "Les foyers d'une lentille convergente",
+      "type": "definition",
+      "recto": "Pour une lentille convergente, qu'appelle-t-on le foyer image $\\mathrm{F'}$ ?",
+      "verso": "C'est le point de l'axe optique où se rassemblent, après la traversée de la lentille, tous les rayons arrivés parallèlement à l'axe optique.",
+      "difficulte": 2,
+      "tags": [
+        "foyer-image"
+      ]
+    },
+    {
+      "id": "PC3E-P15-015",
+      "lecon": "Les foyers d'une lentille convergente",
+      "type": "definition",
+      "recto": "Pour une lentille convergente, qu'appelle-t-on le foyer objet $\\mathrm{F}$ ?",
+      "verso": "C'est le point de l'axe optique tel que tout rayon issu de ce point ressort de la lentille parallèlement à l'axe optique.",
+      "difficulte": 2,
+      "tags": [
+        "foyer-objet"
+      ]
+    },
+    {
+      "id": "PC3E-P15-016",
+      "lecon": "Les foyers d'une lentille convergente",
+      "type": "definition",
+      "recto": "Par rapport à une lentille convergente, où se trouvent le foyer objet $\\mathrm{F}$ et le foyer image $\\mathrm{F'}$ ?",
+      "verso": "$\\mathrm{F}$ est avant la lentille et $\\mathrm{F'}$ après la lentille, dans le sens de propagation de la lumière.",
+      "difficulte": 2,
+      "tags": [
+        "foyers",
+        "position"
+      ]
+    },
+    {
+      "id": "PC3E-P15-017",
+      "lecon": "Les foyers d'une lentille convergente",
+      "type": "formule",
+      "recto": "Quelle propriété de symétrie relie les deux foyers d'une lentille convergente ?",
+      "verso": "$\\mathrm{F}$ et $\\mathrm{F'}$ sont symétriques par rapport au centre optique $\\mathrm{O}$ : de part et d'autre de $\\mathrm{O}$, à la même distance, $\\mathrm{OF} = \\mathrm{OF'}$.",
+      "difficulte": 2,
+      "tags": [
+        "foyers",
+        "symetrie"
+      ]
+    },
+    {
+      "id": "PC3E-P15-018",
+      "lecon": "Les foyers d'une lentille convergente",
+      "type": "definition",
+      "recto": "Que signifie l'expression « objet à l'infini » en optique ?",
+      "verso": "Un objet très éloigné, comme le Soleil, dont les rayons arrivent parallèles entre eux.",
+      "difficulte": 1,
+      "tags": [
+        "infini"
+      ]
+    },
+    {
+      "id": "PC3E-P15-019",
+      "lecon": "Les foyers d'une lentille convergente",
+      "type": "formule",
+      "recto": "Comment ressort d'une lentille convergente un rayon arrivé parallèlement à l'axe optique ?",
+      "verso": "Il ressort en passant par le foyer image $\\mathrm{F'}$.",
+      "difficulte": 1,
+      "tags": [
+        "trace",
+        "foyer-image"
+      ]
+    },
+    {
+      "id": "PC3E-P15-020",
+      "lecon": "Les foyers d'une lentille convergente",
+      "type": "formule",
+      "recto": "Comment ressort d'une lentille convergente un rayon issu du foyer objet $\\mathrm{F}$ ?",
+      "verso": "Il ressort parallèlement à l'axe optique.",
+      "difficulte": 2,
+      "tags": [
+        "trace",
+        "foyer-objet"
+      ]
+    },
+    {
+      "id": "PC3E-P15-021",
+      "lecon": "Les foyers d'une lentille convergente",
+      "type": "definition",
+      "recto": "Pourquoi le point lumineux obtenu avec une lampe proche n'est-il pas exactement le foyer image d'une lentille convergente ?",
+      "verso": "Les rayons d'une lampe proche arrivent légèrement divergents : ils se rassemblent au-delà de $\\mathrm{F'}$. Le foyer image est défini pour un faisceau rigoureusement parallèle à l'axe.",
+      "difficulte": 3,
+      "tags": [
+        "foyer-image",
+        "mesure"
+      ]
+    },
+    {
+      "id": "PC3E-P15-022",
+      "lecon": "Les foyers d'une lentille convergente",
+      "type": "definition",
+      "recto": "Quelle erreur commet-on en plaçant le foyer image d'une lentille convergente avant la lentille ?",
+      "verso": "On confond $\\mathrm{F}$ et $\\mathrm{F'}$ : le foyer image $\\mathrm{F'}$ est après la lentille, c'est le foyer objet $\\mathrm{F}$ qui est avant.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "foyers"
+      ]
+    },
+    {
+      "id": "PC3E-P15-023",
+      "lecon": "La distance focale et la vergence",
+      "type": "definition",
+      "recto": "Pour une lentille convergente, qu'appelle-t-on la distance focale $f$ ?",
+      "verso": "C'est la distance qui sépare le centre optique $\\mathrm{O}$ du foyer image $\\mathrm{F'}$ : $f = \\mathrm{OF'} = \\mathrm{OF}$. Elle s'exprime en mètres ($\\mathrm{m}$).",
+      "difficulte": 1,
+      "tags": [
+        "distance-focale"
+      ]
+    },
+    {
+      "id": "PC3E-P15-024",
+      "lecon": "La distance focale et la vergence",
+      "type": "formule",
+      "recto": "Pour une lentille convergente de distance focale $f$, quelle distance sépare les deux foyers $\\mathrm{F}$ et $\\mathrm{F'}$ ?",
+      "verso": "$\\mathrm{FF'} = 2f$, puisque les foyers sont symétriques par rapport à $\\mathrm{O}$.",
+      "difficulte": 2,
+      "tags": [
+        "distance-focale",
+        "foyers"
+      ]
+    },
+    {
+      "id": "PC3E-P15-025",
+      "lecon": "La distance focale et la vergence",
+      "type": "formule",
+      "recto": "Quelle relation lie la vergence $C$ d'une lentille convergente à sa distance focale $f$ ?",
+      "verso": "$C = \\dfrac{1}{f}$, et réciproquement $f = \\dfrac{1}{C}$, avec $C$ en dioptries ($\\delta$) et $f$ obligatoirement en mètres.",
+      "difficulte": 2,
+      "tags": [
+        "vergence",
+        "relation"
+      ]
+    },
+    {
+      "id": "PC3E-P15-026",
+      "lecon": "La distance focale et la vergence",
+      "type": "definition",
+      "recto": "Quelle est l'unité de la vergence, avec son symbole ?",
+      "verso": "La dioptrie, de symbole $\\delta$ (lettre grecque, et non « d ») : $1~\\delta = 1~\\mathrm{m^{-1}}$.",
+      "difficulte": 1,
+      "tags": [
+        "vergence",
+        "unite"
+      ]
+    },
+    {
+      "id": "PC3E-P15-027",
+      "lecon": "La distance focale et la vergence",
+      "type": "definition",
+      "recto": "Quelle est la distance focale d'une lentille de vergence $1~\\delta$ ?",
+      "verso": "$1~\\mathrm{m}$ : une lentille a une vergence de $1~\\delta$ lorsque sa distance focale vaut $1~\\mathrm{m}$.",
+      "difficulte": 2,
+      "tags": [
+        "dioptrie"
+      ]
+    },
+    {
+      "id": "PC3E-P15-028",
+      "lecon": "La distance focale et la vergence",
+      "type": "definition",
+      "recto": "Pourquoi la vergence d'une lentille de distance focale $5~\\mathrm{cm}$ n'est-elle pas $0{,}2~\\delta$ ?",
+      "verso": "La distance focale doit être en mètres : $f = 0{,}05~\\mathrm{m}$, donc $C = \\dfrac{1}{0{,}05} = 20~\\delta$.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "conversion",
+        "vergence"
+      ]
+    },
+    {
+      "id": "PC3E-P15-029",
+      "lecon": "La distance focale et la vergence",
+      "type": "definition",
+      "recto": "Comment varie la distance focale d'une lentille convergente quand sa vergence augmente ?",
+      "verso": "Elle diminue : grande vergence, courte distance focale, lentille très bombée. La vergence ne dit rien du diamètre de la lentille.",
+      "difficulte": 2,
+      "tags": [
+        "vergence",
+        "distance-focale"
+      ]
+    },
+    {
+      "id": "PC3E-P15-030",
+      "lecon": "La distance focale et la vergence",
+      "type": "definition",
+      "recto": "Quels sont les ordres de grandeur de la vergence d'un verre de lunettes et d'une loupe ?",
+      "verso": "Verre de lunettes : $1$ à $4~\\delta$. Loupe : $10$ à $40~\\delta$ (quelques dizaines de dioptries).",
+      "difficulte": 2,
+      "tags": [
+        "ordre-de-grandeur",
+        "vergence"
+      ]
+    },
+    {
+      "id": "PC3E-P15-031",
+      "lecon": "La distance focale et la vergence",
+      "type": "definition",
+      "recto": "En quoi consiste la méthode de l'objet éloigné pour mesurer la distance focale d'une lentille convergente ?",
+      "verso": "On présente la lentille face au Soleil ou à un objet lointain et on déplace l'écran jusqu'à la tache la plus nette et la plus petite : la distance lentille-écran est la distance focale.",
+      "difficulte": 2,
+      "tags": [
+        "mesure",
+        "methode-objet-eloigne"
+      ]
+    },
+    {
+      "id": "PC3E-P15-032",
+      "lecon": "La distance focale et la vergence",
+      "type": "definition",
+      "recto": "Quelles précautions assurent une bonne mesure de la distance focale par la méthode de l'objet éloigné ?",
+      "verso": "Tenir la lentille perpendiculaire à la direction de la lumière, mesurer à partir du centre optique et non de la monture, recommencer trois fois et prendre la moyenne.",
+      "difficulte": 3,
+      "tags": [
+        "mesure",
+        "precautions"
+      ]
+    },
+    {
+      "id": "PC3E-P15-033",
+      "lecon": "La distance focale et la vergence",
+      "type": "definition",
+      "recto": "Pourquoi ne faut-il jamais écrire une distance focale en dioptries ?",
+      "verso": "La distance focale s'exprime en mètres ; c'est la vergence, son inverse, qui s'exprime en dioptries ($\\delta$).",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "unite"
+      ]
+    },
+    {
+      "id": "PC3E-P15-034",
+      "lecon": "La distance focale et la vergence",
+      "type": "definition",
+      "recto": "Quelles règles de sécurité s'appliquent quand on manipule une lentille convergente au soleil ?",
+      "verso": "Ne jamais regarder le Soleil à travers une lentille, et ne jamais laisser une loupe au soleil sur du papier ou du tissu.",
+      "difficulte": 1,
+      "tags": [
+        "securite"
+      ]
+    }
+  ]
+}

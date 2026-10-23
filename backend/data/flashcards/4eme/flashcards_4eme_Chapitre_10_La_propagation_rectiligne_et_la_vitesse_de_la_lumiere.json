@@ -1,0 +1,421 @@
+{
+  "matiere": "Physique-Chimie",
+  "partie": "Physique",
+  "niveau": "4ème",
+  "chapitre": "Physique, Chapitre 10 : La propagation rectiligne et la vitesse de la lumière",
+  "source": "pc/4eme/Chapitre_10_La_propagation_rectiligne_et_la_vitesse_de_la_lumiere",
+  "nombre_cartes": 35,
+  "cartes": [
+    {
+      "id": "PC4E-P10-001",
+      "lecon": "La propagation rectiligne de la lumière et le rayon lumineux",
+      "type": "formule",
+      "recto": "Quel est le principe de propagation rectiligne de la lumière ?",
+      "verso": "Dans un milieu transparent et homogène, la lumière se propage en ligne droite.",
+      "difficulte": 1,
+      "tags": [
+        "propagation-rectiligne"
+      ]
+    },
+    {
+      "id": "PC4E-P10-002",
+      "lecon": "La propagation rectiligne de la lumière et le rayon lumineux",
+      "type": "definition",
+      "recto": "En optique, qu'appelle-t-on un milieu transparent ?",
+      "verso": "C'est un milieu qui laisse passer la lumière, comme l'air calme, l'eau propre ou le verre.",
+      "difficulte": 1,
+      "tags": [
+        "milieu-transparent",
+        "vocabulaire"
+      ]
+    },
+    {
+      "id": "PC4E-P10-003",
+      "lecon": "La propagation rectiligne de la lumière et le rayon lumineux",
+      "type": "definition",
+      "recto": "En optique, qu'appelle-t-on un milieu homogène ?",
+      "verso": "C'est un milieu qui possède les mêmes propriétés en tous ses points. L'air calme, l'eau propre, le verre et le vide sont transparents et homogènes.",
+      "difficulte": 2,
+      "tags": [
+        "milieu-homogene",
+        "vocabulaire"
+      ]
+    },
+    {
+      "id": "PC4E-P10-004",
+      "lecon": "La propagation rectiligne de la lumière et le rayon lumineux",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on un rayon de lumière ?",
+      "verso": "C'est le trajet suivi par la lumière dans un milieu transparent et homogène. On le représente par un trait droit muni d'une flèche qui indique le sens de propagation.",
+      "difficulte": 1,
+      "tags": [
+        "rayon-lumineux"
+      ]
+    },
+    {
+      "id": "PC4E-P10-005",
+      "lecon": "La propagation rectiligne de la lumière et le rayon lumineux",
+      "type": "definition",
+      "recto": "Pourquoi dit-on que le rayon lumineux est un modèle ?",
+      "verso": "Parce qu'on ne peut pas isoler un rayon : même avec le plus fin des trous, il passe toujours un mince pinceau de lumière. Ce modèle permet pourtant de tout construire à la règle.",
+      "difficulte": 2,
+      "tags": [
+        "rayon-lumineux",
+        "modele"
+      ]
+    },
+    {
+      "id": "PC4E-P10-006",
+      "lecon": "La propagation rectiligne de la lumière et le rayon lumineux",
+      "type": "formule",
+      "recto": "Dans quel sens se propage la lumière lorsqu'on voit un objet éclairé par une lampe ?",
+      "verso": "De la source vers l'objet, puis de l'objet vers l'oeil : lampe $\\rightarrow$ objet $\\rightarrow$ oeil. La lumière ne part jamais de l'oeil.",
+      "difficulte": 2,
+      "tags": [
+        "sens-de-propagation"
+      ]
+    },
+    {
+      "id": "PC4E-P10-007",
+      "lecon": "La propagation rectiligne de la lumière et le rayon lumineux",
+      "type": "definition",
+      "recto": "Qu'est-ce qu'un mirage, du point de vue de la propagation de la lumière ?",
+      "verso": "Au-dessus du goudron brûlant, l'air est transparent mais non homogène : la lumière s'y courbe et apporte l'image du ciel, qu'on prend pour une flaque.",
+      "difficulte": 2,
+      "tags": [
+        "mirage",
+        "milieu-homogene"
+      ]
+    },
+    {
+      "id": "PC4E-P10-008",
+      "lecon": "La propagation rectiligne de la lumière et le rayon lumineux",
+      "type": "formule",
+      "recto": "Quelle erreur commet un élève qui écrit que la lumière se propage en ligne droite dans tous les milieux ?",
+      "verso": "Il oublie la condition : la lumière ne va en ligne droite que dans un milieu transparent et homogène. Dans l'air non homogène au-dessus du goudron brûlant, elle se courbe (mirage).",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "propagation-rectiligne"
+      ]
+    },
+    {
+      "id": "PC4E-P10-009",
+      "lecon": "Les faisceaux, la chambre noire et la rencontre d'une surface",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on un faisceau lumineux ?",
+      "verso": "C'est un ensemble de rayons de lumière.",
+      "difficulte": 1,
+      "tags": [
+        "faisceau"
+      ]
+    },
+    {
+      "id": "PC4E-P10-010",
+      "lecon": "Les faisceaux, la chambre noire et la rencontre d'une surface",
+      "type": "definition",
+      "recto": "Quelles sont les trois sortes de faisceaux lumineux, distinguées par l'écartement de leurs rayons ?",
+      "verso": "Divergent : les rayons s'écartent. Convergent : ils se rapprochent et se coupent en un même point. Parallèle : ils gardent partout le même écartement.",
+      "difficulte": 2,
+      "tags": [
+        "faisceau",
+        "divergent",
+        "convergent"
+      ]
+    },
+    {
+      "id": "PC4E-P10-011",
+      "lecon": "Les faisceaux, la chambre noire et la rencontre d'une surface",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on un diaphragme en optique ?",
+      "verso": "C'est une ouverture percée dans un corps opaque, qui limite la largeur d'un faisceau et règle la quantité de lumière qui passe.",
+      "difficulte": 1,
+      "tags": [
+        "diaphragme"
+      ]
+    },
+    {
+      "id": "PC4E-P10-012",
+      "lecon": "Les faisceaux, la chambre noire et la rencontre d'une surface",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on une chambre noire ?",
+      "verso": "C'est une boîte fermée aux parois intérieures noires, percée d'un petit trou (le sténopé) sur une face et munie d'un écran translucide sur la face opposée.",
+      "difficulte": 1,
+      "tags": [
+        "chambre-noire",
+        "stenope"
+      ]
+    },
+    {
+      "id": "PC4E-P10-013",
+      "lecon": "Les faisceaux, la chambre noire et la rencontre d'une surface",
+      "type": "definition",
+      "recto": "Comment est orientée l'image d'un objet lumineux donnée par une chambre noire ?",
+      "verso": "Elle est renversée : retournée de haut en bas et de gauche à droite, comme après un demi-tour de l'objet.",
+      "difficulte": 2,
+      "tags": [
+        "chambre-noire",
+        "image"
+      ]
+    },
+    {
+      "id": "PC4E-P10-014",
+      "lecon": "Les faisceaux, la chambre noire et la rencontre d'une surface",
+      "type": "formule",
+      "recto": "Pourquoi l'image donnée par une chambre noire est-elle renversée ?",
+      "verso": "La lumière se propage en ligne droite : le rayon parti du haut de l'objet arrive en bas de l'écran et celui parti du bas arrive en haut, car ils se croisent au trou.",
+      "difficulte": 2,
+      "tags": [
+        "chambre-noire",
+        "propagation-rectiligne"
+      ]
+    },
+    {
+      "id": "PC4E-P10-015",
+      "lecon": "Les faisceaux, la chambre noire et la rencontre d'une surface",
+      "type": "formule",
+      "recto": "Comment la taille du trou d'une chambre noire influe-t-elle sur l'image ?",
+      "verso": "Plus le trou est petit, plus l'image est nette ; plus il est grand, plus elle est lumineuse, mais floue.",
+      "difficulte": 2,
+      "tags": [
+        "chambre-noire",
+        "nettete"
+      ]
+    },
+    {
+      "id": "PC4E-P10-016",
+      "lecon": "Les faisceaux, la chambre noire et la rencontre d'une surface",
+      "type": "formule",
+      "recto": "Pour une chambre noire, quelle relation lie la hauteur $A'B'$ de l'image, la hauteur $AB$ de l'objet, sa distance $d$ au trou et la profondeur $d'$ de la boîte ?",
+      "verso": "$A'B' = AB \\times \\dfrac{d'}{d}$, toutes les longueurs étant exprimées dans la même unité.",
+      "difficulte": 2,
+      "tags": [
+        "chambre-noire",
+        "relation"
+      ]
+    },
+    {
+      "id": "PC4E-P10-017",
+      "lecon": "Les faisceaux, la chambre noire et la rencontre d'une surface",
+      "type": "formule",
+      "recto": "Pour une chambre noire, comment varie la taille de l'image avec la profondeur de la boîte et la distance de l'objet ?",
+      "verso": "Plus la boîte est profonde, plus l'image est grande ; plus l'objet est loin du trou, plus l'image est petite.",
+      "difficulte": 2,
+      "tags": [
+        "chambre-noire",
+        "relation"
+      ]
+    },
+    {
+      "id": "PC4E-P10-018",
+      "lecon": "Les faisceaux, la chambre noire et la rencontre d'une surface",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on la réfraction de la lumière ?",
+      "verso": "C'est le brusque changement de direction de la lumière lorsqu'elle traverse la surface séparant deux milieux transparents différents, l'air et l'eau par exemple.",
+      "difficulte": 2,
+      "tags": [
+        "refraction"
+      ]
+    },
+    {
+      "id": "PC4E-P10-019",
+      "lecon": "Les faisceaux, la chambre noire et la rencontre d'une surface",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on la réflexion de la lumière ?",
+      "verso": "C'est le renvoi de la lumière dans une direction bien déterminée par une surface polie, comme un miroir ou l'eau calme.",
+      "difficulte": 2,
+      "tags": [
+        "reflexion"
+      ]
+    },
+    {
+      "id": "PC4E-P10-020",
+      "lecon": "Les faisceaux, la chambre noire et la rencontre d'une surface",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on la diffusion de la lumière ?",
+      "verso": "C'est le renvoi de la lumière dans toutes les directions par une surface non polie, comme un mur, une feuille de papier ou des poussières.",
+      "difficulte": 2,
+      "tags": [
+        "diffusion"
+      ]
+    },
+    {
+      "id": "PC4E-P10-021",
+      "lecon": "Les faisceaux, la chambre noire et la rencontre d'une surface",
+      "type": "definition",
+      "recto": "Quelle différence y a-t-il entre un corps qui émet de la lumière et un corps qui la diffuse ?",
+      "verso": "Un corps qui émet fabrique lui-même la lumière qu'il envoie. Un corps qui diffuse ne fabrique rien : il renvoie la lumière reçue et cesse d'être visible dès qu'on le prive de lumière.",
+      "difficulte": 2,
+      "tags": [
+        "emission",
+        "diffusion"
+      ]
+    },
+    {
+      "id": "PC4E-P10-022",
+      "lecon": "Les faisceaux, la chambre noire et la rencontre d'une surface",
+      "type": "formule",
+      "recto": "Quel test permet de savoir si un corps émet ou diffuse de la lumière ?",
+      "verso": "On coupe toute autre lumière et on regarde ce qui reste visible : la flamme reste visible, elle émet ; le mur ou la craie disparaissent, ils diffusent.",
+      "difficulte": 2,
+      "tags": [
+        "emission",
+        "diffusion",
+        "test"
+      ]
+    },
+    {
+      "id": "PC4E-P10-023",
+      "lecon": "Les faisceaux, la chambre noire et la rencontre d'une surface",
+      "type": "formule",
+      "recto": "Pourquoi est-il faux de dire que la Lune émet de la lumière puisqu'elle brille ?",
+      "verso": "La Lune ne fabrique aucune lumière : elle diffuse celle qu'elle reçoit du Soleil. Sans le Soleil, elle serait invisible.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "diffusion",
+        "lune"
+      ]
+    },
+    {
+      "id": "PC4E-P10-024",
+      "lecon": "Les faisceaux, la chambre noire et la rencontre d'une surface",
+      "type": "formule",
+      "recto": "Pourquoi un très grand trou n'améliore-t-il pas l'image d'une chambre noire ?",
+      "verso": "Il rend l'image plus lumineuse mais plus floue : netteté et luminosité varient en sens contraire.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "chambre-noire"
+      ]
+    },
+    {
+      "id": "PC4E-P10-025",
+      "lecon": "La vitesse de la lumière et l'année-lumière",
+      "type": "formule",
+      "recto": "Quelle est la valeur de la vitesse de la lumière dans le vide ?",
+      "verso": "$c = 3 \\times 10^{8}~\\mathrm{m/s}$, soit $300\\,000~\\mathrm{km/s}$. C'est la plus grande vitesse qui existe dans la nature.",
+      "difficulte": 1,
+      "tags": [
+        "vitesse-lumiere"
+      ]
+    },
+    {
+      "id": "PC4E-P10-026",
+      "lecon": "La vitesse de la lumière et l'année-lumière",
+      "type": "definition",
+      "recto": "Quel autre nom, noté $c$, donne-t-on à la vitesse de la lumière dans le vide ?",
+      "verso": "On l'appelle aussi la célérité de la lumière.",
+      "difficulte": 1,
+      "tags": [
+        "celerite",
+        "vocabulaire"
+      ]
+    },
+    {
+      "id": "PC4E-P10-027",
+      "lecon": "La vitesse de la lumière et l'année-lumière",
+      "type": "formule",
+      "recto": "Au collège, quelle valeur prend-on pour la vitesse de la lumière dans l'air ?",
+      "verso": "La même que dans le vide, $3 \\times 10^{8}~\\mathrm{m/s}$ : dans l'air elle est très légèrement inférieure, mais la différence est négligeable.",
+      "difficulte": 2,
+      "tags": [
+        "vitesse-lumiere",
+        "air"
+      ]
+    },
+    {
+      "id": "PC4E-P10-028",
+      "lecon": "La vitesse de la lumière et l'année-lumière",
+      "type": "formule",
+      "recto": "Quelle relation lie la distance $d$ parcourue par la lumière, sa vitesse $c$ et la durée $t$ du trajet ?",
+      "verso": "$d = c \\times t$, d'où $t = \\dfrac{d}{c}$ et $c = \\dfrac{d}{t}$, avec $d$ en mètres, $t$ en secondes et $c$ en $\\mathrm{m/s}$ (convertir avant de calculer).",
+      "difficulte": 2,
+      "tags": [
+        "relation",
+        "vitesse-lumiere"
+      ]
+    },
+    {
+      "id": "PC4E-P10-029",
+      "lecon": "La vitesse de la lumière et l'année-lumière",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on une année-lumière ?",
+      "verso": "C'est la distance parcourue par la lumière en une année. Son symbole est a.l. ; elle vaut environ $9{,}5 \\times 10^{12}~\\mathrm{km}$.",
+      "difficulte": 1,
+      "tags": [
+        "annee-lumiere"
+      ]
+    },
+    {
+      "id": "PC4E-P10-030",
+      "lecon": "La vitesse de la lumière et l'année-lumière",
+      "type": "formule",
+      "recto": "Pourquoi est-il faux de dire qu'une étoile située à 4 années-lumière est « à 4 ans » de nous ?",
+      "verso": "L'année-lumière est une longueur, pas une durée : l'étoile est à la distance que la lumière parcourt en 4 ans.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "annee-lumiere"
+      ]
+    },
+    {
+      "id": "PC4E-P10-031",
+      "lecon": "La vitesse de la lumière et l'année-lumière",
+      "type": "formule",
+      "recto": "Pourquoi une étoile située à $4{,}2$ années-lumière est-elle vue telle qu'elle était il y a $4{,}2$ ans ?",
+      "verso": "La lumière se propage à vitesse finie : celle que l'on reçoit aujourd'hui a quitté l'étoile il y a $4{,}2$ ans. Voir loin, c'est voir le passé.",
+      "difficulte": 2,
+      "tags": [
+        "annee-lumiere",
+        "passe"
+      ]
+    },
+    {
+      "id": "PC4E-P10-032",
+      "lecon": "La vitesse de la lumière et l'année-lumière",
+      "type": "formule",
+      "recto": "Quelle erreur d'unité commet-on en écrivant $c = 3 \\times 10^{8}~\\mathrm{km/s}$ ?",
+      "verso": "La valeur $3 \\times 10^{8}$ est en mètres par seconde. En kilomètres par seconde, $c = 3 \\times 10^{5}~\\mathrm{km/s}$, soit $300\\,000~\\mathrm{km/s}$.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "unites"
+      ]
+    },
+    {
+      "id": "PC4E-P10-033",
+      "lecon": "La vitesse de la lumière et l'année-lumière",
+      "type": "definition",
+      "recto": "Quelle est la vitesse du son dans l'air, comparée à celle de la lumière ?",
+      "verso": "Environ $340~\\mathrm{m/s}$ : la lumière va près d'un million de fois plus vite que le son.",
+      "difficulte": 2,
+      "tags": [
+        "vitesse-son"
+      ]
+    },
+    {
+      "id": "PC4E-P10-034",
+      "lecon": "La vitesse de la lumière et l'année-lumière",
+      "type": "formule",
+      "recto": "Pendant un orage, pourquoi la durée entre l'éclair et le tonnerre permet-elle d'estimer la distance de l'orage ?",
+      "verso": "La lumière arrive pratiquement sans délai : la durée mesurée est celle du trajet du son, à environ $340~\\mathrm{m/s}$. On retient : trois secondes, un kilomètre.",
+      "difficulte": 3,
+      "tags": [
+        "orage",
+        "vitesse-son"
+      ]
+    },
+    {
+      "id": "PC4E-P10-035",
+      "lecon": "La vitesse de la lumière et l'année-lumière",
+      "type": "definition",
+      "recto": "Quelle durée met la lumière pour venir du Soleil à la Terre ?",
+      "verso": "Environ $8~\\mathrm{min}~20~\\mathrm{s}$ (et environ $1{,}3~\\mathrm{s}$ depuis la Lune).",
+      "difficulte": 2,
+      "tags": [
+        "ordre-de-grandeur"
+      ]
+    }
+  ]
+}

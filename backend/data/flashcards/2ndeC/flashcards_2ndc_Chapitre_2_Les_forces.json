@@ -1,0 +1,445 @@
+{
+  "matiere": "Physique-Chimie",
+  "partie": "Physique",
+  "niveau": "2nde C",
+  "chapitre": "Physique, Chapitre 2 : Les forces",
+  "source": "pc/2ndc/Chapitre_2_Les_forces",
+  "nombre_cartes": 37,
+  "cartes": [
+    {
+      "id": "PC2C-P02-001",
+      "lecon": "Les actions mécaniques et le vecteur force",
+      "type": "definition",
+      "recto": "Quels sont les deux types d'effets d'une force ?",
+      "verso": "Des effets dynamiques (mettre en mouvement, arrêter, dévier) et des effets statiques (déformer). Ils ne sont pas toujours visibles : la force existe même quand rien ne bouge.",
+      "difficulte": 1,
+      "tags": [
+        "effets-force"
+      ]
+    },
+    {
+      "id": "PC2C-P02-002",
+      "lecon": "Les actions mécaniques et le vecteur force",
+      "type": "definition",
+      "recto": "Quelle différence y a-t-il entre une force de contact et une force à distance ?",
+      "verso": "Une force de contact s'exerce entre deux corps qui se touchent (main qui pousse, corde qui tire, sol qui porte) ; une force à distance s'exerce sans contact (poids, force magnétique, force électrique).",
+      "difficulte": 1,
+      "tags": [
+        "contact",
+        "distance"
+      ]
+    },
+    {
+      "id": "PC2C-P02-003",
+      "lecon": "Les actions mécaniques et le vecteur force",
+      "type": "definition",
+      "recto": "Quelles sont les quatre caractéristiques d'une force ?",
+      "verso": "Son point d'application, sa direction (la droite d'action), son sens et son intensité, exprimée en newtons ($\\mathrm{N}$) et mesurée au dynamomètre.",
+      "difficulte": 1,
+      "tags": [
+        "caracteristiques",
+        "newton"
+      ]
+    },
+    {
+      "id": "PC2C-P02-004",
+      "lecon": "Les actions mécaniques et le vecteur force",
+      "type": "definition",
+      "recto": "Pour une force, quelle différence y a-t-il entre la direction et le sens ?",
+      "verso": "La direction est la droite d'action (par exemple la verticale) ; le sens indique de quel côté de cette droite la force agit (par exemple vers le bas). Une même direction porte deux sens.",
+      "difficulte": 3,
+      "tags": [
+        "direction",
+        "sens",
+        "piege"
+      ]
+    },
+    {
+      "id": "PC2C-P02-005",
+      "lecon": "Les actions mécaniques et le vecteur force",
+      "type": "definition",
+      "recto": "Quand dit-on que deux forces $\\vec{F_1}$ et $\\vec{F_2}$ sont opposées ?",
+      "verso": "Quand elles ont même droite d'action, même intensité et des sens contraires : $\\vec{F_1} = -\\vec{F_2}$.",
+      "difficulte": 2,
+      "tags": [
+        "forces-opposees"
+      ]
+    },
+    {
+      "id": "PC2C-P02-006",
+      "lecon": "Les actions mécaniques et le vecteur force",
+      "type": "definition",
+      "recto": "Pour une force répartie, quel point d'application choisit-on pour la réaction du sol et pour le poids ?",
+      "verso": "On remplace la force répartie par une force unique appliquée au milieu de la surface de contact pour la réaction du sol, et au centre de gravité $G$ pour le poids.",
+      "difficulte": 2,
+      "tags": [
+        "force-repartie",
+        "centre-gravite"
+      ]
+    },
+    {
+      "id": "PC2C-P02-007",
+      "lecon": "Les actions mécaniques et le vecteur force",
+      "type": "definition",
+      "recto": "En mécanique, qu'appelle-t-on un système matériel ?",
+      "verso": "C'est le corps, ou l'ensemble de corps, que l'on choisit d'étudier. Seules les forces extérieures, exercées sur lui par d'autres corps, figurent dans son bilan.",
+      "difficulte": 2,
+      "tags": [
+        "systeme",
+        "bilan"
+      ]
+    },
+    {
+      "id": "PC2C-P02-008",
+      "lecon": "Les actions mécaniques et le vecteur force",
+      "type": "definition",
+      "recto": "Qu'est-ce qui distingue un solide d'un système déformable ?",
+      "verso": "Dans un solide, les points restent à distance fixe les uns des autres (système indéformable) ; sinon le système est déformable, comme un ressort, une corde ou une boule d'argile.",
+      "difficulte": 2,
+      "tags": [
+        "solide",
+        "deformable"
+      ]
+    },
+    {
+      "id": "PC2C-P02-009",
+      "lecon": "Le poids et la réaction d'un support",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on le poids d'un corps ?",
+      "verso": "C'est la force d'attraction exercée par la Terre sur un corps placé dans son voisinage ; c'est une force à distance, répartie en volume.",
+      "difficulte": 1,
+      "tags": [
+        "poids"
+      ]
+    },
+    {
+      "id": "PC2C-P02-010",
+      "lecon": "Le poids et la réaction d'un support",
+      "type": "formule",
+      "recto": "Quelles sont les caractéristiques du poids $\\vec{P}$ d'un corps de masse $m$ ?",
+      "verso": "Point d'application : le centre de gravité $G$ ; direction : la verticale du lieu ; sens : vers le bas ; intensité : $P = m \\times g$, avec $P$ en $\\mathrm{N}$, $m$ en $\\mathrm{kg}$ et $g$ en $\\mathrm{N/kg}$.",
+      "difficulte": 2,
+      "tags": [
+        "poids",
+        "caracteristiques"
+      ]
+    },
+    {
+      "id": "PC2C-P02-011",
+      "lecon": "Le poids et la réaction d'un support",
+      "type": "formule",
+      "recto": "Comment s'écrit sous forme vectorielle la relation entre le poids $\\vec{P}$, la masse $m$ et le champ de pesanteur $\\vec{g}$ ?",
+      "verso": "$\\vec{P} = m\\,\\vec{g}$, où $\\vec{g}$ est vertical, dirigé vers le bas, de norme $g$ en $\\mathrm{N/kg}$ ; $\\vec{P}$ a donc la même direction et le même sens que $\\vec{g}$.",
+      "difficulte": 2,
+      "tags": [
+        "champ-pesanteur"
+      ]
+    },
+    {
+      "id": "PC2C-P02-012",
+      "lecon": "Le poids et la réaction d'un support",
+      "type": "definition",
+      "recto": "Quelle valeur de l'intensité de la pesanteur $g$ utilise-t-on au voisinage du sol au Burkina Faso ?",
+      "verso": "$g = 9{,}8~\\mathrm{N/kg}$, souvent arrondi à $10~\\mathrm{N/kg}$. Cette valeur dépend du lieu : $g$ diminue avec l'altitude.",
+      "difficulte": 1,
+      "tags": [
+        "intensite-pesanteur"
+      ]
+    },
+    {
+      "id": "PC2C-P02-013",
+      "lecon": "Le poids et la réaction d'un support",
+      "type": "definition",
+      "recto": "Pourquoi un corps de $10~\\mathrm{kg}$ n'a-t-il pas le même poids sur la Lune que sur la Terre ?",
+      "verso": "Sa masse reste $10~\\mathrm{kg}$ partout, mais son poids $P = mg$ dépend de $g$, qui vaut environ $1{,}6~\\mathrm{N/kg}$ sur la Lune : le poids y est environ six fois plus petit.",
+      "difficulte": 3,
+      "tags": [
+        "masse",
+        "poids",
+        "piege"
+      ]
+    },
+    {
+      "id": "PC2C-P02-014",
+      "lecon": "Le poids et la réaction d'un support",
+      "type": "formule",
+      "recto": "Comment se décompose la réaction $\\vec{R}$ d'un support sur un corps ?",
+      "verso": "$\\vec{R} = \\vec{R_N} + \\vec{f}$ : la réaction normale $\\vec{R_N}$ est perpendiculaire à la surface, la force de frottement $\\vec{f}$ lui est parallèle et opposée au glissement ; $R = \\sqrt{R_N^{2} + f^{2}}$.",
+      "difficulte": 2,
+      "tags": [
+        "reaction",
+        "frottement"
+      ]
+    },
+    {
+      "id": "PC2C-P02-015",
+      "lecon": "Le poids et la réaction d'un support",
+      "type": "definition",
+      "recto": "Sur un plan incliné, quelle est la direction de la réaction normale $\\vec{R_N}$ ?",
+      "verso": "Elle est perpendiculaire au plan, donc inclinée par rapport à la verticale ; seul le poids reste vertical.",
+      "difficulte": 3,
+      "tags": [
+        "plan-incline",
+        "reaction"
+      ]
+    },
+    {
+      "id": "PC2C-P02-016",
+      "lecon": "La tension d'un fil et d'un ressort, la loi de Hooke",
+      "type": "definition",
+      "recto": "Quelles sont les caractéristiques de la tension $\\vec{T}$ d'un fil tendu sur le corps auquel il est attaché ?",
+      "verso": "Point d'application : le point d'attache ; direction : celle du fil ; sens : du corps vers le fil ; intensité $T$ en newtons. Un fil ne peut que tirer.",
+      "difficulte": 2,
+      "tags": [
+        "tension-fil"
+      ]
+    },
+    {
+      "id": "PC2C-P02-017",
+      "lecon": "La tension d'un fil et d'un ressort, la loi de Hooke",
+      "type": "definition",
+      "recto": "Pour un fil inextensible et de masse négligeable passant sur une poulie légère sans frottement, comment se comporte la tension ?",
+      "verso": "Le fil change de direction mais la tension garde la même intensité aux deux extrémités, de part et d'autre de la poulie.",
+      "difficulte": 2,
+      "tags": [
+        "fil-ideal",
+        "poulie"
+      ]
+    },
+    {
+      "id": "PC2C-P02-018",
+      "lecon": "La tension d'un fil et d'un ressort, la loi de Hooke",
+      "type": "formule",
+      "recto": "Pour un ressort, quelle relation constitue la loi de Hooke ?",
+      "verso": "$T = k \\times x$, avec $x = \\ell - \\ell_0$ l'allongement en mètres, $\\ell_0$ la longueur à vide et $k$ la constante de raideur en $\\mathrm{N/m}$ ; valable dans le domaine de linéarité.",
+      "difficulte": 2,
+      "tags": [
+        "loi-hooke"
+      ]
+    },
+    {
+      "id": "PC2C-P02-019",
+      "lecon": "La tension d'un fil et d'un ressort, la loi de Hooke",
+      "type": "definition",
+      "recto": "Dans la loi de Hooke $T = kx$, pourquoi ne faut-il pas remplacer $x$ par la longueur du ressort exprimée en centimètres ?",
+      "verso": "$x$ est l'allongement $\\ell - \\ell_0$, pas la longueur, et il doit être en mètres quand $k$ est en $\\mathrm{N/m}$ : sinon le résultat est faux d'un facteur cent.",
+      "difficulte": 3,
+      "tags": [
+        "allongement",
+        "unites",
+        "piege"
+      ]
+    },
+    {
+      "id": "PC2C-P02-020",
+      "lecon": "La tension d'un fil et d'un ressort, la loi de Hooke",
+      "type": "definition",
+      "recto": "Pour un ressort comprimé, quelle grandeur remplace l'allongement dans la loi de Hooke ?",
+      "verso": "Il pousse le corps qui le comprime, selon son axe, vers l'extérieur ; la loi $T = kx$ reste valable avec $x = \\ell_0 - \\ell$, le raccourcissement.",
+      "difficulte": 2,
+      "tags": [
+        "ressort-comprime"
+      ]
+    },
+    {
+      "id": "PC2C-P02-021",
+      "lecon": "La tension d'un fil et d'un ressort, la loi de Hooke",
+      "type": "formule",
+      "recto": "Pour un corps suspendu immobile à un fil ou à un ressort, quelle relation lie la tension et le poids ?",
+      "verso": "Le corps n'est soumis qu'à son poids et à la tension, qui sont opposées : $\\vec{T} = -\\vec{P}$, donc $T = P = m \\times g$.",
+      "difficulte": 2,
+      "tags": [
+        "corps-suspendu"
+      ]
+    },
+    {
+      "id": "PC2C-P02-022",
+      "lecon": "La tension d'un fil et d'un ressort, la loi de Hooke",
+      "type": "definition",
+      "recto": "Sur la courbe d'étalonnage $T = f(x)$ d'un ressort, comment détermine-t-on la constante de raideur $k$ ?",
+      "verso": "On porte l'allongement $x$ en abscisse et la tension $T$ en ordonnée ; la droite moyenne passe par l'origine et son coefficient directeur, calculé sur deux points éloignés de la droite, est $k$.",
+      "difficulte": 2,
+      "tags": [
+        "courbe-etalonnage"
+      ]
+    },
+    {
+      "id": "PC2C-P02-023",
+      "lecon": "La tension d'un fil et d'un ressort, la loi de Hooke",
+      "type": "definition",
+      "recto": "Pour un ressort, qu'appelle-t-on le domaine de linéarité ?",
+      "verso": "C'est le domaine de forces modérées où la loi de Hooke est valable ; au delà, la courbe cesse d'être une droite et le ressort se déforme de façon permanente.",
+      "difficulte": 2,
+      "tags": [
+        "domaine-linearite"
+      ]
+    },
+    {
+      "id": "PC2C-P02-024",
+      "lecon": "La tension d'un fil et d'un ressort, la loi de Hooke",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on la portée d'un dynamomètre ?",
+      "verso": "C'est la plus grande force qu'il peut mesurer sans sortir du domaine de linéarité de son ressort ; elle s'exprime en newtons, à ne pas confondre avec une raideur en $\\mathrm{N/m}$.",
+      "difficulte": 2,
+      "tags": [
+        "dynamometre",
+        "portee"
+      ]
+    },
+    {
+      "id": "PC2C-P02-025",
+      "lecon": "La somme de deux forces : parallélogramme et projection",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on la résultante de deux forces $\\vec{F_1}$ et $\\vec{F_2}$ appliquées au même point ?",
+      "verso": "C'est le vecteur $\\vec{F} = \\vec{F_1} + \\vec{F_2}$, qui produit à lui seul le même effet que les deux forces réunies ; c'est la diagonale issue du point du parallélogramme construit sur les deux forces à la même échelle.",
+      "difficulte": 2,
+      "tags": [
+        "resultante",
+        "parallelogramme"
+      ]
+    },
+    {
+      "id": "PC2C-P02-026",
+      "lecon": "La somme de deux forces : parallélogramme et projection",
+      "type": "formule",
+      "recto": "Quelle est l'intensité de la résultante de deux forces perpendiculaires d'intensités $F_1$ et $F_2$ ?",
+      "verso": "$F = \\sqrt{F_1^{2} + F_2^{2}}$. Par exemple, pour $300~\\mathrm{N}$ et $400~\\mathrm{N}$ perpendiculaires, $F = 500~\\mathrm{N}$ et non $700~\\mathrm{N}$.",
+      "difficulte": 2,
+      "tags": [
+        "resultante",
+        "perpendiculaires"
+      ]
+    },
+    {
+      "id": "PC2C-P02-027",
+      "lecon": "La somme de deux forces : parallélogramme et projection",
+      "type": "formule",
+      "recto": "Pour deux forces de même direction, quelle est l'intensité de leur résultante selon leurs sens ?",
+      "verso": "Même sens : $F = F_1 + F_2$ ; sens contraires : $F = \\lvert F_1 - F_2 \\rvert$, dans le sens de la plus grande.",
+      "difficulte": 1,
+      "tags": [
+        "resultante",
+        "forces-alignees"
+      ]
+    },
+    {
+      "id": "PC2C-P02-028",
+      "lecon": "La somme de deux forces : parallélogramme et projection",
+      "type": "formule",
+      "recto": "Pour deux forces d'intensités $F_1$ et $F_2$ faisant entre elles l'angle $\\theta$, quelle relation donne l'intensité $F$ de leur résultante ?",
+      "verso": "$F^{2} = F_1^{2} + F_2^{2} + 2F_1F_2\\cos\\theta$ ; elle redonne les cas $\\theta = 0°$, $180°$ et $90°$.",
+      "difficulte": 3,
+      "tags": [
+        "resultante",
+        "angle-quelconque"
+      ]
+    },
+    {
+      "id": "PC2C-P02-029",
+      "lecon": "La somme de deux forces : parallélogramme et projection",
+      "type": "formule",
+      "recto": "Dans un repère orthonormé, quelles sont les composantes d'une force $\\vec{F}$ faisant l'angle $\\alpha$ avec l'axe des abscisses ?",
+      "verso": "$F_x = F\\cos\\alpha$ et $F_y = F\\sin\\alpha$ ; ce sont des nombres algébriques, négatifs si la projection est dans le sens contraire de l'axe.",
+      "difficulte": 2,
+      "tags": [
+        "projection",
+        "composantes"
+      ]
+    },
+    {
+      "id": "PC2C-P02-030",
+      "lecon": "La somme de deux forces : parallélogramme et projection",
+      "type": "formule",
+      "recto": "Connaissant les composantes $F_x$ et $F_y$ d'une force, comment retrouve-t-on son intensité et sa direction ?",
+      "verso": "$F = \\sqrt{F_x^{2} + F_y^{2}}$ et $\\tan\\alpha = \\dfrac{F_y}{F_x}$ ; les signes de $F_x$ et $F_y$ indiquent le quart de plan de la force.",
+      "difficulte": 2,
+      "tags": [
+        "projection",
+        "intensite"
+      ]
+    },
+    {
+      "id": "PC2C-P02-031",
+      "lecon": "La somme de deux forces : parallélogramme et projection",
+      "type": "formule",
+      "recto": "Comment obtient-on les composantes de la résultante de plusieurs forces appliquées au même point ?",
+      "verso": "On additionne séparément les composantes sur chaque axe : $F_x = F_{1x} + F_{2x} + \\ldots$ et $F_y = F_{1y} + F_{2y} + \\ldots$",
+      "difficulte": 1,
+      "tags": [
+        "projection",
+        "somme"
+      ]
+    },
+    {
+      "id": "PC2C-P02-032",
+      "lecon": "La somme de deux forces : parallélogramme et projection",
+      "type": "formule",
+      "recto": "Sur un plan incliné d'angle $\\alpha$, avec un axe parallèle à la pente, quelles sont les composantes du poids $P$ ?",
+      "verso": "$P\\sin\\alpha$ le long de la pente et $P\\cos\\alpha$ perpendiculairement à la pente, car l'angle $\\alpha$ se retrouve entre le poids et la perpendiculaire au plan.",
+      "difficulte": 3,
+      "tags": [
+        "plan-incline",
+        "projection"
+      ]
+    },
+    {
+      "id": "PC2C-P02-033",
+      "lecon": "Actions réciproques et forces pressantes",
+      "type": "formule",
+      "recto": "Comment s'énonce le principe des actions réciproques pour deux corps $A$ et $B$ en interaction ?",
+      "verso": "Si $A$ exerce sur $B$ la force $\\vec{F}_{A/B}$, $B$ exerce en même temps sur $A$ la force $\\vec{F}_{B/A}$ telle que $\\vec{F}_{A/B} = -\\vec{F}_{B/A}$ : même droite d'action, même intensité, sens contraires. Il vaut au repos comme en mouvement, au contact comme à distance.",
+      "difficulte": 2,
+      "tags": [
+        "actions-reciproques"
+      ]
+    },
+    {
+      "id": "PC2C-P02-034",
+      "lecon": "Actions réciproques et forces pressantes",
+      "type": "definition",
+      "recto": "Pourquoi les deux forces d'une interaction ne se compensent-elles jamais ?",
+      "verso": "Elles s'exercent sur deux corps différents ; or deux forces opposées ne se compensent que si elles agissent sur le même corps. L'âne et la charrette peuvent donc avancer.",
+      "difficulte": 3,
+      "tags": [
+        "actions-reciproques",
+        "piege"
+      ]
+    },
+    {
+      "id": "PC2C-P02-035",
+      "lecon": "Actions réciproques et forces pressantes",
+      "type": "definition",
+      "recto": "Quelle différence y a-t-il entre une force extérieure et une force intérieure à un système ?",
+      "verso": "Une force extérieure est exercée sur le système par un corps qui n'en fait pas partie ; une force intérieure est exercée entre parties du système et ne figure pas dans le bilan.",
+      "difficulte": 2,
+      "tags": [
+        "forces-exterieures",
+        "forces-interieures"
+      ]
+    },
+    {
+      "id": "PC2C-P02-036",
+      "lecon": "Actions réciproques et forces pressantes",
+      "type": "formule",
+      "recto": "Quelles sont les caractéristiques de la force pressante exercée par un fluide sur une surface plane d'aire $S$ ?",
+      "verso": "Point d'application : le centre de la surface ; direction : perpendiculaire à la surface ; sens : du fluide vers la surface ; intensité $F = p \\times S$, avec $p$ en $\\mathrm{Pa}$, $S$ en $\\mathrm{m^2}$, $F$ en $\\mathrm{N}$ (pression la même sur toute la surface).",
+      "difficulte": 2,
+      "tags": [
+        "force-pressante",
+        "pression"
+      ]
+    },
+    {
+      "id": "PC2C-P02-037",
+      "lecon": "Actions réciproques et forces pressantes",
+      "type": "definition",
+      "recto": "A combien de newtons par mètre carré correspond un pascal ?",
+      "verso": "$1~\\mathrm{Pa} = 1~\\mathrm{N/m^2}$ : c'est l'unité de pression ; la pression atmosphérique vaut environ $1{,}0 \\times 10^{5}~\\mathrm{Pa}$.",
+      "difficulte": 1,
+      "tags": [
+        "pascal",
+        "pression-atmospherique"
+      ]
+    }
+  ]
+}

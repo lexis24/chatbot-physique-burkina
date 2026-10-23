@@ -1,0 +1,430 @@
+{
+  "matiere": "Physique-Chimie",
+  "partie": "Physique",
+  "niveau": "4ème",
+  "chapitre": "Physique, Chapitre 7 : Les changements d'état physique",
+  "source": "pc/4eme/Chapitre_7_Les_changements_d_etat_physique",
+  "nombre_cartes": 35,
+  "cartes": [
+    {
+      "id": "PC4E-P07-001",
+      "lecon": "La fusion et la solidification",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on la fusion d'un corps ?",
+      "verso": "C'est le passage d'un corps de l'état solide à l'état liquide. Elle se produit quand le corps reçoit de la chaleur.",
+      "difficulte": 1,
+      "tags": [
+        "fusion",
+        "vocabulaire"
+      ]
+    },
+    {
+      "id": "PC4E-P07-002",
+      "lecon": "La fusion et la solidification",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on la solidification d'un corps ?",
+      "verso": "C'est le passage d'un corps de l'état liquide à l'état solide. Elle se produit quand le corps cède de la chaleur ; c'est la transformation inverse de la fusion.",
+      "difficulte": 1,
+      "tags": [
+        "solidification",
+        "vocabulaire"
+      ]
+    },
+    {
+      "id": "PC4E-P07-003",
+      "lecon": "La fusion et la solidification",
+      "type": "formule",
+      "recto": "Sous la pression atmosphérique normale, à quelle température l'eau pure fond-elle et se solidifie-t-elle ?",
+      "verso": "A $0~^\\circ\\mathrm{C}$, la même température pour la fusion et pour la solidification.",
+      "difficulte": 1,
+      "tags": [
+        "eau",
+        "temperature-de-fusion"
+      ]
+    },
+    {
+      "id": "PC4E-P07-004",
+      "lecon": "La fusion et la solidification",
+      "type": "definition",
+      "recto": "Sur la courbe de changement d'état d'un corps pur, qu'appelle-t-on le palier ?",
+      "verso": "C'est la portion horizontale de la courbe : pendant toute la durée du changement d'état, la température reste constante alors que le corps continue de recevoir ou de céder de la chaleur.",
+      "difficulte": 2,
+      "tags": [
+        "palier",
+        "courbe"
+      ]
+    },
+    {
+      "id": "PC4E-P07-005",
+      "lecon": "La fusion et la solidification",
+      "type": "formule",
+      "recto": "Sur une courbe de chauffage de la glace, dans quel état se trouve l'eau pendant le palier ?",
+      "verso": "Les deux états coexistent : on trouve à la fois de la glace et de l'eau liquide. Ce mélange glace-eau est toujours à $0~^\\circ\\mathrm{C}$, quelle que soit la proportion de glace.",
+      "difficulte": 2,
+      "tags": [
+        "palier",
+        "melange-glace-eau"
+      ]
+    },
+    {
+      "id": "PC4E-P07-006",
+      "lecon": "La fusion et la solidification",
+      "type": "formule",
+      "recto": "Pour le palier d'une courbe de changement d'état, de quoi dépendent sa hauteur et sa longueur ?",
+      "verso": "Sa hauteur (la température du palier) ne dépend que du corps. Sa longueur (la durée) dépend de la quantité de corps à transformer et de la puissance du chauffage.",
+      "difficulte": 3,
+      "tags": [
+        "palier",
+        "courbe"
+      ]
+    },
+    {
+      "id": "PC4E-P07-007",
+      "lecon": "La fusion et la solidification",
+      "type": "definition",
+      "recto": "Pourquoi la température d'un mélange glace-eau ne monte-t-elle pas alors qu'on le chauffe sans arrêt ?",
+      "verso": "Toute la chaleur reçue sert à libérer les particules retenues dans le solide, non à les agiter davantage ; comme la température traduit l'agitation des particules, elle reste constante tant que la fusion n'est pas achevée.",
+      "difficulte": 3,
+      "tags": [
+        "palier",
+        "modele-particulaire"
+      ]
+    },
+    {
+      "id": "PC4E-P07-008",
+      "lecon": "La vaporisation et la condensation liquide",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on la vaporisation d'un corps ?",
+      "verso": "C'est le passage d'un corps de l'état liquide à l'état gazeux, quand il reçoit de la chaleur. Elle se présente sous deux formes : l'ébullition et l'évaporation.",
+      "difficulte": 1,
+      "tags": [
+        "vaporisation",
+        "vocabulaire"
+      ]
+    },
+    {
+      "id": "PC4E-P07-009",
+      "lecon": "La vaporisation et la condensation liquide",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on la condensation liquide, encore appelée liquéfaction ?",
+      "verso": "C'est le passage d'un corps de l'état gazeux à l'état liquide, quand il cède de la chaleur. C'est la transformation inverse de la vaporisation.",
+      "difficulte": 1,
+      "tags": [
+        "condensation-liquide",
+        "liquefaction"
+      ]
+    },
+    {
+      "id": "PC4E-P07-010",
+      "lecon": "La vaporisation et la condensation liquide",
+      "type": "definition",
+      "recto": "Qu'est-ce qui caractérise l'ébullition d'un liquide ?",
+      "verso": "C'est une vaporisation rapide, qui se produit dans toute la masse du liquide avec formation de bulles, à une température fixe appelée température d'ébullition.",
+      "difficulte": 2,
+      "tags": [
+        "ebullition"
+      ]
+    },
+    {
+      "id": "PC4E-P07-011",
+      "lecon": "La vaporisation et la condensation liquide",
+      "type": "definition",
+      "recto": "Qu'est-ce qui caractérise l'évaporation d'un liquide ?",
+      "verso": "C'est une vaporisation lente, qui se produit à la surface libre du liquide seulement, sans bulles, et à toute température.",
+      "difficulte": 2,
+      "tags": [
+        "evaporation"
+      ]
+    },
+    {
+      "id": "PC4E-P07-012",
+      "lecon": "La vaporisation et la condensation liquide",
+      "type": "formule",
+      "recto": "Sous la pression atmosphérique normale ($1\\,013~\\mathrm{hPa}$), quelle est la température d'ébullition de l'eau pure ?",
+      "verso": "$100~^\\circ\\mathrm{C}$. Tant qu'il reste de l'eau liquide, la température reste à $100~^\\circ\\mathrm{C}$ : c'est le palier d'ébullition.",
+      "difficulte": 1,
+      "tags": [
+        "ebullition",
+        "eau"
+      ]
+    },
+    {
+      "id": "PC4E-P07-013",
+      "lecon": "La vaporisation et la condensation liquide",
+      "type": "formule",
+      "recto": "Quels facteurs rendent l'évaporation d'un liquide plus rapide ?",
+      "verso": "Une grande surface libre, une température élevée, un air sec et un air renouvelé par le vent.",
+      "difficulte": 2,
+      "tags": [
+        "evaporation",
+        "facteurs"
+      ]
+    },
+    {
+      "id": "PC4E-P07-014",
+      "lecon": "La vaporisation et la condensation liquide",
+      "type": "formule",
+      "recto": "Comment la température d'ébullition de l'eau varie-t-elle avec la pression ambiante ?",
+      "verso": "Elle diminue quand la pression baisse et augmente quand la pression monte : $100~^\\circ\\mathrm{C}$ sous $1\\,013~\\mathrm{hPa}$, $90~^\\circ\\mathrm{C}$ seulement sous $700~\\mathrm{hPa}$, et vers $110$ à $120~^\\circ\\mathrm{C}$ dans un autocuiseur fermé.",
+      "difficulte": 2,
+      "tags": [
+        "pression",
+        "ebullition"
+      ]
+    },
+    {
+      "id": "PC4E-P07-015",
+      "lecon": "La vaporisation et la condensation liquide",
+      "type": "definition",
+      "recto": "Pourquoi le panache blanc au-dessus d'une marmite n'est-il pas de la vapeur d'eau ?",
+      "verso": "La vapeur d'eau est un gaz, donc invisible. Le panache blanc, comme la buée, la brume ou le brouillard, est fait de fines gouttelettes d'eau liquide issues de la condensation de cette vapeur.",
+      "difficulte": 3,
+      "tags": [
+        "vapeur-invisible",
+        "piege"
+      ]
+    },
+    {
+      "id": "PC4E-P07-016",
+      "lecon": "La vaporisation et la condensation liquide",
+      "type": "definition",
+      "recto": "Pourquoi le séchage du linge sur un fil n'est-il pas une ébullition ?",
+      "verso": "Il n'y a pas de bulles et l'eau n'atteint jamais $100~^\\circ\\mathrm{C}$ : c'est une évaporation, lente, à la surface et à température ordinaire.",
+      "difficulte": 3,
+      "tags": [
+        "evaporation",
+        "ebullition",
+        "piege"
+      ]
+    },
+    {
+      "id": "PC4E-P07-017",
+      "lecon": "La sublimation, la condensation solide et les six changements d'état",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on la sublimation d'un corps ?",
+      "verso": "C'est le passage d'un corps de l'état solide directement à l'état gazeux, sans passer par l'état liquide. Elle se produit quand le corps reçoit de la chaleur.",
+      "difficulte": 1,
+      "tags": [
+        "sublimation",
+        "vocabulaire"
+      ]
+    },
+    {
+      "id": "PC4E-P07-018",
+      "lecon": "La sublimation, la condensation solide et les six changements d'état",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on la condensation solide (ou condensation à l'état solide) ?",
+      "verso": "C'est le passage d'un corps de l'état gazeux directement à l'état solide, sans passer par l'état liquide, quand il cède de la chaleur. C'est l'inverse de la sublimation.",
+      "difficulte": 1,
+      "tags": [
+        "condensation-solide",
+        "vocabulaire"
+      ]
+    },
+    {
+      "id": "PC4E-P07-019",
+      "lecon": "La sublimation, la condensation solide et les six changements d'état",
+      "type": "formule",
+      "recto": "Parmi les six changements d'état, lesquels se font avec de la chaleur reçue par le corps ?",
+      "verso": "La fusion, la vaporisation et la sublimation : ce sont les passages vers plus de désordre (solide vers liquide vers gaz).",
+      "difficulte": 2,
+      "tags": [
+        "chaleur-recue",
+        "six-changements"
+      ]
+    },
+    {
+      "id": "PC4E-P07-020",
+      "lecon": "La sublimation, la condensation solide et les six changements d'état",
+      "type": "formule",
+      "recto": "Parmi les six changements d'état, lesquels se font avec de la chaleur cédée par le corps ?",
+      "verso": "La solidification, la condensation liquide et la condensation solide.",
+      "difficulte": 2,
+      "tags": [
+        "chaleur-cedee",
+        "six-changements"
+      ]
+    },
+    {
+      "id": "PC4E-P07-021",
+      "lecon": "La sublimation, la condensation solide et les six changements d'état",
+      "type": "definition",
+      "recto": "Pourquoi existe-t-il exactement six changements d'état physique ?",
+      "verso": "Il y a trois états physiques et chacun peut se transformer en chacun des deux autres : $3 \\times 2 = 6$ passages possibles.",
+      "difficulte": 2,
+      "tags": [
+        "six-changements"
+      ]
+    },
+    {
+      "id": "PC4E-P07-022",
+      "lecon": "La sublimation, la condensation solide et les six changements d'état",
+      "type": "formule",
+      "recto": "Pour un corps pur, comment déduit-on son état physique à une température donnée ?",
+      "verso": "Il est solide en dessous de sa température de fusion, liquide entre sa température de fusion et sa température d'ébullition, gazeux au-dessus de sa température d'ébullition. A l'une de ces deux températures exactement, il est sous deux états à la fois.",
+      "difficulte": 2,
+      "tags": [
+        "etat-physique",
+        "temperatures"
+      ]
+    },
+    {
+      "id": "PC4E-P07-023",
+      "lecon": "La sublimation, la condensation solide et les six changements d'état",
+      "type": "formule",
+      "recto": "Sous la pression atmosphérique normale, quelles sont les températures de fusion et d'ébullition de l'éthanol ?",
+      "verso": "Fusion à $-114~^\\circ\\mathrm{C}$, ébullition à $78~^\\circ\\mathrm{C}$.",
+      "difficulte": 2,
+      "tags": [
+        "ethanol",
+        "temperatures"
+      ]
+    },
+    {
+      "id": "PC4E-P07-024",
+      "lecon": "La sublimation, la condensation solide et les six changements d'état",
+      "type": "formule",
+      "recto": "Sous la pression atmosphérique normale, quelles sont les températures de fusion et d'ébullition du mercure ?",
+      "verso": "Fusion à $-39~^\\circ\\mathrm{C}$, ébullition à $357~^\\circ\\mathrm{C}$.",
+      "difficulte": 2,
+      "tags": [
+        "mercure",
+        "temperatures"
+      ]
+    },
+    {
+      "id": "PC4E-P07-025",
+      "lecon": "La sublimation, la condensation solide et les six changements d'état",
+      "type": "definition",
+      "recto": "Quels solides se subliment à la température ordinaire ?",
+      "verso": "La naphtaline, le camphre et la neige carbonique. La glace se sublime aussi, par exemple à $-18~^\\circ\\mathrm{C}$ dans un congélateur.",
+      "difficulte": 2,
+      "tags": [
+        "sublimation",
+        "exemples"
+      ]
+    },
+    {
+      "id": "PC4E-P07-026",
+      "lecon": "La sublimation, la condensation solide et les six changements d'état",
+      "type": "definition",
+      "recto": "Quand un énoncé emploie seulement le mot « condensation », de quel changement d'état s'agit-il ?",
+      "verso": "De la condensation liquide (gaz vers liquide), à ne pas confondre avec la condensation solide (gaz vers solide).",
+      "difficulte": 3,
+      "tags": [
+        "condensation",
+        "piege"
+      ]
+    },
+    {
+      "id": "PC4E-P07-027",
+      "lecon": "La sublimation, la condensation solide et les six changements d'état",
+      "type": "definition",
+      "recto": "Pour quel type de corps la température de changement d'état est-elle une constante ?",
+      "verso": "Seulement pour un corps pur (sous une pression donnée) : elle sert alors à l'identifier, comme une empreinte.",
+      "difficulte": 3,
+      "tags": [
+        "corps-pur",
+        "temperatures"
+      ]
+    },
+    {
+      "id": "PC4E-P07-028",
+      "lecon": "Chaleur et température, conservation de la masse et variation du volume",
+      "type": "definition",
+      "recto": "En physique, qu'appelle-t-on la température d'un corps ?",
+      "verso": "C'est la grandeur qui repère l'état plus ou moins chaud d'un corps. Elle se mesure avec un thermomètre, en degrés Celsius ($^\\circ\\mathrm{C}$) ou en kelvins ($\\mathrm{K}$).",
+      "difficulte": 1,
+      "tags": [
+        "temperature",
+        "vocabulaire"
+      ]
+    },
+    {
+      "id": "PC4E-P07-029",
+      "lecon": "Chaleur et température, conservation de la masse et variation du volume",
+      "type": "definition",
+      "recto": "En physique, qu'appelle-t-on la chaleur ?",
+      "verso": "C'est une énergie qu'un corps reçoit d'un corps plus chaud ou cède à un corps plus froid. Elle ne se lit sur aucun thermomètre.",
+      "difficulte": 2,
+      "tags": [
+        "chaleur",
+        "vocabulaire"
+      ]
+    },
+    {
+      "id": "PC4E-P07-030",
+      "lecon": "Chaleur et température, conservation de la masse et variation du volume",
+      "type": "definition",
+      "recto": "Pourquoi la chaleur et la température ne sont-elles pas la même grandeur ?",
+      "verso": "La température repère l'état chaud d'un corps et se lit au thermomètre ; la chaleur est une énergie échangée. Un corps peut d'ailleurs recevoir de la chaleur sans que sa température change, pendant un changement d'état.",
+      "difficulte": 3,
+      "tags": [
+        "chaleur",
+        "temperature",
+        "piege"
+      ]
+    },
+    {
+      "id": "PC4E-P07-031",
+      "lecon": "Chaleur et température, conservation de la masse et variation du volume",
+      "type": "formule",
+      "recto": "Quel est l'effet de la chaleur reçue par un corps ?",
+      "verso": "Sa température s'élève, ou bien il change d'état dans le sens fusion, vaporisation ou sublimation.",
+      "difficulte": 2,
+      "tags": [
+        "chaleur-recue",
+        "effet"
+      ]
+    },
+    {
+      "id": "PC4E-P07-032",
+      "lecon": "Chaleur et température, conservation de la masse et variation du volume",
+      "type": "formule",
+      "recto": "Au cours d'un changement d'état, que devient la masse d'un corps ?",
+      "verso": "Elle se conserve : $m_{\\text{avant}} = m_{\\text{après}}$. Les particules sont seulement réarrangées, aucune n'est créée ni détruite ; cela vaut pour les six changements d'état.",
+      "difficulte": 1,
+      "tags": [
+        "conservation-masse"
+      ]
+    },
+    {
+      "id": "PC4E-P07-033",
+      "lecon": "Chaleur et température, conservation de la masse et variation du volume",
+      "type": "formule",
+      "recto": "Comment varie le volume de l'eau quand elle se solidifie ?",
+      "verso": "Il augmente d'environ $10~\\%$, alors que la masse reste la même. Pour presque tous les autres corps, le volume diminue à la solidification.",
+      "difficulte": 2,
+      "tags": [
+        "volume",
+        "eau",
+        "exception"
+      ]
+    },
+    {
+      "id": "PC4E-P07-034",
+      "lecon": "Chaleur et température, conservation de la masse et variation du volume",
+      "type": "formule",
+      "recto": "Pourquoi la glace flotte-t-elle sur l'eau liquide ?",
+      "verso": "A masse égale, la glace occupe un plus grand volume : sa masse volumique $\\rho = \\dfrac{m}{V}$ est plus faible, environ $0{,}92~\\mathrm{g/cm^3}$ contre $1~\\mathrm{g/cm^3}$ pour l'eau.",
+      "difficulte": 2,
+      "tags": [
+        "masse-volumique",
+        "glace"
+      ]
+    },
+    {
+      "id": "PC4E-P07-035",
+      "lecon": "Chaleur et température, conservation de la masse et variation du volume",
+      "type": "definition",
+      "recto": "Pourquoi est-il faux de dire que l'eau devient plus lourde en gelant ?",
+      "verso": "La masse se conserve au cours d'un changement d'état ; c'est le volume qui augmente, donc la masse volumique qui diminue.",
+      "difficulte": 3,
+      "tags": [
+        "masse",
+        "volume",
+        "piege"
+      ]
+    }
+  ]
+}

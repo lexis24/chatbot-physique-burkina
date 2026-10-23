@@ -4,8 +4,8 @@ import { PencilRuler, Lightbulb, Eye, EyeOff, Sparkles, Star, ArrowRight, Loader
 import Card from "./ui/Card"
 import Button from "./ui/Button"
 import Badge from "./ui/Badge"
-import MathContent from "./MathContent"
-import GeometryFigure from "./GeometryFigure"
+import RichContent from "./RichContent"
+import PhysicsFigure from "./PhysicsFigure"
 import QcmQuestion from "./QcmQuestion"
 
 const STAR_LABELS = {
@@ -51,6 +51,7 @@ export default function ExerciseCard({ exercise, onNext, generatingNext, onFetch
 
   const solution = fetchedSolution?.solution ?? exercise.solution
   const reponseFinale = fetchedSolution?.reponse_finale ?? exercise.reponse_finale
+  const solutionFigure = fetchedSolution?.figure ?? null
   const hasSolution = Boolean(solution)
 
   const isQcm = Array.isArray(exercise.qcm) && exercise.qcm.length > 0
@@ -76,8 +77,8 @@ export default function ExerciseCard({ exercise, onNext, generatingNext, onFetch
         </div>
 
         <div className="prose-chat max-w-none rounded-xl bg-gradient-to-br from-primary/5 to-secondary/5 p-4">
-          <MathContent>{exercise.enonce}</MathContent>
-          {exercise.figure && <GeometryFigure spec={exercise.figure} />}
+          <RichContent>{exercise.enonce}</RichContent>
+          {exercise.figure && <PhysicsFigure spec={exercise.figure} />}
         </div>
 
         {isQcm ? (
@@ -108,7 +109,7 @@ export default function ExerciseCard({ exercise, onNext, generatingNext, onFetch
                 {indiceShown && (
                   <div className="prose-chat max-w-none rounded-xl border border-warning/30 bg-warning/5 p-3">
                     <span className="mr-1 font-semibold text-warning">Indice :</span>
-                    <MathContent>{exercise.indices[0]}</MathContent>
+                    <RichContent>{exercise.indices[0]}</RichContent>
                   </div>
                 )}
                 <Button variant="soft" size="sm" onClick={() => setIndiceShown((s) => !s)}>
@@ -160,11 +161,12 @@ export default function ExerciseCard({ exercise, onNext, generatingNext, onFetch
                     <p className="text-error">Impossible de générer la correction pour le moment. Réessaie.</p>
                   ) : (
                     <>
-                      <MathContent>{solution}</MathContent>
+                      <RichContent>{solution}</RichContent>
+                      {solutionFigure && <PhysicsFigure spec={solutionFigure} />}
                       {reponseFinale && (
                         <div className="mt-2 flex items-center gap-2 rounded-lg bg-success/15 px-3 py-2 font-semibold text-success">
                           <Sparkles size={14} />
-                          <MathContent>{reponseFinale}</MathContent>
+                          <RichContent>{reponseFinale}</RichContent>
                         </div>
                       )}
                     </>

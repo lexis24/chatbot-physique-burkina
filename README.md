@@ -1,214 +1,132 @@
-# Chat'Maths Burkina Faso 📐
+# Prof Aïcha — assistant de physique (Burkina Faso)
 
-Assistant IA de mathématiques pour les élèves et enseignants du Burkina Faso, basé sur **Claude (Anthropic)** et une
-architecture **RAG** (Retrieval-Augmented Generation), de la 6ème à la Terminale.
+Assistant IA de **physique** pour les élèves du Burkina Faso, de la **4ème à la Terminale D**, construit sur
+**Claude (Anthropic)** et une architecture **RAG** appuyée sur les manuels de la Collection Hakili Lab
+(édition 2026). Application sœur de « Prof Amira » (mathématiques), avec les mêmes fonctionnalités ; la chimie a sa
+propre application.
 
-## 🎯 Ce que fait le projet
+## Ce que fait l'application
 
-- Répond aux questions de maths avec des explications structurées, adaptées au niveau de la classe
-- Utilise en priorité les documents officiels indexés (RAG) et complète avec les connaissances de Claude
-- Garde la mémoire de la conversation (questions/réponses précédentes) pour rester cohérent
-- Génère des exercices structurés (énoncé, indices progressifs, solution détaillée, réponse finale)
-- Reformule une réponse de façon plus simple à la demande ("Simplifie")
-- Permet de télécharger n'importe quelle réponse ou exercice en **PDF**, formules mathématiques comprises
-- Interface moderne (thème clair/sombre, animations, mise en page en blocs)
+- **Questions de cours et d'exercices** : explications adaptées à la classe, ancrées en priorité sur les manuels
+  indexés, avec mémoire de la conversation. Les questions qui ne relèvent pas de la physique (chimie, maths pures,
+  autres matières...) sont poliment déclinées.
+- **Rigueur sur les unités** : système international, conversions montrées, expression littérale puis application
+  numérique, chiffres significatifs ; formules et unités rendues en LaTeX (`$9{,}8\,\text{m/s}^2$`).
+- **Schémas de physique** dessinés en SVG à partir d'une description JSON produite par Claude : circuits
+  électriques (symboles normalisés), bilans de forces, optique (lentilles, rayons, ombres), graphiques avec axes
+  gradués et unités.
+- **Exercices** générés en 5 niveaux (du QCM d'application directe au type olympiades), indice, correction détaillée
+  à la demande ; les QCM sont revérifiés par un second appel avant d'être servis.
+- **Prérequis** : diagnostic des notions antérieures nécessaires à un chapitre (rappel de cours + exercices).
+- **Flashcards** (2 506 cartes, répétition espacée pour les élèves connectés), **fiches de révision** PDF et
+  **cours** PDF par chapitre.
+- **Photo d'exercice** : l'élève envoie une photo ou un PDF, Claude guide la résolution.
+- **Export PDF / Word** d'une session ou de tout l'historique ; comptes élèves, consentement, tableau de bord
+  décideur (statistiques agrégées) ; application installable (PWA), thèmes clair et sombre.
 
-## 🏗️ Architecture
+## Programme couvert
 
-### Backend — `backend/`
-- **Framework** : FastAPI
-- **LLM** : Claude (Anthropic API) — génération des réponses, exercices, simplifications
-- **RAG** : LlamaIndex + ChromaDB (base vectorielle locale) + embeddings HuggingFace multilingues
-- **Mémoire de conversation** : historique envoyé à chaque requête, tronqué aux N derniers échanges
-- **Repli hors-ligne** : si Claude est indisponible, un petit socle de connaissances locales prend le relais
+72 chapitres de physique, intitulés exactement comme dans les manuels (`backend/curriculum_data.py`) :
+4ème (18), 3ème (19), 2nde C (11), 1ère D (8), Terminale D (16).
 
-### Frontend — `frontend/`
-- **Framework** : React 18 + Vite
-- **UI** : TailwindCSS + daisyUI (thèmes clair/sombre), composants inspirés de shadcn/ui
-- **Animations** : Framer Motion
-- **Icônes** : lucide-react
-- **Rendu mathématique** : react-markdown + KaTeX (formules LaTeX `$...$` / `$$...$$`)
-- **Export PDF** : jsPDF + html2canvas (chargés à la demande, pas dans le bundle principal)
+## Architecture
 
-## 📋 Prérequis
+| Partie | Technologies |
+|---|---|
+| Backend `backend/` | FastAPI, Claude (`anthropic`), LlamaIndex, embeddings `paraphrase-multilingual-MiniLM-L12-v2` |
+| Base de données | Postgres + pgvector (Neon) **dédiée à la physique** : table vectorielle `physique_burkina_embeddings` et données applicatives (schéma `app`) |
+| Frontend `frontend/` | React 18 + Vite, Tailwind + daisyUI, Framer Motion, react-markdown + KaTeX, schémas SVG maison (`components/figures/`), jsPDF/html2canvas et docx pour les exports |
 
-- **Python** 3.10 – 3.12 (recommandé : évitez 3.13+ pour l'instant, certaines libs RAG ne sont pas encore compatibles)
-- **Node.js** 18 ou supérieur
-- Une **clé API Anthropic** : https://console.anthropic.com/settings/keys
+Contenus pédagogiques :
 
-> ⚠️ Le LLM (Claude) est **obligatoire** pour avoir de vraies réponses de qualité. Sans clé API, l'application
-> fonctionne quand même mais ne renvoie que des réponses génériques de secours très limitées.
+| Dossier | Contenu | Utilisation |
+|---|---|---|
+| `backend/data/documents/<classe>/` | 72 chapitres PDF (`Chapitre_N_….pdf`) | « Voir le cours » + index RAG |
+| `backend/data/summaries/fiches_<classe>/` | 72 fiches de révision PDF | Résumé téléchargeable |
+| `backend/data/flashcards/<classe>/` | 72 paquets JSON (`cartes` : `recto`/`verso`) | Flashcards |
+| `sources_physique/` (non versionné) | Livres complets, guides enseignant, annexes, sources | Archive des documents fournis |
 
-## 🚀 Installation
+Le chapitre N d'un manuel correspond au N-ième chapitre de sa classe dans `curriculum_data.py` : ce numéro sert de
+départage et de secours pour retrouver le bon fichier (voir `document_processor.py`).
 
-### 1. Backend
+## Installation
 
-Ouvrez un terminal dans VS Code (`Terminal > New Terminal`) :
+Prérequis : **Python 3.11** (3.10 à 3.12), **Node.js 18+**, une clé API Anthropic, une base Neon avec l'extension
+`vector` (`CREATE EXTENSION IF NOT EXISTS vector;`).
 
-```bash
+```powershell
+# Backend
 cd backend
-python -m venv venv
+py -3.11 -m venv venv
+.\venv\Scripts\python.exe -m pip install torch --index-url https://download.pytorch.org/whl/cpu
+.\venv\Scripts\python.exe -m pip install -r requirements.txt
+copy .env.example .env      # puis renseigner les valeurs (voir ci-dessous)
 
-# Windows (PowerShell)
-.\venv\Scripts\Activate.ps1
-# Linux/Mac
-source venv/bin/activate
-
-pip install -r requirements.txt
-```
-
-Copiez `.env.example` vers `.env` et renseignez votre clé :
-
-```bash
-copy .env.example .env      # Windows
-# cp .env.example .env      # Linux/Mac
-```
-
-Éditez `backend/.env` :
-
-```env
-ANTHROPIC_API_KEY=sk-ant-votre-cle-ici
-ANTHROPIC_MODEL=claude-sonnet-5
-```
-
-
-
-### 2. Frontend
-
-Ouvrez un **second terminal** dans VS Code :
-
-```bash
-cd frontend
+# Frontend
+cd ..\frontend
 npm install
 ```
 
-## ▶️ Lancer l'application
+Variables indispensables dans `backend/.env` (jamais commité) :
 
-**Terminal 1 — Backend** (dans `backend/`, venv activé) :
-
-```bash
-python main.py
-```
-ou, équivalent avec rechargement automatique :
-```bash
-python -m uvicorn main:app --reload
-```
-→ API disponible sur `http://127.0.0.1:8000` (documentation interactive sur `/docs`)
-
-**Terminal 2 — Frontend** (dans `frontend/`) :
-
-```bash
-npm run dev
-```
-→ Application disponible sur `http://localhost:5173`
-
-Ouvrez `http://localhost:5173` dans votre navigateur : c'est l'application.
-
-### Astuce VS Code
-
-Vous pouvez garder les deux terminaux ouverts côte à côte (icône "Split Terminal") pour voir les logs backend et
-frontend en même temps, ou utiliser les scripts fournis à la racine :
-
-```bash
-npm run install:all   # installe tout (racine + frontend + backend)
-npm run dev           # lance backend + frontend en parallèle (nécessite npm install à la racine)
+```env
+ANTHROPIC_API_KEY=sk-ant-...
+DATABASE_URL=postgresql://...neon.tech/neondb?sslmode=require   # connexion directe, sans "-pooler"
+VECTOR_TABLE_NAME=physique_burkina_embeddings
 ```
 
-## 📦 Dépendances clés
+> Une variable d'environnement Windows `ANTHROPIC_API_KEY` déjà définie **prend le pas** sur celle du `.env`
+> (python-dotenv ne remplace jamais une variable existante).
 
-### Backend (`backend/requirements.txt`)
-| Paquet | Rôle |
+## Indexer les manuels
+
+À relancer après tout ajout ou remplacement de PDF dans `data/documents/` (reconstruit entièrement la table
+`physique_burkina_embeddings`, sans toucher au reste de la base) :
+
+```powershell
+cd backend
+.\venv\Scripts\python.exe -u ingest_documents.py | Tee-Object -FilePath ingest.log
+```
+
+Chaque document est classé dans son chapitre par Claude à partir de son contenu, avec repli sur le numéro de
+chapitre du nom de fichier. Durée : 10 à 30 minutes ; la dernière ligne doit indiquer `72 document(s) indexes`.
+
+## Lancer l'application
+
+```powershell
+python run.py          # lance backend (port 8000) + frontend (port 5173) et ouvre le navigateur
+```
+
+ou séparément : `cd backend; .\venv\Scripts\python.exe -m uvicorn main:app --reload` puis
+`cd frontend; npm run dev`, et ouvrir http://localhost:5173.
+
+## Tests
+
+```powershell
+cd backend;  .\venv\Scripts\python.exe -m pytest      # utilise la DATABASE_URL du .env (comptes préfixés pytest_, supprimés en fin de test)
+cd frontend; npx vitest run
+```
+
+Ne pas lancer les tests backend pendant une indexation : ils initialisent l'index vectoriel au démarrage.
+
+## Principaux endpoints
+
+| Endpoint | Rôle |
 |---|---|
-| `fastapi`, `uvicorn` | Serveur API |
-| `anthropic` | Appel au LLM Claude |
-| `llama-index`, `llama-index-embeddings-huggingface`, `llama-index-vector-stores-chroma` | Pipeline RAG |
-| `chromadb` | Base vectorielle locale persistante |
-| `sentence-transformers` | Génération des embeddings (modèle multilingue) |
-| `pypdf`, `python-docx`, `beautifulsoup4` | Extraction de texte des documents (PDF/DOCX) |
+| `GET /api/classes`, `GET /api/classes/{code}/chapters` | Programme |
+| `POST /api/chat`, `POST /api/chat/stream` | Question (réponse complète ou en streaming) |
+| `POST /api/exercise`, `POST /api/exercise/solution` | Exercice structuré, puis sa correction |
+| `POST /api/prerequis` | Diagnostic des prérequis d'un chapitre |
+| `POST /api/simplify` | Réexplication plus simple |
+| `POST /api/exercise/photo` | Aide sur une photo/un PDF d'exercice |
+| `GET /api/course/…`, `GET /api/summary/file/…`, `GET /api/flashcards/…` | Cours, fiche de révision, flashcards |
+| `GET /api/health`, `GET /api/rag/status` | État du serveur, de Claude et de l'index |
 
-### Frontend (`frontend/package.json`)
-| Paquet | Rôle |
-|---|---|
-| `tailwindcss`, `daisyui`, `@tailwindcss/typography` | Design système et thèmes |
-| `framer-motion` | Animations |
-| `lucide-react` | Icônes |
-| `react-markdown`, `remark-math`, `rehype-katex`, `katex` | Rendu Markdown + formules mathématiques |
-| `jspdf`, `html2canvas` | Export PDF des réponses (chargement différé) |
+## Dépannage
 
-## 📁 Structure du projet
-
-```
-chatbot-maths-burkina/
-├── backend/
-│   ├── main.py                 # API FastAPI (endpoints /api/*)
-│   ├── config.py                # Configuration (clé Claude, RAG, CORS...)
-│   ├── rag_system.py            # RAG + appels Claude + prompts + exercices structurés
-│   ├── document_processor.py    # Extraction de texte (PDF/DOCX/TXT)
-│   ├── curriculum_data.py       # Programme officiel (classes/chapitres)
-│   ├── requirements.txt
-│   ├── .env.example
-│   └── data/
-│       ├── documents/           # Vos PDF/DOCX à indexer, organisés par classe/chapitre
-│       └── chroma_db/           # Base vectorielle (générée automatiquement)
-├── frontend/
-│   ├── src/
-│   │   ├── components/          # Header, Sidebar, MessageBubble, ExerciseCard, ChatInput, ui/*
-│   │   ├── lib/                 # utils.js (classnames), pdf.js (export PDF)
-│   │   ├── api.js                # Appels à l'API backend
-│   │   ├── App.jsx
-│   │   └── styles/main.css
-│   ├── tailwind.config.js
-│   └── package.json
-└── docs/
-```
-
-## 📚 Ajouter vos propres documents (RAG)
-
-1. Placez vos fichiers PDF/DOCX/TXT dans `backend/data/documents/`
-2. Uploadez-les via l'API (ou copiez-les manuellement puis appelez `/index`) :
-   ```bash
-   curl -X POST "http://localhost:8000/api/documents/upload" \
-     -F "file=@votre_document.pdf" -F "class_level=4ème" -F "chapter=Théorème de Pythagore"
-   ```
-3. Le système les découpe en chunks, les indexe dans ChromaDB, et les utilise en priorité dans les réponses.
-
-## 🔧 Endpoints API principaux
-
-| Endpoint | Description |
-|---|---|
-| `GET /api/classes` | Liste des classes (6ème → Terminale) |
-| `GET /api/classes/{code}/chapters` | Chapitres d'une classe |
-| `POST /api/chat` | Pose une question (avec historique de conversation) |
-| `POST /api/exercise` | Génère un exercice structuré (énoncé/indices/solution/difficulté) |
-| `POST /api/simplify` | Reformule une réponse plus simplement |
-| `POST /api/documents/upload` | Ajoute un document à la base RAG |
-| `GET /api/health` | Vérifie l'état du serveur et du LLM |
-
-## 🐛 Dépannage
-
-- **"Hors ligne" dans l'interface**  → vérifiez que le backend tourne bien sur le port 8000 (`http://127.0.0.1:8000/api/health`).
-- **Réponses génériques/répétitives, jamais de vraies réponses de Claude** → vérifiez que `ANTHROPIC_API_KEY` est bien
-  renseignée dans `backend/.env` et que le modèle configuré (`ANTHROPIC_MODEL`) existe encore (les modèles Anthropic
-  sont régulièrement mis à jour ; consultez https://docs.anthropic.com/en/docs/about-claude/models si une erreur
-  "model not found" apparaît dans les logs du backend).
-- **Erreur d'installation `sentence-transformers`/`chromadb`** → utilisez Python 3.10–3.12 dans un environnement virtuel dédié.
-- **CORS bloqué** → vérifiez `CORS_ORIGINS` dans `backend/.env` (doit inclure `http://localhost:5173`).
-
-## 🚀 Idées de fonctionnalités pour aller plus loin
-
-Le cœur LLM/RAG est maintenant solide. Voici des pistes pour continuer à enrichir le projet :
-
-- **Streaming des réponses** (Server-Sent Events) pour afficher le texte de Claude au fur et à mesure, comme ChatGPT
-- **Authentification élève/enseignant** + historique de conversation persistant (base de données)
-- **Tableau de bord enseignant** : suivi de la progression, chapitres les plus posés en question, export de rapports
-- **Mode "quiz" à répétition espacée** (spaced repetition) pour réviser avant les examens (BEPC/BAC)
-- **OCR de photos d'exercices manuscrits** (l'élève prend en photo son cahier, Claude corrige)
-- **Génération d'un QCM/contrôle complet** en PDF à partir d'un chapitre
-- **Mode hors-ligne partiel** (cache des dernières réponses via service worker / PWA installable)
-- **Multi-modèle** : fallback automatique Claude → autre fournisseur en cas de panne prolongée
-- **Textes vocaux** (Text-to-Speech) pour l'accessibilité
-
----
-
-**Version** : 2.0
-**Statut** : Prototype fonctionnel propulsé par Claude + RAG
+- **Le backend ne démarre pas / `PoolTimeout`** : le réseau bloque peut-être le port 5432 (Postgres). Tester avec
+  un autre réseau (partage de connexion) ; Neon peut aussi mettre quelques secondes à se réveiller.
+- **« Hors ligne » dans l'interface** : vérifier `http://127.0.0.1:8000/api/health`.
+- **Réponses génériques de secours** : clé Anthropic absente ou invalide, ou modèle (`ANTHROPIC_MODEL`) retiré.
+- **Accents déformés dans la console Windows** (`├®`) : affichage seulement ; corriger avec
+  `[Console]::OutputEncoding = $OutputEncoding = [Text.UTF8Encoding]::new()`.

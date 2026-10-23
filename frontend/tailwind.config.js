@@ -1,7 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
-  darkMode: ["class", '[data-theme="chatmaths-dark"]'],
+  darkMode: ["class", '[data-theme="chatphysique-dark"]'],
   theme: {
     extend: {
       fontFamily: {
@@ -49,42 +49,42 @@ export default {
   daisyui: {
     themes: [
       {
-        "chatmaths-light": {
-          primary: "#0d9488",
+        "chatphysique-light": {
+          primary: "#4f46e5",
           "primary-content": "#ffffff",
-          secondary: "#0891b2",
+          secondary: "#0284c7",
           "secondary-content": "#ffffff",
           accent: "#d97706",
           "accent-content": "#ffffff",
           neutral: "#1f2937",
           "base-100": "#ffffff",
-          "base-200": "#f1faf9",
-          "base-300": "#e1f1ee",
-          info: "#0891b2",
+          "base-200": "#f3f4fb",
+          "base-300": "#e4e6f5",
+          info: "#0284c7",
           success: "#16a34a",
           warning: "#d97706",
           error: "#dc2626",
         },
       },
       {
-        "chatmaths-dark": {
-          primary: "#2dd4bf",
-          "primary-content": "#062420",
-          secondary: "#22d3ee",
-          "secondary-content": "#062024",
+        "chatphysique-dark": {
+          primary: "#818cf8",
+          "primary-content": "#0b0c24",
+          secondary: "#38bdf8",
+          "secondary-content": "#04202e",
           accent: "#fbbf24",
           "accent-content": "#2b1a04",
           neutral: "#e5e7eb",
-          "base-100": "#0b1615",
-          "base-200": "#101f1d",
-          "base-300": "#17302c",
-          info: "#22d3ee",
+          "base-100": "#0f1020",
+          "base-200": "#161830",
+          "base-300": "#22254a",
+          info: "#38bdf8",
           success: "#4ade80",
           warning: "#fbbf24",
           error: "#f87171",
         },
       },
     ],
-    darkTheme: "chatmaths-dark",
+    darkTheme: "chatphysique-dark",
   },
 }

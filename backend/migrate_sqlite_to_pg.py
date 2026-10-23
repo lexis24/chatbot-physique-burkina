@@ -1,8 +1,8 @@
 """
 Migration ponctuelle SQLite -> Postgres (Neon).
 
-    python migrate_sqlite_to_pg.py --sqlite chatmaths.db --dry-run
-    python migrate_sqlite_to_pg.py --sqlite chatmaths.db
+    python migrate_sqlite_to_pg.py --sqlite data/app.db --dry-run
+    python migrate_sqlite_to_pg.py --sqlite data/app.db
 
 Idempotent : relancer le script ne duplique rien (les comptes déjà présents
 sont ignorés, les conversations déjà migrées sont reconnues par leur ancien id).
@@ -230,7 +230,7 @@ def _owner_of(conversation_id: str) -> str:
 
 if __name__ == "__main__":
     ap = argparse.ArgumentParser()
-    ap.add_argument("--sqlite", default="chatmaths.db",
+    ap.add_argument("--sqlite", default="data/app.db",
                     help="chemin de l'ancienne base SQLite")
     ap.add_argument("--dry-run", action="store_true",
                     help="compte les lignes sans rien écrire")

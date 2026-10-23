@@ -1,5 +1,5 @@
 @echo off
-title Chat'Maths Burkina Faso
+title Chat'Physique Burkina Faso
 color 0B
 cd /d "%~dp0"
 

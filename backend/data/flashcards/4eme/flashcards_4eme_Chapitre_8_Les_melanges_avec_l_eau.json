@@ -1,0 +1,422 @@
+{
+  "matiere": "Physique-Chimie",
+  "partie": "Physique",
+  "niveau": "4ème",
+  "chapitre": "Physique, Chapitre 8 : Les mélanges avec l'eau",
+  "source": "pc/4eme/Chapitre_8_Les_melanges_avec_l_eau",
+  "nombre_cartes": 35,
+  "cartes": [
+    {
+      "id": "PC4E-P08-001",
+      "lecon": "Les mélanges homogènes et les mélanges hétérogènes",
+      "type": "definition",
+      "recto": "En physique-chimie, qu'appelle-t-on un mélange ?",
+      "verso": "C'est un corps formé de plusieurs constituants réunis dans le même récipient, comme l'eau du robinet, le lait ou l'air.",
+      "difficulte": 1,
+      "tags": [
+        "melange",
+        "vocabulaire"
+      ]
+    },
+    {
+      "id": "PC4E-P08-002",
+      "lecon": "Les mélanges homogènes et les mélanges hétérogènes",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on un mélange homogène ?",
+      "verso": "C'est un mélange dont on ne distingue pas les constituants à l'oeil nu : il ne présente qu'une seule partie. Exemples : l'eau salée, l'eau sucrée, l'air.",
+      "difficulte": 1,
+      "tags": [
+        "melange-homogene"
+      ]
+    },
+    {
+      "id": "PC4E-P08-003",
+      "lecon": "Les mélanges homogènes et les mélanges hétérogènes",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on un mélange hétérogène ?",
+      "verso": "C'est un mélange dont on distingue les constituants à l'oeil nu : il présente au moins deux parties. Exemples : l'eau et le sable, l'eau boueuse, l'eau et l'huile.",
+      "difficulte": 1,
+      "tags": [
+        "melange-heterogene"
+      ]
+    },
+    {
+      "id": "PC4E-P08-004",
+      "lecon": "Les mélanges homogènes et les mélanges hétérogènes",
+      "type": "definition",
+      "recto": "Quand dit-on que deux liquides sont miscibles ?",
+      "verso": "Quand ils forment ensemble un mélange homogène, comme l'eau et l'alcool ou l'eau et le vinaigre. S'ils forment deux couches superposées, ils sont non miscibles (eau et huile).",
+      "difficulte": 2,
+      "tags": [
+        "miscibilite"
+      ]
+    },
+    {
+      "id": "PC4E-P08-005",
+      "lecon": "Les mélanges homogènes et les mélanges hétérogènes",
+      "type": "formule",
+      "recto": "Dans un mélange de deux liquides non miscibles, quel liquide se place au-dessus ?",
+      "verso": "Le moins dense : l'huile, de masse volumique environ $0{,}92~\\mathrm{g/cm^3}$, surnage toujours sur l'eau, de masse volumique $1~\\mathrm{g/cm^3}$.",
+      "difficulte": 2,
+      "tags": [
+        "masse-volumique",
+        "non-miscibles"
+      ]
+    },
+    {
+      "id": "PC4E-P08-006",
+      "lecon": "Les mélanges homogènes et les mélanges hétérogènes",
+      "type": "formule",
+      "recto": "Pour reconnaître le type d'un mélange, dans quelles conditions faut-il l'observer ?",
+      "verso": "Au repos (après deux à trois minutes), à l'oeil nu, en comptant les parties visibles ; jamais juste après l'avoir secoué.",
+      "difficulte": 2,
+      "tags": [
+        "observation",
+        "methode"
+      ]
+    },
+    {
+      "id": "PC4E-P08-007",
+      "lecon": "Les mélanges homogènes et les mélanges hétérogènes",
+      "type": "definition",
+      "recto": "Pourquoi un jus de bissap bien coloré est-il un mélange homogène alors qu'on voit mal à travers ?",
+      "verso": "Le critère est le nombre de parties visibles, non la transparence ou la couleur : le jus ne présente qu'une seule partie, il est homogène.",
+      "difficulte": 3,
+      "tags": [
+        "melange-homogene",
+        "transparence"
+      ]
+    },
+    {
+      "id": "PC4E-P08-008",
+      "lecon": "Les solutions aqueuses : dissolution et saturation",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on une solution ?",
+      "verso": "C'est le mélange homogène obtenu en dissolvant un corps, le soluté, dans un liquide, le solvant.",
+      "difficulte": 1,
+      "tags": [
+        "solution"
+      ]
+    },
+    {
+      "id": "PC4E-P08-009",
+      "lecon": "Les solutions aqueuses : dissolution et saturation",
+      "type": "definition",
+      "recto": "Dans une solution, quelle différence y a-t-il entre le soluté et le solvant ?",
+      "verso": "Le soluté est le corps qui se dissout ; le solvant, appelé aussi dissolvant, est le liquide qui le dissout. Dans l'eau salée, le soluté est le sel et le solvant l'eau.",
+      "difficulte": 2,
+      "tags": [
+        "solute",
+        "solvant"
+      ]
+    },
+    {
+      "id": "PC4E-P08-010",
+      "lecon": "Les solutions aqueuses : dissolution et saturation",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on une solution aqueuse ?",
+      "verso": "C'est une solution dont le solvant est l'eau.",
+      "difficulte": 1,
+      "tags": [
+        "solution-aqueuse"
+      ]
+    },
+    {
+      "id": "PC4E-P08-011",
+      "lecon": "Les solutions aqueuses : dissolution et saturation",
+      "type": "definition",
+      "recto": "Quand dit-on qu'un corps est soluble dans l'eau ?",
+      "verso": "Quand il se dissout dans l'eau, comme le sel ou le sucre. Un corps qui ne s'y dissout pas, comme le sable ou la farine, est insoluble.",
+      "difficulte": 1,
+      "tags": [
+        "soluble",
+        "insoluble"
+      ]
+    },
+    {
+      "id": "PC4E-P08-012",
+      "lecon": "Les solutions aqueuses : dissolution et saturation",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on la dissolution d'un soluté ?",
+      "verso": "C'est le phénomène par lequel le soluté se divise en particules invisibles réparties dans tout le solvant. Le soluté ne disparaît pas : il est dissous.",
+      "difficulte": 2,
+      "tags": [
+        "dissolution"
+      ]
+    },
+    {
+      "id": "PC4E-P08-013",
+      "lecon": "Les solutions aqueuses : dissolution et saturation",
+      "type": "formule",
+      "recto": "Au cours d'une dissolution, quelle relation lie la masse de la solution à celles du solvant et du soluté ?",
+      "verso": "$m_{\\text{solution}} = m_{\\text{solvant}} + m_{\\text{soluté}}$ : la masse se conserve, dans la même unité pour les trois masses.",
+      "difficulte": 2,
+      "tags": [
+        "conservation-masse",
+        "dissolution"
+      ]
+    },
+    {
+      "id": "PC4E-P08-014",
+      "lecon": "Les solutions aqueuses : dissolution et saturation",
+      "type": "definition",
+      "recto": "Quelle différence y a-t-il entre une solution diluée et une solution concentrée ?",
+      "verso": "Une solution diluée (ou étendue) contient peu de soluté pour beaucoup de solvant ; une solution concentrée contient beaucoup de soluté pour peu de solvant.",
+      "difficulte": 2,
+      "tags": [
+        "diluee",
+        "concentree"
+      ]
+    },
+    {
+      "id": "PC4E-P08-015",
+      "lecon": "Les solutions aqueuses : dissolution et saturation",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on une solution saturée ?",
+      "verso": "C'est une solution qui contient la quantité maximale de soluté que le solvant peut dissoudre à une température donnée : tout soluté ajouté se dépose au fond.",
+      "difficulte": 2,
+      "tags": [
+        "saturee"
+      ]
+    },
+    {
+      "id": "PC4E-P08-016",
+      "lecon": "Les solutions aqueuses : dissolution et saturation",
+      "type": "formule",
+      "recto": "A la température ordinaire, quelle masse de sel un litre d'eau peut-il dissoudre au plus ?",
+      "verso": "Environ $360~\\mathrm{g}$ de sel par litre d'eau. Au-delà, la solution est saturée et le sel en excès se dépose.",
+      "difficulte": 2,
+      "tags": [
+        "saturation",
+        "sel"
+      ]
+    },
+    {
+      "id": "PC4E-P08-017",
+      "lecon": "Les solutions aqueuses : dissolution et saturation",
+      "type": "definition",
+      "recto": "Pourquoi est-il faux de dire que le sucre fond dans le thé ?",
+      "verso": "La fusion concerne un seul corps qui passe de l'état solide à l'état liquide sous l'effet de la chaleur. Dans le thé, il y a deux corps et le sucre ne change pas d'état : il se dissout.",
+      "difficulte": 3,
+      "tags": [
+        "dissolution",
+        "fusion",
+        "piege"
+      ]
+    },
+    {
+      "id": "PC4E-P08-018",
+      "lecon": "Les solutions aqueuses : dissolution et saturation",
+      "type": "definition",
+      "recto": "Quand on ajoute du sel en excès dans l'eau, de quel type est le mélange obtenu ?",
+      "verso": "Le mélange (solution saturée et dépôt) est hétérogène ; la partie liquide, seule, reste une solution saturée, homogène.",
+      "difficulte": 3,
+      "tags": [
+        "saturee",
+        "melange-heterogene"
+      ]
+    },
+    {
+      "id": "PC4E-P08-019",
+      "lecon": "La séparation des constituants d'un mélange",
+      "type": "definition",
+      "recto": "En quoi consiste la décantation ?",
+      "verso": "On laisse reposer un mélange hétérogène pour que ses constituants se séparent d'eux-mêmes, selon leur masse volumique, puis on transvase le liquide surnageant.",
+      "difficulte": 1,
+      "tags": [
+        "decantation"
+      ]
+    },
+    {
+      "id": "PC4E-P08-020",
+      "lecon": "La séparation des constituants d'un mélange",
+      "type": "definition",
+      "recto": "En quoi consiste la filtration ?",
+      "verso": "On fait passer un mélange hétérogène à travers un filtre, qui retient les solides et laisse passer le liquide.",
+      "difficulte": 1,
+      "tags": [
+        "filtration"
+      ]
+    },
+    {
+      "id": "PC4E-P08-021",
+      "lecon": "La séparation des constituants d'un mélange",
+      "type": "definition",
+      "recto": "Lors d'une filtration, quelle différence y a-t-il entre le filtrat et le résidu ?",
+      "verso": "Le filtrat est le liquide qui passe à travers le filtre ; le résidu est ce qui reste sur le filtre.",
+      "difficulte": 2,
+      "tags": [
+        "filtrat",
+        "residu"
+      ]
+    },
+    {
+      "id": "PC4E-P08-022",
+      "lecon": "La séparation des constituants d'un mélange",
+      "type": "definition",
+      "recto": "Dans la séparation d'un mélange homogène, quelle différence y a-t-il entre l'évaporation et la distillation ?",
+      "verso": "L'évaporation fait partir le solvant en vapeur pour récupérer le soluté solide ; la distillation vaporise le solvant puis condense sa vapeur pour récupérer le solvant liquide purifié, le distillat.",
+      "difficulte": 3,
+      "tags": [
+        "evaporation",
+        "distillation",
+        "piege"
+      ]
+    },
+    {
+      "id": "PC4E-P08-023",
+      "lecon": "La séparation des constituants d'un mélange",
+      "type": "formule",
+      "recto": "Quels procédés permettent de séparer les constituants d'un mélange hétérogène ?",
+      "verso": "La décantation et la filtration, qui se combinent souvent.",
+      "difficulte": 2,
+      "tags": [
+        "choix-procede",
+        "heterogene"
+      ]
+    },
+    {
+      "id": "PC4E-P08-024",
+      "lecon": "La séparation des constituants d'un mélange",
+      "type": "formule",
+      "recto": "Quels procédés permettent de séparer les constituants d'un mélange homogène ?",
+      "verso": "L'évaporation (ou vaporisation) pour récupérer le soluté, la distillation pour récupérer le solvant. La décantation et la filtration ne conviennent pas.",
+      "difficulte": 2,
+      "tags": [
+        "choix-procede",
+        "homogene"
+      ]
+    },
+    {
+      "id": "PC4E-P08-025",
+      "lecon": "La séparation des constituants d'un mélange",
+      "type": "formule",
+      "recto": "Lorsqu'on sépare deux liquides non miscibles à l'ampoule à décanter, quel liquide s'écoule le premier ?",
+      "verso": "Avec une ampoule à décanter (ou ballon à décanter) : le liquide du bas, le plus dense, s'écoule le premier par le robinet.",
+      "difficulte": 2,
+      "tags": [
+        "ampoule-a-decanter",
+        "non-miscibles"
+      ]
+    },
+    {
+      "id": "PC4E-P08-026",
+      "lecon": "La séparation des constituants d'un mélange",
+      "type": "definition",
+      "recto": "Quels sont les éléments d'un montage de distillation simple de l'eau salée ?",
+      "verso": "Un ballon contenant l'eau salée sur un support chauffant, un thermomètre au départ du tube, un réfrigérant parcouru par de l'eau froide et un bécher qui recueille le distillat.",
+      "difficulte": 2,
+      "tags": [
+        "distillation",
+        "montage"
+      ]
+    },
+    {
+      "id": "PC4E-P08-027",
+      "lecon": "La séparation des constituants d'un mélange",
+      "type": "definition",
+      "recto": "Pourquoi un papier filtre ne retire-t-il pas le sel d'une eau salée ?",
+      "verso": "Un filtre n'arrête que ce qui est plus gros que ses trous ; le sel dissous est divisé en particules bien plus petites et traverse le filtre avec l'eau. La filtration ne sépare jamais un mélange homogène.",
+      "difficulte": 3,
+      "tags": [
+        "filtration",
+        "piege"
+      ]
+    },
+    {
+      "id": "PC4E-P08-028",
+      "lecon": "La séparation des constituants d'un mélange",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on la lévigation pratiquée par les orpailleurs ?",
+      "verso": "C'est une variante de la décantation qui utilise un courant d'eau : le sable passe par-dessus le bord de la calebasse, les paillettes d'or, plus denses, restent au fond.",
+      "difficulte": 2,
+      "tags": [
+        "levigation"
+      ]
+    },
+    {
+      "id": "PC4E-P08-029",
+      "lecon": "Le corps pur, l'eau pure et l'eau potable",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on un corps pur ?",
+      "verso": "C'est un corps formé d'une seule sorte de matière, sans aucun autre corps mélangé : l'eau distillée, le fer, le dioxygène.",
+      "difficulte": 1,
+      "tags": [
+        "corps-pur"
+      ]
+    },
+    {
+      "id": "PC4E-P08-030",
+      "lecon": "Le corps pur, l'eau pure et l'eau potable",
+      "type": "formule",
+      "recto": "Comment reconnaît-on un corps pur d'un mélange par ses changements d'état ?",
+      "verso": "Un corps pur change d'état à température constante : sa courbe présente un palier. Un mélange change d'état sur un intervalle de températures, sans palier net.",
+      "difficulte": 2,
+      "tags": [
+        "corps-pur",
+        "palier"
+      ]
+    },
+    {
+      "id": "PC4E-P08-031",
+      "lecon": "Le corps pur, l'eau pure et l'eau potable",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on une eau pure ?",
+      "verso": "C'est une eau qui ne contient rien d'autre que de l'eau ; on l'obtient par distillation (eau distillée).",
+      "difficulte": 2,
+      "tags": [
+        "eau-pure",
+        "distillation"
+      ]
+    },
+    {
+      "id": "PC4E-P08-032",
+      "lecon": "Le corps pur, l'eau pure et l'eau potable",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on une eau potable ?",
+      "verso": "C'est une eau qui se boit sans danger : limpide, sans odeur ni mauvais goût, sans microbes dangereux, sans produits toxiques et sans sels en excès. Elle contient des sels minéraux utiles.",
+      "difficulte": 2,
+      "tags": [
+        "eau-potable"
+      ]
+    },
+    {
+      "id": "PC4E-P08-033",
+      "lecon": "Le corps pur, l'eau pure et l'eau potable",
+      "type": "definition",
+      "recto": "Pourquoi une eau potable n'est-elle pas une eau pure ?",
+      "verso": "Elle contient des sels minéraux utiles à l'organisme, alors qu'une eau pure ne contient que de l'eau.",
+      "difficulte": 3,
+      "tags": [
+        "eau-potable",
+        "eau-pure",
+        "piege"
+      ]
+    },
+    {
+      "id": "PC4E-P08-034",
+      "lecon": "Le corps pur, l'eau pure et l'eau potable",
+      "type": "formule",
+      "recto": "Dans l'ordre, quelles sont les quatre étapes de la production d'eau potable à partir d'une eau de surface ?",
+      "verso": "Le dégrillage, la décantation, la filtration sur sable et gravier, puis la désinfection au chlore.",
+      "difficulte": 2,
+      "tags": [
+        "eau-potable",
+        "traitement"
+      ]
+    },
+    {
+      "id": "PC4E-P08-035",
+      "lecon": "Le corps pur, l'eau pure et l'eau potable",
+      "type": "definition",
+      "recto": "Pourquoi une eau limpide n'est-elle pas forcément potable ?",
+      "verso": "Les microbes et les sels dissous sont invisibles : seule la limpidité se voit. Filtrer n'est pas désinfecter, il faut encore désinfecter l'eau.",
+      "difficulte": 3,
+      "tags": [
+        "eau-potable",
+        "limpidite",
+        "piege"
+      ]
+    }
+  ]
+}

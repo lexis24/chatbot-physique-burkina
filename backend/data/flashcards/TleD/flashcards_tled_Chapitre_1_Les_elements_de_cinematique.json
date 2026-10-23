@@ -1,0 +1,411 @@
+{
+  "matiere": "Physique-Chimie",
+  "partie": "Physique",
+  "niveau": "Terminale D",
+  "chapitre": "Physique, Chapitre 1 : Les éléments de cinématique",
+  "source": "pc/tled/Chapitre_1_Les_elements_de_cinematique",
+  "nombre_cartes": 35,
+  "cartes": [
+    {
+      "id": "PCTD-P01-001",
+      "lecon": "Le repérage d'un point mobile",
+      "type": "definition",
+      "recto": "En cinématique, qu'appelle-t-on un référentiel ?",
+      "verso": "Un solide de référence muni d'un repère d'espace orthonormé $\\left(O, \\vec{i}, \\vec{j}, \\vec{k}\\right)$ et d'une horloge qui donne la date $t$.",
+      "difficulte": 1,
+      "tags": [
+        "referentiel"
+      ]
+    },
+    {
+      "id": "PCTD-P01-002",
+      "lecon": "Le repérage d'un point mobile",
+      "type": "formule",
+      "recto": "Comment s'écrit le vecteur position $\\overrightarrow{OM}$ d'un point mobile $M$ dans un repère cartésien $\\left(O, \\vec{i}, \\vec{j}, \\vec{k}\\right)$ ?",
+      "verso": "$\\overrightarrow{OM} = x(t)\\,\\vec{i} + y(t)\\,\\vec{j} + z(t)\\,\\vec{k}$, de norme $OM = \\sqrt{x^{2} + y^{2} + z^{2}}$, en mètres.",
+      "difficulte": 1,
+      "tags": [
+        "vecteur-position"
+      ]
+    },
+    {
+      "id": "PCTD-P01-003",
+      "lecon": "Le repérage d'un point mobile",
+      "type": "definition",
+      "recto": "En cinématique, que sont les équations horaires d'un mouvement ?",
+      "verso": "Les fonctions $x(t)$, $y(t)$ et $z(t)$ qui donnent la position du mobile à chaque date ; on les appelle aussi équations paramétriques ou équations cinématiques.",
+      "difficulte": 1,
+      "tags": [
+        "equations-horaires"
+      ]
+    },
+    {
+      "id": "PCTD-P01-004",
+      "lecon": "Le repérage d'un point mobile",
+      "type": "definition",
+      "recto": "Comment obtient-on l'équation de la trajectoire d'un mobile à partir de ses équations horaires $x(t)$ et $y(t)$ ?",
+      "verso": "En éliminant le temps $t$ entre les équations horaires : il reste une relation entre les seules coordonnées, qui décrit la ligne parcourue et jamais la date de passage.",
+      "difficulte": 2,
+      "tags": [
+        "trajectoire"
+      ]
+    },
+    {
+      "id": "PCTD-P01-005",
+      "lecon": "Le repérage d'un point mobile",
+      "type": "definition",
+      "recto": "Quelle distinction fait-on entre équation horaire et équation de la trajectoire d'un mobile ?",
+      "verso": "L'équation horaire contient le temps et répond à « où, à quelle date ? » ; l'équation de la trajectoire ne contient pas le temps et répond à « quelle ligne ? ». Ecrire « la trajectoire a pour équation $x = 2t$ » est donc faux.",
+      "difficulte": 3,
+      "tags": [
+        "trajectoire",
+        "piege"
+      ]
+    },
+    {
+      "id": "PCTD-P01-006",
+      "lecon": "Le repérage d'un point mobile",
+      "type": "definition",
+      "recto": "Sur une trajectoire orientée d'origine $M_{0}$, qu'appelle-t-on l'abscisse curviligne $s$ du point mobile $M$ ?",
+      "verso": "La longueur de l'arc $M_{0}M$ mesurée le long de la trajectoire, comptée positivement dans le sens choisi et négativement dans l'autre. Sur un cercle de rayon $R$, $s = R\\,\\theta$, avec $\\theta$ en radians.",
+      "difficulte": 2,
+      "tags": [
+        "abscisse-curviligne"
+      ]
+    },
+    {
+      "id": "PCTD-P01-007",
+      "lecon": "Le repérage d'un point mobile",
+      "type": "formule",
+      "recto": "Pour un mobile du plan, à quelle courbe correspond une équation de trajectoire de la forme $\\left(x - x_{C}\\right)^{2} + \\left(y - y_{C}\\right)^{2} = R^{2}$ ?",
+      "verso": "Au cercle de centre $C\\left(x_{C}, y_{C}\\right)$ et de rayon $R$. Une relation du premier degré donne une droite, une relation du second degré en une seule variable une parabole.",
+      "difficulte": 2,
+      "tags": [
+        "trajectoire",
+        "cercle"
+      ]
+    },
+    {
+      "id": "PCTD-P01-008",
+      "lecon": "Le vecteur vitesse",
+      "type": "formule",
+      "recto": "Comment définit-on le vecteur vitesse moyenne d'un mobile entre les dates $t_{1}$ et $t_{2}$ ?",
+      "verso": "$\\vec{v}_{m} = \\dfrac{\\overrightarrow{M_{1}M_{2}}}{t_{2} - t_{1}}$ : il a la direction et le sens du vecteur déplacement $\\overrightarrow{M_{1}M_{2}}$.",
+      "difficulte": 2,
+      "tags": [
+        "vitesse-moyenne"
+      ]
+    },
+    {
+      "id": "PCTD-P01-009",
+      "lecon": "Le vecteur vitesse",
+      "type": "definition",
+      "recto": "Comment définit-on le vecteur vitesse instantanée $\\vec{v}$ d'un point mobile $M$ ?",
+      "verso": "C'est la dérivée du vecteur position par rapport au temps : $\\vec{v} = \\dfrac{d\\overrightarrow{OM}}{dt}$, limite du vecteur vitesse moyenne quand la durée tend vers zéro. Il s'exprime en $\\mathrm{m/s}$.",
+      "difficulte": 1,
+      "tags": [
+        "vitesse-instantanee"
+      ]
+    },
+    {
+      "id": "PCTD-P01-010",
+      "lecon": "Le vecteur vitesse",
+      "type": "formule",
+      "recto": "Dans un repère cartésien fixe $\\left(O, \\vec{i}, \\vec{j}\\right)$, quelle est la norme du vecteur vitesse d'un mobile de coordonnées $x(t)$ et $y(t)$ ?",
+      "verso": "$v = \\sqrt{\\left(\\dfrac{dx}{dt}\\right)^{2} + \\left(\\dfrac{dy}{dt}\\right)^{2}}$, en $\\mathrm{m/s}$ ; jamais la somme des composantes : pour $\\vec{v} = 3\\vec{i} + 4\\vec{j}$, $v = 5~\\mathrm{m/s}$ et non $7~\\mathrm{m/s}$.",
+      "difficulte": 2,
+      "tags": [
+        "norme-vitesse",
+        "piege"
+      ]
+    },
+    {
+      "id": "PCTD-P01-011",
+      "lecon": "Le vecteur vitesse",
+      "type": "definition",
+      "recto": "Quelles sont les caractéristiques du vecteur vitesse instantanée d'un point mobile $M$ ?",
+      "verso": "Origine : le point $M$ ; direction : la tangente à la trajectoire en $M$ ; sens : celui du mouvement ; norme : la valeur de la vitesse.",
+      "difficulte": 1,
+      "tags": [
+        "vitesse-instantanee",
+        "tangente"
+      ]
+    },
+    {
+      "id": "PCTD-P01-012",
+      "lecon": "Le vecteur vitesse",
+      "type": "definition",
+      "recto": "Pourquoi le vecteur vitesse instantanée est-il tangent à la trajectoire ?",
+      "verso": "Parce qu'il est la limite de $\\dfrac{\\overrightarrow{MM'}}{\\Delta t}$ : le vecteur $\\overrightarrow{MM'}$ porte une corde de la trajectoire, et quand $M'$ se rapproche de $M$ cette corde tend vers la tangente en $M$.",
+      "difficulte": 3,
+      "tags": [
+        "tangente"
+      ]
+    },
+    {
+      "id": "PCTD-P01-013",
+      "lecon": "Le vecteur vitesse",
+      "type": "formule",
+      "recto": "Avec l'abscisse curviligne $s$ sur une trajectoire orientée, comment s'exprime la vitesse d'un mobile ?",
+      "verso": "La valeur algébrique de la vitesse est $v = \\dfrac{ds}{dt}$ (notée aussi $v_{s}$), et $\\vec{v} = v\\,\\vec{u}_{t}$, où $\\vec{u}_{t}$ est le vecteur unitaire tangent orienté dans le sens du mouvement.",
+      "difficulte": 2,
+      "tags": [
+        "abscisse-curviligne",
+        "vitesse-algebrique"
+      ]
+    },
+    {
+      "id": "PCTD-P01-014",
+      "lecon": "Le vecteur vitesse",
+      "type": "definition",
+      "recto": "Quelle différence y a-t-il entre la norme $v$ du vecteur vitesse et la valeur algébrique $\\dfrac{ds}{dt}$ ?",
+      "verso": "La norme $v$ est toujours positive ; la valeur algébrique $\\dfrac{ds}{dt}$ peut être négative, quand le mobile se déplace dans le sens contraire de l'orientation choisie.",
+      "difficulte": 3,
+      "tags": [
+        "vitesse-algebrique"
+      ]
+    },
+    {
+      "id": "PCTD-P01-015",
+      "lecon": "Le vecteur accélération et la base de Frenet",
+      "type": "formule",
+      "recto": "Comment définit-on le vecteur accélération moyenne d'un mobile entre les dates $t_{1}$ et $t_{2}$ ?",
+      "verso": "$\\vec{a}_{m} = \\dfrac{\\Delta \\vec{v}}{\\Delta t} = \\dfrac{\\vec{v}_{2} - \\vec{v}_{1}}{t_{2} - t_{1}}$, en $\\mathrm{m/s^2}$.",
+      "difficulte": 1,
+      "tags": [
+        "acceleration-moyenne"
+      ]
+    },
+    {
+      "id": "PCTD-P01-016",
+      "lecon": "Le vecteur accélération et la base de Frenet",
+      "type": "definition",
+      "recto": "Comment définit-on le vecteur accélération instantanée $\\vec{a}$ d'un point mobile ?",
+      "verso": "C'est la dérivée du vecteur vitesse, donc la dérivée seconde du vecteur position : $\\vec{a} = \\dfrac{d\\vec{v}}{dt} = \\dfrac{d^{2}\\overrightarrow{OM}}{dt^{2}}$, en $\\mathrm{m/s^2}$.",
+      "difficulte": 1,
+      "tags": [
+        "acceleration-instantanee"
+      ]
+    },
+    {
+      "id": "PCTD-P01-017",
+      "lecon": "Le vecteur accélération et la base de Frenet",
+      "type": "definition",
+      "recto": "En un point $M$ d'une trajectoire, comment sont définis les deux vecteurs de la base de Frenet $\\left(M, \\vec{u}_{t}, \\vec{u}_{n}\\right)$ ?",
+      "verso": "Ce sont deux vecteurs unitaires issus de $M$ : $\\vec{u}_{t}$ tangent à la trajectoire, orienté dans le sens du mouvement ; $\\vec{u}_{n}$ perpendiculaire à $\\vec{u}_{t}$, dirigé vers le centre de courbure (l'intérieur du virage).",
+      "difficulte": 2,
+      "tags": [
+        "base-de-frenet"
+      ]
+    },
+    {
+      "id": "PCTD-P01-018",
+      "lecon": "Le vecteur accélération et la base de Frenet",
+      "type": "definition",
+      "recto": "Pourquoi dit-on que la base de Frenet est une base locale ?",
+      "verso": "Parce qu'elle n'est pas fixe dans le référentiel : elle accompagne le mobile et change d'orientation d'un point de la trajectoire à l'autre.",
+      "difficulte": 2,
+      "tags": [
+        "base-de-frenet"
+      ]
+    },
+    {
+      "id": "PCTD-P01-019",
+      "lecon": "Le vecteur accélération et la base de Frenet",
+      "type": "formule",
+      "recto": "Dans la base de Frenet, quelles sont les composantes tangentielle $a_{t}$ et normale $a_{n}$ du vecteur accélération ?",
+      "verso": "$\\vec{a} = a_{t}\\,\\vec{u}_{t} + a_{n}\\,\\vec{u}_{n}$ avec $a_{t} = \\dfrac{dv}{dt}$ et $a_{n} = \\dfrac{v^{2}}{R}$, où $R$ est le rayon de courbure en $M$ ; $a = \\sqrt{a_{t}^{2} + a_{n}^{2}}$.",
+      "difficulte": 2,
+      "tags": [
+        "base-de-frenet",
+        "acceleration"
+      ]
+    },
+    {
+      "id": "PCTD-P01-020",
+      "lecon": "Le vecteur accélération et la base de Frenet",
+      "type": "definition",
+      "recto": "Quelle variation du vecteur vitesse mesure chacune des composantes $a_{t}$ et $a_{n}$ de l'accélération dans la base de Frenet ?",
+      "verso": "$a_{t}$ mesure la variation de la valeur de la vitesse (nulle si et seulement si le mouvement est uniforme) ; $a_{n}$ mesure la variation de sa direction (nulle si et seulement si le mouvement est rectiligne).",
+      "difficulte": 2,
+      "tags": [
+        "base-de-frenet"
+      ]
+    },
+    {
+      "id": "PCTD-P01-021",
+      "lecon": "Le vecteur accélération et la base de Frenet",
+      "type": "formule",
+      "recto": "Quel signe possède toujours l'accélération normale $a_{n}$ d'un mobile ?",
+      "verso": "$a_{n} = \\dfrac{v^{2}}{R} \\geqslant 0$ : elle est toujours positive ou nulle, car $\\vec{u}_{n}$ pointe vers le centre de courbure ; le vecteur accélération est donc toujours du côté concave de la trajectoire.",
+      "difficulte": 2,
+      "tags": [
+        "acceleration-normale"
+      ]
+    },
+    {
+      "id": "PCTD-P01-022",
+      "lecon": "Le vecteur accélération et la base de Frenet",
+      "type": "formule",
+      "recto": "Comment le signe du produit scalaire $\\vec{v} \\cdot \\vec{a}$ renseigne-t-il sur la nature d'un mouvement ?",
+      "verso": "$\\vec{v} \\cdot \\vec{a} \\gt 0$ : mouvement accéléré ; $\\vec{v} \\cdot \\vec{a} \\lt 0$ : retardé ; $\\vec{v} \\cdot \\vec{a} = 0$ à chaque instant : uniforme. En effet $\\dfrac{d\\left(v^{2}\\right)}{dt} = 2\\,\\vec{v} \\cdot \\vec{a}$.",
+      "difficulte": 2,
+      "tags": [
+        "nature-du-mouvement",
+        "produit-scalaire"
+      ]
+    },
+    {
+      "id": "PCTD-P01-023",
+      "lecon": "Le vecteur accélération et la base de Frenet",
+      "type": "definition",
+      "recto": "Quelle erreur guette l'élève qui trouve $\\vec{v} \\cdot \\vec{a} = 0$ à une date isolée ?",
+      "verso": "Conclure que le mouvement est uniforme : il faut que le produit soit nul à chaque instant. Nul à un instant isolé, il signale seulement que la vitesse passe par un extremum.",
+      "difficulte": 3,
+      "tags": [
+        "produit-scalaire",
+        "piege"
+      ]
+    },
+    {
+      "id": "PCTD-P01-024",
+      "lecon": "Le vecteur accélération et la base de Frenet",
+      "type": "definition",
+      "recto": "A quelle condition un mouvement d'accélération constante est-il rectiligne ?",
+      "verso": "Seulement si la vitesse initiale $\\vec{v}_{0}$ et l'accélération $\\vec{a}$ sont colinéaires ; sinon la trajectoire est une parabole.",
+      "difficulte": 3,
+      "tags": [
+        "acceleration-constante",
+        "piege"
+      ]
+    },
+    {
+      "id": "PCTD-P01-025",
+      "lecon": "Le vecteur accélération et la base de Frenet",
+      "type": "definition",
+      "recto": "Quelle distinction fait-on entre l'accélération tangentielle $a_{t}$ et la dérivée seconde $\\dfrac{d^{2}x}{dt^{2}}$ ?",
+      "verso": "$a_{t} = \\dfrac{dv}{dt}$ est la dérivée de la norme de la vitesse ; $\\dfrac{d^{2}x}{dt^{2}}$ est la dérivée seconde d'une coordonnée. Elles ne coïncident pas en général.",
+      "difficulte": 3,
+      "tags": [
+        "acceleration-tangentielle"
+      ]
+    },
+    {
+      "id": "PCTD-P01-026",
+      "lecon": "L'étude cinématique de quelques mouvements",
+      "type": "definition",
+      "recto": "Quelles sont les caractéristiques d'un mouvement rectiligne uniforme (MRU) ?",
+      "verso": "La trajectoire est une droite et le vecteur vitesse est constant : $\\vec{a} = \\vec{0}$, $v = \\mathrm{cte}$ et $x(t) = v\\,t + x_{0}$.",
+      "difficulte": 1,
+      "tags": [
+        "mru"
+      ]
+    },
+    {
+      "id": "PCTD-P01-027",
+      "lecon": "L'étude cinématique de quelques mouvements",
+      "type": "formule",
+      "recto": "Quelles sont les équations horaires d'un mouvement rectiligne uniformément varié d'accélération $a$ ?",
+      "verso": "$a = \\mathrm{cte}$ ; $v(t) = a\\,t + v_{0}$ ; $x(t) = \\dfrac{1}{2}a\\,t^{2} + v_{0}\\,t + x_{0}$, valables seulement si l'accélération est constante et la trajectoire rectiligne.",
+      "difficulte": 1,
+      "tags": [
+        "mruv",
+        "equations-horaires"
+      ]
+    },
+    {
+      "id": "PCTD-P01-028",
+      "lecon": "L'étude cinématique de quelques mouvements",
+      "type": "formule",
+      "recto": "Pour un mouvement rectiligne uniformément varié, quelle relation lie vitesses et positions sans faire intervenir le temps ?",
+      "verso": "$v^{2} - v_{0}^{2} = 2a\\left(x - x_{0}\\right)$, valable aussi entre deux dates quelconques : $v_{2}^{2} - v_{1}^{2} = 2a\\left(x_{2} - x_{1}\\right)$.",
+      "difficulte": 2,
+      "tags": [
+        "mruv",
+        "relation-sans-temps"
+      ]
+    },
+    {
+      "id": "PCTD-P01-029",
+      "lecon": "L'étude cinématique de quelques mouvements",
+      "type": "definition",
+      "recto": "A quelle condition un mouvement rectiligne uniformément varié est-il uniformément accéléré ?",
+      "verso": "Quand l'accélération $a$ et la vitesse $v$ sont de même signe ; s'ils sont de signes contraires, il est uniformément retardé.",
+      "difficulte": 2,
+      "tags": [
+        "mruv",
+        "nature-du-mouvement"
+      ]
+    },
+    {
+      "id": "PCTD-P01-030",
+      "lecon": "L'étude cinématique de quelques mouvements",
+      "type": "formule",
+      "recto": "Pour un mouvement circulaire de rayon $R$, quelles relations lient les grandeurs linéaires $s$, $v$, $a_{n}$ aux grandeurs angulaires $\\theta$ et $\\omega$ ?",
+      "verso": "$s = R\\,\\theta$ ; $v = R\\,\\omega$ ; $a_{n} = \\dfrac{v^{2}}{R} = R\\,\\omega^{2}$, avec $\\theta$ en radians et $\\omega = \\dfrac{d\\theta}{dt}$ en $\\mathrm{rad/s}$.",
+      "difficulte": 2,
+      "tags": [
+        "mouvement-circulaire"
+      ]
+    },
+    {
+      "id": "PCTD-P01-031",
+      "lecon": "L'étude cinématique de quelques mouvements",
+      "type": "formule",
+      "recto": "Pour un mouvement circulaire uniforme de vitesse angulaire $\\omega$, comment s'expriment la période $T$ et la fréquence $f$ ?",
+      "verso": "$T = \\dfrac{2\\pi}{\\omega}$, en secondes, et $f = \\dfrac{1}{T} = \\dfrac{\\omega}{2\\pi}$, en hertz.",
+      "difficulte": 1,
+      "tags": [
+        "mcu",
+        "periode"
+      ]
+    },
+    {
+      "id": "PCTD-P01-032",
+      "lecon": "L'étude cinématique de quelques mouvements",
+      "type": "definition",
+      "recto": "Pourquoi un mouvement circulaire uniforme n'a-t-il pas une accélération nulle ?",
+      "verso": "La vitesse n'est constante qu'en valeur ; sa direction change sans cesse. Ainsi $a_{t} = 0$ mais $a_{n} = \\dfrac{v^{2}}{R} \\neq 0$ : $\\vec{a} = \\dfrac{v^{2}}{R}\\,\\vec{u}_{n}$ est centripète, de norme constante.",
+      "difficulte": 3,
+      "tags": [
+        "mcu",
+        "piege"
+      ]
+    },
+    {
+      "id": "PCTD-P01-033",
+      "lecon": "L'étude cinématique de quelques mouvements",
+      "type": "formule",
+      "recto": "Comment convertit-on une vitesse angulaire de $N$ tours par minute en radians par seconde ?",
+      "verso": "$\\omega = \\dfrac{2\\pi N}{60}$ en $\\mathrm{rad/s}$ ; par exemple $240$ tours par minute donnent $\\omega \\approx 25~\\mathrm{rad/s}$. Cette conversion précède tout emploi de $v = R\\,\\omega$.",
+      "difficulte": 2,
+      "tags": [
+        "conversion",
+        "vitesse-angulaire"
+      ]
+    },
+    {
+      "id": "PCTD-P01-034",
+      "lecon": "L'étude cinématique de quelques mouvements",
+      "type": "formule",
+      "recto": "Pour un mouvement rectiligne uniformément varié dont l'origine des dates n'est pas l'instant initial, comment s'écrivent $v(t)$ et $x(t)$ si le mobile est en $x_{0}$ avec la vitesse $v_{0}$ à la date $t_{0}$ ?",
+      "verso": "$v(t) = a\\left(t - t_{0}\\right) + v_{0}$ et $x(t) = \\dfrac{1}{2}a\\left(t - t_{0}\\right)^{2} + v_{0}\\left(t - t_{0}\\right) + x_{0}$.",
+      "difficulte": 2,
+      "tags": [
+        "mruv",
+        "origine-des-dates"
+      ]
+    },
+    {
+      "id": "PCTD-P01-035",
+      "lecon": "L'étude cinématique de quelques mouvements",
+      "type": "definition",
+      "recto": "Sur le graphique $v(t)$ d'un mouvement rectiligne, que représente la pente d'un segment de droite ?",
+      "verso": "L'accélération $a$, constante, de la phase correspondante ; le signe de $v$ donne le sens du mouvement.",
+      "difficulte": 2,
+      "tags": [
+        "graphique-vitesse"
+      ]
+    }
+  ]
+}

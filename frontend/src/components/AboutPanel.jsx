@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react"
 import { ShieldCheck, ChevronDown } from "lucide-react"
 import BottomSheet from "./ui/BottomSheet.jsx"
 import Modal from "./ui/Modal.jsx"
-import MathContent from "./MathContent.jsx"
+import RichContent from "./RichContent.jsx"
 import { ONBOARDING_STEPS } from "../lib/onboardingSteps.js"
 import { getConsent } from "../api.js"
 import { useIsMobile } from "../lib/useMediaQuery.js"
@@ -48,7 +48,7 @@ function ConsentReminder() {
         <div className="mt-2.5 max-h-56 overflow-y-auto scrollbar-thin rounded-lg bg-base-200/40 p-3 text-sm">
           {error && <p className="text-error">Impossible de charger le texte pour le moment. Réessaie.</p>}
           {!error && !consent && <p className="text-base-content/50">Chargement…</p>}
-          {consent && <MathContent>{consent.text}</MathContent>}
+          {consent && <RichContent>{consent.text}</RichContent>}
         </div>
       )}
     </div>
@@ -74,7 +74,7 @@ function AboutContent() {
       <div>
         <p className="font-heading mb-1 text-sm font-semibold text-base-content">Le projet</p>
         <p className="text-sm leading-relaxed text-base-content/70">
-          Prof Amira t'aide à réviser les maths du programme officiel du Burkina Faso, de la 6ème à
+          Prof Aïcha t'aide à réviser la physique du programme officiel du Burkina Faso, de la 4ème à
           la Terminale, à partir des manuels de la Collection Hakili Lab. Pose une question à tout
           moment, génère un exercice sur mesure, ou reprends le cours d'un chapitre — un produit
           Hakili Lab.

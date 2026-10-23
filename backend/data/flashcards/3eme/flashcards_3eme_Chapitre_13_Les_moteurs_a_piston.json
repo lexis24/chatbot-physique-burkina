@@ -1,0 +1,400 @@
+{
+  "matiere": "Physique-Chimie",
+  "partie": "Physique",
+  "niveau": "3ème",
+  "chapitre": "Physique, Chapitre 13 : Les moteurs à piston",
+  "source": "pc/3eme/Chapitre_13_Les_moteurs_a_piston",
+  "nombre_cartes": 34,
+  "cartes": [
+    {
+      "id": "PC3E-P13-001",
+      "lecon": "Le moteur à piston et la transformation de la chaleur en travail",
+      "type": "definition",
+      "recto": "Quelle transformation d'énergie un moteur à piston réalise-t-il ?",
+      "verso": "Il transforme la chaleur libérée par la combustion d'un carburant en travail mécanique.",
+      "difficulte": 1,
+      "tags": [
+        "moteur-piston",
+        "definition"
+      ]
+    },
+    {
+      "id": "PC3E-P13-002",
+      "lecon": "Le moteur à piston et la transformation de la chaleur en travail",
+      "type": "definition",
+      "recto": "Pourquoi dit-on qu'un moteur à piston est un moteur à combustion interne ?",
+      "verso": "Parce que la combustion du carburant a lieu dans le cylindre même.",
+      "difficulte": 2,
+      "tags": [
+        "combustion-interne"
+      ]
+    },
+    {
+      "id": "PC3E-P13-003",
+      "lecon": "Le moteur à piston et la transformation de la chaleur en travail",
+      "type": "definition",
+      "recto": "Dans un moteur à piston, quel est le rôle du système bielle-manivelle ?",
+      "verso": "Il transforme le mouvement rectiligne alternatif du piston en mouvement de rotation continu du vilebrequin.",
+      "difficulte": 2,
+      "tags": [
+        "bielle-manivelle"
+      ]
+    },
+    {
+      "id": "PC3E-P13-004",
+      "lecon": "Le moteur à piston et la transformation de la chaleur en travail",
+      "type": "definition",
+      "recto": "Dans un moteur à piston, quel est le rôle des segments du piston ?",
+      "verso": "Ils assurent l'étanchéité : ils empêchent les gaz de fuir vers le bas et l'huile de monter vers le haut.",
+      "difficulte": 2,
+      "tags": [
+        "segments",
+        "organes"
+      ]
+    },
+    {
+      "id": "PC3E-P13-005",
+      "lecon": "Le moteur à piston et la transformation de la chaleur en travail",
+      "type": "definition",
+      "recto": "Dans un moteur à piston, qu'est-ce que la culasse ?",
+      "verso": "C'est la pièce qui ferme le haut du cylindre ; elle porte les soupapes d'admission et d'échappement, et la bougie dans un moteur à essence.",
+      "difficulte": 1,
+      "tags": [
+        "culasse",
+        "organes"
+      ]
+    },
+    {
+      "id": "PC3E-P13-006",
+      "lecon": "Le moteur à piston et la transformation de la chaleur en travail",
+      "type": "definition",
+      "recto": "Dans un moteur à piston, que désignent le point mort haut (PMH) et le point mort bas (PMB) ?",
+      "verso": "Le PMH est la position la plus haute du piston, le PMB sa position la plus basse.",
+      "difficulte": 1,
+      "tags": [
+        "points-morts"
+      ]
+    },
+    {
+      "id": "PC3E-P13-007",
+      "lecon": "Le moteur à piston et la transformation de la chaleur en travail",
+      "type": "definition",
+      "recto": "Dans un moteur à piston, quel est le rôle du volant d'inertie ?",
+      "verso": "Ce lourd disque calé sur le vilebrequin emmagasine de l'énergie pendant le temps moteur et la restitue pendant les trois autres temps : sans lui, le moteur s'arrêterait entre deux explosions.",
+      "difficulte": 2,
+      "tags": [
+        "volant-inertie"
+      ]
+    },
+    {
+      "id": "PC3E-P13-008",
+      "lecon": "Le moteur à piston et la transformation de la chaleur en travail",
+      "type": "definition",
+      "recto": "Quelle est la composition des gaz frais dans un moteur à essence et dans un moteur diesel ?",
+      "verso": "Moteur à essence : un mélange d'air et de vapeur d'essence. Moteur diesel : de l'air seul.",
+      "difficulte": 2,
+      "tags": [
+        "gaz-frais"
+      ]
+    },
+    {
+      "id": "PC3E-P13-009",
+      "lecon": "Le moteur à piston et la transformation de la chaleur en travail",
+      "type": "definition",
+      "recto": "Quelle est la composition des gaz brûlés sortant d'un moteur à piston ?",
+      "verso": "Surtout du diazote $\\mathrm{N_2}$, du dioxyde de carbone $\\mathrm{CO_2}$ et de la vapeur d'eau $\\mathrm{H_2O}$ ; en petite quantité, du monoxyde de carbone $\\mathrm{CO}$, des oxydes d'azote $\\mathrm{NO_x}$ et des imbrûlés.",
+      "difficulte": 2,
+      "tags": [
+        "gaz-brules"
+      ]
+    },
+    {
+      "id": "PC3E-P13-010",
+      "lecon": "Le moteur à piston et la transformation de la chaleur en travail",
+      "type": "formule",
+      "recto": "Quelle relation donne le travail fourni au piston par les gaz qui le poussent avec une force $F$ sur toute la course $c$ ?",
+      "verso": "$W = F \\times c$, avec $F$ en N, $c$ en m et $W$ en J ; c'est un travail moteur.",
+      "difficulte": 2,
+      "tags": [
+        "travail",
+        "piston"
+      ]
+    },
+    {
+      "id": "PC3E-P13-011",
+      "lecon": "Le moteur à piston et la transformation de la chaleur en travail",
+      "type": "definition",
+      "recto": "Dans un moteur à piston, qu'est-ce qui distingue le mouvement de la bielle de celui du vilebrequin ?",
+      "verso": "La bielle va et vient, alors que le vilebrequin tourne. Le piston, lui, ne tourne pas : il monte et descend.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "bielle-vilebrequin"
+      ]
+    },
+    {
+      "id": "PC3E-P13-012",
+      "lecon": "L'alésage, la course et la cylindrée",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on l'alésage d'un moteur à piston ?",
+      "verso": "C'est le diamètre intérieur du cylindre, c'est-à-dire le diamètre du piston. On le note $D$ (parfois $a$), en mm ou en cm.",
+      "difficulte": 1,
+      "tags": [
+        "alesage"
+      ]
+    },
+    {
+      "id": "PC3E-P13-013",
+      "lecon": "L'alésage, la course et la cylindrée",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on la course d'un moteur à piston ?",
+      "verso": "C'est la distance parcourue par le piston entre le point mort haut et le point mort bas. On la note $c$.",
+      "difficulte": 1,
+      "tags": [
+        "course"
+      ]
+    },
+    {
+      "id": "PC3E-P13-014",
+      "lecon": "L'alésage, la course et la cylindrée",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on la cylindrée unitaire d'un moteur à piston ?",
+      "verso": "C'est le volume balayé par le piston au cours d'une course. La chambre de combustion, au-dessus du piston au PMH, n'en fait pas partie.",
+      "difficulte": 2,
+      "tags": [
+        "cylindree"
+      ]
+    },
+    {
+      "id": "PC3E-P13-015",
+      "lecon": "L'alésage, la course et la cylindrée",
+      "type": "formule",
+      "recto": "Quelle relation donne la cylindrée unitaire $V$ d'un moteur d'alésage $D$ et de course $c$ ?",
+      "verso": "$V = \\pi \\times r^{2} \\times c = \\pi \\times \\left(\\dfrac{D}{2}\\right)^{2} \\times c$ ; avec $D$ et $c$ en cm, $V$ est en $\\mathrm{cm^{3}}$.",
+      "difficulte": 2,
+      "tags": [
+        "cylindree",
+        "formule"
+      ]
+    },
+    {
+      "id": "PC3E-P13-016",
+      "lecon": "L'alésage, la course et la cylindrée",
+      "type": "formule",
+      "recto": "Quelle relation donne la cylindrée totale $V_t$ d'un moteur de $n$ cylindres identiques de cylindrée unitaire $V$ ?",
+      "verso": "$V_t = n \\times V$. Elle s'exprime en $\\mathrm{cm^{3}}$ ou en litres, avec $1~\\mathrm{L} = 1\\,000~\\mathrm{cm^{3}}$.",
+      "difficulte": 2,
+      "tags": [
+        "cylindree-totale"
+      ]
+    },
+    {
+      "id": "PC3E-P13-017",
+      "lecon": "L'alésage, la course et la cylindrée",
+      "type": "definition",
+      "recto": "Dans le calcul d'une cylindrée, quelle erreur guette l'élève qui utilise directement l'alésage ?",
+      "verso": "L'alésage est un diamètre et non un rayon : il faut d'abord prendre $r = \\dfrac{D}{2}$ avant d'élever au carré.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "alesage"
+      ]
+    },
+    {
+      "id": "PC3E-P13-018",
+      "lecon": "L'alésage, la course et la cylindrée",
+      "type": "definition",
+      "recto": "Pourquoi la cylindrée d'un moteur ne s'exprime-t-elle jamais en watts ?",
+      "verso": "La cylindrée est un volume (en $\\mathrm{cm^{3}}$ ou en litres), alors que le watt est l'unité de la puissance. Deux moteurs de même cylindrée peuvent avoir des puissances différentes.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "cylindree"
+      ]
+    },
+    {
+      "id": "PC3E-P13-019",
+      "lecon": "Le cycle du moteur à quatre temps",
+      "type": "definition",
+      "recto": "Quels sont, dans l'ordre, les quatre temps du cycle d'un moteur à quatre temps ?",
+      "verso": "L'admission, la compression, la combustion-détente et l'échappement.",
+      "difficulte": 1,
+      "tags": [
+        "cycle",
+        "quatre-temps"
+      ]
+    },
+    {
+      "id": "PC3E-P13-020",
+      "lecon": "Le cycle du moteur à quatre temps",
+      "type": "definition",
+      "recto": "Dans un moteur à quatre temps, que se passe-t-il pendant le temps d'admission ?",
+      "verso": "La soupape d'admission est ouverte, celle d'échappement fermée ; le piston descend du PMH au PMB et aspire les gaz frais.",
+      "difficulte": 1,
+      "tags": [
+        "admission"
+      ]
+    },
+    {
+      "id": "PC3E-P13-021",
+      "lecon": "Le cycle du moteur à quatre temps",
+      "type": "definition",
+      "recto": "Dans un moteur à quatre temps, que se passe-t-il pendant le temps de compression ?",
+      "verso": "Les deux soupapes sont fermées ; le piston monte du PMB au PMH et comprime les gaz frais, dont la pression et la température augmentent.",
+      "difficulte": 2,
+      "tags": [
+        "compression"
+      ]
+    },
+    {
+      "id": "PC3E-P13-022",
+      "lecon": "Le cycle du moteur à quatre temps",
+      "type": "definition",
+      "recto": "Dans un moteur à essence à quatre temps, que se passe-t-il pendant le temps de combustion-détente ?",
+      "verso": "Les deux soupapes restent fermées ; près du PMH, la bougie enflamme le mélange, la pression augmente brutalement et les gaz repoussent le piston vers le PMB.",
+      "difficulte": 2,
+      "tags": [
+        "combustion-detente"
+      ]
+    },
+    {
+      "id": "PC3E-P13-023",
+      "lecon": "Le cycle du moteur à quatre temps",
+      "type": "definition",
+      "recto": "Dans un moteur à quatre temps, que se passe-t-il pendant le temps d'échappement ?",
+      "verso": "La soupape d'échappement est ouverte, celle d'admission fermée ; le piston remonte et chasse les gaz brûlés vers le pot.",
+      "difficulte": 2,
+      "tags": [
+        "echappement"
+      ]
+    },
+    {
+      "id": "PC3E-P13-024",
+      "lecon": "Le cycle du moteur à quatre temps",
+      "type": "definition",
+      "recto": "Dans un moteur à quatre temps, quel est le temps moteur ?",
+      "verso": "C'est le troisième temps, la combustion-détente : le seul où les gaz poussent le piston et fournissent du travail.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "temps-moteur"
+      ]
+    },
+    {
+      "id": "PC3E-P13-025",
+      "lecon": "Le cycle du moteur à quatre temps",
+      "type": "formule",
+      "recto": "Combien de tours de vilebrequin un cycle de moteur à quatre temps demande-t-il ?",
+      "verso": "Deux tours : chaque temps correspond à un demi-tour. A la fréquence $N$ en tr/s, il s'accomplit $\\dfrac{N}{2}$ cycles par seconde.",
+      "difficulte": 2,
+      "tags": [
+        "tours",
+        "cycle"
+      ]
+    },
+    {
+      "id": "PC3E-P13-026",
+      "lecon": "Le cycle du moteur à quatre temps",
+      "type": "definition",
+      "recto": "Quelles sont les deux différences entre le cycle d'un moteur diesel et celui d'un moteur à essence ?",
+      "verso": "Le diesel admet de l'air seul, et il n'a pas de bougie : le gasoil, injecté en fin de compression, s'enflamme spontanément au contact de l'air fortement comprimé, donc très chaud.",
+      "difficulte": 3,
+      "tags": [
+        "diesel"
+      ]
+    },
+    {
+      "id": "PC3E-P13-027",
+      "lecon": "Le cycle du moteur à quatre temps",
+      "type": "definition",
+      "recto": "Qu'est-ce qui caractérise le cycle d'un moteur à deux temps ?",
+      "verso": "Il s'accomplit en un seul tour de vilebrequin, l'admission et l'échappement se faisant par des lumières découvertes par le piston. Plus simple et plus léger, ce moteur consomme et pollue davantage.",
+      "difficulte": 2,
+      "tags": [
+        "deux-temps"
+      ]
+    },
+    {
+      "id": "PC3E-P13-028",
+      "lecon": "Le rendement d'un moteur à piston",
+      "type": "definition",
+      "recto": "Comment définit-on le rendement d'un moteur à piston ?",
+      "verso": "C'est le rapport de l'énergie mécanique utile fournie par le moteur à l'énergie libérée par la combustion du carburant : $\\eta = \\dfrac{E_u}{E_a}$, sans unité.",
+      "difficulte": 1,
+      "tags": [
+        "rendement",
+        "definition"
+      ]
+    },
+    {
+      "id": "PC3E-P13-029",
+      "lecon": "Le rendement d'un moteur à piston",
+      "type": "formule",
+      "recto": "Quelle relation donne l'énergie $E_a$ libérée par la combustion d'une masse $m$ de carburant de pouvoir calorifique $q$ ?",
+      "verso": "$E_a = m \\times q$, avec $m$ en kg et $q$ en kJ/kg ($E_a$ en kJ). Si l'on connaît le volume $V$, on calcule d'abord $m = \\rho_{\\text{c}} \\times V$.",
+      "difficulte": 2,
+      "tags": [
+        "energie-absorbee",
+        "pouvoir-calorifique"
+      ]
+    },
+    {
+      "id": "PC3E-P13-030",
+      "lecon": "Le rendement d'un moteur à piston",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on le pouvoir calorifique d'un combustible ?",
+      "verso": "C'est la chaleur dégagée par la combustion complète de $1~\\mathrm{kg}$ de ce combustible. On le note $q$, en kJ/kg.",
+      "difficulte": 2,
+      "tags": [
+        "pouvoir-calorifique"
+      ]
+    },
+    {
+      "id": "PC3E-P13-031",
+      "lecon": "Le rendement d'un moteur à piston",
+      "type": "definition",
+      "recto": "Entre quelles valeurs est compris le rendement d'un moteur à explosion ?",
+      "verso": "Entre $0{,}25$ et $0{,}40$, soit entre $25\\ \\%$ et $40\\ \\%$ ; celui d'un moteur diesel est un peu meilleur.",
+      "difficulte": 1,
+      "tags": [
+        "rendement",
+        "ordre-de-grandeur"
+      ]
+    },
+    {
+      "id": "PC3E-P13-032",
+      "lecon": "Le rendement d'un moteur à piston",
+      "type": "formule",
+      "recto": "Pour un moteur à piston, quel bilan relie l'énergie absorbée, l'énergie utile et l'énergie perdue ?",
+      "verso": "$E_a = E_u + E_{\\text{perdue}}$ ; l'énergie perdue part en chaleur dans les gaz d'échappement, le refroidissement et les frottements.",
+      "difficulte": 2,
+      "tags": [
+        "bilan-energetique"
+      ]
+    },
+    {
+      "id": "PC3E-P13-033",
+      "lecon": "Le rendement d'un moteur à piston",
+      "type": "definition",
+      "recto": "Dans les sujets du BEPC, comment le rendement d'un moteur s'écrit-il avec les puissances ?",
+      "verso": "$r = \\dfrac{P_{\\text{méc}}}{P_{\\text{th}}}$ : la puissance mécanique recueillie sur le vilebrequin divisée par la puissance thermique produite par la combustion.",
+      "difficulte": 2,
+      "tags": [
+        "notations",
+        "bepc"
+      ]
+    },
+    {
+      "id": "PC3E-P13-034",
+      "lecon": "Le rendement d'un moteur à piston",
+      "type": "definition",
+      "recto": "Pourquoi le monoxyde de carbone des gaz d'échappement est-il dangereux dans un local fermé ?",
+      "verso": "Incolore et inodore, le monoxyde de carbone $\\mathrm{CO}$ empêche le sang de transporter le dioxygène : on ne fait jamais tourner un moteur dans un local fermé.",
+      "difficulte": 2,
+      "tags": [
+        "securite",
+        "monoxyde-carbone"
+      ]
+    }
+  ]
+}

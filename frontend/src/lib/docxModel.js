@@ -7,7 +7,7 @@
  */
 
 export function stripFigureBlocks(text) {
-  return (text || "").replace(/```figure[\s\S]*?```/g, "\n[Figure géométrique — voir dans l'application]\n")
+  return (text || "").replace(/```figure[\s\S]*?```/g, "\n[Schéma — voir dans l'application]\n")
 }
 
 // ============================================================================

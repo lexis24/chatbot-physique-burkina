@@ -1,0 +1,400 @@
+{
+  "matiere": "Physique-Chimie",
+  "partie": "Physique",
+  "niveau": "4ème",
+  "chapitre": "Physique, Chapitre 18 : La poussée d'Archimède",
+  "source": "pc/4eme/Chapitre_18_La_poussee_d_Archimede",
+  "nombre_cartes": 33,
+  "cartes": [
+    {
+      "id": "PC4E-P18-001",
+      "lecon": "La mise en évidence de la poussée d'Archimède et ses caractéristiques",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on la poussée d'Archimède ?",
+      "verso": "C'est la force verticale, dirigée vers le haut, que subit de la part d'un liquide tout corps plongé dans ce liquide. On la note $F_A$, elle s'exprime en newtons ($\\mathrm{N}$).",
+      "difficulte": 1,
+      "tags": [
+        "poussee-d-archimede",
+        "definition"
+      ]
+    },
+    {
+      "id": "PC4E-P18-002",
+      "lecon": "La mise en évidence de la poussée d'Archimède et ses caractéristiques",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on le poids apparent d'un corps immergé ?",
+      "verso": "C'est l'indication du dynamomètre auquel est suspendu le corps immergé ; on le note $P_{\\text{app}}$.",
+      "difficulte": 1,
+      "tags": [
+        "poids-apparent"
+      ]
+    },
+    {
+      "id": "PC4E-P18-003",
+      "lecon": "La mise en évidence de la poussée d'Archimède et ses caractéristiques",
+      "type": "formule",
+      "recto": "Quelle relation lie le poids $P$, le poids apparent $P_{\\text{app}}$ et la poussée d'Archimède $F_A$ d'un corps immergé ?",
+      "verso": "$P_{\\text{app}} = P - F_A$, d'où $F_A = P - P_{\\text{app}}$, toutes les grandeurs en newtons.",
+      "difficulte": 2,
+      "tags": [
+        "poids-apparent",
+        "relation"
+      ]
+    },
+    {
+      "id": "PC4E-P18-004",
+      "lecon": "La mise en évidence de la poussée d'Archimède et ses caractéristiques",
+      "type": "formule",
+      "recto": "Comment mesure-t-on une poussée d'Archimède avec un dynamomètre ?",
+      "verso": "On lit le poids $P$ du corps suspendu dans l'air, puis le poids apparent $P_{\\text{app}}$ quand il est entièrement immergé sans toucher le fond ni les parois ; alors $F_A = P - P_{\\text{app}}$.",
+      "difficulte": 2,
+      "tags": [
+        "mesure",
+        "dynamometre"
+      ]
+    },
+    {
+      "id": "PC4E-P18-005",
+      "lecon": "La mise en évidence de la poussée d'Archimède et ses caractéristiques",
+      "type": "definition",
+      "recto": "Pourquoi est-il faux de dire que le poids d'une pierre diminue dans l'eau ?",
+      "verso": "Le poids ne change pas, il vaut toujours $P = m \\times g$ : c'est le poids apparent qui diminue (perte de poids apparente).",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "poids-apparent"
+      ]
+    },
+    {
+      "id": "PC4E-P18-006",
+      "lecon": "La mise en évidence de la poussée d'Archimède et ses caractéristiques",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on le centre de poussée ?",
+      "verso": "C'est le point d'application de la poussée d'Archimède : le centre de gravité du volume de liquide déplacé.",
+      "difficulte": 1,
+      "tags": [
+        "centre-de-poussee"
+      ]
+    },
+    {
+      "id": "PC4E-P18-007",
+      "lecon": "La mise en évidence de la poussée d'Archimède et ses caractéristiques",
+      "type": "definition",
+      "recto": "Quelles sont les quatre caractéristiques de la poussée d'Archimède ?",
+      "verso": "Point d'application : le centre de poussée ; direction : verticale ; sens : vers le haut ; valeur : $F_A$ en newtons, égale au poids du liquide déplacé.",
+      "difficulte": 2,
+      "tags": [
+        "caracteristiques"
+      ]
+    },
+    {
+      "id": "PC4E-P18-008",
+      "lecon": "La mise en évidence de la poussée d'Archimède et ses caractéristiques",
+      "type": "definition",
+      "recto": "Dans quel cas le centre de gravité d'un corps et son centre de poussée sont-ils confondus ?",
+      "verso": "Pour un corps homogène entièrement immergé. Pour un corps qui flotte, le centre de poussée est plus bas que le centre de gravité.",
+      "difficulte": 3,
+      "tags": [
+        "centre-de-poussee",
+        "centre-de-gravite"
+      ]
+    },
+    {
+      "id": "PC4E-P18-009",
+      "lecon": "La mise en évidence de la poussée d'Archimède et ses caractéristiques",
+      "type": "definition",
+      "recto": "Pourquoi l'eau exerce-t-elle sur un corps immergé une poussée dirigée vers le haut ?",
+      "verso": "Parce que l'eau appuie plus fort en profondeur : la face du dessous reçoit une poussée plus grande que la face du dessus, tandis que les poussées latérales se compensent.",
+      "difficulte": 2,
+      "tags": [
+        "origine",
+        "profondeur"
+      ]
+    },
+    {
+      "id": "PC4E-P18-010",
+      "lecon": "Les facteurs dont dépend la poussée d'Archimède",
+      "type": "definition",
+      "recto": "De quelles trois grandeurs dépend la poussée d'Archimède exercée par un liquide sur un corps ?",
+      "verso": "De la masse volumique du liquide $\\rho$, du volume immergé $V$ du corps (égal au volume de liquide déplacé) et de l'intensité de la pesanteur $g$.",
+      "difficulte": 1,
+      "tags": [
+        "facteurs"
+      ]
+    },
+    {
+      "id": "PC4E-P18-011",
+      "lecon": "Les facteurs dont dépend la poussée d'Archimède",
+      "type": "definition",
+      "recto": "De quelles grandeurs liées au corps la poussée d'Archimède ne dépend-elle pas ?",
+      "verso": "Elle ne dépend ni de la nature du corps, ni de sa masse, ni de sa forme ; seul compte son volume immergé.",
+      "difficulte": 2,
+      "tags": [
+        "facteurs",
+        "corps"
+      ]
+    },
+    {
+      "id": "PC4E-P18-012",
+      "lecon": "Les facteurs dont dépend la poussée d'Archimède",
+      "type": "definition",
+      "recto": "Comment varie la poussée d'Archimède sur un corps entièrement immergé quand on le descend plus profond ?",
+      "verso": "Elle ne change pas : en descendant, les poussées sur la face du dessous et sur celle du dessus augmentent de la même quantité, leur différence reste la même.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "profondeur"
+      ]
+    },
+    {
+      "id": "PC4E-P18-013",
+      "lecon": "Les facteurs dont dépend la poussée d'Archimède",
+      "type": "formule",
+      "recto": "Pour un même volume immergé, dans quel liquide la poussée d'Archimède est-elle la plus grande ?",
+      "verso": "Dans le liquide de plus grande masse volumique (par exemple l'eau salée plutôt que l'eau douce).",
+      "difficulte": 1,
+      "tags": [
+        "masse-volumique",
+        "comparaison"
+      ]
+    },
+    {
+      "id": "PC4E-P18-014",
+      "lecon": "Les facteurs dont dépend la poussée d'Archimède",
+      "type": "definition",
+      "recto": "Quel volume faut-il prendre en compte pour la poussée subie par un corps qui n'est pas entièrement immergé ?",
+      "verso": "Seulement le volume de sa partie plongée, égal au volume de liquide déplacé, et non son volume total.",
+      "difficulte": 2,
+      "tags": [
+        "volume-immerge"
+      ]
+    },
+    {
+      "id": "PC4E-P18-015",
+      "lecon": "L'intensité de la poussée d'Archimède",
+      "type": "formule",
+      "recto": "Que dit le théorème d'Archimède ?",
+      "verso": "Tout corps plongé dans un liquide subit une poussée verticale, dirigée vers le haut, dont la valeur est égale au poids du liquide déplacé par ce corps.",
+      "difficulte": 1,
+      "tags": [
+        "theoreme"
+      ]
+    },
+    {
+      "id": "PC4E-P18-016",
+      "lecon": "L'intensité de la poussée d'Archimède",
+      "type": "formule",
+      "recto": "Quelle expression donne l'intensité de la poussée d'Archimède $F_A$ ?",
+      "verso": "$F_A = \\rho \\times V \\times g$, avec $F_A$ en $\\mathrm{N}$, $\\rho$ masse volumique du liquide en $\\mathrm{kg/m^{3}}$, $V$ volume immergé en $\\mathrm{m^{3}}$ et $g$ en $\\mathrm{N/kg}$.",
+      "difficulte": 2,
+      "tags": [
+        "expression",
+        "unites"
+      ]
+    },
+    {
+      "id": "PC4E-P18-017",
+      "lecon": "L'intensité de la poussée d'Archimède",
+      "type": "formule",
+      "recto": "Comment calcule-t-on le volume immergé $V$ d'un corps connaissant la poussée $F_A$, la masse volumique $\\rho$ du liquide et $g$ ?",
+      "verso": "$V = \\dfrac{F_A}{\\rho \\times g}$, avec $F_A$ en $\\mathrm{N}$, $\\rho$ en $\\mathrm{kg/m^{3}}$, $g$ en $\\mathrm{N/kg}$ ; $V$ est obtenu en $\\mathrm{m^{3}}$.",
+      "difficulte": 2,
+      "tags": [
+        "relation-derivee",
+        "volume"
+      ]
+    },
+    {
+      "id": "PC4E-P18-018",
+      "lecon": "L'intensité de la poussée d'Archimède",
+      "type": "formule",
+      "recto": "Comment calcule-t-on la masse volumique $\\rho$ d'un liquide connaissant la poussée $F_A$, le volume immergé $V$ et $g$ ?",
+      "verso": "$\\rho = \\dfrac{F_A}{V \\times g}$, avec $F_A$ en $\\mathrm{N}$, $V$ en $\\mathrm{m^{3}}$, $g$ en $\\mathrm{N/kg}$ ; $\\rho$ est obtenue en $\\mathrm{kg/m^{3}}$.",
+      "difficulte": 2,
+      "tags": [
+        "relation-derivee",
+        "masse-volumique"
+      ]
+    },
+    {
+      "id": "PC4E-P18-019",
+      "lecon": "L'intensité de la poussée d'Archimède",
+      "type": "definition",
+      "recto": "Dans $F_A = \\rho \\times V \\times g$, quelle erreur fréquente commet-on sur $\\rho$ ?",
+      "verso": "Prendre la masse volumique du corps : $\\rho$ est toujours la masse volumique du liquide.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "masse-volumique"
+      ]
+    },
+    {
+      "id": "PC4E-P18-020",
+      "lecon": "L'intensité de la poussée d'Archimède",
+      "type": "formule",
+      "recto": "Quelles conversions de volume utilise-t-on pour calculer une poussée d'Archimède ?",
+      "verso": "Le volume se met en $\\mathrm{m^{3}}$ avant le calcul : $1~\\mathrm{cm^{3}} = 0{,}000\\,001~\\mathrm{m^{3}}$ et $1~\\mathrm{L} = 1~\\mathrm{dm^{3}} = 0{,}001~\\mathrm{m^{3}}$.",
+      "difficulte": 2,
+      "tags": [
+        "conversion",
+        "volume"
+      ]
+    },
+    {
+      "id": "PC4E-P18-021",
+      "lecon": "L'intensité de la poussée d'Archimède",
+      "type": "definition",
+      "recto": "Quelle est la masse volumique de l'eau dans les trois unités usuelles ?",
+      "verso": "$\\rho_{\\text{eau}} = 1\\,000~\\mathrm{kg/m^{3}} = 1~\\mathrm{g/cm^{3}} = 1~\\mathrm{kg/L}$.",
+      "difficulte": 1,
+      "tags": [
+        "eau",
+        "masse-volumique"
+      ]
+    },
+    {
+      "id": "PC4E-P18-022",
+      "lecon": "L'intensité de la poussée d'Archimède",
+      "type": "formule",
+      "recto": "Avec $g = 10~\\mathrm{N/kg}$, quelle poussée environ subit un corps qui déplace $1~\\mathrm{L}$ d'eau ?",
+      "verso": "Environ $10~\\mathrm{N}$ : un litre d'eau a une masse de $1~\\mathrm{kg}$, donc un poids d'environ $10~\\mathrm{N}$.",
+      "difficulte": 2,
+      "tags": [
+        "ordre-de-grandeur",
+        "eau"
+      ]
+    },
+    {
+      "id": "PC4E-P18-023",
+      "lecon": "Les corps flottants et les applications",
+      "type": "formule",
+      "recto": "Quand un corps abandonné dans un liquide coule-t-il ?",
+      "verso": "Quand sa masse volumique est supérieure à celle du liquide ($\\rho_{\\text{corps}} \\gt \\rho_{\\text{liquide}}$) : son poids est alors supérieur à la poussée, $P \\gt F_A$.",
+      "difficulte": 1,
+      "tags": [
+        "flottabilite",
+        "coule"
+      ]
+    },
+    {
+      "id": "PC4E-P18-024",
+      "lecon": "Les corps flottants et les applications",
+      "type": "formule",
+      "recto": "Quelle est la condition pour qu'un corps abandonné dans un liquide flotte ?",
+      "verso": "Sa masse volumique doit être inférieure à celle du liquide : $\\rho_{\\text{corps}} \\lt \\rho_{\\text{liquide}}$.",
+      "difficulte": 1,
+      "tags": [
+        "flottabilite",
+        "flotte"
+      ]
+    },
+    {
+      "id": "PC4E-P18-025",
+      "lecon": "Les corps flottants et les applications",
+      "type": "formule",
+      "recto": "Quand un corps reste-t-il entre deux eaux ?",
+      "verso": "Quand sa masse volumique est égale à celle du liquide : son poids est alors égal à la poussée, $P = F_A$.",
+      "difficulte": 2,
+      "tags": [
+        "flottabilite",
+        "entre-deux-eaux"
+      ]
+    },
+    {
+      "id": "PC4E-P18-026",
+      "lecon": "Les corps flottants et les applications",
+      "type": "formule",
+      "recto": "Quelle relation entre forces traduit l'équilibre d'un corps qui flotte ?",
+      "verso": "$P = F_A$, soit $m \\times g = \\rho_{\\text{liquide}} \\times V_{\\text{imm}} \\times g$, d'où $V_{\\text{imm}} = \\dfrac{m}{\\rho_{\\text{liquide}}}$.",
+      "difficulte": 2,
+      "tags": [
+        "corps-flottant",
+        "equilibre"
+      ]
+    },
+    {
+      "id": "PC4E-P18-027",
+      "lecon": "Les corps flottants et les applications",
+      "type": "formule",
+      "recto": "Pour un corps homogène qui flotte, à quoi est égale la fraction immergée $\\dfrac{V_{\\text{imm}}}{V_{\\text{total}}}$ ?",
+      "verso": "$\\dfrac{V_{\\text{imm}}}{V_{\\text{total}}} = \\dfrac{\\rho_{\\text{corps}}}{\\rho_{\\text{liquide}}}$ ; sur l'eau, ce rapport est la densité $d$ du corps.",
+      "difficulte": 3,
+      "tags": [
+        "fraction-immergee",
+        "densite"
+      ]
+    },
+    {
+      "id": "PC4E-P18-028",
+      "lecon": "Les corps flottants et les applications",
+      "type": "formule",
+      "recto": "Comment prévoit-on avec la densité $d$ d'un corps s'il flotte sur l'eau ?",
+      "verso": "Si $d \\lt 1$ il flotte, si $d \\gt 1$ il coule, si $d = 1$ il reste entre deux eaux.",
+      "difficulte": 2,
+      "tags": [
+        "densite",
+        "flottabilite"
+      ]
+    },
+    {
+      "id": "PC4E-P18-029",
+      "lecon": "Les corps flottants et les applications",
+      "type": "definition",
+      "recto": "Pourquoi l'idée « ce qui est lourd coule, ce qui est léger flotte » est-elle fausse ?",
+      "verso": "Ce qui décide est la comparaison des masses volumiques, pas la masse : un tronc de $300~\\mathrm{kg}$ flotte alors qu'une aiguille de $1~\\mathrm{g}$ coule.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "flottabilite"
+      ]
+    },
+    {
+      "id": "PC4E-P18-030",
+      "lecon": "Les corps flottants et les applications",
+      "type": "definition",
+      "recto": "Pourquoi une barque en acier flotte-t-elle alors qu'un clou en acier coule ?",
+      "verso": "La barque est creuse : l'air qu'elle enferme abaisse sa masse volumique moyenne sous celle de l'eau ; le clou, plein, garde celle de l'acier.",
+      "difficulte": 2,
+      "tags": [
+        "corps-creux",
+        "masse-volumique-moyenne"
+      ]
+    },
+    {
+      "id": "PC4E-P18-031",
+      "lecon": "Les corps flottants et les applications",
+      "type": "definition",
+      "recto": "Pourquoi l'égalité $P = F_A$ ne s'applique-t-elle pas à un corps posé au fond d'un liquide ?",
+      "verso": "Pour un corps au fond, la poussée existe mais elle est plus petite que le poids : le fond porte la différence. $P = F_A$ ne vaut que pour un corps qui flotte ou reste entre deux eaux.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "corps-au-fond"
+      ]
+    },
+    {
+      "id": "PC4E-P18-032",
+      "lecon": "Les corps flottants et les applications",
+      "type": "definition",
+      "recto": "Qu'est-ce qu'un densimètre ?",
+      "verso": "Un flotteur en verre lesté de plomb, à tige graduée : il s'enfonce d'autant moins que le liquide est dense, et la graduation lue à la surface donne la densité du liquide.",
+      "difficulte": 2,
+      "tags": [
+        "densimetre",
+        "application"
+      ]
+    },
+    {
+      "id": "PC4E-P18-033",
+      "lecon": "Les corps flottants et les applications",
+      "type": "definition",
+      "recto": "Pourquoi un ballon gonflé à l'hélium s'élève-t-il dans l'air ?",
+      "verso": "Le théorème d'Archimède vaut pour tous les fluides, gaz compris : l'hélium étant moins dense que l'air, la poussée de l'air sur le ballon dépasse son poids.",
+      "difficulte": 2,
+      "tags": [
+        "ballon",
+        "application"
+      ]
+    }
+  ]
+}

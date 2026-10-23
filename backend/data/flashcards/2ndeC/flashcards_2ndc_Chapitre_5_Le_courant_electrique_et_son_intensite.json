@@ -1,0 +1,435 @@
+{
+  "matiere": "Physique-Chimie",
+  "partie": "Physique",
+  "niveau": "2nde C",
+  "chapitre": "Physique, Chapitre 5 : Le courant électrique et son intensité",
+  "source": "pc/2ndc/Chapitre_5_Le_courant_electrique_et_son_intensite",
+  "nombre_cartes": 36,
+  "cartes": [
+    {
+      "id": "PC2C-P05-001",
+      "lecon": "Les charges électriques et l'électrisation",
+      "type": "definition",
+      "recto": "Quelles sont les deux sortes de charges électriques contenues dans la matière ?",
+      "verso": "Les charges positives, portées par les protons du noyau, et les charges négatives, portées par les électrons. Le neutron ne porte aucune charge.",
+      "difficulte": 1,
+      "tags": [
+        "charges",
+        "proton",
+        "electron"
+      ]
+    },
+    {
+      "id": "PC2C-P05-002",
+      "lecon": "Les charges électriques et l'électrisation",
+      "type": "formule",
+      "recto": "Comment interagissent deux charges électriques selon leurs signes ?",
+      "verso": "Deux charges de même signe se repoussent ; deux charges de signes contraires s'attirent. Cette action s'exerce à distance, sans contact.",
+      "difficulte": 1,
+      "tags": [
+        "interaction",
+        "charges"
+      ]
+    },
+    {
+      "id": "PC2C-P05-003",
+      "lecon": "Les charges électriques et l'électrisation",
+      "type": "formule",
+      "recto": "Quelle est la valeur de la charge élémentaire $e$ ?",
+      "verso": "$e = 1{,}6 \\times 10^{-19}~\\mathrm{C}$. L'électron porte la charge $-e$, le proton la charge $+e$.",
+      "difficulte": 1,
+      "tags": [
+        "charge-elementaire"
+      ]
+    },
+    {
+      "id": "PC2C-P05-004",
+      "lecon": "Les charges électriques et l'électrisation",
+      "type": "formule",
+      "recto": "Pourquoi dit-on que la charge électrique est quantifiée ?",
+      "verso": "Toute charge est un multiple entier de la charge élémentaire : $q = n \\times e$, avec $n$ entier relatif. Une charge de $0{,}8 \\times 10^{-19}~\\mathrm{C}$ n'existe donc pas.",
+      "difficulte": 2,
+      "tags": [
+        "quantification",
+        "charge-elementaire"
+      ]
+    },
+    {
+      "id": "PC2C-P05-005",
+      "lecon": "Les charges électriques et l'électrisation",
+      "type": "definition",
+      "recto": "Quand un corps est-il électrisé négativement ou positivement ?",
+      "verso": "Négativement s'il a gagné des électrons, positivement s'il en a perdu. Un corps neutre contient autant de charges positives que de charges négatives.",
+      "difficulte": 1,
+      "tags": [
+        "electrisation",
+        "corps-neutre"
+      ]
+    },
+    {
+      "id": "PC2C-P05-006",
+      "lecon": "Les charges électriques et l'électrisation",
+      "type": "definition",
+      "recto": "Pourquoi, lors d'une électrisation, ce sont toujours les électrons qui se déplacent et jamais les protons ?",
+      "verso": "Les protons sont enfermés dans les noyaux, eux-mêmes bloqués dans le réseau du solide ; les électrons des couches externes, moins retenus, sont arrachés par un simple frottement.",
+      "difficulte": 2,
+      "tags": [
+        "electrisation",
+        "electron"
+      ]
+    },
+    {
+      "id": "PC2C-P05-007",
+      "lecon": "Les charges électriques et l'électrisation",
+      "type": "formule",
+      "recto": "Que traduit la conservation de la charge lors d'une électrisation par frottement ?",
+      "verso": "Le frottement ne crée aucune charge : il transfère des électrons d'un corps à l'autre, et ce que l'un gagne, l'autre le perd. La charge totale reste la même.",
+      "difficulte": 2,
+      "tags": [
+        "conservation-charge",
+        "frottement"
+      ]
+    },
+    {
+      "id": "PC2C-P05-008",
+      "lecon": "Les charges électriques et l'électrisation",
+      "type": "formule",
+      "recto": "Lorsque deux conducteurs identiques de charges $q_A$ et $q_B$ se touchent, quelle charge porte chacun après le contact ?",
+      "verso": "La charge totale se conserve et se partage en deux parts égales : $q'_A = q'_B = \\dfrac{q_A + q_B}{2}$.",
+      "difficulte": 3,
+      "tags": [
+        "electrisation-contact",
+        "conservation-charge"
+      ]
+    },
+    {
+      "id": "PC2C-P05-009",
+      "lecon": "Les charges électriques et l'électrisation",
+      "type": "definition",
+      "recto": "Pourquoi est-il faux de dire qu'un corps neutre ne contient pas de charges ?",
+      "verso": "Un corps neutre est plein de charges : il en contient autant de positives que de négatives, qui se compensent.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "corps-neutre"
+      ]
+    },
+    {
+      "id": "PC2C-P05-010",
+      "lecon": "Les porteurs de charge mobiles dans la matière",
+      "type": "definition",
+      "recto": "Quelle différence y a-t-il entre un conducteur et un isolant électrique ?",
+      "verso": "Un conducteur laisse passer le courant parce qu'il contient des porteurs de charge mobiles ; un isolant ne le laisse pas passer, ses charges y sont retenues en place.",
+      "difficulte": 1,
+      "tags": [
+        "conducteur",
+        "isolant"
+      ]
+    },
+    {
+      "id": "PC2C-P05-011",
+      "lecon": "Les porteurs de charge mobiles dans la matière",
+      "type": "definition",
+      "recto": "Qu'est-ce que le courant électrique ?",
+      "verso": "C'est un déplacement d'ensemble et ordonné de porteurs de charge.",
+      "difficulte": 1,
+      "tags": [
+        "courant-electrique"
+      ]
+    },
+    {
+      "id": "PC2C-P05-012",
+      "lecon": "Les porteurs de charge mobiles dans la matière",
+      "type": "definition",
+      "recto": "Quels sont les porteurs de charge mobiles dans un métal ?",
+      "verso": "Les électrons libres, un ou deux par atome, qui circulent entre les ions positifs fixes du réseau. Aucune matière n'est transportée : le fil reste neutre et intact.",
+      "difficulte": 2,
+      "tags": [
+        "metal",
+        "electrons-libres"
+      ]
+    },
+    {
+      "id": "PC2C-P05-013",
+      "lecon": "Les porteurs de charge mobiles dans la matière",
+      "type": "definition",
+      "recto": "Quels sont les porteurs de charge mobiles dans un électrolyte ?",
+      "verso": "Les ions : un électrolyte est une solution ou un solide fondu qui conduit le courant grâce à ses ions. Les porteurs sont les cations et les anions, qui se déplacent en sens contraires, avec transport de matière.",
+      "difficulte": 2,
+      "tags": [
+        "electrolyte",
+        "ions"
+      ]
+    },
+    {
+      "id": "PC2C-P05-014",
+      "lecon": "Les porteurs de charge mobiles dans la matière",
+      "type": "formule",
+      "recto": "Lors d'une électrolyse, vers quelle électrode migrent les cations et les anions ?",
+      "verso": "Les cations migrent vers la cathode, électrode reliée à la borne $-$ ; les anions migrent vers l'anode, électrode reliée à la borne $+$.",
+      "difficulte": 2,
+      "tags": [
+        "electrolyse",
+        "cathode",
+        "anode"
+      ]
+    },
+    {
+      "id": "PC2C-P05-015",
+      "lecon": "Les porteurs de charge mobiles dans la matière",
+      "type": "formule",
+      "recto": "Quel est le sens conventionnel du courant électrique dans un circuit ?",
+      "verso": "A l'extérieur du générateur, il va de la borne $+$ vers la borne $-$ ; à l'intérieur du générateur, de la borne $-$ vers la borne $+$.",
+      "difficulte": 1,
+      "tags": [
+        "sens-conventionnel"
+      ]
+    },
+    {
+      "id": "PC2C-P05-016",
+      "lecon": "Les porteurs de charge mobiles dans la matière",
+      "type": "formule",
+      "recto": "Dans quel sens se déplacent les porteurs positifs et les porteurs négatifs par rapport au sens conventionnel du courant ?",
+      "verso": "Les porteurs positifs (cations) se déplacent dans le sens conventionnel ; les porteurs négatifs (électrons, anions) en sens inverse.",
+      "difficulte": 3,
+      "tags": [
+        "sens-conventionnel",
+        "porteurs"
+      ]
+    },
+    {
+      "id": "PC2C-P05-017",
+      "lecon": "Les porteurs de charge mobiles dans la matière",
+      "type": "definition",
+      "recto": "Pourquoi l'affirmation « le courant est un déplacement d'électrons » est-elle incomplète ?",
+      "verso": "Elle n'est vraie que dans un métal ; dans un électrolyte, les porteurs sont les ions, cations et anions.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "porteurs"
+      ]
+    },
+    {
+      "id": "PC2C-P05-018",
+      "lecon": "La quantité d'électricité et l'intensité du courant",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on la quantité d'électricité $Q$ qui traverse un conducteur ?",
+      "verso": "C'est la charge électrique totale qui traverse une section du conducteur pendant une durée donnée. Son unité légale est le coulomb ($\\mathrm{C}$).",
+      "difficulte": 1,
+      "tags": [
+        "quantite-electricite",
+        "coulomb"
+      ]
+    },
+    {
+      "id": "PC2C-P05-019",
+      "lecon": "La quantité d'électricité et l'intensité du courant",
+      "type": "definition",
+      "recto": "Comment définit-on l'intensité $I$ d'un courant électrique ?",
+      "verso": "C'est le débit de charge à travers une section, c'est-à-dire la quantité d'électricité qui la traverse par unité de temps : $I = \\dfrac{Q}{t}$, en ampères ($\\mathrm{A}$).",
+      "difficulte": 2,
+      "tags": [
+        "intensite",
+        "ampere"
+      ]
+    },
+    {
+      "id": "PC2C-P05-020",
+      "lecon": "La quantité d'électricité et l'intensité du courant",
+      "type": "formule",
+      "recto": "Pour un courant d'intensité constante, quelle relation lie la quantité d'électricité $Q$, l'intensité $I$ et la durée $t$ ?",
+      "verso": "$Q = I \\times t$, avec $Q$ en $\\mathrm{C}$, $I$ en $\\mathrm{A}$ et $t$ en secondes ; elle ne vaut que si l'intensité est constante pendant toute la durée $t$.",
+      "difficulte": 2,
+      "tags": [
+        "relation-fondamentale"
+      ]
+    },
+    {
+      "id": "PC2C-P05-021",
+      "lecon": "La quantité d'électricité et l'intensité du courant",
+      "type": "formule",
+      "recto": "Combien de coulombs vaut un ampère-heure ?",
+      "verso": "$1~\\mathrm{Ah} = 1~\\mathrm{A} \\times 3\\,600~\\mathrm{s} = 3\\,600~\\mathrm{C}$. L'ampère-heure sert à exprimer la capacité d'une batterie.",
+      "difficulte": 2,
+      "tags": [
+        "ampere-heure",
+        "conversion"
+      ]
+    },
+    {
+      "id": "PC2C-P05-022",
+      "lecon": "La quantité d'électricité et l'intensité du courant",
+      "type": "definition",
+      "recto": "Pourquoi une batterie marquée $9~\\mathrm{Ah}$ ne délivre-t-elle pas forcément $9~\\mathrm{A}$ ?",
+      "verso": "L'ampère-heure est l'unité d'une quantité d'électricité : l'indication fixe le produit $I \\times t$, non $I$. La batterie peut fournir $9~\\mathrm{A}$ pendant $1~\\mathrm{h}$ ou $1~\\mathrm{A}$ pendant $9~\\mathrm{h}$ ; c'est le récepteur qui décide de l'intensité.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "ampere-heure"
+      ]
+    },
+    {
+      "id": "PC2C-P05-023",
+      "lecon": "La quantité d'électricité et l'intensité du courant",
+      "type": "formule",
+      "recto": "Comment calcule-t-on l'incertitude $\\Delta I$ d'une mesure faite avec un ampèremètre de classe donnée ?",
+      "verso": "$\\Delta I = \\dfrac{\\text{classe} \\times \\text{calibre}}{100}$, quelle que soit la valeur lue ; d'où l'intérêt de choisir le plus petit calibre possible.",
+      "difficulte": 2,
+      "tags": [
+        "incertitude",
+        "amperemetre"
+      ]
+    },
+    {
+      "id": "PC2C-P05-024",
+      "lecon": "La quantité d'électricité et l'intensité du courant",
+      "type": "definition",
+      "recto": "Pour une mesure d'intensité, qu'appelle-t-on la précision ?",
+      "verso": "C'est l'incertitude relative $\\dfrac{\\Delta I}{I}$, exprimée en pourcentage.",
+      "difficulte": 2,
+      "tags": [
+        "precision",
+        "amperemetre"
+      ]
+    },
+    {
+      "id": "PC2C-P05-025",
+      "lecon": "Compter les porteurs de charge",
+      "type": "formule",
+      "recto": "Quelle relation lie la quantité d'électricité $Q$ au nombre $N$ de porteurs identiques de charge $q$ qui traversent une section ?",
+      "verso": "$Q = N \\times \\lvert q \\rvert$, donc $N = \\dfrac{Q}{\\lvert q \\rvert}$ ; $N$ est un nombre sans unité.",
+      "difficulte": 2,
+      "tags": [
+        "nombre-porteurs"
+      ]
+    },
+    {
+      "id": "PC2C-P05-026",
+      "lecon": "Compter les porteurs de charge",
+      "type": "formule",
+      "recto": "Quelle est la valeur absolue de la charge d'un ion portant $z$ charges élémentaires ?",
+      "verso": "$\\lvert q \\rvert = z \\times e$ ; pour l'ion $\\mathrm{Cu^{2+}}$, $\\lvert q \\rvert = 2e = 3{,}2 \\times 10^{-19}~\\mathrm{C}$.",
+      "difficulte": 2,
+      "tags": [
+        "ion",
+        "charge"
+      ]
+    },
+    {
+      "id": "PC2C-P05-027",
+      "lecon": "Compter les porteurs de charge",
+      "type": "formule",
+      "recto": "Comment exprime-t-on le nombre $N$ de porteurs de charge $q$ transportés par un courant d'intensité constante $I$ pendant la durée $t$ ?",
+      "verso": "$N = \\dfrac{I \\times t}{\\lvert q \\rvert}$, avec $I$ en $\\mathrm{A}$, $t$ en $\\mathrm{s}$ et $q$ en $\\mathrm{C}$.",
+      "difficulte": 2,
+      "tags": [
+        "nombre-porteurs",
+        "chaine-complete"
+      ]
+    },
+    {
+      "id": "PC2C-P05-028",
+      "lecon": "Compter les porteurs de charge",
+      "type": "formule",
+      "recto": "Combien de porteurs de charge $q$ traversent par seconde une section d'un conducteur parcouru par un courant d'intensité $I$ ?",
+      "verso": "$\\dfrac{N}{t} = \\dfrac{I}{\\lvert q \\rvert}$ porteurs par seconde ; pour des électrons, $\\dfrac{I}{e}$.",
+      "difficulte": 2,
+      "tags": [
+        "debit-porteurs"
+      ]
+    },
+    {
+      "id": "PC2C-P05-029",
+      "lecon": "Compter les porteurs de charge",
+      "type": "formule",
+      "recto": "A combien d'électrons correspond une charge de $1~\\mathrm{C}$ ?",
+      "verso": "$\\dfrac{1}{1{,}6 \\times 10^{-19}} = 6{,}25 \\times 10^{18}$ électrons.",
+      "difficulte": 1,
+      "tags": [
+        "ordre-de-grandeur",
+        "coulomb"
+      ]
+    },
+    {
+      "id": "PC2C-P05-030",
+      "lecon": "Compter les porteurs de charge",
+      "type": "formule",
+      "recto": "Quelle quantité d'électricité transporte une mole d'électrons ?",
+      "verso": "$Q = N_A \\times e \\approx 9{,}6 \\times 10^{4}~\\mathrm{C}$, avec $N_A = 6{,}02 \\times 10^{23}$ ; cette quantité s'appelle le faraday et vaut $96\\,500~\\mathrm{C}$ par mole.",
+      "difficulte": 3,
+      "tags": [
+        "faraday",
+        "mole"
+      ]
+    },
+    {
+      "id": "PC2C-P05-031",
+      "lecon": "Les propriétés du courant électrique",
+      "type": "formule",
+      "recto": "Que dit la loi d'unicité de l'intensité ?",
+      "verso": "Dans un circuit série, l'intensité du courant est la même en tout point : $I_1 = I_2 = I_3 = \\ldots$",
+      "difficulte": 1,
+      "tags": [
+        "loi-unicite",
+        "serie"
+      ]
+    },
+    {
+      "id": "PC2C-P05-032",
+      "lecon": "Les propriétés du courant électrique",
+      "type": "definition",
+      "recto": "Dans un circuit électrique, qu'appelle-t-on un noeud ?",
+      "verso": "Un point où se rejoignent au moins trois fils ; un simple coude de fil n'est pas un noeud.",
+      "difficulte": 2,
+      "tags": [
+        "noeud"
+      ]
+    },
+    {
+      "id": "PC2C-P05-033",
+      "lecon": "Les propriétés du courant électrique",
+      "type": "formule",
+      "recto": "Que dit la loi des noeuds ?",
+      "verso": "En un noeud, la somme des intensités des courants qui arrivent est égale à la somme des intensités de ceux qui partent : $\\sum I_{\\mathrm{entrant}} = \\sum I_{\\mathrm{sortant}}$.",
+      "difficulte": 1,
+      "tags": [
+        "loi-des-noeuds"
+      ]
+    },
+    {
+      "id": "PC2C-P05-034",
+      "lecon": "Les propriétés du courant électrique",
+      "type": "formule",
+      "recto": "Comment s'écrit la loi des noeuds sous forme algébrique ?",
+      "verso": "$\\sum_k \\varepsilon_k I_k = 0$, avec $\\varepsilon_k = +1$ si le courant de la branche orientée arrive au noeud et $-1$ s'il en part.",
+      "difficulte": 2,
+      "tags": [
+        "loi-des-noeuds",
+        "forme-algebrique"
+      ]
+    },
+    {
+      "id": "PC2C-P05-035",
+      "lecon": "Les propriétés du courant électrique",
+      "type": "definition",
+      "recto": "Que signifie une intensité négative obtenue en appliquant la loi des noeuds sous forme algébrique ?",
+      "verso": "Ce n'est pas une erreur : le courant circule en sens contraire de la flèche choisie pour orienter la branche. On donne sa valeur absolue et son sens réel.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "loi-des-noeuds"
+      ]
+    },
+    {
+      "id": "PC2C-P05-036",
+      "lecon": "Les propriétés du courant électrique",
+      "type": "formule",
+      "recto": "Quelle intensité traverse un dipôle court-circuité par un fil branché entre ses bornes ?",
+      "verso": "Une intensité nulle : on admet que le courant passe tout entier par le fil, en dérivation sur le dipôle.",
+      "difficulte": 2,
+      "tags": [
+        "court-circuit"
+      ]
+    }
+  ]
+}

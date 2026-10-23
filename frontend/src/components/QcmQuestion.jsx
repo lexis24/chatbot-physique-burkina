@@ -1,7 +1,7 @@
 import React from "react"
 import { Check, X } from "lucide-react"
 import { cn } from "../lib/utils"
-import MathContent from "./MathContent"
+import RichContent from "./RichContent"
 
 const LETTERS = ["A", "B", "C", "D"]
 
@@ -14,7 +14,7 @@ export default function QcmQuestion({ index, question, choices, correctIndex, ex
     <div className="rounded-xl border border-base-300/60 bg-base-100 p-4">
       <div className="prose-chat mb-3 max-w-none font-medium">
         <span className="mr-1.5 text-base-content/50">{index + 1}.</span>
-        <MathContent>{question}</MathContent>
+        <RichContent>{question}</RichContent>
       </div>
 
       <div className="flex flex-col gap-2">
@@ -41,7 +41,7 @@ export default function QcmQuestion({ index, question, choices, correctIndex, ex
                 {LETTERS[i]}
               </span>
               <span className="prose-chat max-w-none flex-1">
-                <MathContent>{choice}</MathContent>
+                <RichContent>{choice}</RichContent>
               </span>
               {showState && (isCorrectChoice ? <Check size={15} className="text-success" /> : <X size={15} className="text-error" />)}
             </button>
@@ -51,7 +51,7 @@ export default function QcmQuestion({ index, question, choices, correctIndex, ex
 
       {revealed && explication && (
         <div className="prose-chat mt-3 max-w-none rounded-lg bg-base-200/60 p-3 text-sm text-base-content/70">
-          <MathContent>{explication}</MathContent>
+          <RichContent>{explication}</RichContent>
         </div>
       )}
     </div>

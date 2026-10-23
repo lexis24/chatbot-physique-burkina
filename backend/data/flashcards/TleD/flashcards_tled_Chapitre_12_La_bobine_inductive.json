@@ -1,0 +1,438 @@
+{
+  "matiere": "Physique-Chimie",
+  "partie": "Physique",
+  "niveau": "Terminale D",
+  "chapitre": "Physique, Chapitre 12 : La bobine inductive",
+  "source": "pc/tled/Chapitre_12_La_bobine_inductive",
+  "nombre_cartes": 36,
+  "cartes": [
+    {
+      "id": "PCTD-P12-001",
+      "lecon": "Le phénomène d'induction électromagnétique et la loi de Lenz",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on induction électromagnétique ?",
+      "verso": "L'apparition d'une force électromotrice, et donc d'un courant si le circuit est fermé, dans un circuit traversé par un champ magnétique qui varie au cours du temps.",
+      "difficulte": 1,
+      "tags": [
+        "induction",
+        "definition"
+      ]
+    },
+    {
+      "id": "PCTD-P12-002",
+      "lecon": "Le phénomène d'induction électromagnétique et la loi de Lenz",
+      "type": "definition",
+      "recto": "Dans un phénomène d'induction électromagnétique, que désignent l'inducteur et l'induit ?",
+      "verso": "L'inducteur est ce qui produit le champ magnétique (aimant ou bobine alimentée) ; l'induit est le circuit qui subit le phénomène.",
+      "difficulte": 1,
+      "tags": [
+        "inducteur",
+        "induit"
+      ]
+    },
+    {
+      "id": "PCTD-P12-003",
+      "lecon": "Le phénomène d'induction électromagnétique et la loi de Lenz",
+      "type": "formule",
+      "recto": "Quel est l'énoncé de la loi de Lenz ?",
+      "verso": "Le courant induit a un sens tel que, par ses effets, il s'oppose à la cause qui lui a donné naissance.",
+      "difficulte": 1,
+      "tags": [
+        "loi-de-lenz"
+      ]
+    },
+    {
+      "id": "PCTD-P12-004",
+      "lecon": "Le phénomène d'induction électromagnétique et la loi de Lenz",
+      "type": "formule",
+      "recto": "D'après la loi de Lenz, quel est le sens du champ induit $\\vec{b}$ lorsque le champ inducteur augmente à l'intérieur de l'induit ?",
+      "verso": "Le champ induit est de sens opposé au champ inducteur ; plus généralement, $\\vec{b}$ est toujours de sens opposé à la variation $\\Delta\\vec{B}$ du champ inducteur.",
+      "difficulte": 2,
+      "tags": [
+        "loi-de-lenz",
+        "champ-induit"
+      ]
+    },
+    {
+      "id": "PCTD-P12-005",
+      "lecon": "Le phénomène d'induction électromagnétique et la loi de Lenz",
+      "type": "definition",
+      "recto": "Quand on approche le pôle nord d'un aimant d'une bobine fermée, quelle face la bobine présente-t-elle à l'aimant ?",
+      "verso": "Une face nord, qui repousse le pôle nord qui approche ; si l'on éloigne l'aimant, elle présente au contraire une face sud, qui le retient.",
+      "difficulte": 2,
+      "tags": [
+        "loi-de-lenz",
+        "face-nord"
+      ]
+    },
+    {
+      "id": "PCTD-P12-006",
+      "lecon": "Le phénomène d'induction électromagnétique et la loi de Lenz",
+      "type": "definition",
+      "recto": "Pourquoi un aimant immobile, même très puissant, posé dans une bobine immobile n'y fait-il circuler aucun courant ?",
+      "verso": "Parce que c'est la variation du champ magnétique qui crée le courant induit, jamais sa valeur : un champ constant ne produit aucun courant dans un circuit immobile.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "champ-constant"
+      ]
+    },
+    {
+      "id": "PCTD-P12-007",
+      "lecon": "Le phénomène d'induction électromagnétique et la loi de Lenz",
+      "type": "definition",
+      "recto": "De quelle loi générale la loi de Lenz est-elle une conséquence ?",
+      "verso": "De la conservation de l'énergie : si le courant induit aidait le mouvement, de l'énergie apparaîtrait à partir de rien ; l'énergie électrique induite est prélevée sur l'énergie mécanique.",
+      "difficulte": 2,
+      "tags": [
+        "loi-de-lenz",
+        "conservation-energie"
+      ]
+    },
+    {
+      "id": "PCTD-P12-008",
+      "lecon": "Le phénomène d'induction électromagnétique et la loi de Lenz",
+      "type": "definition",
+      "recto": "Pourquoi un transformateur ne fonctionne-t-il qu'en courant alternatif ?",
+      "verso": "Le secondaire n'est le siège d'une force électromotrice induite que si le champ créé par le primaire dans le noyau varie ; en continu, le champ ne varie pas et rien ne passe.",
+      "difficulte": 2,
+      "tags": [
+        "transformateur",
+        "alternatif"
+      ]
+    },
+    {
+      "id": "PCTD-P12-009",
+      "lecon": "Le phénomène d'induction électromagnétique et la loi de Lenz",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on courants de Foucault ?",
+      "verso": "Les courants induits qui tournent en tourbillons dans la masse d'un bloc de métal traversé par un champ magnétique variable ; ils échauffent le métal et, d'après la loi de Lenz, le freinent.",
+      "difficulte": 2,
+      "tags": [
+        "courants-de-foucault"
+      ]
+    },
+    {
+      "id": "PCTD-P12-010",
+      "lecon": "L'auto-induction et l'inductance d'une bobine",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on auto-induction ?",
+      "verso": "Le phénomène d'induction dont une bobine est à la fois l'inducteur et l'induit : toute variation du courant qui la traverse fait naître en elle une force électromotrice d'auto-induction.",
+      "difficulte": 1,
+      "tags": [
+        "auto-induction"
+      ]
+    },
+    {
+      "id": "PCTD-P12-011",
+      "lecon": "L'auto-induction et l'inductance d'une bobine",
+      "type": "formule",
+      "recto": "Quelle relation donne la force électromotrice d'auto-induction $e$ d'une bobine d'inductance $L$ parcourue par un courant d'intensité $i$ variable ?",
+      "verso": "$e = -L\\,\\dfrac{di}{dt}$, avec $e$ en volts, $L$ en henrys et $\\dfrac{di}{dt}$ en A/s ; le signe moins traduit la loi de Lenz.",
+      "difficulte": 1,
+      "tags": [
+        "fem-auto-induction",
+        "inductance"
+      ]
+    },
+    {
+      "id": "PCTD-P12-012",
+      "lecon": "L'auto-induction et l'inductance d'une bobine",
+      "type": "formule",
+      "recto": "Quelle est l'expression de l'inductance d'un solénoïde long sans noyau, de $N$ spires, de longueur $\\ell$ et de section $S$ ?",
+      "verso": "$L = \\mu_0\\,\\dfrac{N^{2}\\,S}{\\ell}$, avec $\\mu_0 = 4\\pi \\times 10^{-7}~\\mathrm{H/m}$, $S$ en $\\mathrm{m^2}$ et $\\ell$ en mètres ; valable si la longueur dépasse nettement le diamètre.",
+      "difficulte": 2,
+      "tags": [
+        "solenoide",
+        "inductance"
+      ]
+    },
+    {
+      "id": "PCTD-P12-013",
+      "lecon": "L'auto-induction et l'inductance d'une bobine",
+      "type": "definition",
+      "recto": "Pourquoi l'inductance d'une bobine n'augmente-t-elle pas quand on augmente le courant qui la traverse ?",
+      "verso": "L'inductance est une caractéristique de construction : elle ne dépend que du nombre de spires, de la section, de la longueur et du noyau, jamais du courant.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "inductance"
+      ]
+    },
+    {
+      "id": "PCTD-P12-014",
+      "lecon": "L'auto-induction et l'inductance d'une bobine",
+      "type": "definition",
+      "recto": "Quel est l'effet de l'introduction d'un noyau de fer doux dans une bobine ?",
+      "verso": "Le champ magnétique, et donc l'inductance, sont multipliés par un grand nombre, qui peut valoir plusieurs centaines.",
+      "difficulte": 2,
+      "tags": [
+        "noyau",
+        "fer-doux"
+      ]
+    },
+    {
+      "id": "PCTD-P12-015",
+      "lecon": "L'auto-induction et l'inductance d'une bobine",
+      "type": "definition",
+      "recto": "Pourquoi l'ouverture d'un circuit contenant une bobine produit-elle une étincelle bien plus violente que ne le laisse prévoir la tension du générateur ?",
+      "verso": "Le courant s'annule en une durée extrêmement courte : $\\dfrac{di}{dt}$ est énorme, donc la force électromotrice $e = -L\\dfrac{di}{dt}$ peut dépasser de loin la tension du générateur.",
+      "difficulte": 3,
+      "tags": [
+        "etincelle-de-rupture",
+        "auto-induction"
+      ]
+    },
+    {
+      "id": "PCTD-P12-016",
+      "lecon": "La relation tension-intensité et l'énergie stockée par une bobine",
+      "type": "formule",
+      "recto": "En convention récepteur, quelle relation lie la tension $u$ aux bornes d'une bobine d'inductance $L$ et de résistance $r$ à l'intensité $i$ ?",
+      "verso": "$u = r\\,i + L\\,\\dfrac{di}{dt}$ ; pour une bobine idéale (résistance négligeable), $u = L\\,\\dfrac{di}{dt}$.",
+      "difficulte": 1,
+      "tags": [
+        "relation-tension-intensite",
+        "convention-recepteur"
+      ]
+    },
+    {
+      "id": "PCTD-P12-017",
+      "lecon": "La relation tension-intensité et l'énergie stockée par une bobine",
+      "type": "formule",
+      "recto": "En régime permanent continu, à quoi se réduit la tension aux bornes d'une bobine de résistance $r$ ?",
+      "verso": "$\\dfrac{di}{dt} = 0$, donc $u = r\\,i$ : la bobine se comporte comme un conducteur ohmique de résistance $r$, et non comme un simple fil.",
+      "difficulte": 2,
+      "tags": [
+        "regime-permanent",
+        "resistance"
+      ]
+    },
+    {
+      "id": "PCTD-P12-018",
+      "lecon": "La relation tension-intensité et l'énergie stockée par une bobine",
+      "type": "definition",
+      "recto": "Quel modèle électrique équivaut à une bobine réelle $(L,\\,r)$ ?",
+      "verso": "Un générateur de force électromotrice $e = -L\\dfrac{di}{dt}$ en série avec une résistance $r$, d'où $u = r\\,i - e$.",
+      "difficulte": 2,
+      "tags": [
+        "modele",
+        "fem"
+      ]
+    },
+    {
+      "id": "PCTD-P12-019",
+      "lecon": "La relation tension-intensité et l'énergie stockée par une bobine",
+      "type": "definition",
+      "recto": "Pourquoi l'intensité du courant dans une bobine ne peut-elle pas subir de discontinuité ?",
+      "verso": "Un saut d'intensité en un temps nul exigerait une variation de l'énergie $\\dfrac{1}{2}L\\,i^{2}$ en un temps nul, donc une puissance infinie, qu'aucun générateur ne peut fournir.",
+      "difficulte": 2,
+      "tags": [
+        "continuite",
+        "intensite"
+      ]
+    },
+    {
+      "id": "PCTD-P12-020",
+      "lecon": "La relation tension-intensité et l'énergie stockée par une bobine",
+      "type": "formule",
+      "recto": "Quelle est l'expression de l'énergie stockée par une bobine d'inductance $L$ parcourue par un courant d'intensité $i$ ?",
+      "verso": "$E = \\dfrac{1}{2}\\,L\\,i^{2}$, avec $L$ en henrys, $i$ en ampères et $E$ en joules ; c'est une énergie magnétique, portée par le champ intérieur à la bobine.",
+      "difficulte": 1,
+      "tags": [
+        "energie",
+        "bobine"
+      ]
+    },
+    {
+      "id": "PCTD-P12-021",
+      "lecon": "La relation tension-intensité et l'énergie stockée par une bobine",
+      "type": "formule",
+      "recto": "Comment se partage la puissance $u\\,i$ reçue par une bobine $(L,\\,r)$ ?",
+      "verso": "$u\\,i = r\\,i^{2} + L\\,i\\,\\dfrac{di}{dt}$ : la puissance $r\\,i^{2}$ est dissipée par effet Joule, le reste est stocké sous forme magnétique.",
+      "difficulte": 2,
+      "tags": [
+        "puissance",
+        "bilan"
+      ]
+    },
+    {
+      "id": "PCTD-P12-022",
+      "lecon": "La relation tension-intensité et l'énergie stockée par une bobine",
+      "type": "definition",
+      "recto": "Quelle différence y a-t-il entre l'énergie stockée par un condensateur et celle stockée par une bobine ?",
+      "verso": "Le condensateur stocke de l'énergie électrique, $\\dfrac{1}{2}C\\,u^{2}$, liée à la tension ; la bobine stocke de l'énergie magnétique, $\\dfrac{1}{2}L\\,i^{2}$, liée à l'intensité.",
+      "difficulte": 3,
+      "tags": [
+        "energie",
+        "comparaison"
+      ]
+    },
+    {
+      "id": "PCTD-P12-023",
+      "lecon": "La réponse du dipôle RL à un échelon de tension",
+      "type": "formule",
+      "recto": "Pour un circuit série générateur de f.é.m. $E$, conducteur ohmique $R$ et bobine $(L,\\,r)$, quelle équation différentielle vérifie l'intensité $i$ à l'établissement du courant ?",
+      "verso": "$L\\,\\dfrac{di}{dt} + (R + r)\\,i = E$, obtenue par la loi des mailles $E = R\\,i + r\\,i + L\\,\\dfrac{di}{dt}$.",
+      "difficulte": 2,
+      "tags": [
+        "equation-differentielle",
+        "dipole-rl"
+      ]
+    },
+    {
+      "id": "PCTD-P12-024",
+      "lecon": "La réponse du dipôle RL à un échelon de tension",
+      "type": "formule",
+      "recto": "A l'établissement du courant dans un dipôle RL soumis à un échelon $E$, quelle est l'expression de l'intensité $i(t)$ ?",
+      "verso": "$i(t) = I_0\\left(1 - e^{-t/\\tau}\\right)$, avec $I_0 = \\dfrac{E}{R + r}$ et $\\tau = \\dfrac{L}{R + r}$, $r$ étant la résistance de la bobine.",
+      "difficulte": 2,
+      "tags": [
+        "etablissement",
+        "solution"
+      ]
+    },
+    {
+      "id": "PCTD-P12-025",
+      "lecon": "La réponse du dipôle RL à un échelon de tension",
+      "type": "formule",
+      "recto": "A la rupture du courant dans un dipôle RL, la bobine se déchargeant dans le conducteur ohmique, quelle est l'expression de l'intensité $i(t)$ ?",
+      "verso": "$i(t) = I_0\\,e^{-t/\\tau}$, solution de $L\\,\\dfrac{di}{dt} + (R + r)\\,i = 0$, avec $\\tau = \\dfrac{L}{R + r}$.",
+      "difficulte": 2,
+      "tags": [
+        "rupture",
+        "solution"
+      ]
+    },
+    {
+      "id": "PCTD-P12-026",
+      "lecon": "La réponse du dipôle RL à un échelon de tension",
+      "type": "formule",
+      "recto": "Quelle est l'expression de la constante de temps $\\tau$ d'un dipôle RL comprenant un conducteur ohmique $R$ et une bobine $(L,\\,r)$ ?",
+      "verso": "$\\tau = \\dfrac{L}{R + r}$, en secondes ; elle mesure la rapidité du régime transitoire et ne dépend pas de $E$.",
+      "difficulte": 1,
+      "tags": [
+        "constante-de-temps"
+      ]
+    },
+    {
+      "id": "PCTD-P12-027",
+      "lecon": "La réponse du dipôle RL à un échelon de tension",
+      "type": "definition",
+      "recto": "Quelle erreur commet-on en écrivant $\\tau = \\dfrac{L}{R}$ pour un circuit série comprenant un conducteur ohmique $R$ et une bobine de résistance $r$ ?",
+      "verso": "On oublie la résistance $r$ de la bobine : $\\tau = \\dfrac{L}{R + r}$ et $I_0 = \\dfrac{E}{R + r}$. Cet oubli fausse à la fois $\\tau$ et l'intensité finale.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "constante-de-temps"
+      ]
+    },
+    {
+      "id": "PCTD-P12-028",
+      "lecon": "La réponse du dipôle RL à un échelon de tension",
+      "type": "formule",
+      "recto": "A l'établissement du courant dans un dipôle RL, quelle fraction de $I_0$ l'intensité atteint-elle à $t = \\tau$ ?",
+      "verso": "$63~\\%$, car $1 - e^{-1} = 0{,}63$ ; le régime permanent n'est pratiquement atteint qu'au bout de $5\\tau$.",
+      "difficulte": 2,
+      "tags": [
+        "63-pour-cent",
+        "constante-de-temps"
+      ]
+    },
+    {
+      "id": "PCTD-P12-029",
+      "lecon": "La réponse du dipôle RL à un échelon de tension",
+      "type": "definition",
+      "recto": "Comment détermine-t-on graphiquement la constante de temps sur la courbe d'établissement du courant $i(t)$ d'un dipôle RL ?",
+      "verso": "C'est l'abscisse du point où la tangente à l'origine coupe l'asymptote $i = I_0$, ou l'abscisse du point d'ordonnée $0{,}63\\,I_0$.",
+      "difficulte": 2,
+      "tags": [
+        "lecture-graphique",
+        "constante-de-temps"
+      ]
+    },
+    {
+      "id": "PCTD-P12-030",
+      "lecon": "La réponse du dipôle RL à un échelon de tension",
+      "type": "definition",
+      "recto": "A l'instant de la fermeture d'un circuit RL, pourquoi la tension aux bornes de la bobine vaut-elle $E$ et non zéro ?",
+      "verso": "L'intensité est nulle mais sa dérivée ne l'est pas : $u_R = 0$ et toute la tension $E$ se retrouve aux bornes de la bobine, $u = L\\,\\dfrac{di}{dt} = E$.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "instant-initial"
+      ]
+    },
+    {
+      "id": "PCTD-P12-031",
+      "lecon": "La bobine en régime sinusoïdal forcé",
+      "type": "formule",
+      "recto": "Quelle est l'expression de l'impédance $Z_L$ d'une bobine idéale d'inductance $L$ en régime sinusoïdal forcé ?",
+      "verso": "$Z_L = \\dfrac{U_m}{I_m} = \\dfrac{U}{I} = L\\,\\omega = 2\\pi f\\,L$, en ohms, avec $L$ en henrys et $\\omega$ en rad/s ; elle augmente avec la fréquence.",
+      "difficulte": 1,
+      "tags": [
+        "impedance",
+        "bobine-ideale"
+      ]
+    },
+    {
+      "id": "PCTD-P12-032",
+      "lecon": "La bobine en régime sinusoïdal forcé",
+      "type": "formule",
+      "recto": "En régime sinusoïdal forcé, quel est le déphasage $\\varphi = \\varphi_u - \\varphi_i$ de la tension par rapport à l'intensité pour une bobine idéale ?",
+      "verso": "$\\varphi = +\\dfrac{\\pi}{2}$ : la tension est en avance de $\\dfrac{\\pi}{2}$ sur l'intensité, à toute fréquence (quadrature avance).",
+      "difficulte": 2,
+      "tags": [
+        "dephasage",
+        "quadrature-avance"
+      ]
+    },
+    {
+      "id": "PCTD-P12-033",
+      "lecon": "La bobine en régime sinusoïdal forcé",
+      "type": "formule",
+      "recto": "En régime sinusoïdal forcé, quelle est l'impédance $Z$ d'une bobine réelle d'inductance $L$ et de résistance $r$ ?",
+      "verso": "$Z = \\sqrt{r^{2} + (L\\omega)^{2}}$ et $\\tan\\varphi = \\dfrac{L\\omega}{r}$, avec $0 \\lt \\varphi \\lt \\dfrac{\\pi}{2}$.",
+      "difficulte": 2,
+      "tags": [
+        "bobine-reelle",
+        "impedance"
+      ]
+    },
+    {
+      "id": "PCTD-P12-034",
+      "lecon": "La bobine en régime sinusoïdal forcé",
+      "type": "formule",
+      "recto": "Pour un conducteur ohmique $R$ en série avec une bobine $(L,\\,r)$ en régime sinusoïdal forcé, quelle relation lie les valeurs maximales $U_m$ et $I_m$ ?",
+      "verso": "$U_m = I_m\\sqrt{(R + r)^{2} + (L\\omega)^{2}}$, le déphasage vérifiant $\\tan\\varphi_{u/i} = \\dfrac{L\\omega}{R + r}$.",
+      "difficulte": 2,
+      "tags": [
+        "dipole-rl-serie",
+        "fresnel"
+      ]
+    },
+    {
+      "id": "PCTD-P12-035",
+      "lecon": "La bobine en régime sinusoïdal forcé",
+      "type": "definition",
+      "recto": "Dans la construction de Fresnel d'une bobine réelle, l'intensité étant prise comme référence horizontale, comment sont dessinés les vecteurs associés à $r\\,i$ et à $L\\dfrac{di}{dt}$ ?",
+      "verso": "Celui de $r\\,i$ est horizontal, de longueur $r\\,I_m$ ; celui de $L\\dfrac{di}{dt}$ est vertical, dirigé vers le haut, de longueur $L\\omega\\,I_m$ ; leur somme est le vecteur associé à $u$.",
+      "difficulte": 2,
+      "tags": [
+        "fresnel",
+        "bobine-reelle"
+      ]
+    },
+    {
+      "id": "PCTD-P12-036",
+      "lecon": "La bobine en régime sinusoïdal forcé",
+      "type": "definition",
+      "recto": "Pourquoi l'impédance d'une bobine réelle ne vaut-elle pas $r + L\\omega$ ?",
+      "verso": "Les tensions $r\\,i$ et $L\\dfrac{di}{dt}$ sont déphasées de $\\dfrac{\\pi}{2}$ : leurs vecteurs de Fresnel sont perpendiculaires et s'ajoutent par Pythagore, d'où $Z = \\sqrt{r^{2} + (L\\omega)^{2}}$.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "impedance"
+      ]
+    }
+  ]
+}

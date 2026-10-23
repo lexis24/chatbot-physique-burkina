@@ -1,0 +1,412 @@
+{
+  "matiere": "Physique-Chimie",
+  "partie": "Physique",
+  "niveau": "3ème",
+  "chapitre": "Physique, Chapitre 16 : La formation des images",
+  "source": "pc/3eme/Chapitre_16_La_formation_des_images",
+  "nombre_cartes": 35,
+  "cartes": [
+    {
+      "id": "PC3E-P16-001",
+      "lecon": "L'image donnée par une chambre noire, sans puis avec une lentille",
+      "type": "definition",
+      "recto": "En optique, qu'est-ce qu'une chambre noire ?",
+      "verso": "C'est une boîte fermée, opaque, percée d'un petit trou et dont le fond sert d'écran.",
+      "difficulte": 1,
+      "tags": [
+        "chambre-noire"
+      ]
+    },
+    {
+      "id": "PC3E-P16-002",
+      "lecon": "L'image donnée par une chambre noire, sans puis avec une lentille",
+      "type": "definition",
+      "recto": "Quelles sont les caractéristiques de l'image donnée par une chambre noire sans lentille ?",
+      "verso": "Elle est renversée et peu lumineuse, visible quelle que soit la profondeur de la boîte ; elle se brouille dès que le trou s'agrandit.",
+      "difficulte": 2,
+      "tags": [
+        "chambre-noire",
+        "image"
+      ]
+    },
+    {
+      "id": "PC3E-P16-003",
+      "lecon": "L'image donnée par une chambre noire, sans puis avec une lentille",
+      "type": "definition",
+      "recto": "Quelles sont les caractéristiques de l'image donnée par une chambre noire munie d'une lentille convergente ?",
+      "verso": "Elle est réelle, renversée, nette et lumineuse ; elle n'est nette que pour une seule position de l'écran.",
+      "difficulte": 2,
+      "tags": [
+        "chambre-noire",
+        "lentille"
+      ]
+    },
+    {
+      "id": "PC3E-P16-004",
+      "lecon": "L'image donnée par une chambre noire, sans puis avec une lentille",
+      "type": "definition",
+      "recto": "Quand dit-on qu'une image est réelle ?",
+      "verso": "Lorsque les rayons issus d'un même point de l'objet se croisent effectivement après la lentille : on peut alors recueillir l'image sur un écran.",
+      "difficulte": 2,
+      "tags": [
+        "image-reelle"
+      ]
+    },
+    {
+      "id": "PC3E-P16-005",
+      "lecon": "L'image donnée par une chambre noire, sans puis avec une lentille",
+      "type": "definition",
+      "recto": "Quelles sont les quatre caractéristiques qui permettent de décrire une image ?",
+      "verso": "Sa nature (réelle ou non), son sens (droite ou renversée), sa grandeur (plus grande, plus petite ou de même taille que l'objet) et sa position (distance à la lentille).",
+      "difficulte": 2,
+      "tags": [
+        "caracteristiques",
+        "image"
+      ]
+    },
+    {
+      "id": "PC3E-P16-006",
+      "lecon": "L'image donnée par une chambre noire, sans puis avec une lentille",
+      "type": "definition",
+      "recto": "En déplaçant l'écran, comment distingue-t-on une chambre noire munie d'une lentille d'une chambre noire sans lentille ?",
+      "verso": "Avec un simple trou, l'image reste visible à toute distance ; avec une lentille, une seule position de l'écran donne une image nette.",
+      "difficulte": 3,
+      "tags": [
+        "chambre-noire",
+        "distinction"
+      ]
+    },
+    {
+      "id": "PC3E-P16-007",
+      "lecon": "L'image donnée par une chambre noire, sans puis avec une lentille",
+      "type": "definition",
+      "recto": "Pourquoi est-il faux de dire que la lentille d'une chambre noire retourne l'image ?",
+      "verso": "Le simple trou donnait déjà une image renversée : la lentille rend l'image nette et lumineuse, elle ne la renverse pas.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "lentille"
+      ]
+    },
+    {
+      "id": "PC3E-P16-008",
+      "lecon": "Le rôle de la lentille et la mise au point",
+      "type": "definition",
+      "recto": "Quel est le rôle d'une lentille convergente dans la formation d'une image ?",
+      "verso": "Elle fait converger en un point unique tous les rayons issus d'un même point de l'objet.",
+      "difficulte": 1,
+      "tags": [
+        "role-lentille"
+      ]
+    },
+    {
+      "id": "PC3E-P16-009",
+      "lecon": "Le rôle de la lentille et la mise au point",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on le point image d'un point de l'objet ?",
+      "verso": "C'est le point où se rencontrent, après la lentille, tous les rayons issus de ce point de l'objet ; l'ensemble des points images forme l'image.",
+      "difficulte": 2,
+      "tags": [
+        "point-image"
+      ]
+    },
+    {
+      "id": "PC3E-P16-010",
+      "lecon": "Le rôle de la lentille et la mise au point",
+      "type": "definition",
+      "recto": "Que signifie faire la mise au point d'une image ?",
+      "verso": "C'est faire coïncider l'écran avec le plan où se rassemblent les rayons issus de chaque point de l'objet.",
+      "difficulte": 1,
+      "tags": [
+        "mise-au-point"
+      ]
+    },
+    {
+      "id": "PC3E-P16-011",
+      "lecon": "Le rôle de la lentille et la mise au point",
+      "type": "definition",
+      "recto": "Quels sont les trois gestes possibles pour faire la mise au point d'une image ?",
+      "verso": "Déplacer l'écran, déplacer la lentille ou déplacer l'objet : un seul de ces déplacements suffit.",
+      "difficulte": 2,
+      "tags": [
+        "mise-au-point"
+      ]
+    },
+    {
+      "id": "PC3E-P16-012",
+      "lecon": "Le rôle de la lentille et la mise au point",
+      "type": "definition",
+      "recto": "Comment l'objectif d'un téléphone fait-il la mise au point, alors que son capteur est fixé au fond du boîtier ?",
+      "verso": "Il déplace la lentille, en laissant l'objet et l'écran (le capteur) en place.",
+      "difficulte": 2,
+      "tags": [
+        "mise-au-point",
+        "telephone"
+      ]
+    },
+    {
+      "id": "PC3E-P16-013",
+      "lecon": "Le rôle de la lentille et la mise au point",
+      "type": "definition",
+      "recto": "Pourquoi ne corrige-t-on pas une image floue en changeant de lentille ?",
+      "verso": "Une image floue signale seulement que l'écran n'est pas à la bonne place : il suffit de déplacer l'écran, la lentille ou l'objet.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "mise-au-point"
+      ]
+    },
+    {
+      "id": "PC3E-P16-014",
+      "lecon": "Le centre optique et la relation entre l'objet et son image",
+      "type": "formule",
+      "recto": "Quelle est la propriété du centre optique $\\mathrm{O}$ d'une lentille convergente ?",
+      "verso": "Tout rayon lumineux qui passe par le centre optique traverse la lentille sans être dévié : il prolonge exactement sa direction d'arrivée.",
+      "difficulte": 1,
+      "tags": [
+        "centre-optique",
+        "propriete"
+      ]
+    },
+    {
+      "id": "PC3E-P16-015",
+      "lecon": "Le centre optique et la relation entre l'objet et son image",
+      "type": "definition",
+      "recto": "Pourquoi l'image réelle donnée par une lentille convergente est-elle renversée ?",
+      "verso": "Le rayon issu de $\\mathrm{B}$ passant par $\\mathrm{O}$ n'est pas dévié : $\\mathrm{B}$, $\\mathrm{O}$ et $\\mathrm{B'}$ sont alignés, donc $\\mathrm{B'}$ se trouve de l'autre côté de l'axe optique.",
+      "difficulte": 2,
+      "tags": [
+        "centre-optique",
+        "image-renversee"
+      ]
+    },
+    {
+      "id": "PC3E-P16-016",
+      "lecon": "Le centre optique et la relation entre l'objet et son image",
+      "type": "formule",
+      "recto": "Quelle relation lie les grandeurs $\\mathrm{AB}$, $\\mathrm{A'B'}$ et les positions $\\mathrm{OA}$, $\\mathrm{OA'}$ d'un objet et de son image par une lentille convergente ?",
+      "verso": "$\\dfrac{\\mathrm{A'B'}}{\\mathrm{AB}} = \\dfrac{\\mathrm{OA'}}{\\mathrm{OA}}$, avec toutes les longueurs dans la même unité. Elle découle du théorème de Thalès dans les triangles $\\mathrm{OAB}$ et $\\mathrm{OA'B'}$.",
+      "difficulte": 2,
+      "tags": [
+        "relation-objet-image"
+      ]
+    },
+    {
+      "id": "PC3E-P16-017",
+      "lecon": "Le centre optique et la relation entre l'objet et son image",
+      "type": "formule",
+      "recto": "Pour un objet $\\mathrm{AB}$ et son image $\\mathrm{A'B'}$ par une lentille convergente de centre $\\mathrm{O}$, à quel autre rapport le rapport $\\dfrac{\\mathrm{A'B'}}{\\mathrm{AB}}$ est-il aussi égal, en plus de $\\dfrac{\\mathrm{OA'}}{\\mathrm{OA}}$ ?",
+      "verso": "A $\\dfrac{\\mathrm{OB'}}{\\mathrm{OB}}$, car $\\mathrm{B}$, $\\mathrm{O}$ et $\\mathrm{B'}$ sont alignés.",
+      "difficulte": 3,
+      "tags": [
+        "relation-objet-image"
+      ]
+    },
+    {
+      "id": "PC3E-P16-018",
+      "lecon": "Le centre optique et la relation entre l'objet et son image",
+      "type": "definition",
+      "recto": "Dans la relation entre un objet et son image par une lentille convergente, que représentent $\\mathrm{OA}$ et $\\mathrm{OA'}$ ?",
+      "verso": "$\\mathrm{OA}$ est la distance de l'objet à la lentille, $\\mathrm{OA'}$ la distance de l'image à la lentille.",
+      "difficulte": 1,
+      "tags": [
+        "notations"
+      ]
+    },
+    {
+      "id": "PC3E-P16-019",
+      "lecon": "Le centre optique et la relation entre l'objet et son image",
+      "type": "formule",
+      "recto": "Que dit le rapport $\\dfrac{\\mathrm{A'B'}}{\\mathrm{AB}}$ de la taille de l'image par rapport à l'objet ?",
+      "verso": "Supérieur à $1$ : l'image est plus grande que l'objet ; inférieur à $1$ : plus petite ; égal à $1$ : de même taille.",
+      "difficulte": 2,
+      "tags": [
+        "grandeur-image"
+      ]
+    },
+    {
+      "id": "PC3E-P16-020",
+      "lecon": "Le centre optique et la relation entre l'objet et son image",
+      "type": "definition",
+      "recto": "Pourquoi ne doit-on jamais écrire « $\\dfrac{\\mathrm{A'B'}}{\\mathrm{AB}} = 4~\\mathrm{cm}$ » ?",
+      "verso": "C'est un rapport de deux longueurs exprimées dans la même unité : il n'a pas d'unité. On écrit $\\dfrac{\\mathrm{A'B'}}{\\mathrm{AB}} = 4$.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "unite"
+      ]
+    },
+    {
+      "id": "PC3E-P16-021",
+      "lecon": "Le centre optique et la relation entre l'objet et son image",
+      "type": "formule",
+      "recto": "Pour une lentille convergente, combien de grandeurs parmi $\\mathrm{AB}$, $\\mathrm{A'B'}$, $\\mathrm{OA}$ et $\\mathrm{OA'}$ faut-il connaître pour calculer la dernière ?",
+      "verso": "Trois : on isole la quatrième par un produit en croix, par exemple $\\mathrm{A'B'} = \\mathrm{AB} \\times \\dfrac{\\mathrm{OA'}}{\\mathrm{OA}}$.",
+      "difficulte": 2,
+      "tags": [
+        "relation-objet-image"
+      ]
+    },
+    {
+      "id": "PC3E-P16-022",
+      "lecon": "L'oeil, ses défauts et leur correction",
+      "type": "definition",
+      "recto": "Dans le modèle optique de l'oeil, quels éléments jouent le rôle de la lentille et de l'écran ?",
+      "verso": "Le cristallin joue le rôle de la lentille (de vergence variable) et la rétine celui de l'écran.",
+      "difficulte": 1,
+      "tags": [
+        "oeil",
+        "modele"
+      ]
+    },
+    {
+      "id": "PC3E-P16-023",
+      "lecon": "L'oeil, ses défauts et leur correction",
+      "type": "definition",
+      "recto": "Quel est le rôle de la pupille dans l'oeil ?",
+      "verso": "La pupille, ouverture de l'iris, règle la quantité de lumière qui entre dans l'oeil, comme un diaphragme.",
+      "difficulte": 2,
+      "tags": [
+        "pupille",
+        "iris"
+      ]
+    },
+    {
+      "id": "PC3E-P16-024",
+      "lecon": "L'oeil, ses défauts et leur correction",
+      "type": "definition",
+      "recto": "Quelles sont les caractéristiques de l'image qui se forme sur la rétine ?",
+      "verso": "Elle est réelle et renversée ; le nerf optique la transmet au cerveau, qui la remet à l'endroit.",
+      "difficulte": 2,
+      "tags": [
+        "retine",
+        "image"
+      ]
+    },
+    {
+      "id": "PC3E-P16-025",
+      "lecon": "L'oeil, ses défauts et leur correction",
+      "type": "definition",
+      "recto": "Pourquoi dit-on que l'oeil est un récepteur de lumière ?",
+      "verso": "Il reçoit la lumière venue des objets ; il n'en émet pas.",
+      "difficulte": 1,
+      "tags": [
+        "oeil",
+        "recepteur"
+      ]
+    },
+    {
+      "id": "PC3E-P16-026",
+      "lecon": "L'oeil, ses défauts et leur correction",
+      "type": "definition",
+      "recto": "Quels sont les milieux transparents que traverse la lumière dans l'oeil avant d'atteindre la rétine ?",
+      "verso": "La cornée, l'humeur aqueuse, le cristallin et l'humeur vitrée ; ensemble, ils se comportent comme une lentille convergente.",
+      "difficulte": 2,
+      "tags": [
+        "milieux-transparents"
+      ]
+    },
+    {
+      "id": "PC3E-P16-027",
+      "lecon": "L'oeil, ses défauts et leur correction",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on l'accommodation de l'oeil ?",
+      "verso": "C'est le changement de forme du cristallin, sous l'action de petits muscles, qui modifie sa distance focale ; il se bombe et devient plus convergent pour voir un objet proche.",
+      "difficulte": 2,
+      "tags": [
+        "accommodation"
+      ]
+    },
+    {
+      "id": "PC3E-P16-028",
+      "lecon": "L'oeil, ses défauts et leur correction",
+      "type": "definition",
+      "recto": "Pourquoi l'oeil ne fait-il pas sa mise au point en déplaçant la rétine ?",
+      "verso": "La rétine est fixe : c'est le cristallin qui change de forme (accommodation) pour ramener l'image sur la rétine.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "accommodation"
+      ]
+    },
+    {
+      "id": "PC3E-P16-029",
+      "lecon": "L'oeil, ses défauts et leur correction",
+      "type": "definition",
+      "recto": "Qu'est-ce qu'un oeil normal (emmétrope) ?",
+      "verso": "Un oeil qui, au repos, forme sur la rétine l'image d'un objet éloigné : il voit net de loin sans effort et accommode pour voir de près.",
+      "difficulte": 2,
+      "tags": [
+        "oeil-normal"
+      ]
+    },
+    {
+      "id": "PC3E-P16-030",
+      "lecon": "L'oeil, ses défauts et leur correction",
+      "type": "definition",
+      "recto": "Pourquoi un oeil myope voit-il flou de loin ?",
+      "verso": "L'oeil myope est trop convergent (ou trop long) : l'image d'un objet éloigné se forme en avant de la rétine, il voit flou de loin et net de près.",
+      "difficulte": 2,
+      "tags": [
+        "myopie"
+      ]
+    },
+    {
+      "id": "PC3E-P16-031",
+      "lecon": "L'oeil, ses défauts et leur correction",
+      "type": "formule",
+      "recto": "Quel type de verre correcteur corrige la myopie ?",
+      "verso": "Un verre divergent (plus mince au centre qu'aux bords) : il diminue la convergence de l'ensemble et l'image revient sur la rétine.",
+      "difficulte": 1,
+      "tags": [
+        "myopie",
+        "correction"
+      ]
+    },
+    {
+      "id": "PC3E-P16-032",
+      "lecon": "L'oeil, ses défauts et leur correction",
+      "type": "definition",
+      "recto": "Pourquoi un oeil hypermétrope voit-il flou de près ?",
+      "verso": "L'oeil hypermétrope n'est pas assez convergent (ou trop court) : au repos, l'image se forme en arrière de la rétine ; il voit flou de près, et parfois aussi de loin.",
+      "difficulte": 2,
+      "tags": [
+        "hypermetropie"
+      ]
+    },
+    {
+      "id": "PC3E-P16-033",
+      "lecon": "L'oeil, ses défauts et leur correction",
+      "type": "definition",
+      "recto": "Qu'est-ce que la presbytie ?",
+      "verso": "Avec l'âge, le cristallin perd sa souplesse et accommode de moins en moins : l'image d'un objet proche se forme en arrière de la rétine, on voit net de loin mais flou de près.",
+      "difficulte": 2,
+      "tags": [
+        "presbytie"
+      ]
+    },
+    {
+      "id": "PC3E-P16-034",
+      "lecon": "L'oeil, ses défauts et leur correction",
+      "type": "formule",
+      "recto": "Comment un verre convergent corrige-t-il l'hypermétropie et la presbytie ?",
+      "verso": "Il ajoute sa vergence à celle du cristallin : les rayons se rassemblent plus tôt et l'image nette revient sur la rétine.",
+      "difficulte": 3,
+      "tags": [
+        "correction",
+        "verre-convergent"
+      ]
+    },
+    {
+      "id": "PC3E-P16-035",
+      "lecon": "L'oeil, ses défauts et leur correction",
+      "type": "definition",
+      "recto": "Quel défaut de l'oeil est dû à une courbure irrégulière de la cornée ?",
+      "verso": "L'astigmatisme ; on le corrige avec des verres spéciaux dits toriques.",
+      "difficulte": 1,
+      "tags": [
+        "astigmatisme"
+      ]
+    }
+  ]
+}

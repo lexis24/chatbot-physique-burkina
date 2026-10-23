@@ -1,4 +1,4 @@
-﻿"""Document Processor for math curriculum documents"""
+﻿"""Document Processor for physics curriculum documents"""
 import re
 import unicodedata
 from pathlib import Path
@@ -70,6 +70,25 @@ def _tokens(value: str) -> List[str]:
     return [t for t in words if t not in _STOPWORDS]
 
 
+def chapter_number_from_filename(path: Path) -> Optional[int]:
+    """Numéro de chapitre tel qu'écrit dans le nom des fichiers Hakili Lab ("Chapitre_4_...",
+    "flashcards_4eme_Chapitre_4_...", "Chapitre_4_..._FICHE_REVISION"), ou None. Les chapitres de
+    curriculum_data.py suivent l'ordre des manuels : le chapitre N d'une classe y est à l'index N-1."""
+    match = re.search(r"(?i)(?:^|_)chapitre_(\d+)_", path.stem)
+    return int(match.group(1)) if match else None
+
+
+def curriculum_chapter_from_number(class_code: str, path: Path) -> Optional[str]:
+    """Intitulé officiel correspondant au numéro de chapitre du nom de fichier (voir
+    chapter_number_from_filename), ou None si le numéro est absent ou hors du programme."""
+    from curriculum_data import get_chapters
+    number = chapter_number_from_filename(path)
+    chapters = get_chapters(class_code)
+    if number is None or not 1 <= number <= len(chapters):
+        return None
+    return chapters[number - 1]
+
+
 def infer_class_from_path(path: Path, data_dir: Path) -> Optional[str]:
     """Déduit le code de classe officiel (ex: "2nde") depuis les dossiers parents ou le nom du
     fichier, via CLASS_ALIASES. Utilisé aussi bien à l'ingestion qu'à la recherche du cours."""
@@ -120,6 +139,12 @@ def find_course_file(
         # dossier parent) : sert à départager plusieurs fichiers candidats.
         matched = sum(1 for t in chapter_tokens if t in rel_tokens or t in stem_tokens)
         score = matched + sum(1 for t in chapter_tokens if t in stem_tokens)
+        # Départage par le numéro de chapitre du nom de fichier : indispensable quand deux noms
+        # de fichiers recoupent autant de mots-clés (ex: 4ème "La masse volumique et la densité
+        # d'un corps" vs "La masse d'un corps", dont le fichier du premier ne contient pas "corps").
+        # Demi-point seulement : départage une égalité, sans jamais l'emporter sur un mot-clé.
+        if curriculum_chapter_from_number(class_code, path) == chapter:
+            score += 0.5
         if score > best_score:
             best = path
             best_score = score
@@ -136,7 +161,7 @@ def find_course_file(
 
 
 class DocumentProcessor:
-    """Process math curriculum documents for the knowledge base"""
+    """Process physics curriculum documents for the knowledge base"""
 
     def __init__(self, data_dir: str):
         self.data_dir = data_dir
@@ -215,40 +240,34 @@ class DocumentProcessor:
         """Create sample curriculum documents"""
         samples = [
             {
-                "text": """Le théorème de Pythagore est un résultat fondamental en géométrie.
-                
-Dans un triangle rectangle, le carré de la longueur de l'hypoténuse est égal à la somme des carrés des longueurs des deux autres côtés.
+                "text": """La loi d'Ohm relie la tension aux bornes d'un conducteur ohmique et l'intensité du courant qui le traverse.
 
-Si ABC est un triangle rectangle en A, alors BC² = AB² + AC²
+Énoncé : U = R × I, avec U en volts (V), R en ohms (Ω) et I en ampères (A).
 
-Exemple : Si AB = 3 cm et AC = 4 cm, alors BC² = 3² + 4² = 9 + 16 = 25, donc BC = 5 cm.
+Exemple : un conducteur ohmique de résistance R = 100 Ω est traversé par un courant d'intensité I = 120 mA = 0,120 A. La tension à ses bornes vaut U = 100 × 0,120 = 12 V.
 
-Ce théorème permet de calculer la longueur d'un côté d'un triangle rectangle quand on connaît les deux autres.""",
-                "metadata": {"type": "sample", "chapter": "Théorème de Pythagore", "class": "5ème"}
+Attention : il faut convertir les milliampères en ampères avant de calculer.""",
+                "metadata": {"type": "sample", "chapter": "La résistance d'un conducteur ohmique", "class": "3ème"}
             },
             {
-                "text": """Le théorème de Thalès permet de calculer des longueurs dans des configurations de triangles emboîtés ou coupés par une parallèle.
+                "text": """Le poids d'un corps est la force d'attraction exercée par la Terre sur ce corps. La masse est la quantité de matière qu'il contient.
 
-Si deux droites parallèles coupent deux sécantes, alors elles déterminent sur ces sécantes des segments proportionnels.
+Relation : P = m × g, avec P en newtons (N), m en kilogrammes (kg) et g l'intensité de la pesanteur (g ≈ 9,8 N/kg).
 
-Dans un triangle ABC, si une droite parallèle à BC coupe AB en D et AC en E, alors :
-AD/AB = AE/AC = DE/BC
+Exemple : un sac de riz de masse m = 50 kg a un poids P = 50 × 9,8 = 490 N.
 
-Exemple : Si AD = 2 cm, AB = 6 cm et DE = 3 cm, trouver BC.""",
-                "metadata": {"type": "sample", "chapter": "Théorème de Thalès", "class": "4ème"}
+Le poids se mesure avec un dynamomètre, la masse avec une balance.""",
+                "metadata": {"type": "sample", "chapter": "Le poids d'un corps", "class": "4ème"}
             },
             {
-                "text": """Les fractions représentent une partie d'un tout.
+                "text": """La masse volumique d'une substance est la masse d'une unité de volume de cette substance.
 
-Une fraction a/b représente a parts égales d'un tout divisé en b parts.
+Relation : ρ = m / V, avec m en kg, V en m³ et ρ en kg/m³. Unité pratique : g/cm³ (1 g/cm³ = 1 000 kg/m³).
 
-Opérations :
-- Addition/Soustraction : Il faut le même dénominateur
-- Multiplication : (a/b) × (c/d) = (a×c)/(b×d)
-- Division : (a/b) ÷ (c/d) = (a×d)/(b×c)
+Exemple : la masse volumique de l'eau est 1 000 kg/m³, soit 1 g/cm³.
 
-Simplification : Diviser le numérateur et le dénominateur par leur PGCD.""",
-                "metadata": {"type": "sample", "chapter": "Fractions", "class": "6ème"}
-            }
+La densité d'un liquide ou d'un solide est le rapport de sa masse volumique à celle de l'eau : elle n'a pas d'unité.""",
+                "metadata": {"type": "sample", "chapter": "La masse volumique et la densité d'un corps", "class": "4ème"}
+            },
         ]
         return samples

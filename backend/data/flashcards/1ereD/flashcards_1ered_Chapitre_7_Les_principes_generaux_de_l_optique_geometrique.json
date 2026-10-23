@@ -1,0 +1,454 @@
+{
+  "matiere": "Physique-Chimie",
+  "partie": "Physique",
+  "niveau": "1ère D",
+  "chapitre": "Physique, Chapitre 7 : Les principes généraux de l'optique géométrique",
+  "source": "pc/1ered/Chapitre_7_Les_principes_generaux_de_l_optique_geometrique",
+  "nombre_cartes": 38,
+  "cartes": [
+    {
+      "id": "PC1D-P07-001",
+      "lecon": "La vitesse de la lumière dans un milieu et l'indice de réfraction",
+      "type": "formule",
+      "recto": "Quelle est la célérité $c$ de la lumière dans le vide ?",
+      "verso": "$c = 3{,}00 \\times 10^{8}~\\mathrm{m/s}$. Dans tout autre milieu transparent, la vitesse $v$ de la lumière est inférieure à $c$.",
+      "difficulte": 1,
+      "tags": [
+        "celerite",
+        "vide"
+      ]
+    },
+    {
+      "id": "PC1D-P07-002",
+      "lecon": "La vitesse de la lumière dans un milieu et l'indice de réfraction",
+      "type": "formule",
+      "recto": "Comment définit-on l'indice de réfraction absolu $n$ d'un milieu transparent ?",
+      "verso": "$n = \\dfrac{c}{v}$, où $c$ est la célérité de la lumière dans le vide et $v$ sa vitesse dans le milieu, exprimées dans la même unité. $n$ est sans unité.",
+      "difficulte": 1,
+      "tags": [
+        "indice-absolu"
+      ]
+    },
+    {
+      "id": "PC1D-P07-003",
+      "lecon": "La vitesse de la lumière dans un milieu et l'indice de réfraction",
+      "type": "definition",
+      "recto": "Pourquoi l'indice de réfraction absolu d'un milieu est-il toujours supérieur ou égal à 1 ?",
+      "verso": "Parce que $n = \\dfrac{c}{v}$ et que la vitesse $v$ dans un milieu ne dépasse jamais $c$. Le vide, pour lequel $v = c$, a exactement l'indice 1.",
+      "difficulte": 2,
+      "tags": [
+        "indice-absolu",
+        "vide"
+      ]
+    },
+    {
+      "id": "PC1D-P07-004",
+      "lecon": "La vitesse de la lumière dans un milieu et l'indice de réfraction",
+      "type": "definition",
+      "recto": "Que signifie qu'un milieu transparent est plus réfringent qu'un autre ?",
+      "verso": "Son indice de réfraction est plus grand : la lumière y va moins vite, puisque $v = \\dfrac{c}{n}$.",
+      "difficulte": 2,
+      "tags": [
+        "refringent",
+        "vocabulaire"
+      ]
+    },
+    {
+      "id": "PC1D-P07-005",
+      "lecon": "La vitesse de la lumière dans un milieu et l'indice de réfraction",
+      "type": "formule",
+      "recto": "Pour la lumière jaune, quels sont les indices de l'air, de l'eau et du verre ordinaire ?",
+      "verso": "Air : $1{,}00$ (on le traite comme le vide) ; eau : $1{,}33$ ; verre ordinaire : $1{,}50$.",
+      "difficulte": 1,
+      "tags": [
+        "indices-usuels"
+      ]
+    },
+    {
+      "id": "PC1D-P07-006",
+      "lecon": "La vitesse de la lumière dans un milieu et l'indice de réfraction",
+      "type": "definition",
+      "recto": "Pourquoi est-il faux d'écrire $n = 1{,}5~\\mathrm{m/s}$ pour l'indice d'un verre ?",
+      "verso": "L'indice est le quotient de deux vitesses : c'est un nombre sans unité. C'est la vitesse $v = \\dfrac{c}{n}$ qui s'exprime en $\\mathrm{m/s}$. L'indice caractérise le milieu, pas la lumière.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "indice-absolu",
+        "trouve-l-erreur"
+      ]
+    },
+    {
+      "id": "PC1D-P07-007",
+      "lecon": "La réflexion de la lumière et le miroir plan",
+      "type": "definition",
+      "recto": "Qu'est-ce qui distingue la diffusion de la réflexion de la lumière ?",
+      "verso": "La diffusion renvoie la lumière dans toutes les directions (surface rugueuse) ; la réflexion la renvoie dans une direction bien déterminée (surface polie).",
+      "difficulte": 1,
+      "tags": [
+        "diffusion",
+        "reflexion"
+      ]
+    },
+    {
+      "id": "PC1D-P07-008",
+      "lecon": "La réflexion de la lumière et le miroir plan",
+      "type": "definition",
+      "recto": "Qu'est-ce qu'un miroir plan ?",
+      "verso": "Une surface plane et polie qui réfléchit la lumière : miroir de poche, miroir mural, surface d'une eau calme.",
+      "difficulte": 1,
+      "tags": [
+        "miroir-plan"
+      ]
+    },
+    {
+      "id": "PC1D-P07-009",
+      "lecon": "La réflexion de la lumière et le miroir plan",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on le plan d'incidence ?",
+      "verso": "Le plan qui contient le rayon incident et la normale à la surface au point d'incidence.",
+      "difficulte": 1,
+      "tags": [
+        "plan-d-incidence"
+      ]
+    },
+    {
+      "id": "PC1D-P07-010",
+      "lecon": "La réflexion de la lumière et le miroir plan",
+      "type": "formule",
+      "recto": "Quelles sont les deux lois de Descartes pour la réflexion ?",
+      "verso": "1re loi : le rayon réfléchi appartient au plan d'incidence. 2e loi : l'angle de réflexion est égal à l'angle d'incidence, $i = r$, les deux angles étant mesurés depuis la normale.",
+      "difficulte": 2,
+      "tags": [
+        "lois-de-descartes",
+        "reflexion"
+      ]
+    },
+    {
+      "id": "PC1D-P07-011",
+      "lecon": "La réflexion de la lumière et le miroir plan",
+      "type": "definition",
+      "recto": "Que dit la loi du retour inverse de la lumière ?",
+      "verso": "Le trajet suivi par la lumière ne dépend pas du sens de parcours : un rayon parti de $B$ suit en sens inverse le chemin d'un rayon allé de $A$ à $B$.",
+      "difficulte": 1,
+      "tags": [
+        "retour-inverse"
+      ]
+    },
+    {
+      "id": "PC1D-P07-012",
+      "lecon": "La réflexion de la lumière et le miroir plan",
+      "type": "formule",
+      "recto": "Où se situe l'image $A'$ d'un point $A$ donnée par un miroir plan ?",
+      "verso": "$A'$ est le symétrique de $A$ par rapport au plan du miroir : sur la perpendiculaire au miroir menée de $A$, derrière le miroir, avec $HA' = AH$ ($H$ pied de la perpendiculaire).",
+      "difficulte": 2,
+      "tags": [
+        "miroir-plan",
+        "image"
+      ]
+    },
+    {
+      "id": "PC1D-P07-013",
+      "lecon": "La réflexion de la lumière et le miroir plan",
+      "type": "definition",
+      "recto": "Pourquoi l'image donnée par un miroir plan est-elle virtuelle ?",
+      "verso": "Seuls les prolongements des rayons réfléchis se coupent en $A'$, derrière le miroir : l'image se voit à l'oeil mais ne peut pas être recueillie sur un écran.",
+      "difficulte": 2,
+      "tags": [
+        "image-virtuelle",
+        "miroir-plan"
+      ]
+    },
+    {
+      "id": "PC1D-P07-014",
+      "lecon": "La réflexion de la lumière et le miroir plan",
+      "type": "definition",
+      "recto": "Quelles sont la taille et l'orientation de l'image d'un objet étendu par un miroir plan ?",
+      "verso": "L'image a la même taille que l'objet et elle est droite ; le miroir échange l'avant et l'arrière, si bien que l'image paraît inversée de gauche à droite.",
+      "difficulte": 2,
+      "tags": [
+        "miroir-plan",
+        "image"
+      ]
+    },
+    {
+      "id": "PC1D-P07-015",
+      "lecon": "La réflexion de la lumière et le miroir plan",
+      "type": "definition",
+      "recto": "Quelle erreur de mesure guette l'élève qui détermine un angle d'incidence ?",
+      "verso": "Mesurer l'angle depuis la surface au lieu de la normale. Si l'énoncé donne l'angle avec la surface, $i = 90° - \\text{angle avec la surface}$ (par exemple $25°$ donne $i = 65°$).",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "angle-d-incidence",
+        "normale"
+      ]
+    },
+    {
+      "id": "PC1D-P07-016",
+      "lecon": "La réfraction et les lois de Snell-Descartes",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on un dioptre ?",
+      "verso": "La surface qui sépare deux milieux transparents d'indices différents.",
+      "difficulte": 1,
+      "tags": [
+        "dioptre"
+      ]
+    },
+    {
+      "id": "PC1D-P07-017",
+      "lecon": "La réfraction et les lois de Snell-Descartes",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on la réfraction de la lumière ?",
+      "verso": "C'est le changement de direction que subit la lumière à la traversée d'un dioptre ; il est dû au changement de vitesse de la lumière d'un milieu à l'autre.",
+      "difficulte": 2,
+      "tags": [
+        "refraction"
+      ]
+    },
+    {
+      "id": "PC1D-P07-018",
+      "lecon": "La réfraction et les lois de Snell-Descartes",
+      "type": "formule",
+      "recto": "Que dit la première loi de Snell-Descartes pour la réfraction ?",
+      "verso": "Le rayon réfracté appartient au plan d'incidence (rayon incident, normale et rayon réfracté dans un même plan) et il est situé de l'autre côté de la normale par rapport au rayon incident.",
+      "difficulte": 2,
+      "tags": [
+        "snell-descartes",
+        "premiere-loi"
+      ]
+    },
+    {
+      "id": "PC1D-P07-019",
+      "lecon": "La réfraction et les lois de Snell-Descartes",
+      "type": "formule",
+      "recto": "Quelle relation la deuxième loi de Snell-Descartes établit-elle entre indices et angles ?",
+      "verso": "$n_1 \\sin i_1 = n_2 \\sin i_2$, où $n_1$ est l'indice du milieu d'où vient la lumière, $n_2$ celui du milieu où elle entre, et $i_1$, $i_2$ les angles mesurés depuis la normale.",
+      "difficulte": 2,
+      "tags": [
+        "snell-descartes",
+        "deuxieme-loi"
+      ]
+    },
+    {
+      "id": "PC1D-P07-020",
+      "lecon": "La réfraction et les lois de Snell-Descartes",
+      "type": "formule",
+      "recto": "Comment s'exprime l'indice de réfraction relatif $n_{2/1}$ du milieu 2 par rapport au milieu 1 ?",
+      "verso": "$n_{2/1} = \\dfrac{n_2}{n_1} = \\dfrac{v_1}{v_2} = \\dfrac{\\sin i_1}{\\sin i_2}$, nombre sans unité.",
+      "difficulte": 2,
+      "tags": [
+        "indice-relatif"
+      ]
+    },
+    {
+      "id": "PC1D-P07-021",
+      "lecon": "La réfraction et les lois de Snell-Descartes",
+      "type": "formule",
+      "recto": "Lors d'une réfraction, dans quel cas le rayon réfracté se rapproche-t-il de la normale ?",
+      "verso": "Quand le second milieu est plus réfringent que le premier ($n_2 \\gt n_1$) : alors $i_2 \\lt i_1$. Si $n_2 \\lt n_1$, le rayon s'écarte de la normale ($i_2 \\gt i_1$).",
+      "difficulte": 2,
+      "tags": [
+        "sens-de-la-deviation"
+      ]
+    },
+    {
+      "id": "PC1D-P07-022",
+      "lecon": "La réfraction et les lois de Snell-Descartes",
+      "type": "formule",
+      "recto": "Dans quels cas un rayon lumineux traverse-t-il un dioptre sans être dévié ?",
+      "verso": "Sous incidence normale ($i_1 = 0°$ donne $i_2 = 0°$), ou entre deux milieux de même indice, quelle que soit l'incidence.",
+      "difficulte": 2,
+      "tags": [
+        "cas-particuliers"
+      ]
+    },
+    {
+      "id": "PC1D-P07-023",
+      "lecon": "La réfraction et les lois de Snell-Descartes",
+      "type": "formule",
+      "recto": "Pourquoi est-il faux d'écrire la loi de la réfraction sous la forme $n_1 i_1 = n_2 i_2$ ?",
+      "verso": "La loi porte sur les sinus des angles, pas sur les angles : $n_1 \\sin i_1 = n_2 \\sin i_2$. Les mesures le montrent : $\\dfrac{i_1}{i_2}$ varie alors que $\\dfrac{\\sin i_1}{\\sin i_2}$ reste constant.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "snell-descartes",
+        "trouve-l-erreur"
+      ]
+    },
+    {
+      "id": "PC1D-P07-024",
+      "lecon": "La réfraction et les lois de Snell-Descartes",
+      "type": "formule",
+      "recto": "Pour une réfraction de l'air vers le verre, quel graphique traduit la deuxième loi de Snell-Descartes ?",
+      "verso": "Le graphique de $\\sin i_1$ en fonction de $\\sin i_2$ : une droite passant par l'origine, de pente $\\dfrac{n_2}{n_1}$ (l'indice du verre, puisque $n_1 = 1{,}00$ pour l'air).",
+      "difficulte": 3,
+      "tags": [
+        "graphique",
+        "snell-descartes"
+      ]
+    },
+    {
+      "id": "PC1D-P07-025",
+      "lecon": "La réfraction et les lois de Snell-Descartes",
+      "type": "formule",
+      "recto": "Quelle relation donne la déviation $D$ d'un rayon qui traverse un dioptre ?",
+      "verso": "$D = \\lvert i_1 - i_2 \\rvert$ : c'est l'angle entre la direction du rayon incident et celle du rayon réfracté.",
+      "difficulte": 2,
+      "tags": [
+        "deviation"
+      ]
+    },
+    {
+      "id": "PC1D-P07-026",
+      "lecon": "La réfraction et les lois de Snell-Descartes",
+      "type": "formule",
+      "recto": "Pour un regard presque vertical, quelle relation lie la profondeur apparente $h'$ d'un fond d'eau à sa profondeur réelle $h$ ?",
+      "verso": "$h' = \\dfrac{h}{n}$, où $n$ est l'indice de l'eau : le fond paraît moins profond qu'il ne l'est.",
+      "difficulte": 2,
+      "tags": [
+        "profondeur-apparente"
+      ]
+    },
+    {
+      "id": "PC1D-P07-027",
+      "lecon": "L'angle limite et la réflexion totale",
+      "type": "formule",
+      "recto": "Pourquoi la réfraction a-t-elle toujours lieu quand la lumière passe d'un milieu d'indice $n_1$ vers un milieu d'indice $n_2 \\gt n_1$ ?",
+      "verso": "Car $\\sin i_2 = \\dfrac{n_1}{n_2}\\sin i_1$, avec $\\dfrac{n_1}{n_2} \\lt 1$ et $\\sin i_1 \\leq 1$ : ce nombre reste inférieur à 1, donc un angle $i_2$ existe toujours.",
+      "difficulte": 3,
+      "tags": [
+        "condition-de-refraction"
+      ]
+    },
+    {
+      "id": "PC1D-P07-028",
+      "lecon": "L'angle limite et la réflexion totale",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on l'angle limite $\\lambda$ pour un passage de la lumière d'un milieu plus réfringent vers un milieu moins réfringent ?",
+      "verso": "C'est l'angle d'incidence pour lequel l'angle de réfraction vaut $90°$. Il n'existe que si $n_1 \\gt n_2$.",
+      "difficulte": 2,
+      "tags": [
+        "angle-limite"
+      ]
+    },
+    {
+      "id": "PC1D-P07-029",
+      "lecon": "L'angle limite et la réflexion totale",
+      "type": "formule",
+      "recto": "Quelle relation donne l'angle limite $\\lambda$ quand la lumière passe d'un milieu d'indice $n_1$ vers un milieu d'indice $n_2 \\lt n_1$ ?",
+      "verso": "$\\sin \\lambda = \\dfrac{n_2}{n_1}$ : au numérateur l'indice du milieu d'arrivée, le moins réfringent. C'est la loi de Snell-Descartes avec $i_2 = 90°$.",
+      "difficulte": 2,
+      "tags": [
+        "angle-limite"
+      ]
+    },
+    {
+      "id": "PC1D-P07-030",
+      "lecon": "L'angle limite et la réflexion totale",
+      "type": "definition",
+      "recto": "Qu'est-ce que la réflexion totale ?",
+      "verso": "Pour une incidence $i_1 \\gt \\lambda$ (passage d'un milieu plus réfringent vers un milieu moins réfringent), il n'y a plus de rayon réfracté : toute la lumière est réfléchie dans le premier milieu, avec $r = i_1$.",
+      "difficulte": 2,
+      "tags": [
+        "reflexion-totale"
+      ]
+    },
+    {
+      "id": "PC1D-P07-031",
+      "lecon": "L'angle limite et la réflexion totale",
+      "type": "formule",
+      "recto": "Pourquoi ne peut-il pas y avoir de réflexion totale quand la lumière passe de l'air dans l'eau ?",
+      "verso": "La réflexion totale n'est possible que du milieu le plus réfringent vers le moins réfringent ; de l'air ($1{,}00$) vers l'eau ($1{,}33$), il y a toujours un rayon réfracté.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "reflexion-totale",
+        "trouve-l-erreur"
+      ]
+    },
+    {
+      "id": "PC1D-P07-032",
+      "lecon": "L'angle limite et la réflexion totale",
+      "type": "definition",
+      "recto": "Qu'est-ce qui distingue la réflexion partielle de la réflexion totale à un dioptre ?",
+      "verso": "La réflexion partielle accompagne toute réfraction : une partie de la lumière est renvoyée. La réflexion totale n'a lieu qu'au-delà de l'angle limite, sans aucun rayon réfracté.",
+      "difficulte": 3,
+      "tags": [
+        "reflexion-partielle",
+        "reflexion-totale"
+      ]
+    },
+    {
+      "id": "PC1D-P07-033",
+      "lecon": "L'angle limite et la réflexion totale",
+      "type": "definition",
+      "recto": "Comment la lumière est-elle guidée dans une fibre optique ?",
+      "verso": "La fibre a un coeur d'indice élevé entouré d'une gaine d'indice un peu plus faible ; le rayon frappe la paroi coeur-gaine sous une incidence supérieure à l'angle limite et subit des réflexions totales successives.",
+      "difficulte": 2,
+      "tags": [
+        "fibre-optique",
+        "reflexion-totale"
+      ]
+    },
+    {
+      "id": "PC1D-P07-034",
+      "lecon": "La dispersion de la lumière blanche",
+      "type": "definition",
+      "recto": "Qu'est-ce qui distingue une lumière monochromatique d'une lumière polychromatique ?",
+      "verso": "Une lumière monochromatique a une seule couleur, aucun prisme ne la décompose (pointeur laser). Une lumière polychromatique est composée de plusieurs lumières monochromatiques ; la lumière blanche en contient une infinité.",
+      "difficulte": 2,
+      "tags": [
+        "monochromatique",
+        "polychromatique"
+      ]
+    },
+    {
+      "id": "PC1D-P07-035",
+      "lecon": "La dispersion de la lumière blanche",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on la dispersion de la lumière par un milieu transparent ?",
+      "verso": "C'est la décomposition d'une lumière polychromatique en ses lumières monochromatiques par un milieu transparent ; elle vient de ce que l'indice du milieu dépend de la couleur de la lumière.",
+      "difficulte": 2,
+      "tags": [
+        "dispersion"
+      ]
+    },
+    {
+      "id": "PC1D-P07-036",
+      "lecon": "La dispersion de la lumière blanche",
+      "type": "formule",
+      "recto": "Dans la dispersion de la lumière blanche par un prisme de verre, quelle couleur est la plus déviée ?",
+      "verso": "Le violet, car pour un même verre $n_{\\text{violet}} \\gt n_{\\text{rouge}}$. Le spectre s'étale dans l'ordre rouge, orangé, jaune, vert, bleu, indigo, violet.",
+      "difficulte": 1,
+      "tags": [
+        "dispersion",
+        "spectre"
+      ]
+    },
+    {
+      "id": "PC1D-P07-037",
+      "lecon": "La dispersion de la lumière blanche",
+      "type": "definition",
+      "recto": "Pourquoi est-il faux de dire que le prisme colore la lumière blanche ?",
+      "verso": "Le prisme ne crée aucune couleur : il sépare celles que la lumière blanche contenait déjà, en nombre infini, parce que l'indice du verre dépend de la couleur.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "dispersion",
+        "trouve-l-erreur"
+      ]
+    },
+    {
+      "id": "PC1D-P07-038",
+      "lecon": "La dispersion de la lumière blanche",
+      "type": "definition",
+      "recto": "Pourquoi n'y a-t-il pas de dispersion de la lumière dans le vide ?",
+      "verso": "Dans le vide, toutes les couleurs se propagent à la même célérité $c$ : l'indice vaut 1 pour toutes, aucune n'est plus déviée qu'une autre.",
+      "difficulte": 2,
+      "tags": [
+        "dispersion",
+        "vide"
+      ]
+    }
+  ]
+}

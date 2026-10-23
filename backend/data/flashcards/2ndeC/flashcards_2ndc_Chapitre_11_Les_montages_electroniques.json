@@ -1,0 +1,402 @@
+{
+  "matiere": "Physique-Chimie",
+  "partie": "Physique",
+  "niveau": "2nde C",
+  "chapitre": "Physique, Chapitre 11 : Les montages électroniques",
+  "source": "pc/2ndc/Chapitre_11_Les_montages_electroniques",
+  "nombre_cartes": 33,
+  "cartes": [
+    {
+      "id": "PC2C-P11-001",
+      "lecon": "La chaîne électronique : capteur, alimentation, utilisation",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on une chaîne électronique ?",
+      "verso": "Un ensemble de blocs reliés dans un ordre déterminé, qui reçoit une information à une extrémité et produit une action à l'autre. On la représente par un schéma-blocs fléché, la flèche donnant le sens de circulation de l'information.",
+      "difficulte": 1,
+      "tags": [
+        "chaine-electronique",
+        "schema-blocs"
+      ]
+    },
+    {
+      "id": "PC2C-P11-002",
+      "lecon": "La chaîne électronique : capteur, alimentation, utilisation",
+      "type": "definition",
+      "recto": "Dans une chaîne électronique, qu'appelle-t-on un capteur ?",
+      "verso": "Le composant d'entrée qui traduit une grandeur physique non électrique (lumière, température, humidité, son, pression) en une grandeur électrique (résistance, tension, intensité).",
+      "difficulte": 1,
+      "tags": [
+        "capteur"
+      ]
+    },
+    {
+      "id": "PC2C-P11-003",
+      "lecon": "La chaîne électronique : capteur, alimentation, utilisation",
+      "type": "definition",
+      "recto": "Dans une chaîne électronique, qu'appelle-t-on l'alimentation ?",
+      "verso": "Le bloc qui fournit à toute la chaîne l'énergie électrique dont elle a besoin, sous une tension continue et aussi constante que possible : pile, batterie, panneau solaire, bloc branché sur le secteur.",
+      "difficulte": 1,
+      "tags": [
+        "alimentation"
+      ]
+    },
+    {
+      "id": "PC2C-P11-004",
+      "lecon": "La chaîne électronique : capteur, alimentation, utilisation",
+      "type": "definition",
+      "recto": "Dans une chaîne électronique, qu'appelle-t-on l'utilisation ?",
+      "verso": "Le composant de sortie, appelé aussi actionneur, qui produit l'action : lampe, DEL, moteur, haut-parleur, sonnerie, relais.",
+      "difficulte": 1,
+      "tags": [
+        "utilisation",
+        "actionneur"
+      ]
+    },
+    {
+      "id": "PC2C-P11-005",
+      "lecon": "La chaîne électronique : capteur, alimentation, utilisation",
+      "type": "definition",
+      "recto": "Dans une chaîne électronique, quel est le rôle de l'étage de traitement ?",
+      "verso": "Placé entre le capteur et l'utilisation, il met en forme le signal et commande la sortie ; en seconde, il se réduit à un transistor.",
+      "difficulte": 2,
+      "tags": [
+        "traitement",
+        "transistor"
+      ]
+    },
+    {
+      "id": "PC2C-P11-006",
+      "lecon": "La chaîne électronique : capteur, alimentation, utilisation",
+      "type": "definition",
+      "recto": "Pourquoi l'alimentation se dessine-t-elle à part dans le schéma-blocs d'une chaîne électronique ?",
+      "verso": "Parce qu'elle ne transporte aucune information : elle fournit seulement l'énergie à tous les blocs. L'information passe du capteur au traitement puis à l'utilisation.",
+      "difficulte": 3,
+      "tags": [
+        "alimentation",
+        "energie",
+        "piege"
+      ]
+    },
+    {
+      "id": "PC2C-P11-007",
+      "lecon": "La chaîne électronique : capteur, alimentation, utilisation",
+      "type": "definition",
+      "recto": "Pour une photorésistance (LDR), quelle grandeur électrique varie avec l'éclairement ?",
+      "verso": "C'est sa résistance qui varie, forte dans le noir et faible à la lumière.",
+      "difficulte": 1,
+      "tags": [
+        "photoresistance",
+        "capteur"
+      ]
+    },
+    {
+      "id": "PC2C-P11-008",
+      "lecon": "La chaîne électronique : capteur, alimentation, utilisation",
+      "type": "definition",
+      "recto": "Comment varie la résistance d'une thermistance CTN quand la température augmente ?",
+      "verso": "Elle diminue ; la courbe $R = f(\\theta)$ est décroissante mais n'est pas une droite. Une thermistance CTP se comporte à l'inverse : sa résistance augmente avec la température.",
+      "difficulte": 2,
+      "tags": [
+        "thermistance",
+        "ctn",
+        "ctp"
+      ]
+    },
+    {
+      "id": "PC2C-P11-009",
+      "lecon": "La chaîne électronique : capteur, alimentation, utilisation",
+      "type": "definition",
+      "recto": "Pourquoi une photorésistance ne peut-elle pas, seule, fournir une tension à un circuit ?",
+      "verso": "Ce n'est pas une source de tension mais un dipôle passif dont seule la résistance varie : il faut un circuit, avec une alimentation et un conducteur ohmique, pour en tirer une tension.",
+      "difficulte": 3,
+      "tags": [
+        "photoresistance",
+        "dipole-passif",
+        "piege"
+      ]
+    },
+    {
+      "id": "PC2C-P11-010",
+      "lecon": "La chaîne électronique : capteur, alimentation, utilisation",
+      "type": "formule",
+      "recto": "Un capteur de résistance $R_{\\mathrm{capteur}}$ est monté en série avec un conducteur ohmique $R$ sous la tension $E$ : quelle relation donne la tension $U_R$ aux bornes de $R$ ?",
+      "verso": "$U_R = \\dfrac{E \\times R}{R_{\\mathrm{capteur}} + R}$ (diviseur de tension) ; le capteur porte $E - U_R$, et ces deux tensions varient en sens inverse quand $R_{\\mathrm{capteur}}$ change.",
+      "difficulte": 2,
+      "tags": [
+        "diviseur-de-tension",
+        "capteur"
+      ]
+    },
+    {
+      "id": "PC2C-P11-011",
+      "lecon": "La chaîne électronique : capteur, alimentation, utilisation",
+      "type": "definition",
+      "recto": "Pourquoi monte-t-on un capteur résistif en série avec un conducteur ohmique, et non en dérivation ?",
+      "verso": "En dérivation sur une tension fixe, la tension aux bornes du capteur ne varierait pas ; en série, il forme un diviseur de tension dont la tension de sortie suit la grandeur captée.",
+      "difficulte": 3,
+      "tags": [
+        "capteur",
+        "montage-serie"
+      ]
+    },
+    {
+      "id": "PC2C-P11-012",
+      "lecon": "La chaîne électronique : capteur, alimentation, utilisation",
+      "type": "formule",
+      "recto": "Quelle condition doit vérifier la résistance $R_p$ d'un conducteur de protection placé en série avec un capteur $R_{\\mathrm{capteur}}$ et une utilisation de valeurs nominales $U_n$ et $I_n$, sous la tension $E$ ?",
+      "verso": "$R_p \\geq \\dfrac{E - U_n}{I_n} - R_{\\mathrm{capteur}}$, pour que l'intensité ne dépasse pas $I_n$.",
+      "difficulte": 3,
+      "tags": [
+        "resistance-de-protection"
+      ]
+    },
+    {
+      "id": "PC2C-P11-013",
+      "lecon": "Le transistor et la commande du courant de collecteur",
+      "type": "definition",
+      "recto": "Quelles sont les trois électrodes d'un transistor bipolaire ?",
+      "verso": "La base B, le collecteur C et l'émetteur E. En seconde, on étudie le type NPN.",
+      "difficulte": 1,
+      "tags": [
+        "transistor",
+        "electrodes"
+      ]
+    },
+    {
+      "id": "PC2C-P11-014",
+      "lecon": "Le transistor et la commande du courant de collecteur",
+      "type": "definition",
+      "recto": "Sur le symbole d'un transistor NPN, que représente la flèche portée par l'émetteur ?",
+      "verso": "Elle donne le sens du courant dans l'émetteur : pour un NPN, elle est sortante.",
+      "difficulte": 2,
+      "tags": [
+        "symbole",
+        "npn"
+      ]
+    },
+    {
+      "id": "PC2C-P11-015",
+      "lecon": "Le transistor et la commande du courant de collecteur",
+      "type": "formule",
+      "recto": "Pour un transistor NPN, quelle relation la loi des noeuds donne-t-elle entre $I_E$, $I_B$ et $I_C$ ?",
+      "verso": "$I_E = I_B + I_C$ : les courants entrent par la base et par le collecteur et ressortent par l'émetteur. Comme $I_B$ est très petit devant $I_C$, $I_E \\approx I_C$.",
+      "difficulte": 1,
+      "tags": [
+        "loi-des-noeuds"
+      ]
+    },
+    {
+      "id": "PC2C-P11-016",
+      "lecon": "Le transistor et la commande du courant de collecteur",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on la tension de seuil base-émetteur d'un transistor ?",
+      "verso": "La tension $U_{BE} \\approx 0{,}6~\\mathrm{V}$ que doit atteindre la jonction base-émetteur, qui se comporte comme une diode, pour que le transistor conduise ; en dessous, $I_B = 0$ et $I_C = 0$.",
+      "difficulte": 2,
+      "tags": [
+        "tension-de-seuil"
+      ]
+    },
+    {
+      "id": "PC2C-P11-017",
+      "lecon": "Le transistor et la commande du courant de collecteur",
+      "type": "formule",
+      "recto": "Hors saturation, quelle relation lie le courant de collecteur $I_C$ au courant de base $I_B$ d'un transistor ?",
+      "verso": "$I_C = \\beta \\times I_B$ : le courant de collecteur est proportionnel au courant de base. Cette relation n'est valable que tant que le transistor n'est pas saturé.",
+      "difficulte": 2,
+      "tags": [
+        "gain",
+        "regime-lineaire"
+      ]
+    },
+    {
+      "id": "PC2C-P11-018",
+      "lecon": "Le transistor et la commande du courant de collecteur",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on le gain en courant $\\beta$ d'un transistor ?",
+      "verso": "Le coefficient de proportionnalité de $I_C = \\beta\\,I_B$, parfois noté $h_{21E}$ : c'est un rapport de deux intensités, donc un nombre sans unité, compris en pratique entre 50 et 300 selon le modèle.",
+      "difficulte": 2,
+      "tags": [
+        "gain"
+      ]
+    },
+    {
+      "id": "PC2C-P11-019",
+      "lecon": "Le transistor et la commande du courant de collecteur",
+      "type": "definition",
+      "recto": "Quelle erreur commet un élève qui écrit $\\beta = 100~\\mathrm{mA}/\\mu\\mathrm{A}$ ?",
+      "verso": "Il donne une unité au gain : $\\beta$ est le rapport de deux intensités exprimées dans la même unité, donc un nombre sans unité ($\\beta = 100$).",
+      "difficulte": 3,
+      "tags": [
+        "gain",
+        "unite",
+        "piege"
+      ]
+    },
+    {
+      "id": "PC2C-P11-020",
+      "lecon": "Le transistor et la commande du courant de collecteur",
+      "type": "formule",
+      "recto": "La base d'un transistor est alimentée sous une tension $U$ à travers un conducteur ohmique $R_B$ : quelle relation donne le courant de base $I_B$ ?",
+      "verso": "$I_B = \\dfrac{U - U_{BE}}{R_B}$, avec $U_{BE} \\approx 0{,}6~\\mathrm{V}$ (loi des mailles du circuit de base) ; on n'oublie jamais ces $0{,}6~\\mathrm{V}$.",
+      "difficulte": 2,
+      "tags": [
+        "courant-de-base",
+        "loi-des-mailles"
+      ]
+    },
+    {
+      "id": "PC2C-P11-021",
+      "lecon": "Le transistor et la commande du courant de collecteur",
+      "type": "formule",
+      "recto": "Pour un transistor dont le collecteur est relié par $R_C$ à une alimentation $E$, l'émetteur au pôle négatif, quelle relation donne la loi des mailles du circuit de collecteur ?",
+      "verso": "$E = R_C\\,I_C + U_{CE}$.",
+      "difficulte": 2,
+      "tags": [
+        "loi-des-mailles",
+        "collecteur"
+      ]
+    },
+    {
+      "id": "PC2C-P11-022",
+      "lecon": "Le transistor et la commande du courant de collecteur",
+      "type": "formule",
+      "recto": "Quelle relation d'additivité lie les tensions $U_{CE}$, $U_{CB}$ et $U_{BE}$ d'un transistor ?",
+      "verso": "$U_{CE} = U_{CB} + U_{BE}$, d'où $U_{CB} = U_{CE} - U_{BE}$ ; de plus $U_{BC} = -U_{CB}$.",
+      "difficulte": 2,
+      "tags": [
+        "additivite-des-tensions"
+      ]
+    },
+    {
+      "id": "PC2C-P11-023",
+      "lecon": "Le transistor et la commande du courant de collecteur",
+      "type": "definition",
+      "recto": "Pourquoi dit-on que le transistor n'est pas une source d'énergie ?",
+      "verso": "Le courant de collecteur vient de l'alimentation, à travers $R_C$, et non de la base : le circuit de base ne fait que fixer sa valeur. Le transistor amplifie une commande, pas une énergie.",
+      "difficulte": 2,
+      "tags": [
+        "energie",
+        "alimentation"
+      ]
+    },
+    {
+      "id": "PC2C-P11-024",
+      "lecon": "Le transistor en commutation et ses applications",
+      "type": "definition",
+      "recto": "Quels sont les deux régimes de fonctionnement d'un transistor ?",
+      "verso": "Le régime linéaire, où $I_C = \\beta\\,I_B$ et le transistor amplifie ; le régime de commutation, où il ne prend que deux états, bloqué ou saturé, et se comporte comme un interrupteur commandé.",
+      "difficulte": 1,
+      "tags": [
+        "regimes",
+        "commutation",
+        "amplification"
+      ]
+    },
+    {
+      "id": "PC2C-P11-025",
+      "lecon": "Le transistor en commutation et ses applications",
+      "type": "definition",
+      "recto": "Dans quel état se trouve un transistor NPN dont la tension $U_{BE}$ reste inférieure à $0{,}6~\\mathrm{V}$ ?",
+      "verso": "Il est bloqué : $I_B = 0$, donc $I_C = 0$ et $U_{CE} = E$ ; il se comporte comme un interrupteur ouvert. C'est aussi le cas si la base est reliée à l'émetteur ou laissée en l'air.",
+      "difficulte": 2,
+      "tags": [
+        "bloque",
+        "commutation"
+      ]
+    },
+    {
+      "id": "PC2C-P11-026",
+      "lecon": "Le transistor en commutation et ses applications",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on un transistor saturé ?",
+      "verso": "Un transistor dont le courant de base est suffisant pour que $U_{CE}$ tombe à $U_{CE\\,\\mathrm{sat}} \\approx 0{,}2~\\mathrm{V}$ : il se comporte comme un interrupteur fermé et l'utilisation fonctionne à plein.",
+      "difficulte": 2,
+      "tags": [
+        "sature",
+        "commutation"
+      ]
+    },
+    {
+      "id": "PC2C-P11-027",
+      "lecon": "Le transistor en commutation et ses applications",
+      "type": "formule",
+      "recto": "Pour un transistor alimenté sous $E$ avec une charge $R_C$ dans le collecteur, quelle relation donne l'intensité de saturation $I_{C\\,\\mathrm{sat}}$ ?",
+      "verso": "$I_{C\\,\\mathrm{sat}} = \\dfrac{E - U_{CE\\,\\mathrm{sat}}}{R_C} \\approx \\dfrac{E}{R_C}$ : la plus grande intensité que le circuit de collecteur peut laisser passer, fixée par l'alimentation et la charge, jamais par le transistor.",
+      "difficulte": 2,
+      "tags": [
+        "intensite-de-saturation"
+      ]
+    },
+    {
+      "id": "PC2C-P11-028",
+      "lecon": "Le transistor en commutation et ses applications",
+      "type": "formule",
+      "recto": "Quelle condition sur le courant de base $I_B$ assure la saturation d'un transistor de gain $\\beta$ ?",
+      "verso": "$I_B \\geq \\dfrac{I_{C\\,\\mathrm{sat}}}{\\beta}$ ; en pratique on prend un courant de base deux à trois fois supérieur à ce minimum, pour rester saturé même si le gain est plus faible que prévu.",
+      "difficulte": 2,
+      "tags": [
+        "condition-de-saturation"
+      ]
+    },
+    {
+      "id": "PC2C-P11-029",
+      "lecon": "Le transistor en commutation et ses applications",
+      "type": "definition",
+      "recto": "Pourquoi ne doit-on pas calculer $I_C$ par $I_C = \\beta\\,I_B$ quand le transistor est saturé ?",
+      "verso": "En saturation, $I_C = I_{C\\,\\mathrm{sat}} \\approx \\dfrac{E}{R_C}$ est imposée par le circuit de collecteur et elle est inférieure à $\\beta\\,I_B$ ; la relation $I_C = \\beta\\,I_B$ ne sert plus qu'à vérifier la condition de saturation.",
+      "difficulte": 3,
+      "tags": [
+        "saturation",
+        "piege"
+      ]
+    },
+    {
+      "id": "PC2C-P11-030",
+      "lecon": "Le transistor en commutation et ses applications",
+      "type": "definition",
+      "recto": "Pourquoi ne faut-il jamais relier la base d'un transistor directement au pôle positif de la pile ?",
+      "verso": "Sans résistance de base, le courant de base devient trop intense et détruit la jonction base-émetteur.",
+      "difficulte": 2,
+      "tags": [
+        "resistance-de-base",
+        "securite"
+      ]
+    },
+    {
+      "id": "PC2C-P11-031",
+      "lecon": "Le transistor en commutation et ses applications",
+      "type": "definition",
+      "recto": "Dans un montage d'allumage automatique à transistor, entre quels points place-t-on la photorésistance du diviseur de base ?",
+      "verso": "Entre la base et l'émetteur, le conducteur ohmique fixe allant au pôle positif : la tension de base est celle de ce dipôle. Le jour, sa résistance est faible, la base reste sous $0{,}6~\\mathrm{V}$ et le transistor est bloqué ; la nuit, elle devient énorme, le transistor sature et la lampe s'allume.",
+      "difficulte": 3,
+      "tags": [
+        "allumage-automatique",
+        "photoresistance"
+      ]
+    },
+    {
+      "id": "PC2C-P11-032",
+      "lecon": "Le transistor en commutation et ses applications",
+      "type": "definition",
+      "recto": "Dans un détecteur d'incendie à thermistance CTN, comment le transistor déclenche-t-il la sonnerie ?",
+      "verso": "La CTN est placée côté pôle positif, le conducteur ohmique côté émetteur. Quand la température monte, la résistance de la CTN chute, la tension de base grimpe, le transistor sature et la sonnerie retentit.",
+      "difficulte": 2,
+      "tags": [
+        "detecteur-d-incendie",
+        "ctn"
+      ]
+    },
+    {
+      "id": "PC2C-P11-033",
+      "lecon": "Le transistor en commutation et ses applications",
+      "type": "definition",
+      "recto": "Quelles applications du transistor utilisent le régime linéaire plutôt que la commutation ?",
+      "verso": "L'amplification : avec un courant de base réglé au milieu de la plage, une petite variation de la tension de base produit une grande variation de $I_C$, par exemple pour amplifier le signal d'un microphone vers un haut-parleur ou celui de l'antenne d'un poste de radio.",
+      "difficulte": 2,
+      "tags": [
+        "amplification",
+        "regime-lineaire"
+      ]
+    }
+  ]
+}

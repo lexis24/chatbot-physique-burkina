@@ -1,0 +1,443 @@
+{
+  "matiere": "Physique-Chimie",
+  "partie": "Physique",
+  "niveau": "Terminale D",
+  "chapitre": "Physique, Chapitre 11 : Le condensateur",
+  "source": "pc/tled/Chapitre_11_Le_condensateur",
+  "nombre_cartes": 36,
+  "cartes": [
+    {
+      "id": "PCTD-P11-001",
+      "lecon": "Le condensateur, sa charge et sa capacité",
+      "type": "definition",
+      "recto": "En électricité, qu'appelle-t-on un condensateur ?",
+      "verso": "Un dipôle formé de deux plaques conductrices, appelées armatures, séparées par un isolant appelé diélectrique. Son symbole est formé de deux traits parallèles de même longueur, non reliés.",
+      "difficulte": 1,
+      "tags": [
+        "condensateur",
+        "definition"
+      ]
+    },
+    {
+      "id": "PCTD-P11-002",
+      "lecon": "Le condensateur, sa charge et sa capacité",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on la charge $q$ d'un condensateur ?",
+      "verso": "C'est la charge de l'armature par laquelle le courant entre ; l'autre armature porte $-q$, si bien que la charge totale du condensateur est nulle. Elle s'exprime en coulombs ($\\mathrm{C}$).",
+      "difficulte": 2,
+      "tags": [
+        "charge",
+        "armature"
+      ]
+    },
+    {
+      "id": "PCTD-P11-003",
+      "lecon": "Le condensateur, sa charge et sa capacité",
+      "type": "formule",
+      "recto": "Quelle relation lie la charge $q$ d'une armature d'un condensateur, sa capacité $C$ et la tension $u$ entre ses armatures ?",
+      "verso": "$q = C\\,u$, avec $q$ en coulombs, $C$ en farads et $u$ en volts : la charge est proportionnelle à la tension.",
+      "difficulte": 1,
+      "tags": [
+        "capacite",
+        "q-cu"
+      ]
+    },
+    {
+      "id": "PCTD-P11-004",
+      "lecon": "Le condensateur, sa charge et sa capacité",
+      "type": "definition",
+      "recto": "En coulombs et en volts, à quoi équivaut le farad, unité de capacité d'un condensateur ?",
+      "verso": "Le farad ($\\mathrm{F}$), avec $1~\\mathrm{F} = 1~\\mathrm{C/V}$. C'est une unité énorme : on utilise le $\\mu\\mathrm{F}$ ($10^{-6}~\\mathrm{F}$), le $\\mathrm{nF}$ ($10^{-9}~\\mathrm{F}$) et le $\\mathrm{pF}$ ($10^{-12}~\\mathrm{F}$).",
+      "difficulte": 1,
+      "tags": [
+        "farad",
+        "unite"
+      ]
+    },
+    {
+      "id": "PCTD-P11-005",
+      "lecon": "Le condensateur, sa charge et sa capacité",
+      "type": "formule",
+      "recto": "En convention récepteur, quelle relation lie l'intensité $i$ et la charge $q$ d'un condensateur ?",
+      "verso": "$i = \\dfrac{\\mathrm{d}q}{\\mathrm{d}t}$, le courant $i$ étant orienté vers l'armature dont on compte la charge $q$.",
+      "difficulte": 2,
+      "tags": [
+        "intensite",
+        "charge",
+        "convention-recepteur"
+      ]
+    },
+    {
+      "id": "PCTD-P11-006",
+      "lecon": "Le condensateur, sa charge et sa capacité",
+      "type": "formule",
+      "recto": "En convention récepteur, quelle relation lie l'intensité $i$ et la tension $u$ aux bornes d'un condensateur de capacité $C$ ?",
+      "verso": "$i = C\\,\\dfrac{\\mathrm{d}u}{\\mathrm{d}t}$, obtenue en reportant $q = C\\,u$ dans $i = \\dfrac{\\mathrm{d}q}{\\mathrm{d}t}$, $C$ étant constante. Si $u$ est constante, $i = 0$.",
+      "difficulte": 2,
+      "tags": [
+        "intensite",
+        "tension",
+        "convention-recepteur"
+      ]
+    },
+    {
+      "id": "PCTD-P11-007",
+      "lecon": "Le condensateur, sa charge et sa capacité",
+      "type": "definition",
+      "recto": "Pourquoi la tension aux bornes d'un condensateur ne peut-elle jamais présenter de saut ?",
+      "verso": "Un saut en un temps nul donnerait une dérivée $\\dfrac{\\mathrm{d}u}{\\mathrm{d}t}$ infinie, donc, d'après $i = C\\,\\dfrac{\\mathrm{d}u}{\\mathrm{d}t}$, une intensité infinie, ce qu'aucun circuit réel ne permet : la tension est toujours continue.",
+      "difficulte": 2,
+      "tags": [
+        "continuite",
+        "tension"
+      ]
+    },
+    {
+      "id": "PCTD-P11-008",
+      "lecon": "Le condensateur, sa charge et sa capacité",
+      "type": "definition",
+      "recto": "Pourquoi est-il faux de dire que le courant traverse un condensateur ?",
+      "verso": "Entre les armatures se trouve un isolant qu'aucune charge ne franchit. Le courant circule dans les fils : il apporte des charges sur une armature et en retire autant de l'autre.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "courant"
+      ]
+    },
+    {
+      "id": "PCTD-P11-009",
+      "lecon": "Le condensateur, sa charge et sa capacité",
+      "type": "definition",
+      "recto": "Pourquoi la capacité d'un condensateur n'augmente-t-elle pas quand on augmente la tension appliquée ?",
+      "verso": "La capacité est une caractéristique de l'objet, qui ne dépend ni de la tension ni de la charge : la relation $q = C\\,u$ signifie que c'est la charge qui augmente avec la tension.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "capacite"
+      ]
+    },
+    {
+      "id": "PCTD-P11-010",
+      "lecon": "Le condensateur plan et l'énergie qu'il emmagasine",
+      "type": "formule",
+      "recto": "Quelle est l'expression de la capacité d'un condensateur plan d'armatures de surface $S$ en vis-à-vis séparées d'une épaisseur $d$ de diélectrique ?",
+      "verso": "$C = \\varepsilon_0\\,\\varepsilon_r\\,\\dfrac{S}{d}$, avec $C$ en farads, $S$ en $\\mathrm{m^2}$, $d$ en mètres, $\\varepsilon_0$ la permittivité du vide et $\\varepsilon_r$ la permittivité relative du diélectrique.",
+      "difficulte": 1,
+      "tags": [
+        "condensateur-plan",
+        "capacite"
+      ]
+    },
+    {
+      "id": "PCTD-P11-011",
+      "lecon": "Le condensateur plan et l'énergie qu'il emmagasine",
+      "type": "definition",
+      "recto": "Quelle est la valeur de la permittivité du vide $\\varepsilon_0$ ?",
+      "verso": "$\\varepsilon_0 = 8{,}85 \\times 10^{-12}~\\mathrm{F/m}$, que l'on retient aussi sous la forme $\\varepsilon_0 = \\dfrac{1}{36\\pi \\times 10^{9}}~\\mathrm{F/m}$.",
+      "difficulte": 1,
+      "tags": [
+        "permittivite",
+        "constante"
+      ]
+    },
+    {
+      "id": "PCTD-P11-012",
+      "lecon": "Le condensateur plan et l'énergie qu'il emmagasine",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on la permittivité relative $\\varepsilon_r$ d'un diélectrique ?",
+      "verso": "Un nombre sans unité, toujours supérieur ou égal à 1, par lequel le diélectrique multiplie la capacité ; $\\varepsilon_r = 1$ pour l'air et le vide.",
+      "difficulte": 2,
+      "tags": [
+        "permittivite-relative",
+        "dielectrique"
+      ]
+    },
+    {
+      "id": "PCTD-P11-013",
+      "lecon": "Le condensateur plan et l'énergie qu'il emmagasine",
+      "type": "formule",
+      "recto": "Entre les armatures d'un condensateur plan soumis à la tension $u$ et d'écartement $d$, quelles sont les caractéristiques du champ électrique ?",
+      "verso": "Le champ est uniforme, dirigé de l'armature positive vers l'armature négative, d'intensité $E = \\dfrac{u}{d}$ ($E$ en $\\mathrm{V/m}$, $u$ en V, $d$ en m).",
+      "difficulte": 2,
+      "tags": [
+        "champ-electrique",
+        "condensateur-plan"
+      ]
+    },
+    {
+      "id": "PCTD-P11-014",
+      "lecon": "Le condensateur plan et l'énergie qu'il emmagasine",
+      "type": "formule",
+      "recto": "Quelles sont les trois expressions de l'énergie emmagasinée par un condensateur de capacité $C$ portant la charge $q$ sous la tension $u$ ?",
+      "verso": "$W = \\dfrac{1}{2}\\,C\\,u^{2} = \\dfrac{1}{2}\\,q\\,u = \\dfrac{q^{2}}{2\\,C}$, avec $W$ en joules, $C$ en farads, $u$ en volts et $q$ en coulombs.",
+      "difficulte": 1,
+      "tags": [
+        "energie",
+        "condensateur"
+      ]
+    },
+    {
+      "id": "PCTD-P11-015",
+      "lecon": "Le condensateur plan et l'énergie qu'il emmagasine",
+      "type": "definition",
+      "recto": "Sous quelle forme et où est stockée l'énergie d'un condensateur chargé ?",
+      "verso": "Sous forme d'énergie électrostatique, dans le champ électrique qui règne entre les armatures ; elle est intégralement restituée lors de la décharge.",
+      "difficulte": 2,
+      "tags": [
+        "energie",
+        "champ-electrique"
+      ]
+    },
+    {
+      "id": "PCTD-P11-016",
+      "lecon": "Le condensateur plan et l'énergie qu'il emmagasine",
+      "type": "definition",
+      "recto": "Quel est le rôle de la tension de service indiquée sur un condensateur ?",
+      "verso": "C'est la tension à ne jamais dépasser : au-delà d'un champ propre au matériau, le diélectrique claque, une étincelle le perce et le condensateur est détruit.",
+      "difficulte": 2,
+      "tags": [
+        "tension-de-service",
+        "claquage"
+      ]
+    },
+    {
+      "id": "PCTD-P11-017",
+      "lecon": "Le condensateur plan et l'énergie qu'il emmagasine",
+      "type": "formule",
+      "recto": "Quand la tension d'un condensateur passe de $u_1$ à $u_2$, comment calcule-t-on la variation de son énergie ?",
+      "verso": "$\\Delta W = \\dfrac{1}{2}C\\,u_2^{2} - \\dfrac{1}{2}C\\,u_1^{2}$ : on calcule les deux énergies séparément et l'on fait la différence, jamais $\\dfrac{1}{2}C(u_2 - u_1)^2$.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "energie"
+      ]
+    },
+    {
+      "id": "PCTD-P11-018",
+      "lecon": "La charge et la décharge d'un condensateur à travers une résistance",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on un échelon de tension appliqué à un dipôle RC ?",
+      "verso": "Le passage brusque, à l'instant $t = 0$, d'une tension nulle à une tension constante $E$ aux bornes de l'association série $R$ et $C$, comme à la fermeture d'un interrupteur.",
+      "difficulte": 1,
+      "tags": [
+        "echelon",
+        "dipole-rc"
+      ]
+    },
+    {
+      "id": "PCTD-P11-019",
+      "lecon": "La charge et la décharge d'un condensateur à travers une résistance",
+      "type": "formule",
+      "recto": "Quelle équation différentielle vérifie la tension $u_C$ d'un dipôle RC soumis à un échelon de tension $E$ ?",
+      "verso": "$RC\\,\\dfrac{\\mathrm{d}u_C}{\\mathrm{d}t} + u_C = E$, soit $\\dfrac{\\mathrm{d}u_C}{\\mathrm{d}t} + \\dfrac{u_C}{RC} = \\dfrac{E}{RC}$.",
+      "difficulte": 2,
+      "tags": [
+        "equation-differentielle",
+        "charge"
+      ]
+    },
+    {
+      "id": "PCTD-P11-020",
+      "lecon": "La charge et la décharge d'un condensateur à travers une résistance",
+      "type": "formule",
+      "recto": "Pour la charge d'un condensateur initialement déchargé sous un échelon $E$ à travers $R$, quelles sont les expressions de $u_C(t)$ et de $i(t)$ ?",
+      "verso": "$u_C(t) = E\\left(1 - \\mathrm{e}^{-t/\\tau}\\right)$ et $i(t) = \\dfrac{E}{R}\\,\\mathrm{e}^{-t/\\tau}$, avec $\\tau = RC$.",
+      "difficulte": 2,
+      "tags": [
+        "charge",
+        "solution"
+      ]
+    },
+    {
+      "id": "PCTD-P11-021",
+      "lecon": "La charge et la décharge d'un condensateur à travers une résistance",
+      "type": "formule",
+      "recto": "Pour la décharge dans $R$ d'un condensateur initialement chargé sous $E$, quelles sont les expressions de $u_C(t)$ et de $i(t)$, avec l'orientation de la charge ?",
+      "verso": "$u_C(t) = E\\,\\mathrm{e}^{-t/\\tau}$ et $i(t) = -\\dfrac{E}{R}\\,\\mathrm{e}^{-t/\\tau}$, avec $\\tau = RC$ ; le signe moins traduit le changement de sens du courant.",
+      "difficulte": 2,
+      "tags": [
+        "decharge",
+        "solution"
+      ]
+    },
+    {
+      "id": "PCTD-P11-022",
+      "lecon": "La charge et la décharge d'un condensateur à travers une résistance",
+      "type": "formule",
+      "recto": "Quelle est l'expression de la constante de temps $\\tau$ d'un dipôle RC ?",
+      "verso": "$\\tau = R\\,C$, en secondes lorsque $R$ est en ohms et $C$ en farads ; elle mesure la rapidité de la charge et de la décharge.",
+      "difficulte": 1,
+      "tags": [
+        "constante-de-temps",
+        "unite"
+      ]
+    },
+    {
+      "id": "PCTD-P11-023",
+      "lecon": "La charge et la décharge d'un condensateur à travers une résistance",
+      "type": "formule",
+      "recto": "Lors de la charge d'un dipôle RC, quelle fraction de $E$ la tension $u_C$ atteint-elle à $t = \\tau$ ?",
+      "verso": "A $t = \\tau$, $u_C = E\\left(1 - \\mathrm{e}^{-1}\\right) = 0{,}63\\,E$ ; la charge est pratiquement terminée au bout de $5\\tau$ (95 % de $E$ à $3\\tau$).",
+      "difficulte": 2,
+      "tags": [
+        "constante-de-temps",
+        "63-pour-cent"
+      ]
+    },
+    {
+      "id": "PCTD-P11-024",
+      "lecon": "La charge et la décharge d'un condensateur à travers une résistance",
+      "type": "definition",
+      "recto": "Comment détermine-t-on graphiquement la constante de temps $\\tau$ sur la courbe de décharge $u_C(t)$ d'un dipôle RC ?",
+      "verso": "C'est l'abscisse du point où la tangente à l'origine coupe l'axe des temps, ou l'abscisse du point d'ordonnée $0{,}37\\,E$, car $E\\,\\mathrm{e}^{-1} = 0{,}37\\,E$.",
+      "difficulte": 2,
+      "tags": [
+        "lecture-graphique",
+        "decharge"
+      ]
+    },
+    {
+      "id": "PCTD-P11-025",
+      "lecon": "La charge et la décharge d'un condensateur à travers une résistance",
+      "type": "definition",
+      "recto": "Comment se comporte un condensateur à l'instant initial de sa charge, puis en régime permanent ?",
+      "verso": "A $t = 0$, il se comporte comme un fil : $u_C = 0$ et $i = \\dfrac{E}{R}$, maximale. En régime permanent, il se comporte comme un interrupteur ouvert : $i = 0$ et $u_C = E$.",
+      "difficulte": 2,
+      "tags": [
+        "comportement",
+        "regime-permanent"
+      ]
+    },
+    {
+      "id": "PCTD-P11-026",
+      "lecon": "La charge et la décharge d'un condensateur à travers une résistance",
+      "type": "formule",
+      "recto": "Lors de la charge d'un condensateur sous la tension $E$ à travers une résistance, comment se répartit l'énergie fournie par le générateur ?",
+      "verso": "Le générateur fournit $C\\,E^{2}$ ; le condensateur en garde $\\dfrac{1}{2}C\\,E^{2}$ et la résistance en dissipe $\\dfrac{1}{2}C\\,E^{2}$ par effet Joule : rendement de 50 %, quelle que soit $R$.",
+      "difficulte": 3,
+      "tags": [
+        "bilan-energetique",
+        "effet-joule"
+      ]
+    },
+    {
+      "id": "PCTD-P11-027",
+      "lecon": "La charge et la décharge d'un condensateur à travers une résistance",
+      "type": "definition",
+      "recto": "Quelle erreur commet-on en écrivant $\\tau = RC = 10 \\times 100 = 1\\,000~\\mathrm{s}$ pour $R = 10~\\mathrm{k\\Omega}$ et $C = 100~\\mu\\mathrm{F}$ ?",
+      "verso": "On oublie de convertir : $R = 10 \\times 10^{3}~\\Omega$ et $C = 100 \\times 10^{-6}~\\mathrm{F}$, d'où $\\tau = 1{,}0~\\mathrm{s}$. Le calcul de $\\tau$ se fait toujours en ohms et en farads.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "unites"
+      ]
+    },
+    {
+      "id": "PCTD-P11-028",
+      "lecon": "Le condensateur en régime sinusoïdal forcé",
+      "type": "definition",
+      "recto": "Quand dit-on qu'un dipôle est en régime sinusoïdal forcé ?",
+      "verso": "Lorsqu'un générateur lui impose une tension sinusoïdale de fréquence $f$ : toutes les grandeurs du circuit sont alors sinusoïdales, de même fréquence.",
+      "difficulte": 1,
+      "tags": [
+        "regime-sinusoidal"
+      ]
+    },
+    {
+      "id": "PCTD-P11-029",
+      "lecon": "Le condensateur en régime sinusoïdal forcé",
+      "type": "formule",
+      "recto": "Quelle est l'expression de l'impédance $Z_C$ d'un condensateur de capacité $C$ en régime sinusoïdal forcé ?",
+      "verso": "$Z_C = \\dfrac{U_m}{I_m} = \\dfrac{U}{I} = \\dfrac{1}{C\\,\\omega} = \\dfrac{1}{2\\pi f\\,C}$, en ohms, avec $C$ en farads, $\\omega$ en rad/s et $f$ en hertz.",
+      "difficulte": 1,
+      "tags": [
+        "impedance",
+        "condensateur"
+      ]
+    },
+    {
+      "id": "PCTD-P11-030",
+      "lecon": "Le condensateur en régime sinusoïdal forcé",
+      "type": "definition",
+      "recto": "Comment varie l'impédance d'un condensateur quand la fréquence augmente ?",
+      "verso": "Elle diminue, puisque $Z_C = \\dfrac{1}{2\\pi f\\,C}$ ; elle devient infinie en courant continu.",
+      "difficulte": 2,
+      "tags": [
+        "impedance",
+        "frequence"
+      ]
+    },
+    {
+      "id": "PCTD-P11-031",
+      "lecon": "Le condensateur en régime sinusoïdal forcé",
+      "type": "formule",
+      "recto": "En régime sinusoïdal forcé, quel est le déphasage $\\varphi = \\varphi_u - \\varphi_i$ de la tension par rapport à l'intensité pour un condensateur ?",
+      "verso": "$\\varphi = -\\dfrac{\\pi}{2}$ : la tension est en retard de $\\dfrac{\\pi}{2}$ sur l'intensité, l'intensité est en avance de $\\dfrac{\\pi}{2}$, quelles que soient la fréquence, la capacité et l'amplitude.",
+      "difficulte": 2,
+      "tags": [
+        "dephasage",
+        "quadrature"
+      ]
+    },
+    {
+      "id": "PCTD-P11-032",
+      "lecon": "Le condensateur en régime sinusoïdal forcé",
+      "type": "definition",
+      "recto": "Aux bornes d'un condensateur en régime sinusoïdal, pourquoi est-il faux de dire que la tension est en avance sur l'intensité ?",
+      "verso": "C'est l'inverse : l'intensité est en avance de $\\dfrac{\\pi}{2}$ sur la tension, car il faut d'abord que le courant amène les charges pour que la tension puisse monter.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "dephasage"
+      ]
+    },
+    {
+      "id": "PCTD-P11-033",
+      "lecon": "Le condensateur en régime sinusoïdal forcé",
+      "type": "formule",
+      "recto": "Sur un oscillogramme, comment calcule-t-on la valeur absolue du déphasage $\\varphi$ à partir du décalage $\\Delta t$ entre deux courbes de période $T$ ?",
+      "verso": "$|\\varphi| = 2\\pi\\,\\dfrac{\\Delta t}{T}$ ; pour un condensateur, $\\Delta t = \\dfrac{T}{4}$, donc $|\\varphi| = \\dfrac{\\pi}{2}$. La courbe décalée vers la gauche est en avance.",
+      "difficulte": 2,
+      "tags": [
+        "oscilloscope",
+        "dephasage"
+      ]
+    },
+    {
+      "id": "PCTD-P11-034",
+      "lecon": "Le condensateur en régime sinusoïdal forcé",
+      "type": "definition",
+      "recto": "Pour visualiser l'intensité dans un circuit à l'oscilloscope, quel rôle joue un conducteur ohmique de faible résistance $r$ placé en série ?",
+      "verso": "La tension $u_r = r\\,i$ est à tout instant proportionnelle à l'intensité, de même forme et de même phase : c'est l'image de l'intensité, car l'oscilloscope n'affiche que des tensions.",
+      "difficulte": 2,
+      "tags": [
+        "oscilloscope",
+        "image-intensite"
+      ]
+    },
+    {
+      "id": "PCTD-P11-035",
+      "lecon": "Le condensateur en régime sinusoïdal forcé",
+      "type": "definition",
+      "recto": "Pourquoi un condensateur parfait ne consomme-t-il aucune énergie en moyenne en régime sinusoïdal ?",
+      "verso": "Pendant un quart de période il emmagasine de l'énergie, pendant le quart suivant il la restitue intégralement au circuit : le bilan sur une période est nul, et il ne chauffe pas.",
+      "difficulte": 2,
+      "tags": [
+        "energie",
+        "regime-sinusoidal"
+      ]
+    },
+    {
+      "id": "PCTD-P11-036",
+      "lecon": "Le condensateur en régime sinusoïdal forcé",
+      "type": "definition",
+      "recto": "Dans la construction de Fresnel d'un condensateur, l'intensité étant prise pour référence horizontale, comment est dessiné le vecteur associé à la tension ?",
+      "verso": "Il a pour longueur $U_m = Z_C\\,I_m = \\dfrac{I_m}{C\\omega}$ et il est tourné de $\\dfrac{\\pi}{2}$ dans le sens des aiguilles d'une montre, donc dirigé vers le bas.",
+      "difficulte": 3,
+      "tags": [
+        "fresnel",
+        "dephasage"
+      ]
+    }
+  ]
+}

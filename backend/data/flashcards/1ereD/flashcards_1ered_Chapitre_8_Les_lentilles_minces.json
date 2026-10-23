@@ -1,0 +1,454 @@
+{
+  "matiere": "Physique-Chimie",
+  "partie": "Physique",
+  "niveau": "1ère D",
+  "chapitre": "Physique, Chapitre 8 : Les lentilles minces",
+  "source": "pc/1ered/Chapitre_8_Les_lentilles_minces",
+  "nombre_cartes": 38,
+  "cartes": [
+    {
+      "id": "PC1D-P08-001",
+      "lecon": "Les lentilles minces, foyers, plans focaux et vergence",
+      "type": "definition",
+      "recto": "En optique, quand dit-on qu'une lentille est mince ?",
+      "verso": "Lorsque son épaisseur au centre est négligeable devant les rayons de courbure de ses faces et devant leur diamètre. On la représente alors par un simple segment vertical.",
+      "difficulte": 1,
+      "tags": [
+        "lentille-mince"
+      ]
+    },
+    {
+      "id": "PC1D-P08-002",
+      "lecon": "Les lentilles minces, foyers, plans focaux et vergence",
+      "type": "definition",
+      "recto": "Comment reconnaît-on, à la forme de ses bords, une lentille convergente d'une lentille divergente ?",
+      "verso": "Une lentille à bords minces (biconvexe, plan-convexe, ménisque convergent) est convergente ; une lentille à bords épais (biconcave, plan-concave, ménisque divergent) est divergente.",
+      "difficulte": 1,
+      "tags": [
+        "convergente",
+        "divergente"
+      ]
+    },
+    {
+      "id": "PC1D-P08-003",
+      "lecon": "Les lentilles minces, foyers, plans focaux et vergence",
+      "type": "definition",
+      "recto": "Pour une lentille mince, qu'appelle-t-on le centre optique $O$ ?",
+      "verso": "C'est le point de la lentille situé sur son axe de symétrie : tout rayon qui passe par $O$ traverse la lentille sans être dévié. Il sert d'origine aux mesures algébriques.",
+      "difficulte": 1,
+      "tags": [
+        "centre-optique"
+      ]
+    },
+    {
+      "id": "PC1D-P08-004",
+      "lecon": "Les lentilles minces, foyers, plans focaux et vergence",
+      "type": "definition",
+      "recto": "Pour une lentille mince, qu'appelle-t-on un axe optique secondaire ?",
+      "verso": "Toute droite passant par le centre optique $O$ autre que l'axe optique principal (droite passant par $O$ et perpendiculaire au plan de la lentille).",
+      "difficulte": 2,
+      "tags": [
+        "axe-secondaire"
+      ]
+    },
+    {
+      "id": "PC1D-P08-005",
+      "lecon": "Les lentilles minces, foyers, plans focaux et vergence",
+      "type": "definition",
+      "recto": "Pour une lentille mince, qu'appelle-t-on le foyer principal image $F'$ ?",
+      "verso": "Le point de l'axe principal où convergent, à la sortie, les rayons arrivés parallèlement à cet axe (pour une lentille divergente, le point d'où ils semblent provenir).",
+      "difficulte": 1,
+      "tags": [
+        "foyer-image"
+      ]
+    },
+    {
+      "id": "PC1D-P08-006",
+      "lecon": "Les lentilles minces, foyers, plans focaux et vergence",
+      "type": "formule",
+      "recto": "Quelle relation lie les positions du foyer objet $F$ et du foyer image $F'$ d'une lentille mince ?",
+      "verso": "$F$ et $F'$ sont symétriques par rapport au centre optique : $\\overline{OF} = -\\overline{OF'}$, pour une lentille convergente comme pour une lentille divergente.",
+      "difficulte": 2,
+      "tags": [
+        "foyers",
+        "symetrie"
+      ]
+    },
+    {
+      "id": "PC1D-P08-007",
+      "lecon": "Les lentilles minces, foyers, plans focaux et vergence",
+      "type": "definition",
+      "recto": "Pour une lentille mince, qu'appelle-t-on un foyer secondaire image ?",
+      "verso": "Tout point du plan focal image (plan perpendiculaire à l'axe principal passant par $F'$) autre que $F'$. Un faisceau incident parallèle à un axe secondaire émerge en passant par le foyer secondaire image situé sur cet axe.",
+      "difficulte": 2,
+      "tags": [
+        "plan-focal",
+        "foyer-secondaire"
+      ]
+    },
+    {
+      "id": "PC1D-P08-008",
+      "lecon": "Les lentilles minces, foyers, plans focaux et vergence",
+      "type": "formule",
+      "recto": "Quelle relation définit la vergence $C$ d'une lentille mince, avec ses unités ?",
+      "verso": "$C = \\dfrac{1}{\\overline{OF'}}$, avec $\\overline{OF'}$ en mètres et $C$ en dioptries ($\\delta$), $1~\\delta = 1~\\mathrm{m^{-1}}$. $C \\gt 0$ pour une lentille convergente, $C \\lt 0$ pour une divergente.",
+      "difficulte": 1,
+      "tags": [
+        "vergence",
+        "dioptrie"
+      ]
+    },
+    {
+      "id": "PC1D-P08-009",
+      "lecon": "Les lentilles minces, foyers, plans focaux et vergence",
+      "type": "definition",
+      "recto": "Quelles sont les deux conditions de l'approximation de Gauss ?",
+      "verso": "Les rayons sont peu inclinés sur l'axe optique principal, et ils rencontrent la lentille au voisinage du centre optique. Le système est alors stigmatique : l'image d'un point est un point.",
+      "difficulte": 2,
+      "tags": [
+        "conditions-de-gauss",
+        "stigmatisme"
+      ]
+    },
+    {
+      "id": "PC1D-P08-010",
+      "lecon": "Les lentilles minces, foyers, plans focaux et vergence",
+      "type": "definition",
+      "recto": "Pourquoi dit-on que les foyers d'une lentille divergente sont virtuels ?",
+      "verso": "Aucune lumière n'y passe réellement : ce sont les prolongements des rayons qui s'y coupent. $F'$ est situé avant la lentille ($\\overline{OF'} \\lt 0$) et $F$ après ; une lentille divergente a donc bien deux foyers.",
+      "difficulte": 3,
+      "tags": [
+        "foyers-virtuels",
+        "piege"
+      ]
+    },
+    {
+      "id": "PC1D-P08-011",
+      "lecon": "Marche des rayons et construction des images",
+      "type": "formule",
+      "recto": "Comment émergent les trois rayons particuliers d'une lentille mince ?",
+      "verso": "Un rayon parallèle à l'axe principal émerge en passant par $F'$ (ou en semblant en venir) ; un rayon passant par $F$ (ou dirigé vers $F$) émerge parallèle à l'axe ; un rayon passant par $O$ n'est pas dévié.",
+      "difficulte": 1,
+      "tags": [
+        "rayons-particuliers"
+      ]
+    },
+    {
+      "id": "PC1D-P08-012",
+      "lecon": "Marche des rayons et construction des images",
+      "type": "formule",
+      "recto": "Pour une lentille mince, comment construit-on le rayon émergent d'un rayon incident quelconque ?",
+      "verso": "On trace l'axe secondaire parallèle au rayon incident ; il coupe le plan focal image en $F'_s$, et le rayon émergent passe par ce foyer secondaire image $F'_s$.",
+      "difficulte": 2,
+      "tags": [
+        "rayon-quelconque",
+        "foyer-secondaire"
+      ]
+    },
+    {
+      "id": "PC1D-P08-013",
+      "lecon": "Marche des rayons et construction des images",
+      "type": "definition",
+      "recto": "Pour une lentille mince, qu'appelle-t-on un objet virtuel ?",
+      "verso": "Un objet situé après la lentille ($\\overline{OA} \\gt 0$) : il correspond à un faisceau convergent intercepté par la lentille avant sa convergence.",
+      "difficulte": 2,
+      "tags": [
+        "objet-virtuel"
+      ]
+    },
+    {
+      "id": "PC1D-P08-014",
+      "lecon": "Marche des rayons et construction des images",
+      "type": "definition",
+      "recto": "Pour une lentille mince, qu'est-ce qui distingue une image réelle d'une image virtuelle ?",
+      "verso": "Une image réelle est après la lentille ($\\overline{OA'} \\gt 0$), les rayons émergents s'y coupent et un écran la recueille. Une image virtuelle est avant la lentille ($\\overline{OA'} \\lt 0$) : seuls les prolongements s'y coupent, aucun écran ne la recueille.",
+      "difficulte": 2,
+      "tags": [
+        "image-reelle",
+        "image-virtuelle"
+      ]
+    },
+    {
+      "id": "PC1D-P08-015",
+      "lecon": "Marche des rayons et construction des images",
+      "type": "formule",
+      "recto": "Dans les conditions de Gauss, quelle propriété permet de construire l'image d'un objet $AB$ perpendiculaire à l'axe, $A$ étant sur l'axe, en ne construisant que $B'$ ?",
+      "verso": "L'image $A'B'$ est elle aussi perpendiculaire à l'axe, avec $A'$ sur l'axe : on construit $B'$, puis on abaisse la perpendiculaire à l'axe pour obtenir $A'$.",
+      "difficulte": 2,
+      "tags": [
+        "objet-etendu",
+        "construction"
+      ]
+    },
+    {
+      "id": "PC1D-P08-016",
+      "lecon": "Marche des rayons et construction des images",
+      "type": "formule",
+      "recto": "Pour une lentille convergente, quelle image donne un objet réel situé entre $F$ et $O$ ?",
+      "verso": "Une image virtuelle, droite et plus grande que l'objet, située avant la lentille : c'est le fonctionnement de la loupe.",
+      "difficulte": 2,
+      "tags": [
+        "loupe",
+        "positions-objet"
+      ]
+    },
+    {
+      "id": "PC1D-P08-017",
+      "lecon": "Marche des rayons et construction des images",
+      "type": "formule",
+      "recto": "Pour une lentille convergente, quelle image donne un objet réel situé entre $2F$ et $F$ ?",
+      "verso": "Une image réelle, renversée et plus grande que l'objet : c'est le fonctionnement du projecteur.",
+      "difficulte": 2,
+      "tags": [
+        "projecteur",
+        "positions-objet"
+      ]
+    },
+    {
+      "id": "PC1D-P08-018",
+      "lecon": "Marche des rayons et construction des images",
+      "type": "formule",
+      "recto": "Pour une lentille convergente, que devient l'image d'un objet réel placé exactement au foyer objet $F$ ?",
+      "verso": "Il n'y a pas d'image à distance finie : les rayons émergents sont parallèles et l'image est rejetée à l'infini.",
+      "difficulte": 2,
+      "tags": [
+        "objet-au-foyer"
+      ]
+    },
+    {
+      "id": "PC1D-P08-019",
+      "lecon": "Marche des rayons et construction des images",
+      "type": "formule",
+      "recto": "Quelle image une lentille divergente donne-t-elle d'un objet réel ?",
+      "verso": "Quelle que soit la position de l'objet, une image virtuelle, droite et plus petite, située entre $F'$ et $O$ : elle ne peut jamais être recueillie sur un écran.",
+      "difficulte": 3,
+      "tags": [
+        "divergente",
+        "piege"
+      ]
+    },
+    {
+      "id": "PC1D-P08-020",
+      "lecon": "Marche des rayons et construction des images",
+      "type": "definition",
+      "recto": "Quelle différence de position y a-t-il entre un objet virtuel et l'image virtuelle d'un objet réel ?",
+      "verso": "L'objet virtuel est situé après la lentille (faisceau convergent intercepté), alors que l'image virtuelle d'un objet réel est située avant la lentille.",
+      "difficulte": 2,
+      "tags": [
+        "objet-virtuel",
+        "image-virtuelle"
+      ]
+    },
+    {
+      "id": "PC1D-P08-021",
+      "lecon": "Les formules des lentilles minces",
+      "type": "definition",
+      "recto": "Pour les lentilles minces, quelle est la convention de signes des mesures algébriques ?",
+      "verso": "L'axe optique est orienté dans le sens de propagation de la lumière (de gauche à droite), l'origine est le centre optique $O$, et les longueurs perpendiculaires à l'axe sont positives vers le haut.",
+      "difficulte": 1,
+      "tags": [
+        "convention-signes"
+      ]
+    },
+    {
+      "id": "PC1D-P08-022",
+      "lecon": "Les formules des lentilles minces",
+      "type": "formule",
+      "recto": "Pour une lentille mince dans les conditions de Gauss, quelle est la relation de conjugaison ?",
+      "verso": "$\\dfrac{1}{\\overline{OA'}} - \\dfrac{1}{\\overline{OA}} = \\dfrac{1}{\\overline{OF'}} = C$, les trois longueurs dans la même unité (en mètres pour avoir $C$ en dioptries).",
+      "difficulte": 1,
+      "tags": [
+        "relation-de-conjugaison"
+      ]
+    },
+    {
+      "id": "PC1D-P08-023",
+      "lecon": "Les formules des lentilles minces",
+      "type": "formule",
+      "recto": "Quelle est l'expression du grandissement $\\gamma$ d'une lentille mince ?",
+      "verso": "$\\gamma = \\dfrac{\\overline{A'B'}}{\\overline{AB}} = \\dfrac{\\overline{OA'}}{\\overline{OA}}$, nombre sans unité ; la taille de l'image vaut $\\overline{A'B'} = \\gamma \\times \\overline{AB}$.",
+      "difficulte": 1,
+      "tags": [
+        "grandissement"
+      ]
+    },
+    {
+      "id": "PC1D-P08-024",
+      "lecon": "Les formules des lentilles minces",
+      "type": "formule",
+      "recto": "Que renseigne le signe de $\\overline{OA'}$ sur l'image donnée par une lentille mince ?",
+      "verso": "Sa nature : $\\overline{OA'} \\gt 0$, image réelle, après la lentille ; $\\overline{OA'} \\lt 0$, image virtuelle, avant la lentille.",
+      "difficulte": 2,
+      "tags": [
+        "nature-image",
+        "signe"
+      ]
+    },
+    {
+      "id": "PC1D-P08-025",
+      "lecon": "Les formules des lentilles minces",
+      "type": "formule",
+      "recto": "Que renseignent le signe et la valeur absolue du grandissement $\\gamma$ sur l'image ?",
+      "verso": "Le signe donne le sens : $\\gamma \\gt 0$ droite, $\\gamma \\lt 0$ renversée. La valeur absolue donne la taille : $\\left\\lvert\\gamma\\right\\rvert \\gt 1$ agrandie, $\\left\\lvert\\gamma\\right\\rvert \\lt 1$ réduite.",
+      "difficulte": 2,
+      "tags": [
+        "grandissement",
+        "sens-image"
+      ]
+    },
+    {
+      "id": "PC1D-P08-026",
+      "lecon": "Les formules des lentilles minces",
+      "type": "formule",
+      "recto": "Pour une lentille mince, quelle droite obtient-on en traçant $\\dfrac{1}{\\overline{OA'}}$ en fonction de $\\dfrac{1}{\\overline{OA}}$ ?",
+      "verso": "La droite $y = x + C$, de pente 1 (ce qui contrôle les mesures) et d'ordonnée à l'origine égale à la vergence $C$, lue en dioptries si les longueurs sont en mètres.",
+      "difficulte": 2,
+      "tags": [
+        "droite-des-inverses"
+      ]
+    },
+    {
+      "id": "PC1D-P08-027",
+      "lecon": "Les formules des lentilles minces",
+      "type": "formule",
+      "recto": "Dans la méthode de Silbermann, quelle relation lie la distance objet-image $\\overline{AA'}$ à la distance focale $\\overline{OF'}$ ?",
+      "verso": "Pour un grandissement $\\gamma = -1$, $\\overline{AA'} = 4\\,\\overline{OF'}$.",
+      "difficulte": 3,
+      "tags": [
+        "silbermann"
+      ]
+    },
+    {
+      "id": "PC1D-P08-028",
+      "lecon": "Les formules des lentilles minces",
+      "type": "definition",
+      "recto": "Quelle erreur de signe sur $\\overline{OA}$ guette le calcul de l'image d'un objet réel placé à $50~\\mathrm{cm}$ devant une lentille ?",
+      "verso": "Ecrire $\\overline{OA} = 50~\\mathrm{cm}$ : l'objet réel est avant la lentille, du côté négatif de l'axe orienté, donc $\\overline{OA} = -50~\\mathrm{cm}$. Le signe oublié fausse la position, la nature et le sens de l'image.",
+      "difficulte": 3,
+      "tags": [
+        "signe",
+        "piege"
+      ]
+    },
+    {
+      "id": "PC1D-P08-029",
+      "lecon": "Les formules des lentilles minces",
+      "type": "definition",
+      "recto": "Pourquoi un grandissement $\\gamma = -2$ ne signifie-t-il pas une image deux fois plus petite ?",
+      "verso": "Le signe de $\\gamma$ ne donne que le sens (ici image renversée) ; c'est $\\left\\lvert\\gamma\\right\\rvert = 2 \\gt 1$ qui donne la taille : l'image est deux fois plus grande que l'objet.",
+      "difficulte": 3,
+      "tags": [
+        "grandissement",
+        "piege"
+      ]
+    },
+    {
+      "id": "PC1D-P08-030",
+      "lecon": "Associations de lentilles et instruments d'optique",
+      "type": "formule",
+      "recto": "Quelle est la vergence $C$ d'un système de deux lentilles minces accolées de vergences $C_1$ et $C_2$ ?",
+      "verso": "$C = C_1 + C_2$ (en dioptries), soit une distance focale $\\overline{OF'} = \\dfrac{1}{C_1 + C_2}$. La formule vaut seulement pour des lentilles accolées et s'étend à un nombre quelconque de lentilles.",
+      "difficulte": 1,
+      "tags": [
+        "lentilles-accolees",
+        "vergence"
+      ]
+    },
+    {
+      "id": "PC1D-P08-031",
+      "lecon": "Associations de lentilles et instruments d'optique",
+      "type": "formule",
+      "recto": "Pour deux lentilles non accolées $L_1$ puis $L_2$, comment obtient-on la position de l'objet $A_1$ pour $L_2$ et le grandissement total ?",
+      "verso": "Par changement d'origine (Chasles) : $\\overline{O_2A_1} = \\overline{O_2O_1} + \\overline{O_1A_1}$, puis on applique la relation de conjugaison à $L_2$. Le grandissement total est $\\gamma = \\gamma_1 \\times \\gamma_2$.",
+      "difficulte": 2,
+      "tags": [
+        "lentilles-non-accolees",
+        "chasles"
+      ]
+    },
+    {
+      "id": "PC1D-P08-032",
+      "lecon": "Associations de lentilles et instruments d'optique",
+      "type": "definition",
+      "recto": "Quelle différence y a-t-il entre le grandissement et le grossissement ?",
+      "verso": "Le grandissement $\\gamma$ compare des longueurs (image et objet) ; le grossissement $G$ compare des angles (vu à travers l'instrument et vu à l'oeil nu). Un projecteur se caractérise par un grandissement, une loupe ou un microscope par un grossissement.",
+      "difficulte": 2,
+      "tags": [
+        "grossissement",
+        "grandissement"
+      ]
+    },
+    {
+      "id": "PC1D-P08-033",
+      "lecon": "Associations de lentilles et instruments d'optique",
+      "type": "formule",
+      "recto": "Comment s'exprime le grossissement total $G$ d'un microscope ?",
+      "verso": "$G = \\left\\lvert\\gamma_{\\text{objectif}}\\right\\rvert \\times G_{\\text{oculaire}}$, avec $G_{\\text{oculaire}} = \\dfrac{25}{f'_2}$, $f'_2$ en centimètres. Un objectif $\\times 40$ et un oculaire $\\times 10$ donnent $G = 400$.",
+      "difficulte": 2,
+      "tags": [
+        "microscope",
+        "grossissement"
+      ]
+    },
+    {
+      "id": "PC1D-P08-034",
+      "lecon": "Associations de lentilles et instruments d'optique",
+      "type": "definition",
+      "recto": "Dans un microscope, où place-t-on l'objet par rapport à l'objectif ?",
+      "verso": "Juste au-delà du foyer objet de l'objectif (lentille convergente de quelques millimètres de distance focale) : l'objectif en donne une image intermédiaire réelle, renversée et fortement agrandie.",
+      "difficulte": 2,
+      "tags": [
+        "microscope",
+        "objectif"
+      ]
+    },
+    {
+      "id": "PC1D-P08-035",
+      "lecon": "Associations de lentilles et instruments d'optique",
+      "type": "formule",
+      "recto": "Pour une lunette astronomique réglée afocale, quelle condition lie les foyers de l'objectif et de l'oculaire ?",
+      "verso": "Le foyer image de l'objectif et le foyer objet de l'oculaire sont confondus : $F'_1 = F_2$, donc $\\overline{O_1O_2} = f'_1 + f'_2$. L'image finale est à l'infini et renversée.",
+      "difficulte": 2,
+      "tags": [
+        "lunette-astronomique",
+        "afocal"
+      ]
+    },
+    {
+      "id": "PC1D-P08-036",
+      "lecon": "Associations de lentilles et instruments d'optique",
+      "type": "formule",
+      "recto": "Quel est le grossissement $G$ d'une lunette astronomique afocale ?",
+      "verso": "$G = \\dfrac{f'_1}{f'_2}$, où $f'_1$ est la distance focale (grande) de l'objectif et $f'_2$ celle (courte) de l'oculaire, dans la même unité.",
+      "difficulte": 1,
+      "tags": [
+        "lunette-astronomique",
+        "grossissement"
+      ]
+    },
+    {
+      "id": "PC1D-P08-037",
+      "lecon": "Associations de lentilles et instruments d'optique",
+      "type": "formule",
+      "recto": "Par quel type de lentille corrige-t-on un oeil myope ?",
+      "verso": "Par une lentille divergente ($C \\lt 0$) : l'oeil myope est trop convergent, l'image d'un objet lointain se forme avant la rétine. L'hypermétrope, pas assez convergent, se corrige par une lentille convergente.",
+      "difficulte": 2,
+      "tags": [
+        "myopie",
+        "hypermetropie"
+      ]
+    },
+    {
+      "id": "PC1D-P08-038",
+      "lecon": "Associations de lentilles et instruments d'optique",
+      "type": "definition",
+      "recto": "Pourquoi ne peut-on pas additionner les distances focales de deux lentilles accolées ?",
+      "verso": "Ce sont les vergences qui s'ajoutent, pas les distances focales : deux lentilles accolées de $10~\\mathrm{cm}$ et $15~\\mathrm{cm}$ donnent $C \\approx 16{,}7~\\delta$, soit $\\overline{OF'} \\approx 6{,}0~\\mathrm{cm}$, plus court que chacune.",
+      "difficulte": 3,
+      "tags": [
+        "lentilles-accolees",
+        "piege"
+      ]
+    }
+  ]
+}

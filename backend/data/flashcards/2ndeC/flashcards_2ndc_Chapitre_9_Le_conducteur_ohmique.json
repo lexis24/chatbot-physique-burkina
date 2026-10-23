@@ -1,0 +1,464 @@
+{
+  "matiere": "Physique-Chimie",
+  "partie": "Physique",
+  "niveau": "2nde C",
+  "chapitre": "Physique, Chapitre 9 : Le conducteur ohmique",
+  "source": "pc/2ndc/Chapitre_9_Le_conducteur_ohmique",
+  "nombre_cartes": 38,
+  "cartes": [
+    {
+      "id": "PC2C-P09-001",
+      "lecon": "La loi d'Ohm, la résistance et la conductance",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on un conducteur ohmique ?",
+      "verso": "C'est un dipôle passif, appelé aussi résistor, dont la caractéristique $U = f(I)$ est une droite passant par l'origine : la tension à ses bornes est proportionnelle à l'intensité qui le traverse.",
+      "difficulte": 1,
+      "tags": [
+        "conducteur-ohmique",
+        "caracteristique"
+      ]
+    },
+    {
+      "id": "PC2C-P09-002",
+      "lecon": "La loi d'Ohm, la résistance et la conductance",
+      "type": "definition",
+      "recto": "Pourquoi dit-on qu'un conducteur ohmique est un dipôle linéaire symétrique ?",
+      "verso": "Sa caractéristique est une droite passant par l'origine, qui se prolonge pour les intensités négatives de façon symétrique par rapport à l'origine : il se comporte de la même façon quel que soit le sens du courant.",
+      "difficulte": 2,
+      "tags": [
+        "dipole-lineaire",
+        "caracteristique"
+      ]
+    },
+    {
+      "id": "PC2C-P09-003",
+      "lecon": "La loi d'Ohm, la résistance et la conductance",
+      "type": "formule",
+      "recto": "Pour un conducteur ohmique de bornes A et B traversé par un courant $I$ orienté de A vers B, en convention récepteur, quelle relation donne la tension $U_{AB}$ ?",
+      "verso": "$U_{AB} = R \\times I$, avec $U_{AB}$ en volts ($\\mathrm{V}$), $I$ en ampères ($\\mathrm{A}$) et $R$ en ohms ($\\Omega$). En convention récepteur, la flèche de tension est opposée à la flèche du courant.",
+      "difficulte": 1,
+      "tags": [
+        "loi-d-ohm",
+        "convention-recepteur"
+      ]
+    },
+    {
+      "id": "PC2C-P09-004",
+      "lecon": "La loi d'Ohm, la résistance et la conductance",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on l'ohm, unité de résistance ?",
+      "verso": "C'est la résistance d'un conducteur qui, sous une tension de $1~\\mathrm{V}$, est traversé par un courant de $1~\\mathrm{A}$ : $1~\\Omega = 1~\\mathrm{V/A}$. On utilise aussi $1~\\mathrm{k\\Omega} = 10^{3}~\\Omega$ et $1~\\mathrm{M\\Omega} = 10^{6}~\\Omega$.",
+      "difficulte": 1,
+      "tags": [
+        "ohm",
+        "unite"
+      ]
+    },
+    {
+      "id": "PC2C-P09-005",
+      "lecon": "La loi d'Ohm, la résistance et la conductance",
+      "type": "definition",
+      "recto": "Comment définit-on la conductance $G$ d'un conducteur ohmique de résistance $R$ ?",
+      "verso": "C'est l'inverse de sa résistance : $G = \\dfrac{1}{R}$. Elle s'exprime en siemens ($\\mathrm{S}$), avec $1~\\mathrm{S} = 1~\\Omega^{-1} = 1~\\mathrm{A/V}$.",
+      "difficulte": 1,
+      "tags": [
+        "conductance",
+        "siemens"
+      ]
+    },
+    {
+      "id": "PC2C-P09-006",
+      "lecon": "La loi d'Ohm, la résistance et la conductance",
+      "type": "formule",
+      "recto": "Pour un conducteur ohmique de conductance $G$, comment s'écrit la loi d'Ohm donnant l'intensité $I$ ?",
+      "verso": "$I = G \\times U$, avec $I$ en ampères, $G$ en siemens et $U$ en volts.",
+      "difficulte": 2,
+      "tags": [
+        "conductance",
+        "loi-d-ohm"
+      ]
+    },
+    {
+      "id": "PC2C-P09-007",
+      "lecon": "La loi d'Ohm, la résistance et la conductance",
+      "type": "formule",
+      "recto": "Pour un conducteur ohmique de bornes A et B, comment s'écrit la loi d'Ohm si le courant $I$ est orienté de B vers A ?",
+      "verso": "$U_{AB} = -R\\,I$. C'est le signe de $I$ qui change, pas celui de $R$ : une résistance (comme une conductance) est toujours positive.",
+      "difficulte": 2,
+      "tags": [
+        "signe",
+        "orientation"
+      ]
+    },
+    {
+      "id": "PC2C-P09-008",
+      "lecon": "La loi d'Ohm, la résistance et la conductance",
+      "type": "formule",
+      "recto": "Pour alimenter un dipôle de valeurs nominales $U_n$ et $I_n$ sous une tension $U$ plus grande, quelle résistance de protection faut-il placer en série ?",
+      "verso": "$R = \\dfrac{U - U_n}{I_n}$ (additivité des tensions et loi d'Ohm), puis on choisit la valeur fabriquée immédiatement supérieure. Ce résistor doit supporter la puissance $R I_n^{2}$.",
+      "difficulte": 2,
+      "tags": [
+        "resistance-de-protection"
+      ]
+    },
+    {
+      "id": "PC2C-P09-009",
+      "lecon": "La loi d'Ohm, la résistance et la conductance",
+      "type": "formule",
+      "recto": "Pour un résistor de résistance $R$ et de puissance maximale $P_{\\text{max}}$, quelle intensité ne doit-on pas dépasser ?",
+      "verso": "$I_{\\text{max}} = \\sqrt{\\dfrac{P_{\\text{max}}}{R}}$, déduite de $P_{\\text{max}} = R I_{\\text{max}}^{2}$ ($P$ en W, $R$ en $\\Omega$, $I$ en A). Si le fabricant donne une tension maximale : $I_{\\text{max}} = \\dfrac{U_{\\text{max}}}{R}$.",
+      "difficulte": 2,
+      "tags": [
+        "puissance-maximale",
+        "domaine-d-utilisation"
+      ]
+    },
+    {
+      "id": "PC2C-P09-010",
+      "lecon": "La loi d'Ohm, la résistance et la conductance",
+      "type": "definition",
+      "recto": "Quelle erreur commet un élève qui écrit que la conductance d'un conducteur de $250~\\Omega$ vaut $-250~\\mathrm{S}$ ?",
+      "verso": "Il confond inverse et opposé. La conductance est l'inverse de la résistance : $G = \\dfrac{1}{250} = 4{,}0 \\times 10^{-3}~\\mathrm{S}$. Doubler $R$ divise $G$ par deux.",
+      "difficulte": 3,
+      "tags": [
+        "conductance",
+        "piege"
+      ]
+    },
+    {
+      "id": "PC2C-P09-011",
+      "lecon": "La résistivité : de quoi dépend la résistance d'un fil",
+      "type": "definition",
+      "recto": "De quelles grandeurs dépend la résistance d'un fil conducteur ?",
+      "verso": "De trois choses seulement : sa longueur $L$, l'aire de sa section $S$ et la nature du matériau dont il est fait.",
+      "difficulte": 1,
+      "tags": [
+        "resistance-d-un-fil"
+      ]
+    },
+    {
+      "id": "PC2C-P09-012",
+      "lecon": "La résistivité : de quoi dépend la résistance d'un fil",
+      "type": "formule",
+      "recto": "Pour un fil homogène de section constante, quelle relation donne sa résistance $R$ ?",
+      "verso": "$R = \\rho\\,\\dfrac{L}{S}$, avec $R$ en ohms ($\\Omega$), $L$ en mètres ($\\mathrm{m}$), $S$ en mètres carrés ($\\mathrm{m^{2}}$) et $\\rho$, la résistivité, en ohms-mètres ($\\Omega \\cdot \\mathrm{m}$).",
+      "difficulte": 2,
+      "tags": [
+        "loi-des-fils",
+        "resistivite"
+      ]
+    },
+    {
+      "id": "PC2C-P09-013",
+      "lecon": "La résistivité : de quoi dépend la résistance d'un fil",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on la résistivité $\\rho$ d'un matériau ?",
+      "verso": "C'est le coefficient de la relation $R = \\rho\\,\\dfrac{L}{S}$ : une propriété de la matière, indépendante de la forme et des dimensions du fil. Numériquement, c'est la résistance d'un fil de ce matériau de $1~\\mathrm{m}$ de long et $1~\\mathrm{m^{2}}$ de section. Elle s'exprime en $\\Omega \\cdot \\mathrm{m}$.",
+      "difficulte": 2,
+      "tags": [
+        "resistivite"
+      ]
+    },
+    {
+      "id": "PC2C-P09-014",
+      "lecon": "La résistivité : de quoi dépend la résistance d'un fil",
+      "type": "definition",
+      "recto": "Quelle différence y a-t-il entre la résistance et la résistivité ?",
+      "verso": "La résistance $R$ dépend de l'objet (longueur, section, matière) et s'exprime en ohms ; la résistivité $\\rho$ ne dépend que de la matière et s'exprime en ohms-mètres.",
+      "difficulte": 3,
+      "tags": [
+        "resistance",
+        "resistivite",
+        "piege"
+      ]
+    },
+    {
+      "id": "PC2C-P09-015",
+      "lecon": "La résistivité : de quoi dépend la résistance d'un fil",
+      "type": "formule",
+      "recto": "A section et matériau donnés, comment varie la résistance d'un fil avec sa longueur ?",
+      "verso": "Elle est proportionnelle à la longueur : un fil deux fois plus long a une résistance double.",
+      "difficulte": 1,
+      "tags": [
+        "longueur",
+        "proportionnalite"
+      ]
+    },
+    {
+      "id": "PC2C-P09-016",
+      "lecon": "La résistivité : de quoi dépend la résistance d'un fil",
+      "type": "formule",
+      "recto": "Pour un fil rond de même longueur et de même matériau, que devient sa résistance si l'on double son diamètre ?",
+      "verso": "Elle est divisée par quatre, car la section $S = \\dfrac{\\pi d^{2}}{4}$ est multipliée par quatre et $R$ est inversement proportionnelle à $S$.",
+      "difficulte": 3,
+      "tags": [
+        "section",
+        "diametre",
+        "piege"
+      ]
+    },
+    {
+      "id": "PC2C-P09-017",
+      "lecon": "La résistivité : de quoi dépend la résistance d'un fil",
+      "type": "formule",
+      "recto": "Quelle relation donne l'aire de la section d'un fil cylindrique de rayon $r$ ou de diamètre $d$ ?",
+      "verso": "$S = \\pi r^{2} = \\dfrac{\\pi d^{2}}{4}$. Pour utiliser $R = \\rho\\,\\dfrac{L}{S}$, on convertit en mètres carrés : $1~\\mathrm{mm^{2}} = 10^{-6}~\\mathrm{m^{2}}$.",
+      "difficulte": 2,
+      "tags": [
+        "section",
+        "conversion"
+      ]
+    },
+    {
+      "id": "PC2C-P09-018",
+      "lecon": "La résistivité : de quoi dépend la résistance d'un fil",
+      "type": "definition",
+      "recto": "Quels ordres de grandeur de résistivité distinguent un conducteur d'un isolant ?",
+      "verso": "Un conducteur a une résistivité de l'ordre de $10^{-8}~\\Omega \\cdot \\mathrm{m}$ (cuivre : $1{,}7 \\times 10^{-8}~\\Omega \\cdot \\mathrm{m}$ à $20~^{\\circ}\\mathrm{C}$) ; un isolant, de $10^{10}$ à $10^{16}~\\Omega \\cdot \\mathrm{m}$. Les semi-conducteurs se placent entre les deux.",
+      "difficulte": 2,
+      "tags": [
+        "conducteur",
+        "isolant",
+        "ordre-de-grandeur"
+      ]
+    },
+    {
+      "id": "PC2C-P09-019",
+      "lecon": "La résistivité : de quoi dépend la résistance d'un fil",
+      "type": "definition",
+      "recto": "Pourquoi utilise-t-on le cuivre pour les câbles et le nichrome pour les résistances chauffantes ?",
+      "verso": "Le cuivre a une résistivité très faible ($1{,}7 \\times 10^{-8}~\\Omega \\cdot \\mathrm{m}$) : il transporte le courant. Le nichrome ($1{,}1 \\times 10^{-6}~\\Omega \\cdot \\mathrm{m}$), environ soixante-cinq fois plus résistif, sert à chauffer.",
+      "difficulte": 2,
+      "tags": [
+        "materiaux",
+        "cuivre",
+        "nichrome"
+      ]
+    },
+    {
+      "id": "PC2C-P09-020",
+      "lecon": "La résistivité : de quoi dépend la résistance d'un fil",
+      "type": "formule",
+      "recto": "Pour calculer la résistance d'un câble d'alimentation posé sur une distance donnée, quelle longueur $L$ faut-il prendre ?",
+      "verso": "Deux fois la distance, car le courant fait l'aller et le retour dans les deux conducteurs du câble.",
+      "difficulte": 2,
+      "tags": [
+        "cable",
+        "aller-retour"
+      ]
+    },
+    {
+      "id": "PC2C-P09-021",
+      "lecon": "Lire la valeur d'un résistor : code des couleurs et tolérance",
+      "type": "definition",
+      "recto": "Sur un résistor à quatre anneaux, que donne chacun des anneaux ?",
+      "verso": "Le premier donne le chiffre des dizaines, le deuxième celui des unités, le troisième le multiplicateur (la puissance de 10) et le quatrième la tolérance en pourcent.",
+      "difficulte": 1,
+      "tags": [
+        "code-des-couleurs"
+      ]
+    },
+    {
+      "id": "PC2C-P09-022",
+      "lecon": "Lire la valeur d'un résistor : code des couleurs et tolérance",
+      "type": "formule",
+      "recto": "Quelle relation donne la valeur d'un résistor à partir de ses trois premiers anneaux colorés ?",
+      "verso": "$R = \\left(\\text{chiffre 1} \\times 10 + \\text{chiffre 2}\\right) \\times \\text{multiplicateur}$, le résultat étant en ohms.",
+      "difficulte": 2,
+      "tags": [
+        "code-des-couleurs",
+        "lecture"
+      ]
+    },
+    {
+      "id": "PC2C-P09-023",
+      "lecon": "Lire la valeur d'un résistor : code des couleurs et tolérance",
+      "type": "definition",
+      "recto": "Dans le code des couleurs des résistors, quels chiffres correspondent aux couleurs, du noir au blanc ?",
+      "verso": "Noir 0, marron 1, rouge 2, orange 3, jaune 4, vert 5, bleu 6, violet 7, gris 8, blanc 9 (« Ne Manger Rien Ou Jeûner, Voilà Bien Votre Grand Bienfait »).",
+      "difficulte": 1,
+      "tags": [
+        "code-des-couleurs",
+        "mnemotechnique"
+      ]
+    },
+    {
+      "id": "PC2C-P09-024",
+      "lecon": "Lire la valeur d'un résistor : code des couleurs et tolérance",
+      "type": "definition",
+      "recto": "Dans le code des couleurs, quelle tolérance indique un quatrième anneau or, un anneau argent, ou l'absence de quatrième anneau ?",
+      "verso": "Or : $\\pm 5\\ \\%$ ; argent : $\\pm 10\\ \\%$ ; aucun anneau : $\\pm 20\\ \\%$. Un résistor à trois anneaux n'est donc pas plus précis.",
+      "difficulte": 2,
+      "tags": [
+        "tolerance"
+      ]
+    },
+    {
+      "id": "PC2C-P09-025",
+      "lecon": "Lire la valeur d'un résistor : code des couleurs et tolérance",
+      "type": "formule",
+      "recto": "Pour un résistor de valeur nominale $R$ et de tolérance $t$ en pourcent, entre quelles valeurs se situe sa résistance réelle ?",
+      "verso": "Entre $R_{\\text{min}} = R - \\Delta R$ et $R_{\\text{max}} = R + \\Delta R$, avec $\\Delta R = R \\times \\dfrac{t}{100}$. Le composant est conforme si la valeur mesurée tombe dans cet intervalle.",
+      "difficulte": 2,
+      "tags": [
+        "tolerance",
+        "encadrement",
+        "conformite"
+      ]
+    },
+    {
+      "id": "PC2C-P09-026",
+      "lecon": "Lire la valeur d'un résistor : code des couleurs et tolérance",
+      "type": "definition",
+      "recto": "Pourquoi ne faut-il jamais lire un résistor en commençant par l'anneau or ou argent ?",
+      "verso": "L'or et l'argent ne sont jamais des chiffres : ce sont des multiplicateurs ou des tolérances. On place l'anneau doré ou argenté à droite et on lit à partir du groupe de trois anneaux serrés à gauche.",
+      "difficulte": 3,
+      "tags": [
+        "sens-de-lecture",
+        "piege"
+      ]
+    },
+    {
+      "id": "PC2C-P09-027",
+      "lecon": "Lire la valeur d'un résistor : code des couleurs et tolérance",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on la série E12 des résistors ?",
+      "verso": "La série de valeurs normalisées la plus répandue, de tolérance $\\pm 10\\ \\%$ : douze valeurs par décade, 10 ; 12 ; 15 ; 18 ; 22 ; 27 ; 33 ; 39 ; 47 ; 56 ; 68 ; 82, multipliées par une puissance de 10.",
+      "difficulte": 2,
+      "tags": [
+        "serie-e12",
+        "valeurs-normalisees"
+      ]
+    },
+    {
+      "id": "PC2C-P09-028",
+      "lecon": "Lire la valeur d'un résistor : code des couleurs et tolérance",
+      "type": "formule",
+      "recto": "Quelles précautions prend-on pour mesurer un résistor à l'ohmmètre ?",
+      "verso": "On le mesure hors tension, sorti du circuit, sans le tenir entre les doigts : le corps se mettrait en dérivation et ferait baisser la valeur lue.",
+      "difficulte": 2,
+      "tags": [
+        "ohmmetre",
+        "mesure"
+      ]
+    },
+    {
+      "id": "PC2C-P09-029",
+      "lecon": "Les associations de conducteurs ohmiques",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on le dipôle équivalent à une association de conducteurs ohmiques ?",
+      "verso": "C'est l'unique conducteur ohmique, de résistance $R_e$, qui se comporte comme l'association vue de ses deux bornes : le remplacer par lui ne change rien au reste du circuit.",
+      "difficulte": 1,
+      "tags": [
+        "dipole-equivalent"
+      ]
+    },
+    {
+      "id": "PC2C-P09-030",
+      "lecon": "Les associations de conducteurs ohmiques",
+      "type": "formule",
+      "recto": "Pour $n$ conducteurs ohmiques associés en série, quelle relation donne la résistance équivalente $R_e$ ?",
+      "verso": "$R_e = R_1 + R_2 + \\ldots + R_n$ : ils sont traversés par la même intensité et les tensions s'ajoutent. $R_e$ est plus grande que la plus grande des résistances.",
+      "difficulte": 1,
+      "tags": [
+        "serie",
+        "resistance-equivalente"
+      ]
+    },
+    {
+      "id": "PC2C-P09-031",
+      "lecon": "Les associations de conducteurs ohmiques",
+      "type": "formule",
+      "recto": "Pour $n$ conducteurs ohmiques associés en dérivation, quelle relation donne la résistance équivalente $R_e$ ?",
+      "verso": "$\\dfrac{1}{R_e} = \\dfrac{1}{R_1} + \\dfrac{1}{R_2} + \\ldots + \\dfrac{1}{R_n}$, soit $G_e = G_1 + G_2 + \\ldots + G_n$ : ils portent la même tension et les intensités s'ajoutent. $R_e$ est plus petite que la plus petite des résistances.",
+      "difficulte": 2,
+      "tags": [
+        "derivation",
+        "resistance-equivalente",
+        "conductance"
+      ]
+    },
+    {
+      "id": "PC2C-P09-032",
+      "lecon": "Les associations de conducteurs ohmiques",
+      "type": "formule",
+      "recto": "Pour deux conducteurs ohmiques $R_1$ et $R_2$ en dérivation, quelle expression directe donne la résistance équivalente ?",
+      "verso": "$R_e = \\dfrac{R_1 R_2}{R_1 + R_2}$. Cette formule ne vaut que pour deux conducteurs, jamais pour trois.",
+      "difficulte": 2,
+      "tags": [
+        "derivation",
+        "deux-conducteurs"
+      ]
+    },
+    {
+      "id": "PC2C-P09-033",
+      "lecon": "Les associations de conducteurs ohmiques",
+      "type": "formule",
+      "recto": "Pour $n$ conducteurs ohmiques identiques de résistance $R$ montés en dérivation, que vaut la résistance équivalente ?",
+      "verso": "$R_e = \\dfrac{R}{n}$.",
+      "difficulte": 1,
+      "tags": [
+        "derivation",
+        "conducteurs-identiques"
+      ]
+    },
+    {
+      "id": "PC2C-P09-034",
+      "lecon": "Les associations de conducteurs ohmiques",
+      "type": "definition",
+      "recto": "Quelle faute fréquente commet-on en calculant $\\dfrac{1}{R_1} + \\dfrac{1}{R_2}$ pour deux conducteurs en dérivation ?",
+      "verso": "On oublie d'inverser à la fin : cette somme est la conductance équivalente $G_e$, pas la résistance. Il faut écrire $R_e = \\dfrac{1}{G_e}$ (pour $18~\\Omega$ et $56~\\Omega$ : $G_e \\approx 0{,}0734~\\mathrm{S}$, donc $R_e \\approx 13{,}6~\\Omega$).",
+      "difficulte": 3,
+      "tags": [
+        "derivation",
+        "inverser",
+        "piege"
+      ]
+    },
+    {
+      "id": "PC2C-P09-035",
+      "lecon": "Les associations de conducteurs ohmiques",
+      "type": "formule",
+      "recto": "Pour deux conducteurs $R_1$ et $R_2$ en dérivation parcourus au total par l'intensité $I$, quelle relation donne l'intensité $I_1$ dans $R_1$ ?",
+      "verso": "$I_1 = I \\times \\dfrac{R_2}{R_1 + R_2}$ (diviseur de courant) : le partage est inversé, la plus petite résistance prend la plus grosse part du courant.",
+      "difficulte": 3,
+      "tags": [
+        "diviseur-de-courant"
+      ]
+    },
+    {
+      "id": "PC2C-P09-036",
+      "lecon": "Les associations de conducteurs ohmiques",
+      "type": "formule",
+      "recto": "Pour deux conducteurs $R_1$ et $R_2$ en série sous la tension $U$, quelle relation donne la tension $U_2$ aux bornes de $R_2$, à vide ?",
+      "verso": "$U_2 = U \\times \\dfrac{R_2}{R_1 + R_2}$ (diviseur de tension à vide). Si l'on branche un appareil aux bornes de $R_2$, il se met en dérivation avec $R_2$ et la tension de sortie diminue.",
+      "difficulte": 2,
+      "tags": [
+        "diviseur-de-tension"
+      ]
+    },
+    {
+      "id": "PC2C-P09-037",
+      "lecon": "Les associations de conducteurs ohmiques",
+      "type": "definition",
+      "recto": "Que signifie qu'un conducteur ohmique est court-circuité ?",
+      "verso": "Un fil de résistance pratiquement nulle relie ses deux bornes : la tension à ses bornes devient nulle, il n'est plus traversé par aucun courant et tout le courant passe par le fil. La résistance équivalente du montage diminue.",
+      "difficulte": 2,
+      "tags": [
+        "court-circuit"
+      ]
+    },
+    {
+      "id": "PC2C-P09-038",
+      "lecon": "Les associations de conducteurs ohmiques",
+      "type": "definition",
+      "recto": "Comment résout-on un montage mixte de conducteurs ohmiques ?",
+      "verso": "Par réductions successives : on remplace chaque association simple par son équivalent, en commençant par le groupe le plus profond, jusqu'à obtenir un seul conducteur ; on calcule alors $I = \\dfrac{U}{R_e}$.",
+      "difficulte": 2,
+      "tags": [
+        "montage-mixte",
+        "reduction"
+      ]
+    }
+  ]
+}

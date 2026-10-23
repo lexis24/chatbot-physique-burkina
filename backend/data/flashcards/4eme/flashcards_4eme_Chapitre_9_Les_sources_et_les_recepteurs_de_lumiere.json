@@ -1,0 +1,388 @@
+{
+  "matiere": "Physique-Chimie",
+  "partie": "Physique",
+  "niveau": "4ème",
+  "chapitre": "Physique, Chapitre 9 : Les sources et les récepteurs de lumière",
+  "source": "pc/4eme/Chapitre_9_Les_sources_et_les_recepteurs_de_lumiere",
+  "nombre_cartes": 32,
+  "cartes": [
+    {
+      "id": "PC4E-P09-001",
+      "lecon": "Les sources primaires et les sources secondaires de lumière",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on une source primaire de lumière ?",
+      "verso": "C'est un corps qui produit lui-même la lumière qu'il émet ; on l'appelle aussi un corps lumineux. Exemples : le Soleil, une flamme, une lampe allumée.",
+      "difficulte": 1,
+      "tags": [
+        "source-primaire",
+        "vocabulaire"
+      ]
+    },
+    {
+      "id": "PC4E-P09-002",
+      "lecon": "Les sources primaires et les sources secondaires de lumière",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on une source secondaire de lumière ?",
+      "verso": "C'est un corps qui ne produit pas de lumière mais renvoie celle qu'il reçoit d'une source primaire ; on l'appelle aussi un corps éclairé. Exemples : la Lune, un mur, un miroir.",
+      "difficulte": 1,
+      "tags": [
+        "source-secondaire",
+        "vocabulaire"
+      ]
+    },
+    {
+      "id": "PC4E-P09-003",
+      "lecon": "Les sources primaires et les sources secondaires de lumière",
+      "type": "definition",
+      "recto": "Quand dit-on qu'une source de lumière est naturelle ?",
+      "verso": "Quand elle existe sans l'intervention de l'homme : le Soleil, les étoiles, l'éclair, la lave d'un volcan, la luciole, la Lune.",
+      "difficulte": 1,
+      "tags": [
+        "source-naturelle"
+      ]
+    },
+    {
+      "id": "PC4E-P09-004",
+      "lecon": "Les sources primaires et les sources secondaires de lumière",
+      "type": "definition",
+      "recto": "Quand dit-on qu'une source de lumière est artificielle ?",
+      "verso": "Quand l'homme l'a fabriquée ou allumée : la bougie, le feu de bois, la lampe à pétrole, l'ampoule, la torche, l'écran, le miroir.",
+      "difficulte": 1,
+      "tags": [
+        "source-artificielle"
+      ]
+    },
+    {
+      "id": "PC4E-P09-005",
+      "lecon": "Les sources primaires et les sources secondaires de lumière",
+      "type": "formule",
+      "recto": "Quel test permet de reconnaître une source primaire d'une source secondaire de lumière ?",
+      "verso": "Le test du noir complet : on éteint tout et l'on ferme tout. Une source primaire reste visible ; une source secondaire disparaît.",
+      "difficulte": 2,
+      "tags": [
+        "test-du-noir",
+        "reconnaissance"
+      ]
+    },
+    {
+      "id": "PC4E-P09-006",
+      "lecon": "Les sources primaires et les sources secondaires de lumière",
+      "type": "definition",
+      "recto": "Dans les deux classements des sources de lumière, à quelle question chacun répond-il ?",
+      "verso": "Primaire ou secondaire : le corps fabrique-t-il la lumière qu'il envoie ? Naturelle ou artificielle : le corps existe-t-il sans l'homme ? Les deux classements se croisent.",
+      "difficulte": 2,
+      "tags": [
+        "classement",
+        "sources"
+      ]
+    },
+    {
+      "id": "PC4E-P09-007",
+      "lecon": "Les sources primaires et les sources secondaires de lumière",
+      "type": "definition",
+      "recto": "Comment classe-t-on la Lune parmi les sources de lumière ?",
+      "verso": "C'est une source secondaire naturelle : elle existe sans l'homme et ne fait que renvoyer la lumière du Soleil.",
+      "difficulte": 2,
+      "tags": [
+        "lune",
+        "source-secondaire"
+      ]
+    },
+    {
+      "id": "PC4E-P09-008",
+      "lecon": "Les sources primaires et les sources secondaires de lumière",
+      "type": "definition",
+      "recto": "Comment classe-t-on un miroir parmi les sources de lumière ?",
+      "verso": "C'est une source secondaire artificielle : il renvoie la lumière qu'il reçoit et il est fabriqué par l'homme.",
+      "difficulte": 2,
+      "tags": [
+        "miroir",
+        "source-secondaire"
+      ]
+    },
+    {
+      "id": "PC4E-P09-009",
+      "lecon": "Les sources primaires et les sources secondaires de lumière",
+      "type": "definition",
+      "recto": "Quelle différence y a-t-il entre une étoile et une planète du point de vue de la lumière ?",
+      "verso": "Une étoile, comme le Soleil, produit sa propre lumière : c'est une source primaire. Une planète renvoie la lumière du Soleil : c'est une source secondaire.",
+      "difficulte": 2,
+      "tags": [
+        "etoile",
+        "planete"
+      ]
+    },
+    {
+      "id": "PC4E-P09-010",
+      "lecon": "Les sources primaires et les sources secondaires de lumière",
+      "type": "definition",
+      "recto": "Pourquoi une tôle neuve qui éblouit en plein midi n'est-elle pas une source primaire ?",
+      "verso": "Briller n'est pas produire de la lumière : la tôle ne fabrique rien, elle renvoie beaucoup de la lumière du Soleil. C'est une source secondaire.",
+      "difficulte": 3,
+      "tags": [
+        "briller",
+        "piege"
+      ]
+    },
+    {
+      "id": "PC4E-P09-011",
+      "lecon": "Le cheminement de la lumière, la vision et les milieux traversés",
+      "type": "formule",
+      "recto": "Quel chemin suit la lumière pour qu'on voie un objet éclairé ?",
+      "verso": "Source $\\rightarrow$ objet $\\rightarrow$ oeil : la lumière part d'une source primaire, atteint l'objet, qui la renvoie dans toutes les directions, et une petite partie entre dans l'oeil.",
+      "difficulte": 2,
+      "tags": [
+        "cheminement",
+        "vision"
+      ]
+    },
+    {
+      "id": "PC4E-P09-012",
+      "lecon": "Le cheminement de la lumière, la vision et les milieux traversés",
+      "type": "formule",
+      "recto": "Quel chemin suit la lumière quand on regarde une source primaire ?",
+      "verso": "Source $\\rightarrow$ oeil : la lumière va directement de la source à l'oeil.",
+      "difficulte": 1,
+      "tags": [
+        "cheminement",
+        "source-primaire"
+      ]
+    },
+    {
+      "id": "PC4E-P09-013",
+      "lecon": "Le cheminement de la lumière, la vision et les milieux traversés",
+      "type": "formule",
+      "recto": "Quelles sont les trois conditions de visibilité d'un objet ?",
+      "verso": "Réunies en même temps : l'objet envoie de la lumière vers l'oeil (il en produit ou il en renvoie) ; le trajet objet-oeil est libre (milieu transparent, sans obstacle opaque) ; l'oeil est ouvert et en état de recevoir cette lumière.",
+      "difficulte": 2,
+      "tags": [
+        "visibilite",
+        "conditions"
+      ]
+    },
+    {
+      "id": "PC4E-P09-014",
+      "lecon": "Le cheminement de la lumière, la vision et les milieux traversés",
+      "type": "definition",
+      "recto": "Pourquoi l'oeil n'est-il pas une source de lumière ?",
+      "verso": "L'oeil ne produit aucune lumière : il reçoit celle qui vient des objets. C'est un récepteur, et sur un schéma aucune flèche ne part de l'oeil.",
+      "difficulte": 3,
+      "tags": [
+        "oeil",
+        "recepteur",
+        "piege"
+      ]
+    },
+    {
+      "id": "PC4E-P09-015",
+      "lecon": "Le cheminement de la lumière, la vision et les milieux traversés",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on un corps transparent ?",
+      "verso": "C'est un corps qui laisse passer la lumière sans la disperser : on voit nettement à travers lui. Exemples : l'air, l'eau claire, le verre à vitre.",
+      "difficulte": 1,
+      "tags": [
+        "transparent"
+      ]
+    },
+    {
+      "id": "PC4E-P09-016",
+      "lecon": "Le cheminement de la lumière, la vision et les milieux traversés",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on un corps translucide ?",
+      "verso": "C'est un corps qui laisse passer une partie de la lumière en la dispersant : on voit une clarté, mais pas les formes. Exemples : le papier calque, le verre dépoli, l'eau trouble.",
+      "difficulte": 1,
+      "tags": [
+        "translucide"
+      ]
+    },
+    {
+      "id": "PC4E-P09-017",
+      "lecon": "Le cheminement de la lumière, la vision et les milieux traversés",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on un corps opaque ?",
+      "verso": "C'est un corps qui ne laisse pas passer la lumière : on ne voit rien à travers lui. Exemples : le carton, la tôle, le bois, le mur.",
+      "difficulte": 1,
+      "tags": [
+        "opaque"
+      ]
+    },
+    {
+      "id": "PC4E-P09-018",
+      "lecon": "Le cheminement de la lumière, la vision et les milieux traversés",
+      "type": "definition",
+      "recto": "Pourquoi un verre teinté en vert est-il un corps transparent ?",
+      "verso": "Transparent, translucide et opaque décrivent un comportement vis-à-vis de la lumière, non une couleur : le verre teinté laisse passer la lumière sans la disperser, on voit nettement à travers.",
+      "difficulte": 3,
+      "tags": [
+        "transparent",
+        "couleur"
+      ]
+    },
+    {
+      "id": "PC4E-P09-019",
+      "lecon": "Le cheminement de la lumière, la vision et les milieux traversés",
+      "type": "definition",
+      "recto": "Pourquoi le papier calque est-il translucide et non transparent ?",
+      "verso": "La lumière le traverse mais dispersée : on voit une clarté sans pouvoir lire à travers. Translucide est un comportement à part, et non « un peu transparent ».",
+      "difficulte": 3,
+      "tags": [
+        "translucide",
+        "piege"
+      ]
+    },
+    {
+      "id": "PC4E-P09-020",
+      "lecon": "Le cheminement de la lumière, la vision et les milieux traversés",
+      "type": "definition",
+      "recto": "Quand l'air propre devient-il un milieu translucide ?",
+      "verso": "Quand il est chargé de poussière, par l'harmattan, ou de gouttelettes d'eau, comme dans la brume du petit matin.",
+      "difficulte": 2,
+      "tags": [
+        "milieu",
+        "harmattan"
+      ]
+    },
+    {
+      "id": "PC4E-P09-021",
+      "lecon": "Le cheminement de la lumière, la vision et les milieux traversés",
+      "type": "definition",
+      "recto": "Pourquoi un objet éclairé n'est-il pas forcément visible ?",
+      "verso": "Il faut aussi que le trajet entre l'objet et l'oeil soit libre : un objet éclairé au fond d'une boîte bouchée reste invisible.",
+      "difficulte": 3,
+      "tags": [
+        "eclaire",
+        "visible",
+        "piege"
+      ]
+    },
+    {
+      "id": "PC4E-P09-022",
+      "lecon": "Les récepteurs de lumière",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on un récepteur de lumière ?",
+      "verso": "C'est un corps ou un dispositif (on dit aussi un détecteur) qui reçoit la lumière et la transforme en autre chose ; il subit une transformation temporaire ou définitive.",
+      "difficulte": 1,
+      "tags": [
+        "recepteur",
+        "vocabulaire"
+      ]
+    },
+    {
+      "id": "PC4E-P09-023",
+      "lecon": "Les récepteurs de lumière",
+      "type": "definition",
+      "recto": "Quelle différence y a-t-il entre une source et un récepteur de lumière ?",
+      "verso": "Une source produit ou renvoie de la lumière ; un récepteur reçoit la lumière et la transforme.",
+      "difficulte": 2,
+      "tags": [
+        "source",
+        "recepteur"
+      ]
+    },
+    {
+      "id": "PC4E-P09-024",
+      "lecon": "Les récepteurs de lumière",
+      "type": "definition",
+      "recto": "Quels sont les récepteurs biologiques de lumière ?",
+      "verso": "L'oeil, où la lumière forme une image sur la rétine qui envoie un message au cerveau par le nerf optique, et la plante verte, qui utilise la lumière grâce à sa chlorophylle pour fabriquer sa nourriture.",
+      "difficulte": 2,
+      "tags": [
+        "recepteur-biologique",
+        "oeil"
+      ]
+    },
+    {
+      "id": "PC4E-P09-025",
+      "lecon": "Les récepteurs de lumière",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on un récepteur photochimique ?",
+      "verso": "C'est un corps que la lumière transforme chimiquement, comme la pellicule photographique (sels d'argent) ou un tissu coloré qui pâlit au soleil.",
+      "difficulte": 2,
+      "tags": [
+        "photochimique"
+      ]
+    },
+    {
+      "id": "PC4E-P09-026",
+      "lecon": "Les récepteurs de lumière",
+      "type": "formule",
+      "recto": "Comment se comporte le chlorure d'argent vis-à-vis de la lumière ?",
+      "verso": "Ce solide blanc noircit à la lumière et reste blanc à l'obscurité : c'est un récepteur photochimique.",
+      "difficulte": 2,
+      "tags": [
+        "chlorure-d-argent",
+        "photochimique"
+      ]
+    },
+    {
+      "id": "PC4E-P09-027",
+      "lecon": "Les récepteurs de lumière",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on un récepteur photoélectrique ?",
+      "verso": "C'est un récepteur qui transforme la lumière en électricité, ou qui laisse plus ou moins bien passer le courant selon la lumière qu'il reçoit.",
+      "difficulte": 2,
+      "tags": [
+        "photoelectrique"
+      ]
+    },
+    {
+      "id": "PC4E-P09-028",
+      "lecon": "Les récepteurs de lumière",
+      "type": "definition",
+      "recto": "Quels sont des exemples de récepteurs photoélectriques ?",
+      "verso": "La cellule photoélectrique, la plaque solaire (photopile), la photodiode, la photorésistance et le capteur d'un appareil photo ou d'un téléphone (C.C.D.).",
+      "difficulte": 2,
+      "tags": [
+        "photoelectrique",
+        "exemples"
+      ]
+    },
+    {
+      "id": "PC4E-P09-029",
+      "lecon": "Les récepteurs de lumière",
+      "type": "formule",
+      "recto": "Quelles sont des applications de l'effet photoélectrique ?",
+      "verso": "Les panneaux solaires (lampes de case, pompes de forage, réfrigérateurs à vaccins), les photorésistances des éclairages automatiques, les cellules des portes automatiques et les capteurs des appareils photo et des téléphones.",
+      "difficulte": 2,
+      "tags": [
+        "applications",
+        "photoelectrique"
+      ]
+    },
+    {
+      "id": "PC4E-P09-030",
+      "lecon": "Les récepteurs de lumière",
+      "type": "definition",
+      "recto": "Pourquoi une plaque solaire n'est-elle pas une source de lumière, contrairement à une LED ?",
+      "verso": "La plaque solaire reçoit la lumière et donne du courant : c'est un récepteur photoélectrique. La LED reçoit du courant et donne de la lumière : c'est une source primaire.",
+      "difficulte": 3,
+      "tags": [
+        "plaque-solaire",
+        "led",
+        "piege"
+      ]
+    },
+    {
+      "id": "PC4E-P09-031",
+      "lecon": "Les récepteurs de lumière",
+      "type": "definition",
+      "recto": "Pourquoi est-il faux de dire qu'une photorésistance produit de l'électricité ?",
+      "verso": "Elle ne produit pas de courant : elle laisse seulement plus ou moins bien passer le courant selon la lumière qu'elle reçoit.",
+      "difficulte": 3,
+      "tags": [
+        "photoresistance"
+      ]
+    },
+    {
+      "id": "PC4E-P09-032",
+      "lecon": "Les récepteurs de lumière",
+      "type": "definition",
+      "recto": "D'où vient le préfixe « photo » de photochimique et photoélectrique ?",
+      "verso": "Du grec phôs, phôtos, la lumière : un effet photochimique est un effet chimique de la lumière, un effet photoélectrique un effet électrique de la lumière.",
+      "difficulte": 1,
+      "tags": [
+        "etymologie"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,427 @@
+{
+  "matiere": "Physique-Chimie",
+  "partie": "Physique",
+  "niveau": "4ème",
+  "chapitre": "Physique, Chapitre 16 : La notion de force",
+  "source": "pc/4eme/Chapitre_16_La_notion_de_force",
+  "nombre_cartes": 35,
+  "cartes": [
+    {
+      "id": "PC4E-P16-001",
+      "lecon": "La force, ses effets et ses deux catégories",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on une force ?",
+      "verso": "Une force est toute cause capable de mettre un corps en mouvement, de l'arrêter, de modifier son mouvement ou de le déformer. On dit aussi une action mécanique.",
+      "difficulte": 1,
+      "tags": [
+        "force",
+        "definition"
+      ]
+    },
+    {
+      "id": "PC4E-P16-002",
+      "lecon": "La force, ses effets et ses deux catégories",
+      "type": "definition",
+      "recto": "Entre combien de corps une force s'exerce-t-elle toujours ?",
+      "verso": "Entre deux corps : un qui l'exerce et un qui la subit. On dit « force exercée par A sur B ».",
+      "difficulte": 1,
+      "tags": [
+        "force",
+        "interaction"
+      ]
+    },
+    {
+      "id": "PC4E-P16-003",
+      "lecon": "La force, ses effets et ses deux catégories",
+      "type": "definition",
+      "recto": "Quels sont les effets dynamiques d'une force ?",
+      "verso": "Ce sont les effets sur le mouvement : mettre en mouvement un corps au repos, l'arrêter, augmenter ou diminuer sa vitesse, changer la direction de son mouvement.",
+      "difficulte": 2,
+      "tags": [
+        "effets",
+        "effet-dynamique"
+      ]
+    },
+    {
+      "id": "PC4E-P16-004",
+      "lecon": "La force, ses effets et ses deux catégories",
+      "type": "definition",
+      "recto": "Quel est l'effet statique d'une force ?",
+      "verso": "C'est la déformation du corps : l'allonger, le comprimer, le tordre ou le plier.",
+      "difficulte": 1,
+      "tags": [
+        "effets",
+        "effet-statique"
+      ]
+    },
+    {
+      "id": "PC4E-P16-005",
+      "lecon": "La force, ses effets et ses deux catégories",
+      "type": "definition",
+      "recto": "Quelle différence y a-t-il entre une déformation élastique et une déformation permanente ?",
+      "verso": "Une déformation élastique disparaît quand la force cesse (ressort) ; une déformation permanente reste (argile aplatie).",
+      "difficulte": 2,
+      "tags": [
+        "deformation",
+        "elastique"
+      ]
+    },
+    {
+      "id": "PC4E-P16-006",
+      "lecon": "La force, ses effets et ses deux catégories",
+      "type": "definition",
+      "recto": "Qu'est-ce qu'une force de contact ?",
+      "verso": "Une force qui ne s'exerce que si les deux corps se touchent : poussée ou traction d'une main, tension d'un fil, réaction d'un support, frottement, poussée du vent.",
+      "difficulte": 1,
+      "tags": [
+        "categories",
+        "force-de-contact"
+      ]
+    },
+    {
+      "id": "PC4E-P16-007",
+      "lecon": "La force, ses effets et ses deux catégories",
+      "type": "definition",
+      "recto": "Quelles sont les trois forces à distance étudiées en 4ème ?",
+      "verso": "Le poids (attraction de la Terre), la force magnétique d'un aimant sur le fer et la force électrostatique d'un corps électrisé sur de petits morceaux de papier.",
+      "difficulte": 2,
+      "tags": [
+        "categories",
+        "force-a-distance"
+      ]
+    },
+    {
+      "id": "PC4E-P16-008",
+      "lecon": "La force, ses effets et ses deux catégories",
+      "type": "definition",
+      "recto": "Quelle est la direction de la tension $\\vec{T}$ d'un fil tendu ?",
+      "verso": "Elle est dirigée le long du fil et appliquée au point d'attache ; c'est une force de contact. Un fil mou n'exerce aucune tension.",
+      "difficulte": 2,
+      "tags": [
+        "tension",
+        "forces-usuelles"
+      ]
+    },
+    {
+      "id": "PC4E-P16-009",
+      "lecon": "La force, ses effets et ses deux catégories",
+      "type": "definition",
+      "recto": "Comment est dirigée la force de frottement $\\vec{f}$ ?",
+      "verso": "C'est une force de contact qui s'oppose au glissement : elle est dirigée en sens contraire du mouvement (ou du glissement possible).",
+      "difficulte": 2,
+      "tags": [
+        "frottement",
+        "forces-usuelles"
+      ]
+    },
+    {
+      "id": "PC4E-P16-010",
+      "lecon": "La force, ses effets et ses deux catégories",
+      "type": "definition",
+      "recto": "Pourquoi la poussée du vent sur une tôle n'est-elle pas une force à distance ?",
+      "verso": "Parce que l'air est un corps qui touche la tôle : la poussée du vent est une force de contact.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "force-de-contact"
+      ]
+    },
+    {
+      "id": "PC4E-P16-011",
+      "lecon": "La force, ses effets et ses deux catégories",
+      "type": "definition",
+      "recto": "Pourquoi un mur poussé qui ne bouge pas subit-il quand même une force ?",
+      "verso": "L'absence d'effet visible ne prouve pas l'absence de force : la force existe, mais les fondations retiennent le mur et compensent son effet.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "effets"
+      ]
+    },
+    {
+      "id": "PC4E-P16-012",
+      "lecon": "Les quatre caractéristiques d'une force",
+      "type": "definition",
+      "recto": "Quelles sont les quatre caractéristiques d'une force ?",
+      "verso": "Son point d'application, sa direction (droite d'action), son sens et son intensité (ou valeur) en newtons.",
+      "difficulte": 1,
+      "tags": [
+        "caracteristiques"
+      ]
+    },
+    {
+      "id": "PC4E-P16-013",
+      "lecon": "Les quatre caractéristiques d'une force",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on le point d'application d'une force ?",
+      "verso": "C'est l'endroit précis du corps où la force s'exerce : un point, et non le corps entier.",
+      "difficulte": 1,
+      "tags": [
+        "point-d-application"
+      ]
+    },
+    {
+      "id": "PC4E-P16-014",
+      "lecon": "Les quatre caractéristiques d'une force",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on la direction d'une force ?",
+      "verso": "C'est la droite selon laquelle la force agit, appelée aussi droite d'action : elle est horizontale, verticale ou oblique.",
+      "difficulte": 2,
+      "tags": [
+        "direction",
+        "droite-d-action"
+      ]
+    },
+    {
+      "id": "PC4E-P16-015",
+      "lecon": "Les quatre caractéristiques d'une force",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on le sens d'une force ?",
+      "verso": "C'est celui des deux sens de la droite d'action dans lequel la force agit : vers le haut ou vers le bas, vers la droite ou vers la gauche.",
+      "difficulte": 2,
+      "tags": [
+        "sens"
+      ]
+    },
+    {
+      "id": "PC4E-P16-016",
+      "lecon": "Les quatre caractéristiques d'une force",
+      "type": "definition",
+      "recto": "Pourquoi « vers le bas » ne peut-il pas être la direction d'un poids ?",
+      "verso": "« Vers le bas » est un sens. La direction est une droite : pour un poids, la direction est verticale et le sens est vers le bas.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "direction",
+        "sens"
+      ]
+    },
+    {
+      "id": "PC4E-P16-017",
+      "lecon": "Les quatre caractéristiques d'une force",
+      "type": "definition",
+      "recto": "Comment précise-t-on une direction oblique ?",
+      "verso": "Par l'angle qu'elle fait avec l'horizontale, mesuré au rapporteur ; par exemple $60^{\\circ}$ avec l'horizontale, soit $30^{\\circ}$ avec la verticale.",
+      "difficulte": 2,
+      "tags": [
+        "direction",
+        "oblique"
+      ]
+    },
+    {
+      "id": "PC4E-P16-018",
+      "lecon": "Les quatre caractéristiques d'une force",
+      "type": "definition",
+      "recto": "Quelle différence de notation y a-t-il entre $\\vec{F}$ et $F$ ?",
+      "verso": "$\\vec{F}$, avec la flèche, désigne la force elle-même ; $F$, sans flèche, est son intensité, un nombre : on écrit $F = 25~\\mathrm{N}$, jamais $\\vec{F} = 25~\\mathrm{N}$.",
+      "difficulte": 2,
+      "tags": [
+        "notation",
+        "intensite"
+      ]
+    },
+    {
+      "id": "PC4E-P16-019",
+      "lecon": "La représentation d'une force par un vecteur",
+      "type": "definition",
+      "recto": "Par quel objet mathématique représente-t-on une force sur un schéma ?",
+      "verso": "Par un vecteur, c'est-à-dire une flèche tracée sur le schéma.",
+      "difficulte": 1,
+      "tags": [
+        "vecteur",
+        "representation"
+      ]
+    },
+    {
+      "id": "PC4E-P16-020",
+      "lecon": "La représentation d'une force par un vecteur",
+      "type": "definition",
+      "recto": "Dans la représentation d'une force par un vecteur, que représentent l'origine et la pointe de la flèche ?",
+      "verso": "L'origine de la flèche est le point d'application de la force ; la pointe indique son sens. La droite qui porte la flèche est la direction.",
+      "difficulte": 2,
+      "tags": [
+        "vecteur",
+        "representation"
+      ]
+    },
+    {
+      "id": "PC4E-P16-021",
+      "lecon": "La représentation d'une force par un vecteur",
+      "type": "formule",
+      "recto": "Avec une échelle de $1~\\mathrm{cm}$ pour $a$ newtons, comment calcule-t-on la longueur de la flèche d'une force ?",
+      "verso": "$\\text{longueur (cm)} = \\dfrac{\\text{intensité (N)}}{a}$.",
+      "difficulte": 2,
+      "tags": [
+        "echelle",
+        "calcul"
+      ]
+    },
+    {
+      "id": "PC4E-P16-022",
+      "lecon": "La représentation d'une force par un vecteur",
+      "type": "formule",
+      "recto": "Avec une échelle de $1~\\mathrm{cm}$ pour $a$ newtons, comment lit-on l'intensité d'une force sur un schéma ?",
+      "verso": "$\\text{intensité (N)} = \\text{longueur (cm)} \\times a$, la longueur étant mesurée du point d'application au sommet de la pointe.",
+      "difficulte": 2,
+      "tags": [
+        "echelle",
+        "lecture"
+      ]
+    },
+    {
+      "id": "PC4E-P16-023",
+      "lecon": "La représentation d'une force par un vecteur",
+      "type": "definition",
+      "recto": "Pourquoi l'échelle est-elle obligatoire sur un schéma de force ?",
+      "verso": "Sans échelle écrite, une même longueur peut représenter n'importe quelle intensité : le schéma n'est plus lisible.",
+      "difficulte": 2,
+      "tags": [
+        "echelle"
+      ]
+    },
+    {
+      "id": "PC4E-P16-024",
+      "lecon": "La représentation d'une force par un vecteur",
+      "type": "definition",
+      "recto": "Quelles longueurs de flèche vise-t-on quand on choisit une échelle de représentation des forces ?",
+      "verso": "Une longueur comprise entre $2~\\mathrm{cm}$ et $6~\\mathrm{cm}$, avec un nombre $a$ simple ($1$, $2$, $5$, $10$, $20$, $50$ ou $100~\\mathrm{N}$ pour $1~\\mathrm{cm}$).",
+      "difficulte": 2,
+      "tags": [
+        "echelle",
+        "choix"
+      ]
+    },
+    {
+      "id": "PC4E-P16-025",
+      "lecon": "La représentation d'une force par un vecteur",
+      "type": "definition",
+      "recto": "Quelle erreur faut-il éviter quand un schéma porte plusieurs forces ?",
+      "verso": "Changer d'échelle entre les forces : il faut la même échelle pour toutes, sinon on ne peut plus comparer leurs intensités par la longueur des flèches.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "echelle"
+      ]
+    },
+    {
+      "id": "PC4E-P16-026",
+      "lecon": "La représentation d'une force par un vecteur",
+      "type": "definition",
+      "recto": "Que signifie une échelle écrite $0{,}5~\\mathrm{cm/N}$ ?",
+      "verso": "Elle signifie $1~\\mathrm{cm}$ pour $2~\\mathrm{N}$.",
+      "difficulte": 2,
+      "tags": [
+        "echelle",
+        "notation"
+      ]
+    },
+    {
+      "id": "PC4E-P16-027",
+      "lecon": "Le dynamomètre, le newton et l'équilibre sous deux forces",
+      "type": "definition",
+      "recto": "Quelle est l'unité légale de l'intensité d'une force ?",
+      "verso": "Le newton, de symbole $\\mathrm{N}$ (nom écrit sans majuscule, symbole avec majuscule).",
+      "difficulte": 1,
+      "tags": [
+        "newton",
+        "unite"
+      ]
+    },
+    {
+      "id": "PC4E-P16-028",
+      "lecon": "Le dynamomètre, le newton et l'équilibre sous deux forces",
+      "type": "definition",
+      "recto": "Quel instrument mesure l'intensité d'une force ?",
+      "verso": "Le dynamomètre, constitué d'un ressort, d'un index mobile, d'une graduation en newtons et d'un ou deux crochets.",
+      "difficulte": 1,
+      "tags": [
+        "dynamometre",
+        "instrument"
+      ]
+    },
+    {
+      "id": "PC4E-P16-029",
+      "lecon": "Le dynamomètre, le newton et l'équilibre sous deux forces",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on la portée d'un dynamomètre ?",
+      "verso": "C'est la plus grande force qu'il peut mesurer sans être abîmé.",
+      "difficulte": 1,
+      "tags": [
+        "dynamometre",
+        "portee"
+      ]
+    },
+    {
+      "id": "PC4E-P16-030",
+      "lecon": "Le dynamomètre, le newton et l'équilibre sous deux forces",
+      "type": "formule",
+      "recto": "Sur quel principe repose le dynamomètre ?",
+      "verso": "L'allongement du ressort est proportionnel à l'intensité de la force qui le tire, tant que la portée n'est pas dépassée : la graduation est donc régulière.",
+      "difficulte": 2,
+      "tags": [
+        "dynamometre",
+        "proportionnalite"
+      ]
+    },
+    {
+      "id": "PC4E-P16-031",
+      "lecon": "Le dynamomètre, le newton et l'équilibre sous deux forces",
+      "type": "formule",
+      "recto": "Quelles précautions prend-on pour mesurer une force avec un dynamomètre ?",
+      "verso": "Choisir une portée supérieure à la force mais pas exagérée, tenir l'appareil dans la direction de la force, régler le zéro à vide, lire l'oeil en face de l'index immobile et écrire l'unité.",
+      "difficulte": 2,
+      "tags": [
+        "dynamometre",
+        "mesure"
+      ]
+    },
+    {
+      "id": "PC4E-P16-032",
+      "lecon": "Le dynamomètre, le newton et l'équilibre sous deux forces",
+      "type": "formule",
+      "recto": "Quelles conditions doivent remplir deux forces $\\vec{F_1}$ et $\\vec{F_2}$ appliquées à un solide en équilibre ?",
+      "verso": "Elles ont la même droite d'action, des sens contraires et la même intensité $F_1 = F_2$ ; on écrit $\\vec{F_1} + \\vec{F_2} = \\vec{0}$.",
+      "difficulte": 2,
+      "tags": [
+        "equilibre",
+        "deux-forces"
+      ]
+    },
+    {
+      "id": "PC4E-P16-033",
+      "lecon": "Le dynamomètre, le newton et l'équilibre sous deux forces",
+      "type": "definition",
+      "recto": "Pourquoi deux forces opposées de même intensité portées par deux droites parallèles distinctes n'assurent-elles pas l'équilibre d'un solide ?",
+      "verso": "Parce qu'il manque la condition de même droite d'action : appliquées en deux points sur des droites distinctes, elles font tourner le solide.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "equilibre"
+      ]
+    },
+    {
+      "id": "PC4E-P16-034",
+      "lecon": "Le dynamomètre, le newton et l'équilibre sous deux forces",
+      "type": "formule",
+      "recto": "Pour un cahier immobile posé sur une table horizontale, quelle relation lie la réaction $R$ de la table et le poids $P$ du cahier ?",
+      "verso": "$R = P$ : le cahier est en équilibre sous deux forces, son poids vers le bas et la réaction de la table vers le haut, sur la même verticale.",
+      "difficulte": 2,
+      "tags": [
+        "equilibre",
+        "reaction"
+      ]
+    },
+    {
+      "id": "PC4E-P16-035",
+      "lecon": "Le dynamomètre, le newton et l'équilibre sous deux forces",
+      "type": "definition",
+      "recto": "Pourquoi l'indication d'un dynamomètre auquel pend un sachet immobile est-elle égale au poids du sachet ?",
+      "verso": "L'appareil mesure la tension de son ressort ; le sachet étant en équilibre sous son poids et cette tension, on a $T = P$.",
+      "difficulte": 3,
+      "tags": [
+        "equilibre",
+        "dynamometre"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,430 @@
+{
+  "matiere": "Physique-Chimie",
+  "partie": "Physique",
+  "niveau": "Terminale D",
+  "chapitre": "Physique, Chapitre 16 : Les réactions nucléaires provoquées",
+  "source": "pc/tled/Chapitre_16_Les_reactions_nucleaires_provoquees",
+  "nombre_cartes": 36,
+  "cartes": [
+    {
+      "id": "PCTD-P16-001",
+      "lecon": "Les réactions nucléaires provoquées et leur bilan d'énergie",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on une réaction nucléaire provoquée ?",
+      "verso": "Une réaction (dite aussi forcée) au cours de laquelle un noyau cible est frappé par un noyau ou une particule projectile, ce qui donne naissance à de nouveaux noyaux : elle a une cause extérieure.",
+      "difficulte": 1,
+      "tags": [
+        "reaction-provoquee"
+      ]
+    },
+    {
+      "id": "PCTD-P16-002",
+      "lecon": "Les réactions nucléaires provoquées et leur bilan d'énergie",
+      "type": "definition",
+      "recto": "Quelle différence y a-t-il entre une désintégration radioactive et une réaction nucléaire provoquée ?",
+      "verso": "La désintégration se produit toute seule, sans projectile, et rien ne peut l'accélérer ni la freiner ; la réaction provoquée exige un projectile venu de l'extérieur.",
+      "difficulte": 2,
+      "tags": [
+        "spontane",
+        "provoque"
+      ]
+    },
+    {
+      "id": "PCTD-P16-003",
+      "lecon": "Les réactions nucléaires provoquées et leur bilan d'énergie",
+      "type": "formule",
+      "recto": "Dans une réaction nucléaire ${}^{A_1}_{Z_1}\\mathrm{X} + {}^{A_2}_{Z_2}\\mathrm{a} \\rightarrow {}^{A_3}_{Z_3}\\mathrm{Y} + {}^{A_4}_{Z_4}\\mathrm{b}$, quelles lois de conservation permettent d'équilibrer l'équation ?",
+      "verso": "La conservation du nombre de masse, $A_1 + A_2 = A_3 + A_4$, et celle du nombre de charge, $Z_1 + Z_2 = Z_3 + Z_4$ ; l'énergie totale, masse comprise, se conserve aussi.",
+      "difficulte": 1,
+      "tags": [
+        "conservation",
+        "equation"
+      ]
+    },
+    {
+      "id": "PCTD-P16-004",
+      "lecon": "Les réactions nucléaires provoquées et leur bilan d'énergie",
+      "type": "definition",
+      "recto": "Pourquoi ne doit-on pas dire que la masse totale se conserve dans une réaction nucléaire ?",
+      "verso": "Ce sont $A$ et $Z$ qui se conservent ; la masse varie, et c'est précisément cette variation, convertie par $E = mc^{2}$, qui fournit l'énergie. Seul l'ensemble masse plus énergie est conservé.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "masse"
+      ]
+    },
+    {
+      "id": "PCTD-P16-005",
+      "lecon": "Les réactions nucléaires provoquées et leur bilan d'énergie",
+      "type": "formule",
+      "recto": "Que signifie l'écriture abrégée $\\mathrm{{}^{14}_{7}N(\\alpha, p){}^{17}_{8}O}$ d'une réaction nucléaire ?",
+      "verso": "Le noyau cible azote 14 est frappé par une particule $\\alpha$ (projectile) ; il se forme de l'oxygène 17 et un proton est émis : $\\mathrm{{}^{14}_{7}N + {}^{4}_{2}He \\rightarrow {}^{17}_{8}O + {}^{1}_{1}p}$.",
+      "difficulte": 2,
+      "tags": [
+        "ecriture-abregee"
+      ]
+    },
+    {
+      "id": "PCTD-P16-006",
+      "lecon": "Les réactions nucléaires provoquées et leur bilan d'énergie",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on la radioactivité artificielle ?",
+      "verso": "La radioactivité d'un radionucléide obtenu par une réaction provoquée et qui n'existe pas dans la nature.",
+      "difficulte": 1,
+      "tags": [
+        "radioactivite-artificielle"
+      ]
+    },
+    {
+      "id": "PCTD-P16-007",
+      "lecon": "Les réactions nucléaires provoquées et leur bilan d'énergie",
+      "type": "formule",
+      "recto": "Comment définit-on le bilan énergétique $Q$ d'une réaction nucléaire ?",
+      "verso": "$Q = \\Delta m\\,c^{2}$ avec $\\Delta m = m_{\\text{finale}} - m_{\\text{initiale}}$, sommes des masses des noyaux d'arrivée et de départ, coefficients compris.",
+      "difficulte": 2,
+      "tags": [
+        "bilan-energetique"
+      ]
+    },
+    {
+      "id": "PCTD-P16-008",
+      "lecon": "Les réactions nucléaires provoquées et leur bilan d'énergie",
+      "type": "definition",
+      "recto": "Pour une réaction nucléaire de bilan $Q = (m_{\\text{finale}} - m_{\\text{initiale}})c^{2}$, quand dit-on qu'elle est exoénergétique ?",
+      "verso": "Quand $\\Delta m \\lt 0$, donc $Q \\lt 0$ : le système a perdu de la masse et libère l'énergie $E_{\\text{lib}} = \\lvert Q \\rvert = (m_{\\text{initiale}} - m_{\\text{finale}})c^{2}$.",
+      "difficulte": 2,
+      "tags": [
+        "exoenergetique"
+      ]
+    },
+    {
+      "id": "PCTD-P16-009",
+      "lecon": "Les réactions nucléaires provoquées et leur bilan d'énergie",
+      "type": "definition",
+      "recto": "Pour une réaction nucléaire de bilan $Q = (m_{\\text{finale}} - m_{\\text{initiale}})c^{2}$, quand dit-on qu'elle est endoénergétique ?",
+      "verso": "Quand $\\Delta m \\gt 0$, donc $Q \\gt 0$ : le système a gagné de la masse, et la réaction ne se produit que si on lui fournit une énergie au moins égale à $Q$.",
+      "difficulte": 2,
+      "tags": [
+        "endoenergetique"
+      ]
+    },
+    {
+      "id": "PCTD-P16-010",
+      "lecon": "Les réactions nucléaires provoquées et leur bilan d'énergie",
+      "type": "formule",
+      "recto": "Comment convertit-on en $\\mathrm{MeV}$ puis en joules un défaut de masse $\\Delta m$ exprimé en $\\mathrm{u}$ ?",
+      "verso": "$Q~(\\mathrm{MeV}) = \\Delta m~(\\mathrm{u}) \\times 931{,}5$, car $1~\\mathrm{u} = 931{,}5~\\mathrm{MeV}/c^{2}$ ; puis $1~\\mathrm{MeV} = 1{,}60 \\times 10^{-13}~\\mathrm{J}$.",
+      "difficulte": 2,
+      "tags": [
+        "conversion",
+        "unites"
+      ]
+    },
+    {
+      "id": "PCTD-P16-011",
+      "lecon": "Les réactions nucléaires provoquées et leur bilan d'énergie",
+      "type": "formule",
+      "recto": "Comment s'exprime le bilan $Q$ d'une réaction nucléaire à l'aide des énergies de liaison ?",
+      "verso": "$Q = E_{\\ell,\\text{initiale}} - E_{\\ell,\\text{finale}}$ : la réaction libère de l'énergie quand les noyaux produits sont plus liés que les noyaux de départ.",
+      "difficulte": 3,
+      "tags": [
+        "energie-de-liaison"
+      ]
+    },
+    {
+      "id": "PCTD-P16-012",
+      "lecon": "Les réactions nucléaires provoquées et leur bilan d'énergie",
+      "type": "definition",
+      "recto": "Pourquoi le neutron est-il un projectile plus efficace que le proton ou la particule $\\alpha$ ?",
+      "verso": "Electriquement neutre, il ne subit aucune répulsion de la part du noyau cible chargé positivement : il pénètre le noyau même à très faible vitesse, alors qu'un projectile chargé doit avoir une grande énergie cinétique.",
+      "difficulte": 2,
+      "tags": [
+        "neutron",
+        "projectile"
+      ]
+    },
+    {
+      "id": "PCTD-P16-013",
+      "lecon": "Les réactions nucléaires provoquées et leur bilan d'énergie",
+      "type": "definition",
+      "recto": "Quelle erreur commet-on en arrondissant $m_{\\text{initiale}}$ et $m_{\\text{finale}}$ avant de calculer $\\Delta m$ ?",
+      "verso": "On retranche deux nombres presque égaux : l'arrondi détruit le résultat, qui peut être faux d'un facteur dix. On garde tous les chiffres jusqu'à $\\Delta m$.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "arrondi"
+      ]
+    },
+    {
+      "id": "PCTD-P16-014",
+      "lecon": "La fission, la réaction en chaîne et le réacteur nucléaire",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on la fission nucléaire ?",
+      "verso": "La réaction au cours de laquelle un noyau lourd, frappé par un neutron, se sépare en deux noyaux plus légers, avec émission de deux ou trois neutrons et libération d'une grande quantité d'énergie.",
+      "difficulte": 1,
+      "tags": [
+        "fission"
+      ]
+    },
+    {
+      "id": "PCTD-P16-015",
+      "lecon": "La fission, la réaction en chaîne et le réacteur nucléaire",
+      "type": "formule",
+      "recto": "Quelle est l'équation type de la fission de l'uranium 235 donnant du xénon 140 et du strontium 94 ?",
+      "verso": "$\\mathrm{{}^{235}_{92}U + {}^{1}_{0}n \\rightarrow {}^{140}_{54}Xe + {}^{94}_{38}Sr + 2\\,{}^{1}_{0}n}$ ; on vérifie $236 = 140 + 94 + 2$ et $92 = 54 + 38$.",
+      "difficulte": 2,
+      "tags": [
+        "fission",
+        "equation"
+      ]
+    },
+    {
+      "id": "PCTD-P16-016",
+      "lecon": "La fission, la réaction en chaîne et le réacteur nucléaire",
+      "type": "formule",
+      "recto": "Quelle énergie libère en moyenne la fission d'un noyau d'uranium 235 ?",
+      "verso": "Environ $200~\\mathrm{MeV}$, soit $3{,}2 \\times 10^{-11}~\\mathrm{J}$ ; un gramme d'uranium 235 entièrement fissionné libère $8{,}2 \\times 10^{10}~\\mathrm{J}$.",
+      "difficulte": 1,
+      "tags": [
+        "fission",
+        "energie-liberee"
+      ]
+    },
+    {
+      "id": "PCTD-P16-017",
+      "lecon": "La fission, la réaction en chaîne et le réacteur nucléaire",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on un neutron thermique ?",
+      "verso": "Un neutron lent, dont l'énergie cinétique a été ramenée à celle de l'agitation thermique du milieu, environ $0{,}025~\\mathrm{eV}$ à la température ordinaire ; il est bien plus efficace qu'un neutron rapide pour fissionner l'uranium 235.",
+      "difficulte": 2,
+      "tags": [
+        "neutron-thermique"
+      ]
+    },
+    {
+      "id": "PCTD-P16-018",
+      "lecon": "La fission, la réaction en chaîne et le réacteur nucléaire",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on un nucléide fissile ?",
+      "verso": "Un nucléide dont le noyau peut subir la fission sous l'action d'un neutron lent, comme $\\mathrm{{}^{235}_{92}U}$, $\\mathrm{{}^{239}_{94}Pu}$ ou $\\mathrm{{}^{233}_{92}U}$.",
+      "difficulte": 1,
+      "tags": [
+        "fissile"
+      ]
+    },
+    {
+      "id": "PCTD-P16-019",
+      "lecon": "La fission, la réaction en chaîne et le réacteur nucléaire",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on un nucléide fertile ?",
+      "verso": "Un nucléide non fissile qui, après capture d'un neutron et une ou deux désintégrations, donne naissance à un nucléide fissile : $\\mathrm{{}^{238}_{92}U}$ conduit au plutonium 239, $\\mathrm{{}^{232}_{90}Th}$ à l'uranium 233.",
+      "difficulte": 2,
+      "tags": [
+        "fertile"
+      ]
+    },
+    {
+      "id": "PCTD-P16-020",
+      "lecon": "La fission, la réaction en chaîne et le réacteur nucléaire",
+      "type": "definition",
+      "recto": "Pourquoi l'uranium 238 n'est-il pas un nucléide fissile bien qu'il soit présent dans le combustible ?",
+      "verso": "Il ne fissionne pas sous l'action de neutrons lents : il est fertile, car il conduit au plutonium 239, qui, lui, est fissile.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "fissile",
+        "fertile"
+      ]
+    },
+    {
+      "id": "PCTD-P16-021",
+      "lecon": "La fission, la réaction en chaîne et le réacteur nucléaire",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on une réaction en chaîne ?",
+      "verso": "Une suite de fissions dans laquelle les neutrons libérés par une fission provoquent eux-mêmes de nouvelles fissions ; c'est pourquoi une équation de fission s'écrit toujours avec ses neutrons émis.",
+      "difficulte": 2,
+      "tags": [
+        "reaction-en-chaine"
+      ]
+    },
+    {
+      "id": "PCTD-P16-022",
+      "lecon": "La fission, la réaction en chaîne et le réacteur nucléaire",
+      "type": "definition",
+      "recto": "Quelle différence y a-t-il entre la réaction en chaîne d'un réacteur et celle d'une bombe ?",
+      "verso": "Dans un réacteur, les neutrons en excès sont absorbés : le nombre de fissions par seconde reste constant, la réaction est contrôlée. Dans une bombe, tous les neutrons provoquent des fissions : la réaction, incontrôlée, devient explosive.",
+      "difficulte": 2,
+      "tags": [
+        "reacteur",
+        "bombe"
+      ]
+    },
+    {
+      "id": "PCTD-P16-023",
+      "lecon": "La fission, la réaction en chaîne et le réacteur nucléaire",
+      "type": "definition",
+      "recto": "Dans un réacteur nucléaire, quel est le rôle du modérateur ?",
+      "verso": "Le modérateur (eau ordinaire, eau lourde ou graphite) ralentit les neutrons rapides, qui rebondissent sur ses noyaux légers et deviennent thermiques.",
+      "difficulte": 2,
+      "tags": [
+        "reacteur",
+        "moderateur"
+      ]
+    },
+    {
+      "id": "PCTD-P16-024",
+      "lecon": "La fission, la réaction en chaîne et le réacteur nucléaire",
+      "type": "definition",
+      "recto": "Dans un réacteur nucléaire, quel est le rôle des barres de commande ?",
+      "verso": "En bore ou en cadmium, elles absorbent des neutrons sans se casser : les enfoncer ralentit la réaction en chaîne, les retirer l'accélère, leur chute complète est l'arrêt d'urgence.",
+      "difficulte": 2,
+      "tags": [
+        "reacteur",
+        "barres-de-commande"
+      ]
+    },
+    {
+      "id": "PCTD-P16-025",
+      "lecon": "La fission, la réaction en chaîne et le réacteur nucléaire",
+      "type": "formule",
+      "recto": "Pour une centrale nucléaire de puissance électrique $P_{\\text{élec}}$ et de rendement $r$, quelle puissance libèrent les fissions ?",
+      "verso": "$P_{\\text{th}} = \\dfrac{P_{\\text{élec}}}{r}$, le rendement $r$ d'une centrale étant voisin de $30$ à $35~\\%$ ; le nombre de fissions par seconde vaut $\\dfrac{P_{\\text{th}}}{E_{\\text{lib}}}$.",
+      "difficulte": 3,
+      "tags": [
+        "centrale",
+        "rendement"
+      ]
+    },
+    {
+      "id": "PCTD-P16-026",
+      "lecon": "La fission, la réaction en chaîne et le réacteur nucléaire",
+      "type": "definition",
+      "recto": "Pourquoi la fission d'un noyau lourd et la fusion de deux noyaux légers libèrent-elles toutes deux de l'énergie ?",
+      "verso": "L'énergie de liaison par nucléon est maximale (environ $8{,}8~\\mathrm{MeV}$) vers $A = 56$ : casser un noyau lourd comme souder deux noyaux légers donne des noyaux plus liés, donc libère de l'énergie.",
+      "difficulte": 3,
+      "tags": [
+        "energie-de-liaison",
+        "fission",
+        "fusion"
+      ]
+    },
+    {
+      "id": "PCTD-P16-027",
+      "lecon": "La fusion, les applications et les dangers",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on la fusion nucléaire ?",
+      "verso": "La réaction au cours de laquelle deux noyaux légers s'unissent pour former un noyau plus lourd, avec libération d'une grande quantité d'énergie.",
+      "difficulte": 1,
+      "tags": [
+        "fusion"
+      ]
+    },
+    {
+      "id": "PCTD-P16-028",
+      "lecon": "La fusion, les applications et les dangers",
+      "type": "formule",
+      "recto": "Quelle est l'équation de la fusion deutérium-tritium ?",
+      "verso": "$\\mathrm{{}^{2}_{1}H + {}^{3}_{1}H \\rightarrow {}^{4}_{2}He + {}^{1}_{0}n}$, qui libère $17{,}6~\\mathrm{MeV}$.",
+      "difficulte": 1,
+      "tags": [
+        "fusion",
+        "equation"
+      ]
+    },
+    {
+      "id": "PCTD-P16-029",
+      "lecon": "La fusion, les applications et les dangers",
+      "type": "formule",
+      "recto": "Quel est le bilan de la réaction de fusion qui se produit dans le Soleil ?",
+      "verso": "Au terme d'une chaîne de transformations, $\\mathrm{4\\,{}^{1}_{1}H \\rightarrow {}^{4}_{2}He + 2\\,{}^{0}_{+1}e}$, qui libère environ $25~\\mathrm{MeV}$.",
+      "difficulte": 2,
+      "tags": [
+        "fusion",
+        "soleil"
+      ]
+    },
+    {
+      "id": "PCTD-P16-030",
+      "lecon": "La fusion, les applications et les dangers",
+      "type": "definition",
+      "recto": "Pourquoi la fusion nucléaire est-elle appelée réaction thermonucléaire ?",
+      "verso": "Les deux noyaux, chargés positivement, se repoussent : la fusion n'est possible qu'à très haute température, plusieurs millions de degrés.",
+      "difficulte": 2,
+      "tags": [
+        "thermonucleaire"
+      ]
+    },
+    {
+      "id": "PCTD-P16-031",
+      "lecon": "La fusion, les applications et les dangers",
+      "type": "formule",
+      "recto": "Comment compare-t-on correctement l'énergie libérée par la fission de l'uranium 235 et par la fusion deutérium-tritium ?",
+      "verso": "On ramène au nucléon, jamais les énergies brutes : fission $\\dfrac{200}{236} \\approx 0{,}85~\\mathrm{MeV}$, fusion $\\dfrac{17{,}6}{5} \\approx 3{,}5~\\mathrm{MeV}$ par nucléon. La fusion libère environ quatre fois plus à masse égale.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "comparaison",
+        "par-nucleon"
+      ]
+    },
+    {
+      "id": "PCTD-P16-032",
+      "lecon": "La fusion, les applications et les dangers",
+      "type": "definition",
+      "recto": "Quelle différence y a-t-il entre irradiation et contamination ?",
+      "verso": "L'irradiation est l'exposition à un rayonnement ; elle cesse quand on s'éloigne de la source. La contamination est la présence de matière radioactive sur ou dans le corps ; elle ne cesse pas quand on s'éloigne.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "irradiation",
+        "contamination"
+      ]
+    },
+    {
+      "id": "PCTD-P16-033",
+      "lecon": "La fusion, les applications et les dangers",
+      "type": "definition",
+      "recto": "Quelles sont des applications utiles des réactions nucléaires ?",
+      "verso": "Electricité en centrale ; médecine (radiothérapie, curiethérapie, scintigraphie, stérilisation du matériel) ; industrie (gammagraphie, jauges d'épaisseur) ; agriculture (conservation des denrées, insecte stérile) ; traceurs ; datation au carbone 14.",
+      "difficulte": 1,
+      "tags": [
+        "applications"
+      ]
+    },
+    {
+      "id": "PCTD-P16-034",
+      "lecon": "La fusion, les applications et les dangers",
+      "type": "definition",
+      "recto": "Quels sont les dangers liés à l'utilisation des réactions nucléaires ?",
+      "verso": "Irradiation et contamination ; brûlures, cancers et atteintes génétiques ; déchets à vie très longue, difficiles à stocker ; accidents de réacteur (Tchernobyl 1986, Fukushima 2011) ; armes nucléaires et prolifération.",
+      "difficulte": 1,
+      "tags": [
+        "dangers"
+      ]
+    },
+    {
+      "id": "PCTD-P16-035",
+      "lecon": "La fusion, les applications et les dangers",
+      "type": "definition",
+      "recto": "Pourquoi un aliment conservé par irradiation ne devient-il pas radioactif ?",
+      "verso": "Le rayonnement traverse l'aliment et y dépose de l'énergie sans y laisser de noyaux radioactifs.",
+      "difficulte": 2,
+      "tags": [
+        "irradiation",
+        "aliments"
+      ]
+    },
+    {
+      "id": "PCTD-P16-036",
+      "lecon": "La fusion, les applications et les dangers",
+      "type": "definition",
+      "recto": "Quelles précautions entourent l'emploi d'une source radioactive ?",
+      "verso": "La source est enfermée dans un château de plomb et suivie de sa fabrication à son élimination ; le personnel porte un dosimètre. En médecine, on pèse le bénéfice attendu contre la dose reçue.",
+      "difficulte": 2,
+      "tags": [
+        "precautions",
+        "dosimetre"
+      ]
+    }
+  ]
+}

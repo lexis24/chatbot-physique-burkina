@@ -1,0 +1,417 @@
+{
+  "matiere": "Physique-Chimie",
+  "partie": "Physique",
+  "niveau": "1ère D",
+  "chapitre": "Physique, Chapitre 5 : La propagation d'un signal",
+  "source": "pc/1ered/Chapitre_5_La_propagation_d_un_signal",
+  "nombre_cartes": 35,
+  "cartes": [
+    {
+      "id": "PC1D-P05-001",
+      "lecon": "Le signal et son milieu de propagation",
+      "type": "definition",
+      "recto": "En physique, qu'appelle-t-on un signal ?",
+      "verso": "C'est une perturbation de courte durée d'un milieu, qui se propage à partir de son point d'émission et qui transporte une information et de l'énergie.",
+      "difficulte": 1,
+      "tags": [
+        "signal"
+      ]
+    },
+    {
+      "id": "PC1D-P05-002",
+      "lecon": "Le signal et son milieu de propagation",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on un ébranlement ?",
+      "verso": "C'est un signal mécanique de courte durée qui se propage dans un milieu matériel.",
+      "difficulte": 1,
+      "tags": [
+        "ebranlement"
+      ]
+    },
+    {
+      "id": "PC1D-P05-003",
+      "lecon": "Le signal et son milieu de propagation",
+      "type": "definition",
+      "recto": "Quelles sont les trois phases de tout phénomène de signal ?",
+      "verso": "L'émission par une source, la propagation dans un milieu et la réception par un détecteur. Elles ont lieu à des instants différents : la réception est toujours postérieure à l'émission.",
+      "difficulte": 1,
+      "tags": [
+        "phases"
+      ]
+    },
+    {
+      "id": "PC1D-P05-004",
+      "lecon": "Le signal et son milieu de propagation",
+      "type": "definition",
+      "recto": "Quand dit-on qu'un milieu est élastique ?",
+      "verso": "Quand il se déforme sous l'action d'une force et revient de lui-même à son état initial quand cette action cesse : corde tendue, ressort, air, eau, rail d'acier. La pâte à modeler ne l'est pas.",
+      "difficulte": 2,
+      "tags": [
+        "milieu-elastique"
+      ]
+    },
+    {
+      "id": "PC1D-P05-005",
+      "lecon": "Le signal et son milieu de propagation",
+      "type": "definition",
+      "recto": "Pourquoi une bande de pâte à modeler tendue ne propage-t-elle aucun signal ?",
+      "verso": "Elle garde la déformation imposée : aucune force de rappel n'apparaît, donc rien n'est transmis à la tranche suivante et la déformation reste sur place.",
+      "difficulte": 2,
+      "tags": [
+        "milieu-elastique"
+      ]
+    },
+    {
+      "id": "PC1D-P05-006",
+      "lecon": "Le signal et son milieu de propagation",
+      "type": "definition",
+      "recto": "Quelle est la propriété fondamentale de la propagation d'un signal du point de vue de la matière et de l'énergie ?",
+      "verso": "La propagation se fait sans transport de matière, mais avec transport d'énergie : chaque point du milieu quitte sa position de repos et y revient, sans suivre le signal.",
+      "difficulte": 1,
+      "tags": [
+        "propriete-fondamentale"
+      ]
+    },
+    {
+      "id": "PC1D-P05-007",
+      "lecon": "Le signal et son milieu de propagation",
+      "type": "definition",
+      "recto": "Quelle différence de milieu de propagation y a-t-il entre un signal mécanique et un signal électromagnétique ?",
+      "verso": "Un signal mécanique exige un milieu matériel et ne se propage pas dans le vide. Un signal électromagnétique (lumière, ondes radio) se propage dans la matière transparente et aussi dans le vide.",
+      "difficulte": 2,
+      "tags": [
+        "milieux",
+        "electromagnetique"
+      ]
+    },
+    {
+      "id": "PC1D-P05-008",
+      "lecon": "Le signal et son milieu de propagation",
+      "type": "definition",
+      "recto": "Dans un milieu à deux dimensions comme la surface de l'eau, comment se propage le signal créé par la chute d'un caillou ?",
+      "verso": "Il part dans toutes les directions du plan sous forme de rides circulaires centrées sur le point de chute ; leur rayon augmente de $v \\times \\Delta t$ pendant une durée $\\Delta t$.",
+      "difficulte": 2,
+      "tags": [
+        "dimensions",
+        "rides"
+      ]
+    },
+    {
+      "id": "PC1D-P05-009",
+      "lecon": "Le signal et son milieu de propagation",
+      "type": "definition",
+      "recto": "Pourquoi un ballon qui roule n'est-il pas un signal ?",
+      "verso": "Ce qui avance, c'est l'objet lui-même avec sa matière. Dans un signal, c'est la déformation qui avance, pas la matière du milieu.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "transport-matiere"
+      ]
+    },
+    {
+      "id": "PC1D-P05-010",
+      "lecon": "Signal transversal et signal longitudinal",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on un signal transversal ?",
+      "verso": "Un signal dont la déformation du milieu est perpendiculaire à la direction de propagation : ébranlement le long d'une corde tendue, rides à la surface de l'eau.",
+      "difficulte": 1,
+      "tags": [
+        "transversal"
+      ]
+    },
+    {
+      "id": "PC1D-P05-011",
+      "lecon": "Signal transversal et signal longitudinal",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on un signal longitudinal ?",
+      "verso": "Un signal dont la déformation du milieu a la même direction que la propagation ; le milieu subit des compressions et des dilatations successives (ressort à boudin poussé dans son axe, son).",
+      "difficulte": 1,
+      "tags": [
+        "longitudinal"
+      ]
+    },
+    {
+      "id": "PC1D-P05-012",
+      "lecon": "Signal transversal et signal longitudinal",
+      "type": "definition",
+      "recto": "Pour un point d'un milieu qui porte un signal, qu'appelle-t-on son élongation $y$ ?",
+      "verso": "C'est son écart algébrique à sa position de repos, compté positivement d'un côté et négativement de l'autre, en mètres ou en centimètres. Au repos, $y = 0$.",
+      "difficulte": 2,
+      "tags": [
+        "elongation"
+      ]
+    },
+    {
+      "id": "PC1D-P05-013",
+      "lecon": "Signal transversal et signal longitudinal",
+      "type": "definition",
+      "recto": "Quelle différence y a-t-il entre la vitesse d'un point ébranlé et la célérité du signal ?",
+      "verso": "La vitesse du point est celle de son va-et-vient autour du repos : elle varie et s'annule. La célérité est la vitesse d'avance de la déformation : elle est constante dans un milieu homogène.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "celerite",
+        "vitesse"
+      ]
+    },
+    {
+      "id": "PC1D-P05-014",
+      "lecon": "Signal transversal et signal longitudinal",
+      "type": "definition",
+      "recto": "Pourquoi le son dans l'air est-il un signal longitudinal ?",
+      "verso": "Ce qui voyage est une surpression suivie d'une dépression : les couches d'air se poussent dans la direction de propagation et les molécules vont et viennent dans cette direction.",
+      "difficulte": 2,
+      "tags": [
+        "son",
+        "longitudinal"
+      ]
+    },
+    {
+      "id": "PC1D-P05-015",
+      "lecon": "Signal transversal et signal longitudinal",
+      "type": "definition",
+      "recto": "Comment évolue la forme d'un signal qui se propage dans un milieu homogène ?",
+      "verso": "Sans amortissement, il se propage sans déformation : forme et amplitude se conservent. En pratique, l'amplitude diminue peu à peu, car une partie de l'énergie est dissipée.",
+      "difficulte": 2,
+      "tags": [
+        "conservation-forme"
+      ]
+    },
+    {
+      "id": "PC1D-P05-016",
+      "lecon": "Signal transversal et signal longitudinal",
+      "type": "definition",
+      "recto": "Pourquoi une secousse horizontale donnée à une corde peut-elle produire un signal transversal ?",
+      "verso": "Transversal ne veut pas dire vertical : il suffit que la déformation soit perpendiculaire à la direction de propagation.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "transversal"
+      ]
+    },
+    {
+      "id": "PC1D-P05-017",
+      "lecon": "Signal transversal et signal longitudinal",
+      "type": "definition",
+      "recto": "Quels types de signaux un coup de marteau peut-il produire dans un rail d'acier ?",
+      "verso": "Un coup dans l'axe produit un signal longitudinal rapide ; un coup de côté produit en plus un signal transversal, plus lent.",
+      "difficulte": 2,
+      "tags": [
+        "rail",
+        "longitudinal",
+        "transversal"
+      ]
+    },
+    {
+      "id": "PC1D-P05-018",
+      "lecon": "La célérité d'un signal et le retard",
+      "type": "formule",
+      "recto": "Quelle relation définit la célérité $v$ d'un signal qui parcourt la distance $d$ pendant la durée $t$ ?",
+      "verso": "$v = \\dfrac{d}{t}$, avec $d$ en mètres, $t$ en secondes et $v$ en $\\mathrm{m/s}$ ; on en tire $d = v \\times t$ et $t = \\dfrac{d}{v}$.",
+      "difficulte": 1,
+      "tags": [
+        "celerite"
+      ]
+    },
+    {
+      "id": "PC1D-P05-019",
+      "lecon": "La célérité d'un signal et le retard",
+      "type": "definition",
+      "recto": "Dans un milieu homogène, de quoi la célérité d'un signal ne dépend-elle pas ?",
+      "verso": "Elle est constante : elle ne dépend ni de l'amplitude, ni de la forme du signal, ni de la façon dont il a été produit. Elle est fixée par les propriétés du milieu.",
+      "difficulte": 2,
+      "tags": [
+        "celerite"
+      ]
+    },
+    {
+      "id": "PC1D-P05-020",
+      "lecon": "La célérité d'un signal et le retard",
+      "type": "formule",
+      "recto": "Pour deux points $A$ et $B$ d'un milieu distants de $d$, quelle relation donne le retard $\\tau$ de $B$ sur $A$ ?",
+      "verso": "$\\tau = \\dfrac{d}{v}$, et le point $B$ reproduit avec ce retard le mouvement de $A$ : $y_B(t) = y_A(t - \\tau)$.",
+      "difficulte": 2,
+      "tags": [
+        "retard"
+      ]
+    },
+    {
+      "id": "PC1D-P05-021",
+      "lecon": "La célérité d'un signal et le retard",
+      "type": "formule",
+      "recto": "Quelle relation admise donne la célérité d'un signal le long d'une corde tendue ?",
+      "verso": "$v = \\sqrt{\\dfrac{F}{\\mu}}$, avec $F$ la tension de la corde en newtons et $\\mu = \\dfrac{m}{L}$ sa masse linéique en $\\mathrm{kg/m}$ ; $v$ en $\\mathrm{m/s}$.",
+      "difficulte": 2,
+      "tags": [
+        "corde",
+        "masse-lineique"
+      ]
+    },
+    {
+      "id": "PC1D-P05-022",
+      "lecon": "La célérité d'un signal et le retard",
+      "type": "definition",
+      "recto": "Comment l'inertie et l'élasticité d'un milieu influencent-elles la célérité d'un signal ?",
+      "verso": "Plus le milieu est inerte (lourd à mettre en mouvement), plus la propagation est lente ; plus il est élastique (prompt à rappeler ses points), plus elle est rapide.",
+      "difficulte": 2,
+      "tags": [
+        "inertie",
+        "elasticite"
+      ]
+    },
+    {
+      "id": "PC1D-P05-023",
+      "lecon": "La célérité d'un signal et le retard",
+      "type": "formule",
+      "recto": "Par combien faut-il multiplier la tension d'une corde pour doubler la célérité d'un signal qui s'y propage ?",
+      "verso": "Par 4 : comme $v = \\sqrt{\\dfrac{F}{\\mu}}$, la célérité varie comme la racine carrée de la tension.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "corde"
+      ]
+    },
+    {
+      "id": "PC1D-P05-024",
+      "lecon": "La célérité d'un signal et le retard",
+      "type": "formule",
+      "recto": "Quelles sont les valeurs approchées de la célérité du son dans l'air à 20 °C, dans l'eau, dans le bois et dans l'acier ?",
+      "verso": "Air : environ $340~\\mathrm{m/s}$ ; eau : environ $1\\,500~\\mathrm{m/s}$ ; bois : environ $3\\,400~\\mathrm{m/s}$ ; acier : environ $5\\,000~\\mathrm{m/s}$.",
+      "difficulte": 1,
+      "tags": [
+        "celerite-son",
+        "valeurs"
+      ]
+    },
+    {
+      "id": "PC1D-P05-025",
+      "lecon": "La célérité d'un signal et le retard",
+      "type": "formule",
+      "recto": "Quelle est la célérité des signaux électromagnétiques dans le vide ?",
+      "verso": "$c = 3{,}00 \\times 10^{8}~\\mathrm{m/s}$, soit $300\\,000~\\mathrm{km/s}$, pour tous les signaux électromagnétiques (lumière, radio, télévision, téléphone).",
+      "difficulte": 1,
+      "tags": [
+        "electromagnetique",
+        "valeurs"
+      ]
+    },
+    {
+      "id": "PC1D-P05-026",
+      "lecon": "La célérité d'un signal et le retard",
+      "type": "definition",
+      "recto": "Dans quel ordre se classent les célérités du son dans les solides, les liquides et les gaz ?",
+      "verso": "Le son est le plus rapide dans les solides, plus lent dans les liquides, plus lent encore dans les gaz : dans un solide, les atomes fortement liés donnent un rappel élastique très vif.",
+      "difficulte": 2,
+      "tags": [
+        "celerite-son",
+        "etats-matiere"
+      ]
+    },
+    {
+      "id": "PC1D-P05-027",
+      "lecon": "La célérité d'un signal et le retard",
+      "type": "formule",
+      "recto": "Lors d'un écho ou d'un sondage, quelle relation donne la distance $d$ de l'obstacle à partir de la durée $t$ entre émission et réception ?",
+      "verso": "$d = \\dfrac{v \\times t}{2}$, car le signal fait un aller-retour : il parcourt le double de la distance cherchée.",
+      "difficulte": 2,
+      "tags": [
+        "echo",
+        "aller-retour"
+      ]
+    },
+    {
+      "id": "PC1D-P05-028",
+      "lecon": "La célérité d'un signal et le retard",
+      "type": "definition",
+      "recto": "Quelle règle de sécurité tire-t-on d'un intervalle de moins de 30 s entre l'éclair et le tonnerre ?",
+      "verso": "L'orage est à moins de 10 km (le tonnerre met environ 3 s par kilomètre) : il faut s'abriter dans un bâtiment, loin des arbres isolés, poteaux et tôles, et attendre 30 minutes après le dernier coup de tonnerre.",
+      "difficulte": 2,
+      "tags": [
+        "orage",
+        "securite"
+      ]
+    },
+    {
+      "id": "PC1D-P05-029",
+      "lecon": "La photographie de la corde et le chronogramme d'un point",
+      "type": "definition",
+      "recto": "Pour un signal le long d'une corde, qu'appelle-t-on la photographie du milieu ?",
+      "verso": "C'est la courbe $y = f(x)$ à une date fixée $t_1$ : elle donne la forme du signal dans l'espace et sa position. Son abscisse est une distance, en mètres.",
+      "difficulte": 1,
+      "tags": [
+        "photographie"
+      ]
+    },
+    {
+      "id": "PC1D-P05-030",
+      "lecon": "La photographie de la corde et le chronogramme d'un point",
+      "type": "definition",
+      "recto": "Pour un signal le long d'une corde, qu'appelle-t-on le chronogramme d'un point $M$ ?",
+      "verso": "C'est la courbe $y = f(t)$ pour un point fixé $M$ d'abscisse $x_M$ : elle donne le mouvement de ce point dans le temps. Son abscisse est une durée, en secondes.",
+      "difficulte": 1,
+      "tags": [
+        "chronogramme"
+      ]
+    },
+    {
+      "id": "PC1D-P05-031",
+      "lecon": "La photographie de la corde et le chronogramme d'un point",
+      "type": "formule",
+      "recto": "Pour un signal émis en $x = 0$ à la date $t = 0$, à quelle date $t_M$ le point $M$ d'abscisse $x_M$ commence-t-il à bouger ?",
+      "verso": "$t_M = \\dfrac{x_M}{v}$ ; il bouge ensuite pendant la durée $\\Delta t$ de l'ébranlement. Si l'émission commence à $t_0$, $t_M = t_0 + \\dfrac{x_M}{v}$.",
+      "difficulte": 2,
+      "tags": [
+        "chronogramme",
+        "date"
+      ]
+    },
+    {
+      "id": "PC1D-P05-032",
+      "lecon": "La photographie de la corde et le chronogramme d'un point",
+      "type": "formule",
+      "recto": "Quelle relation lie la largeur spatiale $\\ell$ d'un signal à la durée $\\Delta t$ de l'ébranlement ?",
+      "verso": "$\\ell = v \\times \\Delta t$, avec $\\ell$ en mètres, $v$ en $\\mathrm{m/s}$ et $\\Delta t$ en secondes. $\\ell$, la longueur du signal, ne dépend pas de la date.",
+      "difficulte": 2,
+      "tags": [
+        "largeur",
+        "duree"
+      ]
+    },
+    {
+      "id": "PC1D-P05-033",
+      "lecon": "La photographie de la corde et le chronogramme d'un point",
+      "type": "definition",
+      "recto": "Pour un signal dissymétrique, pourquoi le chronogramme d'un point est-il l'image renversée de la photographie de la corde ?",
+      "verso": "Le point est atteint d'abord par le front avant : celui-ci apparaît au début (à gauche) du chronogramme, alors qu'il est à droite sur la photographie, du côté où le signal avance.",
+      "difficulte": 3,
+      "tags": [
+        "photographie",
+        "chronogramme"
+      ]
+    },
+    {
+      "id": "PC1D-P05-034",
+      "lecon": "La photographie de la corde et le chronogramme d'un point",
+      "type": "definition",
+      "recto": "Sur la photographie d'une corde, comment savoir si un point va monter ou descendre à l'instant suivant ?",
+      "verso": "Le point prend l'élongation de son voisin situé du côté d'où vient le signal. Pour une bosse vers le haut, le flanc avant monte et le flanc arrière descend.",
+      "difficulte": 3,
+      "tags": [
+        "photographie",
+        "mouvement-point"
+      ]
+    },
+    {
+      "id": "PC1D-P05-035",
+      "lecon": "La photographie de la corde et le chronogramme d'un point",
+      "type": "formule",
+      "recto": "A l'oscilloscope, comment déduit-on la célérité du son des chronogrammes de deux microphones distants de $d$ ?",
+      "verso": "On lit le décalage $\\tau$ entre les deux impulsions (nombre de divisions multiplié par la base de temps), puis $v = \\dfrac{d}{\\tau}$.",
+      "difficulte": 2,
+      "tags": [
+        "oscilloscope",
+        "mesure"
+      ]
+    }
+  ]
+}

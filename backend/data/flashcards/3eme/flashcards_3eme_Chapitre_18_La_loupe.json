@@ -1,0 +1,366 @@
+{
+  "matiere": "Physique-Chimie",
+  "partie": "Physique",
+  "niveau": "3ème",
+  "chapitre": "Physique, Chapitre 18 : La loupe",
+  "source": "pc/3eme/Chapitre_18_La_loupe",
+  "nombre_cartes": 31,
+  "cartes": [
+    {
+      "id": "PC3E-P18-001",
+      "lecon": "La loupe et les conditions d'une bonne observation",
+      "type": "definition",
+      "recto": "Qu'est-ce qu'une loupe ?",
+      "verso": "C'est une lentille convergente de courte distance focale, montée sur une monture, qu'on utilise pour observer de près de petits objets en les faisant paraître plus grands.",
+      "difficulte": 1,
+      "tags": [
+        "loupe",
+        "vocabulaire"
+      ]
+    },
+    {
+      "id": "PC3E-P18-002",
+      "lecon": "La loupe et les conditions d'une bonne observation",
+      "type": "formule",
+      "recto": "Pour utiliser une lentille convergente comme loupe, où doit-on placer l'objet ?",
+      "verso": "Entre le foyer objet $F$ et le centre optique $O$, c'est-à-dire à moins d'une distance focale de la lentille.",
+      "difficulte": 1,
+      "tags": [
+        "loupe",
+        "position-objet"
+      ]
+    },
+    {
+      "id": "PC3E-P18-003",
+      "lecon": "La loupe et les conditions d'une bonne observation",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on une image virtuelle ?",
+      "verso": "C'est une image qui ne peut pas être recueillie sur un écran : elle est formée par l'intersection des prolongements des rayons émergents, et non par les rayons eux-mêmes.",
+      "difficulte": 1,
+      "tags": [
+        "image-virtuelle",
+        "vocabulaire"
+      ]
+    },
+    {
+      "id": "PC3E-P18-004",
+      "lecon": "La loupe et les conditions d'une bonne observation",
+      "type": "formule",
+      "recto": "Quelles sont les caractéristiques de l'image donnée par une loupe correctement utilisée ?",
+      "verso": "Elle est virtuelle, droite (même sens que l'objet), plus grande que l'objet, située du même côté que lui et plus loin de la lentille.",
+      "difficulte": 2,
+      "tags": [
+        "image-de-la-loupe"
+      ]
+    },
+    {
+      "id": "PC3E-P18-005",
+      "lecon": "La loupe et les conditions d'une bonne observation",
+      "type": "definition",
+      "recto": "Quelles sont les conditions d'une bonne observation à la loupe ?",
+      "verso": "Objet entre la lentille et le foyer, très près du foyer $F$ ; oeil le plus près possible de la loupe ; objet bien éclairé ; ensemble immobile.",
+      "difficulte": 2,
+      "tags": [
+        "bonne-observation"
+      ]
+    },
+    {
+      "id": "PC3E-P18-006",
+      "lecon": "La loupe et les conditions d'une bonne observation",
+      "type": "definition",
+      "recto": "Pourquoi l'oeil doit-il être placé tout près de la loupe ?",
+      "verso": "La pupille, large de quelques millimètres, ne recueille qu'une partie du faisceau émergent si l'oeil est loin : il voit alors une petite partie de l'image. Collé au verre, il reçoit tout le faisceau.",
+      "difficulte": 2,
+      "tags": [
+        "bonne-observation",
+        "oeil"
+      ]
+    },
+    {
+      "id": "PC3E-P18-007",
+      "lecon": "La loupe et les conditions d'une bonne observation",
+      "type": "formule",
+      "recto": "Quel lien y a-t-il entre la distance focale d'une loupe et sa capacité à grossir ?",
+      "verso": "Plus la distance focale est courte, plus la loupe grossit. Une loupe a une grande vergence, de $10$ à $40~\\delta$, soit une distance focale de $10~\\mathrm{cm}$ à $2{,}5~\\mathrm{cm}$.",
+      "difficulte": 2,
+      "tags": [
+        "distance-focale",
+        "vergence"
+      ]
+    },
+    {
+      "id": "PC3E-P18-008",
+      "lecon": "La loupe et les conditions d'une bonne observation",
+      "type": "formule",
+      "recto": "A travers une loupe, quelle image obtient-on si l'objet est placé au-delà du foyer objet $F$ ?",
+      "verso": "Une image réelle et renversée : la loupe n'est pas bien employée, il faut la rapprocher de l'objet.",
+      "difficulte": 2,
+      "tags": [
+        "position-objet",
+        "image-reelle"
+      ]
+    },
+    {
+      "id": "PC3E-P18-009",
+      "lecon": "La loupe et les conditions d'une bonne observation",
+      "type": "definition",
+      "recto": "Pourquoi est-il faux de dire qu'une loupe donne toujours une image agrandie ?",
+      "verso": "Une loupe est une lentille convergente ordinaire : elle ne donne une image virtuelle agrandie que si l'objet est placé entre $F$ et $O$.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "loupe"
+      ]
+    },
+    {
+      "id": "PC3E-P18-010",
+      "lecon": "La loupe et les conditions d'une bonne observation",
+      "type": "definition",
+      "recto": "Quels dangers présente une loupe exposée au Soleil ?",
+      "verso": "La lumière concentrée brûle le fond de l'oeil si l'on regarde le Soleil à travers elle ; posée au soleil sur un cahier ou du bois, elle peut y mettre le feu.",
+      "difficulte": 2,
+      "tags": [
+        "securite"
+      ]
+    },
+    {
+      "id": "PC3E-P18-011",
+      "lecon": "La construction de l'image virtuelle donnée par une loupe",
+      "type": "definition",
+      "recto": "Pour une lentille, quand l'image $B'$ d'un point $B$ est-elle réelle et quand est-elle virtuelle ?",
+      "verso": "Elle est réelle si les rayons émergents se coupent en $B'$ ; elle est virtuelle si les rayons émergents divergent et que seuls leurs prolongements se coupent en $B'$.",
+      "difficulte": 2,
+      "tags": [
+        "image-reelle",
+        "image-virtuelle"
+      ]
+    },
+    {
+      "id": "PC3E-P18-012",
+      "lecon": "La construction de l'image virtuelle donnée par une loupe",
+      "type": "formule",
+      "recto": "Pour un objet $AB$ placé entre $F$ et $O$ d'une loupe, comment obtient-on le point image $B'$ ?",
+      "verso": "Les rayons émergents issus de $B$ divergent : on les prolonge vers l'arrière, en pointillés, jusqu'à leur point de rencontre $B'$, du même côté que l'objet.",
+      "difficulte": 2,
+      "tags": [
+        "construction",
+        "image-virtuelle"
+      ]
+    },
+    {
+      "id": "PC3E-P18-013",
+      "lecon": "La construction de l'image virtuelle donnée par une loupe",
+      "type": "formule",
+      "recto": "Dans la construction de l'image donnée par une loupe, comment émerge le rayon issu de $B$ dont le prolongement vers l'arrière passe par $F$ ?",
+      "verso": "Il émerge parallèlement à l'axe optique ; il peut remplacer l'un des deux autres rayons particuliers.",
+      "difficulte": 3,
+      "tags": [
+        "rayons-particuliers"
+      ]
+    },
+    {
+      "id": "PC3E-P18-014",
+      "lecon": "La construction de l'image virtuelle donnée par une loupe",
+      "type": "formule",
+      "recto": "Quels sont les deux rayons particuliers issus de $B$ utilisés pour construire l'image donnée par une loupe ?",
+      "verso": "Le rayon parallèle à l'axe, qui émerge en passant par $F'$, et le rayon qui passe par $O$, qui n'est pas dévié.",
+      "difficulte": 1,
+      "tags": [
+        "rayons-particuliers"
+      ]
+    },
+    {
+      "id": "PC3E-P18-015",
+      "lecon": "La construction de l'image virtuelle donnée par une loupe",
+      "type": "definition",
+      "recto": "Pourquoi l'image donnée par une loupe est-elle dite virtuelle ?",
+      "verso": "La lumière ne passe jamais par $B'$, elle semble seulement en venir : du côté de l'image il n'y a que des prolongements, donc aucun écran ne s'y éclaire.",
+      "difficulte": 2,
+      "tags": [
+        "image-virtuelle"
+      ]
+    },
+    {
+      "id": "PC3E-P18-016",
+      "lecon": "La construction de l'image virtuelle donnée par une loupe",
+      "type": "definition",
+      "recto": "Comment se comporte le faisceau lumineux issu d'un point $B$ après la traversée d'une loupe ?",
+      "verso": "La lentille le referme un peu, mais pas assez : à la sortie, il est encore divergent, moins qu'à l'entrée. L'oeil voit le point en $B'$, d'où le faisceau semble partir.",
+      "difficulte": 3,
+      "tags": [
+        "faisceau"
+      ]
+    },
+    {
+      "id": "PC3E-P18-017",
+      "lecon": "La construction de l'image virtuelle donnée par une loupe",
+      "type": "definition",
+      "recto": "Comment reconnaît-on qu'une image est droite ou renversée ?",
+      "verso": "Elle est droite quand elle pointe dans le même sens que l'objet $AB$, renversée quand elle pointe dans le sens contraire. Avec une loupe, elle est toujours droite.",
+      "difficulte": 1,
+      "tags": [
+        "sens-de-l-image"
+      ]
+    },
+    {
+      "id": "PC3E-P18-018",
+      "lecon": "La construction de l'image virtuelle donnée par une loupe",
+      "type": "definition",
+      "recto": "Dans une construction d'image par une loupe, comment trace-t-on les prolongements des rayons et l'image ?",
+      "verso": "En pointillés : le trait plein est réservé à la lumière qui existe. L'image virtuelle $A'B'$ se trace aussi en pointillés.",
+      "difficulte": 2,
+      "tags": [
+        "convention-de-trace"
+      ]
+    },
+    {
+      "id": "PC3E-P18-019",
+      "lecon": "La construction de l'image virtuelle donnée par une loupe",
+      "type": "definition",
+      "recto": "Quelle erreur commet l'élève qui place l'image virtuelle d'une loupe du côté de la sortie de la lumière ?",
+      "verso": "L'image virtuelle se forme du même côté que l'objet, là où se coupent les prolongements vers l'arrière des rayons émergents.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "image-virtuelle"
+      ]
+    },
+    {
+      "id": "PC3E-P18-020",
+      "lecon": "La construction de l'image virtuelle donnée par une loupe",
+      "type": "formule",
+      "recto": "Connaissant l'objet $AB$ et son image $A'B'$ donnée par une loupe, comment retrouve-t-on le foyer image $F'$ ?",
+      "verso": "Le rayon issu de $B$ parallèle à l'axe touche la lentille en $I$ et repart sur la droite $(B'I)$ : cette droite coupe l'axe en $F'$. $F$ est le symétrique de $F'$ par rapport à $O$.",
+      "difficulte": 2,
+      "tags": [
+        "retrouver-les-foyers"
+      ]
+    },
+    {
+      "id": "PC3E-P18-021",
+      "lecon": "Le grossissement et le grossissement commercial",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on la distance minimale de vision distincte $D_m$ ?",
+      "verso": "C'est la plus petite distance à laquelle un oeil voit un objet net sans fatigue.",
+      "difficulte": 1,
+      "tags": [
+        "distance-minimale-de-vision"
+      ]
+    },
+    {
+      "id": "PC3E-P18-022",
+      "lecon": "Le grossissement et le grossissement commercial",
+      "type": "formule",
+      "recto": "Quelle est la valeur de la distance minimale de vision distincte $D_m$ pour un oeil normal ?",
+      "verso": "$D_m = 25~\\mathrm{cm} = 0{,}25~\\mathrm{m}$. Ce n'est pas une constante de la nature : cette valeur vaut pour un oeil normal.",
+      "difficulte": 1,
+      "tags": [
+        "distance-minimale-de-vision"
+      ]
+    },
+    {
+      "id": "PC3E-P18-023",
+      "lecon": "Le grossissement et le grossissement commercial",
+      "type": "formule",
+      "recto": "Comment calcule-t-on le grossissement $G$ d'une loupe à partir des tailles de l'objet et de l'image ?",
+      "verso": "$G = \\dfrac{A'B'}{AB}$, rapport de la taille de l'image virtuelle à celle de l'objet, les deux dans la même unité. $G$ est sans unité et supérieur à 1 pour une loupe.",
+      "difficulte": 2,
+      "tags": [
+        "grossissement"
+      ]
+    },
+    {
+      "id": "PC3E-P18-024",
+      "lecon": "Le grossissement et le grossissement commercial",
+      "type": "definition",
+      "recto": "Que signifie le grossissement $G$ d'une loupe ?",
+      "verso": "Il indique combien de fois l'objet, vu à travers la loupe, paraît plus gros qu'à l'oeil nu. On le calcule par $G = \\dfrac{A'B'}{AB}$.",
+      "difficulte": 1,
+      "tags": [
+        "grossissement"
+      ]
+    },
+    {
+      "id": "PC3E-P18-025",
+      "lecon": "Le grossissement et le grossissement commercial",
+      "type": "formule",
+      "recto": "Quelle relation définit le grossissement commercial $G_c$ d'une loupe ?",
+      "verso": "$G_c = \\dfrac{D_m}{f}$, avec la distance minimale de vision distincte $D_m$ et la distance focale $f$ exprimées dans la même unité. $G_c$ est sans unité.",
+      "difficulte": 2,
+      "tags": [
+        "grossissement-commercial"
+      ]
+    },
+    {
+      "id": "PC3E-P18-026",
+      "lecon": "Le grossissement et le grossissement commercial",
+      "type": "formule",
+      "recto": "Quelle relation lie le grossissement commercial $G_c$ d'une loupe à sa vergence $C$ ?",
+      "verso": "$G_c = D_m \\times C = 0{,}25 \\times C = \\dfrac{C}{4}$, avec $C$ en dioptries : le grossissement commercial est le quart de la vergence.",
+      "difficulte": 2,
+      "tags": [
+        "grossissement-commercial",
+        "vergence"
+      ]
+    },
+    {
+      "id": "PC3E-P18-027",
+      "lecon": "Le grossissement et le grossissement commercial",
+      "type": "formule",
+      "recto": "Comment obtient-on la distance focale $f$ d'une loupe à partir de son grossissement commercial $G_c$ ?",
+      "verso": "$f = \\dfrac{D_m}{G_c}$, dans l'unité de $D_m$ ; ou bien $C = 4 \\times G_c$ puis $f = \\dfrac{1}{C}$, avec $f$ en mètres.",
+      "difficulte": 2,
+      "tags": [
+        "grossissement-commercial",
+        "distance-focale"
+      ]
+    },
+    {
+      "id": "PC3E-P18-028",
+      "lecon": "Le grossissement et le grossissement commercial",
+      "type": "definition",
+      "recto": "Quelle différence y a-t-il entre le grossissement $G$ et le grossissement commercial $G_c$ d'une loupe ?",
+      "verso": "$G$ dépend de l'endroit où l'on place l'objet et l'oeil ; $G_c$ est fixé une fois pour toutes par la distance focale, et c'est lui que le fabricant grave sur la monture ($\\times 3$, $\\times 5$, $\\times 10$).",
+      "difficulte": 3,
+      "tags": [
+        "grossissement",
+        "grossissement-commercial"
+      ]
+    },
+    {
+      "id": "PC3E-P18-029",
+      "lecon": "Le grossissement et le grossissement commercial",
+      "type": "definition",
+      "recto": "Pourquoi une loupe de $20~\\delta$ ne grossit-elle pas $20$ fois ?",
+      "verso": "La vergence (en dioptries) n'est pas le grossissement commercial (nombre sans unité) : $G_c = 0{,}25 \\times 20 = 5$, c'est une loupe $\\times 5$.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "vergence"
+      ]
+    },
+    {
+      "id": "PC3E-P18-030",
+      "lecon": "Le grossissement et le grossissement commercial",
+      "type": "definition",
+      "recto": "Quelle erreur guette celui qui calcule $G_c = \\dfrac{D_m}{f}$ avec $D_m$ en centimètres et $f$ en mètres ?",
+      "verso": "Les deux longueurs doivent être dans la même unité : mélanger centimètres et mètres fausse le résultat d'un facteur $100$.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "unites"
+      ]
+    },
+    {
+      "id": "PC3E-P18-031",
+      "lecon": "Le grossissement et le grossissement commercial",
+      "type": "formule",
+      "recto": "Quel est l'ordre de grandeur du grossissement commercial d'une loupe courante ?",
+      "verso": "Une loupe courante a une distance focale de $2{,}5~\\mathrm{cm}$ à $10~\\mathrm{cm}$, donc un grossissement commercial compris entre $2{,}5$ et $10$.",
+      "difficulte": 2,
+      "tags": [
+        "ordre-de-grandeur"
+      ]
+    }
+  ]
+}

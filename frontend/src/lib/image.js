@@ -4,7 +4,7 @@ const JPEG_QUALITY = 0.85
 /**
  * Redimensionne/recompresse une photo prise depuis un mobile (souvent 3-4 Mo) avant envoi au
  * serveur : accélère l'upload en 3G/4G et reste confortablement sous la limite serveur (8 Mo)
- * sans perte visible pour un exercice de maths (texte/schéma, pas une photo artistique).
+ * sans perte visible pour un exercice de physique (texte/schéma, pas une photo artistique).
  */
 export async function compressImageFile(file) {
   try {

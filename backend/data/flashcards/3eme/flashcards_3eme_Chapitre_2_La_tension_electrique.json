@@ -1,0 +1,375 @@
+{
+  "matiere": "Physique-Chimie",
+  "partie": "Physique",
+  "niveau": "3ème",
+  "chapitre": "Physique, Chapitre 2 : La tension électrique",
+  "source": "pc/3eme/Chapitre_2_La_tension_electrique",
+  "nombre_cartes": 30,
+  "cartes": [
+    {
+      "id": "PC3E-P02-001",
+      "lecon": "La tension entre deux points, son unité et ses ordres de grandeur",
+      "type": "definition",
+      "recto": "En électricité, que mesure la tension électrique entre deux points A et B d'un circuit ?",
+      "verso": "Elle mesure la différence d'état électrique entre ces deux points. On la note $U_{AB}$, ou simplement $U$ ; on dit aussi différence de potentiel.",
+      "difficulte": 1,
+      "tags": [
+        "tension",
+        "definition"
+      ]
+    },
+    {
+      "id": "PC3E-P02-002",
+      "lecon": "La tension entre deux points, son unité et ses ordres de grandeur",
+      "type": "definition",
+      "recto": "A combien de points d'un circuit une tension électrique se rapporte-t-elle toujours ?",
+      "verso": "A deux points : on parle de la tension entre deux points, ou aux bornes d'un dipôle, jamais de la tension en un point.",
+      "difficulte": 2,
+      "tags": [
+        "tension",
+        "entre-deux-points"
+      ]
+    },
+    {
+      "id": "PC3E-P02-003",
+      "lecon": "La tension entre deux points, son unité et ses ordres de grandeur",
+      "type": "definition",
+      "recto": "Quelle est l'unité légale de la tension électrique, avec son symbole ?",
+      "verso": "Le volt, de symbole $\\mathrm{V}$, nommé ainsi en l'honneur du physicien Alessandro Volta.",
+      "difficulte": 1,
+      "tags": [
+        "unite",
+        "volt"
+      ]
+    },
+    {
+      "id": "PC3E-P02-004",
+      "lecon": "La tension entre deux points, son unité et ses ordres de grandeur",
+      "type": "formule",
+      "recto": "Quelles relations lient le kilovolt, le volt, le millivolt et le microvolt ?",
+      "verso": "$1~\\mathrm{kV} = 1\\,000~\\mathrm{V}$ ; $1~\\mathrm{V} = 1\\,000~\\mathrm{mV}$ ; $1~\\mathrm{mV} = 1\\,000~\\mu\\mathrm{V}$ : chaque marche vaut mille.",
+      "difficulte": 1,
+      "tags": [
+        "conversion",
+        "multiples"
+      ]
+    },
+    {
+      "id": "PC3E-P02-005",
+      "lecon": "La tension entre deux points, son unité et ses ordres de grandeur",
+      "type": "definition",
+      "recto": "Quelle différence de vocabulaire y a-t-il entre l'intensité du courant et la tension électrique ?",
+      "verso": "On parle de l'intensité du courant en un point d'un circuit, et de la tension entre deux points. C'est pourquoi l'ampèremètre se branche en série et le voltmètre en dérivation.",
+      "difficulte": 2,
+      "tags": [
+        "tension",
+        "intensite",
+        "distinction"
+      ]
+    },
+    {
+      "id": "PC3E-P02-006",
+      "lecon": "La tension entre deux points, son unité et ses ordres de grandeur",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on la tension à vide d'un générateur ?",
+      "verso": "C'est la tension entre les bornes du générateur mesurée hors circuit, quand il n'est relié à rien.",
+      "difficulte": 2,
+      "tags": [
+        "tension-a-vide",
+        "generateur"
+      ]
+    },
+    {
+      "id": "PC3E-P02-007",
+      "lecon": "La tension entre deux points, son unité et ses ordres de grandeur",
+      "type": "definition",
+      "recto": "Pourquoi une pile isolée, reliée à rien, garde-t-elle une tension entre ses bornes ?",
+      "verso": "Ses réactions chimiques internes maintiennent une différence d'état électrique entre ses deux bornes : la tension existe indépendamment du courant, elle en est la cause.",
+      "difficulte": 2,
+      "tags": [
+        "pile",
+        "tension-a-vide"
+      ]
+    },
+    {
+      "id": "PC3E-P02-008",
+      "lecon": "La tension entre deux points, son unité et ses ordres de grandeur",
+      "type": "definition",
+      "recto": "Quel est l'ordre de grandeur de la tension d'une pile bâton, d'une pile plate et d'une pile rectangulaire ?",
+      "verso": "Pile bâton : $1{,}5~\\mathrm{V}$ ; pile plate : $4{,}5~\\mathrm{V}$ (trois éléments de $1{,}5~\\mathrm{V}$) ; pile rectangulaire : $9~\\mathrm{V}$.",
+      "difficulte": 1,
+      "tags": [
+        "ordres-de-grandeur",
+        "piles"
+      ]
+    },
+    {
+      "id": "PC3E-P02-009",
+      "lecon": "La tension entre deux points, son unité et ses ordres de grandeur",
+      "type": "definition",
+      "recto": "Quel est l'ordre de grandeur de la tension d'une batterie de moto, d'une prise du secteur et d'une ligne de distribution urbaine ?",
+      "verso": "Batterie de moto ou de voiture : $12~\\mathrm{V}$ ; prise du secteur : $220~\\mathrm{V}$ ; ligne urbaine : $33~\\mathrm{kV}$, soit $33\\,000~\\mathrm{V}$.",
+      "difficulte": 2,
+      "tags": [
+        "ordres-de-grandeur",
+        "secteur"
+      ]
+    },
+    {
+      "id": "PC3E-P02-010",
+      "lecon": "La tension entre deux points, son unité et ses ordres de grandeur",
+      "type": "definition",
+      "recto": "Quelle erreur commet un élève qui conclut qu'il n'y a pas de tension parce qu'aucun courant ne circule ?",
+      "verso": "Un courant nul ne veut pas dire qu'il n'y a pas de tension : une pile isolée, qui ne débite aucun courant, garde sa tension entre ses bornes.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "tension",
+        "courant"
+      ]
+    },
+    {
+      "id": "PC3E-P02-011",
+      "lecon": "Le voltmètre : montage, polarité et calibre",
+      "type": "definition",
+      "recto": "Quel instrument mesure la tension électrique ?",
+      "verso": "Le voltmètre, ou un multimètre placé sur la position « tension continue ». Sur un schéma, il est représenté par un cercle contenant la lettre V.",
+      "difficulte": 1,
+      "tags": [
+        "voltmetre",
+        "symbole"
+      ]
+    },
+    {
+      "id": "PC3E-P02-012",
+      "lecon": "Le voltmètre : montage, polarité et calibre",
+      "type": "formule",
+      "recto": "Selon quel mode se branche un voltmètre par rapport au dipôle étudié ?",
+      "verso": "En dérivation, c'est-à-dire aux bornes du dipôle, sans jamais couper le circuit.",
+      "difficulte": 1,
+      "tags": [
+        "branchement",
+        "derivation"
+      ]
+    },
+    {
+      "id": "PC3E-P02-013",
+      "lecon": "Le voltmètre : montage, polarité et calibre",
+      "type": "formule",
+      "recto": "Comment mesure-t-on la tension aux bornes d'un générateur avec un voltmètre ?",
+      "verso": "On relie les deux bornes du voltmètre à celles du générateur, le circuit restant fermé.",
+      "difficulte": 2,
+      "tags": [
+        "branchement",
+        "generateur"
+      ]
+    },
+    {
+      "id": "PC3E-P02-014",
+      "lecon": "Le voltmètre : montage, polarité et calibre",
+      "type": "formule",
+      "recto": "Pour un voltmètre, à quels points du circuit se relient la borne V et la borne COM ?",
+      "verso": "La borne V ou $+$ (fil rouge) se relie au point le plus proche de la borne positive du générateur ; la borne COM ou $-$ (fil noir) au point le plus proche de la borne négative.",
+      "difficulte": 2,
+      "tags": [
+        "polarite",
+        "bornes"
+      ]
+    },
+    {
+      "id": "PC3E-P02-015",
+      "lecon": "Le voltmètre : montage, polarité et calibre",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on le calibre d'un voltmètre ?",
+      "verso": "C'est la plus grande tension que l'appareil peut mesurer sur la position choisie. La tension mesurée ne doit jamais le dépasser.",
+      "difficulte": 1,
+      "tags": [
+        "calibre",
+        "definition"
+      ]
+    },
+    {
+      "id": "PC3E-P02-016",
+      "lecon": "Le voltmètre : montage, polarité et calibre",
+      "type": "formule",
+      "recto": "Pour un voltmètre, sur quel calibre doit-on finalement faire la mesure ?",
+      "verso": "Sur le calibre immédiatement supérieur à la valeur attendue, atteint en partant du plus grand calibre et en descendant : plus l'aiguille dévie, meilleure est la précision.",
+      "difficulte": 2,
+      "tags": [
+        "calibre",
+        "choix"
+      ]
+    },
+    {
+      "id": "PC3E-P02-017",
+      "lecon": "Le voltmètre : montage, polarité et calibre",
+      "type": "definition",
+      "recto": "Pourquoi commence-t-on une mesure au voltmètre par le plus grand calibre plutôt que par le plus petit ?",
+      "verso": "Commencer trop haut ne coûte qu'une lecture imprécise, corrigée en descendant d'un cran ; commencer trop bas projette l'aiguille en butée et peut détruire l'appareil.",
+      "difficulte": 2,
+      "tags": [
+        "calibre",
+        "securite"
+      ]
+    },
+    {
+      "id": "PC3E-P02-018",
+      "lecon": "Le voltmètre : montage, polarité et calibre",
+      "type": "formule",
+      "recto": "Sur un voltmètre à aiguille, quelle relation donne la tension $U$ à partir du calibre $C$, du nombre total de divisions $N$ et de la division atteinte $n$ ?",
+      "verso": "$U = \\dfrac{C \\times n}{N}$, avec $C$ en volts ; $U$ s'obtient alors en volts.",
+      "difficulte": 2,
+      "tags": [
+        "lecture",
+        "aiguille"
+      ]
+    },
+    {
+      "id": "PC3E-P02-019",
+      "lecon": "Le voltmètre : montage, polarité et calibre",
+      "type": "formule",
+      "recto": "Sur un voltmètre à aiguille, quelle relation permet de retrouver le calibre $C$ utilisé à partir de la tension $U$, de l'échelle $N$ et de la division atteinte $n$ ?",
+      "verso": "$C = \\dfrac{U \\times N}{n}$. De même, la division atteinte se prévoit par $n = \\dfrac{U \\times N}{C}$.",
+      "difficulte": 2,
+      "tags": [
+        "lecture",
+        "calibre"
+      ]
+    },
+    {
+      "id": "PC3E-P02-020",
+      "lecon": "Le voltmètre : montage, polarité et calibre",
+      "type": "definition",
+      "recto": "Sur un voltmètre à aiguille de calibre $C$ et d'échelle $N$ divisions, que vaut une division ?",
+      "verso": "Une division vaut $\\dfrac{C}{N}$ volt, car la dernière division, numéro $N$, correspond au calibre $C$.",
+      "difficulte": 2,
+      "tags": [
+        "lecture",
+        "proportionnalite"
+      ]
+    },
+    {
+      "id": "PC3E-P02-021",
+      "lecon": "Le voltmètre : montage, polarité et calibre",
+      "type": "formule",
+      "recto": "Que vaut la tension mesurée par un voltmètre de calibre $C$ dont l'aiguille s'arrête aux $\\dfrac{4}{5}$ de l'échelle ?",
+      "verso": "$U = \\dfrac{4}{5} \\times C$, puisque $n = \\dfrac{4}{5} \\times N$.",
+      "difficulte": 3,
+      "tags": [
+        "lecture",
+        "fraction-du-cadran"
+      ]
+    },
+    {
+      "id": "PC3E-P02-022",
+      "lecon": "Le voltmètre : montage, polarité et calibre",
+      "type": "definition",
+      "recto": "Pourquoi une même tension donne-t-elle des lectures différentes sur un voltmètre à aiguille selon le calibre choisi ?",
+      "verso": "Ce n'est pas la tension qui change, c'est la graduation : $3~\\mathrm{V}$ sur l'échelle 100 donne 30 divisions au calibre $10~\\mathrm{V}$ et 60 au calibre $5~\\mathrm{V}$.",
+      "difficulte": 3,
+      "tags": [
+        "lecture",
+        "calibre"
+      ]
+    },
+    {
+      "id": "PC3E-P02-023",
+      "lecon": "Le voltmètre : montage, polarité et calibre",
+      "type": "definition",
+      "recto": "Quelle conséquence a le branchement d'un voltmètre en série dans un circuit ?",
+      "verso": "Placé en série, le voltmètre agit comme une coupure et éteint la lampe : il se branche toujours en dérivation.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "serie"
+      ]
+    },
+    {
+      "id": "PC3E-P02-024",
+      "lecon": "Le voltmètre : montage, polarité et calibre",
+      "type": "definition",
+      "recto": "Pourquoi le calibre d'un voltmètre n'est-il pas le nombre de divisions du cadran ?",
+      "verso": "Le calibre est une tension, en volts (la plus grande mesurable) ; le nombre de divisions est un comptage sans unité, et la lecture $n$ ne s'écrit pas en volts.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "calibre",
+        "divisions"
+      ]
+    },
+    {
+      "id": "PC3E-P02-025",
+      "lecon": "La tension aux bornes des éléments d'un circuit",
+      "type": "formule",
+      "recto": "Que devient la tension aux bornes d'une pile lorsqu'elle débite un courant en circuit fermé ?",
+      "verso": "Elle garde une tension entre ses bornes, un peu plus faible qu'en circuit ouvert.",
+      "difficulte": 2,
+      "tags": [
+        "pile",
+        "circuit-ferme"
+      ]
+    },
+    {
+      "id": "PC3E-P02-026",
+      "lecon": "La tension aux bornes des éléments d'un circuit",
+      "type": "formule",
+      "recto": "Que vaut la tension aux bornes d'un fil de connexion en bon état ou d'un interrupteur fermé ?",
+      "verso": "Elle est pratiquement nulle dans les deux cas.",
+      "difficulte": 1,
+      "tags": [
+        "fil",
+        "interrupteur",
+        "tension-nulle"
+      ]
+    },
+    {
+      "id": "PC3E-P02-027",
+      "lecon": "La tension aux bornes des éléments d'un circuit",
+      "type": "formule",
+      "recto": "Dans un circuit série simple, que vaut la tension aux bornes d'un interrupteur ouvert ?",
+      "verso": "Elle est égale à la tension du générateur.",
+      "difficulte": 2,
+      "tags": [
+        "interrupteur",
+        "circuit-ouvert"
+      ]
+    },
+    {
+      "id": "PC3E-P02-028",
+      "lecon": "La tension aux bornes des éléments d'un circuit",
+      "type": "formule",
+      "recto": "Que vaut la tension aux bornes d'une lampe placée dans un circuit série ouvert ?",
+      "verso": "Elle est nulle, car aucun courant ne traverse la lampe.",
+      "difficulte": 2,
+      "tags": [
+        "lampe",
+        "circuit-ouvert"
+      ]
+    },
+    {
+      "id": "PC3E-P02-029",
+      "lecon": "La tension aux bornes des éléments d'un circuit",
+      "type": "definition",
+      "recto": "Pourquoi l'interrupteur ouvert d'un circuit série porte-t-il toute la tension de la pile ?",
+      "verso": "Sans courant, les fils et la lampe éteinte ne portent aucune tension : les deux bornes de l'interrupteur ouvert sont dans le même état électrique que les deux bornes de la pile.",
+      "difficulte": 3,
+      "tags": [
+        "interrupteur",
+        "circuit-ouvert"
+      ]
+    },
+    {
+      "id": "PC3E-P02-030",
+      "lecon": "La tension aux bornes des éléments d'un circuit",
+      "type": "definition",
+      "recto": "Pourquoi un circuit ouvert, comme une prise dont l'interrupteur est ouvert, reste-t-il dangereux ?",
+      "verso": "Aux bornes de la coupure se retrouve toute la tension du générateur, $220~\\mathrm{V}$ pour le secteur, même si rien ne fonctionne.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "securite",
+        "secteur"
+      ]
+    }
+  ]
+}

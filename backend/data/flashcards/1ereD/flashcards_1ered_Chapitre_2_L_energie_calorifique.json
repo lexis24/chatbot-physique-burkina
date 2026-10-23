@@ -1,0 +1,446 @@
+{
+  "matiere": "Physique-Chimie",
+  "partie": "Physique",
+  "niveau": "1ère D",
+  "chapitre": "Physique, Chapitre 2 : L'énergie calorifique",
+  "source": "pc/1ered/Chapitre_2_L_energie_calorifique",
+  "nombre_cartes": 37,
+  "cartes": [
+    {
+      "id": "PC1D-P02-001",
+      "lecon": "Les formes de l'énergie et le transfert par chaleur",
+      "type": "definition",
+      "recto": "Quand dit-on qu'un système possède de l'énergie ?",
+      "verso": "Lorsqu'il est capable de produire une transformation : élever une température, mettre en mouvement, déformer, faire changer d'état, faire circuler un courant, émettre de la lumière. L'énergie s'exprime en joules ($\\mathrm{J}$).",
+      "difficulte": 1,
+      "tags": [
+        "energie",
+        "definition"
+      ]
+    },
+    {
+      "id": "PC1D-P02-002",
+      "lecon": "Les formes de l'énergie et le transfert par chaleur",
+      "type": "definition",
+      "recto": "Quelles sont les différentes formes de l'énergie ?",
+      "verso": "Energie mécanique (cinétique et potentielle), électrique, chimique, thermique ou calorifique, rayonnante et nucléaire. Elles se convertissent les unes dans les autres, et l'énergie totale d'un système isolé se conserve.",
+      "difficulte": 1,
+      "tags": [
+        "formes-energie"
+      ]
+    },
+    {
+      "id": "PC1D-P02-003",
+      "lecon": "Les formes de l'énergie et le transfert par chaleur",
+      "type": "definition",
+      "recto": "Quelle différence y a-t-il entre l'énergie mécanique et l'énergie interne d'un objet ?",
+      "verso": "L'énergie mécanique concerne l'objet pris en bloc (vitesse, position, déformation). L'énergie interne concerne ses particules : agitation thermique, liaisons chimiques, noyaux, état physique.",
+      "difficulte": 2,
+      "tags": [
+        "energie-interne",
+        "energie-mecanique"
+      ]
+    },
+    {
+      "id": "PC1D-P02-004",
+      "lecon": "Les formes de l'énergie et le transfert par chaleur",
+      "type": "definition",
+      "recto": "Quelles sont les sources d'énergie renouvelables exploitables au Burkina Faso ?",
+      "verso": "L'énergie solaire (la plus abondante), éolienne, de la biomasse (bois, résidus agricoles, biogaz) et hydraulique des barrages. Leur source se reconstitue à l'échelle humaine, contrairement aux fossiles et à l'uranium.",
+      "difficulte": 1,
+      "tags": [
+        "renouvelables",
+        "burkina"
+      ]
+    },
+    {
+      "id": "PC1D-P02-005",
+      "lecon": "Les formes de l'énergie et le transfert par chaleur",
+      "type": "definition",
+      "recto": "En thermique, qu'appelle-t-on la chaleur $Q$ ?",
+      "verso": "C'est l'énergie transférée entre deux corps du fait de leur différence de température. Elle s'exprime en joules ($\\mathrm{J}$).",
+      "difficulte": 1,
+      "tags": [
+        "chaleur",
+        "definition"
+      ]
+    },
+    {
+      "id": "PC1D-P02-006",
+      "lecon": "Les formes de l'énergie et le transfert par chaleur",
+      "type": "definition",
+      "recto": "Pourquoi est-il faux de dire qu'un corps chaud contient de la chaleur ?",
+      "verso": "Un corps possède de l'énergie interne ; la chaleur est de l'énergie échangée. Il faut dire que le corps peut céder de la chaleur. Sans autre échange, un corps qui reçoit $Q$ voit son énergie interne augmenter : $\\Delta U = Q$.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "chaleur"
+      ]
+    },
+    {
+      "id": "PC1D-P02-007",
+      "lecon": "Les formes de l'énergie et le transfert par chaleur",
+      "type": "formule",
+      "recto": "Quelle relation lie la température absolue $T$, en kelvins, et la température $\\theta$, en degrés Celsius ?",
+      "verso": "$T = \\theta + 273$ (valeur arrondie de $\\theta + 273{,}15$). Un écart de température, lui, se recopie : $\\Delta T = \\Delta\\theta$.",
+      "difficulte": 1,
+      "tags": [
+        "kelvin",
+        "celsius"
+      ]
+    },
+    {
+      "id": "PC1D-P02-008",
+      "lecon": "Les formes de l'énergie et le transfert par chaleur",
+      "type": "definition",
+      "recto": "Pourquoi un écart de 40 °C ne vaut-il pas 313 K ?",
+      "verso": "Les deux échelles ont des divisions de même taille : un écart se recopie, $40$ °C d'écart font $40~\\mathrm{K}$. Seule une température se convertit en ajoutant $273$.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "ecart-temperature"
+      ]
+    },
+    {
+      "id": "PC1D-P02-009",
+      "lecon": "Les formes de l'énergie et le transfert par chaleur",
+      "type": "formule",
+      "recto": "Quelle convention de signe adopte-t-on pour la chaleur $Q$ échangée par un corps ?",
+      "verso": "Toute énergie reçue par le corps est comptée positivement : $Q \\gt 0$ si le corps reçoit de la chaleur, $Q \\lt 0$ s'il en cède. Le signe se lit du point de vue du corps étudié.",
+      "difficulte": 2,
+      "tags": [
+        "signe",
+        "convention"
+      ]
+    },
+    {
+      "id": "PC1D-P02-010",
+      "lecon": "Les formes de l'énergie et le transfert par chaleur",
+      "type": "definition",
+      "recto": "Quels sont les trois modes de transfert de chaleur ?",
+      "verso": "La conduction, de proche en proche sans déplacement de matière (surtout solides et métaux ; faible dans les fluides) ; la convection, avec déplacement de matière (fluides) ; le rayonnement, par ondes, sans support matériel, même dans le vide.",
+      "difficulte": 2,
+      "tags": [
+        "conduction",
+        "convection",
+        "rayonnement"
+      ]
+    },
+    {
+      "id": "PC1D-P02-011",
+      "lecon": "Les formes de l'énergie et le transfert par chaleur",
+      "type": "definition",
+      "recto": "Qu'est-ce que l'équilibre thermique entre deux corps mis en contact ?",
+      "verso": "La chaleur passe du plus chaud au plus froid jusqu'à l'égalité des températures. La température commune finale est comprise entre les deux températures initiales.",
+      "difficulte": 2,
+      "tags": [
+        "equilibre-thermique"
+      ]
+    },
+    {
+      "id": "PC1D-P02-012",
+      "lecon": "Les formes de l'énergie et le transfert par chaleur",
+      "type": "formule",
+      "recto": "Comment calcule-t-on le rendement d'une chaîne de plusieurs convertisseurs d'énergie ?",
+      "verso": "C'est le produit des rendements des convertisseurs : $\\eta = \\eta_1 \\times \\eta_2 \\times \\ldots$, chacun valant $\\eta = \\dfrac{E_{\\text{utile}}}{E_{\\text{reçue}}}$.",
+      "difficulte": 2,
+      "tags": [
+        "rendement",
+        "chaine-energetique"
+      ]
+    },
+    {
+      "id": "PC1D-P02-013",
+      "lecon": "La capacité thermique massique",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on la capacité thermique massique $c$ d'un corps ?",
+      "verso": "C'est la quantité de chaleur qu'il faut fournir à $1~\\mathrm{kg}$ de ce corps pour élever sa température de $1~\\mathrm{K}$. Elle s'exprime en $\\mathrm{J/(kg \\cdot K)}$ ou, indifféremment, en $\\mathrm{J/(kg \\cdot {}^{\\circ}C)}$.",
+      "difficulte": 1,
+      "tags": [
+        "capacite-thermique-massique"
+      ]
+    },
+    {
+      "id": "PC1D-P02-014",
+      "lecon": "La capacité thermique massique",
+      "type": "formule",
+      "recto": "Quelle relation donne la chaleur $Q$ reçue par un corps de masse $m$ dont la température passe de $\\theta_i$ à $\\theta_f$ sans changement d'état ?",
+      "verso": "$Q = m\\,c\\,(\\theta_f - \\theta_i)$, avec $m$ en kg, $c$ en $\\mathrm{J/(kg \\cdot K)}$, l'écart en K ou °C et $Q$ en J.",
+      "difficulte": 1,
+      "tags": [
+        "chaleur",
+        "relation"
+      ]
+    },
+    {
+      "id": "PC1D-P02-015",
+      "lecon": "La capacité thermique massique",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on la capacité thermique $C$ d'un corps donné ?",
+      "verso": "C'est la chaleur qu'il faut fournir à ce corps pour élever sa température de $1~\\mathrm{K}$ : $C = m\\,c$ en $\\mathrm{J/K}$, et $Q = C\\,\\Delta\\theta$. Elle dépend de la substance et de la masse.",
+      "difficulte": 2,
+      "tags": [
+        "capacite-thermique"
+      ]
+    },
+    {
+      "id": "PC1D-P02-016",
+      "lecon": "La capacité thermique massique",
+      "type": "definition",
+      "recto": "Quelle différence y a-t-il entre la capacité thermique massique $c$ et la capacité thermique $C$ ?",
+      "verso": "$c$ est une propriété de la substance (en $\\mathrm{J/(kg \\cdot K)}$) ; $C = mc$ est une propriété de l'objet, qui dépend aussi de sa masse (en $\\mathrm{J/K}$).",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "capacite-thermique"
+      ]
+    },
+    {
+      "id": "PC1D-P02-017",
+      "lecon": "La capacité thermique massique",
+      "type": "formule",
+      "recto": "Pour plusieurs corps qui subissent la même variation de température, comment calcule-t-on la capacité thermique de l'ensemble ?",
+      "verso": "Les capacités thermiques s'ajoutent : $C = m_1c_1 + m_2c_2 + \\ldots + m_nc_n$.",
+      "difficulte": 2,
+      "tags": [
+        "capacite-thermique",
+        "systeme"
+      ]
+    },
+    {
+      "id": "PC1D-P02-018",
+      "lecon": "La capacité thermique massique",
+      "type": "formule",
+      "recto": "Quelles sont les capacités thermiques massiques de l'eau liquide, de la glace et de la vapeur d'eau ?",
+      "verso": "Eau liquide : $4\\,185$ ; glace : $2\\,100$ ; vapeur d'eau : $2\\,010$, en $\\mathrm{J/(kg \\cdot K)}$. La valeur dépend de l'état physique.",
+      "difficulte": 2,
+      "tags": [
+        "valeurs",
+        "eau"
+      ]
+    },
+    {
+      "id": "PC1D-P02-019",
+      "lecon": "La capacité thermique massique",
+      "type": "formule",
+      "recto": "Quelles sont les capacités thermiques massiques de l'aluminium, du fer et du cuivre ?",
+      "verso": "Aluminium : $900$ ; fer : $460$ ; cuivre : $387$, en $\\mathrm{J/(kg \\cdot K)}$.",
+      "difficulte": 2,
+      "tags": [
+        "valeurs",
+        "metaux"
+      ]
+    },
+    {
+      "id": "PC1D-P02-020",
+      "lecon": "La capacité thermique massique",
+      "type": "definition",
+      "recto": "Pourquoi le sable d'une cour devient-il brûlant au soleil alors que l'eau du barrage voisin reste tiède ?",
+      "verso": "A masse et chaleur reçues égales, $\\Delta\\theta = \\dfrac{Q}{mc}$ : l'élévation de température est inversement proportionnelle à $c$. Celle du sable est environ cinq fois plus petite que celle de l'eau.",
+      "difficulte": 2,
+      "tags": [
+        "interpretation",
+        "capacite-thermique-massique"
+      ]
+    },
+    {
+      "id": "PC1D-P02-021",
+      "lecon": "La capacité thermique massique",
+      "type": "formule",
+      "recto": "Lors du chauffage d'une masse d'eau à puissance constante, que représente le coefficient directeur de la droite donnant $Q$ en fonction de $\\Delta\\theta$ ?",
+      "verso": "Il vaut $mc$, la capacité thermique de la masse d'eau chauffée ; en le divisant par $m$, on obtient $c$. L'énergie fournie se calcule par $Q = P\\,t$.",
+      "difficulte": 3,
+      "tags": [
+        "mesure",
+        "graphique"
+      ]
+    },
+    {
+      "id": "PC1D-P02-022",
+      "lecon": "La calorimétrie et le bilan thermique",
+      "type": "definition",
+      "recto": "Qu'est-ce qu'un calorimètre ?",
+      "verso": "Une enceinte destinée à réaliser des échanges de chaleur en limitant au maximum les pertes vers l'extérieur : vase intérieur métallique, enveloppe isolante séparée par une couche d'air, couvercle percé, thermomètre et agitateur.",
+      "difficulte": 1,
+      "tags": [
+        "calorimetre"
+      ]
+    },
+    {
+      "id": "PC1D-P02-023",
+      "lecon": "La calorimétrie et le bilan thermique",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on une enceinte adiabatique ?",
+      "verso": "Une enceinte qui n'échange aucune chaleur avec l'extérieur. Un vase à double paroi (vase Dewar, bouteille thermos) en est une bonne réalisation.",
+      "difficulte": 2,
+      "tags": [
+        "adiabatique"
+      ]
+    },
+    {
+      "id": "PC1D-P02-024",
+      "lecon": "La calorimétrie et le bilan thermique",
+      "type": "formule",
+      "recto": "Qu'appelle-t-on la valeur en eau $\\mu$ d'un calorimètre ?",
+      "verso": "La masse d'eau qui aurait la même capacité thermique que lui : $\\mu = \\dfrac{C_{\\text{cal}}}{c_{\\text{eau}}}$, en kg. Dans les calculs, on remplace la masse d'eau $m$ par $m + \\mu$.",
+      "difficulte": 2,
+      "tags": [
+        "valeur-en-eau"
+      ]
+    },
+    {
+      "id": "PC1D-P02-025",
+      "lecon": "La calorimétrie et le bilan thermique",
+      "type": "formule",
+      "recto": "Dans un système thermiquement isolé, quelle relation constitue le bilan thermique ?",
+      "verso": "La somme algébrique des chaleurs reçues par tous les corps est nulle : $Q_1 + Q_2 + \\ldots + Q_n = 0$, chaque $Q_i = m_ic_i(\\theta_f - \\theta_i)$.",
+      "difficulte": 2,
+      "tags": [
+        "bilan-thermique"
+      ]
+    },
+    {
+      "id": "PC1D-P02-026",
+      "lecon": "La calorimétrie et le bilan thermique",
+      "type": "definition",
+      "recto": "Dans un bilan calorimétrique, à quelle masse d'eau ajoute-t-on la valeur en eau $\\mu$ du calorimètre ?",
+      "verso": "A la masse d'eau que le calorimètre contient déjà avant l'ajout, car il est à la même température qu'elle.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "valeur-en-eau"
+      ]
+    },
+    {
+      "id": "PC1D-P02-027",
+      "lecon": "La calorimétrie et le bilan thermique",
+      "type": "definition",
+      "recto": "Pourquoi ne faut-il pas écrire un signe moins devant le terme d'un corps qui se refroidit dans $Q_1 + Q_2 + \\ldots = 0$ ?",
+      "verso": "Son $\\theta_f - \\theta_i$ est déjà négatif : ajouter un moins compterait deux fois le signe et rendrait l'équation fausse.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "signe"
+      ]
+    },
+    {
+      "id": "PC1D-P02-028",
+      "lecon": "La calorimétrie et le bilan thermique",
+      "type": "formule",
+      "recto": "Quel contrôle simple permet de repérer une température finale de mélange fausse ?",
+      "verso": "La température finale d'un mélange est toujours comprise entre la plus basse et la plus haute des températures initiales.",
+      "difficulte": 2,
+      "tags": [
+        "controle",
+        "temperature-finale"
+      ]
+    },
+    {
+      "id": "PC1D-P02-029",
+      "lecon": "La chaleur latente de changement d'état",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on la chaleur latente de changement d'état $L$ d'un corps pur ?",
+      "verso": "C'est la quantité de chaleur qu'il faut fournir à $1~\\mathrm{kg}$ de ce corps pour le faire changer d'état, sans variation de température. Elle s'exprime en $\\mathrm{J/kg}$.",
+      "difficulte": 1,
+      "tags": [
+        "chaleur-latente"
+      ]
+    },
+    {
+      "id": "PC1D-P02-030",
+      "lecon": "La chaleur latente de changement d'état",
+      "type": "formule",
+      "recto": "Quelle relation donne la chaleur échangée par une masse $m$ qui change entièrement d'état ?",
+      "verso": "$Q = m\\,L$, avec $m$ en kg, $L$ en $\\mathrm{J/kg}$ et $Q$ en J, la température restant constante pendant le palier.",
+      "difficulte": 1,
+      "tags": [
+        "chaleur-latente",
+        "relation"
+      ]
+    },
+    {
+      "id": "PC1D-P02-031",
+      "lecon": "La chaleur latente de changement d'état",
+      "type": "formule",
+      "recto": "Comment le signe de la chaleur échangée dépend-il du sens du changement d'état ?",
+      "verso": "Fusion, vaporisation et sublimation : chaleur reçue, $Q = +mL$. Solidification, liquéfaction et condensation solide : chaleur cédée, $Q = -mL$, avec la même valeur de $L$.",
+      "difficulte": 2,
+      "tags": [
+        "signe",
+        "changement-etat"
+      ]
+    },
+    {
+      "id": "PC1D-P02-032",
+      "lecon": "La chaleur latente de changement d'état",
+      "type": "formule",
+      "recto": "Quelles sont les chaleurs latentes de fusion de la glace et de vaporisation de l'eau ?",
+      "verso": "$L_f = 3{,}34 \\times 10^{5}~\\mathrm{J/kg}$ à $0$ °C ; $L_v = 2{,}26 \\times 10^{6}~\\mathrm{J/kg}$ à $100$ °C, sous la pression atmosphérique normale.",
+      "difficulte": 2,
+      "tags": [
+        "valeurs",
+        "eau"
+      ]
+    },
+    {
+      "id": "PC1D-P02-033",
+      "lecon": "La chaleur latente de changement d'état",
+      "type": "formule",
+      "recto": "Dans l'écriture où la chaleur latente porte un signe, comment s'expriment $L_s$, $L_l$ et $L_c$ ?",
+      "verso": "$L_s = -L_f$ (solidification), $L_l = -L_v$ (liquéfaction), $L_c = -L_{\\text{sub}}$ (condensation solide) ; on écrit alors toujours $Q = mL$.",
+      "difficulte": 3,
+      "tags": [
+        "chaleur-latente",
+        "signe"
+      ]
+    },
+    {
+      "id": "PC1D-P02-034",
+      "lecon": "La chaleur latente de changement d'état",
+      "type": "definition",
+      "recto": "Pourquoi n'écrit-on jamais $Q = mc\\Delta\\theta$ pendant la fusion de la glace ?",
+      "verso": "Pendant un changement d'état, la température reste constante : $\\Delta\\theta = 0$. La chaleur échangée sur le palier vaut $Q = mL_f$.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "palier"
+      ]
+    },
+    {
+      "id": "PC1D-P02-035",
+      "lecon": "La chaleur latente de changement d'état",
+      "type": "definition",
+      "recto": "Pourquoi un glaçon à 0 °C refroidit-il une boisson davantage que la même masse d'eau liquide à 0 °C ?",
+      "verso": "La glace doit d'abord fondre, ce qui lui fait absorber en plus la chaleur $mL_f$ avant de s'échauffer : elle prélève plus de chaleur à la boisson.",
+      "difficulte": 2,
+      "tags": [
+        "interpretation",
+        "fusion"
+      ]
+    },
+    {
+      "id": "PC1D-P02-036",
+      "lecon": "La chaleur latente de changement d'état",
+      "type": "definition",
+      "recto": "Dans un bilan avec un glaçon, que conclut-on si l'hypothèse « toute la glace fond » conduit à une température finale impossible ?",
+      "verso": "La fusion est partielle : la température finale est celle du palier, $0$ °C, et l'inconnue devient la masse de glace fondue.",
+      "difficulte": 3,
+      "tags": [
+        "fusion-partielle",
+        "bilan-thermique"
+      ]
+    },
+    {
+      "id": "PC1D-P02-037",
+      "lecon": "La chaleur latente de changement d'état",
+      "type": "definition",
+      "recto": "De quoi dépendent la température de changement d'état et la chaleur latente d'un corps pur ?",
+      "verso": "De la pression : dans une cocotte-minute, l'eau bout vers $120$ °C et $L_v$ n'y vaut plus qu'environ $2{,}2 \\times 10^{6}~\\mathrm{J/kg}$.",
+      "difficulte": 2,
+      "tags": [
+        "pression",
+        "changement-etat"
+      ]
+    }
+  ]
+}

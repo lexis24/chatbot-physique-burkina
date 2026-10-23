@@ -11,7 +11,7 @@ def test_infer_difficulty_defaults_to_medium_without_history():
 
 
 def test_infer_difficulty_detects_basic_level_questions():
-    history = [{"role": "user", "content": "Je ne comprends pas, c'est quoi une fraction ?"}]
+    history = [{"role": "user", "content": "Je ne comprends pas, c'est quoi la masse volumique ?"}]
     assert RAGSystem._infer_difficulty(history) == 1
 
 

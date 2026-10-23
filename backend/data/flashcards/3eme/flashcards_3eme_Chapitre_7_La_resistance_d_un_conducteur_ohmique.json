@@ -1,0 +1,391 @@
+{
+  "matiere": "Physique-Chimie",
+  "partie": "Physique",
+  "niveau": "3ème",
+  "chapitre": "Physique, Chapitre 7 : La résistance d'un conducteur ohmique",
+  "source": "pc/3eme/Chapitre_7_La_resistance_d_un_conducteur_ohmique",
+  "nombre_cartes": 32,
+  "cartes": [
+    {
+      "id": "PC3E-P07-001",
+      "lecon": "L'influence d'un conducteur ohmique dans un circuit",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on un conducteur ohmique ?",
+      "verso": "Un dipôle, appelé aussi résistor, qui s'oppose au passage du courant électrique sans l'empêcher. Il ne produit ni lumière ni mouvement.",
+      "difficulte": 1,
+      "tags": [
+        "conducteur-ohmique",
+        "definition"
+      ]
+    },
+    {
+      "id": "PC3E-P07-002",
+      "lecon": "L'influence d'un conducteur ohmique dans un circuit",
+      "type": "definition",
+      "recto": "Quelle est l'influence d'un conducteur ohmique placé en série dans un circuit ?",
+      "verso": "Il diminue l'intensité du courant qui parcourt le circuit : une lampe montée avec lui brille moins fort que si elle était seule.",
+      "difficulte": 1,
+      "tags": [
+        "influence",
+        "serie"
+      ]
+    },
+    {
+      "id": "PC3E-P07-003",
+      "lecon": "L'influence d'un conducteur ohmique dans un circuit",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on la résistance d'un dipôle ?",
+      "verso": "La grandeur, notée $R$, qui mesure l'opposition du dipôle au passage du courant. Plus $R$ est grande, plus l'intensité est faible pour une même tension.",
+      "difficulte": 1,
+      "tags": [
+        "resistance",
+        "definition"
+      ]
+    },
+    {
+      "id": "PC3E-P07-004",
+      "lecon": "L'influence d'un conducteur ohmique dans un circuit",
+      "type": "definition",
+      "recto": "Quelle est l'unité légale de résistance électrique, avec son symbole ?",
+      "verso": "L'ohm, de symbole $\\Omega$. Multiples : $1~\\mathrm{k\\Omega} = 1\\,000~\\Omega$ et $1~\\mathrm{M\\Omega} = 1\\,000\\,000~\\Omega$.",
+      "difficulte": 1,
+      "tags": [
+        "ohm",
+        "unite"
+      ]
+    },
+    {
+      "id": "PC3E-P07-005",
+      "lecon": "L'influence d'un conducteur ohmique dans un circuit",
+      "type": "definition",
+      "recto": "Comment représente-t-on un conducteur ohmique sur un schéma normalisé ?",
+      "verso": "Par un rectangle allongé placé sur le fil, avec à côté sa lettre et sa valeur (par exemple $R_1 = 22~\\Omega$). Ses deux bornes sont identiques : on le branche dans un sens ou dans l'autre.",
+      "difficulte": 2,
+      "tags": [
+        "symbole",
+        "schema"
+      ]
+    },
+    {
+      "id": "PC3E-P07-006",
+      "lecon": "L'influence d'un conducteur ohmique dans un circuit",
+      "type": "definition",
+      "recto": "Sur un schéma, qu'est-ce qui distingue le symbole d'un fusible de celui d'un conducteur ohmique ?",
+      "verso": "Le rectangle du fusible est traversé d'un trait ; celui du conducteur ohmique ne l'est pas. Le fusible est fait pour fondre, le conducteur ohmique pour rester en place.",
+      "difficulte": 3,
+      "tags": [
+        "symbole",
+        "fusible"
+      ]
+    },
+    {
+      "id": "PC3E-P07-007",
+      "lecon": "L'influence d'un conducteur ohmique dans un circuit",
+      "type": "definition",
+      "recto": "De deux conducteurs ohmiques placés tour à tour dans le même circuit, lequel laisse passer le moins de courant ?",
+      "verso": "Celui qui a la plus grande résistance.",
+      "difficulte": 2,
+      "tags": [
+        "resistance",
+        "comparaison"
+      ]
+    },
+    {
+      "id": "PC3E-P07-008",
+      "lecon": "L'influence d'un conducteur ohmique dans un circuit",
+      "type": "definition",
+      "recto": "Pourquoi est-il faux de dire qu'un conducteur ohmique « consomme du courant » ?",
+      "verso": "Dans une boucle en série, l'intensité est la même avant et après le dipôle : il freine le courant sans l'arrêter. Ce qui est consommé, c'est de l'énergie.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "courant"
+      ]
+    },
+    {
+      "id": "PC3E-P07-009",
+      "lecon": "La caractéristique d'un dipôle et la loi d'Ohm",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on la caractéristique d'un dipôle ?",
+      "verso": "La courbe qui représente la tension $U$ aux bornes du dipôle en fonction de l'intensité $I$ du courant qui le traverse, notée $U = f(I)$.",
+      "difficulte": 1,
+      "tags": [
+        "caracteristique",
+        "definition"
+      ]
+    },
+    {
+      "id": "PC3E-P07-010",
+      "lecon": "La caractéristique d'un dipôle et la loi d'Ohm",
+      "type": "definition",
+      "recto": "Sur la caractéristique $U = f(I)$ d'un dipôle, quelle grandeur porte-t-on sur chaque axe ?",
+      "verso": "L'intensité $I$ en abscisse et la tension $U$ en ordonnée, chaque axe portant la grandeur et son unité, par exemple « $I$ (mA) » et « $U$ (V) ».",
+      "difficulte": 2,
+      "tags": [
+        "caracteristique",
+        "axes"
+      ]
+    },
+    {
+      "id": "PC3E-P07-011",
+      "lecon": "La caractéristique d'un dipôle et la loi d'Ohm",
+      "type": "definition",
+      "recto": "A quoi reconnaît-on un conducteur ohmique sur sa caractéristique $U = f(I)$ ?",
+      "verso": "Sa caractéristique est une droite (ou une portion de droite) passant par l'origine : la tension est proportionnelle à l'intensité, le quotient $\\dfrac{U}{I}$ est constant.",
+      "difficulte": 2,
+      "tags": [
+        "conducteur-ohmique",
+        "caracteristique"
+      ]
+    },
+    {
+      "id": "PC3E-P07-012",
+      "lecon": "La caractéristique d'un dipôle et la loi d'Ohm",
+      "type": "formule",
+      "recto": "Pour un conducteur ohmique, que dit la loi d'Ohm ?",
+      "verso": "La tension à ses bornes est proportionnelle à l'intensité du courant qui le traverse, le coefficient étant sa résistance : $U = R \\times I$, avec $U$ en volts, $I$ en ampères et $R$ en ohms.",
+      "difficulte": 1,
+      "tags": [
+        "loi-d-ohm",
+        "relation"
+      ]
+    },
+    {
+      "id": "PC3E-P07-013",
+      "lecon": "La caractéristique d'un dipôle et la loi d'Ohm",
+      "type": "formule",
+      "recto": "Quelles expressions de $R$ et de $I$ tire-t-on de la loi d'Ohm $U = R \\times I$ ?",
+      "verso": "$R = \\dfrac{U}{I}$ et $I = \\dfrac{U}{R}$, valables pour un conducteur ohmique, avec $U$ en V, $I$ en A et $R$ en $\\Omega$.",
+      "difficulte": 2,
+      "tags": [
+        "loi-d-ohm",
+        "formes"
+      ]
+    },
+    {
+      "id": "PC3E-P07-014",
+      "lecon": "La caractéristique d'un dipôle et la loi d'Ohm",
+      "type": "formule",
+      "recto": "Comment l'ohm s'exprime-t-il à partir du volt et de l'ampère ?",
+      "verso": "$1~\\Omega = \\dfrac{1~\\mathrm{V}}{1~\\mathrm{A}}$ : avec $U$ en volts et $I$ en ampères, $R = \\dfrac{U}{I}$ est en ohms.",
+      "difficulte": 2,
+      "tags": [
+        "ohm",
+        "unite"
+      ]
+    },
+    {
+      "id": "PC3E-P07-015",
+      "lecon": "La caractéristique d'un dipôle et la loi d'Ohm",
+      "type": "formule",
+      "recto": "Comment calcule-t-on la résistance d'un conducteur ohmique à partir de sa caractéristique ?",
+      "verso": "$R$ est la pente (coefficient directeur) de la droite : $R = \\dfrac{\\Delta U}{\\Delta I} = \\dfrac{U_2 - U_1}{I_2 - I_1}$, avec deux points bien écartés et l'intensité en ampères.",
+      "difficulte": 2,
+      "tags": [
+        "pente",
+        "caracteristique"
+      ]
+    },
+    {
+      "id": "PC3E-P07-016",
+      "lecon": "La caractéristique d'un dipôle et la loi d'Ohm",
+      "type": "definition",
+      "recto": "Sur un même repère $U = f(I)$, à quel conducteur ohmique appartient la droite la plus inclinée ?",
+      "verso": "Au conducteur de plus grande résistance : il faut plus de tension pour obtenir la même intensité.",
+      "difficulte": 3,
+      "tags": [
+        "caracteristique",
+        "comparaison"
+      ]
+    },
+    {
+      "id": "PC3E-P07-017",
+      "lecon": "La caractéristique d'un dipôle et la loi d'Ohm",
+      "type": "definition",
+      "recto": "Pourquoi une lampe à incandescence n'est-elle pas un conducteur ohmique ?",
+      "verso": "Sa caractéristique est une courbe et non une droite passant par l'origine : le quotient $\\dfrac{U}{I}$ change avec l'intensité. La loi d'Ohm ne s'y applique pas.",
+      "difficulte": 2,
+      "tags": [
+        "lampe",
+        "caracteristique"
+      ]
+    },
+    {
+      "id": "PC3E-P07-018",
+      "lecon": "La caractéristique d'un dipôle et la loi d'Ohm",
+      "type": "definition",
+      "recto": "A quels dipôles la loi d'Ohm s'applique-t-elle ?",
+      "verso": "Uniquement aux conducteurs ohmiques ; elle ne vaut ni pour une lampe, ni pour un moteur, ni pour une pile.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "loi-d-ohm"
+      ]
+    },
+    {
+      "id": "PC3E-P07-019",
+      "lecon": "La caractéristique d'un dipôle et la loi d'Ohm",
+      "type": "definition",
+      "recto": "Comment trace-t-on la caractéristique à partir des points de mesure ?",
+      "verso": "On marque chaque point d'une petite croix, sans relier les points, puis on trace à la règle la droite moyenne, qui passe par l'origine et laisse autant de points de chaque côté.",
+      "difficulte": 2,
+      "tags": [
+        "trace",
+        "droite-moyenne"
+      ]
+    },
+    {
+      "id": "PC3E-P07-020",
+      "lecon": "La caractéristique d'un dipôle et la loi d'Ohm",
+      "type": "definition",
+      "recto": "Quelle erreur contient le calcul $R = \\dfrac{12}{240} = 0{,}05~\\Omega$ avec $U = 12~\\mathrm{V}$ et $I = 240~\\mathrm{mA}$ ?",
+      "verso": "L'intensité n'a pas été convertie en ampères : $I = 0{,}240~\\mathrm{A}$, donc $R = \\dfrac{12}{0{,}240} = 50~\\Omega$.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "conversion"
+      ]
+    },
+    {
+      "id": "PC3E-P07-021",
+      "lecon": "La caractéristique d'un dipôle et la loi d'Ohm",
+      "type": "definition",
+      "recto": "Comment donne-t-on une tension « de deux manières différentes » à partir de la caractéristique d'un conducteur ohmique ?",
+      "verso": "Par lecture graphique sur la droite, puis par le calcul avec la loi d'Ohm $U = R \\times I$.",
+      "difficulte": 2,
+      "tags": [
+        "caracteristique",
+        "lecture"
+      ]
+    },
+    {
+      "id": "PC3E-P07-022",
+      "lecon": "La puissance électrique dissipée par effet Joule",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on la puissance dissipée par effet Joule dans un conducteur ohmique ?",
+      "verso": "La puissance électrique que le conducteur ohmique reçoit et convertit entièrement en chaleur. On la note $P$, elle s'exprime en watts.",
+      "difficulte": 1,
+      "tags": [
+        "puissance-dissipee",
+        "definition"
+      ]
+    },
+    {
+      "id": "PC3E-P07-023",
+      "lecon": "La puissance électrique dissipée par effet Joule",
+      "type": "formule",
+      "recto": "Quelle relation donne la puissance $P$ dissipée par effet Joule dans un conducteur ohmique de résistance $R$ parcouru par un courant d'intensité $I$ ?",
+      "verso": "$P = R \\times I^{2}$, avec $R$ en ohms, $I$ en ampères et $P$ en watts.",
+      "difficulte": 2,
+      "tags": [
+        "puissance-dissipee",
+        "r-i2"
+      ]
+    },
+    {
+      "id": "PC3E-P07-024",
+      "lecon": "La puissance électrique dissipée par effet Joule",
+      "type": "formule",
+      "recto": "Quelle relation donne la puissance $P$ dissipée par un conducteur ohmique de résistance $R$ soumis à une tension $U$ ?",
+      "verso": "$P = \\dfrac{U^{2}}{R}$, avec $U$ en volts, $R$ en ohms et $P$ en watts.",
+      "difficulte": 2,
+      "tags": [
+        "puissance-dissipee",
+        "u2-sur-r"
+      ]
+    },
+    {
+      "id": "PC3E-P07-025",
+      "lecon": "La puissance électrique dissipée par effet Joule",
+      "type": "formule",
+      "recto": "Comment établit-on $P = R \\times I^{2}$ pour un conducteur ohmique ?",
+      "verso": "On part de $P = U \\times I$ et l'on remplace $U$ par $R \\times I$ (loi d'Ohm) : $P = R \\times I \\times I = R \\times I^{2}$.",
+      "difficulte": 2,
+      "tags": [
+        "demonstration",
+        "puissance-dissipee"
+      ]
+    },
+    {
+      "id": "PC3E-P07-026",
+      "lecon": "La puissance électrique dissipée par effet Joule",
+      "type": "formule",
+      "recto": "Quelle relation donne l'énergie $E$ dissipée en chaleur par un conducteur ohmique de résistance $R$ parcouru par un courant $I$ pendant une durée $t$ ?",
+      "verso": "$E = P \\times t = R \\times I^{2} \\times t$, en joules avec $R$ en ohms, $I$ en ampères et $t$ en secondes.",
+      "difficulte": 2,
+      "tags": [
+        "energie-dissipee",
+        "relation"
+      ]
+    },
+    {
+      "id": "PC3E-P07-027",
+      "lecon": "La puissance électrique dissipée par effet Joule",
+      "type": "definition",
+      "recto": "Pour un conducteur ohmique, comment varie la puissance dissipée quand l'intensité est doublée ?",
+      "verso": "Elle est multipliée par 4, car $P = R \\times I^{2}$ : l'intensité y figure au carré. C'est pourquoi une rallonge fine alimentant deux appareils puissants devient brûlante.",
+      "difficulte": 2,
+      "tags": [
+        "intensite-au-carre",
+        "rallonge"
+      ]
+    },
+    {
+      "id": "PC3E-P07-028",
+      "lecon": "La puissance électrique dissipée par effet Joule",
+      "type": "definition",
+      "recto": "Dans $P = R \\times I^{2}$, sur quelle grandeur porte le carré ?",
+      "verso": "Sur l'intensité seule, jamais sur la résistance : $P = 47 \\times (0{,}12)^{2} \\approx 0{,}68~\\mathrm{W}$ et non $(47 \\times 0{,}12)^{2}$. Dans $P = \\dfrac{U^{2}}{R}$, le carré porte sur la tension seule.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "carre"
+      ]
+    },
+    {
+      "id": "PC3E-P07-029",
+      "lecon": "La puissance électrique dissipée par effet Joule",
+      "type": "definition",
+      "recto": "Quelle différence y a-t-il entre la puissance dissipée et l'énergie dissipée par un conducteur ohmique ?",
+      "verso": "La puissance, en watts, ne dépend pas de la durée ; l'énergie, en joules ou en wattheures, en dépend : $E = P \\times t$.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "puissance-energie"
+      ]
+    },
+    {
+      "id": "PC3E-P07-030",
+      "lecon": "La puissance électrique dissipée par effet Joule",
+      "type": "definition",
+      "recto": "Quel est le rôle d'une résistance de protection montée en série avec une lampe ?",
+      "verso": "Elle prend à son compte la tension de trop : $U_R = U_{\\text{source}} - U_{\\text{nominale}}$. Traversée par l'intensité nominale $I$ de la lampe, sa valeur est $R = \\dfrac{U_R}{I}$.",
+      "difficulte": 2,
+      "tags": [
+        "resistance-de-protection"
+      ]
+    },
+    {
+      "id": "PC3E-P07-031",
+      "lecon": "La puissance électrique dissipée par effet Joule",
+      "type": "definition",
+      "recto": "Pourquoi faut-il vérifier la puissance admissible d'un conducteur ohmique avant de l'utiliser ?",
+      "verso": "Un conducteur ohmique qui dissipe plus que sa puissance admissible noircit et finit par s'ouvrir : on choisit un composant donné pour une puissance supérieure à celle qu'il dissipera.",
+      "difficulte": 2,
+      "tags": [
+        "puissance-admissible"
+      ]
+    },
+    {
+      "id": "PC3E-P07-032",
+      "lecon": "La puissance électrique dissipée par effet Joule",
+      "type": "definition",
+      "recto": "Quels ordres de grandeur de puissance dissipée retenir pour un conducteur ohmique ?",
+      "verso": "Quelques dixièmes de watt pour un petit conducteur ohmique de plaquette ; quelques centaines ou milliers de watts pour une résistance chauffante.",
+      "difficulte": 1,
+      "tags": [
+        "ordre-de-grandeur"
+      ]
+    }
+  ]
+}

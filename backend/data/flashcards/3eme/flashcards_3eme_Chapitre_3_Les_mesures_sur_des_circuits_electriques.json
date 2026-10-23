@@ -1,0 +1,415 @@
+{
+  "matiere": "Physique-Chimie",
+  "partie": "Physique",
+  "niveau": "3ème",
+  "chapitre": "Physique, Chapitre 3 : Les mesures sur des circuits électriques",
+  "source": "pc/3eme/Chapitre_3_Les_mesures_sur_des_circuits_electriques",
+  "nombre_cartes": 34,
+  "cartes": [
+    {
+      "id": "PC3E-P03-001",
+      "lecon": "Le circuit série, unicité de l'intensité et additivité des tensions",
+      "type": "definition",
+      "recto": "Quand dit-on que des récepteurs sont montés en série ?",
+      "verso": "Lorsqu'ils sont placés à la suite les uns des autres sur une seule boucle, sans aucun noeud. On dit aussi circuit sans dérivation.",
+      "difficulte": 1,
+      "tags": [
+        "circuit-serie",
+        "definition"
+      ]
+    },
+    {
+      "id": "PC3E-P03-002",
+      "lecon": "Le circuit série, unicité de l'intensité et additivité des tensions",
+      "type": "formule",
+      "recto": "Dans un circuit série, que dit la loi d'unicité de l'intensité ?",
+      "verso": "L'intensité du courant est la même en tout point du circuit : $I = I_1 = I_2 = I_3 = \\ldots = I_n$.",
+      "difficulte": 1,
+      "tags": [
+        "unicite-intensite",
+        "circuit-serie"
+      ]
+    },
+    {
+      "id": "PC3E-P03-003",
+      "lecon": "Le circuit série, unicité de l'intensité et additivité des tensions",
+      "type": "formule",
+      "recto": "Dans un circuit série, que dit la loi d'additivité des tensions ?",
+      "verso": "La tension aux bornes du générateur est égale à la somme des tensions aux bornes de chaque récepteur : $U = U_1 + U_2 + U_3 + \\ldots + U_n$.",
+      "difficulte": 1,
+      "tags": [
+        "additivite-tensions",
+        "circuit-serie"
+      ]
+    },
+    {
+      "id": "PC3E-P03-004",
+      "lecon": "Le circuit série, unicité de l'intensité et additivité des tensions",
+      "type": "definition",
+      "recto": "Dans l'étude d'un circuit, que désignent les notations $U_G$ et $I_G$ ?",
+      "verso": "$U_G$ est la tension aux bornes du générateur et $I_G$ l'intensité du courant qu'il débite.",
+      "difficulte": 1,
+      "tags": [
+        "notations",
+        "generateur"
+      ]
+    },
+    {
+      "id": "PC3E-P03-005",
+      "lecon": "Le circuit série, unicité de l'intensité et additivité des tensions",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on un diviseur de tension ?",
+      "verso": "Un montage de $n$ appareils identiques en série sous une tension $U$ : chacun reçoit la même tension, égale à $\\dfrac{U}{n}$.",
+      "difficulte": 2,
+      "tags": [
+        "diviseur-de-tension"
+      ]
+    },
+    {
+      "id": "PC3E-P03-006",
+      "lecon": "Le circuit série, unicité de l'intensité et additivité des tensions",
+      "type": "formule",
+      "recto": "Dans un circuit série alimenté sous $U$, comment calcule-t-on la tension $U_3$ aux bornes du troisième récepteur connaissant $U_1$ et $U_2$ ?",
+      "verso": "Par l'additivité des tensions, en isolant l'inconnue : $U_3 = U - U_1 - U_2$ (circuit série de trois récepteurs).",
+      "difficulte": 2,
+      "tags": [
+        "additivite-tensions",
+        "calcul"
+      ]
+    },
+    {
+      "id": "PC3E-P03-007",
+      "lecon": "Le circuit série, unicité de l'intensité et additivité des tensions",
+      "type": "formule",
+      "recto": "Dans un circuit série, quelle propriété doivent vérifier les tensions des récepteurs par rapport à celle du générateur ?",
+      "verso": "Chaque tension de récepteur est inférieure à celle du générateur, et leur somme lui est égale.",
+      "difficulte": 2,
+      "tags": [
+        "controle",
+        "circuit-serie"
+      ]
+    },
+    {
+      "id": "PC3E-P03-008",
+      "lecon": "Le circuit série, unicité de l'intensité et additivité des tensions",
+      "type": "definition",
+      "recto": "Quelles sont les quatre parties du compte rendu d'une expérience qui vérifie une loi ?",
+      "verso": "Le mode opératoire, les résultats (valeurs relevées), l'exploitation (le calcul qui compare les valeurs) et la conclusion (l'énoncé de la loi vérifiée).",
+      "difficulte": 2,
+      "tags": [
+        "compte-rendu",
+        "experience"
+      ]
+    },
+    {
+      "id": "PC3E-P03-009",
+      "lecon": "Le circuit série, unicité de l'intensité et additivité des tensions",
+      "type": "definition",
+      "recto": "Pourquoi est-il faux de dire que, dans un circuit série, le courant diminue après chaque lampe ?",
+      "verso": "L'intensité n'est pas consommée par les lampes : elle est unique en tout point du circuit série. C'est la tension qui se partage entre les récepteurs.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "unicite-intensite"
+      ]
+    },
+    {
+      "id": "PC3E-P03-010",
+      "lecon": "Le circuit série, unicité de l'intensité et additivité des tensions",
+      "type": "definition",
+      "recto": "A quelle condition peut-on écrire qu'un récepteur d'un circuit série reçoit $\\dfrac{U}{n}$ ?",
+      "verso": "Seulement si les $n$ appareils sont identiques et tous en série sous la tension $U$.",
+      "difficulte": 2,
+      "tags": [
+        "diviseur-de-tension",
+        "condition"
+      ]
+    },
+    {
+      "id": "PC3E-P03-011",
+      "lecon": "Le circuit avec dérivations, unicité de la tension et additivité des intensités",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on un noeud dans un circuit électrique ?",
+      "verso": "Un point où se rejoignent au moins trois fils. Un simple angle du tracé n'est pas un noeud.",
+      "difficulte": 1,
+      "tags": [
+        "noeud",
+        "vocabulaire"
+      ]
+    },
+    {
+      "id": "PC3E-P03-012",
+      "lecon": "Le circuit avec dérivations, unicité de la tension et additivité des intensités",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on une branche dans un circuit électrique ?",
+      "verso": "La portion de circuit comprise entre deux noeuds.",
+      "difficulte": 1,
+      "tags": [
+        "branche",
+        "vocabulaire"
+      ]
+    },
+    {
+      "id": "PC3E-P03-013",
+      "lecon": "Le circuit avec dérivations, unicité de la tension et additivité des intensités",
+      "type": "definition",
+      "recto": "Dans un circuit avec dérivations, qu'appelle-t-on la branche principale ?",
+      "verso": "La branche qui contient le générateur ; les autres sont les branches dérivées.",
+      "difficulte": 1,
+      "tags": [
+        "branche-principale"
+      ]
+    },
+    {
+      "id": "PC3E-P03-014",
+      "lecon": "Le circuit avec dérivations, unicité de la tension et additivité des intensités",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on courant principal et courants dérivés dans un circuit avec dérivations ?",
+      "verso": "Le courant principal est celui de la branche principale ; les courants dérivés sont ceux des branches dérivées.",
+      "difficulte": 2,
+      "tags": [
+        "courant-principal",
+        "courant-derive"
+      ]
+    },
+    {
+      "id": "PC3E-P03-015",
+      "lecon": "Le circuit avec dérivations, unicité de la tension et additivité des intensités",
+      "type": "definition",
+      "recto": "Quel autre nom donne-t-on à des récepteurs montés en dérivation ?",
+      "verso": "On dit qu'ils sont montés en parallèle.",
+      "difficulte": 1,
+      "tags": [
+        "derivation",
+        "parallele"
+      ]
+    },
+    {
+      "id": "PC3E-P03-016",
+      "lecon": "Le circuit avec dérivations, unicité de la tension et additivité des intensités",
+      "type": "formule",
+      "recto": "Que dit la loi d'unicité de la tension pour des récepteurs montés en dérivation ?",
+      "verso": "Des récepteurs montés en dérivation entre deux mêmes points sont soumis à la même tension : $U = U_1 = U_2 = \\ldots = U_n$.",
+      "difficulte": 2,
+      "tags": [
+        "unicite-tension",
+        "derivation"
+      ]
+    },
+    {
+      "id": "PC3E-P03-017",
+      "lecon": "Le circuit avec dérivations, unicité de la tension et additivité des intensités",
+      "type": "formule",
+      "recto": "Dans un circuit avec dérivations, que dit la loi d'additivité des intensités ?",
+      "verso": "L'intensité du courant principal est égale à la somme des intensités des courants dérivés : $I = I_1 + I_2 + \\ldots + I_n$.",
+      "difficulte": 2,
+      "tags": [
+        "additivite-intensites",
+        "derivation"
+      ]
+    },
+    {
+      "id": "PC3E-P03-018",
+      "lecon": "Le circuit avec dérivations, unicité de la tension et additivité des intensités",
+      "type": "formule",
+      "recto": "Dans un circuit avec dérivations, comment calcule-t-on l'intensité $I_2$ d'une branche dérivée connaissant le courant principal $I$ et l'autre courant dérivé $I_1$ ?",
+      "verso": "Par l'additivité des intensités, en isolant l'inconnue : $I_2 = I - I_1$ (deux branches dérivées, intensités dans la même unité).",
+      "difficulte": 2,
+      "tags": [
+        "additivite-intensites",
+        "calcul"
+      ]
+    },
+    {
+      "id": "PC3E-P03-019",
+      "lecon": "Le circuit avec dérivations, unicité de la tension et additivité des intensités",
+      "type": "formule",
+      "recto": "Quelle intensité traverse chacune des $n$ branches dérivées identiques d'un circuit de courant principal $I$ ?",
+      "verso": "Chacune est traversée par $\\dfrac{I}{n}$ (par exemple un récepteur identique seul dans chaque branche).",
+      "difficulte": 2,
+      "tags": [
+        "branches-identiques"
+      ]
+    },
+    {
+      "id": "PC3E-P03-020",
+      "lecon": "Le circuit avec dérivations, unicité de la tension et additivité des intensités",
+      "type": "definition",
+      "recto": "Comment les lois de l'intensité et de la tension s'échangent-elles entre circuit série et circuit avec dérivations ?",
+      "verso": "Ce qui est unique en série devient additif en dérivation, et inversement : en série, $I$ unique et $U$ additive ; en dérivation, $U$ unique et $I$ additive.",
+      "difficulte": 2,
+      "tags": [
+        "tableau",
+        "serie",
+        "derivation"
+      ]
+    },
+    {
+      "id": "PC3E-P03-021",
+      "lecon": "Le circuit avec dérivations, unicité de la tension et additivité des intensités",
+      "type": "definition",
+      "recto": "Pourquoi les lampes d'une maison sont-elles montées en dérivation ?",
+      "verso": "Chaque lampe reçoit ainsi la tension du secteur et fonctionne indépendamment : une ampoule grillée n'éteint pas les autres branches.",
+      "difficulte": 2,
+      "tags": [
+        "application",
+        "maison"
+      ]
+    },
+    {
+      "id": "PC3E-P03-022",
+      "lecon": "Le circuit avec dérivations, unicité de la tension et additivité des intensités",
+      "type": "definition",
+      "recto": "Dans une installation domestique, pourquoi le disjoncteur général saute-t-il quand trop d'appareils fonctionnent à la fois ?",
+      "verso": "Placé sur la branche principale, il porte le courant principal, somme des intensités de tous les appareils allumés.",
+      "difficulte": 2,
+      "tags": [
+        "application",
+        "disjoncteur"
+      ]
+    },
+    {
+      "id": "PC3E-P03-023",
+      "lecon": "Le circuit avec dérivations, unicité de la tension et additivité des intensités",
+      "type": "definition",
+      "recto": "Pourquoi le phare, les clignotants et le klaxon d'une moto sont-ils montés en dérivation sur la batterie ?",
+      "verso": "Pour que chaque appareil reçoive les $12~\\mathrm{V}$ de la batterie, et qu'une panne n'immobilise pas tout l'éclairage.",
+      "difficulte": 2,
+      "tags": [
+        "application",
+        "moto"
+      ]
+    },
+    {
+      "id": "PC3E-P03-024",
+      "lecon": "Le circuit avec dérivations, unicité de la tension et additivité des intensités",
+      "type": "definition",
+      "recto": "Quelle faute commet l'élève qui écrit que deux lampes en dérivation sur $4{,}5~\\mathrm{V}$ reçoivent $2{,}25~\\mathrm{V}$ chacune ?",
+      "verso": "Il additionne les tensions alors que, en dérivation, la tension est unique : chaque lampe reçoit $4{,}5~\\mathrm{V}$.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "unicite-tension"
+      ]
+    },
+    {
+      "id": "PC3E-P03-025",
+      "lecon": "Le circuit avec dérivations, unicité de la tension et additivité des intensités",
+      "type": "definition",
+      "recto": "Pourquoi un coin à angle droit sur un schéma n'est-il pas un noeud ?",
+      "verso": "Un noeud exige au moins trois fils qui se rejoignent ; ce sont les noeuds, et non la forme du dessin, qui décident du montage.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "noeud"
+      ]
+    },
+    {
+      "id": "PC3E-P03-026",
+      "lecon": "Résoudre un circuit mixte, la méthode",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on un circuit mixte ?",
+      "verso": "Un circuit qui comporte à la fois des portions en série et des portions en dérivation. Aucune loi nouvelle n'est nécessaire : on applique les quatre lois connues.",
+      "difficulte": 1,
+      "tags": [
+        "circuit-mixte",
+        "definition"
+      ]
+    },
+    {
+      "id": "PC3E-P03-027",
+      "lecon": "Résoudre un circuit mixte, la méthode",
+      "type": "formule",
+      "recto": "Dans un circuit mixte, quelles lois s'appliquent à l'intérieur d'une même branche ?",
+      "verso": "Une branche ne contient pas de noeud : ses récepteurs sont en série, l'intensité y est unique et les tensions s'y additionnent.",
+      "difficulte": 2,
+      "tags": [
+        "decoupage",
+        "branche"
+      ]
+    },
+    {
+      "id": "PC3E-P03-028",
+      "lecon": "Résoudre un circuit mixte, la méthode",
+      "type": "formule",
+      "recto": "Dans un circuit mixte, quelles lois s'appliquent aux branches placées entre deux mêmes noeuds ?",
+      "verso": "Elles sont en dérivation : la tension y est unique et les intensités s'additionnent.",
+      "difficulte": 2,
+      "tags": [
+        "decoupage",
+        "noeuds"
+      ]
+    },
+    {
+      "id": "PC3E-P03-029",
+      "lecon": "Résoudre un circuit mixte, la méthode",
+      "type": "formule",
+      "recto": "Que dit la règle du bloc pour un groupe de récepteurs en dérivation dans un circuit mixte ?",
+      "verso": "Le groupe se traite comme un seul bloc dans la boucle : sa tension est la tension commune à ses branches, et l'intensité qui y entre est la somme des intensités de ses branches.",
+      "difficulte": 2,
+      "tags": [
+        "regle-du-bloc"
+      ]
+    },
+    {
+      "id": "PC3E-P03-030",
+      "lecon": "Résoudre un circuit mixte, la méthode",
+      "type": "definition",
+      "recto": "Dans un circuit mixte, pourquoi un récepteur grillé de la branche principale éteint-il tout ?",
+      "verso": "Il est traversé par la totalité du courant : il ouvre le seul chemin commun. Un récepteur grillé d'une branche dérivée n'ouvre que sa branche.",
+      "difficulte": 2,
+      "tags": [
+        "branche-principale",
+        "panne"
+      ]
+    },
+    {
+      "id": "PC3E-P03-031",
+      "lecon": "Résoudre un circuit mixte, la méthode",
+      "type": "formule",
+      "recto": "Quels contrôles permettent de vérifier les résultats d'un circuit sans refaire le calcul ?",
+      "verso": "Aucune intensité dérivée ne dépasse le courant principal, aucune tension de récepteur ne dépasse celle du générateur, et les sommes tombent juste le long d'une boucle et en chaque noeud.",
+      "difficulte": 2,
+      "tags": [
+        "controle"
+      ]
+    },
+    {
+      "id": "PC3E-P03-032",
+      "lecon": "Résoudre un circuit mixte, la méthode",
+      "type": "definition",
+      "recto": "Dans une addition de tensions le long d'une boucle d'un circuit mixte, combien de termes compte un groupe de deux branches dérivées ?",
+      "verso": "Un seul terme : le groupe dérivé compte pour un seul bloc, de tension égale à la tension commune de ses branches.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "regle-du-bloc"
+      ]
+    },
+    {
+      "id": "PC3E-P03-033",
+      "lecon": "Résoudre un circuit mixte, la méthode",
+      "type": "definition",
+      "recto": "Pourquoi n'applique-t-on pas la formule du diviseur de tension à une lampe en série avec un groupe de deux lampes en dérivation ?",
+      "verso": "Le diviseur ne vaut que pour des appareils identiques en série ; une lampe et un groupe de deux lampes ne sont pas des appareils identiques.",
+      "difficulte": 3,
+      "tags": [
+        "diviseur-de-tension",
+        "circuit-mixte"
+      ]
+    },
+    {
+      "id": "PC3E-P03-034",
+      "lecon": "Résoudre un circuit mixte, la méthode",
+      "type": "definition",
+      "recto": "Quelle erreur commet un élève qui calcule $I_2 = 0{,}25 - 120$ avec $I = 0{,}25~\\mathrm{A}$ et $I_1 = 120~\\mathrm{mA}$ ?",
+      "verso": "Il mélange ampères et milliampères : il faut convertir avant de calculer, $120~\\mathrm{mA} = 0{,}12~\\mathrm{A}$, donc $I_2 = 0{,}25 - 0{,}12 = 0{,}13~\\mathrm{A}$.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "unites",
+        "conversion"
+      ]
+    }
+  ]
+}

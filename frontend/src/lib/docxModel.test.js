@@ -3,7 +3,7 @@ import { stripFigureBlocks, splitBoldSegments, parseMarkdownLines, qcmToLines, c
 
 describe("convertLatexToPlainText", () => {
   it("leaves text without LaTeX untouched", () => {
-    expect(convertLatexToPlainText("Rien de mathématique ici.")).toBe("Rien de mathématique ici.")
+    expect(convertLatexToPlainText("Rien de scientifique ici.")).toBe("Rien de scientifique ici.")
   })
 
   it("converts a fraction and a blackboard-bold set", () => {
@@ -36,7 +36,7 @@ describe("stripFigureBlocks", () => {
     const input = 'Avant\n```figure\n{"points":[]}\n```\nAprès'
     const result = stripFigureBlocks(input)
     expect(result).not.toContain("```figure")
-    expect(result).toContain("Figure géométrique")
+    expect(result).toContain("[Schéma — voir dans l'application]")
     expect(result).toContain("Avant")
     expect(result).toContain("Après")
   })
@@ -48,9 +48,9 @@ describe("stripFigureBlocks", () => {
 
 describe("splitBoldSegments", () => {
   it("splits **bold** markers into flagged segments, in order", () => {
-    expect(splitBoldSegments("Le **théorème de Pythagore** dit que...")).toEqual([
-      { text: "Le ", bold: false },
-      { text: "théorème de Pythagore", bold: true },
+    expect(splitBoldSegments("La **loi d'Ohm** dit que...")).toEqual([
+      { text: "La ", bold: false },
+      { text: "loi d'Ohm", bold: true },
       { text: " dit que...", bold: false },
     ])
   })
@@ -74,7 +74,7 @@ describe("parseMarkdownLines", () => {
 
   it("replaces figure blocks before splitting into lines", () => {
     const lines = parseMarkdownLines('```figure\n{}\n```')
-    expect(lines.some((l) => l.segments.some((s) => s.text.includes("Figure géométrique")))).toBe(true)
+    expect(lines.some((l) => l.segments.some((s) => s.text.includes("Schéma")))).toBe(true)
   })
 })
 

@@ -1,0 +1,435 @@
+{
+  "matiere": "Physique-Chimie",
+  "partie": "Physique",
+  "niveau": "3ème",
+  "chapitre": "Physique, Chapitre 5 : L'énergie électrique",
+  "source": "pc/3eme/Chapitre_5_L_energie_electrique",
+  "nombre_cartes": 35,
+  "cartes": [
+    {
+      "id": "PC3E-P05-001",
+      "lecon": "L'énergie électrique, ses unités et sa mesure",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on l'énergie électrique consommée par un appareil ?",
+      "verso": "C'est l'énergie que l'appareil prélève au réseau ou au générateur pendant toute la durée de son fonctionnement. Elle dépend seulement de sa puissance et de sa durée de fonctionnement.",
+      "difficulte": 1,
+      "tags": [
+        "energie-consommee",
+        "definition"
+      ]
+    },
+    {
+      "id": "PC3E-P05-002",
+      "lecon": "L'énergie électrique, ses unités et sa mesure",
+      "type": "formule",
+      "recto": "Quelle relation lie l'énergie électrique $E$ consommée par un appareil, sa puissance $P$ et sa durée de fonctionnement $t$ ?",
+      "verso": "$E = P \\times t$. Avec $P$ en watts et $t$ en secondes, $E$ est en joules ; avec $P$ en watts et $t$ en heures, $E$ est en wattheures.",
+      "difficulte": 1,
+      "tags": [
+        "e-egal-p-t",
+        "relation"
+      ]
+    },
+    {
+      "id": "PC3E-P05-003",
+      "lecon": "L'énergie électrique, ses unités et sa mesure",
+      "type": "definition",
+      "recto": "Quelle est l'unité internationale (légale) d'énergie, avec son symbole ?",
+      "verso": "Le joule, de symbole $\\mathrm{J}$. Ses multiples : $1~\\mathrm{kJ} = 10^{3}~\\mathrm{J}$ et $1~\\mathrm{MJ} = 10^{6}~\\mathrm{J}$.",
+      "difficulte": 1,
+      "tags": [
+        "joule",
+        "unite"
+      ]
+    },
+    {
+      "id": "PC3E-P05-004",
+      "lecon": "L'énergie électrique, ses unités et sa mesure",
+      "type": "definition",
+      "recto": "Quelle est l'unité pratique d'énergie électrique, celle du compteur et de la facture ?",
+      "verso": "Le wattheure ($\\mathrm{Wh}$), obtenu avec $P$ en watts et $t$ en heures, et surtout son multiple le kilowattheure : $1~\\mathrm{kWh} = 1\\,000~\\mathrm{Wh}$, obtenu avec $P$ en kilowatts et $t$ en heures.",
+      "difficulte": 1,
+      "tags": [
+        "kilowattheure",
+        "unite"
+      ]
+    },
+    {
+      "id": "PC3E-P05-005",
+      "lecon": "L'énergie électrique, ses unités et sa mesure",
+      "type": "formule",
+      "recto": "Combien de joules valent $1~\\mathrm{Wh}$ et $1~\\mathrm{kWh}$ ?",
+      "verso": "$1~\\mathrm{Wh} = 3\\,600~\\mathrm{J}$ et $1~\\mathrm{kWh} = 3\\,600\\,000~\\mathrm{J}$, soit $3{,}6~\\mathrm{MJ}$.",
+      "difficulte": 2,
+      "tags": [
+        "equivalence",
+        "kilowattheure",
+        "joule"
+      ]
+    },
+    {
+      "id": "PC3E-P05-006",
+      "lecon": "L'énergie électrique, ses unités et sa mesure",
+      "type": "formule",
+      "recto": "Pourquoi un kilowattheure vaut-il $3\\,600\\,000~\\mathrm{J}$ ?",
+      "verso": "Un kilowattheure, c'est une puissance de $1\\,000~\\mathrm{W}$ pendant $1~\\mathrm{h} = 3\\,600~\\mathrm{s}$ : $1\\,000 \\times 3\\,600 = 3\\,600\\,000~\\mathrm{J}$.",
+      "difficulte": 2,
+      "tags": [
+        "equivalence",
+        "kilowattheure"
+      ]
+    },
+    {
+      "id": "PC3E-P05-007",
+      "lecon": "L'énergie électrique, ses unités et sa mesure",
+      "type": "formule",
+      "recto": "Quelle relation donne l'énergie électrique $E$ consommée par un appareil en fonction de la tension $U$, de l'intensité $I$ et de la durée $t$ ?",
+      "verso": "$E = U \\times I \\times t$ (car $P = U \\times I$), avec $U$ en volts, $I$ en ampères, $t$ en secondes et $E$ en joules.",
+      "difficulte": 2,
+      "tags": [
+        "e-egal-uit",
+        "relation"
+      ]
+    },
+    {
+      "id": "PC3E-P05-008",
+      "lecon": "L'énergie électrique, ses unités et sa mesure",
+      "type": "formule",
+      "recto": "Comment convertit-on une énergie exprimée en wattheures en joules, puis en kilowattheures ?",
+      "verso": "Wh vers J : on multiplie par $3\\,600$. Wh vers kWh : on divise par $1\\,000$.",
+      "difficulte": 2,
+      "tags": [
+        "conversion",
+        "unite"
+      ]
+    },
+    {
+      "id": "PC3E-P05-009",
+      "lecon": "L'énergie électrique, ses unités et sa mesure",
+      "type": "formule",
+      "recto": "Quelle énergie obtient-on en multipliant une puissance en kilowatts par une durée en secondes ?",
+      "verso": "Une énergie directement en kilojoules ($\\mathrm{kJ}$).",
+      "difficulte": 3,
+      "tags": [
+        "conversion",
+        "kilojoule"
+      ]
+    },
+    {
+      "id": "PC3E-P05-010",
+      "lecon": "L'énergie électrique, ses unités et sa mesure",
+      "type": "formule",
+      "recto": "Comment calcule-t-on l'énergie consommée par plusieurs appareils selon qu'ils fonctionnent pendant la même durée ou non ?",
+      "verso": "Même durée $t$ pour tous : $E = (P_1 + P_2 + \\ldots) \\times t$. Durées différentes : $E = P_1 \\times t_1 + P_2 \\times t_2 + \\ldots$",
+      "difficulte": 2,
+      "tags": [
+        "ensemble-appareils",
+        "relation"
+      ]
+    },
+    {
+      "id": "PC3E-P05-011",
+      "lecon": "L'énergie électrique, ses unités et sa mesure",
+      "type": "formule",
+      "recto": "Comment branche-t-on les appareils pour mesurer l'énergie électrique consommée par un appareil ?",
+      "verso": "Ampèremètre en série avec l'appareil, voltmètre en dérivation à ses bornes, chronomètre hors du circuit ; on applique ensuite $E = U \\times I \\times t$.",
+      "difficulte": 2,
+      "tags": [
+        "mesure",
+        "branchement"
+      ]
+    },
+    {
+      "id": "PC3E-P05-012",
+      "lecon": "L'énergie électrique, ses unités et sa mesure",
+      "type": "definition",
+      "recto": "Pourquoi l'écriture « $\\mathrm{kW/h}$ » pour l'énergie est-elle fausse ?",
+      "verso": "Le kilowattheure est un produit (kilowatt multiplié par heure), pas un quotient : on écrit $\\mathrm{kWh}$. C'est une unité d'énergie, pas de puissance.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "kilowattheure"
+      ]
+    },
+    {
+      "id": "PC3E-P05-013",
+      "lecon": "L'énergie électrique, ses unités et sa mesure",
+      "type": "definition",
+      "recto": "Quelle erreur commet-on en écrivant $E = 60 \\times 30 = 1\\,800~\\mathrm{J}$ pour une lampe de $60~\\mathrm{W}$ allumée $30~\\mathrm{min}$ ?",
+      "verso": "Pour un résultat en joules, la durée doit être en secondes : $30~\\mathrm{min} = 1\\,800~\\mathrm{s}$, donc $E = 60 \\times 1\\,800 = 108\\,000~\\mathrm{J}$. Des watts avec des minutes ne donnent aucune unité.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "unite",
+        "duree"
+      ]
+    },
+    {
+      "id": "PC3E-P05-014",
+      "lecon": "L'effet Joule et le rendement d'un appareil thermique",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on l'effet Joule ?",
+      "verso": "C'est le dégagement de chaleur qui accompagne le passage du courant électrique dans un conducteur.",
+      "difficulte": 1,
+      "tags": [
+        "effet-joule",
+        "definition"
+      ]
+    },
+    {
+      "id": "PC3E-P05-015",
+      "lecon": "L'effet Joule et le rendement d'un appareil thermique",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on un appareil thermique ?",
+      "verso": "Un appareil dont la fonction est de produire de la chaleur par effet Joule : fer à repasser, réchaud électrique, thermoplongeur, bouilloire, four, poste à souder, lampe à incandescence.",
+      "difficulte": 1,
+      "tags": [
+        "appareil-thermique",
+        "effet-joule"
+      ]
+    },
+    {
+      "id": "PC3E-P05-016",
+      "lecon": "L'effet Joule et le rendement d'un appareil thermique",
+      "type": "definition",
+      "recto": "Dans quels cas l'effet Joule est-il nuisible ?",
+      "verso": "Partout où l'on ne veut pas de chaleur : câbles qui s'échauffent, moteurs, chargeurs. Une part de l'énergie payée au compteur est alors perdue.",
+      "difficulte": 2,
+      "tags": [
+        "effet-joule",
+        "nuisible"
+      ]
+    },
+    {
+      "id": "PC3E-P05-017",
+      "lecon": "L'effet Joule et le rendement d'un appareil thermique",
+      "type": "definition",
+      "recto": "Comment l'effet Joule assure-t-il la protection d'une installation dans un fusible ?",
+      "verso": "Le fusible est un fil calibré pour fondre par effet Joule quand l'intensité devient trop grande : il coupe le circuit avant que les câbles ne prennent feu.",
+      "difficulte": 2,
+      "tags": [
+        "fusible",
+        "effet-joule"
+      ]
+    },
+    {
+      "id": "PC3E-P05-018",
+      "lecon": "L'effet Joule et le rendement d'un appareil thermique",
+      "type": "definition",
+      "recto": "En quelles unités s'exprime une quantité de chaleur $Q$ ?",
+      "verso": "La chaleur est une forme d'énergie (énergie thermique ou calorifique) : $Q$ s'exprime en joules ou en wattheures.",
+      "difficulte": 1,
+      "tags": [
+        "chaleur",
+        "unite"
+      ]
+    },
+    {
+      "id": "PC3E-P05-019",
+      "lecon": "L'effet Joule et le rendement d'un appareil thermique",
+      "type": "formule",
+      "recto": "Quelle relation donne la quantité de chaleur $Q$ reçue par une masse $m$ d'eau dont la température passe de $t_i$ à $t_f$ ?",
+      "verso": "$Q = m \\times c \\times (t_f - t_i)$, avec $m$ en kg, $t_i$ et $t_f$ en $\\mathrm{{}^{\\circ}C}$, $c$ la chaleur massique de l'eau et $Q$ en joules.",
+      "difficulte": 2,
+      "tags": [
+        "quantite-de-chaleur",
+        "relation"
+      ]
+    },
+    {
+      "id": "PC3E-P05-020",
+      "lecon": "L'effet Joule et le rendement d'un appareil thermique",
+      "type": "formule",
+      "recto": "Quelle est la valeur de la chaleur massique $c$ de l'eau utilisée en 3ème ?",
+      "verso": "$c = 4\\,200~\\mathrm{J/(kg \\cdot {}^{\\circ}C)}$ : il faut $4{,}2~\\mathrm{kJ}$ pour élever de $1~\\mathrm{{}^{\\circ}C}$ la température de $1~\\mathrm{kg}$ d'eau. Si l'énoncé donne une autre valeur, on utilise celle de l'énoncé.",
+      "difficulte": 2,
+      "tags": [
+        "chaleur-massique",
+        "eau"
+      ]
+    },
+    {
+      "id": "PC3E-P05-021",
+      "lecon": "L'effet Joule et le rendement d'un appareil thermique",
+      "type": "formule",
+      "recto": "Comment définit-on le rendement $\\eta$ d'un appareil thermique ?",
+      "verso": "$\\eta = \\dfrac{E_u}{E_c}$ : rapport de l'énergie utile (reçue par le corps à chauffer) à l'énergie électrique consommée. En pourcentage : $\\eta = \\dfrac{E_u}{E_c} \\times 100$.",
+      "difficulte": 2,
+      "tags": [
+        "rendement",
+        "relation"
+      ]
+    },
+    {
+      "id": "PC3E-P05-022",
+      "lecon": "L'effet Joule et le rendement d'un appareil thermique",
+      "type": "definition",
+      "recto": "Pourquoi le rendement d'un appareil thermique est-il toujours inférieur à $100\\ \\%$ ?",
+      "verso": "L'énergie se répartit entre tous les corps en contact : la résistance chauffante touche aussi le récipient et l'air, donc une part de la chaleur part vers l'extérieur au lieu d'aller au corps à chauffer.",
+      "difficulte": 2,
+      "tags": [
+        "rendement",
+        "pertes"
+      ]
+    },
+    {
+      "id": "PC3E-P05-023",
+      "lecon": "L'effet Joule et le rendement d'un appareil thermique",
+      "type": "definition",
+      "recto": "Pourquoi un rendement calculé de $115\\ \\%$ pour un thermoplongeur signale-t-il une erreur ?",
+      "verso": "Un rendement est toujours inférieur à $100\\ \\%$ : on a inversé l'énergie utile (chaleur $Q$ reçue par l'eau) et l'énergie consommée ($E$ prélevée au réseau).",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "rendement"
+      ]
+    },
+    {
+      "id": "PC3E-P05-024",
+      "lecon": "L'effet Joule et le rendement d'un appareil thermique",
+      "type": "formule",
+      "recto": "Dans $Q = m \\times c \\times (t_f - t_i)$ appliquée à $20~\\mathrm{L}$ d'eau, quelle valeur donne-t-on à la masse $m$ ?",
+      "verso": "$m = 20~\\mathrm{kg}$ : la masse est en kilogrammes, jamais en litres, et $1~\\mathrm{L}$ d'eau a une masse de $1~\\mathrm{kg}$.",
+      "difficulte": 2,
+      "tags": [
+        "masse",
+        "eau",
+        "unite"
+      ]
+    },
+    {
+      "id": "PC3E-P05-025",
+      "lecon": "L'effet Joule et le rendement d'un appareil thermique",
+      "type": "definition",
+      "recto": "Comment écrit-on un rendement de $75\\ \\%$ dans un calcul ?",
+      "verso": "Sous forme décimale, $0{,}75$. Un rendement est un nombre sans unité.",
+      "difficulte": 1,
+      "tags": [
+        "rendement",
+        "pourcentage"
+      ]
+    },
+    {
+      "id": "PC3E-P05-026",
+      "lecon": "Le compteur d'énergie et la facture d'électricité",
+      "type": "definition",
+      "recto": "Quel est le rôle d'un compteur d'énergie électrique ?",
+      "verso": "Il mesure et totalise l'énergie consommée par une installation et l'affiche en kilowattheures ; cette indication sert de base à la facturation.",
+      "difficulte": 1,
+      "tags": [
+        "compteur",
+        "role"
+      ]
+    },
+    {
+      "id": "PC3E-P05-027",
+      "lecon": "Le compteur d'énergie et la facture d'électricité",
+      "type": "definition",
+      "recto": "Comment appelle-t-on le nombre affiché par un compteur d'énergie électrique ?",
+      "verso": "L'index. C'est un cumul de l'énergie consommée depuis la pose du compteur : il ne redescend jamais.",
+      "difficulte": 1,
+      "tags": [
+        "index",
+        "compteur"
+      ]
+    },
+    {
+      "id": "PC3E-P05-028",
+      "lecon": "Le compteur d'énergie et la facture d'électricité",
+      "type": "formule",
+      "recto": "Comment calcule-t-on l'énergie consommée entre deux relevés d'un compteur ?",
+      "verso": "$E = \\text{index nouveau} - \\text{index ancien}$, en kilowattheures.",
+      "difficulte": 2,
+      "tags": [
+        "index",
+        "consommation"
+      ]
+    },
+    {
+      "id": "PC3E-P05-029",
+      "lecon": "Le compteur d'énergie et la facture d'électricité",
+      "type": "formule",
+      "recto": "Pour un compteur à disque de constante $C$, quelle relation donne l'énergie $E$ consommée pendant $N$ tours ?",
+      "verso": "$E = N \\times C$, avec $C$ en $\\mathrm{Wh/tr}$ (énergie consommée pour un tour) et $E$ en wattheures ; inversement $N = \\dfrac{E}{C}$.",
+      "difficulte": 2,
+      "tags": [
+        "compteur-a-disque",
+        "constante"
+      ]
+    },
+    {
+      "id": "PC3E-P05-030",
+      "lecon": "Le compteur d'énergie et la facture d'électricité",
+      "type": "definition",
+      "recto": "Sur un compteur à disque, que traduit la vitesse de rotation du disque ?",
+      "verso": "La puissance appelée à l'instant présent. Tous les appareils éteints, le disque doit s'arrêter ; s'il tourne encore, il y a une fuite ou un branchement oublié.",
+      "difficulte": 2,
+      "tags": [
+        "compteur-a-disque",
+        "puissance"
+      ]
+    },
+    {
+      "id": "PC3E-P05-031",
+      "lecon": "Le compteur d'énergie et la facture d'électricité",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on la puissance souscrite sur une facture d'électricité ?",
+      "verso": "C'est la puissance maximale, en kilowatts, que l'abonné a le droit d'appeler. Elle sert à dimensionner le disjoncteur et n'entre jamais dans le calcul de la consommation.",
+      "difficulte": 2,
+      "tags": [
+        "puissance-souscrite",
+        "facture"
+      ]
+    },
+    {
+      "id": "PC3E-P05-032",
+      "lecon": "Le compteur d'énergie et la facture d'électricité",
+      "type": "formule",
+      "recto": "De quoi se compose le montant d'une facture d'électricité ?",
+      "verso": "De la consommation (énergie multipliée par le prix du kWh, éventuellement par tranches), à laquelle s'ajoutent une prime fixe, une redevance et des taxes.",
+      "difficulte": 2,
+      "tags": [
+        "facture",
+        "montant"
+      ]
+    },
+    {
+      "id": "PC3E-P05-033",
+      "lecon": "Le compteur d'énergie et la facture d'électricité",
+      "type": "definition",
+      "recto": "Avec un tarif à deux tranches, à quelle partie de la consommation s'applique le second prix ?",
+      "verso": "Seulement à la partie de la consommation qui dépasse la limite de la première tranche ; la limite elle-même est facturée au premier prix.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "tranches",
+        "facture"
+      ]
+    },
+    {
+      "id": "PC3E-P05-034",
+      "lecon": "Le compteur d'énergie et la facture d'électricité",
+      "type": "definition",
+      "recto": "Pourquoi la phrase « le compteur mesure en kW l'énergie consommée » est-elle fausse ?",
+      "verso": "Le compteur affiche une énergie, en kilowattheures ($\\mathrm{kWh}$) ; le kilowatt ($\\mathrm{kW}$) est une unité de puissance.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "compteur",
+        "unite"
+      ]
+    },
+    {
+      "id": "PC3E-P05-035",
+      "lecon": "Le compteur d'énergie et la facture d'électricité",
+      "type": "definition",
+      "recto": "Puisque $E = P \\times t$, quels sont les deux moyens d'économiser l'énergie électrique ?",
+      "verso": "Diminuer la puissance des appareils (par exemple une lampe à basse consommation) ou diminuer leur durée de fonctionnement (éteindre en sortant d'une pièce).",
+      "difficulte": 1,
+      "tags": [
+        "economie",
+        "energie"
+      ]
+    }
+  ]
+}

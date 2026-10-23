@@ -38,13 +38,13 @@ describe("mapServerMessagesToClient", () => {
   })
 
   it("maps a prerequis row to a client prerequis message using its payload as data", () => {
-    const payload = { chapter: "Les fractions", class_level: "6ème", questions: [{ question: "..." }] }
+    const payload = { chapter: "Les ombres", class_level: "4ème", questions: [{ question: "..." }] }
     const rows = [{ role: "assistant", kind: "prerequis", content: "QCM de prérequis", payload, created_at: "t1" }]
     expect(mapServerMessagesToClient(rows)).toEqual([{ type: "prerequis", data: payload, createdAt: "t1" }])
   })
 
   it("maps a legacy remediation row (old DB rows) to a client prerequis message", () => {
-    const payload = { chapter: "Les fractions", class_level: "6ème", questions: [{ question: "..." }] }
+    const payload = { chapter: "Les ombres", class_level: "4ème", questions: [{ question: "..." }] }
     const rows = [{ role: "assistant", kind: "remediation", content: "QCM de remédiation", payload, created_at: "t1" }]
     expect(mapServerMessagesToClient(rows)).toEqual([{ type: "prerequis", data: payload, createdAt: "t1" }])
   })

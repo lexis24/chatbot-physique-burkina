@@ -1,0 +1,392 @@
+{
+  "matiere": "Physique-Chimie",
+  "partie": "Physique",
+  "niveau": "Terminale D",
+  "chapitre": "Physique, Chapitre 4 : Le champ de gravitation et les interactions gravitationnelles",
+  "source": "pc/tled/Chapitre_4_Le_champ_de_gravitation_et_les_interactions_gravitationnelles",
+  "nombre_cartes": 33,
+  "cartes": [
+    {
+      "id": "PCTD-P04-001",
+      "lecon": "La loi de la gravitation universelle",
+      "type": "formule",
+      "recto": "Selon la loi de Newton pour la gravitation, quelle est l'intensité $F$ de la force d'attraction entre deux corps ponctuels de masses $m_A$ et $m_B$ dont les centres sont distants de $d$ ?",
+      "verso": "$F = G\\dfrac{m_A m_B}{d^{2}}$, avec $F$ en N, $m_A$ et $m_B$ en kg, $d$ en m et $G$ la constante de gravitation universelle.",
+      "difficulte": 1,
+      "tags": [
+        "loi-de-newton",
+        "gravitation"
+      ]
+    },
+    {
+      "id": "PCTD-P04-002",
+      "lecon": "La loi de la gravitation universelle",
+      "type": "definition",
+      "recto": "Quelle est la valeur de la constante de gravitation universelle $G$, avec son unité ?",
+      "verso": "$G = 6{,}67 \\times 10^{-11}~\\mathrm{N \\cdot m^{2} \\cdot kg^{-2}}$ (unité équivalente : $\\mathrm{m^{3} \\cdot kg^{-1} \\cdot s^{-2}}$). C'est une constante de la nature, la même partout et toujours.",
+      "difficulte": 1,
+      "tags": [
+        "constante-g",
+        "unite"
+      ]
+    },
+    {
+      "id": "PCTD-P04-003",
+      "lecon": "La loi de la gravitation universelle",
+      "type": "definition",
+      "recto": "Quelles sont les caractéristiques des deux forces que deux corps ponctuels exercent l'un sur l'autre par gravitation ?",
+      "verso": "Ce sont des forces attractives, de même droite d'action (la droite qui joint les centres), de sens opposés et de même intensité.",
+      "difficulte": 1,
+      "tags": [
+        "interaction",
+        "gravitation"
+      ]
+    },
+    {
+      "id": "PCTD-P04-004",
+      "lecon": "La loi de la gravitation universelle",
+      "type": "formule",
+      "recto": "En notant $\\vec{u}_{AB}$ le vecteur unitaire dirigé de $A$ vers $B$, quelle est l'expression vectorielle de la force gravitationnelle $\\vec{F}_{A/B}$ exercée par $A$ sur $B$ ?",
+      "verso": "$\\vec{F}_{A/B} = -G\\dfrac{m_A m_B}{d^{2}}\\vec{u}_{AB}$. Le signe moins traduit l'attraction : la force subie par $B$ est dirigée de $B$ vers $A$.",
+      "difficulte": 2,
+      "tags": [
+        "expression-vectorielle",
+        "gravitation"
+      ]
+    },
+    {
+      "id": "PCTD-P04-005",
+      "lecon": "La loi de la gravitation universelle",
+      "type": "formule",
+      "recto": "Quelle relation vectorielle lie les forces gravitationnelles $\\vec{F}_{A/B}$ et $\\vec{F}_{B/A}$ que deux corps exercent l'un sur l'autre ?",
+      "verso": "$\\vec{F}_{A/B} = -\\vec{F}_{B/A}$ : les deux forces ont toujours la même intensité, quelles que soient les masses en présence.",
+      "difficulte": 2,
+      "tags": [
+        "actions-reciproques"
+      ]
+    },
+    {
+      "id": "PCTD-P04-006",
+      "lecon": "La loi de la gravitation universelle",
+      "type": "formule",
+      "recto": "A quelle condition la loi de la gravitation $F = G\\dfrac{m_A m_B}{d^{2}}$ s'applique-t-elle à deux astres de grande taille ?",
+      "verso": "Les astres doivent être à symétrie sphérique (masse répartie symétriquement autour du centre), et $d$ doit être la distance entre leurs centres : tout se passe comme si la masse était concentrée au centre.",
+      "difficulte": 2,
+      "tags": [
+        "symetrie-spherique",
+        "condition"
+      ]
+    },
+    {
+      "id": "PCTD-P04-007",
+      "lecon": "La loi de la gravitation universelle",
+      "type": "formule",
+      "recto": "Pour la force gravitationnelle exercée par un astre de rayon $R$ sur un satellite d'altitude $h$, quelle distance $d$ faut-il utiliser ?",
+      "verso": "La distance entre les centres : $d = R + h$, jamais l'altitude $h$ seule.",
+      "difficulte": 2,
+      "tags": [
+        "distance",
+        "altitude"
+      ]
+    },
+    {
+      "id": "PCTD-P04-008",
+      "lecon": "La loi de la gravitation universelle",
+      "type": "formule",
+      "recto": "Par quel facteur est divisée la force gravitationnelle entre deux corps quand la distance entre leurs centres est triplée ?",
+      "verso": "Par 9, car la force varie comme $\\dfrac{1}{d^{2}}$ (loi en carré inverse) ; doubler la distance la divise par 4.",
+      "difficulte": 2,
+      "tags": [
+        "carre-inverse"
+      ]
+    },
+    {
+      "id": "PCTD-P04-009",
+      "lecon": "La loi de la gravitation universelle",
+      "type": "definition",
+      "recto": "Quelle erreur commet un élève qui écrit que la Terre attire une mangue plus fort que la mangue n'attire la Terre ?",
+      "verso": "Les deux forces ont rigoureusement la même intensité ; seules les accélérations diffèrent, parce que les masses diffèrent. Et la force gravitationnelle est toujours attractive.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "actions-reciproques"
+      ]
+    },
+    {
+      "id": "PCTD-P04-010",
+      "lecon": "La notion de champ et le champ de gravitation",
+      "type": "definition",
+      "recto": "En physique, quand dit-on qu'il existe un champ d'une grandeur dans une région de l'espace ?",
+      "verso": "Lorsque cette grandeur est définie en chaque point de cette région. Le champ est vectoriel si la grandeur est un vecteur, comme le champ de gravitation.",
+      "difficulte": 1,
+      "tags": [
+        "notion-de-champ"
+      ]
+    },
+    {
+      "id": "PCTD-P04-011",
+      "lecon": "La notion de champ et le champ de gravitation",
+      "type": "formule",
+      "recto": "Quelle relation lie la force gravitationnelle $\\vec{F}$ subie par un corps de masse $m$ placé en un point $P$ et le vecteur champ de gravitation en ce point ?",
+      "verso": "$\\vec{F} = m$ fois le vecteur champ de gravitation en $P$ ; le champ est donc le quotient $\\dfrac{\\vec{F}}{m}$, exprimé en $\\mathrm{N/kg}$.",
+      "difficulte": 1,
+      "tags": [
+        "champ-de-gravitation",
+        "definition"
+      ]
+    },
+    {
+      "id": "PCTD-P04-012",
+      "lecon": "La notion de champ et le champ de gravitation",
+      "type": "formule",
+      "recto": "Quelle est la valeur du champ de gravitation créé par un astre à symétrie sphérique de masse $M$ en un point situé à la distance $r$ de son centre ?",
+      "verso": "Sa valeur est $G\\dfrac{M}{r^{2}}$, en $\\mathrm{N/kg}$, avec $M$ en kg et $r$ en m (distance mesurée depuis le centre de l'astre). Valable aussi pour une masse ponctuelle.",
+      "difficulte": 1,
+      "tags": [
+        "expression-scalaire",
+        "champ-de-gravitation"
+      ]
+    },
+    {
+      "id": "PCTD-P04-013",
+      "lecon": "La notion de champ et le champ de gravitation",
+      "type": "formule",
+      "recto": "En notant $\\vec{u}$ le vecteur unitaire dirigé du centre d'un astre de masse $M$ vers un point $P$ situé à la distance $r$, quelle est l'expression vectorielle du champ de gravitation en $P$ ?",
+      "verso": "Le champ vaut $-G\\dfrac{M}{r^{2}}\\vec{u}$ : le signe moins indique qu'il est dirigé vers le centre de l'astre.",
+      "difficulte": 2,
+      "tags": [
+        "expression-vectorielle",
+        "champ-de-gravitation"
+      ]
+    },
+    {
+      "id": "PCTD-P04-014",
+      "lecon": "La notion de champ et le champ de gravitation",
+      "type": "definition",
+      "recto": "De quoi dépend le champ de gravitation créé par un astre en un point $P$ ?",
+      "verso": "Uniquement de la masse $M$ de l'astre source et de la position du point $P$ ; il ne dépend pas du corps d'épreuve placé en $P$ et existe même là où il n'y a aucun corps.",
+      "difficulte": 2,
+      "tags": [
+        "corps-d-epreuve"
+      ]
+    },
+    {
+      "id": "PCTD-P04-015",
+      "lecon": "La notion de champ et le champ de gravitation",
+      "type": "definition",
+      "recto": "Dans le Système international, quelle est l'unité du champ de gravitation ?",
+      "verso": "Le newton par kilogramme ($\\mathrm{N/kg}$), équivalent au mètre par seconde carrée ($\\mathrm{m/s^{2}}$).",
+      "difficulte": 1,
+      "tags": [
+        "unite"
+      ]
+    },
+    {
+      "id": "PCTD-P04-016",
+      "lecon": "La notion de champ et le champ de gravitation",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on une ligne de champ ?",
+      "verso": "Une courbe telle qu'en chacun de ses points le vecteur champ lui soit tangent ; on l'oriente par une flèche dans le sens du champ.",
+      "difficulte": 1,
+      "tags": [
+        "ligne-de-champ"
+      ]
+    },
+    {
+      "id": "PCTD-P04-017",
+      "lecon": "La notion de champ et le champ de gravitation",
+      "type": "definition",
+      "recto": "Pourquoi dit-on que le champ de gravitation d'un astre sphérique est radial ?",
+      "verso": "Parce que ses lignes de champ sont des demi-droites qui convergent vers le centre de l'astre ; toutes les flèches entrent dans l'astre.",
+      "difficulte": 2,
+      "tags": [
+        "champ-radial"
+      ]
+    },
+    {
+      "id": "PCTD-P04-018",
+      "lecon": "La notion de champ et le champ de gravitation",
+      "type": "definition",
+      "recto": "Sur une représentation par lignes de champ, comment repère-t-on les régions où le champ est le plus intense ?",
+      "verso": "Les lignes y sont les plus resserrées, par exemple près de la surface d'un astre. Deux lignes de champ ne se coupent jamais.",
+      "difficulte": 2,
+      "tags": [
+        "ligne-de-champ",
+        "intensite"
+      ]
+    },
+    {
+      "id": "PCTD-P04-019",
+      "lecon": "La notion de champ et le champ de gravitation",
+      "type": "formule",
+      "recto": "Comment obtient-on le champ de gravitation en un point où plusieurs astres créent chacun un champ ?",
+      "verso": "On fait la somme vectorielle des champs que chaque astre y crée, calculés comme s'il était seul ; chaque vecteur est dirigé vers l'astre qui le crée.",
+      "difficulte": 2,
+      "tags": [
+        "superposition"
+      ]
+    },
+    {
+      "id": "PCTD-P04-020",
+      "lecon": "La notion de champ et le champ de gravitation",
+      "type": "definition",
+      "recto": "Entre deux astres, qu'appelle-t-on le point neutre de gravitation ?",
+      "verso": "C'est le point de la droite des centres où les deux champs, de sens contraires, ont la même valeur : le champ résultant y est nul. Il est plus proche de l'astre le moins massif.",
+      "difficulte": 3,
+      "tags": [
+        "point-neutre"
+      ]
+    },
+    {
+      "id": "PCTD-P04-021",
+      "lecon": "La notion de champ et le champ de gravitation",
+      "type": "definition",
+      "recto": "Pourquoi le champ de surface de Jupiter n'est-il qu'environ 2,5 fois celui de la Terre, alors que Jupiter est 318 fois plus massive ?",
+      "verso": "Le champ de surface vaut $G\\dfrac{M}{R^{2}}$ : il dépend du rapport $\\dfrac{M}{R^{2}}$, et le rayon de Jupiter, environ onze fois plus grand, intervient au carré au dénominateur.",
+      "difficulte": 3,
+      "tags": [
+        "champ-de-surface"
+      ]
+    },
+    {
+      "id": "PCTD-P04-022",
+      "lecon": "La notion de champ et le champ de gravitation",
+      "type": "definition",
+      "recto": "Quelle distinction faut-il faire entre un champ de gravitation et une force gravitationnelle ?",
+      "verso": "Le champ s'exprime en $\\mathrm{N/kg}$ et existe en un point même sans corps ; la force s'exprime en $\\mathrm{N}$ et s'exerce sur un corps de masse $m$, égale à $m$ fois le champ.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "champ-et-force"
+      ]
+    },
+    {
+      "id": "PCTD-P04-023",
+      "lecon": "La notion de champ et le champ de gravitation",
+      "type": "definition",
+      "recto": "Pourquoi une ligne de champ de gravitation n'est-elle pas la trajectoire d'un satellite ?",
+      "verso": "Une ligne de champ donne seulement la direction du champ en chaque point : autour d'un astre, les lignes sont des demi-droites radiales, alors que l'orbite d'un satellite peut être circulaire.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "ligne-de-champ"
+      ]
+    },
+    {
+      "id": "PCTD-P04-024",
+      "lecon": "Le champ de pesanteur et le poids",
+      "type": "formule",
+      "recto": "Comment le champ de pesanteur $\\vec{g}$ est-il défini à partir du poids $\\vec{P}$ d'un corps d'épreuve de masse $m$ ?",
+      "verso": "$\\vec{P} = m\\vec{g}$, soit $\\vec{g} = \\dfrac{\\vec{P}}{m}$ ; $\\vec{g}$ est vertical, dirigé vers le bas, en $\\mathrm{N/kg}$.",
+      "difficulte": 1,
+      "tags": [
+        "champ-de-pesanteur",
+        "poids"
+      ]
+    },
+    {
+      "id": "PCTD-P04-025",
+      "lecon": "Le champ de pesanteur et le poids",
+      "type": "formule",
+      "recto": "Sous quelle hypothèse le champ de pesanteur terrestre se confond-il avec le champ de gravitation de la Terre ?",
+      "verso": "En négligeant la rotation de la Terre : le poids se confond alors avec la force gravitationnelle terrestre et, à la surface, $g_0 = G\\dfrac{M_T}{R_T^{2}} \\approx 9{,}8~\\mathrm{N/kg}$.",
+      "difficulte": 2,
+      "tags": [
+        "identification",
+        "rotation"
+      ]
+    },
+    {
+      "id": "PCTD-P04-026",
+      "lecon": "Le champ de pesanteur et le poids",
+      "type": "formule",
+      "recto": "Quelle est l'intensité $g_h$ de la pesanteur à l'altitude $h$, exprimée en fonction de $g_0$, $R_T$ et $h$ ?",
+      "verso": "$g_h = g_0\\dfrac{R_T^{2}}{\\left(R_T + h\\right)^{2}}$ (ou $g_h = G\\dfrac{M_T}{\\left(R_T + h\\right)^{2}}$) : $g$ diminue quand l'altitude augmente.",
+      "difficulte": 2,
+      "tags": [
+        "altitude",
+        "pesanteur"
+      ]
+    },
+    {
+      "id": "PCTD-P04-027",
+      "lecon": "Le champ de pesanteur et le poids",
+      "type": "formule",
+      "recto": "Pour une altitude $h$ faible devant le rayon terrestre $R_T$, quelle expression approchée donne $g_h$ ?",
+      "verso": "$g_h \\approx g_0\\left(1 - \\dfrac{2h}{R_T}\\right)$, valable si $h$ est très petit devant $R_T$ ; la variation relative vaut environ $\\dfrac{2h}{R_T}$.",
+      "difficulte": 3,
+      "tags": [
+        "approximation",
+        "altitude"
+      ]
+    },
+    {
+      "id": "PCTD-P04-028",
+      "lecon": "Le champ de pesanteur et le poids",
+      "type": "definition",
+      "recto": "Comment l'intensité de la pesanteur terrestre varie-t-elle de l'équateur aux pôles ?",
+      "verso": "Elle croît d'environ $9{,}78~\\mathrm{N/kg}$ à l'équateur à environ $9{,}83~\\mathrm{N/kg}$ aux pôles, à cause de l'aplatissement de la Terre aux pôles et de sa rotation sur elle-même.",
+      "difficulte": 2,
+      "tags": [
+        "latitude"
+      ]
+    },
+    {
+      "id": "PCTD-P04-029",
+      "lecon": "Le champ de pesanteur et le poids",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on un champ uniforme ?",
+      "verso": "Un champ qui a, en tout point d'une région, la même direction, le même sens et la même intensité ; ses lignes de champ y sont des droites parallèles équidistantes.",
+      "difficulte": 1,
+      "tags": [
+        "champ-uniforme"
+      ]
+    },
+    {
+      "id": "PCTD-P04-030",
+      "lecon": "Le champ de pesanteur et le poids",
+      "type": "definition",
+      "recto": "Dans quelles conditions peut-on considérer le champ de pesanteur terrestre comme uniforme ?",
+      "verso": "Dans une région de faible étendue (une salle, une cour, un terrain de football) : les verticales y sont pratiquement parallèles et l'intensité presque constante.",
+      "difficulte": 2,
+      "tags": [
+        "champ-uniforme",
+        "pesanteur"
+      ]
+    },
+    {
+      "id": "PCTD-P04-031",
+      "lecon": "Le champ de pesanteur et le poids",
+      "type": "definition",
+      "recto": "Quelle différence y a-t-il entre la masse et le poids d'un corps quand on change de lieu ?",
+      "verso": "La masse, en kg, ne change jamais ; le poids, en N, change avec la valeur locale de $g$. Un astronaute garde sa masse et son poids n'est pas nul.",
+      "difficulte": 2,
+      "tags": [
+        "masse-et-poids"
+      ]
+    },
+    {
+      "id": "PCTD-P04-032",
+      "lecon": "Le champ de pesanteur et le poids",
+      "type": "definition",
+      "recto": "Quelle grandeur une balance à ressort mesure-t-elle réellement, contrairement à une balance à fléau ?",
+      "verso": "La balance à ressort, comme le dynamomètre, mesure une force (le poids), même si son cadran est gradué en kilogrammes ; la balance à fléau mesure une masse.",
+      "difficulte": 2,
+      "tags": [
+        "instruments-de-mesure"
+      ]
+    },
+    {
+      "id": "PCTD-P04-033",
+      "lecon": "Le champ de pesanteur et le poids",
+      "type": "definition",
+      "recto": "Pourquoi ne faut-il pas confondre $G$ et $g$ ?",
+      "verso": "$G = 6{,}67 \\times 10^{-11}~\\mathrm{N \\cdot m^{2} \\cdot kg^{-2}}$ est une constante universelle ; $g$ est l'intensité de la pesanteur, en $\\mathrm{N/kg}$, qui change d'un lieu et d'un astre à l'autre ($9{,}83$ sur Terre, $1{,}62$ sur la Lune).",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "constante-g"
+      ]
+    }
+  ]
+}

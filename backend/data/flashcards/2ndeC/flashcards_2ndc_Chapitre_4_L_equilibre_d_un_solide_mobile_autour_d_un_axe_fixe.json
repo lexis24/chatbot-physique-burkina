@@ -1,0 +1,400 @@
+{
+  "matiere": "Physique-Chimie",
+  "partie": "Physique",
+  "niveau": "2nde C",
+  "chapitre": "Physique, Chapitre 4 : L'équilibre d'un solide mobile autour d'un axe fixe",
+  "source": "pc/2ndc/Chapitre_4_L_equilibre_d_un_solide_mobile_autour_d_un_axe_fixe",
+  "nombre_cartes": 34,
+  "cartes": [
+    {
+      "id": "PC2C-P04-001",
+      "lecon": "Le solide mobile autour d'un axe fixe et le moment d'une force",
+      "type": "definition",
+      "recto": "Quand dit-on qu'un solide est mobile autour d'un axe fixe $\\Delta$ ?",
+      "verso": "Lorsqu'il ne peut effectuer qu'un mouvement de rotation autour de cette droite, qui reste immobile : chaque point du solide décrit alors un cercle dont le centre est sur l'axe.",
+      "difficulte": 1,
+      "tags": [
+        "axe-fixe",
+        "rotation"
+      ]
+    },
+    {
+      "id": "PC2C-P04-002",
+      "lecon": "Le solide mobile autour d'un axe fixe et le moment d'une force",
+      "type": "definition",
+      "recto": "Quel est un exemple courant de solide mobile autour d'un axe fixe ?",
+      "verso": "La porte sur ses gonds ; d'autres exemples : le fléau d'une balance sur son couteau, la roue d'une brouette, le tambour d'un treuil, le pédalier d'un vélo.",
+      "difficulte": 1,
+      "tags": [
+        "axe-fixe",
+        "exemples"
+      ]
+    },
+    {
+      "id": "PC2C-P04-003",
+      "lecon": "Le solide mobile autour d'un axe fixe et le moment d'une force",
+      "type": "definition",
+      "recto": "De quoi dépend l'effet de rotation d'une force appliquée à un solide mobile autour d'un axe fixe ?",
+      "verso": "De l'intensité de la force, de la distance de l'axe à sa droite d'action et de sa direction.",
+      "difficulte": 2,
+      "tags": [
+        "effet-rotation"
+      ]
+    },
+    {
+      "id": "PC2C-P04-004",
+      "lecon": "Le solide mobile autour d'un axe fixe et le moment d'une force",
+      "type": "formule",
+      "recto": "Comment définit-on le moment d'une force $\\vec{F}$ par rapport à un axe fixe $\\Delta$ ?",
+      "verso": "C'est le produit de l'intensité de la force par la distance $d$ de l'axe à sa droite d'action : $\\mathcal{M}_{\\Delta}\\left(\\vec{F}\\right) = F \\times d$, avec $F$ en $\\mathrm{N}$ et $d$ en $\\mathrm{m}$.",
+      "difficulte": 1,
+      "tags": [
+        "moment",
+        "definition"
+      ]
+    },
+    {
+      "id": "PC2C-P04-005",
+      "lecon": "Le solide mobile autour d'un axe fixe et le moment d'une force",
+      "type": "definition",
+      "recto": "Quelle est l'unité du moment d'une force par rapport à un axe ?",
+      "verso": "Le newton-mètre, de symbole $\\mathrm{N \\cdot m}$. Il ne faut pas le confondre avec le newton par mètre ($\\mathrm{N/m}$), unité d'une raideur de ressort.",
+      "difficulte": 1,
+      "tags": [
+        "unite",
+        "newton-metre"
+      ]
+    },
+    {
+      "id": "PC2C-P04-006",
+      "lecon": "Le solide mobile autour d'un axe fixe et le moment d'une force",
+      "type": "definition",
+      "recto": "Pour le moment d'une force par rapport à un axe, qu'appelle-t-on le bras de levier ?",
+      "verso": "C'est la distance $d$ de l'axe à la droite d'action de la force, mesurée perpendiculairement à cette droite (tracée en trait pointillé).",
+      "difficulte": 2,
+      "tags": [
+        "bras-de-levier"
+      ]
+    },
+    {
+      "id": "PC2C-P04-007",
+      "lecon": "Le solide mobile autour d'un axe fixe et le moment d'une force",
+      "type": "formule",
+      "recto": "Que vaut le moment d'une force $\\vec{F}$ appliquée en $A$, avec $OA = \\ell$, si elle fait un angle $\\alpha$ avec la droite $OA$ ?",
+      "verso": "Le bras de levier vaut $d = \\ell \\times \\sin\\alpha$, donc $\\mathcal{M}_{\\Delta}\\left(\\vec{F}\\right) = F \\times \\ell \\times \\sin\\alpha$. Il est maximal pour $\\alpha = 90^{\\circ}$ et nul pour $\\alpha = 0^{\\circ}$ ou $180^{\\circ}$.",
+      "difficulte": 2,
+      "tags": [
+        "moment",
+        "force-oblique"
+      ]
+    },
+    {
+      "id": "PC2C-P04-008",
+      "lecon": "Le solide mobile autour d'un axe fixe et le moment d'une force",
+      "type": "formule",
+      "recto": "Dans quels cas le moment d'une force par rapport à un axe est-il nul ?",
+      "verso": "Dans deux cas seulement : sa droite d'action coupe l'axe, ou elle est parallèle à l'axe. C'est toujours le cas de la force exercée par l'axe lui-même.",
+      "difficulte": 2,
+      "tags": [
+        "moment-nul"
+      ]
+    },
+    {
+      "id": "PC2C-P04-009",
+      "lecon": "Le solide mobile autour d'un axe fixe et le moment d'une force",
+      "type": "definition",
+      "recto": "Quelle différence y a-t-il entre un moment moteur et un moment résistant ?",
+      "verso": "Après choix d'un sens positif de rotation, un moment est moteur si la force tend à faire tourner le solide dans ce sens (compté positivement), résistant si elle tend à le faire tourner en sens contraire (compté négativement).",
+      "difficulte": 2,
+      "tags": [
+        "moment-moteur",
+        "moment-resistant"
+      ]
+    },
+    {
+      "id": "PC2C-P04-010",
+      "lecon": "Le solide mobile autour d'un axe fixe et le moment d'une force",
+      "type": "definition",
+      "recto": "Quelle erreur la plus fréquente guette le calcul du moment d'une force oblique ?",
+      "verso": "Prendre la distance de l'axe au point d'application au lieu de la distance de l'axe à la droite d'action : les deux ne coïncident que si la force est perpendiculaire au bras.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "bras-de-levier"
+      ]
+    },
+    {
+      "id": "PC2C-P04-011",
+      "lecon": "Le couple de forces et son moment",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on un couple de forces ?",
+      "verso": "Un ensemble de deux forces de même intensité, de droites d'action parallèles mais distinctes, et de sens contraires.",
+      "difficulte": 1,
+      "tags": [
+        "couple"
+      ]
+    },
+    {
+      "id": "PC2C-P04-012",
+      "lecon": "Le couple de forces et son moment",
+      "type": "formule",
+      "recto": "Quel effet produit un couple de forces appliqué à un solide ?",
+      "verso": "Sa somme vectorielle est nulle, $\\vec{F_1} + \\vec{F_2} = \\vec{0}$ : il ne produit aucune translation, seulement une rotation.",
+      "difficulte": 2,
+      "tags": [
+        "couple",
+        "rotation"
+      ]
+    },
+    {
+      "id": "PC2C-P04-013",
+      "lecon": "Le couple de forces et son moment",
+      "type": "formule",
+      "recto": "Comment calcule-t-on le moment d'un couple de forces ?",
+      "verso": "$\\mathcal{M}_{\\mathrm{couple}} = F \\times a$, en $\\mathrm{N \\cdot m}$, où $F$ est l'intensité commune des deux forces et $a$ la distance entre leurs deux droites d'action, appelée bras du couple.",
+      "difficulte": 1,
+      "tags": [
+        "moment-couple"
+      ]
+    },
+    {
+      "id": "PC2C-P04-014",
+      "lecon": "Le couple de forces et son moment",
+      "type": "formule",
+      "recto": "Quelle propriété remarquable distingue le moment d'un couple de celui d'une force isolée ?",
+      "verso": "Le moment d'un couple ne dépend pas de la position de l'axe : il garde la même valeur pour tout axe perpendiculaire au plan des deux forces.",
+      "difficulte": 2,
+      "tags": [
+        "moment-couple",
+        "propriete"
+      ]
+    },
+    {
+      "id": "PC2C-P04-015",
+      "lecon": "Le couple de forces et son moment",
+      "type": "formule",
+      "recto": "Que vaut le bras d'un couple dont les deux forces font l'angle $\\alpha$ avec le segment $AB$ qui joint leurs points d'application ?",
+      "verso": "$a = AB \\times \\sin\\alpha$.",
+      "difficulte": 3,
+      "tags": [
+        "bras-du-couple"
+      ]
+    },
+    {
+      "id": "PC2C-P04-016",
+      "lecon": "Le couple de forces et son moment",
+      "type": "definition",
+      "recto": "Pourquoi ne doit-on pas diviser par deux le moment d'un couple pour trouver l'intensité de chaque force ?",
+      "verso": "Dans $\\mathcal{M} = F \\times a$, $F$ est l'intensité de chacune des deux forces : chaque force vaut $F = \\dfrac{\\mathcal{M}}{a}$, et non la moitié.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "moment-couple"
+      ]
+    },
+    {
+      "id": "PC2C-P04-017",
+      "lecon": "Le théorème des moments",
+      "type": "formule",
+      "recto": "Que dit le théorème des moments pour un solide mobile autour d'un axe fixe en équilibre ?",
+      "verso": "La somme des moments des forces qui le font tourner dans un sens est égale à la somme des moments de celles qui le font tourner dans l'autre sens : $\\sum \\mathcal{M}_{\\text{moteurs}} = \\sum \\mathcal{M}_{\\text{résistants}}$.",
+      "difficulte": 1,
+      "tags": [
+        "theoreme-des-moments"
+      ]
+    },
+    {
+      "id": "PC2C-P04-018",
+      "lecon": "Le théorème des moments",
+      "type": "formule",
+      "recto": "Quelle est l'écriture algébrique du théorème des moments pour un solide mobile autour d'un axe fixe $\\Delta$ en équilibre ?",
+      "verso": "$\\sum \\mathcal{M}_{\\Delta}\\left(\\vec{F}\\right) = 0$ : la somme algébrique des moments de toutes les forces extérieures, calculés par rapport au même axe, est nulle (moments moteurs comptés positivement, résistants négativement).",
+      "difficulte": 2,
+      "tags": [
+        "theoreme-des-moments",
+        "forme-algebrique"
+      ]
+    },
+    {
+      "id": "PC2C-P04-019",
+      "lecon": "Le théorème des moments",
+      "type": "formule",
+      "recto": "Pour appliquer le théorème des moments, quelles forces peut-on écarter d'emblée ?",
+      "verso": "Celles de moment nul : la force exercée par l'axe, le poids d'un solide dont le centre de gravité est sur l'axe, et toute force dont la droite d'action coupe l'axe ou lui est parallèle.",
+      "difficulte": 2,
+      "tags": [
+        "moment-nul",
+        "theoreme-des-moments"
+      ]
+    },
+    {
+      "id": "PC2C-P04-020",
+      "lecon": "Le théorème des moments",
+      "type": "formule",
+      "recto": "Que se passe-t-il pour un solide mobile autour d'un axe fixe si $\\sum \\mathcal{M}_{\\Delta} \\neq 0$ ?",
+      "verso": "L'équilibre n'est pas réalisé : le solide se met à tourner, dans le sens du moment qui l'emporte.",
+      "difficulte": 2,
+      "tags": [
+        "theoreme-des-moments"
+      ]
+    },
+    {
+      "id": "PC2C-P04-021",
+      "lecon": "Le théorème des moments",
+      "type": "definition",
+      "recto": "Pourquoi une barre en équilibre sous des forces toutes verticales reste-t-elle en équilibre quand on l'incline d'un angle $\\beta$ ?",
+      "verso": "Chaque bras de levier devient $\\ell \\cos\\beta$ : tous les moments sont multipliés par le même facteur $\\cos\\beta$, donc leur somme reste nulle. On parle d'équilibre indifférent.",
+      "difficulte": 3,
+      "tags": [
+        "equilibre-indifferent"
+      ]
+    },
+    {
+      "id": "PC2C-P04-022",
+      "lecon": "Le théorème des moments",
+      "type": "definition",
+      "recto": "Quelle erreur commet-on en écrivant le moment de la réaction de l'axe sous la forme « $R \\times 0{,}30$ » ?",
+      "verso": "La réaction de l'axe s'applique sur l'axe : sa droite d'action coupe l'axe, son bras de levier est nul, donc son moment est nul quelle que soit son intensité.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "reaction-axe"
+      ]
+    },
+    {
+      "id": "PC2C-P04-023",
+      "lecon": "Les conditions générales d'équilibre et les machines simples",
+      "type": "formule",
+      "recto": "Quelles sont les conditions générales d'équilibre d'un solide soumis à des forces extérieures ?",
+      "verso": "Deux conditions réalisées en même temps : $\\sum \\vec{F} = \\vec{0}$ (translation) et $\\sum \\mathcal{M}_{\\Delta}\\left(\\vec{F}\\right) = 0$ (rotation), tous les moments étant calculés par rapport au même axe.",
+      "difficulte": 2,
+      "tags": [
+        "conditions-generales",
+        "equilibre"
+      ]
+    },
+    {
+      "id": "PC2C-P04-024",
+      "lecon": "Les conditions générales d'équilibre et les machines simples",
+      "type": "formule",
+      "recto": "Comment détermine-t-on la force $\\vec{R}$ exercée par l'axe sur un solide en équilibre ?",
+      "verso": "Son moment est nul, elle n'apparaît pas dans le théorème des moments : on l'obtient par la première condition, $\\sum \\vec{F} = \\vec{0}$, en opposant la somme de toutes les autres forces.",
+      "difficulte": 2,
+      "tags": [
+        "reaction-axe"
+      ]
+    },
+    {
+      "id": "PC2C-P04-025",
+      "lecon": "Les conditions générales d'équilibre et les machines simples",
+      "type": "definition",
+      "recto": "Quand aucun axe matériel n'existe, qu'appelle-t-on un axe fictif ?",
+      "verso": "Un point choisi (souvent un point de contact) autour duquel on écrit l'égalité des moments comme si le solide pouvait y tourner ; pris au point d'application d'une force inconnue, il élimine cette force.",
+      "difficulte": 3,
+      "tags": [
+        "axe-fictif"
+      ]
+    },
+    {
+      "id": "PC2C-P04-026",
+      "lecon": "Les conditions générales d'équilibre et les machines simples",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on un levier ?",
+      "verso": "Une barre rigide mobile autour d'un axe appelé point d'appui, sur laquelle s'exercent une force motrice et une force résistante.",
+      "difficulte": 1,
+      "tags": [
+        "levier"
+      ]
+    },
+    {
+      "id": "PC2C-P04-027",
+      "lecon": "Les conditions générales d'équilibre et les machines simples",
+      "type": "formule",
+      "recto": "Quelle relation traduit l'équilibre d'un levier ?",
+      "verso": "$F_{\\text{motrice}} \\times d_{\\text{motrice}} = F_{\\text{résistante}} \\times d_{\\text{résistante}}$ ; le levier multiplie la force lorsque le bras moteur est le plus long.",
+      "difficulte": 2,
+      "tags": [
+        "levier"
+      ]
+    },
+    {
+      "id": "PC2C-P04-028",
+      "lecon": "Les conditions générales d'équilibre et les machines simples",
+      "type": "formule",
+      "recto": "Pour une balance à fléau, quelle relation traduit l'équilibre ?",
+      "verso": "$P_1 \\ell_1 = P_2 \\ell_2$. Si les bras sont égaux, $\\ell_1 = \\ell_2$, alors $P_1 = P_2$ et $m_1 = m_2$ ; avec des bras inégaux, la pesée est fausse.",
+      "difficulte": 2,
+      "tags": [
+        "balance-a-fleau"
+      ]
+    },
+    {
+      "id": "PC2C-P04-029",
+      "lecon": "Les conditions générales d'équilibre et les machines simples",
+      "type": "formule",
+      "recto": "Pour une brouette en équilibre, quelle relation lie la force $F$ des bras au poids $P$ de la charge ?",
+      "verso": "L'axe est celui de la roue : $F \\times d_2 = P \\times d_1$, soit $F = P \\times \\dfrac{d_1}{d_2}$, avec $d_1$ la distance de l'axe au centre de gravité et $d_2$ la distance de l'axe aux mains. La réaction du sol vaut $R = P - F$.",
+      "difficulte": 2,
+      "tags": [
+        "brouette"
+      ]
+    },
+    {
+      "id": "PC2C-P04-030",
+      "lecon": "Les conditions générales d'équilibre et les machines simples",
+      "type": "formule",
+      "recto": "Quelle relation traduit l'équilibre d'un treuil ?",
+      "verso": "$F \\times L = P \\times R$, avec $L$ la longueur de la manivelle et $R$ le rayon du tambour ; c'est le théorème des moments appliqué au treuil.",
+      "difficulte": 1,
+      "tags": [
+        "treuil"
+      ]
+    },
+    {
+      "id": "PC2C-P04-031",
+      "lecon": "Les conditions générales d'équilibre et les machines simples",
+      "type": "formule",
+      "recto": "Quelle relation traduit l'équilibre d'une poulie à deux gorges ?",
+      "verso": "$F \\times R = P \\times r$, la force $F$ s'exerçant sur la grande gorge de rayon $R$ et la charge pendant à la petite gorge de rayon $r$.",
+      "difficulte": 2,
+      "tags": [
+        "poulie-a-deux-gorges"
+      ]
+    },
+    {
+      "id": "PC2C-P04-032",
+      "lecon": "Les conditions générales d'équilibre et les machines simples",
+      "type": "definition",
+      "recto": "Quelle différence y a-t-il entre un levier inter-appui, inter-résistant et inter-moteur ?",
+      "verso": "Inter-appui : l'appui est entre la force motrice et la charge (barre à mine, ciseaux). Inter-résistant : la charge est entre l'appui et la main (brouette). Inter-moteur : la main est entre l'appui et la charge (pince à sucre, avant-bras).",
+      "difficulte": 3,
+      "tags": [
+        "levier",
+        "genres"
+      ]
+    },
+    {
+      "id": "PC2C-P04-033",
+      "lecon": "Les conditions générales d'équilibre et les machines simples",
+      "type": "formule",
+      "recto": "Pour une balance romaine, quelle relation lie la masse $m$ de l'objet à la position $x$ du curseur de masse $m_c$ ?",
+      "verso": "$m \\times d = m_c \\times x$, donc $m = \\dfrac{m_c}{d} \\times x$, où $d$ est la distance de l'objet à l'axe : la masse est proportionnelle à $x$.",
+      "difficulte": 2,
+      "tags": [
+        "balance-romaine"
+      ]
+    },
+    {
+      "id": "PC2C-P04-034",
+      "lecon": "Les conditions générales d'équilibre et les machines simples",
+      "type": "definition",
+      "recto": "Pourquoi l'affirmation « la somme des forces est nulle, donc le solide est en équilibre » est-elle incomplète ?",
+      "verso": "Il manque la seconde condition : la somme des moments doit aussi être nulle. Un couple a une somme de forces nulle et fait pourtant tourner le solide.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "conditions-generales"
+      ]
+    }
+  ]
+}

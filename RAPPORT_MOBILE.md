@@ -1,4 +1,4 @@
-# Rapport — Correctifs d'affichage mobile (Chat'Maths)
+# Rapport — Correctifs d'affichage mobile (rapport hérité de l'application d'origine)
 
 Dernière mise à jour : 2026-08-13 — voir addenda en fin de §2 et §6 (AboutPanel, barre d'outils
 resserrée, modale bureau décentrée, Réglages/Historique en feuille sur mobile)
@@ -230,7 +230,7 @@ padding de bord d'écran de 2-6px, sont en dessous de ce que recommandent géné
 directrices d'accessibilité tactile (habituellement ≥8px entre cibles voisines, même quand chaque
 cible individuelle atteint 44px) — accepté ici pour respecter la contrainte numérique explicite
 (champ ≥60% à 360px) sans jamais descendre une cible sous 44×44px, contrainte qui s'est révélée
-mathématiquement impossible à tenir sans cet espacement minimal une fois les 3 cibles fixes (⋯,
+strictement impossible à tenir sans cet espacement minimal une fois les 3 cibles fixes (⋯,
 caméra, envoi) et la marge externe partagée prises en compte. À valider sur un vrai téléphone avant
 mise en production ; si le risque de faux-clic s'avère gênant en usage réel, revoir plutôt le
 nombre de cibles toujours visibles (ex. fusionner caméra dans le menu "⋯") plutôt que de resserrer

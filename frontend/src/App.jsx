@@ -54,7 +54,7 @@ import { mapServerMessagesToClient } from "./lib/serverMessages.js"
 import { isSameDay, formatDaySeparator } from "./lib/dateFormat.js"
 import { useIsMobile } from "./lib/useMediaQuery.js"
 
-const STORAGE_KEY = "chatmaths-session-v1"
+const STORAGE_KEY = "chatphysique-session-v1"
 
 function loadSavedSession() {
   try {
@@ -112,7 +112,7 @@ export default function App() {
     setMobileSidebarOpen(false)
     setEditProfileOpen(true)
   }
-  const [theme, setTheme] = useState(() => localStorage.getItem("chatmaths-theme") || "chatmaths-light")
+  const [theme, setTheme] = useState(() => localStorage.getItem("chatphysique-theme") || "chatphysique-light")
   // Bureau uniquement : ouvert par défaut, préférence mémorisée (voir l'effet de sauvegarde
   // plus bas). Sur mobile, Réglages/Historique ne sont plus jamais affichés en ligne — voir
   // mobileSidebarOpen ci-dessous — donc cette préférence bureau ne les concerne plus du tout :
@@ -121,7 +121,7 @@ export default function App() {
   // chat hors de l'écran au premier chargement (voir RAPPORT_MOBILE.md, correctif "Sidebar
   // mobile en feuille modale").
   const [sidebarOpen, setSidebarOpen] = useState(() => {
-    const stored = localStorage.getItem("chatmaths-sidebar-open")
+    const stored = localStorage.getItem("chatphysique-sidebar-open")
     if (stored !== null) return stored !== "false"
     return typeof window !== "undefined" ? window.matchMedia("(min-width: 1024px)").matches : true
   })
@@ -204,11 +204,11 @@ export default function App() {
 
   useEffect(() => {
     document.documentElement.setAttribute("data-theme", theme)
-    localStorage.setItem("chatmaths-theme", theme)
+    localStorage.setItem("chatphysique-theme", theme)
   }, [theme])
 
   useEffect(() => {
-    localStorage.setItem("chatmaths-sidebar-open", String(sidebarOpen))
+    localStorage.setItem("chatphysique-sidebar-open", String(sidebarOpen))
   }, [sidebarOpen])
 
   // Le backend peut mettre du temps à démarrer (première installation, chargement du modèle
@@ -352,6 +352,10 @@ export default function App() {
     try {
       const list = await getChapters(code)
       setChapters(list)
+      // Un chapitre restauré d'une session précédente (ex: session invité en 4ème, puis connexion
+      // à un compte de 3ème) peut ne pas appartenir à la classe courante : on l'oublie, sinon il
+      // partirait avec la question suivante et le serveur la refuserait.
+      setChapitre((current) => (current && !list.includes(current) ? "" : current))
     } catch {
       pushBotError("Impossible de charger les chapitres pour cette classe.")
     }
@@ -950,11 +954,11 @@ export default function App() {
     if (exportingSession) return
     setExportingSession(true)
     try {
-      const title = "Prof Amira : Session complète"
+      const title = "Prof Aïcha : Session complète"
       const subtitle = `${classeNom || ""}${chapitre ? " · " + chapitre : ""}`.trim()
       let filename
       if (format === "docx") {
-        filename = `chatmaths-session-${Date.now()}.docx`
+        filename = `chatphysique-session-${Date.now()}.docx`
         await exportMessagesToDocx(messages, { filename, title, subtitle })
       } else {
         // Ne devrait pas arriver (la ref est posée sur le conteneur des messages dès le premier
@@ -962,7 +966,7 @@ export default function App() {
         // sans aucun retour après un clic — symptôme "le bouton ne fait rien" indiscernable d'un
         // vrai échec de génération.
         if (!sessionContentRef.current) throw new Error("Zone de session introuvable pour l'export PDF")
-        filename = `chatmaths-session-${Date.now()}.pdf`
+        filename = `chatphysique-session-${Date.now()}.pdf`
         await exportNodeToPDF(sessionContentRef.current, { filename, title, subtitle })
       }
       // Le téléchargement se fait silencieusement (aucune fenêtre ne s'ouvre) : sans ce message,
@@ -988,8 +992,8 @@ export default function App() {
         showToast("Aucun historique à exporter pour l'instant.", "error")
         return
       }
-      const filename = `chatmaths-historique-complet-${Date.now()}.docx`
-      await exportHistoryToDocx(conversations, { filename, title: "Prof Amira : Historique complet" })
+      const filename = `chatphysique-historique-complet-${Date.now()}.docx`
+      await exportHistoryToDocx(conversations, { filename, title: "Prof Aïcha : Historique complet" })
       showToast(`Fichier téléchargé : ${filename} (dossier Téléchargements)`, "success")
     } catch (err) {
       console.error("Export de l'historique échoué:", err)
@@ -1044,7 +1048,7 @@ export default function App() {
         token={getToken()}
         username={user}
         theme={theme}
-        onToggleTheme={() => setTheme((t) => (t === "chatmaths-dark" ? "chatmaths-light" : "chatmaths-dark"))}
+        onToggleTheme={() => setTheme((t) => (t === "chatphysique-dark" ? "chatphysique-light" : "chatphysique-dark"))}
         onLogout={handleLogout}
       />
     )
@@ -1055,7 +1059,7 @@ export default function App() {
       <BackgroundBlobs />
       <Header
         theme={theme}
-        onToggleTheme={() => setTheme((t) => (t === "chatmaths-dark" ? "chatmaths-light" : "chatmaths-dark"))}
+        onToggleTheme={() => setTheme((t) => (t === "chatphysique-dark" ? "chatphysique-light" : "chatphysique-dark"))}
         user={user}
         onLoginClick={handleLoginClick}
         onLogout={handleLogout}
@@ -1243,7 +1247,7 @@ export default function App() {
       </div>
 
       <footer className="px-4 pb-4 text-center text-xs text-base-content/40">
-        Prof Amira · Programme officiel du Burkina Faso (6ème à Terminale) · Un produit Hakili Lab
+        Prof Aïcha · Programme officiel du Burkina Faso (4ème à Terminale) · Un produit Hakili Lab
       </footer>
 
       <AboutPanel open={aboutOpen} onClose={() => setAboutOpen(false)} />

@@ -1,0 +1,450 @@
+{
+  "matiere": "Physique-Chimie",
+  "partie": "Physique",
+  "niveau": "Terminale D",
+  "chapitre": "Physique, Chapitre 6 : Le champ et les interactions magnétiques",
+  "source": "pc/tled/Chapitre_6_Le_champ_et_les_interactions_magnetiques",
+  "nombre_cartes": 38,
+  "cartes": [
+    {
+      "id": "PCTD-P06-001",
+      "lecon": "Les aimants et les interactions magnétiques",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on un aimant ?",
+      "verso": "Un corps capable d'attirer les substances ferromagnétiques : le fer, l'acier, le nickel, le cobalt et leurs alliages.",
+      "difficulte": 1,
+      "tags": [
+        "aimant",
+        "ferromagnetique"
+      ]
+    },
+    {
+      "id": "PCTD-P06-002",
+      "lecon": "Les aimants et les interactions magnétiques",
+      "type": "definition",
+      "recto": "Quelle erreur commet un élève qui affirme qu'un aimant attire tous les métaux ?",
+      "verso": "Un aimant n'attire que les corps ferromagnétiques (fer, acier, nickel, cobalt) ; il n'attire ni le cuivre, ni l'aluminium, ni l'or.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "ferromagnetique"
+      ]
+    },
+    {
+      "id": "PCTD-P06-003",
+      "lecon": "Les aimants et les interactions magnétiques",
+      "type": "definition",
+      "recto": "Comment reconnaît-on le pôle nord d'un aimant libre de tourner ?",
+      "verso": "C'est le pôle qui se tourne vers le nord géographique. Tout aimant possède deux pôles, et deux seulement : un nord et un sud.",
+      "difficulte": 1,
+      "tags": [
+        "poles"
+      ]
+    },
+    {
+      "id": "PCTD-P06-004",
+      "lecon": "Les aimants et les interactions magnétiques",
+      "type": "formule",
+      "recto": "Selon la loi des pôles, comment deux pôles d'aimants agissent-ils l'un sur l'autre ?",
+      "verso": "Deux pôles de même nom se repoussent, deux pôles de noms contraires s'attirent ; ces actions s'exercent à distance et sont réciproques.",
+      "difficulte": 1,
+      "tags": [
+        "loi-des-poles"
+      ]
+    },
+    {
+      "id": "PCTD-P06-005",
+      "lecon": "Les aimants et les interactions magnétiques",
+      "type": "definition",
+      "recto": "Que devient un aimant droit que l'on coupe en deux ?",
+      "verso": "Il donne deux aimants complets, chacun avec un pôle nord et un pôle sud : un nouveau pôle apparaît sur la cassure. Il n'existe pas de pôle magnétique isolé.",
+      "difficulte": 2,
+      "tags": [
+        "insecabilite",
+        "poles"
+      ]
+    },
+    {
+      "id": "PCTD-P06-006",
+      "lecon": "Les aimants et les interactions magnétiques",
+      "type": "formule",
+      "recto": "Pour savoir si un corps attiré par un aimant est lui-même un aimant, quel comportement faut-il observer ?",
+      "verso": "Une répulsion : seule la répulsion prouve un aimant. Un clou est attiré par les deux pôles d'un aimant sans être un aimant.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "identification"
+      ]
+    },
+    {
+      "id": "PCTD-P06-007",
+      "lecon": "Les aimants et les interactions magnétiques",
+      "type": "definition",
+      "recto": "Que montre l'expérience d'Oersted ?",
+      "verso": "Un courant crée autour de lui une action de même nature que celle d'un aimant : l'aiguille aimantée placée sous un fil nord-sud dévie quand le courant passe, de l'autre côté si on inverse le courant, davantage si l'intensité augmente.",
+      "difficulte": 2,
+      "tags": [
+        "oersted",
+        "courant-aimant"
+      ]
+    },
+    {
+      "id": "PCTD-P06-008",
+      "lecon": "Les aimants et les interactions magnétiques",
+      "type": "formule",
+      "recto": "Comment interagissent deux fils parallèles parcourus par des courants ?",
+      "verso": "Ils s'attirent si les courants ont le même sens et se repoussent s'ils ont des sens contraires (interaction courant-courant, découverte par Ampère).",
+      "difficulte": 2,
+      "tags": [
+        "courant-courant",
+        "ampere"
+      ]
+    },
+    {
+      "id": "PCTD-P06-009",
+      "lecon": "Les aimants et les interactions magnétiques",
+      "type": "definition",
+      "recto": "Quelles sont les sources de champ magnétique ?",
+      "verso": "Les aimants et les courants électriques, d'où les trois interactions : aimant-aimant, courant-aimant et courant-courant.",
+      "difficulte": 1,
+      "tags": [
+        "sources"
+      ]
+    },
+    {
+      "id": "PCTD-P06-010",
+      "lecon": "Le vecteur champ magnétique, ses lignes de champ et son spectre",
+      "type": "definition",
+      "recto": "Quelles sont la direction et le sens du vecteur champ magnétique $\\vec{B}$ en un point ?",
+      "verso": "Direction : celle de l'axe d'une aiguille aimantée placée en ce point. Sens : du sud vers le nord de l'aiguille, celui qu'indique sa pointe nord.",
+      "difficulte": 1,
+      "tags": [
+        "vecteur-champ",
+        "caracteristiques"
+      ]
+    },
+    {
+      "id": "PCTD-P06-011",
+      "lecon": "Le vecteur champ magnétique, ses lignes de champ et son spectre",
+      "type": "definition",
+      "recto": "Quelle est l'unité de la valeur $B$ du champ magnétique ?",
+      "verso": "Le tesla ($\\mathrm{T}$), une très grande unité : le champ terrestre vaut environ $3 \\times 10^{-5}~\\mathrm{T}$ ; on emploie aussi le millitesla et le microtesla.",
+      "difficulte": 1,
+      "tags": [
+        "tesla",
+        "unite"
+      ]
+    },
+    {
+      "id": "PCTD-P06-012",
+      "lecon": "Le vecteur champ magnétique, ses lignes de champ et son spectre",
+      "type": "definition",
+      "recto": "Comment mesure-t-on la valeur $B$ d'un champ magnétique avec un teslamètre ?",
+      "verso": "Sa sonde à effet Hall ne mesure que la composante de $\\vec{B}$ perpendiculaire à sa face sensible : on l'oriente jusqu'à lire le maximum, qui est la valeur de $B$.",
+      "difficulte": 2,
+      "tags": [
+        "teslametre",
+        "mesure"
+      ]
+    },
+    {
+      "id": "PCTD-P06-013",
+      "lecon": "Le vecteur champ magnétique, ses lignes de champ et son spectre",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on spectre magnétique ?",
+      "verso": "L'ensemble des lignes de champ magnétique, courbes tangentes en chaque point à $\\vec{B}$ et orientées dans son sens ; la limaille de fer le rend visible.",
+      "difficulte": 1,
+      "tags": [
+        "spectre",
+        "ligne-de-champ"
+      ]
+    },
+    {
+      "id": "PCTD-P06-014",
+      "lecon": "Le vecteur champ magnétique, ses lignes de champ et son spectre",
+      "type": "definition",
+      "recto": "Par quel pôle les lignes de champ sortent-elles d'un aimant ?",
+      "verso": "A l'extérieur, elles sortent par le pôle nord et entrent par le pôle sud ; à l'intérieur, elles vont du sud vers le nord.",
+      "difficulte": 2,
+      "tags": [
+        "ligne-de-champ",
+        "poles"
+      ]
+    },
+    {
+      "id": "PCTD-P06-015",
+      "lecon": "Le vecteur champ magnétique, ses lignes de champ et son spectre",
+      "type": "definition",
+      "recto": "Pourquoi toute ligne de champ magnétique est-elle une courbe fermée ?",
+      "verso": "Parce qu'il n'existe aucun pôle magnétique isolé sur lequel une ligne pourrait commencer ou finir : elle sort par le nord, entre par le sud et traverse l'aimant pour revenir à son point de départ.",
+      "difficulte": 3,
+      "tags": [
+        "ligne-fermee"
+      ]
+    },
+    {
+      "id": "PCTD-P06-016",
+      "lecon": "Le vecteur champ magnétique, ses lignes de champ et son spectre",
+      "type": "definition",
+      "recto": "Quelle est la position du vecteur $\\vec{B}$ par rapport à la ligne de champ qui passe par un point ?",
+      "verso": "$\\vec{B}$ est tangent à la ligne de champ, dans le sens de sa flèche ; il n'est jamais perpendiculaire à elle ni dirigé « vers l'aimant ».",
+      "difficulte": 2,
+      "tags": [
+        "piege",
+        "ligne-de-champ"
+      ]
+    },
+    {
+      "id": "PCTD-P06-017",
+      "lecon": "Le vecteur champ magnétique, ses lignes de champ et son spectre",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on un champ magnétique uniforme ?",
+      "verso": "Un champ dont $\\vec{B}$ garde même direction, même sens et même valeur dans toute une région limitée ; ses lignes y sont des droites parallèles régulièrement espacées.",
+      "difficulte": 1,
+      "tags": [
+        "champ-uniforme"
+      ]
+    },
+    {
+      "id": "PCTD-P06-018",
+      "lecon": "Le vecteur champ magnétique, ses lignes de champ et son spectre",
+      "type": "definition",
+      "recto": "Quels dispositifs permettent d'obtenir un champ magnétique uniforme ?",
+      "verso": "L'espace entre les branches d'un aimant en U, l'intérieur d'un solénoïde long (loin des extrémités) et l'espace entre deux bobines de Helmholtz.",
+      "difficulte": 2,
+      "tags": [
+        "champ-uniforme",
+        "dispositifs"
+      ]
+    },
+    {
+      "id": "PCTD-P06-019",
+      "lecon": "Le vecteur champ magnétique, ses lignes de champ et son spectre",
+      "type": "definition",
+      "recto": "Sur un schéma, que signifient un rond pointé et un rond croisé placés à la place d'un vecteur ?",
+      "verso": "Le rond pointé : le vecteur sort de la feuille, vers le lecteur (on voit la pointe). Le rond croisé : le vecteur entre dans la feuille (on voit l'empennage). La taille du rond ne représente pas l'intensité.",
+      "difficulte": 2,
+      "tags": [
+        "convention-de-trace"
+      ]
+    },
+    {
+      "id": "PCTD-P06-020",
+      "lecon": "Le vecteur champ magnétique, ses lignes de champ et son spectre",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on le méridien magnétique d'un lieu ?",
+      "verso": "Le plan vertical qui contient l'axe d'une aiguille aimantée libre, loin de tout aimant et de tout courant ; au Burkina Faso, il est très voisin de la direction nord-sud.",
+      "difficulte": 2,
+      "tags": [
+        "meridien-magnetique"
+      ]
+    },
+    {
+      "id": "PCTD-P06-021",
+      "lecon": "Le vecteur champ magnétique, ses lignes de champ et son spectre",
+      "type": "definition",
+      "recto": "Quelle composante du champ magnétique terrestre oriente une boussole posée à plat ?",
+      "verso": "La composante horizontale $\\vec{B}_H$ ; à Ouagadougou, elle vaut environ $3{,}3 \\times 10^{-5}~\\mathrm{T}$ ($33~\\mu\\mathrm{T}$) et pointe vers le nord géographique.",
+      "difficulte": 2,
+      "tags": [
+        "champ-terrestre",
+        "composante-horizontale"
+      ]
+    },
+    {
+      "id": "PCTD-P06-022",
+      "lecon": "Le vecteur champ magnétique, ses lignes de champ et son spectre",
+      "type": "definition",
+      "recto": "Pourquoi le pôle magnétique terrestre voisin du nord géographique est-il magnétiquement un pôle sud ?",
+      "verso": "Il attire la pointe nord de l'aiguille aimantée ; or deux pôles qui s'attirent sont de noms contraires. On l'appelle pourtant, par tradition, « pôle nord magnétique ».",
+      "difficulte": 3,
+      "tags": [
+        "champ-terrestre",
+        "poles"
+      ]
+    },
+    {
+      "id": "PCTD-P06-023",
+      "lecon": "Le champ magnétique créé par un courant",
+      "type": "formule",
+      "recto": "Quelle est la valeur $B$ du champ magnétique créé par un fil rectiligne parcouru par un courant $I$, en un point situé à la distance $d$ du fil ?",
+      "verso": "$B = \\dfrac{\\mu_0 I}{2\\pi d}$, avec $B$ en T, $I$ en A, $d$ en m et $\\mu_0 = 4\\pi \\times 10^{-7}~\\mathrm{T \\cdot m/A}$.",
+      "difficulte": 1,
+      "tags": [
+        "fil-rectiligne"
+      ]
+    },
+    {
+      "id": "PCTD-P06-024",
+      "lecon": "Le champ magnétique créé par un courant",
+      "type": "definition",
+      "recto": "Quelle forme ont les lignes du champ magnétique créé par un fil rectiligne parcouru par un courant ?",
+      "verso": "Des cercles centrés sur le fil, dans des plans perpendiculaires au fil ; en chaque point, $\\vec{B}$ est tangent au cercle.",
+      "difficulte": 2,
+      "tags": [
+        "fil-rectiligne",
+        "ligne-de-champ"
+      ]
+    },
+    {
+      "id": "PCTD-P06-025",
+      "lecon": "Le champ magnétique créé par un courant",
+      "type": "formule",
+      "recto": "Quelle est la valeur du champ magnétique à l'intérieur d'un solénoïde de $N$ spires et de longueur $L$ parcouru par un courant $I$ ?",
+      "verso": "$B = \\mu_0 n I$ avec $n = \\dfrac{N}{L}$ (spires par mètre, $L$ en m) ; valable à l'intérieur, loin des extrémités, où le champ est uniforme et dirigé selon l'axe.",
+      "difficulte": 2,
+      "tags": [
+        "solenoide"
+      ]
+    },
+    {
+      "id": "PCTD-P06-026",
+      "lecon": "Le champ magnétique créé par un courant",
+      "type": "definition",
+      "recto": "Quelle erreur commet un élève qui écrit $B = \\mu_0 N I$ pour un solénoïde de $N$ spires ?",
+      "verso": "Dans $B = \\mu_0 n I$, $n$ est le nombre de spires par mètre, $n = \\dfrac{N}{L}$ : oublier de diviser par la longueur fausse le résultat d'un facteur considérable.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "solenoide"
+      ]
+    },
+    {
+      "id": "PCTD-P06-027",
+      "lecon": "Le champ magnétique créé par un courant",
+      "type": "definition",
+      "recto": "Pourquoi le champ à l'intérieur d'un solénoïde ne dépend-il pas de son rayon ?",
+      "verso": "Parce que $B = \\mu_0 \\dfrac{N}{L} I$ ne fait intervenir ni le rayon ni la position du point intérieur : le rayon change seulement le volume où règne le champ.",
+      "difficulte": 3,
+      "tags": [
+        "solenoide",
+        "rayon"
+      ]
+    },
+    {
+      "id": "PCTD-P06-028",
+      "lecon": "Le champ magnétique créé par un courant",
+      "type": "definition",
+      "recto": "A partir de quelle longueur une bobine peut-elle être considérée comme un solénoïde ?",
+      "verso": "Quand sa longueur $L$ est grande devant son diamètre ; en pratique, dès qu'elle dépasse cinq fois le diamètre ($L \\gt 10R$).",
+      "difficulte": 2,
+      "tags": [
+        "solenoide",
+        "condition"
+      ]
+    },
+    {
+      "id": "PCTD-P06-029",
+      "lecon": "Le champ magnétique créé par un courant",
+      "type": "formule",
+      "recto": "Pour un solénoïde à spires jointives, formé de $c$ couches d'un fil de diamètre $d$, combien vaut le nombre $n$ de spires par mètre ?",
+      "verso": "$n = \\dfrac{c}{d}$, d'où $B = \\mu_0\\dfrac{c}{d}I$ (chaque couche porte $\\dfrac{1}{d}$ spires par mètre).",
+      "difficulte": 2,
+      "tags": [
+        "spires-jointives"
+      ]
+    },
+    {
+      "id": "PCTD-P06-030",
+      "lecon": "Le champ magnétique créé par un courant",
+      "type": "formule",
+      "recto": "Comment la règle de la main droite donne-t-elle le sens du champ magnétique créé par un fil rectiligne ?",
+      "verso": "On saisit le fil de la main droite, pouce tendu dans le sens conventionnel du courant : les doigts repliés autour du fil donnent le sens des lignes de champ.",
+      "difficulte": 2,
+      "tags": [
+        "main-droite",
+        "fil-rectiligne"
+      ]
+    },
+    {
+      "id": "PCTD-P06-031",
+      "lecon": "Le champ magnétique créé par un courant",
+      "type": "formule",
+      "recto": "Selon la règle de l'observateur d'Ampère, de quel côté de l'observateur se trouve le champ $\\vec{B}$ créé par un fil en un point $M$ ?",
+      "verso": "L'observateur, couché le long du fil, le courant entrant par ses pieds et sortant par sa tête, regarde $M$ : $\\vec{B}$ est dirigé vers sa gauche.",
+      "difficulte": 2,
+      "tags": [
+        "observateur-d-ampere"
+      ]
+    },
+    {
+      "id": "PCTD-P06-032",
+      "lecon": "Le champ magnétique créé par un courant",
+      "type": "definition",
+      "recto": "Pour une bobine parcourue par un courant, qu'appelle-t-on la face nord ?",
+      "verso": "La face par laquelle sortent les lignes de champ ; vue de cette face, le courant tourne dans le sens inverse des aiguilles d'une montre. Elle dépend du sens du courant.",
+      "difficulte": 2,
+      "tags": [
+        "faces-d-une-bobine"
+      ]
+    },
+    {
+      "id": "PCTD-P06-033",
+      "lecon": "Le principe de superposition et le champ résultant",
+      "type": "formule",
+      "recto": "Selon le principe de superposition, quel est le champ magnétique résultant en un point où plusieurs sources créent chacune un champ ?",
+      "verso": "La somme vectorielle des champs que chaque source créerait seule : $\\vec{B} = \\vec{B}_1 + \\vec{B}_2 + \\ldots + \\vec{B}_n$.",
+      "difficulte": 1,
+      "tags": [
+        "superposition"
+      ]
+    },
+    {
+      "id": "PCTD-P06-034",
+      "lecon": "Le principe de superposition et le champ résultant",
+      "type": "formule",
+      "recto": "Quelle est la valeur du champ magnétique résultant de deux champs $\\vec{B}_1$ et $\\vec{B}_2$ perpendiculaires ?",
+      "verso": "$B = \\sqrt{B_1^{2} + B_2^{2}}$ (théorème de Pythagore), et $\\tan\\alpha = \\dfrac{B_2}{B_1}$, où $\\alpha$ est l'angle entre $\\vec{B}$ et $\\vec{B}_1$. Pour $3$ et $4$, on obtient $5$, pas $7$.",
+      "difficulte": 2,
+      "tags": [
+        "piege",
+        "pythagore"
+      ]
+    },
+    {
+      "id": "PCTD-P06-035",
+      "lecon": "Le principe de superposition et le champ résultant",
+      "type": "formule",
+      "recto": "Quelle est la valeur du champ magnétique résultant de deux champs de même direction mais de sens contraires ?",
+      "verso": "$B = \\lvert B_1 - B_2 \\rvert$, et le champ résultant a le sens du plus grand. Pour deux champs de même sens, $B = B_1 + B_2$.",
+      "difficulte": 2,
+      "tags": [
+        "superposition",
+        "colineaires"
+      ]
+    },
+    {
+      "id": "PCTD-P06-036",
+      "lecon": "Le principe de superposition et le champ résultant",
+      "type": "formule",
+      "recto": "Pour une boussole des tangentes placée au centre d'une bobine d'axe est-ouest, quelle relation lie la déviation $\\alpha$ de l'aiguille, comptée depuis le méridien, aux champs $B_b$ de la bobine et $B_H$ de la Terre ?",
+      "verso": "$\\tan\\alpha = \\dfrac{B_b}{B_H}$, les deux champs étant perpendiculaires ; si $\\alpha$ était compté depuis l'axe de la bobine, on aurait $\\tan\\alpha = \\dfrac{B_H}{B_b}$.",
+      "difficulte": 2,
+      "tags": [
+        "boussole-des-tangentes"
+      ]
+    },
+    {
+      "id": "PCTD-P06-037",
+      "lecon": "Le principe de superposition et le champ résultant",
+      "type": "definition",
+      "recto": "Pourquoi l'aiguille d'une boussole des tangentes n'atteint-elle jamais une déviation de $90^{\\circ}$ ?",
+      "verso": "Parce que $\\tan\\alpha = \\dfrac{B_b}{B_H}$ et que $B_H$ n'est jamais nul : aucune valeur finie du rapport ne donne $90^{\\circ}$, l'aiguille s'approche de l'est-ouest sans l'atteindre.",
+      "difficulte": 3,
+      "tags": [
+        "boussole-des-tangentes"
+      ]
+    },
+    {
+      "id": "PCTD-P06-038",
+      "lecon": "Le principe de superposition et le champ résultant",
+      "type": "definition",
+      "recto": "Que signifie un champ magnétique résultant nul en un point ?",
+      "verso": "Que les champs des différentes sources s'y compensent exactement (même direction, sens contraires, valeurs égales), et non qu'il n'y a aucune source.",
+      "difficulte": 3,
+      "tags": [
+        "champ-nul"
+      ]
+    }
+  ]
+}

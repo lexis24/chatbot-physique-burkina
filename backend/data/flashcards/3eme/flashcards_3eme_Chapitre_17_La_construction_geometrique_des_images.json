@@ -1,0 +1,369 @@
+{
+  "matiere": "Physique-Chimie",
+  "partie": "Physique",
+  "niveau": "3ème",
+  "chapitre": "Physique, Chapitre 17 : La construction géométrique des images",
+  "source": "pc/3eme/Chapitre_17_La_construction_geometrique_des_images",
+  "nombre_cartes": 31,
+  "cartes": [
+    {
+      "id": "PC3E-P17-001",
+      "lecon": "Le rayon incident, le rayon émergent et les trois rayons particuliers",
+      "type": "definition",
+      "recto": "Pour une lentille, qu'appelle-t-on un rayon incident ?",
+      "verso": "C'est un rayon lumineux qui arrive sur la lentille, avant de l'avoir traversée. Il vient de l'objet.",
+      "difficulte": 1,
+      "tags": [
+        "rayon-incident",
+        "vocabulaire"
+      ]
+    },
+    {
+      "id": "PC3E-P17-002",
+      "lecon": "Le rayon incident, le rayon émergent et les trois rayons particuliers",
+      "type": "definition",
+      "recto": "Pour une lentille, qu'appelle-t-on un rayon émergent ?",
+      "verso": "C'est le rayon lumineux qui sort de la lentille après l'avoir traversée. A chaque rayon incident correspond un rayon émergent.",
+      "difficulte": 1,
+      "tags": [
+        "rayon-emergent",
+        "vocabulaire"
+      ]
+    },
+    {
+      "id": "PC3E-P17-003",
+      "lecon": "Le rayon incident, le rayon émergent et les trois rayons particuliers",
+      "type": "formule",
+      "recto": "Pour une lentille convergente, comment émerge un rayon incident parallèle à l'axe optique ?",
+      "verso": "Il émerge en passant par le foyer image $F'$.",
+      "difficulte": 1,
+      "tags": [
+        "rayons-particuliers",
+        "foyer-image"
+      ]
+    },
+    {
+      "id": "PC3E-P17-004",
+      "lecon": "Le rayon incident, le rayon émergent et les trois rayons particuliers",
+      "type": "formule",
+      "recto": "Pour une lentille convergente, que devient un rayon incident qui passe par le centre optique $O$ ?",
+      "verso": "Il n'est pas dévié : il continue en ligne droite.",
+      "difficulte": 1,
+      "tags": [
+        "rayons-particuliers",
+        "centre-optique"
+      ]
+    },
+    {
+      "id": "PC3E-P17-005",
+      "lecon": "Le rayon incident, le rayon émergent et les trois rayons particuliers",
+      "type": "formule",
+      "recto": "Pour une lentille convergente, comment émerge un rayon incident qui passe par le foyer objet $F$ ?",
+      "verso": "Il émerge parallèlement à l'axe optique.",
+      "difficulte": 1,
+      "tags": [
+        "rayons-particuliers",
+        "foyer-objet"
+      ]
+    },
+    {
+      "id": "PC3E-P17-006",
+      "lecon": "Le rayon incident, le rayon émergent et les trois rayons particuliers",
+      "type": "definition",
+      "recto": "Sur le schéma d'une lentille convergente, de quel côté place-t-on le foyer objet $F$ et le foyer image $F'$ ?",
+      "verso": "Tous deux sont à la distance focale de $O$, de part et d'autre : $F$ du côté d'où vient la lumière (côté objet), $F'$ de l'autre côté (côté écran).",
+      "difficulte": 2,
+      "tags": [
+        "foyers",
+        "schema"
+      ]
+    },
+    {
+      "id": "PC3E-P17-007",
+      "lecon": "Le rayon incident, le rayon émergent et les trois rayons particuliers",
+      "type": "definition",
+      "recto": "Dans un schéma d'optique, comment trace-t-on la lumière réelle et les prolongements de rayons ?",
+      "verso": "La lumière réelle se trace en trait plein, avec une flèche de sens à mi-parcours. Les prolongements se tracent en pointillés, sans flèche.",
+      "difficulte": 2,
+      "tags": [
+        "convention-de-trace"
+      ]
+    },
+    {
+      "id": "PC3E-P17-008",
+      "lecon": "Le rayon incident, le rayon émergent et les trois rayons particuliers",
+      "type": "formule",
+      "recto": "D'où part le rayon émergent qui correspond à un rayon incident particulier ?",
+      "verso": "Il part du point d'arrivée $I$ du rayon incident sur la lentille, puis suit la propriété du rayon particulier (vers $F'$, tout droit ou parallèle à l'axe).",
+      "difficulte": 2,
+      "tags": [
+        "rayon-emergent",
+        "trace"
+      ]
+    },
+    {
+      "id": "PC3E-P17-009",
+      "lecon": "Le rayon incident, le rayon émergent et les trois rayons particuliers",
+      "type": "definition",
+      "recto": "Pourquoi un rayon ne peut-il pas « passer par $F$ et par $F'$ » à travers une lentille convergente ?",
+      "verso": "Le rayon incident qui passe par le foyer objet $F$ ressort parallèle à l'axe optique : il ne passe donc pas par $F'$.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "foyers"
+      ]
+    },
+    {
+      "id": "PC3E-P17-010",
+      "lecon": "Le rayon incident, le rayon émergent et les trois rayons particuliers",
+      "type": "definition",
+      "recto": "Quel danger présente une lentille convergente exposée au Soleil ?",
+      "verso": "Elle concentre la lumière au foyer, où la chaleur suffit à brûler la peau, le papier ou un tissu. On ne regarde jamais le Soleil à travers elle.",
+      "difficulte": 2,
+      "tags": [
+        "securite"
+      ]
+    },
+    {
+      "id": "PC3E-P17-011",
+      "lecon": "Construire l'image d'un point, puis l'image d'un objet",
+      "type": "definition",
+      "recto": "Pour une lentille, qu'appelle-t-on l'image $B'$ d'un point objet $B$ ?",
+      "verso": "C'est le point où se recoupent, après la lentille, tous les rayons issus de $B$.",
+      "difficulte": 2,
+      "tags": [
+        "image-d-un-point"
+      ]
+    },
+    {
+      "id": "PC3E-P17-012",
+      "lecon": "Construire l'image d'un point, puis l'image d'un objet",
+      "type": "formule",
+      "recto": "Combien de rayons particuliers faut-il tracer pour construire l'image $B'$ d'un point $B$ ?",
+      "verso": "Deux suffisent, car tous les rayons issus de $B$ se recoupent au même point $B'$ ; le troisième sert de contrôle.",
+      "difficulte": 2,
+      "tags": [
+        "image-d-un-point",
+        "construction"
+      ]
+    },
+    {
+      "id": "PC3E-P17-013",
+      "lecon": "Construire l'image d'un point, puis l'image d'un objet",
+      "type": "definition",
+      "recto": "Comment représente-t-on un objet étendu $AB$ dans une construction d'image par une lentille ?",
+      "verso": "Par une flèche perpendiculaire à l'axe optique, le point $A$ étant sur l'axe et $B$ au-dessus.",
+      "difficulte": 1,
+      "tags": [
+        "objet-etendu"
+      ]
+    },
+    {
+      "id": "PC3E-P17-014",
+      "lecon": "Construire l'image d'un point, puis l'image d'un objet",
+      "type": "definition",
+      "recto": "Pourquoi l'image $A'$ d'un point $A$ situé sur l'axe optique reste-t-elle sur l'axe ?",
+      "verso": "L'axe optique est lui-même la marche d'un rayon qui passe par $O$ sans être dévié : le rayon issu de $A$ qui longe l'axe repart le long de l'axe.",
+      "difficulte": 3,
+      "tags": [
+        "objet-etendu",
+        "axe-optique"
+      ]
+    },
+    {
+      "id": "PC3E-P17-015",
+      "lecon": "Construire l'image d'un point, puis l'image d'un objet",
+      "type": "formule",
+      "recto": "Une fois $B'$ construit, comment obtient-on l'image $A'$ du point $A$ situé sur l'axe ?",
+      "verso": "On abaisse de $B'$ la perpendiculaire à l'axe optique : son pied est $A'$. L'image est le segment $A'B'$.",
+      "difficulte": 2,
+      "tags": [
+        "objet-etendu",
+        "construction"
+      ]
+    },
+    {
+      "id": "PC3E-P17-016",
+      "lecon": "Construire l'image d'un point, puis l'image d'un objet",
+      "type": "formule",
+      "recto": "Quelle relation lie les tailles $AB$, $A'B'$ et les distances $OA$, $OA'$ dans la construction de l'image par une lentille ?",
+      "verso": "$\\dfrac{A'B'}{AB} = \\dfrac{OA'}{OA}$, rapport sans unité (longueurs dans la même unité). Supérieur à 1 : image agrandie ; inférieur à 1 : image réduite.",
+      "difficulte": 2,
+      "tags": [
+        "rapport-des-tailles"
+      ]
+    },
+    {
+      "id": "PC3E-P17-017",
+      "lecon": "Construire l'image d'un point, puis l'image d'un objet",
+      "type": "formule",
+      "recto": "Pour une lentille convergente, où se forme l'image d'un objet très éloigné (« à l'infini ») ?",
+      "verso": "Au foyer image $F'$ : elle est réelle, renversée et très petite.",
+      "difficulte": 2,
+      "tags": [
+        "position-objet"
+      ]
+    },
+    {
+      "id": "PC3E-P17-018",
+      "lecon": "Construire l'image d'un point, puis l'image d'un objet",
+      "type": "formule",
+      "recto": "Pour une lentille convergente, quelle image obtient-on d'un objet placé au-delà du foyer objet $F$ ?",
+      "verso": "Une image réelle et renversée, au-delà de $F'$, plus petite ou plus grande que l'objet selon sa position.",
+      "difficulte": 2,
+      "tags": [
+        "position-objet",
+        "image-reelle"
+      ]
+    },
+    {
+      "id": "PC3E-P17-019",
+      "lecon": "Construire l'image d'un point, puis l'image d'un objet",
+      "type": "formule",
+      "recto": "Pour une lentille convergente, que se passe-t-il quand l'objet est placé au foyer objet $F$ ?",
+      "verso": "Il n'y a pas d'image : les rayons émergents sont parallèles.",
+      "difficulte": 2,
+      "tags": [
+        "position-objet"
+      ]
+    },
+    {
+      "id": "PC3E-P17-020",
+      "lecon": "Construire l'image d'un point, puis l'image d'un objet",
+      "type": "formule",
+      "recto": "Pour une lentille convergente, comment se déplace l'image réelle quand l'objet se rapproche du foyer objet $F$ ?",
+      "verso": "Elle s'éloigne de la lentille et grandit : l'objet et l'image se déplacent dans le même sens.",
+      "difficulte": 3,
+      "tags": [
+        "position-objet"
+      ]
+    },
+    {
+      "id": "PC3E-P17-021",
+      "lecon": "Construire l'image d'un point, puis l'image d'un objet",
+      "type": "definition",
+      "recto": "Quelle erreur de méthode commet l'élève qui trace l'image avant d'avoir trouvé $B'$ ?",
+      "verso": "L'image est le résultat de la construction, pas son point de départ : on trace d'abord deux rayons particuliers issus de $B$, puis on en déduit $B'$ et $A'$.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "construction"
+      ]
+    },
+    {
+      "id": "PC3E-P17-022",
+      "lecon": "Construire l'image d'un point, puis l'image d'un objet",
+      "type": "formule",
+      "recto": "A l'échelle 1/2, comment représente-t-on une longueur de $12~\\mathrm{cm}$ ?",
+      "verso": "Toutes les longueurs sont divisées par 2 : on dessine $6~\\mathrm{cm}$.",
+      "difficulte": 1,
+      "tags": [
+        "echelle"
+      ]
+    },
+    {
+      "id": "PC3E-P17-023",
+      "lecon": "L'image virtuelle et le contrôle d'une construction",
+      "type": "formule",
+      "recto": "Pour une lentille convergente, comment construit-on l'image d'un objet placé entre $F$ et $O$ ?",
+      "verso": "Les rayons émergents divergent : on les prolonge en arrière, en pointillés. Leurs prolongements se coupent en $B'$, du même côté que l'objet.",
+      "difficulte": 2,
+      "tags": [
+        "image-virtuelle",
+        "construction"
+      ]
+    },
+    {
+      "id": "PC3E-P17-024",
+      "lecon": "L'image virtuelle et le contrôle d'une construction",
+      "type": "formule",
+      "recto": "Pour une lentille convergente, quelles sont les caractéristiques de l'image d'un objet placé entre $F$ et $O$ ?",
+      "verso": "Elle est virtuelle, droite et plus grande que l'objet, située du même côté que lui.",
+      "difficulte": 1,
+      "tags": [
+        "image-virtuelle"
+      ]
+    },
+    {
+      "id": "PC3E-P17-025",
+      "lecon": "L'image virtuelle et le contrôle d'une construction",
+      "type": "definition",
+      "recto": "Pourquoi une image virtuelle se trace-t-elle en pointillés ?",
+      "verso": "Aucune lumière n'y passe : elle est formée par des prolongements. On la représente par une flèche en pointillés, orientée de $A'$ vers $B'$.",
+      "difficulte": 2,
+      "tags": [
+        "image-virtuelle",
+        "convention-de-trace"
+      ]
+    },
+    {
+      "id": "PC3E-P17-026",
+      "lecon": "L'image virtuelle et le contrôle d'une construction",
+      "type": "definition",
+      "recto": "Pourquoi est-il faux de dire qu'une image virtuelle « n'existe pas » ?",
+      "verso": "Elle se voit à l'oeil, à travers la lentille ; elle ne se projette simplement pas sur un écran.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "image-virtuelle"
+      ]
+    },
+    {
+      "id": "PC3E-P17-027",
+      "lecon": "L'image virtuelle et le contrôle d'une construction",
+      "type": "formule",
+      "recto": "A partir d'un objet $AB$ et de son image $A'B'$ déjà tracés, comment retrouve-t-on le centre optique $O$ ?",
+      "verso": "La droite $BB'$ coupe l'axe optique au centre optique $O$ ; on y trace la lentille, perpendiculairement à l'axe.",
+      "difficulte": 2,
+      "tags": [
+        "retrouver-la-lentille"
+      ]
+    },
+    {
+      "id": "PC3E-P17-028",
+      "lecon": "L'image virtuelle et le contrôle d'une construction",
+      "type": "formule",
+      "recto": "A partir d'un objet $AB$, de son image $A'B'$ et de la lentille, comment retrouve-t-on le foyer image $F'$ ?",
+      "verso": "On trace le rayon issu de $B$ parallèle à l'axe jusqu'à la lentille, puis la droite qui joint ce point à $B'$ : elle coupe l'axe en $F'$.",
+      "difficulte": 2,
+      "tags": [
+        "retrouver-les-foyers"
+      ]
+    },
+    {
+      "id": "PC3E-P17-029",
+      "lecon": "L'image virtuelle et le contrôle d'une construction",
+      "type": "formule",
+      "recto": "Une fois le foyer image $F'$ retrouvé, comment obtient-on le foyer objet $F$ ?",
+      "verso": "On reporte la distance $OF'$ de l'autre côté de $O$ : $F$ et $F'$ sont symétriques par rapport à $O$.",
+      "difficulte": 1,
+      "tags": [
+        "retrouver-les-foyers"
+      ]
+    },
+    {
+      "id": "PC3E-P17-030",
+      "lecon": "L'image virtuelle et le contrôle d'une construction",
+      "type": "formule",
+      "recto": "Quelle relation lie la vergence $C$ et la distance focale $f$ d'une lentille, avec leurs unités ?",
+      "verso": "$C = \\dfrac{1}{f}$, avec $f = OF = OF'$ en mètres et $C$ en dioptries ($\\delta$).",
+      "difficulte": 2,
+      "tags": [
+        "vergence",
+        "distance-focale"
+      ]
+    },
+    {
+      "id": "PC3E-P17-031",
+      "lecon": "L'image virtuelle et le contrôle d'une construction",
+      "type": "formule",
+      "recto": "Quel rayon sert de contrôle d'une construction d'image par une lentille convergente ?",
+      "verso": "Le troisième rayon particulier, issu de $B$ et passant par $F$ : il doit lui aussi aboutir en $B'$.",
+      "difficulte": 2,
+      "tags": [
+        "controle",
+        "construction"
+      ]
+    }
+  ]
+}

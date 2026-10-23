@@ -6,7 +6,7 @@
 export function buildSuggestions(chapitre) {
   if (!chapitre) {
     return [
-      "Pose-moi une question de maths",
+      "Pose-moi une question de physique",
       "Propose-moi un exercice à faire",
       "Explique-moi une notion du programme",
     ]

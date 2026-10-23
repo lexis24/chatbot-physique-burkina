@@ -1,0 +1,440 @@
+{
+  "matiere": "Physique-Chimie",
+  "partie": "Physique",
+  "niveau": "3ème",
+  "chapitre": "Physique, Chapitre 14 : L'analyse et la synthèse de la lumière",
+  "source": "pc/3eme/Chapitre_14_L_analyse_et_la_synthese_de_la_lumiere",
+  "nombre_cartes": 37,
+  "cartes": [
+    {
+      "id": "PC3E-P14-001",
+      "lecon": "L'analyse de la lumière : décomposition, spectres et prolongements invisibles",
+      "type": "definition",
+      "recto": "Que signifie décomposer (ou analyser) une lumière ?",
+      "verso": "C'est séparer les lumières colorées, appelées radiations, qui la composent. Ce phénomène s'appelle la dispersion.",
+      "difficulte": 1,
+      "tags": [
+        "decomposition",
+        "dispersion"
+      ]
+    },
+    {
+      "id": "PC3E-P14-002",
+      "lecon": "L'analyse de la lumière : décomposition, spectres et prolongements invisibles",
+      "type": "definition",
+      "recto": "En optique, qu'appelle-t-on le spectre d'une lumière ?",
+      "verso": "C'est l'ensemble ordonné des radiations qui composent cette lumière, obtenu après sa décomposition.",
+      "difficulte": 1,
+      "tags": [
+        "spectre",
+        "vocabulaire"
+      ]
+    },
+    {
+      "id": "PC3E-P14-003",
+      "lecon": "L'analyse de la lumière : décomposition, spectres et prolongements invisibles",
+      "type": "definition",
+      "recto": "Dans quel ordre se suivent les sept couleurs dominantes du spectre de la lumière blanche, en partant du violet ?",
+      "verso": "Violet, indigo, bleu, vert, jaune, orange, rouge (moyen mnémotechnique : « VIBVJOR »). Elles se suivent sans interruption.",
+      "difficulte": 1,
+      "tags": [
+        "spectre",
+        "lumiere-blanche"
+      ]
+    },
+    {
+      "id": "PC3E-P14-004",
+      "lecon": "L'analyse de la lumière : décomposition, spectres et prolongements invisibles",
+      "type": "definition",
+      "recto": "Quelle radiation de la lumière blanche un prisme dévie-t-il le plus ?",
+      "verso": "Le violet est le plus dévié, le rouge le moins dévié.",
+      "difficulte": 2,
+      "tags": [
+        "prisme",
+        "deviation"
+      ]
+    },
+    {
+      "id": "PC3E-P14-005",
+      "lecon": "L'analyse de la lumière : décomposition, spectres et prolongements invisibles",
+      "type": "definition",
+      "recto": "Quels dispositifs permettent de décomposer la lumière blanche ?",
+      "verso": "Le prisme, le réseau, un verre d'eau, un miroir plongé dans une cuvette d'eau, un disque DVD, une plume d'oiseau, les gouttes de pluie.",
+      "difficulte": 1,
+      "tags": [
+        "dispositifs",
+        "decomposition"
+      ]
+    },
+    {
+      "id": "PC3E-P14-006",
+      "lecon": "L'analyse de la lumière : décomposition, spectres et prolongements invisibles",
+      "type": "definition",
+      "recto": "Qu'est-ce qu'une lumière polychromatique ?",
+      "verso": "C'est une lumière faite de plusieurs radiations, comme la lumière blanche ; un prisme la décompose.",
+      "difficulte": 1,
+      "tags": [
+        "polychromatique"
+      ]
+    },
+    {
+      "id": "PC3E-P14-007",
+      "lecon": "L'analyse de la lumière : décomposition, spectres et prolongements invisibles",
+      "type": "definition",
+      "recto": "Qu'est-ce qu'une lumière monochromatique ?",
+      "verso": "C'est une lumière faite d'une seule radiation : un prisme ne la décompose pas. Exemple : le pointeur laser. La lampe à vapeur de sodium, qui donne pratiquement une seule raie jaune (un doublet), est quasi monochromatique.",
+      "difficulte": 2,
+      "tags": [
+        "monochromatique"
+      ]
+    },
+    {
+      "id": "PC3E-P14-008",
+      "lecon": "L'analyse de la lumière : décomposition, spectres et prolongements invisibles",
+      "type": "definition",
+      "recto": "Comment l'arc-en-ciel se forme-t-il ?",
+      "verso": "Chaque goutte de pluie en suspension décompose la lumière blanche du Soleil et la renvoie vers nous : l'arc-en-ciel est le spectre de la lumière du Soleil.",
+      "difficulte": 2,
+      "tags": [
+        "arc-en-ciel",
+        "dispersion"
+      ]
+    },
+    {
+      "id": "PC3E-P14-009",
+      "lecon": "L'analyse de la lumière : décomposition, spectres et prolongements invisibles",
+      "type": "definition",
+      "recto": "Quelles sources donnent un spectre continu, où toutes les couleurs se suivent sans trou ?",
+      "verso": "Tout solide ou liquide porté à haute température : filament d'ampoule, flamme de bougie, braise, Soleil.",
+      "difficulte": 2,
+      "tags": [
+        "spectre-continu"
+      ]
+    },
+    {
+      "id": "PC3E-P14-010",
+      "lecon": "L'analyse de la lumière : décomposition, spectres et prolongements invisibles",
+      "type": "definition",
+      "recto": "A quoi ressemble le spectre de raies d'une lampe à vapeur ?",
+      "verso": "A quelques traits colorés très fins sur un fond noir, séparés par des zones sombres. Chaque gaz possède sa propre série de raies, comme une signature.",
+      "difficulte": 2,
+      "tags": [
+        "spectre-de-raies"
+      ]
+    },
+    {
+      "id": "PC3E-P14-011",
+      "lecon": "L'analyse de la lumière : décomposition, spectres et prolongements invisibles",
+      "type": "formule",
+      "recto": "Comment le spectre d'une source incandescente évolue-t-il quand sa température augmente ?",
+      "verso": "Plus la source est chaude, plus son spectre s'étend vers le violet et plus sa lumière paraît blanche. Peu chauffé, un filament n'émet qu'un rouge orangé sombre.",
+      "difficulte": 2,
+      "tags": [
+        "temperature",
+        "spectre-continu"
+      ]
+    },
+    {
+      "id": "PC3E-P14-012",
+      "lecon": "L'analyse de la lumière : décomposition, spectres et prolongements invisibles",
+      "type": "definition",
+      "recto": "Quel est le rôle d'un filtre coloré placé sur le trajet d'une lumière ?",
+      "verso": "Il ne laisse passer (transmet) qu'une partie des radiations reçues et absorbe les autres.",
+      "difficulte": 1,
+      "tags": [
+        "filtre"
+      ]
+    },
+    {
+      "id": "PC3E-P14-013",
+      "lecon": "L'analyse de la lumière : décomposition, spectres et prolongements invisibles",
+      "type": "definition",
+      "recto": "Pourquoi la lumière vue à travers un filtre rouge n'est-elle pas le spectre de cette lumière ?",
+      "verso": "A travers le filtre, on voit une plage rouge uniforme. Le spectre ne s'obtient qu'en faisant passer la lumière transmise dans un prisme.",
+      "difficulte": 3,
+      "tags": [
+        "filtre",
+        "spectre",
+        "piege"
+      ]
+    },
+    {
+      "id": "PC3E-P14-014",
+      "lecon": "L'analyse de la lumière : décomposition, spectres et prolongements invisibles",
+      "type": "definition",
+      "recto": "Quelles sont les deux couleurs limites du domaine visible ?",
+      "verso": "Le violet et le rouge.",
+      "difficulte": 1,
+      "tags": [
+        "visible",
+        "limites"
+      ]
+    },
+    {
+      "id": "PC3E-P14-015",
+      "lecon": "L'analyse de la lumière : décomposition, spectres et prolongements invisibles",
+      "type": "definition",
+      "recto": "Comment s'appellent les rayonnements invisibles situés juste au-delà du rouge et juste au-delà du violet ?",
+      "verso": "Au-delà du rouge : l'infrarouge (il chauffe). Au-delà du violet : l'ultraviolet (il brûle la peau).",
+      "difficulte": 1,
+      "tags": [
+        "infrarouge",
+        "ultraviolet"
+      ]
+    },
+    {
+      "id": "PC3E-P14-016",
+      "lecon": "L'analyse de la lumière : décomposition, spectres et prolongements invisibles",
+      "type": "definition",
+      "recto": "Quels rayonnements prolongent encore le spectre au-delà de l'infrarouge et de l'ultraviolet ?",
+      "verso": "Les ondes radio, les ondes radar, les micro-ondes, les rayons X et les rayons gamma. Avec le visible, ils forment les ondes électromagnétiques.",
+      "difficulte": 2,
+      "tags": [
+        "ondes-electromagnetiques"
+      ]
+    },
+    {
+      "id": "PC3E-P14-017",
+      "lecon": "L'analyse de la lumière : décomposition, spectres et prolongements invisibles",
+      "type": "definition",
+      "recto": "Quelles sont des applications du rayonnement infrarouge ?",
+      "verso": "La télécommande du téléviseur, la caméra de vision nocturne, la caméra thermique, la lampe chauffante d'un poussinier, l'alarme antivol.",
+      "difficulte": 2,
+      "tags": [
+        "infrarouge",
+        "applications"
+      ]
+    },
+    {
+      "id": "PC3E-P14-018",
+      "lecon": "L'analyse de la lumière : décomposition, spectres et prolongements invisibles",
+      "type": "definition",
+      "recto": "Quelles sont des applications du rayonnement ultraviolet ?",
+      "verso": "La stérilisation du matériel dans un centre de santé, la lampe qui démasque les faux billets, le bronzage artificiel.",
+      "difficulte": 2,
+      "tags": [
+        "ultraviolet",
+        "applications"
+      ]
+    },
+    {
+      "id": "PC3E-P14-019",
+      "lecon": "L'analyse de la lumière : décomposition, spectres et prolongements invisibles",
+      "type": "definition",
+      "recto": "Pourquoi est-il faux de dire que le spectre de la lumière blanche contient seulement sept couleurs ?",
+      "verso": "Il en contient une infinité qui glissent l'une dans l'autre ; les sept couleurs ne sont que des couleurs dominantes, des repères commodes.",
+      "difficulte": 3,
+      "tags": [
+        "spectre",
+        "piege"
+      ]
+    },
+    {
+      "id": "PC3E-P14-020",
+      "lecon": "La synthèse de la lumière : recomposition et synthèse additive",
+      "type": "definition",
+      "recto": "Avec quels moyens peut-on recomposer la lumière blanche ?",
+      "verso": "Avec le disque de Newton ou la rosace mis en rotation rapide, ou en superposant les trois lumières primaires.",
+      "difficulte": 1,
+      "tags": [
+        "recomposition"
+      ]
+    },
+    {
+      "id": "PC3E-P14-021",
+      "lecon": "La synthèse de la lumière : recomposition et synthèse additive",
+      "type": "definition",
+      "recto": "Pourquoi le disque de Newton en rotation rapide paraît-il blanchâtre ?",
+      "verso": "Les couleurs de ses secteurs se succèdent trop vite pour être distinguées : l'oeil additionne les lumières reçues coup sur coup.",
+      "difficulte": 2,
+      "tags": [
+        "disque-de-newton"
+      ]
+    },
+    {
+      "id": "PC3E-P14-022",
+      "lecon": "La synthèse de la lumière : recomposition et synthèse additive",
+      "type": "definition",
+      "recto": "Pourquoi le disque de Newton ne donne-t-il qu'un blanc grisâtre ?",
+      "verso": "Les peintures des secteurs absorbent une partie de la lumière reçue, et l'oeil ne reçoit la lumière d'un secteur que pendant une fraction du tour : le blanc obtenu est plus faible en éclat.",
+      "difficulte": 3,
+      "tags": [
+        "disque-de-newton"
+      ]
+    },
+    {
+      "id": "PC3E-P14-023",
+      "lecon": "La synthèse de la lumière : recomposition et synthèse additive",
+      "type": "definition",
+      "recto": "En quoi consiste la synthèse additive de la lumière ?",
+      "verso": "Elle consiste à superposer des lumières colorées (lampes, taches sur un mur, pixels d'écran).",
+      "difficulte": 1,
+      "tags": [
+        "synthese-additive"
+      ]
+    },
+    {
+      "id": "PC3E-P14-024",
+      "lecon": "La synthèse de la lumière : recomposition et synthèse additive",
+      "type": "formule",
+      "recto": "En synthèse additive, quelle lumière donne la superposition des trois couleurs primaires ?",
+      "verso": "Le blanc : rouge $+$ vert $+$ bleu $=$ blanc.",
+      "difficulte": 1,
+      "tags": [
+        "couleurs-primaires"
+      ]
+    },
+    {
+      "id": "PC3E-P14-025",
+      "lecon": "La synthèse de la lumière : recomposition et synthèse additive",
+      "type": "formule",
+      "recto": "En synthèse additive, quelles couleurs secondaires donnent les couleurs primaires superposées deux à deux ?",
+      "verso": "Rouge $+$ vert $=$ jaune ; vert $+$ bleu $=$ cyan ; rouge $+$ bleu $=$ magenta.",
+      "difficulte": 2,
+      "tags": [
+        "couleurs-secondaires"
+      ]
+    },
+    {
+      "id": "PC3E-P14-026",
+      "lecon": "La synthèse de la lumière : recomposition et synthèse additive",
+      "type": "formule",
+      "recto": "Quels sont les trois couples de lumières complémentaires ?",
+      "verso": "Rouge et cyan ; vert et magenta ; bleu et jaune. Deux lumières sont complémentaires lorsque leur superposition donne du blanc.",
+      "difficulte": 2,
+      "tags": [
+        "complementaires"
+      ]
+    },
+    {
+      "id": "PC3E-P14-027",
+      "lecon": "La synthèse de la lumière : recomposition et synthèse additive",
+      "type": "definition",
+      "recto": "Pourquoi ne faut-il pas confondre le disque DVD et le disque de Newton ?",
+      "verso": "Le disque DVD décompose la lumière blanche ; le disque de Newton, en tournant vite, la recompose.",
+      "difficulte": 3,
+      "tags": [
+        "disque-de-newton",
+        "piege"
+      ]
+    },
+    {
+      "id": "PC3E-P14-028",
+      "lecon": "La couleur des objets",
+      "type": "definition",
+      "recto": "De quoi dépend la couleur que l'on perçoit d'un objet ?",
+      "verso": "De la lumière qui l'éclaire : un objet n'a pas de couleur en soi.",
+      "difficulte": 1,
+      "tags": [
+        "couleur-objet"
+      ]
+    },
+    {
+      "id": "PC3E-P14-029",
+      "lecon": "La couleur des objets",
+      "type": "definition",
+      "recto": "Que fait un objet éclairé des radiations qu'il reçoit ?",
+      "verso": "Il diffuse vers nos yeux une partie des radiations reçues et absorbe les autres. La couleur perçue est celle de la lumière diffusée.",
+      "difficulte": 2,
+      "tags": [
+        "diffusion",
+        "absorption"
+      ]
+    },
+    {
+      "id": "PC3E-P14-030",
+      "lecon": "La couleur des objets",
+      "type": "formule",
+      "recto": "Quelle règle donne la couleur que paraît un objet éclairé ?",
+      "verso": "Il paraît de la couleur des radiations à la fois présentes dans la lumière qui l'éclaire et diffusables par sa surface. S'il n'en reste aucune, il paraît noir.",
+      "difficulte": 2,
+      "tags": [
+        "couleur-percue",
+        "regle"
+      ]
+    },
+    {
+      "id": "PC3E-P14-031",
+      "lecon": "La couleur des objets",
+      "type": "definition",
+      "recto": "Quelles radiations diffusent un objet jaune, un objet cyan et un objet magenta ?",
+      "verso": "Jaune : le rouge et le vert. Cyan : le vert et le bleu. Magenta : le rouge et le bleu.",
+      "difficulte": 2,
+      "tags": [
+        "couleurs-secondaires",
+        "diffusion"
+      ]
+    },
+    {
+      "id": "PC3E-P14-032",
+      "lecon": "La couleur des objets",
+      "type": "definition",
+      "recto": "Pourquoi un objet jaune éclairé en lumière rouge ne paraît-il pas noir ?",
+      "verso": "Un objet jaune diffuse le rouge et le vert : il diffuse donc le rouge reçu et paraît rouge.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "couleur-percue"
+      ]
+    },
+    {
+      "id": "PC3E-P14-033",
+      "lecon": "La couleur des objets",
+      "type": "definition",
+      "recto": "Quelle couleur paraît un objet blanc éclairé par une lumière colorée ?",
+      "verso": "Il diffuse toutes les radiations reçues : il prend la couleur de la lumière qui l'éclaire (sous un tube vert, un mur blanc paraît vert).",
+      "difficulte": 2,
+      "tags": [
+        "objet-blanc"
+      ]
+    },
+    {
+      "id": "PC3E-P14-034",
+      "lecon": "La couleur des objets",
+      "type": "definition",
+      "recto": "Pourquoi un objet noir s'échauffe-t-il plus vite au soleil qu'un objet blanc ?",
+      "verso": "Il absorbe toutes les radiations reçues, et l'énergie de la lumière absorbée reste dans le corps sous forme de chaleur ; le blanc diffuse presque tout.",
+      "difficulte": 2,
+      "tags": [
+        "objet-noir",
+        "echauffement"
+      ]
+    },
+    {
+      "id": "PC3E-P14-035",
+      "lecon": "La couleur des objets",
+      "type": "definition",
+      "recto": "Dans un sujet, que désigne la couleur propre (ou couleur réelle) d'un objet ?",
+      "verso": "Sa couleur à la lumière du jour, c'est-à-dire en lumière blanche.",
+      "difficulte": 1,
+      "tags": [
+        "couleur-propre",
+        "vocabulaire"
+      ]
+    },
+    {
+      "id": "PC3E-P14-036",
+      "lecon": "La couleur des objets",
+      "type": "definition",
+      "recto": "Pourquoi un pagne rouge éclairé par une lampe verte paraît-il noir ?",
+      "verso": "Il ne diffuse que le rouge, absent de la lumière verte : aucune radiation ne part vers l'oeil, et le noir est ce que voit l'oeil quand rien ne lui parvient.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "objet-noir"
+      ]
+    },
+    {
+      "id": "PC3E-P14-037",
+      "lecon": "La couleur des objets",
+      "type": "definition",
+      "recto": "Quelle différence y a-t-il entre l'action d'un filtre coloré et celle d'un objet coloré sur la lumière ?",
+      "verso": "Le filtre transmet une partie des radiations, l'objet en diffuse une partie ; tous deux absorbent le reste. La lumière traverse le filtre et rebrousse chemin sur l'objet.",
+      "difficulte": 3,
+      "tags": [
+        "filtre",
+        "diffusion"
+      ]
+    }
+  ]
+}

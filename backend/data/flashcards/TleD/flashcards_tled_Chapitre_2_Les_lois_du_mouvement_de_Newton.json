@@ -1,0 +1,428 @@
+{
+  "matiere": "Physique-Chimie",
+  "partie": "Physique",
+  "niveau": "Terminale D",
+  "chapitre": "Physique, Chapitre 2 : Les lois du mouvement de Newton",
+  "source": "pc/tled/Chapitre_2_Les_lois_du_mouvement_de_Newton",
+  "nombre_cartes": 36,
+  "cartes": [
+    {
+      "id": "PCTD-P02-001",
+      "lecon": "Les référentiels et le référentiel galiléen",
+      "type": "definition",
+      "recto": "Comment est défini le référentiel de Copernic, ou héliocentrique ?",
+      "verso": "Son origine est au centre d'inertie du système solaire, très proche du centre du Soleil, et ses axes sont dirigés vers trois étoiles lointaines considérées comme fixes. Il sert à l'étude du mouvement des planètes.",
+      "difficulte": 1,
+      "tags": [
+        "referentiel-heliocentrique"
+      ]
+    },
+    {
+      "id": "PCTD-P02-002",
+      "lecon": "Les référentiels et le référentiel galiléen",
+      "type": "definition",
+      "recto": "Comment est défini le référentiel géocentrique ?",
+      "verso": "Son origine est au centre de la Terre et ses axes sont parallèles à ceux du référentiel de Copernic : il ne tourne pas avec la Terre. Il sert à l'étude de la Lune et des satellites artificiels.",
+      "difficulte": 1,
+      "tags": [
+        "referentiel-geocentrique"
+      ]
+    },
+    {
+      "id": "PCTD-P02-003",
+      "lecon": "Les référentiels et le référentiel galiléen",
+      "type": "definition",
+      "recto": "En mécanique, qu'appelle-t-on un référentiel galiléen ?",
+      "verso": "Un référentiel dans lequel le principe de l'inertie est vérifié : tout système isolé ou pseudo-isolé y possède un vecteur vitesse constant.",
+      "difficulte": 1,
+      "tags": [
+        "referentiel-galileen"
+      ]
+    },
+    {
+      "id": "PCTD-P02-004",
+      "lecon": "Les référentiels et le référentiel galiléen",
+      "type": "definition",
+      "recto": "Pour quelles durées d'étude les référentiels géocentrique et terrestre peuvent-ils être considérés comme galiléens ?",
+      "verso": "Le géocentrique, pour des durées courtes devant l'année ; le terrestre, pour des durées courtes devant la journée. Le référentiel de Copernic est galiléen.",
+      "difficulte": 2,
+      "tags": [
+        "referentiel-galileen"
+      ]
+    },
+    {
+      "id": "PCTD-P02-005",
+      "lecon": "Les référentiels et le référentiel galiléen",
+      "type": "definition",
+      "recto": "Quel mouvement doit avoir un référentiel par rapport à un référentiel galiléen pour être lui-même galiléen ?",
+      "verso": "Un mouvement de translation rectiligne uniforme. Un référentiel accéléré, ou en rotation, n'est pas galiléen.",
+      "difficulte": 2,
+      "tags": [
+        "referentiel-galileen",
+        "translation"
+      ]
+    },
+    {
+      "id": "PCTD-P02-006",
+      "lecon": "Les référentiels et le référentiel galiléen",
+      "type": "definition",
+      "recto": "Pourquoi le référentiel terrestre n'est-il galiléen qu'en première approximation ?",
+      "verso": "Il tourne avec la Terre, donc il est accéléré (environ $0{,}034~\\mathrm{m/s^2}$ à l'équateur, trois millièmes de $g$). L'écart est indécelable sur quelques secondes : on écrit « référentiel terrestre supposé galiléen ».",
+      "difficulte": 3,
+      "tags": [
+        "referentiel-terrestre"
+      ]
+    },
+    {
+      "id": "PCTD-P02-007",
+      "lecon": "Les référentiels et le référentiel galiléen",
+      "type": "definition",
+      "recto": "Quelle distinction fait-on entre le référentiel géocentrique et le référentiel terrestre ?",
+      "verso": "Tous deux sont liés à la Terre, mais le géocentrique a pour origine le centre de la Terre et des axes qui ne tournent pas, tandis que le terrestre est lié au sol et tourne avec la Terre.",
+      "difficulte": 3,
+      "tags": [
+        "referentiel-geocentrique",
+        "piege"
+      ]
+    },
+    {
+      "id": "PCTD-P02-008",
+      "lecon": "La première loi de Newton, le principe de l'inertie",
+      "type": "formule",
+      "recto": "Que dit la première loi de Newton, ou principe de l'inertie ?",
+      "verso": "Dans un référentiel galiléen, le centre d'inertie de tout système isolé ou pseudo-isolé est animé d'un mouvement rectiligne uniforme, ou reste au repos : somme vectorielle des forces extérieures nulle équivaut à $\\vec{v}_G$ constant.",
+      "difficulte": 1,
+      "tags": [
+        "principe-inertie"
+      ]
+    },
+    {
+      "id": "PCTD-P02-009",
+      "lecon": "La première loi de Newton, le principe de l'inertie",
+      "type": "formule",
+      "recto": "Comment définit-on le vecteur quantité de mouvement $\\vec{p}$ d'un système de masse $m$ ?",
+      "verso": "$\\vec{p} = m\\,\\vec{v}_G$, en $\\mathrm{kg \\cdot m/s}$ ; pour un système pseudo-isolé dans un référentiel galiléen, $\\vec{p}$ se conserve.",
+      "difficulte": 1,
+      "tags": [
+        "quantite-de-mouvement"
+      ]
+    },
+    {
+      "id": "PCTD-P02-010",
+      "lecon": "La première loi de Newton, le principe de l'inertie",
+      "type": "formule",
+      "recto": "Dans un référentiel galiléen, que peut-on conclure si le centre d'inertie d'un système est au repos ou en mouvement rectiligne uniforme ?",
+      "verso": "Que la somme vectorielle des forces extérieures est nulle (réciproque du principe de l'inertie). C'est ce qui permet de calculer une force inconnue à partir d'un mouvement observé.",
+      "difficulte": 2,
+      "tags": [
+        "principe-inertie",
+        "reciproque"
+      ]
+    },
+    {
+      "id": "PCTD-P02-011",
+      "lecon": "La première loi de Newton, le principe de l'inertie",
+      "type": "definition",
+      "recto": "En mécanique, qu'appelle-t-on l'inertie d'un corps ?",
+      "verso": "La tendance d'un corps à conserver son vecteur vitesse. Elle se mesure par la masse, qui ne dépend ni du lieu ni du référentiel.",
+      "difficulte": 2,
+      "tags": [
+        "inertie",
+        "masse"
+      ]
+    },
+    {
+      "id": "PCTD-P02-012",
+      "lecon": "La première loi de Newton, le principe de l'inertie",
+      "type": "definition",
+      "recto": "Pourquoi un mobile en mouvement circulaire uniforme n'est-il pas pseudo-isolé ?",
+      "verso": "La valeur de sa vitesse est constante, mais sa direction change : le vecteur vitesse n'est pas constant, donc la somme des forces n'est pas nulle. Il ne faut pas confondre « vitesse constante » et « vecteur vitesse constant ».",
+      "difficulte": 3,
+      "tags": [
+        "principe-inertie",
+        "piege"
+      ]
+    },
+    {
+      "id": "PCTD-P02-013",
+      "lecon": "La première loi de Newton, le principe de l'inertie",
+      "type": "definition",
+      "recto": "Que faut-il soupçonner quand un corps n'a pas un mouvement rectiligne uniforme alors que le bilan des forces donne une somme nulle ?",
+      "verso": "Qu'une force a été oubliée (le plus souvent un frottement ou la tension d'un fil), ou que le référentiel n'est pas galiléen.",
+      "difficulte": 2,
+      "tags": [
+        "principe-inertie",
+        "bilan-des-forces"
+      ]
+    },
+    {
+      "id": "PCTD-P02-014",
+      "lecon": "La deuxième loi de Newton, le théorème du centre d'inertie",
+      "type": "formule",
+      "recto": "Que dit le principe fondamental de la dynamique pour un point matériel ?",
+      "verso": "Dans un référentiel galiléen, la somme vectorielle des forces appliquées au point matériel est égale à la dérivée de sa quantité de mouvement : $\\dfrac{d\\vec{p}}{dt}$, soit $m\\,\\vec{a}$ si la masse est constante.",
+      "difficulte": 2,
+      "tags": [
+        "pfd",
+        "deuxieme-loi"
+      ]
+    },
+    {
+      "id": "PCTD-P02-015",
+      "lecon": "La deuxième loi de Newton, le théorème du centre d'inertie",
+      "type": "formule",
+      "recto": "Que dit le théorème du centre d'inertie pour un solide de masse $m$ ?",
+      "verso": "Dans un référentiel galiléen, la somme vectorielle des forces extérieures appliquées au solide est égale à $m\\,\\vec{a}_G$, produit de sa masse par l'accélération de son centre d'inertie $G$.",
+      "difficulte": 1,
+      "tags": [
+        "tci",
+        "deuxieme-loi"
+      ]
+    },
+    {
+      "id": "PCTD-P02-016",
+      "lecon": "La deuxième loi de Newton, le théorème du centre d'inertie",
+      "type": "definition",
+      "recto": "Quelle différence y a-t-il entre le principe fondamental de la dynamique et le théorème du centre d'inertie ?",
+      "verso": "Le premier s'applique à un objet ponctuel, dont toutes les parties ont le même mouvement ; le second à un solide ou à un système matériel étendu, et il ne renseigne que sur le mouvement de son centre d'inertie $G$.",
+      "difficulte": 3,
+      "tags": [
+        "pfd",
+        "tci"
+      ]
+    },
+    {
+      "id": "PCTD-P02-017",
+      "lecon": "La deuxième loi de Newton, le théorème du centre d'inertie",
+      "type": "definition",
+      "recto": "Quelles sont la direction et le sens du vecteur accélération $\\vec{a}_G$ du centre d'inertie d'un solide, dans un référentiel galiléen ?",
+      "verso": "Ceux de la somme vectorielle des forces extérieures ; sa norme vaut la norme de cette somme divisée par la masse $m$, en $\\mathrm{m/s^2}$.",
+      "difficulte": 2,
+      "tags": [
+        "tci",
+        "acceleration"
+      ]
+    },
+    {
+      "id": "PCTD-P02-018",
+      "lecon": "La deuxième loi de Newton, le théorème du centre d'inertie",
+      "type": "formule",
+      "recto": "Quelle relation entre unités la deuxième loi de Newton impose-t-elle pour le newton ?",
+      "verso": "$1~\\mathrm{N} = 1~\\mathrm{kg \\cdot m/s^2}$ : le newton se construit sur le kilogramme, le mètre et la seconde.",
+      "difficulte": 1,
+      "tags": [
+        "unites",
+        "newton"
+      ]
+    },
+    {
+      "id": "PCTD-P02-019",
+      "lecon": "La deuxième loi de Newton, le théorème du centre d'inertie",
+      "type": "definition",
+      "recto": "Dans la deuxième loi de Newton, pourquoi ne doit-on jamais écrire la somme des forces extérieures égale à $m\\,\\vec{v}_G$ ?",
+      "verso": "Parce que c'est l'accélération $\\vec{a}_G$ qui figure dans la loi, jamais la vitesse : une vitesse constante correspond à une somme de forces nulle.",
+      "difficulte": 3,
+      "tags": [
+        "tci",
+        "piege"
+      ]
+    },
+    {
+      "id": "PCTD-P02-020",
+      "lecon": "La deuxième loi de Newton, le théorème du centre d'inertie",
+      "type": "definition",
+      "recto": "Que signifient les sigles RFD, PFD et TCI dans les sujets de mécanique ?",
+      "verso": "RFD (relation fondamentale de la dynamique) et PFD (principe fondamental de la dynamique) désignent la deuxième loi de Newton ; TCI désigne le théorème du centre d'inertie.",
+      "difficulte": 1,
+      "tags": [
+        "vocabulaire"
+      ]
+    },
+    {
+      "id": "PCTD-P02-021",
+      "lecon": "La troisième loi de Newton, le principe des actions réciproques",
+      "type": "formule",
+      "recto": "Que dit la troisième loi de Newton, ou principe des actions réciproques ?",
+      "verso": "Si un corps A exerce sur un corps B une force $\\vec{F}_{A/B}$, B exerce simultanément sur A une force $\\vec{F}_{B/A}$ de même droite d'action, de même intensité et de sens contraire : $\\vec{F}_{A/B} = -\\,\\vec{F}_{B/A}$.",
+      "difficulte": 1,
+      "tags": [
+        "actions-reciproques",
+        "troisieme-loi"
+      ]
+    },
+    {
+      "id": "PCTD-P02-022",
+      "lecon": "La troisième loi de Newton, le principe des actions réciproques",
+      "type": "definition",
+      "recto": "Quelles trois conditions caractérisent les deux forces d'une paire d'actions réciproques ?",
+      "verso": "Elles s'exercent sur deux corps différents, elles ont la même droite d'action (celle qui joint les deux corps) et elles sont simultanées, sans cause ni effet.",
+      "difficulte": 2,
+      "tags": [
+        "actions-reciproques"
+      ]
+    },
+    {
+      "id": "PCTD-P02-023",
+      "lecon": "La troisième loi de Newton, le principe des actions réciproques",
+      "type": "definition",
+      "recto": "Dans quels référentiels le principe des actions réciproques est-il valable ?",
+      "verso": "Dans tous les référentiels, que les corps soient au repos ou en mouvement, en contact ou à distance : c'est la seule des trois lois de Newton qui n'exige pas un référentiel galiléen.",
+      "difficulte": 2,
+      "tags": [
+        "actions-reciproques",
+        "validite"
+      ]
+    },
+    {
+      "id": "PCTD-P02-024",
+      "lecon": "La troisième loi de Newton, le principe des actions réciproques",
+      "type": "formule",
+      "recto": "Comment évolue la quantité de mouvement totale d'un système isolé de deux corps, par exemple lors d'un choc ?",
+      "verso": "Elle se conserve : $\\vec{p}_{\\text{avant}} = \\vec{p}_{\\text{après}}$, car les forces intérieures $\\vec{F}_{A/B}$ et $\\vec{F}_{B/A}$ s'annulent deux à deux.",
+      "difficulte": 2,
+      "tags": [
+        "quantite-de-mouvement",
+        "conservation"
+      ]
+    },
+    {
+      "id": "PCTD-P02-025",
+      "lecon": "La troisième loi de Newton, le principe des actions réciproques",
+      "type": "definition",
+      "recto": "Quelle erreur commet-on en plaçant la force exercée par une caisse sur un plateau dans le bilan des forces de la caisse ?",
+      "verso": "On met dans le bilan d'un système une force exercée par ce système : elle s'applique au plateau, pas à la caisse. Les deux forces d'une paire ne figurent jamais dans la même relation vectorielle.",
+      "difficulte": 3,
+      "tags": [
+        "bilan-des-forces",
+        "piege"
+      ]
+    },
+    {
+      "id": "PCTD-P02-026",
+      "lecon": "La troisième loi de Newton, le principe des actions réciproques",
+      "type": "definition",
+      "recto": "Pourquoi le poids d'un corps posé sur un sol horizontal et la réaction du sol ne forment-ils pas une paire d'actions réciproques ?",
+      "verso": "Ces deux forces sont opposées, mais elles s'exercent sur le même corps : deux forces opposées ne forment pas nécessairement une paire.",
+      "difficulte": 3,
+      "tags": [
+        "actions-reciproques"
+      ]
+    },
+    {
+      "id": "PCTD-P02-027",
+      "lecon": "La troisième loi de Newton, le principe des actions réciproques",
+      "type": "definition",
+      "recto": "Quelle force fait avancer une moto ?",
+      "verso": "La force exercée par la route sur la roue arrière, dirigée vers l'avant ; sa partenaire est la force exercée par la roue sur la route. Le moteur, intérieur au système, n'apparaît pas dans le bilan.",
+      "difficulte": 2,
+      "tags": [
+        "actions-reciproques",
+        "moto"
+      ]
+    },
+    {
+      "id": "PCTD-P02-028",
+      "lecon": "Résoudre un problème de dynamique",
+      "type": "definition",
+      "recto": "Dans un problème de dynamique, quelle grandeur la deuxième loi de Newton fournit-elle directement ?",
+      "verso": "Une accélération, jamais directement une vitesse ou une distance : on remonte ensuite au mouvement par les équations horaires, dont les constantes $v_0$ et $x_0$ sont fixées par les conditions initiales.",
+      "difficulte": 2,
+      "tags": [
+        "dynamique",
+        "conditions-initiales"
+      ]
+    },
+    {
+      "id": "PCTD-P02-029",
+      "lecon": "Résoudre un problème de dynamique",
+      "type": "formule",
+      "recto": "Pour un solide qui glisse sans frottement sur un plan incliné d'angle $\\alpha$, quelles sont la réaction normale $R_N$ et l'accélération $a$ ?",
+      "verso": "$R_N = mg\\cos\\alpha$ et $a = g\\sin\\alpha$, dans un référentiel terrestre supposé galiléen ; l'accélération ne dépend pas de la masse.",
+      "difficulte": 2,
+      "tags": [
+        "plan-incline"
+      ]
+    },
+    {
+      "id": "PCTD-P02-030",
+      "lecon": "Résoudre un problème de dynamique",
+      "type": "formule",
+      "recto": "Pour un solide qui descend un plan incliné d'angle $\\alpha$ en subissant une force de frottement d'intensité $f$, quelle est l'accélération ?",
+      "verso": "$a = g\\sin\\alpha - \\dfrac{f}{m}$, l'axe étant orienté dans le sens de la descente ; en montée, $a = -\\left(g\\sin\\alpha + \\dfrac{f}{m}\\right)$.",
+      "difficulte": 2,
+      "tags": [
+        "plan-incline",
+        "frottement"
+      ]
+    },
+    {
+      "id": "PCTD-P02-031",
+      "lecon": "Résoudre un problème de dynamique",
+      "type": "definition",
+      "recto": "Pour deux solides reliés par un fil inextensible passant sur une poulie idéale, qu'ont en commun leurs accélérations et les tensions du fil ?",
+      "verso": "Le fil inextensible donne aux deux accélérations la même valeur ; la poulie idéale et le fil sans masse donnent aux deux tensions la même intensité. On applique la deuxième loi à chaque solide séparément.",
+      "difficulte": 2,
+      "tags": [
+        "solides-relies",
+        "tension"
+      ]
+    },
+    {
+      "id": "PCTD-P02-032",
+      "lecon": "Résoudre un problème de dynamique",
+      "type": "formule",
+      "recto": "Pour un solide de masse $m$ dont le centre d'inertie décrit un cercle de rayon $r$, que vaut la somme des composantes normales des forces ?",
+      "verso": "Elle vaut $m\\dfrac{v^{2}}{r} = m\\,r\\,\\omega^{2}$, les forces étant projetées sur $\\vec{u}_n$, dirigé vers le centre (référentiel galiléen) ; dans un mouvement circulaire uniforme, la somme des forces est dirigée vers le centre.",
+      "difficulte": 2,
+      "tags": [
+        "mouvement-circulaire"
+      ]
+    },
+    {
+      "id": "PCTD-P02-033",
+      "lecon": "Résoudre un problème de dynamique",
+      "type": "definition",
+      "recto": "Pourquoi ne faut-il jamais dessiner le terme $m\\dfrac{v^{2}}{r}$ dans le bilan des forces d'un mouvement circulaire ?",
+      "verso": "Parce que ce n'est pas une force : c'est le produit de la masse par l'accélération normale, qui apparaît du côté « $m\\,\\vec{a}$ » de la deuxième loi.",
+      "difficulte": 3,
+      "tags": [
+        "mouvement-circulaire",
+        "piege"
+      ]
+    },
+    {
+      "id": "PCTD-P02-034",
+      "lecon": "Résoudre un problème de dynamique",
+      "type": "formule",
+      "recto": "Dans un ascenseur, avec un axe vertical ascendant, quelle est l'intensité $T$ de la force exercée sur un corps de masse $m$ par le câble ou le plancher ?",
+      "verso": "$T - mg = m\\,a_z$, donc $T = m\\left(g + a_z\\right)$, avec $a_z$ algébrique. Le poids ne change pas : c'est la réaction qui varie, et c'est elle que lit le pèse-personne.",
+      "difficulte": 2,
+      "tags": [
+        "ascenseur",
+        "reaction"
+      ]
+    },
+    {
+      "id": "PCTD-P02-035",
+      "lecon": "Résoudre un problème de dynamique",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on la vitesse limite d'un mobile soumis à un frottement qui croît avec la vitesse ?",
+      "verso": "La vitesse constante $v_{\\lim}$ atteinte quand l'accélération s'annule ; le mouvement devient rectiligne uniforme et $v_{\\lim}$ s'obtient en écrivant que la somme des forces extérieures est nulle. Chute verticale avec $f = k\\,v$ : $v_{\\lim} = \\dfrac{mg}{k}$.",
+      "difficulte": 2,
+      "tags": [
+        "vitesse-limite"
+      ]
+    },
+    {
+      "id": "PCTD-P02-036",
+      "lecon": "Résoudre un problème de dynamique",
+      "type": "formule",
+      "recto": "Pour une route de pente $10\\ \\%$, quelle est la valeur de $\\sin\\alpha$ ?",
+      "verso": "$\\sin\\alpha = 0{,}10$ : la route s'élève de $10~\\mathrm{m}$ pour $100~\\mathrm{m}$ parcourus le long de la route.",
+      "difficulte": 1,
+      "tags": [
+        "pente"
+      ]
+    }
+  ]
+}

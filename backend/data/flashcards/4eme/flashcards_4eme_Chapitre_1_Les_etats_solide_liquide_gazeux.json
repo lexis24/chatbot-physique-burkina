@@ -1,0 +1,462 @@
+{
+  "matiere": "Physique-Chimie",
+  "partie": "Physique",
+  "niveau": "4ème",
+  "chapitre": "Physique, Chapitre 1 : Les états solide, liquide et gazeux",
+  "source": "pc/4eme/Chapitre_1_Les_etats_solide_liquide_gazeux",
+  "nombre_cartes": 38,
+  "cartes": [
+    {
+      "id": "PC4E-P01-001",
+      "lecon": "Les trois états de la matière et les propriétés des solides",
+      "type": "definition",
+      "recto": "Quels sont les trois états physiques de la matière ?",
+      "verso": "L'état solide, l'état liquide et l'état gazeux.",
+      "difficulte": 1,
+      "tags": [
+        "etats-de-la-matiere"
+      ]
+    },
+    {
+      "id": "PC4E-P01-002",
+      "lecon": "Les trois états de la matière et les propriétés des solides",
+      "type": "definition",
+      "recto": "Quelles sont les propriétés caractéristiques d'un solide ?",
+      "verso": "Il a une forme propre et un volume propre (il est incompressible), il ne s'écoule pas et il est saisissable.",
+      "difficulte": 2,
+      "tags": [
+        "solide",
+        "proprietes"
+      ]
+    },
+    {
+      "id": "PC4E-P01-003",
+      "lecon": "Les trois états de la matière et les propriétés des solides",
+      "type": "definition",
+      "recto": "Que signifie dire qu'un corps a une forme propre ?",
+      "verso": "Il garde sa forme quand on le change de récipient. C'est le cas des solides.",
+      "difficulte": 1,
+      "tags": [
+        "forme-propre",
+        "vocabulaire"
+      ]
+    },
+    {
+      "id": "PC4E-P01-004",
+      "lecon": "Les trois états de la matière et les propriétés des solides",
+      "type": "definition",
+      "recto": "Pourquoi dit-on qu'un solide est incompressible ?",
+      "verso": "Son volume ne change pas sous l'effet d'une pression ordinaire : il a un volume propre.",
+      "difficulte": 2,
+      "tags": [
+        "solide",
+        "incompressible"
+      ]
+    },
+    {
+      "id": "PC4E-P01-005",
+      "lecon": "Les trois états de la matière et les propriétés des solides",
+      "type": "definition",
+      "recto": "Quelle différence y a-t-il entre un solide compact et un solide divisé ?",
+      "verso": "Un solide compact est fait d'un seul bloc (pierre, craie). Un solide divisé est fait de grains ou de poudre (sable, farine), chaque grain étant un solide compact.",
+      "difficulte": 2,
+      "tags": [
+        "solide-compact",
+        "solide-divise"
+      ]
+    },
+    {
+      "id": "PC4E-P01-006",
+      "lecon": "Les trois états de la matière et les propriétés des solides",
+      "type": "definition",
+      "recto": "Dans le modèle particulaire, comment sont les particules d'un solide ?",
+      "verso": "Elles sont serrées les unes contre les autres, rangées de façon ordonnée, et chacune vibre sur place sans quitter ses voisines.",
+      "difficulte": 2,
+      "tags": [
+        "modele-particulaire",
+        "solide"
+      ]
+    },
+    {
+      "id": "PC4E-P01-007",
+      "lecon": "Les trois états de la matière et les propriétés des solides",
+      "type": "definition",
+      "recto": "Dans le modèle particulaire, comment sont les particules d'un liquide ?",
+      "verso": "Elles restent en contact mais glissent les unes sur les autres : le contact maintient le volume, le glissement supprime la forme.",
+      "difficulte": 2,
+      "tags": [
+        "modele-particulaire",
+        "liquide"
+      ]
+    },
+    {
+      "id": "PC4E-P01-008",
+      "lecon": "Les trois états de la matière et les propriétés des solides",
+      "type": "definition",
+      "recto": "Dans le modèle particulaire, comment sont les particules d'un gaz ?",
+      "verso": "Elles sont très éloignées les unes des autres et se déplacent à grande vitesse dans toutes les directions ; entre elles, il n'y a rien.",
+      "difficulte": 2,
+      "tags": [
+        "modele-particulaire",
+        "gaz"
+      ]
+    },
+    {
+      "id": "PC4E-P01-009",
+      "lecon": "Les trois états de la matière et les propriétés des solides",
+      "type": "definition",
+      "recto": "Avec le modèle particulaire, pourquoi un solide ne se comprime-t-il pas ?",
+      "verso": "Ses particules sont déjà au contact les unes des autres : il n'y a pas d'espace vide à supprimer, donc son volume ne peut pas diminuer.",
+      "difficulte": 2,
+      "tags": [
+        "modele-particulaire",
+        "incompressible"
+      ]
+    },
+    {
+      "id": "PC4E-P01-010",
+      "lecon": "Les trois états de la matière et les propriétés des solides",
+      "type": "definition",
+      "recto": "Pourquoi le sable, qui s'écoule quand on le verse, n'est-il pas un liquide ?",
+      "verso": "C'est un solide divisé : chaque grain garde sa forme et son volume ; ce sont les grains qui roulent les uns sur les autres et, versé, il forme un tas.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "solide-divise"
+      ]
+    },
+    {
+      "id": "PC4E-P01-011",
+      "lecon": "Les trois états de la matière et les propriétés des solides",
+      "type": "definition",
+      "recto": "Pourquoi faut-il toujours préciser la température quand on donne l'état physique d'un corps ?",
+      "verso": "Un même corps peut changer d'état : l'eau est solide au congélateur, liquide dans le canari, gazeuse au-dessus de la marmite.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "etat-physique"
+      ]
+    },
+    {
+      "id": "PC4E-P01-012",
+      "lecon": "Les liquides et les gaz, deux fluides",
+      "type": "definition",
+      "recto": "Quelles sont les propriétés caractéristiques d'un liquide ?",
+      "verso": "Il n'a pas de forme propre (il prend la forme du récipient), il a un volume propre (il est incompressible), il s'écoule et il est insaisissable.",
+      "difficulte": 2,
+      "tags": [
+        "liquide",
+        "proprietes"
+      ]
+    },
+    {
+      "id": "PC4E-P01-013",
+      "lecon": "Les liquides et les gaz, deux fluides",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on un fluide ?",
+      "verso": "Un corps qui s'écoule : les liquides et les gaz sont des fluides. Le mot vient du latin fluere, couler.",
+      "difficulte": 1,
+      "tags": [
+        "fluide",
+        "vocabulaire"
+      ]
+    },
+    {
+      "id": "PC4E-P01-014",
+      "lecon": "Les liquides et les gaz, deux fluides",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on la surface libre d'un liquide ?",
+      "verso": "C'est la surface d'un liquide au repos en contact avec l'air.",
+      "difficulte": 1,
+      "tags": [
+        "surface-libre",
+        "vocabulaire"
+      ]
+    },
+    {
+      "id": "PC4E-P01-015",
+      "lecon": "Les liquides et les gaz, deux fluides",
+      "type": "formule",
+      "recto": "Quelle est la forme de la surface libre d'un liquide au repos ?",
+      "verso": "Elle est toujours plane et horizontale, quelle que soit l'inclinaison du récipient.",
+      "difficulte": 1,
+      "tags": [
+        "surface-libre"
+      ]
+    },
+    {
+      "id": "PC4E-P01-016",
+      "lecon": "Les liquides et les gaz, deux fluides",
+      "type": "formule",
+      "recto": "Avec quel instrument vérifie-t-on que la surface libre d'un liquide est horizontale ?",
+      "verso": "Avec un fil à plomb : il indique la verticale, et la surface libre lui est perpendiculaire.",
+      "difficulte": 2,
+      "tags": [
+        "surface-libre",
+        "fil-a-plomb"
+      ]
+    },
+    {
+      "id": "PC4E-P01-017",
+      "lecon": "Les liquides et les gaz, deux fluides",
+      "type": "definition",
+      "recto": "Quelles sont les propriétés caractéristiques d'un gaz ?",
+      "verso": "Il n'a ni forme propre ni volume propre : il occupe tout le volume offert. Il est compressible, expansible, miscible aux autres gaz et insaisissable.",
+      "difficulte": 2,
+      "tags": [
+        "gaz",
+        "proprietes"
+      ]
+    },
+    {
+      "id": "PC4E-P01-018",
+      "lecon": "Les liquides et les gaz, deux fluides",
+      "type": "definition",
+      "recto": "Que signifie dire qu'un gaz est expansible ?",
+      "verso": "Il occupe tout le volume qui lui est offert, aussi grand soit-il.",
+      "difficulte": 1,
+      "tags": [
+        "gaz",
+        "expansible"
+      ]
+    },
+    {
+      "id": "PC4E-P01-019",
+      "lecon": "Les liquides et les gaz, deux fluides",
+      "type": "definition",
+      "recto": "Que signifie dire que les gaz sont miscibles ?",
+      "verso": "Deux gaz se mélangent spontanément en toutes proportions.",
+      "difficulte": 1,
+      "tags": [
+        "gaz",
+        "miscible"
+      ]
+    },
+    {
+      "id": "PC4E-P01-020",
+      "lecon": "Les liquides et les gaz, deux fluides",
+      "type": "formule",
+      "recto": "Quelle propriété commune ont les solides et les liquides ?",
+      "verso": "Ils ont un volume propre : ils sont tous deux incompressibles.",
+      "difficulte": 2,
+      "tags": [
+        "proprietes-communes"
+      ]
+    },
+    {
+      "id": "PC4E-P01-021",
+      "lecon": "Les liquides et les gaz, deux fluides",
+      "type": "formule",
+      "recto": "Quelles propriétés communes ont les liquides et les gaz ?",
+      "verso": "Ce sont des fluides : ils s'écoulent et prennent la forme du récipient ; ils sont aussi tous deux insaisissables.",
+      "difficulte": 2,
+      "tags": [
+        "proprietes-communes",
+        "fluide"
+      ]
+    },
+    {
+      "id": "PC4E-P01-022",
+      "lecon": "Les liquides et les gaz, deux fluides",
+      "type": "formule",
+      "recto": "Qu'ont en commun un solide et un gaz ?",
+      "verso": "Aucune propriété physique caractéristique : ils sont seulement tous deux de la matière, qui a une masse et occupe une place.",
+      "difficulte": 3,
+      "tags": [
+        "proprietes-communes"
+      ]
+    },
+    {
+      "id": "PC4E-P01-023",
+      "lecon": "Les liquides et les gaz, deux fluides",
+      "type": "formule",
+      "recto": "Quelle propriété physique des gaz favorise la pollution atmosphérique ?",
+      "verso": "Leur expansibilité, complétée par leur miscibilité : un gaz rejeté occupe toute l'atmosphère et se mêle intimement à l'air respiré.",
+      "difficulte": 2,
+      "tags": [
+        "pollution",
+        "expansible"
+      ]
+    },
+    {
+      "id": "PC4E-P01-024",
+      "lecon": "Les liquides et les gaz, deux fluides",
+      "type": "formule",
+      "recto": "Comment recueille-t-on un gaz par déplacement d'eau dans un tube ?",
+      "verso": "On retourne dans une cuve d'eau un tube plein d'eau, puis on place sous son ouverture la sortie du gaz : le gaz monte en bulles et chasse l'eau. On bouche le tube sous l'eau pour le conserver.",
+      "difficulte": 2,
+      "tags": [
+        "recueillir-un-gaz",
+        "experience"
+      ]
+    },
+    {
+      "id": "PC4E-P01-025",
+      "lecon": "Les liquides et les gaz, deux fluides",
+      "type": "definition",
+      "recto": "Pourquoi est-il faux de dire qu'une bouteille « vide » ne contient rien ?",
+      "verso": "Elle est pleine d'air : l'air est invisible, mais c'est de la matière, qui a une masse et occupe une place.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "air"
+      ]
+    },
+    {
+      "id": "PC4E-P01-026",
+      "lecon": "La pression d'un gaz et la pression atmosphérique",
+      "type": "definition",
+      "recto": "Quel instrument mesure la pression d'un gaz enfermé dans un récipient ?",
+      "verso": "Le manomètre (à aiguille, numérique, ou à liquide comme le tube en U).",
+      "difficulte": 1,
+      "tags": [
+        "manometre",
+        "instrument"
+      ]
+    },
+    {
+      "id": "PC4E-P01-027",
+      "lecon": "La pression d'un gaz et la pression atmosphérique",
+      "type": "formule",
+      "recto": "Dans un manomètre à tube en U, comment le niveau de l'eau indique-t-il que la pression du gaz est supérieure à la pression atmosphérique ?",
+      "verso": "Le niveau de l'eau est plus bas du côté du gaz ; il serait plus haut si la pression du gaz était plus petite, et le même dans les deux branches si les pressions étaient égales.",
+      "difficulte": 3,
+      "tags": [
+        "tube-en-u",
+        "manometre"
+      ]
+    },
+    {
+      "id": "PC4E-P01-028",
+      "lecon": "La pression d'un gaz et la pression atmosphérique",
+      "type": "formule",
+      "recto": "A température constante, comment varie la pression d'un gaz enfermé quand on diminue son volume ?",
+      "verso": "Sa pression augmente ; quand son volume augmente, sa pression diminue.",
+      "difficulte": 2,
+      "tags": [
+        "pression-volume"
+      ]
+    },
+    {
+      "id": "PC4E-P01-029",
+      "lecon": "La pression d'un gaz et la pression atmosphérique",
+      "type": "definition",
+      "recto": "Que signifient comprimer et détendre un gaz ?",
+      "verso": "Comprimer un gaz, c'est diminuer son volume ; le détendre, c'est augmenter son volume.",
+      "difficulte": 1,
+      "tags": [
+        "comprimer",
+        "detendre",
+        "vocabulaire"
+      ]
+    },
+    {
+      "id": "PC4E-P01-030",
+      "lecon": "La pression d'un gaz et la pression atmosphérique",
+      "type": "formule",
+      "recto": "A volume constant, comment varie la pression d'un gaz enfermé quand on le chauffe ?",
+      "verso": "Sa pression augmente ; quand on le refroidit, elle diminue.",
+      "difficulte": 2,
+      "tags": [
+        "pression-temperature"
+      ]
+    },
+    {
+      "id": "PC4E-P01-031",
+      "lecon": "La pression d'un gaz et la pression atmosphérique",
+      "type": "definition",
+      "recto": "Avec le modèle particulaire, qu'est-ce qui produit la pression d'un gaz ?",
+      "verso": "Les chocs incessants de ses particules, qui se déplacent dans toutes les directions, sur les parois du récipient.",
+      "difficulte": 2,
+      "tags": [
+        "modele-particulaire",
+        "pression"
+      ]
+    },
+    {
+      "id": "PC4E-P01-032",
+      "lecon": "La pression d'un gaz et la pression atmosphérique",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on la pression atmosphérique ?",
+      "verso": "C'est la pression exercée sur tous les corps par l'air qui entoure la Terre (l'atmosphère). Elle se mesure avec un baromètre.",
+      "difficulte": 1,
+      "tags": [
+        "pression-atmospherique",
+        "barometre"
+      ]
+    },
+    {
+      "id": "PC4E-P01-033",
+      "lecon": "La pression d'un gaz et la pression atmosphérique",
+      "type": "formule",
+      "recto": "Comment varie la pression atmosphérique quand on monte en altitude ?",
+      "verso": "Elle diminue, car il y a moins d'air au-dessus de soi.",
+      "difficulte": 2,
+      "tags": [
+        "pression-atmospherique",
+        "altitude"
+      ]
+    },
+    {
+      "id": "PC4E-P01-034",
+      "lecon": "La pression d'un gaz et la pression atmosphérique",
+      "type": "definition",
+      "recto": "Quelle est l'unité légale de pression, avec son symbole ?",
+      "verso": "Le pascal, de symbole $\\mathrm{Pa}$.",
+      "difficulte": 1,
+      "tags": [
+        "unite",
+        "pascal"
+      ]
+    },
+    {
+      "id": "PC4E-P01-035",
+      "lecon": "La pression d'un gaz et la pression atmosphérique",
+      "type": "formule",
+      "recto": "Quelles relations lient le bar, le millibar et l'hectopascal au pascal ?",
+      "verso": "$1~\\mathrm{bar} = 100\\,000~\\mathrm{Pa} = 10^{5}~\\mathrm{Pa}$ ; $1~\\mathrm{hPa} = 1~\\mathrm{mb} = 100~\\mathrm{Pa}$ ; donc $1~\\mathrm{bar} = 1\\,000~\\mathrm{mb}$.",
+      "difficulte": 2,
+      "tags": [
+        "unite",
+        "conversion"
+      ]
+    },
+    {
+      "id": "PC4E-P01-036",
+      "lecon": "La pression d'un gaz et la pression atmosphérique",
+      "type": "formule",
+      "recto": "Que vaut la pression atmosphérique normale au niveau de la mer, en hPa et en mm Hg ?",
+      "verso": "$1\\,013~\\mathrm{hPa}$, soit $760~\\mathrm{mm~Hg}$, soit environ $1~\\mathrm{bar}$ (avec $1~\\mathrm{mm~Hg} \\approx 133{,}3~\\mathrm{Pa}$).",
+      "difficulte": 2,
+      "tags": [
+        "pression-atmospherique",
+        "valeur"
+      ]
+    },
+    {
+      "id": "PC4E-P01-037",
+      "lecon": "La pression d'un gaz et la pression atmosphérique",
+      "type": "definition",
+      "recto": "Pourquoi un baromètre ne convient-il pas pour mesurer la pression d'un pneu ?",
+      "verso": "Le baromètre mesure la pression de l'atmosphère ; la pression d'un gaz enfermé, comme l'air d'un pneu, se mesure avec un manomètre.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "barometre",
+        "manometre"
+      ]
+    },
+    {
+      "id": "PC4E-P01-038",
+      "lecon": "La pression d'un gaz et la pression atmosphérique",
+      "type": "definition",
+      "recto": "Pourquoi comprimer un gaz ne fait-il disparaître aucune matière ?",
+      "verso": "On rapproche seulement ses particules : la même quantité de gaz occupe moins de place.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "comprimer"
+      ]
+    }
+  ]
+}

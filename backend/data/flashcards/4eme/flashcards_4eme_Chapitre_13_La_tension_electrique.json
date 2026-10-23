@@ -1,0 +1,391 @@
+{
+  "matiere": "Physique-Chimie",
+  "partie": "Physique",
+  "niveau": "4ème",
+  "chapitre": "Physique, Chapitre 13 : La tension électrique",
+  "source": "pc/4eme/Chapitre_13_La_tension_electrique",
+  "nombre_cartes": 32,
+  "cartes": [
+    {
+      "id": "PC4E-P13-001",
+      "lecon": "La tension aux bornes d'un dipôle et son unité, le volt",
+      "type": "definition",
+      "recto": "En électricité, qu'appelle-t-on un dipôle ?",
+      "verso": "C'est un élément de circuit qui possède deux bornes, par exemple une pile, une lampe, un moteur ou un interrupteur.",
+      "difficulte": 1,
+      "tags": [
+        "dipole",
+        "vocabulaire"
+      ]
+    },
+    {
+      "id": "PC4E-P13-002",
+      "lecon": "La tension aux bornes d'un dipôle et son unité, le volt",
+      "type": "definition",
+      "recto": "Que mesure la tension électrique dans un circuit ?",
+      "verso": "Elle mesure la différence d'état électrique entre deux points du circuit, ou aux bornes d'un dipôle. On la note $U$, et $U_{AB}$ entre les points A et B.",
+      "difficulte": 1,
+      "tags": [
+        "tension",
+        "definition"
+      ]
+    },
+    {
+      "id": "PC4E-P13-003",
+      "lecon": "La tension aux bornes d'un dipôle et son unité, le volt",
+      "type": "definition",
+      "recto": "Quelle est l'unité légale de la tension électrique, avec son symbole ?",
+      "verso": "Le volt, de symbole $\\mathrm{V}$ (exemples : $1{,}5~\\mathrm{V}$, $4{,}5~\\mathrm{V}$, $220~\\mathrm{V}$).",
+      "difficulte": 1,
+      "tags": [
+        "unite",
+        "volt"
+      ]
+    },
+    {
+      "id": "PC4E-P13-004",
+      "lecon": "La tension aux bornes d'un dipôle et son unité, le volt",
+      "type": "formule",
+      "recto": "Quelles relations lient le kilovolt et le millivolt au volt ?",
+      "verso": "$1~\\mathrm{kV} = 1\\,000~\\mathrm{V}$ et $1~\\mathrm{V} = 1\\,000~\\mathrm{mV}$.",
+      "difficulte": 1,
+      "tags": [
+        "unite",
+        "conversion"
+      ]
+    },
+    {
+      "id": "PC4E-P13-005",
+      "lecon": "La tension aux bornes d'un dipôle et son unité, le volt",
+      "type": "formule",
+      "recto": "Quelles relations lient le microvolt au millivolt et au volt ?",
+      "verso": "$1~\\mathrm{mV} = 1\\,000~\\mathrm{\\mu V}$ et $1~\\mathrm{\\mu V} = 0{,}000\\,001~\\mathrm{V}$.",
+      "difficulte": 2,
+      "tags": [
+        "unite",
+        "conversion"
+      ]
+    },
+    {
+      "id": "PC4E-P13-006",
+      "lecon": "La tension aux bornes d'un dipôle et son unité, le volt",
+      "type": "formule",
+      "recto": "Pour convertir une tension sur l'échelle $\\mathrm{kV}$, $\\mathrm{V}$, $\\mathrm{mV}$, $\\mathrm{\\mu V}$, quelle règle applique-t-on à chaque marche ?",
+      "verso": "Chaque marche vaut $1\\,000$ : vers une unité plus petite, on multiplie par $1\\,000$ par marche ; vers une unité plus grande, on divise par $1\\,000$.",
+      "difficulte": 2,
+      "tags": [
+        "conversion",
+        "methode"
+      ]
+    },
+    {
+      "id": "PC4E-P13-007",
+      "lecon": "La tension aux bornes d'un dipôle et son unité, le volt",
+      "type": "definition",
+      "recto": "Quelle est la tension aux bornes d'un fil de connexion en bon état ou d'un interrupteur fermé ?",
+      "verso": "Elle est nulle : le fil n'oppose rien au courant, donc ses deux extrémités sont dans le même état électrique.",
+      "difficulte": 2,
+      "tags": [
+        "tension-nulle",
+        "fil"
+      ]
+    },
+    {
+      "id": "PC4E-P13-008",
+      "lecon": "La tension aux bornes d'un dipôle et son unité, le volt",
+      "type": "definition",
+      "recto": "Quelle tension existe entre les bornes d'une pile qui n'est branchée à rien ?",
+      "verso": "Sa tension habituelle : un générateur possède une tension entre ses bornes même s'il n'est branché à aucun circuit.",
+      "difficulte": 2,
+      "tags": [
+        "generateur",
+        "tension"
+      ]
+    },
+    {
+      "id": "PC4E-P13-009",
+      "lecon": "La tension aux bornes d'un dipôle et son unité, le volt",
+      "type": "definition",
+      "recto": "Sur un schéma, dans quel sens se dessine la flèche qui représente la tension $U_{AB}$ ?",
+      "verso": "Elle va du point B vers le point A : sa pointe est du côté de la première lettre.",
+      "difficulte": 2,
+      "tags": [
+        "fleche-tension",
+        "schema"
+      ]
+    },
+    {
+      "id": "PC4E-P13-010",
+      "lecon": "La tension aux bornes d'un dipôle et son unité, le volt",
+      "type": "definition",
+      "recto": "Pour une pile de bornes P et N, quelle relation y a-t-il entre $U_{PN}$ et $U_{NP}$ ?",
+      "verso": "$U_{PN}$ vaut la tension de l'étiquette ; $U_{NP}$ a la même valeur avec le signe moins : $U_{NP} = -U_{PN}$.",
+      "difficulte": 3,
+      "tags": [
+        "fleche-tension",
+        "signe"
+      ]
+    },
+    {
+      "id": "PC4E-P13-011",
+      "lecon": "La tension aux bornes d'un dipôle et son unité, le volt",
+      "type": "definition",
+      "recto": "Pourquoi l'expression « la tension au point A » est-elle incorrecte ?",
+      "verso": "Une tension n'existe qu'entre deux points : on doit écrire par exemple $U_{AB}$, la tension entre A et B.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "tension"
+      ]
+    },
+    {
+      "id": "PC4E-P13-012",
+      "lecon": "La tension aux bornes d'un dipôle et son unité, le volt",
+      "type": "definition",
+      "recto": "Quelle erreur commet-on en concluant qu'aucun courant ne passe dans un fil parce que la tension à ses bornes est nulle ?",
+      "verso": "Le courant circule bien dans le fil : sa tension est nulle seulement parce qu'il n'oppose rien au courant.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "tension-nulle"
+      ]
+    },
+    {
+      "id": "PC4E-P13-013",
+      "lecon": "La mesure d'une tension : le voltmètre en dérivation",
+      "type": "definition",
+      "recto": "Quel appareil mesure une tension électrique ?",
+      "verso": "Le voltmètre (ou un multimètre sur la position tension) ; son symbole est un cercle contenant la lettre V.",
+      "difficulte": 1,
+      "tags": [
+        "voltmetre",
+        "symbole"
+      ]
+    },
+    {
+      "id": "PC4E-P13-014",
+      "lecon": "La mesure d'une tension : le voltmètre en dérivation",
+      "type": "formule",
+      "recto": "Comment branche-t-on un voltmètre pour mesurer la tension aux bornes d'un dipôle ?",
+      "verso": "En dérivation, aux bornes du dipôle étudié, sans jamais ouvrir le circuit.",
+      "difficulte": 1,
+      "tags": [
+        "voltmetre",
+        "branchement"
+      ]
+    },
+    {
+      "id": "PC4E-P13-015",
+      "lecon": "La mesure d'une tension : le voltmètre en dérivation",
+      "type": "definition",
+      "recto": "Pourquoi un voltmètre se branche-t-il en dérivation plutôt qu'inséré dans le circuit ?",
+      "verso": "Une tension se mesure entre deux points : il faut les toucher à la fois. Le voltmètre ne prélève qu'un courant négligeable ; inséré dans le circuit, il éteindrait la lampe.",
+      "difficulte": 2,
+      "tags": [
+        "voltmetre",
+        "derivation"
+      ]
+    },
+    {
+      "id": "PC4E-P13-016",
+      "lecon": "La mesure d'une tension : le voltmètre en dérivation",
+      "type": "formule",
+      "recto": "Pour mesurer $U_{AB}$ avec un multimètre, à quels points relie-t-on les bornes V et COM ?",
+      "verso": "La borne V (fil rouge) au point A et la borne COM (fil noir) au point B.",
+      "difficulte": 2,
+      "tags": [
+        "multimetre",
+        "bornes"
+      ]
+    },
+    {
+      "id": "PC4E-P13-017",
+      "lecon": "La mesure d'une tension : le voltmètre en dérivation",
+      "type": "definition",
+      "recto": "Que signifie un signe moins devant la valeur affichée par un voltmètre numérique ?",
+      "verso": "Les pointes sont inversées (bornes V et COM échangées) : la valeur est la même, avec le signe moins. Ce n'est pas une panne.",
+      "difficulte": 2,
+      "tags": [
+        "signe",
+        "multimetre"
+      ]
+    },
+    {
+      "id": "PC4E-P13-018",
+      "lecon": "La mesure d'une tension : le voltmètre en dérivation",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on le calibre d'un voltmètre ?",
+      "verso": "C'est la plus grande tension que l'appareil accepte sur cette position.",
+      "difficulte": 1,
+      "tags": [
+        "calibre",
+        "vocabulaire"
+      ]
+    },
+    {
+      "id": "PC4E-P13-019",
+      "lecon": "La mesure d'une tension : le voltmètre en dérivation",
+      "type": "formule",
+      "recto": "Selon quelle règle choisit-on le calibre d'un voltmètre avant une mesure ?",
+      "verso": "On prend le calibre immédiatement supérieur à la valeur attendue, par exemple $20~\\mathrm{V}$ pour une pile de $4{,}5~\\mathrm{V}$ ou une batterie de $12~\\mathrm{V}$.",
+      "difficulte": 2,
+      "tags": [
+        "calibre",
+        "choix"
+      ]
+    },
+    {
+      "id": "PC4E-P13-020",
+      "lecon": "La mesure d'une tension : le voltmètre en dérivation",
+      "type": "definition",
+      "recto": "Que signifie un multimètre numérique dont l'afficheur ne montre que le chiffre 1 à gauche ?",
+      "verso": "La tension dépasse le calibre choisi : il faut passer au calibre supérieur.",
+      "difficulte": 2,
+      "tags": [
+        "calibre",
+        "multimetre"
+      ]
+    },
+    {
+      "id": "PC4E-P13-021",
+      "lecon": "La mesure d'une tension : le voltmètre en dérivation",
+      "type": "formule",
+      "recto": "Sur un voltmètre à aiguille, quelle relation donne la tension $U$ à partir du calibre $C$, du nombre total de divisions $N$ et de la division atteinte $n$ ?",
+      "verso": "$U = \\dfrac{C \\times n}{N}$, avec $U$ et $C$ en volts. Chaque division vaut $\\dfrac{C}{N}$ volt, le calibre correspondant à la dernière division.",
+      "difficulte": 2,
+      "tags": [
+        "voltmetre-aiguille",
+        "lecture"
+      ]
+    },
+    {
+      "id": "PC4E-P13-022",
+      "lecon": "La mesure d'une tension : le voltmètre en dérivation",
+      "type": "definition",
+      "recto": "Quelle précaution de lecture prend-on devant le cadran d'un voltmètre à aiguille ?",
+      "verso": "On place l'oeil bien en face de l'aiguille, sinon on risque de lire une division de trop.",
+      "difficulte": 2,
+      "tags": [
+        "voltmetre-aiguille",
+        "lecture"
+      ]
+    },
+    {
+      "id": "PC4E-P13-023",
+      "lecon": "La mesure d'une tension : le voltmètre en dérivation",
+      "type": "definition",
+      "recto": "Pourquoi la phrase « pour mesurer une tension, j'ouvre le circuit et j'y place le voltmètre » est-elle fausse ?",
+      "verso": "On n'ouvre jamais le circuit pour un voltmètre : il se branche en dérivation, aux bornes du dipôle.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "branchement"
+      ]
+    },
+    {
+      "id": "PC4E-P13-024",
+      "lecon": "Les tensions usuelles et la tension d'usage",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on la tension d'usage d'un récepteur ?",
+      "verso": "C'est la tension sous laquelle il doit être alimenté pour fonctionner normalement ; on l'appelle aussi tension nominale. Elle est inscrite sur l'appareil.",
+      "difficulte": 1,
+      "tags": [
+        "tension-usage",
+        "definition"
+      ]
+    },
+    {
+      "id": "PC4E-P13-025",
+      "lecon": "Les tensions usuelles et la tension d'usage",
+      "type": "definition",
+      "recto": "Pour un récepteur, qu'appelle-t-on une sous-tension ?",
+      "verso": "C'est une tension appliquée nettement inférieure à sa tension d'usage : il fonctionne mal ou pas du tout (lampe faible, moteur au ralenti), mais il n'est pas détruit.",
+      "difficulte": 2,
+      "tags": [
+        "sous-tension"
+      ]
+    },
+    {
+      "id": "PC4E-P13-026",
+      "lecon": "Les tensions usuelles et la tension d'usage",
+      "type": "definition",
+      "recto": "Pour un récepteur, qu'appelle-t-on une surtension ?",
+      "verso": "C'est une tension appliquée nettement supérieure à sa tension d'usage : il est détérioré, souvent définitivement (une lampe brille très fort puis grille), et vieillit plus vite.",
+      "difficulte": 2,
+      "tags": [
+        "surtension"
+      ]
+    },
+    {
+      "id": "PC4E-P13-027",
+      "lecon": "Les tensions usuelles et la tension d'usage",
+      "type": "definition",
+      "recto": "A quelle condition un récepteur est-il adapté à un générateur ?",
+      "verso": "Quand la tension du générateur est égale, ou très proche, de la tension d'usage du récepteur (lampe de $12~\\mathrm{V}$ sur batterie de $12~\\mathrm{V}$).",
+      "difficulte": 2,
+      "tags": [
+        "adaptation"
+      ]
+    },
+    {
+      "id": "PC4E-P13-028",
+      "lecon": "Les tensions usuelles et la tension d'usage",
+      "type": "definition",
+      "recto": "Quelles sont les tensions de la pile bâton, de la pile plate et de la pile rectangulaire ?",
+      "verso": "Pile bâton (ou ronde) : $1{,}5~\\mathrm{V}$ ; pile plate : $4{,}5~\\mathrm{V}$ ; pile rectangulaire : $9~\\mathrm{V}$.",
+      "difficulte": 1,
+      "tags": [
+        "tensions-usuelles",
+        "piles"
+      ]
+    },
+    {
+      "id": "PC4E-P13-029",
+      "lecon": "Les tensions usuelles et la tension d'usage",
+      "type": "definition",
+      "recto": "Quelles sont les tensions usuelles d'une batterie de moto ou de voiture et du secteur ?",
+      "verso": "Batterie de moto ou de voiture : $12~\\mathrm{V}$ ; secteur (prise murale) : $220~\\mathrm{V}$.",
+      "difficulte": 1,
+      "tags": [
+        "tensions-usuelles",
+        "secteur"
+      ]
+    },
+    {
+      "id": "PC4E-P13-030",
+      "lecon": "Les tensions usuelles et la tension d'usage",
+      "type": "definition",
+      "recto": "Pourquoi une surtension fait-elle griller le filament d'une lampe ?",
+      "verso": "Plus la tension est grande, plus le courant est important et plus le filament chauffe ; au-delà de la tension d'usage, l'échauffement dépasse ce qu'il supporte.",
+      "difficulte": 2,
+      "tags": [
+        "surtension",
+        "lampe"
+      ]
+    },
+    {
+      "id": "PC4E-P13-031",
+      "lecon": "Les tensions usuelles et la tension d'usage",
+      "type": "formule",
+      "recto": "Faute de générateur de tension égale à la tension d'usage, pourquoi choisit-on plutôt une tension un peu inférieure ?",
+      "verso": "La sous-tension est réversible et ne détruit rien, alors que la surtension est irréversible.",
+      "difficulte": 3,
+      "tags": [
+        "choix-generateur",
+        "adaptation"
+      ]
+    },
+    {
+      "id": "PC4E-P13-032",
+      "lecon": "Les tensions usuelles et la tension d'usage",
+      "type": "definition",
+      "recto": "Pourquoi l'indication « 3,5 V » portée sur une lampe n'est-elle pas une tension qu'elle fournit ?",
+      "verso": "Une lampe est un récepteur : $3{,}5~\\mathrm{V}$ est la tension sous laquelle elle doit être alimentée, sa tension d'usage.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "tension-usage"
+      ]
+    }
+  ]
+}

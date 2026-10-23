@@ -1,363 +1,95 @@
-# Documentation Technique - Chatbot Maths Burkina Faso
+# Documentation technique — Prof Aïcha (physique, Burkina Faso)
 
-## 1. Architecture Technique
+Ce document décrit l'architecture réelle de l'application. L'installation et l'utilisation sont dans le
+[README](../README.md).
 
-### 1.1 Vue d'ensemble
-
-Le chatbot repose sur une architecture RAG (Retrieval-Augmented Generation) qui combine :
-- Un système de retrieval pour rechercher des passages pertinents dans la base documentaire
-- Un modèle de langage (LLM) pour générer des réponses pédagogiques
-
-### 1.2 Stack Technologique
-
-#### Backend
-- **FastAPI** : Framework web moderne et performant pour l'API
-- **LlamaIndex** : Framework d'orchestration RAG
-- **ChromaDB** : Base vectorielle pour le stockage des embeddings
-- **Ollama** : Runtime local pour les LLM (modèle Mistral)
-- **Sentence Transformers** : Modèle d'embeddings multilingue
-- **Python** : Langage principal (version 3.9+)
-
-#### Frontend
-- **React 18** : Bibliothèque UI moderne
-- **Vite** : Build tool rapide
-- **TailwindCSS** : Framework CSS utilitaire
-- **KaTeX** : Rendu des formules mathématiques
-- **Lucide React** : Icônes modernes
-- **Axios** : Client HTTP
-
-### 1.3 Flux de Traitement
+## 1. Vue d'ensemble
 
 ```
-Utilisateur → Sélection Classe/Chapitre → Question
-         ↓
-    API FastAPI
-         ↓
-    RAG System
-         ↓
-    Embedding de la question
-         ↓
-    Recherche vectorielle (ChromaDB)
-         ↓
-    Filtrage par métadonnées (classe, chapitre)
-         ↓
-    Récupération des top-k passages
-         ↓
-    LLM (Ollama Mistral)
-         ↓
-    Génération de réponse
-         ↓
-    Affichage avec sources
+Élève (navigateur, PWA)
+   │  React + Vite : chat, exercices, prérequis, flashcards, cours, exports PDF/Word
+   ▼
+API FastAPI (backend/main.py)
+   ├── RAGSystem (rag_system.py)
+   │     ├── recherche vectorielle : LlamaIndex + PGVectorStore (table physique_burkina_embeddings)
+   │     └── génération : API Claude (prompts de physique, schémas JSON, vérification des QCM)
+   ├── database.py : comptes, conversations, messages, révisions de flashcards (schéma Postgres "app")
+   └── fichiers statiques : data/documents (cours), data/summaries (fiches), data/flashcards (JSON)
+   ▼
+Postgres + pgvector (Neon) — base dédiée à la physique
 ```
 
-## 2. Composants du Backend
-
-### 2.1 main.py - API FastAPI
-
-**Rôle** : Point d'entrée de l'application, expose les endpoints REST
-
-**Endpoints principaux** :
-- `GET /api/classes` : Liste des classes disponibles
-- `GET /api/classes/{code}/chapters` : Chapitres d'une classe
-- `POST /api/chat` : Poser une question
-- `POST /api/exercise` : Générer un exercice
-- `POST /api/simplify` : Simplifier une réponse
-- `POST /api/documents/upload` : Uploader un document
-- `POST /api/documents/initialize-sample` : Initialiser avec documents exemples
-
-**Choix techniques** :
-- FastAPI pour sa performance et sa documentation automatique
-- Pydantic pour la validation des données
-- CORS middleware pour la communication avec le frontend
-
-### 2.2 rag_system.py - Système RAG
-
-**Rôle** : Cœur du système, gère l'indexation et la recherche
-
-**Classes principales** :
-- `RAGSystem` : Classe principale orchestrant le pipeline RAG
-
-**Méthodes clés** :
-- `initialize_vector_store()` : Initialise ou charge la base vectorielle
-- `add_documents()` : Ajoute des documents à l'index
-- `query()` : Recherche des passages pertinents
-- `search_internet()` : Fallback via DuckDuckGo
-- `generate_response()` : Génère une réponse complète
-- `generate_exercise()` : Génère des exercices
-
-**Paramètres RAG** :
-- Chunk size : 700 tokens
-- Chunk overlap : 150 tokens
-- Top-K : 4 documents
-- Modèle d'embeddings : paraphrase-multilingual-MiniLM-L12-v2
-
-**Choix techniques** :
-- LlamaIndex pour son abstraction simplifiée du pipeline RAG
-- ChromaDB pour le stockage local et persistant
-- HuggingFace embeddings pour le support multilingue (français)
-- Ollama pour un LLM gratuit et local (pas de coûts API)
-
-### 2.3 document_processor.py - Traitement des Documents
-
-**Rôle** : Extraction et traitement des documents pédagogiques
-
-**Formats supportés** :
-- PDF via pypdf
-- DOCX via python-docx
-- TXT natif
-
-**Méthodes** :
-- `process_pdf()` : Extraction de texte depuis PDF
-- `process_docx()` : Extraction depuis Word
-- `process_txt()` : Lecture de fichiers texte
-- `create_sample_documents()` : Génération de documents exemples basés sur le curriculum
-
-**Choix techniques** :
-- pypdf pour sa robustesse avec les PDF
-- python-docx pour les documents Word
-- Structure de métadonnées pour le filtrage (classe, chapitre)
-
-### 2.4 curriculum_data.py - Données du Programme
-
-**Rôle** : Définition du programme officiel burkinabè
-
-**Structure** :
-- Dictionnaire `CURRICULUM` avec toutes les classes et chapitres
-- Fonctions utilitaires pour accéder aux données
-
-**Contenu** :
-- Classes : 6ème, 5ème, 4ème, 3ème, 2nde, 1ère, Tle
-- Chapitres alignés sur le programme officiel du Ministère de l'Éducation
-
-**Choix techniques** :
-- Structure en dictionnaire pour un accès rapide
-- Séparation des données pour faciliter les mises à jour
-
-### 2.5 config.py - Configuration
-
-**Rôle** : Centralisation de la configuration
-
-**Paramètres** :
-- URLs et modèles Ollama
-- Chemins ChromaDB
-- Configuration serveur
-- Paramètres RAG
-
-**Choix techniques** :
-- python-dotenv pour la gestion des variables d'environnement
-- Classe Config pour un accès typé
-
-## 3. Composants du Frontend
-
-### 3.1 App.jsx - Composant Principal
-
-**Rôle** : Orchestration de l'interface utilisateur
-
-**États** :
-- `selectedClass` : Classe sélectionnée
-- `selectedChapter` : Chapitre sélectionné
-- `classes` : Liste des classes chargées
-- `chapters` : Liste des chapitres de la classe
-- `messages` : Historique de conversation
-
-**Flux utilisateur** :
-1. Sélection de classe
-2. Chargement des chapitres correspondants
-3. Sélection du chapitre
-4. Interface de chat
-
-**Choix techniques** :
-- React Hooks pour la gestion d'état
-- Axios pour les appels API
-- Design modulaire avec composants séparés
-
-### 3.2 ClassSelector.jsx
-
-**Rôle** : Interface de sélection de classe
-
-**Fonctionnalités** :
-- Affichage des classes sous forme de grille
-- Feedback visuel sur la sélection
-- Icônes pour l'expérience utilisateur
-
-**Choix techniques** :
-- Grid layout responsive
-- Couleurs conditionnelles pour l'état actif
-
-### 3.3 ChapterSelector.jsx
-
-**Rôle** : Interface de sélection de chapitre
-
-**Fonctionnalités** :
-- Liste des chapitres de la classe sélectionnée
-- Bouton de retour
-- Scroll pour les longues listes
-
-**Choix techniques** :
-- Liste verticale avec icônes
-- Gestion du scroll pour l'accessibilité
-
-### 3.4 ChatInterface.jsx
-
-**Rôle** : Interface de conversation principale
-
-**Fonctionnalités** :
-- Affichage des messages (utilisateur/bot)
-- Rendu des formules mathématiques (KaTeX)
-- Bouton de simplification
-- Génération d'exercices
-- Affichage des sources
-- Copie des réponses
-- Historique de conversation
-
-**Choix techniques** :
-- KaTeX pour le rendu LaTeX
-- Auto-scroll vers les nouveaux messages
-- Gestion de l'état de chargement
-- Design responsive mobile-first
-
-## 4. Base de Données et Stockage
-
-### 4.1 ChromaDB
-
-**Type** : Base vectorielle locale
-
-**Stockage** :
-- Persistant sur disque
-- Chemin configurable via `CHROMA_PERSIST_DIR`
-
-**Structure** :
-- Collection : "maths_burkina"
-- Métadonnées par document : classe, chapitre, source
-
-**Avantages** :
-- Pas de serveur externe requis
-- Performance locale
-- Persistance automatique
-
-### 4.2 Documents
-
-**Stockage** :
-- Répertoire `data/documents/`
-- Formats : PDF, DOCX, TXT
-
-**Métadonnées** :
-- Classe (ex: "3ème")
-- Chapitre (ex: "Théorème de Thalès")
-- Source (nom du fichier)
-
-## 5. Sécurité
-
-### 5.1 Protection des Données
-
-- Aucun stockage permanent des conversations
-- Pas de données personnelles collectées
-- Documents traités localement
-
-### 5.2 CORS
-
-- Origines autorisées configurables
-- Protection contre les requêtes cross-origin non autorisées
-
-### 5.3 Validation
-
-- Pydantic pour la validation des entrées
-- Vérification des classes et chapitres valides
-
-## 6. Performance
-
-### 6.1 Optimisations
-
-- Chunking optimal des documents (700 tokens)
-- Overlap pour maintenir le contexte (150 tokens)
-- Top-K limité à 4 pour la rapidité
-- Embeddings multilingues optimisés pour le français
-
-### 6.2 Objectifs
-
-- Temps de réponse < 5 secondes
-- Chargement initial < 3 secondes
-- Compatible 3G
-
-## 7. Déploiement
-
-### 7.1 Requirements
-
-- Python 3.9+
-- Node.js 18+
-- Ollama avec modèle Mistral
-- 4GB RAM minimum
-- 10GB disque
-
-### 7.2 Processus
-
-1. Installation des dépendances backend
-2. Installation des dépendances frontend
-3. Configuration des variables d'environnement
-4. Lancement d'Ollama
-5. Lancement du backend
-6. Lancement du frontend
-7. Initialisation des documents
-
-## 8. Maintenance
-
-### 8.1 Mises à jour du Curriculum
-
-- Modifier `curriculum_data.py`
-- Ajouter les nouveaux documents correspondants
-- Réindexer la base vectorielle
-
-### 8.2 Ajout de Documents
-
-- Via l'endpoint `/api/documents/upload`
-- Ou directement dans `data/documents/`
-- Avec métadonnées appropriées
-
-### 8.3 Monitoring
-
-- Endpoint `/api/health` pour le statut
-- Logs du backend pour les erreurs
-- Monitoring de la performance
-
-## 9. Tests
-
-### 9.1 Tests Fonctionnels
-
-- Sélection de classe et chapitre
-- Pose de questions
-- Génération d'exercices
-- Simplification de réponses
-- Upload de documents
-
-### 9.2 Tests de Performance
-
-- Temps de réponse
-- Charge concurrente
-- Utilisation mémoire
-
-## 10. Évolutions Possibles
-
-### 10.1 Court terme
-
-- Authentification utilisateurs
-- Historique persistant
-- Mode hors-ligne complet
-- Application mobile native
-
-### 10.2 Long terme
-
-- Voix pour les questions
-- Génération de quiz complets
-- Suivi de progression
-- Intégration avec les systèmes scolaires
-
-## Conclusion
-
-Cette architecture a été conçue pour être :
-- **Simple** : Technologies éprouvées et bien documentées
-- **Performante** : Optimisée pour les contraintes de connectivité
-- **Maintenable** : Code modulaire et documenté
-- **Évolutive** : Facile à étendre avec de nouvelles fonctionnalités
-- **Gratuite** : Utilisation exclusive d'outils open-source et gratuits
-
-Le choix d'Ollama pour le LLM permet d'éviter les coûts d'API tout en maintenant une qualité de génération satisfaisante pour un usage éducatif.
+## 2. Backend
+
+| Fichier | Rôle |
+|---|---|
+| `main.py` | Endpoints `/api/*`, validation (classes et chapitres du programme), authentification, consentement, persistance best-effort, service du frontend compilé |
+| `rag_system.py` | Recherche dans l'index, appels Claude (avec relance automatique si la réponse est tronquée), tous les prompts, analyse et validation des JSON d'exercices et de prérequis, contenus de secours hors ligne |
+| `curriculum_data.py` | Programme : 5 classes, 72 chapitres, intitulés et ordre exacts des manuels |
+| `document_processor.py` | Extraction de texte (PDF/DOCX/TXT), correspondance classe/chapitre ↔ fichier (alias de dossiers, mots-clés, numéro de chapitre) |
+| `ingest_documents.py` | Indexation : classement de chaque PDF par Claude (contenu), repli sur le numéro de chapitre, reconstruction de la table vectorielle |
+| `database.py`, `auth.py`, `consent_text.py` | Données élèves, JWT, texte de consentement versionné |
+| `config.py` | Paramètres (lus depuis `.env`) : modèle, budgets de tokens, `DATABASE_URL`, `VECTOR_TABLE_NAME`, dossiers de données |
+
+### Prompts (rag_system.py)
+
+Constantes partagées par tous les prompts :
+
+- `OFF_TOPIC_INSTRUCTIONS` : portée limitée à la physique (chimie et maths déclinées, outils mathématiques au service
+  de la physique acceptés).
+- `FORMULA_FORMAT_INSTRUCTIONS` : formules, grandeurs et unités en LaTeX (`$U = R \times I$`, `$220\,\text{V}$`).
+- `UNITS_INSTRUCTIONS` : SI, conversions explicites, expression littérale → application numérique → résultat avec
+  unité, homogénéité, chiffres significatifs (exigés à partir de la 2nde), valeur de $g$.
+- `FIGURE_SCHEMAS` / `FIGURE_FORMAT_INSTRUCTIONS` : formats JSON des schémas (voir §4).
+- `NO_EMOJI_INSTRUCTIONS` : ton de manuel, tableaux Markdown avec unités dans les en-têtes.
+
+Exercices : 5 niveaux (`STAR_DIFFICULTY_LABELS`) — 1★ QCM, 2★ application d'une loi, 3★ notions combinées,
+4★ situation d'intégration, 5★ olympiades (analyse dimensionnelle, ordre de grandeur, conservation, cas limites...).
+L'énoncé et la correction sont générés par deux appels distincts ; les QCM (exercices 1★ et prérequis) sont relus par
+un appel de vérification à température 0.
+
+Prérequis : les manuels de physique n'ont pas de ligne « Prérequis » ; le modèle les déduit des extraits du chapitre
+et de la liste des chapitres antérieurs (même classe et classes précédentes).
+
+### Recherche des fichiers d'un chapitre
+
+`find_course_file` cherche d'abord `<dossier>/<classe>/<chapitre>/`, puis parcourt les dossiers de classe
+(`4eme`, `3eme`, `2ndeC`, `1ereD`, `TleD`, reconnus via `CLASS_ALIASES`) et note chaque fichier selon les mots-clés
+de l'intitulé, avec un demi-point si son numéro `Chapitre_N_` correspond au rang du chapitre dans le programme.
+`/api/course` interroge d'abord l'index vectoriel (filtre exact classe + chapitre posé à l'ingestion).
+
+## 3. Base de données
+
+- **Table vectorielle** `data_physique_burkina_embeddings` (préfixe `data_` ajouté par PGVectorStore) : passages de
+  700 tokens (recouvrement 150) des 72 chapitres, métadonnées `class`, `chapter`, `source`. Reconstruite à chaque
+  exécution de `ingest_documents.py`.
+- **Schéma `app`** : utilisateurs, conversations, messages (`MESSAGE_KINDS`), résultats de prérequis, signaux de
+  difficulté, révisions de flashcards. Créé au démarrage (`database.init_db`).
+
+## 4. Schémas de physique
+
+Claude décrit un schéma en JSON (bloc ```` ```figure ```` dans le chat, champ `figure` d'un exercice) ; le frontend le
+dessine en SVG. Types : `circuit` (composants entre nœuds d'une grille, fils, courants, tensions), `forces`
+(solides, supports hachurés, vecteurs, angles), `optique` (axe, lentilles, miroirs, objets, images, rayons),
+`graphique` (axes avec grandeur et unité, séries, repères) et `geometrie`.
+
+- Backend : `FIGURE_SCHEMAS` (exemples testés par `tests/test_figures.py`), `RAGSystem._valid_figure`.
+- Frontend : `components/PhysicsFigure.jsx` (aiguillage + barrière d'erreur), `components/figures/*`,
+  `lib/figureSpec.js` (logique pure testée). Étiquettes en texte simple (`U_AB`, `m/s^2`, Ω) ; pointes de flèches en
+  polygones pour un export PDF fidèle. L'export Word remplace un schéma par « [Schéma — voir dans l'application] ».
+
+## 5. Frontend
+
+| Élément | Rôle |
+|---|---|
+| `App.jsx` | État global, sessions invité (`localStorage`, clés `chatphysique-*`), exports |
+| `components/RichContent.jsx` | Rendu Markdown + KaTeX + schémas, partagé par tous les contenus |
+| `components/ExerciseCard.jsx`, `RemediationQuiz.jsx`, `FlashcardsViewer.jsx`, `CourseViewer.jsx` | Exercices, prérequis, flashcards, lecteur PDF |
+| `lib/pdf.js`, `lib/docx.js`, `lib/docxModel.js` | Exports PDF (html2canvas) et Word |
+| `tailwind.config.js` | Thèmes daisyUI `chatphysique-light` / `chatphysique-dark` (indigo `#4f46e5`, bleu `#0284c7`, ambre `#d97706`) |
+
+## 6. Tests
+
+- Backend (`pytest`) : programme et couverture des PDF, correspondance des fichiers, schémas, réparation des JSON
+  d'exercices, API, base de données (comptes de test préfixés `pytest_`, supprimés en fin de test).
+- Frontend (`vitest`) : schémas, exports Word, validations, messages serveur.

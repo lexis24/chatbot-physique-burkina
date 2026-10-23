@@ -1,0 +1,400 @@
+{
+  "matiere": "Physique-Chimie",
+  "partie": "Physique",
+  "niveau": "4ème",
+  "chapitre": "Physique, Chapitre 12 : Le circuit électrique",
+  "source": "pc/4eme/Chapitre_12_Le_circuit_electrique",
+  "nombre_cartes": 33,
+  "cartes": [
+    {
+      "id": "PC4E-P12-001",
+      "lecon": "Le circuit électrique simple et ses constituants",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on un circuit électrique ?",
+      "verso": "C'est un ensemble d'appareils reliés par des fils conducteurs de façon à former une boucle fermée dans laquelle le courant électrique peut circuler.",
+      "difficulte": 1,
+      "tags": [
+        "circuit"
+      ]
+    },
+    {
+      "id": "PC4E-P12-002",
+      "lecon": "Le circuit électrique simple et ses constituants",
+      "type": "definition",
+      "recto": "Dans un circuit électrique, qu'appelle-t-on un générateur ?",
+      "verso": "C'est l'appareil qui fournit l'énergie électrique et met le courant en mouvement. Il possède deux bornes : la borne positive ($+$) et la borne négative ($-$).",
+      "difficulte": 1,
+      "tags": [
+        "generateur"
+      ]
+    },
+    {
+      "id": "PC4E-P12-003",
+      "lecon": "Le circuit électrique simple et ses constituants",
+      "type": "definition",
+      "recto": "Quels sont des exemples de générateurs électriques ?",
+      "verso": "La pile ronde, la pile plate, la batterie, l'accumulateur, la dynamo, l'alternateur, le panneau solaire, le groupe électrogène.",
+      "difficulte": 1,
+      "tags": [
+        "generateur",
+        "exemples"
+      ]
+    },
+    {
+      "id": "PC4E-P12-004",
+      "lecon": "Le circuit électrique simple et ses constituants",
+      "type": "definition",
+      "recto": "Dans un circuit électrique, qu'appelle-t-on un récepteur ?",
+      "verso": "C'est un appareil qui reçoit le courant et transforme l'énergie électrique en lumière, en mouvement ou en chaleur. Exemples : lampe, moteur, sonnerie, ventilateur, fer à repasser.",
+      "difficulte": 1,
+      "tags": [
+        "recepteur"
+      ]
+    },
+    {
+      "id": "PC4E-P12-005",
+      "lecon": "Le circuit électrique simple et ses constituants",
+      "type": "definition",
+      "recto": "Quel est le rôle de l'interrupteur dans un circuit électrique ?",
+      "verso": "C'est un organe de commande qui ouvre ou ferme le circuit. Il n'est pas indispensable au passage du courant, mais il permet de commander le circuit.",
+      "difficulte": 2,
+      "tags": [
+        "interrupteur"
+      ]
+    },
+    {
+      "id": "PC4E-P12-006",
+      "lecon": "Le circuit électrique simple et ses constituants",
+      "type": "definition",
+      "recto": "Quelle différence y a-t-il entre un circuit fermé et un circuit ouvert ?",
+      "verso": "Fermé : la boucle est ininterrompue, le courant circule et les récepteurs fonctionnent. Ouvert : la boucle est interrompue en un point au moins, le courant ne circule plus et aucun récepteur ne fonctionne.",
+      "difficulte": 2,
+      "tags": [
+        "circuit-ferme",
+        "circuit-ouvert"
+      ]
+    },
+    {
+      "id": "PC4E-P12-007",
+      "lecon": "Le circuit électrique simple et ses constituants",
+      "type": "formule",
+      "recto": "Pourquoi une seule coupure suffit-elle à éteindre tout un circuit simple ?",
+      "verso": "Le courant ne circule que dans un chemin conducteur ininterrompu qui part d'une borne du générateur et revient à l'autre ; une coupure interdit ce trajet de retour.",
+      "difficulte": 2,
+      "tags": [
+        "boucle-fermee"
+      ]
+    },
+    {
+      "id": "PC4E-P12-008",
+      "lecon": "Le circuit électrique simple et ses constituants",
+      "type": "definition",
+      "recto": "Comment reconnaît-on les bornes d'une pile ronde ?",
+      "verso": "La borne positive ($+$) est le petit plot en relief du sommet ; la borne négative ($-$) est le fond plat.",
+      "difficulte": 2,
+      "tags": [
+        "bornes",
+        "pile"
+      ]
+    },
+    {
+      "id": "PC4E-P12-009",
+      "lecon": "Le circuit électrique simple et ses constituants",
+      "type": "definition",
+      "recto": "Comment reconnaît-on les bornes d'une pile plate ?",
+      "verso": "La lame courte est la borne positive ($+$) ; la lame longue est la borne négative ($-$).",
+      "difficulte": 2,
+      "tags": [
+        "bornes",
+        "pile"
+      ]
+    },
+    {
+      "id": "PC4E-P12-010",
+      "lecon": "Le circuit électrique simple et ses constituants",
+      "type": "definition",
+      "recto": "Quelles sont les deux bornes d'une lampe électrique ?",
+      "verso": "Le culot, partie métallique latérale, et le plot central, isolé du culot par une pastille. A l'intérieur, le filament les relie et devient lumineux au passage du courant.",
+      "difficulte": 2,
+      "tags": [
+        "bornes",
+        "lampe"
+      ]
+    },
+    {
+      "id": "PC4E-P12-011",
+      "lecon": "Le circuit électrique simple et ses constituants",
+      "type": "formule",
+      "recto": "Pourquoi les bornes d'une lampe ne portent-elles pas de signe $+$ ou $-$ ?",
+      "verso": "Parce qu'une lampe se branche indifféremment dans un sens ou dans l'autre.",
+      "difficulte": 2,
+      "tags": [
+        "lampe",
+        "bornes"
+      ]
+    },
+    {
+      "id": "PC4E-P12-012",
+      "lecon": "Le circuit électrique simple et ses constituants",
+      "type": "formule",
+      "recto": "Pourquoi une même batterie peut-elle être un générateur ou un récepteur ?",
+      "verso": "Générateur et récepteur sont des rôles : la batterie est un générateur quand elle alimente un phare, et un récepteur quand on la met en charge.",
+      "difficulte": 3,
+      "tags": [
+        "generateur",
+        "recepteur",
+        "role"
+      ]
+    },
+    {
+      "id": "PC4E-P12-013",
+      "lecon": "Le circuit électrique simple et ses constituants",
+      "type": "formule",
+      "recto": "Quelle confusion commet-on en disant qu'un circuit dont l'interrupteur est ouvert est en panne ?",
+      "verso": "On confond circuit ouvert et circuit en panne : ouvrir l'interrupteur, c'est simplement commander le circuit. Dans un circuit simple, l'interrupteur coupe tout le circuit, où qu'il soit placé.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "interrupteur"
+      ]
+    },
+    {
+      "id": "PC4E-P12-014",
+      "lecon": "Le schéma d'un circuit électrique",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on le schéma d'un circuit électrique ?",
+      "verso": "C'est sa représentation au moyen des symboles normalisés, reliés par des segments de droite tracés à la règle. Un montage ne se représente jamais par un dessin réaliste.",
+      "difficulte": 1,
+      "tags": [
+        "schema"
+      ]
+    },
+    {
+      "id": "PC4E-P12-015",
+      "lecon": "Le schéma d'un circuit électrique",
+      "type": "formule",
+      "recto": "Quelles règles de tracé respecte-t-on pour le schéma d'un circuit électrique ?",
+      "verso": "Fils en traits droits, changements de direction à angle droit, symboles au milieu des traits (jamais dans un angle), schéma souvent inscrit dans un rectangle, récepteurs nommés s'il y en a plusieurs.",
+      "difficulte": 2,
+      "tags": [
+        "schema",
+        "regles"
+      ]
+    },
+    {
+      "id": "PC4E-P12-016",
+      "lecon": "Le schéma d'un circuit électrique",
+      "type": "definition",
+      "recto": "Quel est le symbole normalisé d'une pile ?",
+      "verso": "Deux traits parallèles perpendiculaires au fil : un trait long et fin pour la borne $+$, un trait court et épais pour la borne $-$.",
+      "difficulte": 2,
+      "tags": [
+        "symbole",
+        "pile"
+      ]
+    },
+    {
+      "id": "PC4E-P12-017",
+      "lecon": "Le schéma d'un circuit électrique",
+      "type": "definition",
+      "recto": "Quel est le symbole normalisé d'une lampe à incandescence ?",
+      "verso": "Un cercle barré d'une croix dont les traits touchent le cercle.",
+      "difficulte": 1,
+      "tags": [
+        "symbole",
+        "lampe"
+      ]
+    },
+    {
+      "id": "PC4E-P12-018",
+      "lecon": "Le schéma d'un circuit électrique",
+      "type": "definition",
+      "recto": "Quel est le symbole normalisé d'un moteur électrique ?",
+      "verso": "Un cercle contenant la lettre M.",
+      "difficulte": 1,
+      "tags": [
+        "symbole",
+        "moteur"
+      ]
+    },
+    {
+      "id": "PC4E-P12-019",
+      "lecon": "Le schéma d'un circuit électrique",
+      "type": "definition",
+      "recto": "Comment représente-t-on un interrupteur ouvert et un interrupteur fermé sur un schéma ?",
+      "verso": "Ouvert : un trait relevé en biais, qui laisse un espace entre les bornes. Fermé : le même trait rabattu, qui les joint.",
+      "difficulte": 2,
+      "tags": [
+        "symbole",
+        "interrupteur"
+      ]
+    },
+    {
+      "id": "PC4E-P12-020",
+      "lecon": "Le schéma d'un circuit électrique",
+      "type": "definition",
+      "recto": "Quel est le symbole normalisé d'une diode ?",
+      "verso": "Un triangle dont la pointe touche un trait perpendiculaire au fil.",
+      "difficulte": 2,
+      "tags": [
+        "symbole",
+        "diode"
+      ]
+    },
+    {
+      "id": "PC4E-P12-021",
+      "lecon": "Le schéma d'un circuit électrique",
+      "type": "definition",
+      "recto": "Quel est le symbole normalisé d'une batterie d'accumulateurs ?",
+      "verso": "Deux motifs de pile côte à côte sur le même fil.",
+      "difficulte": 2,
+      "tags": [
+        "symbole",
+        "batterie"
+      ]
+    },
+    {
+      "id": "PC4E-P12-022",
+      "lecon": "Le schéma d'un circuit électrique",
+      "type": "formule",
+      "recto": "Sur le schéma d'un circuit, dans quel sens oriente-t-on la flèche du sens conventionnel du courant ?",
+      "verso": "De la borne $+$ vers la borne $-$ du générateur, à l'extérieur du générateur.",
+      "difficulte": 2,
+      "tags": [
+        "sens-conventionnel"
+      ]
+    },
+    {
+      "id": "PC4E-P12-023",
+      "lecon": "Le schéma d'un circuit électrique",
+      "type": "formule",
+      "recto": "Pourquoi ne faut-il pas confondre le sens conventionnel du courant avec le sens de déplacement des électrons ?",
+      "verso": "Le sens conventionnel va du $+$ vers le $-$ à l'extérieur du générateur ; les électrons se déplacent dans les fils en sens inverse, du $-$ vers le $+$.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "sens-conventionnel",
+        "electrons"
+      ]
+    },
+    {
+      "id": "PC4E-P12-024",
+      "lecon": "Le schéma d'un circuit électrique",
+      "type": "formule",
+      "recto": "Pourquoi ne doit-on pas tracer les deux traits du symbole de la pile de la même longueur ?",
+      "verso": "C'est la dissymétrie des traits qui désigne les bornes : le trait long et fin indique la borne $+$, le trait court et épais la borne $-$.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "symbole",
+        "pile"
+      ]
+    },
+    {
+      "id": "PC4E-P12-025",
+      "lecon": "Conducteurs et isolants électriques",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on un conducteur électrique ?",
+      "verso": "C'est un corps qui laisse passer le courant électrique. Exemples : les métaux (cuivre, aluminium, fer, zinc, or), le graphite, l'eau salée, le corps humain, le sol humide.",
+      "difficulte": 1,
+      "tags": [
+        "conducteur"
+      ]
+    },
+    {
+      "id": "PC4E-P12-026",
+      "lecon": "Conducteurs et isolants électriques",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on un isolant électrique ?",
+      "verso": "C'est un corps qui ne laisse pas passer le courant électrique. Exemples : le plastique, le caoutchouc, le verre, la porcelaine, le bois sec, le papier sec, l'air sec.",
+      "difficulte": 1,
+      "tags": [
+        "isolant"
+      ]
+    },
+    {
+      "id": "PC4E-P12-027",
+      "lecon": "Conducteurs et isolants électriques",
+      "type": "formule",
+      "recto": "Pourquoi est-il faux de dire que tous les conducteurs électriques sont des métaux ?",
+      "verso": "Tous les métaux conduisent, mais d'autres corps conduisent aussi : le graphite de la mine de crayon et l'eau salée, par exemple.",
+      "difficulte": 3,
+      "tags": [
+        "conducteur",
+        "metaux"
+      ]
+    },
+    {
+      "id": "PC4E-P12-028",
+      "lecon": "Conducteurs et isolants électriques",
+      "type": "formule",
+      "recto": "Pourquoi ne peut-on pas classer un corps comme isolant une fois pour toutes ?",
+      "verso": "Le caractère conducteur dépend des conditions : le bois sec est isolant, le bois mouillé conduit ; l'air sec est isolant, l'air traversé par la foudre conduit.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "isolant",
+        "conditions"
+      ]
+    },
+    {
+      "id": "PC4E-P12-029",
+      "lecon": "Conducteurs et isolants électriques",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on les électrons libres d'un métal ?",
+      "verso": "Ce sont les électrons, un ou deux par atome, qui circulent librement entre les atomes du métal. Leur déplacement d'ensemble, imposé par le générateur, est le courant électrique.",
+      "difficulte": 2,
+      "tags": [
+        "electrons-libres"
+      ]
+    },
+    {
+      "id": "PC4E-P12-030",
+      "lecon": "Conducteurs et isolants électriques",
+      "type": "formule",
+      "recto": "Pourquoi un plastique ne laisse-t-il pas passer le courant électrique ?",
+      "verso": "Dans un isolant, chaque électron reste attaché à son atome : aucun électron n'est libre de se déplacer.",
+      "difficulte": 2,
+      "tags": [
+        "isolant",
+        "electrons-libres"
+      ]
+    },
+    {
+      "id": "PC4E-P12-031",
+      "lecon": "Conducteurs et isolants électriques",
+      "type": "formule",
+      "recto": "Avec un testeur pile-lampe, comment conclut-on qu'un matériau placé entre les deux fils libres est conducteur ou isolant ?",
+      "verso": "Si la lampe s'allume, même faiblement, le matériau est conducteur ; si elle reste éteinte, il est isolant. On vérifie d'abord que la lampe s'allume quand les fils se touchent.",
+      "difficulte": 2,
+      "tags": [
+        "test",
+        "conducteur",
+        "isolant"
+      ]
+    },
+    {
+      "id": "PC4E-P12-032",
+      "lecon": "Conducteurs et isolants électriques",
+      "type": "formule",
+      "recto": "Pourquoi entoure-t-on les fils de cuivre d'une gaine de plastique ?",
+      "verso": "Le cuivre, conducteur, offre au courant un chemin facile ; le plastique, isolant, lui interdit d'en sortir.",
+      "difficulte": 2,
+      "tags": [
+        "gaine",
+        "securite"
+      ]
+    },
+    {
+      "id": "PC4E-P12-033",
+      "lecon": "Conducteurs et isolants électriques",
+      "type": "formule",
+      "recto": "Quelles règles de sécurité respecter face aux fils et appareils électriques ?",
+      "verso": "Ne jamais toucher un fil dont la gaine est fendue, et ne jamais manipuler un appareil électrique les mains mouillées ou les pieds dans l'eau.",
+      "difficulte": 2,
+      "tags": [
+        "securite"
+      ]
+    }
+  ]
+}

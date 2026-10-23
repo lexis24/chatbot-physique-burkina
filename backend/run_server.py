@@ -9,7 +9,7 @@ sys.path.insert(0, os.getcwd())
 if __name__ == "__main__":
     import uvicorn
     print("=" * 50)
-    print("  Chat'Maths Burkina Faso v1.0")
+    print("  Chat'Physique Burkina Faso v1.0")
     print("  Serveur API - http://127.0.0.1:8000")
     print("=" * 50)
     print()

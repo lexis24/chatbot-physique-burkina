@@ -1,162 +1,108 @@
-# Curriculum data for Burkina Faso - Mathematics
-# Source: sommaire officiel de la Collection Hakili Lab (Édition 2026), fourni par l'équipe
-# pédagogique (fichier "structure_manuels (3).xlsx"). Les intitulés reprennent exactement ceux
-# des manuels réellement déposés dans data/documents/ (ex: "Chapitre_6_Pythagore.pdf" <->
-# "Théorème de Pythagore et sa réciproque"), pour que la recherche de cours et le classement
-# automatique des documents (voir document_processor.py, ingest_documents.py) fonctionnent.
+# Curriculum data for Burkina Faso - Physique
+# Source : manuels de Physique-Chimie de la Collection Hakili Lab (Édition 2026), de la 4ème à la
+# Terminale D — partie physique uniquement (la chimie a sa propre application). Les intitulés
+# reprennent EXACTEMENT ceux de la première page de chaque chapitre des manuels (vérifiés un par
+# un contre les PDF de data/documents/, ex: "Chapitre_4_La_masse_volumique_et_la_densite.pdf" <->
+# "La masse volumique et la densité d'un corps"), dans l'ordre des manuels : c'est ce qui permet à
+# la recherche de cours et au classement automatique des documents (voir document_processor.py,
+# ingest_documents.py) de fonctionner. La physique n'est pas enseignée en 6ème/5ème.
 
 CURRICULUM = {
-    "6ème": {
-        "name": "Sixième",
-        "chapters": [
-            "Bien démarrer en 6ème",
-            "Éléments de géométrie et vocabulaire ensembliste",
-            "La numération décimale",
-            "Les angles",
-            "Sens et techniques d'exécution des opérations",
-            "Le parallélogramme",
-            "Parallélogrammes particuliers et trapèze",
-            "Comparaison et rangement de nombres",
-            "Le triangle",
-            "Cercle et disque",
-            "Médiatrice d'un segment",
-            "Symétrie orthogonale",
-            "Les fractions",
-            "Égalités à « trous »",
-            "Nombres relatifs",
-            "Relations et fonctions",
-            "Proportionnalité",
-            "Repérage",
-            "Parallélépipède rectangle et cube"
-        ]
-    },
-    "5ème": {
-        "name": "Cinquième",
-        "chapters": [
-            "Bien continuer en 5ème",
-            "La symétrie centrale (1) : construction",
-            "Multiples et diviseurs d'un entier naturel · Nombres premiers",
-            "La symétrie centrale (2) : propriétés, centre de symétrie, repérage",
-            "PGCD et PPCM",
-            "Opérations sur les fractions",
-            "Les angles : opposés par le sommet, alternes-internes, correspondants · Les triangles",
-            "Addition et soustraction dans 𝔻",
-            "Valeur absolue et comparaison de nombres relatifs",
-            "Cylindre de révolution et prisme droit",
-            "Multiplication dans 𝔻 · Développement et factorisation",
-            "Puissances entières d'un nombre",
-            "Cône de révolution et pyramide",
-            "Égalités et opérations",
-            "Équations dans 𝔻",
-            "Sphère et boule",
-            "Masse volumique, vitesse et débit",
-            "Échelle : agrandissement et réduction"
-        ]
-    },
     "4ème": {
         "name": "Quatrième",
         "chapters": [
-            "Bien continuer en 4ème",
-            "Droites du plan : parallélisme et perpendicularité",
-            "Nombres décimaux et puissances de dix : l'écriture scientifique",
-            "Repérage sur une droite",
-            "Repérage dans le plan",
-            "Calculs sur les quotients d'entiers relatifs",
-            "Projection et théorème des milieux",
-            "Les polygones",
-            "Les nombres rationnels",
-            "Les vecteurs (1) : bipoints, vecteur, égalité, somme",
-            "Les nombres réels",
-            "Les vecteurs (2) : propriétés de l'addition et caractérisations",
-            "La statistique",
-            "Les applications",
-            "Les translations",
-            "Développement, factorisation et identités remarquables",
-            "Équations et inéquations du premier degré dans ℝ",
-            "Compositions d'applications du plan",
-            "Sections de solides par un plan"
+            "Les états solide, liquide et gazeux",
+            "La masse d'un corps",
+            "Le volume d'un corps",
+            "La masse volumique et la densité d'un corps",
+            "Le thermomètre",
+            "La propagation de la chaleur",
+            "Les changements d'état physique",
+            "Les mélanges avec l'eau",
+            "Les sources et les récepteurs de lumière",
+            "La propagation rectiligne et la vitesse de la lumière",
+            "Les ombres",
+            "Le circuit électrique",
+            "La tension électrique",
+            "Les associations de générateurs et de récepteurs",
+            "Le courant électrique et ses dangers",
+            "La notion de force",
+            "Le poids d'un corps",
+            "La poussée d'Archimède"
         ]
     },
     "3ème": {
         "name": "Troisième",
         "chapters": [
-            "Bien réussir sa 3ème",
-            "Les nombres réels : intervalles, encadrement, valeur absolue",
-            "Les vecteurs du plan : multiplication par un réel et colinéarité",
-            "Le repère cartésien : coordonnées d'un vecteur",
-            "Racine carrée d'un nombre réel positif",
-            "Le rapport de projection",
-            "Théorème de Pythagore et sa réciproque",
-            "Équations et inéquations du premier degré dans ℝ",
-            "Théorème de Thalès et sa réciproque",
-            "Monômes et polynômes",
-            "Repère orthonormal : distance et orthogonalité",
-            "Fonctions rationnelles",
-            "Angles inscrits",
-            "Équations de droites",
-            "Trigonométrie dans le triangle rectangle",
-            "Équations et systèmes du premier degré dans ℝ×ℝ",
-            "Positions relatives d'une droite et d'un cercle",
-            "Applications linéaires et applications affines",
-            "Les isométries du plan",
-            "Statistiques",
-            "Sections de solides",
-            "Remédiation Hakili Lab (bases à revoir avant la 3ème)"
+            "L'intensité d'un courant électrique",
+            "La tension électrique",
+            "Les mesures sur des circuits électriques",
+            "La puissance électrique",
+            "L'énergie électrique",
+            "Les applications, la production et la distribution de l'énergie électrique",
+            "La résistance d'un conducteur ohmique",
+            "Les mesures de résistances",
+            "Les associations de conducteurs ohmiques",
+            "Les poulies et le treuil",
+            "Le travail et la puissance mécaniques",
+            "L'énergie mécanique : transfert et rendement",
+            "Les moteurs à piston",
+            "L'analyse et la synthèse de la lumière",
+            "Les lentilles convergentes",
+            "La formation des images",
+            "La construction géométrique des images",
+            "La loupe",
+            "Le miroir plan"
         ]
     },
     "2nde": {
         "name": "Seconde C",
         "chapters": [
-            "Bien commencer la 2nde C",
-            "Calculs dans ℝ",
-            "Équations et inéquations dans ℝ",
-            "Vecteurs du plan",
-            "Systèmes d'équations et d'inéquations linéaires",
-            "Généralités sur les fonctions",
-            "Fonctions de référence",
-            "Fonctions circulaires",
-            "Produit scalaire dans le plan",
-            "Géométrie plane",
-            "Les transformations géométriques",
-            "La géométrie dans l'espace",
-            "Les statistiques"
+            "La notion de mouvement",
+            "Les forces",
+            "L'équilibre d'un solide soumis à un ensemble de forces",
+            "L'équilibre d'un solide mobile autour d'un axe fixe",
+            "Le courant électrique et son intensité",
+            "La tension électrique",
+            "Les tensions variables",
+            "Les dipôles passifs",
+            "Le conducteur ohmique",
+            "Le générateur et le point de fonctionnement d'un circuit",
+            "Les montages électroniques"
         ]
     },
     "1ère": {
         "name": "Première D",
         "chapters": [
-            "Bien commencer la 1ère D",
-            "Les applications : injection, surjection, bijection",
-            "Polynômes et fonctions rationnelles",
-            "Problèmes algébriques et numériques",
-            "Suites numériques",
-            "Trigonométrie",
-            "Les fonctions numériques (généralités)",
-            "Les limites",
-            "Dérivation et étude de fonction",
-            "Transformations du plan",
-            "Dénombrement",
-            "Géométrie dans l'espace",
-            "Les statistiques",
-            "Remédiation Hakili Lab (bases à revoir avant la 1ère-Tle)"
+            "Le mouvement du centre d'inertie",
+            "L'énergie calorifique",
+            "L'énergie mécanique",
+            "Les transferts d'énergie dans les récepteurs, les générateurs et les circuits électriques en courant continu",
+            "La propagation d'un signal",
+            "Les ondes progressives",
+            "Les principes généraux de l'optique géométrique",
+            "Les lentilles minces"
         ]
     },
     "Tle": {
         "name": "Terminale D",
         "chapters": [
-            "Bien réussir sa Terminale D",
-            "Nombres complexes",
-            "Limites et continuité",
-            "Calcul différentiel, primitives et étude de fonctions",
-            "Fonction logarithme népérien",
-            "Fonction exponentielle et fonctions puissances",
-            "Suites numériques",
-            "Calcul intégral et équations différentielles",
-            "Probabilités",
-            "Courbes paramétrées du plan",
-            "Géométrie dans l'espace",
-            "Statistiques à deux variables",
-            "Remédiation Hakili Lab (bases à revoir avant la 1ère-Tle)"
+            "Les éléments de cinématique",
+            "Les lois du mouvement de Newton",
+            "Le travail et l'énergie cinétique",
+            "Le champ de gravitation et les interactions gravitationnelles",
+            "Le champ et les interactions électriques",
+            "Le champ et les interactions magnétiques",
+            "Le mouvement dans un champ de gravitation",
+            "Le mouvement d'une particule chargée dans un champ électrique uniforme",
+            "Le mouvement d'une particule chargée dans un champ magnétique uniforme",
+            "Le pendule élastique",
+            "Le condensateur",
+            "La bobine inductive",
+            "Les oscillations électriques forcées",
+            "Le noyau atomique",
+            "Les réactions nucléaires spontanées",
+            "Les réactions nucléaires provoquées"
         ]
     }
 }

@@ -1,0 +1,432 @@
+{
+  "matiere": "Physique-Chimie",
+  "partie": "Physique",
+  "niveau": "1ère D",
+  "chapitre": "Physique, Chapitre 3 : L'énergie mécanique",
+  "source": "pc/1ered/Chapitre_3_L_energie_mecanique",
+  "nombre_cartes": 36,
+  "cartes": [
+    {
+      "id": "PC1D-P03-001",
+      "lecon": "Le travail d'une force constante",
+      "type": "formule",
+      "recto": "Quelle expression donne le travail d'une force constante $\\vec{F}$ dont le point d'application se déplace de $A$ à $B$ ?",
+      "verso": "$W_{A \\rightarrow B}(\\vec{F}) = \\vec{F} \\cdot \\overrightarrow{AB} = F \\times AB \\times \\cos\\alpha$, où $\\alpha$ est l'angle entre $\\vec{F}$ et $\\overrightarrow{AB}$ ; $F$ en N, $AB$ en m, $W$ en joules ($\\mathrm{J}$).",
+      "difficulte": 1,
+      "tags": [
+        "travail",
+        "force-constante"
+      ]
+    },
+    {
+      "id": "PC1D-P03-002",
+      "lecon": "Le travail d'une force constante",
+      "type": "formule",
+      "recto": "Selon l'angle $\\alpha$ entre une force constante et le déplacement, quel est le signe de son travail ?",
+      "verso": "$\\alpha \\lt 90^{\\circ}$ : travail positif, force motrice. $\\alpha \\gt 90^{\\circ}$ : travail négatif, force résistante. $\\alpha = 90^{\\circ}$ : travail nul.",
+      "difficulte": 1,
+      "tags": [
+        "signe",
+        "moteur-resistant"
+      ]
+    },
+    {
+      "id": "PC1D-P03-003",
+      "lecon": "Le travail d'une force constante",
+      "type": "formule",
+      "recto": "Quelle expression donne le travail du poids d'un solide de masse $m$ qui passe de l'altitude $z_A$ à l'altitude $z_B$ ?",
+      "verso": "$W_{A \\rightarrow B}(\\vec{P}) = m\\,g\\,(z_A - z_B)$, l'axe des altitudes étant orienté vers le haut. Ce travail est moteur à la descente et résistant à la montée.",
+      "difficulte": 1,
+      "tags": [
+        "travail-poids"
+      ]
+    },
+    {
+      "id": "PC1D-P03-004",
+      "lecon": "Le travail d'une force constante",
+      "type": "definition",
+      "recto": "De quoi dépend le travail du poids entre deux points $A$ et $B$ ?",
+      "verso": "Uniquement des altitudes de départ et d'arrivée, jamais du chemin suivi : la verticale, un plan incliné ou une ligne brisée donnent le même travail.",
+      "difficulte": 2,
+      "tags": [
+        "travail-poids",
+        "chemin"
+      ]
+    },
+    {
+      "id": "PC1D-P03-005",
+      "lecon": "Le travail d'une force constante",
+      "type": "formule",
+      "recto": "Quel est le travail d'une force de frottement d'intensité constante $f$ sur un trajet de longueur $L$ ?",
+      "verso": "$W(\\vec{f}) = -f \\times L$, la force étant toujours opposée au mouvement, même si le trajet est courbe.",
+      "difficulte": 2,
+      "tags": [
+        "frottement",
+        "travail"
+      ]
+    },
+    {
+      "id": "PC1D-P03-006",
+      "lecon": "Le travail d'une force constante",
+      "type": "definition",
+      "recto": "Pourquoi la réaction normale $\\vec{R}_N$ d'un support ne travaille-t-elle jamais, même si elle est très intense ?",
+      "verso": "Elle est perpendiculaire à la surface, donc au déplacement : $\\cos 90^{\\circ} = 0$ et $W(\\vec{R}_N) = 0~\\mathrm{J}$, quelle que soit son intensité.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "reaction-normale"
+      ]
+    },
+    {
+      "id": "PC1D-P03-007",
+      "lecon": "Le travail d'une force constante",
+      "type": "formule",
+      "recto": "Quand il y a frottement, que vaut le travail de la réaction $\\vec{R} = \\vec{R}_N + \\vec{R}_T$ d'un support ?",
+      "verso": "Seule la composante tangentielle $\\vec{R}_T$, qui est la force de frottement, travaille : $W(\\vec{R}) = W(\\vec{R}_T) = -f \\times L$.",
+      "difficulte": 2,
+      "tags": [
+        "reaction",
+        "frottement"
+      ]
+    },
+    {
+      "id": "PC1D-P03-008",
+      "lecon": "Le travail d'une force constante",
+      "type": "definition",
+      "recto": "Dans quel cas peut-on calculer le travail d'une force par $W = F \\times AB$, sans cosinus ?",
+      "verso": "Seulement si la force a la direction et le sens du déplacement. Dans le cas général, $W = F \\times AB \\times \\cos\\alpha$ ; oublier le cosinus surestime le travail.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "cosinus"
+      ]
+    },
+    {
+      "id": "PC1D-P03-009",
+      "lecon": "Le travail d'une force constante",
+      "type": "definition",
+      "recto": "Pourquoi une piste en lacets n'économise-t-elle pas de travail contre le poids ?",
+      "verso": "Le travail du poids ne dépend que de la dénivelée. Les lacets rendent seulement la montée plus facile : la force à exercer est plus petite, étalée sur une plus grande longueur.",
+      "difficulte": 2,
+      "tags": [
+        "travail-poids",
+        "lacets"
+      ]
+    },
+    {
+      "id": "PC1D-P03-010",
+      "lecon": "L'énergie cinétique d'un solide en translation",
+      "type": "definition",
+      "recto": "Quand dit-on qu'un solide est en translation ?",
+      "verso": "Lorsque tout segment qui joint deux de ses points garde une direction fixe au cours du mouvement. Tous ses points ont alors, à chaque instant, le même vecteur vitesse.",
+      "difficulte": 1,
+      "tags": [
+        "translation"
+      ]
+    },
+    {
+      "id": "PC1D-P03-011",
+      "lecon": "L'énergie cinétique d'un solide en translation",
+      "type": "definition",
+      "recto": "Quelles sont les trois sortes de translation d'un solide ?",
+      "verso": "Rectiligne, si les trajectoires sont des segments de droite ; circulaire, si ce sont des cercles de même rayon (planche de balançoire à deux cordes parallèles) ; curviligne dans les autres cas.",
+      "difficulte": 2,
+      "tags": [
+        "translation",
+        "types"
+      ]
+    },
+    {
+      "id": "PC1D-P03-012",
+      "lecon": "L'énergie cinétique d'un solide en translation",
+      "type": "formule",
+      "recto": "Quelle est l'expression de l'énergie cinétique d'un solide de masse $m$ en translation à la vitesse $v$ ?",
+      "verso": "$E_c = \\dfrac{1}{2}\\,m\\,v^{2}$, avec $m$ en kg, $v$ en m/s et $E_c$ en J. Elle est toujours positive ou nulle et ne dépend pas du sens du mouvement.",
+      "difficulte": 1,
+      "tags": [
+        "energie-cinetique"
+      ]
+    },
+    {
+      "id": "PC1D-P03-013",
+      "lecon": "L'énergie cinétique d'un solide en translation",
+      "type": "definition",
+      "recto": "Comment varie l'énergie cinétique d'un solide en translation quand sa vitesse double ?",
+      "verso": "Elle est multipliée par quatre, car $E_c$ est proportionnelle au carré de la vitesse.",
+      "difficulte": 2,
+      "tags": [
+        "energie-cinetique",
+        "carre-vitesse"
+      ]
+    },
+    {
+      "id": "PC1D-P03-014",
+      "lecon": "L'énergie cinétique d'un solide en translation",
+      "type": "definition",
+      "recto": "Comment l'énergie cinétique d'un solide varie-t-elle selon le signe du travail d'une force qui s'exerce sur lui ?",
+      "verso": "Un travail moteur augmente l'énergie cinétique (le solide accélère) ; un travail résistant la diminue ; un travail nul ne la modifie pas.",
+      "difficulte": 2,
+      "tags": [
+        "effet-force",
+        "energie-cinetique"
+      ]
+    },
+    {
+      "id": "PC1D-P03-015",
+      "lecon": "L'énergie cinétique d'un solide en translation",
+      "type": "definition",
+      "recto": "Pour une force d'orientation quelconque, quelle composante modifie l'énergie cinétique d'un solide ?",
+      "verso": "Seule la composante $\\vec{F}_T$ parallèle à la vitesse. La composante $\\vec{F}_N$ perpendiculaire à la vitesse change la direction du mouvement sans modifier $E_c$.",
+      "difficulte": 3,
+      "tags": [
+        "composante",
+        "energie-cinetique"
+      ]
+    },
+    {
+      "id": "PC1D-P03-016",
+      "lecon": "L'énergie cinétique d'un solide en translation",
+      "type": "definition",
+      "recto": "Pourquoi l'énergie cinétique d'un solide dépend-elle du référentiel ?",
+      "verso": "Parce qu'elle dépend de la vitesse, qui dépend du référentiel : un sac sur le porte-bagages d'une moto a une $E_c$ nulle dans le référentiel de la moto, mais pas dans le référentiel terrestre.",
+      "difficulte": 2,
+      "tags": [
+        "referentiel",
+        "energie-cinetique"
+      ]
+    },
+    {
+      "id": "PC1D-P03-017",
+      "lecon": "Les énergies potentielles",
+      "type": "definition",
+      "recto": "Quand dit-on qu'une force est conservative ?",
+      "verso": "Lorsque son travail entre deux points ne dépend pas du chemin suivi, mais seulement des positions de départ et d'arrivée. Le poids et la tension d'un ressort sont conservatifs ; le frottement ne l'est pas.",
+      "difficulte": 2,
+      "tags": [
+        "force-conservative"
+      ]
+    },
+    {
+      "id": "PC1D-P03-018",
+      "lecon": "Les énergies potentielles",
+      "type": "formule",
+      "recto": "Quelle est l'expression de l'énergie potentielle de pesanteur d'un solide de masse $m$ dont le centre d'inertie est à l'altitude $z$ ?",
+      "verso": "$E_{pp} = m\\,g\\,z$, avec $z$ comptée positivement vers le haut à partir d'une origine choisie ; $m$ en kg, $g$ en N/kg, $z$ en m, $E_{pp}$ en J.",
+      "difficulte": 1,
+      "tags": [
+        "energie-potentielle-pesanteur"
+      ]
+    },
+    {
+      "id": "PC1D-P03-019",
+      "lecon": "Les énergies potentielles",
+      "type": "formule",
+      "recto": "Quelle relation lie le travail du poids et la variation de l'énergie potentielle de pesanteur ?",
+      "verso": "$W_{A \\rightarrow B}(\\vec{P}) = -\\left(E_{pp}(B) - E_{pp}(A)\\right)$, soit $W(\\vec{P}) = -\\Delta E_{pp}$ : le travail du poids est l'opposé de la variation de $E_{pp}$.",
+      "difficulte": 2,
+      "tags": [
+        "travail-poids",
+        "energie-potentielle"
+      ]
+    },
+    {
+      "id": "PC1D-P03-020",
+      "lecon": "Les énergies potentielles",
+      "type": "definition",
+      "recto": "Quel est l'effet d'un changement d'origine des altitudes sur l'énergie potentielle de pesanteur ?",
+      "verso": "Il change la valeur de $E_{pp}$, mais ni sa variation $\\Delta E_{pp}$, ni le travail du poids, ni aucun résultat physique. Il faut donc annoncer son origine sur la copie.",
+      "difficulte": 2,
+      "tags": [
+        "origine",
+        "energie-potentielle"
+      ]
+    },
+    {
+      "id": "PC1D-P03-021",
+      "lecon": "Les énergies potentielles",
+      "type": "definition",
+      "recto": "Pourquoi l'énergie potentielle de pesanteur d'un solide peut-elle être négative ?",
+      "verso": "Parce que $z$ est une altitude algébrique : en dessous de l'origine choisie, $z \\lt 0$ et $E_{pp} = mgz \\lt 0$. Ne pas confondre $z$ avec la hauteur $h$, toujours positive.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "energie-potentielle"
+      ]
+    },
+    {
+      "id": "PC1D-P03-022",
+      "lecon": "Les énergies potentielles",
+      "type": "definition",
+      "recto": "A quel système appartient l'énergie potentielle de pesanteur ?",
+      "verso": "Au système Terre + solide, et non au solide seul : c'est une énergie d'interaction.",
+      "difficulte": 2,
+      "tags": [
+        "energie-interaction"
+      ]
+    },
+    {
+      "id": "PC1D-P03-023",
+      "lecon": "Les énergies potentielles",
+      "type": "formule",
+      "recto": "Quelle est l'expression de l'énergie potentielle élastique d'un ressort de raideur $k$ déformé de $x$ ?",
+      "verso": "$E_{pe} = \\dfrac{1}{2}\\,k\\,x^{2}$, avec $k$ en N/m, $x$ en mètres à partir de la longueur à vide, et $E_{pe}$ en J. Elle est toujours positive ou nulle, et $W(\\vec{T}) = -\\Delta E_{pe}$.",
+      "difficulte": 1,
+      "tags": [
+        "energie-potentielle-elastique",
+        "ressort"
+      ]
+    },
+    {
+      "id": "PC1D-P03-024",
+      "lecon": "Les énergies potentielles",
+      "type": "definition",
+      "recto": "Dans $E_{pe} = \\dfrac{1}{2}kx^{2}$, quelle erreur produit une déformation laissée en centimètres ?",
+      "verso": "Le résultat est multiplié par $10\\,000$, car $x$ est élevé au carré : $8~\\mathrm{cm}$ doivent s'écrire $0{,}080~\\mathrm{m}$.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "unite"
+      ]
+    },
+    {
+      "id": "PC1D-P03-025",
+      "lecon": "L'énergie mécanique, sa conservation et le rendement",
+      "type": "formule",
+      "recto": "Quelle est l'expression de l'énergie mécanique d'un système ?",
+      "verso": "$E_m = E_c + E_p = \\dfrac{1}{2}mv^{2} + mgz + \\dfrac{1}{2}kx^{2}$, le dernier terme n'apparaissant que s'il y a un ressort. Elle s'exprime en joules.",
+      "difficulte": 1,
+      "tags": [
+        "energie-mecanique"
+      ]
+    },
+    {
+      "id": "PC1D-P03-026",
+      "lecon": "L'énergie mécanique, sa conservation et le rendement",
+      "type": "definition",
+      "recto": "Quand dit-on qu'un système est mécaniquement isolé ?",
+      "verso": "Lorsqu'il n'échange pas de travail avec l'extérieur : seules des forces intérieures y travaillent, comme le poids pour le système Terre + solide.",
+      "difficulte": 2,
+      "tags": [
+        "systeme-isole"
+      ]
+    },
+    {
+      "id": "PC1D-P03-027",
+      "lecon": "L'énergie mécanique, sa conservation et le rendement",
+      "type": "formule",
+      "recto": "Pour un système isolé dans lequel seules des forces conservatives travaillent, que devient l'énergie mécanique ?",
+      "verso": "Elle se conserve : $E_m(B) = E_m(A)$, soit $\\Delta E_c = -\\Delta E_p$. Ce que l'énergie potentielle perd, l'énergie cinétique le gagne.",
+      "difficulte": 1,
+      "tags": [
+        "conservation",
+        "energie-mecanique"
+      ]
+    },
+    {
+      "id": "PC1D-P03-028",
+      "lecon": "L'énergie mécanique, sa conservation et le rendement",
+      "type": "formule",
+      "recto": "Pour un système isolé non conservatif, quelle relation donne la variation de l'énergie mécanique ?",
+      "verso": "$\\Delta E_m = E_m(B) - E_m(A)$ est égale à la somme des travaux des forces non conservatives ; pour des frottements, elle est négative. Relation de transfert : $\\Delta E_m = -\\Delta U$.",
+      "difficulte": 2,
+      "tags": [
+        "non-conservatif",
+        "relation-transfert"
+      ]
+    },
+    {
+      "id": "PC1D-P03-029",
+      "lecon": "L'énergie mécanique, sa conservation et le rendement",
+      "type": "definition",
+      "recto": "Que devient l'énergie mécanique perdue par frottement ?",
+      "verso": "Elle n'a pas disparu : elle a augmenté l'énergie interne $U$ des surfaces en contact et de l'air, qui s'échauffent. L'énergie totale $E = E_m + U$ d'un système isolé reste constante.",
+      "difficulte": 2,
+      "tags": [
+        "energie-interne",
+        "frottement"
+      ]
+    },
+    {
+      "id": "PC1D-P03-030",
+      "lecon": "L'énergie mécanique, sa conservation et le rendement",
+      "type": "formule",
+      "recto": "Pour un système Terre + solide non isolé dont l'énergie interne ne varie pas, quelle relation de transfert s'applique ?",
+      "verso": "$\\Delta E_m$ est égale à la somme des travaux de toutes les forces extérieures autres que le poids, chacun compté avec son signe.",
+      "difficulte": 3,
+      "tags": [
+        "non-isole",
+        "relation-transfert"
+      ]
+    },
+    {
+      "id": "PC1D-P03-031",
+      "lecon": "L'énergie mécanique, sa conservation et le rendement",
+      "type": "definition",
+      "recto": "Pourquoi ne faut-il pas écrire $\\Delta E_m = W(\\vec{P}) + W(\\vec{f})$ ?",
+      "verso": "Le poids est déjà compté dans $E_m$ par l'énergie potentielle, puisque $W(\\vec{P}) = -\\Delta E_{pp}$ : l'écrire aussi le compterait deux fois. On écrit $\\Delta E_m = W(\\vec{f})$.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "bilan"
+      ]
+    },
+    {
+      "id": "PC1D-P03-032",
+      "lecon": "L'énergie mécanique, sa conservation et le rendement",
+      "type": "formule",
+      "recto": "Comment calcule-t-on le rendement $\\eta$ d'un convertisseur mécanique ?",
+      "verso": "$\\eta = \\dfrac{\\lvert W_u \\rvert}{W_r} = 1 - \\dfrac{\\lvert Q_p \\rvert}{W_r}$, avec $W_r = \\lvert W_u \\rvert + \\lvert Q_p \\rvert$ ; aussi $\\eta = \\dfrac{E_u}{E_a}$ ou $\\dfrac{P_u}{P_a}$. Sans unité, toujours inférieur à 1.",
+      "difficulte": 2,
+      "tags": [
+        "rendement",
+        "convertisseur"
+      ]
+    },
+    {
+      "id": "PC1D-P03-033",
+      "lecon": "L'énergie mécanique, sa conservation et le rendement",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on un choc élastique ?",
+      "verso": "Un choc qui conserve l'énergie cinétique totale du système : la somme des $E_c$ avant le choc est égale à la somme des $E_c$ après. La quantité de mouvement totale se conserve aussi.",
+      "difficulte": 1,
+      "tags": [
+        "choc-elastique"
+      ]
+    },
+    {
+      "id": "PC1D-P03-034",
+      "lecon": "L'énergie mécanique, sa conservation et le rendement",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on un choc mou ?",
+      "verso": "Le cas extrême du choc inélastique : les corps restent solidaires après le choc et l'énergie cinétique totale diminue, une partie étant dissipée en déformation et en chaleur. La quantité de mouvement totale se conserve.",
+      "difficulte": 2,
+      "tags": [
+        "choc-mou"
+      ]
+    },
+    {
+      "id": "PC1D-P03-035",
+      "lecon": "L'énergie mécanique, sa conservation et le rendement",
+      "type": "definition",
+      "recto": "Quand dit-on qu'un choc entre deux corps est de plein fouet ?",
+      "verso": "Lorsque les vitesses des deux corps, avant et après le choc, restent portées par une même droite.",
+      "difficulte": 2,
+      "tags": [
+        "plein-fouet",
+        "choc"
+      ]
+    },
+    {
+      "id": "PC1D-P03-036",
+      "lecon": "L'énergie mécanique, sa conservation et le rendement",
+      "type": "formule",
+      "recto": "Lors d'un choc élastique de plein fouet d'un corps $(m_1, v_1)$ sur un corps $m_2$ immobile, quelles sont les vitesses après le choc ?",
+      "verso": "$v_1' = \\dfrac{m_1 - m_2}{m_1 + m_2}\\,v_1$ et $v_2' = \\dfrac{2m_1}{m_1 + m_2}\\,v_1$ (valeurs algébriques) ; $v_1' \\lt 0$ signifie que le premier corps rebondit.",
+      "difficulte": 3,
+      "tags": [
+        "choc-elastique",
+        "plein-fouet"
+      ]
+    }
+  ]
+}

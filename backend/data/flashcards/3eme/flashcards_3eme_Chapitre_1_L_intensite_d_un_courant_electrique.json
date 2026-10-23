@@ -1,0 +1,378 @@
+{
+  "matiere": "Physique-Chimie",
+  "partie": "Physique",
+  "niveau": "3ème",
+  "chapitre": "Physique, Chapitre 1 : L'intensité d'un courant électrique",
+  "source": "pc/3eme/Chapitre_1_L_intensite_d_un_courant_electrique",
+  "nombre_cartes": 30,
+  "cartes": [
+    {
+      "id": "PC3E-P01-001",
+      "lecon": "La notion d'intensité, son unité et son instrument de mesure",
+      "type": "definition",
+      "recto": "En électricité, qu'appelle-t-on l'intensité du courant ?",
+      "verso": "C'est la grandeur qui dit si le courant est plus ou moins intense. On la note $I$ ; plus elle est grande, plus une lampe donnée brille.",
+      "difficulte": 1,
+      "tags": [
+        "intensite",
+        "definition"
+      ]
+    },
+    {
+      "id": "PC3E-P01-002",
+      "lecon": "La notion d'intensité, son unité et son instrument de mesure",
+      "type": "definition",
+      "recto": "Dans un circuit électrique, où se mesure l'intensité du courant ?",
+      "verso": "L'intensité se mesure en un point du circuit (alors que la tension se mesure entre deux points).",
+      "difficulte": 2,
+      "tags": [
+        "intensite",
+        "en-un-point"
+      ]
+    },
+    {
+      "id": "PC3E-P01-003",
+      "lecon": "La notion d'intensité, son unité et son instrument de mesure",
+      "type": "definition",
+      "recto": "Quelle est l'unité légale de l'intensité du courant électrique, avec son symbole ?",
+      "verso": "L'ampère, de symbole $\\mathrm{A}$ (un A majuscule, sans point).",
+      "difficulte": 1,
+      "tags": [
+        "unite",
+        "ampere"
+      ]
+    },
+    {
+      "id": "PC3E-P01-004",
+      "lecon": "La notion d'intensité, son unité et son instrument de mesure",
+      "type": "formule",
+      "recto": "Quelles relations lient l'ampère, le milliampère et le microampère ?",
+      "verso": "$1~\\mathrm{A} = 1\\,000~\\mathrm{mA}$ et $1~\\mathrm{mA} = 1\\,000~\\mu\\mathrm{A}$.",
+      "difficulte": 1,
+      "tags": [
+        "conversion",
+        "milliampere",
+        "microampere"
+      ]
+    },
+    {
+      "id": "PC3E-P01-005",
+      "lecon": "La notion d'intensité, son unité et son instrument de mesure",
+      "type": "formule",
+      "recto": "Comment s'écrivent $1~\\mathrm{mA}$, $1~\\mu\\mathrm{A}$ et $1~\\mathrm{kA}$ en ampères avec les puissances de dix ?",
+      "verso": "$1~\\mathrm{mA} = 10^{-3}~\\mathrm{A}$ ; $1~\\mu\\mathrm{A} = 10^{-6}~\\mathrm{A}$ ; $1~\\mathrm{kA} = 10^{3}~\\mathrm{A}$.",
+      "difficulte": 2,
+      "tags": [
+        "conversion",
+        "puissances-de-dix"
+      ]
+    },
+    {
+      "id": "PC3E-P01-006",
+      "lecon": "La notion d'intensité, son unité et son instrument de mesure",
+      "type": "formule",
+      "recto": "Pour convertir une intensité des ampères en microampères, par quel nombre multiplie-t-on ?",
+      "verso": "Par $1\\,000\\,000$ : il y a deux marches de $1\\,000$ (des A aux mA, puis des mA aux $\\mu\\mathrm{A}$).",
+      "difficulte": 2,
+      "tags": [
+        "conversion",
+        "microampere"
+      ]
+    },
+    {
+      "id": "PC3E-P01-007",
+      "lecon": "La notion d'intensité, son unité et son instrument de mesure",
+      "type": "definition",
+      "recto": "Quel instrument mesure l'intensité du courant électrique ?",
+      "verso": "L'ampèremètre, que l'on reconnaît à la lettre A inscrite sur son cadran.",
+      "difficulte": 1,
+      "tags": [
+        "amperemetre",
+        "instrument"
+      ]
+    },
+    {
+      "id": "PC3E-P01-008",
+      "lecon": "La notion d'intensité, son unité et son instrument de mesure",
+      "type": "definition",
+      "recto": "Sur quelle position place-t-on un multimètre pour qu'il joue le rôle d'un ampèremètre ?",
+      "verso": "Sur la position « A » ou « mA ».",
+      "difficulte": 1,
+      "tags": [
+        "multimetre",
+        "amperemetre"
+      ]
+    },
+    {
+      "id": "PC3E-P01-009",
+      "lecon": "La notion d'intensité, son unité et son instrument de mesure",
+      "type": "definition",
+      "recto": "Quel est le symbole normalisé de l'ampèremètre sur un schéma électrique ?",
+      "verso": "Un cercle contenant la lettre A.",
+      "difficulte": 1,
+      "tags": [
+        "symbole",
+        "amperemetre",
+        "schema"
+      ]
+    },
+    {
+      "id": "PC3E-P01-010",
+      "lecon": "La notion d'intensité, son unité et son instrument de mesure",
+      "type": "definition",
+      "recto": "Pourquoi l'éclat d'une lampe ne suffit-il pas pour connaître l'intensité du courant qui la traverse ?",
+      "verso": "L'éclat est un effet du courant : l'oeil classe deux courants mais ne les mesure pas. L'intensité est une grandeur qui exige un instrument, une unité et un nombre : seul l'ampèremètre donne une valeur en ampères.",
+      "difficulte": 2,
+      "tags": [
+        "intensite",
+        "grandeur",
+        "effet"
+      ]
+    },
+    {
+      "id": "PC3E-P01-011",
+      "lecon": "La notion d'intensité, son unité et son instrument de mesure",
+      "type": "definition",
+      "recto": "Quelle confusion de vocabulaire commet un élève qui écrit « l'intensité vaut 0,25 ampèremètre » ?",
+      "verso": "Il confond l'ampère, qui est l'unité, et l'ampèremètre, qui est l'appareil de mesure. On écrit $0{,}25~\\mathrm{A}$.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "ampere",
+        "amperemetre"
+      ]
+    },
+    {
+      "id": "PC3E-P01-012",
+      "lecon": "Brancher un ampèremètre : le montage en série et la polarité",
+      "type": "formule",
+      "recto": "Selon quel mode se branche toujours un ampèremètre par rapport au dipôle étudié ?",
+      "verso": "Toujours en série avec le dipôle dont on veut mesurer l'intensité du courant.",
+      "difficulte": 1,
+      "tags": [
+        "branchement",
+        "en-serie"
+      ]
+    },
+    {
+      "id": "PC3E-P01-013",
+      "lecon": "Brancher un ampèremètre : le montage en série et la polarité",
+      "type": "formule",
+      "recto": "Quel geste fait-on sur le circuit pour installer un ampèremètre ?",
+      "verso": "On ouvre le circuit à l'endroit choisi, dans la boucle du dipôle étudié, puis on insère l'ampèremètre dans la coupure.",
+      "difficulte": 2,
+      "tags": [
+        "branchement",
+        "en-serie"
+      ]
+    },
+    {
+      "id": "PC3E-P01-014",
+      "lecon": "Brancher un ampèremètre : le montage en série et la polarité",
+      "type": "definition",
+      "recto": "Pourquoi l'ampèremètre doit-il être branché en série ?",
+      "verso": "Mesurer une intensité, c'est mesurer ce qui traverse un point : tout le courant doit passer par l'appareil, et seul le montage en série l'y oblige.",
+      "difficulte": 2,
+      "tags": [
+        "en-serie",
+        "justification"
+      ]
+    },
+    {
+      "id": "PC3E-P01-015",
+      "lecon": "Brancher un ampèremètre : le montage en série et la polarité",
+      "type": "formule",
+      "recto": "Pour un ampèremètre, par quelle borne le courant doit-il entrer et par quelle borne doit-il sortir ?",
+      "verso": "Il entre par la borne $+$ (ou la borne A d'un multimètre) et sort par la borne $-$ (ou COM).",
+      "difficulte": 2,
+      "tags": [
+        "polarite",
+        "bornes"
+      ]
+    },
+    {
+      "id": "PC3E-P01-016",
+      "lecon": "Brancher un ampèremètre : le montage en série et la polarité",
+      "type": "definition",
+      "recto": "Pourquoi dit-on qu'un ampèremètre est un appareil polarisé ?",
+      "verso": "Parce que ses deux bornes ne sont pas interchangeables : le courant doit entrer par la borne $+$ et sortir par la borne $-$ ou COM.",
+      "difficulte": 2,
+      "tags": [
+        "polarite"
+      ]
+    },
+    {
+      "id": "PC3E-P01-017",
+      "lecon": "Brancher un ampèremètre : le montage en série et la polarité",
+      "type": "formule",
+      "recto": "Dans un circuit, vers quelle borne du générateur la borne $+$ de l'ampèremètre doit-elle être tournée ?",
+      "verso": "Vers la borne $+$ du générateur : en partant de la borne $+$ du générateur et en suivant les fils, la première borne rencontrée sur l'appareil doit être sa borne $+$.",
+      "difficulte": 2,
+      "tags": [
+        "polarite",
+        "generateur"
+      ]
+    },
+    {
+      "id": "PC3E-P01-018",
+      "lecon": "Brancher un ampèremètre : le montage en série et la polarité",
+      "type": "formule",
+      "recto": "Sur un multimètre utilisé en ampèremètre, à quelles bornes vont le fil rouge et le fil noir ?",
+      "verso": "Le fil rouge va à la borne A, le fil noir à la borne COM.",
+      "difficulte": 1,
+      "tags": [
+        "multimetre",
+        "bornes"
+      ]
+    },
+    {
+      "id": "PC3E-P01-019",
+      "lecon": "Brancher un ampèremètre : le montage en série et la polarité",
+      "type": "definition",
+      "recto": "Quelle conséquence a une erreur de polarité selon que l'ampèremètre est numérique ou à aiguille ?",
+      "verso": "L'appareil numérique affiche la valeur précédée d'un signe moins, sans dommage. Sur l'appareil à aiguille, l'aiguille frappe la butée de gauche et peut se tordre.",
+      "difficulte": 3,
+      "tags": [
+        "polarite",
+        "numerique",
+        "aiguille"
+      ]
+    },
+    {
+      "id": "PC3E-P01-020",
+      "lecon": "Brancher un ampèremètre : le montage en série et la polarité",
+      "type": "definition",
+      "recto": "Pourquoi un ampèremètre branché en dérivation aux bornes d'une lampe ou d'un générateur est-il détruit ?",
+      "verso": "Ainsi placé, il devient un fil de court-circuit : la lampe s'éteint et l'appareil est aussitôt détruit. L'ampèremètre se met en série, c'est le voltmètre qui se met en dérivation.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "derivation",
+        "court-circuit"
+      ]
+    },
+    {
+      "id": "PC3E-P01-021",
+      "lecon": "Le calibre et la lecture d'un ampèremètre à aiguille",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on le calibre d'un ampèremètre ?",
+      "verso": "C'est l'intensité maximale que l'appareil peut mesurer sur la position choisie. Sur un appareil à aiguille, c'est l'intensité qui amène l'aiguille au bout de l'échelle.",
+      "difficulte": 1,
+      "tags": [
+        "calibre",
+        "definition"
+      ]
+    },
+    {
+      "id": "PC3E-P01-022",
+      "lecon": "Le calibre et la lecture d'un ampèremètre à aiguille",
+      "type": "formule",
+      "recto": "Pourquoi commence-t-on toujours une mesure à l'ampèremètre par le plus grand calibre ?",
+      "verso": "Parce que le plus grand calibre protège l'appareil tant qu'on ignore l'ordre de grandeur du courant. On descend ensuite de calibre.",
+      "difficulte": 2,
+      "tags": [
+        "calibre",
+        "choix"
+      ]
+    },
+    {
+      "id": "PC3E-P01-023",
+      "lecon": "Le calibre et la lecture d'un ampèremètre à aiguille",
+      "type": "formule",
+      "recto": "Pour un ampèremètre, quel est le calibre le mieux adapté à une mesure ?",
+      "verso": "Le plus petit calibre immédiatement supérieur à la valeur mesurée : il donne la plus grande déviation, donc la lecture la plus précise.",
+      "difficulte": 2,
+      "tags": [
+        "calibre",
+        "precision"
+      ]
+    },
+    {
+      "id": "PC3E-P01-024",
+      "lecon": "Le calibre et la lecture d'un ampèremètre à aiguille",
+      "type": "formule",
+      "recto": "Sur un ampèremètre à aiguille, quelle relation donne l'intensité $I$ à partir du calibre $C$, du nombre total de divisions $N$ et de la division atteinte $n$ ?",
+      "verso": "$I = \\dfrac{C \\times n}{N}$ ; $I$ s'exprime dans l'unité du calibre $C$.",
+      "difficulte": 2,
+      "tags": [
+        "lecture",
+        "aiguille",
+        "formule"
+      ]
+    },
+    {
+      "id": "PC3E-P01-025",
+      "lecon": "Le calibre et la lecture d'un ampèremètre à aiguille",
+      "type": "formule",
+      "recto": "Sur un ampèremètre à aiguille de calibre $C$ et d'échelle $N$ divisions, quelle relation permet de prévoir la division $n$ atteinte pour une intensité $I$ ?",
+      "verso": "$n = \\dfrac{I \\times N}{C}$, avec $I$ et $C$ dans la même unité.",
+      "difficulte": 2,
+      "tags": [
+        "lecture",
+        "division-atteinte"
+      ]
+    },
+    {
+      "id": "PC3E-P01-026",
+      "lecon": "Le calibre et la lecture d'un ampèremètre à aiguille",
+      "type": "definition",
+      "recto": "Dans la relation $I = \\dfrac{C \\times n}{N}$, que représente le quotient $\\dfrac{n}{N}$ ?",
+      "verso": "La fraction du cadran parcourue par l'aiguille : à mi-cadran sur le calibre $1~\\mathrm{A}$, l'intensité vaut $0{,}5~\\mathrm{A}$.",
+      "difficulte": 2,
+      "tags": [
+        "lecture",
+        "fraction-du-cadran"
+      ]
+    },
+    {
+      "id": "PC3E-P01-027",
+      "lecon": "Le calibre et la lecture d'un ampèremètre à aiguille",
+      "type": "formule",
+      "recto": "Dans les sujets du BEPC, comment s'écrit la lecture d'un ampèremètre à aiguille avec la lecture $L$ et l'échelle $E$ ?",
+      "verso": "$I = \\dfrac{C \\times L}{E}$, où $C$ est le calibre, $L$ la division atteinte (lecture) et $E$ le nombre total de divisions (échelle).",
+      "difficulte": 2,
+      "tags": [
+        "bepc",
+        "lecture",
+        "echelle"
+      ]
+    },
+    {
+      "id": "PC3E-P01-028",
+      "lecon": "Le calibre et la lecture d'un ampèremètre à aiguille",
+      "type": "definition",
+      "recto": "Dans les sujets du BEPC, qu'appelle-t-on l'opérateur d'un ampèremètre à aiguille ?",
+      "verso": "Le quotient $\\dfrac{C}{E}$ du calibre par l'échelle : c'est la valeur d'une division. Avec $C = 0{,}3~\\mathrm{A}$ et $E = 30$, il vaut $0{,}01~\\mathrm{A}$ par division.",
+      "difficulte": 2,
+      "tags": [
+        "bepc",
+        "operateur"
+      ]
+    },
+    {
+      "id": "PC3E-P01-029",
+      "lecon": "Le calibre et la lecture d'un ampèremètre à aiguille",
+      "type": "definition",
+      "recto": "Pourquoi un élève a-t-il forcément tort s'il écrit « j'ai mesuré $1{,}5~\\mathrm{A}$ sur le calibre $300~\\mathrm{mA}$ » ?",
+      "verso": "Parce que la valeur mesurée ne peut jamais dépasser le calibre, intensité maximale mesurable sur la position choisie. Il faut un calibre supérieur à $1{,}5~\\mathrm{A}$.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "calibre"
+      ]
+    },
+    {
+      "id": "PC3E-P01-030",
+      "lecon": "Le calibre et la lecture d'un ampèremètre à aiguille",
+      "type": "definition",
+      "recto": "Quelle différence y a-t-il entre le calibre d'un ampèremètre et la valeur qu'il mesure ?",
+      "verso": "Le calibre est l'intensité maximale mesurable sur la position choisie (l'aiguille au bout du cadran) ; la valeur mesurée se calcule à partir de la division atteinte et lui est inférieure.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "calibre",
+        "valeur-mesuree"
+      ]
+    }
+  ]
+}

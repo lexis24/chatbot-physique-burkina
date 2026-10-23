@@ -1,0 +1,402 @@
+{
+  "matiere": "Physique-Chimie",
+  "partie": "Physique",
+  "niveau": "3ème",
+  "chapitre": "Physique, Chapitre 8 : Les mesures de résistances",
+  "source": "pc/3eme/Chapitre_8_Les_mesures_de_resistances",
+  "nombre_cartes": 34,
+  "cartes": [
+    {
+      "id": "PC3E-P08-001",
+      "lecon": "L'ohmmètre et la mesure directe d'une résistance",
+      "type": "definition",
+      "recto": "Qu'est-ce qu'un ohmmètre ?",
+      "verso": "C'est l'appareil qui mesure directement la résistance d'un conducteur ohmique. C'est une fonction du multimètre, obtenue en plaçant le sélecteur dans la zone $\\Omega$.",
+      "difficulte": 1,
+      "tags": [
+        "ohmmetre",
+        "multimetre"
+      ]
+    },
+    {
+      "id": "PC3E-P08-002",
+      "lecon": "L'ohmmètre et la mesure directe d'une résistance",
+      "type": "definition",
+      "recto": "Par quelles deux méthodes peut-on déterminer la résistance d'un conducteur ohmique ?",
+      "verso": "Directement, à l'ohmmètre ; ou indirectement, par la méthode voltampèremétrique : on mesure $U$ et $I$ puis on calcule $R = \\dfrac{U}{I}$.",
+      "difficulte": 1,
+      "tags": [
+        "methodes-de-mesure"
+      ]
+    },
+    {
+      "id": "PC3E-P08-003",
+      "lecon": "L'ohmmètre et la mesure directe d'une résistance",
+      "type": "formule",
+      "recto": "Dans quelles conditions doit-on utiliser un ohmmètre pour mesurer une résistance ?",
+      "verso": "Sur un dipôle isolé : débranché du circuit au moins par une de ses bornes, circuit hors tension, sans toucher les parties métalliques avec les doigts pendant la mesure.",
+      "difficulte": 2,
+      "tags": [
+        "ohmmetre",
+        "conditions"
+      ]
+    },
+    {
+      "id": "PC3E-P08-004",
+      "lecon": "L'ohmmètre et la mesure directe d'une résistance",
+      "type": "definition",
+      "recto": "Pourquoi la mesure d'une résistance à l'ohmmètre est-elle fausse si le circuit est sous tension ?",
+      "verso": "L'ohmmètre contient sa propre source de courant : une tension extérieure ajoute un courant qu'il ne peut pas distinguer du sien, et le résultat perd tout sens.",
+      "difficulte": 3,
+      "tags": [
+        "ohmmetre",
+        "piege"
+      ]
+    },
+    {
+      "id": "PC3E-P08-005",
+      "lecon": "L'ohmmètre et la mesure directe d'une résistance",
+      "type": "definition",
+      "recto": "Pour un multimètre, qu'appelle-t-on le calibre ?",
+      "verso": "C'est la plus grande valeur affichable dans la position choisie. On choisit le calibre immédiatement supérieur à la valeur attendue.",
+      "difficulte": 2,
+      "tags": [
+        "calibre"
+      ]
+    },
+    {
+      "id": "PC3E-P08-006",
+      "lecon": "L'ohmmètre et la mesure directe d'une résistance",
+      "type": "definition",
+      "recto": "Sur un ohmmètre numérique, que signifie un affichage « 1 » isolé ou « OL » ?",
+      "verso": "C'est un dépassement de calibre, et non une mesure de $1~\\Omega$ : il faut passer au calibre supérieur.",
+      "difficulte": 3,
+      "tags": [
+        "calibre",
+        "piege"
+      ]
+    },
+    {
+      "id": "PC3E-P08-007",
+      "lecon": "L'ohmmètre et la mesure directe d'une résistance",
+      "type": "formule",
+      "recto": "Sur l'ohmmètre d'un multimètre réglé sur le calibre $20~\\mathrm{k\\Omega}$, comment lit-on l'affichage 4,70 ?",
+      "verso": "L'affichage est dans l'unité du calibre : $R = 4{,}70~\\mathrm{k\\Omega}$, soit $4\\,700~\\Omega$.",
+      "difficulte": 2,
+      "tags": [
+        "lecture",
+        "calibre"
+      ]
+    },
+    {
+      "id": "PC3E-P08-008",
+      "lecon": "L'ohmmètre et la mesure directe d'une résistance",
+      "type": "definition",
+      "recto": "A l'ohmmètre, qu'indique un dépassement qui persiste sur le plus grand calibre ?",
+      "verso": "Le conducteur est coupé. A l'inverse, un affichage voisin de zéro sur le plus petit calibre indique qu'il est court-circuité.",
+      "difficulte": 2,
+      "tags": [
+        "panne"
+      ]
+    },
+    {
+      "id": "PC3E-P08-009",
+      "lecon": "Le code des couleurs des résistors",
+      "type": "definition",
+      "recto": "Sur un résistor à quatre anneaux colorés, quel est le rôle de chacun des anneaux ?",
+      "verso": "Le premier donne le chiffre des dizaines, le deuxième le chiffre des unités, le troisième le multiplicateur (nombre de zéros à ajouter), le quatrième la tolérance en pourcent.",
+      "difficulte": 1,
+      "tags": [
+        "code-des-couleurs"
+      ]
+    },
+    {
+      "id": "PC3E-P08-010",
+      "lecon": "Le code des couleurs des résistors",
+      "type": "formule",
+      "recto": "Avec le code des couleurs d'un résistor à quatre anneaux, quelle formule donne sa résistance en ohms ?",
+      "verso": "$R = (\\text{chiffre 1} \\times 10 + \\text{chiffre 2}) \\times \\text{multiplicateur}$, le multiplicateur étant donné par le troisième anneau. Le quatrième anneau n'entre pas dans le calcul.",
+      "difficulte": 2,
+      "tags": [
+        "code-des-couleurs",
+        "formule"
+      ]
+    },
+    {
+      "id": "PC3E-P08-011",
+      "lecon": "Le code des couleurs des résistors",
+      "type": "definition",
+      "recto": "Dans le code des couleurs des résistors, quels chiffres correspondent aux dix couleurs, du noir au blanc ?",
+      "verso": "Noir 0, marron 1, rouge 2, orange 3, jaune 4, vert 5, bleu 6, violet 7, gris 8, blanc 9.",
+      "difficulte": 1,
+      "tags": [
+        "code-des-couleurs"
+      ]
+    },
+    {
+      "id": "PC3E-P08-012",
+      "lecon": "Le code des couleurs des résistors",
+      "type": "definition",
+      "recto": "Dans le code des couleurs des résistors, quelle tolérance indiquent un quatrième anneau or et un quatrième anneau argent ?",
+      "verso": "Or : $\\pm 5\\ \\%$ ; argent : $\\pm 10\\ \\%$. L'or et l'argent ne sont jamais des chiffres.",
+      "difficulte": 1,
+      "tags": [
+        "tolerance"
+      ]
+    },
+    {
+      "id": "PC3E-P08-013",
+      "lecon": "Le code des couleurs des résistors",
+      "type": "formule",
+      "recto": "Pourquoi un résistor marron-noir-rouge a-t-il une résistance de $1\\,000~\\Omega$ et non de $102~\\Omega$ ?",
+      "verso": "Le troisième anneau n'est pas un chiffre de plus mais un multiplicateur : rouge vaut $\\times 100$, donc $R = 10 \\times 100 = 1\\,000~\\Omega$.",
+      "difficulte": 3,
+      "tags": [
+        "multiplicateur",
+        "piege"
+      ]
+    },
+    {
+      "id": "PC3E-P08-014",
+      "lecon": "Le code des couleurs des résistors",
+      "type": "formule",
+      "recto": "Pour un résistor jaune-violet-orange, comment écrit-on sa résistance avec une puissance de 10 ?",
+      "verso": "$R = 47 \\times 10^{3}~\\Omega$ : le chiffre du troisième anneau (orange, 3) est l'exposant de 10.",
+      "difficulte": 2,
+      "tags": [
+        "puissance-de-10"
+      ]
+    },
+    {
+      "id": "PC3E-P08-015",
+      "lecon": "Le code des couleurs des résistors",
+      "type": "formule",
+      "recto": "Pour un résistor de valeur nominale $R$ et de tolérance $t$ (en pourcent), comment encadre-t-on sa valeur réelle ?",
+      "verso": "On calcule l'écart maximal $\\Delta R = R \\times \\dfrac{t}{100}$, puis $R_{\\text{min}} = R - \\Delta R$ et $R_{\\text{max}} = R + \\Delta R$. Si la mesure tombe dans l'intervalle, le composant est conforme ; sinon, il est hors tolérance.",
+      "difficulte": 2,
+      "tags": [
+        "tolerance",
+        "encadrement"
+      ]
+    },
+    {
+      "id": "PC3E-P08-016",
+      "lecon": "Le code des couleurs des résistors",
+      "type": "definition",
+      "recto": "Pour lire un résistor à quatre anneaux, comment l'oriente-t-on ?",
+      "verso": "L'anneau doré ou argenté (tolérance) à droite, le groupe des trois anneaux serrés à gauche, puis on lit de gauche à droite.",
+      "difficulte": 2,
+      "tags": [
+        "sens-de-lecture"
+      ]
+    },
+    {
+      "id": "PC3E-P08-017",
+      "lecon": "Le code des couleurs des résistors",
+      "type": "definition",
+      "recto": "Que donnent les anneaux d'un résistor qui ne porte que trois anneaux colorés ?",
+      "verso": "Ce sont les trois anneaux de la valeur : chiffre des dizaines, chiffre des unités et multiplicateur.",
+      "difficulte": 3,
+      "tags": [
+        "code-des-couleurs"
+      ]
+    },
+    {
+      "id": "PC3E-P08-018",
+      "lecon": "La méthode voltampèremétrique",
+      "type": "definition",
+      "recto": "En quoi consiste la méthode voltampèremétrique de mesure d'une résistance ?",
+      "verso": "On mesure en même temps la tension $U$ aux bornes du conducteur et l'intensité $I$ du courant qui le traverse, puis on calcule sa résistance par la loi d'Ohm, $R = \\dfrac{U}{I}$. On l'appelle aussi méthode voltmètre-ampèremètre.",
+      "difficulte": 1,
+      "tags": [
+        "voltamperemetrique"
+      ]
+    },
+    {
+      "id": "PC3E-P08-019",
+      "lecon": "La méthode voltampèremétrique",
+      "type": "formule",
+      "recto": "Dans la méthode voltampèremétrique, comment branche-t-on l'ampèremètre et le voltmètre ?",
+      "verso": "L'ampèremètre en série avec le conducteur, le voltmètre en dérivation aux bornes du conducteur seul : c'est le montage courte dérivation, ou montage aval.",
+      "difficulte": 2,
+      "tags": [
+        "montage",
+        "branchement"
+      ]
+    },
+    {
+      "id": "PC3E-P08-020",
+      "lecon": "La méthode voltampèremétrique",
+      "type": "formule",
+      "recto": "Dans la relation $R = \\dfrac{U}{I}$ de la méthode voltampèremétrique, quelles unités faut-il employer ?",
+      "verso": "$U$ en volts, $I$ en ampères, $R$ en ohms. Une intensité lue en milliampères se convertit avant le calcul, sinon le résultat est mille fois trop petit.",
+      "difficulte": 2,
+      "tags": [
+        "unites"
+      ]
+    },
+    {
+      "id": "PC3E-P08-021",
+      "lecon": "La méthode voltampèremétrique",
+      "type": "definition",
+      "recto": "Quelle différence d'état du circuit sépare la méthode voltampèremétrique de la mesure à l'ohmmètre ?",
+      "verso": "La méthode voltampèremétrique exige un circuit en fonctionnement ; la mesure à l'ohmmètre exige un dipôle débranché, circuit hors tension.",
+      "difficulte": 3,
+      "tags": [
+        "comparaison",
+        "piege"
+      ]
+    },
+    {
+      "id": "PC3E-P08-022",
+      "lecon": "La méthode voltampèremétrique",
+      "type": "definition",
+      "recto": "Dans la méthode voltampèremétrique, pourquoi relève-t-on plusieurs couples $(U, I)$ plutôt qu'un seul ?",
+      "verso": "Une seule mesure ne prouve rien. Si les quotients $\\dfrac{U}{I}$ restent voisins, on prend leur moyenne ; s'ils augmentent ou diminuent régulièrement, le dipôle n'est pas un conducteur ohmique.",
+      "difficulte": 2,
+      "tags": [
+        "plusieurs-mesures"
+      ]
+    },
+    {
+      "id": "PC3E-P08-023",
+      "lecon": "La méthode voltampèremétrique",
+      "type": "definition",
+      "recto": "Pour un même conducteur ohmique, pourquoi les quotients $\\dfrac{U}{I}$ mesurés ne sont-ils pas exactement égaux ?",
+      "verso": "Chaque appareil ne se lit qu'à une graduation près et le calibre limite le nombre de chiffres affichés : les écarts viennent de la lecture, non d'une variation de la résistance.",
+      "difficulte": 2,
+      "tags": [
+        "incertitude"
+      ]
+    },
+    {
+      "id": "PC3E-P08-024",
+      "lecon": "La méthode voltampèremétrique",
+      "type": "formule",
+      "recto": "Comment détermine-t-on la résistance d'un conducteur ohmique à partir de sa caractéristique $U = f(I)$ ?",
+      "verso": "La caractéristique est une droite passant par l'origine ; $R$ est sa pente, mesurée entre deux points bien écartés de la droite tracée.",
+      "difficulte": 2,
+      "tags": [
+        "caracteristique",
+        "pente"
+      ]
+    },
+    {
+      "id": "PC3E-P08-025",
+      "lecon": "Les résistances qui varient : température et lumière",
+      "type": "formule",
+      "recto": "Comment varie la résistance du filament d'une lampe à incandescence avec la température ?",
+      "verso": "Elle augmente quand la température augmente : la résistance du filament à chaud est très supérieure à sa résistance à froid.",
+      "difficulte": 1,
+      "tags": [
+        "lampe",
+        "temperature"
+      ]
+    },
+    {
+      "id": "PC3E-P08-026",
+      "lecon": "Les résistances qui varient : température et lumière",
+      "type": "definition",
+      "recto": "Pourquoi une lampe à incandescence n'est-elle pas un conducteur ohmique ?",
+      "verso": "Quand la tension augmente, le filament s'échauffe et sa résistance change : le quotient $\\dfrac{U}{I}$ n'est pas constant et sa caractéristique $U = f(I)$ n'est pas une droite.",
+      "difficulte": 2,
+      "tags": [
+        "lampe",
+        "caracteristique"
+      ]
+    },
+    {
+      "id": "PC3E-P08-027",
+      "lecon": "Les résistances qui varient : température et lumière",
+      "type": "definition",
+      "recto": "Quelle résistance d'une lampe à incandescence l'ohmmètre mesure-t-il ?",
+      "verso": "Toujours la résistance du filament froid, puisque la lampe est éteinte et débranchée. La résistance en fonctionnement se calcule par $R = \\dfrac{U}{I}$.",
+      "difficulte": 3,
+      "tags": [
+        "lampe",
+        "piege"
+      ]
+    },
+    {
+      "id": "PC3E-P08-028",
+      "lecon": "Les résistances qui varient : température et lumière",
+      "type": "definition",
+      "recto": "Qu'est-ce qu'une thermistance CTN ?",
+      "verso": "Un dipôle dont la résistance dépend fortement de la température : elle diminue quand la température augmente, à l'inverse d'un filament métallique.",
+      "difficulte": 2,
+      "tags": [
+        "thermistance"
+      ]
+    },
+    {
+      "id": "PC3E-P08-029",
+      "lecon": "Les résistances qui varient : température et lumière",
+      "type": "definition",
+      "recto": "Comment représente-t-on le symbole d'une thermistance ?",
+      "verso": "Par le rectangle du résistor traversé d'un trait oblique portant $\\theta$ ou t°.",
+      "difficulte": 2,
+      "tags": [
+        "thermistance",
+        "symbole"
+      ]
+    },
+    {
+      "id": "PC3E-P08-030",
+      "lecon": "Les résistances qui varient : température et lumière",
+      "type": "definition",
+      "recto": "Quelles sont les principales applications d'une thermistance ?",
+      "verso": "Thermomètre électronique et sonde de température ; régulation d'une couveuse, d'un four, d'un chauffe-eau ou d'un réfrigérateur ; protection d'un moteur contre l'échauffement ; détecteur d'incendie.",
+      "difficulte": 1,
+      "tags": [
+        "thermistance",
+        "applications"
+      ]
+    },
+    {
+      "id": "PC3E-P08-031",
+      "lecon": "Les résistances qui varient : température et lumière",
+      "type": "definition",
+      "recto": "Qu'est-ce qu'une photorésistance (LDR) ?",
+      "verso": "Un dipôle dont la résistance dépend de l'éclairement : elle diminue quand la lumière reçue augmente, très grande dans l'obscurité et très faible en plein jour.",
+      "difficulte": 2,
+      "tags": [
+        "photoresistance"
+      ]
+    },
+    {
+      "id": "PC3E-P08-032",
+      "lecon": "Les résistances qui varient : température et lumière",
+      "type": "definition",
+      "recto": "Comment représente-t-on le symbole d'une photorésistance ?",
+      "verso": "Par le rectangle du résistor portant deux flèches obliques dirigées vers lui (parfois dessiné à l'intérieur d'un cercle).",
+      "difficulte": 2,
+      "tags": [
+        "photoresistance",
+        "symbole"
+      ]
+    },
+    {
+      "id": "PC3E-P08-033",
+      "lecon": "Les résistances qui varient : température et lumière",
+      "type": "definition",
+      "recto": "Quelles sont les principales applications d'une photorésistance ?",
+      "verso": "Allumage automatique de l'éclairage public à la tombée de la nuit, barrière lumineuse d'alarme ou détecteur de passage, posemètre d'un appareil photographique, comptage automatique d'objets.",
+      "difficulte": 1,
+      "tags": [
+        "photoresistance",
+        "applications"
+      ]
+    },
+    {
+      "id": "PC3E-P08-034",
+      "lecon": "Les résistances qui varient : température et lumière",
+      "type": "definition",
+      "recto": "Pourquoi ne peut-on pas attribuer une seule valeur de résistance à une thermistance ou à une photorésistance ?",
+      "verso": "Leur résistance n'est pas fixe : elle dépend de la température ou de l'éclairement. On la lit sur un tableau ou une courbe.",
+      "difficulte": 2,
+      "tags": [
+        "resistance-variable"
+      ]
+    }
+  ]
+}

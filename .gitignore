@@ -83,3 +83,7 @@ backend/hf_cache/
 
 # Logs
 *.log
+
+# Documents bruts de physique déposés par l'équipe pédagogique (livres, chapitres, fiches,
+# flashcards, guides) : source de data/, jamais commités tels quels (volumineux, doublons).
+sources_physique/

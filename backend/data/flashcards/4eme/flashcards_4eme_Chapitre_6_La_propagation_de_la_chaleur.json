@@ -1,0 +1,401 @@
+{
+  "matiere": "Physique-Chimie",
+  "partie": "Physique",
+  "niveau": "4ème",
+  "chapitre": "Physique, Chapitre 6 : La propagation de la chaleur",
+  "source": "pc/4eme/Chapitre_6_La_propagation_de_la_chaleur",
+  "nombre_cartes": 33,
+  "cartes": [
+    {
+      "id": "PC4E-P06-001",
+      "lecon": "La conduction, les conducteurs et les isolants thermiques",
+      "type": "formule",
+      "recto": "Entre deux corps de températures différentes, dans quel sens la chaleur passe-t-elle toujours ?",
+      "verso": "Du corps le plus chaud vers le corps le plus froid, jusqu'à l'équilibre thermique ; jamais du froid vers le chaud.",
+      "difficulte": 1,
+      "tags": [
+        "sens-du-transfert"
+      ]
+    },
+    {
+      "id": "PC4E-P06-002",
+      "lecon": "La conduction, les conducteurs et les isolants thermiques",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on la conduction thermique ?",
+      "verso": "C'est le mode de propagation de la chaleur dans lequel la chaleur se transmet de proche en proche à travers la matière, sans déplacement de matière. C'est le mode de propagation principal dans les solides, très efficace dans les métaux ; un fluide immobile conduit mal.",
+      "difficulte": 1,
+      "tags": [
+        "conduction",
+        "definition"
+      ]
+    },
+    {
+      "id": "PC4E-P06-003",
+      "lecon": "La conduction, les conducteurs et les isolants thermiques",
+      "type": "definition",
+      "recto": "Comment la chaleur avance-t-elle d'une particule à l'autre dans un solide chauffé à une extrémité ?",
+      "verso": "Les particules chauffées vibrent plus fort sur place et font vibrer leurs voisines, qui font vibrer les suivantes : l'agitation se transmet de proche en proche sans qu'aucune particule ne voyage.",
+      "difficulte": 2,
+      "tags": [
+        "conduction",
+        "particules"
+      ]
+    },
+    {
+      "id": "PC4E-P06-004",
+      "lecon": "La conduction, les conducteurs et les isolants thermiques",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on un conducteur thermique ?",
+      "verso": "Un matériau qui laisse facilement passer la chaleur. Exemples : l'aluminium, le cuivre, le fer, l'acier, le zinc, l'étain, les métaux en général.",
+      "difficulte": 1,
+      "tags": [
+        "conducteur-thermique"
+      ]
+    },
+    {
+      "id": "PC4E-P06-005",
+      "lecon": "La conduction, les conducteurs et les isolants thermiques",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on un isolant thermique ?",
+      "verso": "Un matériau qui laisse difficilement passer la chaleur. Exemples : le bois, la terre cuite, le plastique, le verre, le tissu, la paille, le polystyrène expansé, la laine de verre, et surtout l'air immobile.",
+      "difficulte": 1,
+      "tags": [
+        "isolant-thermique"
+      ]
+    },
+    {
+      "id": "PC4E-P06-006",
+      "lecon": "La conduction, les conducteurs et les isolants thermiques",
+      "type": "definition",
+      "recto": "Pourquoi un matériau qui emprisonne de l'air dans de petites cavités est-il un bon isolant thermique ?",
+      "verso": "L'air immobile est un excellent isolant : les cavités pleines d'air interrompent sans cesse la transmission de l'agitation de proche en proche. C'est le cas de la paille, du tissu, du polystyrène expansé, de la terre cuite du canari.",
+      "difficulte": 2,
+      "tags": [
+        "air-immobile",
+        "isolant-thermique"
+      ]
+    },
+    {
+      "id": "PC4E-P06-007",
+      "lecon": "La conduction, les conducteurs et les isolants thermiques",
+      "type": "definition",
+      "recto": "Comment décrit-on l'expérience classique qui met en évidence la conduction dans un solide ?",
+      "verso": "On chauffe une extrémité d'une tige de fer sur laquelle des clous sont collés à la cire : les clous tombent l'un après l'autre, du plus proche au plus éloigné de la flamme.",
+      "difficulte": 2,
+      "tags": [
+        "experience",
+        "conduction"
+      ]
+    },
+    {
+      "id": "PC4E-P06-008",
+      "lecon": "La conduction, les conducteurs et les isolants thermiques",
+      "type": "definition",
+      "recto": "Pourquoi une barre de fer paraît-elle plus froide qu'un banc en bois de même température ?",
+      "verso": "Le fer, bon conducteur, évacue très vite la chaleur de la main, qui refroidit et signale « froid » ; le bois, isolant, ne l'évacue presque pas. C'est une sensation, pas une mesure de température.",
+      "difficulte": 3,
+      "tags": [
+        "sensation",
+        "piege"
+      ]
+    },
+    {
+      "id": "PC4E-P06-009",
+      "lecon": "La conduction, les conducteurs et les isolants thermiques",
+      "type": "definition",
+      "recto": "En quoi un conducteur thermique diffère-t-il d'un corps chaud ?",
+      "verso": "Conducteur désigne une propriété du matériau (laisser passer facilement la chaleur), pas sa température : un morceau d'aluminium posé à l'ombre est un excellent conducteur, et il est froid.",
+      "difficulte": 3,
+      "tags": [
+        "conducteur-thermique",
+        "piege"
+      ]
+    },
+    {
+      "id": "PC4E-P06-010",
+      "lecon": "La conduction, les conducteurs et les isolants thermiques",
+      "type": "definition",
+      "recto": "Pour fabriquer le manche d'une marmite, quel type de matériau choisit-on ?",
+      "verso": "Un isolant thermique, comme le bois ou le plastique, pour que la chaleur ne passe pas vers la main. Quand on veut au contraire que la chaleur passe, on choisit un conducteur : un métal.",
+      "difficulte": 2,
+      "tags": [
+        "choix-du-materiau"
+      ]
+    },
+    {
+      "id": "PC4E-P06-011",
+      "lecon": "La convection dans les liquides et dans les gaz",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on la convection thermique ?",
+      "verso": "C'est le mode de propagation de la chaleur dans lequel la chaleur est transportée par la matière elle-même, qui se déplace : il y a transport de chaleur avec déplacement de matière.",
+      "difficulte": 1,
+      "tags": [
+        "convection",
+        "definition"
+      ]
+    },
+    {
+      "id": "PC4E-P06-012",
+      "lecon": "La convection dans les liquides et dans les gaz",
+      "type": "definition",
+      "recto": "Dans quels milieux la convection se produit-elle ?",
+      "verso": "Seulement dans les fluides, c'est-à-dire les liquides et les gaz. Elle est impossible dans un solide, dont la matière ne peut pas circuler.",
+      "difficulte": 1,
+      "tags": [
+        "convection",
+        "fluides"
+      ]
+    },
+    {
+      "id": "PC4E-P06-013",
+      "lecon": "La convection dans les liquides et dans les gaz",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on les courants de convection ?",
+      "verso": "Dans un fluide chauffé par le bas, la partie chaude monte et la partie froide descend : ces boucles, les courants de convection, brassent le fluide et finissent par le chauffer tout entier.",
+      "difficulte": 2,
+      "tags": [
+        "courants-de-convection"
+      ]
+    },
+    {
+      "id": "PC4E-P06-014",
+      "lecon": "La convection dans les liquides et dans les gaz",
+      "type": "definition",
+      "recto": "Pourquoi, dans un fluide, la matière chaude monte-t-elle ?",
+      "verso": "Chauffé, le fluide se dilate : la même masse occupe un plus grand volume, il devient moins dense que le fluide froid. Un corps moins dense placé dans un corps plus dense monte.",
+      "difficulte": 2,
+      "tags": [
+        "dilatation",
+        "densite"
+      ]
+    },
+    {
+      "id": "PC4E-P06-015",
+      "lecon": "La convection dans les liquides et dans les gaz",
+      "type": "definition",
+      "recto": "Pourquoi la fumée d'un foyer s'élève-t-elle toujours ?",
+      "verso": "Les gaz de combustion très chauds sont dilatés, donc beaucoup moins denses que l'air froid qui les entoure : l'air froid glisse sous eux et les repousse vers le haut.",
+      "difficulte": 2,
+      "tags": [
+        "fumee",
+        "convection"
+      ]
+    },
+    {
+      "id": "PC4E-P06-016",
+      "lecon": "La convection dans les liquides et dans les gaz",
+      "type": "definition",
+      "recto": "Pourquoi la phrase « la chaleur monte » est-elle incorrecte ?",
+      "verso": "Ce qui monte, c'est la matière chaude, devenue moins dense en se dilatant, et seulement si elle se trouve dans un fluide qui peut circuler.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "convection"
+      ]
+    },
+    {
+      "id": "PC4E-P06-017",
+      "lecon": "La convection dans les liquides et dans les gaz",
+      "type": "definition",
+      "recto": "Dans quels cas des courants de convection ne s'établissent-ils pas dans un fluide ?",
+      "verso": "Quand la source de chaleur est en haut du fluide, ou quand le fluide est bloqué dans de petites cavités : l'air emprisonné dans un tissu ne circule pas et devient un isolant.",
+      "difficulte": 3,
+      "tags": [
+        "convection",
+        "air-emprisonne"
+      ]
+    },
+    {
+      "id": "PC4E-P06-018",
+      "lecon": "La convection dans les liquides et dans les gaz",
+      "type": "definition",
+      "recto": "Comment met-on en évidence les courants de convection dans un liquide ?",
+      "verso": "On chauffe sur un côté du fond un bocal d'eau contenant un traceur (colorant ou sciure) : on voit le liquide monter au-dessus de la source de chaleur et redescendre ailleurs.",
+      "difficulte": 2,
+      "tags": [
+        "experience",
+        "traceur"
+      ]
+    },
+    {
+      "id": "PC4E-P06-019",
+      "lecon": "La convection dans les liquides et dans les gaz",
+      "type": "definition",
+      "recto": "Quel mode de propagation chauffe le plus vite l'eau d'une marmite posée sur le feu ?",
+      "verso": "La convection, bien plus rapide que la conduction : la marmite chauffe en quelques minutes, alors qu'il faudrait des heures à la chaleur pour traverser la même épaisseur d'eau immobile.",
+      "difficulte": 2,
+      "tags": [
+        "convection",
+        "conduction",
+        "comparaison"
+      ]
+    },
+    {
+      "id": "PC4E-P06-020",
+      "lecon": "Le rayonnement et l'isolation thermique",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on le rayonnement thermique ?",
+      "verso": "C'est le mode de propagation de la chaleur sous forme d'ondes, principalement des infrarouges, sans avoir besoin de matière : il traverse le vide. On dit aussi radiation.",
+      "difficulte": 1,
+      "tags": [
+        "rayonnement",
+        "definition"
+      ]
+    },
+    {
+      "id": "PC4E-P06-021",
+      "lecon": "Le rayonnement et l'isolation thermique",
+      "type": "definition",
+      "recto": "Quels corps émettent un rayonnement thermique ?",
+      "verso": "Tout corps chaud rayonne : le Soleil, une braise, une tôle chauffée, une ampoule, un fer à repasser et même le corps humain, d'autant plus intensément qu'ils sont plus chauds.",
+      "difficulte": 2,
+      "tags": [
+        "rayonnement",
+        "sources"
+      ]
+    },
+    {
+      "id": "PC4E-P06-022",
+      "lecon": "Le rayonnement et l'isolation thermique",
+      "type": "definition",
+      "recto": "Pourquoi l'idée que le rayonnement a besoin d'air pour se propager est-elle fausse ?",
+      "verso": "Le rayonnement se propage sans matière, y compris dans le vide : c'est ainsi que la chaleur du Soleil nous parvient.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "rayonnement",
+        "vide"
+      ]
+    },
+    {
+      "id": "PC4E-P06-023",
+      "lecon": "Le rayonnement et l'isolation thermique",
+      "type": "formule",
+      "recto": "Comment se comportent une surface sombre et mate et une surface claire et brillante qui reçoivent un rayonnement ?",
+      "verso": "La surface sombre et mate absorbe fortement le rayonnement et s'échauffe vite ; la surface claire et brillante, surtout métallique polie, le renvoie et s'échauffe peu.",
+      "difficulte": 2,
+      "tags": [
+        "absorption",
+        "surfaces"
+      ]
+    },
+    {
+      "id": "PC4E-P06-024",
+      "lecon": "Le rayonnement et l'isolation thermique",
+      "type": "definition",
+      "recto": "Pourquoi une classe couverte d'une tôle peinte en blanc est-elle plus fraîche qu'une classe sous tôle nue ?",
+      "verso": "La tôle blanche renvoie la plus grande part du rayonnement solaire : elle s'échauffe moins, conduit moins de chaleur vers sa face intérieure et rayonne moins vers les élèves.",
+      "difficulte": 2,
+      "tags": [
+        "tole",
+        "rayonnement"
+      ]
+    },
+    {
+      "id": "PC4E-P06-025",
+      "lecon": "Le rayonnement et l'isolation thermique",
+      "type": "definition",
+      "recto": "Que signifie isoler thermiquement un corps ?",
+      "verso": "C'est empêcher, ou du moins fortement ralentir, le passage de la chaleur entre ce corps et le milieu qui l'entoure. Une isolation efficace s'oppose aux trois modes de propagation à la fois.",
+      "difficulte": 1,
+      "tags": [
+        "isolation-thermique"
+      ]
+    },
+    {
+      "id": "PC4E-P06-026",
+      "lecon": "Le rayonnement et l'isolation thermique",
+      "type": "definition",
+      "recto": "A quoi sert l'isolation thermique dans la vie courante ?",
+      "verso": "A garder plus longtemps frais ou chauds les aliments, les boissons, les médicaments et les vaccins, à rendre une maison plus confortable et à réduire la consommation d'énergie.",
+      "difficulte": 1,
+      "tags": [
+        "isolation-thermique",
+        "usages"
+      ]
+    },
+    {
+      "id": "PC4E-P06-027",
+      "lecon": "Le rayonnement et l'isolation thermique",
+      "type": "definition",
+      "recto": "Dans une bouteille isolante, contre quels modes de propagation agit le vide entre les deux parois ?",
+      "verso": "Contre la conduction (il n'y a presque plus de particules pour transmettre l'agitation) et contre la convection (sans fluide, aucun courant ne peut s'établir).",
+      "difficulte": 2,
+      "tags": [
+        "thermos",
+        "vide"
+      ]
+    },
+    {
+      "id": "PC4E-P06-028",
+      "lecon": "Le rayonnement et l'isolation thermique",
+      "type": "definition",
+      "recto": "Dans une bouteille isolante, quel est le rôle des faces argentées des parois ?",
+      "verso": "Brillantes comme un miroir, elles renvoient vers l'intérieur le rayonnement du liquide au lieu de l'absorber : elles combattent le rayonnement.",
+      "difficulte": 2,
+      "tags": [
+        "thermos",
+        "argenture"
+      ]
+    },
+    {
+      "id": "PC4E-P06-029",
+      "lecon": "Le rayonnement et l'isolation thermique",
+      "type": "definition",
+      "recto": "Dans une bouteille isolante, quel est le rôle du bouchon ?",
+      "verso": "Il empêche l'air chaud du haut du liquide de sortir et l'air froid d'entrer (convection par le goulot) ; sans bouchon, un thermos ne sert presque à rien. Le peu de chaleur perdue passe par le col et le bouchon.",
+      "difficulte": 2,
+      "tags": [
+        "thermos",
+        "bouchon"
+      ]
+    },
+    {
+      "id": "PC4E-P06-030",
+      "lecon": "Le rayonnement et l'isolation thermique",
+      "type": "definition",
+      "recto": "Pourquoi une bouteille isolante garde-t-elle aussi bien l'eau fraîche que le thé chaud ?",
+      "verso": "Elle ne fait qu'empêcher les échanges de chaleur avec l'extérieur, quel que soit leur sens.",
+      "difficulte": 2,
+      "tags": [
+        "thermos"
+      ]
+    },
+    {
+      "id": "PC4E-P06-031",
+      "lecon": "Le rayonnement et l'isolation thermique",
+      "type": "definition",
+      "recto": "Pourquoi est-il faux de dire qu'un isolant supprime la chaleur ?",
+      "verso": "Un isolant ne fait que ralentir le passage de la chaleur, il ne l'arrête pas totalement : un thermos finit toujours par tiédir.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "isolant-thermique"
+      ]
+    },
+    {
+      "id": "PC4E-P06-032",
+      "lecon": "Le rayonnement et l'isolation thermique",
+      "type": "formule",
+      "recto": "Quelle règle permet d'identifier le mode de propagation de la chaleur entre deux corps ?",
+      "verso": "Si aucune matière ne relie les corps, c'est un rayonnement ; si la matière est un fluide qui se déplace, c'est une convection ; si la matière reste en place, c'est une conduction. Les trois modes agissent souvent ensemble.",
+      "difficulte": 2,
+      "tags": [
+        "identification",
+        "modes"
+      ]
+    },
+    {
+      "id": "PC4E-P06-033",
+      "lecon": "Le rayonnement et l'isolation thermique",
+      "type": "definition",
+      "recto": "Pourquoi un foyer amélioré consomme-t-il moins de bois qu'un foyer à trois pierres ?",
+      "verso": "Sa chambre en banco renvoie le rayonnement vers le fond de la marmite et oblige les gaz chauds à longer ses parois, à l'abri du vent : la consommation de bois est à peu près divisée par deux.",
+      "difficulte": 3,
+      "tags": [
+        "foyer-ameliore",
+        "applications"
+      ]
+    }
+  ]
+}

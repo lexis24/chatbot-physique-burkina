@@ -1,0 +1,414 @@
+{
+  "matiere": "Physique-Chimie",
+  "partie": "Physique",
+  "niveau": "2nde C",
+  "chapitre": "Physique, Chapitre 3 : L'équilibre d'un solide soumis à un ensemble de forces",
+  "source": "pc/2ndc/Chapitre_3_L_equilibre_d_un_solide_soumis_a_un_ensemble_de_forces",
+  "nombre_cartes": 34,
+  "cartes": [
+    {
+      "id": "PC2C-P03-001",
+      "lecon": "La statique, le système et le bilan des forces",
+      "type": "definition",
+      "recto": "En mécanique, qu'appelle-t-on la statique ?",
+      "verso": "C'est la partie de la mécanique qui étudie les conditions d'équilibre des corps, c'est-à-dire les conditions dans lesquelles ils restent immobiles.",
+      "difficulte": 1,
+      "tags": [
+        "statique",
+        "vocabulaire"
+      ]
+    },
+    {
+      "id": "PC2C-P03-002",
+      "lecon": "La statique, le système et le bilan des forces",
+      "type": "definition",
+      "recto": "Dans une étude de statique, qu'appelle-t-on le système ?",
+      "verso": "C'est le corps, ou l'ensemble de corps, que l'on choisit d'étudier. On le définit en premier et on n'en change plus ; tout ce qui ne lui appartient pas constitue le milieu extérieur.",
+      "difficulte": 1,
+      "tags": [
+        "systeme",
+        "milieu-exterieur"
+      ]
+    },
+    {
+      "id": "PC2C-P03-003",
+      "lecon": "La statique, le système et le bilan des forces",
+      "type": "definition",
+      "recto": "Quelle différence y a-t-il entre une force extérieure et une force intérieure à un système ?",
+      "verso": "Une force extérieure est exercée par un corps du milieu extérieur sur le système ; une force intérieure est exercée par une partie du système sur une autre partie du même système.",
+      "difficulte": 2,
+      "tags": [
+        "force-exterieure",
+        "force-interieure"
+      ]
+    },
+    {
+      "id": "PC2C-P03-004",
+      "lecon": "La statique, le système et le bilan des forces",
+      "type": "formule",
+      "recto": "Pourquoi les forces intérieures à un système ne figurent-elles jamais dans son bilan des forces ?",
+      "verso": "D'après le principe des actions réciproques, si une partie A exerce $\\vec{f}$ sur une partie B, B exerce $-\\vec{f}$ sur A : ces forces se compensent deux à deux, $\\vec{f} + \\left(-\\vec{f}\\right) = \\vec{0}$. Seules les forces extérieures figurent au bilan.",
+      "difficulte": 2,
+      "tags": [
+        "bilan-des-forces",
+        "force-interieure"
+      ]
+    },
+    {
+      "id": "PC2C-P03-005",
+      "lecon": "La statique, le système et le bilan des forces",
+      "type": "definition",
+      "recto": "Quand dit-on qu'un solide est en équilibre dans un référentiel donné ?",
+      "verso": "Lorsqu'il reste immobile dans ce référentiel : il ne glisse pas et ne tourne pas.",
+      "difficulte": 1,
+      "tags": [
+        "equilibre"
+      ]
+    },
+    {
+      "id": "PC2C-P03-006",
+      "lecon": "La statique, le système et le bilan des forces",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on le centre de gravité $G$ d'un solide ?",
+      "verso": "C'est le point d'application du poids. Pour un solide homogène de forme simple, il coïncide avec le centre géométrique : milieu d'une tige, centre d'un disque ou d'une plaque rectangulaire.",
+      "difficulte": 1,
+      "tags": [
+        "centre-de-gravite",
+        "poids"
+      ]
+    },
+    {
+      "id": "PC2C-P03-007",
+      "lecon": "La statique, le système et le bilan des forces",
+      "type": "formule",
+      "recto": "Quelle condition sur les forces extérieures un solide en équilibre vérifie-t-il nécessairement ?",
+      "verso": "La somme vectorielle des forces extérieures est nulle : $\\sum \\vec{F}_{\\text{ext}} = \\vec{0}$. C'est une condition nécessaire : une somme nulle n'empêche pas le solide de se mettre à tourner.",
+      "difficulte": 2,
+      "tags": [
+        "condition-equilibre",
+        "translation"
+      ]
+    },
+    {
+      "id": "PC2C-P03-008",
+      "lecon": "La statique, le système et le bilan des forces",
+      "type": "definition",
+      "recto": "Pourquoi l'affirmation « le corps est immobile, donc aucune force ne s'exerce sur lui » est-elle fausse ?",
+      "verso": "L'immobilité n'est pas l'absence de forces mais leur compensation : le poids agit toujours et il est équilibré par une force de contact.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "equilibre"
+      ]
+    },
+    {
+      "id": "PC2C-P03-009",
+      "lecon": "Le solide soumis à deux forces",
+      "type": "formule",
+      "recto": "Quelles conditions deux forces $\\vec{F_1}$ et $\\vec{F_2}$ appliquées à un solide doivent-elles remplir pour que ce solide puisse être en équilibre ?",
+      "verso": "Elles doivent être directement opposées : même droite d'action, sens contraires et même intensité, $F_1 = F_2$. Vectoriellement : $\\vec{F_1} + \\vec{F_2} = \\vec{0}$, soit $\\vec{F_2} = -\\vec{F_1}$.",
+      "difficulte": 1,
+      "tags": [
+        "deux-forces",
+        "condition-equilibre"
+      ]
+    },
+    {
+      "id": "PC2C-P03-010",
+      "lecon": "Le solide soumis à deux forces",
+      "type": "formule",
+      "recto": "Pour un corps en équilibre suspendu à un fil et soumis seulement à son poids et à la tension du fil, que valent la tension et la direction du fil ?",
+      "verso": "$T = P = m \\times g$ et le fil est vertical. Si le corps est suspendu par un seul point, son centre de gravité est sur le prolongement du fil.",
+      "difficulte": 2,
+      "tags": [
+        "tension",
+        "fil"
+      ]
+    },
+    {
+      "id": "PC2C-P03-011",
+      "lecon": "Le solide soumis à deux forces",
+      "type": "formule",
+      "recto": "Pour un corps en équilibre posé sur un support horizontal, quelles sont l'intensité et la direction de la réaction du support ?",
+      "verso": "$R = P = m \\times g$ ; la réaction est verticale, dirigée vers le haut, donc normale au support.",
+      "difficulte": 1,
+      "tags": [
+        "reaction",
+        "support-horizontal"
+      ]
+    },
+    {
+      "id": "PC2C-P03-012",
+      "lecon": "Le solide soumis à deux forces",
+      "type": "formule",
+      "recto": "Pour un corps de masse $m$ en équilibre accroché à un ressort de raideur $k$, quelle relation donne l'allongement $x$ du ressort ?",
+      "verso": "$k \\times x = m \\times g$, d'où $x = \\dfrac{m \\times g}{k}$ (avec $k$ en $\\mathrm{N/m}$, $x$ en $\\mathrm{m}$, $m$ en $\\mathrm{kg}$, $g$ en $\\mathrm{N/kg}$).",
+      "difficulte": 2,
+      "tags": [
+        "ressort",
+        "allongement"
+      ]
+    },
+    {
+      "id": "PC2C-P03-013",
+      "lecon": "Le solide soumis à deux forces",
+      "type": "formule",
+      "recto": "Pour un corps flottant en équilibre, quelle relation lie la poussée d'Archimède, le volume immergé et la masse du corps ?",
+      "verso": "$F_A = P$, soit $\\rho_{\\text{liquide}} \\times V_{\\text{immergé}} \\times g = m \\times g$ ; la poussée est verticale et dirigée vers le haut.",
+      "difficulte": 2,
+      "tags": [
+        "poussee-archimede",
+        "flottaison"
+      ]
+    },
+    {
+      "id": "PC2C-P03-014",
+      "lecon": "Le solide soumis à deux forces",
+      "type": "formule",
+      "recto": "Quelles sont la direction et l'intensité de la force exercée par un ressort de raideur $k$, de longueur à vide $l_0$, comprimé à la longueur $l$ ?",
+      "verso": "Un ressort comprimé pousse : sa force est dirigée vers l'extérieur du ressort et vaut $k \\times \\left(l_0 - l\\right)$.",
+      "difficulte": 2,
+      "tags": [
+        "ressort",
+        "compression"
+      ]
+    },
+    {
+      "id": "PC2C-P03-015",
+      "lecon": "Le solide soumis à deux forces",
+      "type": "formule",
+      "recto": "Lorsque plusieurs ressorts de masse négligeable sont accrochés bout à bout sous une charge en équilibre, comment s'obtient l'allongement total de l'ensemble ?",
+      "verso": "Chacun subit la même tension $T$, égale au poids de la charge, et s'allonge de $x_i = \\dfrac{T}{k_i}$ ; l'allongement total est la somme des allongements.",
+      "difficulte": 3,
+      "tags": [
+        "ressort",
+        "fil-masse-negligeable"
+      ]
+    },
+    {
+      "id": "PC2C-P03-016",
+      "lecon": "Le solide soumis à deux forces",
+      "type": "definition",
+      "recto": "Pour une barre de masse négligeable articulée à ses deux extrémités, quelle est la direction de la force qu'elle exerce ?",
+      "verso": "Elle est dirigée selon la barre, c'est-à-dire selon la droite qui joint les deux articulations. Si la barre pousse, elle est comprimée ; si elle tire, elle est tendue. Un fil ne peut que tirer.",
+      "difficulte": 2,
+      "tags": [
+        "barre-articulee"
+      ]
+    },
+    {
+      "id": "PC2C-P03-017",
+      "lecon": "Le solide soumis à deux forces",
+      "type": "definition",
+      "recto": "Pourquoi deux forces de même intensité et de sens contraires ne suffisent-elles pas toujours à assurer l'équilibre d'un solide ?",
+      "verso": "Il faut aussi qu'elles aient la même droite d'action : si leurs droites d'action sont parallèles mais distinctes, le solide se met à tourner.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "deux-forces"
+      ]
+    },
+    {
+      "id": "PC2C-P03-018",
+      "lecon": "Le solide soumis à trois forces concourantes",
+      "type": "formule",
+      "recto": "Quelles conditions trois forces appliquées à un solide doivent-elles remplir pour que ce solide puisse être en équilibre ?",
+      "verso": "Elles doivent être coplanaires (dans un même plan), concourantes (droites d'action se coupant en un même point) et de somme vectorielle nulle : $\\vec{F_1} + \\vec{F_2} + \\vec{F_3} = \\vec{0}$.",
+      "difficulte": 2,
+      "tags": [
+        "trois-forces",
+        "condition-equilibre"
+      ]
+    },
+    {
+      "id": "PC2C-P03-019",
+      "lecon": "Le solide soumis à trois forces concourantes",
+      "type": "definition",
+      "recto": "Pour un solide en équilibre sous trois forces, qu'appelle-t-on le triangle des forces ?",
+      "verso": "C'est le triangle obtenu en reportant les trois vecteurs bout à bout, chacun partant de l'extrémité du précédent ; à l'équilibre, il est fermé : le dernier revient à l'origine du premier.",
+      "difficulte": 2,
+      "tags": [
+        "triangle-des-forces"
+      ]
+    },
+    {
+      "id": "PC2C-P03-020",
+      "lecon": "Le solide soumis à trois forces concourantes",
+      "type": "formule",
+      "recto": "Dans un équilibre à trois forces où $\\vec{F_1}$ et $\\vec{F_2}$ sont perpendiculaires, quelle relation lie les trois intensités ?",
+      "verso": "Le triangle des forces est rectangle et $F_3^{2} = F_1^{2} + F_2^{2}$, $\\vec{F_3}$ étant la force opposée à l'angle droit.",
+      "difficulte": 2,
+      "tags": [
+        "triangle-des-forces",
+        "pythagore"
+      ]
+    },
+    {
+      "id": "PC2C-P03-021",
+      "lecon": "Le solide soumis à trois forces concourantes",
+      "type": "formule",
+      "recto": "Quelle condition nécessaire vérifie un solide en équilibre soumis à $n$ forces concourantes ?",
+      "verso": "$\\vec{F_1} + \\vec{F_2} + \\dots + \\vec{F_n} = \\vec{0}$ : le polygone construit en reportant les $n$ vecteurs bout à bout est fermé.",
+      "difficulte": 2,
+      "tags": [
+        "n-forces",
+        "polygone-des-forces"
+      ]
+    },
+    {
+      "id": "PC2C-P03-022",
+      "lecon": "Le solide soumis à trois forces concourantes",
+      "type": "formule",
+      "recto": "Pour un solide en équilibre sous trois forces, comment trouve-t-on la direction de la troisième force connaissant les droites d'action des deux autres ?",
+      "verso": "La troisième force passe par le point de concours des droites d'action des deux autres : sa droite d'action joint ce point à son propre point d'application.",
+      "difficulte": 3,
+      "tags": [
+        "point-de-concours"
+      ]
+    },
+    {
+      "id": "PC2C-P03-023",
+      "lecon": "Le solide soumis à trois forces concourantes",
+      "type": "definition",
+      "recto": "Quelles sont les trois méthodes de résolution d'un équilibre à trois forces ?",
+      "verso": "La méthode graphique (triangle construit à l'échelle, mesures à la règle), la méthode géométrique (trigonométrie dans le triangle des forces) et la méthode analytique (projection de la relation vectorielle sur deux axes).",
+      "difficulte": 1,
+      "tags": [
+        "methodes",
+        "resolution"
+      ]
+    },
+    {
+      "id": "PC2C-P03-024",
+      "lecon": "Le solide soumis à trois forces concourantes",
+      "type": "definition",
+      "recto": "Pourquoi deux cordes qui tirent chacune avec $6~\\mathrm{N}$ dans des directions différentes ne soutiennent-elles pas forcément $12~\\mathrm{N}$ ?",
+      "verso": "Les intensités de forces de directions différentes ne s'additionnent pas : il faut faire la somme vectorielle, et la charge soutenue dépend de l'angle entre les cordes.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "somme-vectorielle"
+      ]
+    },
+    {
+      "id": "PC2C-P03-025",
+      "lecon": "La méthode analytique, le plan incliné et le frottement",
+      "type": "formule",
+      "recto": "Dans la méthode analytique, à quelles deux équations équivaut la condition $\\sum \\vec{F} = \\vec{0}$ dans le plan ?",
+      "verso": "En projetant sur deux axes perpendiculaires : $\\sum F_x = 0$ et $\\sum F_y = 0$. Une projection est positive dans le sens de l'axe, négative sinon, nulle pour une force perpendiculaire à l'axe.",
+      "difficulte": 1,
+      "tags": [
+        "methode-analytique",
+        "projection"
+      ]
+    },
+    {
+      "id": "PC2C-P03-026",
+      "lecon": "La méthode analytique, le plan incliné et le frottement",
+      "type": "formule",
+      "recto": "Quelles sont les projections $F_x$ et $F_y$ d'une force $\\vec{F}$ qui fait un angle $\\beta$ avec l'axe $\\left(Ox\\right)$ ?",
+      "verso": "$F_x = F\\cos\\beta$ et $F_y = F\\sin\\beta$ ; on écrit $\\vec{F} = F_x\\,\\vec{i} + F_y\\,\\vec{j}$ et $F = \\sqrt{F_x^{2} + F_y^{2}}$.",
+      "difficulte": 2,
+      "tags": [
+        "composantes",
+        "projection"
+      ]
+    },
+    {
+      "id": "PC2C-P03-027",
+      "lecon": "La méthode analytique, le plan incliné et le frottement",
+      "type": "definition",
+      "recto": "Pour étudier un solide sur un plan incliné, quel repère choisit-on ?",
+      "verso": "L'axe $\\left(Ox\\right)$ parallèle à la ligne de plus grande pente, orienté vers le haut, et l'axe $\\left(Oy\\right)$ perpendiculaire au plan, orienté vers l'extérieur.",
+      "difficulte": 1,
+      "tags": [
+        "plan-incline",
+        "repere"
+      ]
+    },
+    {
+      "id": "PC2C-P03-028",
+      "lecon": "La méthode analytique, le plan incliné et le frottement",
+      "type": "formule",
+      "recto": "Pour un solide en équilibre sur un plan incliné lisse d'angle $\\alpha$, retenu par un fil parallèle au plan, que valent la tension $T$ et la réaction $R$ ?",
+      "verso": "$T = P\\sin\\alpha$ et $R = P\\cos\\alpha$, $\\alpha$ étant l'angle du plan avec l'horizontale. Contrôle : pour $\\alpha = 0$, on trouve $T = 0$ et $R = P$.",
+      "difficulte": 2,
+      "tags": [
+        "plan-incline",
+        "tension",
+        "reaction"
+      ]
+    },
+    {
+      "id": "PC2C-P03-029",
+      "lecon": "La méthode analytique, le plan incliné et le frottement",
+      "type": "formule",
+      "recto": "Quelle relation lie une pente de $p$ pour cent (dénivelé pour $100~\\mathrm{m}$ d'avance horizontale) à l'angle $\\alpha$ de la route avec l'horizontale ?",
+      "verso": "$\\tan\\alpha = \\dfrac{p}{100}$. Si le dénivelé est donné pour $100~\\mathrm{m}$ parcourus sur la route, c'est $\\sin\\alpha$ qui vaut $\\dfrac{p}{100}$.",
+      "difficulte": 3,
+      "tags": [
+        "pente",
+        "plan-incline"
+      ]
+    },
+    {
+      "id": "PC2C-P03-030",
+      "lecon": "La méthode analytique, le plan incliné et le frottement",
+      "type": "formule",
+      "recto": "Pour un support rugueux, comment se décompose la réaction $\\vec{R}$ du support ?",
+      "verso": "$\\vec{R} = \\vec{R_N} + \\vec{f}$, somme de la réaction normale et de la force de frottement ; $R = \\sqrt{R_N^{2} + f^{2}}$ et $\\tan\\varphi = \\dfrac{f}{R_N}$.",
+      "difficulte": 2,
+      "tags": [
+        "frottement",
+        "support-rugueux"
+      ]
+    },
+    {
+      "id": "PC2C-P03-031",
+      "lecon": "La méthode analytique, le plan incliné et le frottement",
+      "type": "formule",
+      "recto": "A quelle condition un solide posé sans fil sur un plan incliné rugueux d'angle $\\alpha$ reste-t-il en équilibre ?",
+      "verso": "Sans fil, l'angle $\\varphi$ de la réaction avec la normale est égal à $\\alpha$ ; l'équilibre est possible tant que $\\alpha$ ne dépasse pas la valeur limite $\\varphi_{\\max}$ propre aux deux surfaces en contact. Sur un plan lisse, le solide glisse.",
+      "difficulte": 3,
+      "tags": [
+        "frottement",
+        "angle-limite"
+      ]
+    },
+    {
+      "id": "PC2C-P03-032",
+      "lecon": "La méthode analytique, le plan incliné et le frottement",
+      "type": "formule",
+      "recto": "Pour une petite boule suspendue à un fil isolant, écartée d'un angle $\\theta$ de la verticale par une force électrique horizontale $\\vec{F}$, que valent $T$ et $F$ en fonction du poids $P$ ?",
+      "verso": "$T = \\dfrac{P}{\\cos\\theta}$ et $F = P\\tan\\theta$ (projections sur l'horizontale et la verticale). Ces formules valent pour toute force horizontale.",
+      "difficulte": 2,
+      "tags": [
+        "pendule-electrique"
+      ]
+    },
+    {
+      "id": "PC2C-P03-033",
+      "lecon": "La méthode analytique, le plan incliné et le frottement",
+      "type": "formule",
+      "recto": "Pour une poulie idéale, quelle relation lie les tensions des deux brins du fil ?",
+      "verso": "Une poulie idéale, sans masse et sans frottement, ne fait que changer la direction du fil : la tension a la même intensité de part et d'autre, $T_1 = T_2$.",
+      "difficulte": 1,
+      "tags": [
+        "poulie",
+        "tension"
+      ]
+    },
+    {
+      "id": "PC2C-P03-034",
+      "lecon": "La méthode analytique, le plan incliné et le frottement",
+      "type": "definition",
+      "recto": "Pourquoi est-il faux d'écrire $R = P$ pour un solide en équilibre sur un plan incliné ?",
+      "verso": "$R = P$ n'est vrai que sur un support horizontal. Sur un plan incliné lisse, $R = P\\cos\\alpha$, donc $R \\lt P$, et la réaction est perpendiculaire au plan, pas verticale.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "plan-incline"
+      ]
+    }
+  ]
+}

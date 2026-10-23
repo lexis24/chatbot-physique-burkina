@@ -1,7 +1,7 @@
 {
-  "name": "chatbot-maths-burkina",
+  "name": "chatbot-physique-burkina",
   "version": "1.0.0",
-  "description": "Chatbot Maths Burkina Faso",
+  "description": "Chatbot Physique Burkina Faso",
   "scripts": {
     "install:all": "npm install && cd frontend && npm install && cd ../backend && python -m pip install -r requirements.txt",
     "dev:frontend": "cd frontend && npm run dev",

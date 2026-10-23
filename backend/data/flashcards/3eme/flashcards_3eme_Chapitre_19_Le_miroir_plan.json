@@ -1,0 +1,364 @@
+{
+  "matiere": "Physique-Chimie",
+  "partie": "Physique",
+  "niveau": "3ème",
+  "chapitre": "Physique, Chapitre 19 : Le miroir plan",
+  "source": "pc/3eme/Chapitre_19_Le_miroir_plan",
+  "nombre_cartes": 31,
+  "cartes": [
+    {
+      "id": "PC3E-P19-001",
+      "lecon": "Le miroir plan et les lois de la réflexion",
+      "type": "definition",
+      "recto": "Qu'est-ce qu'un miroir plan ?",
+      "verso": "C'est une surface plane, polie et réfléchissante, qui renvoie régulièrement la lumière qu'elle reçoit (glace, rétroviseur, vitrine, surface d'une eau calme).",
+      "difficulte": 1,
+      "tags": [
+        "miroir-plan",
+        "vocabulaire"
+      ]
+    },
+    {
+      "id": "PC3E-P19-002",
+      "lecon": "Le miroir plan et les lois de la réflexion",
+      "type": "definition",
+      "recto": "Dans la réflexion sur un miroir plan, qu'appelle-t-on le point d'incidence ?",
+      "verso": "C'est le point où le rayon incident rencontre le miroir ; on le note $I$.",
+      "difficulte": 1,
+      "tags": [
+        "point-d-incidence",
+        "vocabulaire"
+      ]
+    },
+    {
+      "id": "PC3E-P19-003",
+      "lecon": "Le miroir plan et les lois de la réflexion",
+      "type": "definition",
+      "recto": "Dans la réflexion sur un miroir plan, qu'appelle-t-on la normale ?",
+      "verso": "C'est la perpendiculaire au miroir menée par le point d'incidence $I$ ; on la trace en pointillés.",
+      "difficulte": 1,
+      "tags": [
+        "normale",
+        "vocabulaire"
+      ]
+    },
+    {
+      "id": "PC3E-P19-004",
+      "lecon": "Le miroir plan et les lois de la réflexion",
+      "type": "definition",
+      "recto": "Dans la réflexion sur un miroir plan, qu'appelle-t-on le plan d'incidence ?",
+      "verso": "C'est le plan qui contient le rayon incident et la normale au miroir au point d'incidence.",
+      "difficulte": 2,
+      "tags": [
+        "plan-d-incidence",
+        "vocabulaire"
+      ]
+    },
+    {
+      "id": "PC3E-P19-005",
+      "lecon": "Le miroir plan et les lois de la réflexion",
+      "type": "definition",
+      "recto": "Dans la réflexion sur un miroir plan, comment sont définis l'angle d'incidence $i$ et l'angle de réflexion $r$ ?",
+      "verso": "$i$ est l'angle entre le rayon incident et la normale ; $r$ est l'angle entre le rayon réfléchi et la normale. Ils se mesurent toujours depuis la normale.",
+      "difficulte": 2,
+      "tags": [
+        "angles",
+        "normale"
+      ]
+    },
+    {
+      "id": "PC3E-P19-006",
+      "lecon": "Le miroir plan et les lois de la réflexion",
+      "type": "formule",
+      "recto": "Que dit la première loi de la réflexion ?",
+      "verso": "Le rayon incident, la normale et le rayon réfléchi sont dans un même plan, le plan d'incidence ; le rayon réfléchi est de l'autre côté de la normale par rapport au rayon incident.",
+      "difficulte": 2,
+      "tags": [
+        "lois-de-la-reflexion"
+      ]
+    },
+    {
+      "id": "PC3E-P19-007",
+      "lecon": "Le miroir plan et les lois de la réflexion",
+      "type": "formule",
+      "recto": "Que dit la deuxième loi de la réflexion ?",
+      "verso": "L'angle de réflexion est égal à l'angle d'incidence : $r = i$, les deux angles étant mesurés depuis la normale.",
+      "difficulte": 1,
+      "tags": [
+        "lois-de-la-reflexion"
+      ]
+    },
+    {
+      "id": "PC3E-P19-008",
+      "lecon": "Le miroir plan et les lois de la réflexion",
+      "type": "definition",
+      "recto": "Pourquoi faut-il les deux lois de la réflexion pour construire un rayon réfléchi ?",
+      "verso": "La deuxième donne la valeur de l'angle, mais un angle peut se placer de deux côtés : la première choisit le bon côté et le plan. Ensemble, elles donnent une seule direction.",
+      "difficulte": 3,
+      "tags": [
+        "lois-de-la-reflexion"
+      ]
+    },
+    {
+      "id": "PC3E-P19-009",
+      "lecon": "Le miroir plan et les lois de la réflexion",
+      "type": "formule",
+      "recto": "Que devient un rayon qui arrive perpendiculairement sur un miroir plan ?",
+      "verso": "Il revient sur lui-même : $i = r = 0^\\circ$.",
+      "difficulte": 2,
+      "tags": [
+        "cas-particulier"
+      ]
+    },
+    {
+      "id": "PC3E-P19-010",
+      "lecon": "Le miroir plan et les lois de la réflexion",
+      "type": "formule",
+      "recto": "Pour un miroir plan, quel angle forment le rayon incident et le rayon réfléchi, en fonction de l'angle d'incidence $i$ ?",
+      "verso": "Ils forment un angle $2i$ ; la déviation du rayon vaut $180^\\circ - 2i$.",
+      "difficulte": 3,
+      "tags": [
+        "angles",
+        "deviation"
+      ]
+    },
+    {
+      "id": "PC3E-P19-011",
+      "lecon": "Le miroir plan et les lois de la réflexion",
+      "type": "definition",
+      "recto": "Quelle erreur commet l'élève qui dit que l'angle d'incidence vaut $20^\\circ$ quand le rayon fait $20^\\circ$ avec le miroir ?",
+      "verso": "L'angle d'incidence se mesure depuis la normale, pas depuis la surface : $i = 90^\\circ - 20^\\circ = 70^\\circ$, donc $r = 70^\\circ$.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "angles"
+      ]
+    },
+    {
+      "id": "PC3E-P19-012",
+      "lecon": "Le miroir plan et les lois de la réflexion",
+      "type": "definition",
+      "recto": "Quelle différence y a-t-il entre réflexion régulière et réflexion diffuse ?",
+      "verso": "Sur une surface polie, la lumière repart dans une seule direction (réflexion régulière ou spéculaire) : on obtient une image. Sur une surface rugueuse, elle repart dans toutes les directions (réflexion diffuse) : pas d'image, mais la surface est visible de partout.",
+      "difficulte": 2,
+      "tags": [
+        "reflexion-diffuse",
+        "reflexion-reguliere"
+      ]
+    },
+    {
+      "id": "PC3E-P19-013",
+      "lecon": "L'image donnée par un miroir plan",
+      "type": "formule",
+      "recto": "Où se trouve l'image $A'$ d'un point $A$ donnée par un miroir plan ?",
+      "verso": "$A'$ est le symétrique de $A$ par rapport au plan du miroir : $(AA')$ est perpendiculaire au miroir, et $A$ et $A'$ sont à la même distance du miroir, de part et d'autre.",
+      "difficulte": 1,
+      "tags": [
+        "position-de-l-image",
+        "symetrie"
+      ]
+    },
+    {
+      "id": "PC3E-P19-014",
+      "lecon": "L'image donnée par un miroir plan",
+      "type": "definition",
+      "recto": "Quelles sont les caractéristiques de l'image d'un objet donnée par un miroir plan ?",
+      "verso": "Elle est virtuelle, droite, de même taille que l'objet, située symétriquement derrière le miroir, avec une inversion gauche-droite.",
+      "difficulte": 1,
+      "tags": [
+        "description-de-l-image"
+      ]
+    },
+    {
+      "id": "PC3E-P19-015",
+      "lecon": "L'image donnée par un miroir plan",
+      "type": "definition",
+      "recto": "Pourquoi l'image donnée par un miroir plan est-elle virtuelle ?",
+      "verso": "La lumière ne traverse pas le miroir : les rayons réfléchis divergent devant lui et seuls leurs prolongements se coupent derrière. Aucune lumière n'arrive au point image, un écran y reste noir.",
+      "difficulte": 2,
+      "tags": [
+        "image-virtuelle"
+      ]
+    },
+    {
+      "id": "PC3E-P19-016",
+      "lecon": "L'image donnée par un miroir plan",
+      "type": "definition",
+      "recto": "Comment se comportent les rayons réfléchis issus d'un point $A$ devant un miroir plan ?",
+      "verso": "Ils divergent réellement ; leurs prolongements, tracés en pointillés derrière le miroir, se coupent au point image $A'$.",
+      "difficulte": 2,
+      "tags": [
+        "marche-du-faisceau"
+      ]
+    },
+    {
+      "id": "PC3E-P19-017",
+      "lecon": "L'image donnée par un miroir plan",
+      "type": "formule",
+      "recto": "Pour un miroir plan, quelle relation lie la distance objet-image et la distance de l'objet au miroir ?",
+      "verso": "La distance objet-image vaut $2 \\times$ la distance de l'objet au miroir, puisque l'image est symétrique de l'objet.",
+      "difficulte": 2,
+      "tags": [
+        "position-de-l-image"
+      ]
+    },
+    {
+      "id": "PC3E-P19-018",
+      "lecon": "L'image donnée par un miroir plan",
+      "type": "definition",
+      "recto": "Par rapport à quoi exactement l'image donnée par un miroir plan est-elle symétrique de l'objet ?",
+      "verso": "Par rapport au plan du miroir, et non par rapport au morceau de verre visible ni à l'un de ses bords. L'image existe même pour ce qui déborde, mais on ne la voit que si l'oeil est au bon endroit.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "symetrie"
+      ]
+    },
+    {
+      "id": "PC3E-P19-019",
+      "lecon": "L'image donnée par un miroir plan",
+      "type": "definition",
+      "recto": "Que montre l'expérience des deux bougies avec une vitre ?",
+      "verso": "La bougie éteinte placée derrière la vitre se superpose exactement à l'image de la bougie allumée, à la même distance de la vitre : l'image est symétrique de l'objet.",
+      "difficulte": 2,
+      "tags": [
+        "experience-des-deux-bougies"
+      ]
+    },
+    {
+      "id": "PC3E-P19-020",
+      "lecon": "L'image donnée par un miroir plan",
+      "type": "definition",
+      "recto": "Qu'échange réellement un miroir plan, que nous traduisons par une inversion gauche-droite ?",
+      "verso": "Il échange l'avant et l'arrière (la profondeur) ; il n'échange ni le haut et le bas, ni la gauche et la droite. L'image n'est pas renversée.",
+      "difficulte": 3,
+      "tags": [
+        "inversion-gauche-droite"
+      ]
+    },
+    {
+      "id": "PC3E-P19-021",
+      "lecon": "L'image donnée par un miroir plan",
+      "type": "formule",
+      "recto": "Connaissant l'image $A'$ d'un point $A$ et un point d'incidence $I$ sur un miroir plan, comment trace-t-on le rayon réfléchi ?",
+      "verso": "On joint $A'$ à $I$ et on prolonge au-delà de $I$ en trait plein fin : le rayon réfléchi est porté par la droite $(A'I)$.",
+      "difficulte": 2,
+      "tags": [
+        "construction"
+      ]
+    },
+    {
+      "id": "PC3E-P19-022",
+      "lecon": "L'image donnée par un miroir plan",
+      "type": "formule",
+      "recto": "Comment construit-on l'image d'un segment $AB$ donnée par un miroir plan ?",
+      "verso": "On construit l'image $A'$ de $A$ et l'image $B'$ de $B$ par symétrie, puis on joint $A'$ à $B'$ ; la symétrie conservant les longueurs, $A'B' = AB$.",
+      "difficulte": 2,
+      "tags": [
+        "objet-etendu",
+        "construction"
+      ]
+    },
+    {
+      "id": "PC3E-P19-023",
+      "lecon": "La double réflexion et les applications de la réflexion",
+      "type": "formule",
+      "recto": "Comment construit-on la marche d'un rayon dans une double réflexion ?",
+      "verso": "On applique les lois de la réflexion deux fois de suite, chaque fois avec la normale du miroir concerné.",
+      "difficulte": 2,
+      "tags": [
+        "double-reflexion"
+      ]
+    },
+    {
+      "id": "PC3E-P19-024",
+      "lecon": "La double réflexion et les applications de la réflexion",
+      "type": "definition",
+      "recto": "Quelle erreur guette l'élève qui trace une double réflexion sur deux miroirs ?",
+      "verso": "Reporter la normale du premier miroir sur le second : chaque miroir a sa propre normale, perpendiculaire à lui-même en son point d'incidence.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "double-reflexion"
+      ]
+    },
+    {
+      "id": "PC3E-P19-025",
+      "lecon": "La double réflexion et les applications de la réflexion",
+      "type": "formule",
+      "recto": "Pour une double réflexion sur deux miroirs plans perpendiculaires, quelle relation lie les deux angles d'incidence ?",
+      "verso": "Ils sont complémentaires : $i_1 + i_2 = 90^\\circ$. Ils ne sont pas égaux en général.",
+      "difficulte": 3,
+      "tags": [
+        "miroirs-perpendiculaires"
+      ]
+    },
+    {
+      "id": "PC3E-P19-026",
+      "lecon": "La double réflexion et les applications de la réflexion",
+      "type": "formule",
+      "recto": "Pour une double réflexion sur deux miroirs plans perpendiculaires, comment est le rayon émergent par rapport au rayon incident ?",
+      "verso": "Il est parallèle au rayon incident et de sens contraire (principe du catadioptre).",
+      "difficulte": 2,
+      "tags": [
+        "miroirs-perpendiculaires",
+        "catadioptre"
+      ]
+    },
+    {
+      "id": "PC3E-P19-027",
+      "lecon": "La double réflexion et les applications de la réflexion",
+      "type": "definition",
+      "recto": "Comment fonctionne un périscope ?",
+      "verso": "Deux miroirs plans parallèles inclinés à $45^\\circ$ : chaque réflexion tourne la lumière de $90^\\circ$, le rayon sortant est parallèle au rayon entrant, ce qui permet de voir par-dessus un obstacle.",
+      "difficulte": 2,
+      "tags": [
+        "periscope"
+      ]
+    },
+    {
+      "id": "PC3E-P19-028",
+      "lecon": "La double réflexion et les applications de la réflexion",
+      "type": "definition",
+      "recto": "Que voit-on entre deux miroirs plans parallèles placés face à face ?",
+      "verso": "Une file d'images de plus en plus lointaines et sombres : chaque image devient objet pour l'autre miroir, et chaque réflexion perd un peu de lumière.",
+      "difficulte": 2,
+      "tags": [
+        "miroirs-paralleles"
+      ]
+    },
+    {
+      "id": "PC3E-P19-029",
+      "lecon": "La double réflexion et les applications de la réflexion",
+      "type": "definition",
+      "recto": "Quels appareils utilisent la réflexion multiple ?",
+      "verso": "Le périscope, le catadioptre, le kaléidoscope, l'appareil photographique reflex et les jumelles.",
+      "difficulte": 1,
+      "tags": [
+        "reflexion-multiple"
+      ]
+    },
+    {
+      "id": "PC3E-P19-030",
+      "lecon": "La double réflexion et les applications de la réflexion",
+      "type": "definition",
+      "recto": "Quelles sont des applications courantes de la réflexion de la lumière ?",
+      "verso": "Rétroviseur, miroir de chambre et de salon de coiffure, vitrine, panneau réfléchissant de chantier, fibre optique et fibroscopie. Le miroir de surveillance des angles morts et le réflecteur de phare utilisent aussi la réflexion, mais avec des miroirs courbes.",
+      "difficulte": 1,
+      "tags": [
+        "applications"
+      ]
+    },
+    {
+      "id": "PC3E-P19-031",
+      "lecon": "La double réflexion et les applications de la réflexion",
+      "type": "definition",
+      "recto": "Sur quel principe la fibre optique et la fibroscopie reposent-elles ?",
+      "verso": "La lumière y progresse par réflexions successives ; la fibre optique sert aux télécommunications, la fibroscopie à la médecine.",
+      "difficulte": 2,
+      "tags": [
+        "fibre-optique"
+      ]
+    }
+  ]
+}

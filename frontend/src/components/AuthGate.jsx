@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import {
-  Sigma, User, Lock, LogIn, UserPlus, ArrowRight, ArrowLeft, AlertCircle,
+  Atom, User, Lock, LogIn, UserPlus, ArrowRight, ArrowLeft, AlertCircle,
   Check,
 } from "lucide-react"
 import Button from "./ui/Button"
@@ -33,14 +33,14 @@ const REGISTER_STEPS = [
   { id: "consentement", label: "Consentement" },
 ]
 
-/** Quelques symboles mathématiques en filigrane, très discrets : une touche « maths » légère
+/** Quelques symboles de physique en filigrane, très discrets : une touche « physique » légère
  * plutôt qu'une illustration à décoder — juste de la texture, pas un schéma. */
 function FloatingGlyphs() {
   const glyphs = [
-    { char: "π", top: "8%", left: "72%", size: "5.5rem", delay: 0, anim: "animate-float-slow" },
-    { char: "∞", top: "62%", left: "8%", size: "4rem", delay: 0.4, anim: "animate-float-slower" },
-    { char: "√", top: "78%", left: "68%", size: "4.5rem", delay: 0.8, anim: "animate-float-slow" },
-    { char: "∑", top: "22%", left: "14%", size: "3.5rem", delay: 1.2, anim: "animate-float-slower" },
+    { char: "Ω", top: "8%", left: "72%", size: "5.5rem", delay: 0, anim: "animate-float-slow" },
+    { char: "λ", top: "62%", left: "8%", size: "4rem", delay: 0.4, anim: "animate-float-slower" },
+    { char: "Δ", top: "78%", left: "68%", size: "4.5rem", delay: 0.8, anim: "animate-float-slow" },
+    { char: "μ", top: "22%", left: "14%", size: "3.5rem", delay: 1.2, anim: "animate-float-slower" },
   ]
   return (
     <div className="pointer-events-none absolute inset-0 overflow-hidden" aria-hidden="true">
@@ -194,15 +194,15 @@ export default function AuthGate({ onAuthenticated, onContinueAsGuest }) {
   return (
     <div className="grid min-h-screen bg-base-100 text-base-content lg:grid-cols-[minmax(0,1fr)_minmax(0,1.05fr)]">
       {/* Panneau de marque — masqué sur mobile, où le contenu ci-dessous suffit */}
-      <div className="relative hidden overflow-hidden bg-gradient-to-br from-[#062b28] via-primary to-secondary lg:flex lg:flex-col">
+      <div className="relative hidden overflow-hidden bg-gradient-to-br from-[#1e1b4b] via-primary to-secondary lg:flex lg:flex-col">
         <FloatingGlyphs />
 
         <div className="relative z-10 p-10">
           <div className="flex items-center gap-2.5">
             <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-white/15 text-white backdrop-blur-sm">
-              <Sigma size={18} />
+              <Atom size={18} />
             </div>
-            <span className="font-heading text-lg font-bold tracking-tight text-white">Prof Amira</span>
+            <span className="font-heading text-lg font-bold tracking-tight text-white">Prof Aïcha</span>
           </div>
         </div>
 
@@ -211,7 +211,7 @@ export default function AuthGate({ onAuthenticated, onContinueAsGuest }) {
             initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}
             className="font-heading max-w-sm text-[2.75rem] font-extrabold leading-[1.1] text-white"
           >
-            Progresse en maths,{" "}
+            Progresse en physique,{" "}
             <span className="bg-gradient-to-r from-accent via-white to-secondary bg-clip-text italic text-transparent">
               à ton rythme.
             </span>
@@ -231,11 +231,11 @@ export default function AuthGate({ onAuthenticated, onContinueAsGuest }) {
             <div className="relative flex h-12 w-12 shrink-0 items-center justify-center">
               <span className="absolute inset-0 rounded-2xl bg-primary/50 motion-safe:animate-pulse-ring" />
               <div className="relative flex h-12 w-12 items-center justify-center rounded-2xl bg-gradient-to-br from-primary via-secondary to-accent text-white shadow-glow">
-                <Sigma size={22} />
+                <Atom size={22} />
               </div>
             </div>
             <h1 className="font-heading text-2xl font-extrabold leading-tight">
-              Prof <span className="text-gradient motion-safe:animate-shimmer">Amira</span>
+              Prof <span className="text-gradient motion-safe:animate-shimmer">Aïcha</span>
             </h1>
           </div>
 

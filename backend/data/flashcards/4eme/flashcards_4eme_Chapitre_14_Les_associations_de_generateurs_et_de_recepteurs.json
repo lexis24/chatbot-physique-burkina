@@ -1,0 +1,440 @@
+{
+  "matiere": "Physique-Chimie",
+  "partie": "Physique",
+  "niveau": "4ème",
+  "chapitre": "Physique, Chapitre 14 : Les associations de générateurs et de récepteurs",
+  "source": "pc/4eme/Chapitre_14_Les_associations_de_generateurs_et_de_recepteurs",
+  "nombre_cartes": 36,
+  "cartes": [
+    {
+      "id": "PC4E-P14-001",
+      "lecon": "Les associations de générateurs, en série et en dérivation",
+      "type": "definition",
+      "recto": "Quand dit-on que des générateurs sont associés en série ?",
+      "verso": "Quand ils sont branchés à la suite les uns des autres, en une seule boucle. Selon leur sens, l'association est en concordance ou en opposition.",
+      "difficulte": 1,
+      "tags": [
+        "generateurs",
+        "serie"
+      ]
+    },
+    {
+      "id": "PC4E-P14-002",
+      "lecon": "Les associations de générateurs, en série et en dérivation",
+      "type": "definition",
+      "recto": "Quelles bornes relie-t-on pour associer deux générateurs en série et en concordance ?",
+      "verso": "Des bornes de noms contraires : la borne $+$ de l'un à la borne $-$ du suivant.",
+      "difficulte": 1,
+      "tags": [
+        "concordance",
+        "bornes"
+      ]
+    },
+    {
+      "id": "PC4E-P14-003",
+      "lecon": "Les associations de générateurs, en série et en dérivation",
+      "type": "formule",
+      "recto": "Pour des générateurs associés en série et en concordance, quelle relation donne la tension $U$ de l'association ?",
+      "verso": "Les tensions s'ajoutent : $U = U_1 + U_2 + \\dots + U_n$, en volts. Pour $n$ générateurs identiques de tension $U_1$ : $U = n \\times U_1$.",
+      "difficulte": 2,
+      "tags": [
+        "concordance",
+        "tension"
+      ]
+    },
+    {
+      "id": "PC4E-P14-004",
+      "lecon": "Les associations de générateurs, en série et en dérivation",
+      "type": "definition",
+      "recto": "Quelles bornes relie-t-on lorsque deux générateurs sont associés en série et en opposition ?",
+      "verso": "Des bornes de même nom : deux bornes $+$ ou deux bornes $-$.",
+      "difficulte": 1,
+      "tags": [
+        "opposition",
+        "bornes"
+      ]
+    },
+    {
+      "id": "PC4E-P14-005",
+      "lecon": "Les associations de générateurs, en série et en dérivation",
+      "type": "formule",
+      "recto": "Pour deux générateurs associés en série et en opposition, quelle relation donne la tension $U$ de l'association ?",
+      "verso": "Les tensions se retranchent : $U = U_1 - U_2$ avec $U_1 \\gt U_2$, la plus grande tension écrite en premier.",
+      "difficulte": 2,
+      "tags": [
+        "opposition",
+        "tension"
+      ]
+    },
+    {
+      "id": "PC4E-P14-006",
+      "lecon": "Les associations de générateurs, en série et en dérivation",
+      "type": "formule",
+      "recto": "Quelle tension donnent deux générateurs identiques associés en série et en opposition ?",
+      "verso": "Une tension nulle, $U = 0~\\mathrm{V}$ : aucun récepteur ne fonctionne, bien que la boucle soit fermée.",
+      "difficulte": 2,
+      "tags": [
+        "opposition",
+        "tension-nulle"
+      ]
+    },
+    {
+      "id": "PC4E-P14-007",
+      "lecon": "Les associations de générateurs, en série et en dérivation",
+      "type": "definition",
+      "recto": "Comment relie-t-on des générateurs associés en dérivation ?",
+      "verso": "Toutes les bornes positives sont reliées entre elles et toutes les bornes négatives entre elles.",
+      "difficulte": 1,
+      "tags": [
+        "generateurs",
+        "derivation"
+      ]
+    },
+    {
+      "id": "PC4E-P14-008",
+      "lecon": "Les associations de générateurs, en série et en dérivation",
+      "type": "formule",
+      "recto": "Pour des générateurs identiques associés en dérivation, quelle est la tension $U$ de l'association ?",
+      "verso": "Celle d'un seul générateur : $U = U_1 = U_2 = \\dots = U_n$. On y gagne la durée de fonctionnement, non la tension. Les générateurs doivent être identiques.",
+      "difficulte": 2,
+      "tags": [
+        "derivation",
+        "tension"
+      ]
+    },
+    {
+      "id": "PC4E-P14-009",
+      "lecon": "Les associations de générateurs, en série et en dérivation",
+      "type": "definition",
+      "recto": "Sur le schéma normalisé d'une pile, quel trait représente la borne positive ?",
+      "verso": "Le trait long et fin ; le trait court et épais représente la borne négative.",
+      "difficulte": 2,
+      "tags": [
+        "symbole",
+        "pile"
+      ]
+    },
+    {
+      "id": "PC4E-P14-010",
+      "lecon": "Les associations de générateurs, en série et en dérivation",
+      "type": "definition",
+      "recto": "Sur le schéma de deux piles placées à la file, quelle disposition des traits signale une opposition ?",
+      "verso": "Deux traits longs face à face ; un trait long face à un trait court signale au contraire une concordance.",
+      "difficulte": 3,
+      "tags": [
+        "schema",
+        "opposition"
+      ]
+    },
+    {
+      "id": "PC4E-P14-011",
+      "lecon": "Les associations de générateurs, en série et en dérivation",
+      "type": "definition",
+      "recto": "Dans quel but associe-t-on des générateurs en série plutôt qu'en dérivation ?",
+      "verso": "En série, pour changer la tension ; en dérivation, pour faire durer plus longtemps le fonctionnement.",
+      "difficulte": 2,
+      "tags": [
+        "choix-association"
+      ]
+    },
+    {
+      "id": "PC4E-P14-012",
+      "lecon": "Les associations de générateurs, en série et en dérivation",
+      "type": "formule",
+      "recto": "Quel nombre $n$ de piles identiques de tension $U_1$ faut-il associer en série et en concordance pour obtenir une tension $U$ ?",
+      "verso": "$n = \\dfrac{U}{U_1}$, les tensions $U$ et $U_1$ étant exprimées dans la même unité.",
+      "difficulte": 2,
+      "tags": [
+        "concordance",
+        "nombre-piles"
+      ]
+    },
+    {
+      "id": "PC4E-P14-013",
+      "lecon": "Les associations de générateurs, en série et en dérivation",
+      "type": "definition",
+      "recto": "Quels sont les inconvénients d'une association de générateurs en série et en concordance ?",
+      "verso": "Une pile usée ou mal placée bloque tout, et la tension obtenue peut mettre un récepteur en surtension.",
+      "difficulte": 2,
+      "tags": [
+        "concordance",
+        "inconvenients"
+      ]
+    },
+    {
+      "id": "PC4E-P14-014",
+      "lecon": "Les associations de générateurs, en série et en dérivation",
+      "type": "definition",
+      "recto": "Pourquoi ne faut-il jamais associer en dérivation des générateurs de tensions différentes ?",
+      "verso": "L'association en dérivation exige des générateurs identiques : c'est une condition obligatoire de ce montage, et une règle de sécurité.",
+      "difficulte": 3,
+      "tags": [
+        "derivation",
+        "securite"
+      ]
+    },
+    {
+      "id": "PC4E-P14-015",
+      "lecon": "Les associations de générateurs, en série et en dérivation",
+      "type": "definition",
+      "recto": "Pourquoi ajouter des piles identiques en dérivation ne fait-il pas briller une lampe davantage ?",
+      "verso": "La tension de l'association reste celle d'une seule pile : seule la durée de fonctionnement augmente.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "derivation"
+      ]
+    },
+    {
+      "id": "PC4E-P14-016",
+      "lecon": "L'association de récepteurs en série et la loi d'additivité des tensions",
+      "type": "definition",
+      "recto": "Quand dit-on que des récepteurs sont associés en série ?",
+      "verso": "Quand ils sont branchés à la suite les uns des autres, en une seule boucle : le courant les traverse l'un après l'autre.",
+      "difficulte": 1,
+      "tags": [
+        "recepteurs",
+        "serie"
+      ]
+    },
+    {
+      "id": "PC4E-P14-017",
+      "lecon": "L'association de récepteurs en série et la loi d'additivité des tensions",
+      "type": "formule",
+      "recto": "Que dit la loi d'additivité des tensions pour des récepteurs associés en série ?",
+      "verso": "La tension aux bornes de l'association est égale à la somme des tensions aux bornes de chacun : $U = U_1 + U_2 + \\dots + U_n$, en volts.",
+      "difficulte": 1,
+      "tags": [
+        "additivite",
+        "serie"
+      ]
+    },
+    {
+      "id": "PC4E-P14-018",
+      "lecon": "L'association de récepteurs en série et la loi d'additivité des tensions",
+      "type": "formule",
+      "recto": "Pour deux récepteurs en série de bornes A, B puis B, C, comment s'écrit la loi d'additivité des tensions ?",
+      "verso": "$U_{AC} = U_{AB} + U_{BC}$ : les lettres se suivent comme les étapes d'un trajet.",
+      "difficulte": 2,
+      "tags": [
+        "additivite",
+        "notation"
+      ]
+    },
+    {
+      "id": "PC4E-P14-019",
+      "lecon": "L'association de récepteurs en série et la loi d'additivité des tensions",
+      "type": "formule",
+      "recto": "Quelle tension reçoit chacun de $n$ récepteurs identiques associés en série sous une tension $U$ ?",
+      "verso": "$U_1 = \\dfrac{U}{n}$ ; cette relation n'est valable que si les récepteurs sont identiques.",
+      "difficulte": 2,
+      "tags": [
+        "serie",
+        "repartition"
+      ]
+    },
+    {
+      "id": "PC4E-P14-020",
+      "lecon": "L'association de récepteurs en série et la loi d'additivité des tensions",
+      "type": "formule",
+      "recto": "Quelle tension doit fournir le générateur pour que $n$ récepteurs identiques de tension d'usage $U_1$, associés en série, fonctionnent normalement ?",
+      "verso": "$U = n \\times U_1$, et non $U_1$ : par exemple, deux lampes de $6~\\mathrm{V}$ en série réclament $12~\\mathrm{V}$.",
+      "difficulte": 2,
+      "tags": [
+        "serie",
+        "adaptation"
+      ]
+    },
+    {
+      "id": "PC4E-P14-021",
+      "lecon": "L'association de récepteurs en série et la loi d'additivité des tensions",
+      "type": "definition",
+      "recto": "Dans une association de récepteurs en série, quelle est la conséquence de la panne d'un récepteur ?",
+      "verso": "Un récepteur grillé ou retiré ouvre la boucle : tous les récepteurs cessent de fonctionner.",
+      "difficulte": 2,
+      "tags": [
+        "serie",
+        "panne"
+      ]
+    },
+    {
+      "id": "PC4E-P14-022",
+      "lecon": "L'association de récepteurs en série et la loi d'additivité des tensions",
+      "type": "definition",
+      "recto": "Dans une association de récepteurs en série, quelle est la conséquence du court-circuit d'un récepteur ?",
+      "verso": "Il s'éteint sans ouvrir le circuit ; les autres reçoivent une tension plus grande et risquent de griller.",
+      "difficulte": 2,
+      "tags": [
+        "serie",
+        "court-circuit"
+      ]
+    },
+    {
+      "id": "PC4E-P14-023",
+      "lecon": "L'association de récepteurs en série et la loi d'additivité des tensions",
+      "type": "definition",
+      "recto": "Pourquoi des lampes pâlissent-elles quand on en ajoute en série sur la même pile ?",
+      "verso": "D'après la loi d'additivité, la tension de la pile se répartit entre elles : chacune en reçoit une part d'autant plus petite qu'elles sont nombreuses.",
+      "difficulte": 2,
+      "tags": [
+        "serie",
+        "eclat"
+      ]
+    },
+    {
+      "id": "PC4E-P14-024",
+      "lecon": "L'association de récepteurs en série et la loi d'additivité des tensions",
+      "type": "definition",
+      "recto": "Quelle erreur commet-on en disant que « le courant se partage entre les lampes en série » ?",
+      "verso": "En série, c'est la tension qui se répartit entre les récepteurs, et non le courant.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "serie"
+      ]
+    },
+    {
+      "id": "PC4E-P14-025",
+      "lecon": "L'association de récepteurs en dérivation et les applications",
+      "type": "definition",
+      "recto": "Quand dit-on que des récepteurs sont associés en dérivation ?",
+      "verso": "Quand les deux bornes de chaque récepteur sont reliées aux deux mêmes points du circuit, les noeuds. On dit aussi qu'ils sont en parallèle.",
+      "difficulte": 1,
+      "tags": [
+        "derivation",
+        "recepteurs"
+      ]
+    },
+    {
+      "id": "PC4E-P14-026",
+      "lecon": "L'association de récepteurs en dérivation et les applications",
+      "type": "definition",
+      "recto": "Dans un circuit avec des récepteurs en dérivation, qu'appelle-t-on une branche ?",
+      "verso": "C'est chaque chemin qui va d'un noeud à l'autre en passant par un récepteur.",
+      "difficulte": 1,
+      "tags": [
+        "branche",
+        "vocabulaire"
+      ]
+    },
+    {
+      "id": "PC4E-P14-027",
+      "lecon": "L'association de récepteurs en dérivation et les applications",
+      "type": "formule",
+      "recto": "Quelle propriété vérifie la tension aux bornes de récepteurs associés en dérivation ?",
+      "verso": "Ils ont tous la même tension, égale à la tension entre les deux noeuds : $U_1 = U_2 = \\dots = U_n = U$.",
+      "difficulte": 1,
+      "tags": [
+        "derivation",
+        "tension"
+      ]
+    },
+    {
+      "id": "PC4E-P14-028",
+      "lecon": "L'association de récepteurs en dérivation et les applications",
+      "type": "formule",
+      "recto": "A quelle condition une association de récepteurs en dérivation fonctionne-t-elle normalement ?",
+      "verso": "La tension du générateur doit être égale à la tension d'usage de chacun. Un récepteur de tension d'usage plus petite est en surtension, un de tension d'usage plus grande en sous-tension.",
+      "difficulte": 2,
+      "tags": [
+        "derivation",
+        "adaptation"
+      ]
+    },
+    {
+      "id": "PC4E-P14-029",
+      "lecon": "L'association de récepteurs en dérivation et les applications",
+      "type": "definition",
+      "recto": "Dans une association de récepteurs en dérivation, quelle est la conséquence de la panne d'un récepteur ?",
+      "verso": "Elle n'ouvre que sa branche : les autres récepteurs continuent de fonctionner normalement.",
+      "difficulte": 2,
+      "tags": [
+        "derivation",
+        "panne"
+      ]
+    },
+    {
+      "id": "PC4E-P14-030",
+      "lecon": "L'association de récepteurs en dérivation et les applications",
+      "type": "definition",
+      "recto": "Dans une association de récepteurs en dérivation, quelle est la conséquence d'un court-circuit entre les deux noeuds ?",
+      "verso": "Tous les récepteurs s'éteignent et le fil s'échauffe fortement : le montage est dangereux.",
+      "difficulte": 2,
+      "tags": [
+        "derivation",
+        "court-circuit"
+      ]
+    },
+    {
+      "id": "PC4E-P14-031",
+      "lecon": "L'association de récepteurs en dérivation et les applications",
+      "type": "definition",
+      "recto": "Dans un montage en dérivation, que commande un interrupteur selon sa position ?",
+      "verso": "Placé sur un fil qui part du générateur, avant les noeuds, il commande tous les récepteurs ; placé dans une branche, il ne commande que le récepteur de cette branche.",
+      "difficulte": 2,
+      "tags": [
+        "interrupteur",
+        "derivation"
+      ]
+    },
+    {
+      "id": "PC4E-P14-032",
+      "lecon": "L'association de récepteurs en dérivation et les applications",
+      "type": "formule",
+      "recto": "Quelle phrase résume la différence de tension entre récepteurs en série et récepteurs en dérivation ?",
+      "verso": "En série, la tension se répartit ; en dérivation, la tension est la même pour tous.",
+      "difficulte": 1,
+      "tags": [
+        "serie",
+        "derivation"
+      ]
+    },
+    {
+      "id": "PC4E-P14-033",
+      "lecon": "L'association de récepteurs en dérivation et les applications",
+      "type": "definition",
+      "recto": "Pourquoi les appareils d'une maison sont-ils tous montés en dérivation ?",
+      "verso": "Chacun reçoit ainsi les $220~\\mathrm{V}$ du secteur, sa tension d'usage, et reste indépendant : une ampoule grillée n'éteint pas les autres.",
+      "difficulte": 2,
+      "tags": [
+        "installation-domestique"
+      ]
+    },
+    {
+      "id": "PC4E-P14-034",
+      "lecon": "L'association de récepteurs en dérivation et les applications",
+      "type": "definition",
+      "recto": "Dans une guirlande bon marché, pourquoi une seule ampoule grillée éteint-elle toute la rangée ?",
+      "verso": "Ses ampoules sont en série : les $220~\\mathrm{V}$ se répartissent entre elles ($11~\\mathrm{V}$ chacune pour vingt ampoules), et une ampoule grillée ouvre l'unique boucle.",
+      "difficulte": 2,
+      "tags": [
+        "guirlande",
+        "serie"
+      ]
+    },
+    {
+      "id": "PC4E-P14-035",
+      "lecon": "L'association de récepteurs en dérivation et les applications",
+      "type": "definition",
+      "recto": "Pourquoi deux lampes en dérivation sur une pile de $4{,}5~\\mathrm{V}$ ne reçoivent-elles pas $2{,}25~\\mathrm{V}$ chacune ?",
+      "verso": "Le partage de la tension n'a lieu qu'en série : en dérivation, chaque lampe reçoit la tension entière, $4{,}5~\\mathrm{V}$.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "derivation"
+      ]
+    },
+    {
+      "id": "PC4E-P14-036",
+      "lecon": "L'association de récepteurs en dérivation et les applications",
+      "type": "definition",
+      "recto": "En dérivation, quelle différence y a-t-il entre la panne d'un récepteur et son court-circuit ?",
+      "verso": "La panne n'éteint que ce récepteur ; le court-circuit relie les deux noeuds sans récepteur et éteint toute l'association, le fil chauffant fortement.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "court-circuit"
+      ]
+    }
+  ]
+}

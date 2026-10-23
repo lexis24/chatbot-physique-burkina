@@ -17,7 +17,7 @@ import Modal from "./ui/Modal.jsx"
 import BottomSheet from "./ui/BottomSheet.jsx"
 import Badge from "./ui/Badge.jsx"
 import Button from "./ui/Button.jsx"
-import MathContent from "./MathContent.jsx"
+import RichContent from "./RichContent.jsx"
 import { getFlashcards, getChapters, reviewFlashcard } from "../api.js"
 import { useIsMobile } from "../lib/useMediaQuery.js"
 
@@ -303,7 +303,7 @@ export default function FlashcardsViewer({ open, onClose, classCode, chapter, to
                   </div>
                   <Badge variant="primary">Question</Badge>
                   <div className="font-heading text-lg font-semibold leading-snug text-base-content">
-                    <MathContent>{card.front}</MathContent>
+                    <RichContent>{card.front}</RichContent>
                   </div>
                   <span className="mt-1 flex shrink-0 items-center gap-1.5 rounded-full bg-base-200/70 px-3 py-1.5 text-xs font-medium text-base-content/55">
                     <RotateCw size={12} /> Clique pour voir la réponse
@@ -318,7 +318,7 @@ export default function FlashcardsViewer({ open, onClose, classCode, chapter, to
                   </div>
                   <Badge variant="success">Réponse</Badge>
                   <div className="font-heading text-lg font-semibold leading-snug text-primary">
-                    <MathContent>{card.back}</MathContent>
+                    <RichContent>{card.back}</RichContent>
                   </div>
                 </div>
               </div>

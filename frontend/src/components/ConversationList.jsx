@@ -36,7 +36,7 @@ export default function ConversationList({ conversations, activeConversationId, 
     try {
       const detail = await getConversation(getToken(), conv.id)
       await exportHistoryToDocx([detail], {
-        filename: `chatmaths-${(conv.title || "conversation").slice(0, 40)}.docx`,
+        filename: `chatphysique-${(conv.title || "conversation").slice(0, 40)}.docx`,
       })
     } catch {
       /* échec silencieux ici : pas de zone de toast partagée dans ce composant isolé */

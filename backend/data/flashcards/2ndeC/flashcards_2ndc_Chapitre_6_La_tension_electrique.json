@@ -1,0 +1,459 @@
+{
+  "matiere": "Physique-Chimie",
+  "partie": "Physique",
+  "niveau": "2nde C",
+  "chapitre": "Physique, Chapitre 6 : La tension électrique",
+  "source": "pc/2ndc/Chapitre_6_La_tension_electrique",
+  "nombre_cartes": 38,
+  "cartes": [
+    {
+      "id": "PC2C-P06-001",
+      "lecon": "Le potentiel électrique et la tension entre deux points",
+      "type": "definition",
+      "recto": "En électricité, qu'appelle-t-on le potentiel électrique $V_M$ d'un point M d'un circuit ?",
+      "verso": "C'est un nombre associé au point M, exprimé en volts ($\\mathrm{V}$), qui mesure le niveau électrique de ce point, comme l'altitude mesure le niveau d'un bassin. Il n'a de valeur qu'une fois une masse choisie.",
+      "difficulte": 1,
+      "tags": [
+        "potentiel"
+      ]
+    },
+    {
+      "id": "PC2C-P06-002",
+      "lecon": "Le potentiel électrique et la tension entre deux points",
+      "type": "formule",
+      "recto": "Quelle relation exprime la tension $U_{AB}$ entre deux points A et B à l'aide de leurs potentiels ?",
+      "verso": "$U_{AB} = V_A - V_B$ : la tension est une différence de potentiel (d.d.p.). Les trois grandeurs s'expriment en volts ($\\mathrm{V}$).",
+      "difficulte": 1,
+      "tags": [
+        "tension",
+        "ddp"
+      ]
+    },
+    {
+      "id": "PC2C-P06-003",
+      "lecon": "Le potentiel électrique et la tension entre deux points",
+      "type": "definition",
+      "recto": "Dans un circuit électrique, qu'appelle-t-on la masse ?",
+      "verso": "C'est le point de référence choisi dont on décide que le potentiel est nul : $V_{\\text{masse}} = 0~\\mathrm{V}$. On prend souvent la borne $-$ du générateur, le châssis d'un véhicule ou la Terre.",
+      "difficulte": 1,
+      "tags": [
+        "masse",
+        "reference"
+      ]
+    },
+    {
+      "id": "PC2C-P06-004",
+      "lecon": "Le potentiel électrique et la tension entre deux points",
+      "type": "formule",
+      "recto": "Une fois la masse choisie, quelle relation donne le potentiel $V_M$ d'un point M à partir d'une tension ?",
+      "verso": "$V_M = U_{M\\,\\text{masse}}$ : le potentiel de M est la tension entre M et la masse, en volts.",
+      "difficulte": 2,
+      "tags": [
+        "potentiel",
+        "masse"
+      ]
+    },
+    {
+      "id": "PC2C-P06-005",
+      "lecon": "Le potentiel électrique et la tension entre deux points",
+      "type": "definition",
+      "recto": "Lorsqu'on change de point de masse dans un circuit, quel effet cela a-t-il sur les potentiels et sur les tensions ?",
+      "verso": "Tous les potentiels changent, mais aucune tension ne change, car une tension est une différence de deux potentiels.",
+      "difficulte": 2,
+      "tags": [
+        "masse",
+        "invariance"
+      ]
+    },
+    {
+      "id": "PC2C-P06-006",
+      "lecon": "Le potentiel électrique et la tension entre deux points",
+      "type": "definition",
+      "recto": "Pourquoi un voltmètre ne mesure-t-il jamais directement le potentiel d'un point seul ?",
+      "verso": "Un voltmètre a deux bornes et n'affiche qu'une différence entre les deux points touchés : la seconde pointe devient la référence. Un potentiel se calcule une fois la masse choisie.",
+      "difficulte": 3,
+      "tags": [
+        "potentiel",
+        "voltmetre"
+      ]
+    },
+    {
+      "id": "PC2C-P06-007",
+      "lecon": "Le potentiel électrique et la tension entre deux points",
+      "type": "formule",
+      "recto": "Quelles sont les relations entre le kilovolt, le millivolt, le microvolt et le volt ?",
+      "verso": "$1~\\mathrm{kV} = 10^{3}~\\mathrm{V}$ ; $1~\\mathrm{mV} = 10^{-3}~\\mathrm{V}$ ; $1~\\mu\\mathrm{V} = 10^{-6}~\\mathrm{V} = 10^{-3}~\\mathrm{mV}$.",
+      "difficulte": 1,
+      "tags": [
+        "unites",
+        "conversions"
+      ]
+    },
+    {
+      "id": "PC2C-P06-008",
+      "lecon": "Le potentiel électrique et la tension entre deux points",
+      "type": "definition",
+      "recto": "Quelles sont les tensions usuelles d'une pile bâton, d'une pile plate, d'un chargeur de téléphone, d'une batterie de moto et du secteur ?",
+      "verso": "Pile bâton : $1{,}5~\\mathrm{V}$ ; pile plate : $4{,}5~\\mathrm{V}$ ; chargeur de téléphone : $5~\\mathrm{V}$ ; batterie de moto : $12~\\mathrm{V}$ ; prise du secteur : $220~\\mathrm{V}$.",
+      "difficulte": 1,
+      "tags": [
+        "sources",
+        "ordres-de-grandeur"
+      ]
+    },
+    {
+      "id": "PC2C-P06-009",
+      "lecon": "Le potentiel électrique et la tension entre deux points",
+      "type": "formule",
+      "recto": "Pour un voltmètre à aiguille de calibre $C$, dont l'échelle compte $N$ divisions et dont l'aiguille s'arrête sur la division $n$, quelle relation donne la tension mesurée $U$ ?",
+      "verso": "$U = \\dfrac{C \\times n}{N}$, avec $U$ et $C$ en volts. On choisit le plus petit calibre supérieur à la tension mesurée pour une lecture plus précise.",
+      "difficulte": 2,
+      "tags": [
+        "voltmetre",
+        "calibre"
+      ]
+    },
+    {
+      "id": "PC2C-P06-010",
+      "lecon": "Le potentiel électrique et la tension entre deux points",
+      "type": "formule",
+      "recto": "Comment se branche un voltmètre dans un circuit ?",
+      "verso": "Il se branche en dérivation aux bornes de la portion étudiée et ne doit être traversé que par un courant pratiquement nul, pour ne pas modifier ce qu'il mesure.",
+      "difficulte": 2,
+      "tags": [
+        "voltmetre",
+        "branchement"
+      ]
+    },
+    {
+      "id": "PC2C-P06-011",
+      "lecon": "Le potentiel électrique et la tension entre deux points",
+      "type": "definition",
+      "recto": "Pourquoi la masse électrique d'un circuit ne doit-elle pas être confondue avec la masse d'un corps ?",
+      "verso": "La masse électrique est un point de référence de potentiel ($0~\\mathrm{V}$) ; la masse d'un corps est une quantité de matière mesurée en kilogrammes. De plus, la masse d'un circuit n'est pas forcément reliée à la Terre (sur une moto, c'est le châssis).",
+      "difficulte": 3,
+      "tags": [
+        "masse",
+        "piege"
+      ]
+    },
+    {
+      "id": "PC2C-P06-012",
+      "lecon": "La tension, une grandeur algébrique",
+      "type": "definition",
+      "recto": "Pourquoi dit-on que la tension électrique $U_{AB}$ est une grandeur algébrique ?",
+      "verso": "Parce que $U_{AB} = V_A - V_B$ peut être positive, négative ou nulle. Son signe n'est pas une erreur de mesure : il fait partie du résultat.",
+      "difficulte": 1,
+      "tags": [
+        "grandeur-algebrique"
+      ]
+    },
+    {
+      "id": "PC2C-P06-013",
+      "lecon": "La tension, une grandeur algébrique",
+      "type": "formule",
+      "recto": "Pour deux points quelconques M et N d'un circuit, quelle relation lie $U_{MN}$ et $U_{NM}$ ?",
+      "verso": "$U_{MN} = -U_{NM}$ : échanger l'ordre des indices change le signe, jamais le nombre. Cas particulier : $U_{AA} = 0~\\mathrm{V}$.",
+      "difficulte": 1,
+      "tags": [
+        "tension-inverse"
+      ]
+    },
+    {
+      "id": "PC2C-P06-014",
+      "lecon": "La tension, une grandeur algébrique",
+      "type": "definition",
+      "recto": "Que signifie, pour les potentiels des points A et B, une tension $U_{AB}$ négative ?",
+      "verso": "$U_{AB} \\lt 0$ signifie $V_A \\lt V_B$ : c'est le point B qui est au potentiel le plus élevé.",
+      "difficulte": 2,
+      "tags": [
+        "signe",
+        "potentiel"
+      ]
+    },
+    {
+      "id": "PC2C-P06-015",
+      "lecon": "La tension, une grandeur algébrique",
+      "type": "definition",
+      "recto": "Selon la convention de représentation, comment trace-t-on la flèche de la tension $U_{AB}$ aux bornes d'un dipôle ?",
+      "verso": "On trace la flèche à côté du dipôle, pointée vers A, la première lettre de l'indice, et on écrit son nom $U_{AB}$ au-dessus. Renverser la flèche revient à écrire $U_{BA}$ et à changer le signe.",
+      "difficulte": 2,
+      "tags": [
+        "fleche-tension",
+        "convention"
+      ]
+    },
+    {
+      "id": "PC2C-P06-016",
+      "lecon": "La tension, une grandeur algébrique",
+      "type": "formule",
+      "recto": "Pour un récepteur traversé par le courant de A vers B, quel est le signe de la tension $U_{AB}$ ?",
+      "verso": "$U_{AB} \\gt 0$ : dans un récepteur, le courant conventionnel entre par la borne de potentiel le plus élevé, donc $V_A \\gt V_B$.",
+      "difficulte": 2,
+      "tags": [
+        "recepteur",
+        "signe"
+      ]
+    },
+    {
+      "id": "PC2C-P06-017",
+      "lecon": "La tension, une grandeur algébrique",
+      "type": "formule",
+      "recto": "Pour un générateur de borne positive P et de borne négative N, quel est le signe de la tension $U_{PN}$ ?",
+      "verso": "$U_{PN} \\gt 0$ : à l'intérieur du générateur, le courant remonte les potentiels et sort par la borne $+$.",
+      "difficulte": 2,
+      "tags": [
+        "generateur",
+        "signe"
+      ]
+    },
+    {
+      "id": "PC2C-P06-018",
+      "lecon": "La tension, une grandeur algébrique",
+      "type": "definition",
+      "recto": "Quelle conclusion tire-t-on lorsque la tension aux bornes d'une lampe ou d'un résistor est nulle ?",
+      "verso": "Aucun courant ne traverse ce dipôle : on peut le retirer sans rien changer au reste du circuit.",
+      "difficulte": 2,
+      "tags": [
+        "recepteur",
+        "tension-nulle"
+      ]
+    },
+    {
+      "id": "PC2C-P06-019",
+      "lecon": "La tension, une grandeur algébrique",
+      "type": "definition",
+      "recto": "Pourquoi ne faut-il pas confondre la flèche de tension et la flèche du sens du courant dans un récepteur ?",
+      "verso": "La flèche de tension se dessine à côté du dipôle et pointe vers le point de potentiel le plus élevé ; la flèche du courant se dessine sur le fil. Dans un récepteur, les deux flèches sont opposées.",
+      "difficulte": 3,
+      "tags": [
+        "fleche-tension",
+        "piege"
+      ]
+    },
+    {
+      "id": "PC2C-P06-020",
+      "lecon": "La tension, une grandeur algébrique",
+      "type": "definition",
+      "recto": "Pourquoi un multimètre qui affiche $-6~\\mathrm{V}$ n'est-il pas en panne ?",
+      "verso": "Le signe moins est une information : les fils ont été posés dans l'ordre inverse. La tension vaut $-6~\\mathrm{V}$ dans cet ordre et $+6~\\mathrm{V}$ dans l'autre.",
+      "difficulte": 3,
+      "tags": [
+        "signe",
+        "multimetre",
+        "piege"
+      ]
+    },
+    {
+      "id": "PC2C-P06-021",
+      "lecon": "Les propriétés des tensions : additivité, Chasles et unicité",
+      "type": "formule",
+      "recto": "Pour trois points quelconques A, B et C d'un circuit, quelle est la relation de Chasles pour les tensions ?",
+      "verso": "$U_{AC} = U_{AB} + U_{BC}$ : les lettres s'enchaînent (le second indice d'un terme est le premier du suivant). Elle est vraie car les potentiels intermédiaires se simplifient.",
+      "difficulte": 1,
+      "tags": [
+        "chasles"
+      ]
+    },
+    {
+      "id": "PC2C-P06-022",
+      "lecon": "Les propriétés des tensions : additivité, Chasles et unicité",
+      "type": "formule",
+      "recto": "Quelle est la loi d'additivité des tensions pour une branche de dipôles montés en série ?",
+      "verso": "La tension aux extrémités de la branche est la somme algébrique des tensions aux bornes des dipôles, prises dans le même sens.",
+      "difficulte": 2,
+      "tags": [
+        "additivite",
+        "serie"
+      ]
+    },
+    {
+      "id": "PC2C-P06-023",
+      "lecon": "Les propriétés des tensions : additivité, Chasles et unicité",
+      "type": "formule",
+      "recto": "Pour des piles montées en série, comment obtient-on la tension de l'ensemble ?",
+      "verso": "C'est la somme algébrique des tensions des piles : chaque pile branchée dans le sens du montage compte $+$, chaque pile inversée compte $-$.",
+      "difficulte": 2,
+      "tags": [
+        "additivite",
+        "piles"
+      ]
+    },
+    {
+      "id": "PC2C-P06-024",
+      "lecon": "Les propriétés des tensions : additivité, Chasles et unicité",
+      "type": "formule",
+      "recto": "Le long d'une maille parcourue dans un sens choisi, que vaut la somme algébrique des tensions ?",
+      "verso": "Elle est nulle : $U_{AB} + U_{BC} + \\ldots + U_{ZA} = 0$, car elle se ramène à $U_{AA} = V_A - V_A = 0$.",
+      "difficulte": 2,
+      "tags": [
+        "loi-des-mailles"
+      ]
+    },
+    {
+      "id": "PC2C-P06-025",
+      "lecon": "Les propriétés des tensions : additivité, Chasles et unicité",
+      "type": "formule",
+      "recto": "Quelle est la loi d'unicité des tensions pour des branches reliant les deux mêmes noeuds A et B ?",
+      "verso": "Toutes ces branches portent la même tension : $U_{AB} = U_1 = U_2 = \\ldots = U_n$, car un point n'a qu'un seul potentiel.",
+      "difficulte": 1,
+      "tags": [
+        "unicite",
+        "derivation"
+      ]
+    },
+    {
+      "id": "PC2C-P06-026",
+      "lecon": "Les propriétés des tensions : additivité, Chasles et unicité",
+      "type": "definition",
+      "recto": "Quelle est la tension aux bornes d'un fil de connexion ou d'un interrupteur fermé ?",
+      "verso": "Elle est nulle : leurs deux extrémités sont au même potentiel et forment électriquement un seul point.",
+      "difficulte": 1,
+      "tags": [
+        "fil",
+        "interrupteur"
+      ]
+    },
+    {
+      "id": "PC2C-P06-027",
+      "lecon": "Les propriétés des tensions : additivité, Chasles et unicité",
+      "type": "definition",
+      "recto": "Dans une branche, quelle tension trouve-t-on aux bornes d'un interrupteur ouvert ?",
+      "verso": "Toute la tension de la branche (dans un circuit série simple, celle du générateur), car les autres dipôles, non traversés par le courant, portent $0~\\mathrm{V}$.",
+      "difficulte": 3,
+      "tags": [
+        "interrupteur",
+        "piege"
+      ]
+    },
+    {
+      "id": "PC2C-P06-028",
+      "lecon": "Les propriétés des tensions : additivité, Chasles et unicité",
+      "type": "definition",
+      "recto": "Que se passe-t-il quand on relie deux points d'un circuit par un fil (court-circuit) ?",
+      "verso": "Les deux points sont mis au même potentiel : la tension entre eux devient nulle et tout dipôle placé entre ces deux points cesse de fonctionner.",
+      "difficulte": 2,
+      "tags": [
+        "court-circuit"
+      ]
+    },
+    {
+      "id": "PC2C-P06-029",
+      "lecon": "Les propriétés des tensions : additivité, Chasles et unicité",
+      "type": "definition",
+      "recto": "Lorsqu'on cherche une coupure au voltmètre le long d'une branche alimentée, qu'affiche l'appareil sur les portions saines et à l'endroit coupé ?",
+      "verso": "Il affiche $0~\\mathrm{V}$ sur les portions saines et toute la tension du générateur aux bornes de la coupure. Cette recherche se fait sur pile ou kit solaire de $12~\\mathrm{V}$, jamais sur le secteur.",
+      "difficulte": 2,
+      "tags": [
+        "coupure",
+        "securite"
+      ]
+    },
+    {
+      "id": "PC2C-P06-030",
+      "lecon": "Les propriétés des tensions : additivité, Chasles et unicité",
+      "type": "definition",
+      "recto": "Pourquoi ne faut-il pas confondre l'additivité des tensions et l'additivité des intensités ?",
+      "verso": "Les tensions s'ajoutent le long d'une branche (dipôles en série) ; les intensités s'ajoutent à un noeud. En dérivation, la tension est unique et ce sont les intensités qui se partagent.",
+      "difficulte": 3,
+      "tags": [
+        "additivite",
+        "piege"
+      ]
+    },
+    {
+      "id": "PC2C-P06-031",
+      "lecon": "Les tensions réglables : rhéostat et potentiomètre",
+      "type": "definition",
+      "recto": "Qu'est-ce qu'un rhéostat ?",
+      "verso": "C'est un conducteur de résistance réglable, formé d'un fil résistant sur lequel glisse un curseur. On utilise deux bornes (une extrémité et le curseur) et on l'insère en série pour régler l'intensité du courant.",
+      "difficulte": 1,
+      "tags": [
+        "rheostat"
+      ]
+    },
+    {
+      "id": "PC2C-P06-032",
+      "lecon": "Les tensions réglables : rhéostat et potentiomètre",
+      "type": "definition",
+      "recto": "Qu'est-ce qu'un potentiomètre ?",
+      "verso": "C'est le même appareil que le rhéostat utilisé avec ses trois bornes : la tension est appliquée entre les extrémités A et B et la sortie est prélevée entre une extrémité et le curseur C. Il est monté en diviseur de tension.",
+      "difficulte": 1,
+      "tags": [
+        "potentiometre",
+        "diviseur-de-tension"
+      ]
+    },
+    {
+      "id": "PC2C-P06-033",
+      "lecon": "Les tensions réglables : rhéostat et potentiomètre",
+      "type": "formule",
+      "recto": "Pour un potentiomètre d'extrémités A et B et de curseur C, quelle relation de partage lie $U_{AC}$, $U_{CB}$ et $U_{AB}$ ?",
+      "verso": "$U_{AC} + U_{CB} = U_{AB}$ quelle que soit la position du curseur (relation de Chasles) : ce que gagne une part, l'autre le perd.",
+      "difficulte": 2,
+      "tags": [
+        "potentiometre",
+        "partage"
+      ]
+    },
+    {
+      "id": "PC2C-P06-034",
+      "lecon": "Les tensions réglables : rhéostat et potentiomètre",
+      "type": "formule",
+      "recto": "Pour un potentiomètre à fil homogène de longueur totale $\\ell$, quelle relation lie $U_{AC}$, $U_{AB}$ et la longueur $\\ell_{AC}$ ?",
+      "verso": "$\\dfrac{U_{AC}}{U_{AB}} = \\dfrac{\\ell_{AC}}{\\ell}$, valable pour un fil homogène de section constante, la sortie ne débitant pas de courant.",
+      "difficulte": 3,
+      "tags": [
+        "potentiometre",
+        "proportionnalite"
+      ]
+    },
+    {
+      "id": "PC2C-P06-035",
+      "lecon": "Les tensions réglables : rhéostat et potentiomètre",
+      "type": "definition",
+      "recto": "Quelle plage de tension de sortie un montage potentiométrique permet-il d'obtenir sous une tension $U_{AB}$ ?",
+      "verso": "La sortie balaie toute la plage de $0~\\mathrm{V}$ à $U_{AB}$, jamais au-delà : un potentiomètre partage une tension, il n'en fabrique pas. En montage rhéostat, la plage est plus étroite.",
+      "difficulte": 2,
+      "tags": [
+        "potentiometre",
+        "plage"
+      ]
+    },
+    {
+      "id": "PC2C-P06-036",
+      "lecon": "Les tensions réglables : rhéostat et potentiomètre",
+      "type": "definition",
+      "recto": "Quels sont les symboles normalisés du rhéostat et du potentiomètre ?",
+      "verso": "Rhéostat : un rectangle traversé par une flèche oblique. Potentiomètre : un rectangle muni d'une flèche perpendiculaire qui figure le curseur, troisième borne.",
+      "difficulte": 2,
+      "tags": [
+        "symboles"
+      ]
+    },
+    {
+      "id": "PC2C-P06-037",
+      "lecon": "Les tensions réglables : rhéostat et potentiomètre",
+      "type": "definition",
+      "recto": "Quelles sont quelques applications courantes du potentiomètre ?",
+      "verso": "Bouton de volume d'une radio, variateur d'éclairage, réglage de la luminosité d'un écran, poignée d'accélérateur électrique, capteur de position d'une pédale ou d'un flotteur de jauge à carburant.",
+      "difficulte": 1,
+      "tags": [
+        "potentiometre",
+        "applications"
+      ]
+    },
+    {
+      "id": "PC2C-P06-038",
+      "lecon": "Les tensions réglables : rhéostat et potentiomètre",
+      "type": "formule",
+      "recto": "Avant de brancher un rhéostat, où doit-on placer son curseur ?",
+      "verso": "De façon à insérer la plus grande longueur de fil ; on respecte aussi l'intensité maximale portée sur sa plaque.",
+      "difficulte": 2,
+      "tags": [
+        "rheostat",
+        "securite"
+      ]
+    }
+  ]
+}

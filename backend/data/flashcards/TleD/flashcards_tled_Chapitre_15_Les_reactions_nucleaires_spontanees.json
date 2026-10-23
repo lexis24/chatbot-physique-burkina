@@ -1,0 +1,434 @@
+{
+  "matiere": "Physique-Chimie",
+  "partie": "Physique",
+  "niveau": "Terminale D",
+  "chapitre": "Physique, Chapitre 15 : Les réactions nucléaires spontanées",
+  "source": "pc/tled/Chapitre_15_Les_reactions_nucleaires_spontanees",
+  "nombre_cartes": 36,
+  "cartes": [
+    {
+      "id": "PCTD-P15-001",
+      "lecon": "La stabilité des noyaux et le phénomène radioactif",
+      "type": "definition",
+      "recto": "En physique nucléaire, quelle différence y a-t-il entre un noyau stable et un noyau instable ?",
+      "verso": "Un noyau stable conserve indéfiniment sa composition. Un noyau instable, ou radioactif, se transforme spontanément en un autre noyau en émettant une ou plusieurs particules et, le plus souvent, un rayonnement électromagnétique.",
+      "difficulte": 1,
+      "tags": [
+        "noyau-instable"
+      ]
+    },
+    {
+      "id": "PCTD-P15-002",
+      "lecon": "La stabilité des noyaux et le phénomène radioactif",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on un radionucléide ?",
+      "verso": "Un nucléide (ou radioisotope) dont le noyau est radioactif, comme le carbone 14, le césium 137 ou l'uranium 238 ; le carbone 12 n'en est pas un.",
+      "difficulte": 1,
+      "tags": [
+        "radionucleide"
+      ]
+    },
+    {
+      "id": "PCTD-P15-003",
+      "lecon": "La stabilité des noyaux et le phénomène radioactif",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on la radioactivité ?",
+      "verso": "La transformation spontanée d'un noyau instable en un autre noyau, avec émission de particules et de rayonnement. Chaque transformation d'un noyau est une désintégration radioactive.",
+      "difficulte": 1,
+      "tags": [
+        "radioactivite",
+        "desintegration"
+      ]
+    },
+    {
+      "id": "PCTD-P15-004",
+      "lecon": "La stabilité des noyaux et le phénomène radioactif",
+      "type": "definition",
+      "recto": "Quels sont les quatre caractères de la désintégration radioactive d'un noyau ?",
+      "verso": "Elle est spontanée (sans cause extérieure), aléatoire (date imprévisible pour un noyau donné), inéluctable (tout noyau instable finit par se désintégrer) et indépendante des paramètres physico-chimiques.",
+      "difficulte": 2,
+      "tags": [
+        "caracteres",
+        "radioactivite"
+      ]
+    },
+    {
+      "id": "PCTD-P15-005",
+      "lecon": "La stabilité des noyaux et le phénomène radioactif",
+      "type": "definition",
+      "recto": "Pourquoi chauffer un échantillon radioactif ne modifie-t-il pas sa désintégration ?",
+      "verso": "Une désintégration met en jeu des millions d'électronvolts, alors qu'un chauffage ou une liaison chimique met en jeu quelques électronvolts : la température n'a aucune prise sur le noyau.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "parametres-physico-chimiques"
+      ]
+    },
+    {
+      "id": "PCTD-P15-006",
+      "lecon": "La stabilité des noyaux et le phénomène radioactif",
+      "type": "formule",
+      "recto": "Dans le diagramme $(N, Z)$, quel type d'émission attend-on d'un noyau situé au-dessus de la vallée de stabilité ?",
+      "verso": "Il a trop de neutrons par rapport à ses protons (carbone 14, césium 137, cobalt 60) : il est émetteur $\\beta^-$.",
+      "difficulte": 2,
+      "tags": [
+        "diagramme-nz",
+        "beta-moins"
+      ]
+    },
+    {
+      "id": "PCTD-P15-007",
+      "lecon": "La stabilité des noyaux et le phénomène radioactif",
+      "type": "formule",
+      "recto": "Dans le diagramme $(N, Z)$, quel type d'émission attend-on d'un noyau situé au-dessous de la vallée de stabilité ?",
+      "verso": "Il a trop de protons (carbone 11, azote 13, fluor 18) : il est émetteur $\\beta^+$.",
+      "difficulte": 2,
+      "tags": [
+        "diagramme-nz",
+        "beta-plus"
+      ]
+    },
+    {
+      "id": "PCTD-P15-008",
+      "lecon": "La stabilité des noyaux et le phénomène radioactif",
+      "type": "formule",
+      "recto": "Quelle est la situation des noyaux de nombre de charges $Z \\gt 83$ ?",
+      "verso": "Ils sont tous instables, quel que soit leur nombre de neutrons, car trop gros : ce sont des émetteurs $\\alpha$ (radium 226, uranium 238).",
+      "difficulte": 2,
+      "tags": [
+        "diagramme-nz",
+        "alpha"
+      ]
+    },
+    {
+      "id": "PCTD-P15-009",
+      "lecon": "Les émissions radioactives et les lois de conservation",
+      "type": "definition",
+      "recto": "En radioactivité, qu'appelle-t-on une transmutation ?",
+      "verso": "Le changement d'élément chimique lors d'une désintégration : le noyau fils appartient à un élément différent de celui du père. Les émissions $\\alpha$, $\\beta^-$ et $\\beta^+$ en produisent une, l'émission $\\gamma$ non.",
+      "difficulte": 2,
+      "tags": [
+        "transmutation"
+      ]
+    },
+    {
+      "id": "PCTD-P15-010",
+      "lecon": "Les émissions radioactives et les lois de conservation",
+      "type": "formule",
+      "recto": "Quelles sont les lois de Soddy utilisées pour équilibrer une équation de désintégration ?",
+      "verso": "Conservation du nombre de nucléons et du nombre de charges : $A_{\\text{père}}$ est égal à la somme des $A$ des produits, et $Z_{\\text{père}}$ à la somme des $Z$ des produits. Se conservent aussi la quantité de mouvement et l'énergie totale.",
+      "difficulte": 2,
+      "tags": [
+        "lois-de-soddy",
+        "conservation"
+      ]
+    },
+    {
+      "id": "PCTD-P15-011",
+      "lecon": "Les émissions radioactives et les lois de conservation",
+      "type": "formule",
+      "recto": "Quelle est l'équation générale d'une désintégration $\\alpha$ d'un noyau ${}^{A}_{Z}\\mathrm{X}$ ?",
+      "verso": "${}^{A}_{Z}\\mathrm{X} \\longrightarrow {}^{A-4}_{Z-2}\\mathrm{Y} + {}^{4}_{2}\\mathrm{He}$ : la particule $\\alpha$ est un noyau d'hélium 4 ; elle concerne surtout les noyaux lourds.",
+      "difficulte": 1,
+      "tags": [
+        "alpha",
+        "equation"
+      ]
+    },
+    {
+      "id": "PCTD-P15-012",
+      "lecon": "Les émissions radioactives et les lois de conservation",
+      "type": "formule",
+      "recto": "Quelle est l'équation générale d'une désintégration $\\beta^-$ d'un noyau ${}^{A}_{Z}\\mathrm{X}$ ?",
+      "verso": "${}^{A}_{Z}\\mathrm{X} \\longrightarrow {}^{A}_{Z+1}\\mathrm{Y} + {}^{0}_{-1}e$ : un neutron du noyau s'est changé en proton, ${}^{1}_{0}n \\rightarrow {}^{1}_{1}p + {}^{0}_{-1}e$.",
+      "difficulte": 2,
+      "tags": [
+        "beta-moins",
+        "equation"
+      ]
+    },
+    {
+      "id": "PCTD-P15-013",
+      "lecon": "Les émissions radioactives et les lois de conservation",
+      "type": "formule",
+      "recto": "Quelle est l'équation générale d'une désintégration $\\beta^+$ d'un noyau ${}^{A}_{Z}\\mathrm{X}$ ?",
+      "verso": "${}^{A}_{Z}\\mathrm{X} \\longrightarrow {}^{A}_{Z-1}\\mathrm{Y} + {}^{0}_{+1}e$ : un proton du noyau s'est changé en neutron, ${}^{1}_{1}p \\rightarrow {}^{1}_{0}n + {}^{0}_{+1}e$ ; le positon ${}^{0}_{+1}e$ a la masse de l'électron et une charge opposée.",
+      "difficulte": 2,
+      "tags": [
+        "beta-plus",
+        "equation"
+      ]
+    },
+    {
+      "id": "PCTD-P15-014",
+      "lecon": "Les émissions radioactives et les lois de conservation",
+      "type": "definition",
+      "recto": "D'où provient l'électron émis lors d'une désintégration $\\beta^-$ ?",
+      "verso": "Il est créé dans le noyau au moment où un neutron se change en proton, puis aussitôt éjecté. Il ne vient pas du cortège électronique : sinon $Z$ ne changerait pas et il n'y aurait pas de transmutation.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "beta-moins"
+      ]
+    },
+    {
+      "id": "PCTD-P15-015",
+      "lecon": "Les émissions radioactives et les lois de conservation",
+      "type": "formule",
+      "recto": "Comment s'écrit l'émission d'un rayonnement $\\gamma$ par un noyau fils excité ${}^{A}_{Z}\\mathrm{Y}^{*}$ ?",
+      "verso": "${}^{A}_{Z}\\mathrm{Y}^{*} \\longrightarrow {}^{A}_{Z}\\mathrm{Y} + \\gamma$ : le noyau se désexcite en émettant un photon très énergétique, de l'ordre du million d'électronvolts.",
+      "difficulte": 2,
+      "tags": [
+        "gamma",
+        "desexcitation"
+      ]
+    },
+    {
+      "id": "PCTD-P15-016",
+      "lecon": "Les émissions radioactives et les lois de conservation",
+      "type": "definition",
+      "recto": "Pourquoi l'émission $\\gamma$ n'est-elle pas une désintégration ?",
+      "verso": "Elle ne modifie ni $A$ ni $Z$ : le noyau reste le même élément. C'est une désexcitation, qui ne se produit jamais seule mais toujours à la suite d'une émission $\\alpha$ ou $\\beta$.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "gamma"
+      ]
+    },
+    {
+      "id": "PCTD-P15-017",
+      "lecon": "Les émissions radioactives et les lois de conservation",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on une famille radioactive ?",
+      "verso": "La suite des nucléides obtenus par désintégrations successives à partir d'un même noyau père, jusqu'à un noyau stable qui clôt la famille (uranium 238, uranium 235 et thorium 232 finissent sur un isotope du plomb).",
+      "difficulte": 2,
+      "tags": [
+        "famille-radioactive"
+      ]
+    },
+    {
+      "id": "PCTD-P15-018",
+      "lecon": "Les émissions radioactives et les lois de conservation",
+      "type": "formule",
+      "recto": "Comment calcule-t-on, à partir des masses, l'énergie $W$ libérée par une désintégration radioactive ?",
+      "verso": "$W = \\left[m(\\text{père}) - m(\\text{fils}) - m(\\text{particule})\\right] \\times c^{2}$ ; avec les masses en $\\mathrm{u}$, on utilise l'équivalence $1~\\mathrm{u}$ pour $931{,}5~\\mathrm{MeV}$.",
+      "difficulte": 2,
+      "tags": [
+        "energie-liberee",
+        "masse-energie"
+      ]
+    },
+    {
+      "id": "PCTD-P15-019",
+      "lecon": "Les émissions radioactives et les lois de conservation",
+      "type": "formule",
+      "recto": "Comment calcule-t-on l'énergie $W$ libérée par une désintégration à partir des énergies de liaison ?",
+      "verso": "$W = \\left[E_{\\ell}(\\text{fils}) + E_{\\ell}(\\text{particule})\\right] - E_{\\ell}(\\text{père})$, avec $E_{\\ell} = A \\times \\dfrac{E_{\\ell}}{A}$ pour chaque noyau.",
+      "difficulte": 2,
+      "tags": [
+        "energie-liberee",
+        "energie-de-liaison"
+      ]
+    },
+    {
+      "id": "PCTD-P15-020",
+      "lecon": "Les émissions radioactives et les lois de conservation",
+      "type": "formule",
+      "recto": "Entre quelles formes se répartit l'énergie $W$ libérée par une désintégration radioactive ?",
+      "verso": "Entre l'énergie cinétique du noyau fils, celle de la particule émise et l'énergie du photon $\\gamma$ s'il y en a un : $W = E_c(\\text{fils}) + E_c(\\text{particule}) + E_{\\gamma}$.",
+      "difficulte": 2,
+      "tags": [
+        "bilan-energetique"
+      ]
+    },
+    {
+      "id": "PCTD-P15-021",
+      "lecon": "Les émissions radioactives et les lois de conservation",
+      "type": "formule",
+      "recto": "Pour une désintégration $\\alpha$ d'un noyau père au repos, quelle relation lie l'énergie cinétique du noyau fils $\\mathrm{Y}$ à celle de la particule $\\alpha$ ?",
+      "verso": "La quantité de mouvement se conserve ($m_Y v_Y = m_{\\alpha} v_{\\alpha}$), d'où $E_c(\\mathrm{Y}) = \\dfrac{m_{\\alpha}}{m_Y}\\,E_c(\\alpha)$ : le recul d'un noyau lourd est très faible.",
+      "difficulte": 3,
+      "tags": [
+        "recul",
+        "quantite-de-mouvement"
+      ]
+    },
+    {
+      "id": "PCTD-P15-022",
+      "lecon": "La loi de décroissance radioactive et la demi-vie",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on la constante radioactive $\\lambda$ d'un radionucléide ?",
+      "verso": "La probabilité, pour un noyau, de se désintégrer par unité de temps ; elle est caractéristique du nucléide et s'exprime en $\\mathrm{s^{-1}}$ (ou $\\mathrm{min^{-1}}$, $\\mathrm{h^{-1}}$, $\\mathrm{an^{-1}}$).",
+      "difficulte": 1,
+      "tags": [
+        "constante-radioactive"
+      ]
+    },
+    {
+      "id": "PCTD-P15-023",
+      "lecon": "La loi de décroissance radioactive et la demi-vie",
+      "type": "formule",
+      "recto": "Quelle est la loi de décroissance radioactive donnant le nombre $N$ de noyaux à la date $t$ ?",
+      "verso": "$N = N_0\\,e^{-\\lambda t}$, où $N_0$ est le nombre de noyaux radioactifs à $t = 0$ et $N$ le nombre moyen de noyaux non encore désintégrés.",
+      "difficulte": 1,
+      "tags": [
+        "loi-de-decroissance"
+      ]
+    },
+    {
+      "id": "PCTD-P15-024",
+      "lecon": "La loi de décroissance radioactive et la demi-vie",
+      "type": "formule",
+      "recto": "Quelle expression donne la masse $m_{\\text{dés}}$ de substance radioactive désintégrée entre $0$ et $t$ ?",
+      "verso": "$m_{\\text{dés}} = m_0 - m = m_0\\left(1 - e^{-\\lambda t}\\right)$ ; la loi $m = m_0\\,e^{-\\lambda t}$ donne ce qui reste, le désintégré s'obtient par soustraction.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "masse-desintegree"
+      ]
+    },
+    {
+      "id": "PCTD-P15-025",
+      "lecon": "La loi de décroissance radioactive et la demi-vie",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on la période radioactive (ou demi-vie) d'un radionucléide ?",
+      "verso": "La durée $T = t_{1/2}$ au bout de laquelle la moitié des noyaux radioactifs initialement présents se sont désintégrés.",
+      "difficulte": 1,
+      "tags": [
+        "demi-vie",
+        "periode"
+      ]
+    },
+    {
+      "id": "PCTD-P15-026",
+      "lecon": "La loi de décroissance radioactive et la demi-vie",
+      "type": "formule",
+      "recto": "Quelle relation lie la demi-vie $t_{1/2}$ et la constante radioactive $\\lambda$ ?",
+      "verso": "$t_{1/2} = \\dfrac{\\ln 2}{\\lambda} \\approx \\dfrac{0{,}693}{\\lambda}$, $t_{1/2}$ étant dans l'unité de temps inverse de celle de $\\lambda$.",
+      "difficulte": 1,
+      "tags": [
+        "demi-vie",
+        "constante-radioactive"
+      ]
+    },
+    {
+      "id": "PCTD-P15-027",
+      "lecon": "La loi de décroissance radioactive et la demi-vie",
+      "type": "formule",
+      "recto": "Quelle fraction $\\dfrac{N}{N_0}$ de noyaux radioactifs reste-t-il au bout de $n$ demi-vies ?",
+      "verso": "$\\dfrac{N}{N_0} = \\dfrac{1}{2^{n}}$ : la moitié après une demi-vie, le quart après deux (et non zéro), environ un millième après dix ($2^{10} = 1\\,024$).",
+      "difficulte": 2,
+      "tags": [
+        "demi-vie",
+        "forme-pratique"
+      ]
+    },
+    {
+      "id": "PCTD-P15-028",
+      "lecon": "La loi de décroissance radioactive et la demi-vie",
+      "type": "formule",
+      "recto": "Quelle forme prend la loi de décroissance quand on porte $\\ln N$ en fonction du temps $t$ ?",
+      "verso": "$\\ln N = \\ln N_0 - \\lambda t$ : une droite de coefficient directeur $-\\lambda$ et d'ordonnée à l'origine $\\ln N_0$.",
+      "difficulte": 2,
+      "tags": [
+        "linearisation",
+        "droite"
+      ]
+    },
+    {
+      "id": "PCTD-P15-029",
+      "lecon": "La loi de décroissance radioactive et la demi-vie",
+      "type": "formule",
+      "recto": "Dans un calcul de décroissance, quelle précaution d'unités faut-il prendre entre $\\lambda$ et $t$ ?",
+      "verso": "Toutes les durées dans la même unité : si $\\lambda$ est en $\\mathrm{s^{-1}}$, $t$ doit être en secondes. Une demi-vie de 8 jours vaut $8 \\times 86\\,400 \\approx 6{,}9 \\times 10^{5}~\\mathrm{s}$.",
+      "difficulte": 2,
+      "tags": [
+        "unites",
+        "piege"
+      ]
+    },
+    {
+      "id": "PCTD-P15-030",
+      "lecon": "L'activité d'un échantillon et la datation",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on l'activité $A$ d'un échantillon radioactif ?",
+      "verso": "Le nombre de désintégrations qui s'y produisent par unité de temps : $A = \\lvert \\dfrac{dN}{dt} \\rvert = \\lambda N$, en becquerels si $\\lambda$ est en $\\mathrm{s^{-1}}$.",
+      "difficulte": 1,
+      "tags": [
+        "activite"
+      ]
+    },
+    {
+      "id": "PCTD-P15-031",
+      "lecon": "L'activité d'un échantillon et la datation",
+      "type": "definition",
+      "recto": "Que représentent le becquerel et le curie ?",
+      "verso": "Le becquerel ($\\mathrm{Bq}$), unité légale d'activité, correspond à une désintégration par seconde. Le curie ($\\mathrm{Ci}$), ancienne unité, est l'activité d'un gramme de radium 226 : $1~\\mathrm{Ci} = 3{,}7 \\times 10^{10}~\\mathrm{Bq}$.",
+      "difficulte": 2,
+      "tags": [
+        "becquerel",
+        "curie"
+      ]
+    },
+    {
+      "id": "PCTD-P15-032",
+      "lecon": "L'activité d'un échantillon et la datation",
+      "type": "formule",
+      "recto": "Selon quelle loi l'activité $A$ d'un échantillon radioactif évolue-t-elle au cours du temps ?",
+      "verso": "$A = A_0\\,e^{-\\lambda t}$ avec $A_0 = \\lambda N_0$ : la même loi que le nombre de noyaux ; la droite $\\ln A = f(t)$ a pour coefficient directeur $-\\lambda$.",
+      "difficulte": 2,
+      "tags": [
+        "activite",
+        "decroissance"
+      ]
+    },
+    {
+      "id": "PCTD-P15-033",
+      "lecon": "L'activité d'un échantillon et la datation",
+      "type": "formule",
+      "recto": "Comment obtient-on le nombre $N$ de noyaux contenus dans une masse $m$ d'un radionucléide de masse molaire $M$ ?",
+      "verso": "$N = \\dfrac{m}{M} \\times N_A$, avec $m$ en $\\mathrm{g}$, $M$ en $\\mathrm{g/mol}$ et la constante d'Avogadro $N_A = 6{,}02 \\times 10^{23}~\\mathrm{mol^{-1}}$.",
+      "difficulte": 2,
+      "tags": [
+        "nombre-de-noyaux",
+        "avogadro"
+      ]
+    },
+    {
+      "id": "PCTD-P15-034",
+      "lecon": "L'activité d'un échantillon et la datation",
+      "type": "definition",
+      "recto": "A nombre de noyaux comparable, pourquoi un radionucléide de longue demi-vie est-il peu actif ?",
+      "verso": "Car $A = \\dfrac{\\ln 2}{t_{1/2}}\\,N$ : l'activité est inversement proportionnelle à la demi-vie ; le déchet peu actif reste pourtant actif très longtemps.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "activite",
+        "demi-vie"
+      ]
+    },
+    {
+      "id": "PCTD-P15-035",
+      "lecon": "L'activité d'un échantillon et la datation",
+      "type": "formule",
+      "recto": "Quelle relation donne l'âge $t$ d'un échantillon daté par son activité $A$ et l'activité initiale $A_0$ ?",
+      "verso": "$t = \\dfrac{1}{\\lambda}\\ln\\left(\\dfrac{A_0}{A}\\right) = \\dfrac{t_{1/2}}{\\ln 2}\\ln\\left(\\dfrac{A_0}{A}\\right)$, l'ancien sur l'actuel (le rapport inverse donnerait un âge négatif).",
+      "difficulte": 2,
+      "tags": [
+        "datation"
+      ]
+    },
+    {
+      "id": "PCTD-P15-036",
+      "lecon": "L'activité d'un échantillon et la datation",
+      "type": "definition",
+      "recto": "Sur quel principe repose la datation d'un ancien être vivant par le carbone 14 ?",
+      "verso": "Vivant, il renouvelle son carbone : son activité massique en carbone 14 reste constante. A sa mort, elle décroît ($t_{1/2} = 5\\,570$ ans) ; on la compare à celle d'un échantillon vivant de même masse.",
+      "difficulte": 2,
+      "tags": [
+        "carbone-14",
+        "datation"
+      ]
+    }
+  ]
+}

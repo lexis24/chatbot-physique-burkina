@@ -1,0 +1,403 @@
+{
+  "matiere": "Physique-Chimie",
+  "partie": "Physique",
+  "niveau": "Terminale D",
+  "chapitre": "Physique, Chapitre 5 : Le champ et les interactions électriques",
+  "source": "pc/tled/Chapitre_5_Le_champ_et_les_interactions_electriques",
+  "nombre_cartes": 34,
+  "cartes": [
+    {
+      "id": "PCTD-P05-001",
+      "lecon": "Les charges électriques et la loi de Coulomb",
+      "type": "definition",
+      "recto": "Quelle est la valeur de la charge élémentaire $e$ ?",
+      "verso": "$e = 1{,}6 \\times 10^{-19}~\\mathrm{C}$. Toute charge électrique, positive ou négative, est un multiple entier de $e$.",
+      "difficulte": 1,
+      "tags": [
+        "charge-elementaire"
+      ]
+    },
+    {
+      "id": "PCTD-P05-002",
+      "lecon": "Les charges électriques et la loi de Coulomb",
+      "type": "definition",
+      "recto": "Que dit le principe de conservation de la charge électrique ?",
+      "verso": "Dans un système isolé, la charge totale se conserve : le frottement ne crée pas de charge, il transfère des électrons d'un corps à l'autre.",
+      "difficulte": 1,
+      "tags": [
+        "conservation-de-la-charge"
+      ]
+    },
+    {
+      "id": "PCTD-P05-003",
+      "lecon": "Les charges électriques et la loi de Coulomb",
+      "type": "formule",
+      "recto": "Selon la loi de Coulomb, quelle est la valeur $F$ des forces qu'exercent l'une sur l'autre deux charges ponctuelles $q_A$ et $q_B$ séparées de la distance $d$ ?",
+      "verso": "$F = k\\dfrac{\\lvert q_A q_B \\rvert}{d^{2}}$, avec $k = 9 \\times 10^{9}~\\mathrm{SI}$, $q$ en C, $d$ en m et $F$ en N. Les deux forces sont opposées et de même valeur.",
+      "difficulte": 1,
+      "tags": [
+        "loi-de-coulomb"
+      ]
+    },
+    {
+      "id": "PCTD-P05-004",
+      "lecon": "Les charges électriques et la loi de Coulomb",
+      "type": "formule",
+      "recto": "Quelle relation lie la constante $k$ de la loi de Coulomb à la permittivité du vide $\\varepsilon_0$ ?",
+      "verso": "$k = \\dfrac{1}{4\\pi\\varepsilon_0}$, avec $\\varepsilon_0 = 8{,}85 \\times 10^{-12}~\\mathrm{SI}$, ce qui donne $k = 9 \\times 10^{9}~\\mathrm{SI}$.",
+      "difficulte": 2,
+      "tags": [
+        "permittivite",
+        "constante-k"
+      ]
+    },
+    {
+      "id": "PCTD-P05-005",
+      "lecon": "Les charges électriques et la loi de Coulomb",
+      "type": "formule",
+      "recto": "En notant $\\vec{u}_{AB}$ le vecteur unitaire dirigé de $A$ vers $B$, quelle est l'expression vectorielle de la force électrique $\\vec{F}_{A/B}$ exercée par la charge $q_A$ sur la charge $q_B$ ?",
+      "verso": "$\\vec{F}_{A/B} = k\\dfrac{q_A q_B}{d^{2}}\\vec{u}_{AB}$, et $\\vec{F}_{B/A} = -\\vec{F}_{A/B}$. Le signe du produit $q_A q_B$ donne le sens.",
+      "difficulte": 2,
+      "tags": [
+        "expression-vectorielle",
+        "loi-de-coulomb"
+      ]
+    },
+    {
+      "id": "PCTD-P05-006",
+      "lecon": "Les charges électriques et la loi de Coulomb",
+      "type": "formule",
+      "recto": "D'après le signe du produit $q_A q_B$ de deux charges, quand les forces de Coulomb sont-elles attractives ?",
+      "verso": "Quand $q_A q_B \\lt 0$ (charges de signes contraires). Si $q_A q_B \\gt 0$ (charges de même signe), elles sont répulsives.",
+      "difficulte": 1,
+      "tags": [
+        "attraction-repulsion"
+      ]
+    },
+    {
+      "id": "PCTD-P05-007",
+      "lecon": "Les charges électriques et la loi de Coulomb",
+      "type": "definition",
+      "recto": "Quelle différence y a-t-il entre un vecteur libre et un vecteur lié ?",
+      "verso": "Un vecteur libre est défini par sa direction, son sens et sa valeur ; un vecteur lié possède en plus un point d'application.",
+      "difficulte": 2,
+      "tags": [
+        "vecteur-lie",
+        "vocabulaire"
+      ]
+    },
+    {
+      "id": "PCTD-P05-008",
+      "lecon": "Les charges électriques et la loi de Coulomb",
+      "type": "definition",
+      "recto": "Pourquoi la force électrique est-elle un vecteur lié ?",
+      "verso": "Parce qu'elle a un point d'application précis : la charge qui subit la force, jamais celle qui l'exerce.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "vecteur-lie"
+      ]
+    },
+    {
+      "id": "PCTD-P05-009",
+      "lecon": "Les charges électriques et la loi de Coulomb",
+      "type": "formule",
+      "recto": "A quelle condition la loi de Coulomb s'applique-t-elle ?",
+      "verso": "Les charges doivent être ponctuelles, ou portées par des sphères petites devant leur distance ; la distance s'exprime en mètres et s'élève au carré.",
+      "difficulte": 2,
+      "tags": [
+        "condition",
+        "loi-de-coulomb"
+      ]
+    },
+    {
+      "id": "PCTD-P05-010",
+      "lecon": "Les charges électriques et la loi de Coulomb",
+      "type": "definition",
+      "recto": "Bien que toutes deux varient en $\\dfrac{1}{d^{2}}$, qu'est-ce qui distingue l'interaction électrique de l'interaction gravitationnelle ?",
+      "verso": "La gravitation est toujours attractive, l'interaction électrique peut être attractive ou répulsive ; et $k = 9 \\times 10^{9}~\\mathrm{SI}$ est immense devant $G = 6{,}67 \\times 10^{-11}~\\mathrm{SI}$.",
+      "difficulte": 2,
+      "tags": [
+        "comparaison",
+        "gravitation"
+      ]
+    },
+    {
+      "id": "PCTD-P05-011",
+      "lecon": "Les charges électriques et la loi de Coulomb",
+      "type": "definition",
+      "recto": "Entre un proton et un électron, quel est l'ordre de grandeur du rapport entre la force électrique et la force gravitationnelle ?",
+      "verso": "Environ $2 \\times 10^{39}$, quelle que soit la distance (le $d^{2}$ se simplifie) : la gravitation est négligeable entre ces particules.",
+      "difficulte": 3,
+      "tags": [
+        "comparaison",
+        "ordre-de-grandeur"
+      ]
+    },
+    {
+      "id": "PCTD-P05-012",
+      "lecon": "Le champ électrique et ses lignes de champ",
+      "type": "formule",
+      "recto": "Comment définit-on le vecteur champ électrique $\\vec{E}$ en un point $M$ où une charge d'épreuve $q$ subit la force $\\vec{F}$ ?",
+      "verso": "$\\vec{E} = \\dfrac{\\vec{F}}{q}$, et réciproquement $\\vec{F} = q\\vec{E}$ ; $E$ s'exprime en volts par mètre ($\\mathrm{V/m}$), équivalent au newton par coulomb.",
+      "difficulte": 1,
+      "tags": [
+        "champ-electrique",
+        "definition"
+      ]
+    },
+    {
+      "id": "PCTD-P05-013",
+      "lecon": "Le champ électrique et ses lignes de champ",
+      "type": "definition",
+      "recto": "De quoi dépend le champ électrique en un point $M$ ?",
+      "verso": "Uniquement du point et des charges qui le créent ; il ne dépend pas de la charge d'épreuve placée en $M$.",
+      "difficulte": 2,
+      "tags": [
+        "charge-d-epreuve"
+      ]
+    },
+    {
+      "id": "PCTD-P05-014",
+      "lecon": "Le champ électrique et ses lignes de champ",
+      "type": "formule",
+      "recto": "Pour une charge $q$ placée dans un champ électrique $\\vec{E}$, comment le sens de la force $\\vec{F}$ dépend-il du signe de $q$ ?",
+      "verso": "Si $q \\gt 0$, $\\vec{F}$ a le même sens que $\\vec{E}$ ; si $q \\lt 0$, le sens contraire. La direction est la même et $F = \\lvert q \\rvert E$.",
+      "difficulte": 2,
+      "tags": [
+        "sens-de-la-force"
+      ]
+    },
+    {
+      "id": "PCTD-P05-015",
+      "lecon": "Le champ électrique et ses lignes de champ",
+      "type": "definition",
+      "recto": "Quelle erreur commet un élève qui affirme que $\\vec{F}$ et $\\vec{E}$ ont toujours le même sens puisque $\\vec{F} = q\\vec{E}$ ?",
+      "verso": "Ce n'est vrai que si la charge est positive. Pour une charge négative, comme l'électron, les deux vecteurs ont la même direction mais des sens contraires.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "sens-de-la-force"
+      ]
+    },
+    {
+      "id": "PCTD-P05-016",
+      "lecon": "Le champ électrique et ses lignes de champ",
+      "type": "formule",
+      "recto": "Quelle est la valeur du champ électrique créé par une charge ponctuelle $Q$ isolée en un point situé à la distance $d$ ?",
+      "verso": "$E = k\\dfrac{\\lvert Q \\rvert}{d^{2}}$, avec $k = 9 \\times 10^{9}~\\mathrm{SI}$, $Q$ en C, $d$ en m et $E$ en $\\mathrm{V/m}$ ; $Q$ est la charge qui crée le champ.",
+      "difficulte": 1,
+      "tags": [
+        "charge-ponctuelle"
+      ]
+    },
+    {
+      "id": "PCTD-P05-017",
+      "lecon": "Le champ électrique et ses lignes de champ",
+      "type": "definition",
+      "recto": "Quels sont la direction et le sens du champ créé en un point $M$ par une charge ponctuelle $Q$ placée en $O$ ?",
+      "verso": "Direction : la droite $(OM)$. Sens centrifuge (fuyant $O$) si $Q \\gt 0$, centripète (vers $O$) si $Q \\lt 0$ : c'est un champ radial.",
+      "difficulte": 2,
+      "tags": [
+        "champ-radial"
+      ]
+    },
+    {
+      "id": "PCTD-P05-018",
+      "lecon": "Le champ électrique et ses lignes de champ",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on spectre électrique ?",
+      "verso": "L'ensemble des lignes de champ électrique : des courbes tangentes en chaque point à $\\vec{E}$ et orientées dans son sens.",
+      "difficulte": 1,
+      "tags": [
+        "spectre",
+        "ligne-de-champ"
+      ]
+    },
+    {
+      "id": "PCTD-P05-019",
+      "lecon": "Le champ électrique et ses lignes de champ",
+      "type": "definition",
+      "recto": "D'où partent et où aboutissent les lignes de champ électrique ?",
+      "verso": "Elles partent des charges positives et aboutissent aux charges négatives ; elles ne se coupent jamais.",
+      "difficulte": 2,
+      "tags": [
+        "ligne-de-champ"
+      ]
+    },
+    {
+      "id": "PCTD-P05-020",
+      "lecon": "Le champ électrique et ses lignes de champ",
+      "type": "definition",
+      "recto": "Sur un spectre électrique, à quoi reconnaît-on une région où le champ est intense ?",
+      "verso": "Les lignes de champ y sont resserrées : le champ est d'autant plus intense qu'elles sont plus serrées, et non plus écartées.",
+      "difficulte": 2,
+      "tags": [
+        "ligne-de-champ",
+        "intensite"
+      ]
+    },
+    {
+      "id": "PCTD-P05-021",
+      "lecon": "Le champ électrique et ses lignes de champ",
+      "type": "formule",
+      "recto": "Selon le principe de superposition, quel est le champ électrique créé en un point par plusieurs charges ?",
+      "verso": "La somme vectorielle des champs que chaque charge y créerait seule : $\\vec{E} = \\vec{E}_1 + \\vec{E}_2 + \\ldots$",
+      "difficulte": 1,
+      "tags": [
+        "superposition"
+      ]
+    },
+    {
+      "id": "PCTD-P05-022",
+      "lecon": "Le champ électrique et ses lignes de champ",
+      "type": "formule",
+      "recto": "Quelle est la valeur $E$ du champ résultant de deux champs $\\vec{E}_1$ et $\\vec{E}_2$ qui font entre eux un angle $\\theta$ ?",
+      "verso": "$E^{2} = E_1^{2} + E_2^{2} + 2E_1E_2\\cos\\theta$. Si les champs sont perpendiculaires, $E = \\sqrt{E_1^{2} + E_2^{2}}$.",
+      "difficulte": 2,
+      "tags": [
+        "superposition",
+        "parallelogramme"
+      ]
+    },
+    {
+      "id": "PCTD-P05-023",
+      "lecon": "Le champ électrique et ses lignes de champ",
+      "type": "definition",
+      "recto": "Pour deux charges ponctuelles de signes contraires, où se trouve le point où le champ électrique résultant est nul ?",
+      "verso": "A l'extérieur du segment qui les joint, du côté de la charge la plus petite en valeur absolue. Pour deux charges de même signe, il est entre les charges.",
+      "difficulte": 3,
+      "tags": [
+        "champ-nul"
+      ]
+    },
+    {
+      "id": "PCTD-P05-024",
+      "lecon": "Le champ électrique uniforme et le condensateur plan",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on un champ électrique uniforme ?",
+      "verso": "Un champ qui a, en tout point d'une région, la même direction, le même sens et la même valeur ; ses lignes sont des droites parallèles, de même sens et également espacées. C'est un vecteur libre.",
+      "difficulte": 1,
+      "tags": [
+        "champ-uniforme"
+      ]
+    },
+    {
+      "id": "PCTD-P05-025",
+      "lecon": "Le champ électrique uniforme et le condensateur plan",
+      "type": "definition",
+      "recto": "Qu'est-ce qu'un condensateur plan ?",
+      "verso": "Deux plaques conductrices planes et parallèles, les armatures, séparées d'une distance $d$ par un isolant. Sous tension, il règne entre elles, loin des bords, un champ uniforme.",
+      "difficulte": 1,
+      "tags": [
+        "condensateur-plan"
+      ]
+    },
+    {
+      "id": "PCTD-P05-026",
+      "lecon": "Le champ électrique uniforme et le condensateur plan",
+      "type": "formule",
+      "recto": "Quelle est la valeur $E$ du champ électrique entre les armatures d'un condensateur plan soumis à la tension $U$ et dont les armatures sont distantes de $d$ ?",
+      "verso": "$E = \\dfrac{U}{d}$, avec $U$ en V, $d$ en m et $E$ en $\\mathrm{V/m}$. Cette relation ne vaut que pour le champ uniforme entre plaques parallèles.",
+      "difficulte": 1,
+      "tags": [
+        "condensateur-plan",
+        "relation-u-d"
+      ]
+    },
+    {
+      "id": "PCTD-P05-027",
+      "lecon": "Le champ électrique uniforme et le condensateur plan",
+      "type": "definition",
+      "recto": "Quels sont la direction et le sens du champ électrique entre les armatures d'un condensateur plan ?",
+      "verso": "Direction perpendiculaire aux armatures ; sens de l'armature positive $P$ (potentiel le plus élevé) vers l'armature négative $N$.",
+      "difficulte": 2,
+      "tags": [
+        "caracteristiques",
+        "condensateur-plan"
+      ]
+    },
+    {
+      "id": "PCTD-P05-028",
+      "lecon": "Le champ électrique uniforme et le condensateur plan",
+      "type": "formule",
+      "recto": "Pour un condensateur plan dans le vide ou l'air, dont l'armature $P$ porte la charge $Q \\gt 0$ et dont les armatures ont la surface $S$ en regard, quelle est la valeur du champ entre les armatures ?",
+      "verso": "$E = \\dfrac{Q}{\\varepsilon_0 S}$, avec $\\varepsilon_0 = 8{,}85 \\times 10^{-12}~\\mathrm{SI}$.",
+      "difficulte": 2,
+      "tags": [
+        "condensateur-plan",
+        "permittivite"
+      ]
+    },
+    {
+      "id": "PCTD-P05-029",
+      "lecon": "Le champ électrique uniforme et le condensateur plan",
+      "type": "definition",
+      "recto": "Quelle erreur commet un élève qui écrit que le champ entre deux armatures vaut $E = 220~\\mathrm{V}$ ?",
+      "verso": "Il confond champ et tension : le champ $E$ existe en un point et s'exprime en $\\mathrm{V/m}$ ; la tension $U$ se mesure entre deux points, en V. Il faut calculer $E = \\dfrac{U}{d}$.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "unite"
+      ]
+    },
+    {
+      "id": "PCTD-P05-030",
+      "lecon": "Le champ électrique uniforme et le condensateur plan",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on une surface équipotentielle ?",
+      "verso": "L'ensemble des points de même potentiel. Elle est toujours perpendiculaire aux lignes de champ.",
+      "difficulte": 1,
+      "tags": [
+        "equipotentielle"
+      ]
+    },
+    {
+      "id": "PCTD-P05-031",
+      "lecon": "Le champ électrique uniforme et le condensateur plan",
+      "type": "definition",
+      "recto": "Quelle forme ont les surfaces équipotentielles dans un condensateur plan et autour d'une charge ponctuelle ?",
+      "verso": "Dans un condensateur plan : des plans parallèles aux armatures. Autour d'une charge ponctuelle : des sphères centrées sur la charge.",
+      "difficulte": 2,
+      "tags": [
+        "equipotentielle"
+      ]
+    },
+    {
+      "id": "PCTD-P05-032",
+      "lecon": "Le champ électrique uniforme et le condensateur plan",
+      "type": "formule",
+      "recto": "Dans un champ électrique uniforme $\\vec{E}$, quelle relation donne la tension $U_{MN}$ entre deux points $M$ et $N$ ?",
+      "verso": "$U_{MN} = V_M - V_N = \\vec{E} \\cdot \\overrightarrow{MN}$ : elle est nulle entre deux points d'une même équipotentielle et vaut $E \\times d = U_{PN}$ d'une armature à l'autre.",
+      "difficulte": 3,
+      "tags": [
+        "potentiel",
+        "tension"
+      ]
+    },
+    {
+      "id": "PCTD-P05-033",
+      "lecon": "Le champ électrique uniforme et le condensateur plan",
+      "type": "formule",
+      "recto": "Pour un pendule électrostatique de masse $m$ et de charge $q$ en équilibre dans un champ électrique horizontal $E$, quelle relation donne l'angle $\\alpha$ d'inclinaison du fil ?",
+      "verso": "$\\tan\\alpha = \\dfrac{\\lvert q \\rvert E}{mg}$, qui découle de la condition d'équilibre $\\vec{P} + \\vec{T} + \\vec{F} = \\vec{0}$.",
+      "difficulte": 2,
+      "tags": [
+        "equilibre",
+        "pendule"
+      ]
+    },
+    {
+      "id": "PCTD-P05-034",
+      "lecon": "Le champ électrique uniforme et le condensateur plan",
+      "type": "formule",
+      "recto": "A quelle condition une goutte chargée, de masse $m$ et de charge $q$, reste-t-elle immobile dans un champ électrique vertical $E$ ?",
+      "verso": "Quand son poids est compensé par la force électrique : $\\vec{P} + \\vec{F} = \\vec{0}$, soit $mg = \\lvert q \\rvert E$ (principe de l'expérience de Millikan).",
+      "difficulte": 2,
+      "tags": [
+        "equilibre",
+        "millikan"
+      ]
+    }
+  ]
+}

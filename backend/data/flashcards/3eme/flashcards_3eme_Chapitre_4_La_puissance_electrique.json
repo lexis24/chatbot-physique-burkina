@@ -1,0 +1,410 @@
+{
+  "matiere": "Physique-Chimie",
+  "partie": "Physique",
+  "niveau": "3ème",
+  "chapitre": "Physique, Chapitre 4 : La puissance électrique",
+  "source": "pc/3eme/Chapitre_4_La_puissance_electrique",
+  "nombre_cartes": 34,
+  "cartes": [
+    {
+      "id": "PC3E-P04-001",
+      "lecon": "Les caractéristiques nominales d'un appareil électrique",
+      "type": "definition",
+      "recto": "Pour un appareil électrique, qu'appelle-t-on ses caractéristiques nominales ?",
+      "verso": "Ce sont les indications portées par l'appareil : les valeurs des grandeurs électriques pour lesquelles il a été construit (tension, intensité, puissance nominales).",
+      "difficulte": 1,
+      "tags": [
+        "caracteristiques-nominales",
+        "vocabulaire"
+      ]
+    },
+    {
+      "id": "PC3E-P04-002",
+      "lecon": "Les caractéristiques nominales d'un appareil électrique",
+      "type": "definition",
+      "recto": "Pour un appareil électrique, qu'appelle-t-on la tension nominale ?",
+      "verso": "C'est la tension sous laquelle l'appareil doit être alimenté pour fonctionner normalement. On la note $U_n$ et elle s'exprime en volts ($\\mathrm{V}$). On l'appelle aussi tension d'usage.",
+      "difficulte": 1,
+      "tags": [
+        "tension-nominale"
+      ]
+    },
+    {
+      "id": "PC3E-P04-003",
+      "lecon": "Les caractéristiques nominales d'un appareil électrique",
+      "type": "definition",
+      "recto": "Pour un appareil électrique, qu'appelle-t-on l'intensité nominale ?",
+      "verso": "C'est l'intensité du courant qui traverse l'appareil lorsqu'il est alimenté sous sa tension nominale. On la note $I_n$ et elle s'exprime en ampères ($\\mathrm{A}$).",
+      "difficulte": 2,
+      "tags": [
+        "intensite-nominale"
+      ]
+    },
+    {
+      "id": "PC3E-P04-004",
+      "lecon": "Les caractéristiques nominales d'un appareil électrique",
+      "type": "definition",
+      "recto": "Pour un appareil électrique, qu'appelle-t-on la puissance nominale ?",
+      "verso": "C'est la puissance que l'appareil consomme lorsqu'il est alimenté sous sa tension nominale. On la note $P_n$ et elle s'exprime en watts ($\\mathrm{W}$).",
+      "difficulte": 2,
+      "tags": [
+        "puissance-nominale"
+      ]
+    },
+    {
+      "id": "PC3E-P04-005",
+      "lecon": "Les caractéristiques nominales d'un appareil électrique",
+      "type": "definition",
+      "recto": "Quelle est l'unité légale de la puissance électrique, avec son symbole ?",
+      "verso": "Le watt, de symbole $\\mathrm{W}$.",
+      "difficulte": 1,
+      "tags": [
+        "unite",
+        "watt"
+      ]
+    },
+    {
+      "id": "PC3E-P04-006",
+      "lecon": "Les caractéristiques nominales d'un appareil électrique",
+      "type": "formule",
+      "recto": "Combien de watts valent $1~\\mathrm{kW}$, $1~\\mathrm{MW}$ et $1~\\mathrm{GW}$ ?",
+      "verso": "$1~\\mathrm{kW} = 1\\,000~\\mathrm{W} = 10^{3}~\\mathrm{W}$ ; $1~\\mathrm{MW} = 10^{6}~\\mathrm{W}$ ; $1~\\mathrm{GW} = 10^{9}~\\mathrm{W}$. Inversement, $1~\\mathrm{W} = 1\\,000~\\mathrm{mW}$.",
+      "difficulte": 1,
+      "tags": [
+        "unite",
+        "conversion"
+      ]
+    },
+    {
+      "id": "PC3E-P04-007",
+      "lecon": "Les caractéristiques nominales d'un appareil électrique",
+      "type": "formule",
+      "recto": "Pour convertir une puissance de kilowatts en watts, quelle opération effectue-t-on ?",
+      "verso": "On multiplie par $1\\,000$ : $2{,}2~\\mathrm{kW} = 2{,}2 \\times 1\\,000 = 2\\,200~\\mathrm{W}$. Pour passer des watts aux kilowatts, on divise par $1\\,000$.",
+      "difficulte": 1,
+      "tags": [
+        "conversion"
+      ]
+    },
+    {
+      "id": "PC3E-P04-008",
+      "lecon": "Les caractéristiques nominales d'un appareil électrique",
+      "type": "definition",
+      "recto": "Dans quelles conditions dit-on qu'un appareil électrique fonctionne normalement ?",
+      "verso": "Quand il est alimenté sous sa tension nominale : il est alors traversé par son intensité nominale et consomme sa puissance nominale.",
+      "difficulte": 2,
+      "tags": [
+        "fonctionnement-normal"
+      ]
+    },
+    {
+      "id": "PC3E-P04-009",
+      "lecon": "Les caractéristiques nominales d'un appareil électrique",
+      "type": "definition",
+      "recto": "Que se passe-t-il pour un appareil alimenté sous une tension inférieure ou supérieure à sa tension nominale ?",
+      "verso": "Sous une tension inférieure (sous-tension), il fonctionne mal : une lampe brille faiblement. Sous une tension supérieure (surtension), il risque d'être détruit.",
+      "difficulte": 2,
+      "tags": [
+        "sous-tension",
+        "surtension"
+      ]
+    },
+    {
+      "id": "PC3E-P04-010",
+      "lecon": "Les caractéristiques nominales d'un appareil électrique",
+      "type": "definition",
+      "recto": "Sur l'étiquette « 220 V - 60 W » d'une lampe, que désigne chacun des deux nombres ?",
+      "verso": "220 V est la tension nominale : la lampe se branche sous 220 V (le secteur). 60 W est la puissance nominale : la puissance qu'elle consomme sous 220 V.",
+      "difficulte": 2,
+      "tags": [
+        "plaque-signaletique",
+        "lecture-etiquette"
+      ]
+    },
+    {
+      "id": "PC3E-P04-011",
+      "lecon": "Les caractéristiques nominales d'un appareil électrique",
+      "type": "definition",
+      "recto": "Pourquoi est-il faux de dire qu'une lampe marquée « 220 V » fait 220 watts ?",
+      "verso": "Le nombre suivi de $\\mathrm{V}$ est une tension : il dit sous quoi brancher la lampe. Seul le nombre suivi de $\\mathrm{W}$ donne sa puissance, c'est-à-dire combien elle consomme.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "lecture-etiquette"
+      ]
+    },
+    {
+      "id": "PC3E-P04-012",
+      "lecon": "Les caractéristiques nominales d'un appareil électrique",
+      "type": "definition",
+      "recto": "Une lampe de 220 V - 60 W branchée sur 200 V consomme moins de 60 W : pourquoi reste-t-elle une lampe de 60 W ?",
+      "verso": "Une valeur nominale est la valeur inscrite au nom de l'appareil (du latin nomen, le nom), celle de son fonctionnement normal, et non la valeur mesurée un jour donné.",
+      "difficulte": 3,
+      "tags": [
+        "nominal",
+        "piege"
+      ]
+    },
+    {
+      "id": "PC3E-P04-013",
+      "lecon": "La puissance consommée par un appareil : la relation $P = U \\times I$",
+      "type": "formule",
+      "recto": "Quelle relation donne la puissance $P$ consommée par un appareil en fonction de la tension $U$ à ses bornes et de l'intensité $I$ qui le traverse ?",
+      "verso": "$P = U \\times I$, avec $P$ en watts, $U$ en volts et $I$ en ampères ($1~\\mathrm{W} = 1~\\mathrm{V} \\times 1~\\mathrm{A}$).",
+      "difficulte": 1,
+      "tags": [
+        "p-egal-ui"
+      ]
+    },
+    {
+      "id": "PC3E-P04-014",
+      "lecon": "La puissance consommée par un appareil : la relation $P = U \\times I$",
+      "type": "formule",
+      "recto": "A partir de $P = U \\times I$, quelles expressions donnent l'intensité $I$ et la tension $U$ ?",
+      "verso": "$I = \\dfrac{P}{U}$ et $U = \\dfrac{P}{I}$, avec $P$ en $\\mathrm{W}$, $U$ en $\\mathrm{V}$ et $I$ en $\\mathrm{A}$.",
+      "difficulte": 2,
+      "tags": [
+        "p-egal-ui",
+        "formes"
+      ]
+    },
+    {
+      "id": "PC3E-P04-015",
+      "lecon": "La puissance consommée par un appareil : la relation $P = U \\times I$",
+      "type": "formule",
+      "recto": "Quelle relation lie les trois grandeurs nominales $U_n$, $I_n$ et $P_n$ d'un appareil ?",
+      "verso": "$P_n = U_n \\times I_n$ : sous sa tension nominale, le produit de la tension par l'intensité est égal à la puissance nominale.",
+      "difficulte": 2,
+      "tags": [
+        "grandeurs-nominales",
+        "p-egal-ui"
+      ]
+    },
+    {
+      "id": "PC3E-P04-016",
+      "lecon": "La puissance consommée par un appareil : la relation $P = U \\times I$",
+      "type": "definition",
+      "recto": "Pourquoi, sur la même prise, une lampe de 220 V - 100 W brille-t-elle davantage qu'une lampe de 220 V - 40 W ?",
+      "verso": "La tension est la même pour les deux, et $P = U \\times I$ : la lampe la plus puissante est donc traversée par un courant plus intense.",
+      "difficulte": 2,
+      "tags": [
+        "comparaison",
+        "p-egal-ui"
+      ]
+    },
+    {
+      "id": "PC3E-P04-017",
+      "lecon": "La puissance consommée par un appareil : la relation $P = U \\times I$",
+      "type": "formule",
+      "recto": "Dans le montage de mesure d'une puissance, comment branche-t-on l'ampèremètre et le voltmètre par rapport au récepteur ?",
+      "verso": "L'ampèremètre se branche en série avec le récepteur (il est traversé par le même courant) ; le voltmètre se branche en dérivation à ses bornes. On relève $U$ et $I$ au même instant.",
+      "difficulte": 2,
+      "tags": [
+        "mesure",
+        "branchement"
+      ]
+    },
+    {
+      "id": "PC3E-P04-018",
+      "lecon": "La puissance consommée par un appareil : la relation $P = U \\times I$",
+      "type": "formule",
+      "recto": "Avec un seul multimètre, dans quel ordre mesure-t-on la tension et l'intensité pour obtenir la puissance d'une lampe ?",
+      "verso": "On mesure d'abord la tension, multimètre en dérivation aux bornes de la lampe, puis on le rebranche en ampèremètre, en série, pour mesurer l'intensité.",
+      "difficulte": 2,
+      "tags": [
+        "mesure",
+        "multimetre"
+      ]
+    },
+    {
+      "id": "PC3E-P04-019",
+      "lecon": "La puissance consommée par un appareil : la relation $P = U \\times I$",
+      "type": "formule",
+      "recto": "Pour une mesure de tension ou d'intensité, quel calibre choisit-on sur l'appareil de mesure ?",
+      "verso": "Le calibre immédiatement supérieur à la valeur attendue.",
+      "difficulte": 2,
+      "tags": [
+        "mesure",
+        "calibre"
+      ]
+    },
+    {
+      "id": "PC3E-P04-020",
+      "lecon": "La puissance consommée par un appareil : la relation $P = U \\times I$",
+      "type": "definition",
+      "recto": "Pourquoi la puissance mesurée d'une lampe n'est-elle jamais rigoureusement égale à sa puissance nominale ?",
+      "verso": "La tension du générateur vaut rarement la tension nominale exacte et les appareils de mesure ont une précision limitée : la puissance mesurée est seulement voisine de la puissance nominale.",
+      "difficulte": 2,
+      "tags": [
+        "mesure",
+        "precision"
+      ]
+    },
+    {
+      "id": "PC3E-P04-021",
+      "lecon": "La puissance consommée par un appareil : la relation $P = U \\times I$",
+      "type": "formule",
+      "recto": "Sur le secteur (courant alternatif), pour quels appareils la relation $P = U \\times I$ reste-t-elle vraie ?",
+      "verso": "Pour les appareils qui utilisent uniquement l'effet thermique du courant : lampes à incandescence, fers à repasser, plaques chauffantes, bouilloires.",
+      "difficulte": 2,
+      "tags": [
+        "courant-alternatif",
+        "effet-thermique"
+      ]
+    },
+    {
+      "id": "PC3E-P04-022",
+      "lecon": "La puissance consommée par un appareil : la relation $P = U \\times I$",
+      "type": "formule",
+      "recto": "En courant alternatif, comment se compare la puissance réellement consommée par un moteur au produit $U \\times I$ ?",
+      "verso": "Elle est inférieure : $P \\lt U \\times I$ (ventilateur, moulin, réfrigérateur). Utiliser $P = U \\times I$ donne alors une valeur par excès.",
+      "difficulte": 3,
+      "tags": [
+        "moteur",
+        "courant-alternatif"
+      ]
+    },
+    {
+      "id": "PC3E-P04-023",
+      "lecon": "La puissance consommée par un appareil : la relation $P = U \\times I$",
+      "type": "definition",
+      "recto": "Quelle erreur commet-on en calculant $P = U \\times I$ avec une intensité laissée en milliampères ?",
+      "verso": "On obtient un résultat mille fois trop grand : il faut d'abord convertir, par exemple $250~\\mathrm{mA} = 0{,}25~\\mathrm{A}$, d'où $P = 220 \\times 0{,}25 = 55~\\mathrm{W}$.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "conversion"
+      ]
+    },
+    {
+      "id": "PC3E-P04-024",
+      "lecon": "Les applications pratiques : additivité des puissances, fusible et disjoncteur",
+      "type": "formule",
+      "recto": "Que dit le principe d'additivité des puissances dans une installation électrique ?",
+      "verso": "La puissance totale consommée est égale à la somme des puissances des appareils qui fonctionnent en même temps : $P_{\\text{totale}} = P_1 + P_2 + P_3 + \\ldots$",
+      "difficulte": 1,
+      "tags": [
+        "additivite"
+      ]
+    },
+    {
+      "id": "PC3E-P04-025",
+      "lecon": "Les applications pratiques : additivité des puissances, fusible et disjoncteur",
+      "type": "formule",
+      "recto": "Dans une installation domestique alimentée sous la tension $U$, quelle relation donne l'intensité $I$ du courant principal en tête de ligne ?",
+      "verso": "$I = \\dfrac{P_{\\text{totale}}}{U}$, car tous les appareils sont montés en dérivation sous la même tension $U$.",
+      "difficulte": 2,
+      "tags": [
+        "intensite-principale",
+        "tete-de-ligne"
+      ]
+    },
+    {
+      "id": "PC3E-P04-026",
+      "lecon": "Les applications pratiques : additivité des puissances, fusible et disjoncteur",
+      "type": "definition",
+      "recto": "Comment sont montés les appareils d'une installation domestique ?",
+      "verso": "En dérivation : chacun reçoit la même tension, $220~\\mathrm{V}$ sur le secteur, et fonctionne indépendamment des autres.",
+      "difficulte": 2,
+      "tags": [
+        "installation",
+        "derivation"
+      ]
+    },
+    {
+      "id": "PC3E-P04-027",
+      "lecon": "Les applications pratiques : additivité des puissances, fusible et disjoncteur",
+      "type": "definition",
+      "recto": "Dans un circuit, en quoi l'addition des puissances diffère-t-elle de celle des tensions et des intensités ?",
+      "verso": "Les tensions ne s'additionnent qu'en série et les intensités qu'aux noeuds, alors que les puissances s'additionnent toujours, quel que soit le montage.",
+      "difficulte": 3,
+      "tags": [
+        "additivite",
+        "comparaison"
+      ]
+    },
+    {
+      "id": "PC3E-P04-028",
+      "lecon": "Les applications pratiques : additivité des puissances, fusible et disjoncteur",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on une surintensité ?",
+      "verso": "Une intensité supérieure à celle que les fils peuvent supporter sans échauffement dangereux. Elle survient quand trop d'appareils fonctionnent ensemble ou lors d'un court-circuit.",
+      "difficulte": 2,
+      "tags": [
+        "surintensite"
+      ]
+    },
+    {
+      "id": "PC3E-P04-029",
+      "lecon": "Les applications pratiques : additivité des puissances, fusible et disjoncteur",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on le calibre d'un fusible ou d'un disjoncteur ?",
+      "verso": "C'est son intensité de coupure : l'intensité au-delà de laquelle il coupe le circuit (le fusible fond, le disjoncteur s'ouvre).",
+      "difficulte": 1,
+      "tags": [
+        "calibre",
+        "intensite-de-coupure"
+      ]
+    },
+    {
+      "id": "PC3E-P04-030",
+      "lecon": "Les applications pratiques : additivité des puissances, fusible et disjoncteur",
+      "type": "formule",
+      "recto": "Quelle règle suit-on pour choisir le calibre du fusible ou du disjoncteur d'une installation ?",
+      "verso": "On prend le calibre du commerce immédiatement supérieur à l'intensité maximale appelée en fonctionnement normal : plus petit, il couperait sans raison ; trop grand, il ne protégerait plus.",
+      "difficulte": 2,
+      "tags": [
+        "calibre",
+        "choix"
+      ]
+    },
+    {
+      "id": "PC3E-P04-031",
+      "lecon": "Les applications pratiques : additivité des puissances, fusible et disjoncteur",
+      "type": "formule",
+      "recto": "Quelle relation donne la puissance maximale $P_{\\text{max}}$ d'un abonnement à partir de l'intensité de coupure du disjoncteur de branchement ?",
+      "verso": "$P_{\\text{max}} = U \\times I_{\\text{coupure}}$. Pour un abonnement de $5~\\mathrm{A}$ sous $220~\\mathrm{V}$ : $P_{\\text{max}} = 220 \\times 5 = 1\\,100~\\mathrm{W}$.",
+      "difficulte": 2,
+      "tags": [
+        "abonnement",
+        "disjoncteur-de-branchement"
+      ]
+    },
+    {
+      "id": "PC3E-P04-032",
+      "lecon": "Les applications pratiques : additivité des puissances, fusible et disjoncteur",
+      "type": "definition",
+      "recto": "Dans un abonnement SONABEL, que désigne l'expression « abonnement de 5 A » ?",
+      "verso": "L'intensité de coupure du disjoncteur de branchement posé à l'entrée de la maison. C'est une intensité en ampères, distincte de la puissance de l'abonnement, en watts ou kilowatts.",
+      "difficulte": 2,
+      "tags": [
+        "abonnement",
+        "disjoncteur-de-branchement"
+      ]
+    },
+    {
+      "id": "PC3E-P04-033",
+      "lecon": "Les applications pratiques : additivité des puissances, fusible et disjoncteur",
+      "type": "definition",
+      "recto": "Pourquoi ne doit-on jamais remplacer un fusible fondu par un fil de fer ?",
+      "verso": "Le fil de fer ne fond pas : la surintensité passe, les fils chauffent et l'incendie devient possible. On remet un fusible de même calibre après avoir cherché la cause.",
+      "difficulte": 3,
+      "tags": [
+        "securite",
+        "fusible"
+      ]
+    },
+    {
+      "id": "PC3E-P04-034",
+      "lecon": "Les applications pratiques : additivité des puissances, fusible et disjoncteur",
+      "type": "definition",
+      "recto": "Quand le disjoncteur saute, pourquoi ne faut-il pas le considérer comme en panne ?",
+      "verso": "Il fait son travail : l'intensité a dépassé son intensité de coupure. On cherche l'appareil de trop et on l'éteint, sans bloquer le disjoncteur.",
+      "difficulte": 3,
+      "tags": [
+        "securite",
+        "disjoncteur"
+      ]
+    }
+  ]
+}

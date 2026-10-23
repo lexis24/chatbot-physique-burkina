@@ -1,0 +1,422 @@
+{
+  "matiere": "Physique-Chimie",
+  "partie": "Physique",
+  "niveau": "Terminale D",
+  "chapitre": "Physique, Chapitre 7 : Le mouvement dans un champ de gravitation",
+  "source": "pc/tled/Chapitre_7_Le_mouvement_dans_un_champ_de_gravitation",
+  "nombre_cartes": 36,
+  "cartes": [
+    {
+      "id": "PCTD-P07-001",
+      "lecon": "La chute libre verticale",
+      "type": "definition",
+      "recto": "En mécanique, quand dit-on qu'un corps est en chute libre ?",
+      "verso": "Lorsqu'il n'est soumis qu'à son poids, toutes les autres forces (résistance de l'air, poussée d'Archimède) étant négligées.",
+      "difficulte": 1,
+      "tags": [
+        "chute-libre"
+      ]
+    },
+    {
+      "id": "PCTD-P07-002",
+      "lecon": "La chute libre verticale",
+      "type": "formule",
+      "recto": "Dans un référentiel terrestre supposé galiléen, que vaut le vecteur accélération du centre d'inertie d'un corps en chute libre ?",
+      "verso": "$\\vec{a} = \\vec{g}$ (deuxième loi de Newton : $m\\vec{g} = m\\vec{a}$). Il est vertical, dirigé vers le bas, de norme $g = 9{,}8~\\mathrm{m/s^2}$.",
+      "difficulte": 1,
+      "tags": [
+        "acceleration",
+        "chute-libre"
+      ]
+    },
+    {
+      "id": "PCTD-P07-003",
+      "lecon": "La chute libre verticale",
+      "type": "definition",
+      "recto": "Pourquoi deux corps de masses différentes en chute libre tombent-ils de la même façon ?",
+      "verso": "Dans $m\\vec{g} = m\\vec{a}$, la masse se simplifie : l'accélération $\\vec{a} = \\vec{g}$ ne dépend pas de la masse. Seule la résistance de l'air pourrait faire une différence.",
+      "difficulte": 3,
+      "tags": [
+        "masse",
+        "piege"
+      ]
+    },
+    {
+      "id": "PCTD-P07-004",
+      "lecon": "La chute libre verticale",
+      "type": "formule",
+      "recto": "Pour une chute libre verticale sans vitesse initiale, axe vertical descendant d'origine au point de lâcher, quelles sont les équations horaires de $v$ et de $z$ ?",
+      "verso": "$v(t) = g\\,t$ et $z(t) = \\tfrac{1}{2}g\\,t^{2}$, avec $g$ en $\\mathrm{m/s^2}$, $t$ en s.",
+      "difficulte": 1,
+      "tags": [
+        "equations-horaires",
+        "chute-verticale"
+      ]
+    },
+    {
+      "id": "PCTD-P07-005",
+      "lecon": "La chute libre verticale",
+      "type": "formule",
+      "recto": "Pour une chute libre sans vitesse initiale d'une hauteur $h$, quelles sont la durée de chute $t$ et la vitesse d'arrivée $v$ ?",
+      "verso": "$t = \\sqrt{\\dfrac{2h}{g}}$ et $v = \\sqrt{2gh}$, avec $h$ en m, $g$ en $\\mathrm{m/s^2}$.",
+      "difficulte": 2,
+      "tags": [
+        "duree-chute",
+        "vitesse"
+      ]
+    },
+    {
+      "id": "PCTD-P07-006",
+      "lecon": "La chute libre verticale",
+      "type": "formule",
+      "recto": "Pour un corps lancé verticalement vers le haut à la vitesse $v_0$, axe ascendant d'origine au point de lancement, quelles sont les équations horaires de $v$ et de $z$ ?",
+      "verso": "$a = -g$ ; $v(t) = -g\\,t + v_0$ ; $z(t) = -\\tfrac{1}{2}g\\,t^{2} + v_0\\,t$.",
+      "difficulte": 2,
+      "tags": [
+        "equations-horaires",
+        "axe-ascendant"
+      ]
+    },
+    {
+      "id": "PCTD-P07-007",
+      "lecon": "La chute libre verticale",
+      "type": "formule",
+      "recto": "Sur la chronophotographie d'une chute libre prise à intervalles de durée $\\tau$, que vaut la différence entre deux intervalles successifs ?",
+      "verso": "Elle est constante et vaut $g\\tau^{2}$ ; on en déduit $g$.",
+      "difficulte": 2,
+      "tags": [
+        "chronophotographie"
+      ]
+    },
+    {
+      "id": "PCTD-P07-008",
+      "lecon": "Le mouvement d'un projectile dans le champ de pesanteur uniforme",
+      "type": "formule",
+      "recto": "Pour un projectile lancé avec $\\vec{v}_0$ sous l'angle $\\alpha$ au-dessus de l'horizontale, $(Ox)$ horizontal dans le sens du tir et $(Oy)$ vertical vers le haut, quelles sont les composantes de l'accélération et de la vitesse initiale ?",
+      "verso": "$a_x = 0$ et $a_y = -g$ ; $v_{0x} = v_0\\cos\\alpha$ et $v_{0y} = v_0\\sin\\alpha$.",
+      "difficulte": 1,
+      "tags": [
+        "projection",
+        "conditions-initiales"
+      ]
+    },
+    {
+      "id": "PCTD-P07-009",
+      "lecon": "Le mouvement d'un projectile dans le champ de pesanteur uniforme",
+      "type": "formule",
+      "recto": "Pour un projectile lancé de l'origine avec $v_0$ sous l'angle $\\alpha$, $(Oy)$ vers le haut, quelles sont les équations horaires de la vitesse ?",
+      "verso": "$v_x(t) = v_0\\cos\\alpha$ et $v_y(t) = -g\\,t + v_0\\sin\\alpha$.",
+      "difficulte": 2,
+      "tags": [
+        "equations-horaires",
+        "vitesse"
+      ]
+    },
+    {
+      "id": "PCTD-P07-010",
+      "lecon": "Le mouvement d'un projectile dans le champ de pesanteur uniforme",
+      "type": "formule",
+      "recto": "Pour un projectile lancé de l'origine avec $v_0$ sous l'angle $\\alpha$, $(Oy)$ vers le haut, quelles sont les équations horaires de la position ?",
+      "verso": "$x(t) = \\left(v_0\\cos\\alpha\\right)t$ et $y(t) = -\\tfrac{1}{2}g\\,t^{2} + \\left(v_0\\sin\\alpha\\right)t$.",
+      "difficulte": 2,
+      "tags": [
+        "equations-horaires",
+        "position"
+      ]
+    },
+    {
+      "id": "PCTD-P07-011",
+      "lecon": "Le mouvement d'un projectile dans le champ de pesanteur uniforme",
+      "type": "formule",
+      "recto": "Pour un projectile lancé de l'origine avec $v_0$ sous l'angle $\\alpha$, $(Oy)$ vers le haut, quelle est l'équation de la trajectoire ?",
+      "verso": "$y = -\\dfrac{g}{2\\,v_0^{2}\\cos^{2}\\alpha}\\,x^{2} + x\\tan\\alpha$ : une parabole de concavité tournée vers le bas.",
+      "difficulte": 2,
+      "tags": [
+        "trajectoire",
+        "parabole"
+      ]
+    },
+    {
+      "id": "PCTD-P07-012",
+      "lecon": "Le mouvement d'un projectile dans le champ de pesanteur uniforme",
+      "type": "definition",
+      "recto": "Pour un projectile en chute libre, quelle est la nature des mouvements projetés sur l'horizontale et sur la verticale ?",
+      "verso": "Horizontalement, rectiligne uniforme ; verticalement, rectiligne uniformément varié. Les deux mouvements sont indépendants.",
+      "difficulte": 2,
+      "tags": [
+        "nature-mouvement"
+      ]
+    },
+    {
+      "id": "PCTD-P07-013",
+      "lecon": "Le mouvement d'un projectile dans le champ de pesanteur uniforme",
+      "type": "definition",
+      "recto": "Pourquoi la composante horizontale de la vitesse d'un projectile en chute libre ne diminue-t-elle pas pendant le vol ?",
+      "verso": "Le poids est vertical, donc $a_x = 0$ : $v_x = v_0\\cos\\alpha$ reste constante, sommet compris. Seule $v_y$ varie, donc la direction de la vitesse.",
+      "difficulte": 3,
+      "tags": [
+        "vitesse-horizontale",
+        "piege"
+      ]
+    },
+    {
+      "id": "PCTD-P07-014",
+      "lecon": "Le mouvement d'un projectile dans le champ de pesanteur uniforme",
+      "type": "definition",
+      "recto": "Quelle erreur guette l'élève qui intègre $a_y = -g$ pour un projectile ?",
+      "verso": "Oublier les constantes d'intégration : $v_y = -g\\,t + v_{0y}$ et $y = -\\tfrac{1}{2}g\\,t^{2} + v_{0y}\\,t + y_0$. On vérifie en faisant $t = 0$.",
+      "difficulte": 3,
+      "tags": [
+        "integration",
+        "piege"
+      ]
+    },
+    {
+      "id": "PCTD-P07-015",
+      "lecon": "Le mouvement d'un projectile dans le champ de pesanteur uniforme",
+      "type": "formule",
+      "recto": "Pour un tir horizontal ($\\alpha = 0$) depuis la hauteur $y_0$, $(Oy)$ vers le haut, quelle est l'équation de la trajectoire ?",
+      "verso": "$y = -\\dfrac{g}{2v_0^{2}}x^{2} + y_0$, car $v_{0x} = v_0$ et $v_{0y} = 0$.",
+      "difficulte": 2,
+      "tags": [
+        "tir-horizontal"
+      ]
+    },
+    {
+      "id": "PCTD-P07-016",
+      "lecon": "La portée, la flèche et l'angle de tir",
+      "type": "definition",
+      "recto": "Pour un tir partant du sol, qu'appelle-t-on la portée et la flèche ?",
+      "verso": "La portée $x_P$ est l'abscisse du point de retombée au niveau de départ ; la flèche $y_F$ est l'altitude maximale atteinte.",
+      "difficulte": 1,
+      "tags": [
+        "portee",
+        "fleche"
+      ]
+    },
+    {
+      "id": "PCTD-P07-017",
+      "lecon": "La portée, la flèche et l'angle de tir",
+      "type": "formule",
+      "recto": "Pour un tir de vitesse $v_0$ sous l'angle $\\alpha$, départ et arrivée au même niveau, quelle est la durée du vol $t_v$ ?",
+      "verso": "$t_v = \\dfrac{2\\,v_0\\sin\\alpha}{g}$ ; le sommet est atteint à $t_S = \\dfrac{t_v}{2}$.",
+      "difficulte": 2,
+      "tags": [
+        "duree-vol"
+      ]
+    },
+    {
+      "id": "PCTD-P07-018",
+      "lecon": "La portée, la flèche et l'angle de tir",
+      "type": "formule",
+      "recto": "Pour un tir de vitesse $v_0$ sous l'angle $\\alpha$, départ et arrivée au même niveau, quelle est l'expression de la portée ?",
+      "verso": "$x_P = \\dfrac{v_0^{2}\\sin 2\\alpha}{g}$, valable seulement si le départ et l'arrivée sont à la même altitude.",
+      "difficulte": 2,
+      "tags": [
+        "portee"
+      ]
+    },
+    {
+      "id": "PCTD-P07-019",
+      "lecon": "La portée, la flèche et l'angle de tir",
+      "type": "formule",
+      "recto": "Pour un tir de vitesse $v_0$ sous l'angle $\\alpha$ partant du sol, quelle est l'expression de la flèche ?",
+      "verso": "$y_F = \\dfrac{v_0^{2}\\sin^{2}\\alpha}{2\\,g}$, obtenue en reportant la date du sommet ($v_y = 0$) dans $y(t)$.",
+      "difficulte": 2,
+      "tags": [
+        "fleche"
+      ]
+    },
+    {
+      "id": "PCTD-P07-020",
+      "lecon": "La portée, la flèche et l'angle de tir",
+      "type": "formule",
+      "recto": "Pour une vitesse initiale $v_0$ donnée, départ et arrivée au même niveau, pour quel angle la portée est-elle maximale ?",
+      "verso": "Pour $\\alpha = 45^{\\circ}$ ($\\sin 2\\alpha = 1$), et alors $x_{P,\\max} = \\dfrac{v_0^{2}}{g}$.",
+      "difficulte": 1,
+      "tags": [
+        "angle-optimal"
+      ]
+    },
+    {
+      "id": "PCTD-P07-021",
+      "lecon": "La portée, la flèche et l'angle de tir",
+      "type": "definition",
+      "recto": "Pourquoi deux tirs de même vitesse sous les angles $\\alpha$ et $90^{\\circ} - \\alpha$ ont-ils la même portée ?",
+      "verso": "Parce que $\\sin\\left(180^{\\circ} - 2\\alpha\\right) = \\sin 2\\alpha$. Leurs flèches et leurs durées de vol, elles, sont différentes.",
+      "difficulte": 3,
+      "tags": [
+        "angles-complementaires"
+      ]
+    },
+    {
+      "id": "PCTD-P07-022",
+      "lecon": "La portée, la flèche et l'angle de tir",
+      "type": "definition",
+      "recto": "Pour un tir de portée $x_P$ dont départ et arrivée sont au même niveau, quelle propriété de symétrie possède la trajectoire ?",
+      "verso": "Le sommet est atteint à mi-durée et à mi-portée ; la vitesse de retombée a la valeur $v_0$ et fait l'angle $\\alpha$ sous l'horizontale.",
+      "difficulte": 2,
+      "tags": [
+        "symetrie"
+      ]
+    },
+    {
+      "id": "PCTD-P07-023",
+      "lecon": "Le mouvement circulaire uniforme d'un satellite",
+      "type": "definition",
+      "recto": "Pour étudier le mouvement d'un satellite de la Terre, quel référentiel faut-il choisir ?",
+      "verso": "Le référentiel géocentrique, supposé galiléen. Le référentiel terrestre, qui tourne avec la Terre, n'est pas assez galiléen pour un mouvement de plusieurs heures.",
+      "difficulte": 2,
+      "tags": [
+        "referentiel-geocentrique"
+      ]
+    },
+    {
+      "id": "PCTD-P07-024",
+      "lecon": "Le mouvement circulaire uniforme d'un satellite",
+      "type": "formule",
+      "recto": "Pour un satellite en orbite circulaire autour de la Terre, quelle est l'expression du vecteur accélération ?",
+      "verso": "$\\vec{a} = \\dfrac{GM_T}{r^{2}}\\,\\vec{u}_n$ : accélération centripète, égale au champ de gravitation $\\vec{\\mathcal{G}}$ à l'altitude du satellite, avec $r = R_T + h$.",
+      "difficulte": 2,
+      "tags": [
+        "acceleration-centripete"
+      ]
+    },
+    {
+      "id": "PCTD-P07-025",
+      "lecon": "Le mouvement circulaire uniforme d'un satellite",
+      "type": "definition",
+      "recto": "Pourquoi le mouvement circulaire d'un satellite soumis à la seule gravitation terrestre est-il uniforme ?",
+      "verso": "Dans le repère de Frenet, l'accélération n'a pas de composante tangentielle : $\\dfrac{dv}{dt} = 0$, la valeur de la vitesse est constante.",
+      "difficulte": 2,
+      "tags": [
+        "mouvement-uniforme",
+        "frenet"
+      ]
+    },
+    {
+      "id": "PCTD-P07-026",
+      "lecon": "Le mouvement circulaire uniforme d'un satellite",
+      "type": "formule",
+      "recto": "Pour un satellite en orbite circulaire de rayon $r$ autour de la Terre, quelle est l'expression de sa vitesse ?",
+      "verso": "$v = \\sqrt{\\dfrac{GM_T}{r}} = R_T\\sqrt{\\dfrac{g_0}{r}}$, avec $r = R_T + h$ en m ; elle ne dépend pas de la masse du satellite.",
+      "difficulte": 2,
+      "tags": [
+        "vitesse-orbitale"
+      ]
+    },
+    {
+      "id": "PCTD-P07-027",
+      "lecon": "Le mouvement circulaire uniforme d'un satellite",
+      "type": "formule",
+      "recto": "Pour un satellite en orbite circulaire de rayon $r$ autour de la Terre, quelle est l'expression de sa période de révolution ?",
+      "verso": "$T = \\dfrac{2\\pi r}{v} = 2\\pi\\sqrt{\\dfrac{r^{3}}{GM_T}}$, en s, avec $r = R_T + h$.",
+      "difficulte": 2,
+      "tags": [
+        "periode"
+      ]
+    },
+    {
+      "id": "PCTD-P07-028",
+      "lecon": "Le mouvement circulaire uniforme d'un satellite",
+      "type": "formule",
+      "recto": "Quelle est l'expression de l'intensité du champ de gravitation terrestre $\\mathcal{G}(h)$ à l'altitude $h$ ?",
+      "verso": "$\\mathcal{G}(h) = \\dfrac{GM_T}{\\left(R_T + h\\right)^{2}} = g_0\\dfrac{R_T^{2}}{\\left(R_T + h\\right)^{2}}$, en $\\mathrm{m/s^2}$.",
+      "difficulte": 2,
+      "tags": [
+        "champ-gravitation"
+      ]
+    },
+    {
+      "id": "PCTD-P07-029",
+      "lecon": "Le mouvement circulaire uniforme d'un satellite",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on un satellite géostationnaire ?",
+      "verso": "Un satellite qui reste fixe au-dessus d'un même point de la Terre : période de $86\\,164~\\mathrm{s}$, orbite dans le plan de l'équateur, rotation dans le même sens que la Terre.",
+      "difficulte": 2,
+      "tags": [
+        "geostationnaire"
+      ]
+    },
+    {
+      "id": "PCTD-P07-030",
+      "lecon": "Le mouvement circulaire uniforme d'un satellite",
+      "type": "definition",
+      "recto": "Quelle est l'altitude d'un satellite géostationnaire ?",
+      "verso": "Environ $3{,}6 \\times 10^{4}~\\mathrm{km}$ ; sa vitesse vaut alors $3{,}1~\\mathrm{km/s}$.",
+      "difficulte": 1,
+      "tags": [
+        "geostationnaire",
+        "altitude"
+      ]
+    },
+    {
+      "id": "PCTD-P07-031",
+      "lecon": "Le mouvement circulaire uniforme d'un satellite",
+      "type": "definition",
+      "recto": "Quelle erreur guette l'élève qui calcule la vitesse d'un satellite situé à l'altitude $h$ ?",
+      "verso": "Utiliser $h$ au lieu de $r$ : dans toutes les formules, $r$ est la distance au centre de la Terre, $r = R_T + h$.",
+      "difficulte": 3,
+      "tags": [
+        "rayon-orbite",
+        "piege"
+      ]
+    },
+    {
+      "id": "PCTD-P07-032",
+      "lecon": "Les lois de Kepler",
+      "type": "formule",
+      "recto": "Que dit la troisième loi de Kepler (loi des périodes) pour un astre en orbite autour d'un astre central de masse $M$ ?",
+      "verso": "$\\dfrac{T^{2}}{a^{3}} = \\dfrac{4\\pi^{2}}{GM} = \\text{constante}$, $a$ étant le demi-grand axe ($a = r$ pour une orbite circulaire).",
+      "difficulte": 1,
+      "tags": [
+        "kepler-3"
+      ]
+    },
+    {
+      "id": "PCTD-P07-033",
+      "lecon": "Les lois de Kepler",
+      "type": "definition",
+      "recto": "De quoi dépend la constante $\\dfrac{T^{2}}{a^{3}}$ de la troisième loi de Kepler ?",
+      "verso": "Uniquement de la masse $M$ de l'astre central, pas de l'astre en orbite : on ne compare par cette loi que des satellites d'un même astre.",
+      "difficulte": 3,
+      "tags": [
+        "kepler-3",
+        "astre-central"
+      ]
+    },
+    {
+      "id": "PCTD-P07-034",
+      "lecon": "Les lois de Kepler",
+      "type": "formule",
+      "recto": "Comment la troisième loi de Kepler permet-elle de calculer la masse $M$ d'un astre central à partir d'une orbite circulaire ?",
+      "verso": "$M = \\dfrac{4\\pi^{2}\\,r^{3}}{G\\,T^{2}}$, avec $r$ en m et $T$ en s.",
+      "difficulte": 2,
+      "tags": [
+        "masse-astre"
+      ]
+    },
+    {
+      "id": "PCTD-P07-035",
+      "lecon": "Les lois de Kepler",
+      "type": "definition",
+      "recto": "Que dit la première loi de Kepler (loi des orbites) ?",
+      "verso": "Dans le référentiel héliocentrique, chaque planète décrit une ellipse dont le Soleil occupe l'un des foyers.",
+      "difficulte": 1,
+      "tags": [
+        "kepler-1"
+      ]
+    },
+    {
+      "id": "PCTD-P07-036",
+      "lecon": "Les lois de Kepler",
+      "type": "definition",
+      "recto": "Que dit la deuxième loi de Kepler (loi des aires) ?",
+      "verso": "Le segment Soleil-planète balaie des aires égales pendant des durées égales : la planète va plus vite près du Soleil.",
+      "difficulte": 2,
+      "tags": [
+        "kepler-2"
+      ]
+    }
+  ]
+}

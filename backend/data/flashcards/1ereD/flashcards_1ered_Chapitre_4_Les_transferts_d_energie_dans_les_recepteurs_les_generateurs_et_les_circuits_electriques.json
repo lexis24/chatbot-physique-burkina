@@ -1,0 +1,436 @@
+{
+  "matiere": "Physique-Chimie",
+  "partie": "Physique",
+  "niveau": "1ère D",
+  "chapitre": "Physique, Chapitre 4 : Les transferts d'énergie dans les récepteurs, les générateurs et les circuits électriques en courant continu",
+  "source": "pc/1ered/Chapitre_4_Les_transferts_d_energie_dans_les_recepteurs_les_generateurs_et_les_circuits_electriques",
+  "nombre_cartes": 37,
+  "cartes": [
+    {
+      "id": "PC1D-P04-001",
+      "lecon": "Les récepteurs passifs et l'effet Joule",
+      "type": "definition",
+      "recto": "En électricité, qu'appelle-t-on un récepteur ?",
+      "verso": "C'est un dipôle qui reçoit de l'énergie électrique du circuit et la convertit sous une ou plusieurs autres formes. On l'étudie en convention récepteur : flèche de la tension $U$ en sens contraire de celle du courant $I$.",
+      "difficulte": 1,
+      "tags": [
+        "recepteur",
+        "convention-recepteur"
+      ]
+    },
+    {
+      "id": "PC1D-P04-002",
+      "lecon": "Les récepteurs passifs et l'effet Joule",
+      "type": "formule",
+      "recto": "Quelle relation donne la puissance électrique reçue par un récepteur quelconque soumis à la tension $U$ et traversé par l'intensité $I$ ?",
+      "verso": "$P_{\\text{reçue}} = U \\times I$, avec $U$ en volts, $I$ en ampères et $P$ en watts ($\\mathrm{W}$). Elle vaut quelle que soit la nature du récepteur.",
+      "difficulte": 1,
+      "tags": [
+        "puissance-recue"
+      ]
+    },
+    {
+      "id": "PC1D-P04-003",
+      "lecon": "Les récepteurs passifs et l'effet Joule",
+      "type": "formule",
+      "recto": "Quelle relation donne l'énergie électrique $W$ reçue par un récepteur pendant une durée $t$, avec son unité légale et son unité pratique ?",
+      "verso": "$W = P\\,t = U I t$, en joules ($\\mathrm{J}$) avec $t$ en secondes. $1~\\mathrm{kWh} = 3{,}6 \\times 10^{6}~\\mathrm{J}$.",
+      "difficulte": 2,
+      "tags": [
+        "energie",
+        "kilowattheure"
+      ]
+    },
+    {
+      "id": "PC1D-P04-004",
+      "lecon": "Les récepteurs passifs et l'effet Joule",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on un récepteur passif ?",
+      "verso": "C'est un récepteur qui convertit toute l'énergie électrique reçue en chaleur et en rayonnement (conducteur ohmique, résistance chauffante, lampe à incandescence, fer à repasser). Sa caractéristique passe par l'origine.",
+      "difficulte": 1,
+      "tags": [
+        "recepteur-passif"
+      ]
+    },
+    {
+      "id": "PC1D-P04-005",
+      "lecon": "Les récepteurs passifs et l'effet Joule",
+      "type": "definition",
+      "recto": "Pour un récepteur passif mis sous tension, que distingue-t-on entre le régime transitoire et le régime permanent ?",
+      "verso": "Au régime transitoire, la température du récepteur monte. Au régime permanent, elle s'est stabilisée et toute l'énergie reçue est cédée au milieu extérieur sous forme de chaleur et de rayonnement.",
+      "difficulte": 2,
+      "tags": [
+        "regime-permanent",
+        "regime-transitoire"
+      ]
+    },
+    {
+      "id": "PC1D-P04-006",
+      "lecon": "Les récepteurs passifs et l'effet Joule",
+      "type": "formule",
+      "recto": "Quelles écritures donnent la puissance dissipée par effet Joule dans un conducteur de résistance $R$ ?",
+      "verso": "$P_J = R\\,I^{2} = \\dfrac{U^{2}}{R} = U I$ (en watts) ; pour un récepteur passif, les trois donnent la même valeur. L'intensité est au carré : doubler $I$ quadruple la chaleur produite.",
+      "difficulte": 2,
+      "tags": [
+        "effet-joule"
+      ]
+    },
+    {
+      "id": "PC1D-P04-007",
+      "lecon": "Les récepteurs passifs et l'effet Joule",
+      "type": "formule",
+      "recto": "Pourquoi la relation $P = R I^{2}$ ne donne-t-elle pas la puissance totale reçue par un moteur ou un électrolyseur ?",
+      "verso": "Elle ne donne la puissance totale reçue que pour un récepteur passif. Sur un récepteur actif, $R I^{2}$ ne représente que la part perdue en chaleur ; la puissance reçue vaut $U I$.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "effet-joule"
+      ]
+    },
+    {
+      "id": "PC1D-P04-008",
+      "lecon": "Le récepteur actif, force contre-électromotrice et caractéristique",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on un récepteur actif ?",
+      "verso": "C'est un récepteur qui convertit une partie de l'énergie électrique reçue en une forme autre que la chaleur, le reste étant dissipé par effet Joule : moteur (énergie mécanique), électrolyseur et batterie en charge (énergie chimique).",
+      "difficulte": 1,
+      "tags": [
+        "recepteur-actif"
+      ]
+    },
+    {
+      "id": "PC1D-P04-009",
+      "lecon": "Le récepteur actif, force contre-électromotrice et caractéristique",
+      "type": "definition",
+      "recto": "Pour un récepteur actif, qu'appelle-t-on la force contre-électromotrice $E'$ ?",
+      "verso": "C'est la grandeur, en volts, qui mesure l'opposition du récepteur actif au passage du courant. C'est l'ordonnée à l'origine de sa caractéristique et la tension minimale à appliquer pour que la conversion commence ; ce n'est ni une force ni une résistance.",
+      "difficulte": 2,
+      "tags": [
+        "fcem"
+      ]
+    },
+    {
+      "id": "PC1D-P04-010",
+      "lecon": "Le récepteur actif, force contre-électromotrice et caractéristique",
+      "type": "definition",
+      "recto": "Pour un récepteur actif, que représente sa résistance interne $r'$ sur sa caractéristique $U = f(I)$ ?",
+      "verso": "C'est la pente de la caractéristique, en ohms ($\\Omega$) : $r' = \\dfrac{U_2 - U_1}{I_2 - I_1}$, calculée sur la partie rectiligne. Elle échauffe le récepteur par effet Joule.",
+      "difficulte": 2,
+      "tags": [
+        "resistance-interne",
+        "caracteristique"
+      ]
+    },
+    {
+      "id": "PC1D-P04-011",
+      "lecon": "Le récepteur actif, force contre-électromotrice et caractéristique",
+      "type": "definition",
+      "recto": "Par quel modèle équivalent représente-t-on un récepteur actif de f.c.é.m. $E'$ et de résistance interne $r'$ ?",
+      "verso": "Par l'association en série d'un générateur parfait de f.é.m. $E'$ monté en opposition et d'un conducteur ohmique de résistance $r'$.",
+      "difficulte": 2,
+      "tags": [
+        "modele-equivalent"
+      ]
+    },
+    {
+      "id": "PC1D-P04-012",
+      "lecon": "Le récepteur actif, force contre-électromotrice et caractéristique",
+      "type": "formule",
+      "recto": "En convention récepteur, quelle relation lie la tension $U$ aux bornes d'un récepteur actif, sa f.c.é.m. $E'$, sa résistance interne $r'$ et l'intensité $I$ ?",
+      "verso": "$U = E' + r'\\,I$ ($U$ et $E'$ en V, $r'$ en $\\Omega$, $I$ en A). La tension aux bornes est donc toujours supérieure à $E'$ quand le courant circule.",
+      "difficulte": 1,
+      "tags": [
+        "loi-recepteur-actif"
+      ]
+    },
+    {
+      "id": "PC1D-P04-013",
+      "lecon": "Le récepteur actif, force contre-électromotrice et caractéristique",
+      "type": "formule",
+      "recto": "A quelle condition sur la tension appliquée $U$ un courant notable traverse-t-il un récepteur actif de f.c.é.m. $E'$ ?",
+      "verso": "Il faut $U \\gt E'$ pour avoir $I \\gt 0$. Par exemple, on ne recharge pas une batterie de 12 V avec un générateur de 10 V.",
+      "difficulte": 2,
+      "tags": [
+        "condition-fonctionnement"
+      ]
+    },
+    {
+      "id": "PC1D-P04-014",
+      "lecon": "Le récepteur actif, force contre-électromotrice et caractéristique",
+      "type": "definition",
+      "recto": "Quelle est l'allure de la caractéristique $U = f(I)$ d'un récepteur actif ?",
+      "verso": "Une droite montante qui ne passe pas par l'origine : ordonnée à l'origine $E'$, pente $+r'$. Les tout premiers points, à courant presque nul, forment souvent une partie courbe qu'on écarte.",
+      "difficulte": 2,
+      "tags": [
+        "caracteristique"
+      ]
+    },
+    {
+      "id": "PC1D-P04-015",
+      "lecon": "Le récepteur actif, force contre-électromotrice et caractéristique",
+      "type": "formule",
+      "recto": "Sur un tableau de mesures $(I, U)$, comment distinguer un conducteur ohmique, un récepteur actif et un générateur ?",
+      "verso": "Quotient $\\dfrac{U}{I}$ constant : conducteur ohmique ($U = R I$). $U$ augmente avec $I$ mais $\\dfrac{U}{I}$ diminue : récepteur actif. $U$ diminue quand $I$ augmente : générateur ($U = E - r I$).",
+      "difficulte": 3,
+      "tags": [
+        "caracteristique",
+        "distinction"
+      ]
+    },
+    {
+      "id": "PC1D-P04-016",
+      "lecon": "Le récepteur actif, force contre-électromotrice et caractéristique",
+      "type": "definition",
+      "recto": "Pourquoi un moteur électrique bloqué risque-t-il de brûler ?",
+      "verso": "Un moteur qui ne tourne pas n'a plus de f.c.é.m. : $E' = 0$. Il se réduit à sa résistance $r'$, très petite, et l'intensité devient énorme.",
+      "difficulte": 2,
+      "tags": [
+        "moteur-bloque",
+        "securite"
+      ]
+    },
+    {
+      "id": "PC1D-P04-017",
+      "lecon": "Le récepteur actif, force contre-électromotrice et caractéristique",
+      "type": "formule",
+      "recto": "Pourquoi l'écriture $U = E' - r'I$ est-elle fausse pour un récepteur actif ?",
+      "verso": "Le signe moins appartient au générateur, qui donne au circuit. Pour un récepteur actif, il faut vaincre $E'$ puis fournir $r'I$ : $U = E' + r'I$. Contrôle : $U$ doit sortir supérieure à $E'$.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "loi-recepteur-actif"
+      ]
+    },
+    {
+      "id": "PC1D-P04-018",
+      "lecon": "Puissances et rendement d'un récepteur actif",
+      "type": "formule",
+      "recto": "Pour un récepteur actif $(E', r')$ traversé par l'intensité $I$, quelles relations donnent la puissance reçue, la puissance utile et la puissance dissipée par effet Joule ?",
+      "verso": "$P_{\\text{reçue}} = U I$ (tension aux bornes), $P_{\\text{utile}} = E' I$, $P_J = r' I^{2}$, toutes en watts.",
+      "difficulte": 2,
+      "tags": [
+        "puissances",
+        "recepteur-actif"
+      ]
+    },
+    {
+      "id": "PC1D-P04-019",
+      "lecon": "Puissances et rendement d'un récepteur actif",
+      "type": "formule",
+      "recto": "Quel est le bilan de puissance d'un récepteur actif $(E', r')$ ?",
+      "verso": "$P_{\\text{reçue}} = P_{\\text{utile}} + P_J$, soit $U I = E' I + r' I^{2}$.",
+      "difficulte": 1,
+      "tags": [
+        "bilan-puissance"
+      ]
+    },
+    {
+      "id": "PC1D-P04-020",
+      "lecon": "Puissances et rendement d'un récepteur actif",
+      "type": "formule",
+      "recto": "Quelle relation donne le rendement $\\eta'$ d'un récepteur actif de f.c.é.m. $E'$ sous la tension $U$ ?",
+      "verso": "$\\eta' = \\dfrac{P_{\\text{utile}}}{P_{\\text{reçue}}} = \\dfrac{E'}{U} = 1 - \\dfrac{r'I}{U}$. Il est sans unité et toujours inférieur à 1.",
+      "difficulte": 2,
+      "tags": [
+        "rendement"
+      ]
+    },
+    {
+      "id": "PC1D-P04-021",
+      "lecon": "Puissances et rendement d'un récepteur actif",
+      "type": "definition",
+      "recto": "Comment varie le rendement d'un récepteur actif quand l'intensité qui le traverse augmente ?",
+      "verso": "Il diminue, car $\\eta' = \\dfrac{E'}{E' + r'I}$. Il ne vaudrait 1 que pour un récepteur sans résistance interne.",
+      "difficulte": 2,
+      "tags": [
+        "rendement"
+      ]
+    },
+    {
+      "id": "PC1D-P04-022",
+      "lecon": "Puissances et rendement d'un récepteur actif",
+      "type": "definition",
+      "recto": "Quelle forme prend l'énergie utile d'un moteur, d'un électrolyseur et d'une batterie en charge ?",
+      "verso": "Energie mécanique pour un moteur ; énergie chimique pour un électrolyseur et pour une batterie en charge. Dans tous les cas, les pertes $r'I^{2}$ sont thermiques.",
+      "difficulte": 1,
+      "tags": [
+        "energie-utile"
+      ]
+    },
+    {
+      "id": "PC1D-P04-023",
+      "lecon": "Puissances et rendement d'un récepteur actif",
+      "type": "definition",
+      "recto": "Pour un moteur, quelle différence y a-t-il entre la puissance $E'I$ et la puissance disponible sur l'arbre ?",
+      "verso": "$E'I$ est la puissance électromagnétique convertie ; la puissance sur l'arbre est un peu plus faible à cause des frottements. On les assimile sauf si l'énoncé donne une puissance de frottements, qu'on retranche alors.",
+      "difficulte": 3,
+      "tags": [
+        "moteur",
+        "frottements"
+      ]
+    },
+    {
+      "id": "PC1D-P04-024",
+      "lecon": "Puissances et rendement d'un récepteur actif",
+      "type": "definition",
+      "recto": "Pourquoi la puissance électrique reçue par un moteur ne doit-elle pas être confondue avec sa puissance mécanique utile ?",
+      "verso": "La puissance reçue vaut $U I$ ; la puissance utile se calcule avec la f.c.é.m., $E' I$, plus petite. Un moteur sous 90 V et 20 A de f.c.é.m. 60 V reçoit 1 800 W mais n'en rend que 1 200 W.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "puissances"
+      ]
+    },
+    {
+      "id": "PC1D-P04-025",
+      "lecon": "Puissances et rendement d'un générateur",
+      "type": "definition",
+      "recto": "En électricité, qu'appelle-t-on un générateur ?",
+      "verso": "C'est un dipôle qui convertit en énergie électrique une autre forme d'énergie : chimique (pile, accumulateur, batterie), mécanique (dynamo, alternateur) ou rayonnante (photopile, module solaire). On l'étudie en convention générateur.",
+      "difficulte": 1,
+      "tags": [
+        "generateur"
+      ]
+    },
+    {
+      "id": "PC1D-P04-026",
+      "lecon": "Puissances et rendement d'un générateur",
+      "type": "formule",
+      "recto": "Pour un générateur de f.é.m. $E$ et de résistance interne $r$ débitant l'intensité $I$, quelles relations donnent la puissance générée, la puissance utile et la puissance perdue ?",
+      "verso": "Générée : $P_g = E I$ ; utile, livrée au circuit extérieur : $P_u = U I$ (tension aux bornes) ; perdue par effet Joule : $P_J = r I^{2}$. Bilan : $E I = U I + r I^{2}$.",
+      "difficulte": 2,
+      "tags": [
+        "puissances",
+        "generateur"
+      ]
+    },
+    {
+      "id": "PC1D-P04-027",
+      "lecon": "Puissances et rendement d'un générateur",
+      "type": "formule",
+      "recto": "Quelle relation donne le rendement $\\eta$ de la conversion d'un générateur $(E, r)$ ?",
+      "verso": "$\\eta = \\dfrac{P_u}{P_g} = \\dfrac{U}{E} = 1 - \\dfrac{r I}{E}$. Sans unité, toujours inférieur à 1, il diminue quand l'intensité débitée augmente.",
+      "difficulte": 2,
+      "tags": [
+        "rendement",
+        "generateur"
+      ]
+    },
+    {
+      "id": "PC1D-P04-028",
+      "lecon": "Puissances et rendement d'un générateur",
+      "type": "formule",
+      "recto": "En court-circuit, que valent la tension aux bornes d'un générateur $(E, r)$ et l'intensité débitée ?",
+      "verso": "$U = 0$ et $I_{cc} = \\dfrac{E}{r}$. Toute la puissance générée est dissipée dans le générateur, qui chauffe dangereusement ; son rendement est nul.",
+      "difficulte": 2,
+      "tags": [
+        "court-circuit",
+        "securite"
+      ]
+    },
+    {
+      "id": "PC1D-P04-029",
+      "lecon": "Puissances et rendement d'un générateur",
+      "type": "formule",
+      "recto": "Quelle relation définit la capacité $Q$ d'une batterie à partir de l'intensité débitée $I$ et de la durée $t$ ?",
+      "verso": "C'est la quantité d'électricité qu'elle peut débiter après une charge complète : $Q = I \\times t$, en ampères-heures ($\\mathrm{A \\cdot h}$) avec $t$ en heures ; $1~\\mathrm{A \\cdot h} = 3\\,600~\\mathrm{C}$.",
+      "difficulte": 2,
+      "tags": [
+        "capacite",
+        "batterie"
+      ]
+    },
+    {
+      "id": "PC1D-P04-030",
+      "lecon": "Puissances et rendement d'un générateur",
+      "type": "formule",
+      "recto": "Quelle erreur commet-on en calculant la puissance utile d'un générateur avec sa f.é.m. $E$ ?",
+      "verso": "$E I$ est la puissance générée, la plus grande ; la puissance utile livrée est $U I$. Avec $E I$, on trouverait un rendement de 100 %, ce qui est impossible.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "generateur"
+      ]
+    },
+    {
+      "id": "PC1D-P04-031",
+      "lecon": "Le bilan énergétique d'un circuit et d'une chaîne",
+      "type": "formule",
+      "recto": "Dans un circuit série comportant générateurs, récepteurs actifs et conducteurs ohmiques, quelle relation donne l'intensité (loi de Pouillet généralisée) ?",
+      "verso": "$I = \\dfrac{\\sum E - \\sum E'}{\\sum r + \\sum r' + \\sum R}$. Le courant ne s'établit que si $\\sum E \\gt \\sum E'$ ; un générateur monté en opposition compte négativement dans $\\sum E$.",
+      "difficulte": 2,
+      "tags": [
+        "loi-de-pouillet"
+      ]
+    },
+    {
+      "id": "PC1D-P04-032",
+      "lecon": "Le bilan énergétique d'un circuit et d'une chaîne",
+      "type": "formule",
+      "recto": "A quel générateur unique équivalent $n$ générateurs identiques $(E, r)$ montés en série concordance ?",
+      "verso": "A un générateur de f.é.m. $nE$ et de résistance interne $nr$.",
+      "difficulte": 1,
+      "tags": [
+        "association-generateurs"
+      ]
+    },
+    {
+      "id": "PC1D-P04-033",
+      "lecon": "Le bilan énergétique d'un circuit et d'une chaîne",
+      "type": "formule",
+      "recto": "Quel est le principe du bilan énergétique d'un circuit électrique ?",
+      "verso": "Pendant la même durée, la puissance totale générée est égale à la somme des puissances utiles et des puissances perdues dans tout le circuit, résistances internes des générateurs comprises : $\\sum E I = \\sum P_{\\text{utile}} + \\sum P_{\\text{perdue}}$.",
+      "difficulte": 2,
+      "tags": [
+        "bilan-energetique"
+      ]
+    },
+    {
+      "id": "PC1D-P04-034",
+      "lecon": "Le bilan énergétique d'un circuit et d'une chaîne",
+      "type": "formule",
+      "recto": "Pour un circuit série formé d'un générateur $(E, r)$, d'un conducteur ohmique $R$ et d'un récepteur actif $(E', r')$, quel est le bilan de puissance détaillé ?",
+      "verso": "$E I = r I^{2} + R I^{2} + E' I + r' I^{2}$. En divisant par $I$, on retrouve la loi des mailles : $E = rI + RI + E' + r'I$.",
+      "difficulte": 2,
+      "tags": [
+        "bilan-energetique",
+        "circuit-serie"
+      ]
+    },
+    {
+      "id": "PC1D-P04-035",
+      "lecon": "Le bilan énergétique d'un circuit et d'une chaîne",
+      "type": "formule",
+      "recto": "Quelle relation lie le rendement global d'une chaîne à ses rendements partiels $\\eta_1, \\eta_2, \\ldots, \\eta_n$ ?",
+      "verso": "$\\eta_{\\text{global}} = \\dfrac{P_{\\text{utile finale}}}{P_{\\text{fournie initiale}}} = \\eta_1 \\times \\eta_2 \\times \\ldots \\times \\eta_n$ : c'est le produit, jamais la somme.",
+      "difficulte": 2,
+      "tags": [
+        "rendement-global"
+      ]
+    },
+    {
+      "id": "PC1D-P04-036",
+      "lecon": "Le bilan énergétique d'un circuit et d'une chaîne",
+      "type": "formule",
+      "recto": "Pour un montage ou une chaîne, comment définit-on le gain en tension $G_U$ et le gain en puissance $G_P$ ?",
+      "verso": "$G_U = \\dfrac{U_s}{U_e}$ et $G_P = \\dfrac{P_s}{P_e}$ (sortie sur entrée), tous deux sans unité. Pour une chaîne sans source d'énergie supplémentaire, $G_P$ est le rendement et reste inférieur à 1.",
+      "difficulte": 2,
+      "tags": [
+        "gain-tension",
+        "gain-puissance"
+      ]
+    },
+    {
+      "id": "PC1D-P04-037",
+      "lecon": "Le bilan énergétique d'un circuit et d'une chaîne",
+      "type": "definition",
+      "recto": "Pourquoi le gain en puissance d'un amplificateur alimenté peut-il dépasser 1 sans contredire la conservation de l'énergie ?",
+      "verso": "L'énergie de sortie vient de l'alimentation : $P_{\\text{alim}} + P_e = P_s + P_{\\text{perdue}}$. Le gain $\\dfrac{P_s}{P_e}$ peut dépasser 1, mais le rendement $\\dfrac{P_s}{P_{\\text{alim}} + P_e}$ reste inférieur à 1.",
+      "difficulte": 3,
+      "tags": [
+        "amplificateur",
+        "gain-puissance"
+      ]
+    }
+  ]
+}

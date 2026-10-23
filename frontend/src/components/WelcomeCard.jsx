@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react"
 import { motion } from "framer-motion"
-import MathContent from "./MathContent"
+import RichContent from "./RichContent"
 import { buildSuggestions } from "../lib/suggestions"
 
 function SuggestionButtons({ suggestions, onSuggestionClick }) {
@@ -40,7 +40,7 @@ function PersonalizedMessage({ text }) {
   return (
     <div className="w-full max-w-[440px] text-left">
       <div ref={contentRef} className={`prose-chat max-w-none text-sm ${expanded ? "" : "line-clamp-3"}`}>
-        <MathContent>{text}</MathContent>
+        <RichContent>{text}</RichContent>
       </div>
       {truncatable && (
         <button

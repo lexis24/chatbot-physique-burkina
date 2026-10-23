@@ -1,0 +1,380 @@
+{
+  "matiere": "Physique-Chimie",
+  "partie": "Physique",
+  "niveau": "2nde C",
+  "chapitre": "Physique, Chapitre 10 : Le générateur et le point de fonctionnement d'un circuit",
+  "source": "pc/2ndc/Chapitre_10_Le_generateur_et_le_point_de_fonctionnement_d_un_circuit",
+  "nombre_cartes": 32,
+  "cartes": [
+    {
+      "id": "PC2C-P10-001",
+      "lecon": "Le dipôle actif, la f.é.m. et la caractéristique d'un générateur",
+      "type": "definition",
+      "recto": "Quelle différence y a-t-il entre un dipôle passif et un dipôle actif ?",
+      "verso": "Un dipôle passif ne présente aucune tension à ses bornes lorsqu'il n'est traversé par aucun courant (conducteur ohmique, lampe, diode) ; un dipôle actif présente une tension non nulle même à courant nul (pile, batterie, module solaire, dynamo).",
+      "difficulte": 1,
+      "tags": [
+        "dipole-actif",
+        "dipole-passif"
+      ]
+    },
+    {
+      "id": "PC2C-P10-002",
+      "lecon": "Le dipôle actif, la f.é.m. et la caractéristique d'un générateur",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on la force électromotrice $E$ d'un générateur ?",
+      "verso": "C'est la tension entre ses bornes lorsqu'il ne débite aucun courant (tension à vide) : $U = E$ pour $I = 0$. Elle s'exprime en volts ; malgré son nom, ce n'est pas une force.",
+      "difficulte": 1,
+      "tags": [
+        "fem",
+        "tension-a-vide"
+      ]
+    },
+    {
+      "id": "PC2C-P10-003",
+      "lecon": "Le dipôle actif, la f.é.m. et la caractéristique d'un générateur",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on la résistance interne $r$ d'un générateur ?",
+      "verso": "C'est la résistance que rencontre le courant à l'intérieur du générateur ; elle s'exprime en ohms : de quelques dixièmes d'ohm à quelques ohms pour une pile usuelle, de quelques centièmes à quelques dixièmes d'ohm pour une batterie.",
+      "difficulte": 1,
+      "tags": [
+        "resistance-interne"
+      ]
+    },
+    {
+      "id": "PC2C-P10-004",
+      "lecon": "Le dipôle actif, la f.é.m. et la caractéristique d'un générateur",
+      "type": "definition",
+      "recto": "Par quel modèle équivalent représente-t-on un générateur réel linéaire ?",
+      "verso": "Par l'association en série d'un générateur parfait de f.é.m. $E$ et d'un conducteur ohmique de résistance $r$, la résistance interne.",
+      "difficulte": 2,
+      "tags": [
+        "modele-equivalent"
+      ]
+    },
+    {
+      "id": "PC2C-P10-005",
+      "lecon": "Le dipôle actif, la f.é.m. et la caractéristique d'un générateur",
+      "type": "formule",
+      "recto": "Pour un générateur linéaire de f.é.m. $E$ et de résistance interne $r$, quelle relation lie la tension $U$ à ses bornes et l'intensité $I$ débitée ?",
+      "verso": "$U = E - r\\,I$ (loi d'Ohm pour un générateur), en convention générateur, avec $U$ et $E$ en volts, $r$ en ohms, $I$ en ampères ; valable dans le domaine linéaire prévu par le constructeur.",
+      "difficulte": 2,
+      "tags": [
+        "loi-d-ohm-generateur"
+      ]
+    },
+    {
+      "id": "PC2C-P10-006",
+      "lecon": "Le dipôle actif, la f.é.m. et la caractéristique d'un générateur",
+      "type": "definition",
+      "recto": "En quoi consiste la convention générateur pour orienter la tension aux bornes d'un dipôle actif ?",
+      "verso": "La flèche de la tension $U$ se trace dans le même sens que celle du courant $I$ à l'extérieur du dipôle : le courant sort par la borne $+$ et la flèche pointe vers cette borne. C'est l'inverse de la convention récepteur.",
+      "difficulte": 2,
+      "tags": [
+        "convention-generateur"
+      ]
+    },
+    {
+      "id": "PC2C-P10-007",
+      "lecon": "Le dipôle actif, la f.é.m. et la caractéristique d'un générateur",
+      "type": "definition",
+      "recto": "Quelle est l'allure de la caractéristique $U = f(I)$ d'un générateur linéaire ?",
+      "verso": "Un segment de droite descendante qui ne passe pas par l'origine : son ordonnée à l'origine est la f.é.m. $E$ et sa pente vaut $-r$.",
+      "difficulte": 1,
+      "tags": [
+        "caracteristique"
+      ]
+    },
+    {
+      "id": "PC2C-P10-008",
+      "lecon": "Le dipôle actif, la f.é.m. et la caractéristique d'un générateur",
+      "type": "formule",
+      "recto": "A partir de deux points $(I_1 ; U_1)$ et $(I_2 ; U_2)$ de la caractéristique d'un générateur linéaire, quelle relation donne sa résistance interne $r$ ?",
+      "verso": "$r = -\\dfrac{\\Delta U}{\\Delta I} = \\dfrac{U_1 - U_2}{I_2 - I_1}$, en ohms : la pente de la droite vaut $-r$.",
+      "difficulte": 2,
+      "tags": [
+        "resistance-interne",
+        "pente"
+      ]
+    },
+    {
+      "id": "PC2C-P10-009",
+      "lecon": "Le dipôle actif, la f.é.m. et la caractéristique d'un générateur",
+      "type": "formule",
+      "recto": "Pour un générateur linéaire de f.é.m. $E$ et de résistance interne $r$, quelle relation donne l'intensité de court-circuit $I_{cc}$ ?",
+      "verso": "$I_{cc} = \\dfrac{E}{r}$, obtenue en faisant $U = 0$ dans $U = E - rI$ : c'est l'abscisse du point où la caractéristique coupe l'axe des intensités. Cette valeur se calcule, elle ne se mesure pas.",
+      "difficulte": 2,
+      "tags": [
+        "court-circuit"
+      ]
+    },
+    {
+      "id": "PC2C-P10-010",
+      "lecon": "Le dipôle actif, la f.é.m. et la caractéristique d'un générateur",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on un générateur idéal de tension ?",
+      "verso": "Un générateur linéaire de résistance interne nulle ($r = 0$) : sa caractéristique est une droite horizontale d'ordonnée $E$, et $U = E$ quelle que soit l'intensité. Aucun générateur réel n'est idéal.",
+      "difficulte": 2,
+      "tags": [
+        "generateur-ideal"
+      ]
+    },
+    {
+      "id": "PC2C-P10-011",
+      "lecon": "Le dipôle actif, la f.é.m. et la caractéristique d'un générateur",
+      "type": "formule",
+      "recto": "Comment mesure-t-on la f.é.m. $E$ d'une pile au voltmètre ?",
+      "verso": "On branche le voltmètre en dérivation aux bornes de la pile, le circuit étant ouvert ($I = 0$) ; sa très grande résistance ne prélève qu'un courant négligeable.",
+      "difficulte": 2,
+      "tags": [
+        "mesure",
+        "voltmetre",
+        "fem"
+      ]
+    },
+    {
+      "id": "PC2C-P10-012",
+      "lecon": "Le dipôle actif, la f.é.m. et la caractéristique d'un générateur",
+      "type": "definition",
+      "recto": "Pourquoi la tension $U$ aux bornes d'un générateur qui débite est-elle toujours inférieure à sa f.é.m. $E$ ?",
+      "verso": "La résistance interne $r$, traversée par le courant $I$, retient la tension $rI$ (chute de tension interne), perdue pour le circuit extérieur : $U = E - rI \\lt E$ dès que $I \\gt 0$.",
+      "difficulte": 2,
+      "tags": [
+        "chute-de-tension-interne"
+      ]
+    },
+    {
+      "id": "PC2C-P10-013",
+      "lecon": "Le dipôle actif, la f.é.m. et la caractéristique d'un générateur",
+      "type": "definition",
+      "recto": "Quelle erreur commet un élève qui prend pour f.é.m. la tension lue au voltmètre pendant que la pile alimente une lampe ?",
+      "verso": "Il confond $E$ et $U$ : cette valeur est la tension en charge, plus petite que $E$. La f.é.m. se mesure circuit ouvert, ou se lit à l'ordonnée à l'origine de la caractéristique.",
+      "difficulte": 3,
+      "tags": [
+        "fem",
+        "tension",
+        "piege"
+      ]
+    },
+    {
+      "id": "PC2C-P10-014",
+      "lecon": "Le dipôle actif, la f.é.m. et la caractéristique d'un générateur",
+      "type": "definition",
+      "recto": "Dans quel domaine la relation $U = E - rI$ d'un générateur est-elle valable ?",
+      "verso": "Seulement dans le domaine linéaire, là où la caractéristique est une droite, et dans les limites du constructeur (pile R6 : intensité inférieure à $0{,}6~\\mathrm{A}$ environ). Si la caractéristique est une courbe, le générateur est non linéaire et la relation ne s'applique plus.",
+      "difficulte": 3,
+      "tags": [
+        "domaine-lineaire"
+      ]
+    },
+    {
+      "id": "PC2C-P10-015",
+      "lecon": "Les associations de générateurs",
+      "type": "formule",
+      "recto": "Pour $n$ générateurs associés en série, quelles relations donnent la f.é.m. $E_s$ et la résistance interne $r_s$ du générateur équivalent ?",
+      "verso": "$E_s = E_1 + E_2 + \\ldots + E_n$ (somme algébrique) et $r_s = r_1 + r_2 + \\ldots + r_n$ ; pour $n$ générateurs identiques, $E_s = nE$ et $r_s = nr$.",
+      "difficulte": 1,
+      "tags": [
+        "serie",
+        "association"
+      ]
+    },
+    {
+      "id": "PC2C-P10-016",
+      "lecon": "Les associations de générateurs",
+      "type": "definition",
+      "recto": "Comment branche-t-on des générateurs en série ?",
+      "verso": "Bout à bout, la borne $+$ de l'un reliée à la borne $-$ du suivant ; ils sont alors traversés par le même courant.",
+      "difficulte": 1,
+      "tags": [
+        "serie",
+        "branchement"
+      ]
+    },
+    {
+      "id": "PC2C-P10-017",
+      "lecon": "Les associations de générateurs",
+      "type": "formule",
+      "recto": "Dans une association de générateurs en série, quel est l'effet d'un générateur branché en opposition ?",
+      "verso": "Il retranche sa f.é.m. (la somme des f.é.m. est algébrique), mais sa résistance interne s'ajoute toujours aux autres.",
+      "difficulte": 3,
+      "tags": [
+        "opposition",
+        "piege"
+      ]
+    },
+    {
+      "id": "PC2C-P10-018",
+      "lecon": "Les associations de générateurs",
+      "type": "formule",
+      "recto": "Pour $n$ générateurs identiques $(E, r)$ associés en dérivation, que valent la f.é.m. $E_p$ et la résistance interne $r_p$ de l'ensemble ?",
+      "verso": "$E_p = E$ et $r_p = \\dfrac{r}{n}$ : la tension ne change pas, la résistance interne est divisée par $n$, ce qui permet des intensités plus fortes et une plus longue durée de service.",
+      "difficulte": 2,
+      "tags": [
+        "derivation",
+        "association"
+      ]
+    },
+    {
+      "id": "PC2C-P10-019",
+      "lecon": "Les associations de générateurs",
+      "type": "definition",
+      "recto": "Pourquoi ne faut-il pas associer en dérivation une pile neuve et une pile usée ?",
+      "verso": "On n'associe en dérivation que des générateurs identiques : la pile la plus forte débiterait dans la plus faible, qui chaufferait sans profit. C'est pourquoi on remplace toutes les piles d'une torche en même temps.",
+      "difficulte": 2,
+      "tags": [
+        "derivation",
+        "securite"
+      ]
+    },
+    {
+      "id": "PC2C-P10-020",
+      "lecon": "Les associations de générateurs",
+      "type": "definition",
+      "recto": "Pourquoi quatre piles identiques en série ne donnent-elles pas quatre fois plus de courant dans un même récepteur ?",
+      "verso": "Parce que leurs résistances internes s'ajoutent elles aussi : la f.é.m. est multipliée par quatre, mais la résistance interne aussi ($r_s = 4r$), qui s'ajoute à celle du récepteur.",
+      "difficulte": 3,
+      "tags": [
+        "serie",
+        "piege"
+      ]
+    },
+    {
+      "id": "PC2C-P10-021",
+      "lecon": "Les associations de générateurs",
+      "type": "formule",
+      "recto": "Un conducteur ohmique $R$ est placé en série avec un générateur $(E, r)$ : à quel générateur équivaut l'ensemble vu de ses bornes extrêmes ?",
+      "verso": "A un générateur de f.é.m. $E$ et de résistance interne $r + R$ : $U = E - (r + R)\\,I$ et $I_{cc} = \\dfrac{E}{r + R}$, bien plus petit que celui du générateur seul.",
+      "difficulte": 3,
+      "tags": [
+        "generateur-equivalent"
+      ]
+    },
+    {
+      "id": "PC2C-P10-022",
+      "lecon": "Le point de fonctionnement d'un circuit",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on le point de fonctionnement d'un circuit formé d'un générateur et d'un récepteur ?",
+      "verso": "C'est le couple $(I, U)$ commun aux deux dipôles : l'intensité qui les traverse tous les deux et la tension commune à leurs bornes. Graphiquement, c'est l'intersection de leurs deux caractéristiques.",
+      "difficulte": 1,
+      "tags": [
+        "point-de-fonctionnement"
+      ]
+    },
+    {
+      "id": "PC2C-P10-023",
+      "lecon": "Le point de fonctionnement d'un circuit",
+      "type": "formule",
+      "recto": "Comment détermine-t-on graphiquement le point de fonctionnement d'un circuit générateur-récepteur ?",
+      "verso": "On trace les deux caractéristiques sur le même repère, avec les mêmes échelles, et on lit les coordonnées de leur intersection en projetant sur les deux axes.",
+      "difficulte": 2,
+      "tags": [
+        "methode-graphique"
+      ]
+    },
+    {
+      "id": "PC2C-P10-024",
+      "lecon": "Le point de fonctionnement d'un circuit",
+      "type": "definition",
+      "recto": "Pourquoi la détermination graphique du point de fonctionnement est-elle appelée méthode générale ?",
+      "verso": "Parce qu'elle vaut même si le récepteur n'est pas linéaire (lampe, diode, moteur), alors que le calcul par la loi de Pouillet exige des conducteurs ohmiques.",
+      "difficulte": 2,
+      "tags": [
+        "methode-graphique",
+        "non-lineaire"
+      ]
+    },
+    {
+      "id": "PC2C-P10-025",
+      "lecon": "Le point de fonctionnement d'un circuit",
+      "type": "formule",
+      "recto": "Pour un circuit série formé de générateurs et de conducteurs ohmiques, quelle relation donne l'intensité $I$ (loi de Pouillet) ?",
+      "verso": "$I = \\dfrac{\\sum E}{\\sum R + \\sum r}$, où $\\sum E$ est la somme algébrique des f.é.m. et où toutes les résistances, internes comprises, s'ajoutent au dénominateur.",
+      "difficulte": 2,
+      "tags": [
+        "loi-de-pouillet"
+      ]
+    },
+    {
+      "id": "PC2C-P10-026",
+      "lecon": "Le point de fonctionnement d'un circuit",
+      "type": "formule",
+      "recto": "Pour un générateur $(E, r)$ qui alimente un seul conducteur ohmique $R$, quelles relations donnent l'intensité $I$ et la tension $U$ du point de fonctionnement ?",
+      "verso": "$I = \\dfrac{E}{R + r}$, puis $U = R\\,I = E - r\\,I$ ($E$, $U$ en V ; $R$, $r$ en $\\Omega$ ; $I$ en A).",
+      "difficulte": 1,
+      "tags": [
+        "loi-de-pouillet",
+        "point-de-fonctionnement"
+      ]
+    },
+    {
+      "id": "PC2C-P10-027",
+      "lecon": "Le point de fonctionnement d'un circuit",
+      "type": "definition",
+      "recto": "De quelle égalité découle la loi de Pouillet pour un générateur $(E, r)$ en série avec un conducteur ohmique $R$ ?",
+      "verso": "Le générateur impose $U = E - rI$ et le conducteur ohmique $U = RI$ ; la tension étant la même, $E - rI = RI$, donc $I = \\dfrac{E}{R + r}$.",
+      "difficulte": 2,
+      "tags": [
+        "loi-de-pouillet"
+      ]
+    },
+    {
+      "id": "PC2C-P10-028",
+      "lecon": "Le point de fonctionnement d'un circuit",
+      "type": "definition",
+      "recto": "Quelle erreur commet un élève qui écrit $I = \\dfrac{E}{R}$ pour un générateur alimentant un conducteur ohmique ?",
+      "verso": "Il oublie la résistance interne : tout ce qui s'oppose au courant figure au dénominateur, l'intérieur du générateur compris, d'où $I = \\dfrac{E}{R + r}$.",
+      "difficulte": 3,
+      "tags": [
+        "loi-de-pouillet",
+        "piege"
+      ]
+    },
+    {
+      "id": "PC2C-P10-029",
+      "lecon": "Le point de fonctionnement d'un circuit",
+      "type": "formule",
+      "recto": "Dans un circuit série comportant un générateur $(E, r)$, un conducteur ohmique $R$ et une diode passante de tension de seuil $U_s$, quelle relation donne l'intensité ?",
+      "verso": "$I = \\dfrac{E - U_s}{R + r}$, à condition que $E \\gt U_s$ ; si la diode est dans le sens bloqué, $I = 0$.",
+      "difficulte": 3,
+      "tags": [
+        "diode",
+        "loi-de-pouillet"
+      ]
+    },
+    {
+      "id": "PC2C-P10-030",
+      "lecon": "Le point de fonctionnement d'un circuit",
+      "type": "definition",
+      "recto": "Quelle signification a un résultat négatif donné par la loi de Pouillet dans une boucle à plusieurs générateurs ?",
+      "verso": "Le courant circule en réalité en sens inverse du sens de parcours choisi, avec l'intensité $\\lvert I \\rvert$ : ce n'est pas une erreur de calcul.",
+      "difficulte": 2,
+      "tags": [
+        "sens-du-courant"
+      ]
+    },
+    {
+      "id": "PC2C-P10-031",
+      "lecon": "Le point de fonctionnement d'un circuit",
+      "type": "formule",
+      "recto": "Comment applique-t-on la loi de Pouillet quand le générateur $(E, r)$ alimente plusieurs conducteurs ohmiques en série et en dérivation ?",
+      "verso": "On réduit d'abord le récepteur à un seul conducteur de résistance $R_{eq}$ (équivalents des groupements en dérivation, puis somme des résistances en série), puis $I = \\dfrac{E}{R_{eq} + r}$.",
+      "difficulte": 2,
+      "tags": [
+        "resistance-equivalente",
+        "loi-de-pouillet"
+      ]
+    },
+    {
+      "id": "PC2C-P10-032",
+      "lecon": "Le point de fonctionnement d'un circuit",
+      "type": "definition",
+      "recto": "Quelles conditions doit respecter le point de fonctionnement d'un circuit pour que le montage soit acceptable ?",
+      "verso": "Il doit se situer dans le domaine d'utilisation des deux appareils : intensité inférieure à la limite du générateur, puissance inférieure à la limite du conducteur ohmique, tension voisine de la tension nominale pour une lampe.",
+      "difficulte": 2,
+      "tags": [
+        "domaine-de-fonctionnement"
+      ]
+    }
+  ]
+}

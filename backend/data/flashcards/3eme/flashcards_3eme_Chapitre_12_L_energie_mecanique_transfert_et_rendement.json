@@ -1,0 +1,387 @@
+{
+  "matiere": "Physique-Chimie",
+  "partie": "Physique",
+  "niveau": "3ème",
+  "chapitre": "Physique, Chapitre 12 : L'énergie mécanique : transfert et rendement",
+  "source": "pc/3eme/Chapitre_12_L_energie_mecanique_transfert_et_rendement",
+  "nombre_cartes": 32,
+  "cartes": [
+    {
+      "id": "PC3E-P12-001",
+      "lecon": "L'énergie cinétique et l'énergie potentielle de pesanteur",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on l'énergie cinétique d'un corps ?",
+      "verso": "C'est l'énergie qu'un corps possède du fait de son mouvement.",
+      "difficulte": 1,
+      "tags": [
+        "energie-cinetique",
+        "definition"
+      ]
+    },
+    {
+      "id": "PC3E-P12-002",
+      "lecon": "L'énergie cinétique et l'énergie potentielle de pesanteur",
+      "type": "definition",
+      "recto": "De quels deux facteurs dépend l'énergie cinétique d'un corps ?",
+      "verso": "De sa masse et de sa vitesse.",
+      "difficulte": 1,
+      "tags": [
+        "energie-cinetique",
+        "facteurs"
+      ]
+    },
+    {
+      "id": "PC3E-P12-003",
+      "lecon": "L'énergie cinétique et l'énergie potentielle de pesanteur",
+      "type": "formule",
+      "recto": "Quelle relation donne l'énergie cinétique $E_c$ d'un corps de masse $m$ animé d'une vitesse $v$ ?",
+      "verso": "$E_c = \\dfrac{1}{2}\\,m\\,v^{2}$, avec $m$ en kg, $v$ en m/s et $E_c$ en joules ($\\mathrm{J}$).",
+      "difficulte": 1,
+      "tags": [
+        "energie-cinetique",
+        "formule"
+      ]
+    },
+    {
+      "id": "PC3E-P12-004",
+      "lecon": "L'énergie cinétique et l'énergie potentielle de pesanteur",
+      "type": "definition",
+      "recto": "Pourquoi la vitesse d'un véhicule pèse-t-elle plus que sa charge sur son énergie cinétique ?",
+      "verso": "Dans $E_c = \\dfrac{1}{2}mv^{2}$, la masse est au premier degré mais la vitesse au carré : doubler la vitesse quadruple l'énergie cinétique.",
+      "difficulte": 2,
+      "tags": [
+        "energie-cinetique",
+        "vitesse"
+      ]
+    },
+    {
+      "id": "PC3E-P12-005",
+      "lecon": "L'énergie cinétique et l'énergie potentielle de pesanteur",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on l'énergie potentielle de pesanteur d'un corps ?",
+      "verso": "C'est l'énergie qu'un corps possède du fait de sa position en hauteur par rapport à un niveau choisi comme référence.",
+      "difficulte": 1,
+      "tags": [
+        "energie-potentielle",
+        "definition"
+      ]
+    },
+    {
+      "id": "PC3E-P12-006",
+      "lecon": "L'énergie cinétique et l'énergie potentielle de pesanteur",
+      "type": "formule",
+      "recto": "Quelle relation donne l'énergie potentielle de pesanteur $E_{pp}$ d'un corps de masse $m$ situé à la hauteur $h$ ?",
+      "verso": "$E_{pp} = m \\times g \\times h$, avec $m$ en kg, $g$ en N/kg ($g = 10~\\mathrm{N/kg}$), $h$ en m au-dessus du niveau de référence et $E_{pp}$ en J.",
+      "difficulte": 2,
+      "tags": [
+        "energie-potentielle",
+        "formule"
+      ]
+    },
+    {
+      "id": "PC3E-P12-007",
+      "lecon": "L'énergie cinétique et l'énergie potentielle de pesanteur",
+      "type": "formule",
+      "recto": "Quelle relation donne la variation d'énergie potentielle de pesanteur d'un corps de masse $m$ qui passe de la hauteur $h_1$ à la hauteur $h_2$ ?",
+      "verso": "$\\Delta E_{pp} = m \\times g \\times \\Delta h$, avec $\\Delta h = h_2 - h_1$. Elle est positive quand le corps monte, négative quand il descend.",
+      "difficulte": 2,
+      "tags": [
+        "variation",
+        "energie-potentielle"
+      ]
+    },
+    {
+      "id": "PC3E-P12-008",
+      "lecon": "L'énergie cinétique et l'énergie potentielle de pesanteur",
+      "type": "definition",
+      "recto": "Pourquoi faut-il annoncer un niveau de référence avant de calculer une énergie potentielle de pesanteur ?",
+      "verso": "La hauteur $h$ se compte à partir de ce niveau : sans lui, le nombre $h$, donc $E_{pp}$, n'a pas de sens.",
+      "difficulte": 2,
+      "tags": [
+        "niveau-reference"
+      ]
+    },
+    {
+      "id": "PC3E-P12-009",
+      "lecon": "L'énergie cinétique et l'énergie potentielle de pesanteur",
+      "type": "definition",
+      "recto": "Quel lien y a-t-il entre le travail du poids et la variation de l'énergie potentielle de pesanteur d'un corps qui monte ou descend d'une hauteur $h$ ?",
+      "verso": "Ils ont la même valeur $m \\times g \\times h$. A la montée, le travail du poids est résistant et $\\Delta E_{pp} = +mgh$ ; à la descente, il est moteur et $\\Delta E_{pp} = -mgh$.",
+      "difficulte": 3,
+      "tags": [
+        "travail-poids",
+        "energie-potentielle"
+      ]
+    },
+    {
+      "id": "PC3E-P12-010",
+      "lecon": "L'énergie cinétique et l'énergie potentielle de pesanteur",
+      "type": "definition",
+      "recto": "Dans le calcul d'une énergie cinétique ou potentielle, quelles erreurs d'unité ou de grandeur guettent l'élève ?",
+      "verso": "Oublier de convertir la vitesse en m/s (diviser les km/h par $3{,}6$) et utiliser le poids ou une masse en grammes au lieu de la masse en kilogrammes.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "unites"
+      ]
+    },
+    {
+      "id": "PC3E-P12-011",
+      "lecon": "L'énergie cinétique et l'énergie potentielle de pesanteur",
+      "type": "definition",
+      "recto": "Sous quels autres noms et notations l'énergie potentielle de pesanteur apparaît-elle dans les sujets du BEPC ?",
+      "verso": "On l'appelle aussi énergie de pesanteur, notée $E_p$ ; sa variation entre A et B s'écrit $\\Delta E_p = mgh_B - mgh_A$.",
+      "difficulte": 2,
+      "tags": [
+        "notations",
+        "bepc"
+      ]
+    },
+    {
+      "id": "PC3E-P12-012",
+      "lecon": "L'énergie mécanique et sa conservation",
+      "type": "definition",
+      "recto": "Comment définit-on l'énergie mécanique d'un corps ?",
+      "verso": "C'est la somme de son énergie cinétique et de son énergie potentielle de pesanteur : $E_m = E_c + E_{pp} = \\dfrac{1}{2}mv^{2} + mgh$, en joules.",
+      "difficulte": 1,
+      "tags": [
+        "energie-mecanique",
+        "definition"
+      ]
+    },
+    {
+      "id": "PC3E-P12-013",
+      "lecon": "L'énergie mécanique et sa conservation",
+      "type": "formule",
+      "recto": "Que devient l'énergie mécanique d'un corps en mouvement en l'absence de frottement ?",
+      "verso": "Elle reste constante : $E_m(\\text{départ}) = E_m(\\text{arrivée})$. Ce que l'énergie potentielle perd, l'énergie cinétique le gagne, et réciproquement.",
+      "difficulte": 2,
+      "tags": [
+        "conservation"
+      ]
+    },
+    {
+      "id": "PC3E-P12-014",
+      "lecon": "L'énergie mécanique et sa conservation",
+      "type": "formule",
+      "recto": "Que devient l'énergie mécanique d'un corps en présence de frottement ?",
+      "verso": "Elle diminue. La part perdue n'est pas détruite : elle est transformée en chaleur (et en bruit) au niveau des surfaces frottantes.",
+      "difficulte": 2,
+      "tags": [
+        "frottement",
+        "chaleur"
+      ]
+    },
+    {
+      "id": "PC3E-P12-015",
+      "lecon": "L'énergie mécanique et sa conservation",
+      "type": "definition",
+      "recto": "Quand un corps descend, quelle transformation d'énergie se produit ?",
+      "verso": "Son énergie potentielle se transforme en énergie cinétique : il accélère. A la montée, c'est l'inverse et il ralentit.",
+      "difficulte": 2,
+      "tags": [
+        "transformation"
+      ]
+    },
+    {
+      "id": "PC3E-P12-016",
+      "lecon": "L'énergie mécanique et sa conservation",
+      "type": "formule",
+      "recto": "Quand un corps subit des frottements entre deux points, comment calcule-t-on l'énergie perdue en chaleur ?",
+      "verso": "$E_{\\text{perdue}} = E_m(\\text{départ}) - E_m(\\text{arrivée})$, les deux énergies mécaniques étant calculées avec le même niveau de référence.",
+      "difficulte": 2,
+      "tags": [
+        "frottement",
+        "energie-perdue"
+      ]
+    },
+    {
+      "id": "PC3E-P12-017",
+      "lecon": "L'énergie mécanique et sa conservation",
+      "type": "definition",
+      "recto": "Lors d'une montée sans frottement, pourquoi ne faut-il pas confondre énergie cinétique et énergie mécanique ?",
+      "verso": "L'énergie cinétique diminue alors que l'énergie mécanique, somme de $E_c$ et $E_{pp}$, reste constante.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "energie-mecanique"
+      ]
+    },
+    {
+      "id": "PC3E-P12-018",
+      "lecon": "L'énergie mécanique et sa conservation",
+      "type": "definition",
+      "recto": "Pourquoi une bille ne peut-elle pas arriver en bas d'une rampe avec plus d'énergie mécanique qu'au départ ?",
+      "verso": "L'énergie mécanique ne peut jamais augmenter toute seule : elle se conserve sans frottement et diminue avec frottement.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "conservation"
+      ]
+    },
+    {
+      "id": "PC3E-P12-019",
+      "lecon": "L'énergie mécanique et sa conservation",
+      "type": "definition",
+      "recto": "Pourquoi une charrette lancée sur une route horizontale finit-elle par s'arrêter sans freinage ?",
+      "verso": "Sur le plat, l'énergie potentielle ne change pas ; les frottements prélèvent de l'énergie cinétique jusqu'à l'annuler, et cette énergie devient de la chaleur.",
+      "difficulte": 2,
+      "tags": [
+        "frottement",
+        "energie-cinetique"
+      ]
+    },
+    {
+      "id": "PC3E-P12-020",
+      "lecon": "Le transfert d'énergie, les convertisseurs et le rendement",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on un convertisseur d'énergie ?",
+      "verso": "C'est un dispositif qui transforme une forme d'énergie en une autre.",
+      "difficulte": 1,
+      "tags": [
+        "convertisseur",
+        "definition"
+      ]
+    },
+    {
+      "id": "PC3E-P12-021",
+      "lecon": "Le transfert d'énergie, les convertisseurs et le rendement",
+      "type": "definition",
+      "recto": "Pour un convertisseur d'énergie, que désignent l'énergie absorbée $E_a$ et l'énergie utile $E_u$ ?",
+      "verso": "$E_a$ est l'énergie qui entre dans le convertisseur (énergie d'entrée) ; $E_u$ est l'énergie qui en sort sous la forme voulue (énergie de sortie).",
+      "difficulte": 1,
+      "tags": [
+        "energie-absorbee",
+        "energie-utile"
+      ]
+    },
+    {
+      "id": "PC3E-P12-022",
+      "lecon": "Le transfert d'énergie, les convertisseurs et le rendement",
+      "type": "formule",
+      "recto": "Pour un convertisseur d'énergie, quelle relation donne l'énergie perdue ?",
+      "verso": "$E_{\\text{perdue}} = E_a - E_u$. Elle sort sous une forme non voulue, le plus souvent de la chaleur, parfois du bruit.",
+      "difficulte": 2,
+      "tags": [
+        "pertes"
+      ]
+    },
+    {
+      "id": "PC3E-P12-023",
+      "lecon": "Le transfert d'énergie, les convertisseurs et le rendement",
+      "type": "formule",
+      "recto": "Comment définit-on le rendement $\\eta$ d'un convertisseur d'énergie ?",
+      "verso": "C'est le rapport de l'énergie utile à l'énergie absorbée : $\\eta = \\dfrac{E_u}{E_a}$, ou en pourcentage $\\eta = \\dfrac{E_u}{E_a} \\times 100$, les deux énergies dans la même unité.",
+      "difficulte": 1,
+      "tags": [
+        "rendement",
+        "definition"
+      ]
+    },
+    {
+      "id": "PC3E-P12-024",
+      "lecon": "Le transfert d'énergie, les convertisseurs et le rendement",
+      "type": "definition",
+      "recto": "Pourquoi le rendement d'un convertisseur reste-t-il toujours inférieur à $100\\ \\%$ ?",
+      "verso": "Il existe toujours des frottements et une résistance dans les fils, qui produisent de la chaleur : l'énergie utile reste plus petite que l'énergie absorbée.",
+      "difficulte": 2,
+      "tags": [
+        "rendement"
+      ]
+    },
+    {
+      "id": "PC3E-P12-025",
+      "lecon": "Le transfert d'énergie, les convertisseurs et le rendement",
+      "type": "formule",
+      "recto": "Quand le rendement $\\eta$ d'un convertisseur est connu, comment obtient-on l'énergie utile ou l'énergie absorbée ?",
+      "verso": "$E_u = \\eta \\times E_a$ et $E_a = \\dfrac{E_u}{\\eta}$, avec $\\eta$ écrit en décimal ($70\\ \\%$ s'écrit $0{,}70$).",
+      "difficulte": 2,
+      "tags": [
+        "rendement",
+        "calcul"
+      ]
+    },
+    {
+      "id": "PC3E-P12-026",
+      "lecon": "Le transfert d'énergie, les convertisseurs et le rendement",
+      "type": "definition",
+      "recto": "Pourquoi une perte de $10\\ \\%$ dans un moteur ne signifie-t-elle pas un rendement de $10\\ \\%$ ?",
+      "verso": "Une perte de $10\\ \\%$ laisse $90\\ \\%$ d'énergie utile : le rendement vaut $90\\ \\%$. Une perte de $x\\ \\%$ donne un rendement de $(100 - x)\\ \\%$.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "rendement"
+      ]
+    },
+    {
+      "id": "PC3E-P12-027",
+      "lecon": "Le transfert d'énergie, les convertisseurs et le rendement",
+      "type": "definition",
+      "recto": "Que signale un rendement calculé supérieur à $100\\ \\%$ ?",
+      "verso": "Une erreur : l'énergie utile et l'énergie absorbée ont été inversées. Le rendement s'écrit utile sur absorbée.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "rendement"
+      ]
+    },
+    {
+      "id": "PC3E-P12-028",
+      "lecon": "Le transfert d'énergie, les convertisseurs et le rendement",
+      "type": "definition",
+      "recto": "Comment représente-t-on une conversion d'énergie par une chaîne énergétique ?",
+      "verso": "Par le bloc du convertisseur, une flèche d'entrée portant la forme et la valeur de l'énergie absorbée, une flèche de sortie utile et une flèche descendante pour les pertes. Le bilan vérifie $E_a = E_u + E_{\\text{perdue}}$.",
+      "difficulte": 2,
+      "tags": [
+        "chaine-energetique"
+      ]
+    },
+    {
+      "id": "PC3E-P12-029",
+      "lecon": "Le transfert d'énergie, les convertisseurs et le rendement",
+      "type": "formule",
+      "recto": "Quelle relation donne l'énergie électrique absorbée par un moteur alimenté sous la tension $U$, traversé par le courant $I$ pendant la durée $t$ ?",
+      "verso": "$E_a = U \\times I \\times t$ (ou $P \\times t$), avec $U$ en V, $I$ en A, $t$ en secondes et $E_a$ en J.",
+      "difficulte": 2,
+      "tags": [
+        "energie-electrique"
+      ]
+    },
+    {
+      "id": "PC3E-P12-030",
+      "lecon": "Le transfert d'énergie, les convertisseurs et le rendement",
+      "type": "definition",
+      "recto": "Quelle conversion d'énergie une dynamo de vélo réalise-t-elle ?",
+      "verso": "Elle absorbe de l'énergie mécanique et fournit de l'énergie électrique ; ses pertes sont de la chaleur dans les fils et le frottement sur le pneu.",
+      "difficulte": 2,
+      "tags": [
+        "convertisseur",
+        "dynamo"
+      ]
+    },
+    {
+      "id": "PC3E-P12-031",
+      "lecon": "Le transfert d'énergie, les convertisseurs et le rendement",
+      "type": "definition",
+      "recto": "Quelle conversion d'énergie l'ensemble turbine-alternateur d'un barrage réalise-t-il ?",
+      "verso": "Il absorbe l'énergie mécanique de la chute d'eau et fournit de l'énergie électrique.",
+      "difficulte": 2,
+      "tags": [
+        "convertisseur",
+        "barrage"
+      ]
+    },
+    {
+      "id": "PC3E-P12-032",
+      "lecon": "Le transfert d'énergie, les convertisseurs et le rendement",
+      "type": "formule",
+      "recto": "Combien de joules vaut un kilowattheure ?",
+      "verso": "$1~\\mathrm{kWh} = 3\\,600\\,000~\\mathrm{J}$ (et $1~\\mathrm{Wh} = 3\\,600~\\mathrm{J}$).",
+      "difficulte": 2,
+      "tags": [
+        "conversion",
+        "kwh"
+      ]
+    }
+  ]
+}

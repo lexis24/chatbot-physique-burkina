@@ -1,0 +1,419 @@
+{
+  "matiere": "Physique-Chimie",
+  "partie": "Physique",
+  "niveau": "Terminale D",
+  "chapitre": "Physique, Chapitre 8 : Le mouvement d'une particule chargée dans un champ électrique uniforme",
+  "source": "pc/tled/Chapitre_8_Le_mouvement_d_une_particule_chargee_dans_un_champ_electrique_uniforme",
+  "nombre_cartes": 36,
+  "cartes": [
+    {
+      "id": "PCTD-P08-001",
+      "lecon": "Le bilan des forces et le vecteur accélération",
+      "type": "formule",
+      "recto": "Quelle est l'expression de la force électrique subie par une particule de charge $q$ placée dans un champ électrique $\\vec{E}$ ?",
+      "verso": "$\\vec{F} = q\\vec{E}$, d'intensité $F = \\lvert q \\rvert E$ ($F$ en N, $q$ en C, $E$ en V/m). Même sens que $\\vec{E}$ si $q \\gt 0$, sens contraire si $q \\lt 0$.",
+      "difficulte": 1,
+      "tags": [
+        "force-electrique"
+      ]
+    },
+    {
+      "id": "PCTD-P08-002",
+      "lecon": "Le bilan des forces et le vecteur accélération",
+      "type": "formule",
+      "recto": "Pour un condensateur plan d'armatures distantes de $d$ soumises à la tension $U$, que vaut l'intensité du champ électrique entre les armatures ?",
+      "verso": "$E = \\dfrac{U}{d}$, en V/m ($U$ en V, $d$ en m). Le champ est uniforme, perpendiculaire aux armatures, dirigé de la plaque $+$ vers la plaque $-$.",
+      "difficulte": 1,
+      "tags": [
+        "condensateur-plan",
+        "champ"
+      ]
+    },
+    {
+      "id": "PCTD-P08-003",
+      "lecon": "Le bilan des forces et le vecteur accélération",
+      "type": "definition",
+      "recto": "Pour une particule chargée dans un champ électrique uniforme, comment justifie-t-on que son poids est négligeable ?",
+      "verso": "On calcule $P = mg$ et $F = \\lvert q \\rvert E$, puis le rapport $\\dfrac{F}{P}$ : s'il est immense ($10^{11}$ à $10^{14}$ pour une particule élémentaire), on néglige le poids.",
+      "difficulte": 2,
+      "tags": [
+        "poids-negligeable"
+      ]
+    },
+    {
+      "id": "PCTD-P08-004",
+      "lecon": "Le bilan des forces et le vecteur accélération",
+      "type": "formule",
+      "recto": "Dans le référentiel du laboratoire supposé galiléen, quel est le vecteur accélération d'une particule de charge $q$ et de masse $m$ dans un champ électrique uniforme $\\vec{E}$, son poids étant négligé ?",
+      "verso": "$\\vec{a} = \\dfrac{q}{m}\\vec{E}$, vecteur constant d'intensité $a = \\dfrac{\\lvert q \\rvert E}{m}$ : le mouvement est uniformément varié.",
+      "difficulte": 2,
+      "tags": [
+        "acceleration",
+        "newton"
+      ]
+    },
+    {
+      "id": "PCTD-P08-005",
+      "lecon": "Le bilan des forces et le vecteur accélération",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on la charge massique d'une particule ?",
+      "verso": "C'est le rapport $\\dfrac{q}{m}$ de sa charge à sa masse ; deux particules de même charge massique ont le même mouvement dans le même champ.",
+      "difficulte": 1,
+      "tags": [
+        "charge-massique"
+      ]
+    },
+    {
+      "id": "PCTD-P08-006",
+      "lecon": "Le bilan des forces et le vecteur accélération",
+      "type": "formule",
+      "recto": "Quel est le vecteur accélération d'une particule chargée dans un champ électrique uniforme quand son poids n'est pas négligeable ?",
+      "verso": "$\\vec{a} = \\vec{g} + \\dfrac{q}{m}\\vec{E}$, vecteur constant ; si $q\\vec{E} = -m\\vec{g}$, les forces se compensent et le mouvement est rectiligne uniforme.",
+      "difficulte": 3,
+      "tags": [
+        "poids",
+        "gouttelette"
+      ]
+    },
+    {
+      "id": "PCTD-P08-007",
+      "lecon": "Le bilan des forces et le vecteur accélération",
+      "type": "definition",
+      "recto": "Pourquoi un électron placé dans un condensateur plan se dirige-t-il vers la plaque positive ?",
+      "verso": "Sa charge est négative ($q = -e$) : la force $\\vec{F} = q\\vec{E}$ est opposée au champ, qui va de la plaque $+$ vers la plaque $-$.",
+      "difficulte": 3,
+      "tags": [
+        "signe-charge",
+        "piege"
+      ]
+    },
+    {
+      "id": "PCTD-P08-008",
+      "lecon": "L'accélération d'une particule par une tension : le canon à électrons",
+      "type": "formule",
+      "recto": "Quelle est l'expression du travail de la force électrique sur une charge $q$ qui se déplace d'un point $A$ à un point $B$ ?",
+      "verso": "$W_{A \\to B}\\left(\\vec{F}\\right) = q\\left(V_A - V_B\\right) = q\\,U_{AB}$, en J, avec $q$ en C et $U_{AB}$ en V.",
+      "difficulte": 1,
+      "tags": [
+        "travail"
+      ]
+    },
+    {
+      "id": "PCTD-P08-009",
+      "lecon": "L'accélération d'une particule par une tension : le canon à électrons",
+      "type": "definition",
+      "recto": "Pourquoi dit-on que la force électrique est une force conservative ?",
+      "verso": "Parce que son travail ne dépend que des positions de départ et d'arrivée, jamais du chemin suivi.",
+      "difficulte": 2,
+      "tags": [
+        "force-conservative"
+      ]
+    },
+    {
+      "id": "PCTD-P08-010",
+      "lecon": "L'accélération d'une particule par une tension : le canon à électrons",
+      "type": "formule",
+      "recto": "Dans un champ électrique uniforme $\\vec{E}$, quelle est l'expression du travail de la force électrique sur une charge $q$ qui se déplace de $A$ à $B$ ?",
+      "verso": "$W_{A \\to B} = q\\vec{E} \\cdot \\overrightarrow{AB}$ ; il vaut $qE\\ell$ pour un déplacement $\\ell$ dans le sens du champ, et zéro pour un déplacement perpendiculaire au champ.",
+      "difficulte": 2,
+      "tags": [
+        "travail",
+        "champ-uniforme"
+      ]
+    },
+    {
+      "id": "PCTD-P08-011",
+      "lecon": "L'accélération d'une particule par une tension : le canon à électrons",
+      "type": "definition",
+      "recto": "Dans un canon à électrons, quels sont les rôles de la cathode et de l'anode ?",
+      "verso": "La cathode, filament chauffé, émet des électrons pratiquement au repos ; l'anode, percée d'un trou et portée à un potentiel supérieur, les attire et les laisse passer.",
+      "difficulte": 1,
+      "tags": [
+        "canon-a-electrons"
+      ]
+    },
+    {
+      "id": "PCTD-P08-012",
+      "lecon": "L'accélération d'une particule par une tension : le canon à électrons",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on un faisceau homocinétique ?",
+      "verso": "Un faisceau de particules qui ont toutes la même vitesse, comme celui qui sort par le trou de l'anode d'un canon à électrons.",
+      "difficulte": 1,
+      "tags": [
+        "homocinetique"
+      ]
+    },
+    {
+      "id": "PCTD-P08-013",
+      "lecon": "L'accélération d'une particule par une tension : le canon à électrons",
+      "type": "formule",
+      "recto": "Quelle relation donne la vitesse $v$ d'une particule de charge $q$ et de masse $m$, partie du repos, accélérée sous la tension $U_0$ ?",
+      "verso": "$\\dfrac{1}{2}mv^{2} = \\lvert q \\rvert U_0$, d'où $v = \\sqrt{\\dfrac{2\\lvert q \\rvert U_0}{m}}$ (théorème de l'énergie cinétique, poids négligé).",
+      "difficulte": 2,
+      "tags": [
+        "acceleration-tension",
+        "energie-cinetique"
+      ]
+    },
+    {
+      "id": "PCTD-P08-014",
+      "lecon": "L'accélération d'une particule par une tension : le canon à électrons",
+      "type": "definition",
+      "recto": "Pourquoi la vitesse des électrons à la sortie d'un canon ne dépend-elle pas de la distance entre les électrodes ?",
+      "verso": "Rapprocher les électrodes augmente la force ($E = \\dfrac{U_0}{d}$) mais raccourcit le trajet dans la même proportion : le travail reste $eU_0$.",
+      "difficulte": 3,
+      "tags": [
+        "distance-electrodes",
+        "piege"
+      ]
+    },
+    {
+      "id": "PCTD-P08-015",
+      "lecon": "L'accélération d'une particule par une tension : le canon à électrons",
+      "type": "formule",
+      "recto": "Quelle est la forme générale du théorème de l'énergie cinétique pour une charge $q$ allant de $A$ à $B$ sous la seule force électrique ?",
+      "verso": "$\\dfrac{1}{2}mv_B^{2} - \\dfrac{1}{2}mv_A^{2} = q\\,U_{AB}$ ; la forme $\\dfrac{1}{2}mv^{2} = \\lvert q \\rvert U_0$ ne vaut que pour un départ au repos.",
+      "difficulte": 2,
+      "tags": [
+        "energie-cinetique"
+      ]
+    },
+    {
+      "id": "PCTD-P08-016",
+      "lecon": "L'accélération d'une particule par une tension : le canon à électrons",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on l'électronvolt ?",
+      "verso": "Une unité d'énergie (symbole eV) : l'énergie acquise par une charge élémentaire accélérée sous une tension de $1~\\mathrm{V}$, soit $1~\\mathrm{eV} = 1{,}6 \\times 10^{-19}~\\mathrm{J}$.",
+      "difficulte": 1,
+      "tags": [
+        "electronvolt"
+      ]
+    },
+    {
+      "id": "PCTD-P08-017",
+      "lecon": "L'accélération d'une particule par une tension : le canon à électrons",
+      "type": "formule",
+      "recto": "Pour une particule chargée, le poids étant négligé, quelle est l'expression de l'énergie mécanique qui se conserve ?",
+      "verso": "$E_m = \\dfrac{1}{2}mv^{2} + qV$, où $qV$ est l'énergie potentielle électrique ; d'où $\\dfrac{1}{2}mv_A^{2} + qV_A = \\dfrac{1}{2}mv_B^{2} + qV_B$.",
+      "difficulte": 2,
+      "tags": [
+        "energie-mecanique",
+        "conservation"
+      ]
+    },
+    {
+      "id": "PCTD-P08-018",
+      "lecon": "L'accélération d'une particule par une tension : le canon à électrons",
+      "type": "definition",
+      "recto": "Quelle règle pratique indique vers quelle électrode une particule chargée est accélérée ?",
+      "verso": "Elle est accélérée vers l'électrode dont le potentiel a le signe opposé à sa charge : un électron va vers le $+$, un ion positif vers le $-$.",
+      "difficulte": 2,
+      "tags": [
+        "sens-mouvement"
+      ]
+    },
+    {
+      "id": "PCTD-P08-019",
+      "lecon": "L'accélération d'une particule par une tension : le canon à électrons",
+      "type": "definition",
+      "recto": "Quelle est la nature du mouvement d'une particule chargée dans un champ uniforme quand sa vitesse initiale est nulle ou parallèle à $\\vec{E}$ ?",
+      "verso": "Rectiligne uniformément accéléré si la force est dans le sens de la vitesse, uniformément retardé dans le cas contraire.",
+      "difficulte": 2,
+      "tags": [
+        "nature-mouvement"
+      ]
+    },
+    {
+      "id": "PCTD-P08-020",
+      "lecon": "La déviation d'une particule : équations horaires et trajectoire parabolique",
+      "type": "formule",
+      "recto": "Une particule de charge $q$ entre en $O$ avec $\\vec{v}_0$ perpendiculaire au champ d'un condensateur ($U$, $d$) ; $\\vec{i}$ porté par $\\vec{v}_0$, $\\vec{j}$ dans le sens de la déviation. Quelles sont les composantes de l'accélération ?",
+      "verso": "$a_x = 0$ et $a_y = \\dfrac{\\lvert q \\rvert E}{m} = \\dfrac{\\lvert q \\rvert U}{md}$.",
+      "difficulte": 2,
+      "tags": [
+        "acceleration",
+        "projection"
+      ]
+    },
+    {
+      "id": "PCTD-P08-021",
+      "lecon": "La déviation d'une particule : équations horaires et trajectoire parabolique",
+      "type": "formule",
+      "recto": "Une particule entre en $O$ avec $\\vec{v}_0$ perpendiculaire au champ d'un condensateur ($U$, $d$) ; $\\vec{i}$ porté par $\\vec{v}_0$, $\\vec{j}$ dans le sens de la déviation. Quelles sont ses équations horaires de position ?",
+      "verso": "$x = v_0 t$ et $y = \\dfrac{1}{2}\\dfrac{\\lvert q \\rvert U}{md}\\,t^{2}$, avec $v_x = v_0$ et $v_y = \\dfrac{\\lvert q \\rvert U}{md}\\,t$.",
+      "difficulte": 2,
+      "tags": [
+        "equations-horaires"
+      ]
+    },
+    {
+      "id": "PCTD-P08-022",
+      "lecon": "La déviation d'une particule : équations horaires et trajectoire parabolique",
+      "type": "formule",
+      "recto": "Une particule de charge $q$ et de masse $m$ entre en $O$ avec $\\vec{v}_0$ perpendiculaire au champ d'un condensateur ($U$, $d$). Quelle est l'équation de sa trajectoire entre les plaques ?",
+      "verso": "$y = \\dfrac{\\lvert q \\rvert U}{2\\,m\\,d\\,v_0^{2}}\\,x^{2}$ : parabole de sommet $O$, tournée du côté de la déviation.",
+      "difficulte": 2,
+      "tags": [
+        "trajectoire",
+        "parabole"
+      ]
+    },
+    {
+      "id": "PCTD-P08-023",
+      "lecon": "La déviation d'une particule : équations horaires et trajectoire parabolique",
+      "type": "definition",
+      "recto": "Pourquoi la trajectoire d'une particule chargée entrant dans un champ électrique uniforme est-elle plane ?",
+      "verso": "L'accélération est colinéaire à $\\vec{E}$ : aucune force n'agit hors du plan défini par $\\vec{v}_0$ et $\\vec{E}$, donc la particule ne quitte jamais ce plan.",
+      "difficulte": 2,
+      "tags": [
+        "trajectoire-plane"
+      ]
+    },
+    {
+      "id": "PCTD-P08-024",
+      "lecon": "La déviation d'une particule : équations horaires et trajectoire parabolique",
+      "type": "formule",
+      "recto": "Pour une particule entrée en $O$ avec $\\vec{v}_0$ perpendiculaire au champ, entre des plaques de longueur $\\ell$, quelle est la déviation $y_1$ à la sortie ?",
+      "verso": "$y_1 = \\dfrac{\\lvert q \\rvert U\\,\\ell^{2}}{2\\,m\\,d\\,v_0^{2}}$, obtenue en faisant $x = \\ell$ dans l'équation de la trajectoire.",
+      "difficulte": 2,
+      "tags": [
+        "deviation-sortie"
+      ]
+    },
+    {
+      "id": "PCTD-P08-025",
+      "lecon": "La déviation d'une particule : équations horaires et trajectoire parabolique",
+      "type": "formule",
+      "recto": "Pour une particule entrée à mi-distance entre deux plaques d'écartement $d$, quelle est la condition de non-percussion ?",
+      "verso": "La déviation à la sortie doit vérifier $y_1 \\lt \\dfrac{d}{2}$.",
+      "difficulte": 1,
+      "tags": [
+        "non-percussion"
+      ]
+    },
+    {
+      "id": "PCTD-P08-026",
+      "lecon": "La déviation d'une particule : équations horaires et trajectoire parabolique",
+      "type": "definition",
+      "recto": "A quelle condition la trajectoire d'une particule chargée dans un champ électrique uniforme est-elle parabolique ?",
+      "verso": "Dès que la vitesse initiale $\\vec{v}_0$ n'est pas colinéaire à $\\vec{E}$ ; si elle est nulle ou parallèle à $\\vec{E}$, le mouvement est rectiligne.",
+      "difficulte": 3,
+      "tags": [
+        "nature-trajectoire"
+      ]
+    },
+    {
+      "id": "PCTD-P08-027",
+      "lecon": "La déviation d'une particule : équations horaires et trajectoire parabolique",
+      "type": "formule",
+      "recto": "Pour une entrée oblique sous l'angle $\\alpha$ avec $(Ox)$ perpendiculaire à $\\vec{E}$, quelle est l'équation de la trajectoire entre les plaques ?",
+      "verso": "$y = \\dfrac{a_y}{2\\,v_0^{2}\\cos^{2}\\alpha}\\,x^{2} + x\\tan\\alpha$, avec $a_y = \\pm\\dfrac{\\lvert q \\rvert E}{m}$ (signe $+$ si la force est dans le sens de $\\vec{j}$).",
+      "difficulte": 3,
+      "tags": [
+        "entree-oblique"
+      ]
+    },
+    {
+      "id": "PCTD-P08-028",
+      "lecon": "La déflexion électrique sur un écran, et ses applications",
+      "type": "definition",
+      "recto": "Quelle est la nature du mouvement d'une particule chargée après sa sortie des plaques d'un condensateur ?",
+      "verso": "Rectiligne uniforme : hors du champ, plus aucune force. La particule suit la tangente à la parabole au point de sortie $S$.",
+      "difficulte": 2,
+      "tags": [
+        "apres-plaques"
+      ]
+    },
+    {
+      "id": "PCTD-P08-029",
+      "lecon": "La déflexion électrique sur un écran, et ses applications",
+      "type": "definition",
+      "recto": "Où la tangente à la parabole au point de sortie des plaques coupe-t-elle l'axe $(Ox)$ ?",
+      "verso": "Au milieu du segment parcouru entre les plaques, au centre $O'$ des plaques : tout se passe comme si la particule partait en ligne droite de $O'$.",
+      "difficulte": 2,
+      "tags": [
+        "centre-plaques"
+      ]
+    },
+    {
+      "id": "PCTD-P08-030",
+      "lecon": "La déflexion électrique sur un écran, et ses applications",
+      "type": "formule",
+      "recto": "A la sortie des plaques de longueur $\\ell$, quelle relation donne l'angle $\\beta$ que fait la vitesse avec l'axe $(Ox)$ ?",
+      "verso": "$\\tan\\beta = \\dfrac{v_y}{v_0} = \\dfrac{2\\,y_1}{\\ell}$, $y_1$ étant la déviation à la sortie.",
+      "difficulte": 2,
+      "tags": [
+        "angle-sortie"
+      ]
+    },
+    {
+      "id": "PCTD-P08-031",
+      "lecon": "La déflexion électrique sur un écran, et ses applications",
+      "type": "formule",
+      "recto": "Pour un écran perpendiculaire à $(Ox)$ à la distance $D$ du centre des plaques, quelle est l'expression de la déflexion électrique $Y$ ?",
+      "verso": "$Y = D\\tan\\beta = \\dfrac{\\lvert q \\rvert\\,U\\,\\ell\\,D}{m\\,d\\,v_0^{2}}$.",
+      "difficulte": 2,
+      "tags": [
+        "deflexion"
+      ]
+    },
+    {
+      "id": "PCTD-P08-032",
+      "lecon": "La déflexion électrique sur un écran, et ses applications",
+      "type": "formule",
+      "recto": "Pour un faisceau accéléré sous la tension $U_0$ puis dévié par des plaques ($U$, $\\ell$, $d$), quelle est la déflexion $Y$ sur un écran à la distance $D$ du centre des plaques ?",
+      "verso": "$Y = \\dfrac{U\\,\\ell\\,D}{2\\,d\\,U_0}$, car $mv_0^{2} = 2\\lvert q \\rvert U_0$ ; elle ne contient ni la masse ni la charge.",
+      "difficulte": 2,
+      "tags": [
+        "deflexion",
+        "canon"
+      ]
+    },
+    {
+      "id": "PCTD-P08-033",
+      "lecon": "La déflexion électrique sur un écran, et ses applications",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on la sensibilité d'un tube à déviation électrique ?",
+      "verso": "Le quotient $\\dfrac{Y}{U}$ de la déflexion par la tension de déviation ; pour un faisceau issu d'un canon, $\\dfrac{Y}{U} = \\dfrac{\\ell\\,D}{2\\,d\\,U_0}$, en m/V.",
+      "difficulte": 2,
+      "tags": [
+        "sensibilite"
+      ]
+    },
+    {
+      "id": "PCTD-P08-034",
+      "lecon": "La déflexion électrique sur un écran, et ses applications",
+      "type": "definition",
+      "recto": "Pourquoi ne peut-on pas séparer deux isotopes par déviation électrique après un même canon ?",
+      "verso": "Pour un faisceau issu d'un canon, $Y = \\dfrac{U\\ell D}{2dU_0}$ ne contient ni $m$ ni $q$ : les deux isotopes arrivent au même point de l'écran.",
+      "difficulte": 3,
+      "tags": [
+        "isotopes",
+        "piege"
+      ]
+    },
+    {
+      "id": "PCTD-P08-035",
+      "lecon": "La déflexion électrique sur un écran, et ses applications",
+      "type": "definition",
+      "recto": "Quelle erreur guette l'élève qui mesure la distance $D$ de la déflexion depuis la sortie des plaques ?",
+      "verso": "$D$ se compte du centre des plaques à l'écran : depuis la sortie, il faut ajouter $\\dfrac{\\ell}{2}$ ; depuis l'entrée, retrancher $\\dfrac{\\ell}{2}$.",
+      "difficulte": 3,
+      "tags": [
+        "distance-ecran",
+        "piege"
+      ]
+    },
+    {
+      "id": "PCTD-P08-036",
+      "lecon": "La déflexion électrique sur un écran, et ses applications",
+      "type": "definition",
+      "recto": "Quelle trace laisse le spot sur l'écran quand la tension de déviation varie de $-U_m$ à $+U_m$ ?",
+      "verso": "Un segment de droite de longueur $2Y_m$, $Y_m$ étant la déflexion obtenue sous $U_m$.",
+      "difficulte": 1,
+      "tags": [
+        "tension-alternative"
+      ]
+    }
+  ]
+}

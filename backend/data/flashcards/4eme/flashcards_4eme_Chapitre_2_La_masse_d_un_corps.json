@@ -1,0 +1,422 @@
+{
+  "matiere": "Physique-Chimie",
+  "partie": "Physique",
+  "niveau": "4ème",
+  "chapitre": "Physique, Chapitre 2 : La masse d'un corps",
+  "source": "pc/4eme/Chapitre_2_La_masse_d_un_corps",
+  "nombre_cartes": 35,
+  "cartes": [
+    {
+      "id": "PC4E-P02-001",
+      "lecon": "La masse, une mesure de la quantité de matière",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on la masse d'un corps ?",
+      "verso": "C'est la quantité de matière contenue dans ce corps. C'est une grandeur physique notée $m$.",
+      "difficulte": 1,
+      "tags": [
+        "masse",
+        "definition"
+      ]
+    },
+    {
+      "id": "PC4E-P02-002",
+      "lecon": "La masse, une mesure de la quantité de matière",
+      "type": "formule",
+      "recto": "De quoi la masse d'un corps ne dépend-elle pas ?",
+      "verso": "Ni de sa forme, ni de sa position, ni du lieu où il se trouve : on dit que la masse est invariante.",
+      "difficulte": 2,
+      "tags": [
+        "invariance"
+      ]
+    },
+    {
+      "id": "PC4E-P02-003",
+      "lecon": "La masse, une mesure de la quantité de matière",
+      "type": "formule",
+      "recto": "Dans quel cas la masse d'un corps change-t-elle ?",
+      "verso": "Seulement si le corps gagne ou perd réellement de la matière, comme un sac de riz percé ou un linge mouillé qui sèche.",
+      "difficulte": 2,
+      "tags": [
+        "invariance",
+        "matiere"
+      ]
+    },
+    {
+      "id": "PC4E-P02-004",
+      "lecon": "La masse, une mesure de la quantité de matière",
+      "type": "definition",
+      "recto": "Quelle différence y a-t-il entre la masse et le volume d'un corps ?",
+      "verso": "La masse dit combien il y a de matière ; le volume dit quelle place cette matière occupe. Deux corps de même masse peuvent avoir des volumes très différents.",
+      "difficulte": 2,
+      "tags": [
+        "masse",
+        "volume"
+      ]
+    },
+    {
+      "id": "PC4E-P02-005",
+      "lecon": "La masse, une mesure de la quantité de matière",
+      "type": "definition",
+      "recto": "Pourquoi soupeser deux objets à la main n'est-il pas une mesure de leur masse ?",
+      "verso": "La sensation de la main ne donne ni unité, ni nombre, ni résultat reproductible : c'est une impression. Seule la balance mesure une masse.",
+      "difficulte": 2,
+      "tags": [
+        "mesure"
+      ]
+    },
+    {
+      "id": "PC4E-P02-006",
+      "lecon": "La masse, une mesure de la quantité de matière",
+      "type": "formule",
+      "recto": "A masse totale égale, comment la masse d'un élément varie-t-elle avec le nombre d'éléments ?",
+      "verso": "Plus il y a d'éléments, plus chaque élément est léger : masse d'un élément $=$ masse totale $\\div$ nombre d'éléments.",
+      "difficulte": 2,
+      "tags": [
+        "comparaison"
+      ]
+    },
+    {
+      "id": "PC4E-P02-007",
+      "lecon": "La masse, une mesure de la quantité de matière",
+      "type": "definition",
+      "recto": "Pourquoi un sac de mil de $50~\\mathrm{kg}$ pesé à Ouagadougou a-t-il encore une masse de $50~\\mathrm{kg}$ à Gorom-Gorom ?",
+      "verso": "Rien n'en est sorti pendant le voyage : la masse ne dépend pas du lieu.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "invariance"
+      ]
+    },
+    {
+      "id": "PC4E-P02-008",
+      "lecon": "La masse, une mesure de la quantité de matière",
+      "type": "definition",
+      "recto": "Pourquoi $1~\\mathrm{kg}$ de fer n'est-il pas plus lourd que $1~\\mathrm{kg}$ de coton ?",
+      "verso": "Les deux ont exactement la même masse, $1~\\mathrm{kg}$ ; ce qui diffère, c'est le volume occupé.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "masse",
+        "volume"
+      ]
+    },
+    {
+      "id": "PC4E-P02-009",
+      "lecon": "La masse, une mesure de la quantité de matière",
+      "type": "definition",
+      "recto": "En devoir de physique, quel mot faut-il employer à la place du « poids » d'un sac de riz du langage courant ?",
+      "verso": "Le mot masse : en physique, masse et poids sont deux grandeurs différentes, et la grandeur mesurée en kilogrammes est la masse.",
+      "difficulte": 2,
+      "tags": [
+        "masse",
+        "poids",
+        "vocabulaire"
+      ]
+    },
+    {
+      "id": "PC4E-P02-010",
+      "lecon": "L'unité de masse, ses multiples et ses sous-multiples",
+      "type": "definition",
+      "recto": "Quelle est l'unité légale de masse dans le Système international, avec son symbole ?",
+      "verso": "Le kilogramme, de symbole $\\mathrm{kg}$.",
+      "difficulte": 1,
+      "tags": [
+        "unite",
+        "kilogramme"
+      ]
+    },
+    {
+      "id": "PC4E-P02-011",
+      "lecon": "L'unité de masse, ses multiples et ses sous-multiples",
+      "type": "definition",
+      "recto": "Pourquoi le kilogramme est-il une unité à part dans le Système international ?",
+      "verso": "C'est la seule unité du Système international dont le nom porte déjà un préfixe : les autres unités de masse se construisent sur le gramme.",
+      "difficulte": 3,
+      "tags": [
+        "kilogramme"
+      ]
+    },
+    {
+      "id": "PC4E-P02-012",
+      "lecon": "L'unité de masse, ses multiples et ses sous-multiples",
+      "type": "formule",
+      "recto": "Combien de grammes valent $1~\\mathrm{kg}$ ?",
+      "verso": "$1~\\mathrm{kg} = 1\\,000~\\mathrm{g}$. Le gramme ($\\mathrm{g}$) est l'unité usuelle de travail.",
+      "difficulte": 1,
+      "tags": [
+        "conversion",
+        "gramme"
+      ]
+    },
+    {
+      "id": "PC4E-P02-013",
+      "lecon": "L'unité de masse, ses multiples et ses sous-multiples",
+      "type": "formule",
+      "recto": "Quelles relations lient le gramme au décigramme, au centigramme et au milligramme ?",
+      "verso": "$1~\\mathrm{g} = 10~\\mathrm{dg} = 100~\\mathrm{cg} = 1\\,000~\\mathrm{mg}$.",
+      "difficulte": 2,
+      "tags": [
+        "sous-multiples",
+        "conversion"
+      ]
+    },
+    {
+      "id": "PC4E-P02-014",
+      "lecon": "L'unité de masse, ses multiples et ses sous-multiples",
+      "type": "formule",
+      "recto": "Quelles relations lient le kilogramme à l'hectogramme, au décagramme et au gramme ?",
+      "verso": "$1~\\mathrm{kg} = 10~\\mathrm{hg} = 100~\\mathrm{dag} = 1\\,000~\\mathrm{g}$.",
+      "difficulte": 2,
+      "tags": [
+        "multiples",
+        "conversion"
+      ]
+    },
+    {
+      "id": "PC4E-P02-015",
+      "lecon": "L'unité de masse, ses multiples et ses sous-multiples",
+      "type": "formule",
+      "recto": "Combien de kilogrammes valent un quintal et une tonne ?",
+      "verso": "$1~\\mathrm{q} = 100~\\mathrm{kg}$ et $1~\\mathrm{t} = 1\\,000~\\mathrm{kg} = 10~\\mathrm{q}$.",
+      "difficulte": 1,
+      "tags": [
+        "quintal",
+        "tonne"
+      ]
+    },
+    {
+      "id": "PC4E-P02-016",
+      "lecon": "L'unité de masse, ses multiples et ses sous-multiples",
+      "type": "formule",
+      "recto": "Dans le tableau des masses du kilogramme au milligramme, quel facteur sépare deux colonnes voisines ?",
+      "verso": "Un facteur $10$ : chaque unité vaut dix fois celle qui la suit (deux colonnes : $100$ ; trois colonnes : $1\\,000$).",
+      "difficulte": 2,
+      "tags": [
+        "tableau-de-conversion"
+      ]
+    },
+    {
+      "id": "PC4E-P02-017",
+      "lecon": "L'unité de masse, ses multiples et ses sous-multiples",
+      "type": "formule",
+      "recto": "Pour convertir une masse vers une unité plus petite, quelle opération effectue-t-on sur le nombre ?",
+      "verso": "On multiplie : le nombre obtenu est plus grand. Vers une unité plus grande, on divise.",
+      "difficulte": 1,
+      "tags": [
+        "conversion"
+      ]
+    },
+    {
+      "id": "PC4E-P02-018",
+      "lecon": "L'unité de masse, ses multiples et ses sous-multiples",
+      "type": "definition",
+      "recto": "Pourquoi la tonne ne se place-t-elle pas juste à gauche du kilogramme dans le tableau de conversion ?",
+      "verso": "Parce que $1~\\mathrm{t} = 1\\,000~\\mathrm{kg}$ et non $10~\\mathrm{kg}$ (et $1~\\mathrm{q} = 100~\\mathrm{kg}$) : tonne et quintal se convertissent à part, en passant par le kilogramme.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "tonne",
+        "quintal"
+      ]
+    },
+    {
+      "id": "PC4E-P02-019",
+      "lecon": "L'unité de masse, ses multiples et ses sous-multiples",
+      "type": "definition",
+      "recto": "Quel est le statut du quintal et de la tonne par rapport au Système international ?",
+      "verso": "Ce ne sont pas des unités du Système international, mais elles sont admises pour les récoltes, les camions et les stocks.",
+      "difficulte": 2,
+      "tags": [
+        "quintal",
+        "tonne"
+      ]
+    },
+    {
+      "id": "PC4E-P02-020",
+      "lecon": "L'unité de masse, ses multiples et ses sous-multiples",
+      "type": "formule",
+      "recto": "Quelle règle d'écriture s'applique au symbole d'une unité de masse ?",
+      "verso": "On écrit la valeur, une espace, puis le symbole en minuscules, sans point et sans s : $5~\\mathrm{kg}$, jamais « 5 Kg » ni « 5 kgs ».",
+      "difficulte": 2,
+      "tags": [
+        "ecriture",
+        "symbole"
+      ]
+    },
+    {
+      "id": "PC4E-P02-021",
+      "lecon": "L'unité de masse, ses multiples et ses sous-multiples",
+      "type": "definition",
+      "recto": "Pourquoi $500~\\mathrm{mg}$ n'est-il pas plus grand que $4~\\mathrm{g}$, alors que $500$ est plus grand que $4$ ?",
+      "verso": "Il faut ramener les deux masses à la même unité : $500~\\mathrm{mg} = 0{,}5~\\mathrm{g}$, ce qui est moins que $4~\\mathrm{g}$.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "conversion"
+      ]
+    },
+    {
+      "id": "PC4E-P02-022",
+      "lecon": "La balance et la mesure d'une masse par pesée",
+      "type": "definition",
+      "recto": "Quel instrument mesure la masse d'un corps ?",
+      "verso": "La balance. L'opération de mesure s'appelle une pesée.",
+      "difficulte": 1,
+      "tags": [
+        "balance",
+        "pesee"
+      ]
+    },
+    {
+      "id": "PC4E-P02-023",
+      "lecon": "La balance et la mesure d'une masse par pesée",
+      "type": "definition",
+      "recto": "En quoi consiste la simple pesée avec une balance Roberval ?",
+      "verso": "On place le corps sur un plateau et on pose des masses marquées sur l'autre plateau jusqu'à l'équilibre : fléau horizontal et aiguille au zéro.",
+      "difficulte": 2,
+      "tags": [
+        "simple-pesee",
+        "roberval"
+      ]
+    },
+    {
+      "id": "PC4E-P02-024",
+      "lecon": "La balance et la mesure d'une masse par pesée",
+      "type": "formule",
+      "recto": "Selon le principe de la simple pesée, que vaut la masse du corps à l'équilibre ?",
+      "verso": "Elle est égale à la somme des masses marquées posées sur l'autre plateau : $m = m_1 + m_2 + m_3 + \\ldots$, à condition que le fléau soit horizontal.",
+      "difficulte": 2,
+      "tags": [
+        "simple-pesee",
+        "principe"
+      ]
+    },
+    {
+      "id": "PC4E-P02-025",
+      "lecon": "La balance et la mesure d'une masse par pesée",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on des masses marquées ?",
+      "verso": "Des objets dont la masse est connue avec précision, rangés dans une boîte et utilisés pour équilibrer une balance à plateaux.",
+      "difficulte": 1,
+      "tags": [
+        "masses-marquees"
+      ]
+    },
+    {
+      "id": "PC4E-P02-026",
+      "lecon": "La balance et la mesure d'une masse par pesée",
+      "type": "formule",
+      "recto": "Pourquoi saisit-on les masses marquées avec une pince plutôt qu'avec les doigts ?",
+      "verso": "Avec les doigts, la sueur et la poussière finiraient par les alourdir et fausser les pesées.",
+      "difficulte": 2,
+      "tags": [
+        "masses-marquees",
+        "precaution"
+      ]
+    },
+    {
+      "id": "PC4E-P02-027",
+      "lecon": "La balance et la mesure d'une masse par pesée",
+      "type": "formule",
+      "recto": "Que faut-il vérifier sur une balance avant toute pesée ?",
+      "verso": "Qu'elle est posée sur un support horizontal et que l'aiguille (ou l'affichage) indique zéro quand les plateaux sont vides.",
+      "difficulte": 2,
+      "tags": [
+        "precaution",
+        "zero"
+      ]
+    },
+    {
+      "id": "PC4E-P02-028",
+      "lecon": "La balance et la mesure d'une masse par pesée",
+      "type": "formule",
+      "recto": "Dans une simple pesée à la Roberval, dans quel ordre pose-t-on les masses marquées ?",
+      "verso": "De la plus grande à la plus petite, en retirant chaque fois celle qui fait basculer le fléau de son côté, car elle est trop lourde.",
+      "difficulte": 2,
+      "tags": [
+        "simple-pesee"
+      ]
+    },
+    {
+      "id": "PC4E-P02-029",
+      "lecon": "La balance et la mesure d'une masse par pesée",
+      "type": "definition",
+      "recto": "Pourquoi une balance Roberval donne-t-elle la même masse en classe et en haut d'une colline ?",
+      "verso": "Elle compare le corps à des masses marquées placées au même endroit, dans les mêmes conditions : l'équilibre s'obtient avec les mêmes masses partout.",
+      "difficulte": 3,
+      "tags": [
+        "roberval",
+        "invariance"
+      ]
+    },
+    {
+      "id": "PC4E-P02-030",
+      "lecon": "La balance et la mesure d'une masse par pesée",
+      "type": "definition",
+      "recto": "Quelles sont les principales parties d'une balance Roberval ?",
+      "verso": "Un socle, une colonne, un fléau qui bascule autour d'un axe central, deux plateaux, une aiguille devant un repère et une vis de réglage du zéro.",
+      "difficulte": 2,
+      "tags": [
+        "roberval"
+      ]
+    },
+    {
+      "id": "PC4E-P02-031",
+      "lecon": "La balance et la mesure d'une masse par pesée",
+      "type": "definition",
+      "recto": "Sur une balance électronique, à quoi sert la touche tare ?",
+      "verso": "Elle remet l'affichage à zéro avec un récipient vide posé sur le plateau : on lit ensuite directement la masse du contenu seul.",
+      "difficulte": 2,
+      "tags": [
+        "balance-electronique",
+        "tare"
+      ]
+    },
+    {
+      "id": "PC4E-P02-032",
+      "lecon": "La balance et la mesure d'une masse par pesée",
+      "type": "formule",
+      "recto": "Quelle relation donne la masse $m$ d'un liquide à partir des pesées du récipient vide ($m_1$) et plein ($m_2$) ?",
+      "verso": "$m = m_2 - m_1$, les deux pesées étant faites avec la même balance et exprimées dans la même unité.",
+      "difficulte": 2,
+      "tags": [
+        "masse-du-contenu"
+      ]
+    },
+    {
+      "id": "PC4E-P02-033",
+      "lecon": "La balance et la mesure d'une masse par pesée",
+      "type": "definition",
+      "recto": "Sur un emballage, que signifie l'indication « $1~\\mathrm{kg}$ net » ?",
+      "verso": "La masse indiquée est celle du produit seul, sans l'emballage.",
+      "difficulte": 1,
+      "tags": [
+        "masse-nette"
+      ]
+    },
+    {
+      "id": "PC4E-P02-034",
+      "lecon": "La balance et la mesure d'une masse par pesée",
+      "type": "definition",
+      "recto": "Quelle balance sert à peser les camions ?",
+      "verso": "Le pont-bascule, qui pèse plusieurs dizaines de tonnes.",
+      "difficulte": 1,
+      "tags": [
+        "pont-bascule",
+        "types-de-balances"
+      ]
+    },
+    {
+      "id": "PC4E-P02-035",
+      "lecon": "La balance et la mesure d'une masse par pesée",
+      "type": "definition",
+      "recto": "Pourquoi l'indication d'une balance sur laquelle on pèse de la farine dans un bol n'est-elle pas la masse de la farine ?",
+      "verso": "La balance indique la masse de tout ce que porte le plateau, bol compris : il faut retrancher la masse du bol vide.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "masse-du-contenu"
+      ]
+    }
+  ]
+}

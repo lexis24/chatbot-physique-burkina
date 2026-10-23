@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react"
 import { ShieldCheck } from "lucide-react"
 import { getConsent } from "../api.js"
-import MathContent from "./MathContent.jsx"
+import RichContent from "./RichContent.jsx"
 
 /**
  * Texte de consentement + case à cocher. Réutilisé à l'inscription (AuthGate, étape 2) et à la
@@ -39,7 +39,7 @@ export default function ConsentNotice({ checked, onCheckedChange, error }) {
           <p className="text-error">Impossible de charger le texte de consentement pour le moment. Réessaie.</p>
         )}
         {!loadError && !consent && <p className="text-base-content/50">Chargement…</p>}
-        {consent && <MathContent>{consent.text}</MathContent>}
+        {consent && <RichContent>{consent.text}</RichContent>}
       </div>
 
       <label className="flex cursor-pointer items-start gap-2.5 text-sm">

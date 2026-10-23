@@ -1,0 +1,429 @@
+{
+  "matiere": "Physique-Chimie",
+  "partie": "Physique",
+  "niveau": "2nde C",
+  "chapitre": "Physique, Chapitre 1 : La notion de mouvement",
+  "source": "pc/2ndc/Chapitre_1_La_notion_de_mouvement",
+  "nombre_cartes": 36,
+  "cartes": [
+    {
+      "id": "PC2C-P01-001",
+      "lecon": "Mouvement, référentiel et repérage d'un point mobile",
+      "type": "definition",
+      "recto": "En cinématique, qu'appelle-t-on le système ?",
+      "verso": "C'est le corps dont on étudie le mouvement, réduit à un point mobile noté $M$ (ou point matériel).",
+      "difficulte": 1,
+      "tags": [
+        "systeme",
+        "point-mobile"
+      ]
+    },
+    {
+      "id": "PC2C-P01-002",
+      "lecon": "Mouvement, référentiel et repérage d'un point mobile",
+      "type": "definition",
+      "recto": "En cinématique, qu'appelle-t-on un référentiel ?",
+      "verso": "C'est un solide de référence auquel on associe un repère d'espace et un repère de temps ; c'est par rapport à lui que l'on décrit le mouvement.",
+      "difficulte": 1,
+      "tags": [
+        "referentiel"
+      ]
+    },
+    {
+      "id": "PC2C-P01-003",
+      "lecon": "Mouvement, référentiel et repérage d'un point mobile",
+      "type": "definition",
+      "recto": "De quoi est constitué un repère d'espace ?",
+      "verso": "D'une origine $O$ fixe dans le référentiel, munie d'un, de deux ou de trois axes gradués portant les vecteurs unitaires $\\vec{i}$, $\\vec{j}$, $\\vec{k}$ ; il donne la position par des coordonnées.",
+      "difficulte": 2,
+      "tags": [
+        "repere-espace"
+      ]
+    },
+    {
+      "id": "PC2C-P01-004",
+      "lecon": "Mouvement, référentiel et repérage d'un point mobile",
+      "type": "definition",
+      "recto": "En cinématique, quelle différence y a-t-il entre une date et une durée ?",
+      "verso": "La date $t$ est l'instant d'un événement, compté depuis l'origine des temps : elle dépend de cette origine. La durée $\\Delta t = t_2 - t_1$ sépare deux dates et n'en dépend pas.",
+      "difficulte": 2,
+      "tags": [
+        "date",
+        "duree"
+      ]
+    },
+    {
+      "id": "PC2C-P01-005",
+      "lecon": "Mouvement, référentiel et repérage d'un point mobile",
+      "type": "definition",
+      "recto": "A quelle condition un point est-il en mouvement dans un référentiel donné ?",
+      "verso": "Il est en mouvement si ses coordonnées dans ce référentiel varient au cours du temps, au repos si elles restent constantes.",
+      "difficulte": 1,
+      "tags": [
+        "mouvement",
+        "repos"
+      ]
+    },
+    {
+      "id": "PC2C-P01-006",
+      "lecon": "Mouvement, référentiel et repérage d'un point mobile",
+      "type": "definition",
+      "recto": "Pourquoi un mouvement n'est-il défini que si l'on précise le référentiel ?",
+      "verso": "Parce que la nature du mouvement, et même la forme de la trajectoire, dépendent du référentiel : un sac posé sur les genoux d'un passager est au repos dans le référentiel de l'autocar et en mouvement dans le référentiel terrestre.",
+      "difficulte": 2,
+      "tags": [
+        "relativite-mouvement"
+      ]
+    },
+    {
+      "id": "PC2C-P01-007",
+      "lecon": "Mouvement, référentiel et repérage d'un point mobile",
+      "type": "formule",
+      "recto": "Dans un repère orthonormé du plan, comment s'écrit le vecteur position $\\overrightarrow{OM}$ d'un point $M(x\\,;\\,y)$ et quelle est sa norme ?",
+      "verso": "$\\overrightarrow{OM} = x\\,\\vec{i} + y\\,\\vec{j}$, de norme $OM = \\sqrt{x^2 + y^2}$ (distance de $O$ à $M$).",
+      "difficulte": 1,
+      "tags": [
+        "vecteur-position",
+        "norme"
+      ]
+    },
+    {
+      "id": "PC2C-P01-008",
+      "lecon": "Mouvement, référentiel et repérage d'un point mobile",
+      "type": "formule",
+      "recto": "En coordonnées polaires $M(r\\,;\\,\\theta)$, quelles relations donnent les coordonnées cartésiennes $x$ et $y$ ?",
+      "verso": "$x = r\\cos\\theta$ et $y = r\\sin\\theta$, avec $r = OM \\geqslant 0$ le rayon polaire et $\\theta$ l'angle polaire mesuré depuis l'axe des abscisses.",
+      "difficulte": 2,
+      "tags": [
+        "coordonnees-polaires"
+      ]
+    },
+    {
+      "id": "PC2C-P01-009",
+      "lecon": "Mouvement, référentiel et repérage d'un point mobile",
+      "type": "formule",
+      "recto": "Quelles relations permettent de passer des coordonnées cartésiennes $(x\\,;\\,y)$ aux coordonnées polaires $(r\\,;\\,\\theta)$ ?",
+      "verso": "$r = \\sqrt{x^2 + y^2}$ et $\\tan\\theta = \\dfrac{y}{x}$, l'angle $\\theta$ étant choisi dans le quadrant où se trouve le point.",
+      "difficulte": 3,
+      "tags": [
+        "coordonnees-polaires",
+        "quadrant"
+      ]
+    },
+    {
+      "id": "PC2C-P01-010",
+      "lecon": "Mouvement, référentiel et repérage d'un point mobile",
+      "type": "definition",
+      "recto": "Pour un point mobile, qu'appelle-t-on les équations horaires ?",
+      "verso": "Ce sont les fonctions $x(t)$, $y(t)$, $z(t)$ qui donnent ses coordonnées à chaque date ; on les appelle aussi équations paramétriques, le paramètre étant la date $t$.",
+      "difficulte": 1,
+      "tags": [
+        "equations-horaires"
+      ]
+    },
+    {
+      "id": "PC2C-P01-011",
+      "lecon": "Mouvement, référentiel et repérage d'un point mobile",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on la trajectoire d'un point mobile ?",
+      "verso": "C'est l'ensemble des positions successives occupées par le point mobile dans le référentiel choisi.",
+      "difficulte": 1,
+      "tags": [
+        "trajectoire"
+      ]
+    },
+    {
+      "id": "PC2C-P01-012",
+      "lecon": "Mouvement, référentiel et repérage d'un point mobile",
+      "type": "formule",
+      "recto": "Comment obtient-on l'équation cartésienne de la trajectoire d'un mobile à partir de ses équations horaires ?",
+      "verso": "On isole $t$ dans l'une des équations horaires et on reporte son expression dans l'autre : on élimine la date $t$, il reste une relation entre $x$ et $y$.",
+      "difficulte": 2,
+      "tags": [
+        "equation-cartesienne"
+      ]
+    },
+    {
+      "id": "PC2C-P01-013",
+      "lecon": "Mouvement, référentiel et repérage d'un point mobile",
+      "type": "definition",
+      "recto": "Selon la forme de la trajectoire, quand dit-on qu'un mouvement est rectiligne, circulaire ou curviligne ?",
+      "verso": "Rectiligne si la trajectoire est une droite, circulaire si c'est un cercle ou un arc de cercle, curviligne si c'est une courbe quelconque.",
+      "difficulte": 1,
+      "tags": [
+        "nature-trajectoire"
+      ]
+    },
+    {
+      "id": "PC2C-P01-014",
+      "lecon": "Mouvement, référentiel et repérage d'un point mobile",
+      "type": "definition",
+      "recto": "Pourquoi un graphique donnant $x$ en fonction de $t$ n'est-il pas la trajectoire du mobile ?",
+      "verso": "C'est un graphique horaire, qui porte le temps en abscisse ; la trajectoire est la ligne suivie dans l'espace par le mobile.",
+      "difficulte": 3,
+      "tags": [
+        "graphique-horaire",
+        "trajectoire",
+        "piege"
+      ]
+    },
+    {
+      "id": "PC2C-P01-015",
+      "lecon": "Le vecteur vitesse",
+      "type": "formule",
+      "recto": "Quelle relation définit la vitesse moyenne d'un mobile et en quelle unité légale s'exprime-t-elle ?",
+      "verso": "$v_{\\mathrm{moy}} = \\dfrac{d}{\\Delta t}$, avec $d$ la longueur du chemin parcouru (l'arc sur une courbe) et $\\Delta t$ la durée du parcours ; elle s'exprime en mètres par seconde ($\\mathrm{m/s}$).",
+      "difficulte": 1,
+      "tags": [
+        "vitesse-moyenne"
+      ]
+    },
+    {
+      "id": "PC2C-P01-016",
+      "lecon": "Le vecteur vitesse",
+      "type": "formule",
+      "recto": "Quelle est la relation de conversion entre le mètre par seconde et le kilomètre par heure ?",
+      "verso": "$1~\\mathrm{m/s} = 3{,}6~\\mathrm{km/h}$ : on multiplie par $3{,}6$ pour passer des $\\mathrm{m/s}$ aux $\\mathrm{km/h}$ (et non par $3\\,600$).",
+      "difficulte": 2,
+      "tags": [
+        "conversion",
+        "unites-vitesse"
+      ]
+    },
+    {
+      "id": "PC2C-P01-017",
+      "lecon": "Le vecteur vitesse",
+      "type": "formule",
+      "recto": "Entre les positions $M_1$ et $M_2$ occupées aux dates $t_1$ et $t_2$, comment s'écrit le vecteur vitesse moyenne ?",
+      "verso": "$\\vec{v}_{\\mathrm{moy}} = \\dfrac{\\overrightarrow{M_1M_2}}{t_2 - t_1}$, de coordonnées $v_x = \\dfrac{x_2 - x_1}{\\Delta t}$ et $v_y = \\dfrac{y_2 - y_1}{\\Delta t}$, de norme $\\sqrt{v_x^2 + v_y^2}$.",
+      "difficulte": 2,
+      "tags": [
+        "vecteur-vitesse-moyenne"
+      ]
+    },
+    {
+      "id": "PC2C-P01-018",
+      "lecon": "Le vecteur vitesse",
+      "type": "formule",
+      "recto": "Sur un enregistrement d'intervalle de tirage $\\tau$, quelle relation donne la vitesse instantanée au point $M_i$ ?",
+      "verso": "$v_i = \\dfrac{M_{i-1}M_{i+1}}{2\\tau}$ : la durée entre $M_{i-1}$ et $M_{i+1}$ vaut deux intervalles. Le calcul n'est possible qu'en un point ayant un voisin de chaque côté, jamais en un point extrême.",
+      "difficulte": 3,
+      "tags": [
+        "vitesse-instantanee",
+        "enregistrement",
+        "piege"
+      ]
+    },
+    {
+      "id": "PC2C-P01-019",
+      "lecon": "Le vecteur vitesse",
+      "type": "definition",
+      "recto": "Quelles sont les quatre caractéristiques du vecteur vitesse $\\vec{v}_i$ d'un mobile au point $M_i$ ?",
+      "verso": "Origine : la position $M_i$ ; direction : la tangente à la trajectoire en ce point ; sens : celui du mouvement ; norme : la valeur $v_i$, tracée à une échelle indiquée.",
+      "difficulte": 2,
+      "tags": [
+        "vecteur-vitesse",
+        "caracteristiques"
+      ]
+    },
+    {
+      "id": "PC2C-P01-020",
+      "lecon": "Le vecteur vitesse",
+      "type": "definition",
+      "recto": "Pourquoi l'écriture « $\\vec{v} = 12~\\mathrm{m/s}$ » est-elle fausse ?",
+      "verso": "Un vecteur n'est pas un nombre : il porte une origine, une direction, un sens et une norme. On écrit $v = 12~\\mathrm{m/s}$ pour la valeur et l'on trace la flèche à l'échelle.",
+      "difficulte": 3,
+      "tags": [
+        "notation-vecteur",
+        "piege"
+      ]
+    },
+    {
+      "id": "PC2C-P01-021",
+      "lecon": "Le vecteur vitesse",
+      "type": "definition",
+      "recto": "Quand dit-on qu'un mouvement est uniforme, accéléré ou retardé ?",
+      "verso": "Uniforme si la valeur de la vitesse reste constante, quelle que soit la forme de la trajectoire ; accéléré si elle augmente ; retardé si elle diminue.",
+      "difficulte": 2,
+      "tags": [
+        "uniforme",
+        "accelere",
+        "retarde"
+      ]
+    },
+    {
+      "id": "PC2C-P01-022",
+      "lecon": "Le vecteur vitesse",
+      "type": "formule",
+      "recto": "Pour un point $M$ mobile dans un référentiel $R'$ lui-même en translation par rapport à un référentiel $R$, comment s'énonce la loi de composition des vitesses ?",
+      "verso": "$\\vec{v}_{(M/R)} = \\vec{v}_{(M/R')} + \\vec{v}_{(R'/R)}$. Si les trois vecteurs ont la même direction, on l'écrit avec les vitesses algébriques sur un axe orienté.",
+      "difficulte": 2,
+      "tags": [
+        "composition-vitesses"
+      ]
+    },
+    {
+      "id": "PC2C-P01-023",
+      "lecon": "Les mouvements rectilignes",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on un mouvement rectiligne uniforme ?",
+      "verso": "C'est un mouvement rectiligne dont le vecteur vitesse est constant : sa direction, son sens et sa valeur ne changent pas.",
+      "difficulte": 1,
+      "tags": [
+        "mru"
+      ]
+    },
+    {
+      "id": "PC2C-P01-024",
+      "lecon": "Les mouvements rectilignes",
+      "type": "formule",
+      "recto": "Quelle est l'équation horaire d'un mouvement rectiligne uniforme ?",
+      "verso": "$x(t) = v\\,t + x_0$, avec $v$ la vitesse algébrique en $\\mathrm{m/s}$ et $x_0$ l'abscisse en mètres à la date $t = 0$. Si le mobile est en $x_1$ à la date $t_1$ : $x(t) = v\\,(t - t_1) + x_1$.",
+      "difficulte": 2,
+      "tags": [
+        "mru",
+        "equation-horaire"
+      ]
+    },
+    {
+      "id": "PC2C-P01-025",
+      "lecon": "Les mouvements rectilignes",
+      "type": "formule",
+      "recto": "Quelle relation définit l'accélération d'un mobile en mouvement rectiligne et quelle est son unité ?",
+      "verso": "$a = \\dfrac{\\Delta v}{\\Delta t} = \\dfrac{v_2 - v_1}{t_2 - t_1}$, en mètres par seconde carrée ($\\mathrm{m/s^2}$).",
+      "difficulte": 1,
+      "tags": [
+        "acceleration"
+      ]
+    },
+    {
+      "id": "PC2C-P01-026",
+      "lecon": "Les mouvements rectilignes",
+      "type": "formule",
+      "recto": "Pour un mouvement rectiligne uniformément varié, quelle relation donne la vitesse en fonction de la date ?",
+      "verso": "$v(t) = a\\,t + v_0$, l'accélération $a$ étant constante et $v_0$ la vitesse à la date $t = 0$.",
+      "difficulte": 2,
+      "tags": [
+        "mruv"
+      ]
+    },
+    {
+      "id": "PC2C-P01-027",
+      "lecon": "Les mouvements rectilignes",
+      "type": "formule",
+      "recto": "Pour un mouvement rectiligne uniformément varié, à quelle condition sur les signes de $a$ et de $v$ est-il accéléré ou retardé ?",
+      "verso": "Uniformément accéléré si $a$ et $v$ sont de même signe ; uniformément retardé si $a$ et $v$ sont de signes contraires. Une accélération négative seule ne signifie donc pas un freinage.",
+      "difficulte": 3,
+      "tags": [
+        "mruv",
+        "signes",
+        "piege"
+      ]
+    },
+    {
+      "id": "PC2C-P01-028",
+      "lecon": "Les mouvements rectilignes",
+      "type": "definition",
+      "recto": "Pour un mouvement rectiligne uniforme, quelle est l'allure des graphiques $x(t)$ et $v(t)$ ?",
+      "verso": "$x(t)$ est une droite de pente $v$ et d'ordonnée à l'origine $x_0$ ; $v(t)$ est une droite horizontale. Pour un MRUV, $v(t)$ est une droite de pente $a$.",
+      "difficulte": 2,
+      "tags": [
+        "graphique-horaire"
+      ]
+    },
+    {
+      "id": "PC2C-P01-029",
+      "lecon": "Les mouvements rectilignes",
+      "type": "formule",
+      "recto": "Pour deux mobiles en mouvement rectiligne d'abscisses $x_1(t)$ et $x_2(t)$, quelle condition traduit leur rencontre ?",
+      "verso": "$x_1(t) = x_2(t)$, les deux équations étant écrites dans le même repère et avec la même origine des dates ; leur distance vaut $d = \\lvert x_2 - x_1 \\rvert$.",
+      "difficulte": 2,
+      "tags": [
+        "rencontre",
+        "deux-mobiles"
+      ]
+    },
+    {
+      "id": "PC2C-P01-030",
+      "lecon": "Le mouvement circulaire et les mouvements d'un solide",
+      "type": "formule",
+      "recto": "Sur un cercle de rayon $R$, quelle relation lie l'abscisse curviligne $s$ et l'abscisse angulaire $\\alpha$ ?",
+      "verso": "$s = R\\,\\alpha$, avec $s$ et $R$ en mètres et l'angle $\\alpha$ obligatoirement en radians.",
+      "difficulte": 2,
+      "tags": [
+        "abscisse-curviligne",
+        "radian"
+      ]
+    },
+    {
+      "id": "PC2C-P01-031",
+      "lecon": "Le mouvement circulaire et les mouvements d'un solide",
+      "type": "formule",
+      "recto": "Pour un mouvement circulaire de rayon $R$, quelle relation lie la vitesse linéaire $v$ et la vitesse angulaire $\\omega$ ?",
+      "verso": "$v = R\\,\\omega$, avec $v$ en $\\mathrm{m/s}$, $R$ en mètres et $\\omega = \\dfrac{\\Delta\\alpha}{\\Delta t}$ en radians par seconde ($\\mathrm{rad/s}$).",
+      "difficulte": 2,
+      "tags": [
+        "vitesse-angulaire"
+      ]
+    },
+    {
+      "id": "PC2C-P01-032",
+      "lecon": "Le mouvement circulaire et les mouvements d'un solide",
+      "type": "formule",
+      "recto": "Pour une rotation, quelles relations lient la période $T$, la fréquence $N$ et la vitesse angulaire $\\omega$ ?",
+      "verso": "$T = \\dfrac{1}{N}$ et $\\omega = \\dfrac{2\\pi}{T} = 2\\pi N$, avec $T$ en secondes, $N$ en hertz ($\\mathrm{Hz}$, tours par seconde) et $\\omega$ en $\\mathrm{rad/s}$.",
+      "difficulte": 2,
+      "tags": [
+        "periode",
+        "frequence"
+      ]
+    },
+    {
+      "id": "PC2C-P01-033",
+      "lecon": "Le mouvement circulaire et les mouvements d'un solide",
+      "type": "formule",
+      "recto": "Comment convertit-on un angle de degrés en radians ?",
+      "verso": "$\\alpha_{\\mathrm{rad}} = \\alpha_{\\mathrm{deg}} \\times \\dfrac{\\pi}{180}$, puisqu'un tour vaut $360°$ et $2\\pi$ radians.",
+      "difficulte": 1,
+      "tags": [
+        "conversion",
+        "radian"
+      ]
+    },
+    {
+      "id": "PC2C-P01-034",
+      "lecon": "Le mouvement circulaire et les mouvements d'un solide",
+      "type": "definition",
+      "recto": "Dans un mouvement circulaire uniforme, pourquoi le vecteur vitesse n'est-il pas constant ?",
+      "verso": "Seule sa norme est constante : sa direction, tangente au cercle (donc perpendiculaire au rayon $OM$), change à chaque instant.",
+      "difficulte": 3,
+      "tags": [
+        "mcu",
+        "piege"
+      ]
+    },
+    {
+      "id": "PC2C-P01-035",
+      "lecon": "Le mouvement circulaire et les mouvements d'un solide",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on un solide en translation ?",
+      "verso": "Un solide dont tout segment garde une direction fixe : tous ses points ont le même vecteur vitesse et des trajectoires superposables. La translation peut être rectiligne ou circulaire (nacelle d'une grande roue).",
+      "difficulte": 2,
+      "tags": [
+        "translation"
+      ]
+    },
+    {
+      "id": "PC2C-P01-036",
+      "lecon": "Le mouvement circulaire et les mouvements d'un solide",
+      "type": "definition",
+      "recto": "Pour un solide en rotation autour d'un axe fixe, comment se comparent les vitesses de ses différents points ?",
+      "verso": "Tous les points hors de l'axe décrivent des cercles centrés sur l'axe avec la même vitesse angulaire $\\omega$, mais leurs vitesses $v = R\\omega$ sont d'autant plus grandes qu'ils sont loin de l'axe.",
+      "difficulte": 3,
+      "tags": [
+        "rotation",
+        "vitesse-angulaire"
+      ]
+    }
+  ]
+}

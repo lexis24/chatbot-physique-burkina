@@ -1,0 +1,472 @@
+{
+  "matiere": "Physique-Chimie",
+  "partie": "Physique",
+  "niveau": "4ème",
+  "chapitre": "Physique, Chapitre 15 : Le courant électrique et ses dangers",
+  "source": "pc/4eme/Chapitre_15_Le_courant_electrique_et_ses_dangers",
+  "nombre_cartes": 39,
+  "cartes": [
+    {
+      "id": "PC4E-P15-001",
+      "lecon": "Le court-circuit",
+      "type": "definition",
+      "recto": "Dans un circuit électrique, qu'appelle-t-on un court-circuit ?",
+      "verso": "Il y a court-circuit lorsque deux points du circuit sont reliés par un conducteur offrant au courant un chemin sans récepteur.",
+      "difficulte": 1,
+      "tags": [
+        "court-circuit",
+        "definition"
+      ]
+    },
+    {
+      "id": "PC4E-P15-002",
+      "lecon": "Le court-circuit",
+      "type": "definition",
+      "recto": "Quand dit-on qu'un appareil est court-circuité ?",
+      "verso": "Lorsqu'un fil relie directement ses deux bornes.",
+      "difficulte": 1,
+      "tags": [
+        "court-circuit",
+        "vocabulaire"
+      ]
+    },
+    {
+      "id": "PC4E-P15-003",
+      "lecon": "Le court-circuit",
+      "type": "definition",
+      "recto": "Dans un circuit en série, que deviennent une lampe court-circuitée et les autres lampes ?",
+      "verso": "La lampe court-circuitée s'éteint ; le circuit reste fermé et les autres lampes reçoivent une tension plus grande : elles brillent plus fort et risquent de griller.",
+      "difficulte": 2,
+      "tags": [
+        "court-circuit",
+        "serie"
+      ]
+    },
+    {
+      "id": "PC4E-P15-004",
+      "lecon": "Le court-circuit",
+      "type": "definition",
+      "recto": "Quel courant circule lors d'un court-circuit du générateur ?",
+      "verso": "Un courant très intense : ce court-circuit ne doit jamais être réalisé.",
+      "difficulte": 1,
+      "tags": [
+        "court-circuit",
+        "generateur"
+      ]
+    },
+    {
+      "id": "PC4E-P15-005",
+      "lecon": "Le court-circuit",
+      "type": "definition",
+      "recto": "Quelles sont les conséquences d'un court-circuit qui se prolonge ?",
+      "verso": "Un échauffement violent des conducteurs, la fusion des gaines isolantes, la destruction de l'appareil et un début d'incendie.",
+      "difficulte": 2,
+      "tags": [
+        "court-circuit",
+        "consequences"
+      ]
+    },
+    {
+      "id": "PC4E-P15-006",
+      "lecon": "Le court-circuit",
+      "type": "formule",
+      "recto": "Sur un schéma, à quoi reconnaît-on qu'un récepteur est court-circuité ?",
+      "verso": "Il existe entre ses deux bornes un chemin fait uniquement de fils.",
+      "difficulte": 2,
+      "tags": [
+        "court-circuit",
+        "schema"
+      ]
+    },
+    {
+      "id": "PC4E-P15-007",
+      "lecon": "Le court-circuit",
+      "type": "definition",
+      "recto": "Dans un circuit en série, quelle différence observe-t-on entre une lampe court-circuitée et une lampe dévissée ?",
+      "verso": "Court-circuitée, elle s'éteint mais le circuit reste fermé : les autres brillent plus fort. Dévissée, elle ouvre le circuit : toutes les lampes s'éteignent.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "court-circuit"
+      ]
+    },
+    {
+      "id": "PC4E-P15-008",
+      "lecon": "La protection des installations : fusible, disjoncteur et prise de terre",
+      "type": "definition",
+      "recto": "Quel est le rôle de la gaine isolante qui entoure un fil de cuivre ?",
+      "verso": "Elle empêche deux fils de se toucher, donc le court-circuit, et protège la main qui les touche. Une gaine fendue ou fondue est un danger.",
+      "difficulte": 1,
+      "tags": [
+        "isolation",
+        "gaine"
+      ]
+    },
+    {
+      "id": "PC4E-P15-009",
+      "lecon": "La protection des installations : fusible, disjoncteur et prise de terre",
+      "type": "definition",
+      "recto": "Dans une installation électrique, qu'appelle-t-on une surcharge ?",
+      "verso": "Trop d'appareils sont alimentés par le même fil : il est traversé par un courant plus intense que prévu et s'échauffe dangereusement, sans qu'il y ait court-circuit.",
+      "difficulte": 2,
+      "tags": [
+        "surcharge",
+        "definition"
+      ]
+    },
+    {
+      "id": "PC4E-P15-010",
+      "lecon": "La protection des installations : fusible, disjoncteur et prise de terre",
+      "type": "definition",
+      "recto": "Quels appareils provoquent le plus souvent une surcharge ?",
+      "verso": "Les appareils chauffants : fer à repasser, bouilloire, réchaud.",
+      "difficulte": 1,
+      "tags": [
+        "surcharge",
+        "appareils-chauffants"
+      ]
+    },
+    {
+      "id": "PC4E-P15-011",
+      "lecon": "La protection des installations : fusible, disjoncteur et prise de terre",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on un coupe-circuit dans une installation électrique ?",
+      "verso": "Un dispositif qui coupe le courant quand il devient trop intense, comme le fusible et le disjoncteur.",
+      "difficulte": 1,
+      "tags": [
+        "coupe-circuit"
+      ]
+    },
+    {
+      "id": "PC4E-P15-012",
+      "lecon": "La protection des installations : fusible, disjoncteur et prise de terre",
+      "type": "definition",
+      "recto": "Comment un fusible protège-t-il un circuit ?",
+      "verso": "C'est un fil fin placé en série ; dès que le courant devient trop intense (court-circuit ou surcharge), il fond et ouvre le circuit.",
+      "difficulte": 2,
+      "tags": [
+        "fusible",
+        "role"
+      ]
+    },
+    {
+      "id": "PC4E-P15-013",
+      "lecon": "La protection des installations : fusible, disjoncteur et prise de terre",
+      "type": "definition",
+      "recto": "Que représente le calibre indiqué sur la cartouche d'un fusible ?",
+      "verso": "Le courant que le fusible supporte sans fondre.",
+      "difficulte": 2,
+      "tags": [
+        "fusible",
+        "calibre"
+      ]
+    },
+    {
+      "id": "PC4E-P15-014",
+      "lecon": "La protection des installations : fusible, disjoncteur et prise de terre",
+      "type": "formule",
+      "recto": "Par quoi remplace-t-on un fusible fondu ?",
+      "verso": "Par un fusible de même calibre, après avoir cherché et supprimé la cause, jamais par du fil de fer, du cuivre ou du papier d'aluminium.",
+      "difficulte": 2,
+      "tags": [
+        "fusible",
+        "remplacement"
+      ]
+    },
+    {
+      "id": "PC4E-P15-015",
+      "lecon": "La protection des installations : fusible, disjoncteur et prise de terre",
+      "type": "definition",
+      "recto": "Pourquoi un fusible remplacé par du fil de fer ne protège-t-il plus le circuit ?",
+      "verso": "Le fil de fer supporte sans fondre un courant bien plus intense : plus rien ne coupe, et c'est le fil du mur qui chauffe jusqu'à l'incendie.",
+      "difficulte": 2,
+      "tags": [
+        "fusible",
+        "remplacement"
+      ]
+    },
+    {
+      "id": "PC4E-P15-016",
+      "lecon": "La protection des installations : fusible, disjoncteur et prise de terre",
+      "type": "definition",
+      "recto": "Quelle est la différence de fonctionnement entre un fusible et un disjoncteur ?",
+      "verso": "Le fusible fond et se remplace ; le disjoncteur s'ouvre et se réarme une fois le défaut réparé.",
+      "difficulte": 2,
+      "tags": [
+        "fusible",
+        "disjoncteur"
+      ]
+    },
+    {
+      "id": "PC4E-P15-017",
+      "lecon": "La protection des installations : fusible, disjoncteur et prise de terre",
+      "type": "definition",
+      "recto": "Quel second rôle joue le disjoncteur placé à l'entrée d'une installation ?",
+      "verso": "Il sert d'interrupteur général : on abaisse sa manette pour couper tout le courant de la maison.",
+      "difficulte": 2,
+      "tags": [
+        "disjoncteur",
+        "interrupteur-general"
+      ]
+    },
+    {
+      "id": "PC4E-P15-018",
+      "lecon": "La protection des installations : fusible, disjoncteur et prise de terre",
+      "type": "definition",
+      "recto": "Dans quel cas un disjoncteur différentiel coupe-t-il le courant ?",
+      "verso": "Dès qu'une petite partie du courant s'échappe vers la terre au lieu de revenir par le fil prévu.",
+      "difficulte": 2,
+      "tags": [
+        "differentiel"
+      ]
+    },
+    {
+      "id": "PC4E-P15-019",
+      "lecon": "La protection des installations : fusible, disjoncteur et prise de terre",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on la prise de terre d'une installation électrique ?",
+      "verso": "Un fil à gaine verte et jaune qui relie les carcasses métalliques des appareils à un piquet enfoncé dans le sol. Si un fil sous tension touche une carcasse, le courant part à la terre et le différentiel coupe.",
+      "difficulte": 2,
+      "tags": [
+        "prise-de-terre"
+      ]
+    },
+    {
+      "id": "PC4E-P15-020",
+      "lecon": "La protection des installations : fusible, disjoncteur et prise de terre",
+      "type": "definition",
+      "recto": "Pourquoi le fusible ne protège-t-il pas les habitants contre l'électrisation ?",
+      "verso": "Le fusible et le disjoncteur protègent l'installation contre l'incendie ; les courants mortels pour l'homme sont trop faibles pour les déclencher. Les personnes sont protégées par la prise de terre et le différentiel.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "protection-personnes"
+      ]
+    },
+    {
+      "id": "PC4E-P15-021",
+      "lecon": "La protection des installations : fusible, disjoncteur et prise de terre",
+      "type": "definition",
+      "recto": "Pourquoi trop d'appareils branchés sur une multiprise ne constituent-ils pas un court-circuit ?",
+      "verso": "Chaque appareil est bien branché : c'est une surcharge, le fil commun étant traversé par un courant trop intense. Le court-circuit est un chemin sans récepteur.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "surcharge"
+      ]
+    },
+    {
+      "id": "PC4E-P15-022",
+      "lecon": "Les dangers du courant du secteur et la conduite à tenir",
+      "type": "definition",
+      "recto": "Quelle est la tension du secteur au Burkina Faso ?",
+      "verso": "$220~\\mathrm{V}$, comme celle que délivre un groupe électrogène domestique. Cette tension est mortelle.",
+      "difficulte": 1,
+      "tags": [
+        "secteur",
+        "tension"
+      ]
+    },
+    {
+      "id": "PC4E-P15-023",
+      "lecon": "Les dangers du courant du secteur et la conduite à tenir",
+      "type": "definition",
+      "recto": "A partir de quelle tension un courant alternatif, comme celui du secteur, est-il dangereux pour l'homme ?",
+      "verso": "A partir de $24~\\mathrm{V}$ ; le secteur, sous $220~\\mathrm{V}$, est mortel.",
+      "difficulte": 2,
+      "tags": [
+        "seuil-danger",
+        "alternatif"
+      ]
+    },
+    {
+      "id": "PC4E-P15-024",
+      "lecon": "Les dangers du courant du secteur et la conduite à tenir",
+      "type": "definition",
+      "recto": "Pourquoi le corps humain conduit-il le courant électrique ?",
+      "verso": "Il est fait en majorité d'eau contenant des sels dissous ; il conduit d'autant mieux que la peau est mouillée, couverte de sueur ou blessée.",
+      "difficulte": 2,
+      "tags": [
+        "corps-humain",
+        "conducteur"
+      ]
+    },
+    {
+      "id": "PC4E-P15-025",
+      "lecon": "Les dangers du courant du secteur et la conduite à tenir",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on l'électrisation ?",
+      "verso": "C'est le passage d'un courant à travers le corps d'un être vivant : contractions musculaires, brûlures, troubles du rythme du coeur.",
+      "difficulte": 1,
+      "tags": [
+        "electrisation"
+      ]
+    },
+    {
+      "id": "PC4E-P15-026",
+      "lecon": "Les dangers du courant du secteur et la conduite à tenir",
+      "type": "definition",
+      "recto": "Quelle différence y a-t-il entre une électrisation et une électrocution ?",
+      "verso": "L'électrocution est une électrisation qui entraîne la mort : toute électrocution est une électrisation, mais une personne qui survit a seulement été électrisée.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "electrocution"
+      ]
+    },
+    {
+      "id": "PC4E-P15-027",
+      "lecon": "Les dangers du courant du secteur et la conduite à tenir",
+      "type": "definition",
+      "recto": "Pourquoi une personne qui a saisi un conducteur sous tension ne peut-elle souvent plus le lâcher ?",
+      "verso": "Le courant contracte ses muscles, qui ne se relâchent plus : la durée du contact s'allonge au lieu de s'interrompre.",
+      "difficulte": 2,
+      "tags": [
+        "effets-courant",
+        "muscles"
+      ]
+    },
+    {
+      "id": "PC4E-P15-028",
+      "lecon": "Les dangers du courant du secteur et la conduite à tenir",
+      "type": "definition",
+      "recto": "Quels sont les effets d'un courant de plus en plus intense qui traverse le corps humain ?",
+      "verso": "Un picotement, puis la contraction des muscles (la main ne lâche plus), puis le blocage de la respiration, enfin le coeur perd son rythme et s'arrête ; s'y ajoutent des brûlures profondes.",
+      "difficulte": 2,
+      "tags": [
+        "effets-courant"
+      ]
+    },
+    {
+      "id": "PC4E-P15-029",
+      "lecon": "Les dangers du courant du secteur et la conduite à tenir",
+      "type": "definition",
+      "recto": "Pourquoi un seul contact avec un fil sous tension suffit-il à électriser une personne debout sur le sol ?",
+      "verso": "Le courant traverse le corps et revient par la terre. Un oiseau posé sur un seul fil ne risque rien : il n'est relié ni à la terre ni à un second fil.",
+      "difficulte": 2,
+      "tags": [
+        "contact",
+        "terre"
+      ]
+    },
+    {
+      "id": "PC4E-P15-030",
+      "lecon": "Les dangers du courant du secteur et la conduite à tenir",
+      "type": "definition",
+      "recto": "Quels facteurs aggravent un accident électrique ?",
+      "verso": "La tension, l'humidité de la peau et du sol, le trajet du courant et la durée du contact.",
+      "difficulte": 2,
+      "tags": [
+        "gravite"
+      ]
+    },
+    {
+      "id": "PC4E-P15-031",
+      "lecon": "Les dangers du courant du secteur et la conduite à tenir",
+      "type": "definition",
+      "recto": "Quel trajet du courant à travers le corps est le plus dangereux ?",
+      "verso": "Celui qui traverse la poitrine, de main à main ou de la main aux pieds, parce qu'il passe par le coeur.",
+      "difficulte": 2,
+      "tags": [
+        "trajet",
+        "coeur"
+      ]
+    },
+    {
+      "id": "PC4E-P15-032",
+      "lecon": "Les dangers du courant du secteur et la conduite à tenir",
+      "type": "definition",
+      "recto": "Pourquoi est-il dangereux de s'approcher d'une ligne haute tension sans la toucher ?",
+      "verso": "Le courant peut y sauter dans l'air sans contact. On ne construit pas dessous, on n'y fait pas voler de cerf-volant, on n'y appuie pas d'échelle métallique.",
+      "difficulte": 2,
+      "tags": [
+        "haute-tension"
+      ]
+    },
+    {
+      "id": "PC4E-P15-033",
+      "lecon": "Les dangers du courant du secteur et la conduite à tenir",
+      "type": "definition",
+      "recto": "A quelle distance minimale doit-on rester d'un câble électrique tombé au sol ?",
+      "verso": "A au moins cinq mètres, en faisant reculer les curieux : le sol autour du point de chute peut être sous tension.",
+      "difficulte": 1,
+      "tags": [
+        "cable-tombe",
+        "securite"
+      ]
+    },
+    {
+      "id": "PC4E-P15-034",
+      "lecon": "Les dangers du courant du secteur et la conduite à tenir",
+      "type": "definition",
+      "recto": "Quel dispositif protège les bâtiments contre la foudre ?",
+      "verso": "Le paratonnerre, pointe métallique reliée au sol par un gros conducteur. La foudre est une énorme décharge électrique entre un nuage d'orage et le sol.",
+      "difficulte": 2,
+      "tags": [
+        "foudre",
+        "paratonnerre"
+      ]
+    },
+    {
+      "id": "PC4E-P15-035",
+      "lecon": "Les dangers du courant du secteur et la conduite à tenir",
+      "type": "formule",
+      "recto": "Avant de changer une ampoule ou d'ouvrir une prise, quelle règle de sécurité doit-on appliquer ?",
+      "verso": "Couper le courant en abaissant la manette du disjoncteur général, ou en retirant le fusible du départ, puis vérifier la coupure avec l'interrupteur de la pièce.",
+      "difficulte": 2,
+      "tags": [
+        "regles-securite",
+        "coupure"
+      ]
+    },
+    {
+      "id": "PC4E-P15-036",
+      "lecon": "Les dangers du courant du secteur et la conduite à tenir",
+      "type": "formule",
+      "recto": "Devant une victime d'électrisation, quels sont les deux premiers gestes, dans l'ordre ?",
+      "verso": "Ne pas la toucher (elle est sous tension), puis couper le courant au disjoncteur général, ou en retirant le fusible ou en débranchant la fiche.",
+      "difficulte": 2,
+      "tags": [
+        "secours",
+        "electrisation"
+      ]
+    },
+    {
+      "id": "PC4E-P15-037",
+      "lecon": "Les dangers du courant du secteur et la conduite à tenir",
+      "type": "definition",
+      "recto": "Pourquoi ne doit-on jamais dégager une victime d'électrisation avec un bâton de bois frais ?",
+      "verso": "Seul le bois sec est isolant ; un bois frais ou mouillé conduit le courant. Il faut un objet sec et isolant, en restant soi-même isolé du sol.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "secours",
+        "isolant"
+      ]
+    },
+    {
+      "id": "PC4E-P15-038",
+      "lecon": "Les dangers du courant du secteur et la conduite à tenir",
+      "type": "definition",
+      "recto": "Quel numéro appelle-t-on au Burkina Faso pour alerter les sapeurs-pompiers ?",
+      "verso": "Le $18$, en donnant le lieu exact, ce qui s'est passé et l'état de la victime.",
+      "difficulte": 1,
+      "tags": [
+        "secours",
+        "alerte"
+      ]
+    },
+    {
+      "id": "PC4E-P15-039",
+      "lecon": "Les dangers du courant du secteur et la conduite à tenir",
+      "type": "definition",
+      "recto": "Pourquoi une victime d'électrisation qui se relève et parle doit-elle quand même être examinée par un agent de santé ?",
+      "verso": "Elle peut avoir des brûlures profondes invisibles sur le trajet du courant, et le rythme du coeur peut se dérégler plusieurs heures après.",
+      "difficulte": 3,
+      "tags": [
+        "secours",
+        "suivi"
+      ]
+    }
+  ]
+}

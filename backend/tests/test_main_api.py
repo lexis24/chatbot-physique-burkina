@@ -31,13 +31,13 @@ def test_classes_list_matches_curriculum():
     res = client.get("/api/classes")
     assert res.status_code == 200
     codes = {c["code"] for c in res.json()["classes"]}
-    assert codes == {"6ème", "5ème", "4ème", "3ème", "2nde", "1ère", "Tle"}
+    assert codes == {"4ème", "3ème", "2nde", "1ère", "Tle"}
 
 
 def test_chapters_for_valid_class():
-    res = client.get("/api/classes/6ème/chapters")
+    res = client.get("/api/classes/4ème/chapters")
     assert res.status_code == 200
-    assert "Les fractions" in res.json()["chapters"]
+    assert "Les ombres" in res.json()["chapters"]
 
 
 def test_chapters_for_invalid_class_returns_404():
@@ -50,12 +50,16 @@ def test_course_route_accepts_get_and_head(method):
     """Régression : FastAPI n'ajoute pas HEAD automatiquement aux routes @app.get comme le fait
     Starlette — le frontend fait un HEAD pour vérifier la disponibilité du cours avant d'ouvrir un
     nouvel onglet, et une route GET-only renvoyait toujours 405 (donc toujours "indisponible")."""
-    res = client.request(method, "/api/course/2nde/Vecteurs du plan")
+    res = client.request(method, "/api/course/2nde/Les forces")
     assert res.status_code == 200
 
 
-def test_course_route_404_for_missing_document():
-    res = client.head("/api/course/4ème/Théorème de Pythagore")
+def test_course_route_404_for_missing_document(monkeypatch, tmp_path):
+    """Chapitre valide mais aucun document : 404. Tous les chapitres réels ont un cours, d'où un
+    répertoire vide (tmp_path) et une recherche dans l'index neutralisée."""
+    monkeypatch.setattr(main.config, "DATA_DIR", str(tmp_path))
+    monkeypatch.setattr(main.rag_system, "find_course_file_from_index", lambda *a, **k: None)
+    res = client.head("/api/course/4ème/Les ombres")
     assert res.status_code == 404
 
 
@@ -70,19 +74,19 @@ def test_summary_file_route_accepts_get_and_head(monkeypatch, tmp_path, method):
     résumé prérédigé par l'équipe pédagogique, avec la même convention de dossiers que DATA_DIR
     (voir find_course_file). Répertoire isolé (tmp_path) plutôt que data/summaries/ réel : le test
     ne doit pas dépendre de fichiers effectivement déposés en prod."""
-    chapter_dir = tmp_path / "2nde" / "Vecteurs du plan"
+    chapter_dir = tmp_path / "2nde" / "Les forces"
     chapter_dir.mkdir(parents=True)
     (chapter_dir / "resume.pdf").write_bytes(b"%PDF-1.4 fake")
     monkeypatch.setattr(main.config, "SUMMARIES_DIR", str(tmp_path))
 
-    res = client.request(method, "/api/summary/file/2nde/Vecteurs du plan")
+    res = client.request(method, "/api/summary/file/2nde/Les forces")
     assert res.status_code == 200
     assert res.headers["content-disposition"].startswith("inline")
 
 
 def test_summary_file_route_404_for_missing_document(monkeypatch, tmp_path):
     monkeypatch.setattr(main.config, "SUMMARIES_DIR", str(tmp_path))
-    res = client.head("/api/summary/file/4ème/Théorème de Pythagore")
+    res = client.head("/api/summary/file/4ème/Les ombres")
     assert res.status_code == 404
 
 
@@ -93,14 +97,14 @@ def test_summary_file_route_404_for_invalid_chapter():
 
 def test_flashcards_route_reads_front_back(monkeypatch, tmp_path):
     """Schéma canonique front/back, cartes à la racine du JSON (voir get_flashcards)."""
-    chapter_dir = tmp_path / "2nde" / "Vecteurs du plan"
+    chapter_dir = tmp_path / "2nde" / "Les forces"
     chapter_dir.mkdir(parents=True)
     (chapter_dir / "cartes.json").write_text(
         json.dumps([{"front": "Que vaut $2+2$ ?", "back": "$4$"}]), encoding="utf-8"
     )
     monkeypatch.setattr(main.config, "FLASHCARDS_DIR", str(tmp_path))
 
-    res = client.get("/api/flashcards/2nde/Vecteurs du plan")
+    res = client.get("/api/flashcards/2nde/Les forces")
     assert res.status_code == 200
     data = res.json()
     assert data["cards"] == [{
@@ -111,14 +115,14 @@ def test_flashcards_route_reads_front_back(monkeypatch, tmp_path):
 
 def test_flashcards_route_accepts_wrapped_and_aliased_fields(monkeypatch, tmp_path):
     """Tolère un objet {"cards": [...]}  et des noms de champs alternatifs (question/answer)."""
-    chapter_dir = tmp_path / "2nde" / "Vecteurs du plan"
+    chapter_dir = tmp_path / "2nde" / "Les forces"
     chapter_dir.mkdir(parents=True)
     (chapter_dir / "cartes.json").write_text(
         json.dumps({"cards": [{"question": "Q1", "answer": "R1"}]}), encoding="utf-8"
     )
     monkeypatch.setattr(main.config, "FLASHCARDS_DIR", str(tmp_path))
 
-    res = client.get("/api/flashcards/2nde/Vecteurs du plan")
+    res = client.get("/api/flashcards/2nde/Les forces")
     assert res.status_code == 200
     assert res.json()["cards"] == [{"id": main._flashcard_card_key("Q1"), "front": "Q1", "back": "R1", "due": True}]
 
@@ -127,39 +131,39 @@ def test_flashcards_route_reads_real_pedagogical_schema(monkeypatch, tmp_path):
     """Schéma réel livré par l'équipe pédagogique (voir LISEZ-MOI.md) : clé "cartes" (pas "cards"),
     champs recto/verso, plus des métadonnées ignorées (niveau/chapitre/source/nombre_cartes/id/
     lecon/type/difficulte/tags) qui ne doivent pas faire échouer le parsing."""
-    chapter_dir = tmp_path / "3ème" / "Théorème de Thalès et sa réciproque"
+    chapter_dir = tmp_path / "3eme"
     chapter_dir.mkdir(parents=True)
-    (chapter_dir / "flashcards_3eme_Chapitre_8_Thales.json").write_text(
+    (chapter_dir / "flashcards_3eme_Chapitre_18_La_loupe.json").write_text(
         json.dumps({
             "niveau": "3ème",
-            "chapitre": "Chapitre 8 : Théorème de Thalès et sa réciproque",
-            "source": "maths/3eme/Chapitre_8_Thales",
+            "chapitre": "Physique, Chapitre 18 : La loupe",
+            "source": "pc/3eme/Chapitre_18_La_loupe",
             "nombre_cartes": 1,
             "cartes": [{
-                "id": "3E-CH08-001", "lecon": "Configuration de Thalès", "type": "definition",
-                "recto": "Dans quelle configuration peut-on appliquer le théorème de Thalès ?",
-                "verso": "Deux droites sécantes en $A$ coupées par deux droites parallèles.",
-                "difficulte": 1, "tags": ["thales", "configuration"],
+                "id": "3E-PH18-001", "lecon": "Qu'est-ce qu'une loupe ?", "type": "definition",
+                "recto": "Quel type de lentille constitue une loupe ?",
+                "verso": "Une lentille convergente de petite distance focale, de quelques centimètres.",
+                "difficulte": 1, "tags": ["loupe", "lentille"],
             }],
         }, ensure_ascii=False),
         encoding="utf-8",
     )
     monkeypatch.setattr(main.config, "FLASHCARDS_DIR", str(tmp_path))
 
-    res = client.get("/api/flashcards/3ème/Théorème de Thalès et sa réciproque")
+    res = client.get("/api/flashcards/3ème/La loupe")
     assert res.status_code == 200
-    front = "Dans quelle configuration peut-on appliquer le théorème de Thalès ?"
+    front = "Quel type de lentille constitue une loupe ?"
     assert res.json()["cards"] == [{
         "id": main._flashcard_card_key(front),
         "front": front,
-        "back": "Deux droites sécantes en $A$ coupées par deux droites parallèles.",
+        "back": "Une lentille convergente de petite distance focale, de quelques centimètres.",
         "due": True,
     }]
 
 
 def test_flashcards_route_404_for_missing_document(monkeypatch, tmp_path):
     monkeypatch.setattr(main.config, "FLASHCARDS_DIR", str(tmp_path))
-    res = client.get("/api/flashcards/4ème/Théorème de Pythagore")
+    res = client.get("/api/flashcards/4ème/Les ombres")
     assert res.status_code == 404
 
 
@@ -181,7 +185,7 @@ def test_flashcard_card_key_is_stable_and_content_based():
 
 def test_flashcard_review_guest_does_not_persist():
     res = client.post("/api/flashcards/review", json={
-        "class_code": "3ème", "chapter": "Les fractions", "card_key": "abc123", "correct": True,
+        "class_code": "3ème", "chapter": "La loupe", "card_key": "abc123", "correct": True,
     })
     assert res.status_code == 200
     assert res.json() == {"persisted": False}
@@ -200,7 +204,7 @@ def test_flashcard_review_rejects_invalid_class_or_chapter(unique_username):
 def test_flashcard_review_persists_and_reorders_next_fetch(monkeypatch, tmp_path, unique_username):
     """Un élève connecté qui indique avoir déjà su une carte la voit repasser APRÈS les cartes
     jamais vues au prochain chargement (voir get_flashcards, qui trie sur due_at)."""
-    chapitre = "Théorème de Thalès et sa réciproque"
+    chapitre = "La loupe"
     chapter_dir = tmp_path / "3ème" / chapitre
     chapter_dir.mkdir(parents=True)
     (chapter_dir / "cartes.json").write_text(
@@ -244,7 +248,7 @@ def test_exercise_rejects_invalid_class():
 def test_exercise_rejects_chapter_not_in_curriculum():
     res = client.post(
         "/api/exercise",
-        json={"class_level": "6ème", "chapter": "Un chapitre qui n'existe pas"},
+        json={"class_level": "4ème", "chapter": "Un chapitre qui n'existe pas"},
     )
     assert res.status_code == 400
 
@@ -254,7 +258,7 @@ def test_exercise_accepts_missing_chapter_and_difficulty_as_optional():
     facultatives et déduites côté serveur) — seule la présence d'un chapitre invalide doit 400."""
     res = client.post(
         "/api/exercise",
-        json={"class_level": "6ème", "chapter": "", "difficulty": None},
+        json={"class_level": "4ème", "chapter": "", "difficulty": None},
     )
     # 500 est acceptable ici si Claude échoue/n'est pas dispo en environnement de test : ce qui
     # est testé, c'est que ça n'échoue pas à la VALIDATION (jamais 400/422).
@@ -467,7 +471,7 @@ def test_business_route_blocked_when_profile_incomplete(unique_username):
 def test_class_level_is_forced_from_account_for_authenticated_student(unique_username, monkeypatch):
     """La classe est désormais fixée au compte (app.users.class_code, voir RAPPORT_MIGRATION.md) :
     un élève connecté ne doit jamais pouvoir la contourner en envoyant une autre valeur dans la
-    requête. Un élève inscrit en Tle qui envoie class_level="6ème" doit tout de même obtenir une
+    requête. Un élève inscrit en Tle qui envoie class_level="4ème" doit tout de même obtenir une
     réponse ancrée sur la Terminale — vérifié ici en interceptant l'appel à generate_response pour
     inspecter la classe réellement transmise, sans dépendre d'un vrai appel à Claude."""
     register_res = _register(unique_username, class_code="Tle")
@@ -483,7 +487,7 @@ def test_class_level_is_forced_from_account_for_authenticated_student(unique_use
 
     res = client.post(
         "/api/chat",
-        json={"question": "test", "class_level": "6ème", "chapter": "", "history": []},
+        json={"question": "test", "class_level": "4ème", "chapter": "", "history": []},
         headers=_auth_headers(token),
     )
     assert res.status_code == 200
@@ -492,10 +496,10 @@ def test_class_level_is_forced_from_account_for_authenticated_student(unique_use
     # Un invité, lui, garde le comportement précédent : la classe qu'il envoie est utilisée telle quelle.
     guest_res = client.post(
         "/api/chat",
-        json={"question": "test", "class_level": "6ème", "chapter": "", "history": []},
+        json={"question": "test", "class_level": "4ème", "chapter": "", "history": []},
     )
     assert guest_res.status_code == 200
-    assert captured["class_level"] == "6ème"
+    assert captured["class_level"] == "4ème"
 
 
 def test_simplify_is_gated_too(unique_username):
@@ -556,14 +560,14 @@ def test_persistence_failure_is_counted_and_exposed_in_health(unique_username, m
     """La persistance best-effort ne doit jamais faire échouer la réponse à l'élève, mais un
     échec ne doit plus non plus rester complètement muet (voir _persist_exchange_best_effort) :
     il doit être compté et visible dans GET /api/health::persistence_failures.
-    class_code="6ème" explicite : depuis le correctif "classe fixée au compte"
+    class_code="4ème" explicite : depuis le correctif "classe fixée au compte"
     (_resolve_class_level), le serveur ignore le class_level envoyé par le client pour un compte
-    connecté et utilise celui du compte — le chapitre utilisé plus bas ("Les fractions") doit donc
+    connecté et utilise celui du compte — le chapitre utilisé plus bas ("Les ombres") doit donc
     être valide pour la classe du compte, pas juste pour la valeur envoyée dans la requête."""
-    register_res = _register(unique_username, class_code="6ème")
+    register_res = _register(unique_username, class_code="4ème")
     token = register_res.json()["token"]
     conv_id = client.post(
-        "/api/conversations", json={"class_level": "6ème", "chapter": "Les fractions"},
+        "/api/conversations", json={"class_level": "4ème", "chapter": "Les ombres"},
         headers=_auth_headers(token),
     ).json()["id"]
 
@@ -581,7 +585,7 @@ def test_persistence_failure_is_counted_and_exposed_in_health(unique_username, m
 
     chat_res = client.post(
         "/api/chat",
-        json={"question": "test", "class_level": "6ème", "chapter": "Les fractions", "history": [], "conversation_id": conv_id},
+        json={"question": "test", "class_level": "4ème", "chapter": "Les ombres", "history": [], "conversation_id": conv_id},
         headers=_auth_headers(token),
     )
     # La panne de sauvegarde ne doit jamais se répercuter sur la réponse envoyée à l'élève.
@@ -604,7 +608,7 @@ def test_students_cannot_access_each_others_conversations(unique_username):
     token_b = _register(unique_username).json()["token"]
 
     create_res = client.post(
-        "/api/conversations", json={"class_level": "3ème", "chapter": "Les fractions"},
+        "/api/conversations", json={"class_level": "3ème", "chapter": "La loupe"},
         headers=_auth_headers(token_a),
     )
     assert create_res.status_code == 200
@@ -626,7 +630,7 @@ def test_chat_stream_persists_message_when_token_is_sent(monkeypatch, unique_use
     sauvegarde donc jamais rien, silencieusement. Ce test appelle /api/chat/stream avec un VRAI
     token (comme le fait désormais App.jsx) et vérifie que le message apparaît bien ensuite dans
     l'historique — le chemin que le bug rendait mort."""
-    chapitre = "Théorème de Thalès et sa réciproque"
+    chapitre = "La loupe"
     token = _register(unique_username, class_code="3ème").json()["token"]
     headers = _auth_headers(token)
 
@@ -763,7 +767,7 @@ def test_generate_remediation_resilient_to_retrieval_failure(monkeypatch):
     monkeypatch.setattr(main.rag_system, "_retrieve_with_filters", broken_retrieve)
     monkeypatch.setattr(main.rag_system, "_call_claude", lambda *a, **k: fake_json)
 
-    questions = main.rag_system.generate_remediation("3ème", "Les fractions", history=[])
+    questions = main.rag_system.generate_remediation("3ème", "La loupe", history=[])
     assert len(questions) == 3
     assert [q["notion"] for q in questions] == ["n0", "n1", "n2"]
 
@@ -777,7 +781,7 @@ def test_verify_qcm_batch_corrects_wrong_marked_answer(monkeypatch):
     verdicts = json.dumps({"verdicts": [{"index": 0, "reponse_correcte_index": 1}]})
     monkeypatch.setattr(main.rag_system, "_call_claude", lambda *a, **k: verdicts)
 
-    corrected = main.rag_system._verify_qcm_batch("6ème", "Nombres entiers", qcm)
+    corrected = main.rag_system._verify_qcm_batch("4ème", "La masse d'un corps", qcm)
     assert corrected[0]["reponse_correcte_index"] == 1
     # L'original n'est jamais muté en place : on renvoie une copie corrigée.
     assert qcm[0]["reponse_correcte_index"] == 0
@@ -789,7 +793,7 @@ def test_verify_qcm_batch_leaves_correct_answer_unchanged(monkeypatch):
     verdicts = json.dumps({"verdicts": [{"index": 0, "reponse_correcte_index": 1}]})
     monkeypatch.setattr(main.rag_system, "_call_claude", lambda *a, **k: verdicts)
 
-    corrected = main.rag_system._verify_qcm_batch("6ème", "Nombres entiers", qcm)
+    corrected = main.rag_system._verify_qcm_batch("4ème", "La masse d'un corps", qcm)
     assert corrected[0]["reponse_correcte_index"] == 1
 
 
@@ -798,7 +802,7 @@ def test_verify_qcm_batch_fails_open_when_claude_unavailable(monkeypatch):
             "reponse_correcte_index": 0, "explication": "e"}]
     monkeypatch.setattr(main.rag_system, "_call_claude", lambda *a, **k: None)
 
-    corrected = main.rag_system._verify_qcm_batch("6ème", "Nombres entiers", qcm)
+    corrected = main.rag_system._verify_qcm_batch("4ème", "La masse d'un corps", qcm)
     assert corrected == qcm
 
 
@@ -807,7 +811,7 @@ def test_verify_qcm_batch_fails_open_on_malformed_response(monkeypatch):
             "reponse_correcte_index": 0, "explication": "e"}]
     monkeypatch.setattr(main.rag_system, "_call_claude", lambda *a, **k: "pas du json du tout")
 
-    corrected = main.rag_system._verify_qcm_batch("6ème", "Nombres entiers", qcm)
+    corrected = main.rag_system._verify_qcm_batch("4ème", "La masse d'un corps", qcm)
     assert corrected == qcm
 
 
@@ -819,7 +823,7 @@ def test_verify_qcm_batch_ignores_out_of_range_correction(monkeypatch):
     verdicts = json.dumps({"verdicts": [{"index": 0, "reponse_correcte_index": 9}]})
     monkeypatch.setattr(main.rag_system, "_call_claude", lambda *a, **k: verdicts)
 
-    corrected = main.rag_system._verify_qcm_batch("6ème", "Nombres entiers", qcm)
+    corrected = main.rag_system._verify_qcm_batch("4ème", "La masse d'un corps", qcm)
     assert corrected[0]["reponse_correcte_index"] == 0
 
 
@@ -827,7 +831,7 @@ def test_generate_exercise_difficulty1_applies_qcm_verification(monkeypatch):
     """generate_exercise (1★, QCM) doit passer son lot de questions par _verify_qcm_batch et
     servir le résultat corrigé à l'élève, pas la réponse brute de la première génération."""
     exercise_json = json.dumps({
-        "chapitre": "Les nombres entiers",
+        "chapitre": "Le poids d'un corps",
         "enonce": "Applique le cours.",
         "qcm": [{"question": "2+2 ?", "choix": ["3", "4", "5", "6"],
                  "reponse_correcte_index": 0, "explication": "e"}],
@@ -843,8 +847,8 @@ def test_generate_exercise_difficulty1_applies_qcm_verification(monkeypatch):
 
     monkeypatch.setattr(main.rag_system, "_verify_qcm_batch", fake_verify)
 
-    result = main.rag_system.generate_exercise("6ème", "Les nombres entiers", difficulty=1)
-    assert captured["args"][0] == "6ème"
+    result = main.rag_system.generate_exercise("4ème", "Le poids d'un corps", difficulty=1)
+    assert captured["args"][0] == "4ème"
     assert result["qcm"][0]["reponse_correcte_index"] == 1
 
 
@@ -852,7 +856,7 @@ def test_generate_exercise_difficulty2_does_not_call_qcm_verification(monkeypatc
     """Niveau 2-4★ (exercice ouvert, pas de QCM à cette étape) : rien à vérifier ici, la
     correction détaillée est un flux séparé (generate_exercise_solution)."""
     exercise_json = json.dumps({
-        "chapitre": "Les nombres entiers",
+        "chapitre": "Le poids d'un corps",
         "enonce": "Résous ce problème.",
         "indices": ["Pense au cours."],
         "figure": None,
@@ -866,7 +870,7 @@ def test_generate_exercise_difficulty2_does_not_call_qcm_verification(monkeypatc
         lambda *a, **k: called.__setitem__("n", called["n"] + 1) or [],
     )
 
-    main.rag_system.generate_exercise("6ème", "Les nombres entiers", difficulty=2)
+    main.rag_system.generate_exercise("4ème", "Le poids d'un corps", difficulty=2)
     assert called["n"] == 0
 
 
@@ -893,7 +897,7 @@ def test_generate_prerequis_applies_qcm_verification(monkeypatch):
 
     monkeypatch.setattr(main.rag_system, "_verify_qcm_batch", fake_verify)
 
-    result = main.rag_system.generate_prerequis("3ème", "Les fractions", history=[])
+    result = main.rag_system.generate_prerequis("3ème", "La loupe", history=[])
     assert captured["count"] == 3
     assert result[0]["exercices"][0]["reponse_correcte_index"] == 2
     assert result[1]["exercices"][0]["reponse_correcte_index"] == 2

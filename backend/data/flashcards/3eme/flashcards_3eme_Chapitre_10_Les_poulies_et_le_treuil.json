@@ -1,0 +1,369 @@
+{
+  "matiere": "Physique-Chimie",
+  "partie": "Physique",
+  "niveau": "3ème",
+  "chapitre": "Physique, Chapitre 10 : Les poulies et le treuil",
+  "source": "pc/3eme/Chapitre_10_Les_poulies_et_le_treuil",
+  "nombre_cartes": 31,
+  "cartes": [
+    {
+      "id": "PC3E-P10-001",
+      "lecon": "La poulie fixe",
+      "type": "definition",
+      "recto": "Qu'est-ce qu'une poulie ?",
+      "verso": "Une roue qui tourne autour d'un axe et dont le pourtour porte une gorge, creusée pour recevoir une corde ou un câble.",
+      "difficulte": 1,
+      "tags": [
+        "poulie",
+        "vocabulaire"
+      ]
+    },
+    {
+      "id": "PC3E-P10-002",
+      "lecon": "La poulie fixe",
+      "type": "definition",
+      "recto": "Quelles sont les différentes parties d'une poulie ?",
+      "verso": "La roue à gorge (ou réa), dont la gorge reçoit la corde ; l'axe, autour duquel la roue tourne ; la chape (pièce en U qui porte l'axe) ; le crochet ou l'anneau de suspension, fixé à la chape.",
+      "difficulte": 1,
+      "tags": [
+        "poulie",
+        "parties"
+      ]
+    },
+    {
+      "id": "PC3E-P10-003",
+      "lecon": "La poulie fixe",
+      "type": "definition",
+      "recto": "Quand dit-on qu'une poulie est fixe ?",
+      "verso": "Lorsque son axe est attaché à un support qui ne se déplace pas : une potence, une poutre, la margelle d'un puits.",
+      "difficulte": 1,
+      "tags": [
+        "poulie-fixe"
+      ]
+    },
+    {
+      "id": "PC3E-P10-004",
+      "lecon": "La poulie fixe",
+      "type": "definition",
+      "recto": "Lors de l'emploi d'une poulie, qu'appelle-t-on le brin d'entrée et le brin de sortie ?",
+      "verso": "Le brin d'entrée est celui sur lequel agit l'utilisateur ou le moteur ; le brin de sortie est celui qui porte la charge.",
+      "difficulte": 2,
+      "tags": [
+        "entree-sortie"
+      ]
+    },
+    {
+      "id": "PC3E-P10-005",
+      "lecon": "La poulie fixe",
+      "type": "formule",
+      "recto": "Quelle relation traduit la condition d'équilibre d'une poulie fixe ?",
+      "verso": "$F_e = F_s$ ; comme la charge est en équilibre, $F_s = P$, donc $F_e = P$ (forces en newtons).",
+      "difficulte": 1,
+      "tags": [
+        "poulie-fixe",
+        "equilibre"
+      ]
+    },
+    {
+      "id": "PC3E-P10-006",
+      "lecon": "La poulie fixe",
+      "type": "definition",
+      "recto": "Quel est le rôle d'une poulie fixe sur la force exercée ?",
+      "verso": "Elle change la direction et le sens de la force, mais ne diminue pas son intensité : $F_e = P$.",
+      "difficulte": 2,
+      "tags": [
+        "poulie-fixe"
+      ]
+    },
+    {
+      "id": "PC3E-P10-007",
+      "lecon": "La poulie fixe",
+      "type": "formule",
+      "recto": "Avec une poulie fixe, quelle longueur de corde $L$ faut-il tirer pour élever une charge d'une hauteur $h$ ?",
+      "verso": "$L = h$ : ce qui entre d'un côté sort de l'autre.",
+      "difficulte": 2,
+      "tags": [
+        "poulie-fixe",
+        "longueur-de-corde"
+      ]
+    },
+    {
+      "id": "PC3E-P10-008",
+      "lecon": "La poulie fixe",
+      "type": "formule",
+      "recto": "Comment calcule-t-on le poids $P$ d'une charge de masse $m$, avec ses unités ?",
+      "verso": "$P = m \\times g$, avec $P$ en newtons, $m$ en kilogrammes et $g$ en $\\mathrm{N/kg}$. La masse et le poids ne se confondent pas.",
+      "difficulte": 2,
+      "tags": [
+        "poids",
+        "unites"
+      ]
+    },
+    {
+      "id": "PC3E-P10-009",
+      "lecon": "La poulie fixe",
+      "type": "definition",
+      "recto": "Pour les poulies et le treuil, dans quelle situation de mouvement les conditions d'équilibre restent-elles vraies ?",
+      "verso": "Quand la charge monte ou descend à vitesse constante : c'est le déplacement régulier des énoncés.",
+      "difficulte": 3,
+      "tags": [
+        "mouvement-regulier"
+      ]
+    },
+    {
+      "id": "PC3E-P10-010",
+      "lecon": "La poulie mobile",
+      "type": "definition",
+      "recto": "Quand dit-on qu'une poulie est mobile ?",
+      "verso": "Lorsque son axe se déplace avec la charge, à laquelle elle est accrochée.",
+      "difficulte": 1,
+      "tags": [
+        "poulie-mobile"
+      ]
+    },
+    {
+      "id": "PC3E-P10-011",
+      "lecon": "La poulie mobile",
+      "type": "formule",
+      "recto": "Quelle relation traduit la condition d'équilibre d'une poulie mobile portant une charge de poids $P$ ?",
+      "verso": "$F_e = \\dfrac{P}{2}$, soit $F_s = 2F_e$ avec $F_s = P$. Cela suppose une poulie légère et sans frottement.",
+      "difficulte": 2,
+      "tags": [
+        "poulie-mobile",
+        "equilibre"
+      ]
+    },
+    {
+      "id": "PC3E-P10-012",
+      "lecon": "La poulie mobile",
+      "type": "formule",
+      "recto": "Avec une poulie mobile, quelle longueur de corde $L$ faut-il tirer pour élever une charge d'une hauteur $h$ ?",
+      "verso": "$L = 2h$ : l'effort est divisé par deux, mais la longueur de corde est doublée.",
+      "difficulte": 2,
+      "tags": [
+        "poulie-mobile",
+        "longueur-de-corde"
+      ]
+    },
+    {
+      "id": "PC3E-P10-013",
+      "lecon": "La poulie mobile",
+      "type": "definition",
+      "recto": "Pourquoi une poulie mobile divise-t-elle l'effort par deux ?",
+      "verso": "La charge est portée par deux brins de la même corde, qui coulisse librement et porte la même tension partout : chaque brin porte $\\dfrac{P}{2}$, et le brin tiré est l'un d'eux.",
+      "difficulte": 2,
+      "tags": [
+        "poulie-mobile"
+      ]
+    },
+    {
+      "id": "PC3E-P10-014",
+      "lecon": "La poulie mobile",
+      "type": "definition",
+      "recto": "Quel est le rôle d'une poulie fixe de renvoi associée à une poulie mobile ?",
+      "verso": "Elle renvoie la corde vers le bas pour rendre le geste commode ; elle ne change pas l'effort, qui reste $\\dfrac{P}{2}$.",
+      "difficulte": 3,
+      "tags": [
+        "renvoi",
+        "piege"
+      ]
+    },
+    {
+      "id": "PC3E-P10-015",
+      "lecon": "La poulie mobile",
+      "type": "definition",
+      "recto": "Pour un dispositif de poulies, que faut-il compter pour savoir par combien l'effort est divisé ?",
+      "verso": "Les brins qui portent la charge, et non le nombre de poulies.",
+      "difficulte": 3,
+      "tags": [
+        "brins",
+        "piege"
+      ]
+    },
+    {
+      "id": "PC3E-P10-016",
+      "lecon": "La poulie mobile",
+      "type": "formule",
+      "recto": "Avec un palan à quatre brins portant la charge, comment sont modifiés l'effort et la longueur de corde ?",
+      "verso": "L'effort est divisé par quatre ($F_e = \\dfrac{P}{4}$) et la longueur de corde tirée est quadruplée ($L = 4h$), poulies légères et sans frottement.",
+      "difficulte": 2,
+      "tags": [
+        "palan"
+      ]
+    },
+    {
+      "id": "PC3E-P10-017",
+      "lecon": "La poulie mobile",
+      "type": "formule",
+      "recto": "Pour une machine simple qui divise l'effort par $n$, comment varie la longueur de corde à tirer ?",
+      "verso": "Elle est multipliée par $n$ : seule la poulie fixe donne une corde tirée égale à la hauteur de levée.",
+      "difficulte": 3,
+      "tags": [
+        "longueur-de-corde",
+        "piege"
+      ]
+    },
+    {
+      "id": "PC3E-P10-018",
+      "lecon": "Le treuil, le moment d'une force et la poulie à deux gorges",
+      "type": "definition",
+      "recto": "Qu'est-ce que le moment d'une force par rapport à un axe fixe ?",
+      "verso": "C'est le produit de l'intensité de la force par la distance $d$ de l'axe à la droite d'action de la force : $M = F \\times d$. Il mesure l'aptitude de la force à faire tourner le corps autour de l'axe.",
+      "difficulte": 2,
+      "tags": [
+        "moment"
+      ]
+    },
+    {
+      "id": "PC3E-P10-019",
+      "lecon": "Le treuil, le moment d'une force et la poulie à deux gorges",
+      "type": "formule",
+      "recto": "Quelle est l'unité du moment d'une force par rapport à un axe fixe ?",
+      "verso": "Le newton-mètre, de symbole $\\mathrm{N \\cdot m}$, quand $F$ est en newtons et $d$ en mètres. Un moment n'est pas une force : il ne s'exprime pas en newtons.",
+      "difficulte": 1,
+      "tags": [
+        "moment",
+        "unite"
+      ]
+    },
+    {
+      "id": "PC3E-P10-020",
+      "lecon": "Le treuil, le moment d'une force et la poulie à deux gorges",
+      "type": "definition",
+      "recto": "Dans le calcul du moment d'une force, qu'appelle-t-on le bras de levier ?",
+      "verso": "C'est la distance $d$ de l'axe à la droite d'action de la force, et non la distance de l'axe au point d'application.",
+      "difficulte": 3,
+      "tags": [
+        "bras-de-levier"
+      ]
+    },
+    {
+      "id": "PC3E-P10-021",
+      "lecon": "Le treuil, le moment d'une force et la poulie à deux gorges",
+      "type": "definition",
+      "recto": "Pourquoi une force dont la droite d'action passe par l'axe ne fait-elle rien tourner ?",
+      "verso": "Son bras de levier est nul, donc son moment $M = F \\times d$ est nul.",
+      "difficulte": 2,
+      "tags": [
+        "moment"
+      ]
+    },
+    {
+      "id": "PC3E-P10-022",
+      "lecon": "Le treuil, le moment d'une force et la poulie à deux gorges",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on le couple d'un moteur ?",
+      "verso": "C'est le moment qu'il exerce sur son axe, exprimé en $\\mathrm{N \\cdot m}$.",
+      "difficulte": 1,
+      "tags": [
+        "couple"
+      ]
+    },
+    {
+      "id": "PC3E-P10-023",
+      "lecon": "Le treuil, le moment d'une force et la poulie à deux gorges",
+      "type": "definition",
+      "recto": "Quelles sont les différentes parties d'un treuil ?",
+      "verso": "Le tambour, sur lequel s'enroule la corde ; l'axe de rotation, confondu avec celui du tambour ; la manivelle ; le bâti ou support, qui porte l'axe ; la corde ou le câble et son crochet.",
+      "difficulte": 1,
+      "tags": [
+        "treuil",
+        "parties"
+      ]
+    },
+    {
+      "id": "PC3E-P10-024",
+      "lecon": "Le treuil, le moment d'une force et la poulie à deux gorges",
+      "type": "formule",
+      "recto": "Quelle relation traduit la condition d'équilibre d'un treuil ?",
+      "verso": "$F \\times L = P \\times R$, soit $F \\times L = P \\times \\dfrac{D}{2}$, avec $F$ la force sur la manivelle, $L$ la longueur de la manivelle, $P$ le poids de la charge, $R$ et $D$ le rayon et le diamètre du tambour.",
+      "difficulte": 2,
+      "tags": [
+        "treuil",
+        "equilibre"
+      ]
+    },
+    {
+      "id": "PC3E-P10-025",
+      "lecon": "Le treuil, le moment d'une force et la poulie à deux gorges",
+      "type": "definition",
+      "recto": "A quelle condition sur la force $\\vec{F}$ la relation $F \\times L = P \\times R$ du treuil est-elle valable ?",
+      "verso": "La force doit être perpendiculaire au bras de la manivelle et orthogonale à l'axe ; sinon son bras de levier est plus petit que $L$.",
+      "difficulte": 3,
+      "tags": [
+        "treuil",
+        "condition"
+      ]
+    },
+    {
+      "id": "PC3E-P10-026",
+      "lecon": "Le treuil, le moment d'une force et la poulie à deux gorges",
+      "type": "formule",
+      "recto": "Pour un treuil de tambour de rayon $R$ et de manivelle de longueur $L$, quelles distances parcourent la charge et la main en un tour ?",
+      "verso": "La charge monte de $2\\pi R$ et la main parcourt $2\\pi L$. Le nombre de tours pour élever la charge de $h$ vaut $n = \\dfrac{h}{2\\pi R}$.",
+      "difficulte": 2,
+      "tags": [
+        "treuil",
+        "tours"
+      ]
+    },
+    {
+      "id": "PC3E-P10-027",
+      "lecon": "Le treuil, le moment d'une force et la poulie à deux gorges",
+      "type": "definition",
+      "recto": "Dans le calcul d'un treuil, quelle erreur faut-il éviter quand l'énoncé donne la dimension du tambour ?",
+      "verso": "Prendre le diamètre pour le rayon : un tambour de $20~\\mathrm{cm}$ de diamètre a pour rayon $R = \\dfrac{D}{2} = 10~\\mathrm{cm} = 0{,}10~\\mathrm{m}$.",
+      "difficulte": 3,
+      "tags": [
+        "diametre-rayon",
+        "piege"
+      ]
+    },
+    {
+      "id": "PC3E-P10-028",
+      "lecon": "Le treuil, le moment d'une force et la poulie à deux gorges",
+      "type": "definition",
+      "recto": "Qu'est-ce qu'une poulie à deux gorges ?",
+      "verso": "Une poulie fixe dont la roue porte deux gorges de rayons différents, $R$ pour la grande et $r$ pour la petite, solidaires du même axe et tournant ensemble.",
+      "difficulte": 2,
+      "tags": [
+        "poulie-deux-gorges"
+      ]
+    },
+    {
+      "id": "PC3E-P10-029",
+      "lecon": "Le treuil, le moment d'une force et la poulie à deux gorges",
+      "type": "formule",
+      "recto": "Quelle relation traduit la condition d'équilibre d'une poulie à deux gorges ?",
+      "verso": "$F \\times R = P \\times r$, la force $F$ s'exerçant sur la grande gorge (rayon $R$) et la charge de poids $P$ étant suspendue à la petite (rayon $r$). D'où $F = P \\times \\dfrac{r}{R}$, plus petite que $P$.",
+      "difficulte": 2,
+      "tags": [
+        "poulie-deux-gorges",
+        "equilibre"
+      ]
+    },
+    {
+      "id": "PC3E-P10-030",
+      "lecon": "Le treuil, le moment d'une force et la poulie à deux gorges",
+      "type": "formule",
+      "recto": "Pour une poulie à deux gorges de rayons $R$ et $r$, quelle longueur de câble se déroule de la grande gorge quand la charge monte de $h$ ?",
+      "verso": "$L = h \\times \\dfrac{R}{r}$ : si $R$ vaut trois fois $r$, l'effort est divisé par trois et la longueur de câble est triplée.",
+      "difficulte": 2,
+      "tags": [
+        "poulie-deux-gorges",
+        "longueur-de-corde"
+      ]
+    },
+    {
+      "id": "PC3E-P10-031",
+      "lecon": "Le treuil, le moment d'une force et la poulie à deux gorges",
+      "type": "formule",
+      "recto": "Dans les sujets du BEPC, quelle relation unique traduit l'équilibre du treuil et de la poulie à deux gorges ?",
+      "verso": "$F_e \\times R_e = F_s \\times R_s$, avec $F_s = P$ ; $R_e$ est la longueur de la manivelle ou le rayon de la grande gorge, $R_s$ le rayon du tambour ou de la petite gorge.",
+      "difficulte": 2,
+      "tags": [
+        "notation-bepc"
+      ]
+    }
+  ]
+}

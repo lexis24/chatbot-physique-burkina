@@ -1,0 +1,408 @@
+{
+  "matiere": "Physique-Chimie",
+  "partie": "Physique",
+  "niveau": "4ème",
+  "chapitre": "Physique, Chapitre 4 : La masse volumique et la densité d'un corps",
+  "source": "pc/4eme/Chapitre_4_La_masse_volumique_et_la_densite",
+  "nombre_cartes": 33,
+  "cartes": [
+    {
+      "id": "PC4E-P04-001",
+      "lecon": "La masse volumique d'un corps solide ou liquide",
+      "type": "definition",
+      "recto": "En physique, quand dit-on qu'une substance est homogène ?",
+      "verso": "Quand elle est faite de la même matière en tout point, sans mélange visible : un morceau de fer, de l'eau pure, un bloc d'aluminium.",
+      "difficulte": 1,
+      "tags": [
+        "substance-homogene",
+        "vocabulaire"
+      ]
+    },
+    {
+      "id": "PC4E-P04-002",
+      "lecon": "La masse volumique d'un corps solide ou liquide",
+      "type": "definition",
+      "recto": "Comment définit-on la masse volumique d'une substance homogène ?",
+      "verso": "C'est le quotient de la masse d'un échantillon de cette substance par le volume de cet échantillon, autrement dit la masse d'une unité de volume de cette substance.",
+      "difficulte": 1,
+      "tags": [
+        "masse-volumique",
+        "definition"
+      ]
+    },
+    {
+      "id": "PC4E-P04-003",
+      "lecon": "La masse volumique d'un corps solide ou liquide",
+      "type": "formule",
+      "recto": "Quelle relation lie la masse volumique $\\rho$ d'une substance homogène, la masse $m$ et le volume $V$ d'un échantillon ?",
+      "verso": "$\\rho = \\dfrac{m}{V}$ ; avec $m$ en kg et $V$ en $\\mathrm{m^3}$, $\\rho$ est en $\\mathrm{kg/m^3}$ (ou $m$ en g et $V$ en $\\mathrm{cm^3}$ pour $\\rho$ en $\\mathrm{g/cm^3}$).",
+      "difficulte": 1,
+      "tags": [
+        "masse-volumique",
+        "relation"
+      ]
+    },
+    {
+      "id": "PC4E-P04-004",
+      "lecon": "La masse volumique d'un corps solide ou liquide",
+      "type": "formule",
+      "recto": "A partir de $\\rho = \\dfrac{m}{V}$, quelles relations donnent la masse $m$ et le volume $V$ d'un échantillon ?",
+      "verso": "$m = \\rho \\times V$ pour la masse et $V = \\dfrac{m}{\\rho}$ pour le volume, avec des unités qui vont ensemble (g et $\\mathrm{cm^3}$, ou kg et $\\mathrm{m^3}$).",
+      "difficulte": 2,
+      "tags": [
+        "relations-derivees",
+        "masse",
+        "volume"
+      ]
+    },
+    {
+      "id": "PC4E-P04-005",
+      "lecon": "La masse volumique d'un corps solide ou liquide",
+      "type": "definition",
+      "recto": "Par quelles lettres les livres notent-ils la masse volumique ?",
+      "verso": "La lettre grecque $\\rho$, qui se lit « rhô ». Certains livres écrivent $a$ : c'est la même grandeur.",
+      "difficulte": 1,
+      "tags": [
+        "notation",
+        "rho"
+      ]
+    },
+    {
+      "id": "PC4E-P04-006",
+      "lecon": "La masse volumique d'un corps solide ou liquide",
+      "type": "definition",
+      "recto": "Pourquoi la masse volumique est-elle une grandeur caractéristique d'une substance ?",
+      "verso": "Elle ne dépend pas de la taille du morceau : elle est la même pour tout échantillon d'une même substance, à température donnée. Elle sert donc à reconnaître la substance.",
+      "difficulte": 2,
+      "tags": [
+        "grandeur-caracteristique",
+        "identification"
+      ]
+    },
+    {
+      "id": "PC4E-P04-007",
+      "lecon": "La masse volumique d'un corps solide ou liquide",
+      "type": "definition",
+      "recto": "Quelle différence y a-t-il entre la masse d'un corps et sa masse volumique ?",
+      "verso": "La masse se mesure à la balance, en kilogrammes. La masse volumique, en $\\mathrm{kg/m^3}$, ne se lit sur aucun instrument : elle se calcule en divisant la masse par le volume.",
+      "difficulte": 2,
+      "tags": [
+        "masse",
+        "masse-volumique",
+        "piege"
+      ]
+    },
+    {
+      "id": "PC4E-P04-008",
+      "lecon": "La masse volumique d'un corps solide ou liquide",
+      "type": "definition",
+      "recto": "Pourquoi la phrase « le fer est plus lourd que le bois » est-elle incorrecte en physique ?",
+      "verso": "Un clou de fer a une masse plus petite qu'une poutre en bois. Il faut dire : le fer a une masse volumique plus grande que celle du bois.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "vocabulaire"
+      ]
+    },
+    {
+      "id": "PC4E-P04-009",
+      "lecon": "Les unités de masse volumique et leurs conversions",
+      "type": "definition",
+      "recto": "Quelle est l'unité légale de la masse volumique, avec son symbole ?",
+      "verso": "Le kilogramme par mètre cube, de symbole $\\mathrm{kg/m^3}$ : une masse en kilogrammes divisée par un volume en mètres cubes (unité du Système international).",
+      "difficulte": 1,
+      "tags": [
+        "unite-legale"
+      ]
+    },
+    {
+      "id": "PC4E-P04-010",
+      "lecon": "Les unités de masse volumique et leurs conversions",
+      "type": "definition",
+      "recto": "Quelles unités usuelles de masse volumique emploie-t-on, en plus du $\\mathrm{kg/m^3}$ ?",
+      "verso": "Le $\\mathrm{g/cm^3}$ (solides et liquides), le $\\mathrm{kg/L}$ et le $\\mathrm{kg/dm^3}$ (liquides), le $\\mathrm{g/L}$ (gaz) et la $\\mathrm{t/m^3}$ (grosses quantités de matière).",
+      "difficulte": 2,
+      "tags": [
+        "unites-usuelles"
+      ]
+    },
+    {
+      "id": "PC4E-P04-011",
+      "lecon": "Les unités de masse volumique et leurs conversions",
+      "type": "formule",
+      "recto": "A quelles valeurs, dans les autres unités de masse volumique, $1~\\mathrm{g/cm^3}$ est-il égal ?",
+      "verso": "$1~\\mathrm{g/cm^3} = 1~\\mathrm{kg/dm^3} = 1~\\mathrm{kg/L} = 1~\\mathrm{t/m^3} = 1\\,000~\\mathrm{kg/m^3}$.",
+      "difficulte": 2,
+      "tags": [
+        "conversion"
+      ]
+    },
+    {
+      "id": "PC4E-P04-012",
+      "lecon": "Les unités de masse volumique et leurs conversions",
+      "type": "formule",
+      "recto": "A quoi est égal $1~\\mathrm{kg/m^3}$ en $\\mathrm{g/L}$ et en $\\mathrm{g/cm^3}$ ?",
+      "verso": "$1~\\mathrm{kg/m^3} = 1~\\mathrm{g/L} = 0{,}001~\\mathrm{g/cm^3}$.",
+      "difficulte": 2,
+      "tags": [
+        "conversion",
+        "gramme-par-litre"
+      ]
+    },
+    {
+      "id": "PC4E-P04-013",
+      "lecon": "Les unités de masse volumique et leurs conversions",
+      "type": "formule",
+      "recto": "Quelle est la masse volumique de l'eau pure, en $\\mathrm{g/cm^3}$ et en $\\mathrm{kg/m^3}$ ?",
+      "verso": "$\\rho_{\\text{eau}} = 1~\\mathrm{g/cm^3} = 1~\\mathrm{kg/L} = 1~\\mathrm{t/m^3} = 1\\,000~\\mathrm{kg/m^3}$. C'est la valeur de référence pour les solides et les liquides.",
+      "difficulte": 1,
+      "tags": [
+        "eau",
+        "valeur-de-reference"
+      ]
+    },
+    {
+      "id": "PC4E-P04-014",
+      "lecon": "Les unités de masse volumique et leurs conversions",
+      "type": "formule",
+      "recto": "A $0~^{\\circ}\\mathrm{C}$, quelle est la masse volumique de l'air ?",
+      "verso": "A $0~^{\\circ}\\mathrm{C}$, $\\rho_{\\text{air}} \\approx 1{,}3~\\mathrm{kg/m^3} = 1{,}3~\\mathrm{g/L}$ ; à $20~^{\\circ}\\mathrm{C}$, environ $1{,}2~\\mathrm{kg/m^3}$. Comme pour tout gaz, elle dépend de la température.",
+      "difficulte": 2,
+      "tags": [
+        "air",
+        "valeur-de-reference",
+        "temperature"
+      ]
+    },
+    {
+      "id": "PC4E-P04-015",
+      "lecon": "Les unités de masse volumique et leurs conversions",
+      "type": "formule",
+      "recto": "Pour convertir une masse volumique de $\\mathrm{g/cm^3}$ en $\\mathrm{kg/m^3}$, quelle opération effectue-t-on ?",
+      "verso": "On multiplie par $1\\,000$ : $2{,}7~\\mathrm{g/cm^3} = 2\\,700~\\mathrm{kg/m^3}$. Dans l'autre sens, on divise par $1\\,000$.",
+      "difficulte": 1,
+      "tags": [
+        "conversion"
+      ]
+    },
+    {
+      "id": "PC4E-P04-016",
+      "lecon": "Les unités de masse volumique et leurs conversions",
+      "type": "formule",
+      "recto": "Pourquoi le facteur de conversion entre $\\mathrm{g/cm^3}$ et $\\mathrm{kg/m^3}$ vaut-il $1\\,000$ et non $1\\,000\\,000$ ?",
+      "verso": "Le mètre cube est un million de fois plus grand que le centimètre cube, mais le kilogramme n'est que mille fois plus grand que le gramme : $\\dfrac{1\\,000\\,000}{1\\,000} = 1\\,000$.",
+      "difficulte": 3,
+      "tags": [
+        "conversion",
+        "piege"
+      ]
+    },
+    {
+      "id": "PC4E-P04-017",
+      "lecon": "Les unités de masse volumique et leurs conversions",
+      "type": "definition",
+      "recto": "Quelles masses volumiques, en $\\mathrm{g/cm^3}$, retenir pour l'aluminium, le fer, le cuivre, le plomb et l'or ?",
+      "verso": "Aluminium $2{,}7$ ; fer et acier $7{,}8$ ; cuivre $8{,}9$ ; plomb $11{,}3$ ; or $19{,}3$ (en $\\mathrm{g/cm^3}$, à température ordinaire).",
+      "difficulte": 2,
+      "tags": [
+        "valeurs-usuelles",
+        "metaux"
+      ]
+    },
+    {
+      "id": "PC4E-P04-018",
+      "lecon": "Les unités de masse volumique et leurs conversions",
+      "type": "definition",
+      "recto": "Quelles masses volumiques, en $\\mathrm{g/cm^3}$, retenir pour le pétrole lampant, le gasoil, l'huile d'arachide et la glace ?",
+      "verso": "Pétrole lampant $0{,}80$ ; gasoil $0{,}84$ ; huile d'arachide et glace $0{,}92$ (en $\\mathrm{g/cm^3}$, à température ordinaire).",
+      "difficulte": 2,
+      "tags": [
+        "valeurs-usuelles",
+        "liquides"
+      ]
+    },
+    {
+      "id": "PC4E-P04-019",
+      "lecon": "La détermination expérimentale d'une masse volumique",
+      "type": "definition",
+      "recto": "Quel est le principe général de la détermination expérimentale d'une masse volumique ?",
+      "verso": "Mesurer la masse du corps, mesurer son volume, puis diviser la masse par le volume, avec des unités qui vont ensemble.",
+      "difficulte": 1,
+      "tags": [
+        "principe",
+        "mesure"
+      ]
+    },
+    {
+      "id": "PC4E-P04-020",
+      "lecon": "La détermination expérimentale d'une masse volumique",
+      "type": "formule",
+      "recto": "Comment mesure-t-on le volume d'un solide par déplacement d'eau dans une éprouvette graduée ?",
+      "verso": "On lit le niveau $V_1$ de l'eau, on plonge le solide entièrement, on lit le nouveau niveau $V_2$ : $V = V_2 - V_1$. Le solide ne doit pas se dissoudre dans l'eau.",
+      "difficulte": 2,
+      "tags": [
+        "deplacement-d-eau",
+        "solide"
+      ]
+    },
+    {
+      "id": "PC4E-P04-021",
+      "lecon": "La détermination expérimentale d'une masse volumique",
+      "type": "formule",
+      "recto": "Par la double pesée d'une éprouvette, quelle relation donne la masse volumique d'un liquide ?",
+      "verso": "On pèse l'éprouvette vide ($m_1$), puis contenant un volume $V$ de liquide ($m_2$) : $\\rho = \\dfrac{m_2 - m_1}{V}$.",
+      "difficulte": 2,
+      "tags": [
+        "liquide",
+        "double-pesee"
+      ]
+    },
+    {
+      "id": "PC4E-P04-022",
+      "lecon": "La détermination expérimentale d'une masse volumique",
+      "type": "definition",
+      "recto": "Comment détermine-t-on la masse d'un gaz pour calculer sa masse volumique ?",
+      "verso": "On pèse un ballon dégonflé, puis le même ballon gonflé d'un volume $V$ connu du gaz : la différence des deux pesées donne la masse du gaz, qu'on divise par $V$.",
+      "difficulte": 2,
+      "tags": [
+        "gaz",
+        "ballon"
+      ]
+    },
+    {
+      "id": "PC4E-P04-023",
+      "lecon": "La détermination expérimentale d'une masse volumique",
+      "type": "definition",
+      "recto": "Comment lit-on correctement le volume d'un liquide dans une éprouvette graduée ?",
+      "verso": "Au bas du ménisque, l'oeil exactement à la hauteur de la graduation. L'éprouvette de $100~\\mathrm{mL}$ se lit au millilitre près.",
+      "difficulte": 2,
+      "tags": [
+        "menisque",
+        "lecture"
+      ]
+    },
+    {
+      "id": "PC4E-P04-024",
+      "lecon": "La détermination expérimentale d'une masse volumique",
+      "type": "definition",
+      "recto": "Pourquoi la pesée d'une éprouvette pleine ne donne-t-elle pas la masse du liquide ?",
+      "verso": "Elle donne la masse du verre plus celle du liquide. Il faut peser d'abord l'éprouvette vide, puis faire la différence $m_2 - m_1$.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "double-pesee"
+      ]
+    },
+    {
+      "id": "PC4E-P04-025",
+      "lecon": "La détermination expérimentale d'une masse volumique",
+      "type": "definition",
+      "recto": "Pourquoi gonfle-t-on un ballon assez gros (2 ou 3 litres) pour mesurer la masse volumique de l'air ?",
+      "verso": "Un litre d'air n'a qu'une masse de $1{,}3~\\mathrm{g}$, à la limite de ce que mesure une balance de classe : un gros volume rend la différence des pesées lisible.",
+      "difficulte": 3,
+      "tags": [
+        "air",
+        "masse-de-l-air"
+      ]
+    },
+    {
+      "id": "PC4E-P04-026",
+      "lecon": "La densité d'un corps",
+      "type": "formule",
+      "recto": "Comment définit-on la densité $d$ d'un corps solide ou liquide ?",
+      "verso": "C'est le quotient de la masse volumique du corps par celle de l'eau : $d = \\dfrac{\\rho_{\\text{corps}}}{\\rho_{\\text{eau}}}$, avec $\\rho_{\\text{eau}} = 1\\,000~\\mathrm{kg/m^3} = 1~\\mathrm{g/cm^3}$.",
+      "difficulte": 1,
+      "tags": [
+        "densite",
+        "solide-liquide"
+      ]
+    },
+    {
+      "id": "PC4E-P04-027",
+      "lecon": "La densité d'un corps",
+      "type": "formule",
+      "recto": "Comment définit-on la densité $d$ d'un gaz ?",
+      "verso": "C'est le quotient de sa masse volumique par celle de l'air : $d = \\dfrac{\\rho_{\\text{gaz}}}{\\rho_{\\text{air}}}$, avec $\\rho_{\\text{air}} \\approx 1{,}3~\\mathrm{kg/m^3}$.",
+      "difficulte": 2,
+      "tags": [
+        "densite",
+        "gaz"
+      ]
+    },
+    {
+      "id": "PC4E-P04-028",
+      "lecon": "La densité d'un corps",
+      "type": "definition",
+      "recto": "Pourquoi la densité d'un corps n'a-t-elle pas d'unité ?",
+      "verso": "C'est le quotient de deux masses volumiques exprimées dans la même unité : les unités se simplifient et il ne reste qu'un nombre. On écrit $d = 2{,}7$, jamais $d = 2{,}7~\\mathrm{g/cm^3}$.",
+      "difficulte": 2,
+      "tags": [
+        "densite",
+        "sans-unite"
+      ]
+    },
+    {
+      "id": "PC4E-P04-029",
+      "lecon": "La densité d'un corps",
+      "type": "formule",
+      "recto": "Connaissant la densité $d$ d'un solide ou d'un liquide, quelle relation donne sa masse volumique ?",
+      "verso": "$\\rho_{\\text{corps}} = d \\times \\rho_{\\text{eau}}$ ; pour un gaz, $\\rho_{\\text{gaz}} = d \\times \\rho_{\\text{air}}$.",
+      "difficulte": 2,
+      "tags": [
+        "densite",
+        "relation"
+      ]
+    },
+    {
+      "id": "PC4E-P04-030",
+      "lecon": "La densité d'un corps",
+      "type": "definition",
+      "recto": "Pourquoi la densité d'un solide ou d'un liquide a-t-elle le même nombre que sa masse volumique exprimée en $\\mathrm{g/cm^3}$ ?",
+      "verso": "Parce que $\\rho_{\\text{eau}} = 1~\\mathrm{g/cm^3}$ : on divise par 1. Le fer, de masse volumique $7{,}8~\\mathrm{g/cm^3}$, a pour densité $7{,}8$.",
+      "difficulte": 2,
+      "tags": [
+        "raccourci",
+        "densite"
+      ]
+    },
+    {
+      "id": "PC4E-P04-031",
+      "lecon": "La densité d'un corps",
+      "type": "definition",
+      "recto": "Comment se comporte dans l'air un gaz selon que sa densité est inférieure ou supérieure à 1 ?",
+      "verso": "Un gaz de densité inférieure à 1 s'élève dans l'air ; un gaz de densité supérieure à 1 descend et s'accumule au sol.",
+      "difficulte": 2,
+      "tags": [
+        "densite",
+        "gaz",
+        "comparaison"
+      ]
+    },
+    {
+      "id": "PC4E-P04-032",
+      "lecon": "La densité d'un corps",
+      "type": "definition",
+      "recto": "Pourquoi le butane qui fuit d'une bouteille de cuisine s'étale-t-il au ras du sol ?",
+      "verso": "Sa masse volumique vaut $2{,}6~\\mathrm{kg/m^3}$, d'où $d = \\dfrac{2{,}6}{1{,}3} = 2$ : plus dense que l'air, il descend et forme au sol une nappe invisible et inflammable. On aère par le bas, sans allumette ni interrupteur.",
+      "difficulte": 3,
+      "tags": [
+        "butane",
+        "securite",
+        "piege"
+      ]
+    },
+    {
+      "id": "PC4E-P04-033",
+      "lecon": "La densité d'un corps",
+      "type": "definition",
+      "recto": "Quelle erreur commet-on en calculant une densité avec une masse volumique en $\\mathrm{g/cm^3}$ divisée par une autre en $\\mathrm{kg/m^3}$ ?",
+      "verso": "Le résultat est mille fois faux : les deux masses volumiques doivent être dans la même unité. Une densité de l'ordre de $5\\,000$ signale un oubli de conversion.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "conversion",
+        "densite"
+      ]
+    }
+  ]
+}

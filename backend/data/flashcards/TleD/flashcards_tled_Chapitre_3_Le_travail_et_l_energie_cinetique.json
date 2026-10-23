@@ -1,0 +1,406 @@
+{
+  "matiere": "Physique-Chimie",
+  "partie": "Physique",
+  "niveau": "Terminale D",
+  "chapitre": "Physique, Chapitre 3 : Le travail et l'énergie cinétique",
+  "source": "pc/tled/Chapitre_3_Le_travail_et_l_energie_cinetique",
+  "nombre_cartes": 34,
+  "cartes": [
+    {
+      "id": "PCTD-P03-001",
+      "lecon": "Le travail d'une force",
+      "type": "definition",
+      "recto": "En mécanique, quand dit-on qu'une force est constante ?",
+      "verso": "Quand sa direction, son sens et son intensité ne changent pas pendant le déplacement de son point d'application.",
+      "difficulte": 1,
+      "tags": [
+        "force-constante"
+      ]
+    },
+    {
+      "id": "PCTD-P03-002",
+      "lecon": "Le travail d'une force",
+      "type": "formule",
+      "recto": "Quelle est l'expression du travail d'une force constante $\\vec{F}$ dont le point d'application se déplace de $A$ vers $B$ ?",
+      "verso": "$W_{A \\rightarrow B}(\\vec{F}) = \\vec{F} \\cdot \\overrightarrow{AB} = F \\times AB \\times \\cos\\alpha$, avec $\\alpha$ l'angle entre $\\vec{F}$ et $\\overrightarrow{AB}$ ; $F$ en N, $AB$ en m, $W$ en joules ($\\mathrm{J}$). Valable seulement pour une force constante.",
+      "difficulte": 1,
+      "tags": [
+        "travail",
+        "produit-scalaire"
+      ]
+    },
+    {
+      "id": "PCTD-P03-003",
+      "lecon": "Le travail d'une force",
+      "type": "formule",
+      "recto": "Dans un repère orthonormé du plan, comment calcule-t-on le travail d'une force constante $\\vec{F}\\left(X ; Y\\right)$ sur un déplacement $\\overrightarrow{AB}\\left(x ; y\\right)$ ?",
+      "verso": "$W = X x + Y y$, avec $x = x_B - x_A$ et $y = y_B - y_A$ ; cette forme évite tout calcul d'angle (dans l'espace, on ajoute $Z z$).",
+      "difficulte": 2,
+      "tags": [
+        "travail",
+        "coordonnees"
+      ]
+    },
+    {
+      "id": "PCTD-P03-004",
+      "lecon": "Le travail d'une force",
+      "type": "definition",
+      "recto": "Quand dit-on que le travail d'une force est moteur ou résistant ?",
+      "verso": "Moteur (positif) si l'angle $\\alpha$ entre la force et le déplacement est inférieur à $90^{\\circ}$ : la force apporte de l'énergie. Résistant (négatif) si $\\alpha \\gt 90^{\\circ}$ : la force en prélève.",
+      "difficulte": 1,
+      "tags": [
+        "travail-moteur",
+        "travail-resistant"
+      ]
+    },
+    {
+      "id": "PCTD-P03-005",
+      "lecon": "Le travail d'une force",
+      "type": "definition",
+      "recto": "Pourquoi la réaction normale d'un support ne travaille-t-elle jamais lors d'un glissement ?",
+      "verso": "Elle est perpendiculaire à la surface de contact, donc au déplacement : $\\alpha = 90^{\\circ}$ et $\\cos 90^{\\circ} = 0$, son travail est nul quelle que soit son intensité.",
+      "difficulte": 2,
+      "tags": [
+        "reaction-normale",
+        "travail-nul"
+      ]
+    },
+    {
+      "id": "PCTD-P03-006",
+      "lecon": "Le travail d'une force",
+      "type": "formule",
+      "recto": "Quelle est l'expression du travail du poids d'un corps de masse $m$ entre $A$ et $B$, l'axe des altitudes $z$ étant orienté vers le haut ?",
+      "verso": "$W_{A \\rightarrow B}(\\vec{P}) = m\\,g\\,(z_A - z_B) = \\pm\\, m\\,g\\,h$, où $h$ est la dénivelée ; si l'axe vertical est orienté vers le bas, $W = mg\\,(z_B - z_A)$.",
+      "difficulte": 1,
+      "tags": [
+        "travail-du-poids"
+      ]
+    },
+    {
+      "id": "PCTD-P03-007",
+      "lecon": "Le travail d'une force",
+      "type": "definition",
+      "recto": "Pourquoi dit-on que le poids est une force conservative ?",
+      "verso": "Parce que son travail ne dépend pas du chemin suivi : il ne dépend que de la différence d'altitude entre le départ et l'arrivée.",
+      "difficulte": 2,
+      "tags": [
+        "force-conservative",
+        "travail-du-poids"
+      ]
+    },
+    {
+      "id": "PCTD-P03-008",
+      "lecon": "Le travail d'une force",
+      "type": "definition",
+      "recto": "Pourquoi une rampe plus longue ne rend-elle pas le travail du poids plus grand pour une même dénivelée ?",
+      "verso": "Le travail du poids ne dépend que de la dénivelée, jamais du chemin : la rampe diminue seulement la force à exercer, sans économiser d'énergie.",
+      "difficulte": 3,
+      "tags": [
+        "travail-du-poids",
+        "piege"
+      ]
+    },
+    {
+      "id": "PCTD-P03-009",
+      "lecon": "Le travail d'une force",
+      "type": "formule",
+      "recto": "Comment obtient-on le travail total d'un ensemble de forces sur un même déplacement ?",
+      "verso": "C'est la somme algébrique des travaux de chaque force, signes compris : $W_1 + W_2 + \\ldots$",
+      "difficulte": 2,
+      "tags": [
+        "additivite"
+      ]
+    },
+    {
+      "id": "PCTD-P03-010",
+      "lecon": "Le travail d'une force",
+      "type": "definition",
+      "recto": "Quelle confusion de symbole guette l'élève qui écrit « $W = 600~\\mathrm{W}$ » pour un travail ?",
+      "verso": "Il confond le symbole $W$ du travail avec le symbole $\\mathrm{W}$ du watt, unité de puissance : un travail s'écrit $W = 600~\\mathrm{J}$, une puissance $P = 600~\\mathrm{W}$.",
+      "difficulte": 3,
+      "tags": [
+        "unites",
+        "piege"
+      ]
+    },
+    {
+      "id": "PCTD-P03-011",
+      "lecon": "Le théorème de l'énergie cinétique",
+      "type": "formule",
+      "recto": "Quelle est l'expression de l'énergie cinétique d'un solide de masse $m$ en translation à la vitesse $v$ ?",
+      "verso": "$E_c = \\dfrac{1}{2}m\\,v^{2}$, avec $m$ en kg, $v$ en m/s et $E_c$ en joules.",
+      "difficulte": 1,
+      "tags": [
+        "energie-cinetique"
+      ]
+    },
+    {
+      "id": "PCTD-P03-012",
+      "lecon": "Le théorème de l'énergie cinétique",
+      "type": "formule",
+      "recto": "Que dit le théorème de l'énergie cinétique ?",
+      "verso": "Dans un référentiel galiléen, la variation de l'énergie cinétique d'un solide entre un état initial et un état final est égale à la somme des travaux de toutes les forces extérieures appliquées entre ces deux états : $\\Delta E_c = E_c^{\\text{final}} - E_c^{\\text{initial}}$.",
+      "difficulte": 1,
+      "tags": [
+        "tec"
+      ]
+    },
+    {
+      "id": "PCTD-P03-013",
+      "lecon": "Le théorème de l'énergie cinétique",
+      "type": "formule",
+      "recto": "Pour un solide en translation allant de $A$ à $B$, comment s'écrit le théorème de l'énergie cinétique ?",
+      "verso": "$\\dfrac{1}{2}m v_B^{2} - \\dfrac{1}{2}m v_A^{2} = W_{A \\rightarrow B}\\left(\\vec{F}_1\\right) + W_{A \\rightarrow B}\\left(\\vec{F}_2\\right) + \\ldots$, somme des travaux des forces extérieures, dans un référentiel galiléen.",
+      "difficulte": 2,
+      "tags": [
+        "tec",
+        "translation"
+      ]
+    },
+    {
+      "id": "PCTD-P03-014",
+      "lecon": "Le théorème de l'énergie cinétique",
+      "type": "definition",
+      "recto": "D'après le théorème de l'énergie cinétique, que devient la vitesse d'un solide quand le travail total des forces extérieures est négatif ?",
+      "verso": "Le solide ralentit ; si le travail total est positif, il accélère, et s'il est nul, sa vitesse finale a la même valeur que sa vitesse initiale.",
+      "difficulte": 2,
+      "tags": [
+        "tec"
+      ]
+    },
+    {
+      "id": "PCTD-P03-015",
+      "lecon": "Le théorème de l'énergie cinétique",
+      "type": "definition",
+      "recto": "Dans quels cas faut-il préférer le théorème de l'énergie cinétique à la deuxième loi de Newton ?",
+      "verso": "Quand l'énoncé relie une vitesse à une position sans parler de durée (vitesse en bas d'une pente, distance de freinage, hauteur atteinte), même sur un trajet courbe.",
+      "difficulte": 2,
+      "tags": [
+        "tec",
+        "choix-methode"
+      ]
+    },
+    {
+      "id": "PCTD-P03-016",
+      "lecon": "Le théorème de l'énergie cinétique",
+      "type": "definition",
+      "recto": "Pourquoi le théorème de l'énergie cinétique ne permet-il pas de calculer la réaction normale d'un support ?",
+      "verso": "Parce que cette force est perpendiculaire au déplacement : son travail est nul, elle n'apparaît pas dans le théorème. Il faut la deuxième loi de Newton projetée.",
+      "difficulte": 3,
+      "tags": [
+        "tec",
+        "reaction-normale"
+      ]
+    },
+    {
+      "id": "PCTD-P03-017",
+      "lecon": "Le théorème de l'énergie cinétique",
+      "type": "definition",
+      "recto": "Quelle erreur commet-on en écrivant $\\Delta E_c = W(\\vec{P}) + W(\\vec{f}) + \\Delta E_{pp}$ ?",
+      "verso": "On compte deux fois l'effet du poids : soit on écrit le théorème de l'énergie cinétique avec le travail du poids, soit on utilise l'énergie mécanique avec l'énergie potentielle de pesanteur, jamais les deux.",
+      "difficulte": 3,
+      "tags": [
+        "tec",
+        "piege"
+      ]
+    },
+    {
+      "id": "PCTD-P03-018",
+      "lecon": "Le théorème de l'énergie cinétique",
+      "type": "definition",
+      "recto": "Quelle erreur commet-on en laissant une vitesse en $\\mathrm{km/h}$ dans $\\dfrac{1}{2}m v^{2}$ ?",
+      "verso": "Le résultat est faux d'un facteur voisin de 13, car $3{,}6^{2} \\approx 13$ : la vitesse doit être en $\\mathrm{m/s}$ ($72~\\mathrm{km/h} = 20~\\mathrm{m/s}$).",
+      "difficulte": 3,
+      "tags": [
+        "unites",
+        "piege"
+      ]
+    },
+    {
+      "id": "PCTD-P03-019",
+      "lecon": "Le théorème de l'énergie cinétique",
+      "type": "definition",
+      "recto": "Quelle distinction fait-on entre un système pseudo-isolé et un système non isolé du point de vue de l'énergie cinétique ?",
+      "verso": "Pseudo-isolé : les forces extérieures se compensent, leur travail total est nul et l'énergie cinétique se conserve. Non isolé : elles ne se compensent pas et le système échange de l'énergie avec l'extérieur.",
+      "difficulte": 2,
+      "tags": [
+        "systeme-pseudo-isole",
+        "systeme-non-isole"
+      ]
+    },
+    {
+      "id": "PCTD-P03-020",
+      "lecon": "Le théorème de l'énergie cinétique",
+      "type": "definition",
+      "recto": "De quel principe plus général le théorème de l'énergie cinétique est-il une forme particulière ?",
+      "verso": "Du principe de conservation de l'énergie : l'énergie ne se crée ni ne se perd, elle se transfère, et le travail mesure ce transfert par une force.",
+      "difficulte": 2,
+      "tags": [
+        "conservation-energie"
+      ]
+    },
+    {
+      "id": "PCTD-P03-021",
+      "lecon": "La puissance d'une force",
+      "type": "formule",
+      "recto": "Comment définit-on la puissance moyenne d'une force qui effectue un travail $W$ pendant une durée $\\Delta t$ ?",
+      "verso": "$P_{\\text{moy}} = \\dfrac{W}{\\Delta t}$ (notée aussi $P_m$), en watts ($\\mathrm{W}$), avec $W$ en J et $\\Delta t$ en s.",
+      "difficulte": 1,
+      "tags": [
+        "puissance-moyenne"
+      ]
+    },
+    {
+      "id": "PCTD-P03-022",
+      "lecon": "La puissance d'une force",
+      "type": "formule",
+      "recto": "Quelle est l'expression de la puissance instantanée d'une force $\\vec{F}$ dont le point d'application a la vitesse $\\vec{v}$ ?",
+      "verso": "$P = \\dfrac{dW}{dt} = \\vec{F} \\cdot \\vec{v} = F \\times v \\times \\cos\\alpha$, avec $\\alpha$ l'angle entre $\\vec{F}$ et $\\vec{v}$, $v$ en m/s et $P$ en W.",
+      "difficulte": 2,
+      "tags": [
+        "puissance-instantanee"
+      ]
+    },
+    {
+      "id": "PCTD-P03-023",
+      "lecon": "La puissance d'une force",
+      "type": "formule",
+      "recto": "Comment s'énonce le théorème de l'énergie cinétique sous forme de puissances ?",
+      "verso": "La dérivée par rapport au temps de l'énergie cinétique d'un solide est égale à la somme des puissances des forces extérieures : $\\dfrac{dE_c}{dt} = P_1 + P_2 + \\ldots$ (référentiel galiléen).",
+      "difficulte": 2,
+      "tags": [
+        "tec",
+        "puissance"
+      ]
+    },
+    {
+      "id": "PCTD-P03-024",
+      "lecon": "La puissance d'une force",
+      "type": "formule",
+      "recto": "Quelles sont les valeurs en watts du kilowatt, du mégawatt et du cheval-vapeur ?",
+      "verso": "$1~\\mathrm{kW} = 10^{3}~\\mathrm{W}$ ; $1~\\mathrm{MW} = 10^{6}~\\mathrm{W}$ ; $1~\\mathrm{ch} = 736~\\mathrm{W}$.",
+      "difficulte": 1,
+      "tags": [
+        "unites",
+        "puissance"
+      ]
+    },
+    {
+      "id": "PCTD-P03-025",
+      "lecon": "La puissance d'une force",
+      "type": "definition",
+      "recto": "Pourquoi le kilowattheure n'est-il pas une unité de puissance ?",
+      "verso": "C'est une énergie : une puissance de $1~\\mathrm{kW}$ pendant une heure, soit $1~\\mathrm{kWh} = 3{,}6 \\times 10^{6}~\\mathrm{J}$.",
+      "difficulte": 3,
+      "tags": [
+        "kilowattheure",
+        "piege"
+      ]
+    },
+    {
+      "id": "PCTD-P03-026",
+      "lecon": "La puissance d'une force",
+      "type": "formule",
+      "recto": "Quelle est la puissance d'une force perpendiculaire à la vitesse de son point d'application ?",
+      "verso": "Elle est nulle, car $\\cos 90^{\\circ} = 0$ dans $P = F\\,v\\cos\\alpha$ ; une telle force a aussi un travail nul.",
+      "difficulte": 2,
+      "tags": [
+        "puissance-nulle"
+      ]
+    },
+    {
+      "id": "PCTD-P03-027",
+      "lecon": "Le théorème à l'oeuvre : plan incliné, pendule et rendement",
+      "type": "formule",
+      "recto": "Comment définit-on le rendement $\\eta$ d'un dispositif ?",
+      "verso": "$\\eta = \\dfrac{W_{\\text{utile}}}{W_{\\text{fourni}}} = \\dfrac{P_{\\text{utile}}}{P_{\\text{fournie}}}$ : nombre sans unité, compris entre 0 et 1, souvent exprimé en pourcentage.",
+      "difficulte": 1,
+      "tags": [
+        "rendement"
+      ]
+    },
+    {
+      "id": "PCTD-P03-028",
+      "lecon": "Le théorème à l'oeuvre : plan incliné, pendule et rendement",
+      "type": "definition",
+      "recto": "Pourquoi le rendement d'une machine réelle est-il toujours inférieur à 1 ?",
+      "verso": "Les frottements entre pièces ont un travail négatif : une partie de l'énergie fournie est dissipée en chaleur, donc le travail utile est inférieur au travail fourni. Un rendement supérieur à 1 trahit un rapport inversé.",
+      "difficulte": 2,
+      "tags": [
+        "rendement",
+        "frottements"
+      ]
+    },
+    {
+      "id": "PCTD-P03-029",
+      "lecon": "Le théorème à l'oeuvre : plan incliné, pendule et rendement",
+      "type": "formule",
+      "recto": "Pour un trajet de longueur $L$ sur un plan incliné d'angle $\\alpha$, quelles sont la dénivelée $h$ et le travail du poids ?",
+      "verso": "$h = L\\sin\\alpha$ (jamais $L\\cos\\alpha$) et $W(\\vec{P}) = \\pm\\, mgL\\sin\\alpha$ ; la réaction normale ne travaille pas et un frottement constant $f$ travaille de $-fL$.",
+      "difficulte": 2,
+      "tags": [
+        "plan-incline",
+        "denivelee"
+      ]
+    },
+    {
+      "id": "PCTD-P03-030",
+      "lecon": "Le théorème à l'oeuvre : plan incliné, pendule et rendement",
+      "type": "formule",
+      "recto": "Pour un pendule simple de longueur $L$ écarté d'un angle $\\alpha$ de la verticale, quelle est la dénivelée $h$ jusqu'au point le plus bas ?",
+      "verso": "$h = L\\left(1 - \\cos\\alpha\\right)$, et non $L\\cos\\alpha$ ; la tension du fil, perpendiculaire au déplacement, a un travail nul.",
+      "difficulte": 2,
+      "tags": [
+        "pendule",
+        "denivelee"
+      ]
+    },
+    {
+      "id": "PCTD-P03-031",
+      "lecon": "Le théorème à l'oeuvre : plan incliné, pendule et rendement",
+      "type": "formule",
+      "recto": "Quel est le travail d'une force de frottement d'intensité constante $f$, toujours opposée à la vitesse, sur un arc de cercle de rayon $r$ et d'angle $\\theta$ ?",
+      "verso": "$W(\\vec{f}) = -f \\times s = -f\\,r\\,\\theta$, avec $\\theta$ en radians, $s$ étant la longueur du trajet.",
+      "difficulte": 2,
+      "tags": [
+        "frottement",
+        "trajet-courbe"
+      ]
+    },
+    {
+      "id": "PCTD-P03-032",
+      "lecon": "Le théorème à l'oeuvre : plan incliné, pendule et rendement",
+      "type": "definition",
+      "recto": "Pour un solide sur une piste circulaire, à quelle condition quitte-t-il la piste ?",
+      "verso": "Quand la réaction $R$ de la piste s'annule ; il y reste tant que $R \\gt 0$. De même, un fil reste tendu tant que sa tension $T \\gt 0$.",
+      "difficulte": 2,
+      "tags": [
+        "piste-circulaire"
+      ]
+    },
+    {
+      "id": "PCTD-P03-033",
+      "lecon": "Le théorème à l'oeuvre : plan incliné, pendule et rendement",
+      "type": "formule",
+      "recto": "Pour un solide de masse $m$ au fond d'une boucle de rayon $r$, quelle relation donne la projection de la deuxième loi de Newton sur la normale orientée vers le centre ?",
+      "verso": "$R - mg = m\\dfrac{v^{2}}{r}$ ; au sommet d'une bosse parcourue par l'extérieur, $mg - R = m\\dfrac{v^{2}}{r}$ (référentiel terrestre supposé galiléen).",
+      "difficulte": 3,
+      "tags": [
+        "piste-circulaire",
+        "reaction"
+      ]
+    },
+    {
+      "id": "PCTD-P03-034",
+      "lecon": "Le théorème à l'oeuvre : plan incliné, pendule et rendement",
+      "type": "definition",
+      "recto": "Quel est le travail de la réaction $\\vec{R} = \\vec{R}_N + \\vec{f}$ d'un support quand elle regroupe réaction normale et frottement ?",
+      "verso": "Il n'est pas nul : $W(\\vec{R}) = W(\\vec{f})$, car seule la composante normale $\\vec{R}_N$ a un travail nul.",
+      "difficulte": 3,
+      "tags": [
+        "reaction",
+        "frottement"
+      ]
+    }
+  ]
+}

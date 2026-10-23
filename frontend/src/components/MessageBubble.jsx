@@ -3,7 +3,7 @@ import { motion } from "framer-motion"
 import { Bot, GraduationCap, Copy, Check, RefreshCcw, BookOpen, ListChecks, Baby, AlertTriangle } from "lucide-react"
 import Button from "./ui/Button"
 import Card from "./ui/Card"
-import MathContent from "./MathContent"
+import RichContent from "./RichContent"
 import { formatMessageTime } from "../lib/dateFormat"
 
 const KIND_META = {
@@ -82,7 +82,7 @@ export default function MessageBubble({ message, onRegenerate, regenerating, onS
               </>
             ) : (
               <div className="prose-chat max-w-none">
-                <MathContent>{message.text || ""}</MathContent>
+                <RichContent>{message.text || ""}</RichContent>
                 {message.streaming && (
                   <span className="ml-0.5 inline-block h-4 w-1.5 animate-pulse bg-primary/70 align-middle" />
                 )}

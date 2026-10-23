@@ -1,0 +1,439 @@
+{
+  "matiere": "Physique-Chimie",
+  "partie": "Physique",
+  "niveau": "1ère D",
+  "chapitre": "Physique, Chapitre 6 : Les ondes progressives",
+  "source": "pc/1ered/Chapitre_6_Les_ondes_progressives",
+  "nombre_cartes": 36,
+  "cartes": [
+    {
+      "id": "PC1D-P06-001",
+      "lecon": "Des phénomènes périodiques à l'onde progressive",
+      "type": "definition",
+      "recto": "Quand dit-on qu'un phénomène est périodique ?",
+      "verso": "Lorsqu'il se reproduit identique à lui-même à intervalles de temps égaux. La plus petite de ces durées est la période $T$, en secondes.",
+      "difficulte": 1,
+      "tags": [
+        "phenomene-periodique",
+        "periode"
+      ]
+    },
+    {
+      "id": "PC1D-P06-002",
+      "lecon": "Des phénomènes périodiques à l'onde progressive",
+      "type": "formule",
+      "recto": "Quelle relation lie la fréquence $f$ d'un phénomène périodique à sa période $T$ ?",
+      "verso": "$f = \\dfrac{1}{T}$, avec $f$ en hertz ($\\mathrm{Hz}$) et $T$ en secondes ($\\mathrm{s}$). La fréquence est souvent notée $N$ : c'est la même grandeur.",
+      "difficulte": 1,
+      "tags": [
+        "frequence",
+        "periode"
+      ]
+    },
+    {
+      "id": "PC1D-P06-003",
+      "lecon": "Des phénomènes périodiques à l'onde progressive",
+      "type": "definition",
+      "recto": "Pour un phénomène vibratoire, que désignent l'élongation $y$ et l'amplitude $a$ ?",
+      "verso": "L'élongation $y$ est l'écart instantané du corps à sa position d'équilibre ; l'amplitude $a$ est la valeur maximale de cette élongation.",
+      "difficulte": 1,
+      "tags": [
+        "elongation",
+        "amplitude",
+        "vocabulaire"
+      ]
+    },
+    {
+      "id": "PC1D-P06-004",
+      "lecon": "Des phénomènes périodiques à l'onde progressive",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on une source entretenue ?",
+      "verso": "Une source qui émet des signaux sans s'arrêter, à intervalles réguliers : main qui secoue une corde sans relâche, vibreur électrique, membrane d'un haut-parleur.",
+      "difficulte": 1,
+      "tags": [
+        "source-entretenue"
+      ]
+    },
+    {
+      "id": "PC1D-P06-005",
+      "lecon": "Des phénomènes périodiques à l'onde progressive",
+      "type": "definition",
+      "recto": "Comment définit-on une onde progressive ?",
+      "verso": "C'est la propagation, de proche en proche et sans transport de matière, d'une suite de signaux émis par une source entretenue. Elle transporte de l'énergie et de l'information.",
+      "difficulte": 2,
+      "tags": [
+        "onde-progressive",
+        "definition"
+      ]
+    },
+    {
+      "id": "PC1D-P06-006",
+      "lecon": "Des phénomènes périodiques à l'onde progressive",
+      "type": "definition",
+      "recto": "Qu'est-ce qui distingue une onde transversale d'une onde longitudinale ?",
+      "verso": "Dans une onde transversale, les points du milieu vibrent perpendiculairement à la direction de propagation (corde) ; dans une onde longitudinale, ils vibrent parallèlement à cette direction (son dans l'air).",
+      "difficulte": 2,
+      "tags": [
+        "transversale",
+        "longitudinale"
+      ]
+    },
+    {
+      "id": "PC1D-P06-007",
+      "lecon": "Des phénomènes périodiques à l'onde progressive",
+      "type": "formule",
+      "recto": "De quoi dépend la célérité $v$ d'une onde progressive ?",
+      "verso": "Uniquement du milieu de propagation, jamais de la source ni de sa fréquence. Sur une corde tendue, $v = \\sqrt{\\dfrac{F}{\\mu}}$, avec $F$ en $\\mathrm{N}$ et la masse linéique $\\mu$ en $\\mathrm{kg/m}$.",
+      "difficulte": 2,
+      "tags": [
+        "celerite",
+        "milieu"
+      ]
+    },
+    {
+      "id": "PC1D-P06-008",
+      "lecon": "Des phénomènes périodiques à l'onde progressive",
+      "type": "definition",
+      "recto": "Quelles sont les limites du domaine audible de l'oreille humaine ?",
+      "verso": "Environ de $20~\\mathrm{Hz}$ à $20\\,000~\\mathrm{Hz}$. Au-dessus de $20\\,000~\\mathrm{Hz}$, on parle d'ultrasons.",
+      "difficulte": 1,
+      "tags": [
+        "domaine-audible",
+        "ultrasons",
+        "son"
+      ]
+    },
+    {
+      "id": "PC1D-P06-009",
+      "lecon": "Des phénomènes périodiques à l'onde progressive",
+      "type": "definition",
+      "recto": "Pourquoi la vitesse d'un ruban noué sur une corde parcourue par une onde n'est-elle pas la célérité de l'onde ?",
+      "verso": "Le ruban monte et descend sur place, perpendiculairement à la corde, alors que la célérité est la vitesse de déplacement de la forme le long de la corde : deux vitesses différentes, dans deux directions différentes.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "celerite",
+        "attention"
+      ]
+    },
+    {
+      "id": "PC1D-P06-010",
+      "lecon": "Des phénomènes périodiques à l'onde progressive",
+      "type": "definition",
+      "recto": "Pourquoi une onde mécanique ne se propage-t-elle pas dans le vide ?",
+      "verso": "Elle se transmet de proche en proche entre les points voisins d'un milieu matériel, reliés par des forces élastiques : sans matière, aucune propagation n'est possible.",
+      "difficulte": 2,
+      "tags": [
+        "onde-mecanique",
+        "milieu-materiel"
+      ]
+    },
+    {
+      "id": "PC1D-P06-011",
+      "lecon": "La double périodicité : période $T$ et longueur d'onde $\\lambda$",
+      "type": "definition",
+      "recto": "Pour une onde progressive périodique, comment définit-on la période $T$ ?",
+      "verso": "C'est la plus petite durée au bout de laquelle un point donné du milieu se retrouve dans le même état vibratoire. Elle est égale à la période de la source et s'exprime en secondes.",
+      "difficulte": 2,
+      "tags": [
+        "periode",
+        "periodicite-temporelle"
+      ]
+    },
+    {
+      "id": "PC1D-P06-012",
+      "lecon": "La double périodicité : période $T$ et longueur d'onde $\\lambda$",
+      "type": "definition",
+      "recto": "Pour une onde progressive périodique, comment définit-on la longueur d'onde $\\lambda$ ?",
+      "verso": "C'est la plus petite distance séparant deux points du milieu qui vibrent en phase ; c'est aussi la distance parcourue par l'onde pendant une période. Elle s'exprime en mètres.",
+      "difficulte": 2,
+      "tags": [
+        "longueur-d-onde",
+        "periodicite-spatiale"
+      ]
+    },
+    {
+      "id": "PC1D-P06-013",
+      "lecon": "La double périodicité : période $T$ et longueur d'onde $\\lambda$",
+      "type": "formule",
+      "recto": "Quelle relation lie la longueur d'onde $\\lambda$, la célérité $v$ et la période $T$ d'une onde progressive périodique ?",
+      "verso": "$\\lambda = v\\,T = \\dfrac{v}{f}$, avec $\\lambda$ en $\\mathrm{m}$, $v$ en $\\mathrm{m/s}$, $T$ en $\\mathrm{s}$ et $f$ en $\\mathrm{Hz}$. On en tire $v = \\lambda f$.",
+      "difficulte": 1,
+      "tags": [
+        "relation-fondamentale",
+        "longueur-d-onde"
+      ]
+    },
+    {
+      "id": "PC1D-P06-014",
+      "lecon": "La double périodicité : période $T$ et longueur d'onde $\\lambda$",
+      "type": "formule",
+      "recto": "Lorsqu'une onde progressive passe d'un milieu à un autre, quelle grandeur se conserve et lesquelles changent ?",
+      "verso": "La fréquence $f$ (fixée par la source) se conserve ; la célérité $v$ (fixée par le milieu) change, donc la longueur d'onde $\\lambda = \\dfrac{v}{f}$ change aussi.",
+      "difficulte": 2,
+      "tags": [
+        "changement-de-milieu",
+        "frequence"
+      ]
+    },
+    {
+      "id": "PC1D-P06-015",
+      "lecon": "La double périodicité : période $T$ et longueur d'onde $\\lambda$",
+      "type": "definition",
+      "recto": "Pour une onde longitudinale le long d'un ressort, à quelle distance correspond la longueur d'onde $\\lambda$ ?",
+      "verso": "A la distance entre deux zones de compression successives du ressort.",
+      "difficulte": 2,
+      "tags": [
+        "longueur-d-onde",
+        "onde-longitudinale"
+      ]
+    },
+    {
+      "id": "PC1D-P06-016",
+      "lecon": "La double périodicité : période $T$ et longueur d'onde $\\lambda$",
+      "type": "definition",
+      "recto": "Qu'est-ce qui distingue la photographie d'une onde de son chronogramme ?",
+      "verso": "La photographie montre tous les points à une date fixée (axe horizontal : abscisse $x$, en m) et donne $\\lambda$ ; le chronogramme montre un seul point à tous les instants (axe horizontal : temps $t$, en s) et donne $T$.",
+      "difficulte": 2,
+      "tags": [
+        "photographie",
+        "chronogramme"
+      ]
+    },
+    {
+      "id": "PC1D-P06-017",
+      "lecon": "La double périodicité : période $T$ et longueur d'onde $\\lambda$",
+      "type": "formule",
+      "recto": "Pour lire $\\lambda$ ou $T$ sur une courbe d'onde, que faut-il compter entre deux états identiques éloignés ?",
+      "verso": "Les intervalles, pas les crêtes : on mesure la longueur ou la durée totale $D$ couvrant $n$ intervalles successifs, puis on divise par $n$. De la première à la quatrième crête, il y a trois intervalles.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "lecture-graphique",
+        "trouve-l-erreur"
+      ]
+    },
+    {
+      "id": "PC1D-P06-018",
+      "lecon": "La double périodicité : période $T$ et longueur d'onde $\\lambda$",
+      "type": "formule",
+      "recto": "A célérité fixée, comment varie la longueur d'onde quand on augmente la fréquence de la source ?",
+      "verso": "Elle diminue, puisque $\\lambda = \\dfrac{v}{f}$ et que $v$ ne dépend que du milieu. Secouer une corde plus vite ne fait pas aller l'onde plus vite.",
+      "difficulte": 3,
+      "tags": [
+        "frequence",
+        "longueur-d-onde"
+      ]
+    },
+    {
+      "id": "PC1D-P06-019",
+      "lecon": "La double périodicité : période $T$ et longueur d'onde $\\lambda$",
+      "type": "formule",
+      "recto": "Sur l'aspect d'une corde à la date $t$, la source ayant démarré à la date 0, où se trouve le front de l'onde et dans quel état est-il ?",
+      "verso": "Le front est à l'abscisse $x_F = vt$ ; au-delà, la corde est au repos. Le point du front est à sa position de repos et va partir dans le sens du premier mouvement de la source.",
+      "difficulte": 3,
+      "tags": [
+        "aspect-de-la-corde",
+        "front"
+      ]
+    },
+    {
+      "id": "PC1D-P06-020",
+      "lecon": "Phase, retard et élongation d'un point",
+      "type": "formule",
+      "recto": "Quel retard $\\tau$ présente un point $M$ situé à la distance $d$ de la source d'une onde de célérité $v$ ?",
+      "verso": "$\\tau = \\dfrac{d}{v}$, avec $d$ en $\\mathrm{m}$, $v$ en $\\mathrm{m/s}$ et $\\tau$ en $\\mathrm{s}$.",
+      "difficulte": 1,
+      "tags": [
+        "retard"
+      ]
+    },
+    {
+      "id": "PC1D-P06-021",
+      "lecon": "Phase, retard et élongation d'un point",
+      "type": "formule",
+      "recto": "Si la source vibre selon $y_S(t) = a\\sin\\left(\\dfrac{2\\pi}{T}t\\right)$, quelle est l'élongation d'un point $M$ situé à la distance $d$ de la source ?",
+      "verso": "$y_M(t) = y_S(t - \\tau) = a\\sin\\left[\\dfrac{2\\pi}{T}\\left(t - \\dfrac{d}{v}\\right)\\right]$ pour $t \\geq \\tau$, et $y_M(t) = 0$ pour $t \\lt \\tau$, avec $\\tau = \\dfrac{d}{v}$.",
+      "difficulte": 2,
+      "tags": [
+        "elongation",
+        "retard"
+      ]
+    },
+    {
+      "id": "PC1D-P06-022",
+      "lecon": "Phase, retard et élongation d'un point",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on la pulsation $\\omega$ d'une onde sinusoïdale ?",
+      "verso": "$\\omega = \\dfrac{2\\pi}{T} = 2\\pi f$, en radians par seconde ; la source vibre alors selon $y_S(t) = a\\sin(\\omega t)$.",
+      "difficulte": 2,
+      "tags": [
+        "pulsation"
+      ]
+    },
+    {
+      "id": "PC1D-P06-023",
+      "lecon": "Phase, retard et élongation d'un point",
+      "type": "formule",
+      "recto": "Quelle est la différence de phase $\\Delta\\varphi$ entre deux points d'une onde distants de $d$ ?",
+      "verso": "$\\Delta\\varphi = 2\\pi\\dfrac{d}{\\lambda}$, en radians ; elle s'écrit aussi $2\\pi\\dfrac{\\tau}{T}$ avec le retard $\\tau$ entre les deux points.",
+      "difficulte": 2,
+      "tags": [
+        "difference-de-phase"
+      ]
+    },
+    {
+      "id": "PC1D-P06-024",
+      "lecon": "Phase, retard et élongation d'un point",
+      "type": "formule",
+      "recto": "A quelle condition sur leur distance $d$ deux points d'une onde vibrent-ils en phase ?",
+      "verso": "Si $d = k\\lambda$, avec $k$ entier, soit $\\Delta\\varphi = 2k\\pi$ : ils font le même mouvement au même instant.",
+      "difficulte": 1,
+      "tags": [
+        "en-phase"
+      ]
+    },
+    {
+      "id": "PC1D-P06-025",
+      "lecon": "Phase, retard et élongation d'un point",
+      "type": "formule",
+      "recto": "A quelle condition sur leur distance $d$ deux points d'une onde vibrent-ils en opposition de phase ?",
+      "verso": "Si $d = (2k+1)\\dfrac{\\lambda}{2}$, avec $k$ entier, soit $\\Delta\\varphi = (2k+1)\\pi$ : ils font des mouvements opposés.",
+      "difficulte": 2,
+      "tags": [
+        "opposition-de-phase"
+      ]
+    },
+    {
+      "id": "PC1D-P06-026",
+      "lecon": "Phase, retard et élongation d'un point",
+      "type": "formule",
+      "recto": "A quelle condition sur leur distance $d$ deux points d'une onde vibrent-ils en quadrature de phase ?",
+      "verso": "Si $d = (2k+1)\\dfrac{\\lambda}{4}$, avec $k$ entier, soit $\\Delta\\varphi = (2k+1)\\dfrac{\\pi}{2}$ : l'un passe par zéro quand l'autre est à son maximum.",
+      "difficulte": 2,
+      "tags": [
+        "quadrature-de-phase"
+      ]
+    },
+    {
+      "id": "PC1D-P06-027",
+      "lecon": "Phase, retard et élongation d'un point",
+      "type": "formule",
+      "recto": "Pourquoi le retard d'un point sur la source ne s'écrit-il pas $\\dfrac{d}{\\lambda}$ ?",
+      "verso": "Le quotient $\\dfrac{d}{\\lambda}$ est un nombre sans unité. Le retard se calcule avec la célérité : $\\tau = \\dfrac{d}{v}$, en secondes.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "retard",
+        "trouve-l-erreur"
+      ]
+    },
+    {
+      "id": "PC1D-P06-028",
+      "lecon": "Phase, retard et élongation d'un point",
+      "type": "definition",
+      "recto": "Pourquoi deux points distants de $\\dfrac{3\\lambda}{2}$ ne vibrent-ils pas en phase ?",
+      "verso": "C'est le rapport $\\dfrac{d}{\\lambda}$ qui décide : ici il vaut $1{,}5$, un demi-entier impair, donc les points vibrent en opposition de phase, comme deux points distants de $\\dfrac{\\lambda}{2}$.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "opposition-de-phase"
+      ]
+    },
+    {
+      "id": "PC1D-P06-029",
+      "lecon": "Les ondes à la surface d'un liquide",
+      "type": "definition",
+      "recto": "De quelle nature est une onde qui se propage à la surface d'un liquide ?",
+      "verso": "Transversale : les points de la surface vibrent verticalement, tandis que l'onde progresse horizontalement, dans toutes les directions du plan.",
+      "difficulte": 1,
+      "tags": [
+        "surface-liquide",
+        "transversale"
+      ]
+    },
+    {
+      "id": "PC1D-P06-030",
+      "lecon": "Les ondes à la surface d'un liquide",
+      "type": "definition",
+      "recto": "A la surface d'un liquide, qu'appelle-t-on une ligne d'onde ?",
+      "verso": "Une ligne formée de points de la surface qui vibrent en phase, par exemple une crête. Deux lignes d'ondes voisines sont distantes de $\\lambda$, et la direction de propagation leur est perpendiculaire.",
+      "difficulte": 2,
+      "tags": [
+        "ligne-d-onde"
+      ]
+    },
+    {
+      "id": "PC1D-P06-031",
+      "lecon": "Les ondes à la surface d'un liquide",
+      "type": "definition",
+      "recto": "Qu'est-ce qui distingue une onde circulaire transversale d'une onde plane transversale à la surface d'un liquide ?",
+      "verso": "Une source ponctuelle (pointe, goutte) donne une onde circulaire : lignes d'ondes en cercles concentriques centrés sur la source. Une source rectiligne (réglette) donne une onde plane : lignes d'ondes en droites parallèles à la réglette.",
+      "difficulte": 2,
+      "tags": [
+        "onde-circulaire",
+        "onde-plane"
+      ]
+    },
+    {
+      "id": "PC1D-P06-032",
+      "lecon": "Les ondes à la surface d'un liquide",
+      "type": "formule",
+      "recto": "Pour une onde circulaire issue de $S$, à quelle condition deux points $A$ et $B$ de la surface vibrent-ils en phase ?",
+      "verso": "Si $\\lvert SA - SB \\rvert = k\\lambda$, avec $k$ entier, quelle que soit la direction de chaque point. Tous les points d'un même cercle de centre $S$ vibrent donc en phase.",
+      "difficulte": 2,
+      "tags": [
+        "onde-circulaire",
+        "en-phase"
+      ]
+    },
+    {
+      "id": "PC1D-P06-033",
+      "lecon": "Les ondes à la surface d'un liquide",
+      "type": "formule",
+      "recto": "De quoi dépend la célérité d'une onde à la surface d'un liquide ?",
+      "verso": "Du liquide et surtout de la profondeur : en eau peu profonde, l'onde ralentit quand la profondeur diminue. Dans la cuve à ondes, on la considère indépendante de la fréquence, sauf indication contraire.",
+      "difficulte": 2,
+      "tags": [
+        "celerite",
+        "profondeur"
+      ]
+    },
+    {
+      "id": "PC1D-P06-034",
+      "lecon": "Les ondes à la surface d'un liquide",
+      "type": "formule",
+      "recto": "Pour une onde de fréquence $f$ éclairée par un stroboscope de fréquence $f_e$, quand observe-t-on l'immobilité apparente ?",
+      "verso": "Pour $f_e = f$, $\\dfrac{f}{2}$, $\\dfrac{f}{3}$... ; la plus grande fréquence des éclairs donnant l'immobilité apparente est égale à $f$. Si $f_e$ est un peu plus petite que $f$, on voit un mouvement ralenti apparent.",
+      "difficulte": 3,
+      "tags": [
+        "stroboscope",
+        "immobilite-apparente"
+      ]
+    },
+    {
+      "id": "PC1D-P06-035",
+      "lecon": "Les ondes à la surface d'un liquide",
+      "type": "definition",
+      "recto": "Dans une cuve à ondes, pourquoi les crêtes apparaissent-elles en lignes claires sur l'écran ?",
+      "verso": "Les crêtes se comportent comme de petites lentilles qui concentrent la lumière de la lampe placée au-dessus ; les creux donnent des lignes sombres.",
+      "difficulte": 2,
+      "tags": [
+        "cuve-a-ondes"
+      ]
+    },
+    {
+      "id": "PC1D-P06-036",
+      "lecon": "Les ondes à la surface d'un liquide",
+      "type": "formule",
+      "recto": "Pourquoi ne peut-on pas lire la période $T$ sur une photographie de cuve à ondes ?",
+      "verso": "Une photographie fige le temps : on n'y lit que la longueur d'onde $\\lambda$, en mètres. $T$ s'obtient par la fréquence du vibreur ($T = \\dfrac{1}{f}$) ou par un chronogramme.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "photographie",
+        "cuve-a-ondes"
+      ]
+    }
+  ]
+}

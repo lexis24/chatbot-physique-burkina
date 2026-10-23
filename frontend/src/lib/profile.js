@@ -2,7 +2,7 @@
  * Profil de progression de l'élève, persisté dans localStorage indépendamment de la session
  * de chat en cours : sert d'"assistant personnel" léger (sujets déjà travaillés, notions à revoir).
  */
-const PROFILE_KEY = "chatmaths-profile-v1"
+const PROFILE_KEY = "chatphysique-profile-v1"
 const MAX_TOPICS = 8
 const MAX_STRUGGLES = 10
 

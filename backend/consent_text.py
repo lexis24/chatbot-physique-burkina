@@ -25,8 +25,8 @@ fois sur l'autre, et te dire quelles notions revoir en priorité.
 
 **Qui peut voir ces informations ?**
 Tes questions et tes réponses ne sont visibles que par toi. L'équipe qui gère l'application peut
-voir des statistiques globales (par exemple : "30% des élèves de 3ème se trompent souvent sur le
-théorème de Pythagore") mais jamais tes questions précises ni qui tu es — ces statistiques ne sont
+voir des statistiques globales (par exemple : "30% des élèves de 3ème se trompent souvent sur la
+loi d'Ohm") mais jamais tes questions précises ni qui tu es — ces statistiques ne sont
 calculées que si assez d'élèves sont concernés, pour qu'on ne puisse jamais deviner qui a répondu
 quoi.
 

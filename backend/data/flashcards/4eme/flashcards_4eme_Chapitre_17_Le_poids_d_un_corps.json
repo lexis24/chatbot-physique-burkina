@@ -1,0 +1,407 @@
+{
+  "matiere": "Physique-Chimie",
+  "partie": "Physique",
+  "niveau": "4ème",
+  "chapitre": "Physique, Chapitre 17 : Le poids d'un corps",
+  "source": "pc/4eme/Chapitre_17_Le_poids_d_un_corps",
+  "nombre_cartes": 33,
+  "cartes": [
+    {
+      "id": "PC4E-P17-001",
+      "lecon": "Le poids d'un corps, ses caractéristiques et son centre de gravité",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on le poids d'un corps ?",
+      "verso": "C'est la force d'attraction que la Terre exerce sur ce corps, appelée aussi force de pesanteur ou attraction terrestre. Il se note $\\vec{P}$, sa valeur $P$ s'exprime en newtons ($\\mathrm{N}$).",
+      "difficulte": 1,
+      "tags": [
+        "poids",
+        "definition"
+      ]
+    },
+    {
+      "id": "PC4E-P17-002",
+      "lecon": "Le poids d'un corps, ses caractéristiques et son centre de gravité",
+      "type": "definition",
+      "recto": "Le poids est-il une force de contact ou une force à distance ?",
+      "verso": "C'est une force à distance : la Terre attire le corps sans le toucher, qu'il soit posé, suspendu ou en mouvement.",
+      "difficulte": 1,
+      "tags": [
+        "poids",
+        "force-a-distance"
+      ]
+    },
+    {
+      "id": "PC4E-P17-003",
+      "lecon": "Le poids d'un corps, ses caractéristiques et son centre de gravité",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on la verticale d'un lieu ?",
+      "verso": "C'est la direction indiquée en ce lieu par un fil à plomb au repos, c'est-à-dire la droite qui passe par ce lieu et par le centre de la Terre.",
+      "difficulte": 2,
+      "tags": [
+        "verticale",
+        "fil-a-plomb"
+      ]
+    },
+    {
+      "id": "PC4E-P17-004",
+      "lecon": "Le poids d'un corps, ses caractéristiques et son centre de gravité",
+      "type": "definition",
+      "recto": "Comment le plan horizontal d'un lieu est-il défini par rapport à la verticale de ce lieu ?",
+      "verso": "Il est perpendiculaire à la verticale ; c'est le plan indiqué par la surface libre d'un liquide au repos.",
+      "difficulte": 2,
+      "tags": [
+        "horizontal",
+        "verticale"
+      ]
+    },
+    {
+      "id": "PC4E-P17-005",
+      "lecon": "Le poids d'un corps, ses caractéristiques et son centre de gravité",
+      "type": "definition",
+      "recto": "Pourquoi les verticales de deux villes éloignées ne sont-elles pas parallèles ?",
+      "verso": "Parce que chaque verticale passe par le centre de la Terre : les deux droites se coupent en ce point.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "verticale"
+      ]
+    },
+    {
+      "id": "PC4E-P17-006",
+      "lecon": "Le poids d'un corps, ses caractéristiques et son centre de gravité",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on le centre de gravité d'un corps ?",
+      "verso": "C'est le point d'application du poids, noté $G$ : le point où tout se passe comme si tout le poids du corps était concentré.",
+      "difficulte": 1,
+      "tags": [
+        "centre-de-gravite"
+      ]
+    },
+    {
+      "id": "PC4E-P17-007",
+      "lecon": "Le poids d'un corps, ses caractéristiques et son centre de gravité",
+      "type": "definition",
+      "recto": "Où se trouve le centre de gravité d'un corps homogène de forme simple ?",
+      "verso": "Au centre géométrique : centre d'une bille ou d'un disque, intersection des diagonales d'une plaque rectangulaire, milieu d'une tige ou de l'axe d'un cylindre.",
+      "difficulte": 2,
+      "tags": [
+        "centre-de-gravite",
+        "homogene"
+      ]
+    },
+    {
+      "id": "PC4E-P17-008",
+      "lecon": "Le poids d'un corps, ses caractéristiques et son centre de gravité",
+      "type": "definition",
+      "recto": "Quelles sont les quatre caractéristiques du poids d'un corps ?",
+      "verso": "Point d'application : le centre de gravité $G$ ; direction : la verticale du lieu ; sens : du haut vers le bas, vers le centre de la Terre ; valeur : $P$ en newtons.",
+      "difficulte": 2,
+      "tags": [
+        "caracteristiques",
+        "poids"
+      ]
+    },
+    {
+      "id": "PC4E-P17-009",
+      "lecon": "Le poids d'un corps, ses caractéristiques et son centre de gravité",
+      "type": "formule",
+      "recto": "Comment détermine-t-on le centre de gravité d'une plaque de forme quelconque par la méthode des suspensions ?",
+      "verso": "On la suspend librement par un point, on trace la verticale de ce point au fil à plomb, puis on recommence par un autre point éloigné ; $G$ est à l'intersection des verticales (une troisième sert à vérifier).",
+      "difficulte": 2,
+      "tags": [
+        "centre-de-gravite",
+        "suspension"
+      ]
+    },
+    {
+      "id": "PC4E-P17-010",
+      "lecon": "Le poids d'un corps, ses caractéristiques et son centre de gravité",
+      "type": "definition",
+      "recto": "Quelle erreur faut-il éviter sur l'origine du vecteur poids d'un objet suspendu à une corde ?",
+      "verso": "Le faire partir du point d'accrochage de la corde (ou du point de contact avec le sol) : le vecteur poids part toujours du centre de gravité $G$.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "representation"
+      ]
+    },
+    {
+      "id": "PC4E-P17-011",
+      "lecon": "Le poids d'un corps, ses caractéristiques et son centre de gravité",
+      "type": "formule",
+      "recto": "Pour un corps suspendu en équilibre, où se trouve son centre de gravité ?",
+      "verso": "Sur la verticale passant par le point de suspension.",
+      "difficulte": 2,
+      "tags": [
+        "equilibre",
+        "centre-de-gravite"
+      ]
+    },
+    {
+      "id": "PC4E-P17-012",
+      "lecon": "La masse et le poids, deux grandeurs à ne pas confondre",
+      "type": "definition",
+      "recto": "Quelle est la différence de nature entre la masse et le poids d'un corps ?",
+      "verso": "La masse mesure la quantité de matière du corps ; le poids est une force, l'attraction exercée par la Terre sur ce corps.",
+      "difficulte": 1,
+      "tags": [
+        "masse",
+        "poids",
+        "distinction"
+      ]
+    },
+    {
+      "id": "PC4E-P17-013",
+      "lecon": "La masse et le poids, deux grandeurs à ne pas confondre",
+      "type": "definition",
+      "recto": "Quels instruments mesurent respectivement la masse et le poids ?",
+      "verso": "La masse se mesure avec une balance (en kilogrammes) ; le poids se mesure avec un dynamomètre (en newtons).",
+      "difficulte": 1,
+      "tags": [
+        "instruments",
+        "balance",
+        "dynamometre"
+      ]
+    },
+    {
+      "id": "PC4E-P17-014",
+      "lecon": "La masse et le poids, deux grandeurs à ne pas confondre",
+      "type": "definition",
+      "recto": "Comment la masse et le poids d'un corps se comportent-ils quand on change de lieu ?",
+      "verso": "La masse ne change pas ; le poids change avec le lieu.",
+      "difficulte": 2,
+      "tags": [
+        "masse",
+        "poids",
+        "lieu"
+      ]
+    },
+    {
+      "id": "PC4E-P17-015",
+      "lecon": "La masse et le poids, deux grandeurs à ne pas confondre",
+      "type": "definition",
+      "recto": "Que signifie la phrase courante « ce sac pèse 50 kg » ?",
+      "verso": "Elle signifie que la masse du sac est $50~\\mathrm{kg}$ : le kilogramme est l'unité de la masse, pas du poids.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "langage-courant"
+      ]
+    },
+    {
+      "id": "PC4E-P17-016",
+      "lecon": "La masse et le poids, deux grandeurs à ne pas confondre",
+      "type": "definition",
+      "recto": "Qu'est-ce que le peson à ressort du marché, gradué en kilogrammes ?",
+      "verso": "C'est un dynamomètre dont le cadran a été gradué en kilogrammes par le constructeur.",
+      "difficulte": 3,
+      "tags": [
+        "peson",
+        "dynamometre"
+      ]
+    },
+    {
+      "id": "PC4E-P17-017",
+      "lecon": "La relation entre le poids et la masse",
+      "type": "formule",
+      "recto": "Quelle relation lie le poids $P$ d'un corps, sa masse $m$ et l'intensité de la pesanteur $g$ ?",
+      "verso": "$P = m \\times g$, avec $P$ en newtons ($\\mathrm{N}$), $m$ en kilogrammes ($\\mathrm{kg}$) et $g$ en newtons par kilogramme ($\\mathrm{N/kg}$).",
+      "difficulte": 1,
+      "tags": [
+        "relation",
+        "poids-masse"
+      ]
+    },
+    {
+      "id": "PC4E-P17-018",
+      "lecon": "La relation entre le poids et la masse",
+      "type": "formule",
+      "recto": "Comment calcule-t-on la masse $m$ d'un corps à partir de son poids $P$ et de l'intensité de la pesanteur $g$ ?",
+      "verso": "$m = \\dfrac{P}{g}$, avec $P$ en $\\mathrm{N}$, $g$ en $\\mathrm{N/kg}$ et $m$ obtenue en $\\mathrm{kg}$.",
+      "difficulte": 2,
+      "tags": [
+        "relation",
+        "masse"
+      ]
+    },
+    {
+      "id": "PC4E-P17-019",
+      "lecon": "La relation entre le poids et la masse",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on l'intensité de la pesanteur $g$ d'un lieu ?",
+      "verso": "C'est le poids d'un corps de $1~\\mathrm{kg}$ en ce lieu ; elle s'exprime en newtons par kilogramme ($\\mathrm{N/kg}$).",
+      "difficulte": 2,
+      "tags": [
+        "intensite-de-la-pesanteur"
+      ]
+    },
+    {
+      "id": "PC4E-P17-020",
+      "lecon": "La relation entre le poids et la masse",
+      "type": "definition",
+      "recto": "Quelle est la valeur de l'intensité de la pesanteur au Burkina Faso ?",
+      "verso": "$g \\approx 9{,}8~\\mathrm{N/kg}$ ; dans les exercices on prend souvent $g = 10~\\mathrm{N/kg}$ quand l'énoncé le précise.",
+      "difficulte": 1,
+      "tags": [
+        "intensite-de-la-pesanteur",
+        "valeur"
+      ]
+    },
+    {
+      "id": "PC4E-P17-021",
+      "lecon": "La relation entre le poids et la masse",
+      "type": "definition",
+      "recto": "Que signifie concrètement l'écriture $g = 9{,}8~\\mathrm{N/kg}$ ?",
+      "verso": "Chaque kilogramme de matière est attiré par la Terre avec une force de $9{,}8~\\mathrm{N}$ : un corps de $1~\\mathrm{kg}$ pèse $9{,}8~\\mathrm{N}$, un corps de $2~\\mathrm{kg}$ pèse $19{,}6~\\mathrm{N}$.",
+      "difficulte": 2,
+      "tags": [
+        "intensite-de-la-pesanteur",
+        "unite"
+      ]
+    },
+    {
+      "id": "PC4E-P17-022",
+      "lecon": "La relation entre le poids et la masse",
+      "type": "definition",
+      "recto": "Quelle est l'allure du graphique du poids $P$ en fonction de la masse $m$ ?",
+      "verso": "Une droite passant par l'origine, car $P$ et $m$ sont proportionnels ; sa pente est l'intensité de la pesanteur $g$, en $\\mathrm{N/kg}$.",
+      "difficulte": 2,
+      "tags": [
+        "graphique",
+        "proportionnalite"
+      ]
+    },
+    {
+      "id": "PC4E-P17-023",
+      "lecon": "La relation entre le poids et la masse",
+      "type": "definition",
+      "recto": "Quelle erreur commet-on en écrivant $P = 500 \\times 10$ pour un corps de $500~\\mathrm{g}$ avec $g = 10~\\mathrm{N/kg}$ ?",
+      "verso": "On oublie de convertir la masse en kilogrammes : $500~\\mathrm{g} = 0{,}5~\\mathrm{kg}$, donc $P = 0{,}5 \\times 10 = 5~\\mathrm{N}$ et non $5\\,000~\\mathrm{N}$.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "conversion"
+      ]
+    },
+    {
+      "id": "PC4E-P17-024",
+      "lecon": "La relation entre le poids et la masse",
+      "type": "formule",
+      "recto": "Sur Terre, quel ordre de grandeur relie le poids en newtons et la masse en kilogrammes d'un corps ?",
+      "verso": "Le poids en newtons vaut environ dix fois la masse en kilogrammes (par exemple $50~\\mathrm{kg}$ pèsent environ $500~\\mathrm{N}$).",
+      "difficulte": 2,
+      "tags": [
+        "ordre-de-grandeur"
+      ]
+    },
+    {
+      "id": "PC4E-P17-025",
+      "lecon": "La relation entre le poids et la masse",
+      "type": "definition",
+      "recto": "Pourquoi un poids ne s'écrit-il jamais en kilogrammes ?",
+      "verso": "Parce que dans $P = m \\times g$, des kilogrammes multipliés par des $\\mathrm{N/kg}$ donnent toujours des newtons.",
+      "difficulte": 2,
+      "tags": [
+        "unite",
+        "poids"
+      ]
+    },
+    {
+      "id": "PC4E-P17-026",
+      "lecon": "La variation du poids avec le lieu",
+      "type": "definition",
+      "recto": "Pourquoi le poids d'un corps varie-t-il avec le lieu alors que sa masse ne change pas ?",
+      "verso": "Parce que l'intensité de la pesanteur $g$ varie d'un lieu à l'autre, et $P = m \\times g$.",
+      "difficulte": 2,
+      "tags": [
+        "variation",
+        "poids"
+      ]
+    },
+    {
+      "id": "PC4E-P17-027",
+      "lecon": "La variation du poids avec le lieu",
+      "type": "definition",
+      "recto": "Quels sont les trois facteurs qui font varier le poids d'un corps ?",
+      "verso": "La latitude, l'altitude et l'astre sur lequel se trouve le corps.",
+      "difficulte": 1,
+      "tags": [
+        "facteurs",
+        "variation"
+      ]
+    },
+    {
+      "id": "PC4E-P17-028",
+      "lecon": "La variation du poids avec le lieu",
+      "type": "formule",
+      "recto": "Comment l'intensité de la pesanteur varie-t-elle avec la latitude sur Terre ?",
+      "verso": "Elle augmente de l'équateur vers les pôles : $g \\approx 9{,}78~\\mathrm{N/kg}$ à l'équateur et $g \\approx 9{,}83~\\mathrm{N/kg}$ aux pôles.",
+      "difficulte": 2,
+      "tags": [
+        "latitude",
+        "variation"
+      ]
+    },
+    {
+      "id": "PC4E-P17-029",
+      "lecon": "La variation du poids avec le lieu",
+      "type": "formule",
+      "recto": "Comment l'intensité de la pesanteur varie-t-elle avec l'altitude ?",
+      "verso": "Elle diminue quand on s'élève au-dessus du sol, car on s'éloigne du centre de la Terre (environ $8{,}9~\\mathrm{N/kg}$ à $300~\\mathrm{km}$ d'altitude).",
+      "difficulte": 2,
+      "tags": [
+        "altitude",
+        "variation"
+      ]
+    },
+    {
+      "id": "PC4E-P17-030",
+      "lecon": "La variation du poids avec le lieu",
+      "type": "definition",
+      "recto": "Quelle est la valeur approchée de l'intensité de la pesanteur sur la Lune ?",
+      "verso": "$g \\approx 1{,}6~\\mathrm{N/kg}$, soit environ six fois moins que sur Terre ($9{,}8~\\mathrm{N/kg}$).",
+      "difficulte": 1,
+      "tags": [
+        "lune",
+        "valeur"
+      ]
+    },
+    {
+      "id": "PC4E-P17-031",
+      "lecon": "La variation du poids avec le lieu",
+      "type": "definition",
+      "recto": "De quoi dépend la valeur de l'intensité de la pesanteur à la surface d'un astre ?",
+      "verso": "De la masse et du rayon de cet astre ; ainsi $g \\approx 3{,}7~\\mathrm{N/kg}$ sur Mars et $g \\approx 25~\\mathrm{N/kg}$ sur Jupiter.",
+      "difficulte": 2,
+      "tags": [
+        "astre",
+        "valeur"
+      ]
+    },
+    {
+      "id": "PC4E-P17-032",
+      "lecon": "La variation du poids avec le lieu",
+      "type": "definition",
+      "recto": "Pourquoi est-il faux de dire qu'un astronaute a une masse six fois plus petite sur la Lune ?",
+      "verso": "Sa masse ne change pas ; c'est son poids qui est environ six fois plus petit, car $g$ vaut $1{,}6~\\mathrm{N/kg}$ sur la Lune au lieu de $9{,}8~\\mathrm{N/kg}$ sur Terre.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "lune",
+        "masse"
+      ]
+    },
+    {
+      "id": "PC4E-P17-033",
+      "lecon": "La variation du poids avec le lieu",
+      "type": "formule",
+      "recto": "Pour comparer le poids d'un même corps en deux lieux, quelle grandeur détermine-t-on d'abord ?",
+      "verso": "Sa masse $m$, qui est la même dans les deux lieux ; puis $P_1 = m \\times g_1$ et $P_2 = m \\times g_2$. On ne multiplie jamais un poids terrestre par un $g$ lunaire.",
+      "difficulte": 3,
+      "tags": [
+        "comparaison",
+        "masse"
+      ]
+    }
+  ]
+}

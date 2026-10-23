@@ -1,0 +1,475 @@
+{
+  "matiere": "Physique-Chimie",
+  "partie": "Physique",
+  "niveau": "2nde C",
+  "chapitre": "Physique, Chapitre 8 : Les dipôles passifs",
+  "source": "pc/2ndc/Chapitre_8_Les_dipoles_passifs",
+  "nombre_cartes": 40,
+  "cartes": [
+    {
+      "id": "PC2C-P08-001",
+      "lecon": "Le dipôle, la convention récepteur, l'actif et le passif",
+      "type": "definition",
+      "recto": "En électricité, qu'appelle-t-on un dipôle ?",
+      "verso": "C'est un composant, ou une portion de circuit, qui possède exactement deux bornes.",
+      "difficulte": 1,
+      "tags": [
+        "dipole"
+      ]
+    },
+    {
+      "id": "PC2C-P08-002",
+      "lecon": "Le dipôle, la convention récepteur, l'actif et le passif",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on un dipôle actif ?",
+      "verso": "C'est un dipôle qui, isolé, présente une tension non nulle à ses bornes : il est cause du mouvement des électrons et fournit de l'énergie au circuit (pile, batterie, panneau solaire, dynamo, alternateur, GBF).",
+      "difficulte": 1,
+      "tags": [
+        "dipole-actif"
+      ]
+    },
+    {
+      "id": "PC2C-P08-003",
+      "lecon": "Le dipôle, la convention récepteur, l'actif et le passif",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on un dipôle passif ?",
+      "verso": "C'est un dipôle qui, isolé, présente une tension nulle à ses bornes : il ne provoque aucun mouvement d'électrons, il reçoit de l'énergie et la transforme (conducteur ohmique, lampe, diode, DEL, moteur à l'arrêt).",
+      "difficulte": 1,
+      "tags": [
+        "dipole-passif"
+      ]
+    },
+    {
+      "id": "PC2C-P08-004",
+      "lecon": "Le dipôle, la convention récepteur, l'actif et le passif",
+      "type": "formule",
+      "recto": "Comment reconnaît-on au voltmètre si un dipôle est actif ou passif ?",
+      "verso": "On branche un voltmètre aux bornes du dipôle isolé, relié à rien d'autre : une tension non nulle signe un dipôle actif, une tension nulle ($0~\\mathrm{V}$) un dipôle passif.",
+      "difficulte": 2,
+      "tags": [
+        "test-voltmetre"
+      ]
+    },
+    {
+      "id": "PC2C-P08-005",
+      "lecon": "Le dipôle, la convention récepteur, l'actif et le passif",
+      "type": "formule",
+      "recto": "Pour un dipôle passif de bornes A et B traversé par un courant qui entre par A, comment oriente-t-on les flèches en convention récepteur ?",
+      "verso": "La flèche du courant va de A vers B dans le dipôle et la flèche de la tension $U_{AB}$, tracée à côté, pointe vers A : les deux flèches sont de sens contraires, et $U_{AB} \\gt 0$, $I \\gt 0$.",
+      "difficulte": 2,
+      "tags": [
+        "convention-recepteur"
+      ]
+    },
+    {
+      "id": "PC2C-P08-006",
+      "lecon": "Le dipôle, la convention récepteur, l'actif et le passif",
+      "type": "definition",
+      "recto": "Aux bornes d'un dipôle passif, que signifie une tension $U_{AB}$ mesurée négative ?",
+      "verso": "Que $V_B \\gt V_A$ : le courant traverse le dipôle de B vers A, car dans un récepteur il entre par la borne de potentiel le plus élevé.",
+      "difficulte": 2,
+      "tags": [
+        "convention-recepteur",
+        "signe"
+      ]
+    },
+    {
+      "id": "PC2C-P08-007",
+      "lecon": "Le dipôle, la convention récepteur, l'actif et le passif",
+      "type": "definition",
+      "recto": "Pourquoi une lampe allumée qui porte $3~\\mathrm{V}$ dans un circuit n'est-elle pas pour autant un dipôle actif ?",
+      "verso": "Le test au voltmètre ne vaut que sur un dipôle isolé : dans un circuit alimenté, tout dipôle passif porte une tension à ses bornes.",
+      "difficulte": 3,
+      "tags": [
+        "test-voltmetre",
+        "piege"
+      ]
+    },
+    {
+      "id": "PC2C-P08-008",
+      "lecon": "Le dipôle, la convention récepteur, l'actif et le passif",
+      "type": "definition",
+      "recto": "Pourquoi un moteur peut-il être tantôt un dipôle passif, tantôt un dipôle actif ?",
+      "verso": "A l'arrêt, il est passif ; si on le fait tourner à la main, il devient une dynamo, donc un dipôle actif. C'est son état que l'on teste.",
+      "difficulte": 3,
+      "tags": [
+        "moteur",
+        "dynamo"
+      ]
+    },
+    {
+      "id": "PC2C-P08-009",
+      "lecon": "La caractéristique d'un dipôle et son tracé",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on la caractéristique d'un dipôle ?",
+      "verso": "C'est la courbe qui traduit son comportement dans un circuit, tracée point par point sous la forme $U_{AB} = f\\left(I_{AB}\\right)$ ou $I_{AB} = g\\left(U_{AB}\\right)$.",
+      "difficulte": 1,
+      "tags": [
+        "caracteristique"
+      ]
+    },
+    {
+      "id": "PC2C-P08-010",
+      "lecon": "La caractéristique d'un dipôle et son tracé",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on un point de fonctionnement d'un dipôle ?",
+      "verso": "C'est un point de sa caractéristique : le couple $\\left(U, I\\right)$ que prend le dipôle dans une situation donnée.",
+      "difficulte": 1,
+      "tags": [
+        "point-de-fonctionnement"
+      ]
+    },
+    {
+      "id": "PC2C-P08-011",
+      "lecon": "La caractéristique d'un dipôle et son tracé",
+      "type": "formule",
+      "recto": "Comment sont branchés les appareils du montage d'étude de la caractéristique d'un dipôle ?",
+      "verso": "Générateur, rhéostat monté en potentiomètre pour faire varier la tension, interrupteur, ampèremètre en série avec le dipôle et voltmètre en dérivation aux bornes du seul dipôle.",
+      "difficulte": 2,
+      "tags": [
+        "montage-d-etude",
+        "branchement"
+      ]
+    },
+    {
+      "id": "PC2C-P08-012",
+      "lecon": "La caractéristique d'un dipôle et son tracé",
+      "type": "definition",
+      "recto": "Dans le montage d'étude d'une caractéristique, pourquoi le rhéostat est-il monté en potentiomètre ?",
+      "verso": "Monté sur ses trois bornes, il permet de descendre jusqu'à $0~\\mathrm{V}$, et la caractéristique commence à l'origine ; monté sur deux bornes, il limite le courant sans l'annuler et les premiers points manquent.",
+      "difficulte": 2,
+      "tags": [
+        "rheostat",
+        "montage-d-etude"
+      ]
+    },
+    {
+      "id": "PC2C-P08-013",
+      "lecon": "La caractéristique d'un dipôle et son tracé",
+      "type": "definition",
+      "recto": "Qu'est-ce qu'un dipôle linéaire ?",
+      "verso": "C'est un dipôle dont la caractéristique $U = f(I)$ est une droite passant par l'origine : la tension est proportionnelle à l'intensité (exemple : le conducteur ohmique).",
+      "difficulte": 1,
+      "tags": [
+        "lineaire"
+      ]
+    },
+    {
+      "id": "PC2C-P08-014",
+      "lecon": "La caractéristique d'un dipôle et son tracé",
+      "type": "definition",
+      "recto": "Qu'est-ce qu'un dipôle symétrique ?",
+      "verso": "C'est un dipôle dont la caractéristique est symétrique par rapport à l'origine : le retourner ne change rien à son comportement (conducteur ohmique, lampe à incandescence).",
+      "difficulte": 2,
+      "tags": [
+        "symetrique"
+      ]
+    },
+    {
+      "id": "PC2C-P08-015",
+      "lecon": "La caractéristique d'un dipôle et son tracé",
+      "type": "definition",
+      "recto": "Qu'est-ce qu'un dipôle polarisé ?",
+      "verso": "C'est un dipôle non symétrique : il possède un sens direct et un sens inverse, et son branchement doit être respecté (diode, DEL).",
+      "difficulte": 2,
+      "tags": [
+        "polarise"
+      ]
+    },
+    {
+      "id": "PC2C-P08-016",
+      "lecon": "La caractéristique d'un dipôle et son tracé",
+      "type": "definition",
+      "recto": "Que signifie utiliser un dipôle en direct ou en inverse ?",
+      "verso": "En direct, il est branché dans le sens prévu par le constructeur (quart de plan des $U$ et $I$ positifs) ; en inverse, il est retourné (quart de plan des valeurs négatives).",
+      "difficulte": 2,
+      "tags": [
+        "direct",
+        "inverse"
+      ]
+    },
+    {
+      "id": "PC2C-P08-017",
+      "lecon": "La caractéristique d'un dipôle et son tracé",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on les limites d'utilisation d'un dipôle ?",
+      "verso": "Ce sont les valeurs à ne pas dépasser (intensité, tension ou puissance maximale), au-delà desquelles il s'échauffe et se détruit. La caractéristique n'est tracée que dans ce domaine autorisé.",
+      "difficulte": 2,
+      "tags": [
+        "limites-d-utilisation"
+      ]
+    },
+    {
+      "id": "PC2C-P08-018",
+      "lecon": "La caractéristique d'un dipôle et son tracé",
+      "type": "definition",
+      "recto": "Pourquoi trace-t-on une courbe moyenne plutôt qu'une ligne brisée entre les points expérimentaux d'une caractéristique ?",
+      "verso": "Chaque point porte une incertitude de lecture alors que le comportement du dipôle varie de façon continue : relier les points recopierait les erreurs, la courbe moyenne tracée au milieu du nuage les compense.",
+      "difficulte": 2,
+      "tags": [
+        "courbe-moyenne"
+      ]
+    },
+    {
+      "id": "PC2C-P08-019",
+      "lecon": "La caractéristique d'un dipôle et son tracé",
+      "type": "definition",
+      "recto": "Quelle est la différence entre les caractéristiques $U = f(I)$ et $I = g(U)$ ?",
+      "verso": "$U = f(I)$ porte $I$ en abscisse et $U$ en ordonnée ; $I = g(U)$ porte $U$ en abscisse. Les deux décrivent le même dipôle : on se repère aux grandeurs portées sur les axes.",
+      "difficulte": 3,
+      "tags": [
+        "caracteristique",
+        "piege"
+      ]
+    },
+    {
+      "id": "PC2C-P08-020",
+      "lecon": "Deux dipôles passifs symétriques : le conducteur ohmique et la lampe",
+      "type": "formule",
+      "recto": "Quelle propriété caractérise la relation entre $U$ et $I$ pour un conducteur ohmique ?",
+      "verso": "$\\dfrac{U}{I} = \\text{constante}$ : sa caractéristique $U = f(I)$ est une droite passant par l'origine, prolongée symétriquement du côté négatif. Il est linéaire, symétrique et passif.",
+      "difficulte": 1,
+      "tags": [
+        "conducteur-ohmique"
+      ]
+    },
+    {
+      "id": "PC2C-P08-021",
+      "lecon": "Deux dipôles passifs symétriques : le conducteur ohmique et la lampe",
+      "type": "definition",
+      "recto": "Pour un conducteur ohmique, que représente la pente de la caractéristique $U = f(I)$ ?",
+      "verso": "C'est le quotient constant $\\dfrac{U}{I}$, en volts par ampère : la résistance $R$, d'unité l'ohm ($\\Omega$). Sur un même graphique, la droite la plus redressée correspond à la plus grande résistance.",
+      "difficulte": 2,
+      "tags": [
+        "resistance",
+        "pente"
+      ]
+    },
+    {
+      "id": "PC2C-P08-022",
+      "lecon": "Deux dipôles passifs symétriques : le conducteur ohmique et la lampe",
+      "type": "definition",
+      "recto": "Quelle est la limite d'utilisation d'un conducteur ohmique ?",
+      "verso": "Une puissance maximale, souvent $0{,}25~\\mathrm{W}$ ou $0{,}5~\\mathrm{W}$ : au-delà, il se détruit.",
+      "difficulte": 2,
+      "tags": [
+        "conducteur-ohmique",
+        "limites-d-utilisation"
+      ]
+    },
+    {
+      "id": "PC2C-P08-023",
+      "lecon": "Deux dipôles passifs symétriques : le conducteur ohmique et la lampe",
+      "type": "definition",
+      "recto": "Quelle erreur commet-on en calculant la pente d'un conducteur ohmique par $\\dfrac{5{,}5}{250} = 0{,}022$ avec $250~\\mathrm{mA}$ ?",
+      "verso": "L'intensité n'a pas été convertie en ampères : $\\dfrac{5{,}5}{0{,}250} = 22~\\mathrm{V/A}$. Une pente calculée en milliampères est mille fois trop petite.",
+      "difficulte": 3,
+      "tags": [
+        "pente",
+        "conversion",
+        "piege"
+      ]
+    },
+    {
+      "id": "PC2C-P08-024",
+      "lecon": "Deux dipôles passifs symétriques : le conducteur ohmique et la lampe",
+      "type": "definition",
+      "recto": "Quelle est l'allure de la caractéristique $U = f(I)$ d'une lampe à incandescence ?",
+      "verso": "Une courbe qui part de l'origine puis se redresse : $\\dfrac{U}{I}$ n'est pas constant, il augmente avec $I$. La lampe est non linéaire mais symétrique.",
+      "difficulte": 1,
+      "tags": [
+        "lampe",
+        "caracteristique"
+      ]
+    },
+    {
+      "id": "PC2C-P08-025",
+      "lecon": "Deux dipôles passifs symétriques : le conducteur ohmique et la lampe",
+      "type": "definition",
+      "recto": "Pourquoi la caractéristique d'une lampe à incandescence se redresse-t-elle ?",
+      "verso": "L'intensité qui croît échauffe le filament de tungstène, et la résistance d'un métal augmente avec sa température : il faut une tension supplémentaire de plus en plus grande pour le même gain d'intensité.",
+      "difficulte": 2,
+      "tags": [
+        "lampe",
+        "filament"
+      ]
+    },
+    {
+      "id": "PC2C-P08-026",
+      "lecon": "Deux dipôles passifs symétriques : le conducteur ohmique et la lampe",
+      "type": "definition",
+      "recto": "Pourquoi ne faut-il pas confondre dipôle non linéaire et dipôle non symétrique ?",
+      "verso": "Ce sont deux propriétés différentes : la lampe à incandescence est non linéaire mais parfaitement symétrique, elle se monte dans n'importe quel sens. C'est la diode qui est polarisée.",
+      "difficulte": 3,
+      "tags": [
+        "lineaire",
+        "symetrique",
+        "piege"
+      ]
+    },
+    {
+      "id": "PC2C-P08-027",
+      "lecon": "Deux dipôles passifs symétriques : le conducteur ohmique et la lampe",
+      "type": "definition",
+      "recto": "Comment se comporte une lampe à incandescence alimentée au-dessous puis au-dessus de sa tension nominale ?",
+      "verso": "Au-dessous, elle éclaire faiblement, d'une lumière rougeâtre, mais dure plus longtemps ; au-dessus, elle éclaire davantage et grille rapidement.",
+      "difficulte": 2,
+      "tags": [
+        "lampe",
+        "valeurs-nominales"
+      ]
+    },
+    {
+      "id": "PC2C-P08-028",
+      "lecon": "Deux dipôles passifs symétriques : le conducteur ohmique et la lampe",
+      "type": "formule",
+      "recto": "Comment construit-on graphiquement la caractéristique de deux dipôles passifs associés en série ou en dérivation ?",
+      "verso": "En série (même intensité), on additionne les tensions lues à même $I$ ; en dérivation (même tension), on additionne les intensités lues à même $U$.",
+      "difficulte": 2,
+      "tags": [
+        "associations"
+      ]
+    },
+    {
+      "id": "PC2C-P08-029",
+      "lecon": "La diode, dipôle passif polarisé, et le redressement",
+      "type": "definition",
+      "recto": "Qu'est-ce qu'une diode à jonction ?",
+      "verso": "C'est un dipôle passif polarisé formé de deux semi-conducteurs accolés, de type P et de type N (jonction PN) ; l'anode est côté P, la cathode côté N, repérée par un anneau.",
+      "difficulte": 1,
+      "tags": [
+        "diode",
+        "jonction-pn"
+      ]
+    },
+    {
+      "id": "PC2C-P08-030",
+      "lecon": "La diode, dipôle passif polarisé, et le redressement",
+      "type": "definition",
+      "recto": "Sur le symbole d'une diode, qu'indique le triangle ?",
+      "verso": "Il pointe de l'anode vers la cathode : il indique le sens passant du courant.",
+      "difficulte": 2,
+      "tags": [
+        "diode",
+        "symbole"
+      ]
+    },
+    {
+      "id": "PC2C-P08-031",
+      "lecon": "La diode, dipôle passif polarisé, et le redressement",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on la tension de seuil $U_s$ d'une diode à jonction ?",
+      "verso": "C'est la tension minimale à appliquer dans le sens direct pour que la diode conduise ; pour une diode à jonction ordinaire, $U_s = 0{,}6~\\mathrm{V}$. Tant que $U \\lt U_s$, l'intensité est nulle.",
+      "difficulte": 1,
+      "tags": [
+        "tension-de-seuil"
+      ]
+    },
+    {
+      "id": "PC2C-P08-032",
+      "lecon": "La diode, dipôle passif polarisé, et le redressement",
+      "type": "formule",
+      "recto": "Quelle intensité traverse une diode à jonction ordinaire branchée en sens inverse ?",
+      "verso": "Aucune : $I = 0$, la diode est bloquée (dans ses limites d'utilisation). Ce n'est pas une panne, c'est son fonctionnement normal en inverse.",
+      "difficulte": 2,
+      "tags": [
+        "sens-bloque"
+      ]
+    },
+    {
+      "id": "PC2C-P08-033",
+      "lecon": "La diode, dipôle passif polarisé, et le redressement",
+      "type": "definition",
+      "recto": "Qu'est-ce que le modèle de la diode idéale ?",
+      "verso": "Un modèle à tension de seuil nulle, dont la caractéristique se réduit à deux segments pratiquement confondus avec les axes : en direct, elle se comporte comme un fil ; en inverse, comme un interrupteur ouvert.",
+      "difficulte": 2,
+      "tags": [
+        "diode-ideale",
+        "modele"
+      ]
+    },
+    {
+      "id": "PC2C-P08-034",
+      "lecon": "La diode, dipôle passif polarisé, et le redressement",
+      "type": "formule",
+      "recto": "Dans le modèle de la diode à seuil, quelle tension porte une diode passante ?",
+      "verso": "Elle porte $U = U_s$ quelle que soit l'intensité ; le reste de la tension du générateur se reporte sur les dipôles placés en série avec elle.",
+      "difficulte": 3,
+      "tags": [
+        "diode-a-seuil",
+        "modele"
+      ]
+    },
+    {
+      "id": "PC2C-P08-035",
+      "lecon": "La diode, dipôle passif polarisé, et le redressement",
+      "type": "definition",
+      "recto": "Qu'est-ce qu'une diode Zener ?",
+      "verso": "C'est une diode à jonction qui, en sens inverse, conduit dès que la tension dépasse sa tension Zener $U_Z$ ; elle sert à maintenir une tension constante.",
+      "difficulte": 2,
+      "tags": [
+        "diode-zener"
+      ]
+    },
+    {
+      "id": "PC2C-P08-036",
+      "lecon": "La diode, dipôle passif polarisé, et le redressement",
+      "type": "definition",
+      "recto": "Qu'est-ce qu'une diode électroluminescente (DEL) ?",
+      "verso": "C'est une diode qui émet de la lumière lorsqu'elle conduit. Sa tension de seuil dépend de la couleur (environ $1{,}6~\\mathrm{V}$ pour la rouge, $2{,}2~\\mathrm{V}$ pour la verte, $3~\\mathrm{V}$ pour la blanche et la bleue).",
+      "difficulte": 2,
+      "tags": [
+        "del",
+        "tension-de-seuil"
+      ]
+    },
+    {
+      "id": "PC2C-P08-037",
+      "lecon": "La diode, dipôle passif polarisé, et le redressement",
+      "type": "formule",
+      "recto": "Quelle précaution de branchement s'impose toujours pour une diode ou une DEL ?",
+      "verso": "Placer un conducteur ohmique de protection en série, choisi pour que l'intensité ne dépasse pas l'intensité maximale de la diode.",
+      "difficulte": 2,
+      "tags": [
+        "securite",
+        "protection"
+      ]
+    },
+    {
+      "id": "PC2C-P08-038",
+      "lecon": "La diode, dipôle passif polarisé, et le redressement",
+      "type": "definition",
+      "recto": "Quel est le rôle d'une diode dans un circuit ?",
+      "verso": "Elle est un interrupteur commandé par le sens du courant : on l'emploie pour protéger un montage contre une inversion de polarité et pour redresser un courant alternatif.",
+      "difficulte": 1,
+      "tags": [
+        "diode",
+        "role"
+      ]
+    },
+    {
+      "id": "PC2C-P08-039",
+      "lecon": "La diode, dipôle passif polarisé, et le redressement",
+      "type": "formule",
+      "recto": "Comment réalise-t-on un redressement simple alternance et un redressement double alternance ?",
+      "verso": "Simple alternance : une diode en série avec le récepteur supprime une alternance sur deux. Double alternance : quatre diodes en pont de Graetz font traverser le récepteur toujours dans le même sens.",
+      "difficulte": 2,
+      "tags": [
+        "redressement",
+        "pont-de-graetz"
+      ]
+    },
+    {
+      "id": "PC2C-P08-040",
+      "lecon": "La diode, dipôle passif polarisé, et le redressement",
+      "type": "definition",
+      "recto": "Pourquoi est-il faux de dire qu'une diode soumise à $0{,}4~\\mathrm{V}$ en sens direct laisse passer un petit courant ?",
+      "verso": "Tant que $U \\lt U_s = 0{,}6~\\mathrm{V}$, la diode ne conduit pas : on écrit $I = 0$.",
+      "difficulte": 3,
+      "tags": [
+        "tension-de-seuil",
+        "piege"
+      ]
+    }
+  ]
+}

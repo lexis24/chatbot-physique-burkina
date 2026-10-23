@@ -57,7 +57,7 @@ class Config:
     # dans le déploiement (fichiers ChromaDB locaux) mais stockés à part, accessibles par le
     # réseau — voir DEPLOY.md. Chaîne de connexion complète (postgresql://user:pass@host/db).
     DATABASE_URL = os.getenv("DATABASE_URL", "")
-    VECTOR_TABLE_NAME = os.getenv("VECTOR_TABLE_NAME", "maths_burkina_embeddings")
+    VECTOR_TABLE_NAME = os.getenv("VECTOR_TABLE_NAME", "physique_burkina_embeddings")
     # Taille du pool de connexions Postgres pour les données applicatives (schéma "app" — voir
     # database.py), distinct des connexions ponctuelles utilisées par le RAG sur le même DATABASE_URL.
     DB_POOL_MAX = int(os.getenv("DB_POOL_MAX", "8"))

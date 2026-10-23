@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 """
-Lanceur unique du Chatbot Mathématiques Burkina Faso.
+Lanceur unique du Chatbot Physique Burkina Faso.
 Démarre le backend FastAPI ET le frontend Vite, attend qu'ils soient réellement
 prêts (pas juste "processus lancé"), puis ouvre le navigateur automatiquement.
 
@@ -28,6 +28,10 @@ ROOT = Path(__file__).resolve().parent
 BACKEND_DIR = ROOT / "backend"
 FRONTEND_DIR = ROOT / "frontend"
 BACKEND_URL = "http://127.0.0.1:8000"
+# Route de disponibilité SANS accès à la base : /api/health ouvre une connexion à Neon à chaque
+# appel (comptage de l'index), ce qui peut prendre plus que les 2 s accordées par tentative sur
+# une connexion lente — le backend, pourtant démarré, n'était alors jamais déclaré prêt.
+BACKEND_READY_URL = f"{BACKEND_URL}/api/classes"
 FRONTEND_URL = "http://localhost:5173"
 
 
@@ -49,8 +53,8 @@ def enable_ansi_on_windows():
 def banner():
     print(f"""{C.CYAN}{C.BOLD}
 ==============================================================
-   Chat'Maths Burkina Faso
-   Assistant intelligent en mathematiques (6eme -> Terminale)
+   Chat'Physique Burkina Faso
+   Assistant intelligent en physique
 =============================================================={C.END}
 """)
 
@@ -212,7 +216,7 @@ def main():
     ensure_frontend_dependencies(npm)
 
     backend_process = None
-    if is_already_running(f"{BACKEND_URL}/api/health"):
+    if is_already_running(BACKEND_READY_URL):
         print(f"{C.GREEN}[OK] Un backend répond déjà sur {BACKEND_URL} (lancement précédent) — réutilisation.{C.END}")
         print(f"{C.WARNING}      Si tu as modifié du code backend depuis ce lancement précédent, ce serveur "
               f"tourne encore avec l'ancien code : ferme-le (Ctrl+C dans sa fenêtre, ou arrête le processus "
@@ -220,7 +224,7 @@ def main():
     else:
         backend_process = start_backend(python_exe)
         threading.Thread(target=stream_output, args=(backend_process, "Backend", C.CYAN), daemon=True).start()
-        if not wait_until_ready(f"{BACKEND_URL}/api/health", "Backend", timeout=90, process=backend_process):
+        if not wait_until_ready(BACKEND_READY_URL, "Backend", timeout=90, process=backend_process):
             print(f"{C.WARNING}Astuce : si le message ci-dessus parle d'un port déjà utilisé, un ancien "
                   f"lancement tourne peut-être encore — ferme les anciennes fenêtres/terminaux puis réessaie.{C.END}")
             backend_process.terminate()

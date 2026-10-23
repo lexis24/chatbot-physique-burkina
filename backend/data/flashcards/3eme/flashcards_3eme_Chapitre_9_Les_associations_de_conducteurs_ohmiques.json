@@ -1,0 +1,385 @@
+{
+  "matiere": "Physique-Chimie",
+  "partie": "Physique",
+  "niveau": "3ème",
+  "chapitre": "Physique, Chapitre 9 : Les associations de conducteurs ohmiques",
+  "source": "pc/3eme/Chapitre_9_Les_associations_de_conducteurs_ohmiques",
+  "nombre_cartes": 32,
+  "cartes": [
+    {
+      "id": "PC3E-P09-001",
+      "lecon": "L'association en série et sa résistance équivalente",
+      "type": "definition",
+      "recto": "Quand dit-on que des conducteurs ohmiques sont montés en série ?",
+      "verso": "Lorsqu'ils sont placés les uns à la suite des autres, sur une même boucle, sans aucun noeud entre eux. Ils sont alors traversés par la même intensité $I$.",
+      "difficulte": 1,
+      "tags": [
+        "serie",
+        "vocabulaire"
+      ]
+    },
+    {
+      "id": "PC3E-P09-002",
+      "lecon": "L'association en série et sa résistance équivalente",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on la résistance équivalente d'une association de conducteurs ohmiques placée entre deux points ?",
+      "verso": "C'est la résistance du conducteur ohmique unique qui pourrait remplacer l'association sans modifier la tension entre ces deux points ni l'intensité du courant principal.",
+      "difficulte": 2,
+      "tags": [
+        "resistance-equivalente"
+      ]
+    },
+    {
+      "id": "PC3E-P09-003",
+      "lecon": "L'association en série et sa résistance équivalente",
+      "type": "formule",
+      "recto": "Quelle est la résistance équivalente $R_e$ de $n$ conducteurs ohmiques de résistances $R_1$, $R_2$, ..., $R_n$ montés en série ?",
+      "verso": "$R_e = R_1 + R_2 + \\ldots + R_n$, toutes les résistances étant exprimées dans la même unité (l'ohm).",
+      "difficulte": 1,
+      "tags": [
+        "serie",
+        "formule"
+      ]
+    },
+    {
+      "id": "PC3E-P09-004",
+      "lecon": "L'association en série et sa résistance équivalente",
+      "type": "formule",
+      "recto": "Quelle est la résistance équivalente de $n$ conducteurs ohmiques identiques, de résistance $R$ chacun, montés en série ?",
+      "verso": "$R_e = n \\times R$.",
+      "difficulte": 1,
+      "tags": [
+        "serie",
+        "identiques"
+      ]
+    },
+    {
+      "id": "PC3E-P09-005",
+      "lecon": "L'association en série et sa résistance équivalente",
+      "type": "definition",
+      "recto": "Comment se compare la résistance équivalente d'une association en série aux résistances associées ?",
+      "verso": "Elle est toujours plus grande que la plus grande des résistances associées.",
+      "difficulte": 2,
+      "tags": [
+        "serie",
+        "comparaison"
+      ]
+    },
+    {
+      "id": "PC3E-P09-006",
+      "lecon": "L'association en série et sa résistance équivalente",
+      "type": "formule",
+      "recto": "Pour deux conducteurs ohmiques en série, comment calcule-t-on $R_2$ si l'on connaît $R_e$ et $R_1$ ?",
+      "verso": "De $R_e = R_1 + R_2$ on tire $R_2 = R_e - R_1$.",
+      "difficulte": 1,
+      "tags": [
+        "serie"
+      ]
+    },
+    {
+      "id": "PC3E-P09-007",
+      "lecon": "L'association en série et sa résistance équivalente",
+      "type": "definition",
+      "recto": "Sous une tension inchangée, pourquoi une lampe brille-t-elle moins quand on ajoute un conducteur ohmique en série avec elle ?",
+      "verso": "En série, les résistances s'ajoutent : $R_e$ augmente. Comme $I = \\dfrac{U}{R_e}$ avec $U$ inchangée, l'intensité diminue et la lampe brille moins.",
+      "difficulte": 2,
+      "tags": [
+        "serie",
+        "intensite"
+      ]
+    },
+    {
+      "id": "PC3E-P09-008",
+      "lecon": "L'association en série et sa résistance équivalente",
+      "type": "definition",
+      "recto": "Quels sont les avantages d'une association de conducteurs ohmiques en série ?",
+      "verso": "Fabrication : elle donne une résistance plus grande que chacun des conducteurs employés ; protection : placée devant un dipôle fragile, elle limite l'intensité ; réglage : c'est le principe du rhéostat.",
+      "difficulte": 2,
+      "tags": [
+        "serie",
+        "avantages"
+      ]
+    },
+    {
+      "id": "PC3E-P09-009",
+      "lecon": "L'association en série et sa résistance équivalente",
+      "type": "definition",
+      "recto": "Quels sont les inconvénients d'une association de dipôles en série ?",
+      "verso": "La dépendance : si un dipôle se coupe, le courant s'arrête partout ; la perte de tension : chaque conducteur ajouté prend sa part de la tension du générateur.",
+      "difficulte": 2,
+      "tags": [
+        "serie",
+        "inconvenients"
+      ]
+    },
+    {
+      "id": "PC3E-P09-010",
+      "lecon": "L'association en série et sa résistance équivalente",
+      "type": "formule",
+      "recto": "Pour deux conducteurs ohmiques en série, laquelle des grandeurs tension et intensité s'additionne ?",
+      "verso": "La tension : $U = U_1 + U_2$. L'intensité, elle, est la même dans les deux conducteurs et ne s'additionne pas.",
+      "difficulte": 3,
+      "tags": [
+        "serie",
+        "piege"
+      ]
+    },
+    {
+      "id": "PC3E-P09-011",
+      "lecon": "L'association en série et sa résistance équivalente",
+      "type": "formule",
+      "recto": "Pourquoi la somme $0{,}47~\\mathrm{k\\Omega} + 150~\\Omega$ ne vaut-elle pas $150{,}47~\\Omega$ ?",
+      "verso": "Les deux valeurs ne sont pas dans la même unité : $0{,}47~\\mathrm{k\\Omega} = 470~\\Omega$, donc la somme vaut $470 + 150 = 620~\\Omega$.",
+      "difficulte": 3,
+      "tags": [
+        "unites",
+        "piege"
+      ]
+    },
+    {
+      "id": "PC3E-P09-012",
+      "lecon": "L'association en série et sa résistance équivalente",
+      "type": "formule",
+      "recto": "Quelle résistance de protection faut-il monter en série avec un dipôle de valeurs nominales $U_n$ et $I_n$ alimenté sous une tension $U$ plus grande ?",
+      "verso": "$R = \\dfrac{U - U_n}{I_n}$ : le conducteur prend à son compte la tension de trop ($R$ en $\\Omega$, tensions en V, $I_n$ en A).",
+      "difficulte": 2,
+      "tags": [
+        "protection"
+      ]
+    },
+    {
+      "id": "PC3E-P09-013",
+      "lecon": "L'association en dérivation et sa résistance équivalente",
+      "type": "definition",
+      "recto": "Quand dit-on que des conducteurs ohmiques sont montés en dérivation ?",
+      "verso": "Lorsqu'ils sont reliés aux deux mêmes noeuds, c'est-à-dire aux deux bornes communes de l'association. On dit aussi en parallèle. Ils sont soumis à la même tension $U$.",
+      "difficulte": 1,
+      "tags": [
+        "derivation",
+        "vocabulaire"
+      ]
+    },
+    {
+      "id": "PC3E-P09-014",
+      "lecon": "L'association en dérivation et sa résistance équivalente",
+      "type": "formule",
+      "recto": "Dans une association de conducteurs ohmiques en dérivation, comment l'intensité du courant principal est-elle liée aux intensités des branches ?",
+      "verso": "Elle est la somme des intensités des branches : $I = I_1 + I_2 + \\ldots$",
+      "difficulte": 1,
+      "tags": [
+        "derivation",
+        "intensites"
+      ]
+    },
+    {
+      "id": "PC3E-P09-015",
+      "lecon": "L'association en dérivation et sa résistance équivalente",
+      "type": "definition",
+      "recto": "Comment mesure-t-on la résistance équivalente d'une association de conducteurs ohmiques en dérivation ?",
+      "verso": "A l'ohmmètre branché entre les deux noeuds, l'association étant débranchée du générateur.",
+      "difficulte": 2,
+      "tags": [
+        "derivation",
+        "ohmmetre"
+      ]
+    },
+    {
+      "id": "PC3E-P09-016",
+      "lecon": "L'association en dérivation et sa résistance équivalente",
+      "type": "formule",
+      "recto": "Comment calcule-t-on la résistance équivalente d'une association en dérivation à partir des tensions et des intensités ?",
+      "verso": "$R_e = \\dfrac{U}{I}$, où $U$ est la tension commune aux branches et $I$ l'intensité du courant principal, $I = I_1 + I_2 + \\ldots$ avec $I_1 = \\dfrac{U}{R_1}$, $I_2 = \\dfrac{U}{R_2}$.",
+      "difficulte": 2,
+      "tags": [
+        "derivation",
+        "calcul"
+      ]
+    },
+    {
+      "id": "PC3E-P09-017",
+      "lecon": "L'association en dérivation et sa résistance équivalente",
+      "type": "definition",
+      "recto": "Comment se compare la résistance équivalente d'une association en dérivation aux résistances associées ?",
+      "verso": "Elle est toujours plus petite que la plus petite des résistances associées.",
+      "difficulte": 2,
+      "tags": [
+        "derivation",
+        "comparaison"
+      ]
+    },
+    {
+      "id": "PC3E-P09-018",
+      "lecon": "L'association en dérivation et sa résistance équivalente",
+      "type": "definition",
+      "recto": "Pourquoi la résistance équivalente diminue-t-elle quand on ajoute une branche en dérivation ?",
+      "verso": "La nouvelle branche ajoute un courant sans changer la tension : comme $R_e = \\dfrac{U}{I}$ avec $U$ inchangée et $I$ plus grande, $R_e$ diminue.",
+      "difficulte": 2,
+      "tags": [
+        "derivation"
+      ]
+    },
+    {
+      "id": "PC3E-P09-019",
+      "lecon": "L'association en dérivation et sa résistance équivalente",
+      "type": "formule",
+      "recto": "Pourquoi deux conducteurs de $20~\\Omega$ et $30~\\Omega$ en dérivation ne donnent-ils pas $50~\\Omega$ ?",
+      "verso": "En dérivation, les résistances ne s'ajoutent pas : $R_e$ est plus petite que $20~\\Omega$. Sous $6~\\mathrm{V}$, $I = 0{,}3 + 0{,}2 = 0{,}5~\\mathrm{A}$, donc $R_e = \\dfrac{6}{0{,}5} = 12~\\Omega$.",
+      "difficulte": 3,
+      "tags": [
+        "derivation",
+        "piege"
+      ]
+    },
+    {
+      "id": "PC3E-P09-020",
+      "lecon": "L'association en dérivation et sa résistance équivalente",
+      "type": "definition",
+      "recto": "Quels sont les avantages d'une association en dérivation ?",
+      "verso": "L'indépendance : chaque branche reçoit la pleine tension du générateur et fonctionne pour son propre compte ; et la diminution de la résistance, qui permet d'obtenir des valeurs faibles.",
+      "difficulte": 2,
+      "tags": [
+        "derivation",
+        "avantages"
+      ]
+    },
+    {
+      "id": "PC3E-P09-021",
+      "lecon": "L'association en dérivation et sa résistance équivalente",
+      "type": "definition",
+      "recto": "Quel est l'inconvénient d'une association de dipôles en dérivation ?",
+      "verso": "Chaque branche ajoutée fait augmenter l'intensité du courant principal : trop d'appareils sur une même ligne font chauffer le fil d'arrivée, avec un risque d'incendie.",
+      "difficulte": 2,
+      "tags": [
+        "derivation",
+        "inconvenients"
+      ]
+    },
+    {
+      "id": "PC3E-P09-022",
+      "lecon": "L'association en dérivation et sa résistance équivalente",
+      "type": "definition",
+      "recto": "Pourquoi les lampes et les prises d'une maison sont-elles montées en dérivation ?",
+      "verso": "Pour l'indépendance : chacune reçoit la pleine tension et fonctionne seule ; on éteint une lampe sans éteindre les autres, et une ampoule grillée ne coupe pas le reste.",
+      "difficulte": 1,
+      "tags": [
+        "derivation",
+        "installation"
+      ]
+    },
+    {
+      "id": "PC3E-P09-023",
+      "lecon": "L'association en dérivation et sa résistance équivalente",
+      "type": "formule",
+      "recto": "Dans une association de conducteurs ohmiques, lequel chauffe le plus en série, et lequel en dérivation ?",
+      "verso": "En série (même intensité, $P = R \\times I^{2}$), c'est le plus grand. En dérivation (même tension, $P = \\dfrac{U^{2}}{R}$), c'est le plus petit.",
+      "difficulte": 3,
+      "tags": [
+        "puissance",
+        "piege"
+      ]
+    },
+    {
+      "id": "PC3E-P09-024",
+      "lecon": "L'association en dérivation et sa résistance équivalente",
+      "type": "definition",
+      "recto": "Quelle différence y a-t-il entre deux conducteurs ohmiques en dérivation et un court-circuit ?",
+      "verso": "Deux conducteurs en dérivation forment un montage normal ; un simple fil branché aux bornes d'un dipôle le court-circuite.",
+      "difficulte": 3,
+      "tags": [
+        "court-circuit"
+      ]
+    },
+    {
+      "id": "PC3E-P09-025",
+      "lecon": "Le diviseur de tension, le rhéostat et le potentiomètre",
+      "type": "definition",
+      "recto": "Qu'est-ce qu'un diviseur de tension ?",
+      "verso": "C'est une association de deux conducteurs ohmiques en série qui permet de prélever, aux bornes de l'un d'eux, une tension plus petite que la tension d'entrée $U_e$.",
+      "difficulte": 1,
+      "tags": [
+        "diviseur-de-tension"
+      ]
+    },
+    {
+      "id": "PC3E-P09-026",
+      "lecon": "Le diviseur de tension, le rhéostat et le potentiomètre",
+      "type": "formule",
+      "recto": "Dans un diviseur de tension formé de $R_1$ et $R_2$ en série sous la tension d'entrée $U_e$, quelle est la tension $U_1$ aux bornes de $R_1$ ?",
+      "verso": "$U_1 = U_e \\times \\dfrac{R_1}{R_1 + R_2}$, et de même $U_2 = U_e \\times \\dfrac{R_2}{R_1 + R_2}$.",
+      "difficulte": 2,
+      "tags": [
+        "diviseur-de-tension",
+        "formule"
+      ]
+    },
+    {
+      "id": "PC3E-P09-027",
+      "lecon": "Le diviseur de tension, le rhéostat et le potentiomètre",
+      "type": "formule",
+      "recto": "Dans un diviseur de tension formé de $R_1$ et $R_2$ en série, quel lien y a-t-il entre les tensions $U_1$ et $U_2$ et les résistances ?",
+      "verso": "Les tensions sont proportionnelles aux résistances : $\\dfrac{U_1}{U_2} = \\dfrac{R_1}{R_2}$. Leur somme vaut $U_e$.",
+      "difficulte": 2,
+      "tags": [
+        "diviseur-de-tension"
+      ]
+    },
+    {
+      "id": "PC3E-P09-028",
+      "lecon": "Le diviseur de tension, le rhéostat et le potentiomètre",
+      "type": "formule",
+      "recto": "Dans la formule d'un diviseur de tension, quelle résistance place-t-on au numérateur ?",
+      "verso": "La résistance aux bornes de laquelle on prélève la tension de sortie, et non l'autre : pour une sortie aux bornes de $R_2$, $\\dfrac{U_s}{U_e} = \\dfrac{R_2}{R_1 + R_2}$.",
+      "difficulte": 3,
+      "tags": [
+        "diviseur-de-tension",
+        "piege"
+      ]
+    },
+    {
+      "id": "PC3E-P09-029",
+      "lecon": "Le diviseur de tension, le rhéostat et le potentiomètre",
+      "type": "definition",
+      "recto": "Qu'est-ce qu'un rhéostat ?",
+      "verso": "Un conducteur ohmique de valeur réglable (fil résistant enroulé, avec un curseur), monté en série, qui fait varier l'intensité du courant.",
+      "difficulte": 1,
+      "tags": [
+        "rheostat"
+      ]
+    },
+    {
+      "id": "PC3E-P09-030",
+      "lecon": "Le diviseur de tension, le rhéostat et le potentiomètre",
+      "type": "definition",
+      "recto": "Comment représente-t-on le symbole d'un rhéostat ?",
+      "verso": "Par le rectangle du conducteur ohmique traversé par une flèche oblique, qui figure le curseur mobile.",
+      "difficulte": 2,
+      "tags": [
+        "rheostat",
+        "symbole"
+      ]
+    },
+    {
+      "id": "PC3E-P09-031",
+      "lecon": "Le diviseur de tension, le rhéostat et le potentiomètre",
+      "type": "definition",
+      "recto": "Qu'est-ce qu'un potentiomètre ?",
+      "verso": "Un conducteur ohmique à trois bornes, monté en diviseur de tension : le fil entier reçoit la tension d'entrée et la sortie se prélève entre le curseur et une extrémité. Il fait varier une tension.",
+      "difficulte": 2,
+      "tags": [
+        "potentiometre"
+      ]
+    },
+    {
+      "id": "PC3E-P09-032",
+      "lecon": "Le diviseur de tension, le rhéostat et le potentiomètre",
+      "type": "definition",
+      "recto": "Quelle différence de rôle y a-t-il entre un rhéostat et un potentiomètre ?",
+      "verso": "Le rhéostat, monté en série, règle une intensité ; le potentiomètre, utilisé avec ses trois bornes, règle une tension.",
+      "difficulte": 3,
+      "tags": [
+        "rheostat",
+        "potentiometre"
+      ]
+    }
+  ]
+}

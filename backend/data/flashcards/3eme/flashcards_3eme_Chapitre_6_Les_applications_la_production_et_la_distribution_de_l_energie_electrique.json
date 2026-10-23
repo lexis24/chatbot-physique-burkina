@@ -1,0 +1,440 @@
+{
+  "matiere": "Physique-Chimie",
+  "partie": "Physique",
+  "niveau": "3ème",
+  "chapitre": "Physique, Chapitre 6 : Les applications, la production et la distribution de l'énergie électrique",
+  "source": "pc/3eme/Chapitre_6_Les_applications_la_production_et_la_distribution_de_l_energie_electrique",
+  "nombre_cartes": 36,
+  "cartes": [
+    {
+      "id": "PC3E-P06-001",
+      "lecon": "Les applications de l'énergie électrique et les conversions d'énergie",
+      "type": "definition",
+      "recto": "Pourquoi l'énergie électrique est-elle si utilisée ?",
+      "verso": "Parce qu'elle est facile à transporter et facile à convertir en d'autres formes d'énergie.",
+      "difficulte": 1,
+      "tags": [
+        "applications",
+        "energie-electrique"
+      ]
+    },
+    {
+      "id": "PC3E-P06-002",
+      "lecon": "Les applications de l'énergie électrique et les conversions d'énergie",
+      "type": "definition",
+      "recto": "Quels sont les grands domaines d'application de l'énergie électrique ?",
+      "verso": "L'éclairage, le chauffage et la cuisson, la force motrice (moulins, pompes), les télécommunications, la santé (réfrigérateurs à vaccins) et l'industrie (soudure, broyage).",
+      "difficulte": 1,
+      "tags": [
+        "applications"
+      ]
+    },
+    {
+      "id": "PC3E-P06-003",
+      "lecon": "Les applications de l'énergie électrique et les conversions d'énergie",
+      "type": "definition",
+      "recto": "Pourquoi dit-on qu'un appareil électrique est un convertisseur ?",
+      "verso": "Parce qu'il reçoit de l'énergie électrique et la convertit en une autre forme d'énergie (lumineuse, thermique, mécanique, sonore...).",
+      "difficulte": 1,
+      "tags": [
+        "convertisseur"
+      ]
+    },
+    {
+      "id": "PC3E-P06-004",
+      "lecon": "Les applications de l'énergie électrique et les conversions d'énergie",
+      "type": "definition",
+      "recto": "Quelles sont les formes d'énergie à connaître en 3ème ?",
+      "verso": "Electrique, chimique (pile, carburant), mécanique (mouvement, eau retenue, vent), thermique, lumineuse ou rayonnante, et sonore.",
+      "difficulte": 2,
+      "tags": [
+        "formes-energie"
+      ]
+    },
+    {
+      "id": "PC3E-P06-005",
+      "lecon": "Les applications de l'énergie électrique et les conversions d'énergie",
+      "type": "formule",
+      "recto": "Quelle relation traduit la conservation de l'énergie pour un convertisseur qui reçoit $E_{\\text{absorbée}}$ ?",
+      "verso": "$E_{\\text{absorbée}} = E_{\\text{utile}} + E_{\\text{perdue}}$, les trois énergies dans la même unité. L'énergie perdue l'est presque toujours en chaleur.",
+      "difficulte": 2,
+      "tags": [
+        "conservation",
+        "energie-perdue"
+      ]
+    },
+    {
+      "id": "PC3E-P06-006",
+      "lecon": "Les applications de l'énergie électrique et les conversions d'énergie",
+      "type": "formule",
+      "recto": "Comment définit-on le rendement $\\eta$ d'un convertisseur à partir des énergies ou des puissances ?",
+      "verso": "$\\eta = \\dfrac{E_{\\text{utile}}}{E_{\\text{absorbée}}} = \\dfrac{P_{\\text{utile}}}{P_{\\text{absorbée}}}$ : nombre sans unité compris entre 0 et 1, exprimé en pourcentage.",
+      "difficulte": 2,
+      "tags": [
+        "rendement",
+        "relation"
+      ]
+    },
+    {
+      "id": "PC3E-P06-007",
+      "lecon": "Les applications de l'énergie électrique et les conversions d'énergie",
+      "type": "definition",
+      "recto": "Pourquoi aucun appareil réel n'a-t-il un rendement de $100\\ \\%$ ?",
+      "verso": "Tout conducteur parcouru par un courant s'échauffe par effet Joule et toute pièce mobile frotte : une partie de l'énergie reçue part toujours en chaleur non désirée.",
+      "difficulte": 2,
+      "tags": [
+        "rendement",
+        "pertes"
+      ]
+    },
+    {
+      "id": "PC3E-P06-008",
+      "lecon": "Les applications de l'énergie électrique et les conversions d'énergie",
+      "type": "definition",
+      "recto": "Dans une chaîne énergétique, comment représente-t-on le convertisseur et les énergies ?",
+      "verso": "Le convertisseur est écrit dans un rectangle ; une flèche entrante porte l'énergie reçue, une flèche horizontale l'énergie utile, une flèche oblique l'énergie perdue.",
+      "difficulte": 2,
+      "tags": [
+        "chaine-energetique"
+      ]
+    },
+    {
+      "id": "PC3E-P06-009",
+      "lecon": "Les applications de l'énergie électrique et les conversions d'énergie",
+      "type": "formule",
+      "recto": "Quelle est la chaîne énergétique d'un groupe électrogène ?",
+      "verso": "Energie chimique $\\rightarrow$ moteur diesel $\\rightarrow$ énergie mécanique $\\rightarrow$ alternateur $\\rightarrow$ énergie électrique.",
+      "difficulte": 2,
+      "tags": [
+        "groupe-electrogene",
+        "chaine-energetique"
+      ]
+    },
+    {
+      "id": "PC3E-P06-010",
+      "lecon": "Les applications de l'énergie électrique et les conversions d'énergie",
+      "type": "definition",
+      "recto": "Pourquoi le rendement d'une chaîne de plusieurs convertisseurs est-il plus faible que celui de chacun de ses maillons ?",
+      "verso": "Parce qu'à chaque maillon une partie de l'énergie s'échappe en chaleur et en bruit : les pertes s'accumulent tout au long de la chaîne.",
+      "difficulte": 3,
+      "tags": [
+        "chaine-energetique",
+        "rendement"
+      ]
+    },
+    {
+      "id": "PC3E-P06-011",
+      "lecon": "Les applications de l'énergie électrique et les conversions d'énergie",
+      "type": "definition",
+      "recto": "Pourquoi écrire « le rendement de ce moteur est de $92~\\mathrm{W}$ » est-il une erreur ?",
+      "verso": "Le rendement est un quotient de deux énergies (ou de deux puissances), donc un nombre sans unité : on écrit $0{,}92$ ou $92\\ \\%$.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "rendement"
+      ]
+    },
+    {
+      "id": "PC3E-P06-012",
+      "lecon": "La production de l'énergie électrique : les centrales",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on une centrale électrique ?",
+      "verso": "Une installation qui produit de l'énergie électrique en la convertissant à partir d'une autre forme d'énergie disponible dans la nature. Elle porte le nom de son énergie source.",
+      "difficulte": 1,
+      "tags": [
+        "centrale",
+        "definition"
+      ]
+    },
+    {
+      "id": "PC3E-P06-013",
+      "lecon": "La production de l'énergie électrique : les centrales",
+      "type": "definition",
+      "recto": "Quel est le rôle de l'alternateur dans une centrale électrique ?",
+      "verso": "Il convertit l'énergie mécanique de rotation en énergie électrique.",
+      "difficulte": 1,
+      "tags": [
+        "alternateur",
+        "role"
+      ]
+    },
+    {
+      "id": "PC3E-P06-014",
+      "lecon": "La production de l'énergie électrique : les centrales",
+      "type": "definition",
+      "recto": "Pourquoi une centrale solaire photovoltaïque n'a-t-elle pas d'alternateur ?",
+      "verso": "L'alternateur ne sert que s'il y a un mouvement de rotation ; dans un panneau photovoltaïque, la lumière produit directement un courant, sans aucune rotation.",
+      "difficulte": 3,
+      "tags": [
+        "photovoltaique",
+        "alternateur"
+      ]
+    },
+    {
+      "id": "PC3E-P06-015",
+      "lecon": "La production de l'énergie électrique : les centrales",
+      "type": "definition",
+      "recto": "Comment fonctionne une centrale thermique à vapeur ?",
+      "verso": "Un combustible brûle dans une chaudière et vaporise de l'eau ; la vapeur sous pression fait tourner une turbine qui entraîne l'alternateur. La vapeur redevient liquide dans le condenseur et une pompe renvoie l'eau à la chaudière.",
+      "difficulte": 2,
+      "tags": [
+        "centrale-thermique",
+        "vapeur"
+      ]
+    },
+    {
+      "id": "PC3E-P06-016",
+      "lecon": "La production de l'énergie électrique : les centrales",
+      "type": "formule",
+      "recto": "Quelle est la suite des formes d'énergie dans une centrale thermique à vapeur ?",
+      "verso": "Energie chimique $\\rightarrow$ énergie thermique $\\rightarrow$ énergie mécanique $\\rightarrow$ énergie électrique.",
+      "difficulte": 2,
+      "tags": [
+        "centrale-thermique",
+        "chaine-energetique"
+      ]
+    },
+    {
+      "id": "PC3E-P06-017",
+      "lecon": "La production de l'énergie électrique : les centrales",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on une énergie renouvelable ?",
+      "verso": "Une énergie dont la source se reconstitue à l'échelle d'une vie humaine : soleil, eau des fleuves, vent, biomasse.",
+      "difficulte": 1,
+      "tags": [
+        "renouvelable",
+        "definition"
+      ]
+    },
+    {
+      "id": "PC3E-P06-018",
+      "lecon": "La production de l'énergie électrique : les centrales",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on une énergie non renouvelable ?",
+      "verso": "Une énergie dont les réserves sont limitées et consommées bien plus vite que la nature ne les forme : pétrole et dérivés, charbon, gaz naturel, uranium.",
+      "difficulte": 1,
+      "tags": [
+        "non-renouvelable",
+        "definition"
+      ]
+    },
+    {
+      "id": "PC3E-P06-019",
+      "lecon": "La production de l'énergie électrique : les centrales",
+      "type": "definition",
+      "recto": "Comment classe-t-on les centrales électriques selon que leur source d'énergie est renouvelable ou non ?",
+      "verso": "Renouvelable : centrales hydroélectriques, solaires et éoliennes. Non renouvelable : centrales thermiques (diesel, charbon, gaz) et nucléaires (uranium).",
+      "difficulte": 2,
+      "tags": [
+        "centrale",
+        "renouvelable"
+      ]
+    },
+    {
+      "id": "PC3E-P06-020",
+      "lecon": "La production de l'énergie électrique : les centrales",
+      "type": "formule",
+      "recto": "Quelle est la chaîne de conversion d'une centrale nucléaire ?",
+      "verso": "Energie nucléaire $\\rightarrow$ réacteur $\\rightarrow$ énergie thermique $\\rightarrow$ turbine $\\rightarrow$ énergie mécanique $\\rightarrow$ alternateur $\\rightarrow$ énergie électrique. C'est une centrale thermique à vapeur dont la chaleur vient de l'uranium.",
+      "difficulte": 3,
+      "tags": [
+        "nucleaire",
+        "chaine-energetique"
+      ]
+    },
+    {
+      "id": "PC3E-P06-021",
+      "lecon": "La production de l'énergie électrique : les centrales",
+      "type": "definition",
+      "recto": "Quels sont les avantages et les inconvénients d'une centrale solaire photovoltaïque comme celle de Zagtouli ?",
+      "verso": "Le soleil est gratuit, propre et quasi inépuisable ; mais la centrale ne produit pas la nuit, doit être complétée par des batteries, et panneaux et batteries coûtent cher.",
+      "difficulte": 2,
+      "tags": [
+        "photovoltaique",
+        "zagtouli"
+      ]
+    },
+    {
+      "id": "PC3E-P06-022",
+      "lecon": "La production de l'énergie électrique : les centrales",
+      "type": "definition",
+      "recto": "Quels sont les avantages et les inconvénients des centrales thermiques diesel du Burkina Faso ?",
+      "verso": "Elles produisent à la demande, de jour comme de nuit et en toute saison ; mais elles brûlent un combustible non renouvelable, importé et coûteux, et rejettent des fumées.",
+      "difficulte": 2,
+      "tags": [
+        "centrale-diesel"
+      ]
+    },
+    {
+      "id": "PC3E-P06-023",
+      "lecon": "La production de l'énergie électrique : les centrales",
+      "type": "definition",
+      "recto": "Quels méfaits sur l'environnement la production d'énergie électrique peut-elle causer ?",
+      "verso": "Fumées et dioxyde de carbone (gaz à effet de serre) des centrales thermiques, bruit, pollution des sols et de l'eau par les huiles, terres noyées et populations déplacées par les grands barrages, déchets radioactifs du nucléaire.",
+      "difficulte": 2,
+      "tags": [
+        "environnement",
+        "mefaits"
+      ]
+    },
+    {
+      "id": "PC3E-P06-024",
+      "lecon": "La production de l'énergie électrique : les centrales",
+      "type": "definition",
+      "recto": "Quelle est la première source d'énergie sur Terre ?",
+      "verso": "Le soleil. Il sert dans les centrales, mais aussi pour les lampadaires, les kits d'éclairage, les pompes de maraîchage, les chauffe-eau, les séchoirs et les réfrigérateurs à vaccins.",
+      "difficulte": 1,
+      "tags": [
+        "solaire",
+        "applications"
+      ]
+    },
+    {
+      "id": "PC3E-P06-025",
+      "lecon": "La production de l'énergie électrique : les centrales",
+      "type": "definition",
+      "recto": "Pourquoi « renouvelable » ne signifie-t-il pas « non polluant » ?",
+      "verso": "Renouvelable concerne la source, qui ne s'épuise pas ; un grand barrage utilise une source renouvelable mais modifie fortement le milieu (terres noyées, populations déplacées).",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "renouvelable"
+      ]
+    },
+    {
+      "id": "PC3E-P06-026",
+      "lecon": "La production de l'énergie électrique : les centrales",
+      "type": "definition",
+      "recto": "Dans une centrale, quelle distinction faut-il faire entre la turbine et l'alternateur ?",
+      "verso": "La turbine ne fait que tourner ; c'est l'alternateur qu'elle entraîne qui produit le courant.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "turbine",
+        "alternateur"
+      ]
+    },
+    {
+      "id": "PC3E-P06-027",
+      "lecon": "Le transport, la distribution et l'énergie électrique dans un véhicule",
+      "type": "definition",
+      "recto": "Pourquoi une partie de l'énergie électrique est-elle perdue lors de son transport ?",
+      "verso": "Une ligne parcourue par un courant s'échauffe par effet Joule : une partie de l'énergie transportée est perdue en chaleur. Ces pertes augmentent très vite avec l'intensité.",
+      "difficulte": 2,
+      "tags": [
+        "pertes-en-ligne",
+        "effet-joule"
+      ]
+    },
+    {
+      "id": "PC3E-P06-028",
+      "lecon": "Le transport, la distribution et l'énergie électrique dans un véhicule",
+      "type": "formule",
+      "recto": "Pour transporter une puissance $P$ sous une tension $U$, quelle relation donne l'intensité $I$ dans la ligne ?",
+      "verso": "$I = \\dfrac{P}{U}$, avec $P$ en watts, $U$ en volts et $I$ en ampères. Elever la tension diminue l'intensité dans le même rapport, donc les pertes.",
+      "difficulte": 2,
+      "tags": [
+        "haute-tension",
+        "intensite"
+      ]
+    },
+    {
+      "id": "PC3E-P06-029",
+      "lecon": "Le transport, la distribution et l'énergie électrique dans un véhicule",
+      "type": "definition",
+      "recto": "Quel est le rôle des transformateurs dans le transport de l'énergie électrique ?",
+      "verso": "Ils modifient la tension sans modifier notablement la puissance : l'élévateur, à la sortie de la centrale, élève la tension pour le transport ; l'abaisseur, dans les postes, la ramène à une valeur utilisable sans danger.",
+      "difficulte": 2,
+      "tags": [
+        "transformateur",
+        "role"
+      ]
+    },
+    {
+      "id": "PC3E-P06-030",
+      "lecon": "Le transport, la distribution et l'énergie électrique dans un véhicule",
+      "type": "definition",
+      "recto": "Pourquoi la phrase « on transporte en haute tension pour avoir plus de puissance » est-elle fausse ?",
+      "verso": "La puissance est fixée par le besoin et le transformateur ne l'augmente pas ; la haute tension sert à diminuer l'intensité, donc les pertes par effet Joule.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "haute-tension"
+      ]
+    },
+    {
+      "id": "PC3E-P06-031",
+      "lecon": "Le transport, la distribution et l'énergie électrique dans un véhicule",
+      "type": "definition",
+      "recto": "Pourquoi abaisse-t-on la haute tension avant d'entrer chez l'abonné ?",
+      "verso": "Chez l'abonné, la distance est courte et les pertes négligeables : la haute tension ne serait plus qu'un danger, et les appareils domestiques sont construits pour $220~\\mathrm{V}$.",
+      "difficulte": 2,
+      "tags": [
+        "distribution",
+        "securite"
+      ]
+    },
+    {
+      "id": "PC3E-P06-032",
+      "lecon": "Le transport, la distribution et l'énergie électrique dans un véhicule",
+      "type": "definition",
+      "recto": "Quelles règles de sécurité impose une ligne haute tension ?",
+      "verso": "Elle peut tuer sans contact, par amorçage à distance : ne jamais s'approcher d'un conducteur tombé au sol, ne jamais monter sur un pylône, garder à l'horizontale toute charge longue passant sous la ligne.",
+      "difficulte": 2,
+      "tags": [
+        "securite",
+        "haute-tension"
+      ]
+    },
+    {
+      "id": "PC3E-P06-033",
+      "lecon": "Le transport, la distribution et l'énergie électrique dans un véhicule",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on le délestage ?",
+      "verso": "Les coupures de courant faites à tour de rôle dans les quartiers par la SONABEL quand la demande dépasse la production.",
+      "difficulte": 1,
+      "tags": [
+        "delestage",
+        "reseau"
+      ]
+    },
+    {
+      "id": "PC3E-P06-034",
+      "lecon": "Le transport, la distribution et l'énergie électrique dans un véhicule",
+      "type": "definition",
+      "recto": "Quelles fonctions l'énergie électrique assure-t-elle dans un véhicule à moteur ?",
+      "verso": "Le démarrage (démarreur), l'allumage (bougies), l'éclairage (phares), la signalisation (clignotants, klaxon, feux stop), les instruments du tableau de bord, l'essuie-glace, la radio et la climatisation.",
+      "difficulte": 1,
+      "tags": [
+        "vehicule",
+        "fonctions"
+      ]
+    },
+    {
+      "id": "PC3E-P06-035",
+      "lecon": "Le transport, la distribution et l'énergie électrique dans un véhicule",
+      "type": "definition",
+      "recto": "Dans un véhicule, où est stockée l'énergie électrique et qu'est-ce qui la recharge ?",
+      "verso": "Dans la batterie, rechargée par l'alternateur du véhicule, uniquement moteur en marche : moteur arrêté, des phares restés allumés vident la batterie.",
+      "difficulte": 2,
+      "tags": [
+        "batterie",
+        "alternateur",
+        "vehicule"
+      ]
+    },
+    {
+      "id": "PC3E-P06-036",
+      "lecon": "Le transport, la distribution et l'énergie électrique dans un véhicule",
+      "type": "definition",
+      "recto": "Que signifie la capacité de $45~\\mathrm{Ah}$ portée sur une batterie ?",
+      "verso": "La batterie peut débiter $45~\\mathrm{A}$ pendant $1~\\mathrm{h}$, ou $9~\\mathrm{A}$ pendant $5~\\mathrm{h}$. L'ampère-heure est l'unité d'une capacité, pas d'une énergie (qui s'exprime en wattheures).",
+      "difficulte": 3,
+      "tags": [
+        "batterie",
+        "capacite",
+        "piege"
+      ]
+    }
+  ]
+}

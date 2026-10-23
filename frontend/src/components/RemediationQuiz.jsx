@@ -3,7 +3,7 @@ import { motion } from "framer-motion"
 import { ClipboardCheck, CheckCircle2, AlertTriangle, BookOpen } from "lucide-react"
 import Card from "./ui/Card"
 import Button from "./ui/Button"
-import MathContent from "./MathContent"
+import RichContent from "./RichContent"
 import QcmQuestion from "./QcmQuestion"
 
 const PASS_THRESHOLD = 0.8
@@ -96,7 +96,7 @@ export default function RemediationQuiz({ data, onSubmitResults }) {
                       {n.notion}
                     </div>
                     <div className="prose-chat max-w-none text-sm text-base-content/80">
-                      <MathContent>{n.rappel}</MathContent>
+                      <RichContent>{n.rappel}</RichContent>
                     </div>
                   </div>
                 )}

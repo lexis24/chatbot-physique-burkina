@@ -1,0 +1,390 @@
+{
+  "matiere": "Physique-Chimie",
+  "partie": "Physique",
+  "niveau": "4ème",
+  "chapitre": "Physique, Chapitre 5 : Le thermomètre",
+  "source": "pc/4eme/Chapitre_5_Le_thermometre",
+  "nombre_cartes": 32,
+  "cartes": [
+    {
+      "id": "PC4E-P05-001",
+      "lecon": "La température, du toucher au thermomètre",
+      "type": "definition",
+      "recto": "En physique, qu'appelle-t-on la température d'un corps ?",
+      "verso": "C'est la grandeur qui repère l'état thermique d'un corps, c'est-à-dire son degré de chaleur. On la note $\\theta$ en degrés Celsius et $T$ en kelvins.",
+      "difficulte": 1,
+      "tags": [
+        "temperature",
+        "definition"
+      ]
+    },
+    {
+      "id": "PC4E-P05-002",
+      "lecon": "La température, du toucher au thermomètre",
+      "type": "definition",
+      "recto": "Pour quelles raisons le toucher ne permet-il pas de repérer correctement la température d'un corps ?",
+      "verso": "La sensation dépend de l'état de la main avant le contact et de la nature du corps touché ; elle ne classe pas des températures voisines et ne donne aucune valeur chiffrée. De plus, on ne peut pas toucher tous les corps sans danger.",
+      "difficulte": 2,
+      "tags": [
+        "toucher",
+        "insuffisance"
+      ]
+    },
+    {
+      "id": "PC4E-P05-003",
+      "lecon": "La température, du toucher au thermomètre",
+      "type": "definition",
+      "recto": "Lorsqu'on touche un corps, que détecte réellement la peau ?",
+      "verso": "Elle ne détecte pas l'état thermique du corps mais le sens du transfert de chaleur entre elle-même et ce corps. C'est pourquoi une même eau tiède paraît froide ou chaude selon l'état de la main.",
+      "difficulte": 3,
+      "tags": [
+        "toucher",
+        "transfert-de-chaleur"
+      ]
+    },
+    {
+      "id": "PC4E-P05-004",
+      "lecon": "La température, du toucher au thermomètre",
+      "type": "definition",
+      "recto": "Sur quel phénomène repose le principe du thermomètre à liquide ?",
+      "verso": "Sur la dilatation : un liquide enfermé dans un réservoir augmente de volume quand la température s'élève et diminue de volume quand elle s'abaisse.",
+      "difficulte": 1,
+      "tags": [
+        "dilatation",
+        "principe"
+      ]
+    },
+    {
+      "id": "PC4E-P05-005",
+      "lecon": "La température, du toucher au thermomètre",
+      "type": "definition",
+      "recto": "Quelles sont les parties d'un thermomètre à liquide ?",
+      "verso": "Un réservoir contenant le liquide thermométrique, un tube capillaire très fin, une échelle graduée et une gaine de verre protectrice ; souvent une petite ampoule de sécurité au sommet du tube.",
+      "difficulte": 1,
+      "tags": [
+        "thermometre-a-liquide",
+        "parties"
+      ]
+    },
+    {
+      "id": "PC4E-P05-006",
+      "lecon": "La température, du toucher au thermomètre",
+      "type": "definition",
+      "recto": "Dans un thermomètre à liquide, pourquoi le tube capillaire est-il très fin ?",
+      "verso": "La dilatation d'un liquide est faible : avec un large réservoir et un tube très fin, un petit accroissement de volume fait monter la colonne de beaucoup, ce qui rend la variation visible.",
+      "difficulte": 2,
+      "tags": [
+        "tube-capillaire",
+        "dilatation"
+      ]
+    },
+    {
+      "id": "PC4E-P05-007",
+      "lecon": "La température, du toucher au thermomètre",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on l'étendue de mesure d'un thermomètre ?",
+      "verso": "C'est l'intervalle allant de la plus basse à la plus haute température qu'il peut indiquer. Sa précision, elle, est la valeur d'une petite division (par exemple $1~^{\\circ}\\mathrm{C}$ pour un thermomètre de classe allant de $-10~^{\\circ}\\mathrm{C}$ à $110~^{\\circ}\\mathrm{C}$).",
+      "difficulte": 2,
+      "tags": [
+        "etendue",
+        "precision"
+      ]
+    },
+    {
+      "id": "PC4E-P05-008",
+      "lecon": "La température, du toucher au thermomètre",
+      "type": "definition",
+      "recto": "Quelle erreur de lecture commet-on sur un thermomètre si l'oeil n'est pas en face du sommet de la colonne ?",
+      "verso": "Une erreur de parallaxe : l'oeil trop haut fait lire une valeur trop faible, l'oeil trop bas une valeur trop forte.",
+      "difficulte": 2,
+      "tags": [
+        "parallaxe",
+        "lecture"
+      ]
+    },
+    {
+      "id": "PC4E-P05-009",
+      "lecon": "La température, du toucher au thermomètre",
+      "type": "definition",
+      "recto": "Quelle partie d'un thermomètre de classe doit-on plonger dans un liquide pour mesurer sa température ?",
+      "verso": "Le réservoir seul, entièrement, sans qu'il touche le fond ni les parois du récipient ; on lit quand la colonne ne bouge plus.",
+      "difficulte": 2,
+      "tags": [
+        "mesure",
+        "reservoir"
+      ]
+    },
+    {
+      "id": "PC4E-P05-010",
+      "lecon": "La température, du toucher au thermomètre",
+      "type": "definition",
+      "recto": "Quelle différence y a-t-il entre la chaleur et la température ?",
+      "verso": "La chaleur est une énergie qui passe d'un corps à un autre ; la température est un repère de l'état thermique d'un corps.",
+      "difficulte": 3,
+      "tags": [
+        "chaleur",
+        "temperature",
+        "piege"
+      ]
+    },
+    {
+      "id": "PC4E-P05-011",
+      "lecon": "Les échelles de température et les températures remarquables",
+      "type": "definition",
+      "recto": "Sur quels points fixes l'échelle Celsius est-elle construite ?",
+      "verso": "Sur la température de la glace fondante, notée 0, et celle de l'eau bouillante sous la pression atmosphérique normale, notée 100 ; l'intervalle est partagé en 100 parties égales, chacune vaut $1~^{\\circ}\\mathrm{C}$.",
+      "difficulte": 1,
+      "tags": [
+        "echelle-celsius",
+        "points-fixes"
+      ]
+    },
+    {
+      "id": "PC4E-P05-012",
+      "lecon": "Les échelles de température et les températures remarquables",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on le zéro absolu ?",
+      "verso": "C'est la température la plus basse qui puisse exister, celle où l'agitation des particules est la plus faible possible. Il vaut $0~\\mathrm{K}$, soit $-273~^{\\circ}\\mathrm{C}$ (plus précisément $-273{,}15~^{\\circ}\\mathrm{C}$).",
+      "difficulte": 2,
+      "tags": [
+        "zero-absolu"
+      ]
+    },
+    {
+      "id": "PC4E-P05-013",
+      "lecon": "Les échelles de température et les températures remarquables",
+      "type": "definition",
+      "recto": "Quelle est l'unité légale de température, avec son symbole ?",
+      "verso": "Le kelvin, de symbole $\\mathrm{K}$, écrit sans le signe degré. L'échelle Kelvin a pour zéro le zéro absolu.",
+      "difficulte": 1,
+      "tags": [
+        "kelvin",
+        "unite-legale"
+      ]
+    },
+    {
+      "id": "PC4E-P05-014",
+      "lecon": "Les échelles de température et les températures remarquables",
+      "type": "formule",
+      "recto": "Quelle relation lie la température $T$ en kelvins et la température $\\theta$ en degrés Celsius ?",
+      "verso": "$T = \\theta + 273$, donc $\\theta = T - 273$, avec $T$ en $\\mathrm{K}$ et $\\theta$ en $^{\\circ}\\mathrm{C}$.",
+      "difficulte": 1,
+      "tags": [
+        "conversion",
+        "kelvin",
+        "celsius"
+      ]
+    },
+    {
+      "id": "PC4E-P05-015",
+      "lecon": "Les échelles de température et les températures remarquables",
+      "type": "definition",
+      "recto": "Pourquoi passe-t-on des degrés Celsius aux kelvins par une addition et non par une multiplication ?",
+      "verso": "Les deux échelles ont des divisions de même largeur (un écart de $1~\\mathrm{K}$ vaut un écart de $1~^{\\circ}\\mathrm{C}$) mais des zéros différents : c'est un simple décalage de l'origine de 273 divisions.",
+      "difficulte": 3,
+      "tags": [
+        "conversion",
+        "echelles"
+      ]
+    },
+    {
+      "id": "PC4E-P05-016",
+      "lecon": "Les échelles de température et les températures remarquables",
+      "type": "definition",
+      "recto": "Pourquoi une température exprimée en kelvins n'est-elle jamais négative ?",
+      "verso": "L'échelle Kelvin part du zéro absolu, la température la plus basse possible : aucune température ne lui est inférieure. Un résultat négatif en kelvins est donc forcément faux.",
+      "difficulte": 2,
+      "tags": [
+        "kelvin",
+        "zero-absolu"
+      ]
+    },
+    {
+      "id": "PC4E-P05-017",
+      "lecon": "Les échelles de température et les températures remarquables",
+      "type": "definition",
+      "recto": "Comment écrit-on correctement la température de l'eau bouillante en kelvins ?",
+      "verso": "$373~\\mathrm{K}$, sans signe degré : l'écriture « $373~^{\\circ}\\mathrm{K}$ » est fausse. On peut aussi écrire $100~^{\\circ}\\mathrm{C}$.",
+      "difficulte": 3,
+      "tags": [
+        "kelvin",
+        "ecriture",
+        "piege"
+      ]
+    },
+    {
+      "id": "PC4E-P05-018",
+      "lecon": "Les échelles de température et les températures remarquables",
+      "type": "definition",
+      "recto": "Sur l'échelle Fahrenheit, à quelles valeurs correspondent la glace fondante et l'eau bouillante ?",
+      "verso": "La glace fondante est à $32~^{\\circ}\\mathrm{F}$ et l'eau bouillante à $212~^{\\circ}\\mathrm{F}$. Cette échelle est encore employée dans quelques pays.",
+      "difficulte": 2,
+      "tags": [
+        "fahrenheit"
+      ]
+    },
+    {
+      "id": "PC4E-P05-019",
+      "lecon": "Les échelles de température et les températures remarquables",
+      "type": "formule",
+      "recto": "Quelles sont, en degrés Celsius et en kelvins, les températures de la glace fondante et de l'eau bouillante ?",
+      "verso": "Glace fondante : $0~^{\\circ}\\mathrm{C}$, soit $273~\\mathrm{K}$. Eau bouillante sous la pression atmosphérique normale : $100~^{\\circ}\\mathrm{C}$, soit $373~\\mathrm{K}$.",
+      "difficulte": 1,
+      "tags": [
+        "temperatures-remarquables"
+      ]
+    },
+    {
+      "id": "PC4E-P05-020",
+      "lecon": "Les échelles de température et les températures remarquables",
+      "type": "formule",
+      "recto": "Quelles sont, en degrés Celsius et en kelvins, la température du corps humain en bonne santé et celle de l'air d'une pièce ordinaire ?",
+      "verso": "Corps humain : environ $37~^{\\circ}\\mathrm{C}$, soit $310~\\mathrm{K}$. Air d'une pièce ordinaire : de $20~^{\\circ}\\mathrm{C}$ à $25~^{\\circ}\\mathrm{C}$, soit de $293~\\mathrm{K}$ à $298~\\mathrm{K}$.",
+      "difficulte": 2,
+      "tags": [
+        "temperatures-remarquables",
+        "corps-humain"
+      ]
+    },
+    {
+      "id": "PC4E-P05-021",
+      "lecon": "L'équilibre thermique et les thermomètres particuliers",
+      "type": "definition",
+      "recto": "Que se passe-t-il lorsque deux corps de températures différentes sont mis en contact ?",
+      "verso": "Le corps de température la plus élevée cède de la chaleur, celui de température la plus basse en reçoit, jusqu'à ce que les deux aient la même température : c'est l'équilibre thermique.",
+      "difficulte": 1,
+      "tags": [
+        "equilibre-thermique"
+      ]
+    },
+    {
+      "id": "PC4E-P05-022",
+      "lecon": "L'équilibre thermique et les thermomètres particuliers",
+      "type": "definition",
+      "recto": "Pourquoi faut-il attendre la stabilisation de la colonne avant de lire un thermomètre ?",
+      "verso": "Le thermomètre indique sa propre température : il doit recevoir de la chaleur jusqu'à l'équilibre thermique avec le corps mesuré. Avant, l'indication n'est pas celle du corps.",
+      "difficulte": 2,
+      "tags": [
+        "equilibre-thermique",
+        "lecture"
+      ]
+    },
+    {
+      "id": "PC4E-P05-023",
+      "lecon": "L'équilibre thermique et les thermomètres particuliers",
+      "type": "formule",
+      "recto": "On mélange deux liquides de températures $\\theta_A$ et $\\theta_B$, avec $\\theta_A \\lt \\theta_B$ : où se situe la température finale $\\theta$ du mélange ?",
+      "verso": "Elle est comprise entre les deux : $\\theta_A \\lt \\theta \\lt \\theta_B$. Elle n'est pas forcément la moyenne exacte, car elle dépend aussi des quantités mélangées.",
+      "difficulte": 2,
+      "tags": [
+        "melange",
+        "equilibre-thermique"
+      ]
+    },
+    {
+      "id": "PC4E-P05-024",
+      "lecon": "L'équilibre thermique et les thermomètres particuliers",
+      "type": "definition",
+      "recto": "Pourquoi le mélange d'eau à $20~^{\\circ}\\mathrm{C}$ et d'eau à $60~^{\\circ}\\mathrm{C}$ ne peut-il jamais être à $70~^{\\circ}\\mathrm{C}$ ?",
+      "verso": "La chaleur ne va jamais du corps froid vers le corps chaud : la température d'un mélange reste toujours comprise entre les deux températures de départ, ici entre $20~^{\\circ}\\mathrm{C}$ et $60~^{\\circ}\\mathrm{C}$.",
+      "difficulte": 3,
+      "tags": [
+        "melange",
+        "piege"
+      ]
+    },
+    {
+      "id": "PC4E-P05-025",
+      "lecon": "L'équilibre thermique et les thermomètres particuliers",
+      "type": "definition",
+      "recto": "Comment l'échelle d'un thermomètre médical est-elle graduée ?",
+      "verso": "Une étendue réduite, de $35~^{\\circ}\\mathrm{C}$ à $42~^{\\circ}\\mathrm{C}$, qui encadre les températures possibles chez un être humain, et une graduation fine en dixièmes de degré ($0{,}1~^{\\circ}\\mathrm{C}$).",
+      "difficulte": 2,
+      "tags": [
+        "thermometre-medical",
+        "etendue"
+      ]
+    },
+    {
+      "id": "PC4E-P05-026",
+      "lecon": "L'équilibre thermique et les thermomètres particuliers",
+      "type": "definition",
+      "recto": "Dans un thermomètre médical, à quoi sert l'étranglement du tube capillaire ?",
+      "verso": "Placé juste au-dessus du réservoir, il coupe la colonne quand l'appareil refroidit : le liquide monté reste bloqué et l'indication est conservée après le retrait.",
+      "difficulte": 2,
+      "tags": [
+        "etranglement",
+        "thermometre-medical"
+      ]
+    },
+    {
+      "id": "PC4E-P05-027",
+      "lecon": "L'équilibre thermique et les thermomètres particuliers",
+      "type": "definition",
+      "recto": "Pourquoi appelle-t-on aussi le thermomètre médical un thermomètre à maximum ?",
+      "verso": "Grâce à son étranglement, il garde la plus haute température qu'il a atteinte. C'est pourquoi il faut le secouer avant chaque nouvelle mesure.",
+      "difficulte": 2,
+      "tags": [
+        "thermometre-a-maximum"
+      ]
+    },
+    {
+      "id": "PC4E-P05-028",
+      "lecon": "L'équilibre thermique et les thermomètres particuliers",
+      "type": "definition",
+      "recto": "Quelle erreur commet-on en réutilisant un thermomètre médical sans le secouer ?",
+      "verso": "Il indique encore la température du malade précédent, puisque l'étranglement a conservé l'indication. On le secoue jusqu'à ce que la colonne redescende sous $35~^{\\circ}\\mathrm{C}$, et on le désinfecte après chaque usage.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "thermometre-medical"
+      ]
+    },
+    {
+      "id": "PC4E-P05-029",
+      "lecon": "L'équilibre thermique et les thermomètres particuliers",
+      "type": "definition",
+      "recto": "Combien de temps faut-il laisser un thermomètre médical sous l'aisselle pour atteindre l'équilibre thermique ?",
+      "verso": "Trois à cinq minutes, l'aisselle bien fermée. Le retirer au bout d'une minute revient à sous-estimer la fièvre.",
+      "difficulte": 2,
+      "tags": [
+        "thermometre-medical",
+        "duree"
+      ]
+    },
+    {
+      "id": "PC4E-P05-030",
+      "lecon": "L'équilibre thermique et les thermomètres particuliers",
+      "type": "definition",
+      "recto": "Comment interpréter une température corporelle selon sa valeur par rapport à $37~^{\\circ}\\mathrm{C}$ et $38~^{\\circ}\\mathrm{C}$ ?",
+      "verso": "Environ $37~^{\\circ}\\mathrm{C}$ : valeur normale ; entre $37~^{\\circ}\\mathrm{C}$ et $38~^{\\circ}\\mathrm{C}$ : température un peu élevée, sans fièvre ; au-delà de $38~^{\\circ}\\mathrm{C}$ : fièvre.",
+      "difficulte": 2,
+      "tags": [
+        "fievre",
+        "corps-humain"
+      ]
+    },
+    {
+      "id": "PC4E-P05-031",
+      "lecon": "L'équilibre thermique et les thermomètres particuliers",
+      "type": "definition",
+      "recto": "Quel thermomètre utilise-t-on pour mesurer les très hautes températures d'un four ou d'un métal en fusion ?",
+      "verso": "Le pyromètre. Un thermomètre médical n'y convient pas : son étendue s'arrête à $42~^{\\circ}\\mathrm{C}$ et il éclaterait.",
+      "difficulte": 1,
+      "tags": [
+        "pyrometre"
+      ]
+    },
+    {
+      "id": "PC4E-P05-032",
+      "lecon": "L'équilibre thermique et les thermomètres particuliers",
+      "type": "definition",
+      "recto": "Quels thermomètres autres que le thermomètre à liquide emploie-t-on couramment ?",
+      "verso": "Le thermomètre électronique (affichage numérique, signal sonore à l'équilibre), à aiguille (cadran), à infrarouge dit laser (mesure à distance), le pyromètre et le thermomètre à cristaux liquides (bande souple sur le front).",
+      "difficulte": 2,
+      "tags": [
+        "autres-thermometres"
+      ]
+    }
+  ]
+}

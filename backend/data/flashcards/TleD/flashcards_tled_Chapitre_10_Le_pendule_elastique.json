@@ -1,0 +1,425 @@
+{
+  "matiere": "Physique-Chimie",
+  "partie": "Physique",
+  "niveau": "Terminale D",
+  "chapitre": "Physique, Chapitre 10 : Le pendule élastique",
+  "source": "pc/tled/Chapitre_10_Le_pendule_elastique",
+  "nombre_cartes": 36,
+  "cartes": [
+    {
+      "id": "PCTD-P10-001",
+      "lecon": "L'oscillateur mécanique : période, fréquence, élongation et amplitude",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on un oscillateur mécanique ?",
+      "verso": "Un système matériel qui, écarté de sa position d'équilibre stable, effectue de part et d'autre de cette position un mouvement de va-et-vient (mouvement oscillatoire) sous l'effet d'une force de rappel.",
+      "difficulte": 1,
+      "tags": [
+        "oscillateur-mecanique"
+      ]
+    },
+    {
+      "id": "PCTD-P10-002",
+      "lecon": "L'oscillateur mécanique : période, fréquence, élongation et amplitude",
+      "type": "definition",
+      "recto": "Pour un oscillateur mécanique, qu'appelle-t-on une oscillation ?",
+      "verso": "Un aller-retour complet : le corps quitte une position, décrit tout le mouvement et revient à cette même position en allant dans le même sens.",
+      "difficulte": 1,
+      "tags": [
+        "oscillation"
+      ]
+    },
+    {
+      "id": "PCTD-P10-003",
+      "lecon": "L'oscillateur mécanique : période, fréquence, élongation et amplitude",
+      "type": "definition",
+      "recto": "Pour un oscillateur mécanique, qu'appelle-t-on l'élongation $x$ ?",
+      "verso": "L'abscisse, à une date $t$, du point qui repère le corps sur un axe orienté d'origine la position d'équilibre ; elle est algébrique et s'exprime en mètres.",
+      "difficulte": 1,
+      "tags": [
+        "elongation"
+      ]
+    },
+    {
+      "id": "PCTD-P10-004",
+      "lecon": "L'oscillateur mécanique : période, fréquence, élongation et amplitude",
+      "type": "definition",
+      "recto": "Pour un oscillateur mécanique, qu'appelle-t-on l'amplitude $X_m$ ?",
+      "verso": "La valeur maximale de l'élongation, c'est-à-dire l'écart maximal du corps à sa position d'équilibre ; elle est toujours positive, en mètres.",
+      "difficulte": 1,
+      "tags": [
+        "amplitude"
+      ]
+    },
+    {
+      "id": "PCTD-P10-005",
+      "lecon": "L'oscillateur mécanique : période, fréquence, élongation et amplitude",
+      "type": "formule",
+      "recto": "Comment calcule-t-on la période $T$ d'un oscillateur qui effectue $n$ oscillations pendant la durée $\\Delta t$ ?",
+      "verso": "$T = \\dfrac{\\Delta t}{n}$, en secondes : la période est la durée d'une oscillation complète.",
+      "difficulte": 1,
+      "tags": [
+        "periode"
+      ]
+    },
+    {
+      "id": "PCTD-P10-006",
+      "lecon": "L'oscillateur mécanique : période, fréquence, élongation et amplitude",
+      "type": "formule",
+      "recto": "Quelles relations lient la fréquence $N$ et la pulsation $\\omega$ d'un oscillateur à sa période $T$ ?",
+      "verso": "$N = \\dfrac{1}{T}$, en hertz (nombre d'oscillations par seconde) ; $\\omega = \\dfrac{2\\pi}{T} = 2\\pi N$, en rad/s.",
+      "difficulte": 2,
+      "tags": [
+        "frequence",
+        "pulsation"
+      ]
+    },
+    {
+      "id": "PCTD-P10-007",
+      "lecon": "L'oscillateur mécanique : période, fréquence, élongation et amplitude",
+      "type": "definition",
+      "recto": "Quelle différence y a-t-il entre l'élongation et l'amplitude d'un oscillateur ?",
+      "verso": "L'élongation est une grandeur algébrique qui change à chaque instant ; l'amplitude est une constante positive, la plus grande valeur que prend l'élongation.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "elongation",
+        "amplitude"
+      ]
+    },
+    {
+      "id": "PCTD-P10-008",
+      "lecon": "L'oscillateur mécanique : période, fréquence, élongation et amplitude",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on régime d'oscillations libres ?",
+      "verso": "Le régime d'un oscillateur écarté de sa position d'équilibre puis lâché sans plus rien lui imposer : il oscille seul, aucune force extérieure n'entretient le mouvement.",
+      "difficulte": 2,
+      "tags": [
+        "regime-libre"
+      ]
+    },
+    {
+      "id": "PCTD-P10-009",
+      "lecon": "L'oscillateur mécanique : période, fréquence, élongation et amplitude",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on un oscillateur non amorti, ou idéal ?",
+      "verso": "Un oscillateur dont les frottements sont négligeables : l'amplitude reste constante et le mouvement se répète indéfiniment. Sa période est la période propre $T_0$.",
+      "difficulte": 2,
+      "tags": [
+        "non-amorti",
+        "periode-propre"
+      ]
+    },
+    {
+      "id": "PCTD-P10-010",
+      "lecon": "L'oscillateur mécanique : période, fréquence, élongation et amplitude",
+      "type": "definition",
+      "recto": "Quels sont les deux régimes d'un oscillateur amorti ?",
+      "verso": "Amortissement faible : régime pseudo-périodique, l'amplitude décroît et l'on parle de pseudo-période. Amortissement fort : régime apériodique, le corps revient à l'équilibre sans le dépasser.",
+      "difficulte": 2,
+      "tags": [
+        "amorti",
+        "pseudo-periode"
+      ]
+    },
+    {
+      "id": "PCTD-P10-011",
+      "lecon": "Le pendule élastique horizontal et sa période propre",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on un pendule élastique horizontal ?",
+      "verso": "Le système formé d'un solide de masse $m$ glissant sans frottement sur un support horizontal et d'un ressort à spires non jointives de raideur $k$, dont une extrémité est fixe et l'autre attachée au solide.",
+      "difficulte": 1,
+      "tags": [
+        "pendule-elastique"
+      ]
+    },
+    {
+      "id": "PCTD-P10-012",
+      "lecon": "Le pendule élastique horizontal et sa période propre",
+      "type": "formule",
+      "recto": "Pour un pendule élastique horizontal, quelle est la projection sur l'axe de la tension du ressort quand l'élongation vaut $x$ ?",
+      "verso": "$T_x = -k\\,x$ : la force est proportionnelle à l'élongation et de signe opposé, toujours dirigée vers la position d'équilibre (force de rappel).",
+      "difficulte": 2,
+      "tags": [
+        "force-de-rappel"
+      ]
+    },
+    {
+      "id": "PCTD-P10-013",
+      "lecon": "Le pendule élastique horizontal et sa période propre",
+      "type": "formule",
+      "recto": "Quelle est l'expression de la période propre d'un pendule élastique, avec ses unités ?",
+      "verso": "$T_0 = 2\\pi\\sqrt{\\dfrac{m}{k}}$, avec $T_0$ en s, $m$ en kg et $k$ en N/m, les frottements étant négligeables.",
+      "difficulte": 1,
+      "tags": [
+        "periode-propre"
+      ]
+    },
+    {
+      "id": "PCTD-P10-014",
+      "lecon": "Le pendule élastique horizontal et sa période propre",
+      "type": "formule",
+      "recto": "Quelles sont les expressions de la pulsation propre $\\omega_0$ et de la fréquence propre $N_0$ d'un pendule élastique ?",
+      "verso": "$\\omega_0 = \\sqrt{\\dfrac{k}{m}}$, en rad/s, et $N_0 = \\dfrac{1}{2\\pi}\\sqrt{\\dfrac{k}{m}}$, en Hz.",
+      "difficulte": 2,
+      "tags": [
+        "pulsation-propre",
+        "frequence-propre"
+      ]
+    },
+    {
+      "id": "PCTD-P10-015",
+      "lecon": "Le pendule élastique horizontal et sa période propre",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on l'isochronisme des oscillations d'un pendule élastique ?",
+      "verso": "Le fait que la période propre ne dépende pas de l'amplitude : elle ne dépend que de la masse $m$ et de la raideur $k$, parce que la force de rappel est exactement proportionnelle à l'élongation.",
+      "difficulte": 2,
+      "tags": [
+        "isochronisme"
+      ]
+    },
+    {
+      "id": "PCTD-P10-016",
+      "lecon": "Le pendule élastique horizontal et sa période propre",
+      "type": "definition",
+      "recto": "Pour un pendule élastique, pourquoi $T_0 = 2\\pi\\sqrt{\\dfrac{k}{m}}$ est-elle fausse ?",
+      "verso": "Masse et raideur sont échangées : $T_0 = 2\\pi\\sqrt{\\dfrac{m}{k}}$. L'expression fautive vaut $2\\pi\\,\\omega_0$, car $\\omega_0 = \\sqrt{\\dfrac{k}{m}}$.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "periode-propre"
+      ]
+    },
+    {
+      "id": "PCTD-P10-017",
+      "lecon": "Le pendule élastique horizontal et sa période propre",
+      "type": "formule",
+      "recto": "Comment détermine-t-on la raideur $k$ d'un ressort à partir du graphique $T_0^2 = f(m)$ ?",
+      "verso": "$T_0^2 = \\dfrac{4\\pi^2}{k}\\,m$ : la courbe est une droite passant par l'origine de pente $a = \\dfrac{4\\pi^2}{k}$, d'où $k = \\dfrac{4\\pi^2}{a}$ (méthode dynamique).",
+      "difficulte": 2,
+      "tags": [
+        "methode-dynamique",
+        "raideur"
+      ]
+    },
+    {
+      "id": "PCTD-P10-018",
+      "lecon": "Le pendule élastique horizontal et sa période propre",
+      "type": "formule",
+      "recto": "Quelle est la dimension de la raideur $k$ d'un ressort ?",
+      "verso": "$[k] = \\mathrm{M\\,T^{-2}}$, puisque $k = \\dfrac{F}{x}$ avec $[F] = \\mathrm{M\\,L\\,T^{-2}}$ et $[x] = \\mathrm{L}$. L'unité de $k$ est le N/m.",
+      "difficulte": 2,
+      "tags": [
+        "analyse-dimensionnelle"
+      ]
+    },
+    {
+      "id": "PCTD-P10-019",
+      "lecon": "Le pendule élastique horizontal et sa période propre",
+      "type": "definition",
+      "recto": "Que permet de trouver l'analyse dimensionnelle de la période d'un pendule élastique ?",
+      "verso": "La forme de la loi, $T_0 = C\\sqrt{\\dfrac{m}{k}}$, mais jamais la valeur du nombre sans dimension $C$ ; l'étude du mouvement donne $C = 2\\pi$.",
+      "difficulte": 3,
+      "tags": [
+        "analyse-dimensionnelle"
+      ]
+    },
+    {
+      "id": "PCTD-P10-020",
+      "lecon": "L'étude du mouvement : équation différentielle et équation horaire",
+      "type": "formule",
+      "recto": "Quelle est l'équation différentielle du mouvement d'un pendule élastique horizontal sans frottement ?",
+      "verso": "$\\dfrac{\\mathrm{d}^2x}{\\mathrm{d}t^2} + \\omega_0^2\\,x = 0$, avec $\\omega_0 = \\sqrt{\\dfrac{k}{m}}$ ; elle vient de la deuxième loi de Newton projetée sur l'axe : $-kx = m\\,\\dfrac{\\mathrm{d}^2x}{\\mathrm{d}t^2}$.",
+      "difficulte": 2,
+      "tags": [
+        "equation-differentielle"
+      ]
+    },
+    {
+      "id": "PCTD-P10-021",
+      "lecon": "L'étude du mouvement : équation différentielle et équation horaire",
+      "type": "formule",
+      "recto": "Quelle est l'équation horaire d'un oscillateur harmonique non amorti de pulsation propre $\\omega_0$ ?",
+      "verso": "$x(t) = X_m\\cos(\\omega_0 t + \\varphi)$, avec $X_m$ l'amplitude (m), $\\omega_0$ la pulsation propre (rad/s) et $\\varphi$ la phase à l'origine (rad).",
+      "difficulte": 1,
+      "tags": [
+        "equation-horaire"
+      ]
+    },
+    {
+      "id": "PCTD-P10-022",
+      "lecon": "L'étude du mouvement : équation différentielle et équation horaire",
+      "type": "definition",
+      "recto": "Pour $x(t) = X_m\\cos(\\omega_0 t + \\varphi)$, quelle différence y a-t-il entre la phase et la phase à l'origine ?",
+      "verso": "La phase $(\\omega_0 t + \\varphi)$ varie au cours du temps ; la phase à l'origine $\\varphi$ (ou phase initiale) est une constante, en radians.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "phase"
+      ]
+    },
+    {
+      "id": "PCTD-P10-023",
+      "lecon": "L'étude du mouvement : équation différentielle et équation horaire",
+      "type": "formule",
+      "recto": "Pour $x(t) = X_m\\cos(\\omega_0 t + \\varphi)$, quelles sont les valeurs maximales de la vitesse et de l'accélération ?",
+      "verso": "$V_{max} = X_m\\,\\omega_0$, atteinte au passage par la position d'équilibre ; $a_{max} = X_m\\,\\omega_0^2$, atteinte aux élongations extrêmes.",
+      "difficulte": 2,
+      "tags": [
+        "vitesse-maximale",
+        "acceleration"
+      ]
+    },
+    {
+      "id": "PCTD-P10-024",
+      "lecon": "L'étude du mouvement : équation différentielle et équation horaire",
+      "type": "formule",
+      "recto": "Pour un oscillateur harmonique, quelle relation lie l'accélération $a$ à l'élongation $x$ ?",
+      "verso": "$a = -\\omega_0^2\\,x$ : l'accélération est proportionnelle à l'élongation et de signe opposé.",
+      "difficulte": 2,
+      "tags": [
+        "acceleration"
+      ]
+    },
+    {
+      "id": "PCTD-P10-025",
+      "lecon": "L'étude du mouvement : équation différentielle et équation horaire",
+      "type": "definition",
+      "recto": "Quel est le décalage de phase entre la vitesse et l'élongation d'un oscillateur harmonique ?",
+      "verso": "La vitesse est en avance de $\\dfrac{\\pi}{2}$ sur l'élongation (quadrature) : elle s'annule aux élongations extrêmes et elle est extrême quand l'élongation s'annule.",
+      "difficulte": 3,
+      "tags": [
+        "quadrature",
+        "vitesse"
+      ]
+    },
+    {
+      "id": "PCTD-P10-026",
+      "lecon": "L'étude du mouvement : équation différentielle et équation horaire",
+      "type": "formule",
+      "recto": "Quelle est l'amplitude $X_m$ d'un oscillateur harmonique en fonction des conditions initiales $x_0$ et $v_0$ ?",
+      "verso": "$X_m = \\sqrt{x_0^2 + \\dfrac{v_0^2}{\\omega_0^2}}$, puisque $x_0 = X_m\\cos\\varphi$ et $v_0 = -X_m\\,\\omega_0\\sin\\varphi$.",
+      "difficulte": 2,
+      "tags": [
+        "conditions-initiales",
+        "amplitude"
+      ]
+    },
+    {
+      "id": "PCTD-P10-027",
+      "lecon": "L'étude du mouvement : équation différentielle et équation horaire",
+      "type": "formule",
+      "recto": "Pour $x(t) = X_m\\cos(\\omega_0 t + \\varphi)$, quelle est la phase à l'origine d'un oscillateur lâché sans vitesse initiale depuis l'élongation $x_0$ ?",
+      "verso": "$v_0 = 0$ impose $\\sin\\varphi = 0$ : $\\varphi = 0$ si $x_0 \\gt 0$, $\\varphi = \\pi$ si $x_0 \\lt 0$ ; dans les deux cas $X_m = \\lvert x_0\\rvert$.",
+      "difficulte": 2,
+      "tags": [
+        "phase",
+        "conditions-initiales"
+      ]
+    },
+    {
+      "id": "PCTD-P10-028",
+      "lecon": "L'étude du mouvement : équation différentielle et équation horaire",
+      "type": "formule",
+      "recto": "Pour $x(t) = X_m\\cos(\\omega_0 t + \\varphi)$, quelle est la phase à l'origine d'un oscillateur lancé depuis la position d'équilibre avec la vitesse $v_0$ ?",
+      "verso": "$x_0 = 0$ impose $\\cos\\varphi = 0$ : $\\varphi = -\\dfrac{\\pi}{2}$ si $v_0 \\gt 0$, $\\varphi = +\\dfrac{\\pi}{2}$ si $v_0 \\lt 0$ ; l'amplitude vaut $X_m = \\dfrac{\\lvert v_0\\rvert}{\\omega_0}$.",
+      "difficulte": 3,
+      "tags": [
+        "phase",
+        "conditions-initiales"
+      ]
+    },
+    {
+      "id": "PCTD-P10-029",
+      "lecon": "L'étude énergétique du pendule élastique",
+      "type": "formule",
+      "recto": "Quelle est l'expression de l'énergie mécanique d'un pendule élastique horizontal ?",
+      "verso": "$E_m = E_c + E_{pe} = \\dfrac{1}{2}m\\,v^2 + \\dfrac{1}{2}k\\,x^2$, en joules, avec $m$ en kg, $v$ en m/s, $k$ en N/m et $x$ en m.",
+      "difficulte": 1,
+      "tags": [
+        "energie-mecanique"
+      ]
+    },
+    {
+      "id": "PCTD-P10-030",
+      "lecon": "L'étude énergétique du pendule élastique",
+      "type": "formule",
+      "recto": "Pour un pendule élastique horizontal sans frottement, quelles expressions de l'énergie mécanique utilisent l'amplitude et la vitesse maximale ?",
+      "verso": "$E_m = \\dfrac{1}{2}k\\,X_m^2 = \\dfrac{1}{2}m\\,V_{max}^2$ = constante : la première en une élongation extrême, la seconde au passage en O.",
+      "difficulte": 2,
+      "tags": [
+        "conservation",
+        "energie-mecanique"
+      ]
+    },
+    {
+      "id": "PCTD-P10-031",
+      "lecon": "L'étude énergétique du pendule élastique",
+      "type": "definition",
+      "recto": "Pourquoi l'énergie potentielle élastique $\\dfrac{1}{2}kx^2$ n'est-elle jamais négative, même ressort comprimé ?",
+      "verso": "Parce que l'élongation y figure au carré : $E_{pe}$ est positive que le ressort soit étiré ou comprimé, et nulle seulement en O.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "energie-potentielle"
+      ]
+    },
+    {
+      "id": "PCTD-P10-032",
+      "lecon": "L'étude énergétique du pendule élastique",
+      "type": "formule",
+      "recto": "Pour un pendule élastique sans frottement, quelle relation lie la vitesse $v$ à l'élongation $x$ ?",
+      "verso": "$v^2 = \\dfrac{k}{m}\\left(X_m^2 - x^2\\right) = \\omega_0^2\\left(X_m^2 - x^2\\right)$, tirée de la conservation de l'énergie mécanique.",
+      "difficulte": 2,
+      "tags": [
+        "vitesse",
+        "conservation"
+      ]
+    },
+    {
+      "id": "PCTD-P10-033",
+      "lecon": "L'étude énergétique du pendule élastique",
+      "type": "definition",
+      "recto": "Pourquoi un pendule élastique réel finit-il par s'arrêter ?",
+      "verso": "Le travail des frottements est toujours résistant : l'énergie mécanique $E_m = \\dfrac{1}{2}kX_m^2$ diminue, donc l'amplitude aussi. L'énergie perdue échauffe le support, l'air et le ressort.",
+      "difficulte": 2,
+      "tags": [
+        "frottements",
+        "amortissement"
+      ]
+    },
+    {
+      "id": "PCTD-P10-034",
+      "lecon": "L'étude énergétique du pendule élastique",
+      "type": "definition",
+      "recto": "Quelle erreur commet-on en écrivant $E_m = \\dfrac{1}{2}mv^2 + \\dfrac{1}{2}kx^2 + W(\\vec{T})$ pour un pendule élastique ?",
+      "verso": "On compte deux fois le ressort : on utilise soit le travail de la tension (théorème de l'énergie cinétique), soit l'énergie potentielle élastique, jamais les deux.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "bilan-energetique"
+      ]
+    },
+    {
+      "id": "PCTD-P10-035",
+      "lecon": "L'étude énergétique du pendule élastique",
+      "type": "formule",
+      "recto": "Pour un pendule élastique sans frottement, quelle est la période des énergies cinétique et potentielle élastique au cours du temps ?",
+      "verso": "$\\dfrac{T_0}{2}$ : $E_c$ et $E_{pe}$ oscillent en opposition entre 0 et $E_m$, car le solide passe deux fois par O et deux fois par une position extrême à chaque oscillation.",
+      "difficulte": 2,
+      "tags": [
+        "diagramme-energie"
+      ]
+    },
+    {
+      "id": "PCTD-P10-036",
+      "lecon": "L'étude énergétique du pendule élastique",
+      "type": "definition",
+      "recto": "Sur le diagramme des énergies d'un pendule élastique en fonction de l'élongation $x$, quelles sont les formes des courbes ?",
+      "verso": "$E_{pe}$ : parabole de sommet O tournée vers le haut ; $E_m$ : droite horizontale ; $E_c$ : parabole tournée vers le bas, nulle en $x = \\pm X_m$. L'amplitude se lit à l'intersection de $E_{pe}$ et de $E_m$.",
+      "difficulte": 2,
+      "tags": [
+        "diagramme-energie"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,432 @@
+{
+  "matiere": "Physique-Chimie",
+  "partie": "Physique",
+  "niveau": "Terminale D",
+  "chapitre": "Physique, Chapitre 9 : Le mouvement d'une particule chargée dans un champ magnétique uniforme",
+  "source": "pc/tled/Chapitre_9_Le_mouvement_d_une_particule_chargee_dans_un_champ_magnetique_uniforme",
+  "nombre_cartes": 36,
+  "cartes": [
+    {
+      "id": "PCTD-P09-001",
+      "lecon": "Le produit vectoriel et la force de Lorentz",
+      "type": "definition",
+      "recto": "Quelles sont la direction et le module du produit vectoriel $\\vec{w}$ = $\\vec{u}$ ∧ $\\vec{v}$ de deux vecteurs faisant entre eux l'angle $\\alpha$ ?",
+      "verso": "Sa direction est perpendiculaire au plan formé par $\\vec{u}$ et $\\vec{v}$ (donc à chacun des deux vecteurs) ; son module vaut $u \\times v \\times \\sin\\alpha$.",
+      "difficulte": 1,
+      "tags": [
+        "produit-vectoriel"
+      ]
+    },
+    {
+      "id": "PCTD-P09-002",
+      "lecon": "Le produit vectoriel et la force de Lorentz",
+      "type": "formule",
+      "recto": "Avec la règle des trois doigts de la main droite, comment trouve-t-on le sens du produit vectoriel $\\vec{u}$ ∧ $\\vec{v}$ ?",
+      "verso": "Le pouce selon $\\vec{u}$, l'index selon $\\vec{v}$ : le majeur, replié perpendiculairement à la paume, donne le sens de $\\vec{u}$ ∧ $\\vec{v}$.",
+      "difficulte": 1,
+      "tags": [
+        "produit-vectoriel",
+        "trois-doigts"
+      ]
+    },
+    {
+      "id": "PCTD-P09-003",
+      "lecon": "Le produit vectoriel et la force de Lorentz",
+      "type": "formule",
+      "recto": "Que devient le produit vectoriel $\\vec{u}$ ∧ $\\vec{v}$ quand on inverse l'ordre des deux vecteurs ?",
+      "verso": "Il change de sens sans changer de valeur : $\\vec{v}$ ∧ $\\vec{u}$ = $-\\,\\vec{u}$ ∧ $\\vec{v}$. Le produit vectoriel n'est pas commutatif.",
+      "difficulte": 2,
+      "tags": [
+        "produit-vectoriel",
+        "commutativite"
+      ]
+    },
+    {
+      "id": "PCTD-P09-004",
+      "lecon": "Le produit vectoriel et la force de Lorentz",
+      "type": "formule",
+      "recto": "Selon la règle de l'observateur d'Ampère, où se trouve le produit vectoriel $\\vec{u}$ ∧ $\\vec{v}$ ?",
+      "verso": "L'observateur est couché le long de $\\vec{u}$ (le vecteur entre par ses pieds et sort par sa tête) et regarde dans la direction de $\\vec{v}$ : $\\vec{u}$ ∧ $\\vec{v}$ est à sa gauche.",
+      "difficulte": 3,
+      "tags": [
+        "observateur-ampere",
+        "produit-vectoriel"
+      ]
+    },
+    {
+      "id": "PCTD-P09-005",
+      "lecon": "Le produit vectoriel et la force de Lorentz",
+      "type": "formule",
+      "recto": "Quelle est l'expression vectorielle de la force de Lorentz subie par une particule de charge $q$ et de vitesse $\\vec{v}$ dans un champ magnétique $\\vec{B}$ ?",
+      "verso": "$\\vec{F}$ = $q\\,\\vec{v}$ ∧ $\\vec{B}$ : la charge $q$ (avec son signe) multiplie le produit vectoriel de $\\vec{v}$ par $\\vec{B}$. Point d'application : la particule.",
+      "difficulte": 1,
+      "tags": [
+        "force-de-lorentz"
+      ]
+    },
+    {
+      "id": "PCTD-P09-006",
+      "lecon": "Le produit vectoriel et la force de Lorentz",
+      "type": "formule",
+      "recto": "Quelle est l'expression de la valeur de la force de Lorentz, avec ses unités ?",
+      "verso": "$F = \\lvert q\\rvert\\,v\\,B\\,\\sin\\alpha$, avec $F$ en N, $q$ en C, $v$ en m/s, $B$ en T et $\\alpha$ l'angle entre $\\vec{v}$ et $\\vec{B}$. Elle est maximale ($\\lvert q\\rvert vB$) si $\\vec{v} \\perp \\vec{B}$, nulle si $\\vec{v} \\parallel \\vec{B}$.",
+      "difficulte": 2,
+      "tags": [
+        "force-de-lorentz",
+        "valeur"
+      ]
+    },
+    {
+      "id": "PCTD-P09-007",
+      "lecon": "Le produit vectoriel et la force de Lorentz",
+      "type": "formule",
+      "recto": "Quelle est la direction de la force de Lorentz par rapport à $\\vec{v}$ et à $\\vec{B}$ ?",
+      "verso": "Elle est perpendiculaire au plan formé par $\\vec{v}$ et $\\vec{B}$, donc perpendiculaire à la fois à $\\vec{v}$ et à $\\vec{B}$ ; elle n'est jamais parallèle au champ.",
+      "difficulte": 2,
+      "tags": [
+        "force-de-lorentz",
+        "direction"
+      ]
+    },
+    {
+      "id": "PCTD-P09-008",
+      "lecon": "Le produit vectoriel et la force de Lorentz",
+      "type": "formule",
+      "recto": "Pour un électron, quelle erreur guette quand on cherche le sens de la force de Lorentz avec les trois doigts de la main droite ?",
+      "verso": "Oublier le signe de la charge : $q = -e \\lt 0$, donc la force est opposée au sens donné par le majeur. Il faut retourner la flèche obtenue (ou orienter le pouce selon $-\\vec{v}$).",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "charge-negative"
+      ]
+    },
+    {
+      "id": "PCTD-P09-009",
+      "lecon": "Le produit vectoriel et la force de Lorentz",
+      "type": "definition",
+      "recto": "Pourquoi néglige-t-on le poids d'une particule chargée devant la force de Lorentz ?",
+      "verso": "La force de Lorentz est de l'ordre de $10^{-14}~\\mathrm{N}$ et son rapport au poids dépasse $10^{11}$ : le poids est négligeable, et on le justifie par cette comparaison d'ordres de grandeur.",
+      "difficulte": 2,
+      "tags": [
+        "poids-neglige",
+        "ordre-de-grandeur"
+      ]
+    },
+    {
+      "id": "PCTD-P09-010",
+      "lecon": "Le produit vectoriel et la force de Lorentz",
+      "type": "definition",
+      "recto": "Quelle force magnétique subit une particule chargée immobile placée dans un champ magnétique intense ?",
+      "verso": "Aucune : dans $F = \\lvert q\\rvert vB\\sin\\alpha$, une vitesse nulle annule la force. Un aimant n'attire pas une charge au repos.",
+      "difficulte": 2,
+      "tags": [
+        "force-de-lorentz",
+        "charge-immobile"
+      ]
+    },
+    {
+      "id": "PCTD-P09-011",
+      "lecon": "L'aspect énergétique : une force qui ne travaille jamais",
+      "type": "formule",
+      "recto": "Pourquoi le travail de la force de Lorentz est-il nul sur tout trajet ?",
+      "verso": "Parce que $\\vec{F}$ est perpendiculaire à la vitesse, donc au déplacement, à chaque instant : $\\delta W = \\vec{F} \\cdot \\mathrm{d}\\vec{\\ell} = 0$ et $P = \\vec{F} \\cdot \\vec{v} = 0$, quel que soit le chemin suivi.",
+      "difficulte": 2,
+      "tags": [
+        "travail",
+        "puissance"
+      ]
+    },
+    {
+      "id": "PCTD-P09-012",
+      "lecon": "L'aspect énergétique : une force qui ne travaille jamais",
+      "type": "formule",
+      "recto": "Dans un champ magnétique uniforme seul, poids négligé, que devient la valeur de la vitesse d'une particule chargée ?",
+      "verso": "Le théorème de l'énergie cinétique donne $\\Delta E_c = 0$ : $E_c$ est constante, donc $v = v_0$ = constante. Le mouvement est uniforme.",
+      "difficulte": 2,
+      "tags": [
+        "energie-cinetique",
+        "mouvement-uniforme"
+      ]
+    },
+    {
+      "id": "PCTD-P09-013",
+      "lecon": "L'aspect énergétique : une force qui ne travaille jamais",
+      "type": "definition",
+      "recto": "Quel est le seul effet possible d'un champ magnétique sur le mouvement d'une particule chargée ?",
+      "verso": "Il ne peut que la dévier : il ne peut ni l'accélérer ni la freiner. Seul un champ électrique modifie la valeur de la vitesse.",
+      "difficulte": 1,
+      "tags": [
+        "champ-magnetique",
+        "deviation"
+      ]
+    },
+    {
+      "id": "PCTD-P09-014",
+      "lecon": "L'aspect énergétique : une force qui ne travaille jamais",
+      "type": "definition",
+      "recto": "Pourquoi dit-on à tort que « la vitesse est constante » pour une particule dans un champ magnétique uniforme ?",
+      "verso": "Seule la valeur $v$ est constante ; le vecteur $\\vec{v}$ change sans cesse de direction. L'accélération n'est donc pas nulle : elle est normale, vers le centre, et vaut $\\dfrac{v^2}{R}$.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "vecteur-vitesse"
+      ]
+    },
+    {
+      "id": "PCTD-P09-015",
+      "lecon": "L'aspect énergétique : une force qui ne travaille jamais",
+      "type": "definition",
+      "recto": "Quelle est la différence de rôle entre champ électrique et champ magnétique dans un accélérateur de particules ?",
+      "verso": "Le champ électrique donne de l'énergie (il modifie la valeur de la vitesse) ; le champ magnétique guide, courbe et referme la trajectoire, sans changer l'énergie.",
+      "difficulte": 2,
+      "tags": [
+        "accelerateur",
+        "comparaison"
+      ]
+    },
+    {
+      "id": "PCTD-P09-016",
+      "lecon": "Un mouvement plan, uniforme et circulaire",
+      "type": "definition",
+      "recto": "Quelle est la nature du mouvement d'une particule chargée entrant avec $\\vec{v}_0 \\perp \\vec{B}$ dans un champ magnétique uniforme ?",
+      "verso": "Il est plan (dans le plan perpendiculaire à $\\vec{B}$ contenant $\\vec{v}_0$), uniforme ($v = v_0$) et circulaire.",
+      "difficulte": 1,
+      "tags": [
+        "nature-du-mouvement"
+      ]
+    },
+    {
+      "id": "PCTD-P09-017",
+      "lecon": "Un mouvement plan, uniforme et circulaire",
+      "type": "formule",
+      "recto": "Quelle est l'expression du rayon de la trajectoire circulaire d'une particule chargée dans un champ magnétique uniforme perpendiculaire à sa vitesse ?",
+      "verso": "$R = \\dfrac{m\\,v}{\\lvert q\\rvert\\,B}$, avec $R$ en m, $m$ en kg, $v$ en m/s, $q$ en C (valeur absolue) et $B$ en T.",
+      "difficulte": 1,
+      "tags": [
+        "rayon"
+      ]
+    },
+    {
+      "id": "PCTD-P09-018",
+      "lecon": "Un mouvement plan, uniforme et circulaire",
+      "type": "formule",
+      "recto": "Quelle est l'expression de la période cyclotron d'une particule de masse $m$ et de charge $q$ dans un champ magnétique uniforme $B$ ?",
+      "verso": "$T = \\dfrac{2\\pi R}{v} = \\dfrac{2\\pi m}{\\lvert q\\rvert\\,B}$, en secondes ; la fréquence cyclotron vaut $f = \\dfrac{\\lvert q\\rvert\\,B}{2\\pi m}$, en Hz.",
+      "difficulte": 2,
+      "tags": [
+        "periode-cyclotron",
+        "frequence"
+      ]
+    },
+    {
+      "id": "PCTD-P09-019",
+      "lecon": "Un mouvement plan, uniforme et circulaire",
+      "type": "formule",
+      "recto": "Dans un champ magnétique uniforme, que deviennent le rayon et la période quand on double la vitesse de la particule ?",
+      "verso": "Le rayon $R = \\dfrac{mv}{\\lvert q\\rvert B}$ double, mais la période $T = \\dfrac{2\\pi m}{\\lvert q\\rvert B}$ ne change pas : elle ne dépend pas de la vitesse.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "periode-cyclotron"
+      ]
+    },
+    {
+      "id": "PCTD-P09-020",
+      "lecon": "Un mouvement plan, uniforme et circulaire",
+      "type": "formule",
+      "recto": "Quel est le rayon de la trajectoire dans un champ magnétique $B$ d'une particule accélérée depuis le repos sous la tension $U_0$ ?",
+      "verso": "$R = \\dfrac{1}{B}\\sqrt{\\dfrac{2\\,m\\,U_0}{\\lvert q\\rvert}}$, puisque sa vitesse vaut $v = \\sqrt{\\dfrac{2\\lvert q\\rvert U_0}{m}}$.",
+      "difficulte": 2,
+      "tags": [
+        "rayon",
+        "acceleration"
+      ]
+    },
+    {
+      "id": "PCTD-P09-021",
+      "lecon": "Un mouvement plan, uniforme et circulaire",
+      "type": "formule",
+      "recto": "Comment détermine-t-on le sens de parcours du cercle décrit par une particule chargée dans un champ magnétique uniforme ?",
+      "verso": "On trace la force de Lorentz au point d'entrée : le centre du cercle est du côté où elle pointe. Charge positive et champ entrant : sens trigonométrique ; changer le signe de $q$ ou retourner $\\vec{B}$ inverse le parcours.",
+      "difficulte": 2,
+      "tags": [
+        "sens-de-parcours"
+      ]
+    },
+    {
+      "id": "PCTD-P09-022",
+      "lecon": "Un mouvement plan, uniforme et circulaire",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on la charge massique d'une particule ?",
+      "verso": "Le rapport $\\dfrac{\\lvert q\\rvert}{m}$, en C/kg ; il vaut $1{,}76 \\times 10^{11}~\\mathrm{C/kg}$ pour l'électron.",
+      "difficulte": 1,
+      "tags": [
+        "charge-massique"
+      ]
+    },
+    {
+      "id": "PCTD-P09-023",
+      "lecon": "La déflexion magnétique",
+      "type": "definition",
+      "recto": "Quelle est la trajectoire d'une particule chargée dans une zone de champ magnétique uniforme de largeur $\\ell$, puis après cette zone ?",
+      "verso": "Dans la zone : un arc de cercle de rayon $R = \\dfrac{mv_0}{\\lvert q\\rvert B}$ (pas une parabole). Après la zone : une droite, tangente au cercle au point de sortie, parcourue d'un mouvement rectiligne uniforme.",
+      "difficulte": 2,
+      "tags": [
+        "trajectoire",
+        "deflexion"
+      ]
+    },
+    {
+      "id": "PCTD-P09-024",
+      "lecon": "La déflexion magnétique",
+      "type": "formule",
+      "recto": "Quelle relation donne l'angle de déviation $\\alpha$ d'une particule à la sortie d'une zone de champ magnétique de largeur $\\ell$ ?",
+      "verso": "$\\sin\\alpha = \\dfrac{\\ell}{R} = \\dfrac{\\lvert q\\rvert\\,B\\,\\ell}{m\\,v_0}$, valable seulement si $\\ell \\leq R$ ; sinon la particule fait demi-tour dans la zone et il n'y a pas de spot.",
+      "difficulte": 2,
+      "tags": [
+        "angle-de-deviation"
+      ]
+    },
+    {
+      "id": "PCTD-P09-025",
+      "lecon": "La déflexion magnétique",
+      "type": "formule",
+      "recto": "Quelle est l'expression de la déflexion magnétique $Y$ sur un écran situé à la distance $D$ du milieu de la zone de champ ?",
+      "verso": "$Y = D\\tan\\alpha$ ; pour une déviation faible ($\\ell$ petit devant $R$), $Y \\approx \\dfrac{D\\,\\ell}{R} = \\dfrac{\\lvert q\\rvert\\,B\\,\\ell\\,D}{m\\,v_0}$.",
+      "difficulte": 2,
+      "tags": [
+        "deflexion"
+      ]
+    },
+    {
+      "id": "PCTD-P09-026",
+      "lecon": "La déflexion magnétique",
+      "type": "formule",
+      "recto": "Quelle est la déflexion magnétique d'un faisceau issu d'un canon où les particules ont été accélérées sous la tension $U_0$ ?",
+      "verso": "$Y \\approx B\\,\\ell\\,D\\,\\sqrt{\\dfrac{\\lvert q\\rvert}{2\\,m\\,U_0}}$ (déviation faible, $D$ compté du milieu de la zone).",
+      "difficulte": 3,
+      "tags": [
+        "deflexion",
+        "canon"
+      ]
+    },
+    {
+      "id": "PCTD-P09-027",
+      "lecon": "La déflexion magnétique",
+      "type": "definition",
+      "recto": "Pourquoi la déflexion magnétique sépare-t-elle deux isotopes alors que la déflexion électrique ne les sépare pas ?",
+      "verso": "La déflexion magnétique dépend de la charge massique $\\dfrac{\\lvert q\\rvert}{m}$, tandis que la déflexion électrique $Y = \\dfrac{U\\ell D}{2dU_0}$ ne contient ni la masse ni la charge.",
+      "difficulte": 3,
+      "tags": [
+        "isotopes",
+        "comparaison"
+      ]
+    },
+    {
+      "id": "PCTD-P09-028",
+      "lecon": "La déflexion magnétique",
+      "type": "definition",
+      "recto": "En déflexion magnétique, quelle différence y a-t-il entre $y_1$ et $Y$ ?",
+      "verso": "$y_1 = R\\left(1 - \\cos\\alpha\\right)$ est la déviation à la sortie de la zone de champ ; $Y = D\\tan\\alpha$ est la déflexion mesurée sur l'écran, bien plus grande.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "deflexion"
+      ]
+    },
+    {
+      "id": "PCTD-P09-029",
+      "lecon": "Le spectrographe de masse et le cyclotron",
+      "type": "formule",
+      "recto": "Dans un filtre de vitesse, quelle est la vitesse des ions qui le traversent en ligne droite ?",
+      "verso": "Avec $\\vec{E}$ et $\\vec{B}$ perpendiculaires entre eux et à la vitesse, les deux forces se compensent si $\\lvert q\\rvert E = \\lvert q\\rvert vB$, soit $v_0 = \\dfrac{E}{B}$, quelles que soient la masse et la charge.",
+      "difficulte": 2,
+      "tags": [
+        "filtre-de-vitesse"
+      ]
+    },
+    {
+      "id": "PCTD-P09-030",
+      "lecon": "Le spectrographe de masse et le cyclotron",
+      "type": "definition",
+      "recto": "Quels sont, dans l'ordre, les organes d'un spectrographe de masse ?",
+      "verso": "Chambre d'ionisation, chambre d'accélération sous la tension $U$, éventuellement un filtre de vitesse, chambre de déviation sous un champ $B'$, puis plaque photographique ou détecteur.",
+      "difficulte": 1,
+      "tags": [
+        "spectrographe"
+      ]
+    },
+    {
+      "id": "PCTD-P09-031",
+      "lecon": "Le spectrographe de masse et le cyclotron",
+      "type": "formule",
+      "recto": "Dans un spectrographe de masse, quelle distance sépare les traces de deux isotopes de rayons $R_1$ et $R_2$ ?",
+      "verso": "Chaque ion frappe la plaque à $2R$ de son point d'entrée, donc $d = 2\\left(R_2 - R_1\\right)$ ; on garde les expressions littérales jusqu'au bout avant de soustraire.",
+      "difficulte": 2,
+      "tags": [
+        "spectrographe",
+        "isotopes"
+      ]
+    },
+    {
+      "id": "PCTD-P09-032",
+      "lecon": "Le spectrographe de masse et le cyclotron",
+      "type": "formule",
+      "recto": "Quel est le rayon du demi-cercle décrit dans le déviateur $B'$ par un ion sorti d'un filtre de vitesse réglé sur $v_0 = \\dfrac{E}{B}$ ?",
+      "verso": "$R = \\dfrac{m\\,v_0}{\\lvert q\\rvert\\,B'} = \\dfrac{m\\,E}{\\lvert q\\rvert\\,B\\,B'}$, ce qui permet de remonter à la masse : $m = \\dfrac{\\lvert q\\rvert\\,B\\,B'\\,R}{E}$.",
+      "difficulte": 3,
+      "tags": [
+        "spectrographe",
+        "masse"
+      ]
+    },
+    {
+      "id": "PCTD-P09-033",
+      "lecon": "Le spectrographe de masse et le cyclotron",
+      "type": "definition",
+      "recto": "Dans un cyclotron, quel est le mouvement de la particule à l'intérieur d'un dee ?",
+      "verso": "Un demi-cercle à vitesse constante : une boîte métallique creuse ne contient pas de champ électrique, seul le champ magnétique agit. L'accélération n'a lieu que dans l'intervalle entre les dees.",
+      "difficulte": 2,
+      "tags": [
+        "cyclotron",
+        "dee"
+      ]
+    },
+    {
+      "id": "PCTD-P09-034",
+      "lecon": "Le spectrographe de masse et le cyclotron",
+      "type": "formule",
+      "recto": "A quelle fréquence doit changer de signe la tension alternative d'un cyclotron ?",
+      "verso": "A la fréquence cyclotron $f = \\dfrac{\\lvert q\\rvert\\,B}{2\\pi m}$ (souvent notée $N$), indépendante de la vitesse : la particule est ainsi accélérée à chaque traversée de l'intervalle.",
+      "difficulte": 2,
+      "tags": [
+        "cyclotron",
+        "frequence"
+      ]
+    },
+    {
+      "id": "PCTD-P09-035",
+      "lecon": "Le spectrographe de masse et le cyclotron",
+      "type": "formule",
+      "recto": "Quelle est l'énergie cinétique de sortie d'un cyclotron de rayon de dees $R_{\\max}$ ?",
+      "verso": "$E_{c,\\max} = \\dfrac{q^2B^2R_{\\max}^2}{2m}$, avec $v_{\\max} = \\dfrac{\\lvert q\\rvert\\,B\\,R_{\\max}}{m}$. Elle ne dépend pas de la tension $U$, qui ne règle que le nombre de tours.",
+      "difficulte": 3,
+      "tags": [
+        "cyclotron",
+        "energie"
+      ]
+    },
+    {
+      "id": "PCTD-P09-036",
+      "lecon": "Le spectrographe de masse et le cyclotron",
+      "type": "formule",
+      "recto": "Quelle relation lie l'énergie de sortie d'un cyclotron, le nombre de tours $n$ et la tension accélératrice $U$ ?",
+      "verso": "$E_{c,\\max} = 2\\,n\\,\\lvert q\\rvert\\,U$ : la particule est accélérée deux fois par tour. Oublier le facteur 2 double le nombre de tours trouvé.",
+      "difficulte": 2,
+      "tags": [
+        "cyclotron",
+        "nombre-de-tours"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,438 @@
+{
+  "matiere": "Physique-Chimie",
+  "partie": "Physique",
+  "niveau": "4ème",
+  "chapitre": "Physique, Chapitre 11 : Les ombres",
+  "source": "pc/4eme/Chapitre_11_Les_ombres",
+  "nombre_cartes": 37,
+  "cartes": [
+    {
+      "id": "PC4E-P11-001",
+      "lecon": "L'ombre propre, le cône d'ombre et l'ombre portée",
+      "type": "formule",
+      "recto": "Quels sont les trois éléments nécessaires à la formation d'une ombre ?",
+      "verso": "Une source de lumière, un corps opaque placé sur le trajet de la lumière, et un écran ou un espace derrière ce corps.",
+      "difficulte": 1,
+      "tags": [
+        "conditions",
+        "ombre"
+      ]
+    },
+    {
+      "id": "PC4E-P11-002",
+      "lecon": "L'ombre propre, le cône d'ombre et l'ombre portée",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on une source de lumière ponctuelle ?",
+      "verso": "C'est une source dont les dimensions sont très petites devant les distances mises en jeu. On la représente par un point, noté $S$.",
+      "difficulte": 2,
+      "tags": [
+        "source-ponctuelle"
+      ]
+    },
+    {
+      "id": "PC4E-P11-003",
+      "lecon": "L'ombre propre, le cône d'ombre et l'ombre portée",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on l'ombre propre d'un corps opaque éclairé ?",
+      "verso": "C'est la partie de ce corps qui n'est pas éclairée par la source. Elle se trouve sur le corps lui-même.",
+      "difficulte": 1,
+      "tags": [
+        "ombre-propre"
+      ]
+    },
+    {
+      "id": "PC4E-P11-004",
+      "lecon": "L'ombre propre, le cône d'ombre et l'ombre portée",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on le cône d'ombre d'un corps opaque éclairé ?",
+      "verso": "C'est la région de l'espace située derrière le corps, où la lumière de la source ne parvient pas. C'est un volume.",
+      "difficulte": 1,
+      "tags": [
+        "cone-d-ombre"
+      ]
+    },
+    {
+      "id": "PC4E-P11-005",
+      "lecon": "L'ombre propre, le cône d'ombre et l'ombre portée",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on l'ombre portée d'un corps opaque éclairé ?",
+      "verso": "C'est la partie de l'écran, ou d'un autre corps, qui n'est pas éclairée parce qu'elle se trouve dans le cône d'ombre.",
+      "difficulte": 1,
+      "tags": [
+        "ombre-portee"
+      ]
+    },
+    {
+      "id": "PC4E-P11-006",
+      "lecon": "L'ombre propre, le cône d'ombre et l'ombre portée",
+      "type": "formule",
+      "recto": "Quelle propriété de la lumière explique la formation des ombres ?",
+      "verso": "La propagation rectiligne : dans l'air, un rayon issu de la source passe à côté du corps opaque ou bien il est arrêté par lui.",
+      "difficulte": 2,
+      "tags": [
+        "propagation-rectiligne",
+        "cause"
+      ]
+    },
+    {
+      "id": "PC4E-P11-007",
+      "lecon": "L'ombre propre, le cône d'ombre et l'ombre portée",
+      "type": "definition",
+      "recto": "Dans la formation d'une ombre, qu'appelle-t-on les rayons rasants ?",
+      "verso": "Ce sont les rayons issus de la source qui frôlent le corps opaque. Ils délimitent le cône d'ombre et découpent l'ombre portée.",
+      "difficulte": 2,
+      "tags": [
+        "rayons-rasants"
+      ]
+    },
+    {
+      "id": "PC4E-P11-008",
+      "lecon": "L'ombre propre, le cône d'ombre et l'ombre portée",
+      "type": "formule",
+      "recto": "Pourquoi le contour de l'ombre portée est-il net avec une source ponctuelle ?",
+      "verso": "La lumière va en ligne droite depuis un seul point $S$ : un rayon passe ou il est arrêté. Il n'y a pas de cas intermédiaire, donc pas de zone de transition.",
+      "difficulte": 2,
+      "tags": [
+        "nettete",
+        "source-ponctuelle"
+      ]
+    },
+    {
+      "id": "PC4E-P11-009",
+      "lecon": "L'ombre propre, le cône d'ombre et l'ombre portée",
+      "type": "formule",
+      "recto": "Pourquoi est-il faux de dire qu'un objet envoie son ombre sur le mur ?",
+      "verso": "L'objet n'envoie rien : il arrête la lumière. L'ombre portée est la région du mur que la lumière n'atteint plus.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "ombre-portee"
+      ]
+    },
+    {
+      "id": "PC4E-P11-010",
+      "lecon": "L'ombre propre, le cône d'ombre et l'ombre portée",
+      "type": "formule",
+      "recto": "Quelle confusion commet un élève qui appelle ombre propre la tache sombre sur le sol ?",
+      "verso": "L'ombre propre est sur l'objet lui-même (sa face non éclairée). La tache sur le sol est l'ombre portée.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "ombre-propre",
+        "ombre-portee"
+      ]
+    },
+    {
+      "id": "PC4E-P11-011",
+      "lecon": "Source étendue, pénombre et dimension d'une ombre",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on une source de lumière étendue ?",
+      "verso": "C'est une source dont les dimensions ne sont pas négligeables devant les distances mises en jeu (tube fluorescent, panneau de LED, Soleil vu de la Terre). On la considère comme un ensemble de points sources voisins.",
+      "difficulte": 2,
+      "tags": [
+        "source-etendue"
+      ]
+    },
+    {
+      "id": "PC4E-P11-012",
+      "lecon": "Source étendue, pénombre et dimension d'une ombre",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on la pénombre ?",
+      "verso": "C'est la région qui ne reçoit la lumière que d'une partie de la source étendue. Partiellement éclairée, elle forme une bande grise autour de l'ombre.",
+      "difficulte": 1,
+      "tags": [
+        "penombre"
+      ]
+    },
+    {
+      "id": "PC4E-P11-013",
+      "lecon": "Source étendue, pénombre et dimension d'une ombre",
+      "type": "definition",
+      "recto": "Avec une source étendue, quelles sont les trois zones observées sur l'écran derrière un corps opaque ?",
+      "verso": "L'ombre (aucun point de la source n'est vu), la pénombre (une partie de la source est vue) et la pleine lumière (toute la source est vue).",
+      "difficulte": 2,
+      "tags": [
+        "penombre",
+        "source-etendue"
+      ]
+    },
+    {
+      "id": "PC4E-P11-014",
+      "lecon": "Source étendue, pénombre et dimension d'une ombre",
+      "type": "formule",
+      "recto": "Pourquoi une source ponctuelle ne donne-t-elle jamais de pénombre ?",
+      "verso": "La pénombre reçoit la lumière d'une partie seulement de la source ; une source ponctuelle, réduite à un point, est vue entièrement ou pas du tout.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "penombre",
+        "source-ponctuelle"
+      ]
+    },
+    {
+      "id": "PC4E-P11-015",
+      "lecon": "Source étendue, pénombre et dimension d'une ombre",
+      "type": "formule",
+      "recto": "Comment varie la netteté du contour d'une ombre selon la source utilisée ?",
+      "verso": "Avec une source ponctuelle, le contour est net ; avec une source étendue, il est flou, et d'autant plus que la source est large.",
+      "difficulte": 2,
+      "tags": [
+        "nettete"
+      ]
+    },
+    {
+      "id": "PC4E-P11-016",
+      "lecon": "Source étendue, pénombre et dimension d'une ombre",
+      "type": "formule",
+      "recto": "Avec une source ponctuelle, quelle relation lie le diamètre $D'$ de l'ombre portée, le diamètre $D$ de l'objet et les distances $L$ (source-objet) et $L'$ (source-écran) ?",
+      "verso": "$D' = D \\times \\dfrac{L'}{L}$, les distances étant comptées depuis la source et toutes les longueurs dans la même unité.",
+      "difficulte": 2,
+      "tags": [
+        "dimension-ombre",
+        "relation"
+      ]
+    },
+    {
+      "id": "PC4E-P11-017",
+      "lecon": "Source étendue, pénombre et dimension d'une ombre",
+      "type": "formule",
+      "recto": "Comment varie la taille de l'ombre portée quand on rapproche la source de l'objet ou qu'on éloigne l'écran ?",
+      "verso": "Dans les deux cas, l'ombre portée devient plus grande.",
+      "difficulte": 2,
+      "tags": [
+        "dimension-ombre"
+      ]
+    },
+    {
+      "id": "PC4E-P11-018",
+      "lecon": "Source étendue, pénombre et dimension d'une ombre",
+      "type": "formule",
+      "recto": "Quel est l'effet d'une source plus large sur l'ombre d'un objet ?",
+      "verso": "L'ombre ne grossit pas : la pénombre s'élargit et l'ombre totale rétrécit, jusqu'à ne laisser qu'un gris diffus si la source devient très grande.",
+      "difficulte": 3,
+      "tags": [
+        "source-etendue",
+        "penombre"
+      ]
+    },
+    {
+      "id": "PC4E-P11-019",
+      "lecon": "Source étendue, pénombre et dimension d'une ombre",
+      "type": "formule",
+      "recto": "Pourquoi, au soleil, l'ombre d'un poteau a-t-elle la largeur du poteau ?",
+      "verso": "Les rayons du Soleil arrivent pratiquement parallèles : le rapport $\\dfrac{L'}{L}$ vaut presque 1. Seule la longueur de l'ombre varie au fil de la journée.",
+      "difficulte": 2,
+      "tags": [
+        "soleil",
+        "dimension-ombre"
+      ]
+    },
+    {
+      "id": "PC4E-P11-020",
+      "lecon": "Source étendue, pénombre et dimension d'une ombre",
+      "type": "formule",
+      "recto": "Au soleil, quelle relation permet de trouver la hauteur $H$ d'un objet à partir de la longueur $L$ de son ombre, grâce à un bâton témoin de hauteur $h$ et d'ombre $l$ ?",
+      "verso": "$H = h \\times \\dfrac{L}{l}$ : au même instant, hauteur et longueur d'ombre sont proportionnelles.",
+      "difficulte": 2,
+      "tags": [
+        "mesure-hauteur",
+        "relation"
+      ]
+    },
+    {
+      "id": "PC4E-P11-021",
+      "lecon": "La Terre, la Lune, les phases et les éclipses",
+      "type": "definition",
+      "recto": "Quelle est la nature du Soleil, de la Terre et de la Lune ?",
+      "verso": "Le Soleil est une étoile : il produit sa lumière. La Terre est une planète qui tourne autour de lui. La Lune est le satellite naturel de la Terre et ne fait que renvoyer la lumière du Soleil.",
+      "difficulte": 1,
+      "tags": [
+        "systeme-solaire"
+      ]
+    },
+    {
+      "id": "PC4E-P11-022",
+      "lecon": "La Terre, la Lune, les phases et les éclipses",
+      "type": "formule",
+      "recto": "Comment se fait la rotation de la Terre sur elle-même ?",
+      "verso": "Autour de l'axe des pôles, d'ouest en est, en environ 24 heures.",
+      "difficulte": 1,
+      "tags": [
+        "rotation"
+      ]
+    },
+    {
+      "id": "PC4E-P11-023",
+      "lecon": "La Terre, la Lune, les phases et les éclipses",
+      "type": "formule",
+      "recto": "Quelle est la cause de l'alternance du jour et de la nuit ?",
+      "verso": "La rotation de la Terre sur elle-même : la moitié tournée vers le Soleil est éclairée, l'autre est dans son ombre propre.",
+      "difficulte": 2,
+      "tags": [
+        "jour-nuit",
+        "rotation"
+      ]
+    },
+    {
+      "id": "PC4E-P11-024",
+      "lecon": "La Terre, la Lune, les phases et les éclipses",
+      "type": "formule",
+      "recto": "Pourquoi dit-on que le mouvement du Soleil dans le ciel au cours d'une journée est apparent ?",
+      "verso": "Le Soleil semble se lever à l'est et se coucher à l'ouest, mais c'est l'observateur qui se déplace, entraîné par la rotation de la Terre d'ouest en est.",
+      "difficulte": 2,
+      "tags": [
+        "mouvement-apparent"
+      ]
+    },
+    {
+      "id": "PC4E-P11-025",
+      "lecon": "La Terre, la Lune, les phases et les éclipses",
+      "type": "formule",
+      "recto": "Comment se fait la révolution de la Terre autour du Soleil ?",
+      "verso": "Sur une orbite presque circulaire, à environ 150 millions de kilomètres du Soleil, en environ 365 jours et un quart (une année).",
+      "difficulte": 2,
+      "tags": [
+        "revolution"
+      ]
+    },
+    {
+      "id": "PC4E-P11-026",
+      "lecon": "La Terre, la Lune, les phases et les éclipses",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on l'écliptique ?",
+      "verso": "C'est le plan de l'orbite de la Terre autour du Soleil.",
+      "difficulte": 1,
+      "tags": [
+        "ecliptique",
+        "vocabulaire"
+      ]
+    },
+    {
+      "id": "PC4E-P11-027",
+      "lecon": "La Terre, la Lune, les phases et les éclipses",
+      "type": "formule",
+      "recto": "Qu'est-ce qui explique les saisons et l'inégalité des jours et des nuits ?",
+      "verso": "L'inclinaison d'environ 23° de l'axe des pôles sur l'écliptique, cet axe gardant toute l'année la même direction.",
+      "difficulte": 2,
+      "tags": [
+        "saisons",
+        "inclinaison"
+      ]
+    },
+    {
+      "id": "PC4E-P11-028",
+      "lecon": "La Terre, la Lune, les phases et les éclipses",
+      "type": "definition",
+      "recto": "Quelles sont, dans l'ordre, les huit phases de la Lune à partir de la nouvelle Lune ?",
+      "verso": "Nouvelle Lune, premier croissant, premier quartier, Lune gibbeuse croissante, pleine Lune, Lune gibbeuse décroissante, dernier quartier, dernier croissant.",
+      "difficulte": 2,
+      "tags": [
+        "phases"
+      ]
+    },
+    {
+      "id": "PC4E-P11-029",
+      "lecon": "La Terre, la Lune, les phases et les éclipses",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on une lunaison ?",
+      "verso": "C'est la durée qui sépare deux nouvelles Lunes consécutives : environ 29,5 jours.",
+      "difficulte": 1,
+      "tags": [
+        "lunaison"
+      ]
+    },
+    {
+      "id": "PC4E-P11-030",
+      "lecon": "La Terre, la Lune, les phases et les éclipses",
+      "type": "formule",
+      "recto": "Pourquoi est-il faux de dire que les phases de la Lune sont dues à l'ombre de la Terre ?",
+      "verso": "La Lune est toujours éclairée pour moitié par le Soleil ; les phases viennent de la part de cette moitié que nous voyons selon sa position. L'ombre de la Terre ne l'atteint qu'en éclipse de Lune.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "phases"
+      ]
+    },
+    {
+      "id": "PC4E-P11-031",
+      "lecon": "La Terre, la Lune, les phases et les éclipses",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on une éclipse ?",
+      "verso": "Il y a éclipse lorsque le Soleil, la Terre et la Lune sont alignés et que l'un de ces astres se trouve dans le cône d'ombre d'un autre.",
+      "difficulte": 1,
+      "tags": [
+        "eclipse"
+      ]
+    },
+    {
+      "id": "PC4E-P11-032",
+      "lecon": "La Terre, la Lune, les phases et les éclipses",
+      "type": "formule",
+      "recto": "Lors d'une éclipse de Soleil, dans quel ordre les astres sont-ils alignés ?",
+      "verso": "Soleil, Lune, Terre : la Lune passe entre le Soleil et la Terre, son cône d'ombre touche la Terre. Elle a lieu à la nouvelle Lune, le jour.",
+      "difficulte": 2,
+      "tags": [
+        "eclipse-de-soleil"
+      ]
+    },
+    {
+      "id": "PC4E-P11-033",
+      "lecon": "La Terre, la Lune, les phases et les éclipses",
+      "type": "formule",
+      "recto": "Lors d'une éclipse de Lune, dans quel ordre les astres sont-ils alignés ?",
+      "verso": "Soleil, Terre, Lune : la Lune entre dans le cône d'ombre de la Terre. Elle a lieu à la pleine Lune, la nuit.",
+      "difficulte": 2,
+      "tags": [
+        "eclipse-de-lune"
+      ]
+    },
+    {
+      "id": "PC4E-P11-034",
+      "lecon": "La Terre, la Lune, les phases et les éclipses",
+      "type": "definition",
+      "recto": "Quelle différence y a-t-il entre une éclipse totale et une éclipse partielle ?",
+      "verso": "Totale : l'astre observé est entièrement caché (observateur dans l'ombre). Partielle : il n'est caché qu'en partie (observateur dans la pénombre). Pour la Lune : tout entière ou en partie dans le cône d'ombre de la Terre.",
+      "difficulte": 2,
+      "tags": [
+        "eclipse-totale",
+        "eclipse-partielle"
+      ]
+    },
+    {
+      "id": "PC4E-P11-035",
+      "lecon": "La Terre, la Lune, les phases et les éclipses",
+      "type": "formule",
+      "recto": "Pourquoi n'y a-t-il pas une éclipse de Soleil à chaque nouvelle Lune ?",
+      "verso": "Le plan de l'orbite de la Lune est incliné d'environ 5° sur l'écliptique : la Lune passe le plus souvent un peu au-dessus ou au-dessous de la ligne Soleil-Terre, et son cône d'ombre manque la Terre.",
+      "difficulte": 3,
+      "tags": [
+        "eclipse",
+        "inclinaison"
+      ]
+    },
+    {
+      "id": "PC4E-P11-036",
+      "lecon": "La Terre, la Lune, les phases et les éclipses",
+      "type": "formule",
+      "recto": "Pendant une éclipse totale de Lune, pourquoi la Lune ne devient-elle pas invisible ?",
+      "verso": "L'atmosphère de la Terre dévie vers l'intérieur du cône d'ombre un peu de lumière solaire, surtout rouge : la Lune prend une teinte rougeâtre.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "eclipse-de-lune"
+      ]
+    },
+    {
+      "id": "PC4E-P11-037",
+      "lecon": "La Terre, la Lune, les phases et les éclipses",
+      "type": "formule",
+      "recto": "Quelle précaution prendre pour observer une éclipse de Soleil ?",
+      "verso": "Ne jamais regarder le Soleil directement, ni avec des lunettes de soleil ou un verre fumé : utiliser des lunettes d'éclipse homologuées intactes, ou l'observer indirectement par un petit trou dans un carton, dos au Soleil.",
+      "difficulte": 2,
+      "tags": [
+        "securite",
+        "eclipse-de-soleil"
+      ]
+    }
+  ]
+}

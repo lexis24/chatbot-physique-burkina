@@ -1,0 +1,425 @@
+{
+  "matiere": "Physique-Chimie",
+  "partie": "Physique",
+  "niveau": "Terminale D",
+  "chapitre": "Physique, Chapitre 14 : Le noyau atomique",
+  "source": "pc/tled/Chapitre_14_Le_noyau_atomique",
+  "nombre_cartes": 36,
+  "cartes": [
+    {
+      "id": "PCTD-P14-001",
+      "lecon": "La composition du noyau, les nucléides et les isotopes",
+      "type": "definition",
+      "recto": "En physique nucléaire, de quelles particules un noyau atomique est-il formé ?",
+      "verso": "De protons, de charge $+e$, et de neutrons, de charge nulle. Protons et neutrons portent le nom commun de nucléons.",
+      "difficulte": 1,
+      "tags": [
+        "noyau",
+        "nucleons"
+      ]
+    },
+    {
+      "id": "PCTD-P14-002",
+      "lecon": "La composition du noyau, les nucléides et les isotopes",
+      "type": "definition",
+      "recto": "Pour un noyau, que désigne le numéro atomique $Z$ ?",
+      "verso": "Le nombre de protons du noyau (on l'appelle aussi nombre de charges). La charge du noyau vaut $q = +Z\\,e$.",
+      "difficulte": 1,
+      "tags": [
+        "numero-atomique"
+      ]
+    },
+    {
+      "id": "PCTD-P14-003",
+      "lecon": "La composition du noyau, les nucléides et les isotopes",
+      "type": "definition",
+      "recto": "Pour un noyau, que désigne le nombre de masse $A$ ?",
+      "verso": "Le nombre total de nucléons (protons et neutrons) du noyau. C'est un nombre sans unité, à ne pas confondre avec la masse.",
+      "difficulte": 1,
+      "tags": [
+        "nombre-de-masse"
+      ]
+    },
+    {
+      "id": "PCTD-P14-004",
+      "lecon": "La composition du noyau, les nucléides et les isotopes",
+      "type": "formule",
+      "recto": "Pour un noyau noté $^{A}_{Z}\\mathrm{X}$, quelle relation donne le nombre de neutrons $N$ ?",
+      "verso": "$N = A - Z$. Par exemple, $^{235}_{\\ 92}\\mathrm{U}$ compte 92 protons et $235 - 92 = 143$ neutrons.",
+      "difficulte": 1,
+      "tags": [
+        "neutrons",
+        "representation-symbolique"
+      ]
+    },
+    {
+      "id": "PCTD-P14-005",
+      "lecon": "La composition du noyau, les nucléides et les isotopes",
+      "type": "definition",
+      "recto": "En physique nucléaire, qu'appelle-t-on un nucléide ?",
+      "verso": "L'ensemble des noyaux qui possèdent le même $Z$ et le même $A$, donc exactement la même composition. Un nucléide est désigné par sa représentation $^{A}_{Z}\\mathrm{X}$.",
+      "difficulte": 2,
+      "tags": [
+        "nucleide"
+      ]
+    },
+    {
+      "id": "PCTD-P14-006",
+      "lecon": "La composition du noyau, les nucléides et les isotopes",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on un élément chimique ?",
+      "verso": "L'ensemble des atomes, des ions et des noyaux qui possèdent le même numéro atomique $Z$, quel que soit leur nombre de masse. L'élément est défini par $Z$ seul.",
+      "difficulte": 2,
+      "tags": [
+        "element-chimique"
+      ]
+    },
+    {
+      "id": "PCTD-P14-007",
+      "lecon": "La composition du noyau, les nucléides et les isotopes",
+      "type": "definition",
+      "recto": "En physique nucléaire, quand dit-on que deux nucléides sont isotopes ?",
+      "verso": "Lorsqu'ils ont le même $Z$ mais des $A$ différents : même nombre de protons, nombres de neutrons différents. Ils appartiennent au même élément chimique.",
+      "difficulte": 1,
+      "tags": [
+        "isotopes"
+      ]
+    },
+    {
+      "id": "PCTD-P14-008",
+      "lecon": "La composition du noyau, les nucléides et les isotopes",
+      "type": "definition",
+      "recto": "Par quelles propriétés deux isotopes d'un même élément diffèrent-ils ?",
+      "verso": "Par leur masse et leurs propriétés nucléaires. Leurs propriétés chimiques, elles, sont identiques.",
+      "difficulte": 2,
+      "tags": [
+        "isotopes",
+        "proprietes"
+      ]
+    },
+    {
+      "id": "PCTD-P14-009",
+      "lecon": "La composition du noyau, les nucléides et les isotopes",
+      "type": "definition",
+      "recto": "Pourquoi le nucléide carbone 12 ne se confond-il pas avec l'élément carbone ?",
+      "verso": "L'élément carbone est défini par $Z = 6$ seul ; un nucléide est défini par le couple $(Z, A)$. L'élément carbone compte plusieurs nucléides : $^{12}_{\\ 6}\\mathrm{C}$, $^{13}_{\\ 6}\\mathrm{C}$, $^{14}_{\\ 6}\\mathrm{C}$.",
+      "difficulte": 3,
+      "tags": [
+        "nucleide",
+        "element-chimique",
+        "piege"
+      ]
+    },
+    {
+      "id": "PCTD-P14-010",
+      "lecon": "La composition du noyau, les nucléides et les isotopes",
+      "type": "formule",
+      "recto": "Quelle relation donne le rayon $R$ d'un noyau en fonction de son nombre de masse $A$ ?",
+      "verso": "$R = R_0\\,A^{1/3}$, avec $R_0 = 1{,}2 \\times 10^{-15}~\\mathrm{m}$ selon la valeur précisée par l'énoncé. Le rayon s'exprime souvent en femtomètres : $1~\\mathrm{fm} = 10^{-15}~\\mathrm{m}$.",
+      "difficulte": 2,
+      "tags": [
+        "rayon-du-noyau"
+      ]
+    },
+    {
+      "id": "PCTD-P14-011",
+      "lecon": "La composition du noyau, les nucléides et les isotopes",
+      "type": "definition",
+      "recto": "Pourquoi la masse volumique de la matière nucléaire est-elle la même pour tous les noyaux ?",
+      "verso": "Le volume $V = \\dfrac{4}{3}\\pi R_0^{3}\\,A$ et la masse $m \\approx A \\times 1{,}67 \\times 10^{-27}~\\mathrm{kg}$ sont tous deux proportionnels à $A$ : $A$ se simplifie, d'où $\\rho \\approx 2{,}3 \\times 10^{17}~\\mathrm{kg/m^{3}}$.",
+      "difficulte": 3,
+      "tags": [
+        "masse-volumique-nucleaire"
+      ]
+    },
+    {
+      "id": "PCTD-P14-012",
+      "lecon": "Les unités de masse et d'énergie en physique nucléaire",
+      "type": "definition",
+      "recto": "Comment définit-on l'unité de masse atomique $\\mathrm{u}$ ?",
+      "verso": "C'est le douzième de la masse d'un atome de carbone 12 : $1~\\mathrm{u} = \\dfrac{1}{12} \\times m\\left(^{12}_{\\ 6}\\mathrm{C}\\right) = 1{,}66054 \\times 10^{-27}~\\mathrm{kg}$.",
+      "difficulte": 1,
+      "tags": [
+        "unite-de-masse-atomique"
+      ]
+    },
+    {
+      "id": "PCTD-P14-013",
+      "lecon": "Les unités de masse et d'énergie en physique nucléaire",
+      "type": "definition",
+      "recto": "Comment définit-on l'électronvolt ?",
+      "verso": "C'est l'énergie acquise par un électron accéléré, dans le vide, sous une différence de potentiel de $1~\\mathrm{V}$ : $1~\\mathrm{eV} = 1{,}602 \\times 10^{-19}~\\mathrm{J}$. C'est une énergie, pas une tension.",
+      "difficulte": 1,
+      "tags": [
+        "electronvolt"
+      ]
+    },
+    {
+      "id": "PCTD-P14-014",
+      "lecon": "Les unités de masse et d'énergie en physique nucléaire",
+      "type": "formule",
+      "recto": "Quelle est la valeur en joules d'un mégaélectronvolt ?",
+      "verso": "$1~\\mathrm{MeV} = 10^{6}~\\mathrm{eV} = 1{,}602 \\times 10^{-13}~\\mathrm{J}$.",
+      "difficulte": 1,
+      "tags": [
+        "mev",
+        "conversion"
+      ]
+    },
+    {
+      "id": "PCTD-P14-015",
+      "lecon": "Les unités de masse et d'énergie en physique nucléaire",
+      "type": "formule",
+      "recto": "Quelle relation d'Einstein lie une masse $m$ à l'énergie $E$ qui lui est associée ?",
+      "verso": "$E = m\\,c^{2}$, avec $c = 3{,}00 \\times 10^{8}~\\mathrm{m/s}$ ; $E$ est en joules lorsque $m$ est en kilogrammes.",
+      "difficulte": 1,
+      "tags": [
+        "einstein",
+        "equivalence-masse-energie"
+      ]
+    },
+    {
+      "id": "PCTD-P14-016",
+      "lecon": "Les unités de masse et d'énergie en physique nucléaire",
+      "type": "definition",
+      "recto": "En physique nucléaire, qu'appelle-t-on l'énergie de masse d'un noyau au repos ?",
+      "verso": "C'est l'énergie $E = m\\,c^{2}$ associée à sa masse $m$ lorsqu'il est immobile. Ce n'est ni une énergie cinétique ni une énergie potentielle : tout système la possède du seul fait d'exister.",
+      "difficulte": 2,
+      "tags": [
+        "energie-de-masse"
+      ]
+    },
+    {
+      "id": "PCTD-P14-017",
+      "lecon": "Les unités de masse et d'énergie en physique nucléaire",
+      "type": "formule",
+      "recto": "Quelle équivalence relie l'unité de masse atomique au $\\mathrm{MeV}/c^{2}$ ?",
+      "verso": "$1~\\mathrm{u} = 931{,}5~\\mathrm{MeV}/c^{2}$, soit $1~\\mathrm{u} \\times c^{2} = 931{,}5~\\mathrm{MeV}$. Une masse en u multipliée par $931{,}5$ donne son énergie de masse en MeV.",
+      "difficulte": 2,
+      "tags": [
+        "mev-c2",
+        "conversion"
+      ]
+    },
+    {
+      "id": "PCTD-P14-018",
+      "lecon": "Les unités de masse et d'énergie en physique nucléaire",
+      "type": "formule",
+      "recto": "En unités de masse atomique, quelles sont les masses du proton et du neutron ?",
+      "verso": "$m_p = 1{,}00728~\\mathrm{u}$ (soit $938{,}3~\\mathrm{MeV}/c^{2}$) et $m_n = 1{,}00866~\\mathrm{u}$ (soit $939{,}6~\\mathrm{MeV}/c^{2}$) : le neutron est un peu plus lourd.",
+      "difficulte": 2,
+      "tags": [
+        "masse-proton",
+        "masse-neutron"
+      ]
+    },
+    {
+      "id": "PCTD-P14-019",
+      "lecon": "Les unités de masse et d'énergie en physique nucléaire",
+      "type": "formule",
+      "recto": "En unités de masse atomique, quelle est la masse de l'électron ?",
+      "verso": "$m_e = 5{,}49 \\times 10^{-4}~\\mathrm{u}$, soit $9{,}11 \\times 10^{-31}~\\mathrm{kg}$ ou $0{,}511~\\mathrm{MeV}/c^{2}$.",
+      "difficulte": 2,
+      "tags": [
+        "masse-electron"
+      ]
+    },
+    {
+      "id": "PCTD-P14-020",
+      "lecon": "Les unités de masse et d'énergie en physique nucléaire",
+      "type": "definition",
+      "recto": "Pourquoi le calcul $E = 1{,}00728 \\times \\left(3{,}00 \\times 10^{8}\\right)^{2}~\\mathrm{J}$ ne donne-t-il pas l'énergie de masse du proton ?",
+      "verso": "La relation $E = mc^{2}$ en joules exige la masse en kilogrammes : il faut d'abord écrire $m_p = 1{,}00728 \\times 1{,}66054 \\times 10^{-27}~\\mathrm{kg}$, ou employer le raccourci $E = 1{,}00728 \\times 931{,}5~\\mathrm{MeV}$.",
+      "difficulte": 3,
+      "tags": [
+        "einstein",
+        "unites",
+        "piege"
+      ]
+    },
+    {
+      "id": "PCTD-P14-021",
+      "lecon": "Le défaut de masse et l'énergie de liaison d'un noyau",
+      "type": "formule",
+      "recto": "Pour un noyau $^{A}_{Z}\\mathrm{X}$ de masse $m_{\\text{noyau}}$, quelle est l'expression du défaut de masse $\\Delta m$ ?",
+      "verso": "$\\Delta m = \\left[Z\\,m_p + (A - Z)\\,m_n\\right] - m_{\\text{noyau}}$ : masse des nucléons pris séparément moins masse du noyau formé. Il est toujours positif.",
+      "difficulte": 2,
+      "tags": [
+        "defaut-de-masse"
+      ]
+    },
+    {
+      "id": "PCTD-P14-022",
+      "lecon": "Le défaut de masse et l'énergie de liaison d'un noyau",
+      "type": "definition",
+      "recto": "Pourquoi le défaut de masse d'un noyau est-il toujours positif ?",
+      "verso": "La formation du noyau libère de l'énergie, puisque les nucléons s'attirent ; d'après la relation d'Einstein, le système perd alors la masse $\\dfrac{E}{c^{2}}$. Le noyau pèse donc moins que ses nucléons séparés.",
+      "difficulte": 2,
+      "tags": [
+        "defaut-de-masse"
+      ]
+    },
+    {
+      "id": "PCTD-P14-023",
+      "lecon": "Le défaut de masse et l'énergie de liaison d'un noyau",
+      "type": "definition",
+      "recto": "Comment définit-on l'énergie de liaison d'un noyau ?",
+      "verso": "C'est l'énergie qu'il faut fournir au noyau, au repos, pour le dissocier en ses nucléons libres et immobiles (on dit aussi énergie de cohésion). C'est aussi l'énergie libérée quand les nucléons s'assemblent.",
+      "difficulte": 2,
+      "tags": [
+        "energie-de-liaison"
+      ]
+    },
+    {
+      "id": "PCTD-P14-024",
+      "lecon": "Le défaut de masse et l'énergie de liaison d'un noyau",
+      "type": "formule",
+      "recto": "Quelle relation lie l'énergie de liaison $E_\\ell$ d'un noyau à son défaut de masse $\\Delta m$ ?",
+      "verso": "$E_\\ell = \\Delta m\\,c^{2}$, en joules avec $\\Delta m$ en kilogrammes. Raccourci : $E_\\ell~(\\mathrm{MeV}) = \\Delta m~(\\mathrm{u}) \\times 931{,}5$.",
+      "difficulte": 2,
+      "tags": [
+        "energie-de-liaison",
+        "defaut-de-masse"
+      ]
+    },
+    {
+      "id": "PCTD-P14-025",
+      "lecon": "Le défaut de masse et l'énergie de liaison d'un noyau",
+      "type": "formule",
+      "recto": "Si un énoncé donne la masse d'un atome, quelle relation donne la masse de son noyau ?",
+      "verso": "$m_{\\text{noyau}} = m_{\\text{atome}} - Z\\,m_e$ : on retranche les $Z$ électrons avant tout calcul de défaut de masse.",
+      "difficulte": 2,
+      "tags": [
+        "masse-atome",
+        "masse-noyau"
+      ]
+    },
+    {
+      "id": "PCTD-P14-026",
+      "lecon": "Le défaut de masse et l'énergie de liaison d'un noyau",
+      "type": "definition",
+      "recto": "Pourquoi utiliser la masse de l'atome à la place de celle du noyau fausse-t-il le calcul de l'énergie de liaison ?",
+      "verso": "La masse de l'atome inclut celle des $Z$ électrons : sans les retrancher ($m_{\\text{noyau}} = m_{\\text{atome}} - Z\\,m_e$), on sous-estime le défaut de masse, donc l'énergie de liaison de plusieurs MeV.",
+      "difficulte": 3,
+      "tags": [
+        "masse-atome",
+        "piege"
+      ]
+    },
+    {
+      "id": "PCTD-P14-027",
+      "lecon": "Le défaut de masse et l'énergie de liaison d'un noyau",
+      "type": "definition",
+      "recto": "Comment l'énergie d'un noyau au repos se compare-t-elle à la somme des énergies de masse de ses nucléons séparés ?",
+      "verso": "Elle est inférieure, et l'écart est l'énergie de liaison : $\\left[Z\\,m_p + (A - Z)\\,m_n\\right]c^{2} - m_{\\text{noyau}}\\,c^{2} = E_\\ell$.",
+      "difficulte": 2,
+      "tags": [
+        "energie-au-repos",
+        "diagramme-d-energie"
+      ]
+    },
+    {
+      "id": "PCTD-P14-028",
+      "lecon": "Le défaut de masse et l'énergie de liaison d'un noyau",
+      "type": "definition",
+      "recto": "Quelle interaction assure la cohésion du noyau malgré la répulsion électrique entre protons ?",
+      "verso": "L'interaction forte : attractive, plus forte que la répulsion électrique à courte distance, elle s'exerce entre tous les nucléons et cesse d'agir au-delà de quelques femtomètres.",
+      "difficulte": 2,
+      "tags": [
+        "interaction-forte",
+        "cohesion"
+      ]
+    },
+    {
+      "id": "PCTD-P14-029",
+      "lecon": "L'énergie de liaison par nucléon, la courbe d'Aston et la stabilité",
+      "type": "definition",
+      "recto": "Comment définit-on l'énergie de liaison par nucléon d'un noyau $^{A}_{Z}\\mathrm{X}$ ?",
+      "verso": "C'est le quotient $\\dfrac{E_\\ell}{A}$ de son énergie de liaison par son nombre de nucléons, exprimé en MeV par nucléon : énergie moyenne à fournir pour arracher un nucléon au noyau.",
+      "difficulte": 1,
+      "tags": [
+        "energie-par-nucleon"
+      ]
+    },
+    {
+      "id": "PCTD-P14-030",
+      "lecon": "L'énergie de liaison par nucléon, la courbe d'Aston et la stabilité",
+      "type": "formule",
+      "recto": "En physique nucléaire, quel critère permet de comparer la stabilité de deux noyaux ?",
+      "verso": "Un noyau est d'autant plus stable que son énergie de liaison par nucléon $\\dfrac{E_\\ell}{A}$ est grande.",
+      "difficulte": 2,
+      "tags": [
+        "stabilite"
+      ]
+    },
+    {
+      "id": "PCTD-P14-031",
+      "lecon": "L'énergie de liaison par nucléon, la courbe d'Aston et la stabilité",
+      "type": "definition",
+      "recto": "Pourquoi l'énergie de liaison totale $E_\\ell$ ne suffit-elle pas à comparer la stabilité de deux noyaux ?",
+      "verso": "Elle croît avec le nombre de nucléons et mesure la taille autant que la solidité. Il faut diviser par $A$ : l'uranium 235 ($1\\,784~\\mathrm{MeV}$, soit $7{,}59$ MeV par nucléon) est moins stable que le fer 56 ($8{,}79$ MeV par nucléon).",
+      "difficulte": 3,
+      "tags": [
+        "stabilite",
+        "piege"
+      ]
+    },
+    {
+      "id": "PCTD-P14-032",
+      "lecon": "L'énergie de liaison par nucléon, la courbe d'Aston et la stabilité",
+      "type": "definition",
+      "recto": "Que représente la courbe d'Aston ?",
+      "verso": "La courbe donnant $-\\dfrac{E_\\ell}{A}$ en fonction du nombre de masse $A$. Les noyaux les plus stables occupent le fond de la cuvette, vers $A \\approx 56$.",
+      "difficulte": 2,
+      "tags": [
+        "courbe-d-aston"
+      ]
+    },
+    {
+      "id": "PCTD-P14-033",
+      "lecon": "L'énergie de liaison par nucléon, la courbe d'Aston et la stabilité",
+      "type": "definition",
+      "recto": "Sur une courbe traçant $\\dfrac{E_\\ell}{A}$ en fonction de $A$ (courbe directe), où se trouvent les noyaux les plus stables ?",
+      "verso": "Au sommet de la courbe, vers $A \\approx 56$ ; sur la courbe d'Aston, qui porte $-\\dfrac{E_\\ell}{A}$, ils sont au contraire en bas, au fond de la cuvette.",
+      "difficulte": 3,
+      "tags": [
+        "courbe-d-aston",
+        "lecture"
+      ]
+    },
+    {
+      "id": "PCTD-P14-034",
+      "lecon": "L'énergie de liaison par nucléon, la courbe d'Aston et la stabilité",
+      "type": "formule",
+      "recto": "Quelle est la valeur maximale de l'énergie de liaison par nucléon, et pour quels noyaux est-elle atteinte ?",
+      "verso": "Environ $8{,}8$ MeV par nucléon, pour les noyaux de nombre de masse compris entre 50 et 65, dont le fer 56 ($8{,}79$ MeV par nucléon).",
+      "difficulte": 2,
+      "tags": [
+        "maximum",
+        "fer-56"
+      ]
+    },
+    {
+      "id": "PCTD-P14-035",
+      "lecon": "L'énergie de liaison par nucléon, la courbe d'Aston et la stabilité",
+      "type": "formule",
+      "recto": "Quel est l'ordre de grandeur de l'énergie de liaison par nucléon pour la grande majorité des noyaux ?",
+      "verso": "Environ $8$ MeV par nucléon. Elle tombe à $1{,}1$ MeV par nucléon pour le deutérium et redescend vers $7{,}6$ MeV par nucléon pour l'uranium.",
+      "difficulte": 2,
+      "tags": [
+        "ordre-de-grandeur"
+      ]
+    },
+    {
+      "id": "PCTD-P14-036",
+      "lecon": "L'énergie de liaison par nucléon, la courbe d'Aston et la stabilité",
+      "type": "definition",
+      "recto": "Pourquoi l'énergie de liaison par nucléon décroît-elle pour les noyaux lourds ($A \\gt 90$) ?",
+      "verso": "Parce que la répulsion électrique agit entre tous les protons, alors que l'interaction forte n'agit qu'entre nucléons voisins.",
+      "difficulte": 3,
+      "tags": [
+        "noyaux-lourds"
+      ]
+    }
+  ]
+}

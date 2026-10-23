@@ -1,0 +1,431 @@
+{
+  "matiere": "Physique-Chimie",
+  "partie": "Physique",
+  "niveau": "4ème",
+  "chapitre": "Physique, Chapitre 3 : Le volume d'un corps",
+  "source": "pc/4eme/Chapitre_3_Le_volume_d_un_corps",
+  "nombre_cartes": 36,
+  "cartes": [
+    {
+      "id": "PC4E-P03-001",
+      "lecon": "Le volume d'un corps, la capacité d'un récipient et leurs unités",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on le volume d'un corps ?",
+      "verso": "C'est l'espace qu'il occupe dans les trois dimensions : longueur, largeur et hauteur. On le note $V$.",
+      "difficulte": 1,
+      "tags": [
+        "volume",
+        "definition"
+      ]
+    },
+    {
+      "id": "PC4E-P03-002",
+      "lecon": "Le volume d'un corps, la capacité d'un récipient et leurs unités",
+      "type": "definition",
+      "recto": "Quelle est l'unité légale de volume, avec son symbole ?",
+      "verso": "Le mètre cube, de symbole $\\mathrm{m^3}$ : le volume d'un cube de $1~\\mathrm{m}$ d'arête.",
+      "difficulte": 1,
+      "tags": [
+        "unite",
+        "metre-cube"
+      ]
+    },
+    {
+      "id": "PC4E-P03-003",
+      "lecon": "Le volume d'un corps, la capacité d'un récipient et leurs unités",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on la capacité (ou contenance) d'un récipient ?",
+      "verso": "C'est le volume maximal de liquide qu'il peut contenir, mesuré à l'intérieur du récipient.",
+      "difficulte": 1,
+      "tags": [
+        "capacite",
+        "definition"
+      ]
+    },
+    {
+      "id": "PC4E-P03-004",
+      "lecon": "Le volume d'un corps, la capacité d'un récipient et leurs unités",
+      "type": "definition",
+      "recto": "Quelle est l'unité légale de capacité, avec son symbole ?",
+      "verso": "Le litre, de symbole $\\mathrm{L}$ : c'est le nom spécial donné au décimètre cube.",
+      "difficulte": 1,
+      "tags": [
+        "unite",
+        "litre"
+      ]
+    },
+    {
+      "id": "PC4E-P03-005",
+      "lecon": "Le volume d'un corps, la capacité d'un récipient et leurs unités",
+      "type": "formule",
+      "recto": "Quelles égalités relient la famille du litre à celle des unités cubes ?",
+      "verso": "$1~\\mathrm{L} = 1~\\mathrm{dm^3}$ et $1~\\mathrm{mL} = 1~\\mathrm{cm^3}$ ; donc $1~\\mathrm{m^3} = 1\\,000~\\mathrm{L} = 10~\\mathrm{hL} = 1~\\mathrm{kL}$.",
+      "difficulte": 2,
+      "tags": [
+        "conversion",
+        "litre"
+      ]
+    },
+    {
+      "id": "PC4E-P03-006",
+      "lecon": "Le volume d'un corps, la capacité d'un récipient et leurs unités",
+      "type": "formule",
+      "recto": "Par quel facteur multiplie-t-on pour passer d'une unité cube à l'unité cube immédiatement plus petite ?",
+      "verso": "Par $1\\,000$ : $1~\\mathrm{m^3} = 1\\,000~\\mathrm{dm^3}$, $1~\\mathrm{dm^3} = 1\\,000~\\mathrm{cm^3}$, $1~\\mathrm{cm^3} = 1\\,000~\\mathrm{mm^3}$.",
+      "difficulte": 2,
+      "tags": [
+        "conversion",
+        "unites-cubes"
+      ]
+    },
+    {
+      "id": "PC4E-P03-007",
+      "lecon": "Le volume d'un corps, la capacité d'un récipient et leurs unités",
+      "type": "definition",
+      "recto": "Pourquoi passe-t-on de $\\mathrm{dm^3}$ à $\\mathrm{cm^3}$ en multipliant par $1\\,000$ et non par $10$ ?",
+      "verso": "Un volume se déploie dans trois directions, chacune divisée en dix : le cube de $1~\\mathrm{dm}$ contient $10 \\times 10 \\times 10 = 1\\,000$ cubes de $1~\\mathrm{cm}$.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "unites-cubes"
+      ]
+    },
+    {
+      "id": "PC4E-P03-008",
+      "lecon": "Le volume d'un corps, la capacité d'un récipient et leurs unités",
+      "type": "formule",
+      "recto": "Par quel facteur passe-t-on d'une unité de la famille du litre à sa voisine ?",
+      "verso": "Par $10$ à chaque marche : $1~\\mathrm{L} = 10~\\mathrm{dL} = 100~\\mathrm{cL} = 1\\,000~\\mathrm{mL}$, et $1~\\mathrm{hL} = 100~\\mathrm{L}$.",
+      "difficulte": 2,
+      "tags": [
+        "conversion",
+        "litre"
+      ]
+    },
+    {
+      "id": "PC4E-P03-009",
+      "lecon": "Le volume d'un corps, la capacité d'un récipient et leurs unités",
+      "type": "formule",
+      "recto": "Combien de centimètres cubes contient $1~\\mathrm{m^3}$ ?",
+      "verso": "$1~\\mathrm{m^3} = 1\\,000\\,000~\\mathrm{cm^3}$ (deux marches de $1\\,000$). De même, $1~\\mathrm{dm^3} = 1\\,000\\,000~\\mathrm{mm^3}$.",
+      "difficulte": 2,
+      "tags": [
+        "conversion",
+        "unites-cubes"
+      ]
+    },
+    {
+      "id": "PC4E-P03-010",
+      "lecon": "Le volume d'un corps, la capacité d'un récipient et leurs unités",
+      "type": "definition",
+      "recto": "Quelle relation y a-t-il entre le volume et la capacité ?",
+      "verso": "C'est la même grandeur, mesurée avec deux familles d'unités : les mètres cubes et les litres.",
+      "difficulte": 2,
+      "tags": [
+        "volume",
+        "capacite"
+      ]
+    },
+    {
+      "id": "PC4E-P03-011",
+      "lecon": "Le volume d'un corps, la capacité d'un récipient et leurs unités",
+      "type": "definition",
+      "recto": "Pourquoi le volume d'un bidon n'est-il pas égal à sa capacité ?",
+      "verso": "Le volume du bidon comprend le plastique dont il est fait ; sa capacité ne compte que l'intérieur.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "capacite"
+      ]
+    },
+    {
+      "id": "PC4E-P03-012",
+      "lecon": "Le volume d'un corps, la capacité d'un récipient et leurs unités",
+      "type": "definition",
+      "recto": "Pourquoi est-il faux d'écrire qu'une bouteille de $1{,}5~\\mathrm{L}$ contient $1{,}5~\\mathrm{m^3}$ ?",
+      "verso": "Le litre vaut un décimètre cube, pas un mètre cube : $1{,}5~\\mathrm{L} = 1{,}5~\\mathrm{dm^3} = 0{,}0015~\\mathrm{m^3}$.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "conversion"
+      ]
+    },
+    {
+      "id": "PC4E-P03-013",
+      "lecon": "La mesure du volume d'un liquide",
+      "type": "definition",
+      "recto": "Avec quel instrument mesure-t-on le volume d'un liquide en classe ?",
+      "verso": "Avec un récipient gradué, en général l'éprouvette graduée (on utilise aussi la seringue graduée, le verre doseur, la burette).",
+      "difficulte": 1,
+      "tags": [
+        "eprouvette",
+        "instrument"
+      ]
+    },
+    {
+      "id": "PC4E-P03-014",
+      "lecon": "La mesure du volume d'un liquide",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on le ménisque d'un liquide dans une éprouvette ?",
+      "verso": "C'est la surface libre courbe du liquide dans le tube étroit, creusée contre les parois.",
+      "difficulte": 1,
+      "tags": [
+        "menisque",
+        "vocabulaire"
+      ]
+    },
+    {
+      "id": "PC4E-P03-015",
+      "lecon": "La mesure du volume d'un liquide",
+      "type": "formule",
+      "recto": "Où lit-on la graduation lors de la mesure d'un volume d'eau dans une éprouvette ?",
+      "verso": "Au bas du ménisque, l'oeil placé à la hauteur du ménisque, l'éprouvette posée sur une table horizontale.",
+      "difficulte": 2,
+      "tags": [
+        "menisque",
+        "lecture"
+      ]
+    },
+    {
+      "id": "PC4E-P03-016",
+      "lecon": "La mesure du volume d'un liquide",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on l'erreur de parallaxe lors de la lecture d'une éprouvette ?",
+      "verso": "C'est l'erreur de lecture due à un regard oblique : l'oeil n'est pas à la hauteur du ménisque et lit une graduation trop haute ou trop basse.",
+      "difficulte": 2,
+      "tags": [
+        "parallaxe",
+        "lecture"
+      ]
+    },
+    {
+      "id": "PC4E-P03-017",
+      "lecon": "La mesure du volume d'un liquide",
+      "type": "formule",
+      "recto": "Comment calcule-t-on la valeur d'une graduation d'un récipient gradué ?",
+      "verso": "On divise l'écart entre deux traits chiffrés par le nombre d'intervalles (et non de traits) qui les séparent.",
+      "difficulte": 2,
+      "tags": [
+        "graduation"
+      ]
+    },
+    {
+      "id": "PC4E-P03-018",
+      "lecon": "La mesure du volume d'un liquide",
+      "type": "formule",
+      "recto": "Quel récipient gradué choisit-on pour mesurer un volume de liquide ?",
+      "verso": "Celui dont la capacité est immédiatement supérieure au volume à mesurer : c'est lui qui donne la lecture la plus précise.",
+      "difficulte": 2,
+      "tags": [
+        "choix-instrument",
+        "precision"
+      ]
+    },
+    {
+      "id": "PC4E-P03-019",
+      "lecon": "La mesure du volume d'un liquide",
+      "type": "definition",
+      "recto": "Pourquoi une grande éprouvette n'est-elle pas plus précise qu'une petite pour mesurer un petit volume ?",
+      "verso": "La précision dépend de la graduation, pas de la capacité : dans un grand tube, un petit volume se lit sur un trait minuscule et l'erreur peut atteindre une bonne part du volume cherché.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "precision"
+      ]
+    },
+    {
+      "id": "PC4E-P03-020",
+      "lecon": "La mesure du volume d'un liquide",
+      "type": "definition",
+      "recto": "Quelle différence y a-t-il entre la capacité d'une éprouvette et la valeur d'une graduation ?",
+      "verso": "La capacité, écrite en haut du tube, est le volume maximal qu'elle contient ; la valeur d'une graduation est le volume entre deux traits voisins, qui fixe la finesse de la lecture.",
+      "difficulte": 2,
+      "tags": [
+        "capacite",
+        "graduation"
+      ]
+    },
+    {
+      "id": "PC4E-P03-021",
+      "lecon": "La mesure du volume d'un liquide",
+      "type": "formule",
+      "recto": "Combien de chiffres conserve-t-on dans la lecture d'un volume sur une éprouvette graduée ?",
+      "verso": "Autant que la graduation en permet, jamais davantage : sur une éprouvette graduée tous les $2~\\mathrm{mL}$, on écrit $68~\\mathrm{mL}$, jamais $68{,}3~\\mathrm{mL}$.",
+      "difficulte": 2,
+      "tags": [
+        "precision",
+        "ecriture"
+      ]
+    },
+    {
+      "id": "PC4E-P03-022",
+      "lecon": "La mesure du volume d'un liquide",
+      "type": "formule",
+      "recto": "Comment détermine-t-on le volume de liquide versé entre deux moments avec un récipient gradué ?",
+      "verso": "On fait la différence des deux lectures du niveau.",
+      "difficulte": 1,
+      "tags": [
+        "volume-verse"
+      ]
+    },
+    {
+      "id": "PC4E-P03-023",
+      "lecon": "La mesure du volume d'un liquide",
+      "type": "formule",
+      "recto": "Comment détermine-t-on le volume d'une goutte de liquide ?",
+      "verso": "On compte le nombre de gouttes qui remplissent un volume mesurable, puis on divise ce volume par le nombre de gouttes.",
+      "difficulte": 2,
+      "tags": [
+        "goutte"
+      ]
+    },
+    {
+      "id": "PC4E-P03-024",
+      "lecon": "La mesure du volume d'un solide",
+      "type": "formule",
+      "recto": "Quelle relation donne le volume d'un solide droit dont la section reste la même sur toute la hauteur ?",
+      "verso": "$V = \\mathcal{B} \\times h$, où $\\mathcal{B}$ est l'aire de la base et $h$ la hauteur, toutes les dimensions dans la même unité.",
+      "difficulte": 2,
+      "tags": [
+        "volume-solide",
+        "formule"
+      ]
+    },
+    {
+      "id": "PC4E-P03-025",
+      "lecon": "La mesure du volume d'un solide",
+      "type": "formule",
+      "recto": "Quelle formule donne le volume d'un cube d'arête $a$ ?",
+      "verso": "$V = a^{3}$ ; si $a$ est en $\\mathrm{cm}$, $V$ est en $\\mathrm{cm^3}$.",
+      "difficulte": 1,
+      "tags": [
+        "cube"
+      ]
+    },
+    {
+      "id": "PC4E-P03-026",
+      "lecon": "La mesure du volume d'un solide",
+      "type": "formule",
+      "recto": "Quelle formule donne le volume d'un pavé droit de longueur $L$, de largeur $l$ et de hauteur $h$ ?",
+      "verso": "$V = L \\times l \\times h$, les trois dimensions étant exprimées dans la même unité.",
+      "difficulte": 1,
+      "tags": [
+        "pave-droit"
+      ]
+    },
+    {
+      "id": "PC4E-P03-027",
+      "lecon": "La mesure du volume d'un solide",
+      "type": "formule",
+      "recto": "Quelle formule donne le volume d'un cylindre de rayon $r$ et de hauteur $h$ ?",
+      "verso": "$V = \\pi \\times r^{2} \\times h$, avec $\\pi \\approx 3{,}14$ et $r$, $h$ dans la même unité.",
+      "difficulte": 2,
+      "tags": [
+        "cylindre"
+      ]
+    },
+    {
+      "id": "PC4E-P03-028",
+      "lecon": "La mesure du volume d'un solide",
+      "type": "formule",
+      "recto": "Quelle formule donne le volume d'une boule de rayon $r$ ?",
+      "verso": "$V = \\dfrac{4}{3} \\times \\pi \\times r^{3}$, avec $\\pi \\approx 3{,}14$.",
+      "difficulte": 2,
+      "tags": [
+        "boule"
+      ]
+    },
+    {
+      "id": "PC4E-P03-029",
+      "lecon": "La mesure du volume d'un solide",
+      "type": "definition",
+      "recto": "Pourquoi utiliser le diamètre à la place du rayon dans $V = \\pi \\times r^{2} \\times h$ fausse-t-il le résultat ?",
+      "verso": "Le diamètre vaut deux fois le rayon ; élevé au carré, il multiplie le résultat par $4$. Pour un diamètre de $8~\\mathrm{cm}$, on prend $r = 4~\\mathrm{cm}$.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "cylindre"
+      ]
+    },
+    {
+      "id": "PC4E-P03-030",
+      "lecon": "La mesure du volume d'un solide",
+      "type": "formule",
+      "recto": "Par la méthode du déplacement d'eau, quelle relation donne le volume $V$ d'un solide à partir des lectures $V_1$ (avant immersion) et $V_2$ (après immersion totale) ?",
+      "verso": "$V = V_{2} - V_{1}$, et non la lecture finale seule, qui comprend l'eau déjà présente.",
+      "difficulte": 2,
+      "tags": [
+        "deplacement-d-eau"
+      ]
+    },
+    {
+      "id": "PC4E-P03-031",
+      "lecon": "La mesure du volume d'un solide",
+      "type": "formule",
+      "recto": "Quelles conditions doit remplir un solide pour que l'on mesure son volume par déplacement d'eau ?",
+      "verso": "Il doit être insoluble dans le liquide, entièrement immergé, et ne pas absorber le liquide.",
+      "difficulte": 2,
+      "tags": [
+        "deplacement-d-eau",
+        "conditions"
+      ]
+    },
+    {
+      "id": "PC4E-P03-032",
+      "lecon": "La mesure du volume d'un solide",
+      "type": "definition",
+      "recto": "Pourquoi le niveau de l'eau monte-t-il exactement du volume du solide immergé ?",
+      "verso": "Deux corps ne peuvent pas occuper la même place au même moment, et l'eau, incompressible, garde son volume : l'eau chassée se place au-dessus.",
+      "difficulte": 3,
+      "tags": [
+        "deplacement-d-eau"
+      ]
+    },
+    {
+      "id": "PC4E-P03-033",
+      "lecon": "La mesure du volume d'un solide",
+      "type": "formule",
+      "recto": "Comment calcule-t-on le volume de matière d'un solide creux ?",
+      "verso": "On calcule le volume plein, puis celui du creux, et l'on soustrait. Pour un tuyau : $V = \\pi R^{2} h - \\pi r^{2} h$.",
+      "difficulte": 2,
+      "tags": [
+        "solide-creux"
+      ]
+    },
+    {
+      "id": "PC4E-P03-034",
+      "lecon": "La mesure du volume d'un solide",
+      "type": "definition",
+      "recto": "A quoi sert un vase à trop-plein ?",
+      "verso": "A mesurer le volume d'un gros solide : l'eau qu'il chasse s'écoule par le bec dans une éprouvette, et le volume recueilli est directement celui du solide.",
+      "difficulte": 2,
+      "tags": [
+        "vase-a-trop-plein"
+      ]
+    },
+    {
+      "id": "PC4E-P03-035",
+      "lecon": "La mesure du volume d'un solide",
+      "type": "formule",
+      "recto": "Comment mesure-t-on par déplacement d'eau le volume d'un corps qui flotte ?",
+      "verso": "On le leste d'un morceau de fer : on mesure le volume de l'ensemble, puis celui du lest seul, et l'on soustrait.",
+      "difficulte": 2,
+      "tags": [
+        "lest",
+        "corps-flottant"
+      ]
+    },
+    {
+      "id": "PC4E-P03-036",
+      "lecon": "La mesure du volume d'un solide",
+      "type": "definition",
+      "recto": "Pourquoi un gaz n'a-t-il pas un volume fixe de $3~\\mathrm{L}$ « où qu'on le mette » ?",
+      "verso": "Un gaz n'a pas de volume propre : il occupe tout le volume du récipient fermé qui le contient, et son volume change avec le récipient.",
+      "difficulte": 3,
+      "tags": [
+        "gaz",
+        "volume"
+      ]
+    }
+  ]
+}

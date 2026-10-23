@@ -1,0 +1,430 @@
+{
+  "matiere": "Physique-Chimie",
+  "partie": "Physique",
+  "niveau": "Terminale D",
+  "chapitre": "Physique, Chapitre 13 : Les oscillations électriques forcées",
+  "source": "pc/tled/Chapitre_13_Les_oscillations_electriques_forcees",
+  "nombre_cartes": 36,
+  "cartes": [
+    {
+      "id": "PCTD-P13-001",
+      "lecon": "La mise en évidence expérimentale des oscillations forcées et les valeurs efficaces",
+      "type": "definition",
+      "recto": "En électricité, quand dit-on qu'un circuit est le siège d'oscillations électriques forcées ?",
+      "verso": "Lorsqu'un générateur extérieur, l'excitateur, lui impose une tension sinusoïdale de fréquence $f$ : le circuit, appelé résonateur, oscille alors à cette fréquence $f$ et non à sa fréquence propre.",
+      "difficulte": 1,
+      "tags": [
+        "oscillations-forcees",
+        "excitateur",
+        "resonateur"
+      ]
+    },
+    {
+      "id": "PCTD-P13-002",
+      "lecon": "La mise en évidence expérimentale des oscillations forcées et les valeurs efficaces",
+      "type": "definition",
+      "recto": "Dans un circuit RLC alimenté par un GBF, qu'appelle-t-on le régime transitoire ?",
+      "verso": "La courte durée, juste après la fermeture du circuit, pendant laquelle la fréquence propre et la fréquence du générateur coexistent. La composante propre, amortie par la résistance, disparaît en quelques périodes.",
+      "difficulte": 2,
+      "tags": [
+        "regime-transitoire"
+      ]
+    },
+    {
+      "id": "PCTD-P13-003",
+      "lecon": "La mise en évidence expérimentale des oscillations forcées et les valeurs efficaces",
+      "type": "definition",
+      "recto": "Comment définit-on la valeur efficace $I$ d'un courant alternatif ?",
+      "verso": "C'est l'intensité du courant continu qui produirait, dans le même conducteur ohmique et pendant la même durée, le même dégagement de chaleur.",
+      "difficulte": 2,
+      "tags": [
+        "valeur-efficace"
+      ]
+    },
+    {
+      "id": "PCTD-P13-004",
+      "lecon": "La mise en évidence expérimentale des oscillations forcées et les valeurs efficaces",
+      "type": "formule",
+      "recto": "Pour une grandeur sinusoïdale, quelle relation lie la valeur efficace $U$ d'une tension à sa valeur maximale $U_m$ ?",
+      "verso": "$U = \\dfrac{U_m}{\\sqrt{2}}$ (de même $I = \\dfrac{I_m}{\\sqrt{2}}$). Ce sont ces valeurs efficaces qu'affichent voltmètre et ampèremètre en position alternatif.",
+      "difficulte": 1,
+      "tags": [
+        "valeur-efficace",
+        "valeur-maximale"
+      ]
+    },
+    {
+      "id": "PCTD-P13-005",
+      "lecon": "La mise en évidence expérimentale des oscillations forcées et les valeurs efficaces",
+      "type": "formule",
+      "recto": "En régime sinusoïdal, quelle relation lie la tension efficace $U$, l'intensité efficace $I$ et l'impédance $Z$ d'un dipôle ?",
+      "verso": "$U = Z\\,I$, soit $Z = \\dfrac{U}{I} = \\dfrac{U_m}{I_m}$, à fréquence fixée. $Z$ s'exprime en ohms ($\\Omega$) et dépend de la fréquence.",
+      "difficulte": 1,
+      "tags": [
+        "loi-d-ohm",
+        "impedance"
+      ]
+    },
+    {
+      "id": "PCTD-P13-006",
+      "lecon": "La mise en évidence expérimentale des oscillations forcées et les valeurs efficaces",
+      "type": "formule",
+      "recto": "Pour visualiser à l'oscilloscope l'intensité dans un dipôle RLC série, aux bornes de quel dipôle branche-t-on la voie 2 ?",
+      "verso": "Aux bornes du conducteur ohmique $R$, placé juste avant la masse : la tension $u_R = R\\,i$ est proportionnelle à l'intensité. L'oscilloscope n'affiche jamais une intensité, seulement une tension.",
+      "difficulte": 2,
+      "tags": [
+        "oscilloscope",
+        "branchement"
+      ]
+    },
+    {
+      "id": "PCTD-P13-007",
+      "lecon": "La mise en évidence expérimentale des oscillations forcées et les valeurs efficaces",
+      "type": "definition",
+      "recto": "Pourquoi annoncer « l'impédance de ce dipôle RLC vaut $150~\\Omega$ » sans autre précision n'a-t-il pas de sens ?",
+      "verso": "Parce que l'impédance n'est pas une constante du dipôle : elle change avec la fréquence. Il faut toujours donner la fréquence à laquelle elle a été mesurée.",
+      "difficulte": 3,
+      "tags": [
+        "impedance",
+        "piege"
+      ]
+    },
+    {
+      "id": "PCTD-P13-008",
+      "lecon": "L'étude théorique du dipôle RLC série : impédance et déphasage",
+      "type": "formule",
+      "recto": "Pour un dipôle RLC série en régime sinusoïdal, quelle est l'expression de l'impédance $Z$ en fonction de $R$, $L$, $C$ et $\\omega$ ?",
+      "verso": "$Z = \\sqrt{R^{2} + \\left(L\\omega - \\dfrac{1}{C\\omega}\\right)^{2}}$, avec $Z$ et $R$ en $\\Omega$, $L$ en H, $C$ en F, $\\omega$ en $\\mathrm{rad/s}$. Si la bobine a une résistance $r$, on remplace $R$ par $R + r$.",
+      "difficulte": 2,
+      "tags": [
+        "impedance",
+        "rlc-serie"
+      ]
+    },
+    {
+      "id": "PCTD-P13-009",
+      "lecon": "L'étude théorique du dipôle RLC série : impédance et déphasage",
+      "type": "definition",
+      "recto": "Pour un dipôle RLC série, que désigne le déphasage $\\varphi$ ?",
+      "verso": "C'est le déphasage de la tension par rapport à l'intensité : $\\varphi = \\varphi_u - \\varphi_i$, avec $-\\dfrac{\\pi}{2} \\lt \\varphi \\lt \\dfrac{\\pi}{2}$. On prend l'intensité comme origine des phases : $i = I_m\\cos\\left(\\omega t\\right)$ et $u = U_m\\cos\\left(\\omega t + \\varphi\\right)$.",
+      "difficulte": 2,
+      "tags": [
+        "dephasage",
+        "origine-des-phases"
+      ]
+    },
+    {
+      "id": "PCTD-P13-010",
+      "lecon": "L'étude théorique du dipôle RLC série : impédance et déphasage",
+      "type": "formule",
+      "recto": "Pour un dipôle RLC série, quelle relation donne $\\tan\\varphi$ ?",
+      "verso": "$\\tan\\varphi = \\dfrac{L\\omega - \\dfrac{1}{C\\omega}}{R}$, où $\\varphi$ est le déphasage de la tension par rapport à l'intensité ($R$ remplacée par $R + r$ si la bobine est résistive).",
+      "difficulte": 2,
+      "tags": [
+        "dephasage",
+        "fresnel"
+      ]
+    },
+    {
+      "id": "PCTD-P13-011",
+      "lecon": "L'étude théorique du dipôle RLC série : impédance et déphasage",
+      "type": "formule",
+      "recto": "Pour un dipôle RLC série, quelle relation lie $\\cos\\varphi$, la résistance $R$ et l'impédance $Z$ ?",
+      "verso": "$\\cos\\varphi = \\dfrac{R}{Z}$, tirée du triangle de la construction de Fresnel.",
+      "difficulte": 1,
+      "tags": [
+        "dephasage",
+        "cos-phi"
+      ]
+    },
+    {
+      "id": "PCTD-P13-012",
+      "lecon": "L'étude théorique du dipôle RLC série : impédance et déphasage",
+      "type": "definition",
+      "recto": "Pour un dipôle RLC série, à quelle condition sur $L\\omega$ et $\\dfrac{1}{C\\omega}$ le circuit est-il inductif ?",
+      "verso": "Lorsque $L\\omega \\gt \\dfrac{1}{C\\omega}$ : alors $\\varphi \\gt 0$, la tension est en avance sur l'intensité. Si $L\\omega \\lt \\dfrac{1}{C\\omega}$, $\\varphi \\lt 0$ et le circuit est capacitif.",
+      "difficulte": 2,
+      "tags": [
+        "inductif",
+        "capacitif"
+      ]
+    },
+    {
+      "id": "PCTD-P13-013",
+      "lecon": "L'étude théorique du dipôle RLC série : impédance et déphasage",
+      "type": "definition",
+      "recto": "En régime sinusoïdal, qu'appelle-t-on la réactance $X$ d'un circuit RLC série ?",
+      "verso": "La différence $X = L\\omega - \\dfrac{1}{C\\omega}$, en ohms, entre la réactance inductive $L\\omega$ et la réactance capacitive $\\dfrac{1}{C\\omega}$. Elle est positive pour un circuit inductif, négative pour un circuit capacitif.",
+      "difficulte": 2,
+      "tags": [
+        "reactance"
+      ]
+    },
+    {
+      "id": "PCTD-P13-014",
+      "lecon": "L'étude théorique du dipôle RLC série : impédance et déphasage",
+      "type": "definition",
+      "recto": "Pour un dipôle RLC série, pourquoi l'impédance $Z$ est-elle toujours supérieure ou égale à $R$ ?",
+      "verso": "Dans le triangle des impédances, de côtés $R$, $X$ et $Z$, l'impédance est l'hypoténuse. Donc $Z \\geq R$, avec égalité seulement quand la réactance s'annule.",
+      "difficulte": 3,
+      "tags": [
+        "triangle-des-impedances"
+      ]
+    },
+    {
+      "id": "PCTD-P13-015",
+      "lecon": "L'étude théorique du dipôle RLC série : impédance et déphasage",
+      "type": "formule",
+      "recto": "Pour une bobine d'inductance $L$ et de résistance $r$ en régime sinusoïdal, quelle est l'expression de son impédance $Z_b$ ?",
+      "verso": "$Z_b = \\dfrac{U_b}{I} = \\sqrt{r^{2} + \\left(L\\omega\\right)^{2}}$, et la tension à ses bornes est en avance sur l'intensité de $\\varphi_b$ tel que $\\tan\\varphi_b = \\dfrac{L\\omega}{r}$, avec $0 \\lt \\varphi_b \\lt \\dfrac{\\pi}{2}$.",
+      "difficulte": 2,
+      "tags": [
+        "bobine",
+        "impedance"
+      ]
+    },
+    {
+      "id": "PCTD-P13-016",
+      "lecon": "L'étude théorique du dipôle RLC série : impédance et déphasage",
+      "type": "formule",
+      "recto": "Dans un dipôle RLC série, quelle relation lie la tension efficace $U$ aux tensions efficaces $U_R$, $U_L$ et $U_C$ ?",
+      "verso": "$U = \\sqrt{U_R^{2} + \\left(U_L - U_C\\right)^{2}}$, avec $U_R = R\\,I$, $U_L = L\\omega\\,I$ et $U_C = \\dfrac{I}{C\\omega}$.",
+      "difficulte": 2,
+      "tags": [
+        "tensions-efficaces"
+      ]
+    },
+    {
+      "id": "PCTD-P13-017",
+      "lecon": "L'étude théorique du dipôle RLC série : impédance et déphasage",
+      "type": "definition",
+      "recto": "Pourquoi la relation $U = U_R + U_L + U_C$ est-elle fausse pour les tensions efficaces d'un dipôle RLC série ?",
+      "verso": "L'additivité ne vaut que pour les tensions instantanées : $u = u_R + u_L + u_C$. Les trois tensions sont déphasées et n'atteignent pas leur maximum au même instant ; il faut les composer comme des vecteurs : $U = \\sqrt{U_R^{2} + \\left(U_L - U_C\\right)^{2}}$.",
+      "difficulte": 3,
+      "tags": [
+        "additivite",
+        "piege"
+      ]
+    },
+    {
+      "id": "PCTD-P13-018",
+      "lecon": "La puissance en régime sinusoïdal forcé et le facteur de puissance",
+      "type": "definition",
+      "recto": "En régime sinusoïdal forcé, qu'appelle-t-on la puissance moyenne d'un dipôle ?",
+      "verso": "C'est la valeur moyenne, sur une période, de la puissance instantanée $p(t) = u(t)\\,i(t)$. On l'appelle aussi puissance active ; elle s'exprime en watts et c'est elle qui est facturée.",
+      "difficulte": 1,
+      "tags": [
+        "puissance-moyenne"
+      ]
+    },
+    {
+      "id": "PCTD-P13-019",
+      "lecon": "La puissance en régime sinusoïdal forcé et le facteur de puissance",
+      "type": "formule",
+      "recto": "Pour un dipôle RLC série en régime sinusoïdal, quelle est l'expression de la puissance moyenne $P$ en fonction de $U$, $I$ et $\\varphi$ ?",
+      "verso": "$P = U\\,I\\cos\\varphi$, avec $U$ et $I$ en valeurs efficaces et $P$ en watts ($\\mathrm{W}$).",
+      "difficulte": 1,
+      "tags": [
+        "puissance-moyenne"
+      ]
+    },
+    {
+      "id": "PCTD-P13-020",
+      "lecon": "La puissance en régime sinusoïdal forcé et le facteur de puissance",
+      "type": "definition",
+      "recto": "En régime sinusoïdal, qu'appelle-t-on la puissance apparente d'un dipôle ?",
+      "verso": "Le produit des valeurs efficaces, $S = U\\,I$ (notée aussi $P_a$). Elle s'exprime en voltampères ($\\mathrm{VA}$) et dimensionne les câbles, les disjoncteurs et les transformateurs.",
+      "difficulte": 1,
+      "tags": [
+        "puissance-apparente"
+      ]
+    },
+    {
+      "id": "PCTD-P13-021",
+      "lecon": "La puissance en régime sinusoïdal forcé et le facteur de puissance",
+      "type": "formule",
+      "recto": "En régime sinusoïdal, comment définit-on le facteur de puissance $k$ d'un dipôle RLC série ?",
+      "verso": "$k = \\cos\\varphi = \\dfrac{P}{S} = \\dfrac{R}{Z}$ : rapport de la puissance moyenne à la puissance apparente. C'est un nombre sans unité, compris entre 0 et 1.",
+      "difficulte": 2,
+      "tags": [
+        "facteur-de-puissance"
+      ]
+    },
+    {
+      "id": "PCTD-P13-022",
+      "lecon": "La puissance en régime sinusoïdal forcé et le facteur de puissance",
+      "type": "formule",
+      "recto": "Pour un dipôle RLC série, quelle expression de la puissance moyenne fait intervenir seulement la résistance et l'intensité efficace ?",
+      "verso": "$P = R\\,I^{2}$ ($P$ en W, $R$ en $\\Omega$, $I$ efficace en A). Si la bobine a une résistance $r$, $P = \\left(R + r\\right)I^{2}$ : seule la résistance consomme.",
+      "difficulte": 2,
+      "tags": [
+        "puissance-moyenne",
+        "effet-joule"
+      ]
+    },
+    {
+      "id": "PCTD-P13-023",
+      "lecon": "La puissance en régime sinusoïdal forcé et le facteur de puissance",
+      "type": "definition",
+      "recto": "En régime sinusoïdal, pourquoi la puissance moyenne d'une bobine parfaite est-elle nulle ?",
+      "verso": "Sa tension est en avance de $\\dfrac{\\pi}{2}$ sur l'intensité, donc $\\cos\\varphi = 0$ et $P = U\\,I\\cos\\varphi = 0$. Elle échange de l'énergie avec le générateur (emmagasinée puis restituée) sans en consommer en moyenne.",
+      "difficulte": 2,
+      "tags": [
+        "bobine-parfaite",
+        "echange-energie"
+      ]
+    },
+    {
+      "id": "PCTD-P13-024",
+      "lecon": "La puissance en régime sinusoïdal forcé et le facteur de puissance",
+      "type": "definition",
+      "recto": "Pourquoi l'écriture $P = U\\,I$ est-elle en général fausse pour la puissance consommée en alternatif ?",
+      "verso": "$U\\,I$ est la puissance apparente, en voltampères. La puissance consommée est $P = U\\,I\\cos\\varphi$, en watts ; les deux ne coïncident que pour un circuit purement résistif.",
+      "difficulte": 3,
+      "tags": [
+        "puissance-apparente",
+        "piege"
+      ]
+    },
+    {
+      "id": "PCTD-P13-025",
+      "lecon": "La puissance en régime sinusoïdal forcé et le facteur de puissance",
+      "type": "formule",
+      "recto": "Pour fournir une puissance $P$ sous la tension efficace $U$, quelle intensité efficace $I$ une ligne doit-elle transporter vers un appareil de facteur de puissance $\\cos\\varphi$ ?",
+      "verso": "$I = \\dfrac{P}{U\\cos\\varphi}$ (et non $\\dfrac{P}{U}$). Plus $\\cos\\varphi$ est faible, plus $I$ est grande, et les pertes en ligne $R_\\ell\\,I^{2}$ croissent comme le carré de $I$.",
+      "difficulte": 2,
+      "tags": [
+        "intensite-appelee",
+        "pertes-en-ligne"
+      ]
+    },
+    {
+      "id": "PCTD-P13-026",
+      "lecon": "La puissance en régime sinusoïdal forcé et le facteur de puissance",
+      "type": "definition",
+      "recto": "Dans une installation alimentant des moteurs, que signifie relever le facteur de puissance ?",
+      "verso": "Associer un condensateur au moteur, dipôle inductif, pour compenser son effet et rapprocher $\\cos\\varphi$ de 1. On compense un circuit inductif par un condensateur, jamais par une bobine supplémentaire.",
+      "difficulte": 2,
+      "tags": [
+        "facteur-de-puissance",
+        "condensateur"
+      ]
+    },
+    {
+      "id": "PCTD-P13-027",
+      "lecon": "La résonance d'intensité, la bande passante et le facteur de qualité",
+      "type": "definition",
+      "recto": "Pour un dipôle RLC série alimenté sous une tension efficace constante, qu'appelle-t-on la résonance d'intensité ?",
+      "verso": "C'est la situation où l'intensité efficace passe par son maximum $I_0$. Elle se produit lorsque la réactance s'annule : $L\\omega_0 = \\dfrac{1}{C\\omega_0}$.",
+      "difficulte": 1,
+      "tags": [
+        "resonance"
+      ]
+    },
+    {
+      "id": "PCTD-P13-028",
+      "lecon": "La résonance d'intensité, la bande passante et le facteur de qualité",
+      "type": "formule",
+      "recto": "Pour un dipôle RLC série, quelle est l'expression de la fréquence de résonance $f_0$ ?",
+      "verso": "$f_0 = \\dfrac{1}{2\\pi\\sqrt{LC}}$ (soit $\\omega_0 = \\dfrac{1}{\\sqrt{LC}}$), avec $L$ en H, $C$ en F, $f_0$ en Hz. Elle est égale à la fréquence propre du circuit.",
+      "difficulte": 1,
+      "tags": [
+        "frequence-de-resonance"
+      ]
+    },
+    {
+      "id": "PCTD-P13-029",
+      "lecon": "La résonance d'intensité, la bande passante et le facteur de qualité",
+      "type": "formule",
+      "recto": "A la résonance d'intensité d'un dipôle RLC série sous tension efficace $U$, que valent l'impédance, l'intensité efficace et le déphasage ?",
+      "verso": "$Z = R$ (impédance minimale), $I_0 = \\dfrac{U}{R}$ et $\\varphi = 0$, donc $\\cos\\varphi = 1$ : le circuit se comporte comme un conducteur ohmique et $P = U\\,I_0$.",
+      "difficulte": 2,
+      "tags": [
+        "resonance",
+        "impedance-minimale"
+      ]
+    },
+    {
+      "id": "PCTD-P13-030",
+      "lecon": "La résonance d'intensité, la bande passante et le facteur de qualité",
+      "type": "definition",
+      "recto": "Pourquoi la fréquence de résonance d'un dipôle RLC série ne dépend-elle pas de la résistance $R$ ?",
+      "verso": "Parce que $R$ ne figure pas dans $f_0 = \\dfrac{1}{2\\pi\\sqrt{LC}}$. La résistance ne modifie que la hauteur et la largeur du sommet de la courbe de résonance, jamais sa position.",
+      "difficulte": 3,
+      "tags": [
+        "frequence-de-resonance",
+        "piege"
+      ]
+    },
+    {
+      "id": "PCTD-P13-031",
+      "lecon": "La résonance d'intensité, la bande passante et le facteur de qualité",
+      "type": "definition",
+      "recto": "Pour un dipôle RLC série, comment définit-on la bande passante à 3 décibels ?",
+      "verso": "C'est l'intervalle de fréquences $\\left[f_1\\,;\\,f_2\\right]$ pour lequel $I \\geq \\dfrac{I_0}{\\sqrt{2}}$. La puissance reçue y est au moins la moitié de celle reçue à la résonance.",
+      "difficulte": 2,
+      "tags": [
+        "bande-passante"
+      ]
+    },
+    {
+      "id": "PCTD-P13-032",
+      "lecon": "La résonance d'intensité, la bande passante et le facteur de qualité",
+      "type": "formule",
+      "recto": "Pour un dipôle RLC série, quelle est l'expression de la largeur $\\Delta f$ de la bande passante à 3 décibels ?",
+      "verso": "$\\Delta f = f_2 - f_1 = \\dfrac{R}{2\\pi L}$, en hertz, où $R$ est la résistance totale du circuit, bobine comprise. Elle ne dépend pas de la capacité.",
+      "difficulte": 2,
+      "tags": [
+        "bande-passante",
+        "largeur"
+      ]
+    },
+    {
+      "id": "PCTD-P13-033",
+      "lecon": "La résonance d'intensité, la bande passante et le facteur de qualité",
+      "type": "formule",
+      "recto": "Pour un dipôle RLC série, quelles sont les expressions du facteur de qualité $Q$ ?",
+      "verso": "$Q = \\dfrac{f_0}{\\Delta f} = \\dfrac{L\\omega_0}{R} = \\dfrac{1}{R\\,C\\,\\omega_0} = \\dfrac{1}{R}\\sqrt{\\dfrac{L}{C}}$, nombre sans unité ($R$ : résistance totale).",
+      "difficulte": 2,
+      "tags": [
+        "facteur-de-qualite"
+      ]
+    },
+    {
+      "id": "PCTD-P13-034",
+      "lecon": "La résonance d'intensité, la bande passante et le facteur de qualité",
+      "type": "definition",
+      "recto": "D'après la valeur du facteur de qualité $Q$, quand dit-on qu'une résonance est aiguë ?",
+      "verso": "Lorsque $Q \\gt 10$ ; elle est floue si $Q \\lt 10$. $Q$ mesure l'acuité de la résonance : $Q$ élevé signifie peu de pertes et forte sélectivité.",
+      "difficulte": 2,
+      "tags": [
+        "acuite",
+        "facteur-de-qualite"
+      ]
+    },
+    {
+      "id": "PCTD-P13-035",
+      "lecon": "La résonance d'intensité, la bande passante et le facteur de qualité",
+      "type": "formule",
+      "recto": "A la résonance d'un dipôle RLC série sous tension efficace $U$, que valent les tensions efficaces $U_L$ et $U_C$ ?",
+      "verso": "$U_L = U_C = Q\\,U$ : elles peuvent dépasser très largement la tension du générateur, c'est le phénomène de surtension. Leurs tensions instantanées, en opposition de phase, ont une somme nulle.",
+      "difficulte": 2,
+      "tags": [
+        "surtension"
+      ]
+    },
+    {
+      "id": "PCTD-P13-036",
+      "lecon": "La résonance d'intensité, la bande passante et le facteur de qualité",
+      "type": "definition",
+      "recto": "Dans un circuit pouvant entrer en résonance, d'après quelle tension doit-on choisir le condensateur ?",
+      "verso": "D'après la tension $Q\\,U$ atteinte à ses bornes à la résonance, jamais d'après la seule tension $U$ du générateur, à cause de la surtension.",
+      "difficulte": 3,
+      "tags": [
+        "surtension",
+        "securite",
+        "piege"
+      ]
+    }
+  ]
+}

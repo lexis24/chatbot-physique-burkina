@@ -1,0 +1,449 @@
+{
+  "matiere": "Physique-Chimie",
+  "partie": "Physique",
+  "niveau": "2nde C",
+  "chapitre": "Physique, Chapitre 7 : Les tensions variables",
+  "source": "pc/2ndc/Chapitre_7_Les_tensions_variables",
+  "nombre_cartes": 38,
+  "cartes": [
+    {
+      "id": "PC2C-P07-001",
+      "lecon": "Les différentes formes de tension",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on une tension continue ?",
+      "verso": "C'est une tension dont la valeur ne change pas au cours du temps : son graphique est une droite horizontale, son signe est constant et sa source a une borne $+$ et une borne $-$ fixes (pile, batterie, panneau solaire).",
+      "difficulte": 1,
+      "tags": [
+        "tension-continue"
+      ]
+    },
+    {
+      "id": "PC2C-P07-002",
+      "lecon": "Les différentes formes de tension",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on une tension variable ?",
+      "verso": "C'est une tension dont la valeur change d'elle-même au cours du temps, sans qu'aucune main ne touche à un réglage (alternateur, groupe électrogène, secteur, GBF, onduleur).",
+      "difficulte": 1,
+      "tags": [
+        "tension-variable"
+      ]
+    },
+    {
+      "id": "PC2C-P07-003",
+      "lecon": "Les différentes formes de tension",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on une tension alternative ?",
+      "verso": "C'est une tension variable qui change de signe : tour à tour positive et négative, sa source n'a aucune borne $+$ permanente.",
+      "difficulte": 1,
+      "tags": [
+        "tension-alternative"
+      ]
+    },
+    {
+      "id": "PC2C-P07-004",
+      "lecon": "Les différentes formes de tension",
+      "type": "definition",
+      "recto": "Qu'est-ce qu'une tension redressée ?",
+      "verso": "C'est une tension variable de signe constant, obtenue à la sortie de diodes : elle garde les bosses arrondies de la sinusoïde, mais toutes du même côté.",
+      "difficulte": 2,
+      "tags": [
+        "tension-redressee"
+      ]
+    },
+    {
+      "id": "PC2C-P07-005",
+      "lecon": "Les différentes formes de tension",
+      "type": "definition",
+      "recto": "Comment reconnaît-on, sur un oscillogramme, une tension en créneaux, en dents de scie et triangulaire ?",
+      "verso": "Créneaux : la tension saute brusquement d'une valeur à l'autre (marches). Dents de scie : montée en ligne droite puis retombée brusque. Triangulaire : montée et descente en lignes droites de même raideur.",
+      "difficulte": 2,
+      "tags": [
+        "formes",
+        "oscillogramme"
+      ]
+    },
+    {
+      "id": "PC2C-P07-006",
+      "lecon": "Les différentes formes de tension",
+      "type": "definition",
+      "recto": "Quelle forme de tension délivrent le secteur et tous les alternateurs ?",
+      "verso": "Une tension alternative sinusoïdale : courbe régulière et arrondie.",
+      "difficulte": 1,
+      "tags": [
+        "sinusoidale",
+        "secteur"
+      ]
+    },
+    {
+      "id": "PC2C-P07-007",
+      "lecon": "Les différentes formes de tension",
+      "type": "definition",
+      "recto": "Pourquoi une tension réglable n'est-elle pas une tension variable ?",
+      "verso": "Une tension réglable ne change que si l'utilisateur agit sur un bouton ou un curseur, et reste constante entre deux manoeuvres ; une tension variable change d'elle-même. La tension d'un potentiomètre est réglable et pourtant continue.",
+      "difficulte": 3,
+      "tags": [
+        "reglable",
+        "piege"
+      ]
+    },
+    {
+      "id": "PC2C-P07-008",
+      "lecon": "Les différentes formes de tension",
+      "type": "formule",
+      "recto": "Pourquoi un multimètre placé en position tension continue affiche-t-il environ zéro sur la prise du secteur ?",
+      "verso": "En position continue, il donne la valeur moyenne de la tension. Celle du secteur, sinusoïdale, a une valeur moyenne nulle : l'affichage nul cache $220~\\mathrm{V}$ efficaces, l'erreur peut être mortelle.",
+      "difficulte": 3,
+      "tags": [
+        "multimetre",
+        "valeur-moyenne",
+        "piege"
+      ]
+    },
+    {
+      "id": "PC2C-P07-009",
+      "lecon": "Les différentes formes de tension",
+      "type": "formule",
+      "recto": "Comment le multimètre permet-il de distinguer une tension continue d'une tension alternative ?",
+      "verso": "Une tension continue donne une valeur en position continue et son signe change quand on échange les fils ; une tension alternative donne une valeur en position alternative et l'échange des fils ne change rien.",
+      "difficulte": 2,
+      "tags": [
+        "multimetre"
+      ]
+    },
+    {
+      "id": "PC2C-P07-010",
+      "lecon": "L'oscilloscope, un voltmètre qui dessine",
+      "type": "definition",
+      "recto": "A quoi sert un oscilloscope ?",
+      "verso": "Il trace la courbe d'une tension en fonction du temps, appelée oscillogramme. Là où un voltmètre donne un nombre, il donne la forme de la tension et sa période.",
+      "difficulte": 1,
+      "tags": [
+        "oscilloscope",
+        "oscillogramme"
+      ]
+    },
+    {
+      "id": "PC2C-P07-011",
+      "lecon": "L'oscilloscope, un voltmètre qui dessine",
+      "type": "definition",
+      "recto": "Quels sont les éléments qui composent un oscilloscope ?",
+      "verso": "Un canon à électrons qui produit un fin faisceau, deux paires de plaques de déviation (verticale sous l'effet de la tension étudiée, horizontale sous l'effet du balayage) et un écran fluorescent où l'impact forme le spot.",
+      "difficulte": 2,
+      "tags": [
+        "oscilloscope",
+        "constitution"
+      ]
+    },
+    {
+      "id": "PC2C-P07-012",
+      "lecon": "L'oscilloscope, un voltmètre qui dessine",
+      "type": "formule",
+      "recto": "A un oscilloscope, l'entrée Y est reliée au point A et la masse au point B : quelle tension observe-t-on ?",
+      "verso": "On observe $U_{AB}$ : le point relié à la voie Y donne le premier indice. Le spot monte quand l'entrée Y est au potentiel le plus élevé.",
+      "difficulte": 2,
+      "tags": [
+        "oscilloscope",
+        "branchement"
+      ]
+    },
+    {
+      "id": "PC2C-P07-013",
+      "lecon": "L'oscilloscope, un voltmètre qui dessine",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on la ligne de repos d'un oscilloscope ?",
+      "verso": "C'est la droite horizontale obtenue quand l'entrée Y est reliée à la masse : c'est la ligne des $0~\\mathrm{V}$, que l'on place sur l'axe central avant toute mesure.",
+      "difficulte": 1,
+      "tags": [
+        "ligne-de-repos"
+      ]
+    },
+    {
+      "id": "PC2C-P07-014",
+      "lecon": "L'oscilloscope, un voltmètre qui dessine",
+      "type": "formule",
+      "recto": "A l'oscilloscope, quelle relation lie la tension $U$, la sensibilité verticale $k$ et le nombre $y$ de divisions verticales ?",
+      "verso": "$U = k \\times y$, avec $k$ en volts par division ($\\mathrm{V/div}$) et $y$ compté depuis la ligne de repos, positivement au-dessus et négativement au-dessous.",
+      "difficulte": 1,
+      "tags": [
+        "sensibilite-verticale"
+      ]
+    },
+    {
+      "id": "PC2C-P07-015",
+      "lecon": "L'oscilloscope, un voltmètre qui dessine",
+      "type": "formule",
+      "recto": "A l'oscilloscope, quelle relation lie une durée $\\Delta t$, la base de temps $b$ et le nombre $x$ de divisions horizontales ?",
+      "verso": "$\\Delta t = b \\times x$, avec $b$ en millisecondes par division ($\\mathrm{ms/div}$).",
+      "difficulte": 2,
+      "tags": [
+        "base-de-temps"
+      ]
+    },
+    {
+      "id": "PC2C-P07-016",
+      "lecon": "L'oscilloscope, un voltmètre qui dessine",
+      "type": "definition",
+      "recto": "Que voit-on sur l'écran d'un oscilloscope lorsque le balayage est supprimé et qu'une tension alternative est appliquée ?",
+      "verso": "Le spot ne se déplace plus horizontalement : on ne voit qu'un segment vertical, dont la hauteur est la valeur crête à crête.",
+      "difficulte": 2,
+      "tags": [
+        "balayage"
+      ]
+    },
+    {
+      "id": "PC2C-P07-017",
+      "lecon": "L'oscilloscope, un voltmètre qui dessine",
+      "type": "definition",
+      "recto": "Pourquoi une courbe plus haute après avoir tourné le bouton de sensibilité ne signifie-t-elle pas que la tension a augmenté ?",
+      "verso": "Les boutons ne changent que l'échelle du dessin. Comme $U = k \\times y$, si $k$ diminue, $y$ augmente dans le même rapport et la tension reste la même.",
+      "difficulte": 3,
+      "tags": [
+        "sensibilite-verticale",
+        "piege"
+      ]
+    },
+    {
+      "id": "PC2C-P07-018",
+      "lecon": "L'oscilloscope, un voltmètre qui dessine",
+      "type": "formule",
+      "recto": "Quelle règle de sécurité s'impose pour observer la tension du secteur avec un oscilloscope de lycée ?",
+      "verso": "On ne branche jamais l'entrée Y directement sur la prise : on passe par un transformateur d'isolement ou une sonde atténuatrice. La masse étant reliée à la terre, la poser sur un point du secteur provoque un court-circuit franc.",
+      "difficulte": 2,
+      "tags": [
+        "securite",
+        "oscilloscope"
+      ]
+    },
+    {
+      "id": "PC2C-P07-019",
+      "lecon": "Les tensions périodiques : période, fréquence, valeur maximale",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on une tension périodique ?",
+      "verso": "C'est une tension qui reprend la même valeur à intervalles de temps égaux, en repassant par les mêmes états : son oscillogramme est un motif qui se répète identique à lui-même.",
+      "difficulte": 1,
+      "tags": [
+        "tension-periodique"
+      ]
+    },
+    {
+      "id": "PC2C-P07-020",
+      "lecon": "Les tensions périodiques : période, fréquence, valeur maximale",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on la période $T$ d'une tension périodique ?",
+      "verso": "C'est la durée d'un motif complet, la plus petite durée au bout de laquelle la tension reprend la même valeur en variant de la même façon. Son unité légale est la seconde ($\\mathrm{s}$).",
+      "difficulte": 1,
+      "tags": [
+        "periode"
+      ]
+    },
+    {
+      "id": "PC2C-P07-021",
+      "lecon": "Les tensions périodiques : période, fréquence, valeur maximale",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on la fréquence $f$ d'une tension périodique ?",
+      "verso": "C'est le nombre de périodes par seconde. Son unité légale est le hertz ($\\mathrm{Hz}$) ; $1~\\mathrm{kHz} = 1\\,000~\\mathrm{Hz}$ et $1~\\mathrm{MHz} = 1\\,000\\,000~\\mathrm{Hz}$.",
+      "difficulte": 1,
+      "tags": [
+        "frequence"
+      ]
+    },
+    {
+      "id": "PC2C-P07-022",
+      "lecon": "Les tensions périodiques : période, fréquence, valeur maximale",
+      "type": "formule",
+      "recto": "Quelle relation lie la fréquence $f$ et la période $T$ d'une tension périodique ?",
+      "verso": "$f = \\dfrac{1}{T}$ et $T = \\dfrac{1}{f}$, avec $T$ obligatoirement en secondes et $f$ en hertz.",
+      "difficulte": 1,
+      "tags": [
+        "frequence",
+        "periode"
+      ]
+    },
+    {
+      "id": "PC2C-P07-023",
+      "lecon": "Les tensions périodiques : période, fréquence, valeur maximale",
+      "type": "definition",
+      "recto": "Sur un oscillogramme, quelle différence y a-t-il entre la valeur maximale $U_{max}$ et la valeur crête à crête $U_{cc}$ ?",
+      "verso": "$U_{max}$ (amplitude) est la hauteur du sommet au-dessus de la ligne de repos ; $U_{cc}$ est la hauteur totale du creux au sommet.",
+      "difficulte": 2,
+      "tags": [
+        "valeur-maximale",
+        "crete-a-crete"
+      ]
+    },
+    {
+      "id": "PC2C-P07-024",
+      "lecon": "Les tensions périodiques : période, fréquence, valeur maximale",
+      "type": "formule",
+      "recto": "Pour une tension symétrique par rapport à la ligne de repos, quelle relation lie $U_{cc}$ et $U_{max}$ ?",
+      "verso": "$U_{cc} = 2\\,U_{max}$, soit $U_{max} = \\dfrac{U_{cc}}{2}$. Si la tension n'est pas symétrique : $U_{cc} = U_{max} - U_{min}$, $U_{min}$ étant pris avec son signe.",
+      "difficulte": 2,
+      "tags": [
+        "crete-a-crete"
+      ]
+    },
+    {
+      "id": "PC2C-P07-025",
+      "lecon": "Les tensions périodiques : période, fréquence, valeur maximale",
+      "type": "formule",
+      "recto": "Comment obtient-on $U_{cc}$ et $T$ à partir des divisions lues sur un oscillogramme ?",
+      "verso": "$U_{cc} = n_v \\times k$, où $n_v$ est le nombre de divisions verticales du creux au sommet ; $T = n_h \\times b$, où $n_h$ est le nombre de divisions horizontales d'une période.",
+      "difficulte": 2,
+      "tags": [
+        "lecture-oscillogramme"
+      ]
+    },
+    {
+      "id": "PC2C-P07-026",
+      "lecon": "Les tensions périodiques : période, fréquence, valeur maximale",
+      "type": "definition",
+      "recto": "Pourquoi ne faut-il pas confondre une alternance et une période ?",
+      "verso": "Une alternance est une portion où la tension garde le même signe ; une période en contient deux. Compter une seule bosse donne une période deux fois trop petite et une fréquence deux fois trop grande.",
+      "difficulte": 3,
+      "tags": [
+        "alternance",
+        "piege"
+      ]
+    },
+    {
+      "id": "PC2C-P07-027",
+      "lecon": "Les tensions périodiques : période, fréquence, valeur maximale",
+      "type": "definition",
+      "recto": "Quelle erreur commet-on en calculant $f = \\dfrac{1}{20} = 0{,}05~\\mathrm{Hz}$ pour une période $T = 20~\\mathrm{ms}$ ?",
+      "verso": "La période n'a pas été convertie en secondes : $T = 0{,}020~\\mathrm{s}$, donc $f = \\dfrac{1}{0{,}020} = 50~\\mathrm{Hz}$.",
+      "difficulte": 2,
+      "tags": [
+        "conversion",
+        "piege"
+      ]
+    },
+    {
+      "id": "PC2C-P07-028",
+      "lecon": "Les tensions périodiques : période, fréquence, valeur maximale",
+      "type": "definition",
+      "recto": "Quelles autres notations rencontre-t-on pour la fréquence, la valeur maximale et la sensibilité verticale ?",
+      "verso": "$N$ pour la fréquence ; $U_m$ ou « tension de crête » pour la valeur maximale ; $S_v$ ou $k_V$ pour la sensibilité verticale ($S_h$ ou « vitesse de balayage » pour la base de temps).",
+      "difficulte": 2,
+      "tags": [
+        "notations"
+      ]
+    },
+    {
+      "id": "PC2C-P07-029",
+      "lecon": "La tension sinusoïdale, la valeur efficace et la production de l'électricité",
+      "type": "definition",
+      "recto": "Que vaut la valeur moyenne d'une tension alternative sinusoïdale ?",
+      "verso": "Elle est nulle : chaque période contient une alternance positive et une alternance négative de même durée et de même hauteur.",
+      "difficulte": 2,
+      "tags": [
+        "sinusoidale",
+        "valeur-moyenne"
+      ]
+    },
+    {
+      "id": "PC2C-P07-030",
+      "lecon": "La tension sinusoïdale, la valeur efficace et la production de l'électricité",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on la valeur efficace $U_{eff}$ d'une tension alternative ?",
+      "verso": "C'est la valeur de la tension continue qui produirait le même effet thermique dans un même conducteur. C'est elle qu'affiche un voltmètre en position alternative et qu'indiquent plaques et prises.",
+      "difficulte": 2,
+      "tags": [
+        "valeur-efficace"
+      ]
+    },
+    {
+      "id": "PC2C-P07-031",
+      "lecon": "La tension sinusoïdale, la valeur efficace et la production de l'électricité",
+      "type": "formule",
+      "recto": "Pour une tension sinusoïdale, quelle relation lie la valeur maximale $U_{max}$ et la valeur efficace $U_{eff}$ ?",
+      "verso": "$U_{max} = U_{eff}\\sqrt{2}$ et $U_{eff} = \\dfrac{U_{max}}{\\sqrt{2}}$, avec $\\sqrt{2} \\approx 1{,}41$. Valable seulement pour une tension sinusoïdale.",
+      "difficulte": 1,
+      "tags": [
+        "valeur-efficace",
+        "valeur-maximale"
+      ]
+    },
+    {
+      "id": "PC2C-P07-032",
+      "lecon": "La tension sinusoïdale, la valeur efficace et la production de l'électricité",
+      "type": "formule",
+      "recto": "Pour un conducteur ohmique de résistance $R$ en régime sinusoïdal, quelles relations lient tensions et intensités efficaces et maximales ?",
+      "verso": "La loi d'Ohm s'applique à chaque instant, donc $U_{eff} = R\\,I_{eff}$ et $U_{max} = R\\,I_{max}$, avec $I_{max} = I_{eff}\\sqrt{2}$.",
+      "difficulte": 2,
+      "tags": [
+        "intensite-efficace",
+        "loi-d-ohm"
+      ]
+    },
+    {
+      "id": "PC2C-P07-033",
+      "lecon": "La tension sinusoïdale, la valeur efficace et la production de l'électricité",
+      "type": "definition",
+      "recto": "Quelles sont les caractéristiques de la tension du secteur au Burkina Faso ?",
+      "verso": "Alternative sinusoïdale, $U_{eff} = 220~\\mathrm{V}$, $f = 50~\\mathrm{Hz}$, d'où $T = 20~\\mathrm{ms}$, $U_{max} \\approx 311~\\mathrm{V}$ et $U_{cc} \\approx 622~\\mathrm{V}$.",
+      "difficulte": 1,
+      "tags": [
+        "secteur"
+      ]
+    },
+    {
+      "id": "PC2C-P07-034",
+      "lecon": "La tension sinusoïdale, la valeur efficace et la production de l'électricité",
+      "type": "definition",
+      "recto": "Pourquoi le secteur peut-il afficher $220~\\mathrm{V}$ au voltmètre et $311~\\mathrm{V}$ à l'oscilloscope sans qu'aucun appareil ne se trompe ?",
+      "verso": "Le voltmètre donne la valeur efficace, l'oscilloscope la valeur maximale, et $311 \\approx 220\\sqrt{2}$. Un composant branché sur le secteur doit donc supporter $311~\\mathrm{V}$.",
+      "difficulte": 3,
+      "tags": [
+        "valeur-efficace",
+        "piege"
+      ]
+    },
+    {
+      "id": "PC2C-P07-035",
+      "lecon": "La tension sinusoïdale, la valeur efficace et la production de l'électricité",
+      "type": "definition",
+      "recto": "Pour quelles formes de tension la relation $U_{max} = U_{eff}\\sqrt{2}$ ne s'applique-t-elle pas ?",
+      "verso": "Pour toute tension non sinusoïdale : créneaux, dents de scie, tension redressée. Le facteur $\\sqrt{2}$ y est faux.",
+      "difficulte": 3,
+      "tags": [
+        "valeur-efficace",
+        "condition"
+      ]
+    },
+    {
+      "id": "PC2C-P07-036",
+      "lecon": "La tension sinusoïdale, la valeur efficace et la production de l'électricité",
+      "type": "definition",
+      "recto": "Pourquoi le secteur et les groupes électrogènes délivrent-ils une tension alternative ?",
+      "verso": "Parce que produire une tension alternative est plus simple : il suffit de faire tourner une bobine devant un aimant. La tension continue s'obtient ensuite par redressement.",
+      "difficulte": 2,
+      "tags": [
+        "production",
+        "alternateur"
+      ]
+    },
+    {
+      "id": "PC2C-P07-037",
+      "lecon": "La tension sinusoïdale, la valeur efficace et la production de l'électricité",
+      "type": "definition",
+      "recto": "Quelles conversions réalisent un chargeur de téléphone et un onduleur de kit solaire ?",
+      "verso": "Le chargeur reçoit $220~\\mathrm{V}$ alternatif à $50~\\mathrm{Hz}$, l'abaisse, la redresse, la lisse et délivre $5~\\mathrm{V}$ continu. L'onduleur fait l'inverse : du continu de la batterie à $220~\\mathrm{V}$ alternatif à $50~\\mathrm{Hz}$ (souvent en créneaux).",
+      "difficulte": 2,
+      "tags": [
+        "chargeur",
+        "onduleur"
+      ]
+    },
+    {
+      "id": "PC2C-P07-038",
+      "lecon": "La tension sinusoïdale, la valeur efficace et la production de l'électricité",
+      "type": "definition",
+      "recto": "Pourquoi une tension redressée n'est-elle pas une tension continue ?",
+      "verso": "Elle ne change pas de signe, mais sa valeur varie au cours du temps. Elle ne devient continue qu'après lissage.",
+      "difficulte": 2,
+      "tags": [
+        "tension-redressee"
+      ]
+    }
+  ]
+}

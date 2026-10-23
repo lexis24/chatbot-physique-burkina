@@ -1,0 +1,383 @@
+{
+  "matiere": "Physique-Chimie",
+  "partie": "Physique",
+  "niveau": "3ème",
+  "chapitre": "Physique, Chapitre 11 : Le travail et la puissance mécaniques",
+  "source": "pc/3eme/Chapitre_11_Le_travail_et_la_puissance_mecaniques",
+  "nombre_cartes": 32,
+  "cartes": [
+    {
+      "id": "PC3E-P11-001",
+      "lecon": "Le travail d'une force",
+      "type": "definition",
+      "recto": "Comment définit-on le travail d'une force constante $\\vec{F}$ dont le point d'application se déplace d'une longueur $L$ sur sa droite d'action ?",
+      "verso": "C'est le produit de l'intensité de la force par la longueur du déplacement : $W = F \\times L$.",
+      "difficulte": 1,
+      "tags": [
+        "travail",
+        "definition"
+      ]
+    },
+    {
+      "id": "PC3E-P11-002",
+      "lecon": "Le travail d'une force",
+      "type": "formule",
+      "recto": "Dans la relation $W = F \\times L$ du travail d'une force, quelles sont les unités de $W$, $F$ et $L$ ?",
+      "verso": "$W$ en joules ($\\mathrm{J}$), $F$ en newtons ($\\mathrm{N}$), $L$ en mètres ($\\mathrm{m}$).",
+      "difficulte": 1,
+      "tags": [
+        "travail",
+        "unites"
+      ]
+    },
+    {
+      "id": "PC3E-P11-003",
+      "lecon": "Le travail d'une force",
+      "type": "definition",
+      "recto": "Qu'est-ce qu'un joule ?",
+      "verso": "C'est le travail d'une force de $1~\\mathrm{N}$ dont le point d'application se déplace de $1~\\mathrm{m}$ dans la direction de la force : $1~\\mathrm{J} = 1~\\mathrm{N} \\times 1~\\mathrm{m}$.",
+      "difficulte": 2,
+      "tags": [
+        "joule",
+        "unites"
+      ]
+    },
+    {
+      "id": "PC3E-P11-004",
+      "lecon": "Le travail d'une force",
+      "type": "formule",
+      "recto": "Dans quels deux cas une force ne travaille-t-elle pas ?",
+      "verso": "Quand son point d'application ne se déplace pas, et quand le déplacement est perpendiculaire à la force. Son travail est alors nul : $W = 0~\\mathrm{J}$.",
+      "difficulte": 2,
+      "tags": [
+        "travail-nul"
+      ]
+    },
+    {
+      "id": "PC3E-P11-005",
+      "lecon": "Le travail d'une force",
+      "type": "definition",
+      "recto": "Pourquoi le poids d'un cycliste qui roule sur une piste plate ne travaille-t-il pas ?",
+      "verso": "Le poids est vertical et le déplacement horizontal : ils sont perpendiculaires, donc le travail du poids est nul.",
+      "difficulte": 2,
+      "tags": [
+        "travail-nul",
+        "poids"
+      ]
+    },
+    {
+      "id": "PC3E-P11-006",
+      "lecon": "Le travail d'une force",
+      "type": "definition",
+      "recto": "Pour la relation $W = F \\times L$, à quelles conditions sur la force et le déplacement est-elle valable ?",
+      "verso": "La force doit être constante et son point d'application doit se déplacer sur sa droite d'action. Une force oblique travaille aussi, mais son travail ne se calcule pas ainsi en 3ème.",
+      "difficulte": 2,
+      "tags": [
+        "travail",
+        "condition"
+      ]
+    },
+    {
+      "id": "PC3E-P11-007",
+      "lecon": "Le travail d'une force",
+      "type": "formule",
+      "recto": "Combien de joules valent $1~\\mathrm{kJ}$ et $1~\\mathrm{MJ}$ ?",
+      "verso": "$1~\\mathrm{kJ} = 1\\,000~\\mathrm{J}$ et $1~\\mathrm{MJ} = 1\\,000\\,000~\\mathrm{J}$.",
+      "difficulte": 1,
+      "tags": [
+        "multiples",
+        "joule"
+      ]
+    },
+    {
+      "id": "PC3E-P11-008",
+      "lecon": "Le travail d'une force",
+      "type": "definition",
+      "recto": "Avec une poulie mobile, frottements négligés, que deviennent la force à exercer et le travail à fournir ?",
+      "verso": "La force est deux fois plus petite, mais il faut tirer le fil deux fois plus loin : le travail ne change pas. Une machine simple diminue la force, pas le travail.",
+      "difficulte": 2,
+      "tags": [
+        "machine-simple",
+        "poulie"
+      ]
+    },
+    {
+      "id": "PC3E-P11-009",
+      "lecon": "Le travail d'une force",
+      "type": "definition",
+      "recto": "Pourquoi un homme qui pousse de toutes ses forces un mur immobile ne fournit-il aucun travail ?",
+      "verso": "Le point d'application de la force ne se déplace pas, donc $W = 0~\\mathrm{J}$. Se fatiguer n'est pas travailler au sens physique.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "travail-nul"
+      ]
+    },
+    {
+      "id": "PC3E-P11-010",
+      "lecon": "Le travail moteur et le travail résistant",
+      "type": "definition",
+      "recto": "Quand dit-on qu'une force effectue un travail moteur ?",
+      "verso": "Quand elle est dirigée dans le même sens que le déplacement de son point d'application : elle favorise le mouvement.",
+      "difficulte": 1,
+      "tags": [
+        "travail-moteur"
+      ]
+    },
+    {
+      "id": "PC3E-P11-011",
+      "lecon": "Le travail moteur et le travail résistant",
+      "type": "definition",
+      "recto": "Quand dit-on qu'une force effectue un travail résistant ?",
+      "verso": "Quand elle est dirigée en sens contraire du déplacement de son point d'application : elle s'oppose au mouvement.",
+      "difficulte": 1,
+      "tags": [
+        "travail-resistant"
+      ]
+    },
+    {
+      "id": "PC3E-P11-012",
+      "lecon": "Le travail moteur et le travail résistant",
+      "type": "formule",
+      "recto": "Quelle relation donne le travail du poids d'un corps de masse $m$ qui se déplace verticalement d'une hauteur $h$ ?",
+      "verso": "$W = P \\times h = m \\times g \\times h$, avec $m$ en kg, $g$ en N/kg, $h$ en m et $W$ en J ; $h$ est la différence de hauteur.",
+      "difficulte": 2,
+      "tags": [
+        "travail-poids"
+      ]
+    },
+    {
+      "id": "PC3E-P11-013",
+      "lecon": "Le travail moteur et le travail résistant",
+      "type": "definition",
+      "recto": "Pourquoi est-il faux de dire que le travail du poids est toujours résistant ?",
+      "verso": "Le travail du poids est résistant à la montée, moteur à la descente et nul quand le déplacement est horizontal.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "travail-poids"
+      ]
+    },
+    {
+      "id": "PC3E-P11-014",
+      "lecon": "Le travail moteur et le travail résistant",
+      "type": "definition",
+      "recto": "Quelle est la nature du travail d'une force de frottement ?",
+      "verso": "Il est toujours résistant, car le frottement est toujours dirigé en sens contraire du mouvement. Il n'est pas inutile pour autant : il permet de freiner.",
+      "difficulte": 2,
+      "tags": [
+        "frottement",
+        "travail-resistant"
+      ]
+    },
+    {
+      "id": "PC3E-P11-015",
+      "lecon": "Le travail moteur et le travail résistant",
+      "type": "definition",
+      "recto": "Pour une force oblique, comment savoir si son travail est moteur ou résistant ?",
+      "verso": "Il est moteur si la force penche du côté où va le corps, résistant si elle penche du côté d'où il vient.",
+      "difficulte": 2,
+      "tags": [
+        "force-oblique"
+      ]
+    },
+    {
+      "id": "PC3E-P11-016",
+      "lecon": "La puissance mécanique",
+      "type": "definition",
+      "recto": "Comment définit-on la puissance mécanique d'une force ou d'une machine ?",
+      "verso": "C'est le quotient du travail fourni par la durée mise pour le fournir : $P = \\dfrac{W}{t}$.",
+      "difficulte": 1,
+      "tags": [
+        "puissance",
+        "definition"
+      ]
+    },
+    {
+      "id": "PC3E-P11-017",
+      "lecon": "La puissance mécanique",
+      "type": "formule",
+      "recto": "Dans la relation $P = \\dfrac{W}{t}$, quelles sont les unités de $P$, $W$ et $t$ ?",
+      "verso": "$P$ en watts ($\\mathrm{W}$), $W$ en joules ($\\mathrm{J}$), $t$ en secondes ($\\mathrm{s}$).",
+      "difficulte": 1,
+      "tags": [
+        "puissance",
+        "unites"
+      ]
+    },
+    {
+      "id": "PC3E-P11-018",
+      "lecon": "La puissance mécanique",
+      "type": "definition",
+      "recto": "Qu'est-ce qu'un watt en mécanique ?",
+      "verso": "C'est la puissance d'une machine qui fournit un travail de $1~\\mathrm{J}$ en $1~\\mathrm{s}$ : $1~\\mathrm{W} = 1~\\mathrm{J/s}$.",
+      "difficulte": 2,
+      "tags": [
+        "watt",
+        "unites"
+      ]
+    },
+    {
+      "id": "PC3E-P11-019",
+      "lecon": "La puissance mécanique",
+      "type": "formule",
+      "recto": "Quelle relation lie la puissance $P$ d'une force, son intensité $F$ et la vitesse $v$, et à quelle condition ?",
+      "verso": "$P = F \\times v$, avec $F$ en N, $v$ en m/s et $P$ en W ; valable quand la force et la vitesse ont la même direction.",
+      "difficulte": 2,
+      "tags": [
+        "puissance",
+        "vitesse"
+      ]
+    },
+    {
+      "id": "PC3E-P11-020",
+      "lecon": "La puissance mécanique",
+      "type": "formule",
+      "recto": "Comment passe-t-on d'une vitesse en km/h à une vitesse en m/s ?",
+      "verso": "On divise la valeur en km/h par $3{,}6$.",
+      "difficulte": 1,
+      "tags": [
+        "conversion",
+        "vitesse"
+      ]
+    },
+    {
+      "id": "PC3E-P11-021",
+      "lecon": "La puissance mécanique",
+      "type": "definition",
+      "recto": "Pourquoi le conducteur d'un tricycle rétrograde-t-il dans une côte ?",
+      "verso": "A puissance donnée, $F = \\dfrac{P}{v}$ : pour obtenir la force motrice plus grande qu'exige la côte, il doit réduire la vitesse.",
+      "difficulte": 3,
+      "tags": [
+        "puissance",
+        "cote"
+      ]
+    },
+    {
+      "id": "PC3E-P11-022",
+      "lecon": "La puissance mécanique",
+      "type": "definition",
+      "recto": "Quel est l'ordre de grandeur de la puissance d'un homme au travail et d'un moteur de voiture ?",
+      "verso": "Environ $100~\\mathrm{W}$ pour un homme au travail ; $50$ à $100~\\mathrm{kW}$ pour un moteur de voiture.",
+      "difficulte": 2,
+      "tags": [
+        "ordre-de-grandeur"
+      ]
+    },
+    {
+      "id": "PC3E-P11-023",
+      "lecon": "La puissance mécanique",
+      "type": "definition",
+      "recto": "Quelle différence y a-t-il entre le travail et la puissance d'une machine ?",
+      "verso": "Le travail, en joules, dit ce qui a été fait ; la puissance, en watts, dit à quel rythme. On écrit $W = 500~\\mathrm{J}$ pour un travail, $P = 500~\\mathrm{W}$ pour une puissance.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "travail-puissance"
+      ]
+    },
+    {
+      "id": "PC3E-P11-024",
+      "lecon": "La puissance mécanique",
+      "type": "definition",
+      "recto": "Pourquoi l'écriture « $5~\\mathrm{kW/h}$ » pour la puissance d'un moteur est-elle fausse ?",
+      "verso": "Le kilowatt est déjà un rythme (des joules par seconde) : on écrit $5~\\mathrm{kW}$.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "unites"
+      ]
+    },
+    {
+      "id": "PC3E-P11-025",
+      "lecon": "Le travail et la puissance dans le cas d'une rotation",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on un couple de forces ?",
+      "verso": "Deux forces égales et de sens contraires, appliquées de part et d'autre d'un axe : elles font tourner le corps sans le déplacer.",
+      "difficulte": 1,
+      "tags": [
+        "couple"
+      ]
+    },
+    {
+      "id": "PC3E-P11-026",
+      "lecon": "Le travail et la puissance dans le cas d'une rotation",
+      "type": "formule",
+      "recto": "Pour une manivelle de longueur $L$ actionnée par une force $F$ perpendiculaire, quelle relation donne le moment $M$ du couple ?",
+      "verso": "$M = F \\times L$, avec $F$ en N, $L$ en m et $M$ en newtons-mètres ($\\mathrm{N \\cdot m}$).",
+      "difficulte": 2,
+      "tags": [
+        "moment",
+        "manivelle"
+      ]
+    },
+    {
+      "id": "PC3E-P11-027",
+      "lecon": "Le travail et la puissance dans le cas d'une rotation",
+      "type": "formule",
+      "recto": "Quelle relation donne le travail $W$ fourni par un couple de moment $M$ pendant $n$ tours ?",
+      "verso": "$W = 2\\pi \\times n \\times M$, avec $M$ en $\\mathrm{N \\cdot m}$, $n$ le nombre de tours (sans unité) et $W$ en J.",
+      "difficulte": 2,
+      "tags": [
+        "travail-rotation"
+      ]
+    },
+    {
+      "id": "PC3E-P11-028",
+      "lecon": "Le travail et la puissance dans le cas d'une rotation",
+      "type": "definition",
+      "recto": "Qu'appelle-t-on la fréquence de rotation $N$ d'une machine tournante ?",
+      "verso": "C'est le nombre de tours effectués en une seconde, en tours par seconde ($\\mathrm{tr/s}$). A partir de tours par minute, on divise par 60.",
+      "difficulte": 2,
+      "tags": [
+        "frequence-rotation"
+      ]
+    },
+    {
+      "id": "PC3E-P11-029",
+      "lecon": "Le travail et la puissance dans le cas d'une rotation",
+      "type": "formule",
+      "recto": "Quelle relation donne la puissance $P$ d'un couple de moment $M$ tournant à la fréquence $N$ ?",
+      "verso": "$P = 2\\pi \\times N \\times M$, avec $N$ en tr/s, $M$ en $\\mathrm{N \\cdot m}$ et $P$ en W.",
+      "difficulte": 2,
+      "tags": [
+        "puissance-rotation"
+      ]
+    },
+    {
+      "id": "PC3E-P11-030",
+      "lecon": "Le travail et la puissance dans le cas d'une rotation",
+      "type": "definition",
+      "recto": "En rotation, quel rôle jouent respectivement le nombre de tours $n$ et la fréquence de rotation $N$ ?",
+      "verso": "$n$, le nombre de tours, sert au calcul du travail ; $N$, en tours par seconde, sert au calcul de la puissance. Pour une durée $t$ : $n = N \\times t$.",
+      "difficulte": 3,
+      "tags": [
+        "piege",
+        "frequence-rotation"
+      ]
+    },
+    {
+      "id": "PC3E-P11-031",
+      "lecon": "Le travail et la puissance dans le cas d'une rotation",
+      "type": "formule",
+      "recto": "Pour un treuil dont le tambour a un rayon $r$, quelle relation donne la force du câble à partir du moment $M$ appliqué ?",
+      "verso": "$F = \\dfrac{M}{r}$, avec $M$ en $\\mathrm{N \\cdot m}$, $r$ en m et $F$ en N. Attention : le rayon est la moitié du diamètre.",
+      "difficulte": 2,
+      "tags": [
+        "treuil",
+        "rayon"
+      ]
+    },
+    {
+      "id": "PC3E-P11-032",
+      "lecon": "Le travail et la puissance dans le cas d'une rotation",
+      "type": "formule",
+      "recto": "Quelle longueur de câble un tambour de rayon $r$ enroule-t-il en un tour ?",
+      "verso": "Une longueur égale au périmètre du tambour : $2\\pi r$.",
+      "difficulte": 2,
+      "tags": [
+        "treuil"
+      ]
+    }
+  ]
+}

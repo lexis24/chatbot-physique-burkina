@@ -1,6 +1,6 @@
 import React from "react"
 import { motion } from "framer-motion"
-import { Sigma, Moon, Sun, LogIn, LogOut, UserCircle2 } from "lucide-react"
+import { Atom, Moon, Sun, LogIn, LogOut, UserCircle2 } from "lucide-react"
 import Button from "./ui/Button"
 
 export default function Header({ theme, onToggleTheme, user, onLoginClick, onLogout, onEditProfile, onNewConversation }) {
@@ -23,14 +23,14 @@ export default function Header({ theme, onToggleTheme, user, onLoginClick, onLog
           <span className="relative flex h-8 w-8 items-center justify-center rounded-xl md:h-10 md:w-10">
             <span className="absolute inset-0 rounded-xl bg-primary/50 motion-safe:animate-pulse-ring" />
             <span className="relative flex h-8 w-8 items-center justify-center rounded-xl bg-gradient-to-br from-primary via-secondary to-accent text-white shadow-glow md:h-10 md:w-10">
-              <Sigma size={16} className="md:hidden" />
-              <Sigma size={20} className="hidden md:block" />
+              <Atom size={16} className="md:hidden" />
+              <Atom size={20} className="hidden md:block" />
             </span>
           </span>
         </button>
         <div className="min-w-0">
           <h1 className="font-heading text-base font-extrabold leading-tight md:text-lg">
-            Prof <span className="text-gradient motion-safe:animate-shimmer">Amira</span>
+            Prof <span className="text-gradient motion-safe:animate-shimmer">Aïcha</span>
           </h1>
           {/* Masqué sous 768px (voir RAPPORT_MOBILE.md §2) : la hauteur maximale de 56px demandée
               pour l'en-tête mobile prime ici ; l'idée reste présente dans le pied de page. */}
@@ -80,7 +80,7 @@ export default function Header({ theme, onToggleTheme, user, onLoginClick, onLog
           title="Changer de thème"
           className="min-h-[44px] min-w-[44px] md:min-h-0 md:min-w-0"
         >
-          {theme === "chatmaths-dark" ? <Sun size={18} /> : <Moon size={18} />}
+          {theme === "chatphysique-dark" ? <Sun size={18} /> : <Moon size={18} />}
         </Button>
       </div>
     </motion.header>
