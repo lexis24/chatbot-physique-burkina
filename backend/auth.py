@@ -179,7 +179,10 @@ _PROFILE_REQUIRED_FIELDS = ("class_code", "gender", "birth_date", "is_candidat_l
 
 
 def is_profile_complete(user: dict) -> bool:
-    return all(user.get(field) is not None for field in _PROFILE_REQUIRED_FIELDS)
+    # Comptes partagés : un compte sans classe choisit librement son niveau dans l'application
+    # (voir main._account_class) au lieu d'être bloqué jusqu'à ce qu'il en renseigne une.
+    fields = (f for f in _PROFILE_REQUIRED_FIELDS if not (config.SHARED_ACCOUNTS and f == "class_code"))
+    return all(user.get(field) is not None for field in fields)
 
 
 def require_complete_profile(user=Depends(get_current_user)):

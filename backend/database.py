@@ -28,7 +28,12 @@ from config import config
 
 logger = logging.getLogger(__name__)
 
-SCHEMA = "app"
+# Comptes élèves (users, schools) : toujours le schéma "app". Avec ACCOUNTS_DATABASE_URL (comptes
+# partagés entre maths, physique et chimie), ce schéma est celui de la base des maths et l'activité
+# de l'élève dans cette matière va dans son propre schéma (ACTIVITY_SCHEMA, ex. app_chimie) de la
+# même base ; l'index vectoriel du cours reste dans la base de la matière (DATABASE_URL, rag_system).
+ACCOUNTS = "app"
+SCHEMA = config.ACTIVITY_SCHEMA if config.SHARED_ACCOUNTS else "app"
 
 # Alphabet sans caractères ambigus (ni 0/O, ni 1/I/L) : le code public est
 # destiné à être lu à voix haute ou recopié à la main par un élève.
@@ -52,7 +57,7 @@ def _dsn() -> str:
     Utiliser de préférence l'endpoint *pooler* de Neon (…-pooler.…neon.tech).
     sslmode=require est exigé par Neon.
     """
-    dsn = config.DATABASE_URL
+    dsn = config.ACCOUNTS_DATABASE_URL or config.DATABASE_URL
     if not dsn:
         raise RuntimeError("DATABASE_URL absent : impossible d'initialiser la base.")
     if "sslmode=" not in dsn:
@@ -132,11 +137,13 @@ def _now() -> datetime:
 # Schéma
 # --------------------------------------------------------------------------
 
-_DDL = f"""
-CREATE SCHEMA IF NOT EXISTS {SCHEMA};
+# Comptes partagés (app.users, app.schools) : créés ici seulement quand l'application a sa propre
+# base de comptes. Avec ACCOUNTS_DATABASE_URL, ils appartiennent à la base des maths, qui les crée.
+_ACCOUNTS_DDL = f"""
+CREATE SCHEMA IF NOT EXISTS {ACCOUNTS};
 CREATE EXTENSION IF NOT EXISTS pgcrypto;
 
-CREATE TABLE IF NOT EXISTS {SCHEMA}.schools (
+CREATE TABLE IF NOT EXISTS {ACCOUNTS}.schools (
     id              uuid PRIMARY KEY DEFAULT gen_random_uuid(),
     name            text NOT NULL,
     name_normalized text NOT NULL UNIQUE,
@@ -146,7 +153,7 @@ CREATE TABLE IF NOT EXISTS {SCHEMA}.schools (
     created_at      timestamptz NOT NULL DEFAULT now()
 );
 
-CREATE TABLE IF NOT EXISTS {SCHEMA}.users (
+CREATE TABLE IF NOT EXISTS {ACCOUNTS}.users (
     id                uuid PRIMARY KEY DEFAULT gen_random_uuid(),
     public_code       text UNIQUE NOT NULL,
     username          text UNIQUE NOT NULL,
@@ -159,7 +166,7 @@ CREATE TABLE IF NOT EXISTS {SCHEMA}.users (
     gender            text CHECK (gender IN ('F', 'M')),
     birth_date        date CHECK (birth_date IS NULL OR birth_date <= CURRENT_DATE),
     is_candidat_libre boolean,
-    school_id         uuid REFERENCES {SCHEMA}.schools(id) ON DELETE SET NULL,
+    school_id         uuid REFERENCES {ACCOUNTS}.schools(id) ON DELETE SET NULL,
     school_raw        text,
 
     consent_version   text,
@@ -170,13 +177,18 @@ CREATE TABLE IF NOT EXISTS {SCHEMA}.users (
     last_login_at     timestamptz
 );
 
-CREATE INDEX IF NOT EXISTS users_class_idx   ON {SCHEMA}.users (class_code);
-CREATE INDEX IF NOT EXISTS users_school_idx  ON {SCHEMA}.users (school_id);
-CREATE INDEX IF NOT EXISTS users_created_idx ON {SCHEMA}.users (created_at);
+CREATE INDEX IF NOT EXISTS users_class_idx   ON {ACCOUNTS}.users (class_code);
+CREATE INDEX IF NOT EXISTS users_school_idx  ON {ACCOUNTS}.users (school_id);
+CREATE INDEX IF NOT EXISTS users_created_idx ON {ACCOUNTS}.users (created_at);
+"""
+
+# Activité de l'élève dans CETTE matière (schéma SCHEMA), rattachée aux comptes de ACCOUNTS.
+_ACTIVITY_DDL = f"""
+CREATE SCHEMA IF NOT EXISTS {SCHEMA};
 
 CREATE TABLE IF NOT EXISTS {SCHEMA}.conversations (
     id            uuid PRIMARY KEY DEFAULT gen_random_uuid(),
-    user_id       uuid NOT NULL REFERENCES {SCHEMA}.users(id) ON DELETE CASCADE,
+    user_id       uuid NOT NULL REFERENCES {ACCOUNTS}.users(id) ON DELETE CASCADE,
     title         text,
     class_code    text,
     chapter       text,
@@ -193,7 +205,7 @@ CREATE INDEX IF NOT EXISTS conv_user_idx
 CREATE TABLE IF NOT EXISTS {SCHEMA}.messages (
     id              uuid PRIMARY KEY DEFAULT gen_random_uuid(),
     conversation_id uuid NOT NULL REFERENCES {SCHEMA}.conversations(id) ON DELETE CASCADE,
-    user_id         uuid NOT NULL REFERENCES {SCHEMA}.users(id) ON DELETE CASCADE,
+    user_id         uuid NOT NULL REFERENCES {ACCOUNTS}.users(id) ON DELETE CASCADE,
     seq             integer NOT NULL,
     role            text NOT NULL CHECK (role IN ('user', 'assistant')),
     kind            text NOT NULL DEFAULT 'chat',
@@ -212,7 +224,7 @@ CREATE INDEX IF NOT EXISTS msg_conv_idx ON {SCHEMA}.messages (conversation_id, s
 
 CREATE TABLE IF NOT EXISTS {SCHEMA}.remediation_answers (
     id           uuid PRIMARY KEY DEFAULT gen_random_uuid(),
-    user_id      uuid NOT NULL REFERENCES {SCHEMA}.users(id) ON DELETE CASCADE,
+    user_id      uuid NOT NULL REFERENCES {ACCOUNTS}.users(id) ON DELETE CASCADE,
     class_code   text,
     chapter      text,
     notion       text,
@@ -226,7 +238,7 @@ CREATE INDEX IF NOT EXISTS rem_chapter_idx ON {SCHEMA}.remediation_answers (clas
 
 CREATE TABLE IF NOT EXISTS {SCHEMA}.struggles (
     id          uuid PRIMARY KEY DEFAULT gen_random_uuid(),
-    user_id     uuid NOT NULL REFERENCES {SCHEMA}.users(id) ON DELETE CASCADE,
+    user_id     uuid NOT NULL REFERENCES {ACCOUNTS}.users(id) ON DELETE CASCADE,
     class_code  text,
     chapter     text,
     notion      text NOT NULL,
@@ -243,7 +255,7 @@ CREATE INDEX IF NOT EXISTS struggle_user_idx ON {SCHEMA}.struggles (user_id, cre
 -- en imposer un.
 CREATE TABLE IF NOT EXISTS {SCHEMA}.flashcard_reviews (
     id            uuid PRIMARY KEY DEFAULT gen_random_uuid(),
-    user_id       uuid NOT NULL REFERENCES {SCHEMA}.users(id) ON DELETE CASCADE,
+    user_id       uuid NOT NULL REFERENCES {ACCOUNTS}.users(id) ON DELETE CASCADE,
     class_code    text NOT NULL,
     chapter       text NOT NULL,
     card_key      text NOT NULL,
@@ -264,8 +276,14 @@ CREATE INDEX IF NOT EXISTS flashcard_review_due_idx
 def init_db() -> None:
     with get_connection() as conn:
         with conn.cursor() as cur:
-            cur.execute(_DDL)
-    logger.info("Schéma %s initialisé.", SCHEMA)
+            if not config.SHARED_ACCOUNTS:
+                cur.execute(_ACCOUNTS_DDL)
+                cur.execute(_ACTIVITY_DDL)
+            else:
+                # Le schéma de la matière est créé par deploy/comptes_partages.py (le rôle de
+                # l'application n'a pas le droit de créer de schéma) : seulement ses tables ici.
+                cur.execute(_ACTIVITY_DDL.split(";", 1)[1])
+    logger.info("Schéma %s initialisé (comptes : %s).", SCHEMA, ACCOUNTS)
 
 
 # --------------------------------------------------------------------------
@@ -287,7 +305,7 @@ def resolve_school(name: Optional[str], city: Optional[str] = None,
 
     with get_connection() as conn, conn.cursor() as cur:
         cur.execute(
-            f"SELECT id FROM {SCHEMA}.schools WHERE name_normalized = %s",
+            f"SELECT id FROM {ACCOUNTS}.schools WHERE name_normalized = %s",
             (key,),
         )
         row = cur.fetchone()
@@ -295,7 +313,7 @@ def resolve_school(name: Optional[str], city: Optional[str] = None,
             return str(row["id"])
 
         cur.execute(
-            f"""INSERT INTO {SCHEMA}.schools (name, name_normalized, city, region, is_verified)
+            f"""INSERT INTO {ACCOUNTS}.schools (name, name_normalized, city, region, is_verified)
                 VALUES (%s, %s, %s, %s, false)
                 ON CONFLICT (name_normalized) DO UPDATE SET name = EXCLUDED.name
                 RETURNING id""",
@@ -312,7 +330,7 @@ def search_schools(term: str, limit: int = 10) -> list[dict]:
     with get_connection() as conn, conn.cursor() as cur:
         cur.execute(
             f"""SELECT id, name, city, region, is_verified
-                FROM {SCHEMA}.schools
+                FROM {ACCOUNTS}.schools
                 WHERE name_normalized LIKE %s
                 ORDER BY is_verified DESC, name
                 LIMIT %s""",
@@ -353,7 +371,7 @@ def create_user(
         try:
             with get_connection() as conn, conn.cursor() as cur:
                 cur.execute(
-                    f"""INSERT INTO {SCHEMA}.users
+                    f"""INSERT INTO {ACCOUNTS}.users
                         (public_code, username, username_key, password_hash, role,
                          class_code, gender, birth_date, is_candidat_libre,
                          school_id, school_raw, consent_version, consent_at)
@@ -386,7 +404,7 @@ def _user_row(row) -> Optional[dict]:
 def get_user_by_username(username: str) -> Optional[dict]:
     with get_connection() as conn, conn.cursor() as cur:
         cur.execute(
-            f"SELECT * FROM {SCHEMA}.users WHERE username_key = %s",
+            f"SELECT * FROM {ACCOUNTS}.users WHERE username_key = %s",
             (normalize_key(username),),
         )
         return _user_row(cur.fetchone())
@@ -394,14 +412,14 @@ def get_user_by_username(username: str) -> Optional[dict]:
 
 def get_user_by_id(user_id: str) -> Optional[dict]:
     with get_connection() as conn, conn.cursor() as cur:
-        cur.execute(f"SELECT * FROM {SCHEMA}.users WHERE id = %s", (user_id,))
+        cur.execute(f"SELECT * FROM {ACCOUNTS}.users WHERE id = %s", (user_id,))
         return _user_row(cur.fetchone())
 
 
 def touch_last_login(user_id: str) -> None:
     with get_connection() as conn, conn.cursor() as cur:
         cur.execute(
-            f"UPDATE {SCHEMA}.users SET last_login_at = now() WHERE id = %s",
+            f"UPDATE {ACCOUNTS}.users SET last_login_at = now() WHERE id = %s",
             (user_id,),
         )
 
@@ -425,7 +443,7 @@ def update_profile_fields(user_id: str, **fields) -> Optional[dict]:
     cols = ", ".join(f"{k} = %s" for k in updates)
     with get_connection() as conn, conn.cursor() as cur:
         cur.execute(
-            f"UPDATE {SCHEMA}.users SET {cols}, updated_at = now() "
+            f"UPDATE {ACCOUNTS}.users SET {cols}, updated_at = now() "
             f"WHERE id = %s RETURNING *",
             (*updates.values(), user_id),
         )
@@ -853,13 +871,18 @@ def has_any_history(user_id: str) -> bool:
 # anonyme (classe + école + genre suffisent souvent à identifier un élève).
 
 MIN_COHORT = getattr(config, "ADMIN_MIN_COHORT", 5)
+# Comptes partagés : app.users contient aussi les élèves qui n'ont jamais utilisé CETTE matière
+# (comptes créés en maths). Les effectifs du tableau de bord ne comptent que ceux qui y ont au
+# moins une conversation.
+_SUBJECT_STUDENTS = (f" AND id IN (SELECT user_id FROM {SCHEMA}.conversations)"
+                     if config.SHARED_ACCOUNTS else "")
 
 
 def get_admin_overview() -> dict:
     with get_connection() as conn, conn.cursor() as cur:
         cur.execute(
             f"""SELECT
-                (SELECT count(*) FROM {SCHEMA}.users WHERE role = 'eleve') AS students,
+                (SELECT count(*) FROM {ACCOUNTS}.users WHERE role = 'eleve'{_SUBJECT_STUDENTS}) AS students,
                 (SELECT count(*) FROM {SCHEMA}.conversations WHERE deleted_at IS NULL) AS conversations,
                 (SELECT count(*) FROM {SCHEMA}.messages WHERE role = 'user') AS questions,
                 (SELECT count(*) FROM {SCHEMA}.remediation_answers) AS quiz_answers,
@@ -949,8 +972,8 @@ def get_demographics(class_code: Optional[str] = None) -> dict:
                               ("candidat_libre", "is_candidat_libre")):
             cur.execute(
                 f"""SELECT {column}::text AS value, count(*) AS n
-                    FROM {SCHEMA}.users
-                    WHERE role = 'eleve' AND (%s::text IS NULL OR class_code = %s)
+                    FROM {ACCOUNTS}.users
+                    WHERE role = 'eleve' AND (%s::text IS NULL OR class_code = %s){_SUBJECT_STUDENTS}
                     GROUP BY 1""",
                 (class_code, class_code),
             )
@@ -967,9 +990,9 @@ def get_demographics(class_code: Optional[str] = None) -> dict:
         cur.execute(
             f"""SELECT bracket_start, count(*) AS n FROM (
                     SELECT (date_part('year', age(birth_date))::int / 3) * 3 AS bracket_start
-                    FROM {SCHEMA}.users
+                    FROM {ACCOUNTS}.users
                     WHERE role = 'eleve' AND birth_date IS NOT NULL
-                      AND (%s::text IS NULL OR class_code = %s)
+                      AND (%s::text IS NULL OR class_code = %s){_SUBJECT_STUDENTS}
                 ) t
                 GROUP BY bracket_start""",
             (class_code, class_code),

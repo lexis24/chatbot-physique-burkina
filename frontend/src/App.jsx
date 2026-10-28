@@ -145,6 +145,11 @@ export default function App() {
   // défaut — un invité (user=null) n'active jamais ces écrans, voir le rendu conditionnel plus bas.
   const [consentOk, setConsentOk] = useState(true)
   const [profileComplete, setProfileComplete] = useState(true)
+  // Comptes partagés avec les maths : classe du compte hors du programme de cette matière (6ème,
+  // 5ème) ou absente. L'élève choisit alors librement son niveau, comme un invité, sans que la classe
+  // de son compte (commune aux trois matières) soit modifiée — voir _account_class côté backend.
+  const [classFree, setClassFree] = useState(false)
+  const [accountClassCode, setAccountClassCode] = useState(null)
   const [conversations, setConversations] = useState([])
   const [activeConversationId, setActiveConversationId] = useState(null)
   const [greetingMessage, setGreetingMessage] = useState(null)
@@ -291,7 +296,7 @@ export default function App() {
         // La classe est fixée au compte (app.users.class_code) : on ne la redemande plus, on
         // reprend celle du compte plutôt que la dernière classe choisie en mode invité sur cet
         // appareil (voir STORAGE_KEY plus haut, qui reste dédié aux sessions invité).
-        if (session.classCode) setClassCode(session.classCode)
+        applySessionClass(session)
       } else {
         setShowAuthGate(true)
       }
@@ -454,7 +459,7 @@ export default function App() {
     // dans son titre, mais les réponses suivantes restent ancrées sur la classe ACTUELLE du
     // compte (le serveur l'impose de toute façon, voir _resolve_class_level côté backend). Seul
     // un invité (sans classe de compte) continue de suivre la classe de la conversation rouverte.
-    if (!user && conv.class_level) setClassCode(conv.class_level)
+    if ((!user || classFree) && conv.class_level) setClassCode(conv.class_level)
     if (conv.chapter) setChapitre(conv.chapter)
     const { lastQuestion: lq, lastAnswer: la } = deriveLastExchange(mapped)
     setLastQuestion(lq)
@@ -506,15 +511,37 @@ export default function App() {
     return false
   }
 
-  function handleAuthenticated({ username, role: userRole, consentOk: sessionConsentOk, profileComplete: sessionProfileComplete, classCode: sessionClassCode }) {
-    setUser(username)
-    setRole(userRole)
-    setConsentOk(sessionConsentOk !== false)
-    setProfileComplete(sessionProfileComplete !== false)
+  function handleAuthenticated(session) {
+    setUser(session.username)
+    setRole(session.role)
+    setConsentOk(session.consentOk !== false)
+    setProfileComplete(session.profileComplete !== false)
     // Classe fixée au compte (fiche d'inscription, ou déjà présente pour une reconnexion) : voir
     // la même logique côté restauration de session plus haut.
-    if (sessionClassCode) setClassCode(sessionClassCode)
+    applySessionClass(session)
     setShowAuthGate(false)
+  }
+
+  /** Classe d'une session restaurée ou ouverte : fixée au compte si elle est au programme, libre
+   * sinon (voir classFree plus haut) — on garde alors la classe déjà choisie sur cet appareil. */
+  function applySessionClass(session) {
+    setClassFree(session.classFree === true)
+    setAccountClassCode(session.accountClassCode || null)
+    if (session.classCode) setClassCode(session.classCode)
+  }
+
+  /** Classe du compte modifiée (fiche, profil) : même règle qu'à la connexion. */
+  function applyAccountClassChange(newClassCode) {
+    if (newClassCode && classes.some((c) => c.code === newClassCode)) {
+      setClassFree(false)
+      if (newClassCode !== classCode) {
+        setClassCode(newClassCode)
+        setChapitre("")
+      }
+    } else {
+      setClassFree(true)
+      setAccountClassCode(newClassCode || null)
+    }
   }
 
   function handleContinueAsGuest() {
@@ -533,6 +560,8 @@ export default function App() {
     setRole(null)
     setConsentOk(true)
     setProfileComplete(true)
+    setClassFree(false)
+    setAccountClassCode(null)
     setConversations([])
     setActiveConv(null)
     setGreetingMessage(null)
@@ -930,7 +959,7 @@ export default function App() {
    * (les intitulés de chapitres diffèrent d'une classe à l'autre), donc on le vide plutôt que de
    * laisser un choix incohérent affiché. */
   function handleClassChanged(newClassCode) {
-    setClassCode(newClassCode)
+    applyAccountClassChange(newClassCode)
     setChapitre("")
     setClassEditOpen(false)
   }
@@ -1036,7 +1065,7 @@ export default function App() {
           setProfileComplete(true)
           // Fraîchement complétée : ce compte a maintenant une classe fixée, à reprendre tout de
           // suite plutôt que d'attendre un futur rechargement de page (voir restoreSession plus haut).
-          if (newClassCode) setClassCode(newClassCode)
+          if (newClassCode) applyAccountClassChange(newClassCode)
         }}
       />
     )
@@ -1115,6 +1144,8 @@ export default function App() {
                   onReviewStruggle={handleReviewStruggle}
                   onDismissStruggle={handleDismissStruggle}
                   user={user}
+                  classFree={classFree}
+                  accountClassCode={accountClassCode}
                   conversations={conversations}
                   activeConversationId={activeConversationId}
                   onSelectConversation={handleSelectConversation}
@@ -1269,12 +1300,7 @@ export default function App() {
           open={editProfileOpen}
           onClose={() => setEditProfileOpen(false)}
           token={getToken()}
-          onSaved={(newClassCode) => {
-            if (newClassCode && newClassCode !== classCode) {
-              setClassCode(newClassCode)
-              setChapitre("")
-            }
-          }}
+          onSaved={applyAccountClassChange}
         />
       )}
 
@@ -1305,6 +1331,8 @@ export default function App() {
             onReviewStruggle={handleReviewStruggle}
             onDismissStruggle={handleDismissStruggle}
             user={user}
+            classFree={classFree}
+            accountClassCode={accountClassCode}
             conversations={conversations}
             activeConversationId={activeConversationId}
             onSelectConversation={handleSelectConversation}

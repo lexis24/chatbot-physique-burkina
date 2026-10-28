@@ -34,20 +34,34 @@ function storeSession(token, username, role, publicCode) {
   localStorage.setItem(AUTH_CHOICE_KEY, "authenticated")
 }
 
+/** Réponse de /api/auth/login, /register ou /me -> session côté interface. classFree /
+ * accountClassCode : comptes partagés avec les maths, dont la classe (6ème, 5ème, ou aucune) n'est
+ * pas au programme de cette matière — l'élève choisit alors librement son niveau (voir App.jsx). */
+function sessionFromResponse(data) {
+  return {
+    username: data.username,
+    role: data.role,
+    publicCode: data.public_code,
+    consentOk: data.consent_ok,
+    profileComplete: data.profile_complete,
+    classCode: data.class_code,
+    classFree: data.class_free === true,
+    accountClassCode: data.account_class_code || null,
+  }
+}
+
 /** `profile` : voir registerAccount() dans api.js (classCode/gender/birthYear/isCandidatLibre/
  * schoolName/region — tous obligatoires sauf schoolName/region pour un candidat libre). */
 export async function register(username, password, profile) {
-  const { token, username: confirmedUsername, role, public_code, consent_ok, profile_complete, class_code } =
-    await registerAccount(username, password, profile)
-  storeSession(token, confirmedUsername, role, public_code)
-  return { username: confirmedUsername, role, publicCode: public_code, consentOk: consent_ok, profileComplete: profile_complete, classCode: class_code }
+  const data = await registerAccount(username, password, profile)
+  storeSession(data.token, data.username, data.role, data.public_code)
+  return sessionFromResponse(data)
 }
 
 export async function login(username, password) {
-  const { token, username: confirmedUsername, role, public_code, consent_ok, profile_complete, class_code } =
-    await loginAccount(username, password)
-  storeSession(token, confirmedUsername, role, public_code)
-  return { username: confirmedUsername, role, publicCode: public_code, consentOk: consent_ok, profileComplete: profile_complete, classCode: class_code }
+  const data = await loginAccount(username, password)
+  storeSession(data.token, data.username, data.role, data.public_code)
+  return sessionFromResponse(data)
 }
 
 export function logout() {
@@ -62,11 +76,11 @@ export async function restoreSession() {
   const token = getToken()
   if (!token) return null
   try {
-    const { username, role, public_code, consent_ok, profile_complete, class_code } = await getMe(token)
-    localStorage.setItem(USERNAME_KEY, username)
-    localStorage.setItem(ROLE_KEY, role || "eleve")
-    if (public_code) localStorage.setItem(PUBLIC_CODE_KEY, public_code)
-    return { username, role, publicCode: public_code, consentOk: consent_ok, profileComplete: profile_complete, classCode: class_code }
+    const data = await getMe(token)
+    localStorage.setItem(USERNAME_KEY, data.username)
+    localStorage.setItem(ROLE_KEY, data.role || "eleve")
+    if (data.public_code) localStorage.setItem(PUBLIC_CODE_KEY, data.public_code)
+    return sessionFromResponse(data)
   } catch {
     logout()
     return null

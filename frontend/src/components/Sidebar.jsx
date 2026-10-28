@@ -86,14 +86,27 @@ function ReadOnlyClassRow({ classeNom, onChangeClick }) {
   )
 }
 
+/** Compte partagé avec les maths dont la classe n'est pas au programme ici (6ème, 5ème) ou n'est
+ * pas renseignée : il choisit librement son niveau (voir classFree dans App.jsx). */
+function FreeClassNotice({ accountClassCode, classes }) {
+  const first = classes[0]?.name
+  return (
+    <p className="mt-1 text-[12px] text-base-content/60">
+      {accountClassCode
+        ? `Ta classe (${accountClassCode}) n'est pas couverte ici${first ? ` : le programme commence en ${first}` : ""}. Choisis librement le niveau qui t'intéresse.`
+        : "Ta classe n'est pas renseignée : choisis librement le niveau qui t'intéresse."}
+    </p>
+  )
+}
+
 /** Réglages "nus" (sans carte, sans icône, sans titre de section) — voir RAPPORT_MOBILE.md §3 :
  * juste les trois contrôles, pour réduire la densité verticale sur mobile. */
-function MobileSettingsTab({ user, classes, classCode, setClassCode, chapters, chapitre, setChapitre, difficulty, setDifficulty, onGoToClassEdit }) {
+function MobileSettingsTab({ user, classFree, accountClassCode, classes, classCode, setClassCode, chapters, chapitre, setChapitre, difficulty, setDifficulty, onGoToClassEdit }) {
   const classeNom = classes.find((c) => c.code === classCode)?.name || classCode
   return (
     <div className="flex flex-col gap-4 p-4">
       <div>
-        {user ? (
+        {user && !classFree ? (
           <ReadOnlyClassRow classeNom={classeNom} onChangeClick={onGoToClassEdit} />
         ) : (
           <>
@@ -109,9 +122,13 @@ function MobileSettingsTab({ user, classes, classCode, setClassCode, chapters, c
                 </option>
               ))}
             </select>
-            <p className="mt-1 text-[12px] text-base-content/50">
-              Choisir ta classe et ton chapitre est facultatif — ça aide juste à affiner les réponses.
-            </p>
+            {classFree ? (
+              <FreeClassNotice accountClassCode={accountClassCode} classes={classes} />
+            ) : (
+              <p className="mt-1 text-[12px] text-base-content/50">
+                Choisir ta classe et ton chapitre est facultatif — ça aide juste à affiner les réponses.
+              </p>
+            )}
           </>
         )}
       </div>
@@ -197,6 +214,8 @@ export default function Sidebar({
   onReviewStruggle,
   onDismissStruggle,
   user,
+  classFree = false,
+  accountClassCode = null,
   conversations,
   activeConversationId,
   onSelectConversation,
@@ -250,6 +269,8 @@ export default function Sidebar({
           {mobileTab === "reglages" ? (
             <MobileSettingsTab
               user={user}
+              classFree={classFree}
+              accountClassCode={accountClassCode}
               classes={classes}
               classCode={classCode}
               setClassCode={setClassCode}
@@ -314,7 +335,7 @@ export default function Sidebar({
         <SectionLabel icon={GraduationCap} color="bg-primary/15 text-primary">
           Ma classe
         </SectionLabel>
-        {user ? (
+        {user && !classFree ? (
           // Compte connecté : la classe est fixée au profil (app.users.class_code, voir
           // _resolve_class_level côté backend, qui l'impose désormais quoi que la sidebar
           // affiche) — même traitement que MobileSettingsTab, pour ne pas montrer un menu actif
@@ -326,18 +347,21 @@ export default function Sidebar({
             onChangeClick={onEditProfile}
           />
         ) : (
-          <select
-            className="select select-bordered w-full rounded-xl bg-base-100"
-            value={classCode}
-            onChange={(e) => setClassCode(e.target.value)}
-          >
-            <option value="">-- Optionnel --</option>
-            {classes.map((c) => (
-              <option key={c.code} value={c.code}>
-                {c.name}
-              </option>
-            ))}
-          </select>
+          <>
+            <select
+              className="select select-bordered w-full rounded-xl bg-base-100"
+              value={classCode}
+              onChange={(e) => setClassCode(e.target.value)}
+            >
+              <option value="">-- Optionnel --</option>
+              {classes.map((c) => (
+                <option key={c.code} value={c.code}>
+                  {c.name}
+                </option>
+              ))}
+            </select>
+            {classFree && <FreeClassNotice accountClassCode={accountClassCode} classes={classes} />}
+          </>
         )}
       </Card>
 

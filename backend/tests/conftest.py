@@ -66,6 +66,6 @@ def _cleanup_test_users():
     import database
     with database.get_connection() as conn, conn.cursor() as cur:
         cur.execute(
-            f"DELETE FROM {database.SCHEMA}.users WHERE username LIKE %s",
+            f"DELETE FROM {database.ACCOUNTS}.users WHERE username LIKE %s",
             (f"{TEST_USERNAME_PREFIX}%",),
         )

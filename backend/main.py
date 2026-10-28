@@ -276,6 +276,12 @@ class AuthResponse(BaseModel):
     # redemander la classe à un élève déjà connecté (voir App.jsx). None seulement pour un compte
     # migré dont la fiche n'est pas encore complète (auquel cas profile_complete vaut déjà False).
     class_code: Optional[str] = None
+    # Comptes partagés avec les maths : un compte peut avoir une classe hors du programme de cette
+    # matière (6ème, 5ème) ou aucune classe. class_code vaut alors None, class_free True (l'élève
+    # choisit librement un niveau dans l'application, sans que sa classe en base soit modifiée) et
+    # account_class_code garde la classe du compte pour le message affiché (voir _account_class).
+    class_free: bool = False
+    account_class_code: Optional[str] = None
 
 class CreateConversationRequest(BaseModel):
     class_level: str = ""
@@ -383,12 +389,37 @@ def _resolve_class_level(user, client_class_level: str) -> str:
     via PATCH /api/profile) : ces routes ignorent donc toujours la classe envoyée par le client
     pour un compte connecté et utilisent celle du compte à la place — sans ça, la contrainte serait
     trivialement contournable en changeant class_level dans la requête. Appelée après
-    _ensure_authenticated_user_ready(user), qui garantit que user["class_code"] n'est jamais None
-    ici pour un compte connecté. Un invité (user=None) garde le comportement précédent : la valeur
-    du client, facultative."""
-    if user:
-        return user["class_code"]
+    _ensure_authenticated_user_ready(user). Un invité (user=None) garde le comportement précédent :
+    la valeur du client, facultative — de même qu'un compte partagé sans classe de ce programme
+    (voir _account_class), qui choisit librement son niveau."""
+    account_class = _account_class(user) if user else None
+    if account_class:
+        return account_class
     return client_class_level.strip()
+
+
+def _account_class(user) -> Optional[str]:
+    """Classe du compte si elle fait partie du programme de cette matière, sinon None. Avec les
+    comptes partagés (config.SHARED_ACCOUNTS), un élève inscrit en maths peut être en 6ème/5ème
+    (pas de chimie au programme) ou sans classe : il choisit alors un niveau librement, et sa classe
+    en base — commune aux trois matières — n'est jamais réécrite pour autant."""
+    code = user.get("class_code")
+    return code if code in get_classes() else None
+
+
+def _auth_response(user, *, consent_ok: bool, profile_complete: bool) -> "AuthResponse":
+    account_class = _account_class(user)
+    return AuthResponse(
+        token=auth.create_token(user["id"], user["username"]),
+        username=user["username"],
+        role=user["role"],
+        public_code=user["public_code"],
+        consent_ok=consent_ok,
+        profile_complete=profile_complete,
+        class_code=account_class,
+        class_free=account_class is None,
+        account_class_code=user.get("class_code"),
+    )
 
 
 def _persist_exchange_best_effort(user, conversation_id, question, answer, **meta):
@@ -1029,15 +1060,7 @@ def register(request: Request, payload: RegisterRequest):
     # les vérifications ci-dessus) et vient d'accepter le consentement courant : les deux valent
     # toujours True ici (voir les défauts de AuthResponse). Explicité quand même pour ne pas
     # dépendre silencieusement des défauts si le modèle évolue.
-    return AuthResponse(
-        token=auth.create_token(user["id"], user["username"]),
-        username=user["username"],
-        role=user["role"],
-        public_code=user["public_code"],
-        consent_ok=True,
-        profile_complete=True,
-        class_code=user["class_code"],
-    )
+    return _auth_response(user, consent_ok=True, profile_complete=True)
 
 @app.post("/api/auth/login", response_model=AuthResponse)
 @limiter.limit(AUTH_RATE_LIMIT)
@@ -1061,15 +1084,8 @@ def login(request: Request, payload: LoginRequest):
     # (voir migrate_sqlite_to_pg.py) : consent_ok/profile_complete peuvent valoir False, ce que
     # le frontend utilise pour afficher ConsentNotice / ProfileCompletionGate sans attendre un
     # premier appel à une route métier qui échouerait en 428.
-    return AuthResponse(
-        token=auth.create_token(user["id"], user["username"]),
-        username=user["username"],
-        role=user["role"],
-        public_code=user["public_code"],
-        consent_ok=auth.is_consent_ok(user),
-        profile_complete=auth.is_profile_complete(user),
-        class_code=user["class_code"],
-    )
+    return _auth_response(user, consent_ok=auth.is_consent_ok(user),
+                          profile_complete=auth.is_profile_complete(user))
 
 @app.get("/api/auth/me")
 def get_me(user=Depends(auth.get_current_user)):
@@ -1079,7 +1095,9 @@ def get_me(user=Depends(auth.get_current_user)):
         "public_code": user["public_code"],
         "consent_ok": auth.is_consent_ok(user),
         "profile_complete": auth.is_profile_complete(user),
-        "class_code": user["class_code"],
+        "class_code": _account_class(user),
+        "class_free": _account_class(user) is None,
+        "account_class_code": user.get("class_code"),
     }
 
 
@@ -1099,7 +1117,7 @@ def accept_consent(user=Depends(auth.get_current_user)):
     depuis — un nouveau compte a déjà consenti à l'inscription (voir /api/auth/register)."""
     with database.get_connection() as conn, conn.cursor() as cur:
         cur.execute(
-            f"""UPDATE {database.SCHEMA}.users
+            f"""UPDATE {database.ACCOUNTS}.users
                 SET consent_version = %s, consent_at = now(), updated_at = now()
                 WHERE id = %s""",
             (CONSENT_VERSION, user["id"]),
@@ -1134,7 +1152,10 @@ def get_profile_fields(user=Depends(auth.get_current_user)):
 
 @app.patch("/api/profile")
 def update_profile(payload: ProfileUpdateRequest, user=Depends(auth.get_current_user)):
-    if payload.class_code and payload.class_code not in get_classes():
+    # Une classe hors programme déjà portée par le compte (comptes partagés : 6ème inscrit en maths)
+    # reste acceptée telle quelle, pour que la fiche se renvoie sans erreur avec la classe inchangée.
+    if (payload.class_code and payload.class_code not in get_classes()
+            and payload.class_code != user.get("class_code")):
         raise HTTPException(status_code=400, detail="Classe invalide")
     if payload.gender is not None and payload.gender not in VALID_GENDERS:
         raise HTTPException(status_code=400, detail="Genre invalide")

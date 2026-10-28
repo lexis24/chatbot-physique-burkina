@@ -61,6 +61,14 @@ class Config:
     # Taille du pool de connexions Postgres pour les données applicatives (schéma "app" — voir
     # database.py), distinct des connexions ponctuelles utilisées par le RAG sur le même DATABASE_URL.
     DB_POOL_MAX = int(os.getenv("DB_POOL_MAX", "8"))
+    # Comptes partagés avec les maths et la chimie : si défini, les comptes (app.users,
+    # app.schools) sont ceux de la base des maths, et l'activité de l'élève en physique
+    # (conversations, quiz, flashcards) va dans le schéma ACTIVITY_SCHEMA de cette même base — rôle
+    # Postgres limité créé par deploy/comptes_partages.py (projet chimie). Vide : comptes propres à
+    # cette application, dans DATABASE_URL.
+    ACCOUNTS_DATABASE_URL = os.getenv("ACCOUNTS_DATABASE_URL", "")
+    ACTIVITY_SCHEMA = os.getenv("ACTIVITY_SCHEMA", "app_physique")
+    SHARED_ACCOUNTS = bool(ACCOUNTS_DATABASE_URL)
     # Seuil minimal d'élèves distincts en dessous duquel une cellule du tableau de bord décideur
     # est masquée plutôt qu'affichée : une cohorte trop petite (ex: 1 élève) redevient identifiable
     # même dans un agrégat. Voir database.py (MIN_COHORT) et les fonctions get_admin_*.
